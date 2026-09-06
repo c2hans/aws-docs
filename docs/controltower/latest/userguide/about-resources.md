@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/about-reso
 + For information about resources that AWS Control Tower creates in the shared accounts, see [About the shared accounts](special-accounts.md).
 + For information about resources that AWS Control Tower creates when it provisions an account through Account Factory, see [Resource Considerations for Account Factory](account-factory-considerations.md).
 + To view details about the AWS resource types that are defined by AWS Control Tower, for use with [the AWS Control Tower APIs](https://docs.aws.amazon.com/controltower/latest/APIReference/API_Operations.html), see the [AWS Control Tower resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_ControlTower.html) in the *AWS CloudFormation User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

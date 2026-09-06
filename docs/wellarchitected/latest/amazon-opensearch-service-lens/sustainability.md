@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 +  **Select sustainable instance families:** Select instance families that align with your sustainability objectives, such as Graviton-based instances, which are more environmentally friendly due to their reduced energy consumption.
 +  **Optimize resource utilization:** Optimize resource utilization by using the minimum number of instances required, reducing unnecessary data, and using Index State Management (ISM) to manage dataset lifecycle.
 +  **Consolidate workloads:** Consolidate development and test workloads into fewer OpenSearch domains, using security features for protection and reducing the overall environmental impact.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

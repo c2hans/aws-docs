@@ -121,7 +121,3 @@ This query input, when evaluated with the *allowUpdateData *rule, returns the f
 ```
 
 This call will not be authorized. Although the API caller is associated with the correct* tenant\_id* and is calling the API by using an approved method, the *input.role* is the tenant-defined *view\_data\_role*. The *view\_data\_role* doesn't have the *updateData *permission; therefore, the call to */updateData* is unauthorized. This call would have been successful for a *tenant\_b* user who has the *update\_data\_role*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

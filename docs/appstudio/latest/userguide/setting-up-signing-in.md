@@ -12,7 +12,3 @@ Access to App Studio is managed by IAM Identity Center. That means that each use
 1. When you receive an invitation email, follow the steps to provide a password and activate your user credentials in IAM Identity Center. For more information, see [Accepting the invitation to join IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtoactivateaccount.html).
 
 1. After you activate your user credentials, use them to sign into your App Studio instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

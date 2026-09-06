@@ -77,7 +77,3 @@ If you're experiencing any issues with deleting your objects, see [I want to per
 For examples of how to delete multiple objects with the AWS SDKs, see [Delete multiple objects](https://docs.aws.amazon.com/code-library/latest/ug/s3_example_s3_DeleteObjects_section.html) in the *AWS SDK Code Examples*.
 
 For general information about using different AWS SDKs, see [Developing with Amazon S3 using the AWS SDKs](https://docs.aws.amazon.com/code-library/latest/ug/sdk-general-information-section.html) in the *AWS SDK Code Examples*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

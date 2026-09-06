@@ -86,7 +86,3 @@ The following table summarizes support for batch inference:
 | Qwen | Qwen3-Coder-30B-A3B-Instruct | qwen.qwen3-coder-30b-a3b-v1:0 | ap-northeast-1<br />ap-south-1<br />ap-southeast-2<br />ap-southeast-3<br />eu-central-1<br />eu-north-1<br />eu-south-1<br />eu-west-1<br />eu-west-2<br />sa-east-1<br />us-east-1<br />us-east-2<br />us-west-2 | N/A | N/A |
 | Z.AI | GLM 4.7 | zai.glm-4.7 | ap-northeast-1<br />ap-south-1<br />ap-southeast-2<br />ap-southeast-3<br />eu-north-1<br />eu-west-2<br />sa-east-1<br />us-east-1<br />us-east-2<br />us-west-2 | N/A | N/A |
 | Z.AI | GLM 4.7 Flash | zai.glm-4.7-flash | ap-northeast-1<br />ap-south-1<br />ap-southeast-2<br />ap-southeast-3<br />eu-central-1<br />eu-north-1<br />eu-south-1<br />eu-west-1<br />eu-west-2<br />sa-east-1<br />us-east-1<br />us-east-2<br />us-west-2 | N/A | N/A |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

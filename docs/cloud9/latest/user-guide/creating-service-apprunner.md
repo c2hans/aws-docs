@@ -86,7 +86,3 @@ Automatic deployments are switched off by default. This is indicated when the ic
 
 **Note**
 If your attempt to create an App Runner service fails, the service shows a status of **Create failed** in **AWS Explorer**. For troubleshooting information, see [When service creation fails](https://docs.aws.amazon.com/apprunner/latest/dg/manage-create.html#manage-create.failure) in the *App Runner Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

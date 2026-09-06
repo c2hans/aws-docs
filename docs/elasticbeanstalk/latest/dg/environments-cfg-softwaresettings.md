@@ -210,7 +210,3 @@ The addition of `System.getenv` access for environment variables in Tomcat platf
   ```
 
 Outside of application code, such as in a script that runs during deployment, you can access environment properties with the [`get-config` platform script](custom-platforms-scripts.md). See the [elastic-beanstalk-samples](https://github.com/awsdocs/elastic-beanstalk-samples/search?utf8=%E2%9C%93&q=get-config) GitHub repository for example configurations that use `get-config`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

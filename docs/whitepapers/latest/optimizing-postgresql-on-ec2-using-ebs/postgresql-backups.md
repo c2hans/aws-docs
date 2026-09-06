@@ -156,7 +156,3 @@ Burst duration = ------------------------------
  This metric is an important measurement to monitor if you have reached the full utilization of the allocated IOPS on your Amazon EBS volumes. A value of average queue length greater than one for every 1000 IOPS can cause latency.
 
  It is recommended to monitor the CloudWatch metrics for IOPS and throughput so it that does not go beyond the provisioned limits. If it goes beyond that limit, it causes the I/O to be queued up a disk level which in turn increase the Round-trip time for the I/O.  This increases the latency, and thus impacts the PostgreSQL database performance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

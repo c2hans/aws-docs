@@ -26,7 +26,3 @@ The following information can help you troubleshoot common issues when working w
 **Problem:** When I try to use the AWS CLI with CodeCatalyst, I receive a message stating `You can configure credentials by running "aws configure".` or `Unable to locate authorization token`.
 
 **Solution:** You must configure an AWS CLI profile to work with CodeCatalyst commands. For more information see [Setting up to use the AWS CLI with CodeCatalyst](set-up-cli.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,7 +51,3 @@ At the optional *data processing* layer, the source data goes through preprocess
 At the *data consumption* layer, data is loaded into your Amazon Redshift cluster, where you can run analytical workloads.
 
 For some examples of analytical workloads, see [Querying outside data sources](https://docs.aws.amazon.com/redshift/latest/gsg/data-querying.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

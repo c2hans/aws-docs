@@ -27,7 +27,3 @@ If you upgraded to v1.3.0 or later from an earlier version, your existing settin
 
 **Note**
 The Innovation Sandbox on AWS solution is now ready for use. You can now [log in to the web UI](log-in-webui.md) and start using the solution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

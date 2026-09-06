@@ -29,7 +29,3 @@ Redshift Serverless doesn't use subnet groups. Instead, each cluster has its own
 + Creating a public access workgroup
 + Modifying a private workgroup to public
 + Adding a subnet with VPC BPA turned on to the workgroup when the workgroup is public
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

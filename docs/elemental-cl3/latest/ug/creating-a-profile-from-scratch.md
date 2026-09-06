@@ -51,7 +51,3 @@ Therefore, you must plan the profile fields carefully:
    + **Output **and **Stream**: A channel must always contain at least one output and one stream in each output group that you want to create. Each output must use one stream.
 
 1. Choose **Save** to save the profile. The profile appears in the list on the **Profiles** page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

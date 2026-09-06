@@ -117,7 +117,3 @@ Consider these best practices when creating your public profile:
 After creating your public profile, you can proceed to the next step in the registration process: [Step 2: Provide tax information](provide-tax-information.md).
 
 If you're only planning to offer free products on AWS Marketplace, you've completed the required registration steps. However, if you plan to offer paid products, you must complete all the remaining registration steps.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -189,7 +189,3 @@ Before beginning this tutorial, must have an AWS FIS experiment template that yo
 1. In the left navigation pane, choose **Schedules**.
 
 1. Select your newly created scheduler, and then choose **Disable**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,7 +75,3 @@ The following video shows how to use partition projection to improve the perform
 + [Supported types for partition projection](partition-projection-supported-types.md)
 + [Use dynamic ID partitioning](partition-projection-dynamic-id-partitioning.md)
 + [Amazon Data Firehose example](partition-projection-kinesis-firehose-example.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,7 +41,3 @@ Attach the permissions policy for the test template that your test uses.
 + [Multi-Region: isolation](next-gen-resilience-testing-iam-sa-multi-region-isolation.md)
 + [Multi-Region: recovery](next-gen-resilience-testing-iam-sa-multi-region-recovery.md)
 + [Create the role and attach it to your test](next-gen-resilience-testing-iam-sa-create.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

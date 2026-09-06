@@ -359,7 +359,3 @@ The following are open table format upgrades:
 | Hudi | 0.15.0 | 0.12.1 | 0.10.1 |
 | Delta Lake | 3.3.0 | 2.1.0 | 1.0.0 |
 | Iceberg | 1.7.1 | 1.0.0 | 0.13.1 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

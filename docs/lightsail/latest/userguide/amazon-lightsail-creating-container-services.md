@@ -112,7 +112,3 @@ For more information about key-only and key-value tags, see [Tags](amazon-lights
 1. Choose **Create container service**.
 
    You are redirected to the management page of your new container service. The status of your new container service is **Pending** while it's being created. After a few moments, the status of your service changes to **Ready**, if it doesn't have a current deployment, or **Running**, if you created a deployment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -359,7 +359,3 @@ The batch inference job returns a response in the following format.
 <a name="autopilot-deploy-models-batch-across-accounts"></a>
 
 To create a batch inferencing job in a different account than the one that the model was generated in, follow the instructions in [Deploy models from different accounts](autopilot-deploy-models-realtime.md#autopilot-deploy-models-realtime-across-accounts). Then you can create models and transform jobs by following the [Deploy using SageMaker APIs](#autopilot-deploy-models-batch-steps).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

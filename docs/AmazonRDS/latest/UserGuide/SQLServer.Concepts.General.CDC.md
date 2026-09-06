@@ -18,7 +18,3 @@ Amazon RDS supports CDC for the following SQL Server editions and versions:
 To use CDC with your Amazon RDS DB instances, first enable or disable CDC at the database level by using RDS-provided stored procedures. After that, any user that has the `db_owner` role for that database can use the native Microsoft stored procedures to control CDC on that database. For more information, see [Using change data capture for Amazon RDS for SQL Server](Appendix.SQLServer.CommonDBATasks.CDC.md).
 
 You can use CDC and AWS Database Migration Service to enable ongoing replication from SQL Server DB instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

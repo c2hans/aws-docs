@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tagging-bes
 ## AWS Partners
 <a name="9999999999999999aws--partners.4ea5af62-e10c-52f8-9fa6-7f19749ec106"></a>
 + [AWS Data and Analytics Competency Partners](https://aws.amazon.com/big-data/datalakes-and-analytics/partner-solutions/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

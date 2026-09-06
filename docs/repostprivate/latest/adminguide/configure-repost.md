@@ -93,7 +93,3 @@ All selections with the selected topics are added to the home page for your priv
 
 **Important**
 Your private re:Post is launched and ready for use after the console administrator onboards users to it. For more information, see [Invite users and groups to your private re:Post](https://docs.aws.amazon.com/repostprivate/latest/caguide/invite-users.html). The users of your private re:Post use the information in the onboarding email to sign in to your private re:Post after it's launched.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -146,7 +146,3 @@ If your Terms and Conditions were rejected, use the following table to determine
 | Terms and Conditions do not contain link to privacy policy. | The Terms and Conditions must contain a link to the privacy policy. Update the Terms and Conditions and resubmit. |
 | Terms and Conditions do not contain a description of the campaign use case. | The Terms and Conditions must include a description of the purpose of the message program. Update the Terms and Conditions and resubmit. |
 | Terms and conditions do not contain a program description or terms related to declared use case. | The Terms and Conditions program description is not related to the campaign use case. Update the Terms and Conditions then resubmit. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

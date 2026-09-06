@@ -17,7 +17,3 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 | [Updated](#document-history) | Updated guidance for existing customers getting started with their multi-account environment.  | March 31, 2022 |
 | [Updated](#document-history) | Updated guidance for establishing a multi-account environment.  | July 19, 2021 |
 | [Initial release](#document-history) | Whitepaper first published. | March 18, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

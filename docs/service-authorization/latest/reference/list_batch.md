@@ -637,7 +637,3 @@ AWS Batch defines the following condition keys that can be used in the `Conditio
 |   [batch:SchedulingPriority](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys)  | Filters access by the scheduling priority for jobs in the job queue | Numeric |
 |   [batch:ShareIdentifier](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys)  | Filters access by the shareIdentifier used inside submit job | String |
 |   [batch:User](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys)  | Filters access by user name or numeric uid used inside the container | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

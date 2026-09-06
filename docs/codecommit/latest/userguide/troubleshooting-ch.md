@@ -204,7 +204,3 @@ If you work with multiple Git profiles, you might have both local and global `.g
   ```
 **Note**
 This approach does not work if you have an `@` character in your Git credentials user name. You must URL-encode (also known as URL escaping or [percent-encoding](https://en.wikipedia.org/wiki/Percent-encoding)) the character.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

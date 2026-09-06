@@ -82,7 +82,3 @@ Common use cases for EventBridge rules with planned lifecycle events include:
 + Invoking AWS Lambda functions to assess affected resources and begin migration workflows.
 
 For more information about configuring EventBridge rules for AWS Health, see [Monitoring AWS Health events with Amazon EventBridge](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html) in the *AWS Health User Guide*. For sample automation, see the [AWS Health Tools](https://github.com/aws/aws-health-tools) repository on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

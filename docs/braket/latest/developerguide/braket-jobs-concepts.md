@@ -84,7 +84,3 @@ save_job_result(result_data='data') # Save hybrid job results
 save_job_checkpoint(checkpoint_data={'key': 'value'}) # Save a checkpoint
 load_job_checkpoint() # Load a previously saved checkpoint
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,7 +65,3 @@ Use the browser-based RDP client as you would your own local Windows desktop. RD
 
 1. Highlight the text that you want to copy, then press **Ctrl\+C** or **Cmd\+C** to copy the text to your local clipboard. You can now paste the copied text anywhere in your local desktop.
 ![Copy text from the browser-based RDP client in Lightsail.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-copy-rdp-windows.gif)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

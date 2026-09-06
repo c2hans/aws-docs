@@ -22,7 +22,3 @@ With this migration approach, you use native Db2 tools to back up your self-mana
 If your database is large and would take a long time to transfer to an S3 bucket, you can order an AWS Snow Family device and ask AWS to perform the backup. After you copy your files to the device and return it to the Snow Family team, the team transfers your backed-up images to your S3 bucket. For more information, see the [AWS Snow Family documentation](https://docs.aws.amazon.com/snowball/).
 
 1. Use a Db2 client to load data directly from your S3 bucket to your RDS for Db2 database. For more information, see [Migrating with Amazon S3](db2-migration-load-from-s3.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

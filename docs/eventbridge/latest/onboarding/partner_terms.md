@@ -54,7 +54,3 @@ To start the process, complete the following steps.
 | Link(s) | Deep links to your product where a user can set up an integration and/or link to documentation where a user can learn how to setup an integration. Displayed as a 'learn more about company' link when a customer chooses your integration. |  |
 | Event detail type catalog | A catalog of detail types that illustrate the types of events your integration publishes. Include this information as part of your customer-facing documentation. |  |
 | Sample events catalog | A catalog of complete sample events.  Include as part of your customer facing documentation. |  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

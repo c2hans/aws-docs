@@ -37,7 +37,3 @@ In this example, the IP address for the device is `192.0.2.0`, the job manifest 
 When you've entered the preceding command with the right variables for your job, you get a confirmation message. This message means that you're authorized to access the device for this job.
 
 Now you can begin using the device.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Snow Family Device Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

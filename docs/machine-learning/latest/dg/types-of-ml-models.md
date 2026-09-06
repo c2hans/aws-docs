@@ -42,7 +42,3 @@ ML models for binary classification problems predict a binary outcome (one of tw
 +  "What will the temperature be in Seattle tomorrow?"
 +  "For this product, how many units will sell?"
 +  "What price will this house sell for?"
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

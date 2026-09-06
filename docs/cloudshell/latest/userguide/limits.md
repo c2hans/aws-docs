@@ -88,7 +88,3 @@ With access to the public internet, there's a risk that certain users might expo
 <a name="system-files-page-refresh"></a>
 + **System files**: If you incorrectly modify files that are required by the compute environment, you might experience problems when accessing or using the AWS CloudShell environment. If this occurs, you might need to [deleting your home directory](getting-started.md#delete-shell-session) to regain access.
 + **Reloading pages**: To reload the AWS CloudShell interface, use the refresh button in your browser instead of the default shortcut key sequence for your operating system.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

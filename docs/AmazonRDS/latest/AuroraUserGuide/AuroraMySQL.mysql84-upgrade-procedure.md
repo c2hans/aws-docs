@@ -48,7 +48,3 @@ To perform the upgrade, follow the in-place major version upgrade procedure desc
 Alternatively, you can use a [Using Amazon Aurora Blue/Green Deployments for database updates](blue-green-deployments.md) to upgrade with minimal downtime. A Blue/Green deployment creates a staging environment that runs the new version alongside your current production environment, allowing you to test and validate before switching over.
 
 After the upgrade completes, perform the post-upgrade cleanup steps described in [Post-upgrade cleanup for Aurora MySQL version 8.4](AuroraMySQL.mysql84-post-upgrade.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

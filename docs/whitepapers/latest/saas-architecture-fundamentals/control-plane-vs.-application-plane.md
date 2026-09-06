@@ -28,7 +28,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  You’ll also note that we’ve broken out provisioning. This is done to highlight the fact that any provisioning of resources for tenants during onboarding would be part of this application domain. Some could argue that this belongs in the control plane. However, we’ve placed it in the application domain, because the resources it must provision and configure are more directly connected to services that are created and configured in the application plane.
 
  Breaking this down into distinct planes makes it easier to think about the overall landscape of a SaaS architecture. More importantly, it highlights the need for a set of services that are entirely outside the scope of your application functionality.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

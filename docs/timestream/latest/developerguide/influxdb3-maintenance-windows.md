@@ -206,7 +206,3 @@ aws timestream-influxdb update-db-cluster \
 + For multi-node clusters using cluster endpoints, traffic is automatically redistributed to available nodes during maintenance.
 + Schedule your maintenance window during periods of lowest traffic to minimize impact on your workload.
 + If you use a timezone with DST transitions, avoid scheduling maintenance between 1:00 AM and 3:00 AM to prevent skipped windows during spring forward.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

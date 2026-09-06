@@ -83,7 +83,3 @@ After you create the IAM role in the management account, synthesize the Landing 
    1.  **ManagementAccountId** - This is the AWS account ID of the AWS Organizations management account.
 
    1.  **ManagementAccountRoleName** - This is the name of the IAM role used to access the management account from the external deployment account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

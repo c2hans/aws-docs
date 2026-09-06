@@ -14,7 +14,3 @@ We are no longer updating the Amazon Machine Learning service or accepting new u
  ID strings can contain ASCII letters, numbers, hyphens and underscores, and can be up to 64 characters long. It is possible and perhaps convenient to encode metadata into an ID string. But it is not recommended because once an object has been created, its ID cannot be changed.
 
  Object names provide an easy way for you to associate user-friendly metadata with each object. You can update names after an object has been created. This makes it possible for the object's name to reflect some aspect of your ML workflow. For example, you might initially name an ML model "experiment \#3", and then later rename the model "final production model". Names can be any string you want, up to 1,024 characters.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

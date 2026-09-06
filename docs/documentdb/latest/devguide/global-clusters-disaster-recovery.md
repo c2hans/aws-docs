@@ -369,6 +369,152 @@ To unblock a global cluster switchover or failover, you must determine if there 
 
 ------
 
+Switchovers and failovers are also blocked when the target secondary cluster has a scheduled change that hasn't been applied yet, such as a modification or maintenance action you requested for the next maintenance window. In this case, you might see this error when calling a switchover or failover: You can't fail over to the cluster with ARN {{arn:aws:rds:us-east-1:001234567890:cluster:docdb-2025-03-27-19-21-15}} because it's being modified or because modifications are pending. Try again when the cluster becomes available. To unblock the operation, remove the scheduled change on the target cluster. The steps depend on the type of change. After the scheduled change is removed and the cluster status returns to `available`, retry the switchover or failover.
+
+You can't cancel a scheduled maintenance action (undo an opt-in) from the AWS Management Console, so use the AWS CLI.
+
+------
+#### [ Using the AWS CLI ]
+
+1. Run the [describe-pending-maintenance-actions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-pending-maintenance-actions.html) CLI command with the `--resource-identifier` option, and look for a maintenance action whose `OptInStatus` is `next-maintenance`.
+
+   In the following examples, replace each {{user input placeholder}} with your cluster's information.
+
+   For Linux, macOS, or Unix:
+
+   ```
+   aws docdb describe-pending-maintenance-actions \
+      --resource-identifier {{arn:aws:rds:us-east-1:001234567890:cluster:docdb-2025-03-27-19-21-15}} \
+      --region {{us-east-1}}
+   ```
+
+   For Windows:
+
+   ```
+   aws docdb describe-pending-maintenance-actions ^
+      --resource-identifier {{arn:aws:rds:us-east-1:001234567890:cluster:docdb-2025-03-27-19-21-15}} ^
+      --region {{us-east-1}}
+   ```
+
+   The result looks similar to the following. Note the `Action` value (`os-upgrade` in this example), which you use in the next step.
+
+   ```
+   {
+       "PendingMaintenanceActions": [
+           {
+               "ResourceIdentifier": "arn:aws:rds:us-east-1:001234567890:cluster:docdb-2025-03-27-19-21-15",
+               "PendingMaintenanceActionDetails": [
+                   {
+                       "Action": "os-upgrade",
+                       "OptInStatus": "next-maintenance",
+                       "CurrentApplyDate": "2026-09-02T03:02:00Z",
+                       "Description": "New Operating System update is available"
+                   }
+               ]
+           }
+       ]
+   }
+   ```
+
+1. Cancel the scheduled action by running the [apply-pending-maintenance-action](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/apply-pending-maintenance-action.html) CLI command with `--opt-in-type undo-opt-in`, passing the `Action` value from the previous step to `--apply-action`.
+
+   For Linux, macOS, or Unix:
+
+   ```
+   aws docdb apply-pending-maintenance-action \
+      --resource-identifier {{arn:aws:rds:us-east-1:001234567890:cluster:docdb-2025-03-27-19-21-15}} \
+      --apply-action {{os-upgrade}} \
+      --opt-in-type undo-opt-in \
+      --region {{us-east-1}}
+   ```
+
+   For Windows:
+
+   ```
+   aws docdb apply-pending-maintenance-action ^
+      --resource-identifier {{arn:aws:rds:us-east-1:001234567890:cluster:docdb-2025-03-27-19-21-15}} ^
+      --apply-action {{os-upgrade}} ^
+      --opt-in-type undo-opt-in ^
+      --region {{us-east-1}}
+   ```
+
+   In the response, the maintenance action no longer has an `OptInStatus`, which confirms the scheduled opt-in was cancelled.
+
+   ```
+   {
+       "ResourcePendingMaintenanceActions": {
+           "ResourceIdentifier": "arn:aws:rds:us-east-1:001234567890:cluster:docdb-2025-03-27-19-21-15",
+           "PendingMaintenanceActionDetails": [
+               {
+                   "Action": "os-upgrade",
+                   "Description": "New Operating System update is available"
+               }
+           ]
+       }
+   }
+   ```
+
+------
+
+------
+#### [ Using the AWS CLI ]
+
+1. Check for scheduled modifications by running the [describe-db-clusters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-clusters.html) CLI command and inspecting the `PendingModifiedValues` output field.
+**Note**
+Use the Amazon RDS CLI (`aws rds`) for this command, not the Amazon DocumentDB CLI (`aws docdb`), because the Amazon DocumentDB `describe-db-clusters` API doesn't return a cluster-level `PendingModifiedValues` field.
+
+   In the following examples, replace each {{user input placeholder}} with your cluster's information.
+
+   For Linux, macOS, or Unix:
+
+   ```
+   aws rds describe-db-clusters \
+      --db-cluster-identifier {{docdb-2025-03-27-19-21-15}} \
+      --query 'DBClusters[0].PendingModifiedValues' \
+      --region {{us-east-1}}
+   ```
+
+   For Windows:
+
+   ```
+   aws rds describe-db-clusters ^
+      --db-cluster-identifier {{docdb-2025-03-27-19-21-15}} ^
+      --query "DBClusters[0].PendingModifiedValues" ^
+      --region {{us-east-1}}
+   ```
+
+   The result shows the scheduled changes. In this example, a change to the cluster's name (`DBClusterIdentifier`) is pending, from `docdb-2025-03-27-19-21-15` to `docdb-new-name`.
+
+   ```
+   {
+       "DBClusterIdentifier": "docdb-new-name"
+   }
+   ```
+
+1. Revert the change by running the [modify-db-cluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-cluster.html) CLI command with `--apply-immediately`, setting the modified value back to its original value. This example reverts the pending name change by setting `--new-db-cluster-identifier` back to the cluster's current name.
+
+   For Linux, macOS, or Unix:
+
+   ```
+   aws docdb modify-db-cluster \
+      --db-cluster-identifier {{docdb-2025-03-27-19-21-15}} \
+      --new-db-cluster-identifier {{docdb-2025-03-27-19-21-15}} \
+      --apply-immediately \
+      --region {{us-east-1}}
+   ```
+
+   For Windows:
+
+   ```
+   aws docdb modify-db-cluster ^
+      --db-cluster-identifier {{docdb-2025-03-27-19-21-15}} ^
+      --new-db-cluster-identifier {{docdb-2025-03-27-19-21-15}} ^
+      --apply-immediately ^
+      --region {{us-east-1}}
+   ```
+
+------
+
 ## Managing RPOs for Amazon DocumentDB global clusters
 <a name="global-clusters-manage-recovery"></a>
 
@@ -536,7 +682,3 @@ aws docdb reset-db-cluster-parameter-group ^
  To reset the `global_db_rpo` parameter, use the [ResetDBClusterParameterGroup](https://docs.aws.amazon.com/documentdb/latest/developerguide/API_ResetDBClusterParameterGroup.html) API operation.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

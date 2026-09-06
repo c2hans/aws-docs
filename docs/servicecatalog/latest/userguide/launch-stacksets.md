@@ -30,7 +30,3 @@ A stack set enables you to create stacks in AWS accounts across Regions by using
 A stack instance refers to a stack in a target account in a Region. It associates with only one stack set.
 
 For more information, see [Stack set concepts](https://docs.amazonaws.cn/en_us/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

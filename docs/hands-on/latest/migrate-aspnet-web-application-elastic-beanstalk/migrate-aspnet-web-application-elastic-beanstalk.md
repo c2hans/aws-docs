@@ -276,7 +276,3 @@ Now that the site is successfully migrated, verify that the website is up and ru
 <a name="conclusion"></a>
 
 Congratulations\! You have successfully migrated a sample ASP.NET web application to a fully managed Elastic Beanstalk environment using the Windows Web Application Migration Assistant (WWAMA). AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS. You can simply upload your code, and Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto scaling, to application health monitoring. At the same time, you retain full control over the AWS resources powering your application and can access the underlying resources at any time. Visit [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) to learn more.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

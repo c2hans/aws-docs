@@ -21,7 +21,3 @@ This section explains how you can manage your private re:Post in the AWS re:Post
 + [Create a new channel within your private re:Post](create-new-channel.md)
 + [Manage users and groups in your channel](manage-channel-users.md)
 + [Delete your private re:Post](delete-repost.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

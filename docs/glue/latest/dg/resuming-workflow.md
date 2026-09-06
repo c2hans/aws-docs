@@ -167,7 +167,3 @@ Even if one ore more nodes in a workflow run don't complete, the workflow run st
 + Restarting a node does not reset its state. Any data that was partially processed is not rolled back.
 + You can resume a failed workflow run multiple times. However, a resumed run can only be resumed once more. For additional retries, resume the original failed run instead
 + If you select two nodes to restart and they're dependent upon each other, the upstream node is run before the downstream node. In fact, selecting the downstream node is redundant, because it will be run according to the normal flow of the workflow.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

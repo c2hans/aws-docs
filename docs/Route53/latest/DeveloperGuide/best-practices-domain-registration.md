@@ -24,7 +24,3 @@ This sequence creates an unrecoverable circular dependency:
 To prevent this scenario, use one of the following recommended architectures:
 + **Register the domain on a separate AWS account** – Use a dedicated AWS account (such as an AWS Organizations management account) to register domains that serve as root user email domains for other accounts. This ensures that the domain registration remains active even if the dependent account is closed.
 + **Use an email address hosted outside AWS** – Choose a root user email address on a domain that is not registered or hosted within AWS. This eliminates the dependency between your account status and email delivery.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

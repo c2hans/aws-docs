@@ -64,7 +64,3 @@ Replace the `Principal` value with the IAM principal that created your replicati
 
 Incident Manager uses an [encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#encrypt_context) in all requests to AWS KMS for cryptographic operations. You can use this encryption context to identify CloudTrail log events where Incident Manager uses your KMS keys. Incident Manager uses the following encryption context:
 + `contactArn={{ARN of the contact or escalation plan}}`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

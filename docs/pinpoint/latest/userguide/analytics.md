@@ -23,7 +23,3 @@ To analyze or store analytics data outside Amazon Pinpoint, you can configure Am
 <a name="settings-analytics"></a>
 
 Use the **Mobile app analytics** and **Web app analytics** pages as guides to help you integrate and configure your mobile and web apps to send usage data to Amazon Pinpoint. This data includes metrics that can help you determine how your customers use your apps. For example, you can determine how many customers logged in to your app during the past 30 days, how many customers used a specific feature of your app, and the percentage of customers who accessed your app by using a specific type of device. You can use this data to improve the usability of your apps and to increase customer engagement, satisfaction, and retention.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,3 @@ After you have created a table in Athena, its name displays in the **Tables** li
 + **Insert into editor** – Inserts the name of the table into the query editor at the current editing location.
 + **Delete table** – Displays a confirmation dialog box asking if you want to delete the table. If you agree, runs the `DROP TABLE {{table_name}}` statement in the Athena query editor.
 + **Table properties** – Shows the table name, database name, time created, and whether the table has encrypted data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,6 +14,9 @@ Amazon GuardDuty provides the following APIs for data retrieval.
 | <a name="guardduty-DescribePublishingDestination"></a>[DescribePublishingDestination](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DescribePublishingDestination.html) | Retrieve details about a publishing destination | Read |
 | <a name="guardduty-GetAdministratorAccount"></a>[GetAdministratorAccount](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetAdministratorAccount.html) | Retrieve details of the GuardDuty administrator account associated with a member account | Read |
 | <a name="guardduty-GetCoverageStatistics"></a>[GetCoverageStatistics](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetCoverageStatistics.html) | List Amazon GuardDuty coverage statistics for the specified GuardDuty account in a Region | Read |
+| <a name="guardduty-GetCustomDetectionRule"></a>[GetCustomDetectionRule](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetCustomDetectionRule.html) | Retrieve a GuardDuty custom detection rule | Read |
+| <a name="guardduty-GetCustomDetectionRuleAssociation"></a>[GetCustomDetectionRuleAssociation](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetCustomDetectionRuleAssociation.html) | Retrieve a GuardDuty custom detection rule association | Read |
+| <a name="guardduty-GetCustomDetectionRuleOrgConfiguration"></a>[GetCustomDetectionRuleOrgConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetCustomDetectionRuleOrgConfiguration.html) | Retrieve the organization configuration for a GuardDuty custom detection rule | Read |
 | <a name="guardduty-GetDetector"></a>[GetDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetDetector.html) | Retrieve GuardDuty detectors | Read |
 | <a name="guardduty-GetFilter"></a>[GetFilter](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFilter.html) | Retrieve GuardDuty filters | Read |
 | <a name="guardduty-GetFindings"></a>[GetFindings](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFindings.html) | Retrieve GuardDuty findings | Read |
@@ -34,6 +37,9 @@ Amazon GuardDuty provides the following APIs for data retrieval.
 | <a name="guardduty-GetTrustedEntitySet"></a>[GetTrustedEntitySet](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetTrustedEntitySet.html) | Retrieve GuardDuty TrustedEntitySets | Read |
 | <a name="guardduty-GetUsageStatistics"></a>[GetUsageStatistics](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetUsageStatistics.html) | List Amazon GuardDuty usage statistics over the last 30 days for the specified detector ID | Read |
 | <a name="guardduty-ListCoverage"></a>[ListCoverage](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListCoverage.html) | List all the resource details for a given account in a Region | List |
+| <a name="guardduty-ListCustomDetectionRuleAssociations"></a>[ListCustomDetectionRuleAssociations](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListCustomDetectionRuleAssociations.html) | Retrieve a list of GuardDuty custom detection rule associations | List |
+| <a name="guardduty-ListCustomDetectionRuleOrgConfigurations"></a>[ListCustomDetectionRuleOrgConfigurations](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListCustomDetectionRuleOrgConfigurations.html) | Retrieve a list of organization configurations for GuardDuty custom detection rules | List |
+| <a name="guardduty-ListCustomDetectionRules"></a>[ListCustomDetectionRules](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListCustomDetectionRules.html) | Retrieve a list of GuardDuty custom detection rules | List |
 | <a name="guardduty-ListDetectors"></a>[ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) | Retrieve a list of GuardDuty detectors | List |
 | <a name="guardduty-ListFilters"></a>[ListFilters](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFilters.html) | Retrieve a list of GuardDuty filters | List |
 | <a name="guardduty-ListFindings"></a>[ListFindings](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html) | Retrieve a list of GuardDuty findings | List |
@@ -49,7 +55,3 @@ Amazon GuardDuty provides the following APIs for data retrieval.
 | <a name="guardduty-ListThreatEntitySets"></a>[ListThreatEntitySets](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListThreatEntitySets.html) | Retrieve a list of GuardDuty ThreatEntitySets | List |
 | <a name="guardduty-ListThreatIntelSets"></a>[ListThreatIntelSets](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListThreatIntelSets.html) | Retrieve a list of GuardDuty ThreatIntelSets | List |
 | <a name="guardduty-ListTrustedEntitySets"></a>[ListTrustedEntitySets](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListTrustedEntitySets.html) | Retrieve a list of GuardDuty TrustedEntitySets | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

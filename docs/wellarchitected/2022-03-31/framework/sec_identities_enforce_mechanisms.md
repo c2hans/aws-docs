@@ -33,7 +33,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 +  [Best Practices for Managing, Retrieving, and Rotating Secrets at Scale](https://youtu.be/qoxxRlwJKZ4)
 +  [Managing user permissions at scale with IAM Identity Center](https://youtu.be/aEIqeFCcK7E)
 +  [Mastering identity at every layer of the cake](https://www.youtube.com/watch?v=vbjFjMNVEpc)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

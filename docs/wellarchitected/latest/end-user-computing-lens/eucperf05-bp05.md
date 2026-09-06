@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Review additional storage services if any of the workloads you are migrating to AWS EUC services require tunable performance, larger volume sizes exceeding those provided by the EUC services, or granular control over throughput and IOPs, including Amazon FSx for Windows File Server, Amazon FSx for NetApp ONTAP , and Amazon EFS.
 
  For more information, see [Persistent storage for Amazon WorkSpaces Applications Linux Fleets on Amazon Elastic File System](https://aws.amazon.com/blogs/desktop-and-application-streaming/persistent-storage-for-amazon-appstream-2-0-linux-fleets-on-amazon-elastic-file-system/) and [Connect Amazon FSx for NetApp ONTAP to Amazon WorkSpaces Applications Linux instances](https://aws.amazon.com/blogs/desktop-and-application-streaming/connect-amazon-fsx-for-netapp-ontap-to-amazon-appstream-2-0-linux-instances/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

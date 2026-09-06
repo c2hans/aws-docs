@@ -182,7 +182,3 @@ As of today (Feb 2025) Amazon Quick does not allow dynamically changing a symbol
 ![Title GBP](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/customizations/currency-conversion/title-gbp.png)
 
 This summarizes the process for changing the currency of your visuals. You can repeat these steps for any other visuals if you wish to convert their currency as well.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ You can use the AWS CLI to run commands for creating and managing jobs and job t
 <a name="iot-jobs-endpoints"></a>
 
 AWS IoT Jobs supports control plane and data plane API endpoints that are specific to your AWS Region. The data plane API endpoints are specific to your AWS account and AWS Region. For more information about the AWS IoT Jobs endpoints, see [AWS IoT Device Management - jobs data endpoints](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#iot_device_management_region_jobs) in the *AWS General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

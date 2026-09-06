@@ -131,7 +131,3 @@ You can increase the maximum number of inodes that a volume can contain, up to a
 An FSx for ONTAP volume can have a maximum of 2 billion inodes.
 
 For information about changing the maximum number of files that a volume can store, see [Updating the maximum number of files on a volume](increase-volume-max-files.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

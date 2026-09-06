@@ -28,7 +28,3 @@ The agent processes steps and waves sequentially, presenting intermediate result
 + Expert mode doesn't bypass approval requirements. Operations that require approval still wait for authorization in the **Approvals** tab.
 + Collected settings apply globally to all relevant steps and waves. Wave-specific instructions are evaluated when that wave runs.
 + Input text files must use UTF-8 encoding and can't exceed 256 KB. This limit doesn't apply to inventory or other migration artifacts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,3 @@ Depending on the other services you incorporate into your pipelines, you might n
 If you create an IAM policy that is more restrictive than the minimum required permissions, the console won't function as intended for users with that IAM policy. To ensure that those users can still use the console, also attach the `AWSCodePipeline_ReadOnlyAccess` managed policy to the user, as described in [AWS managed policies for AWS CodePipeline](managed-policies.md).
 
 You don't need to allow minimum console permissions for users who are making calls to the AWS CLI or the API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

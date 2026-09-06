@@ -67,7 +67,3 @@ Use one of the following procedures to mount your file system.
 + [Mounting on Amazon EC2 with a DNS name](mounting-fs-mount-cmd-dns-name.md)
 + [Mounting with an IP address](mounting-fs-mount-cmd-ip-addr.md)
 + [Automatically mounting EFS file systems](nfs-automount-efs.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

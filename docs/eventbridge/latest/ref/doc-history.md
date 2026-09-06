@@ -18,7 +18,3 @@ The following table describes the documentation releases for the AWS Events Refe
 | [Update](#doc-history) | Updated supported services and events | June 9, 2025 |
 | [Update](#doc-history) | Updated supported services and events | April 8, 2025 |
 | [Initial release](#doc-history) | Initial release of the AWS Events Reference | January 31, 2025 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

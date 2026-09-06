@@ -93,7 +93,3 @@ To contribute to this user guide, choose the **Edit this page on GitHub** link t
    ```
 
    If the rollout takes too long, Amazon EKS will undo the rollout, and a message with the type of **Addon Update** and a status of **Failed** will be added to the **Update history** of the add-on. To investigate any issues, start from the history of the rollout, and run `kubectl logs` on an EKS Pod Identity Agent pod to see the logs of EKS Pod Identity Agent.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

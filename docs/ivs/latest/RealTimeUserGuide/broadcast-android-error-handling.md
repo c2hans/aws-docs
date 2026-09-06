@@ -109,7 +109,3 @@ The SDK retries the publish/subscribe operation. During retries, the publish/sub
 The SDK calls `onError` with the error code = 1400 and fatal = false.
 
 **Action**: No action is needed, as the SDK retries automatically. Optionally, the application can refresh the strategy to force more retries. In the event of total connectivity loss, it’s likely that the connection to Stages will fail too.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

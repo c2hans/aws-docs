@@ -35,7 +35,3 @@ It's also possible to leverage [Tool use (function calling) with Amazon Nova](to
 1. **Automatic Tool Invocation**: You, as the developer, are responsible for implementing the tool based on the model's request. This means you need to execute or write the code that executes the tool's functionality and processes the input parameters provided by the model. After executing the tool, you must send the results back to the model in a structured format.
 
 1. **Built-in Memory**: The API lacks built-in memory capabilities, meaning your agent cannot remember user preferences or past interactions over time, which could limit personalization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

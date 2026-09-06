@@ -25,7 +25,3 @@ Follow these steps to activate a deactivated user account in your private re:Pos
 1. Choose **Manage permissions**, and then choose **Activate account**.
 
 The selected user is immediately activated. You can choose to notify the user that their account is activated in your private re:Post. The user can sign in to your private re:Post and access all resources. The user is included in the current and subsequent months' billing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

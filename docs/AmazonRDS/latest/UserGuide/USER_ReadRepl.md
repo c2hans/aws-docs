@@ -110,7 +110,3 @@ For RDS for MariaDB and RDS for MySQL, and for certain versions of RDS for Postg
 RDS doesn't support autoscaling of read replicas. Thus, RDS won't increase the number of replicas when demand increases or decrease the number of replicas when demand decreases. If you no longer need read replicas, manually delete them using the same mechanisms for deleting a DB instance. If you delete a source DB instance without deleting its read replicas in the same AWS Region, each replica is promoted to a standalone DB instance.
 
 For information about deleting a DB instance, see [Deleting a DB instance](USER_DeleteInstance.md). For information about read replica promotion, see [Promoting a read replica to be a standalone DB instance](USER_ReadRepl.Promote.md). For information related to deleting the source DB instance for a cross-Region read replica, see [Cross-Region replication considerations](USER_ReadRepl.XRgn.md#USER_ReadRepl.XRgn.Cnsdr).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

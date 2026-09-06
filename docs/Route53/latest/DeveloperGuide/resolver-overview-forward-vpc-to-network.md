@@ -16,7 +16,3 @@ When you want to forward DNS queries from the EC2 instances in one or more VPCs 
 1. You create one or more rules, which specify the domain names of the DNS queries that you want to delegate to VPC Resolver to forward, or want VPC Resolver to forward to resolvers on your network. For forwarding rules, you also specify the IP addresses of the resolvers. For more information, see [Using rules to control which queries are forwarded to your network](resolver-overview-forward-vpc-to-network-using-rules.md).
 
 1. You associate each rule with the VPCs for which you want to forward DNS queries to your network.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

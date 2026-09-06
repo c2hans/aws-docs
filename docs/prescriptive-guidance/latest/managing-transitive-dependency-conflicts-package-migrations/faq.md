@@ -56,7 +56,3 @@ The sample script is specific to Node.js, because it reads `npm` dependency outp
 <a name="how-do-i-handle-npm-peer-dependency-warnings-during-a-migration-.3d2004f7-f290-500f-bd32-ff7915b111d1"></a>
 
 When npm reports `ERESOLVE` or peer dependency warnings during migration, it signals that a transitive package requires a different version than the one you declared. Run `npm ls` to identify which paths pull in the conflicting version. Then decide whether to update the transitive consumer first (preferred) or use `--legacy-peer-deps` as a temporary workaround. Treat `--legacy-peer-deps` the same as a pinned version: record a revisit date and resolve the underlying conflict before your next release.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

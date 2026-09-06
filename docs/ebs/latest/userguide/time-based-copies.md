@@ -28,7 +28,7 @@ The following quotas apply to time-based snapshot and EBS-backed AMI copy operat
 
 When you initiate a **time-based snapshot copy operation**, you specify a completion duration. The throughput used by the request is determined by the size of the snapshot data and the requested completion duration. For example, if you copy a snapshot that has 225,000 MiB (0.214 TiB) of data, and you request a completion duration of 15 minutes, the throughput is 250 MiB/s (225,000 MiB ÷ 15 minutes = 250 MiB/s).
 
-When you initiate a **time-based AMI copy operation**, the completion duration you specify applies to each snapshot associated with the AMI. Because each snapshot can have a different size, each snapshot is copied at a different throughput to ensure that all snapshots are copied within the completion duration. For example, say you have an AMI with the following associated snapshots:
+When you initiate a **time-based AMI copy operation**, the completion duration you specify applies to each snapshot associated with the AMI. Because each snapshot can have a different size, each snapshot is copied at a different throughput to make sure that all snapshots are copied within the completion duration. For example, say you have an AMI with the following associated snapshots:
 + Snapshot 1: 200,000 MiB
 + Snapshot 2: 500,000 MiB
 + Snapshot 3: 450,000 MiB
@@ -38,7 +38,7 @@ If you initiate a time-based copy for this AMI and specify a completion duration
 + Snapshot 2: 138.89 MiB/s (500,000 MiB ÷ 60 minutes = 138.89 MiB/s)
 + Snapshot 3: 125 MiB/s (450,000 MiB ÷ 60 minutes = 125 MiB/s)
 
-This means that the request uses 319.45 MiB/s of your cumulative snapshot copy throughput quota to ensure that the copy completes in 60 minutes.
+This means that the request uses 319.45 MiB/s of your cumulative snapshot copy throughput quota to make sure that the copy completes in 60 minutes.
 
 If you initiate a time-based snapshot or EBS-backed AMI copy request and your available cumulative snapshot copy throughput quota is:
 + greater than or equal to the required throughput rate, the copy completes within the requested completion duration.
@@ -132,7 +132,3 @@ If you initiate a time-based copy operation, but the requested completion durati
 If Amazon EBS is not able to achieve the requested completion duration or if a request is canceled due to service-side issues, you are not billed the additional charges for the time-based snapshot copy operation.
 
 If you delete the snapshot copy while the time-based snapshot copy operation is still in progress, you are billed for the data copied up to that point at the rate corresponding to the specified completion duration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

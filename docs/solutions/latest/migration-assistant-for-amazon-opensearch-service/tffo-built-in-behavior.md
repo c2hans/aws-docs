@@ -11,7 +11,3 @@ Keep the following in mind:
 + The transformation is applied automatically whenever a `flattened` field is detected in the source mappings, for both Amazon OpenSearch Service domains and Amazon OpenSearch Serverless NextGen collections that support `flat_object`.
 + It changes the field **type** in the index mapping. It does not alter your documents or the nested keys inside the field.
 + No CLI flag, transformer file, or `transformerConfig` entry is required for the built-in conversion.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -62,7 +62,3 @@ All accounts can view this data for their own accounts. An administrator account
 
 **EKS audit logs**
 **EKS audit logs** panels show the volume of data ingested from EKS audit logs sources for the last 30 days. Panels for this source package are only available if EKS audit logs is enabled for your behavior graph.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

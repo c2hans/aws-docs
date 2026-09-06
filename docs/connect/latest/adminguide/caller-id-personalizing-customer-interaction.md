@@ -52,7 +52,3 @@ Before opening an AWS Support case:
 + If you're getting partial data on a percent of calls as part of normal service calls: Note that data is not available on all calls.
 
   Certain fields, such as ISUP-OLI, are only present based on specific routes through networks. It's not possible to guarantee data will be available for all calls.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

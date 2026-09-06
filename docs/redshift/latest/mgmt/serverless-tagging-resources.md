@@ -37,7 +37,3 @@ To manage tags of your Amazon Redshift Serverless resources
 1. Specify the keys and optional values you want to add to the resource. When modifying a tag, you can change the tag's value, but not the key.
 
 1. After you're done adding, removing, or modifying tags, choose **Save changes**, then choose **Apply** to save your changes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

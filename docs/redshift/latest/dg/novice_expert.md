@@ -7,11 +7,11 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/novice_expert.html
 # Machine learning for novices and experts
 <a name="novice_expert"></a>
 
-With Amazon Redshift, you can leverage Machine Learning (ML) capabilities to gain insights from your data, whether you are a novice or an expert in ML. Machine Learning is an Amazon Redshift feature that enables you to create, train, and deploy ML models using SQL commands, without the need for extensive ML expertise or complex data engineering.
+With Amazon Redshift, you can leverage Machine Learning (ML) capabilities to gain insights from your data, whether you are a novice or an expert in ML. Machine Learning is an Amazon Redshift feature that you use to create, train, and deploy ML models using SQL commands, without the need for extensive ML expertise or complex data engineering.
 
 The following sections guide you through the process of utilizing Machine Learning, empowering you to unlock the full potential of your data with Amazon Redshift.
 
-Amazon Redshift ML enables you to train models with one single SQL CREATE MODEL command. The CREATE MODEL command creates a model that Amazon Redshift uses to generate model-based predictions with familiar SQL constructs.
+With Amazon Redshift ML, you can train models with one single SQL CREATE MODEL command. The CREATE MODEL command creates a model that Amazon Redshift uses to generate model-based predictions with familiar SQL constructs.
 
 Amazon Redshift ML is especially useful when you don't have expertise in machine learning, tools, languages, algorithms, and APIs. With Amazon Redshift ML, you don't have to perform the undifferentiated heavy lifting required for integrating with an external machine learning service. Amazon Redshift saves you the time to format and move data, manage permission controls, or build custom integrations, workflows, and scripts. You can easily use popular machine learning algorithms and simplify training needs that require frequent iteration from training to prediction. Amazon Redshift automatically discovers the best algorithm and tunes the best model for your problem. You can make predictions from within the Amazon Redshift cluster without the need to move data out of Amazon Redshift nor to interface with and pay for another service.
 
@@ -36,7 +36,3 @@ As an Amazon Redshift ML user, you can choose any of the following options to tr
 + Preprocessors, see [CREATE MODEL with user guidance](r_create_model_use_cases.md#r_user_guidance_create_model).
 + Hyperparameters, see [CREATE XGBoost models with AUTO OFF](r_create_model_use_cases.md#r_auto_off_create_model).
 + Bring your own model (BYOM), see [Bring your own model (BYOM) - local inference](r_create_model_use_cases.md#r_byom_create_model).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ Collation has following limitations in Amazon DocumentDB:
 + Collation is compatible with planner v3 available in Amazon DocumentDB 8.0. Switching to plannerv2 or plannerv1 may cause inconsistent behaviors, including “Index not found“ errors.
 + Due to inherent library differences, if a mongodb collection with collation is exported, you will need to update the metadata.bson files and change its version from 57.1 to 60.2 prior to migration.
 + In rare cases, your collation settings may breach the internal limit on character count, causing the following error. "Error: Collation document has non-default attributes more than supported. Please reduce the number of options." In this case, try to reduce the options you provide in the collation document, or alternatively you could try and use default values wherever possible.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

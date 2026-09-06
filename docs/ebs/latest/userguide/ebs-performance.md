@@ -48,7 +48,7 @@ There is a relationship between the maximum performance of your EBS volumes, the
 
 There is a significant increase in latency when you first access each block of data on a new EBS volume that was created from a snapshot. You can avoid this performance hit using one of the following options:
 + Access each block prior to putting the volume into production. This process is called *initialization* (formerly known as pre-warming). For more information, see [Manually initialize the volumes after creation](initalize-volume.md#ebs-initialize).
-+ Enable fast snapshot restore on a snapshot to ensure that the EBS volumes created from it are fully-initialized at creation and instantly deliver all of their provisioned performance. For more information, see [Amazon EBS fast snapshot restore](ebs-fast-snapshot-restore.md).
++ Enable fast snapshot restore on a snapshot to make sure that the EBS volumes created from it are fully-initialized at creation and instantly deliver all of their provisioned performance. For more information, see [Amazon EBS fast snapshot restore](ebs-fast-snapshot-restore.md).
 
 ### Factors that can degrade HDD performance
 <a name="snapshotting_latency"></a>
@@ -119,7 +119,3 @@ Some instance types can drive more I/O throughput than what you can provision fo
 <a name="cloudwatch"></a>
 
 You can monitor and analyze the performance of your Amazon EBS volumes using Amazon CloudWatch, status checks, and EBS detailed performance statistics. For more information, see [Amazon CloudWatch metrics for Amazon EBS](using_cloudwatch_ebs.md) and [Amazon EBS detailed performance statistics](nvme-detailed-performance-stats.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

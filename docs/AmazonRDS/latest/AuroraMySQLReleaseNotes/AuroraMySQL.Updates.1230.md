@@ -107,7 +107,3 @@ This engine version is scheduled to be deprecated on February 28, 2023. For more
 +  SSL Bug backport Bug \#17087862, Bug \#20551271
 +  Bug \#16894092: PERFORMANCE REGRESSION IN 5.6.6\+ FOR INSERT INTO ... SELECT ... FROM (fixed in 5.6.15).
 +  Port a bug fix related to `SLAVE_TYPE_CONVERSIONS`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

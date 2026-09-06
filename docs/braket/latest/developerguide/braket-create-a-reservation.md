@@ -25,7 +25,3 @@ Your reservation is only confirmed once you receive the reservation ARN.
 Reservations are available in minimum 1-hour increments and certain devices might have additional reservation length constraints (including minimum and maximum reservation durations). The Braket team shares any relevant information with you prior to confirming the reservation.
 
 The Braket team will contact you through your email to arrange a 30-minute session with a Braket expert.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

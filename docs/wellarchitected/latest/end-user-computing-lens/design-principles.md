@@ -40,7 +40,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 <a name="minimize-euc-resources-to-optimize-costs"></a>
 
  Minimize resources needed to deliver your use cases, including instance and bundle types and fleet sizes. Review usage periodically to identify idle or underused resources (such as unused or over-provisioned instances, oversized fleets, and inefficient scaling policies). Deploy automated tools, such as the [Cost Optimizer for Amazon WorkSpaces](https://aws.amazon.com/solutions/implementations/cost-optimizer-for-amazon-workspaces/) and the [Cost Optimizer for Amazon WorkSpaces Applications](https://github.com/aws-samples/cost-optimizer-for-amazon-appstream2),to help with this process. Use open-source OSes when use cases allow or bring your own OS licenses when available. For more detail, see Cost optimization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

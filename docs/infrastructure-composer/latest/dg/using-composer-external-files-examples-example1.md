@@ -64,7 +64,3 @@ paths:
 In the Infrastructure Composer **Template** view, you can see that Infrastructure Composer has automatically updated your template to reference the external file.
 
 ![The Infrastructure Composer template view showing your infrastructure code configured to reference the external file.](http://docs.aws.amazon.com/infrastructure-composer/latest/dg/images/aac_use_ex_07.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-
  Depending on the size of the data file, you can choose to either write the file directly to `RDS DATA_PUMP_DIR` from an on-premises server, or use an Amazon EC2 bridge instance, as in the case of the Data Pump-based method. If the file size is large and you choose to use a bridge instance, use compression and encryption on the files as well as Tsunami UDP or a WAN accelerator, exactly as described for the Data Pump-based migration.
 
  To learn more about Oracle external tables, see [External Tables Concepts](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/sutil/oracle-external-tables-concepts.html#GUID-44323E01-7D72-45EC-915A-99E596769D9E) in the Oracle documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

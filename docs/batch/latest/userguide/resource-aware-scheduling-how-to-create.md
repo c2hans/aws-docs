@@ -27,7 +27,3 @@ The maximum number of consumable resources per account is 50k.
 **API:**
 
 Use the [`CreateConsumableResource` API](https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateConsumableResource.html) to define the resources you want.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

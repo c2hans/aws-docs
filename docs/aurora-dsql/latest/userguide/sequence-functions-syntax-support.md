@@ -23,7 +23,3 @@ The value obtained by `nextval` isn't reclaimed for re-use if the calling transa
 Likewise, sequence state changes made by `setval` are immediately visible to other transactions, and aren't undone if the calling transaction rolls back.
 
 The sequence to be operated on by a sequence function is specified by a `regclass` argument, which is simply the OID of the sequence in the `pg_class` system catalog. You don't have to look up the OID by hand, however, because the `regclass` data type's input converter will do the work for you. See the PostgreSQL documentation on [Object Identifier Types](https://www.postgresql.org/docs/current/datatype-oid.html) for details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

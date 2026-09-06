@@ -1884,7 +1884,3 @@ AWS IoT SiteWise defines the following condition keys that can be used in the `C
 |   [iotsitewise:propertyId](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys)  | Filters access by the ID of an asset property | String |
 |   [iotsitewise:taskArns](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys)  | Filters access by the task ARNs specified in the pipeline request | ArrayOfARN |
 |   [iotsitewise:user](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys)  | Filters access by the ID of an AWS Single Sign-On user | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

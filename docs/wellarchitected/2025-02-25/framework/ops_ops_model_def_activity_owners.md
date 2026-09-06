@@ -105,7 +105,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/ops
 +  [AWS re:Invent 2020 \| Automate anything with AWS Systems Manager](https://www.youtube.com/watch?v=AaI2xkW85yE)
 +  [AWS re:Inforce 2022 \| Automating patch management and compliance using AWS (NIS306)](https://www.youtube.com/watch?v=gL3baXQJvc0)
 +  [Supports You \| Diving Deep into AWS Systems Manager](https://www.youtube.com/watch?v=xHNLNTa2xGU)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

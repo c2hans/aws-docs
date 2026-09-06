@@ -107,7 +107,3 @@ End of support notice: On March 31, 2027, AWS will end support for AWS Service M
 
 **Note**
 AWS Service Management Connector also enables Jira internal customers without an Agent license to create Support cases. The validation steps above are applicable and valid for interactions with the **Support Case** issue type through the Jira customer portal.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

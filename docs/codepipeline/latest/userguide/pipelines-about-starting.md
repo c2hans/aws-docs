@@ -24,7 +24,3 @@ When you add a source action to your pipeline that uses automated change detecti
 + [Start a pipeline manually](pipelines-rerun-manually.md)
 + [Start a pipeline on a schedule](pipelines-trigger-source-schedule.md)
 + [Start a pipeline with a source revision override](pipelines-trigger-source-overrides.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

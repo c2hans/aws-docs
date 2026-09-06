@@ -20,7 +20,3 @@ The flow for Amazon SageMaker Unified Studio users is as follows:
 + Gain access to Amazon SageMaker Unified Studio by configuring your single sign-on (SSO) or IAM credentials and using the domain URL from your administrator.
 + Create a new project or navigate to a project that you have been added to.
 + Use the tools and resources within Amazon SageMaker Unified Studio to build, share, and execute applications within your project.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,7 +38,3 @@ AWS Prescriptive Guidance patterns provide tools, architectures, and step-by-ste
   + [Yes, You Can Migrate Your Mainframe to the Cloud](https://aws.amazon.com/blogs/enterprise-strategy/yes-you-can-migrate-your-mainframe-to-the-cloud/)
 + [4 Reasons to Re-Consider Lift-and-Shift to the Cloud](https://medium.com/aws-enterprise-collection/4-reasons-to-re-consider-lift-and-shift-to-the-cloud-e7cde603941e) (article by Joe Chung on *medium.com*)
 + [Getting Started with AWS Database Migration Service](https://youtu.be/nMTtQOtgp9g) (presentation at the 2016 AWS Global Summit Series, Chicago)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

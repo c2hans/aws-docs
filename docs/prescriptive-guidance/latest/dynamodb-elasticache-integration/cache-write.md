@@ -50,7 +50,3 @@ Here's the full logic:
 + Delete the housekeeping list for that primary key.
 
 It would be fantastic to have a way to proactively invalidate query cache entries as part of item write operations. However, inventing a design for this is extremely difficult because it's almost impossible to determine, efficiently and reliably, which cached query results would be affected by an updated item. For this reason, query cache entries have no better option than to expire through TTL settings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ After you have obtained the necessary information from the upstream system and c
 1. In the **Tags **section, create tags if you want to associate tags with this input. For more information, see [Tagging resources](tagging.md).
 
 1. Choose **Create**. MediaLive creates the input and allocates one or two IP addresses (depending on the input class). The input appears in the list of inputs with the allocated IP addresses and port 5050.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

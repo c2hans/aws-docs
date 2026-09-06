@@ -146,7 +146,3 @@ Use [AWS Firewall Manager](https://aws.amazon.com/firewall-manager/) to centrall
  **Suggestion 16.1.3**: Use AWS Secrets Manager for storing credentials.
 
  Use [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) to manage, retrieve, and rotate database credentials, application credentials, OAuth tokens, API keys, and other secrets throughout their lifecycles. Secrets Manager helps you improve your security posture, because you no longer need [hard-coded credentials](https://docs.aws.amazon.com/secretsmanager/latest/userguide/hardcoded-db-creds.html) in application source code. Storing the credentials in Secrets Manager helps avoid possible compromise by anyone who can inspect your application or the components.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

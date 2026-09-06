@@ -43,7 +43,3 @@ AWS Payment Cryptography keys have key types, principally defined by [ANSI X9 TR
 Attributes are bound to keys using key blocks when stored, shared with other accounts, or exported as specified in PCI PIN v3.1 Requirement 18-3.
 Keys are identified in the AWS Payment Cryptography platform using a unique value known as a key Amazon Resource Name (`ARN`).
 Key `ARN` is generated when a key is initially created or imported into the AWS Payment Cryptography service. Thus, if adding the same key material multiple times using the import key functionality, the same key material will be located under multiple key `ARNS` but each with a different key lifecycle.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

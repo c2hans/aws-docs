@@ -19,7 +19,3 @@ Before you create SRT outputs in listener mode, you must complete the following 
    + The stream ID, if the downstream system uses this identifier. The stream ID is optional.
 
 1. **Store the passphrase in Secrets Manager**: Follow the steps in [Set up the passphrase in AWS Secrets Manager](srt-output-encryption-asm.md) to store the passphrase in AWS Secrets Manager.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

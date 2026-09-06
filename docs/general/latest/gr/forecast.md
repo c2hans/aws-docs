@@ -91,7 +91,3 @@ The following are the service endpoints and service quotas for this service.
 | The maximum number of What-if Forecast Exports | Each supported Region: 1,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/forecast/quotas/L-6AD28BD9)  | The maximum number of What-if Forecast Exports that you can have in your Amazon Forecast account |
 | The maximum number of What-if Forecasts | Each supported Region: 100 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/forecast/quotas/L-762142D9)  | The maximum number of What-if Forecasts that you can have in your Amazon Forecast account |
 | The maximum number of What-if Forecasts in a CreateWhatIfForecastExport task | Each supported Region: 3 | No | The maximum number of What-if Forecasts in a CreateWhatIfForecastExport task |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

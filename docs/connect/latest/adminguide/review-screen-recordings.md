@@ -90,7 +90,3 @@ To view a redacted recording:
 For information about the permissions that control access to redacted and unredacted recordings, see [Permissions for redacted recordings](rule-based-redaction-screen-recording.md#permissions-for-redacted-recordings).
 
 The audio in a redacted recording depends on whether conversational analytics call recording redaction is also enabled for the contact. If it is, the redacted video is stitched with the redacted call recording. If not, the redacted video has no audio. To redact audio from call recordings, see [Use sensitive data redaction with conversational analytics](https://docs.aws.amazon.com/connect/latest/adminguide/sensitive-data-redaction.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -118,7 +118,3 @@ Audio filler also plays during the processing gap introduced by Lambda dialog co
 + Tune the start delay to your latency profile. If most bot responses are faster than `startDelayInMilliseconds`, the filler will rarely play. Lower the delay for latency-heavy workloads and raise it for fast-responding bots.
 + Keep the minimum play duration short for fast bots. A long `minimumPlayDurationInMilliseconds` on a fast bot adds perceived latency by holding the filler after the response is ready.
 + Test with representative traffic. Validate the filler choice and timing in realistic conversations before rolling out to production.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

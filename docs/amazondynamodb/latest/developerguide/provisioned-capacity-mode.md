@@ -71,7 +71,3 @@ You can manage auto scaling settings at any time by using the console, the AWS C
 Utilization rate can help you determine if you’re over provisioning capacity, in which case should reduce your table capacity to save costs. Conversely, it can also help you determine if you’re under provisioning capacity. In this case, you should increase table capacity to prevent potential throttling of requests during unexpected high traffic instances. For more information, see [Amazon DynamoDB auto scaling: Performance and cost optimization at any scale](https://aws.amazon.com/blogs/database/amazon-dynamodb-auto-scaling-performance-and-cost-optimization-at-any-scale/).
 
 If you’re using DynamoDB auto scaling, you’ll also need to set a target utilization percentage. Auto scaling will use this percentage as a target to adjust capacity upward or downward. We recommend setting target utilization to 70%. For more information, see [Managing throughput capacity automatically with DynamoDB auto scaling](AutoScaling.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

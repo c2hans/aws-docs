@@ -58,7 +58,3 @@ Products that are deployed on AWS receive a special designation in the AWS Marke
 | SaaS-based  | Only for products that run entirely on AWS. For more information, refer to the [Architecture guidelines](saas-guidelines.md#saas-architecture) later in this guide.  |
 | Data-based  | Yes  |
 | Professional services-based  | No  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

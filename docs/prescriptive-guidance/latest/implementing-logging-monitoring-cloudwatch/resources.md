@@ -158,7 +158,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/implementin
 + [Built-in data sources for AMG](https://docs.aws.amazon.com/grafana/latest/userguide/AMG-data-sources-builtin.html)
 + [Cross-account and cross-Region dashboards in CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create_xaxr_dashboard.html)
 + [Grafana plugins](https://grafana.com/grafana/plugins/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

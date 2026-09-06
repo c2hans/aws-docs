@@ -50,7 +50,3 @@ To answer the user query "What treatments were given to similar patients with bo
 1. **Agent action** – The agent re-ranks the records based on identified attributes and pre-defined logic that is imparted through the system prompt.
 
 1. **Response generation** – The LLM in** **Amazon Bedrock generates a response based on the context that the ReAct agent prepared.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

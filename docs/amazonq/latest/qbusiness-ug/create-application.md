@@ -26,7 +26,3 @@ Response generation from large language model (LLM) knowledge is enabled by defa
 + [Migrating an Amazon Q Business direct SAML 2.0 application to IAM Identity Center](migrate-application.md)
 + [Making authenticated Amazon Q Business API calls using IAM Identity Center](making-sigv4-authenticated-api-calls.md)
 + [Managing Amazon Q Business application resources](managing-resources.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

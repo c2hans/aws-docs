@@ -30,7 +30,3 @@ Contacts have only one issue, one outcome, and one action item. It's possible fo
 You see this message **There are no key highlights for this transcript** when conversational analytics can't identify an issue, outcome, or action item.
 
 To learn about the agent's experience—what part of the transcript is displayed in the Contact Control Panel (CCP), and when—see [Design a flow for key highlights](enable-analytics.md#call-summarization-agent).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

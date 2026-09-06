@@ -280,7 +280,3 @@ For a description of the fields in the AWS CloudTrail event record, see [CloudTr
 If CloudTrail is not enabled in your account, contact your organization's AWS account administrator to enable it, or use one of the alternative methods described in the preceding sections.
 
 CloudTrail Lake charges for data ingested and data scanned per query. To minimize costs, filter queries to specific time ranges and regions. For current pricing, see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

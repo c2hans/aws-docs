@@ -174,7 +174,3 @@ You can improve the Cluster DNS performance by running [NodeLocal DNSCache](http
 Another method of improving Cluster DNS performance is by enabling the built-in [auto-scaling of CoreDNS Pods](https://docs.aws.amazon.com/eks/latest/userguide/coredns-autoscaling.html).
 
 This feature continuously monitors the cluster state, including the number of nodes and CPU cores. Based on that information, the controller will dynamically adapt the number of replicas of the CoreDNS deployment in an EKS cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ In this output, each part of the text is broken out in terms of speech marks:
 + The sentence "Mary had a little lamb."
 + Each word in the text: "Mary", "had", "a", "little", and "lamb."
 + The viseme for each sound in the corresponding audio stream: "p", "E", "r", "i", and so on. For more information on visemes see [Visemes and Amazon Polly](viseme.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Polly. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query polly` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

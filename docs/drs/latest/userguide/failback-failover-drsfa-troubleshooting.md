@@ -21,7 +21,3 @@ The following table describes common issues and resolutions when using the DRSFA
 + **DRSFA client log**: `drs_failback_automation_client/drs_failback_automation.log` on the host where the client runs.
 + **Per-server failback log**: `failback.log` on the individual source VM being failed back.
 + **CloudWatch**: If configured, logs are sent to the `DRS_Mass_Failback_Automation` log group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

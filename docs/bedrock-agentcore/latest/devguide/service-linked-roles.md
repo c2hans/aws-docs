@@ -197,7 +197,7 @@ The `AWSServiceRoleForBedrockAgentCoreGatewayNetwork` service-linked role trusts
 
 The role permissions policy allows AgentCore to complete the following actions on the specified resources:
 
-You can view the complete policy at [BedrockAgentCoreGatewayNetworkServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/BedrockAgentCoreGatewayNetworkServiceRolePolicy.html).
+You can view the complete policy at [AWSBedrockAgentCoreGatewayNetworkServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBedrockAgentCoreGatewayNetworkServiceRolePolicy.html).
 
 ```
 {
@@ -658,7 +658,3 @@ If you want to remove a service-linked role, you must first delete the appropria
 <a name="service-linked-role-delete-service"></a>
 
 Use the IAM console, the AWS CLI, or the IAM API to delete service-linked roles. For more information, see [Deleting a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#delete-service-linked-role).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

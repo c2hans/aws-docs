@@ -128,7 +128,3 @@ There are certain restrictions and limitations with using Docker with AWS CloudS
 + Docker has limited space in an environment. If you have large individual images, or too many pre-existing Docker images, it can cause issues that might prevent you from pulling, building, or running additional images. For more information on Docker, see the [Docker Documentation guide](https://docs.docker.com/get-started/overview/).
 + Docker is available in all AWS Regions, except the AWS GovCloud (US) Regions. For a list of Regions in which Docker is available, see [Supported AWS Regions for AWS CloudShell](supported-aws-regions.md).
 + If you encounter issues when using Docker with AWS CloudShell, see the [Troubleshooting](troubleshooting.md) section of this guide for information on how to potentially resolve these issues.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

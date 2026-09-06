@@ -22,7 +22,3 @@ Follow this procedure if you [determined](delivering-to-mediapackage.md) that yo
    Make sure that you obtain the URLs (which start with `https://`), not the channel name (which starts with `arn`).
 
    Note that you don't use user credentials in order to send to MediaPackage v2.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

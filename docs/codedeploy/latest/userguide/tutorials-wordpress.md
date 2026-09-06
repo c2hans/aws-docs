@@ -22,7 +22,3 @@ Before you start this tutorial, you must complete the prerequisites in [Getting 
 + [Step 4: Deploy your WordPress application](tutorials-wordpress-deploy-application.md)
 + [Step 5: Update and redeploy your WordPress application](tutorials-wordpress-update-and-redeploy-application.md)
 + [Step 6: Clean up your WordPress application and related resources](tutorials-wordpress-clean-up.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ To insert a motion overlay in any event, the software installed on the Elemental
 + [How to insert a motion overlay with HTML5](how-to-insert-a-motion-overlay-with-html5.md)
 + [How to insert a motion overlay with QuickTime MOV](how-to-insert-a-motion-overlay-with-quicktime-mov.md)
 + [How to insert a motion overlay with a set of PNG files](how-to-insert-a-motion-overlay-with-png.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

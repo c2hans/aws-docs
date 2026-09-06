@@ -33,7 +33,3 @@ The following table describes important changes to the *Amazon Q Developer in ch
 | [Enhanced troubleshooting information.](#doc-history) | New Troubleshooting items. Minor updates and doc linking changes for accuracy. | August 28, 2019 |
 | [Addition of first set of AWS CloudTrail logging notifications for Amazon Q Developer in chat applications.](#doc-history) | AWS CloudTrail provides logging support for several newly integrated Amazon Q Developer in chat applications API actions.  | August 7, 2019 |
 | [Amazon Q Developer in chat applications is now in beta release.](#doc-history) | Amazon Q Developer in chat applications is an AWS service that enables DevOps and software development teams to use Amazon Chime or Slack chat rooms to monitor and respond to operational events in their AWS Cloud.  | July 24, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

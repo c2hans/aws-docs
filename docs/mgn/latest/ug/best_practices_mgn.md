@@ -52,7 +52,3 @@ The following are the required steps to complete a successful migration implemen
 1. Perform a test for every server in advance, and report issues to AWS Transform MGN.
 
 1. Coordinate cutover windows with AWS Transform MGN in advance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

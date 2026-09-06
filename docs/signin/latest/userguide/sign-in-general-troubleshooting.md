@@ -114,7 +114,3 @@ The AWS CLI is not installed or is not in your system's PATH. To install or upda
 <a name="sign-in-general-contact-support"></a>
 
 If the guidance on this page doesn't resolve your issue, you can get help from Support by completing the [Billing and Account Support request](https://support.aws.amazon.com/#/contacts/aws-account-support/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

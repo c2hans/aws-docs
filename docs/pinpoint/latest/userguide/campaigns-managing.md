@@ -29,7 +29,3 @@ Because 10DLC campaigns exist outside of a specific project, information about t
    + **Change settings** – Change the settings for the campaign, including the target segment, the message content, and the delivery time. You can choose this option only for campaigns that haven't been sent yet.
    + **Duplicate** – Copy the campaign to use its settings as a template for a new campaign, in which you can change or keep any of the original settings.
    + **Delete** – Remove the campaign from Amazon Pinpoint and stop sending messages through the campaign.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

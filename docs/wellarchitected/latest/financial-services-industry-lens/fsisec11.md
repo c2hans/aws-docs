@@ -61,7 +61,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
  **Related videos:**
 +  [What is Amazon GuardDuty Malware Protection? \| Amazon Web Services](https://www.youtube.com/watch?v=xKAp5lx1Sb0&ab_channel=AmazonWebServices)
 +  [AWS re:Invent 2021 - Backup, disaster recovery, and ransomware protection with AWS](https://www.youtube.com/watch?v=Ru4jxh9qazc&ab_channel=AWSEvents)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

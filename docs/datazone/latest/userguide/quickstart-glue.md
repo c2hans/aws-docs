@@ -209,7 +209,3 @@ Now that you have successfully published an asset to the Amazon DataZone catalog
 1. In the Amazon DataZone data portal, choose your **MarketingDataAnalysisProject** consumer project and then, from the right-hand panel, under **Analytics tools**, choose the **Query data** link with Amazon Athena. This opens the Amazon Athena query editor using your project’s credentials for authentication. Choose the **MarketingDataAnalysisProject** consumer environment from the **Amazon DataZone Environment** dropdown in the query editor and then choose your project's `<environment_name>%sub_db` from the database dropdown.
 
 1. You can now run queries on the subscribed table. You can choose the table from **Tables and Views**, and then choose **Preview** to have the select statement on the editor screen. Run the query to see the results.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

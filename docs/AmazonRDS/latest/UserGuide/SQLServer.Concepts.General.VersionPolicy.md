@@ -99,7 +99,3 @@ Amazon RDS for SQL Server may require mandatory upgrades to newer minor versions
 <a name="SQLServer.Concepts.General.VersionPolicy.Testing"></a>
 
 You can test the upgrade process and how the new version works with your application and workload. Restore from an instance snapshot to create a new RDS for SQL Server instance. You can create an instance snapshot yourself from an existing Amazon RDS instance. Amazon RDS also automatically creates periodic snapshots for your instance. You can then initiate a version upgrade for the new instance. You can experiment on the upgraded copy of your instance before deciding whether to upgrade your original instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

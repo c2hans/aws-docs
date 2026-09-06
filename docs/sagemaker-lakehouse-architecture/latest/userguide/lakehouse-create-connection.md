@@ -104,7 +104,3 @@ When creating a connection, if you choose a data source that requires the creden
 **Secret tags**
 + To ensure the secret can only be used for a particular project, your administrator must tag with the `AmazonDataZoneProject` tag key and the value will be `projectId`.
 + To use the secret across multiple projects, your administrator must tag the secret with `for-use-with-all-datazone-projects = true`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker lakehouse architecture. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-lakehouse-architecture` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

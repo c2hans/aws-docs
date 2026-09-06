@@ -38,7 +38,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-studio-data-preparat
 +  Download as JSON – choose **More** then **Download as JSON** to download your recipe to save outside of AWS Glue Studio.
 +  Undo and redo recipe steps – You can undo and redo recipe steps in the Preview pane when working with data in the grid.
 ![The screenshot shows the more icon.](http://docs.aws.amazon.com/glue/latest/dg/images/author-recipe-toolbar-undo-redo.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

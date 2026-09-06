@@ -11,7 +11,3 @@ Depending on the NLP task that you want to perform, different architectures migh
 + [Using Amazon Comprehend Medical](comprehend-medical.md) – Learn about how to use Amazon Comprehend Medical independently, without integrating it with a large language model (LLM).
 + [Combining Amazon Comprehend Medical with LLMs](comprehend-medical-rag.md) – Learn about how to combine Amazon Comprehend Medical with an LLM in a Retrieval Augment Generation (RAG) architecture.
 + [Using LLMs](llms.md) – Learn about how to use an LLM for healthcare and life science applications, either by using a fine-tuned LLM or a RAG architecture.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

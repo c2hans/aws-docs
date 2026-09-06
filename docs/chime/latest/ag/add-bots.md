@@ -24,7 +24,3 @@ Only a chat room administrator can add a chatbot to a chat room. They use the ch
 The bot name appears in the chat room roster. If there are additional actions necessary to add a chatbot to a chat room, provide the actions to the chat room administrator.
 
 After the chatbot is added to the chat room, provide the chatbot commands to your chat room users. One way to do this is to program your chatbot to send command help to the chat room when it receives the chat room invite. AWS also recommends creating a help command for your chatbot users to use.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

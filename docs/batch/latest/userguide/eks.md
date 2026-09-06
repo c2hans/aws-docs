@@ -36,7 +36,3 @@ AWS Batch on Amazon EKS supports Amazon EC2 instances (On-Demand and Spot) as co
 + [Run a DaemonSet on AWS Batch managed nodes](daemonset-on-batch-eks-nodes.md)
 + [Customize Amazon EKS launch templates](eks-launch-templates.md)
 + [How to upgrade from EKS AL2 to EKS AL2023](eks-migration-2023.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

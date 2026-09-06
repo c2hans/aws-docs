@@ -39,7 +39,3 @@ To [get started with DevOps Guru for RDS](https://docs.aws.amazon.com/devops-gur
 <a name="aurora-faq-how-does-cloudwatch-database-insights-collect-telemetry"></a>
 
 CloudWatch Database Insights automates telemetry collection, including metrics, logs, and traces, eliminating the need for manual setup and configuration. By consolidating this telemetry into Amazon CloudWatch, it provides a unified view of database performance and health.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

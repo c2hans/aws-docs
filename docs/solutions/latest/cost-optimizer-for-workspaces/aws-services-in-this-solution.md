@@ -22,7 +22,3 @@ The following AWS services are included in this solution:
 |  [Amazon DynamoDB](https://aws.amazon.com/dynamodb/)  | The solution creates a DyanamoDB table to store spoke account details. |
 |  [AWS Service Catalog](https://aws.amazon.com/servicecatalog/)  | The solution creates a service catalog application and associates the CloudFormation stack to this application. |
 |  [AWS CloudFormation](https://aws.amazon.com/cloudformation/)  | The solution uses CloudFormation templates to deploy the resource needed to monitor WorkSpaces. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cost Optimizer for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

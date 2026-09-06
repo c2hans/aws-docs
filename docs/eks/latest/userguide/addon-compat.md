@@ -69,7 +69,3 @@ Use the [describe-addon-versions API](https://docs.aws.amazon.com/eks/latest/API
 The `computeTypes` field in the `describe-addon-versions` output indicates an add-on’s compatibility with EKS Auto Mode Managed Nodes or Hybrid Nodes. Add-ons marked `auto` work with EKS Auto Mode’s cloud-based, AWS-managed infrastructure, while those marked `hybrid` can run on on-premises nodes connected to the EKS cloud control plane.
 
 For more information, see [Considerations for Amazon EKS Auto Mode](eks-add-ons.md#addon-consider-auto).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

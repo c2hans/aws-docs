@@ -66,7 +66,3 @@ Notice the special `Task<>` syntax that's needed in `Main` when you use this pat
 Blocking on an asynchronous call with `Result`, `Wait()`, or `GetAwaiter().GetResult()` is a *sync-over-async* pattern. It is acceptable only in a simple console `Main` that has no `SynchronizationContext`. In ASP.NET, Windows Forms, WPF, and Blazor WebAssembly, this pattern can starve the thread pool or deadlock. Either outcome causes your application to hang. Prefer declaring `Main` as `async` and using `await`, as shown in the first example. For details, see [Use async/await correctly](net-dg-performance.md#net-dg-performance-async).
 
 You can see full examples of asynchronous calls to AWS service clients in the [Creating a simple application](quick-start.md) section ([Simple cross-platform app](quick-start-s3-1-cross.md) and [Simple Windows-based app](quick-start-s3-1-winvs.md)) and in [Guided code examples](tutorials-examples.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

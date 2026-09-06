@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/unpicking-vendor-lock
 + [ Containers on AWS ](https://aws.amazon.com/containers/services/)
 + [ AWS DevOps Services ](https://aws.amazon.com/devops/)
 + [ IDC Whitepaper, sponsored by AWS, “Fostering Business and Organizational Transformation to Generate Business Value with Amazon Web Services” February 2018 ](https://www.synthesis.co.za/wp-content/uploads/2019/02/IDC-Fostering-Business-and-Organizational-Transformation-to-Generate-Business-Value-with-AWS1.pdf)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

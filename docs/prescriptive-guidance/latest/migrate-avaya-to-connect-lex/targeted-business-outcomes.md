@@ -32,7 +32,3 @@ In certain scenarios, calls might be incorrectly classified and route to the inc
 <a name="ai-based-payment-collection"></a>
 
 Payment collections is the most important business function because it has a direct effect on company performance. Collecting revenue on time helps a business grow faster by using that revenue to make additional investments. Therefore, higher contact rates are essential to collect customer payments. However, each individual customer has an ideal time to answer calls. AI can help your business predicting the best time to call each customer in order to increase the probability of the customer answering the call.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

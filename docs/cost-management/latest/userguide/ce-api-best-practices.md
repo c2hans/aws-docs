@@ -36,7 +36,3 @@ Because you're charged for the Cost Explorer API per paginated request, we recom
 AWS billing information is updated up to three times daily. Typical workloads and use cases for the Cost Explorer API anticipate a call pattern cadence ranging from daily to several times per day. To receive the most up-to-date data available, query for the time period that you're interested in.
 
 If you're creating an application using the Cost Explorer API, we recommend architecting the application so that it has a caching layer. This enables you to regularly update the underlying data for your end users, but doesn't trigger queries every time that an individual in your organization accesses it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

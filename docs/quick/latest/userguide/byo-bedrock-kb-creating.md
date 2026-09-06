@@ -18,7 +18,3 @@ This topic shows you how to create a knowledge base in Amazon Quick from an exis
 1. Complete the form and choose **Create**.
 
 After creation, the managed knowledge base is available in Amazon Quick and can be added to spaces, agents, and automations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

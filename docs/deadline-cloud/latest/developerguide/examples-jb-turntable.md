@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Render a turntable video with Maya and Arnold on Deadline Cloud
 <a name="examples-jb-turntable"></a>
 
-The [turntable\_with\_maya\_arnold](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/turntable_with_maya_arnold) job bundle takes an OBJ geometry file as input and outputs a turntable render video. A turntable render is a 360-degree rotation of a rendered 3D model that allows inspection of the geometry without a 3D viewer.
+The [turntable\_with\_maya\_arnold job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/turntable_with_maya_arnold) on the GitHub website takes an OBJ geometry file as input and outputs a turntable render video. A turntable render is a 360-degree rotation of a rendered 3D model that allows inspection of the geometry without a 3D viewer.
 
 This bundle demonstrates how to create utility jobs that are easy to submit from a GUI. The job template defines a pipeline of three steps connected with a dependency chain:
 
@@ -23,8 +23,4 @@ You can launch the GUI submitter by creating a desktop shortcut. On Windows, cre
 @call C:\{{DEADLINE_CLI_INSTALLATION}}\deadline bundle gui-submit C:\{{DEADLINE_CLOUD_SAMPLES}}\turntable_with_maya_arnold
 ```
 
-If you accept all default settings, the job renders a turntable with placeholder geometry. You can also download an OBJ file such as [stanford-bunny.obj](https://github.com/alecjacobson/common-3d-test-models/blob/master/data/stanford-bunny.obj) and select it for the input geometry parameter.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+If you accept all default settings, the job renders a turntable with placeholder geometry. You can also download an OBJ file such as [stanford-bunny.obj](https://github.com/alecjacobson/common-3d-test-models/blob/master/data/stanford-bunny.obj) from the common-3d-test-models repository on the GitHub website, and select it for the input geometry parameter.

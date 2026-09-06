@@ -48,7 +48,3 @@ For information about how to troubleshoot if the DNS changes are taking too long
  To configure Amazon Route 53 alias record using the Amazon Route 53 API or AWS CLI call the [ChangeResourceRecordSets](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeResourceRecordSets.html) API action. To learn about the target hosted zone id of Route 53, see [Service endpoints](https://docs.aws.amazon.com/general/latest/gr/apprunner.html).
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

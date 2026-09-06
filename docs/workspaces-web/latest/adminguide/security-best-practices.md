@@ -15,7 +15,3 @@ Best practices for Amazon WorkSpaces Secure Browser include the following:
 To prevent potential security events associated with your use of WorkSpaces Secure Browser, follow these best practices:
 + Implement least privilege access and create specific roles to be used for WorkSpaces Secure Browser actions. Use IAM templates to create a Full Access or Read Only role. For more information, see [AWS managed policies for WorkSpaces Secure Browser](security-iam-awsmanpol.md).
 + Be careful with sharing portal domains and user credentials. Anyone on the internet can access the web portal, but they can't start a session unless they have a valid user credential to the portal. Be cautious about how, when, and to whom you share web portal credentials.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

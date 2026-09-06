@@ -22,7 +22,3 @@ deadline bundle submit .
 ```
 
 To wedge your own values, edit `wedges.csv`, or keep multiple CSVs and pass one with `-p WedgeCsvFile={{/path/to/my_wedges.csv}}`. The README covers the combination expression that pairs CSV columns into tasks, running the expansion locally, and the security model for bundle hooks. For workstation-wide hooks, see [Enforce fixed license limits with a Deadline Cloud submission hook](examples-license-limits-hook.md). For a frame-range Blender render, see [Render Blender scenes on Deadline Cloud](examples-jb-blender-render.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

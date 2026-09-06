@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 + [MAPERF 1: How do you select the best performing architecture between two organizations?](maperf-1.md)
 + [MAPERF 2: How does the platform scale and maintain performance as more customer load is added?](maperf-2.md)
 + [Resources](resources-perf.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

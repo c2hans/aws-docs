@@ -9,7 +9,7 @@ Flows define the structured paths your conversational AI application follows to 
 
 Each flow contains the logic, messages, nodes, variables, and routing behavior needed to support a specific user intent or process. For example, one flow may help a user book a room, while another flow may answer policy questions, authenticate a user, utilize agentic AI to handle most tasks, or route the user to human support.
 
-Flows are built visually in the Agentic CX Designer Canvas, where you add and connect nodes to map out each step of the experience.
+Flows are built visually in the agentic CX designer Canvas, where you add and connect nodes to map out each step of the experience.
 
 A single application can include multiple flows, and a flow can also be reused across multiple applications in the same workspace.
 
@@ -90,7 +90,7 @@ Toolbar options include:
 
 The **Advanced** tab in the flow's settings includes import and export options that help you move or reuse flow designs. Exporting a flow creates a JSON file that preserves the conversation path and Canvas structure so it can be imported later into a workspace.
 
-Use export when you want to back up a flow, share a reusable flow pattern, or move a flow design into another workspace. Use import when you have a previously exported JSON file and want Agentic CX Designer to recreate that conversation path on the Canvas.
+Use export when you want to back up a flow, share a reusable flow pattern, or move a flow design into another workspace. Use import when you have a previously exported JSON file and want agentic CX designer to recreate that conversation path on the Canvas.
 
 **To import or export a flow**
 
@@ -165,7 +165,7 @@ Settings include:
 ## Routing
 <a name="acxd-flows-routing"></a>
 
-Routing helps Agentic CX Designer understand when a user's intent should match a flow.
+Routing helps agentic CX designer understand when a user's intent should match a flow.
 
 The most important routing field is the *AI description*.
 
@@ -288,7 +288,7 @@ Examples:
 + Small / Medium / Large
 + Billing / Technical support / Account access
 
-Use *built-in slots* for common input types that Agentic CX Designer already supports.
+Use *built-in slots* for common input types that agentic CX designer already supports.
 
 Examples:
 + Date
@@ -352,7 +352,3 @@ To reference a variable, type { in a supported text field and choose from the pl
 + [Generative Journey](acxd-generative-journey.md)
 + [Live Sync](acxd-live-sync.md)
 + [Escalations](acxd-escalations.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

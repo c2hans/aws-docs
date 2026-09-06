@@ -10,7 +10,3 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/tibco-t
  In the TIBCO EMS example, messages from *App 2* are sent to `Q2` and then forwarded to `Q2@EMS_APPLE`. In Amazon MQ, the queue name, `Q2`, would be the same on both message brokers, simplifying the configuration of *App 1*.
 
  The following example shows the **AMQ\_ORANGE** broker with consumers in *us-east-1* and **AMQ\_APPLE** with consumers in *us-east-2* ![ActiveMQ console showing queues table with two queues, each having one consumer highlighted.](http://docs.aws.amazon.com/amazon-mq/latest/migration-guide/images/tibco-testing-and-validation-fig-1.PNG) ![ActiveMQ console showing two queues with one consumer each and green arrows highlighting the consumer count.](http://docs.aws.amazon.com/amazon-mq/latest/migration-guide/images/tibco-testing-and-validation-fig-2.PNG)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -72,7 +72,3 @@ The following procedure gives you an overview of how to configure Salesforce Onl
 ![Screenshot of the Salesforce OAuth and OpenID Connect Settings page showing the OAuth settings configuration options for enabling the Username-Password flow for the connected app.](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/images/salesforce-11.png)
 
    You now have the Salesforce Online host URL, username, password, security token, client ID, client secret, and authentication URL you need to connect Salesforce Online to Amazon Q.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ The following table describes the documentation history for releases of the Work
 | [Configuring WorkSpaces for Amazon WorkSpaces Thin Client](configuring-WSP.md) | Updated the operating system list. | February 12, 2024 |
 | [Configuring WorkSpaces Applications for Amazon WorkSpaces Thin Client](configuring-AS2.md) | Updated the Identity Provider procedure. | February 12, 2024 |
 | Initial release | Initial release | November 26, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

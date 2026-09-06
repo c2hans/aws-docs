@@ -29,7 +29,7 @@ App viewers can only access data they are already authorized to see in Quick. Em
 ## Integration consent model
 <a name="apps-integration-consent"></a>
 
-When the apps in Quick agent adds an integration to your app (action connector, space, dashboard visual, or AI inference), it prompts you for approval. This consent model ensures:
+When the apps in Quick agent adds an integration to your app (connector, space, dashboard visual, or AI inference), it prompts you for approval. This consent model ensures:
 + You know exactly what external calls your app makes.
 + You control READ vs WRITE permissions.
 + The published app never includes unapproved integrations.
@@ -43,7 +43,7 @@ Every apps in Quick app runs inside a sandboxed iframe with strict security poli
 + **External resources** — The Content Security Policy blocks loading images, scripts, fonts, and other assets from external servers. Use inline SVG graphics, Base64-encoded image data, or image files loaded from a Amazon Quick space.
 + **Network requests** — App code cannot make direct HTTP requests to external servers. All communication with external systems goes through the secure bridge API or a registered action connector.
 + **File downloads** — File downloads must use the `downloadFile` function from the apps in Quick runtime library.
-+ **Public app isolation** — Public apps run in the same sandbox as private apps but cannot access action connectors, embedded visuals, embedded chat experiences, or Amazon Quick spaces. Only shared storage and AI inference are available to anonymous viewers.
++ **Public app isolation** — Public apps run in the same sandbox as private apps but cannot access connectors, embedded visuals, embedded chat experiences, or Amazon Quick spaces. Only shared storage and AI inference are available to anonymous viewers.
 
 ## Public app security
 <a name="apps-public-app-security"></a>
@@ -51,10 +51,6 @@ Every apps in Quick app runs inside a sandboxed iframe with strict security poli
 Public apps allow anonymous access without authentication. The following security measures apply:
 + **No identity** — Anonymous viewers have no user identity. The user identity API returns null values for public viewers.
 + **No private storage** — Anonymous viewers cannot access private storage. Only shared storage is available.
-+ **No integrations** — Public apps cannot use action connectors, embedded visuals, embedded chat experiences, or Amazon Quick spaces.
++ **No integrations** — Public apps cannot use connectors, embedded visuals, embedded chat experiences, or Amazon Quick spaces.
 + **Rate limiting** — AI inference requests from public apps are rate-limited to prevent abuse. Usage counts against the app owner's subscription quota.
 + **Same sandbox** — Public apps run in the same sandboxed iframe with the same Content Security Policy as private apps.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

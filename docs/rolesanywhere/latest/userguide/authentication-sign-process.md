@@ -179,7 +179,3 @@ The signature derived from the previous step is added to the HTTP request in the
 1. The `SignedHeaders` is a comma-delimited list of the headers signed as part of the request.
 
 1. The `Signature` is the hex encoded output of the previous step.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

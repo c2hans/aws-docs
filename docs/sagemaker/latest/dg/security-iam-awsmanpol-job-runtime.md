@@ -89,7 +89,3 @@ View details about updates to AWS managed policies for Amazon SageMaker AI since
 | --- | --- | --- | --- |
 | [AmazonSageMakerJobRuntimeAccess](#security-iam-awsmanpol-AmazonSageMakerJobRuntimeAccess) – Updated | 2 | Added `kms:Decrypt` and `kms:GenerateDataKey` permissions to support AWS KMS encryption for Multi-Turn Reinforcement Learning (MTRL) runtime. Permissions are scoped to KMS keys in your own account and restricted to requests routed through SageMaker AI service integrations. | August 07, 2026 |
 | [AmazonSageMakerJobRuntimeAccess](#security-iam-awsmanpol-AmazonSageMakerJobRuntimeAccess) – New policy | 1 | Initial policy | June 4, 2026 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

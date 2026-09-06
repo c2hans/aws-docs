@@ -12,7 +12,3 @@ Wickr provides a number of security features to consider as you develop and impl
 To prevent potential security events associated with your use of Wickr, follow these best practices:
 + Implement least privilege access and create specific roles to be used for Wickr actions. Use IAM templates to create a role. For more information, see [AWS managed policies for AWS Wickr](security-iam-awsmanpol.md).
 + Access the AWS Management Console for Wickr by authenticating to the AWS Management Console first. Don't share your personal console credentials. Anyone on the internet can browse to the console, but they can't sign in or start a session unless they have valid credentials to the console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

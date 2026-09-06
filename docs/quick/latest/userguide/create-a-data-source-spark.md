@@ -14,7 +14,3 @@ Quick Sight requires your Spark server to be secured and authenticated using LDA
 The Spark documentation contains information on how to set this up. To start, you need to configure it to enable front-end LDAP authentication over HTTPS. For general information on Spark, see [the Apache spark website](http://spark.apache.org/). For information specifically on Spark and security, see [Spark security documentation](http://spark.apache.org/docs/latest/security.html).
 
 To make sure that you have configured your server for Quick Sight access, follow the instructions in [Network and database configuration requirements](configure-access.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

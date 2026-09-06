@@ -38,7 +38,3 @@ There are no restrictions on how you can use expressions that you define in a se
 ```
 search?q=terminator&expr.rank1=sin( _score)&expression.rank2=cos( _score)&sort=rank1 desc,rank2 desc&return=title,_score,rank2
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

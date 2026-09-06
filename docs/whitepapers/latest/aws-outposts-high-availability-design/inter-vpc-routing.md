@@ -12,7 +12,3 @@ Resources on two separate Outposts deployed in different VPCs can communicate ea
 Recommended practices for protecting against larger failure modes:
 + Deploy multiple Outposts anchored to multiple AZs and Regions.
 + Use separate VPCs for each Outpost in a multi-Outpost deployment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

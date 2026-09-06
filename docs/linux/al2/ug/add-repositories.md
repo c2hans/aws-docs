@@ -49,7 +49,3 @@ Use the **yum-config-manager** command with the `--enable {{repository}}` flag. 
 ```
 
 For more information, and to download the latest version of this package, see [https://fedoraproject.org/wiki/EPEL](https://fedoraproject.org/wiki/EPEL).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-a
  If you are using Amazon S3 as your primary storage, you can use [Amazon Athena/QuickSight integration](https://docs.aws.amazon.com/quicksight/latest/user/create-a-data-set-athena.html) to perform analysis and visualization. [Amazon Athena](https://aws.amazon.com/athena/) is an interactive query service that makes it easy to analyze data in S3 using standard SQL. You can run SQL queries using Athena on data stored in S3, and build business dashboards within QuickSight.
 
  For another visualization approach, [Apache Zeppelin](https://zeppelin.apache.org/) is an open-source BI solution that you can run on Amazon EMR to visualize data in Amazon S3 using [Spark SQL](https://spark.apache.org/). You can also use Apache Zeppelin to visualize data in Amazon Redshift.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -617,7 +617,3 @@ Now that you know how to create a vector search collection and index data, you c
 + Use the OpenSearch Python client to work with vector search collections. See this tutorial on [GitHub](https://github.com/opensearch-project/opensearch-py/blob/main/guides/plugins/knn.md).
 + Use the OpenSearch Java client to work with vector search collections. See this tutorial on [GitHub](https://github.com/opensearch-project/opensearch-java/blob/main/guides/plugins/knn.md).
 + Set up LangChain to use OpenSearch as a vector store. LangChain is an open source framework for developing applications powered by language models. For more information, see the [LangChain documentation](https://docs.langchain.com/oss/python/integrations/vectorstores/opensearch).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

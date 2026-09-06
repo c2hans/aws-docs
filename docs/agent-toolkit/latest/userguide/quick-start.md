@@ -51,7 +51,7 @@ Add the following to your MCP configuration file (for example, `~/.kiro/settings
       "timeout": 100000,
       "transport": "stdio",
       "args": [
-        "mcp-proxy-for-aws==1.6.3",
+        "mcp-proxy-for-aws-cli@latest",
         "https://aws-mcp.us-east-1.api.aws/mcp",
         "--metadata", "AWS_REGION=us-west-2"
       ]
@@ -116,7 +116,3 @@ After you install aws-core, you can install additional plugins for specialized w
 + **aws-agents-for-devsecops** — Skills for incident investigation, code security scanning, and penetration testing.
 
 Install additional plugins using the same method as aws-core.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Agent Toolkit for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agent-toolkit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

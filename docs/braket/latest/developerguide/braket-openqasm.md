@@ -69,7 +69,3 @@ OpenQASM 3.0 tasks are available and can be managed within the Amazon Braket con
 OpenQASM is available in all Amazon Braket Regions.
 
 For an example notebook for getting started with OpenQASM on Amazon Braket, see [Braket Tutorials GitHub](https://github.com/aws/amazon-braket-examples/blob/main/examples/braket_features/Getting_Started_with_OpenQASM_on_Braket.ipynb).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

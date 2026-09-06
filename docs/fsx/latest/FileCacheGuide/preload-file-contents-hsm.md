@@ -22,7 +22,3 @@ nohup find {{local/directory}} -type f -print0 | xargs -0 -n 1 sudo lfs hsm_rest
 
 **Note**
 If your linked data repository is larger than your cache, you can only load as much actual file data as will fit into the cache's remaining storage space. You'll receive an error if you attempt to access file data when there's no more storage remaining in the cache.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ Athena column name restrictions are different from the Cost and Usage Reports co
 After applying these rules, some of the resource tag columns will have duplicate names. AWS merges columns when there are more than one columns with the same name.
 
 As examples, the column name `ExampleColumnName` becomes `example_column_name`, and the column name `Example Column Name` becomes `example_column_name`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

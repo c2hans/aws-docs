@@ -23,7 +23,7 @@ Apply security updates using DNF and repository versions. For more information, 
 ## Security in the cloud
 <a name="cloud-security"></a>
 
-Security is a shared responsibility between AWS and you. The [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/) describes this as security of the cloud and security in the cloud. For more information, see [Security and Compliance in Amazon Linux 2023](security.md).
+Security is a shared responsibility between AWS and you. The [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/) describes this as security of the cloud and security in the cloud. For more information, see [Security and Compliance in Amazon Linux](security.md).
 
 ## SELinux modes
 <a name="setting-selinux"></a>
@@ -53,7 +53,3 @@ AL2023 includes OpenSSH 8.7. OpenSSH 8.7 by default disables the `ssh-rsa` key e
 + Linux Kernel TLS support.
 
 For more information, see the [OpenSSL migration guide](https://www.openssl.org/docs/man3.0/man7/migration_guide.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

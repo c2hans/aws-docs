@@ -219,7 +219,3 @@ aws timestream-influxdb create-db-cluster \
 +  **Scaling**: Initial release supports 1-node and 3-node configurations; future updates will enable additional scaling options. At initial release you won’t be able to change your node count after creation.
 +  **High Availability**: 3-node Enterprise configurations provide better fault tolerance and performance distribution.
 +  **Compaction**: Enterprise edition's compaction capability is essential for maintaining performance over time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

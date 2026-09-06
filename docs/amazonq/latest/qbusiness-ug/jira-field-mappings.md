@@ -108,7 +108,3 @@ The Amazon Q Jira connector supports the following entities and the associated r
 | project\_name | j\_project\_name | Custom | String |
 | project\_key | j\_project\_key | Custom | String |
 | issue\_key | j\_issue\_key | Custom | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

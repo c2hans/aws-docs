@@ -31,7 +31,3 @@ To understand and help build the foundational capabilities in your SDLC with gen
 To implement an ADM target operating model, refer to the [roadmap](implement-strategy.md#roadmap) that encompasses all phases from initial quick wins to full AI integration. Make use of the [sample framework](appendix-framework.md) and [implementation checklist](appendix-checklist.md).
 
 Success stories from [early adopters](introduction.md#benefits) demonstrate the transformative potential of AI in application development and maintenance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

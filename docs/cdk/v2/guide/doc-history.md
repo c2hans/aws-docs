@@ -26,7 +26,3 @@ The table below represents significant documentation milestones. We fix errors a
 | [Dependency management](#doc-history) | Add topic on managing dependencies with the AWS CDK. | April 7, 2022 |
 | [Remove double-braces from Java examples](#doc-history) | Replace this anti-pattern with Java 9 `Map.of` throughout. | March 9, 2022 |
 | [AWS CDK v2 release](#doc-history) | Version 2 of the AWS CDK Developer Guide is released, See [Releases](https://github.com/awslabs/aws-cdk/releases) for information about AWS CDK releases. The AWS CDK is updated approximately once a week. Maintenance versions may be released between weekly releases to address critical issues. Each release includes a matched AWS CDK Toolkit (CDK CLI), AWS Construct Library, and API Reference. Updates to this Guide generally do not synchronize with AWS CDK releases. | December 4, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

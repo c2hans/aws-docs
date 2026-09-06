@@ -74,7 +74,3 @@ For training, we recommend the `ml.m4`, `ml.c4`, and `ml.c5` instance families. 
 For an example of how to train an RCF model and perform inferences with it, see the [An Introduction to SageMaker AI Random Cut Forests](https://sagemaker-examples.readthedocs.io/en/latest/introduction_to_amazon_algorithms/random_cut_forest/random_cut_forest.html) notebook. For instructions how to create and access Jupyter notebook instances that you can use to run the example in SageMaker AI, see [Amazon SageMaker notebook instances](nbi.md). Once you have created a notebook instance and opened it, select the **SageMaker AI Examples** tab to see a list of all the SageMaker AI samples. To open a notebook, click on its **Use** tab and select **Create copy**.
 
 For a blog post on using the RCF algorithm, see [Use the built-in Amazon SageMaker AI Random Cut Forest algorithm for anomaly detection](https://aws.amazon.com/blogs/machine-learning/use-the-built-in-amazon-sagemaker-random-cut-forest-algorithm-for-anomaly-detection/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

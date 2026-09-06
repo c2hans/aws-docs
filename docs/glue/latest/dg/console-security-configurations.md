@@ -85,7 +85,3 @@ For more information, see the following topics in the *Amazon Simple Storage Ser
 + For information about `SSE-S3`, see [Protecting Data Using Server-Side Encryption with Amazon S3-Managed Encryption Keys (SSE-S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingServerSideEncryption.html).
 + For information about `SSE-KMS`, see [Protecting Data Using Server-Side Encryption with AWS KMS keys](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html).
 + For information about `CSE-KMS`, see [ Using a KMS key stored in AWS KMS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingClientSideEncryption.html#client-side-encryption-kms-managed-master-key-intro).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

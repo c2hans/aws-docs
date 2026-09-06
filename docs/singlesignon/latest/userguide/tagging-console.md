@@ -36,7 +36,3 @@ To remove a tag, choose the **X** in the **Remove** column next to the tag that 
 1. For each tag, type the values in the **Key** and **Value (optional)** fields. When you are finished, choose the **Add new tag** button.
 
 To remove a tag, choose the **Remove** button next to the tag that you want to remove.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

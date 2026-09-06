@@ -160,7 +160,3 @@ Amazon S3 Vectors defines the following condition keys that can be used in the `
 |   [s3vectors:VectorBucketTag/${TagKey}](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-access-management.html#s3-vectors-condition-keyss3-vectors-access-management.html)  | Filters access by the tags associated with the vector bucket | String |
 |   [s3vectors:kmsKeyArn](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-access-management.html#s3-vectors-condition-keyss3-vectors-access-management.html)  | Filters access by the AWS KMS key ARN for the key used to encrypt a vector bucket | ARN |
 |   [s3vectors:sseType](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-access-management.html#s3-vectors-condition-keyss3-vectors-access-management.html)  | Filters access by server-side encryption type | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

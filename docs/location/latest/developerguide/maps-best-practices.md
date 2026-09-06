@@ -75,7 +75,3 @@ By accurately defining the bbox and bounds parameters, you can ensure your maps 
 <a name="geojson-best-practices"></a>
 
 When using GeoJSON data, optimizing the query string by minifying the GeoJSON can help you stay within query string limits, especially for large datasets.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

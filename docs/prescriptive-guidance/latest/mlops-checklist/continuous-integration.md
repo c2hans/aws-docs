@@ -20,7 +20,3 @@ The ML system runs tests to validate that the system works from end to end, chec
 | **5.8 Load testing** | On-demand load testing is in place. In addition to capturing how the ML system behaves under high and low loads, load tests provide statistics on system-wide throughput or latency. Data gathered through load tests provides information about resource sizes and scaling policies. |
 | **5.9 Model functional tests** | Model outputs and inputs run through automated functional tests. To check a behavior within a capability, both outputs and inputs for the model are tested on real or fake data with basic examples. |
 | **5.10 Model inference tests with extreme cases** | As part of the minimum functionality testing, model tests should check for extreme behavior given certain inputs before model promotion. This places an additional guardrail to help prevent unexpected behavior. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

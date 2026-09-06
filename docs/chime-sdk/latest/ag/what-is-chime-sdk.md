@@ -13,7 +13,3 @@ For more information, see the [AWS Amazon Chime SDK](https://aws.amazon.com/chim
 <a name="pricing"></a>
 
 The Amazon Chime SDK offers pay-for-use pricing with no upfront fees. Developers implementing the SDK can choose to implement some or all of the available media modalities (audio, video, and screen share) for a single rate. Messaging, media pipelines, speech enhancement, and PSTN audio capabilities are also available with pay-for-use pricing. For more information, see [Amazon Chime SDK pricing](https://aws.amazon.com/chime/chime-sdk/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

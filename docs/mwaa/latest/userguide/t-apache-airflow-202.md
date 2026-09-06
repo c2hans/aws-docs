@@ -298,7 +298,3 @@ We recommend the following steps if you're trying to run a shell script with the
    ```
 
 1. Follow the steps in [Uploading DAG code to Amazon S3](configuring-dag-folder.md#configuring-dag-folder-uploading).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

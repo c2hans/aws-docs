@@ -138,7 +138,3 @@ The following PostgreSQL utilities aren't supported for either the primary DB cl
 + `pg_restore`
 
 While you might be able to use them by open source binaries or alternative methods, doing so could yield inconsistent results.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

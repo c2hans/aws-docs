@@ -27,7 +27,3 @@ For a Scheduling plan, the plan start and end dates must fall within the short-t
 <a name="capacity-planning-plan-types-shrinkage"></a>
 
 Both plan types support a total shrinkage percentage. Enter this value in the **Shrinkage** field in the **Scenario inputs** section when you [Create capacity planning scenarios](capacity-planning-create-scenarios.md). You can override this value with interval-level or day-level values by uploading a CSV on the **Import** tab.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

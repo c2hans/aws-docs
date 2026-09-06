@@ -17,7 +17,3 @@ You can restrict access to tasks to workers at specific IP addresses using the S
 **Topics**
 + [Manage a Workforce (Amazon SageMaker AI Console)](sms-workforce-management-private-console.md)
 + [Manage a Private Workforce (Amazon Cognito Console)](sms-workforce-management-private-cognito.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

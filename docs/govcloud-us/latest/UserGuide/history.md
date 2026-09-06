@@ -9,6 +9,7 @@ The following table describes important changes to the documentation since the l
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Amazon Connect](#history) | Updated the list of unavailable Amazon Connect features in AWS GovCloud (US) Regions. See [Amazon Connect](govcloud-con.md). | September 2, 2026 |
 | [Amazon OpenSearch Ingestion](govcloud-opensearch.md) | Amazon OpenSearch Ingestion is now available. | August 19, 2026 |
 | [Amazon S3 Metadata](govcloud-s3.md) | S3 Metadata and annotations are now available in AWS GovCloud (US) Regions. | August 18, 2026 |
 | [AWS Outposts](govcloud-outposts.md) | Launching Amazon EC2 instances that use Local Boot with an encrypted AMI is not supported on [AWS Outposts](govcloud-outposts.md) in AWS GovCloud (US) Regions. | August 17, 2026 |
@@ -196,7 +197,3 @@ The following table describes important changes to the documentation since the l
 | [Amazon Athena](#history) | Amazon Athena is now supported in the AWS GovCloud (US-West) Region. | February 6, 2019 |
 | [AWS Glue](#history) | AWS Glue is now supported in the AWS GovCloud (US-West) Region. See [AWS Glue](govcloud-glue.md). | February 6, 2019 |
 | [AWS IoT Device Defender](#history) | AWS IoT Device Defender is now supported in the AWS GovCloud (US) Region. See [AWS IoT Device Defender](govcloud-IotDevDefender.md). | November 14, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

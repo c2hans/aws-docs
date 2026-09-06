@@ -140,7 +140,3 @@ The following table describes the changes in each version of the AWS IoT SiteWis
 | 2.0.1 | Bug fixes and improvements+  Fixes an issue where the app would enter failure state and quit if it was unable to retrieve AWS credentials on startup. Adds support to retry until successful credential retrieval.  |
 | 2.0.0 |  +   The AWS IoT SiteWise Edge application is now generally available.  <br />+  Application requires Siemens IEVD version 1.19, or Siemens IED-OS version 2.2. <br />+  Performance improvements: Reduced memory and CPU usage. <br />+  Debugging improvements: You can now upload an optional config file to enable debug logs. <br />+  Security enhancements: The application uses SecureStorage API to securely store credentials on the device. <br />+  Docker digest value: `sha256:4a960f29234a190ebb5224c1fd0f3e99faafccc4cb3d93ca13fef247b6656d18`   |
 | 1.0.1 | Initial release |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

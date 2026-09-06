@@ -14,7 +14,3 @@ AWS HealthLake provides a number of security features to consider as you develop
 + When sending create, read, update, delete, or search requests, do not use PHI in the HTTP header.
 + Enable AWS CloudTrail to audit AWS HealthLake use and to ensure that there is no unexpected activity.
 + Review best practices for using Amazon S3 buckets securely. To learn more, see [Security best practices](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html) in the *Amazon S3 user guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

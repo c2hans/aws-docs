@@ -89,7 +89,3 @@ Lifecycle configuration scripts run with root access and the notebook instance's
 
 **Important**
 When you create or change a script, we recommend that you use a text editor that provides Unix-style line breaks, such as the text editor available in the console when you create a notebook. Copying text from a non-Linux operating system might introduce incompatible line breaks and result in an unexpected error.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

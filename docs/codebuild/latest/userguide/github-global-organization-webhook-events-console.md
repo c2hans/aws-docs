@@ -32,7 +32,3 @@ If you are using organization webhooks, make sure that CodeBuild has permissions
        You can also set the event type to `WORKFLOW_JOB_QUEUED` to set up self-hosted GitHub Actions runners. For more information, see [Tutorial: Configure a CodeBuild-hosted GitHub Actions runner](action-runner.md).
 
 1. Continue with the default values and then choose **Create build project**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

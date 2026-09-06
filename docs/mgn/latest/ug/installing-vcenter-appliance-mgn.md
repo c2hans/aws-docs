@@ -93,7 +93,3 @@ Ensure that you review the notes below prior to installing the MGN vCenter Clien
 + Once added to MGN, snapshot-based replication creates snapshots on the replicated VM, which may result in slower disk performance.
 + VMs with independent disks, Raw Device Mappings (RDM), or direct-attach disks (iSCSI, NBD) are not supported for replication into MGN.
 + The VM being replicated into MGN can be either stopped or running. Changing the VM state during data replication does not affect data replication and causes no data corruption.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

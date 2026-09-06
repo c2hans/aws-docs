@@ -102,7 +102,3 @@ Complete the following steps to keep automatic snapshots for an instance or bloc
 If you no longer need the automatic snapshot, we recommend that you delete it. Otherwise, you will be billed the [snapshot storage fee](https://aws.amazon.com/lightsail/pricing/) for the automatic snapshot and duplicate manual snapshot stored on your Lightsail account. For more information, see [Delete automatic instance snapshots](amazon-lightsail-deleting-automatic-snapshots.md).
 **Note**
 For more information about the GetAutoSnapshots and CopySnapshot API operations in these commands, see [GetAutoSnapshots](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_GetAutoSnapshots.html) and [CopySnapshot](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_CopySnapshot.html) in the Lightsail API documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

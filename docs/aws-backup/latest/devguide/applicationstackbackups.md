@@ -154,7 +154,3 @@ Resources that belong to a CloudFormation stack must be in the exclusion list of
 <a name="restore-app-stack"></a>
 
 See [ How to restore application stack backups](https://docs.aws.amazon.com/aws-backup/latest/devguide/restore-application-stacks.html) for information on restoring nested recovery points.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ To deploy a serverless application that contains an AWS Lambda function, and dep
 1. Complete the [Deploy Serverless Application](deploy-serverless-application-dialog.md) dialog box, and then choose **Deploy**. The AWS Toolkit for JetBrains updates the corresponding AWS CloudFormation stack for the deployment.
 
    If the deployment fails, you can try to determine why by viewing event logs for the stack.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

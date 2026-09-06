@@ -24,7 +24,7 @@ With Connect Customer, you can specify which evaluation forms support review req
 
 1. You can specify the time window till when a review can be requested on an evaluation. The time window is measured from the time of the original submission of an evaluation.
 
-1. You can also choose one or more recipients who will be notified through email when a review is requested. The email has a link to the contact with the evaluation for which a review is requested. Note that in order for the users to receive emails on a SAML authenticated instance, the secondary email needs to be provided within the user's profile in Connect.
+1. You can also choose one or more recipients who will be notified through email when a review is requested. The email has a link to the contact with the evaluation for which a review is requested. For the users to receive emails on a SAML authenticated instance, the secondary email needs to be provided within the user's profile in Connect.
 
 1. After you **Activate** the form, subsequent evaluations performed using the form will support review requests.
 
@@ -64,7 +64,7 @@ Users with the permission **Evaluation forms - review evaluations - Create and V
 ## Searching for pending reviews
 <a name="searching-pending-reviews"></a>
 
-As mentioned above, you can configure in the evaluation form, who would be automatically notified through email if a review is requested. These notification emails contain links to contacts with evaluations for which a review is requested. Additionally, users with appropriate permissions can search for contacts with evaluations for which a review is requested or which are already under review:
+As described previously, you can configure in the evaluation form, who would be automatically notified through email if a review is requested. These notification emails contain links to contacts with evaluations for which a review is requested. Additionally, users with appropriate permissions can search for contacts with evaluations for which a review is requested or which are already under review:
 
 1. Log in to Connect Customer with a user account that has [permissions to access contact records](contact-search.md#required-permissions-search-contacts) and the **Evaluation forms - perform evaluations** permission.
 
@@ -87,14 +87,10 @@ As mentioned above, you can configure in the evaluation form, who would be autom
 
 1. Choose **Start review**.
 
-1. The original evaluation is listed below **Under review** and can be viewed by choosing on it.
+1. The original evaluation is listed under **Under review** and can be viewed by choosing on it.
 
 1. The in-progress review is listed under **Evaluation reviews**. Users with the **Evaluation forms - review evaluations - Create** permissions can make edits to the evaluation such as changing answers, amending the notes. You can **Save** your review at anytime and choose **Resolve review** to finalize the review.
 
 1. This will send an automated email notification to the user who had requested the review.
 
 ![Evaluation review in progress.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-review-view.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -329,7 +329,3 @@ If the AWS KMS key has been permanently deleted, data encrypted with it cannot b
 1. (Optional) If a SPICE dataset is not fully recovered even after you restore access to the customer managed KMS key, perform a full refresh on the dataset. Full refresh applies only to SPICE datasets; it is not applicable to other resource types such as conversations, spaces, agents, or actions.
 
 To learn more about which data can be managed with the key, see [Encrypting your Amazon Quick data with AWS Key Management Service customer managed keys](#customer-managed-keys).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

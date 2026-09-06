@@ -321,7 +321,3 @@ If you want to specify the KMS Key in your policy, use an IAM policy similar to 
 <a name="maintain_encryption"></a>
 
 To see which WorkSpaces and volumes have been encrypted from the WorkSpaces console, choose **WorkSpaces** from the navigation bar on the left. The **Volume Encryption** column shows whether each WorkSpace has encryption enabled or disabled. To see which specific volumes have been encrypted, expand the WorkSpace entry to see the **Encrypted Volumes** field.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

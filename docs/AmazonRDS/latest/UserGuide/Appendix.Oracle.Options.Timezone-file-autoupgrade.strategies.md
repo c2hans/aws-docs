@@ -98,7 +98,3 @@ In this scenario, your database is using DSTv33, but DSTv34 is available on your
 Your strategy depends on which of the following possibilities are true:
 + Your DB instance isn't associated with an option group that includes `TIMEZONE_FILE_AUTOUPGRADE`. In your `modify-db-instance` command, don't specify a new option group so that RDS doesn't update your time zone file.
 + Your DB instance is currently associated with an option group that includes `TIMEZONE_FILE_AUTOUPGRADE`. Within a single `modify-db-instance` command, associate your DB instance with an option group that doesn't include `TIMEZONE_FILE_AUTOUPGRADE` and upgrade your DB engine to 19.0.0.0.ru-2022-10.rur-2022-10.r1.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -138,7 +138,3 @@ After successfully creating the volume, Amazon FSx returns its description in JS
 ```
 
 You can also create a new volume by restoring a backup of a volume to a new volume. For more information, see [Restoring backups to a new volume](using-backups.md#restoring-backups).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

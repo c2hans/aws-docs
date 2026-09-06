@@ -148,7 +148,3 @@ The Meta Llama 3.2 1B, 3B, 11B, and 90B models support the following hyperparame
 | Epochs | epochCount | The number of iterations through the entire training dataset | 1 | 10 | 5 |
 | Batch size | batchSize | The number of samples processed before updating model parameters | 1 | 1 | 1 |
 | Learning rate | learningRate | The rate at which model parameters are updated after each batch | 5.00E-6 | 0.1 | 1.00E-4 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

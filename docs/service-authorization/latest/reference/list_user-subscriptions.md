@@ -56,7 +56,3 @@ AWS User Subscriptions defines the following condition keys that can be used in 
 | Condition keys | Description | Type |
 | --- | --- | --- |
 |   [user-subscriptions:CreateForSelf](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-iam-service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys)  | Filters access by only allowing creation of User subscription Claims for the caller | Bool |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

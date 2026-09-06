@@ -13,7 +13,3 @@ Migration Assistant applies the following field-type and vector-compatibility tr
 
 **Note**
 The built-in transformations cover the common version-upgrade cases. Metadata migration also applies analysis-component compatibility rules for analyzer, tokenizer, char-filter, and token-filter names that changed between source and target versions. If your source contains field types or analysis components that none of these transformations address — for example a custom or third-party field type, or a type whose mapping you need to reshape in a way the defaults do not — supply a custom transformer as described in the next section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,7 +47,3 @@ Timestream for LiveAnalytics supports the following aggregate functions.
 | stddev\_samp(x) stddev(x) | double | Returns the sample standard deviation of all input values.<pre>SELECT stddev_samp(t.c1) FROM (VALUES 1, 2, 3, 4, 8) AS t(c1)</pre><br />Example result: `2.701851217221259` |
 | var\_pop(x)  | double | Returns the population variance of all input values.<pre>SELECT var_pop(t.c1) FROM (VALUES 1, 2, 3, 4, 8) AS t(c1)</pre><br />Example result: `5.840000000000001` |
 | var\_samp(x) variance(x)  | double | Returns the sample variance of all input values.<pre>SELECT var_samp(t.c1) FROM (VALUES 1, 2, 3, 4, 8) AS t(c1)</pre><br />Example result: `7.300000000000001` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

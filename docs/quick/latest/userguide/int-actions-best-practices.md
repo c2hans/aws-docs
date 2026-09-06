@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/int-actions-best-
 # Best practices
 <a name="int-actions-best-practices"></a>
 
-Following best practices for action connectors helps ensure secure, reliable, and efficient operations. These practices help you maintain optimal performance, protect sensitive data, and minimize operational issues.
+Following best practices for connectors helps ensure secure, reliable, and efficient operations. These practices help you maintain optimal performance, protect sensitive data, and minimize operational issues.
 
 ## Security
 <a name="qbs-actions-best-practices-qbs-actions-security-best-practices"></a>
@@ -57,7 +57,3 @@ Following best practices for action connectors helps ensure secure, reliable, an
 + Review CloudWatch logs.
 + Track resolution times.
 + Document solutions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

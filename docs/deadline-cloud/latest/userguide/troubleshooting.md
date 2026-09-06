@@ -174,7 +174,7 @@ To resolve the failure, use one or more of the following approaches, starting wi
 
 1. Shorten the paths in your project. This approach is the only one that works for every application, because it avoids the limit instead of working around it.
 
-1. Use a queue environment that shortens the path the application sees. Deadline Cloud publishes a sample that junctions the job attachment directory to a short path and supplies matching path mapping rules. See [windows\_path\_limit\_junction\_fix.yaml](https://github.com/aws-deadline/deadline-cloud-samples/blob/mainline/queue_environments/windows_path_limit_junction_fix.yaml) in the `deadline-cloud-samples` repository. It takes effect only for integrations that read those rules.
+1. Use a queue environment that shortens the path the application sees. Deadline Cloud publishes a sample that junctions the job attachment directory to a short path and supplies matching path mapping rules. See [windows\_path\_limit\_junction\_fix.yaml](https://github.com/aws-deadline/deadline-cloud-samples/blob/mainline/queue_environments/windows_path_limit_junction_fix.yaml) in the `deadline-cloud-samples` repository on the GitHub website. It takes effect only for integrations that read those rules.
 
 1. Render on a Linux fleet if your software is available there. Linux isn't subject to the limit.
 
@@ -214,8 +214,4 @@ Linux
 ## Additional resources
 <a name="troubleshooting_additional_resources"></a>
 
-You can find additional information and resources on [GitHub](https://github.com/aws-deadline).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+You can find additional information and resources in the [aws-deadline repositories](https://github.com/aws-deadline) on the GitHub website.

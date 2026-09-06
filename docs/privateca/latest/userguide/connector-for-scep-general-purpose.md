@@ -219,7 +219,3 @@ If you're experiencing profile installation failures after enabling **Use Jamf P
 | --- |--- |
 | `Profile installation failed. Unable to obtain certificate from SCEP server at "<your-jamf-endpoint>.jamfcloud.com". <MDM-SCEP:15001>` | If you receive this error message while trying to enroll, retry the enrollment. It can take several tries before enrollment succeeds. |
 | `Profile installation failed. Unable to obtain certificate from SCEP server at "<your-jamf-endpoint>.jamfcloud.com". <MDM-SCEP:14006>` | Your challenge password might be misconfigured. Verify that the challenge password in Jamf Pro matches your connector’s challenge password. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

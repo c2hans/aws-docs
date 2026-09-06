@@ -114,7 +114,3 @@ Lightsail is an Amazon web service, so to use Lightsail, you first agree to the 
 <a name="how-can-i-pay-my-lightsail-bill"></a>
 
 You can pay and manage your bill through the AWS Billing and Cost Management console. AWS accepts most major credit cards. Learn more about managing your payment methods [here](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-payments.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

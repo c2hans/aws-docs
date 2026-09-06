@@ -39,7 +39,3 @@ Telegraf supports sending metrics to various AWS services, including [AWS Lambda
 <a name="faq7"></a>
 
 Telegraf supports secure communication protocols, such as TLS and SSL. You can also configure Telegraf to encrypt data in transit and at rest. Amazon Managed Service for Prometheus and Amazon Managed Grafana also provide security features, such as encryption, access control, and auditing. Additionally, you can use [AWS Key Management Service (AWS KMS)](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) for key management and use [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) for auditing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

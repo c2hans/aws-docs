@@ -22,7 +22,3 @@ The following Mistral AI models are available in Amazon Bedrock:
 | [Mistral Large](model-card-mistral-ai-mistral-large.md) | Mistral Large is Mistral AI's flagship model with strong reasoning, multilingual support, and a 32K context window for complex enterprise tasks. |
 | [Mixtral 8x7B Instruct](model-card-mistral-ai-mixtral-8x7b-instruct.md) | Mixtral 8x7B Instruct is Mistral AI's sparse mixture-of-experts model with 8 experts and 7B parameters each, delivering strong performance at faster inference speeds. |
 | [Mistral 7B Instruct](model-card-mistral-ai-mistral-7b-instruct.md) | Mistral 7B Instruct is Mistral AI's 7-billion parameter instruction-tuned model with grouped-query attention and sliding window attention for efficient long-context inference. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

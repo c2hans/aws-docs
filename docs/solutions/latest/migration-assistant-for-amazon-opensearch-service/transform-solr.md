@@ -168,7 +168,3 @@ For highlighting, `hl=true` creates an OpenSearch `highlight` block and response
 | Delete by query | Synchronous `_delete_by_query` with `wait_for_completion=true`  | Standalone delete-by-query requests must translate without query-string passthrough. Version conflicts are reported as partial failures rather than aborting the whole operation. Do not mix delete-by-query with add, delete-by-ID, or commit commands in the same Solr update body. |
 | Terms facet counts (exact in Solr) | Approximate in OpenSearch | Multi-shard indexes produce approximate counts. Inspect `doc_count_error_upper_bound`. |
 | Query parse or transform failure | Request rejected | Unsupported query syntax fails fast instead of sending the raw Solr query to OpenSearch’s `query_string` parser. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

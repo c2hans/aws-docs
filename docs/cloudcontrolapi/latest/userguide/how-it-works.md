@@ -22,7 +22,3 @@ You can use Cloud Control API to perform operations on existing resources, even 
 For a brief tutorial on how to use Cloud Control API to perform resource operations, see [Getting started with Cloud Control API](getting-started.md).
 
 For more information about resource types and how to use them with Cloud Control API, see [Using Cloud Control API resource types](resource-types.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Control API. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudcontrolapi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

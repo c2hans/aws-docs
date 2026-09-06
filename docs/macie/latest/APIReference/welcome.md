@@ -55,7 +55,3 @@ For information about using credentials and signing requests, refer to the follo
 Amazon Macie integrates with AWS CloudTrail, which is a service that provides a record of actions that were taken in Macie by a user, a role, or another AWS service. This includes actions that were performed using the Amazon Macie console and programmatic calls to Amazon Macie operations.
 
 By using the information collected by CloudTrail, you can determine which requests were sent to Macie successfully. For each request, you can identify when it was made, the IP address from which it was made, who made it, and additional details. For more information, see [Logging API calls with AWS CloudTrail](https://docs.aws.amazon.com/macie/latest/user/macie-cloudtrail.html) in the *Amazon Macie User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -111,7 +111,3 @@ Sign in with the same user that you set up in [Getting started with CodeDeploy](
       You can check the status of the deployment as described in [Monitor and troubleshoot your deployment](tutorials-windows-deploy-application.md#tutorials-windows-deploy-application-monitor).
 
       When CodeDeploy has redeployed the site, revisit the site in your web browser to verify that the background color and text on the webpage have been changed. (You may need to refresh your browser.) If the background color and text has been changed, congratulations\! You've modified and redeployed your site\!
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -88,7 +88,3 @@ After you configure Amazon Cognito to work with your identity provider, you also
 For more information about credential providers in the AWS JavaScript SDK, see [Setting credentials in a web browser](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/setting-credentials-browser.html) in the v3 developer guide for SDK for JavaScript, [Setting credentials in a web browser](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-browser.html) in the v2 developer guide for SDK for JavaScript, , and [@aws-sdk/credential-providers](https://www.npmjs.com/package/@aws-sdk/credential-providers).
 
 You can also use the SDK for the CloudWatch RUM web client to configure the web client authentication methods. For more information about the web client SDK, see [CloudWatch RUM web client SDK](https://github.com/aws-observability/aws-rum-web).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,7 +56,3 @@ Before you begin to migrate your F5 BIG-IP workload, you should make sure that y
 + [Application Security Manager (F5 ASM)](https://www.f5.com/pdf/products/big-ip-application-security-manager-overview.pdf) is a flexible web application firewall that secures web applications in traditional, virtual, and private cloud environments.
 + [Advanced Firewall Manager (F5 AFM)](https://www.f5.com/products/big-ip-services/advanced-firewall-manager) mitigates network threats before they disrupt critical data center resources.
 + [F5 BIG-IQ](https://www.f5.com/products/automation-and-orchestration/big-iq) provides a central point of control for F5 physical and virtual devices, and for the solutions that run on them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

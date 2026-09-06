@@ -27,7 +27,3 @@ The following details apply to encryption and signing of data in transit between
 
 The following details apply to encryption of data in transit between Amazon Redshift clusters and Amazon Redshift query editor v2:
 + Data is transmitted between query editor v2 and Amazon Redshift clusters over a TLS-encrypted channel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

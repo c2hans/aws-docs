@@ -29,7 +29,3 @@ You can't re-approve a subscription after you revoke it. The subscriber must sub
 
 **Note**
 Revoking a subscription affects only the particular user’s access to the asset – the subscriber whose subscription you’re revoking. The asset remains intact and the user (subscriber) also remains intact. This user cannot access the asset until they submit and get an approval of another subscription request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

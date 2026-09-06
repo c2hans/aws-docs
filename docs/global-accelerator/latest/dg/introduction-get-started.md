@@ -19,14 +19,10 @@ To get started using Global Accelerator, you follow these general steps:
 
    For a standard accelerator, Global Accelerator monitors the health of endpoints within the group by using the health check settings that are defined for each of your endpoints. For each endpoint group in a standard accelerator, you can configure a *traffic dial* percentage to control the percentage of traffic that an endpoint group will accept. The percentage is applied only to traffic that is already directed to the endpoint group, not all listener traffic. By default, the traffic dial is set to 100% for all regional endpoint groups.
 
-   For a custom routing accelerators, traffic is deterministically routed to a specific destination in a VPC subnet, based on the listener port that the traffic is received on.
+   For a custom routing accelerator, traffic is deterministically routed to a specific destination in a VPC subnet, based on the listener port that the traffic is received on.
 
 1. **Add endpoints to endpoint groups:** The endpoints that you add depend on the type of accelerator.
    + For a standard accelerator, you can add one or more regional resources, such as load balancers or EC2 instances endpoints, to each endpoint group. Next, you can decide how much traffic you want to route to each endpoint by setting endpoint weights.
    + For a custom routing accelerator, you add one or more Amazon VPC (VPC) subnets with up to thousands of Amazon EC2 instance destinations.
 
 For detailed steps about how to create a standard accelerator or a custom routing accelerator using the AWS Global Accelerator console, see [Getting started with AWS Global Accelerator](getting-started.md). To work with API operations, see [Common API actions for AWS Global Accelerator](global-accelerator-actions.md) and the [AWS Global Accelerator API Reference](https://docs.aws.amazon.com/global-accelerator/latest/api/Welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

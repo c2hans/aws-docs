@@ -14,7 +14,3 @@ Introduce mechanisms to assign accountability and provide incentives for cost op
  **Suggestion 20.4.2 – Only allow certain users the ability to provision instances using IAM controls**
 
 Use IAM policies aligned with resource type and job function within account boundaries to ensure cost control. For example, you might allow additional small-scale systems in a sandbox account to be controlled within a project team but have an additional approval process and restricted access for larger instances in a production account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

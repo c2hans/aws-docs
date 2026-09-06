@@ -107,7 +107,3 @@ A contact is routed down the **Error** branch in the following situations:
 + The provided authentication code is incorrect.
 + Error from Amazon Cognito token endpoint because the client or request is not configured correctly (`invalid_request`, `invalid_client`, `unauthorized_client`)
 + The Region is not supported. For a list of supported Regions, see [Customer authentication availability by Region](regions.md#customerauthentication_region).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

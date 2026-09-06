@@ -31,7 +31,3 @@ The follow frameworks and publications were used as reference in developing this
 <a name="owasp-resources.f8921281-8c99-5ced-9ab3-85ca373feb27"></a>
 + [Agentic AI threats and mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) – This resource documents key security threats and mitigation strategies specifically for agentic AI systems and focuses on vulnerabilities and risks.
 + [OWASP top 10 for LLM applications 2025](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/) – This lists critical security vulnerabilities and risks that are specific to LLM applications and provides essential guidance for securing AI systems against emerging threats.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

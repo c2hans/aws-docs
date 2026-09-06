@@ -22,7 +22,3 @@ ROUGE-N, the primary ROUGE metric, measures the overlap of n-grams between the s
 ROUGE-L (ROUGE-Longest Common Subsequence) calculates the longest common subsequence between the system-generated text and the reference text. This variant considers word order in addition to content overlap.
 **`ROUGE-L-Sum`**
 ROUGE-L-SUM (Longest Common Subsequence for Summarization) is designed for the evaluation of text summarization systems. It focuses on measuring the longest common subsequence between the machine-generated summary and the reference summary. ROUGE-L-SUM takes into account the order of words in the text, which is important in text summarization tasks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

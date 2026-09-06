@@ -42,7 +42,3 @@ Querying S3 Express One Zone data with Athena is straightforward. To get started
 1. Use a [CREATE TABLE](create-table.md) statement in Athena to catalog your data in AWS Glue Data Catalog. For information about creating tables in Athena, see [Create tables in Athena](creating-tables.md) and the [CREATE TABLE](create-table.md) statement.
 
 1. (Optional) Configure the query result location of your Athena workgroup to use an Amazon S3 *directory bucket*. Amazon S3 directory buckets are more performant that general buckets and are designed for workloads or performance-critical applications that require consistent single-digit millisecond latency. For more information, see [Directory buckets overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-overview.html) in the *Amazon S3 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 +  [AWS Config](https://aws.amazon.com/config/) can also identify if you have unused resources, such as [EBS volumes](https://aws.amazon.com/ebs/).
 +  Use [Amazon ECR lifecycle policies](https://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html) to expire old images used for real-time bidding containers.
 +  Evaluate how users are using data to eliminate use cases, dimensions, and queries that no longer provide value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

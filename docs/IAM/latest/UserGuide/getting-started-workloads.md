@@ -182,7 +182,3 @@ These IAM user access keys are long-term credentials that present a security-ris
 You can use this same process to give additional workloads programmatic access to your AWS account resources, if the workloads are unable to assume IAM roles. This procedure used the **PowerUserAccess** managed policy to assign permissions. To follow the best practice of least privilege, consider using a more restrictive policy or creating a custom policy that restricts access to only resources required by the program. To learn about using policies that restrict user permissions to specific AWS resources, see [Access management for AWS resources](access.md) and [Example IAM identity-based policies](access_policies_examples.md). To add additional users to the user group after it's created, see [Edit users in IAM groups](id_groups_manage_add-remove-users.md).
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

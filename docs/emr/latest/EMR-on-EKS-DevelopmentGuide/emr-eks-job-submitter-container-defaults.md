@@ -183,7 +183,3 @@ The following example enables native sidecar mode for the logging container on S
 
 **Node version requirement**
 Your Amazon EKS nodes must be running Kubernetes version 1.29 or higher. Your EKS cluster version can differ from your node version. If your nodes are running a version lower than 1.29, Kubernetes does not enable the native sidecar feature and the logging container prevents the driver from starting, which leads to job timeouts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

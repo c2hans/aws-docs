@@ -15,7 +15,3 @@ Building on these foundations, this chapter is organized into three main section
 + [Security controls for the development stage](dev-security.md) – This section describes foundational security controls for generative AI applications in the PoC stage. It discusses threat modeling, access controls, and supply chain security.
 
 Throughout these sections, you'll find practical frameworks and proven methodologies that have helped teams successfully navigate their generative AI initiatives. When you have finished architecting and developing your PoC, use the recommendations in the [Advancing a generative AI PoC to preproduction](dev-advancing.md) section to determine whether to progress to the next stage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

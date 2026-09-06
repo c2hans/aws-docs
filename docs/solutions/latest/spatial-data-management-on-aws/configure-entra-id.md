@@ -233,7 +233,3 @@ You provide this metadata URL or file to Amazon Cognito in Step 6.
 1. Choose **Save changes**.
 
 Then enable the identity provider ([Enable the identity provider for the app client](external-identity-provider.md#idp-enable-app-client)) and verify the integration ([Verify the integration](external-identity-provider.md#idp-test)).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

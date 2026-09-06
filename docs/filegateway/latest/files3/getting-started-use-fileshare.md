@@ -15,7 +15,3 @@ The AWS Management Console also provides example commands that you can use to mo
 + [Mount your SMB file share on your client](using-smb-fileshare.md) - Learn how to mount your SMB file share and map to a drive accessible to your client.
 + [Using file shares on buckets with pre-existing objects](FileSharePrexistingObjects.md) - Learn how to export a file share on an Amazon S3 bucket with objects created outside of the File Gateway using either NFS or SMB.
 + [Test your S3 File Gateway](GettingStartedTestFileShare.md) - Learn how to test your gateway by copying files and folders to your mapped drive and verifying that they appear in your Amazon S3 bucket automatically.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

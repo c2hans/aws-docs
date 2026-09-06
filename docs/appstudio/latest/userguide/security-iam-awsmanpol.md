@@ -139,7 +139,3 @@ View details about updates to AWS managed policies for App Studio since this ser
 | --- | --- | --- |
 | [AppStudioServiceRolePolicy](#security-iam-awsmanpol-appstudioservicerolepolicy) – Update to an existing policy | App Studio added new permissions to allow managing of App Studio managed secrets in AWS Secrets Manager. | March 14, 2025 |
 | App Studio started tracking changes | App Studio started tracking changes for its AWS managed policies. | June 28, 2024 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

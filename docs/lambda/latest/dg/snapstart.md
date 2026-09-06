@@ -44,14 +44,14 @@ SnapStart is particularly beneficial for two main types of applications:
 ## Supported features and limitations
 <a name="snapstart-runtimes"></a>
 
-SnapStart is available for the following [Lambda managed runtimes](lambda-runtimes.md):
+SnapStart supports the following [Lambda managed runtimes](lambda-runtimes.md) and the corresponding AWS Lambda base images across ZIP and container image deployment format:
 + Java 11 and later
 + Python 3.12 and later
 + .NET 8 and later. If you're using the [Lambda Annotations framework for .NET](csharp-handler.md#csharp-handler-annotations), upgrade to [Amazon.Lambda.Annotations](https://www.nuget.org/packages/Amazon.Lambda.Annotations) version 1.6.0 or later to ensure compatibility with SnapStart.
 
-Other managed runtimes (such as `nodejs24.x` and `ruby4.0`), [OS-only runtimes](runtimes-provided.md), and [container images](images-create.md) are not supported.
+For container images built on AWS Lambda base images or custom base images, refer to [Implementing SnapStart hooks for container images](snapstart-runtime-hooks-custom.md) and validate your function code for handling SnapStart [uniqueness requirements](snapstart-uniqueness.md).
 
-SnapStart does not support [provisioned concurrency](provisioned-concurrency.md), [Amazon Elastic File System (Amazon EFS)](https://docs.aws.amazon.com/efs/latest/ug/accessing-fs.html), [Amazon S3 Files](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html), or ephemeral storage greater than 512 MB.
+Other managed runtimes (such as `nodejs24.x` and `ruby4.0`) and [OS-only runtimes](runtimes-provided.md) are not supported. SnapStart does not support [provisioned concurrency](provisioned-concurrency.md), [Amazon Elastic File System (Amazon EFS)](https://docs.aws.amazon.com/efs/latest/ug/accessing-fs.html), [Amazon S3 Files](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html), or ephemeral storage greater than 512 MB.
 
 **Note**
 You can use SnapStart only on [published function versions](configuration-versions.md#configuration-versions-config) and [aliases](configuration-aliases.md) that point to versions. You can't use SnapStart on a function's unpublished version ($LATEST).
@@ -90,7 +90,3 @@ The cost of using SnapStart includes the following:
 As with all Lambda functions, duration charges apply to code that runs in the function handler. For SnapStart functions, duration charges also apply to initialization code that's declared outside of the handler, the time it takes for the runtime to load, and any code that runs in a [runtime hook](snapstart-runtime-hooks.md). Duration is calculated from the time that your code begins running until it returns or otherwise ends, rounded up to the nearest 1 ms. Lambda maintains cached copies of your snapshot for resiliency and automatically applies software updates, such as runtime upgrades and security patches to them. Charges apply each time that Lambda re-runs your initialization code to apply software updates.
 
 For more information about the cost of using SnapStart, see [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/#SnapStart_Pricing).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

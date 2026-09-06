@@ -35,7 +35,3 @@ Follow these rules:
 + Then perform step F in one window, and step G in the next window. Or combine steps F and G in one window.
 
   You could also perform step F outside of a maintenance window (but before you perform step G). You can do this because node Y is no longer active — it's not part of the working cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

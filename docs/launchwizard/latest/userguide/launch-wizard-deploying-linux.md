@@ -236,7 +236,3 @@ The following steps are required to restore the cluster to normal operations.
    This command moves the resources to `<PRI_NO_NAME>` and starts the resource. Any cluster constraints are applied. In this scenario, if the Microsoft SQL Server resource agent is moved, then the availability group listener follows.
 
 1. Verify cluster status using the following command: `pcs resource --all`. The restarted node will be located on `<PRI_NO_NAME>`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

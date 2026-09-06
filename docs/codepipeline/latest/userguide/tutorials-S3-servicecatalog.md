@@ -323,7 +323,3 @@ Copy the URL for your product before you navigate away from the page. Once you n
 1. Commit and push your change. Your pipeline starts after you push the change. When the run of the pipeline is complete, on the deployment stage, choose **Details** to open your product in Service Catalog.
 
 1. Under your product information, choose the new version name to open the product template. View the deployed template change.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

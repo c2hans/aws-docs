@@ -50,7 +50,3 @@ When a single sign-on group is added to the domain, a group profile is created. 
 
 **Note**
 During project creation, the Amazon SageMaker Unified Studio service creates the project IAM role as a group profile and adds the group as a project member. An IAM role session user profile is created for the project IAM role. Any logic that depends on the project role being present as a user profile must be updated to handle its presence as a group profile.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,16 +37,19 @@ To see a full landing zone schema example, see [Landing zone schemas](https://do
      }
   ```
 
+**Note**
+The `organizationStructure` field is not present in landing zone version 4.0 and later.
+
 **centralizedLogging** – Configuration for AWS CloudTrail
 +  **Type:** Object
-+ **Required:** Yes
++ **Required:** No (version 4.0 and later). Yes (version 3.3 and earlier).
 + **Properties:**
   + *accountId* - a `String` the represents the AWS account into which the logging resource should be deployed
   + *configurations* - an `Object` with three properties
     + `loggingBucket` - an object with one property, `retentionDays`, which takes a `Number`
     + `accessLoggingBucket` - an object with one property, `retentionDays`, which takes a `Number`
     + `kmsKeyArn` - an optional `String`
-  + *enabled* - an optional `Boolean`
+  + *enabled* - a `Boolean` (required in version 4.0 and later, optional in version 3.3 and earlier)
 + **Example:**
 
   ```
@@ -65,17 +68,26 @@ To see a full landing zone schema example, see [Landing zone schemas](https://do
      }
   ```
 
-**securityRoles** – Choose where to deploy the logging resource
+**Note**
+In landing zone version 4.0 and later, `accountId` is only required when `enabled` is set to `true`. The `enabled` field is required.
+
+**securityRoles** – Choose where to deploy central resources for security monitoring within your organization
 +  **Type:** Object
-+ **Required:** Yes
-+ **Properties:** *accountId* - a `String` that represents the AWS account into which the logging resource should be deployed
++ **Required:** No (version 4.0 and later). Yes (version 3.3 and earlier).
++ **Properties:**
+  + *accountId* - a `String` that represents the AWS account into which the central security monitoring resources should be deployed. Required when `enabled` is `true`.
+  + *enabled* - a `Boolean` (required in version 4.0 and later)
 + **Example:**
 
   ```
   "securityRoles": {
-          "accountId": "333333333333"
+          "accountId": "333333333333",
+          "enabled": true
      }
   ```
+
+**Note**
+In landing zone version 4.0 and later, `securityRoles` includes a required `enabled` Boolean property. The `accountId` is only required when `enabled` is set to `true`.
 
 **accessManagement** – Choose whether to enable access management
 +  **Type:** Object
@@ -115,6 +127,33 @@ To see a full landing zone schema example, see [Landing zone schemas](https://do
   }
   ```
 
-## See also
+**config** – Configuration for AWS Config with AWS Control Tower
++  **Type:** Object
++ **Required:** No
++ **Properties:**
+  + *accountId* - a `String` that represents the AWS account into which the AWS Config resources should be deployed. Required when `enabled` is `true`.
+  + *configurations* - an optional `Object` with three properties
+    + `loggingBucket` - an object with one property, `retentionDays`, which takes a `Number`
+    + `accessLoggingBucket` - an object with one property, `retentionDays`, which takes a `Number`
+    + `kmsKeyArn` - an optional `String`
+  + *enabled* - a required `Boolean`
++ **Example:**
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+  ```
+  "config": {
+      "accountId": "444444444444",
+      "configurations": {
+          "loggingBucket": {
+              "retentionDays": 60
+          },
+          "accessLoggingBucket": {
+              "retentionDays": 60
+          },
+          "kmsKeyArn": "arn:aws:kms:us-west-1:123456789123:key/e84XXXXX-6bXX-49XX-9eXX-ecfXXXXXXXXX"
+      },
+      "enabled": true
+  }
+  ```
+
+**Note**
+The `config` field is only available in landing zone version 4.0 and later.

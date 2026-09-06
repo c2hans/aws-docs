@@ -54,7 +54,3 @@ You must run the node registration script within 24 hours of the script's creati
 1. On the MediaLive console, in the navigation bar, choose **Nodes**. (Don't choose **Cluster**.)
 
 1. In the **Nodes** list, verify that the node state is **Registering**. After a short time, the state changes to **Active**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

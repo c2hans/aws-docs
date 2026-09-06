@@ -48,7 +48,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/cost
 |  Monthly recurring cost (S3 storage and Amazon OpenSearch Service cluster)  |  $1.01 \+ $102.24 \+ 1.35  |  $104.60  |
 |  One-time processing cost (AWS Elemental MediaConvert, Amazon Rekognition, Transcribe, Comprehend, AWS Step Functions, AWS Lambda)  |  ($72 \+ $18) \+ $1.05 \+ ($600 \+ $600 \+ $600) \+ $144 \+ ($5 \+ $5) \+ $0.30  |  $2,045.35  |
 |  Total:  |   |  $2,149.95  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Media2Cloud on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

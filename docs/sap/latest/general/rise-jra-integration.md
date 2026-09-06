@@ -60,7 +60,3 @@ Minimum 3 worker nodes required in both HA and non-HA configuration.
 |  **Pricing example** - With minimum non-HA configuration, we calculated an indicative monthly costs in USD to deploy SAP Edge Integration Cell in us-east-1 region<br />Load balancer (NLB), with 10GB/hour data = $60.23 Amazon EKS cluster = $73.00 Three worker nodes with m6a.2xlarge = $421.75 (3 year No Upfront EC2 Instance Savings Plan) RDS PostgreSQL Multi-AZ = $104.21 ElastiCache Redis = $24.82<br />Total cost for running EIC in HA mode \~ $684 billed to AWS account managed by customer. |
 
 You can find out more from SAP Architecture Center under [Edge Integration Cell on AWS](https://architecture.learning.sap.com/docs/ref-arch/263f576c90/1).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

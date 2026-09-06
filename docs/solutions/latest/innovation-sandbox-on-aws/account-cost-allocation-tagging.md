@@ -73,7 +73,3 @@ The lease monitoring Lambda function uses a tag-first approach to attribute cost
 1. For any lease that does not return tag-based cost data (a lease created before this feature, or a lease whose tags are not yet active in billing), it falls back to the existing `LINKED_ACCOUNT` dimension query with date-based correlation.
 
 This tag-first approach keeps cost monitoring accurate while tag keys propagate and for leases created before the feature was deployed, with negligible added Cost Explorer API cost.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
 +  [Formula 1 Case Study](https://aws.amazon.com/solutions/case-studies/formula-one/)
 +  [AWS IoT Customers: From emerging start-ups to large enterprises, learn why our customers choose AWS IoT](https://aws.amazon.com/solutions/case-studies/iot/)
 +  [AWS Architecture Center](https://aws.amazon.com/architecture/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -99,7 +99,3 @@ To restore an Amazon EC2 instance, you must launch a new instance.
    1. If you cannot add permissions to your IAM user or IAM role, ask your administrator to manually create a role with a name *other than* `AWSBackupDefaultServiceRole` and attach that role to these managed policies:
       + `AWSBackupServiceRolePolicyForBackup`
       + `AWSBackupServiceRolePolicyForRestores`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

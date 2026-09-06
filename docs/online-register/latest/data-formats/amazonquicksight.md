@@ -44,7 +44,9 @@ Amazon QuickSight provides the following APIs for data retrieval.
 | <a name="quicksight-DescribeDlpJob"></a>[DescribeDlpJob](https://docs.aws.amazon.com/quick/latest/userguide/data-loss-prevention.html) | Describe a DLP evaluation job | Read |
 | <a name="quicksight-DescribeDlpSetting"></a>[DescribeDlpSetting](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDlpSetting.html) | Describe a DLP setting | Read |
 | <a name="quicksight-DescribeEmailCustomizationTemplate"></a>[DescribeEmailCustomizationTemplate](https://docs.aws.amazon.com/quicksight/latest/user/customizing-quicksight-email-templates.html) | Describe a QuickSight email customization template | Read |
+| <a name="quicksight-DescribeExtension"></a>[DescribeExtension](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html) | Describe an extension | Read |
 | <a name="quicksight-DescribeExtensionAccess"></a>[DescribeExtensionAccess](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html) | Describe an extension access | Read |
+| <a name="quicksight-DescribeExtensionPermissions"></a>[DescribeExtensionPermissions](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html) | Describe the permissions of an extension | Read |
 | <a name="quicksight-DescribeFlow"></a>[DescribeFlow](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeFlow.html) | Describe a flow | Read |
 | <a name="quicksight-DescribeFolder"></a>[DescribeFolder](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeFolder.html) | Describe a QuickSight Folder | Read |
 | <a name="quicksight-DescribeFolderPermissions"></a>[DescribeFolderPermissions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeFolderPermissions.html) | Describe permissions for a QuickSight Folder | Read |
@@ -104,6 +106,7 @@ Amazon QuickSight provides the following APIs for data retrieval.
 | <a name="quicksight-ListDlpLabels"></a>[ListDlpLabels](https://docs.aws.amazon.com/quick/latest/userguide/data-loss-prevention.html) | List sensitivity labels available from a DLP provider | List |
 | <a name="quicksight-ListDlpSettings"></a>[ListDlpSettings](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListDlpSettings.html) | List DLP settings in an account | List |
 | <a name="quicksight-ListExtensionAccesses"></a>[ListExtensionAccesses](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html) | List extension accesses | List |
+| <a name="quicksight-ListExtensions"></a>[ListExtensions](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html) | List extensions | List |
 | <a name="quicksight-ListFlows"></a>[ListFlows](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListFlows.html) | List all flows in an Amazon QuickSight account | List |
 | <a name="quicksight-ListFolderMembers"></a>[ListFolderMembers](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListFolderMembers.html) | List all members in a folder | Read |
 | <a name="quicksight-ListFolders"></a>[ListFolders](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListFolders.html) | List all Folders in a QuickSight Account | List |
@@ -158,7 +161,3 @@ Amazon QuickSight provides the following APIs for data retrieval.
 | <a name="quicksight-SearchSpaces"></a>[SearchSpaces](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchSpaces.html) | Search spaces | List |
 | <a name="quicksight-SearchTopics"></a>[SearchTopics](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchTopics.html) | Search for a sub-set of topics | List |
 | <a name="quicksight-SearchUsers"></a>[SearchUsers](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html) | Search the QuickSight users belonging to this account | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

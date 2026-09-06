@@ -16,7 +16,3 @@ For more information, see [Deploying Serverless Applications](https://docs.aws.a
 + For information about getting started with AWS CodeBuild, see [Getting started with AWS CodeBuild using the console](getting-started-overview.md#getting-started).
 + For information about troubleshooting issues in CodeBuild, see [Troubleshooting AWS CodeBuild](troubleshooting.md).
 + For information about quotas in CodeBuild, see [Quotas for AWS CodeBuild](limits.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

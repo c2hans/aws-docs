@@ -106,7 +106,3 @@ You can use the following `formatParams` values with `FormatType="xml"`:
 1.  `valueTag` – The tag used for a value when there are attributes in the element that have no child. The default is "\_VALUE".
 
 1.  `ignoreSurroundingSpaces` – A Boolean value that specifies whether the white space that surrounds values should be ignored. The default value is "false".
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

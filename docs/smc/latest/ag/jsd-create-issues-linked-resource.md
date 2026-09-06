@@ -30,7 +30,3 @@ To install this automation document, download and extract the [JSM Connector Cre
 Once installed, enter the parameters and run it. Note that it requires many of the same parameters, as described previously to connect to Jira.
 
  You should then see an issue in Jira with AWS Config information and the suggested remediation shown.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

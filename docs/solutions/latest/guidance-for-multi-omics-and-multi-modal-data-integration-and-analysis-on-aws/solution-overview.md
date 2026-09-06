@@ -119,7 +119,3 @@ The guidance includes [continuous integration](https://aws.amazon.com/devops/con
 This implementation guide describes architectural considerations and configuration steps for deploying the Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS in the Amazon Web Services (AWS) Cloud. It includes links to an [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template that launches and configures the AWS services required to deploy this guidance using AWS best practices for security and availability.
 
 The guide is intended for IT infrastructure architects, administrators, data scientists, software engineers, and DevOps professionals who have practical experience architecting in the AWS Cloud.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

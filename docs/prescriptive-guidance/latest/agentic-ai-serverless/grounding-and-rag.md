@@ -115,7 +115,3 @@ Grounding enterprise models introduces, such as through RAG, knowledge bases, or
 RAG is a foundational strategy for safe and scalable enterprise AI. By grounding foundation models in authoritative internal knowledge, RAG transforms large language models from general-purpose generators into domain-aware, policy-aligned, and explainable AI assistants. This approach reduces hallucinations, enforces compliance with internal policies, and enables fact-based, contextual responses—making generative AI suitable for both customer- and employee-facing applications.
 
 When combined with automated reasoning and guardrails, grounded models become not just tools, but accountable and trusted agents. With Amazon Bedrock serverless RAG support and Amazon Nova multimodal capabilities, organizations can scale secure, high-performance AI across their business without managing infrastructure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

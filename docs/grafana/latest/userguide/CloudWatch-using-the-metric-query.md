@@ -301,7 +301,3 @@ CloudWatch Metrics Insights currently has the following limits:
 + A single query can process no more than 10,000 metrics. This means that if the `SELECT`, `FROM`, and `WHERE` clauses would match more than 10,000 metrics, only the first 10,000 of these metrics that are found will be processed by the query.
 + A single query can return no more than 500 time series. This means that if the query is processing more than 500 metrics, not all metrics will be returned in the query results. If you use an `ORDER BY` clause, then all the metrics being processed will be sorted and the 500 that have the highest or lowest values according to your `ORDER BY` clause will be returned. If you do not include an `ORDER BY` clause, you can't control which 500 matching metrics are returned.
 + Each `GetMetricData` operation can have only one query, but you can have multiple widgets in a dashboard that each include a query.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

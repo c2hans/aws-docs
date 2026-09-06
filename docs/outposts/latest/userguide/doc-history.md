@@ -9,6 +9,7 @@ The following table describes the documentation updates for Outposts racks.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [5-year term no longer available for first-generation Outposts racks](https://docs.aws.amazon.com/outposts/latest/userguide/order-outpost-capacity.html) | When you order a first-generation Outposts rack, you can select a 1-year or 3-year contract. The 5-year contract is available for second-generation Outposts racks. | September 1, 2026 |
 | [AWS Outposts supports external block volumes from Dell and HPE storage arrays](https://docs.aws.amazon.com/outposts/latest/userguide/outpost-third-party-block-storage.html) | You can use external block data and boot volumes backed by third-party vendors such as, Dell PowerStore and HPE Alletra Storage MP B10000. | September 30, 2025 |
 | [Metrics available for VIF connection status and BGP session state.](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-cloudwatch-metrics.html) | You can monitor the status of your AWS Outposts VIF connection and BGP session on the CloudWatch console with the **ConnectionStatus** and the **BGPSessionState** metrics.  | July 31, 2025 |
 | [Renewing your subscription and preparing racks for return](https://docs.aws.amazon.com/outposts/latest/userguide/term-end-racks.html) | To renew a subscription or return a rack, you must complete the process at least 10 business days before the current subscription ends. | July 16, 2025 |
@@ -46,7 +47,3 @@ The following table describes the documentation updates for Outposts racks.
 | [Support for sharing customer-owned IPv4 addresses](https://docs.aws.amazon.com/outposts/latest/userguide/sharing-outposts.html) | Use AWS Resource Access Manager to share customer-owned IPv4 addresses.  | April 20, 2020 |
 | [Additional CloudWatch metrics](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-cloudwatch-metrics.html) | Additional CloudWatch metrics for EBS volumes are available. | April 4, 2020 |
 | [Initial release](#doc-history) | This is the initial release of AWS Outposts. | December 3, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

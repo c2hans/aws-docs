@@ -69,7 +69,3 @@ If you manage your own permission policy, you must include the following permiss
 <a name="endpoint-auto-scaling-slr"></a>
 
 Auto scaling uses the `AWSServiceRoleForApplicationAutoScaling_SageMakerEndpoint` service-linked role. This service-linked role grants Application Auto Scaling permission to describe the alarms for your policies, to monitor current capacity levels, and to scale the target resource. This role is created for you automatically. For automatic role creation to succeed, you must have permission for the `iam:CreateServiceLinkedRole` action. For more information, see [Service-linked roles](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.html) in the *Application Auto Scaling User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

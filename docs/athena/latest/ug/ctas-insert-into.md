@@ -199,7 +199,3 @@ The example in this topic uses a database called `tpch100` whose data resides in
 1. Continue using `INSERT INTO` statements that read and add no more than 100 partitions each. Continue until you reach the number of partitions that you require.
 **Important**
 When setting the `WHERE` condition, be sure that the queries don't overlap. Otherwise, some partitions might have duplicated data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -121,7 +121,3 @@ You can also employ **human workers** to manually evaluate your model responses 
 In a model evaluation job that uses human workers you can compare the responses for up to two JumpStart models. Optionally, you can also specify responses from models outside of AWS. All model evaluation jobs that use human workers require that you create a custom prompt dataset, and store it in Amazon S3. To learn more about how to create a custom prompt data, see [Creating a model evaluation job that uses human workers](clarify-foundation-model-evaluate-human.md#clarify-foundation-model-evaluate-human-run).
 
 In Studio, you can define the criteria that your human workforce uses to evaluate responses from models. You can also document evaluation instructions using a template available in Studio. Furthermore, you can create a work team in Studio. The work team are people who you want to participate in your model evaluation job.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

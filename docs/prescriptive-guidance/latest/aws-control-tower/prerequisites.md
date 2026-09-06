@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-control
 
   For more information about AWS Control Tower accounts, see [About AWS accounts in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/accounts.html).
 + Make sure you are not running the AWS CodePipeline pipeline for AWS Landing Zone during this transition. On the AWS Management Console, on the AWS-Control-Tower-Pipeline page, choose **Disable transition** between the **Source** stage and the **Build** stage in the AWS Landing Zone pipeline.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ga
 # FlexMatch matchmaking process
 <a name="gamelift-match-howitworks"></a>
 
-This topic describes the sequence of events in a basic matchmaking scenario, including the interactions between the various your game components and the FlexMatch service.
+This topic describes the sequence of events in a basic matchmaking scenario, including the interactions between the various game components and the FlexMatch service.
 
 **Step 1: Request matchmaking for players**
 A player using your game client clicks a "Join Game" button. This action causes your client matchmaking service to send a matchmaking request to FlexMatch. The request identifies the FlexMatch matchmaker to use when fulfilling the request. The request also includes player information that your custom matchmaker requires, such as skill level, play preferences, or geographic latency data. You can make matchmaking requests for one player or multiple players.
@@ -37,7 +37,3 @@ After a proposed match is successfully formed, a new game session is started. Yo
 After a game session is started, players connect to the session, claim their team assignment, and begin gameplay.
 + FlexMatch as a standalone service: Your game uses the existing game session management system to provide connection information back to players.
 + FlexMatch with an Amazon GameLift Servers hosting solution: On a successful game session placement, FlexMatch updates all of the matched tickets with game session connection information and a player session ID.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

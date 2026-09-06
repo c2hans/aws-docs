@@ -31,7 +31,7 @@ If you are not already signed in to the AWS Management Console, a new window ope
    + Select *Request approval* if your identity doesn't have sufficient permissions to allow the product provider to perform onboarding procedures on your behalf. Then, choose *Create approval request*. When you select this option, a temporary delegation request link is created that you can share with your account administrator. Your administrator can access the AWS Management Console or use the access link to Review Temporary delegation requests to approve the request and share temporary access with the requestor.
 
 **Note**
-Granting product provider access requires two actions: accepting the delegation request (`AcceptDelegationRequest`) and releasing the exchange token (`SendDelegatedToken`). The AWS Management Console performs both steps automatically when you approve a request. If you use the AWS CLI or API, you must execute both steps separately.
+Granting product provider access requires two actions: accepting the delegation request (`AcceptDelegationRequest`) and releasing the exchange token (`SendDelegationToken`). The AWS Management Console performs both steps automatically when you approve a request. If you use the AWS CLI or API, you must execute both steps separately.
 
 ## Permission simulation capability -beta
 <a name="temporary-delegation-permission-simulation"></a>
@@ -48,7 +48,3 @@ Since you can only delegate permissions that you already possess, it's crucial t
 After you initiate a temporary delegation request, you can manage and monitor the request through its lifecycle. The following procedures help you track, approve, and control temporary access:
 + [Review Temporary delegation requests](temporary-delegation-review-requests.md) – Monitor the status of your access requests, and view detailed information about requests to approve or deny temporary delegation requests.
 + [Revoke temporary delegation access](temporary-delegation-revoke-access.md) – Immediately terminate active temporary delegation sessions before they expire naturally.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

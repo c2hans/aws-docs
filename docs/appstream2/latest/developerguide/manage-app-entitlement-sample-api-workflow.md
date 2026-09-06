@@ -24,7 +24,3 @@ The following diagram is an example of the API operations flow between WorkSpace
 1. The application is launched by using the application metadata specified by your service or agent.
 
 From the user’s perspective, the process happens transparently. The user connects to WorkSpaces Applications and logs in to the fleet instance. After login, the list of applications specified in the image and provided by your dynamic app provider displays for the user.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
  For example, you might run these as separate Lambda functions for each game mode, or you might operate them as separate container-based service deployments.
 
  Deploy your matchmaking services to multiple Regions near your game server locations. Player traffic will take many routes, so it is important for the matchmaking service to maintain an up-to-date latency profile across multiple ISPs to improve the efficiency of low latency game session placement. GameLift FlexMatch provides additional guidance for selecting Regions for matchmakers, and includes the ability to integrate your matchmakers with [multi-Region game session queues](https://docs.aws.amazon.com/gamelift/latest/developerguide/queues-intro.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

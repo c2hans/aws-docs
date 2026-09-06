@@ -33,7 +33,3 @@ If you have a Macie administrator account and you created a suppression rule, Ma
 **Sensitive data findings** – A Macie administrator and individual members can suppress sensitive data findings that their sensitive data discovery jobs produce. A Macie administrator can also suppress findings that Macie generates while performing automated sensitive data discovery for the organization.
 Only the account that creates a sensitive data discovery job can suppress or otherwise access sensitive data findings that the job produces. Only the Macie administrator account for an organization can suppress or otherwise access findings that automated sensitive data discovery produces for accounts in the organization.
 For more information about the tasks that administrators and members can perform, see [Macie administrator and member account relationships](accounts-mgmt-relationships.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

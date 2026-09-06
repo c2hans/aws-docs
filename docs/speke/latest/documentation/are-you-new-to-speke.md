@@ -39,7 +39,3 @@ The following list defines the terminology used in this specification. Where pos
 +  **Key server** – The component of a DRM platform that maintains keys for content encryption and decryption.
 +  **Operator** – A person in charge of operating the overall system, including the encryptor and the key provider.
 +  **Player** – A media player operating on behalf of a viewer. Gets its information from different sources, including the media manifest files, media files, and DRM licenses. Requests licenses from the DRM platform on behalf of the viewers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Packager and Encoder Key Exchange API Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query speke` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

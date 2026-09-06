@@ -21,7 +21,3 @@ We recommend that you run at least three parallel workstreams: *operational***,�
 + Sprint 0 is a collection of early tasks focused on project kick-off, discovery, planning, and design.
 + Sprint MLP is a collection of activities for creating a minimum lovable product (MLP) that future sprints can iterate on to provide end-state target capabilities. For example, the MLP could deliver a relatively straightforward caller journey to a small group of agents. After the platform is live and proven stable for the MLP use cases, future sprints (sprints 2, 3, and so on in the diagram) can iterate rapidly to deliver innovative capabilities.
 + Each project and environment is different, so the diagram doesn't provide specific timelines. Use this plan as a starting point for discussions with stakeholders during the initial project planning phase. Determine which activities are relevant, identify any activities that should be added, and determine their estimated duration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

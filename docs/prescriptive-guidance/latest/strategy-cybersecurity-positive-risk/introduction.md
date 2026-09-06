@@ -20,7 +20,3 @@ Traditionally, cybersecurity views risk exclusively through a negative lens. The
 Until recently, cybersecurity has considered only negative risk, and the definition of risk has focused on a potential negative outcome. Positive risks focus on the potential positive outcome at the beginning of risk identification. The exclusion of positive risk results in failure to recognize the positive outcomes in cybersecurity. Because of the focus on negative risk, executive leadership commonly perceives cybersecurity to be reactive rather than proactive and underestimates cybersecurity's contribution to positive business outcomes.
 
 This document defines positive risk for the cybersecurity industry and discusses the benefits and importance of including positive risks within your cybersecurity strategy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
   +  Using a corporate managed (and HR linked) identity provider improves security by automatically propagating role and permission changes to the EUC environment. It also promotes the best practice of managing access based on user lifecycle.
 +  **Users should be authenticated and authorized to access EUC services**: Use an authentication system, such as a SAML 2.0 IdP or Microsoft Active Directory, to authenticate users prior to them accessing an AWS EUC service. Verifying authenticating or authorization checks that only entitled users can access the applications and data accessible from Amazon WorkSpaces and WorkSpaces Applications instances.
 +  **Manage user entitlements using groups where possible**: Use groups within Active Directory or your authentication provider instead of granting access to individual users. This approach simplifies the administration process and helps you perform access reviews and updates more efficiently.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ AWS Mainframe Modernization Application Testing provides the following APIs for 
 | <a name="apptest-ListTestRunTestCases"></a>[ListTestRunTestCases](https://docs.aws.amazon.com/apptest/latest/APIReference/API_ListTestRunTestCases.html) | List test cases for a test run | Read |
 | <a name="apptest-ListTestRuns"></a>[ListTestRuns](https://docs.aws.amazon.com/apptest/latest/APIReference/API_ListTestRuns.html) | List test runs | List |
 | <a name="apptest-ListTestSuites"></a>[ListTestSuites](https://docs.aws.amazon.com/apptest/latest/APIReference/API_ListTestSuites.html) | List test suites | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

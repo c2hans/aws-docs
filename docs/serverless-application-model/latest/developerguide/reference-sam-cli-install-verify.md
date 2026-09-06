@@ -518,7 +518,3 @@ $ shasum -a 256 {{~/Downloads/}}aws-sam-cli-macos-x86_64.pkg
 ```
 
  Compare your 64-character SHA-256 hash value with the corresponding value in the [AWS SAM CLI release notes](https://github.com/aws/aws-sam-cli/releases/latest) GitHub repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -71,7 +71,3 @@ To verify image deployment, check the Image tab in your Athena Federation Connec
    1. Enter your new image URI
 
    The Athena federated connector image is now located in your account, which allows you to perform CVE scans on the image.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

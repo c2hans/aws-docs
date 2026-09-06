@@ -132,7 +132,3 @@ For more information about setting up and operating Container Insights on Amazon
 + [Setup guide (AWS CLI)](container-insights-eks-classic-setup.md) – Set up Classic Container Insights
 + [Migration guides](container-insights-eks-migration-hub.md) – Migrate between approaches
 + [Compare Container Insights approaches](container-insights-eks-compare.md) – Compare Container Insights approaches
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

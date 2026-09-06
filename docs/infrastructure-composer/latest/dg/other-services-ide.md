@@ -39,7 +39,3 @@ The **Activate local sync** option is not available in every browser. It is avai
 
    1. Use the AWS SAM CLI locally to build, test, deploy your application, and more. To learn more, see [Deploy your Infrastructure Composer serverless application to the AWS Cloud](other-services-cfn.md).
 ![Using sam build and sam deploy in your local IDE.](http://docs.aws.amazon.com/infrastructure-composer/latest/dg/images/aac_other_ide_03.gif)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

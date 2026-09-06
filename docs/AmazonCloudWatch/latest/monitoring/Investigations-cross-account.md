@@ -197,7 +197,3 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 After you set up CloudWatch cross-account observability dashboard, you can view and investigate from a cross-account telemetry in your monitoring account. You must add a cross-account telemetry from the source account in order to run an investigation into that source account.
 
 For detailed information about how to create an investigation, see [Investigate operational issues in your environment](Investigations-Investigate.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ Choosing the right application of Lookout for Equipment involves finding the rig
 
 **Note**
 Lookout for Equipment is ultimately dependent on *your* data. We cannot guarantee that there are patterns in your data that will enable Lookout for Equipment to detect failures. Determining the right set of inputs might require multiple iterations through the Lookout for Equipment model training and monitoring process. For the greatest chance of success, we highly recommend working with a subject matter expert to identify the right application and data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

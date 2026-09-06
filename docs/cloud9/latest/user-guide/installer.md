@@ -90,7 +90,3 @@ To install the ** `gcc` ** utility, run one of the following commands on your in
 To install the ** `ncurses` ** terminal control library (and, on some operating systems, the ** `glibc-static` ** library), run one of the following commands on your instance or server:
 + For Amazon Linux, Amazon Linux 2, and Red Hat Enterprise Linux (RHEL) running in Amazon EC2: ** `sudo yum -y install ncurses-devel` **
 + For SUSE: ** `sudo zypper install -y ncurses-devel` ** and ** `sudo zypper install -y glibc-static` **
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

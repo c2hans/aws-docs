@@ -23,7 +23,3 @@ You must give all users the access described in the following table. All the act
 | **Create role from template option** | Users must be able to select the Create role from template field. (The role needs to be created only once, by the first user to create a channel. But it is easiest to give these permissions to all users.) | `CreateRole`<br />`PutRolePolicy`<br />`AttachRolePolicy` |
 | Specify custom role ARN | Users don't need to be able to select this field. They will use MediaLiveAccessRole. They will never use a custom role. | None |
 | Update button | This button appears only if MediaLiveAccessRole isn't up to date. Users must be able to select this button so that MediaLive updates the MediaLiveAccessRole with new permissions. Permissions must sometimes be added to the role when a new feature is added to MediaLive. | `GetRolePolicy`<br />`PutRolePolicy`<br />`AttachRolePolicy` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

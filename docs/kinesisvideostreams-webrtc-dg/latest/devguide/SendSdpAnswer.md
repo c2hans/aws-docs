@@ -80,7 +80,3 @@ This is counted as a new API call.
 <a name="SendSdpAnswer-concurrent"></a>
 
 Concurrent calls are allowed. An offer is sent once per each call.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams-webrtc-dg` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

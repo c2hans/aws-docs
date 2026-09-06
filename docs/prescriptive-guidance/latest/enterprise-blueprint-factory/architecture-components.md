@@ -138,7 +138,3 @@ The following are the stages of the release pipeline:
 
 **Note**
 The release pipeline is customizable. For example, you can remove any stages that are not applicable for your use case. You could also add more stages if you want to add other control checks, additional validations, or a manual approval step. This guide does not include instructions for modifying the release pipeline. For more information, see the [CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html) and [CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html) documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

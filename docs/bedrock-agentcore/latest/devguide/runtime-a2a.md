@@ -66,7 +66,7 @@ In this tutorial you create, test, and deploy an A2A server.
 ### Prerequisites
 <a name="runtime-a2a-prerequisites"></a>
 + Python 3.10 or higher installed and basic understanding of Python
-+ Node.js 18 or higher installed (required for the AgentCore CLI)
++ Node.js 20 or higher installed (required for the AgentCore CLI)
 + The AgentCore CLI installed: `npm install -g @aws/agentcore`
 + An AWS account with appropriate permissions and local credentials configured
 + Understanding of the A2A protocol and agent-to-agent communication concepts
@@ -79,10 +79,18 @@ This example uses Strands Agents, but the AgentCore CLI also supports A2A projec
 #### Scaffold the project
 <a name="runtime-a2a-scaffold-project"></a>
 
-Run the following command and select *Strands* as your framework when prompted:
+Run the following command:
 
 ```
-agentcore create --protocol A2A
+agentcore create \
+  --project-name A2AProject \
+  --name A2AAgent \
+  --language Python \
+  --framework Strands \
+  --model-provider Bedrock \
+  --memory none \
+  --protocol A2A
+cd A2AProject
 ```
 
 The CLI scaffolds a complete project with all required dependencies and configuration. The generated `main.py` contains your A2A server:
@@ -442,7 +450,3 @@ The service provides A2A-compliant error responses with standardized JSON-RPC er
 | -32054 |  `RetryableConflictException`  | 409 | Session operation in progress, please retry |
 | -32055 |  `RuntimeClientError`  | 424 | Runtime client error – Check your CloudWatch logs for more information. |
 | -32603 |  `Any other exception`  | 500 | Internal error - An unexpected error occurred while processing the request |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

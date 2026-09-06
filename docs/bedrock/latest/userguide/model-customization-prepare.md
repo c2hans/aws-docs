@@ -402,7 +402,3 @@ The following is an example item:
 ```
 
 To allow Amazon Bedrock access to the image files, add an IAM policy similar to the one in [Permissions to access training and validation files and to write output files in S3](model-customization-iam-role.md#model-customization-iam-role-s3) to the Amazon Bedrock model customization service role that you set up or that was automatically set up for you in the console. The Amazon S3 paths you provide in the training dataset must be in folders that you specify in the policy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

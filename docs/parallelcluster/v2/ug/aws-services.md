@@ -199,7 +199,3 @@ For more information, see [https://aws.amazon.com/s3/](https://aws.amazon.com/s3
 Amazon VPC defines a network used by the nodes in your cluster. The VPC settings for the cluster are defined in the [`[vpc]` section](vpc-section.md).
 
 For more information about Amazon VPC, see [https://aws.amazon.com/vpc/](https://aws.amazon.com/vpc/) and [https://docs.aws.amazon.com/vpc/](https://docs.aws.amazon.com/vpc/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

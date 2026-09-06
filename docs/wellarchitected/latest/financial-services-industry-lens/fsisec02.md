@@ -41,7 +41,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 +  [Cloud compliance, assurance, and auditing](https://www.youtube.com/watch?v=xREhfrUqpd4&ab_channel=AWSEvents)
 +  [Setting up controls at scale in your AWS environment](https://www.youtube.com/watch?v=NkE9_okfPG8&t=1697s&ab_channel=AWSEvents)
 +  [Proactive governance and compliance for AWS workloads](https://www.youtube.com/watch?v=PpUnH9Y52X0&ab_channel=AWSEvents)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

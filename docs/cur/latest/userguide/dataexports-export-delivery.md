@@ -234,7 +234,3 @@ The second location is in a partition folder containing all executions. This Man
 The “overwrite” mode delivers `Manifest.json` to one location.
 `s3://<bucket-name>/<prefix>/<export-name>/metadata/<partition>`
 The Manifest in this directory is overwritten with each refresh of a given partition (that is, billing period).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

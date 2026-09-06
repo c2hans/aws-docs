@@ -32,7 +32,3 @@ Configuration logs contain detailed information about changes in your infrastruc
 <a name="networking-logs"></a>
 
 Networking logs give you an overview of what is happening on your network. They can help you monitor traffic in your environment and diagnose network related issues. Due to the amount and frequency that networking logs are generated, it is common to keep them in accessible storage for a much shorter time compared to other logs. A best practice is to define the lifecycle strategy to keep your networking logs based on technical requirements, cost considerations, and the criticality of the infrastructure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

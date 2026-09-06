@@ -76,7 +76,3 @@ You can use the Amazon Redshift Serverless console, API, or AWS CLI to create a 
 1. (Optional) Choose a retention period. If you choose **Custom value**, specify the number of days.
 
 1. Choose **Create schedule**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

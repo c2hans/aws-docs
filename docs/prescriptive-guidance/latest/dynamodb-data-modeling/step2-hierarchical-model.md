@@ -15,7 +15,3 @@ It's important to calculate an estimation of the cost for all environments of yo
 + Business analyst reviews and approves or rejects the preliminary cost estimate.
 
 Using these reference values, you can create an estimated price to submit for approval. To create the budget, you can use the [DynamoDB pricing page](https://aws.amazon.com/dynamodb/pricing/) and [AWS Pricing Calculator](https://calculator.aws/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

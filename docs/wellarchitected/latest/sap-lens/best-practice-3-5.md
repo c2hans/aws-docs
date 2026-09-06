@@ -25,7 +25,3 @@ Ensure that your playbooks include integration and communication steps with rela
  **Suggestion 3.5.2 - Run regular SAP game days to test operational procedures and validate playbooks**
 
  Consider running SAP game days regularly for your operational team. A game day simulates a failure or event to test systems, processes, and team responses. The purpose is to actually perform the actions the team would perform as if an exceptional event happened. These should be conducted regularly so that your team builds "muscle memory" on how to respond. Your game days should cover the areas of operations, security, reliability, performance, and cost. Using a dedicated experimentation environment, simulate real world scenarios in order to validate and practice operational procedures and recovery processes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

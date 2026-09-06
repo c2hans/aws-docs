@@ -25,7 +25,3 @@ Following, you can find descriptions for options for customizing each area of yo
 + [Totals and subtotals](format-tables-pivot-tables-totals.md)
 + [Row and column size in tables and pivot tables in Quick](format-tables-pivot-tables-resize-rows-columns.md)
 + [Customize pivot table data](format-tables-pivot-tables-layout-options.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

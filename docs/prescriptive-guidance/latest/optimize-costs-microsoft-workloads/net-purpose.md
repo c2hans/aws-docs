@@ -118,7 +118,3 @@ If you migrate to purpose built-databases, you can use these tools from AWS to h
 + [.NET Immersion Day](https://catalog.us-east-1.prod.workshops.aws/workshops/02696107-09ac-4313-a6cb-3798048b07d7/en-US/3-choosing-a-cloud-native-database-for-my-net-application) (AWS Workshop Studio)
 + [Getting started with Amazon Timestream with .NET](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/sample_apps/dotnet) (GitHub)
 + [Purpose-built databases for modern .NET applications on AWS](https://d1.awsstatic.com/events/Summits/reinvent2022/XNT304_Purpose-built-databases-for-modern-NET-applications-on-AWS.pdf) (AWS presentation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

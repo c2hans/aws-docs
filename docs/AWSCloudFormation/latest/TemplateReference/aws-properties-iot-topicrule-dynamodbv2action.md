@@ -58,7 +58,3 @@ The ARN of the IAM role that grants access to the DynamoDB table.
 + [AWS SDK for Go](https://docs.aws.amazon.com/sdk-for-go/api/service/iot/#DynamoDBv2Action).
 + [AWS SDK for Java](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/iot/model/DynamoDBv2Action.html).
 + [AWS SDK for Ruby V2](https://docs.aws.amazon.com/sdkforruby/api/Aws/IoT/Types/DynamoDBv2Action.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

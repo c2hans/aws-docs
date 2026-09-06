@@ -162,7 +162,3 @@ You can continue your journey with AWS by following the next steps:
 + Apply for a [production access](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/request-production-access.html). If granted, this will move your account out of the sandbox, remove the restriction on recipient addresses, and increase your sending limits.
 + Decide whether you will send your bulk email using the Amazon SES [SMTP interface](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-an-email-using-smtp.html) or [API](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-an-email-using-sdk.html). You can use the API either directly or through an [AWS SDK](https://aws.amazon.com/getting-started/tools-sdks/).
 + Follow [deliverability best practices](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/improve-deliverability.html) to maximize the number of emails that reach your recipients’ inboxes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

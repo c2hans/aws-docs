@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/enterprise-
 <a name="resources-aws-posts"></a>
 + [Report and Visualize your AWS Service Catalog Estate](https://aws.amazon.com/blogs/mt/report-and-visualize-your-aws-service-catalog-estate/) (AWS blog post)
 + [Implementing an alarm to automatically detect drift in AWS CloudFormation stacks](https://aws.amazon.com/blogs/mt/implementing-an-alarm-to-automatically-detect-drift-in-aws-cloudformation-stacks/) (AWS blog post)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

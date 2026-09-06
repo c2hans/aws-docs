@@ -36,7 +36,3 @@ The following are considerations on stored procedures in Amazon Redshift:
   + SET LOCAL
   + ALTER TABLE APPEND
 + The `registerOutParameter` method call through the Java Database Connectivity (JDBC) driver isn't supported for the `refcursor` data type. For an example of using the `refcursor` data type, see [Returning a result set from a stored procedure](stored-procedure-result-set.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

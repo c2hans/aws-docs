@@ -130,7 +130,3 @@ This role is only recommended for use with developer accounts and uses the `Admi
 1. To return to your space, choose **Go to Amazon CodeCatalyst**.
 
 After you create your AWS Builder ID, create your first space, and add an account, you can then create a project. .
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ Install additional drivers, libraries, and application software on the temporary
 +  Amazon CloudWatch agent, to use CloudWatch Logs and Metrics. For more information, see [Install the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance.html) in the *Amazon CloudWatch User Guide*.
 +  AWS Neuron, to use **trn\*** and **inf\*** instance types. For more information, see the [AWS Neuron documentation](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/).
 +  NVIDIA Driver, CUDA, and DCGM, to use **p\*** or **g\*** instance types.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

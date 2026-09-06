@@ -41,7 +41,3 @@ You can apply the Amazon Personalize Search Ranking plugin to all queries and re
  To understand how results are re-ranked, you can use OpenSearch Dashboards to compare OpenSearch results against re-ranked results with the plugin. For more information, see [Comparing personalized OpenSearch results to results without personalization](opensource-comparing-results.md).
 
  As you apply the plugin to OpenSearch queries, you can monitor the plugin by getting metrics for your OpenSearch pipeline. For more information, see [Monitoring the plugin with open source OpenSearch](opensource-monitor.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

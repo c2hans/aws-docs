@@ -15,7 +15,3 @@ Data is loaded into the target table, one line per row. The fields in the data f
 + [Loading data from compressed and uncompressed files](t_splitting-data-files.md)
 + [Uploading files to Amazon S3 to use with COPY](t_uploading-data-to-S3.md)
 + [Using the COPY command to load from Amazon S3](t_loading-tables-from-s3.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -181,7 +181,3 @@ To accomplish this, you can use [`acm-pca create-certificate-authority`](https:/
 
 **Use the AWS SDK**
 You can write either a custom resource or some separate stand-alone app using the AWS SDK. If you would like to use the AWS SDK for this, you can follow the instructions for the AWS CLI. Each page of the CLI reference has a link titled "See also: AWS API Documentation" that will take you to the API documentation. There you will be able to find the generic API information as well as links to all the language specific SDK’s.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Render Farm Deployment Kit on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rfdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

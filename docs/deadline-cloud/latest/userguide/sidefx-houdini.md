@@ -78,7 +78,7 @@ To install the Deadline Cloud for Houdini submitter, you need:
 The Deadline Cloud submitter is automatically available as a render output (ROP) node.
 
 **Note**
-The submitter installer is available for Windows, macOS, and Linux. For manual installation, see the [manual installation instructions in the GitHub repository](https://github.com/aws-deadline/deadline-cloud-for-houdini/blob/mainline/README.md).
+The submitter installer is available for Windows, macOS, and Linux. For manual installation, see the [manual installation instructions](https://github.com/aws-deadline/deadline-cloud-for-houdini/blob/mainline/README.md) on the GitHub website.
 
 ### Verifying the submitter is installed correctly
 <a name="houdini-verify-installation"></a>
@@ -125,7 +125,7 @@ To use the Deadline Cloud for Houdini submitter, you need:
 
 The **Job-specific settings** tab of the Deadline Cloud node provides options specific to Houdini jobs.
 + *Submit Dependencies as Separate Steps* - Split the ROP graph into separate rendering steps for easier monitoring and debugging. When enabled, each connected render node becomes its own step in the job.
-+ *Include Adaptor Wheels* - Enable custom builds of the adaptor (called *wheels*) that change rendering behavior. When enabled, you can specify a directory containing adaptor wheels. You can build adaptor wheels by running the [build\_wheels.sh script in the GitHub repository](https://github.com/aws-deadline/deadline-cloud-for-houdini/blob/mainline/scripts/build_wheels.sh).
++ *Include Adaptor Wheels* - Enable custom builds of the adaptor (called *wheels*) that change rendering behavior. When enabled, you can specify a directory containing adaptor wheels. You can build adaptor wheels by running the [build\_wheels.sh script](https://github.com/aws-deadline/deadline-cloud-for-houdini/blob/mainline/scripts/build_wheels.sh) on the GitHub website.
 + *Adaptor Wheels* - Specify the directory path containing custom adaptor wheels (only available when **Include Adaptor Wheels** is enabled).
 + *Automatically unlock ROPs* - Automatically unlock dependency ROPs during submission. Locked ROPs use existing outputs and won't re-render, which can block dependencies from re-rendering.
 + *Automatically parse scene (.hip) references* - Automatically discover and attach the job's input and output file names and directories based on the ROP graph during job submission.
@@ -186,7 +186,7 @@ You cannot use the submitter node to create a single job that will export a USD 
 #### Alternative: example Husk job bundle
 <a name="houdini-husk-bundle"></a>
 
-Deadline Cloud provides an [example Husk job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/houdini_husk_usd_render) that enables USD export rendering workflows outside of the Houdini submitter. You will need to export the USD scene yourself separately from Houdini before using the example job bundle.
+Deadline Cloud provides an [example Husk job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/houdini_husk_usd_render) on the GitHub website that enables USD export rendering workflows outside of the Houdini submitter. You will need to export the USD scene yourself separately from Houdini before using the example job bundle.
 
 The Husk example job bundle:
 + Allows direct submission of USD scenes for rendering using Husk and a chosen Hydra render delegate without launching Houdini and consuming a Houdini engine license during the render.
@@ -198,12 +198,12 @@ The Husk example job bundle:
 
 Before using the Husk example job bundle, you need:
 + A scene exported to USD format.
-  + See the [SideFX USD documentation](https://www.sidefx.com/docs/houdini/solaris/output.html) for information on writing out USD files in Houdini.
+  + See the [USD output documentation](https://www.sidefx.com/docs/houdini/solaris/output.html) on the SideFX website for information on writing out USD files in Houdini.
 + The Deadline Cloud CLI installed and configured.
-  + The CLI can be installed from either the submitter installer or directly following the [deadline-cloud getting started guide](https://github.com/aws-deadline/deadline-cloud/blob/mainline/docs/index.md#getting-started).
-+ A git clone of the [deadline-cloud-samples repository](https://github.com/aws-deadline/deadline-cloud-samples).
+  + The CLI can be installed from either the submitter installer or directly following the [getting started guide](https://github.com/aws-deadline/deadline-cloud/blob/mainline/docs/index.md#getting-started) on the GitHub website.
++ A git clone of the [deadline-cloud-samples repository](https://github.com/aws-deadline/deadline-cloud-samples) on the GitHub website.
 + The Hydra render delegate available on the worker nodes.
-  + Karma is included with Houdini. If you want to use other Hydra render delegates, you must provide them on the worker. See the deadline-cloud-samples repository for example conda packages for [V-Ray](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/houdini-vray-7) and [Redshift](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/houdini-redshift-2026) as one option to make them available on the worker nodes.
+  + Karma is included with Houdini. If you want to use other Hydra render delegates, you must provide them on the worker. See the conda recipes for [V-Ray](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/houdini-vray-7) and [Redshift](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/houdini-redshift-2026) on the GitHub website as one option to make them available on the worker nodes.
 
 ##### Using the Husk example job bundle
 <a name="houdini-husk-use"></a>
@@ -222,8 +222,10 @@ Before using the Husk example job bundle, you need:
 
 ##### Additional resources
 <a name="houdini-husk-resources"></a>
-+ [deadline-cloud-samples repository](https://github.com/aws-deadline/deadline-cloud-samples).
-+ [SideFX Husk documentation](https://www.sidefx.com/docs/houdini/ref/utils/husk.html).
+
+The following resources are available on the GitHub website and the SideFX website:
++ [deadline-cloud-samples repository](https://github.com/aws-deadline/deadline-cloud-samples)
++ [SideFX Husk documentation](https://www.sidefx.com/docs/houdini/ref/utils/husk.html)
 
 ## Troubleshooting
 <a name="houdini-troubleshooting"></a>
@@ -245,7 +247,7 @@ These errors are safe to ignore. The Deadline Cloud submitter exists as a node i
 ### Does the Deadline Cloud submitter support USD export render workflows using Husk?
 <a name="houdini-troubleshooting-husk-export"></a>
 
-The Houdini submitter does not directly support export workflows using Husk at this time. Jobs created through the submitter always run the adaptor which uses `hython` and therefore a Houdini engine license for the duration of the render. If you want to render an exported USD scene using just Husk and a Hydra render delegate, you can use an example [job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/houdini_husk_usd_render). This approach is useful to render USD scenes with only a render license (for example, Karma) without needing a Houdini engine license for the entire render. For more information on rendering USD scenes with Husk on Deadline Cloud, see [Husk rendering and USD workflows](#houdini-husk-rendering).
+The Houdini submitter does not directly support export workflows using Husk at this time. Jobs created through the submitter always run the adaptor which uses `hython` and therefore a Houdini engine license for the duration of the render. If you want to render an exported USD scene using just Husk and a Hydra render delegate, you can use an [example job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/houdini_husk_usd_render) on the GitHub website. This approach is useful to render USD scenes with only a render license (for example, Karma) without needing a Houdini engine license for the entire render. For more information on rendering USD scenes with Husk on Deadline Cloud, see [Husk rendering and USD workflows](#houdini-husk-rendering).
 
 ## Advanced configurations
 <a name="houdini-advanced-configurations"></a>
@@ -278,11 +280,7 @@ These render engines are automatically detected and configured by the Houdini in
 ## Open source resources
 <a name="houdini-open-source"></a>
 
-The submitter and adaptor are open source and available on GitHub. Houdini conda recipes are available on GitHub for supported versions.
-+ [Houdini submitter source code on GitHub](https://github.com/aws-deadline/deadline-cloud-for-houdini)
-+ [Sample scenes and workflows on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/houdini_husk_usd_render)
-+ [Conda recipes for supported versions on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/houdini-21.0)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+The submitter, adaptor, sample scenes and workflows, and conda recipes for supported versions are open source and available on the GitHub website:
++ [Houdini submitter source code](https://github.com/aws-deadline/deadline-cloud-for-houdini)
++ [Sample scenes and workflows](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/houdini_husk_usd_render)
++ [Conda recipes for supported versions](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/houdini-21.0)

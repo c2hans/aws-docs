@@ -44,7 +44,3 @@ This table lists transactional table formats supported in Redshift Spectrum and 
 **Blog posts and workshops**
 + [ Centralize governance for your data lake using AWS Lake Formation while enabling a modern data architecture with Amazon Redshift Spectrum](https://aws.amazon.com/blogs/big-data/centralize-governance-for-your-data-lake-using-aws-lake-formation-while-enabling-a-modern-data-architecture-with-amazon-redshift-spectrum/)
 +  [Use Redshift Spectrum to query Apache HUDI Copy On Write (CoW) tables in Amazon S3 data lake](https://catalog.us-east-1.prod.workshops.aws/workshops/9f29cdba-66c0-445e-8cbb-28a092cb5ba7/en-US/lab21)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

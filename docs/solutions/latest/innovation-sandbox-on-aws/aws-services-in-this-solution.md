@@ -25,7 +25,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 |  [AWS Systems Manager](https://aws.amazon.com/systems-manager/)  |  **Supporting.** This solution uses AWS Systems Manager for solution configuration and sharing cross account/stack parameters using the RAM service. |
 |  [AWS WAF](https://aws.amazon.com/waf/)  |  **Supporting.** This solution uses AWS WAF to protect the Amazon API Gateway from common exploits and bots that can affect availability, compromise security, or consume excessive resources. |
 |  [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)  |  **Supporting.** This solution uses AWS Cost Explorer to retrieve cost and usage data for accounts and leases. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

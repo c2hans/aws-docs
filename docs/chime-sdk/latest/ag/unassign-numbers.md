@@ -21,7 +21,3 @@ Unassigning numbers and deleting SIP rules disables the users' telephony capabil
 1. Choose **Edit**, and under **Assignment type**, choose **Voice connector** or **Voice connector group**.
 
 1. Open the **Voice connector options** or **Voice connector group options** list and choose **None (unassign)**, the first option in the list.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

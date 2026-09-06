@@ -43,7 +43,3 @@ NTM training supports both GPU and CPU instance types. We recommend GPU instance
 <a name="NTM-sample-notebooks"></a>
 
 For a sample notebook that uses the SageMaker AI NTM algorithm to uncover topics in documents from a synthetic data source where the topic distributions are known, see the [Introduction to Basic Functionality of NTM](https://sagemaker-examples.readthedocs.io/en/latest/introduction_to_amazon_algorithms/ntm_synthetic/ntm_synthetic.html). For instructions how to create and access Jupyter notebook instances that you can use to run the example in SageMaker AI, see [Amazon SageMaker notebook instances](nbi.md). Once you have created a notebook instance and opened it, select the **SageMaker AI Examples** tab to see a list of all the SageMaker AI samples. The topic modeling example notebooks using the NTM algorithms are located in the **Introduction to Amazon algorithms** section. To open a notebook, click on its **Use** tab and select **Create copy**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

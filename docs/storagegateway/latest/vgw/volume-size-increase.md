@@ -12,7 +12,3 @@ You can add volumes using the Storage Gateway console or Storage Gateway API. Fo
 You can expand the size of existing volumes using either of the following methods:
 + Create a snapshot of the volume you want to expand and then use the snapshot to create a new volume of a larger size. For information about how to create a snapshot, see [Creating a recovery snapshot](snapshot.md). For information about how to use a snapshot to create a new volume, see [Creating a storage volume](GettingStartedCreateVolumes.md).
 + Use the cached volume you want to expand to clone a new volume of a larger size. For information about how to clone a volume, see [Cloning a cached volume from a recovery point](clone-volume.md). For information about how to create a volume, see [Creating a storage volume](GettingStartedCreateVolumes.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

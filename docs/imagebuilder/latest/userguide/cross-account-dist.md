@@ -9,6 +9,9 @@ This section describes how you can configure distribution settings to deliver an
 
 The destination account can then launch or modify the AMI, as needed.
 
+**Tip**
+For information about a deployable example that includes the AWS KMS key policy and the target account role, see the [cross-account AMIs sample](https://github.com/aws-samples/amazon-ec2-image-builder-samples/tree/HEAD/distribution/cross-account-amis) on GitHub. The same repository includes a Terraform variant. For more information, see [Explore Image Builder sample projects on GitHub](sample-projects.md).
+
 **Note**
 AWS CLI command examples in this section assume that you have previously created image recipe and infrastructure configuration JSON files. To create the JSON file for an image recipe, see [Create an image recipe with the AWS CLI](create-image-recipes.md#create-image-recipe-cli). To create the JSON file for an infrastructure configuration, see [Create an infrastructure configuration](create-infra-config.md).
 
@@ -290,7 +293,3 @@ You must include the `file://` notation at the beginning of the JSON file path.
 The path for the JSON file should follow the appropriate convention for the base operating system where you are running the command. For example, Windows uses the backslash (\\) to refer to the directory path, while Linux and macOS use the forward slash (/).
 
 *You can also provide JSON directly in the command, using the `--distributions` parameter.*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

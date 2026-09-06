@@ -60,7 +60,3 @@ The following table defines what the `StorageUsed` metric measures for the liste
 | --- | --- |
 | StorageUsed | The amount of logical space used, in bytes. This metric measures different types of space consumption depending on the dimensions used with this metric. When setting `StorageTier` to `SSD` or `StandardCapacityPool`, and setting `DataType` to `All`, this metric measures the logical space usage for this volume for your SSD and capacity pool tiers, respectively. When setting the `DataType` dimension to `User`, `Snapshot`, or `Other`, and setting `StorageTier` to `All`, this metric measures the logical space usage for each respective type of data. The `Snapshot` data consumption includes the snapshot reserve, which is 5% of the volume's size by default. <br />Units: Bytes<br />Valid statistics: `Average`, `Minimum`, and `Maximum` |
 | StorageCapacityUtilization | The percentage of the volume's used physical disk space. <br />Units: Percent<br />Valid statistics: `Maximum` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

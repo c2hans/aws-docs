@@ -12,7 +12,3 @@ RDS Extended Support is only available on certain minor versions. Minor versions
 RDS Extended Support is only available on Aurora serverless. It isn't available on Aurora Serverless v1.
 
 You can also view information about support dates for engine versions by using the AWS CLI or the RDS API. For more information, see [Viewing support dates for engine versions in Amazon RDS Extended Support](extended-support-viewing-support-dates.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

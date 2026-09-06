@@ -39,7 +39,3 @@ This solution uses AWS CloudFormation to automate the deployment of Innovation S
 The **SandboxAccount** stack is automatically configured as a service-managed StackSet resource in the **AccountPool** stack using the **AccountPool OU** as deployment target. The stack contains a single **Spoke** role that is assumed into by compute resources in the compute stack to run the account cleanup job.
 
 These AWS CloudFormation templates deploy the Innovation Sandbox on AWS solution in the AWS Cloud.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

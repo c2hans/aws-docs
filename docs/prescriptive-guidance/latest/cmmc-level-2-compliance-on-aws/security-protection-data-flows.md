@@ -34,7 +34,3 @@ This figure illustrates how SPD flows from source services in the CUI Workload A
 ![](http://docs.aws.amazon.com/prescriptive-guidance/latest/cmmc-level-2-compliance-on-aws/images/guide-img/0fdea3e4-e685-4123-b5d4-00cba3e6b30c/images/b715b563-4492-45b9-8c99-798e1875d55e.png)
 
  Figure 2: Security protection data flow architecture. Source services in the CUI Workload Account(s) feed into two parallel channels: the findings pipeline (aggregated in Security Hub) and the raw log pipeline (stored in Amazon S3 with Object Lock). Both channels feed into the evidence pipeline, which produces SSP artifacts, control-mapped evidence, POA&M tracking, and SPRS score calculations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

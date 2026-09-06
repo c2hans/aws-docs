@@ -121,7 +121,3 @@ In the following example, the VPC endpoint policy specifies that the IAM user {{
 <a name="organization-control-policy"></a>
 
 If your AWS account belongs to an organization, AWS Organizations policies can block you from accessing your Amazon SQS queues. By default, AWS Organizations policies do not block any requests to Amazon SQS. However, make sure that your AWS Organizations policies haven’t been configured to block access to Amazon SQS queues. For instructions on how to check your AWS Organizations policies, see [Listing all policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_info-operations.html#list-all-pols-in-org) in the *AWS Organizations User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

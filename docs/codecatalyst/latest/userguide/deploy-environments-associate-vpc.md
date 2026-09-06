@@ -28,7 +28,3 @@ Use the following instructions to associate a VPC connection with an environment
 If the VPC connection that you want to use is not listed, it might be because it includes an AWS account connection that's not allowed in your project. For more information, see [Configuring project-restricted account connections](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-accounts-restriction.html) in the *Amazon CodeCatalyst Administrator Guide*.
 
 For more information, see [ Managing Amazon Virtual Private Clouds](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-vpcs.html) in the *CodeCatalyst Administrator Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

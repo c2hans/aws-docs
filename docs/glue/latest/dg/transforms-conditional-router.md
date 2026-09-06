@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-conditional-ro
 ![The screenshot shows the conditional router transform tab with the filter condition fields for key, operation and value.](http://docs.aws.amazon.com/glue/latest/dg/images/transform-conditional-router-filter-condition.png)
 
 1.  Enter the value in the **Value** field. To add additional filter conditions, choose **Add condition**. To remove filter conditions, choose the trash can icon.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

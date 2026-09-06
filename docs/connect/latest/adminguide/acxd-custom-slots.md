@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-custom-sl
 
 Custom slots define structured values your application can capture during a conversation.
 
-In Agentic CX Designer, slots help collect information from users so a flow can continue with the right data. A custom slot is a slot type you create for values specific to your business, such as room types, product sizes, support categories, appointment reasons, or yes/no choices.
+In agentic CX designer, slots help collect information from users so a flow can continue with the right data. A custom slot is a slot type you create for values specific to your business, such as room types, product sizes, support categories, appointment reasons, or yes/no choices.
 
 For example, if a user says "I'd like a large," the application can capture "large" as the selected value for a custom Size slot.
 
@@ -19,7 +19,7 @@ Custom slots are especially useful with User choice nodes or agent nodes because
 
 Use custom slots for business-specific values that you define.
 
-Use built-in slots for common input types that Agentic CX Designer already supports, such as:
+Use built-in slots for common input types that agentic CX designer already supports, such as:
 + Date
 + Time
 + Email
@@ -180,7 +180,3 @@ Use this setting for values that may include:
 + Any value your organization treats as confidential
 
 Only mark a slot as non-sensitive when the captured value is safe to store and review in conversation transcripts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

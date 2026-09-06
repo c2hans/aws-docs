@@ -100,7 +100,3 @@ Template variables are placeholders in the message content that are replaced wit
 You can set a default template on a Notify configuration. When you send a message without specifying a template ID, the default template is used. If no default template is set and no template ID is provided in the send request, the request fails.
 
 To set or change the default template, see [Managing Notify configurations](notify-configurations.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

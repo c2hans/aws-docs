@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/applying-security-pra
 1.  The customer-owned on-premises HSM can be used to generate cryptographic keys for importing to AWS KMS and securing an on-premises network, or for equipment purposes.
 
 1.  Given the DU functions are typically deployed at the very far edge of the telco network with limited security monitoring (for example, unmanned cell sites), additional security measures (such as disk encryption, secure boot, and so on) should be considered to protect against physical equipment theft or tampering.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -62,7 +62,3 @@ If you currently use the Docker-based data retention bot, you can migrate to the
 1. Remove Docker bot infrastructure.
 
  If you need to revert to Docker method, you cannot re-enable a disabled Docker bot device, however, you can deploy a new Docker bot following the traditonal setup. Once the new docker bot is deployed, it will start capturing messages going forward. Previous messages will remain in your existing storage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

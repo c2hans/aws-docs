@@ -69,7 +69,3 @@ The following are the service endpoints and service quotas for this service.
 | Targets per target group | Each supported Region: 1,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/vpc-lattice/quotas/L-D71303F3)  | The maximum number of targets that you can associate with a single target group. For additional capacity and limit increases, contact AWS Support. |
 | VPC associations per service network | Each supported Region: 500 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/vpc-lattice/quotas/L-EF6E2D62)  | The maximum number of VPCs that you can associate with a single service network. For additional capacity and limit increases, contact AWS Support. |
 | VPC endpoints of type service network per service network | Each supported Region: 200 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/vpc-lattice/quotas/L-89DEA27F)  | The maximum number of service network endpoints associated with a service network. For additional capacity and limit increases, contact AWS Support. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

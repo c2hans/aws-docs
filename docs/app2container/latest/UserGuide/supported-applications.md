@@ -97,7 +97,3 @@ App2Container does not support applications running on Windows client operating 
 **Unsupported applications**
 + ASP.NET applications that use files and registries outside of IIS web application directories
 + ASP.NET applications that depend on features of a Windows operating system version prior to Windows Server Core 2016
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App2Container. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app2container` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

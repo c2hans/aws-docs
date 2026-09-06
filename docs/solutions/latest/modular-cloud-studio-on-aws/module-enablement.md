@@ -109,7 +109,3 @@ The Disable Module API does the following:
 1. If the previous step is successful, updates the `active_dependents` attribute on module dependencies and updates module status to `DISABLED` in the [Enabled Modules DynamoDB table](dynamodb-tables.md#enabled-modules). If unsuccessful, updates status to `DISABLE FAILED` and doesn’t update `active_dependents` on module dependencies.
 
 1. Updates module status to `REGISTERED` in the [Registered Modules DynamoDB table](dynamodb-tables.md#registered-modules).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

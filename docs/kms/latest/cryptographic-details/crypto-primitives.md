@@ -53,7 +53,3 @@ The recipient, with access to *k*, can open the enveloped message by first decry
 AWS KMS provides the ability to manage these longer-term static keys and automate the process of envelope encryption of your data.
 
 In addition to the encryption capabilities provided within the AWS KMS service, the [AWS Encryption SDK](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/introduction.html) provides client-side envelope encryption libraries. You can use these libraries to protect your data and the encryption keys that are used to encrypt that data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

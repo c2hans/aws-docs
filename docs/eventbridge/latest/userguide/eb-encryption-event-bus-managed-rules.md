@@ -12,7 +12,3 @@ In these cases, once a custom or partner event matches against the managed rule,
 ![An event that matches a managed rule, encrypted using the key of the rule target.](http://docs.aws.amazon.com/eventbridge/latest/userguide/images/cmkms-bus-managed-rule_eventbridge_conceptual.svg)
 
 For cases where the rule target is an event bus in another Region, you must provide a [multi-Region key](https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-keys-overview.html). The event bus in the first Region encrypts the event using the customer managed key specified in the managed rule. It then sends the event to the target event bus in the second Region. That event bus must be able to continue to use the customer managed key until it sends the event to its target.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

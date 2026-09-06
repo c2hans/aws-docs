@@ -49,7 +49,3 @@ Using Managed device farms can help you to streamline the testing process for ne
 + [AWS Device Farm Sample App for Android ](https://github.com/aws-samples/aws-device-farm-sample-app-for-android)
 + [AWS Device Farm Sample App for iOS ](https://github.com/aws-samples/aws-device-farm-sample-app-for-ios)
 + [ Appium Web tests for AWS Device Farm](https://github.com/aws-samples/aws-device-farm-sample-web-app-using-appium-python)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

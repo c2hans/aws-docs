@@ -25,7 +25,3 @@ In addition to the preceding options, you can query and retrieve findings data d
 + [Monitoring findings with AWS User Notifications](findings-monitor-events-uno.md)
 + [Evaluating findings with AWS Security Hub CSPM](securityhub-integration.md)
 + [Amazon EventBridge event schema for findings](findings-publish-event-schemas.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

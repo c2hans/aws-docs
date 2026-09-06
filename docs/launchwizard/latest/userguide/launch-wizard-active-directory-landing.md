@@ -128,7 +128,3 @@ If you have an existing environment that uses these resources and you think that
 <a name="launch-wizard-ad-related-services-secrets-manager"></a>
 
 With [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/) you can replace hard-coded credentials in your code, including passwords, with an API call to Secrets Manager to programmatically retrieve the secret. This helps ensure the secret can't be compromised by someone examining your code. Also, you can configure Secrets Manager to automatically rotate the secret for you according to a specified schedule. Launch Wizard uses Secrets Manager to join your domain controllers to Active Directory and promote them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

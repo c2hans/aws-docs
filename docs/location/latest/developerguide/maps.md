@@ -69,7 +69,3 @@ Timely and accurate location information is critical during crises. Use mapping 
 | Rendering Dynamic Map | Amazon Location Service recommends rendering maps using the [MapLibre](https://github.com/maplibre/maplibre-gl-js) rendering engine. MapLibre is an engine for displaying maps in web or mobile applications. | [Map Rendering SDK by language](map-rendering-by-language.md) |
 | Customizing Static Map | How to customize static maps generated using Amazon Location Service. | [Customize static maps](customizing-static-maps.md) |
 | Overlaying Static Map | Overlay on your static maps to enhance the map's visual representation. | [Overlay on the static map](overlaying-static-map.md) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

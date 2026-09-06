@@ -76,7 +76,3 @@ You can review all the `pg_columnmask` policy using the publicly accessible `pgc
 | masked\_columns | TEXT[] | Masked columns |
 | masking\_functions | TEXT[] | Masking functions |
 | weight | INT | Weight of the attached policy |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

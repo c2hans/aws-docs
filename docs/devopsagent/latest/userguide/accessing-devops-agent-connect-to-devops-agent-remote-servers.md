@@ -402,7 +402,3 @@ To prevent users in your organization from enabling access tokens, create a Serv
 | HTTP 400 "Agent space not resolved from credentials" | An A2A \+ SigV4 request does not include the X-Agent-Space-Id header. | Add X-Agent-Space-Id: <agentSpaceId> to the request. |
 | Request timeout | Initial responses take 5–30 seconds. Investigations take 5–8 minutes. | Set client timeout to at least 120 seconds. |
 | Connection refused | Incorrect endpoint URL or Region. | Verify the URL format: https://connect.aidevops.{region}.api.aws |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

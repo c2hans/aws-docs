@@ -166,7 +166,3 @@ If your app's steps take more than 500 milliseconds to complete, you need to tra
 Amazon AppStream lets you deliver your Windows applications to any device.
 Amazon AppStream enables you to stream your existing Windows applications from the cloud, reaching more users on more devices, without code modifications. With Amazon AppStream, your application is deployed and rendered on AWS infrastructure and the output is streamed to mass-market devices, such as personal computers, tablets, and mobile phones. Because your application is running in the cloud, it can scale to handle vast computational and storage needs, regardless of the devices your customers are using. Amazon AppStream provides an SDK for streaming your application from the cloud. You can integrate your own custom clients, subscriptions, identity, and storage solution with Amazon AppStream to build a custom streaming solution that meets the needs of your business.
 [Learn more about Amazon AppStream](https://aws.amazon.com/appstream/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

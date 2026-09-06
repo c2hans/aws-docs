@@ -240,7 +240,3 @@ For a list of other important JSON keys to configure, see [ServiceNow template s
 
 To learn more about integrating Amazon Kendra with your ServiceNow data source, see:
 + [Getting started with Amazon KendraAnnouncing the updated ServiceNow connector (V2) for Amazon Kendra](https://aws.amazon.com/blogs/machine-learning/announcing-the-updated-servicenow-connector-v2-for-amazon-kendra/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

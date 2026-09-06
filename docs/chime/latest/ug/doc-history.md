@@ -37,7 +37,3 @@ The following table describes important changes to the *Amazon Chime User Guide*
 | [Amazon Chime web application video support in Chrome](#doc-history) | Video support is available for the Amazon Chime web application in Google Chrome. For more information, see [Browser requirements](https://docs.aws.amazon.com/chime/latest/ug/chime-requirements.html#browser) in the Amazon Chime User Guide. | July 31, 2018 |
 | [Amazon Chime web application](#doc-history) | The Amazon Chime web application is available. For more information, see [Using the Amazon Chime Web App](https://docs.aws.amazon.com/chime/latest/ug/chime-web-app.html) in the Amazon Chime User Guide. | May 17, 2018 |
 | [Amazon Chime Assistant](#doc-history) | The Amazon Chime Assistant is available. For more information, see [Using the Amazon Chime Assistant](https://docs.aws.amazon.com/chime/latest/ug/chime-using-assistant.html) in the Amazon Chime User Guide. | April 23, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

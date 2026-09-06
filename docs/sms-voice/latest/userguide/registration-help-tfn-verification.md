@@ -121,7 +121,3 @@ Enter: `DEPARTMENT OF DEFENSE DEFENSE HEALTH AGENCY`
 <a name="registration-help-tfn-verification-government-contractors"></a>
 
 If a government program is operated by a private contractor, use the **government agency's** EIN and legal name on the registration form, not the contractor's. The registration must identify the entity on whose behalf messages are sent.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

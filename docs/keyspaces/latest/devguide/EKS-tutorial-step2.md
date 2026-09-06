@@ -91,7 +91,3 @@ In this step you build your application that connects to Amazon Keyspaces using 
    ```
 **Note**
 The `debug` level is needed to investigate connection failures. After you have successfully connected to Amazon Keyspaces from your application, you can change the logging level to `info` or `warning` as needed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

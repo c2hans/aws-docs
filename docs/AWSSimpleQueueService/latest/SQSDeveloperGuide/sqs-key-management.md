@@ -254,7 +254,3 @@ When you work with Amazon SQS and AWS KMS, you might encounter errors. The follo
 + [ Common AWS KMS errors](https://docs.aws.amazon.com/kms/latest/APIReference/CommonErrors.html)
 + [AWS KMS Decrypt errors](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html#API_Decrypt_Errors)
 + [AWS KMS GenerateDataKey errors](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html#API_GenerateDataKey_Errors)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -300,7 +300,3 @@ After running your first IDE security scan:
 + Configure security requirements for organization-specific policy validation (see [Manage security requirements](security-requirements.md))
 + Run periodic full scans to catch issues across your entire codebase (see [Create a code review](perform-code-review-scan.md))
 + Use threat model reviews on new feature specs before implementation
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

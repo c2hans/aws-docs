@@ -14,7 +14,3 @@ Here's how to determine if you need to optimize your rule set for large matches:
 1. Add up all the *maxPlayer* values. If the total exceeds 40, you've got a large match rule set.
 
 To optimize your rule set for large matches, make the adjustments described as follows. See the schema for a large match rule set in [Rule set schema for large matches](match-ruleset-schema-large.md) and rule set examples in [Example: Create a large match](match-examples-7.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ This new integration eliminates the need for your application to make Systems Ma
 This feature is available in all commercial AWS Regions where Elastic Beanstalk is available, including AWS GovCloud (US) Regions.
 
 For more information, see [Using Elastic Beanstalk with Secrets Manager and Systems Manager Parameter Store](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.secrets.html) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

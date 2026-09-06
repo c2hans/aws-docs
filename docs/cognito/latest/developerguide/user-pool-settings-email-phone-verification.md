@@ -81,7 +81,3 @@ To require attribute update verification with the Amazon Cognito API, you can se
 <a name="user-pool-settings-verifications-iam-role-for-sms"></a>
 
 To send SMS messages to your users on your behalf, Amazon Cognito needs your permission. To grant that permission, you can create an AWS Identity and Access Management (IAM) role. In the **Authentication methods** menu of the Amazon Cognito console under SMS, choose **Edit** to set a role.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

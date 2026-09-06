@@ -64,7 +64,3 @@ Backup gateway comes with its own API which is separately maintained from the AW
 <a name="backup-gateway-endpoints"></a>
 
 Existing users who currently use a public endpoint and who wish to switch to a VPC (Virtual Private Cloud) endpoint can [ create a new gateway with a VPC endpoint](https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-gateways.html#create-gateway) using [AWS PrivateLink](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-network.html#backup-privatelink), associate the existing hypervisor to the gateway, and then [ delete the gateway](https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-gateways.html#edit-gateway) containing the public endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

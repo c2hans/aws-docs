@@ -53,7 +53,3 @@ A chaos experiment is an investment by your business to prevent incidents in pro
 **Systems development process**
 
 Chaos engineering and chaos experiments should be performed repeatedly as part of an application's lifecycle. Similar to how teams regularly perform disaster recovery tests, they should conduct chaos experiments and game days continuously and periodically throughout the year. This approach improves how an organization anticipates, observes, and responds to incidents.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

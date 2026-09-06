@@ -25,7 +25,3 @@ Key characteristics:
 + **Consistent latency** – Consistent sub-millisecond network roundtrip latency between Amazon EC2 instances and Oracle Database@AWS databases.
 + **Compatible with existing Amazon EC2 workflows** – Works with standard Amazon EC2 APIs, the AWS Management Console, and supports Amazon EC2 On-Demand Capacity Reservations (ODCR), Savings Plans, and Reserved Instances. Also compatible with Amazon Elastic Container Service (Amazon ECS) and Amazon Elastic Kubernetes Service (Amazon EKS) when using launch templates with Auto Scaling groups.
 + **No additional cost** – High performance networking is available at no extra charge. Standard Amazon EC2 usage charges apply for launched instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

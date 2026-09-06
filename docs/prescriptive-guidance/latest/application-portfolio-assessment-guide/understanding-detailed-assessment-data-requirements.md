@@ -71,7 +71,3 @@ The tables use the following abbreviations:
 | Target AWS requirements | For example, instance types, account, subnets, security groups, routing | R | R | High |
 | Migration strategy, patterns, and tools | For example, one of the 6 Rs for migration, specific technical pattern, migration tooling | R | O |  <br />High |
 | Risks and issues | Known risks and issues | R | O | Medium-high |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

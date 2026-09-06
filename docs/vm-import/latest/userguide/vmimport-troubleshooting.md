@@ -191,7 +191,3 @@ Linux VMs can be imported to specific instance types. Try again using one of the
 VM Import/Export might fail for images where files are relative symbolic links that point to a different partition. During import or export, the service analyzes disk partitions independently, so it cannot follow relative symbolic links that cross partition boundaries.
 A common example is Rocky Linux 8 in UEFI mode, where `/boot/grub2/grubenv` is a symbolic link to a file on the EFI System Partition. However, any relative symbolic link that references a file on a different partition can cause this issue.
 To resolve this issue, replace any affected relative symbolic links with a copy of the file they reference. After making the change, recreate the disk image or AMI and retry the operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vm-import` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

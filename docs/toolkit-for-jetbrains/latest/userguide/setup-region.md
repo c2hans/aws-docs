@@ -32,7 +32,3 @@ To change your current AWS Region complete the following steps.
 1. Choose the AWS Region you want to connect to, from the list.
 **Note**
 If you don't see the region you want to connect to, choose **All Regions** to open a complete list of all AWS regions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

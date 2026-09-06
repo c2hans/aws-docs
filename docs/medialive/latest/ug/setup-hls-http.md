@@ -32,7 +32,3 @@ Obtain the following information from the operator at the upstream system:
 | --- | --- |
 | Format of URL | s3ssl://<bucket>/<path>/<file>.m3u8 |
 | Example | `s3ssl://amzn-s3-demo-bucket/movies/main/mlaw.m3u8` and <br />`s3ssl://amzn-s3-demo-bucket1/movies/redundant/mlaw.m3u8` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ Enforce stringent controls on data through its entire lifecycle to ensure reside
 + [[AG.DLM.6] Centralize shared data to enhance governance](ag.dlm.6-centralize-shared-data-to-enhance-governance.md)
 + [[AG.DLM.7] Ensure data safety with automated backup processes](ag.dlm.7-ensure-data-safety-with-automated-backup-processes.md)
 + [[AG.DLM.8] Improve traceability with data provenance tracking](ag.dlm.8-improve-traceability-with-data-provenance-tracking.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

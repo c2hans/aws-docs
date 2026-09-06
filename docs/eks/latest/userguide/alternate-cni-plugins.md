@@ -37,7 +37,3 @@ If you use Calico network policy enforcement, we recommend that you set the envi
 <a name="_considerations_for_amazon_eks_auto_mode"></a>
 
 Amazon EKS Auto Mode does not support alternate CNI plugins or network policy plugins. For more information, see [Automate cluster infrastructure with EKS Auto Mode](automode.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

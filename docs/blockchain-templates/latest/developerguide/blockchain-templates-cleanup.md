@@ -24,7 +24,3 @@ You may choose to delete the prerequisites you created for the Ethereum network.
 
 **Terminate the EC2 instance for the bastion host**
 + Open the Amazon EC2 dashboard, choose **Running instances**, select the EC2 instance that you created for the bastion host, choose **Actions**, **Instance State**, **Terminate**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Blockchain Templates. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query blockchain-templates` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

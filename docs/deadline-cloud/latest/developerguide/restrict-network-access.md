@@ -95,7 +95,3 @@ Your workers share the queue role with your people. A worker uses queue role cre
 Service-managed fleet workers run on the AWS network, so their addresses aren't in your ranges and their requests don't come through your endpoints. A network condition on the queue role, the fleet role, or the bucket policy of the job attachments bucket denies those requests. Jobs then fail. A bucket policy condition works only if all of your fleets are customer-managed and run in your VPC. In that case, list both your workstation endpoint and your fleet endpoint in an `aws:SourceVpce` condition.
 
 Queue role credentials carry no network condition of their own. Someone who obtains them from an address that you allow can use them from anywhere until they expire. The condition on the monitor role controls who gets credentials, rather than every request that uses them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

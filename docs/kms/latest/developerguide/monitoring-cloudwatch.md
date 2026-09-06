@@ -211,7 +211,3 @@ Slow responses might also indicate that your external key manager cannot handle 
 | KeySpec | Value for each type of KMS key. The only supported [key spec](create-keys.md#key-spec) for KMS keys in an external key store is SYMMETRIC\_DEFAULT. |
 
 You can create CloudWatch alarms based on the metrics for external key stores and KMS keys in external key stores. For instructions, see [Monitor external key stores](xks-monitoring.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

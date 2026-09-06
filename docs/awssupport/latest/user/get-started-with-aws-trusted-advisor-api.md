@@ -27,7 +27,3 @@ The AWS Trusted Advisor API Reference is intended for programmers that need deta
  For more information, [see AWS Trusted Advisor in the AWS Support User Guide.](https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html)
 
  For authentication of requests, [see the Signature Version 4 Signing Process.](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

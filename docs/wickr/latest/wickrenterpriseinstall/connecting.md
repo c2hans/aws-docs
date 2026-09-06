@@ -56,7 +56,3 @@ kubectl get nodes
    ip-10-0-180-1.ec2.internal     Ready     none   2d23h   v1.26.4-eks-0a21954
    ip-10-0-200-102.ec2.internal   Ready     none   3d      v1.26.4-eks-0a21954
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

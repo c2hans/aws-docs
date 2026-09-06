@@ -41,7 +41,7 @@ In the [Amazon GameLift Servers console](https://console.aws.amazon.com/gamelift
 
       You must create the role before you create a fleet that uses it. In addition, to create a fleet with an instance role, your AWS user must have IAM `PassRole` permission (see [IAM permission examples for Amazon GameLift Servers](gamelift-iam-policy-examples.md)).
 
-   1. Turn on the **Generate a TLS certificate** option to set up authentication and encryption for your game. Game clients use this certificate to authenticate a game server when connecting and encrypt all client/server communication. For each instance in a TLS-enabled fleet. Amazon GameLift Servers also creates a new DNS entry with the certificate. This setting can't be changed after you create the fleet.
+   1. Turn on the **Generate a TLS certificate** option to set up authentication and encryption for your game. Game clients use this certificate to authenticate a game server when connecting and encrypt all client/server communication. For each instance in a TLS-enabled fleet, Amazon GameLift Servers also creates a new DNS entry with the certificate. This setting can't be changed after you create the fleet.
 
    1. Amazon GameLift Servers emits metric data for each individual fleet. If you want to combine metric data for multiple fleets, specify a **Metric group** name. Use the same metric group name for all fleets that you want to combine metrics for. Use CloudWatch to view the aggregated metric group data.
 
@@ -101,7 +101,7 @@ In this step, describe how you want each instance in the fleet to run your game 
 
    1. Set the **New activation timeout** to reflect the maximum amount of time a new game session should take to complete activation and report ready to host players. Amazon GameLift Servers terminates a game session activation if it exceeds this value.
 
-1. Open **EC2 port settings** to allow inbound traffic to access server processes on the fleet. These settings aren't required to create a fleet, but you do need set them before players can connect to game sessions on the fleet.
+1. Open **EC2 port settings** to allow inbound traffic to access server processes on the fleet. These settings aren't required to create a fleet, but you do need to set them before players can connect to game sessions on the fleet.
 
    For each port setting, choose the **Type** of data transfer protocol to use for communication between your game client and game server. Provide a **Port range** (in format `nnnnn[-nnnnn]`) and an **IP address range ** using CIDR notation (such as **0.0.0.0/0** which allows access to anyone).
 
@@ -121,7 +121,7 @@ Review your settings before creating the fleet. Although some settings can be up
 + Game server binary: To deploy an update to your game server build, you must create a new fleet.
 + Additional options, including instance role and TLS certificate generation.
 + Instance details, including fleet type (Spot or On-Demand) and EC2 instance type.
-When you're ready to deploy the new fleet, choose **Create**. Amazon GameLift Servers immediately begins the fleet activation process, assigning a unique ID and placing the fleet in `NEW` status. Track the fleet's progress from the **Fleets** page.View the details page for the fleet and go to the **Events** tab.
+When you're ready to deploy the new fleet, choose **Create**. Amazon GameLift Servers immediately begins the fleet activation process, assigning a unique ID and placing the fleet in `NEW` status. Track the fleet's progress from the **Fleets** page. View the details page for the fleet and go to the **Events** tab.
 You can adjust a fleet's hosting capacity after the fleet reaches ACTIVE status. Amazon GameLift Servers initially deploys a fleet with a single instance in each fleet location, and you adjust capacity by adding instances to each location. For more information, see [Scaling game hosting capacity with Amazon GameLift Servers](fleets-manage-capacity.md).
 
 ------
@@ -203,7 +203,3 @@ You can change the fleet's capacity and other configuration settings as needed u
 + [delete-fleet-locations](https://docs.aws.amazon.com/cli/latest/reference/gamelift/delete-fleet-locations.html)
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

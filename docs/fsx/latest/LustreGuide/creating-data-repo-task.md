@@ -11,7 +11,3 @@ You can create three types of data repository tasks:
 + The **Export** data repository task exports from your Lustre file system to a linked S3 bucket. For more information, see [Using data repository tasks to export changes](export-data-repo-task-dra.md).
 + The **Import** data repository task imports from a linked S3 bucket to your Lustre file system. For more information, see [Using data repository tasks to import changes](import-data-repo-task-dra.md).
 + The **Release** data repository task releases files from your Lustre file system that have been exported to a linked S3 bucket. For more information, see [Using data repository tasks to release files](release-files-task.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

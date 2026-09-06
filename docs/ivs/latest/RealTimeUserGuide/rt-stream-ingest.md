@@ -42,7 +42,3 @@ IVS real-time streaming supports several ingest protocols:
 
     Note: For single-track RTMP streams, this limit applies to that track. For multitrack video published using Enhanced RTMP, the limit applies to the combined bitrate of all video tracks.
   + Encoder configuration: We recommend using `veryfast` and `zerolatency` settings for an H.264 encoder. Also: the `sliced_threads` x264 option is included in the `zerolatency` presets, and we recommend that you disable it. For example, when using FFmpeg, your command should include: `-preset:v veryfast -tune zerolatency -x264-params sliced-threads=0`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

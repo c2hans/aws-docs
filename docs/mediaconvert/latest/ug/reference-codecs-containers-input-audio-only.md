@@ -21,7 +21,3 @@ Some containers and codecs have additional restrictions. For more information ab
 | [OGG](supported-containers-codecs-details.md#container-ogg), [OGA](supported-containers-codecs-details.md#container-ogg) | [FLAC](supported-containers-codecs-details.md#codec-flac)<br />[Opus](supported-containers-codecs-details.md#codec-opus-vorbis)<br />[Vorbis](supported-containers-codecs-details.md#codec-opus-vorbis) |
 | [WAV](supported-containers-codecs-details.md#container-wav) | [GSM](supported-containers-codecs-details.md#codec-gsm)<br />[PCM](supported-containers-codecs-details.md#codec-pcm) |
 | [No container](supported-containers-codecs-details.md#container-none) | [AAC](supported-containers-codecs-details.md#codec-aac)<br />[Dolby Digital (AC3)](supported-containers-codecs-details.md#codec-ac3)<br />[Dolby Digital Plus (EAC3)](supported-containers-codecs-details.md#codec-eac3) <br />[FLAC](supported-containers-codecs-details.md#codec-flac)<br />[GSM](supported-containers-codecs-details.md#codec-gsm)<br />[PCM](supported-containers-codecs-details.md#codec-pcm) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

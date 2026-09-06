@@ -165,7 +165,3 @@ Use tags to organize your AWS bill to reflect your own cost structure. To do thi
 
 **Note**
 When you [increase storage capacity](managing-storage-configuration.md#managing-storage-capacity), the process of migrating data from the old set of storage disks to the new, larger set of storage disks can result in a temporary increase in backup usage until backups associated with the old set of storage disks are deleted. If your file system’s storage was only partially used before you increase storage capacity, the size of data that needs to be migrated to the new disks may be larger than the size of data that exists on the original storage disks. This may cause an increase in backup usage up to the new storage capacity level. You should consider the impact of increasing storage capacity on your backup planning.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

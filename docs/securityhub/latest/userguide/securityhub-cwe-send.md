@@ -38,7 +38,3 @@ For AWS API calls to be effective, the implementations of target code must switc
 1. Select the insight results to send to EventBridge. You can select up to 20 results at a time.
 
 1. From **Actions**, choose the custom action that aligns with the EventBridge rule to apply.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -282,7 +282,3 @@ Use Mixins to add a feature to specific constructs. Use Aspects to enforce rules
 +  [Aspects](aspects.md) – Apply changes or validate constructs across your entire application.
 +  [Constructs](constructs.md) – Learn about L1, L2, and L3 constructs.
 +  [Customize constructs](cfn-layer.md) – Customize constructs with escape hatches and raw overrides.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

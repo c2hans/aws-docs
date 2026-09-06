@@ -12,7 +12,3 @@ Change types are versioned and the version changes when a major update is made t
 After selecting a change type using the AMS console, you have the option of opening the **Additional configuration** area and selecting a change type version. You can also specify a change type version at the API/CLI command line. You might want to do this for various reasons, including:
 + You know that the version of the **Update** change type that you want must match the version of the **Create** change type that you used to create the resource that you now want to update. For example, you might have an Elastic Load Balancer (ELB) instance that you created with ELB Create change type version 1. To update it, choose ELB Update version 1.
 + You want to use a change type version that has different options in it than the most recent change type. We don't recommend this because AMS updates change types mainly for security reasons and we recommend that you always choose the most recent version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

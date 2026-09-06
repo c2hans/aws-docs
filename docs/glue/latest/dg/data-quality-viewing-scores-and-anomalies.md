@@ -69,7 +69,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-viewing-scor
 1.  You can select anomalous values and choose to exclude or include them. By providing this feedback, the algorithm will either exclude or include the identified anomalous data points and retrain the model. This retraining process ensures accurate anomaly detection moving forward, as the model learns from the feedback you've provided about which values should be considered anomalous or not.
 
     Through this feedback loop, you have the ability to refine the algorithm's understanding of what constitutes an anomaly for your specific data patterns and business requirements. By excluding values that should not be flagged as anomalies, or including values that were missed, the retrained model will become better at differentiating between expected and truly anomalous data points.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 <a name="maops03-bp05"></a>
 
  Use AWS Backup to create backup plans that define how to back up your AWS resources. The rules in the plan include a variety of settings, such as backup frequency, the time window during which the backup occurs, the AWS Region containing the resources to back up, and the vault in which to store the backup.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

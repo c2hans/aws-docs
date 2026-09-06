@@ -32,7 +32,7 @@ Each container group in a container fleet has one container that's designated "e
 The container is the most basic element of a container-based architecture. It includes a container image with software executables and dependent files. Define a container to configure how the software runs and interacts with Amazon GameLift Servers.
 Amazon GameLift Servers defines two types of containers:
 + A **game server container** includes everything you need to run your game server processes and host game sessions for players. It includes your game server build and dependent software. Define one game server container for a fleet's game server container group. The game server container is automatically considered essential to the container group.
-+ A **support container** runs additional software to support your game server. It is similar to the concept of a "sidecar" container. It gives you the option to run and scale supporting software alongside your game servers but manage as separate containers. In a game server container group, you can define zero or more support containers. In a per-instance container group, all containers are support containers. Any support container can be designated essential.
++ A **support container** runs additional software to support your game server. It is similar to the concept of a "sidecar" container. It gives you the option to run and scale supporting software alongside your game servers but manage them as separate containers. In a game server container group, you can define zero or more support containers. In a per-instance container group, all containers are support containers. Any support container can be designated essential.
 
 **Compute**
 A compute represents a copy of a game server container group on a fleet instance.
@@ -44,7 +44,7 @@ The following diagram illustrates the simplest container fleet structure. In thi
 
 ![An example of a simple container architecture, with a single game server container in the game server container group.](http://docs.aws.amazon.com/gameliftservers/latest/developerguide/images/container_architecture_simple.png)
 
-This second diagram illustrates a more complex container fleet architecture. In this structure, the fleet has a both a game server container group and a per-instance container group. The game server container group has separate containers for the game server process and a support process. The fleet is configured to place three copies of the game server container group on each fleet instance. The per-instance container group is never replicated. In this example, the container fleet is configured to place three copies of the game server container group per instance. With this architecture, each instance runs three game server process.
+This second diagram illustrates a more complex container fleet architecture. In this structure, the fleet has both a game server container group and a per-instance container group. The game server container group has separate containers for the game server process and a support process. The fleet is configured to place three copies of the game server container group on each fleet instance. The per-instance container group is never replicated. In this example, the container fleet is configured to place three copies of the game server container group per instance. With this architecture, each instance runs three game server processes.
 
 ![An example of a container architecture with multiple containers in the game server container group and one container in the per-instance container group.](http://docs.aws.amazon.com/gameliftservers/latest/developerguide/images/container_architecture_complex.png)
 
@@ -112,7 +112,7 @@ The following diagram illustrates the role of port connections across a containe
 <a name="containers-howitworks-concepts-logging"></a>
 
 In managed container fleets, the standard output (and standard error) streams are captured for all containers. This includes your game server's game session logs. You can configure a container fleet to use one of several options to handle output streams:
-+ Save container output as an Amazon CloudWatch log stream. Each log stream references the fleet ID and container. If you choose this logging option for the fleet, you specify a CloudWatch log group, which organizes all the log streams from the fleet. You can then use CloudWatch features to search and analyse log data as needed.
++ Save container output as an Amazon CloudWatch log stream. Each log stream references the fleet ID and container. If you choose this logging option for the fleet, you specify a CloudWatch log group, which organizes all the log streams from the fleet. You can then use CloudWatch features to search and analyze log data as needed.
 + Save container output to an Amazon Simple Storage Service (Amazon S3) storage bucket. You can view, share, or download the content as needed.
 + Turn off logging. In this scenario, container output isn't saved.
 
@@ -130,7 +130,3 @@ If you opt to build a container architecture that runs multiple game server proc
 You can choose to use the Amazon GameLift Servers Agent for these tasks. For a container fleet, the Agent implements runtime instructions that specify which executables to run (and how many), provide launch parameters, and set rules around game server activation. For example, runtime instructions might tell the Agent to maintain ten game server processes for production use, and one game server process with special launch parameters for testing.
 
 To use the Agent with your container fleets, add the Agent to your container image and include a set of runtime instructions. For more information about the Agent, see [Work with the Amazon GameLift Servers Agent](integration-dev-iteration-agent.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

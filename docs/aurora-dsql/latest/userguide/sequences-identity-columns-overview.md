@@ -60,7 +60,3 @@ The clauses `ALWAYS` and `BY DEFAULT` in the column definition determine how exp
 The data type of an identity column must be one of the data types supported by sequences. (See [`CREATE SEQUENCE`](create-sequence-syntax-support.md).) The properties of the associated sequence might be specified when creating an identity column (see [`CREATE TABLE`](create-table-syntax-support.md)) or changed afterwards (see [`ALTER TABLE`](alter-table-syntax-support.md)).
 
 An identity column is automatically marked as `NOT NULL`. An identity column, however, doesn't guarantee uniqueness. (A sequence normally returns unique values, but a sequence could be reset, or values could be inserted manually into the identity column, as discussed previously.) Uniqueness would need to be enforced using a `PRIMARY KEY` or `UNIQUE` constraint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

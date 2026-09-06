@@ -79,7 +79,3 @@ The IVR system implements the following steps:
 1. The customer contact data is also stored in an Amazon S3 bucket as part of Connect Customer contact records, and can be used to generate custom reports by using Amazon Quick.
 
 For information about how this design was used in a real-world scenario, see the re:Invent 2020 presentation [How Best Western built a modular and dynamic contact center using Connect Customer](https://youtu.be/qnIXMh203vc).  For sample code, see the [Dynamic Contact Center project](https://github.com/amazon-connect/amazon-connect-snippets/tree/master/projects/DynamicContactCenter) in GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

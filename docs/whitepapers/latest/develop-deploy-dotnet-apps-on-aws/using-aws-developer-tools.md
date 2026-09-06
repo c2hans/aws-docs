@@ -60,7 +60,3 @@ Each of the previously discussed developer tools can be used individually or in 
 [AWS CodePipeline](https://aws.amazon.com/codepipeline/) is an orchestration service that enables you to model the different stages of your software release process. It can be integrated with other AWS developer tools for building, testing and deploying your software versions. It can also easily be extended to adapt to your specific needs. You can use its pre-built plugins or your own custom plugins in any step of your release process.
 
 For example, you can pull your source code from GitHub, use your on-premises [Jenkins](https://www.jenkins.io/) build server, run load tests using a third-party service, or pass on deployment information to your custom operations dashboard.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

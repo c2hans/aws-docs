@@ -43,7 +43,3 @@ SageMaker notebook instances support R using a pre-installed R kernel. Also, the
 
 **Advanced Level**
 + [Train and Deploy Your Own R Algorithm in SageMaker AI](https://sagemaker-examples.readthedocs.io/en/latest/r_examples/r_byo_r_algo_hpo/tune_r_bring_your_own.html) – Do you already have an R algorithm, and you want to bring it into SageMaker AI to tune, train, or deploy it? This example walks you through how to customize SageMaker AI containers with custom R packages, all the way to using a hosted endpoint for inference on your R-origin model.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -395,7 +395,3 @@ The `max_parallel_job` parameter only serves as a rate limiting mechanism withou
 <a name="train-remote-decorator-invocation-api-future"></a>
 
 A future class is a public class that represents the return function from the training job when it is invoked asynchronously. The future class implements the [concurrent.futures.Future](https://docs.python.org/3/library/concurrent.futures.html) class. This class can be used to do operations on the underlying job and load data into memory.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

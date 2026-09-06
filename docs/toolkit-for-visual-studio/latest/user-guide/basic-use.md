@@ -15,7 +15,3 @@ When working with the publishing tools, wizards, and other features of the Toolk
 + If a new profile or region is specified in a publishing tool, wizard, or feature: all resources created afterwards will continue to use the new profile and region settings.
 + If you have multiple instances of Visual Studio open, each instance can be bound to a different profile and region.
 + The AWS Explorer saves the last profile and region that were specified and the very last Visual Studio instance closed will have its values persisted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

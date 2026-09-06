@@ -19,7 +19,3 @@ Starting with version 5.4.0, Babelfish now supports stored procedures sp\_xml\_p
 + Babelfish only supports XPATH 1.0 syntax for second argument (i.e. ROWPATTERN) of OPENXML().
 + The meta-properties and flag 8 are not currently not supported in OPENXML().
 + Babelfish only supports XPATH 1.0 syntax for first argument (i.e. XQuery) of VALUE() datatype method.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

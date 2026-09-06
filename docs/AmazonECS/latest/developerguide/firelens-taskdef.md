@@ -139,7 +139,3 @@ The following shows the syntax required when specifying a custom configuration.
 
 **Note**
 Tasks hosted on AWS Fargate only support the `file` configuration file type. However, you can use configuration files hosted in Amazon S3 on AWS Fargate by using the AWS for Fluent Bit init container. For more information, see [Init process for Fluent Bit on ECS, multi-config support](https://github.com/aws/aws-for-fluent-bit/blob/mainline/use_cases/init-process-for-fluent-bit/README.md) on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

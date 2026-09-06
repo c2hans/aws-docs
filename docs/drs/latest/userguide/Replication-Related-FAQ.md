@@ -149,7 +149,3 @@ ami-0c90e298af7a2e563 – Middle East (Bahrain)
 ami-0f7c14e62ef760768 – Middle East (UAE)
 ami-0edd5ecfc56804583 – South America (São Paulo)
 Ensure that the security groups are configured to permit connectivity on inbound port 1500.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

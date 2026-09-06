@@ -403,7 +403,3 @@ If the Grafana dashboard is empty and all panels show "No data," perform the fol
 | Metrics disabled in model | Update model configuration | Add `metrics: {enabled: true}` to model spec |
 | AMP workspace not configured | Fix data source connection | Verify AMP workspace ID in Grafana data sources |
 | Network connectivity | Check security groups/NACLs | Ensure pods can reach AMP endpoints |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,3 @@ If your ingestion job fails, check the issues above and make the appropriate adj
 
 **Important**
 This page is about troubleshooting the ingestion of *an entire job*. You can also read about [why some specific files don't get ingested](when-files-dont-get-ingested.md), and about [evaluating the data from specific sensors](reading-details-by-sensor.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

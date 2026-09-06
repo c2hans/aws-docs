@@ -93,7 +93,3 @@ The **Scheduling plan data** table shows one row per interval (15 or 30 minutes)
 The table also shows columns for each channel. These include the service level goal, projected service level, and projected value with shrinkage. For ASA or ATC targets, it shows projected values. For Task and Email, it shows projected backlog.
 
 To change the page size or show and hide channel columns (Voice, Chat, Email, Task), choose **Preferences**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ Direct Connect supports these port speeds over single-mode fiber: 1 Gbps: 1000BA
 <a name="load-balance-considerations"></a>
 
 If you want to use load balancing with multiple public VIFs, all the VIFs must be in the same Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

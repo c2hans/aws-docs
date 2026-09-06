@@ -120,7 +120,3 @@ aws identitystore delete-group-membership \
 + Commands are subject to [service quotas and API throttling](limits.md#ssothrottlelimits).
 + When you find many differences during reconciliation, make small, gradual changes to AWS Identity Store. This helps you avoid mistakes that affect multiple users.
 + SCIM synchronization can override your manual changes. Check your IdP settings to understand this behavior.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

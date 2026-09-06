@@ -24,7 +24,4 @@ AWS End User Messaging Social now supports Meta's Marketing Messages (MM) API fo
 **Topics**
 + [Example of sending a template message in AWS End User Messaging Social](send-message-text.md)
 + [Example of sending a media message in AWS End User Messaging Social](send-message-media.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ [Handling transient eligibility errors (WhatsApp error code 131042)](send-message-transient-errors.md)

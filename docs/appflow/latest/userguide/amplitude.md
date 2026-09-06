@@ -79,7 +79,3 @@ You can also set the destination to any custom connectors that you create with t
 <a name="amplitude-resources"></a>
 +  [Settings](https://help.amplitude.com/hc/en-us/articles/235649848#project-general-settings) in the Amplitude documentation
 +  [Breaking Data Silos with Amazon AppFlow and Amplitude](https://amplitude.com/blog/aws-appflow-amplitude-announcement) from *Inside Amplitude*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

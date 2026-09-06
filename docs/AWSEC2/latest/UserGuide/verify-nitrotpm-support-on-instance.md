@@ -47,7 +47,3 @@ Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/referenc
 
 1. Check the **TPM Manufacturer Information** field. It contains the manufacturer's name and the version of the NitroTPM on the instance.
 ![TPM Management window showing the TPM Manufacturer Information field with the NitroTPM version.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/tpm-1.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

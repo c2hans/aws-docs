@@ -22,7 +22,3 @@ The following diagram shows an overview of the process to find, subscribe, and d
 ![Diagram of how a buyer finds, buys and deploys a machine learning product.](http://docs.aws.amazon.com/marketplace/latest/buyerguide/images/buyer-ml-deploy-model.png)
 
 You pay only for your usage, with no minimum fees or upfront commitments. AWS Marketplace provides a consolidated bill for algorithms and model packages, and AWS infrastructure usage charges.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

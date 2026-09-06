@@ -64,7 +64,3 @@ This table shows the fields that apply for an action to prepare a dynamic file i
 | Date and time | If the Start type is Fixed, specify the date and time (in UTC format) that the channel must start to prepare this input. This time should be at least 10 seconds before the upcoming input switch.Note that the time is the wall clock time, not the timecode in the input. |
 | Reference action name | If the **Start type** is **Follow**, choose the input to follow. This input is the input whose end you want to use as the trigger for the input prepare. It is not the input for the upcoming input switch.<br />The dropdown list shows all existing input switches. If the input switch that you want to use as the reference (trigger) isn't listed, you need to first create that input switch. |
 | Follow point | If the Start type is Follow, complete this field. The follow point is always End, to indicate that the input prepare will occur when the input in Reference action name has finished. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -108,17 +108,17 @@ https://payments-gitops-4ce0b382-111122223333.eks-capabilities.us-west-2.amazona
 **Note**
 Use the `describe-capability` output to confirm the exact endpoint for your AWS Region.
 
-You can compute the {{hash}} component yourself. Use `sha256sum` on Linux or `shasum -a 256` on macOS:
+You can compute the {{hash}} component yourself. Use `sha256sum` on Linux or `shasum -a 256` on macOS. The following commands use the example capability `my-argocd` on cluster `my-cluster`. Substitute the exact names that you specified when you created the capability:
 
 ```
 # Linux
-printf '%s' "[.replaceable]my-argocd/{{my-cluster`" | sha256sum | cut -c1-8
+printf '%s' "my-argocd/my-cluster" | sha256sum | cut -c1-8
 
 # macOS
-printf '%s' "[.replaceable]`my-argocd}}/[.replaceable]`my-cluster`" | shasum -a 256 | cut -c1-8
+printf '%s' "my-argocd/my-cluster" | shasum -a 256 | cut -c1-8
 ```
 
-For the example capability `my-argocd` on cluster `my-cluster`, both commands return `dc855fdf`.
+Both commands return `dc855fdf`.
 
 ### Endpoint access and security
 <a name="_endpoint_access_and_security"></a>
@@ -135,7 +135,3 @@ For detailed information about Argo CD features:
 +  [Application Spec](https://argo-cd.readthedocs.io/en/stable/user-guide/application-specification/) - Full Application API reference
 +  [ApplicationSet Guide](https://argo-cd.readthedocs.io/en/stable/user-guide/application-set/) - ApplicationSet patterns and examples
 +  [Argo CD GitHub](https://github.com/argoproj/argo-cd) - Source code and examples
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

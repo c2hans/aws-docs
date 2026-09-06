@@ -160,7 +160,3 @@ All omics.g4dn instances use Nvidia Tesla T4 GPUs.
 | omics.g4dn.8xlarge | 32 | 128 GiB | 1 | 16 GiB |
 | omics.g4dn.12xlarge | 48 | 192 GiB | 4 | 64 GiB |
 | omics.g4dn.16xlarge | 64 | 256 GiB | 1 | 16 GiB |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

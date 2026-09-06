@@ -20,7 +20,3 @@ You can add a Service Catalog product to one or more *portfolios*. A Service Cat
 You provide permissions for a user, group, or role to have access to provision a product at the portfolio level. For provisioning, products are associated with either a launch IAM role (for launching the product in a self-serve manner to anyone who can assume the role), or with a [stack set](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html#stacksets-concepts-stackset) that defines one or more accounts that the product can be provisioned to. To use a stack set, you must define a Service Catalog administrator role in the Service Catalog hub account and a Service Catalog product provisioning execution role in each target account of the stack set.
 
 The following sections discuss Service Catalog IaP functionality in more detail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ Set the Audio Track Type field. The options for this field for each audio stream
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/hls-rendition-groups-getting-ready-to-create.html)
 
 1. In addition, if you have an audio that is intended as the audio to play when the bandwidth is so low that the video cannot be delivered, then set that audio to “**Audio-Only Variant Stream**.”
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

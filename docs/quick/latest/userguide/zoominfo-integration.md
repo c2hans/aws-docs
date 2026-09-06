@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/zoominfo-integrat
 # ZoomInfo integration
 <a name="zoominfo-integration"></a>
 
-With the ZoomInfo action connector, you can look up company and contact data, and query firmographic and intent data directly in Amazon Quick through natural language.
+With the ZoomInfo connector, you can look up company and contact data, and query firmographic and intent data directly in Amazon Quick through natural language.
 
 Amazon Quick supports multiple authentication methods for ZoomInfo. Choose the method that best fits your organization's security requirements.
 + **Default OAuth app** – Uses an AWS-managed OAuth application. No additional credentials are needed. Users authenticate directly with their ZoomInfo account.
@@ -108,7 +108,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Sign-in fails (Default OAuth app or Custom OAuth app)** – Verify that your ZoomInfo account is active. For Custom OAuth app, confirm that the redirect URI in your ZoomInfo OAuth client matches the Amazon Quick callback URL.
 + **Invalid client credentials (Custom OAuth app or Service-to-Service OAuth)** – Verify that the Client ID and Client secret match the values in your ZoomInfo OAuth client.
 + **API Key authentication fails** – Verify that the API key has not been revoked.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

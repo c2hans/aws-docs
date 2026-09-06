@@ -170,7 +170,3 @@ Multiple hubs in household provide redundancy. First provisioner to respond serv
 <a name="managedintegrations-sdk-v2-cookbook-wss-scenario-3"></a>
 
 If provisioner unavailable or connection fails, device automatically falls back to User Guided Setup. Mobile app guides user through manual setup. Fallback is transparent to end-user.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

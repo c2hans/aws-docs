@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
  Apply microservice design to generative AI architectures by decomposing large AI pipelines into modular micro-flows such as *retrieve*, *reason*, and *act*. This allows each step to scale and cost-optimize independently — for example, using smaller, lower-cost models for retrieval or classification, while reserving larger, high-quality models for reasoning or complex generation tasks. Deploy each flow as a separate containerized or serverless component (for example, using AWS Lambda, Amazon ECS, or Step Functions) to improve cost control, maintainability, and fault isolation.
 
  This modular approach aligns generative AI workloads with modern software delivery practices and enables continuous cost visibility and performance tuning across the AI lifecycle.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

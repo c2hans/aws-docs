@@ -61,7 +61,3 @@ The fields in the line of code that you added to the `/etc/fstab` file do the fo
 | `x-systemd.automount,x-systemd.requires=configure-efa-fsx-lustre-client.service,x-systemd.after=configure-efa-fsx-lustre-client.service` | These options for EFA-enabled file systems ensure that the auto mounter does not run until after EFA client configuration completes. |
 | `0` | A value that indicates whether the file system should be backed up by `dump`. For Amazon FSx, this value should be `0`. |
 | `0` | A value that indicates the order in which `fsck` checks file systems at boot. For Amazon FSx file systems, this value should be `0` to indicate that `fsck` should not run at startup. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

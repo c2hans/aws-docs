@@ -12,7 +12,3 @@ The chat controls in the mobile app work the same way as the controls in the des
 + All meeting attendees can see your messages.
 + Amazon Chime deletes in-meeting chat messages when the meeting ends.
 + You can copy or quote individual messages during the meeting. To copy or quote a message, tap and hold the message until the **Message from {{sender}}** ** menu appears. Then choose **Copy message** or **Quote** message.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

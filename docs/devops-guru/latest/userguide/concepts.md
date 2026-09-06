@@ -52,7 +52,3 @@ Each insight provides recommendations with suggestions to help you improve the p
 + A list of the analyzed metrics in which DevOps Guru found anomalous behavior. Each metric includes the name of the CloudFormation stack that generated the resource associated with the metrics, the resource's name, and the name of the AWS service associated with the resource.
 + A list of the events that are related to the anomalous metrics associated with the insight. Each related event contains the name of the CloudFormation stack that generated the resource associated with the event, the name of the resource that generated the event, and the name of the AWS service associated with the event.
 + A list of log groups that are related to the anomalous behavior associated with the insight. Each log group contains a sample log message, information about the kinds of log anomalies reported, the times the log anomalies occurred, and a link to view the log lines on CloudWatch.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

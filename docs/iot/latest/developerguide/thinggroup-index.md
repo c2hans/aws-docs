@@ -87,7 +87,3 @@ You can specify the thing groups index as a resource ARN in an AWS IoT policy ac
 | --- | --- |
 | `iot:SearchIndex` | An index ARN (for example, `arn:aws:iot:{{your-aws-region}}:index/AWS_ThingGroups`). |
 | `iot:DescribeIndex` | An index ARN (for example, `arn:aws:iot:{{your-aws-region}}:index/AWS_ThingGroups`). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/development-migration-che
 | IDE |  See [ Author AWS Glue jobs with PyCharm using AWS Glue interactive sessions](https://aws.amazon.com/blogs/big-data/author-aws-glue-jobs-with-pycharm-using-aws-glue-interactive-sessions/), or [ Using interactive sessions with Microsoft Visual Studio Code](https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions-vscode.html).  |
 | REPL |  Install the [`aws-glue-session package`](https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions.html) locally, then run the following command: +   For Python: `jupyter console --kernal glue_pyspark`  <br />+   For Scala: `jupyter console --kernal glue_spark`   |
 | SSH | No corresponding option on interactive sessions. Alternatively, you can use a Docker image. To learn more, see [Developing using a Docker image](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-libraries.html#develop-local-docker-image).  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

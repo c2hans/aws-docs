@@ -82,7 +82,3 @@ If you're changing jurisdictions, consult your legal and tax advisors before pro
 <a name="vat-and-tax-requirements"></a>
 
 Depending on your location, you may need to provide VAT registration information and meet specific tax requirements. For detailed information about VAT registration requirements and tax procedures by country, see [Step 2: Provide tax information](provide-tax-information.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

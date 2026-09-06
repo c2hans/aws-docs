@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpr
  [AWS Marketplace](https://aws.amazon.com/marketplace) is an online store where you can find, buy, and quickly deploy software that runs on AWS. You can use 1-Click deployment to launch preconfigured WordPress images directly to Amazon EC2 in your own AWS account in just a few minutes. There are a number of Marketplace vendors offering ready-to-run WordPress instances.
 
  This whitepaper covers the Lightsail option as the recommended implementation for a single server WordPress website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

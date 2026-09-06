@@ -19,7 +19,3 @@ The Microsoft OneDrive new connector has the following known limitations:
 + VPC configuration is not supported
 + Document enrichment is not supported
 + OneDrive API throttling limits are determined by your organization's Microsoft 365 license count and are applied at the application level within a tenant (see [this Microsoft documentation](https://learn.microsoft.com/en-us/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#application-throttling)). These limits affect how many documents can be synced in a day, with further restrictions when Access Control Lists (ACLs) are involved. For example, in organizations with fewer than 1000 licenses, the connector can sync up to 1.2 million documents per day without ACLs. However, when syncing with ACLs, this limit is reduced to approximately 200,000 documents per day since ACLs require 5 additional resource units. If the sync job exceeds these limits, the OneDrive connector automatically pauses and resumes the following day to sync the remaining documents.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ Amazon Redshift blocks all network access and write access to the file system th
 
 **Note**
 Python 3 isn’t available for Python UDFs. To get Python 3 support for Amazon Redshift UDFs, use [Scalar Lambda UDFs](udf-creating-a-lambda-sql-udf.md) instead.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

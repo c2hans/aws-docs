@@ -220,7 +220,3 @@ The commitment policy setting determines which algorithm suites you can use. If 
 The Amazon S3 Encryption Client supports encryption using key commitment in major version 4.x for Java, Go, Python, and .NET, and major version 3.x for Ruby, PHP, and C\+\+.
 
 For help setting your commitment policy, see the migration guide for your [programming language](programming-languages.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon S3 Encryption Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-s3-encryption-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

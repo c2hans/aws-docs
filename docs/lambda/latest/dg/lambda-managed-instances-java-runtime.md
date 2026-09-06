@@ -206,7 +206,3 @@ Powertools for AWS Lambda (Java) is compatible with Lambda Managed Instances and
 + Review [Python runtime for Lambda Managed Instances](lambda-managed-instances-python-runtime.md)
 + Review [.NET runtime for Lambda Managed Instances](lambda-managed-instances-dotnet-runtime.md)
 + Learn about [scaling Lambda Managed Instances](lambda-managed-instances-scaling.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

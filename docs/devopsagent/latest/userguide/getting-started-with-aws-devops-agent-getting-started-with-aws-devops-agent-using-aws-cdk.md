@@ -27,13 +27,15 @@ npm install -g aws-cdk
 ```
 + One AWS account for the monitoring (primary) account
 + (Optional) A second AWS account if you want to set up cross-account monitoring
++ (For Part 3) `aws-cdk-lib` version 2.268.0 or later. The `CfnAsset` and `CfnTrigger` constructs used in Part 3 were added in that version. To check the version in your project, run `npm list aws-cdk-lib`.
 
 ## What this guide covers
 <a name="what-this-guide-covers"></a>
 
-This guide is divided into two parts:
+This guide is divided into the following parts:
 + **Part 1** — Deploy an agent space with an operator app and an AWS association in your monitoring account. After you complete this part, the agent can monitor issues in that account.
 + **Part 2 (Optional)** — Add a source AWS association for a service account and deploy a cross-account IAM role into that account. This configuration enables the agent space to monitor resources across accounts.
++ **Part 3 (Optional)** — Add a skill, a custom agent, and a scheduled trigger to the agent space, so the agent has custom knowledge and the scheduled trigger runs that custom agent automatically.
 
 ## Resources created
 <a name="resources-created"></a>
@@ -50,6 +52,14 @@ This guide is divided into two parts:
 <a name="part-2-servicestack-service-account-optional"></a>
 + **IAM role** (`DevOpsAgentRole-SecondaryAccount`) — Cross-account role with a fixed name. Trusted by the agent space in the monitoring account. Includes the `AIDevOpsAgentAccessPolicy` managed policy and an inline policy that allows creation of the Resource Explorer service-linked role.
 + **Lambda function** (`echo-service`) — A simple example service that echoes back input events.
+
+### Part 3: Assets and triggers (monitoring account, optional)
+<a name="part-3-assets-and-triggers-monitoring-account-optional"></a>
+
+This stack creates the following resources:
++ **Skill** (`rds-performance-investigation`) — A skill the agent loads when relevant, created by using the `CfnAsset` construct with an `assetType` of `skill`.
++ **Custom agent** (`rds-firefighter`) — Scopes the agent to a specific workflow with attached skills, created by using the `CfnAsset` construct with an `assetType` of `custom_agent`.
++ **Trigger** (`TIME_BASED`) — Runs the custom agent on a schedule, created by using the `CfnTrigger` construct.
 
 ## Setup
 <a name="setup"></a>
@@ -125,13 +135,15 @@ DevOpsAgentStack.AssociationId = assoc-xyz
 
 If you plan to complete Part 2, save the `AgentSpaceArn` value. You need it to configure the service account stack.
 
+The stack outputs the agent space ARN, not the agent space ID. Later steps ask for the ID, which is the segment after `agentspace/` in the ARN. In the preceding example, the ARN ends with `agentspace/abc123`, so the agent space ID is `abc123`. Record that value as well.
+
 ### Step 5: Verify the deployment
 <a name="step-5-verify-the-deployment"></a>
 
 To verify that the agent space was created successfully, run the following AWS CLI command:
 
 ```
-aws devopsagent get-agent-space \
+aws devops-agent get-agent-space \
   --agent-space-id <AGENT_SPACE_ID> \
   --region <REGION>
 ```
@@ -220,10 +232,154 @@ aws lambda invoke \
 cat response.json
 ```
 
+## Part 3 (Optional): Add a skill, custom agent, and scheduled trigger
+<a name="part-3-optional-add-a-skill-custom-agent-and-scheduled-trigger"></a>
+
+In this section, you add three resources to the agent space you created in Part 1. You add a **skill** the agent loads when relevant and a **custom agent** that scopes the agent to a specific workflow. You also add a **scheduled trigger** that runs the custom agent automatically. These resources use the `CfnAsset` and `CfnTrigger` constructs from the `aws-cdk-lib/aws-devopsagent` module.
+
+These resources might incur additional charges to your AWS account. To remove them when you are done, follow the Cleanup section at the end of this guide.
+
+This example uses the `skill` and `custom_agent` asset types. The same `CfnAsset` construct creates every asset type—such as `memory_store`, `agents_md`, and `attachment`. To use a different type, change the `assetType` property and supply the metadata that type requires. For the full list of asset types, their required metadata, and the property reference, see [Managing assets](about-aws-devops-agent-managing-assets.md).
+
+**Important**
+** You must complete Part 1 before you proceed. This stack requires the agent space ID from the DevOpsAgentStack deployment.
+
+### Step 1: Create the content stack
+<a name="step-1-create-the-content-stack"></a>
+
+Create a file named `lib/content-stack.ts` with the following contents. A time-based trigger's action references the custom agent by asset ID, in the form `custom:<assetId>`. The stack automatically wires this reference by using the value from the custom agent's `attrAssetId` attribute.
+
+```
+import * as cdk from 'aws-cdk-lib';
+import { CfnAsset, CfnTrigger } from 'aws-cdk-lib/aws-devopsagent';
+import { Construct } from 'constructs';
+
+export interface ContentStackProps extends cdk.StackProps {
+  readonly agentSpaceId: string;
+}
+
+export class ContentStack extends cdk.Stack {
+  constructor(scope: Construct, id: string, props: ContentStackProps) {
+    super(scope, id, props);
+
+    // A skill the agent loads when relevant
+    const skill = new CfnAsset(this, 'ExampleSkill', {
+      agentSpaceId: props.agentSpaceId,
+      assetType: 'skill',
+      metadata: {
+        name: 'rds-performance-investigation',
+        description: 'Investigation procedures for RDS performance issues.',
+        agent_types: ['GENERIC'],
+      },
+      files: [
+        {
+          path: 'SKILL.md',
+          contentText: [
+            '# RDS Performance Investigation',
+            'Use this skill when investigating database latency, connection',
+            'errors, or query timeouts.',
+          ].join('\n'),
+        },
+      ],
+    });
+
+    // A custom agent with attached skills that a trigger can invoke
+    const customAgent = new CfnAsset(this, 'ExampleCustomAgent', {
+      agentSpaceId: props.agentSpaceId,
+      assetType: 'custom_agent',
+      metadata: {
+        name: 'rds-firefighter',
+        skills: ['rds-performance-investigation'],
+      },
+      files: [
+        {
+          path: 'AGENT.md',
+          contentText: ['# RDS Firefighter', 'Custom agent for RDS incidents.'].join('\n'),
+        },
+      ],
+    });
+    customAgent.node.addDependency(skill);
+
+    // A time-based trigger that runs the custom agent on a schedule
+    const dailyTrigger = new CfnTrigger(this, 'DailyTrigger', {
+      agentSpaceId: props.agentSpaceId,
+      type: 'TIME_BASED',
+      condition: {
+        schedule: {
+          expression: 'rate(1 day)',
+        },
+      },
+      action: {
+        actionType: 'create:task',
+        task: {
+          agent: `custom:${customAgent.attrAssetId}`,
+        },
+      },
+      status: 'Active',
+    });
+
+    new cdk.CfnOutput(this, 'SkillAssetId', {
+      description: 'The skill asset ID',
+      value: skill.attrAssetId,
+    });
+    new cdk.CfnOutput(this, 'CustomAgentAssetId', {
+      description: 'The custom agent asset ID',
+      value: customAgent.attrAssetId,
+    });
+    new cdk.CfnOutput(this, 'TriggerId', {
+      description: 'The trigger ID',
+      value: dailyTrigger.attrTriggerId,
+    });
+  }
+}
+```
+
+### Step 2: Add the stack to your AWS CDK app
+<a name="step-2-add-the-stack-to-your-aws-cdk-app"></a>
+
+In your app entry point (for example, `bin/app.ts`), instantiate the stack and pass the agent space ID you recorded in Part 1, Step 4. Use the ID, such as `abc123`, and not the full `AgentSpaceArn` value:
+
+```
+new ContentStack(app, 'ContentStack', {
+  env: { account: MONITORING_ACCOUNT_ID, region: process.env.CDK_DEFAULT_REGION },
+  agentSpaceId: '<AGENT_SPACE_ID>',
+});
+```
+
+### Step 3: Deploy the stack
+<a name="step-3-deploy-the-stack"></a>
+
+Run the following commands to build and deploy the stack by using monitoring account credentials:
+
+```
+npm run build
+cdk deploy ContentStack --profile monitoring
+```
+
+The `agentSpaceId` and `assetType` properties of an asset are create-only, as are the `agentSpaceId`, `type`, `condition`, and `action` properties of a trigger. Changing any of them replaces the resource. You can update the trigger's `status` (`Active` or `Inactive`) in place—set it to `Inactive` to pause the trigger without deleting it. For more information about the other asset types and the full property reference, see [Managing assets](about-aws-devops-agent-managing-assets.md).
+
+### Step 4: Verify the deployment
+<a name="step-4-verify-the-deployment"></a>
+
+To confirm that the assets and trigger were created, run the following AWS CLI commands:
+
+```
+aws devops-agent list-assets \
+  --agent-space-id <AGENT_SPACE_ID> \
+  --region <REGION>
+
+aws devops-agent list-triggers \
+  --agent-space-id <AGENT_SPACE_ID> \
+  --region <REGION>
+```
+
 ## Troubleshooting
 <a name="troubleshooting"></a>
 
 This section describes common issues and how to resolve them.
+
+**`CfnAsset` or `CfnTrigger` is not exported from `aws-cdk-lib/aws-devopsagent`**
++ These constructs require `aws-cdk-lib` version 2.268.0 or later. Run `npm list aws-cdk-lib` to check your version, and run `npm install aws-cdk-lib@latest` to upgrade.
 
 **CloudFormation resource type not found**
 + Verify that you are deploying in a [Supported Regions](about-aws-devops-agent-supported-regions.md).
@@ -248,7 +404,9 @@ To remove all resources, destroy the stacks in reverse order.
 Run the following commands to destroy the stacks:
 
 ```
-# If you deployed the ServiceStack, destroy it first
+# If you deployed the Part 3 ContentStack, destroy it first
+cdk destroy ContentStack --profile monitoring
+# If you deployed the ServiceStack, destroy it next
 cdk destroy ServiceStack --profile service
 # Then destroy the DevOpsAgentStack
 cdk destroy DevOpsAgentStack --profile monitoring
@@ -279,8 +437,7 @@ After you have deployed your AWS DevOps Agent by using the AWS CDK:
 + [AWS DevOps Agent User Guide](https://docs.aws.amazon.com/devopsagent/latest/userguide/)
 + [Sample CDK repository](https://github.com/aws-samples/sample-aws-devops-agent-cdk) on the GitHub website
 + [CLI onboarding guide](https://docs.aws.amazon.com/devopsagent/latest/userguide/getting-started-with-aws-devops-agent-cli-onboarding-guide.html)
++ [Managing assets](about-aws-devops-agent-managing-assets.md)
 + [AWS CDK DevOps Agent construct library reference](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_devopsagent-readme.html) in the *AWS CDK API Reference*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ [CfnAsset](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_devopsagent.CfnAsset.html) and [CfnTrigger](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_devopsagent.CfnTrigger.html) construct references in the *AWS CDK API Reference*
++ [AWS DevOps Agent resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/AWS_DevOpsAgent.html) in the *AWS CloudFormation Template Reference*

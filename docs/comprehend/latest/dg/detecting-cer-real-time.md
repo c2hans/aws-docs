@@ -68,7 +68,3 @@ Complete the following steps to detect custom entities in your text by using the
      1. (Optional) Under **Advanced read actions**, you can override the default actions for text extraction. For details, see [Setting text extraction options](idp-set-textract-options.md).
 
 1. Choose **Analyze**. The console displays the output of the analysis, along with a confidence assessment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

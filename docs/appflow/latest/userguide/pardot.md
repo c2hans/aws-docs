@@ -89,7 +89,3 @@ You can also set the destination to any custom connectors that you create with t
 + [Transitioning from version 3 to version 4](https://developer.pardot.com/kb/api-version-4/#transitioning-from-version-3-to-version-4) in the Pardot documentation
 + [Connected Apps](https://help.salesforce.com/articleView?id=connected_app_overview.htm) in the Salesforce documentation
 + [Authentication Via Salesforce OAuth](https://developer.pardot.com/kb/authentication/#via-salesforce-oauth) in the Pardot documentation
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

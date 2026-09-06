@@ -42,7 +42,3 @@ Remember the following beacon uniqueness requirements as you plan the searchable
 To query beacons configured in a multitenant database, you must include the field that stores the `branch-key-id` associated with the tenant that encrypted the record in your query. You define this field when you [define the beacon key source](use-hierarchical-keyring.md#beacon-key-source). For the query to succeed, the value in this field must identify the appropriate beacon key materials required to recalculate the beacon.
 
 Before you configure your beacons, you must decide how you plan to include the `branch-key-id` in your queries. For more information on the different ways you can include the `branch-key-id` in your queries, see [Querying beacons in a multitenant database](searchable-encryption-multitenant.md#query-multitenant-beacons).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

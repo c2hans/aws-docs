@@ -12,7 +12,3 @@ The following restrictions apply to launch templates and launch template version
 + **Tags** – You can tag a launch template, but you can't tag a launch template version.
 + **Immutable** – Launch templates are immutable. To modify a launch template, you must create a new version of the launch template.
 + **Version numbers** – Launch template versions are numbered in the order in which they are created. When you create a launch template version, you can't specify the version number yourself.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
  **Related examples:**
 +  [Empty an Amazon S3 bucket using a lifecycle configuration rule](https://aws.amazon.com/premiumsupport/knowledge-center/s3-empty-bucket-lifecycle-rule/)
 +  [Well-Architected Lab: Decommission resources automatically (Level 100)](https://www.wellarchitectedlabs.com/cost/100_labs/100_goals_and_targets/4_decommission_resources/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

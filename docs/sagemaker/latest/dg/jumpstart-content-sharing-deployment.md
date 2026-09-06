@@ -16,7 +16,3 @@ After training your machine learning model, you'll need to deploy it to an Amazo
 1. Provide an Amazon S3 URI for model artifacts. Model artifacts are the output that results from training a model, and typically consist of trained parameters, a model definition that describes how to compute inferences, and other metadata. If you trained your model in SageMaker AI, the model artifacts are saved as a single compressed TAR file in Amazon S3. If you trained your model outside SageMaker AI, you need to create this single compressed TAR file and save it in an Amazon S3 location.
 
 1. Select an instance type. We recommend a GPU instance with more memory for training with large batch sizes. For a comprehensive list of SageMaker training instances across AWS Regions, see the **On-Demand Pricing** table in [Amazon SageMaker Pricing](https://aws.amazon.com/sagemaker/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

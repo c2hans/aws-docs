@@ -76,7 +76,3 @@ This will incur \~30 seconds of downtime for your cluster. Plan accordingly.
 This will incur up to 30 seconds of downtime for your cluster, but often takes less time than that. Plan accordingly.
 
    1. Scale the former primary (now a replica) instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

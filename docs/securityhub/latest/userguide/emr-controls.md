@@ -117,7 +117,3 @@ Data in transit refers to data that moves from one location to another, such as 
 <a name="emr-4-remediation"></a>
 
 To enable encryption in transit in an Amazon EMR security configuration, see [Configure data encryption](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-create-security-configuration.html#emr-security-configuration-encryption.html) in the *Amazon EMR Management Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ The `Iceberg` format (recommended) is an open table format for very large analyt
 
 **Important**
 Note that for feature groups in `Iceberg` table format, you must specify `String` as the feature type for the event time. If you specify any other type, you can't create the feature group successfully.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

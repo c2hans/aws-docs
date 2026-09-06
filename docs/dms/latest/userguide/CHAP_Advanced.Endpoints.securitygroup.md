@@ -60,7 +60,3 @@ You must consider the following additional configuration information:
 + **Use Security Group References**: Referencing security groups in the source or destional instances allows for dynamic management and is more secure than using IP addresses as it automatically included all resources within the group.
 + **Database Ports**: Ensure you are using the correct port for your database.
 + **Security Best Practices**: Only open the necessary ports to minimize security risks. you must also regular review of your security group rules to ensure they meed your security standards and requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -238,7 +238,3 @@ After you turn off the automatic rules, create rules to forward the queries as n
 1. Under **Autodefined rules for reverse DNS resolution**, deselect the check box. If the check box is already deselected, you can select it to turn on auto-defined reverse DNS resolution.
 
 For the related APIs, see [VPC Resolver configuration APIs](https://docs.aws.amazon.com/Route53/latest/APIReference/API-actions-by-function.html#actions-by-function-resolver-configuration).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

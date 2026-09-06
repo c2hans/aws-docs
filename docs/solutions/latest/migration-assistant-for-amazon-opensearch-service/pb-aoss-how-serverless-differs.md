@@ -12,7 +12,3 @@ Amazon OpenSearch Serverless NextGen removes the cluster-management surface you 
 +  **SigV4 only.** All access is IAM-based. There is no basic-auth or FGAC user on the collection.
 +  **Index size limit.** A single index in a collection has a maximum size (1 TB for the search and vector-search collection types). Reduce oversized source shards or split large source indexes before backfill.
 +  **Bulk payload limit.** Keep bulk requests modest. `documentsSizePerBulkRequest` caps the aggregate document bytes per bulk request (default 10 MiB), and `documentsPerBulkRequest` caps the document count. Lower the byte-size limit first if the collection rejects large requests.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

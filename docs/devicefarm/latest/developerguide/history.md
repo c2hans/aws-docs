@@ -41,7 +41,3 @@ The following table describes the important changes to the documentation since t
 | New Android Built-in Test: Explorer | The explorer test crawls your app by analyzing each screen as if it were an end user and takes screenshots as it explores. | September 16, 2015 |
 | iOS support added | Learn more about testing iOS devices and running iOS tests (including XCTest) in [Test frameworks and built-in tests in AWS Device Farm](test-types.md). | August 4, 2015 |
 | Initial public release | This is the initial public release of the *AWS Device Farm Developer Guide*. | July 13, 2015 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

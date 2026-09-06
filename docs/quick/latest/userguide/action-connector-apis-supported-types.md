@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/action-connector-apis-supported-types.html
 ---
 
-# Supported action connector types and available actions
+# Supported connector types and available actions
 <a name="action-connector-apis-supported-types"></a>
 
 Amazon Quick supports multiple connector types, each with specific actions available:
@@ -21,7 +21,6 @@ Amazon Quick supports multiple connector types, each with specific actions avail
 + **Cisco Webex Video Messaging** - Manage video updates, retrieve transcripts, and access video metadata in Cisco Webex (Vidcast).
 + **Dropbox** - Upload files, manage folder structures, generate sharing links, and control access permissions.
 + **Dun & Bradstreet** - Look up company profiles, credit risk data, and business intelligence.
-+ **Figma** - Manage design files, retrieve file metadata, and access design assets.
 + **GitHub** - Manage repositories, issues, pull requests, and code collaboration.
 + **Gmail** - Read emails, search inbox, draft messages, manage labels, and organize threads.
 + **Google Analytics** - Query traffic reports, retrieve audience data, monitor conversion events, and access performance metrics.
@@ -70,16 +69,16 @@ Amazon Quick supports multiple connector types, each with specific actions avail
 + **Amazon Comprehend** - Natural language processing and sentiment analysis.
 + **Amazon Comprehend Medical** - Medical text analysis and entity extraction.
 
-## Action connector compatibility matrix
+## Connector compatibility matrix
 <a name="action-connector-compatibility-matrix"></a>
 
-The following table shows which Amazon Quick features each action connector type supports:
+The following table shows which Amazon Quick features each connector type supports:
 
-**Action Connector Feature Compatibility**
+**Connector feature compatibility**
 
 <table>
 <thead>
-  <tr><th>Action Connector</th><th>Chat Agents</th><th>Flows</th><th>Dashboard Visuals</th><th>Dashboard Alerts</th><th>Automations</th><th>Companions</th></tr>
+  <tr><th>Connector</th><th>Chat Agents</th><th>Flows</th><th>Dashboard Visuals</th><th>Dashboard Alerts</th><th>Automations</th><th>Companions</th></tr>
 </thead>
 <tbody>
   <tr><td colspan="7"><b>AWS Built-in Services</b></td></tr>
@@ -103,7 +102,6 @@ The following table shows which Amazon Quick features each action connector type
   <tr><td>Cisco Webex Video Messaging</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>Dropbox</td><td>✓</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>Dun &amp; Bradstreet</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-  <tr><td>Figma</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>GitHub</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>Gmail</td><td>✓</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td></tr>
   <tr><td>Google Analytics</td><td>✓</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td></tr>
@@ -155,7 +153,3 @@ The following table shows which Amazon Quick features each action connector type
 + **Dashboard Visuals** - Support user authentication (Default OAuth app, Custom OAuth app)
 + **Dashboard Alerts** - Support system authentication (Service-to-Service OAuth or API Key)
 + **Automations** - Support system authentication (Service-to-Service OAuth)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

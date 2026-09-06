@@ -15,7 +15,3 @@ To explore and visualize your data with business intelligence tools, download, i
 See also the following AWS Knowledge Center and AWS Big Data Blog topics:
 + [How can I use my IAM role credentials or switch to another IAM role when connecting to Athena using the JDBC driver?](https://aws.amazon.com/premiumsupport/knowledge-center/athena-iam-jdbc-driver/)
 + [Setting up trust between ADFS and AWS and using Active Directory credentials to connect to Amazon Athena with ODBC driver](https://aws.amazon.com/blogs/big-data/setting-up-trust-between-adfs-and-aws-and-using-active-directory-credentials-to-connect-to-amazon-athena-with-odbc-driver/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

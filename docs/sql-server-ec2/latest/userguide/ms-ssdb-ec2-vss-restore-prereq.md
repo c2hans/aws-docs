@@ -166,7 +166,3 @@ To attach necessary permissions to the role that starts and manages the `AWSEC2-
 1. Choose **Next** to review your policy. This opens the review and create page.
 
 1. On the **Review Policy** page, enter a name (for example, `VssRestoreRunSSMAutomationPolicy`) and then choose **Next** to create and add the inline policy to your role.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SQL Server on Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sql-server-ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

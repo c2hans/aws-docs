@@ -27,6 +27,30 @@ For each TCP request made through a Gateway Load Balancer, the state of that con
 **To update the TCP idle timeout using the AWS CLI**
 Use the [modify-listener-attributes](https://docs.aws.amazon.com/cli/latest/reference/elbv2/modify-listener-attributes.html) command with the `tcp.idle_timeout.seconds` attribute.
 
-## See also
+## Send TCP reset on idle timeout
+<a name="send-tcp-reset-idle-timeout"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+When enabled, the Gateway Load Balancer sends a TCP reset (RST) to the sender of traffic when the idle timeout expires. This helps signal traffic senders to immediately terminate idle connections. To control this behavior, use the `send_tcp_reset.on_idle_timeout.enabled` attribute.
+
+**To enable Send TCP reset on idle timeout using the console**
+
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
+
+1. In the navigation pane, under **Load Balancing**, choose **Load Balancers**.
+
+1. Select your Gateway Load Balancer.
+
+1. On the **Listeners** tab, choose **Actions**, **View listener details**.
+
+1. On the listener details page, on the **Attributes** tab, choose **Edit**.
+
+1. Choose **Send TCP reset on idle timeout**.
+
+1. Choose **Save changes**.
+
+**To enable Send TCP reset on idle timeout using the AWS CLI**
+Use the [modify-listener-attributes](https://docs.aws.amazon.com/cli/latest/reference/elbv2/modify-listener-attributes.html) command with the `send_tcp_reset.on_idle_timeout.enabled` attribute set to `true`.
+
+```
+aws elbv2 modify-listener-attributes --listener-arn {{listener-arn}} --attributes Key=send_tcp_reset.on_idle_timeout.enabled,Value=true
+```

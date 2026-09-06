@@ -34,7 +34,3 @@ The AWS Well-Architected Framework also recommends that you [deploy software pro
 <a name="best-practices-6-edge-protection"></a>
 
 Deploy edge protections that help protect against common web application threats, such as those outlined in the [OWASP Web Application Security Project](https://owasp.org/www-project-top-ten/) (OWASP website). This can help protect agentic AI systems from internet-based attacks. Implement controls to limit unreasonable request volumes and filter requests from known threats. This can prevent denial-of-service attacks and reduce exposure to malicious actors. Establish capabilities for rapid rule updates to protect against emerging threats. Make sure that security controls can adapt quickly to new attack patterns and vulnerabilities. For more information about limiting request volumes, see [Applying rate limiting to requests in AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based-request-limiting.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

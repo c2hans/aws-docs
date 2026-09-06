@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/raci-matrix
 + **Accountable (A)** - The party ultimately answerable for the correct completion of the task
 + **Consulted (C)** - The party whose opinions are sought and with whom there is two-way communication
 + **Informed (I)** - The party who is kept up-to-date on progress and with whom there is one-way communication
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

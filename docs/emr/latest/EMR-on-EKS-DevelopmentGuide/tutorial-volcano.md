@@ -192,7 +192,3 @@ With Amazon EMR on EKS, you can use Spark operator or spark-submit to run Spark 
    ----    ------     ----  ----                -------
    Normal  Scheduled  23s   volcano             Successfully assigned default/spark-pi-driver to integration-worker2
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

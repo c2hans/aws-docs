@@ -22,7 +22,3 @@ This guide consists of the following sections:
 + [Managing IP address space in IPAM](managing-ip-space-ipam.md): Steps to manage your IPAM, scopes, pools, and allocations.
 + [Tracking IP address usage in IPAM](tracking-ip-addresses-ipam.md): Steps to monitor and track IP address usage with IPAM.
 + [Tutorials for Amazon VPC IP Address Manager](tutorials-ipam.md): Detailed step-by-step tutorials for creating an IPAM and pools, allocating VPC CIDRs, and bringing your own public IP address CIDRs to IPAM.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,7 +42,3 @@ The following MemoryDB events trigger Amazon SNS notifications:
 | MemoryDB:RemoveNodeComplete |  "Removed node %s"  | A node has been removed from the cluster. |
 | MemoryDB:SnapshotComplete |  "Snapshot %s succeeded for node %s"  | A snapshot has completed successfully. |
 | MemoryDB:SnapshotFailed |  "Snapshot %s failed for node %s"  | A snapshot has failed. See the cluster’s events for more a detailed cause.<br />If you describe the snapshot, see [DescribeSnapshots](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeSnapshots.html), the status will be `failed`. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

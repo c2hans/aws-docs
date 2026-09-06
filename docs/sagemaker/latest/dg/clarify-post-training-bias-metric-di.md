@@ -24,7 +24,3 @@ For binary, multicategory facet, and continuous labels, the DI values range over
 + Values less than 1 indicate that facet *a* has a higher proportion of predicted positive outcomes than facet *d*. This is referred to as *positive bias*.
 + A value of 1 indicates demographic parity.
 + Values greater than 1 indicate that facet *d* has a higher proportion of predicted positive outcomes than facet *a*. This is referred to as *negative bias*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

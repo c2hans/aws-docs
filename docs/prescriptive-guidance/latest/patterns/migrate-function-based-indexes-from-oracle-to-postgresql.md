@@ -123,7 +123,3 @@ postgres=# explain select col1 from funcindex where common.to_char(col1,'DD-MM-Y
    Index Cond: ((common.to_char(col1, 'DD-MM-YYYY HH24:MI:SS'::character varying))::text = '09-08-2022 16:00:57'::text)
 (2 rows)
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

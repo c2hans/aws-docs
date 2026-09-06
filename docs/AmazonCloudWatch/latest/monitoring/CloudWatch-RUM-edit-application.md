@@ -24,7 +24,3 @@ To change an app monitor's settings, follow these steps. You can change any sett
 1. After the code snippet is created, choose **Copy to clipboard** or **Download**, and then choose **Done**.
 
    To start monitoring with the new settings, you insert the code snippet into your application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

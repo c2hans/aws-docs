@@ -61,7 +61,3 @@ The Object ACL field is encoded and shown as the following base64-encoded string
 eyJ2ZXJzaW9uIjoiMjAyMi0xMS0xMCIsInN0YXR1cyI6IkFWQUlMQUJMRSIsImdyYW50cyI6W3siY2Fub25pY2FsSWQiOiJleGFtcGxlLWNhbm9uaWNhbC11c2VyLUlEIiwidHlwZSI6IkNhbm9uaWNhbFVzZXIiLCJwZXJtaXNzaW9uIjoiUkVBRCJ9XX0=
 ```
 To get the decoded value in JSON for the Object ACL field, you can query this field in Amazon Athena. For query examples, see [Querying Amazon S3 Inventory with Amazon Athena](storage-inventory-athena-query.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

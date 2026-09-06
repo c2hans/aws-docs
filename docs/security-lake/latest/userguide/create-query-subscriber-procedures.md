@@ -83,7 +83,3 @@ The subscriber should follow these steps to consume data from your Lake Formatio
 1. **Query the shared tables** – Services like Amazon Athena can refer to the tables directly, and new data that Security Lake collects is automatically available to query. Queries run in the subscriber's AWS account, and costs incurred from queries are billed to the subscriber. You can control read access to resources in your own Security Lake account.
 
 For more information about granting cross-account permissions, see [Cross-account data sharing in Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/cross-account-permissions.html) in the *AWS Lake Formation Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

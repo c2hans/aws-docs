@@ -10,7 +10,3 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 If you are a first-time user of WorkSpaces Thin Client administrator console, we recommend that you begin by reading the following sections:
 + [Starting the WorkSpaces Thin Client administrator console](getting-started.md)
 + [Using WorkSpaces Thin Client administrator console](administrator-console.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -91,7 +91,3 @@ Here's what happens when you set **Evaluate Target Health** to **No** for an ali
 1. Route 53 determines what the alias target is for the latency alias record, and checks the corresponding health checks. They're both failing.
 
 1. Because the value of **Evaluate Target Health** is **No** for the latency alias record for the us-east-1 region, Route 53 must choose one record in this branch instead of backing out of the branch and looking for a healthy record in the ap-southeast-2 region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

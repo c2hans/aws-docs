@@ -97,7 +97,3 @@ If you collect the entire output tensors from a large deep learning model, the t
    Note that you must provide a string to the first argument to name the custom tensor. `hook.save_tensor()` has the third argument `collections_to_write` to specify the tensor collection to save the custom tensor. The default is `collections_to_write="default"`. If you don't explicitely specify the third argument, the custom tensor is saved to the `"default"` tensor collection.
 
 After you have completed adapting your training script, proceed to [Launch training jobs with Debugger using the SageMaker Python SDK](debugger-configuration-for-debugging.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -120,7 +120,3 @@ For repeatable deployments and standardization across environments, consider Inf
 <a name="manual-deployment-using-console-or-cli"></a>
 
 Install and configure the AWS CLI with appropriate credentials and target region. Ensure IAM permissions include EC2, EBS, EFS, and Systems Manager access as required for the deployment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

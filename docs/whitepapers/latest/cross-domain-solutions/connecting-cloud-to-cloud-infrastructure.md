@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cross-domain-solution
 
 **Note**
  As of paper publication in December 2020, AWS Diode has the sole purpose of directly supporting the US Government, in that it controls data flowing to AWS classified regions. Commercial entities can use the service, to supply the US Government with their data or services. Commercial entities cannot use the service in any other way.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

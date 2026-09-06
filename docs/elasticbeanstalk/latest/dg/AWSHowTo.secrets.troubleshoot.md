@@ -27,7 +27,3 @@ Multiline variables are not supported for Amazon Linux 2 platforms, excluding Do
 **Event:** *CreateEnvironment fails when a secret is specified*
 
 When `CreateEnvironment` fails and you have secrets as environment variables, you need to address the underlying issue and then use `UpdateEnvironment` to complete the environment setup. Do not use `RestartAppServer`, as it will not be sufficient to bring the environment up in this situation. For examples of these commands, see [*AWS CLI examples for Elastic Beanstalk*](https://docs.aws.amazon.com/cli/latest/userguide/cli_elastic-beanstalk_code_examples.html). For more information about the API actions for these operations, see the *[AWS Elastic Beanstalk API Reference](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/)*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

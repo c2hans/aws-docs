@@ -78,7 +78,3 @@ When this Rust function is invoked, it prints two log lines similar to the follo
 {"level":"INFO","fields":{"message":"Rust function invoked"},"spans":[{"req_id":"45daaaa7-1a72-470c-9a62-e79860044bb5","name":"handler"}]}
 {"level":"INFO","fields":{"message":"Rust function responds to event","first_name":"David"},"spans":[{"req_id":"45daaaa7-1a72-470c-9a62-e79860044bb5","name":"handler"}]}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -151,7 +151,3 @@ software.amazon.codeguruprofilerjavaagent.level=ALL
 Including the `javaClass` namespace is important for some messages due to the way some Kotlin classes are compiled.
 
 Enable Java Flight Recorder debug logging for JDK11\+. Add `'-Xlog:jfr*=trace'` to your JVM arguments to see more logging information from the Java Flight Recorder subsystem. There are some issues with JDK8 logging, which make it difficult or impossible to enable these debug logs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

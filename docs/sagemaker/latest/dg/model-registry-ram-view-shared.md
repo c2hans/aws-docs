@@ -20,7 +20,3 @@ aws sagemaker list-model-package-groups --cross-account-filter-option CrossAccou
 <a name="model-registry-ram-view-shared-ram"></a>
 
 In the AWS RAM console, the resource owner and consumer can view shared model package groups. The resource owner can view the model package groups shared with the consumer by following the steps in [Viewing resource shares you created in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-view-rs.html). The resource consumer can view the model package groups shared by the owner by following the steps in [Viewing resource shares shared with you](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared-view-rs.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

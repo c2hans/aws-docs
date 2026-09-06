@@ -22,7 +22,3 @@ To see the details for a specific endpoint, choose an endpoint from the list. On
 ![Screenshot of an endpoint's main page showing a summary of the endpoint details in Studio.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/inference/studio-endpoint-details-page.png)
 
 Each endpoint details page contains the following tabs of information:
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

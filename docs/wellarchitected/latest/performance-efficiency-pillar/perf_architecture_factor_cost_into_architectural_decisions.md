@@ -61,7 +61,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/performance-effic
 + [ Startup optimization: Tuning application performance for maximum efficiency ](https://catalog.workshops.aws/performance-tuning/en-US)
 + [ Serverless Optimization Workshop (Performance and Cost) ](https://catalog.us-east-1.prod.workshops.aws/workshops/2d960419-7d15-44e7-b540-fd3ebeb7ce2e/en-US)
 + [ Scaling cost effective architectures ](https://catalog.us-east-1.prod.workshops.aws/workshops/f238037c-8f0b-446e-9c15-ebcc4908901a/en-US)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

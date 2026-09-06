@@ -54,7 +54,3 @@ An example architecture of a 5GC workload with AWS Outposts. The 5G control plan
 1.  Customer SEGs are entities on the borders of the IP security domains used for securing native IP based protocols.
 
 1.  Customer owned on-premises HSM to generate cryptographic keys for importing to AWS KMS or use with AWS KMS XKS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -108,7 +108,3 @@ You can avoid specifying the `--region` argument when you use CLI commands by co
 To continue setting up your system for Trusted Language Extensions, see [Setting up Trusted Language Extensions in your Aurora PostgreSQL DB cluster](PostgreSQL_trusted_language_extension-setting-up.md).
 
 For more information, see [DB parameter groups for Amazon Aurora DB instances](USER_WorkingWithDBInstanceParamGroups.md) .
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

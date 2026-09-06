@@ -63,7 +63,3 @@ If you want to update how your associated repository is encrypted, you must disa
    +  [Create a Bitbucket repository association (console)](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/create-bitbucket-association.html#create-bitbucket-association-console)
    +  [Create a GitHub or GitHub Enterprise Cloud repository association (console)](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/create-github-association.html)
    +  [Create a GitHub Enterprise Server repository association (console)](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/create-github-enterprise-association.html#create-github-enterprise-association-console)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

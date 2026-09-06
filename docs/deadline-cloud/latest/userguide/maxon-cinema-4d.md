@@ -348,7 +348,7 @@ A: It depends on your scene. A 3x3 or 4x4 grid is a good starting point. More ti
 
 **Q: Why don't fonts work while submitting with macOS?**
 
-A: Font functionality is currently only supported on Windows due to technical limitations. This limitation is a known behavior in mixed macOS/Windows environments, as confirmed by Maxon's official documentation. For more information, see [Maxon's official FAQ on resolving missing fonts in Team Render](https://support.maxon.net/hc/en-us/articles/1500006439721-How-to-resolve-missing-fonts-in-Team-Render-for-Cinema-4D-install-fonts-or-make-Text-editable).
+A: Font functionality is currently only supported on Windows due to technical limitations. This limitation is a known behavior in mixed macOS/Windows environments, as confirmed by Maxon's official documentation. For more information, see [How to resolve missing fonts in Team Render for Cinema 4D](https://support.maxon.net/hc/en-us/articles/1500006439721-How-to-resolve-missing-fonts-in-Team-Render-for-Cinema-4D-install-fonts-or-make-Text-editable) on the Maxon website.
 
 ### Take system questions
 <a name="cinema-4d-troubleshooting-takes"></a>
@@ -398,7 +398,7 @@ A: The cause is typically a path mapping issue. Cinema 4D sometimes stores deep 
 
 **Q: Are nested Redshift proxy files detected when submitting Cinema 4D jobs to Deadline Cloud?**
 
-A: No, Redshift proxy files are not detected when submitting Cinema 4D jobs to Deadline Cloud. This behavior is a limitation of the Redshift `*.rs` file format. When you export a Cinema 4D scene containing RS Proxy objects to `*.rs`, all referenced proxy data is flattened or inlined into a single file - no external references are preserved. The Cinema 4D SDK cannot read `*.rs` files to discover nested dependencies, and the Redshift Core doesn't expose this functionality either. For more information, see the [Maxon developer forum post](https://developers.maxon.net/forum/topic/16370/cinema-4d-redshift-nested-redshift-proxy-files-not-detected-by-project-asset-inspector/2).
+A: No, Redshift proxy files are not detected when submitting Cinema 4D jobs to Deadline Cloud. This behavior is a limitation of the Redshift `*.rs` file format. When you export a Cinema 4D scene containing RS Proxy objects to `*.rs`, all referenced proxy data is flattened or inlined into a single file - no external references are preserved. The Cinema 4D SDK cannot read `*.rs` files to discover nested dependencies, and the Redshift Core doesn't expose this functionality either. For more information, see [Nested Redshift proxy files](https://developers.maxon.net/forum/topic/16370/cinema-4d-redshift-nested-redshift-proxy-files-not-detected-by-project-asset-inspector/2) on the Maxon website.
 
 **Q: I'm getting permission errors with a system-wide installation on Windows. How do I fix this?**
 
@@ -440,11 +440,11 @@ Before reaching out for help, try these troubleshooting steps. They often resolv
 + **Render one frame locally** - Before submitting to the cloud, render at least one frame locally in Cinema 4D to verify your scene renders correctly. This step helps identify scene-specific issues vs. cloud rendering issues.
 + **Update to the latest submitter** - We release updates frequently with bug fixes and improvements. Your issue may already be fixed in a newer version. To check if you're running the latest version:
   + Find your current version: The version is displayed in the submitter window title.
-  + Compare with the latest release: Visit the [releases page](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/releases) to see the most recent version.
+  + Compare with the latest release: Visit the [releases page](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/releases) on the GitHub website to see the most recent version.
   + If your version is older, update the submitter and test again before reporting the issue.
 + **Check your Job-Specific Settings** - Review the Job-Specific Settings tab in the submitter. In particular, enable the **Save Cinema 4D Project with Assets** checkbox. This setting creates a temporary copy of your project with all assets and fixes file paths, helping identify missing files and organizing assets for render farms. See [Job-specific settings](#cinema-4d-job-specific-settings) for more information.
 + **Try different Cinema 4D versions** - If you're experiencing issues, test with Cinema 4D 2024, 2025, or 2026 to see if the problem is version-specific.
-+ **Check existing GitHub issues** - Search the [GitHub issues page](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/issues?q=is%3Aissue) to see if someone else has already reported your problem and found a solution.
++ **Check existing GitHub issues** - Search the [issues page](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/issues?q=is%3Aissue) on the GitHub website to see if someone else has already reported your problem and found a solution.
 + **Try a different fleet operating system** - Submit your job to both Windows and Linux fleets if available. Windows generally has better support and compatibility for Cinema 4D features.
 + **Review session logs** - Download and review the session logs from Deadline Cloud monitor. These logs often contain error messages that generally pinpoint the issue.
 + **Create a scene project file** - Use Cinema 4D's **File** > **Save Project with Assets** to create a self-contained project that includes all dependencies. Zip this file for easy sharing with support.
@@ -477,7 +477,7 @@ Use GitHub issues as your primary channel for Cinema 4D-specific problems:
 + Feature requests.
 + Integration problems.
 
-[Open a GitHub issue](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/issues).
+To report an issue, see [Cinema 4D submitter and adaptor issues](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/issues) on the GitHub website.
 
 ### How to report issues on GitHub
 <a name="cinema-4d-report-issues"></a>
@@ -487,28 +487,28 @@ Use GitHub issues as your primary channel for Cinema 4D-specific problems:
 
 **Before creating a new bug report**:
 
-1. [Search existing bugs](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/issues?q=label%3Abug) to see if your problem has already been reported or fixed in latest versions.
+1. Search [existing bugs](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/issues?q=label%3Abug) on the GitHub website to see if your problem has already been reported or fixed in latest versions.
 
 1. If you find an existing issue that matches your problem:
    + Add a thumbs-up reaction to help us prioritize.
    + Comment with any additional details or reproduction steps you can provide.
    + This information helps us understand how many users are affected.
 
-If no existing issue matches, [create a new bug report](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/issues/new?template=bug.yml) using the bug report template. The template will guide you through providing all the necessary information.
+If no existing issue matches, [create a new bug report](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/issues/new?template=bug.yml) on the GitHub website using the bug report template. The template will guide you through providing all the necessary information.
 
 #### Feature requests
 <a name="cinema-4d-feature-requests"></a>
 
 **Before creating a new feature request**:
 
-1. [Search existing feature requests](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/issues?q=is%3Aopen+label%3Aenhancement) to see if someone has already suggested your idea.
+1. Search [existing feature requests](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/issues?q=is%3Aopen+label%3Aenhancement) on the GitHub website to see if someone has already suggested your idea.
 
 1. If you find an existing request that matches:
    + Add a thumbs-up reaction to show your support.
    + Comment with your specific use case - this strengthens the request and helps us understand different needs.
    + The more users who express interest, the higher priority it receives.
 
-If no existing request matches, [create a new feature request](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/issues/new?template=feature_request.yml) using the feature request template. The template will guide you through providing all the necessary information.
+If no existing request matches, [create a new feature request](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d/issues/new?template=feature_request.yml) on the GitHub website using the feature request template. The template will guide you through providing all the necessary information.
 
 **Note**
 Feature requests help us prioritize development, but there's no guarantee of implementation timeline.
@@ -596,7 +596,7 @@ The Redshift renderer is included with all Cinema 4D conda packages and is autom
 ### Maxon Red Giant
 <a name="cinema-4d-red-giant"></a>
 
-Red Giant is a comprehensive toolkit designed for video post-production, motion graphics, and visual effects. It offers rich color grading, smooth transitions, realistic visual effects, motion design templates and tools to create and edit your visuals. For more information, see [Red Giant](https://www.maxon.net/en/red-giant).
+Red Giant is a comprehensive toolkit designed for video post-production, motion graphics, and visual effects. It offers rich color grading, smooth transitions, realistic visual effects, motion design templates and tools to create and edit your visuals. For more information, see [Red Giant](https://www.maxon.net/en/red-giant) on the Maxon website.
 
 Red Giant requires custom setup on service-managed fleets. A host configuration script is provided which you can use in your Deadline Cloud fleet. Once configured, Red Giant is supported by Deadline Cloud Usage-based Licensing and requires no further configuration to operate.
 
@@ -608,21 +608,17 @@ V-Ray is a 3D photorealistic ray-traced rendering plug-in. V-Ray for Cinema 4D i
 ### C4DToArnold
 <a name="cinema-4d-arnold"></a>
 
-Autodesk Arnold software is an advanced Monte Carlo ray tracing renderer. For more information, see [Arnold](https://www.autodesk.com/in/products/arnold/overview). C4DToArnold is fully supported in Service-managed fleets.
+Autodesk Arnold software is an advanced Monte Carlo ray tracing renderer. For more information, see [Arnold](https://www.autodesk.com/in/products/arnold/overview) on the Autodesk website. C4DToArnold is fully supported in Service-managed fleets.
 
 ### Insydium X-Particles
 <a name="cinema-4d-xparticles"></a>
 
-X-Particles is a fully-featured advanced particle and VFX system for Maxon's Cinema 4D. For more information, see [X-Particles](https://insydium.ltd/products/x-particles/). Insydium X-Particles is not currently fully supported in Service-managed fleets. We provide a conda recipe that you can use to create your own conda channel for use in your Deadline Cloud farm. For more information about creating custom conda channels, see [Creating custom conda channels](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/configure-jobs-s3-channel.html). When you create the conda package from your X-Particles package, it will include your purchased license. No additional configuration is necessary to operate on service-managed fleets.
+X-Particles is a fully-featured advanced particle and VFX system for Maxon's Cinema 4D. For more information, see [X-Particles](https://insydium.ltd/products/x-particles/) on the Insydium website. Insydium X-Particles is not currently fully supported in Service-managed fleets. We provide a conda recipe that you can use to create your own conda channel for use in your Deadline Cloud farm. For more information about creating custom conda channels, see [Creating custom conda channels](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/configure-jobs-s3-channel.html). When you create the conda package from your X-Particles package, it will include your purchased license. No additional configuration is necessary to operate on service-managed fleets.
 
 ## Open source resources
 <a name="cinema-4d-open-source"></a>
 
-The submitter and adaptor are open source and available on GitHub:
+The submitter and adaptor are open source and available on the GitHub website:
 + [Deadline Cloud for Cinema 4D](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d)
-+ [Cinema 4D Conda recipes](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes) are available on GitHub for C4D 2024, C4D 2025, the INSYDIUM X-PARTICLES plugin, the C4DtoA plugin, and the V-Ray Plugin.
++ [Cinema 4D Conda recipes](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes) are available for C4D 2024, C4D 2025, the INSYDIUM X-PARTICLES plugin, the C4DtoA plugin, and the V-Ray Plugin.
 + [Host Configuration script](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/cinema4d/cinema4d_redgiant) is included to support Red Giant plugins.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

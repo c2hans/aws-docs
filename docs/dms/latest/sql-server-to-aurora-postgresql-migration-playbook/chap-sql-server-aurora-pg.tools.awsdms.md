@@ -63,7 +63,3 @@ The following diagram illustrates the AWS DMS process.
 For a complete guide with a step-by-step walkthrough including all the latest notes for migrating SQL Server to Aurora MySQL with AWS DMS, see [Migrating a SQL Server Database to Amazon Aurora MySQL](https://docs.aws.amazon.com/dms/latest/sbs/chap-sqlserver2aurora.html).
 
 For more information about AWS DMS, see [What is Database Migration Service?](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html) and [Best practices for Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_BestPractices.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

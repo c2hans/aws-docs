@@ -66,7 +66,3 @@ When the account is enrolled in the destination organization, the `AWSControlTow
 
 AWS Service Catalog and Auto Enroll
 Auto Enroll doesn't act on resources in AWS Service Catalog. Any Account Factory provisioned products remain in the management account even if the underlying accounts are unenrolled. To terminate these provisioned products in the management account, see [Deleting provisioned products](https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-delete.html) in the *AWS Service Catalog User Guide*. Any Account Factory Customization (AFC) blueprints remain in the account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

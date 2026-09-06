@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-gs-studio.ht
 +  **You can detect data quality issues** - You can check for issues by creating rules that check characteristics of your datasets.
 +  **It's easy to get started** - You can start with pre-built rules and actions.
 +  **Tight integration** - You can use data quality nodes in AWS Glue Studio because AWS Glue Data Quality runs on top of the AWS Glue Data Catalog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

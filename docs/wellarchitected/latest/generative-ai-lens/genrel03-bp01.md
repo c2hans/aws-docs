@@ -64,7 +64,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
  **Related examples:**
 +  [Amazon Bedrock Flows is now generally available with enhanced safety and traceability](https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-flows-is-now-generally-available-with-enhanced-safety-and-traceability/)
 +  [Simplifying the Prompts Lifecycle with Prompt Management and Prompt Flows for Amazon Bedrock Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/c81935bc-0b43-4bd6-bd01-db45f847d6bd/en-US)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

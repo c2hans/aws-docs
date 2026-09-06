@@ -115,7 +115,3 @@ Use metadata to record information on segments or subsegments that you don't nee
    ```
 
 If you don't specify a value for the namespace, the X-Ray SDK uses `default`. Calling the `AddMetadata` operation twice with the same key overwrites a previously recorded value on the same segment or subsegment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

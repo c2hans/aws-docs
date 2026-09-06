@@ -52,7 +52,3 @@ Based on the test outcomes, identify any improvements to the test cases, configu
  **Suggestion 11.4.7 – Define the required activities to return to a pre-test state**
 
 As part of each test, you should define the required activities to return to the pre-test state. This is to ensure that each test case is isolated from other tests and that the testing does not impact the availability and reliability of a production system.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

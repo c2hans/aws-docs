@@ -30,7 +30,3 @@ The **Users & Groups** page under **Kiro** in the left navigation pane is only f
 1. In the left navigation pane, under **Amazon Q Developer**, choose **Subscriptions**, and then follow the instructions in [Unsubscribing from Amazon Q Developer Pro](q-admin-setup-unsubscribe.md) to cancel your subscription.
 
 To learn about Kiro in the IDE and at the command line, and how to administer Kiro subscriptions in your enterprise, see the [Kiro Docs](https://kiro.dev/docs/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

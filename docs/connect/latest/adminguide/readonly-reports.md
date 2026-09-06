@@ -36,7 +36,3 @@ Users can still make changes to the report settings but they won't be able to sa
 When a user who is not the report owner views the **Share report** dialog box, the **Read-Only** toggle is disabled, as shown in the following image.
 
 ![The Read-only toggle in the disabled state, in the Share report dialog box.](http://docs.aws.amazon.com/connect/latest/adminguide/images/reports-readonly-disabled.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ Perform the following steps to create a package repository in CodeCatalyst.
    1. When a package is requested from a package repository, upstream repositories will be searched in the order they appear in this list. Once a package is found, CodeCatalyst will stop searching. To change the order of the upstream repositories, you can drag and drop the repositories in the list.
 
 1. Choose **Create** to create your package repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

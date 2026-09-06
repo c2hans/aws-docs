@@ -169,7 +169,3 @@ If you want to create the role manually, attach the following policies to the ro
 + A trust policy that allows AWS End User Messaging SMS to assume the role.
 
 After you create the role, you can configure AWS End User Messaging SMS to automatically send events to your stream. For more information, see [Set up an Amazon Data Firehose event destination in AWS End User Messaging SMS](configuration-sets-kinesis.md) in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ In order to delete the directory, it can't have any other AWS applications enabl
 You may get an invalid Amazon Simple Email Service (Amazon SES) rule set error message when you attempt to delete an organization. If you receive this error, edit the Amazon SES rule in the Amazon SES console and remove the invalid rule set. The rule that you edit should have your Amazon WorkMail organization ID in the rule name. For more information about editing Amazon SES rules, see [Creating receipt rules](https://docs.aws.amazon.com/ses/latest/dg/receiving-email-receipt-rules-console-walkthrough.html) in the *Amazon Simple Email Service Developer Guide*.
 
 If you need to figure out which rule set is not valid, save the rule first. An error message appears for the rule set.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-analysis-segment-streams.html
 ---
 
-# Access conversational analytics analytics for voice and chat contacts using Amazon Kinesis Data Streams
+# Access conversational analytics for voice and chat contacts using Amazon Kinesis Data Streams
 <a name="contact-analysis-segment-streams"></a>
 
-With contact analysis segment streams, you can access conversational analytics analytics for voice and chat contacts. Streaming overcomes the scaling limitations of existing [call and chat analytics APIs](contact-lens-api.md). For voice contacts, it also provides access to a data segment called `Utterance` that you can use to access partial transcripts. This helps you meet ultra-low latency requirements to assist agents on live calls.
+With contact analysis segment streams, you can access conversational analytics for voice and chat contacts. Streaming overcomes the scaling limitations of existing [call and chat analytics APIs](contact-lens-api.md). For voice contacts, it also provides access to a data segment called `Utterance` that you can use to access partial transcripts. This helps you meet ultra-low latency requirements to assist agents on live calls.
 
 This section explains how to integrate with Amazon Kinesis Data Streams for streaming.
 
@@ -20,7 +20,3 @@ Through streaming, you can receive the following event types:
 + [Chat: Data model for conversational analytics segment streams](chat-real-time-contact-analysis-segment-streams-data-model.md)
 + [Voice: Sample conversational analytics segment stream](sample-real-time-contact-analysis-segment-stream.md)
 + [Chat: Sample conversational analytics segment stream](chat-sample-real-time-contact-analysis-segment-stream.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

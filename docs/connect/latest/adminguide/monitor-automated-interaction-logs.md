@@ -71,7 +71,3 @@ If no audio recording is available, the Play option does not appear.
 1. Knowledge base citation reference is available under the Prompt (inference span) under Span details, when configured and available. To make sure you have your citations configured, see [Knowledge base retrieval configuration](https://docs.aws.amazon.com/connect/latest/adminguide/multiple-knowledge-base-setup-and-content-segmentation.html#add-citation-data-ai-agent-trace).
 
 1. To learn more about enabling AI agent traces, see [AI agent traces](ai-agent-traces.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

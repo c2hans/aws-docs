@@ -54,7 +54,3 @@ Consider the following recommendations for setting up a scalable and cost-effect
 + Adopt machine learning operations (MLOps) to automate and standardize processes across the machine learning lifecycle. These processes include model development, testing, integration, release, and infrastructure management. For more information, see [What is MLOps?](https://aws.amazon.com/what-is/mlops/)
 + For small-scale experiments or proof of concepts, start with Amazon SageMaker AI and general-purpose compute instances. As you scale to large production deployments, consider Amazon EC2 accelerated computing instances for maximum performance.
 + Use [managed spot training](https://docs.aws.amazon.com/sagemaker/latest/dg/model-managed-spot-training.html) in SageMaker AI to optimize the cost of training models by up to 90% compared to on-demand instances. SageMaker AI manages the spot interruptions on your behalf.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,3 @@ The following rules apply to channel security groups:
 + **Input security group must exist** – The input security group you select must already exist in your account before you can use it as a channel security group.
 + **Automatic updates** – When you update the CIDR rules in an input security group, those changes automatically apply to all channels using that input security group as a channel security group. You don't need to restart the channels.
 + **Cannot delete in-use input security group** – You cannot delete an input security group if it is being used as a channel security group by any channel. You must first remove the channel security group from all channels, or delete those channels.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

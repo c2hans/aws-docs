@@ -29,7 +29,3 @@ Users perform data analytics in specific projects when their data portal client 
 <a name="security-authorization-profiles"></a>
 
 Once a user is authenticated, the authenticated context maps to a user profile ID. This user profile can have multiple, different associations (project owner, domain administrator, etc.) which is used for authorizing users. Each association (for example, project owner, domain administrator, etc.) has permissions for certain activities based on the context. For example, a user that has a domain admin association can create additional domains, can assign other domain administrators to the domain, and can create project templates within their domain. A project owner can add or remove project members for their project, and publish assets to a domain.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

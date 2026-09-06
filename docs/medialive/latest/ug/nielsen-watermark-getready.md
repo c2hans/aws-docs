@@ -24,7 +24,3 @@ To prepare to insert Nielsen watermarks in a MediaLive output, you must obtain s
 1. If you are setting up CBET watermarks, decide how you want to handle watermarks that are already in the source audio. The options are the following:
    + Remove all the existing watermarks and replace them with new ones.
    + Keep the existing watermarks. MediaLive will insert new watermarks only in portions of the audio stream where there are no watermarks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

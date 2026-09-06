@@ -56,7 +56,3 @@ Figure 1: MALZ architecture and associated AMS modes
 
 **Note**
 "Restrictive" implies that you can request custom policies for these OUs, they are approved by AMS on a case-by-case basis to ensure they don’t interfere in AMS's capabilities to provide operational excellence. For a detailed list of AMS guardrails see [AMS Guardrails](https://docs.aws.amazon.com/managedservices/latest/userguide/security-mgmt.html#detective-rules) in the user guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

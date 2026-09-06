@@ -17,7 +17,3 @@ To choose an appropriate output captions format and to set up your captions in y
 + The *output captions tracks* that you intend to include for each output.
 
   In most cases, the tracks that you include in an output might be a subset of the tracks that are available in the input. If you pass through Teletext-to-Teletext, all tracks in the input are available in the output. In this situation, you can't choose only a subset of the input tracks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

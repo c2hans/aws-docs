@@ -42,7 +42,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 +  [Deep Dive on Advanced Continuous Delivery Techniques Using AWS](https://www.youtube.com/watch?v=Lrrgd0Kemhw)
 +  [Introduction to AWS CodeDeploy - automated software deployment with Amazon Web Services](https://www.youtube.com/watch?v=Wx-ain8UryM)
 +  [Slalom: CI/CD for serverless applications on AWS](https://www.youtube.com/watch?v=tEpx5VaW4WE)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

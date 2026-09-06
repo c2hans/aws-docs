@@ -65,7 +65,3 @@ CSV upload has the following limits and requirements:
 Use the following APIs to programmatically create field options conditions:
 + [CreateCaseRule](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_CreateCaseRule.html): Creates the field options condition using the "fieldOptions" rule type.
 + [CreateTemplate](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_UpdateTemplate.html) or [UpdateTemplate](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_UpdateTemplate.html): Associate the field options condition with the case template.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

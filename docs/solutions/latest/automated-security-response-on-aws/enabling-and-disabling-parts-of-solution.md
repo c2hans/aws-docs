@@ -39,7 +39,3 @@ The solution offers two ways to enable or disable fully-automated remediation. B
 + Using the **Invite Users** page, administrators and delegated administrators can invite additional users to access the Web UI and delegate access to the solution.
 + Using the **View Users** page, administrators and delegated administrators can view and manage existing users.
 + To learn more about permissions and how to use the solution’s Web UI, see the [Web UI](webui-developer-guide.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

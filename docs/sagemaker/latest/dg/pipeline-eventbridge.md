@@ -243,7 +243,3 @@ pipeline.delete_triggers(trigger_names=["{{<schedule-name>}}"])
 Be aware of the following limitations when you delete your triggers:
 The option to delete the triggers by specifying trigger names is only available in the SageMaker Python SDK. Deleting the pipeline in the CLI or a `DeletePipeline` API call does not delete your triggers. As a result, the triggers become orphaned and SageMaker AI attempts to start a run for a non-existent pipeline.
 Also, if you are using another notebook session or already deleted the pipeline target, clean up orphaned schedules through the scheduler [CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/scheduler/delete-schedule.html) or EventBridge console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

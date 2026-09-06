@@ -26,7 +26,3 @@ The following table describes important changes in each release of the *Amazon T
 | [New service and guide](#document-history) | Amazon Textract is now available for general use. | May 29, 2019 |
 | [Support for selection elements](#document-history) | Amazon Textract can now detect selection elements (radio buttons and check boxes). | April 24, 2019 |
 | [Release of Amazon Textract](#document-history) | This is the first release of the documentation for Amazon Textract. | November 28, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

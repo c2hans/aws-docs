@@ -56,7 +56,3 @@ For Local Zones support, you must enable the Local Zone and attach it to the VPC
 | us-west-2-lax-1a | us-west-2 | Availability Zone |
 | us-west-2-lax-1b | us-west-2 | Availability Zone |
 | af-south-1-los-1a | af-south-1 | Frontier Zone |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

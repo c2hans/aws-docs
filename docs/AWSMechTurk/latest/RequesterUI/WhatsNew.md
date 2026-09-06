@@ -24,7 +24,3 @@ This document history describes the important changes to the documentation.
 | Manage Qualification Types | The Manage tab now has a sub tab called Manage Qualification Types. On that sub tab, you can view the details of qualification types and create new ones. For more information, see [Managing Qualification Types](ManagingQualificationTypes.md) | October 4, 2010 |
 | Block or Bonus Workers | Now you can block a worker or award a bonus while reviewing their results. For more information, see [Managing Your HITs](ManagingYourHITs.md). | February 25, 2010 |
 | Reject and Republish | Now you can reject work and republish an assignment while you're reviewing a worker's results. For more information, see [Managing Your HITs](ManagingYourHITs.md). | February 25, 2010 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

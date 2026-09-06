@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Build a Blender conda package for Deadline Cloud
 <a name="examples-conda-blender"></a>
 
-The samples repository includes conda recipes for the following Blender versions and add-ons. Each recipe builds for Linux 64-bit and Windows 64-bit, and downloads source archives from the Blender Foundation:
+The samples repository on the GitHub website includes conda recipes for the following Blender versions and add-ons. Each recipe builds for Linux 64-bit and Windows 64-bit, and downloads source archives from the Blender Foundation:
 + [blender-4.2](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/blender-4.2)
 + [blender-4.3](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/blender-4.3)
 + [blender-4.4](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/blender-4.4)
@@ -21,8 +21,4 @@ Submit a Blender 4.5 build job from the `conda_recipes` directory of the samples
 ./submit-package-job blender-4.5
 ```
 
-For details on the Blender packaging approach, see the [blender-4.5 recipe README](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/blender-4.5). To install Blender add-ons, place the `.py` or `.zip` file in a known location inside `$INSTALL_DIR` and modify the activate script to install the add-on with Blender's Python.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+For details on the Blender packaging approach, see the [blender-4.5 recipe README](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/blender-4.5) on the GitHub website. To install Blender add-ons, place the `.py` or `.zip` file in a known location inside `$INSTALL_DIR` and modify the activate script to install the add-on with Blender's Python.

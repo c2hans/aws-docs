@@ -10,7 +10,3 @@ A VPN connection can provide secure, two-way communication between workloads run
 The following diagram shows a data center connected to Local Zone 1 by a software-based VPN solution running on an Amazon EC2 instance in Local Zone 1. This allows for encrypted connectivity from the data center directly into the Local Zone without traffic going through the parent Region.
 
 ![An AWS Region with a VPC. The VPC contains two Availability Zones and a Local Zone. Each zone has a public subnet and a private subnet. The diagram also shows an on-premise data center with a customer gateway outside the AWS Region. The public subnet in the Local Zone includes a software-based VPN solution. The VPC has an internet gateway through which traffic flows between the public subnet in the Local Zone to a customer data center.](http://docs.aws.amazon.com/local-zones/latest/ug/images/local-zone-on-premise-vpn.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Local Zones. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query local-zones` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

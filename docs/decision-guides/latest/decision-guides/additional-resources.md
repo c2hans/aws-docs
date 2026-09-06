@@ -13,7 +13,3 @@ The following resources can help you learn more about AWS services and make info
 + [AWS Getting Started Resource Center](https://aws.amazon.com/getting-started/) — Provides tutorials and resources to help you get started with AWS.
 + [AWS Documentation](https://docs.aws.amazon.com/) — Provides technical documentation for all AWS services.
 + [AWS Training and Certification](https://aws.amazon.com/training/) — Provides training courses and certification programs to build your AWS skills.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Decision Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query decision-guides` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

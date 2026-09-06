@@ -15,7 +15,3 @@ See the following related topics to learn more about the AWS CloudHSM Client SDK
 + [Managing Client SDK 5 Key Durability Settings](working-client-sync.md#setting-file-sdk8)
 + [Client SDK 5 Logging](hsm-client-logs.md#sdk5-logging)
 + [Setup mTLS (recommended)](getting-started-setup-mtls.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

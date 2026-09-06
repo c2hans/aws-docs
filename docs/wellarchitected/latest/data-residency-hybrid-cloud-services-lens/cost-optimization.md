@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  With a hybrid cloud approach involving on-premises data centers and hybrid edge offerings, organizations must carefully evaluate factors such as data transfer costs between environments, pricing models across different services and locations, and the potential for resource sharing.
 
  The cost optimization pillar offers strategies to address these challenges so that organizations can maximize the financial benefits of a hybrid cloud architecture while maintaining operational excellence, security, reliability, and performance across all environments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -355,7 +355,3 @@ With email active in the system, look at **ConcurrentEmails** and **ConcurrentEm
 + (ConcurrentEmails / ConcurrentEmailsPercentage)\*100
 
 For example, if **ConcurrentEmails** is 20 and **ConcurrentEmailsPercentage** is 50, your total quota is calculated as (20/50)\*100= 40. Your total quota is 40 emails.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -198,7 +198,3 @@ Use `workflow log resource --list` and `workflow show --list` if you need the ex
 If you encounter an error about being unable to update an Elasticsearch 7.10.2 cluster, compatibility mode may be enabled on the Amazon OpenSearch Service domain. Disable compatibility mode to continue. See [Enable compatibility mode](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/rename.html#rename-upgrade) in the *Amazon OpenSearch Service Developer Guide*.
 
 For broader diagnosis, see [Troubleshooting](troubleshooting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ You edit email flow rules whenever you need to change one or more [rule actions]
 1. Choose the radio button next to the rule that you want to change, then choose **Edit**.
 
 1. Change the action or actions in the rule as needed, then choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

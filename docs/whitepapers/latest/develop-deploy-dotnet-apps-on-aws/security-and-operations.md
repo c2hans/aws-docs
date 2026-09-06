@@ -17,7 +17,3 @@ The key principle for developing secure .NET applications is ensuring that reque
 Running applications in a secure manner starts with developing secure applications, but also requires operating them in a secure environment. Security is the highest priority at AWS, and there are various AWS services that can help meet the requirements of the most security-sensitive organizations.
 
 The following sections focus on developing secure applications. For more information on security, including auditing, data governance, network security, and encryption in transit and at rest, see [AWS Cloud Security](https://aws.amazon.com/security/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -82,7 +82,3 @@ If you're using an AWS Glue Custom Connector and connection to access a data sto
 + AWS Secrets Manager permissions for accessing secrets that are used with connections. Refer to [Example: Permission to retrieve secret values](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access_examples.html#auth-and-access_examples_read) for example IAM policies.
 
 If your AWS Glue ETL job runs within a VPC running Amazon VPC, then the VPC must be configured as described in [Configure a VPC for your ETL job](getting-started-vpc-config.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -105,7 +105,3 @@ The output will look like the following:
 <a name="apigateway-rest-additional-apis"></a>
 
 For more information about HTTP APIs and WebSocket APIs, see [Security policy for HTTP APIs in API Gateway](http-api-ciphers.md) and [Security policy for WebSocket APIs in API Gateway](websocket-api-ciphers.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

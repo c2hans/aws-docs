@@ -72,7 +72,3 @@ When you refine your selection using two or more tags, the effect is an AND cond
 Wildcard conditions such as "Begins with" or "Does not begin with" do not match spaces. For example, `prod*` matches `prod_server` but not `prod server`. To match values with spaces, include each space explicitly in the pattern (for example, `prod *` matches `prod server`). We recommend avoiding spaces in tag values used with wildcard conditions.
 
 1. To further refine using another tag, choose **Add tag**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

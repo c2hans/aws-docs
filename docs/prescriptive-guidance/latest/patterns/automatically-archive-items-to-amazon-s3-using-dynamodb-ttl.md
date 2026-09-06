@@ -192,7 +192,3 @@ firehosetos3erroroutputbase/!{firehose:random-string}/!{firehose:error-output-ty
 ```
 
 The `ErrorOutputPrefix` results in a base folder called `firehosetos3erroroutputbase` directly under the S3 bucket. The expression `!{firehose:random-string}` evaluates to an 11-character random string such as `ztWxkdg3Thg`. The location for an Amazon S3 object where failed records are delivered could evaluate to `firehosetos3erroroutputbase/ztWxkdg3Thg/processing-failed/2020/11/06/`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

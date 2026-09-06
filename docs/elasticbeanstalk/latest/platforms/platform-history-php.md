@@ -2624,7 +2624,3 @@ The following Elastic Beanstalk platform versions for PHP were current prior to 
 | 64bit Amazon Linux 2012.09 running PHP 5.4 | 2012.09 | PHP 5.4 | Apache 2.4.3 |
 | 32bit Amazon Linux 2012.09 running PHP 5.3 | 2012.09 | PHP 5.3 | Apache 2.4.3 |
 | 64bit Amazon Linux 2012.09 running PHP 5.3 | 2012.09 | PHP 5.3 | Apache 2.4.3 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

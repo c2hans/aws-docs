@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/go.html
  During the lifetime of AL2, earlier package versions are not removed from the repositories. If an earlier Go toolchain is required, you can choose to forgo bug and security fixes of newer Go toolchains and install an earlier version from the repositories using the same mechanisms available for any RPM.
 
  If you want to build your own Go code on AL2 you can use the Go toolchain included in AL2 with the knowledge that this toolchain might move forward through the lifetime of AL2.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,7 +47,3 @@ After you create a subnet, you can configure it as follows:
 + Modify the resource-based name (RBN) settings. For more information, see [Amazon EC2 instance hostname types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-naming.html#instance-naming-modify-instances).
 + Create or modify your network ACLs. For more information, see [Control subnet traffic with network access control lists](vpc-network-acls.md).
 + Share the subnet with other accounts. For more information, see [Share a subnet](vpc-sharing-share-subnet-working-with.md#vpc-sharing-share-subnet).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

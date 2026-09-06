@@ -51,7 +51,3 @@ Some SMS options, such as dedicated origination numbers or sender IDs, are unava
 To engage an audience segment with an SMS campaign, see [Amazon Pinpoint campaigns](campaigns.md).
 
 To send an SMS message directly to a limited audience without creating a campaign, see [Send test messages with Amazon Pinpoint](messages.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

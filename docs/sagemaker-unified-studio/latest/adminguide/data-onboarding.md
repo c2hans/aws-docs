@@ -29,7 +29,3 @@ To onboard your data in an existing Amazon SageMaker unified domain, complete th
    + Under **Permissions and resources**, specify the provisioning role. Amazon SageMaker Unified Studio uses this role to provision and manage resources required to onboard the account data.
    + Under **Owning project** specify the owning project. Your data will be accessible in this project that is auto-created in Amazon SageMaker Unified Studio. Once created, you cannot rename the project.
    + Under **Add project owner**, add the project owner for the owning project.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

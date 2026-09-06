@@ -23,7 +23,3 @@ Lightsail offers solid-state drives (SSD) for block storage. This type of block 
 + 20,000 GB per Region.
 + 16 TB per disk maximum, or 8 GB per disk minimum.
 + Each instance can have up to 15 attached disks, and 1 boot volume disk.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

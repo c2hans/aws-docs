@@ -57,7 +57,3 @@ Complete the following procedure to configure IPv6 on a GitLab instance in Light
 
    You will see a response similar to the following example. If your instance does recognize its IPv6 address, then you will see it listed in the response with a label of `scope global` as shown in this example.
 ![IPv6 configured on the instance.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-gitlab-ssh-ip-addr-ipv6-configured.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

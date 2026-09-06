@@ -15,7 +15,3 @@ The following table provides a version history of the AWS Migration Hub Orchestr
 | 1.0.3 | Bug fix: reduced redundant file creation. | April 18, 2023 |
 | 1.0.1 | Bug fix: improved mechanisms for plugin tasks. | March 03, 2023 |
 | 1.0 | Initial release | April 20, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Hub Orchestrator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-orchestrator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

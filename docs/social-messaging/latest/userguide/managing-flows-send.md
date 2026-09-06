@@ -67,7 +67,3 @@ The `flow_token` should be unique per session to allow you to correlate Flow res
 To send a Flow, you need a message template with a Flow button configured. When creating the template, add a call-to-action button of type `FLOW` that references your published Flow ID.
 
 For more information about creating message templates, see [Using message templates in AWS End User Messaging Social](managing-templates.md). For information about Flow template configuration, see [Sending a Flow](https://developers.facebook.com/docs/whatsapp/flows/gettingstarted/sendingaflow) in the *Meta WhatsApp Business Platform documentation*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -467,7 +467,3 @@ Amazon GameLift Streams does not permit cross-account resource access. The Amazo
  If you want to stream multiple applications by using the same pool of compute resources, you can link multiple applications to the same stream group. Similarly, if you want to stream an application by using different sets of compute resources, you can link an application to multiple stream groups.
 
  For more information about linking applications to stream groups, refer to [Overview of multi-application stream groups](multi-apps.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -109,7 +109,3 @@ After enabling threat modeling:
 + Launch the web application to create and run threat models (see [Create a threat model](perform-threat-model.md))
 + Connect additional repositories or S3 buckets as your codebase grows
 + Connect Confluence to enable selecting pages as scope documents (see [Connect AWS Security Agent to Confluence](connect-confluence.md))
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ Learn [Best Practices for Cluster Upgrades](https://docs.aws.amazon.com/eks/late
 <a name="_start_cluster_update"></a>
 
 To start a cluster update, see [Update existing cluster to new Kubernetes version](update-cluster.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

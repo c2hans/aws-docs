@@ -32,7 +32,3 @@ The following table provides information about error codes you may see for the A
 | ASN-5202 | The user details are not found. | Verify the user data using the user API curl command or in postman for the given authentication type. |
 | ASN-5204 | Could not find Project(s) using the filter provided in the Asana configuration. Either Workspace(s) or Project(s) access is forbidden. | Check the Workspace and Project(s) access and provide valid inclusion and exclusion project name filter inputs. |
 | ASN-5500 | Asana connection successful. | This is to convey the connection to Asana data source is successful. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,7 +43,3 @@ The transition from service-linked roles to service roles follows the timeline d
 + **Migrating a single bot** – The one-click **Migrate to Service Role** button appears only for bots that use a service-linked role. With one click, you can migrate a bot to a service role. Amazon Lex V2 plans to make this available before September 1, 2026.
 + **Migrating multiple bots** – A wizard lists your bots so that you can select multiple service-linked role bots and migrate them to service roles at once. Amazon Lex V2 plans to make this available by September 15, 2026.
 + **End of support for service-linked roles** – Support for service-linked roles ends by the end of 2026.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

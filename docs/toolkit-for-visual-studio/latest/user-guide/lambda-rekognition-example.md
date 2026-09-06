@@ -200,7 +200,3 @@ Now that the function is deployed and an S3 bucket is configured as an event sou
 When the upload is complete, you can confirm that your function ran by looking at the logs from your function view. Or, right-click the images in the bucket browser and choose **Properties**. On the **Tags** tab, you can view the tags that were applied to your object.
 
 ![Properties dialog showing metadata tags with tag names such as Dirt Road and Road with numerical values.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/lambda-object-properties.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

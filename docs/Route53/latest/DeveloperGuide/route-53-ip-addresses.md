@@ -45,7 +45,3 @@ For more information about AWS-managed prefix lists, see [Work with AWS-managed 
 <a name="ip-addresses-route53-healthchecks-internal"></a>
 
 `"service": "ROUTE53_HEALTHCHECKS_PUBLISHING"` –. Route 53 uses these IP address ranges only internally. You don't need to add these ranges to the list of allowed ranges.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

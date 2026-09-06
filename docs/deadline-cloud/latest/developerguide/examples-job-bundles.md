@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Job bundle examples for Deadline Cloud
 <a name="examples-job-bundles"></a>
 
-A job bundle groups an Open Job Description template with the files and metadata that AWS Deadline Cloud needs to run a job. The [job\_bundles](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles) directory in the deadline-cloud-samples repository provides ready-to-submit bundles that you can use as starting points for your own work.
+A job bundle groups an Open Job Description template with the files and metadata that AWS Deadline Cloud needs to run a job. The [job\_bundles](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles) directory in the deadline-cloud-samples repository on the GitHub website provides ready-to-submit bundles that you can use as starting points for your own work.
 
 The following sections describe each example. Submit any example with the Deadline Cloud CLI:
 
@@ -66,7 +66,3 @@ deadline bundle gui-submit {{bundle-directory}}
 + [Copy an S3 prefix to job attachments on Deadline Cloud](examples-jb-copy-s3-to-attachments.md)
 + [SSH or RDP to a Deadline Cloud worker through Session Manager](examples-jb-ssh-to-worker.md)
 + [Build a custom submitter for Deadline Cloud](examples-jb-custom-submitters.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,7 +41,3 @@ Before you begin, ensure the following prerequisites are met:
 1. If you no longer need the service execution role – for example, if it is not used by any other delivery – delete it. Detach any customer managed policy, delete any inline policy, and then delete the role using the IAM `detach-role-policy`, `delete-role-policy`, and `delete-role` commands. For details, see [Deleting roles or instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_delete.html) in the *IAM User Guide*.
 
 1. If you no longer need the destination bucket or the dead-letter queue bucket, delete them in Amazon S3 to stop incurring storage charges.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

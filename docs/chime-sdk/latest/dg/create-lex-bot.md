@@ -70,7 +70,3 @@ The following example shows a resource-based policy.
 **Note**
 To allow one `AppInstanceBot` to invoke an Amazon Lex V2 bot, use the AppInstanceBot's ID. To allow all `AppInstanceBots` within an `AppInstance` to invoke an Amazon Lex V2 bot, use a wildcard. For example:
 `arn:aws:chime:{{region}}:{{aws-account-id}}:{{app-instance}}/{{app-instance-id}}/bot/*`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

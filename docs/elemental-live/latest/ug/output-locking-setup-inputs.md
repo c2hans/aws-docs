@@ -18,7 +18,3 @@ This section refers to *pools*. For an explanation of pools, see [Output locking
 
    In the **Input – Video Selector** section of the event: Set the following fields as specified in the following table.
 <a name="table-output-locking-event-setup-input-fields"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/output-locking-setup-inputs.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

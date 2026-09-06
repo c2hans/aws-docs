@@ -75,7 +75,3 @@ The preceding figure provides an illustration of this alternate bridge model. No
 <a name="weighing-the-tradeoffs-1"></a>
 
  The tradeoffs of using Amazon RDS are fairly straightforward. The primary theme is often more about trading management and provisioning complexity for agility. Overall, the pain points of provisioning automation are likely lower with the silo model on Amazon RDS. However, the cost and management efficiency associated with the pool model is often compelling. This is especially significant as you think about how these models will align with your continuous delivery environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

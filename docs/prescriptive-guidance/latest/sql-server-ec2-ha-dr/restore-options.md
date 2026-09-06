@@ -68,7 +68,3 @@ The process consists of these steps:
 1. The file gateway transfers data to the S3 bucket asynchronously. It optimizes data transfer and uses HTTPS to encrypt data in transit.
 
 1. After data is uploaded to the S3 bucket, it stays in the file gateway's local cache until it is evicted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -300,7 +300,3 @@ With deep health checks enabled, the replacement node must pass all configured d
 + Deep health checks run on worker nodes only. Controller and login nodes are not subject to deep health checks.
 + Only one on-demand deep health check request can be active per cluster at a time.
 + If an on-demand check triggers a node reboot or replacement, the replacement node only runs deep health checks if `OnStartDeepHealthChecks` is enabled on the instance group. Otherwise, the node rejoins without re-running deep health checks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

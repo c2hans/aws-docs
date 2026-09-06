@@ -42,7 +42,3 @@ Amazon S3 Block Public Access has four settings that control public access:
 
 1. **RestrictPublicBuckets** - Amazon S3 will ignore public and cross-account access for buckets or access points with policies that grant public access to buckets and objects.
 When you set `@@assign` to `"all"`, all four settings are consolidated and enabled at the organization level, providing comprehensive protection against public access across all accounts in your organization. If you want to manage Amazon S3 Block Public Access at an account level, you should disable S3 Policy type at the organization level
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

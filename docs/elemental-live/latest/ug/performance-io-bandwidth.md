@@ -45,7 +45,3 @@ Notice that the 4K output requires approximately four times as much bandwidth as
 - ** SMPTE 2022-6**
   - **Resolution of the output:**  1080p60 / **Expected bandwidth (Gbps) for the workflow:** 3
   - **Resolution of the output:** 4Kp60 / **Expected bandwidth (Gbps) for the workflow:** 12
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

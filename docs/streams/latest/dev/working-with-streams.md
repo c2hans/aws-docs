@@ -24,7 +24,3 @@ In this section, you learn how to set the capacity mode for the stream and how t
 + [Tag your Amazon Kinesis Data Streams resources](tagging.md)
 + [Handle large records](large-records.md)
 + [Perform resilience testing with AWS Fault Injection Service](kinesis-fis.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

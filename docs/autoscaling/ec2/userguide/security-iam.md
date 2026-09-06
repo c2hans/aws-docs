@@ -30,7 +30,3 @@ We recommend that you read the Amazon EC2 topics first. See [Identity and access
 + [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md)
 + [Control Amazon EC2 launch template usage in Auto Scaling groups](ec2-auto-scaling-launch-template-permissions.md)
 + [IAM role for applications that run on Amazon EC2 instances](us-iam-role.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -57,7 +57,3 @@ The recommendation must be in a terminal state (`COMPLETED` or `FAILED`). This c
 |  `AccessDeniedException`  | 403 | Insufficient permissions. |
 |  `ThrottlingException`  | 429 | Request rate exceeded. |
 |  `InternalServerException`  | 500 | Service-side error. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ The log files are archived periodically (every 60 minutes) and moved to the corr
 DataSync moves the archived log files from EFS to S3 every 60 minutes. Runtime logs are saved to `s3://<STACK_NAME>-datasynclogsbucket-<RANDOM_STRING>/<CONTAINER_ID>/archived`. Metrics logs are saved to `s3://<STACK_NAME>-datasyncmetricsbucket-<RANDOM_STRING>/<CONTAINER_ID>/archived`.
 
 If you need to access the Prebid Server logs before they are copied by AWS DataSync, then mount the EFS filesystem directly using the procedure described in [Accessing Prebid Server logs from EFS](accessing-prebid-server-logs-from-efs.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying a Prebid Server on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ The titles of the sample projects are:
 + Partitioning: this blueprint creates a partitioning job that places output files into partitions based on specific partition keys.
 + Importing Amazon S3 data into a DynamoDB table: this blueprint imports data from Amazon S3 into a DynamoDB table.
 + Standard table to governed: this blueprint imports an AWS Glue Data Catalog table into a Lake Formation table.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

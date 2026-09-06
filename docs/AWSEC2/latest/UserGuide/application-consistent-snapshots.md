@@ -56,7 +56,3 @@ The process for taking application-consistent, VSS based EBS snapshot scripts co
 1. The system adds all newly-created snapshots to the list of EBS snapshots. The system tags all VSS based EBS snapshots successfully created by this process with **AppConsistent:true**.
 
 1. If you need to restore from a snapshot, you can use the standard EBS process of creating a volume from a snapshot, or you can restore all volumes to an instance by using a sample script, as described in [Use the AWS VSS solution to restore data for your instance](application-consistent-snapshots-restore.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

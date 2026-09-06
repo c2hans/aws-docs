@@ -66,7 +66,3 @@ You can use Route 53 to route traffic to an interface endpoint. For more inform
 If you use Amazon WorkMail for business email and Route 53 as your DNS service, you can use Route 53 to route traffic to your Amazon WorkMail email domain. For more information, see [Routing traffic to Amazon WorkMail](routing-to-workmail.md).
 
 For more information see [Routing internet traffic to your AWS resources](routing-to-aws-resources.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

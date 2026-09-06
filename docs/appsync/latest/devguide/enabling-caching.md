@@ -258,7 +258,3 @@ AWS AppSync [compresses](https://docs.aws.amazon.com/AmazonCloudFront/latest/Dev
 AWS AppSync can compress GraphQL query payload sizes between 1,000 to 10,000,000 bytes. To enable compression, a client must send the `Accept-Encoding` header with the value `gzip`. Compression can be verified by checking the `Content-Encoding` header's value in the response (`gzip`).
 
 The query explorer in the AWS AppSync console automatically sets the header value in the request by default. If you execute a query that has a large enough response, compression can be confirmed using your browser developer tools.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

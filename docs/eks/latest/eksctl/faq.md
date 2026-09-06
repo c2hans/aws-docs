@@ -58,7 +58,3 @@ For the Nginx Ingress Controller, setup would be the same as [any on other Kuber
  **I’m using an HTTPS proxy and cluster certificate validation fails, how can I use the system CAs?**
 
 Set the environment variable `KUBECONFIG_USE_SYSTEM_CA` to make `kubeconfig` respect the system certificate authorities.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

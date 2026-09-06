@@ -48,7 +48,3 @@ When using Redshift-managed VPC endpoints, keep the following in mind:
 For information about quotas and naming constraints, see [Quotas and limits in Amazon Redshift](amazon-redshift-limits.md).
 
 For information about pricing, see [AWS PrivateLink pricing](https://aws.amazon.com/privatelink/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

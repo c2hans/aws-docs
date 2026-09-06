@@ -18,7 +18,3 @@ The following table gives an overview of the Amazon Q Business Google Drive conn
   - **Feature:** Entities / **Support:** Yes. The following entities are supported: +  Files See [What is a document?](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-doc-crawl.html) for more details on what each connector crawls as a document.
   - **Feature:** Filters / **Support:** Yes. The following filters are supported: +  Include/exclude by shared drive IDs <br />+  Include/exclude by MIME types (e.g., `application/pdf`, `application/vnd.google-apps.document`) <br />+  Date range filtering
   - **Feature:** [File types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html) / **Support:** Supports all file types supported by Amazon Q. For more information see [Doc types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

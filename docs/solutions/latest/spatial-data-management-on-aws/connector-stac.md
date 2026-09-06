@@ -232,7 +232,3 @@ The update trigger uses a three-step delete-wait-recreate pattern because many S
 1.  **POST** the updated item.
 
 This pattern is reusable for any REST API that doesn’t support idempotent PUT operations. See [connected resources](connector-rest-api.md#rest-connected-resources) in the REST API connector documentation for more on multi-step patterns.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

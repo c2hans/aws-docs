@@ -86,7 +86,3 @@ To change containerization settings for a Lambda function component, set the val
 + `GreengrassContainer` – The component runs in an isolated runtime environment inside the AWS IoT Greengrass container.
 
 For more information about how to deploy and configure components, see [Deploy AWS IoT Greengrass components to devices](manage-deployments.md) and [Update component configurations](update-component-configurations.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

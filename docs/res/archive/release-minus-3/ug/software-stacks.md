@@ -121,7 +121,3 @@ RES does not have a default software stack for Rocky Linux 9, so this section of
 ![AMI Catalog page showing Selected AMI field with ami-0a73e96a849c232cc and Rocky Linux 9 search.](http://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/res-ami-catalog.png)
 
 1. Go to the RES portal, and register a new Software Stack under the **Software Stacks** page using this AMI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -188,7 +188,3 @@ Use either of the following methods to register a CA certificate for your AD Con
   If successful, AD Connector returns an `HTTP 200` response with an empty HTTP body.
 
 For more information on viewing your certificate, deregistering or disabling your certificate, see [Managing smart card authentication settings](manage-clientauth.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

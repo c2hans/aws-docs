@@ -154,7 +154,3 @@ A time interval is a definition for a range of time. If an alert is initiated du
 + **Days of the week** – The days of the week. Can be a single day, such as `monday`, a range, such as `monday:friday`, or a comma-separate list of days, such as `monday, tuesday, wednesday`.
 + **Months** – The months to select. You can specify months with numeric designations, or with the full month name, for example `1` or `january` both specify January. You can specify a single month, a range of months, or a comma-separated list of months.
 + **Days of the month** – The dates within a month. Values can range from `1`-`31`. Negative values specify days of the month in reverse order, so `-1` represents the last day of the month. Days of the month can be specified as a single day, a range of days, or a comma-separate list of days.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

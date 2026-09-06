@@ -457,7 +457,3 @@ if smp.rdp_rank() == 0:
 To find available translation functions in SMP v1, see [Support for Hugging Face Transformer Models](model-parallel-extended-features-pytorch-hugging-face.md).
 
 For instruction on model checkpoints saving and loading in SMP v2, see [Checkpointing using SMP](model-parallel-core-features-v2-checkpoints.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -188,7 +188,3 @@ Cannot use 'jsii.Strings("arn:aws:s3:::bucket1", "arn:aws:s3:::bucket2")' (type 
 ```
 
 To resolve this error, replace `jsii.Strings()` with `jsii.AnyStrings()`. See this ` [CDK GitHub issue](https://github.com/aws/aws-cdk/issues/35630) ` for more context and additional solutions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

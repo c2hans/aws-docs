@@ -19,7 +19,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
   +  Provide structured time to experiment: Dedicate specific times when team members can be free of their normal responsibilities, so that they can focus on their experiments.
   +  Provide the resources to support experimentation: Fund the resources required to conduct experiments (for example, software, or cloud resources).
   +  Acknowledge success: Recognize the value yielded by experimentation. Understand that experiments with undesired outcomes are successful and have identified a path that will not lead to success. Team members are not punished for undesired outcomes from experiments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

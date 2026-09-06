@@ -87,7 +87,3 @@ For more information about the Regions and endpoints available for CodePipeline,
 <a name="next-steps"></a>
 
 You have completed the prerequisites. You can begin using CodePipeline. To start working with CodePipeline, see the [CodePipeline tutorials](tutorials.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

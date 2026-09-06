@@ -26,7 +26,3 @@ The following are examples of when long polling may be useful:
 + **Long poll for result** — Use `ExecuteStatement` to submit the query, then call `GetStatementResult` with `WaitTimeSeconds`. When the query finishes, result data is returned directly. If the query is still running when the wait time expires, a `ResourceNotFoundException` is returned indicating no results are available yet.
 + **Submit multiple queries and wait for the entire batch to complete** — Use `BatchExecuteStatement` with `WaitTimeSeconds`. The call holds open until all sub-statements complete and returns the batch parent ID and overall status.
 + **Submit multiple queries and long poll status for a sub-statement** — Use `DescribeStatement` or `GetStatementResult` with the sub-statement ID and `WaitTimeSeconds`. Returns as soon as that sub-statement finishes, without waiting for the rest of the batch.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,7 +53,3 @@ Cloud computing is a way of purchasing IT infrastructure as services with a pay-
 Cloud computing supports micro-frontends by providing highly managed infrastructure. This makes end-to-end ownership easier for cross-functional teams. While the team should have strong operations knowledge, the manual tasks of infrastructure provisioning, operating system updates, and networking would be a distraction.
 
 Because micro-frontends live in bounded contexts, teams can choose the most suitable service to run them. For example, teams can choose between cloud functions and containers for compute, and they can choose between different flavors of SQL and NoSQL databases or in-memory caches. Teams can even build their micro-frontends on a highly integrated toolkit such as [AWS Amplify](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html), which comes with preconfigured building blocks for serverless infrastructure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

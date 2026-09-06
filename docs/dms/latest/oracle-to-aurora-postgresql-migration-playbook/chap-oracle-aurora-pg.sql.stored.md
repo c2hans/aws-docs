@@ -397,7 +397,3 @@ id |g
 Here the planner could choose to put the set-return function on the outside of the nestloop join, since it has no actual lateral dependency on emps table.
 
 For more information, see [CREATE FUNCTION](https://www.postgresql.org/docs/13/sql-createfunction.html), [PL/pgSQL — SQL Procedural Language](https://www.postgresql.org/docs/13/plpgsql.html), [https://www.postgresql.org/docs/13/xplang.html](https://www.postgresql.org/docs/13/xplang.html), and [Query Language (SQL) Functions](https://www.postgresql.org/docs/13/xfunc-sql.html) in the *PostgreSQL documentation*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

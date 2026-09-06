@@ -19,7 +19,3 @@ To specify the CPU options for your instance, be aware of the following rules:
 + To save on licensing costs for instances launched from Windows and SQL Server license-included AMIs, you must configure a minimum of four vCPUs. If you configure fewer than four vCPUs, default billing is applied.
 + Optimize CPUs for License-Included instances is not supported on T3 instance types.
 + Optimize CPUs for License-Included instances is not supported on Dedicated Instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

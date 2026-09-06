@@ -16,7 +16,3 @@ In a "push" delivery, the upstream system is pushing the stream *from *two IP ad
 1. Set up your upstream system to perform an RTP push from two different IP addresses. You must push from two addresses because MediaLive always expects redundant inputs.
 
 1. Make a note of the IP addresses. For example, **203.0.113.111** and from **203.0.113.112**. You will need these addresses when you set up the input security group in a later step.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -238,7 +238,3 @@ The following limitations apply:
 + You cannot change this parameter after session initialization.
 + `aws.availSuppressionValue` must not be provided when mode is `OFF`.
 + Invalid time format in `aws.availSuppressionValue` causes mode to fall back to `OFF`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

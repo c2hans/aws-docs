@@ -50,7 +50,3 @@ Note the following when configuring this type of access:
 1. Follow the instructions in [Signing up for a Quick subscription](https://docs.aws.amazon.com/quicksuite/latest/userguide/signing-up.html) in the Quick documentation. Choose **Enterprise**, and then choose **Use IAM Identity Center enabled application**. Depending on which existing IAM Identity Center instances are available in your AWS account, you can select between an organization instance or account instance.
 
 1. To assign Quick roles to IAM Identity Center groups, follow the instructions in [Managing access for IAM Identity Center users](https://docs.aws.amazon.com/quicksuite/latest/userguide/managing-user-access-idc.html) in the Quick documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ To optimize delivery throughput, Amazon SNS FIFO topics deliver messages from di
 Amazon SNS FIFO topics are optimized for uniform distribution of messages across message group IDs, regardless of the number of groups. AWS recommends that you use a large number of distinct message group IDs for optimized performance.
 
 When publishing to your Amazon SNS FIFO topic with high throughput and one or more Amazon SQS FIFO queues are subscribed, it is recommended that you enable high throughput on your queues. For more see [High throughput for FIFO queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/high-throughput-fifo.html) in the *Amazon Simple Queue Service Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

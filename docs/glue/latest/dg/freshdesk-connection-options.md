@@ -17,7 +17,3 @@ The following are connection options for Freshdesk:
 + `NUM_PARTITIONS`(Integer) - Default: 1. Used for Read. Number of partitions for read.
 + `INSTANCE_URL`(String) - (Required) Used for Read. A valid Freshdesk instance URL.
 + `TRANSFER_MODE`(String) - Used to indicate whether the type of processing like `SYNC` or `ASYNC` is set to `SYNC` by default. (Optional)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

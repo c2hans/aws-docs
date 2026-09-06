@@ -60,7 +60,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-people-perspe
  To increase and continue alignment, develop and implement bottom-up mechanisms for teams and individuals to identify and rectify any alignment-related friction points related to design or structure, business processes, talent, and culture. This can be done in conjunction with the cascaded goals. Where goals are missed, or even substantially exceeded, the change acceleration team can conduct deep dive feedback sessions to assess misalignment issues as potential causal factors.
 
  As market conditions change or as new opportunities arise, ensure that your cascading goals systems are capable of responding in a timely manner and that your feedback systems are sensitive enough to detect potential areas of misalignment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

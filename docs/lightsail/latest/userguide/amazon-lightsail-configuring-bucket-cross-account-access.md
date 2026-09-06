@@ -31,7 +31,3 @@ Complete the following procedure to configure cross-account access for a bucket.
 1. Choose **Save** to grant access. Otherwise, choose **Cancel**.
 
    The AWS account ID you added is listed in the **Cross-account access** section of the page. To remove cross-account access for an AWS account, choose the delete (trash can) icon next to the AWS account ID that you want to remove.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ In the [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIRef
 | eval\_metrics | A list of metrics used to score a labeled test data set. The following metrics can be selected for output:+  `accuracy` - returns fraction of correct predictions. <br />+  `precision_recall_fscore` - returns the positive and negative precision, recall, and F1-scores. <br />**Optional**<br />Valid values: a list with possible values taken from `accuracy` or `precision_recall_fscore`. <br />Default value: Both `accuracy`, `precision_recall_fscore` are calculated. |
 | num\_samples\_per\_tree | Number of random samples given to each tree from the training data set.<br />**Optional**<br />Valid values: Positive integer (min: 1, max: 2048)<br />Default value: 256 |
 | num\_trees | Number of trees in the forest.<br />**Optional**<br />Valid values: Positive integer (min: 50, max: 1000)<br />Default value: 100 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

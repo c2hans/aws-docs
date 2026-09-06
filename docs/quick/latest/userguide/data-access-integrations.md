@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/data-access-integ
 # Data access integrations
 <a name="data-access-integrations"></a>
 
-Data access integrations in Amazon Quick establish secure connections to external data sources. They serve as the foundation for creating knowledge bases. Unlike action connectors that perform actions, data access integrations focus on accessing and indexing content from third-party applications and services.
+Data access integrations in Amazon Quick establish secure connections to external data sources. They serve as the foundation for creating knowledge bases. Unlike connectors that perform actions, data access integrations focus on accessing and indexing content from third-party applications and services.
 
 Data access integrations only configure authentication and point to the project or organization of the service. They cannot be used directly for analysis or by AI agents. You must create a connected knowledge base to make the data accessible.
 
@@ -140,8 +140,4 @@ Before creating data access integrations, ensure you have the following requirem
 + **Authentication credentials** - Valid credentials or service accounts for the target system.
 + **Network connectivity** - Ensure Amazon Quick can access your data sources. Network requirements differ by integration type:
   + **Knowledge bases** - Do not support VPC connectivity. Data sources must be accessible over the public internet.
-  + **Action connectors** - Support VPC connectivity for resource servers within your VPC. However, authentication servers must remain publicly accessible.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+  + **Connectors** - Support VPC connectivity for resource servers within your VPC. However, authentication servers must remain publicly accessible.

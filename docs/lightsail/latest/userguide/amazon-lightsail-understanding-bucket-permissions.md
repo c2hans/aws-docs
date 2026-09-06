@@ -61,7 +61,3 @@ For more information about configuring resource access, see [Configure resource 
 <a name="s3-block-public-access"></a>
 
 Use the Amazon S3 block public access feature to centrally limit public access to buckets in Amazon S3 and in Lightsail. Block public access can make all Amazon S3 and Lightsail buckets private regardless of the individual bucket and object permissions that might have been configured. You can use the Amazon S3 console, AWS CLI, AWS SDKs, and REST API to configure block public access settings for all buckets in your account, including those in the Lightsail object storage service. For more information, see [Block public access for buckets](amazon-lightsail-block-public-access-for-buckets.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

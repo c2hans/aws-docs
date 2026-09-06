@@ -14,7 +14,3 @@ When you create a support case, you own the information that you include in your
 + Your support cases follow [Compliance validation for AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/support-compliance.html).
 + When you create a support case, AWS doesn't gain access your account. If necessary, support agents use a screen-sharing tool to view your screen remotely and identify and troubleshoot problems. This tool is view-only. AWS Support can't act for you during the screen-share session. You must give consent to share a screen with a support agent. For more information, see the [AWS Support FAQs](https://aws.amazon.com/premiumsupport/faqs/).
 + You can change your AWS Support plan to get the help that you need for your account. For more information, see [Compare AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/) and [Changing your AWS Support plan](https://docs.aws.amazon.com/awssupport/latest/user/changing-support-plans.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

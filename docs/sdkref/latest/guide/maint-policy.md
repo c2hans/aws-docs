@@ -56,7 +56,3 @@ Maintenance announcements are communicated in several ways:
 +  Deprecation warnings are added to the SDKs, outlining the path to end-of-support and linking to the SDK documentation.
 
 To see the list of available major versions of AWS SDKs and Tools and where they are in their maintenance lifecycle, see [AWS SDKs and Tools version lifecycle](version-support-matrix.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdkref` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

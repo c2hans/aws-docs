@@ -35,7 +35,7 @@ Long-running COPY commands that load large uncompressed datasets often have an o
 
 **Recommendation**
 
-Ensure that each COPY that loads a significant amount of data, or runs for a significant duration, ingests compressed data objects from Amazon S3. You can identify the COPY commands that load large uncompressed datasets from Amazon S3 by running the following SQL command as a superuser.
+Make sure that each COPY that loads a significant amount of data, or runs for a significant duration, ingests compressed data objects from Amazon S3. You can identify the COPY commands that load large uncompressed datasets from Amazon S3 by running the following SQL command as a superuser.
 
 ```
 SELECT
@@ -72,7 +72,7 @@ The Advisor analysis reviews all databases on the cluster for active workloads r
 
 **Recommendation**
 
-Consider moving each actively queried database to a separate dedicated cluster. Using a separate cluster can reduce resource contention and improve query performance. It can do so because it allows you to set the size for each cluster for the storage, cost, and performance needs of each workload. Also, unrelated workloads often benefit from different workload management configurations.
+Consider moving each actively queried database to a separate dedicated cluster. Using a separate cluster can reduce resource contention and improve query performance. It can do so because you can set the size for each cluster for the storage, cost, and performance needs of each workload. Also, unrelated workloads often benefit from different workload management configurations.
 
 To identify which databases are actively used, you can run this SQL command as a superuser.
 
@@ -185,7 +185,7 @@ WHERE b.complyze_sec IS NOT NULL ORDER BY a.copy_sql, a.starttime;
 ```
 
 **Implementation tips**
-+ Ensure that all tables of significant size created during your ETL processes (for example, staging tables and temporary tables) declare a compression encoding for all columns except the first sort key.
++ Make sure that all tables of significant size created during your ETL processes (for example, staging tables and temporary tables) declare a compression encoding for all columns except the first sort key.
 + Estimate the expected lifetime size of the table being loaded for each of the COPY commands identified by the SQL command preceding. If you are confident that the table will remain extremely small, turn off compression altogether with the `COMPUPDATE OFF` parameter. Otherwise, create the table with explicit compression before loading it with the COPY command.
 
 ## Split Amazon S3 objects loaded by COPY
@@ -404,7 +404,3 @@ Advisor performs analysis of your cluster's workload and database schema continu
  Copying existing data to the new column can take time. We recommend that you implement each advisor recommendation when the cluster’s workload is light. Reference the list of available data types at [Data types](c_Supported_data_types.md).
 
  Note that Advisor doesn't provide recommendations when there isn't enough data or the expected benefit of changing the data type is small.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

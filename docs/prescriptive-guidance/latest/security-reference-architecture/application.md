@@ -178,7 +178,3 @@ The Application account provides an opportunity to illustrate layered defense pr
 + The instances, and the software running on these instances, sit with your AWS networking infrastructure. In addition to using the [security features of Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/security.html) the AWS SRA also makes use of VPC endpoints to provide private connectivity between the VPC and supported AWS services, and to provide a mechanism to place access policies at the network boundary.
 + The activity and configuration of the EC2 instances, software, network, and IAM roles and resources are further monitored by AWS account-focused services such as AWS Security Hub CSPM, AWS Security Hub, Amazon GuardDuty, AWS CloudTrail, AWS Config, IAM Access Analyzer, and Amazon Macie.
 + Finally, beyond the Application account, AWS RAM helps control which resources are shared with other accounts, and IAM service control policies help you enforce consistent permissions across the AWS organization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

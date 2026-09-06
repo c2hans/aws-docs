@@ -82,7 +82,3 @@ You can’t describe or access additional Regions from the AWS GovCloud (US) Reg
  AWS compliance enables customers to understand the robust controls in place at AWS to maintain security and data protection in the cloud. AWS engages with external certifying bodies and independent auditors to provide customers with extensive information regarding the policies, processes, and controls established and operated by AWS.
 
  To learn more, see [AWS Compliance](https://aws.amazon.com/compliance/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

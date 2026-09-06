@@ -12,7 +12,3 @@ The following are limitations or notes for the ServiceNow connector:
 + Enhance read performance and efficiency
   + The ServiceNow connector now automatically sorts the records in ascending order by the `sys_id` field (must be present in metadata) when no ORDER BY clause is specified by the user. In this case, records will be paginated by the new optimized keyset based pagination.
   + If the ORDER BY clause is specified, the new optimization will not be used and the records will be fetched using the existing (user defined Order By and Offset-Limit based pagination) method.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

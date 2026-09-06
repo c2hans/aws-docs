@@ -192,7 +192,3 @@ FSx VPC Sharing has been disabled. Please ensure that the owner of the VPC has e
 ```
 
 To resolve the issue, contact the owner account that shared the VPC subnet with you and ask them to re-enable Multi-AZ VPC sharing or reshare the subnet. For more information, see [Creating a FSx for OpenZFS file system using shared subnets](creating-file-systems.md#creating-fs-shared-subnets).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

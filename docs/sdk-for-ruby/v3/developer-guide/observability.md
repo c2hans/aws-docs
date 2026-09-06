@@ -177,7 +177,3 @@ Traces are the output of telemetry. Traces consist of one or more spans. Spans h
 
 **Tip**
 OpenTelemetry-Ruby has additional implementations that are integrated with SDK for Ruby's existing Telemetry support. For more information, see [OpenTelemetry AWS-SDK Instrumentation](https://github.com/open-telemetry/opentelemetry-ruby-contrib/tree/main/instrumentation/aws_sdk) in the `open-telemetry` GitHub repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Ruby. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-ruby` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

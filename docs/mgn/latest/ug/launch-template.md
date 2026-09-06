@@ -64,7 +64,3 @@ Use this setting to determine whether to apply Migration Acceleration Program (M
 Select **Add MAP tag to Launched Instances** option, if you want MGN to automatically tag your launched instances with the tag key and value combination required for MAP program. Once selected you must specify the MAP tag value that is used in your MAP tagging. MGN automatically tags your migrated resources with the key: “map-migrated” and the value of the tag that you provided. For more details about the tag value that should be used here, refer to the MAP tagging guide provided in your MAP term.
 
 [Learn more about the AWS Migration Acceleration Program (MAP).](https://aws.amazon.com/migration-acceleration-program)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,7 +64,3 @@ Cost Optimization Hub generates recommendations for the following resources:
 + NAT Gateway
 
 Resource rightsizing and idle resource recommendations are provided by AWS Compute Optimizer. To see what type of recommendations are supported for each resource, see [AWS resources supported by Compute Optimizer](https://docs.aws.amazon.com/compute-optimizer/latest/ug/supported-resources.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

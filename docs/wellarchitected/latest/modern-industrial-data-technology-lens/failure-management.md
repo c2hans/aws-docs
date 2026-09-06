@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 + [MIDAREL04-BP03 Use versioning and automated backup procedures](midarel04-bp03.md)
 + [MIDAREL05-BP01 Design a multi-Region disaster recovery strategy](midarel05-bp01.md)
 + [MIDAREL05-BP02 Implement and regularly test DR procedures](midarel05-bp02.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

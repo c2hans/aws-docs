@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/troubleshootin
 
 Use `pcluster-diag` as a first step when a cluster misbehaves at runtime. The tool emits a JSON diagnostics report to help you understand the problems that are affecting your cluster. If you can't resolve a problem, attach the report to an AWS Support case.
 
-The tool is included in every AWS ParallelCluster AMI starting with version 3.16.0, both the official AMIs and the custom AMIs that you build with `pcluster build-image`.
+The tool is included in every AWS ParallelCluster AMI starting with version 3.16.0, both the official AMIs and the custom AMIs that you build with `pcluster build-image`. If you use an older AWS ParallelCluster version, you can still install the tool by following the steps in [Versions older than 3.16.0](#troubleshooting-v3-pcluster-diag-updates-older).
 
 You can run `pcluster-diag` on any cluster node. If you don't know where the problem is, run it on the head node.
 
@@ -18,7 +18,7 @@ You can run `pcluster-diag` on any cluster node. If you don't know where the pro
 + **Read-only by default** – it never changes the configuration of your cluster. A check that isn't read-only requires your explicit approval before it runs, and records it as skipped if you decline.
 + **Complete in a single run** – a check that fails never stops the others. Every applicable check runs on every invocation, so one run gives you the complete picture of the node, according to the available checks.
 
-## Available checks
+## Show available checks
 <a name="troubleshooting-v3-pcluster-diag-checks"></a>
 
 To see which checks the tool will execute, use the `describe-checks` subcommand, which returns a JSON array of every registered check, each with its id and description.
@@ -34,7 +34,7 @@ $ pcluster-diag describe-checks
 ]
 ```
 
-## Run `pcluster-diag`
+## Execute the checks
 <a name="troubleshooting-v3-pcluster-diag-run"></a>
 
 Connect to the node that you want to diagnose, and then execute the `run` subcommand as root.
@@ -94,7 +94,7 @@ The `status` of each check tells you what to do with it.
 | `FAILURE` | This check found a problem on the node. | Review the `errors` list and address all the problems. |
 | `CHECK_ERROR` | The check couldn't complete, so status couldn't be confirmed. | Treat it as inconclusive, not as a problem. Report the error to AWS Support because it might be the signal of an unhandled error. |
 | `SKIPPED_NOT_APPLICABLE` | The check doesn't apply to this node type or to your cluster configuration. | Nothing. This is the expected status for features that your cluster doesn't use. |
-| `SKIPPED_BY_USER` | The check required your confirmation and you declined it. | Rerun pcluster-diag, approving the check when prompted. |
+| `SKIPPED_BY_USER` | The check required your confirmation and you declined it. | Rerun `pcluster-diag`, approving the check when prompted. |
 
 If every check reports `PASSED`, `pcluster-diag` found no problems. However, the coverage of `pcluster-diag` is not comprehensive and will grow with every release. A healthy diagnosis does not guarantee that the cluster is healthy.
 
@@ -106,12 +106,19 @@ A check result can carry three kinds of findings, each with a `code` and a `mess
 + `warnings`, coded `W{{n}}`, are non-fatal observations.
 + `infos`, coded `I{{n}}`, are contextual notes.
 
-## Get the latest updates from GitHub
+## Get the latest `pcluster-diag` from GitHub
 <a name="troubleshooting-v3-pcluster-diag-updates"></a>
 
-New checks and improved diagnostic messages land in the [aws-parallelcluster-cookbook](https://github.com/aws/aws-parallelcluster-cookbook) repository on the GitHub website. To use the latest checks without waiting for the next release, you can refresh the copy of the tool on a running node in place.
+`pcluster-diag` is available on all AWS ParallelCluster versions 3.16.0 and later, and can also be installed on older versions with some additional steps.
 
-Run the following on the node that you want to update. It replaces the tool source under `/opt/parallelcluster/sources/pcluster-diag` with the version on the `develop` branch.
+New checks and improved diagnostic messages land in the [aws-parallelcluster-cookbook](https://github.com/aws/aws-parallelcluster-cookbook) repository on the GitHub website. To use the latest checks without waiting for the next AWS ParallelCluster release, follow the steps for your AWS ParallelCluster version.
+
+### Versions 3.16.0 and later
+<a name="troubleshooting-v3-pcluster-diag-updates-current"></a>
+
+In AWS ParallelCluster versions 3.16.0 and later, the `pcluster-diag` command is installed and available on `PATH`.
+
+To update the tool from the `develop` branch, run the following on the node where you want to execute the tool.
 
 ```
 $ curl -fL https://github.com/aws/aws-parallelcluster-cookbook/archive/refs/heads/develop.tar.gz \
@@ -119,10 +126,10 @@ $ curl -fL https://github.com/aws/aws-parallelcluster-cookbook/archive/refs/head
     --wildcards '*/cookbooks/aws-parallelcluster-platform/files/pcluster-diag/*'
 ```
 
-Confirm which version you now have:
+Verify the tool is functional:
 
 ```
-$ sudo pcluster-diag --version
+$ sudo pcluster-diag describe-checks
 ```
 
 To use a version other than the tip of `develop`, replace `develop` in the URL with the branch or the tag you want, for example a `release-*` branch.
@@ -131,6 +138,22 @@ Keep the following in mind:
 + The refresh applies only to the node that you run it on. Repeat it on every node that you want to diagnose with the newer checks.
 + The tool source is baked into the AMI, so a node that gets replaced comes back with the version from the AMI.
 
-## See also
+### Versions older than 3.16.0
+<a name="troubleshooting-v3-pcluster-diag-updates-older"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+In AWS ParallelCluster versions older than 3.16.0, the `pcluster-diag` command isn't installed on the node.
+
+To install the tool from the `develop` branch, run the following on the node where you want to execute the tool.
+
+```
+$ sudo mkdir -p /opt/parallelcluster/sources/pcluster-diag
+curl -fL https://github.com/aws/aws-parallelcluster-cookbook/archive/refs/heads/develop.tar.gz \
+  | sudo tar -xz --strip-components=5 -C /opt/parallelcluster/sources/pcluster-diag \
+    --wildcards '*/cookbooks/aws-parallelcluster-platform/files/pcluster-diag/*'
+```
+
+Verify the tool is functional:
+
+```
+$ PYTHONPATH=/opt/parallelcluster/sources/pcluster-diag /opt/parallelcluster/pyenv/versions/{{3.12.8}}/envs/cookbook_virtualenv/bin/python3 -m pcluster_diag.cli describe-checks
+```

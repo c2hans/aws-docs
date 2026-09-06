@@ -46,7 +46,3 @@ CD facilitates the transition of modernized mainframe applications to AWS by aut
 + **Frequent release cycles** – By using CD  your organization can release new features, enhancements, and modernized code more frequently. This agility helps businesses to adapt to changing requirements and stay competitive.
 + **Rollback capabilities** – CD pipelines should include rollback mechanisms. If there are issues or unexpected behavior in the AWS environment, teams can use the mechanisms to revert to a previous version of an application.
 + **Infrastructure as code** – CD can be combined with infrastructure as code (IaC) tools such as AWS CloudFormation or HashiCorp Terraform to define and provision infrastructure consistently. Consistent provisioning helps to ensure that the AWS environment matches the required configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

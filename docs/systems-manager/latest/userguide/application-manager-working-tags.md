@@ -46,7 +46,3 @@ Use the following procedure to add a tag to or delete a tag from a specific reso
 1. To add a tag, choose **Add new tag**. Specify a key and an optional value. To delete a tag, choose **Remove**.
 
 1. Choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

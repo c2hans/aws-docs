@@ -31,7 +31,3 @@ find {{path/to/export/file}} -type f -print0 | xargs -0 -n 1 -P 8 sudo lfs hsm_s
 ```
 
 If the command returns with zero files remaining, the export is complete.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -94,7 +94,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
  Although this approach has the benefit of unlocking new player engagement strategies and delivering recurring revenue streams, it requires more operational expertise. For example, to implement a successful Live Ops strategy, a developer may need to integrate with cloud services or operate their own backend technical infrastructure. They also need an effective way to identify and respond to issues that arise in the game, or within the player community, that can negatively impact the player experience.
 
  ** **
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

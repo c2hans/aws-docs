@@ -19,7 +19,3 @@ The following tables list and describe the requirements for ordering and porting
 - **SIP Media Application Dial-In**
   - **Number types:** Local / **Required ID:** +  Last invoice from current provider <br />+  Letter of Authorization <br />+  Business address <br />+  A copy of your business registration <br />+  Copy of the company representative's ID Business addresses must have the same geographic zone as their corresponding phone numbers.
   - **Number types:** Toll-free / **Required ID:** +  Last invoice from current provider <br />+  Letter of Authorization <br />+  Number certificate from NRAs You must first obtain the number directly from the local regulator. Details about the process are provided when you make the request
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

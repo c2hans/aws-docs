@@ -36,7 +36,3 @@ Example use cases include the following:
 + A contract summarization agent is updated based on feedback from legal teams. Versioned prompts are tested in sandboxed environments before production release, supporting safety and quality.
 
 With structured lifecycle management, organizations move beyond reactive maintenance to proactive, continuous improvement. Agents become adaptive digital assets that are measured, refined, and revalidated against business goals. This practice transforms agent ecosystems into high-performing, cost-aware, and resilient systems that deliver durable value while keeping pace with change.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

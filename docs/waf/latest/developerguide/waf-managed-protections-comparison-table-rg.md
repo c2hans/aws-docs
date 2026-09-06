@@ -28,7 +28,3 @@ The intelligent threat mitigation AWS Managed Rules rule groups provide manageme
 For details about costs associated with these options, see the intelligent threat mitigation information at [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
 
 If your application faces bots that rotate IP addresses and mimic browser behavior, the common protection level alone won't detect them. These bots don't self-identify and require the behavioral analysis and machine learning that targeted protection provides. For guidance on choosing the right protection level for your specific application, see [Choosing and configuring Bot Control for your use case](waf-bot-control-use-cases.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

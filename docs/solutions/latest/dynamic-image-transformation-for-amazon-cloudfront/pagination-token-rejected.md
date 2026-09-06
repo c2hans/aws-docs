@@ -15,7 +15,3 @@ Pagination tokens are encrypted, account-bound, and expire 24 hours after they a
  **Solutions:**
 + Don’t store or reuse `nextToken` values for longer than 24 hours, and don’t share them across deployments. Restart pagination from the first request to obtain a fresh token.
 + If a list request fails right after a deployment or scaling event, retry; the encryption key is cached after the first successful read, so the condition is transient.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

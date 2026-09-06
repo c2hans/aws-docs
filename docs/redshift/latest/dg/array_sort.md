@@ -48,7 +48,7 @@ When sorting arrays containing mixed data types, elements are ordered according 
 + Arrays
 + Objects/Dictionaries
 
-Within each type category, elements are sorted according to their natural ordering (e.g., numbers are sorted numerically, strings alphabetically).
+Within each type category, elements are sorted according to their natural ordering (for example, numbers are sorted numerically, strings alphabetically).
 
 ## Example
 <a name="array_sort-example"></a>
@@ -83,7 +83,3 @@ SELECT ARRAY_SORT(ARRAY('b', 'a', 0, NULL, 1, false), False, False);
 + [ARRAY\_DISTINCT function](array_distinct.md)
 + [ARRAY\_FLATTEN function](array_flatten.md)
 + [SUBARRAY function](r_subarray.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ tsm.init()
 ```
 
 [SageMaker Framework Containers](https://github.com/aws/deep-learning-containers/blob/master/available_images.md#sagemaker-framework-containers-sm-support-only) for PyTorch (see also [Supported frameworks and AWS Regions](distributed-model-parallel-support-v2.md) by SMP v2 and [Supported frameworks, AWS Regions, and instances types](distributed-data-parallel-support.md) by the SMDDP library) are pre-packaged with the SMP binary and the SMDDP binary. To learn more about the SMDDP library, see [Run distributed training with the SageMaker AI distributed data parallelism library](data-parallel.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

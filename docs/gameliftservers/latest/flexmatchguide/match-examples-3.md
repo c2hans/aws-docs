@@ -22,12 +22,12 @@ This example illustrates how to set up player teams and apply a set of rules to 
   + After 20 seconds, allow player latency values up to 150 ms.
 
 Notes on using this rule set:
-+ The rule set ensures that teams are evenly matched based on player skill. To evaluate the `FairTeamSkill` rule, FlexMatch tentatively adds the prospective player to a team and calculates the average skill of players in the team. It then compares it against the average skill of players in both teams. If rule fails, the prospective player is not added to the match.
++ The rule set ensures that teams are evenly matched based on player skill. To evaluate the `FairTeamSkill` rule, FlexMatch tentatively adds the prospective player to a team and calculates the average skill of players in the team. It then compares it against the average skill of players in both teams. If the rule fails, the prospective player is not added to the match.
 + The team- and match-level requirements (total number of medics) are achieved through a collection rule. This rule type takes a list of character attributes for all players and checks against the maximum counts. Use `flatten` to create a list for all players in all teams.
 + When evaluating based on latency, note the following:
   + Latency data is provided in the matchmaking request as part of the Player object. It is not a player attribute, so it does not need to be listed as one. To obtain accurate latency measurements, use Amazon GameLift Servers's UDP ping beacons. These endpoints enable you to measure actual UDP network latency between player devices and each of the potential hosting locations, resulting in more accurate placement decisions than using ICMP pings. For more information on using UDP ping beacons to measure latency, refer to [UDP ping beacons](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/reference-udp-ping-beacons.html).
   + The matchmaker evaluates latency by region. Any region with a latency higher than the maximum is ignored. To be accepted for a match, a player must have at least one region with a latency below the maximum.
-  + If a matchmaking request omits latency data one or more players, the request is rejected for all matches.
+  + If a matchmaking request omits latency data for one or more players, the request is rejected for all matches.
 
 ```
 {
@@ -92,7 +92,3 @@ Notes on using this rule set:
     }]
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

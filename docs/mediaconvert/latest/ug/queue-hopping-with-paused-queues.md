@@ -26,7 +26,3 @@ For example, imagine that you submit a job to `Queue1` with a wait time of 15 mi
 <a name="hopping-to-a-paused-queue"></a>
 
 Jobs hop freely from active queues to paused queues. For example, imagine that you submit a job to `Queue1` with a wait time of 15 minutes and a destination of `Queue2`. Then, five minutes after you submit the job, you pause `Queue2`. Ten minutes later (15 minutes after you submit the job), the job hops to `Queue2` and remains there, waiting until you activate the queue.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

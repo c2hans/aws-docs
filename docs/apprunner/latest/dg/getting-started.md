@@ -322,7 +322,3 @@ Now that you've deployed your first App Runner service, learn more in the follow
 + [App Runner configuration file](config-file.md) – A configuration-based way to specify options for the build and runtime behavior of your App Runner service.
 + [The App Runner API](api.md) – Use the App Runner application programming interface (API) to create, read, update, and delete App Runner resources.
 + [Security in App Runner](security.md) – The different ways that AWS and you ensure cloud security while you use App Runner and other services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

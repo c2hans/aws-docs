@@ -24,7 +24,3 @@ You may not need to tackle all the foundational capabilities at once. Evolve the
 *Evolution of AWS CAF perspectives and foundational capabilities*
 
 The next sections describe each of the six AWS CAF perspectives and the underpinning capabilities in more detail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

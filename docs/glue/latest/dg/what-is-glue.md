@@ -100,7 +100,3 @@ Learn about how customers scale AWS Glue beyond the traditional setup and how th
  Users of AWS Glue also use:
 +  ** [AWS Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html) ** – A service that is an authorization layer that provides fine-grained access control to resources in the AWS Glue Data Catalog.
 +  ** [AWS Glue DataBrew](https://docs.aws.amazon.com/databrew/latest/dg/what-is.html) ** – A visual data preparation tool that you can use to clean and normalize data without writing any code.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

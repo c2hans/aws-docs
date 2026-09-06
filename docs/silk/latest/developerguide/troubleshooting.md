@@ -15,7 +15,3 @@ When Amazon Silk does not route requests through a remote proxy server, the sour
 When browsing is routed through a remote proxy, the source IP address of the end client is supplied in the X-Forwarded-For request header. Note that different requests from a single end user may be routed through different cloud servers. In other words, a website may receive a series of requests from different source IP addresses but with the same X-Forwarded-For header.
 
 Additionally, a single Amazon Silk cloud server can support multiple end users. This means that a website may see requests with the same source IP address but different X-Forwarded-For headers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Silk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query silk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

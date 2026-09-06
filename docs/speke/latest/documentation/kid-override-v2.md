@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/speke/latest/documentation/kid-override-v2.html
 ---
 
-# SPEKE API v2 - Overriding the key identifier
+# SPEKE API v2.0 - Overriding the key identifier
 <a name="kid-override-v2"></a>
 
 The encryptor creates a new key identifier (KID) each time that it rotates keys. It passes the KID to the DRM key provider in its requests. Almost always, the key provider responds using the same KID, but it can provide a different value for the KID in the response.
@@ -68,7 +68,3 @@ The following response overrides the KID to `22222222-2222-2222-2222-22222222222
 	</cpix:ContentKeyUsageRuleList>
 </cpix:CPIX>
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Packager and Encoder Key Exchange API Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query speke` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

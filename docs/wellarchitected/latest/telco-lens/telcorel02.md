@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcor
 + [TELCOREL02-BP03 Implement a flexible network function (NF) design to leverage available infrastructure resources for autoscaling](telcorel02-bp03.md)
 + [TELCOREL02-BP04 Introduce an SCTP load balancer designed for control-plane network functions, carrier-grade performance, and high availability](telcorel02-bp04.md)
 + [TELCOREL02-BP05 Optimize failure recovery timers for the shared tenancy and potential for transient network issues in cloud environments](telcorel02-bp05.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

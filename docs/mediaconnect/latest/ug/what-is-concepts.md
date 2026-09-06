@@ -57,7 +57,3 @@ A MediaConnect capability that provides dynamic, software-defined signal routing
 
 Source
 A physical or virtual connection point in your upstream environment that transmits content into MediaConnect. A source might be an on-premises contribution encoder, an NDI device, another MediaConnect flow, or a MediaLive channel output. In flows, you configure sources when you create or update a flow. A standard source comes from outside of MediaConnect, while an entitled source comes from a flow owned by another AWS account that has granted an entitlement to your account. In the router, you connect sources to router inputs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

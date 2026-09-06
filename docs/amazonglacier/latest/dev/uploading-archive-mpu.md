@@ -64,7 +64,3 @@ The following table provides multipart upload core specifications.
 | Part size | 1 MiB to 4 GiB, last part can be < 1 MiB. You specify the size value in bytes.<br />The part size must be a mebibyte (1024 kibibytes [KiB]) multiplied by a power of 2. For example, `1048576` (1 MiB), `2097152` (2 MiB), `4194304` (4 MiB), `8388608` (8 MiB).  |
 | Maximum number of parts returned for a list parts request | 1,000  |
 | Maximum number of multipart uploads returned in a list multipart uploads request | 1,000  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,3 @@ The following steps provide instructions for migrating an Amazon RDS for SQL Ser
 + [Step 5: Configure an AWS DMS Target Endpoint](chap-rdssqlserver2s3datalake.steps.targetendpoint.md)
 + [Step 6: Create an AWS DMS Task](chap-rdssqlserver2s3datalake.steps.createtask.md)
 + [Step 7: Run the AWS DMS Task](chap-rdssqlserver2s3datalake.steps.runtask.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

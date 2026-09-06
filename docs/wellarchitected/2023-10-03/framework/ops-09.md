@@ -13,7 +13,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 + [OPS09-BP01 Measure operations goals and KPIs with metrics](ops_operations_health_measure_ops_goals_kpis.md)
 + [OPS09-BP02 Communicate status and trends to ensure visibility into operation](ops_operations_health_communicate_status_trends.md)
 + [OPS09-BP03 Review operations metrics and prioritize improvement](ops_operations_health_review_ops_metrics_prioritize_improvement.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

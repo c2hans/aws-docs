@@ -46,7 +46,3 @@ For additional connectivity options, see the [Local Zones documentation](https:/
 + Local Zones don't support AWS Transit Gateway. Instead, connect to the Local Zone by using a Direct Connect Private virtual interface (VIF).
 + Not all Local Zones support services such as Amazon RDS, Amazon FSx, Amazon EMR, or Amazon ElastiCache, or NAT gateways. For more information, see [AWS Local Zones features](https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2).
 + Application Load Balancers in Local Zones don't support mTLS or sticky sessions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

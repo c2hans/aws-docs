@@ -245,7 +245,3 @@ Create a CloudWatch dashboard to visualize throttle rates over time. The followi
 
 **Tip**
 You can also use the built-in `Throttles` metric (available by default under gateway invocation metrics) for a total throttle count without per-limit granularity. Use custom metric filters on span attributes when you need per-limit or per-caller visibility.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

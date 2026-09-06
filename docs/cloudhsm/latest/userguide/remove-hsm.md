@@ -34,7 +34,3 @@ You can remove an HSM by using the [AWS CloudHSM console](https://console.aws.am
 
 **To remove an HSM (AWS CloudHSM API)**
 + Send a [DeleteHsm](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteHsm.html) request, specifying the cluster ID and an identifier for the HSM that you are deleting.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

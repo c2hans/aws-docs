@@ -46,7 +46,3 @@ If the edit option is not available, then the access permission of your bucket d
    + If you change the bucket access permission to **All objects are public (read-only)**, all objects in the bucket become public (read-only), even if they were configured with a **Private** individual object access permission.
 
      For more information about bucket access permissions, see [Configure bucket access permissions](amazon-lightsail-configuring-bucket-permissions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

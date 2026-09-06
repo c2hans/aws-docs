@@ -32,7 +32,3 @@ These automation scripts help you save significant time and effort in your large
 + Orchestrating the cutover process. This process involves checking the replication status, checking the server status, updating the Amazon EC2 launch templates, launching servers in cutover mode, verifying job status, cleaning up the server, and many other tasks. It is a long process even for one server, and it could be a nightmare if you have hundreds of servers in a single cutover. The Cloud Migration Factory solution automates and orchestrates the entire process for you.
 
 These tasks and the Cloud Migration Factory scripts that automate them are described in more detail in the following sections.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

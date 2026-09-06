@@ -44,7 +44,3 @@ For information about enabling an opt-in Region for your AWS account, see [Enabl
 <a name="cloudtrail-multi-region-trails-disable"></a>
 
 Because your account may have activity in the Region you disabled, such as actions by AWS services to remove resources, CloudTrail will continue to capture activity and attempt to deliver events to the S3 bucket for any trails that are not deleted before the Region is disabled.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

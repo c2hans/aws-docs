@@ -41,7 +41,3 @@ Restoring a snapshot to a serverless namespace is completed in two phases. The f
 1. Follow the instructions on the page on the console page to enter the properties for **Cluster configuration**. See [ Creating a cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/create-cluster.html) for more information.
 
 For more information about snapshots on provisioned clusters, see [Amazon Redshift snapshots and backups](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

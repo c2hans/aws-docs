@@ -32,7 +32,3 @@ In addition to logging, you can enable the following options for data collection
 
   AWS WAF doesn't charge you for using this option. For pricing information, see [Security Lake Pricing](https://aws.amazon.com/security-lake/pricing/) and [How Security Lake pricing is determined](https://docs.aws.amazon.com/security-lake/latest/userguide/estimating-costs.html) in the *Amazon Security Lake user guide*.
 + **Request sampling** – You can configure your protection pack (web ACL) to sample the web requests that it evaluates, to get an idea of the type of traffic that your application is receiving. For information about this option, see [Viewing a sample of web requests](web-acl-testing-view-sample.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

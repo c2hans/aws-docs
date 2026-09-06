@@ -40,7 +40,3 @@ After you run the configuration script on the worker node, you can add or remove
 1. Select the nodes to add to the cluster or use the checkbox to select all nodes, and choose **Add to Cluster** (\+ icon).
 
 1. Wait a few minutes and then select the **Cluster** tab to view all of the nodes in the cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

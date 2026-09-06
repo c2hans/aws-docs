@@ -21,7 +21,3 @@ An Application Load Balancer is a load balancing option for Elastic Load Balanci
 + [Create the table for ALB connection logs in Athena using partition projection](create-alb-connection-logs-table-partition-projection.md)
 + [Example queries for ALB connection logs](query-alb-connection-logs-examples.md)
 + [Additional resources](application-load-balancer-logs-additional-resources.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

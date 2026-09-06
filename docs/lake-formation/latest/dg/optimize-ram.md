@@ -134,7 +134,3 @@ aws lakeformation put-data-lake-settings --region us-east-1 --data-lake-settings
 
 **Important**
 Once you choose **Version 2** or **Version 3**, all new **named resource** grants will go through the new cross-account grant mode. To optimally use AWS RAM capacity for your existing cross-account shares, we recommend you to revoke the grants that were made with the older version, and re-grant in the new mode.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

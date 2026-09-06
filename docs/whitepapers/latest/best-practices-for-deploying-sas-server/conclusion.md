@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
  This whitepaper raises awareness of SAS workload requirements within its core and ancillary components, and how to best meet those requirements in AWS. It is crucial to understand that the choice of compute, storage, and application architecture placement are key for achieving the best performance that AWS can offer for SAS deployments.
 
  The information in this paper is based on customer experience and expertise from SAS and AWS working together at the time of writing of this paper. AWS offerings are constantly improving, and therefore it is in the best interest of the reader to understand the rationale used in the selection process and to consider what was done as a point-in- time design.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

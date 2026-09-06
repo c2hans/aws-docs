@@ -125,7 +125,3 @@ You've set your permissions, chosen your schema, and (if applicable) chosen your
 1. Choose **Ingest dataset**.
 
 You've ingested your data, but it's possible that there was an issue with the files, the sensors, or the ingestion job as a whole. To find out, you must now [review data ingestion](understanding-ingestion-validation.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

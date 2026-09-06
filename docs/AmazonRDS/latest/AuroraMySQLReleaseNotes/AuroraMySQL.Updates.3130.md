@@ -85,7 +85,3 @@ This release includes fixes for the following medium severity CVEs:
 
 This release includes all community bug fixes up to and including 8.0.45. For more information, see [MySQL bugs fixed by Aurora MySQL 3.x database engine updates](AuroraMySQL.Updates.MySQLBugs.md#AuroraMySQL.Updates.MySQLBugs.v3).
 + Fixed a regression introduced in MySQL 8.0.42 where inserting into a partitioned table using a prepared statement or stored procedure could fail with `ERROR 1748` ("Found a row not matching the given partition set"). This occurred when the partition key column uses `DEFAULT CURRENT_TIMESTAMP`. Partition pruning at prepare time locked a partition based on the current timestamp, but on subsequent re-execution the timestamp could map to a different partition. Reference: MySQL upstream [Bug\#119784](https://bugs.mysql.com/bug.php?id=119784).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,6 +14,16 @@ Refer to [Scheduled scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon
 
 ASGs can be scheduled by applying a schedule tag as described in [Tagging instances for scheduling](operator-guide.md#tag-instances-for-scheduling)
 
+## Automatic re-registration (self-heal)
+<a name="asg-automatic-re-registration-self-heal"></a>
+
+During each scheduling pass, Instance Scheduler checks whether tagged ASGs are correctly registered. If a tagged ASG is found to be untracked, Instance Scheduler automatically attempts to re-register it and, if successful, applies its scheduled actions in the same pass. This means a transient registration miss self-corrects on the next scheduling cycle rather than requiring manual intervention.
+
+Repeated automatic registration attempts for the same ASG are throttled to roughly once per hour to avoid excessive retries. The timestamp of the most recent attempt is recorded in the `IS-SelfHealLastAttempt` control tag. If an attempt is unsuccessful, Instance Scheduler continues to retry on this hourly basis indefinitely; it does not give up on the ASG.
+
+**Note**
+This applies to accounts/regions where Instance Scheduler already manages at least one Auto Scaling group. A completely new account or region with no Auto Scaling groups yet registered with Instance Scheduler is not covered by this behavior.
+
 ## Definition of Running/Stopped for ASGs
 <a name="definition-of-runningstopped-for-asgs"></a>
 
@@ -44,7 +54,3 @@ The following schedule features are not supported for ASG scheduling:
 + N-th weekday, nearest weekday, and last weekday expressions in periods.
 + Multi-period schedules with immediately adjacent or overlapping periods.
   + When configuring scheduled scaling actions for multi-period schedules, Instance Scheduler on AWS directly translate the beginning/end of periods to start/stop actions for the ASG even when another overlapping or adjacent period would normally cause that action to be skipped.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Instance Scheduler on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

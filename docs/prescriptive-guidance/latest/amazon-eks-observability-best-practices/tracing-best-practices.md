@@ -15,7 +15,3 @@ This section provides a comprehensive list of best practices and techniques for 
 + **High availability**: Deploy redundant collectors across Availability Zones and configure proper failover mechanisms. Regular testing of high availability setup ensures reliable trace collection. For more information, see [Using AWS Distro for OpenTelemetry as a collector](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-ingest-with-adot.html) in the Amazon Managed Service for Prometheus documentation.
 
 By following these best practices, you can create a robust, efficient, and effective tracing system for your Amazon EKS environment. This will help ensure comprehensive observability, efficient troubleshooting, and optimal performance of your Kubernetes-based applications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

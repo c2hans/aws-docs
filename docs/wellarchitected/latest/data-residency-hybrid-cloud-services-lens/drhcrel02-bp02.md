@@ -25,7 +25,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  In the case of AWS Outposts, this connectivity is needed for control plane actions like launching new Amazon EC2 instances, which are necessary for auto scaling. Provision redundant network paths between the Outpost and the anchor points in the Region with connections that end on separate devices in more than one location.
 
  Dynamic routing should be configured to automatically reroute traffic to alternate paths when connections or networking devices fail. You should provision sufficient network capacity to verify that the failure of one WAN path does not overwhelm the remaining paths. For guide to this configuration, see [Anchor connectivity](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/anchor-connectivity.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

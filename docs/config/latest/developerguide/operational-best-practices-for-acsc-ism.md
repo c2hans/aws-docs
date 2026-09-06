@@ -296,7 +296,3 @@ This sample conformance pack template contains mappings to controls within the I
 These templates are available on GitHub:
 + [Operational Best Practices for ACSC ISM - Part 1](https://github.com/awslabs/aws-config-rules/blob/master/aws-config-conformance-packs/Operational-Best-Practices-for-ACSC-ISM.yaml)
 + [Operational Best Practices for ACSC ISM - Part 2](https://github.com/awslabs/aws-config-rules/blob/master/aws-config-conformance-packs/Operational-Best-Practices-for-ACSC-ISM-Part2.yaml)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ When the assessment is complete, you can view the results in the dashboard. The 
 + **Portable APIs** – The number of .NET Framework APIs that are compatible with the .NET Core version that you selected for the assessment.
 
 You can click on the incompatible NuGet packages or incompatible APIs to view details about individual incompatibilities, view the project dependency graph, or export the results to a `.csv` file.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_COPY_usage_notes.ht
 + [COPY from columnar data formats](copy-usage_notes-copy-from-columnar.md)
 + [DATEFORMAT and TIMEFORMAT strings](r_DATEFORMAT_and_TIMEFORMAT_strings.md)
 + [Using automatic recognition with DATEFORMAT and TIMEFORMAT](automatic-recognition.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

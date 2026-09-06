@@ -25,7 +25,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Use AWS Lambda for event-driven workloads like processing game events, player authentication, in-game purchases, and matchmaking requests, leveraging its automatic scaling and serverless management.
 +  Deploy AWS Fargate with ECS or EKS for backend services such as player profiles, state management, and matchmaking, removing server management and improving application isolation.
 +  Use Amazon GameLift to deploy and scale dedicated game servers for session-based multiplayer games, reducing development time and operational complexity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

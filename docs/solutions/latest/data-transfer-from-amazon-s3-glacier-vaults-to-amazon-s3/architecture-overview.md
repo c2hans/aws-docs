@@ -101,7 +101,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 1.  Upload the CSV file to any S3 bucket and [create a presigned URL for the file](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html).
 
 1.  Use this presigned URL as the value of the **NamingOverride File** input parameter used when [launching the transfer workflow](step-2-launch-the-transfer-workflow.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer from Amazon S3 Glacier Vaults to Amazon S3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

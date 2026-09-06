@@ -20,7 +20,3 @@ You can specify the types of devices that have access to WorkSpaces based on the
 1. Under Trusted devices, specify which device types can access WorkSpaces by selecting either **Allow all**, **Trusted devices**, or **Deny all**. For more information, see [Restrict access to trusted devices for WorkSpaces Personal](trusted-devices.md).
 
 1. Choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

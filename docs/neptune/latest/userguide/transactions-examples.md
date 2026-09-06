@@ -124,7 +124,3 @@ In the race between the `DELETE` query trying to delete the `:person1 rdf:type :
 + If the `DELETE` reads before the `INSERT` query, and the `INSERT` query tries to read and take a lock on the `SPO` prefix for the record, a conflict is detected. This is because the triple has been marked for removal, and the `INSERT` then fails.
 
 In all these different possible sequences of events, no dangling edge is created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ The AWS CloudHSM client for Windows includes CNG and KSP providers.
 + [Migrating from AWS CloudHSM Client SDK 3 to Client SDK 5](client-sdk-migration.md)
 + [Using Client SDK 5 to work with AWS CloudHSM](client-sdk5.md)
 + [Using previous SDK version to work with AWS CloudHSM](choose-client-sdk.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

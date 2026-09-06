@@ -49,11 +49,18 @@ In addition to the restricted headers listed above:
 ## Step 1: Create your agent
 <a name="create-agent-headers"></a>
 
-Create an AgentCore project using the AgentCore CLI:
+Create an empty AgentCore project, then add an agent with the request header allowlist:
 
 ```
-agentcore create --name MyHeaderAgent
-cd MyHeaderAgent
+agentcore create --project-name MyHeaderProject --no-agent
+cd MyHeaderProject
+agentcore add agent \
+  --name MyHeaderAgent \
+  --language Python \
+  --framework Strands \
+  --model-provider Bedrock \
+  --memory none \
+  --request-header-allowlist X-Custom-Signature,X-Api-Key,X-Amzn-Bedrock-AgentCore-Runtime-Custom-UserId
 ```
 
 Update your agent’s entrypoint file to access the custom headers from the request context:
@@ -90,22 +97,7 @@ Configure the request header allowlist on your agent runtime so that custom head
 
 **Example**
 
-1. Add the `requestHeaderAllowlist` field to your agent configuration in `agentcore/agentcore.json` :
-
-   ```
-   {
-     "agents": [
-       {
-         "name": "MyHeaderAgent",
-         "requestHeaderAllowlist": [
-           "X-Custom-Signature",
-           "X-Api-Key",
-           "X-Amzn-Bedrock-AgentCore-Runtime-Custom-UserId"
-         ]
-       }
-     ]
-   }
-   ```
+1. The `agentcore add agent` command in Step 1 stores the allowlist in the runtime configuration under `runtimes` in `agentcore/agentcore.json`.
 
    Deploy your agent:
 
@@ -205,27 +197,20 @@ To pass the JWT token used for OAuth-based inbound access to your agent, configu
 
 **Example**
 
-1. Add the authorizer configuration to your agent in `agentcore/agentcore.json` :
+1. To use JWT authentication, run the following command instead of the `agentcore add agent` command in Step 1:
 
    ```
-   {
-     "agents": [
-       {
-         "name": "MyHeaderAgent",
-         "authorizerType": "CUSTOM_JWT",
-         "authorizerConfiguration": {
-           "customJwtAuthorizer": {
-             "discoveryUrl": "https://cognito-idp.us-east-1.amazonaws.com/user-pool-id/.well-known/openid-configuration",
-             "allowedAudience": ["your-client-id"],
-             "allowedClients": ["your-client-id"]
-           }
-         },
-         "requestHeaderAllowlist": [
-           "Authorization"
-         ]
-       }
-     ]
-   }
+   agentcore add agent \
+     --name MyHeaderAgent \
+     --language Python \
+     --framework Strands \
+     --model-provider Bedrock \
+     --memory none \
+     --authorizer-type CUSTOM_JWT \
+     --discovery-url "https://cognito-idp.us-east-1.amazonaws.com/user-pool-id/.well-known/openid-configuration" \
+     --allowed-audience "your-client-id" \
+     --allowed-clients "your-client-id" \
+     --request-header-allowlist Authorization
    ```
 
    Deploy to apply the configuration:
@@ -237,7 +222,3 @@ To pass the JWT token used for OAuth-based inbound access to your agent, configu
    With this configuration, the `Authorization` header from incoming requests is validated against your OIDC provider and forwarded to your agent code.
 
 1. For information about setting up an agent with OAuth inbound access using the AWS SDK, see [Authenticate and authorize with Inbound Auth and Outbound Auth](runtime-oauth.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

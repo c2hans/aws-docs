@@ -89,7 +89,3 @@ In this example, we step through setting up a sample environment for the install
      --subnet-id subnet-0123456789abcdefg \
      --block-device-mappings https://example.s3.amazonaws.com/file.json
      ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

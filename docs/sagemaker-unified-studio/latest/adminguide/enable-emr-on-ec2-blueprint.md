@@ -22,7 +22,3 @@ In order to successfully enable the EmrOnEc2 blueprint, you must specify the loc
 1. Under the **Blueprint parameters** section, edit the **certificateLocation** parameter. Enter the S3 location of the ZIP file that contains PEM certificate file(s). You must enter the S3 location URL using the correct format of `s3://<DomainBucketName>/<AmazonDataZoneDomainID>/certificate_location/` Make sure to replace <DomainBucketName>/<AmazonDataZoneDomainID> with the correct values for those for your domain.
 
    For more information about PEM certificates, see [Using PEM certificates](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-encryption-enable.html#emr-encryption-certificates).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

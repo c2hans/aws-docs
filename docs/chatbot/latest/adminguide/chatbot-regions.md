@@ -57,7 +57,3 @@ Opt-in Regions aren't enabled by default. You must manually enable these Regions
 <a name="chatbot-quotas"></a>
 
 Amazon Q Developer in chat applications currently supports service endpoints, however there are no adjustable quotas. For more information about Amazon Q Developer in chat applications endpoints and quotas, see [Amazon Q Developer in chat applications endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/chatbot.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

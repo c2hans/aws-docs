@@ -50,7 +50,3 @@ aws s3 ls s3://<BUCKET>/solr-backup/<BACKUP_NAME>/
 ```
 
 The listing should show collection or core directories, not `zk_backup_0/` directly. Inside each collection directory, RFS can read numbered `zk_backup_N/` backups, older bare `zk_backup/` backups, and one-level nested Solr 8/9 incremental layouts. The latest ZooKeeper backup for each collection must include `managed-schema.xml`, `managed-schema`, or `schema.xml` under `configs/<CONFIGSET>/` so metadata migration can translate the schema.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

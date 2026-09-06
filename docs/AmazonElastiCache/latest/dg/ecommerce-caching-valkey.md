@@ -183,7 +183,3 @@ Your application should treat the cache as an optimization, not a dependency. If
 <a name="ecommerce-cache-faq-sizing"></a>
 
 Calculate: (number of unique items to cache) × (average size per item) × (overhead factor of 1.2 for Valkey data structures). The overhead varies by object size and data type—smaller objects have proportionally higher overhead. For example, 100,000 products at 2 KB each with 1.2x overhead = approximately 240 MB. Add session data, search results, and inventory counts. Start with headroom (use 60% of available memory as your target) and monitor the DatabaseMemoryUsagePercentage metric to adjust.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

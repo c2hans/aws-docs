@@ -22,7 +22,3 @@ The initial steps to onboarding EDI are as follows:
    1. Create new EDI on AWS accounts, one account for user management and a separate account for EDI IQ.
 
 ECO notifies you when the deployment is successful and provides a URL for you to start using EDI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Energy Data Insights on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query EDI` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

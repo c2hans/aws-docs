@@ -195,7 +195,3 @@ On the **Categories** page, uncheck the eye (![Icon of a crossed-out eye, repres
 1. Choose **Economic Data**. You should see **Industrial production total index** on the right.
 
    Your business data catalog is now ready. The `Industrial production total index` dataset is now discoverable from the data browser.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

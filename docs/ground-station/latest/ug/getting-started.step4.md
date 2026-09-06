@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/getting-started
 1.  [Optional] You can associate Tags to your mission profile. These can be used to help programmatically differentiate your mission profiles.
 
  You can reference the [Example mission profile configurations](examples.md), to see just some of the potential configurations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

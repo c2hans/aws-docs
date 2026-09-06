@@ -95,7 +95,3 @@ The [Check contact attributes](check-contact-attributes.md) flow block provides 
 + Contact attributes are only encoded in the JWT, not encrypted, so it's possible to decode and read the attributes.
 + If you want to test the chat experience with the [simulated chat experience](chat-testing.md#test-chat) and include contact attributes, be sure to enclose both the key and value in quotes, as shown in the following image.
 ![The test settings page, a contact attribute key in quotes, a value in quotes.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-chat-contact-attributes.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

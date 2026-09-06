@@ -50,7 +50,3 @@ To connect programmatically to AWS Payment Cryptography, you use an endpoint, th
 | Europe (London) | eu-west-2 |  dataplane.payment-cryptography.eu-west-2.amazonaws.com <br /> dataplane.payment-cryptography.eu-west-2.api.aws  | HTTPS<br />HTTPS |
 | Europe (Paris) | eu-west-3 |  dataplane.payment-cryptography.eu-west-3.amazonaws.com <br /> dataplane.payment-cryptography.eu-west-3.api.aws  | HTTPS<br />HTTPS |
 | South America (São Paulo) | sa-east-1 |  dataplane.payment-cryptography.sa-east-1.amazonaws.com <br /> dataplane.payment-cryptography.sa-east-1.api.aws  | HTTPS<br />HTTPS |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

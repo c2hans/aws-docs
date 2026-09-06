@@ -388,7 +388,3 @@ You can use the `iam:PassRole` permission to protect the security of your AWS KM
 The following policy grants permissions to pass the ****AWSServiceRoleForAutoScaling\_devteamkeyaccess**** role to any Auto Scaling group whose name begins with `devteam-`. If the IAM identity that creates the Auto Scaling group tries to specify a different service-linked role, they receive an error. If they choose not to specify a service-linked role, the default **AWSServiceRoleForAutoScaling** role is used instead.
 
 For more information about custom suffix service-linked roles, see [Service-linked roles for Amazon EC2 Auto Scaling](autoscaling-service-linked-role.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

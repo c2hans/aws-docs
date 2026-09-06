@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-BG-trou
   This is to ensure that the sync process is able to catch up with writes being made. Avoid or cancel any ongoing bulk load job before starting the Neptune Blue/Green solution.
 + **`Blue Green deployment requires instances to be in sync with db cluster parameter group`**   –   Any changes to cluster parameter group should be in sync throughout the DB cluster. See [Amazon Neptune parameter groups](parameter-groups.md).
 + **`Invalid target engine version for Blue Green Deployment`**   –   The target engine version must be listed as active in [Engine releases for Amazon Neptune](engine-releases.md), and must be higher than the current engine release of the source (blue) cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

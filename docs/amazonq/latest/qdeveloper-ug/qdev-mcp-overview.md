@@ -10,7 +10,3 @@ MCP (Model Context Protocol) is an open protocol that standardizes how AI assist
 Think of MCP like a universal connector for AI models, enabling them to interact with external systems, fetch live data, and integrate with various tools seamlessly. This allows Amazon Q to provide more contextually relevant assistance by accessing the information it needs in real-time.
 
 ![MCP architecture showing how Amazon Q Developer CLI connects to external data sources through MCP servers](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/mcp-response-diagram.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,7 +49,3 @@ The following table describes the documentation for Amazon Location Service. For
 | [AWS KMS customer managed key encryption for data at rest](#doc-history) |  Amazon Location now supports the use of a symmetric customer managed key that you create, own, and manage to [add a second layer of encryption over the existing AWS owned encryption](https://docs.aws.amazon.com/location/previous/developerguide/encryption-at-rest.html). | June 1, 2021 |
 | [Public preview release](#doc-history) | Initial release of the public preview documentation. | December 16, 2020 |
 | [Tutorial update: Displaying maps](#doc-history) | Tutorials for displaying maps using MapLibre for Android and iOS have been updated to use the MapLibre native SDK. | March 17, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

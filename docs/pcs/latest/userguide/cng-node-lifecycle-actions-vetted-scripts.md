@@ -173,7 +173,3 @@ The Amazon CloudWatch agent must run as `root` to forward these logs. Only the `
 
 **Note**
 The script writes its configuration to a dedicated fragment file. The Amazon CloudWatch agent combines this fragment with any existing configuration without overwriting it, so the script preserves your existing metrics and log group settings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

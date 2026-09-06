@@ -148,7 +148,3 @@ AWS applications that support account instances allow users to sign in to applic
 1. While you are signed in to the AWS Management Console, open the console for the AWS managed application that you plan to use.
 
 1. Follow the guidance in the console to configure the AWS managed application to use IAM Identity Center. During this process, you can assign the user that you created to the application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

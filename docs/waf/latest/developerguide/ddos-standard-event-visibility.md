@@ -43,7 +43,3 @@ Account activity describes DDoS events that Shield detected for your resources t
 
 **Note**
 You can also access the account level event summary through the AWS Shield API operation [DescribeAttackStatistics](https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_DescribeAttack.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

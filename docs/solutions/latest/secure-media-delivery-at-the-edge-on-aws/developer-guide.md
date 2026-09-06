@@ -11,7 +11,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 <a name="source-code"></a>
 
  Visit our [GitHub repository](https://github.com/aws-solutions/secure-media-delivery-at-the-edge-on-aws) to download the source files for this solution and to share your customizations with others. The Secure Media Delivery templates are generated using the [AWS CDK](https://aws.amazon.com/cdk/). Refer to the [README.md](https://github.com/aws-solutions/secure-media-delivery-at-the-edge-on-aws/blob/main/README.md) file for additional information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

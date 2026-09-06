@@ -47,7 +47,3 @@ The following table describes the important changes to the documentation since t
 | Updated Getting Started | Updated Getting Started with information on Workload change requests.<br />New section: [Request changes to an onboarded workload in Incident Detection and Response](idr-workloads-change-request.md)<br />Updated section: Subscribe a workload to AWS Incident Detection and Response | September 05, 2023 |
 | New section in Getting Started | Added Ingesting alerts into AWS Incident Detection and Response. | June 30, 2023 |
 | Original document | AWS Incident Detection and Response first published | March 15, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

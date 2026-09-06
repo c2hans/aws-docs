@@ -37,7 +37,3 @@ For instructions on using these parameters, see [How to filter POI on the map](h
 <a name="designed-for-the-world"></a>
 
 The Hybrid style supports different political views, ensuring that the map displays the correct borders for your users. This style also allows for easy switching between languages for map labels, with dozens of supported languages and writing systems available to ensure a localized experience.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,7 +45,3 @@ SageMaker AI offers 4 different inference options to provide the best inference 
 <a name="collapsible-6"></a>
 + Without autoscaling, you need to provision for peak traffic or risk model unavailability. Unless the traffic to your model is steady throughout the day, there will be excess unused capacity. This leads to low utilization and wasted resources.
 + [Autoscaling](https://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-auto-scaling.html) is an out-of-the-box feature that monitors your workloads and dynamically adjusts the capacity to maintain steady and predictable performance at the possible lowest cost. When the workload increases, autoscaling brings more instances online. When the workload decreases, autoscaling removes unnecessary instances, helping you reduce your compute cost. To learn more, see [Configuring autoscaling inference endpoints in Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/configuring-autoscaling-inference-endpoints-in-amazon-sagemaker/) on the AWS Machine Learning blog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ After you add a branch, your app has two deployments available at the Amplify de
 + [Automatic build-time generation of Amplify config (Gen 1 apps only)](amplify-config-autogeneration.md)
 + [Conditional backend builds (Gen 1 apps only)](conditional-backends.md)
 + [Use Amplify backends across apps (Gen 1 apps only)](reuse-backends.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

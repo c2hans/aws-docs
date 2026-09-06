@@ -20,7 +20,3 @@ Depending on how you sign up for AWS, you either have access to AWS accounts or 
 + **AWS Control Tower**
 
   AWS Control Tower provides a simplified way to set up and govern a secure, multi-account AWS environment. AWS Control Tower automates the creation of your multi-account environment using AWS Organizations, instantiating a set of initial accounts and with some default guardrails and configurations for the environment. You can use AWS Control Tower to provision new AWS accounts in a few steps while ensuring that the accounts conform to your organizational policies. For more information, see [When to use AWS Control Tower](when-to-use-control-tower.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

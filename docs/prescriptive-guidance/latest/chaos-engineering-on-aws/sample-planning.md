@@ -129,7 +129,3 @@ Make sure that you capture the timeline of the end-to-end experiment, starting w
 + The Kubernetes cluster didn't detect the CPU impairment of the PetSite pods, so it didn't schedule additional deployments.
 + There was no increase in 4XX or 5XX error rates as a result of this experiment.
 + We need to adjust the health check of the pod to account for impact to LCP when there are resource constraints.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

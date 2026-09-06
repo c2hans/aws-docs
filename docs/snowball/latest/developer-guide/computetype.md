@@ -28,7 +28,3 @@ When you've finished using the device, return it to AWS, and the device will be 
 <a name="clusteroption"></a>
 
 A cluster is a logical grouping of Snowball Edge devices, in groups of 3 to 16 devices. A cluster is created as a single job, which offers increased durability and storage size when compared to other AWS Snowball Edge job offerings. For more information about cluster jobs, see [Clustering overview](https://docs.aws.amazon.com/snowball/latest/developer-guide/ClusterOverview.html) in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

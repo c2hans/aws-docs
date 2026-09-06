@@ -91,7 +91,3 @@ A run with Running status has the following billing implications:
 + Each task has a minimum billing threshold of one minute. If you run a task for less than a minute, you incur a charge for the minimum one minute of usage. If possible, group small tasks together to optimize costs. Grouping tasks also reduces run time by avoiding the spin-up of multiple sequential tasks.
 
 For additional information about HealthOmics pricing, see the [HealthOmics Pricing](https://aws.amazon.com/healthomics/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

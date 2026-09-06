@@ -229,7 +229,3 @@ Hive XPath functions like `xpath`, `xpath_short`, and `xpath_int` are not suppor
 When you use Hive views in Athena, you may encounter the following issues:
 + **View {{<view name>}} is stale** – This message usually indicates a type mismatch between the view in Hive and Athena. If the same function in the [Hive LanguageManual UDF](https://cwiki.apache.org/confluence/display/hive/languagemanual+udf) and [Presto functions and operators](https://prestodb.io/docs/current/functions.html) documentation has different signatures, try casting the mismatched data type.
 + **Function not registered** – Athena does not currently support the function. For details, see the information earlier in this document.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

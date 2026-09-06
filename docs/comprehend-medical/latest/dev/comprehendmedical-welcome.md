@@ -63,7 +63,3 @@ If you are a first-time user of Amazon Comprehend Medical, we recommend that you
 1. [How Amazon Comprehend Medical works](comprehendmedical-howitworks.md) – This section introduces Amazon Comprehend Medical concepts.
 
 1. [Getting started with Amazon Comprehend Medical](comprehendmedical-gettingstarted.md) – This section explains how to set up your account and test Amazon Comprehend Medical.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend Medical. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend-medical` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

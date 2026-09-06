@@ -31,7 +31,3 @@ For more information about using variables in IAM policies, see [IAM Policy Elem
 + [Start a session with a document by specifying the session documents in IAM policies](getting-started-specify-session-document.md)
 + [Sample IAM policies for Session Manager](getting-started-restrict-access-quickstart.md)
 + [Additional sample IAM policies for Session Manager](getting-started-restrict-access-examples.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -69,7 +69,3 @@ CloudWatch provides the option to send data to a log collector or aggregator, be
 After identifying the important metrics to track, create a dashboard that contains the most relevant metrics. Displaying them side-by-side, under a single pane of glass can provide additional visibility and control.
 
 It is always preferable to configure alerts and automation rules for anomalous metric values. Do not rely on humans to identify anomalies by looking at a dashboard. However, dashboards can be useful for investigation purposes after an alert has been received.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  **Implement monitoring solutions:** Use monitoring tools to detect player-impacting issues and respond quickly.
 +  **Track player activity and logs:** Instrument game clients to log player activity and report issues, and verify that no personally identifiable information (PII) is included.
 +  **Use third-party and AWS tools:** Use tools like CloudWatch, X-Ray, and third-party solutions for error reporting and performance monitoring, and monitor social media for player feedback and bug reports.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

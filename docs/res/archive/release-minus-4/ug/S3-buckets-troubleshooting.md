@@ -96,7 +96,3 @@ If a bucket fails to mount on a VDI, there are a few locations where you can che
 1. Restart the VDI instances:
 
    Reboot the instance to ensure the VDIs that are affected by the incorrect IAM role ARN are mounted again.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

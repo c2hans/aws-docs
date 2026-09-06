@@ -233,7 +233,3 @@ The deployment process takes 15-20 minutes. The appliance's output can be blank 
 You can automate the application deployment process with the [CreateApplicationInstance](https://docs.aws.amazon.com/panorama/latest/api/API_CreateApplicationInstance.html) API. The API takes two configuration files as input. The application manifest specifies the packages used and their relationships. The second file is an overrides file that specifies deploy-time overrides of values in the application manifest. Using an overrides file lets you use the same application manifest to deploy the application with different camera streams, and configure other application-specific settings.
 
 For more information, and example scripts for each of the steps in this topic, see [Automate application deployment](api-deploy.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

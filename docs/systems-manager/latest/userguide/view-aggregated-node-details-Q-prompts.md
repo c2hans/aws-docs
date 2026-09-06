@@ -90,7 +90,3 @@ These lists might not be exhaustive and are offered as examples only.
 | Red Hat Enterprise Linux Server | 17.3, 7.6, 7.7, 7.8,7.9 |
 | Rocky Linux | 8.6, 8.7, 8.8, 8.9, 8.10, 9.1, 9.2, 9.3, 9.4 |
 | Ubuntu Server  | 18.04, 20.04, 22.04, 24.04 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

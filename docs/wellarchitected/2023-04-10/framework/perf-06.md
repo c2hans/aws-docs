@@ -13,7 +13,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 + [PERF06-BP01 Stay up-to-date on new resources and services](perf_continue_having_appropriate_resource_type_keep_up_to_date.md)
 + [PERF06-BP02 Define a process to improve workload performance](perf_continue_having_appropriate_resource_type_define_process.md)
 + [PERF06-BP03 Evolve workload performance over time](perf_continue_having_appropriate_resource_type_evolve.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

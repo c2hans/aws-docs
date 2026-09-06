@@ -10,9 +10,9 @@ With REST API Connection integration in Amazon Quick, you can perform actions wi
 ## What you can do
 <a name="rest-api-integration-capabilities"></a>
 
-With REST API Connection integration, you can perform actions with custom REST APIs and web services through the action connector.
+With REST API Connection integration, you can perform actions with custom REST APIs and web services through the connector.
 
-**Action connector**
+**Connector**
 Perform HTTP requests, retrieve data, and interact with APIs using flexible authentication options.
 
 **Note**
@@ -135,7 +135,3 @@ After you create your REST API integration, you can manage it using these option
 
 **Important**
 REST API integrations depend on the availability and configuration of the target web service. Changes to the API or authentication requirements may affect integration functionality.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -90,7 +90,3 @@ Two parameters, `Message field name` and `Level field name`, can optionally be c
 + **Field** – Name of the field used by the data link.
 + **URL/query ** – If the link is external, then enter the full link URL. If the link is internal link, then this input serves as query for the target data source. In both cases, you can interpolate the value from the field with `${__value.raw }` macro.
 + **Internal link** – Select this if the link is internal or external. If the link is internal, a data source selector allows you to select the target data source. Only tracing data sources are supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

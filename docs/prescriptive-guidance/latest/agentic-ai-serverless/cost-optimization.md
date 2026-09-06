@@ -97,7 +97,3 @@ Monitor the following signals to identify potential cost optimization issues:
 Cost optimization in AI-driven serverless is not only about minimizing spend. It's about aligning compute and model usage to the business value of each decision. With the right strategies in place, organizations can scale responsibly and confidently, balancing innovation with cost control.
 
 By combining tiered model strategies, prompt and token discipline, workflow tuning, and observability and tagging, enterprises can unlock maximum value from AI investments without budget overruns.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

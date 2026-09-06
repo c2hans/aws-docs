@@ -26,7 +26,3 @@ You can set the granularity for your short-term forecasts and your schedules.
 1. Choose one of the following options:
    + **15 minute interval** – Generates short-term forecasts in 15-minute intervals. For example, 20 contacts between 9:00 AM to 9:15 AM, and 30 contacts between 9:15 AM to 9:30 AM.
    + **30 minute interval** – Generates short-term forecasts in 30-minute intervals. For example, 20 contacts between 9:00 AM to 9:30 AM, 30 contacts between 9:30 AM to 10:00 AM.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

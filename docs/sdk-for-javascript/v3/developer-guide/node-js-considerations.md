@@ -42,7 +42,3 @@ For a complete list of all built-in modules that Node.js provides, see [Node.js 
 <a name="node-npm-packages"></a>
 
 In addition to the built-in modules, you can also include and incorporate third-party code from `npm`, the Node.js package manager. This is a repository of open source Node.js packages and a command-line interface for installing those packages. For more information about `npm` and a list of currently available packages, see [ https://www.npmjs.com](https://www.npmjs.com). You can also learn about additional Node.js packages you can use [ here on GitHub](https://github.com/sindresorhus/awesome-nodejs).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for JavaScript. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

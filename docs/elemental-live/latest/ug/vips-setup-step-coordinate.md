@@ -16,7 +16,3 @@ Talk to the POIS operator, and agree on the values for this data:
 + The preroll that is the number of seconds between when Elemental Live receives the request from the POIS and when Elemental Live inserts any SCTE-35 messages in the content. This preroll isn't required if the messages that the POIS sends include a start time for the input switch,
 
 Make a note of all of this data. You will need it to set up on Elemental Live.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

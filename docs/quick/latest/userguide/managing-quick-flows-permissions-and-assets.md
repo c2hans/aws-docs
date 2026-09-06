@@ -29,7 +29,3 @@ The Asset Management page provides oversight of all flows in your organization.
 + **Share flows** — Share flows on behalf of creators, redistribute flows to different groups, or manage sharing permissions across the organization.
 + **Transfer ownership** — Transfer flow ownership between users, such as when a creator leaves the organization.
 + **Unlist flows** — Remove flows from the shared library, making them unavailable to viewers while preserving them for the creator to edit. Unlisted flows can be re-shared once issues are resolved.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

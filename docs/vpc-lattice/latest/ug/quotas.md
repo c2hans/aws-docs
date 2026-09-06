@@ -50,7 +50,3 @@ The following limits also apply.
 | Maximum connection lifetime per connection for VPC Lattice resources | NA | VPC Lattice doesn't impose any lifetime connection limits for resources. The client and the server determine the lifetime connection duration while being aware of the idle timeout for VPC Lattice resources, which is 350 seconds. |
 | Connection idle time per connection for VPC Lattice resources | 350 seconds | You can use TCP keepalives to extend this idle timeout. |
 | Service network per VPC | 1 service network | You can connect a VPC to only one service network through an association. To connect a VPC to multiple service networks, you can use VPC endpoints of type service network. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ The following IAM policy grants the minimum permissions needed to manage dataset
 <a name="datasets-prereqs-sdk"></a>
 +  **AgentCore SDK:** `pip install bedrock-agentcore` (Python 3.10 or later)
 +  ** AWS SDK (boto3):** Python 3.10 or later with `boto3` installed
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

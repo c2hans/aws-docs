@@ -15,7 +15,3 @@ Views designed for workspace pages function as single-step interfaces tailored t
 When using views to create workspace pages, you can pass input data at runtime through the page configuration wizard. This dynamic approach means you can create reusable views that adapt to different contexts without requiring separate implementations for each use case.
 
 For example, when creating a view for home pages, you might want to display personalized greetings to different users. Rather than building a unique view for each workspace, you can create a single view with dynamic header components and reuse that view across multiple workspaces, each with its own customized message content.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

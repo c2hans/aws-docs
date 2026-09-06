@@ -26,7 +26,3 @@ Audit Manager provides confused deputy support in the following scenarios. These
 + [Example policy: The KMS key that you use to encrypt your SNS topic](https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_id-based-policy-examples.html#sns-key-permissions)
 
 Audit Manager doesn't provide confused deputy support for the customer managed key that you provide in your Audit Manager [Configuring your data encryption settings](settings-KMS.md) settings. If you provided your own customer managed key, you can’t use `aws:SourceAccount` or `aws:SourceArn` conditions in that KMS key policy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

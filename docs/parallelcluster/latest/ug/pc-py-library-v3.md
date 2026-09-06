@@ -86,7 +86,3 @@ The hosted zip file URL is in the format: `s3://{{aws-region-id}}-aws-parallelcl
 1. Your Lambda needs permissions to manage clusters created with AWS ParallelCluster. Create a Lambda role with the permissions listed in [Base AWS ParallelCluster `pcluster` user policy](iam-roles-in-parallelcluster-v3.md#iam-roles-in-parallelcluster-v3-base-user-policy).
 
 You can now access AWS ParallelCluster from the Python library as described in [AWS ParallelCluster Python library API](#pc-py-library-v3).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

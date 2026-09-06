@@ -36,7 +36,3 @@ In this example, the following actions are denied:
 
 **Note**
 In this example, users can still take other Amazon WorkSpaces API actions from outside the VPC. To restrict API calls to those from within the VPC, see [Identity and access management for WorkSpaces](workspaces-access-control.md) for information about using identity-based policies to control access to Amazon WorkSpaces API endpoints.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

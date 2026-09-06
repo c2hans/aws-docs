@@ -32,12 +32,6 @@ The MGN connector can be installed on servers running the following Linux versio
 Installation of the MGN Connector also installs the SSM agent.
 + If the SSM agent is already installed on the server you must uninstall it before installing the MGN connector. See [ Uninstalling SSM Agent from Linux instances ](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-uninstall-agent.html) in the *AWS Systems Manager User Guide*.
 + A minimum of 200 MB of free disk space and 200 KB of free disk space in the `/var` directory.
-+ Installation is not supported on these operating systems:
-  + CentOS 5.x
-  + CentOS 6.x
-  + RHEL 6.x
-  +  Oracle 6.x
-  + Amazon Linux 1
 
 ## Security recommendations for MGN connector
 <a name="mgn-connector-security"></a>
@@ -45,7 +39,3 @@ Installation of the MGN Connector also installs the SSM agent.
 We recommend that the MGN connector server is only accessed by authorized personnel and has all the required OS patches. We also recommend that the servers to which the MGN connector connects have all the required OS patches.
 
 If you configure [outputting logs to S3](https://docs.aws.amazon.com/systems-manager/latest/userguide/getting-started-create-iam-instance-profile.html#create-iam-instance-profile-ssn-logging), you will first [create an Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html). We recommend that you apply S3 bucket [S3 security practices](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

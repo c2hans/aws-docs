@@ -31,7 +31,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/containeriz
 <a name="patterns.6a04f034-3411-5416-8e6f-058ca3aa30f3"></a>
 + [Migrate on-premises Java applications to AWS using AWS App2Container](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-on-premises-java-applications-to-aws-using-aws-app2container.html) (pattern)
 + [Optimize AWS App2Container generated Docker images](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/optimize-aws-app2container-generated-docker-images.html) (pattern)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

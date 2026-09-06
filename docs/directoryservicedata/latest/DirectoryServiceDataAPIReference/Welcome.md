@@ -19,8 +19,4 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 
  Directory Service Data only supports the AWS Managed Microsoft AD directory type and is only available in the primary AWS Region. For more information, see [AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html) and [Primary vs additional Regions](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/multi-region-global-primary-additional.html) in the * AWS Directory Service Administration Guide*.
 
-This document was last published on September 1, 2026.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service Data. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservicedata` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+This document was last published on September 4, 2026.

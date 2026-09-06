@@ -14,7 +14,3 @@ aws organizations register-delegated-administrator --account-id ACCOUNT_ID --ser
 ```
 
 After a delegated administrator is registered, you have visibility into all AWS Health events affecting accounts across your organization. You can view historical events over the past 90 days or since the organizational view feature was first enabled, whichever is more recent. Note that enabling the delegated administrator feature is an asynchronous process and takes up to a minute to complete.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

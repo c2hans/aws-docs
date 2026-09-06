@@ -70,7 +70,3 @@ The following approaches have been integrated to support AWS services in ABAP.
   ```
 
   ABAP does not distinguish between *a string of length 0* and *a string that has no value*. Other languages might assign a NULL value to the string or wrap the string in a construct (such as, Java's `Optional<>` wrapper). These are not supported in ABAP. Therefore, SDK for SAP ABAP facilitates the distinction in values by providing variants of the *getter* method.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for SAP ABAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-sapabap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

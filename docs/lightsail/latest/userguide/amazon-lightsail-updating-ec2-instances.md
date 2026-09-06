@@ -32,7 +32,3 @@ After your new instance is up and running, see one of the following guides in th
 After you have enabled enhanced networking, you can upgrade the instance type by following the instructions in one of the following guides:
 + For Windows Server instances — [Migrating to Latest Generation Instance Types](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/migrating-latest-types.html)
 + For Linux or Unix instances — [Changing the Instance Type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-resize.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

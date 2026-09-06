@@ -52,7 +52,3 @@ Configured threshold: 5 minutes early/late allowed for break activity
 **Their adherence:**
 + Agent remains adherent because starting break 3 minutes late falls within the configured 5-minute threshold.
 + The "Using thresholds" status would be displayed during this period.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

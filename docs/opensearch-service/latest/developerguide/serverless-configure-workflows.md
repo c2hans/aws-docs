@@ -52,7 +52,3 @@ Before you create and provision a template, verify that you have the required pe
 + **aoss:\*CollectionItems** – Grants permission to create and manage templates, and provision [search and ingest pipelines](serverless-configure-neural-search.md).
 + **aoss:\*Index** – Grants permission to create and delete indices using OpenSearch API operations.
 + **aoss:\*MLResource** – Grants permission to provision workflow steps that use the [Configure Machine Learning](serverless-configure-machine-learning.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

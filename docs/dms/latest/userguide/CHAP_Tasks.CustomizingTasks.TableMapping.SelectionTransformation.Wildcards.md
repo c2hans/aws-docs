@@ -11,9 +11,9 @@ This section describes wildcards you can use when specifying the schema and tabl
 | --- |--- |
 | % | Zero or more characters |
 | \_ | A single character |
-| [\_] | A literal underscore character |
-| [ab] | A set of characters. For example, [ab] matches either 'a' or 'b'. |
-| [a-d] | A range of characters. For example,[a-d] matches either 'a', 'b', 'c', or 'd'. |
+
+**Wildcard pattern limitations**
+Use `%` or `_` in selection rules. Bracket-based patterns such as `[_]`, `[ab]`, and `[a-d]` may not work with all endpoint types - test them before relying on them, or create a separate selection rule for each explicit table name.
 
 For Oracle source and target endpoints, you can use the `escapeCharacter` extra connection attribute to specify an escape character. An escape character allows you to use a specified wildcard character in expressions as if it was not wild. For example, `escapeCharacter=#` allows you to use '\#' to make a wildcard character act as an ordinary character in an expression as in the this sample code.
 
@@ -33,7 +33,3 @@ For Oracle source and target endpoints, you can use the `escapeCharacter` extra 
 ```
 
 Here, the '\#' escape character makes the '\_' wildcard character act as a normal character. AWS DMS selects tables in the schema named `ROOT`, where each table has a name with `TEST_T` as its prefix.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

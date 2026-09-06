@@ -14,7 +14,3 @@ Windows users who do not have permissions to install the Amazon Chime Add-in for
 For information about which add-in is right for you and your organization, see [Choosing the Right Outlook Add-In](https://answers.chime.aws/articles/663/choosing-the-right-outlook-add-in.html).
 
 If you choose the Amazon Chime Add-In for Outlook for your organization, you can deploy it to your users with centralized deployment. For more information, see the [Amazon Chime Add-In for Outlook Installation Guide for Administrators](https://answers.chime.aws/articles/671/amazon-chime-add-in-for-outlook-installation-guide.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -83,7 +83,3 @@ For the full API, see [DynamoDBVectorStore in the langchain-aws repository](http
 + [DynamoDBChatMessageHistory JavaScript reference](https://reference.langchain.com/javascript/langchain-community/stores/message/dynamodb)
 + [langchain-aws on GitHub](https://github.com/langchain-ai/langchain-aws)
 + [Build a scalable, context-aware chatbot with Amazon DynamoDB, Amazon Bedrock, and LangChain](https://aws.amazon.com/blogs/database/build-a-scalable-context-aware-chatbot-with-amazon-dynamodb-amazon-bedrock-and-langchain/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

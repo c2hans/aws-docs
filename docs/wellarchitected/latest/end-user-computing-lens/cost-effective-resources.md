@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 + [EUCCOST05-BP02 Select the most cost-effective service for your EUC workload](euccost05-bp02.md)
 + [EUCCOST05-BP03 Rightsize your EUC resources](euccost05-bp03.md)
 + [EUCCOST05-BP04 Choose an appropriate running mode for your EUC workload where applicable](euccost05-bp04.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

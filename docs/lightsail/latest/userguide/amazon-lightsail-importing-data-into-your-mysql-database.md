@@ -32,7 +32,3 @@ To learn how to connect MySQL Workbench to your database, see [Connect to your M
 
    Your import may take a few minutes or more depending on the size of the .SQL file. After the import is complete, you should see a message similar to the following:
 ![Import completed](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-import-finished.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

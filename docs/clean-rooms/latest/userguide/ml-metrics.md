@@ -20,7 +20,3 @@ Relevance scores should not be used to judge the quality of the seed, but rather
 + All negatives scores or negative for your desired lookalike segment size – This indicates that Clean Rooms ML predicts there aren't enough similar users in the desired lookalike segment size. This can be because the seed data is too specific or the market is too small. We recommend either applying fewer filters to the seed data or widening the market. For example, if the original seed data was customers that bought a stroller and car seat, you could expand the market to customers that bought multiple baby products.
 
 Training data providers determine whether the relevance scores are exposed and the bucket bins where relevance scores are computed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

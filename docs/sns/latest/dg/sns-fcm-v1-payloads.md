@@ -211,7 +211,3 @@ The following table provides the Amazon SNS failure type that corresponds to the
 | `THIRD_PARTY_AUTH_ERROR` | `InvalidCredentials` | Platform application credentials are not valid. | A message targeted to an iOS device or a Webpush device could not be sent. Verify that your development and production credentials are valid. |
 | `QUOTA_EXCEEDED` | `Throttled` | Request throttled by [gcm]. | A message rate quota, device message rate quota, or topic message rate quota has been exceeded. For information on how to resolve this issue, see [ErrorCode](https://firebase.google.com/docs/reference/fcm/rest/v1/ErrorCode) in the in Google's *Firebase* documentation. |
 | `PERMISSION_DENIED` | `InvalidNotification` | Notification body is invalid. | In the case of a `PERMISSION_DENIED` exception, the caller (your FCM application) doesn't have permission to execute the specified operation in the payload. Navigate to your FCM console, and verify your credentials have the required API actions enabled. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

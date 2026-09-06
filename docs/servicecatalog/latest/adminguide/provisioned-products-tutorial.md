@@ -100,7 +100,3 @@ To manage all provisioned products for the account, you need `AWSServiceCatalogA
 1. Use the `CloudformationStackARN` value to identify CloudFormation events to find information about the created resources. You can also use the CloudFormation API to obtain this information. For more information, see [AWS CloudFormation API Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/).
 
 You can perform steps 1 through 4 using the AWS Service Catalog API or the AWS CLI. For more information, see [AWS Service Catalog Developer Guide. ](https://docs.aws.amazon.com/servicecatalog/latest/dg/what-is-service-catalog.html) and [AWS Service Catalog Command Line Reference. ](https://docs.aws.amazon.com/cli/latest/reference/servicecatalog/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

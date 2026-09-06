@@ -16,7 +16,3 @@ This Connector aligns to industry best practices such as ITIL®’s service mana
 | Service Configuration Management (CMDB)  | AWS Config(AWS resource or configuration items tracking and detective control compliance) |
 | Change Enablement (management) | AWS Systems Manager Change Manager (Standard changes with automated runbooks as implementation task(s)) |
 | Measurement & Reporting | AWS Health Dashboard (Visibility into resource performance) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

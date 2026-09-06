@@ -396,7 +396,3 @@ else:
 
 **Note**
  The `ephemeris` parameter with the azimuth elevation ID must be provided when listing contacts to specify which azimuth elevation ephemeris should be used for determining contact windows. If the `satelliteArn` is included, it will be associated with the contact data, but the azimuth elevation ephemeris will be used for antenna pointing rather than performing ephemeris priority resolution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

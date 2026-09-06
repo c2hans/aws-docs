@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/conclu
 +  Embedding security controls from the ground up to protect sensitive customer and network data
 
  By following the guidance in this lens, you can architect telco workloads that are reliable, performant, secure, and cost-effective - assisting your organization to deliver exceptional customer experiences and stay competitive in the fast-paced world of telecommunications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

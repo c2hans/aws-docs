@@ -69,7 +69,3 @@ After you process your data, you are ready to import it into Amazon Personalize.
     After you complete the notebook, if you imported interactions data, you are ready to create recommenders or custom resources. Or you can repeat the process with an items dataset or users dataset.
    + For information about creating a domain recommenders, see [Domain recommenders in Amazon Personalize](creating-recommenders.md).
    + For information about creating and deploying custom resources, see [Custom resources for training and deploying Amazon Personalize models](create-custom-resources.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

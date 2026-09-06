@@ -188,7 +188,3 @@ When you disable your mapping templates, there are several additional behaviors 
 + By disabling a mapping template, you are signalling to AWS AppSync that you accept the default data translations specified in the [Direct Lambda resolver reference](resolver-mapping-template-reference-lambda.md#direct-lambda-resolvers).
 + By disabling the request mapping template, your Lambda data source will receive a payload consisting of the entire [Context](resolver-context-reference.md) object.
 + By disabling the response mapping template, the result of your Lambda invocation will be translated depending on the version of the request mapping template or if the request mapping template is also disabled.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

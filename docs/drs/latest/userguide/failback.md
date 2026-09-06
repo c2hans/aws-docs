@@ -51,7 +51,3 @@ Failback allows you to restore your Recovery Instances back to your source infra
 | AWS - Same Account |  Start Reverse Replication on the Protected Recovery Instance. | [Same Account Failback](failback-failover-region-region.md) |
 | AWS - Cross Account |  Start Reverse Replication on the Protected Recovery Instance in Failover Account. | [Cross Account Failback](failback-failover-cross-account.md) |
 | Other Cloud | Configuration varies per provider. | [Other Cloud Failback](failback-performing-main.md) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

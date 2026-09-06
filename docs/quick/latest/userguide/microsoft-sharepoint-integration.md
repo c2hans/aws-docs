@@ -10,7 +10,7 @@ With the Microsoft SharePoint integration, you can manage SharePoint lists, item
 ## What you can do
 <a name="sharepoint-integration-capabilities"></a>
 
-**Action connector**
+**Connector**
 Manage SharePoint lists, items, files, and Excel workbooks through Microsoft Graph API calls.
 
 **Knowledge base**
@@ -20,9 +20,5 @@ Index SharePoint document libraries, sites, and pages. Amazon Quick agents can t
 <a name="sharepoint-integration-next-steps"></a>
 
 After you review the prerequisites and capabilities, continue with one of the following topics:
-+ To set up the action connector, see [Microsoft SharePoint action integration](sharepoint-action-integration.md).
++ To set up the connector, see [Microsoft SharePoint action integration](sharepoint-action-integration.md).
 + To create a knowledge base from SharePoint content, see [Microsoft SharePoint knowledge base integration](sharepoint-knowledge-base.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

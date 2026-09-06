@@ -57,7 +57,3 @@ For latest information, see [Amazon GuardDuty](https://docs.aws.amazon.com/govcl
 
 **China Regions**
 For latest information, see [Feature availability and implementation differences](https://docs.amazonaws.cn/en_us/aws/latest/userguide/guardduty.html#feature-diff).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

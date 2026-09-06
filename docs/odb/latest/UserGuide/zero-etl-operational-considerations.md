@@ -17,7 +17,3 @@ Change data capture might impact Oracle database performance, especially during 
 Data Definition Language (DDL) changes in the source Oracle database might require you to intervene manually to re-create the integration. Plan schema changes carefully.
 
 For general considerations, see [Considerations when using zero-ETL integrations with Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl.reqs-lims.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

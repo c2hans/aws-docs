@@ -221,7 +221,3 @@ The SNR value is positive and must be greater than zero to indicate that the sig
 You can use this metric to obtain information about the availability of this gateway within a specified time duration.
 
 This metric displays the websocket connection time of this gateway for a specified time duration. This connection time includes the gateway up time and the gateway down time. You can use this information to identify when a gateway was available. It can also be used with the message loss rate to identify when a packet got lost in transmission.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

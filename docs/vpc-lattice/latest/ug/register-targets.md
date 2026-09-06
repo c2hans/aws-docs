@@ -98,7 +98,3 @@ You can register a single Application Load Balancer with each target group. If y
 1. If there is no Application Load Balancer registered, choose **Register target**. Select the Application Load Balancer and choose **Register target**.
 
 1. To deregister an Application Load Balancer, choose **Deregister**. When prompted for confirmation, enter **confirm** and then choose **Deregister**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

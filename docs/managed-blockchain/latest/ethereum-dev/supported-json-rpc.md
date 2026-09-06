@@ -78,7 +78,3 @@ Some methods have an extra block identifier parameter. The following options are
 | [txpool\_status](https://geth.ethereum.org/docs/interacting-with-geth/rpc/ns-txpool#txpool-status) | Provides a count of all transactions currently pending inclusion in the next blocks, and those that are queued (being scheduled for future execution only). |  |
 | [web3\_clientVersion](https://eth.wiki/json-rpc/API#web3_clientversion) | Returns the current client version. |  |
 | [web3\_sha3](https://eth.wiki/json-rpc/API#web3_sha3) | Returns Keccak-256 (not the standardized SHA3-256) of the given data. |  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

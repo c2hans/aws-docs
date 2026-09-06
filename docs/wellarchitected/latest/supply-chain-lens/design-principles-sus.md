@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
   +  The provisioning of the AWS services you need to support your operations, to let them follow your business needs.
 +  **Design for on-demand over always-on, where possible:** To enhance your supply chain workloads on AWS, focus on improving your predictive capabilities for resource requirements. Use forecasts, seasonality patterns, and analyses of peaks and valleys to favor on-demand resources over always-on instances. This approach allows for more efficient resource management, whether you are turning resources on and off, scaling up and down, or scaling horizontally.
 +  **Align supply chain-related sustainability to company-wise sustainability goals:** Align supply chain workloads and the technology-related emissions to the wider organization's sustainability strategy and goals to enable the supply chain design, plan and execute for sustainability.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

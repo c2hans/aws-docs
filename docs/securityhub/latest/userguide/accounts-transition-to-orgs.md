@@ -34,7 +34,3 @@ The delegated administrator can manage the organization in Security Hub CSPM, pr
 When you transition to account management using Organizations, invitation-based accounts don't automatically become Security Hub CSPM members. Only the accounts that you add to your new organization can become Security Hub CSPM members.
 
 After activating the integration, you can manage accounts with Organizations. For information, see [Managing Security Hub CSPM for multiple accounts with AWS Organizations](securityhub-accounts-orgs.md). Account management varies based on your organization's configuration type.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

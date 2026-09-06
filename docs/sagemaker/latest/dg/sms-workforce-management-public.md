@@ -140,7 +140,3 @@ This workforce is not supported under the following scenarios. In each scenario,
 + This workforce is not supported for Ground Truth video frame labeling jobs and 3D point cloud labeling jobs.
 + You cannot use this workforce if your input data contains personally identifiable information (PII).
 + Mechanical Turk is not available in some of the AWS special regions. If applicable, refer to the documentation for your special region for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

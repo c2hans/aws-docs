@@ -88,7 +88,3 @@ Text (TXT) record
 A TXT record maps a subdomain to plaintext. You create TXT records to confirm ownership of your domain to a service provider.
 For example, in the Lightsail DNS zone, you want to respond with `23223a30-7f1d-4sx7-84fb-31bdes7csdbb` when the `_amazonchime.example.com` hostname is queried. You would create a TXT record with a subdomain value of `_amazonchime` and a "responds with" value of `23223a30-7f1d-4sx7-84fb-31bdes7csdbb`.
 For more information, see [TXT Record](https://en.wikipedia.org/wiki/TXT_record) on *Wikipedia*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

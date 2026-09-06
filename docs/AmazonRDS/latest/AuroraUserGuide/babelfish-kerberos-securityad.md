@@ -61,7 +61,3 @@ Currently, AD user identity isn't visible in the logs. You can turn on the `log_
 ```
 bbf_group_ad_login@babelfish_db:[615]:LOG: connection authorized: user=bbf_group_ad_login database=babelfish_db application_name=sqlcmd GSS (authenticated=yes, encrypted=yes, principal=user1@CORP.EXAMPLE.COM)
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

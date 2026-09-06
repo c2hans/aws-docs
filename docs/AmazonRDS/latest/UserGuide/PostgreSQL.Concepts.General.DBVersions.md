@@ -26,7 +26,3 @@ Note the following deprecated versions:
 + RDS for PostgreSQL 9.5 was deprecated in March 2021.
 
 To learn more about deprecation policy for RDS for PostgreSQL, see [Amazon RDS FAQs](https://aws.amazon.com/rds/faqs/). For more information about PostgreSQL versions, see [Versioning Policy](https://www.postgresql.org/support/versioning/) in the PostgreSQL documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

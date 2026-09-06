@@ -101,7 +101,3 @@ View details about updates to AWS managed policies for Account Management since 
 | Change | Description | Date |
 | --- | --- | --- |
 | AWS Account Management launched with new AWS managed policies and started tracking changes | Account Management initially launched with the following AWS managed policies:+  [AWSAccountManagementReadOnlyAccess](#security-managed-policies-AWSAccountManagementReadOnlyAccess) <br />+  [AWSAccountManagementFullAccess](#security-managed-policies-AWSAccountManagementFullAccess)  | Sept 30, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

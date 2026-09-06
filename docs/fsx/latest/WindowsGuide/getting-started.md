@@ -427,7 +427,3 @@ New file systems can be created from backups. We recommend that you create a fin
    Your Amazon FSx file system and related automatic backups are now deleted.
 
 1. To delete the Directory Service directory you created for this exercise, see [Delete your directory](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simple_ad_delete.html) in the AWS Directory Service Administration Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

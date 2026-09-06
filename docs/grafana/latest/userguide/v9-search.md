@@ -48,7 +48,3 @@ To filter dashboard search result by a tag, complete one of the following steps:
 
 **Tip**
 When using only a keyboard, press the `tab` key and navigate to the **Filter by tag** dropdown menu, press the down arrow key to activate the menu and locate a tag, and press `Enter` to select the tag.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

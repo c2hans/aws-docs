@@ -35,7 +35,7 @@ To access the Amazon Elastic Block Store console, you must have a minimum set of
 
 You don't need to allow minimum console permissions for users that are making calls only to the AWS CLI or the AWS API. Instead, allow access to only the actions that match the API operation that they're trying to perform.
 
-To ensure that users and roles can still use the Amazon EBS console, also attach the Amazon EBS `{{ConsoleAccess}}` or `{{ReadOnly}}` AWS managed policy to the entities. For more information, see [Adding permissions to a user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
+To make sure that users and roles can still use the Amazon EBS console, also attach the Amazon EBS `{{ConsoleAccess}}` or `{{ReadOnly}}` AWS managed policy to the entities. For more information, see [Adding permissions to a user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
 
 ## Allow users to view their own permissions
 <a name="security_iam_id-based-policy-examples-view-own-permissions"></a>
@@ -260,7 +260,7 @@ The following policy grants users permission to view and create volumes, and att
 
 Users can attach any volume to instances that have the tag "`purpose=test`", and also detach volumes from those instances. To attach a volume using the Amazon EC2 console, it is helpful for users to have permission to use the `ec2:DescribeInstances` action, as this allows them to select an instance from a pre-populated list in the **Attach Volume** dialog box. However, this also allows users to view all instances on the **Instances** page in the console, so you can omit this action.
 
-In the first statement, the `ec2:DescribeAvailabilityZones` action is necessary to ensure that a user can select an Availability Zone when creating a volume.
+In the first statement, the `ec2:DescribeAvailabilityZones` action is necessary to make sure that a user can select an Availability Zone when creating a volume.
 
 Users cannot tag the volumes that they create (either during or after volume creation).
 
@@ -797,7 +797,3 @@ The following policy allows modification of a snapshot only if the snapshot is t
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ Until you complete this step, AWS continues to charge you for using a custom SSL
    1. Run the AWS CLI command `list-server-certificates` to get the certificate ID of the certificate that you want to delete. For more information, see [list-server-certificates](https://docs.aws.amazon.com/cli/latest/reference/iam/list-server-certificates.html) in the *AWS CLI Command Reference*.
 
    1. Run the AWS CLI command `delete-server-certificate` to delete the certificate. For more information, see [delete-server-certificate](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-server-certificate.html) in the *AWS CLI Command Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

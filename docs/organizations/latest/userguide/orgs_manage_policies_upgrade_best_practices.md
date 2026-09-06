@@ -56,7 +56,3 @@ Review access permissions to policy management functions regularly and implement
 Design your policies to minimize operational overhead while maintaining necessary controls. To prevent unintended behavior, do not reuse tags across different use cases. Automate policy compliance checking where possible and create standard operating procedures for common policy management tasks.
 
 Consider creating templates for different types of upgrade scenarios and maintain documentation of successful policy patterns. Regular review of operational metrics can help identify opportunities for policy optimization and process improvement.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

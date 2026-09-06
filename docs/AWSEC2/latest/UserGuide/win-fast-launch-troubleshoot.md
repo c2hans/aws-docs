@@ -89,7 +89,3 @@ Your IAM user or role lacks the necessary permissions to enable EC2 Fast Launch.
 <a name="ts-fast-launch-sc-insufficient-perms-solution"></a>
 
 Verify that your IAM principal (user or role) that enables EC2 Fast Launch has the `EC2FastLaunchFullAccess` policy attached. This AWS managed policy grants full access to all EC2 Fast Launch resources. To view the permissions for this policy, see the [EC2FastLaunchFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2FastLaunchFullAccess.html) policy in the *AWS Managed Policy Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

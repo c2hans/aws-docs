@@ -189,7 +189,3 @@ $ aws fsx update-file-system \
 If the command is successful, Amazon FSx for Lustre returns the response in JSON format.
 
 You can view the root squash settings of your file system in the **Summary** panel of the file system details page on the Amazon FSx console or in the response of a [`describe-file-systems`](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html) CLI command (the equivalent API action is [`DescribeFileSystems`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileSystems.html)).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

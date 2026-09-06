@@ -73,7 +73,3 @@ If you import or export an asset to or from an Amazon S3 bucket that is in an AW
 If you export assets to a signed URL, your AWS account is charged for data transfer costs from Amazon S3 to the internet according to [Amazon S3 pricing policies](https://aws.amazon.com/s3/pricing/).
 
 When your subscription to an AWS Data Exchange for Files data set ends, you retain access to any files that you already exported. Review your Data Subscription Agreement to verify if your agreement requires that you delete exported data when ending a subscription.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

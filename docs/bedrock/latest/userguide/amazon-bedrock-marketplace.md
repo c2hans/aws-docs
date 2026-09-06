@@ -36,7 +36,3 @@ For code that runs an end-to-end workflow, see [End-to-end workflow](bedrock-mar
 + [Call the endpoint](bedrock-marketplace-call-the-endpoint.md)
 + [Manage your endpoints](bedrock-marketplace-manage-your-endpoints.md)
 + [Model compatibility](bedrock-marketplace-model-reference.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ A modern, well-engineered context payload is a composite of several dynamically 
 + **Knowledge bases **– RAG is a powerful technique for providing additional context. If the email mentions a specific product, the system can retrieve technical documentation or FAQs about that product and add them to the context. This helps you make sure that the summary is factually accurate and grounded.
 
 Generating a prompt template requires creating a reusable structure that combines these static and dynamic components. This transforms an ad-hoc process into a repeatable and testable part of the application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

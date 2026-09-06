@@ -15,7 +15,3 @@ In addition to the AWS global infrastructure, AWS IoT SiteWise offers several fe
 + You can publish property value updates to AWS IoT Core through MQTT messages, then configure rules to act upon that data. With this feature, you can back up data in other AWS services such as Amazon S3 and Amazon DynamoDB. For more information, see [Interact with other AWS services](interact-with-other-services.md) and [Export data to Amazon S3 with asset property notifications](export-to-s3.md).
 + You can use the AWS IoT SiteWise `Get*` APIs to retrieve and backup historical asset property data. For more information, see [Query historical asset property values in AWS IoT SiteWise](historical-values.md).
 + You can use the AWS IoT SiteWise `Describe*` APIs to retrieve the definitions for your resources, such as assets and models. You can backup these definitions and later use them to recreate your resources. For more information, see the [*AWS IoT SiteWise API Reference*](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

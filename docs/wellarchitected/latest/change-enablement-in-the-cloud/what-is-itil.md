@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/change-enablement
 |  Drive Stakeholder Value  |  Provides guidance on establishing, maintaining, and developing effective service relationships at appropriate levels.  |
 |  Digital & IT Strategy  |  Provides guidance on establishing IT and digital strategies in alignment with corporate strategy. It directs IT leaders to understand how the organization's strategy impacts the design, delivery, and support of IT services. They target this guidance towards C-suite professionals who lead business and IT organizations.  |
 |  Individual Practice Guide Documents  |  ITIL®4 has provided individually written papers that provide guidance to define and operate the ITIL®4 practices. "The Change Enablement ITIL®4 Practice Guide" provides details on the latest change management practices. Each ITIL practice has its own practice guide for reference. These can be accessed in the PeopleCert\+ website after one receives the appropriate ITIL certification.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

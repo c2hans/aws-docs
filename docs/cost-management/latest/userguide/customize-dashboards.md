@@ -16,7 +16,3 @@ The Budget report widget displays data in table format only. Visualization type 
 
 **Note**
 The Cost Efficiency widget supports only line chart and table visualization types. In line chart view, the widget shows your efficiency score percentage over time. In table view, it shows cost efficiency percentage grouped by your selected dimension (AWS account, region, or overall).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

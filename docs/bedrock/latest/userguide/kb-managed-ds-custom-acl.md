@@ -156,7 +156,3 @@ ACL misconfigurations do not produce explicit errors during retrieval. Retrieval
 | An inline ACL is rejected or ignored. | Wrong field casing, or metadata.type is not IN\_LINE\_ATTRIBUTE. | Use lowercase name/type/access and set metadata.type to IN\_LINE\_ATTRIBUTE. |
 | An S3-based ACL is not applied. | metadata.type is not S3\_LOCATION, or the .metadata.json file is missing accessControlList. | Set metadata.type to S3\_LOCATION and include accessControlList in the file. |
 | A document is never returned to anyone. | The document was ingested without an accessControlList. | Re-ingest the document with an accessControlList. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ The following diagram shows a VPC with a subnet, an internet gateway, and a secu
 ![VPC with a security group. The EC2 instances in the subnet are associated with the security group.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ec2-security-groups.png)
 
 Security groups are stateful—if you send a request from your instance, the response traffic for that request is allowed to flow in regardless of inbound security group rules. Also, responses to allowed inbound traffic are allowed to flow out, regardless of outbound rules. For more information, see [Connection tracking](security-group-connection-tracking.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

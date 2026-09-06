@@ -18,7 +18,3 @@ The following image shows the location of the LEDs on the Atlas 2.0 and Atlas 3.
 1. Check the color of the RGB Status LED. If the color is green, the NSK is healthy. If the color is not green, contact Support.
 
 1. If you have an Atlas 3.0 NSK, check the green Power LED. If the green light is on, the NSK is correctly connected to the host and has power. If the green light is not on, contact Support.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

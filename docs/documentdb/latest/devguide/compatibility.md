@@ -215,7 +215,3 @@ With the release of Amazon DocumentDB 4.0, there are functional differences betw
 Below are functional differences between Amazon DocumentDB 4.0 and MongoDB 4.0.
 + **Lookup with empty key in path**: When a collection contains a document with empty key inside the array (e.g. `{"x" : [ { "" : 10 }, { "b" : 20 } ]}`), and when the key used in the query ends in an empty string (e.g. `x.`), then Amazon DocumentDB will return that document since it traverses all the documents in the array whereas MongoDB will not return that document.
 + **`$setOnInsert` along with `$` in the path**: The field operator `$setOnInsert` will not work in combination with `$` in the path in Amazon DocumentDB, which is also consistent with MongoDB 4.0.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

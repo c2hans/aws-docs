@@ -261,7 +261,3 @@ To update your Amazon Linux 2 AMIs to the latest version, first export the lates
 1. Import the VM image into the Snow device using the AWS CLI or AWS OpsHub.
    + For information about using AWS CLI, see [Importing a virtual machine image to a Snowball Edge device](ec2-ami-import-cli.md).
    + For information about using AWS OpsHub, see [Importing an image as an Amazon EC2-compatible AMI with AWS OpsHub](ec2-ami-import.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

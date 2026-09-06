@@ -15,7 +15,3 @@ We are no longer updating the Amazon Machine Learning service or accepting new u
  Amazon ML allows you to create a datasource and then immediately use it to create an ML model, before statistics computation is completed. In this case, you will not be able to see the suggested recipe in the Custom option, but you will still be able to proceed past that step and have Amazon ML use the default recipe for model training.
 
  To use the suggested recipe with the Amazon ML API, you can pass an empty string in both Recipe and RecipeUri API parameters. It is not possible to retrieve the suggested recipe using the Amazon ML API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

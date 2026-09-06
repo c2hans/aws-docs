@@ -40,7 +40,3 @@ Create custom Kubernetes APIs that compose multiple resources into higher-level 
 
  **Securing applications and ensuring compliance**
 Implement strong security practices and maintain compliance with Amazon EKS, which integrates with AWS security services such as [AWS Identity and Access Management](https://aws.amazon.com/iam/) (IAM), [Amazon Virtual Private Cloud](https://aws.amazon.com/vpc/) (Amazon VPC), and [AWS Key Management Service](https://aws.amazon.com/kms/) (AWS KMS). This ensures data privacy and protection as per industry standards.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

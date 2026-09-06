@@ -44,7 +44,3 @@ During the month in which migration occurs, you are charged prorated amounts for
 +  Make sure that the WorkSpaces you want to migrate have a status of AVAILABLE, STOPPED, or ERROR.
 +  Make sure that you have enough IP addresses for the WorkSpaces you are migrating. During migration, new IP addresses will be allocated for the WorkSpaces.
 +  If you are using scripts to migrate WorkSpaces, migrate them in batches of no more than 25 WorkSpaces at a time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

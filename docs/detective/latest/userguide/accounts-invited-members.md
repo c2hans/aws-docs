@@ -46,7 +46,3 @@ The administrator account can remove invited member accounts from the behavior g
 + [Inviting a list of member accounts to a behavior graph](accounts-invited-members-add-csv.md)
 + [Enabling a member account that is Not enabled](graph-admin-unblock-account.md)
 + [Removing member accounts from a behavior graph](accounts-invited-remove.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ Currently, WorkSpaces Applications supports English and Japanese only for these 
 + [Configuring Chinese and Korean input methods on the image](configure-chinese-korean-input-methods.md)
 + [Special Considerations for Application Settings Persistence](special-considerations-app-settings-persistence.md)
 + [Special Considerations for Japanese Language Settings](special-considerations-japanese-language-settings.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

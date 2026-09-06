@@ -92,7 +92,3 @@ Amazon SageMaker AI Studio supports two API actions: [CreatePresignedDomainUrl](
 SageMaker AI supports network restrictions. If you place a restriction on the `sagemaker:CreatePresignedDomainUrl` action, that action applies both to calling [CreatePresignedDomainUrl](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedDomainUrl.html) and to the use of the generated URL. If a URL is generated from a valid network and then sent by a non-valid network, the API call to generate the URL succeeds, but the request that sends the URL fails. The same is true of [CreatePresignedNotebookInstanceUrl](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedNotebookInstanceUrl.html) and the `sagemaker:CreatePresignedNotebookInstanceUrl` action.
 
 For more information, see the [SageMaker AI documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/howitworks-access-ws.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

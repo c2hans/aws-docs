@@ -46,7 +46,3 @@ The following is an example of an input JSON file that uses two Omics Storage UR
 ```
 
 Reference the input JSON file in the AWS CLI by adding `--inputs file://<input_file.json>` to your **start-run** request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

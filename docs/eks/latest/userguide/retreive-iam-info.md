@@ -112,7 +112,3 @@ The following table indicates if certain Amazon EKS add-ons support EKS Pod Iden
 |  [Amazon CloudWatch Observability agent](workloads-add-ons-available-eks.md#amazon-cloudwatch-observability)  | Yes | v3.1.0-eksbuild.1 |
 
 This table was last updated on October 28, 2024.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ For Layer 7 services, Application Load Balancers and Amazon CloudFront support H
 You can use Amazon VPC Lattice to connect Layer 7 applications and Layer 3 resources. It supports HTTP, HTTPS, gRPC, TCP, and TLS passthrough.
 
 If the application can serve traffic only over Layer 3, it is crucial that you use core AWS networking services, such as AWS Transit Gateway, AWS Direct Connect, AWS Site-to-Site VPN, and VPC peering. The traffic should then be routed directly from the SaaS consumer to the compute layer of the SaaS offering.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

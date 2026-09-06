@@ -19,7 +19,3 @@ The following topics guide you through a set of steps to create an ID mapping wo
 + [Prerequisites](create-idmw-two-accounts-prerequisite.md)
 + [Creating an ID mapping workflow (rule-based)](create-id-mapping-workflow-procedure.md)
 + [Creating an ID mapping workflow (provider services)](create-id-mapping-workflow-provider-services.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

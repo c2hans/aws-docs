@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 + [EUCPERF05-BP03 Understand integrated storage capabilities (WorkSpaces)](eucperf05-bp03.md)
 + [EUCPERF05-BP04 Use instance storage when available and appropriate](eucperf05-bp04.md)
 + [EUCPERF05-BP05 Consider the benefits of additional AWS storage services](eucperf05-bp05.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

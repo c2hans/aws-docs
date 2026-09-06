@@ -36,7 +36,3 @@ You can view code review details by choosing the name of the code review.
 You can also use the AWS CLI or the AWS SDK to view the details of a code review.
 
 If you have the code review ARN, you can call [`DescribeCodeReview`](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_DescribeCodeReview.html). Alternatively, you can call [`ListCodeReviews`](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_ListCodeReviews.html) and filter using `ProviderType` and `RepositoryName`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

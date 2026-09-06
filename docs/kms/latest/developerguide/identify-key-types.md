@@ -103,7 +103,3 @@ The identifier for the external key in its external key manager. This is the val
 When you call the `DescribeKey` operation on a KMS key in an external key store the response includes the `Origin`, which identifies the source of the key material. For KMS keys in an AWS CloudHSM key store the origin value is always `EXTERNAL_KEY_STORE`. The operation also returns the `CustomKeyStoreId` element, which identifies the external key store associated with the KMS keys.
 
 For more information on external key stores, see [External key stores](keystore-external.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

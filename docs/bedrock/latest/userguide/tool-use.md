@@ -19,7 +19,3 @@ Amazon Bedrock supports three modes of tool use, depending on which API you call
 | [Client-side tool use](tool-use-client-side.md) | Your application code, after the model returns a tool-call request. | Most use cases. Available with the Responses, Chat Completions, Converse, and InvokeModel APIs. |
 | [Server-side tool use](tool-use-server-side.md) | Amazon Bedrock itself. You register a Lambda function or AgentCore Gateway, and Amazon Bedrock invokes the tool on the model's behalf. | Centralized, secure tool execution without managing orchestration in your application. Currently available on the Responses API. |
 | [Anthropic Claude tool use](model-parameters-anthropic-claude-messages-tool-use.md) | Your application code, using Anthropic-defined tool types (computer\_\*, bash\_\*, text\_editor\_\*, memory\_\*) and the Anthropic Messages API request format. | Computer use, code execution, file editing, persistent memory, or fine-grained tool streaming with Claude models on bedrock-runtime or bedrock-mantle. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

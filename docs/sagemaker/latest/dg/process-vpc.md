@@ -138,7 +138,3 @@ If you're connecting your models to resources outside the VPC that they're runni
 <a name="process-vpc-cloudwatch"></a>
 
 Amazon SageMaker AI provides Amazon CloudWatch logs and metrics to monitor training jobs. CloudWatch provides CPU, GPU, memory, GPU memory, and disk metrics, and event logging. For more information about monitoring Amazon SageMaker processing jobs, see [Amazon SageMaker AI metrics in Amazon CloudWatch](monitoring-cloudwatch.md) and [SageMaker AI job metrics](monitoring-cloudwatch.md#cloudwatch-metrics-jobs).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,3 @@ The following procedure describes how to publish an Amazon Mechanical Turk batch
 1. Choose **Purchase & Publish** to publish the batch of HITs.
 
 After your batch has been published, you can track its progress in the **Manage** section of the Mechanical Turk Requester console. For more information about managing batches, see [Manage batches](ManagingYourHITs.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

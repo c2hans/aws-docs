@@ -37,7 +37,3 @@ We recommend deploying an Amazon Elastic Compute Cloud (Amazon EC2) instance to 
 |  |  **Total:**  |  **\~$20.09**  |
 
 Prices are subject to change. For full details, refer to the pricing webpage for each AWS service you will be using in this solution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

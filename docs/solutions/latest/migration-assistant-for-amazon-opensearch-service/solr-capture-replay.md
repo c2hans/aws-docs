@@ -377,7 +377,3 @@ These logs contain the contents of all requests, including authorization headers
 <a name="solr-capture-supported-transforms"></a>
 
 For a full reference of supported write operations, search query features, and behavioral differences, see [Transform Solr traffic](transform-solr.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

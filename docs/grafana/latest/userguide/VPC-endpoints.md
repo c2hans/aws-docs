@@ -102,7 +102,3 @@ The following is an example of an endpoint policy for Amazon Managed Grafana. Th
 1. Select the `com.amazonaws.{{region}}.grafana` endpoint, and then choose the **Policy** tab.
 
 1. Choose **Edit Policy**, and then make your changes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ The following illustration shows the shared responsibility for EC2. When you run
 The following diagram illustrates the shared responsibility model for EC2, showing which security responsibilities are managed by AWS and which are yours.
 
 ![Diagram showing the shared responsibility model for EC2 on Amazon ECS.](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/images/ec2-shared-responsibility.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

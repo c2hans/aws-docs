@@ -31,9 +31,8 @@ For information about the HTTP protocol that the agent uses, see [HTTP protocol 
 Before you start, make sure you have:
 +  ** AWS Account** with credentials configured. To configure your AWS credentials, see [Configuration and credential file settings in the AWS CLI.](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
 +  **Node.js 22\+** installed. The AgentCore CLI is distributed as an npm package, and the generated agent code is TypeScript. We recommend installing the same major version you plan to deploy on AgentCore Runtime. For supported versions, see [Supported language runtimes](runtime-code-deploy-supported-runtimes.md).
-+  ** AWS CDK** installed. The CLI uses the AWS CDK to deploy resources. To install the AWS CDK, see [Getting started with the AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html).
 +  ** AWS Permissions** : To create and deploy an agent with the AgentCore CLI, you must have appropriate permissions. For information, see [Use the AgentCore CLI](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-permissions.html#runtime-permissions-cli).
-+  **Model access** : Anthropic Claude Sonnet 4 [enabled](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access-modify.html) in the Amazon Bedrock console (if using Bedrock as the model provider). For information about using a different model with Strands Agents, see the *Model Providers* section in the [Strands Agents SDK](https://strandsagents.com/latest/documentation/docs/) documentation.
++  **Model access** : Amazon Bedrock enables access to foundation models by default. To use a non-foundation model, follow the [model access steps](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html#model-access-sdk-step4).
 
 ## Step 1: Install the AgentCore CLI
 <a name="ts-setup-project"></a>
@@ -47,7 +46,7 @@ npm install -g @aws/agentcore
 Verify the installation:
 
 ```
-agentcore --help
+agentcore --version
 ```
 
 ## Step 2: Create your agent project
@@ -60,7 +59,7 @@ Use the `agentcore create` command to scaffold a new TypeScript agent project:
 1. Create a project without an agent, then add a TypeScript agent:
 
    ```
-   agentcore create --name MyTsAgent --no-agent
+   agentcore create --project-name MyTsAgent --no-agent
    cd MyTsAgent
    agentcore add agent --name TsAgent --type create --build CodeZip --language TypeScript --framework Strands --model-provider Bedrock --memory none
    ```
@@ -77,20 +76,27 @@ Use the `agentcore create` command to scaffold a new TypeScript agent project:
 
 1. Review your configuration and confirm.
 
-The command generates a project directory with the following structure:
+The following abbreviated structure shows the primary generated files:
 
 ```
 MyTsAgent/
-  agentcore/
-    agentcore.json        # Project and agent configuration
-    aws-targets.json      # AWS account and region targets
-  app/
-    TsAgent/
-      main.ts             # Agent entrypoint
-      model/load.ts       # Model configuration
-      mcp_client/client.ts # Example MCP client
-      package.json        # Dependencies
-      tsconfig.json       # TypeScript configuration
+├── AGENTS.md
+├── README.md
+├── agentcore/
+│   ├── agentcore.json
+│   ├── aws-targets.json
+│   ├── .env.local
+│   ├── .gitignore
+│   ├── .cli/
+│   ├── .llm-context/
+│   └── cdk/
+└── app/
+    └── TsAgent/
+        ├── main.ts
+        ├── model/load.ts
+        ├── mcp_client/client.ts
+        ├── package.json
+        └── tsconfig.json
 ```
 
 The `agentcore/agentcore.json` file contains your project and agent configuration. The `app/TsAgent/main.ts` file contains starter agent code using the Strands Agents framework.
@@ -191,7 +197,7 @@ After deployment completes, invoke your deployed agent:
    To maintain a conversation across multiple invocations, use the `--session-id` flag:
 
    ```
-   agentcore invoke --session-id my-session "What else can you tell me?"
+   agentcore invoke --session-id 12345678-1234-1234-1234-123456789012 "What else can you tell me?"
    ```
 
 1. Run `agentcore` to open the TUI home screen, then select the invoke option to chat with your deployed agent:
@@ -340,15 +346,13 @@ Verify your AWS credentials and permissions:
 + Review caller permissions policy for detailed requirements
 
  **Model access denied**
-Enable model access in the Bedrock console:
-+ Enable Anthropic Claude Sonnet 4 in the Bedrock console
-+ Make sure you’re in the correct AWS Region (us-west-2 by default)
+Amazon Bedrock enables access to foundation models by default. To use a non-foundation model, follow the model access steps and make sure that the model is available in your deployment Region.
 
  **CDK deployment errors**
-Check CDK setup and permissions:
-+ Make sure you have bootstrapped your AWS account for CDK: `cdk bootstrap`
+Check deployment permissions:
 + Verify your caller permissions include CloudFormation and CDK access
-+ Use `agentcore deploy -v` for verbose output to identify the failing resource
++ Use `agentcore deploy --yes` to authorize automatic CDK bootstrap when it is required
++ Use `agentcore deploy --verbose` for resource-level deployment events
 
  **TypeScript compilation errors**
 Ensure your TypeScript configuration is correct:
@@ -370,7 +374,7 @@ AgentCore Runtime only supports **arm64** architecture. If your agent uses npm p
 Find and stop processes that are using port 8080:
 Use `lsof -ti:8080` to get a list of processes using port 8080.
 Use `kill -9 PID` to stop the process. Replace {{PID}} with the process ID.
-Alternatively, start the dev server on a different port: `agentcore dev -p 3000`
+Alternatively, start the dev server on a different port: `agentcore dev --port 3000`
 
  **Region mismatch**
 Verify the AWS Region with `aws configure get region` and make sure the region in `agentcore/aws-targets.json` matches where your resources should be deployed.
@@ -378,7 +382,3 @@ Verify the AWS Region with `aws configure get region` and make sure the region i
  **Configuration validation errors**
 Validate your configuration files:
 Use `agentcore validate` to check for syntax or schema errors in `agentcore/agentcore.json` and related configuration files.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

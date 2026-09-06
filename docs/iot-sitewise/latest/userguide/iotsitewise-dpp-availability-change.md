@@ -42,7 +42,3 @@ Yes, you can migrate gradually using any combination of the migration options. Y
 <a name="iotsitewise-dpp-faq-timeline"></a>
 
 The data processing pack remains available to existing customers in maintenance mode. You'll receive advance notice if any changes to availability are planned. Monitor AWS service announcements and your account notifications for updates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

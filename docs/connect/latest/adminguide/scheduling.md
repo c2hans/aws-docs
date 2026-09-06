@@ -34,7 +34,3 @@ Following is the order of steps for creating a schedule and publishing it so sup
 1. [Generate, review, and publish a schedule by using Schedule Manager in Connect Customer](scheduling-publish-schedule.md)
 
 To learn how supervisors and agents view schedules, see [How supervisors view published schedules using the Connect Customer admin website](scheduling-view-schedule-supervisors.md) and [How agents view their schedule in the Connect Customer agent workspace](scheduling-view-schedule-staff.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

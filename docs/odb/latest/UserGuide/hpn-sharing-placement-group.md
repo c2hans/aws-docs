@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/hpn-sharing-placeme
 You can share the Oracle Database@AWS placement group across AWS accounts in the same AWS organization using **AWS Resource Access Manager (AWS RAM)**. This allows application teams in different AWS accounts to launch Amazon EC2 instances with optimized placement for low-latency connectivity to your Oracle Database@AWS database.
 
 For more details, see [shared placement groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/share-placement-group.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

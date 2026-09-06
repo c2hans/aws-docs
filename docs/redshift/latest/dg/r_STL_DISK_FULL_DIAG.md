@@ -43,7 +43,3 @@ select '2000-01-01'::timestamp + (currenttime/1000000.0)* interval '1 second' as
  2019-05-18 19:37:44.755548 |        0 |   569580 |       70982
  2019-05-20 13:37:20.566916 |        0 |   597424 |       70869
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

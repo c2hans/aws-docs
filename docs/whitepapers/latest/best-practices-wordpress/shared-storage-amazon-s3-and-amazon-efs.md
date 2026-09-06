@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpr
  To ensure optimal performance of your website when running from an EFS file system, check the recommended configuration settings for Amazon EFS and OPcache on the [AWS Reference Architecture for WordPress](https://github.com/awslabs/aws-refarch-wordpress#opcache).
 
  You also have the option to offload all static assets, such as image, CSS, and JavaScript files, to an S3 bucket with CloudFront caching in front. The mechanism for doing this in a multi-server architecture is exactly the same as for a single-server architecture, as discussed in the [Static Content](accelerating-content-delivery.md) section of this whitepaper. The benefits are the same as in the single-server architecture—you can offload the work associated with serving your static assets to Amazon S3 and CloudFront, thereby allowing your web servers to focus on generating dynamic content only and serve more user requests per web server.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

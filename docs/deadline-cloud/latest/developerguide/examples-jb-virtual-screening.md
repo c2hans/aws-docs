@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Run virtual screening with AutoDock Vina on Deadline Cloud
 <a name="examples-jb-virtual-screening"></a>
 
-The [virtual\_screening\_vina](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/virtual_screening_vina) job bundle uses [AutoDock Vina](https://github.com/ccsb-scripps/AutoDock-Vina) to screen large compound libraries against a protein target. The bundle splits a compound library into chunks and docks them in parallel across a fleet of workers, then aggregates and ranks the results by binding affinity.
+The [virtual\_screening\_vina job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/virtual_screening_vina) on the GitHub website uses [AutoDock Vina](https://github.com/ccsb-scripps/AutoDock-Vina) to screen large compound libraries against a protein target. The bundle splits a compound library into chunks and docks them in parallel across a fleet of workers, then aggregates and ranks the results by binding affinity.
 
 The pipeline runs four steps:
 
@@ -19,7 +19,7 @@ The pipeline runs four steps:
 
 The bundle requires a Linux x86\_64 service-managed fleet (Spot recommended), a conda queue environment with `openbabel` from `conda-forge`, and AutoDock Vina. Install Vina by building the [Build an AutoDock Vina conda package for Deadline Cloud](examples-conda-autodock-vina.md) conda recipe into your S3 channel, or by installing the binary through a fleet host configuration script.
 
-Set `CompoundLibrary=chembl` (default) to automatically download and filter drug-like molecules from [ChEMBL](https://www.ebi.ac.uk/chembl/), or provide your own SDF file.
+Set `CompoundLibrary=chembl` (default) to automatically download and filter drug-like molecules from [ChEMBL](https://www.ebi.ac.uk/chembl/) on the EMBL-EBI website, or provide your own SDF file.
 
 From the `job_bundles` directory, submit the job:
 
@@ -35,7 +35,3 @@ deadline bundle submit virtual_screening_vina \
 ```
 
 For details on building the AutoDock Vina conda package, see [Build an AutoDock Vina conda package for Deadline Cloud](examples-conda-autodock-vina.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

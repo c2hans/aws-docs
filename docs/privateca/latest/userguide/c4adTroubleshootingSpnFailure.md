@@ -15,7 +15,3 @@ Service principal name (SPN) creation can fail for various reasons. When SPN cre
 | INTERNAL\_FAILURE | Connector for AD experienced an internal failure. | Try again later. |
 | SPN\_EXISTS\_ON\_DIFFERENT\_AD\_OBJECT | The service principal name (SPN) exists on a different Active Directory object. | Delete the SPN from the Active Directory object, and try creating the SPN again. |
 | SPN\_LIMIT\_EXCEEDED | Connector for AD can't create the SPN because you've reached the limit of SPNs per directory. The maximum number of SPNs per directory is 10. | Delete one or more SPNs from your account, and try creating the SPN again. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

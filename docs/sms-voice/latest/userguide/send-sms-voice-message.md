@@ -168,7 +168,3 @@ In the preceding code example, make the following changes in the `main()` functi
 + If you want to execute this operation without sending any messages, change the value of `dry_run` to `True`.
 + Change the value of `ttl` to the amount of time, in seconds, that AWS End User Messaging SMS should attempt to deliver the message. You can set the TTL value up to 259200 seconds (72 hours).
 + Replace `MATTHEW` with the name of the Amazon Polly voice that you want to use to send the message. For a complete list of supported voices, see [SendVoiceMessage](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendVoiceMessage.html#pinpoint-SendVoiceMessage-request-VoiceId) in the *SMS and Voice, version 2 API Reference*. If you don't specify a voice, your message is sent using the "MATTHEW" voice.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

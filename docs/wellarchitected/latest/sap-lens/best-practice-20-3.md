@@ -24,7 +24,3 @@ AWS provide a suite of [Cloud Financial Management Services](https://aws.amazon.
 
  You can create [cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html#allocation-what) that help identify pricing of AWS resources based on individual accounts, resources, business units, and SAP environments. These tags are then visible within the AWS billing reports and can be analyzed using Cost Explorer. You can use cost allocation tags to determine the costs associated with individual SAP environments. They help inform if action should be taken to reduce or remove costs associated with specific environments, such as temporary environments or project environments that are no longer required. You should have a process to identify resources that do not have cost allocation tags attached. Implement the actions required to add cost allocation tags to these resources.
 +  SAP on AWS Blog: [Tagging recommendations for SAP on AWS](https://aws.amazon.com/blogs/awsforsap/tagging-recommendations-for-sap-on-aws/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ Custom billing views use AWS Resource Access Manager (AWS RAM) for sharing. When
 
 **Note**
 AWS RAM also supports a single resource belonging to multiple resource shares. If a custom billing view belongs to multiple resource shares, you will see a drop-down within the Edit sharing page labeled Select a share listing all resource shares the currently selected custom billing view belongs to. By selecting a resource share, you will be able to modify which accounts should be included or excluded from the selected resource share.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

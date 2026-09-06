@@ -30,7 +30,3 @@ For information about model customization quotas, see [Amazon Bedrock endpoints 
 
 **Note**
 You are charged for model training based on the number of tokens processed by the model (number of tokens in training data corpus × number of epochs) and model storage charged per month per model. For more information, see [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

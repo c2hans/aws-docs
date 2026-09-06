@@ -42,7 +42,3 @@ For methods to collect data sent by a vehicle that uses the Edge Agent for AWS I
 + [Delete an AWS IoT FleetWise state template](delete-state-template.md)
 + [Get AWS IoT FleetWise state template information](get-state-template.md)
 + [State template operations for data collection and processing](state-template-api-operations.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

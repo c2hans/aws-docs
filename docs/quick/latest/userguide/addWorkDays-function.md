@@ -167,7 +167,3 @@ total_bonus = {{total_days_worked}} * {{bonus_per_day}}
 ```
 
 ![Table showing employee data grouped by employee_id with aggregated values for days worked and bonuses.](http://docs.aws.amazon.com/quick/latest/userguide/images/addWorkDays-function-example.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

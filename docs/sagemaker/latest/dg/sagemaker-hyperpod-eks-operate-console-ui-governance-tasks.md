@@ -17,7 +17,3 @@ Configure Kubernetes Role-Based Access Control (RBAC) for data scientist users i
 Ensure that your job is submitted with the appropriate namespace and priority class labels. For a comprehensive example, see [Submit a job to SageMaker AI-managed queue and namespace](sagemaker-hyperpod-eks-operate-console-ui-governance-cli.md#hp-eks-cli-start-job).
 
 For EKS clusters, kubeflow (PyTorch, MPI, TensorFlow) tasks are shown. By default, PyTorch tasks are shown. You can filter for PyTorch, MPI, TensorFlow tasks by choosing the dropdown menu or using the search field. The information that is shown for each task includes the task name, status, namespace, priority class, and creation time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

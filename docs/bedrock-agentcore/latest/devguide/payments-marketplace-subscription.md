@@ -51,7 +51,3 @@ The Amazon Bedrock AgentCore console provides several entry points to subscribe:
 Choosing **Subscribe** opens the **Coinbase Wallets for AgentCore Payments** offer from AWS Marketplace in the console, where you can review the product details, pricing, and terms and conditions. Choose **Subscribe** to complete the subscription. After the subscription is active, continue creating your Coinbase connector. See [Create a Payment Manager and Connector](payments-create-manager.md).
 
 After the subscription is active, continue with [creating a Payment Manager and Connector](payments-create-manager.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -390,7 +390,3 @@ When migrating from AWS Glue 4.0 GlueContext FTA to AWS Glue 5.0 native Spark FT
 + Jobs referencing tables with AWS Lake Formation Fine-Grained Access Control (FGAC) rules or AWS Glue Data Catalog Views will fail. To query a table with an FGAC rules or a AWS Glue Data Catalog View, you need to use the FGAC mode. You can enable FGAC mode by following the steps outlined in the AWS documentation: Using AWS Glue with AWS Lake Formation for fine-grained access control.
 +  Full table access does not support Spark Streaming.
 + Cannot be used simultaneously with FGAC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

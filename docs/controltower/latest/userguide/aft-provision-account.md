@@ -32,7 +32,3 @@ To provision a new account with AFT, create an account request Terraform file. T
   + `change_requested_by`
 +  `custom_fields` captures additional metadata with keys and values that deploy as SSM parameters in the vended account under **/aft/account-request/custom-fields/**. You can reference this metadata during account customizations to deploy proper controls. For example, an account that's subject to regulatory compliance might deploy additional AWS Config Rules. The metadata that you collect with `custom_fields` can invoke additional processing during account provisioning and updating. If a custom field is removed from the account request, the custom field is removed from the SSM Parameter Store for the vended account.
 +  (Optional) `account_customizations_name` captures the account template folder in the **aft-account-customizations** repository. For more information, see [Account customizations](https://docs.aws.amazon.com/controltower/latest/userguide/aft-account-customization-options.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

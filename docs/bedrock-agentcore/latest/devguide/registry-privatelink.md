@@ -228,7 +228,3 @@ The following examples show endpoint policies for each AWS Agent Registry endpoi
    ```
 
     `InvokeRegistryMcp` is not exposed as an SDK client method — it is the IAM action that authorizes traffic sent to the registry’s MCP protocol path over the data plane endpoint. Invoking the registry MCP endpoint requires both `agent-registry:InvokeRegistryMcp` and the discovery-search action. In the `agent-registry` namespace the search action is `agent-registry:SearchDiscoverableRegistryRecords`; in the legacy `bedrock-agentcore` namespace it is `bedrock-agentcore:SearchRegistryRecords`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

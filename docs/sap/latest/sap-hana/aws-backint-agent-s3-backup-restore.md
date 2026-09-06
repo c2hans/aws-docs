@@ -124,7 +124,3 @@ You can use SAP HANA Cockpit to schedule periodic backups of your target SAP HAN
 <a name="aws-backint-agent-backup-retention"></a>
 
 Beginning with SAP HANA 2 SPS 03, you can use SAP HANA Cockpit to set the retention policies for your SAP HANA database backups. Based on your retention policies, SAP HANA Cockpit can automatically trigger jobs to delete old backups from catalogs, as well as the physical backups. This process also automatically deletes backup files stored in your Amazon S3 buckets. For more information, see "Retention Policy" under [Backup Configuration Settings](https://help.sap.com/viewer/afa922439b204e9caf22c78b6b69e4f2/2.10.0.0/en-US/b495da9a043a499893abc50c5cd367d9.html) in the *SAP HANA Administration with SAP HANA Cockpit Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

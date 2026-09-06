@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 + [How connections are established](https://www.postgresql.org/docs/8.3/connect-estab.html) (Oracle documentation)
 + [Lightweight connection pooler for PostgreSQL](https://www.pgbouncer.org/)
 + [PostgreSQL benchmarking tool](https://www.postgresql.org/docs/current/pgbench.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

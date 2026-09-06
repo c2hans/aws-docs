@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/aws-s
 |  [Amazon EventBridge](https://aws.amazon.com/eventbridge/)  |  Supporting. To invoke the transfer tasks regularly.  |
 |  [Amazon SNS](https://aws.amazon.com/sns/)  |  Supporting. Provides topic and email subscription notifications for data transfer results.  |
 |  [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/)  |  Supporting. To monitor the data transfer progress.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

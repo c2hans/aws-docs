@@ -45,7 +45,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  **In-scope data must be stored and processed in country.**
 
  In this scenario, if there is no AWS Region or Local Zone present in the country, then AWS Outposts must be used. Outposts should be deployed with sufficient redundant power and network to meet availability requirements. To avoid impact from local events, the Outposts should be set up in different physical locations with different power and network sources (for example, data centers in different cities). Amazon S3 is available on Outposts, and data can backed-up and recovered from S3 buckets.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

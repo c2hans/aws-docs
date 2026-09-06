@@ -16,7 +16,3 @@ If you have the Atlas 2.0 NSK, skip to the next step, [Step 5: Connect your Outp
 If you have the Atlas 3.0 NSK, check the green Power LED:
 + If the green light is on, the NSK is correctly connected to the host and has power. You can proceed to the next step.
 + If the green light is off, the NSK is not correctly connected to the host or/and has no power. Contact Support.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ To schedule a notebook job, make sure you meet the following criteria:
 + If you connect to an Amazon EMR cluster in your notebook and want to parameterize your Amazon EMR connection command, you must apply a workaround using environment variables to pass parameters. For details, see [Connect to an Amazon EMR cluster from your notebook](scheduled-notebook-connect-emr.md).
 + If you connect to an Amazon EMR cluster using Kerberos, LDAP, or HTTP Basic Auth authentication, you must use the AWS Secrets Manager to pass your security credentials to your Amazon EMR connection command. For details, see [Connect to an Amazon EMR cluster from your notebook](scheduled-notebook-connect-emr.md).
 + (optional) If you want the UI to preload a script to run upon notebook startup, your admin must install it with a Lifecycle Configuration (LCC). For information about how to use a LCC script, see [Customize a Notebook Instance Using a Lifecycle Configuration Script](https://docs.aws.amazon.com/sagemaker/latest/dg/notebook-lifecycle-config.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

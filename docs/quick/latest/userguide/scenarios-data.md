@@ -58,7 +58,3 @@ You can perform the following actions on a data snapshot:
 + Choose the **Fields list** icon to choose which fields are included in the scenario. This option can be used to control which columns are used in the scenario.
 
 When you are finished updating the scenario data, close the **Data** pane.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

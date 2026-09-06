@@ -331,7 +331,3 @@ Replace {{INPUT-YOUR-REGION}} with your AWS Region (for example, **us-east-1**) 
 AWS Transfer Family provides several advanced networking features that enhance security and flexibility when using VPC configurations:
 + **Shared VPC environment support** - You can host your Transfer Family server endpoint in a shared VPC environment. For more information, see [Using VPC hosted endpoints in shared VPCs with AWS Transfer Family](https://aws.amazon.com/blogs/storage/using-vpc-hosted-endpoints-in-shared-vpcs-with-aws-transfer-family/).
 + **Authentication and security** - You can use an AWS Web Application Firewall to protect your Amazon API Gateway endpoint. For more information, see [Securing AWS Transfer Family with AWS Web Application Firewall and Amazon API Gateway](https://aws.amazon.com/blogs/storage/securing-aws-transfer-family-with-aws-web-application-firewall-and-amazon-api-gateway/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

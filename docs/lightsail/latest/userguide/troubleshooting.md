@@ -22,7 +22,3 @@ The troubleshooting topics cover a wide range of scenarios, including WordPress 
 + [Troubleshoot Lightsail load balancer issues](troubleshooting-lightsail-load-balancer-issues.md)
 + [Troubleshoot notification delivery in Lightsail](amazon-lightsail-troubleshooting-notifications.md)
 + [Troubleshoot SSL/TLS certificates in Lightsail](troubleshooting-tls-ssl-certificate-issues.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

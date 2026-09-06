@@ -31,7 +31,3 @@ If you have additional questions, contact [AWS Support](https://aws.amazon.com/s
 + **How can I migrate off of AWS Migration Hub Refactor Spaces?**
 
   No formal migration process is required. Existing projects can continue in AWS Migration Hub Refactor Spaces until completion. For new projects, you can start directly in AWS Transform, which provides all the familiar capabilities of Migration Hub with enhanced features. No data migration is needed, and [AWS Support](https://aws.amazon.com/support) is available to assist with the transition.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub Refactor Spaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-refactor-spaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

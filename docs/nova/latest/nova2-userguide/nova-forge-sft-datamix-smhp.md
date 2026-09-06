@@ -720,7 +720,3 @@ Job launching commands for different recipes with corresponding images.
 + For MM datasets, our experiments indicate that incorporating over 20% of video categories into the mix is beneficial for maintaining generic benchmark performance.
 + Further, SFT with data mixing is quite sensitive to learning rate so our finding suggests to fine-tune with the default learning rate i.e. 1e-5 for LoRA and 5e-6 for FR.
 + Finally, there is a trade off between latency and performance if you mix Nova proprietary datasets so our findings suggest to mix 50% in max as a good balance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

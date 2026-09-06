@@ -41,7 +41,3 @@ Use the following procedure to apply a notification constraint using the SNS top
 1. Choose **Choose a topic from your account** and select the SNS topic that you created from **Topic Name**.
 
 1. Choose **Submit**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

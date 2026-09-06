@@ -24,7 +24,3 @@ You can download, update, and delete test sets from the test set window. Or you 
 1. From the Action menu at the top right, choose **Download**.
 
 1. A green banner message will indicate if you successfully have downloaded the test set. The file will be saved to your Downloads folder.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -126,7 +126,3 @@ Complete the following steps to create the IAM role by using the AWS Command Lin
    ```
 
    In the preceding example, replace {{PinpointEventStreamPermissionsPolicy.json}} with the full path to the file that contains the permissions policy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

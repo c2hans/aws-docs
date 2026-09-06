@@ -42,7 +42,3 @@ To learn about the syntax of each command, use `%ai help`. To list the providers
 For a complete list of features and detailed instructions on their usage, see the Jupyter AI [magic commands](https://jupyter-ai.readthedocs.io/en/latest/users/index.html#the-ai-and-ai-magic-commands) documentation. In particular, you can customize the output format of your model using the `-f` or `--format` parameter, allow variable interpolation in prompts, including special `In` and `Out` variables, and more.
 
 To learn about how to configure the access to a model, see [Configure your model provider in a notebook](sagemaker-jupyterai-model-configuration.md#sagemaker-jupyterai-model-configuration-magic-commands).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ To view a list of deployment IDs, call the [list-deployments](https://docs.aws.a
 + The name of the deployment group associated with the deployment. To view a list of deployment group names, call the [list-deployment-groups](https://docs.aws.amazon.com/cli/latest/reference/deploy/list-deployment-groups.html) command.
 + Optionally, whether to include details about deployments by their deployment status. (If not specified, all matching deployments will be listed, regardless of their deployment status.)
 + Optionally, whether to include details about deployments by their deployment creation start times or end times, or both. (If not specified, all matching deployments will be listed, regardless of their creation times.)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,7 +59,3 @@ Configuration settings for FreeRTOS and the AWS IoT Device SDK for Embedded C a
 If you want to use a global configuration file to set configuration options, create and save the file with the name `iot_config.h`, and place it in your include path. Within the file, use `#define` directives to configure the FreeRTOS libraries, demos, and tests.
 
 For more information about the supported global configuration options, see the [Global Configuration File Reference](https://docs.aws.amazon.com/freertos/latest/lib-ref/c-sdk/main/global_library_config.html#IOT_CONFIG_FILE).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

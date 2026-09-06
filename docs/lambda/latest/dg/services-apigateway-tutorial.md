@@ -633,7 +633,3 @@ You can now delete the resources that you created for this tutorial, unless you 
 1. Choose **Delete table**.
 
 If you encounter errors when invoking your function through API Gateway, see [Handling Lambda errors with an API Gateway API](services-apigateway-errors.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

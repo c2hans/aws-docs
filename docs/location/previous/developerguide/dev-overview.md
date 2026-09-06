@@ -15,7 +15,3 @@ This section provides information and links to help you get started with Amazon 
 + [Quick start tutorial](getting-started.md) – This tutorial shows you how to create your first application. There are versions of the tutorial for creating a web application or an Android-based mobile application.
 + [Amazon Location Service concepts](how-it-works.md) – This section of this guide describes the basic concepts of Amazon Location, including sections on Maps, Places search, Routes, and Geofences and Trackers.
 + [Amplify](https://aws.amazon.com/amplify/) – Amplify is a complete solution that encapsulates much of the functionality needed for creating web and mobile applications using the AWS Cloud. If you are already using Amplify, or choose to use Amplify, it has a geo library using Amazon Location Service built-in that you can use. To get started with Amplify Geo, see the documentation [here](https://docs.amplify.aws/lib/geo/getting-started/q/platform/js/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

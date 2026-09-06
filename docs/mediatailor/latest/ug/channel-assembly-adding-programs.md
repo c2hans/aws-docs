@@ -143,7 +143,3 @@ If MediaTailor detects ad markers, such as`DATERANGE` or `EXT-X-CUE-OUT` for HLS
     For more advanced information using MediaTailor to personalize your ad breaks, see [Insert personalized ads and ad breaks in a channel stream](channel-assembly-integrating-mediatailor-ssai.md).
 **Note**
 If your channel has at least one output with an `Enhanced Scte35` Ad markup type, you can submit ad-break metadata. MediaTailor writes the submitted key-value pairs to the `EXT-X-ASSET` tag for your ad break.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

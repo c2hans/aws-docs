@@ -20,7 +20,3 @@ Also, if the resource no longer exists, the Config enrichment provides informati
 1. At the top, under **Connector features enabled by default**, select each feature depending whether you want projects using the default configuration to be able to use them or not.
 
 1. Choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

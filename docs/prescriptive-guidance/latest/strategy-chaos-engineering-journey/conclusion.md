@@ -14,7 +14,3 @@ To transform this strategic necessity into reality, start by assessing your orga
 + Develop comprehensive resilience metrics.
 
 This transformation won't happen overnight. However, taking these concrete steps, while securing ongoing executive support, will help elevate chaos engineering to the same strategic level as cybersecurity. Similar to cybersecurity, chaos engineering can become an integral part of your organization's operational DNA and processes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -72,7 +72,3 @@ Use the `put-metric-alarm` command and specify a Metrics Insights query in the `
 ```
 aws cloudwatch put-metric-alarm --alarm-name Prod-App-CPU-Alarm --evaluation-periods 1 --comparison-operator GreaterThanThreshold --metrics '[{"Id":"m1","Expression":"SELECT MAX(CPUUtilization) FROM \"AWS/EC2\" WHERE tag.Environment = '\''Prod'\'' AND tag.Application = '\''OrderService'\''", "Period":60}]' --threshold 80
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

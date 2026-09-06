@@ -96,12 +96,25 @@ public class SnapstartExample
 ## Use cryptographically secure pseudorandom number generators (CSPRNGs)
 <a name="snapstart-csprng"></a>
 
-If your application depends on randomness, we recommend that you use cryptographically secure random number generators (CSPRNGs). In addition to OpenSSL 1.0.2, the Lambda managed runtimes also include the following built-in CSPRNGs:
+When SnapStart is enabled, Lambda takes a snapshot of your function's execution environment including all application and system memory. This means the internal state of every random number generator (RNG) is preserved exactly as it was at snapshot time, along with any random bytes that your application or its dependencies have already generated and stored in memory buffers.
+
+When Lambda restores an execution environment from a snapshot, it reseeds the kernel random number generator from `/dev/random` and `/dev/urandom` with fresh entropy. Software that reads random numbers directly from these devices maintains randomness with SnapStart.
+
+If your application depends on randomness, we recommend that you use cryptographically secure random number generators (CSPRNGs). In addition to the AL provided OpenSSL, the Lambda managed runtimes that support SnapStart (Java version 11\+, Python version 3.12\+, and .NET version 8\+), include the following built-in CSPRNGs:
 + **Java:** `java.security.SecureRandom`
 + **Python:** `random.SystemRandom`
 + **.NET:** `System.Security.Cryptography.RandomNumberGenerator`
 
-Software that always gets random numbers from `/dev/random` or `/dev/urandom` also maintains randomness with SnapStart.
+**Note**
+For [Go Lambda runtime](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html) no changes are required if your functions use the standard library's `crypto/rand`, which is snapstart-compatible by default.
+
+When you package your function as a container image, your base image determines uniqueness compatibility with SnapStart:
++ **A Lambda base image for a managed runtime** (Java version 11\+, Python version 3.12\+, and .NET version 8\+) – Compatible with SnapStart as described above.
++ **The provided.al2023 base image** – Compatible if your programming language runtime obtains entropy from `/dev/random`, `/dev/urandom`, or the SnapStart-compatible build of OpenSSL (openssl-snapsafe-libs) listed in the [Amazon Linux 2023 package list](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages.html). If your runtime relies on other entropy sources, follow the steps described in the "Your own base image" section below.
++ **Your own base image** – Audit your cryptographic libraries and use a post-restore [runtime hook](https://docs.aws.amazon.com/lambda/latest/dg/snapstart-runtime-hooks.html) to discard any cached random number generator (RNG) state or buffered random bytes, ensuring the library reads fresh entropy from the system after restore. For example, Rust functions that use `rand::rngs::ThreadRng` must call `reseed()` after restore. We recommend that you build using a Lambda base image whenever possible. In particular, if your base image includes its own version of OpenSSL or an OpenSSL fork (such as BoringSSL or LibreSSL), either switch to the provided.al2023 base image, which includes a SnapStart-compatible build of OpenSSL (openssl-snapsafe-libs), or use [AWS libcrypto (AWS-LC)](#snapstart-csprng-minimum-versions).
+
+### Minimum supported library versions
+<a name="snapstart-csprng-minimum-versions"></a>
 
 AWS cryptography libraries automatically maintain randomness with SnapStart beginning with the minimum versions specified in the following table. If you use these libraries with your Lambda functions, make sure that you use the following minimum versions or later versions:
 
@@ -199,7 +212,3 @@ public class Function
 Lambda provides a scanning tool for Java to help you check for code that assumes uniqueness. The SnapStart scanning tool is an open-source [SpotBugs](https://spotbugs.github.io/) plugin that runs a static analysis against a set of rules. The scanning tool helps identify potential code implementations that might break assumptions regarding uniqueness. For installation instructions and a list of checks that the scanning tool performs, see the [aws-lambda-snapstart-java-rules](https://github.com/aws/aws-lambda-snapstart-java-rules) repository on GitHub.
 
 To learn more about handling uniqueness with SnapStart, see [Starting up faster with AWS Lambda SnapStart](https://aws.amazon.com/blogs/compute/starting-up-faster-with-aws-lambda-snapstart/) on the AWS Compute Blog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

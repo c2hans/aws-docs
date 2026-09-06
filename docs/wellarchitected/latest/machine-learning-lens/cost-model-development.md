@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 + [MLCOST04-BP12 Set up a budget and use resource tagging to track costs](mlcost04-bp12.md)
 + [MLCOST04-BP13 Enable data and compute proximity](mlcost04-bp13.md)
 + [MLCOST04-BP14 Select optimal algorithms](mlcost04-bp14.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

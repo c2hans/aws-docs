@@ -42,7 +42,3 @@ MediaConvert supports both left to right and right to left text directions withi
 When you don’t specify text direction, MediaConvert uses left to right.
 
 To specify right to left, include a `tts:direction="rtl"` attribute. If your text has a mix of bidirectional characters, also include a `tts:unicodeBidi="embed"` attribute as described in the [TTML2 W3C recommendation](https://www.w3.org/TR/ttml2/#style-attribute-direction). Note that `tts:unicodeBidi` is a non-heritable attribute.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

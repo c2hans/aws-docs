@@ -25,7 +25,3 @@ To request a certificate for a private PKI using AWS Private CA, see [Request a 
 + [Request a public certificate in AWS Certificate Manager](acm-public-certificates.md)
 + [AWS Certificate Manager exportable public certificates](acm-exportable-certificates.md)
 + [Validate domain ownership for AWS Certificate Manager public certificates](domain-ownership-validation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

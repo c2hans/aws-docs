@@ -99,7 +99,3 @@ A log file for the preceding object hierarchy will look like the following:
 
 **Note**
 Although uncommon, you may receive log files that contain one or more duplicate events. In most cases, duplicate events will have the same `eventID`. For more information about the `eventID` field, see [CloudTrail record contents for management, data, and network activity events](cloudtrail-event-reference-record-contents.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

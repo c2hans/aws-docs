@@ -23,7 +23,3 @@ The blue nodes indicate two more flows to authenticate specifically to Amazon Be
 + **Long-term key** – Recommended only for exploration of Amazon Bedrock. You can set the time after which the key expires. When you generate a long-term key, it underlyingly creates an IAM user that's for you, attaches the IAM policies that you select, and associates the key with the user. After you generate the key, you can use the IAM service to [modify permissions for the IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html).
 **Warning**
 We strongly recommend restricting the use of Amazon Bedrock API keys for exploration of Amazon Bedrock. When you're ready to incorporate Amazon Bedrock into applications with greater security requirements, you should switch to short-term credentials. For more information, see [Alternatives to long-term access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds-programmatic-access.html#security-creds-alternatives-to-long-term-access-keys) in the IAM User Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

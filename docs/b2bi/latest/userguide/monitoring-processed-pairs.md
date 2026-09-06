@@ -40,7 +40,3 @@ For the table to be populated with values, you must have enabled logging in the 
 
 **Note**
 The table displays up to the 10,000 most recently processed input-output pairs (there might be up to a 1 minute delay between the input-output pair being processed and it showing up in the table). For historical data beyond this limit, use vended Amazon CloudWatch logs as described in [Monitoring AWS B2B Data Interchange with Amazon CloudWatch](monitoring-cloudwatch.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS B2B Data Interchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query b2bi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

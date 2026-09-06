@@ -85,7 +85,3 @@ Here's a comparison of the nine GitOps tools that were discussed in the previous
 + CloudFormation uses JSON and YAML templates.
 + Argo CD, Flux, Rancher Fleet, Weave GitOps, Spinnaker, and GitLab CI/CD primarily manage YAML or declarative configuration files.
 + Jenkins X manages YAML and scripting-based pipelines but doesn't natively offer general-purpose programming for IaC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,3 @@ With EMR Serverless, configure the applications that you use. For example, set t
 + [Pre-initialized capacity for working with an application in EMR Serverless](pre-init-capacity.md)
 + [Default application configuration for EMR Serverless](default-configs.md)
 + [Updating Running Applications](updating-running-applications.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

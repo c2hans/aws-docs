@@ -22,7 +22,3 @@ Amazon S3 Glacier provides the following APIs for data retrieval.
 | <a name="glacier-ListProvisionedCapacity"></a>[ListProvisionedCapacity](https://docs.aws.amazon.com/amazonglacier/latest/dev/api-ListProvisionedCapacity.html) | List the provisioned capacity for the specified AWS account | List |
 | <a name="glacier-ListTagsForVault"></a>[ListTagsForVault](https://docs.aws.amazon.com/amazonglacier/latest/dev/api-ListTagsForVault.html) | List all the tags attached to a vault | List |
 | <a name="glacier-ListVaults"></a>[ListVaults](https://docs.aws.amazon.com/amazonglacier/latest/dev/api-vaults-get.html) | List all vaults | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

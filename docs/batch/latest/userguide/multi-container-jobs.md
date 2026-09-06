@@ -90,7 +90,3 @@ The `initContainers` object can affect the start time for your job. If the `init
 + Every container has importance. All containers must complete successfully (exit as 0) for the job to succeed. If one container fails (exits as other than 0), then the job fails.
 
 For more information about the `eksProperties` and structure, see [RegisterJobDefinition](https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html#API_RegisterJobDefinition_RequestBody) request syntax for [eksProperties](https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html#Batch-RegisterJobDefinition-request-eksProperties).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

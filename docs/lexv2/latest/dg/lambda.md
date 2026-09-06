@@ -27,7 +27,3 @@ To integrate a Lambda function with your Amazon Lex V2 bot, carry out the follow
 + [Common structures in an AWS Lambda function for Amazon Lex V2](lambda-common-structures.md)
 + [Creating an AWS Lambda function for your Amazon Lex V2 bot](lambda-attach.md)
 + [Debugging a Lambda function using CloudWatch Logs logs](lambda-debug.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,3 @@ You can configure your AWS Glue ETL jobs to run within a VPC when using connecto
 + If your job needs to access both VPC resources and the public internet, the VPC needs to have a network address translation (NAT) gateway inside the VPC.
 
   For more information, see [Setting Up Your Environment to Access Data Stores](https://docs.aws.amazon.com/glue/latest/dg/start-connecting.html) in the *AWS Glue Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

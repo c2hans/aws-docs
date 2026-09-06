@@ -29,7 +29,3 @@ aws kinesis describe-channel \
  The response includes the delivery's `ChannelStatus` (CREATING, ACTIVE, UPDATING, DELETING, or FAILED), the source stream configuration, the destination table configuration, and the data freshness setting. A delivery is ready to receive records when `ChannelStatus` is ACTIVE.
 
  **API reference** – see `DescribeChannel` in the *Amazon Kinesis Data Streams API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

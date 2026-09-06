@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/developer-assoc
 + Skill 2.3.4: Sanitize sensitive data
 + Skill 2.3.5: Implement application-level data masking and sanitization
 + Skill 2.3.6: Implement data access patterns for multi-tenant applications
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

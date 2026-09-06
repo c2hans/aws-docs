@@ -212,7 +212,3 @@ The following tables list the object encryption and wrapping algorithms that are
 | KMS\+context | Full | Full | Full | Full | Full | Full |
 | RSA | No | No | Legacy | No | No | Legacy |
 | RSA-OAEP-SHA1 | No | No | Full | Full | No | Full |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon S3 Encryption Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-s3-encryption-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

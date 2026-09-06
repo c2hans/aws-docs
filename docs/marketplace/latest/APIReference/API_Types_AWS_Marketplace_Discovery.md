@@ -26,6 +26,7 @@ The following data types are supported by AWS Marketplace Discovery:
 +  [Ec2ImageBuilderComponentFulfillmentOption](API_marketplace-discovery_Ec2ImageBuilderComponentFulfillmentOption.md)
 +  [EksAddOnFulfillmentOption](API_marketplace-discovery_EksAddOnFulfillmentOption.md)
 +  [EksAddOnOperatingSystem](API_marketplace-discovery_EksAddOnOperatingSystem.md)
++  [FixedPercentage](API_marketplace-discovery_FixedPercentage.md)
 +  [FixedUpfrontPricingTerm](API_marketplace-discovery_FixedUpfrontPricingTerm.md)
 +  [FreeTrialPricingTerm](API_marketplace-discovery_FreeTrialPricingTerm.md)
 +  [FulfillmentOption](API_marketplace-discovery_FulfillmentOption.md)
@@ -45,7 +46,11 @@ The following data types are supported by AWS Marketplace Discovery:
 +  [OfferSetAssociatedEntity](API_marketplace-discovery_OfferSetAssociatedEntity.md)
 +  [OfferSetInformation](API_marketplace-discovery_OfferSetInformation.md)
 +  [OfferTerm](API_marketplace-discovery_OfferTerm.md)
++  [PaymentScheduleEntry](API_marketplace-discovery_PaymentScheduleEntry.md)
 +  [PaymentScheduleTerm](API_marketplace-discovery_PaymentScheduleTerm.md)
++  [PaymentScheduleTermTemplate](API_marketplace-discovery_PaymentScheduleTermTemplate.md)
++  [PercentageRange](API_marketplace-discovery_PercentageRange.md)
++  [PriceIncrease](API_marketplace-discovery_PriceIncrease.md)
 +  [PricingModel](API_marketplace-discovery_PricingModel.md)
 +  [PricingUnit](API_marketplace-discovery_PricingUnit.md)
 +  [ProductInformation](API_marketplace-discovery_ProductInformation.md)
@@ -74,13 +79,10 @@ The following data types are supported by AWS Marketplace Discovery:
 +  [SellerEngagement](API_marketplace-discovery_SellerEngagement.md)
 +  [SellerInformation](API_marketplace-discovery_SellerInformation.md)
 +  [SupportTerm](API_marketplace-discovery_SupportTerm.md)
++  [TermTemplate](API_marketplace-discovery_TermTemplate.md)
 +  [UsageBasedPricingTerm](API_marketplace-discovery_UsageBasedPricingTerm.md)
 +  [UsageBasedRateCardItem](API_marketplace-discovery_UsageBasedRateCardItem.md)
 +  [UseCase](API_marketplace-discovery_UseCase.md)
 +  [UseCaseEntry](API_marketplace-discovery_UseCaseEntry.md)
 +  [ValidityTerm](API_marketplace-discovery_ValidityTerm.md)
 +  [VariablePaymentTerm](API_marketplace-discovery_VariablePaymentTerm.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

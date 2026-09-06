@@ -34,7 +34,3 @@ Partners can request early termination of service periods before their natural e
 + Terminating a service period only ends the agreement – it does not automatically sever the underlying billing transfer
 + After termination, either party can manage the billing transfer according to standard AWS procedures
 + Terminated service periods remain visible in the relationship history for audit purposes
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

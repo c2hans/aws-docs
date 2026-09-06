@@ -119,7 +119,3 @@ The following AWS resources can also be of help:
 + [Troubleshooting CloudFormation in the *CloudFormation User Guide*](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html)
 
 Troubleshooting often requires iterative query and discovery by an expert or from a community of helpers. If you continue to experience issues after trying the suggestions in this section, contact AWS Support (in the AWS Management Console, click **Support**, **Support Center**) or ask a question on [AWS re:Post](https://repost.aws/) using the **Amazon EC2 Auto Scaling** tag.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

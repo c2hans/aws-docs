@@ -100,7 +100,3 @@ You can't use placeholder parameters in a filter expression that uses the NOT\_I
  You can't create filter expressions that filter using values with a Boolean type in your schema. To filter based on Boolean values, use a schema with a field of type `String` and use the values `True` and `False` in your data. Or you can use type `int` or `long` and values `0` and `1`.
 
 For more information about filters, see [Filter expression elements](creating-filter-expressions.md#filter-expression-elements).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

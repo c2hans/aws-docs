@@ -37,7 +37,3 @@ When the first SageMaker AI Studio user is onboarded, SageMaker AI creates an EF
 Administrators can control compute costs by specifying the list of instances a user can spin up, using IAM policies as mentioned in the *[Common guardrails](permissions-management.md#common-guardrails) *section. In addition, we recommend that customers make use of the SageMaker AI [Studio auto shutdown extension](https://github.com/aws-samples/sagemaker-studio-auto-shutdown-extension) to save costs by automatically shutting down idle apps. This server extension periodically polls for running apps per user profile, and shuts down idle apps based on a timeout set by the administrator.
 
 To set this extension for all users in your domain, you can use a lifecycle configuration as described in *[Customization](customization.md)* section. Additionally, you can also use the [extension checker](https://github.com/aws-samples/sagemaker-studio-auto-shutdown-extension/tree/main/extension-checker) to ensure all of your domain’s users have the extension installed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

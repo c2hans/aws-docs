@@ -256,7 +256,3 @@ For options that accept a boolean value, you can specify them in the following w
   $ cdk deploy --no-watch
   ```
 + For options that default to `true` or `false`, you don’t have to provide the option unless you want to change from the default.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

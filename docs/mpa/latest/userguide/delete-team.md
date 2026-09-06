@@ -99,7 +99,3 @@ The request to delete an active team must be approved by the team. If the team i
 A team can still be deleted even when it is protecting resources. The service integration provides workflows for reassigning protected resources to available teams.
 
 For information, see the **Learn More** column in [What operations are currently supported with Multi-party approval](what-is.md#mpa-integrations-supported).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Multi-party approval. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mpa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

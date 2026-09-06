@@ -26,7 +26,3 @@ The following table describes the documentation for this release of Lookout for 
 | Update to grant retirement policy | Removed the retire grant from the managed policy as the service will be using retiring grant principal to retire the grants. You dont need to provide the retire grant permissions in the managed policy. | November 19, 2021 |
 | General availability | This version supports the generally available release of Amazon Lookout for Equipment. | April 8, 2021 |
 | New guide and service | This version supports the preview release of Amazon Lookout for Equipment. | December 1, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,6 +56,7 @@ After you have created and specified the required secret and secret access-role 
 
    ```
    {
+   	"Version": "2012-10-17",
    	"Statement": [{
    			"Effect": "Allow",
    			"Action": [
@@ -281,7 +282,3 @@ If your secret is in a different account, then the `SecretsManagerAccessRoleArn`
    ```
    secretsManagerEndpointOverride=vpce-1234a5678b9012c-12345678.secretsmanager.eu-west-1.vpce.amazonaws.com
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

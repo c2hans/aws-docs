@@ -139,7 +139,7 @@ rtSession.sendReliableMessage(gameMessage, targetPlayer)
 ## sendReliableGroupMessage()
 <a name="realtime-script-objects-sendreliablegroupmessage"></a>
 
-Sends a message, created using `newTextGameMessage` or `newBinaryGameMessage`, from the Realtime server to all players in a player group using the TCP channel. Group IDs which must be a positive integer or "-1" to indicate all groups. See [Amazon GameLift Servers Realtime script example](realtime-script.md#realtime-script-examples) for an example of user-defined group IDs.
+Sends a message, created using `newTextGameMessage` or `newBinaryGameMessage`, from the Realtime server to all players in a player group using the TCP channel. Group IDs must be a positive integer or "-1" to indicate all groups. See [Amazon GameLift Servers Realtime script example](realtime-script.md#realtime-script-examples) for an example of user-defined group IDs.
 
 ### Syntax
 <a name="realtime-script-objects-sendreliablegroupmessage-syntax"></a>
@@ -180,7 +180,7 @@ Access player-related information.
 ### player.peerId
 <a name="realtime-script-objects-playerpeerid"></a>
 
-Unique ID that is assigned to a game client when it connects to the Realtime server and joined the game session.
+Unique ID that is assigned to a game client when it connects to the Realtime server and joins the game session.
 
 ### player.playerSessionId
 <a name="realtime-script-objects-playersessionid"></a>
@@ -240,7 +240,3 @@ The default is 32.
 Time interval in milliseconds that server will attempt to send a ping to all connected clients to verify connections are healthy.
 
 The default is 3000ms.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

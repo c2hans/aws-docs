@@ -11,6 +11,7 @@ The following table describes the documentation updates for this guide.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Auto-renewal support in the AWS Marketplace Agreement API](#doc-history) | Documented how buyers turn auto-renewal on and off with the AWS Marketplace Agreement API, including when the preference can still be changed and why turning auto-renewal on does not by itself guarantee that an agreement renews. | August 31, 2026 |
 | [AWS Marketplace Discovery API public launch](#doc-history) | The AWS Marketplace Discovery API is now available. Added 9 API operations: GetListing, GetProduct, GetOffer, GetOfferTerms, GetOfferSet, ListPurchaseOptions, ListFulfillmentOptions, SearchFacets, and SearchListings. Standard AWS SDK support and IAM-based access. | April 8, 2026 |
 | [Updates to ML products](#doc-history) |  Updated seller product machine learning information.  | March 26, 2025 |
 | [CustomerIdentifier](#doc-history) | Added notice of deprecation of CustomerIdentifier in March 2026. | March 25, 2025 |
@@ -111,7 +112,3 @@ Discovery API announces the following launch, and improvements:
   + `SortOrder` – `ASCENDING`
 + SDK updated for all the existing languages with the latest AWS SDK artifacts.
 + Documentation updated to include SDK usage section for all languages.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

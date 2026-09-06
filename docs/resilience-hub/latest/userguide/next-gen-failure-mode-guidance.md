@@ -20,7 +20,3 @@ Assertions are categorized and serve as leverage points. By confirming or adjust
 **Service design files**
 
 You can upload design files that include details about the technical design that will be provided to the AI agents to perform the failure mode analysis.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

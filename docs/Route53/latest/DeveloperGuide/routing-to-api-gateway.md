@@ -126,7 +126,3 @@ For control over DNS failover, configure custom health checks. For an example, s
    Changes generally propagate to all Route 53 servers within 60 seconds. When propagation is done, you'll be able to route traffic to your API by using the name of the alias record that you created in this procedure.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

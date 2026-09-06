@@ -114,7 +114,3 @@ The Data API uses two encryption context key-value pairs in all AWS KMS cryptogr
 ```
 
 For more information about encryption, see [Introduction to the cryptographic details of AWS KMS](https://docs.aws.amazon.com/kms/latest/cryptographic-details/intro.html). For more information about the Amazon Redshift and AWS KMS integration, see [How Amazon Redshift uses AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/services-redshift.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

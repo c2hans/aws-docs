@@ -23,7 +23,3 @@ If you operate redundant resources for resilience—for example, redundant flows
 + [Viewing flow maintenance status](viewing-flows-maintenance.md)
 + [Setting flow maintenance windows](setting-flow-maintenance.md)
 + [Manually restarting resources for maintenance](manual-restart-maintenance.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

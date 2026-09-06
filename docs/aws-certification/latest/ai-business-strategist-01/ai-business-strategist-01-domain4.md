@@ -41,7 +41,3 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/ai-business-str
 + Skill 4.4.4: Establish continuous feedback mechanisms and success metrics to track AI initiative progress and long-term value.
 + Skill 4.4.5: Address the transition of AI initiatives from experimental to production-grade, including governance and operational requirements.
 + Skill 4.4.6: Evaluate multiple factors throughout AI scaling initiatives across an enterprise to ensure business continuity and performance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

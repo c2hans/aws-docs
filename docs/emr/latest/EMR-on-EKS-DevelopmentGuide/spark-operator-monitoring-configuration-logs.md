@@ -61,7 +61,3 @@ After configured *monitoringConfiguration*, you should be able to check spark op
 To find the logs in Amazon CloudWatch, you can navigate to the following: **CloudWatch** > **Log groups** > **{{Log group name}}** > {{Pod name}}**/operator/stderr**
 
 Or you can navigate to: **CloudWatch** > **Log groups** > **{{Log group name}}** > {{Pod name}}**/operator/stdout**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

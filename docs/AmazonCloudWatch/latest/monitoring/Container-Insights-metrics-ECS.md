@@ -70,7 +70,3 @@ The following metrics are available when you complete the steps in [Deploying th
 | `instance_memory_working_set` | `ClusterName` | The amount of memory, in bytes, being used on a single EC2 Instance in the cluster. If you're using the Java ZGC garbage collector for your application, this metric might be inaccurate. <br />Unit: Bytes |
 | `instance_network_total_bytes` | `ClusterName` | The total number of bytes per second transmitted and received over the network on a single EC2 Instance in the cluster.<br />Unit: Bytes/second |
 | `instance_number_of_running_tasks` | `ClusterName` | The number of running tasks on a single EC2 Instance in the cluster.<br />Unit: Count |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,6 +47,10 @@ Saved searches on Contact search created before the launch of the ability to sea
 **Note**
 When you select multiple values at any hierarchy level, you cannot filter on the next hierarchy level(s).
 + Filter contacts by channel and channel subtype, such as SMS.
++ Filter contacts by tags. You can include up to 10 tags in the filter. To control which tag combinations appear in the results, choose **Match any**, **Match all**, or **Match none**.
++ Filter contacts by task template.
+**Important**
+Filtering contacts by task template does not reflect updated templates for in-progress contacts. Contact search will only show the original template until the contact terminates.
 + Filter to search for email contacts using email address (To, From and CC) and email subject. Searching on an email subject is not case sensitive. Also, searching for a subset of words within an email subject provides search results. For example, if you enter **inquiry**, Connect Customer returns emails with the subject **Customer Inquiry**.
 + Filters for [conversation analytics](analyze-conversations.md). You can search for contacts that have conversational analytics enabled. For example, **Conversational analytics: Voice - Agent interaction** returns contacts where the agent interaction has been analyzed by conversational analytics. You can [search for Contact categories](search-conversations.md#contact-category-search) by specifying the full category name. Choose to search using **Match any** or **Match all** or **Match none**. For example, you can search contacts with both "category A" and "category B", or with either one of the two categories.
 
@@ -123,6 +127,8 @@ Use the options under **Additional fields** to add columns in your search result
 
 For example, if you want to include columns for **Agent Name** and **Routing profile** in your search output, choose those columns here.
 
+To display the tags applied to each contact, add the **Tags** column.
+
 **Tip**
 The **Is transferred out** option indicates whether the contact was transferred out to another agent, queue, or an external number. This option only indicates cold transfers, where the agent disconnected before the contact was transferred. For the date and time (in UTC time) when the transfer was connected, see `TransferCompletedTimestamp` in the [ContactTraceRecord](ctr-data-model.md#ctr-ContactTraceRecord).
 
@@ -138,7 +144,3 @@ Use the following APIs to search contacts programmatically:
 + [SearchContacts](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchContacts.html)
 + [DescribeContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContact.html)
 + [DescribeContactEvaluation](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContactEvaluation.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

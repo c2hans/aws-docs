@@ -109,7 +109,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/swift-customer-securi
 +  DNS logs
 
  If you use AWS DNS resolvers for your EC2 instances (the default setting), then GuardDuty can access and process your request and response DNS logs through the internal AWS DNS resolvers. For example, the `Trojan:EC2/DNSDataExfiltration` ([https://docs.aws.amazon.com/guardduty/latest/ug/guardduty\_finding-types-ec2.html\#trojan-ec2-dnsdataexfiltration](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html#trojan-ec2-dnsdataexfiltration)) finding informs you that the listed EC2 instance in your AWS environment is running malware that uses DNS queries for outbound data transfers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

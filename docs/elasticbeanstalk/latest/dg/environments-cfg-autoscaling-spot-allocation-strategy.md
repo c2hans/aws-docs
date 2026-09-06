@@ -26,7 +26,3 @@ Amazon EC2 Auto Scaling provides the following allocation strategies for Spot In
 For more details about each allocation strategy, see [ Allocation strategies for multiple instance types](https://docs.aws.amazon.com/autoscaling/ec2/userguide/allocation-strategies.html) in the *Amazon EC2 Auto Scaling User Guide*.
 
 To help you understand which allocation strategy is best suited to meet your environment's requirements, see [ Choose the appropriate Spot allocation strategy ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-allocation-strategy.html#ec2-fleet-allocation-use-cases) in the *Amazon EC2 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

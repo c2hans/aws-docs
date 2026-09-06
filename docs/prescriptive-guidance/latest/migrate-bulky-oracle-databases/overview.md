@@ -83,7 +83,3 @@ At this point, the system change number (SCN) of the destination database is con
 The metadata of transportable tablespaces are exported from the source database and imported into the destination database. The metadata includes information for the user, role, package, procedure, function, table, and index.
 
 Finally, the tablespaces are made read/write for full access on the destination database from application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

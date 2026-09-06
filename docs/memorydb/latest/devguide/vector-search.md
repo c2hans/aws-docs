@@ -17,7 +17,3 @@ As of 6/26/2024, AWS MemoryDB delivers the fastest vector search performance at 
 + [Vector search features and limits](vector-search-limits.md)
 + [Create a cluster enabled for vector search](vector-search-cluster.md)
 + [Vector search commands](vector-search-commands.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -106,7 +106,3 @@ The diagram shows the following workflow:
 **Using Lake Formation as an alternative for cross-account sharing**
 
 You can also use AWS Lake Formation to share access to AWS Glue catalog objects across accounts. Lake Formation provides fine-grained access control at the column and row level, tag-based access control, governed tables for ACID transactions, and other functionality. Although Lake Formation is well-integrated with Athena, it does require additional configuration compared to this pattern’s IAM-only approach. We recommend that you consider the decision to use Lake Formation or IAM-only access controls within the wider context of your overall solution architecture. Considerations include what other services are involved and how they integrate with both approaches.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

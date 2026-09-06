@@ -22,7 +22,3 @@ For more information about this phase, see [Automation strategy for SAP operatio
 In addition, the following blog posts describe how customers who run SAP on AWS can take advantage of a broad set of additional services to enhance and simplify the operations of running SAP.  Such services are delivered as a part of the optimize phase.
 + [Audit your SAP systems with AWS Config](https://aws.amazon.com/blogs/awsforsap/audit-your-sap-systems-with-aws-config-part-i/) explains how you can validate that your systems are compliant.
 + [Maintain an SAP landscape inventory with AWS Systems Manager and Amazon Athena](https://aws.amazon.com/blogs/awsforsap/maintain-an-sap-landscape-inventory-with-aws-systems-manager-and-amazon-athena/) describes how you can maintain your SAP landscape inventory and operate your infrastructure at an optimum level.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

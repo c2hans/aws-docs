@@ -70,7 +70,3 @@ You can monitor how your volume's storage capacity is being consumed by using th
 To increase the amount of available space, you can either [increase the size](manage-volume-capacity.md#increase-volume-size) of the volume, or you can [delete snapshots](snapshots-ontap.md#delete-snapshots) that you are not using, as shown in the following procedures.
 
 For FlexVol volume types (the default volume type for FSx for ONTAP volumes), you can also enable [volume autosizing](enable-volume-autosizing.md). When you enable autosizing, the volume size automatically increases when it reaches certain thresholds. You can also disable automatic snapshots. Both of these features are explained in the following sections.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

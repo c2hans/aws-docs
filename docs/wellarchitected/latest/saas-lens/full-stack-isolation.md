@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/full-st
  Finally, we’ve also highlighted a collection of microservices that represent the shared services that are used to orchestrate the onboarding, management, and operations experience. We’ve chosen Lambda as the model for our microservices, based on its management, scale, and cost efficiency model. These services could be implemented with other AWS compute services.
 
  On the right-hand side of the diagram, you’ll see the individual VPCs that represent each of our tenant environments. In this VPC-per-tenant model, you’ll need to open a valid path for your management plane to be able to configure and access the resources of these tenant environments. AWS offers a number of options for this, including AWS PrivateLink, VPC peering, and Amazon EventBridge. The option you choose will depend on the nature of the management experience you are building.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

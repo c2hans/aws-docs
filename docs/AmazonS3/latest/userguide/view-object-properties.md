@@ -38,7 +38,3 @@ Storage class of objects in a directory bucket cannot be changed.
    1. **Tags** – You categorize storage by adding tags to an S3 object in a general purpose bucket. For more information, see [Tagging your objects](object-tagging.md).
 
    1. **Object lock legal hold and retention** – You can prevent an object in a general purpose bucket from being deleted. For more information, see [Locking objects with Object Lock](object-lock.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

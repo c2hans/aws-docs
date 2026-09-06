@@ -197,7 +197,3 @@ Route 53 VPC Resolver metrics for inbound and outbound endpoints use the `AWS/Ro
 + `RniId` dimension is supported for `OutboundQueryAggregateVolume` and `InboundQueryVolume` metrics.
 + `EndpointId`, `RniId` dimension is supported for `P90ResponseTime`, `ServFailQueries`, `NxDomainQueries`, `RefusedQueries`, `FormErrorQueries`, and `TimeoutQueries` for the Resolver IP Address associated with the resolver endpoint.
 + `EndpointID`, `TargetNameServerIP` dimension is supported for `P90ResponseTime`, `RequestQueries`, and `TimeoutQueries` for the target name server associated with the resolver endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

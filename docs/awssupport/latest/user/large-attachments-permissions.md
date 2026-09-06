@@ -40,7 +40,3 @@ The following example policy grants full upload and download permissions for lar
 **Note**
 If you have the `AWSSupportAccess` managed policy attached to your IAM identity, no additional permissions are required. The managed policy includes all actions needed for large attachments.
 If you don't have the required permissions, then the Support Center Console supports attaching up to 3 files at 5 MB each. An **Update your permissions** notice appears with details about the missing permissions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,7 +65,3 @@ Amazon EC2 Auto Scaling provides the following options:
 + **Terminate** (`Terminate`) – Terminates instances that are in `Standby`.
 + **Ignore** (`Ignore`) – Ignores instances that are in `Standby` and continues to replace instances that are in the `InService` state.
 + **Wait** (`Wait`) – Waits one hour for you to return the instances to service. If you don't do so, the instance refresh fails.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

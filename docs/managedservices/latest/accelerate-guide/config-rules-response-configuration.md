@@ -46,7 +46,3 @@ This report only shows the configurations that you have changed, and excludes th
 | Resource AMS Flag | If the AWS resource is deployed by AMS, then this field is set to True |
 | Trigger Type | The type of response configured for the resource |
 | Compliance Flag | AMS config rule compliance state |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,7 +45,3 @@ Service role name AWSServiceRoleForVPCTransitGateway has been taken in this acco
 If you’re deploying a new stack, review the instructions in [Step 2](#step-2-launch-the-service-linked-role-hub-stack-optional) of **Deploy the solution.**
 
 If youu’re updating an existing stack, review the instructions in [Update the hub stack(s)](#update-the-hub-stack) and [Update the spoke stack(s).](#update-the-spoke-stacks)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Network Orchestration for AWS Transit Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

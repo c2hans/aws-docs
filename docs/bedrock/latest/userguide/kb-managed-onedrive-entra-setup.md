@@ -324,7 +324,3 @@ For the complete set of knowledge base service role permissions, see [Permission
 <a name="kb-managed-onedrive-entra-next"></a>
 
 You now have the credentials you need to create the data source: the secret ARN, your tenant ID, and (for document-level access control) the Amazon S3 location of the certificate. To create the OneDrive data source with the AWS Management Console or the API, see [Connect a OneDrive data source](kb-managed-ds-onedrive-connect.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

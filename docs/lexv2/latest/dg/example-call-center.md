@@ -32,7 +32,3 @@ In this tutorial, you create an Amazon Kendra index that provides answers to cus
 + [Step 4: Set up Amazon Cognito](agent-step-4.md)
 + [Step 5: Deploy Your Bot as a Web Application](agent-step-5.md)
 + [Step 6: Use the Bot](agent-step-6.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ If you work with the SDK outside of an environment that enforces CORS in your br
 
 **Note**
 Amazon Web Services version 3 (V3) no longer supports Browser Builder. To minimize bandwidth usage of browser applications, we recommend you import named modules, and bundle them to reduce size. For more information about bundling, see [Bundle applications with webpack](webpack.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for JavaScript. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

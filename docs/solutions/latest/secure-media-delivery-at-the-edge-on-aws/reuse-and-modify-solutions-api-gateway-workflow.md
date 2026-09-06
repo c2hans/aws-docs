@@ -46,7 +46,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
    1.  **Scenario B** - Customize Lambda function used for token generation to retrieve the required information from your CMS directly. This approach involves code changes in the Lambda function to be able to fetch necessary information, and subsequently parse it to formulate viewer context and token policy objects required to generate the token.
 
    1.  **Scenario C** - Provide the inputs as additional parameters when making API call. You can modify Lambda function to parse the incoming request and look for the token policy and video asset metadata in the query string parameters of that request. Apply necessary code changes into the Lambda function to include this processing logic and specify which query string attributes would be inspected accordingly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

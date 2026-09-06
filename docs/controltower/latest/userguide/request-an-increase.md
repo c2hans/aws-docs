@@ -31,7 +31,3 @@ This video (7:24) describes how to automate service quota increases for related,
 When provisioning new accounts in this environment, you can use lifecycle events to trigger automated requests for service quota increases in specified AWS Regions.
 
 More information about AWS quotas is available in the [AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html#limits_config).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

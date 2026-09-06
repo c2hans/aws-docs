@@ -26,7 +26,3 @@ The tenancy (`dedicated` or `shared`) of the instance must match the tenancy of 
 For examples of how Reserved Instances are applied to your running On-Demand Instances, see [How Reserved Instance discounts are applied](apply_ri.md). For more information, see [Why aren't my Amazon EC2 Reserved Instances applying to my AWS billing in the way that I expected?](https://repost.aws/knowledge-center/reserved-instance-applying-why)
 
 You can use various methods to launch the On-Demand Instances that use your Reserved Instance discount. For information about the different launch methods, see [Launch an Amazon EC2 instance](LaunchingAndUsingInstances.md). You can also use Amazon EC2 Auto Scaling to launch an instance. For more information, see the [Amazon EC2 Auto Scaling User Guide](https://docs.aws.amazon.com/autoscaling/ec2/userguide/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

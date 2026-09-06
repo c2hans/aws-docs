@@ -52,7 +52,3 @@ Optimize your use of accelerated computing instances to reduce the physical infr
 + [AWS re:Invent 2022 - [NEW LAUNCH\!] Introducing AWS Inferentia2-based Amazon EC2 Inf2 instances](https://www.youtube.com/watch?v=jpqiG02Y2H4)
 + [AWS re:Invent 2022 - Accelerate deep learning and innovate faster with AWS Trainium](https://www.youtube.com/watch?v=YRqvfNwqUIA)
 + [AWS re:Invent 2022 - Deep learning on AWS with NVIDIA: From training to deployment](https://www.youtube.com/watch?v=l8AFfaCkp0E)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

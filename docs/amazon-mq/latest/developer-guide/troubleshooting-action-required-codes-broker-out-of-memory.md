@@ -18,7 +18,3 @@ Amazon MQ enables metrics for your broker by default. You can view your broker m
 | TotalConsumerCount | For every consumer connected to the broker, a set number of messages are loaded from storage into memory before they are delivered to the consumer. A large number of consumer connections might cause high memory usage and lead to a high memory alarm. |
 
 To prevent restart loops and avoid the BROKER\_OOM alarm, ensure that messages are consumed quickly. You can do this by choosing the most effective broker instance type, and also cleaning your [Dead Letter Queue](https://activemq.apache.org/message-redelivery-and-dlq-handling.html) to discard undeliverable or expired messages. You can learn more about ensuring effective performance at [ActiveMQ on Amazon MQ best practices](best-practices-activemq.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

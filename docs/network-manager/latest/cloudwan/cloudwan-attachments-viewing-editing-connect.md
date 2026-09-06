@@ -77,7 +77,3 @@ Use the command line or API to view a Connect or Connect peer attachment.
 **To view a Connect or Connect peer attachment using the command line or API**
 + For a Connect attachment, see [get-connect-attachment](https://docs.aws.amazon.com/cli/latest/reference/networkmanager/get-connect-attachment.html).
 + For a Connect peer attachment, see [get-connect-peer](https://docs.aws.amazon.com/cli/latest/reference/networkmanager/get-connect-peer.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

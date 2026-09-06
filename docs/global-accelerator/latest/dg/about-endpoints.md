@@ -22,7 +22,3 @@ Global Accelerator continually monitors the health of all endpoints that are inc
 + [How endpoint weights work to manage traffic volume](about-endpoints-endpoint-weights.md)
 + [How failover works for unhealthy endpoints](about-endpoints-endpoint-weights.unhealthy-endpoints.md)
 + [How to avoid connection collisions that result in TCP connection time delays](about-endpoints.avoid-connection-collisions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

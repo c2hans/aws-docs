@@ -57,7 +57,3 @@ For more information about training job quotas, see [Amazon SageMaker AI endpoin
 <a name="notebook-auto-run-troubleshoot-visualization"></a>
 
 If your notebook uses the SparkMagic PySpark kernel and you run the notebook as a Notebook Job, you may see that your auto visualizations are disabled in the output. Turning on auto visualization causes the kernel to hang, so the notebook job executor currently disables auto visualizations as a workaround.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

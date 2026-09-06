@@ -1338,6 +1338,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   SearchTopicsV2  **
+  - **IAM action:**  [quicksight:SearchTopics](#list_quicksight-action-SearchTopics)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   StartAssetBundleExportJob  **
   - **IAM action:**  [quicksight:StartAssetBundleExportJob](#list_quicksight-action-StartAssetBundleExportJob)
   - **Condition key:**
@@ -3587,6 +3593,12 @@ The following actions are defined by Amazon QuickSight but are not directly invo
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Access level:** Write
 
+- **   [CreateExtension](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
+  - **Description:** Grants permission to create an extension
+  - **Resource types (\*required):** [extension\*](#list_quicksight-resource-extension)
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [CreateExtensionAccess](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
   - **Description:** Grants permission to create an extension access
   - **Resource types (\*required):** [extensionaccess\*](#list_quicksight-resource-extensionaccess)
@@ -3609,6 +3621,12 @@ The following actions are defined by Amazon QuickSight but are not directly invo
   - **Description:** Grants permission to delete a QuickSight email customization template
   - **Resource types (\*required):** [emailCustomizationTemplate\*](#list_quicksight-resource-emailCustomizationTemplate)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteExtension](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
+  - **Description:** Grants permission to delete an extension
+  - **Resource types (\*required):** [extension\*](#list_quicksight-resource-extension)
+  - **Condition keys:**
   - **Access level:** Write
 
 - **   [DeleteExtensionAccess](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
@@ -3635,9 +3653,21 @@ The following actions are defined by Amazon QuickSight but are not directly invo
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [DescribeExtension](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
+  - **Description:** Grants permission to describe an extension
+  - **Resource types (\*required):** [extension\*](#list_quicksight-resource-extension)
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [DescribeExtensionAccess](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
   - **Description:** Grants permission to describe an extension access
   - **Resource types (\*required):** [extensionaccess\*](#list_quicksight-resource-extensionaccess)
+  - **Condition keys:**
+  - **Access level:** Read
+
+- **   [DescribeExtensionPermissions](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
+  - **Description:** Grants permission to describe the permissions of an extension
+  - **Resource types (\*required):** [extension\*](#list_quicksight-resource-extension)
   - **Condition keys:**
   - **Access level:** Read
 
@@ -3691,6 +3721,12 @@ The following actions are defined by Amazon QuickSight but are not directly invo
 
 - **   [ListExtensionAccesses](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
   - **Description:** Grants permission to list extension accesses
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListExtensions](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
+  - **Description:** Grants permission to list extensions
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** List
@@ -3773,6 +3809,12 @@ The following actions are defined by Amazon QuickSight but are not directly invo
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [StartExtensionInstallation](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
+  - **Description:** Grants permission to start installation of an extension
+  - **Resource types (\*required):** [extension\*](#list_quicksight-resource-extension)
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [Subscribe](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
   - **Description:** Grants permission to subscribe to Amazon QuickSight, and also to allow the user to upgrade the subscription to Enterprise edition
   - **Resource types (\*required):**
@@ -3803,11 +3845,23 @@ The following actions are defined by Amazon QuickSight but are not directly invo
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [UpdateExtension](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
+  - **Description:** Grants permission to update an extension
+  - **Resource types (\*required):** [extension\*](#list_quicksight-resource-extension)
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [UpdateExtensionAccess](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
   - **Description:** Grants permission to update an extension access
   - **Resource types (\*required):** [extensionaccess\*](#list_quicksight-resource-extensionaccess)
   - **Condition keys:**
   - **Access level:** Write
+
+- **   [UpdateExtensionPermissions](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
+  - **Description:** Grants permission to update the permissions of an extension
+  - **Resource types (\*required):** [extension\*](#list_quicksight-resource-extension)
+  - **Condition keys:**
+  - **Access level:** Permissions management, Write
 
 - **   [UpdateQuickIndexCapacity](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
   - **Description:** Grants permission to update index capacity
@@ -3849,6 +3903,7 @@ The following resource types are defined by this service and can be used in the 
 |  [datasource](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataSource.html)  | arn:${Partition}:quicksight:${Region}:${Account}:datasource/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_) |
 |  [dlpSetting](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateDlpSetting.html)  | arn:${Partition}:quicksight:${Region}:${Account}:dlpsetting/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_) |
 |  [emailCustomizationTemplate](https://docs.aws.amazon.com/quicksight/latest/user/customizing-quicksight-email-templates.html)  | arn:${Partition}:quicksight:${Region}:${Account}:email-customization-template/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_) |
+|  [extension](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  | arn:${Partition}:quicksight:${Region}:${Account}:extension/${ResourceId} |   |
 |  [extensionaccess](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  | arn:${Partition}:quicksight:${Region}:${Account}:extension-access/${ResourceId} |   |
 |  [flow](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Flow.html)  | arn:${Partition}:quicksight:${Region}:${Account}:flow/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_) |
 |  [folder](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Folder.html)  | arn:${Partition}:quicksight:${Region}:${Account}:folder/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_) |
@@ -3884,7 +3939,3 @@ Amazon QuickSight defines the following condition keys that can be used in the `
 |   [quicksight:KmsKeyArns](https://docs.aws.amazon.com/quicksight/latest/user/key-management.html)  | Filters access by KMS key ARNs | ArrayOfARN |
 |   [quicksight:SessionName](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  | Filters access by session name | String |
 |   [quicksight:UserName](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  | Filters access by user name | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-guardrail
 # Guardrails
 <a name="acxd-guardrails"></a>
 
-Guardrails help evaluate and control conversational behavior in Agentic CX Designer applications.
+Guardrails help evaluate and control conversational behavior in agentic CX designer applications.
 
 They act as a safety, compliance, and brand-control layer for conversations by checking user inputs and application outputs against rules you define. Guardrails can help prevent unsafe requests, off-brand responses, sensitive data exposure, prompt injection attempts, hallucinated claims, or other behavior that does not align with your business requirements.
 
@@ -163,7 +163,7 @@ Once assigned and deployed, guardrails run automatically during conversations wh
 ## Evaluation order
 <a name="acxd-guardrails-evaluation-order"></a>
 
-When multiple guardrails and rules are attached to an application, Agentic CX Designer evaluates them in a predictable order.
+When multiple guardrails and rules are attached to an application, agentic CX designer evaluates them in a predictable order.
 
 1. Guardrails attached to the application run in the order they appear in the application's guardrail list.
 
@@ -199,7 +199,3 @@ This is useful for testing, temporary policy changes, troubleshooting, or preser
 1. Select **Deactivate**.
 
 Deactivated rules remain saved in the guardrail, but they are not evaluated at runtime until they are reactivated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

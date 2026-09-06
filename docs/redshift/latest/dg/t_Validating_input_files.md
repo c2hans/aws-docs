@@ -26,7 +26,3 @@ process:   xenmaster [pid=22199]
 To troubleshoot error messages, see the [Load error reference](r_Load_Error_Reference.md).
 
 For an example using the NOLOAD option, see [COPY command with the NOLOAD option](r_COPY_command_examples.md#r_COPY_command_examples-load-noload-option).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,7 +56,3 @@ Lightsail block storage is designed to be highly available and reliable. Each at
 <a name="how-do-i-backup-attached-disk"></a>
 
 You can back up your disk by creating a manual snapshot of the disk. You can also back up your entire instance and any attached disks by creating a manual snapshot of the instance, or by enabling automatic snapshots for the instance with the disk attached. Disks attached to instances are included in instance manual and automatic snapshots.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

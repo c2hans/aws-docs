@@ -37,7 +37,3 @@ You can use the AWS provided [open-source embedded metric format libraries](http
 The [Fluent Bit plugin](https://github.com/aws/amazon-cloudwatch-logs-for-fluent-bit) for CloudWatch can also be used to send embedded metric format messages. You can also use the [ecs\_firelense\_emf\_example](https://github.com/aws-samples/logging-monitoring-apg-guide-examples/tree/main/examples/ecs/ecs_firelense_emf_example) sample Python application to send metrics in embedded metric format to a Firelens for Amazon ECS sidecar container.
 
 If you don't want to use embedded metric format, you can create and update CloudWatch metrics through the [AWS API](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/Welcome.html) or [AWS SDK](https://aws.amazon.com/developer/tools/). We don't recommend this approach unless you have a specific use case, because it adds maintenance and management overhead to your code.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

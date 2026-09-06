@@ -119,7 +119,3 @@ If you map any Confluence (Server/Data Center) field to Amazon Q document title 
 | parentId | cf\_parent\_id | Custom | String |
 | attachmentComment | cf\_attachment\_comment | Custom | String |
 | status | cf\_status | Custom | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

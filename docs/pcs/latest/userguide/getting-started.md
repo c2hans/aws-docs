@@ -39,7 +39,3 @@ The cluster requires additional AWS resources, such as security groups, IAM role
 + [Run a single node job in AWS PCS](getting-started_run-job.md)
 + [Run a multi-node MPI job with Slurm in AWS PCS](getting-started_run-mpi-job.md)
 + [Delete your AWS resources for AWS PCS](getting-started_delete.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

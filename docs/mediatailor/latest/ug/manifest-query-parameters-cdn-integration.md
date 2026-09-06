@@ -54,7 +54,3 @@ The following example demonstrates a complete CDN authorization flow using manif
    ```
    GET https://cdn.example.com/mediatailor/segment/123456789/originId/session/0/1?auth_token=jwt_token_here&user_id=12345
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

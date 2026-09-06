@@ -37,7 +37,3 @@ The maintenance window should fall at the time of lowest usage and thus might ne
 For information on your maintenance window and node replacement, see the following:
 + [Replacing nodes](nodes.nodereplacement.md)—Managing node replacement
 + [Modifying a MemoryDB cluster](clusters.modify.md)—Changing a cluster's maintenance window
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

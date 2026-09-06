@@ -368,7 +368,3 @@ You might need to quit the client, and start again before you're able to get con
 ## What's next?
 <a name="create-vpc-vpn-next-up"></a>
 + Learn how to create an Amazon MWAA environment in [Get started with Amazon Managed Workflows for Apache Airflow](get-started.md). You must create an environment in the same AWS Region as the Client VPN, and using the same VPC, private subnets, and security group as the Client VPN.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

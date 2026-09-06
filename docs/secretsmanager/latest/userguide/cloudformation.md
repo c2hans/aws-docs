@@ -23,7 +23,3 @@ For information about creating resources with CloudFormation, see [Learn templat
 When you use the console to turn on rotation, Secrets Manager uses AWS CloudFormation to create resources for rotation. If you create a new rotation function during that process, CloudFormation creates an [`AWS::Serverless::Function`](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html) based on the appropriate [Rotation function templates](reference_available-rotation-templates.md). Then CloudFormation sets the [`RotationSchedule`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-rotationschedule.html), which sets the rotation function and rotation rules for the secret. You can view the CloudFormation stack by choosing **View stack** in the banner after you turn on automatic rotation.
 
 For information about turning on automatic rotation, see [Rotate AWS Secrets Manager secrets](rotating-secrets.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

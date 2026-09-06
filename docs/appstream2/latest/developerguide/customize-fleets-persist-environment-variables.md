@@ -19,7 +19,3 @@ The following instructions apply to Windows fleets only.
 
 **Note**
 If you are using Active Directory and Group Policy with WorkSpaces Applications, keep in mind that streaming instances must be joined to an Active Directory domain to use Group Policy for environment variables. For information about how to configure the Group Policy **Environment Variable** preference item, see [Configure an Environment Variable Item](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772047(v=ws.11)) in the Microsoft documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

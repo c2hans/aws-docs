@@ -175,7 +175,3 @@ This policy only works in domains that use Amazon SageMaker Studio Classic as th
    ```
    aws iam attach-role-policy --policy-arn arn:aws:iam:{{account-id}}:policy/StudioDomainResourceIsolationPolicy-{{domain-id}} --role-name {{domain-execution-role}}
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

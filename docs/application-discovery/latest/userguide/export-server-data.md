@@ -38,7 +38,3 @@ This topic explains how to export server data by using the AWS Management Consol
 1. Run [start-export-task](https://docs.aws.amazon.com/cli/latest/reference/discovery/start-export-task.html). The corresponding API operation is [StartExportTask](https://docs.aws.amazon.com/application-discovery/latest/APIReference/API_StartExportTask.html)
 
 1. Run [describe-export-tasks](https://docs.aws.amazon.com/cli/latest/reference/discovery/describe-export-tasks.html). The corresponding API operation is [DescribeExportTasks](https://docs.aws.amazon.com/application-discovery/latest/APIReference/API_DescribeExportTasks.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

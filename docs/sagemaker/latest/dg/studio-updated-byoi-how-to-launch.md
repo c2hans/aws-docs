@@ -25,7 +25,3 @@ If you have attached a custom image to your SageMaker Unified Studio project, yo
    If the **Image** dropdown is unavailable, you may need to stop your space. Choose **Stop space** to do so.
 
 1. Confirm the settings for the space and choose **Run space**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ Use elasticity and automation to expand block storage or file system as data gro
 + [ Deep Dive on Amazon EBS Elastic Volumes ](https://www.youtube.com/watch?v=Vi_1Or7QuOg)
 + [ Amazon EBS and Snapshot Optimization Strategies for Better Performance and Cost Savings ](https://www.youtube.com/watch?v=h1hzRCsJefs)
 + [ Optimizing Amazon EFS for cost and performance, using best practices ](https://www.youtube.com/watch?v=9kfeh6_uZY8)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

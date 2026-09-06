@@ -43,7 +43,3 @@ If you are not using the SageMaker Python SDK and one of its ModelTrainers to ma
   For example, `{{341280168497}}.dkr.ecr.{{ca-central-1}}.amazonaws.com/{{sagemaker-sparkml-serving:2.4}}`
 
 For account IDs and AWS Region names, see [Docker Registry Paths and Example Code](https://docs.aws.amazon.com/sagemaker/latest/dg-ecr-paths/sagemaker-algo-docker-registry-paths).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

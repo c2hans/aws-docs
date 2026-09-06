@@ -578,7 +578,3 @@ With the modifications described here to the steps outlined in the blog post, yo
 +  **Amazon EC2 instance security group** - Configure inbound HTTPS rules to enable Graph Explorer access.
 
  We recommend using a single security group for both your Neptune cluster and Amazon EC2 instance. This simplifies configuration and reduces potential connectivity issues. However, remember to add a self-referencing rule to allow communication between resources within the group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/s
 +  Route summarization should be used to reduce the number of routes advertised to and received from AWS. Thus, the IP addressing scheme needs designed to maximize the use of route summarization. Traffic engineering is a key overall consideration. For more information about traffic engineering, refer to the Traffic engineering subsection in the [Reliability](reliability.md) section.
 +  Minimize your number of BGP peering sessions by using DXGW with VGW or AWS Transit Gateway, where a single BGP session can provide connectivity to multiple VPCs.
 +  Consider Cloud WAN when multiple AWS Regions and on-premises sites need to be connected together.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

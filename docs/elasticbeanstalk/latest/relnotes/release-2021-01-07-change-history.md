@@ -17,7 +17,3 @@ Activity that occurs in your Elastic Beanstalk environments is recorded as an AW
 With this release, you can access this more detailed change history information related to your Elastic Beanstalk environments directly through the Elastic Beanstalk console. The Change History panel displays a list of detailed configuration changes for all of your Elastic Beanstalk environments, including information about who made the changes, what the configuration values were set to and when the changes were made. You can filter this information using the Change History panel's search bar.
 
 For more information, see [Change history](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.changehistory.html) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

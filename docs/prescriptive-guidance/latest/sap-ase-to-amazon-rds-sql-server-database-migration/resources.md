@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-ase-to-
 + [SAP Adaptive Server Enterprise (SAP ASE)](https://www.sap.com/products/technology-platform/sybase-ase.html)
 + [Transact-SQL](https://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc38151.1510/html/iqrefbb/Tsos.htm)
 + [Tabular Data Stream (TDS)](https://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.help.sdk_12.5.1.ctref/html/ctref/X36927.htm)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -120,7 +120,3 @@ Oracle Database@AWS High Performance Networking is not available in the followin
 | Europe (Frankfurt) | eu-central-1 | euc1-az2 |
 | Asia Pacific (Seoul) | ap-northeast-2 | apne2-az1 |
 | Asia Pacific (Melbourne) | ap-southeast-4 | apse4-az1 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

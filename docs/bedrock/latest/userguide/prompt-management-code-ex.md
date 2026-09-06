@@ -255,7 +255,3 @@ print(response["output"]["message"]["content"][0]["text"])
 
 **Note**
 When invoking a managed prompt, you don't need to specify `messages` or `system` fields — these are defined in the prompt template. You only need to provide values for the variables defined in the prompt.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

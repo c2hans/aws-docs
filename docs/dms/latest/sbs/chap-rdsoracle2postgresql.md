@@ -16,7 +16,3 @@ Using this walkthrough, you can learn how to migrate an Oracle database to a Pos
 + [Step-by-step Oracle database to PostgreSQL migration walkthrough](chap-rdsoracle2postgresql.steps.md)
 + [Rolling Back the Migration](chap-oracle2postgresql.rollback.md)
 + [Oracle database migration to PostgreSQL troubleshooting](chap-oracle2postgresql.troubleshooting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

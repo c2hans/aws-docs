@@ -35,7 +35,3 @@ As a cost consideration, you can deliver one copy of your ongoing management eve
 1. Make sure to add an `aws:SourceArn` condition key to the bucket policy. For more information, see [Create or update an Amazon S3 bucket for an organization trail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-an-organizational-trail-by-using-the-aws-cli.html) in the CloudTrail documentation.
 
 1. To add an additional layer of protection against accidental or unauthorized deletion of log files, see [Configuring MFA delete](https://docs.aws.amazon.com/AmazonS3/latest/userguide/MultiFactorAuthenticationDelete.html) in the Amazon S3 documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

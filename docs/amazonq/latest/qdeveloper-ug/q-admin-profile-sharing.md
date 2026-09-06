@@ -37,7 +37,3 @@ Before you begin, make sure that:
 1. Choose **Save**.
 
    Users who are subscribed to Amazon Q Developer Pro in your management account will now be able to use their Amazon Q Developer Pro subscription in the AWS Management Console, and on AWS apps and websites while signed in to a member account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

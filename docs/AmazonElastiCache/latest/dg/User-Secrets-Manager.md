@@ -222,7 +222,3 @@ The following steps illustrate how to create a user and associate it with Secret
       For more information on setting up a rotation schedule, see [Schedule expressions in Secrets Manager rotation](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-secrets_schedule.html).
 
    1. **Using the AWS CLI, see [ Set up automatic rotation for AWS Secrets Manager using the AWS Command Line Interface](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-secrets-cli.html)**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

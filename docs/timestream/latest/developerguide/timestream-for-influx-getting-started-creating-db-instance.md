@@ -300,7 +300,3 @@ For more information about deleting an EC2 instance, see [Terminate Amazon EC2 i
 1. Select the DB instance you want to delete. Choose **Delete**
 
 1. Confirm the deletion and choose **Delete**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

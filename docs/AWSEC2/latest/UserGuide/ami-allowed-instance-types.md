@@ -189,7 +189,3 @@ Keep the following information in mind when you use allowed instance types.
 + The specification does not affect existing instances. It applies only to new launches.
 + Launch templates and Auto Scaling groups that reference an AMI with an instance type specification can fail if the configured instance type is not allowed. We recommend verifying compatibility before setting a specification on shared AMIs.
 + The `ReplaceImageInstanceTypeSpecification` action replaces the entire specification. To add or remove individual instance types, you must include the complete updated specification in the request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

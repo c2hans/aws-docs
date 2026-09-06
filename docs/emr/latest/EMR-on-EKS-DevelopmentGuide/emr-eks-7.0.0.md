@@ -86,7 +86,3 @@ The following features are included with the 7.0 release of Amazon EMR on EKS.
 The following changes are included with the 7.0 release of Amazon EMR on EKS.
 + **Amazon Linux 2023** – With Amazon EMR on EKS 7.0.0 and higher, all container images are based on Amazon Linux 2023.
 + **Spark uses Java 17 as default runtime** – Amazon EMR on EKS 7.0.0 Spark uses Java 17 as default runtime. If you need to, you can switch to use Java 8 or Java 11 with the corresponding release label as provided in the [Amazon EMR on EKS 7.0 releases](#emr-eks-7.0.0-releases) list.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

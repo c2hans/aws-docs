@@ -39,7 +39,3 @@ Auto Replenishment generates transfer requirements from spoke nodes to hub nodes
 
   For vendor facing-sites that supply other sites, the reorder quantity is the reorder quantity from its child sites, plus the independent reorder quantity from its own demand. For vendor-facing sites that don't supply other sites, the reorder quantity is computed based on the demand forecast of the site. The independent reorder quantity for vendor-facing sites follows the same logic in the reorder quantity computation. The dependent demand is the summation of all the child sites. If the days of coverage is 7, the RoQ is the summation of the quantity of all orders in the covered period. The following example shows a scenario in the planning horizon where there is only one order for each site, and it explains the computation.
 ![Supply Planning process example](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Supply_planning_example.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

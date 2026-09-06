@@ -16,6 +16,7 @@ The following actions are supported:
 +  [CreateCapacityProvider](API_CreateCapacityProvider.md)
 +  [CreateCodeInterpreter](API_CreateCodeInterpreter.md)
 +  [CreateConfigurationBundle](API_CreateConfigurationBundle.md)
++  [CreateConsentPortal](API_CreateConsentPortal.md)
 +  [CreateDataset](API_CreateDataset.md)
 +  [CreateDatasetVersion](API_CreateDatasetVersion.md)
 +  [CreateEvaluator](API_CreateEvaluator.md)
@@ -44,6 +45,7 @@ The following actions are supported:
 +  [DeleteCapacityProvider](API_DeleteCapacityProvider.md)
 +  [DeleteCodeInterpreter](API_DeleteCodeInterpreter.md)
 +  [DeleteConfigurationBundle](API_DeleteConfigurationBundle.md)
++  [DeleteConsentPortal](API_DeleteConsentPortal.md)
 +  [DeleteDataset](API_DeleteDataset.md)
 +  [DeleteDatasetExamples](API_DeleteDatasetExamples.md)
 +  [DeleteEvaluator](API_DeleteEvaluator.md)
@@ -74,6 +76,7 @@ The following actions are supported:
 +  [GetCodeInterpreter](API_GetCodeInterpreter.md)
 +  [GetConfigurationBundle](API_GetConfigurationBundle.md)
 +  [GetConfigurationBundleVersion](API_GetConfigurationBundleVersion.md)
++  [GetConsentPortal](API_GetConsentPortal.md)
 +  [GetDataset](API_GetDataset.md)
 +  [GetEvaluator](API_GetEvaluator.md)
 +  [GetGateway](API_GetGateway.md)
@@ -110,6 +113,7 @@ The following actions are supported:
 +  [ListCodeInterpreters](API_ListCodeInterpreters.md)
 +  [ListConfigurationBundles](API_ListConfigurationBundles.md)
 +  [ListConfigurationBundleVersions](API_ListConfigurationBundleVersions.md)
++  [ListConsentPortals](API_ListConsentPortals.md)
 +  [ListDatasetExamples](API_ListDatasetExamples.md)
 +  [ListDatasets](API_ListDatasets.md)
 +  [ListDatasetVersions](API_ListDatasetVersions.md)
@@ -150,6 +154,7 @@ The following actions are supported:
 +  [UpdateApiKeyCredentialProvider](API_UpdateApiKeyCredentialProvider.md)
 +  [UpdateCapacityProvider](API_UpdateCapacityProvider.md)
 +  [UpdateConfigurationBundle](API_UpdateConfigurationBundle.md)
++  [UpdateConsentPortal](API_UpdateConsentPortal.md)
 +  [UpdateDataset](API_UpdateDataset.md)
 +  [UpdateDatasetExamples](API_UpdateDatasetExamples.md)
 +  [UpdateEvaluator](API_UpdateEvaluator.md)
@@ -171,7 +176,3 @@ The following actions are supported:
 +  [UpdateRegistryRecord](API_UpdateRegistryRecord.md)
 +  [UpdateRegistryRecordStatus](API_UpdateRegistryRecordStatus.md)
 +  [UpdateWorkloadIdentity](API_UpdateWorkloadIdentity.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore Control Plane. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore-control` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,7 +11,3 @@ Migration scenarios can be differentiated based on scale (how many servers or ap
 + The migration of a single, large, business-critical application usually includes a highly intensive database server or a cluster, such as an online transaction processing (OLTP) database that handles a large number of transactions. These migrations typically require minimal or near zero downtime during the cutover window.
 
 The migration requirements for these use cases range from moving at the fastest possible pace, which is generally associated with the most downtime, to maximum granularity and the closest attention to details, which generally support the least possible downtime during the migration. Most migrations represent some combination of these factors.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

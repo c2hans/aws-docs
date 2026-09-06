@@ -17,11 +17,9 @@ This approach uses the incremental export to Amazon Simple Storage Service (Amaz
 
 1. Drive a bulk job off the Amazon S3 data to reverse the changes listed in the export by writing the old item value back. Optionally apply a transformation to control exactly what gets undone and how (such as to correct minor mistakes on the items).
 
+To drive this bulk job, you can use the open-source Bulk Executor for DynamoDB. For more information about the tool, see [Introducing open source Bulk Executor for Amazon DynamoDB](https://aws.amazon.com/blogs/database/introducing-open-source-bulk-executor-for-amazon-dynamodb/) on the AWS Database Blog. For a step-by-step example of rolling back unwanted writes with this approach, see [Recover from accidental DynamoDB changes using Bulk Executor](https://aws.amazon.com/blogs/database/recover-from-accidental-dynamodb-changes-using-bulk-executor/) on the AWS Database Blog. Bulk Executor is open source and does not include any official support.
+
 This approach provides the following advantages:
 + More cost effective, especially for large tables. Instead of restoring a full table to undo a small number of mistaken writes, you focus on just the mistakes.
 + Faster, especially for large tables. Only a subset of table data must be processed.
 + Live, in-place correction. The original table remains active during the correction. No need to adjust a new table's metadata, settings, and external references.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

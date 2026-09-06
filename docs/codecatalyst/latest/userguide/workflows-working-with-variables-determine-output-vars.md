@@ -18,7 +18,3 @@ For more information about predefined variables, see [Using predefined variables
 
 **Note**
 The maximum total size of a workflow's variables is listed in [Quotas for workflows in CodeCatalyst](workflows-quotas.md). If the total size exceeds the maximum, the action that occurs after the maximum is reached may fail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

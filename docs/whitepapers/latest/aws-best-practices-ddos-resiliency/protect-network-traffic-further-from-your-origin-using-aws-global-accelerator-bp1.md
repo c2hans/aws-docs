@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
  For example, you might require IP addresses that your end users can add to the allow list in their firewalls and aren't used by any other AWS customers. In these scenarios you can use Global Accelerator to protect web applications running on Application Load Balancer and in conjunction with AWS WAF to also detect and mitigate web application layer request floods.
 
  For more information about protecting and optimizing the performance of network traffic using Global Accelerator, see [Getting started with Global Accelerator](https://docs.aws.amazon.com/global-accelerator/latest/dg/getting-started.html) and the diagram *DDoS-resilient reference architecture for TCP and UDP applications* in [Mitigation techniques](mitigation-techniques.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

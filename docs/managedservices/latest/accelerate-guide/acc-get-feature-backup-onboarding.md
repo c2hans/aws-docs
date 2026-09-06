@@ -22,7 +22,3 @@ To configure backups, you need to create backup policies called *backup plans*. 
 Resources are not associated with a backup plan by default. They need to be added to a backup plan.
 + To add resources to a backup plan, see [Tag your resources to apply AMS backup plans](acc-backup-assign-plan-resources.md).
 + To enable backup on all resources using tags, see [Managing tags for backups in Accelerate](acc-tag-req-backup.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

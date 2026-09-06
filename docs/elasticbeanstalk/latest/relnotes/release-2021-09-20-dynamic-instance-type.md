@@ -17,7 +17,3 @@ When you create or configure an Elastic Beanstalk environment, you choose an ins
 Elastic Beanstalk now supports dynamic instance type selection. This means it will automatically fetch compatible instance types after Amazon EC2 introduces them. For example, if you’re running an application with a compute-intensive workload, you can optimize performance by selecting an accelerated computing instance types such as p3 or p4d.
 
 You can learn more about instance types supported by Elastic Beanstalk and configuring your Elastic Beanstalk environments with Amazon EC2 instances. For more information, see [Your Elastic Beanstalk environment's Amazon EC2 instances](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.ec2.html) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

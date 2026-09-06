@@ -64,7 +64,3 @@ You must use **Resource policy** to share the sender ID with Amazon Pinpoint or 
    1. Choose **Complete registration** to finish registering the sender ID or **Register later**.
 **Important**
 You are still billed the recurring monthly lease fee regardless of registration status.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

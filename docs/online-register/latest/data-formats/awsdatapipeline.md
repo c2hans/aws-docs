@@ -17,7 +17,3 @@ AWS Data Pipeline provides the following APIs for data retrieval.
 | <a name="datapipeline-ListPipelines"></a>[ListPipelines](https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_ListPipelines.html) | List the pipeline identifiers for all active pipelines that you have permission to access | List |
 | <a name="datapipeline-QueryObjects"></a>[QueryObjects](https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_QueryObjects.html) | Query the specified pipeline for the names of objects that match the specified set of conditions | Read |
 | <a name="datapipeline-ValidatePipelineDefinition"></a>[ValidatePipelineDefinition](https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_ValidatePipelineDefinition.html) | Validate the specified pipeline definition to ensure that it is well formed and can be run without error | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,3 @@ The categories are the following:
 + **Sidecar**. The captions are each in their own output, separate from the output that contains the video and audio. The event can contain "captions-only" outputs, for example, one for each language. For example, TTML are sidecar captions.
 
 For more information the category for each captions format, see [Step 4: Match formats to categories](categories-captions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

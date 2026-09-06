@@ -43,7 +43,3 @@ Create SDI mappings on each node that has SDI cables connected. You perform this
 1. Select the node and choose **Edit**. On the **Edit** page. In the **SDI source mappings** field, choose **Add mapping**.
 
 1. Complete the three fields to map a source to the SDI card and port (channel number).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

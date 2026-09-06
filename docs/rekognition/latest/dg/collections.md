@@ -43,7 +43,3 @@ The following diagrams shows the order for calling operations, based on your goa
 ![Diagram depicting storing and searching faces in a collection, lists operations like CreateCollection, IndexFaces, StartFaceSearch, CreateStreamProcessor, SearchFacesByImage, and SearchFaces.](http://docs.aws.amazon.com/rekognition/latest/dg/images/facevectorsCollection.png)
 
 You can use collections in a variety of scenarios. For example, you might create a face collection which stores detected faces from scanned employee badge images and government issued IDs by using the `IndexFaces` and `AssociateFaces` operations. When an employee enters the building, an image of the employee's face is captured and sent to the `SearchUsersByImage` operation. If the face match produces a sufficiently high similarity score (say 99%), you can authenticate the employee.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

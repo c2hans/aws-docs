@@ -57,7 +57,3 @@ If your file share uses a VPC endpoint to connect to Amazon S3 for normal operat
 1. Choose **Create report** when finished.
 
    Storage Gateway begins generating the report. You can check progress and view status on the **Cache reports** tab of the details page for the file share.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

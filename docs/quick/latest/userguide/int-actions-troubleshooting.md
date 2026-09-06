@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/int-actions-troub
 # Troubleshooting
 <a name="int-actions-troubleshooting"></a>
 
-When action connectors encounter issues, systematic troubleshooting helps you quickly identify and resolve problems. This guidance covers common issues and their solutions to minimize downtime and restore functionality.
+When connectors encounter issues, systematic troubleshooting helps you quickly identify and resolve problems. This guidance covers common issues and their solutions to minimize downtime and restore functionality.
 
 ## Common issues and solutions
 <a name="qbs-actions-troubleshooting-qbs-actions-common-issues"></a>
@@ -121,7 +121,3 @@ Resolution:
 | CONN\_002 | Connection timeout | Check network and service status |
 | PERM\_003 | Insufficient permissions | Review required permissions |
 | TOKEN\_004 | Token expired | Reinitiate authentication |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

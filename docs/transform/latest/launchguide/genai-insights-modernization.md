@@ -166,7 +166,3 @@ Modernization is not the end state. It is the launchpad for generative AI. Each 
 Organizations that have completed modernization are uniquely positioned to embed AI into their operations, not as a separate initiative, but as a natural extension of the architecture they have already built.
 
 For more information, contact your AWS account team.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

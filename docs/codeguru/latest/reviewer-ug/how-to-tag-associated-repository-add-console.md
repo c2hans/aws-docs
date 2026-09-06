@@ -12,7 +12,3 @@ You can use the console to add a tag when you create an associated repository or
 **Topics**
 + [Add a tag when you create a CodeGuru Reviewer associated repository (console)](how-to-tag-associated-repository-add-on-create-console.md)
 + [Add a tag to an existing CodeGuru Reviewer associated repository (console)](how-to-tag-associated-repository-add-on-existing-console.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

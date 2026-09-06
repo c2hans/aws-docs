@@ -15,7 +15,3 @@ ML governance encompasses a set of processes and frameworks that help in the dep
 | **9.3 Reproducibility and traceability** | The ML system includes a full data snapshot for precise and rapid model re-instantiation, or it has the ability to recreate the environment and retrain with a data sample. |
 | **9.4 Human-in-the-loop signoff** | The ML system has manual verification and authorization for regulatory compliance. The system requires signoffs for every environment move (for example, Dev, QA, pre-Prod, and Prod). |
 | **9.5 Bias and adversarial attacks testing** | The ML system has *Red Team* adversarial testing using multiple tools and attack vectors, and automated bias checking on specific subpopulations. This component ties back to the Observability and model management section. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

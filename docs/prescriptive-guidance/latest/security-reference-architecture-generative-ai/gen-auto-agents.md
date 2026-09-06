@@ -183,7 +183,3 @@ Enable Amazon Inspector in the [Security Tooling account](https://docs.aws.amazo
 Configure key policies that grant encryption and decryption permissions only to authorized services and IAM roles. Enable CloudTrail logging for all KMS key usage to maintain comprehensive audit trails of data access.
 
 Use CloudWatch, CloudTrail, Amazon OpenSearch Serverless, Amazon S3, and Amazon Comprehend as explained in [Capability 1 (model inference)](gen-ai-model-inference.md) and [Capability 3 (RAG)](gen-ai-agents.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

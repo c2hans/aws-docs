@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/ES-adding-the-d
 
 **Note**
  If you don't see the **Data Sources** link in your side menu, it means that your current user does not have the `Admin` role.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

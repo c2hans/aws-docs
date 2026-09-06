@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 + [Manufacturing Transformation: Journey to the Cloud](https://pages.awscloud.com/AWS-Manufacturing-in-the-Cloud.html) (AWS whitepaper)
 + [Enabling Manufacturing Innovation Through the Use of Cloud](https://pages.awscloud.com/GLOBAL-acq-IND-Enabling-Manufacturing-Innovation-Through-the-Use-of-Cloud-2020-learn.html) (IDC whitepaper)
 + [Mastering the Industrial Internet of Things (IIoT)](https://d1.awsstatic.com/Industries/Manufacturing/roland_berger_industrial_internet_of_things_1-1.pdf) (Roland Berger whitepaper)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

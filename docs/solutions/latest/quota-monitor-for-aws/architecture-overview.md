@@ -50,7 +50,3 @@ The **Trusted Advisor spoke template** launches the following workflow:
 1.  **Trust Advisor alerting** - The workflow provisions a Lambda function and an [Amazon EventBridge](https://aws.amazon.com/eventbridge) rule to support quota usage monitoring using Trusted Advisor. The Lambda function executes at an interval of 24 hours to refresh Trusted Advisor checks. The Events rule routes Trusted Advisor usage events to the centralized bus.
 **Note**
 AWS CloudFormation resources are created from [AWS Cloud Development Kit](https://aws.amazon.com/cdk) (AWS CDK) components.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Quota Monitor for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

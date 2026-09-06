@@ -12,7 +12,3 @@ Patients and their caregivers have varied goals and expectations when it comes t
 Healthcare organizations need to improve their agility and ability to innovate by adopting technical systems that are flexible and adaptable to changing conditions. For more information about healthcare system goals, see [Appendix C. Meeting health system IT goals](appendix-c.md).
 
 Healthcare system architects can follow AWS guidance and reference architectures. For a high-level architecture that addresses common healthcare needs, see [Appendix D. Additional guidance on implementing a modern health data strategy](appendix-d.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

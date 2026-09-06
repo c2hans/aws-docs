@@ -402,7 +402,3 @@ Follow these steps to implement a Kinesis Agent for Windows plugin sink.
    ```
 
 If you are creating a sink that accesses AWS services, there are base classes that you might find helpful. For a sink that uses the `AWSBufferedEventSink` base class, see `Amazon.KinesisTap.AWS\CloudWatchLogsSink.cs` in the source code for Kinesis Agent for Windows.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Agent for Windows. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesis-agent-windows` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

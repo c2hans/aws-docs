@@ -25,7 +25,3 @@ The diagram shows the following four phases:
 This guide's solution is appropriate for processing PDF files that have an identical format and a consistent layout of forms and tables. However, you must define a template and edit it in advance to fully automate the process and make extracted data available for analysis. This template is then used during processing with the Lambda function.
 
 Although this solution can be applied to different PDF file types at the same time, you must create and define separate templates for each PDF file type and store them in an accessible location (for example, Amazon S3). We recommend that you use a unique identifier for each PDF file type, such as a PDF file name or different folders in your S3 bucket. The Lambda function can then call the appropriate template when processing the PDF file type.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

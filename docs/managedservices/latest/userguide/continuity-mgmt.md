@@ -23,7 +23,3 @@ To learn more, see [AWS Backup: How It Works](https://docs.aws.amazon.com/aws-ba
 Continuity management is the process AMS uses to provide backups and snapshots for your account.
 
 AMS provides access to AWS Backup through change types that you use to create and manage backup jobs and plans.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

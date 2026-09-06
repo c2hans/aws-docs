@@ -27,7 +27,3 @@ Logs should be aggregated into a central location for long-term storage and cent
 All of your logs should be stored in the same isolated environment protected by centralized controls. Controls should be configured to protect your log storage environment using both preventative and detective controls.
 +  **Preventive controls **enable you to prevent actions in the environment. Preventative controls can be used to restrict access and actions to log storage based on role, action type, service, or region.
 +  **Detective controls **are implemented to actively monitor the environment. This allows you to create alerts based on unwanted or unexpected actions taken within the environment. Optionally, remediation actions can be invoked automatically mitigate the risks within the log storage environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

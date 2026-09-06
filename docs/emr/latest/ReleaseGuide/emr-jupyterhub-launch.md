@@ -44,7 +44,3 @@ aws emr create-cluster --name="{{MyJupyterHubCluster}}" --release-label emr-5.36
 --applications Name=JupyterHub --log-uri {{s3://amzn-s3-demo-bucket/MyJupyterClusterLogs}} \
 --use-default-roles --instance-type m5.xlarge --instance-count {{2}} --ec2-attributes KeyName={{MyKeyPair}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

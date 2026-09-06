@@ -412,7 +412,3 @@ For more information about invoking a Lambda function from your code, see [Invok
    If the document is in an Amazon S3 bucket. make sure that it is the same bucket that you specified previously in step 12 of [Step 1: Create an AWS Lambda function (console)](#example-lambda-create-function).
 
    If successful, your code returns a partial JSON response for each Block type detected in the document.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -71,7 +71,3 @@ When you use a text file for your point cloud frame data, if you do not enter a 
 <a name="sms-point-cloud-resolution"></a>
 
 Ground Truth does not have a resolution limit for 3D point cloud frames. However, we recommend that you limit each point cloud frame to 500K points for optimal performance. When Ground Truth renders the 3D point cloud visualization, it must be viewable on your workers' computers, which depends on workers' computer hardware. Point cloud frames that are larger than 1 million points may not render on standard machines, or may take too long to load.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

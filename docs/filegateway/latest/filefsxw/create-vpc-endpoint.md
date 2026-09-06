@@ -40,7 +40,3 @@ Follow these instructions to create a VPC endpoint. If you already have a VPC en
 Now that you have a VPC endpoint, you can create and activate your gateway. For more information, see [Create and activate an Amazon FSx File Gateway](https://docs.aws.amazon.com/filegateway/latest/filefsxw/create-gateway-file.html).
 
 For information about getting an activation key, see [Getting an activation key for your gateway](https://docs.aws.amazon.com/filegateway/latest/filefsxw/get-activation-key.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

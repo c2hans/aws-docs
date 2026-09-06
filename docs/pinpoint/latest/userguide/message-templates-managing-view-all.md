@@ -21,7 +21,3 @@ The **Message templates** page displays a list of all the message templates for 
    + To apply a filter that displays only those templates whose names contain specific text, enter the text in the **Search** box above the list. To remove the filter, choose **X** in the **Search** box.
    + To change the number of templates that are displayed in the list, choose the settings icon at the top of the page. Then, for **Page size**, choose the number of templates that you want to display, and choose **Save changes**.
    + To add or remove columns from the list, choose the settings icon at the top of the page. Then, for **Choose visible columns**, turn each column on or off, and choose **Save changes**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

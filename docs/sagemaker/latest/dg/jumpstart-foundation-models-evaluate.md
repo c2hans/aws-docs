@@ -41,7 +41,3 @@ Automatic evaluations can be used to score LLMs across the following dimensions:
 You can also use human evaluations to manually evaluate model responses. The FMEval UI guides you through a workflow of selecting one or more models, provisioning resources, and writing instructions for and contacting your human workforce. After the human evaluation is complete, the results are displayed in FMEval.
 
 You can access model evaluation through the JumpStart landing page in Studio by selecting a model to evaluate and then choosing **Evaluate**. Note that not all JumpStart models have evaluation capabilities available. For more information about how to configure, provision and run FMEval, see [What are Foundation Model Evaluations?](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-foundation-model-evaluate.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

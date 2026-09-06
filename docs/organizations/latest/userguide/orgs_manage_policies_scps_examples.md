@@ -20,7 +20,3 @@ You can use [service last accessed data](https://docs.aws.amazon.com/IAM/latest/
 ## GitHub repository
 <a name="scp-github-repositories"></a>
 + [Service control policy examples](https://github.com/aws-samples/service-control-policy-examples) - This GitHub repository contains example policies to get started or mature your usage of AWS SCPs
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

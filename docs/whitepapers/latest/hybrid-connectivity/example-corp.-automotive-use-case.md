@@ -84,7 +84,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/e
  Figure 15 illustrates the path taken on the decision tree based on requirements collected.
 
 ![Diagram showing Example Corp. Automotive reliability decision tree](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/example-reliability-decision-tree.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

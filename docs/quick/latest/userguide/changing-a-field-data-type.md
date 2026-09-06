@@ -68,7 +68,3 @@ For example, suppose that you apply the `Rank` function to a numeric field that 
    + Expand the **Field wells** pane, and then choose the field well associated with the numeric field that you want to change.
 
 1. Choose **Show as**, and then choose **Number**, **Currency**, or **Percent**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

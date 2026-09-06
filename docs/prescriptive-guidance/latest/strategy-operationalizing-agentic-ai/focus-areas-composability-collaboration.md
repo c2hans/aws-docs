@@ -61,7 +61,3 @@ The core business benefits of multi-agent systems include the following:
 + **Cost efficiency** – Reusable agent components accelerate development and reduce the cost of new capability deployment.
 
 While multi-agent systems require more upfront planning, they deliver long-term agility, speed, and innovation capacity. Enterprises that invest in flexible agent collaboration architectures are positioned to deploy new AI capabilities rapidly, adapt to changing demands, and lead in an increasingly agent-driven competitive landscape.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

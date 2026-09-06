@@ -127,7 +127,3 @@ You can also configure AWS WAF to log request headers to an Amazon CloudWatch Lo
 AWS WAF web ACLs are available in all user pool [feature plans](cognito-sign-in-feature-plans.md). The security features of AWS WAF complement Amazon Cognito threat protection. You can activate both features in a user pool. AWS WAF bills separately for the inspection of user pool requests. For more information, see [AWS WAF Pricing](https://aws.amazon.com/waf/pricing).
 
 Logging AWS WAF request data is subject to additional billing by the service where you target your logs. For more information, see [Pricing for logging web ACL traffic information](https://docs.aws.amazon.com/waf/latest/developerguide/logging.html#logging-pricing) in the *AWS WAF Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

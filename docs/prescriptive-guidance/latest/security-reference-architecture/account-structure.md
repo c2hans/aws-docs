@@ -17,7 +17,3 @@ For this guidance, all accounts are considered production (prod) accounts that o
 When hosting an AWS organization with a large set of accounts, it's beneficial to have an orchestration layer that facilitates account deployment and account governance. AWS Control Tower offers a straightforward way to set up and govern an AWS multi-account environment. The AWS SRA code samples in the [GitHub repository](https://github.com/aws-samples/aws-security-reference-architecture-examples) demonstrate how you can use the [Customizations for AWS Control Tower (CfCT)](https://aws.amazon.com/solutions/implementations/customizations-for-aws-control-tower/) solution to deploy AWS SRA recommended structures.
 
 ![High-level structure of the AWS SRA (without services).](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/de6cd2fe-0a9a-4c78-81c5-b6d8fb3c891d.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

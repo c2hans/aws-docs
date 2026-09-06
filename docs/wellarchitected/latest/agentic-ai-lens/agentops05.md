@@ -49,7 +49,3 @@ These levels summarize what each stage of maturity looks like for observability 
 + [AGENTOPS05-BP03 Implement structured logging and comprehensive audit trails](agentops05-bp03.md)
 + [AGENTOPS05-BP04 Define and track KPIs for agent workflows](agentops05-bp04.md)
 + [AGENTOPS05-BP05 Create workflow-specific dashboards for operational health](agentops05-bp05.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

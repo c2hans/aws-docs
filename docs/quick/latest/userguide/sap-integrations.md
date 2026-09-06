@@ -12,7 +12,7 @@ With SAP workload integrations, you can perform actions within various SAP syste
 
 SAP workload integrations provide enterprise-level connectivity to help you work with your SAP systems.
 
-**Action connector**
+**Connector**
 Perform actions within SAP systems. Create, update, and manage business data, inventory records, material information, and other enterprise operations through SAP APIs.
 
 **Multiple SAP modules**
@@ -273,7 +273,7 @@ Follow these steps to modify your SAP workload integration settings.
 ### Share integration
 <a name="sap-integrations-sharing"></a>
 
-You can share SAP workload action connectors with other users in your organization.
+You can share SAP workload connectors with other users in your organization.
 
 1. From the SAP integration details page, choose **Share**.
 
@@ -388,7 +388,3 @@ SAP system unavailability
 + Verify if there are scheduled maintenance windows affecting the system
 + Check for any SAP system alerts or known issues
 + Retry the operation after confirming system availability
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

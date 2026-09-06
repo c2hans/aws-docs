@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_TRANSLATE.html
 
 For a given expression, replaces all occurrences of specified characters with specified substitutes. Existing characters are mapped to replacement characters by their positions in the *characters\_to\_replace* and *characters\_to\_substitute* arguments. If more characters are specified in the *characters\_to\_replace* argument than in the *characters\_to\_substitute* argument, the extra characters from the *characters\_to\_replace* argument are omitted in the return value.
 
-TRANSLATE is similar to the [REPLACE function](r_REPLACE.md) and the [REGEXP\_REPLACE function](REGEXP_REPLACE.md), except that REPLACE substitutes one entire string with another string and REGEXP\_REPLACE lets you search a string for a regular expression pattern, while TRANSLATE makes multiple single-character substitutions.
+TRANSLATE is similar to the [REPLACE function](r_REPLACE.md) and the [REGEXP\_REPLACE function](REGEXP_REPLACE.md), except that REPLACE substitutes one entire string with another string and with REGEXP\_REPLACE, you can search a string for a regular expression pattern, while TRANSLATE makes multiple single-character substitutions.
 
 If any argument is null, the return is `NULL`.
 
@@ -109,7 +109,3 @@ ORDER BY city;
 | Sturgis        | Sturgis       |
 +----------------+---------------+
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

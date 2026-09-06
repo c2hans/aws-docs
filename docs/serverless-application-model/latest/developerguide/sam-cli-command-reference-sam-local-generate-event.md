@@ -61,7 +61,3 @@ $ sam local generate-event {{<service> <event>}} --help
 <a name="sam-cli-command-reference-sam-local-generate-event-examples"></a>
 
 For examples on using the `sam local generate-event` subcommand, refer to [Generate sample events](using-sam-cli-local-generate-event.md#using-sam-cli-local-generate-event-generate).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ This tutorial is based on the agent code example in the AWS documentation [GitHu
 + [Step 5: Call the agent from Python code](agent-tutorial-step5.md)
 + [Step 6: Clean up resources](agent-tutorial-step6.md)
 + [Additional resources](agent-tutorial-resources.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

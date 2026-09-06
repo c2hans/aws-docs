@@ -20,7 +20,3 @@ If an event filter isn't designed appropriately, a high volume of irrelevant mes
 The **MessageRetentionPeriod** parameter limits how long an Amazon SQS queue retains unprocessed messages for in seconds. For example, a **MessageRetentionPeriod** value of 3,600 seconds would remove all of the unprocessed messages from a queue after one hour.
 
 For instructions, see [SetQueueAttributes](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SetQueueAttributes.html) in the *Amazon SQS API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,6 +13,7 @@ Creates a new workflow in Amazon Managed Workflows for Apache Airflow Serverless
 ```
 {
    "ClientToken": "{{string}}",
+   "Code": { ... },
    "DefinitionS3Location": {
       "Bucket": "{{string}}",
       "ObjectKey": "{{string}}",
@@ -52,6 +53,12 @@ A unique, case-sensitive identifier that you provide to ensure the idempotency o
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[\x21-\x7E]+`
+Required: No
+
+ ** [Code](#API_CreateWorkflow_RequestSyntax) **   <a name="mwaaserverless-CreateWorkflow-request-Code"></a>
+The location of code artifacts in Amazon S3 for the workflow. The service copies the code from this location at the time of the request.
+Type: [Code](API_Code.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
  ** [DefinitionS3Location](#API_CreateWorkflow_RequestSyntax) **   <a name="mwaaserverless-CreateWorkflow-request-DefinitionS3Location"></a>
@@ -243,7 +250,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/mwaa-serverless-2024-07-26/CreateWorkflow)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/mwaa-serverless-2024-07-26/CreateWorkflow)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mwaa-serverless-2024-07-26/CreateWorkflow)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa-serverless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

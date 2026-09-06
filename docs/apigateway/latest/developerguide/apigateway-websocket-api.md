@@ -19,7 +19,3 @@ In this section, you can learn how to develop, publish, protect, and monitor you
 + [Publish WebSocket APIs for customers to invoke](websocket-api-publish.md)
 + [Protect your WebSocket APIs in API Gateway](websocket-api-protect.md)
 + [Monitor WebSocket APIs in API Gateway](websocket-api-monitor.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

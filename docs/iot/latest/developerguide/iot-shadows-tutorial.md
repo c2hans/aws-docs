@@ -105,7 +105,3 @@ For more information about using Device Shadows in devices, apps, and services, 
 For information about interacting with AWS IoT shadows, see [Interacting with shadows](device-shadow-data-flow.md).
 
 For information about the MQTT reserved topics and HTTP REST APIs, see [Device Shadow MQTT topics](device-shadow-mqtt.md) and [Device Shadow REST API](device-shadow-rest-api.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

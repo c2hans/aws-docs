@@ -38,7 +38,3 @@ The AES-GCM algorithms cover both encryption and authentication, so there is no 
 
 **Disable IKE unique IDs**
 Some customer gateway devices support a setting which ensures that at most, one Phase 1 security association exists per tunnel configuration. This setting can result in inconsistent Phase 2 states between VPN peers. If your customer gateway device supports this setting, we recommend disabling it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

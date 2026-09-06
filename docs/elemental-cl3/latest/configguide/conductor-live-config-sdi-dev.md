@@ -36,7 +36,3 @@ After you have added the devices on each Elemental Live node, you still need to 
 To verify the import, go to the **Settings** page and choose **Devices**. If any devices are missing, you might have forgotten to import them.
 
 After you have imported a device, users will be able to select **SDI Direct Input** as the input type when they create a profile in Conductor Live.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

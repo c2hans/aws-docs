@@ -42,7 +42,3 @@ You set the input contexts that an intent responds to using the console or the `
 For an intent with more than one input context, all contexts must be active to trigger the intent. You can set an input context when you call the [RecognizeText](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_RecognizeText.html), [RecognizeUtterance](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_RecognizeUtterance.html), or [PutSession](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_PutSession.html) operation.
 
 You can configure the slots in an intent to take default values from the current active context. Default values are used when Amazon Lex V2 recognizes a new intent but doesn't receive a slot value. You specify the context name and slot name in the form `#context-name.parameter-name` when you define the slot. For more information, see [Using default slot values in intents for your Lex V2 bot](context-mgmt-default.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

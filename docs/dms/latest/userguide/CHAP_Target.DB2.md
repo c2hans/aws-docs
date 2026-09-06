@@ -34,7 +34,3 @@ The following table shows the endpoint settings that you can use with Db2 LUW as
 | `LoadTimeout` | The amount of time (in seconds) before AWS DMS times out operations performed by AWS DMS on the Db2 target. The default value is 1200 (20 minutes). |
 | `MaxFileSize` | Specifies the maximum size (in KB) of .csv files used to transfer data to Db2 LUW. |
 | `WriteBufferSize` | The size (in KB) of the in-memory file write buffer used when generating .csv files on the local disk on the DMS replication instance. The default value is 1024 (1 MB). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

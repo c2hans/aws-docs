@@ -40,7 +40,3 @@ The following table shows the impact on individual query latency. A cache hit re
 | --- | --- | --- | --- |
 | "Are there instances where SI prefixes deviate from denoting powers of 10, excluding their application?" → paraphrased variant | 6.51 s | 0.11 s | 59x |
 | "Sally is a girl with 3 brothers, and each of her brothers has 2 sisters. How many sisters are there in Sally's family?" → paraphrased variant | 1.64 s | 0.13 s | 12x |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

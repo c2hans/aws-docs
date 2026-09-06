@@ -92,7 +92,3 @@ The following ElastiCache events trigger Amazon SNS notifications. For informati
 | ElastiCache:ServiceUpdateAvailableForNode | `"Service update is available for cache node %s."` | A self-service update is available for the node.  |
 | ElastiCache:SnapshotComplete (Valkey or Redis OSS only) |  ElastiCache:SnapshotComplete : {{cluster-name}}  | A cache snapshot has completed successfully. |
 | ElastiCache:SnapshotFailed (Valkey or Redis OSS only) |  SnapshotFailed : {{cluster-name}}  | A cache snapshot has failed. See the cluster’s cache events for more a detailed cause.<br />If you describe the snapshot, see [`DescribeSnapshots`](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_DescribeSnapshots.html), the status will be `failed`. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

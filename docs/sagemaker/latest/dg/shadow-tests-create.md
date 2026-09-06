@@ -144,7 +144,3 @@ Endpoints that use Inf1 (Inferentia-based) instances
 ------
 
  After completing the preceding procedures, you should now have a test scheduled to begin at your specified start date and time. You can view the progress of the test from a dashboard. For more information about viewing your test and the actions you can take, see [How to view, monitor, and edit shadow tests](shadow-tests-view-monitor-edit.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ The egress rules of the security group for the CloudWatch agent must allow the C
 + [Install the CloudWatch agent with Prometheus metrics collection on Amazon ECS clusters](ContainerInsights-Prometheus-install-ECS.md)
 + [Scraping additional Prometheus sources and importing those metrics](ContainerInsights-Prometheus-Setup-configure-ECS.md)
 + [(Optional) Set up sample containerized Amazon ECS workloads for Prometheus metric testing](ContainerInsights-Prometheus-Sample-Workloads-ECS.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

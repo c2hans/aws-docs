@@ -29,7 +29,3 @@ When a phone number is released from your Connect Customer instance:
 + Connect Customer reserves the right to allow it to be claimed by another customer.
 
 If you move your contact center away from Connect Customer, and want to port your phone number away from Connect Customer, see [Port phone numbers away from Connect Customer](port-away.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

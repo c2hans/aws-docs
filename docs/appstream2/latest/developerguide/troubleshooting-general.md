@@ -206,7 +206,3 @@ else {
 <a name="troubleshooting-saml-auth"></a>
 
 The nameID in the SAML claim needs to match the username in Active Directory. Some IdPs require an update, refresh, or redeploy after adjusting certain attributes. If you make an adjustment and it is not reflected in your SAML capture, refer to your IdP's documentation or support program regarding the specific steps required to make the change take effect.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

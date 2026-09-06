@@ -298,7 +298,3 @@ You can filter new Amazon Aurora features on the [What's New with Database?](htt
 | [Stop/Start feature Aurora](#WhatsNew) | You can now stop or start an entire Aurora cluster with a single operation. For more information, see [Stopping and starting an Aurora cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-cluster-stop-start.html).  | September 24, 2018 |
 | [Parallel query feature for Aurora MySQL](#WhatsNew) | Aurora MySQL now offers an option to parallelize I/O work for queries across the Aurora storage infrastructure. This feature speeds up data-intensive analytic queries, which are often the most time-consuming operations in a workload. For more information, see [Parallel query for Aurora MySQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-mysql-parallel-query.html). | September 20, 2018 |
 | [New guide](#WhatsNew) | This is the first release of the *Amazon Aurora User Guide.* | August 31, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

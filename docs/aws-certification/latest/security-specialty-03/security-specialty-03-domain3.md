@@ -40,7 +40,3 @@ Skills in:
 + Skill 3.3.3: Determine and configure security workload requirements for communication between hybrid environments and AWS (for example, by using AWS Verified Access).
 + Skill 3.3.4: Design network segmentation based on security requirements (for example, north/south and east/west traffic protections, isolated subnets).
 + Skill 3.3.5: Identify unnecessary network access (for example, AWS Verified Access, Network Access Analyzer, Amazon Inspector network reachability findings).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

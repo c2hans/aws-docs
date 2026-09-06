@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/views-notes.htm
   + From external Hive metastores.
 + Cross-account definer roles are not supported for Redshift Spectrum Dialect views.
 + Resource links for the Athena dialect in the Athena query editor is not supported. To use cross-account definer roles for the Athena dialect, add the account that hosts the base tables as a Data Source in Athena.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

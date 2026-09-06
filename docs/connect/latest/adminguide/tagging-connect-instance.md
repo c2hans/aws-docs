@@ -133,7 +133,3 @@ For TBAC on instances, you can define IAM policies based on instance tags and as
 **Replicating instances:** When you create a [replica of your existing Connect Customer instance](create-replica-connect-instance.md) to another Region using the [ReplicateInstance](https://docs.aws.amazon.com/connect/latest/APIReference/API_ReplicateInstance.html) API, tags from the source instance will not be automatically tagged to the newly replicated instance. You will have to tag the replicated instance manually.
 
 **Tag inheritance:** When you tag an Connect Customer instance, all underlying resources in Connect Customer, such as routing profiles, queues, will not inherit the instance tags. To learn how to control granular access to specific resources in Connect Customer, see how to configure more granular access by using [ tag-based access control](tag-based-access-control.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

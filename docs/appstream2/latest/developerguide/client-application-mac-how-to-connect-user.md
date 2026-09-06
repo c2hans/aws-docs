@@ -30,7 +30,3 @@ Follow these steps to connect to WorkSpaces Applications and start an applicatio
    1. Choose an application or, if available, **Desktop View**.
 
 1. Depending on the authentication settings that your WorkSpaces Applications administrator enabled, after you choose an application or **Desktop View**, you might be prompted to enter your Active Directory domain credentials to sign in to your WorkSpaces Applications session. If this is the case, enter your Active Directory domain password, and then choose **Password sign in**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

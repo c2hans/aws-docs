@@ -32,7 +32,3 @@ To filter the metric data, use the following dimensions.
 | --- | --- |
 | NatGatewayId | Filter the metric data by the NAT gateway ID. Zonal NAT gateways use only this dimension. Regional NAT gateways use this dimension together with AvailabilityZone. |
 | AvailabilityZone | Filter the metric data by Availability Zone. Regional NAT gateways use this dimension together with NatGatewayId. Zonal NAT gateways do not use this dimension. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

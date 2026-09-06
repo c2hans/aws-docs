@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-otel-send.html
 ---
 
-# Send metrics using OpenTelemetry
+# Publish custom metrics with OpenTelemetry
 <a name="metrics-otel-send"></a>
 
 You can publish custom metrics to CloudWatch using the OpenTelemetry Protocol (OTLP). You can use OTel SDKs (Java, Python, Go, .NET, Node.js), the OTel Collector, or any OTLP-compatible client.
@@ -153,7 +153,3 @@ Follow these recommendations when sending metrics through OTLP:
 + **Keep label cardinality reasonable** — Avoid request IDs or UUIDs as label values.
 + **Set an appropriate export interval** — 60 seconds is standard. Shorter intervals increase cost.
 + **Use resource attributes** — Use resource attributes for static metadata (service name, version, environment) rather than per-data-point labels.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

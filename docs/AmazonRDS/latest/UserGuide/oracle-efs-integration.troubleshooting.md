@@ -19,7 +19,3 @@ Use the information in this section to help you diagnose and fix common issues w
 | `PLS-00302: component 'CREATE_DIRECTORY_EFS' must be declared` | This error can occur when you're using a version of RDS for Oracle that doesn't support Amazon EFS. | Make sure that you are using RDS for Oracle DB instance version 19.0.0.0.ru-2022-07.rur-2022-07.r1 or higher. |
 | `Read access of your EFS is denied. Check your file system policy.` | Your DB instance can't read the EFS file system. | Make sure that your EFS file system allows read access through the IAM role or on the EFS file system level.  |
 | Not applicable | Your DB instance can't write to the EFS file system. | Take the following steps:1.  Make sure that your EFS file system is mounted on an Amazon EC2 instance. <br />2.  Give the `others` group write access to your RDS user. The simplest technique is to run the `chmod 777` command on the top directory of the EFS file system.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

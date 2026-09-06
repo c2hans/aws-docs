@@ -152,7 +152,3 @@ Follow these steps to add permissions for a supported service:
 When you create IAM policies, follow the standard security advice of granting least privilege—that is, granting only the permissions required to perform a task. Some API calls support resource-based permissions and allow access to be limited. For example, in this case, to limit permissions when calling `DescribeTasks` and `ListTasks`, you can replace the wildcard character (\*) with a resource ARN or with a resource ARN that contains a wildcard character (\*). For more information about creating a policy that grants least-privilege access, see [https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege).
 
 1. Choose **Review policy** to ensure the policy contains no errors. When the policy is error-free, choose **Apply policy**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

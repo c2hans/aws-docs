@@ -471,7 +471,3 @@ This control only evaluates the container definitions in a task definition if th
 <a name="ecs-21-remediation"></a>
 
 For information about creating a new revision of an Amazon ECS Task Definition and updating the `user` parameter in the container definition, see [Updating an Amazon ECS task defintion](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-task-definition-console-v2.html) in the *Amazon Elastic Container Service Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

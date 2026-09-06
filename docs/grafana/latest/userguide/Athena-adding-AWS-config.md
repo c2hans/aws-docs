@@ -50,7 +50,3 @@ To use AWS data source configuration, first go to the Amazon Managed Grafana con
 1.  If your workgroup doesn't have an output location configured already, specify an S3 bucket and folder to use for query results. For example, `s3://grafana-athena-plugin-test-data/query-result-output/ `
 
 1.  Select **Save & Test**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

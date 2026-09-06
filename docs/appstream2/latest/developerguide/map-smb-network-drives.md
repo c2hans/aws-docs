@@ -115,7 +115,7 @@ Create a script that gets invoked when user is logged on by either using an Work
 
    ```
    # Define the target application path
-   $targetPathes = "<SMB-PATH>"
+   $targetPaths = "<SMB-PATH>"
 
    # Define the shortcut location
    $symlinkLocation = "C:\Users\$Env:AppStream_Session_UserName\My Files\Custom Folder"
@@ -127,15 +127,15 @@ Create a script that gets invoked when user is logged on by either using an Work
 ### Option 2: Use GPO Logon Script to mount SMB shared folders to be under My Files
 <a name="powershell-gpo-logon"></a>
 
-1. Mount SMB shared folders by creating a symbolic fink to a file or folder. For more information, see [ Example 7: Create a symbolic link to a file or folder](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.                                         management/new-item?view=powershell-7.4#example-7-create-a-symbolic-link-to-a-file-or-folder)
+1. Mount SMB shared folders by creating a symbolic fink to a file or folder. For more information, see [ Example 7: Create a symbolic link to a file or folder](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item?view=powershell-7.4#example-7-create-a-symbolic-link-to-a-file-or-folder)
 
-1. [Assign user logon scripts.](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-                                 2012-r2-and-2012/dn789196(v=ws.11)#how-to-assign-user-logon-scripts)
+1. [Assign user logon scripts.](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn789196(v=ws.11)#how-to-assign-user-logon-scripts)
 
 1. Add the following script to create a junction for Custom Home Folders, under My Files.
 
    ```
    # Define the target application path
-   $targetPathes = "<SMB-PATH>"
+   $targetPaths = "<SMB-PATH>"
 
    # Define the shortcut location
    $symlinkLocation = "C:\Users\$env:Username\My Files\Custom Folder"
@@ -178,7 +178,3 @@ Create a script that gets invoked when user is logged on by either using an Work
    1. Update this Logon Script delay configuration using Group Policy, if needed. For more information, see [ Configure Logon Script Delay](https://admx.help/?Category=Windows_8.1_2012R2&Policy=Microsoft.Policies.GroupPolicy::LogonScriptDelay). Logon Script delay will be the amount for time it will delay before triggering your async Logon Script. The default delay is 5 minutes.
 
    1. Restart your fleet to apply the Logon Script delay.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

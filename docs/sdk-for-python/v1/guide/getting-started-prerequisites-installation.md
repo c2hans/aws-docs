@@ -83,7 +83,3 @@ python -m pip install "aws-sdk-python[dynamodb,transcribe_streaming]<=0.11.0"   
 python -m pip install "aws-sdk-dynamodb~=0.11.0" "aws-sdk-transcribe-streaming~=0.11.0"  # individual client packages
 python -m pip install "aws-sdk-python[dynamodb,transcribe_streaming]~=0.11.0"            # meta-package
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Python. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-python` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -69,7 +69,3 @@ If the publisher has shared the Ready2Run workflow on GitHub, you can make your 
 | nf-core | [NF-Core workflows](https://github.com/aws-samples/amazon-omics-tutorials/tree/main/example-workflows/nf-core/workflows/scrnaseq) |
 | Sentieon | [Sentieon workflows](https://github.com/Sentieon/sentieon-amazon-omics) |
 | Ultima Genomics | [Ultima Genomics workflows](https://github.com/Ultimagen/healthomics-workflows) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

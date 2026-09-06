@@ -15,7 +15,3 @@ This chapter describes how to set up the different types of outputs that AWS Ele
 + [Configuring SMPTE 2110 outputs](output-2110.md)
 + [Delivering TS using the SRT protocol](output-srt.md)
 + [Delivering TS output using the Zixi protocol](delivering-ts-output-using-the-zixi-protocol.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -8,7 +8,3 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 <a name="gui-ex-delete-ha-deploy"></a>
 
 To tear down the deployment, you submit the Delete Stack CT against the HA Two-Tier stack, and the S3 bucket, and you can request that RDS snapshots be deleted (they are deleted automatically after ten days, but they do cost a small amount while there). Gather the stack IDs for the HA stack and the S3 bucket and then follow these steps. See [Stack \| Delete](https://docs.aws.amazon.com/managedservices/latest/ctref/management-standard-stack-delete.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

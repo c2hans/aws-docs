@@ -23,7 +23,3 @@ After you have created the action, the action sits in the schedule. Approximatel
 When you create the action, you set the start type to *immediate*.
 
 The schedule immediately passes the action to the channel. The channel immediately inserts the data into the channel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ Amazon Application Recovery Controller - Zonal Shift provides the following APIs
 | <a name="arc-zonal-shift-ListAutoshifts"></a>[ListAutoshifts](https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_ListAutoshifts.html) | List active and completed autoshifts | List |
 | <a name="arc-zonal-shift-ListManagedResources"></a>[ListManagedResources](https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_ListManagedResources.html) | List managed resources | List |
 | <a name="arc-zonal-shift-ListZonalShifts"></a>[ListZonalShifts](https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_ListZonalShifts.html) | List zonal shifts | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

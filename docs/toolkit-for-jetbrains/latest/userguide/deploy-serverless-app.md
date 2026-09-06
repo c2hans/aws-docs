@@ -37,7 +37,3 @@ To complete this procedure, you must first install the AWS Toolkit and, if you h
 After you create the serverless application, you can run (invoke) or debug the local version of an AWS Lambda function that is contained in that application.
 
 You can also deploy the serverless application. After you deploy it, you can (invoke) the remote version of a Lambda function that is part of that deployed application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

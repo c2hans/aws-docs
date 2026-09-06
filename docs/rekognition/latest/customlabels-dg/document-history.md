@@ -33,7 +33,3 @@ The following table describes important changes in each release of the *Amazon R
 | [Project and model delete operations added](#document-history) | You can now delete Amazon Rekognition Custom Labels projects and models with the console and with the API. For more information, see [Deleting an Amazon Rekognition Custom Labels Model](https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/tm-delete-model.html) and [Deleting an Amazon Rekognition Custom Labels project](https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/mp-delete-project.html)  | April 1, 2020 |
 | [Added Java examples](#document-history) | Added Java examples covering project creation, model training, model running, and image analysis. | December 13, 2019 |
 | [New feature and guide](#document-history) | This is the initial release of the Amazon Rekognition Custom Labels feature and the *Amazon Rekognition Custom Labels Developer Guide*. | December 3, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

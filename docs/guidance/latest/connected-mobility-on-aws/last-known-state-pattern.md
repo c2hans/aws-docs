@@ -55,7 +55,3 @@ The Fleet Manager API Lambda reads LKS data through two mechanisms:
 <a name="lks-fallback"></a>
 
 The Fleet Manager API Lambda uses a minimal raw-socket RESP client that caches Redis availability for 60 seconds. If Redis is unreachable (ElastiCache maintenance, network issue), the Lambda falls back gracefully to DynamoDB-only responses. The UI still works — it just shows slightly stale data from the last DynamoDB write instead of real-time Redis state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

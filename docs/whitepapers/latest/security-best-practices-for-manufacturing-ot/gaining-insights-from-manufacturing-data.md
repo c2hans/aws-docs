@@ -27,7 +27,3 @@ Extracting, structuring, and ingesting data from OT resources to the cloud is th
 Apart from AWS services, third-party integrations and services are also available for data ingestion, providing customers a wide portfolio of options to bring their manufacturing data to the cloud.
 
 While the specific mechanisms for each service are different, typically a component of these services is deployed at the edge (ISA 95 / Purdue model level 3 or below). These components serve as the intermediary to provide services like protocol conversion, secure cloud connectivity, local data transformation, and caching.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

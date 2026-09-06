@@ -315,7 +315,3 @@ If Route 53 can't process a request before the next request arrives, it will re
 **All requests**
 Five requests per second per AWS account per Region. If you submit more than five requests per second in a Region, VPC Resolver returns an HTTP 400 error (`Bad request`). The response header also includes a `Code` element with a value of `Throttling` and a `Message` element with a value of `Rate exceeded`.
 If your application exceeds this limit, we recommend that you implement exponential backoff for retries. For more information, see [Error Retries and Exponential Backoff in AWS](https://docs.aws.amazon.com/general/latest/gr/api-retries.html) in the *Amazon Web Services General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,10 +41,9 @@ The following table compares AWS wide requirements that are either supported for
 | Access an opt-in Region | No | Yes |
 | [IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html) | No | Yes |
 | Sign-in access policies | No | Yes |
-| Set up script to connect your local agent to your AWS accounts | Yes | No |
 | Create spend limits for your accounts | Yes | No |
 | Savings plans | No | Yes |
-| Automatic opt-in to [Cost Optimization Hub](https://docs.aws.amazon.com/cost-management/latest/userguide/cost-optimization-hub.html) | Yes | No |
+| Automatic opt-in to [Cost Optimization Hub](https://docs.aws.amazon.com/cost-management/latest/userguide/cost-optimization-hub.html) for the Paid Plan | [Yes](https://docs.aws.amazon.com/cost-management/latest/userguide/bcm-lite-coh-savings.html) | No |
 | Automatic opt-in to [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html) | Yes | No |
 | Automatic opt-in to [IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) | Yes | No |
 | Automatically opt in to [IAM role manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_role-manager.html) | Yes | No |
@@ -109,7 +108,3 @@ You manage your AWS accounts based on the type of AWS you're using. The followin
 | Manage accounts in India | [Manage accounts in India in AWS Settings](manage-accounts-india-in-aws-settings.md) | [Manage accounts in India](managing-accounts-india.md) |
 | Create an administrator user | Not applicable | [Sign up for AWS (advanced)](getting-started.md) |
 | Plan your account governance structure | Not applicable | [Plan your AWS account governance structure](plan-acct-structure.md) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

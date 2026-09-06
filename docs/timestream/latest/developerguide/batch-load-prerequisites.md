@@ -68,7 +68,3 @@ This is a list of prerequisites for using batch load. For best practices, see [B
 + Timestream supports the string data type for dimension values. It supports long, double, string, and boolean data types for measure columns.
 
 For batch load limits and quotas, see [Batch load](ts-limits.md#limits.batch-load).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

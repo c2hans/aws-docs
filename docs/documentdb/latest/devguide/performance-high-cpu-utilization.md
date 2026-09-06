@@ -47,7 +47,3 @@ After identifying the instance and timeline of the CPU spike, next is to diagnos
 **Instance Scaling**: If CPU utilization remains consistently high after optimization efforts, upgrade to a larger instance class with more CPU capacity to handle your workload requirements effectively.
 
 **Serverless**: For unpredictable workloads causing short-duration CPU spikes, consider using [Using Amazon DocumentDB serverless](docdb-serverless.md). Serverless instances automatically scale resources based on demand, eliminating the need to provision fixed instance sizes for such workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

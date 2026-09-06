@@ -86,7 +86,3 @@ If you must roll back, do so with caution. Versions of the AWS Encryption SDK pr
 + Once you have begun encrypting with key commitment (setting your commitment policy to `RequireEncryptAllowDecrypt`) in version 2.0.*x* or later, you can roll back to version 1.7.*x*, but not to any earlier version. Versions of the AWS Encryption SDK prior to 1.7.*x* cannot decrypt ciphertext encrypted with [key commitment](concepts.md#key-commitment).
 
 If you accidentally enable encrypting with key commitment before all hosts can decrypt with key commitment, it might be best to continue with the roll out rather than to roll back. If messages are transient or can be safely dropped, then you might consider a rollback with loss of messages. If a rollback is required, you might consider writing a tool that decrypts and re-encrypts all messages.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

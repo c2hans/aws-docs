@@ -42,7 +42,3 @@ If you add a file with the same name as an existing file in your dataset, the ne
 You should now have a new version of your dataset.
 
 On the **Datasets** page, you can choose the **Version history** tab to see all of the versions of your dataset and the history of both manual and automatic updates you’ve made.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

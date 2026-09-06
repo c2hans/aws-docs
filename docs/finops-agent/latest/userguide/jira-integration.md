@@ -108,7 +108,3 @@ When Jira actions fail because of authorization errors (expired OAuth token, rev
 When actions fail because of invalid space keys (project deleted or renamed on the Jira site), the agent asks the user which project to use instead for interactive tasks. For scheduled or event-based tasks with no user present, the task fails and the user is notified. If the agent has access to multiple Jira projects and the user does not specify which one to use, the agent presents the available options and asks the user to choose.
 
 For rate-limited requests (HTTP 429) or site unavailability (HTTP 5xx), the agent retries with exponential backoff up to three times before failing the task.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS FinOps Agent (preview). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finops-agent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,7 +35,3 @@ You can delete a service-linked role at any time, but doing so will block Health
 **To manually delete the service-linked role using IAM**
 
 You can use the IAM console, the AWS CLI, or the AWS API to delete the `AWSServiceRoleForHealthImaging` service-linked role. For more information, see [Deleting a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#delete-service-linked-role) in the *IAM User Guide*. If you deleted a service-linked role, you can use the role creation process to create a new one.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

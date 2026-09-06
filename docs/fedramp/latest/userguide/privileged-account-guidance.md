@@ -737,7 +737,3 @@ This section provides a comprehensive overview of privileged account management 
  **Operational Excellence**: Privileged account management requires ongoing attention to security controls, monitoring capabilities, and governance processes. Organizations should implement comprehensive controls including just-in-time access, enhanced monitoring, regular reviews, and incident response procedures. The combination of AWS native security services, proper IAM configuration, and operational procedures provides a robust framework for managing privileged access while supporting FedRAMP compliance considerations.
 
  **Important Note**: This guidance provides AWS recommended practices and considerations for privileged account management. Organizations are responsible for evaluating these recommendations against their specific compliance requirements and implementing appropriate controls to meet their regulatory obligations. Regular review and updates of privileged account procedures help ensure continued effectiveness and compliance alignment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FedRamp Compliance Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fedramp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

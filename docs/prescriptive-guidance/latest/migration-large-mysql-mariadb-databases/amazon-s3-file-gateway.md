@@ -47,7 +47,3 @@ The following are limitations when using Amazon S3 File Gateway file shares:
 <a name="best-practices-amazon-s3-file-gateway"></a>
 
 For more information about the best practices for Amazon S3 File Gateway, see [Best practices](https://docs.aws.amazon.com/filegateway/latest/files3/best-practices.html) in the S3 File Gateway documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

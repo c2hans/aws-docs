@@ -58,7 +58,3 @@ If you include the above blueprint(s), it is also recommended that in the bluepr
 You can also add the Quicksight blueprint to a new custom project profile. For more information on creating custom project profiles, see [Custom project profile](custom.md).
 
 For information on the user flow for Quicksight in Amazon SageMaker Unified Studio, see [Amazon QuickSight in Amazon SageMaker Unified Studio](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/quicksight-integration.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

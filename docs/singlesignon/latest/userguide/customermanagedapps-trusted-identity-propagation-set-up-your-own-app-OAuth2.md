@@ -123,7 +123,3 @@ This policy requires the [`CreateTokenWithIAM`](https://docs.aws.amazon.com/sing
 1. After you set up your customer managed application in IAM Identity Center, you must specify one or more AWS services, or trusted applications, for identity propagation. This enables users to sign in to your customer managed application and access data in the trusted application.
 
    For more information, see [Specify trusted applications](trustedidentitypropagation-using-customermanagedapps-specify-trusted-apps.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -443,7 +443,3 @@ The following features will help you tune GuardDuty so that it can provide the m
 + To easily sort findings based on specific criteria, such as instance ID, account ID, S3 bucket name, and more, you can create and save filters within GuardDuty. For more information, see [Filtering findings in GuardDuty](guardduty_filter-findings.md).
 + If you are receiving findings for expected behavior in your environment, you can automatically archive findings based on the criteria you define with [suppression rules](findings_suppression-rule.md).
 + To prevent findings from being generated from a subset of trusted IPs, or to have GuardDuty monitor IPs outside it's normal monitoring scope, you can set up [Trusted IP and threat lists](guardduty_upload-lists.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

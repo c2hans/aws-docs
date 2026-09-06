@@ -36,7 +36,3 @@ Substitution refers to replacing content with the word `REDACTED`.
 + [Data protection limitations](data-protection-limitations.md)
 + [Examples of data protection](data-protection-examples.md)
 + [Configuring data protection for a protection pack (web ACL)](data-protection-configure.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

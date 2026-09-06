@@ -17,7 +17,3 @@ Your updated workspace should continue to work after updating. This section can 
   + Change the **TLS/SSL Mode** to `verify-ca`.
   + Set **TLS/SSL Method** to `Certificate content`.
   + Set the **Root Certificate** to the root certificate for your PostgreSQL database server. This is the only field in which you should enter a certificate.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

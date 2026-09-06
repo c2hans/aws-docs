@@ -468,7 +468,3 @@ You can optionally specify a group identifier based on your needs when you run t
 
    In your command line window, run the sample app again and watch the distribution of messages in your **MQTT test client** of the **AWS IoT console** and the command line.
 ![The shared subscriptions output page.](http://docs.aws.amazon.com/iot/latest/developerguide/images/shared-subscription-output.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

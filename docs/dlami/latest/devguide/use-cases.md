@@ -17,7 +17,3 @@ The following are examples of some common use cases for AWS Deep Learning AMIs (
 
 **Note**
 While your initial choice might be to upgrade your instance type to a larger instance with more GPUs (up to 8), you can also scale horizontally by creating a cluster of DLAMI instances. Check out [Related information about DLAMI](resources.md) for more information on cluster builds.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

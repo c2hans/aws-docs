@@ -78,7 +78,3 @@ The version of the message format used with the algorithm suite. For details, se
 The signature algorithm that is used to generate a [digital signature](concepts.md#digital-sigs) over the ciphertext header and body. The AWS Encryption SDK uses the Elliptic Curve Digital Signature Algorithm (ECDSA) with the following specifics:
 + The elliptic curve used is either the P-384 or P-256 curve, as specified by the algorithm ID. These curves are defined in [Digital Signature Standard (DSS) (FIPS PUB 186-4)](http://doi.org/10.6028/NIST.FIPS.186-4).
 + The hash function used is SHA-384 (with the P-384 curve) or SHA-256 (with the P-256 curve).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

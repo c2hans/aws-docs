@@ -71,7 +71,3 @@ When an assertion fails, the test execution stops and provides detailed informat
 This information helps you quickly identify and fix issues in your contact flow.
 
 ![Check block failure details showing expected versus actual values and the comparison operator used.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-check-block-failures.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

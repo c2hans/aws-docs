@@ -53,7 +53,3 @@ View details about updates to AWS managed policies for AWS PCS since this servic
 | [AWSPCSComputeNodePolicy](#security-iam-awsmanpol-AWSPCSComputeNodePolicy) – New policy | AWS PCS added a new policy to grant permission to AWS PCS compute nodes to connect to AWS PCS clusters.<br />AWS PCS attaches this policy to an IAM role when you create a compute node group in the AWS PCS console. | June 23, 2025 |
 | Updated the JSON in this document | Corrected the JSON in this document to include `"arn:aws:ec2:*:*:spot-instances-request/*"`. | September 5, 2024 |
 | AWS PCS started tracking changes | AWS PCS started tracking changes for its AWS managed policies. | August 28, 2024 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

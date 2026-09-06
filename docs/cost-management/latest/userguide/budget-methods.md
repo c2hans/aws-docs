@@ -21,7 +21,3 @@ For example, you can create an auto-adjusting cost budget with a baseline time r
 If AWS Budgets updates your budget amount based on changes in your spending or usage, all budget alert notification subscribers get a notification that the budget amount changed.
 + When calculating your auto-adjusted budget amount, AWS Budgets doesn't include periods at the beginning of your baseline time range that don't have cost or usage data. For example, assume that you set your baseline time range as the last four quarters. However, your account had no cost data in the first quarter. Then, in this case, AWS Budgets calculates your auto-adjusted budget amount from only the last three quarters.
 + You see a temporary forecast while you're creating or editing a budget. After you save your budget, your auto-adjusted budget is set for the first time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

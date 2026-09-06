@@ -90,7 +90,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/aw
  In 2011, the [Cloud Security Alliance (CSA) launched STAR](https://cloudsecurityalliance.org/press-releases/2011/08/04/csa-announces-star/), an initiative to encourage transparency of security practices within cloud providers. The CSA Security, Trust & Assurance Registry (STAR) is a free, publicly accessible registry that documents the security controls provided by various cloud computing offerings, thereby helping users assess the security of cloud providers they currently use or are considering.
 
  AWS participates in the voluntary CSA Security, Trust & Assurance Registry (STAR) Self-Assessment to document AWS compliance with CSA-published best practices. AWS publishes the completed [CSA Consensus Assessments Initiative Questionnaire (CAIQ)](https://d1.awsstatic.com/whitepapers/compliance/CSA_Consensus_Assessments_Initiative_Questionnaire.pdf) on the AWS website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

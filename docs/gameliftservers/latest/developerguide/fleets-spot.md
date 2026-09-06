@@ -35,7 +35,3 @@ AWS makes every effort to provide the notification before it reclaims an instanc
 
   To quickly replace lost capacity when a Spot fleet becomes non-viable, a custom scaling mechanism can use available queue and fleet metrics to initiate a rapid scale-out of backup fleets. Detect when Spot fleets become non-viable with metrics such as `FirstChoiceOutOfCapacity`, `FirstChoiceNotViable`, and `PercentAvailableGameSessions`. Estimate replacement capacity needs by analyzing recent `PlacementsStarted` metric data. After scaling backup fleets to handle immediate demand, normal auto-scaling can take over.
 + **Integration with FlexMatch** – If your solution uses a FlexMatch matchmaker, there are no special requirements for Spot fleets. You can configure a matchmaker to use a queue with Spot fleets. Amazon GameLift Servers automatically prioritizes match placements across Spot and On-Demand fleets, including when placing new game sessions and when backfilling empty player slots in existing game sessions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

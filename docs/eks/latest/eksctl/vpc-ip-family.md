@@ -52,7 +52,3 @@ If you use IPv6, you must configure the following requirements:
 + For IPv6 cluster, the IAM role for vpc-cni must have [required IAM policies for IPv6 mode](https://github.com/aws/amazon-vpc-cni-k8s/blob/master/docs/iam-policy.md#ipv6-mode) associated
 
 Private networking can be done with IPv6 IP family as well. Please follow the instruction outlined under [EKS Private Cluster](eks-private-cluster.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

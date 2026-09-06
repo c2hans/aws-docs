@@ -34,7 +34,3 @@ Enable prompt logging and establish metrics to monitor masking and blocking even
 <a name="best-practices-4-input-sanitization"></a>
 
 Sanitize and normalize user inputs by using application code logic prior to sending inputs to inference engines. While prompts and guardrails reduce the likelihood of successful prompt-injection attacks, systems should not rely on these defenses alone. [Input sanitization](https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/gensec04-bp02.html) should remove unnecessary Unicode characters and unusual or unexpected text patterns and phrases that provide direction to ignore inputs or directives. Prompt obfuscation is a well-known tactic to hide text used in prompt-injection and data-poisoning attacks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

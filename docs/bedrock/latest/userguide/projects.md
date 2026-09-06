@@ -412,7 +412,3 @@ print(response.choices[0].message.content)
 + **Document project purpose**: Include clear descriptions
 + **Regular audits**: Periodically review and archive unused projects
 + **Monitor usage**: Track project metrics to identify optimization opportunities
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

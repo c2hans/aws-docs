@@ -207,7 +207,3 @@ The code base is publicly available on GitHub: [https://github.com/aws-cloudform
 <a name="ide-extension-need-help"></a>
 
 Try the [CloudFormation community](https://repost.aws/tags/TAm3R3LNU3RfSX9L23YIpo3w) on AWS re:Post.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

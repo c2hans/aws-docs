@@ -47,7 +47,3 @@ This solution also deploys an optional migration tracker component that tracks t
 The CloudFormation template deploys [AWS Glue](https://aws.amazon.com/glue/) to get the migration metadata from the Cloud Migration Factory DynamoDB table and exports the metadata to [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3) twice a day (at 5:00 AM and 1:00 PM UTC). After the AWS Glue job completes, an Amazon Athena save query is initiated, and you can set up Amazon QuickSight to pull the data from the Athena query results. You can then create the visualizations and build a dashboard that meets your business needs. For guidance on creating visuals and building a dashboard, refer to [Build a migration tracker dashboard](build-migration-tracker-dashboard.md).
 
 This optional component is managed by the **Tracker** parameter in the CloudFormation template. By default, this option is activated, but you can deactivate this option by changing the **Tracker** parameter to `false`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -331,7 +331,3 @@ You can use the built-in Windows package capture utility ([netsh](https://learn.
 **VPC Flow logs**
 To better understand what requests are being received and sent from AD Connector, you can configure [VPC flow logs](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-flow-logs.html) for the directory network interfaces. You can identify all network interfaces reserved for use with Directory Service by the description: `AWS created network interface for directory {{your-directory-id}}`.
 A simple use case is during AD Connector creation with a customer managed Active Directory domain with a large number of domain controllers. You can use VPC flow logs and filter by the Kerberos port (88) to find out what domain controllers in the customer managed Active Directory are being contacted for authentication.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

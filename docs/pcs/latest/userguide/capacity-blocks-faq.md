@@ -74,7 +74,3 @@ NodeName=test-8-gamma-cb-2 CoresPerSocket=1
 
 **When multiple compute node groups are attached to the same queue, how can I force a job to run on Capacity Block-backed instances?**
 You can use Slurm features and constraints to lock a job to a certain set of nodes. We recommend that you don't set Slurm weights for each compute node group because that only works with nodes that aren't in the `maint` state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

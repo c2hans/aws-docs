@@ -16,7 +16,3 @@ For example, a large global company could choose to monitor 100% of its internet
 You can try out different options with the pricing calculator. To explore pricing options, on the [Pricing calculator for CloudWatch page](https://calculator.aws/#/addService/CloudWatch), scroll down to Internet Monitor.
 
 For more information about Internet Monitor and CloudWatch pricing, see the [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/) page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -259,7 +259,3 @@ If you delete an Active Directory user and create a new user with the same `sAMA
 For more information, see [CREATE LOGIN (Transact-SQL)](https://msdn.microsoft.com/en-us/library/ms189751.aspx) in the Microsoft Developer Network documentation.
 
 Users (both humans and applications) from your domain can now connect to the RDS for SQL Server instance from a domain-joined client machine using Windows authentication.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

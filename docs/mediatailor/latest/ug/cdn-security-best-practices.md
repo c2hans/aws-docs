@@ -68,7 +68,3 @@ For highly sensitive content, consider implementing additional encryption mechan
 <a name="security-best-practices-next-steps"></a>
 
 After implementing security best practices, the next step is to test and troubleshoot your CDN integration. See [Troubleshoot CDN integration](cdn-troubleshooting.md) for comprehensive testing and troubleshooting instructions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

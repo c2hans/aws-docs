@@ -22,7 +22,7 @@ Before launching your CloudFormation stack, make sure you have two Amazon Redshi
 
 **To launch your CloudFormation stack for Amazon Redshift data sharing:**
 
-1. Click [**Launch CFN stack**](https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=DataShare&templateURL=https://s3.amazonaws.com/redshift-downloads/docs-downloads/DataShare.yml), which takes you to the CloudFormation service in the AWS Management Console.
+1. Choose [**Launch CFN stack**](https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=DataShare&templateURL=https://s3.amazonaws.com/redshift-downloads/docs-downloads/DataShare.yml), which takes you to the CloudFormation service in the AWS Management Console.
 
    If you are prompted, sign in.
 
@@ -148,7 +148,3 @@ The query runs against the view in the shared schema. You can't connect directly
    The query returns sales and seller data from the sample TICKIT data.
 
    For more examples of datashare queries, see [Sharing read access to data within an AWS account](within-account.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

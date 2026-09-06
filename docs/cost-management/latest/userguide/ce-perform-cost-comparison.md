@@ -36,7 +36,3 @@ Filter by resource is not available for cost comparisons.
    + Choose **View all** to see a comprehensive list of all cost comparison drivers.
    + For each cost comparison driver, Cost Explorer provides specific reasons for the change in costs, including usage changes, discount changes, and other charge types (for example, fees, credits).
    + Use the available Cost Explorer filters in **Report parameters** to analyze different aspects of your business. The graph and table are updated in real time, allowing you to analyze specific services, accounts, tags, or other dimensions to gain deeper insights into your cost changes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

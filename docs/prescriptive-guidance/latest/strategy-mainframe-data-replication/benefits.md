@@ -17,7 +17,3 @@ Data replication to the AWS Cloud offers benefits that align with these strategi
 + **Cost savings** – Optimizes infrastructure costs, reduces capital expenditures, and eliminates the need for costly hardware refresh cycles.
 + **Enhanced resilience** – Bolsters resilience and business continuity through redundant data storage, automated failover, and disaster recovery capabilities.
 + **Empowered decision-making** – Facilitates real-time access to accurate and actionable insights, empowering informed decision-making and driving business innovation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

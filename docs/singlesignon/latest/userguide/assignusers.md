@@ -72,7 +72,3 @@ Alternatively, you can use [AWS CloudFormation](https://docs.aws.amazon.com/AWSC
 
 **Note**
 This topic covers assigning access using permission sets. To assign existing IAM roles to IAM Identity Center users and groups — with the full IAM role feature set — see [account access manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/account-access-manager.html) in the *IAM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

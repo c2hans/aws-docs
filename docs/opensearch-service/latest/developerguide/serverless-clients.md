@@ -658,7 +658,3 @@ curl -XPOST \
 The following image shows how to send a requests to a collection using Postman. For instructions to authenticate, see [Authenticate with AWS Signature authentication workflow in Postman](https://learning.postman.com/docs/sending-requests/authorization/aws-signature/).
 
 ![Postman interface showing POST request with JSON body containing title field set to Shawshank Redemption.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ServerlessPostman.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

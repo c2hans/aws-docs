@@ -105,7 +105,3 @@ S3 bucket namespaces are global. If you accidentally delete your bucket, another
 
 **Note**
 This IAM role is used only for the S3 audit destination. If you also stream audit logs to Amazon CloudWatch Logs (the `PUBLISH_TO_CLOUDWATCH` option — see [Configuring CloudWatch Log Stream](Appendix.SQLServer.Options.Audit.CloudWatch.md)), you do not need to add any CloudWatch Logs permissions (`logs:*`) to this role. CloudWatch delivery is handled by an RDS-managed service-linked role (`AWSServiceRoleForRDS`). The S3 permissions above are sufficient.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

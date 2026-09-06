@@ -55,7 +55,7 @@ Some operations in Amazon Redshift interact with materialized views. Some of the
 ## Cascading refresh
 <a name="mv_REFRESH_MATERIALIZED_VIEW_cascading"></a>
 
-The CASCADE option refreshes the specified materialized view and all its dependent materialized views, in order of dependence: base MVs are REFRESHed before the MVs on top (topological ordering). This allows you to update a nested set of materialized views in a single command.
+The CASCADE option refreshes the specified materialized view and all its dependent materialized views, in order of dependence: base MVs are REFRESHed before the MVs on top (topological ordering). With this, you can update a nested set of materialized views in a single command.
 
 The RESTRICT option (the default if neither RESTRICT nor CASCADE is specified) refreshes only the specified materialized view.
 
@@ -109,7 +109,3 @@ The following example refreshes the `products_mv` materialized view and all its 
 ```
 REFRESH MATERIALIZED VIEW products_mv CASCADE;
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

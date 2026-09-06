@@ -69,7 +69,3 @@ arn:aws:iam::{{account-id}}:role/{{iam-role-name}}
 This IAM role must contain a policy to allow the action to be executed. It must also have API Gateway declared (in the role's trust relationship) as a trusted entity to assume the role. Such permissions can be granted on the action itself. They are known as resource-based permissions. For the Lambda integration, you can call the Lambda's [addPermission](https://docs.aws.amazon.com/lambda/latest/dg/API_AddPermission.html) action to set the resource-based permissions and then set `credentials` to null in the API Gateway integration request.
 
 We discussed the basic integration setup. Advanced settings involve mapping method request data to the integration request data. For more information, see [Data transformations for REST APIs in API Gateway](rest-api-data-transformations.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

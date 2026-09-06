@@ -42,7 +42,3 @@ Be aware that at the time these release notes are published, the new platform ve
 | --- | --- | --- | --- | --- | --- |
 |  ** Corretto 11 with Tomcat 8.5 AL2 version 4.2.10** <br /> * 64bit Amazon Linux 2 v4.2.10 running Tomcat 8.5 Corretto 11 *  | 2.0.20211201 | Corretto 11.0.13.8.2 | 3.2.0 | Tomcat 8.5.72 | nginx 1.20.0 (default), Apache 2.4.51 |
 |  ** Corretto 8 with Tomcat 8.5 AL2 version 4.2.10** <br /> * 64bit Amazon Linux 2 v4.2.10 running Tomcat 8.5 Corretto 8 *  | 2.0.20211201 | Corretto 8.312.07.2 | 3.2.0 | Tomcat 8.5.72 | nginx 1.20.0 (default), Apache 2.4.51 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

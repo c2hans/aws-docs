@@ -32,7 +32,3 @@ The following matrix describes the states and statuses that are visible in Cloud
 | **Acknowledgement**<br />The service generates acknowledgements whenever an EDI document is transformed. | An acknowledgement has been successfully completed | An acknowledgement has failed to send | System is currently attempting to send an acknowledgement |
 | **File Transform**<br />Pertains to requests for processing transformations when initiated by calling `StartTransformerJob`. | File transformation has successfully completed | File transform has failed to complete | File transform is in progress |
 | **File Deliver**<br />The terminal state, where the system attempts to write the result of a transformation to the customer’s designated output location. | File has been stored to the appropriate Amazon S3 location | File has failed to be delivered to its Amazon S3 location | Storing the file to its appropriate location is in progress |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS B2B Data Interchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query b2bi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

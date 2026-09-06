@@ -38,7 +38,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 +  Environmental sustainability involves reducing the greenhouse gas emissions, energy consumption, water usage, waste generation, and pollution caused by the supply chain processes
 
  Social sustainability involves facilitating the fair and ethical treatment of the workers, suppliers, customers, and communities involved in the supply chain. It also involves respecting the human rights, labor standards, health and safety, and diversity and inclusion of the stakeholders.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

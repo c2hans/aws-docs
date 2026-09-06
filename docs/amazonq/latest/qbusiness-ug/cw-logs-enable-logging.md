@@ -92,7 +92,3 @@ To enable conversation logging, you need the Amazon Resource Name (ARN) of your 
    ```
 **Note**
 If you want the users' email recorded in your logs, it must be added explicitly as a field along with the [other fields](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/cw-log-examples.html) that you want in the [`recordFields`](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html#CWL-CreateDelivery-request-recordFields) parameter as part of calling the `CreateDelivery` operation .
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

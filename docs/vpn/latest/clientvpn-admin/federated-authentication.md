@@ -115,7 +115,3 @@ If your IdP does not support multiple ACS URLs, do the following:
 You create this IAM SAML identity provider in addition to the one you [create for the main app](#federated-authentication).
 
 1. [Create the Client VPN endpoint](cvpn-working-endpoint-create.md), and specify both of the IAM SAML identity providers that you created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

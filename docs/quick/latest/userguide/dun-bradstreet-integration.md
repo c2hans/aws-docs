@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/dun-bradstreet-in
 # Dun & Bradstreet integration
 <a name="dun-bradstreet-integration"></a>
 
-With the Dun & Bradstreet action connector, you can look up company profiles, credit risk data, and business intelligence directly in Amazon Quick through natural language.
+With the Dun & Bradstreet connector, you can look up company profiles, credit risk data, and business intelligence directly in Amazon Quick through natural language.
 
 Amazon Quick supports multiple authentication methods for Dun & Bradstreet. Choose the method that best fits your organization's security requirements.
 + **Custom OAuth app** – Uses a customer-managed OAuth application registered in the Dun & Bradstreet developer portal. This option gives your organization full control over the OAuth configuration.
@@ -80,7 +80,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 <a name="dnb-troubleshooting-auth"></a>
 + **Sign-in fails (Custom OAuth app)** – Verify that your Dun & Bradstreet account is active. Confirm that the redirect URI in your Dun & Bradstreet OAuth app matches the Amazon Quick callback URL.
 + **Invalid client credentials** – Verify that the Client ID and Client secret match the values in your Dun & Bradstreet OAuth app.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

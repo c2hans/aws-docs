@@ -13,7 +13,3 @@ Identify the appropriate cloud operating model for your SAP workloads such that 
 +  AWS Guidance: [AWS Cloud Adoption Framework (AWS CAF)](https://aws.amazon.com/professional-services/CAF/)
 +  AWS Well-Architected Framework [Operational Excellence]: [Operating Models 2x2](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/operating-model-2-by-2-representations.html)
 +  AWS Well-Architected Framework [Operational Excellence]: [Organizational Culture](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/organizational-culture.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

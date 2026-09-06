@@ -19,7 +19,3 @@ For information on using Client SDK 3, see [Using previous SDK version to work w
 + [AWS CloudHSM JCE provider Javadocs](java-javadocs_5.md)
 + [AWS CloudHSM KeyStore Java class for Client SDK 5](alternative-keystore_5.md)
 + [Advanced configurations for AWS CloudHSM JCE for Client SDK 5](java-lib-configs.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

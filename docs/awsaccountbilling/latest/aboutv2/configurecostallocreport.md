@@ -88,7 +88,3 @@ Any charges that cannot be grouped by tags in your cost allocation report defaul
 <a name="cost-alloc-tag-costs"></a>
 
 You can use cost allocation tags to see what resources are contributing to your usage and costs, but deleting or deactivating the resources doesn't always reduce your costs. For more information on reducing unexpected costs, see [Understanding unexpected charges](checklistforunwantedcharges.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

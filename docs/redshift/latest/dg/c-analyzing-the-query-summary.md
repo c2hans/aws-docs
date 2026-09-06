@@ -11,13 +11,9 @@ To get execution steps and statistics in more detail than in the query plan that
 
 SVL\_QUERY\_SUMMARY provides query statistics by stream. You can use the information it provides to identify issues with expensive steps, long-running steps, and steps that write to disk.
 
-The SVL\_QUERY\_REPORT system view enables you to see information similar to that for SVL\_QUERY\_SUMMARY, only by compute node slice rather than by stream. You can use the slice-level information for detecting uneven data distribution across the cluster (also known as data distribution skew), which forces some nodes to do more work than others and impairs query performance.
+With the SVL\_QUERY\_REPORT system view, you can see information similar to that for SVL\_QUERY\_SUMMARY, only by compute node slice rather than by stream. You can use the slice-level information for detecting uneven data distribution across the cluster (also known as data distribution skew), which forces some nodes to do more work than others and impairs query performance.
 
 **Topics**
 + [Using the SVL\_QUERY\_SUMMARY view](using-SVL-Query-Summary.md)
 + [Using the SVL\_QUERY\_REPORT view](using-SVL-Query-Report.md)
 + [Mapping the query plan to the query summary](query-plan-summary-map.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

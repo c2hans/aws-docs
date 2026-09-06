@@ -20,7 +20,3 @@ You can download a usage report as an XML or a comma-separated values (CSV) file
 1. Under **Filters**, **Service**, choose **Elemental MediaConvert**.
 
 1. Under **Cost and usage breakdown**, choose **Download as CSV**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

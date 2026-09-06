@@ -279,7 +279,3 @@ After reviewing your penetration test findings:
 For more information about performing penetration tests, see [Create a penetration test](perform-penetration-test.md).
 
 For more information about understanding the Security Agent lifecycle, see [Understand the resource hierarchy and lifecycle](understand-lifecycle.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

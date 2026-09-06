@@ -26,7 +26,3 @@ For an example application that uses the AWS Data Pipeline Java SDK, see [Data P
 The following is the object hierarchy for AWS Data Pipeline.
 
 ![AWS Data Pipeline object hierarchy](http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/images/object_hierarchy.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

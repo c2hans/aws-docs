@@ -11,7 +11,3 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/backup-restore-
 + `TotalBackupStorageBilled` represents the sum, in bytes, of `BackupRetentionPeriodStorageUsed` and `SnapshotStorageUsed`, minus an amount of free backup storage, which equals the size of the cluster volume for one day. The free backup storage is equal to the latest volume size. For example if your cluster's `VolumeBytesUsed` size is 100 GiB, your retention period is two days, and you have one manual snapshot outside the retention period, the `TotalBackupStorageBilled` is 214,748,364,800 bytes (200 GiB \+ 100 GiB - 100 GiB).
 
 You can monitor a Neptune cluster and build reports using CloudWatch metrics through the [CloudWatch console](https://console.aws.amazon.com/cloudwatch/ ). For more information about how to use CloudWatch metrics, see [Monitoring Neptune](monitoring.md) and the table of metrics in [Neptune CloudWatch metrics](cw-metrics.md#cw-metrics-available).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

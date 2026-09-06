@@ -69,7 +69,3 @@ SageMaker HyperPod automatically exposes MIG-specific metrics, including:
 <a name="hyperpod-observability-addon-cluster-logs-dashboard"></a>
 
 The Cluster Logs dashboard provides a centralized view of CloudWatch Logs for your SageMaker HyperPod cluster. The dashboard queries the `/aws/sagemaker/Clusters/{cluster-name}/{cluster-id}` log group and displays log events with filtering capabilities by instance ID, log stream name, log level (ERROR, WARN, INFO, DEBUG), and free-text search. The dashboard includes an events timeline showing log event distribution over time, a total events counter, a searched events timeline for filtered results, and a detailed logs panel with full log messages, timestamps, and log stream metadata. This dashboard uses CloudWatch as its data source and is useful for debugging cluster issues, monitoring instance health events, and investigating training job failures.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

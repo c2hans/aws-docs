@@ -18,7 +18,3 @@ The default naming for log groups and the option used by the **Auto-configure Cl
 This information is also available in the task definition. However, tasks are regularly updated with new revisions, which means that the task definition might have used a different image\_name and image\_tag than those that the task definition is currently using. For more information and naming suggestions, see the Planning your CloudWatch deployment section of this guide.
 
 If you use a continuous integration and continuous delivery (CI/CD) pipeline or automated process, you can create a new task definition revision for your application with each new Docker image build. For example, you can include the Docker image name, image tag, GitHub revision, or other important information in your task definition revision and logging configuration as a part of your CI/CD process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

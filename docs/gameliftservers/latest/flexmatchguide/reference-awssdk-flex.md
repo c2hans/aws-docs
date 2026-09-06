@@ -21,7 +21,7 @@ Call these operations to create a FlexMatch matchmaker, configure the matchmakin
 
 **Matchmaking configuration**
 + [CreateMatchmakingConfiguration](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateMatchmakingConfiguration.html) – Create a matchmaking configuration with instructions for evaluating groups of players and building player teams. When using Amazon GameLift Servers for hosting, also specify how to create a new game session for the match.
-+ [DescribeMatchmakingConfigurations](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeMatchmakingConfigurations.html) – Retrieve matchmaking configurations defined an Amazon GameLift Servers region.
++ [DescribeMatchmakingConfigurations](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeMatchmakingConfigurations.html) – Retrieve matchmaking configurations defined in an Amazon GameLift Servers region.
 + [UpdateMatchmakingConfiguration](https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateMatchmakingConfiguration.html) – Change settings for matchmaking configuration. queue.
 + [DeleteMatchmakingConfiguration](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DeleteMatchmakingConfiguration.html) – Remove a matchmaking configuration from the region.
 
@@ -53,7 +53,3 @@ The AWS SDK with support for Amazon GameLift Servers is available in the followi
 + Ruby ([SDK docs](https://aws.amazon.com/sdk-for-ruby/)) ([Amazon GameLift Servers](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/GameLift.html))
 + PHP ([SDK docs](https://aws.amazon.com/sdk-for-php/)) ([Amazon GameLift Servers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GameLift.GameLiftClient.html))
 + JavaScript/Node.js ([SDK docs](https://aws.amazon.com/sdk-for-node-js/)) ([Amazon GameLift Servers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-gamelift/index.html))
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

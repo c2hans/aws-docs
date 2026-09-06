@@ -29,7 +29,3 @@ AWS Wickr offers two data retention deployment options. The following table comp
 + [Bot-based data retention](bot-data-retention.md)
 + [Serverless data retention for AWS Wickr](serverless-method.md)
 + [Data retention data format](dataretention-data-formats.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

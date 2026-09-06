@@ -15,7 +15,3 @@ The following table describes the documentation for this release of AWS Elementa
 | [Infrastructure security](infrastructure-security.md) | The information in this section has been revised. Specifically, we now require TLS 1.2 and we recommend TLS 1.3. | June 24, 2023 |
 | [Data protection](data-retention.md) | The information in this section has been revised. Specifically, we now require TLS 1.2 and we recommend TLS 1.3. | June 24, 2023 |
 | [AWS Identity and Access Management](security-iam.md) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html). | February 14, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Inference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-inference` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

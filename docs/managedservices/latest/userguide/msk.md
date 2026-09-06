@@ -34,7 +34,3 @@ For Amazon MSK to deliver broker logs to the destinations that you configure, en
 Before creating your MSK cluster, you must have a VPC and subnets within that VPC. By default, AMS has this covered as part of default [AMS VPC creation](https://docs.aws.amazon.com/msk/latest/developerguide/msk-create-cluster.html).
 
 To learn about the limitation of Amazon MSK, refer to [Amazon MSK Limits](https://docs.aws.amazon.com/msk/latest/developerguide/limits.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

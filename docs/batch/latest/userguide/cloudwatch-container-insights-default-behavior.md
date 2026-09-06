@@ -12,7 +12,3 @@ Not specifying a value (omitting the field) is different from explicitly specify
 For example, if you have Container Insights enabled at the Amazon ECS account level, omitting the field results in Container Insights being enabled on the compute environment. To override this, you must explicitly set the value to `DISABLED`.
 
 For existing compute environments created before this feature was available, the `ecsSettings` field is absent from the `DescribeComputeEnvironments` response. The field only appears after you explicitly set a value using `UpdateComputeEnvironment`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

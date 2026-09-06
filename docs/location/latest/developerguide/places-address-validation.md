@@ -18,7 +18,3 @@ Key capabilities include:
 Address validation is available as a bulk processing operation through Amazon Location Service Jobs. You upload your address data to Amazon Simple Storage Service, submit a validation job, and retrieve standardized results when processing is complete.
 
 For complete details about address validation features, input and output schemas, and use cases, see [Address validation](address-validation-concepts.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

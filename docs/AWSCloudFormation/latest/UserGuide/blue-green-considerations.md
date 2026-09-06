@@ -20,7 +20,3 @@ When managing your blue/green deployment using CloudFormation, there are certain
   + Importing resources. For more information about importing resources, see [Import AWS resources into a CloudFormation stack](import-resources.md).
   + Using the `AWS::CodeDeploy::BlueGreen` hook in a template that includes nested stack resources. For more information about nested stacks, see [Split a template into reusable pieces using nested stacks](using-cfn-nested-stacks.md).
   + Using the `AWS::CodeDeploy::BlueGreen` hook in a nested stack.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

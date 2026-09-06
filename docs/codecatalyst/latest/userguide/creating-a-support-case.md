@@ -72,7 +72,3 @@ You will only be shown projects you have permissions to. If you need access to a
 1. Review your case details, and then choose **Submit**. Your case ID number and summary appear.
 
    The support case is created at the space level and is viewable by all members with access to the space and project (if selected) that are defined in your support case. There is no way to omit a support case from individual users at this time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

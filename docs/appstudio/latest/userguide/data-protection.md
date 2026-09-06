@@ -51,7 +51,3 @@ When you create an instance in App Studio, you choose the AWS Region where the d
 However, note the following information:
 + Because App Studio uses Amazon CloudFront to serve your application and uses Lambda@Edge to manage authentication to your application, a limited set of authentication data, authorization data, application metadata would be accessed from CloudFront edge locations, which could be in a different Region.
 + AWS App Studio transfers data across AWS Regions to enable certain generative AI features in the service. For more information about the features enabled by cross-Region data transfers, the type of data that moves across Regions, and how to opt out, see [Cross-Region data transfer in AWS App Studio](cross-region-data-transfer.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

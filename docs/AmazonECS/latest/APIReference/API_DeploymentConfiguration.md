@@ -32,6 +32,11 @@ The **deployment circuit breaker** determines whether a service deployment will 
 Type: [DeploymentCircuitBreaker](API_DeploymentCircuitBreaker.md) object
 Required: No
 
+ ** earlySuccessCriteria **   <a name="ECS-Type-DeploymentConfiguration-earlySuccessCriteria"></a>
+The early success criteria configuration for a rolling deployment. With early success criteria, you can configure an Amazon ECS deployment to complete faster. Amazon ECS declares a deployment successful once a target percentage of tasks are healthy, instead of waiting for the service to fully stabilize.
+Type: [DeploymentEarlySuccessCriteria](API_DeploymentEarlySuccessCriteria.md) object
+Required: No
+
  ** lifecycleHooks **   <a name="ECS-Type-DeploymentConfiguration-lifecycleHooks"></a>
 An array of deployment lifecycle hook objects to run custom logic or pause the deployment at specific stages of the deployment lifecycle.
 Type: Array of [DeploymentLifecycleHook](API_DeploymentLifecycleHook.md) objects
@@ -86,7 +91,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/DeploymentConfiguration)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/DeploymentConfiguration)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/DeploymentConfiguration)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic Container Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

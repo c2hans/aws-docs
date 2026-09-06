@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-buildi
  Refer to [Derive Insights from AWS Modern Data](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/derive-insights-from-aws-modern-data.html) for more details, and the [Build a Lake House Architecture on AWS](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/) blog entry for a deep dive.
 
 ![A diagram depicting AWS lake house architecture.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/lake-house-architecture.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

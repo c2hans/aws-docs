@@ -74,7 +74,3 @@ The diagram includes the following components and processes:
 1. The product details micro-frontend is a low-code micro-frontend that uses [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html). The Express Workflow can be invoked synchronously, and it contains the logic for rendering the HTML fragment and a caching layer.
 
 For more information about server-side composition, see the blog post [Server-side rendering micro-frontends – the architecture](https://aws.amazon.com/blogs/compute/server-side-rendering-micro-frontends-the-architecture/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

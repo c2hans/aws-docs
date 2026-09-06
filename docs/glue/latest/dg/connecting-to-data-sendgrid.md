@@ -17,7 +17,3 @@ SendGrid is a customer communication platform for transactional and marketing em
 + [Reading from SendGrid entities](sendgrid-reading-from-entities.md)
 + [SendGrid connection options](sendgrid-connection-options.md)
 + [SendGrid limitations](sendgrid-limitations.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

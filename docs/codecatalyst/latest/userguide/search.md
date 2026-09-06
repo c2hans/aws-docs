@@ -173,7 +173,3 @@ CodeCatalyst searches the following fields when you enter search queries. Aliase
 | email | N/A | Email address of the user. |
 | lastUpdatedTime | N/A | Time when the user metadata was last updated (in coordinated universal time (UTC) timestamp). |
 | userName | username | User name chosen by the user when they signed up for CodeCatalyst. Unlike display names, user names can't be changed. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

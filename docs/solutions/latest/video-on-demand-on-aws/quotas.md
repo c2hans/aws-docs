@@ -28,7 +28,3 @@ All MediaConvert jobs run in a queue. If you don’t specify a queue when you cr
 <a name="mediapackage-quotas"></a>
 
 This solution includes the option to use MediaPackage as part of the workflow. Customers who ingest large quantities of files may exceed MediaPackage limits for video-on-demand content. For more information and instructions on how to request a limit increase, refer to [VOD Content Limits](https://docs.aws.amazon.com/mediapackage/latest/ug/limits-vod.html) in the *AWS Elemental MediaPackage User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Video on Demand on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

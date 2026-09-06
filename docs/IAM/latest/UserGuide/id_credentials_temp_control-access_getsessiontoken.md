@@ -51,7 +51,3 @@ The temporary credentials that you get when you call `GetSessionToken` have the 
 Compare this API operation and its limitations and capability with the other API operations that create temporary security credentials at [Compare AWS STS credentials](id_credentials_sts-comparison.md)
 
 For more information about MFA-protected API access using `GetSessionToken`, see [Secure API access with MFA](id_credentials_mfa_configure-api-require.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

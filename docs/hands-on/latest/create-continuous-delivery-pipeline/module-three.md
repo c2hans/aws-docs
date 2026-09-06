@@ -121,7 +121,3 @@ Here's what our architecture looks like now.
 We have created a build project on AWS CodeBuild to run the build process of the Hello World\! web app from our GitHub repository. We will be using this build project as the build step in our continuous delivery pipeline, which we will create in the next module.
 
 ![Diagram showing a DevOps pipeline architecture where users commit code to a Git repository, triggering AWS CodeBuild within AWS Cloud, and deploying the application to AWS Elastic Beanstalk.](http://docs.aws.amazon.com/hands-on/latest/create-continuous-delivery-pipeline/images/devops-codebuild-elastic-beanstalk-diagram.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

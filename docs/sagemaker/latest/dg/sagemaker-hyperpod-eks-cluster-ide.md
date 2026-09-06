@@ -33,7 +33,3 @@ AI developers can use HyperPod CLI to create, update, and delete dev spaces. The
 The SageMaker Spaces Add-on/Operator does not incur any additional charge to the customer. However, to support the SSH-over-SSM tunneling required for the *Remote IDE Connection* feature, SageMaker Spaces uses an AWS-managed instance. This instance is registered as an Advanced On-Premises Instance under SSM, and therefore is billed per compute hour.
 
 Please refer to the “On-Premises Instance Management” rate on the AWS Systems Manager pricing page: AWS Systems Manager Pricing: [https://aws.amazon.com/systems-manager/pricing/](https://aws.amazon.com/systems-manager/pricing.com)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

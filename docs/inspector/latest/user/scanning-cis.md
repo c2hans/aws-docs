@@ -136,7 +136,3 @@ We recommend choosing a day and time that's least likely to impact your system w
 |  `cis-datasets-prod-yul-5e0c95e`  |  Canada (Central)  |
 |  `cis-datasets-prod-zhy-5a8eacb`  |  China (Ningxia)  |
 |  `cis-datasets-prod-zrh-67e0e3d`  |  Europe (Zurich)  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

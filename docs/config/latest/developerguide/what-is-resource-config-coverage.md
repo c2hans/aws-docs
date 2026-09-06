@@ -2654,7 +2654,3 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/what-is-res
 | AWS::WAFv2::RuleGroup |  ![](http://docs.aws.amazon.com/config/latest/developerguide/images/success_icon.png) Yes  |  ![](http://docs.aws.amazon.com/config/latest/developerguide/images/success_icon.png) Yes  |
 | AWS::WAFv2::WebACL |  ![](http://docs.aws.amazon.com/config/latest/developerguide/images/success_icon.png) Yes  |  ![](http://docs.aws.amazon.com/config/latest/developerguide/images/success_icon.png) Yes  |
 | AWS::WorkSpaces::Workspace |  ![](http://docs.aws.amazon.com/config/latest/developerguide/images/success_icon.png) Yes  |  ![](http://docs.aws.amazon.com/config/latest/developerguide/images/negative_icon.png) No  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

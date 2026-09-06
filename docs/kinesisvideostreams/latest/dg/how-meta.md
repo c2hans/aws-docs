@@ -75,7 +75,3 @@ Calling `putKinesisVideoFragmentMetadata` or `putFragmentMetadata` with `persist
 + Calling the API puts the metadata item in the queue. The metadata is added as an MKV tag to every fragment while the item is in the queue.
 + Calling the API with the same *name* and a different *value* as a previously added metadata item overwrites the item.
 + Calling the API with an empty *value* removes (cancels) the metadata item from the metadata queue.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

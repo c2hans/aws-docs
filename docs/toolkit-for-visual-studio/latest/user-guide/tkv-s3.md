@@ -153,7 +153,3 @@ You can create a pre-signed URL for a bucket or files in a bucket. Other people 
 
 1. To copy the URL to the clipboard, choose **Copy**.
 ![Dialog box for creating a pre-signed URL with options for expiration, S3 bucket, object key, and action.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-s3-presigned-url.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

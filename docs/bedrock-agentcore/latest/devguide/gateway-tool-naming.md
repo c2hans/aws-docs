@@ -16,7 +16,3 @@ For example, if your target’s name is `LambdaUsingSDK` and you have a tool nam
 You should ensure that your application code accounts for the discrepancy between the tool name visible through the MCP and the tool name itself.
 
 For an example of a Lambda handler function that strips the target name prefix from the tool name before passing it to a handler function, see [Lambda function input format](gateway-add-target-lambda.md#gateway-building-lambda-input).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

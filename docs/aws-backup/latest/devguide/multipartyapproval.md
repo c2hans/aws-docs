@@ -14,7 +14,7 @@ Multi-party approval is designed to help protect critical resources and to minim
 
 There is no additional cost for integrating and using Multi-party approval teams with AWS Backup logically air-gapped vaults (storage and cross-region transfers charges apply, as shown on the [pricing](https://aws.amazon.com/backup/pricing) page).
 
-An an AWS Backup customer, you can use Multi-party approval to grant approval capabilities of some operations to a group of trusted individuals who can collaboratively approve access to a logically air-gapped vault from a separately-created recovery account in the case of suspected malicious activity that may compromise use of the primary account.
+As an AWS Backup customer, you can use Multi-party approval to grant approval capabilities of some operations to a group of trusted individuals who can collaboratively approve access to a logically air-gapped vault from a separately-created recovery account in the case of suspected malicious activity that may compromise use of the primary account.
 
 ## Prerequisites and best practices for using Multi-party approval with a logically air-gapped vault
 <a name="multipartyapproval-prerequisites"></a>
@@ -76,7 +76,7 @@ Other AWS Regions that reference Multi-party approval team resources will depend
 ## Multi-party approval terms, concepts, and user personas
 <a name="multipartyapproval-terms"></a>
 
-Multi-party approval in your logically air-gapped vault is an integration of AWS Organizations, AWS Account Management, and AWS Backup, along with AWS Identity and Access Management ( IAM) and AWS RAM (RAM) features. Through the CLI, you can interact with each service to send the appropriate commands. You can also use the console, but you will need to navigate to the appropriate service’s console to complete specific tasks.
+Multi-party approval in your logically air-gapped vault is an integration of AWS Organizations, AWS Account Management, and AWS Backup, along with AWS Identity and Access Management (IAM) and AWS RAM (RAM) features. Through the CLI, you can interact with each service to send the appropriate commands. You can also use the console, but you will need to navigate to the appropriate service’s console to complete specific tasks.
 
 How you interact with Multi-party approval depends on your roles and responsibilities at your organizations, as well as the permissions you have in your AWS Backup accounts.
 
@@ -99,7 +99,3 @@ To ensure extra security, customers use this recovery account to carry out prote
 A team consists of **approvers** (effectively, the *parties* portion of Multi-party approval) who receive email notifications of protected operation requests. These emails confirm that an approval session has begun for the request. Approval is granted once the required minimum threshold of approval is reached. This threshold can be set as the **multi-party approval team** (“Team”) is created.
 
 Multi-party approval teams are managed through the Organizations **multi-party approval portal** (“portal”), an AWS managed application that provides identities a centralized location where approval team members can receive and respond to approval team invitations and operation requests.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

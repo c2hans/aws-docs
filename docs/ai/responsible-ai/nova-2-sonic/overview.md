@@ -235,7 +235,3 @@ The performance of any application using Amazon Nova 2 Sonic depends on the desi
 + **Veracity & Robustness:** Achieving correct system outputs, even with unexpected or adversarial inputs
 + **Transparency:** Enabling stakeholders to make informed choices about their engagement with an AI system
 + **Governance:** Embedding best practices within the AI supply chain, including providers and deployers
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AI Service Cards. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ai` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

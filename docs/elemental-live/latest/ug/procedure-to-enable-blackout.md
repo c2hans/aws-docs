@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/procedure-to-en
    + **Enable Network End Blackout**: Selected.
    + **Network ID**: The** Entertainment Identifier Registry** (**EIDR**) **ID **of the network in the format 10.nnnn/xxxx-xxxx-xxxx-xxxx-xxxx-c (case- insensitive). Only network end events with this ID trigger blackout.
    + **Network End Blackout Image**: Specify a `.bmp` or `.png` file to use for the blanking. If you leave this field blank, a plain black image is inserted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

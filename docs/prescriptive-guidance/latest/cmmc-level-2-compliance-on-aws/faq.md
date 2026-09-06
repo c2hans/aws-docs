@@ -396,7 +396,3 @@ AWS provides services, resources, and programs designed to support your CMMC com
 + AWS CRM: Maps all 110 CMMC Level 2 requirements to AWS services with detailed implementation guidance.
 
 AWS helps support your compliance requirements, but achieving CMMC certification is the customer's responsibility under the Shared Responsibility Model.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

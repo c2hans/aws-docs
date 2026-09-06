@@ -13,7 +13,3 @@ View details about updates to AWS managed policies for Amazon EMR on EKS since M
 | AmazonEMRContainersServiceRolePolicy ‐ Added permissions to describe and list Amazon EKS nodegroups, describe load balancer target groups, and describe load balancer target health. | The following permissions are added to the policy: `eks:ListNodeGroups`, `eks:DescribeNodeGroup`, `elasticloadbalancing:DescribeTargetGroups`, `elasticloadbalancing:DescribeTargetHealth`.  | March 13, 2023 |
 | AmazonEMRContainersServiceRolePolicy ‐ Added permissions to import and delete certificates in AWS Certificate Manager. | The following permissions are added to the policy: `acm:ImportCertificate`, `acm:AddTagsToCertificate`, `acm:DeleteCertificate`.  | Dec 3, 2021 |
 | Amazon EMR on EKS started tracking changes | Amazon EMR on EKS started tracking changes for its AWS managed policies. | March 1, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

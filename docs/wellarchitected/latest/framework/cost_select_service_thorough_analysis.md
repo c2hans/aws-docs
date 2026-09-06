@@ -48,7 +48,3 @@ When provisioning workloads on managed services, you must understand the require
 + [ Consolidate data from identical SQL Server databases into a single Amazon RDS for SQL Server database using AWS DMS](https://aws.amazon.com/blogs/database/consolidate-data-from-identical-sql-server-databases-into-a-single-amazon-rds-for-sql-server-database-using-aws-dms/)
 + [ Deliver data at scale to Amazon Managed Streaming for Apache Kafka (Amazon MSK) ](https://aws.amazon.com/getting-started/hands-on/deliver-data-at-scale-to-amazon-msk-with-iot-core/?ref=gsrchandson)
 + [ Migrate an ASP.NET web application to AWS Elastic Beanstalk](https://aws.amazon.com/getting-started/hands-on/migrate-aspnet-web-application-elastic-beanstalk/?ref=gsrchandson&id=itprohandson)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

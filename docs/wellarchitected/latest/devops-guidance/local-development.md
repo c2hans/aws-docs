@@ -11,7 +11,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/l
 + [Indicators for local development](indicators-for-local-development.md)
 + [Anti-patterns for local development](anti-patterns-for-local-development.md)
 + [Metrics for local development](metrics-for-local-development.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

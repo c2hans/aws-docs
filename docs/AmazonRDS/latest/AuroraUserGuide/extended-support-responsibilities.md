@@ -26,7 +26,3 @@ You're responsible for applying the patches, bug fixes, and upgrades given for A
 You're also responsible for upgrading your engine to a newer engine version *before* the RDS end of Extended Support date. The RDS end of Extended Support date is typically 3 years after the community end of life. . For the RDS end of Extended Support date for your database major engine version, see [Amazon Aurora major versions](Aurora.VersionPolicy.Versioning.md#Aurora.VersionPolicy.MajorVersions).
 
 If you don't upgrade your engine, then after the RDS end of Extended Support date, Amazon Aurora will attempt to upgrade your engine to a newer engine version that's supported under Aurora standard support. If the upgrade fails, then Amazon Aurora reserves the right to delete the  Aurora DB cluster or global cluster that's running the engine past the Aurora end of standard support date. However, before doing so, Amazon Aurora will preserve your data from that engine.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

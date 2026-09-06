@@ -29,7 +29,3 @@ The table uses the following terms:
 1 Account instances support fewer features than organization instances. For example, account instances don't support permission sets, which means that users cannot use their Pro tier subscriptions [in the AWS Management Console, and on AWS apps and websites](q-on-aws.md). For a list of the limitations of account instances, see [Account instance considerations](https://docs.aws.amazon.com/singlesignon/latest/userguide/account-instances-identity-center.html#about-account-instance) in the *AWS IAM Identity Center User Guide*.
 
 2 Organization instances offer a broader range of features compared to account instances, encompassing all IAM Identity Center capabilities. For a list of features supported by organization instances, see [When to use an organization instance](https://docs.aws.amazon.com/singlesignon/latest/userguide/organization-instances-identity-center.html#when-to-use-organization-instance) in the *AWS IAM Identity Center User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

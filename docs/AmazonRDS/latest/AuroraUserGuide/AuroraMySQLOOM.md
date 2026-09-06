@@ -157,7 +157,3 @@ You can monitor `os.memory.outOfMemoryKillCount` to detect when the OS killed th
 <a name="AuroraMySQLOOM.monitoring.perfschema"></a>
 
 If `performance_schema` is enabled, you can use memory summary tables to identify which components and connections are consuming the most memory. For more information, see [Troubleshooting memory usage issues for Aurora MySQL databases](ams-workload-memory.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

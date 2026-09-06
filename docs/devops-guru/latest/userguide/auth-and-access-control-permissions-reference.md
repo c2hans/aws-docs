@@ -41,7 +41,3 @@ arn:aws:devops-guru:us-east-2:123456789012:insight:12345*
 | DescribeResourceCollectionHealthOverview | `devops-guru:DescribeResourceCollectionHealthOverview`<br />Required to return the number of open predictive insights, open reactive insights, and mean time to recover (MTTR) for all insights for each CloudFormation stack specified in DevOps Guru. | `*` |
 | DescribeIntegratedService | `devops-guru:DescribeIntegratedService`<br />Required to return the integration status of services that can be integrated with DevOps Guru. The one service that can be integrated with DevOps Guru is AWS Systems Manager, which can be used to create an OpsItem for each generated insight. | `*` |
 | UpdateIntegratedServiceConfig | `devops-guru:UpdateIntegratedServiceConfig`<br />Required to enable or disable integration with a service that can be integrated with DevOps Guru. The one service that can be integrated with DevOps Guru is Systems Manager, which can be used to create an OpsItem for each generated insight. | `*` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

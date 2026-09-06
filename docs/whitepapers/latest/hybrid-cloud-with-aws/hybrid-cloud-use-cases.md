@@ -73,7 +73,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-with-aws
  AWS has [built the most complete and proven approach](https://aws.amazon.com/hybrid/use-cases/#Use_case.3A_ISV_and_software_compatibility) for rapidly migrating tens to thousands of applications to the AWS Cloud to help you leverage your existing on-premises ISV software investments.
 
  Recently, AWS launched the AWS Outpost [Service Ready](https://aws.amazon.com/partners/service-ready/) program, which offers products that integrate with AWS Outposts deployments. You can discover [products on this page](https://aws.amazon.com/outposts/partners) that are tested on AWS Outposts, and follow AWS security and architecture best practices. AWS Competency Partners are ready to help AWS customers migrate and deploy their applications to AWS Outposts. [AWS Partners](https://aws.amazon.com/outposts/partners/) validated through the AWS Service Ready Program offer products tested to integrate with AWS Outposts deployments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

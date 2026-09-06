@@ -32,6 +32,8 @@ You can view the most recent 90-day history for deployments created on or after 
 
 You can stop a deployment that has not completed. For more information, see [Stopping Amazon ECS service deployments](stop-service-deployment.md).
 
+If a deployment uses early success criteria, `DescribeServiceDeployments` returns the configured early success criteria, and the running task counts that it reports are a snapshot from when the deployment completed rather than live counts. Deployments that complete early are included when you filter `ListServiceDeployments` by a status of `SUCCESSFUL`. For more information, see [Complete Amazon ECS rolling deployments early with early success criteria](early-success-criteria.md).
+
 ## Service deployment lifecycle
 <a name="service-deployments-lifecycle"></a>
 
@@ -85,7 +87,3 @@ The following information provides details about service deployment states:
 +  `ROLLBACK_IN_PROGRESS` - The service deployment state moves to `ROLLBACK_IN_PROGRESS` when the rollback option is in use for the failure detection mechanism (the circuit breaker or alarm-based) and the service fails.
 
    The state moves to `ROLLBACK_SUCCESSFUL`, or `ROLLBACK_FAILED`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

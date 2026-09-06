@@ -45,7 +45,7 @@ To get started with AWS, you need an AWS account. For information about creating
 
 Create additional users or extend access permissions to existing users as needed for your Amazon GameLift Servers resources. As a best practice ([ Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)), apply least-privilege permissions for all users. For guidance on permissions syntax, see [IAM permission examples for Amazon GameLift Servers](gamelift-iam-policy-examples.md).
 
-Use following instructions to set user permissions based on how you manage the users in your AWS account.
+Use the following instructions to set user permissions based on how you manage the users in your AWS account.
 
 To provide access, add permissions to your users, groups, or roles:
 + Users and groups in AWS IAM Identity Center:
@@ -88,7 +88,3 @@ For Amazon GameLift Servers, you manage this access by creating a player user in
 For permissions policy syntax, see [Player user permission examples](gamelift-iam-policy-examples.md#iam-policy-admin-game-dev-example).
 
 For more information on managing permissions for use by a workload, see [IAM Identities: Temporary credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html#id_temp-creds).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

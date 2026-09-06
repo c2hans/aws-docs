@@ -133,7 +133,3 @@ If you encounter `SignatureDoesNotMatch` errors when using Amazon S3 presigned U
 
 **Q: I'm getting `ExpiredToken` errors. What should I do?**
 When you receive `ExpiredToken` errors while using presigned URLs, it indicates that the AWS credentials used to generate the URL are no longer valid. To resolve this issue, refresh your AWS credentials before generating new presigned URLs. For long-running applications, we recommend implementing credential refresh logic to maintain continuous access. Where appropriate, you can use longer-lived credentials or implement token refresh mechanisms. If you're using AWS Security Token Service (AWS STS) AssumeRole, verify that your configured session duration meets your use case requirements. Remember that presigned URLs remain valid only for the duration of their underlying credentials, so implementing proper credential management is essential.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

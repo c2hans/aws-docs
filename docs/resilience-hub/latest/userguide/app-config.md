@@ -11,7 +11,3 @@ The **Application configuration parameters** section lists all the configuration
 + **Topic** – Indicates the area of your application that is configured. For example, failover configuration.
 + **Purpose** – Indicates the reason why AWS Resilience Hub requested the information.
 + **Parameter** – Indicates the details that are specific to the area of application, which AWS Resilience Hub will be using to provide recommendations for your application. Currently, this parameter uses a key-value of only one failover Region and one associated account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

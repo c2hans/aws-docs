@@ -522,7 +522,3 @@ Use the following steps to deploy an IAM Identity Center permission set to your 
 
 **Important**
 Landing Zone Accelerator on AWS does not support creation of users and groups in Identity Center. Users and groups are required to be created in Identity Center before the solution can use those principals for permission set assignments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

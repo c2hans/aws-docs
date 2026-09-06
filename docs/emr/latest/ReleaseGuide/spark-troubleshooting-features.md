@@ -41,7 +41,3 @@ The Spark Troubleshooting Agent is available in the following regions:
 + **Glue Studio Spark UI**: When analyzing AWS Glue workloads, the analyze tool will attempt to retrieve key Spark information by parsing user's Spark event logs from Amazon S3. Maximum allowed Spark event log size is documented [ here](https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui-jobs.html): 512 MB and 2 GB for rolling logs.
 + **Code Recommendations:** Only supported for Amazon EMR on EC2, EMR Serverless, EMR on EKS, and AWS Glue PySpark workloads
 + **Regional resources:** The Spark Troubleshooting Agent is regional and uses the underlying EMR resources in that region for the troubleshooting process. Cross-region troubleshooting is not supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

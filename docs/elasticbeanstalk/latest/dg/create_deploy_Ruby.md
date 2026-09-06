@@ -19,7 +19,3 @@ The topics in this chapter assume that you have some knowledge of Elastic Beanst
 + [Deploying a rails application to Elastic Beanstalk](ruby-rails-tutorial.md)
 + [Deploying a sinatra application to Elastic Beanstalk](ruby-sinatra-tutorial.md)
 + [Adding an Amazon RDS DB instance to your Ruby Elastic Beanstalk environment](create_deploy_Ruby.rds.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

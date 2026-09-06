@@ -55,8 +55,4 @@ Apps in Quick connects to several other capabilities within Amazon Quick:
 + **Integration removal** — You cannot currently remove a registered integration from an app through the settings UI. As a workaround, ask the agent to remove references to the integration in the app code.
 
 **Tip**
-**Limited integrations in public apps** — Public apps do not support action connectors, embedded visuals, embedded chat experiences, or Amazon Quick spaces. If you plan to publish your app publicly, design it to use only shared storage and AI inference.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+**Limited integrations in public apps** — Public apps do not support connectors, embedded visuals, embedded chat experiences, or Amazon Quick spaces. If you plan to publish your app publicly, design it to use only shared storage and AI inference.

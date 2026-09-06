@@ -954,7 +954,3 @@ The following tables summarize the key differences between domain types and auth
 | Data plane access denied for IAM user | Check that the target domain access policy allows the IAM user or role principal. |
 | Data plane access denied for IAM Identity Center user | Verify that the backend role mapping includes the IAM Identity Center group ID, and that the domain policy allows the IAM Identity Center application role. |
 | Account mismatch error | Ensure that iamRoleForDataSourceArn is in the same account as the domain in dataSourceArn. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

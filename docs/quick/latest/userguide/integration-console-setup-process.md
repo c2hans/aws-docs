@@ -5,14 +5,14 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/integration-conso
 # Set up integrations in the console
 <a name="integration-console-setup-process"></a>
 
-The console organizes integrations into separate categories based on their purpose. Use **Knowledge** to connect data sources for Q&A and insights. Use **Connectors** to set up action connectors that perform operations in external applications. The setup process adapts based on the integration you select, your subscription, and existing integrations.
+The console organizes integrations into separate categories based on their purpose. Use **Knowledge** to connect data sources for Q&A and insights. Use **Connectors** to set up connectors that perform operations in external applications. The setup process adapts based on the integration you select, your subscription, and existing integrations.
 
 ## Choose integration options
 <a name="main-integration-choices"></a>
 
 When you set up an integration, the console guides you based on several factors:
 + **Integration capabilities** – Each application supports different combinations of actions and knowledge base creation. For example, Google Drive supports both actions and knowledge base creation. Web Crawler supports knowledge base creation only.
-+ **Subscription** – Configuring integrations requires an Enterprise subscription. This includes creating action connectors, setting up knowledge bases, and managing integration settings. Users with a Professional subscription can use integrations that have been shared with them.
++ **Subscription** – Configuring integrations requires an Enterprise subscription. This includes creating connectors, setting up knowledge bases, and managing integration settings. Users with a Professional subscription can use integrations that have been shared with them.
 + **Existing integrations** – When you choose a connector that already exists, the console shows your existing connectors before offering to create new ones.
 
 ## View setup process examples
@@ -38,7 +38,7 @@ Google Drive supports knowledge base creation through user-managed or admin-mana
 ### Google Drive – Set up an action connector
 <a name="google-drive-action-setup-flow"></a>
 
-Google Drive also supports action connectors for performing file operations directly from .
+Google Drive also supports connectors for performing file operations directly from .
 
 1. In the console, choose **Connectors**.
 
@@ -85,7 +85,3 @@ After creating integrations, you can manage them through several console options
 + **Edit integration** – Modify integration settings, authentication details, and configuration options.
 + **Delete integration** – Remove integrations with confirmation dialogs to prevent accidental deletion.
 + **Knowledge base management** – Separate flows for creating, editing, and deleting knowledge bases associated with your integrations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

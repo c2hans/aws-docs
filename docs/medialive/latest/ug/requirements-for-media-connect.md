@@ -12,7 +12,3 @@ Users need permissions to perform actions in MediaConnect when they use the Medi
 | Permissions | Service name in IAM | Actions |
 | --- | --- | --- |
 | Use the workflow wizard to create a MediaConnect flow, if your organization supports sources from MediaConnect.Use the workflow wizard to delete a workflow that includes a source from MediaConnect. | MediaConnect | List\*`Describe*`<br />`Create*`<br />`Delete*` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

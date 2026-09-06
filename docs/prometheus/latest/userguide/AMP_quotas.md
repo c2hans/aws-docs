@@ -113,7 +113,3 @@ Amazon Managed Service for Prometheus also has the following additional requirem
 + Every sample and metadata must have a metric name.
 + Native histogram samples must have a schema value between -4 and 8. Samples with a schema outside this range are discarded.
 + Native histogram samples must not exceed 2048 bytes in size. Samples that exceed this limit are discarded.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Service for Prometheus. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prometheus` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

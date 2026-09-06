@@ -62,7 +62,3 @@ Our general guidance is
 + If the size of the deployment package is small, the code and package is not complex to build and uses common frameworks and languages, and you need rapid prototyping and iteration, then direct code deployment would be the option.
 
 There can also be a hybrid option where developers use the direct code deployment to quickly experiment and prototype agents and then switch to container based deployments (for the above reasons) to develop, test and deploy to production.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

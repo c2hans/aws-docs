@@ -361,7 +361,3 @@ console.log(await client.send(command));
 <a name="access-next-steps"></a>
 + To modify your roles, go to the [IAM console](https://console.aws.amazon.com/iam/).
 + To manage your identity pools, go to the [Amazon Cognito console](https://console.aws.amazon.com/cognito/home).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ The **Remaining CPU burst capacity** graph might display a **Launch mode** zone 
    + Change the view of the graph to show data for 1 hour, 6 hours, 1 day, 1 week, 2 weeks, and Current month.
    + Pause your cursor on a data point to view detailed information about that data point.
    + Add an alarm to be notified when CPU utilization and burst capacity crosses a threshold you specify. Alarms cannot be added in the CPU overview page. You must add them in the individual CPU utilization, CPU burst capacity percentage, and CPU burst capacity minutes metric graph pages. For more information, see [Alarms](amazon-lightsail-alarms.md) and [Create instance metric alarms](amazon-lightsail-adding-instance-health-metric-alarms.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

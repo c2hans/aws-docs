@@ -145,7 +145,3 @@ When you deploy the application, the active account will incur charges for the A
    Information about the deployment will appear in the Visual Studio status bar and the **Output** window. It may take several minutes. When the deployment is complete, a confirmation message will appear in the **Output** window.
 
 1. To delete the deployment, in AWS Explorer, expand the **Elastic Beanstalk** node, open the context (right-click) menu for the subnode for the deployment, and then choose **Delete**. The deletion process might take a few minutes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

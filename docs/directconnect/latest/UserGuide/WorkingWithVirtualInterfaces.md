@@ -96,7 +96,3 @@ If an EC2 instance doesn't support jumbo frames, it drops jumbo frames from Dire
 For hosted connections, Jumbo frames can be enabled only if originally enabled on the Direct Connect hosted parent connection. If Jumbo frames isn't enabled on that parent connection, then it can't be enabled on any connection.
 
 For the steps to set the MTU for a private virtual interface, see [Set the MTU of a private virtual interface](interface-set-mtu.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

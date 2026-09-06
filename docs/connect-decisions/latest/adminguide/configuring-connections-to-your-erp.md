@@ -23,9 +23,9 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/conf
 
      ```
      {
-       "Username": "<{{username}}>",
-       "Password": "<{{password}}>"
-     }
+           "Username": "<{{username}}>",
+           "Password": "<{{password}}>"
+         }
      ```
 
 1.  Encrypt your secret with an AWS KMS Key, take note of the Key's id, as you will need it in subsequent steps
@@ -43,22 +43,22 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/conf
 
    ```
    {
-       "Sid": "Allow Amazon Connect Decisions to access the AWS KMS Key",
-       "Effect": "Allow",
-       "Principal": {
-          "Service": "scn.amazonaws.com",
-           "AWS": "arn:aws:iam::{{YourAccountNumber}}:role/service-role/scn-instance-role-{{YourInstanceID}}"
-       },
-       "Action": [
-          "kms:DescribeKey",
-          "kms:CreateGrant",
-           "kms:Encrypt",
-           "kms:Decrypt",
-           "kms:GenerateDataKey",
-          "kms:GenerateDataKeyWithoutPlaintext"
-       ],
-       "Resource": "*"
-   }
+           "Sid": "Allow Amazon Connect Decisions to access the AWS KMS Key",
+           "Effect": "Allow",
+           "Principal": {
+              "Service": "scn.amazonaws.com",
+               "AWS": "arn:aws:iam::{{YourAccountNumber}}:role/service-role/scn-instance-role-{{YourInstanceID}}"
+           },
+           "Action": [
+              "kms:DescribeKey",
+              "kms:CreateGrant",
+               "kms:Encrypt",
+               "kms:Decrypt",
+               "kms:GenerateDataKey",
+              "kms:GenerateDataKeyWithoutPlaintext"
+           ],
+           "Resource": "*"
+       }
    ```
 
 1.  Update the inline policy for your instance role to grant permission on the key
@@ -66,25 +66,25 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/conf
 
    ```
    {
-       "Version": "2012-10-17"		 	 	 ,
-       "Statement": [
-           {
-               "Sid": "Statement1",
-               "Effect": "Allow",
-               "Action": "secretsmanager:*",
-               "Resource": "{{YourSecretArn}}"
-           },
-           {
-               "Sid": "AllowKmsForSecretsManager",
-               "Effect": "Allow",
-               "Action": [
-                   "kms:Decrypt",
-                   "kms:DescribeKey"
-               ],
-               "Resource": "arn:aws:kms:us-east-1:{{YourAccountNumber}}:key/{{YourKeyId}}"
-           }
-       ]
-   }
+           "Version": "2012-10-17",
+           "Statement": [
+               {
+                   "Sid": "Statement1",
+                   "Effect": "Allow",
+                   "Action": "secretsmanager:*",
+                   "Resource": "{{YourSecretArn}}"
+               },
+               {
+                   "Sid": "AllowKmsForSecretsManager",
+                   "Effect": "Allow",
+                   "Action": [
+                       "kms:Decrypt",
+                       "kms:DescribeKey"
+                   ],
+                   "Resource": "arn:aws:kms:us-east-1:{{YourAccountNumber}}:key/{{YourKeyId}}"
+               }
+           ]
+       }
    ```
 
 ## Update the Secrets Manager resource policy for your Secret
@@ -95,21 +95,21 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/conf
 
    ```
    {
-      "Version":"2012-10-17"		 	 	 ,
-      "Statement":[
-         {
-            "Effect":"Allow",
-            "Principal":{
-               "Service":"scn.amazonaws.com"
-            },
-            "Action":[
-               "secretsmanager:GetSecretValue",
-               "secretsmanager:DescribeSecret"
-            ],
-            "Resource":"{{YourSecretArn}}"
-         }
-      ]
-   }
+          "Version":"2012-10-17",
+          "Statement":[
+             {
+                "Effect":"Allow",
+                "Principal":{
+                   "Service":"scn.amazonaws.com"
+                },
+                "Action":[
+                   "secretsmanager:GetSecretValue",
+                   "secretsmanager:DescribeSecret"
+                ],
+                "Resource":"{{YourSecretArn}}"
+             }
+          ]
+       }
    ```
 
 ## Configure the Amazon Connect Decisions Connection
@@ -130,7 +130,3 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/conf
    +  `Secret ARN`: the Amazon Resource Name (ARN) of the secret in Secrets Manager where the credentials to be used by Amazon Connect Decisions are stored
 
 1.  Click on the `Create Connector` button
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

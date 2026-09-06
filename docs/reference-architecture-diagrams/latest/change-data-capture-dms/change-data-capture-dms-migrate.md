@@ -43,7 +43,3 @@ To be notified about updates to this reference architecture diagram, subscribe t
 
 **Note**
 To subscribe to RSS updates, you must have an RSS plugin enabled for the browser you are using.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Reference Architecture Diagrams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query reference-architecture-diagrams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

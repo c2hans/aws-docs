@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
    Confirm the action in the D**elete project profile** pop up window by typing the project profile name in the text field and choosing **Delete**.
 **Note**
 Deleting a project profile is final. Deletion removes the project profile and its blueprint deployment settings from Amazon SageMaker Unified Studio. It does not delete the blueprints used to create the blueprint deployment settings which make up this project profile.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

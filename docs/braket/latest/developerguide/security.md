@@ -52,7 +52,3 @@ We strongly recommend that you never put confidential or sensitive information, 
 After 90 days, Amazon Braket automatically removes all quantum task IDs and other metadata associated with your quantum tasks. As a result of this data retention policy, these tasks and results are no longer retrievable by search from the Amazon Braket console, although they remain stored in your S3 bucket.
 
 If you need access to historical quantum tasks and results that are stored in your S3 bucket for longer than 90 days, you must keep a separate record of your task ID and other metadata associated with that data. Be sure to save the information prior to 90 days. You can use that saved information to retrieve the historical data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

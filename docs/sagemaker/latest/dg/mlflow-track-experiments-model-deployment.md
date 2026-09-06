@@ -82,7 +82,3 @@ To maintain [lineage tracking](https://docs.aws.amazon.com/sagemaker/latest/dg/l
 Lineage tracking is optional. Deployment succeeds without the permissions related to lineage tracking. If you do not have the permissions configured, you will see a lineage tracking permissions error when calling `model.deploy()`. However, the endpoint deployment still succeeds and you can directly interact with your model endpoint. If the permissions above are configured, lineage tracking information is automatically created and stored.
 
 For more information and end-to-end examples, see [MLflow tutorials using example Jupyter notebooks](mlflow-tutorials.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -156,7 +156,3 @@ Statistical models produce continuous values, not integers. If your business dea
 Preprocessing rules that filter the training data (e.g., "only forecast products with at least 8 weeks of non-zero demand") can dramatically reduce the number of products in the forecast if your data is sparse at the product×site level:
 + **Check the granularity.** A product may have 52 weeks of demand at the product level but only 3 weeks at any individual product×site combination. A minimum history threshold applied at product×site level will exclude most combinations. Consider applying the threshold at product level instead, or lowering the threshold significantly.
 + **Test before deploying.** Before activating a preprocessing rule, count how many product×site combinations pass the filter vs. your current total. If more than 20% are excluded, the rule is likely too aggressive. Start with a lenient threshold and tighten gradually.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

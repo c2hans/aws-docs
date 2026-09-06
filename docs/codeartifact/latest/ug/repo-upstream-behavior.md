@@ -123,7 +123,3 @@ Example output:
 ![Upstream repository diagram showing three repositories chained together with an external connection to npmjs.com.](http://docs.aws.amazon.com/codeartifact/latest/ug/images/upstream-chaining-external.png)
 
  If a package manager connected to `repo-A` requests a package version, *lodash 4.17.20* for example, and the package version is not present in any of the three repositories, it will be fetched from **npmjs.com**. When *lodash 4.17.20* is fetched, it will be retained in `repo-A` as that is the most-downstream repository and `repo-C` as it has the external connection to **npmjs.com** attached. *lodash 4.17.20* will not be retained in `repo-B` as that is an intermediate repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

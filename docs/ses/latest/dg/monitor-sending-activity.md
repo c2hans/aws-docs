@@ -41,7 +41,3 @@ The metrics measured by email sending events may not align perfectly with your s
 + [Monitoring your sending statistics using the Amazon SES console](monitor-sending-activity-console.md)
 + [Monitoring your usage statistics using the Amazon SES API](monitor-sending-activity-api.md)
 + [Monitor email sending using Amazon SES event publishing](monitor-using-event-publishing.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

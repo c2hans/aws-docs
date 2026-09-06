@@ -60,7 +60,3 @@ For instructions on how to configure access for an IAM user, see [Inviting users
 When IAM users can self-provision access, they don't need to be invited to the Quick account. The first time they try to access the Quick console, they must enter an email address. When the user chooses **Continue**, Quick creates a user record for that IAM user.
 
 To grant permission to provision their own access, you create an identity-based policy and apply that policy to the IAM users or IAM user group. For more information, see [Configuring IAM policies](configuring-iam-policies.md) in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

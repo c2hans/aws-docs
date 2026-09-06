@@ -35,7 +35,3 @@ Amazon FinSpace Dataset browser supports two methods for identity management and
 + [Managing user access in Amazon FinSpace](managing-user-access.md)
 + [AWS managed policies for Amazon FinSpace](security-iam-awsmanpol.md)
 + [Using service-linked roles for FinSpace](using-service-linked-roles.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

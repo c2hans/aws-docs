@@ -16,7 +16,3 @@ ECO offers the following features:
 + **Logging and reporting** – ECO aggregates and stores logs that are generated because of operations in Amazon CloudWatch, AWS CloudTrail, and Amazon Virtual Private Cloud (Amazon VPC) Flow Logs. Logging helps the ECO team more quickly resolve incidents and audit systems. Your designated E-SDM provides you with a monthly service report that summarizes key performance metrics of EDI. The service report includes an executive summary and insights, operational metrics, EDI API service level agreement (SLA) adherence, and spending and savings metrics.
 + **Service request management** – Use the AWS Support Center Console to request information about your EDI instances. You can submit a service request for "How to" questions about EDI features or to request additional EDI support.
 + **Application management** – ECO performs EDI deployment on your behalf, updates and upgrades your EDI instances, and supports EDI instance deletion and offboarding.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Energy Data Insights on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query EDI` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

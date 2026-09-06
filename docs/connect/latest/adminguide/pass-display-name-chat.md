@@ -39,7 +39,3 @@ To pass a customer display name, implement your callback function in the snippet
 + The customer display name must follow the limitations set by the [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html#connect-Type-ParticipantDetails-DisplayName) API. That is, the name must be a string between 1 and 256 characters.
 + An empty string, null, or undefined is invalid input for the display name. To protect against accidentally passing of these inputs, the widget logs an error, `Invalid customerDisplayName provided`, in the browser console, and then starts the chat with the default display name, **Customer**.
 + Because the snippet is in the front end of your website, do not pass sensitive data as the display name. Be sure to follow the appropriate security practices to keep your data safe and protect against attacks and bad actors.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

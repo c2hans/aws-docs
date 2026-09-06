@@ -27,7 +27,3 @@ In open banking, banks use an API messaging framework to securely share their cu
 1.  A bank's IT environment, consisting of its AWS environment and data centers, is depicted in this section. Note the breadth of AWS services that are available for banking customers.
 
  For more information on open banking, see [Open Banking on AWS](https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/open-banking-on-aws.pdf).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

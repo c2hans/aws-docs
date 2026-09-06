@@ -11,7 +11,3 @@ For a workload that has balanced spend and performance, verify that everything y
 + [COST09-BP01 Perform an analysis on the workload demand](cost_manage_demand_resources_cost_analysis.md)
 + [COST09-BP02 Implement a buffer or throttle to manage demand](cost_manage_demand_resources_buffer_throttle.md)
 + [COST09-BP03 Supply resources dynamically](cost_manage_demand_resources_dynamic.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

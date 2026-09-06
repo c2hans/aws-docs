@@ -18,7 +18,3 @@ Verified Permissions authorization requests require AWS credentials. You can imp
 + Operate a web application that can store secrets in the server backend.
 + Acquire authenticated identity pool credentials.
 + Proxy user requests through an access-token-authorized API, and append AWS credentials to the request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

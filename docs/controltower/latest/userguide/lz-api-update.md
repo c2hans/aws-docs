@@ -60,7 +60,3 @@ When a new landing zone version is available, or to make other updates to your l
 
 **Optionally Re-register OU to update accounts**
 For registered AWS Control Tower OUs with fewer than 1000 accounts, you can use the AWS Control Tower console access the **OU page** in the dashboard and select **Re-register OU** to update the accounts in that OU.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

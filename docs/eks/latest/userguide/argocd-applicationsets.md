@@ -292,7 +292,3 @@ Argo CD’s ApplicationSets feature has security considerations you should be aw
 +  [Create Applications](argocd-create-application.md) - Understand Application configuration
 +  [ApplicationSet Documentation](https://argo-cd.readthedocs.io/en/stable/user-guide/application-set/) - Complete generator reference and patterns
 +  [Generator Reference](https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Generators/) - Detailed generator specifications
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

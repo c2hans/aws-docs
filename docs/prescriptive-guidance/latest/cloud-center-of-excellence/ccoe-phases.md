@@ -27,7 +27,3 @@ The following diagram shows CCoE phases that are mapped to different phases of t
 + **Consolidation phase** – Independent practices under the centralized CCoE have reached a volume of AWS projects that makes a positive impact on their profitability, and are self-sufficient in the delivery of such projects. The CCoE shifts to a supporting role, performing tasks that continue to benefit from economies of scale, scope, and knowledge. These include setting organization standards and best practices, and providing curated training material. To develop specialized expertise (for example, in cloud security and machine learning), consider allocating at least 20 percent of the time on learning and experimenting with new services and new features. The Consolidation CCoE phase relates to the Scale phase in the AWS CAF.
 
 You can analyze your current maturity level, and based on your goals, you can decide where you want to see your organization in short-term and long-term cycles.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

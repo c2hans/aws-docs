@@ -97,7 +97,3 @@ If enrollment fails after you submit your request, you have the following option
 <a name="enterprise-sign-up-change-cancel"></a>
 
 To change or cancel your AWS Enterprise Support plan, contact your designated TAM or [your AWS sales representative](https://aws.amazon.com/premiumsupport/aws-support-contact-us/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

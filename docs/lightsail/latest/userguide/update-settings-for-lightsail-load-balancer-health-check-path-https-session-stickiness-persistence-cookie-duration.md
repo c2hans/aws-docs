@@ -31,7 +31,3 @@ You can set up HTTPS to create a more secure experience for your website users. 
 Session persistence is useful if you're storing session information locally in the user's browser. For example, you might be running a Magento e-commerce application with a shopping cart on Lightsail. If you turn on session persistence, your users can add items to their shopping carts,end their sessions, and still find the items in their carts when they come back.
 
 You can also adjust the cookie duration for the persistent session. This is useful if you want to have a particularly long or short duration. For more information, see [Enable session persistence for a load balancer](enable-session-stickiness-persistence-or-change-cookie-duration.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

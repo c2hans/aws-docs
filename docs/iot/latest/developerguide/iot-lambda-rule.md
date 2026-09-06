@@ -452,7 +452,3 @@ After you send a few text messages with this rule, try experimenting with it to 
 + Change the fields selected in the rule query statement, update the Lambda function to use them in a new message, and observe the effect in the text message contents.
 + Change the test in the rule query statement to test for a minimum temperature instead of a maximum temperature. Update the Lambda function to format a new message and remember to change the name of `max_temperature`.
 + To learn more about how to find errors that might occur while you're developing and using AWS IoT rules, see [Monitoring AWS IoT](monitoring_overview.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

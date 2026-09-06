@@ -41,7 +41,3 @@ To create and view custom metrics you must use Amazon CloudWatch. With CloudWatc
 [Elastic Load Balancing](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/elb-metricscollected.html) and [Amazon EC2](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/ec2-metricscollected.html) metrics are enabled for all environments.
 
 With [enhanced health](health-enhanced.md), the EnvironmentHealth metric is enabled, and a graph is added to the monitoring console automatically. Enhanced health also adds the [Health page](health-enhanced-console.md#health-enhanced-console-healthpage) to the management console. For a list of available enhanced health metrics, see [Publishing Amazon CloudWatch custom metrics for an environment](health-enhanced-cloudwatch.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

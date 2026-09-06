@@ -20,7 +20,3 @@ If your existing policies scope Amazon DynamoDB access with `dynamodb:LeadingKey
 DynamoDB encrypts vector data at rest using the same encryption as the base table. The vector index inherits the table's encryption configuration, whether that is an AWS owned key, an AWS managed key, or a customer managed key in AWS KMS. You do not configure encryption separately for a vector index.
 
 For example IAM policies, including least-privilege policies for search-only access, see [IAM policy to grant access to search a vector index](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam-policy-example-search-vectors.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

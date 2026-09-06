@@ -23,7 +23,3 @@ The following are common drivers for modernization, depending on the size of the
 + **Opportunities for scale and savings** – Scalability, performance issues, and prohibitive tag-based licensing models can affect the total cost of ownership (TCO) and can prevent adequate data acquisition to build advanced use cases.
 + **Actionable insights** – IT and OT data aren't sufficiently integrated to provide plant supervisors with timely insights that help them minimize unplanned downtime, improve product quality, and increase asset performance and availability.
 + **Sustainability** – To meet sustainability and energy-saving goals, you need a better understanding of plant operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

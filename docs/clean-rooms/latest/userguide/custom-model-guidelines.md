@@ -82,7 +82,3 @@ This section details the guidelines that model providers should follow when crea
   ```
 
   After the SageMaker AI job is complete and you are satisfied with your model algorithm, you can register the Amazon ECR Registry with AWS Clean Rooms ML. Use the `CreateConfiguredModelAlgorithm` action to register the model algorithm and the `CreateConfiguredModelAlgorithmAssociation` to associate it to a collaboration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

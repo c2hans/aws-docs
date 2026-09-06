@@ -22,7 +22,3 @@ The API Gateway Regional endpoint doesn’t provide a CloudFront distribution, a
 |  API is accessed across Regions. Includes API Gateway-managed CloudFront distribution.  |  X  |   |
 |  API is accessed within same Region. Least request latency when API is accessed from the same Region as API is deployed.  |   |  X  |
 |  Ability to associate own CloudFront distribution.  |   |  X  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

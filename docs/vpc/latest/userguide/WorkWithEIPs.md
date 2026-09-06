@@ -267,7 +267,3 @@ You can perform the tasks described in this section using the command line or an
 **View your Elastic IP addresses**
 + [describe-addresses](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-addresses.html) (AWS CLI)
 + [Get-EC2Address](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Address.html) (AWS Tools for Windows PowerShell)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

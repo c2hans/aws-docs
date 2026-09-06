@@ -37,7 +37,3 @@ SYS\_VACUUM\_HISTORY is visible to all users. Superusers can see all rows; regul
 | reclaimed\_blocks  | bigint | The number of blocks the vacuum operation reclaimed.  |
 | sortedrows\_before\_vacuum  | integer | The number of sorted rows in the table before the vacuum operation started.  |
 | sortedrows\_after\_vacuum  | integer | The additional number of sorted rows in the table after the vacuum operation finished. This doesn't include the rows counted in sortedrows\_before\_vacuum.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

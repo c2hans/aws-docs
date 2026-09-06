@@ -107,7 +107,3 @@ The AWS SDK for Python is being developed incrementally. Planned additions inclu
 <a name="choosing-sdk-feedback"></a>
 
 We want your feedback to guide feature prioritization and service coverage. File issues in the [aws-sdk-python repository](https://github.com/aws/aws-sdk-python/issues) on GitHub, or reach out through AWS Support.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Python. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-python` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

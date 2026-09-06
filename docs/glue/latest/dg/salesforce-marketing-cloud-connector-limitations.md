@@ -16,7 +16,3 @@ The following are limitations or notes for the Salesforce Marketing Cloud connec
 + Two different DateTime formats: **2025-03-11T04:46:00** (without milliseconds) and **2025-03-11T04:46:00.000Z** are supported when performing write operations in AWS Glue (with milliseconds).
 + For the Event Notification Subscription entity, a subscription can only be created for a verified callback URL, and you can have up to 200 subscriptions per callback.
 + For the Event Notification Callback entity, a maximum of 50 records can be created per account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

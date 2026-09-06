@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
  On AWS Graviton-based Amazon EC2 instances, AWS highly recommends using optimization flags specifically targeting AWS Graviton processors as documented in the [Graviton Technical Guide](https://github.com/aws/aws-graviton-getting-started/blob/main/c-c%2B%2B.md) and using recent versions of the compilers. Optimized mathematical functions provided by ARM can be found in [libamath](https://developer.arm.com/documentation/102574/0100/Optimized-math-routines---libamath).
 
  Graviton processors are compliant with the IEEE 754 standard, so they treat floating point numbers the same way as x86 processors. It is important to note that different compilers may generate numerical conversions in varying ways. This highlights the importance of ensuring [floating point error mitigation is properly accounted for in code](https://dl.acm.org/doi/10.1145/103162.103163).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

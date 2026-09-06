@@ -129,7 +129,10 @@ Before you continue, confirm that you have created the Guard rule and the execut
          "FailureMode": {{"WARN"}},
          "Properties": {
            "ruleLocation": {{"s3://amzn-s3-demo-bucket/MyGuardRules.guard"}},
-           "logBucket": {{"amzn-s3-demo-logging-bucket"}}
+           "logBucket": {{"amzn-s3-demo-logging-bucket"}},
+           "options": {
+             "inputParams": {{"s3://amzn-s3-demo-bucket/MyInputParams.json"}}
+           }
          },
          "TargetFilters": {
            "Actions": [
@@ -147,6 +150,7 @@ Before you continue, confirm that you have created the Guard rule and the execut
    + `FailureMode`: Set to either `FAIL` or `WARN`.
    + `ruleLocation`: Replace with the S3 URI where your rule is stored. The object stored in S3 must have one of the following ﬁle extensions: `.guard`, `.zip`, and `.tar.gz`.
    + `logBucket`: (Optional) Specify the name of an S3 bucket for Guard JSON reports.
+   + `options.inputParams`: (Optional) Specify the S3 URI of a JSON or YAML file containing input parameters for your Guard rules. You can specify a single S3 URI or an array of up to 10 S3 URIs.
    + `TargetFilters`: Specify the types of actions that will invoke the Hook.
 
 1. Use the following [set-type-configuration](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-configuration.html) command, along with the JSON file you created, to apply the configuration. Replace the placeholders with your specific values.
@@ -162,7 +166,3 @@ Before you continue, confirm that you have created the Guard rule and the execut
 <a name="related-resources-guard-hooks"></a>
 
 We provide template examples that you can use to understand how to declare a Guard Hook in a CloudFormation stack template. For more information, see [AWS::CloudFormation::GuardHook](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-guardhook.html) in the *AWS CloudFormation User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -81,7 +81,3 @@ When using EC2 Instance Connect to connect to an instance, the username must mee
 + Subsequent characters: Can be letters (`A-Z`, `a-z`), digits (`0-9`), or the following characters: `@ . _ -`
 + Minimum length: 1 character
 + Maximum length: 31 characters
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

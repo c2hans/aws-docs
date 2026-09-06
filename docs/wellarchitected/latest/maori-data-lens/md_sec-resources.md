@@ -14,7 +14,3 @@ The following resources are specific to security and can help you apply Māori d
 +  [AWS Government Lens – Privacy by Design](https://docs.aws.amazon.com/wellarchitected/latest/government-lens/ensuring-privacy-by-design.html)
 +  [The Security Design of the AWS Nitro System: No AWS Operator Access](https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aws-nitro-system/no-aws-operator-access.html)
 +  [AWS Nitro System gets independent affirmation of its confidential compute capabilities](file:///Users/judihann/Downloads/•%09https:/aws.amazon.com/jp/blogs/compute/aws-nitro-system-gets-independent-affirmation-of-its-confidential-compute-capabilities)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

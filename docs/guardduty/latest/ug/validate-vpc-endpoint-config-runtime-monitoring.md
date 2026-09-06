@@ -28,7 +28,3 @@ Use the following steps to validate that VPC endpoint configuration for your res
    If you don't already have a security group that has an inbound port 443 enabled, [Create a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-security-groups.html#creating-security-group) in the *Amazon EC2 User Guide*.
 
    If there is an issue while restricting the inbound permissions to your VPC (or cluster), allow inbound traffic on port 443 from any IP address (0.0.0.0/0).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

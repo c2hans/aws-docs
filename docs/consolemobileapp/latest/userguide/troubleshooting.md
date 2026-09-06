@@ -63,7 +63,3 @@ A session in the Console Mobile Application lasts 12 hours. After your session e
 Yes. To leave feedback, open the app and choose the menu icon in the upper left, then choose **Feedback**. Add your comments, optionally include logs, and then choose **Submit**.
 
 You can also provide feedback by [contacting us](mailto:aws-appstore@amazon.com).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Console Mobile Application. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query consolemobileapp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

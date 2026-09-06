@@ -65,7 +65,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
  A well-executed data strategy is the catalyst that transforms generative AI from experimental technology into a core business capability. Organizations that invest in robust data foundations, embrace privacy-first approaches, and foster data-driven cultures will gain sustainable competitive advantages in the AI-powered future. By addressing these requirements through well-designed data architecture, organizations can build more powerful, reliable, and responsible generative AI systems.
 
  The following sections explore these considerations in depth and provide guidance aligned with the Well-Architected Framework's six pillars: operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

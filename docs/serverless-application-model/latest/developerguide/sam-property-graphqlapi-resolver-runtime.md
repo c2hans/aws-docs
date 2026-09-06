@@ -34,7 +34,3 @@ The version of the runtime to use. Currently, the only allowed version is `1.0.0
 *Type*: String
 *Required*: Yes
 *CloudFormation compatibility*: This property is passed directly to the `[RuntimeVersion](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-appsyncruntime.html#cfn-appsync-resolver-appsyncruntime-runtimeversion)` property of an `AWS::AppSync::Resolver AppSyncRuntime` object.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

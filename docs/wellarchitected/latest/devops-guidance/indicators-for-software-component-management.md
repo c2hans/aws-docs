@@ -18,7 +18,3 @@ Gain visibility into code and dependencies used across your organization. This c
 + [[DL.SCM.8] Use a versioning specification to manage software components](dl.scm.8-use-a-versioning-specification-to-manage-software-components.md)
 + [[DL.SCM.9] Implement plans for deprecating and revoking outdated software components](dl.scm.9-implement-plans-for-deprecating-and-revoking-outdated-software-components.md)
 + [[DL.SCM.10] Generate a comprehensive software inventory for each build](dl.scm.10-generate-a-comprehensive-software-inventory-for-each-build.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

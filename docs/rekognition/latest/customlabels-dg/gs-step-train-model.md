@@ -28,7 +28,3 @@ In this step you train your model. The training and test datasets are automatica
 
 1. After viewing the test results, choose the model name to return to the model page. The following screenshot of the performance dashboard where you can click to the return to the model page.
 ![Two example images from test results with predicted labels and confidence scores, and a breadcrumb link to return to the model page.](http://docs.aws.amazon.com/rekognition/latest/customlabels-dg/images/get-started-image-test-results.jpg)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

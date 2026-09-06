@@ -161,6 +161,7 @@ You can also store secrets containing your SFTP credentials in another AWS accou
 
      Since this host key is for a VPC\_LATTICE connector, remove the host name in the key
    + (Optional) For **Maximum concurrent connections**, choose the number of concurrent connections that your connector creates to the remote server (default is 5).
+   + (Optional) For **Ordered secret version stages**, enter an ordered list of Secrets Manager version stage labels. The connector attempts authentication using each stage in order during file transfers. If you don't specify version stages, the connector uses only `AWSCURRENT`. For example, specify `AWSCURRENT`, `AWSPREVIOUS` to enable automatic fallback during secret rotation.
 
 1. In the **Cryptographic algorithm options** section, choose a **Security policy** from the dropdown list.
 
@@ -350,7 +351,3 @@ Here are solutions for common issues when creating VPC\_LATTICE-enabled connecto
 + **Connection timeouts**: Verify security group rules allow traffic on port 22 and that your VPC routing is correct.
 + **DNS resolution issues**: For public endpoints, ensure your VPC has internet connectivity through a NAT Gateway or Internet Gateway.
 + **Cross-account access denied**: Verify the resource share is accepted and the Resource Configuration ARN is correct. If the proper permission policy is attached to the resource configuration when the origin account creates the resource share, these permissions are required:`vpc-lattice:AssociateViaAWSService`, `vpc-lattice:AssociateViaAWSService-EventsAndStates`, `vpc-lattice:CreateServiceNetworkResourceAssociation`, `vpc-lattice:GetResourceConfiguration`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

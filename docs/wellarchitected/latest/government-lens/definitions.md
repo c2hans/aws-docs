@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/d
  **Public or government services**: The services provided by the government or public sector to the public. Programs intended to improve public services usually refer to raising the quality of services to the public, making them more accessible, end user friendly, inclusive, and effective at driving policy outcomes.
 
  **Transparency**: Promote corporate and operational accountability, including programs that encourage transparency and ethical conduct, while tackling corruption.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

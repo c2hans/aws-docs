@@ -26,7 +26,3 @@ You can use the MediaPackage console, the AWS CLI, or the MediaPackage API to vi
 All channels have two input URLs. For channels that existed before input redundancy, MediaPackage created two new input URLs. You can use either the old or new URLs for inputs to the channel. The parent manifest should be named **channel.m3u8**.
 
    If you created an Amazon CloudFront distribution from the MediaPackage console, you will also see the high-level distribution information (such as status and ID) from the channel. When you add an endpoint in MediaPackage, an origin is also added to the distribution, and you will see the CloudFront CDN URL from the channel's details page as well.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

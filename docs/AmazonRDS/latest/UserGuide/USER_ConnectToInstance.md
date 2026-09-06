@@ -31,7 +31,3 @@ To find and connect to a RDS for MySQL DB instance, see the following topics.
 + [Connecting from MySQL Workbench](USER_ConnectToInstance.MySQLWorkbench.md)
 + [Connecting to RDS for MySQL with the AWS JDBC Driver, AWS Python Driver, and AWS ODBC Driver for MySQL](MySQL.Connecting.Drivers.md)
 + [Troubleshooting connections to your MySQL DB instance](USER_ConnectToInstance.Troubleshooting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

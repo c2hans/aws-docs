@@ -10,7 +10,3 @@ There are times that you want to migrate your content (including data sources, d
 Amazon Managed Grafana does not directly support migrating content between workspaces, however, AWS does provide an open-source migration utility that can handle this scenario by providing export and import functionality within a workspace or Grafana instance. This utility is called the **Amazon Managed Grafana Migrator**.
 
 For more information, see [Amazon Managed Grafana Migrator](https://github.com/aws-observability/amazon-managed-grafana-migrator) on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

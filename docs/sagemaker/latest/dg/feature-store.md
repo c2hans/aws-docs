@@ -75,7 +75,3 @@ To remove a `Record` from your online store, use the [`DeleteRecord`](https://do
 <a name="feature-store-resilience"></a>
 
 Feature Store is distributed across multiple Availability Zones (AZs). An AZ is an isolated location within an AWS Region. If some AZs fail, Feature Store can use other AZs. For more information about AZs, see [Resilience in Amazon SageMaker AI](disaster-recovery-resiliency.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -44,7 +44,3 @@ The following sections contain examples that show how to send signed requests to
 + [Connecting to Amazon Neptune databases using IAM authentication with Gremlin JavaScript](gremlin-javascript-iam-auth.md)
 + [Connecting to Amazon Neptune databases using IAM authentication with Gremlin Go](gremlin-go-iam-auth.md)
 + [Connecting to Amazon Neptune databases using IAM authentication with Gremlin .NET](gremlin-dotnet-iam-auth.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

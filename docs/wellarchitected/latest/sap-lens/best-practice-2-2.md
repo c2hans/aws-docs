@@ -16,7 +16,3 @@ For example, test-driven development, pair programming, code reviews, and standa
  Consider the following tools for automated code inspection and linting in your SAP workloads:
 +  AWS Documentation: [Amazon CodeGuru - for AWS Java and Python development](https://aws.amazon.com/codeguru/)
 +  SAP Documentation: [SAP Code Inspector for ABAP and SAP-specific development](https://help.sap.com/viewer/ba879a6e2ea04d9bb94c7ccd7cdac446/LATEST/en-US/49205531d0fc14cfe10000000a42189b.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 +  [AWS Well-Architected Sustainability Pillar: SUS04-BP08 Back up data only when difficult to recreate](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_data_a9.html)
 +  [AWS Well-Architected Reliability Pillar: REL09-BP03 Perform data backup automatically](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_backing_up_data_automated_backups_data.html)
 +  [Centrally manage and automate data protection - AWS Backup](https://aws.amazon.com/backup/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

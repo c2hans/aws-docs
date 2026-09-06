@@ -9,7 +9,7 @@ Game session placement is the process of finding available game servers to host 
 
 A well-configured game session queue ensures that players are connected to the best available game server, providing optimal performance while making efficient use of your hosting resources. Queues can span multiple fleets and AWS Regions to provide global coverage and redundancy.
 
-A game session queue is the primary mechanism that Amazon GameLift Servers uses to search for available game servers and choose them to host new game sessions. Queues offers a far more efficient way to process large numbers of game session requests and find placements for them across multiple fleets of hosting resources. If your hosting solution uses more than one fleet, and you're processing high volumes of requests, you probably need a queue.
+A game session queue is the primary mechanism that Amazon GameLift Servers uses to search for available game servers and choose them to host new game sessions. Queues offer a far more efficient way to process large numbers of game session requests and find placements for them across multiple fleets of hosting resources. If your hosting solution uses more than one fleet, and you're processing high volumes of requests, you probably need a queue.
 
 When your game wants to start a new game session for players, it sends a placement request to the Amazon GameLift Servers service, which funnels it to the queue. The queue's configuration determines when and how the requests are processed. When processing a placement request, Amazon GameLift Servers searches a set of fleets for a game server to host the game session. Placement succeeds when Amazon GameLift Servers finds an available game server and prompts it to start a game session.
 
@@ -53,7 +53,3 @@ Consider the following guidelines and best practices:
 + **Create your queue in the same location as your client service.** By putting your queue in a location near your client service, you can minimize communication latency.
 + **Use fleets with multiple locations.** Use the queue filter configuration to prevent the queue from placing game sessions in specified locations. You can use at least two multi-location fleets with different home locations to mitigate the impact of game placements during a Regional outage.
 + **Use the same TLS certificate setting for all fleets.** Game clients that connect to game sessions in your fleets must have compatible communication protocols.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

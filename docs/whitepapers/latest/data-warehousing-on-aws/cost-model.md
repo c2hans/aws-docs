@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-a
  If you use Redshift Spectrum to access data store in your data lake, you pay for the query cost based on how much data the query scans.
 
  For more information, see [Amazon Redshift Pricing.](https://aws.amazon.com/redshift/pricing/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

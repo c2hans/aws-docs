@@ -87,7 +87,3 @@ For notification about these updates, you can subscribe to the AWS RAM RSS feed.
 | [Added support for sharing subnets](https://docs.aws.amazon.com/ram/latest/userguide/shareable.html#shareable-vpc) | You can now use AWS RAM to share Amazon VPC subnets with other AWS accounts. | November 27, 2018 |
 | [Added support for sharing transit gateways](https://docs.aws.amazon.com/ram/latest/userguide/shareable.html#shareable-vpc) | You can now use AWS RAM to share Amazon VPC transit gateways with other AWS accounts. | November 26, 2018 |
 | [Added support for sharing Resolver rules](https://docs.aws.amazon.com/ram/latest/userguide/shareable.html#shareable-r53) | You can now use AWS RAM to share Route 53 Resolver rules with other AWS accounts. | November 20, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

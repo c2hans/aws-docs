@@ -41,7 +41,3 @@ See [Neptune Loader Error and Feed Messages](loader-message.md) for a list of th
   + [Cancel Job Errors](load-api-reference-cancel.md#load-api-reference-cancel-parameters-errors)
   + [Cancel Job Error Messages](load-api-reference-cancel.md#load-api-reference-cancel-parameters-errors-messages)
   + [Cancel Job Examples](load-api-reference-cancel.md#load-api-reference-cancel-examples)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

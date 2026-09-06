@@ -102,6 +102,8 @@ atx ct analysis cancel --id {{id}}
 atx ct analysis delete --id {{id}} [--cascade-findings]
 ```
 
+If you omit `--repo`, the command analyzes every repository under `--source`. To scope the run to specific repositories, pass `--repo` (comma-separated) — each a fully-qualified {{source}}::{{repo}}, or a bare name used with `--source`.
+
 ### Custom analysis
 <a name="ct-custom-analysis"></a>
 
@@ -172,6 +174,8 @@ atx ct remediation delete --id {{id}}
 
 By default, analyses and remediations run on your local machine. For larger portfolios, you can offload work to remote infrastructure. You can run on AWS Transform-managed infrastructure with nothing to provision (analyses only), or on infrastructure you provision and manage in your AWS account—a persistent Amazon EC2 instance or AWS Batch (Fargate) jobs. The `atx ct remote` commands provision, run, monitor, and tear down customer-managed infrastructure. Regardless of where execution happens, you create all resources in your AWS account and your source code stays under your control.
 
+With the `atx ct remote` analysis and remediation commands, you choose which repositories to process using `--sources` and `--repos` (both comma-separated). `--sources` selects every repository in the named sources. `--repos` selects specific repositories, each written as {{source}}::{{repo}}. If you provide both, the command processes the union of the two sets: every repository in the named sources, plus the named repositories. To scope a run to specific repositories, pass only `--repos`.
+
 **Note**
 Provisioning, updating, and tearing down infrastructure creates and modifies AWS CloudFormation stacks and IAM roles, and requires administrator permissions. Pass `--ack` to acknowledge this and skip the interactive prompt. Running analyses and remediations on already-provisioned infrastructure uses least-privilege executor policies — see [Tagging and access control](#ct-tagging) and the compute options in [How AWS Transform continuous modernization works](continuous-modernization.md#ct-how-it-works) for the managed policies involved.
 
@@ -210,7 +214,77 @@ Whether you bring your own network or use `network create`, it must meet these r
 + **Private subnets in two Availability Zones** — provisioning rejects public subnets (a subnet whose route table has a default route to an internet gateway). Provide at least two private subnets in different Availability Zones. AWS Batch spreads jobs across all of them. Amazon EC2 uses the first subnet.
 + **Outbound internet through a NAT gateway** — jobs run in private subnets. They need outbound access to pull the container image from public Amazon ECR and to reach AWS Transform and other AWS APIs. Each private subnet's route table must send `0.0.0.0/0` to a NAT gateway in a public subnet. You can instead reach AWS APIs over interface endpoints — see [AWS Transform custom and interface endpoints (AWS PrivateLink)](vpc-interface-endpoints-transform-custom.md).
 + **Security group with outbound access** — the security group needs only outbound (egress) rules. No inbound rules are required. AWS Batch requires you to pass `--securityGroup` at provision time. For Amazon EC2, if you omit `--securityGroup` the stack creates an egress-only security group with no inbound rules, and you reach the instance through SSM. A group that allows all outbound traffic (the default for a new security group) is sufficient.
-+ **Enough free IP addresses** — each running AWS Batch (Fargate) job and each Amazon EC2 worker uses one private IP address from a subnet. Size the subnets for the number of jobs you run in parallel. If a subnet runs low on addresses, submissions can fail with `InsufficientFreeAddressesInSubnet`. The dispatcher waits for capacity before submitting each job, but well-sized subnets avoid the wait. If you use `network create`, subnet size scales with the VPC CIDR. The VPC must be `/26` or larger. The default `10.1.0.0/16` produces `/24` subnets.
++ **Enough free IP addresses** — each running AWS Batch (Fargate) job uses one private IP address from a subnet. An Amazon EC2 instance uses one private IP address in total, no matter how many workers it runs. Size the subnets for the number of jobs you run in parallel. If a subnet runs low on addresses, jobs can fail with `InsufficientFreeAddressesInSubnet`. If you use `network create`, subnet size scales with the VPC CIDR. The VPC must be `/26` or larger. The default `10.1.0.0/16` produces `/24` subnets. For the arithmetic, the concurrency limit for each analysis type, and minimum subnet sizes, see [Sizing subnets and concurrency](#ct-remote-sizing).
+
+### Sizing subnets and concurrency
+<a name="ct-remote-sizing"></a>
+
+Before you provision AWS Batch infrastructure for a large repository fleet, size your private subnets for the number of jobs that run in parallel. A subnet that is too small is the most common cause of failed jobs in a large run.
+
+Each AWS Batch job runs as one Fargate task, which needs one elastic network interface and therefore **one private IPv4 address**. Public IP address assignment is disabled, so a private address is required — a job cannot start without one. AWS Batch does not queue a job it cannot place; it fails the job.
+
+**Important**
+Free addresses do not add up across subnets. AWS Transform treats your available capacity as the **smallest** number of free addresses in any one of the subnets you pass to `--subnets`, not the total across them. Two `/28` subnets give you 11 concurrent jobs, not 22. Adding a subnet never raises capacity, and adding a small subnet lowers it. Give every subnet in the stack enough free addresses on its own.
+
+#### Checking free addresses before you provision
+<a name="ct-remote-sizing-check"></a>
+
+Provisioning does not check subnet capacity for you. Check it yourself with `--json`, which reports `availableIpCount` for each subnet. The default table output does not include this value. Compare the **smallest** count against the concurrency limit for the analysis type you plan to run.
+
+```
+atx ct remote network discover --vpc {{vpc-id}} --json
+```
+
+#### Concurrency limits for each analysis type
+<a name="ct-remote-sizing-limits"></a>
+
+AWS Transform limits how many remote jobs run at the same time in an AWS account and Region. The limit depends on the analysis type. These limits are shared across all users in the account and across both compute modes, and they cap the number of addresses a run can consume. To request a change, contact AWS Support.
+
+| Analysis type | Concurrent jobs |
+| --- | --- |
+| `security` | 5 |
+| `tech-debt-quick` | 128 |
+| `tech-debt-comprehensive`, `agentic-readiness`, `modernization-readiness`, and `custom` analysis, and remediation other than security remediation | 30, shared across all of these |
+| Security remediation | 128 |
+
+**Note**
+The types in the third row share a single pool of 30 jobs. Running a comprehensive tech-debt analysis and a custom remediation at the same time gives you 30 jobs in total, not 60.
+
+#### Minimum subnet size
+<a name="ct-remote-sizing-table"></a>
+
+Amazon VPC reserves five addresses in every subnet, so the usable count is five fewer than the subnet size — a `/28` has 11 usable addresses and a `/24` has 251. For details, see [Subnet CIDR blocks](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-sizing.html) in the *Amazon VPC User Guide*.
+
+The addresses each subnet needs are the peak concurrent jobs, plus one or more for each interface endpoint in that subnet, plus any other network interfaces that share the subnet. Peak concurrent jobs is the smaller of the number of repositories in the submission and the concurrency limit for the analysis type. Because the limit caps the total, a 1,000-repository fleet needs no more addresses than a 128-repository one.
+
+| Analysis type | Peak concurrent jobs | Minimum subnet size |
+| --- | --- | --- |
+| `security` | 5 | `/27` |
+| `tech-debt-comprehensive`, `agentic-readiness`, `modernization-readiness`, `custom` | 30 | `/26` |
+| `tech-debt-quick` | Up to 128 | `/24` |
+| Every type running at its limit at once | 291 | `/23` |
+
+The minimums above include headroom for interface endpoints and for the addresses AWS reserves. Size up if other workloads share the subnet. A `/25` is not enough for 128 concurrent jobs: it provides 128 addresses but only 123 usable ones.
+
+We recommend dedicating subnets to remote execution. AWS Transform admits jobs down to the last free address and cannot account for other workloads that claim addresses in the same subnet.
+
+#### Running large fleets
+<a name="ct-remote-sizing-large-fleets"></a>
+
+A single submission covers up to 100 repositories. Submissions above that limit are rejected before any job starts, so a 1,000-repository fleet needs at least 10 submissions. Split them with `--repos`, and list the repositories in a source with `atx ct repository list --source {{name}} --json`.
+
+Splitting a fleet does not reduce the addresses you need. Submissions that run at the same time draw from the same subnets, up to the concurrency limit for the analysis type.
+
+There is no option that limits how many repositories are scanned at once. The CLI submits every job in a submission, and AWS Transform releases jobs up to the concurrency limit for the analysis type and holds the rest. To pace a large fleet, size the subnets for that limit and submit in groups of 100 repositories or fewer.
+
+#### Choosing Amazon EC2 for constrained networks
+<a name="ct-remote-sizing-ec2"></a>
+
+Amazon EC2 uses one private IP address in total, in the first subnet you pass, no matter how many workers the instance runs. If free addresses are scarce, Amazon EC2 avoids the problem entirely.
+
+The tradeoff is concurrency: `--workers` accepts 1–5, so an Amazon EC2 instance runs at most 5 repositories in parallel. For fleets that need more, use AWS Batch. For `security` analysis the account limit is also 5, so AWS Batch offers no additional concurrency for that type.
+
+Size `--workers`, `--instance-type`, and `--volume-size` when you provision. Instance memory must be at least 2 GB for each worker plus 4 GB for the operating system. `atx ct remote update` keeps these values; changing them requires tearing down and provisioning again, which replaces the instance and deletes its volume.
 
 ### Provisioning infrastructure
 <a name="ct-remote-provision"></a>
@@ -441,7 +515,3 @@ For CLI-based provisioning and networking configuration, see [Remote execution](
 1. **Review pull requests** – Open the **Remediations** tab to view generated PR links per repository.
 
 Chat with AWS Transform directly from the web application to ask questions about your analyses, findings, or remediations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

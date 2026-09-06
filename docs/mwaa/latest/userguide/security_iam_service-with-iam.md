@@ -71,7 +71,3 @@ The actions defined for Amazon MWAA reflect tasks that you can perform using Ama
 You can also use wildcards (\*) to specify multiple actions. Instead of listing these actions separately, you can grant access to all actions that end with the word, for example, `environment`.
 
 To get a list of Amazon MWAA actions, refer to [Actions Defined by Amazon Managed Workflows for Apache Airflow](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_mwaa.html#mwaa-actions-as-permissions) in the *IAM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ For your Aurora DB cluster, the following categories of metrics are monitored:
 + **Database Insights** – Opens the Amazon CloudWatch Database Insights dashboard for a DB instance in your Aurora DB cluster. Database Insights isn't supported at the cluster level. For an overview, see [Monitoring DB load with Amazon CloudWatch Database Insights on Amazon Aurora](USER_PerfInsights.md). For a list of metrics, see [Amazon CloudWatch metrics for Amazon RDS Performance Insights](USER_PerfInsights.Cloudwatch.md).
 
 Amazon CloudWatch Database Insights provides a consolidated view of database load and CloudWatch metrics for your DB cluster. For more information, see [Monitoring Amazon Aurora databases with CloudWatch Database Insights](USER_DatabaseInsights.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

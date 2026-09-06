@@ -94,7 +94,3 @@ cluster.cds_egress_my-mesh_my-backend-node_http_9080.ssl.fail_verify_san: 5
 +  [Mutual TLS authentication walkthrough](https://github.com/aws/aws-app-mesh-examples/tree/main/walkthroughs/howto-mutual-tls-file-provided): This walkthrough describes how you can use the App Mesh CLI to build a color app with mutual TLS authentication.
 +  [Amazon EKS mutual TLS SDS-based walkthrough](https://github.com/aws/aws-app-mesh-examples/tree/main/walkthroughs/howto-k8s-mtls-sds-based): This walkthrough shows how you can use mutual TLS SDS-based authentication with Amazon EKS and SPIFFE Runtime Environment (SPIRE).
 +  [Amazon EKS mutual TLS file-based walkthrough](https://github.com/aws/aws-app-mesh-examples/tree/main/walkthroughs/howto-k8s-mtls-file-based): This walkthrough shows how you can use mutual TLS file-based authentication with Amazon EKS and SPIFFE Runtime Environment (SPIRE).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

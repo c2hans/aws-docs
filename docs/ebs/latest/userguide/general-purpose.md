@@ -124,7 +124,3 @@ Throughput in MiB/s = IOPS performance × I/O size in KiB / 1,024
 <a name="gp2-size"></a>
 
 A `gp2` volume can range in size from 1 GiB to 16 TiB. Keep in mind that volume performance scales linearly with the volume size.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

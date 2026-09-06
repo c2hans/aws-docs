@@ -109,7 +109,3 @@ Unlike a virtual private gateway, a transit gateway sets the same value for the 
 <a name="step-update-customer-gateway-asn"></a>
 
 When the new gateway has a different ASN from the old gateway, you must update the ASN on your customer gateway device to point to the new ASN. See [Customer gateway options for your AWS Site-to-Site VPN connection](cgw-options.md) for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

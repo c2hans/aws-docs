@@ -65,7 +65,3 @@ You might get this when an error occurs while running the uninstall script durin
 
 UNINSTALL\_TIMEOUT
 You might get this error when the uninstall script did not finish within the configured timeout period. Either increase the `Timeout` period specified in the recipe's `uninstall` section or modify your uninstall script to finish within the configured timeout. The default timeout is 120 seconds. Uninstall failures do not fail the deployment, and the component is still removed from the device.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

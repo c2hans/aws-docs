@@ -19,7 +19,3 @@ You can create subdirectories within your project’s parent directory to organi
 <a name="using-composer-external-files-best-practices-sam"></a>
 
 When deploying your application to the AWS Cloud, local external files need to first be uploaded to an accessible location, such as Amazon Simple Storage Service (Amazon S3). You can use the AWS SAM CLI to automatically facilitate this process. To learn more, see [ Upload local files at deployment](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/deploy-upload-local-files.html) in the *AWS Serverless Application Model Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

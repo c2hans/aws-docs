@@ -46,7 +46,3 @@ If you specified `disk` for the `SessionLogsDestination` parameter, you can veri
 By default, the temporary log file is saved on the instance for 14 days.
 
 If you want to update the `SessionLogsDestination` parameter across multiple instances, we recommend you create an SSM Document that specifies the new configuration. You can then use Systems Manager Run Command to implement the change on your instances. For more information, see [Writing your own AWS Systems Manager documents (blog)](https://aws.amazon.com/blogs/mt/writing-your-own-aws-systems-manager-documents/) and [Running commands on managed nodes](running-commands.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

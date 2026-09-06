@@ -31,7 +31,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 +  [Ensure internetwork traffic privacy in Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html)
 +  [Transit Gateway Segmentation](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpc-attachments.html)
 +  [AWS Cloud WAN Segment](https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan-policy-segments.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

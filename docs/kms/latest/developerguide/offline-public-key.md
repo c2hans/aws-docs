@@ -41,7 +41,3 @@ AWS CloudTrail logs that record every AWS KMS operation, including the request, 
 
 **Offline verification with SM2 key pairs (China Regions only)**
 To verify a signature outside of AWS KMS with an SM2 public key, you must specify the distinguishing ID. By default, AWS KMS uses `1234567812345678` as the distinguishing ID. For more information, see [Offline verification with SM2 key pairs (China Regions only).](offline-operations.md#key-spec-sm-offline-verification)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

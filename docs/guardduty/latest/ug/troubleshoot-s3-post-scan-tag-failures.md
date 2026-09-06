@@ -17,7 +17,3 @@ The following list provides potential reasons that may cause this issue:
 
 **MAX\_TAG\_LIMIT\_EXCEEDED**
 By default, you can associate up to 10 tags with an S3 object. For more information, see Considerations for GuardDuty to add a tag to your S3 object under [Enable tagging for scanned objects](enable-malware-protection-s3-bucket.md#tag-scanned-objects-s3-malware-protection).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

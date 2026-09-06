@@ -48,7 +48,3 @@ To find every action a specific user initiated, filter CloudTrail events by `use
 The agent's internal reasoning, tool calls, and conversation content are not logged to CloudTrail. These are recorded in the agent's internal journal system.
 
 API calls the agent makes to other AWS services (such as Cost Explorer or CloudTrail `LookupEvents`) using the agent's IAM role are logged to CloudTrail under that IAM role's identity, as standard AWS API activity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS FinOps Agent (preview). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finops-agent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

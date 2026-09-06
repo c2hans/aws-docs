@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/edit-job-delete-node.html
 ![The screenshot shows a job diagram where the handle is enclosed in a red circle and a red arrow is joining the Plans node and Join node to demonstrate the action of clicking and dragging to connect the nodes together.](http://docs.aws.amazon.com/glue/latest/dg/images/visual-job-plans-node-handle-selected.png)
 
 1.  If you need to undo any action, choose the **Undo** icon directly beneath the **Trash** icon in the toolbar on the right side of the canvas.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

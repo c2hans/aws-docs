@@ -20,7 +20,3 @@ When you turn on Event Mode, the meeting changes in the following ways:
   To let new conference rooms join with video or present, turn off Event Mode before the new room joins. If a room joins before you turn off Event Mode and wants to share media or video, they must leave and rejoin the meeting after you turn off Event Mode.
 **Note**
 If attendees join from an in-room conference system before you turn on Event Mode, they can use the conference system to share media and video.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

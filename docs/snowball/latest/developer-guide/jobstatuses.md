@@ -50,7 +50,3 @@ This cluster status information doesn't reflect the health, the current processi
 | Delivered to you | InUse | At least one node of the cluster is at the address you provided during job creation. |
 | Completed | Complete | All the nodes of the cluster have been returned to AWS. |
 | Canceled | Cancelled | The request to make a cluster was canceled. Cluster requests can only be canceled before they enter the Pending state. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

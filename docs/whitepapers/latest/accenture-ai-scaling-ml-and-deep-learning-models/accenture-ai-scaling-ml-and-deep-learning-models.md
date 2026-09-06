@@ -40,7 +40,3 @@ Publication date: **July 27, 2022** ([Document revisions](document-revisions.md)
 <a name="frictionless-ideation-to-production"></a>
 
  The goal of Enterprise AI and MLOps is to reduce friction and get all models from ideation to production in the shortest possible time, with as little risk as possible. Integrating AI technologies into business operations can prove to be a game-changer for organizations, with the benefits of reducing costs, boosting efficiency, generating actionable, precise insights, and creating new revenue streams. This requires not only creating efficient models, but also creating a complete end-to-end stable, resilient, and repeatable Enterprise AI system that can provide sustainable value and be amenable to continuous improvements to adapt to changing environments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

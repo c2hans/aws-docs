@@ -85,7 +85,3 @@ Edge AI is a natural evolution of serverless architecture, bringing low-latency 
 + AI logic becomes location-aware, autonomous, and highly scalable.
 
 AI is becoming pervasive across sectors, from smart cities to field robotics to global media delivery. To support this evolution, these AWS services can play a foundational role in building distributed, intelligent applications that run anywhere.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

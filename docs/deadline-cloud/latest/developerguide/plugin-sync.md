@@ -57,20 +57,18 @@ s3://{{<job-attachments-bucket>}}/{{<root-prefix>}}/plugins/linux/maya/2025/
 ## Supported DCC applications
 <a name="plugin-sync-supported-dccs"></a>
 
-The following table lists DCC applications that support plugin sync, the exact Amazon S3 folder name to use, whether a conda recipe sample is available, and whether the service-managed fleet conda channel supports plugin sync for that application.
+The following table lists DCC applications that support plugin sync, the exact Amazon S3 folder name to use, whether a conda recipe sample is available on the GitHub website, and whether the service-managed fleet conda channel supports plugin sync for that application.
 
 | DCC application | S3 folder name | Supported versions | [Conda recipe sample](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes) | Service-managed fleet | Forum |
 | --- | --- | --- | --- | --- | --- |
-| Blender | blender | 5.0, 5.1 | ✓ | ✓ | [Plugins](https://github.com/aws-deadline/deadline-cloud-for-blender/discussions/categories/plugins) |
-| Autodesk Maya | maya | 2024, 2025, 2026 | ✓ | ✓ | [Plugins](https://github.com/aws-deadline/deadline-cloud-for-maya/discussions/categories/plugins) |
-| Foundry Nuke | nuke | Coming soon | ✓ | Coming soon | – |
-| SideFX Houdini | houdini | 19.5, 20.0, 20.5, 21.0 | ✓ | ✓ | [Plugins](https://github.com/aws-deadline/deadline-cloud-for-houdini/discussions/categories/plugins) |
+| Blender | blender | 5.0, 5.1 | ✓ Yes | ✓ Yes | [Plugins](https://github.com/aws-deadline/deadline-cloud-for-blender/discussions/categories/plugins) |
+| Autodesk Maya | maya | 2024, 2025, 2026 | ✓ Yes | ✓ Yes | [Plugins](https://github.com/aws-deadline/deadline-cloud-for-maya/discussions/categories/plugins) |
+| Foundry Nuke | nuke | 15.0, 16.0, 17.0 | ✓ Yes | ✓ Yes | [Plugins](https://github.com/aws-deadline/deadline-cloud-for-nuke/discussions/categories/plugins) |
+| SideFX Houdini | houdini | 19.5, 20.0, 20.5, 21.0 | ✓ Yes | ✓ Yes | [Plugins](https://github.com/aws-deadline/deadline-cloud-for-houdini/discussions/categories/plugins) |
+| Maxon Cinema 4D | cinema4d | 2024, 2025, 2026 | ✓ Yes | ✓ Yes | Not applicable |
+| Adobe After Effects | aftereffects | 24, 25, 26 | ✓ Yes | ✓ Yes | Not applicable |
 
 To find or discuss supported plugins, visit our GitHub forum for each DCC integration.
 
 **Note**
-You can also use our [conda recipe samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes) for plugin sync with self-hosted channels. To build and host your own channel, see [Create a conda channel using S3](configure-jobs-s3-channel.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+You can also use our [conda recipe samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes) on the GitHub website for plugin sync with self-hosted channels. To build and host your own channel, see [Create a conda channel using S3](configure-jobs-s3-channel.md).

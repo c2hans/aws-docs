@@ -16,7 +16,3 @@ With Amazon GameLift Servers FleetIQ, game servers go through the following lif
   + **Step 3a.** Using the connection information provided, game clients can connect to the game server and initiate gameplay. The game server (D) must be triggered within 60 seconds to change its utilization status to UTILIZED by calling the Amazon GameLift Servers API `UpdateGameServer()`.
   + **Step 3b.** If the game server's utilization status is not updated within 60 seconds, the claim timer expires and the claim status is reset to blank. The game server (D) is returned to the pool of available and unclaimed game servers.
 + A game server resource is removed after gameplay on the game server is complete and players have disconnected. Before shutting down, the game server process calls the Amazon GameLift Servers API `DeregisterGameServer()` to notify Amazon GameLift Servers FleetIQ of its departure from the game server group's pool of game servers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

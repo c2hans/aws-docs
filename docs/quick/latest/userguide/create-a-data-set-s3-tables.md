@@ -70,7 +70,3 @@ After a few seconds, the data source appears in your data sources list.
 Amazon S3 Tables datasets support a maximum of 2 billion rows.
 
 For information about supported AWS Regions, see [Supported AWS Regions](https://docs.aws.amazon.com/quicksuite/latest/userguide/regions.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -138,7 +138,3 @@ You can use the following StackSets actions to update your published extensions:
 + [Updating your stack set](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-update.html) can be used to modify the existing template, add new stack instances, modify parameters, and perform other edits. You can do this if you choose not to specify version numbers in your template, but later decide you want to provide them.
 
 For more information about how to use AWS CloudFormation StackSets, see [Working with AWS CloudFormation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html) in the *AWS CloudFormation User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

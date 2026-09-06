@@ -18,7 +18,3 @@ When running .NET applications on EC2 instances or in containers, Elastic Load B
 For high volume ASP.NET websites with a global presence, it’s a common requirement to reduce load on the web servers. The Amazon CloudFront Content Delivery Network helps by moving static content closer to users, tracking detailed information about every request, and storing the resulting logs in an S3 bucket.
 
 For applications that need to store or share files, S3 provides a simple service to store and serve objects at scale. You can use [S3 Server Access Logging](https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html) to track access requests to your S3 buckets for troubleshooting and security audit purposes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

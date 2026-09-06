@@ -133,7 +133,3 @@ Date: Sat, 19 Nov 2011 00:46:47 GMT
 +  [CreateTable](API_CreateTable_v20111205.md)
 +  [DescribeTables](API_DescribeTables_v20111205.md)
 +  [DeleteTable](API_DeleteTable_v20111205.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

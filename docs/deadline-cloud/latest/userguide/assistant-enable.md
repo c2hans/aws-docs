@@ -55,7 +55,3 @@ Use the following procedure to disable the assistant.
 1. Choose **Update**.
 
 Disabling the assistant turns it off for all monitor users, but the Amazon Bedrock IAM policy remains attached to the monitor user role. To also remove the Amazon Bedrock permissions, detach the policy whose name begins with `DeadlineCloudAssistantBedrockPolicy` from the monitor user role in the IAM console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

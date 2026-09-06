@@ -69,7 +69,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 + [SCOPS07-BP01 Implement processes and technologies for continuous compliance with regulations, data privacy laws, and internal policies](scops07-bp01.md)
 + [SCOPS08-BP01 Implement a process for assessing, onboarding, and monitoring the operational readiness of new suppliers and logistics partners](scops08-bp01.md)
 + [SCOPS09-BP01 Automate integrated data pipelines for real-time demand and supply data refresh across the supply chain](scops09-bp01.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

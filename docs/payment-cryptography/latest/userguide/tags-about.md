@@ -36,7 +36,3 @@ Tags help you do the following:
 + Control access to your AWS resources. Allowing and denying access to keys based on their tags is part of AWS Payment Cryptography support for attribute-based access control (ABAC). For information about controlling access to AWS Payment Cryptography based on their tags, see [Authorization based on AWS Payment Cryptography tags](security_iam_service-with-iam.md#security_iam_service-with-iam-tags). For more general information about using tags to control access to AWS resources, see [Controlling Access to AWS Resources Using Resource Tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html) in the *IAM User Guide*.
 
 AWS Payment Cryptography writes an entry to your AWS CloudTrail log when you use the TagResource, UntagResource, or ListTagsForResource operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

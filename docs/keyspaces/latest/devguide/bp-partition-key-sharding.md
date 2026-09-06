@@ -49,7 +49,3 @@ A simple calculation would likely suffice, such as the product of the UTF-8 code
 With this strategy, the writes are spread evenly across the partition key values, and thus across the physical partitions. You can easily perform a `SELECT` statement for a particular row and date because you can calculate the partition key value for a specific `title` value.
 
 To read all the rows for a given day, you still must `SELECT` each of the `(2020-07-09, N)` keys (where `N` is 1–200), and your application then has to merge all the results. The benefit is that you avoid having a single "hot" partition key value taking all of the workload.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ For more information about the recommended adhesive, see [Loctite 454 Technical 
 
    If you're mounting the sensor on a curved surface, put a small amount of additional adhesive on each side for better contact between the sensor and the surface. Based on the surface and the adhesive used, your results should look similar to the following.
 ![Trapezoid-shaped sensors on flat, slightly curved, and curved surfaces with gap filling glue.](http://docs.aws.amazon.com/Monitron/latest/user-guide/images/surface-conditions.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

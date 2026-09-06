@@ -52,7 +52,3 @@ These are AMS service commitments for critical security updates.
 | AMS releases updated AMIs in managed account. | Clock stops. |
 | If you approve the service notification, AMS applies the updates.<br />AMS notifies you of the AMIs shared in your account, through a service notification and by email. | Not applicable. |
 | If testing the new AMIs takes longer than the allotted time (one week), you can submit a service request to AMS to update your Auto Scaling groups with the new AMS AMI (as is). If you want to modify the new AMS AMI with your configurations, use an RFC with the Management \| Other \| Other \| Update CT (ct-0xdawir96cy7k) to request that we update your Auto Scaling groups.  | Not applicable. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

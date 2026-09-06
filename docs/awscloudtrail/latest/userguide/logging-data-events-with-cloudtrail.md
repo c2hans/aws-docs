@@ -45,6 +45,8 @@ The events that are logged by your trails are available in Amazon EventBridge. F
     + [Example 1: Filtering on the `eventName` field](filtering-data-events.md#filtering-data-events-eventname)
     + [Example 2: Filtering on the `resources.ARN` and `userIdentity.arn` fields](filtering-data-events.md#filtering-data-events-useridentityarn)
     + [Example 3: Filtering on the `resources.type` and `eventName` fields to exclude individual objects deleted by an Amazon S3 DeleteObjects event](filtering-data-events.md#filtering-data-events-deleteobjects)
+    + [Example 4: Filtering on the `eventSource` field to exclude Amazon S3 lifecycle data events](filtering-data-events.md#filtering-data-events-eventsource-s3lifecycle)
+    + [Example 5: Filtering on the `eventSource` field to exclude Amazon S3 authentication failure data events](filtering-data-events.md#filtering-data-events-eventsource-s3auth)
 + [Aggregating data events](aggregating-data-events.md)
   + [Enabling aggregations for data events using the console](aggregating-data-events.md#aggregating-data-events-console)
   + [Enabling aggregations for data events using the AWS CLI](aggregating-data-events.md#aggregating-data-events-cli)
@@ -1054,7 +1056,3 @@ For a full list of sample conformance packs available in AWS Config, see [Confor
 Run the [GetEventSelectors](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_GetEventSelectors.html) operation to see whether your trail is logging data events. You can configure your trails to log data events by running the [PutEventSelectors](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_PutEventSelectors.html) operation. For more information, see the [AWS CloudTrail API Reference](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/).
 
 Run the [GetEventDataStore](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_GetEventDataStore.html) operation to see whether your event data store is logging data events. You can configure your event data stores to include data events by running the [CreateEventDataStore](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_CreateEventDataStore.html) or [UpdateEventDataStore](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateEventDataStore.html) operations and specifying advanced event selectors. For more information, see [Create, update, and manage event data stores with the AWS CLI](lake-eds-cli.md) and the [AWS CloudTrail API Reference](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ The models used for face comparison operations are designed to work for a wide v
 + Use images with flat lighting on the face, as opposed to varied lighting such as shadows.
 + Use images that have sufficient contrast with the background. A high-contrast monochrome background works well.
 + Use images of faces with neutral facial expressions with mouth closed and little to no smile for applications that require high precision.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

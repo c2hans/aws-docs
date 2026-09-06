@@ -188,7 +188,3 @@ In the following example, we use a feature file for testing the thing deployment
   ```
 
   Each test scenario is described at the top of each confidence test. The scenario is a series of steps that help with understanding the interactions and expected outcomes of each test case. You can extend these tests by adding your own steps or by modifying the existing ones. Each of the scenarios include comments that help you to make these adjustments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

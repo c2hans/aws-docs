@@ -19,7 +19,3 @@ Here are some things to consider when using the CSI snapshot controller.
 We recommend that you install the CSI snapshot controller through the Amazon EKS managed add-on. This add-on includes the custom resource definitions (CRDs) that are needed to create and manage snapshots on Amazon EKS. To add an Amazon EKS add-on to your cluster, see [Create an Amazon EKS add-on](creating-an-add-on.md). For more information about add-ons, see [Amazon EKS add-ons](eks-add-ons.md).
 
 Alternatively, if you want a self-managed installation of the CSI snapshot controller, see [Usage](https://github.com/kubernetes-csi/external-snapshotter/blob/master/README.md#usage) in the upstream Kubernetes `external-snapshotter` on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

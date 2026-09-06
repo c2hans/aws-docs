@@ -59,7 +59,3 @@ Data replicated across AWS Regions inside a partition includes:
 Space names are unique across CodeCatalyst. Be sure not to include sensitive data in the name of the space.
 
 When working with linked resources and connected accounts such as a connection to an AWS account or a GitHub repository, we recommend configuring your source and destination locations with the highest level of security that each one supports. CodeCatalyst secures the connection between AWS accounts, AWS Regions, and Availability Zones by using Transport Layer Security (TLS) 1.2.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

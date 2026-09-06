@@ -91,7 +91,3 @@ After you connect to your instance over RDP, we recommend that you perform the f
 + Change the administrator password from the default value. You [can change the password while you are logged on to the instance itself](https://support.microsoft.com/en-us/windows/change-or-reset-your-windows-password-8271d17c-9f9e-443f-835a-8318c8f68b9c), just as you would on any computer running Windows Server.
 + Create another user with administrator privileges on the instance. This is a safeguard in case you forget the administrator password or have a problem with the administrator account. The new user must have permission to access the instance remotely. Open **System Properties** by right-clicking on the **This PC** icon on your Windows desktop or File Explorer and selecting **Properties**. Choose **Remote settings**, and choose **Select Users** to add the user to the **Remote Desktop Users** group.
 ![System Properties window.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/windows-connect-properties-rdp.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -484,7 +484,3 @@ The following quotas describe the maximum number or length of items that you can
 | Size of a single dataset | 1 MB | Yes | Contact your account team. |
 | Characters in dataset name | 128 bytes | No | N/A |
 | Waiting time for a bulk publish after a successful request | 24 hours | No | N/A |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,3 @@ If your environment isn't displayed in the console, try doing one or more of the
   + Choose **All account environments** to display all environments within the selected AWS Region and AWS account that your AWS entity has permissions to display.
 + If you think you are a member of an environment, but the environment isn't displayed in the **Shared with you** list, check with the environment owner.
 + In the top navigation bar, choose a different AWS Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

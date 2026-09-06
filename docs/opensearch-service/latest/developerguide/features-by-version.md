@@ -69,7 +69,3 @@ Many OpenSearch Service features have a minimum OpenSearch version requirement o
 </table>
 
 For information about plugins, which enable some of these features and additional functionality, see [Plugins by engine version in Amazon OpenSearch Service](supported-plugins.md). For information about the OpenSearch API for each version, see [Supported operations in Amazon OpenSearch Service](supported-operations.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

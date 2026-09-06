@@ -98,7 +98,3 @@ cid-cmd update --dashboard-id scad-containers-cost-allocation
 Note:
 
 Starting from version (v2.0.0), the `scad_cca_hourly_resource_view` Quick Sight dataset and Athena view are no longer used by the dashboard, and can be deleted. Please check the [SCAD Containers Cost Allocation Dashboard v2.0.0 changelog](https://github.com/aws-solutions-library-samples/cloud-intelligence-dashboards-framework/blob/main/changes/CHANGELOG-scad-cca.md#scad-containers-cost-allocation-dashboard---v200) for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -368,7 +368,3 @@ After redeploying your workloads, verify that all image pulls now come from Amaz
 <a name="migrate-related-approaches"></a>
 
 **Pull Through Cache** - If your source registry is one of the supported upstream registries and you want Amazon ECR to automatically pull and cache images rather than performing a one-time copy, see [Sync an upstream registry with an Amazon ECR private registry](pull-through-cache.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

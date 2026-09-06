@@ -448,7 +448,3 @@ If you subsequently change the **Data discovery result prefix** setting, also up
 
 **Tip**
 To reduce server-side encryption costs, also configure the S3 bucket to use an S3 Bucket Key, and specify the AWS KMS key that you configured for encryption of your sensitive data discovery results. Use of an S3 Bucket Key reduces the number of calls to AWS KMS, which can reduce AWS KMS request costs. If the KMS key is in an external key store, use of an S3 Bucket Key can also minimize the performance impact of using the key. To learn more, see [Reducing the cost of SSE-KMS with Amazon S3 Bucket Keys](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html) in the *Amazon Simple Storage Service User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

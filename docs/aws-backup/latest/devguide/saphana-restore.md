@@ -299,7 +299,3 @@ If any of the following errors occur while attempting a backup operation, see th
   **Resolution:** Transient network instability is occurring on the instance. Retry the restore. If this issue happens consistently, try adding `ForceRetry: "true"` to agent config file at `/hana/shared/aws-backint-agent/aws-backint-agent-config.yaml.`
 
 For any other AWS Backint agent related issue, refer to [Troubleshoot AWS Backint Agent For SAP HANA](https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-troubleshooting.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

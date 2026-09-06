@@ -9,7 +9,3 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/investigati
 
 **Important**
  The investigative agent processes metadata transiently and doesn't store this data persistently in Amazon Bedrock's global Region. The metadata is used only for generating investigation insights and isn't retained after processing completes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

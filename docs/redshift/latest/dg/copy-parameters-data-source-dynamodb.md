@@ -16,7 +16,7 @@ To load data from an existing DynamoDB table, use the FROM clause to specify the
 + [Unsupported parameters](#copy-parameters-data-source-dynamodb-unsupported-parms)
 
 **Important**
-If the DynamoDB table doesn't reside in the same region as your Amazon Redshift cluster, you must use the REGION parameter to specify the region in which the data is located.
+If the DynamoDB table doesn't reside in the same Region as your Amazon Redshift cluster, you must use the REGION parameter to specify the Region in which the data is located.
 
 ## Syntax
 <a name="copy-parameters-data-source-dynamodb-syntax"></a>
@@ -87,7 +87,3 @@ You can't use the following parameters with COPY from DynamoDB:
 + ACCEPTINVCHARS
 + MANIFEST
 + ENCRYPTED
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

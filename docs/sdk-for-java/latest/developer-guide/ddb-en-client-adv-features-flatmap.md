@@ -310,7 +310,3 @@ For example, compare the `Customer` class shown in the [flattening with composit
 |  <pre>{<br />  "id": "1",<br />  "createdDate": "today",<br />  "name": "my name"<br />}</pre>  |  <pre>{<br />  "id": "1",<br />  "record": {<br />      "createdDate": "today",<br />      "name": "my name"<br />  }<br />}</pre>  |
 
 The difference becomes important if you have other code accessing the DynamoDB table that expects to find certain attributes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

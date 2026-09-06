@@ -14,7 +14,3 @@ Using a network managed by AWS Managed Services (AMS) means giving AMS access to
 
 **Note**
 Your Active Directory (AD) that AMS sets up the trust to, must be the directory that has the accounts of users authorized by you to gain access to your AWS resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

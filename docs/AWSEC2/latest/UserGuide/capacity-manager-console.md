@@ -65,7 +65,3 @@ Depending on your screen size or the number of dimensions you've applied, you mi
 **Note**
 Depending on your screen size or the number of dimensions you've applied, you might need to scroll horizontally across the page to find the View details link.
    + **Reservations**: In the Reservation ID column, choose the reservation you want to view.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -44,7 +44,3 @@ The **Accounts** column tells you what AWS accounts own entities involved with t
 **Findings within a group**
 The **Findings** column has a lists the entities within a group by severity. The findings include Amazon GuardDuty findings, Amazon Inspector findings, AWS security findings, and evidence from Detective. You can select the graph to see an exact count of findings by severity.
 GuardDuty findings are part of the Detective core package and are ingested by default. All other AWS security findings that are aggregated by Security Hub CSPM are ingested as an optional data source. See [Source data used in a behavior graph](https://docs.aws.amazon.com/detective/latest/userguide/detective-source-data-about.html) for more details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

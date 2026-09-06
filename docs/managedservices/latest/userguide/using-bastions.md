@@ -38,7 +38,3 @@ In order to access an instance, you need:
 + The stack ID that you want to access so you can be granted access to the instance. To find a stack ID, see [Find stack IDs in AMS](find-stack.md).
 + The instance IP that you want to access. To find an instance IP, see [Find instance IDs or IP addresses in AMS](find-instance-id.md).
 + The DNS friendly bastion name or the bastion IP. How to use DNS friendly bastion names and how to find a bastion IP are described next.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

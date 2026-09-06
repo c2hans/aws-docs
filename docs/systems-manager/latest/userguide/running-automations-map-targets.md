@@ -232,7 +232,3 @@ You can run an automation on all Amazon EC2 instances in the current AWS account
 ![Targeting all Amazon EC2 instances for a runbook](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/automation-rate-control-target-all-instances.png)
 
 After you choose **All instances**, Systems Manager populates the **Instance** field with an asterisk (\*) and makes the field unavailable for changes (the field is grayed out). Systems Manager also makes the **InstanceId** field in the **Input parameters** field unavailable for changes. Making these fields unavailable for changes is expected behavior if you choose to target all instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

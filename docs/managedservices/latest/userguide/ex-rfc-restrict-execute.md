@@ -22,7 +22,3 @@ aws amscm  --profile saml list-restricted-execution-times
 ```
 
 If you want to submit an RFC during a specified restricted execution time, then add the **RestrictedExecutionTimesOverrideId** with the value of **OverrideRestrictedTimeRanges**, and then submit the RFC as you normally would. It's a best practice to only use this method for a critical or emergency RFC. For more information, see the API reference for [SubmitRfc](https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/API_SubmitRfc.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

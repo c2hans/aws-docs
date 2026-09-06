@@ -32,6 +32,8 @@ This tutorial is part of a series. If you performed Tutorial 1, you're ready to 
 
 1. On the **Dashboard** page, choose **Test chat**.
 ![The dashboard page, the text chat link.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tutorial1-test-chat.png)
+**Note**
+If you do not see **Test chat** on the **Dashboard** page, choose **Channels** on the navigation menu, and then choose **Test chat**. For more information, see [Test voice, chat, and task experiences in Connect Customer](chat-testing.md).
 
 1. On the **Test Chat** page, choose **Activate Contact Control Panel**.
 ![The test chat page, the Activate Contact Control Panel link.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tutorial1-activate-ccp.png)
@@ -99,7 +101,3 @@ In Step 1, you used the Contact Control Panel (CCP) to manage a voice contact. I
 Congratulations\! You've experienced what it's like to chat using Connect Customer.
 
 Next, try Tutorial 3 to set up an IT Help Desk. It shows you how to set up routing, create a flow, and then test the custom voice and chat experience. Go to [Create an IT help desk in Connect Customer](tutorial1-create-helpdesk.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,7 +54,3 @@ The following limitations apply to running AWS CLI commands in your chat rooms:
 + You can't use AWS CLI command memory (that is, recent commands appear when the user presses up arrow or down arrow keys) in the chat channel. You must enter, or copy and paste each AWS CLI command in the chat channel.
 + You can create AWS support cases through your chat channels. You cannot add attachments to these cases from the chat channel.
 + Chat channels do not support standard AWS CLI pagination.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

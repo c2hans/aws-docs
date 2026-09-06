@@ -92,7 +92,3 @@ If `pg_stat_activity.state` shows `idle in transaction`, use the following strat
 If long-running transactions are causing the frequent occurrence of `Lock:transactionid`, try the following strategies:
 + Keep row locks out of long-running transactions.
 + Limit the length of queries by implementing autocommit whenever possible.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

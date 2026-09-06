@@ -37,7 +37,3 @@ Follow this procedure to produce an output that includes TTML captions wrapped i
 | Language | Complete if desired. This information may be useful to or required by a downstream system. |
 | Description | This field is automatically completed after you specify the language. |
 |  Use ID3 as Caption Content | Check this field, to insert the TTML captions into ID3 data. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

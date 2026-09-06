@@ -160,7 +160,3 @@ Request metadata and IAM session tags are different mechanisms. Request metadata
 + Avoid placing personally identifiable information (PII), credentials, or other sensitive data in request metadata. Values are stored in your model invocation logs and any system that reads those logs.
 + Request metadata is supplied per call and is not enforced by Amazon Bedrock. Requests that omit it still succeed, and there is no service-side policy to require it. To guarantee coverage across an organization, set request metadata in a shared client or LLM gateway. For attribution that is always present without per-call code, use [IAM principal attribution](cost-mgmt-iam-principal-tracking.md). It captures the caller identity automatically.
 + Request metadata works alongside the other Amazon Bedrock usage tracking methods. You can use [IAM principal attribution](cost-mgmt-iam-principal-tracking.md) for per-identity attribution and [Application inference profiles](cost-mgmt-application-inference-profiles.md) for resource-level cost allocation tags on the same workload.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

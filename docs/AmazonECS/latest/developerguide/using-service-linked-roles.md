@@ -10,7 +10,3 @@ Amazon Elastic Container Service uses AWS Identity and Access Management (IAM) [
 **Topics**
 + [Using roles to allow Amazon ECS to manage clusters](using-service-linked-roles-for-clusters.md)
 + [Using roles to manage Amazon ECS Managed Instances](using-service-linked-roles-instances.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

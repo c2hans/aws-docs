@@ -87,7 +87,3 @@ To begin to discuss gaps and manage resistance, follow these steps:
 1. Meet with leaders of the program and discuss people-related risks that are already known or that might emerge.
 
 Effective gap and resistance management is crucial for successful cloud transformation. By identifying root causes, developing corrective actions, and enabling sponsors to manage resistance, organizations can minimize obstacles and maintain momentum throughout the change process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

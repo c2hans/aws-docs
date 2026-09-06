@@ -362,7 +362,3 @@ The following table describes maximum CPU, memory, connection, and cursor limits
 | 32 | 256 | 28400 | 1520 |
 | 48 | 384 | 30000 | 2280 |
 | 64 | 512 | 30000 | 3040 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

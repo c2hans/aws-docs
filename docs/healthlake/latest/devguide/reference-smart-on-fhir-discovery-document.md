@@ -51,7 +51,3 @@ For a client application to make a successful FHIR REST request to HealthLake, i
    Both the `authorization_endpoint` and the `token_endpoint` are required to launch a client application.
    + **Authorization endpoint** — The URL needed to authorize a client application or user.
    + **Token endpoint** — The endpoint of the authorization server the client application uses to communicate with.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

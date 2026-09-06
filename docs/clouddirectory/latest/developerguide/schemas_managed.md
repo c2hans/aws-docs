@@ -81,7 +81,3 @@ You can use dynamic facets to define objects of the following type:
 + `POLICY`
 
 For additional details about managed schemas, dynamic facets or variant data types and to see example use cases, see [How to rapidly develop applications on Amazon Cloud Directory using AWS Managed Schema](https://aws.amazon.com/blogs/database/rapidly-develop-applications-on-amazon-cloud-directory-with-managed-schema/) in the Amazon Cloud Directory blog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

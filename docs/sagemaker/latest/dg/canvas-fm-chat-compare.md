@@ -23,7 +23,3 @@ When the models are active, you see the two models side by side in the chat. You
 ![Screenshot of the Canvas interface with the output of two models shown side by side.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/canvas-chat-compare-outputs.png)
 
 When you’re done interacting, make sure to shut down any JumpStart models individually to avoid incurring further charges.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

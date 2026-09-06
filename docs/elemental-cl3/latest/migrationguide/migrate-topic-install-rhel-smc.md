@@ -42,7 +42,3 @@ Don't use a VPN connection.
 1. Sometimes, a kickstart or upgrade generates incorrect mappings for Ethernet ports. For information about how to fix this issue, go to the [AWS Elemental Support Center](https://console.aws.amazon.com/elemental-appliances-software/home?region=us-east-1#/supportcenter), and read the Knowledge article [How to restore default ethernet port order on an Elemental appliance](https://us-east-1.console.aws.amazon.com/elemental-appliances-software/home?region=us-east-1#/viewknowledge/How-to-restore-default-ethernet-port-order-on-an-Elemental-appliance) or open a case.
 
 1. You can now install any third-party packages. To obtain these packages, see [Working with RPM repository](migrate-topic-rpm-repository.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ If you are considering switching your IAM Identity Center Region to enable the d
 
 **Configuration considerations in the new Region**
  You must recreate users, groups, permission sets, applications, and assignments in the new IAM Identity Center instance. You can use the IAM Identity Center account and application assignment [APIs](https://docs.aws.amazon.com/singlesignon/latest/APIReference/welcome.html) to get a snapshot of your configuration and then use that snapshot to rebuild your configuration in a new Region. Switching to a different Region also changes the URL for the [AWS access portal](using-the-portal.md), which provides your users with single sign-on access to their AWS accounts and applications. You might also need to recreate some IAM Identity Center configuration through the Management Console of your new instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

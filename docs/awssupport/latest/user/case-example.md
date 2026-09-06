@@ -57,7 +57,3 @@ If you choose Korean as your preferred contact language for support cases, suppo
 If you need customer service for non-technical support cases, support in Korean is available during business hours in Korea defined as 09:00 AM to 06:00 PM Korean Standard Time (GMT\+9), excluding holidays and weekends.
 If you have a Developer Support plan, technical support in Korean is available during business hours generally defined as 8:00 AM to 6:00 PM in your country as set in [My Account](https://console.aws.amazon.com/billing/home?#/account), excluding holidays and weekends. These times may vary in countries with multiple time zones.
 If you have a AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan, technical support is available 24/7 in Korean.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,7 +43,3 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-connecting-ma
 By default, the connection is terminated after three unsuccessful login attempts. To try again, restart the connection.
 
 1. If you're prompted to verify the server's certificate, confirm the certificate's fingerprint with your Amazon DCV administrator. If the fingerprint is valid, choose **Trust & Connect**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

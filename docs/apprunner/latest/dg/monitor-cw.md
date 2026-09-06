@@ -66,7 +66,3 @@ At this time, the console displays only service metrics. To view instance metric
 1. Choose a duration (for example, **12h**) to scope metrics graphs to the recent period of that duration.
 
 1. Choose **Add to dashboard** at the top of one of the graph sections, or use the menu on any graph, to add the relevant metrics to a dashboard in the CloudWatch console for further investigation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

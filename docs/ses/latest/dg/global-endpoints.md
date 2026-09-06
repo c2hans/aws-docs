@@ -281,7 +281,3 @@ Following these best practices and considerations helps ensure effective utiliza
 While exact pricing details are subject to change, Global endpoints are expected to carry a price premium over single-region sending for an equal volume of mail. Despite this increase, the overall cost is anticipated to remain competitive compared to other email service providers.
 
 For the most up-to-date pricing information, please refer to the [Amazon SES Pricing page](https://aws.amazon.com/ses/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

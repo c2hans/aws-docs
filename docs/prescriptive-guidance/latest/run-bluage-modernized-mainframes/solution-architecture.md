@@ -37,7 +37,3 @@ The diagram shows the following process:
 1. Use [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) to wrap the operation of batch jobs in Amazon ECS. The workflow can start a batch task, monitor its progress, and handle any errors.
 
 With mainframe workloads, it's likely that a degree of customization will be required. This architecture is intended to be compatible with common use cases, and you can extend it to support many requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

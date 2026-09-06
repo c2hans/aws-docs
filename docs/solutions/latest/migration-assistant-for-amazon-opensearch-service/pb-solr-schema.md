@@ -12,7 +12,3 @@ Use [Schema translation](solr-schema-translation.md) as the source of truth for 
 The evaluated metadata also includes index settings. Migration Assistant sets `index.number_of_shards` from the shard count discovered in the Solr backup and defaults `index.number_of_replicas` to `1`.
 
 For field types or index settings that are not covered by the default translation, or to override a translation, supply a custom metadata transformer through `metadataTransforms` in your workflow configuration. Review the evaluated metadata before approving the `migrateMetadata` step, especially if your Solr schema uses custom field type classes, dotted dynamic field names, broad `copyField` rules, or a target replica count other than `1`. See [Transform field types](transform-field-types.md) for the JavaScript transformer pattern and raw descriptor alternatives.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

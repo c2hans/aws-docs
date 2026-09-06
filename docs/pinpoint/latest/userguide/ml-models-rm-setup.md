@@ -84,7 +84,3 @@ After you finish entering all the settings for connecting to and using the recom
 When you finish reviewing the settings, choose **Publish** to save them. Amazon Pinpoint then checks the settings to verify that they're correct. If any settings are missing or incorrect, it displays a message for each error to help you determine which setting to fix. If you need to fix a setting, use the navigation pane to go directly to the page that contains the setting.
 
 After you publish the settings, you can start using recommendations in messages.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

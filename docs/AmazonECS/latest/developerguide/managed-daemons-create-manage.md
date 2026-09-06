@@ -38,6 +38,8 @@ Before you create a daemon, verify that you have the following:
    + **Use CloudWatch alarm(s)** - Turn on to monitor deployment health and automatically roll back if alarms trigger.
    + **Bake time** - The number of minutes that Amazon ECS waits after it updates all instances to the new daemon revision before it completes the deployment. During this period, Amazon ECS monitors CloudWatch alarms and automatically rolls back the deployment if any alarm triggers. Default: `0`.
 
+1. (Optional) For **Critical**, choose whether the daemon is critical to instance health.
+
 1. (Optional) Add tags.
 
 1. (Optional) Turn on **Enable ECS Exec** to run interactive commands in your daemon containers for troubleshooting.
@@ -58,7 +60,8 @@ The following is an example JSON file:
     "daemonTaskDefinitionArn": "arn:aws:ecs:{{us-east-1}}:{{123456789012}}:daemon-task-definition/{{my-daemon-task}}:1",
     "capacityProviderArns": [
         "arn:aws:ecs:{{us-east-1}}:{{123456789012}}:capacity-provider/{{my-daemon-capacity-provider}}"
-    ]
+    ],
+    "critical": true
 }
 ```
 
@@ -76,6 +79,7 @@ aws ecs create-daemon --cli-input-json file://create-daemon.json
 
 **Optional fields**
 + `deploymentConfiguration` - A `DaemonDeploymentConfiguration` object to customize deployment behavior.
++ `critical` - Whether the daemon is critical to instance health.
 + `tags` - Key-value pairs for tagging.
 + `propagateTags` - Tag propagation setting.
 + `clientToken` - An idempotency token.
@@ -140,11 +144,12 @@ Run the `update-daemon` command:
 aws ecs update-daemon \
     --daemon-arn arn:aws:ecs:{{us-east-1}}:{{123456789012}}:daemon/{{my-daemon-cluster}}/{{my-monitoring-daemon}} \
     --daemon-task-definition-arn arn:aws:ecs:{{us-east-1}}:{{123456789012}}:daemon-task-definition/{{my-daemon-task}}:2 \
-    --capacity-provider-arns arn:aws:ecs:{{us-east-1}}:{{123456789012}}:capacity-provider/{{my-daemon-capacity-provider}}
+    --capacity-provider-arns arn:aws:ecs:{{us-east-1}}:{{123456789012}}:capacity-provider/{{my-daemon-capacity-provider}} \
+    --no-critical
 ```
 
 **Important**
-When you provide daemon configuration settings in an `UpdateDaemon` request, Amazon ECS uses your specified settings instead of the defaults. Daemon configuration settings, including tags and the enable execute command flag, are not persisted between updates. Each call to `UpdateDaemon` must include the full set of configuration settings you want applied. Any settings omitted from the request revert to their default values.
+When you provide daemon configuration settings in an `UpdateDaemon` request, Amazon ECS uses your specified settings instead of the defaults. Daemon configuration settings, including tags and the enable execute command flag, are not persisted between updates. Each call to `UpdateDaemon` must include the full set of configuration settings you want applied. Any settings omitted from the request revert to their default values. The `critical` parameter defaults to `true`, so if you omit it from an `UpdateDaemon` request, the daemon becomes critical.
 
 ## Deleting a daemon
 <a name="managed-daemons-delete"></a>
@@ -171,7 +176,3 @@ Run the `delete-daemon` command:
 aws ecs delete-daemon \
     --daemon-arn arn:aws:ecs:{{us-east-1}}:{{123456789012}}:daemon/{{my-daemon-cluster}}/{{my-monitoring-daemon}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

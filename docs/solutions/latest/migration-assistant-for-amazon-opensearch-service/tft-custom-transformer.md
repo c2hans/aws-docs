@@ -144,7 +144,3 @@ The workflow accepts a transform pipeline and the older raw descriptor fields, s
 
 **Note**
 Use either `metadataTransforms` or one raw configuration field, not both. When you run `console metadata migrate` interactively, use the `--transformer-config-file` flag; when you declare the transformer in the migration workflow configuration, set `metadataTransforms`, `transformerConfig`, `transformerConfigBase64`, or `transformerConfigFile` on the metadata migration configuration. Load the version-matched sample with `workflow configure sample --load` and edit it with `workflow configure edit` to confirm the exact placement for your installed release.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

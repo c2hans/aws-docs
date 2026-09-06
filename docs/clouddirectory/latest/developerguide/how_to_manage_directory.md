@@ -14,7 +14,3 @@ This section describes how to maintain common directory tasks for your Cloud Dir
 + [Delete Your Directory](how_to_manage_directory_delete.md)
 + [Disable Your Directory](how_to_manage_directory_disable.md)
 + [Enable Your Directory](how_to_manage_directory_enable.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,7 +39,3 @@ This section provides migration tips that can help save time as you transition f
 + Explore AWS to locate features that can be replaced with Amazon services. They can help you maintain your database and decrease costs.
 + In MySQL, you can create multiple databases in a single instance. This approach can be useful for consolidation projects.
 + Beware of control characters when copying and pasting a script to Aurora MySQL clients. Aurora MySQL is much more sensitive to control characters than Oracle and can result in frustrating syntax errors that are hard to find.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

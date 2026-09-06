@@ -30,7 +30,3 @@ Experiment runs that are automatically created by SageMaker AI jobs and containe
    + **Bias reports** – Pre-training or post-training bias reports generated using Clarify.
    + ** Explainability**– Explainability reports generated using Clarify.
    + **Debugs** – A list of debugger rules and any issues found.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

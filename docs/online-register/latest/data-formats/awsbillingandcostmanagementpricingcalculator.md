@@ -23,7 +23,3 @@ AWS Billing And Cost Management Pricing Calculator provides the following APIs f
 | <a name="bcm-pricing-calculator-ListBillScenarios"></a>[ListBillScenarios](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_ListBillScenarios.html) | List bill scenarios | List |
 | <a name="bcm-pricing-calculator-ListWorkloadEstimateUsage"></a>[ListWorkloadEstimateUsage](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_ListWorkloadEstimateUsage.html) | List usage lines for the specified workload estimate | List |
 | <a name="bcm-pricing-calculator-ListWorkloadEstimates"></a>[ListWorkloadEstimates](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_ListWorkloadEstimates.html) | List workload estimates | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

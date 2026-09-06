@@ -408,7 +408,3 @@ Track metrics to optimize workflows and demonstrate value.
 <a name="approval-metrics"></a>
 
  **Approval efficiency**: \* Average response time: Target < 4 hours \* Approval rate by workflow type \* Escalation frequency: Target < 10% \* Approver engagement
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

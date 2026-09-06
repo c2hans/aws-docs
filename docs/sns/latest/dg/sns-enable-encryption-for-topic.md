@@ -80,7 +80,3 @@ public class SnsEncryptionExample extends Stack {
 <a name="enable-encryption-impact-on-consumers"></a>
 
 Enabling SSE does not change how subscribers consume messages. AWS manages encryption and decryption transparently. Messages remain encrypted at rest and are automatically decrypted before delivery to subscribers. For optimal security, AWS recommends enabling HTTPS for all endpoints to ensure secure transmission of messages.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

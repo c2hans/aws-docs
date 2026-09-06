@@ -14,7 +14,3 @@ RAI input deflection errors occur when the input text value or input image are d
 + **Input image** validation message: "This request has been blocked by our content filters. Please adjust your input image to submit a new request."
 
 RAI output deflection errors occur when a video is generated but it is determined to be misaligned with [our core dimensions of responsible AI](https://aws.amazon.com/ai/responsible-ai/). When this occurs, an exception is not used. Instead, the job is marked as "Failed" and the file is never written to Amazon S3. When querying the status of the job (for example, using `get_invoke()`), the response will have a `status` field value of "Failed" and a `failureMessage` field value of "The generated video has been blocked by our content filters."
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -302,7 +302,3 @@ To send messages to China, you must first register your templates through Suppor
 1. <a name="sms-support-note-10"></a>Messages sent from internationally enabled numbers such as toll-free numbers are sent on a best effort basis and may be replaced downstream from AWS to send from a shared phone number or sender ID.
 
 1. <a name="sms-support-note-11"></a>As of March 1, 2026, France does not support the dash character (-) in sender IDs. Sender IDs for France must only contain alphanumeric characters (a-z, A-Z, 0-9) without any special characters or spaces.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

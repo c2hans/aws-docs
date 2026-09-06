@@ -44,7 +44,3 @@ The performance efficiency pillar of the AWS Well-Architected Framework focuses 
   + [Amazon FSx for Windows File Server - Automatic Storage and Throughput Capacity Scaling](https://www.youtube.com/watch?v=1p0tnll1l14) on the AWS YouTube channel.
 + Use Microsoft Distributed File System (DFS) Namespaces to scale out performance across multiple file systems in the same namespace up to tens of gigabits per second (Gbps) and millions of IOPS. For more information, see [Walkthrough 6: Scaling out performance with shards](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/scale-out-performance.html) in the Amazon FSx documentation.
 + Use enhanced performance metrics to optimize the performance of your FSx for Windows File Server file systems. For more information, see the blog post [Optimizing Amazon FSx for Windows File Server performance with new metrics](https://aws.amazon.com/blogs/storage/optimizing-amazon-fsx-for-windows-file-server-performance-with-new-metrics/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,7 +59,3 @@ The following table describes the important recent changes of the AWS Toolkit fo
 | [Deploying Container Service using Fargate](deployment-ecs-aspnetcore-fargate.md) | Added information about how to deploy a containerized ASP.NET Core 2.0 application targeting Linux through Amazon ECS using the Fargate launch type. | February 16, 2018 |
 | [Deploying Container Service using EC2](deployment-ecs-aspnetcore-ec2.md) | Added information about how to deploy a containerized ASP.NET Core 2.0 application targeting Linux through Amazon ECS using the EC2 launch type. | February 16, 2018 |
 | [Credentials for Deploying to Amazon EC2 Container Service](deployment-ecs-specify-credentials.md) | Added information about how to specify credentials when deploying to Amazon EC2 container service. | February 16, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

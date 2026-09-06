@@ -86,7 +86,3 @@ The following JSON example defines an SNS action with substitution templates in 
 <a name="sns-rule-action-see-also"></a>
 + [What is Amazon Simple Notification Service?](https://docs.aws.amazon.com/sns/latest/dg/) in the *Amazon Simple Notification Service Developer Guide*
 + [Tutorial: Sending an Amazon SNS notification](iot-sns-rule.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

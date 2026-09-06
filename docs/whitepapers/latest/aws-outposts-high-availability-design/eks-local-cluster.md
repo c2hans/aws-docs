@@ -17,7 +17,3 @@ To simplify this, there is an option to host your entire EKS cluster on Outposts
 Consider the following when you deploy an Amazon EKS local cluster in Outposts:
 + During a disconnection there are not options to execute any change in the cluster itself that requires to add new worker nodes, or auto-scale a node group, as long as it depends on EC2 and ASG API calls toward the AWS parent Region.
 + There are a set of unsupported features on local clusters listed on [eksctl AWS Outposts support.](https://eksctl.io/usage/outposts/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

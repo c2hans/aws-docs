@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-translati
 # Translations
 <a name="acxd-translations"></a>
 
-Translations help you create multilingual conversational AI applications in Agentic CX Designer.
+Translations help you create multilingual conversational AI applications in agentic CX designer.
 
 Use Translations to manage localized content across your workspace so users can interact with your application in supported languages and regional dialects. This includes:
 + Predefined flow messages
@@ -16,7 +16,7 @@ Translations help keep multilingual experiences easier to manage because localiz
 
 To access Translations, select **Translations** from your workspace menu.
 
-Agentic CX Designer supports multilingual application development across supported languages and locales.
+Agentic CX designer supports multilingual application development across supported languages and locales.
 
 For voice-enabled experiences, language may also depend on the voice provider configured in the contact flow in Amazon Connect Customer.
 
@@ -116,7 +116,3 @@ Before deploying multilingual changes, test the application in each target langu
 + Flow messages are translated
 + Slot values and choices work as expected
 + Knowledge base answers return appropriately
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

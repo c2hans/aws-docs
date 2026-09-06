@@ -56,7 +56,3 @@ MySQL [migration]> select TRIGGER_SCHEMA, TRIGGER_NAME from information_schema.t
 ```
 
 The preceding output shows that all the procedures, triggers, and functions are loaded successfully to the Aurora MySQL database.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

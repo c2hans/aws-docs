@@ -67,7 +67,3 @@ Vale uses the `.vale.ini` configuration file in your project root to determine w
 1. Hover over underlined text to see the specific style suggestion.
 
 1. Fix issues by following the suggestions or consulting the style guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

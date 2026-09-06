@@ -20,7 +20,3 @@ You can use the **Subject Activity** tab in the IAM Roles Anywhere console to vi
 1. In the **Certificates** section, you can see the most recent record for certificates authenticated with IAM Roles Anywhere that have the same certificate subject.
 
 1. Choose the **Serial number** record to view or copy the certificate body.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

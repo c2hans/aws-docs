@@ -25,7 +25,3 @@ Making API calls directly from code is cumbersome, and requires you to write cod
   In [Guide to getting set up with Amazon SageMaker AI](gs.md), you train and deploy a model using an algorithm provided by SageMaker AI. That exercise shows how to use both of these libraries. For more information, see [Guide to getting set up with Amazon SageMaker AI](gs.md).
 
 + **Integrate SageMaker AI into your Apache Spark workflow**–SageMaker AI provides a library for calling its APIs from Apache Spark. With it, you can use SageMaker AI-based estimators in an Apache Spark pipeline. For more information, see [Apache Spark with Amazon SageMaker AI](apache-spark.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

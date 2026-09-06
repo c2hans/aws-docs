@@ -79,7 +79,3 @@ By using AWS Diagnostic Tools your partners can handle common application integr
 +  *Workflow execution failures: * Resolving workflow execution failures and timeouts in Amazon SWF.
 +  * Performance optimization: * Analyzing Amazon SWF workflows for performance bottlenecks and delays.
 +  * Task retries: *Handling task retries in Amazon SWF to ensure smooth workflow execution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Diagnostic Tools. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query diagnostic-tools` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -73,7 +73,3 @@ To see active resources, you should filter ServiceNow records synced from AWS Co
 **Disclaimer**
 
 Because the script compares items linked to stale sync records, it is unable to identify stale resources synced before the installation of this SMC version. When switching to sync with an Aggregator or switching from Aggregator sync to non-Aggregator sync, the script also fails to detect items that became stale between the last non-Aggregator sync and the first Aggregator sync.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

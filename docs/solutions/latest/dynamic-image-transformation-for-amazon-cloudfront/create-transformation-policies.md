@@ -189,7 +189,3 @@ Alternatively, you can create policies by providing JSON configuration directly 
  `format`: `fallback.format` (`jpg`, `jpeg`, `png`, `tiff`, `webp`, `gif`, `avif`) is the format used when `auto` cannot determine browser support.
  `autosize`: `fallback.viewportWidth` (320-3840) is the viewport width used when no viewport signal is available.
 The `fallback` object is optional; existing policies without it remain valid.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

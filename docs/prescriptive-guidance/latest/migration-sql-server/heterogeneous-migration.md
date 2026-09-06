@@ -22,7 +22,3 @@ In heterogeneous database migrations, the source and target databases engines ar
 ![Heterogeneous database migration with &AWSSCT; and &DMS;](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/b4b0328f-e283-48c1-acac-f1673fada436.png)
 
 AWS DMS handles the major data type conversions automatically during migration. The source database can be located in your own premises outside AWS, it can be a database that's running on an Amazon EC2 instance, or it can be an Amazon RDS database (see [Sources for data migration](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.html) in the AWS DMS documentation). The target can be a database in Amazon EC2, Amazon RDS, or Amazon Aurora. For information about using MySQL as a target database, see [Migrating a SQL Server Database to a MySQL-Compatible Database Engine](https://aws.amazon.com/blogs/database/migrating-a-sql-server-database-to-a-mysql-compatible-database-engine/) on the AWS Database blog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

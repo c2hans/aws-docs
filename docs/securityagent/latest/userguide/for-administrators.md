@@ -18,7 +18,3 @@ Consider an administrator setting up an Agent Space to assess the security of an
 + Configure network access by assigning an appropriate VPC, subnet, and security group for penetration testing
 
 These pre-configured resources become the options available for penetration tests and code reviews in the Agent Space. Your guardrails apply to every assessment, and each one still has flexibility for its specific needs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

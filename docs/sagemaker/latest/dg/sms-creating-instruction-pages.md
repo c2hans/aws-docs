@@ -62,7 +62,3 @@ Images provide useful examples for your workers. To add a publicly accessible im
 If your instruction image in Amazon S3 is not publicly accessible:
 + As the image URL, enter: `{{ 'https://s3.amazonaws.com/{{your-bucket-name}}/{{image-file-name}}' | grant_read_access }}`.
 + This renders the image URL with a short-lived, one-time access code appended so the worker's browser can display it. A broken image icon is displayed in the instructions editor, but previewing the tool displays the image in the rendered preview.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

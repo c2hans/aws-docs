@@ -93,7 +93,3 @@ of the second 1-minute window.
 ```
 
 You can combine the results for a final accurate count per minute by pushing the results to a downstream database. For example, you can configure the application output to persist the results to a Firehose delivery stream that can write to an Amazon Redshift table. After results are in an Amazon Redshift table, you can query the table to compute the total count group by `Ticker_Symbol`. In the case of `XYZ`, the total is accurate (6\+1) even though a record arrived late.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

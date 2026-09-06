@@ -151,7 +151,3 @@ CloudFront scales automatically to handle traffic spikes. To maximize cache hit 
 <a name="ecommerce-faq-multi-region"></a>
 
 Yes. Origin Shield adds a centralized cache layer between regional edge caches and your origin. For e-commerce workloads, it reduces origin requests for popular products (because a cache hit at Origin Shield serves all edge locations), reduces S3 GET costs for images, and smooths traffic spikes to the ALB. Enable it in the Region closest to your origin. For more information, see [Use Amazon CloudFront Origin Shield](origin-shield.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

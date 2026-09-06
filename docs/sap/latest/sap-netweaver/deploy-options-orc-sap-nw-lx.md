@@ -95,7 +95,3 @@ Note that the time to recover your database is dependent on the size of database
  *You can choose to deploy high availability and disaster recovery for the same production database instance.*
 
  **If you want to use Oracle Data Guard for HA and DR, see [Multiple Standby Databases Best Practices](https://www.oracle.com/cn/a/tech/docs/technical-resources/maa10gr2multiplestandbybp-1.pdf) **.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

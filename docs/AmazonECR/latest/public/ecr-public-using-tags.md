@@ -32,7 +32,3 @@ If you're using the Amazon ECR console, you can apply tags to new resources when
 If you're using the Amazon ECR Public API, the AWS CLI, or an AWS SDK, you can apply tags to new repositories using the `tags` parameter on the `CreateRepository` API action or use the `TagResource` API action to apply tags to existing resources. For more information, see [TagResource](https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_TagResource.html).
 
 Additionally, if tags can't be applied when a repository is created, the repository creation process is rolled back. This ensures that repositories are either created with tags or not created at all and that no repositories are left untagged at any time. By tagging repositories when they're created, you eliminate the need to run custom tagging scripts after the repository is created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ Working with AWS CodeDeploy involves the following process:
 1. Create a CodeDeploy deployment group. A CodeDeploy deployment group defines a set of individual instances targeted for a deployment. AMS has a separate change type for CodeDeploy deployment groups for EC2.
 
 1. Deploy the CodeDeploy application through the CodeDeploy deployment group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ When using scoped permissions, consider the following:
 + Scoped permissions can only be granted to or revoked from objects for the connected database, or from databases imported from a datashare.
 + You can use scoped permissions to set the default permissions on a database created from a datashare. A consumer-side datashare user who is granted scoped permissions on a shared database will automatically gain those permissions for any new object added to the datashare on the producer side.
 + Producers can grant scoped permissions on objects within a schema to a datashare. (preview)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

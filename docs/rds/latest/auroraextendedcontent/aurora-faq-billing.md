@@ -93,7 +93,3 @@ Yes. The charges for I/O operations required to replicate data across Regions co
 <a name="aurora-faq-are-there-additional-charges-for-optimized-reads-for-aurora-"></a>
 
 No. There are no additional charges for optimized reads beyond the price of Intel-based R6id and Graviton-based R6gd and R8gd instances. For more information, visit the [Aurora pricing page](https://aws.amazon.com/rds/aurora/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,7 +64,3 @@ AWS FIS supports the following scenarios for Amazon EBS volumes. These scenarios
 + **EBS: Decreasing Latency** — Explore impact of decreasing I/O latency on your application.
 
   In this scenario, we will target volumes in the current Availability Zone that have a specific tag attached. This scenario injects decreasing latency of 20 seconds, 5 seconds, 900 ms, 300 ms, and 40 ms on 10 percent of read and write operations for a volume, using five latency actions over a 15-minute period. In this scenario, you can customize the amount of latency injected, the percentage of I/O injected, and the action duration, for each latency action.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

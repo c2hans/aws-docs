@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/microsoft-onenote
 # Microsoft OneNote integration
 <a name="microsoft-onenote-integration"></a>
 
-With the Microsoft OneNote action connector, you can manage notebooks, sections, and pages from your Microsoft 365 account directly in Amazon Quick through natural language. The connector uses Microsoft Graph for OneNote operations.
+With the Microsoft OneNote connector, you can manage notebooks, sections, and pages from your Microsoft 365 account directly in Amazon Quick through natural language. The connector uses Microsoft Graph for OneNote operations.
 
 Amazon Quick supports two authentication methods for Microsoft OneNote. Choose the method that best fits your organization's security requirements.
 + **Default OAuth app** – Uses an AWS-managed OAuth application. No additional credentials are needed. Users authenticate directly with their Microsoft 365 account.
@@ -117,7 +117,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Sign-in fails (Default OAuth app or Custom OAuth app)** – Verify that your Microsoft 365 account is active and that you can sign in to OneNote on the web directly. For Custom OAuth app, confirm that the redirect URI in your Microsoft Entra ID app matches the Amazon Quick callback URL.
 + **Insufficient permissions** – Verify that the Microsoft Graph permissions configured on your Microsoft Entra ID app include the OneNote scopes required for the operations you want to use, and that admin consent has been granted if required.
 + **Invalid client credentials (Custom OAuth app)** – Verify that the Client ID and Client secret match the values in your Microsoft Entra ID app registration. Confirm that the client secret has not expired.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

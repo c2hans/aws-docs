@@ -26,7 +26,3 @@ The diagram shows the following resources:
 1. A separate VPC contains an EC2 instance that has AWS Replatform with Micro Focus delivered as an AMI of a preinstalled Micro Focus environment. Control-M Agent is installed on this instance to interact with Micro Focus utilities that provide extended job management capabilities.
 
 During the migration project, you might still be managing workload in non AWS locations on both mainframe and distributed servers. The architecture shown isn't intended to be prescriptive but to provide a general direction. We recommend that a detailed configuration, including disaster recovery options, is constructed as part of the Control-M implementation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

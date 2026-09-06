@@ -24,7 +24,3 @@ The preview or development environment does not update the application published
 1. (Optional) Expand the debug panel by choosing its header near the bottom of the screen. You can filter the panel by type of message by choosing the type of message in the **Filter logs** section. You can clear the panel's logs by choosing **Clear console**.
 
 1. While in the preview environment, you can test your application by navigating around its pages, using its components, and choosing its buttons to start automations that transfer data. Because the preview environment doesn't support live data or connections to external sources, you can view examples of the data being transferred in the debug panel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ Keep in mind that AWS managed policies might not grant least-privilege permissio
 When you are getting started, we recommend that you use AWS managed policies to grant permissions. After a predefined sample period of activity (such as 90 days) has passed, you can review the services that people and workloads have accessed. Then you can create a new customer managed policy with reduced permissions to replace the AWS managed policy. The new policy should include only the services that were accessed during the sample period. Update your permissions to remove the AWS managed policy and attach the new customer managed policy you created.
 
 For instructions on refining permissions, see [Reviewing last accessed information for your AWS account](getting-started-reduce-permissions-last-accessed.md). After you identify unused services, see [Generating a policy based on access activity](getting-started_reduce-permissions-edit-policy.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

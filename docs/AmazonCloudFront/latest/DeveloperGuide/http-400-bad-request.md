@@ -47,7 +47,3 @@ If you're using an Application Load Balancer origin with your CloudFront distrib
 + The client sent a malformed request that does not meet the HTTP specification.
 + The request header exceeds 16 KB per request line, 16 KB per single header, or 64 KB for the entire request header.
 + The client closed the connection before sending the full request body.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

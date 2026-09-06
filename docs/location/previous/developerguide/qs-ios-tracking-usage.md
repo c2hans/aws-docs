@@ -26,7 +26,3 @@ After setting up the sample code you can now run the app on an iOS simulator or 
 1. The app is also tracking the locations in the background. So, when you move the app in the background it will ask for your permission to continue tracking in background mode.
 
 1. You can stop the tracking by tapping on **Stop Tracking** button.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

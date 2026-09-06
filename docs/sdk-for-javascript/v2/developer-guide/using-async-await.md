@@ -29,7 +29,3 @@ run();
 
 **Note**
  Not all browsers support async/await. See [Async functions](https://caniuse.com/#feat=async-functions) for a list of browsers with async/await support.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for JavaScript SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

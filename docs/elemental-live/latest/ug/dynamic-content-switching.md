@@ -27,7 +27,3 @@ An input switch can occur in one of these ways:
   This method works well when you have a series of file inputs such as ad content. In this case, you let Elemental Live go through the inputs one by one. Before the series ends, enter a REST API command to activate a different input (perhaps a live input). This is to break out of the event order.
 
 You can modify the playlist to add and remove inputs. If your event runs on a 24/7 basis, you will typically remove old inputs and add a fresh set of inputs on a regular basis.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

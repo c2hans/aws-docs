@@ -65,7 +65,3 @@ The following custom slurmdbd settings are supported at the cluster level:
 + [PurgeTXNAfter](https://slurm.schedmd.com/slurmdbd.conf.html#OPT_PurgeTXNAfter)
 + [PurgeUsageAfter](https://slurm.schedmd.com/slurmdbd.conf.html#OPT_PurgeUsageAfter)
 + [TrackWCKey](https://slurm.schedmd.com/slurmdbd.conf.html#OPT_TrackWCKey)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

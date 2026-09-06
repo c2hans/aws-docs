@@ -74,7 +74,3 @@ Did you know? Statistically, the '/' URI is the most commonly targeted URI by ba
 <a name="ec2-based-caching"></a>
 
  There are some use cases, such as requiring regional TLS-termination, where customers don't want to use a global CDN like CloudFront. In this case, it's worth setting up a dynamically scaled EC2 instance running a cache such as Varnish, to protect the content source.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

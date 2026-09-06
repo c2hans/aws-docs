@@ -117,7 +117,3 @@ fields @timestamp, @message, @requestId, @duration
  The natural language prompt data you provide to train the AI model and generate relevant queries is used solely to provide and maintain your service. This data might be used to improve the quality of CloudWatch Logs Insights. Your trust and privacy, as well as the security of your content, is our highest priority. For more information, see [AWS Service Terms](https://aws.amazon.com/service-terms/) and [AWS responsible AI policy](https://aws.amazon.com/machine-learning/responsible-ai/policy/).
 
  You can opt out of having your content used to develop or improve the quality of natural language queries by creating an AI service opt-out policy. To opt-out of data collection for all CloudWatch Logs AI features, including the query generation capability, you must create an opt-out policy for CloudWatch Logs. For more information, see [AI services opt-out policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_ai-opt-out.html) in the *AWS Organizations User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

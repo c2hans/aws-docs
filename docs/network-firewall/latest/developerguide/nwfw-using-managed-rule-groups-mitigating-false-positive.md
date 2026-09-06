@@ -19,7 +19,3 @@ If you are encountering false-positive scenarios with AWS managed rule groups, p
 1. In the AWS Network Firewall console, edit the firewall policy, and locate the AWS managed rule group that you've identified. Then, disable **Run in alert mode** for the rules that aren't causing the false positive, and leave the rule group that is causing the false positive in alert mode.
 
 For more information about a rule in an AWS managed rule group, contact the [AWS Support Center](https://console.aws.amazon.com/support/home#/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

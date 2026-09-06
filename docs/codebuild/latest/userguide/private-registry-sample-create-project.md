@@ -47,7 +47,3 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/private-regis
    1.  In **External registry URL**, enter the image location and in **Registry credential - optional** enter the ARN or name of your Secrets Manager credentials.
 **Note**
  If your credentials do not exist in your current Region, then you must use the ARN. You cannot use the credential name if the credentials exist in a different Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,3 @@ T3 instances launched on a Dedicated Host launch as `standard` by default; `unli
 + [Unlimited mode examples for burstable instances](unlimited-mode-examples.md)
   + [Example 1: Explain credit use with T3 Unlimited](unlimited-mode-examples.md#t3_unlimited_example)
   + [Example 2: Explain credit use with T2 Unlimited](unlimited-mode-examples.md#t2_unlimited_example)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

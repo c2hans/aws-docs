@@ -61,7 +61,3 @@ As a good practice, each software change should go through peer reviews and requ
 The team should treat ADRs as immutable documents after the team accepts or rejects them. Changes to an existing ADR requires creating a new ADR, establishing a review process for the new ADR, and approving the ADR. If the team approves the new ADR, the owner should change the state of the old ADR to **Superseded**. The following diagram illustrates the update process.
 
 ![ADR update process](http://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/images/guide-img/19b175a3-1b40-432f-9670-fef30553db34/images/1fe62de5-6dff-4b73-997d-7c3eadb75c04.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

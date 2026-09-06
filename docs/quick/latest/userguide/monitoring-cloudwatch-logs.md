@@ -200,7 +200,7 @@ Temporary conversations that are excluded from history and memory are still deli
 + `flow_id` – Unique ID of the Amazon Quick Flow, or `-` if not a flow invocation
 + `system_text_message` – System response in the conversation
 + `user_selected_resources` – List of resources selected by user
-+ `action_connectors` – List of action connectors available in the conversation
++ `action_connectors` – List of connectors available in the conversation
 + `cited_resource` – List of cited resources
 + `file_attachment` – List of files attached by user
 + `resource_arn` – Resource ARN of your Amazon Quick account
@@ -575,7 +575,3 @@ The `file_name` field is customer content. When you configure a customer managed
 + **Encryption** – Use customer-managed AWS KMS keys for sensitive data.
 + **Access control** – Implement least-privilege IAM policies.
 + **Data retention** – Configure appropriate retention policies for your compliance requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

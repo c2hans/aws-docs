@@ -38,7 +38,3 @@ You can also update the quantity of a resource needed for a specific job when yo
 When you register a job with the [`RegisterJobDefinition` API](https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html), use the `consumableResourceList` in the `consumableResourceProperties` portion of the request to specify the consumable resources required to run an instance of the job, and the quantity of each.
 
 When you submit a job with the [`SubmitJob` API](https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.html) you can override the list of consumable resources and the quantity of each using the `consumableResourcePropertiesOverride` portion of the request. Note that this only overrides the quantity of the resource needed by each instance of the job, not the total quantity available.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

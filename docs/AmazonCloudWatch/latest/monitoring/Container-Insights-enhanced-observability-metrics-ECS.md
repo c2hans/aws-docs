@@ -109,7 +109,3 @@ The following metrics are available when you complete the steps in [Deploying th
 | `instance_number_of_running_tasks` | `ClusterName` | The number of running tasks on a single EC2 instance in the cluster.<br />Unit: Count |
 | `InstanceGPULimit` | `ClusterName`<br />`ClusterName`, `CapacityProviderName`<br />`ClusterName`, `CapacityProviderName`, `ContainerInstanceId`, `EC2InstanceId` | The total number of GPUs available on the instance.<br />Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.<br />Unit: Count |
 | `InstanceGPUUsageTotal` | Same as `InstanceGPULimit`. | The number of GPUs currently allocated to running tasks on the instance.<br />Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.<br />Unit: Count |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

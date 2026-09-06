@@ -60,7 +60,3 @@ When a training job runs on multiple machines in distributed mode, each machine 
 <a name="automatic-model-tuning-random-seed"></a>
 
 You can specify an integer as a random seed for hyperparameter tuning and use that seed during hyperparameter generation. Later, you can use the same seed to reproduce hyperparameter configurations that are consistent with your previous results. For random search and Hyperband strategies, using the same random seed can provide up to 100% reproducibility of the previous hyperparameter configuration for the same tuning job. For Bayesian strategy, using the same random seed will improve reproducibility for the same tuning job.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

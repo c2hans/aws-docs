@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/using-notebooks-overview.
 +  save the job
 
  After your notebook is saved, your notebook is a full AWS Glue job. You can manage all aspects of the job, such as scheduling jobs runs, setting job parameters, and viewing the job run history right along side your notebook.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

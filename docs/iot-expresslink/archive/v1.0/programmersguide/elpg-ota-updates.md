@@ -452,7 +452,3 @@ If the module is unable to apply the new module images (because of version incom
 
 **8.13.1.8**   ERR23 INVALID SIGNATURE
 If the image signature check fails, the module returns 'INVALID SIGNATURE'. The update process is stopped and any OTA memory used is freed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

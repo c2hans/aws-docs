@@ -18,7 +18,3 @@ A user can have both a PCoIP and a DCV WorkSpace as long as the two WorkSpaces a
 If you are setting up multiple WorkSpaces for use with cross-Region redirection, you must set up the WorkSpaces in different directories in different AWS Regions, and you must use the same usernames in each directory. For more information about cross-Region redirection, see [Cross-Region redirection for WorkSpaces Personal](cross-region-redirection.md).
 
 To switch between the WorkSpaces, the user logs in with the username and registration code associated with a particular Workspace. If the user is using a 3.0\+ version of the WorkSpaces client applications for Windows, macOS, or Linux, the user can assign different names to the WorkSpaces by going to **Settings**, **Manage Login Information** in the client application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

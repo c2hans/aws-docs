@@ -55,7 +55,3 @@ There's a series of steps that Terraform performs after initialization and befor
 After the dependency graph is created, Terraform determines what needs to be done during the deployment. It compares the dependency graph with the most recent state file. The result of this process is called a *plan*, and it is very much like a CloudFormation [change set](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-changesets-create.html). You can see the current plan by using the [terraform plan](https://developer.hashicorp.com/terraform/cli/commands/plan) command.
 
 As a best practice, it's recommended to stay as close as possible to the standard module structure. In cases where your configuration files are becoming too long to efficiently manage and logical separations could simplify management, you can spread your code across several files. Keep in mind how the dependency graph and plan process works to make your stacks run as efficiently as possible.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

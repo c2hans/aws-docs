@@ -110,7 +110,3 @@ When you complete the process of configuring the VPC endpoint, you can test the 
 1. Send a test email. For the SMTP endpoint, use the SES SMTP interface. For the API endpoint, use the SES CLI or API.
 **Note**
 You have to verify an email address or domain before you can send email through Amazon SES. For more information about verifying identities, see [Creating and verifying identities in Amazon SES](creating-identities.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

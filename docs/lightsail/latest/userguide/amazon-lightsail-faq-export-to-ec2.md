@@ -39,7 +39,3 @@ The export feature allows you to export manual Lightsail disk snapshots but does
 <a name="what-lightsail-resources-can-i-export"></a>
 
 The Lightsail export to Amazon EC2 feature is designed to support the export of Linux and Windows instance snapshots to Amazon EC2. It also supports the export of block storage disk snapshots to Amazon EBS. It does not currently support the export of databases, container services, content delivery network (CDN) distributions, load balancers, static IPs, and DNS records. Additionally, snapshots of Django, Ghost, and cPanel & WHM instances cannot be exported to Amazon EC2 at this time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

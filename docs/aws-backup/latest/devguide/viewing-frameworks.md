@@ -34,7 +34,3 @@ The **Summary** section lists the following statuses from left to right:
 The **Controls** section shows you the following information:
 + **Control status** refers to each control's compliance status. A control can be `Compliant`, meaning all resources pass that evaluation; `Non-compliant`, meaning that at least one resource did not pass that evaluation, or `Insufficient data`, meaning the control found no resources within the evaluation scope to evaluate.
 + **Evaluation scope** might limit each control to one or more **Resource types**, one **Resource ID**, or one **Tag key** and **Tag value**, based on how you customized your control when creating your audit framework. If all fields are empty (as shown by a dash, "-"), then the control evaluates all applicable resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

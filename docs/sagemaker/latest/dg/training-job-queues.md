@@ -36,7 +36,3 @@ To ensure you have the required capacity when you need it, you can use SageMaker
 For a tutorial on how to set up an AWS Batch job queue and submit SageMaker AI training jobs, see [Getting started with AWS Batch on SageMaker AI](https://docs.aws.amazon.com/batch/latest/userguide/getting-started-sagemaker.html) in the *AWS Batch User Guide*.
 
 For Jupyter notebooks that show how to use the `aws_batch` module in the SageMaker AI Python SDK, see the [AWS Batch for SageMaker AI Training jobs notebook examples in the amazon-sagemaker-examples GitHub repository](https://github.com/aws/amazon-sagemaker-examples/tree/default/%20%20%20%20%20%20build_and_train_models/sm-training-queues).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 +  [Infrastructure IS Code with the AWS CDK](https://www.youtube.com/watch?v=Lh-kVC2r2AU)
 +  [Best practices for using the AWS CDK in TypeScript to create IaC projects](https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/introduction.html)
 +  [Adding the "AWS CDK bootstrap" action in Amazon CodeCatalyst](https://docs.aws.amazon.com/codecatalyst/latest/userguide/cdk-boot-action.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

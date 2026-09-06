@@ -110,7 +110,3 @@ A: Not from the Amazon Bedrock side. Request metadata is opt-in per call, and Am
 **Q: Which fields do I set on each call, and which are automatic?**
 
 A: Almost everything in the log record is captured automatically by Amazon Bedrock: `accountId`, `region`, `modelId`, `requestId`, `identity.arn`, the input and output token counts, and the schema metadata. The only field you supply per call is `requestMetadata`. You don't set `modelId` as a tag; it's the model or inference profile you invoked.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

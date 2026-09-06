@@ -109,7 +109,3 @@ You can use this app to see how the MapLibre map control behaves. You can try us
 ![Map of Washington DC area with JSON Response heading, showing Amazon Location Service tutorial interface.](http://docs.aws.amazon.com/location/previous/developerguide/images/quickstart-map.png)
 
 Your app is nearly complete. In the next section, you will handle choosing a location on the map, and show the address of the location chosen. You will also show the resulting JSON on the page, to see the full results.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

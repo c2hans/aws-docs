@@ -71,7 +71,3 @@ The stickiness duration doesn't refresh, but is based on the expiration configur
 + When you reload the page, the cookies received in the initial page load are automatically sent back to the Application Load Balancer.
   + If the cookie has expired (that is, 10 seconds have elapsed since you placed the last call), the Application Load Balancer uses new logic to determine which EC2 instance to route traffic to.
   + If the cookie has not expired, the Application Load Balancer routes traffic to the same EC2 instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -303,7 +303,3 @@ wspool-logs-us-west-2-1234567890123-abcdefg/test-stack/test-fleet/custom/a0bcb1d
 ```
 
 This example folder structure contains one log file for a user context session start script, and one log file for a system context session start script, if applicable.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

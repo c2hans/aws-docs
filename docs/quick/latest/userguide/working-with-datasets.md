@@ -22,7 +22,3 @@ This section covers the complete dataset management workflow, from editing and v
 + [Running queries as an IAM role in Amazon Quick](datasource-run-as-role.md)
 + [Deleting datasets](delete-a-data-set.md)
 + [Adding a dataset to an analysis](adding-a-data-set-to-an-analysis.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

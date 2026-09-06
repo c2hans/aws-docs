@@ -54,7 +54,3 @@ Determine which DNS protocols your clients will use:
 
 Firewall and security groups
 Ensure your network firewalls and security groups allow outbound traffic to Route 53 Global Resolver anycast IP addresses on the appropriate ports (53 for Do53, 443 for DoH, 853 for DoT).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

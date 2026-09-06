@@ -19,7 +19,3 @@ SageMaker AI provides image processing algorithms that are used for image classi
 | Object Detection | train and validation, (optionally) train\_annotation, validation\_annotation, and model | File or Pipe | recordIO or image files (.jpg or .png)  | GPU | Yes |
 | Object Detection - TensorFlow | training and validation | File | image files (.jpg, .jpeg, or .png)  | GPU | Yes (only across multiple GPUs on a single instance) |
 | Semantic Segmentation | train and validation, train\_annotation, validation\_annotation, and (optionally) label\_map and model | File or Pipe | Image files | GPU (single instance only) | No |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

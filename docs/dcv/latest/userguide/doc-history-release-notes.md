@@ -515,7 +515,3 @@ The following table describes the documentation for this release of Amazon DCV.
 | Updated Parameter reference | The parameter reference was updated. For more information, see [Amazon DCV Server Parameter reference](https://docs.aws.amazon.com/dcv/latest/adminguide/config-param-ref.html) in the Amazon DCV Administrator Guide. | August 07, 2018 |
 | USB remotization | Amazon DCV enables clients to use specialized USB devices, such as 3D pointing devices or graphic tablets. For more information, see [Enabling USB Remotization](https://docs.aws.amazon.com/dcv/latest/adminguide/manage-usb-remote.html) in the Amazon DCV Administrator Guide. | August 07, 2018 |
 | Initial release of Amazon DCV | First publication of this content. | June 05, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

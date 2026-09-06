@@ -31,7 +31,3 @@ Then, choose **Save step.**
 Use the Region switch plan execution block to create parent workflows with parent/child relationships. Note that this execution block does not support additional levels of child plans, and limits the number of parent child plans. Child plans must support the same Regions that the parent plan supports, and must have the same recovery approach as the parent plan (that is, active/active or active/passive).
 
 This block supports both graceful and ungraceful execution modes. Ungraceful settings will start child plans with their ungraceful configuration. If Region switch block was executed gracefully, and then switched to ungraceful execution mode, any child plan will also switch to ungraceful execution mode.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

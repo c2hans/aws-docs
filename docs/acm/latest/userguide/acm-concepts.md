@@ -281,7 +281,3 @@ In order for a web browser to trust the identity of a website, the browser must 
 <a name="concept-wildcard"></a>
 
 A wildcard certificate secures multiple subdomains at the same level by using an asterisk (`*`) in the leftmost position of the domain name. For example, a certificate for `*.example.com` protects `login.example.com` and `test.example.com`. A wildcard protects only one subdomain level: it does not protect the [apex domain](#concept-dn) `example.com`, or multi-level subdomains such as `test.login.example.com`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

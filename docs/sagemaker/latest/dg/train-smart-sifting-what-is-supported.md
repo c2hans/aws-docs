@@ -36,7 +36,3 @@ The [containers packaged with the SageMaker smart sifting library](https://githu
 <a name="train-smart-sifting-instance-types"></a>
 
 You can use SageMaker smart sifting for any PyTorch training jobs on any instance types. We recommend that you use P4d, P4de, or P5 instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

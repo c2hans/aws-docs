@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 <a name="integration-with-aws-partners"></a>
 
  If a connection between the IoT device and [AWS IoT Core](https://aws.amazon.com/iot-core/) endpoint is not secured, for example, through TLS, Datagram Transport Layer Security (DTLS), or virtual private network (VPN), an additional security consideration is necessary. For example, such a situation could arise if a software component in customer’s AWS account acts as an intermediary, receives data from the IoT device, and forwards data to AWS IoT Core. To ingest messages between software components in customer’s AWS account to AWS IoT Core, AWS recommends always using [AWS IoT Data Plane application programming interfaces (APIs)](https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_AWS_IoT_Data_Plane.html) authorized by IAM mechanisms.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

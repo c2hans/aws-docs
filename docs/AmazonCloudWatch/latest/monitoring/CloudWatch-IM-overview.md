@@ -22,7 +22,3 @@ To change the thresholds for health events, go to the **Configure** page.
 Internet Monitor automatically evaluates the AWS Region that your current application configuration uses most (that is, the Region with the highest client volume), and determines if another Region could provide a better aggregate time to first byte (TTFB) for your clients.
 Note that because this is the aggregate TTFB, if you move traffic from one Region to another, TTFB for most locations is expected to improve but clients in some Regions could see no change or reduced performance..
 To explore more latency improvement suggestions, including details at more granular levels (such as by client location), see the **Optimize** page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

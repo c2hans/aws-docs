@@ -38,7 +38,3 @@ If you already created a registration when requesting the origination identity t
    + **US 10DLC Brand registration** – [10DLC brand registration form](registrations-10dlc-company.md).
    + **US-10DLC campaign registration** – [10DLC campaign registration form](registrations-10dlc-register-campaign.md).
    + **Singapore sender ID registration** – [Singapore sender ID registration form](registrations-sg-form.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

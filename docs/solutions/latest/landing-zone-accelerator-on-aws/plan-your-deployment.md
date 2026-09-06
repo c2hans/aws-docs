@@ -15,7 +15,3 @@ This solution uses the AWS Control Tower and AWS Organizations services, which a
 To deploy this solution to AWS GovCloud(US) Regions, see [Deploy to AWS GovCloud(US) Regions](united-states-us-federal-and-department-of-defense-dod.md).
 
 To deploy this solution to a [Region that is deactivated by default](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html#rande-manage-enable), see [Opt-in Regions](opt-in-regions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

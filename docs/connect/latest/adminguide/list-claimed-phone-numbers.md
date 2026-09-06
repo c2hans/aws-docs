@@ -24,7 +24,3 @@ You can list the phone numbers claimed to your Connect Customer instance by usin
    + It does not download all of the phone numbers claimed by your Connect Customer instance.
    + To download numbers listed on a page 2 of results, you need to paginate to page 2 and then choose **Download CSV** again.
 ![The Phone numbers page, the Download CSV button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/download-phonenumbers-csv.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

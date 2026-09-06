@@ -110,7 +110,3 @@ For more information about these settings, see the [CodeDeploy AppSpec file refe
 
 **Important**
 The locations and numbers of spaces between each of the items in this file are important. If the spacing is incorrect, CodeDeploy will raise an error that may be difficult to debug. For more information, see [AppSpec File spacing](reference-appspec-file.md#reference-appspec-file-spacing).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

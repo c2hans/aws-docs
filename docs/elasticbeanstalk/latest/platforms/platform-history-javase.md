@@ -2287,7 +2287,3 @@ The following Elastic Beanstalk platform versions for Java SE were current betwe
 | --- | --- | --- | --- | --- |
 | **Java 8 version 2.0.2**<br />*64bit Amazon Linux 2015.03 v2.0.2 running Java 8* | 2015.03 | Java 1.8.0\_51 | Ant 1.9.6<br />Gradle 2.7<br />Maven 3.3.3 | nginx 1.6.2 |
 | **Java 7 version 2.0.2**<br />*64bit Amazon Linux 2015.03 v2.0.2 running Java 7* | 2015.03 | Java 1.7.0\_85 | Ant 1.9.6<br />Gradle 2.7<br />Maven 3.3.3 | nginx 1.6.2 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

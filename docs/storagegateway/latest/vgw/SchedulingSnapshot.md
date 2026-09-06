@@ -23,7 +23,3 @@ By using the following steps, you can edit the snapshot schedule for a volume.
 1. For **Actions**, choose **Edit snapshot schedule**.
 
 1. In the **Edit snapshot schedule** dialog box, modify the schedule, and then choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

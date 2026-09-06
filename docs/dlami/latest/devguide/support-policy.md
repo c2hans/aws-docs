@@ -178,7 +178,3 @@ Stay up-to-date with DLAMI frameworks and versions using the [AWS Deep Learning 
 <a name="support-policy-faq-anaconda-repository"></a>
 
 Anaconda shifted to a commercial licensing model for certain users. Actively maintained DLAMIs have been migrated to the publicly available open-source version of Conda ([conda-forge](https://anaconda.org/conda-forge)) from the Anaconda channel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

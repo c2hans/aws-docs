@@ -53,7 +53,3 @@ For an introduction or a refresher, see [Security, identity, and compliance on A
 **Compliance & data privacy** – AWS gives you a comprehensive view of your compliance status and continuously monitors your environment by using automated compliance checks based on the AWS best practices and industry standards your business follows.** **
 + [AWS Artifact](https://aws.amazon.com/artifact/) – Use a no-cost, self-service portal to get on-demand access to AWS security and compliance reports and select online agreements.
 + [AWS Audit Manager](https://aws.amazon.com/audit-manager/) – Continuously audit your AWS usage to simplify how you assess risk and compliance with regulations and industry standards.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

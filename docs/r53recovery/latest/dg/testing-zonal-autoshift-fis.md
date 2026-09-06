@@ -26,7 +26,3 @@ AWS FIS manages the zonal shift using the [StartZonalShift](https://docs.aws.ama
 There can be no more than one applied zonal shift at a given time. That is, only one practice run zonal shift, customer-initiated zonal shift, autoshift, or AWS FIS experiment for the resource. When a second zonal shift is started, ARC follows a precedence to determine which zonal shift type is in effect for a resource. For more information on precedence for zonal shifts, see [Precedence for zonal shifts](arc-zonal-autoshift.how-it-works.precedence.md).
 
 For more information about AWS FIS recovery actions, refer to the [AWS FIS recovery action](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html#fis-actions-recovery.html) in the *AWS Fault Injection Service User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

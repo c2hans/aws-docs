@@ -25,7 +25,3 @@ Full functionality of the AWS Step Functions is available in your AMS account.
 **Q: What are the prerequisites or dependencies to using AWS Step Functions in my AMS account?**
 
 At runtime, the role used by Step Functions must have access to the services used by the step function. For example, a step function could depend on Lambda functions. Someone authoring a step function is likely to be creating Lambda functions at the same time and would have to request access to that service as well.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ For information about working with other aspects of your repository in CodeCommi
 + [Browse files in an AWS CodeCommit repository](how-to-browse.md)
 + [Create or add a file to an AWS CodeCommit repository](how-to-create-file.md)
 + [Edit the contents of a file in an AWS CodeCommit repository](how-to-edit-file.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

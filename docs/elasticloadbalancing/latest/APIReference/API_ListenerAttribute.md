@@ -14,6 +14,8 @@ Information about a listener attribute.
 The name of the attribute.
 The following attribute is supported by Network Load Balancers, and Gateway Load Balancers.
 +  `tcp.idle_timeout.seconds` - The tcp idle timeout value, in seconds. The valid range is 60-6000 seconds. The default is 350 seconds.
+The following attribute is only supported by Gateway Load Balancers:
++  `send_tcp_reset.on_idle_timeout.enabled` – Specifies whether the Gateway Load Balancer sends a TCP Reset to the sender of traffic when a TCP flow's idle timeout expires. This attribute also applies to non-SYN TCP packets received for flows that are not in the flow table. The value is `true` or `false`. The default is `false`.
 The following attributes are only supported by Application Load Balancers.
 +  `routing.http.request.x_amzn_mtls_clientcert_serial_number.header_name` - Enables you to modify the header name of the **X-Amzn-Mtls-Clientcert-Serial-Number** HTTP request header.
 +  `routing.http.request.x_amzn_mtls_clientcert_issuer.header_name` - Enables you to modify the header name of the **X-Amzn-Mtls-Clientcert-Issuer** HTTP request header.
@@ -51,7 +53,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/elasticloadbalancingv2-2015-12-01/ListenerAttribute)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/elasticloadbalancingv2-2015-12-01/ListenerAttribute)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/elasticloadbalancingv2-2015-12-01/ListenerAttribute)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

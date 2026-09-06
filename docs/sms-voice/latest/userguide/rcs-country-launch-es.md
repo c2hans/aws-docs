@@ -48,7 +48,3 @@ For detailed instructions on the CNMC registration process (including portal fie
 We are currently processing new information about the specific field values customers need to enter on the CNMC portal for RCS agent registrations. We will update this documentation as soon as we have concrete details. This does not affect your ability to submit a Spain RCS country launch registration in the AWS End User Messaging console.
 
 For general compliance guidance that applies to all countries, see [RCS country launch compliance guide](rcs-country-launch-compliance.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

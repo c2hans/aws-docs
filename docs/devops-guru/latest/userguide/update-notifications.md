@@ -123,7 +123,3 @@ An Amazon SNS topic is a resource that contains an AWS Identity and Access Manag
 ```
 
 These permissions are required for DevOps Guru to publish notifications using a topic. If you prefer to not have these permissions on the topic, you can safely remove them and the topic will continue to work as it did before you chose it. However, if these appended permissions are removed, DevOps Guru cannot use the topic to generate notifications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

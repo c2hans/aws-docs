@@ -22,7 +22,3 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Resilience in AWS Data Transfer Terminal](disaster-recovery-resiliency.md)
 + [Logging and monitoring in Data Transfer Terminal](logging-using-cloudtrail.md)
 + [Infrastructure Security in AWS Data Transfer Terminal](infrastructure-security.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Transfer Terminal. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datatransferterminal` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

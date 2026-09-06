@@ -116,7 +116,3 @@ Additional configuration tests:
 Projen is an open-source tool that custom blueprints use to keep themselves updated and consistent. Blueprints come as Projen packages because this framework provides you with the ability to build, bundle, and publish projects, and you can use the interface to manage a project's configurations and settings.
 
 You can use Projen to update blueprints at scale, even after they're created. The Projen tool is the underlying technology behind the blueprint synthesis that generates a project bundle. Projen owns the configuration for a project, and it shouldn't impact you as a blueprint author. You can run `yarn projen` to regenerate the configuration of your project after adding dependencies, or you can change options in the `projenrc.ts` file. Projen is also the underlying generation tool for custom blueprints to synthesize a project. For more information, see the [projen GitHub page](https://github.com/projen/projen). To learn more about working with Projen, see the [Projen documentation](http://projen.io/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

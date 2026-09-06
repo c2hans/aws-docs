@@ -226,7 +226,3 @@ Create the EC2 instance that uses Kinesis Agent for Windows to stream log record
 <a name="kaw-ds2s3-tutorial-next"></a>
 
 [Step 2: Install, Configure, and Run Kinesis Agent for Windows](kaw-ds2s3-tutorial-step2.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Agent for Windows. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesis-agent-windows` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

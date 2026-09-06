@@ -12,7 +12,3 @@ The following sections provide customers with information to assist in conductin
 + Step 4: Adoption of supplementary measures (if required)
 + Step 5: Procedural steps for supplementary measures
 + Step 6: Re-evaluation
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

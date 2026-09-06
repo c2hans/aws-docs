@@ -398,7 +398,3 @@ Sources [1] Learn how to use text splitters in LangChain
 Based on the chat results, the developer can use the function and navigate to the source of the information.
 
 In general, advanced topics and questions require more specific context within the prompt when you chat with Amazon Q Developer. If you believe that the results from your chat aren't accurate, use the thumbs-down icon to provide feedback about the Amazon Q response. Amazon Q Developer continuously uses feedback to improve future releases. For interactions that produced positive results, it's useful to provide your feedback by using the thumbs-up icon.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

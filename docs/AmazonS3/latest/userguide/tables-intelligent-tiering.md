@@ -88,7 +88,3 @@ The following usage types are available in your billing reports:
 | {{region}}-Tables-TimedStorage-INT-AIA-ByteHrs | GB-Month | Daily | The number of GB-months that data was stored in the S3 Intelligent-Tiering Archive Instant Access of S3 Intelligent-Tiering storage |
 | {{region}}-Tables-Requests-INT-Tier1 | Count | Hourly | The number of PUT, COPY, or POST requests on S3 Tables Intelligent-Tiering objects |
 | {{region}}-Tables-Requests-INT-Tier2 | Count | Hourly | The number of GET and all other non-Tier1 requests for S3 Tables Intelligent-Tiering objects |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

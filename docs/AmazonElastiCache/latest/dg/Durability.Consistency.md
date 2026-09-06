@@ -12,7 +12,3 @@ Primary nodes are strongly consistent. Successful write operations are durably s
 **Asynchronous writes**
 
 During normal operation, asynchronous writes provide the same consistency behavior as synchronous writes. However, as the write operations are returned to clients before being durably stored in the Multi-AZ transactional log, strong consistency is not preserved across primary failovers. In the event of a failure, up to 10 seconds of acknowledged write operations may be lost, meaning that after a failover, read operations on the new primary may not reflect all previously acknowledged writes. Asynchronous writes is not recommended for workloads that require strong consistency guarantees.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

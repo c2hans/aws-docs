@@ -36,7 +36,3 @@ You are responsible for understanding the SMPTE 2110 specification. We provide t
 + [Format of an SDP file for audio](2120-sdp-audio.md)
 + [Format of an SDP file for ancillary data](2120-sdp-ancillary.md)
 + [SDP file with 2022-7 information](2120-sdp-2022-7.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

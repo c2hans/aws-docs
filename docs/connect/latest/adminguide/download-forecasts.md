@@ -19,7 +19,3 @@ You can download a forecast so you can inspect it offline. A forecast is downloa
 
 1. We recommend choosing **choose here**. With this option, you can choose the name of the file download and where to save it, as shown in the following image. Otherwise, the file is saved to your **Downloads** folder and its name is a generated number.
 ![Forecast page, the choose here button to start downloading a forecast, open with Excel.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wfm-forecasting-download.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

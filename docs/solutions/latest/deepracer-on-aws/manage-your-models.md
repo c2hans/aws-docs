@@ -18,7 +18,3 @@ If you would like to keep the exact same configuration as the original model, si
 <a name="delete-a-model"></a>
 
 You can delete any model that you’ve created or imported. To do this, from the home page, click the **Your models** tab in the left sidebar, and select the model that you would like to delete. With the model selected, click **Actions** > **Delete**. You will be presented with a confirmation dialog. If you would like to proceed, click **Delete**. This action is permanent and cannot be undone.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,7 +43,3 @@ The following table lists the different DRM [system IDs](https://dashif.org/iden
 | --- |--- |--- |--- |
 | System IDs – Support matrix for DRM system | Apple FairPlay | Google Widevine | Microsoft PlayReady |
 |  System ID | 94ce86fb-07ff-4f43-adb8-93d2fa968ca2 | edef8ba9-79d6-4ace-a3c8-27dcd51d21ed | 9a04f079-9840-4286-ab92-e65be0885f95 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

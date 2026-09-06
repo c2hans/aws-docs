@@ -222,7 +222,3 @@ aws sso-admin update-instance \
  You can find the ARN of a KMS key in the AWS KMS console. Choose Customer managed keys on the left, click the key whose ARN you want to look up, and you'll see it in the General configuration section. The ARN follows the pattern documented in the AWS KMS resource types section of the Service Authorization Reference.
 
  See the AWS Key Management Service Developer Guide for more information about Key policies in AWS KMS and troubleshooting AWS KMS permissions. For more information about IAM policies and their JSON representation see the IAM User Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

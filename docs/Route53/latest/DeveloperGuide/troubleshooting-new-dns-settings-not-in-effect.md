@@ -99,7 +99,3 @@ By changing the name servers that are associated with your domain registration, 
   1. In the hosted zone that you got name servers for in step 1, confirm that the NS record is using the same four name servers. If not, update the NS record. See [Editing records](resource-record-sets-editing.md).
 
   1. Update the domain registration to use the name servers that you got in step 1. See [Adding or changing name servers or glue records](domain-name-servers-glue-records.md#domain-name-servers-glue-records-adding-changing).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

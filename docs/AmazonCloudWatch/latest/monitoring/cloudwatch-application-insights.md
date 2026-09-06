@@ -22,7 +22,3 @@ When you add your applications to Amazon CloudWatch Application Insights, it sca
 + [Tutorial: Set up monitoring for SAP NetWeaver](appinsights-tutorial-sap-netweaver.md)
 + [View and troubleshoot Application Insights](appinsights-troubleshooting.md)
 + [Supported logs and metrics](appinsights-logs-and-metrics.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

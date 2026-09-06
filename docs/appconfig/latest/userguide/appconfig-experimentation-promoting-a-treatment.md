@@ -24,7 +24,3 @@ This approach provides a seamless transition from your split traffic state (for 
 If you stop the experiment before updating the flag, AWS AppConfig stops managing the flag and your application immediately serves whatever version of the flag is currently deployed – typically the default value. Users see the default experience until you update and redeploy the flag with the winning treatment values. This approach does not provide a seamless transition.
 
 For more information about deploying configurations, see [Deploying a configuration](appconfig-deploying.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

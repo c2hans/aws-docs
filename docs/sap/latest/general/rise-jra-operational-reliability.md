@@ -65,7 +65,3 @@ For implementation details, see [Distributed Resiliency of SAP CAP applications 
 Each implementation pattern requires careful consideration of data consistency, authentication mechanisms, and operational processes to ensure seamless user experiences during normal operations and failover events.
 
 For broader architectural guidance, refer to [SAP BTP Multi-Region reference architectures for High Availability](https://community.sap.com/t5/-/-/m-p/13524196) and AWS's guide on [Creating Disaster Recovery Mechanisms Using Amazon Route 53](https://aws.amazon.com/blogs/networking-and-content-delivery/creating-disaster-recovery-mechanisms-using-amazon-route-53/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

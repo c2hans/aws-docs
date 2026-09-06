@@ -237,7 +237,3 @@ Use either of the following methods to disable client-side LDAPS.
 <a name="certificate_enrollment_issue"></a>
 
 The process to enroll your AWS Managed Microsoft AD domain controllers with the CA certificates can take up to 30 minutes. If you experience issues with the certificate enrollment and want to restart your AWS Managed Microsoft AD domain controllers, you can contact Support. To create a support case, see [Creating support cases and case management](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

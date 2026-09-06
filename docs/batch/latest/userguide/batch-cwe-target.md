@@ -26,7 +26,3 @@ Before you can submit AWS Batch jobs with EventBridge rules and targets, the Eve
 + [Tutorial: Create a scheduled AWS Batch job](scheduled-batch-job.md)
 + [Tutorial: Create a rule with an event pattern](event-pattern-batch-job.md)
 + [Tutorial: Pass event information to an AWS Batch target on a schedule using the EventBridge input transformer](cwe-input-transformer.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

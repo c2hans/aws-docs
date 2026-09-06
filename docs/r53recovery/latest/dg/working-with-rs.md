@@ -37,7 +37,3 @@ The following sections provide detailed information and steps for creating a pla
 + [Execute a plan](plan-execution-rs.md)
 
 The procedures in this section illustrate how to work with plans, workflows, execution blocks, and triggers by using the AWS Management Console. To work with Region switch API operations instead, see [Region switch API operations](actions.region-switch.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Customize and deploy Locust control and worker pods within the EKS cluster using the provided deployment files, enabling scalable and manageable load generation.
 +  Record system behavior and metrics during load testing in an operational runbook to assist with future troubleshooting and establish performance baselines.
 +  Use fault injection experiments to simulate real-world disruptions and uncover hidden issues in system performance, observability, and resilience.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

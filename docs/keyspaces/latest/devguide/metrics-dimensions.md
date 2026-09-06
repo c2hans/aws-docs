@@ -81,7 +81,3 @@ The metrics for Amazon Keyspaces are qualified by the values for the account, ta
 |  Keyspace  | This dimension limits the data to a specific keyspace. This value can be any keyspace in the current Region and the current AWS account.  |
 |  TableName  | This dimension limits the data to a specific table. This value can be any table name in the current Region and the current AWS account. If the table name is not unique within the account, you must also specify `Keyspace`. |
 |  Operation  | This dimension limits the data to one of the following Amazon Keyspaces Streams API operations: `GetRecords`, `GetStream` `GetShardIterator`, and `ListStreams`.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

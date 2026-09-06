@@ -67,7 +67,3 @@ You can add context keys to the IAM policy that creates a domain. This restricts
   **Implemented as part of `DefaultUserSettings`:**`S3KmsKeyId` in `DefaultSpaceSettings.SharingSettings`.
 
  You cannot restrict users to passing incompatible values when using context keys for the defaults. For example, the values for `SageMakerImageArn` set as part of `DefaultUserSettings` and `DefaultSpaceSettings` must be compatible. You cannot set incompatible default values.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

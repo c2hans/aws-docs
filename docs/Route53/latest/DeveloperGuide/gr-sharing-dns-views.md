@@ -35,7 +35,3 @@ Hosted zone associations that a consumer creates on a shared DNS view count towa
 
 **Data in opt-in AWS Regions**
 The owner's global resolver might run in opt-in AWS Regions that the consumer hasn't turned on. When a consumer associates a private hosted zone with a shared DNS view, the hosted zone ID and domain name are copied to all Regions where the owner's global resolver runs. This includes opt-in Regions that the consumer hasn't turned on.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

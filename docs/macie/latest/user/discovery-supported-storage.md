@@ -61,7 +61,3 @@ If you configure a sensitive data discovery job to analyze S3 objects that don't
 Similarly, if you configure Macie to perform automated sensitive data discovery, unclassifiable objects aren't eligible for selection and analysis. Macie selects only those objects that use a supported Amazon S3 storage class and a supported file or storage format.
 
 To identify S3 buckets that store unclassifiable objects, you can [filter your S3 bucket inventory](monitoring-s3-inventory-filter.md). For each bucket in your inventory, there are fields that report the number and total storage size of unclassifiable objects in the bucket.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

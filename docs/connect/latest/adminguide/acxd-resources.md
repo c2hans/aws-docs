@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-resources
 # Working with resources
 <a name="acxd-resources"></a>
 
-Resources are reusable building blocks that help you create, manage, and scale experiences in Agentic CX Designer.
+Resources are reusable building blocks that help you create, manage, and scale experiences in agentic CX designer.
 
 Instead of configuring the same content, data, or settings repeatedly, you can create resources once and reuse them wherever they're needed in the workspace. This keeps things easier to manage and helps teams build more consistent conversational AI applications.
 
@@ -29,7 +29,3 @@ To access Resources, select it from your workspace navigation and select the res
 + [Secrets](acxd-secrets.md)
 + [Custom slots](acxd-custom-slots.md)
 + [Resource tags](acxd-resource-tags.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

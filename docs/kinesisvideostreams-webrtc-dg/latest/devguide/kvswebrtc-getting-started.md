@@ -11,7 +11,3 @@ This section describes how to perform the following tasks in Amazon Kinesis Vide
 + [Set up Kinesis Video Streams with WebRTC on Ingenic T31 hardware.](quick-start-t31.md)
 
 If you are new to Kinesis Video Streams with WebRTC, we recommend that you read [How it works](kvswebrtc-how-it-works.md) first.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams-webrtc-dg` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

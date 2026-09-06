@@ -114,7 +114,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/re
  Protecting data in transit, enterprises can and often choose to use encrypted connections (HTTPS, SSL, TLS) to protect the contents of data in transit. Many AWS streaming services offer protection of data at rest through encryption.
 +  AWS Well-Architected Framework Security Pillar: [AWS Identity and Access Management](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/identity-management.html)
 +  AWS Lake Formation Developer Guide: [Security in AWS Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/security.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -88,7 +88,3 @@ The following table contains the error code, message, and HTTP status.
 | Unknown/Missing Access Key or Session Token | 403 | The security token included in the request is invalid.  |
 | Unknown/Missing Secret Key | 403 | The request signature we calculated does not match the signature you provided. Check your AWS Secret Access Key and signing method. Consult the service documentation for details. Host header is missing or hostname is incorrect. |
 | TooManyRequestsException | 429 | The rate of requests exceeds the maximum throughput. OK to retry. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -101,7 +101,3 @@ Modifies the set of quorum rules that are required to run commands on an HSM.
 
 **Rotate domain keys**
 Causes a new domain key to be created and marked as the active domain key. This moves the existing active key to a deactivated key and removes the oldest deactivated key from the domain state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

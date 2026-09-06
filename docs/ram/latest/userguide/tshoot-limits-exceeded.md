@@ -29,7 +29,3 @@ These errors occur when you reach the maximum number of resources you can share 
 1. Enter a new value for the quota, and then choose **Request**.
 
 1. The request appears on the [Quota request history](https://console.aws.amazon.com/servicequotas/home/requests) page, where you can check on the status of the request until it's finalized.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

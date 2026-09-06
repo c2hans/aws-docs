@@ -18,7 +18,3 @@ The following illustration shows how an insurance monolith can be decomposed int
 ![Decompose by subdomain pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-decomposing-monoliths/images/guide-img/8e9fa68d-7532-4c4b-8c7b-74bc6afdb7b9/images/ee946899-05a3-485d-93d2-e7c97728917c.png)
 
 The illustration shows that the *Sales* and *Marketing* services are broken down into smaller microservices. The *Purchasing* and *Claims* models are important business differentiators for *Sales*, and are split into two separate microservices. *Marketing* is decomposed by using supporting business functionalities such as *Campaigns*, *Analytics*, and *Reports*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

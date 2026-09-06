@@ -37,7 +37,3 @@ You can delete the resources that you create in AWS WAF Classic. See the guidanc
 + [Deleting a Web ACL](classic-web-acl-deleting.md)
 + [Adding and deleting rules from an AWS WAF Classic rule group](classic-rule-group-editing.md)
 + [Deleting a rule](classic-web-acl-rules-deleting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

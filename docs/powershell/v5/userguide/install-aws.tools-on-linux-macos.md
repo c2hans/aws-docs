@@ -179,7 +179,3 @@ The `Update-AWSToolsModule` cmdlet downloads all modules from the `PSRepository`
 <a name="pstools-seealso-setup-aws-tools"></a>
 +  [Configuring and using the AWS Tools for PowerShell](pstools-getting-started.md)
 +  [Calling AWS services in the AWS Tools for PowerShell](pstools-using.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

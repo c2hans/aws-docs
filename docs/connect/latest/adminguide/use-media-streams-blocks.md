@@ -25,7 +25,3 @@ The following example flow shows how you might use media streaming with attribut
 ![A sample flow with a start media streaming block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/media-streaming-flow.png)
 
 After the audio is successfully streamed to Kinesis Video Streams, the contact attributes are populated from the **Invoke AWS Lambda function** block. You can use the attributes to identify the location in the stream where the customer audio starts. For instructions, see [Contact attributes for live media streaming in Kinesis Video Streams](media-streaming-attributes.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

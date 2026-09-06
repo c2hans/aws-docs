@@ -102,7 +102,3 @@ The namespace must contain the `InstanceId` dimension and `index` dimensions. If
 <a name="external-metrics"></a>
 
 You can use the external metrics ingestion feature to configure AWS Compute Optimizer to ingest EC2 memory utilization metrics from one of the four observability products: Datadog, Dynatrace, Instana, and New Relic. When you enable external metrics ingestion, Compute Optimizer analyzes your external EC2 memory utilization metrics in addition to your CPU, disk, network, IO, and throughput data to generate EC2 rightsizing recommendations. These recommendations can provide you with additional savings and enhanced performance. For more information, see [External metrics ingestion](external-metrics-ingestion.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

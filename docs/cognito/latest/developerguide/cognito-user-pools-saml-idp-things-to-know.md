@@ -122,7 +122,3 @@ The `/saml2/logout` endpoint accepts `LogoutResponse` as `HTTP POST` requests. U
 
 **Metadata Signing Certificate Rotation**
 Amazon Cognito caches SAML metadata for up to six hours when you provide metadata with a URL. When performing any metadata signing certificate rotation, configure your metadata source to publish *both* the original and new certificates for at least six hours. When Amazon Cognito refreshes the cache from the metadata URL, it treats each certificate as valid and your SAML IdP can start signing SAML assertions with the new certificate. After this period has elapsed, you can remove the original certificate from the published metadata.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

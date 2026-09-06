@@ -28,7 +28,3 @@ web: gunicorn --bind :8000 --workers 3 --threads 2 project.wsgi:application
 **Notes**
 If you configure any WSGI server other than Gunicorn, be sure to also specify it as a dependency of your application, so that it is installed on your environment instances. For details about dependency specification, see [Specifying dependencies using a requirements file on Elastic Beanstalk](python-configuration-requirements.md).
 The default port for the WSGI server is 8000. If you specify a different port number in your `Procfile` command, set the `PORT` [environment property](environments-cfg-softwaresettings.md) to this port number too.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,3 @@ Initially, the database wrapper service can expose stored procedures as service 
 Centralize schema change control through the wrapper service team. This team is responsible for maintaining comprehensive visibility across all consumers. This team reviews proposed changes for system-wide impact, coordinates with affected teams, and implements modifications by using a controlled deployment process. For instance, when adding new fields, this team should maintain backward compatibility by implementing default values or initially allowing nulls.
 
 Establish a clear change management process that includes impact assessment, testing requirements, and rollback procedures. Use database versioning tools, and maintain clear documentation of all changes. This centralized approach prevents schema modifications from disrupting dependent services and maintains system stability.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

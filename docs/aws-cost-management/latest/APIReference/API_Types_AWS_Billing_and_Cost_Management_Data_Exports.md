@@ -21,7 +21,3 @@ The following data types are supported by AWS Data Exports:
 +  [Table](API_DataExports_Table.md)
 +  [TablePropertyDescription](API_DataExports_TablePropertyDescription.md)
 +  [ValidationExceptionField](API_DataExports_ValidationExceptionField.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

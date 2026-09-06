@@ -22,7 +22,3 @@ The following steps describe this process:
 1. Amazon EMR on EKS service then runs the stages on executors. User Code in any stage is run exclusively on User profile executors.
 
 1. Stages that read data from Data Catalog tables protected by Lake Formation or those that apply security filters are delegated to System executors.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

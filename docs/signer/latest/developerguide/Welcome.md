@@ -79,7 +79,3 @@ You can also view and adjust quotas using the Service Quotas console.
 <a name="whatis-pricing"></a>
 
 There is no additional charge to use AWS Signer with AWS IoT Device Management, AWS Lambda, Amazon ECR, Amazon EKS, or third-party container services. Refer to the pricing for the related services for other charges that you may incur. For example, if you use Signer with Lambda, you pay for the storage of signed and unsigned objects (such as your Lambda zip-file archives) in Amazon S3.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Signer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -176,7 +176,3 @@ The following tables provide a history of the operating systems, application ser
 | IIS 8 running on 64bit Windows Server | June 22, 2022 |
 | Apache HTTP Server 2.2 | October 31, 2020 |
 | Nginx 1.12.2 | October 31, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

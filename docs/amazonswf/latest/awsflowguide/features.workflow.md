@@ -63,7 +63,3 @@ public interface MyActivities {
 ```
 
 The interface allows you to group together a set of related activities. You can define any number of activities within an activities interface, and you can define as many activities interfaces as you want. Similar to `@Execute` and `@Signal` methods, activity methods can take any number of arguments of any type other than `Promise<T>` or its derivatives. The return type of an activity must not be `Promise<T>` or its derivatives.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

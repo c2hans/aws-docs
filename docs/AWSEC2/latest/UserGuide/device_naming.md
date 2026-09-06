@@ -73,7 +73,3 @@ Keep the following in mind when selecting a device name:
 + (Linux instances) Some custom kernels might have restrictions that limit use to `/dev/sd[f-p]` or `/dev/sd[f-p][1-6]`. If you're having trouble using `/dev/sd[q-z]` or `/dev/sd[q-z][1-6]`, try switching to `/dev/sd[f-p]` or `/dev/sd[f-p][1-6]`.
 
 Before you specify the device name that you've selected, verify that it is available. Otherwise, you'll get an error that the device name is already in use. To view the disk devices and their mount points, use the **lsblk** command (Linux instances), or the Disk Management utility or the **diskpart** command (Windows instances).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

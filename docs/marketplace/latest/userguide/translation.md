@@ -59,7 +59,3 @@ Allow 3 – 5 days for the opt-out to take effect.
    1. When opting out of one or more translations, add some explanatory text to the end of your product description. For example: **We have declined automatic translation services for this product**.
 
 1. Submit your request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -67,7 +67,3 @@ Use the following AWS CLI commands to create, modify, and view details related t
 When you have completed these steps, IPAM has done the following:
 + Created your IPAM. You can see the IPAM and the currently selected operating Regions by choosing IPAMs in the left navigation pane of the console.
 + Created one private and one public scope. You can see the scopes by choosing **Scopes** in the navigation pane. For more information about scopes, see [How IPAM works](how-it-works-ipam.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

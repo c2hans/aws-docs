@@ -10,7 +10,3 @@ The solution supports AWS Organizations through a hub-and-spoke architecture. To
 You can deploy the hub template in the central account, and then deploy the spoke template in each account that manages WorkSpaces. The spoke stacks must be deployed in the same Region as the hub stack.
 
 For a multi-account deployment, provide the value for the **Organization ID for multi account deployment** and **Account ID of the Management Account for the Organization** input parameters. For a single-account deployment, or to manage WorkSpaces only in the central account, deploy only the hub template and leave the default value for the input parameters **Organization ID for multi account deployment** and **Account ID of the Management Account for the Organization**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cost Optimizer for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

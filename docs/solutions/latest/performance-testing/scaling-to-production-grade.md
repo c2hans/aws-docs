@@ -169,7 +169,3 @@ Context helps the agent distinguish between expected behavior and genuine anomal
 [AWS Service Quotas: Managing your quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html) (Service Quotas Documentation)
 [AWS Countdown Premium for DLT](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/cdp.html) (DLT Documentation)
 [Imagine Learning Case Study: Performance Testing at Scale](https://aws.amazon.com/solutions/case-studies/imagine-learning/) (Customer Case Study)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Performance Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

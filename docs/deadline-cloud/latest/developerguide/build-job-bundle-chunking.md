@@ -9,7 +9,7 @@ Render and simulation jobs often spend more time loading the application and sce
 
 If you're migrating from Deadline 10, task chunking replaces the frames per task setting, also called chunk size, in the Deadline 10 submitters.
 
-Task chunking is an extension to Open Job Description (OpenJD) named `TASK_CHUNKING`. In a job template that uses the extension, you define a task parameter with type `CHUNK[INT]`. When the job runs, Deadline Cloud dispatches a range of values to each task instead of a single value, and the `{{Task.Param.Frame}}` variable in your script expands to a range expression such as `1-10`. Your script passes that range to the application. For the full specification, see [RFC 0001: Task Chunking](https://github.com/OpenJobDescription/openjd-specifications/blob/mainline/rfcs/0001-task-chunking.md) on GitHub.
+Task chunking is an extension to Open Job Description (OpenJD) named `TASK_CHUNKING`. In a job template that uses the extension, you define a task parameter with type `CHUNK[INT]`. When the job runs, Deadline Cloud dispatches a range of values to each task instead of a single value, and the `{{Task.Param.Frame}}` variable in your script expands to a range expression such as `1-10`. Your script passes that range to the application. For the full specification, see [RFC 0001: Task Chunking](https://github.com/OpenJobDescription/openjd-specifications/blob/mainline/rfcs/0001-task-chunking.md) on the GitHub website.
 
 To use task chunking, you make two decisions:
 + **Range constraint** – Choose `CONTIGUOUS` when your application accepts start and end frame arguments. Every chunk is then a consecutive range such as `1-10`. Choose `NONCONTIGUOUS` when your application accepts arbitrary frame lists. Chunks can then cover sparse frame sets such as `1-3,5,7-20:2`, which is useful when rendering pick-up frames.
@@ -31,7 +31,3 @@ For more information about task chunking, see the following topics:
 + [Add task chunking to a job template](build-job-bundle-chunking-add.md) – Convert an existing job template to use chunking.
 + [CHUNK[INT] task parameter reference](build-job-bundle-chunking-reference.md) – Look up every field of the `CHUNK[INT]` parameter.
 + [Group frames into chunks with task chunking on Deadline Cloud](examples-jb-task-chunking.md) – Run ready-made chunking samples.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

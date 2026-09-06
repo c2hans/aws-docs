@@ -90,7 +90,3 @@ This pattern describes how to migrate small sets of data (5 TB or less) from on-
 + [AWS Transfer for SFTP (video)](https://www.youtube.com/watch?v=wcnGez5PP1E)
 + [AWS Transfer for SFTP user guide](https://docs.aws.amazon.com/transfer/latest/userguide/what-is-aws-transfer-for-sftp.html)
 + [AWS SA Whiteboarding - Direct Connect (video) ](https://www.youtube.com/watch?v=uP68iqyuqTg)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

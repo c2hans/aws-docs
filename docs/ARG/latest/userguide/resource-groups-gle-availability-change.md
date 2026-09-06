@@ -17,7 +17,3 @@ As an alternative to GLE, we recommend that you use a combination of native and 
 At a high level, customers will need to create an EventBridge rule that invokes a Lambda function on Tag Change on Resource events (`aws.tag`), and CloudFormation Resource Status Change events (`aws.cloudformation`). The Lambda function will then need to call AWS Resource Groups `ListGroupResources` API to retrieve the current resource membership of each in scope Resource Group, compare it against the membership recorded in a customer-managed persistent storage (for example, in a DynamoDB table) and emit a custom AWS EventBridge event for each resource that was added or removed. Downstream consumers (for example, SNS, SQS, Lambda, Step Functions) can then subscribe to these custom events. AWS will provide step-by-step guidance to support customers in implementing alternatives to GLE upon request using AWS Support channels.
 
 If you have additional questions, open a case in the [AWS Support Center](https://support.console.aws.amazon.com/support/home#/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Resource Groups. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ARG` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

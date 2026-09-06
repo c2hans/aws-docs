@@ -59,7 +59,3 @@ The following table describes important updates to the AWS Support App managed p
 | --- | --- | --- |
 | [AWSSupportAppFullAccess](#security-iam-awsmanpol-support-app-full-access) and [AWSSupportAppReadOnlyAccess](#security-iam-support-app-read-only)<br />New AWS managed policies for the AWS Support App | You can use these policies for the IAM role that you configure for your Slack channel configuration. <br />For more information, see [Managing access to the AWS Support App](support-app-permissions.md). | August 19, 2022 |
 | Change log published | Change log for the AWS Support App managed policies. | August 19, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

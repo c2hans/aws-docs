@@ -40,7 +40,3 @@ To provide periodic updates to Connect Customer Customer Profiles, you can integ
 
 1. After the integration is set up, back on the **Customer profiles configuration** page, choose **View objects** to see what data is being batched and sent. Currently, this process ingests records that were created or modified in the last 30 days.
 ![The Customer profiles configuration page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-enable-objects.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

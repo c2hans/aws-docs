@@ -145,7 +145,7 @@ Amazon Bedrock offers three inference options: **In-Region** keeps requests with
 ## Data Retention
 <a name="model-card-anthropic-claude-mythos-5-1-data-retention"></a>
 
-To use this model, you must opt in to provider data sharing by setting your data retention mode to `provider_data_share`. You can configure this in the Amazon Bedrock console or via the Data Retention API. For more information, see [Amazon Bedrock abuse detection](abuse-detection.html).
+To use this model, you must opt in to provider data sharing by setting your data retention mode to `provider_data_share` via the Data Retention API. For more information, see [Amazon Bedrock abuse detection](abuse-detection.html).
 
 ## Quotas and Limits
 <a name="model-card-anthropic-claude-mythos-5-1-quotas"></a>
@@ -259,7 +259,3 @@ print(response)
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

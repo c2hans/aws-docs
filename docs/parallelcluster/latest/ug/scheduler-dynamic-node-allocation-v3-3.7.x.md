@@ -44,7 +44,3 @@ When submitting a job in exclusive mode:
 + When you submit a job in a compute resource with a single instance type, in a queue that spans multiple Availability Zones, the **all-or-nothing** EC2 launch API call only succeeds if all of the capacity can be provided in a single Availability Zone.
 + When you submit a job in a compute resource with multiple instance types, in a queue with a single Availability Zone, the **all-or-nothing** Amazon EC2 launch API call only succeeds if all of the capacity can be provided by a single instance type.
 + When you submit a job in a compute resource with multiple instance types, in a queue spanning multiple Availability Zones, the **all-or-nothing** Amazon EC2 launch API call isn't supported and ParallelCluster performs **best-effort** scaling instead.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

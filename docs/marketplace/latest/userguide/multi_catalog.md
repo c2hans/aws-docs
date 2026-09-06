@@ -34,7 +34,3 @@ AWS Marketplace currently supports Multi-Catalog capability for the following ca
 | Catalog management | Default catalog | Separate ESC catalog via the dedicated AWS Marketplace dropdown in Partner Central |
 | Product listing | Created via AWS Marketplace in Partner Central | Created in commercial via AWS Marketplace in Partner Central |
 | AWS account requirements | Commercial AWS account | Both commercial and ESC partition accounts required |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

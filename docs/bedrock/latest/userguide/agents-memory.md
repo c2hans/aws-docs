@@ -31,7 +31,3 @@ Since the summarization process takes place in an asynchronous flow after a sess
 **Memory duration**
 
 If memory is enabled, your agent retains the sessions in the memory for up to 365 days. You can optionally configure the retention period by specifying a duration between 1 and 365 days. All session summaries beyond this duration will be deleted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ The example runbooks in this section are provided to demonstrate how you can cre
 + [Deploy VPC architecture and Microsoft Active Directory domain controllers](automation-document-architecture-deployment-example.md)
 + [Restore a root volume from the latest snapshot](automation-document-instance-recovery-example.md)
 + [Create an AMI and cross-Region copy](automation-document-backup-maintenance-example.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

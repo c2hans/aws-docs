@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 + [Amazon Q Developer Immersion Day](https://catalog.workshops.aws/q-developer/en-US)
 + [Amazon Q Developer Workshop - Building the Q-Words App](https://catalog.workshops.aws/qwords/en-US)
 + [Amazon Q Developer Workshop - Creating Effective Prompts](https://catalog.workshops.aws/q-developer/en-US/20-generative-ai-for-builders/21-effective-prompts)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

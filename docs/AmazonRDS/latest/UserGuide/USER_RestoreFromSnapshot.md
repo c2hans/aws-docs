@@ -204,7 +204,3 @@ When you restore an Oracle database from a DB snapshot, consider the following:
 + If you use Oracle GoldenGate, always retain the parameter group with the `compatible` parameter. When you restore a DB instance from a DB snapshot, specify a parameter group that has a matching or greater `compatible` value.
 + You might choose to rename your database when you restore a DB snapshot. If the total size of online redo log is greater than 20GB, RDS might reset your online redo log size to its default settings of 512MB (4 x 128MB). The smaller size allows the restore operation to complete in a reasonable time. You can re-create the online redo logs later and change the size.
 + You can manage your master user password in AWS Secrets Manager. For more information, see [Overview of managing master user passwords with AWS Secrets Manager](rds-secrets-manager.md#rds-secrets-manager-overview).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

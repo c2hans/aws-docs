@@ -73,7 +73,3 @@ To identify the EC2 instances that are specified in the assessment targets, Amaz
 1. If you didn't set up an assessment schedule, navigate to your assessment template through the console, and then choose **Run**.
 
 1. To track the progress of the assessment run, in the navigation pane of the console, choose **Assessment runs**, and then choose **Findings**. For more information about findings, see [Amazon Inspector Classic findings](inspector_findings.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

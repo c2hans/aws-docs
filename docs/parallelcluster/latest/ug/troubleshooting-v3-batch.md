@@ -36,7 +36,3 @@ If multi-node parallel jobs fail with error: `Connect timeout on endpoint URL`:
 + Verify whether the compute nodes subnet is public.
 
 Multi-node parallel jobs don't support the use of public subnets when using AWS Batch in AWS ParallelCluster. Use a private subnet for your compute nodes and jobs. For more information, see [Compute environment considerations](https://docs.aws.amazon.com/batch/latest/userguide/multi-node-parallel-jobs.html#mnp-ce) in the *AWS Batch User Guide*. To configure a private subnet for your compute nodes, see [AWS ParallelCluster with AWS Batch scheduler](network-configuration-v3-batch.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

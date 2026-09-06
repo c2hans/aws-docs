@@ -36,7 +36,7 @@ Configure multiple profiles using either the CLI flag or the environment variabl
 The first profile is the default. Additional profiles are switchable:
 
 ```
-mcp-proxy-for-aws https://aws-mcp.us-east-1.api.aws/mcp --profile prod-readonly dev staging
+mcp-proxy-for-aws-cli https://aws-mcp.us-east-1.api.aws/mcp --profile prod-readonly dev staging
 ```
 
 **Environment variable**
@@ -56,7 +56,7 @@ AWS_MCP_PROXY_PROFILES="prod-readonly dev staging"
   "mcpServers": {
     "aws-mcp": {
       "command": "uvx",
-      "args": ["mcp-proxy-for-aws==1.6.3", "https://aws-mcp.us-east-1.api.aws/mcp"],
+      "args": ["mcp-proxy-for-aws-cli@latest", "https://aws-mcp.us-east-1.api.aws/mcp"],
       "env": {
         "AWS_MCP_PROXY_PROFILES": "prod-readonly dev staging"
       }
@@ -84,7 +84,3 @@ AWS_MCP_PROXY_PROFILES="prod-readonly dev staging"
 + **Security audit:** "Check all S3 buckets across my three accounts for public access."
 + **Troubleshooting:** "List failed ECS tasks in staging, then check the same service config in prod."
 + **Resource inventory:** "Count EC2 instances across all my accounts."
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Agent Toolkit for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agent-toolkit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

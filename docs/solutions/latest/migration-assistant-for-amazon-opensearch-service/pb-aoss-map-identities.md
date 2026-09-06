@@ -44,7 +44,3 @@ Set the source to the Amazon OpenSearch Service domain (SigV4 service `es`) and 
 
 **Important**
 The migration IAM role must be authorized on **both** sides. On the source domain, if fine-grained access control is enabled, map `<eks-cluster-name>-migrations-role` to a security role (typically `all_access` during migration, then scope it down afterward). On the target collection, the role must already appear as a principal in the data access policy from Step 1, with both collection-level and index-level permissions. See [Troubleshooting](troubleshooting.md) if the workflow later returns HTTP 401 or 403.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

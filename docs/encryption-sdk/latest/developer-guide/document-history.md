@@ -45,7 +45,3 @@ The following table describes significant changes to the *AWS Encryption SDK Dev
 | Update | Expanded the [Message format reference](message-format.md) documentation into a new [AWS Encryption SDK reference](reference.md) section.<br />Added a section about the AWS Encryption SDK [Supported algorithm suites](supported-algorithms.md). | March 21, 2017 |
 | New release | The AWS Encryption SDK now supports the [Python](python.md) programming language, in addition to [Java](java.md). | March 21, 2017 |
 | Initial release | Initial release of the AWS Encryption SDK and this documentation. | March 22, 2016 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

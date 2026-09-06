@@ -107,7 +107,3 @@ Your access will eventually expire and the SDK or tool will encounter an authent
 You can extend both the IAM Identity Center access portal session duration and the permission set session duration. This lengthens the amount of time that you can run code before you need to manually sign in again with the AWS CLI. For more information, see the following topics in the *AWS IAM Identity Center User Guide*:
 + **IAM Identity Center session duration** – [Configure the duration of your users' AWS access portal sessions](https://docs.aws.amazon.com/singlesignon/latest/userguide/configure-user-session.html)
 + **Permission set session duration** – [Set session duration ](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtosessionduration.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdkref` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

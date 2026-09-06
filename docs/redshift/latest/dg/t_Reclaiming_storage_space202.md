@@ -16,7 +16,7 @@ For this reason, we recommend vacuuming individual tables as needed. We also rec
 ## Automatic table sort
 <a name="automatic-table-sort"></a>
 
-Amazon Redshift automatically sorts data in the background to maintain table data in the order of its sort key. Amazon Redshift keeps track of your scan queries to determine which sections of the table will benefit from sorting. Amazon Redshift also keeps track of scan queries from concurrency scaling clusters. For multi cluster architectures using Amazon Redshift Data Sharing, Amazon Redshift also tracks scan queries originating from consumer clusters/workgroups in your data mesh, including clusters/workgroups across different regions. The scan statistics from main cluster, concurrency scaling clusters and consumer clusters are aggregated to determine which sections of the table will benefit from sorting.
+Amazon Redshift automatically sorts data in the background to maintain table data in the order of its sort key. Amazon Redshift keeps track of your scan queries to determine which sections of the table will benefit from sorting. Amazon Redshift also keeps track of scan queries from concurrency scaling clusters. For multi cluster architectures using Amazon Redshift Data Sharing, Amazon Redshift also tracks scan queries originating from consumer clusters/workgroups in your data mesh, including clusters/workgroups across different Regions. The scan statistics from main cluster, concurrency scaling clusters and consumer clusters are aggregated to determine which sections of the table will benefit from sorting.
 
 Depending on the load on the system, Amazon Redshift automatically initiates the sort. This automatic sort lessens the need to run the VACUUM command to keep data in sort key order. If you need data fully sorted in sort key order, for example after a large data load, then you can still manually run the VACUUM command. To determine whether your table will benefit by running VACUUM SORT, monitor the `vacuum_sort_benefit` column in [SVV\_TABLE\_INFO](r_SVV_TABLE_INFO.md).
 
@@ -80,7 +80,3 @@ By default, VACUUM skips the sort phase for any table where more than 95 percent
 <a name="vacuum-types"></a>
 
 For information about different vacuum types, see [VACUUM](r_VACUUM_command.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

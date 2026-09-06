@@ -32,7 +32,3 @@ Review the following sections to get started with Amazon Personalize. For a chec
    +  To get started with a Custom dataset group, complete the [Getting started prerequisites](gs-prerequisites.md) and then start the tutorials in [Getting started with a Domain dataset group](getting-started-domain.md).
 
 After you complete the getting started exercise, you can start completing the Amazon Personalize workflow. For steps and links to documentation, see [Amazon Personalize workflow](personalize-workflow.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

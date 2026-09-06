@@ -43,7 +43,3 @@ Your questions may address people, process, and technology in each area. You may
 + Escalation
 
 Using [custom lenses](https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses-custom.html), you can build your checklists into the [AWS Well-Architected Tool](https://aws.amazon.com/well-architected-tool/). You might decide to track action items from your ORR in a tool such as [AWS System Manager OpsCenter](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html). You also might choose to use the results of [post-incident analysis](https://docs.aws.amazon.com/incident-manager/latest/userguide/analysis.html) in [AWS System Manager Incident Manager](https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html) as inputs to developing your questions. AWS offers several different engagement models to help you build your own ORR checklist to complement what you’re doing with Well-Architected. Contact your account team for additional details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

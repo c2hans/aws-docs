@@ -28,7 +28,3 @@ If you haven't enabled Application Signals in this account yet, you must grant A
    For more information about this role, see [Service-linked role permissions for CloudWatch Application Signals](using-service-linked-roles.md#service-linked-role-signals).
 
 1. Choose **Enable Application Signals**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

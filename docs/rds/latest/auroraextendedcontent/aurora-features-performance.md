@@ -30,7 +30,3 @@ When you use optimized reads instances with pgvector, it increases queries per s
 [Amazon DevOps Guru for RDS](https://aws.amazon.com/devops-guru/features/devops-guru-for-rds/) uses ML-powered insights to help easily detect and diagnose performance-related database issues and resolve them in minutes rather than days. You can use it to automatically identify the root cause of performance issues and get intelligent recommendations to help address the issue, without needing help from database experts.
 
 To get started, enable [CloudWatch Database Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Database-Insights.html) in the [Amazon RDS Management Console](https://console.aws.amazon.com/rds/home), and then enable [DevOps Guru for RDS](https://console.aws.amazon.com/codeguru/devops-guru) for your Aurora resources or your entire account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

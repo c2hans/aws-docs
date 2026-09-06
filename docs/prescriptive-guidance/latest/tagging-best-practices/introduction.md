@@ -43,7 +43,3 @@ This guide covers how tagging can help you understand the metrics of an applicat
 When you implement tagging, consider the following requirements:
 + When using tags for reporting purposes, you must activate the tags. For more information and instructions, see the [AWS Billing documentation](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html). When using tags for other purposes, such as cleanup, automation, or retrieving a full list of services that belong to a certain category, it can be sufficient to assign tags to all the involved components.
 + Before you specify recommended or mandated tags, review the [AWS documentation](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) for information about the limitations and requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

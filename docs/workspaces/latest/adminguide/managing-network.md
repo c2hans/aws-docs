@@ -17,7 +17,3 @@ The following topics provide information about enabling users to connect to Work
 + [Using Amazon S3 VPC Endpoints for WorkSpaces Pools Features](managing-network-vpce-iam-policy.md)
 + [Connections to Your VPC for WorkSpaces Pools](pools-port-requirements.md)
 + [User connections to WorkSpaces Pools](user-connections-to-appstream2.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ To learn about using recovery and routing control API operations with Amazon App
 To learn more about specifying an assertion rule, see the information provided for [AssertionRule](https://docs.aws.amazon.com/recovery-cluster/latest/api/safetyrule.html#safetyrule-model-assertionrule) operation in the Routing Control API Reference Guide for Amazon Application Recovery Controller. To learn more about specifying a gating rule, see the information provided for the [GatingRule](https://docs.aws.amazon.com/recovery-cluster/latest/api/safetyrule.html#safetyrule-model-gatingrule) operation in the Routing Control API Reference Guide for Amazon Application Recovery Controller.
 
 1. Choose **Create**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

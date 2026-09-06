@@ -144,7 +144,3 @@ The following table lists the Amazon Elastic Compute Cloud (Amazon EC2) instance
 <a name="samurai-automated-labeling-byom"></a>
 
 You can create an active learning workflow with your own algorithm to run training and inferences in that workflow to auto-label your data. The notebook bring\_your\_own\_model\_for\_sagemaker\_labeling\_workflows\_with\_active\_learning.ipynb demonstrates this using the SageMaker AI built-in algorithm, [BlazingText](https://docs.aws.amazon.com/sagemaker/latest/dg/blazingtext.html). This notebook provides an CloudFormation stack that you can use to execute this workflow using AWS Step Functions. You can find the notebook and supporting files in this [GitHub repository](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/ground_truth_labeling_jobs/bring_your_own_model_for_sagemaker_labeling_workflows_with_active_learning).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

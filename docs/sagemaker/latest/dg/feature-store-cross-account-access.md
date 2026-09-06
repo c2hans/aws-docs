@@ -26,7 +26,3 @@ In the following topics you can learn how to share online store and offline feat
 **Topics**
 + [Share online feature groups with AWS Resource Access Manager](feature-store-cross-account-access-online-store.md)
 + [Cross account offline store access](feature-store-cross-account-access-offline-store.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

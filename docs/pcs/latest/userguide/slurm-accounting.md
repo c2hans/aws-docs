@@ -119,7 +119,3 @@ The Slurm accounting configuration is included in the Slurm configuration for yo
 Use the `GetCluster` API action to get the cluster configuration. You can find the accounting configuration in the `slurmConfiguration`. The setting for `mode` and the value of `defaultPurgeTimeInDays` are under `accounting`. The selected accounting policy enforcement options are under `slurmCustomSettings`. For more information, see [GetCluster](https://docs.aws.amazon.com/pcs/latest/APIReference/API_GetCluster.html) in the *AWS PCS API Reference*.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

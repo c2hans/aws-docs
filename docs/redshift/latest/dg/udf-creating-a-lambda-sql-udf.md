@@ -207,7 +207,3 @@ When you call Lambda functions from SQL queries, Amazon Redshift ensures the sec
 + GRANT and REVOKE permissions. For more information about UDF security and permissions, see [UDF security and permissions](udf-security-and-privileges.md).
 + Amazon Redshift only submits the minimum set of data to the designated Lambda function.
 + Amazon Redshift only calls the designated Lambda function with the designated IAM role.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

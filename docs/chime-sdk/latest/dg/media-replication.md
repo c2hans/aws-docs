@@ -66,7 +66,3 @@ Deleting sessions
 You use the [DeleteMeeting](https://docs.aws.amazon.com/chime/latest/APIReference/API_meeting-chime_DeleteMeeting.html) API to delete WebRTC media sessions.
 If you delete a primary session, the `DeleteMeeting` API automatically deletes all attached replica sessions. So to delete all sessions, just delete the primary.
 The service automatically deletes a primary session if no attendees connect for 5 contiguous minutes. The service only deletes replica sessions automatically when it deletes a primary session. That means you can create replica sessions when you create a primary session, and the replicas will be available for the duration of the primary session.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

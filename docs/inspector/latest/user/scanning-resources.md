@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/scanning-resources
 
 **Code Security for Amazon Inspector**
  This scan type leverages the Amazon Q Developer scanning engine to scan first-party application code, third-party application dependencies, and Infrastructure as Code for vulnerabilities For more information, see [Code Security for Amazon Inspector](https://docs.aws.amazon.com/inspector/latest/user/code-security-assessments.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

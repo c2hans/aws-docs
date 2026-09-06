@@ -49,7 +49,3 @@ After you create a monitor, wait about 15-30 minutes for Internet Monitor to cre
 1. In the navigation pane, choose **Network Monitoring**, then **Internet monitors**.
 
 1. To see more information about a specific monitor, on the **Monitors** tab, choose a monitor.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

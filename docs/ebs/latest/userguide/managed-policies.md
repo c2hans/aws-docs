@@ -148,7 +148,7 @@ The **AWSDataLifecycleManagerServiceRoleForAMIManagement** policy provides appro
 Provides Amazon Data Lifecycle Manager permission to perform the Systems Manager actions required to run pre and post scripts on all Amazon EC2 instances.
 
 **Important**
-The policy uses the `aws:ResourceTag` condition key to restrict access to specific SSM documents when using pre and post scripts. To allow Amazon Data Lifecycle Manager to access the SSM documents, you must ensure that your SSM documents are tagged with `DLMScriptsAccess:true`.
+The policy uses the `aws:ResourceTag` condition key to restrict access to specific SSM documents when using pre and post scripts. To allow Amazon Data Lifecycle Manager to access the SSM documents, you must make sure that your SSM documents are tagged with `DLMScriptsAccess:true`.
 
 ------
 #### [ JSON ]
@@ -230,7 +230,3 @@ The following table provides details about updates to AWS managed policies for A
 | AWSDataLifecycleManagerServiceRole — Added permissions to support snapshot archiving. | Amazon Data Lifecycle Manager added the ec2:ModifySnapshotTier and ec2:DescribeSnapshotTierStatus actions to grant snapshot policies permission to archive snapshots and to check the archive status for snapshots. | September 30, 2022 |
 | AWSDataLifecycleManagerServiceRoleForAMIManagement — Added permissions to support AMI deprecation. | Amazon Data Lifecycle Manager added the ec2:EnableImageDeprecation and ec2:DisableImageDeprecation actions to grant EBS-backed AMI policies permission to enable and disable AMI deprecation. | August 23, 2021 |
 | Amazon Data Lifecycle Manager started tracking changes | Amazon Data Lifecycle Manager started tracking changes for its AWS managed policies. | August 23, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

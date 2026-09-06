@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/nhs-cloud-security-gu
 + [Principle 12: Secure service administration](principle-12-secure-service-administration.md)
 + [Principle 13: Audit information for users](principle-13-audit-information-for-users.md)
 + [Principle 14: Secure use of the service](principle-14-secure-use-of-the-service.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

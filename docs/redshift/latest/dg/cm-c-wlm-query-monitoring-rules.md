@@ -154,7 +154,3 @@ In addition, Amazon Redshift records query metrics the following system tables a
 + The [STL\_QUERY\_METRICS](r_STL_QUERY_METRICS.md) table records the metrics for completed queries.
 + The [SVL\_QUERY\_METRICS](r_SVL_QUERY_METRICS.md) view shows the metrics for completed queries.
 + The [SVL\_QUERY\_METRICS\_SUMMARY](r_SVL_QUERY_METRICS_SUMMARY.md) view shows the maximum values of metrics for completed queries.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

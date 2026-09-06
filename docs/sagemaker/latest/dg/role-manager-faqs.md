@@ -79,7 +79,3 @@ A: If you use a custom web application to access Studio Classic, then you have a
 <a name="role-manager-faqs-iam-identity-center"></a>
 
 A: AWS IAM Identity Center Studio Classic Cloud Applications use a Studio Classic execution role to grant permissions to federated users. This execution role can be specified at the Studio Classic IAM Identity Center user profile level or the default domain level. User identities and groups must be synchronized into IAM Identity Center and the Studio Classic user profile must be created with IAM Identity Center user assignment using [CreateUserProfile](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateUserProfile.html). For more information, see [Launch Studio Classic with IAM Identity Center](role-manager-launch-notebook.md#role-manager-launch-notebook-iam-identity-center).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

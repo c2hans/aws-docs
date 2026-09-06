@@ -8,7 +8,3 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 <a name="serv-cat-get-start"></a>
 
 To get started with Service Catalog in AMS, submit a service request through the AMS console to request access to Service Catalog. Upon submission of the request, three IAM roles will be deployed into your account(s) along with an AMS managed stack containing the CloudFormation macro that invokes the AMS `Transform` (described previously) so we can register the products in our systems, and to perform operations against the infrastructure provisioned through Service Catalog. The three IAM roles deployed include a role for IT admins to manage products as Service Catalog admins; a role for application owners and end-users to configure, launch, and manage products; and a role that will be used as a launch constraint, that defines the permissions that Service Catalog will use while launching or updating the your product.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

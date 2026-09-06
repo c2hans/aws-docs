@@ -21,7 +21,3 @@ You are responsible for the cost of the AWS services used while running the Lamb
 |  **Amazon S3**  | $0.40 | $5.00 | $20.00 |
 |  **Amazon CloudWatch**  | $1.15 | $19.17 | $75.67 |
 |  **Total**  |  **$203.48**  |  **$249.25**  |  **$1192.13**  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

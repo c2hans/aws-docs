@@ -22,7 +22,3 @@ Use the AWS Global Networks for Transit Gateways console to register delegated a
 1. Choose **Register delegated administrator**.
 
 1. When the delegated administrator is registered, you can then register transit gateways from any transit gateways from any account within your organization to the global network in the delegated administrator account. For more information about registering transit gateways in the global network of a delegated administrator account, see [Transit gateway registrations in AWS Global Networks for Transit Gateways](tgw-registrations.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

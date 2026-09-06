@@ -57,7 +57,3 @@ Ground Truth helps workers annotate 3D point clouds faster and more accurately u
 + **Sensor fusion** – If you provide data for sensor fusion, workers can adjust annotations in the 3D scenes and in 2D images, and the annotations will be projected into the other view in real time.
 + **Auto-merge cuboids **– Workers can automatically merge two cuboids across all frames if they determine that cuboids with different labels actually represent a single object.
 + **View options **– Enables workers to easily hide or view label text, a ground mesh, and additional point attributes like color or intensity. Workers can also choose between perspective and orthogonal projections.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

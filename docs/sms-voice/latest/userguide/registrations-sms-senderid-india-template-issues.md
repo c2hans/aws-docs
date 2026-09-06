@@ -10,7 +10,3 @@ Indian carriers will reject your messages if they don't align exactly with the t
 + **The value of a variable is too long** – If the value of a variable contains more than 30 characters, the mobile carriers will reject your message.
 + **Case mismatch** – The mobile carriers compare your messages to the templates that you registered. This comparison process is case-sensitive.
 + **Slightly different characters** – Your message can be rejected if it contains characters that look similar to the characters in your registered template, but are actually different. For example, if you copy text from Microsoft Word, the text might include curly-quote characters ( “ and ” ), as opposed to the straight quote character ( " ). Make sure that your message matches your registered templates exactly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

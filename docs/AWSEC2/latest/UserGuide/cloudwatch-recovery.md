@@ -35,7 +35,7 @@ CloudWatch action based recovery can be enabled on instances that meet the follo
 **Instance types**
 + **General purpose:** A1, M3, M4, M5, M5a, M5n, M5zn, M6a, M6g, M6i, M6in, M7a, M7g, M7i, M7i-flex, M8a, M8azn, M8g, M8gb, M8gn, M8i, M8i-flex, M8in, M8ine, M8ib, M9g, T1, T2, T3, T3a, T4g
 + **Compute optimized:** C3, C4, C5, C5a, C5n, C6a, C6g, C6gn, C6i, C6in, C7a, C7g, C7gn, C7i, C7i-flex, C8a, C8g, C8gb, C8gn, C8i, C8i-flex, C8in, C8ine, C8ib, C9g
-+ **Memory optimized:** R3, R4, R5, R5a, R5b, R5n, R6a, R6g, R6i, R6in, R7a, R7g, R7i, R7iz, R8a, R8g, R8gb, R8gn, R8i, R8i-flex, R8in, R8ib, U-3tb1, U-6tb1, U-9tb1, U-12tb1, U-18tb1, U-24tb1, U7i-6tb, U7i-8tb, U7i-12tb, U7in-16tb, U7in-24tb, U7in-32tb, U7inh-32tb, X1, X1e, X2idn, X2iedn, X2iezn, X8g, X8i
++ **Memory optimized:** R3, R4, R5, R5a, R5b, R5n, R6a, R6g, R6i, R6in, R7a, R7g, R7i, R7iz, R8a, R8g, R8gb, R8gn, R8i, R8i-flex, R8in, R8ib, R9g, U-3tb1, U-6tb1, U-9tb1, U-12tb1, U-18tb1, U-24tb1, U7i-6tb, U7i-8tb, U7i-12tb, U7in-16tb, U7in-24tb, U7in-32tb, U7inh-32tb, X1, X1e, X2idn, X2iedn, X2iezn, X8g, X8i
 + **Accelerated computing:** G3, G5g, Inf1, P3, VT1
 + **High-performance computing:** Hpc6a, Hpc7a, Hpc7g, Hpc8a
 + **Metal instances:** Any of the above instance types with the metal instance size.
@@ -121,7 +121,3 @@ If CloudWatch action based recovery fails to recover your instance, consider the
   The instance has reached the maximum daily allowance for recovery attempts. Your instance might subsequently be retired if automatic recovery fails and a hardware degradation is determined to be the root cause of the original failed system status check.
 
 If the instance’s system status check failure persists despite multiple recovery attempts, see [Troubleshoot instances with failed status checks](TroubleshootingInstances.md) for additional guidance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

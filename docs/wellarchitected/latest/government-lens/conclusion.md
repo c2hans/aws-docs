@@ -10,7 +10,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/c
  Architectures for government workloads need to incorporate policy considerations along with high privacy, security, and evidence-based compliance design patterns, effective measurement and feedback loops for continuous improvement, and strong governance to help maintain compliant, legitimate services and systems that can withstand the necessary accountability and scrutiny of government. Government customers need to continually monitor, measure, and detect changes or unintended impacts to meet their policy and legislative requirements.
 
  Business continuity is critical not only to achieve business resiliency and performance objectives, but also to verify that people and communities are supported in times of high stress or emergencies. This lens was designed to support AWS builders and architects to take government needs and context into account in the design, delivery, and operation of government systems and services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

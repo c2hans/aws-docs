@@ -41,7 +41,3 @@ After finalize cutover, MGN creates a FlexClone of the replication volume, split
 <a name="faq-fsx-reinitialize"></a>
 
 Yes. You must reinitialize MGN to create the required AWS managed roles (`AWSApplicationMigrationFsxProxyRole` and `AWSApplicationMigrationFsxProxyLinkRole`). In the MGN console, navigate to [Getting started](getting-started.md) and choose **Reinitialize**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

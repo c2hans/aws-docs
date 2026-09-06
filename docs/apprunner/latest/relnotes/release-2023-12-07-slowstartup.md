@@ -19,7 +19,3 @@ The maximum time available for your AWS App Runner instance to complete its star
 With this increase, you can now use App Runner to host applications that require more startup time to complete initialization. For example, you can now run services with lower compute configuration whose startup tasks complete more slowly.
 
 For more information, see [Code development guidelines](https://docs.aws.amazon.com/apprunner/latest/dg/develop.html#develop.tips) in the *AWS App Runner Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

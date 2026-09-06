@@ -91,7 +91,3 @@ To check that your website works, open a web browser and go to the following URL
 In some cases, you might need to clear the cache to see the expected behavior.
 
 For more information about routing internet traffic, see [Configuring Amazon Route 53 as your DNS service](dns-configuring.md). To route traffic to AWS resources, see [Routing internet traffic to your AWS resources](routing-to-aws-resources.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

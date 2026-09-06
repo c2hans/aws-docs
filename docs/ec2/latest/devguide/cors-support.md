@@ -60,7 +60,3 @@ The following information is about the response headers that Amazon EC2 returns 
 + `Access-Control-Max-Age`: Specifies how long preflight request results can be cached. The value is set to 1800 seconds (30 minutes).
 + `Access-Control-Allow-Methods`: Indicates which methods are allowed when making an actual request. The following methods are allowed: `GET`, `POST`, `OPTIONS`, `DELETE`, and `PUT`. This also depends on how you are calling the Amazon EC2 API; for example, by using the Query API, or by using REST.
 + `Access-Control-Allow-Headers`: Indicates which headers can be used in the actual request. Amazon EC2 accepts any headers in preflight requests. If the HTTP headers are not relevant in the actual request, they are ignored.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

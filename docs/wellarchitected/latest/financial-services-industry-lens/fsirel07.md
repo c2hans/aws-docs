@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 <a name="fsirel07-bp02"></a>
 
  RTO is often defined as the maximum amount of time allowed for a system to resume its normal operations after a failure. RTO is measured and validated by testing system recovery processes and directly measuring the time it takes to recover. To be able to provide audit evidence for proof of DR and recovery exercises, you have to understand your workload's dependency chains to prove that if any of its dependencies fail, your service can stay within the boundary of the defined RTO.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

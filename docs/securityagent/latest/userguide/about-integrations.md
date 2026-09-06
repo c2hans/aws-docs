@@ -91,7 +91,3 @@ The following IP addresses are used to access your connected repositories:
 <a name="_next_steps"></a>
 + Register a provider from the **Integrations** page. See the connect topic for your provider, such as [Connect AWS Security Agent to GitHub repositories](connect-github.md).
 + Connect resources to an Agent Space and configure capabilities. See [Enable code review](enable-code-review-scan.md) and [Enable penetration test](enable-penetration-test.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

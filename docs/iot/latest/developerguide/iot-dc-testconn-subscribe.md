@@ -251,7 +251,3 @@ You might also see the message published by the AWS IoT Device Client in the rec
 The entries in the log file demonstrate that the messages were received. You can repeat this procedure using other topic names. All messages that have a topic name that begins with `test/dc/` should be received and logged. Messages with topic names that begin with any other text are ignored.
 
 After demonstrating how the AWS IoT Device Client can publish and subscribe to MQTT messages, continue to [Tutorial: Demonstrate remote actions (jobs) with the AWS IoT Device Client](iot-dc-runjobs.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

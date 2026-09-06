@@ -151,7 +151,3 @@ Any users that are not specifically assigned an Admin or Editor role are assigne
    +  Choose **Sign in with AWS IAM Identity Center**, and enter the email address and password of the user that you created earlier in this procedure. These credentials only work if you have responded to the email from Amazon Managed Grafana that prompted you to create a password for IAM Identity Center.
 
      You are now in your Grafana workspace, or logical Grafana server. You can start adding data sources to query, visualize, and analyze data. For more information, see [Use your Grafana workspace](AMG-working-with-Grafana-workspace.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

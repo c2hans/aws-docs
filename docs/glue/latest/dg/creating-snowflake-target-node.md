@@ -36,7 +36,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-snowflake-target
      + **Enter custom MERGE statement** – You can then choose **Validate Merge statement** to verify that the statement is valid or invalid.
    +  **TRUNCATE** – If a table already exists, truncate the table data by first clearing the contents of the target table. If truncate is successful, then insert all data. If the table doesn't exist, create the table and insert all data. If truncate is not successful, the operation will fail.
    +  **DROP** – If a table already exists, delete the table metadata and data. If deletion is successful, then insert all data. If the table doesn't exist, create the table and insert all data. If drop is not successful, the operation will fail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

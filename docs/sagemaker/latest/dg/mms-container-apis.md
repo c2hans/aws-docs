@@ -134,7 +134,3 @@ X-Amzn-SageMaker-Target-Model: [relativePath]/{artifactName}.tar.gz
 If `model_name` is not loaded, this API should return 404.
 
 Additionally, on GPU instances, if `InvokeEndpoint` fails due to a lack of memory or other resources, this API should return a 507 HTTP status code to SageMaker AI, which then initiates unloading unused models to reclaim.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

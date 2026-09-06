@@ -10,7 +10,3 @@ The Automotive Data Mesh provides the foundational platform infrastructure that 
 Traditional centralized data architectures create bottlenecks that prevent automotive organizations from realizing the full value of their data. Data mesh addresses these challenges through four core principles: domain-oriented decentralized data ownership, data as a product, self-service data platform, and federated computational governance. This approach enables automotive organizations to scale their data capabilities while maintaining security, compliance, and data quality standards.
 
 This chapter explores the business rationale for data mesh, the technical architecture, and implementation guidance for building a modern automotive data platform.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

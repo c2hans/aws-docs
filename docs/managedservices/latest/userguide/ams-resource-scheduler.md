@@ -19,7 +19,3 @@ AMS Resource Scheduler uses periods and schedules:
 You can configure these periods and schedules using AMS Resource Scheduler's automated change types (CTs).
 
 For full details on the settings available for AMS Resource Scheduler, see the corresponding AWS Instance Scheduler documentation at [Solution components](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/components.html). For an architectural view of the solution, see the corresponding AWS Instance Scheduler documentation at [Architecture overview.html](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/architecture-overview.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

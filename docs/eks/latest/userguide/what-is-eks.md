@@ -119,7 +119,3 @@ Visit the respective pricing pages of the AWS services you are using with your K
 + For Amazon EC2 pricing, see [Amazon EC2 On-Demand Pricing](https://aws.amazon.com/ec2/pricing/on-demand/) and [Amazon EC2 Spot Pricing](https://aws.amazon.com/ec2/spot/pricing/).
 + For AWS Fargate pricing, see [AWS Fargate Pricing](https://aws.amazon.com/fargate/pricing).
 + You can use your savings plans for compute used in Amazon EKS clusters. For more information, see [Pricing with Savings Plans](https://aws.amazon.com/savingsplans/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

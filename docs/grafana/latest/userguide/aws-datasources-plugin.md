@@ -64,7 +64,3 @@ The AWS Data Sources plugin requires permission to access your AWS resources. Th
 If you update the AWS Data Sources plugin to a newer version than is included by default in your workspace, it could add support for AWS resources whose permissions are not managed by Amazon Managed Grafana automatically. In these cases, you must add the permissions yourself. For example, AWS IoT TwinMaker was added to a recent version of the plugin, (version 1.9.0), and permissions for these are not managed by Amazon Managed Grafana.
 
 To learn more about the permissions for any specific data source, see the details for that data source provided in the [Connect to data sources](AMG-data-sources.md) section. For example, the [Connect to an AWS IoT TwinMaker data source](AMG-iot-twinmaker.md) section includes details about giving Amazon Managed Grafana permissions to access AWS IoT TwinMaker.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

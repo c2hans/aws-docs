@@ -277,7 +277,3 @@ The following changes might affect some users updating to Grafana version 9.4. F
 + **Transformation improvements** – **Rename by regex** transformation now supports global patterns.
 
   Global patterns use the format `/<stringToReplace>/g`. Some transformations may behave differently. Wrap match strings in forward slashes for previous behavior: `(.*)` becomes `/(.*)/`. See Issue [\#48179 ](https://github.com/grafana/grafana/issues/48179) on *GitHub*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,7 +35,3 @@ A *managed instance* is managed by a service provider, such as Amazon EKS Auto M
 + [Configure your Amazon EC2 Windows instance](ec2-windows-instances.md)
 + [Upgrade an EC2 Windows instance to a newer version of Windows Server](serverupgrade.md)
 + [Tutorial: Connect an Amazon EC2 instance to an Amazon RDS database](tutorial-connect-ec2-instance-to-rds-database.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

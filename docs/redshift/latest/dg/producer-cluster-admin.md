@@ -68,8 +68,4 @@ Sign in to the [https://console.aws.amazon.com/redshiftv2/](https://console.aws.
 ## Sharing write permissions to data across accounts
 <a name="within-account-multi-warehouse-consumer-associate"></a>
 
-With Amazon Redshift, you can share data across AWS accounts and grant write permissions, enabling collaboration and data sharing between teams or organizations. Cross-account data sharing allows you to establish a data provider account that creates and manages databases, schemas, and tables, which can then be securely shared with data consumer accounts. The following sections demonstrate the process of configuring cross-account data sharing and granting write access in Amazon Redshift.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+With Amazon Redshift, you can share data across AWS accounts and grant write permissions, enabling collaboration and data sharing between teams or organizations. With cross-account data sharing, you can establish a data provider account that creates and manages databases, schemas, and tables, which can then be securely shared with data consumer accounts. The following sections demonstrate the process of configuring cross-account data sharing and granting write access in Amazon Redshift.

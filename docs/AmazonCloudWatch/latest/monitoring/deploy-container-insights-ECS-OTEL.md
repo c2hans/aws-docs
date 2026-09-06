@@ -100,7 +100,3 @@ To launch the AWS Distro for OpenTelemetry as a daemon service, follow the instr
 <a name="container-insights-ECS-OTEL-custom-advancdeconfig"></a>
 
 Optionally, you can use SSM to specify other configuration options for the AWS Distro for OpenTelemetry in your Amazon ECS clusters that are hosted on Amazon EC2 instances. For more information, about creating a configuration file, see [ Custom OpenTelemetry Configuration](https://aws-otel.github.io/docs/setup/ecs#5-custom-opentelemetry-configuration). For more information about the options that you can use in the configuration file, see [AWS Container Insights Receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/receiver/awscontainerinsightreceiver/README.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

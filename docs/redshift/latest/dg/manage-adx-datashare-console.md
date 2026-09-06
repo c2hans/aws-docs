@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/manage-adx-datashare-
 # Managing AWS Data Exchange datashares
 <a name="manage-adx-datashare-console"></a>
 
-With Amazon Redshift, you can securely share and receive live data from AWS Data Exchange without having to create and manage data extracts or pipelines. Managing AWS Data Exchange datashares allows you to subscribe to third-party data products and integrate live data streams directly into your Amazon Redshift data warehouse. The following sections demonstrate managing AWS Data Exchange datashares within your Amazon Redshift clusters.
+With Amazon Redshift, you can securely share and receive live data from AWS Data Exchange without having to create and manage data extracts or pipelines. By managing AWS Data Exchange datashares, you can subscribe to third-party data products and integrate live data streams directly into your Amazon Redshift data warehouse. The following sections demonstrate managing AWS Data Exchange datashares within your Amazon Redshift clusters.
 
 ## Creating data sets on AWS Data Exchange
 <a name="create-dataset-console"></a>
@@ -120,7 +120,3 @@ Delete AWS Data Exchange datashares created in your account using the console. C
 After the datashare is deleted, datashare consumers lose access to the datashare.
 
 Deleting a shared AWS Data Exchange datashare can breach data product terms in AWS Data Exchange.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

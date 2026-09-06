@@ -118,7 +118,3 @@ To get started on IT and business leader alignment:
 1. Determine if certain leaders need individualized touchpoints because of their influence on the program, and, if so, create leadership action plans and a cadence to review and make progress on those plans.
 
 1. Evaluate the effectiveness of IT and business leader alignment periodically, and develop and implement leadership action plans as appropriate.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

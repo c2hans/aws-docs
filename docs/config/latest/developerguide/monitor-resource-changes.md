@@ -76,7 +76,3 @@ The account for the SNS topic and the SQS queue must be in the same region.
 ------
 
 Each policy can include statements that cover only a single queue, not multiple queues. For information about other restrictions on Amazon SQS policies, see [Special Information for Amazon SQS Policies](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/AccessPolicyLanguage_SpecialInfo.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/google-analytics-
 # Google Analytics integration
 <a name="google-analytics-integration"></a>
 
-With the Google Analytics action connector, you can access Google Analytics directly in Amazon Quick through natural language. You can run reports, retrieve audience data, monitor key events, and access real-time metrics without leaving Amazon Quick.
+With the Google Analytics connector, you can access Google Analytics directly in Amazon Quick through natural language. You can run reports, retrieve audience data, monitor key events, and access real-time metrics without leaving Amazon Quick.
 
 Amazon Quick supports multiple authentication methods for Google Analytics. Choose the method that best fits your organization's security requirements.
 + **Default OAuth app** – Uses an AWS-managed OAuth application. No additional credentials are needed. You authenticate directly with your Google account.
@@ -29,7 +29,7 @@ If you are using **Default OAuth app** authentication, skip this section and go 
 For Custom OAuth app authentication, complete the following steps in the Google Cloud Console before you configure Amazon Quick. When you enable the API in step 3, search for and enable the **Google Analytics Data API**.
 
 ### Create an OAuth client in Google Cloud Console
-<a name="w2aac46c28c89c19b7"></a>
+<a name="w2aac46c28c93c19b7"></a>
 
 Create an OAuth client in the Google Cloud Console to get the client credentials that you need for Amazon Quick. For more information, see [Using OAuth 2.0 to Access Google APIs](https://developers.google.com/identity/protocols/oauth2) on the Google website.
 
@@ -172,7 +172,7 @@ The actions that you can use depend on the Analytics properties and accounts acc
 To edit, share, or delete your connector, see [Managing existing integrations](integration-workflows.md#managing-existing-integrations).
 
 ### Common Google authentication issues
-<a name="w2aac46c28c89c43b5"></a>
+<a name="w2aac46c28c93c43b5"></a>
 + **Sign-in fails (Default OAuth app or Custom OAuth app)** – Verify that your Google account is active and that you can sign in to [the Google website](https://accounts.google.com) directly. For Custom OAuth app, confirm that the redirect URI in your Google Cloud OAuth client matches the Amazon Quick callback URL.
 + **App blocked by administrator** – If your Google Workspace administrator restricts third-party app access, you might see an error when you attempt to sign in. Contact your Google Workspace administrator to allow the Amazon Quick app.
 + **Invalid client credentials (Custom OAuth app)** – Verify that the Client ID and Client secret match the values in your Google Cloud OAuth client.
@@ -184,7 +184,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 <a name="google-analytics-troubleshooting-service"></a>
 + **Google Analytics Data API not enabled** – Verify that the Google Analytics Data API is enabled in your Google Cloud project under **APIs & Services**, **Library**.
 + **No properties visible** – Verify that the authenticated Google account has access to the Google Analytics properties that you want to query.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -132,7 +132,3 @@ The legacy ECS deployment of the same 15-day, 100 TB, 15 MBps scenario costs app
 | 100 TB | $2,174 | $3,252 | $5,407 |
 
 The primary cost difference between the EKS and legacy ECS deployments comes from replacing Amazon MSK with Strimzi Kafka on Amazon EKS (EBS gp3 storage at $0.08/GiB-month versus MSK storage at $0.10/GiB-month with per-broker duplication) and eliminating intra-region MSK data transfer charges. The EKS deployment adds a fixed cluster fee ($0.10/hr) and VPC Interface Endpoint charges, but these are offset by the Kafka savings at moderate-to-high traffic volumes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

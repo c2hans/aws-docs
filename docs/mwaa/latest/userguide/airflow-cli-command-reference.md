@@ -58,53 +58,53 @@ The following section lists the Apache Airflow CLI commands available on Amazon 
 
 | Minor versions | Command |
 | --- | --- |
-| v3.0.6, v3.2.1 | [assets details](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#details) |
-| v3.0.6, v3.2.1 | [assets list](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#list) |
-| v3.0.6, v3.2.1 | [assets materialize](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#materialize) |
-| v3.0.6, v3.2.1 | [backfill create](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#create) |
-| v3.0.6, v3.2.1 | [cheat-sheet](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#cheat-sheet) |
-| v3.0.6, v3.2.1 | [connections add](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#add) |
-| v3.0.6, v3.2.1 | [connections delete](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#delete) |
-| v3.0.6, v3.2.1 | [dags delete](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#delete_repeat1) |
-| v3.0.6, v3.2.1 | [dags list](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list_repeat2) |
-| v3.0.6, v3.2.1 | [dags list-jobs](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list-jobs) |
-| v3.0.6, v3.2.1 | [dags list-import-errors](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#list-import-errors) |
-| v3.0.6, v3.2.1 | [dags list-runs](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list-runs) |
-| v3.0.6, v3.2.1 | [dags next-execution](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#next-execution) |
-| v3.0.6, v3.2.1 | [dags pause](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#pause) |
-| v3.0.6, v3.2.1 | [dags report](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#report) |
-| v3.0.6, v3.2.1 | [dags reserialize](https://airflow.apache.org/docs/apache-airflow/2.4.3/cli-and-env-variables-ref.html#reserialize) |
-| v3.0.6, v3.2.1 | [dags show](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#show) |
-| v3.0.6, v3.2.1 | [dags state](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#state) |
-| v3.0.6, v3.2.1 | [dags test](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#test) |
-| v3.0.6, v3.2.1 | [dags trigger](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#trigger) |
-| v3.0.6, v3.2.1 | [dags unpause](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#unpause) |
-| v3.0.6, v3.2.1 | [db clean](https://airflow.apache.org/docs/apache-airflow/2.4.3/cli-and-env-variables-ref.html#clean) |
-| v3.0.6, v3.2.1 | [providers behaviours](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#behaviours) |
-| v3.0.6, v3.2.1 | [providers get](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#get_repeat2) |
-| v3.0.6, v3.2.1 | [providers hooks](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#hooks) |
-| v3.0.6, v3.2.1 | [providers links](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#links) |
-| v3.0.6, v3.2.1 | [providers list](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list_repeat4) |
-| v3.0.6, v3.2.1 | [providers notifications](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#notifications) |
-| v3.0.6, v3.2.1 | [providers secrets](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#secrets) |
-| v3.0.6, v3.2.1 | [providers triggerer](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#triggerer) |
-| v3.0.6, v3.2.1 | [providers widgets](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#widgets) |
-| v3.0.6, v3.2.1 | [roles add-perms](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#add-perms) |
-| v3.0.6, v3.2.1 | [roles del-perms](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#del-perms) |
-| v3.0.6, v3.2.1 | [roles create](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#create) |
-| v3.0.6, v3.2.1 | [roles list](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list_repeat5) |
-| v3.0.6, v3.2.1 | [tasks clear](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#clear) |
-| v3.0.6, v3.2.1 | [tasks failed-deps](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#failed-deps) |
-| v3.0.6, v3.2.1 | [tasks list](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list_repeat6) |
-| v3.0.6, v3.2.1 | [tasks render](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#render) |
-| v3.0.6, v3.2.1 | [tasks state](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#state_repeat1) |
-| v3.0.6, v3.2.1 | [tasks states-for-dag-run](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#states-for-dag-run) |
-| v3.0.6, v3.2.1 | [tasks test](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#test_repeat1) |
-| v3.0.6, v3.2.1 | [variables delete](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#delete_repeat4) |
-| v3.0.6, v3.2.1 | [variables get](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#get_repeat3) |
-| v3.0.6, v3.2.1 | [variables set](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#set_repeat1) |
-| v3.0.6, v3.2.1 | [variables list](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list_repeat8) |
-| v3.0.6, v3.2.1 | [version](http://airflow.apache.org/docs/apache-airflow/1.10.12/cli-ref.html#version) |
+| v3.0.6, v3.2.1, v3.3.1 | [assets details](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#details) |
+| v3.0.6, v3.2.1, v3.3.1 | [assets list](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#list) |
+| v3.0.6, v3.2.1, v3.3.1 | [assets materialize](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#materialize) |
+| v3.0.6, v3.2.1, v3.3.1 | [backfill create](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#create) |
+| v3.0.6, v3.2.1, v3.3.1 | [cheat-sheet](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#cheat-sheet) |
+| v3.0.6, v3.2.1, v3.3.1 | [connections add](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#add) |
+| v3.0.6, v3.2.1, v3.3.1 | [connections delete](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#delete) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags delete](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#delete_repeat1) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags list](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list_repeat2) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags list-jobs](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list-jobs) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags list-import-errors](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#list-import-errors) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags list-runs](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list-runs) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags next-execution](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#next-execution) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags pause](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#pause) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags report](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#report) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags reserialize](https://airflow.apache.org/docs/apache-airflow/2.4.3/cli-and-env-variables-ref.html#reserialize) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags show](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#show) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags state](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#state) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags test](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#test) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags trigger](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#trigger) |
+| v3.0.6, v3.2.1, v3.3.1 | [dags unpause](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#unpause) |
+| v3.0.6, v3.2.1, v3.3.1 | [db clean](https://airflow.apache.org/docs/apache-airflow/2.4.3/cli-and-env-variables-ref.html#clean) |
+| v3.0.6, v3.2.1, v3.3.1 | [providers behaviours](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#behaviours) |
+| v3.0.6, v3.2.1, v3.3.1 | [providers get](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#get_repeat2) |
+| v3.0.6, v3.2.1, v3.3.1 | [providers hooks](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#hooks) |
+| v3.0.6, v3.2.1, v3.3.1 | [providers links](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#links) |
+| v3.0.6, v3.2.1, v3.3.1 | [providers list](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list_repeat4) |
+| v3.0.6, v3.2.1, v3.3.1 | [providers notifications](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#notifications) |
+| v3.0.6, v3.2.1, v3.3.1 | [providers secrets](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#secrets) |
+| v3.0.6, v3.2.1, v3.3.1 | [providers triggerer](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#triggerer) |
+| v3.0.6, v3.2.1, v3.3.1 | [providers widgets](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#widgets) |
+| v3.0.6, v3.2.1, v3.3.1 | [roles add-perms](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#add-perms) |
+| v3.0.6, v3.2.1, v3.3.1 | [roles del-perms](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#del-perms) |
+| v3.0.6, v3.2.1, v3.3.1 | [roles create](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#create) |
+| v3.0.6, v3.2.1, v3.3.1 | [roles list](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list_repeat5) |
+| v3.0.6, v3.2.1, v3.3.1 | [tasks clear](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#clear) |
+| v3.0.6, v3.2.1, v3.3.1 | [tasks failed-deps](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#failed-deps) |
+| v3.0.6, v3.2.1, v3.3.1 | [tasks list](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list_repeat6) |
+| v3.0.6, v3.2.1, v3.3.1 | [tasks render](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#render) |
+| v3.0.6, v3.2.1, v3.3.1 | [tasks state](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#state_repeat1) |
+| v3.0.6, v3.2.1, v3.3.1 | [tasks states-for-dag-run](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#states-for-dag-run) |
+| v3.0.6, v3.2.1, v3.3.1 | [tasks test](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#test_repeat1) |
+| v3.0.6, v3.2.1, v3.3.1 | [variables delete](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#delete_repeat4) |
+| v3.0.6, v3.2.1, v3.3.1 | [variables get](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#get_repeat3) |
+| v3.0.6, v3.2.1, v3.3.1 | [variables set](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#set_repeat1) |
+| v3.0.6, v3.2.1, v3.3.1 | [variables list](http://airflow.apache.org/docs/apache-airflow/2.2.2/cli-and-env-variables-ref.html#list_repeat8) |
+| v3.0.6, v3.2.1, v3.3.1 | [version](http://airflow.apache.org/docs/apache-airflow/1.10.12/cli-ref.html#version) |
 
 ------
 #### [ Apache Airflow v2 ]
@@ -271,7 +271,3 @@ Use the following example to run Airflow CLI commands using an SSH tunnel proxy 
    ```
    curl -x socks5h://0:8080 --request POST https://{{YOUR_HOST_NAME}}/aws_mwaa/cli --header {{YOUR_HEADERS}} --data-raw {{YOUR_CLI_COMMAND}}
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

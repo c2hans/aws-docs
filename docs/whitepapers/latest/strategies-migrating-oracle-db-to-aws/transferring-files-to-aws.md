@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-
 <a name="aws-snow-family"></a>
 
  [AWS Snow Family](https://aws.amazon.com/snow/) offers a number of physical devices and capacity points transport up to exabytes of data into and out of AWS. Snow Family devices are owned and managed by AWS and integrate with AWS security, monitoring, storage management, and computing capabilities. For example, [AWS Snowball Edge Edge](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html) has 80 TB of usable capacity and can be mounted as an NFS mount point in the on-premises location. For smaller capacity, [AWS Snowcone](https://aws.amazon.com/snowcone/) offers 8 TB of storage and has the capability to run the [AWS DataSync](https://aws.amazon.com/datasync/) agent.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -77,7 +77,3 @@ We recommend granting permissions through a group that contains all the users wh
 If you receive an error message stating that the group is not found, the two systems might not have completed the sync. Wait for a few minutes, and choose **Add new groups** again.
 
 Choosing **Basic** or **Pro** capabilities for the users in your directory group affects the license, capabilities, and cost of those users in your Amazon Chime Enterprise account. For more information, see [Pricing](https://aws.amazon.com/chime/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

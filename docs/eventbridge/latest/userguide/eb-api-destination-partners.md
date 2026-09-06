@@ -462,7 +462,3 @@ None
 **Additional information**
 API requests EventBridge makes count against your Zendesk API limits. For information about Zendesk limits for your plan, see [Usage limits](https://developer.zendesk.com/rest_api/docs/support/usage_limits).
 To better safeguard your account and data, we recommend using an API key rather than basic sign-in credentials authentication.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

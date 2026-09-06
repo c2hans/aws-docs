@@ -20,7 +20,3 @@ Public-facing applications with high traffic and short session depth can be opti
 Public websites must cater to various browser environments. Enterprise applications with known constraints on the client environment can optimize their micro-frontend composition according to their constraints.
 
 There is no single right choice for the architecture decisions. Understand the trade-offs, the context where business operates, usage patterns, and metrics to guide decisions that are suitable for each individual application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

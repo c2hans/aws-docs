@@ -279,7 +279,3 @@ The `newTopicPreferences` and `oldTopicPreferences` objects contain the followin
 | `unsubscribeAll` | Specifies if the contact unsubscribed from all the topics in the contact list. |
 | `topicSubscriptionStatus` | Specifies the subscription status of the topic in the `topicName` field indicating whether it is currently subscribed to receive notifications from SES for the specified event type. Possible values are **OptIn** (subscribed) or **OptOut** (unsubscribed) in the `subscriptionStatus` field. |
 | `topicDefaultSubscriptionStatus` | Specifies the default subscription status of the topic in the `topicName` field determining whether new topics added to the event destination will be subscribed or unsubscribed by default. Possible values are **OptIn** (subscribed by default) or **OptOut** (unsubscribed by default) in the `subscriptionStatus` field. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

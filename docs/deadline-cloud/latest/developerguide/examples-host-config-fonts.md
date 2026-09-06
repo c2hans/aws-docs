@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Install custom fonts on Deadline Cloud Linux workers
 <a name="examples-host-config-fonts"></a>
 
-The [linux\_font\_installation](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/linux_font_installation) host configuration script installs fonts from an Amazon S3 bucket on Deadline Cloud Linux service-managed fleet workers, which makes the fonts available to applications such as Nuke.
+The [linux\_font\_installation](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/linux_font_installation) host configuration script on the GitHub website installs fonts from an Amazon S3 bucket on Deadline Cloud Linux service-managed fleet workers, which makes the fonts available to applications such as Nuke.
 
 **Note**
 Fonts may render differently across operating systems.
@@ -21,7 +21,3 @@ To use this script:
 1. Edit `font_install_host_config.sh` to set `S3_FONTS_URI` and `JOB_USER`.
 
 1. Add an IAM policy to your fleet IAM role that grants `s3:GetObject` and `s3:ListBucket` permissions for the bucket and prefix.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,7 +35,3 @@ You must set SSL mode in the client connections. Aurora DSQL supports `PGSSLMODE
 
 **Important**
 Some views provided by DataGrip for PostgreSQL databases (such as Sessions) don't apply to Aurora DSQL databases because of their unique architecture. While accessible, these screens don't provide reliable information about the actual sessions connected to the database.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

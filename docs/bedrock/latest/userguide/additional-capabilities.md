@@ -19,7 +19,3 @@ Amazon Bedrock provides additional capabilities to enhance your generative AI ap
 | [Amazon Bedrock Marketplace](amazon-bedrock-marketplace.md) | Discover and use over 100 additional foundation models from Amazon Bedrock Marketplace |
 | [Build an end-to-end generative AI workflow with Amazon Bedrock Flows](flows.md) | Build end-to-end generative AI workflows by linking prompts, models, and AWS services |
 | [Store and retrieve conversation history and context with session management APIs](sessions.md) | Store and retrieve conversation history and context for open-source agent interactions |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

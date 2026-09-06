@@ -33,7 +33,3 @@ You can enable ad marker passthrough using the AWS Management Console or the AWS
 
 **To enable ad marker passthrough using the AWS Command Line Interface (AWS CLI)**
 Use the [put-playback-configuration](https://docs.aws.amazon.com/cli/latest/reference/mediatailor/put-playback-configuration.html) command.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

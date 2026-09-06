@@ -156,7 +156,3 @@ We recommend that after you remove a network policy solution, then you replace a
 + The Amazon VPC CNI plugin for Kubernetes doesn’t apply network policies to additional network interfaces for each pod, only the primary interface for each pod (`eth0`). This affects the following architectures:
   +  `IPv6` pods with the `ENABLE_V4_EGRESS` variable set to `true`. This variable enables the `IPv4` egress feature to connect the IPv6 pods to `IPv4` endpoints such as those outside the cluster. The `IPv4` egress feature works by creating an additional network interface with a local loopback IPv4 address.
   + When using chained network plugins such as Multus. Because these plugins add network interfaces to each pod, network policies aren’t applied to the chained network plugins.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

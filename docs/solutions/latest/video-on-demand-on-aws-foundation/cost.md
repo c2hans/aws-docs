@@ -43,7 +43,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 +  30 fps
 
  This solution's CloudFormation template creates a destination S3 bucket where the processed videos are stored. The solution stores each processed result in a folder with the same name as the process ID. Pricing increases when using higher frame rates than 30 fps. For more information about MediaConvert pricing, refer to [AWS Elemental MediaConvert Pricing](https://aws.amazon.com/mediaconvert/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Video on Demand on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

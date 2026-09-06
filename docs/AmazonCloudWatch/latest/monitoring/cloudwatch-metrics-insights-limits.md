@@ -15,7 +15,3 @@ CloudWatch Metrics Insights currently has the following quotas:
 + Metrics Insights does not support high-resolution data, which is metric data reported with a granularity of less than one minute. If you request high-resolution data, the request does not fail, but the output is aggregated at one-minute granularity.
 + Each [GetMetricData](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricData.html) operation can have only one query, but you can have multiple widgets in a dashboard that each include a query.
 + If a query using tag(s) with a **GROUP BY** or **WHERE** matches a metric that has more than 10 tag updates, only the most recent 10 tagged versions of the metric will be included in the query results.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

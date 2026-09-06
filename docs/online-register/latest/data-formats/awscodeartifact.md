@@ -34,7 +34,3 @@ AWS CodeArtifact provides the following APIs for data retrieval.
 | <a name="codeartifact-ListSubPackageGroups"></a>[ListSubPackageGroups](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_ListSubPackageGroups.html) | List the sub package groups for a parent package group | List |
 | <a name="codeartifact-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_ListTagsForResource.html) | List tags for a CodeArtifact resource | List |
 | <a name="codeartifact-ReadFromRepository"></a>[ReadFromRepository](https://docs.aws.amazon.com/codeartifact/latest/ug/repo-policies.html) | Return package assets and metadata from a repository endpoint | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

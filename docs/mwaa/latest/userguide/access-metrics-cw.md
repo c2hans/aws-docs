@@ -198,7 +198,3 @@ The `metrics.metrics_allow_list` and `metrics.metrics_block_list` configuration 
 ## What's next?
 <a name="mwaa-metrics202-next-up"></a>
 + Explore the Amazon MWAA API operation used to publish environment health metrics at [PublishMetrics](https://docs.aws.amazon.com/mwaa/latest/API/API_PublishMetrics.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

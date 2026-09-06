@@ -61,7 +61,3 @@ Amazon EMR encryption settings govern SSE. For more information, see [Encryption
 <a name="plugin-limitations"></a>
 
 Each plugin has specific limitations. For the Apache Hive plugin's limitations, see [Apache Hive plugin limitations](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-hive.html#emr-ranger-hive-limitations). For the Apache Spark plugin's limitations, see [Apache Spark plugin limitations](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-spark.html#emr-ranger-spark-limitations). For the EMRFS S3 plugin's limitations, see [EMRFS S3 plugin limitations](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-emrfs.html#emr-ranger-emrfs-limitations).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

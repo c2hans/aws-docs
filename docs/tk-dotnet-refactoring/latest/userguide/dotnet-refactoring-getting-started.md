@@ -16,7 +16,3 @@ Download the Toolkit for .NET Refactoring extension from the Microsoft [Visual S
 + [Setting up for testing on AWS](setup-for-testing.md)
 + [Install Toolkit for .NET Refactoring](dotnet-refactoring-installation.md)
 + [Pricing for Toolkit for .NET Refactoring](dotnet-refactoring-pricing.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

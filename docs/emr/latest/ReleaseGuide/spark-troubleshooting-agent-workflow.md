@@ -23,7 +23,3 @@ At this point, the agent will orchestrate the troubleshooting using specialized 
 1. **Code Recommendations** (if applicable): If the analysis identifies code-related issues based on the error classification, the agent can suggest leveraging the code recommendation tool to provide specific recommendations to implement the recommended code fix with exact before/after code along with suggested replacements.
 
 The troubleshooting process is iterative - you can continue the conversation to dive deeper into specific issues; you may also use the tools interactively in our local Spark code development to address code bugs or improve your code continuously.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

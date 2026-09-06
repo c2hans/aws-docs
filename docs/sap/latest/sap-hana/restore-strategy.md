@@ -124,7 +124,3 @@ As both the system and tenant databases generally share the same filesystems, al
 If you previously disabled the Amazon Data Lifecycle Manager policy when you started the restore process, then you should now re-enable the policy so that it will continue to automate the creation of application-consistent EBS snapshots for all targeted EC2 instances.
 
 You might also consider changing the `autostart` back to `1` so that SAP HANA restarts automatically after a system reboot.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

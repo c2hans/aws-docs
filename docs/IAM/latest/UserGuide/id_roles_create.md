@@ -27,7 +27,3 @@ For more information about creating service-linked roles, see [Create a service-
 Create this role to delegate permissions to users that already have identities outside of AWS. When you use an identity provider, you don't have to create custom sign-in code or manage your own user identities. Your external users sign in through an IdP, and you can give those external identities permissions to use AWS resources in your account. Identity providers help keep your AWS account secure because you don't have to distribute or embed long-term security credentials, such as access keys, in your application.
 
 For more information, see [Create a role for a third-party identity provider](id_roles_create_for-idp.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

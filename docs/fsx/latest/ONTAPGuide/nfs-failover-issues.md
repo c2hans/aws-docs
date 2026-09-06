@@ -79,7 +79,3 @@ After the network settings are in place, you should monitor your environment to 
 
 In NFSv4 environments where modifying client-side configuration is not feasible, consider the following alternatives:
 + **Extend NFSv4 lease timeouts.** Work with your storage administrator to increase NFSv4 lease timeouts. Extending these timeouts gives clients additional time to reclaim locks during failover events. For more information, see [Specify the NFSv4 locking grace period](https://docs.netapp.com/us-en/ontap/nfs-admin/specify-nfsv4-locking-grace-period-task.html) in the NetApp ONTAP documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

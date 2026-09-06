@@ -24,7 +24,3 @@ Only one profile can be associated with a workload.
 The **Workload overview** displays a count of prioritized questions answered and prioritized risks based on the information in the associated profile. Choose **Continue reviewing** to address the prioritized questions in the workload review. For more information, see [Documenting a workload in AWS WA Tool](start-workflow-review.md).
 
 The **Profile** section displays the name, description, ARN, version, and last updated date for the profile associated with the workload.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

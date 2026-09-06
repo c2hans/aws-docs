@@ -102,7 +102,3 @@ This release includes all community bug fixes up to and including 8.0.43. For mo
 + A query of the form `SELECT 1 FROM t WHERE CAST(a AS UNSIGNED INTEGER) = 1 AND a = (SELECT 1 FROM t)` led to an assertion in `item_func.cc`. (Bug \#36128964)
 
 For more information on community changes, see [MySQL 8.0.43 Release Notes](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-43.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

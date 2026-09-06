@@ -121,7 +121,3 @@ v1alpha1 from status.storedVersions
 ```
 
 **Resolution:** Use the upgrade option in the SageMaker AI HyperPod console. The console automatically handles the CRD migration by backing up existing resources, migrating storedVersions, upgrading the add-on, and restoring resources. To perform the migration manually through the Amazon EKS add-on interface, see [Upgrade from v1.3.x to v1.5](sagemaker-hyperpod-eks-operate-console-ui-governance-upgrade.md#hp-eks-task-governance-upgrade-v13-to-v15).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

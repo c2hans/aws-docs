@@ -89,7 +89,3 @@ Get-Counter '\PhysicalDisk(*)\Disk Write Bytes/sec' -SampleInterval 3 -MaxSample
 <a name="comm-bandwidth-test"></a>
 
 If replication is not converging, verify that your actual network throughput matches or exceeds the calculated requirement. For instructions on running a bandwidth test between your source network and AWS, see the [network bandwidth test](Replication-Related-FAQ.md#perform-connectivity-bandwidth-test).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

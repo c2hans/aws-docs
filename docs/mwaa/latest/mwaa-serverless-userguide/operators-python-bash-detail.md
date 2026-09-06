@@ -9,6 +9,9 @@ With Amazon MWAA Serverless, you can run custom Python code and shell scripts as
 + `PythonOperator` runs a Python callable. You can specify this operator as `airflow.providers.standard.operators.python.PythonOperator` (the current form in Apache Airflow 3) or `airflow.operators.python.PythonOperator` (also supported). This operator requires the `python_callable` task parameter.
 + `BashOperator` runs Bash commands or scripts. You can specify this operator as `airflow.providers.standard.operators.bash.BashOperator` (the current form in Apache Airflow 3) or `airflow.operators.bash.BashOperator` (also supported). This operator requires the `bash_command` task parameter.
 
+**Note**
+`PythonOperator` and `BashOperator` tasks are considered AWS Managed Tasks, and the same billing applies. For more information about pricing, see [AWS pricing for Managed Workflows for Apache Airflow](https://aws.amazon.com/managed-workflows-for-apache-airflow/pricing/).
+
 To use these operators, provide your code files when creating or updating a workflow.
 
 ## Prerequisites
@@ -277,7 +280,3 @@ aws mwaa-serverless get-workflow-run \
 ```
 
 In the response, `RunState`, `TaskInstances`, and `Duration` are returned inside the `RunDetail` object. `RunId` and `RunType` are at the top level. Possible values for `RunState` are STARTING, QUEUED, RUNNING, SUCCESS, FAILED, TIMEOUT, STOPPING, and STOPPED. `TaskInstances` lists the individual task instances for the run.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

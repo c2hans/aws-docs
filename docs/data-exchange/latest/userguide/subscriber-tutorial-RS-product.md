@@ -15,7 +15,3 @@ You use the AWS Data Exchange console to find and subscribe to Worldwide Event A
 + [Subscribing to Worldwide Event Attendance (Test Product)](subscribe-to-test-product.md)
 + [Querying Worldwide Event Attendance (Test Product) data with an Amazon Redshift cluster (console)](query-RS-data-console.md)
 + [Querying Worldwide Event Attendance (Test Product) data on Amazon Redshift (SQL)](query-RS-data-SQL.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

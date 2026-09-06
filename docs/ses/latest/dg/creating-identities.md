@@ -614,7 +614,3 @@ If you're unable to use the custom verification email template operations in an 
 <a name="send-email-verify-address-custom-faq-q13"></a>
 
 The `ProductionAccessNotGranted` error indicates that your account is still in the Amazon SES sandbox. You can only send custom verification emails if your account has been removed from the sandbox. For more information, see [Request production access (Moving out of the Amazon SES sandbox)](request-production-access.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

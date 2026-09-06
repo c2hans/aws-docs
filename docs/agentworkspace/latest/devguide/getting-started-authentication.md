@@ -18,7 +18,3 @@ We are aware of the **Google Chrome** Third-Party Cookies Deprecation (3PCD) tha
 Here are the recommendations to ensure customers continue to have good experiences when accessing your application within the Connect Customer agent workspace with Google Chrome.
 **Temporary solution**: Allow 3P cookie access [here](https://support.google.com/chrome/a/answer/14439269?hl=en) .
 **Permanent solution**: Refer to the [guidance](https://developers.google.com/privacy-sandbox/3Pcd) from Chrome to choose the best option suitable for your application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer Agent Workspace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agentworkspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

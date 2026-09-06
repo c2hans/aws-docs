@@ -307,7 +307,3 @@ Considerations for actions configured for express state machines:
 The following related resources can help you as you work with this action.
 + [AWS Step Functions Developer Guide](https://docs.aws.amazon.com/step-functions/latest/dg/) – For information about state machines, executions, and inputs for state machines, see the *AWS Step Functions Developer Guide*.
 + [Tutorial: Use an AWS Step Functions invoke action in a pipeline](tutorials-step-functions.md) – This tutorial gets you started with a sample standard state machine and shows you how to use the console to update a pipeline by adding a Step Functions invoke action.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

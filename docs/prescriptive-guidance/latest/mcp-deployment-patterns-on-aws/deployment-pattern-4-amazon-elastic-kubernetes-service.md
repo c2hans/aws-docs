@@ -14,7 +14,3 @@ Sample implementation: [https://github.com/aws-samples/sample-mcp-deployment-pat
 **Architecture Characteristics**
 + Pros: The API Gateway \+ Private ALB \+ IAM SigV4 pattern provides great security isolation for EKS workloads by keeping all Kubernetes infrastructure completely private—no public load balancers or endpoints—while leveraging AWS-native IAM authentication that eliminates OAuth token services and credential proxies entirely. For EKS specifically, it delivers multi-tenancy isolation flexibility through fine-grained permissions scoped to paths/methods/accounts, enabling workload isolation across namespaces/teams without complex network policies or shared ALB rules.
 + Limitations: SigV4 authentication creates friction for general internet clients lacking AWS credentials or SigV4 signing capability—most off-the-shelf MCP tools expect OAuth/bearer tokens, requiring a SigV4 proxy layer for third-party compatibility; API Gateway HTTP APIs impose hard limits (30s timeout, 10MB payload) that break long-running MCP tool calls.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

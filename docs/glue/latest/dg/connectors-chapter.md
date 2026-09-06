@@ -35,7 +35,3 @@ When creating ETL jobs, you can use a natively supported data store, a connector
 +  **Snowflake** – a cloud-based data warehouse that provides scalable, high-performance data storage and analytics services.
 +  **Teradata** – a relational database management system (RDBMS) that provides high-performance data storage, analysis, and reporting capabilities.
 +  **Vertica** – a columnar-oriented analytical data warehouse designed for big data analytics that offers fast query performance, advanced analytics, and scalability.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

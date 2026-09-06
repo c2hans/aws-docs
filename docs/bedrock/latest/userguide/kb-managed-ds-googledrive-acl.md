@@ -90,7 +90,3 @@ ACL misconfigurations do not produce explicit errors during retrieval. Retrieval
 | Group-based access is not honored. | The Admin SDK directory/group read scope is missing from the delegation. | Add the Admin SDK group read scope to the service account's domain-wide delegation. |
 | Crawl or sync fails. | The clientEmail/privateKey is invalid, or adminAccountEmail is not a Workspace admin. | Verify the service account credentials and that adminAccountEmail is a Workspace administrator. |
 | All users are denied after previously working. | The service account key was rotated or revoked. | Update the privateKey in the secret. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 <a name="suggestion-3.8.2-monitor-the-downstream-systems-eligibility-to-access-classified-data-from-the-analytics-workload."></a>
 
  Monitor the downstream systems’ eligibility to handle sensitive data. For example, you do not want development or test Amazon Redshift clusters to read sensitive data from the analytics workload. If your organization runs a program that certifies which systems are eligible to process various classes of data, periodically verify that each downstream system’s data processing eligibility levels are correct and the list of data that it accesses are appropriate.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

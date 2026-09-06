@@ -14,7 +14,3 @@ In addition to the AWS global infrastructure, AWS IoT Greengrass offers several 
 + If a core device loses power during a deployment, it resumes the deployment after the AWS IoT Greengrass Core software starts again.
 + If a core device loses internet connectivity, Greengrass client devices can continue to communicate over the local network.
 + You can author Greengrass components that read [stream manager](manage-data-streams.md) streams and send the data to local storage destinations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

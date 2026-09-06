@@ -21,7 +21,3 @@ The following screenshot shows the outputs of two workflows. On the left side, t
 ![Workflow diagrams on the left side, monitoring output on the Output tab on the right-side pane.](http://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-batch-scheduler/images/guide-img/ca7d4793-feac-4eba-a6cd-6ca4d6395925/images/79df78be-b653-4fc8-861d-5d06174a246a.png)
 
 *Image provided courtesy of BMC Software, Inc. ©2022*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

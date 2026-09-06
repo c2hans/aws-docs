@@ -173,7 +173,3 @@ See the following topics to learn more about queued callbacks:
 + [How Initial delay affects Scheduled and In queue metrics in Connect Customer](scheduled-vs-inqueue.md)
 + [Failed callback attempts in Connect Customer](failed-callback-attempt.md)
 + [Connect Customer real-time metrics example for a queued callback flow](queued-callback-example.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

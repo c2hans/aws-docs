@@ -16,7 +16,3 @@ Security Hub CSPM integrates with all of these services and tools and provides t
 + Automatically integrates with AWS security services, such as [Amazon Macie](https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html), [Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html) , and [Amazon Detective](https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html)
 + Supports integration with third-party tools, such as [Prowler](https://github.com/prowler-cloud/prowler) and [cfn\_nag](https://github.com/stelligent/cfn_nag)
 + Supports custom integrations with tools, such as Security Hub CSPM API, AWS CLI, and the AWS Security Finding Format (ASFF)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

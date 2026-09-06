@@ -41,7 +41,3 @@ Monitoring is an important part of maintaining the reliability, security, availa
 The following are some examples of items to monitor:
 + *Amazon CloudWatch metrics for App Runner* – Set alarms for key App Runner metrics and for your application's custom metrics. For details, see [Metrics (CloudWatch)](monitor-cw.md).
 + *AWS CloudTrail entries* – Track actions that might impact availability, like `PauseService` or `DeleteConnection`. For details, see [API actions (CloudTrail)](monitor-ct.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ The Federal Information Processing Standard (FIPS) Publication 140-3 is a US and
 <a name="govcloud-compliance-ato"></a>
 
 The Authority to Operate (ATO) on AWS Program helps AWS Partners meet their customers’ authorization needs, whether it be architecting, configuring, deploying, or integrating tools and controls. AWS supports businesses globally that need to meet security, privacy, and compliance requirements for healthcare, privacy, national security, and financial sectors. ATO on AWS supports workloads for government organizations such as FedRAMP, FISMA, the RMF, and CMMC in the U.S. For more information, see https://aws.amazon.com/partners/programs/ato
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

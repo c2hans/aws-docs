@@ -261,7 +261,3 @@ Dividing work into tasks can be complex. Doing I/O (*input/output*) is typically
 Tasks running concurrently can be run in any order. As such, the logs of concurrent programs can very difficult to read. In the SDK for Rust, we recommend using the `tracing` logging system. It can group logs with their specific tasks, no matter when they're running. For guidance, see [Configuring and using logging in the AWS SDK for Rust](logging.md).
 
 A very useful tool for identifying tasks that have locked up is [`tokio-console`](https://github.com/tokio-rs/console), which is a diagnostic and debugging tool for asynchronous Rust programs. By instrumenting and running your program, and then running the `tokio-console` app, you can see a live view of the tasks your program is running. This view includes helpful information like the amount of time a task has spent waiting to acquire shared resources or the amount of times it has been polled.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Rust. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-rust` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

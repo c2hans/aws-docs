@@ -31,7 +31,3 @@ Depending on your programming language, we recommend the following decoding libr
 You can view [image frames](getting-started-concepts.md#concept-image-frame) after you've decoded them. AWS HealthImaging API actions support a variety of open-source image viewers, including:
 + [Open Health Imaging Foundation (OHIF)](https://www.ohif.org/)
 + [Cornerstone.js](https://www.cornerstonejs.org/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

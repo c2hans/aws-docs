@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/targete
 * Figure 20: Targeted isolation *
 
  This model shows how the silo discussion becomes much more granular. Security, noisy neighbor, and a variety of factors will determine how and when you might adopt a silo isolation model for your services. The key takeaway here is that the silo model is not an all-or-nothing decision. You can think about applying the silo model to specific components of your application and only absorb this model’s challenges where it’s actually needed, such as when a potential customer demands its use. In this case, a more detailed discussion with the customer, you find out that there are only a few specific areas of storage and processing that are of concern. Doing so will enable you to get the efficiencies of the pool model for those parts of the system that do not require silo isolation and also give you the flexibility to offer a tiered structure to support a mix of both silo and pool models for individual services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

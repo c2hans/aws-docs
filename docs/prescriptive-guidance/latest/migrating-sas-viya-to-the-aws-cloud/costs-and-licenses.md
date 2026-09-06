@@ -41,7 +41,3 @@ Although SAS 9 and SAS Viya 3.x licensing models are based primarily on capacity
 Pricing metrics depend on the SAS Viya license offer. Furthermore, SAS and ACCESS products are no longer licensed separately but are included in their respective offerings. For SAS Viya offerings that are priced by user type, authorized users are distinct: data scientists, power users, and viewers. Each user is licensed separately and has its own quantity and price so that the value of users is better aligned with tasks and how customers use the software.
 
 Each licensed user must have a unique ID and authorization to access the software. Unlike the policy for total-user licensing, guest users are prohibited because they do not have authorized user IDs. Additionally, licenses for some user types do not apply to some offerings. The only SAS Viya offering that has a user minimum is SAS Model Manager (on SAS Viya), which requires a minimum of five authorized data scientists.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

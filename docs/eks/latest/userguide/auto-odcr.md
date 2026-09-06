@@ -199,7 +199,3 @@ For more information, see [Pods](https://kubernetes.io/docs/concepts/workloads/p
 +  [Interruptible Capacity Reservations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/interruptible-capacity-reservations.html) in the Amazon EC2 User Guide
 +  [Manage compute resources for AI/ML workloads on Amazon EKS](https://docs.aws.amazon.com/eks/latest/userguide/ml-compute-management.html)
 +  [GPU Resource Optimization and Cost Management](https://docs.aws.amazon.com/eks/latest/best-practices/aiml-compute.html#_gpu_resource_optimization_and_cost_management) in the EKS Best Practices Guide
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

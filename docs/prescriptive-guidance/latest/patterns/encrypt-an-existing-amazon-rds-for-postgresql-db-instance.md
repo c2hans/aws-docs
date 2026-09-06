@@ -110,7 +110,3 @@ Additional notes for this pattern:
 + Any schema changes that you make to the source DB instance after you create the DB snapshot will not be present on the target DB instance.
 + After you create an encrypted DB instance, you can't change the KMS key used by that DB instance. Be sure to determine your KMS key requirements before you create your encrypted DB instance.
 + You must disable triggers and foreign keys on the target DB instance before you run the AWS DMS task. You can re-enable these when the task is complete.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ CSPs are looking for OSS to enable operational agility, and want an OSS that inf
 The traditional view of an OSS stack that is comprised of multiple independent and functionally-separated network management functions doesn’t match the dynamic behavior of Network Function Virtualization (NFV) and doesn’t take advantage of the adaptability that the NFV cloud architecture enables. CSPs OSS solutions need to evolve with the network.
 
 This whitepaper describes the benefits of OSS on AWS. It includes an OSS reference architecture, an overview of OSS functions and requirements based on characterizing the network OSS manages, operational characteristics, use cases, and best practices for architecting OSS on AWS (which includes high-availability, scalability, security, performance, and operational excellence). Information contained in this document will enable you to develop a next-generation OSS solution on AWS, which will provide a cost-efficient and agile path to CSPs in their digital transformation journey to becoming Digital Service Providers (DSPs).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

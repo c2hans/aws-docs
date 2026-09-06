@@ -104,7 +104,3 @@ When Amazon DocumentDB serverless writers or readers are idle, DocumentDB server
 In the idle state, the DocumentDB serverless instances do not have sufficient CPU compute capacity to support most production workloads, but are ready to quickly scale up to support a new workload. In a non-idle state, DocumentDB serverless instances typically require at least 1.0 - 2.5 DCUs. Therefore, when DocumentDB serverless instances scale up from an idle state to a non-idle state, they will scale up directly to 1.0 - 2.5 DCUs (or the value of MaxCapacity if it is lower).
 
 In order to support scaling down to 0.5 DCUs when idle, instance limits are capped if the MinCapacity is configured to be less than or equal to 1.0 DCUs. For more information on how the limits are affected by the MinCapacity configuration, see [Amazon DocumentDB serverless instance limits](docdb-serverless-instance-limits.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

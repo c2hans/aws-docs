@@ -65,7 +65,3 @@ In general, aim to keep the size of each flag set small. Mobile use cases tend t
 <a name="appconfig-retrieving-mobile-use-cases"></a>
 
 The power of feature flags extends beyond feature-release convenience. Long standing operational flags can be used to improve the operational posture of your application. For example, you can create a performance monitoring toggle that emits additional metrics and debug data during an event. Alternatively, you may want to maintain and adjust your application refresh rates for a segment of your customer base.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

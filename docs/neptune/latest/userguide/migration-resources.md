@@ -20,7 +20,3 @@ Neptune provides several tools and resources that can assist in the migration pr
   + Identify specific unsupported functions and clauses with their positions.
   + Suggest replacements if available.
   + Provide error descriptions of any other syntax errors.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

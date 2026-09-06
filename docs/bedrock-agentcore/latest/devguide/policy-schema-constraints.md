@@ -47,11 +47,21 @@ The principal type depends on the authentication method configured for your Agen
 + Only available context is `context.input`
 + Contains the tool’s input parameters as defined in the MCP manifest
 + Each tool has a typed input structure (e.g., RefundTool\_\_\_process\_refundInput)
-+ Parameter types are automatically mapped from JSON Schema to Cedar types:
-  + string → String
-  + integer → Long
-  + boolean → Bool
-  + number → Decimal
++ Parameter types are automatically mapped from the action schema to Cedar types.
+
+The following table shows the correspondence between the 7 basic JSON Schema types and Cedar types:
+
+| JSON Schema | Cedar | Notes |
+| --- | --- | --- |
+|  `string`  |  `String`  |  |
+|  `integer`  |  `Long`  |  |
+|  `boolean`  |  `Bool`  |  |
+|  `number`  |  `Decimal`  | Decimal is an extension type in Cedar, which does not exactly match IEEE floating point numbers, so numbers will be truncated to the Cedar representation |
+|  `object`  |  `Record`  | The type correspondence is applied recursively to properties, and the list of `required` properties is used to decide which properties of the record are required |
+|  `array`  |  `Set`  | Cedar `Set` does not have a notion of item order, so the order of items in the JSON array does not get translated to Cedar |
+|  `null`  |  `Entity`  | Because Cedar does not have a 1:1 match for a type that is solely `null`, schemas will contain a unique entity to represent each `null`-type |
+
+Treat this table as a high-level overview. For more information about detailed and nuanced use cases, see [the open-source MCP schema generator on GitHub](https://github.com/cedar-policy/cedar-for-agents/tree/main/rust/cedar-policy-mcp-schema-generator).
 
 ## What You Cannot Do
 <a name="policy-limitations"></a>
@@ -59,7 +69,3 @@ The principal type depends on the authentication method configured for your Agen
 + Cannot access context fields other than `context.input` (`context.output` can only be used with guardrails)
 + Cannot use custom attributes on OAuthUser (use tags instead)
 + Cannot define new entity types in policies
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

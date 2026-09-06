@@ -139,7 +139,3 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 + **Trust relationship**: Verify that the role's trust policy includes `devicefarm.amazonaws.com` as a trusted service.
 + **Permissions**: Check that the role has the necessary permissions for the AWS services your tests are trying to access.
 + **Test logs**: Review the test execution logs for specific error messages related to AWS API calls or permission denials.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

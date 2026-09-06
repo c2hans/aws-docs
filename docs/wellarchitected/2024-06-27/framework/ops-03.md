@@ -17,7 +17,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 + [OPS03-BP05 Experimentation is encouraged](ops_org_culture_team_enc_experiment.md)
 + [OPS03-BP06 Team members are encouraged to maintain and grow their skill sets](ops_org_culture_team_enc_learn.md)
 + [OPS03-BP07 Resource teams appropriately](ops_org_culture_team_res_appro.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

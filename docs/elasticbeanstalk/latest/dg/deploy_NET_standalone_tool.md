@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/deploy_NET_st
 AWS offers two command line tools to deploy .NET Core and ASP.NET Core applications to Elastic Beanstalk:
 + **AWS .NET deployment tool** – A modern command line tool that simplifies deploying .NET applications to AWS services, including Elastic Beanstalk. This tool provides an interactive experience and can automatically detect the best AWS service for your application. For more information, see [AWS .NET deployment tool](https://github.com/aws/aws-dotnet-deploy?tab=readme-ov-file#aws-net-deployment-tool).
 + **AWS Extensions for .NET CLI** – A set of .NET CLI extensions that provide commands for deploying .NET Core applications to Elastic Beanstalk and other AWS services. These extensions integrate with the standard .NET CLI workflow. For more information, see [AWS Extensions for .NET CLI](https://github.com/aws/aws-extensions-for-dotnet-cli?tab=readme-ov-file#aws-elastic-beanstalk-amazonelasticbeanstalktools).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

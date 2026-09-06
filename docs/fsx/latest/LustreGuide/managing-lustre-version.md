@@ -70,7 +70,3 @@ To upgrade your FSx for Lustre file system to a newer version, follow the listed
    If the upgrade workflow fails (e.g., if a client is still connected to the file system), the file system is automatically rolled back to its original Lustre version and state. In such a case, the administrative action event will contain a failure message with guidance on how to address the issue before retrying the upgrade.
 
 1. **Mount all clients:** You can monitor the progress of Lustre version updates by using the **Updates** tab in the Amazon FSx console or `describe-file-systems` in the AWS CLI. Once the Lustre version upgrade status shows as `Completed`, you can safely remount the file system on your client instances and resume your workload.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

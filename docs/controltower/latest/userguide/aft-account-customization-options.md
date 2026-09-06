@@ -25,7 +25,7 @@ To customize an individual account, or a set of accounts, differently than other
 
 Before you begin to customize accounts, be sure these prerequisites are in place.
 + A fully deployed AFT. For information about how to deploy, see [Configure and launch your AWS Control Tower Account Factory for Terraform](aft-getting-started.md#aft-configure-and-launch).
-+ Pre-populated `git` repositories for global customizations and account customizations in your environment. See *Step 3: Populate each repository* in [Post-deployment steps](aft-post-deployment.md) for more information.
++ Pre-populated `git` repositories for global customizations and account customizations in your environment. See *Populate each repository* in [Post-deployment steps](aft-post-deployment.md) for more information.
 
 ## Apply global customizations
 <a name="aft-global-customizations"></a>
@@ -188,7 +188,3 @@ The following example shows a Step Functions input that re-invokes customization
      ```
 
 1.  After you select a query, make sure to select a time interval, and then choose **Run query**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

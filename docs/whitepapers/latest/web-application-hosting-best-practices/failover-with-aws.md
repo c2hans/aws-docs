@@ -12,7 +12,3 @@ Another key advantage of AWS over traditional web hosting is the [Availability Z
 It’s important to ensure that there are provisions for migrating single points of access across Availability Zones in the case of failure. For example, you should set up a database standby in a second Availability Zone so that the persistence of data remains consistent and highly available, even during an unlikely failure scenario. You can do this on Amazon EC2 or Amazon RDS with the click of a button.
 
 While some architectural changes are often required when moving an existing web application to the AWS Cloud, there are significant improvements to scalability, reliability, and cost-effectiveness that make using the AWS Cloud well worth the effort. The next section discusses those improvements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

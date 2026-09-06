@@ -46,7 +46,3 @@ To export the current inventory of member accounts, the current Macie administra
 1. Specify a name and location for the file.
 
 With the Amazon Macie API, the current Macie administrator can retrieve the data in JSON format. The new Macie administrator can then use that data to generate the list of account IDs and email addresses for the accounts to add and invite to the new organization. To retrieve the data in JSON format, use the [ListMembers](https://docs.aws.amazon.com/macie/latest/APIReference/members.html) operation of the Amazon Macie API. If the operation succeeds, Macie returns a `members` array that provides details about all the accounts that are associated with the administrator’s account. If an account is currently a member account, the value for the `relationshipStatus` property of the account is `Enabled` or `Paused`, and the `invitedAt` property specifies a date and time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ Once you have imported the database, you might want to remove unnecessary resour
 1. Delete the S3 bucket if you’re not planning to use it. For steps on doing that, see [Delete Stack](https://docs.aws.amazon.com/managedservices/latest/ctref/ex-stack-delete-col.html).
 
 1. If you’re not planning to do MS SQL imports, submit a Management \| Other \| Other \| Update (ct-0xdawir96cy7k) RFC and request that AMS delete the IAM role `customer_rds_s3_role`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -103,7 +103,3 @@ Generally, the maximum transmission unit (MTU) is as follows:
 + 1500 bytes between carrier gateway and a Wavelength Zone.
 + 1500 bytes between an EC2 instance in a Wavelength Zone and an EC2 instance in the Region when the traffic uses a public IP address.
 + 1300 bytes between an EC2 instance in a Wavelength Zone and an EC2 instance in the Region when the traffic uses a private IP address.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wavelength. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wavelength` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

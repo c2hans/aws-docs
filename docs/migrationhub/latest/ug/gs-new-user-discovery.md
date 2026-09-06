@@ -197,7 +197,3 @@ The following procedure shows you how to select the servers you want to group fo
 1. Choose **Group**.
 
 1. Optionally, you can add a descriptive tag to the selected servers by choosing **Add tag** from the **Actions** menu. Doing so shows a dialog box where you can type a value for **Key**, and optionally a value for **Value**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ To perform this setup, you must work with the video engineer in your organizatio
 **Topics**
 + [Obtain information](setup-s2110-pull-obtain-info.md)
 + [Create a SMPTE 2110 input](setup-input-s2110-pull.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

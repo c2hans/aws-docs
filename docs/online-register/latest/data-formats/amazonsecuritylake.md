@@ -18,7 +18,3 @@ Amazon Security Lake provides the following APIs for data retrieval.
 | <a name="securitylake-ListLogSources"></a>[ListLogSources](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_ListLogSources.html) | View the enabled accounts. You can view the enabled sources in the enabled regions | List |
 | <a name="securitylake-ListSubscribers"></a>[ListSubscribers](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_ListSubscribers.html) | List all subscribers | List |
 | <a name="securitylake-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_ListTagsForResource.html) | List all tags for the resource | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

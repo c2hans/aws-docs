@@ -160,7 +160,3 @@ The `WHERE` clause is used to filter the data and return only the data that meet
 Create your own CQL queries to find the following from your `book_awards` table:
 + Find the winners of the 2020 Wolf awards and display the book titles and authors, ordered by rank.
 + Show the first prize winners for all awards in 2020 and display the book titles and award names.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -96,7 +96,3 @@ To be notified when a new, optional operating system patch becomes available, yo
 The following consideations and limitations apply to OS updates:
 + Any operating system customizations made to the C:\\ drive are not preserved during Operating system updates.
 + We recommend taking a manual snapshot before applying updates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

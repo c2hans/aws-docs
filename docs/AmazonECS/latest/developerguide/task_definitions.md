@@ -40,7 +40,3 @@ After you create a task definition, you can run the task definition as a task or
 + [Amazon ECS task definition parameters for Amazon EC2](task_definition_parameters_ec2.md)
 + [Amazon ECS task definition template](task-definition-template.md)
 + [Example Amazon ECS task definitions](example_task_definitions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

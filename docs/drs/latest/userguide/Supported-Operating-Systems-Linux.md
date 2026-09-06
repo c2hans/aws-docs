@@ -38,7 +38,3 @@ The following operating systems are no longer supported, or will no longer be su
 | SUSE | 11 SP4 to 15 SP5 |  + The AWS Replication Agent is supported on SUSE Linux Enterprise Server (SLES) 11 SP4 and higher.<br />+   For SUSE Linux (SLES) 11 SP4 to work, you must install the Xen drivers and then reboot the servers before installing the AWS Replication Agent. Use this command to install the drivers: `$ sudo zypper install -y xen-kmp-default`.  |
 | Ubuntu | 12.04 to 24.04 |  +  Only Kernel 3.x or above are supported <br />+  Azure kernels are not supported as they are not compatible with the Amazon EC2 hardware. Ubuntu servers from Azure are required to switch the kernel to a standard kernel or the AWS tuned Ubuntu kernel 'linux-aws'.   |
 | Debian | 10 to 13 |  Only Kernel 3.x or above are supported  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

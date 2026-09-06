@@ -108,7 +108,3 @@ Sentinel-2
 | aot | Aerosol optical thickness | 0.001 | NA | 0 (No Data) | 10m |
 | wvp | Scene-average water vapor | 0.001 | NA | 0 (No Data) | 10m |
 | scl | Scene classification data | NA | 1 - 11 | 0 (No Data) | 20m |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

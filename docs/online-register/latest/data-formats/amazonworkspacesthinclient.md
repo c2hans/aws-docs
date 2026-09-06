@@ -18,7 +18,3 @@ Amazon WorkSpaces Thin Client provides the following APIs for data retrieval.
 | <a name="thinclient-ListEnvironments"></a>[ListEnvironments](https://docs.aws.amazon.com/workspaces-thin-client/latest/api/API_ListEnvironments.html) | List environments | List |
 | <a name="thinclient-ListSoftwareSets"></a>[ListSoftwareSets](https://docs.aws.amazon.com/workspaces-thin-client/latest/api/API_ListSoftwareSets.html) | List software sets | List |
 | <a name="thinclient-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/workspaces-thin-client/latest/api/API_ListTagsForResource.html) | List tags for a resource | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  The performance efficiency pillar focuses on the efficient use of resources to meet requirements and the maintenance of that efficiency as demand changes and technologies evolve. Performance optimization is not a one-time activity. It is an incremental and continual process of confirming business requirements, measuring the workload performance, identifying under-performing components, and tuning the components to meet your business needs. This section includes best practice considerations to maintain performance efficiency at the edge.
 
  The following best practices are provided for customers with data residency requirements. Please use these to access your architecture in addition to the general best practices found in the [Well-Architected Performance Efficiency Pillar](https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

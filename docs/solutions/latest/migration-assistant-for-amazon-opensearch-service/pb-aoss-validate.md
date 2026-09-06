@@ -48,7 +48,3 @@ console clusters curl target /<index>/_search?pretty -XPOST \
 ```
 
 Verify that the `dense_vector`-to-`knn_vector` field-type transformation produced the expected mapping on the target, and that scores and ranking are consistent with the source for a sample of known queries.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

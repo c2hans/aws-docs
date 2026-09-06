@@ -57,7 +57,3 @@ For upgrade procedure script, see [this GitHub repository](https://github.com/aw
 **Key takeaway: **Upgrading clusters out of extended support is often the single highest-ROI cost action, it requires no application changes and delivers immediate savings. Use the estimation script above with [current EKS pricing](https://aws.amazon.com/eks/pricing/) to quantify your specific savings.
 
 For the complete scripts and manifests, see the [03-eks-control-plane-upgrade](https://github.com/aws-samples/sample-eks-cost-optimization-guide/tree/main/03-eks-control-plane-upgrade) folder in the code repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

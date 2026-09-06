@@ -34,7 +34,3 @@ Use the following steps to enable this setup:
       1. NetworkIn(Upload) \+ NetworkOut(Download) per usage account/ total data processed in network account
 
       1. % of usage x total cost = chargeback cost per usage account
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -62,7 +62,3 @@ Tips on how to group accounts into organizational units (OUs). An OU is logical 
 <a name="account-limits-aws"></a>
 
 AWS account limits apply to your AWS Managed Services (AMS) accounts. The easiest method to determine default and current limits for AWS services is by leveraging [AWS Service Quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html). AMS recommends right-sizing individual service limits to the appropriate size to run the service(s) in the account. Limits act like guard-rails to protect your accounts for security and cost runaways. If you would like to raise a specific limit, submit a service request with AMS, and AMS Operations will raise the limit on your behalf. For example, the default limit (or quota) for RDS instances is 40; if your workload requires 50 RDS instances, raise a service request for AMS Operations to raise the limit to your needed value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

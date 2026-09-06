@@ -184,7 +184,7 @@ Set the `ContainerDefinition` property `Essential` to either true or false for e
 ## Configure network connections
 <a name="containers-custom-network"></a>
 
-You can customize network access to allow external traffic connect to any container in a container fleet. For example, you must establish network connections to the container that runs your game server processes, so that game clients can join and play your game. Game clients connect to game servers using ports and IP addresses.
+You can customize network access to allow external traffic to connect to any container in a container fleet. For example, you must establish network connections to the container that runs your game server processes, so that game clients can join and play your game. Game clients connect to game servers using ports and IP addresses.
 
 In a container fleet, the connection between a client and server is not direct. Internally, a process in a container listens on a *container port*. Externally, incoming traffic connects to a fleet instance using a *connection port*. Amazon GameLift Servers maintains the mappings between internal container ports and external-facing connection ports, so that incoming traffic gets routed to the correct process on the instance. To retrieve the current port mappings for a specific container group, call the [DescribeContainerGroupPortMappings](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_DescribeContainerGroupPortMappings.html) operation. For more information about viewing port mappings, see [View container port mappings](containers-remote-access.md#containers-remote-access-port-mappings).
 
@@ -280,19 +280,15 @@ In general, you want to deploy your fleets geographically near your players to m
 Consider using [UDP ping beacons](reference-udp-ping-beacons.md) to collect network latency data in various geographical locations to anticipate the latency between player devices and potential fleet locations. These special endpoints accept UDP messages instead of traditional ICMP pings, providing accurate latency measurements to help you select optimal fleet locations.
 
 **Choose an instance type and size for your fleet**
-Amazon GameLift Servers supports a wide range of Amazon EC2 instances types, all of which are available for use with a container fleet. Instance type availability and price varies by location. You can view a list of supported instance types, filtered by location, in the Amazon GameLift Servers console (under **Resources, Instance and service quotas**).
+Amazon GameLift Servers supports a wide range of Amazon EC2 instance types, all of which are available for use with a container fleet. Instance type availability and price varies by location. You can view a list of supported instance types, filtered by location, in the Amazon GameLift Servers console (under **Resources, Instance and service quotas**).
 When choosing an instance type, first consider the instance family. Instance families offer various combinations of CPU, memory, storage, and networking capabilities. Get more information on [EC2 instance families](https://aws.amazon.com/ec2/instance-types/). Within each family you have a range of instance sizes to choose from. Consider the following issues when selecting an instance size:
 + What's the minimum instance size that can support your workload? Use this information to eliminate any instance types that are too small.
 + What instance type sizes are a good fit for your container architecture? Ideally, you want to choose a size that can accommodate multiple copies of your game server container group with minimal wasted space.
-+ What scaling granularity makes sense for your game? Scale fleet capacity involves adding or removing instances, and each instance represents the ability to host a specific number of game sessions. Consider how much capacity you want to add or remove with each instance. If player demand varies by thousands from minute to minute, then it might make sense to use very large instances that can host hundreds or thousands of game sessions. By contrast, you might prefer more fine-grained scaling control with smaller instance types.
-+ Are there cost savings available based on size? You might find that the cost of certain instance types vary by location due to availability.
++ What scaling granularity makes sense for your game? Scaling fleet capacity involves adding or removing instances, and each instance represents the ability to host a specific number of game sessions. Consider how much capacity you want to add or remove with each instance. If player demand varies by thousands from minute to minute, then it might make sense to use very large instances that can host hundreds or thousands of game sessions. By contrast, you might prefer more fine-grained scaling control with smaller instance types.
++ Are there cost savings available based on size? You might find that the cost of certain instance types varies by location due to availability.
 
 **Set other optional fleet settings**
 You can use the following optional features when configuring a container fleet:
 + Set up your game servers to access other AWS resources. See [Connect your Amazon GameLift Servers hosted game server to other AWS resources](gamelift-sdk-server-resources.md).
 + Protect game sessions with active players from terminating prematurely during a scale-down event.
 + Limit the number of game sessions that one individual can create on the fleet within a limited span of time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

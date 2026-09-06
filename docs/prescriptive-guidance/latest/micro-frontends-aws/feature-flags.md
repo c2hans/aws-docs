@@ -20,7 +20,3 @@ While feature flags are a powerful tool for facilitating collaboration between d
 + Creating tools to measure bundle size increases during code changes, which can be mitigated during code reviews
 
 AWS offers a range of solutions for optimizing A/B testing on the edge by using Amazon CloudFront functions or Lambda@Edge. These approaches help to reduce the complexity of integrating a solution or the existing SaaS product that you are using to assert your assumptions. For more information, see [A/B testing](https://aws.amazon.com/developer/application-security-performance/articles/a-b-testing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

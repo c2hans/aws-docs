@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/tools
  Nodestream fully supports IAM authentication when connecting to Amazon Neptune, as long as credentials are properly configured. See the [ boto3 credentials guide](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html#configuring-credentials) for more information on correctly configuring credentials.
 
  [Nodestream's TTL mechanism](https://nodestream-proj.github.io/docs/docs/tutorials-intermediate/removing-data/) also enables new capabilities not previously available in Neptune . By annotating ingested graph elements with timestamps, Nodestream can create pipelines which automatically expire and remove data that has passed a configured lifespan.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

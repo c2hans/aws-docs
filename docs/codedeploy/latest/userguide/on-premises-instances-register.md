@@ -16,7 +16,3 @@ To register an on-premises instance, you must use an IAM identity to authenticat
 + [Use the register-on-premises-instance command (IAM Session ARN) to register an on-premises instance](register-on-premises-instance-iam-session-arn.md)
 + [Use the register command (IAM user ARN) to register an on-premises instance](instances-on-premises-register-instance.md)
 + [Use the register-on-premises-instance command (IAM user ARN) to register an on-premises instance](register-on-premises-instance-iam-user-arn.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,7 +41,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-explode-array.
 
 1. (Optional) On the **Transform** tab, by default if the column to explode is NULL or has an empty structure, it will be omitted on the exploded dataset. If you want to keep the row (with the new columns as NULL) then check “Include NULLs”.
 ![The screenshot shows the Transform tab for the Explode Array or Map Into Rows transform.](http://docs.aws.amazon.com/glue/latest/dg/images/transforms-explode-array-transform-tab.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ Quick Setup provides support for the following configuration types.
 + [Stop and start EC2 instances automatically on a schedule using Quick Setup](quick-setup-scheduler.md)
 + [OpsCenter organization setup](OpsCenter-quick-setup-cross-account.md)
 + [Configure AWS Resource Explorer using Quick Setup](Resource-explorer-quick-setup.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

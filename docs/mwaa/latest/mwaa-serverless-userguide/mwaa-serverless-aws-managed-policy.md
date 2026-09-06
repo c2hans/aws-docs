@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/mw
 | --- | --- | --- |
 |  Amazon MWAA Serverless update its service-linked role permission policy  |  [ AmazonMWAAServerlessServiceRolePolicy](#aws-managed-policy-AmazonMWAAServerlessServiceRolePolicy) – Amazon MWAA updates the permission policy for its service-linked role to grant Amazon MWAA Serverless permission to perform actions on all Amazon MWAA Serverless-supported AWS resources  | November 17, 2025 |
 |  Amazon MWAA Serverless started tracking changes  |  Amazon MWAA Serverless started tracking changes for its AWS-managed service-linked role permission policy.  | November 17, 2025 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

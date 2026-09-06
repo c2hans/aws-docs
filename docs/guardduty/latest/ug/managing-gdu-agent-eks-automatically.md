@@ -86,7 +86,3 @@ Based on your preference to monitor all or selective Amazon EKS resources, choos
 
 1. Under the **Configuration** tab, choose **Enable** to enable automated agent configuration for your account.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/guardduty/latest/ug/managing-gdu-agent-eks-automatically.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

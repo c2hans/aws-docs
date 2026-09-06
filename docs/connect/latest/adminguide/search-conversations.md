@@ -140,11 +140,7 @@ The following image shows a search for contacts where the agent's average respon
 1. In the **Contact categories** box, use the dropdown box to list all the current categories that are available for you to search. Or, if you start typing, the input is used to match existing categories and to filter those that don't match.
    + **Match any**: Searches for contacts that match any of the selected categories.
    + **Match all**: Searches for contacts that match all of the selected categories.
-   + **Match none**: Searches for contacts that did not match any of the selected categories. Note that this would only return contacts that were analyzed by conversational analytics.
+   + **Match none**: Searches for contacts that did not match any of the selected categories. This option only returns contacts that were analyzed by conversational analytics.
 
    The following image shows a dropdown menu with all the current categories listed.
 ![The contact category filter, the match all option, the contact categories.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-search-contact-category2.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

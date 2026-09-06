@@ -31,7 +31,3 @@ To facilitate seamless certification rotations, any certificate with the same ce
 If you do not specify the IP address of your customer gateway device, we do not check the IP address. This operation allows you to move the customer gateway device to a different IP address without having to re-configure the VPN connection.
 
 Site-to-Site VPN performs certificate chain verification on the customer gateway certificate when you create a certificate VPN. In addition to the basic CA and validity checks, Site-to-Site VPN checks whether the X.509 extensions are present, including Authority Key Identifier, Subject Key Identifier, and Basic Constraints.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

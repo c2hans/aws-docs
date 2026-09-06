@@ -33,7 +33,3 @@ Identify the AWS resources and services that your users need. Then define the ac
   For more information, see [Identity providers and federation into AWS](id_roles_providers.md)
 
 For instructions on adding an extra layer of security for sign-in, see [Use multi-factor authentication with your identities](gs-identities-mfa.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

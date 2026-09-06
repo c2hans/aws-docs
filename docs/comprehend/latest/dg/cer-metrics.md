@@ -120,7 +120,3 @@ These metrics provide an insight into how accurately the trained model will perf
 1. If you are using an Entity List, consider using Annotations instead. Manual annotations can often improve your results.
 
 1. If you are sure there is not a data quality issue, and yet the metrics remain unreasonably low, please submit a support request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

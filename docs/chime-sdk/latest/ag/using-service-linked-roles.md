@@ -18,7 +18,3 @@ For information about other services that support service-linked roles, see [AWS
 + [Using roles with live transcription](using-service-linked-roles-transcription.md)
 + [Using roles with Amazon Chime SDK media pipelines](using-service-linked-roles-media-pipeline.md)
 + [Using the AmazonChimeSDKEvents service-linked role](analytics-service-role.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

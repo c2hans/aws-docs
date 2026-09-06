@@ -15,7 +15,3 @@ You can choose from several tools to run a `Scan and install` operation:
 + Create a maintenance window that uses the Systems Manager document (SSM document) `AWS-RunPatchBaseline` in a Run Command task type. For information, see [Tutorial: Create a maintenance window for patching using the console](maintenance-window-tutorial-patching.md).
 + Manually run `AWS-RunPatchBaseline` in a Run Command operation. For information, see [Running commands from the console](running-commands-console.md).
 + Install patches on demand using the **Patch now** option. For information, see [Patching managed nodes on demand](patch-manager-patch-now-on-demand.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

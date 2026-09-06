@@ -28,7 +28,3 @@ The JSON listings shown in these examples were created in the console by configu
 + [Bot Control example: Allowing traffic from a bot that you control](waf-bot-control-example-scope-down-your-bot.md)
 + [Bot Control example: Enabling targeted inspection level](waf-bot-control-example-targeted-inspection-level.md)
 + [Bot Control example: Using two statements to limit the use of the targeted inspection level](waf-bot-control-example-common-and-targeted-inspection-level.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

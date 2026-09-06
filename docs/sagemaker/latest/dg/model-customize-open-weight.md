@@ -54,7 +54,3 @@ The following table shows the supported fine-tuning recipes for each model, incl
 | NVIDIA | Nemotron 3 Nano 30B (A3B) | huggingface-reasoning-nvidia-nemotron-3-nano-30b-a3b-bf16 | ✓ | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |
 | OpenAI | GPT OSS 120B | openai-reasoning-gpt-oss-120b | ✓ |  | ✓ |  | ✓ |  | ✓ |  |
 | OpenAI | GPT OSS 20B | openai-reasoning-gpt-oss-20b | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

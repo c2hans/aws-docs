@@ -42,7 +42,3 @@ WorkSpaces Thin Client supports AltGr and dead key keyboard layouts in English (
 **Italian (Italy) keyboard layout**
 
 ![Italian keyboard layout showing QWERTY keys with Italian-specific characters and symbols.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/italian.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

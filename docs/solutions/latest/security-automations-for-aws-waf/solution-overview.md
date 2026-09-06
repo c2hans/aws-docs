@@ -39,7 +39,3 @@ Use this navigation table to quickly find answers to these questions:
 | View or download the CloudFormation template included in this solution to automatically deploy the infrastructure resources (the "stack") for this solution. |  [AWS CloudFormation template](aws-cloudformation-templates.md)  |
 | Use Support to help you deploy, use, or troubleshoot the solution. |  [Support](contact-aws-support.md)  |
 | Access the source code and optionally use the AWS Cloud Development Kit (AWS CDK) to deploy the solution |  [GitHub repository](https://github.com/aws-solutions/aws-waf-security-automations/)  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Automations for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

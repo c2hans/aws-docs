@@ -23,7 +23,3 @@ After you restore your DB instance from a snapshot or perform a point-in-time re
 + [Using GTID-based replication](mysql-replication-gtid.md)
 + [Configuring binary log file position replication with an external source instance](MySQL.Procedural.Importing.External.Repl.md)
 + [Configuring multi-source-replication for Amazon RDS for MySQL](mysql-multi-source-replication.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

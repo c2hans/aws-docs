@@ -77,7 +77,3 @@ You can only initiate a code review within a pull request with a new comment. Th
 1. (Optional) Ask questions about specific findings. Within the pull request, navigate to **Add a comment**, and in the comment text input field, enter `/q` followed by your question (for example, "`/q explain the importance of this finding`").
 
 1. If you're satisfied with the suggested code fixes, you can merge the pull request to apply the code changes suggested by Amazon Q Developer. For more information, see [Merging a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request) in the *GitHub documentation*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

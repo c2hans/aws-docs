@@ -10,7 +10,7 @@ With Linear integration in Amazon Quick, you can manage issues, track projects, 
 ## What you can do
 <a name="linear-integration-capabilities"></a>
 
-Linear integration provides action connector capabilities through MCP server connectivity:
+Linear integration provides connector capabilities through MCP server connectivity:
 + Create and manage issues and tasks
 + Track project progress and milestones
 + Manage team workflows and assignments
@@ -50,7 +50,3 @@ Linear integration supports:
 + **Chat Agents:** Yes
 + **Flows:** Yes
 + **Knowledge Base:** No
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

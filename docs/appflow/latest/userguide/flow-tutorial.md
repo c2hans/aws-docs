@@ -90,7 +90,3 @@ Before you begin, you need access to an AWS account and an account for a support
 
   For information on how to create IAM policies, see [Creating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) in the *IAM User Guide*. These two policies grant you all the permissions that you need to complete this tutorial. For more information on the different types of policies, see [Managed policies and inline policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html) in the *IAM User Guide*.
 + **Salesforce setup (Optional)** — If you already have a Salesforce account or you want to complete this tutorial with a different SaaS application, you can skip this step. Sign up for a free Salesforce developer account [here](https://developer.salesforce.com/signup).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

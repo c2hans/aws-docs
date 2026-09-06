@@ -44,7 +44,3 @@ Non-breaking changes of the sort that were previously released as patches are no
 This means that if you want you can receive a notification every time a new minor version is released, by subscribing to the [`RDS-EVENT-0156`](event-lists.md#RDS-EVENT-0156) event (see [Subscribing to Neptune event notification](events-subscribing.md)).
 
 Patch releases are now reserved for urgent targeted fixes, and are numbered using the last part of the version number (`*.*.*.1`, `*.*.*.2`, and so forth).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

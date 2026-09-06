@@ -34,7 +34,3 @@ Amazon AppStream 2.0 provides the following APIs for data retrieval.
 | <a name="appstream-ListEntitledApplications"></a>[ListEntitledApplications](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_ListEntitledApplications.html) | Retrieve the applications that are associated with the specified entitlement | List |
 | <a name="appstream-ListExportImageTasks"></a>[ListExportImageTasks](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_ListExportImageTasks.html) | List export image tasks | List |
 | <a name="appstream-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_ListTagsForResource.html) | Retrieve a list of all tags for the specified AppStream 2.0 resource. The following resources can be tagged: Image builders, images, fleets, and stacks | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

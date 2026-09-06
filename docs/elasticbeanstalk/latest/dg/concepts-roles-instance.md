@@ -30,7 +30,3 @@ If your web application requires access to other additional AWS services, add st
  If your AWS account doesn’t have an EC2 instance profile, you must create one using the IAM service. You can then assign the EC2 instance profile to new environments that you create. The **Create environment** steps in the Elastic Beanstalk console provides you access to the IAM console, so that you can create an EC2 instance profile with the required permissions.
 
 You can also create an EC2 instance profile by directly accessing the IAM console, without going through the Elastic Beanstalk console. For detailed steps to create an Elastic Beanstalk EC2 instance profile in the IAM console, see [Creating an instance profile](iam-instanceprofile.md#iam-instanceprofile-create).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

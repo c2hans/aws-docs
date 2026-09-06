@@ -69,7 +69,3 @@ Fraud prediction is an evaluation of fraud for either a single event or a set of
 
 **Fraud prediction explanation**
 Fraud prediction explanations provide insight into how each variable impacted your model’s fraud prediction score. It provides information about how each variable influences the risk scores in terms of magnitude (ranging from 0 to 5 with 5 being highest) and direction (driving the score higher or lower).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

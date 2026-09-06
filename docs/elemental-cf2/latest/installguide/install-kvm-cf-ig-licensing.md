@@ -15,7 +15,3 @@ Install a valid license file for each AWS Elemental system using the steps descr
 | Step b: Generate License Activation Key File | The keygen utility available on the VM | Activation code | Key file (.key ) |
 | Step c: Download Licenses from the AWS Elemental User Community | Your workstation | Key file (.key ) | Tarball file (.tgz) |
 | Step d: Install the License Files | Your workstation | Unlicensed software with limited functionality | Fully licensed, full-feature software |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

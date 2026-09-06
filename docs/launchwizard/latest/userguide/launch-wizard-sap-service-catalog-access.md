@@ -36,7 +36,3 @@ In the AWS Service Catalog administrator console, the **Portfolio details** page
 1. You will be directed to the AWS Service Catalog **Launching** page, which resembles CloudFormation. Most of the parameters are specified using your defaults. Enter or replace the default values as you require, including passwords and SAPSIDs.
 
 1. After you verify the parameters, choose **Launch product** to start the creation of the CloudFormation stack.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

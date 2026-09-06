@@ -26,7 +26,3 @@ If you already have an OpenSearch cluster, you can manually install the plugin o
    For more information about installing plugins, see [Installing plugins](https://opensearch.org/docs/latest/install-and-configure/plugins/).
 
  After you install the Amazon Personalize Search Ranking plugin, you're ready to configure it. You configure the plugin by creating a search pipeline and specifying a `personalized_search_ranking` response processor. For more information, see [Creating a pipeline](opensearch-plugin-pipeline-example.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

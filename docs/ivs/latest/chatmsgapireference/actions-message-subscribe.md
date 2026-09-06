@@ -37,7 +37,3 @@ Messages from other clients that are sent to the room.
 | `Sender` | Information about the sender. This includes two fields:+  `Sender.Attributes` is metadata about the sender established during authentication. This can be used to give the client more information about the sender; e.g., avatar URL, badges, font, and color. <br />+  `Sender.UserId` is an application-specified identifier of the viewer (end user) who sent this message. This can be used by the client application to refer to the user in either the messaging API or application domains.  |
 | `SendTime` | Timestamp of when the message was received by Amazon IVS Chat. |
 | `Type` | `MESSAGE` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

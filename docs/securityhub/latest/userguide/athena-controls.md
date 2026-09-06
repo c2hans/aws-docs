@@ -121,7 +121,3 @@ Audit logs track and monitor system activities. They provide a record of events 
 <a name="athena-4-remediation"></a>
 
 For information about enabling logging for an Athena workgroup, see [Enable CloudWatch query metrics in Athena](https://docs.aws.amazon.com/athena/latest/ug/athena-cloudwatch-metrics-enable.html) in the *Amazon Athena User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

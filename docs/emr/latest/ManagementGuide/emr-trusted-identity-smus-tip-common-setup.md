@@ -150,7 +150,3 @@ Grant Lake Formation permissions on the database and table to the IAM Identity C
 1. Create a new project using the blueprint (for example, **All capabilities**) for which `enableTrustedIdentityPropagationPermissions` is set to `true`.
 
 1. Verify data access: as a project user, check the **Data** section to confirm you can see the database and table using the preview feature.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

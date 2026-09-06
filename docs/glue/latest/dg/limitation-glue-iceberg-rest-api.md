@@ -14,7 +14,3 @@ Following are the considerations and limitations when using the Apache Iceberg R
 **Limitations**
 +  View APIs in the Apache Iceberg REST specification are not supported in AWS Glue Iceberg REST Catalog.
 +  **Iceberg table metadata size limit** – AWS Glue Data Catalog supports Iceberg tables having a maximum metadata size of 50 MB. For tables accessed through catalog federation (federated Iceberg catalogs), the maximum metadata size is 5 MB per REST API call. AWS Glue Data Catalog rejects requests to tables with metadata exceeding these limits. To discover tables in AWS Glue Data Catalog that have metadata size larger than the supported limit, please enable compaction and snapshot retention for tables. For more information, see [Optimizing Iceberg tables](table-optimizers.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

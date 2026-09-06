@@ -28,7 +28,3 @@ The following table describes the Amazon CloudWatch metrics that GuardDuty publi
 <a name="suppression-rule-metric-view"></a>
 
 You can find suppression rule metrics in the Amazon CloudWatch console under the **AWS/GuardDuty** namespace, grouped by the **FilterName** dimension. The value of the `FilterName` dimension is the name of the suppression rule or filter. For instructions on locating and graphing metrics in Amazon CloudWatch, see [Viewing available metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/viewing_metrics_with_cloudwatch.html) in the *Amazon CloudWatch User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

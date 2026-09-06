@@ -20,7 +20,3 @@ When you implement a multicloud strategy, establishing a clear and consistent ac
 + Monitor costs, operations, and security through consistent metrics across the environment. Implement unified monitoring for resource utilization, security events, and spending patterns. Use this data to optimize workload placement and resource allocation decisions.
 + Prevent unauthorized cloud usage through organizational policies and automated controls. Define clear processes for account creation and resource provisioning. Implement [service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) to enforce compliance with organizational standards across all accounts.
 + Establish detective and preventive controls to prevent shadow IT from emerging through unauthorized provider accounts. Monitor for unauthorized cloud usage through expense reports and network traffic. Block unauthorized provider access while maintaining approved paths for innovation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

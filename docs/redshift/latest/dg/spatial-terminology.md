@@ -156,7 +156,3 @@ Amazon Redshift provides the following H3 spatial functions:
 + [H3\_Resolution](H3_Resolution-function.md)
 + [H3\_ToChildren](H3_ToChildren-function.md)
 + [H3\_ToParent](H3_ToParent-function.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

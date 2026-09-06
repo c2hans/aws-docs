@@ -16,7 +16,3 @@ Migration from non-partitioned to partitioned beacons follows the same rules as 
 +  Queries that include all partitions will continue to return both existing (non-partitioned) items and newly written partitioned items.
 
 To improve the anonymity of existing items or the efficiency of the system, you might choose to re-encrypt some items in the table using an updated partitioning scheme. Re-encryption requires removing the existing item, regenerating its beacons under the new configuration, and writing the item back to the table. This process applies only to items that are explicitly rewritten; items that are not re-encrypted continue to use their original beacon configuration. Re-encrypting items might temporarily increase write traffic and affect application availability. Perform re-encryption in a controlled manner, such as through a staged or background migration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 +  [Cloud security guidance](https://www.ncsc.gov.uk/collection/cloud)
 +  [Protecting your data with backups](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/using-backups.html)
 +  [Amazon DynamoDB now helps you meet regulatory compliance and business continuity requirements through enhanced backup features in AWS Backup](https://aws.amazon.com/about-aws/whats-new/2021/11/amazon-dynamodb-requirements-aws-backup/index.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

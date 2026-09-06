@@ -16,7 +16,3 @@ The ASR, or transcription, confidence score is a rating on how confident Amazon 
 **Topics**
 + [Using intent confidence scores to improve intent selection with Lex V2](using-intent-confidence-scores.md)
 + [Using voice transcription confidence scores to improve conversations with your Lex V2 bot](using-transcript-confidence-scores.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

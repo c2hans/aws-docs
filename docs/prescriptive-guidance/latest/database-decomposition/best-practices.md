@@ -38,7 +38,3 @@ Performance optimization requires a multi-faceted approach. Implement strategic 
 Data consistency challenges demand careful architectural choices. Implement event-driven patterns for cross-service updates and use saga orchestration patterns for complex transactions. Define clear service boundaries, and accept eventual consistency where business requirements permit. This balance between consistency and service autonomy is crucial for successful decomposition.
 
 Operational excellence requires automation of routine tasks and standardized procedures across services. Maintain comprehensive monitoring with clear alerting thresholds, and invest in regular team training for new patterns and tools. This systematic approach to operations promotes reliable service delivery while managing complexity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ In some cases, you might want to allow users of other AWS accounts access to the
 **Topics**
 + [Granting access to your output Amazon S3 bucket](granting-access-to-your-output-amazon-s3-bucket.md)
 + [Writing your outputs to an Amazon S3 bucket in another account](write-your-outputs-to-another-accounts-amazon-s3-bucket.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

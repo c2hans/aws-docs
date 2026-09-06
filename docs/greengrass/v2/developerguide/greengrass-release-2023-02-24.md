@@ -24,7 +24,3 @@ The following table lists components provided by AWS that include new and update
 | **Component** | **Details** |
 | --- | --- |
 | Greengrass nucleus | Version 2.9.4 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.9.4"></a>**Bug fixes and improvements**<br />   Checks for a null message before it drops QOS 0 messages.   Truncates job status detail values if they exceed the 1024 character limit.   Updates the bootstrap script for Windows to correctly read the Greengrass root path if that path includes spaces.   Updates subscribing to AWS IoT Core so that it drops client messages if the subscription response wasn't sent.   Ensures that the nucleus loads its configuration from backup files when the main configuration file is corrupt or missing.     |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,7 +10,3 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/c_load_compression_hi
 If you have a table with very few columns but a very large number of rows, the three hidden metadata identity columns (INSERT\_XID, DELETE\_XID, ROW\_ID) will consume a disproportionate amount of the disk space for the table.
 
  In order to optimize compression of the hidden columns, load the table in a single COPY transaction where possible. If you load the table with multiple separate COPY commands, the INSERT\_XID column will not compress well. You must perform a vacuum operation if you use multiple COPY commands, but it will not improve compression of INSERT\_XID.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

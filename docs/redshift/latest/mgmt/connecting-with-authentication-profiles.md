@@ -12,7 +12,3 @@ If you have many connections to Amazon Redshift, it can be difficult to manage s
 After you create an authentication profile, users can add the ready-to-use profile to a connection string. By doing this, they can connect to Amazon Redshift with the right settings for each role and use case.
 
 For Amazon Redshift API information, see [CreateAuthenticationProfile](https://docs.aws.amazon.com/redshift/latest/APIReference/redshift-api.pdf#API_CreateAuthenticationProfile).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

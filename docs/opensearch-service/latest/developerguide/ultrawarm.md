@@ -472,7 +472,3 @@ If you have data in UltraWarm that you query infrequently, consider migrating it
 The console is the simplest way to disable UltraWarm. Choose the domain, **Actions**, and **Edit cluster configuration**. Deselect **Enable warm data nodes** and choose **Save changes**. You can also use the `WarmEnabled` option in the AWS CLI and configuration API.
 
 Before you disable UltraWarm, you must either [delete](https://opensearch.org/docs/latest/opensearch/rest-api/index-apis/delete-index/) all warm indexes or [migrate them back to hot storage](#ultrawarm-migrating-back). After warm storage is empty, wait five minutes before attempting to disable UltraWarm.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

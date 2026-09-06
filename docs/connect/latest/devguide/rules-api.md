@@ -18,7 +18,3 @@ To create a CloudFormation template for rules, see the following topic:
 Use the [Rules Function language](https://docs.aws.amazon.com/connect/latest/APIReference/connect-rules-language.html) to code conditions for the rules.
 
 For more information about Connect Customer rules, see [Create rules](https://docs.aws.amazon.com/connect/latest/adminguide/connect-rules.html) and [Create rules with Contact Lens](https://docs.aws.amazon.com/connect/latest/adminguide/build-rules-for-contact-lens.html) in the *Connect Customer Administrator Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

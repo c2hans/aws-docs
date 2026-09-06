@@ -76,7 +76,3 @@ Mirrored outbound traffic is not subject to the outbound security group rules fo
 <a name="traffic-mirroring-targets-options"></a>
 
 You can use open-source tools or choose a monitoring solution available on [AWS Marketplace](https://aws.amazon.com/marketplace/). You can stream mirrored traffic to any network packet collector or analytics tool, without having to install vendor-specific agents.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,7 +68,3 @@ Before creating a flow, review the following prerequisites and determine which o
    1. **Service role** – A role that allows Amazon Bedrock to perform actions on your behalf. You must specify this role when creating or updating a flow. You can create a [custom AWS Identity and Access Management [service role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-role)](flows-permissions.md).
 **Note**
 If you plan to use the Amazon Bedrock console to automatically create a role when you create a flow, you don't need to manually set up this role.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

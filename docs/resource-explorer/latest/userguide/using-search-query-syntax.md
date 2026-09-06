@@ -121,7 +121,3 @@ If the view includes the tags attached to the resources, then the `Search` opera
 The operation does throw a validation error if either of the following is true:
 The view doesn't include information about tags
 The search query explicitly uses a tag filter (`tag.key:`, `tag.value:`, or `tag:`)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

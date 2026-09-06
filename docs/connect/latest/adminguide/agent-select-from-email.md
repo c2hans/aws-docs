@@ -78,7 +78,3 @@ The following examples show when agents might need to select a different From em
 + **BPO scenario**: A BPO agent supporting multiple client brands receives a call from AnyCompany Brand. When initiating a follow-up email, the agent selects the AnyCompany Brand email address.
 + **Blended agents**: An agent on a voice call needs to send follow-up instructions by email. The agent initiates an outbound email and selects the correct department email address.
 + **Email routing correction**: An agent receives an email that was sent to sales@example.com but should have gone to support@example.com. The agent selects support@example.com as the From address when replying.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

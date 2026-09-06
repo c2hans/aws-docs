@@ -478,7 +478,3 @@ aws configure set region us-east-1
 |  Using the Aurora DSQL Connector for Python for basic connections  |  [Basic Connection Example](https://github.com/awslabs/aurora-dsql-connectors/tree/main/python/connector/examples/asyncpg/src/example_preferred.py)  |
 |  Using the Aurora DSQL Connector for Python with connection pool  |  [Basic Connection Example With Connection Pool](https://github.com/awslabs/aurora-dsql-connectors/tree/main/python/connector/examples/asyncpg/src/alternatives/pool/example_with_nonconcurrent_connection_pool.py)  |
 |   |  [Concurrent Connections Example With Connection Pool](https://github.com/awslabs/aurora-dsql-connectors/tree/main/python/connector/examples/asyncpg/src/example_preferred.py)  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

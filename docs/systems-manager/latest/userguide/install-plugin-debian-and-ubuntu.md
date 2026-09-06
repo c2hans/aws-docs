@@ -35,7 +35,3 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/install
 
 **Note**
 If you ever want to uninstall the plugin, run `sudo dpkg -r session-manager-plugin`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

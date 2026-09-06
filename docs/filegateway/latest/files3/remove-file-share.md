@@ -37,7 +37,3 @@ You cannot undo the force delete operation.
 When you forcibly delete a file share, pieces of partially-transferred files from multi-part uploads might remain on Amazon S3 where they can incur storage charges. We recommend configuring an Amazon S3 bucket lifecycle rule to delete these file parts automatically. For more information, see [Best practices: managing multipart uploads](https://docs.aws.amazon.com/filegateway/latest/files3/best-practices-managing-multi-part-uploads.html).
 
 You can also use the [DeleteFileShare](https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_DeleteFileShare.html) API operation to forcibly delete the file share. Deleting a file share using the API requires the `storagegateway:DeleteFileShare` IAM policy permission.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -234,7 +234,3 @@ For complete usage examples with Amazon Bedrock – including `SELECT AI` action
 + [Example: Select AI with AWS](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/select-ai-examples.html#GUID-A2B7D8BB-5CBF-49D4-B12C-8AB54BA7D0A2)
 + [Manage AI Profiles – Use AWS](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/select-ai-manage-profiles.html#GUID-B71D2617-F079-4982-A979-6C1C8C58B577)
 + [DBMS\_CLOUD\_AI Package Reference](https://docs.oracle.com/en/database/oracle/oracle-database/26/arpls/dbms_cloud_ai1.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

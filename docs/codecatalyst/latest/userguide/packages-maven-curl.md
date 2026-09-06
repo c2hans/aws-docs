@@ -67,7 +67,3 @@ This section shows how to use the HTTP client `curl` to publish Maven packages t
    1.  Option 2: Update the package status to `Published` in the CodeCatalyst console. For information about how to update a package version's status, see [Updating a package version's status](working-with-packages-update-version-status.md).
 
 If you only have a package's JAR file, you can publish a consumable package version to a CodeCatalyst repository using `mvn`. This can be useful if you do not have access to the package's source code or POM. See [Publishing third-party packages](packages-maven-mvn.md#publishing-third-party-packages) for details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

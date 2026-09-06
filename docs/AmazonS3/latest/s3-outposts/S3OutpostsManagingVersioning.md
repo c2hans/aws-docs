@@ -60,7 +60,3 @@ aws s3control put-bucket-versioning --account-id {{123456789012}} --bucket arn:a
 ```
 aws s3control put-bucket-versioning --account-id {{123456789012}} --bucket arn:aws:s3-outposts:{{region}}:{{123456789012}}:outpost/{{op-01ac5d28a6a232904}}/bucket/{{example-outposts-bucket}} --versioning-configuration Status=Suspended
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

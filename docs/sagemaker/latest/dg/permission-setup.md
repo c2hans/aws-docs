@@ -346,7 +346,3 @@ To allow the AWS VS Code Toolkit resource explorer side panel to discover and co
 **Scoping Recommendations**
 + Replace cluster-name with the specific SageMaker HyperPod cluster(s) your users need to access.
 + The eks:GetToken action currently does not support resource-level restrictions and must use Resource: "\*". This is an AWS service limitation. The client side Authentication is performed through [EKS access entries](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

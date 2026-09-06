@@ -2297,7 +2297,3 @@ The following Elastic Beanstalk platform versions for Python were current prior 
 | --- |--- |--- |--- |
 | 32bit Amazon Linux running Python | 2012.09 | Python 2.6 | Apache with mod\_wsgi 3.2 |
 | 64bit Amazon Linux running Python | 2012.09 | Python 2.6 | Apache with mod\_wsgi 3.2 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

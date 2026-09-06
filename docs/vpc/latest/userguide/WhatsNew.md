@@ -70,7 +70,3 @@ The following table describes the important changes in each release of the *Amaz
 | [Enabling DNS hostnames and disabling DNS resolution](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html) | You can modify VPC defaults and disable DNS resolution and enable DNS hostnames. | March 11, 2013 |
 | [VPC Everywhere](#WhatsNew) | Added support for VPC in five AWS Regions, VPCs in multiple Availability Zones, multiple VPCs per AWS account,and multiple VPN connections per VPC. | August 3, 2011 |
 | [Dedicated Instances](#WhatsNew) | Dedicated Instances are Amazon EC2 instances launched within your VPC that run hardware dedicated to a single customer. | March 27, 2011 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

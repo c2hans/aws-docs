@@ -53,7 +53,3 @@ See these sections for descriptions of AWS IoT ExpressLink commands in the follo
 + [Table 4 - ExpressLink event codes](elpg-event-handling.md#elpg-table4)
 + [Table 5 - OTA codes and descriptions](elpg-ota-updates.md#elpg-table5)
 + [Table 6 - Reserved OTA file type codes (0-255)](elpg-ota-updates.md#elpg-table6)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

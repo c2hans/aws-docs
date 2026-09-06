@@ -17,7 +17,3 @@ Automated abuse detection includes:
 Once our automated abuse detection mechanisms identify potential violations, we may request information about your use of Amazon SageMaker Inference and compliance with our terms of service. In the event that you are non-responsive, unwilling, or unable to comply with these terms or policies, AWS may suspend your access to Amazon SageMaker Inference. You may also be billed for the failed inference job if our automated tests detect model responses being inconsistent with our terms and policies.
 
 Contact AWS Support if you have additional questions. For more information, see the [Amazon SageMaker FAQs](https://aws.amazon.com/sagemaker/ai/faqs/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

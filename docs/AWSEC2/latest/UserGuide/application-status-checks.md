@@ -588,7 +588,3 @@ Most quota increases are approved automatically. An increase to *Targets per acc
 If the number of targets in your account exceeds the *Targets per account* quota, the targets over the limit are not monitored and do not report an application status. To avoid gaps in monitoring, keep your target count within the quota or request an increase.
 
 We recommend that you create a Amazon CloudWatch alarm on your application status checks quota usage so that you are notified before you reach a quota. Service Quotas publishes usage metrics to the `AWS/Usage` namespace in CloudWatch, which you can use to create the alarm.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

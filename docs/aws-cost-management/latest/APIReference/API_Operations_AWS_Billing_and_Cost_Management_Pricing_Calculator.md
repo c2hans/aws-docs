@@ -42,7 +42,3 @@ The following actions are supported by AWS Pricing Calculator:
 +  [UpdateBillScenario](API_AWSBCMPricingCalculator_UpdateBillScenario.md)
 +  [UpdatePreferences](API_AWSBCMPricingCalculator_UpdatePreferences.md)
 +  [UpdateWorkloadEstimate](API_AWSBCMPricingCalculator_UpdateWorkloadEstimate.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

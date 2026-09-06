@@ -96,7 +96,3 @@ For instructions on how to complete the migration process, see the [Migrate your
 + [Finding savings from 2020 re:Invent announcements](https://aws.amazon.com/blogs/aws-cloud-financial-management/finding-savings-from-2020-reinvent-announcements/) (AWS Cloud Financial Management)
 + [Cost Optimization Workshop](https://wellarchitectedlabs.com/cost-optimization/) (AWS Well-Architected Labs)
 + [gp2 to gp3 migration cost savings calculator](https://d1.awsstatic.com/product-marketing/Storage/EBS/gp2_gp3_CostOptimizer.dd5eac2187ef7678f4922fcc3d96982992964ba5.xlsx) (download)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

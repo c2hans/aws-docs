@@ -91,7 +91,3 @@ Table configurations are user-controlled properties that a user can set to chang
 For example, CUR 2.0 has table configurations to change data granularity (hourly, daily, monthly), whether resource-level granular data is included, and whether split cost allocation data is included. Not all tables have configurations. For more information on the configurations available for each table, see the [Data Exports table dictionary](https://docs.aws.amazon.com/cur/latest/userguide/dataexports-table-dictionary.html).
 
 Each table configuration parameter has a default value that is assumed if a table configuration is not specified by the user. Table configurations can't be changed after an export is created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

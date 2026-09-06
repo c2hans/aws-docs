@@ -65,7 +65,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 +  [Analyzing your costs and usage with AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)
 +  [AWS Service Quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html)
 +  [AWS Cost Management](https://docs.aws.amazon.com/cost-management/latest/userguide/manage-cost-categories.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

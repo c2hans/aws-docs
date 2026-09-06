@@ -16,7 +16,3 @@ Contract pricing is available for the following products:
 Contract pricing for AMI and container-based products is only for new products.
 If you have an existing AMI or container-based product and want to use contract pricing, create a new listing and then apply the contract pricing model by using the Product Load Form (PLF) to add different dimensions, integrate the AMI or container-based product with AWS License Manager, and then publish the AMI or container-based product.
 When a customer purchases a product with contract pricing, a license is created by AWS Marketplace in the customer AWS account that your software can check using the License Manager API. Customers will need an IAM role to launch an instance of the AMI or container-based product.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

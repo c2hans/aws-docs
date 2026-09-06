@@ -376,7 +376,3 @@ The VPC that [`pcluster configure`](pcluster.configure-v3.md) creates for you *i
 ```
 $ aws --region {{us-east-1}} Amazon EC2 delete-vpc --vpc-id {{vpc-0b4ad9c4678d3c7ad}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

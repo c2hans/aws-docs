@@ -160,7 +160,3 @@ You can now use the following integrated analytics services with your Amazon S3 
 + [Amazon EMR](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-integrating-emr.html) - create table, namespace, query and add data in Amazon S3 Tables.
 + [AWS Glue](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-integrating-glue.html) - create table, namespace, query and add data in Amazon S3 Tables.
 + [Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/create-s3-tables-catalog.html) - grant fine-grained permissions for Amazon S3 table catalogs, databases, tables, columns, and cells.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker lakehouse architecture. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-lakehouse-architecture` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

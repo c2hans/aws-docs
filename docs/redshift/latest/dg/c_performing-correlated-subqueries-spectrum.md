@@ -34,7 +34,3 @@ salesid  listid   sellerid   buyerid   eventid   dateid  qtysold  pricepaid   co
 4        5        1616       19715     8647      1986    1        175         26.25        2008-06-09 08:38:52
 5        6        47402      14115     8240      2069    2        154         23.1         2008-08-31 09:17:02
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

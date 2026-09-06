@@ -163,7 +163,7 @@ You can find the host's public key in the following location, where `<ssh_host_r
 ```
 
 **Note**
-Amazon Redshift only supports RSA keys. We do not support DSA keys.
+Amazon Redshift only supports RSA keys. Amazon Redshift does not support DSA keys.
 
 When you create your manifest file in Step 5, you will paste the text of the public key into the "Public Key" field in the manifest file entry.
 
@@ -261,7 +261,3 @@ SSH;
 
 **Note**
 If you use automatic compression, the COPY command performs two data reads, which means it runs the remote command twice. The first read is to provide a sample for compression analysis, then the second read actually loads the data. If running the remote command twice might cause a problem because of potential side effects, you should turn off automatic compression. To turn off automatic compression, run the COPY command with the COMPUPDATE option set to OFF. For more information, see [Loading tables with automatic compression](c_Loading_tables_auto_compress.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

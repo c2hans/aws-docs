@@ -74,7 +74,3 @@ Consider the following when deciding which level of protection is right for your
 + **Amazon GameLift Servers player gateway** is recommended for games that are high-profile targets for DDoS attacks, require hidden server IP addresses, or need traffic validation for each player. It requires integration work but provides the strongest level of protection available on Amazon GameLift Servers.
 
 The enhanced DDoS protection features offered by Amazon GameLift Servers give you the flexibility to select the level of protection your game requires while working within the often rigorous timelines faced by game developers. Both options have been proven effective at protecting games of all sizes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

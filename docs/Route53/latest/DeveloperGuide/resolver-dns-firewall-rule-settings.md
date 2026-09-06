@@ -69,7 +69,3 @@ How you want DNS Firewall to handle a DNS query whose domain name matches the sp
 
 **Priority**
 Unique positive integer setting for the rule within the rule group that determines processing order. DNS Firewall inspects DNS queries against the rules in a rule group starting with the lowest numeric priority setting and going up. You can change a rule's priority at any time, for example to change the order of processing or make space for other rules.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

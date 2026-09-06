@@ -69,7 +69,3 @@ For troubleshooting guidance across all implementation methods, see [Troubleshoo
 <a name="additional-faqs"></a>
 
 For additional FAQs, see the Partner Revenue Measurement FAQs on [AWS Partner Central](https://partnercentral.awspartner.com/partnercentral2/s/article?category=Funding_Operations_and_Management&article=Partner-Revenue-Measurement-Overview) (login required).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

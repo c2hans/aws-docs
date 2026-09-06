@@ -29,7 +29,3 @@ By default, this solution deploys with automatic updates disabled. This means th
 If you choose to enable automatic updates by selecting **Yes** during CloudFormation deployment, the solution will automatically receive security patches and minor, non-breaking bug fixes up to the latest matching minor version. For example, if you deploy version 4.0.0 with automatic updates enabled, you will receive updates up to 4.0.x, but not 4.1.0 or higher.
 
 To manually control the container image version, you can edit the task definition to specify a particular image version using the tagged version format. This allows you to pin to a specific image version regardless of the automatic updates setting.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

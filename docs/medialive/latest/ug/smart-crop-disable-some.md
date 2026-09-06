@@ -62,7 +62,3 @@ For example, if you previously had both event clipping and smart crop enabled, b
 <a name="smart-crop-disable-partial-reenable"></a>
 
 If a MediaLive channel currently has at least one Elemental Inference feature enabled, you can re-enable features that you previously disabled). Follow the procedure [Adding more Elemental Inference features](smart-crop-add-features.md), with this difference: instead of adding `OutputConfig` items, set the status of existing items to `ENABLED`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

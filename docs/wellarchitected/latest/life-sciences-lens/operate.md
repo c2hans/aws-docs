@@ -50,7 +50,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 + [LSOPS10-BP02 Store data in a format that works both for archiving and for active use by retaining related metadata](lsops10-bp02.md)
 + [LSOPS11-BP01 Identify clear dataset owners and access history](lsops11-bp01.md)
 + [LSOPS12-BP01 Create a controlled semantic layer](lsops12-bp01.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

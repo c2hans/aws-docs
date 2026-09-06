@@ -212,7 +212,3 @@ When you synthesize your application, the cloud assembly created in the `cdk.out
 <a name="best-practices-apps-measure"></a>
 
 Achieving the goal of full continuous deployment, with no human intervention, requires a high level of automation, and that automation isn't possible without extensive amounts of monitoring. Create metrics, alarms, and dashboards to measure all aspects of your deployed resources. And don't just measure simple things like CPU usage and disk space: also record your business metrics, and use those measurements to automate deployment decisions like rollbacks. Most of the L2 constructs in AWS CDK have convenience methods to help you create metrics, such as the `metricUserErrors()` method on the [dynamodb.Table](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_aws-dynamodb.Table.html) class.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

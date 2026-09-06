@@ -76,7 +76,3 @@ Output:
 In this scenario, namespace `ns-abcdef01234567890` is created and owned by `111122223333` and namespace `ns-021345abcdef6789` is created and owned by `444455556666`. Namespace `ns-021345abcdef6789` is shared with account `111122223333` by account `444455556666`.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Map. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud-map` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -232,7 +232,3 @@ When disabled, the agent re-discovers the login flow from scratch on every run. 
 
 **Tip**
 If your application’s login flow changes significantly (for example a redesigned login page or a new authentication step), the agent automatically adapts by updating its learned skill on the next run. You do not need to manually reset the optimization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

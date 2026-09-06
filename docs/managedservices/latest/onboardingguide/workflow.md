@@ -25,7 +25,3 @@ The Lambda `InvokeFunction` permissions have been included in this service howev
 **Q: What are the prerequisites or dependencies to using Amazon SWF in my AMS account?**
 
 Amazon SWF is dependent on the AWS Lambda service, therefore, permissions to invoke Lambda have been provided as a part of this role and no additional permissions are required to invoke Lambda from Amazon SWF. Otherwise, there are no prerequisites to using Amazon SWF.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

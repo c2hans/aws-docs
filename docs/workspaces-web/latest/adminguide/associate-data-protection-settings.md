@@ -52,7 +52,3 @@ To create a data protection setting when creating a new portal, follow these ste
 1. Select the refresh button under **data protection settings**, then choose your data protection setting from the drop-down menu.
 
 1. Continue to follow the create portal instructions to finish creating your portal.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

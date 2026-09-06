@@ -61,7 +61,3 @@ The asynchronous `runSay` method gets the `getGreeting` task list from its clien
 
 **Note**
 When you pass a `schedulingOptions` parameter to an activity client method, it overrides the original task list only for that activity execution. If you call the activities client method again without specifying a task list, Amazon SWF assigns the task to the original list, and the activity worker will poll that list.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

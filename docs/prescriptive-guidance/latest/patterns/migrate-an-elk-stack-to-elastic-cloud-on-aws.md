@@ -245,7 +245,3 @@ The Elastic methodology combines traditional waterfall phasing with Scrum within
 <a name="migrate-an-elk-stack-to-elastic-cloud-on-aws-additional"></a>
 
 If you're planning to migrate complex workloads, engage [Elastic Consulting Services](https://www.elastic.co/consulting/engage). If you have basic questions related to configurations and services, contact the [Elastic Support](mailto:support@elastic.co) team.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

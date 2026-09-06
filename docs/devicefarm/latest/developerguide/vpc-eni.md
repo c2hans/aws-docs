@@ -30,7 +30,3 @@ Once you configure VPC access, the devices and host machines that you use for yo
 + [Connecting to Amazon VPC](connecting-to-amazon-vpc.md)
 + [Limits](vpc-eni-limits.md)
 + [Using Amazon VPC endpoint services with Device Farm - Legacy (not recommended)](amazon-vpc-endpoints.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

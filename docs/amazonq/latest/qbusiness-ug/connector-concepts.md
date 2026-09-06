@@ -202,7 +202,3 @@ All fields and attributes have a size limit of 2048 characters. Fields or attrib
 For more information, see the following topics:
 + [Document attributes and types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-attributes.html)
 + [Filtering using metadata](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/metadata-filtering.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

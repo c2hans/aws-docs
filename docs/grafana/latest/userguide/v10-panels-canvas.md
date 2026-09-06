@@ -110,7 +110,3 @@ Canvases support [data links](v10-panels-configure-data-links.md). You can creat
 1. Choose the element to be able to open the data link.
 
 If multiple elements use the same field name, and you want to control which elements display the data link, you can create a unique field name using the [Add field from calculation](v10-panels-xform-functions.md#v10-panels-xform-funcs-add) transform. The alias you create in the transform will appear as a field you can use with an element.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

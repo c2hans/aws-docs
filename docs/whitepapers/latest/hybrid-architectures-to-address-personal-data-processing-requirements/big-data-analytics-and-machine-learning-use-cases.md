@@ -47,7 +47,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
  Using an Amazon S3 data lake to build a highly available and scalable data lake solution addresses the *data availability and durability* requirement (**REQ4**).
 
  For more information about data lakes and analytics on AWS, refer to [Analytics on AWS](https://aws.amazon.com/big-data/datalakes-and-analytics/?nc=sn&loc=1). For information on different approaches to move data into a data lake in AWS, refer to [Data Lakes on AWS](https://aws.amazon.com/products/storage/data-lake-storage/). For information on hybrid ML scenarios, refer to [Hybrid Machine Learning](https://docs.aws.amazon.com/whitepapers/latest/hybrid-machine-learning/hybrid-machine-learning.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

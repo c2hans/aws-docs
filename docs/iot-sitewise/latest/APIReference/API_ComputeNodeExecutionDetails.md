@@ -64,6 +64,12 @@ Key Length Constraints: Minimum length of 1. Maximum length of 255.
 Value Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
+ ** executionMounts **   <a name="iotsitewise-Type-ComputeNodeExecutionDetails-executionMounts"></a>
+The fully resolved mounts used for this compute node execution, after merging task-defined mounts with any execution-level mount overrides. Each mount attaches an external data source to the container filesystem at a relative path under the service-owned mount root.
+Type: Array of [Mount](API_Mount.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 5 items.
+Required: No
+
  ** startTime **   <a name="iotsitewise-Type-ComputeNodeExecutionDetails-startTime"></a>
 The time the compute node execution started, in Unix epoch time.
 Type: Timestamp
@@ -76,7 +82,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotsitewise-2019-12-02/ComputeNodeExecutionDetails)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotsitewise-2019-12-02/ComputeNodeExecutionDetails)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotsitewise-2019-12-02/ComputeNodeExecutionDetails)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

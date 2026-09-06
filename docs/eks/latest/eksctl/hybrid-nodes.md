@@ -101,7 +101,3 @@ If you install VPC CNI in your cluster for your self-managed or EKS-managed node
 <a name="_further_references"></a>
 +  [EKS Hybrid Nodes UserDocs](https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-overview.html)
 +  [Launch Announcement](https://aws.amazon.com/about-aws/whats-new/2024/12/amazon-eks-hybrid-nodes)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

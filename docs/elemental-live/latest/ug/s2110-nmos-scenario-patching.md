@@ -28,7 +28,3 @@ The two patching-pair inputs must be next to each other. If necessary, use the u
 **How patching works at runtime**
 
 The NMOS controller sends a patching request by sending new SDP content for the receiver group that is attached to these two inputs. When Elemental Live receives the request, it sets up the standby input (input B, for example) with the new content, then switches from the active input (input A) to the standby input (input B). Input B becomes the active input. The visual impact during the patch is controlled by the setting of the [Use make-before-break field](s2110-nmos-configure.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

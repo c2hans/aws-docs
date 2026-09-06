@@ -37,6 +37,7 @@ The following tutorial shows you how to create an AWS Systems Manager Parameter 
 
 You can also use Parameter Store parameters in AMI distribution settings to store your output image ID, and in custom components. For more information, see [Create and update AMI distribution configurations](cr-upd-ami-distribution-settings.md) for distributions, and [Use Systems Manager Parameter Store parameters](toe-user-defined-variables.md#toe-ssm-parameters) for custom components.
 
-## See also
+## Deploy sample projects with infrastructure as code
+<a name="tutorials-sample-projects"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+When you're ready to define your image resources as code, the [Image Builder samples repository](https://github.com/aws-samples/amazon-ec2-image-builder-samples) on GitHub provides complete sample projects for common use cases. The samples cover scenarios such as golden AMI pipelines, cross-account distribution, and private VPC builds. For more information, see [Explore Image Builder sample projects on GitHub](sample-projects.md).

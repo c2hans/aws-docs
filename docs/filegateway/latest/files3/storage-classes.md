@@ -37,7 +37,3 @@ For information about how to restore archived objects, see [Restoring archived o
 
 **Important**
 S3 File Gateway does not officially support the S3 Glacier Instant Retrieval storage class. Although you can designate objects in a file share bucket for S3 Glacier Instant Retrieval by using lifecycle policies or direct `PUT` requests, S3 File Gateway cannot recognize which files are in that storage class, and will perform file operations on them like any other object. Because S3 Glacier Instant Retrieval has higher costs for access than other Amazon S3 storage classes, bulk file operations such as virus scans, `rsync`, and renames, can result in large Amazon S3 bills if not managed carefully. For this reason, we do not recommend using S3 Glacier Instant Retrieval with S3 File Gateway.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

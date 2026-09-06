@@ -511,6 +511,18 @@ The following instance types support ENA Express.
 | r8idb.96xlarge | x86\_64 |
 | r8idb.metal-48xl | x86\_64 |
 | r8idb.metal-96xl | x86\_64 |
+| r9g.8xlarge | arm64 |
+| r9g.12xlarge | arm64 |
+| r9g.16xlarge | arm64 |
+| r9g.24xlarge | arm64 |
+| r9g.48xlarge | arm64 |
+| r9g.metal-48xl | arm64 |
+| r9gd.8xlarge | arm64 |
+| r9gd.12xlarge | arm64 |
+| r9gd.16xlarge | arm64 |
+| r9gd.24xlarge | arm64 |
+| r9gd.48xlarge | arm64 |
+| r9gd.metal-48xl | arm64 |
 | u7i-6tb.112xlarge | x86\_64 |
 | u7i-8tb.112xlarge | x86\_64 |
 | u7i-12tb.224xlarge | x86\_64 |
@@ -640,7 +652,3 @@ The ENA driver for the Amazon Linux distribution disables byte queue limits by d
 The script also reports additional diagnostic information, including the ENA driver version, ENA SRD statistics, interrupt moderation settings, queue configuration, and socket buffer sizes. This information can be useful for troubleshooting ENA Express performance issues.
 
 To ensure that your instance network driver is configured for optimum performance, also review the [ENA Linux Driver Best Practices and Performance Optimization Guide](https://github.com/amzn/amzn-drivers/blob/master/kernel/linux/ena/ENA_Linux_Best_Practices.rst) on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

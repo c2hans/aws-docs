@@ -77,7 +77,3 @@ After an assessment run, you can view details about any exclusions.
 1. Review the descriptions of all detected exclusions and the recommendations for addressing them.
 
    You can also list and describe exclusions by using the [`ListExclusions`](https://docs.aws.amazon.com/inspector/latest/APIReference/API_ListExclusions.html) and [`DescribeExclusions`](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DescribeExclusions.html) operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

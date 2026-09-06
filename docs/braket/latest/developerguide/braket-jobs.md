@@ -58,7 +58,3 @@ In both the simulator and QPU target scenarios, you have the option to define cu
 
 **Note**
 If you wish to use a GPU based instance, be sure to use one of the GPU-based simulators available with the embedded simulators on Braket (for example, `lightning.gpu`). If you choose one of the CPU-based embedded simulators (for example, `lightning.qubit`, or `braket:default-simulator`), the GPU will not be used and you may incur unnecessary costs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

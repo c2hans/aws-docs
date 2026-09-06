@@ -16,7 +16,3 @@ The following table lists related resources that you'll find useful as you work 
 | [AWS Support](https://aws.amazon.com/premiumsupport/) | The primary web page for information about AWS Support, a one-on-one, fast-response support channel to help you build and run applications in the cloud. |
 | [Contact Us](https://aws.amazon.com/contact-us) | A central contact point for inquiries concerning AWS billing, account, events, abuse, and other issues. |
 | [AWS Site Terms](https://aws.amazon.com/terms/) | Detailed information about our copyright and trademark; your account, license, and site access; and other topics. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

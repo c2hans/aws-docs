@@ -63,7 +63,3 @@ Including split cost allocation data creates individual line items for each of y
 1. After you have reviewed the settings for your report, choose **Review and Complete**.
 
 You can always return to the **Cost and Usage Reports** page in the Billing and Cost Management console to see when your reports were last updated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

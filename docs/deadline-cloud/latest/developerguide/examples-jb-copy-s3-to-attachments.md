@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Copy an S3 prefix to job attachments on Deadline Cloud
 <a name="examples-jb-copy-s3-to-attachments"></a>
 
-The [copy\_s3\_prefix\_to\_job\_attachments](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/copy_s3_prefix_to_job_attachments) job bundle pre-populates a queue's job attachments S3 bucket by copying files from where they are already stored in Amazon S3. If you are adding a Deadline Cloud farm to a project that already has a large volume of data, or are submitting a job that depends on a lot of new data such as a fluid simulation output, the initial job attachments upload can be slow.
+The [copy\_s3\_prefix\_to\_job\_attachments](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/copy_s3_prefix_to_job_attachments) job bundle on the GitHub website pre-populates a queue's job attachments S3 bucket by copying files from where they are already stored in Amazon S3. If you are adding a Deadline Cloud farm to a project that already has a large volume of data, or are submitting a job that depends on a lot of new data such as a fluid simulation output, the initial job attachments upload can be slow.
 
 Because job attachments uses content-addressed storage and never re-uploads files that are already in job attachments, you can use alternative upload tools like [AWS Snowball](https://aws.amazon.com/snowball/) or [AWS DataSync](https://aws.amazon.com/datasync/) to copy data into Amazon S3 first, then use this job to copy it into the job attachments bucket for your queue.
 
@@ -47,7 +47,3 @@ Add the following IAM permissions to your queue IAM role. The role already has p
 ```
 
 This job calls Amazon S3 APIs and copies data into your queue's job attachments bucket, which incurs additional costs. Use the [Amazon S3 pricing](https://aws.amazon.com/s3/pricing/) page and the [AWS Pricing Calculator](https://calculator.aws) to estimate costs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

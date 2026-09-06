@@ -20,7 +20,3 @@ The key benefit of an IaC approach is that it can help you represent and preserv
 The key benefit of EDP is that it can help you plan for and solve issues that arise from specified future events without the need for an engineer (that is, human effort). Instead, you can use event-driven code to respond to potential issues. EDP also offers the following additional benefits:
 + **Reduced deployment time** – An EDP approach reduces the time it takes to make deployment changes because code is invoked immediately after the event.
 + **Scalable resources **– You can use an EDP approach to scale resources that must be modified, which could take much longer to modify manually.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

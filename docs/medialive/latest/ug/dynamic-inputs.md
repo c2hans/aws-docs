@@ -17,7 +17,3 @@ Only MP4 or Transport Stream (TS) file inputs that are stored in one of the foll
 <a name="setup-dynamic-inputs"></a>
 
  For information about planning and creating dynamic inputs, see [Static inputs and dynamic inputs](how-dynamic-inputs-work.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

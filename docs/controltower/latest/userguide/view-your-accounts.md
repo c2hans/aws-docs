@@ -21,7 +21,3 @@ On the **Organization** page and the **Account details** page, you can see the a
 + **Update available** – The account has an update available. Accounts in this state are still **Enrolled**, but the account must be updated to reflect recent changes made to your environment. To update a single account, navigate to the account detail page and select **Update account**.
 
   If you have multiple accounts with this state under a single OU, you can choose to **Re-register** the OU and update those accounts together.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -178,7 +178,3 @@ aws bedrock-agentcore-control create-oauth2-credential-provider \
 |  `privateKeyJwtConfig.additionalHeaderClaims`  | No | Additional JWT header claims (map, max 10 entries). Use this to pass a `kid` or `x5t#S256` that matches the key registered at your identity provider. Cannot override `alg` or `typ`. |
 |  `privateKeyJwtConfig.additionalPayloadClaims`  | No | Additional JWT payload claims (map, max 10 entries). Cannot override `iss`, `sub`, `jti`, `exp`, `iat`, or `nbf`. Use this to add provider-specific claims or to override `aud` (token endpoint by default). |
 |  `clientSecret`  | Not required | Omit when using Private Key JWT. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -118,7 +118,3 @@ The following table provides a list of system-defined metadata and whether you c
 | x-amz-server-side-encryption-aws-kms-key-id | A header that indicates the ID of the AWS KMS symmetric encryption KMS key that was used to encrypt the object. This header is used only when the x-amz-server-side-encryption header is present and has the value of aws:kms. | Yes |
 | x-amz-server-side-encryption-customer-algorithm | A header that indicates whether server-side encryption with customer-provided encryption keys (SSE-C) is enabled. For more information, see [Using server-side encryption with customer-provided keys (SSE-C)](ServerSideEncryptionCustomerKeys.md).  | Yes |
 | x-amz-tagging | The tag-set for the object. The tag-set must be encoded as URL Query parameters. | Yes |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

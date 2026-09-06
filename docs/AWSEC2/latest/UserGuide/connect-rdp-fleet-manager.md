@@ -29,7 +29,3 @@ Before attempting to connect to an instance using Fleet Manager, you must set up
 1. If the RDP connection is successful, Fleet Manager displays the Windows desktop. When you are finished with the session, choose **Actions**, **End session**.
 
 For more information, see [Connecting to a Windows Server managed instance using Remote Desktop](https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-manager-remote-desktop-connections.html) in the *AWS Systems Manager User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

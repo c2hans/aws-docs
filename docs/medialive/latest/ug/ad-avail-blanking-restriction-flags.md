@@ -32,7 +32,3 @@ Typically, in any message in the input only one of these flags is ever set to fa
 **Representation of these Restrictions in MediaLive**
 
 There are two fields in MediaLive that let you control how MediaLive responds to the these flags. See [Enabling blanking](procedure-to-enable-ad-avail-blanking.md). Typically, you set the two fields to Follow (the default), to instruct MediaLive to follow the behavior implied by the value of the flag.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ The following table describes the important changes to the documentation since t
 | [New release](#doc-history) | [EMR Serverless 6.11.0](release-version-6110.md) | June 8, 2023 |
 | [Update to service-linked role policy](#doc-history) | Updated the [`AmazonEMRServerlessServiceRolePolicy`](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/using-service-linked-roles.html#slr-permissions) SLR role to publish account-level usage in `"AWS/Usage"` namespace. | April 20, 2023 |
 | [EMR Serverless general availability (GA)](#doc-history) | This is the first public release of EMR Serverless. | June 1, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

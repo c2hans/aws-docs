@@ -15,7 +15,3 @@ Administrators can create virtual collaboration spaces called projects for a spe
 RES is available at no additional charge, and you pay only for the AWS resources needed to run your applications.
 
  This guide provides an overview of Research and Engineering Studio on AWS, its reference architecture and components, considerations for planning the deployment, and configuration steps for deploying RES to the Amazon Web Services (AWS) Cloud.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,7 +47,7 @@ Add code to initialize a game client. Run this code on launch, it's necessary fo
 
 1. Generate a unique player id for each player to connect to a game session. For more information see [Generate player IDs](player-sessions-player-identifiers.md).
 
-   The following examples shows how to set up an Amazon GameLift Servers client.
+   The following example shows how to set up an Amazon GameLift Servers client.
 
    ```
    public class GameLiftClient
@@ -129,7 +129,7 @@ After Amazon GameLift Servers has created the new game session and returned a `
 
    1. Reference the player session ID. The player session ID is required if your game server validates incoming player connections.
 
-The following examples demonstrates how to reserve a player spot in a game session.
+The following example demonstrates how to reserve a player spot in a game session.
 
 ```
 public Amazon.GameLift.Model.PlayerSession CreatePlayerSession(Amazon.GameLift.Model.GameSession gsession)
@@ -186,7 +186,3 @@ public void DisconnectPlayer(int playerIdx)
     }
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ To access the model notebook, do the following:
    1. Choose **Copy S3 URI** to copy the Amazon S3 location where the notebook is stored. The notebook is stored in the Amazon S3 bucket specified in your **Canvas storage configuration**, which is configured in the [Prerequisites for setting up Amazon SageMaker Canvas](canvas-getting-started.md#canvas-prerequisites) section.
 
 You should now be able to view the notebook either locally or as an object in Amazon S3. You can upload the notebook to an IDE to edit and run the code, or you can share the notebook with others in your organization to review.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -44,7 +44,3 @@ The security groups that are associated with your data store. AWS Glue associate
 For information about managing a VPC with Amazon Redshift, see [Managing Clusters in an Amazon Virtual Private Cloud (VPC)](https://docs.aws.amazon.com/redshift/latest/mgmt/managing-clusters-vpc.html).
 
 For information about managing a VPC with Amazon Relational Database Service (Amazon RDS), see [Working with an Amazon RDS DB Instance in a VPC](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

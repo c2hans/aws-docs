@@ -26,7 +26,3 @@ The following table is a sample Failure Mode and Effects Analysis (FMEA) registe
 | 13 | Amazon Cognito | Auth failure | 6 | 5 | 5 | 150 | Implement auto refresh | Frontend | Sprint 2 | Pending |
 | 14 | CloudWatch | Metric delay | 5 | 6 | 7 | 210 | Custom metrics \+ batching | DevOps | Sprint 1 | Pending |
 | 15 | Amazon VPC | Network partition | 9 | 2 | 6 | 108 | Multi-AZ architecture | DevOps | Sprint 2 | Pending |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

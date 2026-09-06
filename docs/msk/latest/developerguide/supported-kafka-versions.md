@@ -197,7 +197,3 @@ For information about setting configuration properties, see [Amazon MSK Provisio
 For more information about KIP-392, see [Allow Consumers to Fetch from Closest Replica](https://cwiki.apache.org/confluence/display/KAFKA/KIP-392:+Allow+consumers+to+fetch+from+closest+replica) in the Confluence pages.
 
 For more information about Apache Kafka version 2.4.1, see its [release notes](https://archive.apache.org/dist/kafka/2.4.1/RELEASE_NOTES.html) on the Apache Kafka downloads site.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

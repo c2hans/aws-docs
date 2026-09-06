@@ -66,7 +66,3 @@ Use JSON files to describe complex filtering cases, such as nested rules. JSON f
 + `transformName` is the status name that applies for the **Status** filter.
 + `value` is the value to filter the tree by.
 + `transformValue` is the value of the filter (`TRUE` or `FALSE`) that applies for the **Status** filter.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Schema Conversion Tool User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query SchemaConversionTool` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

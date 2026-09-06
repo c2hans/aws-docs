@@ -363,7 +363,3 @@ In AWS Marketplace, products can be free to use or can have associated charges. 
  [AWS Support](https://aws.amazon.com/premiumsupport/) offers different levels of support. For more information, see [AWS Support Plan Pricing](https://aws.amazon.com/premiumsupport/pricing/).
 
 SAP requires you to have at least a Business level of support when running SAP workloads on AWS. To learn more about the SAP prerequisite, see [SAP Note 1656250 - SAP on AWS: Support Prerequisites](https://me.sap.com/notes/1656250) (requires SAP portal access).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

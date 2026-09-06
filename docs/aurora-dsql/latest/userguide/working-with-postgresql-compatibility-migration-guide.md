@@ -123,7 +123,3 @@ For general considerations, see [Considerations for working with Amazon Aurora D
 <a name="dsql-migration-feedback-link"></a>
 
 If you encounter features that are critical for your migration but not currently supported in Aurora DSQL, see [Providing feedback on Amazon Aurora DSQL](providing-feedback.md) for information on how to share feedback with AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

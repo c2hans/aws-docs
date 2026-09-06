@@ -155,7 +155,3 @@ You can also set the destination to any custom connectors that you create with t
 ## Related resources
 <a name="veeva-resources"></a>
 +  [API access permissions](https://docs-vdm.veevanetwork.com/doc/vndocad/Content/Network_topics/Whats_new/20R2.0/Users.htm#api) in the Veeva Product Support Portal
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

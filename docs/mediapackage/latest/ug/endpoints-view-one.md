@@ -14,7 +14,3 @@ You can use the AWS Elemental MediaPackage console, the AWS CLI, or the MediaPac
 1. Access the channel that the endpoint is associated with, as described in [Viewing channel details](channels-view.md).
 
 1. On the details page for the channel, under **Origin endpoints**, choose the endpoint ID to view details such as package information and playback preview. For downstream device requests, you must provide the endpoint URL from the **Endpoint URL** field or the CloudFront CDN URL.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

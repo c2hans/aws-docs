@@ -14,7 +14,3 @@ One common, effective approach is to develop an event bus that's distributed as 
 In an implementation of the event-bus example, a dropdown component uses the shared bus to publish an event called `drop-down-open-menu` with a payload of `{"id": "homepage-aboutus-button"}`. The component adds a listener to the `drop-down-open-menu` event to ensure that if an event is fired for a new ID, the dropdown component is rendered to hide its collapsible section. In this way, the micro-frontend can react to changes asynchronously with increased performance and better encapsulation, making easier for multiple teams to design and test behaviors.
 
 We recommend using standard APIs implemented natively by modern browsers to improve simplicity and maintainability. The [MDN Event reference](https://developer.mozilla.org/en-US/docs/Web/Events) provides information about using events with client-side rendered applications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

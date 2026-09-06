@@ -15,7 +15,3 @@ Whereas CloudWatch gives you a rich set of tools to customize your approach to m
 For example, consider you have an ASP .NET application backed by a SQL Server database, and your database starts malfunctioning due to high memory pressure, leading to HTTP 500 errors in your application server. Previously, to identify the problem and triage, you would have to go through your metrics dashboards, sift through server, application error and database logs, and possibly use third-party tools.
 
 With CloudWatch Application Insights for .NET and SQL Server and its intelligent analytics, you can find the layer (SQL database, in this case) in your application stack causing the problem just by looking at the dynamically created dashboard of the related metrics anomalies, and log file snippets. This significantly reduces alert fatigue and the time and effort required to troubleshoot and return your application to a healthy state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

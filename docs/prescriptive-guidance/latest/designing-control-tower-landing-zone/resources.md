@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 + [Organizing Your AWS Environment Using Multiple Accounts](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html) (AWS whitepaper)
 + [AWS Security Reference Architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/welcome.html) (AWSPrescriptive Guidance)
 + [Setting up a secure and scalable multi-account ](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-aws-environment/welcome.html)AWS[ environment](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-aws-environment/welcome.html) (AWSPrescriptive Guidance)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -135,7 +135,3 @@ If you rightsize your instances, you can ensure that you're using the most cost-
 ## Additional resources
 <a name="additional-resources"></a>
 + [Amazon Web Services and Microsoft: Frequently Asked Questions](https://aws.amazon.com/windows/faq/) (AWS documentation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

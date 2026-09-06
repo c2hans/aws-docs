@@ -77,7 +77,3 @@ Choose cloud services based on your workload's specific requirements and usage p
 + Choose the appropriate fleet type based on application behavior. For example, choose single-session fleets for applications that require dedicated resources and multi-session fleets for applications that can share resources efficiently.
 + Consider application compatibility with multi-session environments.
 + Use the [file system redirection feature](https://docs.aws.amazon.com/appstream2/latest/developerguide/enable-file-system-redirection.html) to handle the interactions between remote and local applications. For more information, see the AWS blog post [Launching local applications from an Amazon WorkSpaces Applications streaming session](https://aws.amazon.com/blogs/desktop-and-application-streaming/launching-local-applications-from-an-amazon-appstream-2-0-streaming-session/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

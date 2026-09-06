@@ -30,7 +30,3 @@ To share a Knowledge Source:
 + Share multiple sources to give Amazon Connect Decisions comprehensive context; a single SOP is a good starting point, but adding related policies and guidelines improves output quality.
 + You can share additional Knowledge Sources at any point during configuration, not only at the start. If you update a source document, share the new version to keep Amazon Connect Decisions current.
 + Knowledge Sources provide reference context; they do not directly create metrics, rules, or guidelines on their own. Use Detection and Guidelines configuration to act on what Amazon Connect Decisions learns.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

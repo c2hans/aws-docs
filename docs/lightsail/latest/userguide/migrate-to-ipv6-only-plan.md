@@ -66,7 +66,3 @@ There are a few additional tasks that you can perform after you change the netwo
 + **(Both)** Add or update the firewall settings for your instance. For more information, see [Instance firewalls in Lightsail](understanding-firewall-and-port-mappings-in-amazon-lightsail.md).
 + **(Both)** Add or update DNS A records for IPv4, and AAAA records for IPv6. For more information, see [Point your domain to an instance](amazon-lightsail-routing-to-instance.md).
 + **(Both)** Add your instance to a Lightsail load balancer. For more information, see [Load balancers in Lightsail](understanding-lightsail-load-balancers.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

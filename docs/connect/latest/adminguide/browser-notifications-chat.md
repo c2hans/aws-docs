@@ -37,7 +37,3 @@ If you can't see the browser notification, check the following:
 + The notification permission is allowed/enabled on your browser for the web page with chat window.
 + The agent (or you from your agent chat session) has sent a new message/attachment while you're on a web page that is different from the one that contains the chat window. For the notification icon—a red dot—on the widget to be visible, minimize your chat window.
 + Notifications from the browser are not snoozed (temporarily dismissed).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

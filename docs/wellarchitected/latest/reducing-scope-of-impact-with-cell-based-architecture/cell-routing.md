@@ -29,7 +29,3 @@ For the router layer, it's recommended that you distribute requests to individua
 + [Using a compute layer like Amazon EC2, Amazon ECS or Amazon EKS and Amazon S3 for cell mapping as cell router](using-a-compute-layer-like-ec2-ecs-or-eks-and-s3-for-cell-mapping-as-cell-router.md)
 + [Routing no-HTTP requests](routing-no-http-requests.md)
 + [About resilience of the cell router](about-resilience-of-the-cell-router.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

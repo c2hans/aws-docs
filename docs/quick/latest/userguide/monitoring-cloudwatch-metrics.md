@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/monitoring-cloudw
 # Monitoring Amazon Quick using CloudWatch metrics
 <a name="monitoring-cloudwatch-metrics"></a>
 
-Amazon Quick sends metrics to Amazon CloudWatch in the `AWS/QuickSight` namespace. These metrics cover dashboards, visuals, dataset ingestions, SPICE capacity, knowledge base indexing, action connectors, and automations. Use them to observe availability and performance, and to create alarms for your Amazon Quick environment.
+Amazon Quick sends metrics to Amazon CloudWatch in the `AWS/QuickSight` namespace. These metrics cover dashboards, visuals, dataset ingestions, SPICE capacity, knowledge base indexing, connectors, and automations. Use them to observe availability and performance, and to create alarms for your Amazon Quick environment.
 
 For more information about using Amazon CloudWatch, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html).
 
@@ -50,7 +50,7 @@ The `AWS/QuickSight` namespace includes the following metrics for monitoring tra
 + [Per-dataset ingestion metrics](#per-ingestion-metrics)
 + [Per-visual metrics](#per-visual-metrics)
 + [Per-unstructured dataset metrics](#per-unstructured-dataset-metrics)
-+ [Per-action connector metrics](#per-action-connector-metrics)
++ [Per-connector metrics](#per-action-connector-metrics)
 + [Per-automation metrics](#per-automation-metrics)
 
 #### Per-dashboard metrics
@@ -104,15 +104,15 @@ The following metrics track document statistics and indexing status for Amazon Q
 | DocumentsFailedToIndex | The number of documents that failed to index in the unstructured Quick index. |  +  KnowledgeBaseId <br />+  QuickInstanceId   | Count |
 | ExtractedTextSize | The total text size extracted during a connector level sync in the unstructured Quick index. |  +  KnowledgeBaseId <br />+  QuickInstanceId   | MB |
 
-#### Per-action connector metrics
+#### Per-connector metrics
 <a name="per-action-connector-metrics"></a>
 
-The following metrics track the number of invocations made to Quick Action Connectors. You can find these metrics under the `AWS/QuickSight` namespace in CloudWatch.
+The following metrics track the number of invocations made to Quick connectors. You can find these metrics under the `AWS/QuickSight` namespace in CloudWatch.
 
 | Metric | Description | Dimension | Unit |
 | --- | --- | --- | --- |
-| ActionInvocationCount | The number of times an action connector was invoked. |  +  ActionConnectorId <br />+  ActionConnectorType <br />+  ActionId   | Count |
-| ActionInvocationError | The number of times an action connector failed to invoke. |  +  ActionConnectorId <br />+  ActionConnectorType <br />+  ActionId <br />+  InvokeErrorCode   | Count |
+| ActionInvocationCount | The number of times a connector was invoked. |  +  ActionConnectorId <br />+  ActionConnectorType <br />+  ActionId   | Count |
+| ActionInvocationError | The number of times a connector failed to invoke. |  +  ActionConnectorId <br />+  ActionConnectorType <br />+  ActionId <br />+  InvokeErrorCode   | Count |
 
 #### Per-automation metrics
 <a name="per-automation-metrics"></a>
@@ -137,7 +137,7 @@ The `AWS/QuickSight` namespace includes the following aggregate metrics for moni
 + [Aggregate ingestion metrics](#aggregate-ingestion-metrics)
 + [Aggregate visual metrics](#aggregate-visual-metrics)
 + [Aggregate unstructured dataset metrics](#aggregate-unstructured-dataset-metrics)
-+ [Aggregate action connector metrics](#aggregate-action-connector-metrics)
++ [Aggregate connector metrics](#aggregate-action-connector-metrics)
 
 #### Aggregate dashboard metrics
 <a name="aggregate-dashboard-metrics"></a>
@@ -190,15 +190,15 @@ The following metrics track all unstructured dataset metrics within a Amazon Qui
 | DocumentsFailedToIndex | The number of documents that failed to index in the unstructured Quick index.<br />The most useful statistic for this metric is `SUM`, which represents the total number of documents that failed to index. | Count |
 | ExtractedTextSize | The total text size extracted during a connector level sync in the unstructured Quick index.<br />The most useful statistic for this metric is `SUM`, which represents the total size of documents extracted during a connector level sync. | MB |
 
-#### Aggregate action connector metrics
+#### Aggregate connector metrics
 <a name="aggregate-action-connector-metrics"></a>
 
-The following metrics track all Quick action connector invocations associated with a Amazon Quick account in an AWS Region. You can find these metrics under the `AWS/QuickSight/Aggregate Metrics` group for CloudWatch.
+The following metrics track all Quick connector invocations associated with a Amazon Quick account in an AWS Region. You can find these metrics under the `AWS/QuickSight/Aggregate Metrics` group for CloudWatch.
 
 | Metric | Description | Unit |
 | --- | --- | --- |
-| ActionInvocationCount | The number of action connector invocations made.<br />The most useful statistic for this metric is `SUM`, which represents the total number of action connector invocations initiated during a set period of time. | Count |
-| ActionInvocationError | The number of failed action connector invocations.<br />The most useful statistic for this metric is `SUM`, which represents the total number of action connector invocations that failed during a set period of time. | Count |
+| ActionInvocationCount | The number of connector invocations made.<br />The most useful statistic for this metric is `SUM`, which represents the total number of connector invocations initiated during a set period of time. | Count |
+| ActionInvocationError | The number of failed connector invocations.<br />The most useful statistic for this metric is `SUM`, which represents the total number of connector invocations that failed during a set period of time. | Count |
 
 ### Aggregate SPICE metrics
 <a name="aggregate-spice-metrics"></a>
@@ -223,11 +223,7 @@ The following table lists Quick metric dimensions that appear in Amazon CloudWat
 | VisualId | The public ID of a Quick visual. |
 | KnowledgeBaseId | The public ID of a Quick knowledge base. |
 | QuickInstanceId | The public ID of the Quick instance. |
-| ActionConnectorId | The public ID of the Quick Action Connector. |
-| ActionConnectorType | The type of the Quick Action Connector. |
+| ActionConnectorId | The public ID of the Quick connector. |
+| ActionConnectorType | The type of the Quick connector. |
 | ActionId | The public ID of the Quick Action. |
 | InvokeErrorCode | The error code related to a failed Quick Action Connector invocation. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

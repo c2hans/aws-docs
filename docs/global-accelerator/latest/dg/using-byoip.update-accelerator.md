@@ -30,9 +30,9 @@ The following topics provide procedures for updating accelerators.
 <a name="using-byoip.update-accelerator.requirements"></a>
 
 When you update an accelerator to change one or both static IP addresses, keep in mind the following:
-+ You can change the BYOIP address for both standard accelerators and custom routing accelerators. After you create an accelerator with one or two BYOIP addresses, that accelerator must always have at least one BYOIP address. However, you can update the accelerator to change one or both static IP addresses to use a BYOIP addresses or to change the BYOIP address
++ You can change the BYOIP address for both standard accelerators and custom routing accelerators. After you create an accelerator with one or two BYOIP addresses, that accelerator must always have at least one BYOIP address. However, you can update the accelerator to change one or both static IP addresses to use a BYOIP address or to change the BYOIP address
 + If you have an accelerator with two BYOIP static IP addresses, you can change only one of them to use a static IP address assigned by Global Accelerator. Note the following about changing a BYOIP static IP address for an accelerator to a Global Accelerator-assigned static IP address:
-  + You can only change the address back to one of your original Global Accelerator static IP addresses if you make the change *within 10 days* of when you changed it to a BYOIP address. After 10 days, the original static IP address is returned to the Global Accelerator IP address pool and reused. After that, if you update your accelerator to change a BYOIP address to a Global Accelerator-assigned IP address, you are assigned a new IP address from the Global Accelerator IP address pool.
+  + You can only change the address back to your original BYOIP static IP address if you make the change *within 10 days* of when you changed it to a Global Accelerator-assigned address. After 10 days, the original BYOIP static IP address is released and can no longer be restored. After that, if you update your accelerator to change a BYOIP address to a Global Accelerator-assigned IP address, you are assigned a new IP address from the Global Accelerator IP address pool.
   + You can't change both BYOIP static IP addresses to use Global Accelerator static IP addresses instead. To use two static IP addresses that are assigned by Global Accelerator with an accelerator, create a new accelerator.
 + If you have an accelerator that is using two BYOIP addresses, you can change either of them to a different BYOIP address. The same restrictions apply as when you add BYOIP addresses when you create an accelerator, however. For example, if you update an accelerator to use two different BYOIP addresses, the addresses must be from different BYOIP address ranges that you've added to Global Accelerator.
 + If you've configured cross-account BYOIP addresses, when you update the static IP addresses for an accelerator, you can use a cross-account address.
@@ -47,7 +47,3 @@ To revert to the original Amazon IP address for your accelerator, do the followi
 + Update the accelerator with the original BYOIP static IP address that you changed to a new address.
 
 When you make this update, Global Accelerator will restore the original Amazon static IP address as well.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

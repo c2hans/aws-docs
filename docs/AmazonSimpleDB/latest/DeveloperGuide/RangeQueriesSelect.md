@@ -20,7 +20,3 @@ The following table shows some range queries, how they are interpreted, and the 
 | select \* from mydomain where Year between '1975' and '2008' | Retrieves all items that have a "Year" value between "1975" and "2008", including "1975" and "2008". | 1579124585, B000T9886K, B00005JPLW, B000SF3NGK |
 | select \* from mydomain where Rating = '\*\*\*' or Rating = '\*\*\*\*\*' | Retrieves all items that have 3 (\*\*\*) or 5 (\*\*\*\*\*) star rating <br />This is a discontiguous range query that consists of two distinct values selected from the range of all possible values for the attribute. | 0385333498, B00005JPLW, B000SF3NGK |
 | select \* from mydomain where (Year > '1950' and Year < '1960') or Year like '193%' or Year = '2007' | Retrieves all items where the "Year" attribute is either between "1950" and "1960", excluding "1950" and "1960", or falls in the nineteen-thirties, or equals "2007".  | 0385333498, 0802131786, B000T9886K, B00005JPLW  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

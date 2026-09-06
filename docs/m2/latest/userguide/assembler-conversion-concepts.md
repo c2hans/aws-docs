@@ -30,7 +30,3 @@ Mainframe Assembler often contain character literals expressed as hexadecimal va
 <a name="conversion-concepts-code-build"></a>
 
 Code conversion is available through the AWS CodeBuild service. AWS CodeBuild is a build automation tool originally designed as a part of a CI/CD pipeline. In AWS Mainframe Modernization, AWS CodeBuild is used to automate the MCCAC Conversion tool and other tools such as the Rocket Software (formerly Micro Focus) COBOL compiler.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

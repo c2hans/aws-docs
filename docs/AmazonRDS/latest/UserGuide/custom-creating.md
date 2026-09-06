@@ -266,7 +266,7 @@ The first time that you create an RDS Custom for Oracle DB instance, you might r
 ## Installing additional software components on your RDS Custom for Oracle DB instance
 <a name="custom-install-add-software"></a>
 
-In a newly created DB instance, your database environment includes Oracle binaries, a database, and a database listener. You might want to install additional software on the host operating system of the DB instance. For example, you might want to install Oracle Application Express (APEX), the Oracle Enterprise Manager (OEM) agent, or the Guardium S-TAP agent. For guidelines and high-level instructions, see the detailed AWS blog post [Install additional software components on Amazon RDS Custom for Oracle](https://aws.amazon.com/blogs/database/install-additional-software-components-on-amazon-rds-custom-for-oracle/).
+In a newly created DB instance, your database environment includes Oracle binaries, a database, and a database listener. You might want to install additional software on the host operating system of the DB instance. For example, you might want to install Oracle APEX, the Oracle Enterprise Manager (OEM) agent, or the Guardium S-TAP agent. For guidelines and high-level instructions, see the detailed AWS blog post [Install additional software components on Amazon RDS Custom for Oracle](https://aws.amazon.com/blogs/database/install-additional-software-components-on-amazon-rds-custom-for-oracle/).
 
 ## Connecting to your RDS Custom DB instance using SSH
 <a name="custom-creating.ssh"></a>
@@ -476,7 +476,3 @@ Your connection technique depends on whether you are connecting to a private DB 
      "rds-custom!oracle-do-not-delete-db-ABCDEFGHIJKLMNOPQRS0123456-0d726c-ssh-privatekey.pem" \
      ec2-user@i-0bdc4219e66944afa
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

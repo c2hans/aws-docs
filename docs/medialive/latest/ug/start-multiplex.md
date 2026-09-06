@@ -30,7 +30,3 @@ The MPTS is an RTP output. MediaLive creates and delivers the MPTS to AWS Elemen
 The entitlement name includes the string "multiplex" and the multiplex ID, so that MediaConnect users can easily identify it.
 
 For more information about entitled sources, see [Creating a Flow](https://docs.aws.amazon.com/mediaconnect/latest/ug/flows-create.html) in the *AWS Elemental MediaConnect User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

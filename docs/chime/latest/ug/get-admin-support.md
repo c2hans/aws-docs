@@ -28,7 +28,3 @@ If you can, provide your Amazon Chime administrator with the following informati
 
 **Note**
 If you created your Amazon Chime account as an individual user or as part of a group with no administrators, you can use the Amazon Chime Assistant to get attachments or delete your account. For more information, see [Using the Amazon Chime Assistant](chime-using-assistant.md). You can also use the online user forum at [https://answers.chime.aws/](https://answers.chime.aws/) and watch the Amazon Chime [user videos](https://aws.amazon.com/chime/how-to-videos).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

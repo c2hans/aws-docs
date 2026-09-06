@@ -207,7 +207,3 @@ You have completed the quick start tutorial, and should have an idea of how Amaz
 + Dive deeper into the [concepts of Amazon Location Service](how-it-works.md)
 + Get more information about [how to use Amazon Location features and functionality](using-amazon-location.md)
 + See how to expand on this sample and build more complex applications by looking at [code examples using Amazon Location](samples.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

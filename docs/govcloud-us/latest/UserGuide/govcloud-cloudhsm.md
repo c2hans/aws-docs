@@ -34,7 +34,3 @@ For AWS Services architected within the AWS GovCloud (US) Regions, the following
 <a name="govcloud-hsmv2-root-cert"></a>
 
 If you choose to [verify the identity of an HSM](https://docs.aws.amazon.com/cloudhsm/latest/userguide/verify-hsm-identity.html), be sure to use the root certificate for the AWS GovCloud (US) Region rather than the root certificate that is available for commercial Regions. You can download the certificate from [AWS-US-GOV\_CloudHSM\_Root\_G1.zip](https://docs.aws.amazon.com/cloudhsm/latest/userguide/samples/AWS_US_GOV_CloudHSM_Root-G1.zip). Verification is an optional step that you can perform after you [create an HSM](https://docs.aws.amazon.com/cloudhsm/latest/userguide/create-hsm.html). For more information about AWS CloudHSM, see the [AWS CloudHSM User Guide](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html). For more information about AWS CloudHSM Classic, see the [AWS CloudHSM Classic User Guide](https://docs.aws.amazon.com/cloudhsm/classic/userguide/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

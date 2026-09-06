@@ -188,7 +188,3 @@ After the agent starts, open the CloudWatch console and choose **Database Insigh
 + **Host Metrics** – CPU, memory, and disk I/O collected by the agent.
 
 If the fleet view shows the instance but the detailed panels are empty, allow a few more minutes for `pg_stat_statements` data to accumulate.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

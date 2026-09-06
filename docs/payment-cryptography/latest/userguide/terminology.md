@@ -157,7 +157,3 @@ TR-34 is an implementation of ANSI X9.24-2 that described a protocol to securely
 
 **X9.143**
 X9.143 is a key block format that is defined by the American National Standards Institute (ANSI) to support securing a key and key attributes in the same data structure. The key block format defines a set of key attributes that are tied to the key so that they are held together. AWS Payment Cryptography uses X9.143 standardized terms whenever possible to ensure proper key separation and key purpose. X9.143 replaces the earlier [TR-31](#terms.tr31) proposal although in most cases they are backwards and forward compatible and the terms are often used interchangeably.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -61,7 +61,3 @@ Create a VPC endpoint for EBS direct APIs using one of the following service nam
 FIPS-compliant interface VPC endpoints can be created for the following Regions: `us-east-1` \| `us-east-2` \| `us-west-1` \| `us-west-2` \| `ca-central-1` \| `ca-west-1`. FIPS-compliant interface VPC endpoints support both IPv4 and IPv6 traffic.
 
 If you enable private DNS for the endpoint, you can make API requests to EBS direct APIs using its default DNS name for the Region, for example, `ebs.us-east-1.amazonaws.com`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

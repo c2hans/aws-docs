@@ -13,7 +13,3 @@ If a subnet is approaching IP address exhaustion, take one of the following acti
 + Add a subnet with sufficient available IP addresses to the subnet group in the same Availability Zone.
 + Free IP addresses in the existing subnet by removing unused resources such as unattached network interfaces.
 + Replace the subnet with one that uses a larger CIDR block.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

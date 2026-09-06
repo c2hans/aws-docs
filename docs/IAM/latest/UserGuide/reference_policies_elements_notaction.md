@@ -58,7 +58,3 @@ The following conditional example denies access to non-IAM actions if the user i
 ------
 
 For an example policy that denies access to actions outside of specific Regions, except for actions from specific services, see [AWS: Denies access to AWS based on the requested Region](reference_policies_examples_aws_deny-requested-region.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

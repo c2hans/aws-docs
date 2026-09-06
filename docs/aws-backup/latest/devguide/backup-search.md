@@ -362,7 +362,3 @@ You can restore from your search results in the AWS Backup console by navigating
 See [Restore S3 data using AWS Backup](restoring-s3.md) for information on how to restore a recovery point with S3 data, to restore an S3 bucket, or to restore up to five objects or folders with an S3 bucket.
 
 See [Restore an Amazon EBS volume](restoring-ebs.md) for information about restoring an EBS snapshot to a new volume that attaches to an EC2 instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

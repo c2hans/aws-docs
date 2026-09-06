@@ -61,7 +61,3 @@ This is not a typical load-testing domain, but you can use load-testing tools to
 Usually, you would not create high load but rather a sensible number of requests that verify functionality. You can also do this periodically against production, when the customers are not visiting the tested flows, to have another layer of monitoring.
 
 As a shortcut, scenarios already created for load testing can be reused on production with a lower load configured.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

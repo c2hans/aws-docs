@@ -55,7 +55,3 @@ For more information about Aurora DB cluster details, see [Creating an Amazon Au
 
 **Important**
 Ensure the certificate matches the Certificate Authority shown in your DB cluster configuration on the AWS Management Console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

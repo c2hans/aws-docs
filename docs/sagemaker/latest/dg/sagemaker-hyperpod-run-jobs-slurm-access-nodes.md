@@ -127,7 +127,3 @@ Also, you can use the host for remote development from an IDE on your local devi
 <a name="sagemaker-hyperpod-run-jobs-slurm-access-nodes-multi-user"></a>
 
 To create and manage users for a multi-user environment (including mapping users to IAM principals and integrating with Active Directory), see [User management on a SageMaker HyperPod Slurm cluster](sagemaker-hyperpod-slurm-user-management.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

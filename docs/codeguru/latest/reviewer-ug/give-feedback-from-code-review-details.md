@@ -22,7 +22,3 @@ You can also view recommendations and provide feedback in incremental code revie
 ![The Code review details window in the CodeGuru Reviewer console](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/images/code-review-feedback.png)
 
 Your feedback is used to improve CodeGuru Reviewer through model-tuning efforts that will help make CodeGuru Reviewer recommendations more useful to you and others.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

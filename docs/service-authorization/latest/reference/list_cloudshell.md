@@ -114,7 +114,3 @@ AWS CloudShell defines the following condition keys that can be used in the `Con
 |   [cloudshell:SecurityGroupIds](https://docs.aws.amazon.com/cloudshell/latest/userguide/aws-cloudshell-vpc-permissions-1.html#vpc-condition-keys-examples-1)  | Filters access by security group ids. Available during CreateEnvironment operation | ArrayOfString |
 |   [cloudshell:SubnetIds](https://docs.aws.amazon.com/cloudshell/latest/userguide/aws-cloudshell-vpc-permissions-1.html#vpc-condition-keys-examples-1)  | Filters access by subnet ids. Available during CreateEnvironment operation | ArrayOfString |
 |   [cloudshell:VpcIds](https://docs.aws.amazon.com/cloudshell/latest/userguide/aws-cloudshell-vpc-permissions-1.html#vpc-condition-keys-examples-1)  | Filters access by vpc ids. Available during CreateEnvironment operation | ArrayOfString |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

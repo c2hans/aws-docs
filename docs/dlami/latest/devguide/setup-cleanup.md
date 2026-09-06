@@ -12,7 +12,3 @@ If you stop an instance, you can keep it around and start it later when you want
 If you terminate an instance, it's gone, and you cannot start it again. Of course, you won't incur any more charges for the compute resources with a terminated instance. However, your data still resides on Amazon S3, and you can continue to incur S3 charges. To prevent all further charges related to your terminated instance, you must also delete the storage volume on Amazon S3. For instructions, see [Terminate Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html) in the *Amazon EC2 User Guide*.
 
 For more information about Amazon EC2 instance states, such as `stopped` and `terminated`, see [Amazon EC2 instance state changes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) in the *Amazon EC2 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

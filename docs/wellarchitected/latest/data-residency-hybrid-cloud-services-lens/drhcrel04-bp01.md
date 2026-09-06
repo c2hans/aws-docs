@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 <a name="implementation-guidance-35"></a>
 
  Plan and allocate sufficient compute, storage, and network capacity ahead of time for your workloads on AWS Outposts to meet high availability requirements, right-sizing, and avoiding bottlenecks. Engage AWS Cloud specialists and Support to assist with capacity planning, right-sizing, and monitoring best practices for your Outposts environment, aligning with the operational excellence pillar of the AWS Well-Architected Framework. Use Outposts capacity management to view, plan, and modify capacity configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

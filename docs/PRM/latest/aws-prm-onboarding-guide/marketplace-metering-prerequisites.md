@@ -11,7 +11,3 @@ In addition to the general [prerequisites](resource-tagging-prerequisites.md), e
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/marketplace-metering-prerequisites.html)
 + Product is one of the following AWS Marketplace product types only: Amazon Machine Image (AMI) or Machine Learning (ML)
 + Product needs to be purchased and used by buyers on AWS Marketplace
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

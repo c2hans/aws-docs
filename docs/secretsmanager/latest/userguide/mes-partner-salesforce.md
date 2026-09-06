@@ -61,7 +61,3 @@ With AWS Secrets Manager, you can rotate a Salesforce secret using the credentia
 To rotate your secrets using a separate set of credentials stored in an Admin Secret, create the Admin Secret in AWS Secrets Manager following the same steps as your consumer secret. You must provide the ARN of this Admin Secret in the rotation metadata in a [RotateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html) call for your consumer secret.
 
 The rotation logic follows the guidance provided by Salesforce.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

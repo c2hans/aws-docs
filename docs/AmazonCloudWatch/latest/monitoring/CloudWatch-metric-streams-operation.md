@@ -28,7 +28,3 @@ If you change the output format of a metric stream, in certain cases you might s
 1. To change the stream's output format, filters, destination Firehose stream, or roles, choose **Edit** and make the changes that you want.
 
    If you change the filters, there might be some gaps in the metric data during the transition.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

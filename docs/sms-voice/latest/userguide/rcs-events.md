@@ -306,7 +306,3 @@ Inbound interaction events, including typing indicators and suggestion taps (pos
 + Implement idempotent event processing. Use the message identifier combined with the event type as a deduplication key to handle duplicate event deliveries.
 + Handle out-of-order events by comparing event timestamps. Events might arrive in a different order than they occurred.
 + Monitor rejection and undeliverable rates with CloudWatch alarms to detect content issues or targeting problems early.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

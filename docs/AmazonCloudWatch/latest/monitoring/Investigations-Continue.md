@@ -56,7 +56,3 @@ There is a charge for executing an Automation runbook. However, CloudWatch inves
 
 **Note**
 At some point, you might see **Completed the analysis. Finished with the investigation.** displayed above the **Feed** area. If you then add more telemetry to the findings, this message changes and CloudWatch investigations begins scanning your telemetry again, based on the new data that you added to the findings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

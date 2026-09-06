@@ -32,7 +32,3 @@ For the best replication performance when working with Multi-Region Access Point
 + [Create one-way replication rules for your Multi-Region Access Point](mrap-create-one-way-replication-rules.md)
 + [Create two-way replication rules for your Multi-Region Access Point](mrap-create-two-way-replication-rules.md)
 + [View the replication rules for your Multi-Region Access Point](mrap-view-replication-rules.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ The topics in this chapter can help you troubleshoot problems with configuring a
   + [Outbound TLS - Passing traffic for specific target server with revoked certificates by adjusting scope](troubleshooting-tls-inspection.md#troubleshoot-how-to-pass-traffic-revoked-certificates)
   + [Troubleshooting connection issues with AWS service endpoints (including the AWS Systems Manager agent)](troubleshooting-tls-inspection.md#troubleshoot-connection-service-endpoints)
   + [Troubleshooting TLS - Connections dropping or resetting](troubleshooting-tls-inspection.md#troubleshoot-connection-drops)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

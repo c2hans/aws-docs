@@ -122,7 +122,3 @@ From **outside** the Docker container, use the following command:
 ```
 docker run -it {{YourImageId}} /bin/bash -c "export AWS_ACCESS_KEY_ID={{YourAccessKeyId}}; export AWS_SECRET_ACCESS_KEY={{YourSecretKeyId}}; export AWS_SESSION_TOKEN={{YourSessionToken}}; export AWS_DEFAULT_REGION={{YourAWSRegion}}; ./kvs_gstreamer_sample {{YourStreamName}} {{YourRtspUrl}}"
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

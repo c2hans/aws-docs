@@ -37,7 +37,3 @@ For example, suppose that a job attempt fails for any reason and the number of a
 Jobs that are cancelled or terminated aren't retried. Also, jobs that fail because of an invalid job definition aren't retried.
 
 For more information, see [Retry strategy](job_definition_parameters.md#retryStrategy), [Create a single-node job definition](create-job-definition.md), [Tutorial: submit a job](submit_job.md) and [Stopped tasks error codes](https://docs.aws.amazon.com/AmazonECS/latest/userguide/stopped-task-error-codes.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

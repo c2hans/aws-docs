@@ -21,7 +21,3 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Infrastructure security in Amazon Lightsail for Research](infrastructure-security.md)
 + [Configuration and vulnerability analysis in Amazon Lightsail for Research](security-vulnerability-analysis-management.md)
 + [Security best practices for Amazon Lightsail for Research](security-best-practices.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail for Research. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail-for-research` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

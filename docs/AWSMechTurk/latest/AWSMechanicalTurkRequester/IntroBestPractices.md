@@ -67,7 +67,3 @@ We recommend that you be judicious in your use of worker blocks and only block t
 <a name="IntroBestPracticesRejection"></a>
 
 Workers take a lot of pride in the quality of their work and pay close attention to rejections and blocks they receive. When you decide to reject an assignment or block a worker, be as clear as possible about the reasons for the action. Simply providing a value such *incorrect* as the reason gives the worker no information they can use to improve in the future. Instead, be clear about what the worker did incorrectly. This allows workers to correct their mistakes in future tasks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

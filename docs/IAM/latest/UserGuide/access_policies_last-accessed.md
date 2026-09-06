@@ -218,7 +218,3 @@ AWS collects last accessed information for the standard AWS Regions. When AWS ad
 If a Region is not listed in the previous table, then that Region does not yet provide last accessed information.
 
 An AWS Region is a collection of AWS resources in a geographic area. Regions are grouped into partitions. The standard Regions are the Regions that belong to the `aws` partition. For more information about the different partitions, see [Amazon Resource Names (ARNs) Format](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arns-syntax) in the AWS General Reference. For more information about Regions, see [About AWS Regions](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html#region-what-is) also in the AWS General Reference.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

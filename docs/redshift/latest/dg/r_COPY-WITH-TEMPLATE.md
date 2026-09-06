@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_COPY-WITH-TEMPLATE.
 # COPY with TEMPLATE
 <a name="r_COPY-WITH-TEMPLATE"></a>
 
-You can use Redshift templates with COPY commands to simplify command syntax and ensure consistency across data loading operations. Instead of specifying the same formatting parameters repeatedly, you define them once in a template and reference the template in your COPY commands. When you use a template, the COPY command combines the parameters from the template with any parameters specified directly in the command. If the same parameter appears in both the template and the command, the command parameter takes precedence. For more information, see [CREATE TEMPLATE](r_CREATE_TEMPLATE.md).
+You can use Redshift templates with COPY commands to simplify command syntax and maintain consistency across data loading operations. Instead of specifying the same formatting parameters repeatedly, you define them once in a template and reference the template in your COPY commands. When you use a template, the COPY command combines the parameters from the template with any parameters specified directly in the command. If the same parameter appears in both the template and the command, the command parameter takes precedence. For more information, see [CREATE TEMPLATE](r_CREATE_TEMPLATE.md).
 
 Templates for the COPY command can be created with:
 + [Data format parameters](copy-parameters-data-format.md)
@@ -77,7 +77,3 @@ IAM_ROLE 'arn:aws:iam::123456789012:role/MyLoadRoleName'
 DELIMITER ','
 USING TEMPLATE public.test_template;
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

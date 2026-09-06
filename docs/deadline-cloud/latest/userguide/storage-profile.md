@@ -74,7 +74,3 @@ On each workstation that will submit jobs to a queue, select the workstation's d
 1. Choose the workstation's storage profile from the **Default storage profile** list. The list contains the storage profiles that the queue can use, and only appears after you choose a queue that has storage profiles.
 
 ![The job submission settings panel showing a farm, a queue, and a default storage profile.](http://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/submitter/storage-profile-setting.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

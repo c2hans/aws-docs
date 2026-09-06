@@ -24,7 +24,3 @@ Use the following instructions to view the results of a build action, including 
 1. To view the configuration used for the build action, choose **Configuration**. For more information, see [Adding the build action](build-add-action.md).
 
 1. To view the variables used by the build action, choose **Variables**. For more information, see [Using variables in workflows](workflows-working-with-variables.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

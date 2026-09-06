@@ -24,7 +24,3 @@ To turn on validation, you specify validation rules in a [request validator](htt
 
 **Note**
 Request body validation and [Method request behavior for payloads without mapping templates for REST APIs in API Gateway](integration-passthrough-behaviors.md) are two separate topics. When a request payload does not have a matching model schema, you can choose to passthrough or block the original payload. For more information, see [Method request behavior for payloads without mapping templates for REST APIs in API Gateway](integration-passthrough-behaviors.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

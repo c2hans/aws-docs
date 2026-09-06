@@ -32,7 +32,3 @@ CREATE TABLE EMPLOYEES (
 ```
 
 If you don’t use double quotation marks, then PostgreSQL creates objects with lowercase names. To create, query, or manage PostgreSQL database objects with names in uppercase or mixed case, use double quotation marks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,7 +75,3 @@ The destination information defines how MediaPackage saves the live-to-VOD asset
 1. For **Manifest key**, enter the path within the bucket to the live-to-VOD asset, including the file name for the parent manifest of the asset. If the directory structure doesn't already exist in the bucket, MediaPackage creates it.
 **Important**
 The manifest key must be unique. When you use the same manifest key for multiple harvest jobs, the newest playlist for the asset overwrites existing playlists. The only time you should reuse a manifest key is when you are harvesting the same content, such as if there was a problem with a previous harvest of the content.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

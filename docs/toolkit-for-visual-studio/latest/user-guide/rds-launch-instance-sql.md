@@ -19,7 +19,3 @@ For information about how to create an Amazon RDS instance, see [Launch an Amazo
 
 1. The Toolkit for Visual Studio creates the Microsoft SQL Server database and adds it to the Visual Studio Server Explorer.
 ![Server Explorer showing expanded Data Connections with aws-3.my-ms-sql-db database structure.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-sql-svr-explorer.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

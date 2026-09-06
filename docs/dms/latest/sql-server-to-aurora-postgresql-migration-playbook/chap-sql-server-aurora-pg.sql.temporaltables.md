@@ -99,7 +99,3 @@ For more information, see [Temporal tables](https://docs.microsoft.com/en-us/sql
 <a name="chap-sql-server-aurora-pg.sql.temporaltables.pg"></a>
 
 PostgreSQL provides an extension for supporting temporal tables, but it’s not supported by Amazon Aurora. A workaround will be to create table triggers to update a custom history table to track changes to data. For more information, see [Triggers](chap-sql-server-aurora-pg.tsql.triggers.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

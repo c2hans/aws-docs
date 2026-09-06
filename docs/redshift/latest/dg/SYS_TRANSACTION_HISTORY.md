@@ -50,7 +50,3 @@ select * from sys_transaction_history order by transaction_start_time desc;
      100 |           1430 | Serializable    | committed  | 2023-08-27 21:04:28.917788 | 2023-08-28 21:04:28.919993 | 2023-08-28 21:04:28.944812 |               16 |                  -1
      102 |           1494 | Serializable    | committed  | 2023-08-27 21:04:37.029058 | 2023-08-28 21:04:37.033137 | 2023-08-28 21:04:37.062001 |               16 |                  -1
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

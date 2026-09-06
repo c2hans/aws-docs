@@ -49,7 +49,7 @@ Amazon Quick Automate provides granular role based access: Viewer, Contributor, 
 
 ### Configure integrations
 <a name="automate-configure-integrations"></a>
-+ After setting up AWS service integrations, you can begin using them in Quick Automate. See [Action connectors](action-integrations.md) for setup details.
++ After setting up AWS service integrations, you can begin using them in Quick Automate. See [Connectors](action-integrations.md) for setup details.
 + First, add the integration to an Automation Group. This allows you to control access for which automations can use this integration. To add an integration to your Automation Group:
   + Go to the **Projects** page
   + Click **Manage groups** and select the group you want to add an integration to
@@ -134,7 +134,3 @@ Required fields are marked accordingly in the interface. Optional fields provide
 After creating your project, you can access a summary page with Overview, launch goals and document section will open for review. This comprehensive layout allows you to quickly grasp the essential information about your project or resource. You will have Summary (default selected), Versions and Deployments tabs.
 
 In Summary, the Overview section provides a high-level description and launch Goals. The Documents section contains relevant document uploaded. On the right-hand side of the page, you'll notice a Status panel. This panel offers real-time updates on the current state of your project. It may include information such as deployment status, health checks, or any ongoing processes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

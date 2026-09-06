@@ -20,7 +20,3 @@ When working with RBAC roles, consider the following:
 + You can't drop a role that has the RESTRICT parameter when it is granted to another role. The default setting is RESTRICT. Amazon Redshift throws an error when you try to drop a role that has inherited another role.
 + Users that don't have admin permissions on a role can't grant or revoke a role.
 + RBAC isn't fully supported for system tables and views. RBAC permissions for system tables and views don’t persist through upgrades, downgrades, or resizes. We recommend using [Amazon Redshift system-defined roles](r_roles-default.md) to manage system table and view permissions. For more information on system tables, go to [System tables and views reference](cm_chap_system-tables.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

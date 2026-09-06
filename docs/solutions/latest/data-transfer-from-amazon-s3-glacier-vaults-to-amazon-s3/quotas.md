@@ -35,7 +35,3 @@ This Guidance optimizes your transfer by requesting archives in order. Other ran
 <a name="amazon-s3-file-size-limit"></a>
 
  The Amazon S3 service restricts file sizes to 5 TB. The Guidance won't transfer archives larger than 5 TB. The Guidance's CloudWatch dashboard indicates the number of archives that meet this condition. The Guidance stores inventory data for these archives in the Inventory S3 bucket under `$WORKFLOW_RUN/not_migrated/`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer from Amazon S3 Glacier Vaults to Amazon S3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

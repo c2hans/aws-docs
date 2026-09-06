@@ -18,7 +18,3 @@ When you create a cluster, ARC provides you with a set of Regional endpoints. To
 For more information about using the AWS CLI, see the AWS CLI Command Reference. For a list of routing control API actions, see [Routing control API operations](actions.routing-control.md) and [Routing control API operations](actions.routing-control.md).
 
 We'll start by creating the components you need to manage failover by using routing controls, beginning with creating a cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ The following table describes the available resource configurations.
 | Account A | VPC 1 | Account A | VPC 2 | Intra-Region peering or a transit gateway or Gateway Load Balancer endpoint |
 | Account A | VPC 1 | Account B | VPC 2 | Cross-account intra-Region peering connection, a transit gateway, or a Gateway Load Balancer endpoint |
 | Account A | VPC 1 | Account B | VPC 1 | VPC sharing |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

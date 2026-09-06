@@ -34,7 +34,3 @@ For multiple member accounts that are linked to the Lightsail partner account, y
 1. To submit your request, choose **Request**.
 
 Once the quota increase request has been submitted, you might have an Support case generated which you can monitor for updates. If the increase is approved, it will apply to all of your partner accounts per Region. For quota increases not listed, see [Contact Lightsail as a partner](lightsail-partners-contact-lightsail.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -98,7 +98,3 @@ Property description not available.
 
 `Id`  <a name="Id-fn::getatt"></a>
 A unique identifier for the resource set. This ID is returned in the responses to create and list commands. You provide it to operations like update and delete.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

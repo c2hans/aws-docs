@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-aut
 
 This topic describes how Amazon Redshift uses automated materialized views to improve performance. Amazon Redshift creates materialized views automatically based on database activity and performance. Amazon Redshift uses automated materialized views by default.
 
-Materialized views are a powerful tool for improving query performance in Amazon Redshift. They do this by storing a precomputed result set. Similar queries don't have to re-run the same logic each time, because they can retrieve records from the existing result set. Developers and analysts create materialized views after analyzing their workloads to determine which queries would benefit, and whether the maintenance cost of each materialized view is worthwhile. As workloads grow or change, these materialized views must be reviewed to ensure they continue to provide tangible performance benefits.
+Materialized views are a powerful tool for improving query performance in Amazon Redshift. They do this by storing a precomputed result set. Similar queries don't have to re-run the same logic each time, because they can retrieve records from the existing result set. Developers and analysts create materialized views after analyzing their workloads to determine which queries would benefit, and whether the maintenance cost of each materialized view is worthwhile. As workloads grow or change, these materialized views must be reviewed to make sure they continue to provide tangible performance benefits.
 
 The Automated Materialized Views (AutoMV) feature in Redshift enhances query performance by automatically creating and managing materialized views based on workload monitoring and machine learning algorithms. The following includes key features of AutoMV:
 + *Continuous monitoring* – Redshift continuously monitors the workload using machine learning techniques to identify opportunities for performance improvements through the creation of materialized views.
@@ -66,7 +66,3 @@ Following are limitations for working with automated materialized views:
  This video begins with an explanation of materialized views and shows how they improve performance and conserve resources. It then provides an in-depth explanation of automated materialized views with a process-flow animation and a live demonstration.
 
 [![AWS Videos](http://img.youtube.com/vi/-85GSBQOBTA/0.jpg)](http://www.youtube.com/watch?v=-85GSBQOBTA)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

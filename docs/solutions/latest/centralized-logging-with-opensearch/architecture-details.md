@@ -28,7 +28,3 @@ The following AWS services are included in this solution:
 |  [Amazon SQS](https://aws.amazon.com/sqs)  | To receive Amazon S3 Event Notifications and then initiate the Log Processor Lambda to run. |
 |  [Amazon Athena](https://aws.amazon.com/athena)  | To build the Light Engine. |
 |  [AWS Glue](https://aws.amazon.com/glue)  | To build the Light Engine. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Logging with OpenSearch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

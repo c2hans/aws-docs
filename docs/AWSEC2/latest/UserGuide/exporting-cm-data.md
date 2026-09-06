@@ -16,7 +16,3 @@ In the rare case that a data export needs to be redriven due to a data issue, th
 **Topics**
 + [Setting up an Amazon S3 bucket for Capacity Manager data exports](cm-set-up-s3-export.md)
 + [Creating a data export for your Capacity Manager data](create-cm-export.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

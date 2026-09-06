@@ -76,7 +76,3 @@ View details about updates to AWS managed policies for VPC Lattice since this se
 | [VPCLatticeServicesInvokeAccess](#vpc-lattice-services-invoke-access-policy) | VPC Lattice adds a new policy to grant access to invoke Amazon VPC Lattice services. | March 31, 2023 |
 | [AWSVpcLatticeServiceRolePolicy](#service-linked-role-policy) | VPC Lattice adds permissions to its service-linked role to allow VPC Lattice to publish CloudWatch metrics in the AWS/VpcLattice namespace. The AWSVpcLatticeServiceRolePolicy policy includes permission to call the CloudWatch [PutMetricData](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.html) API action. For more information, see [Using service-linked roles for Amazon VPC Lattice](using-service-linked-roles.md). | December 5, 2022 |
 | VPC Lattice started tracking changes | VPC Lattice started tracking changes for its AWS managed policies. | December 5, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

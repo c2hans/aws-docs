@@ -411,7 +411,3 @@ AWS Resilience Hub will not recommend backup as a recovery method if you are not
 AWS Resilience Hub checks RTO and RPO targets defined in the resiliency policy during infrastructure or AZ disruptions. Additionally, AWS Resilience Hub can identify the following in-Region architectures to recover from Infrastructure and AZ disruptions:
 + Secondary standby node instance in a different Availability Zone for Cluster Mode Disabled type of Amazon ElastiCache (Redis OSS) cluster.
 + Secondary standby node instance in a different Availability Zone per every shard for Cluster Mode Enabled type of Amazon ElastiCache (Redis OSS) cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

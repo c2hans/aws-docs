@@ -20,7 +20,3 @@ Before you delete a volume, back up your data or take a snapshot of your critica
 1. For **Actions** choose **Delete volume**. The confirmation dialog box appears.
 
 1. Verify that you want to delete the specified volumes, then type the word *delete* in the confirmation box and choose **Delete**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

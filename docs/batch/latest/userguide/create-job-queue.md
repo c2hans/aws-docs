@@ -16,7 +16,3 @@ You also set priority to the job queue that determines the order that the AWS Ba
 + [Create an Amazon EKS job queue](create-job-queue-eks.md)
 + [Create a SageMaker Training job queue in AWS Batch](create-sagemaker-job-queue.md)
 + [Job queue template](job-queue-template.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ For best results, use Tag Editor in the AWS Management Console. Tag Editor provi
 Charges for Resolver endpoints are allocated per VPC Resolver network interface. You can't tag VPC Resolver network interfaces, so tag-based cost allocation isn't supported for Resolver endpoints. For information about pricing for VPC Resolver, see [Amazon Route 53 pricing](https://aws.amazon.com/route53/pricing/).
 
 You can also apply tags to resources by using the Route 53 API. For more information, see the actions related to tags in the topic [Route 53 API actions by function](https://docs.aws.amazon.com/Route53/latest/APIReference/API-actions-by-function.html) in the *Amazon Route 53 API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

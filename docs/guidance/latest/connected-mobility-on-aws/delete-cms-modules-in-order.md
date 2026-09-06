@@ -40,7 +40,3 @@ cdk destroy cms-<stage>-data-processing --force
 Always destroy the `data-processing` stack last. It provides shared infrastructure (MSK configuration, transform-manifest S3 bucket) that other stacks depend on at runtime.
 
 ![Deleting the stack deletes all resources. You can choose to retain these resources.](http://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aws/images/delete-stack.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

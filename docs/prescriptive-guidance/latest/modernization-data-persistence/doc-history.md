@@ -16,7 +16,3 @@ The following table describes significant changes to this guide.
 | Expanded section | We updated the [CQRS pattern](cqrs-pattern.md) with more information. | November 17, 2023 |
 | Added a link for implementing the saga pattern with Step Functions | We updated the introduction and [Saga pattern](saga-pattern.md) sections with the link to the pattern [Implement the serverless saga pattern by using AWS Step Functions](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/implement-the-serverless-saga-pattern-by-using-aws-step-functions.html) from the AWS Prescriptive Guidance website. | February 23, 2021 |
 | Initial publication | — | January 27, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

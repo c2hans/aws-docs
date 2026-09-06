@@ -95,7 +95,3 @@ The Studio Lab IDE may fail to render when large files are opened, resulting in 
 1. Add `?reset` to the end of the URL, so it is in the `https://xxxxxx.studio.us-east-2.sagemaker.aws/studiolab/default/jupyter/lab?reset` format.
 
 1. Navigate to the updated URL. This resets the saved UI state and makes the Studio Lab IDE responsive.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

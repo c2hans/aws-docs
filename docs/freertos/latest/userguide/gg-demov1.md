@@ -122,7 +122,3 @@ Message from Thing to Greengrass Core: Address of Greengrass Core found! {{12345
    Where "Source" is the name given to the AWS IoT thing created in the AWS IoT console when you registered your board - "TIGG1" in the example given here.
 
 1. Start a deployment of your AWS IoT Greengrass group and make sure that the deployment is successful. You should now be able to successfully run the AWS IoT Greengrass discovery demo.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

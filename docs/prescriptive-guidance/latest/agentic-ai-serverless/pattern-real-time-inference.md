@@ -77,7 +77,3 @@ The edge inference pattern delivers value in the following areas:
 + **Bandwidth savings** – Keeps raw data local and pushes only meaningful events to the cloud
 + **Compliance** – Maintains inference and data locally to comply with regional governance such as General Data Protection Regulation (GDPR) and Health Insurance Portability and Accountability Act of 1996 (HIPAA)
 + **Cost control** – Minimizes cloud resource usage and network traffic where not essential
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

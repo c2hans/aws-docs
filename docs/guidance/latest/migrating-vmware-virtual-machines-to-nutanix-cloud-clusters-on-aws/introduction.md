@@ -24,7 +24,3 @@ The following are the benefits of having Nutanix Cloud Clusters on AWS:
 ●    **  Business continuity**: Use the global infrastructure of AWS for high availability and disaster recovery without the complexity arising from managing a secondary data center or a stand-alone disaster recovery solution.
 
 ●      **Cloud-native services**: Modernize on-premises applications with direct access to AWS services like artificial intelligence, machine learning, analytics, and more to advance your digital initiatives.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Migrating VMWare Virtual Machines to Nutanix Cloud Clusters on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

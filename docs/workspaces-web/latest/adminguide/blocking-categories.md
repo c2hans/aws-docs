@@ -46,7 +46,3 @@ The following categories can be selected. You can select one, many, or all categ
 | Technology & AI | Generative AI | AI and machine learning technology resources. |
 | Technology & AI | Parked Domains | Minimal content domains used for advertising or domain sales. |
 | Technology & AI | Streaming Media and Downloads | Audio/video content platforms including music, videos, and internet radio. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ With Amazon Redshift, you can manage existing datashares to control access to yo
 + [Managing permissions for a datashares in Amazon Redshift](writes-managing-permissions.md)
 + [Removing association of a datashare from data consumers in a different AWS account in Amazon Redshift](writes-disassociating-datashare.md)
 + [Declining a datashare from a different AWS account in Amazon Redshift](writes-declining-datashare.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

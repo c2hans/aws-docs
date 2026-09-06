@@ -30,7 +30,3 @@ You can only have one Lambda wrapper script. If you are currently using one, try
 
 **Note**
 You can only have up to five layers for a Lambda function. If you are already using five layers, see [Apply the CodeGuru Profiler function decorator to your handler function](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/python-lambda-command-line).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

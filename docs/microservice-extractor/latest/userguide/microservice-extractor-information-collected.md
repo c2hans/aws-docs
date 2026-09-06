@@ -22,7 +22,3 @@ When usage data sharing is enabled, Microservice Extractor collects the followin
 Microservice Extractor doesn’t collect proprietary information, such as source code. In case of failure, the tool may collect stack traces to improve product experience.
 
 Microservice Extractor uses the information collected to continuously improve its API replacement suggestions. Microservice Extractor periodically analyzes the collected information and updates its replacement engine so that the Microservice Extractor experience is continuously improved.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

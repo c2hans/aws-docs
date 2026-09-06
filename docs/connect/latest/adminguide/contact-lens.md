@@ -18,7 +18,3 @@ Connect Customer conversational analytics provides contact center analytics and 
 + [Search for completed and in-progress contacts](contact-search.md). You can search for contacts as far back as two years ago.
 + [Monitor live & recorded conversations](monitoring-amazon-connect.md). You can monitor live conversations (both voice and chat) and barge live voice conversations. This is especially helpful for agents in training.
 + [Transfer](transfer-contacts-admin.md), [reschedule](reschedule-contacts-admin.md), or [end](end-contacts-admin.md) in-progress contacts. While on the **Contact details** page, you can manage in-progress contacts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

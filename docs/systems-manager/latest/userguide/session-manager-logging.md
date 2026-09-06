@@ -39,7 +39,3 @@ Refer to the following topics for more information about logging options for Ses
 + [Configuring session logging to disk](session-manager-logging-disk.md)
 + [Adjusting how long the Session Manager temporary log file is stored on disk](session-manager-logging-disk-retention.md)
 + [Disabling Session Manager logging in CloudWatch Logs and Amazon S3](session-manager-enable-and-disable-logging.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

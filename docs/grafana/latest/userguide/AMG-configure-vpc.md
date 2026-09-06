@@ -86,7 +86,3 @@ To change your settings, you can return to the **Network access settings** tab o
 
 **Important**
 Amazon Managed Grafana manages your VPC configuration for you. Do not edit these VPC settings using the Amazon EC2 console or APIs, or the settings will get out of sync.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

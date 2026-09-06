@@ -85,7 +85,3 @@ In this section, you schedule your campaign to be sent immediately after you lau
 Congratulations—you've created your first campaign with Amazon Pinpoint\! Because you're the only member of the segment that you created in [Create a targeted segment](gettingstarted-import-customer-data.md#gettingstarted-import-customer-data-create-targeted-segment), you should receive the message in your inbox within a few seconds.
 
 **Next:** [View campaign analytics](gettingstarted-analytics.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

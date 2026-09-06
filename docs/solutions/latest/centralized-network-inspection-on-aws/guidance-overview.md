@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 |  Know how to plan for quotas for this guidance.  |  [Quotas](quotas.md)  |
 |  Know which AWS Regions support this guidance.  |  [Supported AWS Regions](plan-your-deployment.md#supported-aws-regions)  |
 | Access the source code and optionally use the AWS Cloud Development Kit (AWS CDK) to deploy the guidance. | [GitHub repository](https://github.com/aws-solutions/centralized-network-inspection-on-aws/) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Network Inspection on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

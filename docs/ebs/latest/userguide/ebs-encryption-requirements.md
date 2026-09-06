@@ -77,7 +77,7 @@ Identity-only roles are not used by applications on your instance to access othe
 
 Identity-only roles are subject to [service control policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) (SCPs), and [KMS key policies](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html). If an SCP or KMS key denies the identity-only role access to a KMS key, you may fail to launch EC2 instances with encrypted volumes, or using encrypted AMIs or snapshots.
 
-If you are creating an SCP or key policy that denies access based on network location using the `aws:SourceIp`, `aws:VpcSourceIp`, `aws:SourceVpc`, or `aws:SourceVpce` AWS global condition keys, then you must ensure that these policy statements do not apply to instance-only roles. For example policies, see [Data Perimeter Policy Examples](https://github.com/aws-samples/data-perimeter-policy-examples/tree/main).
+If you are creating an SCP or key policy that denies access based on network location using the `aws:SourceIp`, `aws:VpcSourceIp`, `aws:SourceVpc`, or `aws:SourceVpce` AWS global condition keys, then you must make sure that these policy statements do not apply to instance-only roles. For example policies, see [Data Perimeter Policy Examples](https://github.com/aws-samples/data-perimeter-policy-examples/tree/main).
 
 Identity-only role ARNs use the following format:
 
@@ -90,7 +90,3 @@ When a key grant is issued to an instance, the key grant is issued to the assume
 ```
 arn:{{aws-partition}}:sts::{{account_id}}:assumed-role/aws:ec2-infrastructure/{{instance_id}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

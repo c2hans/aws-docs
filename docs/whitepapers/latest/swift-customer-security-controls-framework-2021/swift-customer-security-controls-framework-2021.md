@@ -35,7 +35,3 @@ Publication date: **July 21, 2021** ([Document Revisions](document-revisions.md)
  This document provides guidance for SWIFT connectivity deployed on the AWS Cloud and is structured on the 7 Requirement sections described in the CSP.
 
  The latest v2022 guidance includes five changes from v2021. Three of the changes—Control 2.9, Control 6.2, and Control 6.3—are out of scope for Cloud Providers according to Appendix G of the CSP. A new advisory control(Control 1.5A) was added. It is nearly identical to Control 1.1 and the guidelines are the same. Finally, the scope of Control 1.2 has been extended to a new architecture type, but there are no changes to the AWS guidance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

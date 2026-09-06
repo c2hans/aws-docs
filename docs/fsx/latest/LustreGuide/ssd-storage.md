@@ -71,7 +71,3 @@ The following example illustrates how storage capacity and disk throughput impac
 A persistent file system with a storage capacity of 4.8 TiB and 50 MBps per TiB of throughput per unit of storage provides an aggregate baseline disk throughput of 240 MBps and a burst disk throughput of 1.152 GBps.
 
 Regardless of file system size, Amazon FSx for Lustre provides consistent, sub-millisecond latencies for file operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

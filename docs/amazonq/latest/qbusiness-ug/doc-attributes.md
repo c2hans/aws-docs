@@ -92,7 +92,3 @@ Document attributes—reserved or custom—can only be the data types that are s
 You can’t change an index field type after it has been created.
 
 For more information on filtering and boosting using document attributes, see [Filtering using document-attributes](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/metadata-filtering.html) and [Boosting using document attributes](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/metadata-boosting.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

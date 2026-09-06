@@ -66,7 +66,3 @@ See [Security](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/
 The sustainability pillar focuses on minimizing the environmental impacts of running cloud workloads. Key topics include a shared responsibility model for sustainability, understanding impact, and maximizing utilization to minimize required resources and reduce downstream impacts.
 
 The main sustainability design principles for DynamoDB include identifying and removing unused DynamoDB resources, and avoiding over-provisioning through the use of on-demand capacity mode or provisioned capacity mode with autoscaling. You can also reduce capacity consumption through efficient querying, and reduce the storage footprint by compressing data and deleting aged-out data through TTL. For more information about these design principles, refer to the [deep dive video](https://youtu.be/fAfYms7u3EE) about the sustainability pillar of the DynamoDB Well-Architected Lens.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

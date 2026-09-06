@@ -53,7 +53,3 @@ AMB Access Bitcoin supports the following Bitcoin JSON-RPCs. Each supported call
   - **JSON-RPC:** [estimatesmartfee](https://developer.bitcoin.org/reference/rpc/estimatesmartfee.html) / **Description:** Estimates the approximate fee per kilobyte required for a transaction to begin confirmation within conf\_target blocks, if possible, and returns the number of blocks for which the estimate is valid. Uses virtual transaction size, as defined in BIP 141 (witness data is discounted).
   - **JSON-RPC:** [validateaddress](https://developer.bitcoin.org/reference/rpc/validateaddress.html) / **Description:** Returns information about the given bitcoin address.
   - **JSON-RPC:** [verifymessage](https://developer.bitcoin.org/reference/rpc/verifymessage.html) / **Description:** Verifies a signed message.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

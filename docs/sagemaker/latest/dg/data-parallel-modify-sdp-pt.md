@@ -46,7 +46,3 @@ For general guidance on writing a PyTorch FSDP training script, see [Advanced Mo
 For general guidance on writing a PyTorch DDP training script, see [Getting started with distributed data parallel](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html) in the PyTorch documentation.
 
 After you have completed adapting your training script, proceed to [Launching distributed training jobs with SMDDP using the SageMaker Python SDK](data-parallel-use-api.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

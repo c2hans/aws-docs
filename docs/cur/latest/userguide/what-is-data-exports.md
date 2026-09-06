@@ -38,7 +38,3 @@ Data Exports includes the following benefits:
 From the **Data Exports** page, you can create new exports, manage existing exports, and create an export that integrates with Amazon QuickSight and deploys a pre-built cost and usage dashboard.
 
 You can also access [AWS Sustainability](https://docs.aws.amazon.com/sustainability/latest/userguide) and the [AWS Usage Report](https://docs.aws.amazon.com/cur/latest/userguide/usage-report.html) from the **Data Exports** page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,7 +38,3 @@ Amazon FSx provides a fully managed highly available and durable file storage so
  Common SAP use cases for Amazon EFS or Amazon FSx include `sapmnt`, transports, interface files, storing backups, and software. Use of Amazon EFS or Amazon FSx can provide cost benefits over deploying your own highly available NFS solution.
 +  AWS Documentation: [Amazon EFS](https://aws.amazon.com/efs/)
 +  AWS Documentation: [Amazon FSx](https://aws.amazon.com/fsx/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

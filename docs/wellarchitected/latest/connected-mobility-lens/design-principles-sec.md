@@ -26,7 +26,3 @@ Confirm that backend systems in the cloud are also resilient and able to recover
  **Define a vehicle and system threat model:** implement threat modeling to identify potential security risks and vulnerabilities in the system (vehicle, vehicle related infrastructure, applications, backend) and implement appropriate security controls to mitigate these risks. Confirm that you follow automotive threat modeling standards such as Threat Analysis and Risk Assessment (TARA) or another methodology to cover in-vehicle threats and measure appropriate risk ratings.
 
  **Train your staff so that they are able to address vehicle security risks and the impact across the organizations:** Deliver a training program that can provide your security team and developers with vehicle cybersecurity and compliance training, cloud security training, and fundamental information technology training. It is important to evaluate program effectiveness and update periodically.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

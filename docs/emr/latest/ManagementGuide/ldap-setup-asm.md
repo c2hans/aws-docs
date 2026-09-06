@@ -35,7 +35,3 @@ Add the following statements to the default EC2 instance profile to allow Amazon
 **Note**
 Your cluster requests will fail if you forget the wildcard `*` character at the end of the secret name when you set Secrets Manager permissions. The wildcard represents the secret versions.
 You should aslo limit the scope of the AWS Secrets Manager policy to only the certificates that your cluster needs to provision instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

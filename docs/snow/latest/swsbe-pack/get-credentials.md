@@ -27,7 +27,3 @@ We recommend that you don't save a copy of the unlock code in the same location 
 Now that you have your credentials, the next step is to download the Snowball Edge client, which is used to unlock the device.
 
 **Next:** [Downloading and installing the Snowball Edge client](download-the-client.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Snow Family Device Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

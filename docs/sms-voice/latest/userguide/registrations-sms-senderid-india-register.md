@@ -39,7 +39,3 @@ If the TM is not found in the **Chain** tab of the DLT portal, your DLT provider
 DLT platforms typically return template IDs before chain approval is complete. You can use these template IDs to begin your AWS End User Messaging SMS registration in parallel while your chain requests are being processed.
 
 If you are new to the India DLT process, ensure you are also meeting the requirements to register your Sender IDs (“Headers”), content templates, and message consent. Each DLT provider is slightly different. Reach out to the respective DLT support teams if you need help with your provider.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

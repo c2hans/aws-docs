@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  [Amazon WorkSpaces Thin Client has received Carbon Trust verification for the product's carbon footprint](https://aws.amazon.com/about-aws/whats-new/2024/08/amazon-workspaces-thin-client-carbon-trust-verification/)
 +  [Github - Cost Optimizer for Amazon WorkSpaces Applications](https://github.com/aws-samples/cost-optimizer-for-amazon-appstream2)
 +  [Cost Optimizer for Amazon WorkSpaces](https://aws.amazon.com/solutions/implementations/cost-optimizer-for-amazon-workspaces/?nc1=h_ls)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ The solution can integrate with the following LLM providers:
    + Supported models: Text to Text models
 
 For the latest model parameters, best practices, and recommended uses, refer to the documentation from the model providers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Generative AI Application Builder on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -69,7 +69,3 @@ If you select this option, you must select an existing IAM role from the dropdow
 **Input IAM role**
 
 If you select this option, you must manually enter the ARN for an existing IAM role. The selected role must have at least the minimum permissions required for the corresponding service. For a description of the permissions required for each service, see [AWS Managed Policies for SageMaker Projects and JumpStart](security-iam-awsmanpol-sc.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

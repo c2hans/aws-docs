@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-work
 | How are your training datasets organized: as individual files, in databases, or using specialized AI data formats? | Small to medium datasets are stored as individual Parquet files in object storage for flexibility. Large datasets are stored in a distributed database (Cassandra) to handle scale. |
 | Do you use any data compression or encoding techniques specifically for generative AI training data? | For tabular data, we use dictionary encoding and bit-packing techniques that are available in Parquet. For images, we use lossy JPEG compression with quality settings optimized for our models. |
 | How do you handle versioning and storage of different iterations of training datasets? What impact does this have on your overall storage needs? | We use a data versioning system (DVC) that is integrated with our ML platform. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

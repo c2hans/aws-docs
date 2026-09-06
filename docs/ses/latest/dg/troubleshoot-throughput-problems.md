@@ -19,7 +19,3 @@ If you are making multiple calls to Amazon SES using the Amazon SES API or the S
 + **Use the Amazon SES mailbox simulator to test your maximum throughput**—To test any changes you may implement, you can use the mailbox simulator. The mailbox simulator can help you to determine your system’s maximum throughput without using up your daily sending quota. For information about the mailbox simulator, see [Using the mailbox simulator manually](send-an-email-from-console.md#send-email-simulator).
 
 If you are accessing Amazon SES through its SMTP interface, see [Amazon SES SMTP issues](troubleshoot-smtp.md) for specific SMTP-related issues that may affect throughput.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

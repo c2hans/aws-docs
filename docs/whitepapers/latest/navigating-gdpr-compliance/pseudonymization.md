@@ -10,7 +10,3 @@ AWS provides several approaches and services to help customers implement pseudon
 For customers requiring more specialized solutions, [AWS Marketplace](https://aws.amazon.com/marketplace) offers various third-party tools such as Protegrity Data Protection Platform, TokenEx Cloud Data Protection, and the Privacera Data Security Platform, which provide advanced data masking, tokenization, and pseudonymization capabilities. These solutions integrate with AWS services and can be deployed across multiple AWS accounts and regions.
 
 When implementing pseudonymization, customers can use [AWS CloudTrail](https://aws.amazon.com/cloudtrail/) for auditing all pseudonymization operations and [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) to securely store and manage the mapping keys or transformation rules required for re-identification.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

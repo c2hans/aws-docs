@@ -11,7 +11,3 @@ By default, all events sent to the `GetEventPrediction` API for evaluation are s
 
 **Important**
 We highly recommend that once you enable *Event ingestion* for an Event type, keep it enabled. Disabling the Event ingestion for the same Event type and then generating predictions might result in inconsistent behavior.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

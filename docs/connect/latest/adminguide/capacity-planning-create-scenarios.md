@@ -72,7 +72,3 @@ When you generate a plan, Connect Customer saves a snapshot of the selected hour
       When you set this target for the Task or Email channel, capacity planning treats the channel as asynchronous. It uses starting backlog projections to estimate headcount. If you set a **Service level** target for the Task or Email channel instead, capacity planning treats the channel as synchronous. For more information, see [Manage starting backlog projections](capacity-planning-backlog-projections.md).
 
    1. To add an optimization target for another channel, choose **Add another goal**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

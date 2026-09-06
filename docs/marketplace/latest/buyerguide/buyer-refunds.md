@@ -122,7 +122,3 @@ Credit memos don't expire. However, they are not always automatically applied to
 Only payer accounts can view credit memos and payment information in the Billing and Cost Management console. If you are a linked account, you receive an email notification when a billing adjustment is processed, but you can't view credit memo details in the console. Your payer account can view and manage credit memos on your behalf.
 
 For more information about refunds related to your AWS Marketplace purchases, see [Refunds and cancellations in AWS Marketplace](https://docs.aws.amazon.com/marketplace/latest/userguide/refunds.html) in the *AWS Marketplace Seller Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

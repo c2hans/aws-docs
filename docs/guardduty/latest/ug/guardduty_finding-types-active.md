@@ -18,6 +18,7 @@ The following pages are categorized by the potentially impacted resource type as
 + [EC2 finding types](guardduty_finding-types-ec2.md)
 + [IAM finding types](guardduty_finding-types-iam.md)
 + [Attack sequence finding types](guardduty-attack-sequence-finding-types.md)
++ [Custom Detection Rules finding types](findings-custom-detection-rules.md)
 + [S3 Protection finding types](guardduty_finding-types-s3.md)
 + [EKS Protection finding types](guardduty-finding-types-eks-audit-logs.md)
 + [Runtime Monitoring finding types](findings-runtime-monitoring.md)
@@ -243,7 +244,3 @@ The following table shows all of the active finding types, grouped by their sour
 | [UnauthorizedAccess:Runtime/MetadataDNSRebind](findings-runtime-monitoring.md#unauthorizedaccess-runtime-metadatadnsrebind) | Instance, EKS cluster, ECS cluster, or container | Runtime Monitoring | High |
 | [UnauthorizedAccess:Runtime/TorClient](findings-runtime-monitoring.md#unauthorizedaccess-runtime-torclient) | Instance, EKS cluster, ECS cluster, or container | Runtime Monitoring | High |
 | [UnauthorizedAccess:Runtime/TorRelay](findings-runtime-monitoring.md#unauthorizedaccess-runtime-torrelay) | Instance, EKS cluster, ECS cluster, or container | Runtime Monitoring | High |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

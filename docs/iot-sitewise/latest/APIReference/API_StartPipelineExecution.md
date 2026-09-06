@@ -28,6 +28,18 @@ Content-type: application/json
          "{{string}}" : "{{string}}"
       }
    },
+   "executionMountOverrides": {
+      "computeNodes": {
+         "{{string}}" : [
+            {
+               "name": "{{string}}",
+               "relativePath": "{{string}}",
+               "source": { ... },
+               "storageType": "{{string}}"
+            }
+         ]
+      }
+   },
    "executionPriority": {{number}}
 }
 ```
@@ -64,6 +76,11 @@ Required: No
  ** [executionEnvironmentVariableOverrides](#API_StartPipelineExecution_RequestSyntax) **   <a name="iotsitewise-StartPipelineExecution-request-executionEnvironmentVariableOverrides"></a>
 Runtime environment variable overrides for the execution. Includes global variables that apply to all compute nodes and computeNodes for per-node overrides. These take the highest priority in the environment variable hierarchy.
 Type: [ExecutionEnvironmentVariables](API_ExecutionEnvironmentVariables.md) object
+Required: No
+
+ ** [executionMountOverrides](#API_StartPipelineExecution_RequestSyntax) **   <a name="iotsitewise-StartPipelineExecution-request-executionMountOverrides"></a>
+Runtime mount overrides for the execution. Overrides are merged by mount name into each listed compute node's task-defined mounts: a matching name replaces the task-defined mount, a new name adds a mount, and task-defined mounts not referenced remain unchanged. Compute nodes not listed use their task-defined mounts as-is.
+Type: [MountOverrides](API_MountOverrides.md) object
 Required: No
 
  ** [executionPriority](#API_StartPipelineExecution_RequestSyntax) **   <a name="iotsitewise-StartPipelineExecution-request-executionPriority"></a>
@@ -150,7 +167,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotsitewise-2019-12-02/StartPipelineExecution)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/iotsitewise-2019-12-02/StartPipelineExecution)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotsitewise-2019-12-02/StartPipelineExecution)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

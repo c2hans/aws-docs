@@ -70,7 +70,3 @@ PREFIX hint: <http://aws.amazon.com/neptune/vocab/v01/QueryHints#>
 | hint:Query | [useDFE](sparql-query-hints-useDFE.md) | Use of the DFE is enabled (or disabled) for the entire query. |
 | hint:Group | [joinOrder](sparql-query-hints-joinOrder.md) | The query hint applies to the top-level elements in the specified group, but not to nested elements (such as subqueries) or parent elements. |
 | hint:SubQuery | [evaluationStrategy](sparql-query-hints-evaluationStrategy.md) | The hint is specified and applied to a nested SELECT subquery. The subquery is evaluated independently, without considering solutions computed before the subquery. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,7 +60,3 @@ By default, if you add multiple tags in the annotation query, Amazon Managed Gra
 + [Annotations using Prometheus](https://docs.aws.amazon.com/en_us/grafana/latest/userguide/using-prometheus-datasource.html#p-annotations)
 + [Annotations using MySQL](https://docs.aws.amazon.com/en_us/grafana/latest/userguide/using-mysql-in-AMG.html#mysql-annotations)
 + [Annotations using PostgreSQL](https://docs.aws.amazon.com/en_us/grafana/latest/userguide/using-postgresql-in-AMG.html#postgresql-annotations)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

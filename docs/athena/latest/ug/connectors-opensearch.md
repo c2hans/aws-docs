@@ -249,7 +249,3 @@ SELECT * FROM TABLE(
 <a name="connectors-opensearch-additional-resources"></a>
 + For an article on using the Amazon Athena OpenSearch connector to query data in Amazon OpenSearch Service and Amazon S3 in a single query, see [Query data in Amazon OpenSearch Service using SQL from Amazon Athena](https://aws.amazon.com/blogs/big-data/query-data-in-amazon-opensearch-service-using-sql-from-amazon-athena/) in the *AWS Big Data Blog*.
 + For additional information about this connector, visit [the corresponding site](https://github.com/awslabs/aws-athena-query-federation/tree/master/athena-elasticsearch) on GitHub.com.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

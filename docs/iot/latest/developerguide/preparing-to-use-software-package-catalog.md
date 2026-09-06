@@ -206,7 +206,3 @@ Before you delete a software package, do the following:
 + Delete all the associated versions first. If one of the versions is designated as the **default version**, you must remove the named default version from the package. Because designating a default version is optional, there is no conflict removing it. To remove the default version from the software package, edit the package through the console or use the [ UpdatePackageVersion](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdatePackageVersion.html) API operation.
 
 As long as there is no named default package version, you can use the console to delete a software package and all of its package versions will also be deleted. If you use an API call to delete software packages, you must delete the package versions first and then the software package.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

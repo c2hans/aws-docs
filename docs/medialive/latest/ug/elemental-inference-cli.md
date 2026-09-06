@@ -18,7 +18,3 @@ We assume that you have read the sections about setting up individual Elemental 
 + [Viewing features using the AWS CLI](smart-crop-cli-view.md)
 + [Disabling some Elemental Inference features in a channel](smart-crop-disable-some.md)
 + [Disabling all Elemental Inference features in a channel](smart-crop-disable-all.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

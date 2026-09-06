@@ -73,7 +73,3 @@ The following table describes important changes in each release of the *AWS Stor
 | New AWS Region | Storage Gateway is now available in the Europe (London) Region. For detailed information, see [AWS Regions that support Storage Gateway](available-regions-intro.md). | December 13, 2016 |
 | New AWS Region | Storage Gateway is now available in the Canada (Central) Region. For detailed information, see [AWS Regions that support Storage Gateway](available-regions-intro.md). | December 08, 2016 |
 | Support for File Gateway | In addition to Volume Gateways and Tape Gateway, Storage Gateway now provides File Gateway. File Gateway combines a service and virtual software appliance, allowing you to store and retrieve objects in Amazon S3 using industry-standard file protocols such as Network File System (NFS). The gateway provides access to objects in Amazon S3 as files on an NFS mount point. | November 29, 2016 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

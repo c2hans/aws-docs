@@ -55,7 +55,3 @@ After you create an Amazon S3 bucket and folder to contain the job, run your job
 1. Choose **Output** to access the Amazon S3 console. Choose your S3 bucket, and then choose the` databrew-output` folder to access the job output.
 
 1. (Optional) Choose **Download** to download the file and view its contents.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

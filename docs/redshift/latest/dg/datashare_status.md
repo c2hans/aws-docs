@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/datashare_status.html
 # Datashare status values in Amazon Redshift
 <a name="datashare_status"></a>
 
-With Amazon Redshift, you can securely share live data across Amazon Redshift clusters without having to copy or transfer data. Datashares for Amazon Redshift enables you to share live query results, including updates to the source data, with any Amazon Redshift cluster in the same or different AWS accounts and AWS Regions. This topic describes the possible statuses that datashares can have in Amazon Redshift.
+With Amazon Redshift, you can securely share live data across Amazon Redshift clusters without having to copy or transfer data. With datashares for Amazon Redshift, you can share live query results, including updates to the source data, with any Amazon Redshift cluster in the same or different AWS accounts and AWS Regions. This topic describes the possible statuses that datashares can have in Amazon Redshift.
 
 With cross-account datashares, there are different statuses of datashares that require your actions. Your datashare can have a status of active, action required, or inactive.
 
@@ -24,7 +24,3 @@ Following describes each datashare status and its required action:
   The datashare status becomes **Action required** on the consumer cluster if all associations are removed. The consumer administrator can reassociate a datashare with data consumers when the datashare is available to the consumers.
 + When a consumer administrator declines a datashare, the datashare status on the producer cluster becomes **Action required** and **Declined** on the consumer cluster. The producer administrator can reauthorize the datashare. There isn't any action for the consumer administrator.
 + When the producer administrator removes authorization from a datashare, the datashare's status becomes **Action required** on the producer cluster. The producer administrator can choose to reauthorize the datashare, if necessary. There isn't any action required for the consumer administrator.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

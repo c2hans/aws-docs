@@ -28,7 +28,3 @@ Following are example questions about email sending that you can ask Amazon Q:
 + How is my deliverability for emails sent to Yahoo?
 + Do you have any recommendations to improve my sending?
 + Tell me if there have been any recent events where my deliverability performance suddenly improved or worsened.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

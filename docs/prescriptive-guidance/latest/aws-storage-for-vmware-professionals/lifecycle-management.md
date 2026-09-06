@@ -17,7 +17,3 @@ Storage lifecycle management is an aspect of both VMware and AWS environments th
 | Backing up | Uses VM snapshots and third-party solutions for comprehensive backups. | Offers native backups through EBS snapshots, S3 versioning, and AWS Backup for centralized management across services. |
 | Scaling | Scaling requires manual datastore expansion and potential downtime. | Provides automatic scaling (S3, EFS) and elastic EBS volumes without instance interruption. |
 | Decommissioning | Requires manual resource cleanup and space reclamation. | Offers automated resource deletion through lifecycle policies and retention rules. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

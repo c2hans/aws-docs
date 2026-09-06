@@ -39,7 +39,3 @@ If you use version 1.41.0 of the EFA installer, the `aws-ofi-nccl plugin` comes 
 We also recommend that you configure the instance to not use deeper C-states. For more information, see [High performance and low latency by limiting deeper C-states](https://docs.aws.amazon.com/linux/al2/ug/processor_state_control.html#c-states) in the *Amazon Linux 2 User Guide*. The latest AWS Deep Learning Base GPU AMIs are preconfigured to not use deeper C-states.
 
 For networking and Elastic Fabric Adapter (EFA) configuration see [Maximize network bandwidth on Amazon EC2 instances with multiple network cards](efa-acc-inst-types.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/cisco-webex-vidca
 # Cisco Webex Video Messaging integration
 <a name="cisco-webex-vidcast-integration"></a>
 
-With the Cisco Webex Video Messaging action connector, you can manage video updates, retrieve transcripts, and access video metadata from Cisco Webex (formerly known as Vidcast) directly in Amazon Quick through natural language.
+With the Cisco Webex Video Messaging connector, you can manage video updates, retrieve transcripts, and access video metadata from Cisco Webex (formerly known as Vidcast) directly in Amazon Quick through natural language.
 
 Amazon Quick supports multiple authentication methods for Cisco Webex Video Messaging. Choose the method that best fits your organization's security requirements.
 + **Custom OAuth app** – Uses a customer-managed application registered in the Webex Developer portal. This option gives your organization full control over the OAuth configuration.
@@ -88,7 +88,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Sign-in fails (Custom OAuth app)** – Verify that your Cisco Webex account is active and that you can sign in to Webex directly. Confirm that the redirect URI in your Webex Developer portal integration matches the Amazon Quick callback URL.
 + **Invalid client credentials** – Verify that the Client ID and Client secret match the values in your Webex Developer portal integration or Service App.
 + **API Key authentication fails** – Verify that the API key has not been revoked and that it has the required scopes for Webex Video Messaging operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

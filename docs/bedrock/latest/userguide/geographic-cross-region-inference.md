@@ -63,15 +63,19 @@ The first statement grants `bedrock:InvokeModel` API access to the Geographic cr
 ## Service Control Policy requirements for Geographic cross-Region inference
 <a name="geographic-cris-scp-setup"></a>
 
-Many organizations implement Regional access controls through Service Control Policies in AWS Organizations for security and compliance. If your organization's security policy uses SCPs to block unused Regions, you must ensure that your Region-specific SCP conditions allow access to all destination Regions listed in the Geographic cross-Region inference profile for your source Region.
+Many organizations implement Regional access controls through Service Control Policies in AWS Organizations for security and compliance. If your organization's security policy uses SCPs to block unused Regions, you must either allow access to all destination Regions listed in the Geographic cross-Region inference profile for your source Region or add an inference-profile exception as described in the following note.
 
-For Geographic cross-Region inference, you need to understand the relationship between your source Region (where you make the API call) and the destination Regions (where requests can be routed). Check the inference profile documentation to identify all destination Regions for your source Region, then ensure your SCPs allow access to all those destination Regions.
+If you use a Region allowlist without an inference-profile exception, you need to understand the relationship between your source Region (where you make the API call) and the destination Regions (where requests can be routed). Check the inference profile documentation to identify all destination Regions for your source Region, then ensure your SCPs allow access to all those destination Regions.
 
-For example, if you're calling from us-east-1 (source Region) using the US Anthropic Claude Sonnet 4.5 Geographic profile, requests can be routed to us-east-1, us-east-2, and us-west-2 (destination Regions). If an SCP restricts access to only us-east-1, cross-Region inference will fail when trying to route to us-east-2 or us-west-2. Therefore, you need to allow all three destination regions in your SCP, regardless of which Region you're calling from.
+For example, if you're calling from us-east-1 (source Region) using the US Anthropic Claude Sonnet 4.5 Geographic profile, requests can be routed to us-east-1, us-east-2, and us-west-2 (destination Regions). If an SCP restricts access to only us-east-1 and doesn't include an inference-profile exception, cross-Region inference will fail when trying to route to us-east-2 or us-west-2. To use the profile, either allow all three destination Regions in your SCP or add an inference-profile exception.
 
-When configuring SCPs for Region exclusion, remember that blocking any destination Region in the inference profile will prevent cross-Region inference from functioning properly, even if your source Region remains accessible. For SCP requirements for Global cross-Region inference, see [Service Control Policy requirements for Global cross-Region inference](global-cross-region-inference.md#global-cris-scp-setup).
+When configuring SCPs for Region exclusion, remember that blocking a destination Region without an inference-profile exception will prevent cross-Region inference from functioning properly, even if your source Region remains accessible. For SCP requirements for Global cross-Region inference, see [Service Control Policy requirements for Global cross-Region inference](global-cross-region-inference.md#global-cris-scp-setup).
 
-To improve security, consider using the `bedrock:InferenceProfileArn` condition to limit access to specific inference profiles. With this condition, you can grant access to the required Regions while restricting which inference profiles can be used.
+**Note**
+When a request uses a Geographic cross-Region inference profile, Amazon Bedrock evaluates authorization for the inference profile resource, the foundation model in the source Region, and the foundation model in each candidate destination Region. The `bedrock:InferenceProfileArn` condition key is populated for the foundation model resource evaluations, but not for the inference profile resource evaluation.
+Because the foundation model resource evaluations carry the destination Regions, you can use `bedrock:InferenceProfileArn` in a Region-deny SCP to exempt cross-Region routing without adding those destination Regions to the Region allowlist for other services and actions. This exemption can't bypass the Region restriction on the originating call. The inference profile resource evaluation carries the source Region and doesn't include `bedrock:InferenceProfileArn`.
+
+To improve security, consider using the `bedrock:InferenceProfileArn` condition to limit the exception to specific inference profiles.
 
 ## Use Geographic cross-Region inference
 <a name="geographic-cris-usage"></a>
@@ -90,7 +94,3 @@ To learn how to use an inference profile to send model invocation requests acros
 To learn more about cross-Region inference, see [Getting started with cross-Region inference in Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/getting-started-with-cross-region-inference-in-amazon-bedrock/).
 
 For detailed information about global cross-Region inference, including IAM setup and service quota management, see [Global cross-Region inference](global-cross-region-inference.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

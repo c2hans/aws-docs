@@ -33,7 +33,7 @@ SHOW COLUMNS FROM TABLE database_name.schema_name.table_name [LIKE 'filter_patte
 
  *database\_name*
 The name of the database that contains the tables to list.
-To show tables in an AWS Glue Data Catalog, specify (`awsdatacatalog`) as the database name, and ensure the system configuration `data_catalog_auto_mount` is set to `true`. For more information, see [ALTER SYSTEM](r_ALTER_SYSTEM.md).
+To show tables in an AWS Glue Data Catalog, specify (`awsdatacatalog`) as the database name, and make sure the system configuration `data_catalog_auto_mount` is set to `true`. For more information, see [ALTER SYSTEM](r_ALTER_SYSTEM.md).
 
  *schema\_name*
 The name of the schema that contains the tables to list.
@@ -78,7 +78,3 @@ SHOW COLUMNS FROM TABLE second_db.public.t22;
  second_db     | public      | t22        | col3        |                3 |                | YES         | timestamp without time zone |                          |                   |               |         |               |        0 |          | raw      |
  second_db     | public      | t22        | col4        |                4 |                | YES         | numeric                     |                          |                10 |             2 |         |               |        0 |          | az64     |
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

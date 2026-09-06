@@ -77,7 +77,3 @@ This integration supports OCSF schema version v1.5.0 and Jamf Pro events that ma
 
 **Note**
 Events that do not match any OCSF event classes listed above – such as custom or newly introduced Jamf Pro event types that have not yet been mapped – are automatically passed through and sent directly to the configured sink in their original format without additional processing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -153,7 +153,3 @@ Now that you've created an administrative user in IAM Identity Center, you can:
 You can assign multiple permission sets to the same user. To follow the best practice of applying least-privilege permissions, after you create your administrative user, create a more restrictive permission set and assign it to the same user. That way, you can access your AWS account with only the permissions that you require, rather than administrative permissions.
 
 After your users [ accept their invitation](howtoactivateaccount.md) to activate their account and they sign into the AWS access portal, the only items that appear in the portal are for the AWS accounts, roles, and applications to which they are assigned.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ If you have not already connected the AWS account that will be the specified bil
 
 **Important**
 Dev Environments aren't available for users in spaces where Active Directory is used as the identity provider. When planning a space where the identity provider will be Active Directory, note that users will not be able to use Dev Environments. For more information, see [I can't create a Dev Environment when I'm signed into CodeCatalyst using a single sign-on account](https://docs.aws.amazon.com/codecatalyst/latest/userguide/devenvironments-troubleshooting.html#troubleshoot-create-dev-env-idprovider).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

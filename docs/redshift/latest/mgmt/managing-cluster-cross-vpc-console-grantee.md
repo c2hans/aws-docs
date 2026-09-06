@@ -28,7 +28,3 @@ If you own a cluster or workgroup, or you have been granted access to manage it,
 1. Choose **Create endpoint** to create the endpoint.
 
 After your endpoint is created, you can access the cluster or workgroup through the URL shown in **Endpoint** URL in the configuration settings for your Redshift-managed VPC endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,7 +39,3 @@ When you set up your FinSpace VPC connection, you can optionally configure this 
 + [Managing a FinSpace VPC connection](manage-vpc.md)
 + [Validating your VPC connection](vpc-validation.md)
 + [Monitoring IP traffic](monitoring-ip-traffic.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

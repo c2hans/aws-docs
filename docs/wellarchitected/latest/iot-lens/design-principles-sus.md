@@ -32,7 +32,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/design-p
 + [Use gateways to offload and pre-process your data at the edge](use-gateways-to-offload-and-pre-process-your-data-at-the-edge.md)
 + [Perform analytics at the edge](perform-analytics-at-the-edge.md)
 + [Monitor and manage your fleet operations to maximize sustainability](monitor-and-manage-your-fleet-operations-to-maximize-sustainability.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

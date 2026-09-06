@@ -39,7 +39,3 @@ For the hot tier, all relevant data stays in memory. You must have an Amazon EC2
 | Hot | Amazon EC2 instances certified for SAP HANA | Amazon EC2 instances certified for SAP HANA | Amazon EC2 instances certified for SAP HANA |
 | Warm | SAP HANA dynamic tiering<br />SAP HANA extension node<br />SAP HANA native storage extension | SAP HANA extension node<br />SAP HANA native storage extension for data tiering optimization (DTO) | Data aging<br />SAP HANA native storage extension |
 | Cold | Data Lifecycle Manager (DLM) with SAP Data Hub and Amazon S3<br />SAP Data Intelligence and Data Warehousing Foundation DLM with SAP HANA Spark Controller | SAP BW NLS with SAP IQ<br />SAP BW NLS with Hadoop and Amazon S3<br />SAP BW/4 HANA Data Tiering Optimization (DTO) with SAP Data Hub and Amazon S3 | ILM Store with SAP IQ<br />Data archiving and Amazon S3 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

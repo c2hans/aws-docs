@@ -8029,7 +8029,3 @@ To learn more about AWS security groups and creating security groups, see [ Secu
 To better understand general AWS security, see [ Best Practices for Security, Identity, & Compliance](https://aws.amazon.com/architecture/security-identity-compliance/).
 
 Once the security group is created, use [Security Group \| Associate](https://docs.aws.amazon.com/managedservices/latest/ctref/management-advanced-security-group-associate.html) to associate the security group with your AMS resources. In order to delete a security group, it must have associated resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ You can use the CloudWatch console to see which of your dashboards are currently
 1. To see which users a dashboard is being shared with, choose the dashboard name, and then choose **Actions**, **Share dashboard**.
 
    The **Share dashboard {{dashboard name}}** page displays how the dashboard is being shared. If you want, you can stop sharing the dashboard by choosing **Stop sharing**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

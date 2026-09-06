@@ -59,7 +59,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost_ma
  **Related examples:**
 +  [Monitor, Track and Analyze for cost optimization](https://aws.amazon.com/aws-cost-management/aws-cost-optimization/monitor-track-and-analyze/)
 +  [Searching and analyzing logs in CloudWatch](https://docs.aws.amazon.com/prescriptive-guidance/latest/implementing-logging-monitoring-cloudwatch/cloudwatch-search-analysis.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ After you've completed all of the prerequisite tasks, open the License Manager c
 1. Enter the required text to confirm that you want to remove the directory and choose **Remove**.
 
 After you choose **Remove**, the **AWS Managed Microsoft AD** section on the **Settings** page displays your **Directory ID** with the **Status** of **Configuring**. Once the configuration process is complete, the directory is removed from the **AWS Managed Microsoft AD** section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

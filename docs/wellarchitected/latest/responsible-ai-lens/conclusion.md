@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
  Recognizing the evolving nature of responsible AI, the lens is adaptable. Teams can customize these practices to their specific contexts while adhering to fundamental principles. This flexibility, combined with a commitment to early adoption and ongoing learning, supports the development of AI systems that are both powerful and trustworthy.
 
  As the field of AI continues to advance, this Lens serves as a foundation for implementing systems that deliver value while maintaining appropriate safeguards. Regular updates will incorporate new insights and emerging standards to maintain relevance in a rapidly changing landscape.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

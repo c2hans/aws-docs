@@ -68,7 +68,3 @@ $ aws kms get-key-rotation-status --key-id {{1234abcd-12ab-34cd-56ef-1234567890a
     "NextRotationDate": "2024-02-14T18:14:33.587000+00:00"
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

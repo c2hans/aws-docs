@@ -17,7 +17,3 @@ The DynamoDB Enhanced Client API also includes the [Enhanced Document API](https
 + [Use extensions to customize DynamoDB Enhanced Client operations](ddb-en-client-extensions.md)
 + [Use the DynamoDB Enhanced Client API asynchronously](ddb-en-client-async.md)
 + [Data class annotations](ddb-en-client-anno-index.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ Your AWS account has the following quotas related to IAM Roles Anywhere and each
 <a name="throttling"></a>
 
 Workloads obtain session credentials by using an endpoint that does not use AWS authenticated principals, which would typically be used to limit the rate of operations. IAM Roles Anywhere will limit the rate of calls to the credential endpoint by the authenticating certificate information and IP address (including VPC Endpoint, if applicable).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

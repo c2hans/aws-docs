@@ -94,7 +94,3 @@ The Amazon Resource Name (ARN) of a resource (dataset) that the ruleset is assoc
 When you pass the logical ID of this resource to the intrinsic `Ref` function, Ref returns the resource name. For example, `{ "Ref": "myRuleset" }`.
 
 For an AWS Glue DataBrew ruleset named `myRuleset`, `Ref` returns the name of the ruleset.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

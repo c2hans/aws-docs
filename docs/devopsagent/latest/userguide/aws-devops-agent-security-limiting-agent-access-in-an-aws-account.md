@@ -76,7 +76,7 @@ The following table lists the additional permissions the guardrail supports beyo
 
 | Service | Actions | Use case |
 | --- | --- | --- |
-| Amazon Athena | athena:StartQueryExecution, athena:StopQueryExecution | Run Athena queries against your data catalog |
+| Amazon Athena | athena:StartQueryExecution, athena:StopQueryExecution | Run Athena queries against your data catalog. The workgroup must use managed query results because the agent lacks s3:PutObject permissions. See [Managed query results](https://docs.aws.amazon.com/athena/latest/ug/managed-results.html). |
 | AWS KMS | kms:Decrypt | Decrypt encrypted resources such as S3 objects |
 
 **Note:** This list might expand over time as new capabilities are added to AWS DevOps Agent. The guardrail blocks any permissions not listed here or in the `AIDevOpsAgentAccessPolicy` and `ReadOnlyAccess` managed policies.
@@ -253,7 +253,3 @@ From the DevOps Agent console in the AWS Management Console...
 + **Grant only read-only permissions** – Avoid permissions that allow resource modification or deletion
 + **Use resource-level permissions when possible** – Restrict access to specific resources using ARN patterns or tags
 + **Regularly review and audit permissions** – Periodically review the agent's IAM policies to ensure they still align with your security requirements
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -92,7 +92,3 @@ Steps 1 and 2 can be replicated using a AWS CloudFormation template. For more in
    ```
 
 1.  Create local queue `Q1` on **AMQ\_ORANGE** and `Q2` on **AMQ\_APPLE** as shown in the following: ![ActiveMQ console showing Queues page with one queue named Q1 having zero pending messages.](http://docs.aws.amazon.com/amazon-mq/latest/migration-guide/images/ibm-replatform-fig-3.PNG) ![ActiveMQ Queues page showing queue Q2 with zero pending messages, consumers, and enqueued messages.](http://docs.aws.amazon.com/amazon-mq/latest/migration-guide/images/ibm-replatform-fig-4.PNG)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -94,7 +94,3 @@ The following table describes where your inference requests are processed based 
 | Southeast Asia — Asia Pacific (Singapore) – `ap-southeast-1`  | Any commercial AWS Region | Any commercial AWS Region |
 
 Cross-Region inference is always enabled and cannot be opted out of. Cross-Region inference is not impacted by customer policies in Service Control Policies (SCPs) or AWS Control Tower that restrict customer content to specific Regions. For more information about how AWS Security Agent protects your data during cross-Region processing, see [Cross-Region data processing](data-protection.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

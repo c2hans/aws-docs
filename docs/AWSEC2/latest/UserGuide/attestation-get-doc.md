@@ -47,7 +47,3 @@ Use the following command and optional parameters:
 ```
 
 For a complete example that shows how to generate an RSA key pair, and how to request an attestation with the public key, see the [nitro-tpm-attest GitHub repo](https://github.com/aws/NitroTPM-Tools/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

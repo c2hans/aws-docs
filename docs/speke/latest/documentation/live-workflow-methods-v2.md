@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/speke/latest/documentation/live-workflow-methods-v2.html
 ---
 
-# SPEKE API v2 - Live workflow method call examples
+# SPEKE API v2.0 - Live workflow method call examples
 <a name="live-workflow-methods-v2"></a>
 
  *Request Syntax Example*
@@ -187,7 +187,3 @@ The following example shows a typical response payload from the DRM key provider
 	</cpix:ContentKeyUsageRuleList>
 </cpix:CPIX>
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Packager and Encoder Key Exchange API Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query speke` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

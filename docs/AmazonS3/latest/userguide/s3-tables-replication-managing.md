@@ -89,7 +89,3 @@ Replication can have three possible statuses for each destination:
 + **FAILED** – The last replication job for this table failed. No new updates are being replicated.
 
 If a destination shows a FAILED status, check the `failureMessage` field for details. Common causes include insufficient permissions, destination bucket not found, or KMS key issues. After you fix the root cause, the service automatically retries replication. You can monitor recovery as the status transitions from FAILED to PENDING to COMPLETED.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

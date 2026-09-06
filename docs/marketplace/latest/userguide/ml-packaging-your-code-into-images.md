@@ -27,7 +27,3 @@ Machine learning products in AWS Marketplace use Amazon SageMaker AI to create a
  For security purposes, when a buyer subscribes to your containerized product, the Docker containers run in an isolated environment without an internet connection. When you create your containers, don't rely on outgoing calls over the internet because they will fail. Calls to AWS services will also fail. For more information, see the [Security and intellectual property with Amazon SageMaker AI](ml-security-and-intellectual-property.md) section.
 
  Optionally, when creating your inference and training images, use a container from [Available Deep Learning Containers Images](https://aws.amazon.com/releasenotes/available-deep-learning-containers-images/) as a starting point. The images are already properly packaged with different machine learning frameworks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

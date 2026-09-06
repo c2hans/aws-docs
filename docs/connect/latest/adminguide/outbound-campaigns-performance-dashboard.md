@@ -256,7 +256,3 @@ The following limitations apply to the Outbound campaigns performance dashboard:
 + Tag-based access controls are not currently supported by the dashboard. You can restrict access through the Dashboard permissions pertaining to a security profile.
 + Data for this dashboard is available starting from June 25, 2024 0:00:00 GMT for the Telephony delivery mode, November 6, 2024 0:00:00 GMT for the Email and SMS delivery modes, December 2, 2025 0:00:00 GMT for the WhatsApp delivery mode, and May 28, 2026 0:00:00 GMT for the web notification delivery mode. This might impact dashboard functionalities such as monthly benchmarks where data won't be available before these dates for comparison.
 + Saved reports before November 6, 2024 0:00:00 GMT could contain stale data due to newly added feature enhancements. To make sure you have accurate data from the latest features, we recommend replacing any saved dashboards with the most recent version of the Outbound campaigns performance dashboard.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

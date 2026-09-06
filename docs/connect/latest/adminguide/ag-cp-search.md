@@ -17,7 +17,3 @@ Even when you're not on a contact you can search customer profiles. This is help
 **Tip**
 You can enter a search term without having to select an attribute for phone number, name, email, Account ID, or profile ID. The agent workspace will automatically detect the values type and run a search for matching profiles.
 Searching for Profiles in the agent workspace will return profiles that match your exact search value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

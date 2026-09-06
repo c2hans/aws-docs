@@ -16,7 +16,3 @@ This section provides information about migration tasks that might apply to you,
 + [Migrating to version 3.5](net-dg-v35.md)
 + [Migrating to version 3.7](net-dg-v37.md)
 + [Migrating from .NET Standard 1.3](migration-from-net-standard-1-3.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -83,7 +83,3 @@ Assign the following permissions:
 + **Flow - View** and **Flow modules - View**: Grant users with both of these permissions so they can view flow execution details for voice contacts on the **Contact details** page. For example, which flow was executed and what was the outcome.
 **Note**
 These permissions also grant users with access to the Flows and Flow modules pages on the Connect Customer admin website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

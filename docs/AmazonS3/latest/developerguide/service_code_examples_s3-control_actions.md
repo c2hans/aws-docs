@@ -17,7 +17,3 @@ The following code examples demonstrate how to perform individual Amazon S3 Cont
 + [`PutJobTagging`](s3-control_example_s3-control_PutJobTagging_section.md)
 + [`UpdateJobPriority`](s3-control_example_s3-control_UpdateJobPriority_section.md)
 + [`UpdateJobStatus`](s3-control_example_s3-control_UpdateJobStatus_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ If you're experiencing issues with CORS, check the following:
 + **Validate bucket permissions** – Ensure your bucket has the appropriate permissions configured in addition to CORS. CORS only controls browser-based cross-origin access, not bucket-level permissions.
 
 If you need to remove the CORS configuration from your bucket while you troubleshoot, see [Remove CORS configurations](cors-configuration-cli.md#cors-remove-configuration).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

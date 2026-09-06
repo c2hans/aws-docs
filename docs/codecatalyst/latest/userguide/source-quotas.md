@@ -30,7 +30,3 @@ The following table describes quotas and limits for source repositories in Amazo
 | Repository size | Repository sizes are impacted by the overall storage limits for your space. For more information, see [Pricing](https://codecatalyst.aws/explore/pricing) and [Troubleshooting problems with source repositories](troubleshooting-source.md). |
 | Reviewers for a pull request | Maximum of 100 reviewers total (optional or required) for a pull request. |
 | Written summaries for pull requests | The maximum number of written summaries for pull requests depends on the billing tier for your space. For more information, see [Pricing](https://codecatalyst.aws/explore/pricing). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

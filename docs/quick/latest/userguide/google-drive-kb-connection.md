@@ -71,7 +71,3 @@ For information about sync reports, sync schedules, and verifying document-level
 <a name="google-drive-kb-admin-troubleshooting"></a>
 + **Google API rate limiting** – Google Drive might throttle requests during high usage periods. If syncs fail or are incomplete, retry during off-peak hours.
 + **SSL certificate errors** – If you receive an error about SSL certificate errors when you create your knowledge base, verify the OAuth scopes that you configured during domain-wide delegation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -178,7 +178,10 @@ For more information about building custom interfaces, see the [UI builder](no-c
 
 Control access to table primary values so business users are only allowed view or modify fields that relate to their responsibilities.
 + Security profile permissions provide view, edit, create, and delete choices for managing the data table resource in the Routing section.
-+ Tag-based access control (TBAC) provides record-based restrictions. Use if multiple teams need to access different subsets of data within large, multi-purpose tables.
++ Tag-based access control (TBAC) provides table-level restrictions. It controls which data tables a user can access, based on the tags assigned to each table. TBAC does not restrict access to individual records within a table. For more information, see [Apply tag-based access control in Connect Customer](tag-based-access-control.md).
++ Record-level access control restricts a user to specific records within a table, based on primary attribute values. You configure record-level access control on a security profile, where you select the data table and the primary attribute values that the user can access. Use record-level access control if multiple teams need to access different subsets of data within large, multi-purpose tables.
+**Note**
+Record-level access control relies on the primary attributes of a table. For more information about primary attributes, see the description of **Use as primary attribute** in the steps to create a data table earlier in this topic.
 
 ## Service quotas for data tables
 <a name="service-quotas-for-data-tables"></a>
@@ -199,7 +202,3 @@ On-screen audit history provides recent changes to a resource and its before and
 
 **Note**
 AWS CloudTrail tracks the history of all resource changes. For more information, see [Log Connect Customer API calls with AWS CloudTrail](logging-using-cloudtrail.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

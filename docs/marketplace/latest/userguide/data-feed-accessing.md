@@ -145,7 +145,3 @@ When the AWS Marketplace reports service calls Amazon S3, AWS KMS, or Amazon SNS
 <a name="data-feed-unsubscribing"></a>
 
 Open a web browser and sign in to the [AWS Partner Central](http://aws.amazon.com/marketplace/management/). Then, go to the [Contact us page](https://aws.amazon.com/marketplace/management/contact-us/) to submit an unsubscribe request to the AWS Marketplace Seller Operations team. The unsubscribe request can take up to 10 business days to process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

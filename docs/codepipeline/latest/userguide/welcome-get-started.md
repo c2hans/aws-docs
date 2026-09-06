@@ -14,7 +14,3 @@ To get started with CodePipeline:
 1. **Experiment** with CodePipeline by following the steps in the [CodePipeline tutorials](tutorials.md) tutorials.
 
 1. **Use** CodePipeline for your new or existing projects by following the steps in [Create a pipeline, stages, and actions](pipelines-create.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

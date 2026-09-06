@@ -42,7 +42,3 @@ The following video will give you an introductory look at the backup and restore
 + [Restore a table in DynamoDB](pointintimerecovery_restores.md)
 + [Using AWS Backup with DynamoDB](backuprestore_HowItWorksAWS.md)
 + [Choosing your disaster recovery strategy for Amazon DynamoDB workloads](DynamodbDisasterRecoveryStrategy.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

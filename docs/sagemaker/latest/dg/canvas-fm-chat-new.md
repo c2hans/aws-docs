@@ -24,7 +24,3 @@ To open a chat with a model, do the following:
 Depending on the model, you can perform various tasks. For example, you can enter a passage of text and ask the model to summarize it. Or, you can ask the model to come up with a short summary of the market trends in your domain.
 
 The model’s responses in a chat are based on the context of your previous prompts. If you want to ask a new question in the chat that is unrelated to the previous conversation topic, we recommend that you start a new chat with the model.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

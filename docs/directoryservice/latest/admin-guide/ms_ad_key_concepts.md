@@ -75,7 +75,3 @@ For example, let's say user jsmith logs into an HR application. You want the SQL
 To grant permissions that allow users in AWS Managed Microsoft AD to configure Kerberos constrained delegation, you must add their accounts as a member of the *AWS Delegated Kerberos Delegation Administrators* security group. By default, the Admin account is a member of this group. For more information about Kerberos constrained delegation, see [Kerberos Constrained Delegation Overview](https://technet.microsoft.com/en-us/library/jj553400(v=ws.11).aspx) on the Microsoft TechNet website.
 
 [Resource-based constrained delegation](https://docs.microsoft.com/en-us/windows-server/security/kerberos/kerberos-constrained-delegation-overview#resource-based-constrained-delegation-across-domains) was introduced with Windows Server 2012. It provides the back-end service administrator the ability to configure constrained delegation for the service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

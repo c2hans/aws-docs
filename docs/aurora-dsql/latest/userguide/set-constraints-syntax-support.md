@@ -39,7 +39,3 @@ Aurora DSQL changes the behavior of constraints only within the current transact
 <a name="set-constraints-compatibility"></a>
 
 This command complies with the behavior defined in the SQL standard, with the restriction that Aurora DSQL supports deferral for foreign key constraints only.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

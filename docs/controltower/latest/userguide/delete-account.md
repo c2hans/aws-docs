@@ -28,7 +28,3 @@ We recommend, as a best practice, to unenroll a member account before you close 
 If you do not unenroll the account before you close it, you must delete the account's provisioned product in AWS Service Catalog after those 90 days are finished.
 
 For more information, see the AWS Organizations documentation about the [CloseAccount API](https://docs.aws.amazon.com/organizations/latest/APIReference/API_CloseAccount.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

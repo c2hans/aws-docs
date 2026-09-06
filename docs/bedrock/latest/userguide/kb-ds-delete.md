@@ -38,7 +38,3 @@ To delete a data source from a knowledge base, send a [DeleteDataSource](https:/
 Your data deletion policy for your data source is set to either `DELETE` (deletes all data when you delete your data source, but **doesn't delete the vector store itself**) or `RETAIN` (retains all data when you delete your data source). If you delete a data source or knowledge base, the **vector store itself is not deleted**. If the data source data deletion policy is set to `DELETE`, it's possible for the data source to unsuccessfully complete the process of deletion due to issues with the configuration or access to the vector store. You can view `failureReasons` if the data source status is `DELETE_UNSUCCESSFUL` to see the reason why the data source could not successfully delete.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

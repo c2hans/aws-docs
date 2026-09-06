@@ -39,7 +39,3 @@ The Deadline Cloud monitor also helps you monitor usage and manage costs. For mo
 + [Browsing job attachments in Deadline Cloud](browse-job-attachments.md)
 + [Automate Deadline Cloud monitor desktop deployment and workflows](monitor-automate-desktop.md)
 + [Manage cookie preferences in the Deadline Cloud monitor](monitor-cookie-preferences.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

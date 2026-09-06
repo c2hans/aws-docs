@@ -146,7 +146,3 @@ Once launched, your workers start polling for tasks. Until the decider schedules
 Because polls are outbound requests, activity worker can run on any network that has access to the Amazon SWF endpoint.
 
 You can launch as many activity workers as you like. As the decider schedules activity tasks, Amazon SWF automatically distributes the activity tasks to the polling activity workers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

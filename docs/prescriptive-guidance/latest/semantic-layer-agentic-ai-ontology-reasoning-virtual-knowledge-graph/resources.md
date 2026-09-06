@@ -33,7 +33,3 @@ This AWS Prescriptive Guidance leverages **W3C Semantic Web standards** — incl
 <a name="aws-marketplace-links.9cbf904f-038c-532d-83e0-756e3994e1ec"></a>
 + [**Stardog Enterprise Knowledge Graph Platform**](https://aws.amazon.com/marketplace/pp/prodview-ulfm6fel7xgjq)
 + [**PuppyGraph Professional**](https://aws.amazon.com/marketplace/pp/prodview-dgmn5jnwnfacu?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

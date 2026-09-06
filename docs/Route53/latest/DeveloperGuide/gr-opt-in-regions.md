@@ -16,7 +16,3 @@ When using Route 53 Global Resolver in opt-in Regions, here are some considerati
 + Similarly, if you have selected only a set of opt-in Regions for your Global Resolver and you opt-out your account from all the Regions, it will effectively delete your Global Resolver.
 + You might also select any default or opt-in Region for your Observability Region where your DNS logs will be delivered. If you choose to opt-out your account, the service will stop sending DNS logs to your destinations in that Region. To prevent impairment of log delivery, we recommend setting up a new log delivery destination in a separate Region and update the observability Region in your Global Resolver accordingly.
 + Global Resolver does not support expanding and contracting Regions in your Global Resolver at this time. We recommend you plan ahead which Regions you intend to opt-in and select before creating a Global Resolver.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

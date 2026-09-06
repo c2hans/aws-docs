@@ -20,7 +20,3 @@ When the API Gateway proxy is in place, you can create and deploy the modernized
 ![REST service and its consumer with API Gateway reconfigured to point to the modernized REST API.](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-aspnet-web-services/images/guide-img/5e1df9e0-2643-4e7a-8b08-fc2f99f03ade/images/7c09c7bb-8213-4267-ab61-b5d65550bdc4.png)
 
 If the newly modernized service has an API contract that is different from the legacy proxy contract the consuming systems depend on, you can use the API Gateway data transformation feature. Incoming API requests that are structured using the legacy system's schema can be mapped and transformed to the new service's contract.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -76,7 +76,3 @@ You can't change the amount of storage space assigned to your Dev Environment af
    + **Status**: View your current Dev Environment status, the project it's assigned to, and stop your environment.
    + **Devfile**: View the name and location of the `Devfile` for your Dev Environment. Open your `Devfile` by choosing the **Open in Editor** button.
    + **Compute Settings**: Change the size and default **Timeout Length** for your Dev Environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

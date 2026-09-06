@@ -64,7 +64,3 @@ Upgrading to fully supported versions of Amazon DCV for use on Amazon EC2 is ava
 
 **3. Can I use a version of the Amazon DCV client that has reached its EOSL with a supported Amazon DCV server, or vice versa?**
 Yes, but we strongly recommend that you upgrade both your client and server software to the latest versions as bug fixes are no longer applied to versions that have reached their EOSL.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 +  [ISO/IEC 42001:2023](https://www.iso.org/standard/42001) A.9.3 Objectives for responsible use of AI system
 +  [ISO/IEC 42001:2023](https://www.iso.org/standard/42001) A.6.2.2 AI system requirements and specification
 +  [NIST Artificial Intelligence Risk Management Framework (NIST AI 100-1)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf): MAP1.1, MAP1.3, MAP1.4
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,11 +11,8 @@ Most ISPs that forward email traffic take measures to evaluate whether email is 
 
 **Topics**
 + [Authenticating Email with DKIM in Amazon SES](send-email-authentication-dkim.md)
++ [Authenticating email with S/MIME in Amazon SES](send-email-authentication-smime.md)
 + [Authenticating Email with SPF in Amazon SES](send-email-authentication-spf.md)
 + [Using a custom MAIL FROM domain](mail-from.md)
 + [Complying with DMARC authentication protocol in Amazon SES](send-email-authentication-dmarc.md)
 + [Using BIMI in Amazon SES](send-email-authentication-bimi.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

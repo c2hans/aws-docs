@@ -27,7 +27,3 @@ AI operations (AIOps) services enhance operational capabilities through three ke
 + Automated issue detection and classification
 
 By implementing AIOps on AWS, organizations can achieve more efficient operations, reduced mean time to resolution (MTTR), and improved overall service reliability through data-driven, AI-enhanced operational practices. This modernized approach helps organizations move from reactive to proactive operations management while taking advantage of the robust AI/ML capabilities provided by AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

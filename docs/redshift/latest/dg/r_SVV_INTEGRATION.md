@@ -47,7 +47,3 @@ select * from svv_integration;
 ---------------------------------------+-----------------+--------+-----------------+-------------+-------------------------------------+-------------------------+---------------------+---------------------------+--------------------+-----------------+-----------------
   99108e72-1cfd-414f-8cc0-0216acefac77 |     perfdb      |  MySQL | CdcRefreshState |   56606106  | {"txn_seq":9834,"txn_id":126597515} |            152          |           0         | 2023-09-19 21:05:27.520299|      720           + mysourceetl     | f
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ We also recommend that you review the following resources and AWS services.
 <a name="other-tools-and-services.165d165c-4a74-5278-ac8c-d48e76ae923a"></a>
 + [Apache Kafka](https://kafka.apache.org/)
 + [IBM MQ](https://www.ibm.com/products/mq)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ The following table shows when features and software updates were released for t
 | [Updated managed policies](#panorama-releases) | AWS Identity and Access Management managed policies for AWS Panorama have been updated. For details, see [AWS managed policies](https://docs.aws.amazon.com/panorama/latest/dev/security-iam-awsmanpol.html). | October 20, 2021 |
 | [General availability](#panorama-releases) | AWS Panorama is now available to all customers in the US East (N. Virginia), US West (Oregon), Europe (Ireland), and Canada (Central) Regions. To purchase an AWS Panorama Appliance, visit [AWS Panorama](https://aws.amazon.com/panorama). | October 20, 2021 |
 | [Preview](#panorama-releases) | AWS Panorama is available by invitation in the US East (N. Virginia) and US West (Oregon) Regions. | December 1, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

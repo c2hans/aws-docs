@@ -539,7 +539,7 @@ Atlanta|GA|2008-01-11|268.00|7630.00
 
 UNLOAD outputs null values as empty strings by default. The following examples show how to use NULL AS to substitute a text string for nulls.
 
-For these examples, we add some null values to the VENUE table.
+For these examples, add some null values to the VENUE table.
 
 ```
 update venue set venuestate = NULL
@@ -855,7 +855,3 @@ The `eventsizemanifest` file content is similar to the following.
   ]
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ You can use aggregation functions with the `stats` command and as arguments for 
 1. Choose **Run** to view the query results.
 
    The query results show the number of records in your log group that match the query command and the total count that's grouped by the specified field's value or values.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

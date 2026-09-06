@@ -18,7 +18,3 @@ Implement specific monitoring for your channel assembly and CDN integration:
 For Amazon CloudFront, create a dashboard that integrates CDN metrics with MediaTailor metrics to visualize your entire delivery pipeline using [CloudWatch dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html).
 
 If you're also using SSAI with your channel assembly, see [Monitor CDN operations](ssai-cdn-monitor.md) for additional monitoring recommendations specific to ad insertion.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

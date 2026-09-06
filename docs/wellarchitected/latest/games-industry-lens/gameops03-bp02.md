@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Discover and track key metrics like utilization, services, I/O, processes and such by using system tools such as sar, top, vmstat, sysstat, netstat, and Performance Monitor.
 +  Track your application's performance and behavior using APM tools like AWS X-Ray to isolate issues, identify bottlenecks, and debug production errors.
 +  For critical events like game launches, subscribe to AWS Countdown (IEM) for architectural and operational guidance, on-demand operational support, and to identify risks and plan mitigations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

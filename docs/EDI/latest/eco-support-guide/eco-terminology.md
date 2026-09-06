@@ -37,7 +37,3 @@ ECO uses the following security terms:
 + Detective controls: A library of EDI-created or enabled monitors that provides ongoing oversight of your EDI environment that doesn't align with security, operational, or customer controls. Detective controls notify owners and proactively modify or terminate resources.
 + Service request: A request by you for an action that you want ECO to take on your behalf.
 + Alert notiﬁcation: A notice that ECO posts to your service requests list page when an EDI alert is initiated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Energy Data Insights on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query EDI` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

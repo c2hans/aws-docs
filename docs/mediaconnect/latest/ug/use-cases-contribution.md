@@ -16,7 +16,3 @@ The following illustration shows an on-premises contribution encoder that upload
 The following illustration shows two on-premises contribution encoders, a primary and a backup, that upload the same content to MediaConnect in the AWS Cloud. There are two flows, each with one output. Both outputs point to a single MediaLive channel.
 
 ![This illustration shows two on-premises contribution encoders, a primary and a backup, that upload the same content to MediaConnect in the AWS Cloud. There are two flows, each with one output. Both outputs point to a single MediaLive channel.](http://docs.aws.amazon.com/mediaconnect/latest/ug/images/use-case-contribution2.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

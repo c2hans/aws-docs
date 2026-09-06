@@ -13,7 +13,3 @@ In Amazon SageMaker Canvas, you can explore the variables in your dataset using 
 For more information about visualization techniques in Canvas, see [Explore your data using visualization techniques](canvas-explore-data-visualization.md).
 
 For more information about analytics in Canvas, see [Explore your data using analytics](canvas-explore-data-analytics.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ Specific CUDA version numbers can be found in the [GPU DLAMI release notes](http
 ## Related Topics
 <a name="conda-related"></a>
 + For a tutorial on using a Deep Learning AMI with Conda, see the [Using the Deep Learning AMI with Conda](tutorial-conda.md) tutorial.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

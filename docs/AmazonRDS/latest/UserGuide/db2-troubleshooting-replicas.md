@@ -71,7 +71,3 @@ If replica performance is poor, review the following suggestions:
 For information about modifying resources or instance classes, see [Modifying an Amazon RDS DB instance](Overview.DBInstance.Modifying.md).
 
 For information monitoring replication lag, see [Monitoring replication lag](USER_ReadRepl.Monitoring.md#USER_ReadRepl.Monitoring.Lag) and [Amazon CloudWatch metrics for Amazon RDS](rds-metrics.md). For information about setting up CloudWatch alarms for replica lag, see [Monitoring Amazon RDS metrics with Amazon CloudWatch](monitoring-cloudwatch.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

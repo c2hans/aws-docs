@@ -29,7 +29,3 @@ You can run the following from a command prompt on the instance to open the Acti
 1. For **Enter the object names to select**, type the username you want to add and click **OK**. The name will be displayed in the **Members** list. Click **OK** again to update the group membership.
 
 1. Verify that the user is now a member of the group by selecting the user in the **Users** folder and clicking **Properties** in the **Action** menu to open the properties dialog box. Select the **Member Of** tab. You should see the name of the group in the list of groups that the user belongs to.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

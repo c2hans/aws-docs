@@ -45,7 +45,3 @@ Do not use sensitive names or sensitive plaintext data in your [Primary Key](How
 If you need to use sensitive data in your table or GSI key values, we recommend using end-to-end client encryption. With end-to-end client encryption, you can perform key-value references to your data while making sure that it never appears unencrypted in your DynamoDB related logs. One way to accomplish this is to use the [AWS Database Encryption SDK for DynamoDB](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/client-server-side.html), but that is not required. If you use your own solution, always use a sufficiently secure encryption algorithm. You must not use a non-cryptographic option like a hash, as they are not considered sufficiently secure in most situations.
 If your Primary Key key names are sensitive, we recommend using ``pk`` and ``sk`` instead. This is a general best practice which leaves your Partition Key design flexible.
 Always consult your security experts or AWS account team if you are concerned about what the right choice would be.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

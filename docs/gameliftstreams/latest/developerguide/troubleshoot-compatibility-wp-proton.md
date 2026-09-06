@@ -152,7 +152,3 @@ STEAM_COMPAT_DATA_PATH=/home/test/protonBuild/dist/compatdata STEAM_COMPAT_CLIEN
 ```
 
  Proton also indicates if the issue is due to a Wine plugin, unimplemented function, missing dlls, and so on. For more information, see [Wine HQ's Debugging Wine](https://wiki.winehq.org/Wine_Developers_Guide/Debugging_Wine) guide. If you find a Proton or Wine error in the logs that you can't fix on the application side, reach out to your AWS Account Manager or post a question in [AWS re:Post](https://repost.aws/tags/TAOU7EpUOuTQSSWmIHCfb2fQ/amazon-gamelift-streams) for help with further debugging.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

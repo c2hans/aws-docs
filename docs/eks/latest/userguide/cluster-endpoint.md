@@ -107,7 +107,3 @@ When you configure `kubectl` for your AWS Cloud9 IDE, be sure to use AWS credent
 Choose **Connect** on the cluster details page in the Amazon EKS console. For private clusters, CloudShell launches a VPC environment that can reach your cluster’s private API server endpoint. For more information, see [Connect kubectl to an EKS cluster by creating a kubeconfig file](create-kubeconfig.md).
 
 📝 [Edit this page on GitHub](https://github.com/search?q=repo%3Aawsdocs%2Famazon-eks-user-guide+%5B%23cluster-endpoint%5D&type=code)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

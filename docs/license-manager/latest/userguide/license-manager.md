@@ -62,7 +62,3 @@ Additionally, you can govern the use of licenses purchased from AWS Marketplace,
 License Manager integrates with Amazon RDS for Oracle and Amazon RDS for Db2 vCPU-based BYOL licenses. With this integration, you gain visibility into vCPU usage for your RDS for Oracle and RDS for Db2 DB instances. You can use this data to calculate the number of licenses consumed based on your licensing terms with the database management system vendors. For more information, see the following associated links in the *Amazon RDS User Guide*.
 + [RDS for Oracle licensing options](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Concepts.Licensing.html)
 + [RDS for Db2 licensing options](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-licensing.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

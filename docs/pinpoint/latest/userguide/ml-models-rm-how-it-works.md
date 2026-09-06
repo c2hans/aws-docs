@@ -38,7 +38,3 @@ After your team performs these activities, Amazon Pinpoint does the following ea
    1. Replaces each message variable with the corresponding value of the recommended attribute. If you configured the model to enhance recommendations by using an AWS Lambda function, Amazon Pinpoint uses that function as part of this step.
 
 1. Sends a version of the message that contains the personalized recommendations for each message recipient.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

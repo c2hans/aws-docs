@@ -171,7 +171,3 @@ Hide series when all values of a series from a metric query are of a specific va
 <a name="graph-panel-time-regions"></a>
 
 You can highlight specific time regions on the graph to make it easier to see, for example, weekends, business hours, and off-work hours. All configured time regions refer to UTC time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

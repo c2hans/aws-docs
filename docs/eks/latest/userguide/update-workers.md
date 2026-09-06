@@ -21,7 +21,3 @@ Create a new node group and migrate your Pods to that group. Migrating to a new 
 
  ** [Update an AWS CloudFormation node stack](update-stack.md) **
 Update the AWS CloudFormation stack for an existing node group to use the new AMI. This method isn’t supported for node groups that were created with `eksctl`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

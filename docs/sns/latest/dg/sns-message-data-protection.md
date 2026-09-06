@@ -11,7 +11,3 @@ Amazon SNS message data protection is no longer available to new customers. For 
 + Message Data Protection provides governance, compliance, and auditing services for enterprise applications that are message-centric, so data ingress and egress can be controlled by the Amazon SNS topic owner, and content flows can be tracked and logged.
 + You can write payload-based governance rules to stop unauthorized payload content from entering your message streams.
 + You can grant different content-access permissions to individual subscribers, and audit the entire content-flow process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

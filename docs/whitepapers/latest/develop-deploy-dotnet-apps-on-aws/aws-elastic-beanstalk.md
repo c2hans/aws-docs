@@ -34,7 +34,3 @@ Through integration with [Amazon Route 53](https://aws.amazon.com/route53/), El
 There are no additional costs associated with using Elastic Beanstalk, and you pay only for the underlying resources used to run your application, such as the EC2 instances, load balancers, and any [Amazon Relational Database Service](https://aws.amazon.com/rds/) (Amazon RDS) database instances.
 
 Elastic Beanstalk can help you quickly move your .NET applications to AWS with minimal changes. If you need more control of the underlying infrastructure, using Amazon EC2 virtual machines enables you to fine tune your infrastructure configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

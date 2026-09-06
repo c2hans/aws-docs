@@ -66,7 +66,3 @@ For additional recommendations, see [Amazon GuardDuty](https://docs.aws.amazon.c
 AWS Config is a prerequisite for Firewall Manager and is deployed in AWS accounts, including the Network account and Application account. In addition, use AWS Config Rules to verify that deployed resources are compliant with security best practices. For example, you could use an AWS Config rule to check if every CloudFront distribution is associated with a web ACL, or enforce all CloudFront distributions to be configured to deliver access logs to an S3 bucket.
 
 For general recommendations, see [AWS Config](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/security-tooling.html#tool-config) in the *Security Tooling account* section of the *AWS SRA – core architecture* guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

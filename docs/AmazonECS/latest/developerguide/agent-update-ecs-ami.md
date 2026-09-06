@@ -71,7 +71,3 @@ Agent updates do not apply to Windows container instances. We recommend that you
 1. On the **Cluster : {{name}}** page, choose the **Infrastructure** tab.
 
 1. Under **Container instances**, select the instances to update, and then choose **Actions**, **Update agent**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

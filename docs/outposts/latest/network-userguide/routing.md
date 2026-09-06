@@ -167,7 +167,3 @@ Traffic from the on-premises network with a destination of the instance in the O
 <a name="working-with-route-tables"></a>
 
 You can create a custom route table for your local gateway. The local gateway route table must have an association to a VIF group and a VPC. For step-by-step directions, see [Configure local gateway connectivity](https://docs.aws.amazon.com/outposts/latest/network-userguide/launch-instance.html#configure-lgw-connectivity).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

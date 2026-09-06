@@ -42,7 +42,3 @@ After removing the integration from AWS Security Agent, uninstall the Forge app 
 
 **Important**
 Removing the integration in the AWS Security Agent console does not uninstall the Forge app from your Atlassian site. If you plan to register the same Bitbucket workspace again, you must uninstall the Forge app first. Otherwise, the new installation can get stuck in a pending state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

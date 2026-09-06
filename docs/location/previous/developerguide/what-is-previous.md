@@ -30,7 +30,3 @@ The following topics can help you get started in the documentation, based on wha
 + See the SDKs and tools available to you in the [Develop with Amazon Location](dev-overview.md) chapter.
 + See [code examples and tutorials](samples.md) that you can use in your own apps. You can also visit the Amazon Location demo site [samples page](https://location.aws.com/samples) to find samples, filterable by feature, language, or platform.
 + Get information about Amazon Location APIs in the [ API Reference guide](location-actions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

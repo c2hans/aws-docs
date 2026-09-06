@@ -64,7 +64,3 @@ If you are having issues with your AWS resources, you need technical support. To
 If all your projects and your organization are closed, contact support by filling out the [Support Feedback form](https://support.aws.amazon.com/#/contacts/one-support?formId=contactUs).
 
 In the **Request information** section, under **How can we help you**, include that you are using our new AWS experience and that all your projects are closed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

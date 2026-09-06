@@ -57,7 +57,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/swift-customer-securi
  Amazon GuardDuty (described in the [Logging and monitoring](#logging-and-monitoring) section of this document) can be leveraged to help you meet this control objective. This can not only detect anomalies in the networking traffic that is happening in the VPC, but can also detect suspicious activities on the AWS account level.
 
  [AWS Network Firewall](https://aws.amazon.com/network-firewall/) can also be used to act as a network intrusion prevention system/intrusion detection system (IPS / IDS) within AWS as well as other IPS / IDS offerings from the AWS Marketplace.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

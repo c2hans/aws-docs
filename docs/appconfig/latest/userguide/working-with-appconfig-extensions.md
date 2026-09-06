@@ -18,7 +18,3 @@ You can associate these types of tasks with AWS AppConfig applications, environm
 + [Understanding AWS AppConfig extensions](working-with-appconfig-extensions-about.md)
 + [Working with AWS authored extensions](working-with-appconfig-extensions-about-predefined.md)
 + [Walkthrough: Creating custom AWS AppConfig extensions](working-with-appconfig-extensions-creating-custom.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ The `StartChatContact` API uses AWS Signature Version 4 signing. Call it from yo
 +  [ Connect Customer Chat SDK and Sample Implementations](https://github.com/amazon-connect/amazon-connect-chat-ui-examples/)
 +  [Connect Customer Streams](https://github.com/aws/amazon-connect-streams). Use to integrate your existing apps with Connect Customer. You can embed the Contact Control Panel (CCP) components into your app.
 +  [Enable message streaming for AI-powered chat](message-streaming-ai-chat.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

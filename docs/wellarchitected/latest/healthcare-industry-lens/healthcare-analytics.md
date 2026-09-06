@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 +  Business logic runs on the derived data to generate actionable insights. Late binding approaches for the data schema enable a more agile approach and avoids large, upfront investments in heavy ETL. Results are sent to one or more purpose-built data stores.
 +  Various stakeholders consume the data to glean insights. Data consumers are often diverse, ranging from non-technical reviewers of business intelligence dashboards, to researchers running deep learning algorithms.
 +  Data remains encrypted at-rest and in-transit throughout the entire process. Identity and access controls are enforced so that access to sensitive health data is limited appropriately. All data assets can be recorded in a centralized Data Catalog to promote data discovery and reuse.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

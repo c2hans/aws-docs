@@ -11,7 +11,3 @@ No change to incident response times. Incident resolution is a best effort for r
 
 **Note**
 AMS service level agreement (SLA) does not apply for resources created or updated outside of the AMS change management system (requests for change or RFCs), Developer mode included; therefore, resources updated or created in Developer mode are automatically degraded to a P3 and AMS support is best effort.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

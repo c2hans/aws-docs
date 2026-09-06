@@ -73,7 +73,7 @@ To share data for read purposes as a consumer administrator, perform the followi
    CREATE DATABASE sales_db FROM DATASHARE salesshare OF NAMESPACE '13b8833d-17c6-4f16-8fe4-1a018f5ed00d';
    ```
 
-   If you want more granular control over access to the objects in the local database, use the WITH PERMISSIONS clause when creating the database. This lets you grant object-level permissions for objects in the database in step 4.
+   If you want more granular control over access to the objects in the local database, use the WITH PERMISSIONS clause when creating the database. With this clause, you can grant object-level permissions for objects in the database in step 4.
 
    ```
    CREATE DATABASE sales_db WITH PERMISSIONS FROM DATASHARE salesshare OF NAMESPACE '13b8833d-17c6-4f16-8fe4-1a018f5ed00d';
@@ -86,7 +86,3 @@ You can't create a datashare on top of database objects created from an existing
    You can also use the Amazon Redshift console to create databases from datashares. For more information, see [Creating databases from datashares](query-datashare-console.md#create-database-from-datashare-console).
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

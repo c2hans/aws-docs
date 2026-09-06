@@ -174,7 +174,3 @@ Once the pipeline finishes, go back to the Pipelines tab to confirm it ran succe
 After ingestion completes, check the **Session datasets** tab in your workspace to confirm your data is now available. You should see your recordings listed with an ACTIVE status.
 
 ![Session datasets showing active ingested recordings](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image30.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

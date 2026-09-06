@@ -242,7 +242,3 @@ You can use any of the command line procedures described in the previous section
 
 **Note**
 To automate backups, you can create an AWS Systems Manager maintenance window task that uses the `AWSEC2-VssInstallAndSnapshot` document. For more information, see [Working with Maintenance Windows (Console)](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-maintenance-working.html) in the *AWS Systems Manager User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

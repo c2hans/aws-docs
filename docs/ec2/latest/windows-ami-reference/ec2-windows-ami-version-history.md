@@ -329,7 +329,3 @@ For more information, see [Description of Software Update Services and Windows S
 |  2015.03.11  |  +  Microsoft security updates current to March 2015 <br />+  EC2Config service version 3.2.97 <br />+  Current AWS Tools for Windows PowerShell  +  AWS PV Driver 7.3.0   |
 |  2015.02.11  |  +  Microsoft security updates current to February 2015 <br />+  EC2Config service version 3.0.54 <br />+  Current AWS Tools for Windows PowerShell <br />+  Current CloudFormation helper scripts   |
 |  2015.01.14  |  +  Microsoft security updates current to January 2015 <br />+  EC2Config service version 2.3.313 <br />+  Current AWS Tools for Windows PowerShell <br />+  Current CloudFormation helper scripts   |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

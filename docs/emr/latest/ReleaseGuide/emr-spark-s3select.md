@@ -110,7 +110,3 @@ The following options are available when using `s3selectCSV` and `s3selectJSON`.
 | --- | --- | --- |
 | `compression` | `"none"` | Indicates whether compression is used. `"gzip"` is the only setting supported besides `"none"`. |
 | `multiline` | "false" | `"false"` specifies that the JSON is in S3 Select `LINES` format, meaning that each line in the input data contains a single JSON object. `"true"` specifies that the JSON is in S3 Select `DOCUMENT` format, meaning that a JSON object can span multiple lines in the input data. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

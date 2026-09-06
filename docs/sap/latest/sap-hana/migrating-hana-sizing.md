@@ -82,7 +82,3 @@ The following table illustrates example scale-up and scale-out sizing.
 When you finalize your SAP sizing and SAP HANA deployment models, you can plan your migration strategy.
 
 In addition to SAP HANA sizing, you may also need to size your SAP application tier. To find the SAP Application Performance Standard (SAPS) ratings of SAP-certified EC2 instances, see [SAP Standard Application Benchmarks](https://www.sap.com/about/benchmark.html) and the [SAP on AWS support note](https://me.sap.com/notes/1656099) on the SAP website (SAP login required).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

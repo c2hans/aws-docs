@@ -115,7 +115,3 @@ This section displays statistics for the member accounts in your organization. I
 + **Configuration**: If a protection plan is not configured, choose **Configure** under the **Actions** column.
 + **Viewing enabled accounts**: Hover over the bar in the **Enabled accounts** column to view how many accounts have enabled each protection plan. To further view account details, select the green bar, and choose **View accounts**.
 ![View status of protection plans enablement for member accounts, in GuardDuty Summary dashboard.](http://docs.aws.amazon.com/guardduty/latest/ug/images/guardduty-summary-protection-plans-console.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

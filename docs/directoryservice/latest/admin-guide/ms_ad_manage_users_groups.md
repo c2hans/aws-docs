@@ -73,7 +73,3 @@ To create users and groups in an AWS Managed Microsoft AD, you can use any insta
 + [Manage users and groups with an on-premise instance or Amazon EC2 instance](#ms_ad_manage_users_groups_with_instance)
 + [Manage AWS Managed Microsoft AD users and groups with the AWS Management Console, AWS CLI, or AWS Tools for PowerShell](ms_ad_manage_users_groups_procedures.md)
 + [Manage users and groups with an Amazon EC2 instance](ms_ad_manage_users_groups_ec2.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

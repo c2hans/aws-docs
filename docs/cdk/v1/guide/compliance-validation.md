@@ -20,7 +20,3 @@ Your compliance responsibility when using AWS CDK to access an AWS service is de
 + [AWS Compliance Resources](https://aws.amazon.com/compliance/resources/) – A collection of workbooks and guides that might apply to your industry and location.
 + [AWS Config](https://aws.amazon.com/config/) – A service that assesses how well your resource configurations comply with internal practices, industry guidelines, and regulations.
 + [AWS Security Hub CSPM](https://aws.amazon.com/security-hub/) – A comprehensive view of your security state within AWS that helps you check your compliance with security industry standards and best practices.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

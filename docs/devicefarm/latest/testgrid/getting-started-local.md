@@ -166,7 +166,3 @@ This example is written with the assumption you are using Python 3 with pytest. 
    For a list of supported capabilities, see [Supported capabilities, browsers, and platforms in Device Farm desktop browser testing](techref-support.md)
 
 1. Run your tests as you would normally.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

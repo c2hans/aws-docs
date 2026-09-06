@@ -158,7 +158,3 @@ The following VPC endpoint policy denies AWS account `123456789012` all access t
 + Check the VPC endpoint policy to ensure it allows the actions you are trying to perform.
 + Verify that your IAM identity policy grants the required `securityagent:` permissions.
 + If using a custom endpoint policy, confirm that both the endpoint policy and the IAM policy allow the request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

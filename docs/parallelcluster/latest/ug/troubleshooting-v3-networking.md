@@ -33,7 +33,3 @@ ruby_block[retrieve compute node info] action run[2022-03-11T17:47:11+00:00] INF
 The most common cause is a missing DynamoDB VPC endpoint, since AWS ParallelCluster reads compute node information from DynamoDB during bootstrap. For the full list of required endpoints, see [AWS ParallelCluster in a single subnet with no internet access](aws-parallelcluster-in-a-single-public-subnet-no-internet-v3.md).
 
 To resolve, add the missing VPC endpoint (typically DynamoDB) to the compute subnet's route table. If the cluster has entered protected mode, see [Slurm cluster protected mode](slurm-protected-mode-v3.md) for how to recover.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

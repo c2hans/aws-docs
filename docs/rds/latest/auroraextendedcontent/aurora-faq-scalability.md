@@ -142,7 +142,3 @@ Aurora PostgreSQL Limitless Database is available for the Aurora I/O-Optimized c
 <a name="aurora-faq-how-is-aurora-postgresql-limitless-database-priced"></a>
 
 In Aurora PostgreSQL Limitless Database, database capacity is measured in ACUs. You pay a flat rate per second of ACU usage. Aurora I/O-Optimized configuration storage rates apply. For more information, visit the [Aurora pricing page](https://aws.amazon.com/rds/aurora/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

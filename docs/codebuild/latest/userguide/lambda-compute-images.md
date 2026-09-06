@@ -59,7 +59,3 @@ The `on-failure` attribute is not supported when using Lambda compute or reserve
 | Amazon Linux 2023 | aws/codebuild/amazonlinux-x86\_64-lambda-standard:python3.14 | [al-lambda/x86\_64/python3.14](https://github.com/aws/aws-codebuild-docker-images/tree/master/al-lambda/x86_64/python3.14) |
 | Amazon Linux 2 | aws/codebuild/amazonlinux-x86\_64-lambda-standard:ruby3.2 | [al-lambda/x86\_64/ruby3.2](https://github.com/aws/aws-codebuild-docker-images/tree/master/al-lambda/x86_64/ruby3.2) |
 | Amazon Linux 2023 | aws/codebuild/amazonlinux-x86\_64-lambda-standard:ruby3.4 | [al-lambda/x86\_64/ruby3.4](https://github.com/aws/aws-codebuild-docker-images/tree/master/al-lambda/x86_64/ruby3.4) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

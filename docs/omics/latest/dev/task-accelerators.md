@@ -64,17 +64,13 @@ requirements:
 
 ------
 
-## Custom compute fallback
+## Advanced resource configuration
 <a name="task-accelerators-fallback"></a>
 
-If your preferred accelerator (or GPU) isn't available, you can configure a task to try alternative accelerators in your preferred priority order using the **omicsResourceFallbackOrder** directive. This directive is currently available only for WDL. HealthOmics tries each accelerator profile in order you define until one succeeds, including an optional final CPU profile.
+You can also configure a task to reserve multiple accelerators in your preferred priority order using the **omicsResourceFallbackOrder** directive. This directive is currently available only for WDL. HealthOmics tries each accelerator profile in order you define until one succeeds, including an optional final CPU profile.
 
 This is useful in the following scenarios:
 + **GPU to GPU fallback** – List GPU types in priority order (for example, try `nvidia-l40s` first, then fall back to `nvidia-l4`).
 + **GPU to CPU fallback** – Add a final CPU-only profile so the task completes even when no GPU capacity is available in the Region.
 
-For full details about **omicsResourceFallbackOrder**, including per-profile field reference, validation rules, and a complete WDL example, see [Custom compute and fallback](custom-compute-fallback.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+For full details about **omicsResourceFallbackOrder**, including per-profile field reference, validation rules, and a complete WDL example, see [Advanced resource configuration](advanced-resource-configuration.md).

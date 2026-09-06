@@ -38,7 +38,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 1.  If you plan to [resume the transfer workflow later](step-3-resume-the-transfer-workflow.md), find the `workflow_run` value from the **Execution Input and** **Output** tab on this page. You need this value to resume the workflow.
 **Note**
  After you stop the execution, no new archives are requested from the Amazon Glacier service. The archives that were already requested will download. These downloads take 4–8 hours to complete.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer from Amazon S3 Glacier Vaults to Amazon S3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

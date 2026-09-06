@@ -75,17 +75,18 @@ The JumpStart model you choose should be fine-tunable. You can verify whether a 
 
 The following procedure shows you how to fine-tune a model reference in your private curated hub using the SageMaker Python SDK.
 
-1. Make sure that you have the latest version (at least `2.242.0`) of the SageMaker Python SDK installed. For more information, see [ Use Version 3.x of the SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/).
+1. Make sure that you have the latest version (at least `3.0.0`) of the SageMaker Python SDK installed. For more information, see [ Use Version 3.x of the SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/).
 
    ```
    !pip install --upgrade sagemaker
    ```
 
-1. Import the AWS SDK for Python (Boto3) and the modules you'll need from the SageMaker Python SDK.
+1. Import the AWS SDK for Python (Boto3) and the modules you need from the SageMaker Python SDK.
 
    ```
    import boto3
    from sagemaker.train import ModelTrainer
+   from sagemaker.train.configs import InputData
    from sagemaker.core.jumpstart.configs import JumpStartConfig
    from sagemaker.core.helper.session_helper import Session
    ```
@@ -116,12 +117,13 @@ The following procedure shows you how to fine-tune a model reference in your pri
        # output_path: "s3://{{<output-path-for-model-artifacts>}}"
    ```
 
-1. Create a dictionary with the `training` key where you specify the location of your fine-tuning dataset. This example points to an Amazon S3 URI. If you have additional considerations, such as using local mode or multiple training data channels, see [ ModelTrainer.train()](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) in the SageMaker Python SDK documentation for more information.
+1. Create an `InputData` object. Set `channel_name` to `train` and `data_source` to the location of your fine-tuning dataset. In the following example, replace `{{<your-fine-tuning-dataset>}}` with the Amazon S3 URI of your dataset. If you have additional considerations, such as using local mode or multiple training data channels, see [ ModelTrainer.train()](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) in the SageMaker Python SDK documentation for more information.
 
    ```
-   training_input = {
-       "training": "s3://{{<your-fine-tuning-dataset>}}"
-   }
+   training_input = InputData(
+       channel_name="train",
+       data_source="s3://{{<your-fine-tuning-dataset>}}",
+   )
    ```
 
 1. Call the model trainer's `train()` method and pass in your training data and your EULA acceptance (if applicable).
@@ -137,7 +139,3 @@ Your fine-tuning job should now begin.
 You can check on your fine-tuning job by viewing your training jobs, either in the SageMaker AI console or by using the [ListTrainingJobs](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTrainingJobs.html) API.
 
 You can access your fine-tuned model artifacts at the Amazon S3 `output_path` that was specified in the `ModelTrainer` object (either the default SageMaker AI Amazon S3 bucket for the region, or a custom Amazon S3 path you specified, if applicable).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

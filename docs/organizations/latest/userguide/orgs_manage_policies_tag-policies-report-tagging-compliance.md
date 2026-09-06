@@ -128,7 +128,3 @@ The JSON below generates a compliance report for resources against the "CostCent
 **To enforce,**
 
 You can use reporting with IaC tools such as CloudFormation, Terraform, and Pulumi to warn your developers or block deployments with missing required tags. You can now use one effective tag policy that works across CloudFormation, Terraform, and Pulumi. See [Enforce "Required tag key" with IaC](enforce-required-tag-keys-iac.md) for more details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -273,7 +273,3 @@ Before you can optionally create your Amazon DataZone domain with a customer-man
 1. In the list of KMS keys, choose the alias or key ID of the KMS key that you want to examine.
 
 1. To add or remove key users, and to allow or disallow external AWS accounts to use the KMS key, use the controls in the **Key users** section of the page. Key users can use the KMS key in cryptographic operations, such as encrypting, decrypting, re-encrypting, and generating data keys.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

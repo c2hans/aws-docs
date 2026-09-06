@@ -20,7 +20,3 @@ To get started with AWS, you need an AWS account. For information about creating
 <a name="set-up-AWS-account-NS"></a>
 
 [Grant permissions to users for Quote Confirmation](set-user-permissions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Appliances and Software. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-appliances-software` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

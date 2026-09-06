@@ -808,11 +808,9 @@ aws configservice put-config-rule \
 +  [IAM Best Practices](iam/latest/userguide/best-practices.html)
 +  [AWS Control Tower User Guide](controltower/latest/userguide/what-is-control-tower.html)
 +  [AWS Security Hub User Guide](securityhub/latest/userguide/what-is-securityhub.html)
++  [AWS East/West Certification Package Overview (JSON)](samples/east-west_cpo.json)
++  [AWS GovCloud Certification Package Overview (JSON)](samples/govcloud_cpo.json)
 
  **FedRAMP Resources**:
 +  [FedRAMP Security Controls Baseline](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Security_Controls_Baseline.xlsx)
 +  [FedRAMP OSCAL Profile](https://www.fedramp.gov/assets/resources/templates/FedRAMP_OSCAL_Based_FedRAMP_High_Baseline_Profile.json)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FedRamp Compliance Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fedramp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

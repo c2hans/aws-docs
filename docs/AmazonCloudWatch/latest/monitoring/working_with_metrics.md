@@ -22,20 +22,21 @@ CloudWatch supports two metric models. Both are fully supported – choose based
 
 |  | **[OpenTelemetry Metrics (Recommended)](metrics-otel-recommended.md)** | **[CloudWatch Metrics (Classic)](metrics-classic.md)** |
 | --- | --- | --- |
+| **Identity** | Metric name, up to 150 labels | Namespace, metric name, up to 30 dimensions |
+| **Metric types** | Gauge, sum, histogram, exponential histogram | Single values, statistic sets |
 | **Ingestion** | OTLP endpoint (OTel SDKs, collectors) | PutMetricData API, EMF |
-| **Query language** | PromQL | CloudWatch Metrics Insights (SQL) |
-| **Labels / Dimensions** | Up to 150 labels per data point | Up to 30 dimensions per metric |
+| **Query APIs** | PromQL query API | GetMetricData, GetMetricStatistics, ListMetrics, CloudWatch Metrics Insights (SQL) |
+| **Alarms** | PromQL-based CloudWatch alarms | Standard CloudWatch alarms |
+| **Console** | CloudWatch Query Studio | CloudWatch Metrics console |
 | **Pricing model** | Per GB ingested | Per metric per month |
-| **Storage** | Up to 15 months | Up to 15 months |
+| **Storage** | Up to 15 months | Up to 15 months (with automatic rollup) |
 | **Metric names** | Open-source native | Proprietary (CloudWatch-format) |
 | **Best for** | New workloads, containers, high-cardinality | Existing integrations, low-cardinality AWS service metrics |
+
+GetMetricData, GetMetricStatistics, ListMetrics, and CloudWatch Metrics Insights operate only on CloudWatch Metrics (Classic). Use the PromQL query API for OpenTelemetry Metrics.
 
 ### Getting started
 <a name="metrics-overview-getting-started"></a>
 + **New to CloudWatch metrics?** Start with [OpenTelemetry Metrics (Recommended)](metrics-otel-recommended.md).
 + **Already using PutMetricData or EMF?** See [CloudWatch Metrics (Classic)](metrics-classic.md).
 + **Want AWS service metrics in PromQL?** Enable [AWS vended metrics in OpenTelemetry format](CloudWatch-OTelEnrichment.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

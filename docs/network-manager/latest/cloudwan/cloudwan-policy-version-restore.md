@@ -22,7 +22,3 @@ An out-of-date policy can be restored as a new version of a policy.
    The **Policy version ID** is incremented by one from the last version listed on the **Policy versions** page, and the **Change set state** displays as **Pending generation.**
 
    When generated, the **Change set state** changes to **Ready to execute**, and the **Alias** changes to **LATEST**. If any previous policies were in the **Ready to execute** change set state, those change to **Out of date**. This indicates that those policies are now considered older than the **LATEST**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

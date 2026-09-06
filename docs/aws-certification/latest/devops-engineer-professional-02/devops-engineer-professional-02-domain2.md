@@ -49,7 +49,3 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/devops-engineer
 + Developing AWS Lambda function automations for complex scenarios (for example, AWS SDKs, Lambda, AWS Step Functions)
 + Automating the configuration of software applications to the desired state (for example, OpsWorks, Systems Manager State Manager)
 + Maintaining software compliance (for example, Systems Manager)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

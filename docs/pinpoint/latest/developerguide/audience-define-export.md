@@ -455,7 +455,3 @@ The response provides the job status with the `JobStatus` attribute. When the jo
 To find the endpoint ID for a specific endpoint, you must determine which segment the endpoint belongs to, and then export the segment from Amazon Pinpoint. The exported data includes the endpoint ID for each endpoint. You can export a segment to a file by using the Amazon Pinpoint console. For more information about exporting segments, see [Exporting Segments](https://docs.aws.amazon.com/pinpoint/latest/userguide/segments-exporting.html) in the *Amazon Pinpoint User Guide*.
 
 For more information about the Export Jobs resource in the Amazon Pinpoint API, including the supported HTTP methods and request parameters, see [Export jobs](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-jobs-export.html) in the *Amazon Pinpoint API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

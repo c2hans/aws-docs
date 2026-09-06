@@ -20,7 +20,3 @@ Some instructions on this page differ depending on the agent version. If you are
 + [Update the CodeDeploy agent](codedeploy-agent-operations-update.md)
 + [Uninstall the CodeDeploy agent](codedeploy-agent-operations-uninstall.md)
 + [Send CodeDeploy agent logs to CloudWatch](codedeploy-agent-operations-cloudwatch-agent.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

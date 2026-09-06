@@ -23,7 +23,3 @@ For information about closing an AWS account, see [Close an AWS account](https:/
 **Note**
 If CloudTrail log file validation is enabled, users will continue to receive hourly digest files which indicate if any CloudTrail logs were created or not.
 CloudTrail Lake event data stores, CloudTrail Lake channels for integrations, CloudTrail service-linked channels, and resources created for trails (for example, Amazon CloudWatch Logs log groups and Amazon S3 buckets existing in the closed account), follow standard AWS behavior for account closure and are permanently deleted after the post-closure period (typically 90 days).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

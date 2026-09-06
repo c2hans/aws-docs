@@ -23,7 +23,3 @@ To insert pre-roll ads, complete the **Live pre-roll ad decision server** and **
    + For HLS, the formula is `max(2*EXT-X-TARGETDURATION, EXT-X-START:TIMEOFFSET)`.
 
 1. MediaTailor determines what action to take on any ad breaks that aren't pre-rolls. If the pre-roll overlaps another ad break, MediaTailor doesn't personalize the overlapped portion of the ad break.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

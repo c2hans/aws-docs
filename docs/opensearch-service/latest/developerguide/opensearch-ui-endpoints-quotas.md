@@ -52,7 +52,3 @@ Your AWS account has the following quotas related to OpenSearch UI resources.
 | --- | --- | --- | --- |
 | OpenSearch UI applications per Account per Region | 30 | Yes | The maximum number of OpenSearch UI applications you can create per account per Region.<br />You can increase the limit to 50 using service quota and get it automatically approved. To request a higher limit, submit a support ticket. |
 | Maximum [workspaces](./application-workspaces.html) per application | 100 | Yes | The maximum number of workspaces you can create per OpenSearch UI application.<br />To request a higher limit, submit a support ticket. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

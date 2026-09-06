@@ -20,7 +20,3 @@ To learn more about Graviton arm64 processor architecture, see [The AWS Graviton
 
 **Note**
 If you created environments with the custom AMIs provided in the Graviton first wave releases, we recommend that you remove the custom AMIs and upgrade your Graviton arm64 based environments to the latest platform version. For more information, see [Recommendations for Graviton arm64 first wave environments](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.ec2.html#using-features.managing.ec2.graviton-wave-1) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -165,7 +165,3 @@ Sign in with the same user that you set up in [Getting started with CodeDeploy](
 1. Choose **Create deployment**.
 **Note**
 If **Failed** appears instead of **Succeeded**, you may want to try some of the techniques in [Monitor and troubleshoot your deployment](tutorials-wordpress-deploy-application.md#tutorials-wordpress-deploy-application-monitor) (using the application name of **SimpleDemoApp** and the deployment group name of **SimpleDemoDG**).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

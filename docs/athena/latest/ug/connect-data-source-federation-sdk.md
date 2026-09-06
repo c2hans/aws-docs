@@ -12,7 +12,3 @@ Custom connectors do not use Glue Connections to centralize configuration proper
 You can also customize Amazon Athena's [prebuilt connectors](https://github.com/awslabs/aws-athena-query-federation/wiki/Available-Connectors) for your own use. You can modify a copy of the source code from GitHub and then use the [Connector publish tool](https://github.com/awslabs/aws-athena-query-federation/wiki/Connector_Publish_Tool) to create your own AWS Serverless Application Repository package. After you deploy your connector in this way, you can use it in your Athena queries.
 
 For information about how to download the SDK and detailed instructions for writing your own connector, see [Example Athena connector](https://github.com/awslabs/aws-athena-query-federation/tree/master/athena-example) on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

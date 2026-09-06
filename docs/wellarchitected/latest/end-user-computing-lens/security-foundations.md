@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 + [EUCSEC01-BP01 Identify discrete groups of users that require access and implement security controls appropriate for their risk profiles](eucsec01-bp01.md)
 + [EUCSEC02-BP01 Identify external stakeholders and their security or regulatory compliance requirements](eucsec02-bp01.md)
 + [EUCSEC03-BP01 Restrict user permissions to the minimum required to perform their role](eucsec03-bp01.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

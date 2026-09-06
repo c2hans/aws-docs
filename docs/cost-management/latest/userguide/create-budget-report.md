@@ -32,7 +32,3 @@ If you select more, you can't proceed to the next step until you change your sel
 1. Choose **Create budget report**.
 
 Your report appears on the AWS Budgets Reports dashboard. On the dashboard, you can filter your reports by **Report name**. For each report, the dashboard also shows **Frequency**, **Budgets included**, and **Recipient(s)**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

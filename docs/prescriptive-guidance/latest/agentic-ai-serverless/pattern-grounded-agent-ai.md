@@ -89,7 +89,3 @@ This pattern delivers value in the following areas:
 The grounded agent AI workflow enables enterprises to move beyond static Q&A and into goal-driven automation, without sacrificing control, compliance, or accuracy. By combining LLM reasoning with secure, serverless API execution and knowledge retrieval, Amazon Bedrock Agents deliver AI capabilities that act, not just respond.
 
 The grounded agent is the architecture of intelligent enterprise interaction, modular, grounded, and ready for scale.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

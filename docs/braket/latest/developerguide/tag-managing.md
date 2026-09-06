@@ -41,7 +41,3 @@ You can edit tags by using the console to navigate to the quantum task or notebo
 
 You can remove tags from a resource by specifying the keys to remove, by using the console to navigate to the quantum task or notebook resource, or when calling the `UntagResource` operation.
 +  ** AWS API:** `UntagResource`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

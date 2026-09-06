@@ -24,8 +24,4 @@ Connect Customer supports claiming the following phone numbers for instances cre
 Connect Customer does not offer phone numbers for other cities in Japan at this time.
 
 **Note**
-When you claim a toll free phone number for Connect Customer, there is no corresponding DID number with a 03 prefix also assigned, as with other toll free numbers in Japan. If you need to use a DID number, you can claim one in Connect Customer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+In Japan, toll free numbers typically come with a corresponding Direct Inward Dialing (DID) number with a prefix such as 03. This DID number receives incoming calls on behalf of the toll free number. When you claim a toll free phone number in Connect Customer, you receive and manage only the toll free number, not the corresponding DID number.

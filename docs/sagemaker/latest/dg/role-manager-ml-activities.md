@@ -35,7 +35,3 @@ Amazon SageMaker Role Manager provides predefined permissions for the following 
 | Access required to AWS Services for MLflow | Permissions for MLflow Tracking Servers to access S3, Secrets Manager, and Model Registry. |
 | Run Studio EMR Serverless Applications | Permissions to Create and Manage EMR Serverless Applications on Amazon SageMaker Studio. |
 | Run Model Customization Jobs | Permissions to run serverless model customization jobs including custom reward functions for reinforcement learning, model evaluation, and deployment to SageMaker AI or Amazon Bedrock endpoints. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

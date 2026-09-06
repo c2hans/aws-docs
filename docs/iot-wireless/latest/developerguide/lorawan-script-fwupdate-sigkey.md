@@ -190,7 +190,3 @@ $ scp sig-0.key pi@192.168.1.11:/home/pi/Documents/basicstation/examples/iotwire
 Now that you have generated the firmware and signature. you can proceed to update the gateway firmware.
 + If you're using the AWS Management Console to schedule and run the firmware update, proceed to [Schedule and run gateway firmware update task](lorawan-schedule-firmware-update.md).
 + If you're using the AWS CLI to schedule and run the firmware update, first proceed to [Upload the firmware file to an Amazon S3 bucket and add an IAM role](lorawan-upload-firmware-s3bucket.md) to upload your firmware file, `fwstation`, to an Amazon S3 bucket. Then, grant AWS IoT Core for LoRaWAN permissions to access the file on your behalf.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

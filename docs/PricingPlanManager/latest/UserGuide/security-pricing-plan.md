@@ -84,7 +84,3 @@ View details about updates to AWS managed policies for AWS Flat-Rate Plans since
 |  [PricingPlanManagerReadOnlyAccess](#security-iam-awsmanpol-ppm-read-only) — New policy | AWS Flat-Rate Plans added a new policy that grants read-only access to pricing plan subscriptions. | July 28, 2026 |
 |  [PricingPlanManagerFullAccess](#security-iam-awsmanpol-ppm-full-access) — New policy | AWS Flat-Rate Plans added a new policy that grants administrative access to pricing plan subscriptions and read-only access to related AWS service resources. | July 28, 2026 |
 | AWS Flat-Rate Plans started tracking changes | AWS Flat-Rate Plans started tracking changes for its AWS managed policies. | July 28, 2026 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Flat-Rate Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PricingPlanManager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

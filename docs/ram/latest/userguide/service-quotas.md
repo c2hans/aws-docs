@@ -25,7 +25,3 @@ The following definitions apply to the description in the quotas below:
 | Maximum number of resource associations across all resource shares in an AWS Region  Each resource included in a resource share counts against this limit. If a resource is included in 10 different resource shares, that counts 10 against the limit.  | 25,000 |
 | Maximum number of principal associations across all resource shares in an AWS Region Each principal included in a resource share counts against this limit. If a principal is included in 10 different resource shares, that counts 10 against the limit.  | 25,000 |
 | Maximum number of pending invitations per sharing account +  This quota applies to only **sending** accounts who are sharing with accounts that are not part of the same AWS Organizations. <br />+  There is no quota to limit how many pending invitations a receiving account can have. <br />+  Invitations are *not* used when sharing between accounts that are part of the same AWS Organizations and you've turned on resource sharing within the AWS Organizations.  | 250 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

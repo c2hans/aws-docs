@@ -28,7 +28,3 @@ This requirements analysis must be performed by a person in your organization wh
 1. Identify the number of roles that you need. You need one role for each unique combination of policies.
 
 1. Assign names to all the policies and roles that you have identified. Make sure that you don't include sensitive identifying information (such as a customer account name) in these names.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

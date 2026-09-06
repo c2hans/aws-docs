@@ -137,7 +137,3 @@ Refer to the following topics in the [*Amazon EventBridge User Guide*](https://d
 + For information on constructing event patterns for EventBridge to use when matching events against rules, see [Event patterns](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html).
 + For information on creating rules to specify which events EventBridge processes, see [Rules](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html).
 + For information on to specify what services or other destinations EventBridge sends matched events to, see [Targets](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-targets.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

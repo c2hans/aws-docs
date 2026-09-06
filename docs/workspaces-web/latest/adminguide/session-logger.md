@@ -88,7 +88,3 @@ You can test the Session Logger setup and ensure that session logger is function
 You can also run a test session by starting a Secure Browser session in the portal and using the browser as you normally would. Session Logger writes log files to your configured Amazon S3 bucket every 15 minutes during an active session, or when the session ends.
 
 After ending the session or waiting for the next logging interval, check the Amazon S3 bucket to confirm that log files for your session have been generated and stored as expected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

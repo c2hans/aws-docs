@@ -190,7 +190,3 @@ For additional information, see the following topics in the MongoDB documentatio
 + To make a copy of your cluster for testing purposes, see [Backup Methods for a Self-Managed Deployment](https://www.mongodb.com/docs/manual/core/backups/).
 + If the application that you want to migrate requires a near-continuous uptime, contact [MongoDB Support](https://www.mongodb.com/docs/atlas/support/#std-label-request-support) and share your uptime requirements and cluster configuration.
 + For additional information, see [Migrate or Import Data](https://www.mongodb.com/docs/atlas/import/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

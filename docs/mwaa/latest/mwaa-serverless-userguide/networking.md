@@ -87,7 +87,3 @@ This section describes the Amazon VPC infrastructure of a workflow with *private
   + The VPC endpoints **must** be associated to your workflow's security group.
   + The VPC endpoint policy for each endpoint should be configured to allow access to AWS services used by the workflow. For example, [(Recommended) Example VPC endpoint policy to allow all access](networking-security.md#networking-security-policies-all).
   + A VPC endpoint policy for Amazon S3 should be configured to allow bucket access. For example, [(Recommended) Example Amazon S3 gateway endpoint policy to allow bucket access](networking-security.md#networking-security-external-policies-s3).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

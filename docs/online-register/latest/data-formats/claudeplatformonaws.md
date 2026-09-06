@@ -36,7 +36,3 @@ Claude Platform on AWS provides the following APIs for data retrieval.
 | <a name="aws-external-anthropic-ListVaults"></a>[ListVaults](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions) | List managed agent credential vaults in a workspace | List |
 | <a name="aws-external-anthropic-ListWebhooks"></a>[ListWebhooks](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions) | List webhooks in a workspace | List |
 | <a name="aws-external-anthropic-ListWorkspaces"></a>[ListWorkspaces](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions) | List workspaces in an organization | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

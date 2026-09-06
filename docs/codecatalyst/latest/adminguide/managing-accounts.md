@@ -33,7 +33,3 @@ For steps for managing accounts in the CodeCatalyst console, see [Account connec
 For steps for managing accounts in the CodeCatalyst console, see [Account connections](https://docs.aws.amazon.com//codecatalyst/latest/userguide/ipa-connect-account.html) in the CodeCatalyst User Guide.
 
 For a space that supports AWS Builder ID users, the space requires that you specify a connected account to the be the billing account for the space. For a space that supports identity federation, the space billing account will default to the management account associated with the organization in AWS Organizations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

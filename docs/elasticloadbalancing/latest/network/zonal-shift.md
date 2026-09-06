@@ -46,7 +46,3 @@ Zonal shift is active in target Availability Zone
 
 **zonal\_shift\_delegated\_to\_dns**
 This target's zonal shift state is not available through `DescribeTargetHealth` but can be viewed directly through the AWS ARC - Zonal Shift API or console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

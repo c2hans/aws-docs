@@ -217,7 +217,3 @@ If you don't need `collect()` or other actions in your commercial environment, c
 |
 | Note: Avoid using Spark `collect()` in commercial environments as much as possible. The `collect()` action returns all the results of a calculation in the Spark executor to the Spark driver, which might cause the Spark driver to return an OOM error. To avoid an OOM error, Spark sets `spark.driver.maxResultSize = 1GB` by default, which limits the maximum data size returned to the Spark driver to 1 GB. |
 | --- |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

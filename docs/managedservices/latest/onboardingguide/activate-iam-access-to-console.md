@@ -14,7 +14,3 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 1. Scroll down to **IAM user and role access to Billing information**, and choose **Edit**. An **Activate IAM access** area opens.
 
 1. Select the check box and then choose **Update**. You can now use IAM policies to control which pages a user can access.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

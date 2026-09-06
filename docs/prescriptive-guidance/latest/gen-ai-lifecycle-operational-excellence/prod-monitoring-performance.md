@@ -38,7 +38,3 @@ When implementing the metric or log capture system, you need to consider the fol
 While having metrics, logs, and traces is useful, you often need to sift through a lot of information to find and detect a problem. Thus, it is important to define and create actionable alerts that align to your business objectives and technical requirements. Use rule-based or ML-based mechanisms to detect errors or anomalies in the system, and confirm that these alerts are directed to the relevant stakeholders with an actionable outcome.
 
 The final component of a monitoring system focuses on how to respond to these alerts. The response should be systematic and, ideally, automated. This involves designing runbooks that attach to each alert in order to help teams effectively perform root-cause analysis. Alternatively, you can create codified runbooks that automate the investigation and resolution process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

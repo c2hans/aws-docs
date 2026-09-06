@@ -46,7 +46,3 @@ During the `InProgress`, `Success`, or `Failure` change states, the RFC cannot b
 The following diagram illustrates the RFC statuses from the CreateRFC call through to resolution.
 
 ![The RFC statuses from the CreateRFC call through to resolution.](http://docs.aws.amazon.com/managedservices/latest/userguide/images/RfcStateFlow2.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

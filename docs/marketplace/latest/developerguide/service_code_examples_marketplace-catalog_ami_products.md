@@ -19,7 +19,3 @@ The following code examples show how to use AWS Marketplace Catalog API with AWS
 + [Restrict a region where an AMI product is deployed](marketplace-catalog_example_marketplace-catalog_RestrictRegionExistingAmiProduct_section.md)
 + [Restrict product visibility](marketplace-catalog_example_marketplace-catalog_RestrictExistingAmi_section.md)
 + [Specify whether AMI assets are deployed in new regions](marketplace-catalog_example_marketplace-catalog_UpdateFutureRegionSupport_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

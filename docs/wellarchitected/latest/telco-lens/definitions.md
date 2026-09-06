@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/defini
 +  **User plane or data plane:** The part of a network that carries user traffic.
 +  **Stream Control Transmission Protocol (SCTP):** A transport layer protocol that provides message-oriented communication with features for telecommunications signaling.
 +  **Communications Services Providers (CSP):** The network operators which build the networks according to the regulatory requirements and deliver telecommunication services to the users.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

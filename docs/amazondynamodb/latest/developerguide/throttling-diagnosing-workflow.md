@@ -153,7 +153,3 @@ For detailed solutions to address your specific throttling scenarios, see the [D
 1. Track your CloudWatch metrics that correspond to your throttling scenario.
 
 1. Validate that your mitigation strategies are effective by observing a decrease in throttling events.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

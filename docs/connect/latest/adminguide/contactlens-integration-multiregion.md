@@ -24,7 +24,3 @@ You can implement the active-active strategy by concurrently streaming audio to 
 1. Perform conversational analytics analysis
 
 This approach requires you to replicate all the Connect Customer contact center configurations manually. However, you can use Connect Customer Global Resiliency and it will replicate all the Connect Customer instance settings across the Regions automatically. For more information, see [Set up Connect Customer Global Resiliency](setup-connect-global-resiliency.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

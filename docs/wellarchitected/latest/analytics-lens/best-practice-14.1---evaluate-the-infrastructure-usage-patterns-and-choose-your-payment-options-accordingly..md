@@ -25,7 +25,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
  For more detail, refer to the following:
 + [ Optimize Cost by Automating the Start or Stop of Resources in Non-Production Environments Spot Instance Best Practices ](https://aws.amazon.com/blogs/architecture/optimize-cost-by-automating-the-start-stop-of-resources-in-non-production-environments/)
 + [ Optimizing Amazon EC2 Spot Instances with Spot Placement Scores ](https://aws.amazon.com/blogs/compute/optimizing-amazon-ec2-spot-instances-with-spot-placement-scores/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

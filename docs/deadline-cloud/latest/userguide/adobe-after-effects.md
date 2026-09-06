@@ -73,7 +73,7 @@ Before installing the submitter, complete the following steps:
 
 1. Install the Deadline Cloud CLI and Deadline Cloud monitor by running the Deadline Cloud submitter and monitor installers from the downloads section of the Deadline Cloud service in your AWS console.
 
-1. Enable script permissions in After Effects. The submitter requires the ability to write files and send communication over the network to function properly. By default, After Effects scripts are not allowed to perform these actions. For more information, see [Adobe's scripts reference](https://helpx.adobe.com/after-effects/using/scripts.html).
+1. Enable script permissions in After Effects. The submitter requires the ability to write files and send communication over the network to function properly. By default, After Effects scripts are not allowed to perform these actions. For more information, see [Adobe's scripts reference](https://helpx.adobe.com/after-effects/using/scripts.html) on the Adobe website.
 
    To allow scripts to write files or send communication over a network, complete the steps for your operating system:
    + **Windows**: Choose **Edit** > **Preferences** > **Scripting & Expressions** > select **Allow Scripts To Write Files And Access Network**.
@@ -144,7 +144,7 @@ Automatic macOS system install is not yet supported by the submitter installer. 
 
 If you prefer to install manually, you can copy the submitter files directly:
 
-1. Locate the `DeadlineCloudSubmitter.jsx` file and the `DeadlineCloudSubmitter_Assets` folder in the `dist` folder of the [deadline-cloud-for-after-effects repository](https://github.com/aws-deadline/deadline-cloud-for-after-effects).
+1. Locate the `DeadlineCloudSubmitter.jsx` file and the `DeadlineCloudSubmitter_Assets` folder in the `dist` folder of the [deadline-cloud-for-after-effects repository](https://github.com/aws-deadline/deadline-cloud-for-after-effects) on the GitHub website.
 
 1. Copy both to the **ScriptUI Panels** folder within your After Effects installation:
    + **Windows**: `Program Files\Adobe\Adobe After Effects <version>\Support Files\Scripts\Script UI Panels`
@@ -157,7 +157,7 @@ If you prefer to install manually, you can copy the submitter files directly:
 
 After Effects conda packages are available in Deadline Cloud service-managed fleets. For the list of supported versions, see the [Deadline Cloud user guide](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/create-queue-environment.html). If you want to build a conda channel that contains a different After Effects conda package, follow the [instructions for creating custom conda channels](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/configure-jobs-s3-channel.html).
 
-You can also use the After Effects conda recipe in the [deadline-cloud-samples package](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/aftereffects-25.1) as a reference when building the package.
+You can also use the After Effects conda recipe in the [deadline-cloud-samples package](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/aftereffects-25.1) on the GitHub website as a reference when building the package.
 
 Jobs created by this submitter require the `aerender` executable to be available on the PATH of the user that runs your jobs. Alternatively, you can set the `AERENDER_EXECUTABLE` environment variable to point to the aerender executable.
 
@@ -220,7 +220,7 @@ Follow the instructions below that match the install type you selected during in
 1. Set the farm and queue you are submitting to using the **Settings** button, and choose **Submit**.
 
 **Note**
-The After Effects submitter calls the Deadline Cloud GUI submitter to complete job submission. If you encounter any issues on the GUI submitter, see the [deadline-cloud library](https://github.com/aws-deadline/deadline-cloud) for help.
+The After Effects submitter calls the Deadline Cloud GUI submitter to complete job submission. If you encounter any issues on the GUI submitter, see the [deadline-cloud library](https://github.com/aws-deadline/deadline-cloud) on the GitHub website for help.
 
 ### Shared job settings
 <a name="after-effects-shared-job-settings"></a>
@@ -242,7 +242,7 @@ The following settings apply to the entire job:
 The following settings are specific to After Effects rendering:
 + **Composition Selection** - Select which composition from your render queue to submit.
 + **Frames Per Task** - (For image sequences) Specify how many frames each task should render. By default, Deadline Cloud creates one task for every frame. Increasing this value can speed up rendering in jobs where each frame renders quickly.
-+ **Multi-Frame Rendering** - Enable After Effects multi-frame rendering. You can also specify the max percentage of CPU usage to allocate towards rendering. For more information, see [Adobe's multi-frame rendering documentation](https://helpx.adobe.com/after-effects/using/multi-frame-rendering.html).
++ **Multi-Frame Rendering** - Enable After Effects multi-frame rendering. You can also specify the max percentage of CPU usage to allocate towards rendering. For more information, see [Adobe's multi-frame rendering documentation](https://helpx.adobe.com/after-effects/using/multi-frame-rendering.html) on the Adobe website.
 + **Timeout** - (Optional) Configure timeout settings (days, hours, and minutes) to handle unexpected cases where a task may become unresponsive. The default timeout is 2 days.
 + **Output Type** - Automatically detected based on your render queue settings (image sequence or video).
 + **Output Path** - Directory where rendered files will be saved (from your render queue settings).
@@ -258,7 +258,7 @@ Fonts used in the submitted composition are detected by the submitter and are au
 + OpenType (`.otf`).
 + TrueType (`.ttf`).
 + TrueType Collection (`.ttc`) - majority supported.
-+ [Adobe Fonts](https://fonts.adobe.com/).
++ [Adobe Fonts](https://fonts.adobe.com/) on the Adobe website.
 + Windows bitmap fonts (`.fon`) - only supported on Windows machines.
 
 **Troubleshooting fonts**:
@@ -341,9 +341,9 @@ To resolve this issue, try the following steps:
 
 1. If the font is needed, try substituting a different font that is compatible with Windows (Deadline Cloud only runs After Effects on Windows workers).
 
-1. As a workaround, you can convert text layers to shapes in After Effects using [Create Shapes from Text](https://helpx.adobe.com/after-effects/using/creating-shapes-masks.html), which removes the font dependency entirely. Note that this conversion is one-way - you will no longer be able to edit the text or use text-specific features.
+1. As a workaround, you can convert text layers to shapes in After Effects. For more information, see [Creating shapes from text](https://helpx.adobe.com/after-effects/using/creating-shapes-masks.html) on the Adobe website. Note that conversion removes the font dependency entirely and is one-way. You will no longer be able to edit the text or use text-specific features.
 
-1. If none of the above options work, [create an issue in the repository](https://github.com/aws-deadline/deadline-cloud-for-after-effects/issues) for further investigation.
+1. If none of the preceding options work, [create an issue in the repository](https://github.com/aws-deadline/deadline-cloud-for-after-effects/issues) on the GitHub website for further investigation.
 
 **Tip**: You can check if a font is installable on Windows by double-clicking the font file on a Windows machine. If it opens and shows an "Install" option, the font is supported.
 
@@ -443,21 +443,21 @@ See [Font attachment system](#after-effects-font-attachment) for supported font 
 ## After Effects plugins
 <a name="after-effects-plugins"></a>
 
-You can make After Effects plugins available on service-managed fleet workers by using either a conda package or a host configuration script. Plugins that are packaged as a conda package install into the After Effects `Plug-ins` directory when the conda environment activates. Plugins that require a full installer instead use a host configuration script that runs when each worker launches. To package several `.aex` plugins together, use the [aftereffects-plugin-bundle conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/aftereffects-plugin-bundle).
+You can make After Effects plugins available on service-managed fleet workers by using either a conda package or a host configuration script. Plugins that are packaged as a conda package install into the After Effects `Plug-ins` directory when the conda environment activates. Plugins that require a full installer instead use a host configuration script that runs when each worker launches. To package several `.aex` plugins together, use the [aftereffects-plugin-bundle conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/aftereffects-plugin-bundle) on the GitHub website.
 
 ### Saber
 <a name="after-effects-saber"></a>
 
 Saber is a visual effects plugin for After Effects. You can build a conda package that installs the `Saber.aex` plugin on Windows workers with the aftereffects-saber conda recipe, and then add it to a custom conda channel. You can also use the recipe as a template for packaging other `.aex` plugins.
 
-Conda recipe: [aftereffects-saber conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/aftereffects-saber)
+Conda recipe: [aftereffects-saber conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/aftereffects-saber) on the GitHub website.
 
 ### Red Giant
 <a name="after-effects-red-giant"></a>
 
 You can install Maxon Red Giant on your workers with a host configuration script that fetches and silently installs the Red Giant installer when each worker launches. The script has been tested and verified on Windows GPU service-managed fleets. If a persistent volume is attached to the fleet, the script installs the software once and restores it on later boots to reduce worker startup time.
 
-Host configuration script: [aftereffects\_redgiant](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/aftereffects/aftereffects_redgiant).
+Host configuration script: [aftereffects\_redgiant](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/aftereffects/aftereffects_redgiant) on the GitHub website.
 
 ## Advanced configurations
 <a name="after-effects-advanced-configurations"></a>
@@ -474,10 +474,6 @@ If you require an unsupported version of After Effects, you have the following o
 ## Open source resources
 <a name="after-effects-open-source"></a>
 
-The submitter is open source and available on GitHub:
+The submitter and standalone job bundle are open source and available on the GitHub website:
 +  [Deadline Cloud for After Effects](https://github.com/aws-deadline/deadline-cloud-for-after-effects)
-+ [Standalone After Effects job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/afterfx_render_one_task) is available on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ [Standalone After Effects job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/afterfx_render_one_task)

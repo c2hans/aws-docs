@@ -27,7 +27,3 @@ The following table lists components provided by AWS that include new and update
 | Shadow manager | Version 2.3.6 of the [shadow manager component](shadow-manager-component.md) is available.**Bug fixes and improvements**<br /> Fixes an issue where shadow properties that are deleted through AWS Cloud updates while the device is offline continue to exist in the local shadow after regaining connectivity.  |
 | Lambda launcher | Version 2.0.13 of the [lambda launcher component](lambda-launcher-component.md) is available.**Bug fixes and improvements**<br /> General bug fixes and improvements.  |
 | Disk spooler | Version 1.0.3 of the [disk spooler component](disk-spooler-component.md) is available.**Bug fixes and improvements**<br /> Improves performance by reusing database connections.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ For more information about C3R, see the following topics.
 + [Optional flags in Cryptographic Computing for Clean Rooms](crypto-computing-optional-flags.md)
 + [Queries with Cryptographic Computing for Clean Rooms](crypto-computing-queries.md)
 + [Guidelines for the C3R encryption client](crypto-computing-guidelines.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

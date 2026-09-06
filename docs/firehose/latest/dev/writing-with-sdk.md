@@ -49,7 +49,3 @@ recordList.clear();
 ```
 
 For more code context, see the sample code included in the AWS SDK. For information about request and response syntax, see the relevant topic in [Firehose API Operations](https://docs.aws.amazon.com/firehose/latest/APIReference/API_Operations.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

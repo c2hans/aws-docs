@@ -127,6 +127,7 @@ You do not pay a monthly fee for AWS owned customer managed keys. Customer manag
 
  The **caller (either user or role)** to DataPlane operations must have the corresponding IAM action permissions on the target feature group resource. In addition, all DataPlane operations require `kms:Decrypt` on the customer managed key.
 + **PutRecord** – Requires `sagemaker:PutRecord`
++ **UpdateRecord** – Requires `sagemaker:PutRecord`. `UpdateRecord` does not have a separate IAM action. Instead, IAM authorizes `UpdateRecord` against the `sagemaker:PutRecord` action. Any policy that allows or denies `sagemaker:PutRecord` also applies to `UpdateRecord`. You don't need to update your existing policies.
 + **GetRecord** – Requires `sagemaker:GetRecord`
 + **DeleteRecord** – Requires `sagemaker:DeleteRecord`
 + **ListRecords** – Requires `sagemaker:ListRecords`
@@ -135,6 +136,105 @@ You do not pay a monthly fee for AWS owned customer managed keys. Customer manag
 
 **Note**
 The `BatchWriteRecord` API requires the caller to have both `sagemaker:BatchWriteRecord` and `sagemaker:PutRecord` permissions on the target feature group. An explicit Deny on either action blocks the request.
+
+### Condition keys for `UpdateRecord` access control
+<a name="feature-store-updaterecord-condition-keys"></a>
+
+IAM authorizes `UpdateRecord` against the `sagemaker:PutRecord` action. With these condition keys, you can write more granular policies. The keys let you distinguish partial record updates from full record writes:
++ `sagemaker:IsUpdateRecord` – Set to `true` when the request is an `UpdateRecord` call, and `false` when the request is a `PutRecord` call. This key is absent for other DataPlane operations, including the `PutRecord` check that `BatchWriteRecord` performs.
++ `sagemaker:UpdatableFeatures` – The list of feature names included in an `UpdateRecord` request. IAM omits this key when the request does not specify any features; the key is never present with an empty list. This prevents `ForAllValues` conditions from being evaluated against an empty set. This key is not present on `PutRecord` requests.
+
+With these condition keys, you can build policies such as the following:
++ The following JSON IAM policy allows only `UpdateRecord` calls and blocks direct `PutRecord` calls on a feature group. This policy also blocks `BatchWriteRecord`. The `sagemaker:IsUpdateRecord` key is not present during the `sagemaker:PutRecord` authorization check that `BatchWriteRecord` performs. If you need to allow `BatchWriteRecord`, add a separate statement without the `IsUpdateRecord` condition:
+
+  ```
+  {
+      "Version": "2012-10-17",
+      "Statement": [
+          {
+              "Effect": "Allow",
+              "Action": "sagemaker:PutRecord",
+              "Resource": "arn:aws:sagemaker:us-east-1:111122223333:feature-group/test-fg",
+              "Condition": {
+                  "Bool": {
+                      "sagemaker:IsUpdateRecord": "true"
+                  }
+              }
+          }
+      ]
+  }
+  ```
++ The following JSON IAM policy allows `PutRecord` calls and blocks `UpdateRecord` calls on a feature group. The `BoolIfExists` condition operator ensures the statement also matches the `sagemaker:PutRecord` check that `BatchWriteRecord` performs. For `BatchWriteRecord`, the authorization context does not include `sagemaker:IsUpdateRecord`:
+
+  ```
+  {
+      "Version": "2012-10-17",
+      "Statement": [
+          {
+              "Effect": "Allow",
+              "Action": "sagemaker:PutRecord",
+              "Resource": "arn:aws:sagemaker:us-east-1:111122223333:feature-group/test-fg",
+              "Condition": {
+                  "BoolIfExists": {
+                      "sagemaker:IsUpdateRecord": "false"
+                  }
+              }
+          }
+      ]
+  }
+  ```
++ The following JSON IAM policy denies `UpdateRecord` calls that attempt to modify sensitive features, regardless of what other features are included in the request:
+
+  ```
+  {
+      "Version": "2012-10-17",
+      "Statement": [
+          {
+              "Effect": "Deny",
+              "Action": "sagemaker:PutRecord",
+              "Resource": "arn:aws:sagemaker:us-east-1:111122223333:feature-group/test-fg",
+              "Condition": {
+                  "Bool": {
+                      "sagemaker:IsUpdateRecord": "true"
+                  },
+                  "ForAnyValue:StringEquals": {
+                      "sagemaker:UpdatableFeatures": ["ssn", "credit_score"]
+                  }
+              }
+          }
+      ]
+  }
+  ```
++ The following JSON IAM policy allows `UpdateRecord` calls only when all requested features are on an approved safe-to-update list. The `Null` condition requires `sagemaker:UpdatableFeatures` to exist, because the `ForAllValues` operator otherwise evaluates to `true` when the key is absent:
+
+  ```
+  {
+      "Version": "2012-10-17",
+      "Statement": [
+          {
+              "Effect": "Allow",
+              "Action": "sagemaker:PutRecord",
+              "Resource": "arn:aws:sagemaker:us-east-1:111122223333:feature-group/test-fg",
+              "Condition": {
+                  "Bool": {
+                      "sagemaker:IsUpdateRecord": "true"
+                  },
+                  "Null": {
+                      "sagemaker:UpdatableFeatures": "false"
+                  },
+                  "ForAllValues:StringEquals": {
+                      "sagemaker:UpdatableFeatures": ["last_login", "click_count"]
+                  }
+              }
+          }
+      ]
+  }
+  ```
+
+**Note**
+Policies that grant or deny `sagemaker:PutRecord` without any condition on `sagemaker:IsUpdateRecord` continue to apply to both `PutRecord` and `UpdateRecord` calls, so you don't need to change your policies unless you want to distinguish between the two operations.
+
+For more information about using IAM condition keys, see [IAM JSON policy elements: Condition operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html) in the *IAM User Guide*.
 
 ## Authorizing use of a customer managed key for your offline store
 <a name="feature-store-authorizing-use-cmk-offline-store"></a>
@@ -150,7 +250,3 @@ The key policy for the online store also works for the offline store, only when 
 
 **Important**
 You can specify a AWS KMS encryption key to encrypt the Amazon S3 location used for your offline feature store when you create a feature group. If AWS KMS encryption key is not specified, by default we encrypt all data at rest using AWS KMS key. By defining your [bucket-level key](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html) for SSE, you can reduce AWS KMS requests costs by up to 99 percent.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

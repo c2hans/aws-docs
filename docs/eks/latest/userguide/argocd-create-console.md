@@ -93,7 +93,3 @@ After the capability is active, you can access the Argo CD UI:
 +  [Working with Argo CD](working-with-argocd.md) - Configure repositories, register clusters, and create Applications
 +  [Argo CD considerations](argocd-considerations.md) - Multi-cluster architecture and advanced configuration
 +  [Working with capability resources](working-with-capabilities.md) - Manage your Argo CD capability resource
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

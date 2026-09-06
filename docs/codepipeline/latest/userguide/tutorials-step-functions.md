@@ -89,7 +89,3 @@ The input to the state machine execution is different from the term used in Code
    ```
    arn:aws:states:us-west-2:{{account-ID}}:execution:HelloWorld:my-prefix-0d9a0900-3609-4ebc-925e-83d9618fcca1
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

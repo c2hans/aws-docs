@@ -23,7 +23,3 @@ When you generate PDF reports in Amazon Quick Sight, you may encounter instances
 | INSUFFICIENT\_BODY\_HEIGHT\_ERROR | Adjust the header and footer to be less than the page height, and try again. |
 | FIRST\_PAGE\_HEIGHT\_TOO\_SMALL\_ERROR | Adjust sections to make room for your tables, and try again. |
 | INTERNAL\_ERROR | We can't create your PDF right now. Wait a few minutes, and try again. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

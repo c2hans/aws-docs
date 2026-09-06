@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/de
 +  AWS Cloud Enterprise Strategy Blog: [Strategy for Efficient Cloud Cost Management](https://aws.amazon.com/blogs/enterprise-strategy/strategy-for-efficient-cloud-cost-management/)
 +  AWS Cloud Financial Management Blog: [Trends Dashboard with AWS Cost and Usage Reports, Amazon](https://aws.amazon.com/blogs/aws-cloud-financial-management/trends-dashboard-with-aws-cost-and-usage-reports-amazon-athena-and-amazon-quicksight/) [Athena, and Quick](https://aws.amazon.com/blogs/aws-cloud-financial-management/trends-dashboard-with-aws-cost-and-usage-reports-amazon-athena-and-amazon-quicksight/)
 +  AWS Well-Architected Labs: [Cost Optimization](https://wellarchitectedlabs.com/cost/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

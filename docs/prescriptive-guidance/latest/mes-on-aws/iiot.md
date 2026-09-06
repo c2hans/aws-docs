@@ -34,7 +34,3 @@ A typical IoT data ingestion and processing architecture can take many shapes ba
 1. Amazon EKS manages the availability and scalability of the Kubernetes control plane nodes within the microservice.
 
 1. You can feed the data that's ingested from machines and other operational technology (OT) data sources to a data lake.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

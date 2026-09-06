@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 <a name="implementation-guidance-82"></a>
 
  Evaluate the cost impact of enabling certain self-service WorkSpaces management capabilities for your users, and then select which of these self-service capabilities you want to provide to your users. For more information, see [ Enable self-service WorkSpaces management capabilities for your users in WorkSpaces Personal](https://docs.aws.amazon.com/workspaces/latest/adminguide/enable-user-self-service-workspace-management.html) . Consider creating internal policies to govern which capabilities are allowed. Changing the compute type (bundle), increasing the root and user volume size, and changing the running mode may increase your cost. Instead of enabling these capabilities for your users, you may consider providing these capabilities through your IT service management so that changes requested by a user requires prior approval.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

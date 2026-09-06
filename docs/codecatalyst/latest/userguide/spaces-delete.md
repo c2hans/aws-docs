@@ -34,7 +34,3 @@ If you belong to more than one space, choose a space in the top navigation bar.
 1. Choose **Delete**.
 **Note**
 If you belong to more than one space, you're redirected to the space overview page. If you belong to one space, you're redirected to the space creation page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

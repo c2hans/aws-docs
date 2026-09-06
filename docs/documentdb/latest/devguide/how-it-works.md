@@ -421,7 +421,3 @@ To delete a cluster, you must first delete all the instances in the cluster.
 Even if you delete the instances in a cluster, you are still billed for the storage and backup usage associated with that cluster. To stop all charges, you must also delete your cluster and manual snapshots.
 + To delete clusters, see [Deleting an Amazon DocumentDB cluster](db-cluster-delete.md).
 + To delete manual snapshots, see [Deleting a cluster snapshot](backup_restore-delete_cluster_snapshot.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

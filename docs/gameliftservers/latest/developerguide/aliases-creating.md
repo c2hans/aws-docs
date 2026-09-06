@@ -24,7 +24,7 @@ In the [Amazon GameLift Servers console](https://console.aws.amazon.com/gamelift
 
 1. Choose a **Routing strategy** for the alias.
 
-   1. If you choose a **Simple** routing strategy, select a fleet ID from the list to associate with this alias. The list includes all fleets in eith currently selected AWS Region. You must create an alias in the same Region as the fleet.
+   1. If you choose a **Simple** routing strategy, select a fleet ID from the list to associate with this alias. The list includes all fleets in the currently selected AWS Region. You must create an alias in the same Region as the fleet.
 
    1. If you choose a **Terminal** routing strategy, enter a string value that you want Amazon GameLift Servers to return to a game client in response to a game session request. A request with a terminal alias throws an exception with the message embedded.
 
@@ -35,12 +35,8 @@ In the [Amazon GameLift Servers console](https://console.aws.amazon.com/gamelift
 ------
 #### [ AWS CLI ]
 
-Use the [`create-alias`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-alias.html) command to create an alias. .Amazon GameLift Servers creates the alias resource in your current default AWS Region (or you can add a --region tag to specify a different AWS Region).
+Use the [`create-alias`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-alias.html) command to create an alias. Amazon GameLift Servers creates the alias resource in your current default AWS Region (or you can add a --region tag to specify a different AWS Region).
 
 At minimum, include an alias name and routing strategy. For a simple routing strategy, specify the ID of a fleet in the same Region as the alias. For a terminal routing strategy, provide a message string.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

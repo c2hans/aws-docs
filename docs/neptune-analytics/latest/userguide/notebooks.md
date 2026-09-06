@@ -31,7 +31,3 @@ You can use a Neptune graph notebook to generate an interactive visualization of
 A wide variety of sample Jupyter notebooks are available in the Neptune [graph-notebook project](https://github.com/aws/graph-notebook). Some of these are purpose-built for learning how to get the most of a Neptune Analytics graph and its powerful built-in algorithms in the context of common real-world applications.
 
 After installing the graph-notebook project either locally or on SageMaker AI, you should be able to find sample notebooks under the notebook directory, `../Neptune/02-Neptune-Analytics`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

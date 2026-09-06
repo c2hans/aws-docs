@@ -39,7 +39,3 @@ aws quicksight register-user
 After using this operation, you get a response that includes a link labeled **Invitation URL**. Click the **Invitation URL** to set up a password and activate the new account. The new user then appear in the Quick Sight UI. You can use the `ListUsers` operation to list all users and their corresponding user IDs.
 
 For more information about `RegisterUser` operation, see [RegisterUser](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_RegisterUser.html)in the *Quick Sight API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick Sight. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quicksight` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

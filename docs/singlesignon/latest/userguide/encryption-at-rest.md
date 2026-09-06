@@ -82,7 +82,3 @@ For more information on AWS KMS, see [What is AWS Key Management Service?](https
 <a name="data-encryption-deletion-considerations"></a>
 
  Some AWS managed applications that you deploy with AWS IAM Identity Center, such as AWS Systems Manager and Amazon CodeCatalyst, store specific user and group attributes from IAM Identity Center in their own data store. Encryption at rest with a customer managed KMS key in IAM Identity Center does not extend to the IAM Identity Center user and group attributes stored in AWS managed applications. AWS managed applications support different encryption methods for the data they store. Finally, when you delete user and group attributes within IAM Identity Center, these AWS managed applications may continue to store this information past its deletion in IAM Identity Center. Refer to the user guide of your AWS managed applications for encryption and security of data stored within the applications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

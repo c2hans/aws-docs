@@ -6,7 +6,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 <a name="remote-mcp-deployment-patterns-on-aws"></a>
 
 AWS provides various services suitable for deploying remote MCP servers, each with distinct characteristics, operational models, and cost structures. Understanding these options allows you to select the deployment pattern that best aligns with your requirements, team capabilities, and organizational constraints.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

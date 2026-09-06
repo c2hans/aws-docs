@@ -50,7 +50,3 @@ The following are data retention output examples for different types of messages
 + [Text edit messages](dataretention-text-edit-messages.md)
 + [Reaction messages](dataretention-reaction-messages.md)
 + [Read receipt messages](dataretention-read-receipt-messages.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,3 @@ Determine how your developers access AWS services and resources through the [AWS
 After you authenticate, the AWS CLI manages temporary credentials for your session. When your session expires, enter `aws login` again to re-authenticate. For information about session duration settings, see [IAM role session duration](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html) in the IAM documentation.
 
 For AWS Partner integrations and third-party solutions, use short-lived credentials where possible. [IAM temporary delegation for AWS Partners](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-temporary-delegation-partner-guide.html) allows you integrate AWS Partner products by using short-lived credentials instead of long-lived access keys. [IAM Outbound Identity Federation](https://aws.amazon.com/blogs/aws/simplify-access-to-external-services-using-aws-iam-outbound-identity-federation/) allows AWS workloads to authenticate to external solutions by using short-lived tokens instead of long-lived API keys.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

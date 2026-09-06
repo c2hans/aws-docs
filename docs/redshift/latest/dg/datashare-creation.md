@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/datashare-creation.ht
 # Creating datashares
 <a name="datashare-creation"></a>
 
-With Amazon Redshift, you can share live data across Amazon Redshift clusters or AWS accounts using datashares. A datashare is a consumer-producer object that allows you to share live data from your Amazon Redshift cluster with other clusters or AWS accounts. Creating datashares enables secure data sharing while maintaining control over access and ensuring data remains up-to-date. The following sections provide details on creating datashares and adding database objects such as schemas, tables, and views to share live data securely.
+With Amazon Redshift, you can share live data across Amazon Redshift clusters or AWS accounts using datashares. A datashare is a consumer-producer object that you use to share live data from your Amazon Redshift cluster with other clusters or AWS accounts. Creating datashares enables secure data sharing while maintaining control over access and ensuring data remains up-to-date. The following sections provide details on creating datashares and adding database objects such as schemas, tables, and views to share live data securely.
 
 ## Create a datashare
 <a name="create-datashare-console"></a>
@@ -37,7 +37,7 @@ On the console, you can create datashares from the **Datashares** tabs in the cl
 
 1. In the **Data consumers** section, you can choose to publish to Amazon Redshift, or publish to the AWS Glue Data Catalog, which starts the process of sharing data with Lake Formation. Publishing your datashare to Amazon Redshift means sharing your data with another namespace or Amazon Redshift account that acts as the consumer.
 **Note**
-Once the datashare is created, you can't edit the configuration to publish to the other option.
+After the datashare is created, you can't edit the configuration to publish to the other option.
 
 1. Choose **Create datashare**.
 
@@ -176,7 +176,3 @@ You can add one or more data consumers to the datashares. Data consumers can be 
 You must explicitly choose to turn off or turn on sharing your datashare to clusters with public access.
 + Choose **Add namespaces to the datashare**. Namespaces are globally unique identifier (GUID) for Amazon Redshift cluster.
 + Choose **Add AWS accounts** to the datashare. The specified AWS accounts must have access permissions to the datashare.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

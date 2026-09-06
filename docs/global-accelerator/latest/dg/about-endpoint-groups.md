@@ -22,7 +22,3 @@ This section explains how to work with endpoint groups for standard accelerators
 + [Use traffic dials to adjust traffic flow to Regions](about-endpoint-groups-traffic-dial.md)
 + [Override listener ports for restricted ports or connection collisions](about-endpoint-groups-port-override.md)
 + [Ensure health check access for your accelerator](about-endpoint-groups-health-check-options.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

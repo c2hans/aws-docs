@@ -55,7 +55,3 @@ Implement comprehensive monitoring and alerting for Amazon WorkSpaces and AppStr
  To strengthen resilience in EUC environments, establish robust monitoring using Amazon CloudWatch to detect anomalies in instance health, network connectivity, and user activity. Set up CloudWatch alarms to proactively identify potential areas of improvement and run automated remediation workflows. Configure these workflows to automatically address critical events, such as instance failures or resource constraints, by initiating recovery actions such as instance restarts or scaling adjustments.
 
  Thoroughly test and validate automated remediation processes to minimize service interruptions and maintain continuous operations. Additionally, regularly review and refine your monitoring and automation strategies to align with evolving workload demands and infrastructure changes, supporting ongoing resilience in your EUC environments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

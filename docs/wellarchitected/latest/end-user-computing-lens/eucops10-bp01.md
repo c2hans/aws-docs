@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  **Chatbot:** With the evolution of AI/ML and generative AI, delivering an interactive user support capability may be possible for larger deployments. There are many services like Slack, Microsoft Teams, or [Amazon Q](https://aws.amazon.com/q/) that can accelerate the delivery of online assistance.
 
  People consume and retain information in different ways. Offering them varied and complementary ways to build their knowledge of new and improved desktop and application delivery services contributes to a more engaged workforce and a successful deployment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

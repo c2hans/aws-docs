@@ -32,7 +32,3 @@ Amazon EC2 Auto Scaling provides the following APIs for data retrieval.
 | <a name="autoscaling-DescribeTrafficSources"></a>[DescribeTrafficSources](https://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_DescribeTrafficSources.html) | Describe the target groups for the specified Auto Scaling group | List |
 | <a name="autoscaling-DescribeWarmPool"></a>[DescribeWarmPool](https://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_DescribeWarmPool.html) | Describe the warm pool associated with the Auto Scaling group | List |
 | <a name="autoscaling-GetPredictiveScalingForecast"></a>[GetPredictiveScalingForecast](https://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_GetPredictiveScalingForecast.html) | Retrieve the forecast data for a predictive scaling policy | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

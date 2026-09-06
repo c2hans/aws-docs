@@ -43,7 +43,3 @@ The following screenshot shows an example **Top contributors** tab for an applic
 ![The top contributors tab for an application layer event describes the top 5 contributors for a number of web request characteristics. The screen shows the top 5 source IP addresses, top 5 destination URLs, top 5 source countries, and top 5 user agents.](http://docs.aws.amazon.com/waf/latest/developerguide/images/shield-app-event-top-contributors.png)
 
 Contributor information is based on requests for both legitimate and potentially unwanted traffic. Larger volume events and events where the request sources aren't highly distributed are more likely to have identifiable top contributors. A significantly distributed attack could have any number of sources, making it hard to identify top contributors to the attack. If Shield Advanced doesn't identify significant contributors for a specific category, it displays the data as unavailable.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

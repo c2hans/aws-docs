@@ -42,7 +42,3 @@ The following table lists the descriptions and suggested workarounds for VARCHAR
 | 5  | The UTF-8 character is reserved as a surrogate. Surrogate code points (U\+D800 through U\+DFFF) are not valid. |
 | 8 | The byte sequence exceeds the maximum UTF-8 code point. |
 | 9 | The UTF-8 byte sequence does not have a matching code point. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

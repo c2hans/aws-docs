@@ -48,7 +48,3 @@ In an IAM policy, use a wildcard character in the `Resource` element only for pe
 Permissions for alias operations ([kms:CreateAlias](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateAlias.html), [kms:UpdateAlias](https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateAlias.html), [kms:DeleteAlias](https://docs.aws.amazon.com/kms/latest/APIReference/API_DeleteAlias.html)) must be attached to the alias and the KMS key. You can use `"Resource": "*"` in an IAM policy to represent the aliases and the KMS keys, or specify the aliases and KMS keys in the `Resource` element. For examples, see [Controlling access to aliases](alias-access.md).
 
 The examples in this topic provide more information and guidance for designing IAM policies for KMS keys. For IAM best practices for all AWS resources, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) in the *IAM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

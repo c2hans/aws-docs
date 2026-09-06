@@ -60,7 +60,3 @@ AWS Database Migration Service provides the following APIs for data retrieval.
 | <a name="dms-ListMigrationProjects"></a>[ListMigrationProjects](https://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html) | List the AWS DMS attributes for a migration projects | Read |
 | <a name="dms-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/dms/latest/APIReference/API_ListTagsForResource.html) | List all tags for an AWS DMS resource | Read |
 | <a name="dms-TestConnection"></a>[TestConnection](https://docs.aws.amazon.com/dms/latest/APIReference/API_TestConnection.html) | Test the connection between the replication instance and the endpoint | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

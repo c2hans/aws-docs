@@ -38,7 +38,3 @@ To view the Collections which contain a particular Model Group, complete the fol
 1. View the **Collection** column for your Model Group, which displays the name of the Collection which contains this Model Group. If multiple Collections contain this Model Group, choose the **Collection** column entry to display a pop-up listing the Collections which contain this Model Group.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

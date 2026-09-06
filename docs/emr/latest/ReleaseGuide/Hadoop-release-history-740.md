@@ -29,7 +29,3 @@ See the following list for new Hadoop features in Amazon EMR 7.4.0.
   + **fs.s3a.block.size=64M** – This is up from 32M.
   + **fs.s3a.multipart.size=128M** – This is up from 64M.
 + Out-of-the-box performance enhancing optimizations for accelerating MapReduce jobs with the S3A filesystem.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

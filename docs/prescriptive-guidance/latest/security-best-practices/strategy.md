@@ -33,7 +33,3 @@ In some industries, when developing a backup strategy, you must also consider th
 Consult your security compliance teams to validate whether your backup resources and operations should be included in or segmented from the scope of your compliance programs. Including backup and recovery as a critical part of your security program will help you understand where data is across your environment and appropriately define compliance scope.
 
 For architectural best practices for designing and operating reliable, secure, efficient, and cost-effective workloads in the cloud, see [Backup and recovery approaches using AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/backup-recovery/welcome.html) and [ Reliability Pillar – AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

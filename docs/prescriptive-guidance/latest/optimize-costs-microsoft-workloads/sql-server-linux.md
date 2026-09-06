@@ -67,7 +67,3 @@ The following diagram shows an architecture for a solution that uses the Windows
 + [Installation guide for SQL Server on Linux](https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-setup?view=sql-server-ver16) (Microsoft Learn)
 + [Deploying to SQL Server Always on Linux with AWS Launch Wizard](https://aws.amazon.com/blogs/modernizing-with-aws/deploy-microsoft-sql-server-always-on-to-linux-with-aws-launch-wizard) (Microsoft Workloads on AWS Blog)
 + [Highly Available SQL Server on Linux](https://aws.amazon.com/blogs/opensource/deploying-a-highly-available-microsoft-sql-server-on-linux-on-aws/) (AWS Open Source Blog)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,3 @@ Could not resolve dependencies for project {{your project name}}: Failure to fin
 ```
 
 To resolve this error, you must download the Apache Flink source code (version 1.8.2 from [https://flink.apache.org/downloads.html](https://flink.apache.org/downloads.html)) for the connector. For instructions about how to download, compile, and install the Apache Flink source code, see [Using the Apache Flink Kinesis Streams connector with previous Apache Flink versions](earlier.md#how-creating-apps-building-kinesis).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

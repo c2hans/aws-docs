@@ -21,7 +21,3 @@ Please make sure your firewall rules and security groups allow the following:
 If you choose to have multiple Amazon DCV Connection Gateway hosts to improve availability, then a network load balancer will be present between the clients and the Connection Gateway hosts. In this case the gateway must be reachable from the load balancer nodes. When using a load balancer you may also want to use a health-check connection; in this case the load balancer need to be able to reach the TCP port of the health-check service exposed by the Amazon DCV Connection Gateway.
 
 If using a Network Load Balander, refer to [its documentation](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/target-group-register-targets.html) for more details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

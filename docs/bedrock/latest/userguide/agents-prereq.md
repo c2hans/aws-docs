@@ -18,7 +18,3 @@ Before creating an agent, review the following prerequisites and determine which
 1. (Optional) Create a [guardrail](guardrails.md) to implement safeguards for your agent and to prevent unwanted behavior from model responses and user messages. You can then associate it with your agent.
 
 1. (Optional) Purchase [Provisioned Throughput](prov-throughput.md) to increase the number and rate of tokens that your agent can process in a given time frame. You can then associate it with an alias of your agent when you [create a version of your agent and associate an alias with it](agents-deploy.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -335,7 +335,3 @@ Compare and watch out for related utilization patterns. For example, a workload 
 
 Inspect network activity
 In the **Network** section, examine the inbound and outbound network traffic metrics, both in terms of data volume and packet count. These give you insight into the network activity for your EC2 instances. Look out for both regular or anomalous spikes in network traffic, or imbalances between inbound and outbound data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

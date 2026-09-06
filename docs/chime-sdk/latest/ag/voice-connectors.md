@@ -44,7 +44,3 @@ To use an Amazon Chime SDK Voice Connector, you must have an IP Private Branch E
 To ensure security for calls sent from AWS to your on-premises phone system, we recommend configuring an SBC between AWS and your phone system. Allow list SIP traffic to the SBC from the Amazon Chime SDK Voice Connector signaling and media IP addresses. For more information, see the recommended ports and protocols for [Amazon Chime SDK Voice Connector](network-config.md#cvc).
 
 Amazon Chime SDK Voice Connectors expect phone numbers to be in E.164 format.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

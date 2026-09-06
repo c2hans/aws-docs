@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  Maintaining appropriate spare capacity is crucial, as Outposts has redundant components, and spare compute and storage capacity ensure hardware failures do not affect workloads and minimize sunk costs. AWS tools like [AWS Compute Optimizer](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-optimizations.html) can be used for rightsizing workloads in Outposts while considering business objectives and utilization goals.
 
  Monitor the [What's New with AWS](https://aws.amazon.com/new/) webpage to evaluate new services and offerings for Outposts and Local Zones. Adopt services that can reduce the cost profile of workloads and foster innovation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

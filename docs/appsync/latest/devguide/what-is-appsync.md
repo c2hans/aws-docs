@@ -63,7 +63,3 @@ AWS AppSync is priced based on millions of requests and updates. Caching costs a
  The following lists the exceptions to general AWS AppSync pricing:
 + Requests are not charged for authorization and authentication failures.
 + Calls to methods that require API keys are not charged when API keys are missing or invalid.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

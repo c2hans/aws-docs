@@ -36,7 +36,3 @@ String/format validations are used to check whether the extracted data adheres t
 With BDA's custom validation capabilities, you can create complex validation rules that combine multiple conditions, calculations, or logical operations to ensure the extracted data meets your desired criteria. These validations can involve cross-field checks, calculations, or any other custom logic specific to your business processes or regulatory requirements.
 
 By incorporating these validation rules into your blueprints, BDA can automatically validate the extracted data, ensuring its accuracy and compliance with your specific requirements. This capability enables you to make trigger human reviews where validations have failed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ The following table describes the differences between channel encoder logs and c
 | Cost | There is a cost for these logs, as part of your charges for Amazon CloudWatch Logs. See [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/). Remember to [remove the logs](working-with-logs.md#manage-log-storage) after you delete the channel. | These logs are free. |
 | CloudWatch log stream | The log stream is named after the ARN/pipeline.  | The log stream is named after the ARN/pipeline with \_as\_run appended to the name. |
 | Automation | You should not automate any processing based on the wording in these logs because that wording is subject to change.(By comparison, you can automate based on the wording in alerts, which are accessed using CloudWatch Events, because the wording of alerts does not change.)  | You can automate based on the wording in these logs. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

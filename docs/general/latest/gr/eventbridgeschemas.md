@@ -54,7 +54,3 @@ The following are the service endpoints and service quotas for this service.
 | Registries | Each supported Region: 10 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/schemas/quotas/L-85663EFB)  | The maximum number of registries that you can create in the current region. |
 | SchemaVersions | Each supported Region: 100 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/schemas/quotas/L-3C443A2A)  | The maximum number of versions per schema that you can create in the current region. |
 | Schemas | Each supported Region: 100 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/schemas/quotas/L-EE9E5FA9)  | The maximum number of schemas per registry that you can create in the current region. (Except Discovered Schema Registry) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

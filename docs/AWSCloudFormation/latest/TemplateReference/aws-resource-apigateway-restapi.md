@@ -471,7 +471,3 @@ Resources:
 <a name="aws-resource-apigateway-restapi--seealso"></a>
 + [restapi:create](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateRestApi.html) in the *Amazon API Gateway REST API Reference*
 + [Tutorial: Building a private REST API](https://docs.aws.amazon.com/apigateway/latest/developerguide/private-api-tutorial.html) in the *API Gateway Developer Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

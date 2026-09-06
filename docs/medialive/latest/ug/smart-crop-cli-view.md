@@ -18,7 +18,3 @@ To view information about Elemental Inference features, use `get-feed` to obtain
   The following statuses are most interesting when you are using MediaLive to work with Elemental Inference features:
   + `ACTIVE` means that the feed is associated with the channel.
   + `DELETED` means that MediaLive has deleted the channel. After a short period \*\*how long?, the status will always change to `ARCHIVED`. There is no way to change the status of a feed that is `DELETED` or `ARCHIVED`. If you reenable Elemental Inference features in a channel, MediaLive will create a new feed that has a new ID.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

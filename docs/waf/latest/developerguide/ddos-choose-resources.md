@@ -41,7 +41,3 @@ Continue through the console wizard screens to complete the configuration of you
 + [Configuring health-based detection for your protections with Shield Advanced and Route 53](ddos-get-started-health-checks.md)
 + [Configuring alarms and notifications with Shield Advanced and Amazon SNS](ddos-get-started-create-alarms.md)
 + [Reviewing and finishing your protection configuration in Shield Advanced](ddos-get-started-review-and-configure.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

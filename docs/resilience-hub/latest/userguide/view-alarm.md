@@ -77,7 +77,3 @@ To view alarms from the dashboard, choose **Dashboard** from the left navigation
    + **AppComponent** – Indicates the Application Components (AppComponents) that are associated with this alarm.
    + **Reference ID** – Indicates the logical identifier of the AWS CloudFormation stack event in AWS CloudFormation.
    + **Recommendation ID** – Indicates the logical identifier of the AWS CloudFormation stack resource in AWS CloudFormation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

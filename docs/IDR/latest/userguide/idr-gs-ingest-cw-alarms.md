@@ -16,7 +16,3 @@ To ensure the alarms you onboard are effective, AWS Incident Detection and Respo
 + Identify and create alarms for [custom metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html) that directly represent the customer experience for your workload.
 
 For a list of recommended Amazon CloudWatch alarms for common AWS services, see the [Incident Detection and Response Alarm Best Practices on AWS re:Post](https://repost.aws/selections/KP6FA7iQgVSVeSNq1jAcjwxg/incident-detection-and-response-idr).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,7 +56,3 @@ Large objects, such as 500GB or larger, also raise this wait event because it ca
 If the vacuum operations complete as expected, no remediation is needed. In other words, this wait event doesn't necessarily indicate a problem. It indicates that the vacuum is being put to sleep for the period of time specified in the delay parameter so that resources can be applied to other processes that need to complete.
 
 If you want vacuum operations to complete faster, you can lower the delay parameters. This shortens the time that the vacuum sleeps.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

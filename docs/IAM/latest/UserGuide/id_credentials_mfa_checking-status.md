@@ -54,7 +54,3 @@ For more information on enabling MFA, see the following:
 + [Assign a virtual MFA device in the AWS Management Console](id_credentials_mfa_enable_virtual.md)
 + [Assign a passkey or security key in the AWS Management Console](id_credentials_mfa_enable_fido.md)
 + [Assign a hardware TOTP token in the AWS Management Console](id_credentials_mfa_enable_physical.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

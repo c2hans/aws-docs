@@ -31,7 +31,3 @@ The File System Access API excludes or limits access to specific directories tha
 For more information, including examples of sensitive directories, see [Users giving access to more, or more sensitive files than they intended](https://wicg.github.io/file-system-access/#privacy-wide-access) in the *File System Access W3C Draft Community Group Report*.
 
 If you use Windows Subsystem for Linux (WSL), the File System Access API excludes access to the entire Linux directory because of its location within your Windows system. You can use Infrastructure Composer with *local sync* deactivated or configure a solution to sync project files from your WSL directory to a working directory in Windows. Then, use Infrastructure Composer *local sync* mode with your Windows directory.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -83,7 +83,3 @@ For every field these resources accept, see [RayCluster Configuration](https://d
 <a name="sagemaker-hyperpod-ray-manage-kubectl-submit"></a>
 
 Applying a `RayJob` creates a cluster for that job. To submit to a cluster that is already running, use the `toolkit-for-ray-on-sagemaker-ai` package. For more information, see [Submitting jobs remotely with the toolkit library](sagemaker-hyperpod-ray-remote-job-submission.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

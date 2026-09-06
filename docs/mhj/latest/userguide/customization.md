@@ -61,7 +61,3 @@ If you create a journey from a template that doesn't support this questionnaire-
 1. Answer the questions that appear in the right panel, then choose **Apply**. Based on the answers you provided, Migration Hub Journeys moves tasks that don't apply to your migration scenario out of scope.
 
 1. When you see a message stating that the customization was successful, choose **Exit**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

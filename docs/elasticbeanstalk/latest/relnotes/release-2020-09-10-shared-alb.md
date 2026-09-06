@@ -22,7 +22,3 @@ For more information, see [Configuring a shared Application Load Balancer](https
 
 **Note**
 In a related improvement, Elastic Beanstalk also added the ability to monitor environment health using new metrics at the target group level. An Application Load Balancer (both dedicated and shared) associates a target group (group of Amazon EC2 instances) with each Elastic Beanstalk environment. Target group metrics let you use Amazon CloudWatch to track an aggregated health overview for each environment using an Application Load Balancer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

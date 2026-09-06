@@ -64,7 +64,3 @@ You can either add a single SBOM file or a single zip file containing multiple S
 1. Choose **Create package and version**. The package version page appears and you can see the validation status of your SBOM file in the **Added SBOM file** window. The initial status will be `In progress` as the SBOM file undergoes validation.
 **Note**
 The SBOM file validation statuses are `Invalid file`, `Not started`, `In progress`, `Validated (SPDX)`, `Validated (CycloneDX)`, and the validation failure reasons.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

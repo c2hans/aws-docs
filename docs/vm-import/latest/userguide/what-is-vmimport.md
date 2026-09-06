@@ -50,7 +50,3 @@ With Amazon Web Services, you pay only for what you use. There is no additional 
 Consider the following services as you plan your migration to AWS:
 + **AWS Application Discovery Service** – You can use the Application Discovery Service to gather information about your data center, such as server utilization data and dependency mappings, so that you can view information about your workloads. For more information, see the [Application Discovery Service User Guide](https://docs.aws.amazon.com/application-discovery/latest/userguide/).
 + **AWS Transform MGN** – If you use VMware vSphere, Microsoft Hyper-V, or Microsoft Azure, you can use MGN to automate the migration of your virtual machines to AWS. For more information, see the [MGN User Guide](https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vm-import` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

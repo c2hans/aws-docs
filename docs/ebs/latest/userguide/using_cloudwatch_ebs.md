@@ -9,7 +9,7 @@ Amazon CloudWatch metrics are statistical data that you can use to view, analyze
 
 Data is available automatically in 1-minute periods at no charge.
 
-When you get data from CloudWatch, you can include a `Period` request parameter to specify the granularity of the returned data. This is different than the period that we use when we collect the data (1-minute periods). We recommend that you specify a period in your request that is equal to or greater than the collection period to ensure that the returned data is valid.
+When you get data from CloudWatch, you can include a `Period` request parameter to specify the granularity of the returned data. This is different than the period that EBS uses to collect the data (1-minute periods). We recommend that you specify a period in your request that is equal to or greater than the collection period to make sure that the returned data is valid.
 
 You can get the data using either the CloudWatch API or the Amazon EC2 console. The console takes the raw data from the CloudWatch API and displays a series of graphs based on the data. Depending on your needs, you might prefer to use either the data from the API or the graphs in the console.
 
@@ -109,7 +109,3 @@ After you create a volume, you can view the volume's monitoring graphs in the Am
 | Average write latency (ms/op) | `Avg(VolumeTotalWriteTime) × 1000`<br />For Nitro-based instances, the following formula derives Average Write Latency using [CloudWatch Metric Math](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html):<br />`(Sum(VolumeTotalWriteTime) / Sum(VolumeWriteOps)) * 1000`<br />The `VolumeTotalWriteTime` and `VolumeWriteOps` metrics are available in the EBS CloudWatch console. |
 
 For the average latency graphs and average size graphs, the average is calculated over the total number of operations (read or write, whichever is applicable to the graph) that completed during the period.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

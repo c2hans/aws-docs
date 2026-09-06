@@ -419,7 +419,3 @@ For more information about invoking a Lambda function from your code, see [Invok
    If successful, the output is a list of labels found in the image. If no labels are returned, consider lowering the confidence value that you set in step 7 of [Step 1: Create an AWS Lambda function (console)](#example-lambda-create-function).
 
 1. If you have finished with the Lambda function and the model isn't used by other applications, [stop the model](rm-stop.md). Remember to [start the model](rm-start.md) the next time you want use the Lambda function.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

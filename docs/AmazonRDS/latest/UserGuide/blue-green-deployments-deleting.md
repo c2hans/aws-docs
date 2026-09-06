@@ -84,7 +84,3 @@ aws rds delete-blue-green-deployment ^
 To delete a blue/green deployment by using the Amazon RDS API, use the [`DeleteBlueGreenDeployment`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteBlueGreenDeployment.html) operation with the following parameters:
 + `BlueGreenDeploymentIdentifier` – The resource ID of the blue/green deployment to be deleted.
 + `DeleteTarget` – Specify `TRUE` to delete the DB instances in the green environment or `FALSE` to retain them. Cannot be `TRUE` if the blue/green deployment has a status of `SWITCHOVER_COMPLETED`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

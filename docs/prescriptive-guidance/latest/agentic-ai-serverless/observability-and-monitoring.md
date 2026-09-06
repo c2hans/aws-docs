@@ -97,7 +97,3 @@ Consider the following best practices for observability in serverless and genera
 In AI-driven serverless systems, you don't monitor hosts. Instead, you monitor behavior, cost, and correctness. Observability provides the foundation for operational resilience, cost control and forecasting, LLM performance evaluation, governance and compliance, and continuous prompt and agent improvement.
 
 Native AWS services that support observability and monitoring, along with structured, event-aware telemetry provide the necessary capabilities. With these capabilities in place, teams can confidently operate AI workloads at scale, knowing what's happening, where, and why.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

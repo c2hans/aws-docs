@@ -23,7 +23,3 @@ This chapter provides troubleshooting information for common issues you might en
 + [Troubleshoot Web Application Firewall integration issues](waf-integration-issues.md)
 + [Troubleshoot service-managed user issues](service-managed-issues.md)
 + [Troubleshoot AS2 issues](as2-troubleshooting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ Client-side encryption isn't a valid method for protecting the source image or c
 To protect your application's data at rest, App Runner encrypts all stored copies of your application source image or source bundle. When you create an App Runner service, you can provide an AWS KMS key. If you provide one, App Runner uses your provided key to encrypt your source. If you don't provide one, App Runner uses an AWS managed key instead.
 
 For details about App Runner service creation parameters, see [CreateService](https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html). For information about AWS Key Management Service (AWS KMS), see the [AWS Key Management Service Developer Guide](https://docs.aws.amazon.com/kms/latest/developerguide/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

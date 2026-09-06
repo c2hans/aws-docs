@@ -18,7 +18,3 @@ There are a variety of roles for people who might create and manage schedules in
 1. **Agent** – Answers contacts, views the generated schedule, manages requests for time off, overtime (OT), and voluntary time off (VTO).
 
 Connect Customer provides security profile permissions that you can assign to each role, so that you can manage access to specific features by role. For more information, see [Assign permissions](required-optimization-permissions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

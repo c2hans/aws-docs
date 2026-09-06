@@ -129,7 +129,3 @@ The following IAM policy allows read access to all resources that you create in 
 ------
 
 For more information on setting up encryption for your MediaConnect flows, see [Data protection](https://docs.aws.amazon.com/mediaconnect/latest/ug/data-protection.html) in this guide. For general information about using Secrets Manager, refer to the [AWS Secrets Manager User Guide](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -9,7 +9,7 @@ Integrations in Amazon Quick connect you to external applications and services f
 
 You can create three types of integrations:
 
-**Action connectors**
+**Connectors**
 Initiate real-time calls to perform actions in external services. Use action connectors to address user natural language chat requests, automate workflows, send notifications, and/or trigger processes in connected applications.
 
 **Data access integrations**
@@ -28,11 +28,7 @@ Not all applications support all integration types. Available options depend on 
 + [Set up integrations in the console](integration-console-setup-process.md)
 + [Integration workflows](integration-workflows.md)
 + [Knowledge bases](knowledge-base-integrations.md)
-+ [Action connectors](action-integrations.md)
++ [Connectors](action-integrations.md)
 + [Integration-specific guides](integration-guides.md)
 + [Bring Your Own Amazon Q Business Index (BYOI)](quick-byoa.md)
 + [Bring your own Amazon Bedrock managed knowledge base](quick-byo-bedrock-kb.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

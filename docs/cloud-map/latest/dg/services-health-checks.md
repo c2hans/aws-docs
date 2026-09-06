@@ -32,7 +32,3 @@ If you configure AWS Cloud Map to use a custom health check when you register an
 + You want to use a third-party health checker regardless of where your resources are.
 
 When you use a custom health checks, AWS Cloud Map doesn't check the health of a given resource directly. Instead, the third-party health checker checks the health of the resource and returns a status to your application. Your application will then need to submit a `[UpdateInstanceCustomHealthStatus](https://docs.aws.amazon.com/cloud-map/latest/api/API_UpdateInstanceCustomHealthStatus.html)` request that relays this status to AWS Cloud Map. If the initial status relayed is `UNHEALTHY`, and if there isn't another `[UpdateInstanceCustomHealthStatus](https://docs.aws.amazon.com/cloud-map/latest/api/API_UpdateInstanceCustomHealthStatus.html)` within 30 seconds that relays a status of `HEALTHY`, the resource is confirmed to be unhealthy. AWS Cloud Map stops routing traffic to that resource.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Map. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud-map` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

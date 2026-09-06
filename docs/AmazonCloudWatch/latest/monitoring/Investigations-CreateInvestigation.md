@@ -42,7 +42,3 @@ For detailed instructions about steps that you can take while continuing the inv
 <a name="Investigations-CreateInvestigation-AlarmAction"></a>
 
 When you create a CloudWatch alarm, you can specify for it to automatically start an investigation when it goes into ALARM state. You can do this for both metric alarms and composite alarms. For more information, see [Start a CloudWatch investigations from an alarm](Start-Investigation-Alarm.md), [Create a CloudWatch alarm based on a static threshold](ConsoleAlarms.md) and [Create a composite alarm](Create_Composite_Alarm.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

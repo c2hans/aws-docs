@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Build a V-Ray Standalone conda package for Deadline Cloud
 <a name="examples-conda-vray"></a>
 
-The [vray](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/vray) conda recipe builds a [V-Ray Standalone renderer](https://docs.chaos.com/display/VNS/V-Ray+Standalone+Home) conda package.
+The [vray](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/vray) conda recipe on the GitHub website builds a V-Ray Standalone renderer conda package. For more information about V-Ray Standalone, see [V-Ray Standalone Home](https://docs.chaos.com/display/VNS/V-Ray+Standalone+Home) on the Chaos website.
 
-To build the recipe, download the V-Ray Standalone archive (`vraystd_adv_71000_rhel8_clang-gcc-11.2` for x86 or `vraystd_adv_71000_rhel8_arm64_clang-gcc-11.2` for ARM) from [Chaos](https://download.chaos.com/?platform=47&product=47). A Chaos account is required. Place the file in the `conda_recipes/archive_files` directory of your samples repository clone.
+To build the recipe, download the V-Ray Standalone archive (`vraystd_adv_71000_rhel8_clang-gcc-11.2` for x86 or `vraystd_adv_71000_rhel8_arm64_clang-gcc-11.2` for ARM) from the [Chaos download page](https://download.chaos.com/?platform=47&product=47) on the Chaos website. A Chaos account is required. Place the file in the `conda_recipes/archive_files` directory of your samples repository clone.
 
 Submit the build:
 
@@ -18,7 +18,3 @@ Submit the build:
 The queue's IAM role needs `s3:PutObject` permission for the `Conda/*` prefix in the job attachments bucket to publish the built package.
 
 For a job bundle that uses this package, see [Render V-Ray standalone scenes on Deadline Cloud](examples-jb-vray-render.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

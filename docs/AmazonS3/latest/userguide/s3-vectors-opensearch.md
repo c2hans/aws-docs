@@ -94,7 +94,3 @@ Before using OpenSearch with S3 Vectors engine, ensure you have:
 <a name="s3-vectors-opensearch-engine-getting-started"></a>
 
 To use OpenSearch with S3 Vectors engine, set your engine to `S3_Vectors` during index creation in OpenSearch. For more information about the template that you use when creating an index in OpenSearch Service, including where to specify the engine type, see [Methods and engines](https://docs.opensearch.org/docs/latest/field-types/supported-field-types/knn-methods-engines/). For more information about the integration between OpenSearch and S3 Vectors engine, see [Advanced search capabilities with an S3 Vectors engine](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/s3-vector-opensearch-integration-engine.html) in the *Amazon OpenSearch Service Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

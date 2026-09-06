@@ -39,7 +39,3 @@ Use the provided URL to access the KOTS Admin Console. The password to log in is
 This interface is used for configuring your Wickr Enterprise installation to set up networks, users, and federation. It's accessible over HTTPS at the DNS name that you configured to point to your Load Balancer. If DNS was configured automatically with a public hosted zone, the domain name is the value of the `wickr/domainName` context value.
 
 The default username is `admin`, with the password `Password123`. You will be required to change this password on first log in.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

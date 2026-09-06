@@ -20,7 +20,3 @@ AWS Supply Chain supports rebalance planning horizon for up to six weeks.
 + **New Insights** – This section displays all new insights that AWS Supply Chain discovers after you created your Insight Watchlist. AWS Supply Chain scans for Inventory Risk Insights every 6 hours, and Lead Time Insights every 24 hours.
 + **In Review** – This section displays all insights that are currently under review.
 + **Resolved** – This section displays resolved insights.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

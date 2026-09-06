@@ -43,7 +43,3 @@ The following fields must be present in the input file:
 + **ContentMetadata**   Indicates whether you removed sensitive information from the transcript. Set the `Output` field to "Raw" if the transcript contains sensitive information.
 + **CustomerMetadata**   A unique identifier for the conversation.
 + **Transcript**   The text of the conversation between parties in the conversation. Each turn of the conversation is identified with a unique identifier.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ The following table describes the goals of the AWS Managed Services (AMS) servic
   - **Performance Indicator (PI):** Response time for first and every subsequent reply
   - **Plus (Business Days, M-F 8AM to 6PM local time):** <=8 hours
   - **Premium (Calendar Days, 24 x 7):** <=4 hours
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

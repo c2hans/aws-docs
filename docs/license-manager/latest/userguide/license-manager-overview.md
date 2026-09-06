@@ -46,7 +46,3 @@ License asset groups are particularly valuable in the following scenarios:
 + **Multi-account organizations** - When using AWS Organizations with multiple accounts and requiring centralized license oversight from a management or delegated administrator account.
 + **Automated compliance monitoring** - When you need proactive license expiration notifications and automated compliance tracking across your entire AWS environment.
 + **Audit preparation** - When you need comprehensive, organization-wide license usage reports for vendor audits or internal compliance reviews.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

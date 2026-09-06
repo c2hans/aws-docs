@@ -14,7 +14,3 @@ AWS Data Exchange for APIs (Test Product) contains an API data set named **AWS D
 + [Viewing the API](tutorial-view-api.md)
 + [Downloading the API specification](tutorial-download-api-spec.md)
 + [Making an API call](tutorial-make-api-call-console.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

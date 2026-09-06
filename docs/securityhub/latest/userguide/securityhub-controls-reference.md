@@ -612,7 +612,3 @@ Choose a control to review additional details. Controls are listed in alphabetic
 |  [WAF.12](waf-controls.md#waf-12)  |  AWS WAF rules should have CloudWatch metrics enabled  |  AWS Foundational Security Best Practices v1.0.0, NIST SP 800-53 Rev. 5, NIST SP 800-171 Rev. 2  |  MEDIUM  |  ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-no.png) No  |  Change triggered  |
 |  [WorkSpaces.1](workspaces-controls.md#workspaces-1)  | WorkSpaces user volumes should be encrypted at rest | AWS Foundational Security Best Practices | MEDIUM | ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-no.png) No | Change triggered |
 |  [WorkSpaces.2](workspaces-controls.md#workspaces-2)  | WorkSpaces root volumes should be encrypted at rest | AWS Foundational Security Best Practices | MEDIUM | ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-no.png) No | Change triggered |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

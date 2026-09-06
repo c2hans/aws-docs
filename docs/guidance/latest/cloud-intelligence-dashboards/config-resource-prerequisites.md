@@ -226,7 +226,3 @@ The most important decision is whether to deploy the dashboard on a dedicated Da
 <a name="deployment-instructions"></a>
 + Follow [these instructions](config-resource-log-archive.md) to deploy the dashboard in the **AWS Config** account, or in a standalone AWS account.
 + Follow [these instructions](config-resource-dashboard-account.md) to deploy the dashboard in the **Dashboard** account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

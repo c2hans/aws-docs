@@ -75,7 +75,3 @@ Establish baseline behaviors for your workload and monitor for abnormalities to 
 +  SAP Documentation: [SAP Enterprise Threat Detection](https://help.sap.com/viewer/eb42e48f5e9c4c9ab58a7ad73ff3bc66/LATEST/en-US/e12aa17b106c4c6193b7d593328aad48.html)
 +  Well-Architected Framework [Security]: [Security Incident Response](https://docs.aws.amazon.com/wellarchitected/latest/framework/sec-incresp.html)
 +  AWS Documentation: [AWS Security Incident Response - Technical Whitepaper](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/welcome.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

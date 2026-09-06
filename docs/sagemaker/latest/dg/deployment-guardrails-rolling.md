@@ -116,7 +116,3 @@ If your rolling deployments fails and the auto-rollback fails as well, your endp
 You can make another call to the [UpdateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateEndpoint.html) API to return your endpoint to a healthy state. Specify your desired endpoint configuration and deployment configuration (either as a rolling deployment, a blue/green deployment, or neither) to update your endpoint.
 
 You can call the [DescribeEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeEndpoint.html) API to check the health of your endpoint again, which is returned in the `VariantStatus` object as the `Status` field. If your update is successful, your endpoint’s `Status` returns to `InService`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

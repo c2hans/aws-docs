@@ -109,7 +109,3 @@ Explains how to create the Amazon Q Business application integrated with IAM Ide
 
 ** [Connecting Amazon Q Business data source connectors](supported-connectors.md) **
 Configuration information for specific connectors to use with your Amazon Q Business web experience.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

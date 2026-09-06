@@ -39,7 +39,3 @@ If you want to use an existing Amazon SNS topic instead of creating a new one, i
 1. Navigate to your repository and create a test branch from the default branch.
 
 1. After you create the branch, the notification rule sends a notification to all topic subscribers with information about that event.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

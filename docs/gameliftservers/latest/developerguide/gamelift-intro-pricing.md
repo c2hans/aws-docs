@@ -34,6 +34,4 @@ Anywhere hosting runs on game hosting resources that you supply and manage, so t
 
 Use the **Pricing calculator for Amazon GameLift Servers** to estimate costs for different Amazon GameLift Servers configurations. Use the calculator when designing your game hosting solution or to forecast costs for configuration changes. See [Generate Amazon GameLift Servers pricing estimates](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/gamelift-calculator.html).
 
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+For information about tuning your fleet configuration, capacity scaling, and game session placement to reduce hosting costs, see [Cost optimization strategies](gamelift-pricing-cost-optimization.md).

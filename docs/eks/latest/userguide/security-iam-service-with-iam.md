@@ -148,7 +148,3 @@ Amazon EKS supports service roles. For more information, see [Amazon EKS cluster
 <a name="security-iam-service-with-iam-roles-choose"></a>
 
 When you create a cluster resource in Amazon EKS, you must choose a role to allow Amazon EKS to access several other AWS resources on your behalf. If you have previously created a service role, then Amazon EKS provides you with a list of roles to choose from. It’s important to choose a role that has the Amazon EKS managed policies attached to it. For more information, see [Check for an existing cluster role](cluster-iam-role.md#check-service-role) and [Check for an existing node role](create-node-role.md#check-worker-node-role).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -123,7 +123,3 @@ For information about sending OTel metrics to CloudWatch, see [Using OpenTelemet
 + [Third-party data sources integration](third-party-integration-setup.md)
 + [Custom log data from CloudWatch Logs or an Amazon S3 bucket](ingestion-custom-data-sources.md)
 + [AWS service logs from CloudWatch Logs](aws-service-logs-from-cwl.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

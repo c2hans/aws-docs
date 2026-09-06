@@ -50,7 +50,3 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/S3-tutorial-pr
    1. To load sample data into the table to export to Amazon S3, follow the steps at [Inserting and loading data into an Amazon Keyspaces table](getting-started.dml.create.md).
 
 After completing the prerequisite steps, proceed to [Step 1: Bootstrap the infrastructure and AWS Glue jobs](S3-tutorial-step1.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

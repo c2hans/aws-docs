@@ -38,7 +38,3 @@ Hyperparameters are parameters that are set before a machine learning model begi
 | use\_pretrained\_model | Flag to use pre-trained model for training. If set to 1, then the pretrained model with the corresponding number of layers is loaded and used for training. Only the top FC layer are reinitialized with random weights. Otherwise, the network is trained from scratch.<br />**Optional**<br />Valid values: 0 or 1<br />Default value: 0 |
 | use\_weighted\_loss | Flag to use weighted cross-entropy loss for multi-label classification (used only when `multi_label` = 1), where the weights are calculated based on the distribution of classes.<br />**Optional**<br />Valid values: 0 or 1<br />Default value: 0 |
 | weight\_decay | The coefficient weight decay for `sgd` and `nag`, ignored for other optimizers.<br />**Optional**<br />Valid values: float. Range in [0, 1].<br />Default value: 0.0001 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

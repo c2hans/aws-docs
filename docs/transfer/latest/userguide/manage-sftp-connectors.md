@@ -21,6 +21,13 @@ aws transfer update-connector --sftp-config '{"UserSecretId":"{{secret-ARN}}"}' 
    --connector-id {{connector-id}} --region {{region-id}}
 ```
 
+The following command configures ordered secret version stages for fallback authentication on an existing connector. To use this example command, replace the `{{user input placeholders}}` with your own information.
+
+```
+aws transfer update-connector --sftp-config '{"OrderedUserSecretVersionStages": ["AWSCURRENT", "AWSPREVIOUS"]}' \
+   --connector-id {{connector-id}} --region {{region-id}}
+```
+
 ### Updating VPC connectivity settings
 <a name="update-vpc-connector"></a>
 
@@ -79,7 +86,3 @@ You can get much of this information, albeit in a different format, by running t
 aws transfer describe-connector --connector-id {{your-connector-id}}
 ```
 For more information, see [DescribeConnector](https://docs.aws.amazon.com/transfer/latest/APIReference/API_DescribeConnector.html) in the API reference.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

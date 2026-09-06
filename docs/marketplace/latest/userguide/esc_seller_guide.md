@@ -249,7 +249,3 @@ The following table describes common issues you may encounter when registering f
 | CPPO transaction unavailable or fails in ESC | Both the ISV and the Channel Partner must be individually registered in the AWS Marketplace in the AWS ESC to transact within the same partition. |
 
 If you cannot resolve your issue using the table above, contact the AWS Marketplace Seller Operations Team through the AMMP. Choose [Contact Us](https://aws.amazon.com/marketplace/management/contact-us/?form=true), select the appropriate issue category, and provide your AWS account ID and ESC catalog context.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

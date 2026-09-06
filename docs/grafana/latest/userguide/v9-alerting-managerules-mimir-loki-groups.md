@@ -26,7 +26,3 @@ You can organize your rules. Rules are created within rule groups, and rule grou
 For namespaces, you can only edit the name. For rule groups, you change the name, or the evaluation interval for rules in the group. For example, you can choose `1m` to have the rules be evaluated once per minute, or `30s` to evaluate once every 30 seconds.
 
 1. Choose **Save changes**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

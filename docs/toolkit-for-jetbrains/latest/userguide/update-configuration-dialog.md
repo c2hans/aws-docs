@@ -46,7 +46,3 @@ The **Update Configuration** dialog box contains the following items:
 
 **Enable AWS X-Ray**
 (Optional) If selected, [Lambda enables AWS X-Ray](https://docs.aws.amazon.com/lambda/latest/dg/services-xray.html) to detect, analyze, and optimize performance issues with the function. X-Ray collects metadata from Lambda and any upstream or downstream services that make up your function. X-Ray uses this metadata to generate a detailed service graph that shows performance bottlenecks, latency spikes, and other issues that impact function performance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

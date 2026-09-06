@@ -25,7 +25,3 @@ Take note of the following attributes from an investigations report.
   Investigations that are assigned a Critical or High severity value should be prioritized for further inspection, as they are more likely to represent high-impact security issues identified by Detective.
 + **Entity** – The **Entity** column contains details on the specific entities detected in the investigation. Some entities are AWS accounts, such as user and role.
 + **Status** – The **Creation** date column contains details on the date and time the investigation report was first created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

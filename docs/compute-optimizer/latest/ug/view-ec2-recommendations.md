@@ -182,7 +182,3 @@ The following utilization graphs are displayed on the details page:
 | EBS write operations (per second) | The completed write operations per second to all EBS volumes attached to the instance.<br />For Xen instances, data is reported only when there is write activity on the volume. |
 | EBS read bandwidth (MiB/second) | The read mebibytes (MiB) per second from all EBS volumes attached to the instance. |
 | EBS write bandwidth (MiB/second) | The written mebibytes (MiB) per second to all EBS volumes attached to the instance. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

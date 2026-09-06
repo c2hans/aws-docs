@@ -29,7 +29,3 @@ Under certain conditions, Athena may automatically retry query executions. In mo
 + [Configure recent query display options](queries-recent-queries-configuring-options.md)
 + [Keep your query history longer than 45 days](querying-keeping-query-history.md)
 + [Find query output files in Amazon S3](querying-finding-output-files.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

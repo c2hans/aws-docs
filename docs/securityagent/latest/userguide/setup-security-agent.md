@@ -140,7 +140,3 @@ After setting up AWS Security Agent:
 +  **(If using IAM Identity Center)** Assign users to the Agent Space in the AWS Security Agent console
 +  **(If using IAM-only access)** Launch the web application through the admin access link in the AWS Console
 + Create additional Agent Spaces for other applications (see [Create an Agent Space](create-agent-space.md))
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

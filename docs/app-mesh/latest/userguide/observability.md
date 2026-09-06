@@ -14,7 +14,3 @@ The Envoy proxy and App Mesh offer the following types of tools to help you gain
 + [Logging](https://docs.aws.amazon.com/app-mesh/latest/userguide/envoy-logs.html)
 + [Metrics](https://docs.aws.amazon.com/app-mesh/latest/userguide/metrics.html)
 + [Tracing](https://docs.aws.amazon.com/app-mesh/latest/userguide/tracing.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

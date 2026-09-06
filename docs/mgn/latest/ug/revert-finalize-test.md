@@ -22,7 +22,3 @@ To revert a test:
 1. The **Revert testing for X servers** dialog appears. Select whether you want to terminate the launched instances used for testing. It is recommended to terminate these instances, as you will be charged for them even though you no longer need them. Check the **Yes, terminate launched instances (recommended)** box and choose **Revert**.
 
    The AWS Transform MGN console indicates that testing has been reverted. The selected source servers' **Migration lifecycle** column shows the **Ready for testing** status, the **Next step** column shows **Launch test instance** and the launched Test instances are deleted if that option was selected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

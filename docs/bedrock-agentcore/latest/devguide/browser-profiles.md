@@ -435,7 +435,3 @@ Browser profiles are useful for:
 +  **Security** : Browser profiles may contain sensitive data such as authentication cookies. Ensure proper IAM policies are in place to restrict access to profile resources.
 +  **Profile Updates** : When you save a session to a profile, it overwrites the previous profile data. Consider your workflow carefully to avoid losing important state information.
 +  **Cookie Expiration** : Cookies have their own expiration times set by websites. Browser profiles preserve cookies, but expired cookies are automatically removed by the browser according to their expiration dates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

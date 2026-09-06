@@ -160,7 +160,7 @@ Aws::GameLift::DescribePlayerSessionsOutcome playerSessionsOutcome =
 
 Retrieves a unique identifier for the game session currently being hosted by the server process, if the server process is active. The identifier is returned in ARN format: `arn:aws:gamelift:<region>::gamesession/fleet-<fleet ID>/<ID string>`.
 
-For idle process that are not yet activated with a game session, the call returns `Success`=`True` and `GameSessionId`=`""` (an empty string).
+For idle processes that are not yet activated with a game session, the call returns `Success`=`True` and `GameSessionId`=`""` (an empty string).
 
 ### Syntax
 <a name="integration-server-sdk-cpp-ref-getgamesessionid-syntax"></a>
@@ -316,7 +316,7 @@ Aws::GameLift::Server::InitSDKOutcome initOutcome =
 
 Notifies the Amazon GameLift Servers service that the server process is shutting down. This method should be called after all other cleanup tasks, including shutting down all active game sessions. This method should exit with an exit code of 0; a non-zero exit code results in an event message that the process did not exit cleanly.
 
-Once the method exits with a code of 0, you can terminate the process with a successful exit code. You can also exit the process with an error code. If you exit with an error code, the fleet event will indicated the process terminated abnormally (`SERVER_PROCESS_TERMINATED_UNHEALTHY`).
+Once the method exits with a code of 0, you can terminate the process with a successful exit code. You can also exit the process with an error code. If you exit with an error code, the fleet event will indicate the process terminated abnormally (`SERVER_PROCESS_TERMINATED_UNHEALTHY`).
 
 ### Syntax
 <a name="integration-server-sdk-cpp-ref-processending-syntax"></a>
@@ -726,7 +726,3 @@ if (Aws::GameLift::Server::ProcessEnding().IsSuccess()) {
   exit(0);
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

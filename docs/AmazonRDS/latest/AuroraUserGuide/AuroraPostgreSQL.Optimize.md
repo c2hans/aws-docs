@@ -23,7 +23,3 @@ Following, you can find information about Aurora PostgreSQL query plan managemen
 + [Function reference for Aurora PostgreSQL query plan management](AuroraPostgreSQL.Optimize.Functions.md)
 + [Reference for the apg\_plan\_mgmt.dba\_plans view for Aurora PostgreSQL-Compatible Edition](AuroraPostgreSQL.Optimize.dba_plans_view_Reference.md)
 + [Advanced features in Query Plan Management](AuroraPostgreSQL.QPM.Advanced.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

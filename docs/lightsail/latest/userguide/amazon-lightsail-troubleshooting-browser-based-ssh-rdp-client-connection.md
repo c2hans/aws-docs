@@ -53,7 +53,3 @@ The following error message displays when you try to connect to an instance that
 ![Instance unavailable when trying to connect using the Lightsail browser-based SSH or RDP client.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-browser-ssh-rdp-cant-connect-right-now.png)
 
 If you still can’t connect, [contact AWS Support ](https://console.aws.amazon.com/support/home#/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

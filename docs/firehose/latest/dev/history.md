@@ -42,7 +42,3 @@ The following table describes the important changes to the Amazon Data Firehose 
 | New enhanced Kinesis agent | Updated [Configure Kinesis agent to send data](writing-with-agents.md). | April 11, 2016 |
 | New Kinesis agents | Added [Configure Kinesis agent to send data](writing-with-agents.md). | October 2, 2015 |
 | Initial release | Initial release of the Amazon Data Firehose Developer Guide. | October 4, 2015 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

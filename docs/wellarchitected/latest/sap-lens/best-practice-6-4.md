@@ -31,7 +31,3 @@ SAP and the vendors of the underlying operating systems and databases release st
  Applying new SAP security recommendations and security-related patches as quickly as possible is paramount both for AWS based SAP solutions and those installed elsewhere. Regularly review the [SAP Security Notes and News](https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html), and create a process to remediate security issues quickly with the patches, notes, and recommendations found there. In some cases, SAP administrators may also have to put in temporary mitigation or control measures until the underlying vulnerability can be addressed. Also follow the Security Pillar recommendations around incident response.
 +  Well-Architected Framework [Security]: [Incident Response](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/incident-response.html)
 +  SAP Documentation: [SAP Security Notes and News](https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

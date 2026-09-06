@@ -18,21 +18,21 @@ To ensure access for health checks to complete successfully for EC2 instance or 
 
 Global Accelerator health checks work by receiving traffic for Route 53 health checks, which is forwarded to the configured health check port for the endpoint group. Typically, the ports configured for health checks match the listener configuration. If you configure a different port for health checks instead, review your security group configuration to make sure that you don't allow public traffic on the port.
 
-For example, if your listener is configured on port 80, then your health check port is also 80. If you choose to configure health ports on another port, for example, port 83, then make sure that you configure your security groups to allow traffic on port 83 only from IP addresses that are in the IP address range for Route 53 health checks.
+For example, if your listener is configured on port 80, then your health check port is also 80. If you choose to configure health check ports on another port, for example, port 83, then make sure that you configure your security groups to allow traffic on port 83 only from IP addresses that are in the IP address range for Route 53 health checks.
 
 ## Health check guidance for different endpoint types
 <a name="about-endpoint-groups-health-check-options.hc-by-endpoint-type"></a>
 
 Review the information in this section for guidelines about the health checks that you specify for each endpoint type for your accelerator.
 
-In addition, make sure that the health checks that you choose for endpoints with HTTP workloads are representative of the overall health of your application, and that you follow the guidance for ensuring access to health checks that is described in the preceding section, [Ensure security and access for health checks](#GAX-HCsecurityaccessguidance).
+In addition, make sure that the health checks that you choose for endpoints with HTTP workloads are representative of the overall health of your application, and that you follow the guidance for ensuring access to health checks that is described in the preceding section, [Ensure access for your accelerator health checks](#GAX-HCsecurityaccessguidance).
 
 The following guidelines apply to each specified endpoint type:
 + For Network Load Balancer or Application Load Balancer endpoints, be aware of the following:
   + The [health check options](#GAX-HCsetoptions) that you choose in Global Accelerator do not affect Network Load Balancers or Application Load Balancers that you've added as endpoints. That is, health check options that you specify in Global Accelerator are used for Amazon EC2 and Elastic IP address health checks, but not for health checks on load balancer endpoints.
 
     For load balancer endpoints, configure health checks by using Elastic Load Balancing configuration options. For more information, see [Health checks for your target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/target-group-health-checks.html).
-  + Global Accelerator considers an Application Load Balancer healthy if every target group has at least one healthy target. For more information, see [Health checks for your target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/target-group-health-checks.html).
+  + Global Accelerator considers an Application Load Balancer healthy if every target group has at least one healthy target. For more information, see [Health checks for your target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html).
   + Global Accelerator considers a Network Load Balancer healthy if there is at least one healthy Availability Zone. An Availability Zone is healthy if it has a healthy target in all load balancer target groups that it is in.
 
     Be aware that when you enable cross-zone load balancing, healthy targets in Network Load Balancer target groups contribute to the health of the target group in all Availability Zones. This is how Global Accelerator evaluates the health of an AZ in a target group regardless of which AZs are actually healthy. This means that with cross-zone load balancing, if every target group contains a healthy target, Global Accelerator considers the Network Load Balancer to be healthy. However, at all times, Global Accelerator only considers a Network Load Balancer healthy if the number of healthy targets meets the Network Load Balancer minimum healthy target count setting, `minimum_healthy_targets`.
@@ -41,7 +41,7 @@ The following guidelines apply to each specified endpoint type:
   + When you add these endpoint types with a UDP listener, Global Accelerator uses the listener port and the TCP protocol for health checks, so you must have a TCP server on your endpoint.
 
     Make sure to check that the port that you've configured for the TCP server on each endpoint is the same as the port that you specify for the health check in Global Accelerator. If the port numbers aren't the same, or if you haven't set up a TCP server for the endpoint, Global Accelerator marks the endpoint as unhealthy, regardless of the endpoint's health.
-  + Make sure to follow the [guidance for security and access](#GAX-HCsecurityaccessguidance) when you configure ports for health checks for your EC2 instance or Elastic IP address endpoints.
+  + Make sure to follow the [Ensure access for your accelerator health checks](#GAX-HCsecurityaccessguidance) section when you configure ports for health checks for your EC2 instance or Elastic IP address endpoints.
 
 ## Set health check options
 <a name="about-endpoint-groups-health-check-options.set-hc-options"></a>
@@ -62,7 +62,3 @@ The interval, in seconds, between each health check for an endpoint.
 
 **Threshold count**
 The number of consecutive health checks required before considering an unhealthy target healthy or a healthy target unhealthy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

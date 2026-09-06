@@ -47,7 +47,3 @@ Beginning with Amazon EMR 5.18.0, you can use the Amazon EMR artifact repository
 + [Turn on non-uniform memory access awareness for YARN containers](hadoop-numa.md)
 + [YARN container bin packing](Hadoop-container-yarn.md)
 + [Hadoop version history](Hadoop-release-history.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

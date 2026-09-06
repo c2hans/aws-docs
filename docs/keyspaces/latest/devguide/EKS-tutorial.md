@@ -18,7 +18,3 @@ The tutorial provides step-by-step guidance to configure, build, and deploy a co
 + [Step 3: Create the application image and upload the Docker file to your Amazon ECR repository](EKS-tutorial-step3.md)
 + [Step 4: Deploy the application to Amazon EKS and write data to your table](EKS-tutorial-step4.md)
 + [Step 5: (Optional) Cleanup](EKS-tutorial-step5.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

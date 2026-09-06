@@ -388,7 +388,3 @@ The Bluetooth Low Energy GATT demo is disabled by default.
 1. Choose **Start Counter** to start publishing data to the **{{your-thing-name}}/example/topic** MQTT topic.
 
    After you enable the MQTT proxy, Hello World and incrementing counter messages appear on the `{{your-thing-name}}/example/topic` topic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

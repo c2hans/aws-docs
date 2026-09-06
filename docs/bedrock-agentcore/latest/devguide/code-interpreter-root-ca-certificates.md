@@ -276,7 +276,3 @@ The following table describes common errors and their resolutions when configuri
 | Number of certificates exceeds the maximum allowed | More than 10 certificates were provided at the session level or tool level. | Reduce the number of certificates to 10 or fewer per session and 10 or fewer per tool. |
 | Certificate location is required | A certificate entry was provided without a location. | Ensure each certificate in the array includes a `location` with a `secretsManager` entry containing a valid `secretArn`. |
 | Certificates configuration is not enabled | The certificates feature is not enabled for your account. | Contact AWS Support to enable the certificates feature for your account. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

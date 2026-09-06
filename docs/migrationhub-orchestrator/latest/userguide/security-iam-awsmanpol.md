@@ -82,7 +82,3 @@ View details about updates to AWS managed policies for Migration Hub Orchestrato
 | [AWSMigrationHubOrchestratorServiceRolePolicy](using-service-linked-roles.md#slr-permissions) – New policy made available at launch | The `AWSMigrationHubOrchestratorServiceRolePolicy` service-linked role policy provides access to AWS Migration Hub and AWS Application Discovery Service. This policy also grants permissions for storing reports in Amazon Simple Storage Service (Amazon S3). | April 20, 2022 |
 | `AWSMigrationHubOrchestratorInstanceRolePolicy` – New policy | `AWSMigrationHubOrchestratorInstanceRolePolicy` grants an AWS account read/write access to Amazon S3 buckets that are related to the service and to AWS Secrets Manager to fetch credentials. | April 20, 2022 |
 | Migration Hub Orchestrator started tracking changes | Migration Hub Orchestrator started tracking changes for its AWS managed policies. | April 20, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Hub Orchestrator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-orchestrator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

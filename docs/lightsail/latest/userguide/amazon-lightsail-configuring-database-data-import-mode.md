@@ -24,7 +24,3 @@ All emergency restore backups are deleted when data import mode is enabled. Crea
    Now that the data import mode is enabled, database backup operations are suspended. We recommend that you enable data import mode temporarily. Use it only when it’s necessary for you to import large amounts of data into your database. Disable data import mode as soon as you’re done to restore backup operations.
 **Note**
 Your import may be slowed depending on the amount of data that you're importing. For more information, see [Optimizing data import](https://lightsail.aws.amazon.com/ls/docs/en/articles/amazon-lightsail-choosing-a-database#optimizing-your-data-import).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

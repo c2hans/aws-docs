@@ -36,7 +36,3 @@ Aurora logs database events with minimal impact on database performance. You can
 <a name="aurora-features-threat-detection"></a>
 
 [Amazon GuardDuty](https://aws.amazon.com/guardduty/) offers threat detection for Aurora to help you identify potential threats to data stored in Aurora databases. GuardDuty RDS Protection profiles and monitors login activity to existing and new databases in your account and uses tailored ML models to accurately detect suspicious logins to Aurora databases. If a potential threat is detected, GuardDuty generates a security finding that includes database details and rich contextual information on suspicious activity. Aurora integration with GuardDuty provides direct access to database event logs without requiring you to modify your databases and has no impact on database performance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

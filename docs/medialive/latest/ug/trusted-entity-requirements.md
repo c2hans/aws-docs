@@ -69,14 +69,9 @@ Each row in the column describes a task or set of related tasks that the MediaLi
   - **Tasks:** Sending thumbnails to an Amazon S3 bucket when a channel is running, if a channel has input thumbnails enabled / **Type of access required:** When the channel is running.MediaLive must have read/write access. / **Suggested actions or policy:** PutObject
 
 - **AWS Secrets Manager**
-  - **Tasks:** Sending an SRT caller output when a channel is running. SRT caller outputs are always encrypted using a passphrase that is stored in a Secrets Manager secret.
-  - **Type of access required:** When the channel is running.MediaLive must be able to read the value (the passphrase) stored in the secret.
-  - **Suggested actions or policy:** GetSecretValue
+  - **Tasks:** Sending an SRT caller output when a channel is running. SRT caller outputs are always encrypted using a passphrase that is stored in a Secrets Manager secret. / **Type of access required:** When the channel is running.MediaLive must be able to read the value (the passphrase) stored in the secret. / **Suggested actions or policy:** GetSecretValue
+  - **Tasks:** Reading the Irdeto A/B watermarking license when a channel is running, if the output group uses Irdeto A/B watermarking. The license is stored in a Secrets Manager secret. / **Type of access required:** When the channel is running.MediaLive must be able to read the license stored in the secret. / **Suggested actions or policy:** GetSecretValue
 
 - **AWS Systems Manager**
   - **Tasks:** Creating a password parameter on the MediaLive console. / **Type of access required:** MediaLive doesn't need IAM access for this task. Only the users need access. / **Suggested actions or policy:**
   - **Tasks:** Using a password parameter in the channel configuration. See [Requirements for AWS Systems Manager password parameters](requirements-for-EC2.md). / **Type of access required:** When the channel is running.MediaLive must have read access to the AWS Systems Manager Parameter Store. / **Suggested actions or policy:** The managed policy AmazonSSMRead OnlyAccess
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

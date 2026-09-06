@@ -24,7 +24,3 @@ Considerations for stage rollback are as follows:
 + The pipeline can only roll back to a previous execution if the previous execution was started in the current pipeline structure version.
 + You cannot roll back to a target execution ID that is a rollback execution type.
 + CodePipeline will use the variables and artifacts from the execution to which it is rolling back.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

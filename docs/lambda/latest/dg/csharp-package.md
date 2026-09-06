@@ -20,7 +20,3 @@ You can find instructions for building and deploying .NET Lambda functions using
 + [Deploy C\# Lambda functions using AWS SAM](csharp-package-sam.md)
 + [Deploy C\# Lambda functions using AWS CDK](csharp-package-cdk.md)
 + [Deploy ASP.NET applications](csharp-package-asp.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
  Once the resources have been recovered, it is important to capture lessons learned to update incident response policies, procedures, and guides.
 
  In summary, it is imperative to implement a recovery process that facilitates a return to known safe operations. Recovery can take a long time and requires a close linkage with containment strategies to balance business impact against risk of reinfection. Recovery procedures should include steps for restoring resources and services, IAM principals, and performing a security review of the account to assess residual risk.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

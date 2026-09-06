@@ -47,7 +47,3 @@ Every runtime environment has a weekly two-hour maintenance window. Any system c
 The two-hour maintenance window is selected at random from an 8 hour block of time per Region. If you don't specify a maintenance window when you create a runtime environment, AWS Mainframe Modernization assigns a 2 hour maintenance window on a randomly selected day of the week.
 
 AWS Mainframe Modernization consumes some of the resources in your environment instance while maintenance is being applied. You might observe a minimal effect on performance or some disruptions in applications during maintenance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

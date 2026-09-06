@@ -27,7 +27,3 @@ The following table lists components provided by AWS that include new and update
 | Greengrass CLI | Version 2.14.3 of the [Greengrass CLI](greengrass-cli-component.md) is available.**Bug fixes and improvements**<br />   Version updated for Greengrass nucleus version 2.14.3 release.    |
 | Secret manager | Version 2.2.4 of the [secret manager](secret-manager-component.md) is available.**Bug fixes and improvements**<br />   Reduces the frequency of writes to the local secret store. Secret manager now writes to the local store only when secrets are updated.    |
 | EMQX MQTT broker | Version 2.0.3 of the [EMQX MQTT broker](mqtt-broker-emqx-component.md) is available.**Bug fixes and improvements**<br />   Fixes an issue where EMQX doesn't start on Windows if the path contains spaces.    |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

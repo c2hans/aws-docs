@@ -38,7 +38,3 @@ For more information on data source name and type, see the [CloudWatch Logs User
 The following restrictions apply to CloudWatch Logs sources:
 + No two pipelines can use the `cloudwatch_logs` source with identical `data_source_name` and `data_source_type` metadata criteria.
 + When `data_source_name` is `aws_cloudtrail`, only empty processors (`[]`) or the `ocsf` processor are allowed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

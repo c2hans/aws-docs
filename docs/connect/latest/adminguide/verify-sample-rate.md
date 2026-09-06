@@ -46,7 +46,3 @@ Perform the following steps to verify your headset and browser sample rates.
 1. The sample rate is primary controlled by the operating system sound settings. Go to the computer's sound settings and change the sample rate if it isn't 48000. For specific instructions for your operating system, search the internet.
 
    If you can't change the sample rate in your audio device settings, for example, because your headset doesn't support 48000, we recommend switching to a headset with a preferred sample rate 48000.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

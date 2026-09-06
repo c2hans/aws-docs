@@ -198,7 +198,3 @@ Your version of the Amazon.Lambda.Tools .NET Core global tool is out of date. Up
 Docker on your system is configured to use Windows containers. Swap to Linux containers to run the native AOT build environment.
 
 For more information about common errors, see the [AWS NativeAOT for .NET](https://github.com/awslabs/dotnet-nativeaot-labs#common-errors) repository on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ If a `The execute command failed` error occurs, the following are possible cause
 + The task does not have the required permissions. Verify that the task definition used to launch your task has a task IAM role defined and that the role has the required permissions. For more information, see [ECS Exec permissions](task-iam-roles.md#ecs-exec-required-iam-permissions).
 + The SSM agent isn't installed or isn't running.
 +  There is an interface Amazon VPC endpoint for Amazon ECS, but there isn't one for Systems Manager Session Manager.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

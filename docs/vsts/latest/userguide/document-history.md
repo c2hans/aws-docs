@@ -26,7 +26,3 @@ The following table describes important changes to the AWS Toolkit for Microsoft
 | [AWS Systems Manager Get Parameter](systemsmanager-getparameter.md) | Added the AWS Systems Manager Get Parameter task. | November 28, 2017 |
 | [AWS Lambda .NET Core Deployment task](lambda-netcore-deploy.md) | Added the AWS Lambda .NET Core Deployment task. | November 28, 2017 |
 | [Initial Release](#document-history) | Initial release of SDK developer guide for AWS Toolkit for Microsoft Azure DevOps. | August 14, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Microsoft Azure DevOps. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vsts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ To keep a backup copy of your data, create a snapshot of the disk. You can creat
 + [Add storage to a virtual computer in Lightsail for Research](attach-disk.md)
 + [Detach a disk from a virtual computer in Lightsail for Research](detach-disk.md)
 + [Delete unused storage disks in Lightsail for Research](delete-disk.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail for Research. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail-for-research` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

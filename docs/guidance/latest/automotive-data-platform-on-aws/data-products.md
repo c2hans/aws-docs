@@ -85,7 +85,3 @@ Do not reproduce identifier regex tables or VSS signal tables from `docs/data-co
  **Cost caveat.** OpenSearch Serverless incurs a minimum hourly commitment regardless of query volume. At current rates, the AOSS collection backing `vehicle_knowledge_base` costs approximately $200–400/month per stage (the single largest cost component of the foundation). Operators who do not require knowledge-base-grounded queries (DTC guides, recall lookups, owner-manual search) may defer this product and skip the KB-seeding step. See `docs/DEPLOYMENT.md` § "Vehicle Knowledge Base" and the cost table in `docs/DEPLOYMENT.md` § "Cost estimates" for current per-stage estimates and an opt-out procedure.
 
 For CVX agents consuming `vehicle_knowledge_base`, the subscription pattern uses the Bedrock KB `Retrieve` API directly rather than Athena; the call pattern and KB ARN resolution are documented in `docs/cvx-integration-contract.md`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

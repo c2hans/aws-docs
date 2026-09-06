@@ -52,6 +52,53 @@ To investigate faster, AWS DevOps Agent can delegate parts of an investigation t
 
 You can expand any sub-agent entry to see its complete nested timeline, including the context and task it was given, its individual reasoning steps with timing, the tool calls it made, and its own findings. You can trace exactly how each part of a parallel investigation reached its conclusions. Collapse the entry again to keep the overall timeline readable.
 
+## Chat with an investigation
+<a name="chat-with-an-investigation"></a>
+
+You can send a message directly to an investigation while it runs. Use this to redirect the agent's focus, give it information it does not have, or ask it to reconsider a hypothesis — without leaving the investigation and without starting a new one.
+
+Messages you send this way go to the investigation agent itself, and it reads them alongside the evidence it has already collected.
+
+### Sending a message
+<a name="sending-a-message"></a>
+
+To send a message to an investigation:
+
+1. Open an investigation from the Incident Response tab of your DevOps Agent Space web app.
+
+1. Choose **Chat with investigation** at the bottom of the page. This button is available from any tab of the investigation.
+
+1. AWS DevOps Agent switches to the **Timeline** tab and opens a message box below the timeline, so you can watch what the agent is doing as you write.
+
+1. Enter your message and send it. Press **Enter** to send, or **Shift\+Enter** to start a new line.
+
+1. To close the message box, choose the button above it, such as **Back to summary**. It returns you to the tab you came from.
+
+The message box shows **Send as** with your name. Every message is attributed to the identity you signed in with, so the investigation record shows who guided it.
+
+A single message can be up to 32,768 characters. If your message is longer, AWS DevOps Agent tells you it is too long and does not send it.
+
+### Queued requests
+<a name="queued-requests"></a>
+
+Your message does not interrupt the agent in the middle of a step. AWS DevOps Agent queues it, and the agent reads the queue between its reasoning steps. This means a message never arrives partway through a tool call, and the agent applies it with a complete picture of what it was doing.
+
+While a message is waiting, it appears in a numbered **Queued requests** list below the timeline. If you send several messages, they queue in order. Each request leaves the list when the agent picks it up, and the agent's response appears in the timeline.
+
+### Messaging a completed investigation
+<a name="messaging-a-completed-investigation"></a>
+
+You can also message an investigation that has already finished. When you do, AWS DevOps Agent resumes it: the investigation returns to a running state and the agent continues with your message and its full prior context, in the same investigation.
+
+This is useful when an investigation stops short of an answer, or when new information arrives after it completes.
+
+### When you can chat with an investigation
+<a name="when-you-can-chat-with-an-investigation"></a>
+
+**Chat with investigation** is available while an investigation is queued, running, waiting, or completed. It is not available for investigations that were canceled, failed, or timed out.
+
+You can also steer an investigation by talking to your DevOps Agent in Chat. For more information, see [On Demand DevOps Tasks](working-with-devops-agent-on-demand-devops-tasks.md).
+
 ## Incident triage
 <a name="incident-triage"></a>
 
@@ -202,7 +249,3 @@ To use AWS DevOps Agent's AWS Support integration:
 1. Submit the case - AWS DevOps Agent automatically includes your investigation log.
 
 The chat window opens automatically, allowing you to begin collaborating with AWS Support immediately.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ The following table describes the benefits and drawbacks of persistent VDIs in t
 | Benefits | Drawbacks |
 | --- |--- |
 | + *Easy personalization* – Store user profiles and applications on the Amazon Elastic Block Store (Amazon EBS) volume for the instance. There is no requirement for shared storage.<br />+ *User customization* – The instance type and storage capacity can be adjusted on a per-user level. | + *Backup complexity* – Persistent VDIs require complex instance-level backup and restore capabilities and processes.<br />+ *Reduced availability* – Users are one-to-one mapped to instances and the corresponding Availability Zone. An Availability Zone failure results in the service being unavailable for the affected users. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

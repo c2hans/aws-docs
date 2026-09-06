@@ -23,7 +23,3 @@ The following counters are the same as the ones in “DCV Server” counter set,
 | HTTP Downloaded Bytes | Total number of bytes sent over HTTP since the connection was established |
 | Round-Trip Time ms | Average round-trip latency for the connection, in milliseconds |
 | Minimum Round-Trip Time ms | Minimum round-trip latency detected since the connection was established, in milliseconds |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

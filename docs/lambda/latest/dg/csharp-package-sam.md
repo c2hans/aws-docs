@@ -98,7 +98,3 @@ For **HelloWorldFunction may not have authorization defined, is this okay?**, be
 To learn more about using AWS SAM to build and deploy Lambda functions using .NET, see the following resources:
 + The [AWS Serverless Application Model (AWS SAM) Developer Guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
 + [Building Serverless .NET Applications with AWS Lambda and the SAM CLI](https://aws.amazon.com/blogs/dotnet/building-serverless-net-applications-with-aws-lambda-and-the-sam-cli/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

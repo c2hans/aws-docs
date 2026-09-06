@@ -21,7 +21,3 @@ Microsoft has traditionally recommended migrating to a newer version of Windows 
 + [Use Automation runbooks to upgrade an EC2 Windows instance](automated-upgrades.md)
 + [Migrate an EC2 Windows instance to a Nitro-based instance type](migrating-latest-types.md)
 + [Troubleshoot an operating system upgrade on an EC2 Windows instance](os-upgrade-trbl.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

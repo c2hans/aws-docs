@@ -149,7 +149,3 @@ Aurora DSQL uses Transport Layer Security (TLS) to encrypt CDC data in transit b
 If the cluster uses an AWS KMS customer managed key and that key becomes inaccessible, an `ACTIVE` or `IMPAIRED` stream transitions to `IMPAIRED` with the error code `CLUSTER_CMK_INACCESSIBLE`. If the key becomes inaccessible before the stream finishes creating, the stream transitions directly to `FAILED`.
 
 For a detailed explanation of encryption in Aurora DSQL, see [Data encryption for Amazon Aurora DSQL](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/data-encryption.html) in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

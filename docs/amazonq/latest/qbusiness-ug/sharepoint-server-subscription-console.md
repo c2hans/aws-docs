@@ -142,7 +142,3 @@ The test process can take 3-5 minutes. The console will show you if your test is
 
 **Important**
 Amazon Q Business can only surface one error at a time. After you correct an error, the test automatically runs again. If there is another error, you will see a message.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

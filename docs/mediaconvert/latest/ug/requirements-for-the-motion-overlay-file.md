@@ -13,7 +13,3 @@ The following table describes how to set up motion graphic overlay files.
 | Frame rate | QuickTime (.mov)+  Use any frame rate. The frame rate that you use doesn't have to match the frame rate of the underlying video. <br />Sequential PNG (.png)+  Use any frame rate. The frame rate that you use doesn't have to match the frame rate of the underlying video.  <br />+  Specify the frame rate when you set up the overlay.  |
 | Aspect ratio | Use any aspect ratio. It doesn't have to match the aspect ratio of the underlying video. |
 | Size in pixels | Use any size. MediaConvert scales the motion graphic with any outputs that have video scaling. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

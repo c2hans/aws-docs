@@ -63,7 +63,3 @@ The following is an example of analysis content that you could find in the expla
 ```
 
 In this sample of the JSON report, the explanatory functionality evaluates the text `It was a fantastic movie!` and scores the contribution of each of its token to the overall predicted label. The predicted label is `2`, which is a strong positive sentiment, with a probability of 99.85%. The JSON sample then details the contribution of each individual token to this prediction. For example, the token `fantastic` has a stronger attribution than the token `was`. It is the token that contributed the most to the final prediction.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ SMS text messaging is not supported in all AWS Regions in which you can create L
 If don't receive notifications when you expect to be notified, then there are a few things you should check to confirm that your notification contacts are configured correctly. To learn more, see [Troubleshoot notifications](amazon-lightsail-troubleshooting-notifications.md).
 
 To stop receiving notifications, you can remove your email and mobile phone from Lightsail. For more information, see [Delete or disable metric alarms](amazon-lightsail-deleting-notification-contacts.md). You can also disable or delete an alarm to stop receiving notifications for a specific alarm. For more information, see [Delete or disable metric alarms](amazon-lightsail-deleting-health-metric-alarms.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

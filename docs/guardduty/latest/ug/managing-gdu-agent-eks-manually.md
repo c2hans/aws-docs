@@ -13,7 +13,3 @@ For managing the agent manually, you need to create a VPC endpoint as a prerequi
 + [Prerequisite – Creating an Amazon VPC endpoint](eksrunmon-prereq-deploy-security-agent.md)
 + [Installing GuardDuty security agent manually on Amazon EKS resources](eksrunmon-deploy-security-agent.md)
 + [Updating security agent manually for Amazon EKS resources](eksrunmon-update-security-agent.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

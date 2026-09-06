@@ -58,7 +58,3 @@ The process of relinquishing a dedicated IP address can't be reversed. If you re
    + On the **Solve now or contact us** page, select your preferred contact language, and choose **Submit**.
 
 After you submit the form, we'll evaluate your request. If we grant your request, we'll reply to your case in the Support Center to confirm that the dedicated IP addresses have been added to or removed from your account according to your request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

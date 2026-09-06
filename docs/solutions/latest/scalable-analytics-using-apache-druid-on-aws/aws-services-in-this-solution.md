@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 |  [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/)  |  **Optional** When opting for EKS deployment, the guidance initializes an EKS cluster to execute the Apache Druid workload. |
 |  [Amazon Elastic File System](https://aws.amazon.com/efs/)  |  **Optional** When opting for EKS Fargate deployment, the guidance creates an EFS filesystem to provide storage to Fargate workloads. |
 |  [Amazon Route 53](https://aws.amazon.com/route53/)  |  **Optional** The guidance provides the option for integration with Rout 53 to manage the domain for accessing the Druid cluster. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Scalable Analytics Using Apache Druid on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

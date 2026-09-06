@@ -22,6 +22,7 @@ ECS Managed Daemons is only supported for Amazon ECS Managed Instances Capacity 
    "capacityProviderArns": [ "{{string}}" ],
    "clientToken": "{{string}}",
    "clusterArn": "{{string}}",
+   "critical": {{boolean}},
    "daemonName": "{{string}}",
    "daemonTaskDefinitionArn": "{{string}}",
    "deploymentConfiguration": {
@@ -64,6 +65,14 @@ Required: No
  ** [clusterArn](#API_CreateDaemon_RequestSyntax) **   <a name="ECS-CreateDaemon-request-clusterArn"></a>
 The Amazon Resource Name (ARN) of the cluster to create the daemon in.
 Type: String
+Required: No
+
+ ** [critical](#API_CreateDaemon_RequestSyntax) **   <a name="ECS-CreateDaemon-request-critical"></a>
+If the `critical` parameter of a daemon is `true`, and the daemon task fails, stops, or becomes unhealthy, Amazon ECS drains the container instance and stops the other tasks running on it. If the `critical` parameter is `false`, the daemon task failure doesn't affect the other tasks on the instance. The default value is `true`.
+A non-critical daemon doesn't block instance registration. The container instance becomes active and continues to run your other tasks, whether the daemon task fails during scale-out or during a deployment.
+Amazon ECS emits an EventBridge event when a daemon task fails to start, for both critical and non-critical daemons.
+Daemon task launch failures during a deployment are still counted by the deployment circuit breaker. The circuit breaker can roll back an unstable target revision.
+Type: Boolean
 Required: No
 
  ** [daemonName](#API_CreateDaemon_RequestSyntax) **   <a name="ECS-CreateDaemon-request-daemonName"></a>
@@ -268,7 +277,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ecs-2014-11-13/CreateDaemon)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ecs-2014-11-13/CreateDaemon)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/CreateDaemon)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic Container Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

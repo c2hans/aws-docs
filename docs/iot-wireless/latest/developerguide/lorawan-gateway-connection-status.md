@@ -69,7 +69,3 @@ Content-type: application/json
 <a name="lorawan-connection-status-events"></a>
 
 You can also enable connection status events to receive notications about status updates to your gateway connection. You will be notified when a gateway becomes connected, or when it's disconnected. For more information about these events and how to enable them, see [Enable notifications for LoRaWAN gateway connection status events](iot-lorawan-gateway-events.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

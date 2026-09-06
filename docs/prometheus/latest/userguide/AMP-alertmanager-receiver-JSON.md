@@ -33,7 +33,3 @@ This template is for the entire message body as JSON. This template overwrites t
 For more information about:
 + The alert manager configuration file, see [Create an alert manager configuration in Amazon Managed Service for Prometheus to manage and route alerts](AMP-alertmanager-config.md).
 + Uploading your configuration file, see [Upload your alert manager configuration file to Amazon Managed Service for Prometheus](AMP-alertmanager-upload.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Service for Prometheus. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prometheus` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

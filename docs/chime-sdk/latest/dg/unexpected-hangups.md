@@ -11,7 +11,3 @@ Complete the following troubleshooting actions if you experience unexpected hang
 + If the logs show incoming events and returned actions, verify that you don't return a hangup action in when the AWS Lambda function is invoked.
 + Check the CloudWatch logs for your SIP media application. The following table lists some of the messages you may encounter.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/chime-sdk/latest/dg/unexpected-hangups.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

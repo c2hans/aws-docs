@@ -35,7 +35,3 @@ For example, you purchase a db.r6gd.xlarge reserved node, and you have two runni
 Alternatively, if you have one db.r6gd.2xlarge instance running in your account in the same AWS Region, the billing benefit is applied to 50 percent of the usage of the reserved node.
 
 ![Diagram showing one instance with billing benefit applied to 50 percent of the usage of the reserved node.](http://docs.aws.amazon.com/memorydb/latest/devguide/images/ri2.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

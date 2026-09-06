@@ -22,7 +22,3 @@ The following table describes the documentation releases for IAM Roles Anywhere.
 | [Released Credential Helper version 1.0.1](#doc-history) | IAM Roles Anywhere released Credential Helper version 1.0.1. For more information, see [ Credential Helper Changelog](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html#credential-helper-changelog). | July 14, 2022 |
 | [Added certificate revocation](#doc-history) | Added certificate revocation in the IAM Roles Anywhere trust model page. For more information, see [Revocation](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/trust-model.html#revocation). | July 13, 2022 |
 | [Initial release](#doc-history) | Initial release of the IAM Roles Anywhere User Guide | July 5, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

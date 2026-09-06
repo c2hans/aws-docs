@@ -43,7 +43,3 @@ Amazon EC2 supports the following event types:
 + [EC2 ODCR Underutilization Notification](cr-eventbridge.md)
 
 For information about the event types supported by Amazon EBS, see [Amazon EventBridge for Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-cloud-watch-events.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

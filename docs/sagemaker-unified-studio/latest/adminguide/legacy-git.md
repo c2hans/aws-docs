@@ -268,7 +268,3 @@ Migrating to the new repository experience requires a project update. The migrat
 + **Cross-account prerequisites**: If your projects use cross-account configurations, you must update RAM permissions before projects can successfully migrate. Without updated permissions, the repository clone fails and the project remains in the previous mode. For details, see [Cross-account and cross-region Git configurations](cross-account-git.md).
 + **Project updates include the Git transition**: Any service-initiated or admin-initiated project update includes the migration to the new repository experience. Project owners cannot accept other updates selectively while excluding the repository experience change.
 + **No forced migration**: The migration is opt-in. Projects that are not updated continue with the previous behavior indefinitely.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

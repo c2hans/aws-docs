@@ -40,7 +40,3 @@ Choosing a migration strategy also depends on the workload. You can use [AWS Sch
 | In-house applications | Online Database Connectivity (ODBC) or Java Database Connectivity (JDBC) workloads, and light workloads with proprietary features | Candidate for replatform |
 | SaaS or ISV-provided software | Heavy workloads with proprietary features | Candidate for replatform |
 | ERP applications | Engine-specific workloads | Candidate for replatform or rehost |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

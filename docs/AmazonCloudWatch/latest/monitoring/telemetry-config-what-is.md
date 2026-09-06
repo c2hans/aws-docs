@@ -43,7 +43,3 @@ This means that although the service-linked configuration recorder for the Cloud
 Amazon CloudWatch uses AWS Config Internal service linked recorder. You are not charged for CIs that CloudWatch uses as part of the Internal Service Linked Recorders.
 
 You can manage telemetry configuration across multiple AWS Regions from a single Region. When you enable multi-Region support, the current Region becomes your home Region and telemetry configuration is replicated to the Regions you select. For more information, see [Setting up telemetry configuration](telemetry-config-turn-on.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

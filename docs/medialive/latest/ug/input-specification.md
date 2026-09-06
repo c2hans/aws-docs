@@ -47,7 +47,3 @@ If the input resolution is HD and the device is a Link UHD, make sure that you [
 Follow this procedure if you plan to run the channel in a [MediaLive Anywhere cluster](setup-emla.md).
 
 Leave the default values in all the fields. MediaLive doesn't use the input specification for billing, and MediaLive isn't responsible for resource allocation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

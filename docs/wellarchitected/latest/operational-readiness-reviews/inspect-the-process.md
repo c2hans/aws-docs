@@ -17,7 +17,3 @@ Finally, the effectiveness of the ORR mechanism is inspected during the COE proc
 You’ll need to consider how you will inspect your mechanism. This is key in knowing whether the mechanism is actually helping you achieve your desired outcomes. What we find is that top-down buy-in to mechanisms not only helps drive their adoption, but creates an inspection process that is effective at achieving the desired business results. For ORRs to be a successful program for your business, you will need to create an inspection process that has the gravity to drive both cultural change and adoption of the mechanism’s tool.
 
 Use multiple perspectives for inspection. You should seek diverse input from product management, IT leadership, developers, and engineers. These different perspectives will give you different insights to the effectiveness of the mechanism and how you may need to alter it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

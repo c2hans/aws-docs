@@ -33,7 +33,3 @@ More information on configuring federation to the AMS console is provided in:
 **Multi-Account Landing Zone**: [Configuring Federation to the AMS Console](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/setup-net-federate-console.html)
 **Single-Account Landing Zone**: [Configuring Federation to the AMS Console](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/fed-with-console.html)
 Additionally, see [Appendix: AD FS claim rule and SAML settings](https://docs.aws.amazon.com/managedservices/latest/userguide/apx-adfs-claim-rule-saml.html). For information about using AWS Microsoft AD to support your Active Directory–aware applications, in the AWS Cloud, that are subject to compliance requirements, see [Manage Microsoft AD Compliance](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_compliance.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -208,7 +208,3 @@ The following related resources can help you as you work with this action.
 **Note**
 This topic and tutorial describe the Amazon ECS standard deployment action for CodePipeline. For information about Amazon ECS to CodeDeploy blue/green deployment actions in CodePipeline, see [Tutorial: Create a pipeline with an Amazon ECR source and ECS-to-CodeDeploy deployment](tutorials-ecs-ecr-codedeploy.md).
 + *Amazon Elastic Container Service Developer Guide* – For information about working with Docker images and containers, Amazon ECS services and clusters, and Amazon ECS task sets, see [What Is Amazon ECS?](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

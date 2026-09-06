@@ -30,7 +30,3 @@ sapodata_df = glueContext.create_dynamic_frame.from_options(
 <a name="sap-odata-incremental-load"></a>
 
 An **incremental load** in the context of ODP (Operational Data Provisioning) entities involves extracting only the new or changed data (deltas) from the source system since the last data extraction, avoiding preprocessing the already processed records. This approach significantly improves efficiency, reduces data transfer volumes, enhances performance, ensures efficient synchronization between systems, and minimizes processing time, especially for large datasets that change frequently.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

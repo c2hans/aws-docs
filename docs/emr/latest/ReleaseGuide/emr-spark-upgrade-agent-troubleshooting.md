@@ -61,7 +61,3 @@ Do not turn on "trust" setting by default for all tool calls initially and opera
 <a name="spark-upgrade-agent-qa-prompt-examples"></a>
 
 Please refer to [Prompt Examples for the Spark Upgrade Agent](emr-spark-upgrade-agent-prompt-examples.md) for the prompt examples about leveraging upgrade tools.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

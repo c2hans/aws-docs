@@ -94,7 +94,3 @@ The `base64` utility is available on Linux, macOS, and [Ubuntu on Windows](https
 For more information about the `Invoke` API, including a full list of parameters, headers, and errors, see [Invoke](https://docs.aws.amazon.com/lambda/latest/api/API_Invoke.html).
 
 When you invoke a function directly, you can check the response for errors and retry. The AWS CLI and AWS SDK also automatically retry on client timeouts, throttling, and service errors. For more information, see [Understanding retry behavior in Lambda](invocation-retries.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

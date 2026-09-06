@@ -23,7 +23,3 @@ You can visualize historical queue data using time series graphs to help identif
 
    The following image shows an example Queue dashboard. It displays a graph of service level data for the queue. **Time range** is set to **Previous 24 hours to future 24 hours**. **Channel** is set to **All channels**. **Service level** is set to **60 seconds**.
 ![An example Queue dashboard, a graph of data.](http://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-queue-dashboard-exp.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

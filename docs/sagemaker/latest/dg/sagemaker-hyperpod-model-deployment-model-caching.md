@@ -135,7 +135,3 @@ kubectl logs -n hyperpod-inference-system deployment/hyperpod-inference-controll
 + Model weights caching requires instance types with local NVMe storage. EBS-only instances are not supported.
 + The maximum cacheable model size is bounded by the available NVMe capacity on the instance type.
 + Cache warm-up time depends on model size and network throughput to the remote model source.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

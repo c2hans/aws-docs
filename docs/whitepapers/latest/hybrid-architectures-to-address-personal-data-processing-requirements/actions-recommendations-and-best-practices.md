@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 +  2.4 [*Website scenario with API engine and DBMS in on-premises data center*](website-scenario-with-api-engine-and-database-management-system-in-an-on-premises-data-center.md)
 +  3.1 [*Disaster recovery with elastic disaster recovery*](disaster-recovery-with-elastic-disaster-recovery.md)
 +  3.2 [*Read-replicas in Amazon RDS from on-premises databases*](read-replicas-in-amazon-rds-from-on-premises-databases.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

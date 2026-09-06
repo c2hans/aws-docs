@@ -30,7 +30,3 @@ S3 access points attached to FSx for OpenZFS volumes have the following restrict
   You can only create S3 access points that are attached to FSx for OpenZFS volumes that you own. You cannot create an S3 access point that is attached to a volume owned by another AWS account.
 
 For a complete list of all access point restrictions and limitations, see [Restrictions and limitations for access points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-restrictions-limitations-naming-rules.html) in the *Amazon Simple Storage Service User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

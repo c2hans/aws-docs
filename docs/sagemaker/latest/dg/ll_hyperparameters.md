@@ -53,7 +53,3 @@ The following table contains the hyperparameters for the linear learner algorith
 | use\_bias | Specifies whether the model should include a bias term, which is the intercept term in the linear equation.<br />**Optional**<br />Valid values: `true` or `false`<br />Default value: `true` |
 | use\_lr\_scheduler | Whether to use a scheduler for the learning rate. If you want to use a scheduler, specify `true`. <br />**Optional**<br />Valid values: `true` or `false`<br />Default value: `true` |
 | wd | The weight decay parameter, also known as the L2 regularization parameter. If you don't want to use L2 regularization, set the value to 0.<br />**Optional**<br />Valid values:`auto` or non-negative floating-point integer<br />Default value: `auto` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

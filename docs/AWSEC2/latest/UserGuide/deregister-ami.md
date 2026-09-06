@@ -116,7 +116,3 @@ To avoid incurring these types of unnecessary costs, we recommend deleting any r
 + Delete the bundle in Amazon S3 by using the [ec2-delete-bundle](ami-tools-commands.md#ami-delete-bundle) (AMI tools) command.
 + If the Amazon S3 bucket is empty after you delete the bundle, and you have no further use for that bucket, you can [delete the bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-bucket.html).
 + If you no longer need the instances that were launched from the AMI, you can [terminate](terminating-instances.md#terminating-instances-console) them. To list the instances, filter by the ID of the AMI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -63,7 +63,3 @@ To allow managed integrations to retrieve the secret value from Secrets Manager,
 ```
 
 This policy grants managed integrations permission to retrieve the secret value on behalf of your C2C connector. The condition key helps prevent the confused deputy problem by ensuring that only requests originating from your specific account association can access the secret.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

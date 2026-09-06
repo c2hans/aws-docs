@@ -23,7 +23,3 @@ In terms of the categorization of inputs into push and pull, an SRT Listener inp
 + [Provide connection information to the upstream system](setup-uss-srt-listener.md)
 + [Result of this procedure](input-listener-srt-result.md)
 + [Network locations for SRT Listener inputs](input-listener-srt-network-locations.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

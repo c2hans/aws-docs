@@ -115,7 +115,3 @@ The following notebooks show you how to use a SageMaker Clarify for special case
 + Use computer vision (CV) explainability for [image classification](https://sagemaker-examples.readthedocs.io/en/latest/sagemaker-clarify/computer_vision/image_classification/explainability_image_classification.html) and [object detection](https://sagemaker-examples.readthedocs.io/en/latest/sagemaker-clarify/computer_vision/object_detection/object_detection_clarify.html).
 
 These notebooks have been verified to run in Amazon SageMaker Studio Classic. If you need instructions on how to open a notebook in Studio Classic, see [Create or Open an Amazon SageMaker Studio Classic Notebook](notebooks-create-open.md). If you're prompted to choose a kernel, choose **Python 3 (Data Science)**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

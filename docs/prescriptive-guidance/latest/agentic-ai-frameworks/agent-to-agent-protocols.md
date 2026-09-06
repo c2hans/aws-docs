@@ -38,7 +38,3 @@ Beyond communication patterns, several technical and organizational factors can 
 | Deployment environment | Where agents will run and communicate | Distributed or single machine |
 | Ecosystem compatibility | Integration with existing agent frameworks | LangChain or Strands Agents |
 | Scalability needs | Expected growth in agent interactions | Streaming capabilities of MCP |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

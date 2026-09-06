@@ -56,7 +56,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec_app
 +  [Proactive security: Considerations and approaches](https://www.youtube.com/watch?v=CBrUE6Qwfag)
 +  [The AWS Philosophy of Security (re:Invent 2017)](https://www.youtube.com/watch?v=KJiCfPXOW-U)
 +  [When security, safety, and urgency all matter: Handling Log4Shell](https://www.youtube.com/watch?v=pkPkm7W6rGg)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

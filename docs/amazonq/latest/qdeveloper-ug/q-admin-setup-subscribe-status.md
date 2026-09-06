@@ -33,7 +33,3 @@ The statuses on the **Users** tab are:
 + **Canceled** – The user's subscription was canceled (unsubscribed) by an administrator, and the user can no longer access Amazon Q Developer features. For more information, see [Unsubscribing from Amazon Q Developer Pro](q-admin-setup-unsubscribe.md).
 **Note**
 The **Users** tab of the Amazon Q Developer console does *not* show users who are subscribed as part of a group. To see these users, navigate to the Amazon Q console's (*not* the Amazon Q Developer console's) **Subscriptions** page. On this page, group-subscribed users will appear with a status of **Unavailable**. To see their actual status, choose a user from the table, and look for their status under **User associations**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

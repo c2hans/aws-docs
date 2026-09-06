@@ -312,7 +312,3 @@ EventBridge also needs permission to send events to your target. For more inform
 
 **Note**
 When you match the `EC2 Image Builder Workflow Step Waiting` event, your target can call `SendWorkflowStepAction` with the `workflow-step-execution-id` from the event and an `action` of `RESUME` or `STOP`. See [WaitForAction](wfdoc-step-actions.md#wfdoc-step-action-waitfor).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

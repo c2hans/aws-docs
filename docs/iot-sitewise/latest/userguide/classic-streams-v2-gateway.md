@@ -15,7 +15,3 @@ The Classic streams, V2 gateway maintains traditional functionality familiar fro
 + [Destinations and AWS IoT Greengrass stream manager](destinations-gg-stream-manager.md)
 + [Configure edge capabilities on AWS IoT SiteWise Edge](edge-data-collection-and-processing.md)
 + [Configure edge data processing for AWS IoT SiteWise models and assets](edge-processing.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

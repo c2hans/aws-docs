@@ -166,7 +166,3 @@ Multi-line queries are not supported by the CloudWatch data source connectors. E
 <a name="CloudWatch_MultiDataSources-Future-Updates"></a>
 
 From time to time, Amazon might notify you that we recommend that you update your connectors with a newer available version and will provide instructions for how to do so.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

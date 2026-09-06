@@ -37,14 +37,14 @@ To set up access controlled by an IAM role, do the following tasks:
 
 In this step, you create an IAM role, with a set of permissions to control access to your AWS resources and a trust policy that gives Amazon GameLift Servers rights to use the role's permissions.
 
-For instructions on how to set up the IAM role , see [Set up an IAM service role for Amazon GameLift Servers](setting-up-role.md). When creating the permissions policy, choose specific services, resources, and actions that your applications need to work with. As a best practice, limit the scope of the permissions as much as possible.
+For instructions on how to set up the IAM role, see [Set up an IAM service role for Amazon GameLift Servers](setting-up-role.md). When creating the permissions policy, choose specific services, resources, and actions that your applications need to work with. As a best practice, limit the scope of the permissions as much as possible.
 
 After you create the role, take note of the role's Amazon Resource Name (ARN). You need the role ARN during fleet creation.
 
 ### Modify applications to acquire credentials
 <a name="gamelift-sdk-server-resources-roles-apps"></a>
 
-In this step, you configure your applications to acquire security credentials for the IAM role and use them when interacting with your AWS resources . See the following table to determine how to modify your applications based on (1) the type of application, and (2) the server SDK version your game uses to communicate with Amazon GameLift Servers.
+In this step, you configure your applications to acquire security credentials for the IAM role and use them when interacting with your AWS resources. See the following table to determine how to modify your applications based on (1) the type of application, and (2) the server SDK version your game uses to communicate with Amazon GameLift Servers.
 
 |  | Game server applications | Other applications |
 | --- | --- | --- |
@@ -103,7 +103,7 @@ If you want to use an Amazon CloudWatch agent to collect metrics, logs, and trac
 
 Add code to your applications to assume the IAM role and get credentials to interact with your AWS resources. Any application that runs on an Amazon GameLift Servers fleet instance with server SDK 4 or earlier can assume the IAM role.
 
-In the application code, before accessing an AWS resource, the application must call the AWS Security Token Service (AWS STS) `[AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html)` API operation and specify the role ARN. This operation returns a set of temporary credentials that authorizes the application to access to the AWS resource. For more information, see [Using temporary credentials with AWS resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html) in the *IAM User Guide*.
+In the application code, before accessing an AWS resource, the application must call the AWS Security Token Service (AWS STS) `[AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html)` API operation and specify the role ARN. This operation returns a set of temporary credentials that authorizes the application to access the AWS resource. For more information, see [Using temporary credentials with AWS resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html) in the *IAM User Guide*.
 
 ### Associate a fleet with the IAM role
 <a name="gamelift-sdk-server-resources-roles-fleet"></a>
@@ -128,7 +128,3 @@ Amazon GameLift Servers streamlines the process of setting up VPC peering connec
 
 **Note**
 VPC peering is not supported for container fleets.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -163,7 +163,3 @@ This procedure runs a job on only a single device.
 1. While the AWS IoT Device Client is running and waiting for a job, you can submit another job by changing the `job-id` value and re-running the **create-job** from Step 1.
 
 When you’re done running jobs, in the terminal window, enter ^C (control-C) to stop the AWS IoT Device Client.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

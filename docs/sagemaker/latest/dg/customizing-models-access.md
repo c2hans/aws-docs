@@ -110,7 +110,3 @@ python3 launcher/launch.py --recipe recipes_collection/recipes/fine-tuning/llama
 Command-line interface for submitting training jobs to HyperPod EKS clusters. HP-CLI integrates with Kubernetes-based workload orchestration for containerized training on persistent clusters.
 
 For setup and usage, see [HyperPod with Amazon EKS](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-eks.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

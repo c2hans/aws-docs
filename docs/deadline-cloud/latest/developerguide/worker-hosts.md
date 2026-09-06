@@ -19,7 +19,3 @@ On customer-managed fleets, you configure the worker host operating system. The 
 + Don't give the queue `jobRunAsUser` permission to schedule commands to run in the future:
   + On Linux, deny these accounts access to `cron` and `at`.
   + On Windows, deny these accounts access to the Windows task scheduler.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

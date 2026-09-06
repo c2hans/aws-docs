@@ -37,7 +37,3 @@ The following table describes custom AWS keys that MediaPackage uses.
 | com.amazonaws-mqcs | The media quality confidence score (MQCS) rating for the segment. | CMSD-Static: com.amazonaws-mqcs="90" |
 | com.amazonaws-mqcs-seq | The aggregate of [MQCS ratings](mqcs.md#mqcs.title) for all segments in the sequence.<br />Value is from 1-100. | CMSD-Static: com.amazonaws-mqcs-seq="100" |
 | com.amazonaws-mqcs-seq-tracks | The aggregate of [MQCS ratings](mqcs.md#mqcs.title) for all segments in the sequence, by object type.<br />Value is from 1-100. | CMSD-Static: com.amazonaws-mqcs-seq-tracks="v:100;a:90;s:50;m:60" |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

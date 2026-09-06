@@ -117,7 +117,3 @@ After setting up MQAR, test your configuration to ensure it works as expected:
 After implementing MQAR, consider these next steps:
 + Set up monitoring and troubleshooting for your MQAR configuration (see [Monitor and troubleshoot your CloudFront and MediaTailor integration](monitoring-and-troubleshooting.md))
 + Implement automated deployment using AWS CloudFormation (see [Automate MediaTailor and CDN with CloudFormation](automating-cdn-integration.md))
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -235,7 +235,3 @@ After your project is ready, you can add resources and tasks.
 + To set up notifications that send status alerts for workflow run success or failure, see [Sending Slack and email notifications from CodeCatalyst](notifications-manage.md).
 + To invite members to your project, see [Granting users project permissions](projects-members.md).
 + To set up Dev Environments, see [Write and modify code with Dev Environments in CodeCatalyst](devenvironment.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

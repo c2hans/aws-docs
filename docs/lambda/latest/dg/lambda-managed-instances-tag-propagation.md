@@ -55,7 +55,3 @@ aws lambda update-capacity-provider \
 + Changes to `PropagateTags` configuration only affect resources provisioned after the update. Previously launched resources retain their original tags.
 + Tag propagation tags are separate from the `Tags` parameter on the capacity provider itself. Capacity provider tags identify the capacity provider resource; propagated tags are applied to the managed resources the capacity provider launches.
 + Propagated tags count toward the AWS resource tag limits on the target resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

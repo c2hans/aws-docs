@@ -13,7 +13,7 @@ Choose the fleet type that best fits your requirements for cost, control, scalab
 <a name="fleets-intro-common"></a>
 
 An Amazon GameLift Servers fleet is a collection of computing resources that run your game servers and host game sessions for players. Fleets can vary in the type of compute resources you use and how the fleet is managed. A fleet's size—the number of game sessions and players that it can support—depends on the number of compute resources that you give it. All Amazon GameLift Servers fleets have the following characteristics:
-+ The game server processes that run on all fleets are integrated with the server SDK for Amazon GameLift Serversand communicate with the Amazon GameLift Servers service in the same way. Game servers report their availability to host game sessions and players, respond to prompts to start or stop game sessions, and other interactions.
++ The game server processes that run on all fleets are integrated with the server SDK for Amazon GameLift Servers and communicate with the Amazon GameLift Servers service in the same way. Game servers report their availability to host game sessions and players, respond to prompts to start or stop game sessions, and other interactions.
 + Amazon GameLift Servers handles game session placement for all fleets in the same way. Amazon GameLift Servers keeps track of a fleet's game server status and chooses from available game servers to host a new game session. This process is used whether your game places game sessions on a single fleet or uses a [game session queue](queues-intro.md) to balance hosting across multiple fleets. With a queue, you can also customize placement decisions to consider factors such as resource cost and latency.
 + All fleets support the use of a FlexMatch matchmaker in collaboration with a game session placement queue. The Amazon GameLift Servers service receives player match requests, forms the matches, and passes them to the game session queue to find available game servers.
 + Amazon GameLift Servers collects a wide range of fleet metrics. These include status metrics for computes and server processes, as well as usage metrics for game sessions and player activity. See the complete list of available metrics at [Monitor Amazon GameLift Servers with Amazon CloudWatch](monitoring-cloudwatch.md).
@@ -25,7 +25,3 @@ An Amazon GameLift Servers fleet is a collection of computing resources that run
 + [Amazon GameLift Servers managed container fleets](fleets-intro-containers.md)
 + [Amazon GameLift Servers Anywhere fleets](fleets-intro-anywhere.md)
 + [Build a hybrid hosting solution](hybrid-solution-guide.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

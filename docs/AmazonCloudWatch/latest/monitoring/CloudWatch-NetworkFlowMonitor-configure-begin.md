@@ -23,7 +23,3 @@ For example, you can view the top contributor performance metrics for data trans
 With a monitor, Network Flow Monitor also provides a network health indicator (NHI), which you can use to see if there have been AWS network impairments for network flows that you're tracking in the monitor, during a time period that you've selected. That information can help you decide where to focus your network troubleshooting efforts.
 
 For more information, and instructions for how to install agents, see [Install Network Flow Monitor agents on EC2 and self-managed Kubernetes instances](CloudWatch-NetworkFlowMonitor-agents.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

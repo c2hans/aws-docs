@@ -24,7 +24,3 @@ You can include time\_signal SCTE-35 markers from your input in any output that 
    A PID, or packet identifier, is an identifier for a set of data in an MPEG-2 transport stream container. PIDs are used by downstream systems and players to locate specific information in the container.
 
 1. Optional. For outputs in an **Apple HLS** output group, you can set up the job to include ad markers in the manifest. For more information, see [Including SCTE-35 information in your HLS manifest](including-scte-35-information-in-your-hls-manifest.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

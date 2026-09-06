@@ -12,7 +12,3 @@ For Number quotas, when you submit a service quota increase for Number of web po
 On rare occasion, customers may find a use case for increasing the number or rate of other resource quotas. For example, administrators may want to increase the number of browser settings for testing additional portal configurations. These service quota requests will be reviewed and fulfilled on a case-by-case basis.
 
 For Rate quotas, the rate limits exposed in Service Quotas should not need to be adjusted, regardless of the account portal limit.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

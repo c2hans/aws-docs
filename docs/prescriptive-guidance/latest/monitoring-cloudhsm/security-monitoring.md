@@ -219,7 +219,3 @@ When you create an EventBridge rule, you can customize the text that is passed t
      ```
 
 1. Follow the instructions in [Configure tags and review rule](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html#eb-create-rule-review) to finish creating the rule.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

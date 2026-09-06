@@ -199,7 +199,3 @@ For the public preview, no notifications are shown. You should review your alarm
 ![The Edit alarm dialog box with Cancel and Save buttons.](http://docs.aws.amazon.com/iot-twinmaker/latest/guide/images/alarmThresholdModal.png)
 **Note**
 This panel should only be used with a live time range that includes the present. Using it with time ranges that end and start in the past may show unexpected values when editing alarm thresholds as the current threshold always.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

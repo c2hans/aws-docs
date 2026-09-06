@@ -27,7 +27,3 @@ You can modify the master user password by using the [ModifyDBInstance](https://
 When you reset the master user password, RDS resets various permissions for the master user and the master user might lose certain permissions. Resetting the master user password also unlocks the master user, if it was locked out.
 
 RDS validates the new master user password and attempts to emit an RDS event if the password does not satisfy the policy. RDS sets the password even if it does not satisfy the password policy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

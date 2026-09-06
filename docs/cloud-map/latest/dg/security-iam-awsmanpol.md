@@ -49,7 +49,3 @@ View details about updates to AWS managed policies for AWS Cloud Map since this 
 | Change | Description | Date |
 | --- | --- | --- |
 | [AWSCloudMapDiscoverInstanceAccess](#security-iam-awsmanpol-AWSCloudMapDiscoverInstanceAccess), [AWSCloudMapRegisterInstanceAccess](#security-iam-awsmanpol-AWSCloudMapRegisterInstanceAccess), [AWSCloudMapReadOnlyAccess](#security-iam-awsmanpol-AWSCloudMapReadOnlyAccess) – Updates to existing policies. | AWS Cloud Map updated these policies to provide access to the new AWS Cloud Map `DiscoverInstanceRevision` API operations. | August 15, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Map. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud-map` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

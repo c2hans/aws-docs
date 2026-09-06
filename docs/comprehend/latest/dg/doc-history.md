@@ -56,7 +56,3 @@ The following table describes the documentation for this release of Amazon Compr
 | [New feature](https://docs.aws.amazon.com/comprehend/latest/dg/how-syntax.html) | Amazon Comprehend now parses documents to discover the syntax of a document and the part of speech for each word. For more information, see [ Syntax](https://docs.aws.amazon.com/comprehend/latest/dg/how-syntax.html).  | July 17, 2018 |
 | [New feature](https://docs.aws.amazon.com/comprehend/latest/dg/how-async.html) | Amazon Comprehend now supports asynchronous batch processing for language, key phrase, entity, and sentiment detection. For more information, see [ Asynchronous batch processing ](https://docs.aws.amazon.com/comprehend/latest/dg/how-async.html).  | June 27, 2018 |
 | [New guide](#doc-history) | This is the first release of the *Amazon Comprehend Developer Guide*. | November 29, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

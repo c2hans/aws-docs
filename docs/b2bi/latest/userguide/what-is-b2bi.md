@@ -41,7 +41,3 @@ The [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/) provides
 The architecture of B2B Data Interchange is designed to be programming language-neutral, using AWS supported interfaces to store and retrieve objects. You can access B2B Data Interchange and AWS programmatically by using the AWS B2B Data Interchange REST API. The REST API is an HTTP interface to B2B Data Interchange.
 
 For information about the AWS SDKs, including how to download and install them, see [Tools for AWS](https://aws.amazon.com/developer/tools/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS B2B Data Interchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query b2bi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

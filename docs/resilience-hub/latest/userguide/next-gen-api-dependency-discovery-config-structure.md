@@ -22,7 +22,3 @@ The following table describes the fields in the `DependencyDiscoveryConfig` stru
 | updatedAt | No | The timestamp when the dependency discovery status was last updated. |
 | eligibleResourceCount | No | The number of compute resources eligible for dependency discovery. Returns null until the resource discovery process completes its first run. |
 | message | No | A message describing the current state of discovery. Returns null when discovery is complete and dependencies are available. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,7 +84,3 @@ This section describes how to review terms and use the RCMP.
 1. Review the terms of the [Reseller Contract for AWS Marketplace](https://s3.amazonaws.com/aws-mp-rcmp/Reseller-Contract-for-AWS-Marketplace-2021-12-01.pdf).
 
 1. Follow the steps in [Create a resell opportunity for a channel partner](https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-isv-info.html) while referring to the [RCMP guide](https://s3.us-west-2.amazonaws.com/external-mp-channel-partners/Reseller+Contract+for+AWS+Marketplace.pdf).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

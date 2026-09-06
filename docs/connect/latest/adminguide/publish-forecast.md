@@ -39,7 +39,3 @@ Connect Customer retains only the last published forecast. We strongly advise yo
 
 1. We recommend choosing **choose here** as shown in the following image. With this option, you can specify the name of the downloaded file and the location. Otherwise, the file is saved to your **Downloads** folder and its name is a generated number.
 ![The forecast page, the choose here link to start the download.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wfm-forecasting-download-last-published-choose-here.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

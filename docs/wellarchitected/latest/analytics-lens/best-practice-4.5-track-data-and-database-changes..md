@@ -34,7 +34,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 +  Amazon RDS Aurora - [Advanced Auditing with an Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Auditing.html)
 +  Amazon RDS Aurora - [Configuring an audit log to capture database activities for Amazon RDS](https://aws.amazon.com/blogs/database/configuring-an-audit-log-to-capture-database-activities-for-amazon-rds-for-mysql-and-amazon-aurora-with-mysql-compatibility/)
 +  AWS Database Migration Service (AWS DMS) [AWS Database Migration Service](https://aws.amazon.com/dms/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

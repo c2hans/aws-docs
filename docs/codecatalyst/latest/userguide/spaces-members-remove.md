@@ -37,7 +37,3 @@ If the user does not have any other role assigned, then changing the role from *
    + Choose the option to remove a user with the **Space administrator** role from the space and all its projects. Choose **Remove**.
 
 1. Refresh the **Members** tab. The user is automatically added to the list of project members in any project where the user had membership through project roles. If the **Space administrator** role was the user's only role, then the user is removed from the space entirely.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

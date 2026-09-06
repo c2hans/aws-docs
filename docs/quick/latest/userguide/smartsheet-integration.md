@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/smartsheet-integr
 # Smartsheet integration
 <a name="smartsheet-integration"></a>
 
-With the Smartsheet action connector, you can manage sheets, rows, reports, and search across your Smartsheet workspaces directly in Amazon Quick through natural language.
+With the Smartsheet connector, you can manage sheets, rows, reports, and search across your Smartsheet workspaces directly in Amazon Quick through natural language.
 
 ## Prerequisites
 <a name="smartsheet-integration-prerequisites"></a>
@@ -106,7 +106,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Actions return permission errors** – Verify that the authenticated user has the required sharing permissions on the target sheets. OAuth scopes don't override sharing-level access controls. For more information, see [Resource access levels](https://developers.smartsheet.com/api/smartsheet/guides/basics/resource-access-levels) in the Smartsheet API documentation.
 + **Sheet not found** – Verify the sheet ID is correct and that the authenticated user has at least viewer access to the sheet.
 + **API rate limit errors** – The Smartsheet API enforces rate limits. For more information, see [Limitations](https://developers.smartsheet.com/api/smartsheet/guides/basics/limitations) in the Smartsheet API documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

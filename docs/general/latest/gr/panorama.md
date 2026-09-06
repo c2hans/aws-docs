@@ -40,7 +40,3 @@ The following are the service endpoints and service quotas for this service.
 | Rate of deployments | Each supported Region: 200 | No | The maximum number of times that you can deploy an application per day, per device. |
 | Rate of total API requests | Each supported Region: 5 | No | The maximum number of API requests per second that you can perform in this account in the current AWS Region. |
 | Versions per package | Each supported Region: 20 | No | The maximum number of package versions that you can create per node package. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

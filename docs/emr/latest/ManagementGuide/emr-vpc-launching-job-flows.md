@@ -58,7 +58,3 @@ To ensure that a subnet with enough free IP addresses is available when you laun
 If no subnets in the VPC have enough available IPs to accommodate essential nodes, an error is returned and the cluster isn't created.
 
 In most deployment cases, there is a time difference between each launch of core, primary and task nodes. Additionally, it's possible for multiple clusters to share a subnet. In these cases, IP-address availability can fluctuate and subsequent task-node launches, for instance, can be limited by available IP addresses.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

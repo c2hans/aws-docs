@@ -53,7 +53,3 @@ You can run the commands that are provided in the tutorial, such as **`mkdir`** 
 You can use the AWS Cloud9 editor to perform other operations on a CDK app in the same way that you use a command line interface. For example, you can update the code files in the editor and deploy the app by using an AWS Cloud9 **Terminal** window.
 
 To try out these types of actions, use the AWS Cloud9 editor to continue the [Hello World Tutorial](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#hello_world_tutorial) in the *AWS CDK Developer Guide*. Make sure that you perform the last step, **Destroying the App's Resources**. Otherwise, you might incur unexpected costs to your AWS account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

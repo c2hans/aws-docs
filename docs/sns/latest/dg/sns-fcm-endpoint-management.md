@@ -77,7 +77,3 @@ To receive delivery events for your application, see [Available application even
 Tokens are considered stale once message deliveries to the endpoint device start failing. Amazon SNS sets these stale tokens as disabled endpoints for your platform application. When you publish to a disabled endpoint, Amazon SNS will return a `EventDeliveryFailure` event with the `FailureType` of `EndpointDisabled`, and a `FailureMessage` of *Endpoint is disabled*. To receive delivery events for your application, see [Available application events](application-event-notifications.md#application-event-notifications-events).
 
 When you receive this error from Amazon SNS, you need to remove or update the stale token in your platform application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

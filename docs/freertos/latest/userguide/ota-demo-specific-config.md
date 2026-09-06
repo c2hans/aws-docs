@@ -15,7 +15,3 @@ The base interval, in seconds, before retrying the network connection. The OTA d
 
 **OTA\_DEMO\_CONN\_RETRY\_MAX\_INTERVAL\_SECONDS**
 The maximum interval, in seconds, before retrying the network connection. The reconnect delay is doubled on every failed attempt, but it can go only up to this maximum value, plus a jitter of the same interval.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

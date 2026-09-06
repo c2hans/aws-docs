@@ -55,7 +55,3 @@ Long-term forecast overrides are not available while the forecasts are being com
   For example, if you are uploading the forecast for May 30th and you have configured the time zone as US/Pacific, then the following are acceptable values for the timestamp:
   + 2024-05-30T07:00:00Z
   + 2024-05-30T00:00:00-07:00
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ Learn about encryption in Amazon S3 at [Protecting Data Using Encryption](https:
 + [Setting Default Server-Side Encryption for an Amazon S3 Bucket](s3-example-default-server-side-encryption.md)
 + [Requiring Encryption on the Server to Upload Amazon S3 Bucket Objects](s3-example-enforce-server-side-encryption.md)
 + [Encrypting an Amazon S3 Bucket Object on the Server Using AWS KMS](s3-example-server-side-encryption-with-kms.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Go. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-go` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

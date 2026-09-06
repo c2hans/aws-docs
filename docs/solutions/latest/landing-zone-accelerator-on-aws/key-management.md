@@ -75,7 +75,3 @@ You have three options for handling orphaned KMS keys.
 
 **Important**
 Scheduling a KMS key for deletion is irreversible after the pending window expires. Any data encrypted under a deleted key becomes permanently unreadable. Always audit AWS CloudTrail before scheduling deletion, and prefer the maximum 30-day pending window.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

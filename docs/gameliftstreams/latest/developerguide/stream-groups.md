@@ -482,7 +482,3 @@ The account associated with the stream group will receive two reminder notificat
  Whenever a feature is released that requires a new stream group to use it, you will see a "Maintenance required" message at the top of the stream group's detail page to inform you that it is outdated. Recreating a stream group is a manual process, but to help you do it, use the **Create Stream Group** button in the message to start the process. Some of the fields will be filled in for you.
 
  Stream group maintenance is also required when the stream group is over 180 days old. You will no longer be able to link new applications to these older stream groups until they are recreated. At 365 days, streaming from the stream group will not be possible, and no changes to the stream group will be permitted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

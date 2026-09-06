@@ -16,7 +16,3 @@ You can add services and applications to your favorites from the **Services** me
 <a name="fave-quickbar"></a>
 
 The favorites quickbar appears when you have at least one AWS service or application added to your favorites. The favorites quickbar is located following the navigation bar and is visible in all AWS service consoles, so you can quickly access your favorite services and applications. You can rearrange the order of the services and applications in the favorites quickbar by dragging a service or application to the left or right.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Management Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

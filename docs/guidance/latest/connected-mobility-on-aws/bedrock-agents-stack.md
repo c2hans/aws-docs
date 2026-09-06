@@ -60,7 +60,3 @@ Both statements must grant `bedrock:InvokeModel` and `bedrock:InvokeModelWithRes
 When the ADP Knowledge Base (identified by its knowledge base ID, deployed in the Automotive Data Platform account) is configured, the agent role receives an additional `bedrock:Retrieve` policy statement scoped to the cross-account KB ARN. This enables the supervisor to ground responses in vehicle-specific knowledge articles (diagnostic trouble code guides, maintenance bulletins, recall notices) retrieved from the ADP OpenSearch Serverless index.
 
 The KB ID and ADP account ID are injected at deploy time via CDK context flags. The ADP account must grant the CMS agent role trust via a resource-based policy on the KB.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,7 +45,3 @@ AWS Cloud9 no longer supports the feature that allowed users to override IDE the
 If AWS Cloud9 detects that the `styles.css` file has been modified, the following message is displayed in the IDE:
 Support for theme overrides has been discontinued. The contents of this styles.css file will no longer be applied on loading the AWS Cloud9 IDE.
 If you need to use style sheets to define themes for the IDE, please [contact us](https://aws.amazon.com/contact-us/) directly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

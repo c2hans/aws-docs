@@ -76,7 +76,3 @@ For more information, see [Syncing Service Catalog products to template files fr
 <a name="integrations-connections-proton"></a>
 
 [AWS Proton](http://aws.amazon.com/proton/) is a cloud-based service for deploying to cloud infrastructure. You can use connections to create a link to your third-party repositories for the resources in your templates for AWS Proton. For more information, see [Create a link to your repository](https://docs.aws.amazon.com/proton/latest/userguide/ag-create-repo.html) in the *AWS Proton User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

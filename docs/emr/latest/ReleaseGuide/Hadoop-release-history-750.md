@@ -21,7 +21,3 @@ With the release of Amazon EMR 7.5, Spark's S3A connector demonstrates read perf
 <a name="Hadoop-release-history-750-features"></a>
 + S3 region configuration `fs.s3a.endpoint.region` is automatically set to the region where the EMR cluster is launched with S3A connector for EMR-EC2 deployment.
 + Amazon S3 cross-bucket region access is enabled by default for the S3A connector. It can be modified by setting `fs.s3a.cross.region.access.enabled={{true or false}}`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

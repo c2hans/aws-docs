@@ -30,7 +30,3 @@ Before you start an experiment, verify you completed the prerequisites. For more
 1. Choose **Start experiment run**. AWS AppConfig experimentation opens the dashboard for the running experiment.
 
 At 0% exposure, no audience traffic is assigned to treatments unless overrides are configured. Use this stage to validate feature flags, treatment logic, metrics, and logging before increasing exposure. For more information, see [Operational considerations](appconfig-experimentation-about-running-an-experiment.md#appconfig-experimentation-about-running-an-experiment-operational-considerations).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ For more information on creating and using KMS keys and the associated encryptio
 When you use a VPC with your analysis job, the `DataAccessRole` used for the Create and Start operations must have permissions to the VPC that accesses the output bucket.
 
 1. Choose **Create job** to create the entity recognition job.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

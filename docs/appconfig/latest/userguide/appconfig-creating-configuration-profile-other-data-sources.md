@@ -36,7 +36,3 @@ You can choose to insert third-party data in line with existing configuration da
 <a name="appconfig-creating-configuration-profile-other-data-sources-migrating"></a>
 
 If you've started using AWS AppConfig and still have legacy configuration data or feature flags in another system, you can use the process described earlier in this topic to migrate off of your legacy system and onto AWS AppConfig. You can build an extension that pulls data out of your legacy system and deploys it through AWS AppConfig. Using AWS AppConfig in this way provides you with all of the safety guardrail controls and benefits while still using your legacy data stores.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

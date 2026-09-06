@@ -42,7 +42,7 @@ To use this code example with Apache Airflow v2, no additional dependencies are 
 The following examples show how to clean the metadata database on your Amazon MWAA environment.
 
 ------
-#### [ Apache Airflow v3.0.6 to 3.2.1 ]
+#### [ Apache Airflow v3.0.6 to 3.3.1 ]
 + You must specify `--clean-before-timestamp` to control how far back the cleanup reaches. Use an ISO 8601 formatted timestamp (for example, `2025-01-01T00:00:00+00:00`).
 + We recommend that you specify `--tables` to limit the cleanup to specific tables. If omitted, the command cleans all supported tables.
 + Start with a small scope — use an older `--clean-before-timestamp` value (closer to your environment creation date) and a single table first. This limits the cleanup to only the oldest records. Because the command deletes everything before the specified timestamp, using a more recent timestamp results in a larger deletion scope. Gradually move the timestamp forward as you gain confidence in the process.
@@ -182,7 +182,3 @@ with DAG(
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

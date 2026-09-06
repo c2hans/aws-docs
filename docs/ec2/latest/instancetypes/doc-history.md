@@ -9,6 +9,7 @@ The following table describes the instance type releases for Amazon EC2.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [R9g and R9gd instances](#doc-history) | New memory optimized instance types powered by AWS Graviton5 processors. R9gd instances feature local NVMe SSD instance storage. | August 31, 2026 |
 | [C9gd instances](#doc-history) | New compute optimized C9gd instances. | June 30, 2026 |
 | [C9g instances](#doc-history) | New compute optimized C9g instances. | June 30, 2026 |
 | [G7 instances](#doc-history) | New G7 accelerated computing instance types featuring NVIDIA RTX PRO 4500 GPUs and Intel Xeon Granite Rapids processors. | June 18, 2026 |
@@ -170,7 +171,3 @@ The following table describes the instance type releases for Amazon EC2.
 | [D2 instances](#doc-history) | New storage optimized instances. | March 24, 2015 |
 | [C4 instances](#doc-history) | New compute optimized instances. | January 11, 2015 |
 | [T2 instances](#doc-history) | New general purpose instances. | June 30, 2014 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

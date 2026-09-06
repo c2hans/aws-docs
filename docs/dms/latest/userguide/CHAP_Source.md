@@ -27,7 +27,3 @@ For a comprehensive list of valid sources, see [Sources for AWS DMS](CHAP_Introd
 + [Using Amazon S3 as a source for AWS DMS](CHAP_Source.S3.md)
 + [Using IBM Db2 for Linux, Unix, Windows, and Amazon RDS database (Db2 LUW) as a source for AWS DMS](CHAP_Source.DB2.md)
 + [Using IBM Db2 for z/OS databases as a source for AWS DMS](CHAP_Source.DB2zOS.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

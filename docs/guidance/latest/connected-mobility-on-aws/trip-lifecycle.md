@@ -103,7 +103,3 @@ The stateful design reduces DynamoDB operations compared to a stateless approach
 | 20-message trip total | \~60 reads \+ 20 writes | 0 reads \+ 5 writes |
 
 Only the TripProcessor writes to the trips table. The TelemetryProcessor tags telemetry records with `tripId` for querying but does not write to the trips table. This single-writer pattern prevents data clobbering between processors.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

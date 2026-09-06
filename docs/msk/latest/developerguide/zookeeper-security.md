@@ -14,7 +14,3 @@ This section does not apply for clusters running in KRaft mode. See [KRaft mode]
 + [Disable or enable direct Apache ZooKeeper client access](zookeeper-disable-access.md)
 + [To place your Apache ZooKeeper nodes in a separate security group](zookeeper-security-group.md)
 + [Using TLS security with Apache ZooKeeper](zookeeper-security-tls.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

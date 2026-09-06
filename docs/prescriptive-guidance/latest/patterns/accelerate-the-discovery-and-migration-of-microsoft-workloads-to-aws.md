@@ -100,7 +100,3 @@ Yes, as long as the operating system is Microsoft Windows Server 2012 R2 or late
 *How do I run the module at scale for multiple servers?*
 
 To run the module on multiple domain-joined computers at scale, follow the steps in the *Run the Migration Validator Toolkit PowerShell module on multiple targets *epic of this guide. For non domain-joined computers, use a remote invocation or run the module locally by following the steps in the *Run the Migration Validator Toolkit PowerShell module on a single target* epic of this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

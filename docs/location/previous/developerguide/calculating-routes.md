@@ -25,7 +25,3 @@ For an overview of routing concepts, see [Routes (V1) concepts](route-concepts.m
 + [Departure time with Amazon Location](departure-time.md)
 + [Travel mode with Amazon Location](travel-mode.md)
 + [Managing your route calculator resources with Amazon Location](managing-route-calculators.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

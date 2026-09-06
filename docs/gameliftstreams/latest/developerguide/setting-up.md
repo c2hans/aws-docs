@@ -61,7 +61,3 @@ In addition to your user sign-in credentials for the AWS Management Console, you
 <a name="setting-up-billing"></a>
 
  A stream group incurs cost per active stream capacity per second. To make sure your cost and usage stays within your budget, see [Create billing alerts to monitor usage](pricing.md#pricing-billing-alerts).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

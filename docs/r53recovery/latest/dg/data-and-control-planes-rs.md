@@ -19,7 +19,7 @@ The best practice is to create your Region switch recovery plan in advance of an
 ## 2. Plan execution from healthy Region
 <a name="reliability-plan-execution-region"></a>
 
-When executing a Region switch plan to recover your application, you need to execute from the Region you are activating. This ensures your recovery does not take a dependency on the Region that is experiencing issues. Region switch provides an independent console in each AWS Region that calls data plane API operations for recovery tasks, so you can use the console in the Region that you're activating to execute plans for application recovery. This design ensures that recovery remains highly reliable and available regardless of the state of the impaired Region.
+When executing a Region switch plan to recover your application, you execute from the Region you are activating. For active/passive architectures, this means executing from your standby Region, the one you are bringing online. For active/active architectures, where both Regions are already serving traffic, you execute from the healthy Region that will absorb the workload. In both cases, this ensures your recovery does not take a dependency on the Region that is experiencing issues. Region Switch provides an independent console in each AWS Region that calls data plane API operations for recovery tasks, so you can use the console in the target Region to execute plans for application recovery. This design ensures that recovery remains highly reliable and available regardless of the state of the impaired Region.
 
 ## 3. Declarative recovery plans and cross-Region replication
 <a name="reliability-declarative-plans"></a>
@@ -29,7 +29,3 @@ You can declare Region switch recovery plans as code using Terraform or CloudFor
 Additionally, Region switch allows failover and failback workflows to live in the same plan, and automatically replicates the plan in both Regions. This means a single plan contains everything needed to recover in either direction, and both Regions always have the latest configuration. You don't need to manually synchronize plan configurations across Regions, which eliminates a class of failures where a stale or missing plan in the target Region blocks recovery.
 
 Together, these design choices ensure that Region switch can reliably orchestrate your application recovery during a Regional impairment. For more information about how AWS builds services to meet high availability targets, see the [Static stability using Availability Zones paper](https://aws.amazon.com/builders-library/static-stability-using-availability-zones/) in the Amazon Builders' Library.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -244,7 +244,3 @@ The following table contains a list of the different datetime functions that you
 | `hexToAscii(value: string)` | string | Converts a hexadecimal string to ASCII text.<br />Example: `fields hexToAscii("48656c6c6f") as text` |
 | `hexToDec(value: string)` | number | Converts a hexadecimal string to a decimal number.<br />Example: `fields hexToDec("0xff") as dec` |
 | `decToHex(value: number)` | string | Converts a decimal integer to a lowercase hex string with `0x` prefix. Negative numbers produce `-0x` prefix. Non-integers are truncated.<br />Example: `fields decToHex(255) as hex` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

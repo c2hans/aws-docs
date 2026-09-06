@@ -105,7 +105,3 @@ The processor function determines the following about each message.
 + Whether to leave a message unchanged
 
 When processing finishes, the processor Lambda function sends the result back to the Amazon Chime SDK Messaging service so the message can be sent to all recipients. Message status is marked `PENDING` until the processor Lambda function sends back the results. The processor Lambda function has 48 hours to send back the results. We do not guarantee message delivery after that, and the [ChannelFlowCallback](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelFlowCallback.html) API throws a Forbidden Exception error message. To send back the results, invoke the `ChannelFlowCallback` API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

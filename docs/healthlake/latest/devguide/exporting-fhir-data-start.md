@@ -161,7 +161,3 @@ Can't find what you need? Request a code example using the **Provide feedback** 
 1. Choose **Export data**.
 **Note**
 During export, choose **Copy job ID** on the banner at the top of the page. You can use the [`JobID`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DescribeFHIRExportJob.html#HealthLake-DescribeFHIRExportJob-request-JobId) to request export job properties using the AWS CLI. For more information, see [Getting FHIR export job properties](exporting-fhir-data-describe.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

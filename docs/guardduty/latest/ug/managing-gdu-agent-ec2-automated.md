@@ -15,7 +15,3 @@ Before you continue, make sure to follow all the [Prerequisites for Amazon EC2 i
 + [Migrating from Amazon EC2 manual agent to automated agent](migrate-from-ec2-manual-to-automated-agent.md)
 
 If you are migrating from managing the GuardDuty agent manually to enabling GuardDuty automated agent, then before following the steps to enable GuardDuty automated agent, see [Migrating from Amazon EC2 manual agent to automated agent](migrate-from-ec2-manual-to-automated-agent.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

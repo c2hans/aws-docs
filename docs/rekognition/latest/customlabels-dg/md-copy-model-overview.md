@@ -39,7 +39,3 @@ To remove a project policy from a project, call [DeleteProjectPolicy](https://do
 + [Copying a model (SDK)](md-copy-model-sdk.md)
 + [Listing project policies (SDK)](md-list-project-policies.md)
 + [Deleting a project policy (SDK)](md-delete-project-policy.title.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

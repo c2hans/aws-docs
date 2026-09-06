@@ -64,7 +64,3 @@ The considerations discussed here for migrating your application are the most co
 Neo4j has a variety of custom features and add-ons with funtionality that your application may rely on. When evaluating the need to migrate this functionality, it often helps to investigate whether there is a better approach within AWS to achieve the same goal. Considering the [architectural differences between Neo4j and Neptune](migration-architectural-differences.md), you can often find effective alternatives that take advantage of other AWS services or [integrations](integrations.md).
 
 See [Neptune compatibility with Neo4j](migration-compatibility.md) for a list of Neo4j-specific features and suggested workarounds.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

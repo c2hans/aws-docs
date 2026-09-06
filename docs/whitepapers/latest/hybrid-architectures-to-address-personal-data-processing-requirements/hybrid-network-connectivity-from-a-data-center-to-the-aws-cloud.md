@@ -36,7 +36,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
  Direct Connect is made through a one Gbps, 10 Gbps, or 100 Gbps ethernet port. The customer can use more than one Direct Connect connection, which can be assigned to a Link Aggregation Group (LAG). The LAG helps increase available bandwidth for the customer. Each AWS Site-to-Site VPN connection has two tunnels, and each tunnel supports a maximum throughput of up to 1.25 Gbps.
 
  Learn more about network resiliency and redundancy options in the [Building a Scalable and Secure Multi-VPC AWS Network Infrastructure](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/welcome.html) whitepaper.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

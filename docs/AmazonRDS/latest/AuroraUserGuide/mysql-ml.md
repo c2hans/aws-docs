@@ -739,7 +739,3 @@ The number of retried requests that the DB instance has sent to the Aurora machi
 The aggregate count of Aurora machine learning functions that are evaluated by non-batch mode across all queries run by users of the DB instance.
 
 For information about monitoring the performance of the SageMaker AI operations called from Aurora machine learning functions, see [Monitor Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-overview.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

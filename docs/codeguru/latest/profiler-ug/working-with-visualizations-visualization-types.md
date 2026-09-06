@@ -111,7 +111,3 @@ This overview example tells the following:
 <a name="working-with-visualizations-inspect-visualization"></a>
 
 An inspect visualization is useful to analyze a frame that appears in many places in a visualization. It groups all of the frames with the same name together in the middle of the visualization. Children (callees) are merged into the visualization above the frame. Parents (callers) are merged into the visualization below the frame.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

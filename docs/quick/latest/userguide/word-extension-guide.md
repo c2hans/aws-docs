@@ -14,7 +14,7 @@ Key capabilities include:
 + **Document review with track changes:** Ask Quick to review your document and suggest edits based on any criteria or Quick data of your choice. Suggestions appear in Word's built-in track changes and comments, so you stay in control of what gets accepted.
 + **Style and formatting matching:** Quick automatically matches your document's existing style, structure, and formatting. Attach reference documents or templates to apply specific formatting standards.
 + **Enterprise knowledge integration:** Include relevant information from your Quick knowledge sources directly into your document.
-+ **External actions:** Perform actions in third-party applications using your configured [action connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) or apps directly from Word.
++ **External actions:** Perform actions in third-party applications using your configured [connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) or apps directly from Word.
 
 **Important**
 The Amazon Quick Word extension uses generative AI to create and execute code within your Word application sandbox. AI can make mistakes and perform inaccurate actions within your Word document. No document content is read when the side panel is closed, and no data is sent to Amazon Quick unless you explicitly send a prompt.
@@ -51,7 +51,3 @@ The following prompts demonstrate common ways to use Quick within Word. You can 
 
 **Tip**
 For best results, be specific in your prompts. Include names, dates, and goals. You can attach reference documents or templates to guide formatting and style.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

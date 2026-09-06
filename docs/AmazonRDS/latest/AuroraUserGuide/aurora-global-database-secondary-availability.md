@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
  For more information about new features in Aurora PostgreSQL 16.6, 15.10, 14.15, 13.18, and 12.22, see [PostgreSQL 16.6](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/AuroraPostgreSQL.Updates.html#aurorapostgresql-versions-version166x) in the *Aurora PostgreSQL Release Notes*.
 
  For more information about new features in Aurora MySQL versions 3.09 and higher, see [Database engine updates for Amazon Aurora MySQL version 3](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html) in the *Aurora MySQL Release Notes*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

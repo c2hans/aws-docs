@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/nhs-cloud-security-gu
  The services above can be combined with [Amazon Simple Notification Service](https://aws.amazon.com/sns/) (Amazon SNS) to receive notifications, and with AWS Lambda and AWS System Manager for automated alert responses.
 
  For more information on protective monitoring, see [Section 5.3: Protective monitoring](principle-5-operational-security.md#section-5.3-protective-monitoring) and [Section 5.4: Incident management](principle-5-operational-security.md#section-5.4-incident-management) in this document.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

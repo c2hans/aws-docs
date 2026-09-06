@@ -45,7 +45,3 @@ Some services contain additional example categories that show how to leverage li
 + [Amazon SQS](cpp_sqs_code_examples.md)
 + [AWS STS](cpp_sts_code_examples.md)
 + [Amazon Transcribe Streaming](cpp_transcribe-streaming_code_examples.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for C++. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-cpp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

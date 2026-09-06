@@ -107,7 +107,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-microsoft-t
    + Channel.ReadBasic.All
 
 1.  Choose **Add permissions**. Your app is now setup successfully. You can use the client ID and client secret to create a new connection. For more information, see [https://learn.microsoft.com/en-us/graph/auth-register-app-v2](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

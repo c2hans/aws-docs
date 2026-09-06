@@ -62,7 +62,3 @@ You can create a usage budget only for a specific unit of measure. If you choose
 
 Usage type group
 A usage type group is a collection of usage types that have the same unit of measure. If you choose both the Usage type group and the Usage type filters, Cost Explorer shows you usage types that are automatically constrained to the group unit of measure. For example, assume you choose the group EC2: Running Hours (Hrs), and then choose the EC2-Instances filter for Usage type. Cost Explorer shows you only the usage types that are measured in hours.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

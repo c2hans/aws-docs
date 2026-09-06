@@ -54,7 +54,3 @@ The following samples demonstrate some of the available options.
   When `installSigPipeHandler` is `true`, the SDK for C\+\+ uses a handler that ignores `SIGPIPE` signals. For more information on `SIGPIPE`, see [Operation Error Signals](https://www.gnu.org/software/libc/manual/html_node/Operation-Error-Signals.html) on the GNU Operating System website. For more information on the curl handler, see [CURLOPT\_NOSIGNAL explained](https://curl.se/libcurl/c/CURLOPT_NOSIGNAL.html) on the curl website.
 
   The underlying libraries of curl and OpenSSL can send a `SIGPIPE` signal to notify when the remote side closes a connection. These signals must be handled by the application. For more information this curl functionality, see [libcurl thread safety](https://curl.se/libcurl/c/threadsafe.html) on the curl website. This behavior is not automatically built-in to the SDK because signal handlers are global for each application and the library is a dependency for the SDK.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for C++. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-cpp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

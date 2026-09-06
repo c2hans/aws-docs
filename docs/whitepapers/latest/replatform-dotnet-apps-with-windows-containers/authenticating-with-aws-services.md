@@ -73,7 +73,3 @@ New-NetRoute -DestinationPrefix 169.254.169.254/32 -InterfaceIndex $ifIndex -Nex
  Now that you know how to enable IAM roles for Amazon ECS Tasks on Windows, learn how your application code can assume the role.
 
 ![Task role architecture](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/task-role-arch.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

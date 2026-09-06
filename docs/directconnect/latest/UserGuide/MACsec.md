@@ -117,7 +117,3 @@ The stored key is read-only by design, but you can schedule a seven- to thirty-d
 + If the connection is in an available state, we notify the connection owner by email. If you do not take any action within 30 days, we disassociate the CKN from your connection.
 
 When we disassociate the last CKN from your connection and the connection encryption mode is set to "must encrypt", we set the mode to "should\_encrypt" to prevent sudden packet loss.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

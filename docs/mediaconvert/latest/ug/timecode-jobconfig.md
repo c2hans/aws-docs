@@ -78,7 +78,3 @@ If your input video doesn't have embedded timecodes and you set **Source** to **
 1. Optional. In your JSON job specification, set a value for `TimestampOffset`, located in `Settings`, `TimecodeConfig`. Specify the date in the following format: `YYYY-MM-DD`. For example, `2008-06-26`.
 
    This setting applies only to outputs that support a program-date-time stamp. Use **Timestamp offset** to overwrite the timecode date without affecting the time and frame number. This setting has no effect unless you also include the program-date-time stamp in the output.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

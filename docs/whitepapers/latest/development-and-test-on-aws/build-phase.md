@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/development-and-test-
  To distribute the build output (for example, to be deployed in test, staging, or production, or to be downloaded to clients), AWS offers several options. You can distribute build output packages directly out of S3 by configuring bucket policies and/or ACLs to restrict the distribution. You can also share the output object using an [S3 presigned URL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html).
 
  Another option is to use [Amazon CloudFront](https://aws.amazon.com/cloudfront/), a web service for content delivery, which makes it easy to distribute packages to end users with low latency and high data transfer speeds, thereby improving the end user experience. This can be helpful, for example, when a large number of clients are downloading install packages or updates. Amazon CloudFront offers several options; for example, to authorize and/or restrict access, though a full discussion of this is out of scope for this document.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

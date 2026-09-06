@@ -255,6 +255,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   ImportComponent  **
+  - **IAM action:**  [imagebuilder:ImportComponent](#list_imagebuilder-action-ImportComponent)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [imagebuilder:TagResource](#list_imagebuilder-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   ImportDiskImage  **
   - **IAM action:**  [imagebuilder:GetInfrastructureConfiguration](#list_imagebuilder-action-GetInfrastructureConfiguration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [imagebuilder:ImportDiskImage](#list_imagebuilder-action-ImportDiskImage)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -1003,7 +1007,3 @@ Amazon EC2 Image Builder defines the following condition keys that can be used i
 |   [imagebuilder:Ec2MetadataHttpTokens](https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_iam_service-with-iam.html#image-builder-security-ec2metadatatokens)  | Filters access by the EC2 Instance Metadata HTTP Token Requirement specified in the request | String |
 |   [imagebuilder:LifecyclePolicyResourceType](https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_iam_service-with-iam.html#image-builder-security-lifecyclepolicyresourcetype)  | Filters access by the Lifecycle Policy Resource Type specified in the request | String |
 |   [imagebuilder:StatusTopicArn](https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_iam_service-with-iam.html#image-builder-security-statustopicarn)  | Filters access by the SNS Topic Arn in the request to which terminal state notifications will be published | ARN |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ We support two types of deployments to update models in production: blue/green d
 You can create and manage your deployment through the [UpdateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateEndpoint.html) and [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) SageMaker API and AWS Command Line Interface commands. See the individual deployment pages for more details on how to set up your deployment. Note that if your endpoint uses any of the features listed in the [Exclusions](deployment-guardrails-exclusions.md) page, you cannot use deployment guardrails.
 
 To follow guided examples that shows how to use deployment guardrails, see our example [Jupyter notebooks](https://github.com/aws/amazon-sagemaker-examples/tree/master/sagemaker-inference-deployment-guardrails) for the canary and linear traffic shifting modes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

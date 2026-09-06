@@ -77,7 +77,3 @@ If applicable, [connect with IT service management (ITSM) tools](https://docs.aw
 <a name="implement-a-lifecycle-management-and-version-distribution-system.43c4c461-30fb-59e6-ba2f-21a108761d43"></a>
 
 Maintain versions of IaC templates, and versions of services provisioned from the templates, throughout their development lifecycle. You can use the hub-and-spoke model you implemented for your catalog to define whether a forced update is required at a spoke level (for example, if concurrent versions are available for self-service provisioning), and which versions need to be marked for obsolescence. Using a hub-and-spoke catalog also helps manage the audit and distribution of new versions as required.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

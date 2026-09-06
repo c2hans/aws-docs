@@ -30,7 +30,3 @@ To clone a repository, go through the following steps:
       In restricted mode, tasks are not allowed to run, debugging is disabled, workspace settings are not applied, and extensions have limited functionality.
 
       To exit restricted mode, trust the authors of all files in your current folder or its parent folder, and enable all features, choose **Manage** in the **Restricted Mode** banner.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

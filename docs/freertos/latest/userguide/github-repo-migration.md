@@ -61,7 +61,3 @@ When demos in Amazon-FreeRTOS use third-party libraries, we recommend that you s
 **Porting tests and integration tests**
 
 All tests under the `/tests` folder that are required to validate integration of FreeRTOS libraries were migrated to the [ FreeRTOS-Libraries-Integration-Tests](https://github.com/FreeRTOS/FreeRTOS-Libraries-Integration-Tests) repository. These can be used to test PAL implementation and library integration. The same tests are used by AWS IoT Device Tester (IDT) for the [AWS Device Qualification Program for FreeRTOS](https://docs.aws.amazon.com/freertos/latest/qualificationguide/afr-qualification.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

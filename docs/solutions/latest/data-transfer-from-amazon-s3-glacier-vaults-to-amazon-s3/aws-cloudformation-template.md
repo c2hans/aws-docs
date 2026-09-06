@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
  **Notifications** – The Amazon Glacier service sends one notification per archive to the vault Amazon SNS topic (if it exists). If you don't want subscribers to the Amazon SNS topic to receive these notifications, confirm that the Amazon Glacier vault being transferred doesn't have notifications enabled. For more information, see [Configuring Vault Notifications in Amazon Glacier](https://docs.aws.amazon.com/amazonglacier/latest/dev/configuring-notifications.html) in the *Amazon Glacier Developer Guide*.
  **Inventory** – This Guidance copies your Amazon Glacier vault archives once when you launch the stack. If you make changes to your vault after launching this Guidance, the Guidance doesn’t replicate those changes.
  **Simultaneous workflows** – Running multiple transfer workflows simultaneously can exceed Amazon Glacier quotas and induce throttling. We recommend that you only run one transfer workflow at a time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer from Amazon S3 Glacier Vaults to Amazon S3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

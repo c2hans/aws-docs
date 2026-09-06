@@ -76,7 +76,3 @@ For existing connections, connectivity to AWS is interrupted during the creation
 + [DescribeLoa](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLoa.html) (Direct Connect API)
 
 After you create a LAG, you can associate or disassociate connections from it. For more information, see [Associate a connection with a LAG](associate-connection-with-lag.md) and [Disassociate a connection from a LAG](disassociate-connection-from-lag.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

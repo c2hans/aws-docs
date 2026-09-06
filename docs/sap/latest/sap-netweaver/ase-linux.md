@@ -51,7 +51,3 @@ You can refer to the following resources before deploying SAP ASE on AWS. If you
 +  [Installation of SAP Systems Based on the Application Server Java of SAP NetWeaver 7.5 and SAP Solution Manager 7.2 SR2 Java of SAP NetWeaver 7.5 on UNIX: SAP Adaptive Server Enterprise](https://help.sap.com/docs/SLTOOLSET/01f04921ac57452983980fe83a3ce10d/0889d5d70cf24c3a82d7cda898ec3545.html?version=CURRENT_VERSION)
 +  [SAP Note 2922454 - SAP Adaptive Server Enterprise (SAP ASE) on Cloud Platforms (requires SAP portal access)](https://me.sap.com/notes/2922454)
 +  [SAP Note 1941500 - Certification information for Linux and other Operating Systems - SAP ASE (requires SAP portal access)](https://me.sap.com/notes/1941500)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/jira-integration.
 # Atlassian Jira Cloud integration
 <a name="jira-integration"></a>
 
-Use the Atlassian Jira Cloud action connector to create, update, search, and manage Jira issues, projects, sprints, and users directly in Amazon Quick through natural language.
+Use the Atlassian Jira Cloud connector to create, update, search, and manage Jira issues, projects, sprints, and users directly in Amazon Quick through natural language.
 
 Setting up this integration involves two steps. First, you create an OAuth 2.0 (3LO) app in the Atlassian Developer Console and configure its permissions. Then, you create the integration in Amazon Quick and connect it to your Atlassian app. For information about the authentication methods that Amazon Quick supports, see [Authentication methods](quick-action-auth.md).
 
@@ -217,7 +217,3 @@ To edit, share, or delete your integration, see [Managing existing integrations]
 <a name="jira-troubleshooting-errors"></a>
 + **`Access denied. You do not have permission to perform this action`** – The authenticated user does not have the required permissions in Jira Cloud. Contact your Jira Cloud administrator to verify and grant appropriate permissions.
 + **`OAuth 2.0 authorization failed`** – Verify the client ID, client secret, and OAuth scopes are configured correctly in both the Atlassian Developer Console and Amazon Quick.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

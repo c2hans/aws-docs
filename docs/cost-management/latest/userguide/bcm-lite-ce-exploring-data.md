@@ -41,7 +41,3 @@ To gain further insight into your data, you can group it in various dimensions. 
 The second visual tool is the cost and usage breakdown. This breakdown represents whatever view you've created for the cost and usage graph. This lets you directly read the costs figures without having to navigate on the chart. Data transfer costs are included in the services that they're associated with, such as Amazon EC2 or Amazon S3. They aren't represented as a separate line item on this table.
 
 You can download the .csv file that contains the complete data set for your chart. For more information, see [Download the cost data CSV file in the AWS Billing and Cost Management console](bcm-lite-ce-download-csv.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

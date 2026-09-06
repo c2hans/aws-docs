@@ -367,15 +367,15 @@ const client = new DynamoDBClient({
 
 DynamoDB uses HTTPS for client-server communication. You can control some aspects of the HTTP layer by providing a `NodeHttpHandler` object. For example, you can adjust the key timeout values `connectionTimeout` and `requestTimeout`. The `connectionTimeout` is the maximum duration, in milliseconds, that the client will wait while trying to establish a connection before giving up.
 
-The `requestTimeout` defines how long the client will wait for a response after a request has been sent, also in milliseconds. The defaults for both are zero, meaning the timeout is disabled and there's no limit on how long the client will wait if the response does not arrive. You should set the timeouts to something reasonable so in the event of a network issue the request will error out and a new request can be initiated. For example:
+The `requestTimeout` defines how long the client will wait for a response after a request has been sent, also in milliseconds. The defaults for both are zero, meaning the timeout is disabled and there's no limit on how long the client will wait if the response does not arrive. You should set the timeouts to something reasonable so in the event of a network issue the request will error out and the client can initiate a new request. For example, 10 seconds:
 
 ```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { NodeHttpHandler } from "@smithy/node-http-handler";
 
 const requestHandler = new NodeHttpHandler({
-  connectionTimeout: 2000,
-  requestTimeout: 2000,
+  connectionTimeout: 10000,
+  requestTimeout: 10000,
 });
 
 const client = new DynamoDBClient({
@@ -386,7 +386,7 @@ const client = new DynamoDBClient({
 **Note**
 The example provided uses the [Smithy](https://smithy.io/2.0/index.html) import. Smithy is a language for defining services and SDKs, open-source and maintained by AWS.
 
-In addition to configuring timeout values, you can set the maximum number of sockets, which allows for an increased number of concurrent connections per origin. The developer guide includes [details on configuring the `maxSockets` parameter](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/node-configuring-maxsockets.html).
+In addition to configuring timeout values, you can set the maximum number of sockets, which allows for an increased number of concurrent connections per origin. The developer guide includes [details on configuring the `maxSockets` parameter](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/node-configuring-maxsockets.html). Consider raising this when your application's concurrency (the number of simultaneous requests in flight) regularly approaches or exceeds 50.
 
 ### Config for keep-alive
 <a name="programming-with-javascript-config-keep-alive"></a>
@@ -433,6 +433,8 @@ const client = new DynamoDBClient({
 });
 ```
 
+For information about upcoming changes to the default retry behavior across all AWS SDKs, see [Announcing updated retry behavior for AWS SDKs and Tools](https://aws.amazon.com/blogs/developer/announcing-updated-retry-behavior-for-aws-sdks-and-tools/) on the AWS Developer Tools Blog. For the exact details for JavaScript v3, see the [JavaScript v3 retry behavior update (issue \#8037)](https://github.com/aws/aws-sdk-js-v3/issues/8037) on the GitHub website.
+
 ## Waiters
 <a name="programming-with-javascript-waiters"></a>
 
@@ -465,7 +467,7 @@ Below is a snippet to catch the error and take action based on the type of error
 
 ```
 import {
-  ResourceNotFoundException
+  ResourceNotFoundException,
   ProvisionedThroughputExceededException,
   DynamoDBServiceException,
 } from "@aws-sdk/client-dynamodb";
@@ -550,7 +552,7 @@ The SDK supports two module systems, CommonJS and ES (ECMAScript). CommonJS uses
 
 1. **Common JS** – `const { DynamoDBClient, PutItemCommand } = require("@aws-sdk/client-dynamodb");`
 
-1. **ES (ECMAScript** – `import { DynamoDBClient, PutItemCommand } from "@aws-sdk/client-dynamodb";`
+1. **ES (ECMAScript)** – `import { DynamoDBClient, PutItemCommand } from "@aws-sdk/client-dynamodb";`
 The project type dictates the module system to be used and is specified in the type section of your package.json file. The default is CommonJS. Use `"type": "module"` to indicate an ES project. If you have an existing Node.JS project that uses the CommonJS package format, you can still add functions with the more modern SDK V3 Import syntax by naming your function files with the .mjs extension. This will allow the code file to be treated as ES (ECMAScript).
 
 **Asynchronous operations**
@@ -561,8 +563,4 @@ Web and mobile developers building with React or React Native can use the SDK fo
 With V3, it's possible to bundle just the required V3 client modules and all required JavaScript functions into a single JavaScript file using Webpack, and add it in a script tag in the `<head>` of your HTML pages, as explained in the [Getting started in a browser script](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/getting-started-browser.html) section of the SDK documentation.
 
 **DAX data plane operations**
-The Amazon DynamoDB Streams Accelerator (DAX) data plane operations are supported by the SDK for JavaScript V3.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+The SDK for JavaScript V3 supports Amazon DynamoDB Accelerator (DAX) data plane operations.

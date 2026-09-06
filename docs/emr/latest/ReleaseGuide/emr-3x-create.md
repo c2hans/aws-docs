@@ -68,7 +68,3 @@ The job client only reads the `tasksperslot` parameter if the number of tasks is
 Amazon EMR withstands task node failures and continues cluster execution even if a task node becomes unavailable. Amazon EMR automatically provisions additional task nodes to replace those that fail.
 
 You can have a different number of task nodes for each cluster step. You can also add a step to a running cluster to modify the number of task nodes. Because all steps are guaranteed to run sequentially by default, you can specify the number of running task nodes for any step.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,7 +54,3 @@ When `CreateApiUserRole=true` access to the API endpoint is not restricted by 
 **Warning**
 The `ParallelClusterApiUserRole` has permission to invoke all AWS ParallelCluster API operations. To restrict access to a subset of API resources, see the [ Control who can call an API Gateway API method with IAM policies](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-control-access-using-iam-policies-to-invoke-api.html#api-gateway-who-can-invoke-an-api-method-using-iam-policies) in the *API Gateway Developer Guide*.
 + **IAMRoleAndPolicyPrefix** - This optional parameter accepts a string containing a maximum of 10 characters that will be used as the prefix for both IAM roles and policies created as part of the PC API infrastructure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

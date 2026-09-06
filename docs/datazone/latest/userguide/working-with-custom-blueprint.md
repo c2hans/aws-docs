@@ -24,7 +24,3 @@ With Amazon DataZone custom AWS service prints, you can migrate your existing Am
 + [Add project members to a custom AWS service environment](add-project-members-to-custom-environment.md)
 + [Configure a data source in an AWS service environment](configure-data-source-in-custom-environment.md)
 + [Configure a subscription target in an AWS service environment](configure-subscription-target-in-custom-environment.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -77,7 +77,3 @@ The *component type* specifies how the AWS IoT Greengrass Core software runs the
 
 **Note**  <a name="recipe-component-type-recommendation"></a>
 We don't recommend that you specify the component type in a recipe. AWS IoT Greengrass sets the type for you when you create a component.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

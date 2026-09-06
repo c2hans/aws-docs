@@ -41,7 +41,3 @@ Next you need to create a tracker in the Amazon Location console, use the follow
 1. Under the **Position filtering** field, choose the option that best fits how you intend to use your tracker resource. If you do not set Position filtering, the default setting is `TimeBased`. For more information, see [Start tracking](location/previous/developerguide/start-tracking.html), and start-tracking.html [PositionFiltering](https://docs.aws.amazon.com/location/previous/APIReference/API_BatchUpdateDevicePosition.html) in the Amazon Location API Reference.
 
 1.  Choose **Create tracker** to finish creating the tracker.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ On-demand backups cannot be used with point-in-time recovery (PITR), because an 
    + For **Amazon S3** resources: You can choose to exclude Access Control Lists (ACLs) from your backup by leaving **Backup Access Control Lists (ACLs)** unselected.
 
 1. Choose **Create on-demand backup**. This opens the **Jobs** page, where you can see a list of jobs and view job status.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

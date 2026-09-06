@@ -28,7 +28,3 @@ When you delete a project, Amazon Pinpoint deletes all project-specific settings
 + Analytics – Data for all engagement metrics, such as the number of messages sent and delivered for campaigns and journeys, and all journey execution metrics. For mobile and web apps, all event data that wasn’t streamed to another AWS service such as Amazon Kinesis, all funnels, and data for application usage, revenue, and demographic metrics. Before you delete a project, we recommend that you export this data to another location.
 
 You can delete a project by using the Amazon Pinpoint console. To learn more, see [Deleting a Project](https://docs.aws.amazon.com/pinpoint/latest/userguide/settings-general.html#settings-general-delete-project) in the *Amazon Pinpoint User Guide*. You can also delete a project programmatically by using the [App](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id.html) resource of the Amazon Pinpoint API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

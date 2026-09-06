@@ -62,7 +62,3 @@ Provide high-level statistics about the entities:
 | *Game Player* | *1 MM* | *< 1 KB* | *The game platform has about 1 MM users.* |
 | *Game Instance* | *6 MM*<br />*(100,000K/day \* 60 days)* | *< 1 KB* | *On average, there are 100K games every day. We need to store the last 60 days.* |
 | *Game User Mapping* | *300 MM*<br />*(6 MM games \* 50 players)* | *< 1 KB* | *On average, each game has 50 players that we need to store information about.* |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

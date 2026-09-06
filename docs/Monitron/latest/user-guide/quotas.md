@@ -31,7 +31,3 @@ All Amazon Monitron operations have the following quotas.
 | Maximum number of users per site | 20 |
 | Maximum number of custom classes per project | 25 |
 | Maximum number of positions per custom class | 500 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

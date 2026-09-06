@@ -63,7 +63,3 @@ When invoking a guardrail with cross-Region inference, you need an IAM policy th
 This example policy specifies the following resources:
 + The guardrail that you're invoking in your source Region (in this case, `us-east-1`).
 + The destination Regions defined in the guardrail profile you're using (in this case, `us.guardrail.v1:0`). For information on which destination Regions to specify in your policy, see the [Available guardrail profiles](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-cross-region-support.html#available-guardrail-profiles).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

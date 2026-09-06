@@ -21,7 +21,3 @@ Note that the KPL is 64-bit only.
 <a name="kinesis-kpl-supported-plats-source-code"></a>
 
 If the binaries provided in the KPL installation are not sufficient for your environment, the core of the KPL is written as a C\+\+ module. The source code for the C\+\+ module and the Java interface are released under the Amazon Public License and are available on GitHub at [Amazon Kinesis Producer Library](https://github.com/awslabs/amazon-kinesis-producer). Although the KPL can be used on any platform for which a recent standards-compliant C\+\+ compiler and JRE are available, Amazon doesn't officially support any platform that is not on the supported platforms list.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

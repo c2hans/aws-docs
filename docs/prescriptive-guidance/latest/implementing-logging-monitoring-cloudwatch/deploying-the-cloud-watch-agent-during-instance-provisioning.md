@@ -10,7 +10,3 @@ You can use this approach if you don't plan to use Systems Manager and want to s
 + **The installation scripts must be OS specific and suitable for different OS versions**. You require separate scripts if you intended to use both Windows and Linux. The Linux script should also have different installation steps based on the distribution.
 + **You must regularly update the CloudWatch agent with new versions when available**. This can be automated if you use Systems Manager with State Manager, but you can also configure the user data script to rerun on instance startup. The CloudWatch agent is then updated and reinstalled on every reboot.
 + **You must automate the retrieval and application of standard CloudWatch configurations**. This can be automated if you use Systems Manager with State Manager, but you can also configure a user data script to retrieve the configuration files on boot and restart the CloudWatch agent.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

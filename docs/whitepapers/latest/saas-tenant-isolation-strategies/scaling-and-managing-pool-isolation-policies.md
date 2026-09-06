@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
  By moving these policies into templates, you take on the added responsibility of assuring that these policies enforce your tenant isolation requirements. Ideally, the details of this mechanism will be mostly outside the view of developers so the potential for something to go wrong is reduced.
 
  One upside here is the management profile of this model. Should you choose to change something about your isolation policies, the path to applying these changes will be much more straightforward since there won’t be a separate policy for each tenant. That, and you’ll own the content lifecycle of these policy templates (versioning and deploying them through your own pipeline).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

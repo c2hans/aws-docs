@@ -36,7 +36,7 @@ STV\_BLOCKLIST is visible only to superusers. For more information, see [Visibil
 | hdr\_modified  | integer  | Whether or not the block header has been modified. 0 = false; 1 = true. Default is false.  |
 | unsorted  | integer  | Whether or not a block is unsorted. 0 = false; 1 = true. Default is true.  |
 | tombstone  | integer  | For internal use. |
-| preferred\_diskno  | integer  | Disk number that the block should be on, unless the disk has failed. Once the disk has been fixed, the block will move back to this disk.  |
+| preferred\_diskno  | integer  | Disk number that the block should be on, unless the disk has failed. After the disk has been fixed, the block will move back to this disk.  |
 | temporary  | integer  | Whether or not the block contains temporary data, such as from a temporary table or intermediate query results. 0 = false; 1 = true. Default is false.  |
 | newblock  | integer  | Indicates whether or not a block is new (true) or was never committed to disk (false). 0 = false; 1 = true.  |
 | num\_readers  | integer  | Number of references on each block.  |
@@ -138,7 +138,3 @@ slice | col |   tbl  | blocknum | newblock
 ...
 (24 rows)
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

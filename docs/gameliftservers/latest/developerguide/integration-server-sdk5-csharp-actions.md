@@ -339,7 +339,7 @@ AwsStringOutcome GetGameSessionId()
 ### Return value
 <a name="integration-server-sdk5-csharp-getgamesessionid-return"></a>
 
-If successful, returns the game session ID as an [AwsStringOutcome](integration-server-sdk5-csharp-datatypes.md#integration-server-sdk5-csharp-datatypes-awsstringoutcome) object. If not successful, returns an error message."
+If successful, returns the game session ID as an [AwsStringOutcome](integration-server-sdk5-csharp-datatypes.md#integration-server-sdk5-csharp-datatypes-awsstringoutcome) object. If not successful, returns an error message.
 
 ### Example
 <a name="integration-server-sdk5-csharp-getgamesessionid-example"></a>
@@ -709,7 +709,3 @@ else
     Environment.Exit(-1);
   }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

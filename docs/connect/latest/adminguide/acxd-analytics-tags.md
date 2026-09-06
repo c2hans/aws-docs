@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-analytics
 # Analytics tags
 <a name="acxd-analytics-tags"></a>
 
-Analytics tags help you mark important moments in a conversation flow so you can track how users move through your Agentic CX Designer application.
+Analytics tags help you mark important moments in a conversation flow so you can track how users move through your agentic CX designer application.
 
 A tag can be applied to a specific node in a flow. When a user reaches that node during a deployed conversation, the tag is recorded. You can then use tags to review flow traversal, filter conversation history, or create analytics dashboard charts around milestones that matter to your team.
 
@@ -44,7 +44,7 @@ These tags can help you identify completion rates, drop-off points, repeated iss
 ## Default system tags
 <a name="acxd-analytics-tags-system"></a>
 
-Agentic CX Designer includes default system tags that can be used in flows:
+Agentic CX designer includes default system tags that can be used in flows:
 + Automated
 + Not helpful
 + Escalated
@@ -133,7 +133,3 @@ Before deleting a tag, confirm that it is no longer needed for active reporting 
 + A node can have more than one tag, but using one tag per node is often easier to interpret and helps avoid confusing counts.
 + Tags mark that a node was reached; they do not automatically explain why the user reached that node.
 + Use clear tag names and descriptions so teammates understand what each tag is intended to measure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

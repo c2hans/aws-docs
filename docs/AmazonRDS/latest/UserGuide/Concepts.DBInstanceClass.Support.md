@@ -750,7 +750,3 @@ The following tables show the supported databases and database versions for the 
 | db.r6id.xlarge | No | MariaDB 12.3, 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4 | No | MySQL 8.4 and 8.0 | BYOL only | All PostgreSQL 17, 16, and 15 versions, 14.5 and higher 14 versions, and 13.7 and higher 13 versions |
 | db.r6id.large | No | MariaDB 12.3, 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4 | No | MySQL 8.4 and 8.0 | BYOL only | All PostgreSQL 17, 16, and 15 versions, 14.5 and higher 14 versions, and 13.7 and higher 13 versions |
 | db.r6id.metal | No | No | No | No | BYOL only | No |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

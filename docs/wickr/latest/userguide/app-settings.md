@@ -22,7 +22,3 @@ Complete the following steps to access the settings section of the Wickr client,
    + **Device Management** — Manage your devices enabled for the Wickr client.
    + **Connectivity** — Manage Wickr open access.
    + **Appearance** — Manage the appearance of the Wickr client.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ Amazon RDS supports backup replication for all currently available versions of R
 <a name="Concepts.RDS_Fea_Regions_DB-eng.Feature.CrossRegionAutomatedBackups.sq"></a>
 
 Amazon RDS supports backup replication for all currently available versions of RDS for SQL Server.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

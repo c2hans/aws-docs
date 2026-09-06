@@ -205,7 +205,3 @@ After you create your new instance from a snapshot, here are some things you can
 + If you're done with the old instance, you might want to delete it. You can do this by using the Lightsail console or the [delete-instance CLI command](http://docs.aws.amazon.com/cli/latest/reference/lightsail/delete-instance.html).
 + If you don't need the old snapshot, you might want to delete it. You can do this by using the Lightsail console or the [delete-instance-snapshot CLI command](http://docs.aws.amazon.com/cli/latest/reference/lightsail/delete-instance-snapshot.html).
 + If you had a static IP address attached to your old instance, you might want to keep it and attach it to the new instance. You can do this by using the console. See [Create a static IP and attach it to an instance](lightsail-create-static-ip.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

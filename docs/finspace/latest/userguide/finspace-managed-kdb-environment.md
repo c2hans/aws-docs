@@ -10,7 +10,3 @@ After careful consideration, we decided to end support for Amazon FinSpace, effe
 The Managed kdb Insights environment provides a logical container where you can launch and run clusters, and store data from kdb that can be used by the clusters.
 
 All resources in the Managed kdb environment run in AWS managed accounts and not in the customer account. The Managed kdb environment dedicated account is not shared with the existing FinSpace dataset browser environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

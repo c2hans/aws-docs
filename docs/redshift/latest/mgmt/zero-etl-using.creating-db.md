@@ -76,7 +76,3 @@ After creating a destination database, you can add data to your source. To add d
 + For Amazon RDS sources, see [Add data to the source DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.querying.html#zero-etl.add-data-rds) in the *Amazon RDS User Guide*.
 + For DynamoDB sources, see [Getting started with DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html) in the *Amazon DynamoDB Developer Guide*.
 + For zero-ETL integrations with applications sources, see [Zero-ETL integrations](https://docs.aws.amazon.com/glue/latest/dg/zero-etl-using.html) in the *AWS Glue Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

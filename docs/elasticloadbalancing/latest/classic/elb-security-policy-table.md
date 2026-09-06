@@ -77,7 +77,3 @@ The following table describes the security policies that support each cipher.
 | **OpenSSL** – DHE-RSA-AES128-SHA<br />**IANA** – TLS\_DHE\_RSA\_WITH\_AES\_128\_CBC\_SHA |  + ELBSecurityPolicy-2015-03<br />+ ELBSecurityPolicy-2015-02  | 33 |
 | **OpenSSL** – DHE-DSS-AES128-SHA<br />**IANA** – TLS\_DHE\_DSS\_WITH\_AES\_128\_CBC\_SHA |  + ELBSecurityPolicy-2015-03<br />+ ELBSecurityPolicy-2015-02  | 32 |
 | **OpenSSL** – DES-CBC3-SHA<br />**IANA** – TLS\_RSA\_WITH\_3DES\_EDE\_CBC\_SHA |  + ELBSecurityPolicy-2015-05<br />+ ELBSecurityPolicy-2015-03  | 0a |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

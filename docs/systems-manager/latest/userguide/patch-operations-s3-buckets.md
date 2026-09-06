@@ -163,7 +163,3 @@ Buckets with the format `patch-baseline-snapshot-{{region}}` or `patch-baseline-
 | Asia Pacific (New Zealand) | ap-southeast-6 | patch-baseline-snapshot-ap-southeast-6-62f446f2 |
 | Asia Pacific (Thailand) | ap-southeast-7 | patch-baseline-snapshot-ap-southeast-7-1699f14f |
 | Mexico (Central) | mx-central-1 | patch-baseline-snapshot-mx-central-1-ed0da79c |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ Enter the activation code provided by your administrator.
 
 **Note**
 The activation code is generated when your administrator creates a dedicated environment for your device. For more information, see [Creating an environment](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/creating-an-environment.html) in the WorkSpaces Thin Client administrator guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

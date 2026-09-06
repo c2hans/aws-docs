@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/random-samplin
 
    1.  Evaluation forms – perform evaluations
 
-1. Select the timeframe of contacts for evaluation, such as trailing week. Note that you can sample contacts from a maximum period of 5 weeks.
+1. Select the timeframe of contacts for evaluation, such as trailing week. You can sample contacts from a maximum period of 5 weeks.
 ![Select timeframe.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-randomsampling-time-range.png)
 
 1. Select the agent or agent hierarchy that you need to evaluate.
@@ -54,7 +54,7 @@ This step is required if you need to retrieve the contact sample in the future.
 ## Retrieving and viewing sampled contacts for evaluation
 <a name="retrieve-and-view-sampled-contacts-for-evaluation"></a>
 
- To retrieve the contact sample in the future, go to Contact Search and apply the filter Evaluation – contact samples. Note that contact samples are specific to the user that generated the sample.
+ To retrieve the contact sample in the future, navigate to Contact search and apply the filter Evaluation – contact samples. Contact samples are specific to the user that generated the sample.
 
 ![Create draft evaluations.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-randomsampling-contact-samples-filter.png)
 
@@ -68,7 +68,3 @@ This step is required if you need to retrieve the contact sample in the future.
 ![Create draft evaluations - evaluation overview.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-randomsampling-sampled-eval.png)
 
 ![Create draft evaluations - contact sample details.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-randomsampling-sampled-eval-details.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

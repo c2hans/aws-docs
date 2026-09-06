@@ -101,7 +101,3 @@ The following table describes how to convert Lambda Telemetry API events into OT
 | `ChildSpan[i].SpanId` | Generate a new `SpanId`. |
 | `ChildSpan[i].SpanContext.TraceState` | N/A for an X-Ray trace context. |
 | `ChildSpan[i].SpanContext.TraceFlags` | Same as parent `Span.SpanContext.TraceFlags`. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

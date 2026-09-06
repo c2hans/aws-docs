@@ -18,8 +18,8 @@ aws globalaccelerator --region us-west-2 provision-byoip-cidr --cidr {{address-r
 The following is an example of provisioning an address range.
 
 ```
-aws globalaccelerator --region us-west-2 provision-byoip-cidr
-    --cidr 203.0.113.0/24
+aws globalaccelerator --region us-west-2 provision-byoip-cidr \
+    --cidr 203.0.113.0/24 \
     --cidr-authorization-context Message="$text_message",Signature="$signed_message"
 ```
 
@@ -43,7 +43,3 @@ When your IP address range is provisioned, the `State` returned by `list-byoip-c
     ]
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,7 +59,3 @@ The following are the service endpoints and service quotas for this service.
 | Data retention | Each supported Region: 120 | No | The number of days that the data in the home directory will be retained after a shell was last accessed. |
 | Home directory size | Each supported Region: 1 Gigabytes | No | The maximum size of your shells home directory. |
 | Monthly usage | Each supported Region: 200 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/cloudshell/quotas/L-937D704D)  | The maximum number of hours that you can use AWS CloudShell per month in this account in the current Region. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

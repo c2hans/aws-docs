@@ -36,7 +36,3 @@ Designate a security or compliance account as the delegated administrator for Am
 <a name="regional-considerations"></a>
 
 Enable Amazon Inspector in Regions where your workloads run. Consider your compliance requirements and operational needs when determining which Regions require Amazon Inspector coverage. Document your region-specific requirements to maintain consistent security monitoring across your infrastructure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

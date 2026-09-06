@@ -704,7 +704,3 @@ The following table shows the APIs that you can call if you add this target type
 | GET | meetings | /users/ `{userId}` /meetings | List meetings |
 | POST | meetingCreate | /users/ `{userId}` /meetings | Create a meeting |
 | GET | recordingGet | /meetings/ `{meetingId}` /recordings | Get meeting recordings |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

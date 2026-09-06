@@ -34,7 +34,3 @@ This method works if you have a load-balanced environment that uses an [Applicat
 We have two example configuration files on GitHub that show how to configure an Application Load Balancer for redirection.
 + The [`alb-http-to-https-redirection-full.config`](https://github.com/awsdocs/elastic-beanstalk-samples/blob/master/configuration-files/aws-provided/resource-configuration/alb-http-to-https-redirection-full.config) configuration file creates an HTTPS listener on port 443, and modifies the default port 80 listener to redirect incoming HTTP traffic to HTTPS.
 + The [`alb-http-to-https-redirection.config`](https://github.com/awsdocs/elastic-beanstalk-samples/blob/master/configuration-files/aws-provided/resource-configuration/alb-http-to-https-redirection.config) configuration file expects the 443 listener to be defined. To define it, you can use standard Elastic Beanstalk configuration namespaces, or the Elastic Beanstalk console. Then it takes care of modifying the port 80 listener for redirection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

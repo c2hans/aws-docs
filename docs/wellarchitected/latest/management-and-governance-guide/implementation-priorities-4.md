@@ -47,7 +47,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 1.  Validating configurations
 
     Once the AWS and ITSM Tooling configurations are complete, the final step is to validate that AWS and the respective ITSM tool connected successful and the intended service management actions are enabled. For more information on these validation actions, refer to the [public documentation](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/integrations.html) for the desired ITSM tool.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

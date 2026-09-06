@@ -20,7 +20,3 @@ Administrators can configure settings to allow idle VDIs to be Stopped or Termin
 These settings are present on the **Desktop Settings** page under the **Server** tab. Once you update the settings according to your requirements, click on **Submit** to save the settings. New sessions will use the updated settings, but note that existing sessions will still use the settings which they had when they were launched.
 
 After they time out, sessions will either terminate or transition into the `STOPPED_IDLE` state based on their configuration. Users will have the ability to start `STOPPED_IDLE` sessions from the UI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

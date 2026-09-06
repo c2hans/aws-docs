@@ -15,7 +15,3 @@ This section contains troubleshooting information for Toolkit for .NET Refactori
 If you are using Microsoft Active Directory (AD) with Toolkit for .NET Refactoring, the sidecar container performs authentication with Active Directory using the credentials from the specified secret. If the authentication fails, the deployment job will fail.
 
 The logs of the sidecar are returned in the details of the deployment. Check the logs for text that says something similar to `invalid password`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,7 +39,17 @@ CPPO products have a 0.5% uplift on the listing fee, regardless of the offer typ
 
 **Professional services listing fees**
 
-All professional service offerings have a 0.5% listing fee for private offers.
+Professional services offerings have a 0.5% listing fee for private offers. This fee is reduced to 0% when the professional services product is sold as part of a qualifying multi-product solution offer set. To qualify:
++ The professional services product is part of an offer set in which an agreement exists for every offer in the set.
++ At least one non-professional-services product in the offer set is a paid offer (its dimensions are not priced at $0).
++ The qualifying sibling agreement has not been cancelled or terminated. Active, expired, renewed, and replaced agreements all continue to qualify.
+
+Eligibility is evaluated when each listing fee invoice is generated.
+
+The 0% rate applies only to qualifying professional services agreements created on or after feature launch. It is not applied retroactively to agreements created before that time.
+
+**Note**
+Regional and channel partner private offer (CPPO) uplifts still apply on top of the professional services listing fee. For example, a qualifying professional services offer sold through a CPPO has a 0% base listing fee plus the 0.5% CPPO uplift.
 
 ## Understanding fees for regional offer listings in AWS Marketplace
 <a name="regional-offer-listing-fees"></a>
@@ -52,7 +62,3 @@ Regional listing fees are additive with the standard listing fee. For example, i
 | Region | Additional region listing fee | Effective date |
 | --- | --- | --- |
 | South Korea | 1% | 04/01/2025 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

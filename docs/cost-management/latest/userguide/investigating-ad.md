@@ -108,7 +108,3 @@ When investigating anomalies using an organization trail delivered to CloudWatch
 + CloudTrail event availability depends on your trail's retention configuration. Older anomalies might have limited or no CloudTrail attribution if events have aged out.
 + Resource-level cost data from Cost Explorer is available only for the last 14 days. For older anomalies, the investigation uses service-level and account-level data.
 + Anomaly data archives after 90 days. Investigations of archived anomalies might have limited data available.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

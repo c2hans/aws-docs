@@ -24,7 +24,3 @@ You can generate code bindings for event [schemas](eb-schema.md) to speed up dev
 1. Select **Download**.
 
    It may take a few seconds for your download to begin. The downloaded file is a zip file of code bindings for the language you selected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

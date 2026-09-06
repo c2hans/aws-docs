@@ -63,7 +63,3 @@ Epoch 5/5
 <a name="tutorial-tfserving-project"></a>
 
 If you are interested in learning more about TensorFlow Serving, check out the [TensorFlow website](https://www.tensorflow.org/serving/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

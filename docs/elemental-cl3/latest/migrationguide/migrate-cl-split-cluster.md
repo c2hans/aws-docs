@@ -35,7 +35,3 @@ If this procedure seems unnecessarily complicated and you don't mind losing all 
 + [Step E: Upgrade the worker nodes](migrate-split-c-upgrade-w-nodes.md)
 + [Step F: Upgrade node Y](migrate-split-c-upgrade-secondary.md)
 + [Step G: Add node Y to cluster](migrate-split-c-add-secondary.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

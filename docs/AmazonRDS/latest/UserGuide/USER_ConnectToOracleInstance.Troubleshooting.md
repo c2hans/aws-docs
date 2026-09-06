@@ -19,7 +19,3 @@ The following are issues you might encounter when you try to connect to your Ora
 | **The password has expired – Oracle, Error: ORA-28001** | The user password has expired per the assigned profile. Connect as the master user and reset the password:<pre>ALTER USER {{username}} IDENTIFIED BY {{new_password}};</pre> |
 
 For more information on connection issues, see [Can't connect to Amazon RDS DB instance](CHAP_Troubleshooting.md#CHAP_Troubleshooting.Connecting).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

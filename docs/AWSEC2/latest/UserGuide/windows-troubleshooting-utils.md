@@ -16,7 +16,3 @@ With these details, you can perform initial root cause analysis and determine if
 `EC2WinUtil` doesn't collect any customer data in its crash call stacks.
 
 For driver release notes, see [EC2 Windows Utility Driver version history](ec2winutil-driver-version-history.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

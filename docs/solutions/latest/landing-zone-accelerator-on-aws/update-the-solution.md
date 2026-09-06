@@ -41,7 +41,3 @@ Updating the stack triggers the Installer pipeline (`AWSAccelerator-InstallerSta
 
 **Note**
 If the Installer pipeline does not start automatically, you can invoke it manually. In the AWS CodePipeline console, choose the Installer pipeline, and then choose **Release change**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

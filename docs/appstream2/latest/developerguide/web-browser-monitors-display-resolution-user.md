@@ -18,7 +18,3 @@ For browser-based streaming sessions on dual monitors, a maximum display resolut
 **Important**
 Higher resolution monitors require significantly more compute capacity and encoding resources to stream content effectively, with actual performance depending on your display configuration (resolution and number of monitors) and the compute instance being used. If you experience suboptimal performance on 4K monitors, we recommend reducing your display resolution to improve responsiveness.
 Ultrawide monitors with resolutions exceeding 4096 pixels in either dimension (e.g., 5120x2160) will display black bars on the sides, as the maximum supported resolution is limited to 4096 pixels per dimension.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

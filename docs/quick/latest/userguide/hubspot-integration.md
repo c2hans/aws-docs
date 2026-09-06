@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/hubspot-integrati
 # HubSpot integration
 <a name="hubspot-integration"></a>
 
-Access your HubSpot CRM data directly from Amazon Quick using natural language. With the HubSpot action connector, you can retrieve and list contacts, companies, deals, and tickets without leaving Amazon Quick.
+Access your HubSpot CRM data directly from Amazon Quick using natural language. With the HubSpot connector, you can retrieve and list contacts, companies, deals, and tickets without leaving Amazon Quick.
 
 HubSpot is available as a built-in connector in Amazon Quick. To set up this integration, complete the following two steps. First, prepare your HubSpot account with the required access. Then, create the connector in Amazon Quick and authenticate with your HubSpot credentials.
 
@@ -49,7 +49,7 @@ The Custom OAuth app authentication method in Amazon Quick requires a MCP Auth a
 **Important**
 Record the client secret and client ID.
 
-The client ID and client secret serve as the Client ID and Client Secret when you configure the action connector in Amazon Quick with the Custom OAuth app authentication method.
+The client ID and client secret serve as the Client ID and Client Secret when you configure the connector in Amazon Quick with the Custom OAuth app authentication method.
 
 For more information, see [HubSpot MCP server](https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server) on the HubSpot website.
 
@@ -116,7 +116,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 <a name="hubspot-troubleshooting-auth"></a>
 + **Sign-in fails** – Verify that your HubSpot account is active and that you can sign in to the [HubSpot sign-in page](https://app.hubspot.com/login) on the HubSpot website. If your organization uses single sign-on (SSO), confirm that your identity provider is configured correctly.
 + **Access denied** – Confirm that your HubSpot user has an admin role with permissions to access CRM data. Verify that the client ID and client secret from your app are correct and that the required read scopes are configured.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -57,22 +57,22 @@ To see a list of Global Accelerator actions, see [Actions defined by AWS Global 
 Policy actions in Global Accelerator use the following prefix before the action:
 
 ```
-aws-globalaccelerator
+globalaccelerator
 ```
 
 To specify multiple actions in a single statement, separate them with commas.
 
 ```
 "Action": [
-      "aws-globalaccelerator:{{action1}}",
-      "aws-globalaccelerator:{{action2}}"
+      "globalaccelerator:{{action1}}",
+      "globalaccelerator:{{action2}}"
          ]
 ```
 
 You can specify multiple actions using wildcards (\*). For example, to specify all actions that begin with the word `Describe`, include the following action:
 
 ```
-"Action": "aws-globalaccelerator:Describe*"
+"Action": "globalaccelerator:Describe*"
 ```
 
 To view examples of Global Accelerator identity-based policies, see [Identity-based policy examples for AWS Global Accelerator](security_iam_id-based-policy-examples.md).
@@ -166,7 +166,3 @@ Temporary credentials provide short-term access to AWS resources and are automat
 For more information about the service-linked role for Global Accelerator, see [Service-linked role for AWS Global Accelerator](using-service-linked-roles.md).
 
 For details about creating or managing service-linked roles in general in AWS, see [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html). Find a service in the table that includes a `Yes` in the **Service-linked role** column. Choose the **Yes** link to view the service-linked role documentation for that service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

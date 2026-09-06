@@ -68,7 +68,3 @@ AMS-required agents may include but are not limited to: AWS Systems Manager, Ama
   + SUSE Linux Enterprise Server 12 SP5
   + SUSE Linux Enterprise Service for SAP 12 SP5
   + Microsoft Windows Server 2012/2012 R2
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,7 +75,3 @@ ray job stop {{my-job-id}} --address sagemaker_ray://{{my-cluster}}/{{my-namespa
 The Ray Dashboard **Jobs** view lists every job on the cluster with its status, start time, and logs. In Studio, the **Tasks** tab lists Ray workloads including submitted jobs. For more information, see [Managing Ray workloads with Studio](sagemaker-hyperpod-ray-manage-studio.md).
 
 For the full set of Ray Jobs CLI commands and options, see [Quickstart using the Ray Jobs CLI](https://docs.ray.io/en/latest/cluster/running-applications/job-submission/quickstart.html) in the Ray documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

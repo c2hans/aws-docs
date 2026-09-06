@@ -57,7 +57,3 @@ For each segment in each SPTS channel, Elemental Live sends complexity informati
 <a name="cl3-statmux-features-resiliency"></a>
 
 You can configure the statmux workflow for resiliency in various components of the workflow, including redundant inputs in the Elemental Live nodes and Elemental Statmux nodes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

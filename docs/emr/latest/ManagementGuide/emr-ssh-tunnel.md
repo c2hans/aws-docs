@@ -127,7 +127,3 @@ When you log in to the primary node, type `hadoop` if you are prompted for a use
 1. After the tunnel is active, configure a SOCKS proxy for your browser. For more information, see [Option 2, part 2: Configure proxy settings to view websites hosted on the Amazon EMR cluster primary node](emr-connect-master-node-proxy.md).
 
 1. When you are done working with the web interfaces on the primary node, close the PuTTY window.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

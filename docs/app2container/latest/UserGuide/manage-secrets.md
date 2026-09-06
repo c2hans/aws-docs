@@ -199,7 +199,3 @@ To create a secret in Secrets Manager for the PAT, follow the procedure on the [
 
 **Step 2 Configure secret**
 + Enter a name for your secret in the **Secret name** box. You can also enter optional information to help identify your secret, such as **Description**, or you can enter tags in the **Tags** panel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App2Container. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app2container` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,7 +55,3 @@ View details about updates to AWS managed policies for AWS Ground Station since 
 | [AWSGroundStationAgentInstancePolicy](#security-iam-awsmanpol-AWSGroundStationAgentInstancePolicy) – New policy | AWS Ground Station added a new policy to provide the dataflow endpoint instance permissions to use the AWS Ground Station Agent. | April 12, 2023 |
 | [AWSServiceRoleForGroundStationDataflowEndpointGroupPolicy](#security-iam-awsmanpol-AWSServiceRoleForGroundStationDataflowEndpointGroupPolicy) – New policy | AWS Ground Station added a new policy that grants EC2 permissions to allow AWS Ground Station to find public IPv4 addresses associated with EIPs and network interfaces associated with EC2 instances. | November 02, 2022 |
 |  AWS Ground Station started tracking changes  | AWS Ground Station started tracking changes for AWS managed policies. | March 01, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,7 @@ The following table helps you choose the right signal for your monitoring need.
 | --- | --- | --- |
 | Who performed an administrative or API action, from where, and when | CloudTrail | [Monitoring Amazon Quick using CloudTrail](monitoring-cloudtrail.md) |
 | Who viewed a dashboard, or which non-API events occurred | CloudTrail non-API events | [Tracking non-API events by using CloudTrail logs](monitoring-cloudtrail.md#logging-non-api) |
-| Which API calls occurred for AI features (flows, agents, automations, action connectors) | CloudTrail (management and data events) | [Monitoring Amazon Quick using CloudTrail](monitoring-cloudtrail.md); [Logging Amazon Quick data events in CloudTrail](monitoring-cloudtrail.md#logging-data-events) |
+| Which API calls occurred for AI features (flows, agents, automations, connectors) | CloudTrail (management and data events) | [Monitoring Amazon Quick using CloudTrail](monitoring-cloudtrail.md); [Logging Amazon Quick data events in CloudTrail](monitoring-cloudtrail.md#logging-data-events) |
 | What users asked and what Quick answered | CloudWatch vended logs (CHAT\_LOGS) | [Monitoring Amazon Quick using CloudWatch Logs](monitoring-cloudwatch-logs.md) |
 | How users rated responses and why | Vended logs (FEEDBACK\_LOGS) or analytics | [Monitoring Amazon Quick using CloudWatch Logs](monitoring-cloudwatch-logs.md); [Using the Amazon Quick analytics dashboard](incident-response-logging-and-monitoring-quick-suite.md) |
 | Whether a document synced into a knowledge base, and why it failed or was skipped | Vended logs (KB\_FILE\_SYNC\_LOGS) or console sync reports | [Monitoring Amazon Quick using CloudWatch Logs](monitoring-cloudwatch-logs.md); [Sync reports and observability](sync-reports-observability.md) |
@@ -54,7 +54,3 @@ Use the following checklist to configure monitoring for your environment:
 + [Monitoring Amazon Quick using CloudWatch Logs](monitoring-cloudwatch-logs.md)
 + [Monitoring Amazon Quick using CloudTrail](monitoring-cloudtrail.md)
 + [Monitoring Amazon Quick using CloudWatch metrics](monitoring-cloudwatch-metrics.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

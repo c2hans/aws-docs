@@ -118,7 +118,3 @@ After you deploy the CloudWatch agent, you can configure the following metrics w
 + [Active Directory Domain Services on AWS: Partner Solution Deployment Guide](https://aws-quickstart.github.io/quickstart-microsoft-activedirectory/) (AWS documentation)
 + [Capacity planning for Active Directory Domain Services](https://learn.microsoft.com/en-us/windows-server/administration/performance-tuning/role/active-directory-server/capacity-planning-for-active-directory-domain-services) (Microsoft documentation)
 + [Design considerations for running Active Directory on EC2 instances](https://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/design-considerations-for-running-active-directory-on-ec2-instances.html) (AWS Whitepapers)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

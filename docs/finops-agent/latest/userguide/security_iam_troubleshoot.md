@@ -50,7 +50,3 @@ If you need help, contact your AWS administrator. Your administrator is the pers
 <a name="security_iam_troubleshoot-cross-account-access"></a>
 
 During preview, AWS FinOps Agent does not support cross-account access through resource-based policies. Adding a resource-based policy or another policy to the agent role does not grant a different AWS account access to an agent or its data. To analyze organization-wide cost data, deploy AWS FinOps Agent in your organization's management account (the payer account), where Cost Explorer provides organization-wide visibility subject to the IAM permissions you configure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS FinOps Agent (preview). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finops-agent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -87,7 +87,3 @@ The following table shows the additional event field details.
 | **AppFlow End Flow Run Report** | data-processed | The volume of data (in bytes) that was processed. |
 | **AppFlow End Flow Run Report** | status | The status that indicates if the flow run failed or was successful. |
 | **AppFlow End Flow Run Report** | error | The reason for flow run failure in the event of a failed flow. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

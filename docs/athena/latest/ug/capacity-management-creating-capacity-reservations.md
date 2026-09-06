@@ -33,7 +33,3 @@ Requests for capacity are not guaranteed and can take up to 30 minutes to comple
    On the details page, your capacity reservation's **Status** shows as **Pending**. When your reservation capacity is available to run queries, its status shows as **Active**.
 
 At this point, you are ready to add one or more workgroups to your reservation. For steps, see [Add workgroups to a reservation](capacity-management-adding-workgroups-to-a-reservation.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

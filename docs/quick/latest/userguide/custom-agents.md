@@ -119,14 +119,14 @@ For more information on creating and using spaces, see [Working with spaces in A
      + In **Actions** select the actions you want to add and then select **Link**.
 
        The system displays a success message to denote successful linking.
-   + To create an action connector and link new actions
+   + To create a connector and link new actions
      + Select **Create**.
      + From the **Actions** home page, select **New action**.
-     + From the **New action** window, for **Sources** select the action connector you want to add and then select **Next**.
+     + From the **New action** window, for **Sources** select the connector you want to add and then select **Next**.
      + In **Actions** review the actions available and then select **Next**.
      + In **Connection details**, enter the connection details needed and select **Add**.
 **Note**
-For more information on creating and using action connectors, see [Actions in Amazon Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/qbs-actions.html).
+For more information on creating and using connectors, see [Actions in Amazon Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/qbs-actions.html).
 
        The system displays a success message to denote successful action addition. Return to the chat agent creation window.
      + In the chat agent creation window, from **Actions** select **Link**.
@@ -342,7 +342,3 @@ You can delete a Amazon Quick chat agent you own. The following procedure shows 
 1. From the left navigation menu, select **Chat agents**
 
 1. Then, from the **Actions** column for the chat agent you want to share, select the menu icon, and then select **Delete**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

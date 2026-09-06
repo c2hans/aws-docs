@@ -267,7 +267,7 @@ When you create an Amazon EBS volume from a snapshot and use the default volume 
 The event is **not** sent for volumes created using Fast Snapshot Restore.
 
 **Important**
-`completionTime` reflects when we generated the event. Because the event is generated within 5 minutes after initialization completes, the `completionTime` can be up to five minutes after the initialization completed.
+`completionTime` reflects when the event was generated. Because the event is generated within 5 minutes after initialization completes, the `completionTime` can be up to five minutes after the initialization completed.
 
 The following is an example event.
 
@@ -683,7 +683,3 @@ A request to enable fast snapshot restore failed due to an internal error, and t
 
 `Client.InvalidSnapshot.InvalidState - The requested snapshot was deleted or access permissions were revoked`
 The fast snapshot restore state for the snapshot has transitioned to `disabling` or `disabled` because the snapshot was deleted or unshared by the snapshot owner. Fast snapshot restore cannot be enabled for a snapshot that has been deleted or is no longer shared with you.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

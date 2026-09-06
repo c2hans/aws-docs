@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/ai-
 
 Use AI agents to write job bundles, develop conda packages, and troubleshoot jobs in Deadline Cloud. This topic explains what AI agents are, key points for working with them effectively, and resources to help agents understand Deadline Cloud.
 
-An AI agent is a software tool that uses a large language model (LLM) to perform tasks autonomously. AI agents can read and write files, run commands, and iterate on solutions based on feedback. Examples include command-line tools like [Kiro](https://kiro.dev) and IDE-integrated assistants.
+An AI agent is a software tool that uses a large language model (LLM) to perform tasks autonomously. AI agents can read and write files, run commands, and iterate on solutions based on feedback. Examples include command-line tools like [Kiro](https://kiro.dev) on the Kiro website and IDE-integrated assistants.
 
 **Key points for working with AI agents**
 
@@ -19,10 +19,10 @@ The following key points help you get better results when you use AI agents with
 
 **Resources for agent context**
 
-The following resources help AI agents understand Deadline Cloud concepts and produce accurate output.
+The following resources on the GitHub website help AI agents understand Deadline Cloud concepts and produce accurate output.
 + **Deadline Cloud Model Context Protocol (MCP) server** – For agents that support the Model Context Protocol, the [deadline-cloud](https://github.com/aws-deadline/deadline-cloud) repository contains the Deadline Cloud client which includes an MCP server for interacting with jobs.
 + **AWS Documentation MCP server** – For agents that support MCP, configure the [AWS Documentation MCP server](https://github.com/awslabs/mcp/tree/main/src/aws-documentation-mcp-server) to give the agent direct access to AWS documentation, including the Deadline Cloud User Guide and Developer Guide.
-+ **Open Job Description specification** – The [Open Job Description specification](https://github.com/OpenJobDescription/openjd-specifications) on GitHub defines the schema for job templates. Reference this repository when agents need to understand the structure and syntax of job templates.
++ **Open Job Description specification** – The [Open Job Description specification](https://github.com/OpenJobDescription/openjd-specifications) defines the schema for job templates. Reference the repository when agents need to understand the structure and syntax of job templates.
 + **deadline-cloud-samples** – The [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples) repository contains sample job bundles, conda recipes, and CloudFormation templates for common applications and use cases.
 + **aws-deadline GitHub organization** – The [aws-deadline](https://github.com/aws-deadline/) GitHub organization contains reference plugins for many third-party applications that you can use as examples for other integrations.
 
@@ -60,7 +60,3 @@ To verify the training and generation jobs work together, iterate with the follo
 4. Wait for the job to succeed then download its output.
 5. Inspect the generated images. If they resemble the dog in the training data, you're done. Otherwise, review the job template, job parameters, and job logs to identify and fix the issue.
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

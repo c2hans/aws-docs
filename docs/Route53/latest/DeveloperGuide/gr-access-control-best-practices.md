@@ -24,7 +24,3 @@ Follow these operational practices to maintain reliable access controls:
 + **Test access controls regularly** - Verify that your access source rules and tokens work correctly from different client locations and scenarios.
 + **Plan for token renewal** - Establish processes for distributing new tokens before old ones expire to avoid service disruptions.
 + **Review access controls periodically** - Remove unused access source rules and expired tokens to maintain a clean configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

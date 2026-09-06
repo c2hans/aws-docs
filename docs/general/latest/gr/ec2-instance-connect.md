@@ -60,7 +60,3 @@ EC2 Instance Connect has no service quotas.
 
 **Note**
 EC2 Instance Connect should not be confused with EC2 Instance Connect Endpoint, which is a separate service with its own quotas. For more information, see [Quotas for EC2 Instance Connect Endpoint](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/eice-quotas.html) in the *Amazon EC2 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

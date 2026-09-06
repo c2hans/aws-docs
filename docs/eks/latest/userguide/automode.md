@@ -92,7 +92,3 @@ With EKS Auto Mode, AWS expands its responsibility to include the management of 
 +  **Cluster Capabilities**: AWS manages compute autoscaling, Pod networking with network policy enforcement, Elastic Load Balancing integration, and storage drivers configuration.
 +  **Cluster Control Plane**: AWS continues to manage the Kubernetes API server, cross-account ENIs, and the etcd database, as with standard EKS.
 +  **Foundation Services and Global Infrastructure**: AWS maintains responsibility for the underlying compute, storage, networking, and monitoring services, as well as the global infrastructure of regions, local zones, and edge locations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -113,7 +113,3 @@ The Agentless Collector and AWS Application Discovery Agent don't support config
 + Set up the `arsenal-discovery` Amazon VPC endpoint with a security group that enables inbound traffic from within the VPC (for example, 10.0.0.0/8).
 + Set up an Amazon Route 53 inbound resolver to route DNS resolution for the `arsenal-discovery` Amazon VPC endpoint private DNS name, which will resolve to the private IP of the VPC endpoint. If you don't do that, the collector will perform DNS resolution by using the on-premises resolver and will use the public Arsenal endpoint, and traffic will not go through the VPC.
 + If you have all public traffic disabled, the auto-update feature will fail. That is because the Agentless Collector retrieves updates by sending requests to the Amazon ECR endpoint. To get the auto-update feature working without sending requests over the public internet, set up a VPC endpoint for the Amazon ECR service and enable the private DNS feature for this endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

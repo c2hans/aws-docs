@@ -58,7 +58,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 
 **Note**
  The custom application is responsible for authenticating users and providing appropriate data access. This may be accomplished by using metadata filters on Amazon Bedrock Knowledge Bases and verifying that structured data sources are only accessed by authorized users or are otherwise using queries that protect data privacy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

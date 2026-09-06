@@ -29,7 +29,3 @@ You can't change the source code or runtime profiling data that was input after 
    If the application shows a **build failed** status, review the error message, and choose **Update source code** to remediate.
 **Note**
 We recommend that you wait until the build status shows **Success** before you navigate to the **View details** page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,7 +43,3 @@ select * from sys_session_history;
        1 | 1073766783 | dev              | closed |        0        | 2023-07-17 15:49:45.38237  | 2023-07-17 15:49:45.396902
        1 | 1073807506 | dev              | active |        0        | 2023-07-17 15:51:48        |
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

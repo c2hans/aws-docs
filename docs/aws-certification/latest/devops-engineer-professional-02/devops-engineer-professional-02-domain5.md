@@ -45,7 +45,3 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/devops-engineer
 <a name="dop-02-task-5-3-skills"></a>
 + Analyzing failed deployments (for example, AWS CodePipeline, AWS CodeBuild, AWS CodeDeploy, AWS CloudFormation, CloudWatch synthetic monitoring)
 + Analyzing incidents regarding failed processes (for example, auto scaling, Amazon ECS, Amazon EKS)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

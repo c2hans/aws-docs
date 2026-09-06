@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/support
 | UNAUTHORIZED | 401 | The gateway response when the custom or Amazon Cognito authorizer failed to authenticate the caller. |
 | UNSUPPORTED\_MEDIA\_TYPE | 415 | The gateway response when a payload is of an unsupported media type, if strict passthrough behavior is enabled. If the response type is unspecified, this response defaults to the `DEFAULT_4XX` type. |
 | WAF\_FILTERED | 403 | The gateway response when a request is blocked by AWS WAF. If the response type is unspecified, this response defaults to the `DEFAULT_4XX` type. [AWS WAF custom responses](https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html) take precedence over custom gateway responses.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

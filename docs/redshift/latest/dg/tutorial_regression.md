@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/tutorial_regression.h
 # Tutorial: Building regression models
 <a name="tutorial_regression"></a>
 
-In this tutorial, you use Amazon Redshift ML to create a machine learning regression model and run prediction queries on the model. Regression models allow you to predict numerical outcomes, such as the price of a house, or how many people will use a city’s bike rental service. You use the CREATE MODEL command in Amazon Redshift with your training data. Then, Amazon Redshift ML compiles the model, imports the trained model to Redshift, and prepares a SQL prediction function. You can use the prediction function in SQL queries in Amazon Redshift.
+In this tutorial, you use Amazon Redshift ML to create a machine learning regression model and run prediction queries on the model. With regression models, you can predict numerical outcomes, such as the price of a house, or how many people will use a city’s bike rental service. You use the CREATE MODEL command in Amazon Redshift with your training data. Then, Amazon Redshift ML compiles the model, imports the trained model to Redshift, and prepares a SQL prediction function. You can use the prediction function in SQL queries in Amazon Redshift.
 
 In this tutorial, you will use Amazon Redshift ML to build a regression model that predicts the number of people that use the city of Toronto’s bike sharing service at any given hour of a day. The inputs for the model include holidays and weather conditions. You will use a regression model, because you want a numerical outcome for this problem.
 
@@ -508,7 +508,3 @@ For more information about machine learning, see the following documentation:
 + [Machine learning overview](https://docs.aws.amazon.com/redshift/latest/dg/machine_learning_overview.html)
 + [Machine learning for novices and experts](https://docs.aws.amazon.com/redshift/latest/dg/novice_expert.html)
 + [What Is Fairness and Model Explainability for Machine Learning Predictions?](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

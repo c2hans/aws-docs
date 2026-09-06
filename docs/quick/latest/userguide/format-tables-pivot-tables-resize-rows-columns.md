@@ -24,7 +24,3 @@ Authors and readers can resize rows and columns in a table or pivot table visual
 1. Select the pivot table that you want to change and open the **Format visual** menu.
 
 1. In the **Pivot options** section, navigate to the **Value column width (pixels)** field and enter the default value that you want in pixels.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

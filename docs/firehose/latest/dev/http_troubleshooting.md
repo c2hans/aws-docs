@@ -79,7 +79,3 @@ Additional error codes and definitions are listed below.
 + **Error Code: HttpEndpoint.ConnectionFailed** - Indicates a connection could not be established with the configured endpoint. This could be due to a typo in the configured url, the endpoint not being accessible to Amazon Data Firehose, or the endpoint taking too long to respond to the connection request.
 + **Error Code: HttpEndpoint.ConnectionReset** - Indicates a connection was made but reset or prematurely closed by the endpoint.
 + **Error Code: HttpEndpoint.SSLHandshakeFailure** - Indicates an SSL handshake could not be successfully completed with the configured endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

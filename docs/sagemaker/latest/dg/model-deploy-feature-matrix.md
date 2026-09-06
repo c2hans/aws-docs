@@ -78,7 +78,3 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-deploy-feature
  2 To use any other framework or algorithm, use the SageMaker AI Inference toolkit to build a container that supports multi-model endpoints.
 
  3 With SageMaker AI, you can deploy large models (up to 500 GB) for inference. You can configure the container health check and download timeout quotas, up to 60 minutes. This will allow you to have more time to download and load your model and associated resources. For more information, see [SageMaker AI endpoint parameters for large model inference](large-model-inference-hosting.md). You can use SageMaker AI compatible [large model Inference containers](https://github.com/aws/deep-learning-containers/blob/master/available_images.md#large-model-inference-containers). You can also use third-party model parallelization libraries, such as Triton with FasterTransformer and DeepSpeed. You have to ensure that they are compatible with SageMaker AI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

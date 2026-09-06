@@ -147,7 +147,3 @@ The following fields are displayed only when you are viewing findings for an ana
 + **Resource Type** – To filter by resource type, choose the type from the list displayed.
 + **Resource Owner Account** – Use this property to filter by the account in the organization that owns the resource reported in the finding.
 + **Finding id** – To filter by finding ID, type all or part of the finding ID.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ Validate the integrity, accuracy, and consistency of data processes to help ensu
 + [[QA.DT.3] Validate data processing rules with data logic tests](qa.dt.3-validate-data-processing-rules-with-data-logic-tests.md)
 + [[QA.DT.4] Detect and mitigate data issues with anomaly detection](qa.dt.4-detect-and-mitigate-data-issues-with-anomaly-detection.md)
 + [[QA.DT.5] Utilize incremental metrics computation](qa.dt.5-utilize-incremental-metrics-computation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -107,7 +107,3 @@ Make sure your AWS Config (`~/.aws/config`) for the `codecatalyst` profile match
 **Possible fixes:**
 
 Dev Environments aren't available for users in spaces where Active Directory is used as the identity provider. Administrators for the space can use an alternative identity provider in order to access Dev Environments, such as IAM Identity Center. For more information about planning a space that supports identity federation, see [Planning your space that supports identity federation](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/setting-up-federation.html#setting-up-planning-federation) in the *CodeCatalyst Administrator Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

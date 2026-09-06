@@ -45,7 +45,3 @@ To use the Findings feature across accounts with an organization set up in AWS R
 These permissions can be configured in an application account by deploying an CloudFormation template provided by AWS, which creates the role `IncidentManagerIncidentAccessServiceRole`.
 
 For information about downloading and deploying this template in an application account, see step 4 in [Managing incidents across AWS accounts and Regions in Incident Manager](incident-manager-cross-account-cross-region.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

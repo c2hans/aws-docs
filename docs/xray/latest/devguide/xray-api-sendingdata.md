@@ -179,7 +179,3 @@ Check the [daemon log](xray-daemon.md#xray-daemon-logging) to verify that it sen
 2017-07-07T01:57:24Z [Debug] processor: segment batch size: 1. capacity: 50
 2017-07-07T01:57:24Z [Info] Successfully sent batch of 1 segments (0.020 seconds)
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/changing-th
 +  Closed: This is the final status of the workflow. Cases in a closed status indicate work has been completed. Closed cases cannot be reopened, so ensure all actions are complete before transitioning to this status.
 
  Choose **Action/Update Status** to change the status of the case for self-managed cases. For AWS supported cases, the status is set by the AWS Security Incident Response engineers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

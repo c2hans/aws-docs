@@ -101,7 +101,3 @@ If a field is not applicable or could not be computed for a specific record, the
 | next-hop-az-id | The ID of the Availability Zone that contains the next hop network interface.<br />**Parquet data type:** STRING | 11 |
 | next-hop-vpc-id | The ID of the VPC that contains the next hop network interface.<br />**Parquet data type:** STRING | 11 |
 | next-hop-interface-type | The type of the next hop network interface. For a list of possible values, see the interface-type field<br />**Parquet data type:** STRING | 11 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

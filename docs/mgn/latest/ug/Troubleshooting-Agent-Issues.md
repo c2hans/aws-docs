@@ -272,7 +272,3 @@ The MGN Agent logs are stored in agent.log.0:
 + **Windows 32 bit:** C:\\Program Files\\AWS Replication Agent\\agent.log.0
 
 In addition, you can review the installation log located in: <install\_path>\\aws\_replication\_agent\_installer.log
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

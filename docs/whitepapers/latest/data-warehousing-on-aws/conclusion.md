@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-a
 +  [Develop an application migration methodology to modernize your data warehouse with Amazon Redshift](https://aws.amazon.com/blogs/big-data/develop-an-application-migration-methodology-to-modernize-your-data-warehouse-with-amazon-redshift/) (blog entry)
 +  [What is Streaming Data?](https://aws.amazon.com/streaming-data/)
 +  [Column-oriented DBMS](https://en.wikipedia.org/wiki/Column-oriented_DBMS)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

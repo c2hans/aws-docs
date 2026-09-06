@@ -111,6 +111,7 @@ The following data types are supported:
 +  [RetryDetails](API_RetryDetails.md)
 +  [RuntimeVersionConfig](API_RuntimeVersionConfig.md)
 +  [RuntimeVersionError](API_RuntimeVersionError.md)
++  [S3FilesConfig](API_S3FilesConfig.md)
 +  [ScalingConfig](API_ScalingConfig.md)
 +  [SelfManagedEventSource](API_SelfManagedEventSource.md)
 +  [SelfManagedKafkaEventSourceConfig](API_SelfManagedKafkaEventSourceConfig.md)
@@ -135,7 +136,3 @@ The following data types are supported:
 +  [WaitOptions](API_WaitOptions.md)
 +  [WaitStartedDetails](API_WaitStartedDetails.md)
 +  [WaitSucceededDetails](API_WaitSucceededDetails.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ In the [auto parts price management example use case](fifo-example-use-case.md),
 ![How message deduplication works in an Amazon SNS FIFO (First In, First Out) topic environment, using an auto parts price management example. It shows how duplicated messages (m1) published to the Amazon SNS FIFO topic are prevented from being delivered multiple times to the subscriber systems (wholesale, retail, and analytics queues). This deduplication ensures that only unique messages are processed, enhancing efficiency and accuracy in message handling across different subscriber functions.](http://docs.aws.amazon.com/sns/latest/dg/images/sns-fifo-dedup.png)
 
 In addition to message ordering and deduplication, Amazon SNS FIFO topics support message server-side encryption (SSE) with AWS KMS keys, and message privacy via VPC endpoints with AWS PrivateLink. For more information, see [Amazon SNS message security for FIFO topics](fifo-message-security.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ TIMESTAMP '2025-12-21 23:59:59+23:59'
 
 **Note**
  The double precision data is not exact. Some values are not converted exactly, and will not represent all real numbers due to limited precision. Floating-point data in the query may not be the same value represented internally. The value is rounded if the precision of an input number is too high.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

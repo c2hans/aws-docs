@@ -161,7 +161,3 @@ The ODBC driver supports connecting to AWS IoT SiteWise through a proxy. To use 
 + **`SW_PROXY_SSL_KEY_PATH`**   –   The private key file to use for connecting to an HTTPS proxy.
 + **`SW_PROXY_SSL_KEY_TYPE`**   –   The type of the private key file used to connect to an HTTPS proxy.
 + **`SW_PROXY_SSL_KEY_PASSWORD`**   –   The passphrase to the private key file used to connect to an HTTPS proxy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

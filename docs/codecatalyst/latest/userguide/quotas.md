@@ -31,7 +31,3 @@ The following table describes quotas and limits for Amazon CodeCatalyst. You can
 | Maximum number of projects to which a user can belong | 1,000 |
 | Space descriptions | Space descriptions are optional. If specified, they must be between 0 and 200 characters in length. They can contain any combination of letters, numbers, spaces, periods, underscores, commas, dashes, and the following special characters:<br />`? & $ % + = / \ ; : \n \t \r` |
 | Space names | Space names must be unique across CodeCatalyst. You cannot reuse names of deleted spaces.Space names must be between 3 and 63 characters in length. They must also begin with an alphanumeric character. Space names can contain any combination of letters, numbers, periods, underscores, and dashes. They cannot contain any of the following characters: <br />`! ? @ # $ % ^ & * ( ) + = { } [ ] \| /\ > < ~ ` ' " ; : `  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ Use the template as is, or customize it to suit your needs. For example, one vis
 You can also add your own visualizations to the dashboard. For example, you can break down the data access patterns, using filters for storage class analysis that you already have defined in Amazon S3 analytics.
 
 To learn more about using S3 analytics and storage class analysis, see [Amazon Amazon S3 analytics – Storage class analysis](https://docs.aws.amazon.com/AmazonS3/latest/userguide/analytics-storage-class.html) in the *Amazon Amazon S3 Developer Guide.*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

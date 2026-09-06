@@ -211,7 +211,3 @@ To return cookies from your function, don't manually add `set-cookie` headers. I
 | Lambda function output | HTTP response (what the client sees) |
 | --- | --- |
 |  <pre>{<br />   "statusCode": 201,<br />    "headers": {<br />        "Content-Type": "application/json",<br />        "My-Custom-Header": "Custom Value"<br />    },<br />    "body": JSON.stringify({<br />        "message": "Hello, world!"<br />    }),<br />    "cookies": [<br />        "Cookie_1=Value1; Expires=21 Oct 2021 07:48 GMT",<br />        "Cookie_2=Value2; Max-Age=78000"<br />    ],<br />    "isBase64Encoded": false<br />}</pre>  |  <pre>HTTP/2 201<br />date: Wed, 08 Sep 2021 18:02:24 GMT<br />content-type: application/json<br />content-length: 27<br />my-custom-header: Custom Value<br />set-cookie: Cookie_1=Value2; Expires=21 Oct 2021 07:48 GMT<br />set-cookie: Cookie_2=Value2; Max-Age=78000<br /><br />{<br />  "message": "Hello, world!"<br />}</pre>  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

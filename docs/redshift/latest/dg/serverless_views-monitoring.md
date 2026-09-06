@@ -62,7 +62,3 @@ Unless noted otherwise, these views are available for Amazon Redshift clusters a
 + [SYS\_UNLOAD\_HISTORY](SYS_UNLOAD_HISTORY.md)
 + [SYS\_USERLOG](SYS_USERLOG.md)
 + [SYS\_VACUUM\_HISTORY](SYS_VACUUM_HISTORY.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

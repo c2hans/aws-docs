@@ -101,7 +101,3 @@ RCS testing agents are typically created and approved within minutes, compared t
 <a name="rcs-overview-identity-model"></a>
 
 RCS in AWS End User Messaging uses a two-level identity model: the **AWS RCS Agent** (a container you create and manage) and one or more **RCS for Business IDs** (per-country agent identities created during registration). For complete details on how these identities relate, including lifecycle states and the comparison table, see [Understanding the two-level identity model](rcs-agents.md#rcs-agents-identity-model).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

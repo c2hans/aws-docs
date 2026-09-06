@@ -115,7 +115,3 @@ If your VPC isn't private and has public internet access, and if **Enable DNS na
 + *Use a current platform version* – Be sure that your environment uses a platform version that was released on February 24, 2020 or later. Specifically, use a platform version that was released in or after one of these two updates: [Linux Update 2020-02-28](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-02-28-linux.html), [Windows Update 2020-02-24](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-02-24-windows.html).
 **Note**
 The reason for needing an updated platform version is that older versions had an issue that would prevent DNS entries created by the **Enable DNS name** option from working properly for Amazon SQS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

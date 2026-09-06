@@ -121,7 +121,3 @@ AWS Billing and Cost Management includes the AWS Cost Explorer API, the AWS Cost
 | Number of values tracked by AWS managed anomaly monitors | Each supported Region: 5,000 | No | Maximum tracked dimension values per AWS managed anomaly monitor |
 
 For more information, see [AWS Billing quotas and restrictions](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) and [AWS Cost Management quotas and restrictions](https://docs.aws.amazon.com/cost-management/latest/userguide/management-limits.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

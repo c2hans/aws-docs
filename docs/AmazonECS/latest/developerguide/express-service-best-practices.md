@@ -130,7 +130,3 @@ Consider providing your own custom task definition only when:
 + Your team has standardized task definitions with security agents, logging sidecars, or compliance configurations that must be present on all services.
 + You need task-level settings not directly configurable through Express Mode, such as container health checks, custom log drivers (for example, FireLens), Linux parameters (`initProcessEnabled`, `tmpfs` mounts), or additional sidecar containers.
 + You use infrastructure as code and want to define your task definition in your templates and pass it to your Express Mode service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

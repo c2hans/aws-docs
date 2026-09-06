@@ -60,7 +60,3 @@ The power and reset buttons are on the front of the device underneath a protecti
 1. When the appliance is ready, the status light blinks green.
 
 Resetting an appliance does not delete it from the AWS Panorama service. For more information, see [Deregister an appliance](appliance-manage.md#appliance-manage-delete).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

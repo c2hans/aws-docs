@@ -29,7 +29,3 @@ To complete this tutorial, you need:
 + A [Raspberry Pi 3B or 4B](https://www.raspberrypi.com/products/) running the latest [Raspberry Pi OS](https://www.raspberrypi.com/software/operating-systems/). For installation instructions, see [Install an operating system](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system) on the Raspberry Pi website.
 + A monitor, keyboard, mouse, and Wi-Fi network or Ethernet connection for your Raspberry Pi.
 + A Raspberry Pi-compatible moisture sensor. The sensor used in this tutorial is an [Adafruit STEMMA I2C Capacitive Moisture Sensor](https://www.adafruit.com/product/4026) with a [JST 4-pin to female socket cable header](https://www.adafruit.com/product/3950).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -293,7 +293,3 @@ Consider the following when using Spark Connect sessions on Amazon EMR:
 + Python UDFs may fail with a `No module named 'pyspark'` error because the Python worker process spawned by the executor JVM starts without `pyspark` on its `PYTHONPATH`. To work around this, set the executor `PYTHONPATH` to include `pyspark` when you start the session, for example by passing `spark.executorEnv.PYTHONPATH` in the session engine configuration.
 + Trusted Identity Propagation (TIP) is not supported for Spark Connect sessions.
 + Fine-grained access control (FGAC) through Lake Formation is not supported for Spark Connect sessions in this release.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

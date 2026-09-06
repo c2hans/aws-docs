@@ -159,7 +159,3 @@ Raw telemetry from third-party OEM APIs.
 + Message format: JSON (OEM-specific format with `oem_source` field)
 
 The OEMTelemetryProcessor consumes from this topic, applies the appropriate transform manifest from S3 based on the `oem_source` field, and outputs standard CMS-format JSON to `cms-telemetry-raw`. This enables integration with any OEM without modifying the core processing pipeline.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

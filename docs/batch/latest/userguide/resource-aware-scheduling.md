@@ -20,7 +20,3 @@ To configure resource-aware scheduling, you first specify all the consumable res
 + [Update the quantity of a resource while it is in use by jobs](resource-aware-scheduling-how-to-update-quantity.md)
 + [Find the jobs that require a specific consumable resource](resource-aware-scheduling-how-to-find-jobs.md)
 + [Delete a consumable resource](resource-aware-scheduling-how-to-delete.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

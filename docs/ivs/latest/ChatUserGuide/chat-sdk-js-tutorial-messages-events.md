@@ -873,7 +873,3 @@ You are now able to delete users from a chat room in your chat app.
 <a name="chat-js-messages-events-next-steps"></a>
 
 As an experiment, try implementing other actions in a room like disconnecting another user.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

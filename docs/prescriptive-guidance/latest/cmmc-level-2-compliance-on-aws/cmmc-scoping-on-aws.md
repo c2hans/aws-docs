@@ -95,7 +95,3 @@ This table shows all 14 NIST SP 800-171 control families, the number of requirem
 | Security Assessment | CA | 4 | Security Hub, AWS Config conformance packs |
 | System and Comm. Protection | SC | 16 | AWS KMS, ACM, Network Firewall, Amazon VPC, [AWSWAF](https://aws.amazon.com/waf/), FIPS endpoints, AWS Verified Access |
 | System and Info. Integrity | SI | 7 | Amazon Inspector, GuardDuty, CloudWatch Systems Manager, CloudTrail |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

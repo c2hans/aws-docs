@@ -14,7 +14,3 @@ This framework was developed through the experience of the AWS solutions archite
 The focus of the framework is to identify potential failure modes and the preventative and corrective controls you can use to mitigate their impact. Even if the failures occur in components that are not directly under your control, such as increased error rates in a dependency, you need to consider how those failures might impact your workload and how to design that workload to respond to these failures. Ultimately, you should focus on *failures that you can respond to* by using a mitigation that is under your control.
 
 This guide outlines the framework, and then discusses how to identify and document a workload, how to apply the framework to that workload, and how to evaluate mitigation strategies for any potential failures you find.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

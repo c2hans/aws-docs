@@ -32,6 +32,7 @@ The `pcs.{{region}}.api.aws` endpoints are dual-stack. They support both IPv4 an
 | Asia Pacific (Singapore) | ap-southeast-1 | pcs.ap-southeast-1.amazonaws.com<br />pcs.ap-southeast-1.api.aws | HTTPS |
 | Asia Pacific (Sydney) | ap-southeast-2 | pcs.ap-southeast-2.amazonaws.com<br />pcs.ap-southeast-2.api.aws | HTTPS |
 | Asia Pacific (Jakarta) | ap-southeast-3 | pcs.ap-southeast-3.amazonaws.com<br />pcs.ap-southeast-3.api.aws | HTTPS |
+| Asia Pacific (New Zealand) | ap-southeast-6 | pcs.ap-southeast-6.amazonaws.com<br />pcs.ap-southeast-6.api.aws | HTTPS |
 | Asia Pacific (Tokyo) | ap-northeast-1 | pcs.ap-northeast-1.amazonaws.com<br />pcs.ap-northeast-1.api.aws | HTTPS |
 | Asia Pacific (Seoul) | ap-northeast-2 | pcs.ap-northeast-2.amazonaws.com<br />pcs.ap-northeast-2.api.aws | HTTPS |
 | Asia Pacific (Osaka) | ap-northeast-3 | pcs.ap-northeast-3.amazonaws.com<br />pcs.ap-northeast-3.api.aws | HTTPS |
@@ -85,7 +86,3 @@ AWS PCS uses other AWS services. Your service quotas for those services impact y
 + Amazon EC2 API requests
 
 For more information, see [Amazon EC2 service quotas](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html) in the *Amazon Elastic Compute Cloud User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

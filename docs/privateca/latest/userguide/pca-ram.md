@@ -35,7 +35,3 @@ Because the API operations are being used directly in this example, the certific
 
 **Note**
 The recipient account is responsible for configuring auto-renewal in ACM. Typically, on the first occasion a shared CA is used, ACM installs a service-linked role that allows it to make unattended certificate calls on AWS Private CA. If this fails (usually due to a missing permission), certificates from the CA will not renew automatically, and only the ACM user can resolve the problem, not the CA administrator. For more information, see [Using a Service Linked Role (SLR) with ACM](https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

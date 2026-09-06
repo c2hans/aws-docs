@@ -13,7 +13,3 @@ When you call the [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/
 If you don't provide a key policy when you create an AWS KMS key, AWS creates one for you. This [default key policy](key-policy-default.md) grants the AWS accounts that own the KMS key full access to the key and allows the account to use IAM policies to allow access to the key. This policy allows all actions like [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html). AWS recommends applying principal of [Least-privilege permissions](least-privilege.md) to your KMS key policies. You can also restrict access by [modifying the KMS key policy](key-policy-modifying.md) action for `kms:*` to `[NotAction:](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notaction.html)kms:Decrypt`.
 
 The following condition keys let you limit the permissions for these operations based on the contents of the signed attestation document. Before allowing an operation, AWS KMS compares the attestation document to the values in these AWS KMS condition keys.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

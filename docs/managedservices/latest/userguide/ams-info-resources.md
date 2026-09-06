@@ -20,7 +20,3 @@ AMS provides several information resources to help you succeed.
 + **AMS Developer's Resources**: Access to the AMS CLI and SDK, for both amscm and amsskms. See [https://console.aws.amazon.com/managedservices/](https://console.aws.amazon.com/managedservices/).
 + **AMS YouTube Videos**: Key customer operations explained in video. See [AWS Managed Services YouTube Instructional Videos](https://www.youtube.com/playlist?list=PLhr1KZpdzukc_VXASRqOUSM5AJgtHat6-).
 + **AMS Blog posts**: Specialty information on AWS Managed Services. See [AWS Blogs](https://aws.amazon.com/search/?searchQuery=MANAGED+SERVICES).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

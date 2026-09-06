@@ -285,7 +285,3 @@ When Amazon EMR and Amazon EC2 share an instance role, the role requires the fol
 
 **Note**
 To use `%execute_notebook` magic, install the `emr-notebooks-magics` package, version 0.2.3 or higher.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

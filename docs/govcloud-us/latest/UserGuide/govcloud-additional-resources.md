@@ -20,7 +20,3 @@ The following table lists additional resources for users new to AWS:
 |  [AWS: Overview of Security Processes](https://aws.amazon.com/architecture/security-identity-compliance/)  | Learn how to meet your security and compliance goals using AWS infrastructure and services. |
 |  [AWS: Risk and Compliance](https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/welcome.html)  | This paper outlines the mechanisms that AWS has implemented to manage risk on the AWS side of the Shared Responsibility Model, and the tools that customers can leverage to gain assurance that these mechanisms are being implemented effectively. |
 |  [AWS Compliance Whitepapers](https://aws.amazon.com/compliance/aws-whitepapers/)  | This site has information and whitepapers related to compliance. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

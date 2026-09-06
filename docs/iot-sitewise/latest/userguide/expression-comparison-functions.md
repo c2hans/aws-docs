@@ -15,7 +15,3 @@ In [transforms](transforms.md) and [metrics](metrics.md), you can use the follow
 | `lt(x, y)` | Returns `1` if `x` is less than `y`, otherwise `0` (`x < y`).<br /><a name="comparison-function-incompatible-types"></a>This function doesn't return a value if `x` and `y` are incompatible types, such as a number and a string. |
 | `lte(x, y)` | Returns `1` if `x` is less than or equal to `y`, otherwise `0` (`x ≤ y`).<br /><a name="comparison-function-relative-tolerance"></a>AWS IoT SiteWise considers the arguments equal if they are within a relative tolerance of `1E-9`. This behaves similar to the [isclose](https://docs.python.org/3/library/math.html#math.isclose) function in Python.<br /><a name="comparison-function-incompatible-types"></a>This function doesn't return a value if `x` and `y` are incompatible types, such as a number and a string. |
 | `isnan(x)` | Returns `1` if `x` is equal to `NaN`, otherwise `0`.<br />This function doesn't return a value if `x` is a string. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

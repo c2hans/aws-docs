@@ -85,7 +85,3 @@ Sourceless reconstruction is best-effort, not a byte-for-byte replacement for `_
 +  `jvmArgs` - additional JVM arguments for RFS workers.
 +  `loggingConfigurationOverrideConfigMap` - ConfigMap name for a custom RFS logging configuration.
 +  `otelMetricsCollectorEndpoint` and `otelTraceCollectorEndpoint` - OpenTelemetry collector endpoints for RFS workers. Metrics default to `http://otel-collector:4317`; set the metrics endpoint to an empty string to disable metrics export. Trace export is disabled unless you configure a trace endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ The following topics show you how to configure Oracle Database@AWS to meet your 
 + [Resilience in Oracle Database@AWS](disaster-recovery-resiliency.md)
 + [Using service-linked roles for Oracle Database@AWS](odb-SLR.md)
 + [Oracle Database@AWS updates to AWS managed policies](odb-manpol-updates.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ When a tunnel endpoint replacement is complete, AWS sends the **Tunnel endpoint 
 <a name="single-tunnel-notifications"></a>
 
 A Site-to-Site VPN connection consists of two tunnels for redundancy. We strongly recommend that you configure both tunnels for high availability. If your VPN connection has one tunnel up but the other is down for more than one hour in a day, you receive a *monthly* **VPN single tunnel notification** through an Health Dashboard event. This event will be updated daily with any new VPN connections detected as single tunnel, with notifications sent weekly. A new event will be created each month, which will clear any VPN connections no longer detected as single tunnel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

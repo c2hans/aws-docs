@@ -183,7 +183,3 @@ If you enter only a key ID or alias name, AWS assumes the KMS key is in your acc
 The AWS KMS console does not display KMS keys in other accounts, even if you have permission to use them. Also, the lists of KMS keys displayed in the consoles of other AWS services do not include KMS keys in other accounts.
 
 To specify a KMS key in a different account in the console of an AWS service, you must enter the key ARN or alias ARN of the KMS key. The required key identifier varies with the service, and might differ between the service console and its API operations. For details, see the service documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

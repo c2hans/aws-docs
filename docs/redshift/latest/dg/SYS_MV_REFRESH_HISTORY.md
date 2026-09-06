@@ -73,7 +73,3 @@ The query returns the following sample output:
        1 | 1073815659 |          15069 | dev           | test_stl_mv_refresh_schema | 203761 | child              | Manual         | Refresh failed due to an internal error.                                                             | 2023-10-26 15:21:43.550369 | 2023-10-26 15:21:43.550369 |      633
 (10 rows)
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

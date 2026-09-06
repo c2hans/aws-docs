@@ -47,7 +47,3 @@ To verify that the remediation resolved the finding, navigate to the [Lambda con
 
 **Note**
 Some findings may still appear on the **Findings** page even with a **Remediation Status** of `Success`. This is because AWS Security Hub takes up to 24 hours to mark a finding as resolved after the resource has been updated. You can **suppress** findings you no longer want to see on the **Findings** page by selecting the finding and choosing **Actions > Suppress**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

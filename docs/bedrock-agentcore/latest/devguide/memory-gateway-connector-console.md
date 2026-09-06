@@ -49,7 +49,3 @@ The **Create gateway** wizard creates both the gateway and its target in the sam
 1. On the **Review and create** page, review your configuration, then choose **Create gateway**.
 
 Gateway and target creation is asynchronous. Wait until the gateway and its target reach the **Ready** status before you send traffic. To enforce per-caller isolation, attach a policy engine and add fine-grained access control policies. For the full procedure and Memory-specific policy examples, see [Fine-grained access control for Memory](memory-gateway-fgac.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

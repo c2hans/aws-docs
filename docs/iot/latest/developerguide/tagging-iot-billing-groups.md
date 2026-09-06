@@ -51,7 +51,3 @@ Cost and usage data based on tags (and reported for a billing group) doesn't ref
 + Index search queries.
 + [Device provisioning](iot-provision.md).
 + [AWS IoT Device Defender audit](https://docs.aws.amazon.com/iot-device-defender/latest/devguide/device-defender-audit.html) reports.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

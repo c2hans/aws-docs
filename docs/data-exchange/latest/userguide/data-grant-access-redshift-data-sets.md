@@ -20,7 +20,3 @@ After accepting a data grant, you can do the following:
   Access the latest data as soon as the data owner updates it.
 
 For more information, see [Managing AWS Data Exchange datashares](https://docs.aws.amazon.com/redshift/latest/dg/manage-adx-datashare-console.html) in the *Amazon Redshift Database Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

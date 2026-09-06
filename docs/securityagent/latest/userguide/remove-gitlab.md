@@ -31,7 +31,3 @@ Before removing a GitLab integration, ensure you have:
 After removing the integration, you may also want to revoke the Personal Access Token in GitLab to prevent further access. Navigate to your GitLab user settings and delete or revoke the token.
 
 The same process applies to GitLab Self-Managed integrations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,7 +43,3 @@ Download the installation files for each unique AWS Elemental product that you'r
      Make sure that you download the right version of software for the processing architecture that you need, either CPU-only or GPU-enabled. For example, if your AWS Elemental Servers have GPUs, download the GPU version.
 
     For example, if you're installing AWS Elemental Conductor File on two systems and AWS Elemental Server on five systems, you need to download two `.iso` files and two `.run` files.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

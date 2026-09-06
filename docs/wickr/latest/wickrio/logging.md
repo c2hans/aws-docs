@@ -75,7 +75,3 @@ Integration logs are located in the integration-specific directory associated wi
  `/opt/WickrIO/clients/test_bot/integration/wickrio-broadcast-bot/logs`
 
 Typical Wickr IO integrations will write output to a file named "log.output" and error output will be written to a file named "err.output". Output in the "err.output" is an indication the integration has crashed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

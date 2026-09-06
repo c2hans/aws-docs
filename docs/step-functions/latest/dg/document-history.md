@@ -182,7 +182,3 @@ This section lists major changes to the *AWS Step Functions Developer Guide*.
 | Update |  +  Clarified state machine naming restrictions in tutorials. <br />+  Corrected some code examples.   | January 5, 2017 |
 | Update | Updated Lambda function examples to use the latest programming model. | December 9, 2016 |
 | Initial release | Initial release of AWS Step Functions. | December 1, 2016 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,3 @@ A subnet is a range of IP addresses in a VPC. When you launch an instance, you l
 You can stream from WorkSpaces Applications streaming instances in your VPC without going through the public internet. To do so, use an interface VPC endpoint (interface endpoint). For more information, see [Tutorial: Creating and Streaming from Interface VPC Endpoints](creating-streaming-from-interface-vpc-endpoints.md).
 
 You can also call WorkSpaces Applications API operations from your VPC without sending traffic over the public internet by using an interface endpoint. For information, see [Access WorkSpaces Applications API Operations and CLI Commands Through an Interface VPC Endpoint](access-api-cli-through-interface-vpc-endpoint.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ There are other high availability architecture strategies that aren't described 
 Several factors could cause your architecture to fail over to a different AWS Region. For example, a Regional outage could prevent you from accessing the Amazon Pinpoint console, or from accessing its API operations. You could also configure your architecture to fail over when your messages are being sent but aren't receiving event notifications (or the number of event notifications is unexpectedly low).
 
 In certain situations, failing over won't provide any benefit. For example, if you send SMS messages, and a specific mobile carrier is having an outage, then delivery issues will persist, regardless of which AWS Region you use. The same is true for email: if an email provider has a temporary issue that prevents the delivery of email to its domain, that issue will persist across Regions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

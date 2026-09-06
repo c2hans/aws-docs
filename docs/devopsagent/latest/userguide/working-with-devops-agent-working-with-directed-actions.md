@@ -252,7 +252,3 @@ Fix the trust policy and re-register the role.
 **`ValidationException` when registering an elevated role.** Directed actions must be enabled on the agent space before you can register elevated configuration. Enable directed actions on the agent space first, then register the role.
 
 **Tool name mismatch errors when supplying `toolDetails`.** Each name in `toolDetails` must exactly match a tool name in the association's enabled tools list, including case. Compare the two lists, correct any mismatches, and then retry.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

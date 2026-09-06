@@ -96,7 +96,3 @@ To use the resulting reconstructed SQL in your client, replace any (`\n`) specia
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  select\n1 AS a0123456789012345678901234567890123456789012345678901234567890,\n2 AS b0123456789012345678901234567890123456789012345678901234567890,\n3 AS b012345678901234567890123456789012345678901234\nFROM stl_querytext;
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

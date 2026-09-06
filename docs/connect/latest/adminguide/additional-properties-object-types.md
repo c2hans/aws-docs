@@ -17,7 +17,3 @@ Retention on individual objects is set at the time of ingestion of data. Changin
 **Note**
 If this object matches with an existing profile, it will not overwrite fields manually populated through an API call or the Agent Workspace, to prevent automated ingestions from overwriting manual ones.
 For example, suppose a profile is created with FirstName “John” manually by an agent in the Agent Workspace. An object mapping data to the Standard Profile’s FirstName field is ingested. If this object associates with the profile, it will not overwrite the FirstName “John”.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

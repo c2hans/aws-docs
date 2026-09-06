@@ -55,7 +55,3 @@ AWS Mainframe Modernization Code conversion enables conversion while keeping all
 Along with the [Tutorial: Convert code from Assembler to COBOL in AWS Mainframe Modernization](assembler-conversion-steps.md), here are some additional resources where you can learn about creating the CloudFormation templates and other information about converting Assembler to COBOL.
 + Workshop link for Automated Code conversion from Assembler to COBOL: [https://catalog.workshops.aws/awsm2ccm-assembler-cobol/en-US](https://catalog.workshops.aws/awsm2ccm-assembler-cobol/en-US).
 + Blog post: [https://aws.amazon.com/blogs/migration-and-modernization/unlocking-new-potential-transform-your-assembler-programs-to-cobol-with-aws-mainframe-modernization/](https://aws.amazon.com/blogs/migration-and-modernization/unlocking-new-potential-transform-your-assembler-programs-to-cobol-with-aws-mainframe-modernization/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

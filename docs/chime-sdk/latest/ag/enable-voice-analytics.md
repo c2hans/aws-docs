@@ -26,7 +26,3 @@ To enable voice analytics, administrators use the Amazon Chime SDK console to do
 + Create voice profile domains. Voice profile domains contain sets of *voice profiles*. In turn, a voice profile consists of a vector embedding of a caller's voice, plus a unique ID. By default, you can create 3 voice profile domains, and each domain can house 20,000 voice profiles. You can request an increase for both limits as needed.
 
 Developers can use a set of APIs to do those same tasks. For more information, see [Using the Amazon Chime SDK PSTN voice analytics service](https://docs.aws.amazon.com/chime-sdk/latest/dg/pstn-voice-analytics.html), in the *Amazon Chime SDK Developer guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

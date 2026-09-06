@@ -28,7 +28,3 @@ The `callOtherService` function appears smaller in the **CPU** view because it's
 If you're trying to reduce your CPU usage, the **CPU view** shows you that `localActions` is the most CPU heavy inside `handleServiceCall`, and you might want to optimize this part.
 
 If you're trying to improve the latency of `handleServiceCall`, the **Latency view** shows you that most of the time is spent in `callOtherService`. You can check if this is expected and try to reduce the number of calls or speed up the execution of calls (for example, caching or batching the requests, or calling a closer AWS Region).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

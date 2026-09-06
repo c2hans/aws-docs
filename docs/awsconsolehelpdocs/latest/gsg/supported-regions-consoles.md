@@ -62,7 +62,3 @@ The following service consoles are fully supported or provide graceful degradati
 
 **Note**
 The AWS Billing console is not available through AWS Management Console Private Access, even with internet connectivity. To access billing information, sign in to the AWS Management Console outside of AWS Management Console Private Access.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Management Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

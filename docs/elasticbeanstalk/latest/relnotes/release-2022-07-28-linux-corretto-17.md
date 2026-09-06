@@ -58,7 +58,3 @@ This mismatch occurs in *this release only*. The platform releases that follow w
 |  ** Corretto 17 version 3.3.0** <br /> * 64bit Amazon Linux 2 v3.3.0 running Corretto 17 *  | 2.0.20220606 | Corretto 17.0.3.6.1 | Ant 1.10.7, Gradle 7.4.2, Maven 3.6.2 | 3.2.0 | nginx 1.20.0 |
 |  ** Corretto 11 version 3.2.17** <br /> * 64bit Amazon Linux 2 v3.3.0 running Corretto 11 *  | 2.0.20220606 | Corretto 11.0.15.9.1 | Ant 1.10.7, Gradle 5.6.2, Maven 3.6.2 | 3.2.0 | nginx 1.20.0 |
 |  ** Corretto 8 version 3.2.17** <br /> * 64bit Amazon Linux 2 v3.3.0 running Corretto 8 *  | 2.0.20220606 | Corretto 8.332.08.1 | Ant 1.10.7, Gradle 5.6.2, Maven 3.6.2 | 3.2.0 | nginx 1.20.0 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

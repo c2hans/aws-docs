@@ -14,7 +14,3 @@ Amazon Kinesis Client Library (KCL) versions 1.x and 2.x are outdated. KCL 1.x w
 + [KCL 1.x and 2.x information](shared-throughput-kcl-consumers.md)
 + [Develop custom consumers with shared throughput](shared-throughput-consumers.md)
 + [Migrate consumers from KCL 1.x to KCL 2.x](kcl-migration.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ The following table describes the important changes to the documentation in this
 | Batch updates | Added several new Read and Write batch operation APIs | July 25, 2017 |
 | Typed links | Additional APIs for new [Typed Links](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/objectsandlinks.html#typedlink) feature | May 31, 2017 |
 | New guide | This is the first release of the Amazon Cloud Directory API Reference Guide. | January 26, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

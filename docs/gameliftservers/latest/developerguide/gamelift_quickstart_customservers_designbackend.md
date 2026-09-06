@@ -23,7 +23,3 @@ If you prefer, build a custom identity solution and host it on AWS. You can also
 + [Using identity pools (federated identities)](https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html) (Amazon Cognito Developer Guide)
 + [Getting started with user pools](https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-user-pools.html) (Amazon Cognito Developer Guide)
 + [How to Set Up Player Authentication with Amazon Cognito](https://aws.amazon.com/blogs/gametech/how-to-set-up-player-authentication-with-amazon-cognito/) (AWS for Games Blog)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

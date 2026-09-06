@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/h
  Figure 2 demonstrates the two consideration categories, the individual considerations, and the logical order in which the considerations are covered in the subsequent sub-sections. Those are the essential considerations when making a hybrid network design decision. If the targeted design does not require all these considerations, you can focus on the considerations that apply to your requirements.
 
 ![Diagram showing consideration categories, individual considerations, and the logical order between them](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/consideration-categories.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

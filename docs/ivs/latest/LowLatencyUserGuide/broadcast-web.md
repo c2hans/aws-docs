@@ -16,7 +16,3 @@ The IVS Low-Latency Streaming Web Broadcast SDK gives developers the tools to bu
 + [Single broadcast with screen share to an IVS channel](https://stream.ivs.rocks/) ([React Source Code](https://github.com/aws-samples/amazon-ivs-broadcast-web-demo))
 
 **Platform requirements**: See [Amazon IVS Broadcast SDK](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/broadcast.html) for a list of supported platforms.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

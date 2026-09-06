@@ -171,7 +171,3 @@ When the AWS KMS key is in a different account than the destination delivery IAM
 When the AWS KMS key and the destination delivery IAM role are in the same account, the IAM identity policy alone is sufficient if the AWS KMS key policy includes the default "Enable IAM policies" root statement. An explicit AWS KMS key policy grant is only required if the key policy does not delegate to IAM.
 
 The IAM role for posting query results to Amazon S3 must be configured separately from the IAM role for scheduled query execution. This separation allows for fine-grained access control, where the execution role can run queries while the Amazon S3 role specifically handles result delivery. Both roles must include a trust policy that allows the CloudWatch Logs service (`logs.amazonaws.com`) to assume the role.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -124,7 +124,3 @@ User background sessions for EMR Serverless are available for:
 + Spark engine only (Hive engine is not supported)
 + Livy interactive sessions only (batch jobs and streaming jobs are not supported)
 + EMR Serverless release labels 7.8 and later
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

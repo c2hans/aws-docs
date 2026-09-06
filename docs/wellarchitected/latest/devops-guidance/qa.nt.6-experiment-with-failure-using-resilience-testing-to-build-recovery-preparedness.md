@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 +  [Fault testing on Amazon EBS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-fis.html)
 +  [Chaos experiments on Amazon RDS using AWS Fault Injection Service](https://aws.amazon.com/blogs/devops/chaos-experiments-on-amazon-rds-using-aws-fault-injection-simulator/)
 +  [Chaos Testing with AWS Fault Injection Service and AWS CodePipeline](https://aws.amazon.com/blogs/architecture/chaos-testing-with-aws-fault-injection-simulator-and-aws-codepipeline/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

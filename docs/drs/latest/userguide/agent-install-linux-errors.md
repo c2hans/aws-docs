@@ -454,7 +454,3 @@ The `--force-volumes` option disables automatic disk detection. Manually verify 
 + Provide an existing directory on a supported file system, such as ext4 or xfs.
 + Do not point the `--driver-state-location` parameter at a Btrfs subvolume.
 + Omit the `--driver-state-location` parameter so that the installer chooses the location automatically.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

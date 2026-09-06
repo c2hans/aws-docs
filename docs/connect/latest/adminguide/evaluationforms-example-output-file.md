@@ -18,7 +18,7 @@ This section shows the export output path for evaluations, provides an example o
 ## Verify your S3 bucket
 <a name="verify-evaluation-s3bucket"></a>
 
-When you enable **Contact evaluations** in the Connect Customer console, you are prompted to create or choose an S3 bucket to store the evaluations. To verify the name of the bucket, go to your instance alias, choose **Data storage**, **Contact evaluations**, then **Edit**.
+When you enable **Contact evaluations** in the Connect Customer console, you are prompted to create or choose an S3 bucket to store the evaluations. To verify the name of the bucket, navigate to your instance alias, choose **Data storage**, **Contact evaluations**, then **Edit**.
 
 ## Example output locations
 <a name="example-evaluationform-output-locations"></a>
@@ -602,7 +602,3 @@ The following example shows a typical exported evaluation.
   ]
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

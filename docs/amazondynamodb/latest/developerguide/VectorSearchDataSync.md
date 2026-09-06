@@ -30,7 +30,3 @@ For the complete set of write-validation rules, see [Writing items with vector d
 <a name="VectorSearchDataSync.GlobalTables"></a>
 
 When a table that has a vector index is a global table, DynamoDB replicates writes in any replica Region to the other Regions and indexes them there. DynamoDB replicates data to the vector index asynchronously. A vector that you write in one Region might not immediately appear in `SearchVectors` results in another Region—even if the table uses multi-Region strong consistency (MRSC). See [Using vector indexes with global tables](VectorSearchGlobalTables.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

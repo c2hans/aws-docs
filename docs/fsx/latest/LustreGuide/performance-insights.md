@@ -30,7 +30,3 @@ Amazon FSx provides actionable recommendations that you can use to optimize your
   - **If there's a warning for this metric:** Metadata IOPS / **Do this:** [Increase your file system's metadata IOPS](modify-metadata-performance.md).
 
 For more information about file system performance, see [Amazon FSx for Lustre performance](performance.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

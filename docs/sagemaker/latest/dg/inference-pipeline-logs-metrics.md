@@ -99,7 +99,3 @@ A *log stream* is a sequence of log events that share the same source. Each sepa
 SageMaker AI creates the `/aws/sagemaker/NotebookInstances` log group when you create a notebook instance with a lifecycle configuration. For more information, see [Customization of a SageMaker notebook instance using an LCC script](notebook-lifecycle-config.md).
 
 For more information about SageMaker AI logging, see [CloudWatch Logs for Amazon SageMaker AI](logging-cloudwatch.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

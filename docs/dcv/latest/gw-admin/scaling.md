@@ -58,7 +58,3 @@ The following steps summarize how to create a Network Load Balancer and highligh
 When using a TLS listener on your Elastic Load Balancer, the Target Group also needs to be set to TLS.
 
 If you have enabled QUIC, once the Network Load Balancer is created, select it from the list, select the *UDP listener* and make sure the **Stickiness** check box is active.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

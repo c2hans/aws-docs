@@ -31,7 +31,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/public-sector-cloud-t
 1.  **Operations perspective** — Common roles: IT Operations Managers and IT Support Managers. Helps stakeholders understand how to update the staff skills and organizational processes necessary to ensure system health and reliability during the move of operations to the cloud and then to operate using agile, ongoing, cloud computing best practices.
 
 By identifying the gaps in skills and processes between the current IT environment and the future cloud environment, an organization can create an action plan designed to close these gaps. The AWS CAF perspectives, capabilities, skills, and processes are designed for organizations to use as they develop plans and workstreams to move from their current IT environment to the AWS Cloud, or to deploy a new environment in the AWS Cloud. Stakeholders with organizational buy-in who apply the AWS CAF structure can create an actionable plan that helps the organization quickly and effectively achieve their desired cloud adoption.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -135,7 +135,3 @@ To avoid ongoing charges, delete the resources you created for this tutorial:
 + [Enable Amazon EMR on EC2 blueprint](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/enable-emr-on-ec2-blueprint.html) in the *Amazon SageMaker Unified Studio Administrator Guide*.
 + [Enable Lake Formation with Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-lf-enable.html).
 + [Use trusted identity propagation for Apache Spark interactive sessions in Amazon SageMaker Unified Studio](https://aws.amazon.com/blogs/big-data/use-trusted-identity-propagation-for-apache-spark-interactive-sessions-in-amazon-sagemaker-unified-studio/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

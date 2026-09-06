@@ -60,7 +60,3 @@ This quota applies to the total number of custom key stores in each account and 
 You can perform [on-demand key rotation](rotating-keys-on-demand.md) a maximum of 25 times per KMS key. If you try to perform more on-demand rotations, the [RotateKeyOnDemand](https://docs.aws.amazon.com/kms/latest/APIReference/API_RotateKeyOnDemand.html) operation fails.
 
 This quota is not adjustable. You cannot increase it by using Service Quotas or by creating a case in AWS Support. To prevent reaching the on-demand rotation quota, we recommend using [automatic key rotation](rotating-keys-enable.md) whenever possible.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -261,7 +261,3 @@ If you didn't make changes to the custom resource, CloudFormation won't send req
    The `StackId`, `RequestId`, and `LogicalResourceId` fields must be copied verbatim from the request.
 
 1. <a name="crpg-walkthrough-stack-updates-stack-status-delete"></a>CloudFormation declares the stack status as `DELETE_COMPLETE` or `DELETE_FAILED`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

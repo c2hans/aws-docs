@@ -41,7 +41,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-with-aws
  [AWS Identity and Access Management](https://aws.amazon.com/iam/) (AWS IAM) and [Amazon Cognito Identity Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html) enable identity federation through integration with IdPs supporting Security Assertion Markup Language (SAML) or Open-ID Connect (OIDC) to obtain temporary, limited-privilege AWS credentials to manage and access resources on AWS and in a hybrid cloud deployment with AWS Outposts.
 
  Finally, [AWS Single Sign-On (SSO](https://aws.amazon.com/single-sign-on/)) enables you to integrate services in the Unified hybrid cloud management layer to the same IdPs as used to manage access to AWS resources and services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

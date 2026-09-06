@@ -905,7 +905,3 @@ If you need to use one of these non-aws provided solutions, please exercise due 
 +  [Action Hero](https://github.com/princespaghetti/actionhero)
 +  [kube2iam](https://github.com/jtblin/kube2iam)
 +  [kiam](https://github.com/uswitch/kiam)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,7 @@ In cases where you have compressed data, we recommend that you split the data fo
 
 Split your data into files so that the number of files is a multiple of the number of slices in your cluster. That way, Amazon Redshift can divide the data evenly among the slices. The number of slices per node depends on the node size of the cluster. For example, each dc2.large compute node has two slices, and each dc2.8xlarge compute node has 16 slices. For more information about the number of slices that each node size has, see [About clusters and nodes](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html#rs-about-clusters-and-nodes) in the *Amazon Redshift Management Guide*.
 
-The nodes all participate in running parallel queries, working on data that is distributed as evenly as possible across the slices. If you have a cluster with two dc2.large nodes, you might split your data into four files or some multiple of four. Amazon Redshift doesn't take file size into account when dividing the workload. Thus, you need to ensure that the files are roughly the same size, from 1 MB to 1 GB after compression.
+The nodes all participate in running parallel queries, working on data that is distributed as evenly as possible across the slices. If you have a cluster with two dc2.large nodes, you might split your data into four files or some multiple of four. Amazon Redshift doesn't take file size into account when dividing the workload. Thus, you need to make sure that the files are roughly the same size, from 1 MB to 1 GB after compression.
 
 To use object prefixes to identify the load files, name each file with a common prefix. For example, you might split the `venue.txt` file might be split into four files, as follows.
 
@@ -51,7 +51,3 @@ Follow this general process to load data from Amazon S3, when your data is uncom
 For examples of COPY commands, see [COPY examples](r_COPY_command_examples.md). For information about data loaded into Amazon Redshift, check the [STL\_LOAD\_COMMITS](r_STL_LOAD_COMMITS.md) and [STL\_LOAD\_ERRORS](r_STL_LOAD_ERRORS.md) system tables.
 
 For more information about nodes and the slices contained in each, see [About clusters and nodes](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html#rs-about-clusters-and-nodes) in the *Amazon Redshift Management Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

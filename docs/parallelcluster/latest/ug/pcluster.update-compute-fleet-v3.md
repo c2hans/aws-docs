@@ -16,6 +16,9 @@ pcluster update-compute-fleet [-h]
                 [--region {{REGION}}]
 ```
 
+**Note**
+This operation is asynchronous: the command only requests the status change. Use [`pcluster describe-compute-fleet`](pcluster.describe-compute-fleet-v3.md) to verify that the fleet reaches the final status (`RUNNING` or `STOPPED`). If it stays in `STARTING` or `STOPPING`, check `/var/log/parallelcluster/clusterstatusmgtd` on the head node for errors.
+
 ## Named arguments
 <a name="pcluster-v3.update-compute-fleet.namedargs"></a>
 
@@ -46,7 +49,3 @@ $ pcluster update-compute-fleet -n {{cluster-v3}} --status {{STOP_REQUESTED}}
   "lastStatusUpdatedTime": "2022-07-12T20:19:47.653Z"
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/sysops-administ
 + Skill 1.3.4: Evaluate and select shared storage solutions (for example, Amazon EFS, Amazon FSx, Amazon S3 Files), and optimize the solutions (for example, EFS lifecycle policies) for specific use cases and requirements.
 + Skill 1.3.5: Monitor Amazon RDS metrics (for example, Amazon RDS Performance Insights, CloudWatch alarms) and modify configurations to increase performance efficiency (for example, Performance Insights proactive recommendations, RDS Proxy).
 + Skill 1.3.6: Implement, monitor, and optimize EC2 instances and their associated storage and networking capabilities (for example, EC2 placement groups).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

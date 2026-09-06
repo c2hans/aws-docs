@@ -52,7 +52,3 @@ As a queue accumulates shared bundles, you can hide the ones you don't use. Open
 To bring a bundle back, select the **Show hidden** checkbox. Then open the context menu for the bundle and choose **Unhide bundle**.
 
 ![The job bundle browser with the Show hidden checkbox selected, revealing hidden bundles in the list.](http://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/bundles/unhide-bundle.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

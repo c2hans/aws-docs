@@ -40,7 +40,7 @@ The volume limits for instances built on the Nitro System depend on the instance
 The following Nitro instance types have a dedicated EBS volume limit that varies depending on instance size. The limit is not shared with other device attachments. In other words, you can attach any number of EBS volumes up to the volume attachment limit, regardless of the number of attached devices, such as NVMe instance store volumes and network interfaces.
 + **General purpose:** M7a \| M7i \| M7i-flex \| M8a \| M8azn \| M8g \| M8gb \| M8gd \| M8gn \| M8i \| M8id \| M8i-flex \| M8in \| M8idn \| M8ine \| M8ib \| M8idb \| M9g \| M9gd
 + **Compute optimized:** C7a \| C7i \| C7i-flex \| C8a \| C8g \| C8gb \| C8gd \| C8gn \| C8i \| C8id \| C8i-flex \| C8in \| C8ine \| C8ib \| C9g \| C9gd
-+ **Memory optimized:** R7a \| R7i \| R7iz \| R8a \| R8g \| R8gb \| R8gd \| R8gn \| R8i \| R8id \| R8i-flex \| R8in \| R8idn \| R8ib \| R8idb \| U7i-6tb \| U7i-8tb \| U7i-12tb \| U7in-16tb \| U7in-24tb \| U7in-32tb \| U7inh-32tb \| X8g \| X8aedz \| X8i
++ **Memory optimized:** R7a \| R7i \| R7iz \| R8a \| R8g \| R8gb \| R8gd \| R8gn \| R8i \| R8id \| R8i-flex \| R8in \| R8idn \| R8ib \| R8idb \| R9g \| R9gd \| U7i-6tb \| U7i-8tb \| U7i-12tb \| U7in-16tb \| U7in-24tb \| U7in-32tb \| U7inh-32tb \| X8g \| X8aedz \| X8i
 + **Storage optimized:** I7i \| I7ie \| I8g \| I8ge
 + **Accelerated computing:** F2 \| G6 \| G6e \| G6f \| Gr6 \| Gr6f \| G7 \| G7e \| P4d \| P4de \| P5 \| P5e \| P5en \| P6-B200 \| P6-B300 \| P6e-GB200 \| Trn2 \| Trn2u
 + **High performance computing:** Hpc7a \| Hpc8a
@@ -97,7 +97,3 @@ We recommend that you do not that attach more than 26 volumes to a Xen-based Win
 Attaching more than the following number of volumes to a Xen-based Windows instance is supported on a best effort basis only and is not guaranteed.
 
 For more information about how device names are related to volumes, see [How volumes are attached and mapped for Amazon EC2 Windows instances](ec2-windows-volumes.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

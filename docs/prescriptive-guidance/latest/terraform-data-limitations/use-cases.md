@@ -98,7 +98,3 @@ In this code:
 This simplistic deployment strategy for Amazon Bedrock agents establishes an initialization process that sleeps for 5 seconds while the agent is getting to the prepared state.
 
 You can enhance this solution by introducing a wait (for example, 10 seconds) until the condition is met after agent creation. You can extend this solution further by implementing comprehensive status verification mechanisms that aim for complete agent readiness. For example, you can implement status checking to prevent premature alias generation and mitigate potential API failures. An adaptive retry mechanism with clearly defined maximum wait times and detailed error tracking will help you troubleshoot failures. Critical considerations include maintaining a consistent deployment process, supporting automated infrastructure setup, and providing transparent progress monitoring.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

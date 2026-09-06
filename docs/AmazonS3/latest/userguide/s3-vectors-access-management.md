@@ -71,7 +71,3 @@ These actions can be combined in various ways to create policies that match your
 | --- | --- | --- | --- |
 | 1 | s3vectors:sseType | Filters access by server-side encryption type Valid values: AES256 \| aws:kms | String |
 | 2 | s3vectors:kmsKeyArn | Filters access by the AWS AWS KMS key ARN for the key used to encrypt a vector bucket | ARN |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

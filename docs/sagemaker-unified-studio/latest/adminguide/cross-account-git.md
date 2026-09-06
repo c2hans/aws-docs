@@ -42,7 +42,3 @@ Cross-region Git connections are supported in IAM Identity Center (IDC) domains.
 
 **Note**
 Self-hosted GitLab and GitHub Enterprise Server instances must be accessible from the tooling Region configured for your domain. Ensure that your self-hosted instance network configuration allows connectivity from the Region where your Amazon SageMaker Unified Studio compute resources run.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,6 +41,14 @@ This parameter isn't applicable to jobs that are running on Fargate resources. D
 Type: Integer
 Required: No
 
+ ** capacityTags **   <a name="Batch-Type-ComputeResourceUpdate-capacityTags"></a>
+The updated tags to apply to the Amazon ECS capacity provider and Amazon EC2 instances. This parameter is only valid for `ECS_MANAGED_INSTANCES` compute environments. You must have the `batch:SetCapacityTags` permission on the compute environment resource to use this parameter.
+Type: String to string map
+Map Entries: Maximum number of 50 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Value Length Constraints: Maximum length of 256.
+Required: No
+
  ** desiredvCpus **   <a name="Batch-Type-ComputeResourceUpdate-desiredvCpus"></a>
 The desired number of vCPUS in the compute environment. AWS Batch modifies this value between the minimum and maximum values based on job queue demand.
 This parameter isn't applicable to jobs that are running on Fargate resources. Don't specify it.
@@ -102,6 +110,11 @@ This parameter isn't applicable to jobs that are running on Fargate resources. D
 Type: [LaunchTemplateSpecification](API_LaunchTemplateSpecification.md) object
 Required: No
 
+ ** managedInstancesProvider **   <a name="Batch-Type-ComputeResourceUpdate-managedInstancesProvider"></a>
+The updated configuration for the Amazon ECS Managed Instances capacity provider. This parameter is only valid when the compute environment type is `ECS_MANAGED_INSTANCES`. You cannot change `capacityOptionType` or `fipsEnabled` on update.
+Type: [UpdateManagedInstancesProviderConfiguration](API_UpdateManagedInstancesProviderConfiguration.md) object
+Required: No
+
  ** maxvCpus **   <a name="Batch-Type-ComputeResourceUpdate-maxvCpus"></a>
 The maximum number of Amazon EC2 vCPUs that an environment can reach.
 With any allocation strategy except `BEST_FIT` using On-Demand (`EC2`) compute resources, AWS Batch might need to exceed `maxvCpus` to meet your capacity requirements. In this event, AWS Batch never exceeds `maxvCpus` by more than a single instance.
@@ -154,7 +167,7 @@ The type of compute environment: `EC2`, `SPOT`, `FARGATE`, `FARGATE_SPOT`, or `E
 When updating a compute environment, changing the type of a compute environment requires an infrastructure update of the compute environment. For more information, see [Updating compute environments](https://docs.aws.amazon.com/batch/latest/userguide/updating-compute-environments.html) in the * AWS Batch User Guide*.
 You cannot change the type to or from `ECS_MANAGED_INSTANCES`.
 Type: String
-Valid Values: `EC2 | SPOT | FARGATE | FARGATE_SPOT`
+Valid Values: `EC2 | SPOT | FARGATE | FARGATE_SPOT | ECS_MANAGED_INSTANCES`
 Required: No
 
  ** updateToLatestImageVersion **   <a name="Batch-Type-ComputeResourceUpdate-updateToLatestImageVersion"></a>
@@ -171,7 +184,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/batch-2016-08-10/ComputeResourceUpdate)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/ComputeResourceUpdate)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/batch-2016-08-10/ComputeResourceUpdate)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

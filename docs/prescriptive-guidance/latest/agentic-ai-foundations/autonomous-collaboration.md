@@ -54,7 +54,3 @@ In this model, agents act as nodes in a broader intelligence fabric. They form e
 Automation alone is insufficient in complex systems. The defining purpose of a software agent is to act with purpose and to evaluate goals, weigh context, and make informed choices. This means that software agents pursue goals instead of only responding to triggers. They can revise beliefs and intentions based on experience or feedback. In this context, beliefs refer to the agent's internal representation of the environment (for example, "package X is in warehouse A"), based on its perceptions (input and sensors). Intentions refer to the plans that the agent chooses to achieve a goal (for example, "use delivery route B and notify the recipient"). Agents can also escalate, defer, or adapt actions as necessary.
 
 This intentionality is what makes software agents not just reactive executors, but autonomous collaborators in intelligent systems.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

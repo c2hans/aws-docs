@@ -156,7 +156,3 @@ Navigate to the Web UI login page. Confirm that your custom identity provider is
 To test the integration, invite a new user using the **Invite Users** page. Then, ensure the user can authenticate by choosing your custom identity provider on the Web UI login page.
 
 The user’s profile in your custom IdP must be linked to the same email address provided in their invitation. In other words, the email address in your provider’s claims must match the invitation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

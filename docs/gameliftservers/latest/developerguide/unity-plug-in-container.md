@@ -11,7 +11,7 @@ Use this guided plugin workflow to create a container image for your game server
 <a name="unity-plug-in-container-prereqs"></a>
 
 This workflow assumes that you’ve completed the following tasks.
-+ **Integrate your game server code with Amazon GameLift Servers server SDK.** our hosted game server must be able to communicate with the Amazon GameLift Servers service so that it can respond to requests to start new game sessions and report game session status. If you haven’t completed this task, we recommend that you follow the plugin workflow Host with Anywhere first. For guidance on preparing your game server code, see [Integrate your server code](unity-plug-in-anywhere.md#unity-plug-in-anywhere-integrate-server). For a managed container fleet, you must integrate your game with server SDK version 5.2 or higher.
++ **Integrate your game server code with Amazon GameLift Servers server SDK.** Your hosted game server must be able to communicate with the Amazon GameLift Servers service so that it can respond to requests to start new game sessions and report game session status. If you haven’t completed this task, we recommend that you follow the plugin workflow Host with Anywhere first. For guidance on preparing your game server code, see [Integrate your server code](unity-plug-in-anywhere.md#unity-plug-in-anywhere-integrate-server). For a managed container fleet, you must integrate your game with server SDK version 5.2 or higher.
 **Note**
 If you imported the sample game, this task is already done for you.
 + **Package your game server executable to run on Linux.**
@@ -157,7 +157,7 @@ In this step, provide information that the plugin needs to deploy your container
 + The location of your game server build, container image, or Amazon ECR repository, based on your selections in Step 1.
 + The scenario to use for your managed containers deployment.
 + Optional deployment settings. This section has configuration settings that the plugin uses by default. You can modify these or keep the default values
-  + Game name is set to the name of your game project by default. All AWS resources that the plugin creates references the game name value.
+  + Game name is set to the name of your game project by default. All AWS resources that the plugin creates reference the game name value.
   + Port range, memory limit, and vCPU limit are configuration settings for the container fleet. For more information about customizing these values, see [Configure network connections](containers-design-fleet.md#containers-custom-network) for connection port range, and [Set resource limits](containers-design-fleet.md#containers-design-fleet-limits) for resource limits.
   + Container image tag is used to categorize your container images in Amazon ECR. The default value is `unity-gamelift-plugin`.
 
@@ -236,7 +236,3 @@ As a best practice, clean up the AWS resources for your managed containers solut
 Delete the following resources:
 + Managed container resource stack. The resources in this stack depends on the deployment scenario you selected. To delete the entire stack, use the CloudFormation console. Stacks that are generated from the Amazon GameLift Servers plugin use the following naming convention: `GameLiftPluginForUnity-{GameName}-Containers`. Wait for the stack deletion process to complete before you initiate a new managed containers deployment in the plugin. For more information, see [ Delete a stack from the CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html).
 + Amazon ECR repository. If you used the plugin to create a repository for your container image, you might want to delete any repositories that are no longer needed. You don't need to delete a repository before resetting a managed containers deployment. If you update or reset a deployment, the plugin will automatically use the same repository unless directed to use another one. For more information, see [ Deleting a private repository in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-delete.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

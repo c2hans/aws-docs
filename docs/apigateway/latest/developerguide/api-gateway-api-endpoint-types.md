@@ -36,7 +36,3 @@ In cases where API clients are geographically dispersed, it may still make sense
 A *[private API endpoint](api-gateway-basic-concept.md#apigateway-definition-private-api-endpoint)* is an API endpoint that can only be accessed from your Amazon Virtual Private Cloud (VPC) using an interface VPC endpoint, which is an endpoint network interface (ENI) that you create in your VPC. For more information, see [Private REST APIs in API Gateway](apigateway-private-apis.md).
 
 Private API endpoints pass all header names through as-is.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

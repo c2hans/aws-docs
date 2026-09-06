@@ -29,7 +29,3 @@ To implement Amazon Bedrock policies effectively, follow these steps in sequence
 1. [Attach the Amazon Bedrock policy to your organization's root, OU, or account](orgs_policies_attach.md).
 
 1. [View the combined effective Amazon Bedrock policy that applies to an account](orgs_manage_policies_effective.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

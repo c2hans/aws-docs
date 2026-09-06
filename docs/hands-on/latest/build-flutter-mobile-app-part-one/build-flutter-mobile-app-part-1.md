@@ -51,7 +51,3 @@ This how-to guide is divided into the following short modules. You must complete
 1. [Module 3: Add API](module-3.md) (20 minutes): Create the Amplify GraphQL API for the app and implement the CRUD operation for the trip feature.
 
 1. [Module 4: Add Amplify storage](module-4.md) (15 minutes): Create the Amazon S3 bucket for the app and implement the ability to upload an image for the trip.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

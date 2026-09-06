@@ -25,7 +25,3 @@ This option requires the AWS Outposts [service link infrastructure subnet IPs](h
 <a name="sl-dx-public-vif-option"></a>
 
 This option requires the AWS Outposts [service link infrastructure subnet IPs](https://docs.aws.amazon.com/outposts/latest/network-userguide/outposts-rack2ndgen-local-rack.html#service-link-subnet) to have access to the public IP ranges of your AWS Region or home Region over DX service. You must allow-list AWS Region public IPs or 0.0.0.0/0 on networking devices such as your firewall.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

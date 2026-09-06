@@ -233,7 +233,3 @@ The following table identifies similarities, differences, and key migration cons
 | UDF boundaries local only | Can change data and schema | UDF rules are more lenient, avoid unexpected changes from function invocation. |
 
 For more information, see [CREATE PROCEDURE and CREATE FUNCTION Statements](https://dev.mysql.com/doc/refman/5.7/en/create-procedure.html) and [CREATE FUNCTION Statement for Loadable Functions](https://dev.mysql.com/doc/refman/5.7/en/create-function-loadable.html) in the *MySQL documentation*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

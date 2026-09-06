@@ -15,7 +15,3 @@ To successfully complete this tutorial, you must first:
   +  The ARN of one of your target groups. You use this to create a new listener.
   +  The CodeDeploy application and deployment group you create.
   +  The AppSpec file you create that is used by your CodeDeploy deployment. You edit this file in this tutorial.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

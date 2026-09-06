@@ -14,7 +14,3 @@ Implementing these mechanisms and tools will help you support business decisions
 In order to implement a cloud financial management function, you need to implement a tagging strategy for your environment. Refer to the [tagging capability](tagging-capability.md), to find recommended tags for your environment. Some of these tags within the tagging capability can be used to track spend in your cloud environment, and allow you to create dashboards, reporting for individual business units, workloads, and types of environments
 
 You need to incorporate the tags and the values for these tags defined within your cloud financial management capability into the tagging dictionary defined as part of your [tagging capability](https://aws.amazon.com/solutions/guidance/tagging-on-aws/). We recommend that you make these tags widely available across your different stakeholders and teams in order to enable them to track spend back. This will allow your cloud team or your FinOps team to analyze the usage and work towards building a cost allocation strategy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

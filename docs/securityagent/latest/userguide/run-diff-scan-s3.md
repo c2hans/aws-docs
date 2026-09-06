@@ -162,7 +162,3 @@ After running a differential scan:
 + Enable pull request comments for automated code review on every pull request (see [Enable pull request code review for GitHub repositories](enable-code-review.md))
 + Run a full code review periodically to catch issues outside of individual changes (see [Create a code review](perform-code-review-scan.md))
 + Use the IDE integration to run differential scans directly from your development environment (see [Run code security scans from your IDE](code-review-ide-integration.md))
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

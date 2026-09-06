@@ -30,7 +30,3 @@ To get started, here are some useful topics to review:
 + **Learn** about the [concepts](concepts-connections.md) for connections.
 + **Set up** the [resources you need](setting-up-connections.md) to start working with connections.
 + **Get started** with your [first connections](getting-started-connections.md) and connect them to a resource.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

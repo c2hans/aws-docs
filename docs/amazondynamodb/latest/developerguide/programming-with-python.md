@@ -197,19 +197,30 @@ You can also refer to the following code sample repositories that explore usage 
 
 ## Understanding how the Client and Resource objects interact with sessions and threads
 <a name="programming-with-python-sessions-thread-safety"></a>
++ A **Client** is generally thread-safe once created, apart from a few advanced features. You can create one Client and call it from many threads at the same time. For more information about these exceptions, see the [guide on Clients](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/clients.html#multithreading-or-multiprocessing-with-clients) in the Boto3 documentation.
++ A **Resource** is not thread-safe. A single Resource object must not be used by more than one thread. For more information, see the [guide on Resources](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/resources.html#multithreading-or-multiprocessing-with-resources) in the Boto3 documentation.
++ A **Session** is not thread-safe. The risk is in *creating* Clients or Resources from it: two threads building them from the same Session at the same time can cause out-of-order responses or crashes in the underlying SSL layer. Creating them one at a time from a Session is fine. For more information, see the [guide on Sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/session.html#multithreading-or-multiprocessing-with-sessions) in the Boto3 documentation.
 
-The Resource object is not thread safe and should not be shared across threads or processes. Refer to the [guide on Resource](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/resources.html#multithreading-or-multiprocessing-with-resources) for more details.
+If you don't create your own Session, `boto3.resource()` and `boto3.client()` use a shared default Session. That's fine in single-threaded code, but in multi-threaded code every thread builds objects from the same Session, which is the unsafe pattern described earlier.
 
-The Client object, in contrast, is generally thread safe, except for specific advanced features. Refer to the [guide on Clients](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/clients.html#multithreading-or-multiprocessing-with-clients) for more details.
+**Share one Client across threads**
+Because a Client is thread-safe, the simplest and most efficient approach is to create a single Client in your main thread and hand it to every worker. They all share its one connection pool.
 
-The Session object is not thread safe. So, each time you make a Client or Resource in a multi-threaded environment you should create a new Session first and then make the Client or Resource from the Session. Refer to the [guide on Sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/session.html#multithreading-or-multiprocessing-with-sessions) for more details.
-
-When you call the `boto3.resource()`, you’re implicitly using the default Session. This is convenient for writing single-threaded code. When writing multi-threaded code, you’ll want to first construct a new Session for each thread and then retrieve the resource from that Session:
+Created once, in the main thread, then shared with all threads:
 
 ```
-# Explicitly create a new Session for this thread
 session = boto3.Session()
-dynamodb = session.resource('dynamodb')
+client = session.client("dynamodb")
+```
+
+**Give each thread its own Resource**
+Because a Resource is not thread-safe, each thread needs its own. Create a fresh Session inside the thread and make the Resource from it, so no two threads build Resources from the same Session at once.
+
+Runs inside each thread:
+
+```
+session = boto3.Session()
+dynamodb = session.resource("dynamodb")
 ```
 
 ## Customizing the Config object
@@ -226,15 +237,15 @@ One use of a custom config is to adjust networking behaviors:
 + **connect\_timeout (float or int)** – The time in seconds till a timeout exception is thrown when attempting to make a connection. The default is 60 seconds.
 + **read\_timeout (float or int)** – The time in seconds till a timeout exception is thrown when attempting to read from a connection. The default is 60 seconds.
 
-Timeouts of 60 seconds are excessive for DynamoDB. It means a transient network glitch will cause a minute’s delay for the client before it can try again. The following code shortens the timeouts to a second:
+Timeouts of 60 seconds are excessive for DynamoDB. It means a transient network glitch will cause a minute’s delay for the client before it can try again. The following code shortens the timeouts to 10 seconds:
 
 ```
 import boto3
 from botocore.config import Config
 
 my_config = Config(
-   connect_timeout = 1.0,
-   read_timeout = 1.0
+   connect_timeout = 10.0,
+   read_timeout = 10.0
 )
 dynamodb = boto3.resource('dynamodb', config=my_config)
 ```
@@ -252,7 +263,6 @@ Setting TCP Keep-Alive to `True` can reduce average latencies. Here's sample cod
 import botocore
 import boto3
 from botocore.config import Config
-from distutils.version import LooseVersion
 
 required_version = "1.27.84"
 current_version = botocore.__version__
@@ -261,7 +271,7 @@ my_config = Config(
    connect_timeout = 0.5,
    read_timeout = 0.5
 )
-if LooseVersion(current_version) > LooseVersion(required_version):
+if tuple(map(int, current_version.split("."))) >= tuple(map(int, required_version.split("."))):
     my_config = my_config.merge(Config(tcp_keepalive = True))
 
 dynamodb = boto3.resource('dynamodb', config=my_config)
@@ -309,12 +319,14 @@ If you manage your own retry policy, you'll want to differentiate between thrott
 + A **throttle** (indicated by a `ProvisionedThroughputExceededException` or `ThrottlingException`) indicates a healthy service that's informing you that you've exceeded your read or write capacity on a DynamoDB table or partition. Every millisecond that passes, a bit more read or write capacity is made available, so you can retry quickly (such as every 50ms) to attempt to access that newly released capacity. With throttles, you don't especially need exponential backoff because throttles are lightweight for DynamoDB to return and incur no per-request charge to you. Exponential backoff assigns longer delays to client threads that have already waited the longest, which statistically extends the p50 and p99 outward.
 + An **error** (indicated by an `InternalServerError` or a `ServiceUnavailable`, among others) indicates a transient issue with the service. This can be for the whole table or possibly just the partition you're reading from or writing to. With errors, you can pause longer before retries (such as 250ms or 500ms) and use jitter to stagger the retries.
 
+For information about upcoming changes to the default retry behavior across all AWS SDKs, see [Announcing updated retry behavior for AWS SDKs and Tools](https://aws.amazon.com/blogs/developer/announcing-updated-retry-behavior-for-aws-sdks-and-tools/) on the AWS Developer Tools Blog. For more information about the changes specific to Python, see the [retry behavior update discussion (\#4789)](https://github.com/boto/boto3/discussions/4789) on the GitHub website.
+
 **Config for max pool connections**
 
 Lastly, the config lets you control the connection pool size:
 + **max\_pool\_connections (int)** – The maximum number of connections to keep in a connection pool. If this value is not set, the default value of 10 is used.
 
-This option controls the maximum number of HTTP connections to keep pooled for reuse. A different pool is kept per Session. If you anticipate more than 10 threads going against clients or resources built off the same Session, you should consider raising this, so threads don't have to wait on other threads using a pooled connection.
+This option controls the maximum number of HTTP connections to keep pooled for reuse. A different pool is kept for each Client. If a thread on a Client wants a connection and the pool is empty, it will make a new connection. If a thread tries to return a connection to the pool after use and finds the pool full, it will close the connection. When you anticipate more than 10 threads going against a single Client, consider raising the pool size to match the thread count.
 
 ```
 import boto3
@@ -324,15 +336,13 @@ my_config = Config(
    max_pool_connections = 20
 )
 
-# Setup a single session holding up to 20 pooled connections
-session = boto3.Session(my_config)
+session = boto3.Session()
 
-# Create up to 20 resources against that session for handing to threads
-# Notice the single-threaded access to the Session and each Resource
-resource1 = session.resource('dynamodb')
-resource2 = session.resource('dynamodb')
-# etc
+# One client with a larger connection pool
+client = session.client("dynamodb", config=my_config)
 ```
+
+Each Resource has a connection pool within as well, but a Resource object is not thread-safe, so don't share one across threads. Give each thread its own Resource.
 
 ## Error handling
 <a name="programming-with-python-error-handling"></a>
@@ -518,6 +528,7 @@ Here's a simple example (using the Resource interface, but the Client interface 
 
 ```
 import boto3
+from boto3.dynamodb.conditions import Key
 
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('YourTableName')
@@ -569,7 +580,7 @@ for page in page_iterator:
         print(item)
 ```
 
-For more information, see the [Guide on Paginators](https://botocore.amazonaws.com/v1/documentation/api/latest/topics/events.html) and the [API reference for DynamoDB.Paginator.Query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb/paginator/Query.html).
+For more information, see the [Guide on Paginators](https://botocore.amazonaws.com/v1/documentation/api/latest/topics/paginators.html) and the [API reference for DynamoDB.Paginator.Query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb/paginator/Query.html).
 
 **Note**
 Paginators also have their own configuration settings named `MaxItems`, `StartingToken`, and `PageSize`. For paginating with DynamoDB, you should ignore these settings.
@@ -586,11 +597,7 @@ This code shows how to wait for a particular table to have been created:
 response = client.create_table(...)
 waiter = client.get_waiter('table_exists')
 waiter.wait(TableName='YourTableName')
-print('Table created:', response['TableDescription']['TableArn']
+print('Table created:', response['TableDescription']['TableArn'])
 ```
 
 For more information, see the [Guide to Waiters](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/clients.html#waiters) and [Reference on Waiters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#waiters).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

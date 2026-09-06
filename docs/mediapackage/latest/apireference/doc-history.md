@@ -26,7 +26,3 @@ The following table describes important changes to this documentation.
 | Multi-period DASH release | Document how to create multiple periods in a DASH manifest. | July 18, 2018 |
 | CMAF endpoint release | Document how to create a Common Media Application Format (CMAF) endpoint. | May 3, 2018 |
 | New AWS Elemental MediaPackage service release | Initial documentation for the MediaPackage service. | November 27, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

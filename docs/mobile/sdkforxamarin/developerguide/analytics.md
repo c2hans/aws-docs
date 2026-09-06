@@ -182,7 +182,3 @@ protected override void OnPause()
 ```
 
 By default, if the user switches focus away from the app for less than 5 seconds, and switches back to the app the session will be resumed. If the user switches focus away from the app for 5 seconds or longer, a new session will be created. This setting is configurable in the aws\_mobile\_analytics.json configuration file by setting the “SESSION\_DELTA” property to the number of seconds to wait before creating a new session.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mobile SDK for Xamarin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mobile` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

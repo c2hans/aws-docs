@@ -230,7 +230,3 @@ If the source DynamoDB table is encrypted using customer managed AWS KMS key, yo
 In addition to the limitations below, also review the general considerations when using zero-ETL integrations see [ Considerations when using zero-ETL integrations with Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl.reqs-lims.html) in the *Amazon Redshift Management Guide*.
 + The DynamoDB table and Amazon Redshift cluster need to be in the same Region.
 + The source DynamoDB table must be encrypted with either an Amazon-owned or Customer-managed AWS KMS key. Amazon managed encryption is not supported for the source DynamoDB table.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

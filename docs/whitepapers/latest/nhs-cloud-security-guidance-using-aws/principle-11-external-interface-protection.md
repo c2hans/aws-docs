@@ -42,7 +42,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/nhs-cloud-security-gu
 +  **NAT Gateway** is an optional component of the VPC that enables instances deployed to subnets with no direct in- or out-bound access from and to networks outside the VPC to access the internet (for say, downloading patches).
 +  **Virtual Private Network** helps customers restrict access to their AWS resources in a VPC to a corporate network. Customers may set up an IPsec VPN over the internet between these using the optional Customer Gateway component of the VPC.
 +  **AWS Direct Connect (DX)** is a dedicated remote link to AWS that is private to the customer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

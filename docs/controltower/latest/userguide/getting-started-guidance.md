@@ -31,7 +31,3 @@ For more information about the resources created by AWS Control Tower, see [What
 + To reduce the time required when registering an OU, we recommend that you keep the number of accounts per OU to around 680, even though the limit is 1000 accounts per OU. As a general rule, the time required to register an OU increases according to the number of Regions in which your OU is operating, multiplied by the number of accounts in the OU.
 + As an estimate, an OU with 680 accounts may require up to 2 hours to register and enable controls, and up to 1 hour to re-register. Also, an OU that has many controls takes longer to register than an OU with few controls.
 + One concern about allowing a longer timeframe for registering an OU is that this process blocks other actions. Some customers are comfortable allowing longer times to register or re-register an OU, because they prefer to allow more accounts in each OU.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -185,7 +185,3 @@ After you have gone through the preceding checklist and pinpointed asymmetric ro
 + Temporarily filter out BGP announcements through one of the firewalls or shut the interfaces on one firewall in order to force symmetric routing through the other firewall.
 + Reboot each firewall in turn to eliminate potential corruption in the flow-state tracking of the service link traffic in the firewall’s memory.
 + Engage your firewall vendor to either verify or relax the tracking of UDP flow-state for UDP connections sourced on port 443 and destined to port 443.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

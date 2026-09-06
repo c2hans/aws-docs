@@ -31,7 +31,3 @@ Amazon EC2 Auto Scaling helps support your application resiliency needs in the f
 <a name="disaster-recovery-related-resources"></a>
 
 For information on features to help support your data resiliency needs provided by Amazon EBS, see [Resilience in Amazon Elastic Block Store](https://docs.aws.amazon.com/ebs/latest/userguide/disaster-recovery-resiliency.html) in the *Amazon EBS User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

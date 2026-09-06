@@ -66,7 +66,3 @@ On the **Manage connections** page, your new connection appears in the **Connect
 <a name="amazon-rds-postgres-sql-transfer-data"></a>
 
 To transfer data to Amazon RDS for PostgreSQL, create an Amazon AppFlow flow, and choose Amazon RDS for PostgreSQL as the data destination. For the steps to create a flow, see [Creating flows in Amazon AppFlow](create-flow.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

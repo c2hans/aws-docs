@@ -128,7 +128,3 @@ If the Upgrade workflow determines that the Cluster Autoscaler is scaling up the
 If your node group has a warm pool enabled, warm pool instances are drained before the scale-up operation begins. This is because warm pool instances have not been updated to the new launch template configuration — during the scale-up phase, they would be pulled into the Auto Scaling Group instead of launching new instances with the updated configuration, which would break the upgrade process. Draining the warm pool ensures that only new instances with the updated configuration are launched. Once the scale-down operation completes, the warm pool is restored, and the new instances in the warm pool are launched with the updated launch template configuration.
 ```
 For more information about warm pools, see [Decrease latency for applications with long boot times using warm pools with managed node groups](warm-pools-managed-node-groups.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

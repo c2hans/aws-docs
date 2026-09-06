@@ -25,7 +25,3 @@ Additional considerations:
 Here is one possible flow to set up billing in CodeCatalyst.
 
 Mary Major is a **Space administrator** for a CodeCatalyst space. Mary works with the AWS administrator for the AWS account that was added to her space in CodeCatalyst when it was created and so defaults as the billing account. Mary can also specify a different account as a billing account for her space. Mary initially set up her subscription to default to the Free tier. Mary knows that hitting the maximum can halt services for the rest of her space on the Free tier, so she periodically reviews usage for her space on the CodeCatalyst console **Billing** tab. Mary views the pricing subscription for the Standard tier, and after the space grows in size, Mary decides to use the CodeCatalyst billing page to change the subscription tier from the Free tier to the Standard tier. Mary works with her AWS administrator to access her AWS invoice and views the charges for usage beyond the Free tier in CodeCatalyst.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

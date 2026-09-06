@@ -35,7 +35,3 @@ Before you use AWS SCT in an offline mode, connect to your source database, load
 1. On the **File** menu, choose **Save project** to save the source database metadata in your project.
 
 1. Choose **Disconnect from the server** to disconnect from your source database. Now you can use AWS SCT in the offline mode.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Schema Conversion Tool User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query SchemaConversionTool` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

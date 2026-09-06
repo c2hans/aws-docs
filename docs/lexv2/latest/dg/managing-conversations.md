@@ -46,7 +46,3 @@ See the following topics to learn how to use Amazon Lex V2 APIs to manage conver
 **Topics**
 + [Conversation context with your Lex V2 bots](conversation-contexts.md)
 + [Understanding Amazon Lex V2 bot sessions](managing-sessions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ For troubleshooting issues with AWS Launch Wizard, see [Troubleshoot AWS Launch 
 For troubleshooting issues with high availability SAP HANA setup on SLES, see [Indepth HANA Cluster Debug Data Collection (PACEMAKER, SAP).](https://www.suse.com/support/kb/doc/?id=000019142)
 
 For troubleshooting issues with high availability SAP HANA setup on RHEL, see [How can I debug the SAPHana and SAPHanaTopology resource agents in a Pacemaker cluster?](https://access.redhat.com/solutions/4191201)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ You must specify the Availability Zones for the output group. For a single-pipel
 If a MediaConnect Router resource has already been created, the Availability Zones you specify must match those of the existing resource. If the MediaConnect Router resource has not been created yet, the resource must be configured to match the Availability Zones you specify here.
 
 You can use a MediaConnect Router input with a MediaConnect Router output to process video in MediaLive (for example, to normalize frame rate) and then pass the video back into MediaConnect Router. By design, when you use MediaConnect Router inputs and outputs, your entire transport workflow is end-to-end encrypted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

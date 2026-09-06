@@ -25,7 +25,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  As opposed to Always-On and On-Demand, Elastic fleets do not require you to manage scaling policies and provision buffer capacity, since the pool of Instances in an Elastic fleet is managed by WorkSpaces Applications.
 
  Amazon WorkSpaces Applications offers multi-session fleets, which allow multiple users to use a single WorkSpaces Applications fleet instance. Depending on the user density you can achieve on a given instance, you may be able to further optimize your WorkSpaces Applications costs compared to a single-session fleet. If you plan to use multi-session fleets, consider resource requirements, instance specifications, and user behavior. For specific guidance, see [Multi-Session Recommendations](https://docs.aws.amazon.com/appstream2/latest/developerguide/multi-session-recs.html) .
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ Use CloudWatch to monitor the health of your cluster in real time.
 + [Working with AWS CloudTrail and AWS CloudHSM](get-api-logs-using-cloudtrail.md)
 + [Working with Amazon CloudWatch Logs and AWS CloudHSM Audit Logs](get-hsm-audit-logs-using-cloudwatch.md)
 + [Getting CloudWatch metrics for AWS CloudHSM](hsm-metrics-cw.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

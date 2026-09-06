@@ -35,7 +35,3 @@ Your Amazon WorkSpaces Thin Client generates and collects data about your intera
 **Need Help?** Visit [Customer Support](https://aws.amazon.com/contact-us/) to reach our support team. This is without prejudice to your right to lodge a complaint under applicable law.
 
 **Data holder:** Amazon Web Services EMEA SARL, 38 Avenue John F. Kennedy, L-1855, Luxembourg
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

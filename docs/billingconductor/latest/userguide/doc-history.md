@@ -23,7 +23,3 @@ The following table describes the documentation for this release of AWS Billing 
 | [Added support for automatic account association](#doc-history) | You can now enable a billing group for automatic account association. For more information, see [Creating billing groups, pricing configurations, and custom line items](https://docs.aws.amazon.com/billingconductor/latest/userguide/creating-abc.html). | July 26, 2023 |
 | [Added CSV download support](#doc-history) | You can now download a CSV file for your billing group margin analysis table. For more information, see [Analyzing your margins per billing group](https://docs.aws.amazon.com/billingconductor/latest/userguide/analyzing-abc.html). | June 6, 2023 |
 | [Initial release](#doc-history) | Initial release of AWS Billing Conductor User Guide and API Reference. | March 16, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing Conductor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query billingconductor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

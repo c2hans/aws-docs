@@ -32,7 +32,3 @@ When using Guard, you typically perform the following steps:
 1. Verify that your rules work as intended by using the Guard `test` command. For more information about unit testing, see [Testing Guard rules](testing-rules.md).
 
 1. Use the Guard `validate` command to validate your JSON- or YAML-formatted data against your rules. For more information, see [Validating input data against Guard rules](validating-rules.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation Guard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cfn-guard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,7 +35,3 @@ We recommend that you set up the asset to have the same pixel ratio as the video
 **Color space**
 
 If you set up the event to [convert the color space](hdr-working-with.md) of the video, Elemental Live will convert the asset in the same way. For example, it will convert the color space to HDR10. To perform this conversion, Elemental Live will assume that the asset color space is SDR.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

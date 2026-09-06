@@ -30,7 +30,3 @@ The Amazon EMR integration with IAM Identity Center provides the following benef
 + Amazon EMR configures and maintains the supported application security with the Kerberos protocol and no commands or scripts required by you.
 + The ability to enforce Amazon S3 prefix-level authorization with Identity Center identities on S3 Access Grants-managed S3 prefixes.
 + The ability to enforce table-level authorization with Identity Center identities on AWS Lake Formation managed AWS Glue tables.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

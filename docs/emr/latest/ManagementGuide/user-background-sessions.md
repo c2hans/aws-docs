@@ -148,7 +148,3 @@ When using user background sessions, a Livy session will continue running until 
 + The user background session is manually revoked by an administrator.
 + The Livy session reaches its idle timeout (default: 8 hours after the last executed statement).
 + The user explicitly stops or restarts the notebook kernel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 + ** Source containment** – Use filtering and routing to prevent access from a certain source.
 + ** Technique and access containment **– Remove access to prevent unauthorized access to the affected resources.
 + ** Destination containment **– Use filtering and routing to prevent access to a target resource.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

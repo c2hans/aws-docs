@@ -16,7 +16,3 @@ SVCS views provide details about queries on both the main and concurrency scalin
 + [STV tables for snapshot data](c_intro_STV_tables.md)
 + [SVCS views for main and concurrency scaling clusters](svcs_views.md)
 + [SVL views for main cluster](svl_views.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ Each entry in `transformations` has the following fields:
 |  `transformation`  | string | The operation to apply (for example, `resize`, `blur`, `smartCrop`, `watermark`). For the full list of operations and their `value` formats, see [Apply transformations using URL query parameters](transformation-filter-reference.md); `smartCrop` and `contentModeration` are detailed below. |
 |  `value`  | varies | The configuration for the operation. The accepted shape depends on `transformation` (for example, a boolean for `flip`, an object for `resize`). |
 |  `condition`  | object (optional) | Applies the transformation only when a request header matches. Contains `field` (the request header name) and `value` (a string, number, or array of either; an array matches if any element matches). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

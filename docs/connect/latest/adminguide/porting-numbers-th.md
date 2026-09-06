@@ -9,7 +9,3 @@ Porting in Thailand differs from other countries. Instead of the number being ab
 + Numbers being ported in to Connect Customer must be from E1 or SIP services only.
 + The E1 or SIP service, along with all associated numbers, must be routed first to the provider network that Connect Customer uses. Connect Customer will help coordinate this. Based on your configuration, this might involve additional charges to your current provider or the Connect Customer provider to support the re-routing.
 + After the E1 or SIP service has ported to the Connect Customer provider, selected numbers from the service can be activated for use on Connect Customer. After they are activated, the numbers will use Connect Customer for both inbound and outbound calling.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

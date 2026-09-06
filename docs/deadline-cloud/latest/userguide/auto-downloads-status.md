@@ -94,7 +94,3 @@ Red, "Output sync failed"
 The last download run failed. Select the indicator to see the failures grouped by reason, along with a **Troubleshoot with AI** button that helps you diagnose the specific failure. For more information, see [Troubleshoot with AI](auto-downloads.md#download-troubleshoot-with-ai).
 
 The column refreshes on its own about every 60 seconds. It also refreshes as soon as you return focus to the monitor window, so clicking away and back pulls the latest download run immediately. You don't need to restart the monitor to pick up a new run. Refreshing rereads what the download command already recorded. If the indicator shows the outputs may be stale, the download command isn't running, and refreshing won't change the column.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

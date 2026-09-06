@@ -68,7 +68,3 @@ The following tag-based condition keys only work with administrative resources i
 | rds:secgrp-tag/${TagKey} | Filters access by the tag attached to a DB security group. | String |
 | rds:snapshot-tag/${TagKey} | Filters access by the tag attached to a DB snapshot. | String |
 | rds:subgrp-tag/${TagKey} | Filters access by the tag attached to a DB subnet group | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

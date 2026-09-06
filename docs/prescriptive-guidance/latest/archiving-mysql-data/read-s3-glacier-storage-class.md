@@ -21,7 +21,3 @@ The batch operation can be invoked both programmatically and on the Amazon S3 co
 You can use an [Amazon S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-inventory.html) report as an input for the batch work. The inventory report is configured for a bucket and can be limited to objects under specific prefixes. It is an automated report and gets generated either weekly or daily in either CSV, ORC, or Parquet format.
 
 For more information about configuring an inventory report, see the [Amazon S3 documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/configure-inventory.html#configure-inventory-console). For information about using Boto3 to create an S3 Batch Operations job, see the [Boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_job).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

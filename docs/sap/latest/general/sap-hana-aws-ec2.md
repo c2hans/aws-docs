@@ -167,7 +167,3 @@ The Amazon EC2 instances in the following table are not certified for production
 | x2iedn.4xlarge | 16 | 512 | 23,625 | Up to 25 | Up to 20,000 | ✗ |
 | x2iedn.8xlarge | 32 | 1,024 | 47,250 | 25 | 20,000 | ✗ |
 | x2iedn.16xlarge | 64 | 2,048 | 94,500 | 50 | 40,000 | ✗ |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

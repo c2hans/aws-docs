@@ -159,7 +159,3 @@ The following limitations and capabilities apply to managed signing:
 + **Cross-region signing is not supported** — Signing profiles must be in the same region as your Amazon ECR registry. You cannot use a signing profile from one region to sign images in a registry located in a different region.
 + **Cross-account signing is supported** — Signing profiles can be in different accounts than your Amazon ECR registry. This enables organizations to centrally manage signing profiles while allowing developers in other accounts to use them. For more information, see [Set up cross-account signing for Signer](https://docs.aws.amazon.com/signer/latest/developerguide/signing-profile-cross-account.html) in the *AWS Signer Developer Guide*.
 + **Signatures cannot be signed** — You cannot sign signatures themselves. Only container images can be signed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

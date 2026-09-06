@@ -56,7 +56,3 @@ Executing this block modifies the minimum and desired capacity settings of your 
 If you’re using an active/active approach, Region switch uses the other configured Region as the source. That is, if a Region is being deactivated, Region switch uses the other active Region as the source to match for the percent to scale.
 
 This block supports both graceful and ungraceful execution modes. You can configure ungraceful execution by specifying the minimum percentage of compute capacity to be matched in the target Region before Region switch proceeds to the next step in the plan.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

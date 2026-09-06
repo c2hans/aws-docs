@@ -180,7 +180,3 @@ In addition to multi-tenancy data storage, you can also use the ABAC workflow to
 SageMaker AI can only read tags provided in the training job request and does not add any tags to resources on your behalf.
 
 ABAC for SageMaker training is compatible with SageMaker AI managed warm pools. To use ABAC with warm pools, matching training jobs must have identical session tags. For more information, see [Matching training jobs](train-warm-pools.md#train-warm-pools-matching-criteria).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

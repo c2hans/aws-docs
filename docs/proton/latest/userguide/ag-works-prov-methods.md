@@ -221,7 +221,3 @@ Developers creating services use the same process regardless of provisioning met
 
 ------
 + *Deletion of self-managed provisioned resources* – Terraform modules may include configuration elements that are necessary for Terraform operation, in addition to resource definitions. Therefore, AWS Proton can't delete all the Terraform files for an environment or service instance. Instead, AWS Proton marks the files for deletion and updated a flag in the PR metadata. Your automation can read that flag and use it to trigger a terraform destroy command.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

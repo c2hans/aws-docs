@@ -99,7 +99,3 @@ Instances with 1 or more GPUs
 | ml.g5.16xlarge | Accelerated computing | No | 1 | 64 | 256 | 24 | 1 x 1900 NVMe SSD |
 | ml.g5.24xlarge | Accelerated computing | No | 4 | 96 | 384 | 96 | 1 x 3800 NVMe SSD |
 | ml.g5.48xlarge | Accelerated computing | No | 8 | 192 | 768 | 192 | 2 x 3800 NVMe SSD |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

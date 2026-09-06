@@ -13,7 +13,3 @@ Enforcement mode defines how the gateway applies policy decisions. The policy en
 <a name="policy-enforcement-modes-security"></a>
 
 If you have the `bedrock-agentcore:UpdateGateway` permission, you can change a Gateway’s `policyEngineConfiguration.mode` from `ENFORCE` to `LOG_ONLY`. In `LOG_ONLY` mode, all policies are evaluated but not enforced, and every tool call succeeds regardless of forbid policies. The same permission can set `policyEngineConfiguration` to `null`, which removes the policy engine entirely. No separate action or condition key protects the `mode` field beyond `bedrock-agentcore:UpdateGateway`, so grant this permission only to trusted principals.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

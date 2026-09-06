@@ -16,6 +16,7 @@ The following actions are supported:
 +  [DeleteEnvironmentConnector](API_DeleteEnvironmentConnector.md)
 +  [DeleteEnvironmentHost](API_DeleteEnvironmentHost.md)
 +  [DisassociateEipFromVlan](API_DisassociateEipFromVlan.md)
++  [GetAccountSettings](API_GetAccountSettings.md)
 +  [GetDepotUrl](API_GetDepotUrl.md)
 +  [GetEnvironment](API_GetEnvironment.md)
 +  [GetVersions](API_GetVersions.md)
@@ -25,10 +26,7 @@ The following actions are supported:
 +  [ListEnvironmentVlans](API_ListEnvironmentVlans.md)
 +  [ListTagsForResource](API_ListTagsForResource.md)
 +  [ListVmEntitlements](API_ListVmEntitlements.md)
++  [PutAccountSettings](API_PutAccountSettings.md)
 +  [TagResource](API_TagResource.md)
 +  [UntagResource](API_UntagResource.md)
 +  [UpdateEnvironmentConnector](API_UpdateEnvironmentConnector.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

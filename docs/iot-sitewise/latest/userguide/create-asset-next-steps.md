@@ -11,7 +11,3 @@ Finish configuring your asset with the following optional actions:
 + [Manage data streams for AWS IoT SiteWise](manage-data-streams.md) if your asset has measurement properties.
 + [Update attribute values](update-attribute-values.md) if your asset has unique attribute values.
 + [Associate and disassociate assets](add-associated-assets.md) if your asset is a parent asset.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

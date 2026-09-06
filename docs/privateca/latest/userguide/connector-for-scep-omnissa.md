@@ -189,7 +189,3 @@ For detailed Connector for SCEP monitoring in AWS, see [**Monitor Connector for 
 + For personal devices, make sure cleanup removes all profiles and certificates.
 
 For information about how to configure Omnissa Workspace ONE UEM and CA integration using a SCEP connector, see the [SCEP in Omnissa Workspace ONE](https://docs.omnissa.com/bundle/CertificateAuthorityIntegrationsV2302/page/SCEP.html#:~:text=The%20exception%20to%20this%20requirement,Enable%20or%20disable%20the%20proxy.) documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

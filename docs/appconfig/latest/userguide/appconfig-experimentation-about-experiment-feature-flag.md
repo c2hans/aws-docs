@@ -25,7 +25,3 @@ Each treatment should map to a distinct feature flag configuration. For example,
 + A third flag value that defines an alternative add-to-cart button experience, perhaps using a different button color or font
 
 After you've selected the feature flag and configured different flag values for treatments, configure your application to retrieve the flag data from AWS AppConfig Agent running on your compute environment. For more information, see [Using AWS AppConfig Agent to read a specific feature flag](appconfig-code-samples-agent-read-feature-flag.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

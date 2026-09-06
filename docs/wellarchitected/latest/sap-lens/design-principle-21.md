@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/design-p
 +  SAP Lens [Cost Optimization]: [Best Practice 17.3 – Understand business requirements to make cost-optimized design decisions per environment](best-practice-17-3.md)
 +  Well-Architected Framework [Sustainability]: [Use the minimum amount of hardware to meet your needs](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/use-the-minimum-amount-of-hardware-to-meet-your-needs.html)
 +  Well-Architected Framework [Sustainability]: [Development and deployment process](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/development-and-deployment-process.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,7 +64,3 @@ for line in content.strip().split('\n'):
 Scores are normalized; higher is better. The service normalizes all evaluation scores regardless of the original grading scale you defined in your evaluation method.
 
 You can always see the raw LLM-as-a-judge output in your S3 bucket and on the console results page in the detailed results tab. Due to the nature of merging custom LLMJ prompts with the service-provided default prompt, the numerical score may not exactly match the discrete steps in your custom LLMJ rubric. If you want binary evaluation results or exact matching, it may be better to use a Lambda evaluator.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

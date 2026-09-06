@@ -23,7 +23,3 @@ Following, you can find Amazon EBS volume quotas and differences between Amazon 
 + Volumes can be from 1 GB to 10 TB in size.
 + Up to 10 Amazon EBS volumes can be attached to a single EC2-compatible instance.
 + There is no formal limit to the number of Amazon EBS volumes you can have on your AWS Snowball Edge device. However, total Amazon EBS volume capacity is limited by the available space on your device.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

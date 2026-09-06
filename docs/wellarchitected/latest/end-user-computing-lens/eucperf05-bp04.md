@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 <a name="implementation-guidance-13"></a>
 
  Use the local instance store on instances that support it to optimize the performance of end user applications. When doing so, consider that the instance store is not backed up and should only be used to satisfy temporary storage requirements. See [Local Instance Store for GPU-enabled Bundles](https://aws.amazon.com/workspaces/features/#Local_Instance_Store_for_GPU-enabled_Bundles) for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

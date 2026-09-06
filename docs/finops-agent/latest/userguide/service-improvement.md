@@ -16,7 +16,3 @@ AWS may use certain content from AWS FinOps Agent for AWS FinOps Agent service i
 <a name="service-improvement-opt-out"></a>
 
 You can opt out of having your content used to develop or improve the quality of AWS FinOps Agent (and other covered AWS AI services) by configuring an AWS Organizations AI services opt-out policy. The opt-out policy applies to all current and future supported AWS AI services. To opt out, see [AI services opt-out policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_ai-opt-out.html) in the *AWS Organizations User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS FinOps Agent (preview). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finops-agent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

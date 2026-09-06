@@ -50,7 +50,3 @@ The table also provides the following information for each hyperparameter:
   <tr><td><code>item_metadata_hidden_dim</code></td><td>The number of hidden variables Amazon Personalize uses to model item metadata. To use <code>item_metadata_hidden_dim</code>, you must use HPO and provide minimum and maximum range values. Amazon Personalize uses HPO to find the best value within the range you specify. Specify a greater maximum value when you have a large Item interactions dataset. Using a greater maximum requires more time to process. <br /> To use HPO, set <code>performHPO</code> to <code>true</code> when you call the <a href="API_CreateSolution.md">CreateSolution</a> operation.<br />Default value: 100<br />Range: [30, 200]<br />Value type: Integer<br />HPO tunable: Yes</td></tr>
 </tbody>
 </table>
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ console clusters curl source /_snapshot/migration-repo/_verify -XPOST
 ```
 
 A successful `_verify` returns the list of source nodes that can write to the repository. If it fails, confirm the source domain has an IAM role with `s3:PutObject` and `s3:GetObject` on the bucket and that the bucket is in the migration Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

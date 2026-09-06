@@ -60,7 +60,3 @@ You can use the following variables to customize HTTP API access logs. To learn 
 | $context.routeKey | The route key of the API request, for example `/pets`. |
 | $context.stage | The deployment stage of the API request (for example, `beta` or `prod`). |
 | $context.status | The method response status. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

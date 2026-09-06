@@ -16,7 +16,3 @@ The way errors are communicated back to the client varies depending on the type 
 
 RAI output deflection errors occur when an the output is generated but it is determined to be misaligned with the AWS Responsible AI policy. When this occurs, an exception is not used. Instead, a successful response is returned, and its structure contains an `error` field which is a string with one of the following values:
 + **Output text** validation message: "The generated text has been blocked by our content filters."
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

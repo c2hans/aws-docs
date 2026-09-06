@@ -29,7 +29,3 @@ On the CloudFormation console, delete the GuardDuty stack set from the managemen
 + AWS Service Catalog
   + AWS-Landing-Zone-Account-Vending-Machine provisioned products
     + This step depends on whether you are ready to delete all the related stack sets, such as PrimaryVPC. Take extra caution when deleting the AVM-provisioned products, because all the AWS CloudFormation stack sets associated with the AVM, based on the AWS Landing Zone manifest file, will be deleted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -62,7 +62,3 @@ The following tables list the flow blocks that you can use to specify how Connec
 | --- | --- | --- |
 | Disconnect/Hangup | Supported | Disconnects the contact and end the audio stream session. |
 | End Flow | Supported | Ends the current flow without disconnecting the contact. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

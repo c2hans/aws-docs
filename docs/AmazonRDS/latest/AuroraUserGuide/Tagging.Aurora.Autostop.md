@@ -97,7 +97,3 @@ arn:aws:rds:us-east-1:123456789:cluster:pg2-cluster
 
 **Tip**
 You can use assigning tags and finding clusters that have those tags to reduce costs in other ways. For example, take the scenario with Aurora DB clusters used for development and testing. Here, you might designate some clusters to be deleted at the end of each day, or to have only their reader DB instances deleted. Or you might designate some to have their DB instances changed to small DB instance classes during times of expected low usage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

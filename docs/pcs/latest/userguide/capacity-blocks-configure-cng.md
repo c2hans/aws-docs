@@ -33,7 +33,3 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/capacity-blocks-con
 
 **Important**
 You can't change the instance type of a compute node group when you update it. You can only use a Capacity Block with the same instance type as the compute node group. If you want to use a Capacity Block with a different instance type, you must create a new compute node group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ To deliver data to Amazon S3 table buckets, complete the following prerequisites
   You configure this IAM role when you create a Firehose stream. For more information, see [Grant Firehose access to Amazon S3 Tables](https://docs.aws.amazon.com/firehose/latest/dev/controlling-access.html#using-s3-tables).
 
 For step-by-step integration, refer to the blog [Build a data lake for streaming data with Amazon S3 Tables and Amazon Data Firehose](https://aws.amazon.com/blogs/storage/build-a-data-lake-for-streaming-data-with-amazon-s3-tables-and-amazon-data-firehose/). For additional information, also refer to [Using Amazon S3 Tables with AWS analytics services](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-integrating-aws.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

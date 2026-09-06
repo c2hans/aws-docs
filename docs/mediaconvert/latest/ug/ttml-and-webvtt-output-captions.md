@@ -55,7 +55,3 @@ For all other output groups, IMSC and TTML files are raw.
 1. In the **Output settings** section on the right, choose **Container settings**, and then enable **DASH container settings**.
 
 1. For **Captions container**, keep the default **Raw** or choose **Fragmented MPEG-4**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

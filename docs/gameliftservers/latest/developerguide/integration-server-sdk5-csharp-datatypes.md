@@ -44,7 +44,7 @@ Use the Amazon GameLift Servers C\# server SDK 5.x reference to integrate your m
 ## LogParameters
 <a name="integration-server-sdk5-csharp-dataypes-log"></a>
 
-Use this data type to identify which files generated during a game session that you want the game server to upload to Amazon GameLift Servers after the game session ends. The game server communicates `LogParameters to` Amazon GameLift Servers in a [ProcessReady()](integration-server-sdk5-csharp-actions.md#integration-server-sdk5-csharp-processready) call.
+Use this data type to identify files generated during a game session that you want the game server to upload to Amazon GameLift Servers after the game session ends. The game server communicates `LogParameters to` Amazon GameLift Servers in a [ProcessReady()](integration-server-sdk5-csharp-actions.md#integration-server-sdk5-csharp-processready) call.
 
 |  |  |
 | --- |--- |
@@ -106,7 +106,7 @@ Details of a game session.
 | Port | The port number for the game session. To connect to an Amazon GameLift Servers game server, an app needs both the IP address and port number.<br />**Type:** `Integer`<br />**Required**: No |
 | IpAddress | The IP address of the game session. To connect to an Amazon GameLift Servers game server, an app needs both the IP address and port number.<br />**Type:** `String`<br />**Required**: No |
 | GameSessionData | A set of custom game session properties, formatted as a single string value. <br />**Type:** `String`<br />**Required**: No |
-| MatchmakerData | The information about the matchmaking process that was used to create the game session, in JSON syntax, formatted as a string. In addition the matchmaking configuration used, it contains data on all players assigned to the match, including player attributes and team assignments.<br />**Type:** `String`<br />**Required**: No |
+| MatchmakerData | The information about the matchmaking process that was used to create the game session, in JSON syntax, formatted as a string. In addition to the matchmaking configuration used, it contains data on all players assigned to the match, including player attributes and team assignments.<br />**Type:** `String`<br />**Required**: No |
 | GameProperties | A set of custom properties for a game session, formatted as key:value pairs. These properties are passed with a request to start a new game session.<br />**Type:** `Dictionary<string, string>`<br />**Required**: No |
 | DnsName | The DNS identifier assigned to the instance that's running the game session. Values have the following format:+  TLS-enabled fleets: `<unique identifier>.<region identifier>.amazongamelift.com`.  <br />+  Non-TLS-enabled fleets: `ec2-<unique identifier>.compute.amazonaws.com`.  <br />When connecting to a game session that's running on a TLS-enabled fleet, you must use the DNS name, not the IP address.<br />**Type:** `String`<br />**Required**: No |
 
@@ -154,7 +154,7 @@ This data type is used to specify which player session(s) to retrieve. It can be
 
 | Properties | **Description** |
 | --- | --- |
-| GameSessionId | The unique game session identifier. Use this parameter to request all player sessions for the specified game session. Game session ID format is as follows: `arn:aws:gamelift:<region>::gamesession/fleet-<fleet ID>/<ID string>`. The value of <ID string> is either a custom ID string (if one was specified when the game session was created) a generated string. <br />**Type:** `String`<br />**Required**: No |
+| GameSessionId | The unique game session identifier. Use this parameter to request all player sessions for the specified game session. Game session ID format is as follows: `arn:aws:gamelift:<region>::gamesession/fleet-<fleet ID>/<ID string>`. The value of <ID string> is either a custom ID string (if one was specified when the game session was created) or a generated string. <br />**Type:** `String`<br />**Required**: No |
 | PlayerSessionId | The unique identifier for a player session.<br />**Type:** `String`<br />**Required**: No |
 | PlayerId | The unique identifier for a player. See [Generate player IDs](player-sessions-player-identifiers.md).<br />**Type:** `String`<br />**Required**: No |
 | PlayerSessionStatusFilter | The player session status to filter results on. Possible player session statuses include the following:+  RESERVED – The player session request has been received, but the player has not yet connected to the server process and/or been validated. <br />+  ACTIVE – The player has been validated by the server process and is currently connected. <br />+  COMPLETED – The player connection has been dropped. <br />+  TIMEDOUT – A player session request was received, but the player did not connect and/or was not validated within the time-out limit (60 seconds). <br />**Type:** `String`<br />**Required**: No |
@@ -447,7 +447,3 @@ String value indicating whether the game session accepts new players. Valid valu
 The type of container group that a container belongs to. Valid values include:
 + `GAME_SERVER` – A game server replica container group. An instance can have multiple game server container groups.
 + `PER_INSTANCE` – A per-instance daemon container group. An instance has exactly one per-instance container group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

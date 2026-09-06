@@ -104,7 +104,3 @@ Choosing the right service depends on the nature of your AI workload:
 + Use Amazon Bedrock when you need semantic flexibility, goal-driven workflows, and rapid iteration with foundation models.
 + Use SageMaker Serverless Inference when you have proprietary models, structured inputs, or need full control over training and deployment.
 + Use SageMaker JumpStart to choose from hundreds of [built-in algorithms](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html) with pretrained models from model hubs, including TensorFlow Hub, PyTorch Hub, Hugging Face, and MxNet GluonCV.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

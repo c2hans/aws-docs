@@ -27,7 +27,3 @@ When you view forecasted AHT aggregated across multiple intervals or queues (for
 The aggregated forecasted AHT uses contact volume as the weight. The formula is: `Aggregated AHT = Sum(AHT × weight) / Sum(weight)`, where the weight is the total forecasted contact volume for each queue, channel, and interval.
 
 A minimum weight of 1.0 applies to every interval or queue. Even if a queue or interval has a forecasted contact volume of zero, it still contributes to the aggregate forecasted AHT. This minimum weight ensures that every interval or queue in the forecast group is represented in the aggregated forecasted AHT. It also maintains mathematical validity when forecasted volume is zero. When all intervals have a forecasted volume of zero, each interval receives equal weight, so the aggregated AHT equals the arithmetic average of the individual AHT values.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

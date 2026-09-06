@@ -34,7 +34,3 @@ The following diagram shows some of the options available for using TLS in an Am
    You can provision multiple pods with certificates to allow them to communicate with one another. The following scenarios are possible:
    + Provisioning with Kubernetes generated self-signed certificates. This secures communications between pods, but self-signed certificates don't satisfy HIPAA or FIPS requirements.
    + Provisioning with certificates signed by AWS Private CA. This requires installing both `cert-manager` and `aws-privateca-issuer`. Kubernetes can then install signed mTLS certificates on the pods as needed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -126,7 +126,3 @@ You cannot promote an additional Region to be the primary or demote the primary 
  **Considerations:**
 +  **Global resource identifiers across enabled Regions** - Users, groups, permission sets, and other resources have the same identifiers across the enabled Regions.
 +  **Replication doesn't affect provisioned IAM roles** - Existing IAM roles provisioned from permission set assignments are used during account sign-in from any enabled Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

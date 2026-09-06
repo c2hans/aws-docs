@@ -68,7 +68,3 @@ You can configure Lightsail to return the same response to DNS queries for all s
 For more information, see the following topics:
 + [Create a DNS zone to manage your domain’s DNS records](lightsail-how-to-create-dns-entry.md)
 + [DNS](understanding-dns-in-amazon-lightsail.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -2,23 +2,23 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/folders-scaled.html
 ---
 
-# Creating Quick Sight scaled folders with the Quick Sight APIs
+# Creating Quick scaled folders with the Quick APIs
 <a name="folders-scaled"></a>
 
-You can use the Amazon Quick Sight APIs to create special scaled folders that can be shared with up to 3000 namespaces. Each namespace that is added to a folder can contain up to 100 principals. A *principal* is a user or a group of users. After you create a scaled folder and add the principals that you want, any QuickSight asset can be added to the folder. It can then be shared to every principal in the namespaces that the folder principals are assigned to. This streamlines the process to share Quick Sight assets with thousands of users.
+You can use the Amazon Quick APIs to create special scaled folders that can be shared with up to 3000 namespaces. Each namespace that is added to a folder can contain up to 100 principals. A *principal* is a user or a group of users. After you create a scaled folder and add the principals that you want, any QuickSight asset can be added to the folder. It can then be shared to every principal in the namespaces that the folder principals are assigned to. This streamlines the process to share Quick assets with thousands of users.
 
-Scaled folders can only be created with the Quick Sight APIs. When you create a scaled folder, you can share the folder with up to 100 principals that are in the same namespace. You can add principals that belong to a different namespace with an `UpdateFolderPermissions` API call. After the folder is created, you can add and remove assets from the folder with the Quick Sight APIs or the Quick console.
+Scaled folders can only be created with the Quick APIs. When you create a scaled folder, you can share the folder with up to 100 principals that are in the same namespace. You can add principals that belong to a different namespace with an `UpdateFolderPermissions` API call. After the folder is created, you can add and remove assets from the folder with the Quick APIs or the Quick console.
 
-Each Amazon Quick Sight account holds up 100 scaled folders. You can add up to 100 assets to a scaled folder. If you want to share a scaled folder with more than 3000 namespaces, contact [AWS support](https://aws.amazon.com/contact-us/).
+Each Amazon Quick account holds up 100 scaled folders. You can add up to 100 assets to a scaled folder. If you want to share a scaled folder with more than 3000 namespaces, contact [AWS support](https://aws.amazon.com/contact-us/).
 
 ## Examples
 <a name="folders-scaled-examples"></a>
 
-The following examples show how to create a scaled folder with the Quick Sight APIs.
+The following examples show how to create a scaled folder with the Quick APIs.
 
 **Prerequisites**
 
-Before you begin, verify that you have an AWS Identity and Access Management role that grants the API user access to call the Quick Sight API operations. The following example shows an IAM policy that you can add to an existing IAM role to create, delete, or modify a scaled folder. With the sample policy, users can add dashboards, analyses, and datasets to a scaled folder.
+Before you begin, verify that you have an AWS Identity and Access Management role that grants the API user access to call the Quick API operations. The following example shows an IAM policy that you can add to an existing IAM role to create, delete, or modify a scaled folder. With the sample policy, users can add dashboards, analyses, and datasets to a scaled folder.
 
 ------
 #### [ JSON ]
@@ -118,7 +118,7 @@ aws quicksight describe-folder-resolved-permissions \
 --namespace "{{default}}"
 ```
 
-After you validate the permissions of the subfolder, add the Quick Sight asset that you want to share to the folder. After you add the asset to the subfolder, the asset is shared with every principal that the subfolder is shared with. The following example adds a dashboard to a subfolder.
+After you validate the permissions of the subfolder, add the Quick asset that you want to share to the folder. After you add the asset to the subfolder, the asset is shared with every principal that the subfolder is shared with. The following example adds a dashboard to a subfolder.
 
 ```
 aws quicksight create-folder-membership \
@@ -128,7 +128,3 @@ aws quicksight create-folder-membership \
 --member-type "{{DASHBOARD}}" \
 --region "{{us-east-1}}"
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

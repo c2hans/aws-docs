@@ -183,7 +183,3 @@ In addition to matching the current functionality supported by DBR/DBR-RT, AWS C
 + AWS CUR has the NormalizedUsageAmount and quantity. The DBR / DBR-RT do not have columns representing this.
 + AWS CUR UsageType and Operation are not transformed for the DiscountedUsage lineitem. The DBR / DBR-RT replaces these values with the RI Fee line item.
 + AWS CUR LineItemDescription is not transformed for the DiscountedUsage line item. In DBR / DBR-RT, which replaces with the RI Fee line item description and appends the DiscountedUsage line item Usage Type to the end of the string i.e. “USD 0.10 hourly fee per Linux/UNIX (Amazon VPC), c3:8xlarge; UsageType: BoxUsage:c3.large”
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

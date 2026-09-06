@@ -39,7 +39,3 @@ If you have disabled IAM Identity Center in your landing zone settings, the SSO 
 1. Your account is now being provisioned. It can take a few minutes to complete. You can refresh the page to update the displayed status information.
 **Note**
 Up to five accounts can be provisioned at a time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

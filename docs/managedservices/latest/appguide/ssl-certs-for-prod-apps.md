@@ -18,7 +18,3 @@ What SSL certificates will your servers need so your applications (LoB and produ
 As an example, for each of the instances listed above you might need the following certificates:
 
 WAF (cert 1) - > ELB-Ext (cert 2) - > ARP (cert 3) - > ELB-Int (cert 4) -> Website (cert 5) - > ELB-Int (cert 6) -> Web service (cert 7).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

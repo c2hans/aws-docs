@@ -247,7 +247,3 @@ This is usually caused by an incorrect configuration of AWS Network Firewall rul
 1.  Restart event bridge that was stopped in step 1.
 
  For detailed troubleshooting steps for each AWS service used in this solution, refer to [Troubleshooting resources](https://docs.aws.amazon.com/awssupport/latest/user/troubleshooting.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Object and Rule Extensions for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

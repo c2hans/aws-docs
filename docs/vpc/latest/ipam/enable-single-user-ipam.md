@@ -17,7 +17,3 @@ IPAM uses the service-linked role to monitor and store metrics for CIDRs associa
 If you use IPAM with a single AWS account, you must ensure that the AWS account you use to create the IPAM uses a IAM role with a policy attached to it that permits the `iam:CreateServiceLinkedRole` action. When you create the IPAM, you automatically create the AWSServiceRoleForIPAM service-linked role. For more information on managing IAM policies, see [Editing IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html) in the *IAM User Guide*.
 
 Once the single AWS account has permission to create the IPAM service-linked role, go to [Create an IPAM](create-ipam.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

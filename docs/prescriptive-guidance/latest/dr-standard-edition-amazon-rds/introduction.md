@@ -17,7 +17,3 @@ This guide focuses on the DR options for standard editions of Oracle and Microso
 Standard editions of Oracle and SQL Server database engines are widely adopted by customers for their known cost effectiveness and basic use cases. Compared with enterprise editions, standard editions offer the minimal features that are essential to run basic database workloads. If you are managing your workloads with the available limited features in standard editions, you might prefer this for its affordable license costs. If you are migrating your database workloads to the cloud, this is a good time to evaluate whether you can fit your use cases to standard edition versions and reduce costs.
 
 These factors have significantly increased the scope of standard edition database workloads in the cloud and the need for disaster recovery solutions across AWS Regions to increase resiliency.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

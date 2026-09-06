@@ -13,7 +13,3 @@ You can use password policies, features like multi-factor authentication (MFA), 
 + [Enhance your AWS Managed Microsoft AD network security configuration>](ms_ad_network_security.md) by modifying AWS Security Group to meet your environment needs.
 + [Edit your AWS Managed Microsoft AD directory security settings](ms_ad_directory_settings.md) like Certificate Base Authentication, Secure Channel Cipher and Protocol to meet your needs.
 + [Set up AWS Private Certificate Authority Connector for AD](ms_ad_pca_connector.md) so you can issue and manage certificates for your AWS Managed Microsoft AD with AWS Private CA.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

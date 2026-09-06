@@ -63,7 +63,3 @@ Test how your system responds to failover events. Use the Neptune API to [force 
 Design your clients for reliability. Test their behavior during failover events. Implement retry logic in your client with exponential backoff logic. Code examples that implement this logic can be found in the documentation under the [AWS Lambda function examples for Amazon Neptune](https://docs.aws.amazon.com/neptune/latest/userguide/lambda-functions-examples.html).
 
 Consider using [AWS Backup](https://aws.amazon.com/blogs/storage/centralizing-data-protection-and-compliance-for-amazon-neptune-with-aws-backup/) if you have a common set of backup requirements you apply across multiple database engines.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

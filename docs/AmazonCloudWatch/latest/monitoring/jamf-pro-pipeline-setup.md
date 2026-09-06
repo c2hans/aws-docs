@@ -30,7 +30,3 @@ The OAuth2 Client Secret generated in the Jamf Pro Console. Stored in AWS Secret
 
 **Note**
 The `client_id` and `client_secret` values are retrieved from AWS Secrets Manager. These credentials can be generated in the Jamf Pro Console under Settings > System > API Roles and Clients. The OAuth2 token is valid for 20 minutes and is automatically refreshed by the pipeline.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

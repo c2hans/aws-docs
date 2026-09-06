@@ -395,7 +395,3 @@ The following table describes the FS supported security policies that support ea
 | **OpenSSL** – ECDHE-RSA-AES256-SHA384<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_256\_CBC\_SHA384 |  + ELBSecurityPolicy-FS-1-2-Res-2019-08<br />+ ELBSecurityPolicy-FS-1-2-2019-08<br />+ ELBSecurityPolicy-FS-1-1-2019-08<br />+ ELBSecurityPolicy-FS-2018-06  | c028 |
 | **OpenSSL** – ECDHE-ECDSA-AES256-SHA<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_CBC\_SHA |  + ELBSecurityPolicy-FS-1-2-2019-08<br />+ ELBSecurityPolicy-FS-1-1-2019-08<br />+ ELBSecurityPolicy-FS-2018-06  | c00a |
 | **OpenSSL** – ECDHE-RSA-AES256-SHA<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_256\_CBC\_SHA |  + ELBSecurityPolicy-FS-1-2-2019-08<br />+ ELBSecurityPolicy-FS-1-1-2019-08<br />+ ELBSecurityPolicy-FS-2018-06  | c014 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

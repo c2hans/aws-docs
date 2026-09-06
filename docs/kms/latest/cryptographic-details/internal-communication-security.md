@@ -58,7 +58,3 @@ The process begins with the service host recognition that it requires a session 
 1. The service host verifies the signature on the received keys using its current domain token. The service host then completes the ECDH key exchange according to [Recommendation for Pair-Wise Key Establishment Schemes Using Discrete Logarithm Cryptography (Revised)](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Ar2.pdf). It next decrypts the ESK to obtain the session key SK.
 
 During the validity period in the *EKT*, the service host can use the negotiated session key *SK* to send envelope-encrypted commands to the HSM. Every service-host-initiated command over this authenticated session includes the *EKT*. The HSM responds using the same negotiated session key SK.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

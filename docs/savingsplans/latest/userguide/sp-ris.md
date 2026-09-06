@@ -33,7 +33,3 @@ Savings Plans prices for instances running SUSE Linux Enterprise Server (SLES) a
 Savings Plans prices do not change based on the amount of hourly commitment.
 Savings Plans doesn't apply to spot usage or usage covered by RIs.
 Savings Plans offer lower prices compared to On-Demand pricing in exchange for a commitment, and can't be cancelled during the term.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

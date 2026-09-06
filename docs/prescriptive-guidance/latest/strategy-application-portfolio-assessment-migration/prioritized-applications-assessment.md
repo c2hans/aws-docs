@@ -45,7 +45,3 @@ Depending on your current level of cloud adoption, a complete design might not b
 + Consult [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/) and [security best practices](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/).
 + Consult the [AWS Pricing Calculator](https://calculator.aws/) to estimate the cost for your architecture solution.
 + The sooner migrations are started the sooner data gaps will become clearer. Plan to migrate the prioritized applications while performing the next stage of portfolio assessment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

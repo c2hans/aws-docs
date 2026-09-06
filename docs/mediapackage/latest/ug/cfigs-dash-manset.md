@@ -46,7 +46,3 @@ Multiple periods are required if you use AWS Elemental MediaTailor for personali
    +  Select **Manifest** to use SCTE-35 markers, formatted using SCTE-35 Enhanced syntax (`#EXT-OATCLS-SCTE35` tags), from input HLS child manifests. SCTE-35 Elemental and SCTE-35 Daterange syntaxes are not supported.
 
 1. (Optional) Select **Include encoder configuration in segments** for MediaPackage to place your encoder's Sequence Parameter Set (SPS), Picture Parameter Set (PPS), and Video Parameter Set (VPS) metadata in every video segment instead of in the init fragment. This lets you use different SPS/PPS/VPS settings for your assets during content playback.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

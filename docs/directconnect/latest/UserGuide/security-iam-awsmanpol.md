@@ -43,7 +43,3 @@ View details about updates to AWS managed policies for Direct Connect since this
 | --- | --- | --- |
 | [AWSDirectConnectServiceRolePolicy](#security-iam-awsmanpol-AWSDirectConnectServiceRolePolicy) - New policy | To support MAC Security, the AWSServiceRoleForDirectConnect service-linked role was added. | March 31, 2021 |
 | Direct Connect started tracking changes | Direct Connect started tracking changes to its AWS managed policies. | March 31, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ Adding the crossdomain.xml file to your bucket allows any Adobe Flash Player to 
 ```
 
 Some versions of the Adobe Flash Player do not properly handle HTTP responses that have an empty body. To configure POST to return a response that does not have an empty body, set `success_action_status` to 201. Amazon S3 will then return an XML document with a 201 status code. For information about the content of the XML document, see [POST Object](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOST.html). For information about form fields, see [HTML form fields](HTTPPOSTForms.md#HTTPPOSTFormFields).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

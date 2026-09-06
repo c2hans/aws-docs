@@ -58,7 +58,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpr
 1. If you are serving your website via the CloudFront URL, enter the distribution domain name in the relevant box. Otherwise, enter one or more CNAMEs for your custom domain name(s).
 
 1.  Finally, export the media library and upload the wp-includes, theme files, and custom files to Amazon S3 using the W3TC plugin. These upload functions are available in the **General** section of the **CDN** configuration page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

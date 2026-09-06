@@ -42,7 +42,3 @@ The following diagram illustrates multiple Availability Zones in an AWS Region.
 ![A Region three Availability Zones.](http://docs.aws.amazon.com/global-infrastructure/latest/regions/images/availability-zones.png)
 
 For more information, see [Availability Zones](aws-availability-zones.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-infrastructure` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

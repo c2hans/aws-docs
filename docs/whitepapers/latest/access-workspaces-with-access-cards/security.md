@@ -36,7 +36,3 @@ To comply with the [Federal Risk and Authorization Management Program (FedRAMP)]
 <a name="security-groups"></a>
 
 Using the AWS Console or CLI, create Security Groups that allow for communication to and from your WorkSpaces interfaces. Security Groups should include all ports and protocols required by the Amazon WorkSpaces service, as well as ports and protocols required by Active Directory between domain controllers and domain members. For details about WorkSpaces ports and protocols , see [IP Address and Port Requirements for Amazon WorkSpace](https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

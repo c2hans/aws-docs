@@ -19,7 +19,3 @@ HealthOmics tries to provide a consistent implementation of call caching across 
 + CWL
   + Constant outputs from tasks aren't explicitly visible from the manifests. HealthOmics caches constant outputs as intermediate files.
   + You can control caching for individual tasks by using the [WorkReuse](https://www.commonwl.org/v1.1/Workflow.html#WorkReuse) feature.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

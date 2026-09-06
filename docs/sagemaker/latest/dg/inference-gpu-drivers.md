@@ -10,27 +10,28 @@ SageMaker AI Model Deployment upgrades GPU drivers on the ML instances for Real-
 ## Current versions and supported instance families
 <a name="inference-gpu-drivers-versions"></a>
 
-Amazon SageMaker AI Inference supports the following drivers and instance families:
+The following table lists the GPU drivers and instance families that Amazon SageMaker AI Inference supports. For Real-time, Batch, and Asynchronous Inference services, an AMI override is an explicit AMI version specified in the inference endpoint or batch transform job configuration.
+
+For inference endpoints, set the `InferenceAmiVersion` parameter on the applicable `ProductionVariant` when calling [CreateEndpointConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) API. For batch transform jobs, set the `TransformAmiVersion` parameter when calling [CreateTransformJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTransformJob.html) API. The compatible instance types column identifies additional instance families that support this AMI version. SageMaker AI does not automatically apply the AMI override.
 
 - **Real-time**
   - **GPU:** NVIDIA
-  - **Driver version:** 470 / **CUDA version:** CUDA 11.4 / **Instance types:** ml.p2.\*, ml.p3.\*, ml.p4d.\*, ml.p4de.\*, ml.g4dn.\*, ml.g5.\*
-  - **Driver version:** 535 / **CUDA version:** CUDA 12.2 / **Instance types:** ml.p5.\*, ml.g6.\*
-  - **Driver version:** 550 / **CUDA version:** CUDA 12.4 / **Instance types:** ml.p5e.\*, ml.p5en.\*
-  - **Driver version:** 580 / **CUDA version:** CUDA 13.0 / **Instance types:** ml.p6.\*, ml.g7e.\*
+  - **Driver version:** 470 / **CUDA version:** CUDA 11.4 / **AMI version:**  / **Instance types (default):** ml.p4d.\*, ml.p4de.\*, ml.g4dn.\*, ml.g5.\* / **Compatible instance types with AMI version overrides:**
+  - **Driver version:** 535 / **CUDA version:** CUDA 12.2 / **AMI version:** al2-ami-sagemaker-inference-gpu-2, al2-ami-sagemaker-inference-gpu-2-1 / **Instance types (default):** ml.p5.\*, ml.g6.\*, ml.g6e.\* / **Compatible instance types with AMI version overrides:** ml.p4d.\*, ml.p4de.\*, ml.g4dn.\*, ml.g5.\*
+  - **Driver version:** 550 / **CUDA version:** CUDA 12.4 / **AMI version:** al2-ami-sagemaker-inference-gpu-3-1 / **Instance types (default):** ml.p5e.\*, ml.p5en.\* / **Compatible instance types with AMI version overrides:** ml.p4d.\*, ml.p4de.\*, ml.p5.\*, ml.g4dn.\*, ml.g5.\*, ml.g6.\*, ml.g6e.\*
+  - **Driver version:** 580 / **CUDA version:** CUDA 13.0 / **AMI version:** al2023-ami-sagemaker-inference-gpu-4-1 / **Instance types (default):** ml.p6.\*, ml.g7.\*, ml.g7e.\* / **Compatible instance types with AMI version overrides:** ml.p4d.\*, ml.p4de.\*, ml.p5.\*, ml.p5e.\*, ml.p5en.\*, ml.g4dn.\*, ml.g5.\*, ml.g6.\*, ml.g6e.\*
 
 - **Asynchronous Inference**
   - **GPU:** NVIDIA
-  - **Driver version:** 470 / **CUDA version:** CUDA 11.4 / **Instance types:** ml.p2.\*, ml.p3.\*, ml.p4d.\*, ml.p4de.\*, ml.g4dn.\*, ml.g5\*
-  - **Driver version:** 470 / **CUDA version:** CUDA 12.2 / **Instance types:** ml.p5.\*, ml.g6.\*
-  - **Driver version:** 550 / **CUDA version:** CUDA 12.4 / **Instance types:** ml.p5e.\*, ml.p5en.\*
-  - **Driver version:** 580 / **CUDA version:** CUDA 13.0 / **Instance types:** ml.p6.\*, ml.g7e.\*
+  - **Driver version:** 470 / **CUDA version:** CUDA 11.4 / **AMI version:**  / **Instance types (default):** ml.p4d.\*, ml.p4de.\*, ml.g4dn.\*, ml.g5.\* / **Compatible instance types with AMI version overrides:**
+  - **Driver version:** 535 / **CUDA version:** CUDA 12.2 / **AMI version:** al2-ami-sagemaker-inference-gpu-2, al2-ami-sagemaker-inference-gpu-2-1 / **Instance types (default):** ml.p5.\*, ml.g6.\*, ml.g6e.\* / **Compatible instance types with AMI version overrides:** ml.p4d.\*, ml.p4de.\*, ml.g4dn.\*, ml.g5.\*
+  - **Driver version:** 550 / **CUDA version:** CUDA 12.4 / **AMI version:** al2-ami-sagemaker-inference-gpu-3-1 / **Instance types (default):** ml.p5e.\*, ml.p5en.\* / **Compatible instance types with AMI version overrides:** ml.p4d.\*, ml.p4de.\*, ml.p5.\*, ml.g4dn.\*, ml.g5.\*, ml.g6.\*, ml.g6e.\*
+  - **Driver version:** 580 / **CUDA version:** CUDA 13.0 / **AMI version:** al2023-ami-sagemaker-inference-gpu-4-1 / **Instance types (default):** ml.p6.\*, ml.g7.\*, ml.g7e.\* / **Compatible instance types with AMI version overrides:** ml.p4d.\*, ml.p4de.\*, ml.p5.\*, ml.p5e.\*, ml.p5en.\*, ml.g4dn.\*, ml.g5.\*, ml.g6.\*, ml.g6e.\*
 
 - **Batch**
   - **GPU:** NVIDIA
-  - **Driver version:** 470
-  - **CUDA version:** CUDA 11.4
-  - **Instance types:** ml.p2.\*, ml.p3.\*, ml.p4d.\*, ml.p4de.\*, ml.g4dn.\*, ml.g5\*
+  - **Driver version:** 470 / **CUDA version:** CUDA 11.4 / **AMI version:** al2-ami-sagemaker-batch-gpu-470 / **Instance types (default):** ml.g4dn.\*, ml.g5.\* / **Compatible instance types with AMI version overrides:**
+  - **Driver version:** 535 / **CUDA version:** CUDA 12.2 / **AMI version:** al2-ami-sagemaker-batch-gpu-535 / **Instance types (default):** ml.g6.\* / **Compatible instance types with AMI version overrides:** ml.g4dn.\*, ml.g5.\*
 
 ## Troubleshoot your model container with GPU capabilities
 <a name="inference-gpu-drivers-troubleshoot"></a>
@@ -120,7 +121,3 @@ else
     echo "Skipping CUDA compat setup as package not found"
 fi
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

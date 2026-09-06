@@ -88,7 +88,3 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/tools-graphql-c
 + **`--output-aws-pipeline-cdk-name {{(pipeline name)}}`**   –   This argument sets the pipeline name for the AppSync API and the Lambda pipeline-name function to use. If not specified, `--create-update-aws-pipeline` uses the Neptune database name.
 + **`--output-aws-pipeline-cdk-region {{(AWS region)}}`**   –   This sets the AWS region in which the pipeline for the GraphQL API is created. If not specified, it defaults to `us-east-1` or region where the Neptune database is located, extracted from the database endpoint.
 + **`--output-aws-pipeline-cdk-file {{(file name)}}`**   –   This sets the CDK file name. If not set the default is `{{(pipeline name)}}-cdk.js`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

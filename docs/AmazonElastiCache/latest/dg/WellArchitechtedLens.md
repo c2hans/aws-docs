@@ -25,7 +25,3 @@ This guide has not been updated to include information on ElastiCache serverless
 + [Amazon ElastiCache Well-Architected Lens Reliability Pillar](ReliabilityPillar.md)
 + [Amazon ElastiCache Well-Architected Lens Performance Efficiency Pillar](PerformanceEfficiencyPillar.md)
 + [Amazon ElastiCache Well-Architected Lens Cost Optimization Pillar](CostOptimizationPillar.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

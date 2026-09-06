@@ -34,7 +34,3 @@ If the game session is hosted on an Anywhere fleet, the fleet must be using the 
 **Related topics**
 + You can also shutdown game sessions using the AWS SDK and the AWS CLI. For more details and examples, see the Amazon GameLift Servers API Reference topic [TerminateGameSession](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_TerminateGameSession.html).
 + For more information on game server integration and how a server process responds to signals from the Amazon GameLift Servers service, see [Add Amazon GameLift Servers to your game server with the server SDK](gamelift-sdk-server-api.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

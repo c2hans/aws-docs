@@ -15,7 +15,3 @@ For additional resources, see the following:
 + [Deliver Amazon RDS Performance Insights counter metrics to a third-party Application Performance Monitoring service provider using Amazon CloudWatch Metrics Stream](https://aws.amazon.com/blogs/database/importing-amazon-rds-performance-insights-counter-metrics-to-amazon-cloudwatch/) (AWS blog post)
 + [Creating an Amazon CloudWatch dashboard to monitor Amazon RDS and Amazon Aurora MySQL](https://aws.amazon.com/blogs/database/creating-an-amazon-cloudwatch-dashboard-to-monitor-amazon-rds-and-amazon-aurora-mysql/) (AWS blog post)
 + [Tuning Amazon RDS for MySQL with Performance Insights](https://aws.amazon.com/blogs/database/tuning-amazon-rds-for-mysql-with-performance-insights/) (AWS blog post)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

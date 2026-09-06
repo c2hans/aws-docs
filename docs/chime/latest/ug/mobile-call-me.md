@@ -18,7 +18,3 @@ You can use the **Call me** feature to have a meeting call your phone just befor
    For a list of the country codes that Amazon Chime supports with the **Call me** feature, see [Country requirements for phone numbers](https://docs.aws.amazon.com/chime-sdk/latest/ag/phone-country-reqs.html) in the *Amazon Chime SDK Administration Guide*.
 
 1. Choose **Call me**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

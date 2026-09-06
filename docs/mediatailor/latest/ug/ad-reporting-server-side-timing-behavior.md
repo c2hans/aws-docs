@@ -72,7 +72,3 @@ If you notice discrepancies between MediaTailor server-side tracking and third-p
 + **Session management** - Ensure that each playback session uses a unique session identifier to prevent tracking event conflicts.
 
 For detailed troubleshooting guidance, see [Troubleshooting common issues](monitoring-and-troubleshooting.md#troubleshooting-common-issues).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

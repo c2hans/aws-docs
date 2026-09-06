@@ -173,7 +173,3 @@ Deploy worker nodes to your local cluster using [self-managed node groups](launc
 When you create a local cluster, Amazon EKS automatically installs the self-managed versions of the following add-ons in the `kube-system` namespace: `coredns`, `kube-proxy`, and `aws-node` (VPC CNI). You can optionally install the managed versions of these add-ons through the Amazon EKS add-ons API. For more information, see [Amazon EKS add-ons for local clusters on AWS Outposts configured with EC2 instance store](eks-outposts-instance-store-local-cluster-addons.md).
 
 Amazon EKS also creates cross-account elastic network interfaces (ENIs) in your subnets for cluster-VPC communication. Do not delete these network interfaces. If a cross-account ENI is deleted or its IP address changes, every node and every administrator using static IP-based access must be updated manually.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

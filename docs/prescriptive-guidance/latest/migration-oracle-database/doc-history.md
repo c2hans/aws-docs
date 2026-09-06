@@ -19,7 +19,3 @@ The following table describes significant changes to this guide.
 | Updated AWS WQF information | Updated the AWS WQF section with the latest support and availability information. | October 16, 2020 |
 | Added sections | Updated [Oracle database migration strategies](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/strategies.html) with additional information, added [best practices for migrating to Amazon RDS](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/best-practices.html), and added a [questionnaire](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/questionnaire.html) for migration assessment and planning. | March 16, 2020 |
 | Initial publication | — | February 24, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

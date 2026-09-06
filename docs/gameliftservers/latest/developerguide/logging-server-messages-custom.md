@@ -130,7 +130,3 @@ Container fleets capture standard output and error streams from all containers. 
 + Turn off logging (container output isn't saved)
 
 For detailed information about configuring logging options when creating container fleets, see [LogConfiguration](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_CreateContainerFleet.html#gameliftservers-CreateContainerFleet-request-LogConfiguration) in the Amazon GameLift Servers API Reference.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

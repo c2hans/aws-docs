@@ -57,7 +57,3 @@ The following table includes Amazon Redshift Serverless events, with additional 
 | Security | REDSHIFT-SERVERLESS-EVENT-1048 | ERROR | Your request to opt-out of the Redshift-Secrets Manager integration for namespace <namespace name> failed because of an internal issue. Retry the opt-out operation manually to resolve this issue. |
 | Security | REDSHIFT-SERVERLESS-EVENT-1049 | ERROR | Your request to opt-in to the Redshift-Secrets Manager integration for namespace <namespace name> could not complete successfully due to an internal issue. Rotate the secret associated with your Redshift Serverless namespace manually to resolve this issue. |
 | Security | REDSHIFT-SERVERLESS-EVENT-1050 | ERROR | Your request to reset the admin credentials on namespace <namespace name> failed because of an internal issue. Retry the operation to reset the admin user credentials. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

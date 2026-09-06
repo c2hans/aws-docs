@@ -67,7 +67,3 @@ For more information about mapping claims, see [Mapping Amazon Cognito tokens to
 + [Editing Amazon Verified Permissions Amazon Cognito identity sources](cognito-edit.md)
 + [Mapping Amazon Cognito tokens to schema](cognito-map-token-to-schema.md)
 + [Client and audience validation for Amazon Cognito](cognito-validation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

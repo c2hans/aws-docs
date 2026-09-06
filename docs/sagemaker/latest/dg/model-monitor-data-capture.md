@@ -13,7 +13,3 @@ To log the inputs to your endpoint and the inference outputs from your deployed 
 You can implement *Data Capture* for both real-time and batch model-monitor modes using the AWS SDK for Python (Boto) or the SageMaker Python SDK. For a real-time endpoint, you will specify your *Data Capture* configuration when you create your endpoint. Due to the persistent nature of your real-time endpoint, you can configure additional options to turn data capturing on or off at certain times, or change the sampling frequency. You can also choose to encrypt your inference data.
 
 For a batch transform job, you can enable *Data Capture* if you want to run on-schedule model monitoring or continuous model-monitoring for regular, periodic batch transform jobs. You will specify your *Data Capture* configuration when you create your batch transform job. Within this configuration, you have the option to turn on encryption or generate the inference ID with your output, which helps you match your captured data to Ground Truth data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -90,7 +90,3 @@ The following limitations apply to security group referencing in Cloud WAN:
 + [Security group referencing](#cloudwan-sg-referencing)
 + [Create a VPC attachment](cloudwan-vpc-attachment-add.md)
 + [View or edit a VPC attachment](cloudwan-attachments-viewing-editing-vpc.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

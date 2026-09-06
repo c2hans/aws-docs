@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Render Arnold .ass files on Deadline Cloud
 <a name="examples-jb-arnold-render"></a>
 
-The [arnold\_standalone\_render](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/arnold_standalone_render) job bundle renders Arnold `.ass` (Arnold Scene Source) files using the `kick` command-line renderer that ships with MtoA (Arnold for Maya). Point it at a directory of `.ass` files with a naming pattern, and it renders each frame as a separate task distributed across workers. This sample is useful for batch rendering pre-exported Arnold scenes without a full Maya session.
+The [arnold\_standalone\_render](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/arnold_standalone_render) job bundle on the GitHub website renders Arnold `.ass` (Arnold Scene Source) files using the `kick` command-line renderer that ships with MtoA (Arnold for Maya). Point it at a directory of `.ass` files with a naming pattern, and it renders each frame as a separate task distributed across workers. This sample is useful for batch rendering pre-exported Arnold scenes without a full Maya session.
 
-The bundle includes a sample `cornell.0001.ass` file in the `scene/` directory. You can also download additional learning scenes from the [Autodesk Arnold learning scenes page](https://help.autodesk.com/view/MAYAUL/2024/ENU/?guid=arnold_for_maya_tutorials_am_Learning_Scenes_html), or export `.ass` files from Maya. To automate the export step, use the [maya\_arnold\_ass\_export\_render](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/maya_arnold_ass_export_render) bundle.
+The bundle includes a sample `cornell.0001.ass` file in the `scene/` directory. You can also download additional learning scenes from the [Arnold for Maya learning scenes](https://help.autodesk.com/view/MAYAUL/2024/ENU/?guid=arnold_for_maya_tutorials_am_Learning_Scenes_html) page on the Autodesk website, or export `.ass` files from Maya. To automate the export step, use the [maya\_arnold\_ass\_export\_render](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/maya_arnold_ass_export_render) bundle on the GitHub website.
 
 To run this bundle, you need:
-+ A queue with the `kick` binary available through a queue environment. The bundle's `CondaPackages` parameter defaults to `maya-mtoa`, which provides `kick`. On service-managed fleets, the `deadline-cloud` conda channel provides this package. For a specific MtoA version, build a custom package with the [maya-mtoa conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-mtoa-2026).
++ A queue with the `kick` binary available through a queue environment. The bundle's `CondaPackages` parameter defaults to `maya-mtoa`, which provides `kick`. On service-managed fleets, the `deadline-cloud` conda channel provides this package. For a specific MtoA version, build a custom package. For more information, see the [maya-mtoa conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-mtoa-2026) on the GitHub website.
 + A Linux fleet associated with the queue. The job template specifies `attr.worker.os.family: linux` as a host requirement.
 
 Submit the bundle:
@@ -22,7 +22,3 @@ deadline bundle submit arnold_standalone_render/ \
     -p Frames=1-100 \
     -p OutputDir={{./output}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

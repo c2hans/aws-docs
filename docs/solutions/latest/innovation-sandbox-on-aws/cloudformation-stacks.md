@@ -44,7 +44,3 @@ As part of the deployment, the solution deploys these CloudFormation stacks.
 
 **Note**
 The **SandboxAccount** stack is automatically configured as a service-managed CloudFormation StackSet resource in the AccountPool stack using the **AccountPool OU** as the deployment target. The stack contains a single spoke role that is assumed into by compute resources in the compute stack to run the account cleanup job. SCPs established in the AccountPool stack protect the deletion of the role as well as the StackSet instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

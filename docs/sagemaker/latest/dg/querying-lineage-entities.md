@@ -55,7 +55,7 @@ You can query your lineage entities to:
 <a name="querying-lineage-entities-getting-started"></a>
 
 The easiest way to get started is either via the:
-+ [ Amazon SageMaker AI SDK for Python](https://github.com/aws/sagemaker-python-sdk/blob/master/src/sagemaker/lineage/artifact.py#L397) which has defined many common use cases.
++ [ Amazon SageMaker Python SDK](https://github.com/aws/sagemaker-python-sdk/blob/master/src/sagemaker/lineage/artifact.py#L397) which has defined many common use cases.
 + For a notebook that demonstrates how to use SageMaker AI Lineage APIs to query relationships across the lineage graph, see [sagemaker-lineage-multihop-queries.ipynb](https://github.com/aws/amazon-sagemaker-examples/blob/master/sagemaker-lineage/sagemaker-lineage-multihop-queries.ipynb).
 
 The following examples show how to use the `LineageQuery` and `LineageFilter` APIs to construct queries to answer questions about the Lineage Graph and extract entity relationships for a few use cases.
@@ -360,7 +360,3 @@ viz.render(query_response, "Endpoint")
 )
 viz.render(query_response, "Model")
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

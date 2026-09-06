@@ -25,7 +25,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  **Change management**: Involve your AWS EUC team in the change board for all dependent technology areas (such as compute, storage, networking, and security). Provide visibility of changes in other technology domains to guide and inform improvements in the delivery of desktops and applications.
 +  **Industry awareness**: Attend key EUC industry events to identify new industry trends and partners who provide added value. The opportunity to attend industry events is also an opportunity to meet other users of AWS EUC services and learn from their valuable experiences.
 +  **Expert roundtables**: Promote the use of and participation in regular expert roundtables where technology teams can present improvements and advances across diverse areas of expertise. This helps the EUC team identify where they can apply improvements in other areas to improve AWS EUC service delivery.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

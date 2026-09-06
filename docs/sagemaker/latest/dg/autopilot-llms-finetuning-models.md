@@ -35,7 +35,3 @@ The following table lists the supported JumpStart models that you can fine-tune 
 | huggingface-llm-mistral-7b-instruct | Mistral7BInstruct | Mistral 7B Instruct is the fine-tuned version of Mistral 7B for conversational use cases. It was specialized using a variety of publicly available conversation datasets in English. |
 | huggingface-textgeneration1-mpt-7b-bf16 | MPT7B | MPT 7B is a decoder-style transformer large language model with 6.7 billion parameters, pre-trained from scratch on 1 trillion tokens of English text and code. It is prepared to handle long context lengths. |
 | huggingface-textgeneration1-mpt-7b-instruct-bf16 | MPT7BInstruct | MPT 7B Instruct is a model for short-form instruction following tasks. It is built by fine-tuning MPT 7B on a dataset derived from [databricks-dolly-15k](https://huggingface.co/datasets/databricks/databricks-dolly-15k) and the [Anthropic Helpful and Harmless (HH-RLHF)](https://huggingface.co/datasets/Anthropic/hh-rlhf) datasets. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

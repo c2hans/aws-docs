@@ -33,7 +33,3 @@ The following topics explain how to enable HyperPod autoscaling with Karpenter.
 + Health Monitoring Agent version 1.0.742.0\_1.0.241.0 or above installed. Required for HyperPod cluster operations and monitoring. The agent must be configured before enabling Karpenter autoscaling to ensure proper cluster health reporting and node lifecycle management. For more information, see [Health Monitoring System](sagemaker-hyperpod-eks-resiliency-health-monitoring-agent.md).
 + Only if your Amazon EKS cluster has Karpenter running on it, the Karpenter `NodePool` and `NodeClaim` versions need to be v1.
 + `NodeRecovery` set to automatic. For more information, see [Automatic node recovery](sagemaker-hyperpod-eks-resiliency-node-recovery.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

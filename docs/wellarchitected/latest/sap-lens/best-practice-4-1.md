@@ -28,7 +28,3 @@ The PAM also offers information about platform availability and compatibility: i
 
  Subscribe to key SAP notes and Knowledge Base Articles (KBAs) for your SAP workload such that you will be notified upon any changes or updates to supportability and advice. Use “Favorite” SAP notes functionality to keep a list of frequently accessed and important notes for your SAP workload to make them easily accessible and comparable.
 +  [SAP Support Portal - Favorite SAP Notes](https://launchpad.support.sap.com/#/mynotes?tab=Favorites) [Requires SAP Portal Access]
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

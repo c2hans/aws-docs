@@ -30,7 +30,3 @@ This topic helps you get started with Amazon Location Service. Follow these step
    Amazon Location offers a rich set of APIs across Places, Routes, Maps, and Geofences and Trackers to solve a variety of business use cases.
 
    To learn more about how to choose an Amazon Location API, see [Choose the right API](choose-an-api.md) for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -77,7 +77,3 @@ Open the Amazon FSx console at [https://console.aws.amazon.com/fsx/](https://con
   + `"Status": "COMPLETED"` – indicates that the restore is complete.
 
   If the restore process fails, the `AdminstrativeAction > Status` will have a value of `FAILED`. An error message is provided in the `FailureDetails` object. For more information, see [AdministrativeActionFailureDetails](https://docs.aws.amazon.com/fsx/latest/APIReference/API_AdministrativeActionFailureDetails.html) in the Amazon FSx API Reference
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

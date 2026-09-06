@@ -17,7 +17,3 @@ This policy provides initial administrative and individual setup privileges for 
 All EC2 resources must be tagged with `CreatedForUseWithSageMakerUnifiedStudio: true` for creation, modification, and deletion operations to ensure proper resource governance and lifecycle management.
 
 To view the permissions for this policy, see [SageMakerStudioAdminIAMConsolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMConsolePolicy.html) in the *AWS Managed Policy Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

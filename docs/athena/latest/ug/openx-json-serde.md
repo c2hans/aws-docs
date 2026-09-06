@@ -183,7 +183,3 @@ The following table shows the query results.
 | --- | --- | --- | --- | --- | --- |
 | 1 | Carlos | 123 Main St. | Anytown | 6789 | 11/11/2022 |
 | 2 | Carlos | 123 Main St. | Anytown | 4352 | 12/12/2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

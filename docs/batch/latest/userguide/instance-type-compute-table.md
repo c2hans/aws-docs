@@ -24,7 +24,3 @@ The following table lists the AWS Region, instance family keyword, and available
 | Region | Instance families |
 | --- | --- |
 | All AWS Regions that support [AWS Batch](https://docs.aws.amazon.com/general/latest/gr/batch.html) | Modern m, c, and r instance families based on regional availability. AWS Batch periodically updates the pool with newer generations within these families. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

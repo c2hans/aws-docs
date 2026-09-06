@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/cross-accou
 # Add a cross-account BYOIP address in Global Accelerator
 <a name="cross-account-resources.add-byoip"></a>
 
-Follow the steps in this section to configure cross-account bring your own IP (BYOIP) ID addresses using the Global Accelerator console.
+Follow the steps in this section to configure cross-account bring your own IP (BYOIP) IP addresses using the Global Accelerator console.
 
 This section explains how to use a BYOIP IP address by using the AWS Global Accelerator console. To learn about using API operations with Global Accelerator, see the [AWS Global Accelerator API Reference](https://docs.aws.amazon.com/global-accelerator/latest/api/Welcome.html).
 
@@ -38,7 +38,3 @@ You must choose a different IP address pool for each static IP address. This res
 1. Optionally, add one or more tags to help you identify your accelerator resources.
 
 1. Choose **Next** to add listeners, endpoint groups, and endpoints.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -158,7 +158,3 @@ The following table shows the event category and a list of events when a securit
 | --- | --- | --- |
 | configuration change | RDS-EVENT-0038 | The security group has been modified. |
 | failure | RDS-EVENT-0039 | The security group owned by [user] does not exist; authorization for the security group has been revoked. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

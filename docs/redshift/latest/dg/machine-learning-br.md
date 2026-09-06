@@ -166,7 +166,7 @@ SELECT general_titan_llm_func('Summarize the benefits of LLM on data analytics i
 
 Note the following when using inference functions with Amazon Redshift ML integration with Amazon Bedrock:
 + The names of the parameters for all Amazon Bedrock models are case sensitive. If your parameters do not match the ones required by the model, Amazon Bedrock might quietly ignore them.
-+ The throughput of inference queries is limited by the runtime quotas of the different models offered by Amazon Bedrock in different regions. For more information, see [Quotas for Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/quotas.html) in the *Amazon Bedrock User Guide*.
++ The throughput of inference queries is limited by the runtime quotas of the different models offered by Amazon Bedrock in different Regions. For more information, see [Quotas for Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/quotas.html) in the *Amazon Bedrock User Guide*.
 + If you need guaranteed and consistent throughput, consider getting provisioned throughput for the model you need from Amazon Bedrock. For more information, see [ Increase model invocation capacity with Provisioned Throughput in Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/prov-throughput.html) in the *Amazon Bedrock User Guide*.
 + Inference queries with large amounts of data might get throttling exceptions. This is because of the limited runtime quotas for Amazon Bedrock. Amazon Redshift retries requests multiple times, but queries can still get throttled because throughput for non-provisioned models might be variable.
 + If you encounter throttling exceptions coming from Amazon Bedrock such as `Too many requests, please wait before trying again.` even with small amounts of data, check the quotas under **Service Quotas** in your Amazon Bedrock account. Check that the applied account-level quota is at least the same as the AWS default quota value for the **InvokeModel** requests for the model you are using.
@@ -197,7 +197,3 @@ To use dynamic prompts, you can provide them when using the inference function b
 SELECT llm_claude_func('Summarize the following review:' | input_text | 'The review should have formal tone.')
 FROM some_data
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

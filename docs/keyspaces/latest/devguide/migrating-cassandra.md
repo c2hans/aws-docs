@@ -258,7 +258,3 @@ You can choose between the following migration strategies when migrating from Ap
   For more information about how to plan a hybrid migration, see [Using a hybrid migration solution: Apache Cassandra to Amazon Keyspaces](migrating-hybrid.md).
 
 After reviewing the migration techniques and best practices discussed in this topic, you can place the available options in a decision tree to design a migration strategy based on your requirements and available resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

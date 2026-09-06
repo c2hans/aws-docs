@@ -20,7 +20,3 @@ When access to AWS resources is your primary concern. Groups in Amazon Cognito u
 
 **Level of effort**
 The level of effort to maintain multi-tenancy with group membership alone is low. However, to expand the role of user pool groups beyond the built-in capacity for IAM role selection, you must build application logic that processes group membership in users' tokens, and determine what to do in the client. You can integrate Amazon Verified Permissions with your apps to make client-side authorization decisions. Group identifiers aren't currently processed in Verified Permissions [IsAuthorizedWithToken](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_IsAuthorizedWithToken.html) API operations, but you can [develop custom code](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/identity-providers.html#identity-providers_other-idp) that parses the contents of tokens, including group-membership claims.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

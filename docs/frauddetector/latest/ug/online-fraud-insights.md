@@ -41,7 +41,3 @@ The Online Fraud Insights model requires at least two variables, apart from the 
 <a name="training-data-validations-OFI"></a>
 
 As part of the training process, Online Fraud Insights will validate the dataset for data quality issues that may impact model training. After validating the data, Amazon Fraud Detector will take appropriate action to build the best possible model. This includes issuing warnings for potential data quality issues, automatically removing variables that have data quality issues, or issuing an error and stopping the model training process. For more information, see [dataset validation](https://docs.aws.amazon.com/frauddetector/latest/ug/create-event-dataset.html#dataset-validation).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

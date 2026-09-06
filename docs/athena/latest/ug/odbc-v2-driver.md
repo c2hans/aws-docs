@@ -29,25 +29,25 @@ When you use the ODBC 2.x driver, be sure to note the following:
 
 | Driver version | Download link |
 | --- | --- |
-| ODBC 2.3.0.0 for Linux x86\_64 |  [Linux x86\_64 ODBC driver 2.3.0.0](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.3.0.0/Linux/AmazonAthenaODBC-2.3.0.0-x86_64.rpm)  |
+| ODBC 2.2.0.1 for Linux x86\_64 |  [Linux x86\_64 ODBC driver 2.2.0.1](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.2.0.1/Linux/AmazonAthenaODBC-2.2.0.1-x86_64.rpm)  |
 
 ### macOS
 <a name="connect-with-odbc-macos"></a>
 
 | Driver version | Download link |
 | --- | --- |
-| ODBC 2.3.0.0 for macOS |  [macOS ODBC driver 2.3.0.0](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.3.0.0/Mac/AmazonAthenaODBC-2.3.0.0-macos11-universal.pkg)  |
+| ODBC 2.2.0.1 for macOS |  [macOS ODBC driver 2.2.0.1](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.2.0.1/Mac/AmazonAthenaODBC-2.2.0.1-macos11-universal.pkg)  |
 
 ### Windows
 <a name="connect-with-odbc-windows"></a>
 
 | Driver version | Download link |
 | --- | --- |
-| ODBC 2.3.0.0 for Windows amd64 |  [Windows amd64 ODBC driver 2.3.0.0](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.3.0.0/Windows/AmazonAthenaODBC-2.3.0.0-windows-amd64.msi)  |
+| ODBC 2.2.0.1 for Windows amd64 |  [Windows amd64 ODBC driver 2.2.0.1](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.2.0.1/Windows/AmazonAthenaODBC-2.2.0.1-windows-amd64.msi)  |
 
 ### Licenses
 <a name="connect-with-odbc-licenses"></a>
-+  [AWS license](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.3.0.0/LICENSE.txt)
++  [AWS license](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.2.0.1/LICENSE.txt)
 
 ## Trusted identity propagation with ODBC
 <a name="odbc-v2-driver-trusted-identity"></a>
@@ -64,7 +64,3 @@ You can now connect to Amazon Athena using ODBC drivers with single sign-on capa
 + [Troubleshoot the ODBC 2.x driver](odbc-v2-driver-troubleshooting.md)
 + [Amazon Athena ODBC 2.x release notes](odbc-v2-driver-release-notes.md)
 + [Previous versions of the Athena ODBC 2.x driver](odbc-v2-driver-previous-versions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

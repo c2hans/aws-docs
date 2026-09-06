@@ -47,7 +47,3 @@ Elastic Disaster Recovery can utilize multiple networking options when supportin
 <a name="network-bandwidth"></a>
 
 AWS Elastic Disaster Recovery will utilize as much of the network as possible when replicating the data from your source environment. Due to this, you will want to ensure you have enough bandwidth to support your source change rate (ensuring you can maintain Continuous Data Protection). You will want to monitor your network to ensure there is no congestion being caused by the replication process. If you need to throttle the Elastic Disaster Recovery service, you can do so at the service or machine level. In order to calculate the bandwidth required for your particular workloads, refer to Elastic Disaster Recovery [Calculating Bandwidth](https://docs.aws.amazon.com/drs/latest/userguide/Troubleshooting-Communication-Errors.html#Calculating-Bandwidth).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying Cross-Region Disaster Recovery with AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

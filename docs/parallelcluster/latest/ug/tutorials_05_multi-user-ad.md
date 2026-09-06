@@ -31,7 +31,3 @@ When using the AWS ParallelCluster command line interface (CLI) or API, you only
 + You have an IAM role with the [permissions](iam-roles-in-parallelcluster-v3.md#iam-roles-in-parallelcluster-v3-example-user-policies) required to run the [`pcluster`](pcluster-v3.md) CLI.
 
 As you go through the tutorial, replace `{{inputs highlighted in red}}`, such as `{{region-id}}` and `{{d-abcdef01234567890}}`, with your own names and IDs. Replace `{{0123456789012}}` with your AWS account number.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

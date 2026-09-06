@@ -57,7 +57,3 @@ Manage origins, transformation policies, and mappings through a web-based admini
 
 **Note**
 The ECS architecture is the latest option and includes the solution’s full feature set, including the Admin UI, transformation policies, non-S3 origins, content-aware smart cropping, and multi-tier device detection. For a detailed description of the ECS-only capabilities, see [ECS architecture features](ecs-architecture-features.md). To compare the two deployment options, see [Architecture options](architecture-options.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

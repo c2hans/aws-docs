@@ -68,7 +68,3 @@ You can make archival copies of AMIs by storing them in an S3 bucket. The AMI is
 <a name="store-restore-costs"></a>
 
 When you store and restore AMIs using S3, you are charged for the services that are used by the store and restore APIs, and for data transfer. The APIs use S3 and the EBS Direct API (used internally by these APIs to access the snapshot data). For more information, see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing/) and [Amazon EBS pricing](https://aws.amazon.com/ebs/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

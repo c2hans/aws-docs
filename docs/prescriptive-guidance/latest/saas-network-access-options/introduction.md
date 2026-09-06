@@ -33,7 +33,3 @@ This guide discusses network architecture options and field-tested best practice
 + **Dependency management** – Understand dependencies, long-term implications, and trade-offs of the different network access options. This helps product leaders make well-informed product decisions.
 + **Composability and extendibility** – Decouple the development of core functionality from operational infrastructure. This helps development teams move faster and focus on creating value for your customers.
 + **Drive trust** – By providing resilient, fault-tolerant, secure, and scalable access to SaaS offerings, you can reduce regulatory risks and earn trust in your ability to support your customers' growth.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

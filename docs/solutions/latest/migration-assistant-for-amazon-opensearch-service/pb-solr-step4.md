@@ -26,7 +26,3 @@ console clusters curl target /<collection>/_search?size=5&pretty
 Solr backup backfill reconstructs target ` source<absoluteLuceneDocNumber>` document ID. For the full behavior, see [Document reconstruction](solr-document-reconstruction.md).
 
 If you are migrating an application, also run representative production-like queries against the target to confirm that clients can locate the expected fields and retrieve expected results before you cut over. Remember that Apache Solr query syntax differs from the OpenSearch query DSL, so client query code generally needs to be rewritten — validate it against the migrated data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

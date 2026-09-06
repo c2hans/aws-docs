@@ -86,7 +86,7 @@ The extended storage segment is particularly beneficial for:
 **`AvailableMVCCIds`**
 + **Location** — Amazon CloudWatch
 + **Description** — A counter that shows the number of remaining write operations available from a maximum limit of 1.8 billion. When this counter reaches zero, your cluster enters read-only mode until IDs are reclaimed and recycled. The counter decreases with each write operation and increases as garbage collection recycles old MVCC IDs.
-+ **Recommendation** — Set an alarm when the value falls below 1.3 billion. This early warning allows you to take recommended steps discussed later.
++ **Recommendation** — Set an alarm when the value falls below 900 million on Amazon DocumentDB 5.0 and later, or below 1.3 billion on Amazon DocumentDB 3.6 and 4.0. This early warning allows you to take recommended steps discussed later.
 
 **`LongestActiveGCRuntime`**
 + **Location** — Amazon CloudWatch
@@ -254,7 +254,7 @@ No, garbage collection in Amazon DocumentDB cannot be manually triggered. The sy
 
 Set up monitoring at both the cluster and collection levels to ensure optimal performance of your Amazon DocumentDB system.
 
-For cluster-level monitoring, start by creating a Amazon CloudWatch alarm for the `AvailableMVCCIds` metric with a threshold of 1.3 billion. This gives you adequate time to take action before the metric reaches zero, at which point your cluster would enter read-only mode. Keep in mind that this metric may fluctuate based on your specific usage patterns - some customers see it drop below 1.3 billion and then recover above 1.5 billion as garbage collection completes its work.
+For cluster-level monitoring, start by creating a Amazon CloudWatch alarm for the `AvailableMVCCIds` metric with a threshold of 900 million on Amazon DocumentDB 5.0 and later, or 1.3 billion on Amazon DocumentDB 3.6 and 4.0. This gives you adequate time to take action before the metric reaches zero, at which point your cluster would enter read-only mode. Keep in mind that this metric may fluctuate based on your specific usage patterns - some customers see it drop below the threshold and then recover above 1.5 billion as garbage collection completes its work.
 
 It's also important to monitor the `LongestActiveGCRuntime` metric through Amazon CloudWatch. This metric, along with `gcRuntimeStats`, helps you understand how efficiently garbage collection is performing across your system.
 
@@ -268,17 +268,25 @@ Collections with frequent write operations need extra attention, as they generat
 
 Note that these monitoring recommendations serve as a starting point. As you become more familiar with your system's behavior, you may want to adjust these thresholds to better match your specific usage patterns and requirements.
 
-### What should I do if my `AvailableMVCCIds` falls below 1.3 billion?
+### What should I do if my `AvailableMVCCIds` falls below the alarm threshold?
 <a name="w2aac61c15c17c11"></a>
 
-If your `AvailableMVCCIds` metric drops below 1.3 billion, take immediate action to prevent your cluster from entering read-only mode. First, scale up your instance size to provide the garbage collector with more computing resources. This allows your application to continue normal operations while giving the garbage collector the additional power it needs to catch up.
+If your `AvailableMVCCIds` metric drops below the alarm threshold, take immediate action to prevent your cluster from entering read-only mode. First, scale up your instance size to provide the garbage collector with more computing resources. This allows your application to continue normal operations while giving the garbage collector the additional power it needs to catch up.
 
 If scaling up alone doesn't improve the situation, consider reducing your write operations. Use the `MVCCIdScale` metric to identify which specific collections contain older MVCC IDs that need attention. Additionally, monitor `documentFragmentStats` to identify collections with high dead fragment percentages that might be contributing to garbage collection inefficiency.
 
 Once you've identified these collections, you might need to temporarily reduce write operations to them to allow garbage collection to catch up. During the recovery period, closely monitor the `AvailableMVCCIds` metric to ensure your actions are having the desired effect. Your cluster is considered healthy once the `AvailableMVCCIds` value returns to 1.5 billion or higher.
 
-Remember that these steps are preventive measures to help your system recover before it reaches a critical state. The sooner you take action after seeing the metric drop below 1.3 billion, the more likely you are to avoid any impact to your write operations.
+Remember that these steps are preventive measures to help your system recover before it reaches a critical state. The sooner you take action after seeing the metric drop below the threshold, the more likely you are to avoid any impact to your write operations.
 
-## See also
+### Do batch operations affect the MVCC ID consumption rate?
+<a name="w2aac61c15c17c13"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+Yes. Because a batch executed within a single atomic transaction consumes only one MVCC ID, grouping writes into batches lowers the rate at which MVCC IDs are consumed. As a best practice, use `insertMany` and `updateMany` whenever possible to minimize MVCC ID consumption and reduce the load on garbage collection.
+
+### Why doesn't `AvailableMVCCIds` recover until it reaches a certain threshold?
+<a name="w2aac61c15c17c15"></a>
+
+A steady decline in `AvailableMVCCIds` with no recovery is expected temporarily for a write-dominant workload that has not yet consumed enough MVCC IDs to trigger the garbage collection reclamation cycle. Garbage collection triggers when any of the following conditions are met: a certain portion of the documents within a collection become obsolete, a certain portion of new documents are inserted, or `AvailableMVCCIds` drops below its reclamation threshold.
+
+Until `AvailableMVCCIds` falls below its reclamation threshold, forced reclamation does not occur. Once it does, reclamation triggers and `AvailableMVCCIds` will recover. However, long-running transactions and open cursors can pin the reclaiming horizon and prevent reclamation even after the threshold is reached.

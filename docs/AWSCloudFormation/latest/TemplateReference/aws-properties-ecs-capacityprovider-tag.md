@@ -61,7 +61,3 @@ The optional part of a key-value pair that make up a tag. A `value` acts as a de
 ## See also
 <a name="aws-properties-ecs-capacityprovider-tag--seealso"></a>
 +  [Create an Amazon ECS capacity provider](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-capacityprovider.html#aws-resource-ecs-capacityprovider--examples)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

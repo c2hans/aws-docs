@@ -72,7 +72,3 @@ The following table describes important changes in each release of the *Amazon P
 | [New feature](#document-history) | Amazon Personalize now supports batch recommendation workflows. For more information, see [Get batch recommendations](https://docs.aws.amazon.com/personalize/latest/dg/getting-recommendations.html#recommendations-batch). | November 14, 2019 |
 | [Amazon Personalize general availability](#document-history) | Amazon Personalize is now available for general use. | June 10, 2019 |
 | [Amazon Personalize preview release](#document-history) | This is the first preview release of the documentation for Amazon Personalize. | November 28, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

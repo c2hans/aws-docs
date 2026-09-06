@@ -40,7 +40,3 @@ In addition to ISO 27001, AWS also aligns with the ISO 27017 guidance on informa
  Finally, AWS’s efforts to provide transparency about our risk and control environment do not stop at our third- party audit reports or formal audit engagements. Our security and compliance personnel, security solution architects, engineers, and field teams engage daily with customers to address their questions and concerns.
 
  Such interaction may be a phone call with the financial institution’s security team, an executive meeting with a customer’s Chief Information Security Officer and Chief Information Officer, a briefing on AWS’s premises— and countless other ways. Customers drive our overall infrastructure and service roadmap, and meeting and exceeding their security and resiliency needs is our number one objective.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

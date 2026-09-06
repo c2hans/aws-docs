@@ -87,7 +87,3 @@ You can start an investigation by asking why questions such as the following.
 + Findings identify correlations and relationships in your data. They are not guaranteed root causes.
 + When the available data is insufficient to support a conclusion, the response states that explicitly instead of speculating.
 + Investigations examine the same data that is available in your Connect Customer dashboards and reports.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

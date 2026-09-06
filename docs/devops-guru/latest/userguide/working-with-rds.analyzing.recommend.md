@@ -30,7 +30,3 @@ Recommendations are the most important part of the insight. In this stage of the
      Typically, DevOps Guru for RDS recommends that you investigate specific SQL statements or wait events. For example, a recommendation might be to investigate the wait event `io/table/sql/handler`. Look up the listed wait event in [Tuning with wait events for Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Tuning.html) or [Tuning with wait events for Aurora MySQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.Tuning.html) in the *Amazon Aurora User Guide*, or in [Tuning with wait events for RDS for PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Tuning.html) in the *Amazon RDS User Guide*. Then perform the recommended actions.
 **Important**
 We recommend that you test any changes on a test instance before modifying a production instance. In this way, you understand the impact of the change.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

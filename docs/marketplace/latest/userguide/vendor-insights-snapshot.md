@@ -133,7 +133,3 @@ After creating a snapshot, you can change the preferences of how a snapshot is v
    + **Wrap lines** – Select an option to wrap lines to view the entire record.
    + **Time format** – Select whether you want **Absolute**, **Relative**, or **ISO**.
    + **Visible columns** – Select options that you want visible for the snapshot details: **Snapshot ID**, **Status**, and **Date created** .
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

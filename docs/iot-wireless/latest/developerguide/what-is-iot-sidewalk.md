@@ -84,7 +84,3 @@ For more information about AWS IoT Core for Amazon Sidewalk, see the following w
 + [Amazon Sidewalk](https://www.amazon.com/Amazon-Sidewalk/b?ie=UTF8&node=21328123011)
 + [Amazon Sidewalk documentation](https://docs.sidewalk.amazon/introduction/)
 + [AWS IoT Core for Amazon Sidewalk](https://aws.amazon.com/iot-core/sidewalk/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

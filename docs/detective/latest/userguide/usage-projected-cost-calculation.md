@@ -36,7 +36,3 @@ To calculate the projected cost values that it displays on the **Usage** page, D
    1. If a Detective member account has a shared Amazon VPC and there are other non-Detective accounts using the shared VPC, Detective will monitor all traffic from that VPC. The usage and cost will increase and Detective will provide visualization on all the traffic flow within the VPC.
 
    1. If you have an EC2 instance inside a shared Amazon VPC and the shared owner is not a Detective member, Detective will not monitor any traffic from the VPC, and the usage and cost will decrease. If you want to view the traffic flow within the VPC, you must add the Amazon VPC owner as a member of your Detective graph.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

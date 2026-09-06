@@ -42,7 +42,3 @@ For this walkthrough, you should have the following:
 + Basic knowledge of CloudFormation template and version control
 + Set up [AWS CodePipeline](https://aws.amazon.com/codepipeline/) and establish a connection with a source control provider. Specifically, we are using [GitHub](https://docs.github.com/en/get-started) as our source repository to showcase our solution
 + Download and install [Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,7 +65,7 @@ If AI is not able to identify which of the provided answer options is appropriat
 ## Set up automated evaluations using generative AI on the evaluation form
 <a name="set-up-automated-evals-on-eval-form-with-generative-ai"></a>
 
-You can pre-configure on an evaluation form whether a question will be automatically answered using generative AI. Then, if you start an evaluation using the evaluation form on the Connect Customer UI, answers to these questions will get automatically filled using generative AI (without requiring you to choose Ask AI). You can also use generative AI to automatically fill and submit evaluations. For automatically submitted evaluations, you can use generative AI to answer up to 10 questions per contact (see [Conversational analytics service quotas](amazon-connect-service-limits.md#contactlens-quotas)). Note that this limit does not apply to automation using contact categories or metrics (for example, longest hold duration).
+You can pre-configure on an evaluation form whether a question will be automatically answered using generative AI. Then, if you start an evaluation using the evaluation form on the Connect Customer UI, answers to these questions will get automatically filled using generative AI (without requiring you to choose Ask AI). You can also use generative AI to automatically fill and submit evaluations. For automatically submitted evaluations, you can use generative AI to answer up to 10 questions per contact (see [Conversational analytics service quotas](amazon-connect-service-limits.md#contactlens-quotas)). This limit does not apply to automation using contact categories or metrics (for example, longest hold duration).
 
 To learn more about setting up automated evaluations using generative AI, see [Guidelines to improve generative AI accuracy](#guidelines-to-improve-generative-ai-accuracy).
 
@@ -145,7 +145,3 @@ To set the language of the evaluation form:
 The following example shows a generative AI-answered question that follows these guidelines. The question title is a complete sentence, the instructions to evaluators define each answer option and explain the Not Applicable scenario, and the answer options are short.
 
 ![An evaluation form question configured with a full-sentence title, detailed instructions to evaluators, and short Yes and No answer options with the Not Applicable option enabled.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-genai-question-example.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

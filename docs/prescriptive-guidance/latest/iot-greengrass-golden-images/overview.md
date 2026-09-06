@@ -24,7 +24,3 @@ As shown in the following illustration, a golden device is created, its file sys
 <a name="configuration"></a>
 
 Although the same golden image is written to every device, a small amount of unique configuration or personalization (for example, unique serial numbers, unique device names, and unique credentials) is typically also needed for each device. In the Raspberry Pi example, the `raspi-config` utility is used to create the unique configuration after flashing. In the case of AWS IoT Greengrass, a core device requires at least a unique thing name, a unique device certificate, and a unique private key.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

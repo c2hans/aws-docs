@@ -35,7 +35,3 @@ For managers to monitor live conversations, you assign them the **CallCenterMana
 1. Choose **Save**.
 
 Next, show your managers how to monitor conversations. Continue to [Listen to live conversations or read live chats in Connect Customer](monitor-conversations-howto.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

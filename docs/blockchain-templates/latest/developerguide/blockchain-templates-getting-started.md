@@ -32,7 +32,3 @@ Following the tutorial, steps are provided to clean up resources that you create
 + [Create the Ethereum Network](blockchain-templates-create-stack.md)
 + [Connect to EthStats and EthExplorer Using the Bastion Host](blockchain-bastion-host-connect.md)
 + [Clean Up Resources](blockchain-templates-cleanup.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Blockchain Templates. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query blockchain-templates` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

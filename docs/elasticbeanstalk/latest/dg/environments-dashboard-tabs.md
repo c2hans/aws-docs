@@ -92,7 +92,3 @@ The **Tags** tab shows the tags that Elastic Beanstalk applied to the environmen
 Environment tags are applied to every resource that Elastic Beanstalk creates to support your application.
 
 For more information, see [Tagging resources in your Elastic Beanstalk environments](using-features.tagging.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

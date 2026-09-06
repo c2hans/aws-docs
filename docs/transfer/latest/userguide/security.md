@@ -65,7 +65,3 @@ When using VPC egress type connectors, follow these security best practices:
 + **Network monitoring**: Use VPC Flow Logs and Amazon CloudWatch to monitor network traffic patterns and detect anomalous activity.
 + **Access logging**: Enable connector logging to track file transfer activities and maintain audit trails for compliance requirements.
 + **Resource Configuration management**: Regularly review and update Resource Configurations to ensure they point to the correct SFTP servers and use appropriate network settings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

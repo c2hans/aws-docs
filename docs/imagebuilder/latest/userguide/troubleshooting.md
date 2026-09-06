@@ -16,6 +16,7 @@ You can use the Troubleshoot feature, powered by AWS DevOps Agent, to diagnose f
 + [Troubleshoot pipeline builds](#troubleshooting-pipelines)
 + [Troubleshooting scenarios](#image-builder-troubleshooting-scenarios)
 + [Troubleshoot failed builds with AI - Preview](devops-agent-troubleshooting.md)
++ [Troubleshoot builds with an AI coding agent](agent-toolkit-skill.md)
 
 ## Troubleshoot pipeline builds
 <a name="troubleshooting-pipelines"></a>
@@ -57,6 +58,9 @@ By default, Image Builder shuts down the Amazon EC2 build or test instance that 
 To change the instance settings in the console, you must clear the **Terminate instance on failure** check box located in the **Troubleshooting settings** section of your infrastructure configuration resource.
 
 You can also change the instance settings with the **update-infrastructure-configuration** command in the AWS CLI. Set the `terminateInstanceOnFailure` value to `false` in the JSON file that the command references with the `--cli-input-json` parameter. For details, see [Update an infrastructure configuration](update-infra-config.md).
+
+**Tip**
+For information about a sample that deploys a build that fails on purpose, with a walkthrough that shows where each failure class leaves evidence, see the [debugging sample](https://github.com/aws-samples/amazon-ec2-image-builder-samples/tree/HEAD/debugging) on GitHub. For more information, see [Explore Image Builder sample projects on GitHub](sample-projects.md).
 
 ## Troubleshooting scenarios
 <a name="image-builder-troubleshooting-scenarios"></a>
@@ -214,7 +218,3 @@ To resolve this issue, turn off enhanced image metadata collection, using one of
   ```
 
 To prevent this from happening for new pipelines, clear the **Enable enhanced metadata collection** check box when you create a new pipeline using the EC2 Image Builder console, or set the value of the `EnhancedImageMetadataEnabled` property in your JSON file to `false` when you create your pipeline using the AWS CLI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

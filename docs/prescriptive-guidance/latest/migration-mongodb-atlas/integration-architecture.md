@@ -12,7 +12,3 @@ MongoDB Atlas integrates seamlessly with most AWS services, as shown in the foll
 The following sections describe reference architectures to integrate MongoDB Atlas on AWS with AWS AppSync, Amazon SageMaker AI, Amazon EventBridge, Amazon Data Firehose, and Amazon Managed Streaming for Apache Kafka (Amazon MSK).
 
 All these reference architectures are built on a secured network by using AWS PrivateLink, AWS KMS, and IAM roles. For more information, see the [Best practices section](best-practices.md) later in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ Embedded metric format ensures at least one time delivery of metrics extracted f
 + [Publishing logs with the embedded metric format](CloudWatch_Embedded_Metric_Format_Generation.md)
 + [Viewing your metrics and logs in the console](CloudWatch_Embedded_Metric_Format_View.md)
 + [Setting alarms on metrics created with the embedded metric format](CloudWatch_Embedded_Metric_Format_Alarms.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

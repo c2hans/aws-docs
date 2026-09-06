@@ -14,7 +14,3 @@ To complete power up, you attach the NSK, connect the server to a power source, 
 + [Attach NSK](power-attach-nsk.md)
 + [Power on](power-on.md)
 + [Check the NSK Power LED](power-check-led.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

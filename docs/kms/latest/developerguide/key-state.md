@@ -102,7 +102,3 @@ You might need to scroll horizontally or vertically to see all of the data in th
 + [13] While a KMS key in a custom key store is pending deletion, its key state remains `PendingDeletion` even if the KMS key becomes unavailable. This allows you to cancel deletion of the KMS key at any time during the waiting period.
 + [14] `KMSInvalidStateException: {{<key ARN>}} is creating.` AWS KMS throws this exception while it is replicating a multi-Region key (`ReplicateKey`).
 + [15] `KMSInvalidStateException: {{<key ARN>}} is updating.` AWS KMS throws this exception while it is updating the primary Region of a multi-Region key (`UpdatePrimaryRegion`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -86,7 +86,3 @@ Do not add personally identifiable information (PII) or other confidential or se
 1.  Next, reboot the primary broker. This will also reboot the replica broker. For instructions on rebooting your broker, see [Rebooting an Amazon MQ broker](amazon-mq-rebooting-broker.md).
 
 For more information on configuring additional settings for your ActiveMQ broker, see [Getting started: Creating and connecting to an ActiveMQ broker](getting-started-activemq.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

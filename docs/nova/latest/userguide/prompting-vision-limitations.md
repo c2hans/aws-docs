@@ -16,7 +16,3 @@ The following are key model limitations, where model accuracy and performance mi
 + **Counting**: The Amazon Nova models can provide approximate counts of objects in an image, but might not always be precisely accurate, especially when dealing with large numbers of small objects.
 + **Inappropriate content**: The Amazon Nova models will not process inappropriate or explicit images that violate the Acceptable Use Policy
 + **Healthcare applications**: Due to the sensitive nature of these artifacts, even though Amazon Nova models can give general analysis on healthcare images or videos, we do not recommend that you interpret complex diagnostic scans. The response of Amazon Nova should never be considered a substitute for professional medical advice.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

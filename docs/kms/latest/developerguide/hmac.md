@@ -33,7 +33,3 @@ HMAC KMS keys are supported in all AWS Regions that AWS KMS supports.
 + To identify and view HMAC KMS keys, see [Identify HMAC KMS keys](identify-key-types.md#hmac-view).
 + To learn about using HMACs to create JSON web tokens, see [How to protect HMACs inside AWS KMS](https://aws.amazon.com/blogs/security/how-to-protect-hmacs-inside-aws-kms/) in the *AWS Security Blog*.
 + Listen to a podcast: [Introducing HMACs for AWS Key Management Service](https://aws.amazon.com/podcasts/introducing-hmacs-apis-in-aws-key-management-service) on *The Official AWS Podcast*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

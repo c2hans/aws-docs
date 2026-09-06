@@ -89,7 +89,3 @@ Amazon EKS supports shared security groups.
 ### Considerations for Amazon EKS
 <a name="_considerations_for_amazon_eks"></a>
 + EKS has the same requirements of shared or multi-VPC security groups as standard security groups.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

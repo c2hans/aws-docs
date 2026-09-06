@@ -35,7 +35,3 @@ To help you navigate this information, you can do the following:
 <a name="ongoing-access"></a>
 
 After each successful forecast creation, you can revisit this analysis on the **Demand Pattern** tab in the forecast review pages. In this view, the analysis responds to any filters you apply in the forecast review. The downloaded report contains analysis specific to your filtered selection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

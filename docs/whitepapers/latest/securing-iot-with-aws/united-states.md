@@ -40,7 +40,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
 <a name="state-of-california"></a>
 
  California is among the first states within the United States to pass legislation on IoT. The current bills address issues such as security of device design and data protection, but do not have specific requirements of IoT manufacturers. Instead, lawmakers have focused on security at the design phase, writing in [SB-327 Information privacy: connected devices](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180SB327) that protection of data must be “appropriate to the nature and function of the device” and “appropriate to the information it may collect, contain, or transmit.”
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

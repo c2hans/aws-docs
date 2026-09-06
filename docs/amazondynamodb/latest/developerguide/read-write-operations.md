@@ -55,7 +55,3 @@ The following list describes how DynamoDB write operations consume write units:
 For `PutItem`, `UpdateItem`, and `DeleteItem` operations, DynamoDB rounds the item size up to the next 1 KB. For example, if you put or delete an item of 1.6 KB, DynamoDB rounds the item size up to 2 KB.
 
 `PutItem`, `UpdateItem`, and `DeleteItem` operations allow *conditional writes*, where you specify an expression that must evaluate to true for the operation to succeed. If the expression evaluates to false, DynamoDB still consumes write capacity units from the table. The amount of consumed write capacity units depends on the size of the item. This item can be an existing item in the table or a new one you're attempting to create or update. For example, say that an existing item is 300 KB. The new item you’re trying to create or update is 310 KB. The write capacity units consumed will be 310 KB for the new item.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

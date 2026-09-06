@@ -25,7 +25,3 @@ FSI workloads often rely on many external service integrations with partner firm
 <a name="fsirel04-bp03"></a>
 
 Design your workload so that it is able to function despite impairment to dependencies, like external service integrations with partner firms, as well as services from other departments in the same firm. Decouple your workload from its dependencies so that it has static stability and continues functioning, or at least fails gracefully, even when its dependencies are impaired. Workload code should be reviewed and tested with the consideration that any API call to an external dependency may time out with no response, or return an unexpected error. Use chaos engineering to perform experiments where the workload's functionality is observed during simulation dependency disruption.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,7 +84,3 @@ For each telemetry message:
 The SafetyProcessor prevents alert fatigue through two mechanisms:
 +  **Cooldown per vehicle per event type** — After a safety event fires for a vehicle, the same event type will not fire again for that vehicle for 5 minutes (configurable). This prevents a vehicle driving at 70 mph from generating a SPEEDING event every second.
 +  **Message deduplication** — Each telemetry message is hashed and checked against a processed set to prevent duplicate processing from Kafka redelivery.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

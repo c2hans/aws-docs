@@ -126,7 +126,3 @@ So what's the takeaway for you, the site owner or web designer? Well, it's prett
 + Chris Mills, [Love your devices: adaptive web design with media queries, viewport and more](http://dev.opera.com/articles/view/love-your-devices-adaptive-web-design-with-media-queries-viewport-and-more/) at *Dev.Opera*
 + Andreas Bovens, [An introduction to meta viewport and @viewport](http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/) at *Dev.Opera*
 + Examples of responsively designed sites in [Media Queries](http://mediaqueri.es/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Silk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query silk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

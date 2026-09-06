@@ -21,7 +21,3 @@ We strongly recommend that you never put confidential or sensitive information, 
 <a name="encryption-rest-transit"></a>
 
 By default, all AWS IoT Wireless data in transit and at rest is encrypted. AWS IoT Wireless doesn't support customer-managed AWS KMS keys from AWS KMS key. To encrypt the data, AWS IoT Wireless only uses an AWS owned key.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

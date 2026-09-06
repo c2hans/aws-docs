@@ -18,7 +18,3 @@ Amazon Chime is not always a replacement for your telephone. You can only make e
 + [Adding a phone number to your contacts](phone-contact.md)
 + [Accessing voicemail](vm.md)
 + [Making emergency calls with Amazon Chime](emergency-calls.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

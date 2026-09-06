@@ -36,7 +36,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 |   |
 
  Health data is often complex, and subject to temporal variations in quality and concept expression. Model performance may degrade over time due to data quality, model quality, and concept drift. Create a baseline for data quality, and [automate monitoring performance](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-data-quality.html) in production. Automate alerts for changes in data quality or distributions, such as age deciles and prevalence of relevant chronic diseases. [SageMaker AI Model Monitor](https://aws.amazon.com/sagemaker/model-monitor/) provides an end-to-end framework model monitoring and lifecycle management.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -70,7 +70,3 @@ To configure your logical network for SAP HANA, follow these steps:
 1. For scale-out deployments, configure SAP HANA inter-service communication to let SAP HANA communicate over the internal network. To learn more about this step, see [Configuring SAP HANA Inter-Service Communication](https://help.sap.com/saphelp_hanaplatform/helpdata/en/bb/cb76c7fa7f45b4adb99e60ad6c85ba/frameset.htm) in the SAP HANA documentation.
 
 1. Configure SAP HANA hostname resolution to let SAP HANA communicate over the replication network for SAP HSR. To learn more about this step, see [Configuring Hostname Resolution for SAP HANA System Replication](https://help.sap.com/saphelp_hanaplatform/helpdata/en/9a/cd6482a5154b7e95ce72e83b04f94d/frameset.htm) in the SAP HANA documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -155,7 +155,3 @@ You can also take manual backups of your Multi-AZ DB cluster. For very long-term
 You can restore a Multi-AZ DB cluster to a specific point in time, creating a new Multi-AZ DB cluster. For instructions, see [Restoring a Multi-AZ DB cluster to a specified time](USER_PIT.MultiAZDBCluster.md).
 
 Alternately, you can restore a Multi-AZ DB cluster snapshot to a Single-AZ deployment or Multi-AZ DB instance deployment. For instructions, see [Restoring from a Multi-AZ DB cluster snapshot to a DB instance](USER_RestoreFromMultiAZDBClusterSnapshot.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

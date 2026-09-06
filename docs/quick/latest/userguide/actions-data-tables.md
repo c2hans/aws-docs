@@ -183,7 +183,3 @@ To loop through rows in a data table, use the "Loop through items" action under 
 When looping through rows in a table, refer to individual cell values using the syntax of `row["column name"]` where column name is replaced with the name of the column for the specific cell.
 
 To update the value of a cell in a row, use the "Save value" action under "General". The "Value to save" is the value you want to update the cell with. The "Variable name" is the reference to the cell using the same syntax as above, `row["column name"]`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

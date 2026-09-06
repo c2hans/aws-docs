@@ -32,7 +32,7 @@ For `io1`, `io2`, and `gp3` volumes only. Volume performance is well below expec
 `Stalled`
 For `io1`, `io2`, and `gp3` volumes only. Volume performance is severely impacted.
 
-If you have a volume where I/O is disabled, see [Work with an impaired Amazon EBS volume](work_volumes_impaired.md). If you have a volume where I/O performance is below normal, this might be a temporary condition due to an action you have taken (for example, creating a snapshot of a volume during peak usage, running the volume on an instance that cannot support the I/O bandwidth required, accessing data on the volume for the first time, etc.).
+If you have a volume where I/O is disabled, see [Work with an impaired Amazon EBS volume](work_volumes_impaired.md). If you have a volume where I/O performance is below normal, this might be a temporary condition due to an action you have taken (for example, creating a snapshot of a volume during peak usage, running the volume on an instance that cannot support the I/O bandwidth required, accessing data on the volume for the first time, and so on).
 
 ------
 #### [ Console ]
@@ -68,7 +68,3 @@ Get-EC2VolumeStatus -VolumeId {{vol-01234567890abcdef}}
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

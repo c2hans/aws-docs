@@ -38,7 +38,3 @@ Access for AWS Managed Microsoft AD users in nested groups within your directory
 1. Under **Specify which users or groups to add**, select either **Find by user** or **Find by group**, and then type the name of the user or group. In the list of possible matches, choose the user or group that you want to add.
 
 1. Choose **Add** to finish assigning the users and groups to the role.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

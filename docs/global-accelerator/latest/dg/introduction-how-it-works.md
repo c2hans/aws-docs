@@ -131,7 +131,3 @@ Here's a brief summary of how ICMP helps to ensure internet availability. The ma
 You cannot block ICMP traffic at your accelerator in Global Accelerator. Blocking all ICMP traffic would also drop ICMP messages such as `ICMPv6 Packet Too Big (PTB)` (Type 2) and `Destination Unreachable: Fragmentation Needed and Don't Fragment was Set` (Type 3, Code 4). These messages are necessary for traffic to successfully make it back to the originating host. In turn, these dropped messages would cause TCP and protocols that are built on top of Global Accelerator to drop traffic from clients that are on networks with smaller-than-typical MTU, preventing PMTUD.
 
 Note that for PMTUD to work, the security groups of your endpoints must also allow ICMP traffic. If you have availability issues that are specific to certain end-user networks, confirm that your endpoint security groups allow ICMP traffic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

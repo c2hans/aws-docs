@@ -18,7 +18,3 @@ When using Storage Browser for S3, be aware of the following limitations:
 + S3 Access Grants with WRITE only permission isn't supported.
 + Storage Browser for S3 supports the `PUT` operation for files up to 160 GB in size.
 + Storage Browser for S3 only supports the `COPY` operation for files smaller than 5 GB. If the file size exceeds 5 GB, Storage Browser fails the request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

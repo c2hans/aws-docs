@@ -33,7 +33,3 @@ When your Lambda function opens in VS Code via the Lambda console:
 If there is not a properly configured `handler file` in the workspace, no file opens in the VS Code editor.
 
 Opening your Lambda function in VS Code via the Lambda console allows you to access all of the existing AWS Toolkit Lambda features, including the ability to edit function code with full language support, local testing, remote debugging, deployment support, and dependency management. For more information about Lambda features supported in the AWS Toolkit, see the [AWS Lambda](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/building-lambda.html) service table of contents in this user guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

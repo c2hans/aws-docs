@@ -12,7 +12,3 @@ To request offboarding an account you must take the following actions:
 1. Submit a formal service request to offboard the account. The request must include all the EDI instances that you want to offboard.
 
 1. Inform your E-SDM about the EDI instances that you want to offboard and request their help with the offboarding process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Energy Data Insights on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query EDI` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,7 +52,3 @@ The following limitations apply to Windows operating systems that you can import
 + VM Import/Export does not support Emergency Management Services (EMS). If EMS is enabled for a source Windows VM, we disable it in the imported image.
 + Windows language packs that use UTF-16 (or non-ASCII) characters are not supported for import. We recommend using the English language pack when importing Windows VMs.
 + Windows Server VMs with the Hyper-V server role installed are not supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vm-import` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

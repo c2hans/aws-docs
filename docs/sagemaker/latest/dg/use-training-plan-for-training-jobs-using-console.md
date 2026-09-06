@@ -24,7 +24,3 @@ To create a training job using a training plan's reserved capacity in the SageMa
 ![SageMaker AI console page for creating a new training job. The page displays various configuration options including job settings, algorithm options, resource configuration, training plan selection, and stopping conditions.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/training-plans/tp-create-training-job.png)
 
 Review and launch your job. Your job starts running as soon as the training plan becomes `Active`, pending capacity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

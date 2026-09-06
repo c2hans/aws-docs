@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/pi
 *Requirement 4:* The application must not store PIN blocks. The PIN blocks, even encrypted, must not be retained in transaction journals or logs. The service does not store PIN blocks and the PIN assessment verifies that they are not in logs.
 
 Note that the PCI PIN Security standard is applies to acquiring “the secure management, processing, and transmission of personal identification number (PIN) data during online and offline payment card transaction processing at ATMs and point-of-sale (POS) terminals”, as stated in the standard. However, the standard is often used for assessing cryptographic key management for payments outside of that intended scope. This may include issuer use cases where PINs are stored. Exceptions to requirements for these cases should be agreed with intended audience for the assessment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

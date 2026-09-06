@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 + **Operating System** – Amazon Linux 2023
 + **RAM** – We recommend allocating at least 16 GB
 + **CPU** – We recommend allocating at least 4 cores
-+ **Disks** – 35 GB (included in the VHD)
++ **Disks** – 35 GB minimum (included in the VHD). For larger inventories, see [Disk sizing and management](discovery-tool-disk-sizing.md).
 + **Hyper-V requirements** – See [Hyper-V host requirements for running AL2023 on Hyper-V](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html#hyperv-host-requirements)
 
 ## Deploy the Hyper-V VHD
@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 1. Complete the setup wizard. On the **Specify Generation** page, select **Generation 1**. Generation 2 virtual machines do not support the VHD format. On the **Assign Memory** page, allocate at least 16384 MB. On the **Connect Virtual Hard Disk** page, choose **Use an existing virtual hard disk** and select the VHD file that you copied.
 
 1. Start the VM. After a few minutes, check the **Networking** tab of the VM in Hyper-V Manager to find the IP address, or connect to the VM console and run `ip addr`. You use this IP address to connect to the discovery tool.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

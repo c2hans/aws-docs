@@ -513,7 +513,3 @@ In the following tutorials, you connect a Lambda function to resources in your V
 + [Tutorial: Configuring a Lambda function to access Amazon ElastiCache in an Amazon VPC](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/LambdaRedis.html)
 
 To connect your function to resources in a VPC that belongs to another AWS account, see [Giving Lambda functions access to a resource in an Amazon VPC in another account](configuration-vpc-cross-account.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

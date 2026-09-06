@@ -24,7 +24,3 @@ In Figure 1, there is an RCP attached to the Production OU that has an explicit 
 ![Example organization structure with a Deny statement attached at Production OU and its impact on Account A and Account B](http://docs.aws.amazon.com/organizations/latest/userguide/images/rcp_deny_1.png)
 
 *Figure 1: Example organization structure with an `Deny` statement attached at Production OU and its impact on Account A and Account B*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

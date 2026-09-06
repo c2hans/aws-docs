@@ -14,7 +14,3 @@ When migrating any type of application to AWS, including legacy .NET Framework a
 * Six Rs of migration*
 
 Although there are reasons to modernize applications by re-platforming or refactoring, including optimizing or adding new features, the simplest way to migrate .NET applications to AWS is to rehost the applications using either AWS Elastic Beanstalk or Amazon EC2.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

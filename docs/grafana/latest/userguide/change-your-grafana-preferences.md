@@ -60,7 +60,3 @@ To make changes to the configuration of your workspace, see [Configure a Amazon 
    +  **IP address** – The IP address that you logged on from.
    +  **Browser & OS** – The web browser and operating system used to log on to Grafana.
    +  If you are a Grafana admin for the instance, you can revoke a session by choosing the red signout icon in the session row.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

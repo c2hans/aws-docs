@@ -121,7 +121,3 @@ In case you need to stop the analysis of the transcripts you have uploaded, you 
 After calling the `StopBotRecommendation`, the internal `BotRecommendationStatus` is set to `Stopping` and you are not charged. To make sure the job has stopped, you can call the `DescribeBotRecommendation` API and verify that the `BotRecommendationStatus` is `Stopped`. This usually takes 3-4 minutes.
 
 You are not charged for the processing after the `StopBotRecommendation` API is called.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

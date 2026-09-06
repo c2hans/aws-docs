@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/conclusio
  Remember that IPv6 only makes a difference at the network layer of the networking stack. Many connectivity and security elements, especially in cloud native applications, are handled at higher layers and are therefore not affected.
 
  AWS offers comprehensive IPv6 support in Amazon VPC and AWS services running at the edge of AWS Cloud. You can adopt IPv6 at your own pace and focus on use cases where you will benefit the most from the adoption.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

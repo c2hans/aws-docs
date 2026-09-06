@@ -23,7 +23,3 @@ This feature is only available in US East (N. Virginia).
 + **How does Insights handle unallocated demand?** – When *outbound\_shipment* information is unavailable, Insights will allocate demand from *outbound\_order\_line* to either the promised delivery date or the requested delivery date. When *outbound\_shipment* information is available, Insights will distribute the total demand quantity across ship dates. Any unallocated demand in a day and up to six months are carry forwarded. When there is a cancellation, Insights will stop carrying forward the demand.
 **Note**
 This feature is only available in US East (N. Virginia).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

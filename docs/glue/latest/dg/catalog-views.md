@@ -152,7 +152,3 @@ SELECT * from my_database.catalog_view LIMIT 10;
 +  To share data across an account or region, the entire view must be shared cross account and cross region, using AWS Lake Formation resource links.
 +  User-defined functions (UDFs) aren't supported.
 +  You can't reference other views in Data Catalog views.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

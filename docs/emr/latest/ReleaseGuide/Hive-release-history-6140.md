@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 | Bug fix | [HIVE-23606](https://issues.apache.org/jira/browse/HIVE-23606): (LLAP) Delay In `DirectByteBuffer` cleanup for `EncodedReaderImpl` |
 | Bug fix | [HIVE-22165](https://issues.apache.org/jira/browse/HIVE-22165): Synchronisation introduced by [HIVE-14296](https://issues.apache.org/jira/browse/HIVE-14296) on `SessionManager.closeSession` causes high latency in a busy Hive server  |
 | Bug fix | [HIVE-21304](https://issues.apache.org/jira/browse/HIVE-21304): Make bucketing version usage more robust |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

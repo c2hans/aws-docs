@@ -17,7 +17,3 @@ In Amazon SageMaker Studio or Amazon SageMaker Studio Classic, you'll only see r
 To improve resource filtering, you can add the `sagemaker:domain-arn` tag to untagged resources by following the steps in [Backfill domain tags](domain-multiple-backfill.md).
 
 Additionally, all resources created in shared spaces are automatically filtered to that particular shared space.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

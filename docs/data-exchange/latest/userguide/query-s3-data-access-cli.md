@@ -61,7 +61,3 @@ When a provider has enabled Requester Pays, the subscriber pays for the data tra
 1. (Optional) You can also copy an object to your local system using the following command.
 
    `aws s3api get-object --bucket <Access point alias> --key 'v1.0/btc/transactions/date=2022-11-27/part-00000-03a88dba-27dd-4f59-a890-70a3d2c7ad26-c000.snappy.parquet' AWS_btc.snappy.parquet --request-payer requester `
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

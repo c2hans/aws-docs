@@ -23,7 +23,3 @@ Use this table to learn about the icons you see in your UI. You can automaticall
 |  ![The Delete labels icon.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/sms/video/Delete.png)  | delete label | Delete a label. This will delete the bounding box associated with the label in a single frame.  |
 |  ![The Show or hide label icon.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/sms/video/Show_Hide.png)  | show or hide label | Select this icon to show a label that has been hidden. If this icon has a slash through it, select it to hide the label.  |
 |  ![The Edit icon.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/sms/video/Edit.png)  | edit label | Select this icon to open the Edit instance menu. Use this menu to edit a label category, ID, and to add or edit label attributes.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

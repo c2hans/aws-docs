@@ -35,7 +35,3 @@ The following table describes the AWS Site-to-Site VPN User Guide updates.
 | [VPN connections using static routing configuration](#WhatsNew) | You can create IPsec VPN connections to Amazon VPC using static routing configurations. Previously, VPN connections required the use of the Border Gateway Protocol (BGP). We now support both types of connections and you can now establish connectivity from devices that do not support BGP, including Cisco ASA and Microsoft Windows Server 2008 R2. | September 13, 2012 |
 | [Automatic route propagation](#WhatsNew) | You can now configure automatic propagation of routes from your VPN and AWS Direct Connect links to your VPC routing tables. | September 13, 2012 |
 | [Site-to-Site VPN CloudHub and redundant VPN connections](#WhatsNew) | You can securely communicate from one site to another with or without a VPC. You can use redundant VPN connections to provide a fault-tolerant connection to your VPC. | September 29, 2011 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

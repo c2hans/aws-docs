@@ -63,7 +63,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 +  [AWS Inferentia](https://aws.amazon.com/machine-learning/inferentia/)
 +  [Best practices for deploying models on SageMaker AI Hosting Services](https://docs.aws.amazon.com/sagemaker/latest/dg/deployment-best-practices.html)
 +  [Data and model quality monitoring with Amazon SageMaker AI Model Monitor](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -162,7 +162,3 @@ You can use the RDS API to work with reserved DB instances:
   + `--reserved-db-instances-offering-id` – The ID of the offering that you want to purchase.
   + `--reserved-db-instance-id` – You can assign your own identifier to the reserved DB instances that you purchase to help track them.
 + After you have purchased reserved DB instances, you can get information about your reserved DB instances. Call the [`DescribeReservedDBInstances`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeReservedDBInstances.html) RDS API operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -106,7 +106,3 @@ Various output variables based on expression and mapValue options:
 | /(\\w\+) (\\w\+)/ | name | name=John | The first matching is mapped to a new variable called name.  |
 | /(?\\w\+) (?\\w\+)/ | - | firstName=John, lastName=Doe | When named groups are used they are the names of the output variables and mapValue is ignored. |
 | /(?\\w\+) (?\\w\+)/ | name | firstName=John, lastName=Doe | Same as above |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

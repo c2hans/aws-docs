@@ -141,7 +141,3 @@ To estimate the required IP addresses for a proxy that's associated with an Auro
 + The proxy that's attached to this DB cluster has the default endpoint and 1 custom endpoint with the read-only role.
 
 In this case, the proxy needs 215 free IP addresses. While calculations suggest 248 IPs (110 \+ (3\*45) \+ 3), RDS Proxy doesn't consume more than 215 IP addresses for each proxy in a VPC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ Before you begin this tutorial, you have to complete the following prerequisites
 To learn more about hosting webpages using AWS services, see [Host a static webpage](https://aws.amazon.com/getting-started/hands-on/host-static-website/).
 
 **Next**: [Set Up Amazon Pinpoint](tutorials-two-way-sms-part-1.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

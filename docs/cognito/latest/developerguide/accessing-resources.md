@@ -24,7 +24,3 @@ For more information, see [An example authentication session](authentication.md#
 + [Authorizing access to client or server resources with Amazon Verified Permissions](scenario-backend.md)
 + [Accessing resources with API Gateway after sign-in](user-pool-accessing-resources-api-gateway-and-lambda.md)
 + [Accessing AWS services using an identity pool after sign-in](amazon-cognito-integrating-user-pools-with-identity-pools.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

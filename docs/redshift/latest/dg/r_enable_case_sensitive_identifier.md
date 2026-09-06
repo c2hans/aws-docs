@@ -120,7 +120,3 @@ SELECT MixedCasedColumn FROM MixedCasedTable2;
   ```
 +  We recommend that regular users querying tables with dynamic data masking or row-level security policies attached have the default enable\_case\_sensitive\_identifier setting. For information on row-level security, see [Row-level security](t_rls.md). For information on dynamic data masking, see [Dynamic data masking](t_ddm.md).
 + To reference identifiers with mixed case using dot notation, wrap each case-sensitive identifier in double quotation marks. For example, `public."MixedCasedTable"."MixedCasedColumn"`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

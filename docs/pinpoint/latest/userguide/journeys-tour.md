@@ -62,7 +62,3 @@ The following table includes descriptions of several of the buttons that appear 
 | ![The zoom in button.](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-zoom-in-button.png) | **Zoom in** | Increases the size of objects in the journey workspace. |
 | ![The add activity button.](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-add-activity.png) | **Add activity** | This button appears at every point where you can insert another step in the journey. When you choose this button, you see a menu that lets you choose an activity type. |
 | ![The send feedback button.](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-feedback-button.png) | **Feedback** | A quick way to provide feedback about your experience using journeys. We review all of the feedback that we receive through this button. We might contact you for additional information if we have any questions. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

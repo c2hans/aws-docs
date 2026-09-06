@@ -22,7 +22,3 @@ If your session has expired on the server and you are no longer logged in to the
 If your email gets stuck in your outbox and doesn't get sent, Amazon WorkMail displays this error message. This may be due to a network issue. Try saving the email again to resolve this error.
 
 If your Amazon WorkMail administrator asks for email headers to help troubleshoot an email issue, you can copy and paste the email headers from your email to send to them. For more information, see [Viewing email headers](https://docs.aws.amazon.com/workmail/latest/adminguide/email-headers.html) in the *Amazon WorkMail Administrator Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

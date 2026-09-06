@@ -138,7 +138,3 @@ The following table describes important changes to the Amazon EC2 Auto Scaling d
 | Support for CloudWatch alarms | Removed the older trigger mechanism and redesigned Amazon EC2 Auto Scaling to use the CloudWatch alarm feature. For more information, see [Dynamic scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html). | 2 December 2010 |
 | Suspend and resume scaling | Added support to suspend and resume scaling processes. | 2 December 2010 |
 | Support for IAM | Added support for IAM. For more information, see [Controlling access to your Amazon EC2 Auto Scaling resources](https://docs.aws.amazon.com/autoscaling/ec2/userguide/control-access-using-iam.html). | 2 December 2010 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

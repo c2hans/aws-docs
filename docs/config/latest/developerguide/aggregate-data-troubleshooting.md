@@ -21,7 +21,3 @@ AWS Config might not aggregate data from an organization for one of the followin
 | AWS Config service access is disabled in your organization. | You can enable integration between AWS Config and AWS Organizations through the EnableAWSServiceAccess API. If you choose Add my organization in console, AWS Config automatically enables the integration between AWS Config and AWS Organizations. |
 | AWS Config is unable to access your organization details because all features is not enabled in your organization. | [Enable all features](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_support-all-features.html) in AWS Organizations console. |
 | Organizational changes such as adding an account, removing an account, enabling service access, and disabling service access are not updated in Middle East (Bahrain) and Asia Pacific (Hong Kong) regions immediately. | Organizational changes are subject to 2 hour delay. Wait for 2 hours to see all organization changes. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,7 +55,3 @@ If you aren’t connected successfully, ensure that you have followed the instru
 ## Related resources
 <a name="upsolver-resources"></a>
 +  [Amazon AppFlow data source](https://docs.upsolver.com/upsolver-1/connecting-data-sources/amazon-aws-data-sources/amazon-appflow-data-source) from the Upsolver documentation
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

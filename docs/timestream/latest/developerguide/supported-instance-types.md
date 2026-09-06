@@ -46,7 +46,3 @@ The following table provides recommended parameter values for each instance size
 **Note:** Parameters not listed in this table (such as `datafusion-use-cached-parquet-loader`, `disable-parquet-mem-cache`, `parquet-mem-cache-prune-interval`, `compaction-multipliers`, `compaction-row-limit`, cache eviction intervals, and others) use the same recommended default value across all instance sizes. See [Detailed Parameter Reference](detailed-parameter-reference.md) for their defaults.
 
 **Note:** Parameters not listed in the table above use the same recommended default value across all instance sizes. See [Detailed Parameter Reference](detailed-parameter-reference.md) for their defaults.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

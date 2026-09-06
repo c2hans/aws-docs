@@ -18,7 +18,3 @@ Project duration and working hours influence the pricing model. An on-demand pri
  **Suggestion 20.1.3 – Plan to suspend or decommission systems when not in use**
 
 When projects are no longer active or have achieved their objectives, consider the cost savings from shutting down instances, in addition to the storage savings from decommissioning. Typically, a project will make multiple copies of a system during migration. Remember to shut down systems when they are not being used.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

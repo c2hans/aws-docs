@@ -26,7 +26,3 @@ You can use queued Savings Plans to have continued coverage for your On-Demand u
    1. On the **Savings Plan details** page, choose **Delete queued Savings Plan**.
 
 1. In the pop-up window, choose **Delete**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

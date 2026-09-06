@@ -36,7 +36,3 @@ The following table describes the important changes to the documentation since t
 | [Added APIs](#doc-history) | Added criteria for sorting and filtering query results for [account quotas and usage statistics](https://docs.aws.amazon.com/macie/latest/APIReference/usage-statistics.html). | July 24, 2020 |
 | [Removed APIs](#doc-history) | Removed support for the **ArchiveFindings** and **UnarchiveFindings** operations. To suppress findings, use the `action` parameter of the [CreateFindingsFilter](https://docs.aws.amazon.com/macie/latest/APIReference/findingsfilters.html#CreateFindingsFilter) and [UpdateFindingsFilter](https://docs.aws.amazon.com/macie/latest/APIReference/findingsfilters-id.html#UpdateFindingsFilter) operations. | June 11, 2020 |
 | [General availability](#doc-history) | This release introduces version 2020-01-01 of the Amazon Macie API. | May 13, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ With Timestream for LiveAnalytics customer-defined partition keys, customers can
 + [Customer-defined partition keys and low cardinality dimensions](customer-defined-partition-keys-low-cardinality-dimensions.md)
 + [Creating partition keys for existing tables](customer-defined-partition-keys-creating.md)
 + [Timestream for LiveAnalytics schema validation with custom composite partition keys](customer-defined-partition-keys-schema-validation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

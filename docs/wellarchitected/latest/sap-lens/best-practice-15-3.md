@@ -18,7 +18,3 @@ Tuning SAP application parameters can help improve the performance of the applic
  When running SAP on AWS, overutilized swap space on disk can cause I/O credit exhaustion on Amazon EBS and lead to performance degradation. Evaluate the different [EBS storage options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html) available on AWS and configure swap space to meet your performance needs.
 +  SAP Note: [1597355 - Swap-space recommendation for Linux](https://launchpad.support.sap.com/#/notes/1597355) [Requires SAP Portal Access]
 +  SAP Documentation: [Swap Space Requirements](https://help.sap.com/saphelp_nw73/helpdata/en/49/325e42e93934ffe10000000a421937/frameset.htm)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

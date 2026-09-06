@@ -14,7 +14,3 @@ Isolate individual systems or components (for example, Central Services, applica
  **Suggestion 13.3.2 – Consider capacity flexibility for peak performance**
 
 By selecting architectures which allow for scaling of components, such as the application servers, it will be possible to adapt your capacity to match with performance requirements. This allows your SAP systems to scale for exceptional demand including month end processing or seasonal peaks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

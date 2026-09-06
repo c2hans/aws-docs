@@ -57,7 +57,7 @@ For more information, see [Enabling the agent with code](enabling-the-agent-with
          "codeguru-profiler:ConfigureAgent",
          "codeguru-profiler:PostAgentProfile"
       ],
-      "Resource": "arn:aws:codeguru-profiler:{{region-id}}:{{aws-account-id}}:profilingGroup/{{profilingGroupName}}"
+      "Resource": "arn:aws:codeguru-profiler:{{us-east-1}}:{{123456789012}}:profilingGroup/{{profilingGroupName}}"
    }]
 }
 ```
@@ -81,7 +81,7 @@ The following is an example.
          "codeguru-profiler:GetProfile",
          "codeguru-profiler:DescribeProfilingGroup"
       ],
-      "Resource": "arn:aws:codeguru-profiler:{{region-id}}:{{aws-account-id}}:profilingGroup/profilingGroupName"
+      "Resource": "arn:aws:codeguru-profiler:{{us-east-1}}:{{123456789012}}:profilingGroup/profilingGroupName"
    }]
 }
 ```
@@ -334,7 +334,3 @@ You can create a policy that allows users to view a CodeGuru Profiler profiling 
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

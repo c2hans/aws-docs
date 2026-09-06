@@ -28,7 +28,3 @@ For an even smoother experience, use the official [Terraform Module for AWS Para
 1. Networking infrastructure required by a ParallelCluster cluster
 
 See [examples](https://github.com/aws-tf/terraform-aws-parallelcluster/tree/main/examples) of how to use the module.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

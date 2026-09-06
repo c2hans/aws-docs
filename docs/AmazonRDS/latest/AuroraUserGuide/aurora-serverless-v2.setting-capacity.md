@@ -714,7 +714,3 @@ Updating shared memory parameters requires a database restart for the changes to
 + Platform version limitations can affect scaling capabilities. The available scaling range for a given cluster is influenced by both engine version and hardware (platform version). It is possible to have a more capable engine version running on a less capable platform version and vice-versa.
 
 If the database still doesn't scale down to the minimum capacity configured, then stop and restart the database to reclaim any memory fragments that might have built up over time. Stopping and starting a database results in downtime, so we recommend doing this sparingly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,7 +49,3 @@ The best value for an output depends on how the output will be viewed. In genera
 The following graph shows how changing the quality level affects the bitrate that the encoder uses for different parts of the video. While the lines for both level 7 and level 9 spike and drop in the same places, the encoder uses more bits total when the quality is set higher.
 
 ![Both lines vary over time. The line that shows QVBR level 7 is shifted below the line for QVBR level 9.](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/RateCtlModeChart2.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

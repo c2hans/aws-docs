@@ -26,7 +26,3 @@ The following section outlines popular caching strategies:
   The write-back strategy, stores entries directly in the cache by the application and after a delay are stored in a database. This type of caching is particularly suitable for write-intensive applications, because services don’t have to wait for data being persisted to the database. Database updates can be stored in a queue and applied asynchronously. Often this pattern is combined with a read-through cache if the workload is read- and write-heavy.
 
 All of these caching strategies have advantages and disadvantages, which can be mitigated by appropriate logic (invalidation, pre-warming etc.). Therefore, additional logic is necessary, which has to be implemented and tested.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/media-data-plane.htm
 You can use any control plane region to create meetings in all AWS Regions. The media data plane is available in all AWS Regions. It includes an audio mixing service, video forwarding service, TURN service and Session Initiation Protocol (SIP) interoperability services. The services are constantly monitored and are designed to scale automatically as load increases. To learn more, see [ Amazon Chime SDK media Regions ](https://docs.aws.amazon.com/chime-sdk/latest/dg/chime-sdk-meetings-regions.html).
 
  For a current list of Regions and Availability Zones, see [ Regions and Availability Zones ](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

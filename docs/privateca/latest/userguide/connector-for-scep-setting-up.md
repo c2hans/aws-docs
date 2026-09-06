@@ -113,7 +113,3 @@ $  aws ram create-resource-share \
 ```
 
 The service principal that calls `CreateConnector` has certificate issuance permissions on the private CA. To prevent service principals that use Connector for SCEP from having general access to your AWS Private CA resources, restrict their permissions using `CalledVia`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

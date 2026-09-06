@@ -97,7 +97,3 @@ int numberOfAccounts = client.forSql("SELECT COUNT(*) FROM accounts")
 
 **Note**
 The `mapToList` function converts a SQL result set into a user-defined object list. We don't support using the `.withFormatRecordsAs(RecordsFormatType.JSON)` statement in an `ExecuteStatement` call for the Java client library, because it serves the same purpose. For more information, see [Processing Amazon RDS Data API query results in JSON format](data-api-json.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

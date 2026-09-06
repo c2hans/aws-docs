@@ -182,7 +182,3 @@ If the issue persists after all three steps, the problem is with your device's c
 
 **Note**
 If other applications on your device also have trouble accessing saved credentials, the issue is with your operating system's credential store or an enterprise policy — not with Wickr. Contact your IT administrator.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -141,7 +141,3 @@ You can add an HTTPS listener to an existing load balancer.
 1. (Optional) Your HTTPS listener was created using the default security policy. If you want to specify a different predefined security policy or a custom security policy, use the [create-load-balancer-policy](https://docs.aws.amazon.com/cli/latest/reference/elb/create-load-balancer-policy.html) and [set-load-balancer-policies-of-listener](https://docs.aws.amazon.com/cli/latest/reference/elb/set-load-balancer-policies-of-listener.html) commands. For more information, see [Update the SSL negotiation configuration using the AWS CLI](ssl-config-update.md#ssl-config-update-cli).
 
 1. (Optional) To set up back-end instance authentication, use the [set-load-balancer-policies-for-backend-server](https://docs.aws.amazon.com/cli/latest/reference/elb/set-load-balancer-policies-for-backend-server.html) command. For more information, see [Configure Back-end Instance Authentication](elb-create-https-ssl-load-balancer.md#configure_backendauth_clt).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

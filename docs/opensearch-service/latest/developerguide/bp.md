@@ -330,7 +330,3 @@ UltraWarm becomes cost-effective when you have roughly 2.5 TiB of data to migrat
 Consider purchasing [Reserved Instances](ri.md) (RIs) after you have a good baseline on your performance and compute consumption. Discounts start at around 30% for no-upfront, 1-year reservations and can increase up to 50% for all-upfront, 3-year commitments.
 
 After you observe stable operation for at least 14 days, review [Accessing reservation recommendations](https://docs.aws.amazon.com/cost-management/latest/userguide/ri-recommendations.html) in the *AWS Cost Management User Guide*. The **Amazon OpenSearch Service** heading displays specific RI purchase recommendations and projected savings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

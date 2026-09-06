@@ -108,7 +108,3 @@ The following table lists the AWS KMS cryptographic operations. It also shows th
 For information about the permissions for cryptographic operations, see the [AWS KMS permissions](kms-api-permissions-reference.md).
 
 To make AWS KMS responsive and highly functional for all users, AWS KMS establishes quotas on number of cryptographic operations called in each second. For details, see [Shared quotas for cryptographic operations](requests-per-second.md#rps-shared-limit).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

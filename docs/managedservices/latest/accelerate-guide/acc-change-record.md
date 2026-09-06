@@ -593,7 +593,3 @@ The following permissions are needed to run change record queries:
   + Amazon S3 bucket CloudTrail datastore: ams-a{{AccountId}}-cloudtrail-{{primary region}}, or your Amazon S3 bucket name, CloudTrail trail events Amazon S3 bucket data store.
 + **Amazon S3 write access**
   + Athena events query results Amazon S3 bucket: ams-a{{AccountId}}athena-results-{{primary region}}
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

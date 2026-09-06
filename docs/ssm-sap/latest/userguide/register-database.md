@@ -321,7 +321,3 @@ See the following table for examples of single node and high availability SAP HA
 <a name="optional-step"></a>
 
 Now the registration is complete, and you can begin data protection operations, including backup and restore of your SAP HANA databases. For more details, see [AWS Backup documentation](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-saphana.html#w142aac17c15c33b5).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ssm-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

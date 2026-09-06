@@ -27,7 +27,3 @@ Elemental Live can pass through the following ancillary data:
   You can choose to identify this custom data so that Elemental Live can extract it.
 
   You can then set up SMPTE 2110 outputs to include that data. Elemental Live doesn't read or use the ancillary data in any way.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

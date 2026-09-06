@@ -96,7 +96,3 @@ The following table describes important additions to the Amazon WorkSpaces servi
 | [ WorkSpaces launched in Asia Pacific (Sydney)](amazon-workspaces.html) | WorkSpaces is available in the Asia Pacific (Sydney) Region. | May 15, 2014 |
 | [ WorkSpaces launched in Europe (Ireland)](amazon-workspaces.html) | WorkSpaces is available in the Europe (Ireland) Region. | May 5, 2014 |
 | [Public beta ](amazon-workspaces.html) | WorkSpaces is available as a public beta. | March 25, 2014 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

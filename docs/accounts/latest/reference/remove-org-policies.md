@@ -57,7 +57,3 @@ After you've activated advanced features, you can modify the Resource Control Po
 1. When you're finished, choose **Save changes**.
 
 These steps show you how to modify organization policies by AWS Settings. However, you can sign into the AWS Management Console with your management account and access the AWS Organizations console to modify these policies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

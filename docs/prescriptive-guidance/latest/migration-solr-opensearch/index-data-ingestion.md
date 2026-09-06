@@ -45,7 +45,3 @@ In addition to the main update handlers, the following tools can help with data 
 Organizations typically use the following ETL processes in Solr:
 + Database ETL: DIH provides a streamlined ETL process for RDBMS sources by automatically mapping database columns to fields and handling incremental updates. The SolrJ API enables programmatic control for custom ETL workflows when importing from file systems or other structured data sources. You can design a composite ETL pipeline where database records contain metadata and file path references, and use DIH with custom entity processors to fetch metadata and enrich it with file content.
 + Web content ETL: Apache Nutch integration delivers a systematic ETL pipeline for web content. Apache Nutch handles crawling and extraction, transforms HTML content into structured data, and loads it directly into the index through native integration (DIH).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

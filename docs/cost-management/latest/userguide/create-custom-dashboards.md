@@ -28,7 +28,3 @@ Autosave is enabled by default, so all changes are saved automatically.
 After you create a dashboard, it's assigned a unique Amazon Resource Name (ARN) and is initially empty. The dashboard is only available in your account. You can add widgets to display your cost and usage data. For more information, see [Adding widgets to dashboards](https://docs.aws.amazon.com/cost-management/latest/userguide/add-widgets-to-dashboards.html).
 
 After configuring your dashboard, you can share it with other accounts within or outside your organization. For more information, see [Sharing dashboards](https://docs.aws.amazon.com/cost-management/latest/userguide/share-dashboards.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

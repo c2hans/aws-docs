@@ -27,7 +27,3 @@ For a completed Fetch, the `CACHE` and `EXTERNAL_WEB` counts plus `failedUrlCoun
 Access-denied outcomes are only logged when you opt into data event delivery for `bedrock-websearch`. Otherwise they are not reported. An `AccessDenied` event includes the error code and can include the IAM authorization message, which helps you diagnose policy issues.
 
 By design, CloudTrail does not expose the query text, the URLs, or the raw search results from Web Search. Query text is treated the same way as an inference prompt.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

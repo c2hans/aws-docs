@@ -178,7 +178,7 @@ distinct_buyers
 386
 ```
 
-Suppose that you want the number of distinct users who bought an item on a certain range of dates. An example might be from the Friday after Thanksgiving to the following Monday. To get this, the following query uses the `hll_combine` aggregate function. This function enables you to avoid double-counting buyers who purchased an item on more than one day of the selected range.
+Suppose that you want the number of distinct users who bought an item on a certain range of dates. An example might be from the Friday after Thanksgiving to the following Monday. To get this, the following query uses the `hll_combine` aggregate function. With this function, you can avoid double-counting buyers who purchased an item on more than one day of the selected range.
 
 ```
 SELECT hll_cardinality(hll_combine(sketch)) as distinct_buyers
@@ -203,7 +203,3 @@ FROM spectrum.sales
 WHERE TRUNC(saletime) = to_char(GETDATE(), 'YYYY-MM-DD')
 GROUP BY saletime;
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

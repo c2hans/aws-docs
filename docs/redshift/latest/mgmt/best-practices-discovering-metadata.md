@@ -14,7 +14,3 @@ Amazon Redshift provides multiple ways to discover metadata. For applications an
 + [Use SHOW commands](discovering-metadata-show-commands.md)
 + [Querying system tables](discovering-metadata-system-tables.md)
 + [Set the application name connection property](discovering-metadata-application-name.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

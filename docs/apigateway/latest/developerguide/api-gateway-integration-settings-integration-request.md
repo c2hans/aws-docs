@@ -30,7 +30,3 @@ To set up an integration request, you perform the following required and optiona
 + [Choose an API Gateway API integration type](api-gateway-api-integration-types.md)
 + [Set up a proxy integration with a proxy resource](api-gateway-set-up-simple-proxy.md)
 + [Set up an API integration request using the API Gateway console](how-to-method-settings-console.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

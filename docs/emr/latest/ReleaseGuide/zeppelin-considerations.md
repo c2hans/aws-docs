@@ -10,7 +10,3 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/zeppelin-conside
 + Zeppelin does not use some of the settings defined in your cluster's `spark-defaults.conf` configuration file, even though it instructs YARN to allocate executors dynamically if you have set `spark.dynamicAllocation.enabled` to `true`. You must set executor settings, such as memory and cores, using the Zeppelin **Interpreter** tab, and then restart the interpreter for them to be used.
 + Amazon EMR releases 6.10.0 and higher support Apache Zeppelin integration with Apache Flink. See [Working with Flink jobs from Zeppelin in Amazon EMR](flink-zeppelin.md) for more information.
 + Zeppelin on Amazon EMR does not support the SparkR interpreter.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

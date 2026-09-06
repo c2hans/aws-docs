@@ -74,7 +74,3 @@ We recommend that you use the following stages to implement your PoC and validat
 <a name="failure-simulation"></a>
 
 We highly recommend that you simulate a failure scenario and validate whether your design offers the resilience and fault tolerance required to meet your user requirements. You might want to simulate a failure of a data node to see if your cluster has enough resources to handle the recovery gracefully. To check whether your domain could be overwhelmed with large volume ingestion, you can test the buffering settings by simulating a sudden burst of logs from some of your sources. Validate that your design does not exceed any quotas when you scale to a production deployment. For more information, see the Amazon OpenSearch Service documentation on [service quotas](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/limits.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

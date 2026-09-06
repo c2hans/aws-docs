@@ -33,7 +33,3 @@ You can create alias and version ARNs when you build a Lambda function, and you 
 1. Choose **Create SIP media applicaton.**.
 
    A success message appears at the top of the **Create a SIP media application** page, and your media application appears in the list of applications. If you see an error message, follow its instructions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

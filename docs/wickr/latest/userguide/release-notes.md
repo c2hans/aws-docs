@@ -113,7 +113,3 @@ The AWS Wickr client is now only available from the Play Store for users 18 or o
 + Enhancements
   + Improved functionality and tools for moderating content that might violate AWS Terms of Use in the Android client. This can be done through blocking, muting, and reporting users.
   + Updated translations for the Android client.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

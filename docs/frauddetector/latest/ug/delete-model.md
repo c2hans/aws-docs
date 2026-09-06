@@ -60,7 +60,3 @@ Before deleting a model, you must first delete all model versions and are associ
 1. Choose **Actions**, and then choose **Remove model**.
 
 1. Enter the model name and then choose **Remove SageMaker AI model**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

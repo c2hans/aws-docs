@@ -71,7 +71,3 @@ $ aws rolesanywhere get-profile --profile-id {{PROFILE_ID}}
 
 **Note**
 If you see `*` as a specifier, it signifies the default behavior, which maps all recognizable RDNs for `x509Subject`, `x509Issuer` and `x509SAN/Name`. However, `*` does not have a defined behavior in the context of `x509SAN/URI`, `x509SAN/DNS`, or `x509SAN/`. The specifier `Name/` represents the first recognizable attribute of the `Directory Name`. Both `Name` and `Name/` are equivalent to `Name/*` and will be displayed as `Name/*`in the mapping rule.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

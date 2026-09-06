@@ -63,7 +63,3 @@ When using processors with restrictions:
 Always validate your pipeline configuration using the `ValidateTelemetryPipelineConfiguration` API before deployment
 Test the pipeline with sample data using the `TestTelemetryPipeline` API to make sure proper processing
 Monitor pipeline metrics after deployment to make sure events are being processed as expected
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

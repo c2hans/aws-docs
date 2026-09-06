@@ -15,7 +15,3 @@ When you create a new project, Infrastructure Composer generates a starting temp
 
 **Note**
 You can also load an existing in Infrastructure Composer, but you must first [activate local sync mode](using-composer-project-local-sync.md). Once activated, see [Load an existing Infrastructure Composer project with local sync activated](using-composer-how-to-load-with-local-sync.md) to load an existing project.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

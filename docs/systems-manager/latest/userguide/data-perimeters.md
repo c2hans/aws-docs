@@ -41,12 +41,17 @@ The policy would need to access to resources outside your organization but inclu
 
 Similarly, if you're using VPC endpoint policies to restrict S3 access, you would need to make sure that the SSM document categories buckets are accessible through your VPC endpoints.
 
+**Example scenario: Hybrid node registration APIs**
+Hybrid nodes don't natively belong to an AWS account – they are registered to one. Because of this, the `ssm:RegisterManagedInstance`, `ssm:RequestManagedInstanceRoleToken`, and `ssm:UpdateManagedInstancePublicKey` APIs don't use AWS Signature Version 4 (SigV4) when authenticating hybrid nodes.
+
+As a result, policy evaluation can't access an AWS principal identity or global context keys such as `aws:PrincipalOrgId`, `aws:PrincipalAccount`, and `aws:SourceAccount`. Service control policies (SCPs) and VPC endpoint policies that rely on these global keys or on AWS principal identity might block these three APIs when hybrid nodes attempt to register. This can prevent hybrid nodes from completing registration.
+
+To restrict access to these APIs based on account or organization membership, use the following Systems Manager condition keys, which resolve consistently for both Amazon EC2 instances and hybrid nodes:
++ `ssm:NodeAccountId` – Resolves to the account in which an Amazon EC2 instance exists, or the account to which a hybrid node is registered.
++ `ssm:NodeOrgId` – Resolves to the organization that owns the Amazon EC2 instance's account, or the organization of the account to which a hybrid node is registered.
+
 **More information**
 For more information about data perimeters in AWS, see the following topics:
 + [Data perimeters on AWS](https://aws.amazon.com/identity/data-perimeters-on-aws/).
 + [Establish permissions guardrails using data perimeters](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_data-perimeters.html) in the *IAM User Guide*
 + [Service-specific guidance: AWS Systems Manager](https://github.com/aws-samples/data-perimeter-policy-examples/blob/main/service_specific_guidance/ssm-specific-guidance.md) and [Service-owned resources](https://github.com/aws-samples/data-perimeter-policy-examples/blob/main/service_owned_resources.md) in the *AWS Samples* repository on GitHub
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

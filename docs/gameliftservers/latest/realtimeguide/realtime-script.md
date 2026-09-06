@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/realtimeguide/rea
 # Customize an Amazon GameLift Servers Realtime script
 <a name="realtime-script"></a>
 
-To use Amazon GameLift Servers Realtime servers for your game, you need to provide a script (in the form of JavaScript code) to configure and optionally customize how the Amazon GameLift Servers Realtime server run and interact with your game clients. When your script is ready, upload it to the Amazon GameLift Servers service (see [Upload a script for Amazon GameLift Servers Realtime servers](realtime-script-uploading.md)) and use it to create a fleet of game server hosts.
+To use Amazon GameLift Servers Realtime servers for your game, you need to provide a script (in the form of JavaScript code) to configure and optionally customize how the Amazon GameLift Servers Realtime server runs and interacts with your game clients. When your script is ready, upload it to the Amazon GameLift Servers service (see [Upload a script for Amazon GameLift Servers Realtime servers](realtime-script-uploading.md)) and use it to create a fleet of game server hosts.
 
 Start with the default Realtime script and configure it with the following functionality.
 
@@ -256,7 +256,3 @@ exports.ssExports = {
     onHealthCheck: onHealthCheck
 };
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

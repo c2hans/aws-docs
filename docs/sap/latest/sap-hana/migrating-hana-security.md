@@ -15,7 +15,3 @@ See the following AWS blog posts for help analyzing and evaluating architectures
 +  [VPC Subnet Zoning Patterns for SAP on AWS](https://aws.amazon.com/blogs/awsforsap/vpc-subnet-zoning-patterns-for-sap-on-aws-part-3-internal-and-external-access/)
 
 Beyond VPC and network security, SAP HANA systems require routine maintenance to remain secure, reliable, and available; see the [SAP HANA operations overview](https://d1.awsstatic.com/enterprise-marketing/SAP/SAP_HANA_on_AWS_Implementation_and_Operations_Guide.pdf) for specific recommendations in this topic area.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -66,7 +66,3 @@ The following table describes important changes in each release of Amazon Q Busi
 | [Amazon Q Business (For Business Use) guide name update](#doc-history) | The Amazon Q Business (For Business Use) Developer Guide is now called the Amazon Q Business User Guide. | March 29, 2024 |
 | [Boosting chat results using document attributes](#doc-history) | Amazon Q Business now supports boosting content used to generate chat responses using document attributes. For more information, see [Boosting using document attributes](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/metadata-boosting.html). | February 14, 2024 |
 | [Preview release](#doc-history) | This is the initial preview release of the Amazon Q Business (For Business Use) Developer Guide. | November 28, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

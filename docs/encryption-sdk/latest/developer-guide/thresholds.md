@@ -31,7 +31,3 @@ Set the number of messages protected by each cached key to be large enough to ge
 **Maximum bytes encrypted (optional)**
 Specifies the maximum number of bytes that a cached data key can encrypt. This value is optional. Enter a value between 0 and 2^63 - 1. The default value is 2^63 - 1. A value of 0 lets you use data key caching only when you are encrypting empty message strings.
 The bytes in the current request are included when evaluating this threshold. If the bytes processed, plus current bytes, exceed the threshold, the cached data key is evicted from the cache, even though it might have been used on a smaller request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

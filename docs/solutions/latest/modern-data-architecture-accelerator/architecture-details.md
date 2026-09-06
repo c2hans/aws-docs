@@ -216,7 +216,3 @@ For the current list of modules and starter kits and their per-module configurat
 + The [MDAA module and starter kit documentation](https://aws.github.io/modern-data-architecture-accelerator/index.html).
 + The [MDAA release notes](https://github.com/aws/modern-data-architecture-accelerator/releases/) for modules and capabilities added or changed in each release.
 + The JSON schemas and module documentation generated under `.mdaa/<version>/` when you scaffold or enhance a project with `mdaa init` (see [Scaffold a project with `mdaa init`](scaffold-a-project-with-mdaa-init.md)).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Modern Data Architecture Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

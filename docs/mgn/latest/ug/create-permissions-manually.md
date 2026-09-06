@@ -179,7 +179,3 @@ To create the role:
 1.  Attach the **AWSApplicationMigrationAgentInstallationPolicy** policy to the Permission policies.
 
 1.  Name the role **AWSApplicationMigrationConnectorSharingRole\_management-account-id**, replacing *management-account-id* with the ID of the account in which the connector was created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

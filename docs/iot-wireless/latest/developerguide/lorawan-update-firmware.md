@@ -41,7 +41,3 @@ Gateway manufacturers usually provide their own firmware update files and signat
 + [(Optional) Generate the firmware update file and signature](lorawan-script-fwupdate-sigkey.md)
 + [Upload the firmware file to an Amazon S3 bucket and add an IAM role](lorawan-upload-firmware-s3bucket.md)
 + [Schedule and run gateway firmware update task](lorawan-schedule-firmware-update.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

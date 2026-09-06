@@ -20,12 +20,7 @@ Use Classic metrics when you have existing integrations with the CloudWatch API,
 + [Use metrics explorer to monitor resources by their tags and properties](CloudWatch-Metrics-Explorer.md)
 + [Use search expressions in graphs](using-search-expressions.md)
 + [Use metric streams](CloudWatch-Metric-Streams.md)
-+ [Graphing metrics](graph_metrics.md)
 + [Math expressions with metrics](using-metric-math.md)
 + [Using CloudWatch anomaly detection](CloudWatch_Anomaly_Detection.md)
 + [Grafana integration](CloudWatch-Grafana-support.md)
 + [AWS services that publish CloudWatch metrics](aws-services-cloudwatch-metrics.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

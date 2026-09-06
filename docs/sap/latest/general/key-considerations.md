@@ -140,7 +140,3 @@ SAP systems can run on a variety of operating systems, infrastructure platforms,
 <a name="source-servers-compute"></a>
 
 While the system requirements for the Replication Agent are relatively low, consider the constraints on the source server for CPU, memory, network, storage, and other resources that can impact the performance of your disaster recovery solution. Size the source server based on these factors. For more information, see [Source server requirements](https://docs.aws.amazon.com/drs/latest/userguide/installation-requiremets.html#general-requirements2).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

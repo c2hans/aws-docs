@@ -16,7 +16,3 @@ The following table describes significant changes to this guide.
 | Add sections | We added the [Use utility types](typescript-best-practices.md#utility-types) and [Integration test](development-best-practices.md#integration-test) sections. | January 10, 2024 |
 | Minor update | Updated code example for creating an L3 construct. | June 16, 2023 |
 | Initial publication | — | December 8, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

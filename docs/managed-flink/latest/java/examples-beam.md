@@ -364,7 +364,3 @@ This section includes procedures for cleaning up AWS resources created in the Tu
 
 Now that you've created and run a basic Managed Service for Apache Flink application that transforms data using Apache Beam, see the following application for an example of a more advanced Managed Service for Apache Flink solution.
 + ** [ Beam on Managed Service for Apache Flink Streaming Workshop](https://streaming-analytics.workshop.aws/beam-on-kda/)**: In this workshop, we explore an end to end example that combines batch and streaming aspects in one uniform Apache Beam pipeline.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

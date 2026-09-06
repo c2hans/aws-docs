@@ -23,7 +23,3 @@ There are two AWS services for issuing and deploying X.509 certificates. Choose 
    With this service, you can use public [certificates provided by ACM](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html) (ACM certificates) or [ certificates that you import into ACM](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html). If you use AWS Private CA to create a CA, ACM can manage certificate issuance from that private CA and automate certificate renewals.
 
    For more information, see the [AWS Certificate Manager User Guide](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

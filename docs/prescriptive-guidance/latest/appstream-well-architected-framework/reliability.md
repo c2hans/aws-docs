@@ -71,7 +71,3 @@ Implement infrastructure changes through automation, including version-controlle
 + Use IaC for fleet configuration.
 + Implement consistent scaling policies.
 + Use the [Image Assistant CLI](https://docs.aws.amazon.com/appstream2/latest/developerguide/cli-operations-managing-creating-image-image-assistant.html) for consistent image creation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

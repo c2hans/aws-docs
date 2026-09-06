@@ -58,7 +58,3 @@ aws service-quotas list-aws-default-service-quotas \
 The quota returned is the number of Amazon EVS environments or hosts that can be created in this account in the current AWS Region.
 
 To work more with service quotas using the AWS CLI, see [service-quotas](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/index.html) in the * AWS CLI Command Reference*. To request a quota increase, see the [request-service-quota-increase](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/request-service-quota-increase.html) command in the * AWS CLI Command Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

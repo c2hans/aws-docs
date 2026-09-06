@@ -34,7 +34,3 @@ AWS takes responsibility for the resilience of the underlying cloud infrastructu
 Your startup's responsibility focuses on the resilience of the systems you build and deploy on this foundation. The recommendations in this guide fall within your domain of responsibility. By implementing these practices thoughtfully, you can create applications that use reliable AWS infrastructure and incorporate robust recovery capabilities.
 
 This model means you're never building resilience in isolation. You're building upon a proven, reliable foundation while focusing your efforts on the aspects that directly impact your customers and business operations. This guide explores how to make the most of this shared responsibility model, using reliable AWS infrastructure while implementing practical measures to make sure that your applications recover gracefully from disruptions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

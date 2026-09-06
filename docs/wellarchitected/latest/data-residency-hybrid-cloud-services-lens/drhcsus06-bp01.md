@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 <a name="implementation-guidance-62"></a>
 
  Monitor [AWS Local Zones features](https://aws.amazon.com/about-aws/global-infrastructure/localzones/features) to discover the latest generation of Amazon EC2 instances, and use these whenever possible. New Amazon EC2 instance types often incorporate energy efficiency improvements using the latest Intel processor families or AWS-optimized processor architectures such as [AWS Graviton](https://aws.amazon.com/ec2/graviton/). Some of the latest instance types integrate specialized hardware accelerators such as GPUs or FPGAs to offload compute-intensive tasks from the CPU, resulting in overall improved performance per watt. This improved performance per watt in turn reduces energy consumption to help meet your sustainability goals and improve performance for data residency workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ Analytics Studio is a unified web interface for business analysts or data analys
  **Private parameter**. The parameters that are unique to certain events, such as user-customized parameters.
 
  **User attribute.**. User attribute is used to record the property of a user. They fall into two categories: preset attributes collected by SDK presets, such as '\_first\_visit\_date'; custom attributes, that is, user attributes reported by the user themselves, such as 'email\_address'.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Clickstream Analytics on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

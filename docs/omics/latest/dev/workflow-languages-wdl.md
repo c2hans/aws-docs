@@ -127,7 +127,7 @@ HealthOmics sets the **AWS\_HEALTHOMICS\_RESOURCE\_TYPE** environment variable a
 
 If every profile in the list is exhausted, the task fails with failure reason `ALL_PROFILES_INSTANCE_RESERVATION_FAILED`. OOM and service-error retries operate within the current profile and do not advance to the next one.
 
-For more information see [Custom compute and fallback](custom-compute-fallback.md) and for supported accelerator types see [Task accelerators in a HealthOmics workflow definition](task-accelerators.md).
+For more information see [Advanced resource configuration](advanced-resource-configuration.md) and for supported accelerator types see [Task accelerators in a HealthOmics workflow definition](task-accelerators.md).
 
 ### Configure task retry for service errors
 <a name="workflow-wdl-task-retry"></a>
@@ -390,7 +390,3 @@ task ValidateSamFile {
     }
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

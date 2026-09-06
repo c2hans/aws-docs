@@ -172,7 +172,3 @@ This data type is used as a response element for queries on VPC security group m
 + **VpcSecurityGroupId** – This is a String, of type: `string` (a UTF-8 encoded string).
 
   The name of the VPC security group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

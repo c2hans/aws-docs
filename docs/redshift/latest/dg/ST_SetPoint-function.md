@@ -50,7 +50,7 @@ If *geom1* and *geom2* don't have the same value for the spatial reference syste
 ## Examples
 <a name="ST_SetPoint-function-examples"></a>
 
-The following SQL returns a new linestring where we set the second point of the input linestring with the specified point.
+The following SQL returns a new linestring where the second point of the input linestring is set to the specified point.
 
 ```
 SELECT ST_AsText(ST_SetPoint(ST_GeomFromText('LINESTRING(1 2, 3 2, 5 2, 1 2)'), 2, ST_GeomFromText('POINT(7 9)')));
@@ -62,7 +62,7 @@ st_astext
  LINESTRING(1 2,3 2,7 9,1 2)
 ```
 
-The following SQL example returns a new linestring where we set the third point from the right (the index is negative) of the linestring with the specified point.
+The following SQL example returns a new linestring where the third point from the right (the index is negative) of the linestring is set to the specified point.
 
 ```
 SELECT ST_AsText(ST_SetPoint(ST_GeomFromText('LINESTRING(1 2, 3 2, 5 2, 1 2)'), -3, ST_GeomFromText('POINT(7 9)')));
@@ -73,7 +73,3 @@ st_astext
 -------------
  LINESTRING(1 2,7 9,5 2,1 2)
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

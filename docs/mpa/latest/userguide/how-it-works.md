@@ -95,7 +95,3 @@ Multi-party approval works with IAM permissions, it does not replace them. When 
 The Multi-party approval workflow is only triggered if the requester has the necessary IAM permissions to perform the requested operation, and the requested operation is only executed if the requester still has the necessary IAM permissions when the request is approved.
 
 This workflow is designed to add an additional layer of security through team-based approval requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Multi-party approval. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mpa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

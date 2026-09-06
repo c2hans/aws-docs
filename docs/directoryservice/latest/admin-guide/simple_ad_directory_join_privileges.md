@@ -43,7 +43,3 @@ You must perform this procedure on a computer that is joined to your directory a
 1. Verify the information on the **Completing the Delegation of Control Wizard** page and choose **Finish**.
 
 1. Create a user with a strong password and add that user to the `Joiners` group. The user will then have sufficient privileges to connect Directory Service to the directory.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ The lifecycle of an Amazon DocumentDB cluster includes creating, describing, mod
 + [Updating a cluster's operating system](db-cluster-os-upgrade.md)
 + [Stopping and starting a cluster](db-cluster-stop-start.md)
 + [Deleting a cluster](db-cluster-delete.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

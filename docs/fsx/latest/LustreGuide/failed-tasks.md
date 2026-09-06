@@ -29,7 +29,3 @@ A data repository task can fail for several reasons, including those listed foll
 | `S3ObjectUpdateInProgressFromFileRename` | Amazon FSx was unable to release the file because automatic export is processing a rename of the file. The automatic export rename process must finish before the file can be released. |
 | `S3SymlinkInUnsupportedTier` | Amazon FSx was unable to import a symlink object because it's in an Amazon S3 storage class that is not supported, such as an S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive storage class. The `FileStatus` will be `failed` in the task completion report. |
 | `SourceObjectDeletedBeforeReleasing` | Amazon FSx was unable to release the file from the file system because the file was deleted from the data repository before it could be released. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

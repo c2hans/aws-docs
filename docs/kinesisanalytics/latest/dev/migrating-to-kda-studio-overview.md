@@ -1703,7 +1703,3 @@ Here are some additional resources that you can use to learn more about using Ma
 + [Managed Service for Apache Flink Studio Workshop ](https://catalog.us-east-1.prod.workshops.aws/workshops/c342c6d1-2baf-4827-ba42-52ef9eb173f6/en-US/flink-on-kda-studio)
 + [Apache Flink Windowing](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/table/sql/queries/window-tvf/)
 + [Amazon Kinesis Data Analytics Developer Guide – Writing from a Kinesis Data Analytics Stream to an S3 Bucket  ](https://docs.aws.amazon.com/managed-flink/latest/java/examples-s3.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

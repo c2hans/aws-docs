@@ -137,7 +137,7 @@ The following table indicates AWS Outposts support for AWS services in Europe Re
 | Europe (Ireland) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | Europe (London) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | Europe (Milan) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
-| Europe (Spain) | Yes | Yes | No | No | No | Yes | Yes | No | Yes | Yes | Yes | No | Yes | Yes | Yes |
+| Europe (Spain) | Yes | Yes | No | No | No | Yes | Yes | No | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | Europe (Paris) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | Europe (Stockholm) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 
@@ -148,7 +148,7 @@ The following table indicates AWS Outposts support for AWS services in Middle Ea
 
 | AWS Region | Amazon EC2 | Amazon EBS | Amazon EBS Snapshots | Amazon S3 | Amazon RDS SQL, MySQL, PostgreSQL, and Oracle | Amazon ECS | Amazon EKS | Amazon EKS-LC | Amazon EMR | Amazon ElastiCache | Elastic Disaster Recovery | Application Load Balancer | Direct Connect | Amazon VPC | Local Gateway |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Israel (Tel Aviv) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | Yes | Yes | Yes | No | Yes | Yes | Yes |
+| Israel (Tel Aviv) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | Middle East (Bahrain) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | Middle East (UAE) | Yes | Yes | No | No | No | Yes | Yes | No | Yes | Yes | Yes | No | Yes | Yes | Yes |
 
@@ -201,7 +201,3 @@ You are billed for shared resources and any data transfer from the AWS Region to
 For pricing based on location, configuration, and payment option, see:
 + [Outposts racks pricing](https://aws.amazon.com/outposts/rack/pricing/)
 + [Outposts servers pricing](https://aws.amazon.com/outposts/servers/pricing/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

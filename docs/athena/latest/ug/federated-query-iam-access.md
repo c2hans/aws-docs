@@ -192,7 +192,3 @@ The following identity-based permissions policy allows actions that a user or ot
 |  <pre>"cloudformation:*"</pre>  | Allows the creation and management of CloudFormation stacks specified by the resource `{{MyCFStackPrefix}}`. These stacks and stacksets are how AWS Serverless Application Repository deploys connectors and UDFs. |
 |  <pre>"serverlessrepo:*"</pre>  | Allows searching, viewing, publishing, and updating applications in the AWS Serverless Application Repository, specified by the resource identifier arn:aws:serverlessrepo:\*:\*:applications/\*. |
 |  <pre>"ecr:BatchGetImage",<br />"ecr:GetDownloadUrlForLayer"</pre>  | Allows the created Lambda function to access the federation connector ECR image. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

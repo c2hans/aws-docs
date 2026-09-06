@@ -99,7 +99,3 @@ You can use the following dimensions to refine the metrics listed in the previou
 | [IsoCountryCode, MessageFeedbackStatus] | This dimension filters the data you request by ISO country code and message feedback status |
 | [ProtectConfigurationId, IsoCountryCode] | This dimension filters the data you request by protect configuration and ISO country code |
 | OriginationIdentityType | This dimension filters the data you request by origination identity type. Values include PHONE\_NUMBER, SENDER\_ID, RCS\_AGENT, and POOL. For more information, see [RCS CloudWatch metrics and monitoring](rcs-monitoring.md). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -111,7 +111,3 @@ For more on drop-down menus and touch screens, see the following resources.
 Additional Resources
 + [Touch and Mouse: Together Again for the First Time](http://www.html5rocks.com/en/mobile/touchandmouse/)
 + [Mozilla Developer Network :hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Silk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query silk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,7 +45,3 @@ Nested virtualization is not supported on Windows Server 2016-based WorkSpaces. 
 + [Copy a custom image in WorkSpaces Personal](copy-custom-image.md)
 + [Share or unshare a custom image in WorkSpaces Personal](share-custom-image.md)
 + [Delete a custom bundle or image in WorkSpaces Personal](delete_bundle.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

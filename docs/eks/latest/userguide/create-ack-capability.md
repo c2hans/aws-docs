@@ -61,7 +61,3 @@ The automatically created access entry includes the `AmazonEKSACKPolicy` which g
 After creating the ACK capability:
 +  [ACK concepts](ack-concepts.md) - Understand ACK concepts and get started with AWS resources
 +  [Configure ACK permissions](ack-permissions.md) - Configure IAM permissions and multi-account patterns
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

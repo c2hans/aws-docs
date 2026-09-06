@@ -318,7 +318,3 @@ Following are some considerations when deleting a device's shadow.
    ```
 
 1. If the request was not valid, AWS IoT returns an HTTP error response code an [Error response document](device-shadow-document.md#device-shadow-example-error-json) as its response message body.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

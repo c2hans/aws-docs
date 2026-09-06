@@ -96,7 +96,3 @@ The space creation is set up by integrating with AWS tools that support identity
 You cannot directly add or remove users in your space in CodeCatalyst. You must work with your Identity federation administrator to manage SSO users and groups in IAM Identity Center. CodeCatalyst syncs on a regular basis with the IAM Identity Center identity store with the latest directory status for your space members.
 
 ![Flow for creating a space that supports identity federation](http://docs.aws.amazon.com/codecatalyst/latest/adminguide/images/sign-up-types-federation.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

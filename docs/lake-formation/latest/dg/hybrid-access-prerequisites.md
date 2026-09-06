@@ -60,7 +60,3 @@ The `IsRegisteredWithLakeFormation` property of a table indicates whether the da
 | Lake Formation | All | True | When a location is registered with Lake Formation, the `IsRegisteredWithLakeFormation` property will be set to true for all users. This means that the permissions defined in Lake Formation apply to the registered location. Credential vending will be done by Lake Formation. |
 | Hybrid access mode | Opted in | True | For users who have opted in to using Lake Formation for data access and governance for a table, the `IsRegisteredWithLakeFormation` property will be set to `true` for that table. They are subject to the permission policies defined in Lake Formation for the registered location. |
 | Hybrid access mode | Not opted in | False | For users who have not opted in to using Lake Formation permissions, the `IsRegisteredWithLakeFormation` property is set to `false`. They are not subject to the permission policies defined in Lake Formation for the registered location. Instead, users will follow the Amazon S3 permissions policies. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ If you are an IAM user, this option is not available. The **Forgot your password
 1. Provide the email address that is associated with the account. Then provide the CAPTCHA text and choose **Continue**.
 
 1. Check the email that is associated with your AWS account for a message from Amazon Web Services. The email will come from an address ending in `@verify.signin.aws`. Follow the directions in the email. If you don't see the email in your account, check your spam folder. If you no longer have access to the email, see [I don't have access to the email for my AWS account](https://docs.aws.amazon.com/signin/latest/userguide/console-sign-in-troubleshooting.html#credentials-not-working-console) in the *AWS Sign-In User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

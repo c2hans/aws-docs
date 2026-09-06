@@ -12,7 +12,3 @@ For that reason, we strongly recommend associating a WAF web ACL that includes a
 For instructions on implementing AWS WAF in front of Amazon API Gateway, see [Using AWS WAF to protect your APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html) in the *Amazon API Gateway Developer Guide*. For CloudFront, see [Using AWS WAF to control access to your content](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-aws-waf.html) in the *Amazon CloudFront Developer Guide*.
 
  [Get started with AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/getting-started.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

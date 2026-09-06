@@ -113,7 +113,3 @@ If your second monitor goes dark while you are using it, try one of the followin
 ![Amazon WorkSpaces desktop with icons and a side menu highlighting "Detect Displays".](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/silk-dectect-display.jpeg)
 
 After doing either procedure, the secondary monitor should come back on. If the problem continues, restart your WorkSpaces Thin Client device.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

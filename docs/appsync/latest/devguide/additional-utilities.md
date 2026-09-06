@@ -262,7 +262,3 @@ When you build and bundle the resolver file, your resolver code will include an 
 ![](http://docs.aws.amazon.com/appsync/latest/devguide/images/cloudwatch-sourcemap.jpeg)
 
 Looking at the entries in the CloudWatch log, you'll notice that the functionality of the two files have been bundled together and are running concurrently. The original file name of each file is also clearly reflected in the logs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

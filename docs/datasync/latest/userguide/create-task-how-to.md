@@ -138,7 +138,3 @@ For example, if you're transferring to the same S3 bucket named `MyBucket`, you 
    + `s3://MyBucket/task3`
 
 1. Create three DataSync tasks named `task1`, `task2`, and `task3` that transfer to the corresponding prefix in `MyBucket`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

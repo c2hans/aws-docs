@@ -73,7 +73,3 @@ You can manually increase or decrease your dedicated IPs (standard) current send
    1. **Reset percentage**—read the **Reset warm-up percentage?** dialogue to confirm you're setting the IP’s current sending volume to 1% and will have to either restart the automatic warmup process or set the warmup percentage manually, then choose **Reset**.
 
       The **Warm-up status** column will say `In progress` and the **Warm-up percentage** column will say `1%`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

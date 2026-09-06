@@ -36,7 +36,3 @@ The following procedure shows how to publish a portal.
    It takes API Gateway a few minutes to finish publishing your portal. API Gateway provides a link to your portal when it's available.
 
 To delete your portal, you must disable it first. For more information, see [Disable a portal in API Gateway](apigateway-portals-disable-portal.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

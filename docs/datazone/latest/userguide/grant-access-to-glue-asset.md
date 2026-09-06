@@ -23,7 +23,3 @@ For Amazon DataZone to be able to grant access to AWS Glue Data Catalog tables, 
   + `DESCRIBE`, `SELECT`, `DESCRIBE GRANTABLE`, `SELECT GRANTABLE` permissions in Lake Formation on the published table itself.
 
 For more information, see [Granting and revoking permissions on catalog resources](https://docs.aws.amazon.com/lake-formation/latest/dg/granting-catalog-permissions.html) in the *AWS Lake Formation Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

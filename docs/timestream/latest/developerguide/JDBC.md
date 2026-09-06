@@ -15,7 +15,3 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
 + [JDBC URL examples](JDBC.url-examples.md)
 + [Setting up Timestream for LiveAnalytics JDBC single sign-on authentication with Okta](JDBC.SSOwithOkta.md)
 + [Setting up Timestream for LiveAnalytics JDBC single sign-on authentication with Microsoft Azure AD](JDBC.withAzureAD.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

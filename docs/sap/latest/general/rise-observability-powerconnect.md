@@ -22,7 +22,3 @@ PowerConnect ensures full compatibility and compliance with SAP standards. The s
 Rhondos PowerConnect for SAP Solutions' [product documentation](https://docs.rhondos.com/powerconnect-for-sap-solutions) details comprehensive technical details along with installation and configuration steps and it is available through [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-bdpl5zjkasukg).
 
 Disclaimer: Rhondos, and PowerConnect are trademarks of the Rhondos AG. All other trademarks, names, and logos are the property of their respective owners.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

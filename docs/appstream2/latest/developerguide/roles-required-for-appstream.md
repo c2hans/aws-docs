@@ -51,7 +51,3 @@ This role is a service role that is created for you automatically when you get s
 Certificate-based authentication is a feature of WorkSpaces Applications fleets joined to Microsoft Active Directory domains. To enable and use certificate-based authentication, you must have this service role in your AWS account. If this service role is not in your AWS account and the required IAM permissions and trust relationship policies are not attached, you cannot enable or use certificate-based authentication.
 
 For more information, see [Checking for the AmazonAppStreamPCAAccess Service Role and Policies](controlling-access-checking-for-AppStreamPCAAccess.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,13 +23,9 @@ The available GPU accelerators are:
 
 You can choose from the following runtime drivers:
 + `Latest` - Use the latest runtime available for the chip. If you specify `latest` and a new version of the runtime is released, the new version of the runtime is used.
-+ `grid:r580` - [NVIDIA vGPU software 19](https://docs.nvidia.com/vgpu/19.0/index.html) (Long-Term Support).
-+ `grid:r570` - [NVIDIA vGPU software 18](https://docs.nvidia.com/vgpu/18.0/index.html). Scheduled for removal on July 12, 2026.
-+ `grid:r535` - [NVIDIA vGPU software 16](https://docs.nvidia.com/vgpu/16.0/index.html) (Long-Term Support). Scheduled for removal on August 5, 2026.
-+ `grid:r550` (deprecated) - [NVIDIA vGPU software 17](https://docs.nvidia.com/vgpu/17.0/index.html).
++ `grid:r580` - [NVIDIA vGPU software 19](https://docs.nvidia.com/vgpu/19.0/index.html) on the NVIDIA website (Long-Term Support).
++ `grid:r570` - [NVIDIA vGPU software 18](https://docs.nvidia.com/vgpu/18.0/index.html) on the NVIDIA website. Scheduled for removal on July 12, 2026.
++ `grid:r535` - [NVIDIA vGPU software 16](https://docs.nvidia.com/vgpu/16.0/index.html) on the NVIDIA website (Long-Term Support). Scheduled for removal on August 5, 2026.
++ `grid:r550` (deprecated) - [NVIDIA vGPU software 17](https://docs.nvidia.com/vgpu/17.0/index.html) on the NVIDIA website.
 
 Deadline Cloud uses `latest` as the default runtime driver for all accelerators. If you specify a runtime driver for some accelerators, you must specify one for all of them. Mixing explicit values with blank values returns an error.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

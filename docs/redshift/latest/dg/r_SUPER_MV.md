@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_SUPER_MV.html
 # SUPER data type and materialized views
 <a name="r_SUPER_MV"></a>
 
-With Amazon Redshift, you can use materialized views to enhance the performance and flexibility of queries run against the SUPER data type. The SUPER data type lets you store a superset of columns from the base tables in a materialized view, letting you query the materialized view directly without joining the base tables. The following sections show you how to create and use materialized views with the SUPER data type in Amazon Redshift.
+With Amazon Redshift, you can use materialized views to enhance the performance and flexibility of queries run against the SUPER data type. With the SUPER data type, you can store a superset of columns from the base tables in a materialized view, letting you query the materialized view directly without joining the base tables. The following sections show you how to create and use materialized views with the SUPER data type in Amazon Redshift.
 
 Amazon Redshift supports materialized views that incorporate SUPER data type columns and PartiQL queries. Materialized views can incrementally refresh, whereas Amazon Redshift only updates data that has changed in the base tables since the last refresh operation. This selective update approach makes the refresh process more efficient than full recalculations. For more information about materialized views, see [Materialized views in Amazon Redshift](materialized-view-overview.md).
 
@@ -22,7 +22,3 @@ The following topics showcase examples of breaking down, or shredding, complex d
 + [Accelerating PartiQL queries](#r_accelerate_mv)
 + [Shredding semi-structured data into SUPER columns with materialized views](r_shred_super.md)
 + [Creating Amazon Redshift scalar columns out of shredded data](r_create_scalar.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

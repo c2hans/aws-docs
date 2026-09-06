@@ -43,7 +43,3 @@ You can use the AWS Management Console to create a role that an IAM user can ass
 1. (Optional) Add metadata to the role by attaching tags as key–value pairs. For more information about using tags in IAM, see [Tags for AWS Identity and Access Management resources](id_tags.md).
 
 1. Review the role and then choose **Create role**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

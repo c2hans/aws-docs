@@ -108,7 +108,3 @@ In the current release of Amazon SageMaker Unified Studio, project profiles for 
 1. Choose **Submit**.
 
    Once the action is successfully completed and you've finished configuring Amazon Bedrock in SageMaker Unified Studio for this associated account, you are redirected to the associated domain's details page where you can find the enabled generative AI blueprints under the **Blueprints** tab and the enabled models listed in the **Amazon Bedrock models** tab. Note, that you can manage model access directly from **Amazon Bedrock models** tab. For more information, see [Amazon Bedrock in SageMaker Unified Studio](amazon-bedrock.md). Also, if you want to publish models from your associated account, the IAM identity of the associated account must be added to the **GenerativeAIModelGovernanceProject** project. For more information, see [Publishing models from associated accounts](amazon-bedrock.md#publishing-models-associated-account).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

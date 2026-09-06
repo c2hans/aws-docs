@@ -72,7 +72,3 @@ https://{{mygrafana}}/alerting/silence/new?matchers=severity%3Dcritical%2Ccluste
 ```
 
 To link to a new silence page for an external Alertmanager, add an `alertmanager` query parameter with the Alertmanage data source name, such as `alertmanager=myAlertmanagerdatasource`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

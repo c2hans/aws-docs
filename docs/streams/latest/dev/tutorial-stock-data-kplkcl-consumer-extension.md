@@ -59,7 +59,3 @@ If you run the consumer now (remember to run the producer also), you should see 
 <a name="tutorial-stock-data-kplkcl-consumer-extension-next"></a>
 
 [Clean up resources](tutorial-stock-data-kplkcl-finish.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

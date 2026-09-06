@@ -45,7 +45,3 @@ In most cases, we recommend using Aurora PostgreSQL-Compatible over Amazon RDS f
 | **Database instance classes** | See [list of Amazon RDS instance classes](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html) | See [list of Aurora instance classes](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.html) |
 
 In all the categories described in the previous table, Aurora PostgreSQL-Compatible is usually the better option. However, Amazon RDS for PostgreSQL might still make sense for small to medium workloads, because it has a greater selection of instance classes that might provide a more cost-effective option at the expense of Aurora's more robust feature set.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

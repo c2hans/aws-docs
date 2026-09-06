@@ -23,7 +23,3 @@ Ensure that you install the update set in a non-production or sandbox environmen
 + [Configuring AWS accounts to synchronize in the Connector](sn-configure-accounts.md)
 + [Validating ServiceNow connectivity to AWS Regions](validate-regions.md)
 + [Manually syncing scheduled jobs](manual-sync-scheduled-jobs.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

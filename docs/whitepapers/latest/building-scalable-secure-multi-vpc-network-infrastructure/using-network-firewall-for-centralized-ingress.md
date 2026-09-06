@@ -21,7 +21,3 @@ In this architecture, ingress traffic is inspected by AWS Network Firewall befor
 + Elastic Load Balancing in Edge VPC can only have IP addresses as target types, not a hostname. In the preceding figure, the targets are the private IPs of the Network Load Balancer in spoke VPCs. Using IP targets behind the ELB in the edge VPC results in the loss of Auto Scaling.
 + Consider using AWS Firewall Manager as a single pane of glass for your firewall endpoints.
 + This deployment model uses traffic inspection right as it enters the edge VPC, so it has the potential to reduce the overall cost of your inspection architecture.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

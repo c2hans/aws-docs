@@ -49,7 +49,3 @@ https://mechanicalturk.amazonaws.com/?Service=AWSMechanicalTurkRequester
 &WorkerBlock.1.WorkerId=AZ3456EXAMPLE
 &WorkerBlock.1.Reason=After%20several%20warnings,%20he%20continued%20to%20submit%20answers%20without%20reading%20the%20instructions%20carefully
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

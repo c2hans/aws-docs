@@ -25,7 +25,3 @@ The information in this section assumes that you are familiar with the general s
      + **Track**: Enter the track. Following the first example in [Create the receiver group](s2110-nmos-create-receiver-group.md), enter **1** to identify the English audio, **2** to identify the French audio, and **3** to enter the Spanish audio. It doesn't matter if the audios are all in the same SDP or different SDPs, the audio streams are always numbered in SDP order, starting from 1.
 
 1. Click **Add Caption Selector **once. Make sure **Source** specifies **Embedded**. Ignore the other fields on this line, they don't apply to passing through embedded captions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

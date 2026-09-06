@@ -30,7 +30,3 @@ Individual controls can apply to more than one standard. If you enable multiple 
 + [NIST SP 800-171 Revision 2](standards-reference-nist-800-171.md)
 + [PCI DSS](pci-standard.md)
 + [Service-managed standards](service-managed-standards.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -317,7 +317,3 @@ Non-native counter metrics are counters defined by Amazon RDS. A non-native metr
 | max\_connections | Users | Connections | db.User.max\_connections | The maximum number of connections allowed for a DB instance as configured in max\_connections parameter. | Not applicable |
 | total\_auth\_attempts | Users | Connections per minute | db.User.total\_auth\_attempts | The number of connection attempts to this instance. | Not applicable |
 | archive\_failed\_count | WAL | Files per minute | db.WAL.archive\_failed\_count | The number of failed attempts for archiving WAL files, in files per minute. | Not applicable |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,7 +55,3 @@ The following table lists important releases relating to Neptune Analytics.
 | [Graph provisioning time reduced to five minutes or less](#doc-history) | Neptune Analytics graphs are now provisioned and ready to be used in five minutes or less. | February 19, 2024 |
 | [Query improvements - Data Plane SDK](#doc-history) | The Neptune Analytics data API provides support for data operations including query execution, query status checking, query cancellation, and graph summarizing via the HTTPS endpoint, the AWS CLI, and the SDK. | February 2, 2024 |
 | [Initial release](#doc-history) | Initial release of Neptune Analytics. | November 29, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

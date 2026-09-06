@@ -262,7 +262,3 @@ The following policy grants users the permission to delete a recommendation temp
 <a name="security-iam-policy-examples-update-app-resiliency-policy"></a>
 
 The following policy grants users the permission to update an AWS Resilience Hub application with a specific resiliency policy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

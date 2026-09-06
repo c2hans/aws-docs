@@ -26,7 +26,3 @@ Examples of all logical operators:
 | IN |  <pre>SELECT a.asset_name <br />   FROM asset AS a<br />   WHERE a.asset_name IN ('abc', 'pqr')<br /></pre>  |
 | BETWEEN |  <pre>SELECT asset_id, int_value, event_timestamp AS i_v <br />   FROM raw_time_series<br />   WHERE event_timestamp BETWEEN TIMESTAMP '2025-04-15 00:00:01' and TIMESTAMP '2025-05-15 00:00:01'  <br /></pre>  |
 | LIKE |  + `%` pattern: <pre>SELECT POWER(rw.int_value, 5) AS raised_value<br />   FROM raw_time_series AS rw<br />   WHERE rw.asset_id LIKE 'some%pattern%' AND rw.int_value > 30<br /></pre> <br />+ `_` pattern: <pre>SELECT asset_id, property_id<br />  FROM asset_property<br />  WHERE string_attribute_value LIKE 'Floor_'<br /></pre> <br />+ `ESCAPE` pattern: <pre>SELECT asset_id <br />  FROM asset <br />  WHERE asset_name LIKE 'MyAsset/_%' ESCAPE '/'<br /></pre>   |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

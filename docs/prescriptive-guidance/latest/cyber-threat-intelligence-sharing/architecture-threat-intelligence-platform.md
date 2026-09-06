@@ -20,7 +20,3 @@ When choosing a threat intelligence platform, consider the following:
 + **Cost** – Is the platform cost-effective, including licensing costs and maintenance requirements?
 
 You can deploy your threat intelligence platform within your virtual private cloud (VPC). You can deploy it directly on an Amazon Elastic Compute Cloud (Amazon EC2) instance or by using container technology, such as Amazon Elastic Container Service (Amazon ECS) or AWS Fargate. For more information about choosing the right AWS container service for your modern application development, see [Choosing an AWS container service](https://docs.aws.amazon.com/decision-guides/latest/containers-on-aws-how-to-choose/choosing-aws-container-service.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

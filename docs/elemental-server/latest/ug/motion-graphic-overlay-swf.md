@@ -64,7 +64,3 @@ If you do use a sequence of images, it is especially important to optimize your 
 <a name="image-inserter-swf-adobe-flash-set-publish-target"></a>
 
 Set your Publish Settings so that Target is Flash Player 11.1 and Script is set to ActionScript 3.0. This is the only version that is supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

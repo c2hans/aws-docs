@@ -51,7 +51,3 @@ The following examples show how your charges apply across a user's lifecycle:
 + For a user who never signs in, you pay each billing period the user remains in your account, the same as an active user, until you remove the user.
 
 This billing behavior applies to all Amazon Quick user roles across editions and in all AWS Regions where Amazon Quick is available.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

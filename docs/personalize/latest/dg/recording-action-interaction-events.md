@@ -31,7 +31,3 @@ To record real-time action interaction events, you need the following:
 + A dataset group that includes an `Action interactions dataset`, which can be empty. For information on creating a dataset group and a dataset, see [Importing training data into Amazon Personalize datasets](import-data.md).
 + The ID of your event tracker. You specify this ID in the PutActionInteractions operation. When you create an Action interactions dataset, Amazon Personalize automatically creates an action interaction event tracker for you. For more information, see [Finding the ID of your action interaction event tracker](action-interaction-tracker-id.md).
 + A call to the [PutActionInteractions](API_UBS_PutActionInteractions.md) operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

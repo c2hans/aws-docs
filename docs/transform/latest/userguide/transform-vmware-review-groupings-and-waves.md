@@ -99,7 +99,3 @@ Migration planning is an interactive and iterative workflow. You can go back and
 1. After you have finalized your wave plan, you can complete migration planning and move to execution. You can return to migration planning at any time to refine and iterate on your plan.
 
 1. For each wave, you can assign a migration strategy: *rehost* (migrate servers to Amazon EC2) and *containerize* (containerize source code and deploy to Amazon Elastic Container Service or Amazon Elastic Kubernetes Service). When you assign a wave the strategy *containerize*, AWS Transform runs the source code containerization workflow for that wave during migration execution. For more information, see [Source code containerization](transform-containers.md). To get AWS-recommended strategies across the 7Rs framework before you assign them, see [Migration strategy (7Rs) recommendations](transform-vmware-r-strategy-report.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

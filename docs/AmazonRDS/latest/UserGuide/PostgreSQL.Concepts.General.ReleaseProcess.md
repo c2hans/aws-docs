@@ -35,7 +35,3 @@ Before updating your database, consider the following key points:
 + Some incremental releases are mandatory, particularly those that include security fixes.
 
 For more information about updating your Amazon RDS DB instance instance, see [PostgreSQL trusted extensions](PostgreSQL.Concepts.General.FeatureSupport.Extensions.md#PostgreSQL.Concepts.General.Extensions.Trusted) and [apply-pending-maintenance-action](https://docs.aws.amazon.com/cli/latest/reference/rds/apply-pending-maintenance-action.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

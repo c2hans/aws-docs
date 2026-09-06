@@ -140,7 +140,3 @@ The following table describes the AWS Client VPN User Guide updates.
 | [Self-service portal](#WhatsNew) | You can access a self-service portal to get the latest AWS provided client and configuration file. | October 29, 2020 |
 | [AWS provided client](#WhatsNew) | You can use the AWS provided client to connect to a Client VPN endpoint.  | February 4, 2020 |
 | [Initial release](#WhatsNew) | This release introduces AWS Client VPN. | December 18, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

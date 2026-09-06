@@ -19,7 +19,3 @@ To address this need, AWS provides several integration patterns that enable ente
 | Ticketing | Bi-directional integration between the [AWS Support API](https://docs.aws.amazon.com/awssupport/latest/APIReference/Welcome.html) and ITSM enables tickets to seamlessly flow between AWS Enterprise Support and ITSM incidents. Integration with [OpsCenter.](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html) |
 | Monitoring | [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) alarms trigger incidents in ITSM for remediation or workflow initiation.  |
 | Migration acceleration using ITSM (MAUS) | You can use ITSM discovery modules or CMDB data to define your on-premises landscape for mass migration projects. Data mapping can be imported into [AWS Migration Portfolio Assessment](https://mpa.accelerate.amazonaws.com/) to automate migration portfolio analysis and business case validation. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

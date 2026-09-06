@@ -62,7 +62,3 @@ source_url: https://docs.aws.amazon.com/eventsbilltoaws/latest/reference/securit
 | --- | --- | --- |
 | `ReInventTicketApprovalAccess` – New policy | Bill to AWS added a new managed policy that grants permission to view re:Invent pass charge details and approve or decline billing to AWS accounts. | June 10, 2026 |
 | Bill to AWS started tracking policy changes | Bill to AWS started tracking changes for its AWS managed policies. | June 10, 2026 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Bill to AWS for re:Invent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventsbilltoaws` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

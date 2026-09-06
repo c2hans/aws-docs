@@ -40,7 +40,3 @@ View details about updates to AWS managed policies for Amazon S3 Tables since S3
 | Amazon S3 Tables added `AmazonS3TablesFullAccess`. | S3 Tables added a new AWS-managed policy called `AmazonS3TablesFullAccess`. This policy grants permissions that allow full access to Amazon S3 Tables.  | December 03, 2024 |
 | Amazon S3 Tables added `AmazonS3TablesReadOnlyAccess`. | S3 Tables added a new AWS-managed policy called `AmazonS3TablesReadOnlyAccess`. This policy grants permissions to allow read-only access to Amazon S3 Tables.  | December 03, 2024 |
 | Amazon S3 Tables started tracking changes. | Amazon S3 Tables started tracking changes for its AWS managed policies. | December 03, 2024 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

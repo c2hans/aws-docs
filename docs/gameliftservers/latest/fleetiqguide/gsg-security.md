@@ -10,7 +10,3 @@ If you're using Amazon GameLift Servers FleetIQ as a standalone feature with Am
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from data centers and network architectures that are built to meet the requirements of the most security-sensitive organizations.
 
 Security is a shared responsibility between AWS and you. For information on how to apply the shared responsibility model when using Amazon GameLift Servers FleetIQ, see [ Security in Amazon GameLift Servers](https://docs.aws.amazon.com/gamelift/latest/developerguide/security.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

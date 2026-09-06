@@ -26,7 +26,3 @@ Amazon Neptune Analytics provides the following APIs for data retrieval.
 | <a name="neptune-graph-ListQueries"></a>[ListQueries](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ListQueries.html) | Check the status of all active queries | Read |
 | <a name="neptune-graph-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ListTagsForResource.html) | Lists tag for a Neptune Analytics resource | Read |
 | <a name="neptune-graph-ReadDataViaQuery"></a>[ReadDataViaQuery](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ExecuteQuery.html) | Read data via query APIs on the graph | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

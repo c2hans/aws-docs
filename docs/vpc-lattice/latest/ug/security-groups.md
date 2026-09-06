@@ -150,7 +150,3 @@ aws vpc-lattice update-service-network-vpc-association
 
 **Warning**
 You can't remove all security groups. Instead, you must first delete the VPC association, and then re-create the VPC association without any security groups. Be cautious when deleting the VPC association. This prevents traffic from reaching services that are in that service network.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

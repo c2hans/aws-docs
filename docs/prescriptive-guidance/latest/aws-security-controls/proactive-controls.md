@@ -84,7 +84,3 @@ If your organization needs to comply with internal or industry regulations, proa
 <a name="risk-reduction.3cfdf0ca-7d71-51a1-a21e-42d4d2a33e02"></a>
 
 Proactive controls help developers deploy compliant and more securely built resources, so proactive controls reduce your organization's security risk.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

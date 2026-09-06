@@ -6,7 +6,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 <a name="supported-formats"></a>
 
  This solution works with the video streaming workloads that use the most common adaptive bitrate streaming formats for distributing their video assets: HTTP Live Streaming (HLS), Dynamic Adaptive Streaming over HTTP (DASH), and Common Media Application Format (CMAF) which breaks down continuous video stream into discrete video and audio segments, suitable for Content Delivery Network (CDN) caching. Customers can use any media originating service which publishes video content in one or more of the mentioned formats, for example, Elemental MediaPackage, Elemental MediaStore, Amazon S3, or an external video packaging service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

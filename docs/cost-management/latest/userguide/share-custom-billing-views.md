@@ -45,7 +45,3 @@ For more advanced use cases such as sharing with an entire AWS Organizational Un
 Once a custom billing view is shared, you can see which accounts have access to it from the **Sharing** tab on the view details page. Note that if you're using AWS Billing Conductor, a custom billing view contains cost management data based on your standard AWS bill, even when being accessed by an account belonging to a billing group. Additionally, you can view a list of all resource shares you’ve created in AWS RAM. For more information, see [Viewing resource shares you created in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-view-rs.html).
 
 You have the flexibility to edit the sharing permissions of a custom billing view at any time, allowing you to maintain control over who has access to your cost management data. For details, see [Managing shared access to custom billing views](https://docs.aws.amazon.com/cost-management/latest/userguide/manage-shared-access-custom-billing-views.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

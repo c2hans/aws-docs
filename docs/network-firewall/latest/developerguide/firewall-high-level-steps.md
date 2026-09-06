@@ -18,7 +18,3 @@ To install and use an AWS Network Firewall firewall in your Amazon Virtual Priva
   For information about managing route tables for your VPC, see [Route tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html) in the *Amazon Virtual Private Cloud User Guide*.
 
 After you implement a firewall, you can expand its protections to additional VPCs and to multiple subnets within a single Availability Zone for any VPC. To do this, you manage the VPCs, subnets, and route tables as described in the previous high level steps, but you create the firewall endpoints in VPC endpoint associations, using the firewall that you've already defined. For more information about managing firewalls and VPC endpoint associations, see [Firewalls and firewall endpoints in AWS Network Firewall](firewalls.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

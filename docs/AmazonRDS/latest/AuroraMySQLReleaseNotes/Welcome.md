@@ -19,7 +19,3 @@ Updates are applied to all instances in a DB cluster at the same time. An update
 + [Database engine updates for Amazon Aurora MySQL version 1 (Deprecated)](AuroraMySQL.Updates.11Updates.md)
 + [MySQL bugs fixed by Aurora MySQL database engine updates](AuroraMySQL.Updates.MySQLBugs.md)
 + [Security vulnerabilities fixed in Aurora MySQL](AuroraMySQL.CVE_list.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

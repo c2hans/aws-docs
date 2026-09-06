@@ -162,7 +162,3 @@ If you don't switch to this folder, then the file bundling will start at your cu
    ```
 
    This command bundles the files from the current directory (excluding any hidden files) into a single archive file named **WordPressApp.zip**, uploads the revision to the **amzn-s3-demo-bucket** bucket, and registers information with CodeDeploy about the uploaded revision.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

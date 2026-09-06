@@ -52,7 +52,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-buildi
  Amazon MWAA supports open-source integrations with Amazon Athena, AWS Batch, Amazon CloudWatch, Amazon DynamoDB, AWS DataSync, Amazon EMR, AWS Fargate, Amazon EKS, Amazon Data Firehose, AWS Glue, AWS Lambda, Amazon Redshift, Amazon SQS, Amazon SNS, Amazon SageMaker AI, and Amazon S3, as well as hundreds of built-in and community-created operators and sensors and third-party tools such as Apache Hadoop, Presto, Hive, and Spark to perform data processing tasks.
 
  Code examples are available for faster integration. For example, [Using Amazon MWAA with Amazon EMR](https://docs.aws.amazon.com/mwaa/latest/userguide/samples-emr.html) demonstrates how to enable an integration using Amazon EMR and Amazon MWAA. [Creating a custom plugin with Apache Hive and Hadoop](https://docs.aws.amazon.com/mwaa/latest/userguide/samples-hive.html) walks you through the steps to create a custom plugin using Apache Hive and Hadoop on an Amazon MWAA environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

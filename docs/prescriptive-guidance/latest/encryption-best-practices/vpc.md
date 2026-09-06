@@ -14,7 +14,3 @@ Consider the following encryption best practices for this service:
   + AWS Direct Connect connections that support MAC Security (MACsec) to encrypt data from corporate networks to the AWS Direct Connect location
 + Use VPC endpoints in AWS PrivateLink to privately connect your VPCs to supported AWS services without using an internet gateway. You can use AWS Direct Connect or Site-to-Site VPN services to establish this connection. Traffic between your VPC and the other service does not leave the AWS network. For more information, see [Access AWS services through AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-access-aws-services.html).
 + Configure [security group rules](https://docs.aws.amazon.com/vpc/latest/userguide/security-group-rules.html) that allow traffic only from ports associated with secure protocols, such as HTTPS over TCP/443. Periodically audit security groups and their rules.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

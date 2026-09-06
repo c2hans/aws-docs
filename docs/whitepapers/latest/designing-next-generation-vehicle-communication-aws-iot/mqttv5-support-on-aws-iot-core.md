@@ -42,7 +42,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/designing-next-genera
 <a name="requestresponse"></a>
 
  The request/response messaging pattern is a method to track responses to client requests in an asynchronous way. It's a mechanism implemented in MQTTv5 to allow the publisher to specify a topic for the response to be sent for a particular message. Therefore, when the subscriber receives the request, it also receives the topic to send the response. It also supports the correlation data field that allows tracking of packets, for example, request or device identification parameters. This will be reviewed in depth when remote commands are discussed later on in the document.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

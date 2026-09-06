@@ -303,7 +303,3 @@ When a live stream is recorded, IVS generates and writes a VOD playlist to S3 th
 | END-DATE | ISO 8601 timestamp when the ad break ended. |
 | DURATION | Actual duration of the ad break in seconds. |
 | SCTE35-IN | SCTE-35 marker signaling the end of the ad break. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

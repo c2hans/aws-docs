@@ -7,67 +7,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 Searches across all agreements that a proposer or an acceptor has in AWS Marketplace. The search returns a list of agreements with basic agreement information.
 
-The following filter combinations are supported when the `PartyType` is `Proposer`:
-+  `AgreementType`
-+  `AgreementType` \+ `EndTime`
-+  `AgreementType` \+ `ResourceType`
-+  `AgreementType` \+ `ResourceType` \+ `EndTime`
-+  `AgreementType` \+ `ResourceType` \+ `Status`
-+  `AgreementType` \+ `ResourceType` \+ `Status` \+ `EndTime`
-+  `AgreementType` \+ `ResourceIdentifier`
-+  `AgreementType` \+ `ResourceIdentifier` \+ `EndTime`
-+  `AgreementType` \+ `ResourceIdentifier` \+ `Status`
-+  `AgreementType` \+ `ResourceIdentifier` \+ `Status` \+ `EndTime`
-+  `AgreementType` \+ `AcceptorAccountId`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `EndTime`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `Status`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `Status` \+ `EndTime`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `OfferId`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `OfferId` \+ `Status`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `OfferId` \+ `EndTime`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `OfferId` \+ `Status` \+ `EndTime`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `ResourceIdentifier`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `ResourceIdentifier` \+ `Status`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `ResourceIdentifier` \+ `EndTime`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `ResourceIdentifier` \+ `Status` \+ `EndTime`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `ResourceType`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `ResourceType` \+ `EndTime`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `ResourceType` \+ `Status`
-+  `AgreementType` \+ `AcceptorAccountId` \+ `ResourceType` \+ `Status` \+ `EndTime`
-+  `AgreementType` \+ `Status`
-+  `AgreementType` \+ `Status` \+ `EndTime`
-+  `AgreementType` \+ `OfferId`
-+  `AgreementType` \+ `OfferId` \+ `EndTime`
-+  `AgreementType` \+ `OfferId` \+ `Status`
-+  `AgreementType` \+ `OfferId` \+ `Status` \+ `EndTime`
-+  `AgreementType` \+ `OfferSetId`
-+  `AgreementType` \+ `OfferSetId` \+ `EndTime`
-+  `AgreementType` \+ `OfferSetId` \+ `Status`
-+  `AgreementType` \+ `OfferSetId` \+ `Status` \+ `EndTime`
-
-**Note**
- To filter by `EndTime`, you can use `BeforeEndTime` and/or `AfterEndTime`. Only `EndTime` is supported for sorting.
-
-The following filter combinations are supported when the `PartyType` is `Acceptor`:
-+  `AgreementType`
-+  `AgreementType` \+ `Status`
-+  `AgreementType` \+ `EndTime`
-+  `AgreementType` \+ `Status` \+ `EndTime`
-+  `AgreementType` \+ `ResourceIdentifier`
-+  `AgreementType` \+ `ResourceIdentifier` \+ `EndTime`
-+  `AgreementType` \+ `ResourceIdentifier` \+ `Status`
-+  `AgreementType` \+ `ResourceIdentifier` \+ `Status` \+ `EndTime`
-+  `AgreementType` \+ `ResourceType`
-+  `AgreementType` \+ `ResourceType` \+ `EndTime`
-+  `AgreementType` \+ `OfferId`
-+  `AgreementType` \+ `OfferId` \+ `EndTime`
-+  `AgreementType` \+ `OfferId` \+ `Status`
-+  `AgreementType` \+ `OfferId` \+ `Status` \+ `EndTime`
-+  `AgreementType` \+ `OfferSetId`
-+  `AgreementType` \+ `OfferSetId` \+ `EndTime`
-+  `AgreementType` \+ `OfferSetId` \+ `Status`
-+  `AgreementType` \+ `OfferSetId` \+ `Status` \+ `EndTime`
-
 ## Request Syntax
 <a name="API_marketplace-agreements_SearchAgreements_RequestSyntax"></a>
 
@@ -114,11 +53,40 @@ The following filters are supported:
 +  `PartyType` – The party type of the caller. Use `Proposer` or `Acceptor`.
 +  `AcceptorAccountId` – The AWS account ID of the party accepting the agreement terms.
 +  `OfferId` – The unique identifier of the offer in which the terms are registered in the agreement token.
-+  `Status` – The current status of the agreement. Values include `ACTIVE`, `ARCHIVED`, `CANCELLED`, `EXPIRED`, `RENEWED`, `REPLACED`, and `TERMINATED`.
++  `Status` – The current status of the agreement. Values include `ACTIVE`, `CANCELLED`, `EXPIRED`, `RENEWED`, `REPLACED`, and `TERMINATED`.
 +  `BeforeEndTime` – A date used to filter agreements with a date before the `endTime` of an agreement.
 +  `AfterEndTime` – A date used to filter agreements with a date after the `endTime` of an agreement.
++  `BeforeStartTime` – A date used to filter agreements with a date before the `startTime` of an agreement.
++  `AfterStartTime` – A date used to filter agreements with a date after the `startTime` of an agreement.
++  `BeforeLastUpdateTime` – A date used to filter agreements with a date before the `lastUpdateTime` of an agreement.
++  `AfterLastUpdateTime` – A date used to filter agreements with a date after the `lastUpdateTime` of an agreement.
 +  `AgreementType` – The type of agreement. Supported value includes `PurchaseAgreement`.
 +  `OfferSetId` – A unique identifier for the offer set containing this offer. All agreements created from offers in this set include this identifier as context.
++  `EndTimeBehaviorType` – What happens to the agreement when it reaches its end date. Values include `RENEW`, `REPLACE`, and `EXPIRE`.
++  `EndTimeBehaviorReasonCode` – The reason why the agreement doesn't renew at its end date. Values include `PROPOSER_RENEW_OPTED_OUT`, `ACCEPTOR_RENEW_OPTED_OUT`, `NO_RENEWAL_TERM`, and `RENEWAL_LIMIT_EXHAUSTED`.
++  `InitialAgreementId` – The unique identifier of the very first agreement in a chain of related agreements. Use this filter to return every agreement in the same chain.
++  `LicenseArn` – The Amazon Resource Name (ARN) of the AWS License Manager license associated with an entitlement granted by the agreement.
+A proposer can use any combination of the preceding filters along with `AgreementType`, which is required.
+The following filter combinations are supported when the `PartyType` is `Acceptor`:
++  `AgreementType`
++  `AgreementType` \+ `Status`
++  `AgreementType` \+ `EndTime`
++  `AgreementType` \+ `Status` \+ `EndTime`
++  `AgreementType` \+ `ResourceIdentifier`
++  `AgreementType` \+ `ResourceIdentifier` \+ `EndTime`
++  `AgreementType` \+ `ResourceIdentifier` \+ `Status`
++  `AgreementType` \+ `ResourceIdentifier` \+ `Status` \+ `EndTime`
++  `AgreementType` \+ `ResourceType`
++  `AgreementType` \+ `ResourceType` \+ `EndTime`
++  `AgreementType` \+ `OfferId`
++  `AgreementType` \+ `OfferId` \+ `EndTime`
++  `AgreementType` \+ `OfferId` \+ `Status`
++  `AgreementType` \+ `OfferId` \+ `Status` \+ `EndTime`
++  `AgreementType` \+ `OfferSetId`
++  `AgreementType` \+ `OfferSetId` \+ `EndTime`
++  `AgreementType` \+ `OfferSetId` \+ `Status`
++  `AgreementType` \+ `OfferSetId` \+ `Status` \+ `EndTime`
+To filter by `EndTime`, you can use `BeforeEndTime`, `AfterEndTime`, or both.
 Type: Array of [Filter](API_marketplace-agreements_Filter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
@@ -137,7 +105,7 @@ Pattern: `[a-zA-Z0-9+/=_-]+`
 Required: No
 
  ** [sort](#API_marketplace-agreements_SearchAgreements_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_SearchAgreements-request-sort"></a>
-An object that contains the `SortBy` and `SortOrder` attributes. Only `EndTime` is supported for `SearchAgreements`. The default sort is `EndTime` descending.
+An object that contains the `SortBy` and `SortOrder` attributes. For `SearchAgreements`, `SortBy` supports `EndTime` for both party types, and `StartTime` and `LastUpdateTime` only when `PartyType` is `Proposer`. The default `SortBy` value is `EndTime`.
 Type: [Sort](API_marketplace-agreements_Sort.md) object
 Required: No
 
@@ -155,11 +123,15 @@ Required: No
          "agreementId": "string",
          "agreementType": "string",
          "endTime": number,
+         "endTimeBehaviorReasonCode": "string",
+         "endTimeBehaviorType": "string",
          "entitlements": [
             {
                "licenseArn": "string"
             }
          ],
+         "initialAgreementId": "string",
+         "lastUpdateTime": number,
          "proposalSummary": {
             "offerId": "string",
             "offerSetId": "string",
@@ -291,6 +263,7 @@ This example illustrates one usage of SearchAgreements.
             },
             "startTime": "2019-10-08T21:40:43Z",
             "endTime": "2026-10-08T21:40:43Z",
+            "lastUpdateTime": "2025-04-17T09:12:55Z",
             "acceptanceTime": "2019-10-08T00:00:00Z",
             "agreementType": "PurchaseAgreement",
             "proposalSummary": {
@@ -308,7 +281,10 @@ This example illustrates one usage of SearchAgreements.
                 {
                     "licenseArn": "arn:aws:license-manager::123456789012:license/lic-EXAMPLE01234abcd"
                 }
-            ]
+            ],
+            "initialAgreementId": "fEXAMPLE-0aa6-4e42-8715-6a1EXAMPLE95",
+            "endTimeBehaviorType": "EXPIRE",
+            "endTimeBehaviorReasonCode": "ACCEPTOR_RENEW_OPTED_OUT"
        }
     ],
     "nextToken": null
@@ -329,7 +305,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/marketplace-agreement-2020-03-01/SearchAgreements)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/SearchAgreements)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/marketplace-agreement-2020-03-01/SearchAgreements)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

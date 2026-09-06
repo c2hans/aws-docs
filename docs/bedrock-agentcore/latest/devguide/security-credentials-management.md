@@ -19,7 +19,3 @@ When configuring the execution role permissions, use careful consideration since
 + Avoid privilege escalation by ensuring that the execution role associated with your resource has equal or fewer privileges than the users who can invoke it.
 
 Each AgentCore service requires its own execution role permissions. Scope the role to the service the resource uses, and consult that service’s security documentation for the permissions it requires. For example, see [Security best practices for AgentCore Runtime](runtime-security-best-practices.md) and [Security and access controls](harness-security.md) for the harness.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

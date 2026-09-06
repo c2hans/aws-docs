@@ -87,7 +87,3 @@ Secure log masking applies to all system table and view entries that Amazon Reds
 | [SVV\_TRANSACTIONS](https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_TRANSACTIONS.html) | **Columns:** relation. |
 
 For more information on system tables and views, see [ System tables and views reference](https://docs.aws.amazon.com/redshift/latest/dg/cm_chap_system-tables.html) in the *Amazon Redshift Database Developer Guide*. For information on Amazon Redshift’s ability to dynamically mask query results, see [ Dynamic data masking](https://docs.aws.amazon.com/redshift/latest/dg/t_ddm.html) in the *Amazon Redshift Database Developer Guide*. For information on creating views in the AWS Glue Data Catalog using Amazon Redshift, see [AWS Glue Data Catalog views](https://docs.aws.amazon.com/redshift/latest/dg/data-catalog-views-overview.html) in the *Amazon Redshift Database Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

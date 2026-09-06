@@ -31,7 +31,3 @@ Publication date: **October 1, 2020** ([Document history](document-revisions.md)
  The framework is a dynamic working process that is not necessarily linear. While working on the product strategy, for example, you might revisit your business case and update it. Some activities might take place simultaneously. This paper will guide you through the four framework phases and help you build a strategy and execution plan by outlining the key activities and the questions to consider along the SaaS journey.
 
  This paper can be used as a validation point, in whole or in part, to develop your own plan.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

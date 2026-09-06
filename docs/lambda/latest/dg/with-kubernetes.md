@@ -36,7 +36,3 @@ To learn more about using Crossplane with Lambda, see the following:
 **Note**
 AWS Blueprints for Crossplane are under active development and should not be used in production.
 + [Deploying Lambda with Amazon EKS and Crossplane](https://www.youtube.com/watch?v=m-9KLq29K4k): This video demonstrates an advanced example of deploying an AWS serverless architecture with Crossplane, exploring the design from both the developer and platform perspectives.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

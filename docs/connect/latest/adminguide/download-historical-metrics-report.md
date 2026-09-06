@@ -44,7 +44,3 @@ If you need to download more than a page or two of historical metrics, we recomm
 1. Go to your Amazon S3 bucket and download the report.
 
 To learn how scheduled reports work, see [Schedule a historical metrics report in Connect Customer](schedule-historical-metrics-report.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

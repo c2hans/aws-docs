@@ -750,7 +750,8 @@ main "$@"
   + [DeleteNamespace](https://docs.aws.amazon.com/goto/aws-cli/servicediscovery-2017-03-14/DeleteNamespace)
   + [DeleteRole](https://docs.aws.amazon.com/goto/aws-cli/iam-2010-05-08/DeleteRole)
   + [DeleteSecurityGroup](https://docs.aws.amazon.com/goto/aws-cli/ec2-2016-11-15/DeleteSecurityGroup)
-  + [DeleteService](https://docs.aws.amazon.com/goto/aws-cli/servicediscovery-2017-03-14/DeleteService)
+  + [DeleteService (AWS Cloud Map)](https://docs.aws.amazon.com/goto/aws-cli/servicediscovery-2017-03-14/DeleteService)
+  + [DeleteService (Amazon ECS)](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/DeleteService)
   + [DeregisterTaskDefinition](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/DeregisterTaskDefinition)
   + [DescribeClusters](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/DescribeClusters)
   + [DescribeServices](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/DescribeServices)
@@ -766,7 +767,8 @@ main "$@"
   + [ListTasks](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/ListTasks)
   + [RegisterTaskDefinition](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/RegisterTaskDefinition)
   + [UpdateService](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/UpdateService)
-  + [Wait](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/Wait)
+  + [Wait (Amazon EC2)](https://docs.aws.amazon.com/goto/aws-cli/ec2-2016-11-15/Wait)
+  + [Wait (Amazon ECS)](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/Wait)
 
 ### Create a container task for the serverless launch type
 <a name="ecs_GettingStarted_086_bash_2_topic"></a>
@@ -2363,7 +2365,9 @@ main "$@"
   + [StopTask](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/StopTask)
   + [TerminateInstances](https://docs.aws.amazon.com/goto/aws-cli/ec2-2016-11-15/TerminateInstances)
   + [UpdateService](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/UpdateService)
-  + [Wait](https://docs.aws.amazon.com/goto/aws-cli/iam-2010-05-08/Wait)
+  + [Wait (Amazon EC2)](https://docs.aws.amazon.com/goto/aws-cli/ec2-2016-11-15/Wait)
+  + [Wait (Amazon ECS)](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/Wait)
+  + [Wait (IAM)](https://docs.aws.amazon.com/goto/aws-cli/iam-2010-05-08/Wait)
 
 ### Creating a managed monitoring workspace
 <a name="iam_GettingStarted_044_bash_2_topic"></a>
@@ -5224,7 +5228,8 @@ echo "Script completed at $(date)"
   + [GetRole](https://docs.aws.amazon.com/goto/aws-cli/iam-2010-05-08/GetRole)
   + [ListNodegroups](https://docs.aws.amazon.com/goto/aws-cli/eks-2017-11-01/ListNodegroups)
   + [UpdateKubeconfig](https://docs.aws.amazon.com/goto/aws-cli/eks-2017-11-01/UpdateKubeconfig)
-  + [Wait](https://docs.aws.amazon.com/goto/aws-cli/eks-2017-11-01/Wait)
+  + [Wait (CloudFormation)](https://docs.aws.amazon.com/goto/aws-cli/cloudformation-2010-05-15/Wait)
+  + [Wait (Amazon EKS)](https://docs.aws.amazon.com/goto/aws-cli/eks-2017-11-01/Wait)
 
 ### Getting started with managed streaming
 <a name="ec2_GettingStarted_057_bash_2_topic"></a>
@@ -9291,7 +9296,3 @@ rm -f ssm-onboarding-policy.json trust-policy.json ssm-config.json 2>/dev/null |
   + [DetachRolePolicy](https://docs.aws.amazon.com/goto/aws-cli/iam-2010-05-08/DetachRolePolicy)
   + [GetCallerIdentity](https://docs.aws.amazon.com/goto/aws-cli/sts-2011-06-15/GetCallerIdentity)
   + [GetConfigurationManager](https://docs.aws.amazon.com/goto/aws-cli/ssm-2014-11-06/GetConfigurationManager)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,7 @@ Connect Amazon Quick to your BambooHR system to manage employee data, time-off r
 
 With BambooHR integration, you can perform actions within your BambooHR systems through the BambooHR API.
 
-**Action connector**
+**Connector**
 Create, update, and manage employee records, time-off requests, and other HR processes through the BambooHR API.
 
 ## Set up BambooHR integration
@@ -84,7 +84,7 @@ To modify your BambooHR integration settings:
 ### Share integration
 <a name="bamboohr-integration-sharing"></a>
 
-You can share your BambooHR action connector with other users in your organization.
+You can share your BambooHR connector with other users in your organization.
 
 1. From the BambooHR integration details page, choose **Share**.
 
@@ -126,7 +126,3 @@ Ensure that the authenticated user or API key has the required permissions to pe
 
 Action execution failures
 Review the action parameters and ensure they match the expected format for BambooHR API calls.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

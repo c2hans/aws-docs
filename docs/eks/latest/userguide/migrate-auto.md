@@ -68,7 +68,3 @@ Follow these steps to migrate your persistent volumes:
 You cannot directly transfer existing load balancers from the self-managed AWS load balancer controller to EKS Auto Mode. Instead, you must implement a blue-green deployment strategy. This involves maintaining your existing load balancer configuration while creating new load balancers under the managed controller.
 
 To minimize service disruption, we recommend a DNS-based traffic shifting approach. First, create new load balancers by using EKS Auto Mode while keeping your existing configuration operational. Then, use DNS routing (such as Route 53) to gradually shift traffic from the old load balancers to the new ones. Once traffic has been successfully migrated and you’ve verified the new configuration, you can decommission the old load balancers and self-managed controller.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

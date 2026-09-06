@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/smart-crop-console-c
 # Setting up with the MediaLive console
 <a name="smart-crop-console-create"></a>
 
-You set up the smart crop feature in one or more video outputs of a MediaLive channel. In each video output where you want the feature, you set the video scaling to SMART\_CROP. When you save the channel, MediaLive automatically creates one *feed* resource in Elemental Inference, in your AWS account. Even if you enable more than one Elemental Inference feature, MediaLive creates only one feed.
+You set up the smart crop feature in one or more video outputs of a MediaLive channel. In each video output where you want the feature, you set the video scaling to SMART\_CROP. You must have an Elemental Inference feed selected in the channel's Elemental Inference settings. If the feed already has a cropping output, MediaLive uses it. If not, MediaLive creates a cropping output on the feed automatically when you save the channel. For information about creating a feed, see [ Creating an Elemental Inference workflow](https://docs.aws.amazon.com/elemental-inference/latest/userguide/elemental-inference-configuration) in the *AWS Elemental Inference user guide*.
 
 You can set up smart crop in a new MediaLive channel that you are creating. Or you can update an existing channel to include smart crop.
 
@@ -28,9 +28,7 @@ You must enable smart crop in the applicable video outputs.
 
    Keep in mind that each feature that you enable in a channel results in one Elemental Inference output.
 
-1. On the **Create channel** or **Edit channel page**, choose **AWS Elemental Inference settings**.
-
-1. In **State**, choose **ENABLED**. Sections for each Elemental Inference feature appear.
+1. On the **Create channel** or **Edit channel page**, navigate to the **Elemental Inference settings** section. For **Elemental Inference feed**, select a feed from the dropdown. If you need to create a feed, see [ Creating an Elemental Inference workflow](https://docs.aws.amazon.com/elemental-inference/latest/userguide/elemental-inference-configuration) in the *AWS Elemental Inference user guide*.
 
 1. In the **Output groups** section of the channel, find an output group and one of the outputs that contains the video. Display the **Stream settings** section, and choose the **Video** section.
    + Complete the **Width** and **Height** fields to specify the resolution. Set the resolution to the crop that you want MediaLive to apply to the video. For example, 720 x 1600.
@@ -57,14 +55,6 @@ When you change the configuration, MediaLive performs the appropriate changes in
 ## Step C: Save or update the channel
 <a name="smart-crop-procedure-c"></a>
 
-Save the channel. MediaLive calls the Elemental Inference `AssociateFeed` endpoint to perform these actions:
-+ To create a smart crop output in the feed.
-+ To associate the channel (the resource) with the feed, if this is the first Elemental Inference feature that you are setting up.
-
-You now have a usable feed: resource - feed - output.
+Save the channel. If the selected feed does not already have a cropping output, MediaLive automatically creates one. MediaLive associates the feed with the channel.
 
 You can start the channel. When the channel is running, MediaLive delivers the source stream to Elemental Inference and then retrieves metadata from Elemental Inference that describes the region of interest in each video frame. In each video output where smart crop is set up, MediaLive crops the video to the new region of interest. MediaLive then continues with regular processing to encode the video.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ CodeCatalyst supports the NuGet (`nuget`) and .NET Core (`dotnet`) CLI tools.
 
 Because CodeCatalyst only supports V3 of NuGet's HTTP protocol, the following commands will not work when used against CodeCatalyst resources:
 + `list`: The `nuget list` command displays a list of packages from a given source. To get a list of packages in a CodeCatalyst package repository, navigate to the repository in the CodeCatalyst console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -88,7 +88,3 @@ The following steps are not required if all of your users are admin users.
 1. Send the new user an email invitation with a link for accessing the project and downloading the Amazon Monitron mobile app. For more information, see [Sending an email invitation](https://docs.aws.amazon.com/Monitron/latest/user-guide/resending-email.html).
 
 ![Users table showing display names, roles such as Admin and Technician, and site assignments.](http://docs.aws.amazon.com/Monitron/latest/user-guide/images/users-table.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

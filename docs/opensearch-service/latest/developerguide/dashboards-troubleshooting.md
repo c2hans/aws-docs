@@ -206,7 +206,3 @@ Because Dashboards depends on a healthy cluster and on your domain's access conf
 + **Red cluster status** and **Yellow cluster status**: unassigned shards prevent Dashboards from reading or writing its OpenSearch Dashboards index.
 + **ClusterBlockException**: low storage space or high JVM memory pressure blocks writes, including writes to the OpenSearch Dashboards index.
 + **JVM OutOfMemoryError** and **Request throttling**: cluster overload surfaces as Dashboards errors and `429 Too Many Requests` responses.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

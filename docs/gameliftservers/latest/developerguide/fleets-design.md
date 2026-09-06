@@ -14,7 +14,3 @@ Some of the decisions you want to consider:
 + Should your fleet use On-Demand or Spot Instances? Consider whether you can take advantage of lower Spot pricing, and whether Amazon GameLift Servers sufficiently mitigates the chance of Spot interruptions to your game sessions.
 + How do you want your game server software to run on each fleet instance? The runtime configuration tells Amazon GameLift Servers what server software to run and how.
 + For container fleets, does the default configuration work for your game? Amazon GameLift Servers does a lot of the work for you to optimize your container fleet configurations, but you can customize most configuration settings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

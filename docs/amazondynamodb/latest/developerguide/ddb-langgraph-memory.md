@@ -133,7 +133,3 @@ Avoid putting every memory in one namespace and filtering on metadata: filters a
 + [DynamoDBStore documentation on GitHub](https://github.com/langchain-ai/langchain-aws/blob/main/libs/langgraph-checkpoint-aws/langgraph_checkpoint_aws/store/dynamodb/DynamoDBStore.md)
 + [langgraph-checkpoint-aws on PyPI](https://pypi.org/project/langgraph-checkpoint-aws/)
 + [LangGraph documentation](https://langchain-ai.github.io/langgraph/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

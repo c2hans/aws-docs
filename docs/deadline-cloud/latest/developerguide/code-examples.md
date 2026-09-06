@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/cod
 # Code examples for Deadline Cloud
 <a name="code-examples"></a>
 
-The [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples) GitHub repository contains a collection of working artifacts for AWS Deadline Cloud. The examples cover job submission, software packaging, infrastructure deployment, worker configuration, and more. You can submit, deploy, or adapt them for your own farms.
+The [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples) repository on the GitHub website contains a collection of working artifacts for AWS Deadline Cloud. The examples cover job submission, software packaging, infrastructure deployment, worker configuration, and more. You can submit, deploy, or adapt them for your own farms.
 
 The following sections describe each category of example and link to individual topics that explain when to use each one.
 
@@ -60,8 +60,8 @@ The repository also includes the following examples:
 The following resources help you author and run your own examples in Deadline Cloud.
 + [Open Job Description (OpenJD) templates for Deadline Cloud](build-job-bundle.md) — Learn how to author your own job bundles for Deadline Cloud.
 + [Using AI agents with Deadline Cloud](ai-agents.md) — Use AI agents to write job bundles, develop conda packages, and troubleshoot jobs.
-+ [Open Job Description specifications](https://github.com/OpenJobDescription/openjd-specifications) on GitHub — The schema and reference for job templates that Deadline Cloud runs.
-+ [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples) on GitHub — The source repository for all of the examples in this chapter.
++ [Open Job Description specifications](https://github.com/OpenJobDescription/openjd-specifications) on the GitHub website — The schema and reference for job templates that Deadline Cloud runs.
++ [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples) on the GitHub website — The source repository for all of the examples in this chapter.
 
 **Topics**
 + [Tutorials for Deadline Cloud](examples-tutorials.md)
@@ -78,7 +78,3 @@ The following resources help you author and run your own examples in Deadline Cl
 + [Set up a virtual workstation for Deadline Cloud with a script](examples-virtual-workstation.md)
 + [Enforce fixed license limits with a Deadline Cloud submission hook](examples-license-limits-hook.md)
 + [AI agent skills for Deadline Cloud](examples-skills.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

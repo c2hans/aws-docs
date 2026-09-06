@@ -29,7 +29,3 @@ AWS Resource Explorer provides the following APIs for data retrieval.
 | <a name="resource-explorer-2-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/resource-explorer/latest/apireference/API_ListTagsForResource.html) | List the tags that are attached to the specified resource | Read |
 | <a name="resource-explorer-2-ListViews"></a>[ListViews](https://docs.aws.amazon.com/resource-explorer/latest/apireference/API_ListViews.html) | List the Amazon resource names (ARNs) of all of the views available in the AWS Region in which you call this operation | List |
 | <a name="resource-explorer-2-Search"></a>[Search](https://docs.aws.amazon.com/resource-explorer/latest/apireference/API_Search.html) | Search for resources and display details about all resources that match the specified criteria | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

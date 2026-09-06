@@ -29,7 +29,3 @@ The following onboarding flows are provided for provisioning your hub connected 
 
 **Note**
 The device provisioning workflow in Managed Integrations is agnostic of the onboarding requirements for a device. Managed Integrations provides a streamlined user interface for onboarding and managing a device, regardless of the device type or device protocol.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

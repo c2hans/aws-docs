@@ -305,7 +305,3 @@ The following table contains version history information and download links for 
 | 1.0.2 (latest) | Upgraded dependencies | 06/26/2024 | [Download v1.0.2](https://d12ov9682v6hj.cloudfront.net/codeartifact-nuget-credentialprovider-v1.0.2.zip) |
 | 1.0.1 | Added support for net5, net6, and SSO profiles | 03/05/2022 | [Download v1.0.1](https://a.co/cAIkhV1) |
 | 1.0.0 | Initial CodeArtifact NuGet Credential Provider release | 11/20/2020 | [Download v1.0.0](https://a.co/8b2cENb) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/create-custom-reso
 + [Evaluating an Amazon Personalize solution version with metrics](working-with-training-metrics.md)
 + [Deploying an Amazon Personalize solution version with a campaign](campaigns.md)
 + [Updating an Amazon Personalize campaign's configuration](update-campaigns.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

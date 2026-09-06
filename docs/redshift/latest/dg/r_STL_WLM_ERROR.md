@@ -20,7 +20,3 @@ STL\_WLM\_ERROR is visible to all users. Superusers can see all rows; regular us
 | recordtime  | timestamp  | Time that the error occurred.  |
 | pid  | integer  | ID for the process that generated the error.  |
 | error\_string  | character(256)  | Error description.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

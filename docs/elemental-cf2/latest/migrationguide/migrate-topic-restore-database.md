@@ -92,7 +92,3 @@ As a result of the restore command, the following data from the backup is restor
 Notes
 + The cluster data is only ever stored on the Conductor nodes. It is restored only to the primary Conductor because when you enable HA later is this migration procedure, the primary Conductor pushes the data to the secondary Conductor and to the appropriate worker nodes.
 + The remote storage mounts is only ever stored on the Conductor nodes. The data specific to the node is restored to that node.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

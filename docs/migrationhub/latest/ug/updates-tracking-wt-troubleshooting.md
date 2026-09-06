@@ -24,7 +24,3 @@ The following steps show you how to manually map a migration update to a discove
 1. Choose **Save**. A green confirmation message appears at the top of the screen.
 
 1. Verify that the server name of the server you just mapped is now present in the **Mapped servers** column.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

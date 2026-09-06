@@ -57,7 +57,3 @@ Publication date: **November 9, 2022** ([Document revisions](document-revisions.
  [AWS Enterprise Support](https://aws.amazon.com/premiumsupport/plans/enterprise/) customers can benefit from a number of [operational workshops and deep dives](https://aws.amazon.com/premiumsupport/technology-and-programs/proactive-services/) delivered by AWS Support experts. These services help you review the health of your cloud operations, optimize costs, and scale workloads efficiently.
 
 ![A diagram that depicts the AWS CAF Operations perspective capabilities](http://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/images/caf-operations.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

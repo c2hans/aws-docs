@@ -125,7 +125,3 @@ When using a login like Google or Apple, deleting active sessions will not log y
 <a name="last-help_sign_in_new"></a>
 
 You can fill out the [Support Feedback form](https://support.aws.amazon.com/#/contacts/aws-account-support/). In the **Request information** section, under **How can we help you**, include that you're using our new AWS experience. Provide as much detail as possible so that we can most efficiently address your issue.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

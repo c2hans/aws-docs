@@ -103,7 +103,3 @@ When you create a cross-region IAM Identity Center and Amazon Q Business integra
 Once you opt-in, you will see the option to create a cross-region connection during the [Amazon Q Business application creation process](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-application.html), as in the following image:
 
 ![An console screenshot of the cross-region IDC enabling option.](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/images/cross-region-idc.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

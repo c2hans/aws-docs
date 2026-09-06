@@ -232,7 +232,3 @@ The solution orchestrates meeting processing through four specialized agents tha
 + Once processing completes, the structured text, audio, and PDF outputs are made available for download via **Pre-signed S3 URL**s, accessible through clickable buttons in the UI.
 ![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dfd870ca-7a7d-48cc-a62a-b14c8c3c7bb6/images/b4fa32f4-32c3-43ae-b140-0f6a58ebe245.png)
 ![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dfd870ca-7a7d-48cc-a62a-b14c8c3c7bb6/images/eb878259-f90e-4d9f-8a4d-42627d04bdd1.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

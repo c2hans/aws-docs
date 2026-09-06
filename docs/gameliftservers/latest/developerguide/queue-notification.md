@@ -165,7 +165,3 @@ Matches events from a specific queue
 <a name="queue-notification-toolkit"></a>
 
 For a complete reference implementation of event-based game session placement using Amazon SNS, AWS Lambda, and Amazon DynamoDB, see the [ Event-based game session placement guidance](https://github.com/amazon-gamelift/amazon-gamelift-toolkit/tree/main/event-based-session-placement) in the Amazon GameLift Toolkit. This guidance includes an AWS CDK template for deploying a complete event-driven game session placement system with an AWS Lambda function for processing game session placement events, an Amazon DynamoDB table for tracking game session placement state, and best practices for Amazon GameLift Servers queue configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

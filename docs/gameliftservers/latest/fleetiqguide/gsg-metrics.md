@@ -18,7 +18,3 @@ The FleetIQ metrics are listed here. See complete Amazon CloudWatch metric infor
 | `PercentUtilizedGameServers` | Portion of game servers that are currently supporting game executions. This metric indicates the amount of game server capacity that is currently in use. It is useful for driving an Auto Scaling policy that can dynamically add and remove instances to match with player demand.<br />Units: Percent<br />Relevant Amazon CloudWatch statistics: Average, Minimum, Maximum<br />Dimensions: GameServerGroup |
 | `GameServerInterruptions` | Game servers on Spot Instances that were interrupted due to limited Spot availability.<br />Units: Count<br />Relevant Amazon CloudWatch statistics: Sum<br />Dimensions: GameServerGroup, InstanceType |
 | `InstanceInterruptions` | Spot Instances that were interrupted due to limited availability.<br />Units: Count<br />Relevant Amazon CloudWatch statistics: Sum<br />Dimensions: GameServerGroup, InstanceType |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

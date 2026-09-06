@@ -29,7 +29,3 @@ Troubleshooting – Resolve common issues like invalid requests, parser errors, 
 + [Step 4: Configure `cqlsh COPY FROM` settings](bulk-upload-config.md)
 + [Step 5: Run the `cqlsh COPY FROM` command to upload data from the CSV file to the target table](bulk-upload-run.md)
 + [Troubleshooting](bulk-upload-troubleshooting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

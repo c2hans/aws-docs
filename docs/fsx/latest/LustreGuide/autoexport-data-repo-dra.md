@@ -49,7 +49,3 @@ You can monitor automatic export enabled data repository associations using a se
 
 **Important**
 When deleting a data repository association or file system with automatic export enabled, you should first make sure that `AgeOfOldestQueuedMessage` is zero, meaning that there are no changes that have not yet been exported. If `AgeOfOldestQueuedMessage` is greater than zero when you delete your data repository association or file system, the changes that had not yet been exported will not reach your linked S3 bucket. To avoid this, wait for `AgeOfOldestQueuedMessage` to reach zero before deleting your data repository association or file system.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

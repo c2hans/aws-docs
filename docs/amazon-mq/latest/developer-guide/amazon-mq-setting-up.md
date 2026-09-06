@@ -28,7 +28,3 @@ You can also create and manage brokers programmatically using Amazon MQ [REST AP
 <a name="next-steps-setting-up"></a>
 
 Now that you're prepared to work with Amazon MQ, get started by [creating a broker](getting-started-activemq.md). Depending on your broker engine type, you can then [connect a Java application to your Amazon MQ for ActiveMQ broker](amazon-mq-connecting-application.md) or use the RabbitMQ Java client library to [connect a JVM-based application to your Amazon MQ for RabbitMQ broker](rabbitmq-on-amazon-mq.md#rabbitmq-connect-jvm-application).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

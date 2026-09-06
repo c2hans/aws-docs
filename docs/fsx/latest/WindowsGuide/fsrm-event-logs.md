@@ -25,7 +25,3 @@ View logs in the CloudWatch Logs console by navigating to the log group you spec
 
 Kinesis Data Firehose
 Logs are delivered to the destination configured in your Kinesis Data Firehose delivery stream, such as Amazon S3, AWS Redshift, or AWS OpenSearch Service. You can process and analyze logs using the tools and services integrated with your delivery stream.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

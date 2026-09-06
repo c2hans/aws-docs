@@ -31,7 +31,3 @@ The first step in an online migration plan is to ensure that any new data writte
 + **Messaging tier dual writes** – Instead of implementing dual writes at the application layer, you can use your existing messaging tier to perform dual writes to Cassandra and Amazon Keyspaces.
 
   To do this you can configure an additional consumer to your messaging platform to send writes to both data stores. This approach provides a simple low code strategy using the messaging tier to create two views across both databases that are eventually consistent.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

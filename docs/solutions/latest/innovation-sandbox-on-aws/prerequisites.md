@@ -30,7 +30,3 @@ Before launching the stacks, you must meet the following prerequisites:
    + The Applied quota value in your account should be greater than or equal to the AWS default quota value (which is 1000). If the Applied quota value is less than 1000, choose the **Request quota increase** button to request an increase to this value to at least 1000 before deploying the solution. For more information, refer to the [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html).
 
 1.  **Ensure that all accounts used are members of the AWS Organization**: The deployment will fail if this is not the case.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

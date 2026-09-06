@@ -41,7 +41,3 @@ Long-term portfolio assessment outcomes, such as maintaining an up-to-date inven
 1. **Portfolio analysis and migration planning** – Building a complete and up-to-date view of the application portfolio by iteratively enriching the dataset, closing data gaps, evolving the business case, and creating high-confidence migration wave plans
 
 1. **Continuous assessment and improvement** – Enabling migrations at scale by producing detailed application and technology assessments for each migration wave, iterating the migration wave plan, and further assessing migrated workloads for optimization and modernization
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

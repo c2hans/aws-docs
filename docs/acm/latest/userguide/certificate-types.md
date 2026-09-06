@@ -15,7 +15,3 @@ Not publicly trusted. Private certificates are primarily used internal to an org
 
 Imported certificates
 Customer-owned certificates imported into ACM. You can import certificates obtained from third-party certificate authorities for use with ACM integrated services or for export.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

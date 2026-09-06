@@ -14,7 +14,3 @@ For example, you might define a secret that looks like this:
 + Value: **^\*H3\#\!b9**
 
 After the secret is defined, you can specify the secret's key (**my-password**) in the workflow definition file. For an example of how to do this, see [Example: Referencing a secret](workflows-working-with-variables-ex.md#workflows-working-with-variables-ex-refer-secret).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -70,7 +70,3 @@ You can generate infrastructure templates even if you did not publish container 
 1. AWS Transform generates and validates the infrastructure templates. This step runs automatically and AWS Transform displays progress updates, including any validation or security scan results.
 
 1. Review the generated templates when AWS Transform presents them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

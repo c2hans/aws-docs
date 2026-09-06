@@ -204,7 +204,3 @@ To add S3 read permissions to a Lambda execution role in the Lambda console, use
 1. If you used the `AmazonS3ReadOnlyAccess` managed policy, select **Attach policy**.
 
    If you created a new policy, navigate back to the Lambda execution role summary page and attach the policy you just created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

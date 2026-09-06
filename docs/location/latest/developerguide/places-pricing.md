@@ -35,7 +35,3 @@ The Advanced pricing bucket provides additional place or points-of-interest deta
 <a name="stored-pricing"></a>
 
 You can store the Places results indefinitely for long-term use cases, such as reusing the results to reduce on-demand API calls or for analytical purpose. To do so, set `intendedUse = Stored` in your API request. In this case, you will be charged at the Stored price. The Stored pricing bucket supports all the features listed above, therefore, the maximum price you will be charged for a single Places API call is capped at the Stored price.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -223,7 +223,3 @@ The following limitations also apply to flows that transfer from SharePoint:
 + For scheduled flows, if a flow remains running when the next flow run is scheduled to start, then Amazon AppFlow skips the next flow run. Amazon AppFlow does this to allow the first flow run enough time to complete.
 + Amazon AppFlow doesn't provide the option to catalog your output in the AWS Glue Data Catalog. Amazon AppFlow typically provides that option for flows that transfer to Amazon S3, but the option is available only for structured source data. The documents that you transfer from your SharePoint document libraries are unstructured data.
 + Amazon AppFlow doesn't provide the data partitioning options that it typically provides for flows that transfer to Amazon S3. Amazon AppFlow partitions all SharePoint output only into folders that are named after the execution ID of the flow run.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

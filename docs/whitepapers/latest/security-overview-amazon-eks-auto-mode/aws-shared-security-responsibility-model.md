@@ -14,7 +14,3 @@ EKS Auto Mode accomplishes this by using [EC2 managed](https://docs.aws.amazon.c
 ![Figure 2: Shared Responsibility Model with EKS Auto Mode](http://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-eks-auto-mode/images/image2.jpg)
 
 Figure 1: Shared Responsibility Model with EKS Auto Mode
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

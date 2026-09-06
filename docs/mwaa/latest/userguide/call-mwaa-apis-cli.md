@@ -340,7 +340,3 @@ The following example uses the [boto3 create\_cli\_token](https://boto3.amazonaw
 ## What's next?
 <a name="mwaa-cli-next-up"></a>
 + Explore the Amazon MWAA API operation used to create a CLI token at [CreateCliToken](https://docs.aws.amazon.com/mwaa/latest/API/API_CreateCliToken.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

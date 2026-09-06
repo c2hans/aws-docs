@@ -50,7 +50,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 +  If no profile attribute was provided except iam\_role- assume iam\_role through AWS Security Token Service (AWS STS).
 
  If the Region was not specified in the input object, AWS SDK provided method is used to verify what is the default region for the active profile. If none is specified, we default to `us-east-1`. This function is used when **retrieveMode** is set to `native`. Returns `true` if the client set up is successful, or `false` if it fails.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

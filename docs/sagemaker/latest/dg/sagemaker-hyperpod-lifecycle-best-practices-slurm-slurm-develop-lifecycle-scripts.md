@@ -24,7 +24,3 @@ This section explains how you can interactively develop lifecycle scripts withou
 1. Upload the updated lifecycle scripts to the S3 bucket that you initially used for uploading the base lifecycle scripts.
 
 1. Test the integrated version of `lifecycle_script.py` by creating a new HyperPod cluster. You can also use manual instance replacement to test the updated lifecycle scripts by creating new instances. For detailed instructions, see [Manually replace a node](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-resiliency-slurm-replace-faulty-instance.html#sagemaker-hyperpod-resiliency-slurm-replace-faulty-instance-replace). Note that only worker nodes are replaceable.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

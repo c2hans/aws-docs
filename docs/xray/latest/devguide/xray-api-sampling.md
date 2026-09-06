@@ -129,7 +129,3 @@ The response from X-Ray includes a quota to use instead of borrowing from the re
 The response from X-Ray might not include a quota the first time you call it. Continue borrowing from the reservoir until you are assigned a quota.
 
 The other two fields in the response might indicate issues with the input. Check `LastRuleModification` against the last time you called [`GetSamplingRules`](https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingRules.html). If it's newer, get a new copy of the rules. `UnprocessedStatistics` can include errors that indicate that a rule has been deleted, that the statistics document in the input was too old, or permissions errors.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

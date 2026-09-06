@@ -11,7 +11,3 @@ When you use AWS ParallelCluster, you can connect to the cluster head node to ru
 + You can use an SSM session to connect to the cluster head node. You must add the `AmazonSSMManagedInstanceCore` managed policy to [`HeadNode`](HeadNode-v3.md) / [`AdditionalIamPolicies`](HeadNode-v3.md#yaml-HeadNode-Iam-AdditionalIamPolicies) in the cluster configuration to connect by using an SSM session. For more information, see [SSM session manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html) in the *SSM User Guide*.
 + You can use Amazon DCV to connect to the cluster head node. For more information, see [Connect to the head and login nodes through Amazon DCV](dcv-v3.md).
 + When you use the PCUI, you can also use an Amazon EC2 Connect command that the UI provides to connect to the cluster head node.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

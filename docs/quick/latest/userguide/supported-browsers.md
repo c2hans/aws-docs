@@ -16,7 +16,3 @@ Amazon Quick ended support for Microsoft Internet Explorer 11 on July 31, 2022. 
 |  **Google Chrome**  | Last three versions | Open Chrome and type **chrome://version** in your address bar. The version is in the **Google Chrome** field at the top of the results. |
 |  Microsoft Edge (Chromium)  | Latest version | Not applicable. |
 |  **Mozilla Firefox**  | Last three versions | Open Firefox. On the menu, choose the Help icon, and then choose **About Firefox**. The version number is listed underneath the Firefox name. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ Workflow monitor contains recommended template groups for each supported service
 1. After the import is complete, the selected templates will be added to the template group. If you want to add more templates, repeat the import process.
 
 1. Imported templates can be customized after import. Alarm settings can be modified to fit your alarming needs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

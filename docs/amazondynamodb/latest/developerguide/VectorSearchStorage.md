@@ -11,7 +11,3 @@ A vector index consumes storage separately from its base table. The storage a ve
 + **Number of indexed items** – Only items that contain a valid vector attribute (and, if the index defines a partition key, that partition key attribute) are replicated to the index. Items that are missing the vector attribute do not consume vector index storage.
 
 To control vector index storage, choose the smallest number of dimensions that meets your relevance needs and project only the attributes your application reads directly from search results. For current storage pricing, see the [Amazon DynamoDB pricing](https://aws.amazon.com/dynamodb/pricing/) on the AWS website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

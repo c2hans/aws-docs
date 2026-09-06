@@ -39,7 +39,3 @@ To get started with Data Wrangler, see [Get Started with Data Wrangler](data-wra
 1. Choose the caret to the right of each bias metric description to see documentation that can help you interpret the significance of the metric values.
 
 1. To view a table summary of the bias metric values, choose the **Table** toggle. To save the report, choose **Save** in the lower-right corner of the page. You can see the report on the flow graph in the **Data flow** tab. Double-click on the report to open it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

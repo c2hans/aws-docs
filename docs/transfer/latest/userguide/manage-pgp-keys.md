@@ -81,7 +81,3 @@ You can add up to 3 sets of keys and passphrases. To add a second set, add two n
 The following screenshot shows the details for the user **marymajor** for a specific Transfer Family server. This example shows three keys and their corresponding passphrases.
 
 ![The AWS Secrets Manager console, showing the secret details page with three keys and passphrases for a Transfer Family server and user.](http://docs.aws.amazon.com/transfer/latest/userguide/images/pgp-secrets-02.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

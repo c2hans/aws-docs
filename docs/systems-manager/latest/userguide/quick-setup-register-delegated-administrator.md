@@ -24,7 +24,3 @@ Use the following procedure to register a delegated administrator for Quick Setu
 1. For **Account ID**, enter the AWS account ID. This account must be a member account in AWS Organizations.
 
 1. Choose **Register delegated administrator**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

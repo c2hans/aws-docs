@@ -303,7 +303,3 @@ When the operation is successful, `CreateCustomKeyStore` returns the custom key 
 If the operation fails, correct the error indicated by the exception, and try again. For additional help, see [Troubleshooting external key stores](xks-troubleshooting.md).
 
 **Next**: To use the external key store, [connect it to its external key store proxy](xks-connect-disconnect.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

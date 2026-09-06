@@ -50,7 +50,3 @@ In the scenario below, you have a provisioned product in the `AVAILABLE` state e
 <a name="provisioned-products-lifecycle-solutions"></a>
 
 AWS Service Catalog ensures that a resource group is created for all provisioned products set to `TAINTED` from `ProvisionProduct`. If the Terraform provisioning engine does not return a `ResourceIdentifier`, or if AWS Service Catalog fails to create a resource group, then the provisioned product is set to the `ERROR` state, forcing you to terminate.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

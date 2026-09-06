@@ -65,7 +65,7 @@ Accepted file formats include .pdf, .txt, .doc, .xls, and .csv files. The file s
 ## Quick assets
 <a name="spaces"></a>
 
-Connect Quick Research to your existing data spaces to include internal documents, reports, knowledge bases, and integrations in your research. You can combine external web sources with your organization's proprietary information. Quick Research can also fetch data through Quick action connectors, enabling it to pull live data from connected systems during the research process.
+Connect Quick Research to your existing data spaces to include internal documents, reports, knowledge bases, and integrations in your research. You can combine external web sources with your organization's proprietary information. Quick Research can also fetch data through Quick connectors, enabling it to pull live data from connected systems during the research process.
 
 For optimal results, consider selecting the most relevant assets for your specific research question. Choose **Browse** to add assets from Quick.
 
@@ -85,14 +85,10 @@ For optimal results, consider selecting the most relevant assets for your specif
 
    1. **Knowledgebase** - Knowledge base resources
 
-   1. **Integration** - Action connectors that can fetch live data from connected systems
+   1. **Integration** - Connectors that can fetch live data from connected systems
 
 1. Review the available assets, which display the Name, Owner, and Last Modified date and time for each asset.
 
 1. Select the assets you want to include in your research.
 
 1. When you're finished specifying all assets, choose **Add**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

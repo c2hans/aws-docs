@@ -135,7 +135,3 @@ The example policy uses `"Resource": "*"` for simplicity. For production environ
 + **IAM principal permissions to invoke Athena API for connector management and querying**
   + **Amazon Athena access** – The AmazonAthenaFullAccess managed policy provides full access to Amazon Athena and scoped access to the dependencies needed to enable querying, writing results, and data management. For more information, see [AmazonAthenaFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAthenaFullAccess.html) in the AWS Managed Policy Reference Guide.
   + **Connector management permissions** – The following permissions are needed to call the Athena DataCatalog API when using Lambda-based connectors. See [Permissions required to create connector and Athena catalog](athena-catalog-access.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

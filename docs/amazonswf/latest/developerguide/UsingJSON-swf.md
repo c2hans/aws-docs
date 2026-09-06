@@ -151,7 +151,3 @@ x-amzn-RequestId: e86a6779-3f26-11e1-9a27-0760db01a4a8
 Notice the protocol (`HTTP/1.1`) is followed by a status code (`200`). A code value of `200` indicates a successful operation.
 
 Amazon SWF doesn't serialize null values. If your JSON parser is set to serialize null values for requests, Amazon SWF ignores them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

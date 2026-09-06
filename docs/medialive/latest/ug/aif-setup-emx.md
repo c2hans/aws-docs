@@ -76,7 +76,3 @@ You must create two flows, one for each input.
 **Note**
 If you enable the input loss failover condition, find out if the MediaConnect flow implements source redundancy with failover mode. With this mode, if there is a source failure, MediaConnect waits 500 ms for the source to recover before it fails over. Therefore, you must configure MediaLive to wait longer than 500ms, to ensure that MediaLive doesn't fail over just as MediaConnect is about to recover.
 In the **Enable input loss settings** option, adjust the threshold. Set the threshold to a value higher than 500ms. You might need to try different values to find the ideal threshold for your network.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

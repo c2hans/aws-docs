@@ -10,7 +10,3 @@ Spark [partitioning hints](https://spark.apache.org/docs/latest/sql-ref-syntax-q
 + **Repartition** - Repartition to the specified number of partitions by using the specified partitioning expressions. The `REPARTITION` hint parameters are a partition number, column names, or both.
 + **Repartition by range** - Repartition to the specified number of partitions by using the specified partitioning expressions. Column names is a required parameter for the `REPARTITION_BY_RANGE` hint, and a partition number is optional.
 + **Rebalance** - Rebalance the query result output partitions so that every partition is a reasonable size. `REBALANCE` hint parameters are an initial partition number, column names, or both or neither.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

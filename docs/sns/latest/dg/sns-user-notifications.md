@@ -10,7 +10,3 @@ Amazon SNS application-to-person (A2P) messaging lets you to deliver notificatio
 This topic explains how to use Amazon SNS for user notifications with subscribers such as mobile applications, mobile phone numbers, and email addresses.
 
 ![An overview of how Amazon SNS supports application-to-person (A2P) messaging by allowing publishers to send notifications directly to customers. It shows two primary ways of distributing messages: direct publishing to individual endpoints (such as email addresses, phone numbers, or mobile apps) and topic-based publishing, which sends messages to multiple subscribers at once. The subscribers, represented on the right, can receive notifications through push notifications, text messages, or emails, providing flexibility for different use cases.](http://docs.aws.amazon.com/sns/latest/dg/images/sns-a2p-overview.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

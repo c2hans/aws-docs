@@ -14,7 +14,3 @@ We recommend that you take the following next steps:
 1. Review the [AWS for Microsoft Workloads Self-Study Guide](https://aws.amazon.com/windows/windows-study-guide/).
 
 1. Complete the [Migrating Microsoft Workloads to AWS Hands-on Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/6e89974d-b3c3-47d4-9d32-7624e7975121/en-US).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

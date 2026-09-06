@@ -43,7 +43,3 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/machine-learnin
 + Skill 4.3.7: Identify and mitigate security risks and vulnerabilities in ML and AI systems.
 + Skill 4.3.8: Select the appropriate credential type to access FMs (for example, Amazon Bedrock API keys, IAM credentials).
 + Skill 4.3.9: Implement safeguards and sensitive data protection to meet application requirements and responsible AI policies (for example, by using Amazon Bedrock Guardrails).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,7 +35,3 @@ Using outbound identity federation, your AWS workloads can securely:
 1. The external service uses the verification keys to verify the token's signature and validates claims such as expiration time, subject and audience.
 
 1. After successful validation, the external service grants access to the Lambda function.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

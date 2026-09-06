@@ -63,7 +63,3 @@ Each Y axis dataset can display a line, in addition to the individual dots. Ther
 + **Linear** – Display a straight line, using the least-squares, best-fit method.
 + **Exponential** – Display an exponential best-fit regression line.
 + **Power** – Display a power best-fit regression line.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

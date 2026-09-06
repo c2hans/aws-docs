@@ -65,7 +65,3 @@ You can filter the alerting rules that appear on the **Alerting** page in severa
 1. In **Search by label**, enter search criteria using label selectors. For example, `environment=production;region=~US|EU,severity!=warning`.
 
 1. From **Filter alerts by state**, select an alerting state you want to see. You can see alerting rules that match that state. Rules matching other states are hidden.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

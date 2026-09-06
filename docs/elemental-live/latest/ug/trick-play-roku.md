@@ -44,7 +44,3 @@ To create a frame capture encode in an HLS output group, you create an output, a
 1. Choose **Audio 1** and choose **X** to remove the audio stream. The output must have only one encode (a video encode).
 
 The output is part of the ABR stack and has the same destination as the other encodes in the HLS output group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

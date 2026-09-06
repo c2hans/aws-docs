@@ -48,7 +48,3 @@ The following table shows when features and updates were released for the AWS He
 | [Faster imports](#releases) | HealthImaging provides 20X faster imports in all supported Regions. For more information, see [Service endpoints](https://docs.aws.amazon.com/healthimaging/latest/devguide/endpoints-quotas.html#endpoints). | December 1, 2023 |
 | [CloudFormation support](#releases) | HealthImaging supports infrastructure as code (IaC) for provisioning data stores. For more information, see [ Creating HealthImaging resources with CloudFormation](https://docs.aws.amazon.com/healthimaging/latest/devguide/creating-resources-with-cloudformation.html). | September 21, 2023 |
 | [General availability](#releases) | AWS HealthImaging is available to all customers in the US East (N. Virginia), US West (Oregon), Europe (Ireland), and Asia Pacific (Sydney) Regions. For more information, see [Service endpoints](https://docs.aws.amazon.com/healthimaging/latest/devguide/endpoints-quotas.html#endpoints). | July 26, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

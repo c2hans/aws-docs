@@ -59,7 +59,3 @@ AWS_USE_DUALSTACK=true aws mq describe-broker-engine-types --region ap-southeast
  For other ways to configure the endpoint in CLI, see [Using endpoints in the AWS CLI](https://docs.aws.amazon.com/cli/v1/userguide/cli-configure-endpoints.html)
 
  You can also determine user access to the VPC endpoints using VPC endpoint policies. For more information, see [Control access to VPC endpoints using endpoint policies](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,7 +55,3 @@ To use Connector for SCEP with Microsoft Intune, you must enable specific functi
 + [Configure Jamf Pro for Connector for SCEP](connector-for-scep-general-purpose.md)
 + [Configure Microsoft Intune for Connector for SCEP](connector-for-scep-intune.md)
 + [Configure Omnissa Workspace ONE for Connector for SCEP](connector-for-scep-omnissa.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

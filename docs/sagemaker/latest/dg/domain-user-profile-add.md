@@ -88,7 +88,3 @@ sagemaker create-user-profile \
 ```
 
 You can use the AWS CLI to customize the applications and ML tools displayed in Studio for the user, using [StudioWebPortalSettings](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StudioWebPortalSettings.html). Use `HiddenAppTypes` to hide applications and `HiddenMlTools` to hide ML tools. For more information on customizing the left navigation of the Studio UI, see [Hide machine learning tools and applications in the Amazon SageMaker Studio UI](studio-updated-ui-customize-tools-apps.md). This feature is not available for Studio Classic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

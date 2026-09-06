@@ -148,7 +148,3 @@ The data is unloaded into the file `unloaded_category_csv.text0000_part00` in th
 14,Shows,Opera,"All opera, light, and ""rock"" opera"
 15,Concerts,Classical,"All symphony, concerto, and choir concerts"
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

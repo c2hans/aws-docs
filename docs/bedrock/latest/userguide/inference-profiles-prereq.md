@@ -157,7 +157,3 @@ When you specify an inference profile in the `Resource` field in the first state
 
   1. Follow the steps at [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) to attach the policy to a role to grant the role permissions to view and use all the inference profiles.
 + You've requested access to the model defined in the inference profile that you want to use, in the Region from which you want to call the inference profile.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

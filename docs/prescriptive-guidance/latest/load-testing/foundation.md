@@ -40,7 +40,3 @@ For different tests, you can model how much load is produced over the course of 
 Using complex tools, you can set up a pattern as a configuration for your test. This will define how much load will be produced for a period and how it will increase or decrease.
 
 Most of the basic tools are command line tools, which require you to script a solution yourself. When you write your own scripts, make sure that you are not accidentally overwriting metrics you want to keep. Output files should have new suffixes for each iteration, so that you don't overwrite the results of your previous iteration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

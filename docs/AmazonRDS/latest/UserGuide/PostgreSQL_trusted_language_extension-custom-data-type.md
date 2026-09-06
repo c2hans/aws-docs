@@ -13,7 +13,3 @@ RDS for PostgreSQL enables you to create custom data types in your trusted langu
 + RDS for PostgreSQL 13.12 and higher 13 versions
 
 For more information, see [Trusted Language Base types](https://github.com/aws/pg_tle/blob/main/docs/09_datatypes.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

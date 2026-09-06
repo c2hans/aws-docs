@@ -108,7 +108,3 @@ The most valuable output of a chaos experiment is not whether the test "passed" 
 **Go Deeper**
 [Chaos Testing with AWS Fault Injection Service and AWS CodePipeline](https://aws.amazon.com/blogs/architecture/chaos-testing-with-aws-fault-injection-simulator-and-aws-codepipeline) (Architecture Blog)
 [Simulating partial failures with AWS Fault Injection Service](https://aws.amazon.com/blogs/mt/simulating-partial-failures-with-aws-fault-injection-service/) (Management & Governance Blog)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Performance Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

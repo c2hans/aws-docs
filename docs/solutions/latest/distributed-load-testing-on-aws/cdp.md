@@ -41,7 +41,3 @@ Organizations interested in CDP Short Term Engagements for Distributed Load Test
  **Out of Scope**
 
 CDP does not provide custom test script development (guidance only), manage test execution operations, or create custom hands-on labs or workshops. On-site support is also out of scope.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

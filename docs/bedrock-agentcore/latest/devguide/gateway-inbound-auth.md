@@ -68,26 +68,31 @@ A JSON Web Token (JWT) is a secure and compact token used for authorization. You
 **Important**
 Using inbound authorization based on JWT tokens will result in logging of some claims of the JWT token in CloudTrail. The entry includes the [Subject](http://openid.net/specs/openid-connect-core-1_0.html#Claims) of the provided web identity token. We recommend that you avoid using any personally identifiable information (PII) in this field. For example, you could instead use a GUID or a pairwise identifier, as [suggested in the OIDC specification](http://openid.net/specs/openid-connect-core-1_0.html#SubjectIDTypes).
 
-You can use the AgentCore CLI to set up a default JWT, or create one manually with a supported identity provider. To learn more about different methods for setting up a JWT, select from the following topics:
+You can use the AgentCore CLI to configure a gateway with an existing JWT identity provider. To learn more about JWT configuration methods, select from the following topics:
 
 **Topics**
-+ [Set up a default JWT](#gateway-inbound-auth-jwt-default)
++ [Configure a JWT authorizer](#gateway-inbound-auth-jwt-default)
 + [Set up a JWT manually](#gateway-inbound-auth-jwt-manual)
 + [Scope advertisement in authentication challenges](#gateway-inbound-auth-jwt-scope-advertisement)
 + [Use a private (VPC-hosted) identity provider](#gateway-inbound-auth-jwt-private-idp)
 
-### Set up a default JWT
+### Configure a JWT authorizer
 <a name="gateway-inbound-auth-jwt-default"></a>
 
-The AgentCore CLI lets you easily create a default authorization configuration using Amazon Cognito that you can then use when creating a gateway. When you run `agentcore create` , the CLI prompts you to configure inbound authorization and can automatically set up a Amazon Cognito user pool for you.
+Create an application and client with a supported identity provider. For an Amazon Cognito example, see [Get started with Amazon Cognito](identity-getting-started-cognito.md). Note the OIDC discovery URL and client ID.
+
+Run the following command in an AgentCore project directory:
 
 ```
-agentcore create
+agentcore add gateway \
+  --name MyGateway \
+  --protocol-type MCP \
+  --authorizer-type CUSTOM_JWT \
+  --discovery-url <OIDC_DISCOVERY_URL> \
+  --allowed-clients <CLIENT_ID>
 ```
 
-After the command completes, the AgentCore CLI provides authentication and authorization information:
-+ You’ll use the authorizer configuration when you create the gateway.
-+ For inbound authorization when invoking your gateway, you’ll need to obtain an access token by using your client ID, client secret, and the token endpoint. For more information on how to obtain your access token, see the **Example** at [Use an AgentCore gateway](gateway-using.md) or [The token issuer endpoint](https://docs.aws.amazon.com/cognito/latest/developerguide/token-endpoint.html) in the Amazon Cognito Developer Guide.
+The AgentCore CLI consumes the existing OIDC configuration; it does not create the identity provider resources. To invoke the gateway, obtain an access token from your provider. For Amazon Cognito, see [The token issuer endpoint](https://docs.aws.amazon.com/cognito/latest/developerguide/token-endpoint.html) in the Amazon Cognito Developer Guide.
 
 ### Set up a JWT manually
 <a name="gateway-inbound-auth-jwt-manual"></a>
@@ -239,7 +244,3 @@ Token passthrough (`JWT_PASSTHROUGH`) is **not** the recommended approach for pr
 
 **Warning**
 The identity-forwarding configurations in this section rely solely on the downstream runtime to authorize requests; the gateway adds no authorization of its own. They are intended for testing, experimentation, and low-disruption onboarding. For a production gateway, enforce authorization at the gateway — configure JWT or IAM inbound authorization, attach a policy engine, or use an interceptor Lambda function. To ensure callers cannot bypass the gateway once you adopt it, see [Enforcing traffic through the gateway](gateway-target-http-runtime.md#gateway-target-http-runtime-source-validation).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

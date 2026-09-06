@@ -48,7 +48,3 @@ The following table details general use cases for using an SCP and RCPs
 | Restrict which identities can access your resources | RCP | Yes | Yes | Yes | No |
 | Protect sensitive resources in your organization | RCP | Yes | Yes | Yes | No |
 | Enforce requirements on how your resources can be accessed | RCP | Yes | Yes | Yes | No |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

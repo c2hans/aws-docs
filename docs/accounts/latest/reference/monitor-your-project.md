@@ -120,7 +120,3 @@ To connect the `onBehalfOf` parameter to a team member using the AWS CLI:
    Your team member's display name and emails are provided in this output.
 
 To connect the `onBehalfOf` parameter to a team member using AWS CloudShell, log into the AWS Management Console and access CloudShell. For more information, see [Getting started with AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.html#start-session). You will automatically have the correct IAM permissions to access CloudShell.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

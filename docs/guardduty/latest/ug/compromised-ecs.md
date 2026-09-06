@@ -22,7 +22,3 @@ Follow these steps to remediate a potentially compromised Amazon ECS cluster:
    Stop the threat by blocking all network traffic (both incoming and outgoing) to the affected tasks. This network isolation helps prevent any ongoing attacks by cutting off all connections to the compromised task.
 
 **Note**: If you determine this finding was triggered by expected/legitimate activity in your environment, you can set up a suppression rule to prevent similar findings from appearing. For additional information, see [Suppression rules in GuardDuty](findings_suppression-rule.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ WorkSpaces Applications groups instances into families, such as General Purpose 
  WorkSpaces provides hardware bundles with different amounts of vCPUs and memory. Graphics.G4dn and GraphicsPro.G4dn bundles include GPUs.
 
  For specifications and recommended uses cases, see [Amazon WorkSpaces](https://aws.amazon.com/workspaces-family/workspaces/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

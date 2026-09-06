@@ -139,7 +139,3 @@ You can use the following functions in the parameters of `Fn::FindInMap` with th
 For more information and examples that show how to use the `Fn::FindInMap` intrinsic function, including the `DefaultValue` parameter, see [`Fn::FindInMap`](intrinsic-function-reference-findinmap.md).
 
 For more information about the `AWS::LanguageExtensions` transform, see [`AWS::LanguageExtensions` transform](transform-aws-languageextensions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

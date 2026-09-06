@@ -187,7 +187,3 @@ Released 2024-02-15
 Released 2023-11-16
 
 The Athena JDBC 3.x driver is the new generation driver offering better performance and compatibility. The JDBC 3.x driver supports reading query results directly from Amazon S3, which improves the performance of applications that consume large query results. The new driver also has fewer third-party dependencies, which makes integration with BI tools and custom applications easier.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ In CodeCatalyst, you can view the projects and roles for your team. On the membe
 1. On the **Members** tab, view the list of members assigned to the team.
 
 1. On the **SSO Groups** tab, view the list of SSO groups assigned to the team (for a space that supports identity federation only).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

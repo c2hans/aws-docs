@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ### Implementation steps
 <a name="implementation-steps-16"></a>
 +  Consider using AWS IAM Identity Center as your central identity provider. This provides consistent access management across your AWS accounts, provides your employees with single sign-on authentication, and simplifies user access auditing to your AWS applications. IAM Identity Center also connects with existing corporate identities from supported identity providers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

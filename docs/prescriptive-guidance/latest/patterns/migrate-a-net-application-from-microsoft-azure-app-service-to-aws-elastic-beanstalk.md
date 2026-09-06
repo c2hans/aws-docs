@@ -114,7 +114,3 @@ The .NET web application is deployed to AWS Elastic Beanstalk, which runs in an
 <a name="attachments-df606a2d-b0a8-4035-b377-0a760e7300c9"></a>
 
 To access additional content that is associated with this document, download and unzip the following file: [attachment.zip](samples/p-attach/df606a2d-b0a8-4035-b377-0a760e7300c9/attachments/attachment.zip)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

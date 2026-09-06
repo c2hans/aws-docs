@@ -86,7 +86,3 @@ Connections to HealthLake containing PHI and personally identifiable information
 <a name="what-is-pricing"></a>
 
 For HealthLake pricing information, see [AWS HealthLake pricing](https://aws.amazon.com/healthlake/pricing/). To estimate costs, use the [ HealthLake pricing calculator](https://calculator.aws/#/addService/HealthLake).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -166,7 +166,7 @@ aws cloudtrail put-event-selectors \
   --advanced-event-selectors '[
     { "Name": "All management events",
       "FieldSelectors": [ { "Field": "eventCategory", "Equals": ["Management"] } ] },
-    { "Name": "Quick action connector data events",
+    { "Name": "Quick connector data events",
       "FieldSelectors": [
         { "Field": "eventCategory", "Equals": ["Data"] },
         { "Field": "resources.type", "Equals": ["AWS::Quicksight::ActionConnector"] } ] },
@@ -186,7 +186,7 @@ Add selectors for `AWS::Quicksight::Companion`, `AWS::Quicksight::CompanionAcces
 ### `InvokeAction` data event
 <a name="logging-data-events-invokeaction"></a>
 
-When a user or flow invokes an action connector, CloudTrail records an `InvokeAction` data event. This event captures the following information:
+When a user or flow invokes a connector, CloudTrail records an `InvokeAction` data event. This event captures the following information:
 + Caller identity, including `onBehalfOf.userId` and `endUserArn`
 + The `actionConnectorId` and `actionId` of the invoked action
 + The outcome: `invokeActionStatus` and `httpStatusCode`
@@ -342,7 +342,3 @@ The following non-API events are captured in your CloudTrail trail:
 + **DeleteDataSet** – Delete Dataset
 
 + **Querydatabase** – During a dataset refresh, query data source.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

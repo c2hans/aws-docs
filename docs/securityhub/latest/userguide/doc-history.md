@@ -11,6 +11,7 @@ To receive notifications about updates to the *AWS Security Hub User Guide*, you
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Updated Network Scanning informational findings details](#doc-history) | Added information about informational findings that Network Scanning generates. | September 3, 2026 |
 | [Updated Network Scanning ports list](#doc-history) | Added list of ports that are currently supported by Network Scanning. | August 18, 2026 |
 | [Updated security controls](#doc-history) | Security Hub CSPM removed the [EFS.6](https://docs.aws.amazon.com/securityhub/latest/userguide/efs-controls.html#efs-6) control from the [AWS Foundational Security Best Practices (FSBP) standard](https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html). This control remains available in the NIST SP 800-53 Rev. 5, NIST SP 800-171 Revision 2, and PCI DSS v4.0.1 standards. | August 3, 2026 |
 | [Enhanced enabling Security Hub documentation](#doc-history) |  Improved the guidance in the Managing configuration of member accounts in an AWS Organization page.  | July 7, 2026 |
@@ -302,7 +303,3 @@ To receive notifications about updates to the *AWS Security Hub User Guide*, you
 | [AWS Security Hub CSPM general availability release](#doc-history) | Content updates to reflect improvements made to Security Hub CSPM during the beta period. | June 25, 2019 |
 | [Added remediation steps for CIS AWS Foundations checks](#doc-history) | Added remediation steps to [Security Standards Supported in AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards.html). | April 15, 2019 |
 | [beta release of AWS Security Hub CSPM](#doc-history) | Published the beta release version of the *AWS Security Hub CSPM User Guide*. | November 18, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

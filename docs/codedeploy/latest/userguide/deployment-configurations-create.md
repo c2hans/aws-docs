@@ -101,7 +101,3 @@ The following example creates an Amazon ECS deployment configuration named `Cana
 ```
 aws deploy create-deployment-config --deployment-config-name Canary25Percent45Minutes --traffic-routing-config "type="TimeBasedCanary",timeBasedCanary={canaryPercentage=25,canaryInterval=45}" --compute-platform ECS
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

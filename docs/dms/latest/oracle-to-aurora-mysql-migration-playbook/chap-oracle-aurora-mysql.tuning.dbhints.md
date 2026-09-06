@@ -191,7 +191,3 @@ SELECT /*+ NO_ICP(t1, t2) */ * FROM Table1 INNER JOIN Table2 ON ...;
 | Parameter value hints |  `opt_param`  | N/A |
 
 For more information, see [Controlling the Query Optimizer](https://dev.mysql.com/doc/refman/5.7/en/controlling-optimizer.html), [Optimizer Hints](https://dev.mysql.com/doc/refman/5.7/en/optimizer-hints.html), [Index Hints](https://dev.mysql.com/doc/refman/5.7/en/index-hints.html), and [Optimizing Subqueries, Derived Tables, and View References](https://dev.mysql.com/doc/refman/5.7/en/subquery-optimization.html) in the *MySQL documentation*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

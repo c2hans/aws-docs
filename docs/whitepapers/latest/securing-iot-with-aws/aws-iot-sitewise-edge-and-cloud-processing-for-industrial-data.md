@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
  AWS IoT SiteWise gateway supports connectivity over the OPC-UA, Modbus TCP, or Ethernet/IP (EIP) protocols. AWS IoT SiteWise offers additional security when supported in the protocols, such as using encryption and server authentication secrets to authenticate between OPC-UA data sources securing your industrial data as it moves from your servers to the gateway. If your gateway has a hardware security module, you can configure AWS IoT Greengrass to secure your gateway. For AWS IoT SiteWise Monitor, customers can follow the principle of least privilege by using the minimum set of access policy permissions for their portal users and implement a healthy password rotation policy by configuring an appropriate expiration for passwords.
 
  Additionally, AWS IoT SiteWise Edge now offers many of these capabilities on-premises in support of low latency and network fault intolerant applications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

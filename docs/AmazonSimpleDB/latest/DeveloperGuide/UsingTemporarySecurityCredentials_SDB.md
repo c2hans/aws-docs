@@ -30,7 +30,3 @@ https://sdb.amazonaws.com/
 
 **Note**
 AWS provides support for temporary security credentials and session tokens in the AWS SDKs so you can implement temporary security credentials or session tokens with a specific programming language. Each SDK has its own instructions for implementing this feature. For a current list of AWS SDKs that support this feature, see [Ways to Access the AWS Security Token Service](http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessingSTS.html). Non-AWS products and services should have their own documentation about supporting temporary credentials and session tokens, if available.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

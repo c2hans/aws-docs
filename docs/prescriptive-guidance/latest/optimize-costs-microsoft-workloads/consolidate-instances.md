@@ -76,7 +76,3 @@ If you wish to move forward with a plan to combine SQL Server instances, see the
 + [SQL Server Licensing Datasheet](https://download.microsoft.com/download/0/5/c/05c60185-ebdd-4472-895a-3d8e8da55682/SQL_Server_2019_Licensing_Datasheet.pdf) (AWS Cloud Operations & Migrations Blog)
 + [SQL Server Multiple instance setup blog post](https://aws.amazon.com/blogs/mt/run-multiple-instances-sql-server-on-one-amazon-ec2-instance/) (AWS Cloud Operations & Migrations Blog)
 + [SQL Server Best practices guide](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-best-practices/cpu-mismatch.html) (AWS Prescriptive Guidance documentation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

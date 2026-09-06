@@ -30,7 +30,3 @@ If you directly invoke S3 Object Lambda from your client code today, you can use
 You also have the option of moving your data processing logic from S3 Object Lambda into your client application. This works best if you are using S3 Object Lambda as part of an application that already performs further processing or analysis of the data returned by S3 Object Lambda. For example, if your S3 Object Lambda access point was responsible for redirecting to particular objects or object versions, that redirect logic can be moved into the calling application which would then directly access data in the S3 bucket.
 
 If you need assistance or have feedback, contact [AWS Support](https://aws.amazon.com/contact-us/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

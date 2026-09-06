@@ -9,6 +9,9 @@ EC2 Image Builder uses the AWS Task Orchestrator and Executor (AWSTOE) applicati
 
 AWSTOE is a standalone application that Image Builder installs on its build and test instances when you create an image. You can also install it manually on EC2 instances to create your own custom components. It doesn't require any additional setup, and can also run on premises.
 
+**Tip**
+For information about component patterns and a script that validates and runs component documents locally, see the [AWSTOE samples](https://github.com/aws-samples/amazon-ec2-image-builder-samples/tree/HEAD/awstoe) on GitHub. For more information, see [Explore Image Builder sample projects on GitHub](sample-projects.md).
+
 **Topics**
 + [AWSTOE downloads](#toe-downloads)
 + [Supported Regions](#toe-supported-regions)
@@ -281,7 +284,3 @@ The following example shows output when validation fails.
     "message": "Document has 0 phases. Phases list must not be empty."
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,7 +68,3 @@ For example, your contact center opens at 9AM but the forecast says no contacts 
   + **Consecutive working days**: Specify the minimum and maximum consecutive days each staff in the staffing group should be scheduled for. This setting applies to all staff in the staffing group. You can override this setting for individual staff.
   + **Maximum consecutive day of the week worked**: For each day of the week, specify if staff should not be scheduled for more than the defined number of times consecutively. For example, do not schedule staff for more than 2 Sundays in a row. This setting applies to all staff in the staffing group.
   + **Minimum consecutive rest period per week**: Specify the rest period (in hours or days) a staff should receive each week. This setting applies to all staff in the staffing group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

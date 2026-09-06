@@ -299,7 +299,3 @@ In the **Automatic risk response** section choose **Notify Users** for low, medi
 Amazon Cognito sends email notifications to your users regardless of whether they have verified their email address.
 
 You can customize notification email messages, and provide both plaintext and HTML versions of these messages. To customize your email notifications, open **Email templates** from **Adaptive authentication messages** in your threat protection configuration. To learn more about email templates, see [Message templates](cognito-user-pool-settings-message-customizations.md#cognito-user-pool-settings-message-templates).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

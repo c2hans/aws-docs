@@ -190,7 +190,3 @@ Field mappings can include an `options` object to declare cascading dependencies
 |  `derivation.applyTo.match.source`  | Yes | External record field used for matching. |
 |  `derivation.applyTo.match.target`  | Yes | Resource field to match against. Supports `:basename`, `:ext`, `:tolower` transforms. |
 |  `derivation.applyTo.onNoMatch`  | No | Behavior on no match. Currently only `skip` (default) is supported. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

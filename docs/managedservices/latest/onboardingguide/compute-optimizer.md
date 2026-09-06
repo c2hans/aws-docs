@@ -28,7 +28,3 @@ There are no restrictions. Full functionality of AWS Compute Optimizer is availa
   + **Network in**: The number of bytes received on all network interfaces by the instance. This metric identiﬁes the volume of incoming network traﬃc to a single instance.
   + **Network out**: The number of bytes sent out on all network interfaces by the instance. This metric identiﬁes the volume of outgoing network traﬃc from a single instance.
   + **Local disk input/output (I/O)**: The number of input/output operations for the local disk. This metric identiﬁes the performance of the root volume of an instance
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

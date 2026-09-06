@@ -62,7 +62,3 @@ Export your optimization recommendations to record them over time, and share the
 <a name="intro-availability"></a>
 
 To view the currently supported AWS Regions and endpoints for Compute Optimizer, see [Compute Optimizer Endpoints and Quotas](https://docs.aws.amazon.com/general/latest/gr/compute-optimizer.html) in the *AWS General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

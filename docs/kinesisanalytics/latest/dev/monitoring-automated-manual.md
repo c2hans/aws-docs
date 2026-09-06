@@ -39,7 +39,3 @@ Another important part of monitoring involves manually monitoring those items th
   + Search and browse all your metrics
   + Create and edit alarms to be notified of problems
 + AWS Trusted Advisor can help you monitor your to improve performance, reliability, security, and cost effectiveness. Four Trusted Advisor checks are available to all users. More than 50 checks are available to users with a Business or Enterprise support plan. For more information, see [AWS Trusted Advisor](https://aws.amazon.com/premiumsupport/trustedadvisor/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

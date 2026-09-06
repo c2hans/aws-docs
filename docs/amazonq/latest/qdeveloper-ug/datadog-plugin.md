@@ -231,7 +231,3 @@ Following are some example use cases and associated questions you can ask to get
 + **Check monitors that are in an alarm state** – Ask the Amazon Q Datadog plugin to find your AWS application monitors that are in alarm. You can follow up with questions about the monitors it lists.
   + **@datadog what monitors are in alarm?**
   + **@datadog what is the status for monitor <monitor ID>?**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

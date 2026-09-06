@@ -56,6 +56,11 @@ Type: String (*yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*Z)
 The date and time when the agent started doing After Contact Work for the contact, in UTC time.
 Type: String (*yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*Z)
 
+**ActiveRegion**
+The AWS Region where the agent handled the contact.
+This value may differ from the Region in the agent ARN. For cross-region contacts routed via Connect Customer Global Resiliency, the Regions embedded in the CTR ARNs (for example, contact ARN, agent ARN, queue ARN) reflect the Region of the CTR stream itself; CTRs are generated in the Region where the contact originates. Meanwhile, the agent who handled the contact could have been connected to a different Region based on their Traffic Distribution Group configuration. For example, if a contact originates in `us-east-1` but is routed to an agent in `us-west-2` via cross-region routing for ACGR, the CTR for that contact is published from `us-east-1`, the contact's `OriginRegion` returns `us-east-1`, and the `ActiveRegion` field in the `Agent` object returns `us-west-2`.
+Type: String
+
 **ARN**
 The Amazon Resource Name of the agent.
 Type: ARN
@@ -1337,7 +1342,3 @@ Length: 22 characters
 An abandoned contact refers to a contact that was disconnected by the customer while in queue. This means that they weren't connected to an agent.
 
 The contact record for an abandoned contact has a **Queue**, and an **Enqueue Timestamp** because it was enqueued. It won't have a **ConnectedToAgentTimestamp**, or any of the other fields that populate only after the contact has been connected to an agent.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

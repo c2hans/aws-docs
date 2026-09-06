@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 1.  In the **rule type** setting, select **Rule group** and enter a name to the rule you are defining. Under **Rule Group**, select the **[Stack\_Name]\_BlockSessions** rule group from the dropdown list .
 
 1.  Choose **Add rule** and adjust the priority of this rule group within the web ACL, then choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

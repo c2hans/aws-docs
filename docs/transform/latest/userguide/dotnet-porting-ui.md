@@ -61,7 +61,3 @@ The following features are not supported at present. If your workloads use these
 + Web Site projects
 
 Only Web Application projects (containing a .csproj file) are supported. To convert a Web Site project to a Web Application project, see Microsoft guidance [Converting a Web Site Project to a Web Application Project](https://devblogs.microsoft.com/dotnet/converting-a-web-site-project-to-a-web-application-project/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

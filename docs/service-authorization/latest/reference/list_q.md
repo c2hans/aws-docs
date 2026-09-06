@@ -375,7 +375,3 @@ Amazon Q defines the following condition keys that can be used in the `Condition
 |   [aws:TagKeys](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-iam-service-with-iam.html)  | Filters access by the tag keys that are passed in the request | ArrayOfString |
 |   [identitystore:GroupId](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-iam-service-with-iam.html)  | Filters access by IAM Identity Center Group ID | ArrayOfString |
 |   [identitystore:UserId](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-iam-service-with-iam.html)  | Filters access by IAM Identity Center User ID | ArrayOfString |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

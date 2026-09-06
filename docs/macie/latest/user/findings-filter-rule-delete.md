@@ -41,7 +41,3 @@ Where {{9b2b4508-aa2f-4940-b347-d1451example}} is the unique identifier for the 
 If the command runs successfully, Macie returns an empty HTTP 200 response. Otherwise, Macie returns an HTTP 4*xx* or 500 response that indicates why the operation failed.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

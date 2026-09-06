@@ -187,7 +187,3 @@ In this step, you will install the EB command line interface. Follow the OS spec
 <a name="congratulations"></a>
 
 Congratulations, you have set up the Elastic Beanstalk Command Line Interface. You should use the EB CLI to deploy and manage applications whenever you want the power of Elastic Beanstalk from the command line.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

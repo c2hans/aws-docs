@@ -30,7 +30,3 @@ When using a Lambda Hook, your validation output report log file can be found in
    + You can add more filters to the results by adding them in the **Add filter pattern** field. This field allows you filter results to only include events that match the specified pattern.
 
 For more information on viewing logs for Lambda functions, see [Viewing CloudWatch Logs for Lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-cloudwatchlogs-view.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

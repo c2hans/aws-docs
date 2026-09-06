@@ -23,7 +23,3 @@ An organization has the functionality that is determined by the [feature set](or
 + [Enabling all features](orgs_manage_org_support-all-features.md)
 + [Viewing details of an organization](orgs_view_org.md)
 + [Deleting an organization](orgs_manage_org_delete.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,7 +60,3 @@ AWS Key Management Service (AWS KMS) is a managed service for creating and contr
 SSH environments connect to on-premises, customer-owned compute and storage. Encrypted SSH, HTTPS, and WSS connections support data transit between the service and SSH environment.
 
 You can configure AWS Cloud9 EC2 development environments (backed by Amazon EC2 instances) to be launched within specific VPCs and subnets. For more information about Amazon Virtual Private Cloud settings, see [VPC settings for AWS Cloud9 Development Environments](vpc-settings.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

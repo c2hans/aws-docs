@@ -74,7 +74,3 @@ Object Lock can't be enabled on the `ams-a<AccountID>-patch-data-reporting-<Regi
 During onboarding, AMS deploys AWS Config with the service-linked role `AWSServiceRoleForConfig` by default. However, this control might fail if you have supplied custom AWS Identity and Access Management roles for AWS Config instead of using the service-linked role to reduce costs. While custom roles can work, they require manual policy management and might not automatically receive updates when AWS Config adds support for new resource types or features.
 
 You can self-remediate this finding by updating your AWS Config recorder to use the service-linked role `AWSServiceRoleForConfig`. This is the recommended configuration and aligns with AWS best practices. For detailed instructions on AWS Config infrastructure deployed by AMS, see [Infrastructure security monitoring](https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/acc-sec-infra-sec.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

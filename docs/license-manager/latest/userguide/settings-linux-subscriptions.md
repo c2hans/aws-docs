@@ -68,7 +68,3 @@ You can define key value pairs for tags that License Manager assigns to your RHS
 "LicenseManagerLinuxSubscriptions": "enabled"
 ```
 The tag is automatically assigned if License Manager created your secret during the registration process. If you create your own secret for the offline token, make sure that you assign that tag to the secret and to the associated KMS key, if it's encrypted. To add the tag, see [Modify an AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/manage_update-secret.html) in the *AWS Secrets Manager User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

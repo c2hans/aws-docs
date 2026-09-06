@@ -298,7 +298,7 @@ The following is the syntax for granting permissions for AWS IAM Identity Center
 
 ```
 GRANT CONNECT [ON WORKGROUP]
-TO [USER] <prefix>:<username> | ROLE <prefix>:<rolename> | PUBLIC;
+TO <prefix>:<username> | ROLE <prefix>:<rolename> | PUBLIC;
 ```
 
 ## Parameters
@@ -384,7 +384,7 @@ PUBLIC   <a name="grant-public"></a>
 Grants the specified permissions to all users, including users created later. PUBLIC represents a group that always includes all users. An individual user's permissions consist of the sum of permissions granted to PUBLIC, permissions granted to any groups that the user belongs to, and any permissions granted to the user individually.
 Granting PUBLIC to a Lake Formation EXTERNAL TABLE results in granting the permission to the Lake Formation *everyone* group.
 
-CONNECT [ON WORKGROUP] TO { [USER] <prefix>:<username> \| ROLE <prefix>:<rolename> \| PUBLIC }
+CONNECT [ON WORKGROUP] TO { <prefix>:<username> \| ROLE <prefix>:<rolename> \| PUBLIC }
 Grants the permission to connect to a workgroup or cluster to AWS IAM Identity Center federated users or groups. The prefix identifies the identity provider. When granted to PUBLIC, the permission applies to all AWS IAM Identity Center federated users, including users created later. This permission is applicable only when Amazon Redshift Federated Permissions are enabled on the workgroup or cluster.
 
 CREATE   <a name="grant-create"></a>
@@ -493,7 +493,3 @@ To learn more about the usage notes for GRANT, see [Usage notes](r_GRANT-usage-n
 <a name="r_GRANT-examples-link"></a>
 
 For examples of how to use GRANT, see [Examples](r_GRANT-examples.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

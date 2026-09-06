@@ -40,7 +40,3 @@ Use automation to reduce or remove the associated costs of the decommissioning p
 +  [Scheduling automatic deletion of AWS CloudFormation stacks](https://aws.amazon.com/blogs/infrastructure-and-automation/scheduling-automatic-deletion-of-aws-cloudformation-stacks/)
 +  [Well-Architected Labs – Decommission resources automatically (Level 100)](https://www.wellarchitectedlabs.com/cost/100_labs/100_goals_and_targets/4_decommission_resources/)
 +  [Servian AWS Auto Cleanup](https://github.com/servian/aws-auto-cleanup)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

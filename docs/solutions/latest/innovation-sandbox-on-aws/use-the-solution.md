@@ -103,7 +103,3 @@ Users can terminate only their own leases, only while the lease is in the Active
 | Create managers | Yes | No | No |
 | Configure guardrails (such as Service Control Policies) | Yes | No | No |
 | Manage Terms and Conditions content | Yes | No | No |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

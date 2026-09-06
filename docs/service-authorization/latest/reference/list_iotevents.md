@@ -282,7 +282,3 @@ AWS IoT Events defines the following condition keys that can be used in the `Con
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag)  | Filters access by the tags attached to the resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys)  | Filters actions by the tag keys in the request | ArrayOfString |
 |   [iotevents:keyValue](https://docs.aws.amazon.com/iotevents/latest/developerguide/security_iam_id-based-policy-examples.html#security_iam_service-with-iam-id-based-policies-conditionkeys)  | Filters access by the instanceId (key-value) of the message | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

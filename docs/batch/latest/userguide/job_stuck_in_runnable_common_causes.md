@@ -29,7 +29,3 @@ If your launch template includes a user data script that takes a long time to co
 To resolve this, review your launch template user data for long-running or blocking operations. Consider optimizing scripts to reduce execution time, running non-critical operations asynchronously, or moving initialization logic out of user data entirely. For more information, see [Use Amazon EC2 launch templates with AWS Batch](launch-templates.md).
 
 For more information, see [Why is my AWS Batch job stuck in `RUNNABLE` status?](https://aws.amazon.com/premiumsupport/knowledge-center/batch-job-stuck-runnable-status/) in *re:Post*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

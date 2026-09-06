@@ -19,7 +19,3 @@ Viewing assets is more than simply understanding the icons that show the asset a
 
    You can choose separate versions for different time periods (1 day, 1 week, 2 weeks, 1 month, and so on).
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/Monitron/latest/user-guide/gsg-monitoring.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

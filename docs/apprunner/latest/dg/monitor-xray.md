@@ -146,7 +146,3 @@ On the **Observability** tab of the [service dashboard page](console.md#console.
 ![App Runner service dashboard page showing the observability tab](http://docs.aws.amazon.com/apprunner/latest/dg/images/service-dashboad-observability.png)
 
 Use the Amazon CloudWatch console to view service maps and traces for requests that your application serves. Service maps show information like request latency and interactions with other applications and AWS services. The custom annotations that you add to your code allow you to easily search for traces. For more information, see [Using ServiceLens to monitor the health of your applications](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ServiceLens.html) in the *Amazon CloudWatch User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

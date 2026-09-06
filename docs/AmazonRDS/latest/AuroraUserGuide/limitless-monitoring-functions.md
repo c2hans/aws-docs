@@ -249,7 +249,3 @@ postgres_limitless=> select * from rds_aurora.limitless_wait_report();
              2 | router          | Client    | ClientRead |    53 | 719223.64 |   13570.257 |           0.18 |    2429.810
              3 | shard           | Client    | ClientRead |    54 | 461720.40 |    8550.378 |           0.18 |    1559.86
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -159,7 +159,3 @@ Deleting a Lightsail for Research resource is a permanent action. The deleted da
 1. Choose **Actions**, then choose **Delete virtual computer**.
 
 1.  Type **confirm** in the text block. Then, choose **Delete virtual computer.**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail for Research. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail-for-research` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

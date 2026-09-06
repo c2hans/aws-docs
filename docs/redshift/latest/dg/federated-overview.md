@@ -28,7 +28,3 @@ Details about queries sent to the Amazon Aurora PostgreSQL database or Amazon RD
 + [Examples of using a federated query](federated_query_example.md)
 + [Data type differences between Amazon Redshift and supported PostgreSQL and MySQL databases](federated-data-types.md)
 + [Considerations when accessing federated data with Amazon Redshift](federated-limitations.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

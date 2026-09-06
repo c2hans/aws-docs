@@ -12,7 +12,3 @@ Amazon Elastic Block Store provides the following APIs for data retrieval.
 | <a name="ebs-GetSnapshotBlock"></a>[GetSnapshotBlock](https://docs.aws.amazon.com/ebs/latest/APIReference/API_GetSnapshotBlock.html) | Return the data of a block in an Amazon Elastic Block Store (EBS) snapshot | Read |
 | <a name="ebs-ListChangedBlocks"></a>[ListChangedBlocks](https://docs.aws.amazon.com/ebs/latest/APIReference/API_ListChangedBlocks.html) | List the blocks that are different between two Amazon Elastic Block Store (EBS) snapshots of the same volume/snapshot lineage | Read |
 | <a name="ebs-ListSnapshotBlocks"></a>[ListSnapshotBlocks](https://docs.aws.amazon.com/ebs/latest/APIReference/API_ListSnapshotBlocks.html) | List the blocks in an Amazon Elastic Block Store (EBS) snapshot | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

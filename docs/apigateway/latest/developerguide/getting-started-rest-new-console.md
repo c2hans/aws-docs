@@ -176,7 +176,3 @@ To prevent accruing unnecessary costs to your AWS account, delete the resources 
 
 **Tip**
 You can automate the creation and cleanup of AWS resources by using AWS CloudFormation or AWS Serverless Application Model (AWS SAM). For some example CloudFormation templates, see the [example templates for API Gateway](https://github.com/awsdocs/amazon-api-gateway-developer-guide/tree/main/cloudformation-templates) in the **awsdocs** GitHub repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

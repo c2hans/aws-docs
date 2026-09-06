@@ -91,7 +91,3 @@ The Governance Framework consists of six specialized modules implemented using A
  **Amazon Macie**: Daily automated discovery scans of all S3 buckets with findings sent to Security Hub and SNS for remediation workflows.
 
  **Compliance Reports**: Generated using Amazon QuickSight dashboards and AWS Lambda functions, showing data processing activities, retention periods, access patterns, and third-party data sharing supporting regulatory record-keeping and transparency requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ The CDN planning process involves these key steps, each focused on a specific ta
 + [Set up monitoring and scaling for CDN and MediaTailor integrations](setup-monitoring.md): Implement monitoring and scaling strategies for reliable performance.
 + [Optimize costs for CDN and MediaTailor integrations](optimize-costs.md): Balance the performance with the cost efficiency.
 + [Test your implementation for CDN and MediaTailor integrations](test-implementation.md): Thoroughly test your CDN integration before production deployment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

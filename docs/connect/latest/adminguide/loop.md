@@ -33,7 +33,7 @@ You can use this block in the following [flow types](create-contact-flow.md#cont
 + All flows
 
 ## Properties
-<a name="w2aac18c17c67b6"></a>
+<a name="w2aac18c17c69b6"></a>
 
  The following image shows the **Properties** page of the **Loop** block. It is configured to repeat three times, and then it branches.
 
@@ -44,7 +44,7 @@ In the **Select an action** dropdown, choose from the following options:
 + Set array for looping
 
 ## Set number of loops
-<a name="w2aac18c17c67b8"></a>
+<a name="w2aac18c17c69b8"></a>
 
 ![Loop configuration dialog with Select an action dropdown set to Set number of loops and Set loop name section highlighted.](http://docs.aws.amazon.com/connect/latest/adminguide/images/set number of loops highlight.png)
 
@@ -54,7 +54,7 @@ When select an action is set to "Set number of loops", note the following proper
 + If Loop Name is provided, you can access the current index through $.Loop.<yourLoopName>.Index, starts from 0
 
 ## Set array for looping
-<a name="w2aac18c17c67c10"></a>
+<a name="w2aac18c17c69c10"></a>
 
 ![Loop configuration panel showing action selection, array for looping options, and loop name settings.](http://docs.aws.amazon.com/connect/latest/adminguide/images/set array for looping.png)
 
@@ -79,7 +79,3 @@ When select an action is set to "Set array for looping", note the following prop
 The following image shows an example of what this block looks like when it is configured. It has three branches: **Looping**, **Complete**, and **Error** .
 
 ![A configured Loop block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/new loop block.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

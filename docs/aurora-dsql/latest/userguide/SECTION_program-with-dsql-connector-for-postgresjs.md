@@ -154,7 +154,3 @@ const sql = AuroraDSQLPostgres({
 | --- | --- |
 |  Connection pooling with concurrent queries, including table creation, inserts, and reads across multiple workers  |  [Connection pool example (preferred)](https://github.com/awslabs/aurora-dsql-connectors/blob/main/node/postgres-js/example/src/example_preferred.js)  |
 |  CRUD operations (create table, insert, select, delete) without connection pooling  |  [Example without connection pool](https://github.com/awslabs/aurora-dsql-connectors/blob/main/node/postgres-js/example/src/alternatives/no_connection_pool/example_with_no_connection_pool.js)  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

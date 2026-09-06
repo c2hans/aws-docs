@@ -90,7 +90,3 @@ You can use any [function](iot-sql-functions.md) or [substitution template](http
 For more information about rules and how to specify an error action, see [Creating an AWS IoT Rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-create-rule.html).
 
 For more information about using CloudWatch to monitor the success or failure of rules, see [AWS IoT metrics and dimensions](metrics_dimensions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

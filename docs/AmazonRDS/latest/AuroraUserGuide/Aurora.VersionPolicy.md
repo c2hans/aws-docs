@@ -28,7 +28,3 @@ To learn how to create Aurora clusters, see [Creating an Amazon Aurora DB cluste
 
 **Note**
 Not every Aurora database version is available in every AWS Region. To learn more about Regions and the available versions in each AWS Region, see [Regions and Availability Zones](Concepts.RegionsAndAvailabilityZones.md) and [Supported Regions and DB engines for Aurora global databases](Concepts.Aurora_Fea_Regions_DB-eng.Feature.GlobalDatabase.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

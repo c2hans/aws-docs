@@ -118,7 +118,3 @@ For a complete list of AWS SDK developer guides and code examples, see [Using Am
   + [Scenarios](service_code_examples_bedrock-agent-runtime_scenarios.md)
     + [Create and invoke a flow](bedrock-agent-runtime_example_bedrock-agent_GettingStartedWithBedrockFlows_section.md)
     + [Orchestrate generative AI applications with Step Functions](bedrock-agent-runtime_example_cross_ServerlessPromptChaining_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

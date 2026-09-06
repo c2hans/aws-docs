@@ -14,7 +14,3 @@ Some maintenance tasks require that you log in to the local console when running
 + [Viewing your gateway system resource status](EC2_system-resource-check-fgw.md) - Learn how to use the gateway local console to checks your gateway's virtual CPU cores, root volume size, and RAM.
 + [Running Storage Gateway commands on the local console for an Amazon EC2 gateway](EC2_MaintenanceGatewayConsole-fgw.md) - Learn how to run local console commands to perform tasks such as saving routing tables, connecting to Support, and more.
 + [Configuring your Amazon EC2 gateway network settings](EC2-MaintenanceConfiguringStaticIP-fgw.md) - Learn how to use the local console to view and configure network settings such as DNS and hostname for a gateway on an Amazon EC2 instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

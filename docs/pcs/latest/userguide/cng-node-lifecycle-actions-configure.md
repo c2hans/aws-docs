@@ -175,7 +175,3 @@ Each script writes to its own log file, and the agent keeps its own operational 
 ```
 
 The log filename uses the script name as you defined it. Spaces are preserved. For example, a script named `Mount EFS home directory` writes to `Mount EFS home directory.log`. Connect with SSH or AWS Systems Manager Session Manager to read them — both are available by the `nodeBootstrapped` stage. Because nodes that fail with `TERMINATE` are replaced, forward logs off-instance for debugging after termination: add a node bootstrapped script that configures the Amazon CloudWatch agent to ship the lifecycle log directory to Amazon CloudWatch Logs. The AWS-maintained `configure-cloudwatch-logs.sh` script does this. For more information, see [Use AWS-maintained scripts for node lifecycle actions in AWS PCS](cng-node-lifecycle-actions-vetted-scripts.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

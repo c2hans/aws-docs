@@ -22,7 +22,3 @@ We recommend that you add the permissions before you install agents on the EC2 i
    1. Choose **Modify IAM role**, or create a new role by choosing **Create new IAM role**.
 
    1. Choose a role for the instance, and attach the [CloudWatchNetworkFlowMonitorAgentPublishPolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchNetworkFlowMonitorAgentPublishPolicy.html) policy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

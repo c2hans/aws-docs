@@ -204,7 +204,3 @@ RTB Fabric can terminate the TLS connection from the requester on your behalf an
 + **TLS certificates** – Each host must serve up a TLS certificate.
 + **Certificate Authority chain** – You must provide RTB Fabric with the Certificate Authority (CA) certificate chain so that RTB Fabric hosts can trust the TLS certificate from each bidder host.
 + **Domain name allowlisting** – You must provide RTB Fabric with a domain name that matches the SAN of the TLS certificate from each bidder host.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RTB Fabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rtb-fabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

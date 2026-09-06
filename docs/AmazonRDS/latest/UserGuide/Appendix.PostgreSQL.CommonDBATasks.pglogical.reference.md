@@ -15,7 +15,3 @@ In the table you can find parameters associated with the `pglogical` extension. 
 | pglogical.extra\_connection\_options | Connection options to add to all peer node connections. |
 | pglogical.synchronous\_commit | pglogical specific synchronous commit value |
 | pglogical.use\_spi | Use SPI (server programming interface) instead of low-level API to apply changes. Set to '1' to turn on, '0' to turn off. For more information about SPI, see [Server Programming Interface](https://www.postgresql.org/docs/current/spi.html) in the PostgreSQL documentation.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -93,7 +93,3 @@ View details about updates to AWS managed policies for Amazon EFS since this ser
 | Update to an existing policy | Policy: [AmazonElasticFileSystemFullAccess](#security-iam-awsmanpol-AmazonElasticFileSystemFullAccess)<br />Amazon EFS added new permissions to allow principals to modify and describe Amazon EFS account preferences. The permissions are required to allow users to view and set account preferences settings in the Amazon EFS console. | May 7, 2021 |
 | Update to an existing policy | Policy: [AmazonElasticFileSystemReadOnlyAccess](#security-iam-awsmanpol-AmazonElasticFileSystemReadOnlyAccess)<br />Amazon EFS added new permissions to allow principals to describe Amazon EFS account preferences. The permissions are required to allow users to view account preferences settings in the Amazon EFS console. | May 7, 2021 |
 | Amazon EFS started tracking changes | Amazon EFS started tracking changes for its AWS managed policies. | May 7, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

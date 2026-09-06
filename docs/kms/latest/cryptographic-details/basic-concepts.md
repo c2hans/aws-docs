@@ -37,7 +37,3 @@ When using asymmetric ciphers (RSA or elliptic curve), the public key is the “
 
 **Private key**
 When using asymmetric ciphers (RSA or elliptic curve), the private key is the “private component” of a public-private key pair. The private key is used to decrypt data or create digital signatures. Similar to symmetric KMS keys, private keys are encrypted in HSMs. They are decrypted only into the short term memory of the HSM and only for the time needed to process your cryptographic request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ Amazon Managed Grafana provides the following APIs for data retrieval.
 | <a name="grafana-ListWorkspaceServiceAccountTokens"></a>[ListWorkspaceServiceAccountTokens](https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html) | List service account tokens for a workspace | Read |
 | <a name="grafana-ListWorkspaceServiceAccounts"></a>[ListWorkspaceServiceAccounts](https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html) | List service accounts for a workspace | Read |
 | <a name="grafana-ListWorkspaces"></a>[ListWorkspaces](https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html) | List workspaces | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

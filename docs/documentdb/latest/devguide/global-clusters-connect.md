@@ -14,7 +14,3 @@ When you view a global cluster in the console, you can see all the general-purpo
 How you connect to a global cluster depends on whether you need to write to the database or read from the database. For DDL, DML and read operations that you would like to serve from the primary Region, connect to your primary cluster using the cluster endpoint in replica set mode, with a read preference of `secondaryPreferred=true`. This routes write traffic to your primary cluster’s writer instance and read traffic to your primary cluster’s replica instance.
 
 For cross-Region, read-only traffic, connect to one of your secondary clusters using the cluster endpoint in replica set mode. Because all instances are read-only replica instances, specify a read preference other than `primary` (for example, `secondary`, `secondaryPreferred`, or `nearest`). To minimize latency, choose whichever reader endpoint is in your Region or the Region closest to you.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

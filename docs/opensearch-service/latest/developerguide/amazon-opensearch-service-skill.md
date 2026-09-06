@@ -90,7 +90,3 @@ When the agent runs OpenSearch operations, it acts with the credentials you prov
 + Separate development and production. Point the agent at non-production resources for exploration, and require explicit confirmation before production changes.
 + Review resources the agent creates before committing to long-lived infrastructure. The Operations and Migration capabilities can provision domains, collections, IAM roles, and networking resources.
 + Review tool output. MCP tool responses are returned to the language model as context. Avoid running operations against indexes that contain sensitive data you do not want exposed to your model provider.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

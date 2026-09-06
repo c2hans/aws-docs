@@ -18,7 +18,7 @@ Use the following steps to create a private hub to manage access control for pre
    # Import the necessary Python packages
    import boto3
    from sagemaker.core.helper.session_helper import Session
-   from sagemaker.jumpstart.hub.hub import Hub
+   from sagemaker.core.jumpstart.hub.hub import Hub
    ```
 
 1. Initialize a SageMaker AI Session.
@@ -94,7 +94,3 @@ If you do not specify an Amazon S3 bucket name when creating your hub, the SageM
    ```
    hub.describe()
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

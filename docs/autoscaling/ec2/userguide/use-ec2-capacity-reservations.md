@@ -44,7 +44,3 @@ Before you can use Capacity Reservations in your Auto Scaling group, you must cr
 + [Interruptible Capacity Reservations for capacity owners](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/interruptible-capacity-reservations.html#capacity-owner-considerations) – for interruptible Capacity Reservations
 
 If you intend to use multiple Capacity Reservations with one Auto Scaling group, you can also create a Capacity Reservation Resource Group. For more information, see [Capacity Reservation Resource Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-cr-group.html) in the *Amazon EC2 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

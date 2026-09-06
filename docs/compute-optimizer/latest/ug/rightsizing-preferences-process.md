@@ -109,7 +109,3 @@ Use the following procedure to specify the lookback period, and the CPU and memo
 1. On the **Review and save** page, review all the preferences you have set. Then, choose **Save preferences**.
 
 Within 24 hours your new recommendations start to appear with the rightsizing preferences that you set.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

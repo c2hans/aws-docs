@@ -93,7 +93,3 @@ g.withSideEffect("Neptune#repeatMode", "DFS").V("{{3}}").repeat(out()).times(10)
 ```
 
 This follows each individual solution out to the maximum depth before exploring the next solution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

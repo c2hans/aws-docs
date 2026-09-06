@@ -50,7 +50,3 @@ customSource.onSampleBuffer(sampleBuffer)
 For streaming video, use this method in a callback. For example, if you’re using the camera, then every time a new sample buffer is received from an `AVCaptureSession`, the application can forward the sample buffer to the custom image source. If desired, the application can apply further processing (like a beauty filter) before submitting the sample to the custom image source.
 
 The `IVSCustomImageSource` can be wrapped in an `IVSLocalStageStream` and returned by the `IVSStageStrategy` to publish to a `Stage`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

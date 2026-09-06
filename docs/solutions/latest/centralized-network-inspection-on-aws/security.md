@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 +  The second key is used to encrypt the Network Firewall log destinations, which depends on whether you select `Amazon CloudWatch` or `Amazon S3 bucket` for the **Select the type of log destination for the Network Firewall** parameter.
 
  By default, only IAM roles provisioned by this guidance have permission to perform encrypt or decrypt operations with this key. Automatic key rotation is enabled by default.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Network Inspection on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

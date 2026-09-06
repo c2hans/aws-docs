@@ -23,7 +23,3 @@ To enable or disable a custom blueprint project’s publishing permissions, you 
 1. Choose the **Project publishing permissions** tab to view the publishing permissions for all your space's blueprints.
 
 1. Choose the blueprint that you want to manage, and then choose **Enable** or **Disable** to change the publishing permissions. If you're enabling the permissions, review the permission change details, and then choose **Enable blueprint publishing** to confirm the change.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

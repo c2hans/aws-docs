@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 <a name="implementation-guidance-60"></a>
 
  Use Amazon CloudWatch to monitor key metrics and set up alarms for proactive notifications. Utilize tools like Amazon Managed Service for Prometheus and Amazon Managed Grafana to collect, query, and visualize metrics from your game servers and infrastructure. Create informative dashboards to track performance, identify bottlenecks, and make data-driven optimizations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

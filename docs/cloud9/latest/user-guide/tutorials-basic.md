@@ -329,7 +329,3 @@ Explore any or all of the following topics to continue getting familiar with AWS
 To get help with AWS Cloud9 from the community, see the [AWS Cloud9 Discussion Forum](https://forums.aws.amazon.com/forum.jspa?forumID=268). (When you enter this forum, AWS might require you to sign in.)
 
 To get help with AWS Cloud9 directly from AWS, see the support options on the [AWS Support](https://aws.amazon.com/premiumsupport/) page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

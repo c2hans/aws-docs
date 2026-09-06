@@ -108,7 +108,3 @@ Ensure that you use a stable IP address for the Outposts server. IP address chan
 <a name="lni-register"></a>
 
 When Outposts servers establish a connection on the local network, they use the service link connection to connect to Outpost registration endpoints and register themselves. Registration requires public DNS. When servers register, they create a secure tunnel to their service link endpoint in the Region. Outposts servers use TCP port 443 to facilitate communication with the Region over the public internet. Outposts servers do not support private connectivity through VPC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

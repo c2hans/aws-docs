@@ -31,7 +31,3 @@ The operating system that you installed on your hardware has a utility you can u
 1. Repeat these steps for each AWS Elemental Server hardware unit.
    + Make sure to log in to each hardware unit for each activation key file that you want to generate: each activation key file that you create must contain the hostname of the individual hardware unit.
    + Make sure to use a different activation code on each unit.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

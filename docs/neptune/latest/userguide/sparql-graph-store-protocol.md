@@ -79,7 +79,3 @@ GET "http://{{your-Neptune-cluster}}:{{port}}/sparql/gsp/?default&graph=urn:vote
 ```
 
 In this situation, Neptune returns an HTTP 400 with a message indicating that only one graph can be specified in the request URL.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

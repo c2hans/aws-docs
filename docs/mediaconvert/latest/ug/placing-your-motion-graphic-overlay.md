@@ -29,7 +29,3 @@ For playback settings on motion graphic overlays, you have two options. You can 
 When a motion graphic is a set of .png images, determine the duration of the overlay by how many images you provide and the frame rate that you specify. The duration in seconds is the number of frames divided by the frame rate, in frames per second. For example, if your frame rate is 30 fps and you provide 600 images, the duration of the motion overlay is 20 seconds.
 
 For jobs with multiple inputs, MediaConvert places the motion overlay on each input at the time that you specify for **Start time**. Depending on what you choose for **Playback**, MediaConvert either plays the overlay once or until the end of the input. When you specify **Playback** once, MediaConvert applies that value to all inputs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,7 +68,3 @@ The following are the service endpoints and service quotas for this service.
 | Total characters in sample utterances per bot locale (V2) | Each supported Region: 200,000 | No | The maximum number of characters that you can use per locale per bot for all intent and slot sample utterances in this account in the current Region. |
 | Values and synonyms per custom slot type (V2) | Each supported Region: 10,000 | No | The maximum number of values and synonyms that you can have per custom slot type in this account in the current Region. |
 | Versions per bot (V2) | Each supported Region: 100 | No | The maximum number of versions that you can create per bot in this account in the current Region. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

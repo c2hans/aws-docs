@@ -16,7 +16,3 @@ For more information on tracking and geofences, see the [Geofences and Trackers]
 **Device Position Streaming Sample App**: This code example shows how to stream device position data to a Kinesis Data Stream and how geofence notifications work. This app depends on the Kinesis Stream to Tracker Sample App, listed above, to be running for the streamed tracker positions to be updated in Amazon Location Service.
 
 Repository link: [Amazon Location Device Position Streaming Sample App](https://github.com/aws-geospatial/amazon-location-samples-react/tree/main/tracking-data-streaming)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

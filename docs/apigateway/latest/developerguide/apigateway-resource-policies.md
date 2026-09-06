@@ -20,7 +20,3 @@ You can attach a resource policy for any API endpoint type in API Gateway by usi
 + [API Gateway resource policy examples](apigateway-resource-policies-examples.md)
 + [Create and attach an API Gateway resource policy to an API](apigateway-resource-policies-create-attach.md)
 + [AWS condition keys that can be used in API Gateway resource policies](apigateway-resource-policies-aws-condition-keys.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

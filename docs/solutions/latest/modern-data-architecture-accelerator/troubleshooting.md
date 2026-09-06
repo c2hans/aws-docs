@@ -365,7 +365,3 @@ The `-e` (environment) and `-d` (domain) CLI flags do NOT bypass this validation
 1. To upgrade to the CLI version already installed, omit the version argument: `mdaa upgrade`.
 
 1. If `upgrade` prompts about a modified file such as `CLAUDE.md`, choose whether to keep your edits. Pass `--overwrite` to replace those files without prompting, or `--no-prompt` to leave them untouched.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Modern Data Architecture Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

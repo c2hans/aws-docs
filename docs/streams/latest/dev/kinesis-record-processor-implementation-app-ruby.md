@@ -15,7 +15,3 @@ The KCL is a Java library; support for languages other than Java is provided usi
 To download the Ruby KCL from GitHub, go to [Kinesis Client Library (Ruby)](https://github.com/awslabs/amazon-kinesis-client-ruby). To download sample code for a Ruby KCL consumer application, go to the [KCL for Ruby sample project](https://github.com/awslabs/amazon-kinesis-client-ruby/tree/master/samples) page on GitHub.
 
 For more information about the KCL Ruby support library, see [KCL Ruby Gems Documentation](http://www.rubydoc.info/gems/aws-kclrb).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

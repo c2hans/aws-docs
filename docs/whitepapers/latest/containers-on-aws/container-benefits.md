@@ -39,7 +39,3 @@ The rapid growth of containers is fueled by the many benefits it provides. If yo
  OCI allows a compliant container to be portable across all major operating systems and platforms without worrying that their current choice of any infrastructure, cloud provider, or tool will lock them into any technology provider as a container format is not bound to any higher level constructs.
 
  Containers also provide the flexibility which makes micro-services architecture possible. In common infrastructure models, a virtual machine runs multiple services. In contrast, containers package services in isolation, on top of a common host OS. This allows a service to move between hosts, stay isolated from failure of other adjacent services, and stay protected from errant patches or software upgrades on the host system. Because containers provide clean, reproducible, and modular environments, it streamlines both code deployment and infrastructure management.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

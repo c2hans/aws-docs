@@ -40,7 +40,3 @@ Follow these best practices for successful Amazon ECS linear deployments:
 + Monitor application metrics closely during each traffic shift to detect performance degradation early.
 + Ensure your application can handle both service revisions running simultaneously.
 + Test your rollback procedures at different traffic percentages before implementing them in production.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

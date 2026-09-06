@@ -54,7 +54,3 @@ For Linux, all [prerequisites](https://docs.aws.amazon.com/en_us/dcv/latest/admi
 + `Packages`—Defines the Amazon DCV packages that will be installed. If empty, all available Amazon DCV packages are installed. For more information, see the [Install the Amazon DCV Server on Linux](https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-installing-linux-server.html) in the Amazon DCV Administration Guide.
 
 If you would like to modify the component, you may [create a new component](https://docs.aws.amazon.com/imagebuilder/latest/userguide/create-component-console.html) version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -74,7 +74,3 @@ Use data-driven insights throughout your AI-powered development journey. Impleme
 <a name="best-practices-platform-approach"></a>
 
 To fully realize the benefits of generative AI in software development, adopt a platform-based approach. Create a comprehensive, integrated platform that incorporates AI capabilities across all aspects of the SDLC. The platform should provide a consistent user experience, centralized management and data, and seamless integration between different tools and processes. This makes AI benefits uniformly available across your organization, reduces the overhead of managing multiple and disparate AI tools, and provides a foundation for continuous improvement and expansion of AI capabilities.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

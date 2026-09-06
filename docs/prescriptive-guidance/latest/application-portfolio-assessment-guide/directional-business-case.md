@@ -268,7 +268,3 @@ Use the first iteration of the case to determine whether the expected financial 
   + Identify a list of the opportunities to continue to improve cost performance on AWS after the initial phase of migration.
 
 Include an assessment of the list of opportunities when preparing the detailed business case. In addition, include an opportunities assessment in the ongoing maintenance of the case and the month-to-month cost-optimization process after migration is complete.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

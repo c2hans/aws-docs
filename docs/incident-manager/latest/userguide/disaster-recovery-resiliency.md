@@ -16,7 +16,3 @@ Incident Manager is a global-regional service and does not currently support Ava
 In addition to the AWS global infrastructure, Incident Manager offers several features to help support your data resiliency and backup needs. During the Getting prepared wizard you're asked to set up a replication set. This regional replication set ensures that your data and resources are accessible from multiple Regions, making incident management across a cloud-network more manageable. This replication also ensures that your data is safe and accessible in the event that one of your Regions goes down.
 
 For more information about using the Incident Manager replication set, see [Configuring the Incident Manager replication set](general-settings.md#replication).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

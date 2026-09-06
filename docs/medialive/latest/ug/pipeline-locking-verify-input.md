@@ -77,7 +77,3 @@ For a MediaPackage output group, constraints apply if the input includes SCTE 35
 + When epoch locking is enabled, MediaLive automatically disables SCTE 35 passthrough and manifest decoration in the MediaPackage output group.
 
 You should decide which feature you want to keep. You can keep the SCTE 35 messages (in which case you must disable epoch locking in the entire channel). Or you can enable epoch locking but lose passthrough of the SCTE 35 messages. Note that there is no advantage to setting up the output as an HLS output group, because similar constraints apply, as described above.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

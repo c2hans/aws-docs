@@ -256,7 +256,3 @@ When complete, the output of the `Map` state is a JSON array, where each item is
 + [Processing input and output in Step Functions](concepts-input-output-filtering.md)
 + [Context object data for Map states](input-output-contextobject.md#contextobject-map)
 + [Process data from a queue with a Map state in Step Functions](sample-map-state.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ The following table provides an overview of the different recommended actions, o
   - **Feature:** BUDGETS / **Action type:** Create a reservation budget\* / **Recommended action:** Create a reservation budget to monitor your commitment coverage and utilization. / **Example:** Create a reservation budget to monitor your reserved instance commitment coverage and utilization.
   - **Feature:** ACCOUNT / **Action type:** Add an alternate billing contact\* / **Recommended action:** Add an additional billing contact. / **Example:** Add an additional billing contact.
   - **Feature:** COST\_ANOMALY\_DETECTION / **Action type:** Create an anomaly monitor\* / **Recommended action:** Create a cost anomaly monitor to proactively identify any cost anomalies. / **Example:** Create a cost anomaly monitor to automatically detect cost anomalies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

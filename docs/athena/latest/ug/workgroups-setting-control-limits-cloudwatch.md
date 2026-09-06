@@ -72,7 +72,3 @@ You can set multiple alert thresholds when queries running in a workgroup scan a
    + For **SNS topic selection**, choose an Amazon SNS topic from the drop-down list. Or, choose **Create SNS topic** to go directly to the [Amazon SNS console](https://console.aws.amazon.com/sns/v2/home), create the Amazon SNS topic, and set up a subscription for it for one of the users in your Athena account. For more information, see [Getting started with Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-getting-started.html) in the *Amazon Simple Notification Service Developer Guide*.
 
 1. Choose **Add alert** if you are creating a new alert, or **Save** to save an existing alert.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

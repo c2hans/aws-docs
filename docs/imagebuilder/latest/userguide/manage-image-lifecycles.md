@@ -11,6 +11,9 @@ Lifecycle policies define rules that control when and how Image Builder retires 
 
 Enabled lifecycle policies run automatically once per day. Image Builder manages the execution schedule. For execution details, see [How lifecycle policy execution works](lifecycle-policy-execution.md).
 
+**Tip**
+For information about a deployable lifecycle policy example with ready-to-use policy documents, see the [lifecycle sample](https://github.com/aws-samples/amazon-ec2-image-builder-samples/tree/HEAD/lifecycle) on GitHub. For more information, see [Explore Image Builder sample projects on GitHub](sample-projects.md).
+
 **Benefits of automated lifecycle management**
 Automated lifecycle management:
 + Automates retirement of images and their associated resources across accounts and Regions.
@@ -34,7 +37,3 @@ Before you configure policy actions, verify that no downstream dependencies refe
 + [Create lifecycle policies](create-lifecycle-policies.md)
 + [How lifecycle policy execution works](lifecycle-policy-execution.md)
 + [How lifecycle management rules work for Image Builder image resources](image-lifecycle-rules.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

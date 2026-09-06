@@ -45,6 +45,11 @@ The network configuration for jobs that are running on Fargate resources. Jobs t
 Type: [NetworkConfiguration](API_NetworkConfiguration.md) object
 Required: No
 
+ ** networkMode **   <a name="Batch-Type-EcsTaskDetails-networkMode"></a>
+The network mode configured for the task. This field is populated for jobs running on Amazon ECS Managed Instances (`MANAGED_INSTANCES` platform capability) and always returns `host`.
+Type: String
+Required: No
+
  ** pidMode **   <a name="Batch-Type-EcsTaskDetails-pidMode"></a>
 The process namespace to use for the containers in the task. The valid values are `host`, or `task`. For more information see `pidMode` in [EcsTaskProperties](https://docs.aws.amazon.com/batch/latest/APIReference/API_EcsTaskProperties.html).
 Type: String
@@ -83,7 +88,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/batch-2016-08-10/EcsTaskDetails)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/EcsTaskDetails)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/batch-2016-08-10/EcsTaskDetails)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

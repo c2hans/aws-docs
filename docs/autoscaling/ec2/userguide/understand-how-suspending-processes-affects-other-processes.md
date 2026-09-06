@@ -73,7 +73,3 @@ In addition, when `Launch` or `Terminate` are suspended, the following features 
 + **Capacity Rebalancing** – If `Terminate` is suspended and you use Capacity Rebalancing to handle Spot Instance interruptions, the Amazon EC2 Spot service can still terminate instances in the event that Spot capacity is no longer available. If `Launch` is suspended, Amazon EC2 Auto Scaling can't launch replacement instances from another Spot Instance pool or from the same Spot Instance pool when it is available again.
 + **Attaching and detaching instances ** – When `Launch` and `Terminate` are suspended, you can detach instances that are attached to your Auto Scaling group, but while `Launch` is suspended, you can't attach new instances to the group.
 + **Standby instances** – When `Launch` and `Terminate` are suspended, you can put an instance in the `Standby` state, but while `Launch` is suspended, you can't return an instance in the `Standby` state to service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

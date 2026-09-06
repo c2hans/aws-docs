@@ -54,7 +54,3 @@ Use the following references to understand the available cluster configuration s
 | Cross-realm trust principal password (optional) | Required when establishing a cross-realm trust. The cross-realm principal password, which must be identical across realms. Use a strong password. |
 | Active Directory domain join user (optional) | Required when using Active Directory in a cross-realm trust. This is the user logon name of an Active Directory account with permission to join computers to the domain. Amazon EMR uses this identity to join the cluster to the domain. For more information, see [Step 3: Add accounts to the domain for the EMR Cluster](emr-kerberos-cross-realm.md#emr-kerberos-ad-users). |
 | Active Directory domain join password (optional) | The password for the Active Directory domain join user. For more information, see [Step 3: Add accounts to the domain for the EMR Cluster](emr-kerberos-cross-realm.md#emr-kerberos-ad-users). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

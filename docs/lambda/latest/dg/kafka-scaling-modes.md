@@ -206,7 +206,3 @@ Consider a scenario where you have 10 ESMs, each configured with 1 event poller 
 + Total EPUs needed: 1
 + Monthly EPU cost (720 hours): 1 × 720 × $0.185 = $133.20
 + **Cost savings: 90%** ($1,198.80 savings per month)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

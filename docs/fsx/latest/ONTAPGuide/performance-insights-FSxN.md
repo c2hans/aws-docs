@@ -37,7 +37,3 @@ During an SSD decrease operation, write-heavy workloads could experience a tempo
 Brief I/O pauses of up to 60 seconds might occur for each volume as client access is redirected to the new set of disks. These pauses are expected and normal during the cutover phase of the operation.
 
 For more information about file system performance, see [Amazon FSx for NetApp ONTAP performance](performance.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

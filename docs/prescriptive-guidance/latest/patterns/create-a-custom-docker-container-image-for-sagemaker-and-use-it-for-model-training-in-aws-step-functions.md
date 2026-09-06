@@ -84,7 +84,3 @@ The example SageMaker notebook in this pattern uses an `ml.m5.xlarge` notebook i
 <a name="create-a-custom-docker-container-image-for-sagemaker-and-use-it-for-model-training-in-aws-step-functions-resources"></a>
 + [Process data](https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job.html) (*Amazon SageMaker Developer Guide*)
 + [Adapting your own training container](https://docs.aws.amazon.com/sagemaker/latest/dg/adapt-training-container.html) (*Amazon SageMaker Developer Guide*)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

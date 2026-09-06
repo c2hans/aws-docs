@@ -13,7 +13,7 @@ Manage Amazon GameLift Servers resources, including builds, fleets, game session
 Use the Amazon GameLift Servers console to view and manage your game hosting resources and ongoing hosting activity in near real time. The console offers a graphical interface for most of the functionality of the service API for Amazon GameLift Servers. You can use the console to:
 + **Use the dashboard for a high-level snapshot.** You can see the numbers and current status of all your Amazon GameLift Servers hosting resources and follow links to get details on individual resources.
 + **Manage individual hosting resources.** You can create, view, and delete all Amazon GameLift Servers resources, and update their mutable properties. You can also view certain types of hosting activity, such as events and performance metrics.
-+ **Interact with game and player session activity.** You can track game session and player session activity by fleet, and use this information to troubleshoot game session issues. View details on a game sessions, view player sessions for each game session, and look up player activity across multiple game sessions. You can also shut down individual game sessions as needed.
++ **Interact with game and player session activity.** You can track game session and player session activity by fleet, and use this information to troubleshoot game session issues. View details on a game session, view player sessions for each game session, and look up player activity across multiple game sessions. You can also shut down individual game sessions as needed.
 
 **Topics**
 + [Amazon GameLift Servers console features](#gamelift-console-features)
@@ -22,7 +22,3 @@ Use the Amazon GameLift Servers console to view and manage your game hosting res
 + [Fleets in the Amazon GameLift Servers console](gamelift-console-fleets.md)
 + [Aliases in the Amazon GameLift Servers console](gamelift-console-aliases.md)
 + [Game session queues in the Amazon GameLift Servers console](queues-console.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

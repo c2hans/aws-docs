@@ -22,7 +22,3 @@ The following sections show how to fine-tune publicly available foundation model
 + [Fine-tune publicly available foundation models with the `JumpStartEstimator` class](jumpstart-foundation-models-use-python-sdk-estimator-class.md)
 + [Deploy publicly available foundation models with the `JumpStartModel` class](jumpstart-foundation-models-use-python-sdk-model-class.md)
 + [Deploy proprietary foundation models with the `ModelPackage` class](jumpstart-foundation-models-use-python-sdk-proprietary.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

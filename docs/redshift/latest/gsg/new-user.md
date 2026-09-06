@@ -354,7 +354,3 @@ However, you might want to keep the sample cluster running if you intend to try 
 On the cluster list page, the cluster status is updated as the cluster is deleted.
 
 After you complete this tutorial, you can find more information about Amazon Redshift and next steps in [Additional resources to learn about Amazon Redshift](additional-resources.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,3 @@ The following fields configure the location and names of the HLS media and manif
 1. In the **CDN** settings section, choose the option that the downstream system told you to use—Akamai, PUT, or WebDAV.
 
 1. If the downstream system gave you values to [configure the connection](origin-server-http.md), enter those values in the fields in the **CDN** settings section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

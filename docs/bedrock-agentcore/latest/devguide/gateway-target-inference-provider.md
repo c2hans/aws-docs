@@ -255,7 +255,3 @@ for chunk in stream:
 Inference provider targets support the following outbound authorization types:
 +  **IAM (SigV4)** – Use `GATEWAY_IAM_ROLE` for providers that accept IAM authentication (such as Amazon Bedrock).
 +  **API key** – Use `API_KEY` for providers that require an API key (such as OpenAI and Anthropic). The gateway injects the stored API key into outbound requests.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

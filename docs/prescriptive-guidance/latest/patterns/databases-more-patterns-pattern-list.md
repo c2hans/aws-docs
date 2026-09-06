@@ -105,7 +105,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 + [Transfer large-scale Db2 z/OS data to Amazon S3 in CSV files](transfer-large-scale-db2-z-os-data-to-amazon-s3-in-csv-files.md)
 + [Transport PostgreSQL databases between two Amazon RDS DB instances using pg\_transport](transport-postgresql-databases-between-two-amazon-rds-db-instances-using-pg-transport.md)
 + [Validate database objects after migrating from Oracle to Amazon Aurora PostgreSQL](validate-database-objects-after-migrating-from-oracle-to-amazon-aurora-postgresql.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

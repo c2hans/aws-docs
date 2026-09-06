@@ -45,7 +45,3 @@ Immediate switches to occur at any time:
 <a name="ips-plan-immediate-prepare-input"></a>
 
 You might have an input switch that you have identified as an immediate input switch, but you don't know when the switch will need to occur. You only know that you will be given just a few seconds advance notice. In this situation, you might want to prepare the input in advance by creating a prepare input action. For more information, see [Preparing inputs in AWS Elemental MediaLive](feature-prepare-input.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

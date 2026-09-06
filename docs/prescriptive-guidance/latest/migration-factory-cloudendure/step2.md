@@ -37,7 +37,3 @@ One of the common tasks of rehost migration is uninstalling old software such as
 MGN supports post-launch scripts that help you automatically run operating system configuration tasks, such as installing or uninstalling software.
 
 For detailed instructions, see [Push the post-launch scripts](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/list-of-automated-migration-activities-using-factory-web-console.html#push-the-post-launch-scripts) in the *Cloud Migration Factory Implementation Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

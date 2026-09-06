@@ -126,7 +126,3 @@ When invoked, quick actions perform tasks for you in GitLab issues and merge req
 
 **Chat session in web UI and IDEs**
 + GitLab Duo Chat and Code Suggestions works with Amazon Q to provide support for CI/CD configuration, error explanations, and addressing questions. You can use slash commands in a chat session to invoke the GitLab Duo with Amazon Q chat capabilities. For more information, see [Ask GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/examples/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

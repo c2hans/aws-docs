@@ -38,7 +38,3 @@ The following example in the `Resources` section specifies the state home folder
 
 **Note**
 Only streaming is supported by the VPC endpoint, and authentication must still take place over the public internet. Prerequisite access such as SAML Single Sign-On (SSO) Identity Provider (IdP) remain a requirement that are accessible only through the public internet.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

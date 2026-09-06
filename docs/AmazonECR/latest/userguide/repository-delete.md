@@ -21,7 +21,3 @@ Images in the deleted repositories are also deleted. You cannot undo this operat
 1. On the **Repositories** page, choose the **Private** tab and then select the repository to delete and choose **Delete**.
 
 1. In the **Delete {{repository\_name}}** window, verify that the selected repositories should be deleted and choose **Delete**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

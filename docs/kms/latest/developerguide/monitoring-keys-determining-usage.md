@@ -221,7 +221,3 @@ To see more examples of how AWS KMS API activity appears in your CloudTrail log 
 <a name="cloudtrail-query-cost-considerations"></a>
 
 When you query CloudTrail logs using Amazon CloudWatch Logs Insights, Amazon CloudWatch Logs Insights charges you based on the amount of data scanned. Large, unbounded queries can result in unexpectedly high costs. To manage costs, scope every query to the narrowest relevant time range. Filter by event name, resource ARN, or principal ID. Before attempting to query, consider [examining the last successful cryptographic operation performed with a KMS key](#examine-last-usage) first to avoid incurring unnecessary query cost. You can also set budget alerts in AWS Budgets to catch unexpected query volume. For more information about pricing, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/) on the Amazon Web Services website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

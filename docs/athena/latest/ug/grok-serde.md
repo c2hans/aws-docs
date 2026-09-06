@@ -146,7 +146,3 @@ LOCATION
 <a name="grok-serde-see-also"></a>
 + [Understanding Grok Patterns](https://edgedelta.com/company/blog/what-are-grok-patterns) (external website)
 + [Built-in patterns](https://docs.aws.amazon.com/glue/latest/dg/custom-classifier.html#classifier-builtin-patterns) (*AWS Glue User Guide*)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

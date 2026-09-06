@@ -65,6 +65,7 @@ The following table describes specifications for RG nodes.
 
 | Node type | vCPU | RAM (GiB) | Default slices per node | Managed storage limit per node 1 | Node range with create cluster | Total managed storage capacity 2 |
 | --- | --- | --- | --- | --- | --- | --- |
+| rg.large (single-node) | 2 | 16 | 2 | 1 TB | 1 | 1 TB |
 | rg.large (multi-node) | 2 | 16 | 2 | 8 TB | 2–16 | 128 TB |
 | rg.xlarge (multi-node) | 4 | 32 | 2 | 32 TB | 2–163 | 1024 TB3 |
 | rg.4xlarge | 16 | 128 | 8 | 128 TB | 2–324 | 8192 TB4 |
@@ -194,7 +195,3 @@ The cluster status displays the current state of the cluster. The following tabl
 | rotating-keys |  Amazon Redshift is rotating encryption keys for the cluster. For more information, see [Encryption key rotation](working-with-db-encryption.md#working-with-key-rotation).  |
 | storage-full |  The cluster has reached its storage capacity. Resize the cluster to add nodes or to choose a different node size. For more information, see [Resizing a cluster](resizing-cluster.md).  |
 | updating-hsm |  Amazon Redshift is updating the HSM configuration.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

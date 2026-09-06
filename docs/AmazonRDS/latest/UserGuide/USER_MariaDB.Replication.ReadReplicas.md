@@ -25,7 +25,3 @@ You can create up to 15 read replicas from one DB instance within the same Regio
 RDS for MariaDB supports cascading read replicas. To learn how to configure cascading read replicas, see [Using cascading read replicas with RDS for MariaDB](USER_MariaDB.Replication.ReadReplicas.Cascading.md).
 
 You can run multiple read replica create and delete actions at the same time that reference the same source DB instance. When you perform these actions, stay within the limit of 15 read replicas for each source instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

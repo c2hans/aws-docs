@@ -47,7 +47,3 @@ For an Amazon OpenSearch Service Reserved Nodes example, suppose Bob and Susan e
 AWS bills five as Reserved Instances. AWS bills the remaining four as On-Demand instances. (For Amazon OpenSearch Service Reserved Instance charges, see [Amazon OpenSearch Service Pricing](https://aws.amazon.com/elasticsearch-service/pricing/).) Bob receives the cost benefit from Susan's Reserved Instances only if he launches his On-Demand instances in the same AWS Region where Susan purchased her Reserved Instances.
 
 To receive the cost benefit of Susan’s Reserved Instances, Bob also must use the same instance type that Susan reserved. For example, let's say Susan purchased `m4.large.elasticsearch` instances in `us-west-2`. Bob must launch his Amazon OpenSearch Service domains in `us-west-2` with the same instance type to get the cost benefit on the organization's consolidated bill.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

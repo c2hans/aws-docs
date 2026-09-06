@@ -93,7 +93,7 @@ The migration type. Valid values: `full-load` \| `cdc` \| `full-load-and-cdc`
 *Required*: Yes
 *Type*: String
 *Allowed values*: `full-load | cdc | full-load-and-cdc`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ReplicationInstanceArn`  <a name="cfn-dms-replicationtask-replicationinstancearn"></a>
 The Amazon Resource Name (ARN) of a replication instance.
@@ -109,6 +109,7 @@ Constraints:
 + Cannot end with a hyphen or contain two consecutive hyphens.
 *Required*: No
 *Type*: String
+*Pattern*: `^[a-zA-Z][a-zA-Z0-9]*(?:-[a-zA-Z0-9]+)*$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ReplicationTaskSettings`  <a name="cfn-dms-replicationtask-replicationtasksettings"></a>
@@ -170,6 +171,12 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+
+####
+<a name="aws-resource-dms-replicationtask-return-values-fn--getatt-fn--getatt"></a>
+
+`ReplicationTaskArn`  <a name="ReplicationTaskArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the replication task.
 
 ## Examples
 <a name="aws-resource-dms-replicationtask--examples"></a>
@@ -268,7 +275,3 @@ Resources:
 <a name="aws-resource-dms-replicationtask--seealso"></a>
 + [ CreateReplicationTask](https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateReplicationTask.html) in the *AWS Database Migration Service API Reference*
 +  [Managing AWS resources as a single unit with AWS CloudFormation stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

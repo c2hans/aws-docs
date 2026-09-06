@@ -57,7 +57,3 @@ Depending on the scenario, you might need to provide an entity's name, ID, or AR
 **Quick Sight template** – An entity that encapsulates the metadata required to create an analysis or a dashboard. It abstracts the dataset associated with the analysis by replacing it with placeholders. You can use templates to create dashboards by replacing dataset placeholders with datasets. These datasets need to follow the same schema that was used to create the source analysis and template.
 
 **Quick Sight user** – This is an Quick Sight user identity acted on by your API call. This user isn't identical to the caller identity but might be the one that maps to the user in Quick Sight.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick Sight. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quicksight` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

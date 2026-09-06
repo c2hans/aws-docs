@@ -10,7 +10,3 @@ By default, Security Enhanced Linux (SELinux) is `enabled` and set to `enforcing
 SELinux provides an enhanced mechanism to enforce the separation of information based on confidentiality and integrity requirements. This separation of information reduces threats of tampering and bypassing of application security mechanisms. It also confines damage that can be caused by malicious or flawed applications.
 
 SELinux includes a set of sample security policy configuration files that's designed to meet everyday security goals. For more information about SELinux features and functionality, see [What is SELinux](https://www.redhat.com/en/topics/linux/what-is-selinux)?
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Use Amazon S3 Lifecycle policies to transition objects to infrequent access or archival tiers and configure expiration actions to delete unnecessary objects based on lifecycle rules.
 +  Enable Time to Live (TTL) in DynamoDB tables to automatically delete expired items without consuming write throughput, defining the expiration timestamp in Unix epoch time.
 +  Set appropriate TTLs for ElastiCache keys based on data change rates and risk tolerance for outdated data, facilitating cached data freshness and improved player experience.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

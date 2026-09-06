@@ -10,7 +10,3 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/userguide/projects-manag
 You can use the Amazon Pinpoint console to create, view, edit, and delete projects. Within a project, you can also [import endpoints](segments-importing.md), [build segments](segments-building.md), [create campaigns](campaigns.md), [create journeys](journeys-create.md), and [view analytics data](analytics-charts.md) for that project.
 
 Use the **General settings** page to specify when Amazon Pinpoint can send messages for campaigns and journeys in the current project and how many messages Amazon Pinpoint can send for those campaigns and journeys. This includes settings such as the time frame for sending messages and the maximum number of messages to send to each endpoint. You can also use the **General settings** page to delete a project.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

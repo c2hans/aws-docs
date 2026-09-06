@@ -18,7 +18,7 @@ After successfully fulfilling a matchmaking request, Amazon GameLift Servers emi
 
 Match data includes the following information:
 + A unique match ID
-+ The ID of the matchmaking configure that was used to create the match
++ The ID of the matchmaking configuration that was used to create the match
 + The players selected for the match
 + Team names and team assignments
 + Player attribute values that were used to form the match. Attributes might also provide information that directs how a game session is set up. For example, the game server might assign characters to players based on player attributes, or choose a game map preference that is common to all players. Or your game might unlock certain features or levels based on the average player skill level.
@@ -26,7 +26,7 @@ Match data includes the following information:
 Match data doesn't include the player latency. If you need latency data on current players, such as for match backfill, we recommend getting fresh data.
 
 **Note**
-Matchmaker data specifies the full matchmaking configuration ARN, which identifies the configuration name, AWS account, and Region. For games hosting with Amazon GameLift Servers, if you 're using match backfill, you need the configuration name only. The configuration name is the string that follows ":matchmakingconfiguration/". In the following example, the matchmaking configuration name is "MyMatchmakerConfig".
+Matchmaker data specifies the full matchmaking configuration ARN, which identifies the configuration name, AWS account, and Region. For games hosted with Amazon GameLift Servers, if you're using match backfill, you need the configuration name only. The configuration name is the string that follows ":matchmakingconfiguration/". In the following example, the matchmaking configuration name is "MyMatchmakerConfig".
 
 This JSON example shows a typical matchmaker data set. It describes a two-player game, with players matched based on skill ratings and highest level attained.
 
@@ -57,7 +57,3 @@ This JSON example shows a typical matchmaker data set. It describes a two-player
 	}]
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

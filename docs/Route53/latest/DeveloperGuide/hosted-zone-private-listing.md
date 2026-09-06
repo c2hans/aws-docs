@@ -14,7 +14,3 @@ You can use the Amazon Route 53 console to list all of the hosted zones that yo
 1. In the navigation pane, choose **Hosted zones**.
 
    The **Hosted Zones** page automatically displays a list of all of the hosted zones that were created using the current AWS account. The **Type** column indicates whether a hosted zone is private or public. Choose the column heading to group all private hosted zones and all public hosted zones.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

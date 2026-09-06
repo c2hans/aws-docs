@@ -43,7 +43,7 @@ When selecting the input or output file to upload to Amazon S3, Deadline Cloud c
 For more information about creating and using storage profiles, see [Shared storage in Deadline Cloud](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/storage-shared.html) in the *AWS Deadline Cloud User Guide*.
 
 **Example - The asset reference file created by the Deadline Cloud GUI**
-Use the following command to submit a job using the [blender\_render sample](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/blender_render).
+Use the following command to submit a job using the [blender\_render sample](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/blender_render) on the GitHub website:
 
 ```
 deadline bundle gui-submit blender_render/
@@ -66,7 +66,3 @@ assetReferences:
     directories: []
   referencedPaths: []
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

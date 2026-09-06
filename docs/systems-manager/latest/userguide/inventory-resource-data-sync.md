@@ -433,7 +433,3 @@ The following section provides an overview with links for building a visualizati
 1. Join tables. For example, you could join the `instanceid` column from `AWS_InstanceInformation` because it matches the `resourceid` column in other inventory tables. For more information about joining tables, see [Joining data](https://docs.aws.amazon.com/quicksuite/latest/userguide/joining-data.html) in the *Amazon Quick User Guide*.
 
 1. Build a visualization. For more information, see [Analyses and reports: Visualizing data in Amazon Quick Sight](https://docs.aws.amazon.com/quicksuite/latest/userguide/working-with-visuals.html) in the *Amazon Quick User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

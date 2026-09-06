@@ -431,7 +431,3 @@ $ sudo aws cloudformation deploy --template-file /root/app2container/java-tomcat
 <a name="firelens-setup-step5"></a>
 
 After you deploy your application to Amazon ECS, you can verify that your logs are routing to their intended destinations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App2Container. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app2container` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

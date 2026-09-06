@@ -17,7 +17,3 @@ Pipes are intended for point-to-point integrations between supported sources and
 ![A source sends events to an EventBridge pipe, which filters and routes matching events to the target.](http://docs.aws.amazon.com/timestream/latest/developerguide/images/pipes-overview_shared_architecture.png)
 
 For more information on EventBridge Pipes, see [EventBridge Pipes](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html) in the *EventBridge User Guide*. For information on configuring a pipe to deliver events to a Amazon Timestream for LiveAnalytics table, see [EventBridge Pipes target specifics](https://docs.aws.amazon.com/eventbridge/latest/userguide/pipes-targets-specifics.html#pipes-targets-specifics-timestream).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

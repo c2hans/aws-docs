@@ -25,7 +25,3 @@ This documentation is for Amazon Nova Version 1. For documentation releases for 
 | [Enhanced video generation support](#doc-history) | Amazon Nova can now generate videos up to 2 minutes long. See [Generating videos with Amazon Nova](https://docs.aws.amazon.com/nova/latest/userguide/video-generation.html) and [Storyboarding videos with Amazon Nova](https://docs.aws.amazon.com/nova/latest/userguide/video-generation-storyboard.html) for more information. | April 7, 2025 |
 | [Enhanced region support](#doc-history) | Amazon Nova is now available in more regions. See [What is Amazon Nova](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html) for the full list of supported regions for each model. | March 10, 2025 |
 | [Initial release](#doc-history) | Initial release of the Amazon Nova User Guide | December 3, 2024 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

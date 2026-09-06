@@ -16,7 +16,3 @@ Before you create or use a transit gateway-attached firewall, consider the follo
 + A transit gateway-attached firewall must be configured in the same Availability Zone where the shared transit gateway is already enabled.
 + Traffic for transit gateway-attached firewalls must be routed through transit gateway route tables, not VPC route tables.
 + Appliance mode is always enabled on transit gateway-attached firewalls.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

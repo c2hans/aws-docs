@@ -56,7 +56,3 @@ This is an alternative architecture to the one discussed in the previous section
 This integration enables scenarios such as predictive maintenance, real-time asset monitoring, and supply chain optimization by combining AWS's robust IoT and Generative AI capabilities with SAP’s enterprise business processes and data models.
 
 You can find out more from SAP Architecture Center under [Build Events-to-Business Actions Scenarios with SAP BTP and AWS IoT SiteWise](https://architecture.learning.sap.com/docs/ref-arch/fbdc46aaae/3).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,7 +50,3 @@ The following image shows the same form with partial scores, resulting in a scor
 + **Excluded questions** – Excluded questions do not contribute to either earned points or max base points. They are completely removed from the score calculation.
 + **Automatic fail** – If an automatic fail option is selected, the earned points for the affected scope (section or entire form) are set to zero. The max base points remain unchanged.
 + **"None of the options" (multiple selection)** – When the evaluator selects "None of the options" on a multiple selection question, the earned points for that question are zero. The question still contributes its maximum base points to the denominator.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

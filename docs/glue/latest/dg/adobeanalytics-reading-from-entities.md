@@ -49,7 +49,3 @@ adobeAnalytics_read = glueContext.create_dynamic_frame.from_options(
 + [Segments](https://adobedocs.github.io/analytics-2.0-apis/#/Segments)
 + [Users](https://adobedocs.github.io/analytics-2.0-apis/#/Users)
 + [Usage Logs](https://adobedocs.github.io/analytics-2.0-apis/#/Usage%20Logs)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

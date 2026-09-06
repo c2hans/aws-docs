@@ -19,7 +19,3 @@ With Deadline Cloud usage-based licensing (UBL), you don't need to manage separa
 You can also combine both methods so workers use your existing licenses first and fall back to UBL when they run out.
 
 For a comparison of the licensing options and setup instructions, see [Using software licenses with Deadline Cloud](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/license.html) in the *Deadline Cloud Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

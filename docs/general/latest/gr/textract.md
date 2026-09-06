@@ -69,7 +69,3 @@ For more information, see [Amazon Textract Quotas](https://docs.aws.amazon.com/t
 +  Maximum in-progress AdapterVersions (analogous to adapter training) per account - 3
 
 For more information, see [Amazon Textract Quotas](https://docs.aws.amazon.com/textract/latest/dg/limits.html) in the *Amazon Textract Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

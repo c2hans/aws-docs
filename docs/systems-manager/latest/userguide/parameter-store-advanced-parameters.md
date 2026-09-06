@@ -109,7 +109,3 @@ The command returns the parameter tier, such as `Standard` or `Advanced`.
  For example, you can create parameters while the default tier is `Standard`, and then set the default parameter tier to `Advanced`. New parameters that you create without specifying a tier use the `Advanced` tier. You can later change the default tier back to `Standard` without changing the tier of existing parameters.
 
  Advanced parameters incur charges. For more information, see [AWS Systems Manager Pricing for Parameter Store](https://aws.amazon.com/systems-manager/pricing/#Parameter_Store).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

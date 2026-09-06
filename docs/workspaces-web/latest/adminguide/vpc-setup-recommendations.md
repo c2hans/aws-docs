@@ -27,7 +27,3 @@ The following recommendations can help you configure your VPC more effectively a
 + Use security groups to provide additional access control to your VPC.
 
   Security groups that belong to your VPC let you control the network traffic between WorkSpaces Secure Browser streaming instances and network resources required by web applications. Make sure that the security groups provide access to the network resources that your web applications require.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ Also, if you are running the bulk loader on an `R5d` writer instance, you may no
 Because the lookup cache is specific to each node, host replacement resets the cache to a cold start.
 
 You can temporarily disable the lookup cache on all instances in your DB cluster by setting the [neptune\_lookup\_cache](parameters.md#parameters-db-cluster-parameters-neptune_lookup_cache) DB cluster parameter to `0` (disabled). In general, however, it makes more sense to disable the cache on specific instances by scaling them down from `R5d` to `R5` instance types.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

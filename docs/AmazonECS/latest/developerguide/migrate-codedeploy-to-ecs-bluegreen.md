@@ -128,7 +128,3 @@ After migrating to Amazon ECS blue/green deployments:
 + Update your deployment scripts and CI/CD pipelines to use the Amazon ECS `UpdateService` API instead of the CodeDeploy `CreateDeployment` API.
 + Update your monitoring and alerting to track Amazon ECS service deployments instead of CodeDeploy deployments.
 + Consider implementing automated testing of your new deployment process to ensure it works as expected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

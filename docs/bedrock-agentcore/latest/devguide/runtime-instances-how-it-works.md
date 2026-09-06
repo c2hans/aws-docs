@@ -137,7 +137,3 @@ Hosting agents on Instances involves the following roles, in addition to the age
 +  **Infrastructure role** – An IAM role that AgentCore assumes to provision and manage EC2 instances in your account on your behalf (launching, tagging, and configuring networking for instances and their network interfaces).
 
 You can let the console create default roles for you, or supply existing roles. Because the infrastructure role grants AgentCore the ability to manage compute in your account, scope it to the least privilege your workloads require, and use IAM conditions to restrict it to specific VPCs, subnets, or instance types where appropriate.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

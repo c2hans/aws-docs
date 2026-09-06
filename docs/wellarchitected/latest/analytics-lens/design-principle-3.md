@@ -36,7 +36,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/de
 +  AWS Key Management Service Developer Guide: [What is AWS Key Management Service?](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 +  AWS Whitepaper: [Data Classification: Secure Cloud Adoption](https://docs.aws.amazon.com/whitepapers/latest/data-classification/welcome.html)
 +  AWS Clean Rooms: [What is AWS Clean Rooms](https://docs.aws.amazon.com/clean-rooms/latest/userguide/what-is.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

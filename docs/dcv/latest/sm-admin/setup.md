@@ -15,7 +15,3 @@ To set up Amazon DCV Session Manager, do the following:
 + [Step 3: Set up the agent](agent.md)
 + [Step 4: Configure the Amazon DCV server](configure-dcv-server.md)
 + [Step 5: Verify the installations](verify.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

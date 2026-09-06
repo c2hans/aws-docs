@@ -50,7 +50,3 @@ You can view the name and contents of the updated task definition file.
 1. In the **Artifacts** section, choose **Download** next to the artifact that contains the updated task definition file. This artifact will have a **Produced by** column set to the name of your render action.
 
 1. Open the .zip file to view the task definition .json file.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

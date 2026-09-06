@@ -103,7 +103,3 @@ You can directly launch container images of compatible web applications that are
 <a name="service-source-image.example"></a>
 
 The App Runner team maintains the **hello-app-runner** example image in an Amazon ECR Public Gallery. You can use this example to get started with creating an image-based App Runner service. For more information, see [hello-app-runner](https://gallery.ecr.aws/aws-containers/hello-app-runner).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

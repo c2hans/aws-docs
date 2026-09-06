@@ -46,7 +46,3 @@ After you delete a service-linked role, VPC Lattice creates the role again when 
 <a name="slr-regions"></a>
 
 VPC Lattice supports using service-linked roles in all of the Regions where the service is available.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

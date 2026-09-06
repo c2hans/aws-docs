@@ -16,7 +16,3 @@ Prebid Server tasks running in the ECS cluster output the runtime logs into the 
 You can monitor how the ECS resources in this solution are performing using the cluster and service metrics that are available in the Amazon ECS console. To view these metrics, follow the steps in [Viewing Amazon ECS metrics](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/viewing_cloudwatch_metrics.html) in the *Amazon ECS Developer Guide*.
 
 This solution associates a web ACL with the CloudFront distribution to prevent DDoS attacks against the Prebid Server cluster. Users can access near real-time summaries of the traffic that the web ACL evaluates in the web ACL’s **Traffic overview** tab on the AWS WAF console. For details, see [Web ACL traffic overview dashboards](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-dashboards.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying a Prebid Server on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

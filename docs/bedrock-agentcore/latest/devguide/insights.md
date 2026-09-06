@@ -39,7 +39,3 @@ AgentCore insights works together with [AgentCore optimization](optimization.md)
 1.  **Generate recommendation:** Call `StartRecommendation` with your current system prompt and point it at the same agent traces. The service produces a recommended system prompt with an explanation of what it changed.
 
 1.  **Validate:** Use [A/B testing](ab-testing.md) to compare the original and recommended configurations with live traffic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -142,7 +142,3 @@ To delete more than 1,000 rows within a single partition, consider the following
 Consider also the following recommendations when you're planning delete operations for heavy workloads.
 + With Amazon Keyspaces, partitions can contain a virtually unbounded number of rows. This allows you to scale partitions “wider” than the traditional Cassandra guidance of 100 MB. It’s not uncommon for time series or ledgers to grow over a gigabyte of data over time.
 + With Amazon Keyspaces, there are no compaction strategies or tombstones to consider when you have to perform delete operations for heavy workloads. You can delete as much data as you want without impacting read performance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

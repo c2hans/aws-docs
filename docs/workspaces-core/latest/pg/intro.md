@@ -22,7 +22,3 @@ This guide is intended for third-party VDI solution providers who want to build 
 If you're a customer interested in using a VDI or desktop as a service (DaaS) solution built on Amazon WorkSpaces Core, see [Amazon WorkSpaces Core](https://aws.amazon.com/workspaces/core/) and choose **WorkSpaces Core Partners** to learn more.
 
 Amazon WorkSpaces Core is part of the Amazon WorkSpaces Family. For more information, see [Amazon WorkSpaces Family](https://aws.amazon.com/workspaces/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-core` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

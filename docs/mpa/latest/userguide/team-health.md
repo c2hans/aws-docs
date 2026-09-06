@@ -72,7 +72,3 @@ As a Multi-party approval admin, the monthly team report is sent to you to help 
 ![AWS Multi-party approval teams monthly report showing team status and operation metrics.](http://docs.aws.amazon.com/mpa/latest/userguide/images/team-summary.png)
 
 *Figure 3: Diagram depicting the Multi-party approval monthly team report.*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Multi-party approval. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mpa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

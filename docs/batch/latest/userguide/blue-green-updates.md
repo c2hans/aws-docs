@@ -59,7 +59,7 @@ Delete the old compute environment.
 
    1. Open the AWS Batch console at [https://console.aws.amazon.com/batch/](https://console.aws.amazon.com/batch/).
 
-   1. Select your existing compute environment.
+   1. Select the option next to your existing compute environment. You must select a compute environment before the options in the **Actions** menu become available.
 
    1. Choose **Actions** and then **Clone**.
 
@@ -201,7 +201,3 @@ Delete the old compute environment.
    ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

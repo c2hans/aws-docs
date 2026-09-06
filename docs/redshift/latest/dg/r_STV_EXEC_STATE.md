@@ -42,7 +42,3 @@ Some or all of the data in this table can also be found in the SYS monitoring vi
 <a name="r_STV_EXEC_STATE-sample-queries"></a>
 
 Rather than querying STV\_EXEC\_STATE directly, Amazon Redshift recommends querying SVL\_QUERY\_SUMMARY or SVV\_QUERY\_STATE to obtain the information in STV\_EXEC\_STATE in a more user-friendly format. See the [SVL\_QUERY\_SUMMARY](r_SVL_QUERY_SUMMARY.md) or [SVV\_QUERY\_STATE](r_SVV_QUERY_STATE.md) table documentation for more details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ You can see the following information.
 ![The Amazon Kendra console showing the the number of documents scanned for a data source.](http://docs.aws.amazon.com/kendra/latest/dg/images/DocumentScans.png)
 + **Average sync run time in minutes**—The average length of time that it takes for a sync run to complete. The time that it takes to sync a data source affects the amount charged for the service.
 ![The Amazon Kendra console showing the the average run time for a data source sync.](http://docs.aws.amazon.com/kendra/latest/dg/images/AverageRunTime.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

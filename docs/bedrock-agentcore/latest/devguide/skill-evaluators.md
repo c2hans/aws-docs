@@ -70,7 +70,3 @@ How AgentCore Evaluations behaves depends on which skill placeholders the custom
 + An evaluator that references `skill_content` behaves like `Builtin.SkillInstructionFollowing`: it runs only on skill-invocation tool calls whose `SKILL.md` body is available, and `{context}` renders the **full session context** — every turn from session start through session end. This differs from the standard tool-level `context`.
 
 In either case, AgentCore Evaluations emits one result per skill invocation. For custom-evaluator authoring, see [Create evaluator](create-evaluator.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

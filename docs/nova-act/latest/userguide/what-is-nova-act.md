@@ -45,7 +45,3 @@ Nova Act is supported in the following AWS Region:
 <a name="pricing-for-nova-act"></a>
 
 For the most recent pricing information, visit the [Amazon Nova Act pricing](https://aws.amazon.com/nova/pricing/) page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

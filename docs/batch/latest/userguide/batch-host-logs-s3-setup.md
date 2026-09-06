@@ -66,7 +66,3 @@ s3://{{host-level-logs-bucket}}/ecs-logs/{{instance-id}}/{{source-tag}}/YYYY/MM/
 Each instance writes to a folder identified by its instance ID. Within that folder, logs are organized by source tag (for example, `ecs-agent`, `docker`, `kernel`) and further partitioned by date and time.
 
 Customize the configuration by removing unneeded INPUT sections or adjusting collection intervals to match your requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

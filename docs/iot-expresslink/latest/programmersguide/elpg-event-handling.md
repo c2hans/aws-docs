@@ -149,7 +149,3 @@ A number of custom diagnostic commands can be added to assist the developer in t
 Diagnostic commands are not checked as part of the ExpressLink qualification test suite.
 
 Diagnostic commands must be documented in the vendor device datasheet.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

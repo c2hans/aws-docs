@@ -431,8 +431,4 @@ Resources:
 ## Perform a fleet health check
 <a name="fleet-health-check"></a>
 
-After creating your fleet, you should build a custom health check to ensure your fleet remains healthy and free of stalled instances to help prevent unnecessary costs. See [ Deploying a Deadline Cloud fleet health check](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cmf_templates) on GitHub. A health check can lower the risk of an accidental change in your Amazon Machine Image, launch template, or network configuration running undetected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+After creating your fleet, you should build a custom health check to ensure your fleet remains healthy and free of stalled instances to help prevent unnecessary costs. See [ Deploying a Deadline Cloud fleet health check](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cmf_templates) on the GitHub website. A health check can lower the risk of an accidental change in your Amazon Machine Image, launch template, or network configuration running undetected.

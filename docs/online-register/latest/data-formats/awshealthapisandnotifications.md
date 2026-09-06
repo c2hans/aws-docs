@@ -21,7 +21,3 @@ AWS Health APIs and Notifications provides the following APIs for data retrieval
 | <a name="health-DescribeEvents"></a>[DescribeEvents](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEvents.html) | Retrieve information about events that meet the specified filter criteria | Read |
 | <a name="health-DescribeEventsForOrganization"></a>[DescribeEventsForOrganization](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEventsForOrganization.html) | Retrieve information about events that meet the specified filter criteria in organization | Read |
 | <a name="health-DescribeHealthServiceStatusForOrganization"></a>[DescribeHealthServiceStatusForOrganization](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeHealthServiceStatusForOrganization.html) | Retrieve the status of enabling or disabling the Organizational View feature | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

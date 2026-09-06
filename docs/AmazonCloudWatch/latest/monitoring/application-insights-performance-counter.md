@@ -130,7 +130,3 @@ Performance Counter metrics are recommended for instances only when the correspo
 | Web Service Current Connections  | Web Service |
 | Web Service Get Requests/Sec  | Web Service |
 | Web Service Post Requests/Sec  | Web Service |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

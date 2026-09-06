@@ -62,7 +62,3 @@ Please note that the AWS WAF is always in use, and the AWS Step Function runs on
 This section describes how the principles and best practices of the [sustainability pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html) were applied when designing this solution.
 + The solution uses managed and serverless services to minimize the environmental impact of the backend services.
 + The solution’s serverless design is aimed at reducing carbon footprint compared to the footprint of continually operating on-premises servers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Account Assessment for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

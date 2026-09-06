@@ -38,7 +38,3 @@ After the first flow logs are delivered to your S3 bucket, you can integrate wit
 + A set of Athena named queries. For more information, see [Predefined queries](flow-logs-run-athena-query.md#predefined-queries).
 + A Lambda function that loads new partitions to the table on the specified schedule (daily, weekly, or monthly).
 + An IAM role that grants permission to run the Lambda functions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ You can use this procedure to view model metrics in the console. To evaluate how
 In the following image, you can see metrics related to the performance. You can see how many times the model identified abnormal equipment behavior events incorrectly. You can also see which sensors played the largest role in the model identifying the abnormal equipment behavior events. The console displays the top 15 sensors that contributed to the model identifying an abnormal equipment behavior event.
 
 ![Model performance dashboard showing detected events, labeled events, and top 15 contributing sensors.](http://docs.aws.amazon.com/lookout-for-equipment/latest/userguide/images/model-performance-image-launch.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

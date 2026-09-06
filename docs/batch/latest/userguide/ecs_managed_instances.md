@@ -14,9 +14,7 @@ Amazon ECS Managed Instances is only available for AWS Batch compute environment
 **Topics**
 + [When to use Amazon ECS Managed Instances](when-to-use-ecs-managed-instances.md)
 + [Job definitions on Amazon ECS Managed Instances](ecs-managed-instances-job-definitions.md)
++ [Running mixed-architecture jobs (X86\_64 and ARM64)](ecs-managed-instances-multi-architecture.md)
 + [Job queues on Amazon ECS Managed Instances](ecs-managed-instances-job-queues.md)
++ [Instance draining and task interruptions](ecs-managed-instances-instance-draining.md)
 + [Compute environments on Amazon ECS Managed Instances](ecs-managed-instances-compute-environments.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

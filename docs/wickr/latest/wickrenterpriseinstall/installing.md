@@ -30,7 +30,3 @@ When the installation is complete, `kubectl kots` will open up a local port (usu
 <a name="installing-wickr-enterprise-with-lambda"></a>
 
 During the CDK deployment, a Lambda is created and invoked to complete the Wickr Enterprise installation on your behalf automatically. To invoke it manually, open the AWS console and find `WickrLambda-func*` lambda function, under test tab, select `test`, the input is irrelevant.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -153,7 +153,3 @@ The following dimensions are used to refine the usage metrics that are published
 |  Type  | The type of entity that is being reported. Currently, the only valid value for Amazon EC2 usage metrics is `Resource`. |
 |  Resource  | The type of resource that is running. Currently, the only valid value for Amazon EC2 usage metrics is `vCPU`, which returns information on instances that are running. |
 |  Class  | The class of resource being tracked. For Amazon EC2 usage metrics with `vCPU` as the value of the `Resource` dimension, the valid values are `Standard/OnDemand`, `F/OnDemand`, `G/OnDemand`, `Inf/OnDemand`, `P/OnDemand`, and `X/OnDemand`.<br />The values for this dimension define the first letter of the instance types that are reported by the metric. For example, `Standard/OnDemand` returns information about all running instances with types that start with A, C, D, H, I, M, R, T, and Z, and `G/OnDemand` returns information about all running instances with types that start with G. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

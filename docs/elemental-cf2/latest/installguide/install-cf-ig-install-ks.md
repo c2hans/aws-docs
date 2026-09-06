@@ -30,7 +30,3 @@ Do this from each Elemental node.
    The operating system is installed. From now on, the system runs this customized version of your Linux operating system.
 
 1. Repeat the above steps on each system, using the `.iso` file that goes with the AWS Elementalsoftware you are installing on each system.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

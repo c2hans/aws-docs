@@ -93,7 +93,3 @@ When you import a flow, Connect Customer attempts to resolve the references to t
   You can also open the blocks that contain unresolved resources, or resources that were resolved by name, and change the resource to another one in the Connect Customer instance.
 
 You can save a flow with unresolved or missing resources. You can publish a flow with unresolved or missing resources only for optional parameters. If any required parameter has an unresolved resource, you cannot publish the flow until the resources are resolved.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

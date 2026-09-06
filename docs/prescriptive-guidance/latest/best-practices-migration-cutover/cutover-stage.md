@@ -92,7 +92,3 @@ If a rollback is initiated after a successful cutover and your application has r
 + **Fail-forward approach** – Your on-premises database is likely to become stale post-cutover since the post-migration AWS database becomes the main database. You can use [AWS Database Migration Service](https://aws.amazon.com/dms/) (AWS DMS)to set up a fail-forward database, which will replicate the data to a new on-premises database. In the event of any issues, AWS DMS rolls back your applications to a designated fail-forward database rather than to a stale on-premises database.
 + **Dual write strategy** – In this case, your application logic must allow writes to both the old and new database.
 + **Native backup and restore** – To evaluate the time required for the restore, perform backup and restore tests using lower environments (that is, non-production environments) during the pre-cutover stage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

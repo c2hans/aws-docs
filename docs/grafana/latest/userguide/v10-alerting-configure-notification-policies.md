@@ -87,7 +87,3 @@ You can search within the tree of policies by *Label matchers* or *contact point
 + To search by label, enter a valid label matcher in the **Search by matchers** input field. Multiple matchers can be entered, separated by a comma. For example, a valid matcher input could be `severity=high, region=~EMEA|NA`.
 **Note**
 When searching by label, all matched policies will be exact matches. Partial matches and regex-style matches are not supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -72,7 +72,3 @@ The OpenSSL Provider supports ML-DSA (Module-Lattice Digital Signature Algorithm
 
 ML-DSA-44, ML-DSA-65, ML-DSA-87
 ML-DSA provides post-quantum signatures at NIST security levels 2 (ML-DSA-44, 128-bit), 3 (ML-DSA-65, 192-bit), and 5 (ML-DSA-87, 256-bit). All variants use one-shot pure mode signing. You cannot select an external digest algorithm. ML-DSA supports TLS 1.3 signature negotiation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

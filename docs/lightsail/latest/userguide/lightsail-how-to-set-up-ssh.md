@@ -75,7 +75,3 @@ You can manage your keys on the **SSH keys** tab of the **Account** page. You wi
 ![Key pair management on the Account page](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-account-key-pairs-management.png)
 
 On this page, you can create a new key, delete an existing key, upload an existing key, or download a private key. You may want to use an SSH client like PuTTY to connect, which will require you to have the private half of the key. You can download the key on the **Account** page. [Learn more about setting up PuTTY to connect to a Lightsail instance](lightsail-how-to-set-up-putty-to-connect-using-ssh.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

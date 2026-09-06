@@ -21,7 +21,3 @@ In the preceding figure, the route tables enforce similar traffic flows to the s
 + **Internet gateway route table** – Routes traffic that's destined for each customer subnet (range `10.0.2.0/24` or `10.0.3.0/24`) to the firewall subnet in the same Availability Zone (`vpce-4114` or `vpce-5588`, respectively).
 + **Firewall subnet route tables** – Route traffic that's destined for anywhere inside the VPC (`10.0.0.0/16`) to the local address. Route traffic that's destined for anywhere else (`0.0.0.0/0`) to the internet gateway (`igw-1232`). These are identical to the route table for the firewall subnet in the single Availability Zone.
 + **Customer subnet route tables** – Route traffic that's destined for anywhere inside the VPC (`10.0.0.0/16`) to the local address. Route traffic that's destined for anywhere else (`0.0.0.0/0`) to the firewall subnet in the same Availability Zone (`vpce-4114` for zone AZ1 and `vpce-5588` for zone AZ2).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -237,7 +237,3 @@ aws rds register-db-proxy-targets --db-proxy-name {{the-proxy}} --db-cluster-ide
 With `ModifyDBProxyTargetGroup`, you can modify connection-related settings. Currently, all proxies have a single target group named `default`. When you work with this target group, you specify the name of the proxy and `default` for the name of the target group. You can't rename the default target group.
 
  With `DeregisterDBProxyTargets` and `RegisterDBProxyTargets`, you change which RDS DB instance the proxy is associated with through its target group. Currently, each proxy can connect to one RDS DB instance . The target group tracks the connection details for the RDS DB instances in a Multi-AZ configuration .
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

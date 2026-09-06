@@ -14,7 +14,3 @@ When a finding is aggregated, it is updated with information from the latest occ
 The criteria that alert GuardDuty to generate a new finding instead of aggregating an existing one is dependent on the finding type. The aggregation criteria for each finding type is determined by our security engineers to provide an overview of distinct security issues within your account.
 
 When GuardDuty generates an attack sequence finding type in your account, the finding will be aggregated only when you GuardDuty identifies the similar signals in the same sequence in your account. Otherwise, GuardDuty will generate another attack sequence.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

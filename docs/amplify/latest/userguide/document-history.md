@@ -67,7 +67,3 @@ The following table describes the important changes to the documentation since t
 | New notifications topic | Added the [Notifications](notifications.md#notifications.title) topic to describe how to set up email notifications for an Amplify app to alert stakeholders or team members when a build succeeds or fails. | June 20, 2020 |
 | Updated the custom domains topic | Updated the [Connecting a custom domain](custom-domains.md) topic to improve the procedures for adding custom domains in Amazon Route 53, GoDaddy, and Google Domains. This update also includes new troubleshooting information for setting up custom domains. | May 12, 2020 |
 | AWS Amplify release | This release introduces Amplify.  | November 26, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ The following table describes the releases for Network Load Balancers.
 | [Proxy protocol](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html#proxy-protocol) | This release adds support for enabling Proxy Protocol. | November 17, 2017 |
 | [IP addresses as targets](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html#target-type) | This release adds support for registering IP addresses as targets. | September 21, 2017 |
 | [New load balancer type](#doc-history) | This release of Elastic Load Balancing introduces Network Load Balancers. | September 7, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

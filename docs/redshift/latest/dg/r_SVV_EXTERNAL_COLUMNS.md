@@ -29,7 +29,3 @@ Use the [SHOW COLUMNS](r_SHOW_COLUMNS.md) command for column discovery. SHOW COL
 | columnnum | integer | The external column number, starting from 1. |
 | part\_key | integer | If the column is a partition key, the order of the key. If the column isn't a partition, the value is 0. |
 | is\_nullable | text | Defines whether a column is nullable or not. Some values are true, false, or " " empty string that represents no information. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

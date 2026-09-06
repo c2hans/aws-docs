@@ -80,7 +80,3 @@ x-amz-aoss-collection-name: my-collection
 
 **Note**
 The `x-amz-aoss-collection-name` and `x-amz-aoss-collection-id` headers must be SigV4-signed. AWS SDKs do this automatically.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

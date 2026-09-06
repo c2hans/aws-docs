@@ -38,7 +38,3 @@ If the status shows Disabled, you must activate the grant before using the model
 The model invocation works the same way as if you had subscribed directly. All usage is billed to the account that holds the original subscription (typically the management account).
 
 You can also invoke models programmatically using the AWS CLI or AWS SDKs with the [InvokeModel API](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html). The only requirement is that you have an active license grant in your account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

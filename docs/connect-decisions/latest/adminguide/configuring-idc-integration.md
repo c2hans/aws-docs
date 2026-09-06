@@ -12,7 +12,7 @@ To create an instance and use the Amazon Connect Decisions service, you need to 
 1. If necessary, change the **AWS Region** by selecting **Select a Region** located at the top of the console. Choose your Region from the drop-down list.
 
 1. Select **Create Amazon Connect Decisions instance**. A notification will appear.
-![Sign up with email dialog showing Email address input field and Continue button.](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/configuring-idc-integration-create-instance.png)
+![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/configuring-idc-integration-create-instance.png)
 
 1. Enter your email address and select **Continue**. IdC will verify if the email matches an existing user.
 
@@ -30,7 +30,7 @@ This can be used if your organization has an established IdC instance that you w
    IdC creates the user automatically and adds them as the Amazon Connect Decisions administrator.
 
 1. Do one of the following:
-   + **To create an instance using standard configuration** – Select **Create**. See [Use standard configuration](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/creating-your-instance.html).
-   + **To create an instance using a custom configuration** – Select **Edit in advanced setup**. See [Use advanced configuration](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/creating-your-instance.html#creating-your-instance-advanced-configuration).
+   + **To create an instance using standard configuration** – Select **Create**. See [Use standard configuration](https://docs.aws.amazon.com/aws-supply-chain/latest/adminguide/create-instance-standard.html).
+   + **To create an instance using a custom configuration** – Select **Edit in advanced setup**. See [Use advanced configuration](https://docs.aws.amazon.com/aws-supply-chain/latest/adminguide/create-instance-advanced.html).
 
 When used in conjunction with IAM Identity Center, Amazon Connect Decisions retrieves the 'username' and 'email' fields from IAM Identity Center directory. None of these attributes are stored natively in your Amazon Connect Decisions instance and are always retrieved at runtime. Amazon Connect Decisions encrypts these identity attributes at rest using an AWS owned KMS key by default. Customer managed KMS keys are not supported in Amazon Connect Decisions. If you delete a user in your AWS IAM Identity Center instance, Amazon Connect Decisions deletes that user from your instance as well.

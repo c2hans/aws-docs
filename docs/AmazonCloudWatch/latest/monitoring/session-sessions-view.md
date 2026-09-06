@@ -38,7 +38,3 @@ Choose **Timeline** to view the duration of each span and to understand the span
 To analyze span relationships and subsequent calls choose **Trajectory** to understand the interconnected relationship of the spans and subsequent calls from these spans.
 
 Under **Spans**, select an individual span event to review the span data in its original form. Review the span data in its original form. For granular troubleshooting, select the **Events** tab to examine model inputs and outputs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

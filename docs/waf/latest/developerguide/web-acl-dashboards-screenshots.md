@@ -46,7 +46,3 @@ Hovering over any area in the graph brings up the available information details.
 ![The AWS WAF console shows two panes for Token status and IP token absent thresholds, with similar graph lines for blocked and challenged requests in each pane. The Token status pane also has a graph for allowed requests.](http://docs.aws.amazon.com/waf/latest/developerguide/images/web-acl-dashboard-bot-token-panes.png)
 
 This section shows just a few of the traffic summaries that are provided in the protection pack (web ACL) traffic overview dashboards. To see the dashboards for any of your protection packs (web ACLs), open the protection pack (web ACL)'s page in the console. For information about how to do this, see the guidance at [Viewing the dashboards for a protection pack (web ACL)](web-acl-dashboards-accessing.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

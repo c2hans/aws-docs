@@ -46,7 +46,3 @@ This scenario has the following attributes:
 + Users are able to get a temporary URL that gives them access to the AWS Management Console (which is referred to as single sign-on).
 
 For information about creating temporary security credentials, see [Compare AWS STS credentials](id_credentials_sts-comparison.md). For more information about SAML federated principals getting access to the AWS Management Console, see [Enabling SAML 2.0 federated principals to access the AWS Management Console](id_roles_providers_enable-console-saml.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

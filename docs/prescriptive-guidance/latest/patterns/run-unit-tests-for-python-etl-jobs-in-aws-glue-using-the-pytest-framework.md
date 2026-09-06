@@ -124,7 +124,3 @@ You can use CloudWatch Events to monitor your AWS Cloud resources and applicatio
 <a name="run-unit-tests-for-python-etl-jobs-in-aws-glue-using-the-pytest-framework-additional"></a>
 
 Additionally, you can deploy the AWS CloudFormation templates by using the AWS Command Line Interface (AWS CLI). For more information, see [Quickly deploying templates with transforms](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-cli-deploy.html) in the CloudFormation documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

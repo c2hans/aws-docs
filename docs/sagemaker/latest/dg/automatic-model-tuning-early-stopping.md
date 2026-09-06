@@ -51,7 +51,3 @@ Extend chainer by using the `extensions.Evaluator` class. For information, see t
 
 PyTorch and Spark
 There is no high-level support. You must explicitly write your training code so that it computes objective metrics and writes them to logs after each epoch.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -93,7 +93,3 @@ You can configure multiple redirect URLs for a single OpenID Connect (OIDC) appl
 1. In **Sign-in redirect URIs**, choose **Add URI** to add multiple URIs. Then, select **Save**.
 
 You're done with setting up your Okta application for multiple Amazon Q Business applications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

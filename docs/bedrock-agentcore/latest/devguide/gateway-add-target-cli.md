@@ -67,7 +67,3 @@ You can use the AgentCore CLI to add targets to an existing gateway with simplif
 1. Follow the remaining wizard prompts to provide the target name, endpoint or schema details, and outbound authorization configuration. The specific fields depend on the target type you selected.
 
 For more CLI examples, see the [Get started with AgentCore Gateway](gateway-quick-start.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

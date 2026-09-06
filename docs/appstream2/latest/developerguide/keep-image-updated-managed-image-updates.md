@@ -71,7 +71,3 @@ Depending on the volume of operating system updates, it might take several hours
 If the qualification process is not successful, the image builder that WorkSpaces Applications created is still deleted automatically.
 
 1. After WorkSpaces Applications creates the new image, test the image on a pre-production fleet. After you verify that your applications work as expected, update your production fleet with the new image.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

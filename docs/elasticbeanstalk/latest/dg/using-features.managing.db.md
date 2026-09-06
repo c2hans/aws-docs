@@ -237,7 +237,3 @@ The deletion policy setting determines the outcome for the database and the leng
 + If the deletion policy is set to `Retain`, the database remains operational external to the Elastic Beanstalk environment. It usually takes less than five minutes to decouple a database.
 
  If you decided to retain the database external to your Elastic Beanstalk environment, you'll need to take additional steps to configure it. For more information, see [Using Elastic Beanstalk with Amazon RDS](AWSHowTo.RDS.md). If you plan to use the database that you decouple for a production environment, verify the storage type that the database uses is suitable for your workload. For more information, see [DB Instance Storage](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Storage.html) and [Modifying a DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html) in the *Amazon RDS User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

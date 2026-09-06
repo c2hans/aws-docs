@@ -43,7 +43,3 @@ When you build your Cloud Operating Model, we recommend that you use this approa
 If you are interested in taking a similar customer-centric approach, we recommend watching Richard Halkett's [Working backwards: Amazon's approach to innovation](https://www.youtube.com/watch?v=aFdpBqmDpzM) presentation (AWS re:Invent 2020), which describes Amazon's method to driving innovation and designing new products and services.
 
 Regardless of which method you use, creating and publishing an agreed vision for the Cloud Operating Model that aligns to your targeted business outcomes is very important. The next step is to align that model to your current state of cloud adoption.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

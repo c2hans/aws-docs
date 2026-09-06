@@ -152,7 +152,3 @@ CognitoAWSCredentials credentials = new CognitoAWSCredentials (
 +  **Run the demos**: View our [sample Unity applications](https://github.com/awslabs/aws-sdk-unity-samples) that demonstrate common use cases. To run the sample apps, set up the SDK for Unity as described above, and then follow the instructions contained in the README files of the individual samples.
 +  **Read the API Reference**: View the [API Reference](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/Index.html) for the AWS Mobile SDK for Unity.
 +  **Ask questions**: Post questions on the [AWS Mobile SDK Forums](https://forums.aws.amazon.com/forum.jspa?forumID=88) or [open an issue on Github](https://github.com/aws/aws-sdk-unity/issues).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mobile SDK for Unity. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mobile` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

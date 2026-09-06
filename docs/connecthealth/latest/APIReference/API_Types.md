@@ -50,7 +50,3 @@ The following data types are supported:
 +  [TemplateSectionInstruction](API_TemplateSectionInstruction.md)
 +  [UserContext](API_UserContext.md)
 +  [WebAppConfiguration](API_WebAppConfiguration.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connecthealth` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,7 +60,3 @@ AWS IoT Core for Amazon Sidewalk has quotas that apply to device data that is tr
 When you sign up for AWS, you can get started with AWS IoT Core for Amazon Sidewalk for no charge by using the [AWS Free Tier](https://aws.amazon.com/free/).
 
 For more information about general product overview and pricing, see [AWS IoT Core pricing](https://aws.amazon.com/iot-core/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

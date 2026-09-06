@@ -142,7 +142,3 @@ You can tag the Amazon EC2 instance with any key and value you like. Just make s
 <a name="instances-ec2-configure-4-install-agent"></a>
 
 For instructions about how to install the CodeDeploy agent on the Amazon EC2 instance and verify it is running, see [Managing CodeDeploy agent operations](codedeploy-agent-operations.md), and then proceed to [Create an application with CodeDeploy](applications-create.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

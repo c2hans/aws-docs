@@ -71,7 +71,3 @@ View details about updates to AWS managed policies for the AWS Management Consol
 | [AWSManagementConsoleBasicUserAccess](#security-iam-awsmanpol-AWSManagementConsoleBasicUserAccess) – New policy | Added a new AWS managed policy that grants permissions necessary for basic AWS Management Console navigation, account color viewing, and resource discovery. | August 14, 2025 |
 | [AWSManagementConsoleAdministratorAccess](#security-iam-awsmanpol-AWSManagementConsoleAdministratorAccess) – New policy | Added a new AWS managed policy that provides full access to configure and customize the AWS Management Console. | August 14, 2025 |
 | AWS Management Console started tracking changes | AWS Management Console started tracking changes for its AWS managed policies. | August 14, 2025 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Management Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

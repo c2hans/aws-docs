@@ -32,7 +32,3 @@ AWS Migration Hub is no longer open to new customers as of November 7, 2025. For
 Your home Region can only be changed to another AWS Region that is supported by AWS Migration Hub. For a list of the supported Regions, see [AWS Migration Hub Service endpoints](https://docs.aws.amazon.com/general/latest/gr/migrationhubn.html) in the *AWS General Reference*.
 
 If you change the Migration Hub home Region, you'll need to recollect the data in the new home Region. Data collected in the old home Region doesn't migrate to the new home Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

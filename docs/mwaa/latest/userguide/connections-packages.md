@@ -47,6 +47,21 @@ You can specify the latest supported version of `apache-airflow-providers-amazon
 **Supported Apache Airflow versions:**
 
 ------
+#### [ v3.3.1 ]
+
+| Connection type | Package |
+| --- | --- |
+| AWS Connection | [apache-airflow-providers-amazon[aiobotocore]==9.34.0](https://airflow.apache.org/docs/apache-airflow-providers-amazon/9.34.0/index.html) |
+| Postgres Connection | [apache-airflow-providers-postgres==7.0.1](https://airflow.apache.org/docs/apache-airflow-providers-postgres/7.0.1/index.html) |
+| FTP Connection | [apache-airflow-providers-ftp==3.15.2](https://airflow.apache.org/docs/apache-airflow-providers-ftp/3.15.2/index.html) |
+| Fab Connection | [apache-airflow-providers-fab==3.8.0](https://airflow.apache.org/docs/apache-airflow-providers-fab/3.8.0/index.html) |
+| Celery Connection | [apache-airflow-providers-celery==3.23.1](https://airflow.apache.org/docs/apache-airflow-providers-celery/3.23.1/index.html) |
+| HTTP Connection | [apache-airflow-providers-http==6.0.5](https://airflow.apache.org/docs/apache-airflow-providers-http/6.0.5/index.html) |
+| IMAP Connection | [apache-airflow-providers-imap==3.12.1](https://airflow.apache.org/docs/apache-airflow-providers-imap/3.12.1/index.html) |
+| Common SQL | [apache-airflow-providers-common-sql==2.1.0](https://airflow.apache.org/docs/apache-airflow-providers-common-sql/2.1.0/index.html) |
+| SQLite Connection | [apache-airflow-providers-sqlite==4.3.3](https://airflow.apache.org/docs/apache-airflow-providers-sqlite/4.3.3/index.html) |
+
+------
 #### [ v3.2.1 ]
 
 | Connection type | Package |
@@ -226,7 +241,3 @@ You can specify the latest supported version of `apache-airflow-providers-amazon
 | SQLite Connection | [apache-airflow-providers-sqlite==3.2.1](https://airflow.apache.org/docs/apache-airflow-providers-sqlite/3.2.1/index.html) |
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

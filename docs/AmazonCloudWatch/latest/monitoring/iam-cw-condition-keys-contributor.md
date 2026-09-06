@@ -137,7 +137,3 @@ Follow these best practices to secure your Contributor Insights configuration.
 + **Protect sensitive fields** – Use CloudWatch Logs data protection to mask sensitive log data before Contributor Insights processes it. For more information, see [Protect sensitive log data with masking](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/mask-sensitive-log-data.html).
 + **Consider contributor key sensitivity** – Contributor keys might expose values such as IP addresses or user identifiers in rule results
 + **Review cross-account access** – Audit AWS Organizations link configurations to confirm that only intended monitoring accounts can create rules against source account log groups
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

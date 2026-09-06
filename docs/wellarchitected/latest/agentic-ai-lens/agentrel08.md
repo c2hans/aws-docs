@@ -50,7 +50,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 + [AGENTREL08-BP02 Implement agent tracing for telemetry throughout agent processing](agentrel08-bp02.md)
 + [AGENTREL08-BP03 Architect agent systems with resource isolation and contention mitigation](agentrel08-bp03.md)
 + [AGENTREL08-BP04 Track agent memory utilization metrics](agentrel08-bp04.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

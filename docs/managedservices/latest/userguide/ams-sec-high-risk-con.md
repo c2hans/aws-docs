@@ -56,7 +56,3 @@ Risk acceptance isn't required for EPS anti-malware exclusions or GuardDuty Supp
 **Managed Active Directory**
 + High\_Risk-AD-001: Provide admin rights to active director user or group
 + High\_Risk-AD-002: GPO Policies capable of reducing security posture of the account
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

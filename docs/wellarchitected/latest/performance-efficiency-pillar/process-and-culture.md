@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/performance-effic
 + [PERF05-BP05 Use automation to proactively remediate performance-related issues](perf_process_culture_automation_remediate_issues.md)
 + [PERF05-BP06 Keep your workload and services up-to-date](perf_process_culture_keep_workload_and_services_up_to_date.md)
 + [PERF05-BP07 Review metrics at regular intervals](perf_process_culture_review_metrics.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

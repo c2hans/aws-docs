@@ -44,7 +44,3 @@ AWS Security Incident Response is [HITRUST CSF certified](https://aws.amazon.com
 <a name="compliance-validation-hipaa"></a>
 
 You can use AWS Security Incident Response to monitor and respond to security events in accounts and environments that handle electronic protected health information (ePHI), including HIPAA-designated environments. By design, AWS Security Incident Response doesn't create, receive, process, store, or transmit customer data, including ePHI, in the course of performing its function. For this reason, it isn't a [HIPAA Eligible Service](https://aws.amazon.com/compliance/hipaa-eligible-services-reference/) and isn't covered under the AWS Business Associate Agreement (BAA), and it doesn't need to be to be used alongside these workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

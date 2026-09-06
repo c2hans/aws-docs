@@ -20,7 +20,3 @@ Failure to implement preventative, detective, and responsive security controls f
 
 **Note**
 AWS provides services, tools, and frameworks that can help you operate securely in the AWS Cloud. This guide aligns with and supplements the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/),  [AWS Cloud Adoption Framework (AWS CAF)](https://aws.amazon.com/cloud-adoption-framework/),  the [AWS Security Reference Architecture (AWS SRA)](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/), and other security recommendations published by AWS. The controls in this guide aren't comprehensive of all cloud security considerations, and this guide isn't intended to replace these frameworks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

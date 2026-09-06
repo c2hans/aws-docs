@@ -30,7 +30,3 @@ The carbon emissions estimates account for:
 + Non-IT equipment embodied carbon - manufacturing emissions from non-IT equipment deployed in AWS owned or operated data center facilities.
 
 The carbon emissions estimates exclude emissions associated with AWS warehouses, manufacturing facilities, and offices. These emissions are not attributable to the provision of cloud services. Any emissions stemming from sites ran in customer facilities (for example, Amazon Cloud Extension, Embedded Points of Presence, AWS Outposts sites) are not covered at this time. For more information, see the [carbon emissions methodology document](http://sustainability.aboutamazon.com/aws-customer-carbon-footprint-tool-methodology.pdf).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sustainability. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sustainability` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

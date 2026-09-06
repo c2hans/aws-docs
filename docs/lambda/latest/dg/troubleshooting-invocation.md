@@ -237,7 +237,3 @@ Verify that the ENTRYPOINT to your container image includes the absolute path as
 **Error:** *You are using an CloudFormation template, and your container ENTRYPOINT is being overridden with a null or empty value.*
 
 Review the [ImageConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-lambda-function-imageconfig.html) resource in the CloudFormation template. If you declare an `ImageConfig` resource in your template, you must provide non-empty values for all three of the properties.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

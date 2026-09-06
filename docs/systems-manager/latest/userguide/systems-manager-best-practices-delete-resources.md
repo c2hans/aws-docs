@@ -32,7 +32,3 @@ We recommend that you delete Systems Manager resources and artifacts that you no
 | SSM Agent | You can manually uninstall SSM Agent from your nodes. For more information, see the following topics.+  Linux: [Manually installing and uninstalling SSM Agent on EC2 instances for Linux](manually-install-ssm-agent-linux.md) <br />+  macOS: [Manually installing and uninstalling SSM Agent on EC2 instances for macOS](manually-install-ssm-agent-macos.md) <br />+  Windows Server: Open **Control panel** and then choose **Add/remove programs**.  |
 | State Manager | You can delete an association. For more information, see [Deleting associations](systems-manager-state-manager-delete-association.md). |
 | Systems Manager document service | You can't delete runbooks provided by AWS or AWS Support, but you can delete custom runbooks. For more information, see [Deleting custom SSM documents](deleting-documents.md). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -79,7 +79,3 @@ There are a few limitations to be aware of when upgrading your AWS Managed Micro
 + During the upgrade process, the domain controllers of your AWS Managed Microsoft AD are upgraded one at a time. This can negatively impact your performance and can cause downtime during your maintenance window.
 + The upgrade process will change the hostname of each domain controller instance, but their IP addresses will remain the same.
 + If you are using LDAPS (Lightweight Directory Access Protocol over SSL), the domain controllers will need new certificates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

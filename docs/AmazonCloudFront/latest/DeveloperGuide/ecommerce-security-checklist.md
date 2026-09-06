@@ -87,7 +87,3 @@ If your marketplace operates in specific countries, enable geo-restriction to bl
 
 **Access logging**
 Enable CloudFront standard logging or real-time logging to detect abnormal access patterns — sudden spikes in download link usage, access from unexpected regions, or repeated failed auth attempts at API endpoints.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

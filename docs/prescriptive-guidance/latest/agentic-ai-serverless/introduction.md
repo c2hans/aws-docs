@@ -60,7 +60,3 @@ AWS provides a robust suite of managed services that help teams embed intelligen
 + [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) enables you to build loosely coupled, event-driven architectures that trigger AI workflows automatically.
 + Use [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) to orchestrate multi-step AI pipelines and connect AWS services using visual workflows.
 + With [AWS IoT Greengrass](https://docs.aws.amazon.com/greengrass/v2/developerguide/what-is-iot-greengrass.html) and [Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html), you can deploy models and logic at the edge for low-latency inference in IoT and global applications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

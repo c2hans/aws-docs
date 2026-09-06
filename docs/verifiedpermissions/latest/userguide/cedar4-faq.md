@@ -184,7 +184,3 @@ Your policy store uses Cedar 2.x, which is no longer supported. See https://docs
 
 **empty set literals are forbidden in policies**
  In Cedar 2, you can use the syntax `mySet == []` to check whether a set is empty. With Cedar 4, policies using this syntax no longer validate against a schema. Replace `mySet == []` in your policy with `mySet.isEmpty()`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

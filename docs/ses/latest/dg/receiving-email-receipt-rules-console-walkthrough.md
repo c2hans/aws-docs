@@ -104,7 +104,3 @@ After you've created a rule set, you can edit both the rule set and the receipt 
   + **Edit** button will open the selected rule so that any of its parameters such as rule settings, recipient conditions, and actions can be edited.
   + **Delete** button will delete the selected rule. You will be prompted to confirm this irreversible action.
   + **Create rule** button will allow you to create and add a new rule to the current rule set.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

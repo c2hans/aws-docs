@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/securin
  Windows Server 2016 and 2019 require the Windows Application Identity service to be running to enforce AppLocker rules. Application access from WorkSpaces Applications using Microsoft AppLocker is detailed in the [AppStream Admin Guide.](https://docs.aws.amazon.com/appstream2/latest/developerguide/data-protection.html#application-access)
 
  For fleet instances joined to an Active Directory domain, use Group Policy Objects (GPOs) to deliver user and system settings to secure the users application and resource access.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

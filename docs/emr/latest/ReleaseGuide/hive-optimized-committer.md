@@ -36,7 +36,3 @@ The following basic restrictions apply to tags:
 
   `s3://warehouse/table/partition=1/000000_0` will be changed to `s3://warehouse/table/partition=1/000000_0-hadoop_20210714130459_ba7c23ec-5695-4947-9d98-8a40ef759222-1`. The `query_id` here is a combination of the username, time stamp, and UUID.
 + When custom partitions are on different file systems (HDFS, S3), this feature is automatically disabled. The default Hive commit logic will be used when enabled.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

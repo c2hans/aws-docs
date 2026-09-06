@@ -26,7 +26,3 @@ Similarly, when you attach a WAF web ACL to ALB, you will have `X-Amzn-Trace-Id`
 | X-Amzn-Trace-Id = 'Root=1-67891233-abcdef012345678912345678' | X-Amzn-Trace-Id = 'Root=1-67891233-abcdef012345678912345678' | X-Amzn-Trace-Id = 'Root=1-67891233-abcdef012345678912345678' |
 
 For useful examples of WAF queries using Athena, see [How to use Amazon Athena queries to analyze AWS WAF logs and provide the visibility needed for threat detection](https://aws.amazon.com/blogs/networking-and-content-delivery/how-to-use-amazon-athena-queries-to-analyze-aws-waf-logs-and-provide-the-visibility-needed-for-threat-detection/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Appendix.PHP
    ```
 
 1.  Remove the `memcached.ini` file added in the appropriate directory as indicated in the previous installation steps.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -130,7 +130,3 @@ For detailed information and a flowchart for troubleshooting key access, see [Tr
 1. In the identity-based policies and key policies, remove any conditions or resource references that restrict access to the key. After removing these restrictions, confirm that the principal can successfully call the API that previously failed. If successful, reapply the conditions and resource references one at a time and, after each, verify that the principal still has access. This helps you identify the condition or resource reference that is causing the error.
 
 For more information, see [Troubleshooting access denied error messages](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_access-denied.html) in the IAM documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

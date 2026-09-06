@@ -171,7 +171,3 @@ You can manually invoke the Windows Sysprep tool from the command line using the
 The double quotation marks in the command are not required if your CMD shell is already in the C:\\Program Files\\Amazon\\EC2ConfigService\\ directory.
 
 However, you must be very careful that the XML file options specified in the `Ec2ConfigService\Settings` folder are correct; otherwise, you might not be able to connect to the instance. For more information about the settings files, see [EC2Config settings files](ec2config-service.md#UsingConfigXML_WinAMI). For an example of configuring and then running Windows Sysprep from the command line, see `Ec2ConfigService\Scripts\InstallUpdates.ps1`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

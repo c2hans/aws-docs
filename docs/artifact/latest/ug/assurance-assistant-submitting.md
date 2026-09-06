@@ -33,13 +33,13 @@ Use questionnaire upload mode to submit an entire questionnaire at once. This mo
 
 1. If this is your first time using Assurance Assistant, the upload option is available directly. Otherwise, choose **Ask question** to access the submission interface.
 
-1. Choose **Choose file** and select your questionnaire. Supported format: Excel spreadsheet (XLSX), maximum 5 MB, up to 1,000 questions.
+1. Choose **Choose file** and select your questionnaire. Supported formats: Excel spreadsheet (XLSX), Word (.docx), PDF, maximum 5 MB, up to 1,000 questions.
 
 1. (Optional) Add tags as key-value pairs to help organize questionnaires and manage access.
 
 1. Choose **Submit**.
 
-1. Assurance Assistant takes you to the **Configure responses** page. Select the tabs that you want to process, then choose **Configure**.
+1. For Excel file upload, Assurance Assistant takes you to the **Configure responses** page. Select the tabs that you want to process, then choose **Configure**. For Word (.docx) and PDF files, this step is skipped and processing begins directly.
 
 1. Processing begins immediately. Assurance Assistant takes you to the details page where you can monitor the status of your questionnaire.
 
@@ -49,7 +49,3 @@ Use questionnaire upload mode to submit an entire questionnaire at once. This mo
 
 **Note**
 You can submit questions in either mode at any time. For compliance questionnaires with many related questions, bulk upload is the recommended approach.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Artifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query artifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

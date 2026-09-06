@@ -117,7 +117,3 @@ A multimodal prompt combines multiple modalities (images and text) in a single p
 ```
 
 Each image you include in a request counts towards your token usage. For more information, see [Image costs](https://docs.anthropic.com/claude/docs/vision#image-costs) in the Anthropic documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

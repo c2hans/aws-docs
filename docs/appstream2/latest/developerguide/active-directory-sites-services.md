@@ -22,7 +22,3 @@ At a high level, a basic configuration uses two existing domain controllers. Dom
 With this configuration, WorkSpaces Applications fleet A targets domain controller A as the primary, with failover to domain controller B. WorkSpaces Applications fleet B targets domain controller B as the primary, with failover to domain controller A.
 
 For more information about Microsoft Active Directory Sites and Services and the domain controller locator process, see the following Microsoft documentation: [Designing the site topology](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/designing-the-site-topology) and [How Domain Controllers Are Located in Windows](https://learn.microsoft.com/en-us/archive/technet-wiki/24457.how-domain-controllers-are-located-in-windows).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

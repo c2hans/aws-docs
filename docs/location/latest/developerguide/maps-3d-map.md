@@ -45,7 +45,3 @@ The Globe View feature provides a spherical representation of the Earth, allowin
 Use Globe View to display maps with realistic Earth curvature and global perspective. See [Create a 3D map](https://docs.aws.amazon.com/location/latest/developerguide/how-to-create-a-3d-map.html).
 
 ![](http://docs.aws.amazon.com/location/latest/developerguide/images/zoom-globe-view.gif)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

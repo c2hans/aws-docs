@@ -23,7 +23,3 @@ The following steps describe the architecture:
 1. Use purpose-built services for analytics in your data lake or data warehouse.
 
 1. Visualize and consume data using [Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) and SageMaker AI Notebooks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Reference Architecture Diagrams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query reference-architecture-diagrams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

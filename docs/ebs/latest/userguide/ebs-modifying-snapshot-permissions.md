@@ -123,7 +123,3 @@ You can use AWS CloudTrail to monitor whether a snapshot that you have shared wi
 + **SharedSnapshotVolumeCreated** — A shared snapshot is being used to create a volume.
 
 For more information about using CloudTrail, see [ Log Amazon EC2 and Amazon EBS API calls with AWS CloudTrail](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitor-with-cloudtrail.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

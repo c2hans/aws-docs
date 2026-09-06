@@ -52,7 +52,3 @@ When you enable the RDS Protection feature, GuardDuty automatically starts monit
 When RDS Protection detects a potential threat, such as an unusual pattern in a series of successful, failed, or incomplete login attempts, GuardDuty generates one or more [RDS Protection finding types](findings-rds-protection.md). Based on the finding type, it may include details about the anomalous behavior, such as [RDS login activity-based anomalies](guardduty_findings-summary.md#rds-pro-login-anomaly).
 
 GuardDuty doesn't manage your [Supported databases](#rds-pro-supported-db) or RDS login activity, or make RDS login activity available to you.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

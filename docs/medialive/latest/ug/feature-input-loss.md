@@ -95,7 +95,3 @@ You should make sure that the delivery meets the expectations of the downstream 
 For example, if the channel is a standard channel (with two redundant pipelines), the downstream system might be set up to switch to the output from the second pipeline. In this case, it's best if you set up the output to stop emitting the output.
 
 As another example, the channel might have only one pipeline. Furthermore, the downstream system might not behave well if it loses delivery from MediaLive. Therefore, it's best for you to set up to emit the output. The downstream system will remain stable, and you could set up MediaLive with a "Please stand by" slate to improve the experience for the person watching the video.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

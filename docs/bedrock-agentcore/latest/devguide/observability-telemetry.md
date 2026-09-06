@@ -85,7 +85,3 @@ This multi-tiered relationship enables several important observability capabilit
 While traces provide visibility into complete request-response cycles, spans offer deeper insights into the internal workings of those cycles. Spans reveal exactly which operations consume the most time, where errors originate, and how different components interact within a single trace. This granularity is particularly valuable when troubleshooting complex issues or optimizing performance in sophisticated agent implementations.
 
 By leveraging session, trace, and span data in your observability strategy, you can gain comprehensive insights into your agent’s behavior, performance, and effectiveness at multiple levels of detail. This multi-layered approach to observability supports continuous improvement, robust troubleshooting, and informed optimization of your agent implementations, from high-level conversation patterns down to individual operation performance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

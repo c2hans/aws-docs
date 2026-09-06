@@ -27,7 +27,3 @@ Amazon Quick on desktop shares the same core AI capabilities as the web experien
 <a name="desktop-next-steps"></a>
 
 To get started, see [Getting started](getting-started-desktop.md). If your organization uses an Enterprise account, see [Setting up Amazon Quick on desktop for enterprise deployments](desktop-enterprise-setup.md) first.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

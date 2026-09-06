@@ -81,7 +81,3 @@ AWS Transform MGN allows replication of physical, virtual or cloud-based source 
 | Debian | 10 to 11 |  Only Kernel 3.x or above are supported  |
 | Debian | 6.x to 9.x | Deprecated April 30, 2026. Effective April 30, 2026, these operating systems are no longer supported. |
 | AlmaLinux | 9.6, 9.7, 9.8, 10, 10.1, 10.2 | Before you install the agent on AlmaLinux, complete the following prerequisites:+ Run the following command with sudo privileges: <pre>$ sudo yum install elfutils-libelf-devel</pre><br />+ For UEFI-based AlmaLinux 9.8 and 10.2 systems without repository access, install `grub2-efi-x64-modules` before you run the agent installer. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

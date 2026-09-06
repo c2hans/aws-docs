@@ -110,7 +110,3 @@ The following metrics are collected from the Kubernetes API server. These metric
 | apiserver\_storage\_objects | ClusterName | The number of objects stored in etcd by the API server. |
 | apiserver\_request\_total | ClusterName | The total number of requests received by the API server. |
 | apiserver\_request\_duration\_seconds | ClusterName | The latency of API server requests, in seconds. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

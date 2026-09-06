@@ -15,7 +15,3 @@ Implement observability in your workload so that you can understand its state an
 + [OPS04-BP03 Implement user experience telemetry](ops_observability_customer_telemetry.md)
 + [OPS04-BP04 Implement dependency telemetry](ops_observability_dependency_telemetry.md)
 + [OPS04-BP05 Implement distributed tracing](ops_observability_dist_trace.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

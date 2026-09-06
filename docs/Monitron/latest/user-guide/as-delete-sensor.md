@@ -34,7 +34,3 @@ Deleting a sensor prevents Amazon Monitron from collecting more data with it. It
 <a name="delete-sensor-web"></a>
 + Choose **Delete** from the **Sensor details** tab.
 ![Asset management interface showing sensor details for Position name 3 with a warning status.](http://docs.aws.amazon.com/Monitron/latest/user-guide/images/web-delete-sensor-1.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -61,7 +61,3 @@ You can deploy AWS WAF [rule groups](https://docs.aws.amazon.com/waf/latest/deve
 + [Known bad inputs](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-baseline.html#aws-managed-rule-groups-baseline-known-bad-inputs) – This rule group contains rules designed to block request patterns that are known to be invalid and are associated with exploitation or discovery of vulnerabilities.
 + [Bot Control](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-bot.html) – This rule group contains rules designed to manage requests from bots, which can consume excess resources, skew business metrics, cause downtime, and perform malicious activities.
 + [Account takeover prevention (ATP)](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.html) – This rule group contains rules designed to prevent malicious account takeover attempts. This rule group inspects the login attempts sent to your application's login endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

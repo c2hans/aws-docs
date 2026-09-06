@@ -266,7 +266,3 @@ Valid values are 1 – 2^32. The default value is 2^32 (messages).
 **max\_bytes\_encrypted (optional)**
 Determines the maximum number of bytes that a cached entry can encrypt.
 Valid values are 0 and 1 – 2^63 - 1. The default value is 2^63 - 1 (messages). A value of 0 lets you use data key caching only when you are encrypting empty message strings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

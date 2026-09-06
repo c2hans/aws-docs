@@ -162,7 +162,3 @@ After connecting GitLab to AWS Security Agent:
 + Enable **Code remediation** to allow AWS Security Agent to submit merge requests with vulnerability fixes (see [Enable users to start remediation of penetration test and code review findings](enable-remediate-findings.md))
 + Create threat models from connected projects in the web application (see [Enable threat modeling](enable-threat-model.md))
 + For privately hosted GitLab instances, see [Connect AWS Security Agent to GitLab Self-Managed](connect-gitlab-self-managed.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

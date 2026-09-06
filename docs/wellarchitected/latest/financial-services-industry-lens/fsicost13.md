@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
  Establish guardrails that enforce token quotas, model tier limits, and usage budgets per project, keeping generative AI testing compliant and cost-efficient. For partner or consulting access, apply fine-grained IAM roles and service control policies (SCPs) to segregate environments and avoid cross-account spend leakage.
 
  Automate cleanup of idle notebooks, vector stores, and test embeddings using AWS Lambda or Amazon EventBridge rules, verifying that sandbox environments incur zero residual cost post-engagement.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

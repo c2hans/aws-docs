@@ -18,7 +18,3 @@ A data warehouse in Amazon Redshift consists of the following core architecture 
 The following diagram shows how the architecture components of an Amazon Redshift data warehouse work together to accelerate queries.
 
 ![The leader node and compute nodes in an Amazon Redshift cluster processing a query from a client.](http://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifecycle-redshift/images/guide-img/84453e49-6013-472a-b5b1-062248897e49/images/a5dbbdbf-6551-4d39-82b7-0a8e0d5a5cde.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

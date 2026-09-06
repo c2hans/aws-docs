@@ -113,6 +113,10 @@ The following instance types support multiple network cards. For information abo
 | hpc7a.48xlarge | 2 |
 | hpc7a.96xlarge | 2 |
 | hpc8a.96xlarge | 2 |
+| i7ie.48xlarge | 2 |
+| i7ie.metal-48xl | 2 |
+| i8ge.48xlarge | 2 |
+| i8ge.metal-48xl | 2 |
 | m6idn.32xlarge | 2 |
 | m6idn.metal | 2 |
 | m6in.32xlarge | 2 |
@@ -161,7 +165,3 @@ The following instance types support multiple network cards. For information abo
 | u7in-24tb.224xlarge | 2 |
 | u7in-32tb.224xlarge | 2 |
 | u7inh-32tb.480xlarge | 2 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

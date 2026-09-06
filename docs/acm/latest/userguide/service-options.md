@@ -26,7 +26,3 @@ Use ACME when you need publicly trusted certificates for customer-managed infras
 Use AWS Private CA directly when you need private certificates and want full control over the private key. You create your own CA hierarchy, generate your own private key and CSR, and call `IssueCertificate`. Certificates issued by a private CA are not publicly trusted and cannot be used on the public internet. For more information, see the [AWS Private CA User Guide](https://docs.aws.amazon.com/privateca/latest/userguide/PcaWelcome.html).
 
 *Both ACM and ACME certificate automation are covered in this guide. You are in the right place.*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -88,7 +88,3 @@ You can create a Edge Manager packaging job using the Amazon SageMaker AI consol
 ![Example Output configuration page in the console.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/smith/create-device-fleet-output-filled.png)
 
 1. Choose the name of your device fleet to be redirected to the device fleet details. This page displays the name of the device fleet, ARN, description (if you provided one), date the fleet was created, last time the fleet was modified, Amazon S3 bucket URI, AWS KMS key ID (if provided), AWS IoT alias (if provided), and IAM role. If you added tags, they appear in the **Device fleet tags** section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

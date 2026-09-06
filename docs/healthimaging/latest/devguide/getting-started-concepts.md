@@ -38,7 +38,3 @@ For more information, see [Getting image set metadata](get-image-set-metadata.md
 <a name="concept-image-frame"></a>
 
 An image frame is the pixel data that exists within an [image set](#concept-image-set) to make up a 2D medical image. Some files retain their original transfer syntax encoding during import, while others are transcoded. Amazon Web Services data stores can be configured to transcode lossless image frames to either High-Throughput JPEG 2000 (HTJ2K) lossless or JPEG 2000 lossless. If an image frame is encoded in HTJ2K or JPEG 2000, it must be decoded prior to viewing in an image viewer. For more information, see [Supported transfer syntaxes](supported-transfer-syntaxes.md), [Getting image set pixel data](get-image-frame.md), and [Image frame decoding libraries](reference-libraries.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

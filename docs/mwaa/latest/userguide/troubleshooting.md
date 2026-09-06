@@ -54,7 +54,3 @@ This chapter describes common issues and errors you can encounter when using Apa
     + [I get `Executor reports task instance %s finished (%s) although the task says its %s` in my DAG processing logs](t-cloudwatch-cloudtrail-logs.md#long-running-tasks)
     + [Triggerer logs do not appear in the Airflow UI](t-cloudwatch-cloudtrail-logs.md#t-triggerer-logs-missing)
     + [I get `Could not read remote logs from log_group: airflow-*{*environmentName}-Task log_stream:* {*DAG_ID}/*{*TASK_ID}/*{*time}/*{*n}.log.` in my task logs](t-cloudwatch-cloudtrail-logs.md#t-task-fail-permission)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

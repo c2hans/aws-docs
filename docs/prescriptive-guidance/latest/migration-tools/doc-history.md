@@ -14,7 +14,3 @@ The following table describes significant changes to this guide.
 | Datadog and RiverMeadow updates | We updated the [Application mobility tools - RiverMeadow](app-mobility-rivermeadow.md), [Business tools - Datadog](business-case-datadog.md), and [Discovery tools - Datadog](discovery-datadog.md) sections. | June 19, 2026 |
 | Added Concierto.cloud | We added Concierto.cloud to the [Discovery tools](discovery.md), [Business case tools](business-case.md), and [Application mobility tools](app-mobility.md) sections. | November 17, 2025 |
 | Initial publication | We migrated the information from an AWS web page to a comprehensive guide. | March 21, 2025 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

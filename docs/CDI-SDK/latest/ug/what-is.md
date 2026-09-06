@@ -45,7 +45,3 @@ The underlying technology of the Cloud Digital Interface is a live video SDK bui
  For more information on EFA, see [Elastic fabric adapter](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
 
 ![CDI SDK](http://docs.aws.amazon.com/CDI-SDK/latest/ug/images/CDISDK.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Digital Interface Software Development Kit User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query CDI-SDK` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

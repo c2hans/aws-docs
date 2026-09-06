@@ -129,7 +129,3 @@ QuEra offers neutral-atom based devices that can run Analog Hamiltonian Simulati
 One can program these devices in the paradigm of Analog Hamiltonian Simulation by prescribing the layout of the qubit register and the temporal and spatial dependence of the manipulating fields. Amazon Braket provides utilities to construct such programs through the AHS module of the python SDK, `braket.ahs`.
 
 For more information, see the [Analog Hamiltonian Simulation example notebooks](https://github.com/aws/amazon-braket-examples/tree/main/examples/analog_hamiltonian_simulation) or the [Submit an analog program using QuEra's Aquila](braket-quera-submitting-analog-program-aquila.md) page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ The following table describes the documentation for this release of AWS Elementa
 | [New options for enabling the OCR conversion feature](install-lv-ig-install-sw.md) | The installer now includes more options for enabling this feature, specifically to support setup on a node that doesn't have access to the internet. | December 6, 2021 |
 | [Enabling the OCR conversion feature](about-lv-ig.md) | The guide has been revised to include information about enabling the OCR conversion feature, on both qualified hardware and on a VM. | November 19, 2021 |
 | [Cross-version release of the guide](about-lv-ig.md) | This guide has been modified so that it isn't for a specific version of Elemental Live. The installation procedure doesn't change from version to version. | November 2, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

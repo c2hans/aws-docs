@@ -124,7 +124,3 @@ For detailed information and examples about how to grant Amazon S3 access, see t
 + [Example walkthroughs: Managing access](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-walkthroughs-managing-access.html) in the *Amazon S3 User Guide*.
 + [How can I provide cross-account access to objects that are in Amazon S3 buckets?](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-s3/) in the AWS Knowledge Center.
 + [Configure cross-account access in Athena to Amazon S3 buckets](cross-account-permissions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

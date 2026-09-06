@@ -33,7 +33,3 @@ Amazon Redshift doesn't directly support query catalog objects that are part of 
 Amazon Redshift cross-database queries with three-part notation don't support metadata tables under the schemas `information_schema` and `pg_catalog` because these metadata views are specific to a database.
 
 1. (Optional) Filter the list of tables or views for the schema that you selected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

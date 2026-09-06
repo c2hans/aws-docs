@@ -145,7 +145,3 @@ The following diagram shows the relationship between these states.
 Periodically, AWS checks all PENDING event sources. Any event sources that are in a PENDING state for over 7 days are automatically deleted. This feature addresses two issues:
 + A partner customer can make a mistake, by sharing events with a variety of AWS accounts that they do not own. This could confuse the AWS customer by presenting them with a large list of event sources, most of which are irrelevant or malicious. Automatic expiration helps drastically reduce the noise.
 + A partner does not want to send events that no one is listening to. Automatic expiration allows AWS to give partners a definitive response that no one is listening.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

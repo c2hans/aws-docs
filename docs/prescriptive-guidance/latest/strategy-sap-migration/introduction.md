@@ -17,7 +17,3 @@ Among the migration strategies explained in the blog post [6 Strategies for Migr
 <a name="overview"></a>
 
 This document is designed to introduce senior SAP stakeholders in an enterprise, such as chief information officers (CIOs), chief digital officers (CDOs), vice presidents (VPs), and directors of enterprise application teams, SAP/ERP Competence Centers, and IT infrastructure teams, to the AWS migration methodology for SAP workloads. The goal is to help them determine a strategy for moving their SAP workloads to AWS in order to achieve critical business objectives. As such, this document doesn't focus on technical details, although it can be used by technical consultants, solutions architects, and other staff for planning and communications. The document includes links to deeper technical content on SAP technologies and migration to AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

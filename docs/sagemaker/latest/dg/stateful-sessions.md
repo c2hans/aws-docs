@@ -125,7 +125,3 @@ The following example notebook demonstrates how to implement the container for a
 [LLaVA stateful inference with SageMaker AI](https://github.com/aws-samples/sagemaker-genai-hosting-examples/blob/main/LLava/torchserve/workspace/llava_stateful_deploy_infer.ipynb)
 
 The notebook uses the [LLaVA: Large Language and Vision Assistant](https://github.com/haotian-liu/LLaVA/tree/main) model, which accepts images and text prompts. The notebook uploads an image to the model, and then it asks questions about the image without having to resend the image for every request. The model container uses the TorchServe framework. It caches the image data in GPU memory.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

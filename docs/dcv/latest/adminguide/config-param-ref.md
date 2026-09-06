@@ -296,7 +296,3 @@ The **Reload context** column in each table indicates when the parameter is relo
 | --- | --- | --- | --- | --- |
 | disable-display-sleep | true or false - DWORD (32-bit) | session | Linux: true - Windows: 1 | Prevent display from entering power-saving mode — Specifies whether to prevent the display from entering power-saving mode. — Available since version [2017.0-4100](doc-history-release-notes.md#release.2017.0-4100).  |
 | printer | string | session | '' | Printer to be set as default — Specifies the name of the virtual DCV printer. The name is used to change the default printer on the system. If set to an empty string, DCV will not change the current default printer. Deprecated: use 'file-printer-name' of section 'printer'. — Available since version [2017.0-4100](doc-history-release-notes.md#release.2017.0-4100).  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

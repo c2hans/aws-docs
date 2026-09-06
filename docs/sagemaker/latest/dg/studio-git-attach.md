@@ -17,7 +17,3 @@ The following topics show how to attach Git repo URLs to a domain or user profil
 + [Attach a Git Repository from the AWS CLI for Amazon SageMaker Studio Classic](studio-git-attach-cli.md)
 + [Attach a Git Repository from the SageMaker AI Console for Amazon SageMaker Studio Classic](studio-git-attach-console.md)
 + [Detach Git Repos from Amazon SageMaker Studio Classic](studio-git-detach.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

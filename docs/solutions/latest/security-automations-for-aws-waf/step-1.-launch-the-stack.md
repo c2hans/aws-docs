@@ -36,7 +36,3 @@ In addition to the `Log Parser` and `IP Lists Parser` AWS Lambda functions, this
 When using this solution, you will see all functions in the AWS Lambda console, but only the three primary solution functions are regularly active. Don’t delete the other two functions; they are necessary to manage associated resources.
 
 To see details about the stack resources, choose the **Outputs** tab. This includes the **BadBotHoneypotEndpoint** value. Remember this value because you will be used it in [Embed the Honeypot link in your web application](embed-the-honeypot-link-in-your-web-application-optional.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Automations for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

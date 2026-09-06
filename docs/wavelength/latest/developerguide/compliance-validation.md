@@ -20,7 +20,3 @@ AWS Wavelength currently supports these certifications and standards:
 + Payment Card Industry Data Security Standard (PCI DSS)
 
 For information about your compliance responsibility when using Amazon EC2, see [Compliance validation for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/compliance-validation.html) in the *Amazon EC2 User Guide*. For more information about compliance, see [AWS Compliance](https://aws.amazon.com/compliance/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wavelength. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wavelength` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

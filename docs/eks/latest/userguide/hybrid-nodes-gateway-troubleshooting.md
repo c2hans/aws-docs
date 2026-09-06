@@ -29,7 +29,7 @@ Pods running on hybrid nodes are not reachable from resources in the VPC, such a
    ```
    aws ec2 describe-route-tables \
      --route-table-ids {{ROUTE_TABLE_ID}} \
-     --query "RouteTables[].Routes[?DestinationCidrBlock=='[.replaceable]`POD_CIDR`']"
+     --query "RouteTables[].Routes[?DestinationCidrBlock=='POD_CIDR']"
    ```
 
    If routes are missing, check the gateway logs for route table errors. If routes point to the wrong ENI, a failover may not have completed successfully.
@@ -251,7 +251,3 @@ The following table lists error messages you may see in the gateway pod logs and
 +  [Get started with EKS Hybrid Nodes gateway](hybrid-nodes-gateway-getting-started.md) — Prerequisites and installation instructions.
 +  [Amazon EKS Hybrid Nodes gateway configuration reference](hybrid-nodes-gateway-configuration.md) — Complete reference for Helm values, CLI flags, and environment variables.
 +  [Amazon EKS Hybrid Nodes gateway operations](hybrid-nodes-gateway-operations.md) — Monitoring, failover behavior, and scaling guidance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

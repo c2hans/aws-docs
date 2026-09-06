@@ -13,7 +13,3 @@ X-Ray SDK/Daemon Maintenance Notice – On February 25th, 2026, the AWS X-Ray SD
 + [AWS X-Ray SDK for Java](xray-sdk-java.md) – A set of libraries for generating and sending traces to X-Ray via the [X-Ray daemon](xray-daemon.md).
 
  For more information, see [Choosing between the AWS Distro for OpenTelemetry and X-Ray SDKs](xray-instrumenting-your-app.md#xray-instrumenting-choosing).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

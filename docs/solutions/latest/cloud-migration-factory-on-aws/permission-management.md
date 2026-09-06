@@ -37,7 +37,3 @@ For each schema or entity within AWS CMF an administrator can define a policy th
 <a name="roles"></a>
 
 Roles allow one or more policies to be assigned to one or more groups. The combination of all policies assigned to a role provides access permissions. Roles can be created based on job roles or functions within the project or organization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

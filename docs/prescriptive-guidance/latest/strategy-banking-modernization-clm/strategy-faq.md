@@ -29,7 +29,3 @@ The solution is designed to be adaptable and can integrate with any legacy banki
 <a name="can-i-customize-the-onboarding-dialog-.5d5b29b4-3818-595f-8a81-a313e20ac09c"></a>
 
 Yes, you can customize the chatbot dialog to fit your use case and targeted dialog sequence. For more information, see [QnA Bot on AWS](https://aws.amazon.com/solutions/implementations/aws-qnabot/) in the AWS Solutions Library.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

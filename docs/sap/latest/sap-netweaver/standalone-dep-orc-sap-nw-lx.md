@@ -96,7 +96,3 @@ If you choose to install SAP Oracle database with high availability and disaster
 <a name="step6-standalone-dep-orc-sap-nw-lx"></a>
 
 You are now ready to install the SAP Oracle software on your Amazon EC2 instances. For more information, see the Oracle Database Software Installation section of your SAP NetWeaver installation guide. Locate your installation guide on the [Guide Finder for SAP NetWeaver](https://help.sap.com/viewer/nwguidefinder). Instructions are available for all supported Oracle database versions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

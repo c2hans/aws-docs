@@ -12,7 +12,3 @@ The AWS CloudHSM cluster uses the same key for quorum authentication and for mul
 + If you remove the MFA requirement or change the password for an MFA user who is also a quorum authentication user, *but you still want that user to participate in quorum authentication*, then you must register that user again as a Quorum (MofN) user.
 
 For more information about quorum authentication, see [Manage quorum authentication (M of N)](quorum-auth-chsm-cli.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

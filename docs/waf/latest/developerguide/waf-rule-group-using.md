@@ -41,7 +41,3 @@ The following are examples of the temporary inconsistencies that you might notic
 + After you add a rule group to a protection pack (web ACL), the new rule group rules might be in effect in one area where the protection pack (web ACL) is used and not in another.
 + After you change a rule action setting, you might see the old action in some places and the new action in others.
 + After you add an IP address to an IP set that is in use in a blocking rule, the new address might be blocked in one area while still allowed in another.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

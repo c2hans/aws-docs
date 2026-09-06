@@ -38,7 +38,3 @@ We recommend that you refrain from modifying the streams. Doing so can cause une
 <a name="perms-audio-streams"></a>
 
 If your business is using IAM permissions, your AWS admin will need to grant permissions to IAM roles which need to retrieve data from Kinesis Video Streams. They will need to grant them full access permissions for Kinesis Video Streams and AWS Key Management Service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

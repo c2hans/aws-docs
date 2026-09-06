@@ -46,7 +46,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-pers
 +  Establish processes for aligning on business goals and opportunities, assessing their value, designing analytics solutions, developing, testing, and deploying faster than ever before.
 +  Democratize data through thoughtful data governance so that data is treated as a business asset, there is a single source of truth for historical, real time data feeds, and information about the outcomes of decisions made in the past. This enables frictionless insights.
 +  Develop standards, methods, and tools for data sharing across different business teams so that new data products can be developed with maximum independence while maintaining adherence to business policies and procedures.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

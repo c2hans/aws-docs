@@ -18,7 +18,3 @@ Accounts have a default VPC. All new clusters are created in the default VPC unl
 + [Create a dual-stack VPC for use with a DocumentDB cluster](docdb-vpc-create-dual-stack.md)
 
 Following, you can find a discussion about VPC functionality relevant to Amazon DocumentDB clusters. For more information about Amazon VPC, see the [Amazon VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

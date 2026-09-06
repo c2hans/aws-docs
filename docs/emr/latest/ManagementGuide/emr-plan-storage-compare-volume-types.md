@@ -15,7 +15,3 @@ Here is a comparison of cost between gp2 and gp3 volumes in the US East (N. Virg
 | Default/Baseline throughput | 125 MiB/s | Throughput limit is between 128 MiB/s and 250 MiB/s, depending on the volume size. |
 | Max throughput/volume | 2,000 MiB/s | 250 MiB/s |
 | Price | $0.08/GiB-month 3,000 IOPS free and $0.005/provisioned IOPS-month over 3,000; 125 MiB/s free and $0.04/provisioned MiB/s-month over 125MiB/s | $0.10/GiB-month |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

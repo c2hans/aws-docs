@@ -533,7 +533,3 @@ The `start-change-set` command will return a `ChangeSetId` value. You can monito
 <a name="securing-software-downloads"></a>
 
 To safeguard ISV software intellectual property and ensure stable, consistent software delivery to AWS Marketplace buyers, AWS Marketplace automatically parses `S3Download` and `WebDownload` action modules in your component. The referenced files are then securely stored in a private Amazon S3 bucket managed by AWS Marketplace. To opt out of this ingestion process and manage software downloads independently, run bash scripts that use the `wget` or `curl` download commands.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

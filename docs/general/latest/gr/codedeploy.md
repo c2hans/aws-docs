@@ -133,7 +133,3 @@ These endpoints support IPv4 only.
 | Traffic that can be shifted in one increment during an AWS Lambda deployment | Each supported Region: 99 | No | Maximum percentage of traffic that can be shifted in one increment during an AWS Lambda deployment |
 
 For more information, see [Quotas in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/limits.html) in the *AWS CodeDeploy User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -120,7 +120,3 @@ Associate your service with a service network so that clients can communicate wi
 1. When you have finished reviewing or editing your configuration, choose **Create VPC Lattice service**.
 
 1. If you specified a custom domain name for the service, you must configure DNS routing after the service is created. For more information, see [Configure a custom domain name for your VPC Lattice service](service-custom-domain-name.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

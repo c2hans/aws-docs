@@ -160,7 +160,3 @@ RDS creates a new MySQL DB instance with a custom parameter groupand new option 
 In this tutorial, you configured a MySQL DB instance with tailored settings using a custom parameter and a new option group. This newly created MySQL DB instance manages the user password lifetime by using the parameter `default_password_lifetime`. This DB instance also disconnects users that connect with an expired password by using the parameter `disconnect_on_expired_password`. You also use the option `MariaDB Audit Plugin` to keep track of server activity. To optimize your database, you can apply additional setting in your custom parameter group and add options.
 
  After you have finished creating your customized DB instance, you should delete your resources to avoid incurring unwanted costs. To delete a DB instance, follow the instructions in  [Deleting a DB instance](USER_DeleteInstance.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

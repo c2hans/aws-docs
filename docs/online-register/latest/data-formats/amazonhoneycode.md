@@ -20,7 +20,3 @@ Amazon Honeycode provides the following APIs for data retrieval.
 | <a name="honeycode-ListTeamAssociations"></a>[ListTeamAssociations](https://docs.aws.amazon.com/honeycode/latest/UserGuide/team-association.html#list-team-associations) | List all pending and approved team associations with your AWS Account | List |
 | <a name="honeycode-ListTenants"></a>[ListTenants](https://docs.aws.amazon.com/honeycode/latest/UserGuide/tenant.html#list-tenants) | List all tenants of Amazon Honeycode for your AWS Account | List |
 | <a name="honeycode-QueryTableRows"></a>[QueryTableRows](https://docs.aws.amazon.com/honeycode/latest/UserGuide/API_QueryTableRows.html) | Query the rows of a table using a filter | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ Follow these steps to filter findings on the Amazon Macie console by applying a 
 1. To apply a different filter rule, repeat step 3.
 
 After you apply a filter rule, you can quickly remove all of its filter criteria from your view. To do this, choose the **X** in the **Filter criteria** box.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

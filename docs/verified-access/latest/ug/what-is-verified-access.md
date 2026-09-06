@@ -29,7 +29,3 @@ This guide describes how to use the AWS Management Console to create, access, an
 <a name="verified-access-pricing"></a>
 
 You are charged hourly for each application on Verified Access, and you are charged for the amount of data processed by Verified Access. For more information, see [AWS Verified Access pricing](https://aws.amazon.com/verified-access/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Verified Access. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verified-access` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ You can also use custom widgets on your own website by using the CloudWatch dash
 + [Interactivity in the custom widget in CloudWatch](add_custom_widget_dashboard_interactivity.md)
 + [Creating a custom widget for a CloudWatch dashboard](add_custom_widget_dashboard_create.md)
 + [Sample custom widgets for a CloudWatch dashboard](add_custom_widget_samples.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,7 +59,3 @@ The previous section introduced the CCoE tenets. Using some questions, this sect
 + **Incentivizing innovation** – Think about how to incorporate an incentive mechanism to encourage CCoE resources to innovate continuously.
 + **Performance management of CCoE resources** – The resources who are part of your CCoE should be able to grow within your organization while being part of the CCoE. Review your current performance-management practices in light of the roles that CCoE resources are expected to perform, and make adjustments as needed.
 + **Recognition of CCoE resources** – Establish a plan for recognizing performance and success within this part of the organization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -246,7 +246,3 @@ The following table describes the documentation for this release of Amazon DCV S
 | Amazon DCV Version 2021.1 | Amazon DCV Session Manager has been updated for Amazon DCV 2021.1. For more information, see [2021.1-10557— May 31, 2021](#sm-2021.1-10557). | May 31, 2021 |
 | Amazon DCV Version 2021.0 | Amazon DCV Session Manager has been updated for Amazon DCV 2021.0. For more information, see [2021.0-10242— April 12, 2021](#sm-2021.0-10242). | April 12, 2021 |
 | Initial release of Amazon DCV Session Manager | The first publication of this content. | November 11, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

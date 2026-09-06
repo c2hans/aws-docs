@@ -21,7 +21,3 @@ Complete the following procedure to view guest users a network user communicated
 
 1. To view guest users for a specific month, select the corresponding month from the drop-down menu.
 ![The Guest User drop-down menu.](http://docs.aws.amazon.com/wickr/latest/adminguide-classic/images/guest-user-list-drop-down.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

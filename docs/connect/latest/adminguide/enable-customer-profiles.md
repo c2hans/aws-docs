@@ -191,7 +191,3 @@ Your agents can [create new customer profiles](ag-cp-create.md) and view contact
 1. [Integrate with external applications that profile customer profile data (optional)](integrate-external-apps-customer-profiles.md).
 
 1. [Enable Identity Resolution to identify two or more similar profiles, and consolidate them](use-identity-resolution.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

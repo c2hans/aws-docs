@@ -64,7 +64,3 @@ Replicas can have the following replication status values:
 + **Inconsistent**—The replica is out of sync with the primary canary. This can occur if a propagation failed. You can retry by updating the canary again.
 
 The overall *ReplicationState* on the primary canary shows the aggregate state across all replicas. If any replica is `InProgress`, the overall state is `InProgress`. If any replica is `Inconsistent`, the overall state is `Inconsistent`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

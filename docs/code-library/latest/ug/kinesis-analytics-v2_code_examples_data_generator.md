@@ -20,7 +20,3 @@ The following code examples show how to use Managed Service for Apache Flink wit
 + [Generate a stream with stock ticker data](kinesis-analytics-v2_example_kinesis-analytics-v2_DataGenerator_StockTicker_section.md)
 + [Generate a stream with two data types](kinesis-analytics-v2_example_kinesis-analytics-v2_DataGenerator_TwoRecordTypes_section.md)
 + [Generate a stream with web log data](kinesis-analytics-v2_example_kinesis-analytics-v2_DataGenerator_WebLog_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

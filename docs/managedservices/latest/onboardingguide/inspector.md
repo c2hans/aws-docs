@@ -33,7 +33,3 @@ There are no prerequisites or dependencies to use Amazon Inspector Classic in yo
 You can now use the new Amazon Inspector in your AMS account.
 
 For Amazon Inspector Classic, the `customer-inspector-admin-role-ssm-inspector-agent-policy` and `AmazonInspectorFullAccess` were required. However, there has been an update to the SSPS role `customer-inspector-admin-role`, which now includes an additional `policyAmazonInspector2FullAccess`. This new policy allows API permissions for the new version of Amazon Inspector.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

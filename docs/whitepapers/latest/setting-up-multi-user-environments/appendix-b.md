@@ -131,7 +131,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user
 
 ------
 +  For instances with a student tag, allows students to restart, stop, reboot, attach volumes, and detach volumes. If the professor or teaching assistant applies a student tag with the value being the IAM user name of specific students to specific instances, then those students can stop, reboot, attach volumes to, and detach volumes to those instances. They can also start instances that they stopped (that still have the student tag on them), but they can’t start new ones.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

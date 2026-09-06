@@ -105,7 +105,3 @@ The update of each node in the cluster takes several minutes. Wait for the updat
    ```
 
 1. (Optional) Verify that you’re using the latest version of the [Amazon VPC CNI plugin for Kubernetes](https://github.com/aws/amazon-vpc-cni-k8s). You might need to update your Amazon VPC CNI plugin for Kubernetes version to use the latest supported instance types. For more information, see [Assign IPs to Pods with the Amazon VPC CNI](managing-vpc-cni.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

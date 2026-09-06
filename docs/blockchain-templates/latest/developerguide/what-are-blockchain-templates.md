@@ -48,7 +48,3 @@ Depending on the options you select, AWS Blockchain Templates can use the follow
 + **Amazon ECS**—Orchestrates container deployment among EC2 instances in a cluster for your blockchain network, if you choose to use it. For more information, see the [Amazon Elastic Container Service Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/).
 + **Amazon VPC**—Provides network access for the Ethereum resources that you create. You can customize configuration for accessibility and security. For more information, see the [Amazon VPC Developer Guide](https://docs.aws.amazon.com/AmazonVPC/latest/DeveloperGuide/).
 + **Application Load Balancing**—Serves as a single point of contact for access to available user interfaces and internal service discovery when using Amazon ECS as a container platform. For more information, see [What is an Application Load Balancer?](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html) in the *User Guide for Application Load Balancers.*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Blockchain Templates. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query blockchain-templates` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -61,7 +61,3 @@ KEDA provides the following key features:
 + **Support for multiple event sources** – KEDA is compatible with a wide range of event sources, including popular messaging platforms like RabbitMQ, Apache Kafka, and others. Because of this adaptability, you can customize scaling to fit your unique event-driven architecture.
 + **Custom scalers** – Using custom scalers, you can designate specific metrics that KEDA can use to initiate scaling actions in response to specific business logic or requirements.
 + **Declarative configuration** – In line with Kubernetes principles, you can use KEDA to describe scaling behavior declaratively by using Kubernetes custom resources to define how scaling should happen.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

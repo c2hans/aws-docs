@@ -118,7 +118,3 @@ Become familiar with additional HealthOmics tools that AWS provides:
 + Nextflow linter – [HealthOmics linter for Nextflow](https://gallery.ecr.aws/aws-genomics/linter-rules-for-nextflow)
 + HealthOmics Amazon ECR helper tool – [Amazon ECR helper tool for HealthOmics](https://github.com/aws-samples/amazon-ecr-helper-for-aws-healthomics)
 + HealthOmics tools on GitHub – [Tools for working with HealthOmics](https://github.com/awslabs/amazon-omics-tools) (Transfer manager, URI parser, Omics rerun, Run analyzer).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

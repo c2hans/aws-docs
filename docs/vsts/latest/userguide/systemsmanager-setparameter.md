@@ -77,7 +77,3 @@ If the parameter type is set to *Secure string*, identifies the customer-provide
 This task requires permissions to call the following AWS service APIs (depending on selected task options, not all APIs may be used):
 + ssm:GetParameter
 + ssm:PutParameter
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Microsoft Azure DevOps. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vsts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

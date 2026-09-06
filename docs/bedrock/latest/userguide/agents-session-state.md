@@ -173,7 +173,3 @@ To modify the retrieval configuration of knowledge bases that are attached to yo
 + **Search type** – Whether the knowledge base searches only vector embeddings (`SEMANTIC`) or both vector embeddings and raw text (`HYBRID`). Use the `overrideSearchType` field.
 + **Maximum number of retrieved results** – The maximum number of results from query retrieval to use in the response.
 + **Metadata and filtering** – Filters that you can configure to filter the results based on metadata attributes in the data source files.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

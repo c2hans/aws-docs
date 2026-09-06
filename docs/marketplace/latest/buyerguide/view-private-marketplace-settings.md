@@ -20,7 +20,3 @@ You must use the management account of your organization with a role or user tha
 1. Check the values for **Service-linked role** and **Trusted access**:
    + If they show **Successfully created**, your organization has created an integration for Private Marketplace.
    + If they show **Not created**, your organization has not created an integration for Private Marketplace.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

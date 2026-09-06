@@ -46,7 +46,3 @@ The filter options depend on the agent's permissions:
 By default, the Worklist app shows contacts created in the last 2 weeks. To see older contacts, use the **Time range** filter to choose a date range. You can choose any date range within the past 90 days.
 
 ![The Worklist app showing the Time range filter for choosing contact history date ranges.](http://docs.aws.amazon.com/connect/latest/adminguide/images/worklist-time-range-filter.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

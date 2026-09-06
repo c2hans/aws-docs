@@ -33,7 +33,3 @@ If you stop a Dev Environment that's associated with a deleted VPC connection, i
 
 **Note**
 Compute use is billed only while the Dev Environment is running, but storage use is billed for the entire time that the Dev Environment exists. Stop your Dev Environment when it is not in use to stop compute billing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

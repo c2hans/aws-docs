@@ -333,7 +333,3 @@ In the following steps, you clean up the resources you created in this tutorial.
 Congratulations\! You have published a .NET core web application to your Windows Server 2022 instance in Amazon Lightsail.
 
 Amazon Lightsail is a great choice to develop, build, and deploy a variety of applications like content management systems, websites, and other platforms.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

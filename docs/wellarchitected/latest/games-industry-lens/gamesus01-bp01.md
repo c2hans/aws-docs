@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Classify game data by type, retention needs, and access frequency, tagging data to distinguish between short-term and long-term storage requirements.
 +  Use Amazon Aurora for transactional data, DynamoDB for real-time player data, DocumentDB for semi-structured data, and ElastiCache for low-latency caching of time-critical game information.
 +  Store game assets, logs, and user-generated content in Amazon S3, selecting appropriate storage classes (for example, Intelligent-Tiering, One Zone, and Glacier) based on access patterns and archive needs, and use EBS for game server binaries and configurations with regular snapshot management.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

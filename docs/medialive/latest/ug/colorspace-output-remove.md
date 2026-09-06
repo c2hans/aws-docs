@@ -11,7 +11,3 @@ Read this section if you set up one or more MediaLive outputs to [pass through t
 | --- | --- |
 | Content in any color space that MediaLive supports<br />Content with no color space metadata | +  Doesn't touch the color space or brightness (the pixel values) in the output. <br />+  Removes the color space metadata. The output won't contain any color space metadata, brightness metadata, or display metadata. |
 | Content marked with an unknown or unsupported color space | We can't make any promises about how MediaLive will handle input that is in an unsupported color space. Any of the following might apply:+  MediaLive might be able to ingest the input, and to pass through the color space and all the color space metadata.  <br />+  Or it might ingest the input but produce unacceptable output.  <br />+  Or it might fail to ingest the input, so that the event follows the input loss behavior routine (for example, it might display a slate in the output).   |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

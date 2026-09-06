@@ -26,7 +26,3 @@ To use your own IP address range with Global Accelerator, review the requirement
 + [Deprovision the address range](using-byoip.deprovision.md)
 + [Use your BYOIP address with an accelerator in Global Accelerator](using-byoip.create-accelerator.md)
 + [Update an accelerator to change your IP addresses](using-byoip.update-accelerator.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

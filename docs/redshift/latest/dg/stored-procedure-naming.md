@@ -26,7 +26,3 @@ When you run a procedure, the query engine determines which procedure to call ba
 <a name="stored-procedure-name-conflicts"></a>
 
 We recommend that you name all procedures using the prefix `sp_`. Amazon Redshift reserves the `sp_` prefix exclusively for stored procedures. By prefixing your procedure names with `sp_`, you make sure that your procedure name won't conflict with any existing or future Amazon Redshift procedure name.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

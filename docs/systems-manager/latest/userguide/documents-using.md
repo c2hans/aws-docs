@@ -16,7 +16,3 @@ This section includes information about how to use and work with SSM documents.
 + [Running documents from remote locations](documents-running-remote-github-s3.md)
 + [Sharing SSM documents](documents-ssm-sharing.md)
 + [Searching for SSM documents](ssm-documents-searching.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

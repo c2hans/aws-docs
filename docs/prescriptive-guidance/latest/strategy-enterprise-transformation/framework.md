@@ -42,7 +42,3 @@ This pillar involves evolving organizational culture to support continuous learn
 + Align and mobilize cross-functional IT and business leaders to drive changes in how their teams decide, behave, and innovate.
 + Develop new capabilities to develop cloud talent, rapidly innovate, enable faster product delivery, and speed up organizational adaptability by applying the [AWS Organizational Change Acceleration (OCA) 6-Point Framework](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/).
 + Scale the foundational transformation capabilities you need to make lasting changes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

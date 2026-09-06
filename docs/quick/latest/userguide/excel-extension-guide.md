@@ -15,7 +15,7 @@ Key capabilities include:
 + **Data analysis and insights:** Automatically analyze patterns and trends, create pivot tables and charts with natural language prompts, and perform sensitivity analysis and scenario planning.
 + **Spreadsheet automation:** Apply filters, transformations, and conditional formatting using prompts, and generate appropriate templates based on your content and objectives.
 + **Enterprise knowledge integration:** Choose an agent or a space to respond from and incorporate relevant information from your organization's knowledge into your spreadsheets. Integrate data from Quick dashboards, spaces, and knowledge bases.
-+ **External actions:** Perform actions in third-party applications using your configured [action connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) or apps directly from Excel.
++ **External actions:** Perform actions in third-party applications using your configured [connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) or apps directly from Excel.
 
 **Important**
 The Amazon Quick Excel extension uses generative AI to create and execute code within your Excel application sandbox. AI can make mistakes and perform inaccurate actions within your Excel workbook. No spreadsheet data is read when the side panel is closed, and no data is sent to Amazon Quick unless you explicitly send a prompt.
@@ -52,7 +52,3 @@ The following prompts demonstrate common ways to use Quick within Excel. You can
 
 **Tip**
 For best results, be specific in your prompts. Include names, dates, and goals. You can also reference your Quick spaces, dashboards, and knowledge bases for personalized results.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

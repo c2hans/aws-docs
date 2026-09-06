@@ -40,7 +40,3 @@ Request access to Amazon ECS on Fargate by submitting an RFC with the Management
   + Target Groups for ALBs.
   + App mesh resources (for instance, Virtual Routers, Virtual Services, Virtual Nodes) to integrate with your Amazon ECS Cluster.
 + Currently, there is no way for AMS to automatically mitigate risk associated with supporting security groups' permissions when created outside of the standard AMS change types. We recommend that you request a specific security group for use with your Fargate cluster to limit the possibility of using a security group not designated for the use with Amazon ECS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -112,7 +112,3 @@ See [create-user-pool](https://docs.aws.amazon.com/cli/latest/reference/cognito-
 | Customize ID token scopes and claims at runtime | Use a Lambda trigger to extend the authentication capabilities of user pool identity (ID) tokens | Lite \+ Essentials \+ Plus |
 | Custom runtime actions with Lambda triggers | Customize the sign-in process at runtime with Lambda functions that perform external actions and influence authentication | Lite \+ Essentials \+ Plus |
 | Customize managed login pages with CSS | Download a CSS template and change some styles in your managed login pages | Lite \+ Essentials \+ Plus |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

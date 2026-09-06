@@ -31,7 +31,3 @@ With a gating rule, you can enforce an overall on-off switch over a set of routi
 To implement this, you create a *gating routing control*, to use as the overall switch, and *target routing controls*, to control traffic flow to different Regions or Availability Zones. Then, to prevent manual or automated state updates to the target routing controls that you've configured for the gating rule, you set the gating routing control state to `Off`. To allow updates, you set it to `On`.
 To see an example AWS CLI command that creates a gating rule that implements this kind of overall switch, see *Create safety rules* in [Examples of using ARC routing control API operations with the AWS CLI](getting-started-cli-routing.md).
 For detailed information about the gating rule API operation properties, see [GatingRule](https://docs.aws.amazon.com/recovery-cluster/latest/api/safetyrule.html#safetyrule-model-gatingrule) in the Routing Control API Reference Guide for Amazon Application Recovery Controller.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

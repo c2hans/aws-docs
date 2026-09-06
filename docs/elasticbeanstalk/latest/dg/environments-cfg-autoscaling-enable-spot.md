@@ -17,7 +17,3 @@ For more detailed information about Spot Instances, including explanation of key
 
 **Important**
 The `EnableSpot` option setting can cause Elastic Beanstalk to migrate an existing environment with launch configurations to launch templates. Doing so requires the necessary permissions to manage launch templates. These permissions are included in our managed policy. If you use custom policies instead of our managed policies, environment creation or updates might fail when you update your environment configuration. For more information and other considerations, see [Migrating your Elastic Beanstalk environment to launch templates](environments-cfg-autoscaling-launch-templates.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

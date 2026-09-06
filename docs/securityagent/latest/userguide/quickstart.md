@@ -111,7 +111,3 @@ You create and run penetration tests in the AWS Security Agent web application. 
 1. On the **Findings** tab, select a finding to view its description, severity, risk type, and supporting evidence.
 
 For more details, see [Create a penetration test](perform-penetration-test.md) and [Review findings from a penetration test](review-penetration-findings.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

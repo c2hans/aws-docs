@@ -556,7 +556,3 @@ The following JSON object shows the minimal fields required in the [GenerationCo
 Enter your custom prompt template in the `textPromptTemplate` field, including prompt placeholders and XML tags as necessary. For the maximum number of characters allowed in the system prompt, see the `textPromptTemplate` field in [GenerationConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GenerationConfiguration.html).
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

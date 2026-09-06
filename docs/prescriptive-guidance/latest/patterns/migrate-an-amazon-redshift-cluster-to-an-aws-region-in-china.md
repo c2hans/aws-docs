@@ -228,7 +228,3 @@ WHERE p.proowner != 1;
 + [Generate\_view\_ddl](https://github.com/awslabs/amazon-redshift-utils/blob/master/src/AdminViews/v_generate_view_ddl.sql)
 + [Generate\_user\_grant\_revoke\_ddl](https://github.com/awslabs/amazon-redshift-utils/blob/master/src/AdminViews/v_generate_user_grant_revoke_ddl.sql)
 + [Generate\_udf\_ddl](https://github.com/awslabs/amazon-redshift-utils/blob/master/src/AdminViews/v_generate_udf_ddl.sql)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

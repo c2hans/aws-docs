@@ -25,6 +25,9 @@ Connect Customer Global Resiliency provides a set of APIs that you use to:
 
   For example, you can distribute inbound voice contacts and agents 100% in US East (N. Virginia) and 0% in US West (Oregon), or 50% in each Region.
 + Access reserved capacity across Regions.
++ Enable or disable global routing across the two linked ACGR instances.
+**Note**
+Global routing, analytics, and contact search are enabled by default for all new ACGR instances created on or after September 1, 2026. Existing ACGR instances can migrate to this feature set on request.
 
 **Topics**
 + [Global Resiliency requirements](connect-global-resiliency-requirements.md)
@@ -32,8 +35,5 @@ Connect Customer Global Resiliency provides a set of APIs that you use to:
 + [Manage traffic distribution groups](manage-traffic-distribution-groups.md)
 + [Manage phone numbers across Regions](manage-phone-numbers-across-regions.md)
 + [Manage chat across Regions](manage-chat-across-regions.md)
++ [Global routing](global-routing-across-acgr-regions.md)
 + [Metrics, Reports and Search across ACGR Regions](metrics-reports-and-search-across-acgr-regions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

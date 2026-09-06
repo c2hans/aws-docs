@@ -18,7 +18,3 @@ You can use features like multi-factor authentication (MFA), client-side Lightwe
 + [Enabling mTLS authentication in AD Connector for use with smart cards](ad_connector_clientauth.md)
 + [Updating your AD Connector service account credentials in AWS Management Console](ad_connector_update_creds.md)
 + [Set up AWS Private CA Connector for AD](ad_connector_pca_connector.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

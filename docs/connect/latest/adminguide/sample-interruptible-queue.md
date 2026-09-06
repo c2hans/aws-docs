@@ -19,7 +19,3 @@ If the channel is voice, the customer hears a looping audio that interrupts ever
 1. The customer can press 1 to enter a callback number. Then the **Get customer input** block prompts the customer for their phone number. Then the flow ends.
 
 1. Press 2 ends the flow, and the customer remains in the queue.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

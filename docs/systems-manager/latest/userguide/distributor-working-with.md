@@ -29,7 +29,3 @@ You can share Distributor packages between AWS accounts. When using a package sh
 + [Install or update Distributor packages](distributor-working-with-packages-deploy.md)
 + [Uninstall a Distributor package](distributor-working-with-packages-uninstall.md)
 + [Delete a Distributor package](distributor-working-with-packages-dpkg.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

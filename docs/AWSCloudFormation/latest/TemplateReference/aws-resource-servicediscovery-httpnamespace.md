@@ -56,7 +56,7 @@ A description for the namespace.
 The name that you want to assign to this namespace.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^(?!arn:)[!-~]{1,1024}$`
+*Minimum*: `1`
 *Maximum*: `1024`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
@@ -134,7 +134,3 @@ Resources:
 ## See also
 <a name="aws-resource-servicediscovery-httpnamespace--seealso"></a>
 + [CreateHttpNamespace](https://docs.aws.amazon.com/cloud-map/latest/api/API_CreateHttpNamespace.html) in the * AWS Cloud Map API Reference *
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

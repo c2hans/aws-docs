@@ -60,7 +60,3 @@ To learn more about Amazon RDS, see [Amazon Relational Database Service Document
 
 **Note**
 This activity incurs AWS service charges that are deducted from your AWS Free Tier credits. To see your potential costs, see the service pricing page on [Amazon RDS pricing](https://aws.amazon.com/rds/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

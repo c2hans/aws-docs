@@ -44,7 +44,3 @@ Consider one or more of the following strategies to reduce latency:
 + **Use caching:** If your traffic is read heavy, consider using one of these caching services:
   + DynamoDB Accelerator (DAX): A fully managed, highly available, in-memory cache for DynamoDB that delivers up to a 10x performance improvement, from milliseconds to microseconds, even at millions of requests per second. For more information about DAX, see [In-memory acceleration with DynamoDB Accelerator (DAX)](DAX.md):
   + Amazon ElastiCache: A fully managed, in-memory caching service that can be integrated with DynamoDB to improve read performance using the cache-aside pattern. For more information, see [Integrating Amazon DynamoDB and Amazon ElastiCache by using read-through caching](https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-elasticache-integration/introduction.html) in AWS Prescriptive Guidance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,7 @@ An acceptor can perform the following tasks using this API:
 | [Accept an offer](#buyer-accept-offer) | The Acceptor can accept terms proposed by the proposer that creates a new agreement. This acceptance can involve passing parameters for certain terms, such as selecting the quantity or duration, adding purchase order etc. Acceptor can also create a new agreement where the product usage begins at a future date. The agreement sign date will be when the offer is accepted and when the agreement is created. The Agreement start date is future date when the product usage begins. This is the date when license/entitlement gets activated. To retrieve the latest status of your usage entitlement, refer to the [GetAgreementEntitlements](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_GetAgreementEntitlements.html) API. | CreateAgreementRequest, AcceptAgreementRequest | NEW |
 | [Replace an existing agreement](#buyer-replace-agreement) | The Acceptor can perform a mid-term upgrade on their agreement to either switch to more favorable terms or switch seller for their agreements. This action terminates the existing Agreement passed as input and creates net new Agreement. This action is logically equivalent to a CANCEL followed by a NEW agreement, but ensures entitlement continuity for the Acceptor and at no point is the Acceptor left without entitlements. | CreateAgreementRequest, AcceptAgreementRequest | REPLACE |
 | [Amend an existing agreement](#buyer-amend-agreement) | The acceptor is only permitted to modify the configuration for the accepted terms. For example, they can enable or disable auto-renewal, or modify the purchased quantity, as long as the price change post-modification does not result in refunds. We will only support amending charge if agreement has not started. Note: Proposer is allowed to modify prices for pay-as-you-go pricing term. Any increase in pay as you go prices takes 90 days to go into effect after the buyer is notified about the price increase. Any decrease in pay as you go prices takes effect immediately. | CreateAgreementRequest, AcceptAgreementRequest | AMEND |
-| [Enable or disable auto-renewal](#buyer-auto-renew) | The Acceptor can turn ON/Off the auto renew flag on their agreement if the seller has enabled renewal offer terms. In case its enabled, the renew agreement will be created by the Agreement service on the date of expiry of the original agreement using latest offer revision. The start date of this Agreement created will be same as the end date of the original agreement. | CreateAgreementRequest, AcceptAgreementRequest | AMEND |
+| [Enable or disable auto-renewal](#buyer-auto-renew) | The Acceptor can turn ON/Off the auto renew flag on their agreement if the seller has enabled renewal offer terms, and can change the flag until the renewal decision deadline. In case its enabled, the renew agreement will be created by the Agreement service on the date of expiry of the original agreement using the offer that renewalSummary.offerId identifies. The start date of this Agreement created will be same as the end date of the original agreement. Turning ON the flag does not guarantee that the agreement will renew. | CreateAgreementRequest, AcceptAgreementRequest | AMEND |
 | [Cancel an agreement](#buyer-cancel-agreement) | Acceptor can cancel usage agreement. For everything else, buyer must reach out to seller to initiate cancellation. When you cancel your agreement, your license and entitlement gets deactivated. | CancelAgreement | N/A |
 | [Search agreements](#buyer-search-agreements) | Acceptor can perform search across all agreements that they participated in as acceptor in AWS Marketplace. The search returns a list of agreements with basic agreement information. | SearchAgreements | N/A |
 | [Describe an agreement](#buyer-describe-agreement) | Acceptor can view details about an agreement, such as the proposer, acceptor, start date, and end date. | DescribeAgreement | N/A |
@@ -343,6 +343,13 @@ response = client.create_agreement_request(
 print(f"Agreement Request ID: {response['agreementRequestId']}")
 ```
 
+Set `enableAutoRenew` to `false` to turn auto-renewal off.
+
+**Note**
+Turning auto-renewal on records your renewal preference. It does not guarantee that the agreement renews, because the seller can opt out of the renewal independently of you, and a seller opt-out is final. Call `DescribeAgreement` and read `endTimeBehavior` to find out what happens at the agreement end date.
+
+You can change your preference until the renewal decision deadline, or until the agreement end date if the offer sets no deadline. After that, this `AMEND` request is rejected. The deadline and the other renewal values the seller authorized are reported in the [RenewalTerm](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_RenewalTerm.html).
+
 ## Cancel an agreement
 <a name="buyer-cancel-agreement"></a>
 
@@ -465,6 +472,8 @@ client.update_purchase_orders(
 )
 ```
 
+For how purchase orders carry over when an agreement renews, see [Purchase orders for renewals](https://docs.aws.amazon.com/marketplace/latest/buyerguide/purchase-orders-for-renewals.html).
+
 ## List cancellation requests
 <a name="buyer-list-cancellations"></a>
 
@@ -572,7 +581,3 @@ client.reject_agreement_payment_request(
     agreementId='agmt-abc123'
 )
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

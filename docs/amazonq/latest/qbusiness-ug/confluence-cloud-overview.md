@@ -22,7 +22,3 @@ The following table contains an overview of the Amazon Q Business Confluence (Cl
   - **Feature:** Filters / **Support:** Yes. The following filters are supported: +  Inclusion exclusion filters for **Space key** and **Space URL** <br />+  Inclusion exclusion filters on **File Type** for **Attachment entity** <br />+  Supports regex filters for entities <br />+  Supports inclusion and exclusion filters for **File size**
   - **Feature:** [Sync mode](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-sync-mode) / **Support:** Supports full and incremental (new, modified, and deleted) sync.
   - **Feature:** [File types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html) / **Support:** Supports all files supported by Amazon Q.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

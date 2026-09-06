@@ -92,7 +92,3 @@ Most CPU side-channel attacks to date have relied on sharing CPU cores via SMT a
 
 **Note**
  Refer to this [presentation on side channel issues](https://youtu.be/kQ4H6XO-iao) by Eric Brandwine, VP and Distinguished Engineer at AWS. In the presentation he talks about the transition from Xen to Nitro (at 42.40) and the resulting advantages, but also importantly concludes by pointing out that this topic has become one like cryptography, where the most reasonable approach is to rely on deep experts and re-use their work (at 49.29).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ You can update an access entry using the AWS Management Console or the AWS CLI.
    ```
 
    You can’t use the `--kubernetes-groups` option if the type of the access entry is a value other than `STANDARD`. You also can’t associate an access policy to an access entry with a type other than `STANDARD`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

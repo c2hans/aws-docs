@@ -148,7 +148,3 @@ The `case` statement in the script performs the validation. If validation fails,
 If you do not add this data validation script to the AWS DMS task and the data is inserted in the target table, the AWS DMS task shows validation state as **Mismatched Records**.
 
 During AWS SCT conversion, the AWS DMS migration task changes the data type of VARCHAR2(1) data type to Boolean and adds a primary key constraint on the `"NO"` column.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

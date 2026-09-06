@@ -15,7 +15,3 @@ Keep the following requirements and limitations in mind when you work with vecto
 + Vector indexes are available in all commercial AWS Regions, the AWS GovCloud (US) Regions, and the China Regions.
 
 For numeric limits including maximum dimensions, TopK range, inline filters per index, indexes per table, and base table size thresholds, see [Vector indexes](ServiceQuotas.md#limits-vector-indexes) in [Quotas in Amazon DynamoDB](ServiceQuotas.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

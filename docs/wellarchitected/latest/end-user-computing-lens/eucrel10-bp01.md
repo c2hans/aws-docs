@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Transparency is key, so communicate changes clearly, and provide rationale, expected impact, and necessary instructions. Additionally, establish a feedback mechanism for stakeholders to express concerns or ask questions. Keep stakeholders informed with regular updates on implementation progress and timelines.
 
  By prioritizing communication and coordination, you can minimize disruptions and support a smooth transition process for all involved.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

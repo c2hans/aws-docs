@@ -11,7 +11,3 @@ The following AWS services integrate with or complement the next generation of R
 + **AWS Well-Architected Framework** – Failure mode assessments leverage Well-Architected best practices to evaluate your service architecture.
 + **AWS Organizations** – Enables multi-account resilience governance through the next generation of Resilience Hub from a single delegated administrator account.
 + **Amazon EventBridge** – Use Amazon EventBridge to receive notification events from the next generation of Resilience Hub for assessment completion, finding resolution, and dependency discovery. You can use these events to build event-driven automation workflows.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

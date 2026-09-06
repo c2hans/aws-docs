@@ -155,7 +155,3 @@ Deploying Kubeflow Pipelines with SageMaker AI components requires the following
 <a name="converting-pipelines-to-use-amazon-sagemaker"></a>
 
 You can convert an existing pipeline to use SageMaker AI by porting your generic Python [processing containers](https://docs.aws.amazon.com/sagemaker/latest/dg/amazon-sagemaker-containers.html) and [training containers](https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms-training-algo.html). If you are using SageMaker AI for inference, you also need to attach IAM permissions to your cluster and convert an artifact to a model.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

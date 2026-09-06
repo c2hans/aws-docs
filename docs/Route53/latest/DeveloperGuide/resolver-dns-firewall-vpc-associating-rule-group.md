@@ -36,7 +36,3 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-d
 1. Locate the VPC that you want to associate with the rule group in the dropdown. Select it, then choose **Associate**.
 
 In the rule group page, your VPC is listed in the **Associated VPCs** tab. At first, the association's **Status** reports **Updating**. When the association is complete, the status changes to **Complete**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

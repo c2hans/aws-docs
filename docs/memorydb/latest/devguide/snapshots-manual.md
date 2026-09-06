@@ -86,7 +86,3 @@ To create a manual snapshot of a cluster using the MemoryDB API, use the `Create
 <a name="snapshots-manual-api-see-also"></a>
 
 For more information, see [CreateSnapshot](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_CreateSnapshot.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

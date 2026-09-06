@@ -247,7 +247,3 @@ When you use the AWS Management Console to create an event rule, the console aut
    + For **Target types**, choose **AWS service**, and for **Select a target** choose your desired target.
 
    For details about creating rules, see [Creating Amazon EventBridge rules that react to events ](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html) in the **Amazon EventBridge User Guide**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

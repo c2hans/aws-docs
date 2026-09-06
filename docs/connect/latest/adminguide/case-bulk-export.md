@@ -70,7 +70,3 @@ Fields with no value are exported as an empty cell.
 After you choose **Export**, the CSV file downloads immediately to your browser's default downloads folder. A success banner confirms the export and displays the file name.
 
 If the export fails, an error banner is shown. Choose **Export** again to retry.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

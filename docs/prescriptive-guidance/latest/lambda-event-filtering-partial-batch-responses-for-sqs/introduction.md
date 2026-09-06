@@ -21,7 +21,3 @@ This guide helps you do the following:
 + Improve your serverless architecture's operational capabilities and overall stability by isolating Amazon SQS messages that your Lambda functions can't process.
 + Reduce the operational cost of your serverless application by lowering the number of unnecessary Lambda function invocations.
 + Simplify your Lambda functions' code to improve their performance when processing Amazon SQS message batches.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

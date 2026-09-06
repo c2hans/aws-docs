@@ -32,7 +32,3 @@ Maintain visibility and control by using these mechanisms:
 + **Implement rate limiting** – Prevent abuse through excessive tool calls.
 
 The Model Context Protocol (MCP) security model addresses these concerns comprehensively. For more information, see [Security considerations](https://modelcontextprotocol.io/docs/concepts/architecture#security-considerations) in the MCP documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

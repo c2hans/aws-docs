@@ -89,7 +89,3 @@ Thoughtful naming is especially important when you have multiple flows creating 
 <a name="outputs-add-ndi-next-steps"></a>
 
 After you [start your flow](flows-start.md), you should be able to see the MediaConnect NDI flow output as an available NDI source in your discovery server. You can then subscribe to it to receive NDI traffic. For more information, see the [NDI documentation](https://docs.ndi.video/all/developing-with-ndi/introduction).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

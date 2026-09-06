@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Encourage participating teams to interact with each other in order to exchange opinions and ideas. Fostering collaboration and gathering diverse opinions typically results in a better overall solution, improving service and support.
 
  Provide these teams sufficient resources not only to manage and maintain the planned infrastructure but also to perform continual service development. Plan to accommodate new features and functionality that meet evolving business needs. If your technical teams lack the AWS expertise necessary to deploy or migrate to Amazon WorkSpaces, Amazon WorkSpaces Applications, or Amazon WorkSpaces Secure Browser, consider engaging with AWS Professional Services or one of our partners.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

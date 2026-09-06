@@ -83,7 +83,3 @@ To effectively consume opportunities from AWS, you need to build custom integrat
      + **For authenticating an S3 bucket**: [S3\_Authentication.cls](https://github.com/aws-samples/partner-crm-integration-samples/blob/main/code-snippets/S3_Authentication.cls)
      + **For uploading files to an S3 bucket**: [Sample\_AceOutboundBatch.cls](https://github.com/aws-samples/partner-crm-integration-samples/blob/main/code-snippets/Sample_AceOutboundBatch.cls)
    + **NOTE:** Files must not exceed 1 MB in size, and duplicate files won’t be processed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

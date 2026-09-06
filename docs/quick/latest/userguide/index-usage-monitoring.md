@@ -122,7 +122,3 @@ You can create a CloudWatch dashboard to visualize index usage metrics. Use the 
 
 **Tip**
 Use the pie chart visualization for the source type breakdown. Use the line chart for size over time. Use the bar chart for top sources. The table visualization works well for the all-sources detail query.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

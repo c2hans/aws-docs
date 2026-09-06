@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/live_
    + Choose **On** to temporarily turn on live data for all widgets.
    + Choose **Off** to temporarily turn off live data for all widgets.
    + Choose **Do not override** to preserve each widget's live data setting.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

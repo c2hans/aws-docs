@@ -224,7 +224,3 @@ If your data source supports them, then Grafana displays the **Expression** butt
 <a name="v9-panels-query-special"></a>
 
 When any queried data source returns no series or numbers, the expression engine returns `NoData`. For example, if a request contains two data source queries that are merged by an expression, if `NoData` is returned by at least one of the data source queries, then the returned result for the entire query is `NoData`. For more information about how Grafana Alerting processes `NoData` results, see [Handling no data or error cases](v9-alerting-managerules-grafana.md#v9-alerting-rule-no-data-error).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

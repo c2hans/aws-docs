@@ -29,7 +29,3 @@ Organizations choose to migrate to the AWS Cloud to increase their agility and r
 If you migrate F5 BIG-IP workloads to the AWS Cloud, you can focus on agility and adopt high-value operational models across your enterprise architecture. You will also create a net positive for your cloud adoption because your technology environments can be federated.
 
 You can also create a business advantage by limiting vendor or tool sprawl. This reduces risk when you migrate an application because it limits or removes changes to the data path, features, tools, and operational model from your source environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

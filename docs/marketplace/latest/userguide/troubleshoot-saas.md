@@ -24,7 +24,3 @@ The following table lists the most common SaaS error messages and their solution
 | SELLER\_ENTITLEMENT\_EXISTS<br />This principal already has entitlements to be a seller in AWS Marketplace. | Verify current seller status in AWS Partner Central<br />Use appropriate update operations instead of creation<br />Review IAM permissions and roles<br />For more information, refer to [Registration process](registration-process.md) earlier in this guide. |
 | UNSUPPORTED\_DELIVERY\_OPTION<br />The existing default URL-based SaaS products cannot be updated to use API delivery options. | Create new product for API-based delivery<br />Cannot convert between URL-based and API-based SaaS products<br />Plan product architecture before initial creation |
 | INCOMPATIBLE\_DELIVERY\_OPTION\_TYPES<br />You provided an `ApiDeliveryOption` for a product that already contains `SaaSUrlDeliveryOptions`. | Create separate products for different delivery types<br />Choose either API or URL-based delivery at product creation<br />Review product requirements before setup |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

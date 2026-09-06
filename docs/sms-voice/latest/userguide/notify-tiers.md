@@ -162,7 +162,3 @@ Regardless of tier, you are responsible for:
 + **Following carrier policies** – Comply with carrier policies that apply to your messaging. AWS will make reasonable efforts to notify you of changes to carrier policies.
 
 For more information, see [Notify mobile carrier prerequisites](notify-compliance.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

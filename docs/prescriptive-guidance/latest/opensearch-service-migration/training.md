@@ -23,7 +23,3 @@ You can work with your AWS account team to help you identify an appropriate reso
 + [Blog posts](https://aws.amazon.com/blogs/big-data/category/analytics/amazon-elasticsearch-service/) – Written by AWS experts and customers, these blog posts discuss latest announcements, best practices, solutions, service features, customer use cases, and other topics.
 + Best practices – Participate in online or conference talks, or in sessions run by AWS experts that help you understand best practices for Amazon OpenSearch Service.
 + [AWS Professional Services](https://aws.amazon.com/professional-services/) – The AWS Professional Services team can provide best practices and prescriptive advice. The team offers a [training program](https://aws.amazon.com/training/) to help IT professionals understand and accomplish successful migrations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

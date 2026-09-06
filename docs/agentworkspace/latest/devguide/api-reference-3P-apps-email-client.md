@@ -54,7 +54,3 @@ The following sections describe API calls for working with the Email API.
 + [getEmailData()](3P-apps-email-requests-getemaildata.md)
 + [getEmailThread()](3P-apps-email-requests-getemailthread.md)
 + [sendEmail()](3P-apps-email-requests-sendemail.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer Agent Workspace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agentworkspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

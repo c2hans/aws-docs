@@ -658,7 +658,3 @@ You can override stage conditions that have been configured for your pipeline. I
 
 1. To review details, choose **Review**. The detail in the following example shows that the configured result for the condition is Fail, which has been overridden. The rule status is Abandoned due to the override.
 ![An example condition details page showing the overridden condition in CodePipeline.](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/stage-condition-onsuccess-deplwin-example-message-review.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

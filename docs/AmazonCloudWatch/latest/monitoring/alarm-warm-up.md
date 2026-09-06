@@ -35,7 +35,3 @@ After the warm-up period ends, you can update the warm-up configuration. However
 During warm-up, the alarm state remains `INSUFFICIENT_DATA` and the evaluation state is `IN_WARM_UP`. View the alarm configuration and state with the [DescribeAlarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DescribeAlarms.html) API. For more information about evaluation states, see [Alarm evaluation state](alarm-evaluation.md#alarm-evaluation-state).
 
 For instructions on creating an alarm with a warm-up period, see [Create an alarm that uses a warm-up period](Create_WarmUp_Alarm.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

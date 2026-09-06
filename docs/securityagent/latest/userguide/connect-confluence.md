@@ -112,7 +112,3 @@ After connecting Confluence to AWS Security Agent:
 + Select specific pages to include as context for design reviews and penetration tests
 + Select pages as scope documents for threat models (see [Enable threat modeling](enable-threat-model.md))
 + Upload additional documentation via S3 if needed (see [Provide agent resources from an S3 bucket](enable-s3-bucket.md))
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

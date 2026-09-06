@@ -52,9 +52,9 @@ To specify the location of your Dedicated Hosts relative to your accounts, you m
 
 To share a placement group, you must add it to a resource share. A resource share is an AWS RAM resource that lets you share your resources across AWS accounts. A resource share specifies the resources to share, and the consumers with whom they are shared.
 
-If you are part of an organization in AWS Organizations sharing within your organization is enabled, consumers in your organization are granted access to the shared placement group.
+If you are part of an organization in AWS Organizations, sharing within your organization is enabled, and consumers in your organization are granted access to the shared placement group.
 
-If the placement group is shared with an AWS account outside of your organization, the AWS account owner will receive an invitation to join the resource share. They can access the shared placement group after accepting the invitation.
+If the placement group is shared with an AWS account outside of your organization, the AWS account owner receives an invitation to join the resource share. They can access the shared placement group after accepting the invitation.
 
 You can share a placement group across AWS accounts using AWS Resource Access Manager. For more information, see [Creating a resource share](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-create.html) in the *AWS RAM User Guide*.
 
@@ -67,7 +67,3 @@ The placement group owner can unshare a shared placement group at any time. When
 + Any capacity reservations in a shared placement group are disassociated from the placement group, but remain available to you in your AWS account.
 
 For more information, see [Deleting a resource share](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-delete.html) in the *AWS RAM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

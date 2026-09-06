@@ -82,7 +82,3 @@ You can specify a delegated administrator account from the IAM console or API, o
 <a name="integrate-disable-da-iam"></a>
 
 Only an administrator in either the Organizations management account or the IAM delegated admin account can remove a delegated administrator account from the organization. You can disable delegated administration using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

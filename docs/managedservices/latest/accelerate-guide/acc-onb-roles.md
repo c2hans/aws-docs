@@ -13,7 +13,3 @@ The following AMS role grants permissions to your AMS cloud architect (CA). The 
 
 **Note**
 After you select and download a sample template (one per role), you will upload these as definitions of CloudFormation stacks in [Create `aws_managedservices_onboarding_role` with CloudFormation for Accelerate](acc-onb-create-roles-with-cf.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

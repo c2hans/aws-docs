@@ -149,7 +149,3 @@ Note the name of your CodeBuild service role. You will need the role name for th
 1. In the left-hand nav, choose **History**.
 
    Choose the recent execution, and then choose the **Variables** tab. View the resolved value for the pipeline variable.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

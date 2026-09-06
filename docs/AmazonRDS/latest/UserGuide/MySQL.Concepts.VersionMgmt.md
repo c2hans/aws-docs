@@ -77,7 +77,7 @@ Minor versions can reach end of Extended Support before major versions do. RDS w
 The following table shows the minor versions of MySQL 5.7 that are available under Amazon RDS Extended Support.
 
 **Note**
-Minor versions can reach end of Extended Support before major versions do. For example, minor version 5.7.44-RDS.20240529 reaches its end of Extended Support date in September 2025 while major version 5.7 reaches this date on February 28, 2027. RDS will generate and release additional 5.7.44-RDS.xxyyzz minor versions between these dates. We recommend that you upgrade to the latest available minor version as often as possible for all major versions.
+Minor versions can reach end of Extended Support before major versions do. For example, minor version 5.7.44-RDS.20240529 reaches its end of Extended Support date in September 2025 while major version 5.7 reaches this date on June 30, 2029. RDS will generate and release additional 5.7.44-RDS.xxyyzz minor versions between these dates. We recommend that you upgrade to the latest available minor version as often as possible for all major versions.
 
 | MySQL engine version | Community release date | RDS release date | RDS end of Extended Support date |
 | --- | --- | --- | --- |
@@ -651,7 +651,3 @@ Amazon RDS for MySQL versions 5.1, 5.5, and 5.6 are deprecated.
 Amazon RDS for MySQL versions 9.1, 9.2, 9.3, and 9.4 are deprecated in the Database Preview environment.
 
 For information about the Amazon RDS deprecation policy for MySQL, see [Amazon RDS FAQs](https://aws.amazon.com/rds/faqs/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 + [Automation strategy for SAP operations in the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-automation/welcome.html) (AWS Prescriptive Guidance)
 + [SAP on AWS migration methodology](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/welcome.html) (AWS Prescriptive Guidance)
 + [Business Benefits of Running SAP Workloads on AWS](https://pages.awscloud.com/acq_NAMER_SAP-IDG-MarketPulse-Study-Feb-2019-Registration-Page.html) (IDG MarketPulse whitepaper)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

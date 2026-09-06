@@ -178,7 +178,3 @@ $ sysbench ./oltp_read_write.lua <connection info>  --table_size=10000000
 |  EBS statistics  |   |   |   |   |
 |  Write latency (ms)  |  1.1  |  1.01  |  0.994  |  0.824  |
 |  Volume queue length (count)  |  3.49  |  3.01  |  3.227  |  2.71  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

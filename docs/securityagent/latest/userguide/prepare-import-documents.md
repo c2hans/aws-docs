@@ -43,7 +43,3 @@ The more concretely your documents describe expected behavior, the better AWS Se
 <a name="_review_what_you_get_back"></a>
 
 Each generated requirement includes a name, applicability, compliance criteria, and remediation guidance that AWS Security Agent derived from your documents. Review the generated requirements, edit any that need refinement, and enable the ones you want AWS Security Agent to evaluate. For more information, see [Manage security requirements](security-requirements.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

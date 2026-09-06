@@ -217,7 +217,3 @@ Use the following resources to learn more about nested virtualization concepts, 
 + [CreateWorkspaceInstance API reference](https://docs.aws.amazon.com/workspaces-instances/latest/api/API_CreateWorkspaceInstance.html).
 + [CpuOptionsRequest](https://docs.aws.amazon.com/workspaces-instances/latest/api/API_CpuOptionsRequest.html) – The CPU options data type, including the `NestedVirtualization` values.
 + [GetWorkspaceInstance API reference](https://docs.aws.amazon.com/workspaces-instances/latest/api/API_GetWorkspaceInstance.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-core` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

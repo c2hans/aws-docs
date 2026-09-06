@@ -377,7 +377,3 @@ If you have configured your service client to use an instance of an AWS CRT-base
 For security reasons, at the "Trace" level the AWS CRT-based HTTP clients log only response headers. Request headers, request bodies, and response bodies are not logged.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

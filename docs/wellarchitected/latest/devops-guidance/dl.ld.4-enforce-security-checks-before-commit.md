@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 +  [GitGuardian](https://docs.gitguardian.com/ggshield-docs/integrations/git-hooks/pre-commit)
 +  [AWS-IA opinionated pre-commit hooks](https://github.com/aws-ia/pre-commit-configs)
 +  [Blog: Extend your pre-commit hooks with AWS CloudFormation Guard](https://aws.amazon.com/blogs/security/extend-your-pre-commit-hooks-with-aws-cloudformation-guard/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

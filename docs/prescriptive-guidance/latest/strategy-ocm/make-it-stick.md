@@ -90,7 +90,3 @@ An important factor in sustaining change and cloud adoption is the ongoing colle
 Determine who needs to approve the completion of change acceleration activities. Organize meetings with the change sponsor and business leaders to discuss any new change projects, transition of ongoing ownership, outstanding items, and approval of project deliverables.
 
 When you include these activities as part of your sustainability plan, your organization will gain a better understanding of how well change is persisting within the organization. Being patient, persistent, data-driven, and methodical will help your organization adhere to the sustainability plan and ensure that cloud investments continue to yield benefits well into the future.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

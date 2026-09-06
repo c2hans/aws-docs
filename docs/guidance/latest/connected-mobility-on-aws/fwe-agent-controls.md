@@ -38,7 +38,3 @@ In cloud simulation mode, the FWE agent and simulator run as separate EC2-backed
 + Each vehicle gets a unique vcan interface to prevent cross-contamination between simultaneous simulations
 + The simulation Lambda assigns vcan interfaces using `_next_vcan_index()` and passes the interface name to both tasks
 + The FWE agent health check uses `pgrep aws-iot-fleetwise-edge` — once healthy, the simulator task starts
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

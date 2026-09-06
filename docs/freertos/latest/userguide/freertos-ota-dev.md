@@ -28,7 +28,3 @@ FreeRTOS over-the-air updates make it possible for you to:
 To help you manage your OTA resources, you can optionally assign your own metadata to updates and streams in the form of tags. Tags make it possible for you to categorize your AWS IoT resources in different ways (for example, by purpose, owner, or environment). This is useful when you have many resources of the same type. You can quickly identify a resource based on the tags you've assigned to it.
 
 For more information, see [Tagging Your AWS IoT Resources](https://docs.aws.amazon.com/iot/latest/developerguide/tagging-iot.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

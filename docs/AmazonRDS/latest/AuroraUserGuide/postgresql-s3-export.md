@@ -136,7 +136,3 @@ psql=> SELECT aws_commons.create_s3_uri(
 ```
 
 You later provide this `s3_uri_1` value as a parameter in the call to the [aws\_s3.query\_export\_to\_s3](postgresql-s3-export-functions.md#aws_s3.export_query_to_s3) function. For examples, see [Exporting query data using the aws\_s3.query\_export\_to\_s3 function](postgresql-s3-export-examples.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

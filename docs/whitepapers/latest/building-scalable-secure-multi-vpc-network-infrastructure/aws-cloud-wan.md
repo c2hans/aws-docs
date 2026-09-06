@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
  AWS Cloud WAN enables a unified network connecting cloud and on-premises environments. Organizations use next-gen firewalls (NGFWs) and intrusion prevention systems (IPSs) for security. The [AWS Cloud WAN and Transit Gateway migration and interoperability patterns](https://aws.amazon.com/blogs/networking-and-content-delivery/aws-cloud-wan-and-aws-transit-gateway-migration-and-interoperability-patterns/) blog post describes architectural patterns for centrally managing and inspecting outbound network traffic in a Cloud WAN network, including single-Region and multi-Region networks, and configures route tables. These architectures ensure data and applications remain safe while maintaining a secure cloud environment.
 
  For more information about Cloud WAN, see the [Centralized outbound inspection architecture in AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/centralized-outbound-inspection-architecture-in-aws-cloud-wan/) blog post.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

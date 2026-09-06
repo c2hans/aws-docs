@@ -35,6 +35,12 @@ Within `dataSourceConfiguration`, you must specify the following:
     + `videoExtractionConfiguration` (optional) – Processes, extracts, and indexes content from supported video files (.mp4, .mov, .m4v).
 
     For the full field reference, see [MediaExtractionConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_MediaExtractionConfiguration.html) in the Amazon Bedrock API Reference.
+  + `syncSchedule` (optional) – Sets a recurring schedule on which Amazon Bedrock automatically syncs the data source. Specify exactly one of the following:
+    + `daily` – An empty object. Syncs once per day at a system-chosen off-peak time.
+    + `weekly` – Contains a required `dayOfWeek` field, with a value from `SUNDAY` to `SATURDAY`.
+    + `monthly` – Contains a required `dayOfMonth` field, which holds either a `dayNumber` from 1 to 28 or an empty `lastDayOfMonth` object.
+
+    Omit `syncSchedule` to sync on demand only. For more information, see [Set a sync schedule for a data source](kb-managed-sync.md#kb-managed-sync-schedule).
 
 **Optional fields:**
 
@@ -63,6 +69,11 @@ The following example shows a `CreateDataSource` request with an S3 connector:
                 "deletionProtectionStatus": "ENABLED",
                 "deletionProtectionThreshold": 15
             },
+            "syncSchedule": {
+                "weekly": {
+                    "dayOfWeek": "MONDAY"
+                }
+            },
             "connectorParameters": {
                 "type": "S3",
                 "version": "1",
@@ -88,13 +99,11 @@ For third-party data sources that support user-managed setup (3LO), such as Shar
 + [Box](kb-managed-ds-box.md)
 + [Amazon S3](kb-managed-ds-s3.md)
 + [Confluence](kb-managed-ds-confluence.md)
++ [Confluence Data Center](kb-managed-ds-confluence-onprem.md)
 + [Custom](kb-managed-ds-custom.md)
 + [Google Drive](kb-managed-ds-googledrive.md)
 + [Microsoft OneDrive](kb-managed-ds-onedrive.md)
 + [ServiceNow](kb-managed-ds-servicenow.md)
 + [Microsoft SharePoint](kb-managed-ds-sharepoint.md)
 + [Web Crawler](kb-managed-ds-webcrawler.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ [Configure VPC connectivity for a data source](kb-managed-vpc-configuration.md)

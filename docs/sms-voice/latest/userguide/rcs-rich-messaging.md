@@ -132,7 +132,3 @@ AWS End User Messaging generates events that report message delivery status and 
 <a name="rcs-rich-messaging-best-practices"></a>
 
 Design rich RCS messages as conversational, interactive experiences. Set a `TimeToLive` for time-sensitive content such as one-time passwords, configure an SMS or MMS fallback for messages that must reach the recipient even when their device does not support RCS, keep suggestion labels short (the limit is 25 characters), and include structured identifiers in `PostbackData` so your application can route responses without additional lookups. For detailed guidance, see [RCS best practices](rcs-best-practices.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

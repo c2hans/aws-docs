@@ -50,7 +50,3 @@ Take the following into consideration when you want to configure MACsec on LAGs:
 + When you create a LAG from existing connections, we disassociate all of the MACsec keys from the connections. Then we add the connections to the LAG, and associate the LAG MACsec key with the connections.
 + When you associate an existing connection to a LAG, the MACsec keys that are currently associated with the LAG are associated with the connection. Therefore, we disassociate the MACsec keys from the connection, add the connection to the LAG, and then associate the LAG MACsec key with the connection.
 + Only a single MACsec key can be utilized across all LAG links at any time. The ability to support multiple MACsec keys is for key rotation purposes only.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

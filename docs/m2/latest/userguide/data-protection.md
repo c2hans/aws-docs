@@ -883,7 +883,3 @@ For interactive applications that are part of transactional workloads, the data 
 AWS Mainframe Modernization uses HTTPS to encrypt the service APIs. All other communication within AWS Mainframe Modernization is protected by the service VPC or security group, as well as HTTPS. AWS Mainframe Modernization transfers application artifacts, configurations, and application data. Application artifacts are copied from an Amazon S3 bucket that you own, as are application data. You can provide application configurations using a link to Amazon S3 or by uploading a file locally.
 
 Basic encryption in transit is configured by default, but does not apply to the TN3270 protocol. AWS Mainframe Modernization uses HTTPS for API endpoints, which are also configured by default.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

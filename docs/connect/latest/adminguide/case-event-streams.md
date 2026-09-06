@@ -16,7 +16,3 @@ You can use the case event streams to integrate streams into your data lake solu
 + [Set up case event streams](case-event-streams-enable.md)
 + [Allow Cases to send updates to conversational analytics rules](cases-rules-integration-onboarding.md)
 + [Case event payload and schema](case-event-streams-sample.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

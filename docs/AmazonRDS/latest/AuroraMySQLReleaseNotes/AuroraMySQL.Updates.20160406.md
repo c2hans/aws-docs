@@ -65,7 +65,3 @@ This update includes the following improvements:
 + FLUSH TABLES FOR EXPORT: ASSERTION IN HA\_PARTITION::EXTRA (Port Bug \# 16943907)
 + SERVER CRASH IN VIRTUAL HA\_ROWS HANDLER::MULTI\_RANGE\_READ\_INFO\_CONST (Port Bug \# 16164031)
 + RANGE OPTIMIZER CRASHES IN SEL\_ARG::RB\_INSERT() (Port Bug \# 16241773)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -316,7 +316,3 @@ This configuration uploads application logs only to the customer S3 bucket, and 
 + Persistent-ui-logs cannot have on-customer-s3only policy. Allowed policies for persistent-ui-logs are emr-managed and disabled.
 + **LogUri Requirement**: When using on-customer-s3only policy for system-logs or application-logs, you must specify a LogUri parameter. Without LogUri, the cluster creation will fail.
 + **Default Behavior**: If S3LoggingConfiguration is not specified, all log types default to emr-managed behavior.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

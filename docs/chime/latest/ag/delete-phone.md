@@ -25,7 +25,3 @@ When you provision a phone number, you order it from a pool of numbers that Amaz
 1. Select the check box, then choose **Delete**.
 
 Deleted phone numbers are held in the **Deletion queue** for 7 days before they are deleted from your inventory permanently.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ When you use the Free Plan, all usage is covered by your AWS Free Tier credits. 
 1. (Optional) To view a breakdown of your charges for a project under **Inspect costs**, choose **View**. You'll be redirected to the AWS Billing and Cost Management console.
 
 Your billing data and Cost Explorer data that you see on the AWS Billing and Cost Management Console are refreshed at least once per day. The cadence when they're refreshed might differ. If you use a spend limit, this can result in differences for your month-to-date estimated charges in AWS Settings and AWS Cost Management Console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

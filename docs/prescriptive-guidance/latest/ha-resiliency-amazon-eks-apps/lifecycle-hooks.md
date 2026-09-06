@@ -49,7 +49,3 @@ spec:
 ```
 
 For more information, see [Container hooks](https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks) in the Kubernetes documentation and [Gracefully shutdown applications](https://docs.aws.amazon.com/eks/latest/best-practices/load-balancing.html#_gracefully_shutdown_applications) in the *Amazon EKS Best Practices Guide.*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

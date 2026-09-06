@@ -42,7 +42,3 @@ You can create a manifest file (such as <{{your-app}}>-manifest.txt) either manu
 1. Verify the content of the optimization manifest, which is a line-delimited text file for every application.
 
 You can specify the optimization manifest on a per-application basis by using the Image Assistant command line interface (CLI) tool. For more information, see [Using the Image Assistant CLI Tool for Linux](image-assistant-cli.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

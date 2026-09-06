@@ -17,7 +17,3 @@ The tutorials in this section help you to get started with setting up various ta
 + [Tutorial: Use templates with Rocket Enterprise Developer (formerly Micro Focus Enterprise Developer)](tutorial-templates-ed.md)
 + [Tutorial: Set up Enterprise Analyzer on WorkSpaces Applications](set-up-ea.md)
 + [Tutorial: Set up Rocket Enterprise Developer on WorkSpaces Applications](set-up-ed.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ End user computing is often approached by customers who are looking to service c
 <a name="winlinux"></a>
 
  With the launch of Windows Server 2019 as the underlying operating system for Amazon WorkSpaces, customers have been eager to implement Windows Subsystem for Linux (WSL), specifically WSL2. Because WSL2 invokes a virtual machine (Hyper-V) in order to perform its functions, it cannot run on Amazon WorkSpaces, which are managed by AWS hypervisors. Customers should know that only WSL1 will be available for this reason, and understand [the differences between WSL1 and WSL2](https://docs.microsoft.com/en-us/windows/wsl/compare-versions).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ A policy version is never implemented automatically. After creating a version of
 1. In **New Values** and **Previous values**, choose **Details** to view the change in a JSON format.
 
 1. In the **Compare** column, choose **Compare** to view a line-by-line comparison of the current live policy with the proposed policy change.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

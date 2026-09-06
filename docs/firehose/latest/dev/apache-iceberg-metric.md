@@ -16,7 +16,3 @@ For data delivery to Apache Iceberg Tables, Firehose emits the following CloudWa
 | DeliveryToIceberg.DataFreshness | The age (from getting into Firehose to now) of the earliest record in Firehose. Any record earlier than this age has been delivered to Apache Iceberg Tables.Units: Seconds |
 | DeliveryToIceberg.Success | Sum of successful commits to Apache Iceberg Tables. |
 | JQProcessing.Duration | The amount of time it took to run the JQ expression.Units: Milliseconds |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

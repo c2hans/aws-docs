@@ -43,7 +43,3 @@ We don't recommend relying on automatic switching.
 <a name="input-switching-overview-combining"></a>
 
 We strongly recommend against implementing a combination of these input switching features. You shouldn't give control of the input switching logic to both a POIS and a REST-based application. There should be only one mechanism controlling the input switching.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

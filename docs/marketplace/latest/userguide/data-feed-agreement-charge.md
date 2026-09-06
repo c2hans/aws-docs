@@ -29,7 +29,3 @@ The following table lists and describes the items in the data feed.
 | valid\_from | insert\_date | update\_date | delete\_date | amount | currency\_code | time | agreement\_id | term\_id |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2024-12-24 11:31:47.0 | 2025-10-01 01:03:41.0 | 2025-10-01 01:03:41.0 | null | 28440.00 | USD | 2025-11-06 00:00:00.000000 | agmt-3kk39tbw3j6id2vakbp0XXXXX | term-3986e2c7f73768ed4ff7cd8a97b41ac0ae2aa02ada6b68deb9349c8604cXXXXX |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

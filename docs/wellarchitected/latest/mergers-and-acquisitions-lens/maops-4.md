@@ -31,7 +31,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 <a name="maops04-bp05"></a>
 
  Customizations that are done with configuration do not require a code recompile or reload. It is a way to get away from the legacy practice of making hard-coded customizations per individual customers or segments. Use feature flags that are temporary or permanent. These flags help during testing or canary release.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

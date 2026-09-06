@@ -34,9 +34,13 @@ Temporal policies are written in Dogwood, an open source policy language that Po
 With Dogwood, you express session-aware rules declaratively as policy instead of implementing event-tracking logic in your agent or tool code. The policy engine records the relevant events and evaluates the condition on each request. For example, the following policy permits a sale only when a matching approval occurred within the previous hour:
 
 ```
-permit ( principal, action == AgentCore::Action::"SellShares", resource )
+permit (
+    principal,
+    action == AgentCore::Action::"TradingTarget___SellShares",
+    resource == AgentCore::Gateway::"arn:aws:bedrock-agentcore:us-west-2:123456789012:gateway/my-gateway"
+)
 when temporal {
-    formerly within 1h AgentCore::Action::"ApproveSale"::response{
+    formerly within 1h AgentCore::Action::"TradingTarget___ApproveSale"::response{
         eventResource:   resource,
         input.stock:     context.input.stock,
         input.shares:    context.input.shares,
@@ -154,7 +158,3 @@ For the complete list of policy metrics, dimensions, and span attributes, and fo
 <a name="policy-temporal-security"></a>
 
 Rate limiting with temporal policies applies within a single session. Because temporal history is scoped to a session and the session ID is supplied by the caller, a `count`-based limit such as "at most N calls per session" counts only the events recorded for that session. Starting a new session begins a new count, so a temporal rate limit constrains activity within a session rather than across all of a caller’s sessions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

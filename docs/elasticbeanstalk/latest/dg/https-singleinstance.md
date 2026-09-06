@@ -38,7 +38,3 @@ In a load-balanced environment in a default [Amazon Virtual Private Cloud](https
 + [Terminating HTTPS on EC2 instances running Tomcat](https-singleinstance-tomcat.md)
 + [Terminating HTTPS on Amazon EC2 instances running .NET Core on Linux](https-singleinstance-dotnet-linux.md)
 + [Terminating HTTPS on Amazon EC2 instances running .NET](SSLNET.SingleInstance.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

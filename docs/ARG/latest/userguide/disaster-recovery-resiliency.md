@@ -14,7 +14,3 @@ In addition to the AWS global infrastructure, AWS Resource Groups offers several
 AWS Resource Groups performs automated backups to internal service resources. These backups are not user-configurable. Backups are encrypted, both at rest and in transit. Resource Groups stores customer data in Amazon DynamoDB.
 
 Even a complete loss of user resource groups would not result in a loss of customer data, because most customer data is replicated across AWS Availability Zones (AZs). If you delete groups accidentally, contact [AWS Support Center](https://console.aws.amazon.com/support/home#/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Resource Groups. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ARG` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

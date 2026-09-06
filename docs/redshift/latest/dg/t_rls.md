@@ -16,7 +16,3 @@ When creating RLS policies, you can specify expressions that dictate whether Ama
 When creating RLS policies, we recommend that you create simple policies and avoid complex statements in policies. When defining RLS policies, don't use excessive table joins in the policy definition that are based on policies.
 
 When a policy refers to a lookup table, Amazon Redshift scans the additional table, in addition to the table on which the policy exists. There will be performance differences between the same query for a user with an RLS policy attached, and a user without any policy attached.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

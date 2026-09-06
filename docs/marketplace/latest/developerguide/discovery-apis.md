@@ -92,7 +92,3 @@ Operations that return lists (such as `ListPurchaseOptions` and `SearchFacets`) 
 <a name="discovery-throttling"></a>
 
 The Discovery API enforces request rate limits to ensure service availability. If you exceed the rate limit, the API returns a `ThrottlingException` (HTTP 429). Implement exponential backoff and retry logic in your application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

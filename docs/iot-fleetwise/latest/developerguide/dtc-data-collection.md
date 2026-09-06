@@ -84,7 +84,3 @@ Controller Area Network (CAN) signals don't support the string data type.
 1. Create and approve the campaign. You need to create a campaign by defining DTC signals (optionally with telemetry signals) and deploy it to vehicles.
 
 1. Access the data in the defined destination. DTC data includes the `DTCCode`, `DTCSnapshot`, and `DTCExtendedDatastrings` as a raw string in the data destination defined in the campaign.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

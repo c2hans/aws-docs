@@ -27,7 +27,3 @@ Consider the following when working with data sharing in Amazon Redshift Serverl
 + Amazon Redshift Serverless is encrypted by default.
 
 For a list of datasharing limitations, including database objects supported, encryption requirements, and sort-key requirements, see [Considerations for data sharing in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/dg/datashare-considerations.html) in the *Amazon Redshift Database Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -389,7 +389,3 @@ AWS Fault Injection Service defines the following condition keys that can be use
 |   [fis:Percentage](https://docs.aws.amazon.com/fis/latest/userguide/security_iam_service-with-iam.html)  | Filters access by the percentage of calls being affected by the AWS FIS action | Numeric |
 |   [fis:Service](https://docs.aws.amazon.com/fis/latest/userguide/security_iam_service-with-iam.html)  | Filters access by the AWS service that is being affected by the AWS FIS action | String |
 |   [fis:Targets](https://docs.aws.amazon.com/fis/latest/userguide/security_iam_service-with-iam.html)  | Filters access by the list of resource ARNs being targeted by the AWS FIS action | ArrayOfString |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

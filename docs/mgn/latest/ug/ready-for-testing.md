@@ -14,7 +14,3 @@ Before launching a Test instance, ensure that your source servers are ready for 
 1. Under the **Data replication status** column, the server should show the **Healthy** status.
 
 1. Under the **Next step** column, the server should show **Launch test instance**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

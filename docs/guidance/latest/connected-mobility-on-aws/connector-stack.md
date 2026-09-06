@@ -21,7 +21,3 @@ The connector transforms incoming OEM-specific payloads into standard CMS teleme
 <a name="connector-stack-enrollment"></a>
 
 OEM1 vehicles are enrolled into CMS fleets through admin Lambda functions exposed on the Fleet Manager API. A rate limit of four enrollments per hour applies per OEM1 account. Fleet operators with the `platform-admin` Cognito group can perform bulk enroll and unenroll operations across all fleets. Users with the `fleet-operator` group are scoped to their assigned fleets via the `custom:fleetIds` JWT claim.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

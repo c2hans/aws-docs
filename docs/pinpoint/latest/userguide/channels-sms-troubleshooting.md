@@ -37,7 +37,3 @@ Two-way SMS responses are not received on either the SNS topic, subscribers, or 
     + If the Amazon SNS topic linked to the two-way SMS number is encrypted:
       + Verify that the key used is symmetric.
       + Verify that the key policy is modified to allow Amazon Pinpoint to use the key, see [Amazon SNS topic policies for Amazon SNS topics](https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers-two-way-sms.html#phone-number-two-way-sms-iam-policy-auto) in the *AWS End User Messaging SMS User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

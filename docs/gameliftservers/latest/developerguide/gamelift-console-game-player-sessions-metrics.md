@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 # Game and player sessions in the Amazon GameLift Servers console
 <a name="gamelift-console-game-player-sessions-metrics"></a>
 
-You can use the Amazon GameLift Servers console to work with games sessions and player sessions. For more information about game sessions and player sessions, see [Amazon GameLift Servers and the player experience](game-sessions-intro.md). The Amazon GameLift Servers console provides information and tools to help you investigate issues with your game sessions.
+You can use the Amazon GameLift Servers console to work with game sessions and player sessions. For more information about game sessions and player sessions, see [Amazon GameLift Servers and the player experience](game-sessions-intro.md). The Amazon GameLift Servers console provides information and tools to help you investigate issues with your game sessions.
 
 What you can do:
 + Explore game session and player session activity that is hosted on a specific fleet.
@@ -40,7 +40,7 @@ The **Game sessions** detail include the following information:
 + **ARN** – The Amazon Resource Name of the game session.
 + **Name** – Name generated for the game session.
 + **Location** – The location that Amazon GameLift Servers hosted the game session in.
-+ **Creation time** – Date and time that Amazon GameLift Servers created the stream session.
++ **Creation time** – Date and time that Amazon GameLift Servers created the game session.
 + **Ending time** – Date and time that the game session ended.
 + **DNS name** – The host name of the game session.
 + **IP address** – IP address specified for the game session.
@@ -57,7 +57,3 @@ Game property data, formatted as key/value pairs, to send to your game session o
 
 **Matchmaking data**
 If the game session was created with FlexMatch, matchmaking data describes information about the matchmaking configuration and rule set. This includes each match's player attributes and team assignments. Data is in JSON format. For more information about FlexMatch matchmaking, see [Build a matchmaker](https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/matchmaker-build.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

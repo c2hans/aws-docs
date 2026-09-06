@@ -66,6 +66,7 @@ This guide explains the error codes you might see when connecting to a Lightsail
 **What to do:**
 + If the instance recently started or restarted, wait a few minutes for it to finish starting, then try connecting again.
 + Confirm the instance is running in the Lightsail console.
++ Reboot the instance, then try connecting again. For instructions, see [Start, stop, or reboot your Lightsail instance](lightsail-how-to-start-stop-or-restart-your-instance-virtual-private-server.md).
 
 ## 521 (SESSION\_CONFLICT)
 <a name="connect-error-521"></a>
@@ -176,7 +177,3 @@ This guide explains the error codes you might see when connecting to a Lightsail
 1. Close existing sessions before opening new ones.
 
 1. Ensure you stay within five SSH / one RDP session per instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,7 +51,3 @@ If you currently use Claude on Bedrock, migrating to Claude Platform on AWS requ
 <a name="_commercial_considerations"></a>
 +  **Terms of service:** The [AWS Service Terms](https://aws.amazon.com/service-terms/) govern Claude Platform on AWS. Anthropic’s Commercial Terms of Service, Data Processing Addendum, and Usage Policy also apply.
 +  **Discounts and private offers:** Negotiated discounts and AWS Marketplace private offers don’t transfer automatically between Bedrock and Claude Platform on AWS. Work with your Anthropic account representative to set up commercial terms for Claude Platform on AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Claude Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query claude-platform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

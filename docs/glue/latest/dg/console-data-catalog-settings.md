@@ -28,7 +28,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/console-data-catalog-sett
 1.  Choose **Save** to update your Data Catalog with any changes you made.
 
  You can also use AWS Glue API operations to put, get, and delete resource policies. For more information, see [Security APIs in AWS Glue](aws-glue-api-jobs-security.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

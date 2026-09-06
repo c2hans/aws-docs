@@ -43,7 +43,3 @@ Here are some questions** **to consider when you create the customer contact jou
   A customer's experience should always be complete and meaningful when they're following the IVR flow, even when application or backend integration errors occur. We recommend that you design the caller experience in the case of integration failures. Typically, you can implement retries and loops, or play a message that communicates the technical difficulty or transfers the customer to an agent. In either scenario, the caller experience should not lead to an abrupt and unexplained end to the communication, which would typically result in more calls.
 
 After you outline the customer contact journey, look for repeatable processes or common patterns. These will be key points of focus when you design the foundation of your IVR architecture.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

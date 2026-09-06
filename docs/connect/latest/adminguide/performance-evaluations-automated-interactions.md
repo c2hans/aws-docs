@@ -15,7 +15,7 @@ To automatically evaluate self-service interactions, you need to first [Enable c
 + [Step 2: Set up automation](#step-setup-automation-self-service)
 + [Step 3: Set up a rule to automatically submit evaluations of self-service interactions](#step-setup-rule-self-service)
 
-Note that after setting up automation on an evaluation form (step 2), you can use the same form for AI-assisted (human-in-the loop) evaluations. You can manually start an evaluation at which point AI fills the answers automatically. You can then review or revise answers before submission. With this approach, you can also test and optimize automation before you set up rules to automatically submit evaluations (step 3).
+After setting up automation on an evaluation form (step 2), you can use the same form for AI-assisted (human-in-the loop) evaluations. You can manually start an evaluation at which point AI fills the answers automatically. You can then review or revise answers before submission. With this approach, you can also test and optimize automation before you set up rules to automatically submit evaluations (step 3).
 
 ## Step 1: Create a draft evaluation form
 <a name="step-create-draft-form-self-service"></a>
@@ -53,7 +53,7 @@ You can automatically fill evaluations of self-service interactions using integr
 
 Type in the question, questions instructions and answer options to be used by AI for evaluating performance of self-service interactions. Under Automation for a question, select ** Option 3: Generative AI**. The AI interprets the text of the question, question instructions, and analyzes the self-service interaction transcript to fill one of the answer options.
 
-Use @ to enter keywords that generative AI can understand - the words system, AI agent and bot currently refer to any non-human participant that is interacting with the customer. You can use these words interchangeably.
+Use @ to enter keywords that generative AI can understand - the words system, AI agent and bot refer to any non-human participant that is interacting with the customer. You can use these words interchangeably.
 
 ![Automation tab showing Option 3: Generative AI selected for evaluating AI agent behavior.](http://docs.aws.amazon.com/connect/latest/adminguide/images/self-service-question-gen-ai-automation.png)
 
@@ -135,7 +135,3 @@ After you have defined conditions:
 1. Choose **Add action**, select **Submit automated evaluation**, and select the form that you want to use for automatically submitting an evaluation. (This action is already selected on the page if you created the rule when you activate the form.)
 
 For more information, see [Create a rule in conversational analytics that submits an automated evaluation](contact-lens-rules-submit-automated-evaluation.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

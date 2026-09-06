@@ -197,7 +197,3 @@ Your AWS account has the following quotas related to OpenSearch UI. Unless other
 | Name | Default | Adjustable | Notes |
 | --- | --- | --- | --- |
 | OpenSearch UI (Dashboards) applications per account | Each supported Region: 30 | Yes | You can request an increase up to 50 applications per account. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

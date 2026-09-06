@@ -20,7 +20,7 @@ Behind every interaction is an agent. Agents are configured with instructions th
 ## Spaces organize context
 <a name="how-quick-works-spaces"></a>
 
-Spaces bring together the resources an agent needs: documents, dashboards, datasets, knowledge bases, and action connectors. When you assign a space to an agent, it draws on everything in that space to answer questions and complete tasks. You share spaces with your team so everyone benefits from the same context. For more information, see [Organize, collaborate, and share resources with spaces in Amazon Quick](working-with-spaces.md).
+Spaces bring together the resources an agent needs: documents, dashboards, datasets, knowledge bases, and connectors. When you assign a space to an agent, it draws on everything in that space to answer questions and complete tasks. You share spaces with your team so everyone benefits from the same context. For more information, see [Organize, collaborate, and share resources with spaces in Amazon Quick](working-with-spaces.md).
 
 ## Integrations connect Quick to your world
 <a name="how-quick-works-integrations"></a>
@@ -30,7 +30,7 @@ Integrations give Quick access to external information and the ability to act on
 **Knowledge bases**
 Bring external content into Quick for AI retrieval. Sources include Amazon S3, SharePoint, OneDrive, Confluence, Google Drive, and web crawlers. Quick keeps the index in sync as sources update.
 
-**Action connectors**
+**Connectors**
 Let Quick read data, trigger workflows, and update records in external services. You create connectors from OpenAPI specifications or Model Context Protocol (MCP) servers.
 
 **Extensions**
@@ -49,10 +49,10 @@ Each Quick feature combines the components above in different ways:
 | Feature | What it does | What it uses |
 | --- | --- | --- |
 | Quick Sight | Interactive dashboards and analytics | Structured data connections, SPICE, datasets |
-| Quick Flows | Task automation | Action connectors, spaces, agent logic |
-| Quick Automate | End-to-end process automation | Action connectors, agents, human-in-the-loop |
+| Quick Flows | Task automation | Connectors, spaces, agent logic |
+| Quick Automate | End-to-end process automation | Connectors, agents, human-in-the-loop |
 | Quick Research | In-depth cited reports | Spaces, knowledge bases, web |
-| Apps in Quick | Interactive web applications | Structured data, action connectors, Quick Sight visuals |
+| Apps in Quick | Interactive web applications | Structured data, connectors, Quick Sight visuals |
 | Desktop application | Personalized AI on your machine | Local files, email, calendar, MCP servers |
 
 ## Where to go next
@@ -68,7 +68,3 @@ Each Quick feature combines the components above in different ways:
 | Build an app | [Build web applications with apps in Amazon Quick](using-amazon-quick-apps.md) |
 | Connect Quick to my tools | [Work with integrations in Amazon Quick](working-with-integrations.md) |
 | Use Quick on my desktop | [What is Amazon Quick on desktop?](what-is-desktop.md) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

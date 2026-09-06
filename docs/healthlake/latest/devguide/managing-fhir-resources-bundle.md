@@ -974,7 +974,3 @@ HealthLake validates the bundle at submission time and returns errors synchronou
 **Processing errors**
 
 Processing errors occur after the transaction has been queued and are returned through the polling URL. These include transaction conflicts, where another operation modified a resource that is part of the transaction, and server errors during processing. When a processing error occurs, no resource mutations are done for resources in the transaction. The polling URL will return an `OperationOutcome` with the error details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -99,7 +99,3 @@ To get started with any SDK:
 1. Start with basic operations like creating a bot or listing existing resources
 
 For detailed examples and step-by-step guidance on creating bots programmatically, see the SDK documentation links provided in the table above.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

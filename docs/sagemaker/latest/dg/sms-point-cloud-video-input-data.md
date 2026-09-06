@@ -62,7 +62,3 @@ When all of your video frames have been successfully extracted from your videos,
 All of the frames extracted from a single video file are used for a labeling task. If you extract video frames from multiple video files, multiple tasks are created for your labeling job, one for each sequence of video frames.
 
  Ground Truth stores each sequence of video frames that it extracts in your Amazon S3 location for input datasets using a unique [key name prefix](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-keys). In the Amazon S3 console, key name prefixes are folders.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

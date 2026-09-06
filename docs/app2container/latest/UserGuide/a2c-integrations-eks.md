@@ -55,7 +55,3 @@ The process for setting up application containers for hosting in Amazon EKS is i
      1. **Code build** – Builds the Docker image for your application container, and pushes the updated image to the Amazon ECR repository that you configured for your application.
 
      1. If you use the `--deploy` option for the **generate pipeline** command, App2Container deploys the pipeline with the configuration values in the CloudFormation template it generates. To customize the configuration, run the command without the `--deploy` option, and then manually deploy using the AWS CLI when you are ready.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App2Container. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app2container` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

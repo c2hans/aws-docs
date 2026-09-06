@@ -113,7 +113,3 @@ This policy has the following settings:
 + **Cookies included in cache key:** No cookies are included.
 + **Query strings included in cache key:** No query strings are included.
 + **Cache compressed objects setting:** Gzip and Brotli enabled.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

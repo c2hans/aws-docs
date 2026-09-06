@@ -39,7 +39,3 @@ Here are a few important items to consider when updating throughput capacity:
 <a name="when-to-modify-throughput-capacity"></a>
 
 Amazon FSx integrates with Amazon CloudWatch, enabling you to monitor your file system's ongoing throughput usage levels. The performance (throughput and IOPS) that you can drive through your file system depends on your specific workload’s characteristics, in addition to your file system’s throughput capacity, storage capacity, and storage class. For information about how to determine your file system's current throughput, see [How to use Amazon FSx for Lustre CloudWatch metrics](how_to_use_metrics.md). For information about CloudWatch metrics, see [Monitoring with Amazon CloudWatch](monitoring-cloudwatch.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

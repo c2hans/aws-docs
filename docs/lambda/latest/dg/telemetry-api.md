@@ -278,7 +278,3 @@ The following table summarizes all types of `Event` objects, and links to the [T
 | Platform event | `platform.logsDropped` | Lambda dropped log entries. | [`platform.logsDropped`](telemetry-schema-reference.md#platform-logsDropped) schema |
 | Function logs | `function` | A log line from function code. | [`function`](telemetry-schema-reference.md#telemetry-api-function) schema |
 | Extension logs | `extension` | A log line from extension code. | [`extension`](telemetry-schema-reference.md#telemetry-api-extension) schema |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

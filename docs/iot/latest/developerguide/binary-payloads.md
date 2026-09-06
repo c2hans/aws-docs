@@ -218,7 +218,3 @@ Here are some best practices and troubleshooting tips.
 + Update `FileDescriptorSet` using a new object key and update the object key in your Rule.
 
   You can update `FileDescriptorSet` by uploading an updated descriptor file to your Amazon S3 bucket. Your updates to `FileDescriptorSet` can take up to 15 minutes to be reflected. To avoid this delay, it's a good practice to upload your updated `FileDescriptorSet` using a new object key, and update the object key in your Rule.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -120,7 +120,3 @@ Before you use this example policy, check the following items:
 + Replace STREAM\_NAME with the name of your Kinesis data stream.
 + Replace CONSUMER\_NAME with the name of your consumer, typically your application name when using KCL.
 + Replace KCL\_APPLICATION\_NAME with the name of your KCL application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/c_intro_catalog_views
 The system catalogs store schema metadata, such as information about tables and columns. System catalog tables have a PG prefix.
 
 The standard PostgreSQL catalog tables are accessible to Amazon Redshift users. For more information about PostgreSQL system catalogs, see [PostgreSQL system tables](https://www.postgresql.org/docs/8.0/static/catalogs.html#CATALOGS-OVERVIEW)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

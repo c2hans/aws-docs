@@ -108,7 +108,3 @@ The Discovery API does not use service-linked roles. All access is controlled th
 <a name="discovery-cross-account-access"></a>
 
 You can grant cross-account access to the Discovery API using IAM roles. Create a role in the target account with the appropriate Discovery API permissions, then assume the role from the source account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

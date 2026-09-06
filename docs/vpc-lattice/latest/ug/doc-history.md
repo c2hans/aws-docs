@@ -28,7 +28,3 @@ The following table describes the documentation releases for VPC Lattice.
 | [VPC Lattice now reports an updated list of unsupported instance types](#doc-history) | Three additional instances have been added to the unsupported list of instances. | January 26, 2023 |
 | [VPC Lattice now reports changes to its AWS managed policies](#doc-history) | Beginning December 5, 2022, changes to managed policies are reported in the topic "AWS managed policies for VPC Lattice" in the "Security" chapter. The first change listed is the addition of permissions needed for CloudWatch monitoring. | December 5, 2022 |
 | [Initial release](#doc-history) | Initial release of the VPC Lattice User Guide | December 5, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

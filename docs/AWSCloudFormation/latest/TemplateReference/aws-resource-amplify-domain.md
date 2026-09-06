@@ -158,7 +158,3 @@ UPDATE\_COMPLETE
 The certificate has been associated with a domain.
 UPDATE\_FAILED
 The certificate has failed to be provisioned or associated, and there is no existing active certificate to roll back to.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

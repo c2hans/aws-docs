@@ -75,7 +75,3 @@ The source code for `prvUploadS3ObjectFile()` can be found on the [ GitHub](http
 The `prvVerifyS3ObjectFileSize` function calls `prvGetS3ObjectFileSize` to retrieve the size of the object in the S3 bucket. The Amazon S3 HTTP server doesn't currently support HEAD requests using a pre-signed URL, so the 0th byte is requested. The size of the file is contained in the response's `Content-Range` header field. A `206 Partial Content` response is expected from the server. Any other response status code is an error.
 
 The source code for `prvGetS3ObjectFileSize()` can be found on the [ GitHub](https://github.com/aws/amazon-freertos/blob/main/demos/coreHTTP/http_demo_s3_upload.c#L370-L535) website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

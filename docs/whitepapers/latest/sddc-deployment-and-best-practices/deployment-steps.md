@@ -125,7 +125,3 @@ This organization has no relationship to AWS Organizations. Each organization ha
  Using federated identity management enables you to control authentication to your Organization and services by assigning Organization and service roles to your enterprise groups.
 
  To set up a federated identity with the VMware Identity Manager service you will need the [VMware Identity Manager connector](https://docs.vmware.com/en/VMware-Workspace-ONE-Access/19.03/identitymanager-connector-win/GUID-F3FD79B6-5F9F-4330-95F3-AF163A5D19C4.html), which is provided at no additional cost.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

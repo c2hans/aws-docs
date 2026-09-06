@@ -28,7 +28,3 @@ Adding an AWS account creates a connection that authorizes CodeCatalyst to use t
 Account connections are created by completing authorization with the AWS account. After the connection is created, you further configure the connection for workflows and projects to use by adding IAM roles.
 
 For the steps to configure account connections in the AWS Management Console page for CodeCatalyst as the administrator for the AWS account and the space, see [Managing connected accounts](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-billing.html) in the *CodeCatalyst Administrator Guide*. Account connections can be configured for restriction to specific projects. You can only associate workflows or VPC connections with an AWS account that has access to your project. For more information, see [Configuring project-restricted account connections](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-accounts.html#managing-accounts-restriction).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

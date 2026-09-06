@@ -24,7 +24,3 @@ The following tables describe the important changes to the documentation for Ama
 | --- | --- | --- |
 | Update SendEvent | Changed the maximum metadata length of the `attributes` field from 1 KB to 4 KB. | November 19, 2025 |
 | Split out a Chat UG | Now that there is an IVS Chat User Guide (created in this release), the Document History entries for the existing [IVS Chat API Reference](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/Welcome.html) and [IVS Chat Messaging API Reference](https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/welcome.html) will be located here, moving forward. Prior history entries for those Chat API References are in [Document History (Low-Latency Streaming)](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/doc-history.html). | December 28, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

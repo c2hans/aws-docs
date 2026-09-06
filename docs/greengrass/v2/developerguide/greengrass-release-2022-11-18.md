@@ -28,7 +28,3 @@ The following table lists AWS-provided components that include new and updated f
 | --- | --- |
 | Greengrass nucleus | Version 2.9.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.9.1"></a>**Bug fixes and improvements**<br />   Adds fix where Greengrass restarts if a deployment removes a plugin component.    |
 | Log manager | Version 2.3.0 of the new [log manager](log-manager-component.md) is available. We recommend that you upgrade to Greengrass nucleus 2.9.1 when you upgrade to log manager 2.3.0. <br /><a name="changelog-log-manager-2.3.0"></a>**New features**<br />   Reduces log delays by processing and directly uploading active log files instead of waiting for new files to be rotated.   <br />**Bug fixes and improvements**<br />   Improves support of log rotation when rotating files with a unique name.   Additional minor fixes and improvements.    |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

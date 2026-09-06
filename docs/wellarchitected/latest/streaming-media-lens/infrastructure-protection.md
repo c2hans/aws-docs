@@ -42,7 +42,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
  When using **AWS Elemental MediaPackage** or a content origin built on **Amazon EC2**, restrict requests to originate only from known IP addresses of the CDN PoPs and, if applicable, use security groups to restrict incoming traffic. To isolate access to known **Amazon CloudFront** IP addresses, AWS provides [a JSON resource](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/LocationsOfEdgeServers.html) that includes those address ranges, which is regularly updated.
 
  If you are using AWS Application Load Balancers or Amazon CloudFront, you can also use **AWS WAF** (Web Application Firewall) to validate requests originating from known IP addresses. **AWS WAF** lets you create rules to filter web traffic based on conditions that include IP addresses, HTTP headers and body, or custom URIs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

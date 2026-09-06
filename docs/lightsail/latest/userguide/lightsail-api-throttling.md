@@ -127,7 +127,3 @@ If your workload requires higher dynamic request-rate limits, you can request an
 1. For **Description**, provide the following information:
    + A brief description of your use case. If available, include the IDs of a few Lightsail requests that were throttled.
    + The one-hour time window when peak throttling or usage occurred.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

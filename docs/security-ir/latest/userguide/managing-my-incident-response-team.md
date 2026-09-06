@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/managing-my
  Your incident response teammates specified on a membership level will be automatically added to any case. You can add or remove individual teammates at any time after a case has been created.
 
  The incident response team will receive an email notification on the events listed in [ communication preferences](https://docs.aws.amazon.com/security-ir/latest/APIReference/API_IncidentResponder.html#securityir-Type-IncidentResponder-communicationPreferences).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

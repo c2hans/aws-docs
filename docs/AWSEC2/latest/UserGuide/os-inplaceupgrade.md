@@ -115,7 +115,3 @@ If the instance has not passed all status checks after several hours, see [Troub
 1. If you upgraded to Windows Server 2012 R2, we recommend that you upgrade the PV drivers to AWS PV drivers. If you upgraded on a Nitro-based instance, we recommend that you install or upgrade the NVME and ENA drivers. For more information, see [NVMe drivers](aws-nvme-drivers.md) or [Enable enhanced networking on Windows](enabling_enhanced_networking.md#enable-enhanced-networking-ena-windows).
 
 1. Re-enable antivirus and anti-spyware software and firewalls.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

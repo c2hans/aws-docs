@@ -107,7 +107,3 @@ You can use the following options to select servers from the network diagram:
 Selected servers are shown in a list in the same pane as the server details. You can toggle back and forth between the server details view and the selected server list view by choosing the server icon.
 
 After you select one or more servers, you can create an application, or add to an existing one, by choosing **Group as application**. You can add a descriptive tag to the selected servers by choosing **Add tag** from the **Actions ** menu. Doing so shows a dialog box where you can type a value for **Key**, and optionally a value for **Value**. For more information, see [Step 3: Group servers as applications](gs-new-user-discovery.md#gs-discovery-group-as-applications).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

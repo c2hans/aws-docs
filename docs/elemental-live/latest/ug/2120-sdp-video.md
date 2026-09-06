@@ -39,7 +39,3 @@ Following is information about the data in this example:
 + `Exactframerate` specifies the frames per second (fps).
 + `Raw` is the video compression—`raw` for uncompressed video, `jxsv` for JPEG XS.
 + `90000` is the frequency.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

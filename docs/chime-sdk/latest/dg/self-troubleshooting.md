@@ -61,7 +61,3 @@ As a best practice, start the debugging process by trying to reproduce your issu
 <a name="ready-checker"></a>
 
 Use the [Amazon Chime SDK Meeting Readiness Checker](https://github.com/aws/amazon-chime-sdk-js#meeting-readiness-checker) on GitHub. The checker helps verify audio and video devices, and user connections. You can present the results to your end users with by using pass/fail statues that expose the root cause of any issues.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

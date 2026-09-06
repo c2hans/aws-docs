@@ -91,7 +91,3 @@ To find your integration key and secret key in Cisco Duo, use the following step
 1. Navigate to **Applications** and then choose **Protect an Application**.
 
 1. "Click **Protect an Application** and locate the entry for **Admin API** in the applications list. Click **Protect** at the far-right to configure the application. Scroll down to the scopes section and add **Grant read log** and **Grant read resource**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

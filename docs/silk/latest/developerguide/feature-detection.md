@@ -16,7 +16,3 @@ You can also use user agent detection to target content, but this approach can b
 + [HTML5 Rocks: Feature, Browser, and Form Factor Detection: It's Good for the Environment](http://www.html5rocks.com/en/tutorials/detection/)
 + [A List Apart: Taking Advantage of HTML5 and CSS3 with Modernizr](http://alistapart.com/article/taking-advantage-of-html5-and-css3-with-modernizr)
 + [Dive Into HTML5: Detecting HTML5 Features](http://diveintohtml5.info/detect.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Silk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query silk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

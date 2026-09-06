@@ -60,7 +60,3 @@ If you need separate blueprints because document formats are very different or r
 + Do not include two blueprints of the same type in a project (e.g. two W2 blueprints). Information from the document itself and the blueprint is used to process documents, and including multiple blueprints of the same type in a project will lead to worse performance.
 
 By using document splitting and multiple blueprint matching, BDA can more flexibly handle varied document sets while applying the most appropriate extraction logic to each document.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -137,7 +137,3 @@ You can implement standard output locking if you want to include SCTE 35 message
   In this case, make sure to include a time buffer between the time that you enter the message and the time for that message. In other words, don't enter an *immediate* start time for the cue out or the cue in.
 
   A message with an immediate start can compromise the frame accuracy of the pool of locked outputs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

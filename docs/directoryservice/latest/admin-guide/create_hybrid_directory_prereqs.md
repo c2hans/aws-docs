@@ -244,7 +244,3 @@ The following are considerations when creating directory assessments and the num
 + A directory assessment is automatically created when you create a hybrid directory. There are two types of assessments: `CUSTOMER` and `SYSTEM`. Your AWS account has a limit of 100 `CUSTOMER` directory assessments.
 + If you attempt to create a hybrid directory and you already have 100 `CUSTOMER` directory assessments, you will encounter an error. Delete assessments to free up capacity before trying again.
 + You can request an increase to your `CUSTOMER` directory assessment quota by contacting Support or delete existing CUSTOMER directory assessments to free up capacity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -61,7 +61,3 @@ Although the Monochrome style includes a reduced set of POIs, the underlying til
 The Monochrome style supports different political views, ensuring that maps display the correct borders for your users. The style also allows for easy switching between languages for map labels, with dozens of supported languages and writing systems.
 
 ![Map of Taiwan showing major cities and the Taiwan Strait, with a monochrome color scheme.](http://docs.aws.amazon.com/location/latest/developerguide/images/monochrome-language-switcher.gif)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

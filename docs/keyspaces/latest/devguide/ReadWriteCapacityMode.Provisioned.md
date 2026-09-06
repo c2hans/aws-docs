@@ -40,7 +40,3 @@ Repeated errors due to insufficient capacity can lead to client-side driver spec
 To change the throughput capacity settings for tables, you can use the AWS Management Console or the `ALTER TABLE` statement using CQL, for more information see [ALTER TABLE](cql.ddl.table.md#cql.ddl.table.alter).
 
 To learn more about default quotas for your account and how to increase them, see [Quotas for Amazon Keyspaces (for Apache Cassandra)](quotas.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

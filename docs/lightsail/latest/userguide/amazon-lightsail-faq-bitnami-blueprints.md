@@ -37,7 +37,3 @@ The deprecation does not require you to modify your operating model. If you were
 Yes. Your operational model for maintaining existing instances is not affected. You are responsible for keeping your running instances up-to-date by applying any software updates and security patches. The nature of this responsibility model provides flexibility and control. To learn more, refer to [Update management](amazon-lightsail-update-management.md).
 
 When creating a new instance through the Lightsail console or API, we recommend using a blueprint packaged by Lightsail to get the up-to-date blueprint. Blueprints packaged by Lightsail are available for WordPress, WordPress Multisite, LAMP, Nginx, and Node.js.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

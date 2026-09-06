@@ -108,7 +108,3 @@ allow = true {
 The first rule in the policy allows access for any user who tries to see their own salary information, as discussed previously. Having two rules with the same name, *allow, *functions as a logical **or** operator in Rego. The second rule retrieves the list of all direct reports associated with *input.user *(from the data in the previous diagram) and assigns this list to the *managers* variable. Lastly, the rule checks whether the user who is trying to see their salary is a direct report of *input.user* by verifying that their name is contained in the *managers* variable.
 
 The examples in this section are very basic and do not provide a complete or thorough exploration of the capabilities of Rego and OPA. For more information, review the [OPA documentation](https://www.openpolicyagent.org/docs/latest/), see the [OPA GitHub README](https://github.com/open-policy-agent/opa) file, and experiment in the [Rego playground](https://play.openpolicyagent.org/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

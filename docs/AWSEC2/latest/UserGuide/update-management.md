@@ -13,7 +13,3 @@ For EC2 instances in an Auto Scaling group, you can use the [AWS-PatchAsgInstanc
 + **AL2023** – [Updating AL2023](https://docs.aws.amazon.com/linux/al2023/ug/updating.html) in the *Amazon Linux 2023 User Guide*
 + **AL2** – [Manage software on your Amazon Linux 2 instance](https://docs.aws.amazon.com/linux/al2/ug/managing-software.html) in the *Amazon Linux 2 User Guide*
 + **Windows instances** – [Update management](ec2-windows-security-best-practices.md#ec2-windows-update-management)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

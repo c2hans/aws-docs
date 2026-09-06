@@ -16,7 +16,3 @@ For a pipeline with an Amazon S3 source, modify the pipeline so that change dete
 This includes using a bucket that is enabled for event notifications, where you do not need to create a separate CloudTrail trail. If you are using the console, then an event rule and CloudTrail trail are set up for you. For those steps, see [Migrate polling pipelines with an S3 source and CloudTrail trail](update-change-detection.md#update-change-detection-S3).
 + **CLI: **[Migrate polling pipelines with an S3 source and CloudTrail trail (CLI)](update-change-detection.md#update-change-detection-cli-S3)
 + **CloudFormation: **[Migrate polling pipelines with an S3 source and CloudTrail trail (CloudFormation template)](update-change-detection.md#update-change-detection-cfn-s3)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

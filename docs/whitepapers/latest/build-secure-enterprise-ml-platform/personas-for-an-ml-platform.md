@@ -14,7 +14,3 @@ Building an enterprise machine learning platform requires the collaboration of d
 +  **Data scientists and ML engineers** — Data scientists and ML engineers are the end-users of the platform. They use the platform for experimentation, such as exploratory data analysis, data preparation and feature engineering, model training and model validation. They also help analyze model monitoring results and determine if the model is performing as expected in production.
 +  **IT Auditors** — IT auditors are responsible for analyzing system access activities, identifying anomalies and violations, preparing audit reports for audit findings, and recommending remediations.
 +  **Model risk managers** — Model risk managers are responsible for ensuring machine learning models meet various external and internal control requirements such as model inventory, model explainability, model performance monitoring, and model lifecycle management.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

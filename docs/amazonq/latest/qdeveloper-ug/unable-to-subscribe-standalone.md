@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/unable-to-s
 + Check that you're in the Amazon Q Developer console (not the Amazon Q console).
 + Check that you're in a supported AWS Region for Amazon Q Developer. For more information, see [Supported Regions for the Q Developer console and Q Developer profile](q-admin-setup-subscribe-regions.md#qdev-console-and-profile-regions).
 + Ensure you're following the correct workflow for the type of account you have. For more information, see [Getting started with a personal account (Builder ID)](getting-started-builderid.md), [Subscribe users to Amazon Q Developer Pro in a standalone account](subscribe-standalone.md), [Subscribe users to Amazon Q Developer Pro in a management account](subscribe-management.md), or [Subscribe users to Amazon Q Developer Pro in a member account](subscribe-member.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

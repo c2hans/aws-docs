@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/create-datashare-exte
 # Adding data lake tables to a datashare
 <a name="create-datashare-external-views"></a>
 
-With a datashare, a data *producer* can securely share database objects of fine granularity, such as schemas and tables, with *consumers* in the same AWS account or in different accounts. The producer can also share objects across regions. This topic describes how to add objects from a data lake, specifically, from the AWS Glue data catalog, to a datashare. It covers two use cases:
+With a datashare, a data *producer* can securely share database objects of fine granularity, such as schemas and tables, with *consumers* in the same AWS account or in different accounts. The producer can also share objects across Regions. This topic describes how to add objects from a data lake, specifically, from the AWS Glue data catalog, to a datashare. It covers two use cases:
 + *Adding a late-binding view to a datashare that references a table from a data lake* – This is convenient for a consumer, because preliminary configuration, such as defining permissions on the external source data, for example with Lake Formation, is likely already completed. An additional benefit is that a view added to a datashare can join tables from the data lake with Redshift native tables.
 + *Adding a table from an external schema to a datashare directly* – This makes objects from the data lake available to consumers with no additional layers or logic. Consumers can query the table or join it with tables on the consumer.
 
@@ -149,7 +149,3 @@ The following details how costs are attributed for storing and scanning data lak
 + Amazon S3 costs for storage and operations, such as listing buckets, is billed to the account that owns each Amazon S3 bucket.
 
 For additional details regarding billing for Amazon Redshift Serverless, see [Billing for Amazon Redshift Serverless](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-billing.html). More billing and pricing information is available at [Amazon Redshift pricing](https://aws.amazon.com/redshift/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

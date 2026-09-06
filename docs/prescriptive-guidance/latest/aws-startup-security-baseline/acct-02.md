@@ -12,7 +12,3 @@ The AWS account root user is created when you sign up for an AWS account, and th
 1. Require multi-factor authentication (MFA) for the root user. For more information, see [ACCT.05 Require multi-factor authentication (MFA) to log in](acct-05.md).
 
 1. Create an administrative user so that you don't use the root user for everyday tasks. For more information about configuring user access, see [ACCT.03 Configure console access for each user](acct-03.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

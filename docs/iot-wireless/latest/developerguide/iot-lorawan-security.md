@@ -34,7 +34,3 @@ LoRaWAN devices and AWS IoT Core for LoRaWAN store pre-shared root keys. Session
 Before the web socket connection is established, AWS IoT Core for LoRaWAN uses the [TLS Server and Client Authentication mode](https://docs.aws.amazon.com/iot/latest/developerguide/transport-security.html) to authenticate the gateway. To ensure the confidentiality of the LoRaWAN protocol, [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) [version 1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2). is used. TLS support is available in a number of programming languages and operating systems. Data within AWS is encrypted by the specific AWS service. For more information about data encryption on other AWS services, see the security documentation for that service.
 
  AWS IoT Core for LoRaWAN also maintains a Configuration and Update Server (CUPS) that configures and updates the certificates and keys used for TLS authentication.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

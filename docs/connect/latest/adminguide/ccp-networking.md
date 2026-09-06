@@ -232,7 +232,3 @@ When rerouting audio to an existing device, consider the location of the device 
 <a name="using-directconnect"></a>
 
 Contact Control Panel (CCP) network connectivity issues are most often rooted in your route to AWS using private WAN/LAN, ISP, or both. While Direct Connect does not solve issues specific to private LAN/WAN traversal to your edge router, it can help solve for latency and connectivity issues between your edge router and AWS resources. Direct Connect provides a durable, consistent connection rather than relying on your ISP to dynamically route requests to AWS resources. You can also use it to configure your edge router to redirect AWS traffic across dedicated fiber rather than traversing the public WAN.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

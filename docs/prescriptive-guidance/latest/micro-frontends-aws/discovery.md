@@ -30,7 +30,3 @@ The goal of a canary release is to get early feedback about the changes, monitor
 For example, a change might introduce a bug that, in the first couple minutes of a release, results in a loss of revenue or a performance degradation. Automated monitoring can initiate an alarm. With the service discovery pattern, that alarm can stop the deployment and immediately roll back, affecting only 20 percent of users instead of 100 percent. The business benefits from the reduced scope of the issue.
 
 For an example architecture that uses DynamoDB as storage to implement a REST Admin API, see the [Frontend Service Discovery on AWS solution](https://github.com/awslabs/frontend-discovery-service) on GitHub. Use the AWS CloudFormation template to integrate the architecture in your own CI/CD pipelines. The solution includes a REST Consumer API for integrating the solution with your frontend applications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

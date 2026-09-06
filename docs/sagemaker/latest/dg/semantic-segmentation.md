@@ -148,7 +148,3 @@ To query a trained model that is deployed to an endpoint, you need to provide an
 The SageMaker AI semantic segmentation algorithm only supports GPU instances for training, and we recommend using GPU instances with more memory for training with large batch sizes. The algorithm can be trained using P2, P3, G4dn, or G5 instances in single machine configurations.
 
 For inference, you can use either CPU instances (such as C5 and M5) and GPU instances (such as P3 and G4dn) or both. For information about the instance types that provide varying combinations of CPU, GPU, memory, and networking capacity for inference, see [Amazon SageMaker AI ML Instance Types](https://aws.amazon.com/sagemaker/pricing/instance-types/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,3 @@ When you create a materialized view, Amazon Redshift runs the user-specified SQL
 The following illustration provides an overview of a materialized view called `mv_total_orders`. This view is defined by a SQL query that uses two base tables: customer and order.
 
 ![SQL query with two base tables](http://docs.aws.amazon.com/prescriptive-guidance/latest/materialized-views-redshift/images/guide-img/fd96a9bf-2877-4487-8c53-466d142e055c/images/45279be2-b622-466b-b80e-1889ef956cb7.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

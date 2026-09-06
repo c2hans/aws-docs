@@ -48,7 +48,3 @@ Technology provides a great foundation for accelerating large migrations. For ex
 **Suggestion 1.1.6**: Define your process.
 
  Having a well-defined process is a key for a successful migration. Things like clear escalation path to remove blocker, communication plan, and change request process are examples of processes that need to be defined and refined as the migration occurs. For a more comprehensive list of example processes to define, see [Process perspective](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-large-scale-migrations/process.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

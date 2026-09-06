@@ -12,7 +12,3 @@ The [infrastructure as code (IaC)](https://docs.aws.amazon.com/whitepapers/lates
 You can use an IaC approach to provision and manage IT infrastructure resources by using code and creating configuration files (typically JSON or YAML files) that define your infrastructure specifications. An IaC approach is usually combined with a version control system such as Git to manage the configuration files. EDP is an approach where you develop code to run in response to events that you define. Typically, the code modifies a resource or its properties.
 
 This guide is intended for technical roles that have a basic understanding of general DevOps principles, EDP architectures, and AWS Cloud services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

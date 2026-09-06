@@ -106,7 +106,3 @@ The following are the service endpoints and service quotas for this service.
 | Total Queued Bulk Import jobs per datastore | Each supported Region: 25 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/healthlake/quotas/L-5E2BA274)  | The maximum number of queued bulk import jobs per datastore at any given time. |
 | Total import job size | Each supported Region: 5,000 Gigabytes |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/healthlake/quotas/L-DEBEEE9B)  | The maximum size (in GB) of all files included in the import job. |
 | Total input size per transformation job | Each supported Region: 1 Gigabytes |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/healthlake/quotas/L-037097B2)  | The maximum combined size of all source files in a single bulk transformation job. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,7 @@ With Amazon Redshift, you can access and analyze datasets from AWS Data Exchange
 
 1. On the AWS Data Exchange console, discover and subscribe to data products that contains AWS Data Exchange datashares.
 
-   Once your subscription starts, you can access licensed Amazon Redshift data that is imported as assets to datasets that contain AWS Data Exchange datashares.
+   After your subscription starts, you can access licensed Amazon Redshift data that is imported as assets to datasets that contain AWS Data Exchange datashares.
 
    For more information on how to get started with using data products that contain AWS Data Exchange datashares, see [Subscribing to data products on AWS Data Exchange](https://docs.aws.amazon.com/data-exchange/latest/userguide/subscribe-to-data-sets.html).
 
@@ -70,7 +70,7 @@ With Amazon Redshift, you can access and analyze datasets from AWS Data Exchange
    CREATE DATABASE sales_db FROM DATASHARE salesshare OF ACCOUNT '123456789012' NAMESPACE '13b8833d-17c6-4f16-8fe4-1a018f5ed00d';
    ```
 
-   If you want more granular control over access to the objects in the local database, use the WITH PERMISSIONS clause when creating the database. This lets you grant object-level permissions for objects in the database in step 6.
+   If you want more granular control over access to the objects in the local database, use the WITH PERMISSIONS clause when creating the database. With this clause, you can grant object-level permissions for objects in the database in step 6.
 
    ```
    CREATE DATABASE sales_db WITH PERMISSIONS FROM DATASHARE salesshare OF ACCOUNT '123456789012' NAMESPACE '13b8833d-17c6-4f16-8fe4-1a018f5ed00d';
@@ -143,7 +143,3 @@ With Amazon Redshift, you can access and analyze datasets from AWS Data Exchange
 
    SELECT * FROM sales_data;
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

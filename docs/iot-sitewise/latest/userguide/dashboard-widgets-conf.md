@@ -51,7 +51,3 @@ The SiteWise Monitor feature is no longer available to new customers. Existing c
     + Choose **Add a threshold** to add to the widget.
     + Choose **Operator** and give a **Value** for the threshold. Customize the threshold with a color from the color palette.
 ![The IoT dashboard widget configuration page with style shown.](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/ai-dashboard-widget-thresh.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

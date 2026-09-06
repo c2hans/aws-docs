@@ -62,7 +62,3 @@ The following table provides information about error codes you may see for the M
 | SPE-5154 |  There was a problem while retrieving AD Client Secret. AD Client Secret should not be empty. | Ensure AD Client Secret is non-empty. |
 | SPE-5155 | There can't be more than one site for SharePoint on-prem app-only authentication. | Ensure that their must be only single site present for SharePoint on-prem app-only authentication. |
 | SPE-5200 | There was a problem while connecting to the URL. | Ensure the siteUrl exists. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

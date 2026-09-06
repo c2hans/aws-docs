@@ -45,7 +45,3 @@ The subnets that you specify must meet the following requirements:
 <a name="eks-outposts-instance-store-subnet-access"></a>
 
 Local clusters need connectivity to the AWS Region for cluster management operations, `etcd` backups, and control plane updates. In a disconnected state, the local cluster can continue to operate, but the cluster management operations that Amazon EKS can take are limited. For more information, see [Prepare local Amazon EKS clusters on AWS Outposts configured with EC2 instance store for network disconnects](eks-outposts-instance-store-network-disconnects.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

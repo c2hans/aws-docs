@@ -30,7 +30,3 @@ AWS Control Tower allows blueprint updates when the provisioned product is in th
 1. Then, follow the update account process from AWS Control Tower to fix the blueprint deployment error.
 
 *We recommend this manual step because:* When you remove a blueprint, it can cause resources in the member account to be removed. Removing resources may affect your existing workloads. For this reason, we recommend this method rather than the alternative way of updating a blueprint—which is by removing and replacing the original blueprint—especially if you are running production workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

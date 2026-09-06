@@ -99,7 +99,3 @@ To acknowledge an application's capabilities using the AWS CLI, follow these ste
 To delete an application that you previously deployed using the AWS Serverless Application Repository, follow the same procedure as for deleting an CloudFormation stack:
 + **AWS Management Console**: To delete an application using the AWS Management Console, see [Deleting a Stack on the CloudFormation Console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html) in the *AWS CloudFormation User Guide.*
 + **AWS CLI**: To delete an application using the AWS CLI, see [Deleting a Stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-cli-deleting-stack.html) in the *AWS CloudFormation User Guide.*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Repository. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverlessrepo` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

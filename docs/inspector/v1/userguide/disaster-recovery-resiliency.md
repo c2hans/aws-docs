@@ -14,7 +14,3 @@ For more information about AWS Regions and Availability Zones, see [AWS Global I
 Amazon Inspector Classic is highly available and executes queries using compute resources across multiple Availability Zones. It automatically routes queries appropriately if a particular Availability Zone is unreachable.
 
 Amazon Inspector Classic uses Amazon S3 as its underlying data store, which makes your data highly available and durable. Amazon S3 provides durable infrastructure to store important data. It is designed for durability of 99.999999999% of objects. Your data is redundantly stored across multiple facilities and multiple devices in each facility.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

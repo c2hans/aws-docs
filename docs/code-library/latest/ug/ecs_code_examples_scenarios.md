@@ -16,7 +16,3 @@ Scenarios target an intermediate level of experience to help you understand serv
 + [Create a container task for the serverless launch type](ecs_example_ecs_GettingStarted_086_section.md)
 + [Creating a container service for virtual machine instances](ecs_example_ecs_GettingStarted_018_section.md)
 + [Get ARN information for clusters, services, and tasks](ecs_example_ecs_Scenario_GetClustersServicesAndTasks_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

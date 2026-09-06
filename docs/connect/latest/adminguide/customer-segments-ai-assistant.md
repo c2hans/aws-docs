@@ -171,7 +171,3 @@ Allow sufficient time for complete data processing before relying on advanced fe
  **Segment refinement**: Although the system-generated segments are a great starting point, customers might still want to review and refine the details to ensure the segment aligns perfectly with their business objectives. The segmentation interface allows for full customization after the initial generation.
 
  **Performance and scaling**: Under high concurrency, there might be some latency in the segment generation process as the language model needs to process each prompt. The system is designed to handle typical segmentation workloads, but customers with extremely high segmentation demands might need to adjust their workflows accordingly
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

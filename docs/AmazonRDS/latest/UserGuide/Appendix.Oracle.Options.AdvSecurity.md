@@ -145,7 +145,3 @@ You can use the same name for the new instance as the previous DB instance.
 <a name="Appendix.Oracle.Options.AdvSecurity.Pump"></a>
 
 You can use Oracle Data Pump to import or export encrypted dump files. Amazon RDS supports the password encryption mode `(ENCRYPTION_MODE=PASSWORD)` for Oracle Data Pump. Amazon RDS does not support transparent encryption mode `(ENCRYPTION_MODE=TRANSPARENT)` for Oracle Data Pump. For more information, see [Importing using Oracle Data Pump](Oracle.Procedural.Importing.DataPump.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

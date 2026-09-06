@@ -65,7 +65,3 @@ This chapter contains all of the AWS App Runner release notes, latest first, org
 | [Release: Direct container launch from Amazon ECR Public Gallery](https://docs.aws.amazon.com/apprunner/latest/relnotes/release-2021-09-29-gallery.html) | Amazon ECR Public added the ability to launch containers directly to AWS App Runner. | September 29, 2021 |
 | [Release: App Runner recent updates](https://docs.aws.amazon.com/apprunner/latest/relnotes/release-2021-09-17-recent.html) | We recently made some important updates to AWS App Runner. | September 17, 2021 |
 | [Release: AWS App Runner general availability](https://docs.aws.amazon.com/apprunner/latest/relnotes/release-2021-05-18-apprunner-release.html) | AWS announces general availability of AWS App Runner. | May 18, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ You can use the following mechanisms for performing other tasks related to acces
 
 You can use the following mechanisms for tracking and limiting the access that you have granted to authorized clients:
 + **Usage plans** let you provide **API keys** to your customers—and then track and limit usage of your API stages and methods for each API key. For more information, see [Usage plans and API keys for REST APIs in API Gateway](api-gateway-api-usage-plans.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,3 @@ To delete an event data store with an event type of **Events from integration**,
 1. Choose **Delete**.
 
 After you delete an event data store, the event data store's status changes to `PENDING_DELETION` and remains in that state for 7 days. You can [restore](query-eds-restore.md) an event data store during the 7-day wait period. While in the `PENDING_DELETION` state, an event data store isn't available for queries, and no other operations can be performed on the event data store except restore operations. An event data store that is pending deletion does not ingest events and does not incur costs. Event data stores that are pending deletion count toward the quota of event data stores that can exist in one AWS Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,6 +11,7 @@ Amazon S3 Files delivers a shared file system that connects any AWS compute reso
 + [Prerequisites and setup](#configuration-filesystem-s3files-setup)
 + [Execution role and user permissions](#configuration-filesystem-s3files-permissions)
 + [Connecting to a file system (console)](#configuration-filesystem-s3files-config)
++ [Configuring direct reads](#configuration-filesystem-s3files-directreads)
 
 ## Prerequisites and setup
 <a name="configuration-filesystem-s3files-setup"></a>
@@ -37,7 +38,7 @@ Your function's execution role must have the following permissions to access an 
 These permissions are included in the [AmazonS3FilesClientReadWriteAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3FilesClientReadWriteAccess.html) managed policy. Additionally, your execution role must have the [permissions required to connect to the file system's VPC](configuration-vpc.md#configuration-vpc-permissions).
 
 **Note**
-Amazon S3 Files optimizes throughput by reading directly from Amazon S3. Direct reads from Amazon S3 are supported only for functions configured with 512 MB or more of memory.
+Amazon S3 Files optimizes throughput by streaming eligible read requests directly from your Amazon S3 bucket. Direct reads are enabled by default for functions configured with 512 MB or more of memory. For more information, see [Configuring direct reads](#configuration-filesystem-s3files-directreads).
 
 Your function also needs the following permissions to read directly from Amazon S3:
 + **s3:GetObject**
@@ -118,11 +119,22 @@ If your function is not already connected to a VPC, see [Giving Lambda functions
    + **S3 file system** – Choose a file system from the dropdown.
    + **Access point** (optional) – Choose an access point. If the file system has no access points, Lambda automatically creates one when you save (UID/GID 1000:1000, root directory `/lambda`, permissions 755). If access points exist, you must select one.
    + **Local mount path** – The location where the file system is mounted on the Lambda function, starting with `/mnt/`.
+   + **Advanced configuration**
+     + **Direct S3 Reads** – Controls whether Lambda can stream eligible reads directly from your Amazon S3 bucket for higher throughput. For more information, see [Configuring direct reads](#configuration-filesystem-s3files-directreads).
 
 1. Choose **Save**.
 
 Your file system is attached the next time you invoke your Lambda function.
 
-## See also
+## Configuring direct reads
+<a name="configuration-filesystem-s3files-directreads"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+Direct reads optimize throughput by streaming data directly from your Amazon S3 bucket. Lambda uses direct reads for large reads and when the file system's high-performance storage does not hold the file data. For more information, see [How S3 Files delivers performance](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-performance.html#s3-files-performance-how). This optional configuration is part of the `FileSystemConfigs` for your function and applies only to Amazon S3 file systems. The `DirectS3Read` setting accepts the following values:
++ `AUTO` (default) – Enables direct reads for functions configured with 512 MB or more of memory.
++ `ENABLED` – Enables direct reads for your function, including functions with less than 512 MB of memory.
++ `DISABLED` – Routes all reads through the file system's high-performance storage.
+
+**Note**
+If a direct read fails, Lambda automatically falls back to reading through the file system.
+
+To use direct reads, your function's execution role must have the required permissions. For more information, see [Amazon S3 Files prerequisite policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-prereq-policies.html).

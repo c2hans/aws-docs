@@ -42,7 +42,3 @@ To create and use Revenue Attribution IDs, you must have:
 1. Implemented at least one Partner Revenue Measurement capability — Resource Tagging or User Agent String — using either your AWS Marketplace product listing's product code (product-level PRM) or a Revenue Attribution ID as the unique identifier.
 
 Partners with additional AWS Marketplace Seller Accounts that are connected via subsidiary account connections can create Revenue Attribution IDs for products that span multiple accounts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

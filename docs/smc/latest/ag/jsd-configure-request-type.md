@@ -25,7 +25,3 @@ The AWS request type must be in a group for users to be able to access it in Jir
 
 **Note**
 When you create a custom **Request AWS Product** request type for the Connector for Jira Service Management, you do not need to edit to the **Request AWS Product** request type. You can add a request type to an existing group. If you don't have a group, create a new group and add the request type to it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

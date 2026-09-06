@@ -14,7 +14,3 @@ Automation scripts and tools are custom-made and based on existing assets from p
 + Custom scripts (for example, .sh) for additional tasks
 
 When you run and refine the whole migration process, you should also create a detailed step-by-step guide with scripts, manual actions, tests, and fallback options.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

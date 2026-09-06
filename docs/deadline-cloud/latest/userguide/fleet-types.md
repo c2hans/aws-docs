@@ -43,7 +43,3 @@ For more information, see the following:
 + [Create and use Deadline Cloud customer-managed fleets](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/manage-cmf.html) in the *Deadline Cloud Developer Guide*
 + [Set up auto scaling for customer-managed fleets](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/create-auto-scaling.html) in the *Deadline Cloud Developer Guide*
 + [Connect customer-managed fleets to a license endpoint](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/cmf-ubl.html) in the *Deadline Cloud Developer Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

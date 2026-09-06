@@ -22,7 +22,3 @@ After successfully enabling IAM Identity Center, set up a user account that will
 Create and deploy a CloudFormation stack for SageMaker HyperPod observability to monitor HyperPod cluster metrics in real time using Amazon Managed Service for Prometheus and Amazon Managed Grafana. To deploy the stack, note that you also should enable your [IAM Identity Center](https://console.aws.amazon.com/singlesignon) beforehand.
 
 Use the sample CloudFormation script [`cluster-observability.yaml`](https://github.com/aws-samples/awsome-distributed-training/blob/main/4.validation_and_observability/4.prometheus-grafana/cluster-observability.yaml) that helps you set up Amazon VPC subnets, Amazon FSx for Lustre file systems, Amazon S3 buckets, and IAM roles required to create a HyperPod cluster observability stack.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

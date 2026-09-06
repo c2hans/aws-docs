@@ -292,7 +292,3 @@ The IAM role assumed by GitHub Actions must have the following permissions.
 For more information, check out:
 + [CloudWatch Application Signals Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Intro.html) - Learn about CloudWatch Application Signals features and capabilities
 + [Application observability for AWS Action Public Documentation](https://github.com/marketplace/actions/application-observability-for-aws) - Detailed guides and tutorials
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -409,7 +409,3 @@ postgres=>explain (hashes true, costs false) select count(*) from t1 where i > 1
 ```
 
 Even though the two plans might appear identical, their `Plan Hash` values are different due to the names of the child tables. The table names vary by alpha characters instead of just digits leading to an enforcement failure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -178,7 +178,3 @@ If your S3 bucket (in Account A) is encrypted with a customer managed KMS key fr
    Replace {{region}}, {{AccountB-ID}}, {{key-id}}, and {{AccountA-ID}} with your values.
 
 1. Create your on-demand or scheduled report plan. Reports will be delivered to the S3 bucket encrypted with the cross-account KMS key.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

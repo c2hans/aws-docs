@@ -113,7 +113,3 @@ Amazon Fraud Detector sends the following metrics to CloudWatch. All metrics sup
 | `ModelInvocation` | The number of GetEventPrediction requests where the model was invoked as part of the evaluation.<br />Valid Dimensions: `DetectorID`, `DetectorVersionID`, `ModelType`, `ModelID`  |
 | `ModelInvocationError` | The number of GetEventPrediction requests where the Amazon Fraud Detector model returned an error during evaluation.<br />Valid Dimensions: `DetectorID`, `DetectorVersionID`, `ModelType`, `ModelID`  |
 | `ModelInvocationLatency` | The interval of time taken by the Amazon Fraud Detector Model to respond as viewed from Amazon Fraud Detector. This interval includes only the model invocation.<br />Valid Dimensions: `DetectorID`, `DetectorVersionID`, `ModelType`, `ModelID` <br />Unit: Milliseconds |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

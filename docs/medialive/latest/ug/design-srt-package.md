@@ -22,7 +22,3 @@ This diagram illustrates an SRT output group with one output. The captions are e
 This diagram illustrates an SRT output group with one output. The captions are object-style captions.
 
 ![Output group labeled Output containing five elements: V, A, A, C, and C in oval shapes.](http://docs.aws.amazon.com/medialive/latest/ug/images/output4-nonABR-V-2A-2C.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

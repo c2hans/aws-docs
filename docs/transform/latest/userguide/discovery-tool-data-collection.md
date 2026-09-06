@@ -39,6 +39,22 @@ When a new server is discovered, the discovery tool attempts each configured cre
 
 After a collection failure, the discovery tool attempts to collect networking data for a server after 3 minutes, 30 minutes, 2 hours, and then 6 hours. After 4 failed attempts, the discovery tool continues to try all configured credentials once every 6 hours.
 
+## How average, p95, and peak statistics are calculated
+<a name="discovery-tool-statistics-basis"></a>
+
+This section describes the average (`_avg`), 95th percentile (`_p95`), and peak (`_peak`) statistics in the *OS-collected* performance data: the columns in `server_performance_metrics.csv` and `server_storage_performance.csv`, and the `disk_*` statistic columns in `server_inventory.csv`. The VMware- and Hyper-V-sourced performance columns (for example, the MPA fields `avgCpuUsagePctDec` and `avgRamUtlPctDec`) are averaged on a different basis and carry no p95 or peak value.
+
+**Window** – The statistics cover the entire export date range: the range you select at export time, up to the 30-day retention limit, or the tool's uptime if it is shorter.
+
+**Sampling** – The discovery tool records one sample per metric per collection cycle. CPU, memory, and network samples come from the server performance module, and disk IOPS and throughput samples come from the storage performance module. Both modules run every 10 minutes, which is about 144 samples per metric per day, or about 4,320 over 30 days. For the full schedule, see [Discovery tool collection schedule](#discovery-tool-scheduling).
+
+**Computation** – Samples accumulate each day during collection. At export, all samples in the selected window are pooled, and the statistics are computed over that full set:
++ **Average** – the mean of the pooled samples.
++ **p95** – the 95th percentile, computed with the inclusive method (equivalent to the Excel `PERCENTILE.INC` function). It never exceeds the maximum sample observed.
++ **Peak** – for CPU, memory, network, and the per-volume rows in `server_storage_performance.csv`, the peak is the highest single sample observed. For the server-level `disk_*` columns in `server_inventory.csv`, the peak is the sum of each volume's peak.
+
+The discovery tool computes the statistics from all samples in the window. A shorter window contains fewer samples. A 2-day export therefore produces different average and p95 values than a 30-day export.
+
 ## Discovered inventory
 <a name="discovery-tool-inventory"></a>
 
@@ -143,6 +159,8 @@ The discovery tool collects server inventory, performance, storage, network inte
 
 Combines server provisioning (hardware and OS configuration) with aggregated storage performance. Collected every 24 hours.
 
+Disk throughput columns end in `_mibps` and are reported in mebibytes per second (MiBps). The `_p95` columns hold the 95th percentile of the samples in the export window.
+
 | Name | Type | Category | Sample value |
 | --- | --- | --- | --- |
 | server\_id | String | Server Info | "vm-web-server-01" |
@@ -169,44 +187,59 @@ Combines server provisioning (hardware and OS configuration) with aggregated sto
 | hypervisor\_host\_id | String | Server Info | "host-1234" |
 | hypervisor\_id | String | Server Info | "4201ecf8-cc44-ee7e-01da-34dfb2acf6c0" |
 | disk\_read\_iops\_avg | Float | Storage Performance | 12.5 |
+| disk\_read\_iops\_p95 | Float | Storage Performance | 198.0 |
 | disk\_read\_iops\_peak | Float | Storage Performance | 245.0 |
 | disk\_write\_iops\_avg | Float | Storage Performance | 8.3 |
+| disk\_write\_iops\_p95 | Float | Storage Performance | 142.0 |
 | disk\_write\_iops\_peak | Float | Storage Performance | 180.0 |
 | disk\_total\_iops\_avg | Float | Storage Performance | 20.8 |
+| disk\_total\_iops\_p95 | Float | Storage Performance | 340.0 |
 | disk\_total\_iops\_peak | Float | Storage Performance | 425.0 |
-| disk\_read\_throughput\_avg\_mbps | Float | Storage Performance | 1.2 |
-| disk\_read\_throughput\_peak\_mbps | Float | Storage Performance | 24.5 |
-| disk\_write\_throughput\_avg\_mbps | Float | Storage Performance | 0.8 |
-| disk\_write\_throughput\_peak\_mbps | Float | Storage Performance | 18.0 |
-| disk\_total\_throughput\_avg\_mbps | Float | Storage Performance | 2.0 |
-| disk\_total\_throughput\_peak\_mbps | Float | Storage Performance | 42.5 |
+| disk\_read\_throughput\_avg\_mibps | Float | Storage Performance | 1.2 |
+| disk\_read\_throughput\_p95\_mibps | Float | Storage Performance | 19.8 |
+| disk\_read\_throughput\_peak\_mibps | Float | Storage Performance | 24.5 |
+| disk\_write\_throughput\_avg\_mibps | Float | Storage Performance | 0.8 |
+| disk\_write\_throughput\_p95\_mibps | Float | Storage Performance | 14.2 |
+| disk\_write\_throughput\_peak\_mibps | Float | Storage Performance | 18.0 |
+| disk\_total\_throughput\_avg\_mibps | Float | Storage Performance | 2.0 |
+| disk\_total\_throughput\_p95\_mibps | Float | Storage Performance | 34.0 |
+| disk\_total\_throughput\_peak\_mibps | Float | Storage Performance | 42.5 |
 
 ### Server performance metrics (server\_performance\_metrics.csv)
 <a name="discovery-tool-os-server-performance"></a>
 
 CPU, memory, and network throughput utilization. Sampled every 10 minutes, aggregated over 30 days.
 
+The `_p95` columns hold the 95th percentile of the samples in the export window. Network throughput columns end in `_mbps` and are reported in megabits per second (Mbps).
+
 | Name | Type | Category | Sample value |
 | --- | --- | --- | --- |
 | server\_id | String | Server Info | "vm-web-server-01" |
 | data\_source | String | Server Info | "OS" |
 | cpu\_utilization\_avg\_pct | Float | CPU | 45.06 |
+| cpu\_utilization\_p95\_pct | Float | CPU | 72.14 |
 | cpu\_utilization\_peak\_pct | Float | CPU | 79.33 |
 | cpu\_count | Integer | CPU | 4 |
 | memory\_total\_gb | Float | Memory | 15.88 |
 | memory\_utilization\_avg\_pct | Float | Memory | 29.27 |
+| memory\_utilization\_p95\_pct | Float | Memory | 58.42 |
 | memory\_utilization\_peak\_pct | Float | Memory | 63.99 |
 | network\_in\_avg\_mbps | Float | Network | 0.52 |
+| network\_in\_p95\_mbps | Float | Network | 9.84 |
 | network\_in\_peak\_mbps | Float | Network | 12.3 |
 | network\_out\_avg\_mbps | Float | Network | 0.31 |
+| network\_out\_p95\_mbps | Float | Network | 6.95 |
 | network\_out\_peak\_mbps | Float | Network | 8.7 |
 | network\_total\_avg\_mbps | Float | Network | 0.83 |
+| network\_total\_p95\_mbps | Float | Network | 16.79 |
 | network\_total\_peak\_mbps | Float | Network | 21.0 |
 
 ### Storage performance (server\_storage\_performance.csv)
 <a name="discovery-tool-os-storage-performance"></a>
 
 Per-volume disk I/O and space utilization. Sampled every 10 minutes, aggregated over 30 days.
+
+Disk throughput columns end in `_mibps` and are reported in mebibytes per second (MiBps). The `_p95` columns hold the 95th percentile of the samples in the export window.
 
 | Name | Type | Category | Sample value |
 | --- | --- | --- | --- |
@@ -219,17 +252,40 @@ Per-volume disk I/O and space utilization. Sampled every 10 minutes, aggregated 
 | disk\_used\_gb | Float | Disk Space | 12.5 |
 | disk\_free\_gb | Float | Disk Space | 17.5 |
 | disk\_read\_iops\_avg | Float | Disk I/O | 12.5 |
+| disk\_read\_iops\_p95 | Float | Disk I/O | 198.0 |
 | disk\_read\_iops\_peak | Float | Disk I/O | 245.0 |
 | disk\_write\_iops\_avg | Float | Disk I/O | 8.3 |
+| disk\_write\_iops\_p95 | Float | Disk I/O | 142.0 |
 | disk\_write\_iops\_peak | Float | Disk I/O | 180.0 |
 | disk\_total\_iops\_avg | Float | Disk I/O | 20.8 |
+| disk\_total\_iops\_p95 | Float | Disk I/O | 340.0 |
 | disk\_total\_iops\_peak | Float | Disk I/O | 425.0 |
-| disk\_read\_throughput\_avg\_mbps | Float | Disk Throughput | 1.2 |
-| disk\_read\_throughput\_peak\_mbps | Float | Disk Throughput | 24.5 |
-| disk\_write\_throughput\_avg\_mbps | Float | Disk Throughput | 0.8 |
-| disk\_write\_throughput\_peak\_mbps | Float | Disk Throughput | 18.0 |
-| disk\_total\_throughput\_avg\_mbps | Float | Disk Throughput | 2.0 |
-| disk\_total\_throughput\_peak\_mbps | Float | Disk Throughput | 42.5 |
+| disk\_read\_throughput\_avg\_mibps | Float | Disk Throughput | 1.2 |
+| disk\_read\_throughput\_p95\_mibps | Float | Disk Throughput | 19.8 |
+| disk\_read\_throughput\_peak\_mibps | Float | Disk Throughput | 24.5 |
+| disk\_write\_throughput\_avg\_mibps | Float | Disk Throughput | 0.8 |
+| disk\_write\_throughput\_p95\_mibps | Float | Disk Throughput | 14.2 |
+| disk\_write\_throughput\_peak\_mibps | Float | Disk Throughput | 18.0 |
+| disk\_total\_throughput\_avg\_mibps | Float | Disk Throughput | 2.0 |
+| disk\_total\_throughput\_p95\_mibps | Float | Disk Throughput | 34.0 |
+| disk\_total\_throughput\_peak\_mibps | Float | Disk Throughput | 42.5 |
+
+### Unmapped storage devices (unmapped\_storage\_devices.csv)
+<a name="discovery-tool-os-unmapped-storage"></a>
+
+The discovery tool cannot always match a storage device to a mounted file system, and some devices report no usable capacity. The discovery tool does not omit these devices or report their capacity as zero. It writes them to `unmapped_storage_devices.csv` instead, and still reports performance data for them. Only the capacity columns are blank.
+
+This file has the same columns as `server_storage_performance.csv`, in the same order, plus a `reason` column. The `reason` column can hold the following values.
+
+| Value | Meaning |
+| --- | --- |
+| no\_mounted\_filesystem\_match | The discovery tool cannot match the device to a mounted file system. |
+| mounted\_but\_capacity\_unavailable | The device is mounted, but it does not report usable capacity. |
+
+When you export the storage performance module, the export includes both files.
+
+**Note**
+When you upload the export to AWS Transform, the assessments agent ignores unmapped storage devices unless you specifically instruct it to include them.
 
 ### Storage configuration (storage\_config.csv)
 <a name="discovery-tool-os-storage-config"></a>
@@ -497,7 +553,3 @@ Components data requires Oracle database credentials (SQL connection). OS-level 
 | Version | String | Component | "22.1.0.15.0" | SQL only |
 | Status | String | Component | "VALID" | SQL only |
 | Schema | String | Component | "APEX\_220100" | SQL only |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -155,7 +155,3 @@ This pattern walks you through the steps for migrating an on-premises Oracle dat
 + [Getting Started with Amazon EC2](https://aws.amazon.com/ec2/getting-started/)
 + [Getting Started with AWS DMS](https://aws.amazon.com/dms/getting-started/)
 + [Introduction to Amazon EC2 - Elastic Cloud Server & Hosting with AWS (video)](https://www.youtube.com/watch?v=TsRBftzZsQo)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

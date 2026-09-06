@@ -158,7 +158,3 @@ Schedulers in Demand Planning determine when forecasts are generated and demand 
 
   When the **Finalize demand plan** is not selected, Demand Planning will publish the forecast as an interim version to the *Forecast* data entity in Data Lake. The status is changed to *Closed*. You can see the **Generate forecast** button to start the next planning cycle. Demand planning will initiate a new forecast as set in the demand planning configuration page and will use the same start date as the previous plan.
 + Automatic refresh and release – Make sure you choose **Auto** under **Demand Plan Scheduler** when you configure demand planning. For more information, see [Create your first demand plan](onboarding.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

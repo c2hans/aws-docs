@@ -70,7 +70,3 @@ It is recommended to use the 3D Tiles conversion for large assets that serve as 
 + You convert the factory without electrical and plumbing elements into a 3D Tiles model and upload it to S3.
 + You add both the 3D Tiles model and glTF model to an AWS IoT TwinMaker scene at the origin (0,0,0).
 + You add model shader components to the electrical box and pipe sub-models of the glTF to make the meshes red based on property rules.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

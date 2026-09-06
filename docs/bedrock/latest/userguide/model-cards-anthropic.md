@@ -33,7 +33,3 @@ The following Anthropic models are available in Amazon Bedrock:
 
 The following billing behaviors apply specifically to Anthropic models on Amazon Bedrock:
 + **Refused requests (all Anthropic models on `bedrock-mantle`):** When a request is refused by a content classifier before inference begins, no input or output tokens are billed. Mid-stream refusals — where the classifier fires after output has begun streaming — are billed for tokens consumed before the block. Both refusal types return `stop_reason: "refusal"` in the response.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

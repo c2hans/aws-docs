@@ -16,7 +16,3 @@ Use Python shell when you have basic ETL jobs or small datasets that don't requi
 <a name="q2"></a>
 
 We generally recommend using the latest version of AWS Glue. The [AWS Glue versions](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html) page lists the differences between versions, along with their compatibility with various versions of Python and Spark.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

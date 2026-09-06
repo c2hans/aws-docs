@@ -168,7 +168,3 @@ The following table describes the finding types that can be returned for generat
 |  `ALLOW_NONE`  | Warning | Permit policy is non-determining because it permits nothing. | Review the policy conditions. The policy may contain contradictory or unreachable conditions. |
 |  `DENY_ALL`  | Warning | Policy denies all actions for all principals. | Confirm that a full deny is intended. This overrides all permit policies due to forbid-overrides-permit semantics. |
 |  `DENY_NONE`  | Warning | Forbid policy is non-determining because it denies nothing. | Review the policy conditions. The forbid policy may contain contradictory or unreachable conditions. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

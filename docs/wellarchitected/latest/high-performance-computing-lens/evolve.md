@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
  If using AWS ParallelCluster, periodically deploy test environments with the latest release, as these often have software upgrades included. New major releases also often add new functionality that you can explore to see if it helps your use case. AWS Parallel Computing Service is a good example of a service that offers a way for you to reduce your operational overhead in the management of your cluster, and introduces prescriptive implementations of patterns and features that are commonly required in HPC environments.
 
  To keep updated on new releases relevant to the HPC space more broadly and learn from continuously evolving best practices, periodically review the [AWS HPC community site, Day1HPC](https://day1hpc.com/). Updates such as new instance launches can offer price and performance improvements, and new features can improve the end-user experience or reduce your operations management overhead.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

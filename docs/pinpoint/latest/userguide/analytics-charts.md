@@ -37,7 +37,3 @@ For information about registering endpoints and assigning user IDs within a mobi
 You can export data from the dashboards that appear on the **Analytics** pages of the Amazon Pinpoint console. When you export data from a dashboard, Amazon Pinpoint creates a .zip file that contains a comma-separated values (.csv) file with the data for each section of the dashboard. You can open these .csv files by using any modern spreadsheet or data analysis application.
 
 To export data from a dashboard, choose a date range for the data (and other attributes, if applicable), and then choose **Download CSV**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

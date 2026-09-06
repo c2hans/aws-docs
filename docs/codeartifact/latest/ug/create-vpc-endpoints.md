@@ -41,7 +41,3 @@ aws ec2 create-vpc-endpoint --vpc-id {{vpcid}} --vpc-endpoint-type {{Interface}}
 After creating VPC endpoints, you may need to do more configuration with security group rules to use the endpoints with CodeArtifact. For more information about security groups in Amazon VPC, see [Security groups](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html#vpc-endpoints-security-groups).
 
 If you are having issues connecting to CodeArtifact, you can use the VPC Reachability Analyzer tool to debug the issue. For more information, see [What is VPC Reachability Analyzer?](https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

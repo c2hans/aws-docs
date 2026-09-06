@@ -48,7 +48,3 @@ If you don’t provide this option, the AWS SAM CLI will output the contents of 
 `--stack-name {{TEXT}}`  <a name="sam-cli-command-reference-remote-test-event-get-options-stack-name"></a>
 The name of the CloudFormation stack associated with the Lambda function.
 This option is required if you are providing the Lambda function logical ID as an argument.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

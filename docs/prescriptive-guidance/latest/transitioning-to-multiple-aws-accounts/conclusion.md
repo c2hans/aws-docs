@@ -12,7 +12,3 @@ Transitioning from a single AWS account to multiple accounts can feel overwhelmi
 + **Distinguishing production costs from development costs** – Consolidated billing for the organization rolls up all of the costs at the AWS account level so that the finance team can see how much production costs compared to non-production environments, such as development, testing, and demo environments. You can also use tags and tagging policies to separate costs within an account.
 + **Limiting access to sensitive data** – IAM Identity Center allows you to have separate access policies for a group of people associated to a specific account.
 + **Controlling costs** – By using service-control policies (SCPs) in a multi-account architecture, you can disallow access to specific AWS services that might incur high costs for your organization. SCPs can deny all access to specific services or can limit the usage of a service to a specific type, such as restricting the types of Amazon Elastic Compute Cloud (Amazon EC2) instances that can be created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

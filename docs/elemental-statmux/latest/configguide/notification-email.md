@@ -37,7 +37,3 @@ If you subscribe to email notifications in a network that doesn't allow open rel
    1. Locate, expand, and complete the fields for each alert on which you want to be notified.
 
 1. If your network doesn't allow open relay messages, configure the Sendmail server to relay the messages. For steps, see [Configure Sendmail Relay Server](notification-email-sendmail.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Statmux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-statmux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

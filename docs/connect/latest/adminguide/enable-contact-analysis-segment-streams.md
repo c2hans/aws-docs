@@ -35,7 +35,7 @@ There are several ways you can do this.
       --retiring-principal arn:aws:iam::{{your AWS account ID}}:role/adminRole
   ```
 
-  Where `grantee-principal` is the ARN of the service-linked role associated to your Connect Customer instance. To find the ARN of the service-linked role, in the Connect Customer console, go to **Overview**, **Distribution settings**, **Service-linked role**.
+  Where `grantee-principal` is the ARN of the service-linked role associated to your Connect Customer instance. To find the ARN of the service-linked role, in the Connect Customer console, choose **Overview**, **Distribution settings**, **Service-linked role**.
 
 ## Step 3: Associate the Kinesis stream
 <a name="enable-segment-streams-step3"></a>
@@ -132,7 +132,3 @@ For instructions, see [Enable conversational analytics in Connect Customer conve
 <a name="enable-segment-streams-step5"></a>
 
 We recommend you review a [voice](sample-real-time-contact-analysis-segment-stream.md) or [chat](chat-sample-real-time-contact-analysis-segment-stream.md) sample segment stream to familiarize yourself with what it looks like.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,6 +35,7 @@ By default, data records are accessible for 24 hours from the time that they are
 ```
 {
    "Data": {{blob}},
+   "DryRun": {{boolean}},
    "ExplicitHashKey": "{{string}}",
    "PartitionKey": "{{string}}",
    "SequenceNumberForOrdering": "{{string}}",
@@ -54,6 +55,11 @@ The data blob to put into the record, which is base64-encoded when the blob is s
 Type: Base64-encoded binary data object
 Length Constraints: Minimum length of 0. Maximum length of 10485760.
 Required: Yes
+
+ ** [DryRun](#API_PutRecord_RequestSyntax) **   <a name="Streams-PutRecord-request-DryRun"></a>
+Checks if your request will succeed. `DryRun` is an optional parameter.
+Type: Boolean
+Required: No
 
  ** [ExplicitHashKey](#API_PutRecord_RequestSyntax) **   <a name="Streams-PutRecord-request-ExplicitHashKey"></a>
 The hash value used to explicitly determine the shard the data record is assigned to by overriding the partition key hash.
@@ -137,6 +143,10 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 Specifies that you do not have the permissions required to perform this operation.
+HTTP Status Code: 400
+
+ ** DryRunOperationException **
+The request was rejected because the DryRun parameter was specified.
 HTTP Status Code: 400
 
  ** InternalFailureException **
@@ -254,7 +264,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/kinesis-2013-12-02/PutRecord)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/kinesis-2013-12-02/PutRecord)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/kinesis-2013-12-02/PutRecord)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

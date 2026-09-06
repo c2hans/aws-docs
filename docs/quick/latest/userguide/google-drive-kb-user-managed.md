@@ -85,7 +85,3 @@ For more information about knowledge base troubleshooting, including sync issues
 <a name="google-drive-kb-user-managed-limitations"></a>
 + Document-level access control (ACL) is not supported with user-managed setup. If you require document-level access control, use [Admin-managed Google Drive knowledge base setup](google-drive-kb-admin-managed.md).
 + Synchronization of file comments is not supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

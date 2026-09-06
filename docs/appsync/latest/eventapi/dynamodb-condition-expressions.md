@@ -78,7 +78,3 @@ The substitutions for expression attribute name placeholders, in the form of key
 
 ** `expressionValues` **
 The substitutions for expression attribute value placeholders, in the form of key-value pairs. The key corresponds to a value placeholder used in the expression, and the value must be a typed value. For more information about how to specify a “typed value”, see [Type system (request mapping)](dynamodb-typed-values-request.md). This must be specified. This field is optional, and should only be populated with substitutions for expression attribute value placeholders used in the expression.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

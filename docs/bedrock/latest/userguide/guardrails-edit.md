@@ -33,7 +33,3 @@ To edit a guardrail, send an [UpdateGuardrail](https://docs.aws.amazon.com/bedro
 
 **Important**
 If you are using a guardrail version, you must create a new version after making changes to the guardrail's working draft. Changes to the working draft are not automatically reflected in existing versions. Create a new version and update your applications to use it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

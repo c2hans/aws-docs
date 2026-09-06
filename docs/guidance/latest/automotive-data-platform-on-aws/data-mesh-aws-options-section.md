@@ -102,7 +102,3 @@ This Automotive Data Platform uses **Amazon DataZone V2** as the primary catalog
 +  **Enterprise Ready**: Built-in governance, security, and compliance features; downstream consumers can subscribe via DataZone for BI or analytics workloads; predictive-maintenance reference consumers use SageMaker Studio notebooks
 
 For organizations requiring more customization, the architecture can be adapted to use data.all or Lake Formation with minimal changes to the domain structure and data product definitions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

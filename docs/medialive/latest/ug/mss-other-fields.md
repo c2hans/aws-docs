@@ -30,7 +30,3 @@ The following fields relate to configuring the timecode and timestamp in all the
 + **Microsoft Smooth output group** – **Timecode Configuration** section
 
 If you want all the outputs in this output group to include the SCTE-35 messages that are already present in the input, choose **Sparse track**. The messages will be included in a sparse track. For more information, see [Processing SCTE 35 messages](scte-35-message-processing.md) and specifically [Enabling decoration – Microsoft Smooth](procedure-to-enable-decoration-ms-smooth.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

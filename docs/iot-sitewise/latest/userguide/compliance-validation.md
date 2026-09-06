@@ -19,7 +19,3 @@ Your compliance responsibility when using AWS IoT SiteWise is determined by the 
 + [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) – This AWS service provides a comprehensive view of your security state within AWS that helps you check your compliance with security industry standards and best practices.
 + [Ten security golden rules for Industrial IoT solutions](https://aws.amazon.com/blogs/iot/ten-security-golden-rules-for-industrial-iot-solutions/) – This blog post introduces ten golden rules that help secure your industrial control systems (ICS), industrial Internet of Things (IIoT), and cloud environments.
 + [Security Best Practices for Manufacturing OT](https://d1.awsstatic.com/whitepapers/security-bp-for-manufacturing-ot.pdf) – This whitepaper describes security best practices to design, deploy, and architect these on-premises hybrid manufacturing workloads for the AWS Cloud.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

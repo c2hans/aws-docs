@@ -254,7 +254,3 @@ For a sample of the output for a GetLendingAnalysisSummary operation, see the fo
 For descriptions of the response objects, see [Analyze Lending Response Objects](lending-response-objects.md).
 
 Consult the file included with the assets folder for a list of all possible recognized classes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

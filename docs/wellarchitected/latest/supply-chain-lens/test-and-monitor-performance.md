@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 + [SCPERF05-BP01 Implement comprehensive monitoring and dashboards for supply chain performance](scperf05-bp01.md)
 + [SCPERF05-BP02 Evaluate compliance with performance requirements](scperf05-bp02.md)
 + [SCPERF05-BP03 Integrate performance testing into the release cycle of the supply chain application](scperf05-bp03.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

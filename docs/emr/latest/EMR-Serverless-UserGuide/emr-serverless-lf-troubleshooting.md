@@ -45,7 +45,3 @@ EMR Serverless detected a security validation error. Contact AWS support for ass
 <a name="emr-serverless-lf-troubleshooting-cross-account"></a>
 
 You can share databases and tables across accounts and still use Lake Formation. For more information, refer to [Cross-account data sharing in Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/cross-account-permissions.html) and [How do I share AWS Glue Data Catalog and tables cross-account using AWS Lake Formation?](https://repost.aws/knowledge-center/glue-lake-formation-cross-account).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

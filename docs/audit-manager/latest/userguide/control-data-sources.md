@@ -41,7 +41,3 @@ To learn more about the specific data sources that you can use in your custom co
 + [AWS Security Hub CSPM controls supported by AWS Audit Manager](control-data-sources-ash.md)
 + [AWS API calls supported by AWS Audit Manager](control-data-sources-api.md)
 + [AWS CloudTrail event names supported by AWS Audit Manager](control-data-sources-cloudtrail.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

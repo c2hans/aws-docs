@@ -29,7 +29,3 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
   SharedStandard = A user receives one bastion to connect to and two users can connect to the same bastion at once.
 
   SharedHA = A user receives two bastions in two different AZ's to connect to and two users can connect to the same bastion at once.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

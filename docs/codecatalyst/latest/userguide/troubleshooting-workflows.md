@@ -458,7 +458,3 @@ To determine whether a workflow quota was exceeded, review [Quotas for workflows
 **Possible fixes:** Depending on your role in the project or space, you might not have permissions to push code to source repositories in the project. The YAML files for workflows are stored in repositories. For more information, see [Workflow definition files](workflows-concepts.md#workflows-concepts-workflows-def). The **Space administrator** role, **Project administrator** role, and **Contributor** role all have permission to commit and push code to repositories in a project.
 
 If you have the **Contributor** role but cannot create or commit changes to workflow YAML in a specific branch, there might be a branch rule configured for that branch that prevents users with that role from pushing code to that particular branch. Try creating a workflow in a different branch, or commiting your changes to a different branch. For more information, see [Manage allowed actions for a branch with branch rules](source-branches-branch-rules.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

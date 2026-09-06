@@ -67,7 +67,7 @@ Note: In current release of Redshift, metadata of FGAC related tables accessed o
 
 **Alter User Set Global identity**
 + Supported only on "Select", "Delete", "Update", "Show", "Insert"
-+ IAM role associated with a user via ALTER USER SET GLOBAL IDENTITY is only used when the query is against Redshift Warehouse with Federated Permissions and only when the query targets a relation, such as SELECT, UDPATE and DELETE queries.
++ IAM role associated with a user by using ALTER USER SET GLOBAL IDENTITY is only used when the query is against Redshift Warehouse with Federated Permissions and only when the query targets a relation, such as SELECT, UDPATE and DELETE queries.
 + Such IAM role is also used SHOW DATABASES, SHOW SCHEMAS and SHOW TABLES queries against resources in Redshift Warehouse with Federated Permissions.
 + Such IAM role is not used on data definition queries such as CREATE, ALTER and DROP.
 
@@ -77,7 +77,3 @@ Note: In current release of Redshift, metadata of FGAC related tables accessed o
   ```
   Operation is not supported through datashares
   ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

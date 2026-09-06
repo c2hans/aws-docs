@@ -42,7 +42,3 @@ Please run 'pcluster status' if you need to check compute fleet status
 This command sets the Auto Scaling Group parameters to one of the following:
 + The initial configuration values (`max_queue_size` and `initial_queue_size`) from the template that was used to create the cluster.
 + The configuration values that were used to update the cluster since it was first created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,7 +50,3 @@ They both are a good place to start.
 Artillery also has a built-in automation for provisioning and tearing down the necessary resources to execute the tests. Unlike traditional tools, there's no need to write infrastructure as code (IaC) scripts or manually manage cloud resources. Artillery takes care of everything, which makes it an efficient and developer-friendly choice for modern cloud-native applications.
 
 Lastly, Artillery supports GitHub actions for integration with existing continuous integration and delivery (CI/CD) pipelines.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

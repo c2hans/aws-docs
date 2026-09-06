@@ -18,7 +18,3 @@ To use a shared Private CA resource with WorkSpaces Pools CBA, complete the foll
 1. After the share is successful, view the shared Private CA by using the Private CA console in the resource account.
 
 1. Use the API or CLI to associate the Private CA ARN with CBA in your WorkSpaces Pools directory. At this time, the WorkSpaces Pools console does not support selection of shared Private CA ARNs. For more information, see the [Amazon WorkSpaces Service API Reference](https://docs.aws.amazon.com/workspaces/latest/api/welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

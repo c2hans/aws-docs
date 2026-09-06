@@ -21,7 +21,3 @@ To manage your support cases in your chat channels, you must:
 + Create an Amazon EventBridge rule for AWS Support case events and choose an Amazon SNS topic as your target. For more information, see [Creating an EventBridge rule for AWS Support cases](https://docs.aws.amazon.com/awssupport/latest/user/event-bridge-support.html#creating-event-bridge-events-rule-for-aws-support) in the *AWS Support User Guide*.
   + Subscribe that Amazon SNS topic to your Amazon Q Developer in chat applications configuration. For more information, see [Tutorial: Subscribing an Amazon SNS topic to Amazon Q Developer in chat applications](subscribe-sns-topic.md).
 + Add the managed role [`AWSSupportAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAccess) to your Amazon Q Developer in chat applications role. For more information, see [Editing an IAM role for Amazon Q Developer in chat applications](editing-iam-roles-for-chatbot.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

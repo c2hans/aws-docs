@@ -30,7 +30,3 @@ The following table lists the wait events for RDS for PostgreSQL that most commo
 | [LWLock:pg\_stat\_statements](apg-rpg-lwlockpgstat.md) | This event occurs when the `pg_stat_statements` extension takes an exclusive lock on the hash table that tracks SQL statements. |
 | [Timeout:PgSleep](wait-event.timeoutpgsleep.md) | This event occurs when a server process has called the `pg_sleep` function and is waiting for the sleep timeout to expire.  |
 | [Timeout:VacuumDelay](wait-event.timeoutvacuumdelay.md) | This event indicates that the vacuum process is sleeping because the estimated cost limit has been reached.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

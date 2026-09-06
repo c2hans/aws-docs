@@ -39,7 +39,3 @@ The Amazon DCV server doesn't require a license server when running on Amazon EC
 AWS ParallelCluster automatically adds the required permissions to the head node IAM policy. When using a custom IAM Instance Policy, use the permissions described in [Amazon DCV on Amazon EC2 ](https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-license.html#setting-up-license-ec2) in the *Amazon DCV Administrator Guide*.
 
 For troubleshooting tips, see [Troubleshooting issues in Amazon DCV](troubleshooting-v3-nice-dcv.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

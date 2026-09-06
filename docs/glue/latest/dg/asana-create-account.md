@@ -49,7 +49,3 @@ Enter the Redirect URI using this format: `https://{aws-region-code}.console.aws
 1. The next page displays your token, copy your token and store it securely.
 **Important**
 This token will only be displayed once. Ensure you copy it and store it securely.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

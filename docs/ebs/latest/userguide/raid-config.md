@@ -118,7 +118,7 @@ If you get the `mdadm: command not found` error, use the following command to in
 
    Depending on the requirements of your application or the limitations of your operating system, you can use a different file system type, such as ext3 or XFS (consult your file system documentation for the corresponding file system creation command).
 
-1. To ensure that the RAID array is reassembled automatically on boot, create a configuration file to contain the RAID information:
+1. To make sure that the RAID array is reassembled automatically on boot, create a configuration file to contain the RAID information:
 
    ```
    [ec2-user ~]$ sudo mdadm --detail --scan | sudo tee -a /etc/mdadm.conf
@@ -292,7 +292,7 @@ This destroys any existing data on the volume.
 
    1. Repeat [Step 6](#windows_raid_disk_step) for each disk you want to use in your array.
 
-1. Verify that the disks you want to use are now dynamic. In this case, we're using disks 1 and 2 for the RAID volume.
+1. Verify that the disks you want to use are now dynamic. In this case, this example uses disks 1 and 2 for the RAID volume.
 
    ```
    DISKPART> list disk
@@ -363,10 +363,6 @@ To perform a full format, omit the `quick` option.
 ## Create snapshots of volumes in a RAID array
 <a name="ebs-snapshots-raid-array"></a>
 
-If you want to back up the data on the EBS volumes in a RAID array using snapshots, you must ensure that the snapshots are consistent. This is because the snapshots of these volumes are created independently. To restore EBS volumes in a RAID array from snapshots that are out of sync would degrade the integrity of the array.
+If you want to back up the data on the EBS volumes in a RAID array using snapshots, you must make sure that the snapshots are consistent. This is because the snapshots of these volumes are created independently. To restore EBS volumes in a RAID array from snapshots that are out of sync would degrade the integrity of the array.
 
-To create a consistent set of snapshots for your RAID array, use [EBS multi-volume snapshots](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSnapshots.html). Multi-volume snapshots allow you to take point-in-time, data coordinated, and crash-consistent snapshots across multiple EBS volumes attached to an EC2 instance. You do not have to stop your instance to coordinate between volumes to ensure consistency because snapshots are automatically taken across multiple EBS volumes. For more information, see the steps for creating multi-volume snapshots under [Create Amazon EBS snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-snapshot.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+To create a consistent set of snapshots for your RAID array, use [EBS multi-volume snapshots](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSnapshots.html). Multi-volume snapshots allow you to take point-in-time, data coordinated, and crash-consistent snapshots across multiple EBS volumes attached to an EC2 instance. You do not have to stop your instance to coordinate between volumes to ensure consistency, because snapshots are automatically taken across multiple EBS volumes. For more information, see the steps for creating multi-volume snapshots under [Create Amazon EBS snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-snapshot.html).

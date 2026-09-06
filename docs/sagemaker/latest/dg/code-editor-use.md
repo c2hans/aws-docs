@@ -22,7 +22,3 @@ You can return to Studio to review any assets created in your Code Editor enviro
 + [Clone a repository in Code Editor](code-editor-use-clone-a-repository.md)
 + [Code Editor Connections and Extensions](code-editor-use-connections-and-extensions.md)
 + [Shut down Code Editor resources](code-editor-use-log-out.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

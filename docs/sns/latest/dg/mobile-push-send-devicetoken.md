@@ -74,7 +74,3 @@ Alternatively, you can use the [`ListEndpointByPlatformApplication`](https://doc
 **Use a proxy server**
 If your app infrastructure already supports device registration on installation, you can use your server as a proxy. It will forward device tokens to Amazon SNS via the [`CreatePlatformEndpoint`](https://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformEndpoint.html) API.
 The endpoint ARN created by Amazon SNS will be returned and can be stored by your server for future message publishing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

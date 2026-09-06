@@ -91,7 +91,3 @@ Use the token that you generated using the steps in the [Create an API token for
 
 **Note**
 If a new API token is generated in the **Singularity Cloud** console while AppFabric is ingesting the audit logs, the ingestions will stop. If this happens you will need to update the app authorization with a new API token to resume audit log ingestion.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

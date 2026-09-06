@@ -95,7 +95,3 @@ If no customer certificate matches (or if the ClientHello does not include an SN
 The following limitations apply to certificate resolution in the current release. Ensure your configuration accounts for these behaviors.
 **Wildcard matching scope** - Wildcard matching in certificate resolution uses suffix-based matching, which can match across multiple DNS labels. For example, a certificate configured with `*.example.com` may match `a.b.example.com` during certificate resolution. This differs from routing rule wildcard matching, which enforces single-label matching per RFC 6125. Do not rely on certificate wildcard matching to enforce subdomain boundaries.
 **Case-sensitive hostname lookup** - Hostname comparison in certificate resolution is case-sensitive, while routing rule host matching is case-insensitive. Ensure that the CN and SANs on your ACM certificate use lowercase characters to avoid mismatches with SNI hostnames, which clients typically send in lowercase.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RTB Fabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rtb-fabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

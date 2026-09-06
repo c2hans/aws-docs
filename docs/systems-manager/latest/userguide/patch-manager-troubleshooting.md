@@ -826,7 +826,3 @@ Before you contact Support, collect the following items:
   + Windows update logs: For Windows Server 2012 R2 and older, use `%windir%/WindowsUpdate.log`. For Windows Server 2016 and newer, first run the PowerShell command [`Get-WindowsUpdateLog`](https://docs.microsoft.com/en-us/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps) before using `%windir%/WindowsUpdate.log`
 + For Linux managed nodes, also collect the following:
   + The contents of the directory `/var/lib/amazon/ssm/{{instance-id}}/document/orchestration/{{Run-Command-execution-id}}/awsrunShellScript/PatchLinux`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

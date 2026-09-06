@@ -54,7 +54,3 @@ Policy in AgentCore offers comprehensive capabilities for policy-based governanc
 +  **Infrastructure Integration** - Integrates with VPC security groups and other AWS security infrastructure
 +  **Audit Logging** - Maintains detailed logs of policy decisions for compliance and troubleshooting
 +  **Temporal Policies** - Session-scoped rules that reason over the history of actions within a conversation. For more information, see [Temporal policies](policy-temporal.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

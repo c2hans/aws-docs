@@ -53,7 +53,3 @@ FIPS endpoints are available only in some AWS Regions. For more information, see
    If you use a FIPS endpoint in a Region with FIPS availability, your DNS name looks similar to this example: `vpce-1234567e1c24a1fe9-62qntt8k.storagegateway-fips.us-east-1.vpce.amazonaws.com `
 
 Now that you have a VPC endpoint, you can create your gateway. For more information, see [Creating a Gateway](https://docs.aws.amazon.com/storagegateway/latest/tgw/create-gateway-vtl.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

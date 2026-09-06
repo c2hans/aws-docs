@@ -12,7 +12,3 @@ Complete the following to reject an association request from an Amazon DataZone 
 1. Sign in to the AWS Management Console and open the Amazon DataZone management console at [https://console.aws.amazon.com/datazone](https://console.aws.amazon.com/datazone).
 
 1. Choose **View requests** and select the inviting domain from the list. The state of the invitation should be **Requested**. Choose **Reject association**. Confirm your choice by choosing **Reject association**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

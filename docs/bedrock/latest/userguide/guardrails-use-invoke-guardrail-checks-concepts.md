@@ -60,7 +60,3 @@ Each check carries its own configuration shape. The field name selects the check
 **Request and response are symmetric** – The keys you set under `checks` are the same keys that come back under `results` and `usage`. If you request `contentFilter` and `sensitiveInformation`, only those two appear in the response; `promptAttack` is absent because it was never run. This makes it easy to map a finding back to the check that produced it.
 
 **Detect-only across every check** – No check blocks, masks, or rewrites content. Each returns scores (a `severityScore` for content filter and prompt attack, a `confidenceScore` plus location offsets for sensitive information), and you decide how your application acts on them based on specific requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

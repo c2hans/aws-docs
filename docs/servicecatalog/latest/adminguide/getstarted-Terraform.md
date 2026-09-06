@@ -41,7 +41,3 @@ The AWS resource contained in the Terraform product you create in the tutorial i
 + [Step 8: Share portfolio with end user](getstarted-share-portfolio-end-user-Terraform.md)
 + [Step 9: Test the end user experience](getstarted-verify-Terraform.md)
 + [Step 10: Monitoring Terraform provisioning operations](getstarted-monitoring-Terraform.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

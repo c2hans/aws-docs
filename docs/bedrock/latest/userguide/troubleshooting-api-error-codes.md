@@ -147,6 +147,19 @@ This section provides detailed information about the common errors you might enc
 
 If you experience frequent 503 errors or if they significantly impact your operations, please contact [AWS Support](https://aws.amazon.com/support)for further assistance and guidance tailored to your specific use case.
 
+## overloaded\_error
+<a name="ts-overloaded-error"></a>
+
+**HTTP Status Code: **529
+
+**Cause: **The model is temporarily unable to process the request because of high demand or insufficient serving capacity. This is a transient capacity error and is different from a 429 `ThrottlingException`, which indicates that the request exceeded an account quota.
+
+**Solution:**
++ Retry the request using [exponential backoff](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/retry-backoff.html) and random [jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/). If the response includes a `Retry-After` header, wait for the specified time before retrying.
++ Avoid immediate or synchronized retries from multiple clients, which can increase load and delay recovery.
++ If the model supports it, use [cross-Region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) to route requests across multiple AWS Regions.
++ If the error persists, contact [AWS Support](https://aws.amazon.com/support) and provide the request ID, model ID, AWS Region, and approximate timestamp for the failed request.
+
 ## ThrottlingException
 <a name="ts-throttling-exception"></a>
 
@@ -228,7 +241,3 @@ Enabling TCP keep-alive on the Amazon Bedrock client requires *two* settings wor
 For a deeper discussion of long-running TCP connections in VPC networking, see [Implementing long-running TCP Connections within VPC networking](https://aws.amazon.com/blogs/networking-and-content-delivery/implementing-long-running-tcp-connections-within-vpc-networking/) on the AWS Networking & Content Delivery Blog.
 
 If you continue to experience connection issues after applying both settings, contact [AWS Support](https://aws.amazon.com/support) for further assistance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

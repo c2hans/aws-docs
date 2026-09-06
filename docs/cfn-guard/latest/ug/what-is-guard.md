@@ -54,7 +54,3 @@ To access the Guard DSL and commands, you must install the Guard CLI. For inform
 <a name="best-practices"></a>
 
 Write simple rules, and use named rules to reference them in other rules. Complex rules can be difficult to maintain and test.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation Guard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cfn-guard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

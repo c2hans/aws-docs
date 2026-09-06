@@ -20,7 +20,3 @@ Post event, AMS runs an investigation review process for all security incidents.
 + What preparation steps were missing that might have helped, escalation matrices, RACI’s, shared responsibility models, and so on? Is there a need to update any Runbooks?
 + What was the difference between the initial impact assessment and the final impact assessment? What can we do to improve accuracy of assessments earlier in the incident response?
 + What are the Action Items from the Lessons Learned?
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

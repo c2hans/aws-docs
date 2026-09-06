@@ -15,10 +15,7 @@ Amazon Bedrock AgentCore Identity is an identity and credential management servi
 + [Configure inbound JWT authorizer](inbound-jwt-authorizer.md)
 + [Manage credential providers with AgentCore Identity](identity-outbound-credential-provider.md)
 + [Provider setup and configuration](identity-idps.md)
++ [Configure a consent portal](identity-consent-portal.md)
 + [Connect to private identity providers](identity-private-idp.md)
 + [Data protection in Amazon Bedrock AgentCore Identity](identity-data-protection.md)
 + [Tagging AgentCore Identity resources](identity-tagging.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

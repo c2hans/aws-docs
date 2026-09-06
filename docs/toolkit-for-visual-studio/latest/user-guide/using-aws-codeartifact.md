@@ -31,7 +31,3 @@ We recommend adding an external connection to **NuGet.org** to your CodeArtifact
 1. Choose **OK** to close the menu.
 
 For more information about using CodeArtifact with Visual Studio, see [Use CodeArtifact with Visual Studio](https://docs.aws.amazon.com/codeartifact/latest/ug/nuget-visual-studio.html) in the *AWS CodeArtifact User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

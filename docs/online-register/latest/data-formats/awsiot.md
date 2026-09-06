@@ -141,7 +141,3 @@ AWS IoT provides the following APIs for data retrieval.
 | <a name="iot-TestAuthorization"></a>[TestAuthorization](https://docs.aws.amazon.com/iot/latest/apireference/API_TestAuthorization.html) | Test the policies evaluation for group policies | Read |
 | <a name="iot-TestInvokeAuthorizer"></a>[TestInvokeAuthorizer](https://docs.aws.amazon.com/iot/latest/apireference/API_TestInvokeAuthorizer.html) | Test invoke the specified custom authorizer for testing purposes | Read |
 | <a name="iot-ValidateSecurityProfileBehaviors"></a>[ValidateSecurityProfileBehaviors](https://docs.aws.amazon.com/iot/latest/apireference/API_ValidateSecurityProfileBehaviors.html) | Validate a Device Defender security profile behaviors specification | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

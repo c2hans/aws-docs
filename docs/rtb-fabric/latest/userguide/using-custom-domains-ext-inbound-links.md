@@ -59,7 +59,3 @@ Inbound external links with custom domains use the same module flow and delivery
 Routing rules and certificate resolution use different matching semantics. Be aware of these differences when configuring HTTPS inbound external links with custom domains:
 Routing rules use case-insensitive host matching and RFC 6125 single-label wildcard matching (`*.example.com` matches `bid.example.com` but not `a.b.example.com`).
 Certificate resolution uses case-sensitive host matching and suffix-based wildcard matching (`*.example.com` may match `a.b.example.com`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RTB Fabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rtb-fabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

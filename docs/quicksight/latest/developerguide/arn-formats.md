@@ -76,7 +76,3 @@ arn:aws:s3:::{{amzn-s3-demo-bucket}}/{{my-data/sales-export-*-q?.*}}
 ```
 
 To read more about S3 ARNs, see [Specifying Resources in a Policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-arn-format.html) and [Object Key and Metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html) in the *Amazon S3 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick Sight. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quicksight` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

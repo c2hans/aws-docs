@@ -145,7 +145,3 @@ When converting from SQL Server to PostgreSQL, AWS SCT converts SQL Server syste
 | INFORMATION\_SCHEMA.ROUTINES | AWS\_SQLSERVER\_EXT.INFORMATION\_SCHEMA\_ROUTINES |
 | SYS.SYSPROCESSES | AWS\_SQLSERVER\_EXT.SYS\_SYSPROCESSES |
 | sys.system\_objects | AWS\_SQLSERVER\_EXT.SYS\_SYSTEM\_OBJECTS |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Schema Conversion Tool User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query SchemaConversionTool` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

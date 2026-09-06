@@ -158,7 +158,3 @@ This rule matches any label in the `app:tier` namespace and forwards the resolve
 The first rule applies the label `app:tier:enterprise`. The second rule matches any label in the `app:tier` namespace and forwards the resolved value as the `customer-tier` header. The output header name is `x-amzn-waf-customer-tier`. You can add more classification rules for other tiers, such as `app:tier:standard` or `app:tier:trial`. The forwarding rule picks them up without any changes.
 
 For a deployable sample that demonstrates all of these patterns, see the [AWS WAF Dynamic Label Interpolation sample](https://github.com/aws-samples/sample-aws-waf-dynamic-labels) on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

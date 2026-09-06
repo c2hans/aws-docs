@@ -108,7 +108,3 @@ The SDK for Kotlin currently supports presigning the following API operations th
 | Amazon S3 |  [`UploadPart`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/upload-part.html)  |  [presignUploadPart](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3.presigners/presign-upload-part.html)  | HTTP PUT |
 |  AWS Security Token Service |  [`GetCallerIdentity`](/sdk-for-kotlin/api/latest/sts/aws.sdk.kotlin.services.sts/-sts-client/get-caller-identity.html)  |  [presignGetCallerIdentity](/sdk-for-kotlin/api/latest/sts/aws.sdk.kotlin.services.sts.presigners/presign-get-caller-identity.html)  | HTTP POST |
 | Amazon Polly |  [`SynthesizeSpeech`](/sdk-for-kotlin/api/latest/polly/aws.sdk.kotlin.services.polly/-polly-client/synthesize-speech.html)  |  [presignSynthesizeSpeech](/sdk-for-kotlin/api/latest/polly/aws.sdk.kotlin.services.polly.presigners/presign-synthesize-speech.html)  | HTTP POST |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Kotlin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-kotlin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

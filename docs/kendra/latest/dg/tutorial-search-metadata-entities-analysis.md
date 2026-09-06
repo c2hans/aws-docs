@@ -385,7 +385,3 @@ The ARN has a format similar to {{arn:aws:iam::123456789012:role/comprehend-S3-a
 It can take several minutes for the `JobStatus` to change to `COMPLETED`.
 
 At the end of this step, Amazon Comprehend stores the entity analysis results as a zipped `output.tar.gz` file inside an `output` folder within an auto-generated folder in your S3 bucket. Make sure that your analysis job status is complete before you move on to the next step.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

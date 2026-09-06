@@ -63,7 +63,3 @@ The following image shows the next section on the **Contact details** page for a
 The following image shows the conversational analytics for an email contact. Email analytics includes categorization, sensitive data redaction, and contact summaries. Because email contacts are asynchronous, there are no real-time analytics or sentiment scores.
 
 ![A sample contact details page with conversational analytics for an email contact.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contactlens-contactdetails-email.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

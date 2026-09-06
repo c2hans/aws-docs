@@ -71,7 +71,3 @@ This example policy gives all accounts in your organization access to their encr
 
 **Note**
 Your multi-region AWS KMS key must be replicated for every AWS Region that you plan to govern with AWS Control Tower.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

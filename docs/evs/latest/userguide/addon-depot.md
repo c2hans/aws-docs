@@ -79,7 +79,3 @@ After rotation, previously issued depot URLs will stop working within 5 minutes.
 <a name="_iam_permissions"></a>
 
 To access the Custom Addon depot, your IAM identity must have permission to call the `evs:GetDepotUrl` action on your environment resources. For more information, see [Amazon EVS identity-based policy examples](security-iam-id-based-policy-examples.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

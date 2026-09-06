@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::IoT::TopicRuleDestination",
   "Properties" : {
       "[HttpUrlProperties](#cfn-iot-topicruledestination-httpurlproperties)" : {{HttpUrlDestinationSummary}},
+      "[InfluxDBProperties](#cfn-iot-topicruledestination-influxdbproperties)" : {{InfluxDBDestinationProperties}},
       "[Status](#cfn-iot-topicruledestination-status)" : {{String}},
       "[VpcProperties](#cfn-iot-topicruledestination-vpcproperties)" : {{VpcDestinationProperties}}
     }
@@ -36,6 +37,8 @@ Type: AWS::IoT::TopicRuleDestination
 Properties:
   [HttpUrlProperties](#cfn-iot-topicruledestination-httpurlproperties): {{
     HttpUrlDestinationSummary}}
+  [InfluxDBProperties](#cfn-iot-topicruledestination-influxdbproperties): {{
+    InfluxDBDestinationProperties}}
   [Status](#cfn-iot-topicruledestination-status): {{String}}
   [VpcProperties](#cfn-iot-topicruledestination-vpcproperties): {{
     VpcDestinationProperties}}
@@ -48,6 +51,12 @@ Properties:
 Properties of the HTTP URL.
 *Required*: No
 *Type*: [HttpUrlDestinationSummary](aws-properties-iot-topicruledestination-httpurldestinationsummary.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`InfluxDBProperties`  <a name="cfn-iot-topicruledestination-influxdbproperties"></a>
+Property description not available.
+*Required*: No
+*Type*: [InfluxDBDestinationProperties](aws-properties-iot-topicruledestination-influxdbdestinationproperties.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Status`  <a name="cfn-iot-topicruledestination-status"></a>
@@ -97,7 +106,3 @@ The topic rule destination URL.
 
 `StatusReason`  <a name="StatusReason-fn::getatt"></a>
 Additional details or reason why the topic rule destination is in the current status.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

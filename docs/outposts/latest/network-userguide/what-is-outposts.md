@@ -40,6 +40,7 @@ Second-generation Outposts racks support specialized Amazon EC2 instances with a
 The second-generation racks support the following specialized, bare-metal Amazon EC2 instances:
 + Ultra-low latency with deterministic performance **bmn-sf2e**
 + High throughput and low latency **bmn-cx2**
++ High throughput and low latency with AMD processors **bmn-cx3a**
 
 ## AWS Outposts racks generations
 <a name="compare-racks"></a>
@@ -48,7 +49,7 @@ The following table lists the differences between the first-generation and secon
 
 |  | First-generation Outposts racks | Second-generation Outposts racks |
 | --- | --- | --- |
-| **Compute** | M5, C5, R5, G4dn | M7i, M8i, C7i, C8i, R7i, R8i, Bmn-sf2e, Bmn-cx2 |
+| **Compute** | M5, C5, R5, G4dn | M7i, M8i, C7i, C8i, R7i, R8i, Bmn-sf2e, Bmn-cx2, Bmn-cx3a |
 | **Networking** | +  Coupled scaling of compute and networking <br />+  User-managed scaling and resiliency setup   | +  Decoupled scaling of compute from networking <br />+  Built-in resiliency to handle network device failures   |
 | **Locally supported services** | Amazon EC2, Amazon EBS, Amazon S3, Amazon EBS snapshots, Amazon EKS, Amazon ECS, Route 53 Resolver, Amazon RDS, Amazon EMR, AWS IoT Greengrass, Application Load Balancers, Amazon ElastiCache, Elastic Disaster Recovery | Amazon EC2, Amazon EBS, Amazon S3, Amazon EKS, Amazon ECS, Amazon RDS, Amazon EMR, AWS IoT Greengrass, Application Load Balancers |
 | **Power** | Supported power configurations: 5 kVA, 10 kVA, or 15 kVA | Supported power configurations: 10 kVA, 15 kVA, 30 kVA |
@@ -117,7 +118,3 @@ Pricing is based on your order details. When you place an order, you can choose 
 For pricing based on location, configuration, and payment option, see: [Outposts racks pricing](https://aws.amazon.com/outposts/rack/pricing/)
 
 You are billed for shared resources and any data transfer from the AWS Region to the Outpost. You are also billed for data transfers that AWS performs to maintain availability and security.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

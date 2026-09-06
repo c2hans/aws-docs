@@ -41,7 +41,3 @@ spark_processor.run(
  If you are not using the [Amazon SageMaker AI Python SDK](https://sagemaker.readthedocs.io/) and one of its Processor classes to retrieve the pre-built images, you can retrieve these images yourself. The SageMaker prebuilt Docker images are stored in Amazon Elastic Container Registry (Amazon ECR). For a complete list of the available pre-built Docker images, see the [available images](https://github.com/aws/sagemaker-spark-container/blob/master/available_images.md) document.
 
  To learn more about using the SageMaker Python SDK with Processing containers, see [Amazon SageMaker AI Python SDK](https://sagemaker.readthedocs.io/en/stable/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

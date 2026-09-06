@@ -123,7 +123,3 @@ If your request succeeds, Macie returns an empty response.
 After you disassociate from the account, the original invitation persists as a resource for your Macie account unless you delete it. If you decide to re-join the organization, you can use this resource to accept the original invitation again. Alternatively, you can delete the invitation by using the [DeleteInvitations](https://docs.aws.amazon.com/macie/latest/APIReference/invitations-delete.html) operation or, for the AWS CLI, the [delete-invitations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/macie2/delete-invitations.html) command. If you delete the invitation, you also delete the association between your account and the other account.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -81,7 +81,3 @@ If the issue persists after the steps above and occurs on all networks, collect 
 + Wickr client version
 + Whether the issue occurs on cellular data, corporate WiFi, or both
 + Client logs (see [ Collect logs for your administrator](https://docs.aws.amazon.com/wickr/latest/userguide/troubleshoot-enduser.html#troubleshoot-enduser-logs))
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

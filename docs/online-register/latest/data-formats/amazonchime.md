@@ -129,7 +129,3 @@ Amazon Chime provides the following APIs for data retrieval.
 | <a name="chime-SearchChannels"></a>[SearchChannels](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_SearchChannels.html) | Search channels that an AppInstanceUser belongs to, or search channels across the AppInstance for an AppInstaceAdmin | List |
 | <a name="chime-ValidateAccountResource"></a>[ValidateAccountResource](https://docs.aws.amazon.com/chime/latest/ag/control-access.html) | Validate the account resource in your Amazon Chime account | Read |
 | <a name="chime-ValidateE911Address"></a>[ValidateE911Address](https://docs.aws.amazon.com/chime/latest/APIReference/API_ValidateE911Address.html) | Validate an address to be used for 911 calls made with Amazon Chime Voice Connectors | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

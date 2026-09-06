@@ -30,7 +30,3 @@ The identity calling the `CreateTrainingJob` API (rather than the execution role
 + [SageMaker Inference](nova-model-sagemaker-inference.md)
 + [Amazon Bedrock inference](nova-model-bedrock-inference.md)
 + [Evaluation with Inspect AI](nova-eval-inspect-ai.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

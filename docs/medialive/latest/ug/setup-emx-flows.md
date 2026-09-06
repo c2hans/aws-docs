@@ -62,7 +62,3 @@ A MediaConnect user must set up MediaConnect with flows to deliver source conten
    `arn:aws:mediaconnect:us-west-1:111122223333:flow:1bgf67:sports_event_A`
 
    Note that the ARN includes the flow name as the last portion.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

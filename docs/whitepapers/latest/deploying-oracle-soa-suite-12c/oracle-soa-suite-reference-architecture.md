@@ -159,7 +159,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-
 +  Make sure to set the appropriate value of the Java property `networkaddress.cache.ttl` so that appropriate caching policy is set in the JVM for successful DNS lookups. See *Setting the JVM TTL for DNS Name Lookups* in [Multi-AZ deployments for high availability](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html) for more information.
 +  Allow appropriate inbound and outbound traffic in the application security groups including the ports configured for T3, HTTP(S), Internal WebLogic Server Cluster intercommunication, and Internal Coherence cluster communication.
 +  If SOA nodes are not synchronizing after deploying the BPEL process, tune the Linux kernel parameters `net.core.rmem_max` and `net.core.wmem_max`. Refer to the Oracle Support document [Nodes Not Syncing In 12C (Doc ID 2315273.1)](https://support.oracle.com/knowledge/Middleware/2315273_1.html) for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

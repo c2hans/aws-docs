@@ -68,7 +68,3 @@ Smithy RPC v2 CBOR uses Concise Binary Object Representation (CBOR), a compact b
 <a name="service-protocol-updates-fallback"></a>
 
 Before updating, test protocol-dependent integrations and review the applicable SDK release notes for compatibility or fallback guidance. If an issue prevents adoption, continue using a supported client version that meets your requirements while you update the affected integration. Avoid relying on an unsupported SDK version as a long-term solution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdkref` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

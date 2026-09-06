@@ -164,7 +164,3 @@ The source code for the function `prvRequestS3ObjectRange` can be found on [ Git
 <a name="core-http-bmt-demo-response-task"></a>
 
 The response tasks waits on the response queue for responses received over the network. The main task populates the response queue when it successfully receives an HTTP response. This task processes the responses by logging the status-code, headers, and body. A real-world application may process the response by writing the response body to flash memory, for example. If the response status-code is not `206 partial content`, then the task notifies the main task that the demo should fail. The response task is specified in function `prvResponseTask`. The source code for this function can be found on [ Github](https://github.com/FreeRTOS/FreeRTOS/blob/main/FreeRTOS-Plus/Demo/coreHTTP_Windows_Simulator/HTTP_S3_Download_Multithreaded/DemoTasks/S3DownloadMultithreadedHTTPExample.c#L961-L1047).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

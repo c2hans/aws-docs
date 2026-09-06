@@ -12,7 +12,3 @@ You can have valid credentials to authenticate your requests in AWS. However, un
 The following sections describe how to manage cloud-based permissions for AWS Snowball Edge. We recommend that you read the overview first.
 + [Overview of Managing Access Permissions to Your Resources in the AWS Cloud](authentication-and-access-control.md#access-control-overview)
 + [Using Identity-Based Policies (IAM Policies) for AWS Snowball Edge](access-control-managing-permissions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

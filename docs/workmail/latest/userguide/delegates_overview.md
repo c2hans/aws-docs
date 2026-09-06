@@ -16,7 +16,3 @@ You can specify delegates in Microsoft Outlook. To do this, connect to your Outl
 + [Sending email as someone else](send_email_as.md)
 + [Scheduling meetings on behalf of someone else](schedule_meeting_delegate.md)
 + [Sharing your inbox with another user](share_your_inbox.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -340,7 +340,3 @@ Package names (modules, in Go parlance) are specified by URL with the version nu
 Go automatically downloads dependencies whenever you build. The CDK does this for you automatically whenever you run your app, so there is no need to do it manually.
 
 You may use the **go get** command to install a module and update `go.mod`. To see a list of available updates for your dependencies, issue **go list -m -u all**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

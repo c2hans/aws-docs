@@ -107,7 +107,3 @@ After you configure a VPC connection for an Amazon Managed Grafana workspace, al
 <a name="vpc-faq-manually-edit-vpc"></a>
 
 The Amazon Managed Grafana VPC connection uses the security groups and subnets to control the traffic allowed between the VPC and your Amazon Managed Grafana workspace. When the security group or subnet is modified or deleted from outside the Amazon Managed Grafana console (such as with the VPC console), the VPC connection in your Amazon Managed Grafana workspace stops protecting your workspace security, and the workspace becomes unreachable. To fix this issue, update the security groups configured for your Amazon Managed Grafana workspace in the Amazon Managed Grafana console. When viewing your workspace, select **Outbound VPC connection** on the **Network access control** tab to modify the subnets or security groups associated with the VPC connection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

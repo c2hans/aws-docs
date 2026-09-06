@@ -49,7 +49,3 @@ For this workload, the cloud and application teams take the following actions to
 <a name="regular-backups.879aa6ee-b3e5-5a18-a3ea-f0d2bd747259"></a>
 + The application team creates an AWS Backup plan for its EC2 instances and Amazon Elastic Block Store (Amazon EBS) volumes.
 + The application team implements a mechanism to perform a backup restoration manually every month.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

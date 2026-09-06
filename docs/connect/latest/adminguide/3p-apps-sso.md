@@ -23,7 +23,3 @@ Your third-party application can complete the sign-in flow in an iframe if your 
 1. Attach each user identity to the applications in your identity provider that you integrate with your Connect Customer instance. To control which agents can access an application in the agent workspace, set application-specific permissions in security profiles. For more information, see [Assign permissions to use third-party applications](assign-security-profile-3p-apps.md).
 
 1. After a user signs in to their identity provider, they can federate into their Connect Customer instance. If an application is set up for SSO, the user can also federate into it without entering a username and password.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

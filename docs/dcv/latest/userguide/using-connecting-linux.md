@@ -43,7 +43,3 @@ The steps for connecting to a Amazon DCV session are the same across all Linux c
 By default, the connection is terminated after three unsuccessful login attempts. To try again, restart the connection.
 
 1. If you're prompted to verify the certificate on the server, confirm the fingerprint of the certificate with your Amazon DCV administrator. If the fingerprint is valid, choose **Trust & Connect**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

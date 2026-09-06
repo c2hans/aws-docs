@@ -41,7 +41,3 @@ The AWS Partner Central home page features Partner news and Partner events feeds
 The Partner news feed features articles related to AWS Partner Central launch announcements, AWS service launch news, and important AWS Partner deadlines. To access a searchable and filterable list of articles published in the last six months, choose **View all partner news**.
 
 The Partner events feed features events relevant to AWS Partners, including webinars, workshops, summits, and keynote events. Delivery-format tags indicate if an event is in-person, virtual, or both. Choose the title of an event to access more information or register. To access a searchable and filterable page of all upcoming events curated for AWS Partners, choose **View all partner events**. Pinned events display at the top of this page, highlighted because of their importance to all AWS Partners.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

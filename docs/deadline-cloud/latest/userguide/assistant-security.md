@@ -82,7 +82,3 @@ The assistant provides two feedback mechanisms. Each mechanism transmits differe
 + **General feedback form** (non-EU and non-UK regions only) – When you submit general feedback through the speech bubble icon, the form transmits only the information that you explicitly enter. This includes a category selection, a subject line, a description, and an optional email address. The form also includes your monitor's Region and the current page path as metadata. No conversation content or log data is included unless you manually type it into the form fields. General feedback is submitted to an AWS feedback service.
 
 General feedback is unavailable in EU and UK regions because of data residency requirements. The thumbs up/down feedback is available in all regions because the telemetry event contains no customer content.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

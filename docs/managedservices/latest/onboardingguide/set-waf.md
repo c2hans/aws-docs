@@ -29,7 +29,3 @@ After permissions are provisioned, you have the full functionality of AWS WAF.
 **Q: What are the prerequisites or dependencies to using AWS WAF?**
 
 There are no prerequisites or dependencies to use AWS WAF in your AMS account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

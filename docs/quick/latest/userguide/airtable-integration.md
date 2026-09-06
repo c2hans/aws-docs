@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/airtable-integrat
 # Airtable integration
 <a name="airtable-integration"></a>
 
-With the Airtable action connector, you can access the Airtable platform directly in Amazon Quick through natural language. You can create and update records, manage bases and tables, filter views, and perform relational data operations without leaving Amazon Quick.
+With the Airtable connector, you can access the Airtable platform directly in Amazon Quick through natural language. You can create and update records, manage bases and tables, filter views, and perform relational data operations without leaving Amazon Quick.
 
 Amazon Quick supports multiple authentication methods for Airtable. Choose the method that best fits your organization's security requirements.
 + **Default OAuth app** – Uses an AWS-managed OAuth application. No additional credentials are needed. Users authenticate directly with their Airtable account.
@@ -186,7 +186,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Invalid client credentials (Custom OAuth app)** – Verify that the Client ID and Client secret match the values in your Airtable OAuth integration. If you regenerated the client secret, update the value in Amazon Quick.
 + **API Key rejected** – Verify that your personal access token is active and has the required scopes. Tokens can be revoked or expired in the Airtable Builder Hub.
 + **Insufficient permissions** – Verify that the scopes configured for your authentication method include the permissions required for the actions that you want to use. See [Recommended scopes](#airtable-oauth-scopes).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

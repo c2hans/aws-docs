@@ -149,7 +149,3 @@ View details about updates to AWS managed policies for Application Discovery Ser
 | --- | --- | --- |
 | [AWSApplicationDiscoveryAgentlessCollectorAccess](#security-iam-awsmanpol-AWSApplicationDiscoveryAgentlessCollectorAccess) – New policy made available with the Agentless Collector launch  | Application Discovery Service added the new managed policy `AWSApplicationDiscoveryAgentlessCollectorAccess` that grants the Agentless Collector access to register and communicate with the Application Discovery Service, and communicate with other AWS services. | August 16, 2022 |
 | Application Discovery Service started tracking changes | Application Discovery Service started tracking changes for its AWS managed policies. | March 1, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

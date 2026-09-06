@@ -111,7 +111,3 @@ Tags that were added when the repository was created are not returned in the out
    If you forget the name or ID, follow the instructions in [View CodeCommit repository details (AWS CLI)](how-to-view-repository-details.md#how-to-view-repository-details-cli).
 
 After you create a repository, you can connect to it and start adding code. For more information, see [Connect to a repository](how-to-connect.md). You can also add your repository to a continuous delivery pipeline. For more information, see [Simple Pipeline Walkthrough](https://docs.aws.amazon.com/codepipeline/latest/userguide/getting-started-cc.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,7 +47,3 @@ Remember that governing a Region is an action that you can select from the AWS C
 
 **Important limitations for governance and accounts**
 + If 16 or more commercial Regions where AWS Control Tower is available are governed, including opt-in Regions, the upper limit on the number of accounts per organizational unit (OU), is reduced, when registering an OU. For more information, see [Limitations based on underlying AWS services](https://docs.aws.amazon.com/controltower/latest/userguide/region-stackset-limitations.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,7 +42,3 @@ Aurora backups are automatic, incremental, and continuous and have no impact on 
 <a name="aurora-features-snapshots"></a>
 
 You can create user-initiated backups of your Aurora instance at any time, and snapshots are stored in Amazon S3 and retained until you explicitly delete them. Aurora uses automated incremental snapshots to reduce the time and storage required. You can create a new instance from a DB snapshot whenever you desire.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

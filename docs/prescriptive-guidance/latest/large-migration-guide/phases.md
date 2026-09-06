@@ -67,7 +67,3 @@ Migrate and modernize is the third and final phase of your migration journey. Ge
 | Stage | Duration | Purpose |
 | Stage 1: Initialize | 1–3 months | + Prepare your platform and people for a large migration.<br />+ Build your standard operating procedures (runbooks). |
 | Stage 2: Implement | Varies by project scope and strategy | + Use runbooks to implement the large migration.<br />+ Manage, monitor, and improve the migration. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

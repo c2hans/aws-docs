@@ -63,7 +63,3 @@ Now, you configure the forest trust relationship with your second AWS Managed Mi
 1. Now, go back to the trust you created in the first domain and verify the trust relationship again.
 
 Congratulations. You now have a trust relationship between your two AWS Managed Microsoft AD domains. Only one relationship can be set up between these two domains. If for example, you want to change the trust direction to one-way, you would first need to delete this existing trust relationship and create a new one.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

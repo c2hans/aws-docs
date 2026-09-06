@@ -29,7 +29,3 @@ A PromQL alarm is configured with the following parameters:
 + **EvaluationInterval** is how frequently, in seconds, the alarm evaluates the PromQL query.
 
 To create a PromQL alarm, see [Create an alarm using a PromQL query](Create_PromQL_Alarm.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

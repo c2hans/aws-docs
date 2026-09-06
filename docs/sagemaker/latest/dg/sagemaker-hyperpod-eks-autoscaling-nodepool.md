@@ -104,7 +104,3 @@ These are the optional constraints and requirements you can specify in your `Nod
 | Instance Types (`node.kubernetes.io/instance-type`) | Controls which SageMaker instance types Karpenter can choose from | Instead of restricting to only ml.c5.xlarge, let Karpenter pick from all available types in your instance groups | Leave this undefined or use Exists operator to give Karpenter maximum flexibility in choosing cost-effective instance types |
 | Availability Zones (`topology.kubernetes.io/zone`) | Controls which AWS availability zones nodes can be created in | Specific zone names like us-east-1c. Use when you need pods to run in specific zones for latency or compliance reasons | n/a |
 | Architecture (`kubernetes.io/arch`) | Specifies CPU architecture | Only amd64 (no ARM support currently) | n/a |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

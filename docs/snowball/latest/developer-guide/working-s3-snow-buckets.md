@@ -102,7 +102,3 @@ The bucket location format specifies the Snowball Edge device where the bucket w
 ```
 
 For more information, see [create-bucket](https://awscli.amazonaws.com/v2/documentation/api/2.0.34/reference/s3api/create-bucket.html) in the AWS CLI Command Reference.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

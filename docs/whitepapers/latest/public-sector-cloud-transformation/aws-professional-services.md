@@ -21,7 +21,3 @@ AWS helps customers achieve specific outcomes related to cloud adoption. Each of
  *AWS Professional Services, accelerated business outcomes *
 
 Organizations need both leadership and technical expertise to accelerate and optimize their cloud journey, reduce risk, and shorten their time to value. The AWS Professional Services offering was developed based on AWS best practice, leveraged from thousands of delivery engagements, achieving results by working backwards and focusing on the business outcomes to increase speed of value. Focusing on customer outcomes enables AWS to define success through the customer's eyes to enable sustainable innovation the right way, the first time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

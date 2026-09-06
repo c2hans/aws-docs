@@ -18,7 +18,3 @@ You can use the **Data Exports** page in the AWS Billing and Cost Management con
 1. On the **Export details** page, choose **Edit**.
 
 1. In **Edit** mode, you can't change the report name or Billing view but you can update the column selection, additional export content (table configurations), time granularity, compression type, and file format for an existing export. For Data export overwriting, you can switch from **Create New** to **Overwrite**, but not from **Overwrite** to **Create New**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

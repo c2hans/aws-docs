@@ -51,7 +51,3 @@ However, the administrator-member relationships that you set up in these other s
 For example, a user from the GuardDuty administrator account A can see findings for GuardDuty member accounts B and C on the GuardDuty console. If account A then enables Security Hub CSPM, users from account A do *not* automatically see GuardDuty findings for accounts B and C in Security Hub CSPM. A Security Hub CSPM administrator-member relationship is also required for these accounts.
 
 To do this, make account A the Security Hub CSPM administrator account and enable accounts B and C to become Security Hub CSPM member accounts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

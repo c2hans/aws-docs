@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
  In the large organization, some teams are very advanced in cost optimization and they are aware of cost impacts while other teams are not that mature. Hence, team cooperation, sharing importance of Cloud Finance Management, Cloud Center of Excellence is extremely important to promote
 
  a culture of cost optimization. For more information on tags, see [Using AWS cost](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) [allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

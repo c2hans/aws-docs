@@ -230,7 +230,3 @@ You can submit an update to your access request before it expires. For details, 
 To log into an instance that is part of an EC2 Auto Scaling group (ASG), you request access to the ASG stack, which gives you access to all associated instances.
 
 For a walkthrough on requesting Admin access, see [Admin Access: requesting](https://docs.aws.amazon.com/managedservices/latest/ctref/ex-access-admin-request-col.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
  Figure 3 visualizes the SaaS objectives of each company profile upon the following criteria: Time to Market and Business Goal
 
 ![Diagram plotting the company profile objectives for the hypothetical companies.](http://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/images/company-profile-objectives.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

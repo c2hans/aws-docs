@@ -80,7 +80,3 @@ Before creating the CNAME, verify the following:
 
 **Warning**
 Creating the CNAME record immediately begins routing live traffic to RTB Fabric. Ensure that your routing rules, link configuration, and TLS certificates (if using HTTPS) are fully configured and tested before updating DNS. See Getting started with inbound external links with custom domains for the recommended setup sequence.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RTB Fabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rtb-fabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

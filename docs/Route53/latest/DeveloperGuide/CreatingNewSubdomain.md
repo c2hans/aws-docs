@@ -81,7 +81,3 @@ After your changes to Amazon Route 53 records have spread (see [Checking the st
 **Important**
 Do not add a start of authority (SOA) record to the zone file for the parent domain. The subdomain uses Route 53, so the parent's DNS service does not control the subdomain.
 If your DNS service added an SOA record for the subdomain, delete it. Do not delete the SOA record for the parent domain.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

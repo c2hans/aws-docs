@@ -32,7 +32,3 @@ Data from the Raw Layer is inserted or updated in the Enriched layer in the righ
 The Curated Layer is the layer where data is stored for data consumption. Records deleted on the source are deleted physically. Any calculations (averages, time between dates, etc) or data manipulation (format changes, lookup from another table) can be stored in this layer, ready to be consumed. Data is updated in this layer using the AWS Glue jobs. Amazon Athena views are created on top of these tables for downstream consumption through Amazon Quick Sight or similar tools.
 
 The [Data Lakes with SAP and Non-SAP Data on AWS Solution Guidance](https://aws.amazon.com/solutions/guidance/data-lakes-with-sap-and-non-sap-data-on-aws/) provides a detailed architecture, steps to implement and accelerators to fast track the implementation of a Data Lake for SAP and non-SAP data. You can refer to the different available options to extract data from SAP to the Data Lake in the prior Data Integration section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

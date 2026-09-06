@@ -65,7 +65,3 @@ A sender ID or other origination identity that requires registration is only tre
 Although a registration is not yet **Complete**, how your messages are delivered and displayed depends on the destination country, its carriers, and its regulator. Depending on the destination, messages might be sent from a shared or random long code, displayed with a generic identifier such as `NOTICE` or "Unverified", or, in some countries, not delivered at all. After the status changes to **Complete**, your registered origination identity is applied and messages display accordingly.
 
 The authoritative signal that a registration is in effect is the **Complete** status in the AWS End User Messaging SMS console. A submitted registration, or a registration in review, does not make the sender ID active.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

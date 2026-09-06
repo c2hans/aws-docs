@@ -84,7 +84,3 @@ To customize map styles, you must understand the structure of the style descript
 + **Modify styles for layers**: Depending on the map style editor you’re using, you can change existing layers or add new ones to customize the style. For example, you can adjust the color of roads, modify the font size of labels, or add custom icons for specific locations.
 + **Define styles for different zoom levels**: Map style editors allow you to define different styles for different zoom levels, which is useful for controlling the level of detail and visibility based on user zoom interactions.
 + **Test and iterate**: After modifying or creating the style descriptor, test the customized style on a map to ensure it displays as intended. Iterate and adjust until you achieve the desired visual style.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

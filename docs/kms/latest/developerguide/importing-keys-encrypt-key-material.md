@@ -309,7 +309,3 @@ The RSA\_AES\_KEY\_WRAP\_SHA\_256 wrapping algorithm requires OpenSSL version 3.
 ------
 
 Proceed to [Step 4: Import the key material](importing-keys-import-key-material.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

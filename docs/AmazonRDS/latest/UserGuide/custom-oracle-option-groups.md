@@ -128,7 +128,3 @@ To create an option group, call the Amazon RDS API [`CreateOptionGroup`](https:/
 You can associate your option group with a new or existing DB instance:
 + For a new DB instance, apply the option group when you create the instance. For more information, see [Creating an RDS Custom for Oracle DB instance](custom-creating.md#custom-creating.create).
 + For an existing DB instance, apply the option group by modifying the instance and attaching the new option group. For more information, see [Modifying your RDS Custom for Oracle DB instance](custom-managing.modifying.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

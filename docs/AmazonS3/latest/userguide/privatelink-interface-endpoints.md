@@ -52,7 +52,6 @@ For more information, see [Gateway endpoints](https://docs.aws.amazon.com/vpc/la
 VPC limitations apply to AWS PrivateLink for Amazon S3. For more information, see [Interface endpoint considerations](https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface.html#vpce-interface-limitations) and [AWS PrivateLink quotas](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-limits-endpoints.html) in the *AWS PrivateLink Guide*. In addition, the following restrictions apply.
 
 Interface endpoints for Amazon S3 does not support the following:
-+ [Federal Information Processing Standard (FIPS) endpoints](https://aws.amazon.com/compliance/fips/)
 + [Website endpoints](WebsiteEndpoints.md)
 + [Legacy global endpoints](VirtualHosting.md#deprecated-global-endpoint)
 + [S3 dash Region endpoints ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html)
@@ -67,6 +66,9 @@ Interface endpoints for Amazon S3 does not support the following:
 
 To create a VPC interface endpoint, see [ Create a VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#create-interface-endpoint-aws) in the *AWS PrivateLink Guide*. To create a VPC gateway endpoint, see [Create a gateway endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html#create-gateway-endpoint-s3) in the *AWS PrivateLink Guide*.
 
+**FIPS endpoints for Amazon S3**
+To connect to Amazon S3 over AWS PrivateLink with FIPS 140-3 validated cryptographic modules, create an interface endpoint. Use the FIPS service name `com.amazonaws.{{region}}.s3-fips`. For example, use `com.amazonaws.us-east-1.s3-fips`. FIPS interface endpoints are available in all AWS Regions that offer [FIPS endpoints](https://aws.amazon.com/compliance/fips/) for Amazon S3. These endpoints support access to buckets, access points, and Amazon S3 Control API operations. You can configure FIPS interface endpoints to use IPv4, IPv6, or dual-stack IP addressing.
+
 ## Accessing Amazon S3 interface endpoints
 <a name="accessing-s3-interface-endpoints"></a>
 
@@ -75,6 +77,8 @@ When you create an interface endpoint, Amazon S3 generates two types of endpoint
 + A *Zonal* DNS name includes the Availability Zone—for example, `{{vpce-1a2b3c4d-5e6f}}-us-east-1a.s3.us-east-1.vpce.amazonaws.com`. You might use this option if your architecture isolates Availability Zones. For example, you could use it for fault containment or to reduce Regional data transfer costs.
 
 Endpoint-specific S3 DNS names can be resolved from the S3 public DNS domain.
+
+If you create an interface endpoint that uses the FIPS service name `com.amazonaws.{{region}}.s3-fips`, Amazon S3 generates endpoint-specific DNS names. These names include the `s3-fips` service identifier. For example, `{{vpce-1a2b3c4d-5e6f}}.s3-fips.us-east-1.vpce.amazonaws.com`.
 
 VPC endpoints for Amazon S3 support different types of IP addressing, including: IPv4, IPv6, and Dualstack. See [IP Address types for VPC endpoints](#privatelink-ip-address-types) and [DNS record IP types for VPC endpoints](#privatelink-dns-record-types).
 
@@ -133,9 +137,11 @@ Creating or modifying a gateway endpoint with a DNS record IP type other than se
 <a name="private-dns"></a>
 
 Private DNS options for VPC interface endpoints simplify routing S3 traffic over VPC endpoints and help you take advantage of the lowest-cost network path available to your application. You can use private DNS options to route Regional S3 traffic without updating your S3 clients to use the endpoint-specific DNS names of your interface endpoints, or managing DNS infrastructure. With private DNS names enabled, Regional S3 DNS queries resolve to the private IP addresses of AWS PrivateLink for the following endpoints:
-+ Regional bucket endpoints (for example, `s3.us-east-1.amazonaws.com`)
-+ Control endpoints (for example, `s3-control.us-east-1.amazonaws.com`)
-+ Access point endpoints (for example, `s3-accesspoint.us-east-1.amazonaws.com`)
++ Regional bucket endpoints (for example, `s3.us-east-1.amazonaws.com`, or `s3-fips.us-east-1.amazonaws.com` for FIPS)
++ Control endpoints (for example, `s3-control.us-east-1.amazonaws.com`, or `s3-control-fips.us-east-1.amazonaws.com` for FIPS)
++ Access point endpoints (for example, `s3-accesspoint.us-east-1.amazonaws.com`, or `s3-accesspoint-fips.us-east-1.amazonaws.com` for FIPS)
+
+If you configure the interface endpoint with the **Dualstack** IP address type, the FIPS dual-stack endpoints also resolve to the private IP addresses of AWS PrivateLink. For example, `s3-fips.dualstack.us-east-1.amazonaws.com` resolves to a private IP address.
 
 If you have a gateway endpoint in your VPC, you can automatically route in-VPC requests over your existing S3 gateway endpoint and on-premises requests over your interface endpoint. This approach allows you to optimize your networking costs by using gateway endpoints, which are not billed, for your in-VPC traffic. Your on-premises applications can use AWS PrivateLink with the help of the inbound Resolver endpoint. Amazon provides a DNS server, called the Route 53 Resolver, for your VPC. An inbound Resolver endpoint forwards DNS queries from the on-premises network to Route 53 Resolver.
 
@@ -539,7 +545,3 @@ This policy disables *console* access to the specified bucket, because console r
 For more policy examples, see [Endpoints for Amazon S3](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html#vpc-endpoints-policies-s3) in the *VPC User Guide*.
 
 For more information about VPC connectivity, see [Network-to-VPC connectivity options](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/network-to-amazon-vpc-connectivity-options.html) in the AWS whitepaper [Amazon Virtual Private Cloud Connectivity Options](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

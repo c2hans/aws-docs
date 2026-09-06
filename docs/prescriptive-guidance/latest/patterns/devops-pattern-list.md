@@ -65,7 +65,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 + [Use third-party Git source repositories in AWS CodePipeline](use-third-party-git-source-repositories-in-aws-codepipeline.md)
 + [Create a CI/CD pipeline to validate Terraform configurations by using AWS CodePipeline](create-a-ci-cd-pipeline-to-validate-terraform-configurations-by-using-aws-codepipeline.md)
 + [More patterns](devops-more-patterns-pattern-list.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

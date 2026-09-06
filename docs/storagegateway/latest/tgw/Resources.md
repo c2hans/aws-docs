@@ -19,7 +19,3 @@ This section describes AWS and third-party software, tools, and resources that c
 + [Tagging Storage Gateway Resources](tagging-resources-common.md) - Learn how to use metadata tags to categorize your resources and make them easier to manage.
 + [Working with open-source components for Storage Gateway](AboutAWSStorageGatewaySoftware.md) - Learn about the third-party tools and licenses that are used to deliver Storage Gateway functionality.
 + [AWS Storage Gateway quotas](resource-gateway-limits.md) - Learn about limits and quotas for Tape Gateway, including maximum limitations for tape size and quantity, and local disk size recommendations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

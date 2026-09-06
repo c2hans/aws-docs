@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 +  [Solutions for Advertising and Marketing](https://aws.amazon.com/solutions/advertising-marketing/)
 +  [AWS Clean Rooms proof of concept scoping part 1: media measurement](https://aws.amazon.com/blogs/big-data/aws-clean-rooms-proof-of-concept-scoping-part-1-media-measurement/)
 +  [How AWS Clean Rooms works with IAM](https://docs.aws.amazon.com/clean-rooms/latest/userguide/security_iam_service-with-iam.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,7 +45,3 @@ You provide information about your data sources to your application's Flink conn
 | path | The Amazon S3 path, e.g. s3://mybucket/. |
 
 For more information about other connectors besides Kinesis and Apache Kafka, see your connector's documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

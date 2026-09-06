@@ -76,7 +76,3 @@ The following example illustrates the custom metric `CPU.User` in the `Custom/RD
 ![CPU.User custom metric](http://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/d8f38639-c2b2-40f2-bc8a-04f1519ec718.png)
 
 When the metric is available in the CloudWatch repository, you can display and analyze it in CloudWatch dashboards, apply further math and query operations, and set an alarm to monitor this specific metric and generate alerts if the observed values are not in line with the defined alarm conditions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

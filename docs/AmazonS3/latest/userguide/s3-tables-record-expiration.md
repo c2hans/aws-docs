@@ -142,7 +142,3 @@ As you configure and manage record expiration settings for your AWS managed S3 t
 + If there are delays when data is exported to a table, records might become eligible for expiration sooner than you expect. For this reason, we recommend that you account for potential ingestion delays by adding buffer to the retention period in the expiration settings for your tables.
 + Records expire and are removed within 24 to 48 hours after they become eligible for expiration. Amazon S3 doesn't expire and remove records immediately after they become eligible for expiration.
 + Records cannot be recovered after they expire and are removed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

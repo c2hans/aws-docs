@@ -97,7 +97,3 @@ The following table shows common Classic metric names and their suggested OTel e
 <a name="metrics-otel-migrate-vended-metrics"></a>
 
 You don't need to migrate AWS vended metrics (Amazon EC2 CPU, Amazon RDS connections, and so on) manually. Enable OTel Vended Metric Enrichment to make them queryable through PromQL automatically. For more information, see [AWS vended metrics in OpenTelemetry format](CloudWatch-OTelEnrichment.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

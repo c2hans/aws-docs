@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/auto-
 You can use the Auto Replenishment feature to determine the amount of inventory to hold and when to order more inventory by automating inventory management. Auto Replenishment streamlines the inventory management process by monitoring inventory, forecasted demand, and automatically reordering items based on configured inventory policy, ordering schedules, minimum order quantities, and vendor lead times.
 
 You can use Auto Replenishment to generate purchase order requests that can be imported into your ERP or purchasing systems to create purchase orders (POs) for your suppliers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

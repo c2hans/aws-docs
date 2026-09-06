@@ -67,7 +67,3 @@ You must have created the following resources to use with the AWS CloudFormation
 To view the pipeline that was created, find the **Logical ID** column under the **Resources** tab for your stack in CloudFormation. Note the name in the **Physical ID** column for the pipeline. In CodePipeline, you can view the pipeline with the same Physical ID (pipeline name) in the Region where you created your stack.
 
 1. In your source repository, commit and push a change. Your change-detection resources pick up the change, and your pipeline starts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

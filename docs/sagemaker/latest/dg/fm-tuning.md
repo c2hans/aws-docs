@@ -50,7 +50,3 @@ You can tune the following hyperparameters for the Factorization Machines algori
 | linear\_lr | ContinuousParameterRange | MinValue: 1e-8, MaxValue: 512 | None |
 | linear\_wd | ContinuousParameterRange | MinValue: 1e-8, MaxValue: 512 | None |
 | mini\_batch\_size | IntegerParameterRange | MinValue: 100, MaxValue: 10000 | None |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

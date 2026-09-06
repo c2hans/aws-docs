@@ -64,7 +64,3 @@ For more information about how to use the AWS Management Console to create stage
 <a name="apigateway-method-level-throttling-in-usage-plan"></a>
 
 You can set additional throttling targets at the method level in **Usage Plans** as shown in [Create a usage plan](api-gateway-create-usage-plans.md#api-gateway-usage-plan-create). In the API Gateway console, these are set by specifying `Resource={{<resource>}}`, `Method={{<method>}}` in the **Configure Method Throttling** setting. For example, for the [PetStore example](api-gateway-create-api-step-by-step.md), you might specify `Resource=/pets`, `Method=GET`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -179,7 +179,3 @@ ACM publishes the following metrics to the `AWS/CertificateManager` namespace fo
 + `CertificateIssuanceFailed` – Count of failed issuance attempts for the endpoint.
 
 Both metrics use the `AcmeEndpointArn` dimension. You can create CloudWatch alarms on these metrics to be notified of issuance failures. For more information, see [Supported CloudWatch metrics](cloudwatch-metrics.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ SELECT * from amazon_keyspaces.example_table_2;
 ```
 
 This query results in a table scan operation where Amazon Keyspaces scans all four partitions of the table and consumes 6 RRUs in `LOCAL_QUORUM` consistency mode. First, Amazon Keyspaces consumes 3 RRUs for reading the three rows with `pk=‘pk’`. Then, Amazon Keyspaces consumes the additional 3 RRUs for scanning the three empty partitions of the table. Because this query results in a table scan, Amazon Keyspaces scans all the partitions in the table, including partitions without data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

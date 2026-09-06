@@ -49,7 +49,3 @@ Amazon Transcribe streaming offers four main types of real-time transcription: *
 +  **Medical transcriptions** are tailored to medical professionals and incorporate medical terms. A common use case for this service is transcribing doctor-patient dialogue in real time, so doctors can focus on their patient instead of taking notes. Refer to [StartMedicalStreamTranscription](API_streaming_StartMedicalStreamTranscription.md) for details.
 +  **Call Analytics transcriptions** are designed for use with call center audio on two different channels; if you're looking for insight into customer service calls, use this option. Refer to [StartCallAnalyticsStreamTranscription](API_streaming_StartCallAnalyticsStreamTranscription.md) for details.
 +  **HealthScribe transcriptions** are designed to automatically create clinical notes from patient-clinician conversations using generative AI. Refer to [here] for details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

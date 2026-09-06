@@ -43,7 +43,3 @@ Customers can now choose from the following fleet types:
  Setting maximum capacity might appear to be an arbitrary value, but when properly forecasted and set, it optimizes total resource consumption and cost. A value entered that is higher than the [*service quota for the WorkSpaces Applications fleet*](https://docs.aws.amazon.com/appstream2/latest/developerguide/limits.html) in your AWS account can appear to be valid, but, when auto scaling events attempt to scale resources to the maximum capacity, they fail to launch, as the maximum capacity value exceeds the available service quota. Ensure that a service quota request is placed for the desired maximum capacity to ensure automatic scaling functions as your organization anticipates.
 
  Another important consideration when setting a maximum capacity value is cost. For more information, refer to the [*Optimizing costs with fleet type choice*](cost-optimization.md#optimizing-costs-with-fleet-type-choice) section of this document.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

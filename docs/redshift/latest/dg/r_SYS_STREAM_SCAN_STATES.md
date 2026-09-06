@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_SYS_STREAM_SCAN_STA
 # SYS\_STREAM\_SCAN\_STATES
 <a name="r_SYS_STREAM_SCAN_STATES"></a>
 
-Records scan states for records loaded via streaming ingestion.
+Records scan states for records loaded through streaming ingestion.
 
 SYS\_STREAM\_SCAN\_STATES is visible to all users. Superusers can see all rows; regular users can see only their own data. For more information, see [Visibility of data in system tables and views](cm_chap_system-tables.md#c_visibility-of-data).
 
@@ -42,7 +42,3 @@ sum(scanned_bytes) total_bytes from sys_stream_scan_states where query in (54011
  8601939    | msktest        | msk                  | mskstream       |      14677023 |   31056580668
 (2 rows)
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

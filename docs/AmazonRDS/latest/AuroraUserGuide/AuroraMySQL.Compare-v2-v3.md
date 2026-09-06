@@ -193,7 +193,3 @@ For compatibility, you can check the parameter values in the `mysql` client by u
  The following limitations apply to binary log compression in Aurora MySQL version 3:
 +  Transactions whose binary log data is larger than the maximum allowed packet size aren't compressed. This is true regardless of whether the Aurora MySQL binary log compression setting is turned on. Such transactions are replicated without being compressed.
 +  If you use a connector for change data capture (CDC) that doesn't support MySQL 8.0 yet, you can't use this feature. We recommend that you test any third-party connectors thoroughly with binary log compression. Also, we recommend that you do so before turning on binlog compression on systems that use binlog replication for CDC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

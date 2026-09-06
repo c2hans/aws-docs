@@ -28,7 +28,3 @@ This section provides reference pages to Oracle and PostgreSQL functions, statem
 + [Oracle and PostgreSQL user-defined functions](chap-oracle-aurora-pg.sql.udfs.md)
 + [Oracle UTL\_FILE package](chap-oracle-aurora-pg.sql.utl.md)
 + [Oracle UTL\_MAIL or UTL\_SMTP and PostgreSQL Scheduled Lambda with Amazon SES](chap-oracle-aurora-pg.sql.mail.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

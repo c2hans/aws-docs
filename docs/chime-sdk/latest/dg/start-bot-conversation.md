@@ -401,7 +401,3 @@ You also need to be aware of the following service quotas:
 + The Amazon Chime SDK has a service quota for the maximum number of Amazon Lex bots you can use with the PSTN audio [StartBotConversation](#start-bot-conversation) action. For more information, refer to [SIP trunking and voice quotas](https://docs.aws.amazon.com/general/latest/gr/chime-sdk.html#chm-sdk-pstn-quotas), in the *AWS General Reference*.
 + Amazon Lex has a service quota for the maximum number of concurrent voice conversations per Lex bot. You can contact the Amazon Lex service team for quota increases. For more information, see the Amazon Lex [Guidelines and quotas](https://docs.aws.amazon.com/lexv2/latest/dg/quotas.html) in the *Amazon Lex Developer Guide*.
 + Amazon Polly has a service quota for synthesizing text responses. You can contact the Amazon Polly service team for quota increases. For more information about Amazon Polly service quotas, see [Quotas in Amazon Polly](https://docs.aws.amazon.com/polly/latest/dg/limits.html), in the *Amazon Polly Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

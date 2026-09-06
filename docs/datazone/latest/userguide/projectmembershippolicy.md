@@ -47,7 +47,3 @@ It's important to note several concepts that are used in this topic:
 **Scenario 7** - Users {U1, U2, G1} can be added to the project of the Root Domain as they part of the membership pool from the Root Domain. Any user or group can be added to the project under Domain Unit 9 as the membership pool consists of {All Users/Groups} because cascade is set to false in the Root Domain above it.
 
 ![Project membership policy in the hierarchy of domain units](http://docs.aws.amazon.com/datazone/latest/userguide/images/scenario7.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

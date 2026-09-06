@@ -31,7 +31,3 @@ This section assumes that you have already performed these tasks:
 + [Amazon S3](requirements-for-s3.md)
 + [Secrets Manager secrets](requirements-for-secrets.md)
 + [Systems Manager parameter store](requirements-for-EC2.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

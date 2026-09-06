@@ -81,7 +81,3 @@ For the procedure for using the AWS Direct Connect Resiliency Toolkit to configu
 Use the AWS Direct Connect Resiliency Toolkit to verify traffic routes and that those routes meet your resiliency requirements.
 
 For the procedures for using the AWS Direct Connect Resiliency Toolkit to perform failover tests, see [Direct Connect failover test](resiliency_failover.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

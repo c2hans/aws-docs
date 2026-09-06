@@ -25,7 +25,3 @@ To work with tags programmatically, use the following API actions:
 
 **Important**
 Tags applied to response plans, incident records, contacts, on-call schedules and rotations, and replication sets can be viewed and modified only from the resource owner account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

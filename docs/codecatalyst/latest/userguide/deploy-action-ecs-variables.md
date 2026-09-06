@@ -19,7 +19,3 @@ For information about referencing these variables in a workflow, see [Using pred
 | task-definition-arn | The Amazon Resource Name (ARN) of the task definition that was registered during the workflow run.<br />Example: `arn:aws:ecs:us-west-2:111122223333:task-definition/codecatalyst-task-def:8`<br />The `:8` in the preceding example indicates the revision that was registered. |
 | deployment-url | A link to the Amazon ECS console's **Events** tab, where you can view details of the Amazon ECS deployment associated with the workflow run.<br />Example: `https://console.aws.amazon.com/ecs/home?region=us-west-2#/clusters/codecatalyst-ecs-cluster/services/codecatalyst-ecs-service/events` |
 | region | The region code of the AWS Region that was deployed to during the workflow run.<br />Example: `us-west-2` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

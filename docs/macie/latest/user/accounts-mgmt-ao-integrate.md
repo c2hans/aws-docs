@@ -247,7 +247,3 @@ If your request succeeds, the status (`relationshipStatus`) of the specified acc
 To also enable automated sensitive data discovery for one or more of the accounts, use the [BatchUpdateAutomatedDiscoveryAccounts](https://docs.aws.amazon.com/macie/latest/APIReference/automated-discovery-accounts.html) operation or, if you're using the AWS CLI, run the [batch-update-automated-discovery-accounts](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/macie2/batch-update-automated-discovery-accounts.html) command. If you enable this feature for an account, Macie continually selects sample objects from the account's S3 buckets and analyzes the objects to determine whether they contain sensitive data. For more information, see [Performing automated sensitive data discovery](discovery-asdd.md).
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -217,7 +217,3 @@ The GPG public keys used for repository metadata verification are installed by t
 | SPAL (amazonlinux-spal) | RPM-GPG-KEY-amazonlinux-spal | RPM-GPG-KEY-amazonlinux-spal | spal-release |
 
 These keys are automatically installed when you install the corresponding repository configuration RPM.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

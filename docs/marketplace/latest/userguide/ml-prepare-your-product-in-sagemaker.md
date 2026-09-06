@@ -12,7 +12,3 @@ Before you can publish your product in AWS Marketplace, you must prepare it in A
 1. [Uploading your images to Amazon Elastic Container Registry](ml-uploading-your-images.md) – After packaging your code in container images and testing them locally, upload the images and scan them for known vulnerabilities. Fix any vulnerabilities before continuing.
 
 1.  [Creating your Amazon SageMaker AI resource](ml-creating-your-amazon-sagemaker-resource.md) – After your images are scanned successfully, you can use them to create a model package or algorithm resource in SageMaker AI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

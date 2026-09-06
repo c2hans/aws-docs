@@ -72,7 +72,3 @@ When managed termination protection is off, your Amazon EC2 instances aren't pro
 ## See also
 <a name="aws-properties-ecs-capacityprovider-autoscalinggroupprovider--seealso"></a>
 +  [ Defining an Amazon ECS capacity provider](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-capacityprovider.html#aws-resource-ecs-capacityprovider--examples)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

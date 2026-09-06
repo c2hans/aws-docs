@@ -179,7 +179,3 @@ FileFreshness > (now() - 24 hours)
 1.  This rule will not work in AWS Glue Interactive Sessions.
 
  If you attempt this in both of the cases, or when AWS Glue can’t find the files, AWS Glue will throw the following error: `“Unable to parse file path from DataFrame”`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

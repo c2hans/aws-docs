@@ -65,7 +65,3 @@ The Kueue metrics that are collected are listed in the following table. These me
 | `kueue_admitted_active_workloads` | `ClusterName`, `ClusterQueue`<br />`ClusterName` | The number of admitted workloads that are active (unsuspended and not finished). |
 | `kueue_cluster_queue_resource_usage` | `ClusterName`, `ClusterQueue`, `Resource`, `Flavor`<br />`ClusterName`, `ClusterQueue`, `Resource`<br />`ClusterName`, `ClusterQueue`, `Flavor`<br />`ClusterName`, `ClusterQueue`<br />`ClusterName` | Reports the total resource usage of the ClusterQueue. |
 | `kueue_cluster_queue_nominal_quota` | `ClusterName`, `ClusterQueue`, `Resource`, `Flavor`<br />`ClusterName`, `ClusterQueue`, `Resource`<br />`ClusterName`, `ClusterQueue`, `Flavor`<br />`ClusterName`, `ClusterQueue`<br />`ClusterName` | Reports the resource quota of the ClusterQueue. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,7 +47,3 @@ Domain parsing in managed login requires that you use domains as your IdP identi
 + If you assigned identifiers to your IdPs and you want your managed login pages to display a selection of IdP buttons, add a new IdP that has no identifier to your app client, or create a new app client. You can also delete an existing IdP and add it again without an identifier. If you create a new IdP, your SAML users will create new user profiles. This duplication of active users might have a billing impact in the month that you change your IdP configuration.
 
 For more information about IdP setup, see [Configuring identity providers for your user pool](cognito-user-pools-identity-provider.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

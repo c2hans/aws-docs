@@ -26,7 +26,3 @@ The TabTransformer evaluation metric and objective functions are not currently a
 | attn\_dropout | Dropout rate applied to the Multi-Head Attention layers.<br />Valid values: float, range: (`0`, `1`).<br />Default value: `0.2`. |
 | mlp\_dropout | Dropout rate applied to the FeedForward network within the encoder layers and the final MLP layers on top of Transformer encoders.<br />Valid values: float, range: (`0`, `1`).<br />Default value: `0.1`. |
 | frac\_shared\_embed | The fraction of embeddings shared by all the different categories for one particular column.<br />Valid values: float, range: (`0`, `1`).<br />Default value: `0.25`. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -129,7 +129,3 @@ The following table compares Solr features with OpenSearch features. Some of the
 OpenSearch and Solr are both powerful search and analytics engines that are built on Apache Lucene. Solr is an earlier search solution that has a longer history and a more mature community compared with OpenSearch. OpenSearch benefits from a vibrant and rapidly growing community that delivers cutting-edge features at a faster pace. This dynamic development environment and managed service support is driving the industry trend toward OpenSearch adoption, especially for organizations that prioritize ease of use, cloud-native advantages, and a well-rounded ecosystem. Solr remains the choice for highly customized needs and cost savings, but it requires more operational effort.
 
 For more information, see [Benefits of migrating to Amazon OpenSearch Service](https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-service-migration/benefits.html) on the AWS Prescriptive Guidance website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
  Knowing your content value will guide design decisions and help you select reliability targets, content protection schemes, and performance objectives. You can *always* adjust your focus between the pillar areas, but a shared understanding of the content value will help your organization align on design objectives and make tradeoff decisions. This will ensure that you reach business objectives while controlling spending.
 
  The following section provides techniques and guidance for the Cost-effective resources and Optimizing over time best practice areas for streaming media . Readers interested in the Manage demand and supply resources, expenditure and usage awareness, and Practice Cloud Financial Management areas should refer to the AWS Well-Architected Framework whitepaper for applicable best practices.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

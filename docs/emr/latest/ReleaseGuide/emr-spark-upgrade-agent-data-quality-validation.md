@@ -36,7 +36,3 @@ The workflow follows the same steps as the standard upgrade process with these a
 <a name="emr-spark-upgrade-agent-data-quality-scope"></a>
 
 Data Quality Validation supports EMR-EC2 step using spark-submit command with Spark version >= 3.0 and the EMR cluster cannot have StepConcurrencyLevel > 1. The Data Quality Validation evaluates statistics at the Spark query plan's data sink nodes (Data source/Transforms's metadata are not captured) and covers common Spark write operations including file writes, database inserts, table creation, and various data source outputs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

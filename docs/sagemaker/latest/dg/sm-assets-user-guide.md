@@ -378,7 +378,3 @@ The model groups to which you've been given access appear in your list of model 
 You can access AWS Glue or Amazon Redshift tables in Data Wrangler within SageMaker Canvas. SageMaker Canvas is an application that lets you perform exploratory data analysis (EDA) and train models without code. For more information about SageMaker Canvas, see [Amazon SageMaker Canvas](canvas.md).
 
 You can also bring the data from your AWS Glue or Amazon Redshift tables into your Jupyter notebooks by using the SQL extension. You can convert your data into pandas dataframes for your machine learning workflows. For more information, see [Data preparation with SQL in Studio](sagemaker-sql-extension.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

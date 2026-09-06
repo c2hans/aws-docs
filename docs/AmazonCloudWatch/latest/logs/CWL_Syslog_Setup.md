@@ -420,7 +420,3 @@ aws logs get-query-results \
 Verify that your test message appears and that the extracted fields are populated correctly. For the test message above, you should see `facility` = `local0`, `severity` = `info`, `hostname` = `myhost`, `appName` = `myapp`, and `procId` = `1234`.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

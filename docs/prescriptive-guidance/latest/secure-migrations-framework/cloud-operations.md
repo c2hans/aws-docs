@@ -107,7 +107,3 @@ The following AWS monitoring and detection services help you identify potential 
 The following AWS services provide a comprehensive view of your compliance status. They continuously monitor your environment by using automated compliance checks that are based on AWS best practices and industry standards:
 + [AWS Artifact](https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html) – Get on-demand access to AWS security and compliance reports and select online agreements.
 + [AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html) – Continuously audit your AWS usage to simplify how you manage risk and maintain compliance with regulations and industry standards.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,7 +52,3 @@ Once you've enabled a topic's `FifoThroughputScope` to `MessageGroup`, it cannot
 <a name="enable-high-throughput-for-sqs-fifo-queue"></a>
 
 When publishing to your Amazon SNS FIFO topic with high throughput enabled, and one or more Amazon SQS FIFO queues are subscribed, it is recommended that you enable high throughput on your Amazon SQS FIFO queues to enable your Amazon SNS FIFO high throughput topic to deliver smoothly. For more see [High throughput for FIFO queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/high-throughput-fifo.html) in the *Amazon Simple Queue Service Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

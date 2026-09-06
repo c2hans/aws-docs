@@ -110,7 +110,3 @@ The following labels might appear in the trace:
 + **ERR:** Stands for Error. When the span received an error status. A status description provides the error details. This can include errors such as:
   + **AI barge in:** The end-customer interrupted during AI reasoning or response generation, causing the model inference to stop before the AI agent completed its response.
   + **Timeout:** The system waited for a response or result from that operation, but it exceeded the maximum allowed time window.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

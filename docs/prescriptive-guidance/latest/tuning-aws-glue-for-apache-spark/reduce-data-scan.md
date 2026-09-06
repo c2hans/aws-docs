@@ -218,7 +218,3 @@ When using Java Database Connectivity (JDBC) connections, provide a select query
 <a name="9999999999999999glu--options.d483dac6-fabd-5b54-964d-2d06fbc53867"></a>
 + To avoid a full scan for all continuous job runs, and process only data that wasn't present during the last job run, enable [job bookmarks](https://docs.aws.amazon.com/glue/latest/dg/monitor-continuations.html).
 + To limit the quantity of input data to be processed, enable [bounded execution](https://docs.aws.amazon.com/glue/latest/dg/bounded-execution.html) with job bookmarks. This helps to reduce the amount of scanned data for each job run.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

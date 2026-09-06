@@ -24,7 +24,3 @@ We recommend editing the NFS client access settings to to define a list of speci
 1. Repeat the previous step to add more IP addresses or ranges as necessary. If make a mistake or need to revoke access, you can choose **Remove** to the right of the IP address or range that you want to delete from the list.
 
 1. Choose **Save changes** when finished.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -44,7 +44,3 @@ The following table compares the two approaches for configuring backend client c
 | Renewal | Depends on how the certificate was issued. For certificates that ACM issues through AWS Private Certificate Authority, ACM renews them automatically and API Gateway propagates the update with no redeployment and no downtime. For certificates that you import into ACM, you must reimport them before expiration; API Gateway then propagates the reimport automatically. | Manual. Certificate expires after 365 days and must be rotated manually. |
 | Chain support | Full chain (up to 5 certificates) | Single self-signed certificate |
 | Backend trust model | Backend trusts your CA | Backend must pin the API Gateway certificate |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

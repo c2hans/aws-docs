@@ -94,7 +94,3 @@ Deleting a skill asset does not delete the content at the referenced URI.
 + During preview, access is managed through IAM roles with no asset-level access control.
 + Agents must have access to the skill URI (for example, `s3:GetObject` for Amazon S3 URIs).
 + Keep skill content concise to minimize context window usage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

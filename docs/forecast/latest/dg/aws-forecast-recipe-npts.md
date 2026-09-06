@@ -82,7 +82,3 @@ The following table lists the hyperparameters that you can use in the NPTS algor
 | exp\_kernel\_weights | Valid only when `kernel_type` is `exponential`.<br />The scaling parameter of the kernel. For faster (exponential) decay in the weights given to the observations in the distant past, use a large value.**Valid values**<br /> Positive floating-point numbers <br />**Default value**<br /> `0.01`  |
 | use\_seasonal\_model | Whether to use a seasonal variant. **Valid values**<br /> `True` or `False` <br />**Default value**<br /> `True`   |
 | use\_default\_time\_features | Valid only for the *seasonal NPTS* and *seasonal climatological forecaster* variants.<br />Whether to use seasonal features based on the granularity of the time series to determine seasonality.**Valid values**<br /> `True` or `False` <br />**Default value**<br /> `True`  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Forecast. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query forecast` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

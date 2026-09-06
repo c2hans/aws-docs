@@ -56,7 +56,3 @@ To prepare the model, SageMaker AI shards it in advance by dividing it into port
 When SageMaker AI loads the optimized model onto the instance, it streams the model weights directly from Amazon S3 onto the GPUs of the instance. By streaming the weights, SageMaker AI omits several time-consuming steps that are normally necessary. These steps include downloading the model artifacts from Amazon S3 to disk, loading the model artifacts onto the host memory, and sharding the model on the host before finally loading the shards onto the GPUs.
 
 After you optimize your model for faster loading, you can deploy it more quickly to a SageMaker AI endpoint. Also, if you configure the endpoint to use auto scaling, it scales out more quickly to accommodate increases in traffic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

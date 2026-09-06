@@ -42,7 +42,3 @@ The following are common reasons that companies use ESG data:
 + **Innovation and efficiency** – Focusing on ESG factors can drive innovation in products, services, and operations. This leads to improved efficiency and cost savings.
 + **Competitive advantage** – Strong ESG performance can differentiate a company from its competitors and open up new market opportunities.
 + **Stakeholder engagement** – ESG practices help companies better engage with and meet the expectations of various stakeholders, including employees, customers, and local communities.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

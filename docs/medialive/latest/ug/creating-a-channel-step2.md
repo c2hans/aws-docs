@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-a-channel-s
 Before you started to create the MediaLive channel, you should have [created all of inputs](medialive-inputs.md) for all the content sources for the channel.
 
 You must now attach the inputs to the channel. You can attach multiple inputs to the channel. For detailed information about setting up a channel with more than one input, see [Setting up for input switching](scheduled-input-switching.md). There are [specific rules](eml-limitations-and-rules.md#limits-inputs) about the number and type (push versus pull, for example) of inputs that you can attach to one channel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

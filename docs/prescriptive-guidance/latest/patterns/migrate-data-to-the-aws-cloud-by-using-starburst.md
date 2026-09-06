@@ -132,7 +132,3 @@ The following roles are typically required to complete a migration using Starbur
 **Other AWS documentation**
 + [Get started with automated portfolio discovery](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/get-started-with-automated-portfolio-discovery.html) (AWS Prescriptive Guidance)
 + [Optimizing Cloud Infrastructure Cost and Performance with Starburst on AWS](https://aws.amazon.com/blogs/architecture/optimizing-cloud-infrastructure-cost-and-performance-with-starburst-on-aws/) (AWS blog post)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

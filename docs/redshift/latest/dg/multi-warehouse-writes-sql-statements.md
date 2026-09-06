@@ -36,7 +36,3 @@ The following analyze statements are supported for data sharing with writes:
 The following permission statements are supported for data sharing with writes:
 + { GRANT \| REVOKE } privilege\_name ON OBJECT\_TYPE object\_name TO consumer\_user
 + SHOW GRANTS. For more information, see [SHOW GRANTS](r_SHOW_GRANTS.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

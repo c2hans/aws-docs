@@ -42,7 +42,3 @@ You can proceed directly to Step 3 if you have negotiated with the partner outsi
 + Receive confirmation that agreements have been created for each product
 + Access your new subscriptions through AWS Marketplace
 + Set up your account/launch from the confirmation page or Manage Subscriptions page
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

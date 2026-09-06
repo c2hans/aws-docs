@@ -21,10 +21,10 @@ Deadline Cloud replaces the server components of a Deadline 10 farm with a manag
 | Repository (shared file system) | Nothing to operate. Job files move through job attachments in Amazon Simple Storage Service (Amazon S3). Job bundles and queue environments replace the plugins, scripts, and settings stored in the repository. |
 | Database (MongoDB) | Nothing to operate. The service stores farm state, which you query through the Deadline Cloud API. |
 | Remote Connection Server (RCS) | Nothing to operate. All clients connect to the service API endpoints using AWS Identity and Access Management (IAM) credentials over TLS. |
-| Pulse (house cleaning, pending job scan) | The service performs scheduling and maintenance. On a CMF, you're responsible for worker host health. The [CMF farm templates](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cmf_templates) sample includes a health check template. |
+| Pulse (house cleaning, pending job scan) | The service performs scheduling and maintenance. On a CMF, you're responsible for worker host health. A health check template is available in the [CMF farm templates](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cmf_templates) sample on the GitHub website. |
 | Worker application and Launcher | The Deadline Cloud worker agent. An SMF runs it for you; on a CMF you install it on your own hosts. |
 | Monitor (desktop application) | The [AWS Deadline Cloud monitor](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/working-with-deadline-monitor.html), available as a desktop application and in the browser. |
-| `deadlinecommand` and the REST API | The [deadline CLI](https://github.com/aws-deadline/deadline-cloud), the [Deadline Cloud API](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/Welcome.html), and the AWS SDKs. |
+| `deadlinecommand` and the REST API | The [deadline CLI](https://github.com/aws-deadline/deadline-cloud) on the GitHub website, the [Deadline Cloud API](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/Welcome.html), and the AWS SDKs. |
 
 ## Map Deadline 10 concepts to Deadline Cloud
 <a name="migrate-from-deadline-10-concepts"></a>
@@ -41,7 +41,7 @@ The following table maps the Deadline 10 concepts you use to organize and automa
 | Auxiliary files | Job attachments, stored in an Amazon S3 bucket in your account. | [Use job attachments to share files](build-job-attachments.md) |
 | Path mapping rules | Storage profiles describe each machine's file system locations, and the service derives path mapping rules from them. | [Storage profiles and path mapping](storage-profiles-and-path-mapping.md) |
 | Application installation (on each host or on shared file storage) | On an SMF, many applications are available as conda packages, and you can package your own. On a CMF, you typically install applications on each host or on shared file storage, as in Deadline 10. | [Deploy and configure custom software on workers](deploy-custom-software.md) |
-| Application plugins and job files | Open Job Description (OpenJD) job templates, packaged as job bundles. Application adaptors wrap interactive applications such as Maya and Nuke. | [Open Job Description (OpenJD) templates for Deadline Cloud](build-job-bundle.md), [adaptor runtime](https://github.com/OpenJobDescription/openjd-adaptor-runtime-for-python) on GitHub |
+| Application plugins and job files | Open Job Description (OpenJD) job templates, packaged as job bundles. Application adaptors wrap interactive applications such as Maya and Nuke. | [Open Job Description (OpenJD) templates for Deadline Cloud](build-job-bundle.md), [adaptor runtime](https://github.com/OpenJobDescription/openjd-adaptor-runtime-for-python) on the GitHub website |
 | Integrated submitters | Deadline Cloud submitters for supported digital content creation (DCC) applications. | [Supported software](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/supported-software.html) |
 | Event plugins, and pre and post job and task scripts | Integration points: submitter hooks, queue environments, job and step environments, dependent steps, and EventBridge events. | [Hooks, events, and integration points for jobs](integration-points.md) |
 | AWS Portal | An SMF, which includes automatic scaling, usage-based licensing, and job attachments for asset transfer. | [Configure and use Deadline Cloud service-managed fleets](smf.md) |
@@ -79,7 +79,3 @@ Use the following guidance to choose where to start your migration:
 + To keep rendering on hardware you already own, connect your render nodes or workstations to Deadline Cloud as a CMF. See [Extend your on-premises render farm to the cloud](hybrid-rendering.md).
 + To replace AWS Portal bursting, use an SMF. Automatic scaling, usage-based licensing, and asset transfer are built in. See [Configure and use Deadline Cloud service-managed fleets](smf.md).
 + To port your event plugins and job scripts, start with the integration point map. See [Hooks, events, and integration points for jobs](integration-points.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

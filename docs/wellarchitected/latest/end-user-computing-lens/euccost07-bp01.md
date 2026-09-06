@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Third-party tools like the [AppStream Optimizer by Cambrian Technologies](https://www.cambriantechnologies.com/solutions/appstream-optimiser/) use machine learning to optimize your WorkSpaces Applications Fleets and achieve a better utilization. This helps reduce your cost by reducing idle capacity.
 
  Deploy the [Cost Optimizer for Amazon WorkSpaces](https://aws.amazon.com/solutions/implementations/cost-optimizer-for-amazon-workspaces/) to receive reports with recommendations on which running mode to select for your WorkSpaces and automatically convert your WorkSpaces to the most cost-effective running mode.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

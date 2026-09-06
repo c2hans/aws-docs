@@ -226,7 +226,3 @@ If you encounter issues connecting the debugger to the target instance, verify t
 + Windows Firewall rules on the host instances do not block network traffic between the two instances on the configured port.
 
 For additional guidance, see [Set up KDNET network kernel debugging manually](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection) in the Microsoft documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

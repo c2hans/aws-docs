@@ -17,7 +17,3 @@ The following table lists the resource limits for time-series forecasting jobs i
 | Maximum number of categorical features | 10 | No |
 | Maximum number of time-series (unique combinations of item and grouping columns) per dataset | 5,000,000 | Yes |
 | Maximum Forecast horizon | 500 | Yes |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

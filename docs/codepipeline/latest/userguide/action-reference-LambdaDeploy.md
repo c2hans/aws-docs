@@ -223,7 +223,3 @@ namespace: DeployVariables
 
 The following related resources can help you as you work with this action.
 +  [Tutorial: Lambda function deployments with CodePipeline](tutorials-lambda-deploy.md) – This tutorial walks you through the creation of a sample Lambda function where you will create an alias and version, add the zipped Lambda function to your source location, and run the Lambda action in your pipeline.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

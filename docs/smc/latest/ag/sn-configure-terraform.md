@@ -21,7 +21,3 @@ The **Terraform open source** product type in AWS Service Catalog allows you to 
 The Terraform open source product type does not support self-service actions and provisioned product plans.
 
 When the provisioning fails for a Terraform open source product, the provisioned product **Status** changes to `TAINTED`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

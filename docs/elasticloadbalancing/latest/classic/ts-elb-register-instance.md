@@ -30,7 +30,3 @@ The following are issues your load balancer might encounter when registering you
 **Cause**: Your instances might have been launched using a paid AMI from [Amazon DevPay](http://aws.amazon.com/devpay/).
 
 **Solution**: Elastic Load Balancing does not support registering instances launched using paid AMIs from [Amazon DevPay](http://aws.amazon.com/devpay/). Note that you can use paid AMIs from [AWS Marketplace](https://aws.amazon.com/marketplace). If you are already using a paid AMI from AWS Marketplace and are unable to register an instance launched from that paid AMI, go to the [AWS Support Center](https://console.aws.amazon.com/support/home#/) for assistance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

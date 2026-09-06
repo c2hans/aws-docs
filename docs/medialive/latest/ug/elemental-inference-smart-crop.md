@@ -18,9 +18,5 @@ MediaLive obtains information about the region of interest from Elemental Infere
 + [Setting up with the MediaLive console](smart-crop-console-create.md)
 + [Viewing the smart crop setup](smart-crop-view.md)
 + [Modifying smart crop using the MediaLive console](smart-crop-modify-console.md)
-+ [Disabling smart crop using the MediaLive console](smart-crop-disable-console.md)
++ [Disabling smart crop](smart-crop-disable-console.md)
 + [Monitoring smart crop activity](smart-crop-monitor.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

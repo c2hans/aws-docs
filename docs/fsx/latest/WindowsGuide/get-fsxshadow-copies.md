@@ -16,7 +16,3 @@ Shadow Copy ID                        Creation Time
 {ABCDEF12-3456-7890-ABCD-EF1234567890} 6/17/2019 7:11:09 AM
 {FEDCBA21-6543-0987-0987-EF3214567892} 6/19/2019 11:24:19 AM
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

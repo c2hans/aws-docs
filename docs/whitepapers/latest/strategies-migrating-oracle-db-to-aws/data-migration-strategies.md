@@ -50,7 +50,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-
 <a name="nearly-continuous-data-replication"></a>
 
  You can use nearly continuous data replication if the destination database in AWS is used as a clone for reporting and business intelligence (BI), or for disaster recovery (DR) purposes. In this case, the process is exactly the same as minimal downtime migration, except that there is no switchover and the replication never stops.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

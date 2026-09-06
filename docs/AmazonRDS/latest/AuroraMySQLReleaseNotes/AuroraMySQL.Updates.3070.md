@@ -77,7 +77,3 @@ This release includes all community bug fixes up to and including 8.0.36, in add
 + Fixed an issue where some instances of subqueries within stored routines were not handled correctly. (Community Bug Fix \#35377192)
 + Fixed an issue that can cause higher CPU usage due to background TLS certificate rotation (Community Bug Fix \#34284186).
 + Fixed an issue where InnoDB allowed the addition of `INSTANT` columns to tables in the MySQL system schema in Aurora MySQL versions lower than 3.05, which could lead to the server unexpectedly closing (database instance restarting) after upgrading to Aurora MySQL version 3.05.0. (Community Bug Fix \#35625510).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

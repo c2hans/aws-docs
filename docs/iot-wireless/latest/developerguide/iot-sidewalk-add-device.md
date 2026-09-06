@@ -134,7 +134,3 @@ aws iotwireless create-wireless-device
 
 **Note**
 For Bluetooth Low Energy based location, AWS IoT returns location coordinates based on the approximate location of nearby Sidewalk Gateways that are connected to Amazon Sidewalk and have the Community Finding feature enabled. Gateway Location Data is AWS Content and is provided to you solely for the purpose of assisting you in locating your devices that are connected to Amazon Sidewalk, and you must only use the data for that purpose. You must only use and access location data via the interface and functionality that we generally make available to you, and you must not attempt to re-identify, reverse engineer, or re-map any Gateway location data provided by us to you.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

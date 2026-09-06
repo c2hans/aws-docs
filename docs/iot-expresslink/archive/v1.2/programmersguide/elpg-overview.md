@@ -25,7 +25,3 @@ The top-level goals are to:
 + Simplify onboarding with an additional late binding option.
 + Offer easy updates over the air (and over the wire) so the module and host processor can ensure security throughout the life of the product.
 + Connect to standard AWS IoT Core services without additional cost and allow for heterogeneous fleets.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

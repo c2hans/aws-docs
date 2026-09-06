@@ -43,7 +43,3 @@ You can create an export of CUR 2.0 with its new schema of nested columns and ad
 1. Direct your data ingestion pipeline to read data from the directory in the Amazon S3 bucket where your CUR 2.0 is being delivered.
 
    You also need to update your data ingestion pipeline and your business intelligence tools to process the following new columns with nested key-values: `product`, `resource_tags`, `cost_category`, and `discounts`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

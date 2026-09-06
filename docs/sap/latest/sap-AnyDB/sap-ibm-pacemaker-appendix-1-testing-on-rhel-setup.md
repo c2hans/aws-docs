@@ -342,7 +342,3 @@ When using a manual command for moving the resource, there is location constrain
 ```
 
  **Followup action**: Start the EC2 instance and then start Db2 as standby on the standby instance as you did in [Test Case 2](#sap-ibm-pacemaker-test-case-2-shut-down-the-primary-ec2-instance). Clear the monitoring error.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

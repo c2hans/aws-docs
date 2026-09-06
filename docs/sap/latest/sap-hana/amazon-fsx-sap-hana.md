@@ -231,7 +231,3 @@ You must disable automatic backups for FSx for ONTAP volumes and file systems fo
 You can also use SnapMirror for SAP HANA backups. For more information, see [How can I optimize SnapMirror performance, and what are the best practices for FSx for ONTAP?](https://repost.aws/knowledge-center/fsx-ontap-optimize-snapmirror)
 
 For point-in-time resilient restores, we highly recommend storing three days of snapshots on a local disk and replicating older backups via SnapVault to a secondary FSx for ONTAP file system using the capacity pool tier. For more information, see [Managing storage capacity](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-storage-capacity.html#storage-tiers).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

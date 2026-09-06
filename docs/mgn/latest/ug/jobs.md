@@ -65,7 +65,3 @@ The **Source servers** section shows a list of all source servers involved in th
 You can use the **Filter source servers by property or value** search bar to filter by **Source server name** or **Status**.
 
 Choose the **Source server name** of any source server from the list to open the Server Details view for that server. [Learn more about server details.](server-details.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

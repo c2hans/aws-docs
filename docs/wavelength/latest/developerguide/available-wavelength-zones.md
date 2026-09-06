@@ -79,7 +79,3 @@ The following tables list the Wavelength Zones by Region. For more information, 
 | --- | --- | --- | --- |
 | Casablanca | Orange | eu-west-3-cmn-wlz-1a | euw3-cmn1-wlz1 |
 | Dakar | Sonatel | eu-west-3-dss-wlz-1a | euw3-dss1-wlz1 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wavelength. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wavelength` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

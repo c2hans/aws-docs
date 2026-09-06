@@ -78,7 +78,3 @@ For more details about configuring controls with parameters, see [`ControlParame
 | CT.SECRETSMANAGER.PV.1 | Require that the organization's AWS Secrets Manager resources are accessible only by IAM principals that belong to the organization or by an AWS service |
 | CT.SQS.PV.1 | Require that the organization's Amazon SQS resources are accessible only by IAM principals that belong to the organization, or by an AWS service |
 | CT.STS.PV.1 | Require that the organization's AWS Security Token Service resources are accessible only by IAM principals that belong to the organization, or by an AWS service |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

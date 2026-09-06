@@ -81,7 +81,3 @@ Since the demo uses multiple topics, a subscription manager is a convenient way 
 <a name="mqtt-demo-cs-sub-pub"></a>
 
 Each instance of the [ prvSimpleSubscribePublishTask](https://github.com/aws/amazon-freertos/blob/main/demos/coreMQTT_Agent/simple_sub_pub_demo.c#L447-L569) creates a subscription to an MQTT topic, and creates publish operations for that topic. To demonstrate multiple publish types, even numbered tasks use QoS 0 (which are complete once the publish packet is sent) and odd tasks use QoS 1 (which are complete upon receipt of a PUBACK packet).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

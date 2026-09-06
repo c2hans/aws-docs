@@ -14,7 +14,3 @@ You can easily remove old data simply by running a DROP TABLE command on the cor
 Avoid having too many tables in the UNION ALL view. Each additional table adds a small processing time to the query. Tables don't need to use the same time frame. For example, you might have tables for differing time periods, such as daily, monthly, and yearly.
 
 If you use time-series tables with a timestamp column for the sort key, you effectively load your data in sort key order. Doing this eliminates the need to vacuum to re-sort the data. For more information, see [Load your data in sort key order](vacuum-managing-vacuum-times.md#vacuum-load-in-sort-key-order).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

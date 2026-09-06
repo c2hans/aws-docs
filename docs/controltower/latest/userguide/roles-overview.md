@@ -22,7 +22,3 @@ For general information about roles, see [User groups, roles, and permission set
 + For information about how to protect your resources as you are assigning roles and permissions, see [Optional conditions for your role trust relationships](https://docs.aws.amazon.com/controltower/latest/userguide/conditions-for-role-trust.html), [Optionally configure AWS KMS keys](https://docs.aws.amazon.com/controltower/latest/userguide/configure-kms-keys.html), and [Prevent cross-service impersonation](https://docs.aws.amazon.com/controltower/latest/userguide/prevent-confused-deputy.html).
 + For specific information about automated account provisioning in AWS Control Tower with IAM roles, see [Automated Account Provisioning with IAM Roles](https://docs.aws.amazon.com/controltower/latest/userguide/roles-how.html#automated-provisioning).
 + To view the policy that protects the AWS Config SNS topic, see [The AWS Config SNS topic policy](https://docs.aws.amazon.com/controltower/latest/userguide/receive-notifications.html#config-sns-policy).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

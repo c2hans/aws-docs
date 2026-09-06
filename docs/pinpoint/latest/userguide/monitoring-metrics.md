@@ -63,7 +63,3 @@ The following topics describe the metrics that Amazon Pinpoint exports to CloudW
 | `TotalEvents` | The total number of events that Amazon Pinpoint recorded. This metric includes events that were recorded by AWS SDKs or by the Amazon Pinpoint API.<br />Units: *Count*<br />Dimensions: ApplicationId |
 | `ExportedEvents` | The total number of events that were successfully written to the event stream for exporting.<br />Units: *Count*<br />Dimensions: ApplicationId |
 | `ExportEventErrors` | The total number of errors that occurred after writing to the event stream. These errors can include issues that aren't related to Amazon Pinpoint. <br />For example, this error could occur when the volume of events that you stream to Firehose exceeds your provisioned throughput.<br />Units: *Count*<br />Dimensions: ApplicationId, ErrorCode |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

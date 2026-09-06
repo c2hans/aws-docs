@@ -71,7 +71,3 @@ The following limitations currently apply to global databases:
 + Read-replica instances in a secondary DB cluster can restart under certain circumstances, including planned upgrades during your maintenance window. If the primary cluster's writer instance restarts or fails over, all the instances in secondary regions also restart. The secondary cluster is then unavailable until all its instances are back in sync with the primary DB cluster's writer instance.
 
   Starting with engine version [1.4.0.0](engine-releases-1.4.0.0.md), secondary cluster reader instances remain available during a primary writer instance restart. This *survivable replica* feature improves read availability in secondary clusters. The preceding restart limitation still applies to clusters running engine versions earlier than 1.4.0.0.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

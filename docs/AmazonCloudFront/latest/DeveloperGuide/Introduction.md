@@ -91,7 +91,3 @@ Use the following resources to get answers to technical questions about CloudFro
 + [AWS re:Post](https://repost.aws/tags/TA8pHF0m5aQdawzT2gwPcVYQ/amazon-cloudfront) – A community-based question and answer site for developers to discuss technical questions related to CloudFront.
 + [Support Center](https://console.aws.amazon.com/support/home) – This site includes information about your recent support cases and results from AWS Trusted Advisor and health checks. It also provides links to discussion forums, technical FAQs, the service health dashboard, and information about Support plans.
 + [AWS Premium Support](https://aws.amazon.com/premiumsupport/) – Learn about AWS Premium Support, a one-on-one, fast-response support channel that helps you build and run applications on AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

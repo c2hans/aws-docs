@@ -101,7 +101,3 @@ For more information, see [Errors and Messages](https://www.postgresql.org/docs/
 | Returns the error message associated with its errornumber argument. |  <pre>DECLARE<br />Name employees.last_name%TYPE;<br />BEGIN<br />SELECT last_name INTO name<br />FROM employees<br />WHERE employee_id = -1;<br />EXCEPTION<br />WHEN OTHERS then<br />DBMS_OUTPUT.PUT_LINE<br />(CONCAT('Error code ',<br />  SQLCODE,': ',sqlerrm);<br />END;<br />/</pre>  |  <pre>do $$<br />declare<br />Name employees%ROWTYPE;<br />BEGIN<br />SELECT last_name INTO name FROM<br />employees WHERE employee_id = -1;<br />EXCEPTION<br />WHEN OTHERS then<br />RAISE NOTICE 'Error code %: %', sqlstate,<br />sqlerrm;<br />end$$;</pre>  |
 
 For more information, see [PostgreSQL Error Codes](https://www.postgresql.org/docs/13/errcodes-appendix.html) in the *PostgreSQL documentation*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

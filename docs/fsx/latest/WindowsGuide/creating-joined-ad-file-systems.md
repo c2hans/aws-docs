@@ -118,7 +118,3 @@ UserName="{{FSxService}}",Password="{{password}}", \
 
 **Important**
 Do not move, disable, or delete the computer objects that Amazon FSx creates in the OU. Do not change the default OU after your file system is created. Any of these actions will cause your file system to become misconfigured.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,7 +59,3 @@ Before mapping, you must first complete the following:
 
 **Important**
 AWS Partner Central channel management features require IAM roles to be configured in both the Partner Central linked AWS account and the AWS management account used to receive bills and administer channel programs. Work with your AWS Partner Central cloud admin to ensure IAM permissions are configured, and work with your alliance lead or cloud admin to map IAM roles to Partner Central users. Learn more about accessing channel management in the [API reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/channel-access-control.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

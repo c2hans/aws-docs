@@ -13,7 +13,3 @@ As part of the EC2 bootstrapping process, these files are retrieved from the ins
 
 **Note**
 The installation files are kept in the installation bucket throughout the lifetime of the cluster. When a new EC2 instance starts, it retrieves the installation files from the installation bucket. The installation files may also get updated when configuration is changed, such as upgrading Apache Druid from v26 to v30.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Scalable Analytics Using Apache Druid on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

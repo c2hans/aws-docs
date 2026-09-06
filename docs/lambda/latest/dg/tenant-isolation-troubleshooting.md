@@ -36,7 +36,3 @@ In addition to rate limiting based on [maximum concurrent executions](gettingsta
 <a name="tenant-isolation-toomanyrequestsexception-resolution"></a>
 
 To fix this issue, you can either lower the rate at which invocation requests with unique tenant identifiers are made, [implement retries with backoff and jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/), or [request a function concurrency limit increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -114,7 +114,3 @@ After you have published metrics to CloudWatch, you can use the CloudWatch conso
 1. Select the check box for the **RequestLatency** metric. A graph of the metric data is displayed in the upper pane.
 
 For more information, see [Graphing metrics](graph_metrics.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

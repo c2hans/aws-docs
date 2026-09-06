@@ -161,7 +161,3 @@ SAP documentation references are frequently updated by SAP. To stay up to date, 
 The changes performed by `hdblcm` as part of the hostname rename activity are consolidated in the following verbose log.
 
 ![Code showing processes stopped on temp-host, starting on hdbhost, and SAP HANA DB system renamed.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/004781c1-96df-43dd-a52e-ed1db5bdf9ef/images/9e0c11ca-6555-484f-9639-107f60f725f5.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

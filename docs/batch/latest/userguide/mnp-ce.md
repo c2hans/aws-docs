@@ -16,7 +16,3 @@ There are several things to consider when configuring compute environments to ru
 + Your compute environment must have enough maximum vCPUs to support your multi-node parallel job.
 + Your Amazon EC2 instance quota include the number of instances that's required to run your job. For example, suppose that your job requires 30 instances, but your account can only run 20 instances in a Region. Then, your job will get stuck in `RUNNABLE` status.
 + If you specify an instance type for a node group in a multi-node parallel job, your compute environment must launch that instance type.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

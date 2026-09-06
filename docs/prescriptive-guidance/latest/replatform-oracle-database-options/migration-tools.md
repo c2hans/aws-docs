@@ -39,7 +39,3 @@ You can use Oracle RMAN with Amazon RDS Custom for Oracle. RMAN is usually combi
 [Oracle Data Guard](https://docs.oracle.com/en/database/oracle/oracle-database/19/sbydb/introduction-to-oracle-data-guard-concepts.html) is a built-in feature of Oracle Database that maintains a physical copy of the database and keeps it in sync. It provides the capability to switch over the roles between primary and standby databases, which can minimize downtime during the migration.
 
 Oracle Data Guard can't be directly used with Amazon RDS for Oracle or Amazon RDS Custom for Oracle for migration. Instead, Oracle Data Guard is usually used with AWS services such as Amazon EC2, Direct Connect, or AWS DMS to build a complete migration solution. For example, you can build a physical standby on an EC2 instance using Oracle Data Guard. Then you can use AWS DMS or Oracle Data Pump to migrate data to the target RDS for Oracle instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

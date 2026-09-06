@@ -61,7 +61,3 @@ If you're signed in to a management account of an organization and trusted acces
      You can use this option to determine the typical volume utilization of your workload over time. To view the highest value observed during the specified period, change the selection to **Maximum**. This allows you to determine the peak volume usage of your workload over time.
 
    When you're ready, use Amazon EBS Elastic Volumes to modify the configuration of your volumes. For more information, see [Amazon EBS Elastic Volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-modify-volume.html) in the *Amazon Elastic Compute Cloud User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

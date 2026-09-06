@@ -24,8 +24,4 @@ Here's an example of an expansion that gradually increases the minimum skill lev
     }]
 ```
 
-With matchmakers that have automatic backfill enabled, don't relax your player count requirements too quickly. It takes a few seconds for the new game session to start up and begin automatic backfill. A better approach is to start your expansion after automatic backfill tends to kicks in for your games. Expansion timing varies depending on your team composition, so do testing to find the best expansion strategy for your game.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+With matchmakers that have automatic backfill enabled, don't relax your player count requirements too quickly. It takes a few seconds for the new game session to start up and begin automatic backfill. A better approach is to start your expansion after automatic backfill tends to kick in for your games. Expansion timing varies depending on your team composition, so do testing to find the best expansion strategy for your game.

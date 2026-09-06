@@ -31,7 +31,3 @@ The following table shows feature support by Region:
 | [Diagnostic trouble code (DTC) fetching\*](diagnostic-trouble-codes.md) | Gated | Gated | Gated |
 
 \*DTC fetching offers a range of capabilities that go beyond basic DTC data retrieval. This functionality includes custom features that enable you to define functions at the edge and invoke them by name within condition-based campaign expressions. Additionally, it supports the collection of unbounded strings, providing flexible string data type handling. The Edge Agent can fetch data either on a periodic basis or triggered by specific conditions, enhancing its adaptability and efficiency in data collection processes. For more information, see the [custom function guide](https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/custom-function-dev-guide.md) and the [DTC data collection reference implementation](https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/edge-agent-uds-dtc-dev-guide.md#dtc_query-function-implementation) in the *Edge Agent Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

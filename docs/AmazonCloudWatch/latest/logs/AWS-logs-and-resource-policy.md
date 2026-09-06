@@ -98,7 +98,3 @@ For services that require these permissions, there are two versions of the permi
 | Amazon VPC Route Server | [Guide](https://docs.aws.amazon.com/vpc/latest/userguide/dynamic-routing-route-server.html) |
 | AWS WAF | [Guide](https://docs.aws.amazon.com/waf/latest/developerguide/logging-destinations.html) |
 | Amazon WorkMail | [Guide](https://docs.aws.amazon.com/workmail/latest/adminguide/monitoring-audit-logging.html) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

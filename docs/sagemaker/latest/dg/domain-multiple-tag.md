@@ -22,7 +22,3 @@ The `default` app, which manages the Studio UI, is not automatically tagged.
 |  ImageVersionArn  |  +  [describe-image-version](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/describe-image-version.html) <br />+  [update-image-version](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-image-version.html) <br />+  [delete-image-version](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/delete-image-version.html)   |
 |  ModelCardExportJobArn  | [describe-model-card-export-job](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/describe-model-card-export-job.html)  |
 |  ModelPackageArn  | [describe-model-package](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/describe-model-package.html)  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

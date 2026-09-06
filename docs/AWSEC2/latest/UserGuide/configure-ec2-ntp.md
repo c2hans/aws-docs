@@ -330,9 +330,9 @@ In the output, verify that `NtpServer` displays the `fd00:ec2::123` IPv6 endpoin
 **Rules and limitations**
 +  Precision time placement groups are available in all AWS Commercial Regions.
 +  Precision time placement groups support the following Gen7 and later Amazon EC2 instance families:
-  +  **General purpose**: M7a, M7g, M7g-flex, M7gd, M7i, M7i-flex, M8a, M8g, M8g-flex
-  +  **Compute optimized**: C7a, C7gd, C7i, C7i-flex, C8g, C8g-flex, C8gd
-  +  **Memory optimized**: R7a, R7g, R7i, R7id, R8g, X8adez, X8adz-3tb, X8adz-6tb, X8adzs, X8aedez, X8aedz-3tb, X8aedz-6tb, X8aez, X8az, X8g, X8ge
+  +  **General purpose**: M7a, M7g, M7gd, M7i, M7i-flex, M8a, M8g
+  +  **Compute optimized**: C7a, C7gd, C7i, C7i-flex, C8g, C8gd
+  +  **Memory optimized**: R7a, R7g, R7i, R8g, X8g
   +  **Storage optimized**: I8g, I8ge
 +  If you start or launch an instance in a precision time placement group and there is insufficient hardware to give access to the enhanced Amazon Time Sync Service, the request fails.
 +  If you stop an instance in a precision time placement group and then start it again, it still runs in the placement group. However, the start might fail if there is insufficient hardware to give access to the enhanced Amazon Time Sync Service.
@@ -615,7 +615,3 @@ Hardware Receive Filter Modes:
 ```
 
 If the output shows `hardware-receive` in the Capabilities list, hardware packet timestamping is available on your instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

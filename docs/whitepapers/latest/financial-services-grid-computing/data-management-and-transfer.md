@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
  EFA traffic that bypasses the operating system (OS-bypass) is not routable, so it’s limited to a single subnet. As a result, any peers in this network must be in the same subnet and Availability Zone, which could alter resiliency strategies. The OS-bypass capabilities of EFA are also not supported on Windows.
 
  Some Amazon EC2 instance types support *jumbo frames* where the Network Maximum Transmission Unit (the number of bytes per packet) is increased. AWS supports MTUs of up to 9001 bytes. By using fewer packets to send the same amount of data, end-to-end network performance is improved.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

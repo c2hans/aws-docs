@@ -303,7 +303,3 @@ Use the following steps to add an insight to your dashboard which shows a breakd
 1. Modify the filter for each visual to show a breakdown for each migration wave.
 
 This insight is customized summarize the total count of servers across all waves. For more information and guide on how to customize insights, refer to [Working with Insights](https://docs.aws.amazon.com/quicksight/latest/user/computational-insights.html) in the *QuickSight User Guide*. You can access this QuickSight dashboard from any device and seamlessly embed it into your applications, portals, and websites. For more information about QuickSight dashboards, refer to [Working with Dashboards](https://docs.aws.amazon.com/quicksight/latest/user/working-with-dashboards.html) in the *Amazon QuickSight User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

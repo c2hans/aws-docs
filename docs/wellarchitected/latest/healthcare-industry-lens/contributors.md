@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 +  Andy Schuetz – Principal Product Manager, HealthAI, Amazon Web Services
 +  Justin Stanley – Principal Solutions Architect, Healthcare, Amazon Web Services
 +  Donny Wilson – Security Solutions Architect, Healthcare, Amazon Web Services
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -1159,7 +1159,3 @@ AWS CloudFormation defines the following condition keys that can be used in the 
 |   [cloudformation:TargetRegion](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#using-iam-template-conditions)  | Filters access by stack set target region. Use to control which regions IAM users can use when they create or update stack sets | ArrayOfString |
 |   [cloudformation:TemplateUrl](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#using-iam-template-conditions)  | Filters access by an Amazon S3 template URL. Use to control which templates IAM users can use when they create or update stacks | String |
 |   [cloudformation:TypeArn](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#using-iam-template-conditions)  | Filters access by the ARN of a CloudFormation extension | ARN |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

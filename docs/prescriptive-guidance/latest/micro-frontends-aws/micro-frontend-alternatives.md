@@ -38,7 +38,3 @@ Monoliths and n-tier architectures bundle multiple domain concerns into one tech
 Applications developed by a few teams might not need the additional complexity that comes with moving to micro-frontends. This is especially true if the teams are not paying the penalties of high coupling and long lead times to release changes.
 
 In summary, more complex and distributed architectures are often the right choice for complex and fast-moving applications. For small to midsized applications, a distributed architecture isn't necessarily superior to a monolithic one, especially if the application will not dramatically evolve over a short period of time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

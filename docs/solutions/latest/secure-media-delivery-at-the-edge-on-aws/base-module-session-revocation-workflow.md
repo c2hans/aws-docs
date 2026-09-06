@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
  DynamoDB also includes information about the individual components that final suspicion score comprises of – `IP_Rate, IP_Penalty, referrer_penalty, UA_penalty`. This information is included to better understand what contributes to the final score and to facilitate any troubleshooting.
 
  The time to live (TTL) timestamp is calculated as 24 hours from the time, entry is added to the table, determining when DynamoDB will evaluate this item as expired, and eventually deleted by the background process that continuously inspect the timestamps in this column; refer to [How it works: DynamoDB Time to Live (TTL)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/howitworks-ttl.html). Utilizing this mechanism keeps the size of the list manageable and does not allow for sessions to accumulate in the table indefinitely.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

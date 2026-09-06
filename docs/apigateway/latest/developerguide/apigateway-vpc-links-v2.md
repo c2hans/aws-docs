@@ -63,7 +63,3 @@ VPC links V2 are supported in the following Regions and Availability Zones:
 | Middle East (Bahrain) | me-south-1 | mes1-az1, mes1-az2, mes1-az3 |
 | South America (São Paulo) | sa-east-1 | sae1-az1, sae1-az2, sae1-az3 |
 | AWS GovCloud (US-West) | us-gov-west-1 | usgw1-az1, usgw1-az2, usgw1-az3 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

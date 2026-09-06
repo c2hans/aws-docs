@@ -26,7 +26,3 @@ To tune your machine learning transforms, you can change the value of the follow
 + **Recall** measures how well the transform finds true positives from the total records in the source data. For more information, see [Precision and recall](https://en.wikipedia.org/wiki/Precision_and_recall) in Wikipedia.
 + **Accuracy ** measures how well the transform finds true positives and true negatives. Increasing accuracy requires more machine resources and cost. But it also results in increased recall. For more information, see [Accuracy and precision](https://en.wikipedia.org/wiki/Accuracy_and_precision#In_information_systems) in Wikipedia.
 + **Cost** measures how many compute resources (and thus money) are consumed to run the transform.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

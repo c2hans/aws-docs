@@ -151,7 +151,3 @@ The following are the drawbacks of this approach:
 + Adaptability: No support for overlapping CIDR ranges
 + TCO: Overhead from managing route tables entries, security group rules, and traffic inspection
 + Security: Tight security controls required because entire VPCs of both parties are exposed
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

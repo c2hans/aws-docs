@@ -72,6 +72,11 @@ ISVs and AWS Marketplace Channel Partners receive email notification when a buye
 | Agreement Replaced – Private offer | An AWS Marketplace agreement is replaced by another agreement. | ISV | An AWS Marketplace agreement has been replaced | Company name, Customer AWS account ID, Product name, Product ID, Offer name, Offer ID, New agreement ID, Agreement start date, Agreement end date, New purchase amount |
 | Agreement Replaced – Channel Partner Private offer | An AWS Marketplace agreement is replaced by another agreement. | ISV | An AWS Marketplace agreement has been replaced | Company name, Customer AWS account ID, Channel partner, Channel partner AWS account ID, Product name, Product ID, Offer name, Offer ID, New agreement ID, Agreement start date, Agreement end date, Wholesale price |
 | Agreement Replaced – Channel Partner Private offer | An AWS Marketplace agreement is replaced by another agreement. | AWS Marketplace Channel Partner | An AWS Marketplace agreement has been replaced | Company name, Customer AWS account ID, ISV name, ISV AWS account ID, Product name, Product ID, Offer name, Offer ID, New agreement ID, Agreement start date, Agreement end date, Wholesale price, Margin, New purchase amount |
+| Agreement expiring – auto-renewal | An AWS Marketplace agreement is approaching its end date. Sent at 180, 120, 90, 60, and 30 days before expiry. For auto-renewing agreements, includes the auto-renewal status. | ISV | An AWS Marketplace agreement is expiring in the next {days} days | Buyer AWS account ID, Product name, Product ID, Offer name, Offer ID, Agreement ID, Agreement start date, Agreement end date, Auto-renewal enabled, Renewal date, Renewal decision deadline |
+| Agreement amended – auto-renewal preference | A buyer or seller changes the auto-renewal preference (processed as an agreement amendment). | ISV | Your AWS Marketplace agreement has been amended | Buyer AWS account ID, Product name, Product ID, Offer name, Offer ID, Agreement ID, Agreement start date, Agreement end date, Auto-renewal enabled, Renewal decision deadline |
+| Renewal terms confirmed – price uplift range | For a percentage-range renewal, the seller finalizes the uplift, or the default is applied at the adjustment deadline. Not sent for fixed-percentage or same-price renewals. | ISV | Renewal terms confirmed for your AWS Marketplace agreement {Agreement ID} | Buyer AWS account ID, Product name, Product ID, Agreement ID, Agreement start date, Agreement end date, Renewal total contract value (TCV), Currency code, Renewal decision deadline |
+| Renewal upcoming | The renewal decision deadline is reached and the renewal is confirmed to proceed. | ISV | Agreement {Agreement ID} with {Buyer AWS account ID} will automatically renew on {renewal date} | Buyer AWS account ID, Product name, Product ID, Agreement ID, Agreement start date, Agreement end date, Renewal total contract value (TCV), Currency code |
+| Agreement auto-renewed | An auto-renewal executes and a new agreement is created. | ISV | Agreement renewed – {Product name} with {Buyer AWS account ID} | Buyer AWS account ID, Product name, New agreement ID, Agreement start date, Agreement end date, Purchase amount, Previous agreement ID |
 
 ### Variable payments
 <a name="email-details-variable-payments"></a>
@@ -178,6 +183,11 @@ The following table shows descriptions of the fields referred to in the [Offers 
 | Offer expiration date | Date when the offer expires. |
 | Opportunity ID | Unique identifier for a registered opportunity. |
 | Selling authorization duration | The length of time resellers are authorized to create offers using discounts, as specified in the selling authorization. |
+| Auto-renewal enabled | Whether the agreement is set to renew automatically at its end date. `Yes` when renewal terms are present and neither party has opted out. |
+| Renewal date | The date the agreement is scheduled to renew, in the format `MM-DD-YYYY`. |
+| Renewal decision deadline | The last date either party can opt out of auto-renewal, in the format `MM-DD-YYYY`. After this date the renewal proceeds automatically. |
+| Renewal total contract value (TCV) | The estimated cost of the next renewal cycle, including any configured price uplift, with its currency code. |
+| Previous agreement ID | The agreement ID of the agreement that a renewal replaced. |
 
 ## Manage notifications
 <a name="manage-notifications"></a>
@@ -221,7 +231,3 @@ You can remove an email address so the recipient is unsubscribed from custom ema
 1. Choose **Submit**.
 **Note**
 You can also unsubscribe using the link in the email.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

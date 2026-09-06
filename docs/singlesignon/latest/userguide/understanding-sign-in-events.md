@@ -38,7 +38,3 @@ The diagram shows a **password sign-in** flow and a **federated sign-in** flow.
  The password sign-in flow also covers the scenario where an IAM Identity Center user newly-created with a `CreateUser` API call signs in with a one-time password (OTP). The credential type in this scenario is “`EMAIL_OTP`”.
 
  The **federated sign-in** flow, consisting of steps 1a, 2a, and 8, demonstrates the main steps during the federated authentication process where a [SAML assertion is provided by an identity provider](scim-profile-saml.md), validated by IAM Identity Center, and if successful, results in `UserAuthentication`. IAM Identity Center doesn't invoke the internal MFA authentication sequence in steps 3 – 7 because an external, federated identity provider is responsible for all user credential authentication.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

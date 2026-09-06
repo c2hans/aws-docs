@@ -45,7 +45,3 @@ Use the scroll bars to see the rest of the table.
 <a name="api-permissions-reference-gas"></a>
 
 The console uses an internal method called `GetApplicationState` to sample or access application data. Your service application needs to have permissions for the internal `kinesisanalytics:GetApplicationState` API to sample or access application data through the AWS Management Console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

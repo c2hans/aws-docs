@@ -20,7 +20,7 @@ The example rule set describes a match with the following characteristics:
 
 Notes on using this rule set:
 + To implement the match rule, this example uses comparison rules to check all players' attribute values. For game mode and map, the rule verifies that the values are the same. For character, the rule verifies that the values are different.
-+ This example uses one player definition with a quantity property to create both player teams. The team are assigned the following names: "player\_1" and "player\_2".
++ This example uses one player definition with a quantity property to create both player teams. The teams are assigned the following names: "player\_1" and "player\_2".
 
 ```
 {
@@ -68,7 +68,3 @@ Notes on using this rule set:
     }]
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ GraphQL's selling point is to overcome the drawbacks of REST. Here are some of t
 1. **Rapid iterations**: Because of the standardization of data, changes on one end of development may not be required on the other. For example, frontend presentation changes may not result in extensive backend changes because GraphQL allows the data specification to be modified readily. You can simply define or modify the shape of the data to fit the needs of the application as it grows. This results in less potential development work.
 
 These are only some of the benefits of GraphQL. In the next few sections, you'll learn how GraphQL is structured and the properties that make it a unique alternative to REST.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

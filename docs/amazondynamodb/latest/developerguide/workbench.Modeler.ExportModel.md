@@ -16,7 +16,3 @@ After you create a data model using NoSQL Workbench for Amazon DynamoDB, you can
 1.  Choose whether to export your data model in NoSQL Workbench model format or CloudFormation JSON template format.
    +  Choose **NoSQL Workbench model** format if you want to share your model with other team members using NoSQL Workbench or import it into NoSQL Workbench later.
    +  Choose **CloudFormation JSON template** format if you want to deploy your model directly to AWS or integrate it into your infrastructure-as-code workflow.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

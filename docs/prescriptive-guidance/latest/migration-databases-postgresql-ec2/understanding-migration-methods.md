@@ -13,7 +13,3 @@ For more information about offline and online migration methods, see [Choosing t
 
 **Note**
 We recommend that you use the migration method that you shortlisted for production for at least one of your test databases. This can help you gain experience and troubleshoot issues in a test environment before you perform any operations on your production database.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,7 +68,3 @@ To enable these attributes using the console, follow the steps in [Mapping docum
 If you don't enable search on these attributes, you can't boost attributes of these data types on either the Amazon Q Business console or the API.
 
 For more information about Amazon Q Business document attributes and how to map them, see [Document attributes and types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-attributes.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

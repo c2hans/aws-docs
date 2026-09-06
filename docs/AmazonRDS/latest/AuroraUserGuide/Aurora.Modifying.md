@@ -301,7 +301,3 @@ You can't use the AWS Management Console to modify these settings for Aurora DB 
 | `--tde-credential-arn` | `TdeCredentialArn` |
 | `--tde-credential-password` | `TdeCredentialPassword` |
 | `--use-default-processor-features\|--no-use-default-processor-features` | `UseDefaultProcessorFeatures` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

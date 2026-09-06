@@ -45,7 +45,3 @@ Before implementing a multi-Region architecture, business decision-makers and te
 <a name="key-guidance-1"></a>
 + Availability and continuity of operations goals such as RTO and RPO should be established per workload and aligned with business and IT stakeholders.
 + Most availability and continuity of operations goals can be met within a single Region. For goals that cannot be met within a single Region, consider multi-Region with a clear view on trade-offs between cost, complexity, and benefits.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

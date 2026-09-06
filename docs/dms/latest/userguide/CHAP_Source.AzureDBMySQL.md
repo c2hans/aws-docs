@@ -14,7 +14,3 @@ For more information about using a customer-managed MySQL-compatible database wi
 ## Limitations when using Azure MySQL as a source for AWS Database Migration Service
 <a name="CHAP_Source.AzureDBMySQL.limitations"></a>
 + The defaut value for the Azure MySQL flexible server system variable `sql_generate_invisible_primary_key` is `ON`, and the server automatically adds a generated invisible primary key (GIPK) to any table that is created without an explicit primary key. AWS DMS doesn’t support ongoing replication for MySQL tables with GIPK constraints.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

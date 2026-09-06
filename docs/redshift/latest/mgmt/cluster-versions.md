@@ -66,6 +66,7 @@ Cluster versions in this patch:
 
 ### New features and improvements in this patch
 <a name="cluster-version-2026-08-11-features"></a>
++ Added support for single-node rg.large clusters. This is the minimum required cluster version to create a single-node rg.large cluster.
 + Added a query\_uuid column to system tables and views, providing a globally unique query identifier that persists across cluster pause/resume cycles.
 + Added user\_query\_id to stl\_udf\_log table to remove dependency on stl\_user\_query\_map joins in sys\_ view definitions.
 + Added two new Amazon CloudWatch metrics, IntegrationLatestDetectedChange and IntegrationLatestAppliedChange, for zero-ETL integrations to allow monitoring of replication health.
@@ -1296,7 +1297,3 @@ Cluster versions in this patch:
 + Supports the AVG function in incremental refresh of materialized views.
 + Supports correlated sub-queries on external tables in Redshift Spectrum.
 + To improve the out-of-the-box query performance, Amazon Redshift automatically chooses a single column primary key for specific tables as a distribution key.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

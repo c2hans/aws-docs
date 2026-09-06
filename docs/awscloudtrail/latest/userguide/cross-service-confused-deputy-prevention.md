@@ -14,7 +14,3 @@ The most effective way to protect against the confused deputy problem is to use 
 The value of `aws:SourceArn` must be the ARN of the trail, event data store, or channel that is using the resource.
 
 The following example shows how you can use the `aws:SourceArn` and `aws:SourceAccount` global condition context keys in CloudTrail to prevent the confused deputy problem: [Amazon S3 bucket policy for CloudTrail Lake query results](s3-bucket-policy-lake-query-results.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -114,7 +114,3 @@ Complete the following steps for each AWS account and AWS Region where AWS Incid
 1. Create an EventBridge rule and define the event patterns that match the list of events that you want to push to AWS Incident Detection and Response. The source of the rule is the partner event bus you created in Step 1 (`aws.partner/apm_name/integrationName`). The target of the rule is the Lambda function you created in Step 3 (`[apm_name]-AWSIncidentDetectionResponse-LambdaFunction`). For guidelines on defining your EventBridge rule, see [Amazon EventBridge rules](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html).
 
 For a step by step example on how to set up partner event bus integrations manually with AWS Incident Detection and Response, see [Integrating notifications from Datadog and Splunk](https://docs.aws.amazon.com/IDR/latest/userguide/example_integrating_notifications.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

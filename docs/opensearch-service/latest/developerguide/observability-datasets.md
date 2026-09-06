@@ -74,7 +74,3 @@ Select a logs dataset from the dataset selector on the Discover Logs page to que
 <a name="observability-datasets-analyze-traces"></a>
 
 Select a traces dataset from the dataset selector on the Discover Traces page to explore trace spans, view RED metrics, and drill into individual traces. For more information, see [Discover Traces](observability-analyze-traces.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

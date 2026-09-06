@@ -60,7 +60,3 @@ AWS Service Catalog provides the following APIs for data retrieval.
 | <a name="servicecatalog-SearchProducts"></a>[SearchProducts](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_SearchProducts.html) | List the products available to you as an end-user | List |
 | <a name="servicecatalog-SearchProductsAsAdmin"></a>[SearchProductsAsAdmin](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_SearchProductsAsAdmin.html) | List all the products in your account or all the products associated with a given portfolio | List |
 | <a name="servicecatalog-SearchProvisionedProducts"></a>[SearchProvisionedProducts](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_SearchProvisionedProducts.html) | List all the provisioned products in your account | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

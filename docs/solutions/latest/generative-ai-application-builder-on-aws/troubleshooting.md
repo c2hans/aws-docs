@@ -80,7 +80,3 @@ The CloudFront distribution can be invalidated to force the new configuration to
 1. Navigate to the **Invalidations** tab, then choose **Create Invalidation**, and input a path of /\*. This will invalidate all paths.
 
 1. In your own browser, delete any cookies and cached files related to the use case.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Generative AI Application Builder on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

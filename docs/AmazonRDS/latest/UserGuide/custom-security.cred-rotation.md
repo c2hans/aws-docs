@@ -111,7 +111,3 @@ The `dbMonitoringUserPassword` attribute indicates the secret for `RDSADMIN`, `S
 1. If your DB instance runs Oracle Database 12c Release 1 (12.1) and is managed by Oracle Data Guard, manually copy the password file (`orapw`) from the primary DB instance to each standby DB instance.
 
    If your DB instance is hosted in Amazon RDS, the password file location is `/rdsdbdata/config/orapw`. For databases that aren't hosted in Amazon RDS, the default location is `$ORACLE_HOME/dbs/orapw$ORACLE_SID` on Linux and UNIX and `%ORACLE_HOME%\database\PWD%ORACLE_SID%.ora` on Windows.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

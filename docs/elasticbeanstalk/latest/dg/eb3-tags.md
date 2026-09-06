@@ -101,7 +101,3 @@ The following command fails because it tries to update and delete the same key.
 $ eb tags --update mytag=newval --delete mytag
 ERROR: A tag with the key 'mytag' is specified for both '--delete' and '--update'. Each tag can be either deleted or updated in a single operation.
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

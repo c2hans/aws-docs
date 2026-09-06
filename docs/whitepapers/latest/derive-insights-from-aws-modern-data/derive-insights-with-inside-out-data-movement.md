@@ -52,7 +52,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 1.  **Data analytics** — Data and business analysts can now analyze prepared datasets in Amazon Redshift, or in S3 using Athena.
 
 1.  **Data visualizations** — Business analysts can create visuals in QuickSight. Data curators can enrich data from multiple sources. Administrators can enforce security and data governance. Developers can embed the QuickSight dashboard in applications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

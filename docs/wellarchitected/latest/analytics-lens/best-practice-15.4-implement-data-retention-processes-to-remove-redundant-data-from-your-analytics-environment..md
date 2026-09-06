@@ -67,7 +67,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
  For more details see:
 + [ Optimize your modern data architecture for sustainability: Part 1 – data ingestion and data lake ](https://aws.amazon.com/blogs/architecture/optimize-your-modern-data-architecture-for-sustainability-part-1-data-ingestion-and-data-lake/)
 + [AWS Well-Architected Framework: SUS04-BP05 Remove unneeded or redundant data ](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_data_a6.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

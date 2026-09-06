@@ -140,7 +140,3 @@ For a list of actions for the AWS Cost Management console, see [AWS Cost Managem
   - **IAM action:** `billing:PutContractInformation` / **Description:** Grants permission to set the account contract information, if the account is used to service public-sector customers. Information that can be pulled includes end user organization names, contract number, and PO numbers.This permission is for the console only. No API access is available for this permission.
   - **IAM action:** `billing:Update*` / **Description:** Grants permission action required to turn on or turn off the **Activate IAM Access** setting on the **Account** page.
   - **IAM action:** `payments:Update*` / **Description:** Grants permission to set advance pay, currency preference, billing contact details and address, and payment terms and conditions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

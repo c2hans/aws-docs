@@ -25,7 +25,3 @@ The AWS Managed Rules rule groups all provide versioning and SNS update notifica
 + [Version life cycle for managed rule groups](waf-managed-rule-groups-versioning-lifecycle.md)
 + [Version expiration for managed rule groups](waf-managed-rule-groups-versioning-expiration.md)
 + [Best practices for handling managed rule group versions](waf-managed-rule-groups-best-practice.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

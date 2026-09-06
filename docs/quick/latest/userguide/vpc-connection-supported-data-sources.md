@@ -71,7 +71,3 @@ Before you can reach a data source in your VPC from Amazon Quick, your configura
 1. A clearly defined network path must connect the data source and Amazon Quick.
 
 1. A VPC connection for the VPC must exist in Amazon Quick. You create or select one in the Amazon Quick console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

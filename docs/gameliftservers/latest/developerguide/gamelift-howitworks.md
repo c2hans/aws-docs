@@ -71,7 +71,7 @@ You build your game server software. You integrate the server SDK for Amazon Gam
 ### Game hosting fleet
 <a name="gamelift-howitworks-components-fleet"></a>
 
-The hosting fleet is a collection of computing resources that run your game servers. Fleet resources can be distributed across multiple geographic locations to provide low-latency gameplay to players wherever they are. Each fleet resource runs one or more game server processes, which communicates directly with Amazon GameLift Servers. Each game server process can host one game session at a time.
+The hosting fleet is a collection of computing resources that run your game servers. Fleet resources can be distributed across multiple geographic locations to provide low-latency gameplay to players wherever they are. Each fleet resource runs one or more game server processes, which communicate directly with Amazon GameLift Servers. Each game server process can host one game session at a time.
 
 Fleet characteristics and functionality vary based on the fleet's hosting type. Managed fleets deploy resources to the AWS Cloud and are managed by Amazon GameLift Servers. Anywhere fleets are customer-provided compute resources that are managed outside of Amazon GameLift Servers.
 
@@ -146,7 +146,3 @@ The game hosting management system is the operational backbone that coordinates 
 + **Player connects to the game session**: The game client uses the connection information to connect directly to the game server and begin gameplay.
 + **Amazon GameLift Servers monitors game session status**: The game server process reports health status, optional player connection status, and game session status to track ongoing game session availability.
 + **Game server process shuts down**: The game server process ends the game session, reports status, and then shuts itself down.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

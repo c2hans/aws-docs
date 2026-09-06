@@ -34,7 +34,3 @@ If you are unable to access the scheduling tables by using Option 1, try using O
 + The launch of new features results in additional to data fields or values to be added to the tables. When you develop applications that consume data lake data, we recommend that you build them to ignore the addition of new fields.
 + Connect Customer delivers contact records at least once. Contact records might be delivered again for multiple reasons, such as new information arriving after initial delivery which might update the data in the record. For example, when you use the [update-contact-attributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/connect/update-contact-attributes.html) CLI command to update a contact record, Connect Customer delivers a new contact record.
 + For information about data retention, see [Data retention in the Connect Customer analytics data lake](data-lake-data-retention.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

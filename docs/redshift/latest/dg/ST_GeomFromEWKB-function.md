@@ -22,7 +22,7 @@ ST_GeomFromEWKB(ewkb_string)
 <a name="ST_GeomFromEWKB-function-arguments"></a>
 
  *ewkb\_string*
-A value of data type `VARCHAR` that is a hexadecimal EWKB representation of a geometry.
+A value of data type `VARCHAR` or `VARBYTE` that is a hexadecimal EWKB representation of a geometry.
 
 ## Return type
 <a name="ST_GeomFromEWKB-function-return"></a>
@@ -47,7 +47,3 @@ SELECT ST_AsEWKT(ST_GeomFromEWKB('0103000020E61000000100000005000000000000000000
 --------------------------------
  SRID=4326;POLYGON((0 0,0 1,1 1,1 0,0 0))
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

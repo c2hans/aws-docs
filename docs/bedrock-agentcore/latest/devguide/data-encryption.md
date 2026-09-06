@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/data-e
 ## Encryption at rest
 <a name="encryption-rest"></a>
 
-Amazon Bedrock AgentCore stores data at rest using Amazon DynamoDB and Amazon Simple Storage Service (Amazon S3). The data at rest is encrypted using AWS encryption solutions by default. AgentCore encrypts your data using AWS owned encryption keys from AWS Key Management Service. You don’t have to take any action to protect the AWS managed keys that encrypt your data. For more information, see [AWS owned keys](kms/latest/developerguide/concepts.html#aws-owned-cmk) in the * AWS Key Management Service Developer Guide*.
+Amazon Bedrock AgentCore stores data at rest using Amazon DynamoDB and Amazon Simple Storage Service (Amazon S3). The data at rest is encrypted using AWS encryption solutions by default. AgentCore encrypts your data using AWS owned encryption keys from AWS Key Management Service. You don’t have to take any action to protect the AWS managed keys that encrypt your data. For more information, see [AWS owned keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk) in the * AWS Key Management Service Developer Guide*.
 
  **Key considerations**
 + The following data is not encrypted by default:
@@ -43,7 +43,3 @@ You can use AWS KMS customer managed keys for the following Amazon Bedrock Agent
   + For AgentCore Gateway resources, AWS managed keys are single-tenant use and different for each region.
   + If a key encrypting your gateway is compromised, you should rotate the key or delete the gateway and create a new one with a new key.
   + AgentCore Gateway integrates with AWS Certificate Manager. For more information, see [AWS Certificate Manager User Guide](https://docs.aws.amazon.com/acm/latest/userguide/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

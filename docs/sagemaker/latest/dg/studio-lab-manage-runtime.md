@@ -75,7 +75,3 @@ You can switch your compute type based on your workflow. For more information ab
 1. Confirm your choice by selecting **Restart** in the **Restart project runtime?** dialog box. Studio Lab stops your current project runtime, then starts a new project runtime with your updated compute type.
 
 1. After your project runtime has started, select **Open project**. This opens your project runtime environment in a new browser tab. For information about using your project runtime environment, see [Use the Amazon SageMaker Studio Lab project runtime](studio-lab-use.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

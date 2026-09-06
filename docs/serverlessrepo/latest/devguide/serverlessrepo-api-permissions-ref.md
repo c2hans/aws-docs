@@ -23,7 +23,3 @@ To specify an action, use the `serverlessrepo:` prefix followed by the API opera
 | **Operation:** CreateApplicationVersion<br />**Required Permissions: **serverlessrepo:CreateApplicationVersion | /applications/{{application-id}}/versions/{{semantic-version}} | PUT | arn:aws:serverlessrepo:{{region}}:{{account-id}}:applications/{{application-name}} |
 | **Operation:** ListApplicationDependencies<br />**Required Permissions: **serverlessrepo:ListApplicationDependencies | /applications/{{application-id}}/dependencies | GET | arn:aws:serverlessrepo:{{region}}:{{account-id}}:applications/{{application-name}} |
 | **Operation:** SearchApplications<br />**Required Permissions: **serverlessrepo:SearchApplications | n/a | n/a | \* |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Repository. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverlessrepo` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

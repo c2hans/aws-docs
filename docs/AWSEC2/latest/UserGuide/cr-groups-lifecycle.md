@@ -21,7 +21,3 @@ When the capacity of an interruptible Capacity Reservation is reclaimed, instanc
 <a name="cr-groups-lifecycle-cb"></a>
 
 Instances running in a Capacity Block in a Capacity Reservation Resource Group are terminated before the Capacity Block ends, the same as for a Capacity Block that you target directly. For more information, see [How Amazon EC2 Capacity Blocks work](capacity-blocks-how.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -287,7 +287,3 @@ Parameters:
 +  **permissions** (required): Permissions to include in the policy as JSON strings representing IAM policy statements. Can be either a single JSON string or an array of JSON strings.
 +  **policy\_name** (required): Name of the inline policy to create. Must be unique within the role.
 +  **role\_name** (required): Name of the IAM role to add the policy to. The role must exist.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

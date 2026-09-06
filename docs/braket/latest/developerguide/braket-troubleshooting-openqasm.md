@@ -208,7 +208,3 @@ qasm_program = Program(source=qasm_string)
 This code generates the warning: `This program uses OpenQASM language features only supported in the LocalSimulator. Some of these features may not be supported on QPUs or on-demand simulators.
 
 For more information on supported OpenQASM features, explore the page [Advanced feature support for OpenQASM on the Local Simulator](braket-openqasm-supported-features.md#braket-openqasm-supported-features-advanced-feature-local-simulator).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

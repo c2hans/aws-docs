@@ -21,7 +21,3 @@ Associating and disassociating an app block is only supported for app blocks wit
 1. Select an app block builder, and choose **Associate app block builder**.
 
    If the list is empty, then you either don’t have an app block builder, or all of your app block builders are associated with other app blocks. Either create a new app block builder, or disassociate an existing app block builder and then associate.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

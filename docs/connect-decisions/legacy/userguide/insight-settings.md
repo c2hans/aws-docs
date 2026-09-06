@@ -30,7 +30,3 @@ You can group and analyze the inventory projections in daily, weekly, or monthly
    + *Emissions (CO2)* – CO2 emissions computed for the rebalance option.
    + *Risk Resolved* – Net improvement in inventory risk percentage when excess inventory is reduced at one location to help restock the current stocked out location.
    + *Shipping Cost* – Shipping cost to rebalance and transfer inventory from one location to another.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

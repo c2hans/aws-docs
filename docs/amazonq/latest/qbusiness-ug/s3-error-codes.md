@@ -26,7 +26,3 @@ The following table provides information about error codes you may see for the A
 | S3-5111 | Unable to connect with provided Amazon S3 bucket due to connection timeout. | Check if the provided bucket is valid, credentials are valid, an IAM role with correct permissions has been provided, or if the VPC configuration of the data source is correct. |
 | S3-5200 | Object was not accessible. Amazon S3 returned following error: | The object might be not accessible. User may receive this error if an object is encrypted using an SSE-KMS key that the profile doesn't have the access. |
 | S3-5201 | The object content was not readable. S3 returned following error: | User may receive this error if an object is encrypted using an SSE-C key. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

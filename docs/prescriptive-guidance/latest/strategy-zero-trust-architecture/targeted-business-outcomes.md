@@ -61,7 +61,3 @@ Organizations are increasingly pursuing the interconnection of devices, machines
 <a name="targeted-outcomes-summary"></a>
 
 By focusing on these targeted business outcomes, your organization can realize the full potential of ZTA and strengthen your security posture in the cloud. It's important to align these outcomes with specific organizational goals, tailor them to your unique business requirements, and regularly assess their effectiveness to drive continuous improvement.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

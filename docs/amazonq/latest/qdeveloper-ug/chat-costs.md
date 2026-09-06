@@ -83,7 +83,3 @@ Following are example questions about costs that you can ask Amazon Q Developer:
 + “Create a chart of S3 storage pricing by tier in us-east-1”"
 + “Line chart of Savings Plans coverage and utilization % over the last 3 months”
 + “Graph EC2 cost per vCPU hour over the last 3 weeks”
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

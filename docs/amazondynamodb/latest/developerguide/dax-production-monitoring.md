@@ -18,7 +18,3 @@ AWS has improved the `CPUUtilization` metric's granularity. You might observe ch
 **Note**
  In case of a large number of cache misses and writes, cache memory utilization can increase up to 100% and might cause availability downtime.
 +  Client connections, so that you can monitor for any unexplained spikes in connections to the cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ In the following example, *Node 1* has two SDI cards. On Card 1, four inputs are
 In total, seven inputs are in use on the node, so you need seven outputs from the router. These seven outputs are shown on the right side of the router.
 
 ![Router with seven outputs connecting to inputs on Node 1, Node 2, and SDI Card 1 and 2.](http://docs.aws.amazon.com/elemental-cl3/latest/configguide/images/sdi-router-diagram-png.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

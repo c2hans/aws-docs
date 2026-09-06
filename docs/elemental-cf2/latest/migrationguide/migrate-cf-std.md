@@ -25,7 +25,3 @@ You must upgrade all the nodes in the cluster to a 2.18 version. You can't, for 
 + [Step D: Create backups](migrate-std-backup.md)
 + [Step E: Upgrade nodes](migrate-server-218-install-software-cf.md)
 + [Step F: Rebuild the cluster](migrate-std-rebuild-cluster.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

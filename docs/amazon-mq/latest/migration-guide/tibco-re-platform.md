@@ -50,7 +50,3 @@ Steps 1 and 2 can be replicated using a AWS CloudFormation template. For more in
     When finished, up the Amazon MQ broker **AMQ\_ORANGE ** configuration file to add Composite Destinations that match TIBCO EMS bridges.
 **Note**
  *Simple Topic to Queue* bridges are needed in TIBCO EMS to support *m-hop* routing. In Amazon MQ this is not needed and queues can be used directly with a [Network of Brokers](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/network-of-brokers).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

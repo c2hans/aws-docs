@@ -124,19 +124,13 @@ This directory contains local user-specific settings and configurations.
 ### Silent installation and fleet deployment
 <a name="desktop-enterprise-silent-install"></a>
 
-The installer supports silent mode.
+To distribute the application silently to a managed fleet with a mobile device management (MDM) solution – including per-machine packaging for Microsoft Intune and other MDM tools, certificate authority trust, and troubleshooting – see [Deploying Amazon Quick on desktop to a managed fleet with MDM](desktop-enterprise-mdm.md).
+
+For a single-user silent installation on Windows, the installer also supports silent mode. This installs Amazon Quick for the current user in `%LOCALAPPDATA%` and creates desktop and Start menu shortcuts.
 
 ```
 .\Amazon-Quick-Setup.exe /S
 ```
-
-The installer installs Amazon Quick for each user in `%LOCALAPPDATA%` and creates desktop and Start menu shortcuts.
-
-For Microsoft Intune deployment, wrap the installer using the [Microsoft Win32 Content Prep Tool](https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool) on the GitHub website, then upload as a Win32 app with install command `Amazon-Quick-Setup.exe /S`. For details, see [Prepare a Win32 app for Intune](https://learn.microsoft.com/en-us/mem/intune/apps/apps-win32-prepare) on the Microsoft Intune website.
-
-The application ships as a `.dmg`. For fleet deployment:
-+ **Intune:** Upload the DMG directly as a macOS line-of-business app. See [Add a macOS DMG app to Intune](https://learn.microsoft.com/en-us/mem/intune/apps/lob-apps-macos-dmg) on the Microsoft Intune website.
-+ **Jamf:** Upload the DMG and deploy via policy. See [Package Deployment](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Package_Deployment.html) on the Jamf Pro website.
 
 ### Application updates
 <a name="desktop-enterprise-updates"></a>
@@ -153,7 +147,4 @@ Amazon Quick delivers updates automatically over HTTPS. Updates are code-signed 
 + [Set up enterprise sign-in with Okta for Amazon Quick on desktop](desktop-enterprise-okta.md)
 + [Set up enterprise sign-in with Ping Identity for Amazon Quick on desktop](desktop-enterprise-ping-identity.md)
 + [Troubleshooting enterprise sign-in for Amazon Quick on desktop](desktop-enterprise-setup-troubleshooting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ [Deploying Amazon Quick on desktop to a managed fleet with MDM](desktop-enterprise-mdm.md)

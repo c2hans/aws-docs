@@ -83,7 +83,3 @@ It is important to understand which security and privacy controls AWS is respons
 When using tags as a core component of your privacy control strategy, consider the following:
 + Consider the implications of placing personal data or other types of sensitive data within tag keys or values. When you contact AWS for technical assistance, AWS might analyze tags and other resource identifiers to help resolve the issue. Tag data is not encrypted, and AWS services, such as AWS Billing and Cost Management, can read them. Therefore, you might want to deidentify tag values and then reidentify them by using a system that you control, such as an IT service management (ITSM) system. AWS recommends not including personally identifiable information in tags.
 + Consider that some tag values need to be made immutable (unmodifiable) to prevent circumvention of technical controls, such as ABAC conditions that rely on tags.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

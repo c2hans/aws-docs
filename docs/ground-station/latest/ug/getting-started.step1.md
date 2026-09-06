@@ -125,7 +125,3 @@ aws groundstation untag-resource --region us-west-2 --resource-arn arn:aws:groun
 Once onboarded, these satellites can be accessed for immediate use. AWS Ground Station maintains a number of preconfigured CloudFormation templates to make getting started with the service easier. See [Example mission profile configurations](examples.md) for examples of how AWS Ground Station can be used.
 
 For more information about these satellites and the kind of data they transmit, see [Aqua](https://aqua.nasa.gov/), [JPSS-1/NOAA-20 and SNPP](https://www.nesdis.noaa.gov/our-satellites/currently-flying/joint-polar-satellite-system), and [Terra](https://terra.nasa.gov/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

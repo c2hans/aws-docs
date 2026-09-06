@@ -31,7 +31,3 @@ As part of the ML platform operation, Cloud Engineering / MLOps team needs to mo
 [AWS Config](https://aws.amazon.com/config/) is a service that enables you to assess, audit, and evaluate the configuration of AWS resources. It tracks changes in CodePipeline pipeline definitions, CodeBuild projects, and CloudFormation stacks, and it can report configuration changes across timelines.
 
 AWS CloudTrail can track and log SageMaker AI API events for the create, delete, and update operations for model registry, model hosting endpoint configuration, and model hosting endpoint to detect production environment changes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

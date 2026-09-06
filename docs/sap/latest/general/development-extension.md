@@ -45,7 +45,3 @@ Organizations should evaluate their current SAP landscape and plan their transit
 +  [You can contact our SAP on AWS expert team](https://aws.amazon.com/sap/) to help you guide if needed.
 
 One example “SAP Tax Classification and Reporting” has been tagged as “No Alternative Planned” in the [SAP Note 2269324](https://me.sap.com/notes/2269324) (refer to S4HANA CompScope – Way Forward – Info – 06032025.xlsx), in this case, you can explore alternative such as the [Thomson Reuters ONESource Indirect Tax Determination](https://aws.amazon.com/marketplace/seller-profile?id=14aa4071-a059-43f9-a854-968597951447) at AWS Marketplace.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

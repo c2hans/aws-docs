@@ -261,7 +261,3 @@ You can choose to pause or cancel your current transformation job. You can pause
 1. Select whether you want to pause or cancel your tranformation.
    + Enter `1` if you want to puase the code transformation job. You can resume the job within 12 hours to continue the code transformation using the following QCT command: ``qct transform --source_folder=≤/Path/Given/Originally/To/QCT>``.
    + Enter `2` if you want to cancel the code tranformation job.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

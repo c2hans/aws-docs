@@ -30,7 +30,3 @@ Lambda provides the following runtimes for .NET languages:
 + [Define Lambda function handler in PowerShell](powershell-handler.md)
 + [Using the Lambda context object to retrieve PowerShell function information](powershell-context.md)
 + [Log and monitor Powershell Lambda functions](powershell-logging.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

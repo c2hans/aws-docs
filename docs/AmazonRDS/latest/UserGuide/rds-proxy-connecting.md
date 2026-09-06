@@ -111,7 +111,3 @@ When you connect through an RDS proxy, the startup message can include the follo
 + Set the JDBC connection parameter `ApplicationName` to `{{any/your-application-name}}` to avoid pinning. Doing this prevents the JDBC driver from performing an extra round trip during connection startup when it runs `SET application_name = "PostgreSQL JDBC Driver"`. Note the JDBC parameter is `ApplicationName` but the PostgreSQL `StartupMessage` parameter is `application_name`.
 
 For more information, see [Avoiding pinning an RDS Proxy](rds-proxy-pinning.md). For more information about connecting using JDBC, see [Connecting to the database](https://jdbc.postgresql.org/documentation/setup/) in the PostgreSQL documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

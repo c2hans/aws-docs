@@ -255,7 +255,3 @@ kubectl delete namespace keda
 Deleting the `ScaledObject` also removes the HPA that KEDA created. Your vLLM Deployment returns to its static replica count.
 
 To remove the vLLM inference server and related workload resources, see [Load & Serve Models](ml-inference-load-serve-model.md). For instructions on removing infrastructure resources such as the cluster, NodePool, and S3 bucket, see [Cluster Setup Cleanup](ml-cluster-setup-cli.md#cluster-setup-cli-cleanup).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

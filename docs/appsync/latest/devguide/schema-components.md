@@ -45,7 +45,3 @@ At this point, you may be wondering how operations like `addPerson` work without
 This example shows only the simplest ways a schema can manipulate data. You build complex, robust, and scalable applications by leveraging the features of GraphQL and AWS AppSync. In the next section, we'll define all of the different types and field behaviors you can utilize in your schema.
 
 As you can see, there are many moving components in GraphQL. In this section, we showed the structure of a simple schema and the different types and fields a schema supports. In the following section, you will discover the other components of a GraphQL API and how they work with the schema.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

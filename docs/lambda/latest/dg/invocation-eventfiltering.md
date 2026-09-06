@@ -512,7 +512,3 @@ The following sections give examples of filter patterns for different types of e
 + [Filter events from an Amazon MQ event source](with-mq-filtering.md)
 + [Filtering events from Amazon MSK and self-managed Apache Kafka event sources](kafka-filtering.md)
 + [Using event filtering with an Amazon SQS event source](with-sqs-filtering.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

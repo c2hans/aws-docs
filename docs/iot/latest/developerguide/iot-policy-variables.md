@@ -15,7 +15,3 @@ You can also use predefined policy variables with fixed values to represent char
 + [Basic AWS IoT Core policy variables](basic-policy-variables.md)
 + [Thing policy variables](thing-policy-variables.md)
 + [X.509 Certificate AWS IoT Core policy variables](cert-policy-variables.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

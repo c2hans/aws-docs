@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/bui
 
 The job template defines the runtime environment and the processes that run as part of a Deadline Cloud job. You can create parameters in a template so that it can be used to create jobs that differ only in input values, much like a function in a programming language.
 
-When you submit a job to Deadline Cloud, it runs in any queue environments applied to the queue. Queue environments are built using the Open Job Description (OpenJD) external environments specification. For details, see the [Environment template](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#12-environment-template) in the OpenJD GitHub repository.
+When you submit a job to Deadline Cloud, it runs in any queue environments applied to the queue. Queue environments are built using the Open Job Description (OpenJD) external environments specification. For details, see the [OpenJD specification](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#12-environment-template) on the GitHub website.
 
-For an introduction creating a job with an OpenJD job template, see [Introduction to creating a job](https://github.com/OpenJobDescription/openjd-specifications/wiki/Introduction-to-Creating-a-Job) in the OpenJD GitHub repository. Additional information can be found in [How jobs are run](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run). There are job template samples in the in the OpenJD GitHub repository's `samples` directory.
+For an introduction to creating a job with an OpenJD job template, see [Introduction to creating a job](https://github.com/OpenJobDescription/openjd-specifications/wiki/Introduction-to-Creating-a-Job) on the GitHub website. For how a job runs, see [How jobs are run](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run) on the GitHub website.
 
 You can define the job template in either YAML format (`template.yaml`) or JSON format (`template.json`). The examples in this section are shown in YAML format.
 
@@ -44,7 +44,7 @@ In this example, the UI widget for inputting a value for the `BlenderSceneFile` 
 
 ![A user-interface widget for entering the scene file parameter for an OpenJD job template.](http://docs.aws.amazon.com/deadline-cloud/latest/developerguide/images/blender_submit_scene_file_widget.png)
 
-For more examples of using the `userInteface` element, see the [gui\_control\_showcase](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/gui_control_showcase) sample in the [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline) repository on GitHub.
+For more examples of using the `userInteface` element, see the [gui\_control\_showcase sample](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/gui_control_showcase) in the [deadline-cloud-samples repository](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline) on the GitHub website.
 
 The `objectType` and `dataFlow` properties control the behavior of job attachments when you submit a job from a job bundle. In this case, `objectType: FILE` and `dataFlow:IN` mean that the value of `BlenderSceneFile` is an input file for job attachments.
 
@@ -69,7 +69,7 @@ When you submit the bundle, the submission dialog's **Job attachments** tab list
 
 ![The Job attachments tab of a submission dialog, listing detected input files, input directories, and the output directory.](http://docs.aws.amazon.com/deadline-cloud/latest/developerguide/images/bundle-gui-submit-job-attachments.png)
 
-For more information about the `objectType` and `dataFlow` properties, see [JobPathParameterDefinition](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#22-jobpathparameterdefinition) in the [Open Job Description specification](https://github.com/OpenJobDescription/openjd-specifications)
+For more information about the `objectType` and `dataFlow` properties, see [JobPathParameterDefinition](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#22-jobpathparameterdefinition) in the [Open Job Description specification](https://github.com/OpenJobDescription/openjd-specifications) on the GitHub website.
 
 The rest of the `blender_render` job template sample defines the job's workflow as a singe step with each frame in the animation rendered as a separate task:
 
@@ -112,10 +112,6 @@ For example, if the value of the `Frames` parameter is `1-10`, it defines 10 tas
 
 1. The task's `onRun` command resolves to `bash {{location of embedded file}}` and then runs.
 
-For more information about embedded files, sessions, and path-mapped locations, see [How jobs are run](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run) in the [Open Job Description specification](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run).
+For more information about embedded files, sessions, and path-mapped locations, see the [Open Job Description specification](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run) on the GitHub website.
 
-There are more examples of job templates in the [deadline-cloud-samples/job\_bundles](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles) repository, as well as the [template samples](https://github.com/OpenJobDescription/openjd-specifications/tree/mainline/samples) provided with the Open Job Descriptions specification.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+There are more examples of job templates in the [deadline-cloud-samples repository](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles) and the [OpenJD specifications repository](https://github.com/OpenJobDescription/openjd-specifications/tree/mainline/samples) on the GitHub website.

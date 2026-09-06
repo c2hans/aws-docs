@@ -45,7 +45,3 @@ The default schedule can be updated in [DynamoDB ](https://console.aws.amazon.co
    + **Type** = **String**
 
    The time value must be formatted as XX:XX using a 24 hour clock. For example, 9am would be 09:00 while 5pm would be 17:00. The entered time always corresponds to the local time of the AWS region the RES environment is deployed in.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

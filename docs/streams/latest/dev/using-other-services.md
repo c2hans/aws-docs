@@ -20,7 +20,3 @@ The following AWS services can integrate directly with Amazon Kinesis Data Strea
 + [Write to Kinesis Data Streams using Amazon Relational Database Service](using-other-services-rds.md)
 + [Write to Kinesis Data Streams usingAmazon Pinpoint](using-other-services-pinpoint.md)
 + [Write to Kinesis Data Streams using Amazon Quantum Ledger Database (Amazon QLDB)](using-other-services-quantum-ledger.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

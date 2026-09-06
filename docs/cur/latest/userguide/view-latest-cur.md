@@ -34,7 +34,3 @@ If you configured your report to create new report versions with every update, t
 1. Return to the Amazon S3 console page where you’re viewing the folder named with the latest billing period.
 
 1. Open the folder named with the **assemblyId** value that you noted in step 10. For example, if the **assemblyId** value is **20210129T123456Z**, then open the folder named **20210129T123456Z/**. This folder contains your latest report files.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

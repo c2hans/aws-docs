@@ -54,7 +54,3 @@ The AWS Pricing Calculator consists of four major console pages.
   Direct link: [https://calculator.aws/\#/estimate](https://calculator.aws/#/estimate)
 **Note**
 AWS provides the Free Tier that you can use to try some AWS services for free. The Free Tier only covers certain instances or usage for a limited amount of time. Free Tier isn't included in your AWS Pricing Calculator estimates unless it's specifically called out otherwise. AWS Pricing Calculator assumes that you aren't using the Free Tier and doesn't include any expiring Free Tier in your estimates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Pricing Calculator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pricing-calculator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

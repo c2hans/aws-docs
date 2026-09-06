@@ -120,7 +120,3 @@ You can delete archives in Amazon Glacier by using the AWS Command Line Interfac
    ```
 
  For more information on the `delete-archive` command, see [Delete Archive](https://docs.aws.amazon.com/amazonglacier/latest/dev/api-archive-delete.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

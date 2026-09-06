@@ -53,7 +53,3 @@ Gateway provides the following key capabilities:
 +  **Secure Credential Exchange** - Handles credential injection for each tool, enabling agents to use tools with different authentication requirements seamlessly.
 +  **Semantic Tool Selection** - Enables agents to search across available tools to find the most appropriate ones for specific contexts, allowing agents to use thousands of tools while minimizing prompt size and reducing latency.
 +  **Infrastructure Manager** - Provides a serverless solution with built-in observability and auditing, eliminating infrastructure management overhead.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -192,7 +192,3 @@ After you are finished with this tutorial, use the following procedure to delete
 1. In the navigation pane, choose **Verified Access trust providers**. Select your trust provider and choose **Actions**, **Delete Verified Access trust provider**.
 
 1. In the navigation pane, choose **Verified Access instances**. Select your instance and choose **Actions**, **Delete Verified Access instance**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Verified Access. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verified-access` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

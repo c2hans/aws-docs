@@ -23,7 +23,3 @@ AWS Elemental MediaPackage V2 provides the following APIs for data retrieval.
 | <a name="mediapackagev2-ListHarvestJobs"></a>[ListHarvestJobs](https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_ListHarvestJobs.html) | List all harvest jobs in a channel group, channel, origin endpoint | List |
 | <a name="mediapackagev2-ListOriginEndpoints"></a>[ListOriginEndpoints](https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_ListOriginEndpoints.html) | List all origin endpoints of a channel | List |
 | <a name="mediapackagev2-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_ListTagsForResource.html) | List tags for the specified resource | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

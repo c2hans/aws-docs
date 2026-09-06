@@ -78,7 +78,7 @@ Support for other versions of Ubuntu and other operating systems is coming soon.
 You must use an instance family that supports hibernation. However, bare metal instances are not supported.
 + General purpose: M3, M4, M5, M5a, M5ad, M5d, M6a, M6g, M6gd, M6i, M6id, M6idn, M6in, M7a, M7g, M7gd, M7i, M7i-flex, M8a, M8azn, M8g, M8gb, M8gd, M8gn, M8i, M8i-flex, M8in, M8idn, M8ib, M8idb, M9g, M9gd, T2, T3, T3a, T4g
 + Compute optimized: C3, C4, C5, C5d, C6a, C6g, C6gd, C6gn, C6i, C6id, C6in, C7a, C7g, C7gd, C7gn, C7i, C7i-flex, C8a, C8g, C8gb, C8gd, C8gn, C8i, C8i-flex, C8in, C8ib, C9g, C9gd
-+ Memory optimized: R3, R4, R5, R5a, R5ad, R5d, R6a, R6g, R6gd, R6idn, R6in, R7a, R7g, R7gd, R7i, R7iz, R8a, R8g, R8gb, R8gd, R8gn, R8i, R8i-flex, R8in, R8idn, R8ib, R8idb, X2gd, X8aedz, X8i
++ Memory optimized: R3, R4, R5, R5a, R5ad, R5d, R6a, R6g, R6gd, R6idn, R6in, R7a, R7g, R7gd, R7i, R7iz, R8a, R8g, R8gb, R8gd, R8gn, R8i, R8i-flex, R8in, R8idn, R8ib, R8idb, R9g, R9gd, X2gd, X8aedz, X8i
 + Storage optimized: I3, I3en, I4g, I7i, I7ie, I8g, I8ge, Im4gn, Is4gen
 
 ------
@@ -140,7 +140,11 @@ The root volume must be large enough to store the RAM contents and accommodate y
 ## Root volume encryption
 <a name="hibernation-prereqs-ebs-root-volume-encryption"></a>
 
-The root volume must be encrypted to ensure the protection of sensitive content that is in memory at the time of hibernation. When RAM data is moved to the EBS root volume, it is always encrypted. Encryption of the root volume is enforced at instance launch.
+The root volume must be encrypted to protect sensitive content that is in memory during hibernation. You can enable hibernation for an instance through Amazon EC2 by using the console, AWS CLI, or API. Before the instance launches, Amazon EC2 validates that the root volume is encrypted. Because the EBS root volume is encrypted, the RAM data written to it during hibernation is also encrypted.
+
+**Only the Amazon EC2 API enforces encryption-at-rest for hibernate**
+Amazon EC2 validates the hibernation prerequisites, including root volume encryption, only for hibernation that you start through Amazon EC2. This includes the console, AWS CLI, and API.
+These checks do not apply if you start hibernation from within the guest operating system, such as Linux or Windows suspend-to-disk. In that case, ensure that the EBS root volume is encrypted. The operating system persists the contents of memory to this volume before it stops the instance. Under the shared responsibility model, you are responsible for encrypting data at rest for actions that you perform in the guest operating system. For more information, see [Shared responsibility model](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/shared-responsibility.html) and [Protecting data at rest](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/protecting-data-at-rest.html) in the *Security Pillar - AWS Well-Architected Framework*.
 
 Use one of the following three options to ensure that the root volume is an encrypted EBS volume:
 + **EBS encryption by default** – You can enable EBS encryption by default to ensure that all new EBS volumes created in your AWS account are encrypted. This way, you can enable hibernation for your instances without specifying encryption intent at instance launch. For more information, see [Enable encryption by default](https://docs.aws.amazon.com/ebs/latest/userguide/encryption-by-default.html).
@@ -162,7 +166,3 @@ If you choose a Provisioned IOPS SSD volume type, you must provision the EBS vol
 For Spot Instances, the following requirements apply:
 + The Spot Instance request type must be `persistent`.
 + You can't specify a launch group in the Spot Instance request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

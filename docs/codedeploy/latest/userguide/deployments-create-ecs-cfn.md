@@ -53,7 +53,3 @@ Sign in with the same user that you set up in [Getting started with CodeDeploy](
 1. The following apply for rolling back or stopping the deployment:
    + The successful deployment appears in CodeDeploy and shows that the deployment was initiated by CloudFormation.
    + If you want to stop and roll back the deployment, you must cancel the stack update in CloudFormation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

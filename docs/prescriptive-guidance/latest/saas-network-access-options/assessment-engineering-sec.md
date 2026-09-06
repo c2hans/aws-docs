@@ -27,7 +27,3 @@ The network access approach is prone to recurrent security breaches or vulnerabi
 + How long does it take to detect and respond to security threats? How does the network access help or limit this ability?
 + How frequently are security assessments conducted on the network access approaches? Can you use commonly tooling to assess the security of the network access approach, or is specialized software required?
 + What level of security is inherent in the network access approach, and how does it align with industry best practices and regulatory requirements?
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

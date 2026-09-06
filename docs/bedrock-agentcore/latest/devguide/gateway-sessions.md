@@ -101,7 +101,7 @@ The session timeout is calculated from the first `initialize` request. After the
 +  **Default timeout**: 3600 seconds (1 hour)
 +  **Configurable range**: 900 seconds (15 minutes) to 28800 seconds (8 hours)
 
-If an MCP server target’s session expires before the gateway session timeout, the gateway transparently re-initializes with the target and updates the stored target session ID. The gateway session remains active.
+If an MCP server target’s session expires or is lost before the gateway session times out (for example, if the target restarts), subsequent tool calls to that target return a client error (4xx), such as `session not found`. To recover, re-initialize your MCP connection to the gateway by sending a new `initialize` request to start a fresh gateway session. This establishes a new target session, and subsequent tool calls use the updated target session ID.
 
 ## Error handling
 <a name="gateway-sessions-errors"></a>
@@ -284,7 +284,3 @@ If an MCP server target’s session expires before the gateway session timeout, 
        response = agent("Search for wireless headphones")
        print(response)
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

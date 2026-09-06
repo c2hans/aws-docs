@@ -21,7 +21,3 @@ The following table describes the documentation releases for AWS Local Zones.
 | [NAT gateways](https://docs.aws.amazon.com/local-zones/latest/ug/local-zones-connectivity-nat.html) | NAT gateways are now available in select Local Zones. | August 17, 2023 |
 | [New Local Zone launch](https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html) | A new Local Zone is now available in US West (Phoenix) 2. | July 27, 2023 |
 | [Initial release](#doc-history) | Initial release of the AWS Local Zones User Guide | November 17, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Local Zones. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query local-zones` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

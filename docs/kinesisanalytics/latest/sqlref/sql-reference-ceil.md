@@ -38,7 +38,3 @@ Returns null if any input argument is null.
 + CEIL and CEILING are synonyms for this function provided by the SQL:2008 standard.
 + CEIL(<datetime value expression> TO <time unit>) is an Amazon Kinesis Data Analytics extension.
 + For more information, see [FLOOR](sql-reference-floor.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

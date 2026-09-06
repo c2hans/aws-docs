@@ -15,7 +15,3 @@ You use AWS published API calls to access AWS Config through the network. Client
 <a name="vulnerability-analysis-and-management"></a>
 
 For AWS Config, AWS handles basic security tasks such as guest operating system (OS) and database patching, firewall configuration, and disaster recovery.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

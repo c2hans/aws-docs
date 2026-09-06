@@ -10,7 +10,3 @@ Activate post-launch actions in the default settings, to make it active by defau
 To activate, make sure the required IAM role is installed by following [this guide](https://docs.aws.amazon.com/drs/latest/userguide/post-launch-action-settings-roles.html). After that, go to **Settings → Default post-launch actions** and check **Post-launch actions settings** to see if **Post-launch actions** is set to **Active**. In case it is not, select **Edit** and make sure **Post-launch actions activated** is checked. Then select **Save** to store these settings.
 
  To deactivate, go to **Settings → Default post-launch actions** and check **Post-launch actions settings** to see if **Post-launch actions** is set to **Not active**. In case it is not, select **Edit** and make sure **Post-launch actions activated** is not checked. Then select **Save** to store these settings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

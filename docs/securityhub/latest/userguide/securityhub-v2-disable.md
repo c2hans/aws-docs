@@ -84,7 +84,3 @@ If you have an existing Security Hub policy and want to disable Security Hub onl
 Disabling Security Hub through an Security Hub policy has **no impact** on Security Hub CSPM, GuardDuty, and Amazon Inspector configurations.
 
 If you need to disable Amazon Inspector only across member accounts, you can use the **Vulnerability management** policy from the Security Hub configuration catalog. Navigate to the Security Hub Configuration page, choose **Vulnerability management from Amazon Inspector**, and create a disable policy following steps similar to the Security Hub disable procedure above.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

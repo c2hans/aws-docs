@@ -12,7 +12,3 @@ Choosing the right instance type on Amazon EC2 ensures system reliability as wel
  For most customers, the latest generation of [Compute Optimized instances](https://aws.amazon.com/ec2/instance-types/) should provide the best value for the cost. For example, the C5N supports the new Elastic Network Adapter with bandwidth up to 100 Gbps with millions of packets per second (PPS). Most real-time applications would also benefit from using the [Intel Data Plane Developer Kit ](http://www.intel.com/content/www/us/en/communications/data-plane-development-kit.html) (DPDK) which can greatly boost network packet processing.
 
  However, it is always a best practice to benchmark the various EC2 instance types according to your requirements to see which instance type works best for you. Benchmarking also enables you to find other configuration parameters, such as the maximum number of calls a certain instance type can process at a time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

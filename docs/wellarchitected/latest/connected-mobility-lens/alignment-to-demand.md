@@ -27,7 +27,3 @@ Review and optimize workload service level agreements (SLAs) based on your susta
 **Prescriptive guidance:**
 +  Configure workloads to send only the minimum and required dataset to the cloud using low bandwidth network. The rest of the data can move to the cloud when the edge device is connected with Wi-Fi.
 +  If it meets business requirements, get data processed at the edge itself and only send processed data to the cloud for further usage. Transform data in a human readable format at the edge itself, if possible.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

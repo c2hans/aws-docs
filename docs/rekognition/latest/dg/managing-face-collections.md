@@ -35,7 +35,3 @@ After you store multiple face vectors from the same person, you can improve accu
 + [ListUsers](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListUsers.html) - Lists the users in a collection.
 + [DeleteUsers](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteUsers.html) - Deletes a user from a collection with the provided user ID.
 + [DisassociateFaces](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DisassociateFaces.html) - Removes one or more face IDs from a user.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

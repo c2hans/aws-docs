@@ -33,7 +33,3 @@ Amazon Web Services (AWS), provides customers with full control, ownership,and p
 AWS wants customers to stay by choice, because AWS offers the broadest choice of the best cloud services. The AWS outlook is that customers are loyal right up until the moment that somebody else offers them a better service. This drives the AWS customer-obsessed approach to innovation, and ensures AWS earns customer trust on a continuous basis.
 
 The commentary in this whitepaper is based on many years of experience in delivering a secure cloud infrastructure to millions of customers worldwide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

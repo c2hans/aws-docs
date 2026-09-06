@@ -61,7 +61,3 @@ The following limitations apply to using SSAS on RDS for SQL Server:
 + Processing during deployment isn't supported.
 + Using .xmla files for deployment isn't supported.
 + SSAS project input files and database backup output files can only be in the `D:\S3` folder on the DB instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

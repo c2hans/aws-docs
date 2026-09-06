@@ -42,7 +42,3 @@ Privacy metrics:
 Downstream custom model:
 + Synthetic data generated in Clean Rooms ML is best suited for training binary classification models and multi-class classification models with up to five classes.
 + Training regression models using synthetic data generated in Clean Rooms ML may result in low model accuracy, as measured by Root Mean Square Error (RMSE).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

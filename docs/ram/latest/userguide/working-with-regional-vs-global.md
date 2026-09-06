@@ -51,7 +51,3 @@ Even though the global resource is viewable in an AWS RAM resource share in only
 + To view a Regional resource in the AWS RAM console to include it in a resource share, you must use the Region that contains the Regional resource.
 + To view a global resource in the AWS RAM console to include it in a resource share, you must use the designated home Region, US East (N. Virginia), `us-east-1`.
 + You can create a resource share with ***both*** Regional and global resources in only the designated home Region, US East (N. Virginia), `us-east-1`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

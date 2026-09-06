@@ -70,7 +70,3 @@ For a message to be considered valid, only one of the following conditions can b
 The `propertyAlias` is set, or
 Both `assetId` and `propertyId` are set
 The `PutAssetPropertyValueEntry` has an `entryId` field that is not required in this context.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

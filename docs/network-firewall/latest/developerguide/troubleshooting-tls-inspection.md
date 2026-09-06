@@ -219,7 +219,3 @@ In the following example TLS log entry, the error is in the client hello.
 For information about enabling TLS logging, see [Logging network traffic from AWS Network Firewall](firewall-logging.md).
 
 For more information about the logs for this type of error, see [Logging for TLS inspection in AWS Network Firewall](tls-inspection-logging.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -201,7 +201,3 @@ AWS Network Firewall is a fully managed service that scales automatically to mee
 
 **Note**
 If you are planning a traffic event that may cause a rapid increase in traffic, such as a product launch, marketing campaign, or workload migration, contact [AWS Support](https://aws.amazon.com/premiumsupport) ahead of time to discuss your scaling needs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

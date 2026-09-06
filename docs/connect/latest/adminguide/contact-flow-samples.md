@@ -43,7 +43,3 @@ The topics in this section describe how each of the sample flows work.
 + [Sample Screenpop flow in Connect Customer](sample-note-for-screenpop.md)
 + [Sample secure customer data entry input in a call with a contact center agent](sample-secure-input-with-agent.md)
 + [Sample secure customer data entry input in a call with no contact center agent](sample-secure-input-with-noagent.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

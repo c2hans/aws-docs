@@ -20,7 +20,3 @@ If this is your first time using AMB Access Polygon, we recommend that you begin
 + [Key concepts: Amazon Managed Blockchain (AMB) Access Polygon](key-concepts.md)
 + [Getting started with Amazon Managed Blockchain (AMB) Access Polygon](getting-started.md)
 + [Managed Blockchain API and the JSON-RPCs supported with AMB Access Polygon](polygon-api.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,7 +43,3 @@ While this guide focuses on AWS-native IaC tools, Terraform is another popular I
 <a name="iac-learn-more"></a>
 + To learn more about DevOps practices on AWS, see [Introduction to DevOps on AWS](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html)
 + For information about using Lambda with different IaC tools, see [Using Lambda with infrastructure as code (IaC)](https://docs.aws.amazon.com/lambda/latest/dg/foundation-iac.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

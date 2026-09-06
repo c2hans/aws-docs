@@ -90,7 +90,3 @@ You can publish to the local publish/subscribe topics that you configure for the
 1. [Configure and deploy the MQTT bridge component](#deploy-mqtt-bridge-pubsub) to relay messages from a local publish/subscribe topic to an MQTT topic where client devices subscribe.
 
 1. Use the local publish/subscribe IPC interface to publish to the topic where the MQTT bridge relays messages. For more information, see [Publish/subscribe local messages](ipc-publish-subscribe.md) and [PublishToTopic](ipc-publish-subscribe.md#ipc-operation-publishtotopic).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

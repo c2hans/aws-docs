@@ -196,7 +196,3 @@ To disassociate a custom domain from your service using the App Runner API or AW
 + [Disassociate (unlink) a custom domain](#manage-custom-domains.disassociate-custom-domain)
 + [Manage custom domains](#manage-custom-domains.manage)
 + [Configure Amazon Route 53 alias record for your target DNS](manage-custom-domains-route53.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

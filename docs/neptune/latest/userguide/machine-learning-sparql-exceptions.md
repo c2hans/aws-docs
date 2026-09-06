@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 + **`BadRequestException`**   –   *Message*: `The SERVICE http://aws.amazon.com/neptune/vocab/v01/services/ml#inference does not allow the predicate {{(predicate name)}}`.
 + **`BadRequestException`**   –   *Message*: `The SERVICE http://aws.amazon.com/neptune/vocab/v01/services/ml#inference predicates cannot be variables, found: {{(type)}}`.
 + **`BadRequestException`**   –   *Message*: `The SERVICE http://aws.amazon.com/neptune/vocab/v01/services/ml#inference predicates are expected to be part of the namespace {{(namespace name)}}, found: {{(namespace name)}}`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

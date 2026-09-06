@@ -62,7 +62,3 @@ The following examples show some of the graphs that are displayed in the new Ama
 ![An image of the graph in the Amazon Redshift console that shows the query throughput per WLM queue.](http://docs.aws.amazon.com/redshift/latest/mgmt/images/cluster-performance-query-throughput-per-wlm-queue.png)
 + **Concurrency scaling activity** – Shows the number of active concurrency scaling clusters. When concurrency scaling is enabled, Amazon Redshift automatically adds additional cluster capacity when you need it to process an increase in concurrent read queries.
 ![An image of the graph in the Amazon Redshift console that shows the number of active concurrency scaling clusters.](http://docs.aws.amazon.com/redshift/latest/mgmt/images/cluster-performance-concurrency-scaling-activity.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ In CloudFront, if your origin expects an `Authorization` header to authenticate 
 If you forward the `Authorization` header to your origin without including it in the cache key, ensure that your origin does not rely on the `Authorization` header for access control of cached content. When the `Authorization` header is not part of the cache key, CloudFront can serve the same cached response to both authorized and unauthorized viewers. Either include the `Authorization` header in the cache key using a cache policy, or disable caching entirely for origins that require origin-side authorization processing.
 
 For more information, see [How can I configure CloudFront to forward the Authorization header to the origin?](https://repost.aws/knowledge-center/cloudfront-authorization-header)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

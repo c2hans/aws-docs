@@ -18,7 +18,3 @@ Sign up for AWS (advanced) supports many features for billing and cost managemen
 
 **Note**
 If you have active sessions for a project and for an IAM user, you might get redirected to the AWS Billing and Cost Management console. To use the AWS Billing and Cost Management console, sign out of any AWS account that you access as an IAM user.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

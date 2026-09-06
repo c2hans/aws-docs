@@ -17,7 +17,9 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
   + Rocky Linux 10.2
   + AlmaLinux 10.2
 + The user-provided ID for a source server is now case insensitive. For more information, see [Edit server](add-server-server-page.md#server-edit-main).
-+ Resolved an issue that caused the MS-SQL license conversion post-launch action to fail for SQL Server named instances.
++ Resolved an issue that caused the MS-SQL license conversion post-launch action to fail for SQL Server named instances. For more information, see [Convert MS-SQL license](predefined-post-launch-actions.md#predefined-windows-ms-sql-conversion).
++ The inventory import and export feature now supports additional parameters, including replication settings, launch settings, and post-launch actions settings. This expands the range of server settings you can update in bulk across your inventory. For the full list of supported parameters, see [Inventory Import parameters](import-parameters.md).
++ MGN connector setup has been simplified. The MGN console can now automatically create the required IAM roles for the connector, in an individual account or across all member accounts of your AWS Organization. The **MGNConnectorInstallerRole** is no longer required; its permissions are now included in the **AWSApplicationMigrationConnectorManagementRole**. For more information, see [Set up the MGN Connector](mgn-connector-setup-instructions.md).
 
 ## July 2026
 <a name="release-notes-jul-2026"></a>
@@ -71,7 +73,7 @@ Added support for the following operating systems:
 
 ## September 2025
 <a name="release-notes-sept-2025"></a>
-+ Specify your operating system licensing approach (BYOL / LI) and tenancy when importing inventory. Learn more in [Import parameters](import-main.md#import-parameters).
++ Specify your operating system licensing approach (BYOL / LI) and tenancy when importing inventory. Learn more in [Inventory Import parameters](import-parameters.md).
 + Added support for Windows Server 2025 operating system.
 
 ## August 2025
@@ -288,7 +290,3 @@ Added support for the following operating systems:
 ## April 2021
 <a name="release-notes-april-2021"></a>
 + Service initial launch in: US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), Europe (Frankfurt), Europe (Stockholm), Asia Pacific (Sydney), Asia Pacific (Singapore).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

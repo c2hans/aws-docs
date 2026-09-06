@@ -797,7 +797,3 @@ The following table lists the ARNs to use for this version of the extension in e
 | Europe (Paris) | `arn:aws:lambda:eu-west-3:580247275435:layer:LambdaInsightsExtension:2` |
 | Europe (Stockholm) | `arn:aws:lambda:eu-north-1:580247275435:layer:LambdaInsightsExtension:2` |
 | South America (São Paulo) | `arn:aws:lambda:sa-east-1:580247275435:layer:LambdaInsightsExtension:2` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

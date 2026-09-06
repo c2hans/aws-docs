@@ -25,7 +25,3 @@ AWS IoT devices gather data, perform some manipulation on that data, and then se
 <a name="data-protection-encrypt"></a>
 
 By default, all AWS IoT data in transit and at rest is encrypted. [Data in transit is encrypted using TLS](transport-security.md), and data at rest is encrypted using AWS owned keys. AWS IoT supports customer managed AWS KMS keys (KMS keys) from AWS Key Management Service (AWS KMS). However, Device Advisor and AWS IoT Wireless use only an AWS owned key to encrypt customer data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

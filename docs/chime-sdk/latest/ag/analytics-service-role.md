@@ -45,7 +45,3 @@ Deletions can fail if you try to delete resources while the role uses them. If a
 
 **To delete the service-linked role**
 + Use the IAM console, AWS CLI, or the AWS API to delete the AmazonChimeSDKEvents service-linked role. For more information, see [Using service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html) and [ Deleting a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/example_iam_DeleteServiceLinkedRole_section.html) in the *IAM user Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

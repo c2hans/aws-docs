@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-builds-de
 
 Builds and deployments are related but are not the same thing.
 
-In Agentic CX Designer, a *build* packages the current version of your application into a deployable snapshot. A *deployment* makes a selected build available for use through a flow in Amazon Connect Customer.
+In agentic CX designer, a *build* packages the current version of your application into a deployable snapshot. A *deployment* makes a selected build available for use through a flow in Amazon Connect Customer.
 
 ## Builds
 <a name="acxd-builds-deployments-builds"></a>
@@ -46,7 +46,7 @@ From your application's **Builds** tab, you can create a new build, review build
 
 1. Select **Create build** to start the build process.
 
-When you start a build, Agentic CX Designer walks you through the build process:
+When you start a build, agentic CX designer walks you through the build process:
 
 1. Review warnings such as disconnected flow paths, incomplete configurations, etc. Critical errors appear in red and should be resolved before creating the build, as they are more likely to cause a failed build. Warnings appear in yellow and should also be reviewed, so you understand the possible impact on the user experience.
 
@@ -75,7 +75,7 @@ After a build is created, you may use the test chat from a flow's Canvas or use 
 ## Deployments
 <a name="acxd-builds-deployments-deploy"></a>
 
-Once you are satisfied with testing in your Agentic CX Designer workspace, you can deploy your application for use in a flow in Amazon Connect Customer.
+Once you are satisfied with testing in your agentic CX designer workspace, you can deploy your application for use in a flow in Amazon Connect Customer.
 
 From the application's **Builds** tab, use the builds table to manage which build becomes active. Only one build can be active in an environment at a time.
 
@@ -98,11 +98,17 @@ Select a build from the builds table to review additional details, such as the b
 ## Connecting to Amazon Connect Customer
 <a name="acxd-builds-deployments-connect"></a>
 
-After your Agentic CX Designer application has been deployed for the first time, configure Amazon Connect Customer to route conversations through it.
+After your agentic CX designer application has been deployed for the first time, configure Amazon Connect Customer to route conversations through it.
 
-In Connect Customer, create or choose the contact flow that will route incoming calls or chats to your Agentic CX Designer application.
+### Create or choose a contact flow
+<a name="acxd-builds-deployments-connect-flow"></a>
+
+In Connect Customer, create or choose the contact flow that will route incoming calls or chats to your agentic CX designer application.
 
 This contact flow should include the routing logic needed to connect the customer entry point to your deployed application.
+
+### Choose a voice persona
+<a name="acxd-builds-deployments-connect-voice"></a>
 
 For voice-enabled conversations, use a **Set voice** block in the Connect Customer flow.
 
@@ -120,26 +126,56 @@ For voice-enabled conversations, use a **Set voice** block in the Connect Custom
 
 1. Confirm the selection.
 
+### Add the Agentic CX block
+<a name="acxd-builds-deployments-connect-block"></a>
+
 After your routing and voice setup is in place, add an **Agentic CX** block to the contact flow.
 
 Configure the block by selecting:
 
 1. The workspace where your application lives.
 
-1. The name of the Agentic CX Designer application.
+1. The name of the agentic CX designer application.
 
 1. The deployed environment alias, such as `Development` or `Production`.
 
 1. Any required block pathways, including escalation, error, or timeout handling.
 
-The block tells Connect Customer which Agentic CX Designer application and environment to invoke during the conversation.
+The block tells Connect Customer which agentic CX designer application and environment to invoke during the conversation.
+
+Depending on whether the contact is voice or chat, you may also configure additional settings on the **Agentic CX** block.
+
+#### Speech recognition
+<a name="acxd-builds-deployments-connect-speech"></a>
+
+For voice interactions, configure **Speech recognition**. This setting determines which engine transcribes the customer's voice input before it is processed by the agentic CX designer application.
+
+You can set speech recognition in two ways:
+
+| Setting | Use when |
+| --- | --- |
+| Set manually | The flow should always use the same speech recognition engine. |
+| Set dynamically | The flow should choose the speech recognition engine based on contact flow logic, contact attributes, language, region, or another available value. |
+
+#### Audio filler
+<a name="acxd-builds-deployments-connect-audio"></a>
+
+For voice interactions, you can enable **Audio filler**. This can make voice conversations feel more natural when the application needs a moment to generate an output, retrieve or send data, or complete a tool call.
+
+#### Idle chat timeout
+<a name="acxd-builds-deployments-connect-idle"></a>
+
+For chat interactions, you can enable **Idle chat timeout**. This setting controls how long a chat contact can remain inactive before it is considered idle.
+
+Use idle timeout when you want to handle abandoned or inactive chats consistently. For example, after a period of inactivity, the Connect Customer flow exits the **Agentic CX** block from the **Idle timeout** edge, where the conversation can provide a final message before ending the session.
+
+When using timeout behavior, make sure all timeout paths from the **Agentic CX** block are connected to the appropriate next step in the Connect Customer flow.
+
+### Publish the contact flow
+<a name="acxd-builds-deployments-connect-publish"></a>
 
 Publish the Connect Customer flow to make it active and available for use with the appropriate phone numbers or chat endpoints.
 
-Once the contact flow has been published, you do not need to republish it every time you update the Agentic CX Designer application. The Agentic CX block continues to point to the selected application and environment. Any newly deployed build for that environment becomes the version used in live conversations.
+Once the contact flow has been published, you do not need to republish it every time you update the agentic CX designer application. The **Agentic CX** block continues to point to the selected application and environment. Any newly deployed build for that environment becomes the version used in live conversations.
 
-If you change the contact flow itself, or any configuration on the Agentic CX block, publish the contact flow again.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+If you change the contact flow itself, or any configuration on the **Agentic CX** block, publish the contact flow again.

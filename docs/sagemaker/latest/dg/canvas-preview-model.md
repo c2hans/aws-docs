@@ -23,7 +23,3 @@ The following screenshot shows a model preview in the Canvas application.
 Amazon SageMaker Canvas automatically handles missing values in your dataset while it builds the model. It infers the missing values by using adjacent values that are present in the dataset.
 
 If you're satisfied with your model preview and want to proceed with building a model, then see [Build a model](canvas-build-model-how-to.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

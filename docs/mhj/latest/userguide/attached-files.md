@@ -56,7 +56,3 @@ This procedure explains how to view all the files that are attached to tasks and
 1. Scroll down and choose the **Attached files** tab.
 
 1. Choose **Choose file**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

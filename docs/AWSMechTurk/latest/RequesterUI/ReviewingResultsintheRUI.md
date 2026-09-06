@@ -23,7 +23,3 @@ It's convenient to review small batches of results so that you can approve or re
 You can easily approve or reject all of a Worker's work. Over time, you might find a Worker who consistently submits excellent work and therefore has a very high approval rating. In that case, you can approve all of the Worker's work without reviewing all of it.
 
 Mechanical Turk processes payments several times a day so there is almost always a small delay between approval and payment. When there is a delay, Workers see HITs as **Approved-pending payment** in their dashboard. The dashboard displays **Paid** for processed payments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

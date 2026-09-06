@@ -142,7 +142,3 @@ The configuration items (CIs) for `ResourceNotRecorded` and `ResourceDeletedNotR
 **CI delivery and service-linked recorder scope**
 
 For service-linked configuration recorders, the recording scope determines if you receive configuration items (CIs) in the delivery channel. The recording scope is set by the service that is linked to the configuration recorder. If the recording scope is internal, you will not receive CIs in the delivery channel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

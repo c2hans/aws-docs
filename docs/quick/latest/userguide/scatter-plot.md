@@ -72,7 +72,3 @@ Using the **none** option, you can choose to set both X and Y values to either a
 ![aggregated-label](http://docs.aws.amazon.com/quick/latest/userguide/images/aggregated-label.png)
 + Aggregated X and Y values with Color and Label
 ![aggregated-color-label](http://docs.aws.amazon.com/quick/latest/userguide/images/aggregated-color-label.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

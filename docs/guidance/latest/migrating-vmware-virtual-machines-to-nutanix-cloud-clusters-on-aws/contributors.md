@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/guidance/latest/migrating-vmware-virtual
 Arpit Shah is a Sr. Partner Solutions Architect at AWS and based in London. Arpit helps Global System Integrators to accelerate cloud adoption and build secure, resilient, scalable, and high-performance cloud applications. Arpit enjoys cycling, following cricket, and spending time with his family. To connect, visit Arpit’s [LinkedIn](https://www.linkedin.com/in/arpitshah-cloud/) profile.
 
 Miles Scott is an accomplished storage and data protection architect, with over ten years of experience in information technology. As a native ‘Florida Man,’ Miles is no stranger to disasters, having personally lived through two Category 4 hurricanes and having led numerous major recovery efforts throughout his career. In his role as a Senior Partner Solutions Architect with AWS, Miles enjoys working with technology partners to build joint solutions that improve resiliency for our customers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Migrating VMWare Virtual Machines to Nutanix Cloud Clusters on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

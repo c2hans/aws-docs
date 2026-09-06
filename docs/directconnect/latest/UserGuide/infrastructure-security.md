@@ -15,7 +15,3 @@ You can call these API operations from any network location, but Direct Connect 
 <a name="security-bgp"></a>
 
 The internet relies in large part on BGP for routing information between network systems. BGP routing can some times be susceptible to malicious attacks, or BGP hijacking. To understand how AWS works to more securely safeguard your network from BGP hijacking, see [How AWS is helping to secure internet routing](https://aws.amazon.com/blogs/networking-and-content-delivery/how-aws-is-helping-to-secure-internet-routing).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

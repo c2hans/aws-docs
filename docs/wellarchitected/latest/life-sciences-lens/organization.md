@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 + [LSOPS04-BP01 Establish IT quality oversight](lsops04-bp01.md)
 + [LSOPS04-BP02 Enforce controls in IT tooling and automation](lsops04-bp02.md)
 + [LSOPS04-BP03 Incorporate formal risk management into your IT processes](lsops04-bp03.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

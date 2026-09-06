@@ -79,7 +79,3 @@ When you use `ExternalQuestion`, you can make the served HTML as complex or simp
 <a name="mturk-hits-defining-questions-definitions-questionform"></a>
 
 `[QuestionForm](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html)` is a legacy XML format that can be used to define Mechanical Turk tasks using an XML schema. While it is still supported, we recommend building your task using `HTMLQuestion` or `ExternalQuestion`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

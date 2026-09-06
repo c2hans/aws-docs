@@ -396,7 +396,3 @@ The type of `EntityTypes` is an array of strings.
 Configure the statistics that are allowed to be run on columns that contain detected entities. If `AllowedStatistics` is undefined, no statistics will be computed on columns that contain detected entities. See [Configurable statistics at the column level](#statistics.table02) for a list of valid values for the `AllowedStatistics` parameter.
 
 The type of `AllowedStatistics` is an array of `AllowedStatistics` objects.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

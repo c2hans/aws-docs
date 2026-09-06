@@ -18,7 +18,3 @@ The following are issues you might encounter when you set up or modify an AD.
 | Error 1722 / 0x6BA | The RPC server is unavailable. | There was an issue reaching the RPC service of your AD domain. This might be a service or network issue. | Validate that the RPC service is running on your domain controllers and that the TCP ports `135` and `49152-65535` are reachable on your domain from your RDS Custom for SQL Server DB instance. |
 | Error 2224 / 0x8B0 | The user account already exists. | The computer account that's attempting to be added to your AD already exists. | Identify the computer account by running `SELECT @@SERVERNAME` on your RDS Custom for SQL Server DB instance and then carefully remove it from your AD. |
 | Error 2242 / 0x8c2 | The password of this user has expired. | The password for the domain service account specified via AWS Secrets Manager has expired. | Update the password for the domain service account used to join your RDS Custom for SQL Server DB instance to your AD. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

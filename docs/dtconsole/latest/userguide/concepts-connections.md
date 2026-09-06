@@ -22,7 +22,3 @@ A service or company that provides the third-party source repository you want to
 host
 A resource that represents the infrastructure where a third-party provider is installed. Connections use the host to represent the server where your third-party provider is installed, such as GitHub Enterprise Server. You create one host for all connections to that provider type.
 When you use the console to create a connection to GitHub Enterprise Server, the console creates a host resource for you as part of the process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

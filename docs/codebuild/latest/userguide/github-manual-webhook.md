@@ -32,7 +32,3 @@ Use the following procedure to create a GitHub manual webhook.
    + Configure the individual events that will send a webhook payload to CodeBuild. For **Which events would you like to trigger this webhook?**, choose **Let me select individual events**, and then choose from the following events: **Pushes**, **Pull requests**, and **Releases**. If you want to start builds for `WORKFLOW_JOB_QUEUED` events, choose **Workflow jobs**. To learn more about GitHub Actions runners, see [Tutorial: Configure a CodeBuild-hosted GitHub Actions runner](action-runner.md). To learn more about event types supported by CodeBuild, see [GitHub webhook events](github-webhook.md).
 
 1. Choose **Add webhook**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

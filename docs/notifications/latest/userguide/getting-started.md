@@ -180,7 +180,3 @@ If you're not seeing any notifications, see [Troubleshooting AWS User Notificati
 After you create a notification configuration, you can explore some of the following topics:
 + [Filtering event rules using customized JSON event patterns in AWS User Notifications](common-usecases.md)
 + [Delivery channels in AWS User Notifications](managing-delivery-channels.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS User Notifications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query notifications` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

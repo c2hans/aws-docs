@@ -180,7 +180,3 @@ Ensure that your source server meets the agent installation hardware requirement
 + Install all available Windows updates on the server.
 + A graceful reboot from the OS menu or Windows CLI of a Windows source server does not trigger a rescan in MGN once the source server is restarted. Hard reboots, disk changes, and crashes trigger a rescan.
 +  Mount points must be assigned a drive letter to be recognized by AWS Transform MGN. A folder path is not recognized.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -228,7 +228,3 @@ Scenario: A patient app should only show finalized lab results from 2023 onward.
    ```
 
 1. HealthLake enforces scope filters. The response contains only `Observation` resources where `category=laboratory` AND `status=final` AND `date ≥ 2023-01-01` – even though the client requested all Observations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

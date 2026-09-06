@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/managin
 <a name="managing-stacks-fleets-session-context"></a>
 
 You can pass parameters to your streaming application by using either of the following methods:
-+ Specify session content in the CreateStreamingURL WorkSpaces Applications API operation. For more information, see [CreateStreamingURL](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_CreateStreamingURL.html).
++ Specify session context in the CreateStreamingURL WorkSpaces Applications API operation. For more information, see [CreateStreamingURL](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_CreateStreamingURL.html).
 + Add the sts:TagSession permission to your IAM role's trust policy and specify the session context as a SAML assertion in your SAML 2.0 identity provider's authentication response. For more information, see [Step 5: Create Assertions for the SAML Authentication Response](external-identity-providers-setting-up-saml.md#external-identity-providers-create-assertions) and [Step 5: Create Assertions for the SAML Authentication Response](external-identity-providers-setting-up-saml.md#external-identity-providers-create-assertions).
 
 If your image uses a version of the WorkSpaces Applications agent that was released on or after October 30, 2018, the session context is stored within the image as a Windows or Linux environment variable. For information about specific environment variables, see "User and Instance Metadata for WorkSpaces Applications Fleets" in [Customize an Amazon WorkSpaces Applications Fleet to Optimize Your Users' Application Streaming Experience](customize-fleets.md).
@@ -100,7 +100,3 @@ Similarly, you can perform the following steps to pass parameters to your Linux 
    ```
 
 1. Open the streaming URL in a browser. The batch file launches Chromium and loads `http://www.amazon.com`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ If the `DeliveryDestination` associated with the `DeliverySource` that you just 
   + [Amazon S3](AWS-logs-infrastructure-V2-S3.md#AWS-logs-SSE-KMS-S3-V2)
 + [Logs sent to Firehose](AWS-logs-infrastructure-V2-Firehose.md)
 + [Traces sent to X-Ray](AWS-logs-infrastructure-V2-XRayTraces.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

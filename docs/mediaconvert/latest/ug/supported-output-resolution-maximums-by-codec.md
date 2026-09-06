@@ -19,7 +19,3 @@ The following table shows the maximum output resolution AWS Elemental MediaConve
 | VC-3 | 1920x1080 or 1080x1920 |
 | VP8, VP9 | 4096x2160 or 2160x4096 |
 | XAVC | 4096x2160 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ The duration of a VPN session is configured during the creation of a Client VPN 
 + [Configure the maximum VPN session during creation of an endpoint](#configure-max-duration-endpoint-creation)
 + [View current maximum VPN session duration](display-max-duration.md)
 + [Modify the maximum VPN session duration](modify-max-timeout.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

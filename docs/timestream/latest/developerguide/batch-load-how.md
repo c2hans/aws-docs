@@ -12,7 +12,3 @@ With *batch load* for Amazon Timestream for LiveAnalytics, you can ingest CSV fi
 You can create batch load tasks by using the AWS Management Console, the AWS CLI, and the AWS SDKs. For more information, see [Using batch load with the console](batch-load-using-console.md), [Using batch load with the AWS CLI](batch-load-using-cli.md), and [Using batch load with the AWS SDKs](batch-load-using-sdk.md).
 
 For more information about batch load, see [Using batch load in Timestream for LiveAnalytics](batch-load.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

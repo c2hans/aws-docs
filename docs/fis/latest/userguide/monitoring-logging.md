@@ -331,7 +331,3 @@ If you no longer want to receive logs for your experiments, you can disable expe
 
 **To disable experiment logging using the AWS CLI**
 Use the [update-experiment-template](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/fis/update-experiment-template.html) command and specify an empty log configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -360,7 +360,3 @@ Running the code should print out the logs and you should be able to see that th
 ![Screenshot of an IDE displaying the results of running the previously mentioned code, with information from a Cloudwatch log displayed.](http://docs.aws.amazon.com/rekognition/latest/dg/images/marketing-tuts-cloudwatch-poll.png)
 
 You have successfully created an application capable of detecting labels in images uploaded to an Amazon S3 bucket and then emailing the user who uploaded the image with a promotional message. Be sure to delete any resources you no longer need so you aren't charged for them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ All Lambda event source types share the same [CreateEventSourceMapping](https://
 | MaximumBatchingWindowInSeconds | N | 500 ms | [Batching behavior](invocation-eventsourcemapping.md#invocation-eventsourcemapping-batching) |
 | Queues | N | N/A | The name of the Amazon MQ broker destination queue to consume. |
 | SourceAccessConfigurations | N | N/A  | For ActiveMQ, BASIC\_AUTH credentials. For RabbitMQ, can contain both BASIC\_AUTH credentials and VIRTUAL\_HOST information. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

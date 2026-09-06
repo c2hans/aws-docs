@@ -346,7 +346,3 @@ Check the following:
 + Oracle managed backups to Amazon S3 are enabled by default and cannot be disabled. If backups are failing, check the Oracle database logs for specific error messages.
 + Verify that the Amazon VPC Lattice resources are properly configured by viewing the service integration resources.
 + Contact Oracle Support for assistance with Oracle managed automatic backup issues. For more information, see [Getting support for Oracle Database@AWS](odb-troubleshooting-overview.md#oracle-database-aws-support).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

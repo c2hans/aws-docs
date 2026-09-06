@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/der
 
  Deadline Cloud creates rules for the `FSCommon` and `FS1` file system locations, but not the `FS2` file system location even though both the `WSAll` and `WorkerConfig` storage profiles define `FS2`. The reason is that queue `Q1`'s list of required file system locations is `["FSCommon", "FS1"]`.
 
- You can confirm the path mapping rules available to jobs submitted with a particular storage profile by submitting a job that prints out [Open Job Description's path mapping rules file](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run#path-mapping), and then reading the session log after the job has completed:
+ You can confirm the path mapping rules available to jobs submitted with a particular storage profile by submitting a job that prints out the path mapping rules file, and then reading the session log after the job has completed. For more information about the file format, see [Path mapping](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run#path-mapping) on the GitHub website.
 
 ```
 # Change the value of FARM_ID to your farm's identifier
@@ -46,7 +46,7 @@ aws deadline create-job --farm-id $FARM_ID --queue-id $QUEUE1_ID \
   }'
 ```
 
- If you use the [Deadline Cloud CLI](https://pypi.org/project/deadline/) to submit jobs, its configuration `settings.storage_profile_id` setting sets the storage profile that jobs submitted with the CLI will have. To submit jobs with the `WSAll` storage profile, set:
+ If you use the Deadline Cloud CLI to submit jobs, its configuration `settings.storage_profile_id` setting sets the storage profile that jobs submitted with the CLI will have. The CLI is available from [PyPI](https://pypi.org/project/deadline/) on the PyPI website. To submit jobs with the `WSAll` storage profile, set:
 
 ```
 deadline config set settings.storage_profile_id $WSALL_ID
@@ -89,7 +89,3 @@ The log contains mapping for both the `FS1` and `FSCommon` file systems. Reforma
 ```
 
  You can submit jobs with different storage profiles to see how the path mapping rules change.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

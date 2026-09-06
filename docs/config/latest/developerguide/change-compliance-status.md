@@ -51,7 +51,3 @@ If necessary, type `AWS Configure` to configure the AWS CLI to use an AWS Region
 After the deployment is complete, to update the evaluations and compliance of the process checks, use the `PutExternalEvaluation` API. For more information, see [PutExternalEvaluation](https://docs.aws.amazon.com/config/latest/APIReference/API_PutExternalEvaluation.html).
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

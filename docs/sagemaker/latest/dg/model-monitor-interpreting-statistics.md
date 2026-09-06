@@ -95,7 +95,3 @@ Amazon SageMaker Model Monitor prebuilt container computes per column/feature st
 Note the following:
 + The prebuilt containers compute [KLL sketch](https://datasketches.apache.org/docs/KLL/KLLSketch.html), which is a compact quantiles sketch.
 + By default, we materialize the distribution in 10 buckets. This is not currently configurable.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

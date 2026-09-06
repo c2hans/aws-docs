@@ -39,7 +39,3 @@ You can gain visibility into the metrics and traces of AgentCore modular service
 <a name="enable-observability-agentcore-evaluations"></a>
 
 You can gain visibility into AgentCore Evaluations. AgentCore Evaluations provide capabilities to monitor and assess the performance, quality, and reliability of your AI agents. To enable observability for AgentCore Evaluations, see [ AgentCore evaluations](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evaluations.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

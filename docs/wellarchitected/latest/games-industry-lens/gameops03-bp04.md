@@ -59,7 +59,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  **Minimize downtime:** Implement deployment strategies that reduce downtime and keep players in the game.
 +  **Infrastructure as code (IaC):** Use tools like AWS CloudFormation or Terraform to manage game infrastructure and reduce human errors.
 +  **Deployment strategies:** Use one or a combination of rolling substitution, blue/green, and canary deployments to provide smooth updates and reduce player impact.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -69,7 +69,7 @@ In this step, provide information that the plugin needs to deploy your container
 + The scenario to use for your managed containers deployment.
 + The client configuration output path. Select the folder in your client build that contains your AWS configuration. Look for it in the following location: `[client-build]/[project-name]/Content/CloudFormation`.
 + Optional deployment settings. This section has configuration settings that the plugin uses by default. You can modify these or keep the default values
-  + Game name is set to the name of your game project by default. All AWS resources that the plugin creates references the game name value.
+  + Game name is set to the name of your game project by default. All AWS resources that the plugin creates reference the game name value.
   + Port range, memory limit, and vCPU limit are configuration settings for the container fleet. For more information about customizing these values, see [Configure network connections](containers-design-fleet.md#containers-custom-network) for connection port range, and [Set resource limits](containers-design-fleet.md#containers-design-fleet-limits) for resource limits.
   + Container image tag is used to categorize your container images in Amazon ECR. The default value is `unreal-gamelift-plugin`.
   + Name of the Amazon ECR repository. You can edit this field to suggest a custom name only when the plugin is creating an ECR repository for you. The default value is `unreal-game lift-plugin-ecr-repository`.
@@ -149,7 +149,3 @@ As a best practice, clean up the AWS resources for your managed containers solut
 Delete the following resources:
 + Managed container resource stack. The resources in this stack depends on the deployment scenario you selected. To delete the entire stack, use the CloudFormation console. Stacks that are generated from the Amazon GameLift Servers plugin use the following naming convention: `GameLiftPluginForUnreal-{GameName}-Containers`. Wait for the stack deletion process to complete before you initiate a new managed containers deployment in the plugin. For more information, see [ Delete a stack from the CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html).
 + Amazon ECR repository. If you used the plugin to create a repository for your container image, you might want to delete any repositories that are no longer needed. You don't need to delete a repository before resetting a managed containers deployment. If you update or reset a deployment, the plugin will automatically use the same repository unless directed to use another one. For more information, see [ Deleting a private repository in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-delete.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

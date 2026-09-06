@@ -68,7 +68,3 @@ If you encounter any issues when sending a test message, follow these steps:
    If you entered the URL, doublecheck for typos.
 
 1. Confirm your Apple business account is **Online** in the [Apple Business Register](https://register.apple.com/). If the account is in a pending state, then select **Send for review**. This needs to be repeated after making additional Apple ID allow-listing changes or other Apple business account configuration changes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

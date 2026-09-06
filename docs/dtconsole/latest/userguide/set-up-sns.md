@@ -115,7 +115,3 @@ The easiest way to set up notifications is to create an Amazon SNS topic when yo
 ------
 
    For more information, see [Encryption at rest](https://docs.aws.amazon.com/kms/latest/developerguide/sns-server-side-encryption.html#sns-what-permissions-for-sse) and [Using policy conditions with AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/policy-conditions.html) in the *AWS Key Management Service Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

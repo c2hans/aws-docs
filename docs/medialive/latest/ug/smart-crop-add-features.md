@@ -23,7 +23,3 @@ If you want to disable features rather than add them, see [Disabling some Elemen
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/smart-crop-add-features.html)
 
 1. When you are ready to start the channel, use `StartChannel` in MediaLive.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

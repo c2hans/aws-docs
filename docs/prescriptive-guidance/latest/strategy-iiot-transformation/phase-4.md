@@ -12,7 +12,3 @@ You can use the IIoT data to identify challenges and opportunities. Furthermore,
 Finally, AWS Professional Services can help you build your own data flywheel by defining main elements to enable a virtuous cycle for innovation, just like the [Amazon flywheel](https://youtu.be/DEDd4d_16dM?t=693) (YouTube video). The following image is an example of a flywheel.
 
 ![Using the IIoT data from the product, factory and design to cyclically innovate and increase revenue](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-iiot-transformation/images/guide-img/2cc5efa2-2b32-4bb7-bd9d-d0a92a28e1ac/images/3fec017e-fa4d-4b31-9e82-b16bd1437587.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

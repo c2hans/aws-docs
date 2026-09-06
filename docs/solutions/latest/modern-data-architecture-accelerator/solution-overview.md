@@ -40,7 +40,3 @@ This implementation guide describes architectural considerations and configurati
 | Know which AWS Regions support this solution. |  [Supported AWS Regions](plan-your-deployment.md#regional-deployments)  |
 | Access the source code. |  [GitHub repository](https://github.com/aws/modern-data-architecture-accelerator)  |
 | Try a hands-on workshop to get started with MDAA. |  [MDAA Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/6e7289c7-5662-494d-8b56-b8706412c3a6/en-US)  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Modern Data Architecture Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

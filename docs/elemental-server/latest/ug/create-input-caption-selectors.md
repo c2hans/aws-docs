@@ -30,7 +30,3 @@ When you set up captions, you begin by creating input captions selectors. Captio
 + [SCC, SMI, SRT, STL, TTML (Sidecar)](scc.md)
 + [Setting Up Input Captions With 608 XDS Data](setting-up-for-608-xds-data.md)
 + [Extracting VBI Data Included in Embedded Input Captions](embedded-captions-in-vbi-data.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

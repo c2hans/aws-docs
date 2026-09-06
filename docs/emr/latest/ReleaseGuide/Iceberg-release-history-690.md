@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Iceberg-release-
 | Backport | [PR 5860](https://github.com/apache/iceberg/pull/5860): Spark 3.3: Fix QueryFailure when running RewriteManifestProcedure on Date partitioned tables. |
 | Backport | [PR 5880](https://github.com/apache/iceberg/pull/5880): Spark 3.3: Fix nullability in merge-on-read projections. |
 | Backport | [PR 5917](https://github.com/apache/iceberg/pull/5917): Spark 3.2: Fix nullability in merge-on-read projections. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

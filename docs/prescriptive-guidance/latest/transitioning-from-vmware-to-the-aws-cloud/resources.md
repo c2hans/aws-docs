@@ -24,7 +24,3 @@ For additional information, see the following AWS resources.
 + [AWS Migration Acceleration Program](https://aws.amazon.com/migration-acceleration-program/)
 + [AWS Migration Assessment](https://pages.awscloud.com/global-acq-ln-aws-migration-assessment-interest.html)
 + [Operational Excellence Pillar – AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

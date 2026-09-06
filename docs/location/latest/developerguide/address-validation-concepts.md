@@ -538,7 +538,3 @@ The name of the organization registered at the address.
 
 Output\_CountrySpecificAttributes\_GBR\_RoyalMail\_Udprn
 The Unique Delivery Point Reference Number (UDPRN) is a unique, 8-digit code assigned by Royal Mail to addresses within the UK.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

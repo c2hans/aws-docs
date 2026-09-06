@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/logging-and
  The namespace for the service is AWS/Usage/ServiceName. The metric names available are ActiveManagedCases and SelfManagedCases.
 
  In accordance with the [AWS Service Terms](https://aws.amazon.com/service-terms/), The AWS Security Incident Response responder team will have access to your history of CloudTrail, VPC, DNS and S3 log data. This data may be utilized during active security incidents when a case is open in the AWS Security Incident Response service portal.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 <a name="implementation-guidance-97"></a>
 
  By default, AutoStop time (in hours**)** is set to one hour, which means that the WorkSpace stops automatically an hour after the WorkSpace is disconnected.  Keep the AutoStop time at the default value, as this is the lowest value offered.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

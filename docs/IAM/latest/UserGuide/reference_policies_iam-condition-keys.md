@@ -409,7 +409,7 @@ This condition key is supported by the following API operations:
 + `GetDelegationRequest`
 + `AcceptDelegationRequest`
 + `RejectDelegationRequest`
-+ `SendDelegatedToken`
++ `SendDelegationToken`
 + `ListDelegationRequests`
 + `UpdateDelegationRequest`
 In this example, you allow users to manage only delegation requests that they own.
@@ -424,7 +424,7 @@ In this example, you allow users to manage only delegation requests that they ow
                 "iam:GetDelegationRequest",
                 "iam:AcceptDelegationRequest",
                 "iam:RejectDelegationRequest",
-                "iam:SendDelegatedToken",
+                "iam:SendDelegationToken",
                 "iam:UpdateDelegationRequest",
                 "iam:ListDelegationRequests"
             ],
@@ -746,6 +746,9 @@ Works with [string operators](reference_policies_elements_condition_operators.md
 **Example** – `token.actions.githubusercontent.com:enterprise_id`
 This key verifies the ID of the enterprise that contains the repository from where the workflow is running. Use this to make sure access is limited to repositories within your GitHub Enterprise organization.
 
+**Use immutable identifiers, not names**
+On GitHub, repository, organization, and user names can change. A name that is freed by renaming or deletion can be claimed by a different account. Policies that rely solely on mutable name-based claims (such as `repository` or `actor`) could grant access to unintended identities. To help protect against this, use the immutable identifiers that GitHub provides, such as `repository_id`, `repository_owner_id`, or `actor_id`, in your role trust policies or resource control policies.
+
 The following example trust policy uses custom claims in GitHub OIDC token to limit access to a role.
 
 ```
@@ -759,11 +762,11 @@ The following example trust policy uses custom claims in GitHub OIDC token to li
          },
          "Action": "sts:AssumeRoleWithWebIdentity",
          "Condition": {
-            "StringLike": {
+            "StringEquals": {
                 "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
-                "token.actions.githubusercontent.com:job_workflow_ref": "octo-org/octo-automation/.github/workflows/oidc.yml@refs/heads/main",
-                "token.actions.githubusercontent.com:repository": "octo-org/octo-repo",
-                "token.actions.githubusercontent.com:actor": "octocat",
+                "token.actions.githubusercontent.com:repository_owner_id": "123456",
+                "token.actions.githubusercontent.com:repository_id": "1296269",
+                "token.actions.githubusercontent.com:actor_id": "1",
                 "token.actions.githubusercontent.com:ref": "refs/heads/main",
                 "token.actions.githubusercontent.com:enterprise_id": "345"
                }
@@ -1024,6 +1027,9 @@ Works with [string operators](reference_policies_elements_condition_operators.md
 **Example** – `agent.buildkite.com:build_branch`
 This key identifies the git branch that triggered the build. Use this to limit access based on specific branches, such as allowing only `main` or `production` branches.
 
+**Use immutable identifiers, not slugs**
+On Buildkite, a deleted organization or pipeline slug can be immediately re-registered by a different organization or pipeline. Buildkite issues OIDC tokens for these slugs from the same issuer (`agent.buildkite.com`). As a result, policies that rely solely on slug-based claims (such as `organization_slug` or `pipeline_slug`) could grant access to unintended identities. To help protect against this, use stable, immutable identifiers, such as `organization_id` or `pipeline_id`, in your role trust policies or resource control policies.
+
 The following example trust policy uses custom claims in the Buildkite OIDC token to limit access to a role.
 
 ```
@@ -1039,8 +1045,8 @@ The following example trust policy uses custom claims in the Buildkite OIDC toke
         "Condition": {
             "StringEquals": {
                 "agent.buildkite.com:aud": "sts.amazonaws.com",
-                "agent.buildkite.com:organization_slug": "acme-inc",
-                "agent.buildkite.com:pipeline_slug": "super-duper-app",
+                "agent.buildkite.com:organization_id": "0191e7a0-1234-7abc-def0-123456789abc",
+                "agent.buildkite.com:pipeline_id": "0191e7a1-5678-7abc-def0-123456789abc",
                 "agent.buildkite.com:build_branch": "main"
             }
         }
@@ -1463,7 +1469,3 @@ Use this key to compare the transitive session tag keys in the request with thos
 **Availability** – This key is present in the request when you make a request using temporary security credentials. These include credentials created using any assume-role operation, or the `GetFederationToken` operation.
 When you make a request using temporary security credentials, the [request context](reference_policies_elements_condition.md#AccessPolicyLanguage_RequestContext) includes the `aws:PrincipalTag` context key. This key includes a list of [session tags](id_session-tags.md), [transitive session tags](id_session-tags.md#id_session-tags_role-chaining), and role tags. Transitive session tags are tags that persist into all subsequent sessions when you use the session credentials to assume another role. Assuming one role from another is called [role chaining](id_roles.md#iam-term-role-chaining).
 You can use this condition key in a policy to require setting specific session tags as transitive when assuming a role or federating a user.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

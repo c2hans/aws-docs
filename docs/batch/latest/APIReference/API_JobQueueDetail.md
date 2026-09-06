@@ -40,7 +40,7 @@ Required: Yes
  ** jobQueueType **   <a name="Batch-Type-JobQueueDetail-jobQueueType"></a>
 The type of job queue. For service jobs that run on SageMaker Training, this value is `SAGEMAKER_TRAINING`. For regular container jobs, this value is `EKS`, `ECS`, or `ECS_FARGATE` depending on the compute environment.
 Type: String
-Valid Values: `EKS | ECS | ECS_FARGATE | SAGEMAKER_TRAINING`
+Valid Values: `EKS | ECS | ECS_FARGATE | SAGEMAKER_TRAINING | ECS_MANAGED_INSTANCES`
 Required: No
 
  ** jobStateTimeLimitActions **   <a name="Batch-Type-JobQueueDetail-jobStateTimeLimitActions"></a>
@@ -84,7 +84,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/batch-2016-08-10/JobQueueDetail)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/JobQueueDetail)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/batch-2016-08-10/JobQueueDetail)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

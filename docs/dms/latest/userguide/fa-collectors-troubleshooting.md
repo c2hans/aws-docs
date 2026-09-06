@@ -15,7 +15,3 @@ In the following list, you can find actions to take when you encounter specific 
 + [Troubleshooting data collection issues related to Windows Management Instrumentation in AWS DMS](fa-collectors-troubleshooting-wmi.md)
 + [Troublehsooting data collection issues related to Windows webpage composer](fa-collectors-troubleshooting-wpc.md)
 + [Troubleshooting data collection issues related to SSL in AWS DMS](fa-collectors-troubleshooting-ssl.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

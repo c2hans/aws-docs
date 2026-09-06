@@ -663,7 +663,3 @@ After your MIG-enabled nodes are `Ready`, confirm that MIG mode is active on the
    GPU 6: NVIDIA A100-SXM4-40GB (UUID: GPU-6cdeffe7-45f1-7e8e-bcc1-4634399ad877)
    GPU 7: NVIDIA A100-SXM4-40GB (UUID: GPU-5f68814a-4e4a-5dec-79b4-8d70a61c7714)
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

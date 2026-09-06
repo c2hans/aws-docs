@@ -88,7 +88,3 @@ The following describes how to republish your .NET application to an existing AW
 If you have recently published any applications to the AWS Cloud, those applications are displayed in Publish to AWS.
 
 1. Select the publishing target that you want to deploy your application to, then click **Publish** to start the deployment process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

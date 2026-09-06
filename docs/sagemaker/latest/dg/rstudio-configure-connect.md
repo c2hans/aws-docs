@@ -30,7 +30,3 @@ If you have an RStudio Connect URL, you can update the default URL so that your 
  **CLI**
 
  You can set a default RStudio Connect URL when you create your domain. The only way to update your RStudio Connect URL from the AWS CLI is to delete your domain and create a new one with the updated RStudio Connect URL.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

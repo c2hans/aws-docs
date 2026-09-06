@@ -33,7 +33,3 @@ Logz.io supports the following AppFabric output locations:
   + To configure your Firehose delivery stream so that it sends data to Logz.io, follow the instructions in [Choose Logz.io for Your Destination](https://docs.aws.amazon.com/firehose/latest/dev/create-destination.html#create-destination-logz) in the *Amazon Data Firehose Developer Guide*.
 + Amazon Simple Storage Service (Amazon S3)
   + To configure Logz.io to receive data from the Amazon S3 bucket that contains your audit logs, follow the instructions in [Configure an Amazon S3 bucket](https://docs.logz.io/shipping/log-sources/s3-bucket.html) on the Logz.io website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

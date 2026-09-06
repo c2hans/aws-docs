@@ -30,7 +30,3 @@ The following shows an example of the offer target data feed. For readability, t
 | prod-o4grxfafcxxxx | 555568000000 | product\_code\_1 | Product1 |
 | prod-t3grxfafcxxxy | 444457000000 | product\_code\_2 | Product2 |
 | prod-x8faxxfafcxxy | 666678000000 | product\_code\_3 | Product3 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

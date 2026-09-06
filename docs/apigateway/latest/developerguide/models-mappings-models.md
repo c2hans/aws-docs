@@ -202,7 +202,3 @@ With this model, you can call an SDK to retrieve the `description` and `askingPr
   +  [Set up basic request validation using the AWS CLI](api-gateway-request-validation-set-up.md#api-gateway-request-validation-setup-cli)
   +  [Set up basic request validation using an OpenAPI definition](api-gateway-request-validation-set-up.md#api-gateway-request-validation-setup-importing-swagger)
 +  For more information about data transformation and mapping templates, [Mapping template transformations for REST APIs in API Gateway](models-mappings.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

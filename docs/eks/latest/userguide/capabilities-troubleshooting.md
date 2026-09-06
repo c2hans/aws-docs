@@ -153,12 +153,10 @@ EKS Capabilities create and manage Kubernetes Custom Resource Definitions (CRDs)
 kubectl get {{resource-kind}} -A
 
 # Describe a specific resource to see conditions and events
-kubectl describe {{resource-kind}}
-         {{resource-name}} -n {{namespace}}
+kubectl describe {{resource-kind resource-name}} -n {{namespace}}
 
 # View resource status conditions
-kubectl get {{resource-kind}}
-         {{resource-name}} -n {{namespace}} -o jsonpath='{.status.conditions}'
+kubectl get {{resource-kind resource-name}} -n {{namespace}} -o jsonpath='{.status.conditions}'
 
 # View events related to the resource
 kubectl get events --field-selector involvedObject.name={{resource-name}} -n {{namespace}}
@@ -316,7 +314,3 @@ If `describe-capability` shows health issues:
 +  [Troubleshoot issues with Argo CD capabilities](argocd-troubleshooting.md) - Argo CD-specific troubleshooting
 +  [Troubleshoot issues with kro capabilities](kro-troubleshooting.md) - kro-specific troubleshooting
 +  [Security considerations for EKS Capabilities](capabilities-security.md) - Security best practices for capabilities
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

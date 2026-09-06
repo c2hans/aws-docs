@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
  Track these KPIs alongside traditional FinOps metrics and prioritize initiatives that improve the cost-to-value ratio over time. This enables leadership to fund generative AI programs based on demonstrated ROI, not just innovation potential.
 
  Establish a value per token dashboard that links foundation model spend to tangible business outcomes (such as hours saved, throughput increased, or accuracy gains), reinforcing a culture of accountable AI innovation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

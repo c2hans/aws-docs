@@ -27,7 +27,3 @@ This section contains examples of both identity-based (IAM) access control polic
 + [Resource-based policy examples for AWS Glue](security_iam_resource-based-policy-examples.md)
   + [Considerations for using resource-based policies with AWS Glue](security_iam_resource-based-policy-examples.md#security_iam_resource-based-policy-examples-considerations)
   + [Use a resource policy to control access in the same account](security_iam_resource-based-policy-examples.md#glue-policy-resource-policies-example-same-account)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

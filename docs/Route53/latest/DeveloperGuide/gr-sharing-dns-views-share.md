@@ -42,7 +42,3 @@ To share a DNS view, use the AWS RAM `create-resource-share` command. Specify th
 `aws ram create-resource-share --region us-east-1 --name MyDNSViewShare --resource-arns arn:aws:route53globalresolver::111122223333:dns-view/dnsv-abcdef1234567890 --principals 222233334444`
 
 To grant more access, include the `--permission-arns` parameter with the ARN of the `AWSRAMPermissionDNSViewLifecycleManagement` or `AWSRAMPermissionDNSViewFullAccess` managed permission. To find a permission's ARN, use the AWS RAM `list-permissions` command.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

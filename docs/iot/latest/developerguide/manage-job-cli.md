@@ -428,7 +428,3 @@ By default, the status of the job execution must be `QUEUED` or in a terminal st
 
 **Warning**
 When you delete a job execution with a status of `IN_PROGRESS`, the device that's executing the job can't access job information or update the job execution status. Use caution and make sure that the device can recover to a valid state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

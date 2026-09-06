@@ -11,7 +11,3 @@ AWS Batch has detected a blocked queue but is unable to determine the reason. If
 Note: You can't configure a programmable action through the `jobStateTimeLimitActions` parameter to resolve this error.
 
 For more information about troubleshooting, see [Why is my AWS Batch job stuck in RUNNABLE on AWS](https://repost.aws/knowledge-center/batch-job-stuck-runnable-status) in *re:Post*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

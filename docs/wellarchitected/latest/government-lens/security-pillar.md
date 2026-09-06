@@ -11,7 +11,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/s
 
 **Note**
 Governments have different security, risk, and compliance requirements, which might be enforced through rules, regulations, and laws. It’s important for you to understand your obligations as a person involved with a government service. This topic is also covered in the services outcomes pillar.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

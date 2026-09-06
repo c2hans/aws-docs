@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/development-and-test-
  AWS also enables possibilities that are difficult to realize with traditional hardware. You can fully automate resources on AWS so that environments can be provisioned and decommissioned without human intervention. You can start development environments on-demand; kick off builds when needed, unconstrained by the availability of resources; provision test resources; and automatically orchestrate entire test runs or campaigns.
 
  AWS offers you the ability to experiment and iterate with a rapidly changeable infrastructure. Your project teams are free to use inexpensive capacity to perform any kind of tests or to experiment with new ideas, with no upfront expenses or long-term commitments, making AWS a platform of choice for development and test.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

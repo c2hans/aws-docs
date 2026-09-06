@@ -76,7 +76,3 @@ You can choose to view data with a **Monthly**, **Daily**, or **Hourly** granula
 To export the current cost analysis view, choose **Download CSV** at the top right of the **Cost analysis over time** chart. The downloaded CSV contains the cost information for each selected project for the time period specified, as well as cost totals by project and by time period.
 
 ![Downloaded CSV file opened in a spreadsheet application](http://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-cost-analysis-download-csv.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

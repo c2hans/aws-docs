@@ -48,7 +48,3 @@ The API you use depends on your use-case.
 **Models supported by each API and endpoint**
 
 First, browse our [models](models.md) to decide on the model you want to use. Once you decide on the model you want to use, you can see the APIs it supports and choose an endpoint. We recommend the `bedrock-runtime` endpoint, which supports the Invoke, Converse, Responses, Chat Completions, and Messages APIs. The `bedrock-mantle` endpoint is also fully supported and offers the Responses, Chat Completions, and Messages APIs. Because the Responses, Chat Completions, and Messages APIs are available on both endpoints but do not have identical feature support on each, see [Endpoints supported by Amazon Bedrock](endpoints.md) before you choose.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

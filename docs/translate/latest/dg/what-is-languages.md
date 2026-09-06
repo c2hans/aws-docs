@@ -105,7 +105,3 @@ The following sections describe the languages supported by Amazon Translate feat
 + Brevity – For the languages supported by this feature, see [Using brevity in Amazon Translate](customizing-translations-brevity.md).
 + Profanity masking – For the languages supported by this feature, see [Masking profane words and phrases in Amazon Translate](customizing-translations-profanity.md).
 + Formality – For the languages supported by this feature, see [Setting formality in Amazon Translate](customizing-translations-formality.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Translate. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query translate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

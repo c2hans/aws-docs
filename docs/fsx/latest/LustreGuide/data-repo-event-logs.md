@@ -61,7 +61,3 @@ When a data repository task fails, Amazon FSx also writes failure information to
 | S3 object not found | ERROR | Failed to restore file because S3 object with key {{key\_value}} was not found in S3 bucket {{bucket\_name}}. | Amazon FSx was unable to restore the file because the corresponding S3 object doesn't exist in the data repository. |
 | S3 bucket not found | ERROR | Failed to restore file because S3 bucket {{bucket\_name}} does not exist. | Amazon FSx cannot restore the file because the linked S3 bucket no longer exists. |
 | Disk space full | ERROR | Failed to restore file because there was no available storage space on the file system. | The file system ran out of available storage space while attempting to restore the file data from S3. Consider increasing the file system's storage capacity or releasing files to free up space. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,7 +11,7 @@ Cross-account support in Global Accelerator enables you to do the following:
 + Add endpoints, such as Network Load Balancers, from other accounts to an accelerator.
 + Choose a BYOIP address pool for IP addresses, and then select IP addresses from the pool for accelerators in different accounts. By sharing a BYOIP address pool, you can use more addresses from the same CIDR block, reducing the number of CIDR blocks that you require.
 
-You can work with cross-account attachments and resources in the Global Accelerator console, or by using Global Accelerator API operations with the AWS Command Line Interface (AWS CLI) or an AWS SDK. For example, as a principal, you can use the [UpdateEndpoints](https://docs.aws.amazon.com/global-accelerator/latest/api/API_AddEndpoints.html) operation to add a cross-account resource as an endpoint for an accelerator. When you use the API operation, you specify the cross-account attachment ARN and the endpoint ID. For more information, see the [AWS Global Accelerator API Reference Guide](https://docs.aws.amazon.com/global-accelerator/latest/api/Welcome.html).
+You can work with cross-account attachments and resources in the Global Accelerator console, or by using Global Accelerator API operations with the AWS Command Line Interface (AWS CLI) or an AWS SDK. For example, as a principal, you can use the [AddEndpoints](https://docs.aws.amazon.com/global-accelerator/latest/api/API_AddEndpoints.html) operation to add a cross-account resource as an endpoint for an accelerator. When you use the API operation, you specify the cross-account attachment ARN and the endpoint ID. For more information, see the [AWS Global Accelerator API Reference Guide](https://docs.aws.amazon.com/global-accelerator/latest/api/Welcome.html).
 
 **Topics**
 + [How cross-account works](cross-account-resources.how-it-works.md)
@@ -21,7 +21,3 @@ You can work with cross-account attachments and resources in the Global Accelera
 + [Responsibilities and permissions](cross-account-resources-endpoints.responsibilities-cross-account.md)
 + [Billing costs](cross-account-resources-endpoints.billing-cross-account.md)
 + [Quotas](cross-account-resources-endpoints.quotas-cross-account.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

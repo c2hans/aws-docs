@@ -19,7 +19,3 @@ The following sections describe how to effectively search for and view issues wi
 1. Navigate to your project.
 
 1. Use the search bar to search for issues or information related to issues. You can use query parameters to refine your search. For more information, see [Search for code, issues, projects, and users in CodeCatalyst](search.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

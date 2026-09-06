@@ -357,7 +357,3 @@ View details about updates to AWS managed policies for Detective since this serv
 | [AmazonDetectiveInvestigatorAccess](#security-iam-awsmanpol-amazondetectiveinvestigatoraccesspolicy) – New policy | Detective added the `AmazonDetectiveInvestigatorAccess` policy.<br />This policy allows the principal to conduct investigations in Detective. | January 17, 2023  |
 | [AmazonDetectiveServiceLinkedRole](#security-iam-awsmanpol-amazondetectiveservicelinkedrolepolicy) – New policy | Detective added a new policy for its service-linked role.<br />The policy allows the service-linked role to retrieve information about the accounts in an organization. | December 16, 2021 |
 | Detective started to track changes | Detective started to track changes for its AWS managed policies. | May 10, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

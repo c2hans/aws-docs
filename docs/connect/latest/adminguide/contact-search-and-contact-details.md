@@ -91,7 +91,7 @@ You have full access to conversational analytics data across Regions, including:
 ### Contact actions
 <a name="contact-actions-across-regions"></a>
 
-You can perform contact actions such as Transfer, Reschedule, or End contact regardless of the contact's active Region. These actions route to the contact's active Region.
+You can perform contact actions such as Transfer, Reschedule, Update Template, or End contact regardless of the contact's active Region. These actions route to the contact's active Region.
 
 ### Contact evaluations
 <a name="contact-evaluations-across-regions"></a>
@@ -105,7 +105,3 @@ If you use the SearchContacts API programmatically, the response includes additi
 + GlobalResiliencyMetadata object: Contains the `ActiveRegion`, `OriginRegion`, and `TrafficDistributionGroupId` fields for all contacts, showing the specific Region where the contact is active.
 
 For more information about the SearchContacts API, see the [Connect Customer API Reference](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchContacts.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

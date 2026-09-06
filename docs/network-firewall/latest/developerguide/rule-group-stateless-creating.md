@@ -60,7 +60,3 @@ You can't change the name after you create the rule group.
 Your new rule group is added to the list in the **Network Firewall rule groups** page.
 
 To use your rule group in a firewall policy, follow the procedures at [Managing your firewall policy](firewall-policy-managing.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

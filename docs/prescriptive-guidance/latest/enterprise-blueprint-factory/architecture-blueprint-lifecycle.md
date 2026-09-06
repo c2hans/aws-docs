@@ -38,7 +38,3 @@ To delete a blueprint after it has been deployed in Service Catalog, a developer
 If the config pipeline is unable to disassociate all of the product's resources, then the product is not deleted and the pipeline fails. You must resolve the failed resource disassociation and then restart the pipeline. For more information, see [Resolving failed resource disassociations when deleting a product](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/product-delete-exception.html).
 
 ![Config and release pipeline actions when you delete a blueprint.](http://docs.aws.amazon.com/prescriptive-guidance/latest/enterprise-blueprint-factory/images/guide-img/fbe4d444-882e-464d-9768-c5b4c6cfd79b/images/063713f0-5768-47e2-b875-228f643a219b.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

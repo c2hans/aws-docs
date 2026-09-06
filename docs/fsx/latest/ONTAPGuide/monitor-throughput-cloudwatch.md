@@ -60,7 +60,3 @@ You can view the **Monitoring** panel on your volume's dashboard in the Amazon F
   - **How do I...:** ...determine the average latency for the read, write, and metadata operations of my volume?  / **Chart:** Average latency (ms/operation) / **Relevant metrics:** Average read latency: `DataReadOperationTime` \* 1000/`DataReadOperations` <br />Average write latency: `DataWriteOperationTime` \* 1000/`DataWriteOperations` <br />Average metadata latency: `MetadataOperationTime` \* 1000/`MetadataOperations`
   - **How do I...:** ...determine the amount of files or inodes that are available on my volume? / **Chart:** Available files (inodes) / **Relevant metrics:** `FilesCapacity` - `FilesUsed`
   - **How do I...:** ...determine the distribution of used and free storage capacity on my volume?  / **Chart:** Storage distribution / **Relevant metrics:** `StorageCapacity` - `StorageUsed`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

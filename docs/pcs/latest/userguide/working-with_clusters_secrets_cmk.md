@@ -69,7 +69,3 @@ aws secretsmanager update-secret \
 The customer managed key must be a symmetric encryption key in the same AWS account and AWS Region as the secret. You need the permissions listed in [Permissions to change the encryption key](#working-with_clusters_secrets_cmk-change-key-permissions).
 
 After you attach the customer managed key, proceed with rotation so that AWS PCS generates a new cluster secret encrypted with the newly attached customer managed key. For the rotation procedure, see [Rotate a cluster secret in AWS PCS](cluster-secret-rotation-procedure.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

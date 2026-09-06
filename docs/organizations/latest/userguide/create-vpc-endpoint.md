@@ -22,7 +22,3 @@ com.amazonaws.us-east-1.organizations-fips
 ```
 
 If your VPC is in a different Region, you must use AWS Transit Gateway to access the endpoint from that Region. For the AWS China and AWS GovCloud partitions, use the service name that corresponds to the AWS Organizations control plane Region in that partition.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

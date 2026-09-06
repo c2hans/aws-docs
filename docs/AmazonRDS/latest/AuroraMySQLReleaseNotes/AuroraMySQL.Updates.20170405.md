@@ -35,7 +35,3 @@ This is not a mandatory upgrade for existing clusters. You will have the option 
 + Wrong stack size calculation for qsort operation leads to stack overflow. (Bug \#73979)
 + Record not found in an index upon rollback. (Bug \#70214, Bug \#72419)
 + ALTER TABLE add column TIMESTAMP on update CURRENT\_TIMESTAMP inserts ZERO-datas (Bug \#17392)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

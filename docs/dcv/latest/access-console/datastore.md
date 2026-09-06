@@ -57,7 +57,3 @@ Additional costs can happen when running an external database. To see informatio
    ```
 **Note**
 The `/etc/dcv-access-console-handler/access-console-handler-secrets.properties` file contains sensitive data. By default, its write access is restricted to root and its read access is restricted to root and to the user running the Handler component. By default, this is the `dcvaccessconsole` user.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

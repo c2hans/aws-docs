@@ -21,7 +21,3 @@ The replay process re-executes the decider code from the beginning, while simult
 When the framework executes the decider code, it assigns an ID to each scheduled task (an activity, Lambda function, timer, child workflow, or outgoing signal) by incrementing a counter. The framework communicates this ID to Amazon SWF, and adds the ID to history events, such as `ActivityTaskCompleted`.
 
 For the replay process to succeed, it is important for the decider code to be deterministic, and to schedule the same tasks in the same order for every decision in every workflow execution. If you don't adhere to this requirement, the framework might, for example, fail to match the ID in an `ActivityTaskCompleted` event to an existing `Promise` object.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

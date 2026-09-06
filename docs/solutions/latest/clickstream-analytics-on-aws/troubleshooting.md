@@ -163,7 +163,3 @@ You need to tune the EMR job default configuration. For more information, refer 
 <a name="problem-data-loading-workflow-failure"></a>
 
 It's caused by the large volume of data to be loaded or the Redshift load being very high. You could mitigate this error by increasing the compute resources of Redshift (for example, RPUs for Redshift serverless) or reducing the [data processing interval](execution-parameters.md). Then [restart the data-loading workflow](frequently-asked-questions.md#data-pipeline-faq).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Clickstream Analytics on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

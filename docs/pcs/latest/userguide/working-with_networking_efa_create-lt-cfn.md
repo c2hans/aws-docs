@@ -29,7 +29,3 @@ With the template open in the CloudFormation console, enter the following values
   + Check the box for **I acknowledge that AWS CloudFormation might create IAM resources**.
 
  Monitor the status of the CloudFormation stack. When it reaches `CREATE_COMPLETE` the launch template is ready to be used. Use it with an AWS PCS compute node group, as described above in [Create or update compute node groups for EFA](working-with_networking_efa_create-cng.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

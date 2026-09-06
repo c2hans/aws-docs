@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Tez-release-hist
 **Tez release notes**
 
 Bug fix notes – The issue occurred when recovery files were present and the Application Master transitioned through RECOVERING → IDLE → RUNNING → IDLE states, creating a brief window where Hive could submit new DAGs during the IDLE → RUNNING transition. Modified the state transition logic to skip IDLE state when recovery files are present. The AM now follows RECOVERING → RUNNING → IDLE flow, ensuring new DAG submission only occurs after the recovered DAG is fully cleaned up.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

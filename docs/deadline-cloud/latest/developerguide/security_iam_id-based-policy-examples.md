@@ -433,7 +433,3 @@ In this example, you create a scoped-down policy that grants permission to manag
 ```
 
 The scoping is effective only if no other policy grants the association operations on the restricted fleet. Audit the policies attached to your farm administrators, and for a stronger guarantee add an explicit `Deny` statement for the restricted fleet's Amazon Resource Name (ARN) to the principals that must not change its associations. For more information about the security boundaries this protects, see [Isolate workloads with farms, fleets, and queues](farm-structure.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

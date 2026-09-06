@@ -191,7 +191,3 @@ In this scenario, the deployment unfolds as follows:
       The deployment to the second and final Availability Zone is now complete.
 
 To learn about the zonal configuration feature, and how to specify the minimum number of healthy instances per Availability Zone, see [zonal configuration](deployment-configurations-create.md#zonal-config).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

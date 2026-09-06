@@ -111,7 +111,3 @@ Some of the configuration parameters can be [reloaded](sm-integration.md) while 
 | --- | --- | --- | --- | --- |
 | endpoints | No |  | Yes | The IP where the statsd service is located and metrics can be pushed to. If this parameter is not specified, the StatsD metric reporter will be disabled. Syntax as ["IP:Port"]. |
 | port | No | 8125 | Yes | The UDP port of the statsd service. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

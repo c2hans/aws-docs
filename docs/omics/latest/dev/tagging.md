@@ -108,7 +108,3 @@ Additionally, up to five tags can be synchronized between the read set and the o
 If there is data already in the store, updating the keys may take time. During this update, HealthOmics changes the store status to **Updating**. On completion, HealthOmics sets the store status to **Active**. While the tags are propagating, permissions relying on the tags may not be enforced. Permissions will be enforced after the tag propagation is completed.
 
 When tags are set or updated on the read set, the system decides whether to update the objects for that read set, based on the store configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

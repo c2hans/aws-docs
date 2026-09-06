@@ -64,7 +64,3 @@ aws kinesis create-channel \
  The command returns the channel ARN (`ChannelARN`). Use it with `describe-channel` to verify the delivery reaches the ACTIVE state. See [Describe an Amazon S3 delivery](data-delivery-s3-describe.md). To customize the Amazon S3 object key structure, see [S3 output key template for Amazon S3 delivery](data-delivery-s3-key-template.md).
 
  **API reference** – see `CreateChannel` in the *Amazon Kinesis Data Streams API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

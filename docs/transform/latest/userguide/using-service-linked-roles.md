@@ -148,7 +148,3 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the AWSServiceRoleFor
 <a name="slr-regions-custom"></a>
 
 AWS Transform Custom supports using service-linked roles in all Regions where AWS Transform Custom is available. For a list of supported Regions, see [Supported Regions](https://docs.aws.amazon.com/transform/latest/userguide/custom-get-started.html#custom-region-configuration).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

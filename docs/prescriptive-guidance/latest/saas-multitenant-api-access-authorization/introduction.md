@@ -34,7 +34,3 @@ This prescriptive guidance describes repeatable design patterns for authorizatio
 <a name="definitions"></a>
 
 This guide refers to the concepts of tenant isolation and multi-tenant authorization. *Tenant isolation* refers to explicit mechanisms that you use in a SaaS system to ensure that each tenant's resources, even when they operate on shared infrastructure, are isolated. *Multi-tenant authorization* refers to authorizing inbound actions and preventing them from being implemented on the wrong tenant. A hypothetical user could be authenticated and authorized, and still access the resources of another tenant. Authentication and authorization won't block this access—you need to implement tenant isolation to achieve this objective. For a more extensive discussion of the differences between these two concepts, see the *Tenant isolation* section of the [SaaS Architecture Fundamentals](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/tenant-isolation.html) whitepaper.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

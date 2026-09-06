@@ -25,7 +25,3 @@ Before you can embed the Amazon Q Business web experience in your websites, you 
 1. [Get started with Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/getting-started.html)
 
 1. [ Create an IAM Identity Center-integrated application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-application.html), or [Create an IAM federated application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-application-iam.html), or [Create an anonymous access application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-anonymous-application.html) and create your Amazon Q Business web experience.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

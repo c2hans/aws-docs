@@ -62,7 +62,3 @@ This table provides information about some of the changes you can make to a runn
 | Running | Stop the running motion overlay. | Just before you want the motion overlay to stop, enter the command to set the active tag to false. | active |
 | Running | Start the motion overlay. | To start the motion overlay again, enter the command to set the `<active>` tag to `true` and the `<action_time>` tag set to the time you want the motion overlay to begin. | active |
 | Running | Change to a different motion overlay. | Enter the command to change the motion overlay to a different file. | All tags, not just the ones you want to change. If you exclude a tag, the default value will apply. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -107,7 +107,3 @@ For instructions on deleting saved reports, see [How to delete saved reports](sa
    When you create a daily scheduled report, the selected start time is saved as a fixed UTC time and the schedule will always run at that same UTC time. It does not automatically adjust when Daylight Savings Time begins or ends.
    + To avoid this, we recommend configuring your schedule using UTC timezone, which never observes Daylight Saving Time and will produce consistent results year-round.
    + If you prefer to use a Daylight Savings Time-aware timezone, we recommend recreating the schedule with same configuration after each Daylight Saving Time transition to realign it with your intended local time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -115,7 +115,3 @@ Attach the following policy to the appropriate IAM entity (user, group or role) 
 You can run the automation either from AWS Systems Manager console or using the AWS CLI. If using the AWS CLI, you might need to install and configure it or the AWS tools for PowerShell, if you haven't already. For information, see [Install or upgrade AWS command line tools](https://docs.aws.amazon.com/systems-manager/latest/userguide/getting-started-cli.html).
 
 [![AWS Videos](http://img.youtube.com/vi/iEfvPYFBoMg/0.jpg)](http://www.youtube.com/watch?v=iEfvPYFBoMg)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

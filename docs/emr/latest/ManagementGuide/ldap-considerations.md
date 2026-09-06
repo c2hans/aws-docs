@@ -46,7 +46,3 @@ Consider the following limitations when you use the Amazon EMR LDAP integration:
 + Amazon EMR doesn't support high-availability mode (clusters with multiple primary nodes) for clusters with LDAP enabled.
 + You can't rotate bind credentials or certificates for clusters with LDAP enabled. If any of those fields were rotated, we recommend that you start a new cluster with the updated bind credentials or certificates.
 + You must use exact search bases with LDAP. The LDAP user and group search base doesn't support LDAP search filters.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -100,7 +100,3 @@ Threat models use a configuration-and-run model that supports iterative assessme
 <a name="_understanding_resource_relationships"></a>
 
 The hierarchy determines where each resource lives: the AWS Management Console for tenant-level resources and Agent Space settings, the Security Agent web application for assessments and findings, and GitHub for pull request findings and remediation. For the full breakdown of what you do in each interface and the roles involved, see [How AWS Security Agent works](how-it-works.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

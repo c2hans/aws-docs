@@ -104,7 +104,3 @@ When updating to v3.1.0 or newer:
 
 **Important**
 Instance Scheduler writes up to 6 unique tags to managed resources during normal operation. Ensure that your tag governance policies (such as AWS Config rules, tag policies, or automated remediation) are configured to allow these tags. For a full list of tags and important governance considerations, refer to [Informational tags](monitor-the-solution.md#informational-tags).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Instance Scheduler on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

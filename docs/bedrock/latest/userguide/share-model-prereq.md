@@ -101,7 +101,3 @@ Skip this prerequisite if the model you're sharing is not encrypted with a custo
 If you need to encrypt a model with a customer managed key before sharing it with another account, attach permissions to the KMS key that you'll use to encrypt the model by following the steps at [Set up key permissions for encrypting custom models](encryption-custom-job.md#encryption-cm).
 
 If the model you share with another account is encrypted with a customer managed key, attach permissions to the KMS key that encrypted the model to allow the recipient account to decrypt it by following the steps at [Set up key permissions for copying custom models](encryption-custom-job.md#encryption-copy).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

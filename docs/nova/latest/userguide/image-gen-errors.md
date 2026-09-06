@@ -16,7 +16,3 @@ RAI input deflection errors occur when any of the input text values or images ar
 RAI output deflection errors occur when an image is generated but it is misaligned with the AWS Responsible AI policy. When this occurs, an exception is not used. Instead, a successful response is returned, and its structure contains an error field which is a string with one of the following values:
 + If all requested images violate RAI policy - “All of the generated images have been blocked by our content filters.”
 + If some, but not all, requested images violate RIA policy - “Some of the generated images have been blocked by our content filters.”
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

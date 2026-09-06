@@ -34,7 +34,3 @@ For information about automatically deploying from Amazon S3, see [Automatically
 + [Redeploy and roll back a deployment](deployments-rollback-and-redeploy.md)
 + [Deploy an application in a different AWS account](deployments-cross-account.md)
 + [Validate a deployment package on a local machine](deployments-local.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

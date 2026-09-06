@@ -14,7 +14,3 @@ The following are limitations for the Salesforce Commerce Cloud connector:
 <a name="salesforce-commerce-cloud-limitations-filters"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/salesforce-commerce-cloud-connector-limitations.html)
 + In some of the entities, the data type for the fields while retrieving is different from when it is used as searchable fields. As a result, there is no provision of filter feature for these fields. The following table provides the details about such fields.
 <a name="salesforce-commerce-cloud-limitations-filters-provision"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/salesforce-commerce-cloud-connector-limitations.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -70,6 +70,8 @@ The following attributes are supported only by Network Load Balancers:
 The following attributes are supported only by Gateway Load Balancers:
 + `target_failover.on_deregistration` - Indicates how the Gateway Load Balancer handles existing flows when a target is deregistered. The possible values are `rebalance` and `no_rebalance`. The default is `no_rebalance`. The two attributes (`target_failover.on_deregistration` and `target_failover.on_unhealthy`) can't be set independently. The value you set for both attributes must be the same.
 + `target_failover.on_unhealthy` - Indicates how the Gateway Load Balancer handles existing flows when a target is unhealthy. The possible values are `rebalance` and `no_rebalance`. The default is `no_rebalance`. The two attributes (`target_failover.on_deregistration` and `target_failover.on_unhealthy`) can't be set independently. The value you set for both attributes must be the same.
++ `send_tcp_reset.on_unhealthy.enabled` – Specifies whether the Gateway Load Balancer sends a TCP Reset to the sender of traffic when a target becomes unhealthy. After sending the reset, the Gateway Load Balancer removes the flow entry from its flow table. The value is `true` or `false`. The default is `false`. This attribute does not apply when `target_failover.on_unhealthy` is set to `rebalance`. This feature requires 5-tuple flow stickiness, which the target group uses by default when `stickiness.enabled` is set to `false`.
++ `send_tcp_reset.on_deregistration.enabled` – Specifies whether the Gateway Load Balancer sends a TCP Reset to the sender of traffic when a target is deregistered. The reset occurs after the connection drain time has elapsed. The value is `true` or `false`. The default is `false`. This attribute does not apply when `target_failover.on_deregistration` is set to `rebalance`. This feature requires 5-tuple flow stickiness, which the target group uses by default when `stickiness.enabled` is set to `false`.
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9._]+$`
@@ -186,7 +188,3 @@ myTargetGroup:
     }
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

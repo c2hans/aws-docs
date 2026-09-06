@@ -26,7 +26,3 @@ In cases where writes are not idempotent, you also need to compare your writes w
 The following diagram shows the typical architecture of a CDC pipeline using Debezium and Amazon MSK.
 
 ![Using a change data capture pipeline to migrate data from Apache Cassandra to Amazon Keyspaces.](http://docs.aws.amazon.com/keyspaces/latest/devguide/images/migration/hybrid-migration-CDC.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

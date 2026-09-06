@@ -87,7 +87,3 @@ This set of tables lists the parameters found on the AWS Elemental Server job or
 | Advanced Avail Controls > Ad Avail Trigger > Alternate Manifest Conditioner Endpoint | esam/alternate\_mcc\_uri/uri |
 | Advanced Avail Controls > Ad Avail Trigger > Alternate Manifest Conditioner Endpoint | esam/alternate\_mcc\_uri/username |
 | Advanced Avail Controls > Ad Avail Trigger > Response Signal Preroll | esam/response\_signal\_preroll/ |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

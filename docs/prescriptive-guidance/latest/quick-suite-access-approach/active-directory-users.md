@@ -48,7 +48,3 @@ After you confirm the details of your directory, you can sign up for Quick. For 
 1. Go to the Quick console, and then choose **Manage access to Quick**.
 
 1. Select the Active Directory groups that should have Quick access, and assign them Quick admin, author, or reader roles. For instructions, see [Managing user access](https://docs.aws.amazon.com/quicksuite/latest/userguide/managing-user-access-idc.html#view-user-accounts-enterprise).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

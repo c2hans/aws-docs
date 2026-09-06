@@ -15,7 +15,3 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 The piece of software on the Greengrass core that will be updated.
 type: string
 enum: ["core", "ota\_agent"]
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -90,7 +90,3 @@ Indexes should never be dropped without discussing with all interested parties a
 **2. Low Cardinality Index Optimization**
 + Use partial indexes with filters
 + Convert single low-cardinality indexes to compound indexes
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

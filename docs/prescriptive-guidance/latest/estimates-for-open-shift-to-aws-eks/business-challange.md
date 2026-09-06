@@ -18,7 +18,3 @@ Accurate estimation for OpenShift to Amazon EKS migrations requires addressing b
 + **Architectural decisions** – Trade-offs between lift-and-shift approaches versus re-architecting for cloud-native patterns
 
 This guide helps you build estimation frameworks that account for these variables, enabling more accurate planning and stakeholder communication throughout your migration journey.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ You can use procedures in the Amazon RDS package `rdsadmin.rdsadmin_rman_util` t
 | `p_rman_to_dbms_output` | boolean | `TRUE`, `FALSE` | `FALSE` | No | When `TRUE`, the RMAN output is sent to the `DBMS_OUTPUT` package in addition to a file in the `BDUMP` directory. In SQL\*Plus, use `SET SERVEROUTPUT ON` to see the output.<br />When `FALSE`, the RMAN output is only sent to a file in the `BDUMP` directory.  |
 | `p_section_size_mb` | number | A valid integer | `NULL` | No | The section size in megabytes (MB).<br />Validates in parallel by dividing each file into the specified section size.<br />When `NULL`, the parameter is ignored. |
 | `p_validation_type` | varchar2 | `'PHYSICAL'`, `'PHYSICAL+LOGICAL'` | `'PHYSICAL'` | No | The level of corruption detection.<br />Specify `'PHYSICAL'` to check for physical corruption. An example of physical corruption is a block with a mismatch in the header and footer.<br />Specify `'PHYSICAL+LOGICAL'` to check for logical inconsistencies in addition to physical corruption. An example of logical corruption is a corrupt block. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

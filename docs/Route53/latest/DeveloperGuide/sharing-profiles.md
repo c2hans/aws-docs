@@ -139,7 +139,3 @@ Route 53 Profiles are billed based on the number of VPC associations. The Profil
 <a name="sharing-quotas"></a>
 
 The Profile owners and consumers share the same quota, except for the number of Route 53 Profiles per account in a Region. For more information, see [Quotas on Route 53 Profiles](DNSLimitations.md#limits-api-entities-route53-profiles)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

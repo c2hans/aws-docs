@@ -23,7 +23,7 @@ If your game server has a mechanism for tracking health status, you can use this
 
 Reporting game server utilization status keeps Amazon GameLift Servers FleetIQ informed on which game servers are currently ideal and available for new game sessions. Your game server must have a mechanism that triggers a utilization status update to Amazon GameLift Servers FleetIQ. For example, you might trigger the update when players connect to the game server or when a game session starts.
 
-When starting a game session, client or matchmaking services claim an available game server (by calling [ClaimGameServer()](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ClaimGameServer.html)), prompt players to connect to the game server, and trigger the game server to start gameplay. This process is described in [Integrate Amazon GameLift Servers FleetIQ into a game client](gsg-integrate-gameclient.md). A game server "claim" is valid for 60 seconds, and the game server must be able to update utilization status withing this window. If utilization status is not updated, Amazon GameLift Servers FleetIQ removes the claim, assumes that the game server is available, and may reserve the game server for another client claim request.
+When starting a game session, client or matchmaking services claim an available game server (by calling [ClaimGameServer()](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ClaimGameServer.html)), prompt players to connect to the game server, and trigger the game server to start gameplay. This process is described in [Integrate Amazon GameLift Servers FleetIQ into a game client](gsg-integrate-gameclient.md). A game server "claim" is valid for 60 seconds, and the game server must be able to update utilization status within this window. If utilization status is not updated, Amazon GameLift Servers FleetIQ removes the claim, assumes that the game server is available, and may reserve the game server for another client claim request.
 
 ```
 AWS gamelift update-game-server \
@@ -32,7 +32,3 @@ AWS gamelift update-game-server \
     --health-check HEALTHY \
     --utilization-status UTILIZED
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

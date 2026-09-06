@@ -117,7 +117,3 @@ To troubleshoot IPv6 connectivity issues:
 1. Check CloudTrail logs for any authentication or authorization errors when using IPv6 endpoints.
 
 1. Verify that your application is correctly configured to use the new dual-stack endpoint URLs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,6 +68,11 @@ The network configuration for a task or service.
 Type: [NetworkConfiguration](API_NetworkConfiguration.md) object
 Required: No
 
+ ** overrides **   <a name="ECS-Type-ServiceRevision-overrides"></a>
+The effective runtime overrides that Amazon ECS applies to this service revision. This value is present only when Amazon ECS detects a difference between the task definition and the actual runtime configuration.
+Type: [ServiceRevisionOverrides](API_ServiceRevisionOverrides.md) object
+Required: No
+
  ** platformFamily **   <a name="ECS-Type-ServiceRevision-platformFamily"></a>
 The platform family the service revision uses.
 Type: String
@@ -126,7 +131,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/ServiceRevision)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/ServiceRevision)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/ServiceRevision)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic Container Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

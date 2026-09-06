@@ -16,7 +16,3 @@ For a list of common query parameters, see [Common parameters](https://docs.aws.
 For descriptions of the error codes, see [Common errors](https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/CommonErrors.html).
 
 For more information about the AWS CLI, see AWS Command Line Interface reference for Aurora DSQL.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

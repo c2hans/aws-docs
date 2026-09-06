@@ -17,7 +17,3 @@ To view metrics in CloudWatch, complete the procedure found in [Graphing a metri
 The following is an example of how a metric might appear in CloudWatch. The metric shows the click-through rate for every 15 minutes for two different recommenders.
 
 ![Depicts a graph of the click-through rate for every 15 minutes for two different recommenders.](http://docs.aws.amazon.com/personalize/latest/dg/images/metric-attribution-cw-example.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -399,7 +399,3 @@ To learn more about using the Application Auto Scaling AWS CLI commands or API a
 + [application-autoscaling](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling) section of the *AWS CLI Command Reference*
 + [Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/)
 + [Application Auto Scaling User Guide](https://docs.aws.amazon.com/autoscaling/application/userguide/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

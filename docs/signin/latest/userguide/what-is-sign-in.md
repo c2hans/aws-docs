@@ -157,7 +157,3 @@ The following example shows a CloudTrail event for a failed console login attemp
 This CloudTrail event shows a failed console login attempt where access was denied by a resource-based policy. The `errorMessage` field indicates the policy type that caused the denial: "Authorization denied because of a resource-based policy" for resource-based policy, or "Authorization denied because of a resource control policy" for RCPs. The event captures the IAM user identity, timestamp, source IP address, and login destination.
 
 CloudTrail generates events for both pre-authentication denials (when AWS Sign-In blocks the credential page for root users) and post-authentication denials (when a policy denies access after credentials are validated).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

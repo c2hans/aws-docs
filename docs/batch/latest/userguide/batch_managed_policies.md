@@ -13,7 +13,3 @@ AWS Batch provides a managed policy that you can attach to users. This policy pr
 This policy allows full administrator access to AWS Batch.
 
 To view the JSON for the policy, see [AWSBatchFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBatchFullAccess.html) in the [*AWS managed policies Reference Guide*](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/about-managed-policy-reference.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

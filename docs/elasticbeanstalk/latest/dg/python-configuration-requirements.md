@@ -72,7 +72,3 @@ The following steps describe the logic that Elastic Beanstalk follows to install
 + Starting with the March 7, 2023 Amazon Linux 2 platform release, if there is no `requirements.txt` file, but there is a `Pipfile.lock`, we use the command `pipenv sync`. Prior to that release, we used `pipenv install --ignore-pipfile`.
 + If there is neither a `requirements.txt` file nor a `Pipfile.lock`, but there is a `Pipfile`, we use the command `pipenv install --skip-lock`.
 + If none of the three requirements files are found, we don't install any application dependencies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

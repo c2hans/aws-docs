@@ -17,7 +17,3 @@ The following blog posts outline solutions that use the integration with Securit
 + [How to Integrate AWS Security Hub CSPM Custom Actions with PagerDuty](https://aws.amazon.com/blogs/apn/how-to-integrate-aws-security-hub-custom-actions-with-pagerduty/)
 + [How to Enable Custom Actions in AWS Security Hub CSPM](https://aws.amazon.com/blogs/apn/how-to-enable-custom-actions-in-aws-security-hub/)
 + [How to import AWS Config rules evaluations as findings in Security Hub CSPM](https://aws.amazon.com/blogs/security/how-to-import-aws-config-rules-evaluations-findings-security-hub/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

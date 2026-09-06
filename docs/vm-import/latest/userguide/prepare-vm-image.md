@@ -81,7 +81,3 @@ The following configurations should be made in your Windows VM before you export
   1. Run Sysprep with the **/oobe** and **/generalize** options. These options strip all unique system information from the Windows installation and prompt you to reset the administrator password.
 
   1. Shut down the VM and export it from your virtualization environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vm-import` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

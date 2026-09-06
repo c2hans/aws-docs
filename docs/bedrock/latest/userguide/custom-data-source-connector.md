@@ -48,7 +48,3 @@ The `vectorIngestionConfiguration` field maps to a [VectorIngestionConfiguration
 + customTransformationConfiguration – To customize how the data is transformed and to apply a Lambda function for greater customization. For more information about how to customize chunking of your data and processing of your metadata with a Lambda function, see [Use a custom transformation Lambda function to define how your data is ingested](kb-custom-transformation.md).
 
 After setting up your custom data source, you can add documents into it and directly ingest them into the knowledge base. Unlike other data sources, you don't need to sync a custom data source. To learn how to ingest documents directly, see [Ingest changes directly into a knowledge base](kb-direct-ingestion.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

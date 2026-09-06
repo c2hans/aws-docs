@@ -171,7 +171,3 @@ You can filter the AWS Elemental MediaTailor data using the following dimensions
 | `FunctionId` | The identifier of the function. Available on `Function.*` metrics only. |
 | `FunctionType` | The type of function: `CUSTOM_OUTPUT`, `HTTP_REQUEST`, `SEQUENTIAL_EXECUTOR`, or `CONCURRENT_EXECUTOR`. Available on `Function.*` metrics only. |
 | `HookType` | The lifecycle hook that triggered the function: `PRE_SESSION_INITIALIZATION` or `PRE_ADS_REQUEST`. Available on `Function.*` metrics only. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

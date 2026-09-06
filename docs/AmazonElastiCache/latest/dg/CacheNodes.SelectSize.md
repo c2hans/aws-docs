@@ -111,7 +111,3 @@ In some cases, you might be unsure how much capacity you need. If so, for testin
 If your cluster doesn't have the hit rate that you want, you can easily add more nodes to increase the total available memory in your cluster.
 
 If your cluster is bound by CPU but has sufficient hit rate, set up a new cluster with a node type that provides more compute power.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

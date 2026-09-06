@@ -16,7 +16,3 @@ To remove an SVM from an Active Directory, you must use the NetApp ONTAP CLI.
 + [Joining SVMs to Active Directory using the AWS Management Console, AWS CLI and API](join-svm-to-ad.md)
 + [Updating existing SVM Active Directory configurations using the AWS Management Console, AWS CLI, and API](update-svm-ad-config.md)
 + [Updating SVM Active Directory configurations using the NetApp CLI](manage-svm-ad-config-ontap-cli.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

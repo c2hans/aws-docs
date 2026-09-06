@@ -677,7 +677,3 @@ Amazon Lex defines the following condition keys that can be used in the `Conditi
 |   [lex:associatedIntents](https://docs.aws.amazon.com/lex/latest/dg/security_iam_service-with-iam.html)  | Enables you to control access based on the intents included in the request | ArrayOfString |
 |   [lex:associatedSlotTypes](https://docs.aws.amazon.com/lex/latest/dg/security_iam_service-with-iam.html)  | Enables you to control access based on the slot types included in the request | ArrayOfString |
 |   [lex:channelType](https://docs.aws.amazon.com/lex/latest/dg/security_iam_service-with-iam.html)  | Enables you to control access based on the channel type included in the request | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

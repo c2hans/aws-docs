@@ -155,7 +155,3 @@ glueContext.write_dynamic_frame.from_options(frame = df, connection_type = "s3",
 **Normal profiled metrics:** The [executor memory](monitoring-awsglue-with-cloudwatch-metrics.md#glue.ALL.jvm.heap.usage) with AWS Glue dynamic frames never exceeds the safe threshold, as shown in the following image. It streams in the rows from the database and caches only 1,000 rows in the JDBC driver at any point in time. An out of memory exception does not occur.
 
 ![AWS Glue console showing executor memory below the safe threshold.](http://docs.aws.amazon.com/glue/latest/dg/images/monitor-debug-oom-2-memoryprofile-fixed.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

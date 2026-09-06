@@ -29,7 +29,3 @@ Exadata databases use native Oracle Net Services encryption and integrity capabi
 <a name="key-management"></a>
 
 Transparent Data Encryption includes a keystore to securely store master encryption keys, and a management framework to securely and efficiently manage the keystore and perform key maintenance operations. For more information, see [To administer Vault encryption keys](https://docs.oracle.com/en-us/iaas/exadatacloud/doc/manage-databases.html#ECSCM-GUID-7F93FC04-ABE6-4D46-87E9-68EA6DC98FAE).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

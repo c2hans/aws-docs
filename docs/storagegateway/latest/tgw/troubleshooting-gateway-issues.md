@@ -16,7 +16,3 @@ Following, you can find information about best practices and troubleshooting iss
 + [Troubleshooting hardware appliance issues](troubleshooting-hardware-appliance-issues.md) - Learn how to resolve issues that you might encounter with the Storage Gateway Hardware Appliance.
 + [Troubleshooting virtual tape issues](Main_TapesIssues-vtl.md) - Learn about actions you can take if you experience unexpected issues with your virtual tapes.
 + [Troubleshooting high availability issues](troubleshooting-ha-issues.md) - Learn what to do if you experience issues with gateways that are deployed in a VMware HA environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

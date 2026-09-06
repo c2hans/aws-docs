@@ -1337,7 +1337,3 @@ aws appconfig validate-configuration \
 The command produces no output.
 For more information, see [Step 3: Creating a configuration and a configuration profile](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-and-profile.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [ValidateConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/validate-configuration.html) in *AWS CLI Command Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

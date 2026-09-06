@@ -28,7 +28,3 @@ AWS Migration Hub Strategy Recommendations provides the following APIs for data 
 | <a name="migrationhub-strategy-ListImportFileTask"></a>[ListImportFileTask](https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_ListImportFileTask.html) | Get list of all imports performed by the customer | List |
 | <a name="migrationhub-strategy-ListJarArtifacts"></a>[ListJarArtifacts](https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_ListJarArtifacts.html) | Get a list of binaries that collector should assess | List |
 | <a name="migrationhub-strategy-ListServers"></a>[ListServers](https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_ListServers.html) | Get a list of all servers in a customer's environment | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

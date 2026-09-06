@@ -90,7 +90,3 @@ This step is required for ClusterIP service traffic from cloud pods to hybrid po
 <a name="hybrid-nodes-gateway-cni-next"></a>
 
 After configuring Cilium and VPC CNI, proceed to install the Hybrid Nodes gateway. See [Get started with EKS Hybrid Nodes gateway](hybrid-nodes-gateway-getting-started.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ Under each practice area, the expectation is to have a single practice owner wor
 The CBO is the central hub of the CCoE. It's responsible for developing and implementing the cloud strategy, developing and enforcing cloud governance policies, and managing the cloud budget. The CBO also oversees the work of the Cloud Engineering team.
 
 The Cloud Engineering team is responsible for the technical aspects of the organization's cloud environment. This includes designing, migrating, and operating cloud workloads. The Cloud Engineering team also works to ensure the security and compliance of the cloud environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -139,7 +139,3 @@ The most recent timestamp when the V2 connector was updated.
 
 `Message`  <a name="Message-fn::getatt"></a>
 The message of the V2 connector when connector status is FAILED\_TO\_CONNECT.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

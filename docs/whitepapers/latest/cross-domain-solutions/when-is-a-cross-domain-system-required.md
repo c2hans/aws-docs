@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cross-domain-solution
  You would often deploy a CDS due to regulatory or policy requirements, or in situations where inappropriate access to data would cause significant impact to your organization. Because of these reasons, the CDS is an integral component of the architecture and may even be required to achieve an Authority to Operate (ATO) from your organization’s security and compliance program.
 
  Once an ATO is achieved, it can be cumbersome to make changes to a CDS configuration (for example, altering the message rule set) without affecting the ATO’s approval. If these drawbacks outweigh the additional security provided by a CDS, you should consider another option, like a WAF.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

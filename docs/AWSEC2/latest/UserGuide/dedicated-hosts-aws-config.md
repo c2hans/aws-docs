@@ -51,7 +51,3 @@ For more information, see [Viewing Configuration Details in the AWS Config Conso
 **To activate AWS Config using the command line or API**
 + AWS CLI: [Viewing Configuration Details (AWS CLI)](https://docs.aws.amazon.com/config/latest/developerguide/view-manage-resource-console.html#view-config-details-cli) in the *AWS Config Developer Guide*.
 + Amazon EC2 API: [GetResourceConfigHistory](https://docs.aws.amazon.com/config/latest/APIReference/API_GetResourceConfigHistory.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

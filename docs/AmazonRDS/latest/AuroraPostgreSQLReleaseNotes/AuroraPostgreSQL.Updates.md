@@ -15524,7 +15524,3 @@ You can find the following improvements in this engine update:
 <a name="AuroraPostgreSQL.Updates.20180305.107"></a>
 
 This is the first generally available release of Amazon Aurora PostgreSQL-Compatible Edition.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

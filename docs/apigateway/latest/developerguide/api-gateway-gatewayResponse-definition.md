@@ -34,7 +34,3 @@ For more information about `$context` variables, see [Context variables for data
 + [Set up a gateway response using the API Gateway REST API](set-up-gateway-response-using-the-api.md)
 + [Set up gateway response customization in OpenAPI](set-up-gateway-responses-in-swagger.md)
 + [Gateway response types for API Gateway](supported-gateway-response-types.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

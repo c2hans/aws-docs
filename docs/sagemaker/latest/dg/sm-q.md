@@ -16,7 +16,3 @@ Amazon Q Developer is a generative artificial intelligence (AI) powered conversa
 Amazon Q has the most support for Java, Python, JavaScript, TypeScript, C\#, Go, PHP, Rust, Kotlin, and SQL, as well as the Infrastructure as Code (IaC) languages JSON (CloudFormation), YAML (CloudFormation), HCL (Terraform), and CDK (Typescript, Python). It also supports code generation for Ruby, C\+\+, C, Shell, and Scala. For examples of how Amazon Q integrates with Amazon SageMaker AI and displays code suggestions in the Amazon SageMaker Studio Classic IDE, see [Code Examples](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/inline-suggestions-code-examples.html) in the *Amazon Q Developer User Guide*.
 
 For more information on using Amazon Q with Amazon SageMaker Studio Classic, see the [Amazon Q Developer User Guide](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/sagemaker-setup.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

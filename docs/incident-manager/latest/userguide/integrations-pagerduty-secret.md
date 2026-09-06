@@ -173,7 +173,3 @@ For information about how to add a PagerDuty service to a Incident Manager incid
 [How to Automate Incident Response with PagerDuty and AWS Systems Manager Incident Manager](https://aws.amazon.com/blogs/mt/how-to-automate-incident-response-with-pagerduty-and-aws-systems-manager-incident-manager/) (AWS Cloud Operations and Migrations Blog)
 
 [Secret encryption in AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/security-encryption.html) in the *AWS Secrets Manager User Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -241,7 +241,3 @@ Do one of the following:
 + Limit the number of connections your clients can create to the destination.
 + Use the [`IdleTimeoutCount`](vpc-nat-gateway-cloudwatch.md) metric in CloudWatch to monitor for increases in idle connections. Close idle connections to release capacity.
 + Create a NAT gateway with multiple IP addresses or add secondary IP addresses to an existing NAT gateway. Each new IPv4 address can support up to 55,000 concurrent connections. For more information, see [Create a NAT gateway](nat-gateway-working-with.md#nat-gateway-creating) or [Edit secondary IP address associations](nat-gateway-working-with.md#nat-gateway-edit-secondary).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

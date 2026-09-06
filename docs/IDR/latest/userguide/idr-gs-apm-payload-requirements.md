@@ -157,7 +157,3 @@ Note that `detail-type` is now `ams.monitoring/generic-apm`, source is now `Gene
 The `incident-detection-response-identifier` value is taken from the alert name based on whatever payload your APM sends. APM alert name paths are different from one APM to another. An Lambda function must be set up to take the alarm name from the correct path in the APM JSON payload received by Lambda and use it for the `incident-detection-response-identifier` value.
 
 `incident-detection-response-identifier` values must be unique per alarm type sent to AWS Incident Detection and Response. Each unique name that is set on the `incident-detection-response-identifier` must be provided to the AWS Incident Detection and Response team during on-boarding. Events that have an unknown or missing value for the `incident-detection-response-identifier` key are not processed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

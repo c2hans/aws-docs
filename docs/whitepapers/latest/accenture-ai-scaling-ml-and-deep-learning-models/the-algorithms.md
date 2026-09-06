@@ -63,7 +63,3 @@ tuner = HyperparameterTuner(
 <a name="model-registry"></a>
 
  It is important to catalog models to explain the model predictions and insights. It is also important that all models promoted to production are cataloged, all model versions managed, metadata such as training metrics are associated with a model, and the approval status of a model is managed. This is especially needed when organizations want to move from ad-hoc one-off proof-of-concepts to embedding AI in their enterprise systems with multiple teams, doing daily DL experiments. This is implemented in the solution using SageMaker AI Model Registry.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

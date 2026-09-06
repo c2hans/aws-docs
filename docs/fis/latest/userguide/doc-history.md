@@ -55,7 +55,3 @@ The following table describes important documentation updates in the *AWS Fault 
 | [New action](#doc-history) | You can use the **aws:ec2:send-spot-instance-interruptions** action to send a Spot Instance interruption notice to target Spot Instances and then interrupt the target Spot Instances. | October 20, 2021 |
 | [New action](#doc-history) | You can use the **aws:ssm:start-automation-execution** action to initiate the execution of an Automation runbook. | September 17, 2021 |
 | [Initial release](#doc-history) | The initial release of the AWS Fault Injection Service User Guide. | March 15, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

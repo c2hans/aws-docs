@@ -290,7 +290,3 @@ The query returned the maximum 500 contributor groups but more matched. The alar
 + Queries using `unmask()` cannot include log lines in notifications (rejected at creation time).
 
 For additional best practices on query optimization, monitoring, and authorization, see [Scheduled Queries best practices](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/scheduled-queries-best-practices.html) in the *Amazon CloudWatch Logs User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

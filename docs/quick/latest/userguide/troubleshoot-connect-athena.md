@@ -154,7 +154,3 @@ If the dataset is encrypted, verify that the IAM user is a key user in the speci
 1. On the **Permissions** tab, verify the permissions.
 
 For more information, see the AWS Support article [When I run an Athena query, I get an "Access Denied" error](https://aws.amazon.com/premiumsupport/knowledge-center/access-denied-athena/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

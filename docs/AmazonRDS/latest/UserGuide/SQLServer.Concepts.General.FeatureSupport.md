@@ -119,7 +119,3 @@ RDS is upgrading all existing DB instances that are still using SQL Server 2012 
 SQL Server 2008 R2 has reached its end of support on Amazon RDS.
 
 RDS is upgrading all existing DB instances that are still using SQL Server 2008 R2 to the latest minor version of SQL Server 2012. For more information, see [Version management in Amazon RDS](SQLServer.Concepts.General.VersionSupport.md#SQLServer.Concepts.General.Version-Management).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

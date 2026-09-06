@@ -22,7 +22,3 @@ The Amazon Application Recovery Controller REST API includes the following resou
 + [ListRoutingControls](controlpanel-controlpanelarn-routingcontrols.md)
 + [ListSafetyRules](controlpanel-controlpanelarn-safetyrules.md)
 + [ListTagsForResource, TagResource, UntagResource](tags-resourcearn.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query recovery-cluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

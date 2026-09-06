@@ -205,7 +205,3 @@ Infrastructure Composer will do the following:
 To learn more about Step Functions in Infrastructure Composer, see the following:
 + [Using Workflow Studio in Infrastructure Composer](https://docs.aws.amazon.com/step-functions/latest/dg/use-wfs-in-app-composer.html) in the *AWS Step Functions Developer Guide*.
 + [DefinitionSubstitutions in AWS SAM templates](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-sam-sfn.html#sam-definition-substitution-eg) in the *AWS Step Functions Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

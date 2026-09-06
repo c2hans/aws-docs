@@ -138,7 +138,3 @@ The sample policy for **Role 2** allows the `DescribeInstances` action for an Am
 ```
 
 The policy for **Profile 2** limits the permissions granted by **Role 2**. It is applied to the role session when the role is assumed through IAM Roles Anywhere. An application that assumes **Role 2** has access to only **Bucket 2**. It cannot access **Bucket 1** or perform Amazon EC2 actions because the **Profile 2 **policy doesn't grant these permissions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

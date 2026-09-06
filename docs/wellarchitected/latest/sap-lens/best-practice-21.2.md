@@ -61,7 +61,3 @@ Using managed services can reduce capacity guesswork and allow for AWS internal 
 +  AWS Documentation: [CMS and Audit Database Architecture Options](https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-linux-architecture-options.html#bobi-linux-cms-and-audit-database-architecture-options)
 +  AWS Documentation: [SAP NetWeaver on AWS Backup and Recovery](https://docs.aws.amazon.com/sap/latest/sap-netweaver/backup-and-recovery.html)
 +  AWS Documentation: [Amazon AppFlow Integrations](https://aws.amazon.com/appflow/integrations/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

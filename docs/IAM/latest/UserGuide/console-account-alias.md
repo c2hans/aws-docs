@@ -38,7 +38,3 @@ Account aliases are not secrets, and they will appear in your public-facing sign
 The original URL containing your AWS account ID remains active and can be used after you create your AWS account alias.
 
 For instructions on setting up or removing an alias, see [Creating an account alias](account-alias-create.md) and [Deleting an account alias](account-alias-delete.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

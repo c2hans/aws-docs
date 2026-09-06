@@ -397,7 +397,3 @@ When you create a flow that uses Adobe Analytics as the data source, you can tra
   - **** Field**:** Title / **** Data type**:** String / **** Supported filters**:**
   - **** Field**:** createDate / **** Data type**:** DateTime / **** Supported filters**:**
   - **** Field**:** tempLoginEnd / **** Data type**:** DateTime / **** Supported filters**:**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

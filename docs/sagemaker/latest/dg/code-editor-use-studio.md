@@ -43,7 +43,3 @@ To update space settings, you must first stop your space. If your Code Editor us
 1. After the status of the space is `Running`, choose **Open Code Editor** to go to your Code Editor session.
 
 ![The space detail page for a Code Editor application in the Studio UI.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/code-editor/code-editor-open.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -119,7 +119,3 @@ Each instance of a KMS key or alias has a unique [Amazon Resource Name](https://
   `arn:aws:kms:us-west-2:111122223333:alias/example-alias`
 
 AWS KMS provides a set of API operations to work with your AWS KMS resources. For more information about identifying KMS keys in the AWS Management Console and AWS KMS API operations, see [Key identifiers (KeyId)](concepts.md#key-id). For a list of AWS KMS operations, see the [AWS Key Management Service API Reference](https://docs.aws.amazon.com/kms/latest/APIReference/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ When connecting to a cluster using AWS Toolkit for JetBrains, users can choose t
 <a name="datagrip-info-rs"></a>
 
 After you've connected to a database in Amazon Redshift cluster, you can start interacting with it. Using DataGrip from JetBrains, you can carry out database tasks such as writing SQL, running queries, and importing/exporting data. Features provided by DataGrip are also available in the database plugin for a range of JetBrains IDEs. For information about DataGrip, see [https://www.jetbrains.com/datagrip/](https://www.jetbrains.com/datagrip/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

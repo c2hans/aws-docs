@@ -85,7 +85,3 @@ The following tables describe the major updates and new features for the *AWS Pa
 | Terraform Module for AWS ParallelCluster 1.1.0 released | Changes:+ Use AWS ParallelCluster Terraform Provider 1.x in all module examples.<br />+ Use ParallelCluster API 3.11.1 in all examples with stack name ParallelClusterAPI.<br />+ Deploy login nodes in all module examples. | December 6, 2024 |
 | Terraform Provider for AWS ParallelCluster 1.0.0 released | Features:+ [Full changelog](https://github.com/aws-tf/terraform-provider-aws-parallelcluster/blob/main/CHANGELOG.md) | June 26, 2024 |
 | Terraform Module for AWS ParallelCluster 1.0.0 released | Features:+ [Full changelog](https://github.com/aws-tf/terraform-aws-parallelcluster/blob/main/CHANGELOG.md) | June 26, 2024 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

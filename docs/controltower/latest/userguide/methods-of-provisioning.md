@@ -31,7 +31,3 @@ You also can create AWS accounts *outside* AWS Control Tower and move them into 
 + **Account Factory customization in the AWS Control Tower console:** After the setup steps, future provisioning of customized accounts requires no additional configuration or pipeline maintenance. Accounts are provisioned by means of a AWS Service Catalog product called a *blueprint*. A blueprint can use CloudFormation templates, or Terraform templates.
 **Note**
 CloudFormation blueprints can deploy resources to multiple Regions. Terraform blueprints can deploy resources to a single Region only. By default, that is the home Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

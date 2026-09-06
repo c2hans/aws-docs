@@ -39,7 +39,3 @@ The AWS CIRT publishes open-source tools and resources based on patterns observe
 
 **Note**
  Startups with Enterprise Support or AWS Unified Operations can also onboard to [AWS Security Incident Response](https://aws.amazon.com/security-incident-response/), a managed service that provides automated triage and 24/7 response for security events. For a comprehensive framework for building your incident response program, see the [AWS Security Incident Response Guide](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

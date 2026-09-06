@@ -21,7 +21,3 @@ You can show the datashares that you've created on the producer cluster.
    share_name	share_owner	source_database		consumer_database	share_type	createdate	is_publicaccessible	share_acl	producer_account	producer_namespace
    test_datashare	100		db_producer		NULL			OUTBOUND	2/15/2022		FALSE		admin		123456789012		p1234567-8765-4321-p10987654321
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

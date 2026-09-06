@@ -464,7 +464,3 @@ The example expands on the code in [Analyzing a video stored in an Amazon S3 buc
 If you've already run a video example other than [Analyzing a video stored in an Amazon S3 bucket with Java or Python (SDK)](video-analyzing-with-sqs.md), the code to replace might be different.
 
 1. Run the code. Information about the segments detected in the input video are displayed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

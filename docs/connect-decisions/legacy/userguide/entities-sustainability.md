@@ -23,7 +23,3 @@ The table below list the data entities and columns used by Sustainability for pa
 - ** [trading\_partner\_poc](organization-trading-partner-poc-entity.md) **
   - **Column:** tpartner\_id / **Is the column used by Sustainability?:** Required
   - **Column:** email / **Is the column used by Sustainability?:** Required
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

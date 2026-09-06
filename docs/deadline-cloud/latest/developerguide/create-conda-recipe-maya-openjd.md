@@ -10,13 +10,13 @@ The `maya-openjd` package provides the adaptor that integrates Maya with AWS Dea
 ## Understanding the recipe
 <a name="maya-openjd-recipe-structure"></a>
 
-The [maya-openjd sample recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-openjd) builds the adaptor from the [deadline-cloud-for-maya](https://github.com/aws-deadline/deadline-cloud-for-maya) source package published to PyPI. The [recipe.yaml](https://github.com/aws-deadline/deadline-cloud-samples/blob/mainline/conda_recipes/maya-openjd/recipe/recipe.yaml) installs the package using `pip` into the conda environment.
+The [maya-openjd sample recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-openjd) on the GitHub website builds the adaptor from the [deadline-cloud-for-maya source package](https://github.com/aws-deadline/deadline-cloud-for-maya) published to PyPI. The [recipe.yaml](https://github.com/aws-deadline/deadline-cloud-samples/blob/mainline/conda_recipes/maya-openjd/recipe/recipe.yaml) on the GitHub website installs the package using `pip` into the conda environment.
 
-The recipe depends on Python and two other packages from the Deadline Cloud samples repository that you need to build first:
+The recipe depends on Python and two other packages from the Deadline Cloud samples repository that you need to build first. These packages are available on the GitHub website:
 + [deadline](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/deadline) – The Deadline Cloud client library.
 + [openjd-adaptor-runtime](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/openjd-adaptor-runtime) – The Open Job Description adaptor runtime.
 
-Python and other dependencies are available from [conda-forge](https://conda-forge.org/), so add `-c conda-forge` to the `rattler-build publish` command when you build the adaptor package.
+Python and other dependencies are available from [conda-forge](https://conda-forge.org/) on the conda-forge website, so add `-c conda-forge` to the `rattler-build publish` command when you build the adaptor package.
 
 ## Building the adaptor package
 <a name="maya-openjd-build-package"></a>
@@ -53,7 +53,3 @@ rattler-build publish maya-openjd/recipe/recipe.yaml \
 For other publishing options:
 + To publish to an Amazon S3 channel, see [Publish packages to an S3 conda channel](publish-packages-s3-channel.md).
 + To automate builds using a Deadline Cloud package building queue, see [Automate package builds with Deadline Cloud](automate-package-builds.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -69,7 +69,3 @@ PM> Install-Package AWSSDK.S3 -Version 3.3.106.6
 ```
 
 For more information about Package Manager Console commands, see the [PowerShell reference](https://learn.microsoft.com/en-us/nuget/reference/powershell-reference) in Microsoft's [NuGet documentation](https://learn.microsoft.com/en-us/nuget/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -2,13 +2,13 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/action-connectors-in-threshold-alerts.html
 ---
 
-# Using Quick action connectors in threshold alerts
+# Using Quick connectors in threshold alerts
 <a name="action-connectors-in-threshold-alerts"></a>
 
 ## Prerequisites
 <a name="action-connectors-in-threshold-alerts-prerequisites"></a>
 
-Before you begin, make sure to [create at least one action connector](builtin-services-integration.md).
+Before you begin, make sure to [create at least one connector](builtin-services-integration.md).
 
 The connector must meet these requirements:
 + Uses the **Service Auth** authentication method
@@ -18,10 +18,10 @@ The connector must meet these requirements:
   + Salesforce
   + ServiceNow
 
-## Enable Quick actions on a dashboard to use action connectors
+## Enable Quick actions on a dashboard to use connectors
 <a name="enable-quick-actions-on-dashboards-for-threshold-alert"></a>
 
-**To enable Quick actions on a dashboard to use action connectors**
+**To enable Quick actions on a dashboard to use connectors**
 
 1. If a dashboard exists, go to the source analysis of the dashboard. Otherwise, [create a new analysis](quickstart-createanalysis.md).
 
@@ -33,10 +33,10 @@ The connector must meet these requirements:
 
 1. Choose **Publish dashboard**.
 
-## Use action connectors in a threshold alert
+## Use connectors in a threshold alert
 <a name="use-action-connectors-in-threshold-alert"></a>
 
-**To use action connectors in a threshold alert**
+**To use connectors in a threshold alert**
 
 1. Open a dashboard with the **Enable Quick actions** publishing option turned on.
 
@@ -48,7 +48,7 @@ The connector must meet these requirements:
 
 1. Choose **Add Action**.
 
-1. A menu appears with a list of all supported action connectors and actions.
+1. A menu appears with a list of all supported connectors and actions.
 
 1. Choose the desired action from the list.
 
@@ -105,7 +105,3 @@ To learn more about CLS, see [Using column-level security to restrict access to 
   + Existing actions on alerts: Your existing actions on alerts will stop working completely when the **Enable Quick actions** publishing option gets disabled on your dashboard.
 
 To learn more about dashboard publishing options, see [Publishing dashboards](creating-a-dashboard.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

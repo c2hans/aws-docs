@@ -252,7 +252,3 @@ Verify that all required headers are being forwarded correctly.
 If these solutions don't resolve your issue, check your CDN provider's documentation. You can also contact their support team for additional troubleshooting steps.
 
 For general CDN troubleshooting guidance, see [Troubleshoot issues with MediaTailor and CDN integration](cdn-troubleshooting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

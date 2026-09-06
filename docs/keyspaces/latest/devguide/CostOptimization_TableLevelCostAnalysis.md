@@ -43,7 +43,3 @@ For this example, we use a table with the name **MyTable**.
 It may take one or two days for the tag to start appearing in Cost Explorer
 
 You can set metadata tags yourself in the console, or programmatically with CQL, the AWS CLI, or the AWS SDK. Consider requiring a **table\_name** tag to be set as part of your organization’s new table creation process. For more information, see [Create cost allocation reports using tags for Amazon Keyspaces](CostAllocationReports.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

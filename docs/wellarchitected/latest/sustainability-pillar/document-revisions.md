@@ -17,7 +17,3 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 | [Whitepaper updated](#document-revisions) | Best practices updated with new implementation guidance. | December 15, 2022 |
 | [Whitepaper updated](#document-revisions) | Best practices expanded and improvement plans added. | October 20, 2022 |
 | [Initial publication](#document-revisions) | Sustainability Pillar - AWS Well-Architected Framework published. | December 2, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

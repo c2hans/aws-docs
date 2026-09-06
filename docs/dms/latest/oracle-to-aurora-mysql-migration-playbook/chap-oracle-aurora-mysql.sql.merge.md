@@ -206,7 +206,3 @@ The following table describes similarities, differences, and key migration consi
 |  `WHEN NOT MATCHED THEN INSERT`  |  `REPLACE` or `INSERT…​ ON DUPLICATE KEY UPDATE`  | When using REPLACE, the violating row is deleted, or attempted to be deleted. If there are foreign keys in place, the `DELETE` operation may fail, which may fail the entire transaction. With `INSERT …​ ON DUPLICATE KEY UPDATE`, the update is performed on the existing row in place, without attempting to delete it. |
 
 For more information, see [REPLACE Statement](https://dev.mysql.com/doc/refman/5.7/en/replace.html) and [INSERT …​ ON DUPLICATE KEY UPDATE Statement](https://dev.mysql.com/doc/refman/5.7/en/insert-on-duplicate.html) in the *MySQL documentation*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ Amazon Lookout for Equipment provides the following APIs for data retrieval.
 | <a name="lookoutequipment-ListRetrainingSchedulers"></a>[ListRetrainingSchedulers](https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/API_ListRetrainingSchedulers.html) | List the retraining schedulers in your account | List |
 | <a name="lookoutequipment-ListSensorStatistics"></a>[ListSensorStatistics](https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/API_ListSensorStatistics.html) | List the sensor statistics for a particular dataset or an ingestion job | List |
 | <a name="lookoutequipment-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/API_ListTagsForResource.html) | List the tags for a resource | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

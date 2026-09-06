@@ -21,7 +21,3 @@ Before implementing RCPs, in addition to reviewing [AWS CloudTrail logs](https:/
 ## GitHub repository
 <a name="rcp-github-repositories"></a>
 + [Resource control policy examples](https://github.com/aws-samples/resource-control-policy-examples) - This GitHub repository contains example policies to get started or mature your usage of AWS RCPs
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

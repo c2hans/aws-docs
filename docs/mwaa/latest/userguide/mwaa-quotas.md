@@ -30,7 +30,3 @@ To access a list of endpoints for Amazon MWAA, refer to [Amazon Managed Workflow
 <a name="quotas-increase"></a>
 
 You can request an increase to an adjustable quota by submitting a [quota increase request](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

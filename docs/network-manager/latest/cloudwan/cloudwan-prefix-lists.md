@@ -11,7 +11,3 @@ Before you can create a prefix list association, you must first have created a p
 
 **Note**
 Creating or deleting prefix list associations will move the state of your core network to updating. The status of the association is based on the core network state, once it is finished updating the association will either be fully available or deleted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

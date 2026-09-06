@@ -23,7 +23,3 @@ If your cluster and your data source are in different AWS Regions, you incur dat
 
 **COPY command fails**
 Query STL\_LOAD\_ERRORS to discover the errors that occurred during specific loads. For more information, see [STL\_LOAD\_ERRORS](r_STL_LOAD_ERRORS.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

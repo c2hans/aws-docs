@@ -29,7 +29,3 @@ Fast starts demonstrate that you're:
 + Helping customers realize business value quickly
 
 **Example:** If you have 50 projects that are at least 6 months past their start date, and 44 of them reached $50K within 180 days from the day of $1k, your speed to value is 44/50 = 88%, earning you 3 points (High Performance Track).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

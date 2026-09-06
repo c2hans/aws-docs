@@ -86,7 +86,3 @@ The FSx for Lustre client is compatible with kernels from the standard RHEL Base
   <tr><td></td><td>7.8</td><td>Arm</td><td>4.18.0-147*</td><td>4.18.0-147*</td><td>2.12</td><td>yes</td><td>yes</td><td>yes</td><td></td></tr>
 </tbody>
 </table>
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

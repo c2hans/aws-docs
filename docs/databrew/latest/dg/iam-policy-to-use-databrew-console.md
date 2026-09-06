@@ -20,7 +20,3 @@ The following table describes the permissions granted by this policy.
 |  `"sts:GetCallerIdentity"`  |  `"*"`  | Get information about the current caller. |
 |  `"cloudtrail:LookupEvents",`  |  `"*"`  | Allow listing AWS CloudTrail events for datasets (data lineage). |
 |  `"iam:ListRoles"` <br /> `"iam:GetRole"`  |  `"*"`  | Allows listing IAM roles to use for projects and jobs. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -83,7 +83,3 @@ If you use `find_elements_by_xpath`, consider the following optimizations:
 + If you are using the list multiple times, cache the results if possible.
 
 Selenium makes a full round-trip web request for each action you take on the returned elements on an XPath query. For example, if you request every link in a page (`//a`) and want to validate that every link points to a real resource, each call to `getAttribute` from your test results in a full round-trip request to the desktop browser testing feature running your test and the WebDriver automating your browser, even if the content has not changed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

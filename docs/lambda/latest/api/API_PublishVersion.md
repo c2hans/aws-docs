@@ -113,7 +113,10 @@ Content-type: application/json
    "FileSystemConfigs": [
       {
          "Arn": "string",
-         "LocalMountPath": "string"
+         "LocalMountPath": "string",
+         "S3FilesConfig": {
+            "DirectS3Read": "string"
+         }
       }
    ],
    "FunctionArn": "string",
@@ -239,7 +242,7 @@ The size of the function's `/tmp` directory in MB. The default value is 512, but
 Type: [EphemeralStorage](API_EphemeralStorage.md) object
 
  ** [FileSystemConfigs](#API_PublishVersion_ResponseSyntax) **   <a name="lambda-PublishVersion-response-FileSystemConfigs"></a>
-Connection settings for an [Amazon EFS file system](https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html) or an [Amazon S3 Files file system](https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html).
+Connection settings for an [Amazon EFS file system](https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html) or an [Amazon S3 file system](https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html).
 Type: Array of [FileSystemConfig](API_FileSystemConfig.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 1 item.
 
@@ -459,7 +462,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/lambda-2015-03-31/PublishVersion)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/lambda-2015-03-31/PublishVersion)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/lambda-2015-03-31/PublishVersion)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,12 +20,8 @@ This approach allows you to share CI/CD provider registrations across multiple A
 
 AWS DevOps Agent supports the following CI/CD platforms:
 + **GitHub** – Connect repositories from [GitHub.com](http://GitHub.com) using the AWS DevOps Agent GitHub app.
-+ **GitLab** – Connect projects from [GitLab.com,](http://gitlab.com) managed GitLab instances, or publicly accessible self-hosted GitLab deployments.
++ **GitLab** – Connect projects from [GitLab.com](http://gitlab.com), managed GitLab instances, or GitLab Self-Managed deployments. A GitLab Self-Managed deployment can be publicly accessible, or reachable through an AWS DevOps Agent private connection (see: [Connecting to privately hosted tools](configuring-integrations-and-knowledge-connecting-to-privately-hosted-tools.md)).
 
 **Topics**
 + [Connecting GitHub](connecting-to-cicd-pipelines-connecting-github.md)
 + [Connecting GitLab](connecting-to-cicd-pipelines-connecting-gitlab.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,7 @@ Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the appl
 ## Operational visibility with metrics, alarms, and dashboards
 <a name="cloudwatch-monitoring-overview"></a>
 
-[Metrics](working_with_metrics.md) collect and track key performance data at user-defined intervals. [Many AWS services](aws-services-cloudwatch-metrics.md) automatically report metrics into CloudWatch, and you can also [publish custom metrics](publishingMetrics.md) in CloudWatch from your applications.
+[Metrics](working_with_metrics.md) collect and track key performance data at user-defined intervals. CloudWatch provides two types of metrics: [OpenTelemetry Metrics](metrics-otel-recommended.md) (recommended) and [CloudWatch Metrics (Classic)](metrics-classic.md). [Many AWS services](aws-services-cloudwatch-metrics.md) automatically report metrics into CloudWatch, and you can also publish your own custom metrics, either with [OpenTelemetry (OTLP)](metrics-otel-send.md) or with the [PutMetricData API](publishingMetrics.md).
 
 [Dashboards](CloudWatch_Dashboards.md) offer a unified view of your resources and applications with visualizations of your metrics and logs in a single location. You can also [share dashboards](cloudwatch-dashboard-sharing.md) across accounts and Regions for enhanced operational awareness. CloudWatch provides [curated automatic dashboards](GettingStarted.md) for many AWS services, so that you don't have to build them yourself.
 
@@ -103,7 +103,3 @@ The following related resources can help you as you work with this service.
 |  [AWS Support](https://console.aws.amazon.com/support/home#/)  | The hub for creating and managing your AWS Support cases. Also includes links to other helpful resources, such as forums, technical FAQs, service health status, and AWS Trusted Advisor. |
 |  [Amazon CloudWatch product information](http://aws.amazon.com/cloudwatch/) | The primary web page for information about Amazon CloudWatch.  |
 |  [Contact Us](http://aws.amazon.com/contact-us/)  | A central contact point for inquiries concerning AWS billing, account, events, abuse, and so on.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

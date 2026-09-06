@@ -25,7 +25,3 @@ This tutorial assumes that there is a provisioned MSK cluster created with Apach
 The following diagram illustrates the architecture of Amazon MSK multi-VPC connectivity connected to a client in a different AWS account.
 
 ![Multi-vpc network diagram in a single Region](http://docs.aws.amazon.com/msk/latest/developerguide/images/mvpc-network.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

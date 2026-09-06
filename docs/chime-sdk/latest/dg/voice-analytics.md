@@ -31,7 +31,3 @@ The following topics explain how to use voice analytics.
 + [Understanding notifications for the Amazon Chime SDK](va-notification-targets.md)
 + [Understanding data storage, opt-out, and data-retention policies for the Amazon Chime SDK](va-opt-out.md)
 + [Using voice APIs to run voice analytics for the Amazon Chime SDK](va-in-voice-namespace.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,13 +10,13 @@ Use OpenJD environments to provide new commands in an environment. First you cre
 ## Prerequisites
 <a name="set-prerequisites"></a>
 
- Perform the following steps to run the [sample job bundle with environment variables](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_vars/template.yaml) from the Deadline Cloud samples github repository.
+ Perform the following steps to run the [sample job bundle with environment variables](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_vars/template.yaml) from the Deadline Cloud samples repository on the GitHub website.
 
 1.  If you do not have a Deadline Cloud farm with a queue and associated Linux fleet, follow the guided onboarding experience in the [Deadline Cloud console](https://console.aws.amazon.com/deadlinecloud/home) to create one with default settings.
 
 1.  If you do not have the Deadline Cloud CLI and Deadline Cloud monitor on your workstation, follow the steps in [Set up Deadline Cloud submitters](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/submitter.html) from the user guide.
 
-1.  Use `git` to clone the [Deadline Cloud samples GitHub repository](https://github.com/aws-deadline/deadline-cloud-samples).
+1.  Use `git` to clone the [Deadline Cloud samples GitHub repository](https://github.com/aws-deadline/deadline-cloud-samples) on the GitHub website.
 
    ```
    git clone https://github.com/aws-deadline/deadline-cloud-samples.git
@@ -45,7 +45,7 @@ Use OpenJD environments to provide new commands in an environment. First you cre
 
 In this section you use the Deadline Cloud monitor to compare the session actions with where they are defined in the job template. It continues from the previous section.
 
-Open the file [job\_env\_with\_new\_command/template.yaml](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_with_new_command/template.yaml) in a text editor. Compare the session actions to where they are defined in the job template.
+Open the file [job\_env\_with\_new\_command/template.yaml](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_with_new_command/template.yaml) from the Deadline Cloud samples repository on the GitHub website in a text editor. Compare the session actions to where they are defined in the job template.
 
 1.  Select the **Launch RandomSleepCommand** session action in the Deadline Cloud monitor. You will see log output as follows.
 
@@ -163,7 +163,3 @@ Open the file [job\_env\_with\_new\_command/template.yaml](https://github.com/aw
           anyOf:
           - linux
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

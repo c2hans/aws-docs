@@ -11,7 +11,7 @@ After you [increase the size of an EBS volume](requesting-ebs-volume-modificatio
 <a name="extend-file-system"></a>
 + Create a snapshot of the volume, in case you need to roll back your changes. For more information, see [Create Amazon EBS snapshots](ebs-creating-snapshot.md).
 + Confirm that the volume modification succeeded and that it is in the`optimizing` or `completed` state. For more information, see [Monitor the progress of Amazon EBS volume modifications](monitoring-volume-modifications.md).
-+ Ensure that the volume is attached to the instance and that it is formatted and mounted. For more information, see [Format and mount an attached volume](ebs-using-volumes.md#ebs-format-mount-volume).
++ Make sure that the volume is attached to the instance and that it is formatted and mounted. For more information, see [Format and mount an attached volume](ebs-using-volumes.md#ebs-format-mount-volume).
 + (*Linux instances only*) If you are using logical volumes on the Amazon EBS volume, you must use Logical Volume Manager (LVM) to extend the logical volume. For instructions about how to do this, see the **Extend the LV** section in the article [ How do I use LVM to create a logical volume on an EBS volume's partition?](https://repost.aws/knowledge-center/create-lv-on-ebs-partition).
 
 ## Linux instances
@@ -68,7 +68,7 @@ Note that device and partition naming differs for Xen instances and instances bu
       + If the volume has a partition, continue to the next step (2b).
       + If the volume has no partitions, skip steps 2b, 2c, and 2d, and continue to step 3.
 **Troubleshooting tip**
-If you do not see the volume in the command output, ensure that the volume is [attached to the instance](ebs-attaching-volume.md), and that it is [formatted and mounted](ebs-using-volumes.md#ebs-format-mount-volume).
+If you do not see the volume in the command output, make sure that the volume is [attached to the instance](ebs-attaching-volume.md), and that it is [formatted and mounted](ebs-using-volumes.md#ebs-format-mount-volume).
 
    1. Check whether the partition needs to be extended. In the **lsblk** command output from the previous step, compare the partition size and the volume size.
       + If the partition size is smaller than the volume size, continue to the next step (2c).
@@ -109,7 +109,7 @@ Note the space between the device name (`xvda`) and the partition number (`1`).
 ------
 **Troubleshooting tips**
 `mkdir: cannot create directory ‘/tmp/growpart.31171’: No space left on device FAILED: failed to make temp dir`: Indicates that there is not enough free disk space on the volume for growpart to create the temporary directory it needs to perform the resize. Free up some disk space and then try again.
-`must supply partition-number`: Indicates that you specified an incorrect partition. Use the **lsblk** command to confirm the partition name, and ensure that you enter a space between the device name and the partition number.
+`must supply partition-number`: Indicates that you specified an incorrect partition. Use the **lsblk** command to confirm the partition name, and make sure that you enter a space between the device name and the partition number.
 `NOCHANGE: partition 1 is size 16773087. it cannot be grown`: Indicates that the partition already extends the entire volume and can't be extended. [Confirm that the volume modification succeeded](monitoring-volume-modifications.md).
 
    1. Verify that the partition has been extended. Use the **lsblk** command. The partition size should now be equal to the volume size.
@@ -192,7 +192,7 @@ Note the space between the device name (`xvda`) and the partition number (`1`).
 ------
 **Troubleshooting tips**
 `xfs_growfs: /data is not a mounted XFS filesystem`: Indicates that you specified the incorrect mount point, or the file system is not XFS. To verify the mount point and file system type, use the **df -hT** command.
-`data size unchanged, skipping`: Indicates that the file system already extends the entire volume. If the volume has no partitions, [ confirm that the volume modification succeeded](monitoring-volume-modifications.md). If the volume has partitions, ensure that the partition was extended as described in step 2.
+`data size unchanged, skipping`: Indicates that the file system already extends the entire volume. If the volume has no partitions, [ confirm that the volume modification succeeded](monitoring-volume-modifications.md). If the volume has partitions, make sure that the partition was extended as described in step 2.
       + **[Ext4 file system]** Use the **resize2fs** command and specify the name of the file system that you noted in the previous step.
 
 ------
@@ -217,7 +217,7 @@ Note the space between the device name (`xvda`) and the partition number (`1`).
 **Troubleshooting tips**
 `resize2fs: Bad magic number in super-block while trying to open /dev/xvda1`: Indicates that the file system is not Ext4. To verify file the system type, use the **df -hT** command.
 `open: No such file or directory while opening /dev/xvdb1`: Indicates that you specified an incorrect partition. To verify the partition, use the **df -hT** command.
-`The filesystem is already 3932160 blocks long. Nothing to do!`: Indicates that the file system already extends the entire volume. If the volume has no partitions, [confirm that the volume modification succeeded](monitoring-volume-modifications.md). If the volume has partitions, ensure that the partition was extended, as described in step 2.
+`The filesystem is already 3932160 blocks long. Nothing to do!`: Indicates that the file system already extends the entire volume. If the volume has no partitions, [confirm that the volume modification succeeded](monitoring-volume-modifications.md). If the volume has partitions, make sure that the partition was extended, as described in step 2.
       + **[Other file system]** See the documentation for your file system for instructions.
 
    1. Verify that the file system has been extended. Use the **df -hT** command and confirm that the file system size is equal to the volume size.
@@ -299,7 +299,3 @@ Use the following procedure to extend a Windows file system using PowerShell.
 ![Extend a partition using PowerShell - max](http://docs.aws.amazon.com/ebs/latest/userguide/images/ebs-extend-powershell-v3-max.png)
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

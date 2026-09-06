@@ -367,7 +367,3 @@ GuardDuty Runtime Monitoring observes and analyzes operating system-level, netwo
 <a name="guardduty-13-remediation"></a>
 
 For information about configuring and managing the automated security agent for GuardDuty Runtime Monitoring of EC2 instances, see [Prerequisites for Amazon EC2 instance support](https://docs.aws.amazon.com/guardduty/latest/ug/prereq-runtime-monitoring-ec2-support.html) and [Enabling the automated security agent for Amazon EC2 instances](https://docs.aws.amazon.com/guardduty/latest/ug/managing-gdu-agent-ec2-automated.html) in the *Amazon GuardDuty User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

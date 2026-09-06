@@ -92,7 +92,3 @@ Many traditional systems are designed to run periodically and process batches of
 While you can run cron tasks in serverless applications by using Amazon EventBridge Scheduler, consider the size of each batch of data that your event sends to Lambda. In this scenario, there is potential for the volume of transactions to grow beyond what can be processed within the 15-minute Lambda timeout. If the limitations of external systems force you to use a scheduler, you should generally schedule for the shortest reasonable recurring time period.
 
 For example, it’s not best practice to use a batch process that triggers a Lambda function to fetch a list of new Amazon S3 objects. This is because the service might receive more new objects in between batches than can be processed within a 15-minute Lambda function.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

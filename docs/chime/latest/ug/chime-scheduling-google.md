@@ -61,7 +61,3 @@ Create a new meeting on the host's calendar and use the information above to pop
 1. Return to your Google calendar, paste the invitation details into the **Description** field, choose **Save**, then **Send**.
 
 1. (Optional) If you created a moderated meeting with a passcode, choose **Copy moderator info** and send the moderator information to one or more attendees who act as meeting moderators. Moderator information is not included in the Amazon Chime meeting invite and must be sent to moderators separately.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -109,7 +109,3 @@ Amazon Bedrock creates a temporary copy of your evaluation data during the job a
 AgentCore works with any agent framework (for example, CrewAI, LangGraph, LlamaIndex, and Strands Agents) and any foundation model (FM). AgentCore provides security capabilities including session isolation through dedicated micro virtual machines (microVMs), encrypted credential storage, namespace-based memory isolation, and comprehensive audit logging.
 
 For detailed security guidance, see Capability 5.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

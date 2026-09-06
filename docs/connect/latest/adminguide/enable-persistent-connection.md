@@ -87,7 +87,3 @@ Yes.
 If your custom CCP uses the softphone from Connect Customer embedded iframe (that is, if `allowFramedSoftphone` is passed as true to initiate the CCP using [Connect Customer Streams JS](https://github.com/amazon-connect/amazon-connect-streams)), then you don't need to make any changes for this functionality to work.
 
 If your custom CCP integrates [Connect Customer RTC JS](https://github.com/aws/connect-rtc-js) in it's own frame, then you need to upgrade the same.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ Unless you already use IAM Identity Center in your AWS account, use Amazon Monit
 1. Choose **Add**.
 
    You can add admin users to your project even if those people have not yet accepted the invitations to their IAM Identity Center accounts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

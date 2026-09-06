@@ -43,7 +43,3 @@ View details about updates to AWS managed policies for Amazon EVS since this ser
 | AmazonEVSServiceRolePolicy — Policy updated | Amazon EVS updated the policy to allow the service to delete EVS VLAN subnets, as well as publish Amazon EVS usage metrics to CloudWatch. To learn more, see [AWS managed policy: AmazonEVSServiceRolePolicy](#security-iam-awsmanpol-amazonevsservicerolepolicy). | July 14, 2025 |
 | AmazonEVSServiceRolePolicy — New policy added | Amazon EVS added a new policy that allow the service to connect to a VPC subnet in the customer account. This connection is required for service functionality. To learn more, see [AWS managed policy: AmazonEVSServiceRolePolicy](#security-iam-awsmanpol-amazonevsservicerolepolicy). | June 09, 2025 |
 | Amazon EVS started tracking changes | Amazon EVS started tracking changes for its AWS managed policies. | June 09, 2025 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

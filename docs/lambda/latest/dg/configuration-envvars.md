@@ -329,7 +329,3 @@ The following additional environment variables aren't reserved and can be extend
 + `TZ` – The environment's time zone (`:UTC`). The execution environment uses NTP to synchronize the system clock.
 
 The sample values shown reflect the latest runtimes. The presence of specific variables or their values can vary on earlier runtimes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

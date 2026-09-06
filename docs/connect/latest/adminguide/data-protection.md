@@ -23,8 +23,4 @@ We strongly recommend that you never put confidential or sensitive information, 
 + [Encryption in transit in Connect Customer](encryption-in-transit.md)
 + [Key management in Connect Customer](key-management.md)
 + [VPC endpoints (AWS PrivateLink)](vpc-interface-endpoints.md)
-+ [Service Improvement and how to opt out from using your data for service improvement](data-opt-out.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ [Service improvement and how to opt out of using your data](data-opt-out.md)

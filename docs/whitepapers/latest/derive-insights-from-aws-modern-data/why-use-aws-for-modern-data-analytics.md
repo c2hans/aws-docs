@@ -61,7 +61,3 @@ Amazon S3 gives you robust capabilities to manage access, cost, replication, and
 With capabilities like centralized access control and policies combined with column and row-level filtering, AWS Lake Formation gives you the fine-grained access control and governance to manage access to data across a data lake and purpose-built data stores from a single point of control.
 
  AWS announced the preview of [row-level security for AWS Lake Formation](https://pages.awscloud.com/Lake_Formation_Feature_Preview.html), which makes it even easier to control access for all the people and applications that need to share data. Row-level security allows for filtering and setting data access policies at the row level.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

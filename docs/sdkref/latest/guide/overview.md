@@ -47,7 +47,3 @@ To learn more about the telemetry data collected across all of the AWS IDE Toolk
 + [Amazon Q for Eclipse](https://github.com/aws/amazon-q-eclipse/blob/main/plugin/codegen-resources/definitions/commonDefinitions.json)
 
  Certain AWS services that are accessible in the AWS Toolkits may collect additional client-side telemetry data. For detailed information about the type of data collected by each individual AWS service, see the [AWS Documentation](https://docs.aws.amazon.com/) topic for the specific service you're interested in.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdkref` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

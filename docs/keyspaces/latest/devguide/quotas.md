@@ -91,7 +91,3 @@ The following table contains quotas and default values related to UDTs in Amazon
 | Max UDT schema size | The maximum size of the schema for a UDT.  |  25 KB  |
 | Max UDT name length | The maximum number of characters in the UDT name.  |  48  |
 | Max UDT field name length | The maximum number of characters in a UDT field name.  |  128  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

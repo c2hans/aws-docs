@@ -19,7 +19,7 @@ Role-based views are possible. If you tell the agent which users should see whic
 
 Every app has access to built-in app storage, a key-value system that requires no external setup. There are two modes: private storage (scoped to the individual user, invisible to others) and shared storage (visible to everyone who accesses the app). Built-in storage scales to support large numbers of records.
 
-You can also store and retrieve data through external systems using action connectors or through Amazon Quick spaces. For more information, see [Working with data in apps in Quick](working-with-data-apps.md).
+You can also store and retrieve data through external systems using connectors or through Amazon Quick spaces. For more information, see [Working with data in apps in Quick](working-with-data-apps.md).
 
 ## AI inference
 <a name="apps-ai-inference"></a>
@@ -57,7 +57,7 @@ Public apps support the following capabilities:
 + **AI inference** — You can enable AI inference for public apps. Usage counts against the app owner's subscription quota.
 + **Custom domains** — Public apps are served from a unique URL on the Quick domain. Custom domains are not supported.
 
-Public apps do not support action connectors, embedded visuals, embedded chat experiences, or Amazon Quick spaces. For the full security model, see [Public app security](security-sandbox-apps.md#apps-public-app-security).
+Public apps do not support connectors, embedded visuals, embedded chat experiences, or Amazon Quick spaces. For the full security model, see [Public app security](security-sandbox-apps.md#apps-public-app-security).
 
 ## File handling
 <a name="apps-file-handling"></a>
@@ -66,7 +66,3 @@ With apps in Quick, you can generate files for download through the secure bridg
 
 **Important**
 Direct browser APIs for file creation are blocked by the sandbox. All downloads must go through the secure download utility provided by the platform.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

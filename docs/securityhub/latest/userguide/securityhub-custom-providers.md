@@ -56,7 +56,3 @@ For more details, see [Continuous compliance monitoring with Chef InSpec and AWS
 **Sending container vulnerabilities detected by Trivy to Security Hub CSPM**
 You can create an CloudFormation template that uses [AquaSecurity Trivy](https://github.com/aquasecurity/trivy) to scan containers for vulnerabilities, and then sends those vulnerability findings to Security Hub CSPM.
 For more details, see [How to build a CI/CD pipeline for container vulnerability scanning with Trivy andAWS Security Hub CSPM](https://aws.amazon.com/blogs/security/how-to-build-ci-cd-pipeline-container-vulnerability-scanning-trivy-and-aws-security-hub/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

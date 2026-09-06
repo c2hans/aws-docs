@@ -105,7 +105,3 @@ You'll also find best practices for client reuse, troubleshooting guidance, Lamb
     + [Option 2: Set it in the java.security file](jvm-ttl-dns.md#set-ttl-java-security-file)
     + [Option 3: Use the JDK system properties fallback (command-line)](jvm-ttl-dns.md#set-ttl-system-property)
 + [Work with HTTP/2 in the AWS SDK for Java](http2.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

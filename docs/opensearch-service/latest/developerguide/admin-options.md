@@ -20,7 +20,3 @@ Administrative options have the following limitations:
 + The OpenSearch and Elasticsearch process restart and the data node reboot are supported on domains with three or more data nodes.
 + The Dashboards and Kibana process support is supported on domains with two or more data nodes.
 + To restart the OpenSearch process on a node or reboot a node, the domain must not be in red state and all indexes must have replicas configured.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

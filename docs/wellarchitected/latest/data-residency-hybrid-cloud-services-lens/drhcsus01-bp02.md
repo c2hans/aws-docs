@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 <a name="implementation-guidance-53"></a>
 
  AWS Outposts must be anchored to service link endpoints exposed in an AWS Region. The Region to which an AWS Outpost is anchored is determined at the time an order is placed. Unlike with Local Zones, an AWS Outpost can be anchored to any supported Region, so you have more flexibility to select the anchor Region based on your sustainability goals. When deploying an AWS Outpost to address data residency requirements, consider anchoring it to the most [sustainable Region](https://aws.amazon.com/blogs/architecture/how-to-select-a-region-for-your-workload-based-on-sustainability-goals/) that also aligns with your overall networking and application architecture patterns.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

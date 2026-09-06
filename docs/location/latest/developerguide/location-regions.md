@@ -10,7 +10,3 @@ Amazon Location Service is available across multiple AWS regions globally. This 
 Amazon Location is available in the following AWS Regions, using the listed endpoints found [ here](https://docs.aws.amazon.com/general/latest/gr/location.html).
 
 For more information, see [AWS service endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

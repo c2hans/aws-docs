@@ -74,7 +74,3 @@ The following limitations and considerations apply when using IAM authentication
 + IAM authentication for replication connections is only available for Aurora PostgreSQL versions 11 and higher.
 + The publisher must support IAM authentication for replication connections.
 + The IAM authentication token expires after 15 minutes by default. You might need to refresh long-running replication connections before the token expires.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

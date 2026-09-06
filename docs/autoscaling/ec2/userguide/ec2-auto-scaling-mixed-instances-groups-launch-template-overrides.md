@@ -163,7 +163,3 @@ Use one of the following commands:
 <a name="multiple-launch-templates-related-resources"></a>
 
 You can find an example of specifying multiple launch templates using attribute-based instance type selection in a CloudFormation template on [AWS re:Post](https://repost.aws/articles/ARQeKDQX68TcqipYaaisl6bA/cloudformation-auto-scaling-group-sample-template-for-mixed-x86-intel-amd-and-aws-graviton-instances).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,7 +51,3 @@ If you keep the period field blank or set to **auto**, then it calculates automa
  Choosing a time series in the panel shows a context menu with a link to **View in CloudWatch console**. Choosing that link opens a new tab that takes you to the CloudWatch console and displays all the metrics for that query. If you’re not currently signed in to the CloudWatch console, the link forwards you to the sign-in page. The provided link is valid for any AWS account but only displays the correct metrics if you’re signed in to the AWS account that corresponds to the selected data source in Grafana.
 
  This feature is not available for metrics that are based on metric math expressions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

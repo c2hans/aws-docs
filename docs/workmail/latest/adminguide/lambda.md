@@ -257,7 +257,3 @@ For more code examples to use when creating Lambda functions for **Run Lambda** 
 <a name="lambda-more"></a>
 
 You can also access the full content of the email message that triggers the Lambda function. For more information, see [Retrieving message content with AWS Lambda](lambda-content.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

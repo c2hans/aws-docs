@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 
 No matter how you initiate match backfill requests in your game, your game server must be able to handle the game session updates that Amazon GameLift Servers delivers as a result of match backfill requests.
 
-When Amazon GameLift Servers completes a match backfill request—successfully or not—it calls your game server using the callback function `onUpdateGameSession`. This call has three input parameters: a match backfill ticket ID, a status message , and a GameSession object containing the most up-to-date matchmaking data including player information. You need to add the following code to your game server as part of your game server integration:
+When Amazon GameLift Servers completes a match backfill request—successfully or not—it calls your game server using the callback function `onUpdateGameSession`. This call has three input parameters: a match backfill ticket ID, a status message, and a GameSession object containing the most up-to-date matchmaking data including player information. You need to add the following code to your game server as part of your game server integration:
 
 1. Implement the `onUpdateGameSession` function. This function must be able to handle the following status messages (`updateReason`):
    + MATCHMAKING\_DATA\_UPDATED – New players were successfully matched to the game session. The `GameSession` object contains updated matchmaker data, including player data on existing players and newly matched players.
@@ -18,7 +18,3 @@ When Amazon GameLift Servers completes a match backfill request—successfully o
 1. For successful backfill matches, use the updated matchmaker data to handle the new players when they connect to the game session. At a minimum, you'll need to use the team assignments for the new player(s), as well as other player attributes that are required to get the player started in the game.
 
 1. In your game server's call to the Server SDK action [ ProcessReady()](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-server-sdk-cpp-ref-actions.html#integration-server-sdk-cpp-ref-processready), add the `onUpdateGameSession` callback method name as a process parameter.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ In this step, the business user validates the query results and checks whether t
 | As a user, I want to see the ancestors of a component. | Base table | `ComponentId = "<ComponentId>"`, then select the Path attribute.<br />(Find ancestors of a component.) |
 
 You can also implement a script (test) in any programming language to query DynamoDB directly and compare the results with the expected results.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -104,7 +104,3 @@ When a dataset is created by a user, all other members of the same permission gr
 ![A screenshot that shows the remove permission group drop down.](http://docs.aws.amazon.com/finspace/latest/userguide/images/04b-configuring-users-and-groups/remove-user-group.png)
 
 1. In the dialog box that appears, choose **Remove**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

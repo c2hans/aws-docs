@@ -20,7 +20,3 @@ There are also many AWS services and features that you can use to optimize your 
 | [Amazon WorkSpaces](https://aws.amazon.com/workspaces/) | You can use Amazon WorkSpaces products to access high-performance workstations, on demand, for your JD Edwards development and administrative client applications. |
 | [AWS IAM Identity Center](https://aws.amazon.com/iam/identity-center/) | You can use AWS Identity and Access Management (IAM) to provide authentication for EnterpriseOne. This service is available with EnterpriseOne Tools 9.2.5.4 or later, which supports JSON web tokens (JWTs). |
 | [Amazon Simple Email Service (Amazon SES)](https://aws.amazon.com/ses/) | Amazon SES provides a reliable and compliant way to manage your EnterpriseOne emails. This service is available for all EnterpriseOne releases by using a third-party utility for SMTP authentication. EnterpriseOne Tools 9.2.7 and later versions provide support for authenticated SMTP with EnterpriseOne. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

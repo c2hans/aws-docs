@@ -14,7 +14,3 @@ In this scenario, the downstream system must determine that there are duplicates
 The following diagram illustrates a setup that combines distributed encoding and redundancy. There are three pairs of redundant events. In each pair, the two events produce the same rendition.
 
 ![Downstream system choosing HLS outputs to construct the ABR stack.](http://docs.aws.amazon.com/elemental-live/latest/ug/images/opl-abr-redundancy-combo.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

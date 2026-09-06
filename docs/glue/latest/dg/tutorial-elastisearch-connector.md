@@ -201,7 +201,3 @@ After you save your job, you can run the job to perform the ETL operations.
 1. Using the AWS Glue Studio console, on the visual editor page, choose **Run**.
 
 1. In the success banner, choose **Run Details**, or you can choose the **Runs** tab of the visual editor to view information about the job run.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

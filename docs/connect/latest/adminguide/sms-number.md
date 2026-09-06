@@ -28,7 +28,3 @@ Providing incomplete or inaccurate information will increase the registration ti
 Registration for all types of OIDs in the US are managed by a third-party registrar. Amazon does not review applications.
 + Toll-free phone number registration requires the least amount of time to procure.
 + Review the [10DLC registration process](https://docs.aws.amazon.com/sms-voice/latest/userguide/registration-10dlc.html) explained in the *AWS End User Messaging SMS User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

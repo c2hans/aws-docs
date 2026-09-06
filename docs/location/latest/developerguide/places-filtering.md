@@ -30171,7 +30171,3 @@ If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide
 | 龍生堂薬局 | 龍生堂薬局 |
 
 To apply business chain filters, use the Place APIs with the ``businessChain`` parameter set to the desired chain identifier. For more information about business chain filters, see the Amazon Location Service [BusinessChain API reference](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_BusinessChain.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

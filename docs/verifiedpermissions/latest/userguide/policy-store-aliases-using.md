@@ -108,7 +108,3 @@ Because policy store aliases don't provide an atomic cut-over (see [Policy store
 1. Decommission the old policy store and its policy store alias after the new policy store is fully validated and serving all traffic.
 
 This pattern gives your application, rather than alias propagation, control over which policy store serves each request. That control is what makes the migration safe and reversible, and it avoids the transition window that repointing a policy store alias would introduce.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ Select a country below for step-by-step instructions on completing the registrat
 + [United States 10DLC registration](registrations-10dlc.md)
 + [United States Toll-free number registration](registrations-tfn.md)
 + [United States Short Code registration](registrations-us-short-code.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

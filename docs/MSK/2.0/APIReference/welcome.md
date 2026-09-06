@@ -6,7 +6,3 @@ source_url: https://docs.aws.amazon.com/MSK/2.0/APIReference/welcome.html
 <a name="welcome"></a>
 
 Welcome to API Reference 2.0. This API reference describes three new Amazon MSK operations: CreateClusterV2, ListClustersV2, and DescribeClusterV2. We recommend that you use these operations instead of the CreateCluster, ListClusters, and DescribeCluster that are described in [Amazon MSK API Reference 1.0](https://docs.aws.amazon.com/msk/1.0/apireference/what-is-msk.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query MSK` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

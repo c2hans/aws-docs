@@ -58,7 +58,3 @@ For writing Apache Parquet, AWS Glue ETL only supports writing to a governed tab
  You can use the following `format_options` values with any format type.
 + `attachFilename` — A string in the appropriate format to be used as a column name. If you provide this option, the name of the source file for the record will be appended to the record. The parameter value will be used as the column name.
 + `attachTimestamp` — A string in the appropriate format to be used as a column name. If you provide this option, the modification time of the source file for the record will be appended to the record. The parameter value will be used as the column name.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,7 +10,3 @@ Amazon Q Developer uses AWS Identity and Access Management (IAM) [ service-linke
 **Topics**
 + [Using service-linked roles for Amazon Q Developer](using-service-linked-roles-qdev.md)
 + [Using service-linked-roles for User Subscriptions](using-service-linked-roles-user-subs.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

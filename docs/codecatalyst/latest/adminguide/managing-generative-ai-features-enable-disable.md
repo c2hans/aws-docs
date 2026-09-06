@@ -34,7 +34,3 @@ Generative AI features are only available in the US West (Oregon) Region.
 1. To disable generative AI features for all projects in your space, choose the **Projects in this space can access generative AI features** toggle and make sure it is in the off position.
 **Warning**
 Disabling the generative AI features will stop work on all issues and summaries in all projects. The work cannot be restarted even if you immediately re-enable the generative AI features.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -129,7 +129,3 @@ A data pipeline can process the logs, events, and metrics that Kinesis Agent for
 To learn more about Kinesis Agent for Windows, we recommend that you start with the following sections:
 + [Amazon Kinesis Agent for Microsoft Windows Concepts](kinesis-agent-windows-concepts.md)
 + [Getting Started with Amazon Kinesis Agent for Microsoft Windows](getting-started.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Agent for Windows. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesis-agent-windows` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

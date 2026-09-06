@@ -81,7 +81,3 @@ Cloud computing should be purchased as a commercial item, and organizations shou
 <a name="define-cloud-evaluation-criteria.title"></a>
 
 Cloud evaluation criteria should focus on system performance requirements. Select the appropriate CSP from an established resource pool to take advantage of the cloud’s elasticity, cost efficiencies, and rapid scalability. This approach ensures that you get the best cloud services to meet your needs, the best value in these services, and the ability to take advantage of market-driven innovation. The National Institute of Standards and Technology (NIST) definitions of cloud benefits are an excellent starting point to use for determining cloud evaluation criteria: [Cloud Computing Synopsis and Recommendations: Recommendations of the National Institute of Standards and Technology](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-146.pdf).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

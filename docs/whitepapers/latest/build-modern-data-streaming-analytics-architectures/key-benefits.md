@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-modern-data-str
 +  The modern data architecture enables unified governance, which provides a secure, compliant, and auditable environment for data analytics workloads.
 +  Centralized management of ﬁne-grained permissions empowers security oﬃcers.
 +  The modern data architecture provides the required durability, availability, and scalability for various data analytics workloads. It can help you process exabytes of data stored within your data lakes and deploy models on ML services to serve hundreds of billions of inference requests.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

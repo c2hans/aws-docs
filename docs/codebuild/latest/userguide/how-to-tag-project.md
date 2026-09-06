@@ -23,7 +23,3 @@ When using the reserved capacity feature, data cached on fleet instances, includ
 + [View tags for a project](how-to-tag-project-list.md)
 + [Edit tags for a project](how-to-tag-project-update.md)
 + [Remove a tag from a project](how-to-tag-project-delete.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

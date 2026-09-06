@@ -64,7 +64,3 @@ When you launch an instance from an Amazon managed AWS Windows AMI, the root de
 | Install the current Citrix PV driver | Windows Server 2008 SP2 and earlier |
 | Install PowerShell 2.0 and 3.0 | Windows Server 2008 SP2 and R2 |
 | Apply the following hotfixes:+  [MS15-011](https://support.microsoft.com/en-us/help/3000483/ms15-011-vulnerability-in-group-policy-could-allow-remote-code-executi) <br />+  [KB2582281](https://support.microsoft.com/en-us/help/2582281/slow-failover-operation-if-no-router-exists-between-the-cluster-and-an) <br />+  [KB2634328](https://support.microsoft.com/en-us/help/2634328/increased-latency-occurs-on-an-http-connection-to-a-computer-that-is-r) <br />+  [KB2394911](https://support.microsoft.com/en-us/help/2394911/stop-error-0x000000d1-or-0x0000007e-in-an-smb2-environment-in-windows) <br />+  [KB2780879](https://support.microsoft.com/en-us/help/2780879/hotfix-improves-tcp-window-scaling-in-windows-vista--windows-server-20)  | Windows Server 2008 SP2 and R2 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

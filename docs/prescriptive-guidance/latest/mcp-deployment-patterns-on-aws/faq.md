@@ -35,7 +35,3 @@ While local MCP servers are convenient for individual developers, they have inhe
 + Limited scalability: Consumer laptops lack compute resources, memory, and storage for enterprise-scale data processing. Local servers cannot handle concurrent requests from multiple users or applications, restricting use to single-user scenarios.
 + Reliability concerns: Workstation reboots, network disconnections, and hardware failures impact availability. No built-in redundancy or failover capabilities exist. Service availability depends entirely on the developer's workstation being powered on and connected.
 + These limitations drive the need for remote deployment models on cloud infrastructure for team collaboration and production workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

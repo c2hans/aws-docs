@@ -87,7 +87,3 @@ Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the
 + [Microsoft Visual Studio 2019 (Community Edition)](https://visualstudio.microsoft.com/vs/)
 + [Intellisoft OLE DB Provider for Amazon Redshift (Trial)](https://www.pgoledb.com/index.php?option=com_filecabinet&view=files&id=1&Itemid=68)
 + [CData ADO.NET Provider for Amazon Redshift (Trial)](https://www.cdata.com/kb/tech/redshift-ado-ssas.rst)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

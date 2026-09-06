@@ -58,7 +58,3 @@ Disabling a scheduled report stops future report generation. Download links that
 
 **Note**
 Deleting a scheduled report does not delete any associated resources in AWS User Notifications. To remove notification configurations and email contacts, manage them directly in the AWS User Notifications console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

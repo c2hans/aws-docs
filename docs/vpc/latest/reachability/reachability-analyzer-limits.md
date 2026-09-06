@@ -16,7 +16,3 @@ Your AWS account has the following quotas related to Reachability Analyzer.
 | Paths |  1,000  | [Yes](https://console.aws.amazon.com/servicequotas/home/services/networkinsights/quotas/L-51CB2D5B) |
 | Analyses |  10,000  | [Yes](https://console.aws.amazon.com/servicequotas/home/services/networkinsights/quotas/L-44B7545B) |
 | Concurrent analyses |  100  | [Yes](https://console.aws.amazon.com/servicequotas/home/services/networkinsights/quotas/L-B393345A) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Virtual Private Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

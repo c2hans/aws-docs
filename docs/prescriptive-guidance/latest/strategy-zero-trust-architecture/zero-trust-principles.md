@@ -45,7 +45,3 @@ In a ZTA, each request to access a resource should be explicitly authorized by a
 <a name="core-principles-summary"></a>
 
 By adhering to these core principles of ZTA, organizations can establish a robust security model that aligns with the diversity of the modern enterprise environment. Implementing these principles requires a comprehensive approach that combines technology, processes, and people to achieve a zero trust mindset and build a resilient security posture.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

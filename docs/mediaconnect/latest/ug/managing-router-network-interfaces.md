@@ -20,7 +20,3 @@ This chapter shows you everything you need to know about working with router net
 + [Viewing router network interfaces in MediaConnect](viewing-router-network-interfaces.md)
 + [Updating a router network interface in MediaConnect](editing-router-network-interface.md)
 + [Deleting a router network interface in MediaConnect](deleting-router-network-interface.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

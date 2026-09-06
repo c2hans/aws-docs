@@ -20,7 +20,3 @@ Process orchestration and control using [AWS IoT Greengrass](https://aws.amazon.
 [FreeRTOS](https://www.freertos.org/) is a real-time operating system (OS) with built-in libraries to establish a secure connection with AWS services and enable over-the-air updates. It is well suited for industrial control tasks, and as an embedded controller in smart industrial sensors, actuators, pumps, and other components.
 
 In this scenario, the cloud-enabled component could exist in Levels 0-3 of the plant networks. With the ability to write back to the controllers and control industrial equipment, this scenario warrants careful security planning and implementation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ You can purchase a paid AMI by using the Amazon EC2 launch wizard. For more info
 To use the AWS Marketplace, you must have an AWS account. To launch instances from AWS Marketplace products, you must be signed up to use the Amazon EC2 service, and you must be subscribed to the product from which to launch the instance. You can use one of the following methods to subscribe to products in the AWS Marketplace:
 + **AWS Marketplace website**: You can launch preconfigured software quickly with the 1-Click deployment feature. For more information, see [AMI-based products in AWS Marketplace](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-server-products.html).
 + **Amazon EC2 launch wizard**: You can search for an AMI and launch an instance directly from the wizard. For more information, see [Launch an Amazon EC2 instance from an AWS Marketplace AMI](launch-marketplace-console.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

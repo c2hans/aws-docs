@@ -10,7 +10,3 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/security-be
 + Confirm your [delivery channels](https://docs.aws.amazon.com/config/latest/developerguide/manage-delivery-channel.html) have been properly set, and once confirmed, verify that AWS Config is [recording properly](https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html).
 
 For more information, see [AWS Config best practices](https://aws.amazon.com/blogs/mt/aws-config-best-practices/) blog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -127,7 +127,7 @@ To publish an app publicly (Free and Plus accounts):
 After publishing, the app receives a public URL that you can share with anyone. Anonymous viewers can use the app without creating an account.
 
 **Important**
-Public apps cannot use action connectors, embedded visuals, embedded chat experiences, or Amazon Quick spaces. If your app uses any of these integrations, remove them before publishing publicly.
+Public apps cannot use connectors, embedded visuals, embedded chat experiences, or Amazon Quick spaces. If your app uses any of these integrations, remove them before publishing publicly.
 
 ## Manage public app usage
 <a name="apps-manage-public-usage"></a>
@@ -141,7 +141,3 @@ To manage or revoke public access:
 1. Change the access level from **Public** to **Limited** or **Account**.
 
 Revoking public access takes effect immediately. The public URL stops working and anonymous viewers can no longer access the app.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

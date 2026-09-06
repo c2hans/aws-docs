@@ -38,7 +38,3 @@ Elemental Live can't ingest more than one audio stream in one SMPTE 2110 input.
   - **Direction:** Input / **Details:** The SMPTE 2110 source must be Precision Time Protocol (PTP) locked. <br />If it isn't locked, the video, audio, and ancillary data might not get synchronized properly during processing, resulting in unsynchronized media in all the outputs in the event.
   - **Direction:** Output / **Details:** You must [enable PTP](enable-ptp.md) in Elemental Live so that the SMPTE 2110 outputs include RTP packet timestamps. This timestamp synchronizes the video, audio, and ancillary data. It ensures that the output is PTP-locked.
   - **Applicable standard:** SMPTE 2110-21
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

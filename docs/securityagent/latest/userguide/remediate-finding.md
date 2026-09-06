@@ -52,7 +52,3 @@ Run the penetration test to detect findings. For more information, see [Review f
 1. If you want to manually start a code remediation, choose the **Remediate code** button.
 
 1. In the **Code Remediation** section of the finding, you can view the code remediation status and links to the pull requests (or merge requests). For Amazon S3 sources, the code remediation is available as a downloadable code diff instead. You can run `git apply /path/to/code_remediation_changes.diff` to apply the change locally.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

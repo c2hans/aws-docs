@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 <a name="fsiops-bp06-prescriptive-guidance"></a>
 
  Use the [AWS Compliance Center](https://www.atlas.aws/) to learn about key cloud-related regulatory requirements that impact your use of the cloud, and the regulations that apply within your geography. Design a process to monitor evolving changes to compliance and regulatory obligations. Use [AWS Config Conformance Packs](https://docs.aws.amazon.com/config/latest/developerguide/conformance-packs.html) and AWS Audit Manager to continually evaluate your compliance to applicable regulatory frameworks. If appropriate, review the [AWS Sub-Processors](https://aws.amazon.com/compliance/sub-processors/) list and [sign up](https://pages.awscloud.com/sub-processors/) to be notified of changes. Use [AWS Artifact](https://aws.amazon.com/artifact/) to gather compliance reports that apply to your workload and geography.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

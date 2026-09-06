@@ -27,7 +27,3 @@ You can run the following from a command prompt on the instance to open the Acti
 1. A dialog box will appear prompting you to confirm you want to delete the user. Choose **Yes** to delete the user.
 
 Deleted users are stored temporarily in the AD Recycle Bin. For more information about the AD Recycle Bin, see [The AD Recycle Bin: Understanding, Implementing, Best Practices, and Troubleshooting](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/the-ad-recycle-bin-understanding-implementing-best-practices-and/ba-p/396944) in Microsoft's Ask the Directory Services Team blog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

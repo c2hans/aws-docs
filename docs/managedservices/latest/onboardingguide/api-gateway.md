@@ -25,7 +25,3 @@ Request access to API Gateway by submitting an RFC with the Management \| AWS se
 **Q: What are the prerequisites or dependencies to using Amazon API Gateway in my AMS account?**
 
 It depends on the type of API Gateway you want to deploy. It can be a standalone service, but it can also request access to existing services (for instance, network load balancer).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -207,7 +207,3 @@ Consider the following best practices for using Amazon Braket. Save time, minimi
  **Check all Regions for quantum tasks**
 + The console displays quantum tasks only for your current AWS Region. When looking for billable quantum tasks that have been submitted, be sure to check all Regions.
 + You can view a list of devices and their associated Regions on the [Supported Devices](braket-devices.md) documentation page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

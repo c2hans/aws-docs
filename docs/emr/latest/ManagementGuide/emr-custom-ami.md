@@ -325,7 +325,3 @@ When you create a custom AMI for Amazon EMR, consider the following:
 + When preparing a new custom AMI (including base Amazon Linux AMIs) for use with Amazon EMR in a production environment, you should first test it in a development environment to ensure that your cluster provisions successfully and your applications and customizations work as expected.
 
 For more information, see [Creating an Amazon EBS-backed Linux AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html) in the *Amazon EC2 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

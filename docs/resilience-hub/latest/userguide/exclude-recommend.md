@@ -86,7 +86,3 @@ For more information about restricting permissions to include or exclude recomme
    1. From **Actions**, choose **Include selected**.
 
    1. From **Include recommendations** dialog, choose **Include selected** to include all the selected tests in your application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

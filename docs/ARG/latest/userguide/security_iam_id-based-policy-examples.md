@@ -135,7 +135,3 @@ You can use conditions in your identity-based policy to control access to Resour
 ------
 
 You can attach this policy to the principals in your account. If a principal with the tag key `project` and tag value `alpha` attempts to view a resource group, the group must also be tagged `project=alpha`. Otherwise the user is denied access. The condition tag key `project` matches both `Project` and `project` because condition key names are not case-sensitive. For more information, see [IAM JSON Policy Elements: Condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) in the *IAM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Resource Groups. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ARG` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

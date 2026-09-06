@@ -13,7 +13,3 @@ You can choose to opt out of having your event data used to develop or improve t
 
 **Note**
 Your AWS accounts will need to be centrally managed by AWS Organizations for you to be able to use the opt-out policy. If you have not already created an organization for your AWS accounts, visit [Creating and managing an organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org.html) page and follow the process explained there.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

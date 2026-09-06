@@ -26,7 +26,3 @@ If you enter the 13-digit meeting ID generated using an Amazon Chime client, you
 When you join a moderated meeting, you can't interact with other attendees until a moderator joins and starts the meeting.
 
 To join the call as a moderator, enter the moderator passcode to start the meeting. Moderators who join a moderated a meeting using a supported in-room video system can also perform additional actions from the conference system dial pad. For more information about moderator dial pad actions, see [Moderator actions using phone or in-room video systems](moderate-meeting.md#actions-phone-vid). For more information about moderated meetings, see [Scheduling moderated meetings](moderate-meeting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ If you manage users in AWS Managed Microsoft AD, make sure that the IAM Identity
 1. In the **Assign users** dialog box, enter a user display name or group name. You can specify multiple users or groups by selecting the applicable accounts as they appear in search results.
 
 1. Choose **Assign users**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

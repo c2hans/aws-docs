@@ -20,7 +20,3 @@ After installing and configuring the AWS Service Management Connector, you must 
 
      Add **System Administrator** to the new ServiceNow group **Order\_AWS\_Products**. In a real scenario, these roles would likely be granted to different users or groups.
    + **Abel Tuter**: The user **abel.tuter** is an illustrative end user. Grant Abel the new role **Order\_AWS\_Products**. This permission allows Abel to order products from AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

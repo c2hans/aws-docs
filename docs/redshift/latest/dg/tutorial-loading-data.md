@@ -137,7 +137,7 @@ In this step, you create an Amazon S3 bucket and upload the data files to the bu
 
    1. In the **Bucket Name** box of the **Create bucket** dialog box, enter a bucket name.
 
-      The bucket name you choose must be unique among all existing bucket names in Amazon S3. One way to help ensure uniqueness is to prefix your bucket names with the name of your organization. Bucket names must comply with certain rules. For more information, go to [Bucket restrictions and limitations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html) in the *Amazon Simple Storage Service User Guide.*
+      The bucket name you choose must be unique among all existing bucket names in Amazon S3. One way to help make your bucket names unique is to prefix them with the name of your organization. Bucket names must comply with certain rules. For more information, go to [Bucket restrictions and limitations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html) in the *Amazon Simple Storage Service User Guide.*
 
    1. Choose the recommended defaults for the rest of the options.
 
@@ -376,11 +376,11 @@ options;
 
 For each COPY command, do the following:
 
-1. Replace {{<your-bucket-name>}} with the name of a bucket in the same region as your cluster.
+1. Replace {{<your-bucket-name>}} with the name of a bucket in the same Region as your cluster.
 
-   This step assumes the bucket and the cluster are in the same region. Alternatively, you can specify the region using the [REGION](copy-parameters-data-source-s3.md#copy-region) option with the COPY command.
+   This step assumes the bucket and the cluster are in the same Region. Alternatively, you can specify the Region using the [REGION](copy-parameters-data-source-s3.md#copy-region) option with the COPY command.
 
-1. Replace {{<aws-account-id>}} and {{<role-name>}} with your own AWS account and IAM role. The segment of the credentials string that is enclosed in single quotation marks must not contain any spaces or line breaks. Note that the ARN might differ slightly in format than the sample. It's best to copy the ARN for the role from the IAM console, to ensure that it's accurate, when you run the COPY commands.
+1. Replace {{<aws-account-id>}} and {{<role-name>}} with your own AWS account and IAM role. The segment of the credentials string that is enclosed in single quotation marks must not contain any spaces or line breaks. Note that the ARN might differ slightly in format than the sample. It's best to copy the ARN for the role from the IAM console, to make sure that it's accurate, when you run the COPY commands.
 
 #### Load the PART table using NULL AS
 <a name="tutorial-loading-load-part"></a>
@@ -404,7 +404,7 @@ part-csv.tbl-007
 ```
 <a name="tutorial-loading-csv-format"></a>
 **CSV format**
-CSV, which stands for comma separated values, is a common format used for importing and exporting spreadsheet data. CSV is more flexible than comma-delimited format because it enables you to include quoted strings within fields. The default quotation mark character for COPY from CSV format is a double quotation mark ( " ), but you can specify another quotation mark character by using the QUOTE AS option. When you use the quotation mark character within the field, escape the character with an additional quotation mark character.
+CSV, which stands for comma separated values, is a common format used for importing and exporting spreadsheet data. CSV is more flexible than comma-delimited format because you can include quoted strings within fields. The default quotation mark character for COPY from CSV format is a double quotation mark ( " ), but you can specify another quotation mark character by using the QUOTE AS option. When you use the quotation mark character within the field, escape the character with an additional quotation mark character.
 
 The following excerpt from a CSV-formatted data file for the PART table shows strings enclosed in double quotation marks (`"LARGE ANODIZED BRASS"`). It also shows a string enclosed in two double quotation marks within a quoted string (`"MEDIUM ""BURNISHED"" TIN"`).
 
@@ -467,7 +467,7 @@ The `part-csv.tbl` data files use the NUL terminator character (`\x000` or `\x0`
 **Note**
 Despite very similar spelling, NUL and NULL are not the same. NUL is a UTF-8 character with codepoint `x000` that is often used to indicate end of record (EOR). NULL is a SQL value that represents an absence of data.
 
-By default, COPY treats a NUL terminator character as an EOR character and terminates the record, which often results in unexpected results or an error. There is no single standard method of indicating NULL in text data. Thus, the NULL AS COPY command option enables you to specify which character to substitute with NULL when loading the table. In this example, you want COPY to treat the NUL terminator character as a NULL value.
+By default, COPY treats a NUL terminator character as an EOR character and terminates the record, which often results in unexpected results or an error. There is no single standard method of indicating NULL in text data. Thus, the With the NULL AS COPY command option, you can specify which character to substitute with NULL when loading the table. In this example, you want COPY to treat the NUL terminator character as a NULL value.
 
 **Note**
 The table column that receives the NULL value must be configured as *nullable.* That is, it must not include the NOT NULL constraint in the CREATE TABLE specification.
@@ -512,9 +512,9 @@ The following excerpt from the data for the SUPPLIER table uses pipe-delimited f
 ```
 <a name="tutorial-loading-region"></a>
 **REGION**
-Whenever possible, you should locate your load data in the same AWS region as your Amazon Redshift cluster. If your data and your cluster are in the same region, you reduce latency and avoid cross-region data transfer costs. For more information, see [Amazon Redshift best practices for loading data](c_loading-data-best-practices.md).
+Whenever possible, you should locate your load data in the same AWS Region as your Amazon Redshift cluster. If your data and your cluster are in the same Region, you reduce latency and avoid cross-region data transfer costs. For more information, see [Amazon Redshift best practices for loading data](c_loading-data-best-practices.md).
 
-If you must load data from a different AWS region, use the REGION option to specify the AWS region in which the load data is located. If you specify a region, all of the load data, including manifest files, must be in the named region. For more information, see [REGION](copy-parameters-data-source-s3.md#copy-region).
+If you must load data from a different AWS Region, use the REGION option to specify the AWS Region in which the load data is located. If you specify a Region, all of the load data, including manifest files, must be in the named Region. For more information, see [REGION](copy-parameters-data-source-s3.md#copy-region).
 
 For example, if your cluster is in the US East (N. Virginia) Region, and your Amazon S3 bucket is located in the US West (Oregon) Region, the following COPY command shows how to load the SUPPLIER table from pipe-delimited data.
 
@@ -576,7 +576,7 @@ Execution time: 2.95s
 ```
 <a name="tutorial-loading-maxerror"></a>
 **MAXERROR**
-By default, the first time COPY encounters an error, the command fails and returns an error message. To save time during testing, you can use the MAXERROR option to instruct COPY to skip a specified number of errors before it fails. Because we expect errors the first time we test loading the CUSTOMER table data, add `maxerror 10` to the COPY command.
+By default, the first time COPY encounters an error, the command fails and returns an error message. To save time during testing, you can use the MAXERROR option to instruct COPY to skip a specified number of errors before it fails. Because you can expect errors the first time you test loading the CUSTOMER table data, add `maxerror 10` to the COPY command.
 
 To test using the FIXEDWIDTH and MAXERROR options, run the following command.
 
@@ -686,7 +686,7 @@ For this step, you add the ACCEPTINVCHARS with the replacement character `'^'`.
 **MANIFEST**
 When you COPY from Amazon S3 using a key prefix, there is a risk that you might load unwanted tables. For example, the `'s3://amzn-s3-demo-bucket/load/` folder contains eight data files that share the key prefix `customer-fw.tbl`: `customer-fw.tbl0000`, `customer-fw.tbl0001`, and so on. However, the same folder also contains the extraneous files `customer-fw.tbl.log` and `customer-fw.tbl-0001.bak`.
 
-To ensure that you load all of the correct files, and only the correct files, use a manifest file. The manifest is a text file in JSON format that explicitly lists the unique object key for each source file to be loaded. The file objects can be in different folders or different buckets, but they must be in the same region. For more information, see [MANIFEST](copy-parameters-data-source-s3.md#copy-manifest).
+To make sure that you load all of the correct files, and only the correct files, use a manifest file. The manifest is a text file in JSON format that explicitly lists the unique object key for each source file to be loaded. The file objects can be in different folders or different buckets, but they must be in the same region. For more information, see [MANIFEST](copy-parameters-data-source-s3.md#copy-manifest).
 
 The following shows the `customer-fw-manifest` text.
 
@@ -886,7 +886,3 @@ For more information about Amazon Redshift best practices, see the following lin
 + [Amazon Redshift best practices for loading data](c_loading-data-best-practices.md)
 + [Amazon Redshift best practices for designing tables](c_designing-tables-best-practices.md)
 + [Amazon Redshift best practices for designing queries](c_designing-queries-best-practices.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

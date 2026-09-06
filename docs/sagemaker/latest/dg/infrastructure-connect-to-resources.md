@@ -18,7 +18,3 @@ The following topics describe how to connect your Studio instances and notebook 
 + [Connect Amazon SageMaker Studio in a VPC to External Resources](studio-updated-and-internet-access.md)
 + [Connect Studio notebooks in a VPC to external resources](studio-notebooks-and-internet-access.md)
 + [Connect a Notebook Instance in a VPC to External Resources](appendix-notebook-and-internet-access.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -417,7 +417,3 @@ Compare your results to the following.
 **Warning**
 Remember that having an AWS Cloud9 development environment might result in charges to your AWS account. These include possible charges for Amazon EC2 if you are using an EC2 environment. For more information, see [Amazon EC2 Pricing](https://aws.amazon.com/ec2/pricing/).
 There are additional topics in the parent section (*[Working with the IDE](ide.md)*) that you might want to explore. However, when you are finished touring the AWS Cloud9 IDE and no longer need the environment, be sure to delete it and its associated resources, as described in [Deleting an Environment](delete-environment.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

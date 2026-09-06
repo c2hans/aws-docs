@@ -23,7 +23,3 @@ Proceed to the following topics to set up for SageMaker HyperPod cluster observa
 + [Setting up an Amazon Managed Grafana workspace](sagemaker-hyperpod-cluster-observability-slurm-managed-grafana-ws.md)
 + [Exported metrics reference](sagemaker-hyperpod-cluster-observability-slurm-exported-metrics-reference.md)
 + [Amazon SageMaker HyperPod Slurm metrics](smcluster-slurm-metrics.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

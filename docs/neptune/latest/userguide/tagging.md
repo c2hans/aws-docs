@@ -54,7 +54,3 @@ You can specify that tags are copied to DB snapshots for the following actions:
 **Note**
 If you include a value for the `--tag-key` parameter of the [create-db-cluster-snapshot](https://docs.aws.amazon.com/cli/latest/reference/neptune/create-db-cluster-snapshot.html) AWS CLI command (or supply at least one tag to the [CreateDBClusterSnapshot](api-snapshots.md#CreateDBClusterSnapshot) API action), Neptune doesn't copy tags from the source DB instance to the new DB snapshot. This is true even if the source DB instance has the `--copy-tags-to-snapshot` (`CopyTagsToSnapshot`) option enabled.
 This means that you can create a copy of a DB instance from a DB snapshot and avoid adding tags that don't apply to the new DB instance. After you create your DB snapshot using the AWS CLI `create-db-cluster-snapshot` command (or the `CreateDBClusterSnapshot` Neptune API action), you can then add tags as described later in this topic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

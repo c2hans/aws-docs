@@ -21,7 +21,3 @@ On the **User groups** page, you can view the user groups you created or importe
 | Number of users | The number of users assigned to the group. |
 | Users | The users assigned to the group. |
 | Session templates | The session templates assigned to the group. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

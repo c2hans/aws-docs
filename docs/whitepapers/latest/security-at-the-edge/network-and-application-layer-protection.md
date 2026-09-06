@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
  With CloudWatch, you can monitor web requests and web access control lists (ACLs) and rules. CloudWatch collects and processes raw data from AWS WAF and Shield Advanced into readable, near-real-time metrics. AWS WAF supports full logging of all web requests inspected by the service, which can then be stored in the cloud for compliance and auditing purposes, and used for debugging and additional forensics. You can also integrate the logs with your security information and event management (SIEM) and log analysis tools. For details, see [AWS WAF Launches New Comprehensive Logging Functionality](https://aws.amazon.com/about-aws/whats-new/2018/08/aws-waf-launches-new-comprehensive-logging-functionality/).
 
  For more details about AWS WAF, see the [Appendix](appendix-aws-services-for-edge-computing.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

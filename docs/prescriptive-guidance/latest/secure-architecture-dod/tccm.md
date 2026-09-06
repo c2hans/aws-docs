@@ -31,7 +31,3 @@ Although the LZA implements least privilege access and programmatic, short-term 
 For more information about implementing AWS Managed Microsoft AD, see the [AWS Managed Microsoft AD](https://catalog.workshops.aws/ad-id/en-US/1-aws-managed-microsoft-ad/deploymgmt) section of the *Active Directory on AWS Immersion Day* workshop.
 
 The [AWS shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/) applies to the TCCM and the LZA. The LZA builds the foundational aspects of access control, but each organization is responsible for the configuration of their security controls.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

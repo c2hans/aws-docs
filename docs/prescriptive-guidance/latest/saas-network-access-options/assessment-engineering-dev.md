@@ -145,7 +145,3 @@ The network access approach doesn't scale effectively, possibly due to inherent 
 + How does the approach handle network latency and jitter? Are there mechanisms to optimize data throughput and minimize delays?
 + Can the network access approach adapt to varying network conditions? Can it provide a single-tenant experience for every customer?
 + What is the impact of the network access approach on the underlying infrastructure? Does it require significant upgrades or changes to existing systems?
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

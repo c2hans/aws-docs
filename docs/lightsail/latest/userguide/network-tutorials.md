@@ -16,7 +16,3 @@ This section covers the following topics related to configuring IPv6 on Lightsai
 Follow the step-by-step instructions to learn how to configure IPv6 on your Lightsail instance blueprints.
 
 The guide covers various instance blueprints, including cPanel, GitLab, Nginx, and Plesk. The procedures involve connecting to your instance via SSH, modifying network configuration files, restarting services, and verifying that the instance recognizes its assigned IPv6 address. By following this guide, you can ensure that your Lightsail instances are properly configured to utilize both IPv4 and IPv6 addresses, enabling better connectivity and preparing your applications for the future of the internet.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

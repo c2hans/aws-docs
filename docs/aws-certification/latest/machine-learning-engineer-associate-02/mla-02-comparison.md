@@ -151,7 +151,3 @@ MLA-C01 Task Statement 4.2 is mapped to the following task in MLA-C02:
 
 MLA-C01 Task Statement 4.3 is mapped to the following task in MLA-C02:
 + 4.3 Secure ML and AI workloads and model endpoints.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ To learn more about CloudFormation, see the following resources:
 + [Creating Amazon ECS resources using the CloudFormation console](ecs-cloudformation-console.md)
 + [Creating Amazon ECS resources using AWS CLI commands for CloudFormation](ecs-cloudformation-cli.md)
 + [CloudFormation example templates for Amazon ECS](working-with-templates.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

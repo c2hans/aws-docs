@@ -78,7 +78,3 @@ If you delete an Amazon SNS topic using the SNS console, this change will not im
 Therefore, to avoid missing important directory status messages, before deleting any topic that receives messages from Directory Service, associate your directory with a different Amazon SNS topic.
 
 For more information on how to delete an Amazon SNS topic, see [Deleting an Amazon SNS topic and subscription](https://docs.aws.amazon.com/sns/latest/dg/sns-delete-subscription-topic.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

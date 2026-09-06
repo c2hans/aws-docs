@@ -26,7 +26,3 @@ Amazon SNS provides the following APIs for data retrieval.
 | <a name="sns-ListSubscriptionsByTopic"></a>[ListSubscriptionsByTopic](https://docs.aws.amazon.com/sns/latest/api/API_ListSubscriptionsByTopic.html) | Return a list of the subscriptions to a specific topic | List |
 | <a name="sns-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/sns/latest/api/API_ListTagsForResource.html) | List all tags added to the specified Amazon SNS topic | Read |
 | <a name="sns-ListTopics"></a>[ListTopics](https://docs.aws.amazon.com/sns/latest/api/API_ListTopics.html) | Return a list of the requester's topics | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -264,7 +264,3 @@ If the consumer is another RDS for MySQL or RDS for MariaDB DB instance, run the
 1. [mysql.rds\_set\_external\_master](mysql-stored-proc-replicating.md#mysql_rds_set_external_master) (for version 8.0 and lower) or [mysql\_rds\_set\_external\_source](mysql-stored-proc-replicating.md#mysql_rds_set_external_source) (for version 8.4 and higher)
 
 1. [mysql.rds\_start\_replication](mysql-stored-proc-replicating.md#mysql_rds_start_replication)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

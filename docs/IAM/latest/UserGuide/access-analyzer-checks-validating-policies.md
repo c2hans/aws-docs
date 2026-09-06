@@ -41,7 +41,3 @@ Custom policy checks are environment-agnostic in their analysis. Their analysis 
 <a name="access-analyzer-custom-policy-checks-failed-check"></a>
 
 When a custom policy check fails, the response from IAM Access Analyzer includes the [statement ID (`Sid`)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_sid.html) of the policy statement that caused the check to fail. Although the statement ID is an optional policy element, we recommend that you add a statement ID for every policy statement. The custom policy check also returns a statement index to help identify the reason for the check failure. The statement index follows zero-based numbering, where the first statement is referenced as 0. When there are multiple statements that cause a check to fail, the check returns only one statement ID at a time. We recommend that you fix the statement highlighted in the reason and rerun the check until it passes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

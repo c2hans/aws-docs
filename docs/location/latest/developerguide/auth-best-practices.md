@@ -75,7 +75,3 @@ For server-side applications and internal tools, use AWS Identity and Access Man
 + **Apply resource-level permissions** – Specify resource ARNs in your policies rather than using wildcards. For example, restrict access to specific tracker or geofence collection resources.
 + **Use policy conditions** – Add conditions such as `aws:RequestedRegion` to limit access to specific Regions, or `aws:PrincipalTag` for attribute-based access control.
 + **Enable CloudTrail** – Use AWS CloudTrail to log all Amazon Location Service API calls for auditing and compliance. Review logs regularly for unexpected access patterns.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

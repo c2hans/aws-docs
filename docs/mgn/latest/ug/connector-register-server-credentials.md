@@ -59,7 +59,3 @@ To perform actions on your source server, you must provide source server credent
 +
 **Note**
 The CA/HostKey validation is controlled by the validation flags (`WinCaValidation` and `LinuxHostKeyValidation`). When a validation flag is set to true, you must provide the corresponding CA or HostKey value. When set to false, the CA or HostKey fields should be omitted or left empty. If you do not provide the required value when validation is enabled, credential validation will fail with a "mandatory field not found" error.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

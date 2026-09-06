@@ -81,7 +81,3 @@ To delete the training data you uploaded, ` electricityusagedata.csv`, see [How 
 | Dataset |  | All `DatasetImportJob`s that target the dataset are also deleted.<br />You can't delete a `Dataset` that is used by a predictor. |
 | DatasetSchema | All datasets that reference the schema. |  |
 | DatasetGroup | All associated predictorsAll associated forecasts.<br />All datasets in the dataset group. | You can't delete a `DatasetGroup` that contains a `Dataset` used by a predictor. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Forecast. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query forecast` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

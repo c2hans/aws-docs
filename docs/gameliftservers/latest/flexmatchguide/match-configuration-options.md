@@ -25,7 +25,3 @@ You can designate that certain player slots in each match be reserved and filled
 
 **Custom Event Data**
 Use this property to include a set of custom information in all matchmaking-related events for the matchmaker. This feature can be useful for tracking certain activity unique to your game, including tracking performance of your matchmakers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

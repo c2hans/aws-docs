@@ -59,7 +59,3 @@ Before starting the transcode, the transcoder gets the timecode from the source.
 After the initial sampling, Elemental Live calculates the timecode of every frame and attaches it to the output. The timecode stops advancing if there is no output. So, for example, if the input fails at 10:55:03:009, the timecode at that point is 10:55:03:009. If the input restarts 3 seconds later, the timecode of the next frame might be 10:55:03:012. The timecode will *not* be 10:55:**06**:009.
 
 Given the importance of accurate times with SCTE-35 messages, ensure that the **Network Time Protocol (NTP)** is configured on the node.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

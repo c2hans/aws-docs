@@ -63,7 +63,3 @@ This only applies to AWS ParallelCluster versions up to and including version 2.
 The job is removed from the system and the node is removed from the scheduler. The job isn't rerun. If multiple jobs are running on the instance when it is interrupted, Torque might time out during node removal. An error might display in the [`sqswatcher`](processes.md#sqswatcher) log file. This doesn't affect scaling logic, and a proper cleanup is performed by subsequent retries.
 
 For more information about Spot Instances, see [Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html) in the *Amazon EC2 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

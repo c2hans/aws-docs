@@ -58,7 +58,3 @@ In addition to using an email delivery channel, you can also use the AWS Console
 + [What is the AWS Console Mobile Application](https://docs.aws.amazon.com/consolemobileapp/latest/userguide/what-is-consolemobileapp.html), in the *AWS Console Mobile Application User Guide*.
 + [What is AWS Chatbot](https://docs.aws.amazon.com/chatbot/latest/adminguide/what-is.html), in the *Amazon Q Developer in chat applications Administrator Guide*.
 + [Creating a notification configuration](https://docs.aws.amazon.com/notifications/latest/userguide/getting-started.html#getting-started-step1), in the *User Notifications User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

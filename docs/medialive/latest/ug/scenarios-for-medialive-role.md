@@ -36,7 +36,3 @@ For example, you might have the following requirements:
 + A requirement that each user should be allowed to display only specific roles on the console, to prevent a user from viewing a role they should not know about or to prevent a user from selecting the wrong role. For example, you might want to set up so that only user A can work with workflow X, and you might further require that only user A knows about workflow X.
 
 If the complex option is applicable to your deployment, follow the steps in [Create the trusted entity - complex option](setup-trusted-entity-complex.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,3 @@ The following table describes important additions and updates to the *AWS SDKs a
 | [Settings update](#doc-history) | Minor updates to config file details and to supported settings. | June 15, 2022 |
 | [Update](#doc-history) | Massive update of almost all parts of this guide. | February 1, 2022 |
 | [Initial release](#doc-history) | The first release of this guide is released to the public. | March 13, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdkref` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

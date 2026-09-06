@@ -22,7 +22,3 @@ Find the right starting point for what you want to do with AWS Security Agent. U
 
 **Note**
 AWS Security Agent uses three roles, which you can identify by the interface you work in: **Admin** works in the AWS Management Console (setup and configuration), **User** works in the web application (running assessments and reviewing findings), and **Developer** works in GitHub or an IDE such as Kiro or Claude Code. A single person can hold more than one role. For full definitions, see [How AWS Security Agent works](how-it-works.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

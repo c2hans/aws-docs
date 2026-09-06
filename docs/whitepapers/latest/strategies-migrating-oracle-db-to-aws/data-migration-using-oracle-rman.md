@@ -63,7 +63,3 @@ DUPLICATE TARGET DATABASE TO DBONEC2
  The duration of this process varies based on the size of the database and the type of Amazon EC2 instance. For better performance, use [Amazon Elastic Block Store](https://aws.amazon.com/ebs/) (Amazon EBS) General Purpose (SSD) [volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html) for the RMAN backup files. For more information about SSD volume types, see [Introducing the Amazon EBS General Purpose (SSD) volume type](https://aws.amazon.com/about-aws/whats-new/2014/06/16/introducing-the-amazon-ebs-general-purpose-ssd-volume-type/).
 
  Once the process is finished, RMAN produces a completion message, and you now have your duplicate instance. After verification, you can delete the Amazon EBS volumes containing the RMAN backup files. We recommend that you take a snapshot of the volumes for later use before deleting them if needed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

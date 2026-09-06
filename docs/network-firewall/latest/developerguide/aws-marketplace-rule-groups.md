@@ -119,7 +119,3 @@ For more information about a rule in an AWS Marketplace managed rule group, see 
 <a name="considerations-aws-marketplace-managed-rule-groups"></a>
 
 You can subscribe to AWS Marketplace managed rule groups either by visiting the product page in the Marketplace console or via Network Firewall console. While the experience is similar, you would be automatically redirected to the Seller's home page while subscribing to the product from Marketplace console, however you would not be redirected to this page if you attempted to subscribe via NFW console. If you would like to use NFW console to subscribe to a AWS Marketplace managed rule group, we recommend visiting the seller's home page and enter your details separately.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

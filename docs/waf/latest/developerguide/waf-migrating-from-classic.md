@@ -28,7 +28,3 @@ Before you start your migration work, familiarize yourself with AWS WAF by readi
 + [Migration caveats and limitations](waf-migrating-caveats.md)
 + [How the migration works](waf-migrating-how-it-works.md)
 + [Migrating a protection pack (web ACL) from AWS WAF Classic to AWS WAF](waf-migrating-procedure.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -99,7 +99,3 @@ The actions mode parameter accepts the following values:
 + `skip-all` - The experiment will skip all actions on target resources.
 
 To learn more about how to set the actions mode parameter when you start an experiment, see [Generate a target preview from an experiment template](generate-target-preview.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

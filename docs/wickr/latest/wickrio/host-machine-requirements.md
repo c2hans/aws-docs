@@ -42,7 +42,3 @@ If you plan to use other AWS services with a Wickr bot, you must ensure the host
 <a name="persistent-data"></a>
 
 The Wickr IO Docker container will also require access to the host file system in order to save persistent data. This is necessary to stop or upgrade the image without losing the state of your Wickr IO clients. You will need to specify this location to the Docker image when you run it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

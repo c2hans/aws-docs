@@ -12,7 +12,3 @@ AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container 
 ![All APIs discovered in a solution and their associated classes.](http://docs.aws.amazon.com/microservice-extractor/latest/userguide/images/APIsTable.png)
 
  **Note:** The groups created will be created using the classes that the corresponding APIs belong to; therefore a class containing multiple APIs will not be able to have its APIs in separate groups.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

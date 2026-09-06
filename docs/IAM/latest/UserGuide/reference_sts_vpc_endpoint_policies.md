@@ -260,7 +260,3 @@ The deny statement uses `"Principal": {"AWS": "*"}`, which scopes it to authenti
 
 **Note**
 The first statement allows all actions for all principals. The deny in the second statement takes precedence for authenticated AWS principals outside your organization. Federated callers are allowed by the first statement and are unaffected by the deny because the `Principal` element in the deny statement does not match them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

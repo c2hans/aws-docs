@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 +  **Real-time bidding (RTB):** The process of purchasing and selling digital ad space through real-time auctions that occur in the time it takes a webpage to load
 +  **Programmatic advertising:** The buying and selling of online media via automated systems (advertising platforms).
 +  **VAST (video ad-serving template):** An XML schema developed by the IAB that allows in-stream video ads to be served from video ad servers and played in video players across a number of websites, or publishers, and on numerous devices (for example, desktop computers, mobile devices, or tablets).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

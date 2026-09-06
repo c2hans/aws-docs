@@ -49,7 +49,3 @@ This topic explains what you can do when you run a bulk operation. Bulk operatio
 
   For example, if you update an asset model during a bulk import, and the updated version defines a property that wasn't present on the original, then a new property is created. If it defines a property that already exists, then the existing property will be updated. If the updated asset model omits a property that was present on the original, then the property is deleted.
 + **No top-level resource deletion:** Bulk operations don't delete an asset or asset model. Bulk operations only create or update them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ To view patch compliance details, choose the **Compliance** tab directly. Then y
 1. In the **Applications** section, choose a category. If you want to open an application you created manually in Application Manager, choose **Custom applications**.
 
 1. Choose the application in the list. Application Manager opens the **Overview** tab.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -108,7 +108,3 @@ Congratulations\! You've successfully generated an Amazon Bedrock API key and ma
 + **Explore different models** – Learn about other foundation models available in Amazon Bedrock at [Using models with Bedrock](foundation-models-reference.md) and change the `model_id` in your code to try them out.
 + **Learn about model inference** – Learn about generating responses with model inference by reading about concepts and the options available in Amazon Bedrock at [Making inference requests](inference.md).
 + **Plan for production with more secure authentication methods** – Read about Amazon Bedrock API keys in the Build chapter, including how to create more secure, short-term Amazon Bedrock API keys. For production applications, review [alternatives to long-term access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds-programmatic-access.html#security-creds-alternatives-to-long-term-access-keys) for more secure options that also allow access to other AWS services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

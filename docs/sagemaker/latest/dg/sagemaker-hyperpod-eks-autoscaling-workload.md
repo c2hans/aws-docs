@@ -44,7 +44,3 @@ The following examples demonstrate how HyperPod autoscaling with Karpenter autom
    Karpenter will add new nodes to the cluster with at least one node it a different availability zone.
 
 For more examples, see [Karpenter example workloads](https://github.com/aws/karpenter-provider-aws/tree/main/examples/workloads) on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -294,7 +294,3 @@ If you receive an error stating `Error from server (NotFound): configmaps "aws-a
 <a name="setting-up-cluster-access-smus"></a>
 
 Amazon EMR on EKS and Amazon SageMaker Unified Studio require access to an Amazon EKS cluster. Please follow the steps at [Enable EKS cluster access for EMR on EKS and SageMaker Unified Studio](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/enable-eks-cluster-access-for-emr-on-eks-and-sagemaker-unified-studio.html) to provide access.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

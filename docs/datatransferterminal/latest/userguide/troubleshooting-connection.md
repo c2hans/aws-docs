@@ -97,7 +97,3 @@ Network throughput, which measures the actual data transfer rate in a network, c
 +  **Encryption overhead**: Secure transmissions, such as HTTPS, increase processing time due to encryption overhead.
 +  **Latency**: Latency refers to the time taken for a data packet to travel from source to destination. High latency can be observed when uploading to an Amazon S3 bucket in a different geographic region, which can lead to delays in data transfer and lower throughput. Best practice is to make data transfers within the same region, whenever possible.
 +  **Packet loss**: Lost packets require retransmission, slowing the data transfer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Transfer Terminal. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datatransferterminal` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

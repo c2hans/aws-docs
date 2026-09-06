@@ -33,7 +33,3 @@ To show support for AS2 Terraform templates, add a thumbs up reaction (👍) to 
 <a name="terraform-b2b-data-interchange"></a>
 
 AWS B2B Data Interchange automates the transformation, validation, and generation of Electronic Data Interchange (EDI) documents to and from JSON and XML data formats. To show support for Terraform templates for B2B Data Interchange, add a thumbs up reaction (👍) to the [feature request](https://github.com/aws-ia/terraform-aws-transfer-family/issues/63#issue-3364717955). You can also add a comment describing your use case.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

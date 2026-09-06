@@ -40,7 +40,3 @@ AWS Audit Manager provides the following APIs for data retrieval.
 | <a name="auditmanager-ListNotifications"></a>[ListNotifications](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_ListNotifications.html) | List all notifications in AWS Audit Manager | List |
 | <a name="auditmanager-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_ListTagsForResource.html) | List tags for an AWS Audit Manager resource | Read |
 | <a name="auditmanager-ValidateAssessmentReportIntegrity"></a>[ValidateAssessmentReportIntegrity](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_ValidateAssessmentReportIntegrity.html) | Validate the integrity of an assessment report in AWS Audit Manager | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

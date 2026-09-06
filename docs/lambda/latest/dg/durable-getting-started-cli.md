@@ -281,7 +281,3 @@ After deploying your durable function with the AWS CLI:
 + Automate deployments using shell scripts or CI/CD pipelines
 
 For more information about AWS CLI commands for Lambda, see the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/lambda/index.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

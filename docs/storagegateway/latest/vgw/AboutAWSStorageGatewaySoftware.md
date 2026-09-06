@@ -14,7 +14,3 @@ The source code for certain open-source software components that are included wi
 +  For gateways deployed on Linux Kernel-based Virtual Machine (KVM), download [sources\_KVM.tar](https://s3.amazonaws.com/aws-storage-gateway-terms/sources_KVM.tar)
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit ([http://www.openssl.org/](http://www.openssl.org/)). For the relevant licenses for all dependent third party tools, see [Third Party Licenses](https://s3.amazonaws.com/aws-storage-gateway-terms/THIRD_PARTY_LICENSES.txt).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

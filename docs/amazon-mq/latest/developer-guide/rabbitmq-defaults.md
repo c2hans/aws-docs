@@ -109,7 +109,3 @@ The following table lists the default limit values for a newly created broker. A
 | m5.2xlarge | Cluster | 10,000,000 | 6,000 | 40,000 |
 | m5.4xlarge | Single-instance | N/A | 150,000 | 30,000 |
 | m5.4xlarge | Cluster | 12,000,000 | 10,000 | 100,000 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

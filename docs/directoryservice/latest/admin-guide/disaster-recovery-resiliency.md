@@ -10,7 +10,3 @@ The AWS global infrastructure is built around AWS Regions and Availability Zones
 For more information about AWS Regions and Availability Zones, see [AWS global infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/).
 
 In addition to the AWS global infrastructure, Directory Service offers the ability to take manual snapshots of data at any point in time to help support your data resiliency and backup needs. For more information, see [Restoring your AWS Managed Microsoft AD with snapshots](ms_ad_snapshots.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

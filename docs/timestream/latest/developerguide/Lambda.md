@@ -73,7 +73,3 @@ Related references are at [timestreamwrite](https://pkg.go.dev/github.com/aws/aw
  To build AWS Lambda functions using Amazon Timestream for LiveAnalytics with C\#, follow the instructions outlined [here](https://docs.aws.amazon.com/lambda/latest/dg/csharp-package.html).
 
 Related references are at [Amazon.TimestreamWrite](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/TimestreamWrite/NTimestreamWrite.html) and [Amazon.TimestreamQuery](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/TimestreamQuery/NTimestreamQuery.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

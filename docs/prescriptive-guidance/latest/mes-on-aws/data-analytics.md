@@ -45,7 +45,3 @@ The following diagram shows a sample architecture for data and analytics that co
 1. AWS Lambda enables interfaces between analytics services and other applications.
 
 1. Interface services include API Gateway to manage APIs and AWS AppSync to consolidate APIs and create endpoints.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

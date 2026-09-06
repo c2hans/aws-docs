@@ -29,10 +29,10 @@ Feature availability and support varies across specific versions of each databas
 Managing master user passwords with Secrets Manager isn't supported for the following features:
 + Amazon RDS Blue/Green Deployments
 + DB clusters that are part of an Aurora global database
-+ Aurora Serverless v1 DB clusters
 + Cross-Region read replicas
 + Binary log external replication
 + Managed master user passwords with the `validate_password` plugin or component enabled on Aurora MySQL
++ If the Amazon RDS-managed secret has cross-Region replication enabled (using AWS Secrets Manager multi-Region secret replication), you can't opt out of Secrets Manager-managed credentials. The `modify-db-cluster` API call with `--no-manage-master-user-password` appears to succeed, but the DB cluster remains on Secrets Manager-managed credentials. To opt out, you must first remove replication from the secret using `aws secretsmanager remove-regions-from-replication`, and then retry the modification.
 
 ## Overview of managing master user passwords with AWS Secrets Manager
 <a name="rds-secrets-manager-overview"></a>
@@ -342,7 +342,3 @@ aws secretsmanager get-secret-value ^
 You can view the ARN, status, and KMS key for a secret managed by Aurora in Secrets Manager using the [DescribeDBClusters](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusters.html) RDS operation and setting the `DBClusterIdentifier` parameter to a DB cluster identifier. Details about the secret are included in the output.
 
 When you have the secret ARN, you can view details about the secret using the [GetSecretValue](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html) Secrets Manager operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

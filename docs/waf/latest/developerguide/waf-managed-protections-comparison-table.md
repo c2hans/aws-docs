@@ -28,7 +28,3 @@ The following tables provide detailed comparisons of the options for the basic a
 + [Options for challenges and token acquisition](waf-managed-protections-comparison-table-token.md)
 + [Options for intelligent threat mitigation managed rule groups](waf-managed-protections-comparison-table-rg.md)
 + [Options for rate limiting in rate-based rules and targeted Bot Control rules](waf-rate-limiting-options.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

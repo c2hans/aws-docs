@@ -43,7 +43,3 @@ The following are the service endpoints and service quotas for this service.
 | Maximum number of Amazon SQS queues for monitoring | 100 | Yes |
 
 For more information, see [Quotas and limits](https://docs.aws.amazon.com/devops-guru/latest/userguide/quotas.html) in the *Amazon DevOps Guru User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -71,7 +71,3 @@ The following table describes various logging tool options.
 | Control plane |  [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)  | You can send audit and diagnostic logs directly from the Amazon EKS control plane to CloudWatch Logs in your account. |  [Setup procedure](control-plane-logs.md)  |
 | Control plane |  [AWS CloudTrail](logging-using-cloudtrail.md)  | It logs API calls by a user, role, or service. |  [Setup procedure](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.html)  |
 | Multiple areas for AWS Fargate instances |  [AWS Fargate log router](fargate-logging.md)  | For AWS Fargate instances, the log router streams logs to AWS services or partner tools. It uses [AWS for Fluent Bit](https://github.com/aws/aws-for-fluent-bit). Logs can be streamed to other AWS services or partner tools. |  [Setup procedure](fargate-logging.md)  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

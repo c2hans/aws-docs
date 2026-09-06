@@ -69,7 +69,3 @@ See the following topics to learn more about routing:
 + [How Connect Customer uses routing profiles](concepts-routing.md)
 + [Queue-based routing to route customers to a specific contact center agent](concepts-queue-based-routing.md)
 + [Set up queue-based routing](set-up-queue-based-routing.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

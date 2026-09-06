@@ -165,7 +165,3 @@ For this release, the following are not supported:
 + `$lookup` operation on CodeSystems managed by HealthLake but not explicitly stored in the datastore
 
 For more information about the `$lookup` operation specification, see the [FHIR R4 CodeSystem `$lookup`](https://www.hl7.org/fhir/R4/codesystem-operation-lookup.html) documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

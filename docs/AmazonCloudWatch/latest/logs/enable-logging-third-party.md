@@ -93,7 +93,3 @@ To enable Security Hub CSPM findings as a data source in CloudWatch Logs, create
 
 **Note**
 This list reflects the Security Hub partner integrations that send findings at the time of writing. Because AWS Security Hub regularly adds new partner integrations, refer to [Third-party product integrations with Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-partner-providers.html) in the *AWS Security Hub User Guide* for the most up-to-date list of available partners.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

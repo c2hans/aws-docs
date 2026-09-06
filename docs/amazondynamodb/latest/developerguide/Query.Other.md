@@ -54,7 +54,3 @@ DynamoDB calculates the number of read capacity units consumed based on the numb
 A `Query` operation performs eventually consistent reads, by default. This means that the `Query` results might not reflect changes due to recently completed `PutItem` or `UpdateItem` operations. For more information, see [DynamoDB read consistency](HowItWorks.ReadConsistency.md).
 
 If you require strongly consistent reads, set the `ConsistentRead` parameter to `true` in the `Query` request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

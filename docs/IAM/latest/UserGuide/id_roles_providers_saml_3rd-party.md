@@ -37,7 +37,3 @@ AWS Support engineers can assist customers who have business and enterprise supp
 | Shibboleth |  [How to Use Shibboleth for SSO to the AWS Management Console](https://aws.amazon.com/blogs/security/how-to-use-shibboleth-for-single-sign-on-to-the-aws-management-console) – This entry on the AWS Security Blog provides a step-by-step tutorial on how to set up Shibboleth and configure it as an identity provider for AWS. You can configure Shibboleth to pass [session tags](id_session-tags.md). |
 
 For more details, see the [IAM Partners](https://aws.amazon.com/iam/partners/) page on the AWS website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

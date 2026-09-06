@@ -16,7 +16,3 @@ For more information, see [NAT gateways](https://docs.aws.amazon.com/vpc/latest/
 The following image shows the traffic flow from a private subnet in a Local Zone to a NAT gateway in a public subnet in the same Local Zone, then to an internet gateway, and to the internet.
 
 ![An AWS Region with a VPC. The VPC contains two Availability Zones and a Local Zone. Each zone has a public subnet and a private subnet. The public subnet in the Local Zone shows a NAT gateway. Traffic flows from the private subnet in the Local Zone to the NAT gateway, then internet gateway, and to the internet.](http://docs.aws.amazon.com/local-zones/latest/ug/images/nat-gateway.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Local Zones. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query local-zones` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

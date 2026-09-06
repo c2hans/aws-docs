@@ -459,7 +459,3 @@ If this has happened to your WordPress installation, you may be able to recover 
    ```
 
 1. In a web browser, enter the new site URL of your WordPress blog to verify that the site is working properly again. If it is not, see [Changing the site URL](https://wordpress.org/support/article/changing-the-site-url/) and [Common installation problems](https://wordpress.org/support/article/how-to-install-wordpress/#common-installation-problems) for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

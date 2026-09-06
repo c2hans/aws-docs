@@ -56,7 +56,3 @@ The following table summarizes the differences between a view and materialized v
 | Cost | No storage cost | Has a storage cost |
 | Design | To create a standard view, you must:<br />·         Have access to the underlying tables<br />·         Use a standard `SELECT` statement | To create a materialized view, you must:<br />·         Have access to the underlying tables<br />·         Use a standard `SELECT` statement<br />Optionally, you can specify the following:<br />·         Whether the materialized view is included in automated and manual cluster snapshots, which are stored in Amazon Simple Storage Service (Amazon S3)<br />·         How the data in the materialized view is distributed and sorted<br />·         Whether the materialized view should be automatically refreshed with the latest changes from its base tables |
 | Usage | When data is accessed or updated infrequently | When data is accessed or updated frequently |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

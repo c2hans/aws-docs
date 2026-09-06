@@ -19,7 +19,3 @@ See also the blog [Improve price performance of your model training using Amazon
 + [Configure a training job with a heterogeneous cluster in Amazon SageMaker AI](train-heterogeneous-cluster-configure.md)
 + [Run distributed training on a heterogeneous cluster in Amazon SageMaker AI](train-heterogeneous-cluster-configure-distributed.md)
 + [Modify your training script to assign instance groups](train-heterogeneous-cluster-modify-training-script.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

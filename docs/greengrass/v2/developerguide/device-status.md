@@ -69,7 +69,3 @@ You can check the status, such as lifecycle state, of the software components on
   The response contains the list of components that run on the core device. Each entry in the list contains the lifecycle state of the component, including how current the status of the data is and when the Greengrass core device last sent a message containing a certain component to the cloud. The response will also include the most recent deployment source that brought the component to the Greengrass core device.
 **Note**
 This command retrieves a paginated list of the components that a Greengrass core device runs. By default, this list doesn't include components that are deployed as dependencies of other components. You can include dependencies in the response by setting the `topologyFilter` parameter to `ALL`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

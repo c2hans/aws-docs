@@ -161,7 +161,3 @@ To have CodeDeploy update your Amazon ECS service with a new parameter while it 
 If you need to update your Amazon ECS service with a parameter that is not supported by CodeDeploy, complete these tasks:
 Call Amazon ECS's `UpdateService` API with the parameter you want to update. For a full list of parameters that can be updated, see [UpdateService](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateService.html) in the *Amazon Elastic Container Service API Reference*.
 To apply the change to the tasks, create a new Amazon ECS blue/green deployment. For more information, see [Create an Amazon ECS Compute Platform deployment (console)](deployments-create-console-ecs.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

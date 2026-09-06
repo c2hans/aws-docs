@@ -274,7 +274,3 @@ Consider the following limitations for these statements:
 
   After this `ALTER`, the table partition becomes `(month(ship_date), bucket(256, item_id))`.
 + The `void` transform is not supported in partition `ALTER` statements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

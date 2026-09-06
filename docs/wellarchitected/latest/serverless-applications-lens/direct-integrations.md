@@ -28,7 +28,3 @@ With this approach, API Gateway sends each incoming request to an Elastic Load B
 Amazon SNS can filter events based on message attributes and more efficiently deliver the message to the correct subscriber.
 
 ![Diagram showing Amazon SNS with message attribute filtering](http://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/amazon-sns-with-message-attribute-filtering.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

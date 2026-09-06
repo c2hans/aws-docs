@@ -194,7 +194,3 @@ At the time of job execution, the following classifications and configurations w
 + The configurations for `managedPersistenceMonitoringConfiguration` will be updated with configurations at job level.
 + The configurations for `s3MonitoringConfiguration` will be removed.
 + The configurations for `cloudWatchLoggingConfiguration` will be added to existing monitoring configurations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

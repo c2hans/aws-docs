@@ -16,7 +16,3 @@ The following table describes quotas and limits for projects in Amazon CodeCatal
 | Maximum number of members that can belong to a project. | 10,000 |
 | Project names | Project names must be unique within a space. Names must be between 3 and 63 characters. Names are case sensitive. Project names must begin with an alphanumeric character. Valid characters: **A-Z, a-z, 0-9, spaces,** and **. , \_ (underscore) - (hyphen)**<br />Project names cannot contain any of the following characters: `! ? @ # $ % ^ & * ( ) + = { } [ ] \| \ / > < ~ ` ' " ; : ` |
 | Project descriptions | Project descriptions can be up to 200 characters. Valid characters: **A-Z, a-z, 0-9, spaces,** and **. , \_ (underscore) - (hyphen)**. Project descriptions are optional. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

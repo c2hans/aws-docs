@@ -461,7 +461,3 @@ Returns the number of items that a query resolves to.
 Replaces parts of a string using regular expressions.
 
 For a complete list of available functions including string manipulation, collection operations, and data type conversion functions, see the [Functions documentation](https://github.com/aws-cloudformation/cloudformation-guard/blob/main/docs/FUNCTIONS.md) in the Guard GitHub repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation Guard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cfn-guard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

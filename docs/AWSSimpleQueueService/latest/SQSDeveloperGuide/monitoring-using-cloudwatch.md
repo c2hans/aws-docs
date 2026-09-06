@@ -17,7 +17,3 @@ The Amazon SQS console performs a [`GetQueueAttributes`](https://docs.aws.amazon
 A delay of up to 15 minutes occurs in CloudWatch metrics when a queue is activated from an inactive state.
 There is no charge for the Amazon SQS metrics reported in CloudWatch. They're provided as part of the Amazon SQS service.
 CloudWatch metrics are supported for both standard and FIFO queues.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

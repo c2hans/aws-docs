@@ -21,7 +21,3 @@ You can download test suites by using the `upgrade-test-suite` command. Or, you 
 You can also run the `list-supported-versions` command to list the FreeRTOS and test suite versions that are supported by the current version of IDT.
 
 New tests might introduce new IDT configuration settings. If the settings are optional, IDT notifies you and continues running the tests. If the settings are required, IDT notifies you and stops running. After you configure the settings, you can continue to run the tests.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

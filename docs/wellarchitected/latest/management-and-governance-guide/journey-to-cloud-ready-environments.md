@@ -25,7 +25,3 @@ Customer use case examples for this guide include those that are just getting st
  Evolving interoperability of the management and governance functions give you greater operational efficiency as you continue migrating, building, or modernizing your workloads. This phase typically includes the addition of full sourcing and distribution functions for your infrastructure templates or software solutions. Proactively using financial insights spanning across your workloads, accounts, and environments also position you for accelerating innovation activities.
 
 ![Diagram showing example paths for adopting the best practices described in the M&G Guide.](http://docs.aws.amazon.com/wellarchitected/latest/management-and-governance-guide/images/mglens-eight-functions.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

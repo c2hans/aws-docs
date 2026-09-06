@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_EC2"></a>
 
 **Resource types**
++ [AWS::EC2::ApplicationStatusCheck](aws-resource-ec2-applicationstatuscheck.md)
 + [AWS::EC2::CapacityManagerDataExport](aws-resource-ec2-capacitymanagerdataexport.md)
 + [AWS::EC2::CapacityReservation](aws-resource-ec2-capacityreservation.md)
 + [AWS::EC2::CapacityReservationFleet](aws-resource-ec2-capacityreservationfleet.md)
@@ -126,7 +127,3 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::EC2::VPNConnectionRoute](aws-resource-ec2-vpnconnectionroute.md)
 + [AWS::EC2::VPNGateway](aws-resource-ec2-vpngateway.md)
 + [AWS::EC2::VPNGatewayRoutePropagation](aws-resource-ec2-vpngatewayroutepropagation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

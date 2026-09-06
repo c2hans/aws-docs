@@ -290,7 +290,3 @@ Now that you have determined which approach best fits your workload for your env
   Explore vetted solutions and architectural guidance for common modern app development use cases.
 
   [Explore solutions](https://aws.amazon.com/architecture/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=content-type%23solution&awsf.methodology=*all&awsf.tech-category=tech-category%23modern-applications%7Ctech-category%23serverless%7Ctech-category%23containers&awsf.industries=*all&awsf.business-category=*all&awsm.page-cards-all=1)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Decision Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query decision-guides` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

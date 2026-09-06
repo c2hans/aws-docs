@@ -80,7 +80,3 @@ In order to create and manage controlled vocabularies, you must be a superuser o
 1. Choose **Edit** and then choose **Delete**.
 
 1. On the dialog box that appears, choose **Remove** to confirm deletion.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

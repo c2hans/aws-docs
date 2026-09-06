@@ -16,7 +16,3 @@ Implement monitoring from day one by setting up CloudWatch dashboards, alarms, a
 **Reference Implementation**
 
 The complete reference implementation with working code examples, deployment scripts, and detailed instructions for all four deployment patterns is available at: [https://github.com/aws-samples/sample-mcp-deployment-patterns/](https://github.com/aws-samples/sample-mcp-deployment-patterns/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

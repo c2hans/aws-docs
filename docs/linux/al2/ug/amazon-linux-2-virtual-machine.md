@@ -205,7 +205,3 @@ The VM image for Microsoft Hyper-V is compressed into a zip file. You must extra
 ------
 
 After the VM has booted, log in using one of the user accounts that is defined in the `user-data` configuration file. After you have logged in for the first time, you can then disconnect the `seed.iso` boot image from the VM.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

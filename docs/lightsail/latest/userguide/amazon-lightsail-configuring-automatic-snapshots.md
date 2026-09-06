@@ -145,7 +145,3 @@ The `autoSnapshotAddOnRequest={snapshotTimeOfDay=HH:00}` parameter is optional i
    + If you *disabled* automatic snapshots, the existing automatic snapshots are kept until you re-enable the feature and they are replaced by new snapshots, or until you delete them. You will be billed the [snapshot storage fee](https://aws.amazon.com/lightsail/pricing/) for the automatic snapshots stored on your Lightsail account. For more information about deleting automatic snapshots, see [Delete automatic instance snapshots](amazon-lightsail-deleting-automatic-snapshots.md).
 **Note**
 For more information about the EnableAddOn and DisableAddOn API operations in these commands, see [EnableAddOn](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_EnableAddOn.html) and [DisableAddOn](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_DisableAddOn.html) in the Lightsail API documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -214,7 +214,3 @@ After completing the tutorial, the final application looks like the following ex
 Running this application displays a full-screen map using your chosen map style. This sample is also described on the **Embed map** tab of any Map resource page in the [Amazon Location Service console](https://console.aws.amazon.com/location/maps/home).
 
 After you complete this tutorial, go to the [ Display a map](https://docs.amplify.aws/lib/geo/maps/q/platform/js#display-a-map) topic in the AWS Amplify documentation to learn more, including how to display markers on the map.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ Smart cropping applies its fallback strategy when Amazon Rekognition detects no 
 + Lower `smartCrop.minConfidence` or broaden the `labels` you request, then retry against an uncached image (append a unique query string to bypass the CloudFront cache).
 + Confirm the source image is a format Amazon Rekognition can analyze. The solution converts other formats automatically, but corrupt or unsupported source files yield no detections.
 + If the issue coincides with traffic spikes, you may be hitting the Amazon Rekognition per-API TPS limit. Review the smart crop log fields for the request and, if needed, request a Service Quotas increase. For limits and how to plan around them, see the Amazon Rekognition quotas guidance in the planning section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

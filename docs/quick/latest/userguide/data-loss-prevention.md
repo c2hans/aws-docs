@@ -362,7 +362,3 @@ Use **Refresh** in Step 3 (Label mapping) to re-fetch the current label list fro
 
 Files are unexpectedly blocked during a knowledge base sync
 Check the Quick Observability report for the sync. A **BLOCKED** status can also indicate an internal failure rather than DLP enforcement. Check whether the file carries a label that you mapped to Block, whether the default action is Block, and the provider outage action if Purview was unreachable during the sync.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

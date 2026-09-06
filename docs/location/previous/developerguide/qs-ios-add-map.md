@@ -169,7 +169,3 @@ You will now add the map control to your application. This tutorial uses MapLibr
    ```
 
 You can now build the application. To run it, you may have to set up a device to emulate it in Xcode or use the app on your device. Use this app to see how the map control behaves. You can pan by dragging on the map and pinch to zoom. On your own, you can change how the map control works to customize it to the needs of your application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

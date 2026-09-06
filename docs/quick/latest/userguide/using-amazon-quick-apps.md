@@ -15,7 +15,7 @@ With Apps in Quick you can bridge the gap between data visualization and custom 
 With Apps in Quick, you get the following capabilities:
 + **Conversational authoring** — Describe what you want, and the AI builds it.
 + **Live dashboard embeds** — Embed interactive Amazon Quick Sight visuals directly in your app.
-+ **Action connectors** — Call external APIs and services from your app. For more information, see [Work with integrations in Amazon Quick](working-with-integrations.md).
++ **Connectors** — Call external APIs and services from your app. For more information, see [Work with integrations in Amazon Quick](working-with-integrations.md).
 + **Built-in AI inference** — Add AI-powered features such as text summarization, classification, and content generation using foundation models.
 + **Spaces integration** — Read and manage documents and resources from Amazon Quick spaces. For more information, see [Organize, collaborate, and share resources with spaces in Amazon Quick](working-with-spaces.md).
 + **Persistent data storage** — Save and retrieve data across sessions with built-in key-value storage.
@@ -36,7 +36,3 @@ Building an app follows this workflow:
 1. **Iterate** — Refine with follow-up requests.
 
 1. **Publish** — Share with your team in one click.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

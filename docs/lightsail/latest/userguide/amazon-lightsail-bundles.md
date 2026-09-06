@@ -156,7 +156,3 @@ The following table lists the specifications for Windows instance bundles with o
 | Compute-optimized 18Xlarge-144GB Windows IPv6-only | $3,772.00 | 72 | 144 GB | 1,280 GB | 10 TB |
 
 \* The data transfer allowance can vary by Region. For more information, see [How does my data transfer allowance for instances vary by AWS Region?](amazon-lightsail-faq-data-transfer-allowance.md#data-transfer-allowance-how-do-data-transfer-allowances-vary-by-region).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

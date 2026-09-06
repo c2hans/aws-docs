@@ -18,6 +18,9 @@ Workflows give you direct control over the image creation process. You decide wh
 **Note**
 You can't modify an existing workflow, but you can clone it or create a new version.
 
+**Tip**
+For information about deployable workflow examples, including approval gates and AWS Step Functions integration, see the [workflow samples](https://github.com/aws-samples/amazon-ec2-image-builder-samples/tree/HEAD/workflows) on GitHub. For more information, see [Explore Image Builder sample projects on GitHub](sample-projects.md).
+
 **Topics**
 + [Workflow framework: Stages](#wf-stages)
 + [How a workflow runs](#wf-how-runs)
@@ -136,7 +139,3 @@ The following are express managed workflows:
 + **express-build-image** – Express Amazon-managed AMI build workflow that reduces build time. Waits only for the instance running state instead of full EC2 status checks, and skips image metadata collection.
 + **express-build-container** – Express Amazon-managed container build workflow that reduces build time. Waits only for the instance running state instead of full EC2 status checks.
 + **express-test-image** – Express Amazon-managed AMI test workflow that reduces test time. Waits only for the instance running state instead of full EC2 status checks, and skips security scan findings collection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

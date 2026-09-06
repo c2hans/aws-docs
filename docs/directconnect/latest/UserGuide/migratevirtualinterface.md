@@ -32,7 +32,3 @@ The virtual interface will go down for a brief period. We recommend you perform 
 **To migrate a virtual interface using the command line or API**
 + [associate-virtual-interface](https://docs.aws.amazon.com/cli/latest/reference/directconnect/associate-virtual-interface.html) (AWS CLI)
 + [AssociateVirtualInterface](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_AssociateVirtualInterface.html) (Direct Connect API)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

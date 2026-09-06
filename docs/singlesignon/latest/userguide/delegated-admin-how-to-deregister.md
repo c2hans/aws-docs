@@ -25,7 +25,3 @@ When you deregister an account, you effectively remove the ability for all admin
 1. In the **Deregister account** dialog box, review the security implications, and then enter the name of the member account to confirm that you understand.
 
 1. Choose **Deregister account**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

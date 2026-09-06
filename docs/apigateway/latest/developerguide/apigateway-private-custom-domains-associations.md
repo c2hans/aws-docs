@@ -62,7 +62,3 @@ If you are an API consumer, do the following:
 1. Create a Route 53 Private Hosted Zone and a Route 53 record to resolve the private custom domain name in Route 53.
 
 For instructions on how to consume an API in another AWS account, see [API consumer: Associate your VPC endpoint with a private custom domain name shared with you](apigateway-private-custom-domains-consumer-create.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

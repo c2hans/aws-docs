@@ -990,7 +990,3 @@ Clean up the files and services used in this tutorial to avoid being charged for
    1. Delete the `codecatalyst-stack-role`.
 
 In this tutorial, you learned how to deploy a serverless application as a CloudFormation stack using a CodeCatalyst workflow and a **Deploy CloudFormation stack** action.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

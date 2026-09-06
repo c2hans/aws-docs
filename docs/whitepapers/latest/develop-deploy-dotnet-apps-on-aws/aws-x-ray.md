@@ -24,7 +24,3 @@ AWS X-Ray can also display service graphs, which show graphical views of the ser
 *AWS X-Ray service graph example showing integration across various components *
 
 By providing a cohesive view of end-to-end application behavior, AWS X-Ray makes it possible to accurately and quickly identify sources of problems in distributed systems. At a glance, it helps locate an API, microservice, or component with problems, allowing you to drill down farther with more detailed tools, such as Amazon CloudWatch.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

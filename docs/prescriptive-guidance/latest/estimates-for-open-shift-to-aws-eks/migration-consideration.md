@@ -251,7 +251,3 @@ Document the factors that influence the range boundaries so stakeholders underst
 Effective migration estimation focuses on reducing uncertainty, establishing realistic expectations, and maintaining stakeholder alignment throughout the project lifecycle. Comprehensive upfront assessment and planning enable smoother execution and more predictable outcomes.
 
 The estimation practices outlined in this guide thorough discovery, workload complexity assessment, cross-functional collaboration, and continuous validation provide a foundation for successful OpenShift to Amazon EKS migrations. Organizations that invest in structured estimation approaches experience fewer mid-project disruptions, more accurate budget management, and stronger stakeholder confidence in technical delivery.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ By default, AWS provides high availability for most storage services using Avail
 + [**Amazon EBS multi-attach and snapshots**](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html)** –** Uses snapshots stored in Amazon S3 for cross-AZ recovery. While Amazon EBS volumes don't automatically span AZs, snapshots promote volume restoration in another AZ. Volumes support various configurations including redundant array of independent disks (RAID) setups and can be resized without stopping instances.
 + [**Amazon EFS**](https://docs.aws.amazon.com/efs/)** –** Stores data redundantly across multiple AZs, maintaining availability even if one AZ fails.
 + **Automatic recovery and cross-Region replication –** Amazon EC2 instances automatically recover from hardware and network issues. Amazon S3 cross-Region replication duplicates data in other Regions for disaster recovery and compliance requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

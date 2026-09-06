@@ -17,7 +17,3 @@ When your environment uses multiple instance types, Amazon EC2 Auto Scaling fulf
 Elastic Beanstalk now offers the ability to choose a *Spot Allocation Strategy* during environment creation. Use the Elastic Beanstalk console, namespace configuration options, or the AWS CLI, to configure the Spot Instance allocation strategy for your environment.
 
 For more information, see [Spot Instance allocation strategy](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-autoscaling-spot-allocation-strategy.html) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

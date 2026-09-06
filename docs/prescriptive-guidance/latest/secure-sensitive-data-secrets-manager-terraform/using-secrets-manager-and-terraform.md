@@ -27,7 +27,3 @@ You can access and work with Secrets Manager by using any of the following appro
 Terraform stores information about your managed AWS infrastructure and its configurations. This information is called the *state*. By default, the state is stored in a local file named `terraform.tfstate`. This file is in JSON format, and Terraform might store sensitive data in this state file in plain text. This poses a risk to the sensitive data because any user with access to the state file can access the sensitive data.
 
 This guide provides best practices and recommendations to help you protect sensitive data when using Terraform to manage your AWS resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

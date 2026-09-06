@@ -175,7 +175,3 @@ You can delete your license endpoint from your dashboard in the Deadline Cloud [
 1. From the left navigation pane, choose **License endpoints**.
 
 1. Select the endpoint you want to delete and choose **delete**, then choose **delete** again to confirm.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cross-domain-solution
  Using AWS Direct Connect, you can establish private connectivity between AWS and your datacenter, office, or colocation environment. AWS Direct Connect enables you to establish a dedicated network connection between your network and one of the AWS Direct Connect locations. Using industry standard 802.1q VLANs, this dedicated connection can be partitioned into multiple virtual interfaces. This enables you to use the same connection to access public resources, such as objects stored in Amazon S3 using public IP address space, and private resources such as Amazon EC2 instances running within Amazon VPC using private IP address space, while maintaining network separation between the public and private environments.
 
  You can reconfigure virtual interfaces at any time to meet your changing needs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -62,7 +62,3 @@ All messages that are sent to another user are considered when evaluating these 
 | Maximum size of outgoing message | 29 MB of unencoded data.Messages are sent in a MIME format. Maximum size of outgoing MIME message is 40 MB.<br />This is a hard quota and can't be changed. |
 | Maximum number of recipients per message | 500<br />This is a hard quota and can't be changed. |
 | Maximum number of attachments per message | 500<br />This is a hard quota and can't be changed. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

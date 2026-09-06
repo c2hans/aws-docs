@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[AvailabilityZone](#cfn-mediaconnect-routeroutput-availabilityzone)" : {{String}},
       "[Configuration](#cfn-mediaconnect-routeroutput-configuration)" : {{RouterOutputConfiguration}},
+      "[FabricConfiguration](#cfn-mediaconnect-routeroutput-fabricconfiguration)" : {{FabricConfiguration}},
       "[MaintenanceConfiguration](#cfn-mediaconnect-routeroutput-maintenanceconfiguration)" : {{MaintenanceConfiguration}},
       "[MaximumBitrate](#cfn-mediaconnect-routeroutput-maximumbitrate)" : {{Integer}},
       "[Name](#cfn-mediaconnect-routeroutput-name)" : {{String}},
@@ -43,6 +44,8 @@ Properties:
   [AvailabilityZone](#cfn-mediaconnect-routeroutput-availabilityzone): {{String}}
   [Configuration](#cfn-mediaconnect-routeroutput-configuration): {{
     RouterOutputConfiguration}}
+  [FabricConfiguration](#cfn-mediaconnect-routeroutput-fabricconfiguration): {{
+    FabricConfiguration}}
   [MaintenanceConfiguration](#cfn-mediaconnect-routeroutput-maintenanceconfiguration): {{
     MaintenanceConfiguration}}
   [MaximumBitrate](#cfn-mediaconnect-routeroutput-maximumbitrate): {{Integer}}
@@ -67,6 +70,12 @@ The Availability Zone of the router output.
 The configuration settings for a router output.
 *Required*: Yes
 *Type*: [RouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-routeroutputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`FabricConfiguration`  <a name="cfn-mediaconnect-routeroutput-fabricconfiguration"></a>
+The fabric configuration settings for the router output.
+*Required*: No
+*Type*: [FabricConfiguration](aws-properties-mediaconnect-routeroutput-fabricconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MaintenanceConfiguration`  <a name="cfn-mediaconnect-routeroutput-maintenanceconfiguration"></a>
@@ -164,7 +173,3 @@ The overall state of the router output.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The timestamp when the router output was last updated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

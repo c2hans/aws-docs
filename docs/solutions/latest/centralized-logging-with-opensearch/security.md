@@ -22,7 +22,3 @@ This solution deploys a web console hosted in an Amazon Simple Storage Service (
  **Amazon EC2**
 
 This solution creates a NGINX based proxy, which will allow you to access the OpenSearch provisioned within the VPC environment. The NGINX is hosted using EC2 instances. We recommend you to use [AWS Systems Manager Patch Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager.html) to patch the instances periodically. Patch Manager is a capability of AWS Systems Manager that automates the process of patching managed nodes with updates. You can choose to show only a report of missing patches (a Scan operation), or to automatically install all patches that are missing (a Scan and install operation).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Logging with OpenSearch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

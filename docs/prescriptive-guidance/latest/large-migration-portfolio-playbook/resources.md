@@ -35,7 +35,3 @@ To access the complete AWS Prescriptive Guidance series for large migrations, se
 <a name="videos.2bbde162-99fb-55ee-a3e9-227d995fd2be"></a>
 + [Executing a large-scale migration to AWS](https://www.youtube.com/watch?v=adRag6vEy8w) (AWS re:Invent 2020)
 + [CloudEndure Migration Factory best practices](https://www.youtube.com/watch?v=is7cOcNUHlw) (AWS re:Invent 2020)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

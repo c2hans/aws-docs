@@ -72,7 +72,3 @@ Semantic Match isn't available for real-time analysis.
 1. If you chose **Send email notification**, see [Create rules that send email notifications](contact-lens-rules-email.md) for more details about completing the page and for information about email limits.
 
    If you chose **Generate an EventBridge event**, see [Create a rule that generates an EventBridge event](contact-lens-rules-eventbridge-event.md) for more details about completing the page and for information about subscribing to EventBridge event types.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

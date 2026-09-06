@@ -10,6 +10,9 @@ Use the **crypto sign ml-dsa** command in CloudHSM CLI to generate a signature u
 To use the **crypto sign ml-dsa** command, you must first have an ML-DSA private key in your AWS CloudHSM cluster. You can generate an ML-DSA private key using the [Generate an asymmetric ML-DSA key pair with CloudHSM CLI](cloudhsm_cli-key-generate-asymmetric-pair-mldsa.md) command with the `sign` attribute set to `true`.
 
 **Note**
+Starting September 1, 2026, ML-DSA is available in FIPS mode for hsm2m.medium clusters.
+
+**Note**
 You can verify signatures in AWS CloudHSM using [The crypto verify category in CloudHSM CLI](cloudhsm_cli-crypto-verify.md) subcommands.
 
 You can generate a signature using two data types: raw data or computed external mu data.
@@ -199,7 +202,3 @@ Required: Yes
 + [The crypto sign category in CloudHSM CLI](cloudhsm_cli-crypto-sign.md)
 + [Verify a signature signed with the ML-DSA mechanism in CloudHSM CLI](cloudhsm_cli-crypto-verify-mldsa.md)
 + [Generate an asymmetric ML-DSA key pair with CloudHSM CLI](cloudhsm_cli-key-generate-asymmetric-pair-mldsa.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

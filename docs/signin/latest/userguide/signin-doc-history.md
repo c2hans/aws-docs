@@ -26,7 +26,3 @@ The following table describes important additions to the AWS Sign-In documentati
 | [Added AWS Builder ID](https://docs.aws.amazon.com/signin/latest/userguide/sign-in-aws_builder_id.html) | Added AWS Builder ID topics to the AWS Sign-In User Guide and integrated content into existing topics. | January 31, 2023 |
 | [Organizational update](https://docs.aws.amazon.com/signin/latest/userguide/what-is-sign-in.html) | Based on customer feedback, updated the TOC to be clearer about sign-in methods. Updated the sign-in tutorials. Updated **[Terminology](https://docs.aws.amazon.com/signin/latest/userguide/terminology.html)** and **[Determine user type](https://docs.aws.amazon.com/signin/latest/userguide/how-to-sign-in.html)**. Improved cross-linking to define terms like IAM user and root user. | December 22, 2022 |
 | [New guide](https://docs.aws.amazon.com/signin/latest/userguide/what-is-sign-in.html) | This is the first release of the AWS Sign-In User Guide. | August 31, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

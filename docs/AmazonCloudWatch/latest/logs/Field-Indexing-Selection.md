@@ -27,7 +27,3 @@ This section explains the various ways that you can select log groups to include
 **Using the AWS CLI**
 
 To make these types of selections when you start a query from the command line, you can use the `source` command in your query. For more information and examples, see [SOURCE](CWL_QuerySyntax-Source.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

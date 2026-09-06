@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/resource
 +  [Automate application deployment to IoT devices using AWS IoT Device Management](https://aws.amazon.com/blogs/iot/automate-application-deployment-to-iot-devices-using-ci-cd-pipeline/)
 +  [Optimize image classification on AWS IoT Greengrass using ONNX Runtime](https://aws.amazon.com/blogs/iot/optimize-image-classification-on-aws-iot-greengrass-using-onnx-runtime/)
 +  [Reaching Net-Zero Carbon by 2040: Decarbonizing and Neutralizing the Use Phase of Connected Devices](https://sustainability.aboutamazon.com/devices_use_phase_decarbonization.pdf)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

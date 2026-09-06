@@ -21,7 +21,3 @@ The following prerequisites provide step-by-step guidance on how to set up each 
 + [Connectivity / VPC Connection](sap-odata-connectivity-vpc-connection.md)
 + [SAP Authentication](sap-odata-authentication.md)
 + [AWS Secrets Manager to store your Auth secret](sap-odata-aws-secret-manager-auth-secret.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

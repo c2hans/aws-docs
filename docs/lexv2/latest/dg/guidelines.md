@@ -59,7 +59,3 @@ If you have two intents with the same sample utterance, use input contexts to he
 + The TSTALIASID alias of your bot points to the Draft version and should only be used for manual testing. Amazon Lex limits the number of runtime requests that you can make to the TSTALIASID alias of the bot.
 + When you update the Draft version of the bot, Amazon Lex shuts down any in-progress conversations for any client application using the TSTALIASID alias of the bot. Generally, you should not use the TSTALIASID alias of a bot in production because the Draft version can be updated. You should publish a version and an alias and use them instead.
 + When you update an alias, Amazon Lex takes a few minutes to pick up the changes. When you modify the Draft version of the bot, the change is picked up by the TSTALIASID alias immediately.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

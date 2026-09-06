@@ -91,7 +91,3 @@ aws mwaa-serverless list-task-instances
 ------
 
  Use the Amazon CloudWatch `LogStream` output to debug your workflow. For samples of creating detailed metrics and monitoring dashboard using [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html), [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html), [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html), and [Amazon EventBridge](https://docs.aws.amazon.com/Meventbridge/latest/userguide/eb-what-is.html), review the example in this [GitHub repository](https://github.com/aws-samples/amazon-mwaa-examples/tree/main/serverless/mwaa_serverless_metrics_dashboard).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

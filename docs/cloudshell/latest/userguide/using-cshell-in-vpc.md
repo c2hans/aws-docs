@@ -46,7 +46,3 @@ Public IP addresses are not allocated to CloudShell VPC environments by default.
   You cannot restrict access to these endpoints by modifying your VPC configuration.
 
   CloudShell VPC is available in all AWS Regions and GovCloud Regions. For a list of Regions in which CloudShell VPC is available, see [Supported AWS Regions for AWS CloudShell](supported-aws-regions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

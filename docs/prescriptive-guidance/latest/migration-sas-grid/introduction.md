@@ -39,7 +39,3 @@ This guide is intended for organizations that want to rehost or replatform their
 | Benchmarks | Contact the SAS Enterprise Excellence Center for benchmark information relevant to your site. |
 | **Compliance** | Security and compliance requirements | [SAS 9.4 Intelligence Platform: Security Administration Guide](https://documentation.sas.com/doc/en/bicdc/9.4/bisecag/titlepage.htm) |
 | Other [compliance certifications](https://aws.amazon.com/compliance/programs) | [SAS Governance and Compliance Manager](https://support.sas.com/documentation/prod-p/gcm/index.html) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

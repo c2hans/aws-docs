@@ -79,7 +79,3 @@ C:\> aws macie2 enable-organization-admin-account --region {{us-east-1}} --admin
 Where {{us-east-1}} is the Region that the designation applies to (the US East (N. Virginia) Region) and {{444455556666}} is the account ID for the account to designate as the new Macie administrator account.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

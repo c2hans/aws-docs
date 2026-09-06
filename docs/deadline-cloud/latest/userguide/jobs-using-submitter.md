@@ -68,7 +68,3 @@ If your job writes files to multiple output directories, you must specify the di
 The host requirements tab sets the fleet capabilities required to process the job. Capabilities are specified for the entire fleet, not individual workers in the fleet.
 
 If your queue has associated resource limits, use the **Add amount** button to specify the limit. For more information, see [ Create resource limits for jobs ](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/build-job-limits.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

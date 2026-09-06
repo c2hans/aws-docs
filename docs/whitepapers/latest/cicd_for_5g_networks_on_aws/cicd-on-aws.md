@@ -52,7 +52,3 @@ The CI/CD process includes the following steps:
 *AWS CICD pipeline flow diagram*
 
 The CI/CD pipeline is built using [AWS CodePipeline](https://aws.amazon.com/codepipeline/), and utilizes a continuous delivery service that models, visualizes, and automates the steps required to release software. By defining stages in a pipeline, you can retrieve code from a source code repository, build that source code into a releasable artifact, test the artifact, and deploy it to production. Only code that successfully passes through all these stages will be deployed. You can optionally add other requirements to your pipeline, such as manual approvals, to help ensure that only approved changes are deployed to production.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

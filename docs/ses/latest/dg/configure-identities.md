@@ -13,7 +13,3 @@ The following sections describe two authentication mechanisms ISPs use—Sender 
 + To learn about SPF, which provides a way to trace an email message back to the system from which it was sent, see [Authenticating Email with SPF in Amazon SES](send-email-authentication-spf.md).
 + To learn about DKIM, a standard that allows you to sign your email messages to show ISPs that your messages are legitimate and have not been modified in transit, see [Authenticating Email with DKIM in Amazon SES](send-email-authentication-dkim.md).
 + To learn how to comply with Domain-based Message Authentication, Reporting and Conformance (DMARC), which relies on SPF and DKIM, see [Complying with DMARC authentication protocol in Amazon SES](send-email-authentication-dmarc.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

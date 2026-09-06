@@ -313,7 +313,3 @@ The following tables list the ports, protocols, and directions by workload for A
 | Windows Server 2012<br />Windows Server 2012 R2<br />Windows Server 2016<br />Windows Server 2019<br />Windows Server 2022 | WindowsRemote Management (HTTP-In) | Inbound rule for WindowsRemote Management via WS-Management.  | Local: 5985<br />Remote: Any | TCP | In |
 
  For more information about Amazon EC2 security groups, see [Amazon EC2 Security Groups for WindowsInstances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

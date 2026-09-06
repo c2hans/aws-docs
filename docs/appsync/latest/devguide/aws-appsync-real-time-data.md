@@ -255,7 +255,3 @@ subscription MySubscription {
 **As of January 1, 2022, MQTT over WebSockets is no longer available as a protocol for GraphQL subscriptions in AWS AppSync APIs. Pure WebSockets is the only protocol supported in AWS AppSync.**
 Clients based on the AWS AppSync SDK or the Amplify libraries, released after November 2019, automatically use pure WebSockets by default. Upgrading the clients to the latest version allows them to use AWS AppSync's pure WebSockets engine.
 Pure WebSockets come with a larger payload size (240 KB), a wider variety of client options, and improved CloudWatch metrics. For more information on using pure WebSocket clients, see [Building a real-time WebSocket client in AWS AppSync](real-time-websocket-client.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

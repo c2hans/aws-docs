@@ -73,7 +73,3 @@ As you add or remove members, Amazon Chime loads any previous conversations with
 <a name="leave-group-chat"></a>
 
 To leave a group chat, contact the person who created the chat and ask to be removed from the conversation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

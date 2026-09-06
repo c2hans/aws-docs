@@ -15,7 +15,3 @@ Details about stored procedures are logged in the following system tables and vi
 + SVL\_QLOG – the query ID of the procedure call is logged for each query called from a stored procedure. For more information, see [SVL\_QLOG](r_SVL_QLOG.md).
 + STL\_UTILITYTEXT – stored procedure calls are logged after they are completed. For more information, see [STL\_UTILITYTEXT](r_STL_UTILITYTEXT.md).
 + PG\_PROC\_INFO – this system catalog view shows information about stored procedures. For more information, see [PG\_PROC\_INFO](r_PG_PROC_INFO.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

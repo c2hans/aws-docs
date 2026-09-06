@@ -32,7 +32,3 @@ To revoke user access assumed through account access manager role assignments, s
 <a name="aam-abac"></a>
 
 Account access manager supports attribute-based access control (ABAC) with IAM role tags and user attributes configured as session tags in IAM Identity Center. For more information, see [Attribute-based access control](https://docs.aws.amazon.com/singlesignon/latest/userguide/abac.html) in the *AWS IAM Identity Center User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

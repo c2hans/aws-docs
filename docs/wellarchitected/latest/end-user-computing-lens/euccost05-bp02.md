@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  If your users only need to access web-based applications, consider using Amazon WorkSpaces Secure Browser. Examples of web-based applications are Salesforce, SAP-Fiori, Confluence, or your intranet websites. WorkSpaces Secure Browser service is a low cost, fully-managed, Linux-based service designed to provide secure browser access to internal websites SaaS applications for up to 200 streaming hours.
 
  If you need a persistent environment with users who require a high degree of flexibility in customizing their environment and installing their own applications, Amazon WorkSpaces Personal is your best option. As opposed to Amazon WorkSpaces Personal, Amazon WorkSpaces Applications is not designed to allow users to install their own software due to the non-persistent nature of the WorkSpaces Applications fleet.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

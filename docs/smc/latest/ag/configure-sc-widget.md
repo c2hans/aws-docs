@@ -43,7 +43,3 @@ The AWS Service Catalog system properties also include a section that identifies
 1. Choose the group that you want to associate to close changed records and choose **Copy sys\_id**. You are now able to paste the copied `sys_id` into the AWS Service Catalog Properties for the Connector under **Set the ‘assignment group’ sys\_id or name that the connector will use when creating change requests**.
 
    If the `sys_id` is blank, the change record sends a message that no assignment group exists for the record, which causes change requests created from the Connector to be in an open state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

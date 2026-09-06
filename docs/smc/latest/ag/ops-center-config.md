@@ -18,7 +18,3 @@ Once you've enabled projects for the Connector, AWS Systems Manager OpsCenter re
 1. Under **AWS Systems Manager OpsCenter Configuration**, in the **Full Sync Interval** and **Delta Sync Interval** fields, you can change the sync interval if you want. The **Full Sync** and** Delta** interval determines how often Jira Service Management conducts syncs all or changes to OpsItems details with AWS Systems Manager OpsCenter respectively. Increasing this number reduces the number of API calls to AWS, but increases the time for OpsItems updates to reflect in the Connector.
 
 1. Choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

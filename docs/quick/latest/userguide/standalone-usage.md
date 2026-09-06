@@ -89,7 +89,3 @@ Use the following practices to make your usage go further before you need to ena
 + **Start fresh for new tasks** – Start a new chat for a new topic. Long, growing conversations carry their whole history with each turn and consume more usage. A fresh chat is lighter.
 + **Match the thinking level to the task** – Use a lower thinking level for routine tasks, and reserve the highest thinking level for genuinely complex work. Higher thinking levels consume more usage.
 + **Be concise and specific** – Clear, scoped prompts avoid long back-and-forth and re-work, which saves usage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

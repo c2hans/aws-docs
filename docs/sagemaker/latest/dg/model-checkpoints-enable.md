@@ -44,7 +44,3 @@ We recommend specifying the local paths as `'/opt/ml/checkpoints'` to be consist
 + `s3_uri` – The URI to an S3 bucket where the checkpoints are stored in real time. You can specify either an S3 general purpose or S3 directory bucket to store your checkpoints. For more information on S3 directory buckets, see [Directory buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-overview.html) in the *Amazon Simple Storage Service User Guide*.
 
 To find a complete list of SageMaker AI `ModelTrainer` parameters, see the [ModelTrainer API](https://sagemaker.readthedocs.io/en/stable/) in the *[Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable) documentation*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

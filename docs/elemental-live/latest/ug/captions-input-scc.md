@@ -21,7 +21,3 @@ SCC source captions are supplied in a captions file that is external to the vide
 + **Force 608 to 708 Upconvert**: SCC source captions are EIA-608 format and are contained in an external file. The options for converting the caption are the following:
   + Check: To convert the captions to CEA-708 format.
   + Unchecked: To leave the captions unconverted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

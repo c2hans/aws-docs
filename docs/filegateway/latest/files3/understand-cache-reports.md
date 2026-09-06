@@ -21,7 +21,3 @@ Cache reports list files that are currently in the local cache for a specific fi
 + **UploadError** — The error that is preventing the file from uploading to Amazon S3. For more information and recommended steps to resolve these errors, see [Troubleshooting: File Gateway issues](https://docs.aws.amazon.com/filegateway/latest/files3/troubleshooting-file-gateway-issues.html).
 + **SizeInBytes** — The total size of the file.
 + **IsWholeFileInCache** — Reports `TRUE` if all of the file's data is currently stored in the gateway cache. If this is TRUE`` for a file failing to upload to Amazon S3, then the gateway will allow the file to be read.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

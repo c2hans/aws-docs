@@ -81,7 +81,3 @@ You can continue to collect evidence and view dashboard insights for outdated st
 <a name="dashboard-varying-evidence"></a>
 
 Not all evidence is collected on a daily basis. The controls in Audit Manager assessments are mapped to different data sources, and each one can have a different evidence collection schedule. As a result, it's expected that the daily snapshot displays a varying amount of evidence each day. For more information, see [Evidence collection frequency](how-evidence-is-collected.md#frequency).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

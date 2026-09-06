@@ -41,7 +41,3 @@ Engaging with AWS Solutions Architects, Technical Account Managers, and AWS Prof
 
 **Note**
 Dependencies outside the scope of this solution can impact the account migration between AWS Organizations (for example, [quotas for AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.html), resources shared by [AWS Resource Access Manager](https://aws.amazon.com/ram/) [AWS RAM], and service-managed CloudFormation [StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html)).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Account Assessment for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

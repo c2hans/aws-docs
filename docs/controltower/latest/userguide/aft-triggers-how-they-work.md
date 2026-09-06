@@ -16,7 +16,3 @@ When customization triggers are enabled and AFT processes an account provisionin
 1. AFT records an audit entry with the trigger source and target accounts.
 
 If the feature is disabled or if the OU has not changed, standard provisioning continues without triggering customization re-execution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

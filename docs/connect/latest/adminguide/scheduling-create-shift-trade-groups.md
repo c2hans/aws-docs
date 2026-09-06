@@ -51,7 +51,3 @@ You can create up to 500 trade groups per Connect Customer instance. You can cre
       + **Custom**
         + Create a custom trade group by selecting the desired staffing groups. This restricts trades to only the selected staffing groups.
         + You can create a maximum of 100 custom trade groups.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

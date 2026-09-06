@@ -34,7 +34,3 @@ Either **Create Stack** or **Update Stack** is required, but not both.
 
 **Build function inside a container**
 (Optional) If selected, the AWS SAM CLI builds any of the serverless application's functions inside of a Lambda-like Docker container locally before deployment. This is useful if the function depends on packages that have natively compiled dependencies or programs. For more information, see [Building applications](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-build.html) in the *AWS Serverless Application Model Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

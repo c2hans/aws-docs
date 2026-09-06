@@ -40,7 +40,3 @@ The AWS Builder ID **Nickname** is not your CodeCatalyst alias. You selected you
 1. View your user alias and name information. For a user in a CodeCatalyst space that supports AWS Builder ID users, the label **AWS Builder ID** displays above the icon.
 
 1. View and configure features as required, such as your PATs, notifications, and personal connections.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

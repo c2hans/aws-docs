@@ -55,6 +55,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   AdminDeleteSoftwareToken  **
+  - **IAM action:**  [cognito-idp:AdminDeleteSoftwareToken](#list_cognito-idp-action-AdminDeleteSoftwareToken)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   AdminDeleteUser  **
   - **IAM action:**  [cognito-idp:AdminDeleteUser](#list_cognito-idp-action-AdminDeleteUser)
   - **Condition key:**
@@ -385,6 +391,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Read
 
 - **   DescribeTerms  **
+  - **IAM action:**  [cognito-idp:DescribeTerms](#list_cognito-idp-action-DescribeTerms)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeTermsByClient  **
   - **IAM action:**  [cognito-idp:DescribeTerms](#list_cognito-idp-action-DescribeTerms)
   - **Condition key:**
   - **Possible value(s):**
@@ -787,6 +799,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [AdminCreateUser](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminCreateUser.html)  **
   - **Description:** Grants permission to create new users and send welcome messages via email or SMS
+  - **Resource types (\*required):** [userpool\*](#list_cognito-idp-resource-userpool)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cognito-idp-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [AdminDeleteSoftwareToken](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminDeleteSoftwareToken.html)  **
+  - **Description:** Grants permission to delete a user's software token
   - **Resource types (\*required):** [userpool\*](#list_cognito-idp-resource-userpool)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cognito-idp-aws_ResourceTag___TagKey_)
   - **Access level:** Write
@@ -1554,7 +1572,3 @@ Amazon Cognito User Pools defines the following condition keys that can be used 
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag)  | Filters access by the presence of tag key-value pairs in the request | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag)  | Filters access by tag key-value pairs attached to the resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys)  | Filters access by a key that is present in the request | ArrayOfString |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

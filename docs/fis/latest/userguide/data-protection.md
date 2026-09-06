@@ -26,7 +26,3 @@ AWS FIS always encrypts your data at rest. Data in AWS FIS is encrypted at rest 
 <a name="data-encryption-in-transit"></a>
 
 AWS FIS encrypts data in transit between the service and other integrated AWS services. All data that passes between AWS FIS and integrated services is encrypted using Transport Layer Security (TLS). For more information about other integrated AWS services, see [Supported AWS services](what-is.md#supported-services).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

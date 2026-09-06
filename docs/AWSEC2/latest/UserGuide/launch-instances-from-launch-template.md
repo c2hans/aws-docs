@@ -219,7 +219,3 @@ A launch template is optional when creating a Spot Fleet request. If you don't u
 
 **To create a Spot Fleet request using a launch template**
 + Use the [request-spot-fleet](https://docs.aws.amazon.com/cli/latest/reference/ec2/request-spot-fleet.html) command. Use the `LaunchTemplateConfigs` parameter to specify the launch template and any overrides for the launch template.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

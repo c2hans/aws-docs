@@ -52,7 +52,3 @@ In order to ensure correct behaviour to handle leadership fail-over, we recommen
 + We have observed that older 3rd party golang and ruby libraries remain verbose during an entire broker offline time period despite produces and consume requests being unaffected. We recommend you always monitor your business level metrics besides request metrics for success and errors to determine if there is real impact vs noise in your logs.
 + Customers should not alarm on transient exceptions for network/not\_leader as they are normal, non-impacting, and expected as part of the kafka protocol.
 + Customers should not alarm on UnderReplicatedPartitions as they are normal, non-impacting, and expected during a single offline broker.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

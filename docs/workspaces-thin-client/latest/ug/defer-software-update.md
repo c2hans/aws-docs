@@ -38,7 +38,3 @@ The notification will tell you the name of the updated software, the version num
 ![Settings page showing software update notification for Software set 2.6.0 scheduled for Jun 25, 2024.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/settings-install-now.png)
 
 You can continue deferring updates. After a certain point, however, your device will be considered behind schedule. If this happens, the updates will install automatically.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ The following table lists Network Synthetic Monitor API operations that you can 
 | Remove a key-value pair, or tag, from a monitor or probe. | See [UntagResource](https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_UntagResource.html)  | See [Tag or untag resources](nw-monitor-tags-cli.md) |
 | Update an aggregation period for a monitor. | See [UpdateMonitor](https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_UpdateMonitor)  | See [Edit a monitor](nw-monitor-edit.md) |
 | Update a probe in a monitor. | See [UpdateProbe](https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_UpdateProbe)  | See [Edit a probe](nw-monitor-probe-edit.md) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

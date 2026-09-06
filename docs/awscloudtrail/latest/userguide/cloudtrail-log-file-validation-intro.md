@@ -34,7 +34,3 @@ To enable log file integrity validation, you can use the AWS Management Console,
 To validate the integrity of CloudTrail log files, you can use the AWS CLI or create your own solution. The AWS CLI will validate files in the location where CloudTrail delivered them. If you want to validate logs that you have moved to a different location, either in Amazon S3 or elsewhere, you can create your own validation tools.
 
 For information on validating logs by using the AWS CLI, see [Validating CloudTrail log file integrity with the AWS CLI](cloudtrail-log-file-validation-cli.md). For information on developing custom implementations of CloudTrail log file validation, see [Custom implementations of CloudTrail log file integrity validation](cloudtrail-log-file-custom-validation.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

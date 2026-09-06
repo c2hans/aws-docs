@@ -110,7 +110,7 @@ Specify a password other than the prompt shown here as a security best practice.
      Enter the default tablespace for ORDS\_PUBLIC\_USER [USERS].
 
      Enter the temporary tablespace for ORDS\_PUBLIC\_USER [TEMP].
-   + Enter 1 if you want to use PL/SQL Gateway or 2 to skip this step. If you're using Oracle Application Express or migrating from mod\_plsql, you must enter 1 [1].
+   + Enter 1 if you want to use PL/SQL Gateway or 2 to skip this step. If you're using Oracle APEX or migrating from mod\_plsql, you must enter 1 [1].
 
      Choose the default.
    + Enter the PL/SQL Gateway database user name [APEX\_PUBLIC\_USER]
@@ -317,7 +317,3 @@ The preceding commands apply to ORDS 22 and later.
    Choose **Login**, and then set a new password for the `admin` user.
 
 Your listener is now ready for use.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

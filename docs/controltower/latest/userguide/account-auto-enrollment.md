@@ -37,7 +37,3 @@ For more information and examples regarding these APIs, see [`CreateAccount`](ht
 <a name="w2aac44c24c18c21"></a>
 +  **Enrollment timeline:** An account moved to an OU that's registered with AWS Control Tower is enrolled with an *eventual consistency* model. This process typically takes a few minutes, up to several hours, depending on the number of accounts being moved.
 +  **AWS Service Catalog provisioned products:** Auto-enrollment does not create, modify, or terminate AWS Service Catalog provisioned products. If an account was previously enrolled through Account Factory and has an associated provisioned product, that provisioned product remains in the management account after the account is unenrolled. To clean up orphaned provisioned products, see [Deleting provisioned products](https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-delete.html) in the *AWS Service Catalog User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

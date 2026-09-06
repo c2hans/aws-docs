@@ -28,7 +28,3 @@ If you are implementing user authentication, you must also include three authori
 <a name="channel-scheduling-activate-a-schedule-http-request-response-response"></a>
 
 The response shows the `schedule` element with <active> set to “true” and other elements as described in [POST: Create a One-Time Schedule](channel-scheduling-create-a-one-time-schedule.md) and [POST: Create a Repeating Schedule](channel-scheduling-create-a-repeating-schedule.md). The response also includes the following elements, which are used internally by the system: <args>, <schedulable\_type>, and <schedulable\_id>. The response is otherwise identical to the response to a GET Schedule. For an example response, see [GET List Example](channel-scheduling-get-list-of-all-channel-schedules-example.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

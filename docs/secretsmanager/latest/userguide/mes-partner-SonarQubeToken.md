@@ -63,7 +63,3 @@ To create your secret, use the [CreateSecret](https://docs.aws.amazon.com/secret
 During rotation, the driver generates a new token, stores it as the pending version, verifies it against the SonarQube API, promotes it to current, then revokes the old token by its `tokenName`. Applications using the Secrets Manager caching library pick up the new token on their next refresh.
 
 SonarQube Server is customer-hosted, so your SonarQube instance must be reachable over HTTPS from the Secrets Manager rotation service. Rotation calls originate from the AWS-managed prefix list `com.amazonaws.{{region}}.secretsmanager-managed-external-secrets`. Allow inbound access from this prefix list on your instance's security group or firewall, and ensure the instance presents a publicly trusted TLS certificate. For more information, see [AWS-managed prefix lists](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-aws-managed-prefix-lists.html) in the *Amazon VPC User Guide*. Instances that are not reachable over the public internet are not supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

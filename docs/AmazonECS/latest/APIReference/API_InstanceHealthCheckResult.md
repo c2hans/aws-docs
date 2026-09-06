@@ -34,7 +34,7 @@ Required: No
  ** type **   <a name="ECS-Type-InstanceHealthCheckResult-type"></a>
 The type of container instance health status that was verified.
 Type: String
-Valid Values: `CONTAINER_RUNTIME | ACCELERATED_COMPUTE | DAEMON`
+Valid Values: `CONTAINER_RUNTIME | ACCELERATED_COMPUTE | DAEMON | AGENT_CONNECTIVITY`
 Required: No
 
 ## See Also
@@ -44,7 +44,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/InstanceHealthCheckResult)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/InstanceHealthCheckResult)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/InstanceHealthCheckResult)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic Container Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

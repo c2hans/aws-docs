@@ -38,7 +38,3 @@ To configure the post-launch actions, complete the following steps:
 1. [Configure predefined post-launch actions](predefined-post-launch-actions.md) according to your preferences.
 
 1. [Create custom post-launch actions](post-launch-settings.md#post-launch-settings-custom-actions-add) according to your preferences.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

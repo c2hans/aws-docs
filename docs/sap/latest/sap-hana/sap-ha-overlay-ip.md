@@ -15,7 +15,3 @@ This guide is intended for users who have previous experience installing and ope
 + [SAP on AWS High Availability Setup](sap-oip-sap-on-aws-high-availability-setup.md)
 + [Overlay IP Routing using AWS Transit Gateway](sap-oip-overlay-ip-routing-using-aws-transit-gateway.md)
 + [Overlay IP Routing with Network Load Balancer](sap-oip-overlay-ip-routing-with-network-load-balancer.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

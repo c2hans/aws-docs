@@ -26,7 +26,3 @@ You can update the tags of a notebook instance that is `InService`. To update an
 1. Update your notebook instance and select the **Update notebook instance** button at the bottom of the page when you are done to return to the notebook instances page. Your notebook instance status changes to **Updating**.
 
    When the notebook instance update is complete, the status changes to `Stopped`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

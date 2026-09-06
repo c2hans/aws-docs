@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/sysops-administ
 <a name="sysops-administrator-associate-03-domain3-task2"></a>
 + Skill 3.2.1: Use AWS services to automate operational processes (for example, Systems Manager).
 + Skill 3.2.2: Implement event-driven automation by using AWS services and features (for example, Lambda, S3 Event Notifications, EventBridge, AWS DevOps Agent).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

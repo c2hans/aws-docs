@@ -17,7 +17,3 @@ You can create and run PowerShell scripts by using the [AWS Resource Groups Tagg
 You can create and run programs with any of the available [AWS SDKs](https://docs.aws.amazon.com/index.html#sdks) by using the [Resource groups tagging APIs](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/), such as the [tagging APIs for Python](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html) or the [tagging APIs for Java](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ResourceGroupsTaggingAPI.html).
 
 When you add, remove, or edit existing tags, you're changing tags only on those resources that you select in the results of your **Find resources to tag** query. You can select up to 500 resources on which to manage tags.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Tagging and Tag Editor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tag-editor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

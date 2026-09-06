@@ -380,7 +380,3 @@ HyperPod sends cluster events to Amazon EventBridge using three detail types:
 <a name="sagemaker-hyperpod-cluster-events-see-also"></a>
 + [SageMaker HyperPod Slurm cluster events](sagemaker-hyperpod-cluster-events-slurm-page.md) — Slurm cluster events with CLI usage and common scenarios
 + [SageMaker HyperPod EKS cluster events](sagemaker-hyperpod-cluster-events-eks-page.md) — EKS cluster events with CLI usage and common scenarios
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,7 +45,7 @@ If you define a procedure with the same name as an existing procedure, but a dif
 
  *sp\_procedure\_name*
 The name of the procedure. If you specify a schema name (such as **myschema.myprocedure**), the procedure is created in the specified schema. Otherwise, the procedure is created in the current schema. For more information about valid names, see [Names and identifiers](r_names.md).
-We recommend that you prefix all stored procedure names with `sp_`. Amazon Redshift reserves the `sp_` prefix for stored procedure names. By using the `sp_` prefix, you ensure that your stored procedure name doesn't conflict with any existing or future Amazon Redshift built-in stored procedure or function names. For more information, see [Naming stored procedures](stored-procedure-naming.md).
+We recommend that you prefix all stored procedure names with `sp_`. Amazon Redshift reserves the `sp_` prefix for stored procedure names. By using the `sp_` prefix, you make sure that your stored procedure name doesn't conflict with any existing or future Amazon Redshift built-in stored procedure or function names. For more information, see [Naming stored procedures](stored-procedure-naming.md).
 You can define more than one procedure with the same name if the data types for the input arguments, or signatures, are different. In other words, in this case the procedure name is overloaded. For more information, see [Overloading procedure names](stored-procedure-naming.md#stored-procedure-overloading-name)
 
 *[argname] [ argmode] argtype*
@@ -83,7 +83,7 @@ Creates the stored procedure in a nonatomic transaction mode. NONATOMIC mode aut
 When you define a stored procedure as `NONATOMIC`, consider the following:
 + When you nest stored procedure calls, all the procedures must be created in the same transaction mode.
 + The `SECURITY DEFINER` option and `SET configuration_parameter` option are not supported when creating a procedure in NONATOMIC mode.
-+ Any cursor that is opened (explicitly or implicitly) is closed automatically when an implicit commit is processed. Therefore, you must open an explicit transaction before beginning a cursor loop to ensure that any SQL within the loop's iteration is not implicitly committed.
++ Any cursor that is opened (explicitly or implicitly) is closed automatically when an implicit commit is processed. Therefore, you must open an explicit transaction before beginning a cursor loop to make sure that any SQL within the loop's iteration is not implicitly committed.
 
 SECURITY INVOKER \| SECURITY DEFINER
 The `SECURITY DEFINER` option is not supported when `NONATOMIC` is specified.
@@ -182,7 +182,3 @@ END;
 $$ LANGUAGE plpgsql
 SECURITY INVOKER;
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

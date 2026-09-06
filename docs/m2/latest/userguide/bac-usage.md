@@ -435,7 +435,3 @@ The removal from the list is immediate, with no warning message.
 ![File upload interface with Browse, Load on server, and Remove all buttons, and a progress bar.](http://docs.aws.amazon.com/m2/latest/userguide/images/ba-bac-dataset-creation-from-uploaded-listcat-files.png)
 
 1. When the progress bar reaches the end, all files have been successfully uploaded to the server and the **Load** button is enabled. Choose the **Load** button and use the discovered data set definitions as explained previously.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

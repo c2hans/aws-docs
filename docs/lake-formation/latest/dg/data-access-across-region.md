@@ -64,7 +64,3 @@ In the diagram below, the producer account (Account A) hosts the Amazon S3 bucke
 1. The data lake administrator of the consumer account creates a resource link in the Europe (Ireland) Region pointing to the target shared table in the US East (N. Virginia) Region and grants the user `DESCRIBE` permission on the resource link from Europe (Ireland) Region.
 
 1.  The user queries the data from the Europe (Ireland) Region using Athena.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

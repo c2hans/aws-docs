@@ -36,7 +36,3 @@ For a sample Jupyter Notebook, see the [Deploy your PyTorch Resnet50 model with 
 
 I want to deploy my trained Hugging Face model in SageMaker AI.
 For a sample Jupyter Notebook, see the [Deploy your PyTorch BERT model with Triton Inference Server example](https://github.com/aws/amazon-sagemaker-examples/blob/master/sagemaker-triton/nlp_bert/triton_nlp_bert.ipynb).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

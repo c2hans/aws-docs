@@ -10,7 +10,3 @@ Amazon EMR WAL adds the concept of WAL workspaces. A *WAL workspace* is a logica
 You can use WAL workspaces to scope down Amazon EMR WAL IAM permissions to only include the workspaces that the cluster needs to access. You can also tag your WAL workspace for tag-based access control. For more information on tagging, see [Tagging WAL workspaces](emr-hbase-wal-tagging.md).
 
 ![HBase architecture diagram showing write request flow through RegionServers, MemStore, and data storage.](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/images/wal-new.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

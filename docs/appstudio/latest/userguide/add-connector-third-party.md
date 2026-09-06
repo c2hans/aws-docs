@@ -19,7 +19,3 @@ To send API requests to third-party services from App Studio applications, you m
 + **OpenAPI Connector: **Used to configure authentication and request information for APIs that have adopted the OpenAPI Specification (OAS). APIs that adhere to the OAS provide several benefits, including standardization, security, governance, and documentation.
 
 App Studio recommends using the `OpenAPI Connector` for any APIs that adhere to the OAS, and provide an OpenAPI Specification File. For more information about OpenAPI, see [What is OpenAPI?](https://swagger.io/docs/specification/v3_0/about/) in the Swagger documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

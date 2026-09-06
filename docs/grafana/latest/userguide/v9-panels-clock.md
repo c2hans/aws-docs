@@ -19,7 +19,3 @@ The clock panel shows the current time or a countdown. It updates every second.
 + **Countdown End Text** – Specify the text to show when the countdown ends.
 + **Date/Time formatting options** – Customize the font size, weight, and date/time formatting. If you are showing a countdown and don't want to see the seconds ticking down, change the time format to `hh:mm` for the 24-hour clock or `h:mm A` for the 12-hour clock. For a complete list of options, see [ Display](https://momentjs.com/docs/#/displaying/).
 + **Bg Color** – Select a background color for the clock.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

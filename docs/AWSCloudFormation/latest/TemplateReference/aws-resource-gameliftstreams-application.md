@@ -150,7 +150,3 @@ An ID that uniquely identifies the application resource. For example: `a-9ZY8X7W
 <a name="aws-resource-gameliftstreams-application--seealso"></a>
 + [Prepare an application in Amazon GameLift Streams](https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/applications.html) in the *Amazon GameLift Streams Developer Guide*
 + [CreateApplication](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_CreateApplication.html) in the *Amazon GameLift Streams API Reference*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,7 +49,3 @@ For best results, do the following:
 +  Incentivize leaders to meet or exceed their timeline and modernization goals.
 
 Executive sponsors can support culture change by communicating and supporting communication and failures along the way. Problems will be encountered; this is natural. With well-planned and well-tested deployments on AWS, most cutovers are non-events. When things do go wrong, failback procedures guide teams to quickly recover, adjust, and try again. An evaluation and [correction of errors](https://wa.aws.amazon.com/wat.concept.coe.en.html) helps ensure that avoidable mistakes are not repeated. Senior leadership team support for experimentation and controlled failure is essential to gain speed and unlock value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

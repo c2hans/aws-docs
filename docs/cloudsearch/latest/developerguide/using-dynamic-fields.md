@@ -70,7 +70,3 @@ The options a dynamically generated field inherits from the dynamic field config
 You can specify dynamic fields as sources for other fields if the target field is an array. A field's source attribute supports wildcards, which enables you to specify a pattern that matches a group of dynamic fields. For example, to search all fields generated from the `*_t` dynamic field, you could create a field called `all_t_fields` and set its source attribute to `*_t`. This copies the contents of all fields whose names end in `_t` into `all_t_fields`. Note, however, that searching this field will search *all* fields that match the pattern, not only dynamically generated fields.
 
 For more information about constructing and submitting search requests, see [Searching Your Data with Amazon CloudSearch](searching.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

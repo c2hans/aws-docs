@@ -46,7 +46,3 @@ Note the following prerequisites for using Oracle APEX and ORDS:
 <a name="Appendix.Oracle.Options.APEX.limitations"></a>
 
 You can't modify the `APEX_{{version}}` user account, which is managed by Amazon RDS. Thus, you can't apply database profiles or enforce password rules on this user. The profiles and password settings for `APEX_{{version}}` are predefined by Oracle and AWS and are designed to meet the security requirements for Amazon RDS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

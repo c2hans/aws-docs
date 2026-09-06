@@ -53,7 +53,3 @@ Set replica autoscaling on the deployment and node autoscaling on the cluster. T
 1. **Node comes up and pod starts running.** Once the node is ready and joins the cluster, Kubernetes schedules the pending pod onto it. The new replica loads the model and begins serving requests.
 
 On scale-down, the process reverses: Ray Serve removes idle replicas, KubeRay deletes the worker pods, and managed Karpenter terminates nodes that have no running pods after the consolidation window.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

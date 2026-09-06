@@ -27,7 +27,3 @@ The following are target-specific limitations of zero-ETL integrations:
 + Due to limitation in Athena, the source column/nested field name should not contain special characters ":", which will cause the target table schema metadata showing up incorrectly. In such cases, AWS Glue Zero ETL will move the integration to FAILED state.
 + Due to limitation in Iceberg, AWS Glue Zero ETL target can only support replication of 1000 columns per table. If chosen table in any integration has more than 1000 columns, AWS Glue Zero ETL will move the integration to FAILED state.
 + Due to limitation in Data Catalog, AWS Glue Zero ETL can only support replicating table of schema size 10 MB. If chosen table in any integration has schema size larger than 10 MB, AWS Glue Zero ETL will move the integration to FAILED state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

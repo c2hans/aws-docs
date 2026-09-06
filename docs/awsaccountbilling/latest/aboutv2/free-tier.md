@@ -55,7 +55,3 @@ Explore the following resources to learn more about AWS Free Tier.
 + [AWS Free Tier](https://aws.amazon.com/free/)
 + [AWS Free Tier FAQs](https://aws.amazon.com/free/free-tier-faqs/)
 + [AWS Free Tier API Reference](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Operations_AWS_Free_Tier.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

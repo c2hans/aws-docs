@@ -148,7 +148,3 @@ If you disable discovery, all of your data previously discovered for Linux subsc
 1. (Optional) Remove the service-linked role used for Linux subscriptions. For more information, see [Delete a service-linked role for License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/linux-subscriptions-role.html).
 
 1. (Optional) Disable trusted access between License Manager and your organization. For more information, see [AWS License Manager and AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-license-manager.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

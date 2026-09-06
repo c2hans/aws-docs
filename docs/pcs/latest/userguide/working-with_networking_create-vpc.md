@@ -60,6 +60,11 @@ Create a VPC by copy and pasting the appropriate URL for the AWS Region where yo
   ```
   https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-3#/stacks/create/review?stackName=hpc-networking&templateURL=https://aws-hpc-recipes.s3.us-east-1.amazonaws.com/main/recipes/net/hpc_large_scale/assets/main.yaml
   ```
++ **Asia Pacific (New Zealand) (ap-southeast-6)**
+
+  ```
+  https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-6#/stacks/create/review?stackName=hpc-networking&templateURL=https://aws-hpc-recipes.s3.us-east-1.amazonaws.com/main/recipes/net/hpc_large_scale/assets/main.yaml
+  ```
 + **Asia Pacific (Tokyo) (ap-northeast-1)**
 
   ```
@@ -171,7 +176,3 @@ Monitor the status of the CloudFormation stack. When it reaches `CREATE_COMPLETE
 
 **Note**
 To see all the resources the CloudFormation template created, open the [CloudFormation console](https://console.aws.amazon.com/cloudformation). Choose the `hpc-networking` stack and then choose the **Resources** tab.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

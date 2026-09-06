@@ -102,7 +102,3 @@ The numbered shapes represent the different objects. The number of arrows betwee
 | 005, PageToken: <encrypted\_next\_token>, MaxResults: 1 | [{/group/b/e, [000, 001, 003, 005]}], PageToken: null In this example, object `005` has both nodes `002` and `003` as parents. Also, since `MaxResults` is 1, multiple paginated calls with page tokens will be made to get all paths with a list of objects.  |
 | 006, PageToken: null, MaxResults: 1 | [{/group/b/f, [000, 001, 003, 006]}], PageToken: null |
 | 007, PageToken: null, MaxResults: 1 | [{/group/a/index, [000, 001, 002, 007]}], PageToken: null |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

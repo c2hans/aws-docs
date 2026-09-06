@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[Ack](#cfn-eks-capability-capabilityconfiguration-ack)" : {{}},
+  "[Ack](#cfn-eks-capability-capabilityconfiguration-ack)" : {{Ack}},
   "[ArgoCd](#cfn-eks-capability-capabilityconfiguration-argocd)" : {{ArgoCd}}
 }
 ```
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [Ack](#cfn-eks-capability-capabilityconfiguration-ack): {{
-    }}
+    Ack}}
   [ArgoCd](#cfn-eks-capability-capabilityconfiguration-argocd): {{
     ArgoCd}}
 ```
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `Ack`  <a name="cfn-eks-capability-capabilityconfiguration-ack"></a>
 Property description not available.
 *Required*: No
-*Type*:
+*Type*: [Ack](aws-properties-eks-capability-ack.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ArgoCd`  <a name="cfn-eks-capability-capabilityconfiguration-argocd"></a>
@@ -48,7 +48,3 @@ Property description not available.
 *Required*: No
 *Type*: [ArgoCd](aws-properties-eks-capability-argocd.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

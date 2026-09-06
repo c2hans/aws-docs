@@ -986,7 +986,3 @@ Amazon DynamoDB defines the following condition keys that can be used in the `Co
 |   [dynamodb:SecondPartitionKeyValues](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/specifying-conditions.html#FGAC_DDB.ConditionKeys)  | Filters access by the second partition key of the table | ArrayOfString |
 |   [dynamodb:Select](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/specifying-conditions.html#FGAC_DDB.ConditionKeys)  | Filters access by the Select parameter of a Query or Scan request | String |
 |   [dynamodb:ThirdPartitionKeyValues](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/specifying-conditions.html#FGAC_DDB.ConditionKeys)  | Filters access by the third partition key of the table | ArrayOfString |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

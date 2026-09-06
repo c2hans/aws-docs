@@ -159,7 +159,3 @@ In this module, you will:
 <a name="conclusion"></a>
 
 You learned how to clone a Flutter app from GitHub in this module. You also learned how to use the Amplify CLI to provision a cloud backend for the app.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

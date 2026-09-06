@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/how-to-di
 1. From the options displayed in the selection pane choose the **Disable** option.
 
 1. Choose **Save changes** to apply to disable notification settings for end-entity certificate expiry event.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

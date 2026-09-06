@@ -17,7 +17,7 @@ This example illustrates how to set up two equally matched teams of players with
 
 Notes on using this rule set:
 + This example allows for teams to be any size between four and eight players (although they must be the same size). For teams with a range of valid sizes, the matchmaker makes a best-effort attempt to match the maximum number of allowed players.
-+ The `FairTeamSkill` rule ensures that teams are evenly matched based on player skill. To evaluate this rule for each new prospective player, FlexMatch tentatively adds the player to a team and calculates the averages. If rule fails, the prospective player is not added to the match.
++ The `FairTeamSkill` rule ensures that teams are evenly matched based on player skill. To evaluate this rule for each new prospective player, FlexMatch tentatively adds the player to a team and calculates the averages. If the rule fails, the prospective player is not added to the match.
 + Since both teams have identical structures, you could opt to create just one team definition and set the team quantity to "2". In this scenario, if you named the team "aliens", then your teams would be assigned the names "aliens\_1" and "aliens\_2".
 
 ```
@@ -67,7 +67,3 @@ Notes on using this rule set:
     }]
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,3 @@ Users who want to change the vCenter or AWS credentials used by the MGN applianc
 1.  Upon successful connection to vCenter and MGN, the tool saves the new credentials and restarts the necessary services.
 
 1.  In case of failure to connect to vCenter or MGN, the new credentials are not stored, and the previous configuration is retained. This error message is displayed: `Failed to connect to the vCenter endpoint or MGN using the new connection details. The configuration changes will not be applied.`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

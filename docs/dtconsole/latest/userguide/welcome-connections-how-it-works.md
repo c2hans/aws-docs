@@ -35,7 +35,3 @@ The following diagram shows how on-prem connections work with user accounts or o
 A newly created host is in a `Pending` state. A third-party registration process is required to complete setup of the host and for it to move from `Pending` to an `Available` state. After this is complete, a host is `Available` and can be used for connections to installed provider types.
 
 For an overview of the connections workflow, see [Workflow to create or update connections](welcome-connections-workflow.md). For an overview of the host creation workflow for installed providers, see [Workflow to create or update a host](welcome-hosts-workflow.md). For the high-level steps to create a connection by provider type, see [Working with connections](connections.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

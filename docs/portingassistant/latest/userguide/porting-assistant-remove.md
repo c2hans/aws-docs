@@ -12,7 +12,3 @@ To remove a solution assessment, follow these steps.
 1. Navigate to the **Assessed solutions** page from the left navigation pane.
 
 1. Select the bullet next to the solution assessment that you want to remove, and from the **Actions** dropdown, select **Remove**. When you remove a solution assessment, only the assessment report is removed from Porting Assistant for .NET. Your source code is not deleted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Porting Assistant for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query portingassistant` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

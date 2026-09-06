@@ -155,7 +155,3 @@ The following is the standard control for X007 - Logging
 | 6.0 | Logs forwarding |
 | 6.1 | Any log can be forwarded from one AMS account to another AMS account of the same customer. |
 | 6.2 | Any log can be forwarded from AMS to non-AMS account only if non-AMS account is owned by the same AMS customer (by confirming that they are under the same AWS Organizations account or by matching the email domain with the customer's company name and PAYER linked account) using internal tools. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

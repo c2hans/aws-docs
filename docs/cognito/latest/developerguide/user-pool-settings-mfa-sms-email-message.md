@@ -32,7 +32,3 @@ User pools send SMS messages for MFA and other Amazon Cognito notifications with
 + When a user successfully provides a code from an SMS or email message that Amazon Cognito sent to an unverified phone number or email address, Amazon Cognito marks the corresponding attribute as verified.
 + For a user to make a self-service change to the value of a phone number or email address that's associated with MFA, they must sign in and authorize the request with an access token. If they can't access their current phone number or email address, they can't sign in. Your team must change these values with administrator AWS credentials in [AdminUpdateUserAttributes](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminUpdateUserAttributes.html) API requests.
 + After you [configure SMS](user-pool-sms-settings.md) in your user pool, you can't disable SMS messages as an available MFA factor.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

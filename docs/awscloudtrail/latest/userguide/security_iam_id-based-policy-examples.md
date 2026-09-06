@@ -630,7 +630,3 @@ For more information, see [Monitoring CloudTrail Log Files with Amazon CloudWatc
 <a name="cloudtrail-notifications-more-info-2"></a>
 
 To learn more about using IAM to give identities, such as users and roles, access to resources in your account, see [Getting started](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-set-up.html) and [Access management for AWS resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html) in the *IAM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,7 +59,3 @@ The following limitations apply to retained automated backups:
 + You can restore a deleted cluster to a point in time that is within the retention period at the time of deletion.
 + You can't modify a retained automated backup because it consists of system backups, transaction logs, and the DB cluster properties that existed at the time that you deleted the source cluster.
 + Cross-Region automated backup replication isn't supported for Aurora DB clusters. Aurora doesn't support automatically replicating snapshots and transaction logs to another AWS Region. For disaster recovery across Regions, you must manually copy Aurora snapshots to your desired destination Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

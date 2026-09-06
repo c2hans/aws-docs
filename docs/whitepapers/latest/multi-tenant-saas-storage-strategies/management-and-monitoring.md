@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
  The partitioning model you choose will also impact the complexity and manageability of your storage monitoring strategy. The more siloed your solution, the more moving parts to manage and maintain on a tenant-by-tenant basis. In contrast, the shared nature of a pooled storage strategy makes it simpler to have a more centralized, cross-tenant collection of policies and alarms.
 
  The overall goal with these storage policies is to put in place a set of proactive rules that can help you anticipate and react to health events. As you select a multitenant storage model, consider how each approach might influence how you implement your system’s storage policies and alarms.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

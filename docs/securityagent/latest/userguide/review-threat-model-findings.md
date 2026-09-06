@@ -175,7 +175,3 @@ After reviewing your threat model results:
 + Update threat statuses as you implement fixes
 + Run a new threat model to verify your changes address the identified threats
 + Adjust your sources and scope docs as your application evolves (see [Create a threat model](perform-threat-model.md))
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

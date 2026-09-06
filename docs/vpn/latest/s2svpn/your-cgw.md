@@ -14,7 +14,3 @@ The following diagram shows your network, the customer gateway device, and the V
 For the steps to set up a VPN connection, see [Get started with AWS Site-to-Site VPN](SetUpVPNConnections.md). During this process, you create a customer gateway resource in AWS, which provides information to AWS about your device, for example, its public-facing IP address. For more information, see [Customer gateway options for your AWS Site-to-Site VPN connection](cgw-options.md). The customer gateway resource in AWS does not configure or create the customer gateway device. You must configure the device yourself.
 
 You can also find software VPN appliances on the [AWS Marketplace](https://aws.amazon.com/marketplace/search/results/ref=brs_navgno_search_box?searchTerms=vpn).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

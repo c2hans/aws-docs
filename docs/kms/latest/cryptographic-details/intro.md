@@ -14,7 +14,3 @@ In addition, most AWS services support encryption of data at rest using KMS keys
 ![AWS KMS architecture.](http://docs.aws.amazon.com/kms/latest/cryptographic-details/images/KMS-Architecture.png)
 
 AWS KMS is a tiered service consisting of web-facing AWS KMS hosts and a tier of HSMs. The grouping of these tiered hosts forms the AWS KMS stack. All requests to AWS KMS must be made over the Transport Layer Security protocol (TLS) and terminate on an AWS KMS host. AWS KMS hosts only allow TLS with a ciphersuite that provides perfect [forward secrecy](http://dx.doi.org/10.6028/NIST.SP.800-52r2). AWS KMS authenticates and authorizes your requests using the same credential and policy mechanisms of AWS Identity and Access Management (IAM) that are available for all other AWS API operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

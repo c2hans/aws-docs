@@ -15,7 +15,3 @@ The dictionary contains a forward mapping of user-facing values to 8-byte IDs in
 It stores the reverse mapping of 8-byte IDs to values in one of two indexes, depending on the size of the values:
 + An `id_to_value` index maps IDs to user-facing values that are smaller than 767 bytes after internal encoding.
 + An `id_to_blob` index maps IDs to user-facing values that are larger.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

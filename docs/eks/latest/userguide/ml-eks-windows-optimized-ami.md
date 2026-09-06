@@ -178,7 +178,3 @@ There is no EKS Windows GPU Optimized AMI or EC2 Image Builder managed component
 <a name="ml-eks-windows-ami-inferentia-trainium-support"></a>
 
  AWS [Inferentia](https://aws.amazon.com/ai/machine-learning/inferentia/) and AWS [Trainium](https://aws.amazon.com/ai/machine-learning/trainium/) based workloads are not supported on Windows.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ You can use the policy generator to create a simple authorization policy by foll
 1. Choose **Next** and on the **Customize policy** screen, the **Edit policy details** container has fields where you can change or customize the policy’s **Name** and the **Policy document** itself.
 
 1. Choose **Next** and on the **Review and apply** screen, the **Overview** container will show the verified identity you’re authorizing as well as the name of this policy. In the **Policy document** pane will be the actual policy you just wrote along with any conditions you added - review the policy and if it looks correct, choose **Apply policy**. (If you need to change or correct something, choose **Previous** and work in the **Edit policy details** container.)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

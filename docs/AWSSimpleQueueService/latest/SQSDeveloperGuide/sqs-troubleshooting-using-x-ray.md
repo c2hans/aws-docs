@@ -14,7 +14,3 @@ To send AWS X-Ray trace headers through Amazon SQS, you can do one of the follow
 To collect data on errors and latency, you must instrument the [`AmazonSQS`](https://docs.aws.amazon.com/sdk-for-java/latest/reference/index.html?com/amazonaws/services/sqs/AmazonSQSClient.html) client using the [AWS X-Ray SDK](https://docs.aws.amazon.com/xray-sdk-for-java/latest/javadoc/index.html).
 
 You can use the AWS X-Ray console to view the map of connections between Amazon SQS and other services that your application uses. You can also use the console to view metrics such as average latency and failure rates. For more information, see [Amazon SQS and AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/xray-services-sqs.html) in the *AWS X-Ray Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

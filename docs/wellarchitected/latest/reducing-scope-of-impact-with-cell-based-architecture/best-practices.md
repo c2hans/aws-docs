@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
  Since the cell is a failure isolation boundary, it is a good exercise to analyze which services make up your cell and what is the effect of each component failing partially or completely and make sure that other cells are not impacted.
 
  A worksheet containing the component and cause, probability, mitigation of the failure will already give you good ideas of what can happen and how to react accordingly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

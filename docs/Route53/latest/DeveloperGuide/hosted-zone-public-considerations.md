@@ -16,7 +16,3 @@ You can create more than one hosted zone with the same name and add different re
 **Reusable delegation sets**
 By default, Route 53 assigns a unique set of four name servers (called a delegation set) to each hosted zone that you create. If you want to create many hosted zones, you can create a reusable delegation set with the API. (Reusable delegation sets aren't available in the Route 53 console.) You can then create hosted zones with the API and assign the same four name servers to each one.
 Reusable delegation sets make it simpler to migrate DNS service to Route 53. You can tell your registrar to use the same four name servers for all the domains that you want Route 53 to serve. For more information, see [CreateReusableDelegationSet](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateReusableDelegationSet.html) in the *Amazon Route 53 API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

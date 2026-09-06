@@ -13,7 +13,3 @@ Before using email routing, you'll need to complete the following prerequisites:
 + Enable interoperability mode for your organization. For more information, see [Enable interoperability](interoperability.md#enable_interoperability).
 + Ensure that you see your domain in the Amazon WorkMail console.
 + Verify that our Microsoft Exchange Server can send email to the internet. You might need to configure a Send connector. For more information about Send connectors, see [ Create a Send connector in Exchange Server to send mail to the internet ](https://docs.microsoft.com/en-us/exchange/mail-flow/connectors/internet-mail-send-connectors?view=exchserver-2019) in the Microsoft documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

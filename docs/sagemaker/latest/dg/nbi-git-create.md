@@ -29,7 +29,3 @@ You can associate Git repositories with a notebook instance when you create the 
    1. For **Additional repository 1**, choose a repository that you want to add as an additional directory. SageMaker AI clones this repository as a subdirectory in the Jupyter startup directory at `/home/ec2-user/SageMaker`. To choose a repository that is stored as a resource in your account, choose its name from the list. To add a new repository as a resource in your account, choose **Add a repository to SageMaker AI (opens the Add repository flow in a new window)** and then follow the instructions at [Create a Notebook Instance with an Associated Git Repository (Console)](#nbi-git-create-console). To clone a repository that is not stored in your account, choose **Clone a public Git repository to this notebook instance only**, and then specify the URL for that repository.
 
       Repeat this step up to three times to add up to three additional repositories to your notebook instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

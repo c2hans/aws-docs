@@ -56,7 +56,3 @@ hbase(main):001:0>drop 'ns1:t1',false
 ```
 
 The boolean value corresponds to whether or not you want to archive your table, so you can set it to `true` if you want to save it. You can also run `drop 'ns1:t1'` with no boolean to archive the table.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

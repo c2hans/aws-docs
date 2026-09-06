@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-work
 | What is your current data processing capacity, and how much do you project needing for future generative AI workloads? | Our current capacity is 10 TB/day. We project needing 30 TB/day within a year and are scaling our infrastructure to meet this demand. |
 | What is your strategy for balancing data privacy with the data needs of generative AI models? | We're implementing advanced anonymization techniques and synthetic data generation. Our goal is to increase our usable data for AI by 40% while reducing privacy risks by 60% over the next year. |
 | What percentage of your machine learning (ML) datasets are accurately labeled, and what's your target accuracy rate? | Currently, 85% of our ML datasets are accurately labeled. We're targeting a 95% accuracy rate within the next quarter by employing both human and automated labeling techniques. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

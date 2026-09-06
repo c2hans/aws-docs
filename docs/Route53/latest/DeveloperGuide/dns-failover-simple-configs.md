@@ -65,7 +65,3 @@ The following example shows a group of weighted records in which the third recor
 If you omit a health check from one or more records in a group of records, Route 53 has no way to determine the health of the corresponding resource. Route 53 treats those records as healthy.
 
 ![Three weighted records, only two of which have health checks. Route 53 always considers the third record to be healthy.](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/images/hc-weighted-missing-health-check.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

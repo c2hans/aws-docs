@@ -94,7 +94,3 @@ For more information about the regions and endpoints for each service, refer to:
 <a name="transcribe-quotas"></a>
 
 Each Amazon Chime SDK meeting with live transcription requires exactly one HTTP/2 stream to Amazon Transcribe or Amazon Transcribe Medical. Both services have regional service quotas for the number of concurrent HTTP/2 streams, and for start-stream transactions per second. For more information about the quotas, refer to [Guidelines and quotas](https://docs.aws.amazon.com/transcribe/latest/dg/limits-guidelines.html) in the *Amazon Transcribe Developer Guide*. For information about quota increases, refer to Service Quotas in the AWS console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

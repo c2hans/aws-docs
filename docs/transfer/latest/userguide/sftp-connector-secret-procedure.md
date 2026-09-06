@@ -48,6 +48,18 @@ It is not possible to use a passphrase-protected private key for authentication 
 
 1. On the **Review** page, choose **Store** to create and store the secret.
 
-## See also
+## Secret version fallback
+<a name="sftp-connector-secret-version-fallback"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+When you rotate credentials for your SFTP connector, external partners might take time to update to the new credentials. During this transition, the connector might fail to authenticate because it only attempts the current version of the secret by default.
+
+To support graceful rotation without downtime, you can configure an ordered list of version stages on your connector. The connector tries each version stage in sequence during authentication—it uses the first stage that authenticates successfully. For example, if you configure `["AWSCURRENT", "AWSPREVIOUS"]`, the connector tries the new credentials first. If authentication fails, the connector falls back to the previous credentials.
+
+You configure the version stage list once on your connector—subsequent rotations require no manual intervention.
+
+**Note**
+When rotating secrets, you must keep the `Username` value the same across all version stages. The connector does not support different usernames for different version stages. If you need to change the username, update `UserSecretId` to point to a new secret rather than rotating the username within the same secret.
+
+For information about configuring version stage fallback on your connector, see [Managing SFTP connectors](manage-sftp-connectors.md).
+
+For more information about Secrets Manager version stages, see [Version stages](https://docs.aws.amazon.com/secretsmanager/latest/userguide/getting-started.html#term_version-stage) in the *AWS Secrets Manager User Guide*.

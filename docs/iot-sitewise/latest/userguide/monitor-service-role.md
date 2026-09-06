@@ -566,7 +566,3 @@ You can view details about updates to **AWSIoTSiteWiseMonitorServiceRole** for S
 | --- | --- | --- |
 | [AWSIoTSiteWiseMonitorPortalAccess](#monitor-service-role-permissions) – Updated policy | AWS IoT SiteWise updated the [AWSIoTSiteWiseMonitorPortalAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/service-role/AWSIoTSiteWiseMonitorPortalAccess) managed policy for the alarms feature. | May 27, 2021 |
 | AWS IoT SiteWise started tracking changes | AWS IoT SiteWise started tracking changes for its service role. | December 15, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

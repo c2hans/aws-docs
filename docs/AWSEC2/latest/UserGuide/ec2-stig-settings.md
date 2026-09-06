@@ -383,7 +383,3 @@ The Windows STIG High category includes all of the listed STIG hardening setting
   Includes all STIG hardening settings that Amazon EC2 supports for Categories II and III (Medium and Low) vulnerabilities, plus:
 
   V-213426, V-213428, V-213452, and V-213453
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/tut
 # Run an autonomous driving simulation sweep with CARLA
 <a name="tutorial-carla-simulation"></a>
 
-This tutorial walks you through running a [CARLA](https://carla.org/) autonomous driving simulation parameter sweep with configurable multi-sensor capture. You build a Docker image, push it to Amazon Elastic Container Registry (Amazon ECR), and submit the [autonomous driving CARLA job bundle on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/autonomous_driving_carla) to a GPU fleet on your Deadline Cloud farm.
+This tutorial walks you through running a CARLA autonomous driving simulation parameter sweep with configurable multi-sensor capture. [CARLA](https://carla.org/) on the CARLA website is an open-source simulator. You build a Docker image, push it to Amazon Elastic Container Registry (Amazon ECR), and submit the [autonomous driving CARLA job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/autonomous_driving_carla) on the GitHub website to a GPU fleet on your Deadline Cloud farm.
 
 The job runs a lane-change cut-in scenario where an NPC vehicle starts behind the ego vehicle, accelerates to position itself 20 meters ahead of the ego during a 105-second get-ahead phase, then cuts into the ego's lane. It sweeps across configurable ego speeds, NPC speeds, and NPC starting distances, creating a task for each parameter combination (default 2×2×2 = 8 tasks). Each task captures multi-sensor data from the camera viewpoints you select and produces the following output:
 + RGB frames from each selected camera viewpoint
@@ -49,11 +49,11 @@ Before you begin, complete the following setup:
 
 1. [Create an AWS account](https://aws.amazon.com/resources/create-account/) if you do not already have one, ensuring it has access to GPU instances (`g6.4xlarge` recommended).
 
-1. Install [Docker](https://docs.docker.com/get-docker/) locally for building the CARLA image.
+1. Install Docker locally for building the CARLA image. For installation instructions, see [Get Docker](https://docs.docker.com/get-docker/) on the Docker website.
 
 1. Create an [Amazon ECR](https://aws.amazon.com/ecr/) repository in your account to host the built image.
 
-1. Install the [Deadline Cloud CLI](https://github.com/aws-deadline/deadline-cloud) locally.
+1. Install the Deadline Cloud CLI locally. For installation instructions, see the [deadline-cloud](https://github.com/aws-deadline/deadline-cloud) repository on the GitHub website.
 
 ## Set up your farm
 <a name="tutorial-carla-setup"></a>
@@ -84,12 +84,12 @@ You need a Deadline Cloud farm with a queue that has a conda queue environment (
 }
 ```
 
-**Fleet host configuration** – Your fleet workers need Docker and the NVIDIA Container Toolkit. Attach the [Docker and NVIDIA Container Toolkit host configuration script on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/docker_nvidia_container_toolkit) to your fleet. For more information, see [Run Docker containers with NVIDIA GPUs on Deadline Cloud workers](examples-host-config-docker-nvidia.md).
+**Fleet host configuration** – Your fleet workers need Docker and the NVIDIA Container Toolkit. Attach the [Docker and NVIDIA Container Toolkit host configuration script](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/docker_nvidia_container_toolkit) on the GitHub website to your fleet. For more information, see [Run Docker containers with NVIDIA GPUs on Deadline Cloud workers](examples-host-config-docker-nvidia.md).
 
 ## Build and push the Docker image
 <a name="tutorial-carla-build-image"></a>
 
-The job runs inside a Docker container based on the [carlasim/carla:0.9.16 base image on Docker Hub](https://hub.docker.com/r/carlasim/carla). The base CARLA image includes the simulator but lacks the Python environment, scenario runner, and sensor capture scripts needed for this job. The custom image layers on Python 3.10, `scenario_runner`, and the entrypoint and capture scripts so each Deadline Cloud task can boot CARLA, execute the driving scenario, and record sensor data in a single container.
+The job runs inside a Docker container based on the [carlasim/carla:0.9.16 base image](https://hub.docker.com/r/carlasim/carla) on the Docker website. The base CARLA image includes the simulator but lacks the Python environment, scenario runner, and sensor capture scripts needed for this job. The custom image layers on Python 3.10, `scenario_runner`, and the entrypoint and capture scripts so each Deadline Cloud task can boot CARLA, execute the driving scenario, and record sensor data in a single container.
 
 **To build and push the Docker image**
 
@@ -218,12 +218,8 @@ To avoid ongoing charges, clean up the resources that you created for this tutor
 <a name="tutorial-carla-related"></a>
 
 The following resources provide additional information:
-+ [Sample source code on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/autonomous_driving_carla)
-+ [CARLA simulator](https://carla.org/)
-+ [Docker and NVIDIA Container Toolkit host configuration script on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/docker_nvidia_container_toolkit)
++ [Sample source code](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/autonomous_driving_carla) on the GitHub website
++ [CARLA simulator](https://carla.org/) on the CARLA website
++ [Docker and NVIDIA Container Toolkit host configuration script](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/docker_nvidia_container_toolkit) on the GitHub website
 + [Run Docker containers with NVIDIA GPUs on Deadline Cloud workers](examples-host-config-docker-nvidia.md)
 + [Open Job Description (OpenJD) templates for Deadline Cloud](build-job-bundle.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

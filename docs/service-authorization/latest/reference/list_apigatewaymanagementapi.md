@@ -59,7 +59,3 @@ Amazon API Gateway defines the following condition keys that can be used in the 
 | Condition keys | Description | Type |
 | --- | --- | --- |
 |   [execute-api:viaDomainArn](https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html)  | Filters access by the DomainName ARN the API is called from | ARN |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ Amazon RDS supports the following options for MySQL:
 | --- | --- | --- |
 | [MariaDB Audit Plugin support for MySQL](Appendix.MySQL.Options.AuditPlugin.md) | `MARIADB_AUDIT_PLUGIN` | All MySQL 8.4 versionsMySQL 8.0.28 and higher 8.0 versions<br />All MySQL 5.7 versions |
 | [MySQL memcached support](Appendix.MySQL.Options.memcached.md) | `MEMCACHED` | All MySQL 5.7 and 8.0 versions |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

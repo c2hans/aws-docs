@@ -34,7 +34,3 @@ With AWS Pricing Calculator, you can do the following tasks:
 AWS Pricing Calculator is a free tool to use. It provides an estimate of your AWS fees and charges, but the estimate doesn't include any taxes that might apply. AWS Pricing Calculator provides pricing details for only the information you enter. If the prices on the marketing pages are different from the prices on AWS Pricing Calculator, AWS uses the prices from the marketing pages when generating your estimates. For more information about AWS service pricing, see [Cloud Services Pricing](https://aws.amazon.com/pricing/services/).
 
 The prices on AWS Pricing Calculator for the estimates come from the AWS Price List API. For more information about the AWS Price List API, see [Using the AWS Price List API](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-changes.html) in the [AWS Billing User Guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Pricing Calculator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pricing-calculator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

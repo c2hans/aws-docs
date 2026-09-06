@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/doc-histo
 | [Amazon Corretto 11 (11.0.2.9.3) is now in GA.](#doc-history) | No changes have been made from the RC. | March 14, 2019 |
 | [RC Release (11.0.2.9.2)](#doc-history) | Release of Amazon Corretto 11 Release Candidate. | March 4, 2019 |
 | [Initial Release (11.0.2.9.1)](#doc-history) | Initial release of Amazon Corretto 11 Developer Preview. | February 12, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Corretto. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query corretto` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

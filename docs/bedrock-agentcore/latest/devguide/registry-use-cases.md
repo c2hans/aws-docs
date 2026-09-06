@@ -44,7 +44,3 @@ A builder submits a new MCP server record to the registry. The submission trigge
 <a name="registry-usecase-sync-records"></a>
 
 A team deploys MCP servers on AgentCore Runtime whose tool definitions evolve as new features are added. Rather than manually updating registry records every time a tool changes, they configure URL-based synchronization on each record and simply come to the registry periodically to trigger synchronization. When they do so, AWS Agent Registry fetches the latest server and tool metadata from the MCP server’s endpoint, keeping the registry accurate.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

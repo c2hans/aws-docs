@@ -57,7 +57,3 @@ The expression editor provides you with a sophisticated tool to customize your n
 **Tip**
 To create an empty narrative, add an insight using the **\+** icon and then **Add insights**. But instead of choosing a template, simply close the screen.
 The best way to get started with customizing narratives is to use the existing templates to learn the syntax.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

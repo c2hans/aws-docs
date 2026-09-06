@@ -88,7 +88,3 @@ The following MKV header elements are used by `Frame` (defined in the `KinesisVi
 <a name="how-data-frame"></a>
 
 The data in `frame.frameData` might contain only media data for the frame, or it might contain further nested header information, depending on the encoding schema used. To be displayed in the AWS Management Console, the data must be encoded in the [H.264](https://en.wikipedia.org/wiki/H.264/MPEG-4_AVC) codec, but Kinesis Video Streams can receive time-serialized data streams in any format.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,7 +42,3 @@ To export bots, bot locales, and custom vocabularies, the user running the expor
 | [ListExports](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListExports.html) | +  ListExports  | \* |
 
 For an example IAM policy, see [Allow a user to export bots and bot locales](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-export).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

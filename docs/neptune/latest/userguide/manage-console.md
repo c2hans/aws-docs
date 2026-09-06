@@ -28,7 +28,3 @@ Because Neptune transparently scales the underlying storage as your data grows, 
 + [Using a CloudFormation template to update the engine version of your Neptune DB Cluster](cfn-engine-update.md)
 + [Database Cloning in Neptune](manage-console-cloning.md)
 + [Managing Amazon Neptune Instances](manage-console-instances.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

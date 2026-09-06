@@ -26,7 +26,3 @@ Make sure your IAM identity has appropriate permissions to delete a delegation i
 1. On the **Delegations** page, select the delegation that you want to cancel and then choose **Remove delegation**.
 
 1. In the pop-up window that appears, choose **Delete** to confirm your choice.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -63,7 +63,3 @@ amazonaws.com/2013-01-01/search?q=(and+(term+field%3Dtitle+'star')
 
 **Important**
 Special characters in the query string must be URL-encoded. For example, you must encode the `=` operator in a structured query as `%3D`: `(term+field%3Dtitle+'star')`. If you don't encode the special characters when you submit the search request, you'll get an `InvalidQueryString` error.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

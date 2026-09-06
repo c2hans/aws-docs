@@ -23,7 +23,3 @@ You can create [user-defined cost allocation tags](https://docs.aws.amazon.com/a
 + To create tags using the AWS CLI, see [create-event-data-store](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-event-data-store.html) and [add-tags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/add-tags.html) in the *AWS CLI Command Reference*.
 
 For more information about activating tags, see [Activating user-defined cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

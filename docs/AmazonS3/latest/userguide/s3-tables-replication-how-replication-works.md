@@ -100,7 +100,3 @@ The following considerations apply to replicated tables:
 + Tables with tags or branches are not supported.
 + Replication is not supported for Amazon S3 Metadata tables or other AWS-generated system tables.
 + All table snapshots, including compacted snapshots, are replicated from the source table. As a result, compaction is not supported on replica tables.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

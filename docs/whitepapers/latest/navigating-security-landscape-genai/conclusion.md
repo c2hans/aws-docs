@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
  Thank you to the following for their contributions: Paul Vixie, Jessica Kropf, Hart Rossman, Phillip Simpson, Mark Ryland, and Matt Saner.
 
  Written with support from partners: Accenture, Arctic Wolf, Checkmarx, Check Point, Crowdstrike, Datadog, F5, Fortinet, Hidden Layer, Netskope, Orca, PwC, Query.ai, and Snyk.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

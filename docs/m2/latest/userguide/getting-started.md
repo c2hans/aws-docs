@@ -18,7 +18,3 @@ You can get started with AWS Mainframe Modernization by following tutorials that
 To continue learning, see the following tutorials.
 + [Tutorial: Setting up the Rocket Software (formerly Micro Focus) build for the BankDemo sample application](tutorial-build-mf.md)
 + [Tutorial: Set up WorkSpaces Applications for use with Rocket Enterprise Analyzer and Rocket Enterprise Developer](set-up-appstream-mf.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

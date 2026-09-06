@@ -21,7 +21,3 @@ There are two ways you can delete a quick connect:
    + You are using the latest Connect Customer user interface. The following image shows a banner at the top of the **Quick connects** page. Choose **Try it now** to use the latest Connect Customer user interface.
 ![A banner at the top of the quick connects page, the try it now button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/quick-connect-newinterface.png)
    + You have **Quick connects - Delete** permission in your security profile.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

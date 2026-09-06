@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 +  [The Four Golden Signals](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals)
 +  [Amazon's approach to high-availability deployment: Standard metrics](https://youtu.be/bCgD2bX1LI4?t=2502)
 +  [The Amazon Software Development Process: Measure Everything](https://youtu.be/52SC80SFPOw?t=1922)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

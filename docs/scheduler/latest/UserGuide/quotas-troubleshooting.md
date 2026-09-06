@@ -66,6 +66,24 @@ Modify your existing trust policies in one of the following way:
   }
   ```
 
-## See also
+## ThrottlingException on a single schedule
+<a name="troubleshooting_throttling_single_schedule"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge Scheduler. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query scheduler` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+I am receiving `ThrottlingException` errors when calling `CreateSchedule`, `UpdateSchedule`, `GetSchedule`, or `DeleteSchedule` on a single schedule. My account is below the per-account request rate quota for that operation.
+
+### Common cause
+<a name="troubleshooting_throttling_common_cause"></a>
+
+In addition to per-account request rate quotas, EventBridge Scheduler limits the rate at which a single schedule can be read or written. This per-schedule limit is 10 TPS. The limit can be lower depending on the size of the schedule's target `Input` parameter. This limit is not adjustable through the Service Quotas console.
+
+You are likely encountering this because your application repeatedly reads, creates, updates, or deletes the same schedule at a high rate.
+
+### Resolution
+<a name="troubleshooting_throttling_resolution"></a>
+
+Distribute requests across multiple schedules instead of concentrating mutations on a single schedule.
+
+### Prevention
+<a name="troubleshooting_throttling_prevention"></a>
++ Avoid concentrating rapid mutations on a single schedule. If you need to change an existing schedule, call `UpdateSchedule` rather than deleting and recreating it.
++ To have EventBridge Scheduler delete a schedule automatically after its last invocation, set `ActionAfterCompletion` to `DELETE`. For recurring schedules, this requires an `EndDate`. For more information, see [Deleting a schedule in EventBridge Scheduler](https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-schedule-delete.html).

@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/containers-on-aws/fur
 +  [Amazon ECS Anywhere](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-anywhere.html)
 +  [Karpenter documentation](https://karpenter.sh/)
 +  [Choosing an AWS container service](https://aws.amazon.com/getting-started/decision-guides/containers-on-aws-how-to-choose/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

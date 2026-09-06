@@ -16,7 +16,3 @@ Before you create an AWS Supply Chain instance, make sure that you complete the 
 + You must have at least have one user in the IAM Identity Center instance to assign as the AWS Supply Chain administrator. You can connect your active directory to IAM Identity Center. For more information, see [Connect to a Microsoft AD directory](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source-ad.html).
 + Add any additional users who need access to AWS Supply Chain to IAM Identity Center.
 + You need AWS Key Management Service (AWS KMS) to create an instance. AWS Supply Chain uses this AWS KMS key to encrypt all the data that comes into AWS Supply Chain. For information about AWS KMS Keys, see [Creating keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

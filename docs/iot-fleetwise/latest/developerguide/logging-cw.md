@@ -112,7 +112,3 @@ The type of log to send data to CloudWatch Logs. To disable logging, change the 
 The CloudWatch Logs group the operation sends data to. Make sure you create the log group name before you enable logging for AWS IoT FleetWise.
 
 After you enable logging, see [Search log entries using the AWS CLI](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SearchDataFilterPattern.html#search-log-entries-cli).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

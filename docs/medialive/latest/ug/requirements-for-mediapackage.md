@@ -13,7 +13,3 @@ The user needs permissions to perform actions in MediaPackage when they use the 
 | --- | --- | --- |
 | On the MediaLive console, view the MediaPackage channels in the dropdown list on the MediaLive channel. | MediaPackage | Describe\* |
 | Use the workflow wizard to create a MediaPackage channel, if your organization supports MediaPackage as an output destination.Use the workflow wizard to delete a workflow that includes a MediaPackage output. | MediaPackage | List\*`Describe*`<br />`Create*`<br />`Delete*` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

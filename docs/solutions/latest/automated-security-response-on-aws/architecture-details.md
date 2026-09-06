@@ -35,7 +35,3 @@ The solution uses the following services. Core services are required to use the 
 |  [Amazon API Gateway](https://aws.amazon.com/apigateway)  |  **Supporting**. Creates the solution’s REST API to support the user interface. |
 |  [AWS WAF](https://aws.amazon.com/waf)  |  **Supporting**. Protects the solution’s Web UI. |
 |  [Amazon Cognito](https://aws.amazon.com/cognito)  |  **Supporting**. Used to authenticate and authorize access to the solution’s Web UI. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

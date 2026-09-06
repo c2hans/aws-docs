@@ -172,7 +172,3 @@ Secrets Manager supports 10,000 transactions per second on `GetSecretValue`. Mos
 <a name="api-keys-faq-multiple-environments"></a>
 
 Use separate secrets for each environment (for example, `prod/payments/stripe` and `dev/payments/stripe`). This allows different IAM policies, rotation schedules, and encryption keys per environment. Secret versions (staging labels) are for rotation state management, not environment separation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

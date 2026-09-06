@@ -125,7 +125,3 @@ AWS Systems Manager (Systems Manager) was formerly known as "Amazon Simple Syste
 + **AWS Command Line Interface (AWS CLI) commands**: `aws ssm describe-patch-baselines`
 + **AWS Identity and Access Management (IAM) managed policy names**: `AmazonSSMReadOnlyAccess`
 + **Systems Manager resource ARNs**: `arn:aws:ssm:{{region}}:{{account-id}}:patchbaseline/pb-07d8884178EXAMPLE`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

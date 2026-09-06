@@ -134,7 +134,3 @@ aws s3api get-object --bucket {{my-access-po-o0b1d075431d83bebde8xz5w8ijx1qzlbp3
 + Aliases cannot be deleted or modified or disabled on an access point.
 + You can't use an access point alias for S3 on Outposts control plane operations. For a list of S3 on Outposts control plane operations, see [Amazon S3 Control API operations for managing buckets](S3OutpostsAPI.md#S3OutpostsAPIsBucket).
 + Aliases cannot be used in AWS Identity and Access Management (IAM) policies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

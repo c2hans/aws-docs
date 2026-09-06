@@ -53,7 +53,3 @@ The following are the service endpoints and service quotas for this service.
 | SAP applications per Region in an AWS account | 10 | Yes | The maximum number of SAP applications that you can register with AWS Systems Manager for SAP per Region in an AWS account. |
 | Components per SAP application | 20 | Yes | The maximum number of ssm-sap components that you can register per SAP application registered with AWS Systems Manager for SAP. |
 | Databases per component | 20 | Yes | The maximum number of ssm-sap databases that you can register per ssm-sap component. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

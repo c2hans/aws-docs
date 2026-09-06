@@ -58,7 +58,3 @@ Before you can use IAM to delete a service-linked role, you must first delete an
 If AWS IoT FleetWise is using the role when you try to delete the resources, then the deletion might fail. If that happens, wait for a few minutes and try the operation again. To learn how to delete the service-linked-role through the console, AWS CLI, or AWS API, see [Using service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html) in the *IAM User Guide*.
 
 If you delete this service-linked role, and then need to create it again, you can register an account with AWS IoT FleetWise. AWS IoT FleetWise then creates the service-linked role for you again.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

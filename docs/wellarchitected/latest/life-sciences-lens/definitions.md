@@ -47,7 +47,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 +  **Validation (like frameworks, approaches, and protocols):** Systematic processes to verify that systems, processes, and methods consistently produce results that meet predetermined specifications and quality attributes.
 
  For the latest AWS terminology, see the [AWS glossary](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html) in the AWS Glossary Reference.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

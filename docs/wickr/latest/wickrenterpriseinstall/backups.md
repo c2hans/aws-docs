@@ -28,7 +28,3 @@ Wickr Enterprise utilizes Velero for Backup purposes. Velero provides the necess
 By default, no volumes are included in the backup. If any pods mount a volume that should be backed up, you must configure the backup with an annotation listing the specific volumes to include in the backup.
 
 For each volume that requires a backup, add the backup.velero.io/backup-volumes annotation. The annotation name is backup.velero.io/backup-volumes and the value is a comma separated list of volumes to include in the backup. For more information, see [Configure Snapshots](https://docs.replicated.com/vendor/snapshots-configuring-backups).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

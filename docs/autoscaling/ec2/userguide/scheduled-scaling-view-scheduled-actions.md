@@ -55,7 +55,3 @@ If successful, this command returns output similar to the following.
 <a name="scheduled-scaling-verify-scaling-activities"></a>
 
 To verify the scaling activities associated with scheduled scaling, see [Verify a scaling activity for an Auto Scaling group](as-verify-scaling-activity.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -101,7 +101,3 @@ The following table describes important changes in each release of Amazon Transc
 | [New feature](https://docs.aws.amazon.com/transcribe/latest/dg/monitoring-transcribe.html) | Added AWS CloudTrail and Amazon CloudWatch Events integration. | June 28, 2018 |
 | [New feature](https://docs.aws.amazon.com/transcribe/latest/dg/custom-vocabulary.html) | Amazon Transcribe adds support for custom vocabularies. | April 4, 2018 |
 | [New guide](#doc-history) | This is the first release of the *Amazon Transcribe Developer Guide*. | November 29, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

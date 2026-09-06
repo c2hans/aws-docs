@@ -16,7 +16,3 @@ We recommend linked accounts in billing groups, that previously had budget alert
 As a billing transfer user, only bill source accounts can use budgets and budget alerts. If a bill transfer account needs to set up a budget, they must obtain an IAM role in the bill source account.
 
 For more information about AWS Budgets, see [Managing your costs with AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) in the *AWS Cost Management User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing Conductor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query billingconductor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -107,7 +107,3 @@ Contains [Active Response events](https://documentation.wazuh.com/current/user-m
 <a name="wazuh-platform-ocsf-api-activity"></a>
 
 Contains [Cloud Security events](https://documentation.wazuh.com/current/cloud-security/monitoring.html) from Amazon, Azure, GCP, GitHub, and Office365.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

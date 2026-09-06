@@ -57,7 +57,3 @@ When they're assigned a review task in an Amazon Textract workflow, workers migh
 ![Example review task in the A2I Textract worker console.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/a2i-textract-example.png)
 
 You can customize this interface in the SageMaker AI console when you create your human review definition, or by creating and using a custom template. To learn more, see [Create and Manage Worker Task Templates](a2i-instructions-overview.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ This guide covers the following:
 As generative models become multimodal, context-aware, and increasingly agentic, the opportunity shifts from adopting AI tools to embedding intelligence directly into cloud-native architecture. Enterprises that embrace this shift, combining technical agility with operational rigor, will not only improve efficiency but reshape their digital capabilities entirely.
 
 Now is the time to move beyond proof-of-concepts and build for production. Serverless AI on AWS provides the capability.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

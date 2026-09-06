@@ -28,7 +28,3 @@ For definitions of incident management terms, see [AMS Key Terms](https://docs.a
 To understand the escalation path of incidents, see [Getting help](https://docs.aws.amazon.com/managedservices/latest/userguide/faq-get-help.html).
 
 For a description of AMS response to incidents, see [AMS incident response](https://docs.aws.amazon.com/managedservices/latest/userguide/sec-incident-response.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

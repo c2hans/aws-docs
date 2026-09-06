@@ -85,7 +85,3 @@ S3 Tables integration with the Data Catalog is available in the following AWS Re
 + [Adding databases and tables to the S3 Tables catalog](create-databases-tables-s3-catalog.md)
 + [Sharing S3 Tables catalog objects](share-s3-tables-catalog.md)
 + [Managing S3 Tables integration](manage-s3-tables-catalog-integration.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

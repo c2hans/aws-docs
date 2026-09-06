@@ -30,7 +30,3 @@ To try out our new console experience in the AWS Region Asia Pacific (Sydney), o
 The new Elastic Beanstalk console design will be released in a phased rollout to all regions that Elastic Beanstalk supports.
 The new console design is also presently available in beta release in the AWS Region *US East (N. Virginia) – us-east-1*.
 To try out our new console experience in beta, open the [Elastic Beanstalk console](https://console.aws.amazon.com/elasticbeanstalk). In the **Regions** list, select *US East (N. Virginia) – us-east-1*. Then select the **Try the new console** button on the console banner to switch to the new console interface.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

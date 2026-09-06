@@ -33,7 +33,3 @@ The *business* perspective focuses on ensuring that your cloud investments accel
 + **Data science** – Leverage experimentation, advanced analytics, and machine learning to solve complex business problems. Predictive and prescriptive analytics can help you complete your data monetization strategy by enabling you to improve operational effectiveness and decision-making as well as customer and employee experience.
 
   Once you’ve identified opportunities for business process transformation, ensure that your Data Catalog contains the data products required to support the building, training, and testing of your machine learning models. Leverage continuous integration and continuous delivery (CI/CD) practices to improve operational resilience and reproducibility of your machine learning workflows. Understand how your models make predictions and identify any potential biases. Deploy suitable models to production and monitor their performance. To mitigate risk, delegate low confidence predictions for human review.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

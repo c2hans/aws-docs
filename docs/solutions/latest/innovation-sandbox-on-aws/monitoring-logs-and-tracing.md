@@ -40,7 +40,3 @@ To access log insights queries:
 <a name="aws-x-ray"></a>
 
 Innovation Sandbox includes [AWS X-Ray](https://aws.amazon.com/xray/) tracing for all critical execution paths. Use X-Ray to identify latency bottlenecks, trace requests across Lambda functions, and pinpoint where failures occur in multi-step workflows such as lease provisioning and account cleanup.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

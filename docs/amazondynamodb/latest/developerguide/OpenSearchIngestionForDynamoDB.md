@@ -51,7 +51,3 @@ From here, you can continue on with the rest of the tutorial.
 For a better understanding of how DynamoDB integrates with OpenSearch Service, see the following:
 + [Getting started with Amazon OpenSearch Ingestion](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/osis-getting-started-tutorials.html)
 + [DynamoDB plugin configuration and requirements](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/configure-client-ddb.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/folders-functionality.html
 ---
 
-# Overview of Quick Sight folders
+# Overview of Quick folders
 <a name="folders-functionality"></a>
 
-In Quick Sight, you can create personal and shared folders. You can also favorite your personal or shared folders for quick access by choosing the favorite ( ![Star icon outline.](http://docs.aws.amazon.com/quick/latest/userguide/images/favorite-icon.png)) icon next to it.
+In Quick, you can create personal and shared folders. You can also favorite your personal or shared folders for quick access by choosing the favorite ( ![Star icon outline.](http://docs.aws.amazon.com/quick/latest/userguide/images/favorite-icon.png)) icon next to it.
 
 You can do the following with personal folders:
 + Create subfolders.
@@ -15,7 +15,7 @@ You can do the following with personal folders:
 
 Quick administrators can perform the following tasks with shared folders.
 + Create or delete a shared folder and subfolders inside of it. You can move either of these around within the top-level folder.
-+ Add or remove owners, contributors, and viewers. When you make a person an *owner* of the folder, you give them ownership of every asset in the folder. For more information, see [Permissions for Quick Sight shared folders](folders-security.md).
++ Add or remove owners, contributors, and viewers. When you make a person an *owner* of the folder, you give them ownership of every asset in the folder. For more information, see [Permissions for Quick shared folders](folders-security.md).
 
 The following table summarizes the actions that a Quick user can take when working with unrestricted shared folders based on their role.
 
@@ -47,7 +47,7 @@ Restricted shared folders provide an additional security boundary that restricts
 + The contributor role is assigned to users that can create and edit assets within the restricted folders. Contributors can't manage the permissions of the folder or of the assets that are in the restricted folder.
 + Administrators can assign folder contributor and viewer permissions to users with the `UpdateFolderPermissions` API operation. For more information about the `UpdateFolderPermissions` API operation, see [UpdateFolderPermissions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateFolderPermissions.html).
 
-The following table summarizes the actions that a Quick Sight user can take when working with restricted shared folders based on their role.
+The following table summarizes the actions that a Quick user can take when working with restricted shared folders based on their role.
 
 | Action | Contributor | Viewer |
 | --- | --- | --- |
@@ -70,8 +70,4 @@ The following table summarizes the actions that a Quick Sight user can take when
 
 The owner role is not supported for restricted shared folders.
 
-After you choose which folder type best fits your use case, see [Permissions for Quick Sight shared folders](folders-security.md) and [Create and manage membership permissions for Quick Sight shared folders](sharing-folders.md) to create folders and set up folder permissions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+After you choose which folder type best fits your use case, see [Permissions for Quick shared folders](folders-security.md) and [Create and manage membership permissions for Quick shared folders](sharing-folders.md) to create folders and set up folder permissions.

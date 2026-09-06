@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Generate images in batch with a diffusion model on Deadline Cloud
 <a name="examples-jb-text-to-image-batch"></a>
 
-The [text\_to\_image\_batch job bundle on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/text_to_image_batch) runs high-throughput batch image generation on a JSONL of prompts using a diffusion model. The default model is FLUX.2 Klein 4B, which is Apache 2.0 licensed, ungated, and distilled to 4 steps. The scheduler distributes tasks across available GPU workers, with the diffusion pipeline loaded once per worker and reused for every task on that worker. An aggregate step produces a combined JSONL file and a static HTML gallery viewer.
+The [text\_to\_image\_batch job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/text_to_image_batch) on the GitHub website runs high-throughput batch image generation on a JSONL of prompts using a diffusion model. The default model is FLUX.2 Klein 4B, which is Apache 2.0 licensed, ungated, and distilled to 4 steps. The scheduler distributes tasks across available GPU workers, with the diffusion pipeline loaded once per worker and reused for every task on that worker. An aggregate step produces a combined JSONL file and a static HTML gallery viewer.
 
 When a JSONL line carries a `caption` field, or a `generated_text` field chained from the [Run batch LLM inference with vLLM on Deadline Cloud](examples-jb-vllm-batch.md) bundle's output, the job composites the text over the generated image as crisp typography. Lines without a caption produce pure imagery.
 
@@ -16,7 +16,3 @@ deadline bundle gui-submit text_to_image_batch
 ```
 
 For a complete walkthrough that covers farm setup, input format, caption overlays, and the chaining workflow, see [Generate images in batch with a diffusion model](tutorial-text-to-image-batch.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

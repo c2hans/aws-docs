@@ -6,7 +6,3 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/metr
 <a name="metrics-export-pricing"></a>
 
 When you publish cloud-side, device-side, or custom metrics to an MQTT topic that you configure, you will not incur charges for this step of the export process. However, in the subsequent steps when you transfer the published metrics to a destination of your choice, by using Rules Engine or Messaging, you will incur costs based on the transfer method you choose. AWS IoT Device Defender publishes batched metrics to MQTT topics as a single message that contains metrics data for multiple devices, which helps control costs. For more information regarding pricing, see the [AWS Pricing Calculator.](https://calculator.aws/#/addService)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Device Defender. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-device-defender` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

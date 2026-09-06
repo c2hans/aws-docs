@@ -22,7 +22,3 @@ Whichever arrangement you choose, keep resource sharing within a security bounda
 + Share an Amazon S3 bucket and root prefix for job attachments only between queues in the same security boundary. For more information, see [Secure job attachment and software buckets](job-attachment-queues.md).
 + Share an operating system user only between queues in the same security boundary. For more information, see [Run jobs as dedicated OS users](job-run-as-user.md).
 + Apply the same boundary to any other AWS resources that you integrate into the farm, such as shared file systems.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

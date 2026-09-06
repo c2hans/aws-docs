@@ -105,7 +105,3 @@ To determine who manages a secret, you can review the secret name. Secrets manag
 <a name="troubleshoot-python-import"></a>
 
 If you're using the Transform: `AWS::SecretsManager-2024-09-16` and encounter Python module import failures when your rotation Lambda function runs, the issue is likely caused by an incompatible `Runtime` value. With this transform version, AWS CloudFormation manages the runtime version, code, and shared object files for you. You don't need to manage these yourself.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

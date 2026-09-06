@@ -14,7 +14,3 @@ You can manage data replication for the source server through these actions on t
 + **Resume data replication** – Resume data replication for a paused source server. This syncs any changes since the last synchronization and completes the data replication flow.
 
 Choose **Edit** in the **Replication settings **section to access the ** Edit Replication Settings** page, where you can edit the settings for the selected source server. [Learn more about editing replication settings.](replication-settings-template.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

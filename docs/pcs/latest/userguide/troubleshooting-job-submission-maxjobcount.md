@@ -26,7 +26,3 @@ This shows the total number of jobs Slurm is tracking, including completed jobs 
 **Solution:** Consider one of the following approaches:
 + **Create a larger cluster** – If your workload consistently requires more concurrent jobs, create a new cluster with a larger size. For more information about cluster sizes and their limits, see [Cluster size in AWS PCS](working-with_clusters_size.md).
 + **Reduce job submission rate** – Adjust your job submission scripts to submit jobs at a slower rate, allowing completed jobs time to be purged from Slurm's tracking.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

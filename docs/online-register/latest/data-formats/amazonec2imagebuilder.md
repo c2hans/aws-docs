@@ -48,7 +48,3 @@ Amazon EC2 Image Builder provides the following APIs for data retrieval.
 | <a name="imagebuilder-ListWorkflowExecutions"></a>[ListWorkflowExecutions](https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListWorkflowExecutions.html) | List workflow executions for the specified image | List |
 | <a name="imagebuilder-ListWorkflowStepExecutions"></a>[ListWorkflowStepExecutions](https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListWorkflowStepExecutions.html) | List workflow step executions for the specified workflow | List |
 | <a name="imagebuilder-ListWorkflows"></a>[ListWorkflows](https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListWorkflows.html) | List the workflow versions owned by or shared with your account | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ An installation into AWS GovCloud (US) Regions is treated as an independent inst
 
 **Note**
 Not all AWS services are available in all Regions, including the AWS GovCloud (US) Regions. We update our [AWS Regional Services](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services) list daily with which services are available in which Regions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

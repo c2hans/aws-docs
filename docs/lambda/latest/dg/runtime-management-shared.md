@@ -25,7 +25,3 @@ This is summarized in the following table:
 | Container image | Publish new container images containing the latest patches. | Redeploy functions regularly using the latest container base image to pick up the latest patches. |
 
 For more information about shared responsibility with AWS, see [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

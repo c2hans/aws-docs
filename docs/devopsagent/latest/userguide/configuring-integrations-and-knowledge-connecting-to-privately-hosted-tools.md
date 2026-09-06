@@ -100,6 +100,11 @@ Before creating a private connection, verify that you have the following:
 
 Private connections are account-level resources. After you create a private connection, you can reuse it across multiple integrations and Agent Spaces that need to reach the same host.
 
+**Note**
+** In service-managed mode, AWS DevOps Agent creates the resource gateway in the VPC and subnets you specify, and that VPC belongs to the same account as the private connection. AWS DevOps Agent can't create a resource gateway in a different account. If your target service runs in another AWS account or on premises, choose one of the following:
++ Give the gateway's VPC a route to the target through VPC peering, AWS Transit Gateway, or a virtual private network (VPN) connection. The gateway stays in this account, and traffic reaches the target over that connection. The route has to exist in the gateway's VPC, not only in the account where the target runs.
++ Use self-managed mode. Create the resource gateway and resource configuration in the account where the target runs, share the resource configuration with this account through AWS Resource Access Manager (AWS RAM), accept the share, then create the private connection with that resource configuration's ARN. See [Advanced setup using existing VPC Lattice resources](#advanced-setup-using-existing-vpc-lattice-resources).
+
 ### Create a private connection using the console
 <a name="create-a-private-connection-using-the-console"></a>
 
@@ -121,7 +126,7 @@ Private connections are account-level resources. After you create a private conn
 
 1. (Optional) For **Security groups**, select existing security groups (up to 5) to restrict what traffic is allowed to reach your target service. If you don't select any, a default security group is created.
 
-1. (Optional) For **Port ranges**, specify the TCP ports your target application listens on (for example, `443` or `8080-8090`). You can specify up to 11 port ranges.
+1. (Optional) For **Port ranges**, specify the TCP ports your target application listens on (for example, `443` or `8080-8090`). You can specify up to 11 port ranges. **If you don't specify any port ranges, the connection allows port `443` only.** The connection drops traffic to any port outside the configured ranges without an error. If your endpoint URL includes a non-standard port (for example, `https://tools.example.com:8089/mcp`), include that port here. You can't change the port ranges after you create the connection. To add a port, delete the connection and recreate it.
 
 1. For **Host address**, enter the IP address or DNS name of your target service (for example, `mcp.internal.example.com` or `10.0.1.50`). The service must be reachable from the selected VPC. If you enter a DNS name, how it is resolved depends on the **DNS resolution** mode you choose in the next step.
 
@@ -222,6 +227,19 @@ In the AWS DevOps Agent console, private connections can be linked to a capabili
 
 **Note**
 ** When you select a private connection for a capability provider that uses OAuth authentication (Client Credentials or 3LO), the private connection applies to both the capability provider endpoint and the token exchange endpoint. Ensure the private connection is configured with a host address that can route traffic to both endpoints.
+
+#### Host address and endpoint URL
+<a name="host-address-and-endpoint-url"></a>
+
+A private connection and a capability provider each take an address. The two are not interchangeable:
++ The **host address** on the private connection is the target that the connection routes to. It can be an IP address or a DNS name, and when it's a DNS name, the connection's **DNS resolution** mode determines how it's resolved.
++ The **endpoint URL** on the capability provider is the URL that AWS DevOps Agent requests, including its scheme, port, and path.
+
+The two values don't have to be identical, so a hostname that resolves only inside your VPC doesn't have to appear in the host address. If your service's hostname is private to your VPC, you have two options:
++ Set the connection's DNS resolution to **In VPC**, and use the hostname for both the host address and the endpoint URL.
++ Set the host address to the target's private IP address, and keep the hostname in the endpoint URL.
+
+You choose the DNS resolution mode when you create the connection, so decide which option you want first. For information about the symptoms that a mismatch between these two values produces, see [A DNS host address doesn't resolve, or traffic reaches the wrong place](configuring-integrations-and-knowledge-troubleshooting-private-connections.md).
 
 #### Routing the endpoint and the OAuth token exchange through different private connections
 <a name="routing-the-endpoint-and-the-oauth-token-exchange-through-different-private-connections"></a>
@@ -338,6 +356,7 @@ If your organization already uses Amazon VPC Lattice and manages your own resour
 This approach is useful when you:
 + Want full control over the resource gateway and resource configuration lifecycle.
 + Need to share resource configurations across multiple AWS accounts or services.
++ Need the resource gateway to run in the same account as your target service, rather than in the account where you create the private connection.
 + Require VPC Lattice access logs for detailed traffic monitoring.
 + Run a hub-and-spoke network architecture.
 
@@ -391,7 +410,3 @@ aws devops-agent create-private-connection \
 + [Configuring integrations and knowledge](configuring-integrations-and-knowledge.md)
 + [AWS DevOps Agent Security](aws-devops-agent-security.md)
 + [DevOps Agent IAM permissions](aws-devops-agent-security-devops-agent-iam-permissions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

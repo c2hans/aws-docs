@@ -45,7 +45,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/compute-
 +  [Gather system health telemetry data from AWS IoT Greengrass core devices](https://docs.aws.amazon.com/greengrass/v2/developerguide/telemetry.html)
 +  [AWS IoT Device Defender Detect](https://docs.aws.amazon.com/iot-device-defender/latest/devguide/device-defender-detect.html)
 +  [How to detect anomalies in device metrics and improve your security posture using AWS IoT Device Defender](https://aws.amazon.com/blogs/iot/how-to-detect-anomalies-in-device-metrics-and-improve-your-security-posture-using-aws-iot-device-defender-custom-metrics/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ Amazon Elastic File System provides the following APIs for data retrieval.
 | <a name="elasticfilesystem-DescribeTags"></a>[DescribeTags](https://docs.aws.amazon.com/efs/latest/ug/API_DescribeTags.html) | View the tags associated with a file system | Read |
 | <a name="elasticfilesystem-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/efs/latest/ug/API_ListTagsForResource.html) | View the tags associated with the specified Amazon EFS resource | Read |
 | <a name="elasticfilesystem-ReplicationRead"></a>[ReplicationRead](https://docs.aws.amazon.com/efs/latest/ug/efs-replication.html) | Read file system data for replication | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

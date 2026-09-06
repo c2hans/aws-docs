@@ -56,7 +56,3 @@ The following customer-initiated configurations result in data plane traffic bei
 + When customers enable internet access for AgentCore Code Interpreter sessions, code executing within the sandbox environment can make outbound network requests to endpoints outside the AWS GovCloud (US) Regions.
 
 Amazon Bedrock AgentCore metadata is not permitted to contain export-controlled data. This includes all configuration data that you enter when creating or managing AgentCore resources across any service—such as resource names, descriptions, Amazon Resource Names (ARNs), network and authentication configuration, environment variables, and resource tags.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

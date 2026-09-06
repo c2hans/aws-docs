@@ -20,7 +20,3 @@ When you add a certificate to your distribution, CloudFront immediately propagat
 + [Rotate SSL/TLS certificates](cnames-and-https-rotate-certificates.md)
 + [Revert from a custom SSL/TLS certificate to the default CloudFront certificate](cnames-and-https-revert-to-cf-certificate.md)
 + [Switch from a custom SSL/TLS certificate with dedicated IP addresses to SNI](cnames-and-https-switch-dedicated-to-sni.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

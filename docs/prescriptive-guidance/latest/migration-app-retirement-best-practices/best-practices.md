@@ -188,7 +188,3 @@ We recommend that you shut down backups. This prevents backup tools from failing
 We recommend that you use a consistent handover process so that the infrastructure removal team knows which assets will be removed. The team must also understand any dependencies and be aware of any additional activities related to the decommissioning process. A consistent handover process can reduce the risk of errors and minimize potential complications during the process.
 
 We recommend that you request the removal of physical hardware so that it can be decommissioned.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

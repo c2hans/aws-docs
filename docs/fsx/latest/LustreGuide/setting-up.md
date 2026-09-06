@@ -90,7 +90,3 @@ If all of these options fail, then the request to create the file system fails. 
 <a name="setting-up-next-step"></a>
 
 To get started using FSx for Lustre, see [Getting started with Amazon FSx for Lustre](getting-started.md) for instructions to create your Amazon FSx for Lustre resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

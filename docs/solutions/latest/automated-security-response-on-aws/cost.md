@@ -256,7 +256,3 @@ For the following table, we assume 150,000 management events per month in the ac
 | AWS CloudTrail | 150,000 \* $2.00/100,000 = $3.00 | $3.00 |
 | Lambda | 150,000 \* 0.2 \* 0.125 = 3,750 GB-seconds<br />3,750 \* $0.0000166667 = $0.0625 compute time cost<br />0.15 \* $0.20 = $0.03 request cost<br />$0.0625 \+ $0.03 = $0.0925 total Lambda cost | $0.0925 |
 |  **Total**  |  |  **$3.09 per member account**  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

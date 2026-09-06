@@ -52,7 +52,3 @@ As shown in the preceding diagram:
 1. The lifecycle hook puts the instance into a wait state (`Pending:Wait`) and then performs a custom action. The instance remains in a wait state either until you complete the lifecycle action, or until the timeout period ends. After you complete the lifecycle hook or the timeout period expires, the instance transitions to the next state (`Pending:Proceed`).
 
 1. The instance enters the `InService` state. However, before the instance reaches the `InService` state, if the Auto Scaling group is associated with an Elastic Load Balancing load balancer, the instance is registered with the load balancer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

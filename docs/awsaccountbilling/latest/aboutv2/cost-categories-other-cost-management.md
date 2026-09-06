@@ -39,7 +39,3 @@ You can view all of the resources associated to your . You have visibility into 
 <a name="cost-categories-other-cost-management-delete"></a>
 
 You can't delete cost categories with associated resources directly. The association must be removed before you can delete the cost category.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,7 +41,3 @@ The Savings Plans **Carts** page keeps your commitments until you're ready to ma
 1. Choose **Submit order**.
 
 If you encounter any error messages or unsuccessful attempts when you're completing your purchase, contact Support. For details on how to contact Support, see [Getting help with your bills and payments](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-get-answers.html) in the *AWS Billing User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,3 @@ Monitoring is an important part of maintaining the reliability, availability, an
 + [Monitoring Resolver DNS Firewall rule groups with Amazon CloudWatch](monitoring-resolver-dns-firewall-with-cloudwatch.md)
 + [Managing Resolver DNS Firewall events using Amazon EventBridge](dns-firewall-eventbridge-integration.md)
 + [Logging Amazon Route 53 API calls with AWS CloudTrail](logging-using-cloudtrail.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

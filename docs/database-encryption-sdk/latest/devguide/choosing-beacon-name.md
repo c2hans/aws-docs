@@ -17,7 +17,3 @@ For examples demonstrating how to name and configure beacons, see [Configuring b
 When naming standard beacons, we strongly recommend that your beacon name resolves to the [*beacon source*](beacons.md#beacon-source) whenever possible. This means that the beacon name and the name of the encrypted or [virtual](beacons.md#virtual-field) field that your standard beacon is constructed from are the same. For example, if you are creating a standard beacon for an encrypted field named `LastName`, your beacon name should also be `LastName`.
 
 When your beacon name is the same as the beacon source, you can omit the beacon source from your configuration and the AWS Database Encryption SDK will automatically use the beacon name as the beacon source.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

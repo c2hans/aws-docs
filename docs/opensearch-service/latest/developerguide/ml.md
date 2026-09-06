@@ -25,7 +25,3 @@ Amazon OpenSearch Service doesn't support use of the following ML Commons settin
 On *production clusters*, do not disable the cluster setting `plugins.ml_commons.only_run_on_ml_node` (don't set it to `false`). The option to disable this safeguard is for facilitating development, but production clusters should be using the connectors. For more information, see [Amazon OpenSearch Service ML connectors for AWS services](ml-amazon-connector.md).
 
 For more information on ML Commons settings, see [ML Commons cluster settings](https://opensearch.org/docs/latest/ml-commons-plugin/cluster-settings/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

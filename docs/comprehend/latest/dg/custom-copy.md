@@ -20,7 +20,3 @@ In scenarios like these, you can quickly copy a trained custom entity recognizer
 **Topics**
 + [Sharing a custom model with another AWS account](custom-copy-sharing.md)
 + [Importing a custom model from another AWS account](custom-copy-importing.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

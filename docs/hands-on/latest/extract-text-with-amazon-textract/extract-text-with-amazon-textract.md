@@ -345,7 +345,3 @@ In this step, you will go through the steps to delete all the resources you crea
 You have created a sample proof of concept to extract information from documents.
 
 Next steps: to learn more, see the [Amazon Textract Developer Guide](https://docs.aws.amazon.com/textract/latest/dg/what-is-textract.html) and the [Amazon Bedrock User Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

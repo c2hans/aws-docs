@@ -153,7 +153,3 @@ Throughout the migration, detailed logs capture everything that happens. When th
 | Populate secret values | Populate the placeholder secrets with actual values using Secrets Manager, AWS Systems Manager Parameter Store, or External Secrets Operator. Verify that workloads can access the secrets and function correctly. |
 | Reinstall Helm releases | Use the `helm install` commands generated in Phase 8 of the migration to reinstall Helm releases from their original chart sources. Verify that Helm-managed resources are healthy. |
 | Update DNS and traffic routing | Update DNS records, external load balancers, or traffic routing (for example, Route 53 weighted routing) to point to the new Amazon EKS cluster endpoints. Consider a gradual traffic shift for critical workloads. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

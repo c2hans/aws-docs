@@ -13,7 +13,3 @@ Voice analytics requires a grant to use your customer managed key. When you crea
 + Storing files in Amazon S3 with server side encryption.
 
 You can revoke access to the grant, or remove the service's access to your key at any time. If you do, voice analytics won't be able to access any of the data encrypted by the key. That affects all the operations that depend on that data, leading to `AccessDeniedException` errors and failures in the speaker search workflows.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

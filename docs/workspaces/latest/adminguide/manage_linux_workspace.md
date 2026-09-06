@@ -320,7 +320,3 @@ We do not recommend the use of a proxy server with your WorkSpaces desktop traff
 Amazon WorkSpaces desktop traffic is already encrypted, so proxies do not improve security. A proxy represents an additional hop in the network path that could impact streaming quality by introducing latency. Proxies could also potentially reduce throughput if a proxy is not properly sized to handle desktop streaming traffic. Furthermore, most proxies are not designed for supporting long running WebSocket (TCP) connections and may affect streaming quality and stability.
 
 If you must use a proxy, please locate your proxy server as close to the WorkSpace client as possible, preferably in the same network, to avoid adding network latency, which could negatively impact streaming quality and responsiveness.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

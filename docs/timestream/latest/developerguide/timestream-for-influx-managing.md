@@ -17,7 +17,3 @@ This section covers various aspects of managing Amazon Timestream for InfluxDB i
 + [Multi-AZ DB instance deployments](timestream-for-influx-managing-multi-az-instance-deployments.md)
 + [Setup to view InfluxDB logs on Timestream Influxdb Instances](timestream-for-influx-managing-view-influx-logs.md)
 + [Monitoring and Configuration Optimization for Timestream for InfluxDB 2](timestream-for-influx-monitoring-configuration-optimization.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

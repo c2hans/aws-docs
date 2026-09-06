@@ -62,7 +62,7 @@ When you accrue credit for concurrency scaling, this credit accrual applies to b
 ## AWS Regions for concurrency scaling
 <a name="concurrency-scaling-regions"></a>
 
-With Amazon Redshift, you can use concurrency scaling to manage concurrent workload demands across Redshift clusters. This topic details in which regions you can use concurrency scaling with Amazon Redshift.
+With Amazon Redshift, you can use concurrency scaling to manage concurrent workload demands across Redshift clusters. This topic details in which Regions you can use concurrency scaling with Amazon Redshift.
 
 Concurrency scaling is available in these AWS Regions:
 + US East (N. Virginia) Region (us-east-1)
@@ -116,7 +116,7 @@ Queries are routed to the concurrency scaling cluster only when the main cluster
 ## Configuring concurrency scaling queues
 <a name="concurrency-scaling-queues"></a>
 
-With Amazon Redshift, you can manage concurrency and system resources by configuring concurrency scaling. Concurrency scaling queues allow you to set limits on the number of queries or user sessions that can be executed concurrently. The following section provides instructions on how to enable concurrency scaling queues in Amazon Redshift, enabling you to effectively handle concurrent queries and user sessions.
+With Amazon Redshift, you can manage concurrency and system resources by configuring concurrency scaling. With concurrency scaling queues, you can set limits on the number of queries or user sessions that can be executed concurrently. The following section provides instructions on how to enable concurrency scaling queues in Amazon Redshift, so you can effectively handle concurrent queries and user sessions.
 
 You route queries to concurrency scaling clusters by enabling concurrency scaling in a workload manager (WLM) queue. To turn on concurrency scaling for a queue, set the **Concurrency Scaling mode** value to **auto**.
 
@@ -174,7 +174,3 @@ For more information about concurrency scaling, see the following topics in the 
 + [Viewing Concurrency Scaling Data](https://docs.aws.amazon.com/redshift/latest/mgmt/performance-metrics-concurrency-scaling.html)
 + [Viewing Cluster Performance During Query Execution](https://docs.aws.amazon.com/redshift/latest/mgmt/performance-metrics-query-cluster.html)
 + [Viewing Query Details](https://docs.aws.amazon.com/redshift/latest/mgmt/performance-metrics-query-execution-details.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

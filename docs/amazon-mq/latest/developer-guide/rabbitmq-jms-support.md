@@ -35,7 +35,3 @@ To learn more about connecting your JMS application to Amazon MQ for RabbitMQ br
 <a name="jms-amqp-interoperability"></a>
 
  You can use the RabbitMQ JMS client to send JMS messages to an AMQP exchange and consume messages from an AMQP queue (this feature does not support JMS topics). This enables you to interoperate or migrate certain JMS workloads to AMQP workloads. For more information, please visit the [official client documentation](https://rabbitmq.github.io/rabbitmq-jms-client/2.x/stable/htmlsingle/index.html#destination-interoperability).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

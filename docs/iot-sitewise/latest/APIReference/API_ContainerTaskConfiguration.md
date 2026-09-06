@@ -50,6 +50,17 @@ Key Pattern: `(?!(?i)AWS_)[a-zA-Z_][a-zA-Z0-9_]*`
 Value Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
+ ** ephemeralStorageConfiguration **   <a name="iotsitewise-Type-ContainerTaskConfiguration-ephemeralStorageConfiguration"></a>
+Ephemeral storage configuration for the container task.
+Type: [EphemeralStorageConfiguration](API_EphemeralStorageConfiguration.md) object
+Required: No
+
+ ** mounts **   <a name="iotsitewise-Type-ContainerTaskConfiguration-mounts"></a>
+Mounts attached to the container filesystem. Each mount exposes an external data source as a local directory inside the container. The service assigns each mount a container path based on the mount name. The container reads files through that path as if the data were on the local filesystem.
+Type: Array of [Mount](API_Mount.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 5 items.
+Required: No
+
  ** timeoutSeconds **   <a name="iotsitewise-Type-ContainerTaskConfiguration-timeoutSeconds"></a>
 The timeout in seconds for task execution. Default: 3600 (1 hour).
 Type: Long
@@ -63,7 +74,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotsitewise-2019-12-02/ContainerTaskConfiguration)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotsitewise-2019-12-02/ContainerTaskConfiguration)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotsitewise-2019-12-02/ContainerTaskConfiguration)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

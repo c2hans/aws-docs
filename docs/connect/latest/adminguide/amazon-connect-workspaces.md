@@ -85,7 +85,3 @@ To minimize disruption to users, you can delete a workspace only if it is not as
 <a name="access-a-workspace"></a>
 
 After you assign a workspace to a user, it is visible in their header. If a user has only one workspace assigned, it opens automatically. If no custom workspace has been created or assigned, users see the default Connect Customer experience. Users **assigned to more than one** workspace can switch between assigned workspaces from the header control. Their last-used workspace opens by default in the next session.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

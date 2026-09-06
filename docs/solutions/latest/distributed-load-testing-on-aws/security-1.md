@@ -150,7 +150,3 @@ k6 is released under the [AGPL-3.0 license](https://github.com/grafana/k6/blob/m
 <a name="locust-security"></a>
 
 No known security vulnerabilities were identified in the bundled version of Locust at the time of this solution’s release. The solution does not monitor Locust for new vulnerabilities on an ongoing basis; you are responsible for evaluating Locust against your security requirements throughout its use.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

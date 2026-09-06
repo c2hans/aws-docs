@@ -537,7 +537,3 @@ If you need more troubleshooting information, you can set the `Lambda` logging l
 + <a name="see-also-iam-cli"></a>[AWS Identity and Access Management (IAM) commands](https://docs.aws.amazon.com/cli/latest/reference/iam) in the *AWS CLI Command Reference*
 + <a name="see-also-lambda-cli"></a>[AWS Lambda commands](https://docs.aws.amazon.com/cli/latest/reference/lambda) in the *AWS CLI Command Reference*
 + <a name="see-also-gg-cli"></a>[AWS IoT Greengrass commands](https://docs.aws.amazon.com/cli/latest/reference/greengrass/index.html) in the *AWS CLI Command Reference*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

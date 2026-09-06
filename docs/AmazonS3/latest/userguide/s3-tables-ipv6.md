@@ -38,7 +38,3 @@ S3TablesClient client = S3TablesClient.builder()
 To use the dual-stack endpoint in the AWS CLI, see [Using dual-stack endpoints from the AWS CLI](https://docs.aws.amazon.com/AmazonS3/latest/API/dual-stack-endpoints.html#dual-stack-endpoints-cli).
 
 For information on using the dual-stack endpoints for AWS PrivateLink, see, [Using the dual-stack endpoints to access tables and table buckets](s3-tables-VPC.md#s3-tables-dual-stack-endpoints).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

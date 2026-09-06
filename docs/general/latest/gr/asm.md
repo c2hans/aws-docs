@@ -76,7 +76,3 @@ The following are the service endpoints and service quotas for this service.
 | Secrets | Each supported Region: 500,000 | No | The maximum number of secrets in each AWS Region of this AWS account. |
 | Staging labels attached across all versions of a secret | Each supported Region: 20 | No | The maximum number of staging labels attached across all versions of a secret. |
 | Versions per secret | Each supported Region: 100 | No | The maximum number of versions of a secret. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

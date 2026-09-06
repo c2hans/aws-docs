@@ -376,7 +376,3 @@ The following are usage notes for `UNPIVOT`.
 + `UNPIVOT` can be applied to tables, sub-queries, and common table expressions (CTEs). `UNPIVOT` cannot be applied to any `JOIN` expressions, recursive CTEs, `PIVOT`, or `UNPIVOT` expressions. Also not supported are `SUPER` unnested expressions and Redshift Spectrum nested tables.
 + The `UNPIVOT IN` list must contain only input table column references. The `IN` list columns must have a common type that they are all compatible with. The `UNPIVOT` value column has this common type. The `UNPIVOT` name column is of type `VARCHAR`.
 + If an `IN` list value does not have an alias, `UNPIVOT` uses the column name as a default value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

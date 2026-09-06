@@ -59,7 +59,3 @@ Amazon AppFlow integrates with Amazon EventBridge to receive events from Amazon 
 
 **AWS Identity and Access Management (IAM)**
 IAM is an AWS service that helps an administrator securely control access to AWS resources. Amazon AppFlow integrates with the IAM service so that you can control who in your organization has access to Amazon AppFlow. For more information, see [AWS Identity and Access Management for Amazon AppFlow](https://docs.aws.amazon.com/appflow/latest/userguide/security-iam.html) in the *Amazon AppFlow User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

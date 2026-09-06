@@ -279,7 +279,3 @@ When you submit an import, SDMA submits a job to AWS Deadline Cloud that copies 
 | Deadline job fails with "AccessDenied" on GetObject | The source account role’s permissions policy does not include `s3:GetObject` on the source bucket. Add the permission. |
 | Bucket browser shows empty | The role may have `s3:ListBucket` but the bucket policy may deny cross-account access. Check the bucket policy in the source account. |
 | "Cannot determine CAS bucket" error | The `ASSET_BUCKET_NAME` environment variable is not set on the connector invocation Lambda. This is set automatically during deployment — redeploy if missing. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

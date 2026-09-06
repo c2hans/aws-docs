@@ -50,7 +50,3 @@ The information in this section assumes that you are familiar with the general s
 1. Open the **Advanced** section of this input and complete the fields as follows:
    + **Virtual Input**: Choose this field to set up the input as a virtual input. Elemental Live notifies the POIS only about inputs that are configured as virtual inputs.
    + **Virtual Input SCTE 35 PID**: Ignore this field. It is used only with SCTE-35-triggered input switching.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

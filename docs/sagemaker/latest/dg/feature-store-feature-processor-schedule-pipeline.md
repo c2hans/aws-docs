@@ -78,7 +78,3 @@ put_trigger(
 For an example of using event based triggers to create continuous executions and automatic retries for your Feature Processor pipeline, see [Continuous executions and automatic retries using event based triggers](feature-store-feature-processor-examples.md#feature-store-feature-processor-examples-continuous-execution-automatic-retries).
 
 For an example of using event based triggers to create continuous *streaming* and automatic retries using event based triggers, see [Streaming custom data source examples](feature-store-feature-processor-data-sources-custom-examples.md#feature-store-feature-processor-data-sources-custom-examples-streaming).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,7 +42,3 @@ $ aws batch describe-jobs --job 2d044787-c663-4ce6-a6fe-f2baf7e51b04
 ```
 
 For a job with retries enabled, the `podName` and `nodeName` of every completed attempt is in the `eksAttempts` list parameter of the [DescribeJobs](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobs.html) API operation. The `podName` and `nodeName` of the current running attempt are in the `podProperties` object.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

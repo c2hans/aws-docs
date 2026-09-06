@@ -22,7 +22,3 @@ The following image shows the agent workspace; for the purposes of this document
 1. **Contact history**: Date, channel, and duration of when this customer contacted your contact center in the past.
 
 1. **Product purchase history**: All the assets purchased by a customer can be populated here. The data is ingested from an external app such as Salesforce or Zendesk that you've [integrated](integrate-external-apps-customer-profiles.md) with Customer Profiles.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

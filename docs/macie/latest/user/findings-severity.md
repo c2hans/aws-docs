@@ -160,7 +160,3 @@ A **SensitiveData:S3Object/Multiple** finding indicates that Macie detected mult
 For this type of finding, Macie determines severity by calculating the severity for each type of sensitive data that Macie detected (as indicated in the preceding topics), determining which type produces the highest severity, and assigning that highest severity to the finding.
 
 For example, if Macie detects 10 full names (**Medium** severity level) and 10 AWS secret access keys (**High** severity level) in an object, Macie assigns the **High** severity level to the finding.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

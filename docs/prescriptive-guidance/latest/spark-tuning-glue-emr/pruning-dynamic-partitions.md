@@ -67,7 +67,3 @@ AdaptiveSparkPlan isFinalPlan=true
 ```
 
 Even though there is no direct filter added on the `o_nationkey` column, because of the DPP feature, Spark automatically scans only those partitions that are needed, instead of the entire table.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ When you no longer need a domain, you can delete it. However, you must first del
 1. In the list of domains, select the check box next to the domain name and choose **Remove**.
 
 1. In the **Remove domain** dialog box, enter the name of the domain to remove and choose **Remove**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

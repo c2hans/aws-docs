@@ -104,7 +104,3 @@ After the temporary credentials expire, repeat steps 4 through 7.
 The AWS SDK for Java V1 requires a Java 7 JDK or newer and all Java LTS (long-term support) JDK versions are supported. If you use version 1.12.767 or earlier of the SDK, you can use Java 7, but if you use version 1.12.768 or newer of the SDK, Java 8 is required. The [Maven central repository](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom) lists the latest version of the SDK for Java.
 
 The AWS SDK for Java works with the [Oracle Java SE Development Kit](https://www.oracle.com/java/technologies/downloads/) and with distributions of Open Java Development Kit (OpenJDK) such as [Amazon Corretto](https://aws.amazon.com/corretto), [Red Hat OpenJDK](https://developers.redhat.com/products/openjdk/overview), and [Adoptium](https://adoptium.net/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

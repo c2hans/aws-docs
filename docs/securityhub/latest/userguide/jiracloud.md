@@ -128,7 +128,3 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/jiracloud.h
 +  Implementing OAuth 2.0 (3LO): [OAuth 2.0 (3LO) implementation guide](https://developer.atlassian.com/cloud/oauth/getting-started/implementing-oauth-3lo/) on the Atlassian website
 +  Administer Jira Cloud apps: [Jira Cloud administration resources](https://support.atlassian.com/jira-cloud-administration/resources/) on the Atlassian website
 +  Manage Jira permissions: [Manage project permissions](https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/) on the Atlassian website
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -98,7 +98,3 @@ All assets required for publishing a model package or algorithm product must be 
 + Test data for inference and training validation that are stored in Amazon S3
 
 You can develop and train your product in any Region that is supported by SageMaker AI. But, before you can publish, you must copy all assets to and re-create resources in a Region that AWS Marketplace supports publishing from.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

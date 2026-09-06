@@ -82,7 +82,3 @@ Consider the following when you're using encryption at rest in Amazon Keyspaces.
   + Data in use: Protect your data before sending it to Amazon Keyspaces by using client-side encryption.
   + Customer managed keys: Data at rest in your tables is always encrypted using your customer managed keys. However operations that perform atomic updates of multiple rows encrypt data temporarily using AWS owned keys during processing. This includes range delete operations and operations that simultaneously access static and non-static data.
 + A single customer managed key can have up to 50,000 [grants](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html). Every Amazon Keyspaces table associated with a customer managed key consumes 2 grants. One grant is released when the table is deleted. The second grant is used to create an automatic snapshot of the table to protect from data loss in case Amazon Keyspaces lost access to the customer managed key unintentionally. This grant is released 42 days after deletion of the table.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

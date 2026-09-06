@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 In the event that a zone becomes unavailable, the same cell replicated in another AZ can take over the work and continue processing customer traffic. But this can also happen in the case of gray failures in one or more components, when an evacuation of a cell is more beneficial than living with the failure until it is detected and corrected.
 
  This second approach is more complex and driven by a much higher cost in terms of infrastructure. You are responsible for creating the mechanisms that will ensure high availability for the cell at a higher layer, as well as data replication issues to mitigate the cases where a zone might fail. If your workload is not offering a service that has the scope of execution inside an Availability Zone to your customers, the Multi-AZ cell is a better approach to consider.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

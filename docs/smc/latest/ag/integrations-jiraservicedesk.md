@@ -20,7 +20,3 @@ It enables Jira Service Management administrators to:
 These integrations streamline AWS native services by making it easier for you to consume and provide Jira Service Management governance and oversight over AWS products.
 
 The AWS-supplied connector is available at no charge in the Atlassian Marketplace. This new feature is generally available in all AWS Regions where AWS Service Catalog, AWS Config, and AWS Systems Manager services are available.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

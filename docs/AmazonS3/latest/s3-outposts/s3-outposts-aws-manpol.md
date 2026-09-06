@@ -29,7 +29,3 @@ View details about updates to AWS managed policies for S3 on Outposts since this
 | --- | --- | --- |
 | S3 on Outposts added `AWSS3OnOutpostsServiceRolePolicy` | S3 on Outposts added `AWSS3OnOutpostsServiceRolePolicy` as part of the service-linked role `AWSServiceRoleForS3OnOutposts`, which helps manage network resources for you. | October 3, 2023 |
 | S3 on Outposts started tracking changes | S3 on Outposts started tracking changes for its AWS managed policies. | October 3, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

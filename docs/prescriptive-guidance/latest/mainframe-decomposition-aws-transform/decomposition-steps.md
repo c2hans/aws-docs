@@ -94,7 +94,3 @@ Based on the results of the decomposition, you can make additional changes to th
 When you are satisfied with the decomposition analysis, you can send this information to AWS Transform to complete the domain-based decomposition and create initial wave plans. After decomposition is complete, the dashboard, shown in the following screen illustration, displays a summary of decomposition results. It shows the number of files by domain along with the percentage of files in each domain.
 
 ![AWS Transform dashboard with decomposition results.](http://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/63e6fa31-9394-4005-add0-e6de93a3b3ad.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

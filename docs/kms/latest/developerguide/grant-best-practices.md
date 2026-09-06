@@ -18,7 +18,3 @@ Use the [EncryptionContextEqual](create-grant-overview.md#grant-constraints) gra
 **Note**
 Some AWS services create grants for different resources that might appear to be duplicates. These grants have lifecycles tied to the different resources. Deleting grants created by an AWS service can be disruptive and requires extra precaution.
 + Remember that grants do not automatically expire. [Retire or revoke the grant](grant-delete.md) as soon as the permission is no longer needed. Grants that are not deleted might create a security risk for encrypted resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

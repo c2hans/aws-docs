@@ -101,7 +101,3 @@ The following table lists flow maintenance metrics that AWS Elemental MediaConne
 | MaintenanceScheduled | Maintenance is scheduled for the flow.<br />Units: Count<br />Valid dimensions:+  Flow ARN <br />+  All flows  |
 | MaintenanceStarted | Maintenance has started and is currently in progress for this flow. <br />Units: Count<br />Valid dimensions:+  Flow ARN <br />+  All flows  |
 | MaintenanceSucceeded | Maintenance completed successfully for this flow. <br />Units: Count<br />Valid dimensions:+  Flow ARN <br />+  All flows  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,3 @@ For more information about configuring SSO, see the following guides:
 When you configure SSO, you specify a company ID for your Wickr network. Be sure to write down the company ID for your Wickr network. You must provide it to your end users when sending invitation emails. End users must specify the company ID when they register for your Wickr network.
 + [Configure AWS Wickr with Microsoft Entra (Azure AD) single sign-on](https://docs.aws.amazon.com/wickr/latest/adminguide/entra-ad-sso.html)
 + [Configure Okta single sign-on](https://support.wickr.com/hc/en-us/articles/360050850834-Setup-Okta-SSO)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

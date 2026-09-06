@@ -75,7 +75,3 @@ This release includes all community bug fixes up to and including 8.0.26, in add
 +  Fixed an issue where it wasn't possible to revoke the `DROP` privilege on the Performance Schema. (Bug \#33578113)
 +  Fixed an issue where a stored procedure containing an `IF` statement using `EXISTS`, which acted on one or more tables that were deleted and recreated between executions, didn't execute correctly for the subsequent invocations following the first one. (Bug \#32855634).
 +  Fixed an issue where a query that references a view in a subquery and an outer query block can cause an unexpected restart. (Bug\#32324234)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

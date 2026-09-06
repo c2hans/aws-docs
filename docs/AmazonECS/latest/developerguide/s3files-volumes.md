@@ -65,7 +65,3 @@ The port to use for sending encrypted data between the Amazon ECS host and the S
 Type: String
 Required: No
 The full ARN of the S3 Files access point to use. Access points provide application-specific entry points into the file system with enforced user identity and root directory settings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

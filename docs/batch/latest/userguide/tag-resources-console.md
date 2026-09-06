@@ -32,7 +32,3 @@ AWS Batch allows you to add or delete tags associated with your clusters directl
    + To delete a tag — choose the ![Delete icon](http://docs.aws.amazon.com/batch/latest/userguide/images/DeleteIcon.png) button next to the tag.
 
 1. Repeat this process for each tag you want to add or delete, and then choose **Edit tags** to finish.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

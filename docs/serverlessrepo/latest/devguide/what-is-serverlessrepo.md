@@ -19,7 +19,3 @@ In this guide, you can learn about the two ways to work with the AWS Serverless 
 <a name="what-is-serverlessrepo-next-steps"></a>
 + For a tutorial about publishing a sample application to the AWS Serverless Application Repository, see [Quick Start: Publishing Applications](serverlessrepo-quick-start.md).
 + For instructions about deploying applications from the AWS Serverless Application Repository, see [How to Deploy Applications](serverlessrepo-how-to-consume.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Repository. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverlessrepo` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

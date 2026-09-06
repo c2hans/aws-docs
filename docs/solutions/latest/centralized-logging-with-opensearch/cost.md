@@ -279,7 +279,3 @@ For an example of how tag keys appear in your billing report with cost allocatio
  **New cost and usage report example bar graph.**
 
 ![image16](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image16.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Logging with OpenSearch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

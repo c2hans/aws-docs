@@ -102,7 +102,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/nhs-cloud-security-gu
  IAM enables customers to minimise the use of AWS account credentials. After users have been created, all interactions with AWS Services and resources should occur using user security credentials.
 
  An important complementary means of implementing the principle of least privilege is through the AWS Systems Manager Service. This provides a set of management tools that reduces further the need to access AWS resources (such as EC2 instances) directly, and enables actions performed in the course of that access to be logged in companion AWS services such as CloudTrail and CloudWatch Logs for audit purposes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

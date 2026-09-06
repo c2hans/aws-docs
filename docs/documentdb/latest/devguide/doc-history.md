@@ -67,7 +67,3 @@ The following table describes the documentation for this release of the *Amazon 
 | [Auditing events](https://docs.aws.amazon.com/documentdb/latest/devguide/event-auditing.html) | Added support for auditing database events with Amazon CloudWatch Logs. | February 12, 2019 |
 | [Quick Start](https://docs.aws.amazon.com/documentdb/latest/devguide/quick_start_cfn.html) | Added a Quick Start topic to help you easily start with Amazon DocumentDB using CloudFormation. | January 11, 2019 |
 | [Public release](#doc-history) | This is the initial public release of Amazon DocumentDB (with MongoDB compatibility). This release includes the [Developer Guide](https://docs.aws.amazon.com/documentdb/latest/devguide/what-is.html) and the integrated [Resource Management API Reference](https://docs.aws.amazon.com/documentdb/latest/APIReference/api-reference.html). | January 9, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

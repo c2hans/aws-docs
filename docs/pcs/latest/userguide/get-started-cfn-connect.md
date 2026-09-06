@@ -22,7 +22,3 @@ After you create an AWS PCS cluster from a CloudFormation template, you can use 
      From this view, you can select an instance and choose **Connect**. The sample cluster's instance supports inbound SSH and AWS Systems Manager connections in a web browser. For more information, see [Connect to your AWS PCS cluster](getting-started_connect.md).
 
      After you connect to a login instance, you can follow the tutorial at [Explore the cluster environment in AWS PCS](getting-started_explore.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

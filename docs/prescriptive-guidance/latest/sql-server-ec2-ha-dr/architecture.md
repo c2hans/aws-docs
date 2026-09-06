@@ -31,7 +31,3 @@ This section provides architecture diagrams that illustrate the HA/DR strategies
 <a name="three-node-ha-dr-architecture-with-log-shipping-multi-region"></a>
 
 ![Three-node HA/DR architecture with basic Always On availability group cluster (multi-Region, Multi-AZ) and log shipping](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-ha-dr/images/guide-img/09ec13da-971b-4981-975f-0940015d7fc0/images/74b44c98-d787-4dfa-90dd-8881545c2d66.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

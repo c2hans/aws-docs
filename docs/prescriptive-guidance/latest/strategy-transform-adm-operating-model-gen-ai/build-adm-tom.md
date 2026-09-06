@@ -91,7 +91,3 @@ The processes component redesigns the SDLC to incorporate AI, enhancing each sta
 + *AI-enhanced SDLC* affects *continuous monitoring* in the *performance measurement* component.
 + *AI model management* relates to *data infrastructure* in the *technology and tools* component.
 + *Governance workflows* supports the *data privacy framework* in the *governance and ethics* component.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

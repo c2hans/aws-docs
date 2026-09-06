@@ -44,7 +44,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-overview-ama
  With API Gateway, you pay only for invocation requests made to your APIs. There are no minimum fees or upfront commitments. For HTTP APIs and REST APIs, you pay only for the API calls you receive and the amount of data transferred out. There are no data transfer out charges for Private APIs, though [AWS PrivateLink](https://aws.amazon.com/privatelink/pricing/) charges apply when using Private APIs in API Gateway. API Gateway also provides optional data caching, charged at an hourly rate that varies based on the cache size you select. For WebSocket APIs, you pay only when your APIs are in use based on number of messages sent and received and connection minutes, as well as any data transfer.
 
  The API Gateway free tier includes one million HTTP API calls, one million REST API calls, one million messages, and 750,000 connection minutes per month for up to 12 months.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

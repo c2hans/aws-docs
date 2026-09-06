@@ -23,11 +23,26 @@ The initial release of Aurora MySQL version 3 includes all CVEs fixed up to comm
  In the following list, each CVE ID links to the corresponding record in the CVE Program at [cve.org](https://www.cve.org) or to the corresponding entry in the National Vulnerability Database (NVD) at [nvd.nist.gov](https://nvd.nist.gov).
 
 **CVEs and minimum fixed Aurora MySQL versions**
-+ [CVE-2026-21936](https://www.cve.org/CVERecord?id=CVE-2026-21936): [3.13.0](AuroraMySQL.Updates.3130.md)
-+ [CVE-2026-21937](https://www.cve.org/CVERecord?id=CVE-2026-21937): [3.13.0](AuroraMySQL.Updates.3130.md)
-+ [CVE-2026-21941](https://www.cve.org/CVERecord?id=CVE-2026-21941): [3.13.0](AuroraMySQL.Updates.3130.md)
-+ [CVE-2026-21948](https://www.cve.org/CVERecord?id=CVE-2026-21948): [3.13.0](AuroraMySQL.Updates.3130.md)
-+ [CVE-2026-21968](https://www.cve.org/CVERecord?id=CVE-2026-21968): [3.13.0](AuroraMySQL.Updates.3130.md)
++ [CVE-2026-60163](https://www.cve.org/CVERecord?id=CVE-2026-60163): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-61094](https://www.cve.org/CVERecord?id=CVE-2026-61094): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-60585](https://www.cve.org/CVERecord?id=CVE-2026-60585): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-60332](https://www.cve.org/CVERecord?id=CVE-2026-60332): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-60331](https://www.cve.org/CVERecord?id=CVE-2026-60331): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-60747](https://www.cve.org/CVERecord?id=CVE-2026-60747): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-47023](https://www.cve.org/CVERecord?id=CVE-2026-47023): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-60186](https://www.cve.org/CVERecord?id=CVE-2026-60186): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-60184](https://www.cve.org/CVERecord?id=CVE-2026-60184): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-60185](https://www.cve.org/CVERecord?id=CVE-2026-60185): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-60187](https://www.cve.org/CVERecord?id=CVE-2026-60187): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-60188](https://www.cve.org/CVERecord?id=CVE-2026-60188): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-60189](https://www.cve.org/CVERecord?id=CVE-2026-60189): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-60191](https://www.cve.org/CVERecord?id=CVE-2026-60191): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-60190](https://www.cve.org/CVERecord?id=CVE-2026-60190): [8.4.8](AuroraMySQL.Updates.848.md)
++ [CVE-2026-21936](https://www.cve.org/CVERecord?id=CVE-2026-21936): [8.4.8](AuroraMySQL.Updates.848.md), [3.13.0](AuroraMySQL.Updates.3130.md)
++ [CVE-2026-21937](https://www.cve.org/CVERecord?id=CVE-2026-21937): [8.4.8](AuroraMySQL.Updates.848.md), [3.13.0](AuroraMySQL.Updates.3130.md)
++ [CVE-2026-21941](https://www.cve.org/CVERecord?id=CVE-2026-21941): [8.4.8](AuroraMySQL.Updates.848.md), [3.13.0](AuroraMySQL.Updates.3130.md)
++ [CVE-2026-21948](https://www.cve.org/CVERecord?id=CVE-2026-21948): [8.4.8](AuroraMySQL.Updates.848.md), [3.13.0](AuroraMySQL.Updates.3130.md)
++ [CVE-2026-21968](https://www.cve.org/CVERecord?id=CVE-2026-21968): [8.4.8](AuroraMySQL.Updates.848.md), [3.13.0](AuroraMySQL.Updates.3130.md)
 + [CVE-2025-53040](https://www.cve.org/CVERecord?id=CVE-2025-53040): [3.12.0](AuroraMySQL.Updates.3120.md)
 + [CVE-2025-53042](https://www.cve.org/CVERecord?id=CVE-2025-53042): [3.12.0](AuroraMySQL.Updates.3120.md)
 + [CVE-2025-53044](https://www.cve.org/CVERecord?id=CVE-2025-53044): [3.12.0](AuroraMySQL.Updates.3120.md)
@@ -60,7 +75,7 @@ The initial release of Aurora MySQL version 3 includes all CVEs fixed up to comm
 + [CVE-2025-50098](https://www.cve.org/CVERecord?id=CVE-2025-50098): [3.11.0](AuroraMySQL.Updates.3110.md)
 + [CVE-2025-50100](https://www.cve.org/CVERecord?id=CVE-2025-50100): [3.11.0](AuroraMySQL.Updates.3110.md)
 + [CVE-2025-50104](https://www.cve.org/CVERecord?id=CVE-2025-50104): [3.11.0](AuroraMySQL.Updates.3110.md)
-+ [CVE-2026-46863](https://www.cve.org/CVERecord?id=CVE-2026-46863): [3.13.0](AuroraMySQL.Updates.3130.md), [3.10.5](AuroraMySQL.Updates.3105.md)
++ [CVE-2026-46863](https://www.cve.org/CVERecord?id=CVE-2026-46863): [8.4.8](AuroraMySQL.Updates.848.md), [3.13.0](AuroraMySQL.Updates.3130.md), [3.10.5](AuroraMySQL.Updates.3105.md)
 + [CVE-2025-21501](https://www.cve.org/CVERecord?id=CVE-2025-21501): [3.10.0](AuroraMySQL.Updates.3100.md)
 + [CVE-2025-21500](https://www.cve.org/CVERecord?id=CVE-2025-21500): [3.10.0](AuroraMySQL.Updates.3100.md)
 + [CVE-2025-21543](https://www.cve.org/CVERecord?id=CVE-2025-21543): [3.10.0](AuroraMySQL.Updates.3100.md)
@@ -343,7 +358,3 @@ The initial release of Aurora MySQL version 3 includes all CVEs fixed up to comm
 + [CVE-2013-2375](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2375): [1.22.0](AuroraMySQL.Updates.1220.md)
 + [CVE-2013-1523](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1523): [1.22.0](AuroraMySQL.Updates.1220.md)
 + [CVE-2012-5615](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5615): [1.22.0](AuroraMySQL.Updates.1220.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

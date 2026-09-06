@@ -30,7 +30,3 @@ The workflow wizard automatically performs as much setup as possible in the upst
 The workflow wizard also automatically performs as much setup as possible in the downstream system or systems. For example, you might be sending to MediaPackage, but you might not have created the MediaPackage channel and might not have set up CloudFront. In this case, the workflow wizard performs the setup in those services.
 
 The workflow wizard works best when you use it to create these resources, rather than using existing resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

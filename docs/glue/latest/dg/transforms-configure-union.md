@@ -32,7 +32,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-configure-unio
    1. All – By default, the All Union type is selected; this will result in duplicate rows if there are any in the data combination.
 
    1. Distinct – Choose Distinct if you want duplicate rows to be removed from the resulting data combination.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

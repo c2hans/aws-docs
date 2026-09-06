@@ -76,7 +76,3 @@ The Saved Configurations feature can help you re-create your environments in the
 1. Swap the CNAMEs of the existing environment with the new environment. This way, the new environment that you created can be referenced with the familiar address. You can use the EB CLI or the AWS CLI.
    + Using the EB CLI, swap the environment CNAMEs by running the **eb swap** command. For more information, see [Setting up the EB command line interface (EB CLI) to manage Elastic Beanstalk](eb-cli3.md).
    + Using the AWS CLI, swap the environment CNAMEs with the [ elasticbeanstalk swap-environment-cnames ](https://docs.aws.amazon.com/cli/latest/reference/elasticbeanstalk/swap-environment-cnames.html) command. For more information, see the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

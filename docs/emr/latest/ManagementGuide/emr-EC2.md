@@ -11,7 +11,3 @@ Consider the following options to resolve the issue:
 + Follow the instructions in [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html) in the *Amazon Web Services General Reference* to request a service limit increase. For some APIs, setting up a CloudWatch event might be a better option than increasing limits. For more details, see [When to set up EMR events in CloudWatch](emr-service-limits-cloudwatch-events.md).
 + If one or more running clusters are not at capacity, resize instance groups or reduce target capacities on instance fleets for running clusters.
 + Create clusters with fewer EC2 instances or reduced target capacity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

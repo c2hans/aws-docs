@@ -61,7 +61,3 @@ For a list of Lambda Insights metrics, see [Metrics collected by Lambda Insights
 1. Use the **Filters** section to filter by capacity provider, instance type, or function.
 
 1. To add this view to a dashboard as a widget, choose **Add to dashboard**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

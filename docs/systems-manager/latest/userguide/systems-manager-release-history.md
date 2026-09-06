@@ -468,7 +468,3 @@ The following table describes important changes in each release of the *AWS Syst
 /Dev/DBServer/MySQL/db-string13
 ```<br />For more information, see [Working with parameter hierarchies in Parameter Store](sysman-paramstore-hierarchies.md). | June 22, 2017 |
 | SSM Agent Support for SUSE Linux Enterprise Server | You can install SSM Agent on 64-bit SUSE Linux Enterprise Server (SLES). For more information, see [Working with SSM Agent on EC2 instances for Linux](ssm-agent-linux.md). | June 14, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

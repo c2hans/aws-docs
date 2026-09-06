@@ -14,11 +14,7 @@ Use this feature to import and export your source servers, applications, and wav
 + Export to a CSV file – Export data from your account to a local disk or an S3 bucket and merge it into a single file that you can easily review and process offline.
 
 **Topics**
++ [Editing your configuration](configuration-editing.md)
 + [Importing your data inventory](import-main.md)
 + [Exporting your data inventory](export-main.md)
-+ [Editing your configuration](configuration-editing.md)
 + [View export history](export-history.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

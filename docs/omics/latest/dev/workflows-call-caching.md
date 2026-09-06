@@ -23,7 +23,3 @@ For information about troubleshooting call caching issues, see [Troubleshooting 
 + [Contents of a run cache](workflow-cache-contents.md)
 + [Engine-specific caching features](workflow-cache-per-engine.md)
 + [Using the run cache](workflow-cache-startrun.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ If you do not configure IKE initiation from the AWS side for your VPN tunnel and
 For more information about working with VPN tunnel initiation options, see the following topics:
 + To create a new VPN connection and specify the VPN tunnel initiation options: [Step 5: Create a VPN connection](SetUpVPNConnections.md#vpn-create-vpn-connection)
 + To modify the VPN tunnel initiation options for an existing VPN connection: [Modify AWS Site-to-Site VPN tunnel options](modify-vpn-tunnel-options.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

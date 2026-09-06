@@ -35,7 +35,3 @@ This solution uses MediaLive, which is currently available in specific AWS Regio
    You can view the status of the stack in the AWS CloudFormation console in the **Status** column. You should receive a CREATE\_COMPLETE status in approximately five minutes.
 **Note**
 To test the live stream playback, navigate to the AWS CloudFormation stack **Outputs** tab, copy the Amazon CloudFront URL, and open the URL in any player compatible with HTTP Live Streaming (HLS). For more details, refer to [Amazon CloudWatch metrics](amazon-cloudwatch-metrics.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Live Streaming on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -450,7 +450,3 @@ The `$timeFilter` variable returns the currently selected time range as an expre
 +  Log Analytics queries in the Azure Monitor data source.
 +  SQL queries in MySQL, Postgres, and MSSQL.
 +  The `$__timeFilter` variable is used in the MySQL data source.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

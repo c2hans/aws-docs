@@ -35,7 +35,3 @@ Deleting a Dev Environment cannot be undone. After you delete a Dev Environment,
 **Note**
 Before deleting a VPC connection in your space, make sure to remove the Dev Environment associated to that VPC.
 Even if you delete a Dev Environment, you might not delete the network interface in the VPC. Make sure to clean up your resources as needed. If an error occurs when you delete a VPC-connected Dev Environment, you must [detach](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html#detach_eni) your stale connection, and [delete](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html#delete_eni) it after confirming that it's not being used.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

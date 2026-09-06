@@ -60,7 +60,3 @@ Both hostnames and fully-qualified domain names (FQDN) are created using Amazon 
 Note that the same format will be used for the Slurm node names as well.
 
  Users can choose to use the default Amazon EC2 hostname of the instance powering the compute node instead of the default host name format used by AWS ParallelCluster. This can be done by setting the [`UseEc2Hostnames`](Scheduling-v3.md#yaml-Scheduling-SlurmSettings-Dns-UseEc2Hostnames) parameter to be true. However, Slurm node names will continue to use the default AWS ParallelCluster format.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

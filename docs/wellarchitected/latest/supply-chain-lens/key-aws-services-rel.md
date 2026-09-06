@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 +  [AWS Lambda](https://aws.amazon.com/lambda/): A serverless compute service that runs code in response to events, such as updates in data streams or file uploads, enabling real-time processing for supply chain events.
 +  [Amazon S3](https://aws.amazon.com/s3/): A scalable object storage service used for storing supply chain data, logs, and backups securely and efficiently.
 +  [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/): A monitoring service that provides data and actionable insights to verify application performance and operational health. It can monitor supply chain systems, log synchronization events, and trigger alarms when anomalies occur.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

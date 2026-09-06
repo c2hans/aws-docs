@@ -26,7 +26,3 @@ Monitor financial performance against your established baseline, and track cost 
 <a name="measuring-success-agentops"></a>
 
 Apply the continuous learning framework from the [Incorporating human feedback into agentic AI systems](feedback.md) section to optimize decision-making through systematic human feedback integration. Create real-time learning systems that incorporate human insights for performance enhancement. Monitor transformation toward outcome-based business models as described in [Economic transformation to outcome-based pricing for agentic AI systems on AWS](outcome-pricing.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

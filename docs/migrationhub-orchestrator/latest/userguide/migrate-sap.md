@@ -227,7 +227,3 @@ Migration Hub Orchestrator automates the migration process after you create the 
   + **Cutover & Start SAP application**: Start the migrated SAP application servers on the target.
   + **Verify database records**: Verify database records to validate that the application has been migrated properly.
   + **Manual post processing**: Perform any manual post-migration tasks, such as attaching interface file systems or updating end user `SAPGUI`configuration to connect to the newly migrated applications on AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Hub Orchestrator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-orchestrator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

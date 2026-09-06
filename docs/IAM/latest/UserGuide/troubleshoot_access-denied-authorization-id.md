@@ -95,7 +95,3 @@ or call the GetRequestAuthorizationDetails API with the following authorization 
 
  Support for `GetRequestAuthorizationDetails` is rolling out gradually across AWS APIs and AWS Region. The following service(s) support `GetRequestAuthorizationDetails`:
 + Most APIs in IAM
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

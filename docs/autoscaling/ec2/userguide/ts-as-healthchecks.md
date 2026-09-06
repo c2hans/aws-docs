@@ -80,7 +80,3 @@ Amazon EC2 provides two status checks: the **system status check**, which detect
 If you have a different issue, see the following AWS re:Post articles for additional troubleshooting help:
 +  [Why did Amazon EC2 Auto Scaling terminate an instance?](https://repost.aws/knowledge-center/auto-scaling-instance-how-terminated)
 +  [Why didn't Amazon EC2 Auto Scaling terminate an unhealthy instance?](https://repost.aws/knowledge-center/auto-scaling-terminate-instance)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

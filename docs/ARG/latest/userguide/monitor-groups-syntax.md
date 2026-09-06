@@ -40,7 +40,3 @@ For details about the fields common to all Amazon EventBridge events, see [Amazo
 | source | String | For Resource Groups, this value is always "aws.resource-groups". |
 | resources | An array of Amazon Resource Names (ARNs) | This field always includes the [Amazon resource name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the group with the change that triggered this event.<br />This field can also include the ARNs of any resources added to or removed from the group, if applicable. |
 | `detail` | JSON object string | This is the payload of the event. The contents of the detail field vary based on the value of the detail-type. [See the next section for more information.](monitor-groups-syntax-detail.md) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Resource Groups. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ARG` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

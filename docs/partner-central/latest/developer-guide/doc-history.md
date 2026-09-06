@@ -26,7 +26,3 @@ The following is a list of documentation releases for this API reference.
 | [Beta 2 release](https://docs.aws.amazon.com/partner-central/latest/selling-api/release-notes.html) | Beta 2 of the AWS Partner Central API released | January 7, 2024 |
 | [Beta 1 release](https://docs.aws.amazon.com/partner-central/latest/selling-api/release-notes.html) | Beta 1 of the AWS Partner Central API released | December 15, 2023 |
 | [Beta 0 release](https://docs.aws.amazon.com/partner-central/latest/selling-api/release-notes.html) | AWS Partner Central API initial release | November 15, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

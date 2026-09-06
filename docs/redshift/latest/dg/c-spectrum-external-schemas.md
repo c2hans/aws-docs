@@ -12,7 +12,7 @@ This topic describes how to create and use external schemas with Redshift Spectr
 All external tables must be created in an external schema, which you create using a [CREATE EXTERNAL SCHEMA](r_CREATE_EXTERNAL_SCHEMA.md) statement.
 
 **Note**
-Some applications use the term *database* and *schema* interchangeably. In Amazon Redshift, we use the term *schema*.
+Some applications use the term *database* and *schema* interchangeably. Amazon Redshift uses the term "schema".
 
 An Amazon Redshift external schema references an external database in an external data catalog. You can create the external database in Amazon Redshift, in [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/catalog.html), in [AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/components-overview.html#data-catalog-intro), or in an Apache Hive metastore, such as [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html). If you create an external database in Amazon Redshift, the database resides in the Athena Data Catalog. To create a database in a Hive metastore, you need to create the database in your Hive application.
 
@@ -203,7 +203,3 @@ The default port for an EMR HMS is 9083. If your HMS uses a different port, spec
 1. In **Associated sercurity groups**, choose the new security group, and choose **Add security group**.
 
 1. Choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

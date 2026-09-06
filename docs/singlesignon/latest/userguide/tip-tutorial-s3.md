@@ -207,7 +207,3 @@ If you have an Amazon S3 Access Grants instance with a registered location and y
 
    The following image shows the Create Grant page in the Amazon S3 Access Grants console:
 ![Create Grant page in Amazon S3 Access Grants console.](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/s3-tutorial-step-1.4.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

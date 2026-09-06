@@ -19,7 +19,3 @@ For details about the types of output groups that support each option, see the t
 | Date and time | If the **Start type** is **Fixed**, specify the UTC start time for the ID3 segment tag. The time should be at least 15 seconds in the future.<br />Note that the time is the wall clock time, not the timecode in the input. |
 | Tag | Complete this field if the content of the tag is free text. Enter the value for a TXXX field inside the ID3 tag. MediaLive creates an ID3 tag with a single TXXX field and inserts the tag in every segmenThe content can include MediaLive [variable data](variable-data-identifiers.md). In the following example, the content consists of the date and time, and the current segment number. The tag contents will be different in each segment.<br />**$dt$-$sn$** |
 | ID3 | Complete this field if the content of the tag is ID3 metadata. Enter the content encoded as base64. The metadata must be fully formed ID3 metadata (including both a header and a frame, as per the ID3 specification).  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

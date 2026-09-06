@@ -155,7 +155,3 @@ The following are the service endpoints and service quotas for this service.
 | Total number of regions for IAM Identity Center | Each supported Region: 6 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/sso/quotas/L-D519A297)  | The total number of regions that can be enabled for IAM Identity Center, including the primary region. |
 
 For more information, see [AWS IAM Identity Center quotas](https://docs.aws.amazon.com/singlesignon/latest/userguide/limits.html) in the *AWS IAM Identity Center User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

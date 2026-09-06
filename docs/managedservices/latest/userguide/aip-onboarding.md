@@ -16,7 +16,3 @@ As part of onboarding, AMS provisions IAM Access Analyzer in the same AWS Region
 Once onboarded, the `AWSManagedServicesIAMProvisionAdminRole` is deployed to the enabled accounts. If you choose to use this role through SAML federation, then you must onboard the role to your federation solution.
 
 As part of onboarding, you can request to update AWSManagedServicesIAMProvisionAdminRole’s trust policy to grant another IAM role ARN to assume this role using AWS Security Token Service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

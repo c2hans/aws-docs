@@ -27,7 +27,3 @@ Skills in:
 + Skill 2.2.3: Validate findings from AWS security services to assess the scope and impact of an event.
 + Skill 2.2.4: Respond to affected resources by containing and eradicating threats, and recover resources (for example, by implementing network containment controls, restoring backups).
 + Skill 2.2.5: Describe methods to conduct root cause analysis (for example, Amazon Detective).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ Use the following procedure to rename an application in App Studio. You can rena
      1. In the **Actions** column of the application you want to edit, choose **Edit**.
 
      1. In the Development environment, choose the application name and update it, then press Enter or navigate away from the text field to save your changes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

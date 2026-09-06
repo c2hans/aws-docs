@@ -148,7 +148,3 @@ print(response.output_text)
 + **Reasoning mode** — Reasoning effort is honored on both the Chat Completions and Responses APIs, and the model performs the extended reasoning in both cases. However, the reasoning content is returned only by the Responses API. The Chat Completions API does not return the reasoning tokens, because the OpenAI Chat Completions specification does not support returning them.
 + **Parallel tool calls** — Requesting more than one tool call in a single turn is not currently supported. Request tool calls one at a time.
 + **Request payload size** — The total request body payload for Gemma 4 26B-A4B, including images and video, supports a maximum size of 3.5 MB.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

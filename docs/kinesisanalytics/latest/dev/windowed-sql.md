@@ -23,7 +23,3 @@ You can specify a query to process records in a tumbling window, sliding window,
 + [Stagger Windows](stagger-window-concepts.md): A query that aggregates data using keyed time-based windows that open as data arrives. The keys allow for multiple overlapping windows. This is the recommended way to aggregate data using time-based windows, because Stagger Windows reduce late or out-of-order data compared to Tumbling windows.
 + [Tumbling Windows](tumbling-window-concepts.md): A query that aggregates data using distinct time-based windows that open and close at regular intervals.
 + [Sliding Windows](sliding-window-concepts.md): A query that aggregates data continuously, using a fixed time or rowcount interval.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

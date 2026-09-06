@@ -13,7 +13,3 @@ To connect to a database using the credentials in a secret, you can use the Secr
 + [Get a Secrets Manager secret value using Java with client-side caching](retrieving-secrets_cache-java.md)
 + [Connect to a SQL database using JDBC with credentials in an AWS Secrets Manager secret](retrieving-secrets_jdbc.md)
 + [Get a Secrets Manager secret value using the Java AWS SDK](retrieving-secrets-java-sdk.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

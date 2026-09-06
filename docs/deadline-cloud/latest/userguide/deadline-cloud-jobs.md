@@ -9,7 +9,7 @@ A *job* is a set of instructions that AWS Deadline Cloud uses to schedule and ru
 
 A *submitter* is a plugin for your digital content creation (DCC) application that manages creating a job in the interface of your DCC application. After you create the job, you use the submitter to send it to Deadline Cloud for processing.
 
-The submitter creates an [Open Job Specification (OpenJD)](https://github.com/OpenJobDescription/openjd-specifications) template that describes the job. At the same time it uploads your asset files to an Amazon Simple Storage Service (Amazon S3) bucket. To reduce upload time, the submitter only sends files that have changed since the last upload to Amazon S3.
+The submitter creates an Open Job Specification (OpenJD) template that describes the job. At the same time it uploads your asset files to an Amazon Simple Storage Service (Amazon S3) bucket. To reduce upload time, the submitter only sends files that have changed since the last upload to Amazon S3. For more information about OpenJD, see the [OpenJD specifications](https://github.com/OpenJobDescription/openjd-specifications) on the GitHub website.
 
 You can also create a job in the following ways.
 + From a terminal – for users submitting a job that are comfortable using the command line.
@@ -29,7 +29,3 @@ A job consists of:
 + [Load and submit shared job bundles](jobs-shared-bundles.md)
 + [Processing Deadline Cloud jobs](jobs-processing.md)
 + [Monitoring Deadline Cloud jobs](jobs-monitoring.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

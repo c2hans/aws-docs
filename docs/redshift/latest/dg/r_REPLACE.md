@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_REPLACE.html
 
 Replaces all occurrences of a set of characters within an existing string with other specified characters.
 
-REPLACE is similar to the [TRANSLATE function](r_TRANSLATE.md) and the [REGEXP\_REPLACE function](REGEXP_REPLACE.md), except that TRANSLATE makes multiple single-character substitutions and REGEXP\_REPLACE lets you search a string for a regular expression pattern, while REPLACE substitutes one entire string with another string.
+REPLACE is similar to the [TRANSLATE function](r_TRANSLATE.md) and the [REGEXP\_REPLACE function](REGEXP_REPLACE.md), except that TRANSLATE makes multiple single-character substitutions and with REGEXP\_REPLACE, you can search a string for a regular expression pattern, while REPLACE substitutes one entire string with another string.
 
 ## Syntax
 <a name="r_REPLACE-synopsis"></a>
@@ -64,7 +64,3 @@ ORDER BY 1,2,3;
 |    11 | Concerts | Concerts |
 +-------+----------+----------+
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

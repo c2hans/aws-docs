@@ -38,7 +38,3 @@ If your task definition remains in the `DELETE_IN_PROGRESS` state, you can use t
 The following rules apply after you remove the resources that block the task definition deletion:
 + Amazon ECS tasks - The task definition deletion can take up to 1 hour to complete after the task is stopped.
 + Amazon ECS service deployments and task sets - The task definition deletion can take up to 24 hours to complete after the deployment or task set is deleted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

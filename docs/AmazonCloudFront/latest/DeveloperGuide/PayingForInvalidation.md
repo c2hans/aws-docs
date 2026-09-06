@@ -16,7 +16,3 @@ For more information about invalidation pricing, see [Amazon CloudFront Pricing]
 Tag invalidation paths count toward the same 1,000 free invalidation paths per month allowance. For example, if you submit 500 path invalidations and 600 tag invalidations in a month (for a total of 1,100 invalidation paths), you are charged for 100 invalidation paths. A single tag invalidation item (for example, ` #product:electronics`) counts as one path regardless of how many cached objects it invalidates — the same as a wildcard path invalidation (for example, ` /*`) counts as one path.
 
 For more information about tag invalidation, see [Invalidating content by cache tags](invalidation-by-tags.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

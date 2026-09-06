@@ -89,7 +89,3 @@ If WSS is unavailable or fails (for example, no provisioner available or connect
 The following diagram shows the WiFi Simple Setup flow:
 
 ![Diagram showing the Hub SDK architecture and components for the WiFi Simple Setup onboarding flow, including barcode scanning, temporary network discovery, and automatic WiFi credential provisioning.](http://docs.aws.amazon.com/iot-mi/latest/devguide/images/wifi-simple-setup-flow.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,7 +51,3 @@ You can use the IAM API to examine IAM policies programmatically. The following 
    + (Optional) To determine whether the users or roles have access to specific KMS keys, use the `ResourceArns` parameter to specify a list of the Amazon Resource Names (ARNs) of the KMS keys. To determine whether the users or roles have access to any KMS key, omit the `ResourceArns` parameter.
 
 IAM responds to each `SimulatePrincipalPolicy` request with an evaluation decision: `allowed`, `explicitDeny`, or `implicitDeny`. For each response that contains an evaluation decision of `allowed`, the response includes the name of the specific AWS KMS API operation that is allowed. It also includes the ARN of the KMS key that was used in the evaluation, if any.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

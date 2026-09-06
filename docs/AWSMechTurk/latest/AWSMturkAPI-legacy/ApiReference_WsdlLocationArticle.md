@@ -148,7 +148,3 @@ https://mechanicalturk.amazonaws.com/?Service=AWSMechanicalTurkRequester
  When the Amazon Mechanical Turk Service receives a REST request without a `Version` parameter, the service will use the latest version. If your application does not specify the `Version` in each request, when a new version of the API is released, your application will start using the new version automatically. Because new versions of the API may be incompatible with applications expecting to use an older version, specifying an explicit `Version` parameter with each request is strongly recommended.
 
  A similar legacy feature exists for SOAP: A request for the WSDL or a schema file using a URL that does not include the version number will return the file for the latest version of the API. Using WSDL/schema URLs that include the API version number is strongly recommended.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

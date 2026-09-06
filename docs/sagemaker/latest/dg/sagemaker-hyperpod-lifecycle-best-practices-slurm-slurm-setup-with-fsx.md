@@ -63,7 +63,3 @@ To mount an Amazon FSx for Lustre shared file system to your HyperPod cluster, s
    "fsx_dns_name": "{{fs-12345678a90b01cde}}.fsx.{{us-west-2}}.amazonaws.com",
    "fsx_mountname": "{{1abcdefg}}"
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

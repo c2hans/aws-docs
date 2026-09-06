@@ -22,7 +22,3 @@ These are the predefined key-value pairs that Amazon EMR assigns:
 
 **Note**
  Amazon EMR adds tags to the EC2 instance when its status updates to **Running**. If latency occurs between the time that the EC2 instance is provisioned and the time that its status is set to **Running**, the tags that Amazon EMR sets will appear once the instance starts. If you don't see the tags, wait for a few minutes and refresh the view.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

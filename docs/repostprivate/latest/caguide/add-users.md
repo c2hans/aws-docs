@@ -24,7 +24,3 @@ If you're an administrator, you can add users to your private re:Post.
 The selected users are added to your private re:Post and listed under the **Users** tab.
 
 The users that you've added will receive an onboarding email from your private re:Post. Your private re:Post reviews the list of users and groups once every day to make sure that an onboarding email is sent to those that didn't already receive one. The onboarding email contains information on how to sign in to your private re:Post.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

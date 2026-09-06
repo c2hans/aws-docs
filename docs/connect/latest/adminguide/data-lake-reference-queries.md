@@ -1148,7 +1148,3 @@ ORDER BY interval_start_time ASC;
 + **Milliseconds** — Most duration fields are stored in milliseconds. Divide by 1000.0 for seconds.
 + **Instance ID filter** — Always filter by `instance_id` in multi-instance environments.
 + **Real-time metrics** — For true real-time metrics, use the `GetCurrentMetricData` API. The data lake provides historical data only.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

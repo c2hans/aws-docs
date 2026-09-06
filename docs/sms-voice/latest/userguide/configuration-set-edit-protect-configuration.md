@@ -30,7 +30,3 @@ To learn more about protect configurations see [Using protect configurations in 
 To change a configuration set's protect configuration association in the AWS CLI follow the direction in [Change a protection configuration association in AWS End User Messaging SMS](protect-configuration-edit-association.md) on the Edit a protect configuration association (AWS CLI) tab.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ Some of the remediations included in the solution are repackages of AWS-owned AW
 The solution is designed to be extensible and customizable. To specify an alternative remediation implementation, deploy customized AWS Systems Manager automation documents and AWS IAM Roles. To support an entire new set of controls that is not implemented by the solution, deploy a custom Playbook.
 
 To accelerate building these customizations, the solution provides the AI Toolkit for Custom Remediations. The toolkit delivers ASR best practices, guardrails, and development patterns as an instruction prompt that you provide to an AI assistant in your integrated development environment (IDE), giving the assistant the context it needs to help you author production-ready custom remediations more efficiently and safely.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

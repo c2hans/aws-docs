@@ -69,7 +69,3 @@ Information about pricing for Large Bandwidth VPN connections can be found on th
 <a name="lbt-scaling"></a>
 
 For bandwidth requirements exceeding 5 Gbps per tunnel, you can use ECMP across multiple VPN connections. For example, you can achieve 20 Gbps bandwidth by deploying two VPN connections with Large Bandwidth Tunnels and using ECMP across all four tunnels.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -634,7 +634,8 @@ main "$@"
   + [DeleteNamespace](https://docs.aws.amazon.com/goto/aws-cli/servicediscovery-2017-03-14/DeleteNamespace)
   + [DeleteRole](https://docs.aws.amazon.com/goto/aws-cli/iam-2010-05-08/DeleteRole)
   + [DeleteSecurityGroup](https://docs.aws.amazon.com/goto/aws-cli/ec2-2016-11-15/DeleteSecurityGroup)
-  + [DeleteService](https://docs.aws.amazon.com/goto/aws-cli/servicediscovery-2017-03-14/DeleteService)
+  + [DeleteService (AWS Cloud Map)](https://docs.aws.amazon.com/goto/aws-cli/servicediscovery-2017-03-14/DeleteService)
+  + [DeleteService (Amazon ECS)](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/DeleteService)
   + [DeregisterTaskDefinition](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/DeregisterTaskDefinition)
   + [DescribeClusters](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/DescribeClusters)
   + [DescribeServices](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/DescribeServices)
@@ -650,12 +651,9 @@ main "$@"
   + [ListTasks](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/ListTasks)
   + [RegisterTaskDefinition](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/RegisterTaskDefinition)
   + [UpdateService](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/UpdateService)
-  + [Wait](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/Wait)
+  + [Wait (Amazon EC2)](https://docs.aws.amazon.com/goto/aws-cli/ec2-2016-11-15/Wait)
+  + [Wait (Amazon ECS)](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/Wait)
 
 ------
 
 For a complete list of AWS SDK developer guides and code examples, see [Using this service with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

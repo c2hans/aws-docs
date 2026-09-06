@@ -42,7 +42,3 @@ If the **Color scheme** is set to **From thresholds (by value)** and **Gradient 
 **Gradient color schemes**
 
 Using a gradient color scheme *without* setting the **Gradient mode** to **Scheme**, means that the colors chosen will form a gradient between the colors chosen, as the values in the series move between the thresholds set.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

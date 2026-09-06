@@ -18,7 +18,3 @@ The collation for a database in RDS for Db2 is set at the time of creation and i
 1. Create a Db2 database and set the collation option to an EBCDIC value by calling the `rdsadmin.create_database` stored procedure. For more information, see [rdsadmin.create\_database](db2-sp-managing-databases.md#db2-sp-create-database).
 **Important**
 After you create a database using the stored procedure, you can't change the collation sequence. If you want a database to use a different collation sequence, drop the database by calling the [rdsadmin.drop\_database](db2-sp-managing-databases.md#db2-sp-drop-database) stored procedure. Then, create a database with the required collation sequence.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

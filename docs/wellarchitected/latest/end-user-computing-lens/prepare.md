@@ -52,7 +52,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 + [EUCOPS09-BP01 Maintain an up to date matrix of all EUC service owners and quick access links to the support plans for each service](eucops09-bp01.md)
 + [EUCOPS09-BP02 Allocate training time so your teams can build and maintain their skills to deploy and manage your AWS EUC environment](eucops09-bp02.md)
 + [EUCOPS10-BP01 Encourage user participation during service development and rollout to maximize engagement and project success](eucops10-bp01.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

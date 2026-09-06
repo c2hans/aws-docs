@@ -515,7 +515,3 @@ aws amscm create-rfc \
 There is a related CT for Amazon EC2, [EC2 stack: Updating termination protection](https://docs.aws.amazon.com/managedservices/latest/ctref/ex-ec2-term-pro-update-col.html).
 
 To learn more about termination protection, see [ Protecting a stack from being deleted](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-protect-stacks.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

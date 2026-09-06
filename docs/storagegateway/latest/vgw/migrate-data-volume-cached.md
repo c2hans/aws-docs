@@ -104,7 +104,3 @@ Do not add disks for cache or upload buffer to the new VM. Your new VM will use 
 1. Your volumes should now be available to your applications through the new gateway VM's network interfaces. The migration success message includes details about the updated mapping between each volume and the new gateway's network interface. For more information about the IP address associated with each network interface, visit the main page of the gateway's local console. See [Accessing the Gateway Local Console](https://docs.aws.amazon.com/storagegateway/latest/vgw/accessing-local-console.html).
 
 1. Confirm that your volumes are available, and delete the old gateway VM. For information about deleting a VM, see the documentation for your hypervisor.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

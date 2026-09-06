@@ -29,7 +29,3 @@ The user names that you assign are case sensitive. The user *Myuser* is not the 
 1. Give each user this information:
    + Give the user their user name (case sensitive) and password.
    + Advise the user to display their user information. They must log into the worker web interface. Then on the menu bar, they can hover over **Settings** and choose **User Profile**,
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

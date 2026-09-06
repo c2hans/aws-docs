@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/flu
 
 This example demonstrates how to fine-tune a FLUX.2 Klein image generation model using LoRA (Low-Rank Adaptation) and generate images at scale on Deadline Cloud. The workflow trains a lightweight adapter from a small image dataset. It then uses that adapter to generate new images from text prompts, all orchestrated as Deadline Cloud jobs on a GPU fleet.
 
-The source code for this example is available in the [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/flux2_klein_lora) repository on GitHub.
+The source code for this example is available in the [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/flux2_klein_lora) repository on the GitHub website.
 
 The following video demonstrates the FLUX.2 Klein LoRA workflow on Deadline Cloud.
 
@@ -20,13 +20,13 @@ The following video demonstrates the FLUX.2 Klein LoRA workflow on Deadline Clou
 
 The example consists of two job bundles:
 
-1. **lora\_training** – Fine-tunes [FLUX.2 Klein](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) on your image dataset using [LoRA](https://huggingface.co/docs/peft/conceptual_guides/adapter#low-rank-adaptation-lora), producing a `.safetensors` adapter file.
+1. **lora\_training** – Fine-tunes the [FLUX.2 Klein model](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) on the Hugging Face website on your image dataset, producing a `.safetensors` adapter file. For more information, see [LoRA](https://huggingface.co/docs/peft/conceptual_guides/adapter#low-rank-adaptation-lora) on the Hugging Face website.
 
 1. **image\_generation** – Loads the base model with your trained adapter and generates images from text prompts. When generating multiple images, work is parallelized across workers.
 
 LoRA is a parameter-efficient fine-tuning technique that trains a small adapter instead of modifying the full model weights. This approach makes training fast (15–45 minutes on a single GPU) and the resulting adapter portable and easy to version.
 
-The job bundles use the [diffusers](https://github.com/huggingface/diffusers) and [peft](https://github.com/huggingface/peft) libraries for training and inference.
+For training and inference, the job bundles use the [diffusers](https://github.com/huggingface/diffusers) and [peft](https://github.com/huggingface/peft) libraries on the GitHub website.
 
 To complete this example, follow these steps:
 
@@ -46,7 +46,7 @@ To complete this example, follow these steps:
 Before you begin, make sure that you have the following:
 + A Deadline Cloud farm with a GPU fleet (Linux, NVIDIA A10G GPU, 13 GB\+ VRAM, 64 GiB\+ system memory recommended).
 + A queue associated with the GPU fleet.
-+ The [Deadline Cloud CLI](https://github.com/aws-deadline/deadline-cloud) installed on your workstation.
++ The Deadline Cloud CLI installed on your workstation. For installation instructions, see the [deadline-cloud](https://github.com/aws-deadline/deadline-cloud) repository on the GitHub website.
 + 20–50 training images of your subject (`.jpg`, `.png`, `.jpeg`, or `.webp`).
 
 ## Job bundle structure
@@ -236,12 +236,8 @@ To avoid ongoing charges, clean up the resources that you created for this examp
 <a name="examples-flux2-related"></a>
 
 The following resources provide additional information:
-+ [Example source code on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/flux2_klein_lora)
-+ [FLUX.2 Klein on Hugging Face](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B)
-+ [Open Job Description specification](https://github.com/OpenJobDescription/openjd-specifications)
-+ [Diffusers documentation](https://huggingface.co/docs/diffusers)
++ [Example source code](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/flux2_klein_lora) on the GitHub website
++ [FLUX.2 Klein](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) on the Hugging Face website
++ [Open Job Description specification](https://github.com/OpenJobDescription/openjd-specifications) on the GitHub website
++ [Diffusers documentation](https://huggingface.co/docs/diffusers) on the Hugging Face website
 + [Deadline Cloud Architecture Guidance](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/architecture-guidance.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

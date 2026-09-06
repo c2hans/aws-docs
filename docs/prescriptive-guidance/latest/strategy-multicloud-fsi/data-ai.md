@@ -61,7 +61,3 @@ We recommend that you prioritize both DataOps and MLOps for all flows between CS
 Managing costs effectively in a multicloud environment involves choosing the right mix of cloud services and pricing models. Using tools for monitoring and managing resource usage helps you allocate resources cost-effectively when you run cost-intensive AI computations and data storage across multiple clouds.
 
 Adopt a strategy for [zero-ETL](https://aws.amazon.com/what-is/zero-etl/), which is a set of integrations that eliminates the need to build extract, transform, and load (ETL) data pipelines, wherever possible. Traditionally, ETL is a major driver of data pipeline cost, because it often loads data that might not be required for all ML workloads. Zero-ETL features support a more cost-efficient multicloud strategy, and enable organizations to optimize their investments while using powerful AI and data analytics capabilities.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

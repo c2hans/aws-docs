@@ -18,7 +18,3 @@ For any of these, you can choose from [Amazon Machine Images](https://docs.aws.a
 You can also benefit from various features such as automatic scaling, self-healing, and deep integration with other services, such as [AWS Identity and Access Management](https://aws.amazon.com/iam/) (AWS IAM), [AWS Key Management Service](https://aws.amazon.com/kms/) (AWS KMS), or [Amazon Elastic Block Storage](https://aws.amazon.com/ebs/) (Amazon EBS).
 
 There are a variety of ways you can deploy your .NET applications on Amazon EC2 instances, from manual deployments to using Infrastructure as Code with [AWS CloudFormation](https://aws.amazon.com/cloudformation/) templates and Continuous Integration / Continuous Deployment pipelines.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

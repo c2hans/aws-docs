@@ -36,7 +36,3 @@ Follow this procedure in each output.
 | **Advanced**, then **Insert Color Metadata** | Leave this field checked. <br />You should never remove the color metadata if you are converting the color space. |
 | **Video Range** | Choose the correct option. For details, choose the icon above the field. |
 | **Preprocessors**, then **Color Space Conversion** | Choose the correct conversion:<br />**Force 601**<br />**Force 709**<br />**Force SDR2020**<br />**Force HLG 2020** |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

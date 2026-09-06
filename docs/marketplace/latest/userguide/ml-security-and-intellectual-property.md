@@ -35,7 +35,3 @@ Amazon SageMaker AI protects both your intellectual property and buyer data for 
  This security model prevents your code from accessing the internet during runtime. Therefore, your code can't use resources or libraries from the internet, so package your dependencies in the Docker container image. This is especially important if you choose to encrypt your outputted artifacts from the training job. The keys to encrypt and decrypt artifacts can't be accessed over the internet at runtime. They must be packaged with your image.
 
  For more information, see [Security in Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/security.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

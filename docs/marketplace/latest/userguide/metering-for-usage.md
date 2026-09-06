@@ -139,7 +139,3 @@ The following screenshot shows an example of the AWS Cost Explorer Service view 
 After activation, vendor-metered tags take up to 24 hours to appear in the Billing and Cost Management console and AWS Cost Explorer Service. If you choose to backfill tags, the backfill process also takes approximately 24 hours to complete.
 
 For a code example, see [`BatchMeterUsage` with usage allocation tagging code example (Optional)](saas-code-examples.md#saas-batchmeterusage-tagging).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

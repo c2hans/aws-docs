@@ -16,7 +16,3 @@ When you can choose a universal configuration for settings at the user-pool leve
 
 **Level of effort**
 App-client multi-tenancy requires moderate effort. A major challenge of app-client multi-tenancy is the ability for tenants to present a hosted UI cookie and switch between apps. In an app-client multi-tenancy architecture, avoid hosted UI sign-in where isolation is necessary. You can distribute your mobile app or links to your web app with app client logic built in, or you can build initial UI elements that determine users' tenancy. The level of effort is lower because you don't need to standardize and maintain configuration across multiple user pools and identity pools.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

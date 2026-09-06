@@ -61,7 +61,3 @@ You can set the output of the @@VERSION using the parameters babelfishpg\_tsql.v
   +  Output of @@version – 15.0.2000.8.
 + When babelfishpg\_tsql.version parameter is set to 13.0.2000.8 and babelfishpg\_tds.product\_version parameter is 15.0.2000.8.
   + Output of @@version – 13.0.2000.8.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

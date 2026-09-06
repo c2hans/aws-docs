@@ -25,7 +25,3 @@ The following table describes the releases for AWS PrivateLink.
 | [Interface VPC endpoints for AWS services](#doc-history) | You can create an interface endpoint to connect to AWS services that integrate with AWS PrivateLink without using an internet gateway or NAT device. | November 8, 2017 |
 | [VPC endpoints for DynamoDB](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-ddb.html) | You can create a gateway VPC endpoint to access Amazon DynamoDB from your VPC without using an internet gateway or NAT device. | August 16, 2017 |
 | [VPC endpoints for Amazon S3](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html) | You can create a gateway VPC endpoint to access Amazon S3 from your VPC without using an internet gateway or NAT device. | May 11, 2015 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

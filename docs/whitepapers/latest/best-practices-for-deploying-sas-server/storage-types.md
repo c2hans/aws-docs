@@ -36,7 +36,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
  Most temporary SAS storages used in SAS WORK, SAS UTILLOC, and CAS\_DISK\_CACHE will not persist through reboots and are considered ephemeral storage.
 +  I3 instances feature low latency NVMe SSDs striped together with RAID0. Use NVMe devices to support high bandwidth, low latency, and sequential I/O .
 +  If additional storage is required, default to permanent SAS storage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

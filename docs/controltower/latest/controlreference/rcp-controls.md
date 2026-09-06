@@ -27,7 +27,3 @@ RCP-based controls are configurable. For more information, see [Controls with pa
 With RCP controls, you can establish a [*data perimeter*](https://aws.amazon.com/identity/data-perimeters-on-aws/) for your landing zone.
 + For example, you can limit access to resources so that only the principals in your organization can manage them, such as with control **[CT.S3.PV.4] Require that the organization's Amazon S3 resources are accessible only by IAM principals that belong to the organization or by an AWS service**.
 + Similarly, you can restrict access to resources so that certain requirements must be met, such as with **[CT.S3.PV.3] Require requests to Amazon S3 resources to use a minimum TLS version of 1.3**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

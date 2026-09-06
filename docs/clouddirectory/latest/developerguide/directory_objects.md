@@ -18,7 +18,3 @@ An object can be a regular object, a policy object, or an index object. An objec
 + [Range Filters](directory_objects_range_filters.md)
 + [Access Objects](directory_objects_access_objects.md)
 + [Consistency Levels](directory_objects_consistency_levels.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 **Topics**
 + [SCSUS05-BP01 Adopt modern data management and governance practices for your supply chain sustainability, and focus on economic, environmental, and social needs](scsus05-bp01.md)
 + [SCSUS06-BP01 Enhance your data strategy and exchange capabilities with your trading partners](scsus06-bp01.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

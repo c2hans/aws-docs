@@ -35,7 +35,7 @@ You provide chat agent persona instructions in the **Persona instructions** fiel
 **Use persona instructions to:**
 + Provide high level guidance on behavior and goals, which are enhanced by Amazon Quick AI to customize agent responses
 + Instruct how to leverage reference documents for detailed interactions
-+ Provide general guidance on use of spaces and action connectors in its responses
++ Provide general guidance on use of spaces and connectors in its responses
 
 This approach works best for general-purpose chat agents and exploratory use cases where you want to benefit from AI assistance in chat agent design.
 
@@ -82,7 +82,3 @@ Use spaces with chat agents for:
 + Enabling chat agents to query live dashboards and datasets
 
 Spaces function as the chat agent's dynamic knowledge layer, enabling real-time access to organizational information while maintaining security boundaries and collaborative workflows.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

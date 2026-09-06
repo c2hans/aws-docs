@@ -35,7 +35,3 @@ Geofencing allows applications to define geographical boundaries and monitor ent
 
 Trackers
 Tracking enables real-time monitoring of device or asset locations over time. Features include adding tracked devices, updating their location data, and retrieving historical position data. Trackers are useful for managing fleets, monitoring personnel, and ensuring the security of valuable assets by providing up-to-date location data and movement patterns. For more information, See [Amazon Location Service trackers](trackers.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

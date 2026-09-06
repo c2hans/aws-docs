@@ -33,7 +33,3 @@ The following figure is an overview of how AWS Mainframe Modernization File Tran
 The following figure is an architectural overview of AWS Mainframe Modernization File Transfer feature.
 
 ![The architectural overview of the File Transfer feature representing data transfer between mainframe and AWS Cloud Region.](http://docs.aws.amazon.com/m2/latest/userguide/images/filetransfer-architecture.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

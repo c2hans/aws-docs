@@ -70,7 +70,3 @@ You can also find your user profile by going to the members page for a project o
 1. Sign in to GitHub and navigate to your account settings for installed apps. Choose your profile icon, choose **Settings**, and then choose **Applications**.
 
 1. On the **Authorized GitHub Apps** tab, in the list of authorized applications, view the app installed for CodeCatalyst. To revoke the installation, choose **Revoke**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

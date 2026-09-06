@@ -60,7 +60,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/incident
  **Prescriptive guidance IOTSEC11-BP02-01** *Make sure that your IoT device manufacturer provides security-related notifications to you, and provides software updates in a timely manner to reduce the associated risks of operating hardware or software with known security vulnerabilities.*
 
  Ask your suppliers about their product conformance to the [Common Criteria for Information Technology Security Evaluation](https://www.commoncriteriaportal.org/index.cfm). In addition, use AWS Partner Device Catalog where you can find devices and hardware to help you explore, build, and go to market with your IoT solutions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

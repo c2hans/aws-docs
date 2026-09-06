@@ -14,7 +14,3 @@ If you have an IAM or S3 Tables resource-based policy that restricts IAM users a
 + AWS Glue and Lake Formation don't support mixed-case column names, and convert all column names to lowercase. You must verify that table column names are unique when converted to lowercase. Use `customer_id` instead of `customerId`. The use of mixed-case column names was supported only during the preview release.
 + The CreateCatalog API cannot create table buckets in Amazon S3.
 + The SearchTables API cannot search S3 Tables.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

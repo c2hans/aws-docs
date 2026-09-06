@@ -41,7 +41,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-configuring-
  Once the updated ruleset and analyzers are configured, AWS Glue Data Quality continuously monitors incoming data streams. It can signal potential anomalies through alerts or job stops, depending on your settings. This proactive monitoring helps ensure data quality and integrity throughout your data pipelines.
 
  In the next section, you will learn how to effectively monitor anomalies identified by the system. You'll also learn how to view and analyze the data statistics gathered by AWS Glue Data Quality. Additionally, you'll understand how to provide feedback to the machine learning model that powers the Anomaly Detection feature. This feedback loop is crucial for improving the model's accuracy and ensuring it can effectively detect anomalies that align with your specific business requirements and data patterns.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

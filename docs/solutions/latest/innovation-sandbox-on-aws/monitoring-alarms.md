@@ -18,7 +18,3 @@ Innovation Sandbox deploys Amazon CloudWatch Alarms to alert you to operational 
 |  **WAF blocked requests**  | AWS WAF blocks one or more requests to the Innovation Sandbox API. | Review the AWS WAF logs to determine whether the blocked requests are legitimate. A spike may indicate misconfigured WAF rules blocking valid users, or it may indicate an attack being correctly mitigated. |
 
 You can configure additional alarms based on metrics reported by the different services within the solution. For example, you might alarm on Lambda error rates, DynamoDB throttling, or SQS dead-letter queue depth.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

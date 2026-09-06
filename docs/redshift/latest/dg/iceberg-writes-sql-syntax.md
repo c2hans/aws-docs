@@ -73,9 +73,9 @@ LOCATION 's3://{{your-bucket-name}}/prefix/'
 
 When using the external schema syntax, note that `{{<external_schema>}}` must be an existing external schema name in which the external table will be created. For more information about how to create and manage external schemas, see [CREATE EXTERNAL SCHEMA](https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_EXTERNAL_SCHEMA.html) in the Amazon Redshift documentation.
 
-The `LOCATION` clause defines the table location for this newly created Iceberg table. `LOCATION` is required for tables created using external schemas or the `awsdatacatalog` root catalog. It should be an empty location, meaning there are no existing Amazon S3 objects sharing this same bucket and prefix. The Amazon S3 bucket region must be in the same region as the Amazon Redshift cluster. For Amazon S3 table buckets, `LOCATION` cannot be specified as the table location is determined by the Amazon S3 tables catalog (`s3tablescatalog`).
+The `LOCATION` clause defines the table location for this newly created Iceberg table. `LOCATION` is required for tables created using external schemas or the `awsdatacatalog` root catalog. It should be an empty location, meaning there are no existing Amazon S3 objects sharing this same bucket and prefix. The Amazon S3 bucket Region must be in the same Region as the Amazon Redshift cluster. For Amazon S3 table buckets, `LOCATION` cannot be specified as the table location is determined by the Amazon S3 tables catalog (`s3tablescatalog`).
 
-However, AWS provides a method to replicate data from Iceberg tables stored in an AWS Glue Data Catalog in one AWS Region to a different AWS Region, which allows you to replicate the write to a different region. For more information, see [Replicate data across AWS Regions](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/best-practices-workloads.html#workloads-replication).
+However, AWS provides a method to replicate data from Iceberg tables stored in an AWS Glue Data Catalog in one AWS Region to a different AWS Region, which allows you to replicate the write to a different Region. For more information, see [Replicate data across AWS Regions](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/best-practices-workloads.html#workloads-replication).
 
 `PARTITIONED BY` defines the Iceberg table partition. Amazon Redshift supports all Iceberg v2 partition transforms except for `void`. Here is the list of transforms that are supported:
 + **identity**
@@ -189,7 +189,7 @@ SELECT query
 
 This is similar to the `CREATE TABLE` statement except that `CREATE` is followed by a `SELECT` statement to populate the table with `SELECT` query results.
 
-The `CREATE TABLE` clause here no longer allows you to specify the data types as the column data types will be decided by the `SELECT` query.
+You can no longer specify the data types with the `CREATE TABLE` clause here, because the `SELECT` query determines the column data types.
 
 If the `SELECT` query fails for any reason, this query will fail and the Iceberg table will not be created.
 
@@ -330,7 +330,7 @@ The `{{table_name}}` in the `USING` clause will be used to join with the target 
 
 Since Iceberg uses hidden partition scheme, user can use `DELETE` query to remove partitions, achieving the same effect as `ALTER TABLE ... DROP PARTITION ...` for Hive tables.
 
-For example, when we have partitioned Iceberg table like below:
+For example, consider a partitioned Iceberg table like the following:
 
 ```
 CREATE TABLE my_external_schema.lineitem
@@ -343,7 +343,7 @@ LOCATION ...
 PARTITIONED BY l_ship_date;
 ```
 
-Then we can easily remove a partition using query like this:
+Then you can remove a partition by using a query like the following:
 
 ```
 DELETE FROM my_external_schema.lineitem WHERE l_ship_date = '20251231';
@@ -396,7 +396,7 @@ You can update a table by referencing information in other tables. List these ot
 
 `UPDATE` can also run on partitioned table. When `UPDATE` changes column values that belongs to current partition spec, the new updated row would be inserted into the new partition based on the newly updated value.
 
-For example, when we have a partitioned Iceberg table like below:
+For example, consider a partitioned Iceberg table like the following:
 
 ```
 CREATE TABLE my_external_schema.lineitem
@@ -411,14 +411,14 @@ PARTITIONED BY l_ship_date;
 INSERT INTO my_external_schema.lineitem VALUES (10099, '20251231', ...);
 ```
 
-And when we run below update query:
+And when you run the following update query:
 
 ```
 UPDATE my_external_schema.lineitem SET l_ship_date = '20260101'
 WHERE l_item_id = 10099;
 ```
 
-we will move this row with `l_item_id` 10099 from partition `20251231` to new partition `20260101`.
+the row with `l_item_id` 10099 moves from partition `20251231` to the new partition `20260101`.
 
 It's also important to note that it's possible `UPDATE` has multiple candidate values. Consider below query:
 
@@ -492,7 +492,3 @@ DROP TABLE "{{<catalog_name>}}".{{<database_name>}}.{{<table_name>}}
 ```
 
 Dropping an Iceberg table is a metadata only operation. It removes the table entry from AWS Glue Data Catalog and Amazon S3 table catalog, if this is an Amazon S3 table. Amazon Redshift doesn't clean up or delete any existing data file or metadata files under the table location. You can use features in AWS Glue and Amazon S3 tables to remove orphaned files. For AWS Glue, see [Deleting orphan files](https://docs.aws.amazon.com/glue/latest/dg/orphan-file-deletion.html). For Amazon S3 tables, see [Table maintenance](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-maintenance.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

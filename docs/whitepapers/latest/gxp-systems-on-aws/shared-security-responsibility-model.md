@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/sh
  For further information about AWS physical and operational security processes for the network and server infrastructure under the management of AWS see: [AWS Cloud Security site](https://aws.amazon.com/security/).
 
  For customers who are designing the security infrastructure and configuration for applications running in Amazon Web Services (AWS), see the [Best Practices for Security, Identity, & Compliance](https://aws.amazon.com/architecture/security-identity-compliance/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

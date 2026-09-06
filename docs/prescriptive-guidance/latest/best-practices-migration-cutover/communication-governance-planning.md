@@ -31,7 +31,3 @@ The following table shows an example of high-level communication protocols for v
 | Data center monitoring teams/L1 ops | Briefing sessions and email | Program manager or cutover manager | Engagement start (four weeks out) with updates for each completed stage |
 | Customer's senior stakeholders | Briefing sessions and email | Program manager or cutover manager | Engagement start (four weeks out) with updates for each completed stage |
 | End customers | Email | Program manager or application owner | Start and end of cutover |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

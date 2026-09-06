@@ -14,7 +14,3 @@ You configure the Elemental Live event with all the information about the motion
 + [Step B: Prepare the HTML5 asset](step-prepare-the-html5-asset.md)
 + [Step C: Set up the event](html5-step-set-up-the-event.md)
 + [Step D: Showing and hiding the motion overlay](html5-step-manage-the-overlay-on-a-running-event.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

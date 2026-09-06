@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_json_serialization_
 <a name="description"></a>
 
 A session configuration that modifies the JSON serialization behavior of ORC, JSON, Ion, and Parquet formatted data. When both `json_serialization_parse_nested_strings` and `json_serialization_enable` are true, string values that are stored in complex types (such as, maps, structures, or arrays) are parsed and written inline directly into the result if they are valid JSON. If `json_serialization_parse_nested_strings` is false, strings within nested complex types are serialized as escaped JSON strings. For more information, see [Serializing complex types containing JSON strings](serializing-complex-JSON.md#serializing-complex-JSON-strings).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

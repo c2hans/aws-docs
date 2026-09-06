@@ -64,7 +64,3 @@ Convert your Savings Plans, Reserved Instance choices, and on-demand budget into
 + AWS Support Costs (Business or higher)
 + Consider enterprise discount programs or volume discounts that you might be eligible for (speak to your AWS account manager for further details)
 + Currency: Be aware that AWS prices are in US dollars (USD). You can choose a billing currency and your bills will be computed in USD and converted to your preferred currency at a competitive exchange rate
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,7 +50,3 @@ Connect Customer Voice ID includes APIs to manage speakers enrolled into a Voice
    To remove the fraudster completely, use `DeleteFraudster`.
 
 1.  [ListFraudsters](https://docs.aws.amazon.com/voiceid/latest/APIReference/API_ListFraudsters.html): List all the fraudsters in a domain or a specific watchlist. This API also returns the watchlists the fraudster is a part of. It returns a paginated output with the page size dictated in the API request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

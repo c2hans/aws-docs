@@ -50,7 +50,3 @@ aws sagemaker list-clusters
 ```
 
 You can also add additional flags to filter the list of clusters down. To learn more about what this command runs at low level and additional flags for filtering, see the [ListClusters](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListClusters.html) API reference.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

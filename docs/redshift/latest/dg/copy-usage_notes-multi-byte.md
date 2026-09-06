@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/copy-usage_notes-mult
 <a name="copy-usage_notes-multi-byte"></a>
 
 If your data includes non-ASCII multibyte characters (such as Chinese or Cyrillic characters), you must load the data to VARCHAR columns. The VARCHAR data type supports four-byte UTF-8 characters, but the CHAR data type only accepts single-byte ASCII characters. You can't load five-byte or longer characters into Amazon Redshift tables. For more information, see [Multibyte characters](c_Supported_data_types.md#c_Supported_data_types-multi-byte-characters).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

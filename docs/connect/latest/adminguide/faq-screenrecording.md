@@ -218,7 +218,3 @@ During a video call or screen sharing session, agents are able to see the custom
 + **How much CPU and memory does the browser extension add?**
 
   The browser extension is lightweight — it only reports page URLs and window titles to the Connect Customer Client Application — and adds roughly 1% additional CPU and memory usage on top of the existing screen recording baseline. The most resource-intensive component remains the screen capture process in the Connect Customer Client Application. Follow the minimum system requirements in [System requirements](sr-system-req.md#sr-requirements).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

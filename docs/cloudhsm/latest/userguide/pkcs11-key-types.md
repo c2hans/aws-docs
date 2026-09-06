@@ -12,7 +12,7 @@ The PKCS \#11 library for AWS CloudHSM Client SDK 5 supports the following key t
 | AES | Generate 128, 192, and 256-bit AES keys.  |
 | Triple DES (3DES, DESede) | Generate 192-bit Triple DES keys. See note [1](#key-types-1) below for an upcoming change. |
 | EC | Generate keys with the secp224r1 (P-224), secp256r1 (P-256), secp256k1 (Blockchain), secp384r1 (P-384), secp521r1 (P-521), and ed25519[2](#key-types-2) curves. |
-| ML-DSA | Generate ML-DSA key pairs with parameter sets ML-DSA-44, ML-DSA-65, and ML-DSA-87. |
+| ML-DSA | Generate ML-DSA[3](#key-types-3) key pairs with parameter sets ML-DSA-44, ML-DSA-65, and ML-DSA-87. |
 | GENERIC\_SECRET | Generate 1 to 800 bytes generic secrets. |
 | RSA | Generate 2048-bit to 4096-bit RSA keys, in increments of 256 bits. |
 
@@ -20,6 +20,4 @@ The PKCS \#11 library for AWS CloudHSM Client SDK 5 supports the following key t
 
 [2] Only supported on hsm2m.medium instances in non-FIPS mode.
 
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+[3] Starting September 1, 2026, ML-DSA is available in FIPS mode for hsm2m.medium clusters.

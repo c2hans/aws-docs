@@ -18,7 +18,3 @@ There are two types of SageMaker AI products listed in AWS Marketplace:
 These products are available to buyers through the Amazon SageMaker AI console or AWS Marketplace. Buyers can review product descriptions, documentation, customer reviews, pricing, and support information. When they subscribe to either a model package product or algorithm product, it’s added to their product list on the SageMaker AI console. Buyers can also use AWS SDKs, the AWS Command Line Interface (AWS CLI), or the SageMaker AI console to create a fully managed REST inference endpoint or perform inference on batches of data.
 
  For support with creating machine learning products with Amazon SageMaker AI, contact the [AWS Marketplace Seller Operations](https://aws.amazon.com/marketplace/management/contact-us/) team.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

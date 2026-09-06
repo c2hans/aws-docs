@@ -16,7 +16,7 @@ To learn how to create rules for these events, see [Creating rules for daemon ev
 ## Daemon service action events
 <a name="managed-daemons-service-action-events"></a>
 
-Amazon ECS sends daemon service action events with the detail type `ECS Daemon Service Action`. These events notify you when Amazon ECS encounters issues starting daemon tasks on your container instances.
+Amazon ECS sends daemon service action events with the detail type `ECS Daemon Service Action`. These events notify you when Amazon ECS encounters issues starting daemon tasks on your container instances. Amazon ECS emits an EventBridge event when a daemon task fails to start, for both critical and non-critical daemons.
 
 ### DAEMON\_TASK\_START\_IMPAIRED
 <a name="managed-daemons-event-start-impaired"></a>
@@ -195,7 +195,3 @@ The following example event patterns show how to filter daemon events.
     "detail-type": ["ECS Daemon Deployment State Change"]
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,7 @@ Recipes for Autodesk Maya 2025, 2026, and 2027.
 Maya to Arnold (MtoA) renderer plugin. The MtoA package also provides the `kick` standalone renderer, which the [Render Arnold .ass files on Deadline Cloud](examples-jb-arnold-render.md) bundle uses.
 
 [maya-vray-2025](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-vray-2025), [maya-vray-2026](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-vray-2026), [maya-vray-7.2-2025](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-vray-7.2-2025), [maya-vray-7.2-2026](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-vray-7.2-2026)
-V-Ray for Maya renderer plugin. The `maya-vray-7.2` recipes package V-Ray 7.20.02 (Update 2 DR2) and require the V-Ray for Maya archive from [Chaos](https://www.chaos.com/vray/maya) (account required).
+V-Ray for Maya renderer plugin. The `maya-vray-7.2` recipes package V-Ray 7.20.02 (Update 2 DR2) and require the V-Ray for Maya archive from [V-Ray for Maya](https://www.chaos.com/vray/maya) on the Chaos website (account required).
 
 [maya-redshift-2025](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-redshift-2025), [maya-redshift-2026](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-redshift-2026)
 Redshift for Maya renderer plugin.
@@ -27,7 +27,7 @@ Builds the Maya Open Job Description adaptor with rattler-build for Python 3.13.
 
 To build the recipe, you need to provide the Maya source archive. Download the Maya source archive from Autodesk and place it in the `conda_recipes/archive_files` directory of your samples repository clone. The exact filename varies by version — for example, Maya 2025 uses `Autodesk_Maya_2025_Linux_64bit.tgz` while Maya 2026 uses `Autodesk_Maya_2026_ML_Linux_64bit.tgz`. Refer to each recipe's README for the expected filename.
 
-The Maya Windows installer requires Administrator permissions that aren't available in most conda package build environments. The [maya-2025](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-2025) recipe README includes step-by-step instructions for installing Maya on a fresh EC2 Windows Server instance and creating a redistributable archive that you can upload to your private Amazon S3 bucket and reuse for other Maya recipes.
+The Maya Windows installer requires Administrator permissions that aren't available in most conda package build environments. For step-by-step instructions on installing Maya on a fresh EC2 Windows Server instance and creating a redistributable archive that you can upload to your private Amazon S3 bucket and reuse for other Maya recipes, see the [maya-2025 recipe README](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-2025) on the GitHub website.
 
 Submit the build:
 
@@ -35,8 +35,4 @@ Submit the build:
 ./submit-package-job maya-2026
 ```
 
-For details on the Maya packaging approach, see the [maya-2026 recipe README](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-2026).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+For details on the Maya packaging approach, see the [maya-2026 recipe README](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-2026) on the GitHub website.

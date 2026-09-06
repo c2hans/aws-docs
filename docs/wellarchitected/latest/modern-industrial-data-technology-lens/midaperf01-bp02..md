@@ -68,7 +68,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 +  [Cost-effectively ingest IoT data directly into Amazon S3 using AWS IoT Greengrass](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass.html)
 +  [Ingest and analyze equipment data in the cloud](https://aws.amazon.com/blogs/industries/ingest-and-analyze-equipment-data-in-the-cloud/)
 +  [Getting Started with AWS IoT Greengrass Solution Accelerators for Edge Computing](https://pages.awscloud.com/rs/112-TZM-766/images/2020_0320-IOT_Slide-Deck.pdf)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

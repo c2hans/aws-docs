@@ -18,7 +18,3 @@ View details about updates to AWS managed policies for CodeDeploy since this ser
 | `AmazonEC2RoleforAWSCodeDeployLimited` managed policy – Updates to existing policy | Removed the `s3:ListBucket` action from the policy statement that includes the `s3:ExistingObjectTag/UseWithCodeDeploy` condition.<br />For more information on this policy, see [AmazonEC2RoleforAWSCodeDeployLimited](managed-policies.md#EC2-policy). | November 22, 2021 |
 | `AWSCodeDeployRole` managed policy – Updates to existing policy | Added the `autoscaling:PutWarmPool` action to support [adding warm pools to Amazon EC2 Auto Scaling groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-warm-pools.html#add-warm-pool-console/ec2/userguide/ec2-auto-scaling-warm-pools.html#add-warm-pool-console) for blue/green deployments.<br />Removed needless duplicate actions. | May 18, 2021 |
 | CodeDeploy started tracking changes | CodeDeploy started tracking changes for its AWS managed policies. | May 18, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

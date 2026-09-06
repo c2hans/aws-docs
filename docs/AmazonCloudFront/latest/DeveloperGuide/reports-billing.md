@@ -96,7 +96,3 @@ If you’re using Amazon S3 as the origin for CloudFront, consider running the u
 For detailed information about every request that CloudFront receives for your objects, turn on CloudFront access logs for your distribution. For more information, see [Access logs (standard logs)](AccessLogs.md).
 
 For more information about understanding the CloudFront charges and usage types on your reports, see [Interpret your AWS bill and usage reports for CloudFront](billing-and-usage-interpreting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

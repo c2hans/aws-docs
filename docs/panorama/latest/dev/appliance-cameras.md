@@ -45,7 +45,3 @@ You can delete a camera stream in the AWS Panorama console.
 1. Choose **Delete data source**.
 
 Removing a camera stream from the service does not stop running applications or delete camera credentials from Secrets Manager. To delete secrets, use the [Secrets Manager console](https://console.aws.amazon.com/secretsmanager/home#!/listSecrets).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

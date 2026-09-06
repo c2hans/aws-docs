@@ -28,7 +28,3 @@ Choose a virtual computer's name to navigate to its management page. Following i
 + **Virtual computer usage** – A cost and usage estimate for the given billing cycle. You can filter this by date and time.
 + **Storage** – Create, attach, and detach virtual computer disks from the **Storage** tab. A disk is a storage volume that you can attach to a virtual computer and mount as a hard drive.
 + **Tags** – Manage your virtual computer tags from the tags tab. A tag is a label that you assign to an AWS resource. Each tag consists of a key and an optional value. You can use tags to search and filter your resources, or track your AWS costs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail for Research. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail-for-research` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

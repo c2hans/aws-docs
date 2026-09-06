@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 +  **Ad exchange:** An ad exchange provides a sales channel to publishers and ad networks, as well as aggregated inventory to advertisers. They bring a technology platform that facilitates automated auction-based pricing, selling, and buying in real-time.
 +  **Data management platform (DMP):** A DMP is an aggregator of third-party data. This data is made available on a commercial basis to enrich the ad supply of publishers, expand the attributes available for audience segmentation, and expand targeting by advertisers. The data is also available to advertisers to expand the attributes available to their users and widen campaign definitions.
 +  **Customer data platform (CDP):** A CDP is a data solution that centralizes customer related data, so that retailers can link and bridge multi-channel customer journeys through one identity profile, which assists publishers to understand the customer needs demands and make better decisions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

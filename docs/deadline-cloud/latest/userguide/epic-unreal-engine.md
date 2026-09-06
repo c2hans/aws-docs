@@ -89,7 +89,7 @@ If you're setting up on a brand new Windows Amazon Elastic Compute Cloud (Amazon
 ### Windows long paths
 <a name="unreal-engine-windows-long-paths"></a>
 
-Many of the steps below may create files that exceed the default Windows maximum path length. Before you build and install the Deadline Cloud for Unreal Engine submitter or adapter on a Windows machine, we recommend that you enable Windows long path support. To do this, follow the instructions on the [Maximum file path limitation](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry) page, for example by running the [PowerShell command](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell#tabpanel_1_powershell).
+Many of the following steps might create files that exceed the default Windows maximum path length. Before you build and install the Deadline Cloud for Unreal Engine submitter or adapter on a Windows machine, we recommend that you enable Windows long path support. For more information, see [Maximum file path limitation](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry) on the Microsoft website, for example by running the [PowerShell command](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell#tabpanel_1_powershell).
 
 Long path support where you build the submitter is separate from long path support at render time. Windows honors `LongPathsEnabled` only for applications that declare `longPathAware` in their manifest, so enabling it on a worker host doesn't lift the limit for every application. If jobs fail on Windows workers with missing-file errors, see [Why does my job fail on Windows when my file paths are long?](troubleshooting.md#troubleshooting-windows-long-paths).
 
@@ -98,9 +98,9 @@ Long path support where you build the submitter is separate from long path suppo
 
 The Unreal submitter plugin currently must be compiled locally.
 
-1. Install Visual Studio using the [Visual Studio Installer](https://visualstudio.microsoft.com/).
+1. Install Visual Studio using the [Visual Studio Installer](https://visualstudio.microsoft.com/) on the Microsoft website.
 
-1. Verify your Visual Studio and build tools version are compatible with your version of Unreal by checking the [Epic compatibility table](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine?application_version=5.5).
+1. Verify your Visual Studio and build tools version are compatible with your version of Unreal by checking the [Epic compatibility table](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine?application_version=5.5) on the Epic Games website.
 
 1. Under **Individual Components**, ensure that the MSVC build tools version selected ("Latest" by default) matches the recommended version in the table. Even though the compatibility guidance may suggest a version "or later", build errors sometimes occur when using a newer version than the one listed as "recommended".
 
@@ -361,9 +361,9 @@ Unreal Engine 5.4\+ is required for Deadline Cloud compatibility.
 
 The Unreal plugin currently must be compiled locally.
 
-1. Install Visual Studio using the [Visual Studio Installer](https://visualstudio.microsoft.com/).
+1. Install Visual Studio using the [Visual Studio Installer](https://visualstudio.microsoft.com/) on the Microsoft website.
 
-1. Verify your Visual Studio and build tools version are compatible with your version of Unreal by checking the [Epic compatibility table](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine?application_version=5.5).
+1. Verify your Visual Studio and build tools version are compatible with your version of Unreal by checking the [Epic compatibility table](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine?application_version=5.5) on the Epic Games website.
 
 1. Under **Individual Components**, ensure that the MSVC build tools version selected ("Latest" by default) matches the recommended version in the table.
 
@@ -605,7 +605,7 @@ Save the secret name - you'll need it when configuring P4 render jobs. See [Crea
 **Warning**
 This approach is not recommended for production as it exposes credentials in job configurations and logs. Use Secrets Manager for production environments.
 
-You can pass connection credentials within the job environment where workspace creation happens, for example in [p4\_sync\_smf\_environment](https://github.com/aws-deadline/deadline-cloud-for-unreal-engine/blob/mainline/src/unreal_plugin/Content/Python/openjd_templates/p4/p4_sync_smf_environment.yml), [ugs\_sync\_smf\_environment](https://github.com/aws-deadline/deadline-cloud-for-unreal-engine/blob/mainline/src/unreal_plugin/Content/Python/openjd_templates/ugs/ugs_sync_smf_environment.yml), or similar environments for CMF. Alternatively, create a new environment template and prepend it to your job.
+You can pass connection credentials within the job environment where workspace creation happens. Examples on the GitHub website include [p4\_sync\_smf\_environment](https://github.com/aws-deadline/deadline-cloud-for-unreal-engine/blob/mainline/src/unreal_plugin/Content/Python/openjd_templates/p4/p4_sync_smf_environment.yml) and [ugs\_sync\_smf\_environment](https://github.com/aws-deadline/deadline-cloud-for-unreal-engine/blob/mainline/src/unreal_plugin/Content/Python/openjd_templates/ugs/ugs_sync_smf_environment.yml), or similar environments for CMF. Alternatively, create a new environment template and prepend it to your job.
 
 ```
 name: P4Credentials
@@ -627,7 +627,7 @@ This approach has the following security risks:
 **Warning**
 This approach is not recommended for production as it stores credentials in queue configurations. Use Secrets Manager for secure credential management.
 
-Per the [Deadline Cloud user guide](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/create-queue-environment.html), you can use queue environments to provide software applications, environment variables, and other resources to jobs in the queue. Queue environment samples can be found in the [queue\_environments folder in deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/queue_environments).
+Per the [Deadline Cloud user guide](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/create-queue-environment.html), you can use queue environments to provide software applications, environment variables, and other resources to jobs in the queue. For queue environment samples, see the [queue\_environments folder in deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/queue_environments) on the GitHub website.
 
 #### Add queue environment using Deadline Cloud monitor or console
 <a name="unreal-engine-p4-add-env-dcm"></a>
@@ -964,7 +964,7 @@ Host requirements define which fleet are eligible to run a particular render ste
 Hiding a requirement using the eye icon only hides it in the MRQ Submit UI. The requirement still applies when submitting the job.
 
 **Important**
-The `Name` and `Attribute` values used for custom amount requirements and custom attribute requirements must strictly match the valid identifiers defined in the official Open Job Description documentation: [Open Job Specifications](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#33-hostrequirements).
+The `Name` and `Attribute` values used for custom amount requirements and custom attribute requirements must strictly match the valid identifiers defined in the official Open Job Description documentation. For more information, see [Open Job Specifications](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#33-hostrequirements) on the GitHub website.
 
 ### Step 1: Create the host requirements asset
 <a name="unreal-engine-host-step1"></a>
@@ -1096,9 +1096,4 @@ All rendering features are automatically detected and configured by the Unreal E
 ## Open source resources
 <a name="unreal-engine-open-source"></a>
 
-The submitter and adaptor are open source and available on GitHub:
-+ [Deadline Cloud for Unreal Engine](https://github.com/aws-deadline/deadline-cloud-for-unreal-engine)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+The submitter and adaptor are open source. For more information, see [Deadline Cloud for Unreal Engine](https://github.com/aws-deadline/deadline-cloud-for-unreal-engine) on the GitHub website.

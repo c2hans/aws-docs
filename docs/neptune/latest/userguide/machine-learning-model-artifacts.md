@@ -45,7 +45,3 @@ Recomputing the model artifacts re-uses the learned model parameters on a new gr
 For graphs where all the nodes have features, the higher end of the threshold (20% different) applies but for graphs where many nodes do not have features and the new nodes added to the graph don’t have properties, then the lower end (10% different) may be even be too high.
 
 See [The modeltransform command](machine-learning-api-modeltransform.md) for more information about model transform jobs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

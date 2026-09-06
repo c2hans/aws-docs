@@ -16,7 +16,3 @@ During a failover, Amazon RDS promotes the standby instance and ensures that all
 After a successful failover, you can verify that all storage volumes are properly attached and accessible by viewing the storage configuration details. For more information, see [Viewing storage volume details for your DB instance](rds-storage-viewing.md).
 
 The failover time for DB instances with additional storage volumes is similar to DB instances with only primary storage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ The following table describes the important changes in each release of the *NoSQ
 | 0.4.1 | Support for IAM roles and temporary security credentials. | NoSQL Workbench for Amazon DynamoDB adds support for AWS Identity and Access Management (IAM) roles and temporary security credentials. | December 19, 2019 |
 | 0.3.1 | Support for [DynamoDB local (Downloadable Version)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html). | The NoSQL Workbench now supports connecting to [DynamoDB local (Downloadable Version)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html) to design, create, query, and manage DynamoDB tables. | November 8, 2019 |
 | 0.2.1 | NoSQL Workbench preview released. | This is the initial release of NoSQL Workbench for DynamoDB. Use NoSQL Workbench to design, create, query, and manage DynamoDB tables. | September 16, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

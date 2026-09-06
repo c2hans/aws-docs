@@ -284,7 +284,3 @@ After the domain is set up, the administrative user can view and edit the domain
 The users can access SageMaker AI using:
 + The sign-in URL if the domain was set up using the IAM Identity Center authentication. For information, see [How to sign in to the user portal](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtosignin.html).
 + The [SageMaker AI console](https://console.aws.amazon.com/sagemaker).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

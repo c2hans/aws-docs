@@ -44,7 +44,3 @@ View details about updates to AWS managed policies for Step Functions since this
 | [AWSStepFunctionsReadOnlyAccess](#security-iam-awsmanpol-AWSStepFunctionsReadOnlyAccess) – Update to an existing policy  | Step Functions added new permissions to allow calling `states:ValidateStateMachineDefinition` API action to check the syntax of state machine definitions that you provide. | April 25, 2024 |
 | [AWSStepFunctionsReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSStepFunctionsReadOnlyAccess.html) – Update to an existing policy | Step Functions added new permissions to allow listing and reading data related to: Tags (ListTagsForResource), Distributed Map (ListMapRuns, DescribeMapRun), Versions and Aliases (DescribeStateMachineAlias, ListStateMachineAliases, ListStateMachineVersions).  | April 02, 2024 |
 | Step Functions started tracking changes | Step Functions started tracking changes for its AWS managed policies. | April 02, 2024 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

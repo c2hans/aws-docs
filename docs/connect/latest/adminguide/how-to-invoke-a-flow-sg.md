@@ -18,7 +18,3 @@ For example, by checking the IVR responses, queue name, and customer info, you c
 The following image shows the **Properties** page for the **Set event flow** block. The event hook is set to **Default flow for Agent UI**.
 
 ![The Set event flow block, the Default flow for Agent UI event hook.](http://docs.aws.amazon.com/connect/latest/adminguide/images/example-flow-id-sq.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

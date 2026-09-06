@@ -84,7 +84,3 @@ While contracts provide unlimited usage, you can still view usage data in [Machi
 You can create and extend multiple private offers to a single buyer. Buyers that you extend the private offers to have the option to choose between the private offers and the public offer. Buyers can only be subscribed to one offer at any given time. They can't be subscribed to both a private offer and the public offer at the same time.
 
 To create a private offer for a specific buyer for SageMaker products, see [Creating private offers for machine learning products](machine-learning-private-offers.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

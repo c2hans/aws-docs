@@ -25,7 +25,3 @@ In some cases, you might want to specify additional connections or variables for
   backend_kwargs = {"connections_prefix" : "airflow/connections", "variables_prefix" : "airflow/variables"}
   ```
 + **Apache Airflow on Amazon MWAA**. On Amazon MWAA, you need to add these configuration settings as [Apache Airflow configuration options](configuring-env-variables.md) on the Amazon MWAA console. Apache Airflow configuration options are written as environment variables to your environment and override all other existing configurations for the same setting.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

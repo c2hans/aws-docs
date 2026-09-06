@@ -25,7 +25,3 @@ The following image is a graphical representation of an Amazon S3 Multi-Region A
 + [Creating Multi-Region Access Points](CreatingMultiRegionAccessPoints.md)
 + [Configuring a Multi-Region Access Point for use with AWS PrivateLink](MultiRegionAccessConfiguration.md)
 + [Making requests through a Multi-Region Access Point](MultiRegionAccessPointRequests.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

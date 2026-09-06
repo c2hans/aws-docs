@@ -49,7 +49,3 @@ To read this table, find the type of container and captions from your input. The
   - **Source caption format:** ARIB / **Supported output captions:** None
   - **Source caption format:** DVB-Sub / **Supported output captions:** Burn-in, Web-VTT
   - **Source caption format:** SCTE-27 / **Supported output captions:** Burn-in, Web-VTT
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

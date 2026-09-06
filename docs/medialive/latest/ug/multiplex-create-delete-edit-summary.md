@@ -18,7 +18,3 @@ The following table summarizes the create, edit, and delete capabilities for the
 | Channel | Create | The multiplex for this channel can be idle or running. The program for the channel must be empty. |
 |  | Edit | The channel must be idle. The multiplex for this channel can be idle or running.  |
 |  | Delete | The channel must be idle. The channel can still be attached to a program. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

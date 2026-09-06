@@ -23,9 +23,10 @@ In this tutorial, you’ll learn how to set up Policy in AgentCore and integrate
 Before starting, make sure you have the following:
 +  ** AWS Account** with credentials configured. To configure credentials, you can install and use the AWS Command Line Interface by following the steps at [Getting started with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
 +  **Node.js 20\+** installed
-+ Your AWS account and Region **bootstrapped for AWS CDK**. Replace `<ACCOUNT_ID>` with your 12-digit AWS account ID and `<REGION>` with the AWS Region identifier (for example, `us-east-1`), then run: `npx cdk bootstrap aws://<ACCOUNT_ID>/<REGION>`
 +  **IAM permissions** for creating roles, Lambda functions, policy engines, and using Amazon Bedrock AgentCore
 +  **A Lambda function** that processes refund requests. You can use an existing function or create one for this tutorial. Note the function ARN for use in Step 2.
+
+The AgentCore CLI checks the CDK bootstrap stack during deployment. If bootstrap is required, interactive deployment asks for confirmation. Use `agentcore deploy --yes` to authorize it automatically.
 
 ## Step 1: Setup and install
 <a name="policy-getting-started-setup"></a>
@@ -43,11 +44,12 @@ Create a new AgentCore project:
 1.
 
    ```
-   agentcore create --name PolicyDemo --defaults
+   agentcore create --name PolicyDemo --language Python --framework Strands \
+     --model-provider Bedrock --memory none
    cd PolicyDemo
    ```
 
-   The `--defaults` flag creates a project with a default Python Strands agent. The **cd** command moves into the project directory where subsequent commands must be run.
+   These options create a Python Strands agent that uses Amazon Bedrock and no memory. The `cd` command moves into the project directory where subsequent commands must be run.
 
 1. You can also run `agentcore create` without flags to use the interactive wizard. The wizard guides you through selecting a project name, agent framework, model provider, and other options. After project creation, change into the project directory with **cd PolicyDemo**.
 
@@ -334,7 +336,3 @@ agentcore deploy
 ```
 
 Removing a gateway does not automatically remove its attached policy engine. You must remove the policy engine separately using `agentcore remove policy-engine`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

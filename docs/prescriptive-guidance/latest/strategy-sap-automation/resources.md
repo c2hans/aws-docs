@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 <a name="marketing-resources.3d7c06ab-136d-551e-a0f0-f0d5a46651da"></a>
 + [SAP on AWS case studies](https://aws.amazon.com/sap/case-studies/)
 + [SAP on AWS](https://aws.amazon.com/sap/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

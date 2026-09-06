@@ -29,7 +29,3 @@ View details about updates to AWS managed policies for App Runner since this ser
 | [AppRunnerServiceRolePolicy](using-service-linked-roles-management.md) – New policy | App Runner added a new policy to allow App Runner to make calls to Amazon CloudWatch Logs and Amazon CloudWatch Events on behalf of App Runner services. The policy is used in the `AWSServiceRoleForAppRunner` service-linked role. | Mar 1, 2021 |
 | [AWSAppRunnerServicePolicyForECRAccess](security_iam_service-with-iam.md#security_iam_service-with-iam-roles-service.access) – New policy | App Runner added a new policy to allow App Runner to access Amazon Elastic Container Registry (Amazon ECR) images in your account. | Mar 1, 2021 |
 | App Runner started tracking changes | App Runner started tracking changes for its AWS managed policies. | Mar 1, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

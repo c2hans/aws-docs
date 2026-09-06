@@ -11,7 +11,7 @@ Use Live Sync when your application should do more than exchange messages. A Liv
 
 For example, a user might say "I'd like to check out on Saturday and pick the Ocean View room." With Live Sync, the agent can understand the request, use the current page context it's provided, fill the checkout date field, select the matching room option, and continue the conversation hands-free.
 
-Live Sync is a bidirectional experience between your Agentic CX Designer application and your frontend.
+Live Sync is a bidirectional experience between your agentic CX designer application and your frontend.
 
 It allows an AI-powered conversation to:
 + Understand user speech or text
@@ -307,7 +307,7 @@ Thanks for contacting us. Have a great day.
 
 Touchpoint is the frontend layer that enables voice input, bidirectional Live Sync behavior, and command handling in your web or mobile application.
 
-In your frontend setup, configure Touchpoint using the connection details from your deployed application. You can find these values in the application's settings under the Access section. Your frontend team will need details such as the application URL and API key to initialize Touchpoint and connect the frontend experience to the deployed Agentic CX Designer application.
+In your frontend setup, configure Touchpoint using the connection details from your deployed application. You can find these values in the application's settings under the Access section. Your frontend team will need details such as the application URL and API key to initialize Touchpoint and connect the frontend experience to the deployed agentic CX designer application.
 
 Common handler categories include:
 
@@ -466,7 +466,3 @@ In this example, the frontend tells the agent which checkout form fields are ava
 ```
 
 When this context is active, the user can say "Set checkout to Saturday and pick the Garden Suite" and the agent can use the field context to understand which values should be filled or selected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

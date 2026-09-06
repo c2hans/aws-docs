@@ -33,7 +33,3 @@ SHAP (SHapley Additive exPlanations) is an open-source technique based on coalit
 <a name="shap-and-lime-local-interpretable-model-agnostic-explanations-libraries"></a>
 
  In case team members are unable to use Amazon SageMaker AI Debugger or Amazon SageMaker AI Clarify for explainability and bias, their libraries can directly be installed on SageMaker Jupyter instances or Studio Notebooks and incorporated into the training code See [Explaining Amazon SageMaker AI Autopilot models with SHAP](https://aws.amazon.com/blogs/machine-learning/explaining-amazon-sagemaker-autopilot-models-with-shap/) for details on using SHAP. LIME provides a model-agnostic approach for setting up explanations; LIME builds sparse linear models around each prediction to explain how the black box model works in that local vicinity. SHAP is a more cost-intensive process as it requires more compute time calculating all the probable combinations and permutations of features for explaining predictions compared to LIME.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

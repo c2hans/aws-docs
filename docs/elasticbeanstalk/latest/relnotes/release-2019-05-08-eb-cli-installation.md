@@ -17,7 +17,3 @@ The Elastic Beanstalk Command Line Interface (EB CLI) is a command line client t
 With today's release, you can use the [EB CLI setup scripts](https://github.com/aws/aws-elastic-beanstalk-cli-setup) to install the EB CLI and its dependencies. The scripts also create a virtual environment for the EB CLI that is automatically activated when you run `eb`.
 
 For more information, see [Install the EB CLI Using Setup Scripts](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

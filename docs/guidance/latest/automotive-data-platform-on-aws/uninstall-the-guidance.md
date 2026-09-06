@@ -193,7 +193,3 @@ After teardown, you may still incur charges for:
 + The lake KMS CMK (retained per `RemovalPolicy.RETAIN`)
 
 To eliminate ongoing costs, verify the lake bucket is gone, delete any remaining CloudWatch log groups for the stage, and remove residual S3 objects in the trail-logs bucket if it was not fully emptied.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

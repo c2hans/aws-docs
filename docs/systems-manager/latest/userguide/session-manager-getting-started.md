@@ -18,7 +18,3 @@ Before you use AWS Systems Manager Session Manager to connect to the managed nod
 + [Step 6: (Optional) Use AWS PrivateLink to set up a VPC endpoint for Session Manager](session-manager-getting-started-privatelink.md)
 + [Step 7: (Optional) Turn on or turn off ssm-user account administrative permissions](session-manager-getting-started-ssm-user-permissions.md)
 + [Step 8: (Optional) Allow and control permissions for SSH connections through Session Manager](session-manager-getting-started-enable-ssh-connections.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

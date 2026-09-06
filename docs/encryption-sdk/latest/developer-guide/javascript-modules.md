@@ -90,7 +90,3 @@ Exports functions that the SDK uses to serialize its output.
 
 [web-crypto-backend](https://github.com/aws/aws-encryption-sdk-javascript/tree/master/modules/web-crypto-backend)
 Exports functions that use the WebCrypto API in the AWS Encryption SDK for JavaScript in the browser.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

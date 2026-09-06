@@ -22,7 +22,3 @@ When you add output locking to an output redundancy setup, you must set up each 
 The following diagram illustrates a typical setup of two events that are a redundant pair.
 
 ![Two events with HLS output groups connected to video components, illustrating redundancy.](http://docs.aws.amazon.com/elemental-live/latest/ug/images/opl-redundancy.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

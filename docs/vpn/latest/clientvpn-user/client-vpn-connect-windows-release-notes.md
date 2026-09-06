@@ -76,7 +76,3 @@ We continue to provide usability and security fixes with every release. We stron
 | 1.1.1 | Minor bug fixes and enhancements. | April 21, 2020 | No longer supported |
 | 1.1.0 |  +  Added support for OpenVPN static challenge echo functionality to hide or show the text displayed in the user interface. <br />+  Minor bug fixes and enhancements.   | March 9, 2020 | No longer supported |
 | 1.0.0 | The initial release. | February 4, 2020 | No longer supported |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

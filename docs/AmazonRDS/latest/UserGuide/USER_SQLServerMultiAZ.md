@@ -69,7 +69,3 @@ If your DB instance is running AGs or block level replication for SQL Server Web
 <a name="USER_SQLServerMultiAZ.Removing"></a>
 
 When you modify an existing SQL Server DB instance using the AWS Management Console, you can remove Multi-AZ with DBM, AGs, or block level replication. You can do this by choosing **No (Mirroring / Always On / Block Level Replication)** from **Multi-AZ deployment** on the **Modify DB instance** page. For more information, see [Modifying an Amazon RDS DB instance](Overview.DBInstance.Modifying.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

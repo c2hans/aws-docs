@@ -31,7 +31,3 @@ For a custom labeling workflow tutorial that includes example pre-annotation and
 + [Add required permissions to use AWS Lambda with Ground Truth](sms-custom-templates-step3-lambda-permissions.md)
 + [Create Lambda functions using Ground Truth templates](sms-custom-templates-step3-lambda-create.md)
 + [Test pre-annotation and post-annotation Lambda functions](sms-custom-templates-step3-lambda-test.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

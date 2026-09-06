@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 + [ADVPERF01-BP03 Design for low latency with appropriate compute, storage, and network considerations ](advperf01-bp03.md)
 + [ADVPERF01-BP04 Evaluate AI/ML-based architecture for optimization (like contextual advertising or scaling algorithms on event context)  ](advperf01-bp04.md)
 + [ADVPERF01-BP05 Evaluate the choice of open source-based software (self-managed) against using a fully-managed service ](advperf01-bp05.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

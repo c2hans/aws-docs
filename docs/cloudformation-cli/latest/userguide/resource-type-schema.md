@@ -378,7 +378,3 @@ Your configuration definition must validate against the [provider configuration 
 When the user specifices a resource, they can sets the configuration. CloudFormation validates it against the configuration definition, and then saves this information at the Region level. From then on, CloudFormation can access that configuration schema during operations involving any instances of that extension in the Region. Configurations are available to CloudFormation during all resource operations, including `read` and `list` events that don't explicitly involve a stack template.
 The `CloudFormation` property name is reserved, and cannot be used to define any properties in your configuration definition.
 For more information, see [Defining the account-level configuration of an extension](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-model.html#resource-type-howto-configuration).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

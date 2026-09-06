@@ -12,7 +12,3 @@ After you've scheduled inference, you are able to see how your equipment is oper
 **Topics**
 + [Reviewing inference results in the console](understanding-results-console.md)
 + [Reviewing inference results in a JSON file](understanding-results-json.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

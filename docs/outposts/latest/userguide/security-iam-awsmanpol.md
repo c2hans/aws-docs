@@ -27,7 +27,3 @@ View details about updates to AWS managed policies for AWS Outposts since this s
 | --- | --- | --- |
 | Updates to the AWS Identity and Access Management service-linked role AWSServiceRoleForOutposts\_{{OutpostID}} | The AWSServiceRoleForOutposts\_{{OutpostID}} service-linked role permissions are updated to refine how AWS Outposts manages networking resources for private connectivity, with more precise controls over network interface and security group operations needed for service link endpoint instances. | April 18, 2025 |
 | AWS Outposts started tracking changes | AWS Outposts started tracking changes for its AWS managed policies. | December 03, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

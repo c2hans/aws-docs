@@ -59,7 +59,3 @@ Finally, the last example of positive risk in cybersecurity is the implementatio
 1. The identification of malware and ransomware could minimize the impact and mitigate the threat to company resources.
 
 1. Mitigating the threat to company resources could lead to new business opportunities and help the business remain in compliance with privacy laws.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

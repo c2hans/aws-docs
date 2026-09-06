@@ -34,9 +34,5 @@ The `CHUNK[INT]` type has the following constraints:
 In a step's script, the `{{Task.Param.{{name}}}}` variable for a chunked parameter expands to an integer range expression string. With `rangeConstraint: CONTIGUOUS`, the expression is always in `{{start}}-{{end}}` format, such as `1-1` or `11-20`. With `rangeConstraint: NONCONTIGUOUS`, the expression can be any integer range expression, such as `1-3,5,7-20:2`.
 
 For more information, see the following resources:
-+ [RFC 0001: Task Chunking](https://github.com/OpenJobDescription/openjd-specifications/blob/mainline/rfcs/0001-task-chunking.md) – The full specification of the extension in the Open Job Description repository on GitHub.
++ [RFC 0001: Task Chunking](https://github.com/OpenJobDescription/openjd-specifications/blob/mainline/rfcs/0001-task-chunking.md) on the GitHub website – The full specification of the extension.
 + [Add task chunking to a job template](build-job-bundle-chunking-add.md) – Convert a job template to use chunking.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

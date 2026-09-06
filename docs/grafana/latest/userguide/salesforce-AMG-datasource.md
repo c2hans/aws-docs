@@ -120,7 +120,3 @@ To add a new Salesforce query variable, see [Adding a query variable](variables-
 If you want to use name/value pairs, for example a user id and user name, return two fields from your SOQL query. The first field will be used as the ID. Do this when you want to filter by key (ID, etc) in your query editor SOQL.
 
 Use the variable in your SOQL queries by using Variable syntax. For more information, see [Variable syntax](templates-and-variables.md#variable-syntax).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

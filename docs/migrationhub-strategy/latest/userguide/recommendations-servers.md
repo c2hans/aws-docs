@@ -30,7 +30,3 @@ This section describes how to use Migration Hub Strategy Recommendations in the 
 1. Choose the **Application components** tab to view the list of application components associated with the server.
 
 1. To view details about the application component, select the component from the list and then choose **View details.** For more information about application components, see [Working with application components](recommendations-view-app-components.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Hub Strategy Recommendations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-strategy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,6 +40,15 @@ In AWS CloudHSM, you must authenticate to your cluster before you are able to pe
 
 For optimal performance, AWS recommends that you utilize key find commands (like [Search for AWS CloudHSM keys by attributes using KMU](key_mgmt_util-findKey.md) and [List keys for a user with CloudHSM CLI](cloudhsm_cli-key-list.md)) only once during your application start-up and cache the key object returned in application memory. If you require this key object later on, you should retrieve the object from your cache instead of querying for this object for each operation which will add significant performance overhead.
 
+### Read object attributes in as few calls as possible
+<a name="w2aab9c13b9b7"></a>
+
+Reading attributes sends requests to your cluster, and the number of requests depends on the SDK that you use:
++ With the PKCS \#11 library, each `C_GetAttributeValue` call sends one request, no matter how many attributes the template contains. Request every attribute that you need in one template. For more information, see [Retrieve attributes with the PKCS \#11 library for AWS CloudHSM Client SDK 5](pkcs11-attributes-retrieve.md).
++ With JCE, each attribute that you request costs one request. Request only the attributes that your application needs.
+
+In both cases, cache the values in your application and reuse them until something changes the object.
+
 ## Use multi-threading
 <a name="w2aab9c13c11"></a>
 
@@ -84,7 +93,3 @@ In response to an event, it may be necessary to shift your traffic away from an 
 <a name="bp-stagger-deployment"></a>
 
 Follow staggered deployment strategies such as progressive wave-based deployments, one-box deployments, and rolling deployments for your client application deployments and restarts. This approach minimizes the potential impact of changes while also ensuring there is enough capacity to serve production traffic during the deployment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

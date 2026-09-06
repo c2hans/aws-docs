@@ -315,7 +315,3 @@ Users should complete one of the following procedures to uninstall the old versi
 <a name="media-feature-pack"></a>
 
 You might not have the Media Feature Pack installed on Windows, if you're using certain versions of Windows Operating System, such as Windows N. By default, the Media Feature Pack isn't installed on Windows N. To install it, see [ Media Feature Pack for N versions of Windows 10](https://www.microsoft.com/en-us/software-download/mediafeaturepack), choose **Install Instructions**, and follow the instructions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

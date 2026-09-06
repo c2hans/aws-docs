@@ -73,7 +73,3 @@ You can deny all root actions except a specific root only action that you must p
 ------
 
 In the majority of circumstances, any administrative tasks can be performed by an AWS Identity and Access Management (IAM) role in the member account that has relevant administrator permissions. Any such roles should have suitable controls applied to limit, log, and monitor activities.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

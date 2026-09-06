@@ -22,7 +22,3 @@ You can use the following steps to define one or more scan on push filters.
 1. By default all of your repositories are set for **Manual** scanning. You can optionally configure scan on push by specifying **Scan on push filters**. You can set scan on push for all repositories or individual repositories. For more information, see [Filters to choose which repositories are scanned in Amazon ECR](image-scanning-filters.md).
 **Note**
 If scan on push is enabled for a repository, scans are also done on images that are restored after being archived. No old scans will be available from the restored image.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

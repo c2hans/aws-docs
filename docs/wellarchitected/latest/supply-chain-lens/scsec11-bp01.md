@@ -34,7 +34,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 1.  Create secure backup and recovery procedures for critical supply chain data and systems, with immutable backups stored in separate secured environments.
 
 1.  Conduct regular tabletop exercises and incident response simulations to test and refine response procedures, making sure all teams are prepared for various supply chain threat scenarios.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

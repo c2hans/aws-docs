@@ -98,7 +98,3 @@ WHERE pn.emp_id = pa.emp_id;
 <a name="query-editor-v2-glue-s3-tables"></a>
 
 You can use query editor v2 to query data held in Amazon S3table catalogs mounted to the AWS Glue Data Catalog. Amazon S3 table catalogs are mounted to the AWS Glue Data Catalog on creation, and automatically appear as external databases on all provisioned clusters and serverless workgroups in the same AWS Region under the same account. For more information on accessing Amazon S3 tables using Amazon Redshift, see [ Accessing Amazon S3 tables with Amazon Redshift ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-integrating-redshift.html) in the Amazon Simple Storage Service User Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

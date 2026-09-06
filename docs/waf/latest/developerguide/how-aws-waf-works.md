@@ -84,7 +84,3 @@ Dashboards available through new provide unified visibility into your security p
 + **Rule characteristics** – A breakdown of attacks by the 10 most common rules and termnating actions.
 + **Bots** – Visualize bot activity, detection, categories, and bot-related signal labels.
 + **Anti-DDoS** – An overview of detected and mitigated layer 7 DDoS activity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,7 +42,3 @@ When you delete *an entire Workspace*, its notebook files and folders will remai
 1. If you want to remove the notebook files that were associated with the deleted Workspace from Amazon S3, follow the instructions for [Deleting objects](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/delete-objects.html) in the *Amazon Simple Storage Service* *Console User Guide*. If you did not create the Studio, consult your Studio administrator to determine the Amazon S3 backup location for the deleted Workspace.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

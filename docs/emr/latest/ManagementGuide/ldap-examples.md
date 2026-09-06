@@ -73,7 +73,3 @@ After you run this command, enter the LDAP password at the prompt.
 Amazon EMR includes an on-cluster script that allows users to generate a Kerberos keytab file and ticket to use with supported applications that don't accept LDAP credentials directly. Some of these applications include `spark-submit`, Spark SQL, and PySpark.
 
 Run `ldap-kinit` and follow the prompts. If the authentication succeeds, the Kerberos keytab file appears in your home directory with a valid Kerberos ticket. Use the Kerberos ticket to run applications as you would on any Kerberized environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

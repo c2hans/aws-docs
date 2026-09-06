@@ -190,7 +190,3 @@ When you are analyzing data in a specific visual, you can apply table calculatio
 + [windowMax](https://docs.aws.amazon.com/quicksight/latest/user/windowMax-function.html) calculates the maximum of the aggregated measure in a custom window that is partitioned and sorted by specified attributes.
 + [windowMin](https://docs.aws.amazon.com/quicksight/latest/user/windowMin-function.html) calculates the minimum of the aggregated measure in a custom window that is partitioned and sorted by specified attributes.
 + [windowSum](https://docs.aws.amazon.com/quicksight/latest/user/windowSum-function.html) calculates the sum of the aggregated measure in a custom window that is partitioned and sorted by specified attributes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

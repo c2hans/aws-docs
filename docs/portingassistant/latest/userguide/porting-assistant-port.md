@@ -86,7 +86,3 @@ You can run the following command when you have a solution with five projects, n
 ```
 & 'C:\Users\<username>\AppData\Local\Programs\Porting Assistant for .NET\resources\netcore_build\PortingAssistant.Client.CLI.exe' assess --solution-path "<path_to_solution/example_solution.sln>" --output-path "<path_to_output_dir>” --target “net5.0” --porting-projects “project1,project2”
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Porting Assistant for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query portingassistant` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

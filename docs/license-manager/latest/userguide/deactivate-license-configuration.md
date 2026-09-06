@@ -22,7 +22,3 @@ When a self-managed license is deactivated, it must not be attached to any runni
 **To deactivate a self-managed license using the command line**
 + [update-license-configuration](https://docs.aws.amazon.com/cli/latest/reference/license-manager/update-license-configuration.html) (AWS CLI)
 + [Update-LICMLicenseConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/Update-LICMLicenseConfiguration.html) (AWS Tools for PowerShell)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ The **Post-launch settings** template allows you to control various post-launch 
 + Disaster recovery configuration (installing the AWS Replication Agent for AWS DRS and configuring the target disaster recovery AWS Region)
 + Operating system conversion on the target machine
 + License and subscription changes on the target machine
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

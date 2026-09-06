@@ -299,7 +299,3 @@ In order to add an additional security layer, customers often choose to secure t
 1.  After the setting takes effect, all supported USB devices will be able to be redirected to WorkSpaces unless restrictions are configured through the USB device rules setting.
 
  Once you have enabled USB redirection for YubiKey U2F you can utilize your YubiKey with Fido U2F mode.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

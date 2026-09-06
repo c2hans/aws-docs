@@ -34,7 +34,3 @@ Contact your [Teradata account team](https://www.teradata.com/about-us/contact) 
 Before you migrate from Teradata Vantage to the AWS Cloud, we recommend that you meet the following prerequisites:
 + Update your on-premises ecosystem where possible, including upgrading to the latest versions of Teradata Tools and Utilities (TTU) and third-party applications.
 + Identify resources required for the migration process. The [Migration process](migration-process.md) section of this guide covers resource requirements in more detail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

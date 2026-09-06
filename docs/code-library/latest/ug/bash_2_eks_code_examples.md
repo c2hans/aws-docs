@@ -487,8 +487,5 @@ echo "Script completed at $(date)"
   + [GetRole](https://docs.aws.amazon.com/goto/aws-cli/iam-2010-05-08/GetRole)
   + [ListNodegroups](https://docs.aws.amazon.com/goto/aws-cli/eks-2017-11-01/ListNodegroups)
   + [UpdateKubeconfig](https://docs.aws.amazon.com/goto/aws-cli/eks-2017-11-01/UpdateKubeconfig)
-  + [Wait](https://docs.aws.amazon.com/goto/aws-cli/eks-2017-11-01/Wait)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+  + [Wait (CloudFormation)](https://docs.aws.amazon.com/goto/aws-cli/cloudformation-2010-05-15/Wait)
+  + [Wait (Amazon EKS)](https://docs.aws.amazon.com/goto/aws-cli/eks-2017-11-01/Wait)

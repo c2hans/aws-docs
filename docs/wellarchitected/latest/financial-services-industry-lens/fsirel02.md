@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 <a name="fsirel02-bp02"></a>
 
  To capture learnings from previous incidents and minimize reoccurrence across teams, implement an [operational readiness review process](https://docs.aws.amazon.com/wellarchitected/latest/operational-readiness-reviews/wa-operational-readiness-reviews.html) within your organization. As part of your incident analysis process, identify key questions that, if asked prior to the incident, may have prevented the incident from occurring. Maintain a list of these key questions so that, as new features are released, your developers can refer back to the list and make sure that they don't repeat the same mistakes that have disrupted other workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

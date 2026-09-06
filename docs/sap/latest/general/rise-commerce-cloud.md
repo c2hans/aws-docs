@@ -263,7 +263,3 @@ The Amazon MCF and Buy with Prime Accelerators for SAP S/4HANA provide a pre-bui
 |  [Supercharge SAP Composable Storefront with Amazon CloudFront](https://aws.amazon.com/blogs/awsforsap/supercharge-your-sap-composable-storefront-with-amazon-cloudfront/)  |  AWS Blog: Implementation guide for CloudFront integration with SAP Commerce Cloud |
 |  [AWS Automated Traffic Engineering](https://aws.amazon.com/blogs/networking-and-content-delivery/aws-automated-traffic-engineering/)  | Technical deep-dive on how AWS optimizes global internet connectivity |
 |  [AWS Culture of Security](https://aws.amazon.com/security/)  | Overview of AWS security priorities, shared responsibility model, and compliance programs |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

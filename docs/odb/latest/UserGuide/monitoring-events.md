@@ -108,7 +108,3 @@ If you encounter an issue with event delivery or event content, do the following
 + For Oracle Database@AWS events other than ODB network events, contact Oracle Cloud Support.
 
 For more information, see [Getting support for Oracle Database@AWS](odb-troubleshooting-overview.md#oracle-database-aws-support).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

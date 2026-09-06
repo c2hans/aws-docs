@@ -18,7 +18,3 @@ The following table describes important changes in this guide. For notification 
 | [General updates](#history) | Updating welcome page for relevant external resources. Also updated minimum required Ruby version for v2.3. Updated AWS Key Management Service sections to reflect terminology updates. Updated usage information on REPL utility for clarity. | August 8, 2022 |
 | [Correcting broken links](#history) | Fixed broken examples links. Removed redundant Tips and Tricks page; redirecting to Amazon EC2 example content. Included lists of the code examples that are available on GitHub in the Code Examples repository.  | August 3, 2022 |
 | [SDK Metrics](#history) | Removed information about enabling SDK Metrics for Enterprise Support, which has been deprecated. | January 28, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Ruby. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-ruby` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

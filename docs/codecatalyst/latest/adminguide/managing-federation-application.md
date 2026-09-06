@@ -23,7 +23,3 @@ Dev Environments aren't available for users in spaces where Active Directory is 
 | [Editing Identity Center application details](managing-federation-application-edit.md) | This topic describes how to edit the SSO groups assigned to your space, how to assign additional administrators to your space, and how to make updates to your connected groups. |
 | [Associating a space to your Identity Center application](managing-federation-application-associate.md) | This topic describes how to connect a CodeCatalyst space to an Identity Center application. |
 | [Disassociating an Identity Center application from a space](managing-federation-application-disassociate.md) | This topic describes how to disconnect a CodeCatalyst space from an Identity Center application. You can reconnect the application later, or associate it with another space. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

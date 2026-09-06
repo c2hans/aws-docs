@@ -21,7 +21,3 @@ Amazon DynamoDB Accelerator (DAX) provides the following APIs for data retrieval
 | <a name="dax-ListTags"></a>[ListTags](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_dax_ListTags.html) | Return a list all of the tags for a DAX cluster | Read |
 | <a name="dax-Query"></a>[Query](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html) | Use the primary key of a table or a secondary index to directly access items from that table or index | Read |
 | <a name="dax-Scan"></a>[Scan](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html) | Return one or more items and item attributes by accessing every item in a table or a secondary index | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

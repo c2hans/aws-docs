@@ -26,7 +26,3 @@ Every time Route 53 performs a refresh, we generate 15 RRSIGs to cover the next
 Each new hosted zone with DNSSEC signing enabled will have one `ACTIVE` zone signing key (ZSK). The ZSK is generated separately for each hosted zone and is owned by Route 53. The current key algorithm is ECDSAP256SHA256.
 We will start performing regular ZSK rotation on the zone within 7–30 days of the start of signing. Currently, Route 53 uses the Pre-Publish Key Rollover method. For more information, see [Pre-Publish Zone Signing Key Rollover](https://datatracker.ietf.org/doc/html/rfc6781#section-4.1.1.1). This method will introduce another ZSK to the zone. The rotation will be repeated every 7–30 days.
 Route 53 will suspend ZSK rotation if any of the zone’s KSK is in `ACTION_NEEDED` status because Route 53 will not be able to regenerate the RRSIGs for DNSKEY resource record sets to account for the changes in the zone’s ZSK. ZSK rotation will automatically resume after the condition is cleared.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -153,7 +153,3 @@ The following table shows the standard authentication URL and RelayState paramet
 | Okta | RelayState | https://{{<sub\_domain>}}.okta.com/app/{{<app\_name>}}/{{<app\_id>}}/sso/saml |
 | PingFederate | TargetResource | https://{{<host>}}/idp/{{<idp\_id>}}/startSSO.ping?PartnerSpId={{<sp\_id>}} |
 | PingOne | TargetResource | https://sso.connect.pingidentity.com/sso/sp/initsso?saasid={{<app\_id>}}&idpid={{<idp\_id>}} |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

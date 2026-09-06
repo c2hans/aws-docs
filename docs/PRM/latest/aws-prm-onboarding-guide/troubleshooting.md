@@ -129,7 +129,3 @@ For official validation, contact your AWS partner management team or [APN Suppor
 <a name="contact-information"></a>
 
 For any further questions about Partner Revenue Measurement (PRM) compliance requirements, please contact your AWS Partner Development team or [AWS Partner Network support](https://partnercentral.awspartner.com/partnercentral2/s/support).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

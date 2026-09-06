@@ -64,7 +64,3 @@ You can complete the following procedure to upgrade your Amazon DataZone domain 
   + If VPCs were created for the use of Amazon SageMaker, these will persist after the roll back. VPC's created by the SageMaker service will have tag: Name = SageMakerUnifiedStudioVPC
   + The managed permission under the RAM resource share will not be rolled back. The managed permission is a superset of both Amazon DataZone and Amazon SageMaker Unified Studio.
   + A domain that had been rolled back can again be upgraded to Amazon SageMaker unified domain.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

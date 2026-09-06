@@ -18,7 +18,3 @@ Use the following links to go to the page for that service. To view the service 
 <a name="aws-codebuild-quotas"></a>
 
 AWS CodeBuild can have a quota limit set for concurrently running builds. This solution has a limit of five concurrently running builds to reduce the deployment time. If this limit isn’t raised, it won’t block the deployment, but you might experience delays. See [AWS CodeBuild quotas](https://docs.aws.amazon.com/codebuild/latest/userguide/limits.html) for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Scene Intelligence with Rosbag on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

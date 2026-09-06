@@ -69,7 +69,3 @@ Directory registrations for connectors can be managed from the top level of the 
 **Delete**: [delete-directory-registration](https://docs.aws.amazon.com/cli/latest/reference/pca-connector-ad/delete-directory-registratio.html) command in the AWS Private CA Connector for Active Directory section of the AWS CLI.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

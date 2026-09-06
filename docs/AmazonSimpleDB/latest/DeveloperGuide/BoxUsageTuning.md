@@ -40,7 +40,3 @@ select * from myDomain where user_id_bill_time like '1234|%' order by user_id_bi
 ```
 
 The composite attribute technique is described further in the "Query performance optimization" section at [Building for Performance and Reliability with Amazon SimpleDB](http://aws.amazon.com/articles/1394).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

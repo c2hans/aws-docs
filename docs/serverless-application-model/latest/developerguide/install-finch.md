@@ -248,7 +248,3 @@ Now that you have Finch installed, you can use it with AWS SAM CLI to:
 + Start a local Lambda endpoint with `sam local start-lambda`. For more information, see [sam local start-lambda](sam-cli-command-reference-sam-local-start-lambda.md).
 
 For more information about using AWS SAM CLI with containers, see [Default build with AWS SAM](serverless-sam-cli-using-build.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

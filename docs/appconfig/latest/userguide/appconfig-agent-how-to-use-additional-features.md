@@ -62,7 +62,3 @@ For more information about setting variables for AWS AppConfig Agent, see the re
 + [Configuring the AWS AppConfig Agent Lambda extension](appconfig-integration-lambda-extensions-config.md)
 + [Using AWS AppConfig Agent with Amazon EC2](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-integration-ec2.html#appconfig-integration-ec2-configuring)
 + [Using AWS AppConfig Agent with Amazon ECS and Amazon EKS](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-integration-containers-agent.html#appconfig-integration-containers-agent-configuring)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

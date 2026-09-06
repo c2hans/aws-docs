@@ -168,7 +168,3 @@ The following example shows how you can describe a period using the AWS Systems 
 ![Accelerate configuring period describe settings for Resource Scheduler.](http://docs.aws.amazon.com/managedservices/latest/accelerate-guide/images/accResSchedDescribePeriodParams.png)
 
 1. Click **Execute** and wait for automation to complete.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

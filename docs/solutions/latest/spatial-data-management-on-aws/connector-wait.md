@@ -492,7 +492,3 @@ The external system stores the callback URL and, when the review is done, sends 
 + A wait step can only appear in a multi-step trigger (the `steps` array). It cannot be used as a single-step trigger via the top-level `stepType` shorthand.
 + The maximum `timeoutSeconds` is 86400 (24 hours). For longer waits, consider breaking the integration into separate triggers that compose through the asset record.
 + Concurrent termination is handled safely: if both a poll and an external callback race to terminate the same invocation, only the first writer succeeds. The second is silently discarded.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

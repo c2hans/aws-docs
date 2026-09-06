@@ -16,7 +16,3 @@ This section covers the benefits and governance services available in AWS to hel
 + [When to use AWS Organizations](using-orgs.md)
 + [When to use AWS Control Tower](when-to-use-control-tower.md)
 + [Understanding API modes of operation](manage-acct-api-modes-of-operation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,7 +42,3 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 /*installation-directory*/aws-vcenter-client-installer.log - This log will show any issues with the installation process of the MGN agentless client. This will be located in the directory that you have executed the installer from.
 
 /var/lib/aws-vcenter-client/active/tmp/*Unique-ID*/*snapshot-num*.log.0 - When you start replication for a discovered server, it will create a snapshot in vCenter and generate this log which is similar to the agent log. For each snapshot, there is a different log. This will show a log of replication process for the snapshot.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

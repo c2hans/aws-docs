@@ -87,7 +87,3 @@ Total processing time of 0.03227 seconds at 3.62 KB/s.
 2024-07-17 02:52:06,213 INFO Output:
 2024-07-17 02:52:06,216 INFO Script location: /sessions/session-{{5b33f}}/assetroot-{{3751a}}/script.sh
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

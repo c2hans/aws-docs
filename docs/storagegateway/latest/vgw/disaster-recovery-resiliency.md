@@ -17,7 +17,3 @@ In addition to the AWS global infrastructure, Storage Gateway offers several fea
 + Use VMware vSphere High Availability (VMware HA) to help protect storage workloads against hardware, hypervisor, or network failures. For more information, see [Using VMware vSphere High Availability with Storage Gateway](vmware-ha.md).
 + Use AWS Backup to back up your volumes. For more information, see [Backing up your volumes](backing-up-volumes.md).
 + Clone your volume from a recovery point. For more information, see [Cloning a cached volume from a recovery point](clone-volume.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

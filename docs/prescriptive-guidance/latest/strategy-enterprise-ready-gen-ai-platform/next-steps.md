@@ -28,7 +28,3 @@ As organizations embark on their generative AI journey, consider taking the foll
 1. Invest in ongoing education and training to build generative AI capabilities across your organization.
 
 Through the comprehensive suite of AWS services and with the solid foundation provided by Amazon Bedrock, organizations can confidently move from generative AI experimentation to scalable, enterprise-ready solutions that are designed to be secure, ethical, and effective. As you navigate this transformative journey, AWS remains committed to supporting your success with the tools, expertise, and infrastructure needed to unlock the full potential of generative AI in your enterprise.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

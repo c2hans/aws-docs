@@ -19,7 +19,3 @@ Some potential ways that API Gateway API can approve access from an application 
 + A group, claim, attribute, or role in an access or ID token meets the requirements that you define in a Lambda function. A [Lambda authorizer](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html) parses the token in the request header and evaluates it for an authorization decision. You can construct custom logic in your function or make an API request to [Amazon Verified Permissions](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html).
 
 You can also authorize requests to an [AWS AppSync GraphQL API](https://docs.aws.amazon.com/appsync/latest/devguide/security-authz.html#amazon-cognito-user-pools-authorization) with tokens from a user pool.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

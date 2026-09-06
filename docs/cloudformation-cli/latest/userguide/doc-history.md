@@ -16,7 +16,3 @@ The following table describes the documentation for this release of the CloudFor
 | [Drift detection](#doc-history) | CloudFormation supports drift detection operations on an expanded list of AWS resources, in addition to private resources that are defined as provisionable. | October 1, 2021 |
 | [Public extensions](#doc-history) | Use public extensions provided by third-party publishers, just as you would extensions from AWS. | June 21, 2021 |
 | [General availability](#doc-history) | Initial publication of the CloudFormation Command Line Interface documentation. | November 14, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

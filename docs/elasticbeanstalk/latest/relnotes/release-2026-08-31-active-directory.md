@@ -22,7 +22,3 @@ Key features include:
 Active Directory domain join is available on Windows Server platform versions released on or after [August 18, 2026](release-2026-08-18-windows.md), in all AWS Regions where Elastic Beanstalk is available.
 
 For more information, see [Joining instances to an Active Directory domain](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-activedirectory.html) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

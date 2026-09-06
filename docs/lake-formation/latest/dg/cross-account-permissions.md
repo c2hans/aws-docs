@@ -59,7 +59,3 @@ For considerations and limitation, see [Cross-account data sharing best practice
 [Accessing and viewing shared Data Catalog tables and databases](viewing-shared-resources.md)
 [Creating resource links](creating-resource-links.md)
 [Troubleshooting cross-account access](troubleshooting.md#trouble-cross-account)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

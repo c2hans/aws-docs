@@ -102,7 +102,3 @@ After you review your search results, you can generate an assessment report from
 + [Filter and grouping options for evidence finder](evidence-finder-filters-and-groups.md)
 + [Example use cases for evidence finder](example-use-cases-for-evidence-finder.md)
 + [Troubleshooting evidence finder issues](evidence-finder-issues.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

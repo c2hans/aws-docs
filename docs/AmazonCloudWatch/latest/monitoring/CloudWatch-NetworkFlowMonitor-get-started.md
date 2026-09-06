@@ -13,7 +13,3 @@ To help you get started, the section provides a high level overview of the steps
 + On a regular basis:
   + Review network flow information in the monitors that you've created, to learn about and help troubleshoot network impairments in your workloads.
   + Review workload insights for the network flows that you're monitoring, to determine if the monitors that you've created are covering the most relevant network flows or if it would be helpful to create new monitors.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

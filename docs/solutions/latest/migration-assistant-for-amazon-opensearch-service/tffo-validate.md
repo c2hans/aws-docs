@@ -42,7 +42,3 @@ console clusters curl target /<INDEX>/_search?pretty -X POST -H 'Content-Type: a
 ```
 
 If you have aggregations, dashboards, or application queries that depend on these fields, exercise those as well, and compare the results against the source before you switch production traffic to the target.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

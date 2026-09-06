@@ -35,7 +35,3 @@ Example of a test set with conversations
 | 6 | 2 | User | book a root canal appointment today | MakeAppointment | AppointmentType = root canal | Date = today |  |
 | 7 | 2 | Agent | At what time should I schedule your appointment? | MakeAppointment |  |  |  |
 | 8 | 2 | User | eleven a.m. | MakeAppointment |  |  | Time = eleven a.m. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

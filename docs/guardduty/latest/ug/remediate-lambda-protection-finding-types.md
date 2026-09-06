@@ -30,7 +30,3 @@ When GuardDuty generates [Lambda Protection finding types](lambda-protection-fin
    1. Review the Lambda code and update the libraries imports and [Lambda function layers](https://docs.aws.amazon.com/lambda/latest/dg/chapter-layers.html) to remove the potentially suspicious libraries and layers.
 
    1. Mitigate Amazon Inspector findings related to the Lambda function involved in the finding.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

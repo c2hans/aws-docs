@@ -36,7 +36,3 @@ A schedule query run is only available in the **Schedule history** list for 24 h
 For a demo of scheduling a query, watch the following video.
 
 [![AWS Videos](http://img.youtube.com/vi/gTw0XUpO8sw/0.jpg)](http://www.youtube.com/watch?v=gTw0XUpO8sw)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

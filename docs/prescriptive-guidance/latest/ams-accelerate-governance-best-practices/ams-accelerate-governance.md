@@ -124,7 +124,3 @@ It's a best practice to use tag-based alert notifications. Alert notifications s
 | Operations: Patching | An advance notice of each upcoming maintenance window<br />Patching statuses | **ams:rt:ams-managed**<br />**AmsDefaultPatchKey ** |
 | Operations: Incidents | Logging the occurrence of incidents<br />Incident updates<br />Incident resolution notices | **ams:rt:ams-managed** |
 | Operations: Backups | AWS Backup job failures<br />AWS Backup job expirations<br />Amazon Relational Database Service (Amazon RDS) backup job failures | **ams:rt:ams-managed**<br />**ams:rt:backup-orchestrator **<br />**ams-onboarding-backup-plan ** |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

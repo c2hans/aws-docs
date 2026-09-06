@@ -118,7 +118,3 @@ The Amazon Q Business browser extension integration does not support [actions or
 + **Amazon Q doesn't recognize updated information when my web page changes.**
 
   Amazon Q only has access to a snapshot of a web page. Similar to a photograph, this is all the information in the web page from the time it was uploaded to Amazon Q. To refresh the snapshot of your page, remove the current snapshot of the web page, choose a refreshed snapshot of the page, and choose **Summarize** or **Upload** for summarizing or further contextual analysis.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

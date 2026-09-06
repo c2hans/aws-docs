@@ -18,7 +18,3 @@ We recommend that you consider the following next steps:
 1. Make sure that you meet all the prerequisites for a migration based on the [Prerequisites](prerequisites.md) section of this guide. Teradata makes a commercially reasonable effort to make Teradata Vantage available on AWS systems 24/7/365. Teradata targets an SLA (excluding planned downtime) of 99.9 percent measured monthly. For operating model and services options, see [Teradata Vantage on AWS](https://www.teradata.com/Cloud/AWS) in the Teradata documentation.
 
 1. Define your security requirements. For more information on security compliance, see [Cloud Data Security as-a-service](https://www.teradata.com/Cloud/Data-Security) in the Teradata documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

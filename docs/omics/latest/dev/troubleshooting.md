@@ -129,7 +129,3 @@ For more information about using Kiro CLI with AWS HealthOmics for troubleshooti
 
 **Warning**
 When working with Kiro CLI, review all generated content and proposed actions before proceeding. Provide feedback to improve response quality and to match your workflow’s requirements. For more information, see [ Security considerations and best practices](https://docs.aws.amazon.com/kiro/latest/userguide/command-line-chat-security.html) for Kiro.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

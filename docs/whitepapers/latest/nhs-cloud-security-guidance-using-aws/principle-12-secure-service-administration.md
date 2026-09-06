@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/nhs-cloud-security-gu
  Satisfying the requirements of this principle requires no action on the part of the customer; they are fulfilled by AWS under the Shared Responsibility Model for Security.
 
  Equally, customers remain responsible for conducting securely the administration of the resources and systems they have chosen to deploy to the AWS Cloud. This whitepaper’s purpose is to provide specific advice to assist customers to achieve this.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

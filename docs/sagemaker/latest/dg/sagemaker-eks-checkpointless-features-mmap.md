@@ -294,7 +294,3 @@ mmap_data_module.load_checkpoint(checkpoint)
 + The wrapper delegates most attribute access to the underlying data module using \_\_getattr\_\_
 + Only data loading ranks actually initialize and use the underlying data module; other ranks use fake dataloaders
 + Cached dataloader lengths are maintained to optimize performance during training resumption
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ Amazon Route 53 Recovery Controls provides the following APIs for data retrieval
 | <a name="route53-recovery-control-config-ListRoutingControls"></a>[ListRoutingControls](https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel-controlpanelarn-routingcontrols.html) | List routing controls | Read |
 | <a name="route53-recovery-control-config-ListSafetyRules"></a>[ListSafetyRules](https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel-controlpanelarn-safetyrules.html) | List safety rules | Read |
 | <a name="route53-recovery-control-config-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/recovery-cluster/latest/api/tags-resource-arn.html) | List tags for a resource | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

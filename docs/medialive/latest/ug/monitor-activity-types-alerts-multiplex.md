@@ -17,7 +17,3 @@ The following table lists the alerts that MediaLive might generate for a multipl
 | 7003  | Active Encoder Switched for Program  | The multiplex has switched to using a different encoder pipeline for the output of a multiplex program.  |
 | 7004  | Active Encoder Sent Fill or Slate Frames  | Program ${multiplex\_program\_name} is receiving fill or slate frames from the active encoder.  |
 | 7005  | MPTS Bitrate Overflow  | The bitrate for the MPTS is over the limit. The MPTS bitrate is the sum of the bitrate for all of the programs. The problem should resolve itself within a few seconds. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

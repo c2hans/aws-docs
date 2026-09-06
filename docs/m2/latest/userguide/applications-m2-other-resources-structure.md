@@ -54,7 +54,3 @@ The values that you specify for  the first  two properties can be in any of the 
 + Gigabytes: append a G to the value.
 
 The value for the third property represents the cache duration in seconds, and can have value of -1 (cache forever), or can range from 0 (never cache) to 999. In the context of managed application deployments, the default value is -1.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

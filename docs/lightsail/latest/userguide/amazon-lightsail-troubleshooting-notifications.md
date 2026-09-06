@@ -24,7 +24,3 @@ To fix this issue, remove the **null** email notification contact, and add the c
 
 **I have not received SMS text message notifications, or I stopped receiving them recently**
 You may have opted out of receiving SMS text message notifications. You can opt out by responding to an SMS text message notification with `ARRET` (French), `CANCEL`, `END`, `OPT-OUT`, `OPTOUT`, `QUIT`, `REMOVE`, `STOP`, `TD`, or `UNSUBSCRIBE`. If you opt out a mobile phone number, you must wait 30 days before you are able to add that mobile phone number again as a notification contact in Lightsail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

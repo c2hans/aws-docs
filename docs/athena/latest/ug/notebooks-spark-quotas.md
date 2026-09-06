@@ -17,7 +17,3 @@ The following table lists the service quotas for Amazon Athena for Apache Spark.
 | Apache Spark DPU concurrency | 160 | No | PySpark Version 3 | The maximum number of data processing units (DPUs) that you can consume concurrently for Apache Spark calculations for a single account in the current AWS Region. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. |
 | Apache Spark session DPU concurrency | 60 | No | PySpark Version 3 | The maximum number of DPUs you can consume concurrently for an Apache Spark calculation within a session. |
 | On-Demand DPUs | 4 | No | Apache Spark Version 3.5 | The maximum number of data processing units (DPUs) that you can consume concurrently for Apache Spark interactive sessions in the current AWS Region. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

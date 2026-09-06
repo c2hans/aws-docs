@@ -27,7 +27,3 @@ Amazon CloudWatch Application Signals provides the following APIs for data retri
 | <a name="application-signals-ListServiceStates"></a>[ListServiceStates](https://docs.aws.amazon.com/applicationsignals/latest/APIReference/API_ListServiceStates.html) | List service states | List |
 | <a name="application-signals-ListServices"></a>[ListServices](https://docs.aws.amazon.com/applicationsignals/latest/APIReference/API_ListServices.html) | List services | List |
 | <a name="application-signals-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/applicationsignals/latest/APIReference/API_ListTagsForResource.html) | List tags for an Amazon CloudWatch Application Signals resource | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,7 +51,3 @@ The result of this setup is that you own the files, but they reside in another a
    1. Specify the other account's Amazon S3 bucket for your output **Destination**. On the **Create job** page, in the **Job** pane on the left, choose an output group. In the group settings section on the right, find **Destination**.
 
    1. Enable **Access control**, and then choose **Bucket owner full control** for **Canned access control list**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

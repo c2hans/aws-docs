@@ -40,7 +40,3 @@ Each card shows the text and its entity type.
 Next to each of the entities, a score represents the confidence that Comprehend Medical has in the identification of the text as the type of entity shown.
 
 To see the JSON structure of both the request and the results, choose **Application integration**. The JSON structure is the same as the structure returned by the operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend Medical. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend-medical` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

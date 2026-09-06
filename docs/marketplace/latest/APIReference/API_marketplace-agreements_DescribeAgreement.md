@@ -45,10 +45,18 @@ Required: Yes
    "agreementId": "string",
    "agreementType": "string",
    "endTime": number,
+   "endTimeBehavior": {
+      "reasonCode": "string",
+      "renewalSummary": {
+         "offerId": "string"
+      },
+      "type": "string"
+   },
    "estimatedCharges": {
       "agreementValue": "string",
       "currencyCode": "string"
    },
+   "initialAgreementId": "string",
    "proposalSummary": {
       "offerId": "string",
       "offerSetId": "string",
@@ -99,9 +107,20 @@ Pattern: `[A-Za-z]+`
 The date and time when the agreement ends. The field is `null` for pay-as-you-go agreements, which don’t have end dates.
 Type: Timestamp
 
+ ** [endTimeBehavior](#API_marketplace-agreements_DescribeAgreement_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_DescribeAgreement-response-endTimeBehavior"></a>
+The behavior of the agreement when it reaches its end date. For example, whether the agreement renews, and if it doesn't, the reason why.
+This field is present for every active agreement that has an end date. It is not present for an agreement that has no end date, because such an agreement never reaches an end time. Pay-as-you-go agreements are the most common example. It is also not present for an agreement that is no longer active.
+Type: [EndTimeBehavior](API_marketplace-agreements_EndTimeBehavior.md) object
+
  ** [estimatedCharges](#API_marketplace-agreements_DescribeAgreement_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_DescribeAgreement-response-estimatedCharges"></a>
 The estimated cost of the agreement.
 Type: [EstimatedCharges](API_marketplace-agreements_EstimatedCharges.md) object
+
+ ** [initialAgreementId](#API_marketplace-agreements_DescribeAgreement_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_DescribeAgreement-response-initialAgreementId"></a>
+The unique identifier of the very first agreement in a chain of related agreements, such as renewals or replacements. It stays the same across all agreements in that chain, which lets you trace an agreement back to the original. When an agreement isn't derived from another agreement, its `InitialAgreementId` is its own `AgreementId`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[A-Za-z0-9_/-]+`
 
  ** [proposalSummary](#API_marketplace-agreements_DescribeAgreement_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_DescribeAgreement-response-proposalSummary"></a>
 A summary of the proposal received from the proposer.
@@ -119,14 +138,13 @@ Type: Timestamp
 The current status of the agreement.
 Statuses include:
 +  `ACTIVE` – The terms of the agreement are active.
-+  `ARCHIVED` – The agreement ended without a specified reason.
 +  `CANCELLED` – The acceptor ended the agreement before the defined end date.
 +  `EXPIRED` – The agreement ended on the defined end date.
 +  `RENEWED` – The agreement was renewed into a new agreement (for example, an auto-renewal).
 +  `REPLACED` – The agreement was replaced using an agreement replacement offer.
 +  `TERMINATED` – The agreement ended before the defined end date because of an AWS termination (for example, a payment failure).
 Type: String
-Valid Values: `ACTIVE | ARCHIVED | CANCELLED | EXPIRED | RENEWED | REPLACED | TERMINATED`
+Valid Values: `ACTIVE | CANCELLED | EXPIRED | RENEWED | REPLACED | TERMINATED`
 
 ## Errors
 <a name="API_marketplace-agreements_DescribeAgreement_Errors"></a>
@@ -212,7 +230,7 @@ This example illustrates one usage of DescribeAgreement.
         "accountId": "123456789010"
    },
    "startTime": "2019-10-08T21:40:43.644Z",
-   "endTime": "2023-10-08T21:40:43.644Z",
+   "endTime": "2026-10-08T21:40:43.644Z",
    "acceptanceTime": "2019-10-08T00:00:00.000Z",
    "agreementType": "PurchaseAgreement",
    "proposalSummary": {
@@ -224,11 +242,19 @@ This example illustrates one usage of DescribeAgreement.
        ],
        "offerId": "ABCDEFGHIJKLMNOP123",
        "offerSetId": "KMZQABLKAXWYG3NW516"
-   ],
+   },
    "status": "ACTIVE",
    "estimatedCharges": {
        "currencyCode": "USD",
        "agreementValue": "1000"
+   },
+   "initialAgreementId": "fEXAMPLE-0aa6-4e42-8715-6a1EXAMPLE95",
+   "endTimeBehavior": {
+       "type": "EXPIRE",
+       "reasonCode": "ACCEPTOR_RENEW_OPTED_OUT",
+       "renewalSummary": {
+           "offerId": "ABCDEFGHIJKLMNOP123"
+       }
    }
 }
 ```
@@ -247,7 +273,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/marketplace-agreement-2020-03-01/DescribeAgreement)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/DescribeAgreement)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/marketplace-agreement-2020-03-01/DescribeAgreement)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

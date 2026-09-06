@@ -225,7 +225,3 @@ The following are security considerations for this tutorial.
 + Consider using AWS Secrets Manager for storing sensitive information like the MATCH\_PASSWORD and FASTLANE\_SESSION.
 
 This sample provides a setup for iOS code signing with Fastlane in CodeBuild using Amazon S3 for certificate storage. You may need to adjust some steps based on your specific project requirements and CodeBuild environment. This approach leverages AWS services for enhanced security and integration within the AWS ecosystem.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

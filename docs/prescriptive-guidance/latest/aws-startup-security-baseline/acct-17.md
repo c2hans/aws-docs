@@ -61,7 +61,3 @@ For more information about the `aws:RequestedRegion` condition key, see [AWS glo
 
 **Note**
 There is no additional charge for IAM policies. If you later adopt [AWS Organizations](https://aws.amazon.com/organizations/), you can implement this same restriction as a [Service control policy (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) for centralized enforcement across accounts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -239,7 +239,3 @@ View details about updates to Accelerate service-linked roles since this service
 | Accelerate started tracking changes | Accelerate started tracking changes for its service-linked roles. | November 30, 2022 |
 | New service-linked role – [Detective Controls](#slr-deploy-detect-controls) | Accelerate added a new service-linked role to deploy Accelerate detective controls.<br />AWS Managed Services uses this service-linked role to deploy config-recorder, config rules and S3 bucket detective controls. | October 13, 2022 |
 | New service-linked role – [Deployment Toolkit](#slr-deploy-acc) | Accelerate added a new service-linked role to deploy Accelerate infrastructure.<br />this role deploys AMS Accelerate infrastructure into customer accounts. | June 09, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

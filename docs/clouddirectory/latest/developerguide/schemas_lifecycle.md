@@ -38,7 +38,3 @@ Published and applied schemas must have a version associated with them. For more
 A published schema can be applied to data directories. A schema that has been applied to a data directory is said to be applied. Once you apply a schema to a data directory, you can use the schema's facets when creating objects. You can apply multiple schemas to the same data directory. Only the following changes are permitted on an applied schema.
 +  Add a facet to an applied schema
 +  Add a non-required attribute to an applied schema
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ When you integrate Amazon WorkMail with your corporate Active Directory, or you 
    The **Enable groups** dialog box appears and asks you to confirm the operation.
 
 1. As needed, review and change the primary email address for each group, and then choose **Enable**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

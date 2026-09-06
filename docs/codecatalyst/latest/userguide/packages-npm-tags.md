@@ -36,7 +36,3 @@ When the same tag is present on the same package in both the upstream and local 
 | U | `web-helper` |  *latest* (alias for version 1.0.1) | June 1, 2023 |
 
 In this case, when the npm client fetches the tags for package *web-helper* from repository `R`, the *latest* tag will alias the version *1.0.1* because it was updated last. This makes it easy to consume new package versions in an upstream repository that are not yet present in a local repository by running `npm update`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

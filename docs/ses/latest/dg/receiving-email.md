@@ -21,7 +21,3 @@ Email receiving can only be used if your account is in an AWS Region where SES s
 + [Setting up Amazon SES email receiving](receiving-email-setting-up.md)
 + [Amazon SES email receiving console walkthroughs](receiving-email-walkthroughs.md)
 + [Viewing metrics for Amazon SES email receiving](receiving-email-metrics.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

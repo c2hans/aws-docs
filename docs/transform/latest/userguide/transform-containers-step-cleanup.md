@@ -21,7 +21,3 @@ After you complete validation, AWS Transform tears down the test infrastructure 
 For Amazon ECS deployments, this step removes all resources that were created during the test deployment, including compute resources, load balancers, storage, and networking components.
 
 For Amazon EKS deployments, the cleanup is scoped by label to your specific project. Only resources tagged for this containerization workflow are removed. Other workloads running on the same Amazon EKS cluster are not affected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

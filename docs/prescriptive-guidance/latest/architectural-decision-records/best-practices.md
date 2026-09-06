@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/architectur
 + A wiki page, which makes the ADRs accessible to all team members
 
 **Address non-compliant code.** The ADR process doesn't solve the issue of non-compliant legacy code. If you have legacy code that doesn't support the established ADRs, you can either update the outdated code base or artifacts gradually, while introducing new changes, or your team can decide to refactor the code explicitly by creating technical debt tasks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

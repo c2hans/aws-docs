@@ -19,7 +19,3 @@ When you start the event, the **Media Info** in the output will report the input
 
 **Note**
 If you choose the **Interleave 4K** input type, you must make sure that the source is formatted as 2SI, not as Quadrant. If you mismatch the source format and the input type, Elemental Live will ingest the source, but there will be readily observable video issues.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,7 +50,3 @@ Aurora works in conjunction with [RDS Proxy](https://aws.amazon.com/rds/proxy/),
 <a name="aurora-features-data-api"></a>
 
 [Data API](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.html) is an easy-to-use, secure HTTPS API for executing SQL queries against Aurora databases. It eliminates the need for database drivers, client-side connection pools, and VPC networking configuration to securely connect to an Aurora database, which makes accessing Aurora as simple as making an API call. Data API also improves application scalability by automatically pooling and sharing database connections and is integrated with [AWS IAM](https://aws.amazon.com/iam/) and [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/). You can call Data API via applications built with an AWS SDK or through [AWS AppSync GraphQL APIs](https://aws.amazon.com/appsync/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

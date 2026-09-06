@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  Deploying WorkSpaces with Ubuntu for developers may reduce development costs for a large population of users, moving away gradually from an incumbent, more costly EUC solution.
 +  Using a vendor-supplied profile management solution may now be less functional and performant than using a standard Microsoft solution such as FSLogix.
 +  It may be possible to dispense with complex legacy remote access solutions that have evolved over time in favor of the pervasive and secure capabilities available with the current generation of Amazon WorkSpaces and AppStream remoting protocols.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

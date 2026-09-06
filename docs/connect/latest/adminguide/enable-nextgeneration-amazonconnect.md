@@ -9,7 +9,8 @@ Connect Customer is an AI-native solution that helps companies of any scale deli
 
 **Topics**
 + [AI capabilities](#customer-ai-capabilities)
-+ [Updating existing Connect Customer instances](#how-to-enable-ac)
++ [Features only available in Connect Customer](#connect-customer-only-features)
++ [Updating an existing instance to Connect Customer](#how-to-enable-ac)
 + [How to switch to Customer Basic](#how-to-disable-ac)
 
 ## AI capabilities
@@ -24,10 +25,44 @@ Connect Customer embeds AI at every stage of the customer journey. The following
 + **Performance evaluations** — evaluate both human agents and self-service interactions
 + **Forecasting and agent scheduling** — predict contact volumes and optimize agent schedules
 + **Flow designer analytics** — insights into contact flow performance
-+ **Custom metrics in dashboards and APIs** — build tailored views of contact center performance
-+ **Customer-first callbacks** — dials the customer first and only offers the callback to an agent if the customer answers the call
 
-## Updating existing Connect Customer instances
+## Features only available in Connect Customer
+<a name="connect-customer-only-features"></a>
+
+The following features are only available in Connect Customer. They are not included in Connect Customer Basic.
++ [Agentic customer experience designer (ACXD)](acxd.md)
+  + No-code visual canvas
+  + Blended AI logic — agentic AI reasoning and deterministic AI
+  + Live sync of web or mobile app during live voice or chat
++ [Agentic voice](agentic-voice.md)
+  + 50\+ languages
+  + 100\+ voices
+  + Third-party speech-to-text (STT) and text-to-speech (TTS) model support
++ [AI agent observability](monitor-ai-agent-performance.md)
+  + Out-of-the-box AI agent performance metrics evaluated using LLM-as-a-judge
++ [AI assistant for natural language configuration](connect-assistant-ui-builder.md)
+  + Step-by-step guides
+  + Workspace pages
++ Queue management
+  + [Contact estimated wait time](get-queue-metrics.md#get-metrics-tips)
+  + [Customer-first callbacks](customer-first-cb.md) — dials the customer first and only offers the callback to an agent if the customer answers the call
++ [Conversational analytics](analyze-conversations.md)
+  + Email conversational analytics, including:
+    + Sensitive data redaction
+    + Summarization
+    + Categorization
+    + Rules-based actions
+  + Case summarization
+  + Information extraction
+    + Rules-based information extraction for voice and chat contacts
+  + Recording ingestion and conversational analytics
++ [Performance evaluations](evaluations.md)
+  + Self-service interaction evaluations
+  + AI agent performance evaluations
++ [Flow designer analytics](monitor-flow-performance.md)
++ [Custom metrics in dashboards and APIs](custom-metrics-topic.md) — build tailored views of contact center performance
+
+## Updating an existing instance to Connect Customer
 <a name="how-to-enable-ac"></a>
 
 All new instances are Connect Customer instances.
@@ -49,41 +84,10 @@ If your Connect Customer instance was created before Connect Customer was availa
 ## How to switch to Customer Basic
 <a name="how-to-disable-ac"></a>
 
-Connect Customer Basic does not include all the AI capabilities available in Connect Customer. If you switch to Connect Customer Basic, some capabilities you are using today might no longer be available, including:
-+ Agentic customer experience designer (ACXD)
-  + No-code visual canvas
-  + Blended AI logic - agentic AI reasoning and deterministic AI
-  + Live sync of web or mobile app during live voice or chat
-+ [Agentic voice](agentic-voice.md)
-  + 50\+ languages
-  + 100\+ voices
-  + Third-party speech-to-text (STT) and text-to-speech (TTS) model support
-+ [AI agent observability](monitor-ai-agent-performance.md)
-  + Out-of-the-box AI agent performance metrics evaluated using LLM-as-a-judge
-+ [AI assistant for natural language configuration](connect-assistant-ui-builder.md)
-  + Step-by-step guides
-  + Workspace pages
-+ Queue management
-  + [Contact estimated wait time](get-queue-metrics.md#get-metrics-tips)
-  + [Customer-first callbacks](customer-first-cb.md)
-+ [Conversational analytics](analyze-conversations.md)
-  + Email conversational analytics, including:
-    + Sensitive data redaction
-    + Summarization
-    + Categorization
-    + Rules-based actions
-  + Case summarization
-  + Information extraction
-    + Rules-based information extraction for voice and chat contacts
-  + Recording ingestion and conversational analytics
-+ [Performance evaluations](evaluations.md)
-  + Self-service interaction evaluations
-  + AI agent performance evaluations
-+ [Flow designer analytics](monitor-flow-performance.md)
-+ [Custom metrics in dashboards and APIs](custom-metrics-topic.md)
+Connect Customer Basic does not include all the features available in Connect Customer. If you switch to Connect Customer Basic, you lose access to the features listed in [Features only available in Connect Customer](#connect-customer-only-features), and some capabilities you currently use might no longer be available.
 
 **Warning**
-If these features are configured in contact flows, you might encounter runtime errors.
+If features only available in Connect Customer are configured in contact flows and you switch to Connect Customer Basic, you might encounter runtime errors.
 
 Complete the following steps to switch from Connect Customer to Connect Customer Basic for a given Connect Customer instance.
 
@@ -100,7 +104,3 @@ Complete the following steps to switch from Connect Customer to Connect Customer
 1. Choose **Disable**.
 
    A dialog box appears prompting you to confirm that you want to switch to Customer Basic. Choose **Disable** to confirm.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

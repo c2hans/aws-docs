@@ -95,7 +95,3 @@ If you added documents to the index using [BatchPutDocument](https://docs.aws.am
 For documents indexed from an Amazon S3 data source, you create fields using a [JSON metadata file](https://docs.aws.amazon.com/kendra/latest/dg/s3-metadata.html) that includes the fields information.
 
 If you use a supported database as your data source, you can configure your fields using the [field mappings option](https://docs.aws.amazon.com/kendra/latest/dg/data-source-database.html#data-source-procedure-database).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

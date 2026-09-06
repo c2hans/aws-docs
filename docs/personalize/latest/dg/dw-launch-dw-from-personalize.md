@@ -31,7 +31,3 @@ To launch Data Wrangler from Amazon Personalize, you use the Amazon Personalize 
 1. Review the details for your SageMaker AI domain.
 
 1. Choose **Import data with Data Wrangler**. SageMaker AI Studio Classic starts creating your environment, and when complete, the **Data flow** page of Data Wrangler in SageMaker AI Studio Classic opens in a new tab. It can take up to five minutes for SageMaker AI Studio Classic to finish creating your environment. When it finishes, you are ready to start importing data into Data Wrangler. For more information, see [Importing data into Data Wrangler](dw-import-data.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

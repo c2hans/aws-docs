@@ -46,7 +46,3 @@ The range of values for the recall difference between facets *a* and *d* for bin
 + Positive values are obtained when there is higher recall for facet *a* than for facet *d*. This suggests that the model finds more of the true positives for facet *a* than for facet *d*, which is a form of bias.
 + Values near zero indicate that the recall for facets being compared is similar. This suggests that the model finds about the same number of true positives in both of these facets and is not biased.
 + Negative values are obtained when there is higher recall for facet *d* than for facet *a*. This suggests that the model finds more of the true positives for facet *d* than for facet *a*, which is a form of bias.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

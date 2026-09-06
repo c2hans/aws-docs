@@ -969,7 +969,3 @@ The [AWS IoT Greengrass Machine Learning SDK](lambda-functions.md#lambda-sdks-ml
 <a name="contact-us"></a>
 
 We welcome your feedback. To contact us, visit [AWS re:Post](https://repost.aws/) and use the [AWS IoT Greengrass tag](https://repost.aws/tags/TA4ckIed1sR4enZBey29rKTg/aws-io-t-greengrass).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

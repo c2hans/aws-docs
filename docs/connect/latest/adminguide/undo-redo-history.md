@@ -23,7 +23,3 @@ To access a history of your actions that you can undo, choose the **Undo** dropd
 | Dragging unconnected connector | This action cannot be undone. |
 | Folding of notes | This action cannot be undone. |
 | Page reload | The undo history is not retained after a page is reloaded. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

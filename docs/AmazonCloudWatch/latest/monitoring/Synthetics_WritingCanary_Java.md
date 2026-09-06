@@ -257,7 +257,3 @@ The CloudWatch Synthetics Java runtime creates CloudWatch logs for every canary 
 + *Default* – INFO
 
 Apart from the above environment variables, there is a default environment variable added for Java runtime, `AWS_LAMBDA-EXEC_WRAPPER` environment variable to your function, and set its value to `/opt/synthetics-otel-instrument`. This environment variable modifies your function's startup behavior for telemetry. If this environment variable already exists, make sure that it's set to the required value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -170,7 +170,3 @@ The `finally` block requests and confirms table deletion even if writing or read
 + For more Amazon DynamoDB operations and examples, see [Amazon DynamoDB](services-dynamodb.md).
 + For generated client operations and model types, see the [Amazon DynamoDB API reference](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/).
 + For more information about typed inputs and outputs, see [Making requests and handling responses](using-requests.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Python. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-python` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

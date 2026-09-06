@@ -24,7 +24,3 @@ For more information, see [Logging AWS Cloud9 API calls with AWS CloudTrail](clo
 If you're using an AWS Cloud9 EC2 development environment, you can monitor the reliability, availability, and performance of the associated Amazon EC2 instance. With instance status monitoring, for example, you can quickly determine whether Amazon EC2 has detected any problems that might prevent your instances from running applications.
 
 For more information, see [Monitoring Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring_ec2.html) in the *Amazon EC2 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

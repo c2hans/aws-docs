@@ -29,7 +29,3 @@ See [Neptune Loader Error and Feed Messages](loader-message.md) for a list of th
 + [Neptune Loader Get-Status `errorLogs` examples](load-api-reference-error-logs-examples.md)
   + [Example detailed status response when errors occurred](load-api-reference-error-logs-examples.md#load-api-reference-status-examples-details-request-errors)
   + [Example of a `Data prefetch task interrupted` error](load-api-reference-error-logs-examples.md#load-api-reference-status-examples-task-interrupted)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

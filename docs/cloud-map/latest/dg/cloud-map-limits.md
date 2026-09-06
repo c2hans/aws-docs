@@ -20,7 +20,3 @@ AWS Cloud Map resources are subject to the following account-level service quota
 **\*** When you create a namespace, we automatically create an Amazon Route 53 hosted zone. This hosted zone counts against the quota on the number of hosted zones that you can create with an AWS account. For more information, see [Quotas on hosted zones](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DNSLimitations.html#limits-api-entities-hosted-zones) in the *Amazon Route 53 Developer Guide*.
 
 **\*\*** Increasing the instances for DNS namespaces for AWS Cloud Map requires an increase to the records per hosted zone Route 53 limit, which incurs additional charges.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Map. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud-map` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

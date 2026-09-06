@@ -18,7 +18,3 @@ The following code examples show how to use the basics of AWS Migration Hub with
   + [`ListApplications`](example_migration-hub_ListApplications_section.md)
   + [`ListCreatedArtifacts`](example_migration-hub_ListCreatedArtifacts_section.md)
   + [`ListMigrationTasks`](example_migration-hub_ListMigrationTasks_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

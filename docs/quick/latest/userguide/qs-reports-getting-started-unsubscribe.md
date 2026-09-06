@@ -16,7 +16,3 @@ You can unsubscribe from Quick Sight pixel perfect reporting at any time. Once y
 1. On the **Manage subscriptions** page, locate the **Pixel-Perfect Reports** section and choose **Manage**.
 
 1. Scroll down to your chosen subscription plan and choose **Cancel subscription**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,7 +43,3 @@ AWS WAF provides the following APIs for data retrieval.
 | <a name="waf-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_ListTagsForResource.html) | Retrieve the tags for a resource | Read |
 | <a name="waf-ListWebACLs"></a>[ListWebACLs](https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_ListWebACLs.html) | Retrieve an array of WebACLSummary objects | List |
 | <a name="waf-ListXssMatchSets"></a>[ListXssMatchSets](https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_ListXssMatchSets.html) | Retrieve an array of XssMatchSet objects | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

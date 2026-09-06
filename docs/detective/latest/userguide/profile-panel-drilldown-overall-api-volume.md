@@ -152,7 +152,3 @@ There are no additional charges to query raw data logs in Detective. Usage charg
 If you see logs in Detective, but the query returned no results, it could happen because of the following reasons.
 + Raw logs may become available in Detective before showing up in Security Lake log tables. Try again later.
 + Logs may be missing from Security Lake. If you waited for an extended period of time, it indicates that logs are missing from Security Lake. Contact your Security Lake administrator to resolve the issue.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -67,6 +67,7 @@ The following data types are supported:
 +  [DeploymentCircuitBreaker](API_DeploymentCircuitBreaker.md)
 +  [DeploymentConfiguration](API_DeploymentConfiguration.md)
 +  [DeploymentController](API_DeploymentController.md)
++  [DeploymentEarlySuccessCriteria](API_DeploymentEarlySuccessCriteria.md)
 +  [DeploymentEphemeralStorage](API_DeploymentEphemeralStorage.md)
 +  [DeploymentLifecycleHook](API_DeploymentLifecycleHook.md)
 +  [DeploymentLifecycleHookDetail](API_DeploymentLifecycleHookDetail.md)
@@ -152,6 +153,7 @@ The following data types are supported:
 +  [ResourceRequirement](API_ResourceRequirement.md)
 +  [Rollback](API_Rollback.md)
 +  [RuntimePlatform](API_RuntimePlatform.md)
++  [RuntimePlatformOverride](API_RuntimePlatformOverride.md)
 +  [S3FilesVolumeConfiguration](API_S3FilesVolumeConfiguration.md)
 +  [Scale](API_Scale.md)
 +  [Secret](API_Secret.md)
@@ -176,6 +178,7 @@ The following data types are supported:
 +  [ServiceRegistry](API_ServiceRegistry.md)
 +  [ServiceRevision](API_ServiceRevision.md)
 +  [ServiceRevisionLoadBalancer](API_ServiceRevisionLoadBalancer.md)
++  [ServiceRevisionOverrides](API_ServiceRevisionOverrides.md)
 +  [ServiceRevisionSummary](API_ServiceRevisionSummary.md)
 +  [ServiceVolumeConfiguration](API_ServiceVolumeConfiguration.md)
 +  [Session](API_Session.md)
@@ -203,7 +206,3 @@ The following data types are supported:
 +  [Volume](API_Volume.md)
 +  [VolumeFrom](API_VolumeFrom.md)
 +  [VpcLatticeConfiguration](API_VpcLatticeConfiguration.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic Container Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

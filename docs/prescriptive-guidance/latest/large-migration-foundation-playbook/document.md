@@ -32,7 +32,3 @@ The following is an example of how you might record your decisions to some of th
 | Security | Active Directory | Build a domain controller in each VPC, and link the subnet of that VPC to your Active Directory site. For more information, see [Designing the Site Topology](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/designing-the-site-topology). This configures all clients to use the correct domain controller. |
 | Server access | Users must retrieve a password from CyberArk to connect to the source machines. |
 | AWS Management Console access | Users must use federated login to access the AWS Management Console. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

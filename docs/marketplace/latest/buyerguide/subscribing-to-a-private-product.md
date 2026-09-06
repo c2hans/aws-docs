@@ -10,7 +10,3 @@ Some products are not publicly available to browse in AWS Marketplace. These pro
 After the private offer has been extended to both the user and the administrator accounts, a Private Marketplace administrator can approve the product in your experience. You will be able to request the product if your administrator has enabled product procurement requests. For more information, see [Your Private Marketplace experience](your-private-marketplace-experience.md) to check if you can create requests.
 
 After the product has been approved directly by an administrator or via your request, you can subscribe to the product like any other private offer. Refer [Viewing and subscribing to a private offer](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-private-offers-subscribing.html) for details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

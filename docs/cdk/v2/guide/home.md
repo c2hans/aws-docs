@@ -296,7 +296,3 @@ To learn more about related topics to the AWS CDK, see the following:
 To learn more about tools related to the AWS CDK that can be used to simplify serverless application development and deployment, see the following:
 +  ** [AWS Serverless Application Model](https://aws.amazon.com/serverless/sam/) ** – An open-source developer tool that simplifies and improves the experience of building and running serverless applications on AWS.
 +  ** [AWS Chalice](https://github.com/aws/chalice) ** – A framework for writing serverless apps in Python.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

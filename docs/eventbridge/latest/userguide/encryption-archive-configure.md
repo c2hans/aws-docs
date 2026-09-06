@@ -60,7 +60,3 @@ If you have specify that EventBridge use a customer managed key for encrypting t
 
 **To update the KMS key used for encrypting events stored in an archive (CLI)**
 + When calling `[update-archive](https://docs.aws.amazon.com/cli/latest/reference/events/update-archive.html)`, use the `kms-key-identifier` option to specify the customer managed key for EventBridge to use for encrypting events stored in the archive.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

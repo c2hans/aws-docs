@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 +  [Artifact Repository - AWS CodeArtifact](https://aws.amazon.com/codeartifact/)
 +  [Fully Managed Container Registry - Amazon Elastic Container Registry](https://aws.amazon.com/ecr/)
 +  [Code Repositories and Artifact Management \| AWS Marketplace](https://aws.amazon.com/marketplace/solutions/devops/code-repositories-and-artifact-management?aws-marketplace-cards.sort-by=item.additionalFields.headline&aws-marketplace-cards.sort-order=asc&awsf.aws-marketplace-devops-store-use-cases=*all)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ For Grafana workspaces that support Grafana version 8.x, see [Grafana alerting](
 1.  Find your alert in the list, and choose the **Pause** icon on the right. The **Pause** icon turns into a **Play** icon.
 
 1.  Choose the **Play** icon to resume evaluation of your alert.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

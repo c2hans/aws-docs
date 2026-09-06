@@ -48,7 +48,3 @@ When a CAPTCHA interstitial runs, if the client doesn't have a token yet, the CA
 In either case, after the client responds successfully and the script updates the token, the script resubmits the original web request using the updated token.
 
 You can configure how AWS WAF handles tokens. For information, see [Token use in AWS WAF intelligent threat mitigation](waf-tokens.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

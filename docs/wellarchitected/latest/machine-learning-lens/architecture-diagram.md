@@ -49,7 +49,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 +  **Model feature list:** A *feature store*, discussed earlier in this section (Figure 4), maintains the details of the features as well as their previous versions for any point-in-time changes.
 +  **Model algorithm code:** Changes to model algorithm code at specific points-in-time can be stored in version control media.
 +  **Model container image:** Versions of model container images for specific point-in-time changes can be stored in container repositories managed by container registry.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

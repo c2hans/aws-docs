@@ -250,7 +250,3 @@ For more information, see the following topics:
 + [GetProducts](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetProducts.html) and [language-specific AWS SDKs](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetProducts.html#API_pricing_GetProducts_SeeAlso) in the *AWS Billing and Cost Management API Reference*
 + [Reading the service price list files](reading-service-price-list-files.md)
 + [Finding prices in the service price list file](finding-prices-in-service-price-list-files.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

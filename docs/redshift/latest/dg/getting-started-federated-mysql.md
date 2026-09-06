@@ -28,7 +28,3 @@ If your cluster uses enhanced VPC routing, you might need to configure an interf
 1. Connect to your RDS MySQL and Aurora MySQL databases with an external schema. For more information, see [CREATE EXTERNAL SCHEMA](r_CREATE_EXTERNAL_SCHEMA.md). For examples on how to use federated queries, see [Example of using a federated query with MySQL](federated_query_example.md#federated_query_example_mysql).
 
 1. Run your SQL queries referencing the external schema that references your RDS MySQL and Aurora MySQL databases.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

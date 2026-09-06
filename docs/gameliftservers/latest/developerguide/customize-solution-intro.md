@@ -27,7 +27,3 @@ With a basic game hosting solution in place, use the following topics to customi
   + [Optimize game server runtime configuration on managed Amazon GameLift Servers](fleets-multiprocess.md)
   + [Work with the Amazon GameLift Servers Agent](integration-dev-iteration-agent.md)
   + [Abstract an Amazon GameLift Servers fleet designation with an alias](aliases-intro.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

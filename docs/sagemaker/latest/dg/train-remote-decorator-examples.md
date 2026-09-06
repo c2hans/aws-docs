@@ -18,7 +18,3 @@ The following notebooks provide additional code examples for different ML proble
 + To see code examples for using the @remote decorator for the previous image classification problem with a script, see the Pytorch MNIST sample script, [train.py](https://github.com/aws/amazon-sagemaker-examples/tree/main/sagemaker-remote-function/pytorch_mnist_sample_script).
 + To see how the XGBoost algorithm implemented with an @remote decorator: Open the [xgboost\_abalone.ipynb](https://github.com/aws/amazon-sagemaker-examples/tree/main/sagemaker-remote-function/xgboost_abalone) notebook.
 + To see how Hugging Face is integrated with an @remote decorator: Open the [huggingface.ipynb](https://github.com/aws/amazon-sagemaker-examples/tree/main/sagemaker-remote-function/huggingface_text_classification) notebook.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

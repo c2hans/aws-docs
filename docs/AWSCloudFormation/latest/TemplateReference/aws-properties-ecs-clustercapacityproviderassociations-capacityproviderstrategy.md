@@ -83,7 +83,3 @@ Weighted Distribution: If capacityProviderA has weight `1` and capacityProviderB
 ## See also
 <a name="aws-properties-ecs-clustercapacityproviderassociations-capacityproviderstrategy--seealso"></a>
 +  [Creating a cluster capacity provider association using an Auto Scaling group capacity provider](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-clustercapacityproviderassociations.html#aws-resource-ecs-clustercapacityproviderassociations--examples--Creating_a_cluster_capacity_provider_association_using_an_Auto_Scaling_group_capacity_provider.)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

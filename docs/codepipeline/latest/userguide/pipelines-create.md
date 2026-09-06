@@ -554,7 +554,3 @@ For this example, the deployment to CloudFormation was selected. In this step, a
 
 **Step 5: View the pipeline**
 + Now that you've created your pipeline, you can view it in the CodePipeline console and view the stack in CloudFormation. The pipeline starts to run after you create it. For more information, see [View pipelines and details in CodePipeline](pipelines-view.md). For more information about making changes to your pipeline, see [Edit a pipeline in CodePipeline](pipelines-edit.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

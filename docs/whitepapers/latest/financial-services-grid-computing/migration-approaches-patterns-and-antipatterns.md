@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
  Such federated models typically see individual consumer groups (like a trading desk or particular business line) have their own AWS accounts within which they are free to optimize for their individual workloads while benefitting from standardized tooling and expert guidance from the central HPC team. Separating consumers increases agility as changes need only be tested within a more limited scope. Additionally, the separate accounts make it easier to understand the costs associated with an instance of the HPC environment and the cost impact of any changes made.
 
  Lastly, customers are increasingly looking to the future as they make longer-term plans for HPC. The overall trend is towards serverless technologies which can abstract away many of the concerns of availability and capacity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

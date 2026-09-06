@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/best-practice-catalog.htm
 + **Integrate with other AWS services** Data Catalog Use the Data Catalog as a centralized metadata layer for services like Amazon Athena, Redshift Spectrum, and AWS Lake Formation. Leverage AWS Glue ETL jobs to transform and load data into various data stores while maintaining metadata in the Data Catalog.
 +  **Monitor and optimize performance** Data Catalog Monitor the performance of crawlers and ETL jobs using Amazon CloudWatch metrics. Partition large datasets in the Data Catalog to improve query performance. Implement performance optimizations for frequently accessed metadata.
 +  **Stay updated with AWS Glue documentation and best practices** Data Catalog Regularly check the AWS Glue documentation and AWS Glue resources for the latest updates, best practices, and recommendations. Attend AWS Glue webinars, workshops, and other events to learn from experts and stay informed about new features and capabilities.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

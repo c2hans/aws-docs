@@ -14,7 +14,3 @@ The size of the account pool can be adjusted at any time. If you are unsure of h
 
 **Note**
 If you use accounts that are created or managed from AWS Control Tower, they will show as drifted in the AWS Control Tower console because the solution moves the accounts between OUs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

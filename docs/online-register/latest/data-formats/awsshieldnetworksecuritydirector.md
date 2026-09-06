@@ -16,7 +16,3 @@ AWS Shield network security director provides the following APIs for data retrie
 | <a name="network-security-director-ListInsights"></a>[ListInsights](https://docs.aws.amazon.com/network-security-director/latest/APIReference/API_ListInsights.html) | List insights about the latest network security scan | List |
 | <a name="network-security-director-ListRemediations"></a>[ListRemediations](https://docs.aws.amazon.com/network-security-director/latest/APIReference/API_ListRemediations.html) | List remediations for a finding | List |
 | <a name="network-security-director-ListResources"></a>[ListResources](https://docs.aws.amazon.com/network-security-director/latest/APIReference/API_ListResources.html) | List resources | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

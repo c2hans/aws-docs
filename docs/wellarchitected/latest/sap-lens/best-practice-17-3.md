@@ -43,7 +43,3 @@ Cost benefits can be realized through the use of automation and by using on-dema
 If environments exist for reference purposes only, or have a less critical business role, evaluate the uptime, performance, and reliability requirements needed compared to your core production systems.
 
 For example, a legacy ERP system might require being kept for reference purposes from a prior application conversion or business restructure. Costs for this system can be optimized by running the EC2 instances only when required, thus only paying for Amazon EBS storage. A more cost-effective solution could be archiving the system via backup to Amazon S3 and Amazon S3 Glacier.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

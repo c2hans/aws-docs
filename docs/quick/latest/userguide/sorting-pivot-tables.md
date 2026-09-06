@@ -96,7 +96,3 @@ For tabular pivot tables, each field in the **Rows ** field well has a separate 
 ![Image of the Combined row fields menu.](http://docs.aws.amazon.com/quick/latest/userguide/images/pivot-table-combined-row-fields-menu.png)
 
 More advanced formatting options such as **Hide** and **Remove** are available from the field well menus.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

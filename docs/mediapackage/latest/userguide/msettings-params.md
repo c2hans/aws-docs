@@ -115,7 +115,3 @@ hls_video-1080.m3u8?aws.manifestsettings=time_delay:10&end=2025-02-03T17:09:49Z&
 ```
 hls_video-1080.m3u8?aws.manifestsettings=time_delay%3A10&end=2025-02-03T17%3A09%3A49Z&start=2025-02-03T17%3A08%3A49Z
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

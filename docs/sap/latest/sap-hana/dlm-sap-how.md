@@ -24,7 +24,3 @@ To automate the creation of application-consistent EBS snapshots for SAP HANA us
 + (Recommended) A [resource tagging](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) strategy that includes tagging your Amazon EBS volumes in a way that enables you to map them to your specific SAP HANA workloads.
 
 For more information about setting up your target instances, the Amazon Data Lifecycle Manager policy , and your SAP HANA environment for automated application-consistent snapshots, see [Automating application-consistent snapshots with pre and post scripts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/automate-app-consistent-backups.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

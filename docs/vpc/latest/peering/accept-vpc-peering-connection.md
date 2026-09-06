@@ -37,7 +37,3 @@ Do not accept VPC peering connections from unknown AWS accounts. A malicious use
 **To reject a peering connection using the command line**
 + [reject-vpc-peering-connection](https://docs.aws.amazon.com/cli/latest/reference/ec2/reject-vpc-peering-connection.html) (AWS CLI)
 + [Deny-EC2VpcPeeringConnection](https://docs.aws.amazon.com/powershell/latest/reference/items/Deny-EC2VpcPeeringConnection.html) (AWS Tools for Windows PowerShell)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

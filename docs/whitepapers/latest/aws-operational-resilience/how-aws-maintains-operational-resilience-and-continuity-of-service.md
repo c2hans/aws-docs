@@ -34,7 +34,3 @@ In case of a significant event, an on-call engineer convenes a call with problem
 After addressing troubleshooting, repair procedures, and affected components, the call leader will assign follow-up documentation and actions and end the call engagement. The call leader will declare the recovery phase complete after the relevant fix activities have been addressed.
 
 The post mortem and deep root cause analysis of the incident will be assigned to the relevant team. Post-mortems are convened after any significant operational issue, regardless of external impact, and Correction of Errors (COE) documents are composed such that the root cause is captured and preventative actions may be taken for the future. Implementation of the preventative measures is tracked during weekly operations meetings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

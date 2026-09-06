@@ -12,7 +12,3 @@ If you have existing Boto3 code and want to evaluate the AWS SDK for Python, the
 + [Use both SDKs in one application](working-with-boto3-coexistence.md) — Architectural patterns for running both SDKs together, including configuration, sync/async boundaries, and common pitfalls.
 + [Convert Boto3 operations to the AWS SDK for Python](working-with-boto3-migration.md) — Rewrite individual Boto3 calls using the generated types and async model of the new SDK.
 + [Choosing the right AWS SDK for Python](choosing-sdk.md) — Decision guide for determining the best path for your workload.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Python. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-python` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

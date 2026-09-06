@@ -230,7 +230,3 @@ The following table describes the changes in each version of the component.
 | 2.1.2 | Version updated for Greengrass nucleus version 2.2.0 release. |
 | 2.1.1 |  <a name="changelog-dlr-image-classification-model-store-2.1.1"></a>**New features**<br />   Add a sample ResNet-50 image classification model for Armv8 (AArch64) platforms. This extends machine learning support for Greengrass core devices running NVIDIA Jetson, such as the Jetson Nano.     |
 | 2.0.4 | Initial version. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

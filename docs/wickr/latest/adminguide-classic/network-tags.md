@@ -16,7 +16,3 @@ A tag is a [key-value pair](https://docs.aws.amazon.com/general/latest/gr/aws_ta
 + [Add a network tag in AWS Wickr](add-tag.md)
 + [Edit a network tag in AWS Wickr](edit-tag.md)
 + [Remove a network tag in AWS Wickr](remove-tag.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

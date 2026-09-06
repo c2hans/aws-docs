@@ -29,7 +29,3 @@ Note that Dev Environments utilize several AWS resources and services upon creat
 AWS Toolkit doesn't support Dev Environments creation with an associated VPC connection. Also note that if you use an IDE other than AWS Cloud9, you may experience loading times of about five minutes.
 
 You must have the **Space administrator** role or **Power user** role to manage VPC connections at the space level. For more information about VPCs, see [ Managing Amazon VPCs in CodeCatalyst](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-vpcs.html) in the *CodeCatalyst Administrator Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

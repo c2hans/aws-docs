@@ -99,7 +99,7 @@ The following sections contain examples for scripts written in Unix-like shell s
 If you want to create more than one config key and to have `cfn-init` process them in a specific order, create a configset that contains the config keys in the desired order.
 
 ### Single configset
-<a name="w2aac19c23c19c11b5"></a>
+<a name="w2aac19c23c21c11b5"></a>
 
 The following template snippet creates configsets named `ascending` and `descending` that each contain two config keys.
 
@@ -162,7 +162,7 @@ AWS::CloudFormation::Init:
 ```
 
 #### Related `cfn-init` calls
-<a name="w2aac19c23c19c11b5b9"></a>
+<a name="w2aac19c23c21c11b5b9"></a>
 
 The following example calls to `cfn-init` refer to the preceding example configsets. The example calls are abbreviated for clarity. See [cfn-init](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/cfn-init.html) for the complete syntax.
 + If a call to `cfn-init` specifies the `ascending` configset:
@@ -181,7 +181,7 @@ The following example calls to `cfn-init` refer to the preceding example configs
   The script processes `config2` and then processes `config1` and the `test.txt` file would contain the text `I come from config1`.
 
 ### Multiple configsets
-<a name="w2aac19c23c19c11b7"></a>
+<a name="w2aac19c23c21c11b7"></a>
 
 You can create multiple configsets, and call a series of them using your `cfn-init` script. Each configset can contain a list of config keys or references to other configsets. For example, the following template snippet creates three configsets. The first configset, `test1`, contains one config key named `1`. The second configset, `test2`, contains a reference to the `test1` configset and one config key named `2`. The third configset, default, contains a reference to the configset `test2`.
 
@@ -246,7 +246,7 @@ AWS::CloudFormation::Init:
 ```
 
 #### Related `cfn-init` calls
-<a name="w2aac19c23c19c11b7b9"></a>
+<a name="w2aac19c23c21c11b7b9"></a>
 
 The following calls to `cfn-init` refer to the `configSets` declared in the preceding template snippet. The example calls are abbreviated for clarity. See [cfn-init](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/cfn-init.html) for the complete syntax.
 + If you specify `test1` only:
@@ -286,7 +286,7 @@ You can use the commands key to run commands on the EC2 instance. The commands a
 | `waitAfterCompletion` | Optional | For Windows systems only. Specifies how long to wait (in seconds) after a command has finished in case the command causes a reboot. The default value is 60 seconds and a value of "forever" directs `cfn-init` to exit and resume only after the reboot is complete. Set this value to `0` if you don't want to wait for every command. |
 
 ### Example
-<a name="w2aac19c23c19c13b7"></a>
+<a name="w2aac19c23c21c13b7"></a>
 
 The following example snippet calls the echo command if the `~/test.txt` file doesn't exist.
 
@@ -350,7 +350,7 @@ You can use the `files` key to create files on the EC2 instance. The content can
 | `context` | Specifies a context for files that are to be processed as [Mustache templates](https://mustache.github.io/mustache.5.html). To use this key, you must have installed `aws-cfn-bootstrap` 1.3 –11 or later in addition to [pystache](https://github.com/defunkt/pystache). |
 
 ### Examples
-<a name="w2aac19c23c19c15b7"></a>
+<a name="w2aac19c23c21c15b7"></a>
 
 The following example snippet creates a file named `setup.mysql` as part of a larger installation.
 
@@ -505,7 +505,7 @@ If you specify a version of a package, `cfn-init` will attempt to install that v
 <a name="aws-resource-init-packages-snippet"></a>
 
 #### RPM, yum, Rubygems, and Zypper
-<a name="w2aac19c23c19c19b9b3"></a>
+<a name="w2aac19c23c21c19b9b3"></a>
 
 The following snippet specifies a version URL for rpm, requests the latest versions from yum and Zypper, and version 0.10.2 of chef from rubygems:
 
@@ -547,7 +547,7 @@ zypper:
 ```
 
 #### MSI package
-<a name="w2aac19c23c19c19b9b5"></a>
+<a name="w2aac19c23c21c19b9b5"></a>
 
 The following snippet specifies a URL for an MSI package:
 
@@ -587,10 +587,10 @@ The following table lists the supported keys.
 | commands | A list of command names. If `cfn-init` runs the specified command, this service will be restarted. |
 
 ### Examples
-<a name="w2aac19c23c19c21c11"></a>
+<a name="w2aac19c23c21c21c11"></a>
 
 #### Linux
-<a name="w2aac19c23c19c21c11b3"></a>
+<a name="w2aac19c23c21c21c11b3"></a>
 
 The following Linux snippet configures the services as follows:
 + The nginx service will be restarted if either `/etc/nginx/nginx.conf` or `/var/www/html` are modified by `cfn-init`.
@@ -817,7 +817,3 @@ users:
     uid: "50"
     homeDir: "/tmp"
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

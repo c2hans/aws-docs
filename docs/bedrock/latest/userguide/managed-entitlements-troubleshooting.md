@@ -58,7 +58,3 @@ If you are still experiencing issues after trying these solutions:
 + **Check AWS Service Health Dashboard**: Visit [https://health.aws.amazon.com/health/status](https://health.aws.amazon.com/health/status) and look for any ongoing issues with License Manager, Marketplace, or Bedrock services.
 + **Review AWS CloudTrail logs**: Go to CloudTrail Console, search for events related to License Manager and Marketplace, and look for error messages or failed API calls.
 + **Contact AWS Support**: Open a support case with AWS Support. Include your account IDs, Bedrock model names, error messages, and steps you have taken. Specify that you are using Managed Entitlements for Bedrock.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

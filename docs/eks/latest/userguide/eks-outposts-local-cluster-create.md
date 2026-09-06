@@ -246,7 +246,3 @@ Recommended next steps:
 + Familiarize yourself with what happens during [network disconnects](eks-outposts-network-disconnects.md).
 +  [Add nodes to your cluster](eks-outposts-self-managed-nodes.md)
 + Consider setting up a backup plan for your `etcd`. Amazon EKS doesn’t support automated backup and restore of `etcd` for local clusters. For more information, see [Backing up an etcd cluster](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#backing-up-an-etcd-cluster) in the Kubernetes documentation. The two main options are using `etcdctl` to automate taking snapshots or using Amazon EBS storage volume backup.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

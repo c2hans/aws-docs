@@ -39,7 +39,3 @@ The training dataset is the basis for fine-tuning the model and creating a custo
 +  Manifest file — You can use a manifest file to train your adapter. The manifest file contains information on the ground-truth annotations for your training and testing images, as well as the location of your training images. You can provide the manifest file when training an adapter using the Rekognition APIs or when using the AWS Console.
 
 The testing dataset is used to evaluate the adapter’s performance after training. To ensure reliable evaluation, the testing dataset is created by using a slice of the original training dataset that the model hasn’t seen before. This process ensures that the adapter’s performance is assessed with new data, creating accurate measurements and metrics. For optimal accuracy improvements see [Best practices for training adapters](using-adapters-best-practices.md) .
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

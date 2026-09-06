@@ -50,7 +50,3 @@ Amazon SageMaker Studio connects to a local Git repo only. To access the files i
 If the repo is private and requires credentials to access, you receive a prompt to enter your user credentials. Your credentials include your username and personal access token. For more information about personal access tokens, see [Managing your personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 Admins can also attach suggested Git repository URLs at the Amazon SageMaker AI domain or user profile level. Users can then select the repo URL from the list of suggestions and clone that into Studio. For more information about attaching suggested repos, see [Attach Suggested Git Repos to Amazon SageMaker Studio Classic](studio-git-attach.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

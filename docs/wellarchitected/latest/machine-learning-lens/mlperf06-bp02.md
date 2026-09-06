@@ -73,7 +73,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 +  [Fairness and Explainability with SageMaker AI Clarify](https://sagemaker-examples.readthedocs.io/en/latest/sagemaker-experiments/sagemaker_clarify_integration/tracking_bias_explainability.html)
 +  [Explainability with Amazon SageMaker AI Debugger](https://sagemaker-examples.readthedocs.io/en/latest/sagemaker-debugger/xgboost_census_explanations/xgboost-census-debugger-rules.html)
 +  [Amazon SageMaker AI Clarify Processing GitHub Examples](https://github.com/aws/amazon-sagemaker-examples/tree/main/sagemaker-clarify)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

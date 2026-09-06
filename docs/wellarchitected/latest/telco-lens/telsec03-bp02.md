@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telsec
   +  Regularly review and update the signaling firewall's configuration, rulesets, and software versions to verify it remains effective against the latest security threats.
   +  Leverage AWS Systems Manager for automated patching and updates of the signaling firewall infrastructure.
   +  Conduct periodic testing and validation of the signaling firewall's functionality and security posture.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

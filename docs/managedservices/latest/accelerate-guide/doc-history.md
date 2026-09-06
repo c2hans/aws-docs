@@ -796,7 +796,3 @@ The following table describes the important changes to the documentation of the 
 - **New content: Additional backup plans and vaults.**
   - **Description:** Added new backup plans and vaults to mitigate high-risk scenarios including ransomware attacks. See [View backups in AMS vaults](acc-backup-ams-vaults.md) and [View backups in AMS vaults](acc-backup-ams-vaults.md).
   - **Date:** January 13, 2022
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

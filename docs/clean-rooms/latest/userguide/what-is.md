@@ -142,7 +142,3 @@ In most cases, the [member who can query](glossary.md#glossary-member-who-can-qu
 The member paying for query compute costs doesn't see any event for queries being run in their CloudTrail Event history because the payer is neither the one running the queries nor the owner of the resource against which the queries are run. However, the payer does see charges generated on their membership resource for all queries run by the member who can run queries in the collaboration.
 
 For more information about how to create a collaboration and configure the member paying for query compute costs, see [Creating a collaboration](create-collaboration.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

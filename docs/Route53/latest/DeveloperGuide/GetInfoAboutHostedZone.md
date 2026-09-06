@@ -21,7 +21,3 @@ Some registrars only let you specify name servers using IP addresses; they don't
 1. On the details page for the hosted zone, choose **Hosted zone details**.
 
 1. Make note of the four servers listed for **Name servers**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -89,7 +89,3 @@ When AWS Clean Rooms manages your configured lookalike model resource policy (th
 Only `StartAudienceGenerationJob` can be called across accounts. All other Clean Rooms ML APIs can only be used with resources in your own account. This ensures that your training data, lookalike model configuration, and other information stays private.
 
 Clean Rooms ML never reveals Amazon S3 or AWS Glue locations across accounts. The training data location, configured lookalike model output location, and lookalike segment generation job seed location are never visible across accounts. Unless query logging is enabled in the collaboration, whether the seed data comes from an SQL query and the query itself are not visible across accounts. If you `Get` an audience generation job that another account submitted, the service does not show the seed location.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

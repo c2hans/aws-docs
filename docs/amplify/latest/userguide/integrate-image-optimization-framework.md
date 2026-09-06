@@ -106,7 +106,3 @@ Amplify Hosting caches optimized images on our CDN so that subsequent requests t
 + For remote images, the `Cache-Control` header returned by the remote image is honored.
 
 The `minimumCacheTTL` specified in the image optimization settings defines the lower bound of the Cache-Control max-age directive. For example, if a remote image URL responds with a `Cache-Control s-max-age=10`, but the value of `minimumCacheTTL` is 60, then 60 is used.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

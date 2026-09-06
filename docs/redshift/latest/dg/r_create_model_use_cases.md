@@ -510,7 +510,7 @@ customer_id | customers_cluster
 ## CREATE MODEL with Forecast
 <a name="r_forecast_model"></a>
 
-Forecast models in Redshift ML use Amazon Forecast to create accurate time-series forecasts. Doing so lets you use historical data over a time period to make predictions about future events. Common use cases of Amazon Forecast include using retail product data to decide how to price inventory, manufacturing quantity data to predict how much of one item to order, and web traffic data to forecast how much traffic a web server might receive.
+Forecast models in Redshift ML use Amazon Forecast to create accurate time-series forecasts. By doing so, you can use historical data over a time period to make predictions about future events. Common use cases of Amazon Forecast include using retail product data to decide how to price inventory, manufacturing quantity data to predict how much of one item to order, and web traffic data to forecast how much traffic a web server might receive.
 
  [Quota limits from Amazon Forecast](https://docs.aws.amazon.com/forecast/latest/dg/limits.html) are enforced in Amazon Redshift forecast models. For example, the maximum number of forecasts is 100, but it's adjustable. Dropping a forecast model doesn’t automatically delete the associated resources in Amazon Forecast. If you delete a Redshift cluster, all associated models are dropped as well.
 
@@ -569,7 +569,7 @@ S3\_BUCKET 'amzn-s3-demo-bucket'
 The name of the Amazon Simple Storage Service bucket that you previously created and that’s used to share training data and artifacts between Amazon Redshift and Amazon Forecast. Amazon Redshift creates a subfolder in this bucket before unloading the training data. When training is complete, Amazon Redshift deletes the created subfolder and its contents.
 
 HORIZON integer
-The maximum number of predictions the forecast model can return. Once the model is trained, you can't change this integer.
+The maximum number of predictions the forecast model can return. After the model is trained, you can't change this integer.
 
 FREQUENCY forecast\_frequency
 Specifies how granular you want the forecasts to be. Available options are `Y | M | W | D | H | 30min | 15min | 10min | 5min | 1min`. Required if you’re training a forecast model.
@@ -604,7 +604,3 @@ You can then query the new table to get predictions.
 ```
 SELECT * FROM forecast_model_results
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

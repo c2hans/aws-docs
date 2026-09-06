@@ -23,6 +23,9 @@ August 26, 2026
 🐘 *PostgreSQL Compatibility* — **Compression for character data types** — Aurora DSQL now compresses large values in `text`, `varchar`, and `bpchar` columns, storing text-heavy payloads more efficiently. Aurora DSQL compresses these values only in columns that aren't part of a key. Values in primary key columns and in the key columns of a secondary index are always stored uncompressed. For more information, see [Character data types](working-with-postgresql-compatibility-supported-data-types.md#character-data-types).
 
 August 25, 2026
+🔌 *Developer Tools* — **Aurora DSQL Adapter for Drizzle ORM** — Added the Aurora DSQL Adapter for Drizzle ORM, a TypeScript object-relational mapping (ORM) framework for Node.js. With this adapter, you can authenticate with IAM tokens and pool connections automatically. The adapter also provides opt-in optimistic concurrency control (OCC) retry. A migrator applies one DDL statement per transaction and waits for asynchronous DDL jobs. A CLI rewrites migration SQL for Aurora DSQL compatibility. For more information, see [Aurora DSQL adapters and dialects](aws-sdks.html#aurora-dsql-adapters).
+
+August 25, 2026
 🐘 *PostgreSQL Compatibility* — **`numeric` precision and scale limits** — Aurora DSQL now supports higher precision and scale limits for `numeric` data type. The max precision is now 1000 and scale can be between -1000 to 1000 when you declare numerics with explicit precision and scale.
 
 August 25, 2026
@@ -235,7 +238,3 @@ May 8, 2025
 
 December 3, 2024
 🚀 *Major Release* — **Public preview launch of Aurora DSQL** — Aurora DSQL launches in public preview as a new serverless distributed SQL database. Aurora DSQL offers virtually unlimited scale, PostgreSQL v16 compatibility, multi-Region active-active support with a 99.999% availability service level agreement (SLA), IAM authentication, and optimistic concurrency control. For more information, see [What is Aurora DSQL?](CHAP_what-is.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

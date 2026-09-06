@@ -179,7 +179,3 @@ This can take a few minutes to complete.
 <a name="conclusion"></a>
 
 You created your first Amazon CloudFront web distribution and delivered a piece of static content hosted in the cloud through Amazon S3. With a few configuration changes, you can use CloudFront to deliver dynamic content, live events such as a meeting, conference, or concert, in real time over HTTP or HTTPS. Use Amazon Cloudfront to speed delivery of your entire website or application, including dynamic, static, streaming, and interactive content.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

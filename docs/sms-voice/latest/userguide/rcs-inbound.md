@@ -292,7 +292,3 @@ Follow these best practices when implementing two-way RCS messaging:
 + **Use pool-based sending for responses** — When sending responses to inbound messages, use pool-based sending to ensure automatic SMS fallback. This guarantees that your response reaches the customer even if their device no longer supports RCS.
 + **Monitor message processing** — Use Amazon CloudWatch metrics to monitor your inbound message volume and processing success rate. Set up alarms for unusual patterns, such as a sudden increase in inbound messages or a high rate of processing failures. For details on RCS metrics, see [RCS CloudWatch metrics and monitoring](rcs-monitoring.md).
 + **Handle keyword responses consistently** — Ensure that keyword auto-responses and your application's programmatic responses do not conflict. If you configure a keyword auto-response for a specific keyword, your Lambda function still receives the message. Design your function to avoid sending a duplicate response for keywords that already have auto-responses configured.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

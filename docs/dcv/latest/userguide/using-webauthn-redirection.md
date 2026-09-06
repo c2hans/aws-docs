@@ -27,7 +27,3 @@ The extension opens a user interface used to monitor and control the Webauthn Re
 + **Redirection Toggle:** Located at the bottom of the user interface, this switch enables or disables the feature.
   + Enabling redirection allows WebAuthn requests to be intercepted by the extension and forwarded to the client.
   + Disabling redirection allows WebAuthn requests to be processed locally by the browser.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

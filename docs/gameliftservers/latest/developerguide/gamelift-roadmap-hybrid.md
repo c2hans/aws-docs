@@ -45,7 +45,7 @@ Create a way for your game client to request to join a game session, get connect
   + Add code to initialize an Amazon GameLift Servers client and store key settings. See [Set up the Amazon GameLift Servers API](gamelift-sdk-client-api.md#gamelift-sdk-client-api-initialize).
   + Add functionality to call the AWS SDK action `CreateGameSession()` and provide game session connection information to a game client. See [Create a game session on a specific fleet](gamelift-sdk-client-api.md#gamelift-sdk-client-api-create).
 
-    Calling `CreateGameSession()` is a convenient starting point for requesting new game sessions, After you have a game session placement system in place (see Step 3), you'll replace this code with a call to `StartGameSessionPlacement()` (or `StartMatchmaking()` if you're using FlexMatch).
+    Calling `CreateGameSession()` is a convenient starting point for requesting new game sessions. After you have a game session placement system in place (see Step 3), you'll replace this code with a call to `StartGameSessionPlacement()` (or `StartMatchmaking()` if you're using FlexMatch).
 
     For guidance on designing your backend service, see [Build a backend service for Amazon GameLift Servers](gamelift_quickstart_customservers_designbackend.md).
 + **Add functionality to your game client that lets players join a hosted game session.** The game client makes requests to your backend service, not directly to Amazon GameLift Servers. After the backend service provides game session connection information, the game client connects directly with the game session to play the game.
@@ -98,10 +98,10 @@ Create an Amazon GameLift Servers managed EC2 fleet to supplement your Anywhere 
 
 As you prepare for game launch, you'll need to fine-tune your hosting solutions. Some of the decisions to consider include:
 + For Anywhere fleets, automate the process of starting and shutting down computes as needed, including installing and running game server software. Recycling computes is useful to ensure that they are updated regularly, and shutting down computes can save costs when they're not needed.
-+ If your game server needs to communicate other AWS resources, set up IAM roles to manage access. See [Connect your Amazon GameLift Servers hosted game server to other AWS resources](gamelift-sdk-server-resources.md).
++ If your game server needs to communicate with other AWS resources, set up IAM roles to manage access. See [Connect your Amazon GameLift Servers hosted game server to other AWS resources](gamelift-sdk-server-resources.md).
 + Determine where geographically you want to position game servers. Add remote locations to your managed fleets. See [Hosting resource customizations](fleets-design.md).
 + For managed fleets, consider using Spot fleets for cost savings. See [Reduce game hosting costs with Spot fleets](fleets-spot.md).
-+ Optimize fleet performance by selecting compute resource configurations, then configure your the runtime instructions to run the optimal number of server processes per compute. Do this for both Anywhere fleets and managed fleets. See [Optimize game server runtime configuration on managed Amazon GameLift Servers](fleets-multiprocess.md).
++ Optimize fleet performance by selecting compute resource configurations, then configure the runtime instructions to run the optimal number of server processes per compute. Do this for both Anywhere fleets and managed fleets. See [Optimize game server runtime configuration on managed Amazon GameLift Servers](fleets-multiprocess.md).
 + Experiment with game session placement options for managed fleets, including customizing prioritization settings. See [Customize a game session queue](queues-design.md).
 + For managed fleets, set up automatic capacity scaling to meet expected player demand. See [Scaling game hosting capacity with Amazon GameLift Servers](fleets-manage-capacity.md).
 + For Anywhere fleets, create mechanisms to handle manual or automated capacity scaling to meet expected player demand.
@@ -117,7 +117,3 @@ As you prepare for game launch, you'll need to fine-tune your hosting solutions.
   + Deploy new fleets with the new build.
   + Add the new fleets to your game session queue and remove the fleets with the previous build version.
   + When the fleets with the previous build are no longer hosting active game sessions, delete the CloudFormation stacks of those fleets.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
   +  However, you cannot change the compute type of Graphics.g4dn and GraphicsPro.g4dn to other types.
   +  You cannot change the compute type of Graphics and GraphicsPro to another type.
 +  Consider these capabilities and limitations when initially configuring your users' environments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

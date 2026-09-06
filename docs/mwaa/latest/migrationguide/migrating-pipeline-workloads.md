@@ -86,7 +86,3 @@ Pricing for Amazon MWAA is based on the duration of time that your managed Apach
 + [The Amazon MWAA API reference](https://docs.aws.amazon.com/mwaa/latest/API/Welcome.html)
 + [Monitoring dashboards and alarms on Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/monitoring-dashboard.html)
 + [Performance tuning for Apache Airflow on Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/best-practices-tuning.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

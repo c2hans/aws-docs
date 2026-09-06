@@ -24,7 +24,3 @@ Complete the following steps to verify that the rosbag files are staged.
 $ aws s3 cp s3://proserve-blocks-datasets-us-east-1/rosbag/test-vehicle-01/072021/small2__2020-11-19-16-21-22_4.bag \
 s3://addf-aws-solutions-raw-bucket-<hash>/rosbag-scene-detection/test-vehicle-02/072021/small2__2020-11-19-16-21-22_4.bag
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Scene Intelligence with Rosbag on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -86,7 +86,3 @@ CodeBuildProject:
 By default, Docker daemon is enabled for non-VPC builds. If you would like to use Docker containers for VPC builds, see [Runtime Privilege and Linux Capabilities](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities) on the Docker Docs website and enable privileged mode. Also, Windows does not support privileged mode.
 
 For more information, see [Create a build project (CloudFormation)](create-project.md#create-project-cloud-formation).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

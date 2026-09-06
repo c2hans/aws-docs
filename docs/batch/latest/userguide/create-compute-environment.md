@@ -21,7 +21,3 @@ A job queue will be blocked in these scenarios if a job is submitted to a job qu
 + [Tutorial: Create an unmanaged compute environment using Amazon EKS resources](create-compute-environment-unmanaged-eks.md)
 + [Resource: Compute environment template](compute-environment-template.md)
 + [Instance type compute table](instance-type-compute-table.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

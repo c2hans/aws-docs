@@ -59,7 +59,3 @@ Apply the same concept to performance budgets in CI/CD:
 **Go Deeper**
 [Improve application reliability with effective SLOs](https://aws.amazon.com/blogs/mt/improve-application-reliability-with-effective-slos/) (AWS Blog)
 [AWS Observability Best Practices: SLI/SLO/SLA](https://aws-observability.github.io/observability-best-practices/guides/operational/business/key-performance-indicators) (AWS Observability)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Performance Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

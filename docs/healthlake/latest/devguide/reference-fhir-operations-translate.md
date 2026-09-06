@@ -159,7 +159,3 @@ For this release, the following are not supported:
 + Since more than 10 ConceptMap resources can match the `$translate` query, only matches from the first 10 ConceptMaps are returned, ordered by the ConceptMap's `date` field (most recent first).
 
 For more information about the `$translate` operation specification, see the [FHIR R4 ConceptMap `$translate`](https://www.hl7.org/fhir/R4/conceptmap-operation-translate.html) documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

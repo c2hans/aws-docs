@@ -328,7 +328,3 @@ A simulated conversation ends when any of the following conditions is met:
 +  **Set realistic turn limits:** Most customer support conversations resolve in 5 to 10 turns. Setting `max_turns` too high wastes compute; setting it too low may cut off conversations before the goal is reached.
 +  **Use assertions for ground truth:** Since the conversation flow is dynamic, per-turn `expected_response` is not available. Write assertions that describe the outcome you expect regardless of the specific path taken.
 +  **Choose an appropriate actor model:** The actor model should be capable enough to maintain a coherent persona across turns. Smaller models work for simple personas; complex personas with nuanced goals benefit from more capable models.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

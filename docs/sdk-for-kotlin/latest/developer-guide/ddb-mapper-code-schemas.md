@@ -233,7 +233,3 @@ Each object is stored using only the attributes relevant to its subtype, plus th
 +  [DynamoDB Mapper annotations reference](ddb-mapper-anno-index.md): the annotations (such as `@DynamoDbItem` and `@DynamoDbAttributeConverter`) that the schema generator reads.
 +  [Operations overview](ddb-mapper-operations.md): use the table you obtained from your schema.
 +  [Use secondary indexes with DynamoDB Mapper](ddb-mapper-secondary-indexes.md): multi-attribute index keys with [`KeySpec`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.items/-key-spec/index.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Kotlin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-kotlin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

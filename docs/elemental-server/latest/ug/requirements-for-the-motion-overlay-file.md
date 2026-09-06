@@ -34,7 +34,3 @@ Set up your .png motion image files follows:
 + Make sure that the names of the .png files end with sequential numbers that specify the order that they are played in. For example, `overlay_000.png`, `overlay_001.png`, `overlay_002.png`, and so on.
 + Pad your initial file name with enough zeros to complete the sequence. For example, if the first image is `overlay_0.png`, there can be only 10 images in the sequence, with the last image being `overlay_9.png`. But if the first image is `overlay_00.png`, there can be 100 images in the sequence.
 + Make sure that the number of images in your series matches the frame rate and your intended overlay duration. For example, if you want a 30-second overlay at 30 fps, you should have 900 .png images.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

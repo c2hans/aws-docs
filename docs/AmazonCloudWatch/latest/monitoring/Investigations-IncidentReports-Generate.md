@@ -61,7 +61,3 @@ Report generation requires an investigation with at least one accepted hypothesi
 1. To retain a copy of the report in a different location, you can choose to copy the text of the report and paste it into your desired location.
 
 1. Choose **Report assessment** to review a list of data gaps in the report. You can use this information to gather additional data for the report and then update the facts accordingly and regenerate the report.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

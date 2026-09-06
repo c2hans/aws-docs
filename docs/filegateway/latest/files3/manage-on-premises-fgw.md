@@ -15,7 +15,3 @@ For a File Gateway deployed on-premises, you can perform the following maintenan
 + [Viewing your gateway system resource status](system-resource-check-fgw.md) - Learn how to check your gateway's virtual CPU cores, root volume size, and RAM.
 + [Configuring a Network Time Protocol (NTP) server for your gateway](MaintenanceTimeSync-fgw.md) - Learn how to view and edit Network Time Protocol (NTP) server configurations and synchronize the time on your gateway with your hypervisor host.
 + [Running Storage Gateway commands on the local console](MaintenanceGatewayConsole-fgw.md) - Learn how to run local console commands to perform tasks such as saving routing tables, connecting to Support, and more.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

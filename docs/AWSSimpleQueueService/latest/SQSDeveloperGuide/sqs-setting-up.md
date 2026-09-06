@@ -26,7 +26,3 @@ You can explore Amazon SQS without writing code with tools such as the AWS Comma
 <a name="sqs-next-steps-setting-up"></a>
 
 You are now ready for [Getting started](sqs-getting-started.md) with managing Amazon SQS queues and messages using the AWS Management Console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

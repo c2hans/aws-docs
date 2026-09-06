@@ -16,7 +16,3 @@ The following sections contain directions on how to manage a registration.
 + [Discard a registration's current version](registrations-discard.md)
 + [Delete a registration](registrations-delete.md)
 + [View a registration associated resources](registrations-associated-resource.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

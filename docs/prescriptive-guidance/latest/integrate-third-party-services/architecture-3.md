@@ -66,7 +66,3 @@ Also consider the following cost implications when deciding between these option
 + There are no data-processing charges for data sent between two peered transit gateways.
 
 For more information, see [AWS Transit Gateway pricing](https://aws.amazon.com/transit-gateway/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

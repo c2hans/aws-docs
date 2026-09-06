@@ -49,7 +49,3 @@ The following sections contain event message details, JSON responses, and event 
 + [Events with ERROR status](ev_status_error.md)
 + [Events with NEW\_WARNING status](ev_status_new_warning.md)
 + [Events with QUEUE\_HOP status](ev_status_queue_hop.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

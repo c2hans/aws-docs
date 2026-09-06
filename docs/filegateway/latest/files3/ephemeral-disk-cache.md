@@ -31,7 +31,3 @@ These steps in this following procedure are specific for File Gateways.
 1. Verify that the `CachePercentDirty` metric for your file share is 0. This confirms that all your data has been written to Amazon S3. For information about file share metrics, see [Understanding file share metrics](monitoring-file-gateway.md#monitoring-file-gateway-resources).
 
 1. You can now restart or stop the File Gateway without risk of losing any data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

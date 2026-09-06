@@ -297,7 +297,3 @@ To explore more ways to customize your API, see the following tutorials:
 + For more information about request validation, see [Set up basic request validation in API Gateway](api-gateway-request-validation-set-up.md).
 + For information about how to transform request and response payloads, see [Tutorial: Modify the integration request and response for integrations to AWS services](set-up-data-transformations-in-api-gateway.md).
 + For information about how to create custom gateway responses see, [Set up a gateway response for a REST API using the API Gateway console](set-up-gateway-response-using-the-console.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

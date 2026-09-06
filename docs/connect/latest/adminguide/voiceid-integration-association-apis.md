@@ -19,7 +19,3 @@ When you enable Voice ID for a Connect Customer instance (by using either the Co
 1.  [DeleteIntegrationAssociation](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteIntegrationAssociation.html): To delete an existing association between a Connect Customer instance and a Voice ID domain, you will need to call the `DeleteIntegrationAssociation` APIs along with the Connect Customer InstanceID and the `IntegrationAssociationID` returned by `CreateIntegrationAssociation`. This is a required step if you want to associate a different Voice ID domain to this Connect Customer instance. We do not recommend deleting associations in a production setup as it can cause unpredictable behavior for Voice ID in your Connect Customer instance.
 
 1.  [ListIntegrationAssociations](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListIntegrationAssociations.html): To list all the associations between Connect Customer instance and Voice ID domains for your account in this Region, you can invoke `ListIntegrationAssociations` API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

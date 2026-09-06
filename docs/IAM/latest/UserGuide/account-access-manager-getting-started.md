@@ -177,7 +177,3 @@ Account access manager is removed from the AWS access portal for all users.
 Active sessions of IAM roles assigned through account access manager continue until they expire, but users cannot start new sessions.
 If you re-enable account access manager later, you must recreate all assignments from scratch. Previous assignments are not recoverable.
 Before deleting, consider disabling user access in individual accounts to temporarily restrict access.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

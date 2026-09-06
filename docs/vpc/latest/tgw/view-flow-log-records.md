@@ -14,7 +14,3 @@ You can view your flow log records using the CloudWatch Logs console or Amazon S
 1. In the navigation pane, choose **Logs**, and select the log group that contains your flow log. A list of log streams for each transit gateway is displayed.
 
 1.  Select the log stream that contains the ID of the transit gateway that you want to view the flow log records for. For more information, see [Transit Gateway Flow Log records](tgw-flow-logs.md#flow-log-records).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,3 @@ If you are a first-time user of Amazon EMR, we recommend that you begin by readi
 + [Understanding how to create and work with Amazon EMR clusters](emr-overview.md)
 + [Benefits of using Amazon EMR](emr-overview-benefits.md)
 + [Amazon EMR architecture and service layers](emr-overview-arch.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

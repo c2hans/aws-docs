@@ -63,7 +63,3 @@ This guide recommends that you use the SAC version for container-based applicati
 ![Screen showing sample deployment.json file](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/deployment-json.jpg)
 
  You have successfully containerized your application, and are ready to deploy your newly containerized application to AWS. In the next section you will deploy your application to Amazon ECS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ Goals, particularly those driven by leadership and established in response to si
 For more information about some of these goal types and how Amazon and other organizations have used goals during chaos engineering adoption, see [Appendix A](appendix-a.md).
 
 These goals serve as a compelling justification and provide a targeted, actionable approach for driving for chaos engineering adoption. In the beginning, goals serve as a proxy for traditional ROI metrics. The goals offer a compelling rationale when quantifiable resilience ROI calculations might be challenging to obtain. Without such goals early in the adoption, the chaos engineering practice risks failure to demonstrate its effectiveness and gain broader organizational buy-in.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

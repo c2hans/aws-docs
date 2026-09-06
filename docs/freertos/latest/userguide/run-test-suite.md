@@ -39,7 +39,3 @@ Path to AWS IoT Device Tester Report: /path/to/devicetester/results/9a52f362-122
 Path to Test Execution Logs: /path/to/devicetester/results/9a52f362-1227-11eb-86c9-8c8590419f30/logs
 Path to Aggregated JUnit Report: /path/to/devicetester/results/9a52f362-1227-11eb-86c9-8c8590419f30/MyTestSuite_Report.xml
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

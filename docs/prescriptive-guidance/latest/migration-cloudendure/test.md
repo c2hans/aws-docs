@@ -34,7 +34,3 @@ To test your migration, follow these steps:
 1. Validate that you can connect to your target machines by using Secure Shell (SSH) for Linux or Remote Desktop Protocol (RDP) for Windows, and perform acceptance tests for your application.
 
 For more information about the testing process, see [Testing the Migration Solution](https://docs.cloudendure.com/#Configuring_and_Running_Migration/Testing_the_Migration_Solution/Testing_the_Migration_Solution.htm) in the CloudEndure documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

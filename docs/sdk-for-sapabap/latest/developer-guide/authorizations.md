@@ -80,7 +80,3 @@ Auth Object `/AWS1/LROL`
 In general, a user should be authorized for only one logical IAM role per SDK profile. If a user is authorized for more than one IAM role (for example, if the CFO is authorized for both `CFO` and `AUDITOR` logical IAM roles), then AWS SDK breaks the tie by ensuring that the higher priority (lower sequence number) role takes effect.
 
 As with all security scenarios, users should be given least privilege to perform their job functions. A simple strategy for managing PFCG roles would be to name Single PFCG roles according to the SDK profile and logical role they authorize. For example, role `Z_AWS_PFL_ZFINANCE_CFO` grants access to profile `ZFINANCE` and logical IAM role `CFO`. These single roles can then be assigned to composite roles that define job functions. Each company has their own strategy for role management, and we encourage you to define a PFCG strategy that works for you.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for SAP ABAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-sapabap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

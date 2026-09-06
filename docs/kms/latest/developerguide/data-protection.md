@@ -86,7 +86,3 @@ All AWS KMS API calls must be signed and be transmitted using Transport Layer Se
 To connect directly to AWS KMS from your virtual private cloud (VPC) without sending traffic over the public internet, use VPC endpoints, powered by [AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/). For more information, see [Connect to AWS KMS through a VPC endpoint](kms-vpc-endpoint.md).
 
 AWS KMS also supports a [hybrid post-quantum key exchange](pqtls.md) option for the Transport Layer Security (TLS) network encryption protocol. You can use this option with TLS when you connect to AWS KMS API endpoints.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

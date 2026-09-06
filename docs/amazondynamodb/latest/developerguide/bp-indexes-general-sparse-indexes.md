@@ -31,7 +31,3 @@ Here, Rick has played three games and achieved `Champ` status in one of them. Pa
 ![Sparse GSI example.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/SparseIndex_B.png)
 
 The global secondary index contains only the high scores that are frequently queried, which are a small subset of the items in the base table.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

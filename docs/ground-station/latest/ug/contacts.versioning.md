@@ -251,7 +251,3 @@ for page in page_iterator:
 +  When you update the tracking overrides of an in-progress contact, there is a brief transition period while the antenna adjusts to the new pointing configuration. During this time, signal reception or transmission may be interrupted.
 +  Contact versions cannot be deleted. Use [ListContactVersions](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ListContactVersions.html) to view the full history of changes made to a contact.
 +  The `UpdateContact` API can only be called from the scheduling region of the contact.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -4423,7 +4423,3 @@ On April 17, 2023, Amazon RDS deprecated PostgreSQL 10. For more information, se
 <a name="postgresql-versions-version96-deprecation-notice"></a>
 
 On March 31, 2022, Amazon RDS deprecated PostgreSQL 9.6. This extended the previously announced date of January 18, 2022 to April 26, 2022. For more information, see [Deprecation of PostgreSQL version 9.6](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html#PostgreSQL.Concepts.General.DBVersions.Deprecation96) in the *Amazon RDS User Guide*. We strongly recommend that you upgrade all your PostgreSQL 9.6 DB instances to PostgreSQL 12 or higher as soon as possible. For information about how to do so, see [Upgrading the PostgreSQL DB engine for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.PostgreSQL.html) in the *Amazon RDS User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

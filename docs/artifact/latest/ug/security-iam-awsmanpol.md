@@ -91,7 +91,3 @@ View details about updates to AWS managed policies for AWS Artifact since this s
 |  Updated AWS Reports managed policies  | Updated AWSArtifactReportsReadOnlyAccess managed policy to remove the artifact:get permission. | 2025-03-21 |
 |  Introduced AWS Agreements managed policies  |  Introduced AWSArtifactAgreementsReadOnlyAccess and AWSArtifactAgreementsFullAccess managed policies.  | 2024-11-21 |
 |  AWS Artifact started tracking changes  | AWS Artifact started tracking changes for its AWS managed policies and introduced AWSArtifactReportsReadOnlyAccess. | 2023-12-15 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Artifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query artifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

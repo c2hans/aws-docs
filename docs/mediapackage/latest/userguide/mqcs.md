@@ -45,7 +45,3 @@ Your workflow must meet these requirements to use MQCS:
 + To enable CDN failover based on quality scores, you must have two identical channels in MediaPackage, with identical origin endpoints.
 + Your CDN must support common media server data (CMSD) HTTP headers. If you're using CloudFront, see [Use real-time logs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/real-time-logs.html) in the *Amazon CloudFront Developer Guide* for more information about CMSD and CMCD headers in logs.
 + For resiliency against Region failures, you must set up cross-Region failover. For details and instructions, see the blog [Build a resilient cross-Region live streaming architecture in AWS](https://aws.amazon.com/blogs/media/build-a-resilient-cross-region-live-streaming-architecture-on-aws/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

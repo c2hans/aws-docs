@@ -45,7 +45,3 @@ The following table describes important changes in each release of the *Amazon W
 | [Support for reserving resources](#DocumentHistory) | Support for reserving resources, such as meeting rooms and equipment. For more information, see [Working with resources](https://docs.aws.amazon.com/workmail/latest/adminguide/resources_overview.html) in the *Amazon WorkMail Administrator Guide*. | October 19, 2015 |
 | [Support for the email migration tool](#DocumentHistory) | Support for the email migration tool. For more information, see [Migrating to Amazon WorkMail](https://docs.aws.amazon.com/workmail/latest/adminguide/migration_overview.html) in the *Amazon WorkMail Administrator Guide*. | August 16, 2015 |
 | [Preview release of Amazon WorkMail](#DocumentHistory) | The preview release of Amazon WorkMail. | January 28, 2015 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

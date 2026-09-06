@@ -15,7 +15,3 @@ The following topics include the steps to continuously manage the security agent
 + [Prerequisite – Creating Amazon VPC endpoint manually](creating-vpc-endpoint-ec2-agent-manually.md)
 + [Installing the security agent manually](installing-gdu-security-agent-ec2-manually.md)
 + [Updating the GuardDuty security agent for Amazon EC2 instance manually](gdu-update-security-agent-ec2.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -631,7 +631,3 @@ The `source` attribute for HealthImaging event structures is `aws.medical-imagin
 | detail.imagesetId | string | The image set ID associated with the status change event. |
 | detail.imageSetState | string | The current image set state. |
 | detail.imageSetWorkflowStatus | string | The current image set workflow status. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

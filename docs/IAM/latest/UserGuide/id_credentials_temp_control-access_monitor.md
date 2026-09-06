@@ -55,7 +55,7 @@ The way that you set up to use source identity depends on the method used when y
 Keep the following in mind when working with source identity.
 + Trust policies for all roles connected to an identity provider (IdP) must have the `sts:SetSourceIdentity` permission. For roles that don't have this permission in the role trust policy, the `AssumeRole*` operation will fail. If you don't want to update the role trust policy for each role, you can use a separate IdP instance for passing source identity. Then add the `sts:SetSourceIdentity` permission to only the roles that are connected to the separate IdP.
 + When an identity sets a source identity, the `sts:SourceIdentity` key is present in the request. For subsequent actions taken during the role session, the `aws:SourceIdentity` key is present in the request. AWS doesn’t control the value of the source identity in either the `sts:SourceIdentity` or `aws:SourceIdentity` keys. If you choose to require a source identity, you must choose an attribute that you want your users or IdP to provide. For security purposes, you must ensure that you can control how those values are provided.
-+ The value of source identity must be between 2 and 64 characters long, can contain only alphanumeric characters, underscores, and the following characters: **. , \+ = @ -** (hyphen). You cannot use a value that begins with the text **aws:**. This prefix is reserved for AWS internal use.
++ The value of source identity must be between 2 and 256 characters long, can contain only alphanumeric characters, underscores, and the following characters: **. , \+ = @ -** (hyphen). You cannot use a value that begins with the text **aws:**. This prefix is reserved for AWS internal use.
 + The source identity information is not captured by CloudTrail when an AWS service or service-linked role carries out an action on behalf of a federated or workforce identity.
 
 **Important**
@@ -464,7 +464,3 @@ If the user uses the assumed role session to perform an action, the source ident
 ```
 
 To see example AWS STS API events in CloudTrail logs, see [Example IAM API events in CloudTrail log](cloudtrail-integration.md#cloudtrail-integration_examples-iam-api). For more details about the information contained in CloudTrail log files, see [CloudTrail Event Reference](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/eventreference.html) in the *AWS CloudTrail User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

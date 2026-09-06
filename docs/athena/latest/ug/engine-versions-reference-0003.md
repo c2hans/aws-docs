@@ -786,7 +786,3 @@ The following limits were introduced in Athena engine version 2 to ensure that q
 + **GROUPING SETS** – The maximum number of slices in a grouping set is 2048.
 + **Maximum text file line length** – The default maximum line length for text files is 200 MB.
 + **Sequence function maximum result size** – The maximum result size of a sequence function is 50000 entries. For example, `SELECT sequence(0,45000,1)` succeeds, but `SELECT sequence(0,55000,1)` fails with the error message The result of the sequence function must not have more than 50000 entries. This limit applies to all input types for sequence functions, including timestamps.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

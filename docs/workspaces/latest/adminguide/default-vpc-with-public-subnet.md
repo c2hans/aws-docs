@@ -17,7 +17,3 @@ Choose the default VPC when you create the directory. The default VPC name uses 
 Then select a default public subnet for **Subnet 1** and, optionally, another default public subnet for **Subnet 2**. The default subnet names use the following format: `subnet-`{{subnet-id}}` | (`{{IPv4 CIDR block}}`) | Default in` {{availability-zone}}.
 
 You can test your internet connectivity by starting your WorkSpaces Pool, and then connecting to a WorkSpace in the pool and browsing to the internet.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

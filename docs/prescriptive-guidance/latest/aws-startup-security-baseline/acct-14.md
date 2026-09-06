@@ -25,7 +25,3 @@ Review findings in the GuardDuty console and take action on high-severity findin
 
 **Note**
 GuardDuty includes a 30-day free trial per Region when you enable it for the first time. After the free trial, you are charged based on the volume of data analyzed. For most early-stage startups, this cost is minimal. For more information, see [Amazon GuardDuty pricing](https://aws.amazon.com/guardduty/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

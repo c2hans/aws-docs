@@ -270,7 +270,3 @@ After completing the Azure setup, note the following values. You need them when 
 + **Config Application (Client) ID** — The application ID of the AWS Config Azure AD app (Step 6).
 + **Subscription IDs** — The Azure subscriptions you want to manage.
 + **Event Hub namespace hostname** — The fully qualified hostname of the Event Hub namespace (for example, `{{EVENT_HUB_NAMESPACE}}.servicebus.windows.net`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -226,7 +226,3 @@ The following table shows some common responses that you might get for idempoten
 | 200 (OK) | Do not retry | The original request completed successfully. Any subsequent retries return successfully. |
 | 400-series response codes ([client errors](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/errors-overview.html#CommonErrors)) | Do not retry | There is a problem with the request, from among the following: +  It includes a parameter or parameter combination that is not valid. <br />+  It uses an action or resource for which you do not have permissions. <br />+  It uses a resource that is in the process of changing states. <br />If the request involves a resource that is in the process of changing states, retrying the request could possibly succeed. |
 | 500-series response codes ([server errors](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/errors-overview.html#api-error-codes-table-server)) | Retry | The error is caused by an AWS server-side issue and is generally transient. Repeat the request with an appropriate back-off strategy. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

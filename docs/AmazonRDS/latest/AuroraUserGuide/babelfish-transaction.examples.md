@@ -201,7 +201,3 @@ In Babelfish, serialization anomaly is only possible if all the concurrent trans
 | `COMMIT` | Idle in transaction | Transaction 1 commits successfully. | Transaction 1 commits successfully. |
 | Idle in transaction | `COMMIT` | Transaction 2 commits successfully. | Transaction 2 commits successfully. |
 | `SELECT * FROM employee;` | Idle in transaction | Changes from both transactions are visible. | Changes from both transactions are visible. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

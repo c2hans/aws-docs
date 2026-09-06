@@ -41,7 +41,3 @@ Once configured, severity factors enhance insight filtering and sorting on your 
 You can filter and sort by financial impact to create a remediation roadmap that maximizes ROI, focusing first on insights with the highest financial implications.
 
 **Example**: A stockout insight might show $50,000 in daily revenue impact based on lost sales. An excess inventory insight might show $2,000 in daily cost impact from carrying costs plus potential markdown exposure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

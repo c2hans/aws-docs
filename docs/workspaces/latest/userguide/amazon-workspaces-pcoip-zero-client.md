@@ -48,7 +48,3 @@ You can refer to the PCoIP Zero Client documentation to [configure IPv6 settings
 **Note**
 IPv6 connections are supported on the Zero Client firmware version `25.10` or later.
 When IPv6 is enabled for a Zero client application, the system will exclusively use IPv6 networking and will not automatically switch to IPv4 if an IPv6 connection is unavailable.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

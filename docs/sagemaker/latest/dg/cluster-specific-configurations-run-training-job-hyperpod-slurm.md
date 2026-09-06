@@ -41,7 +41,3 @@ container_mounts:
 1. `slurm_docker_cfg`: The SageMaker HyperPod recipe launcher launches a Docker container to run your training job. You can specify additional Docker arguments within this parameter.
 
 1. `container_mounts`: Specify the volumes you're mounting into the container for the recipe launcher, for your training jobs to access the files in those volumes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

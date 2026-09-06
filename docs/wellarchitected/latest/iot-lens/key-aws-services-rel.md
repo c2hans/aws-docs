@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/key-aws-
  **Failure management**: [Amazon S3](https://aws.amazon.com/s3/) allows you to durably archive telemetry from devices. The [AWS IoT rules engine](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html) Error action enables you to fall back to other AWS services when a primary AWS service is returning errors.
 
  **Resilience at the edge:** [AWS IoT Greengrass](https://aws.amazon.com/greengrass/) offers several features to help support data resiliency and backup needs with features which allow devices to communicate over the local network even after loss in internet connectivity, allowing the core to receive messages sent while the core is offline and using stream manager to process data locally until the connection is restored and send data to cloud or local storage destinations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

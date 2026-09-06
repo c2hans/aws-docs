@@ -73,7 +73,3 @@ The process for setting up Jenkins pipelines to refresh components for your appl
 If you are using CodeCommit as your source repository, App2Container creates an SSH key for the IAM user that is running the command. It provides that SSH key to the Jenkins server, so that Jenkins can access files in CodeCommit when it runs the pipeline.
 
    If you run the **generate pipeline** command with the `--deploy` option, App2Container creates the pipeline in Jenkins, and starts the pipeline build.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App2Container. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app2container` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

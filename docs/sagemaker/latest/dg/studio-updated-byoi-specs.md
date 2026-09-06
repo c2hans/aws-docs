@@ -59,7 +59,3 @@ For Dockerfile samples that meet both the requirements on this page and your spe
 **Note**
 If you are bringing your own image to SageMaker Unified Studio, you will need to follow the [Dockerfile specifications](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/byoi-specifications.html) in the *Amazon SageMaker Unified Studio User Guide*.
 `Dockerfile` examples for SageMaker Unified Studio can be found in [Dockerfile example](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/byoi-specifications.html#byoi-specifications-example) in the *Amazon SageMaker Unified Studio User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ To enable multi-year data in Cost Explorer, see [Configuring multi-year and gran
 **Note**
 We will disable multi-year data for your organization if no one in the organization accesses it in three consecutive months. However, if you need the data, you can re-enable it in Cost Management preferences.
 Multi-year data is only available for chargeable costs in Cost Explorer. If you're onboarded to AWS Billing Conductor, you won’t be able to use this feature.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

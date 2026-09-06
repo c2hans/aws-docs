@@ -89,7 +89,3 @@ You can use slash commands in comments within GitHub issues or pull requests to 
 + `/q dev` - Invokes Amazon Q Developer in a GitHub issue to automatically implement new features and bug fixes. Amazon Q Developer creates a pull request with the changes and a summary of the changes.
 + `/q review` - Invokes Amazon Q Developer to automatically perform code reviews when pull requests are created or reopened. Code reviews provide feedback on code quality, potential issues, and security concerns, along with suggested fixes and code review summaries with threaded findings. Use `/q` in pull request comments to interact with findings. Automatic reviews are not triggered by subsequent commits to existing pull requests.
 + `/q help` - Provides information about Amazon Q Developer for GitHub, including slash comannds, features, customization details, as well as a link to the [Amazon Q Developer for GitHub (Preview)](#amazon-q-for-github) documentation in the *Amazon Q Developer Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

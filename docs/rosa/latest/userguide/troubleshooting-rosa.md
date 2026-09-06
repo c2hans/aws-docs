@@ -92,7 +92,3 @@ Failed to create cluster: Unable to create cluster spec: Failed to get access ke
 + Open an [Support case](https://console.aws.amazon.com/support) or [Red Hat Support case](https://access.redhat.com/support/).
 + Find answers to [frequently asked questions about Red Hat OpenShift Service on AWS](https://aws.amazon.com/rosa/faqs/).
 + For more information about ROSA’s support model, see [Getting ROSA support](rosa-support.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Red Hat OpenShift Service on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rosa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

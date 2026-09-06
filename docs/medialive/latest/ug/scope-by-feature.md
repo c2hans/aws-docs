@@ -26,7 +26,3 @@ Manifest decoration applies at the *output group* level. If you enable manifest 
 SCTE 35 passthrough or removal applies at the *output* level. You can enable passthrough or removal in individual TS outputs. The messages are passed through or removed only in those outputs.
 
 ![Channel diagram showing two output groups, each containing two outputs, with passthrough or removal applied at output level.](http://docs.aws.amazon.com/medialive/latest/ug/images/scte35_scope_passthrough.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

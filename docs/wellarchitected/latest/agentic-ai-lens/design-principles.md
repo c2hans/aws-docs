@@ -11,7 +11,3 @@ The Agentic AI Lens is built on a set of design principles that reflect the uniq
 + **Treat agent behavior as code:** Prompts, tool catalogs, role definitions, model selections, and policies are versioned artifacts that go through peer review, testing, staged rollout, and rollback alongside the rest of the codebase.
 + **Pair autonomy with proportionate human oversight:** Define autonomy levels (observer, assistant, autonomous, orchestrator) and escalation paths up front. Human review depth scales with the consequence of the action, by design rather than by reaction.
 + **Ground autonomous behavior in explicit contracts:** Schemas, registries, structured success criteria, and confidence signals replace implicit assumptions about what an agent will do. What used to live inside a prompt becomes an enforceable interface.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

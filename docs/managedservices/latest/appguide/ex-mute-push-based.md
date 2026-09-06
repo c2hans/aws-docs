@@ -32,7 +32,3 @@ The basic steps are outlined here and the procedure is detailed in the AMS User 
 1. Repeat step 4 to create another EC2 instance and configure it with the deployment tool master server.
 
 1. When you need to update your application, use the deployment tool to rollout the updates to your instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

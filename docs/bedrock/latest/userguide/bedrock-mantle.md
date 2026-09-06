@@ -262,7 +262,3 @@ Two condition keys let a policy on either resource constrain the other. The infe
 **Monitoring and cost**
 
 Because every request is synchronous, CloudWatch metrics and model invocation logging work for the Responses API the same way they do for the other inference APIs on this endpoint, including for streaming requests. Usage is attributed to the inference target, exactly as it is for Converse and InvokeModel — the default project is never the billing anchor. See [Track usage and costs in Amazon Bedrock](cost-management.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

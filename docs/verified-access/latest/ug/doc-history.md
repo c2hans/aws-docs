@@ -19,7 +19,3 @@ The following table describes the documentation releases for Verified Access.
 | [AWS managed policy updated](https://docs.aws.amazon.com/verified-access/latest/ug/security-iam-awsmanpol.html) | Update made to AWS managed IAM policy for Verified Access. | May 31, 2023 |
 | [GA release](#doc-history) | GA release of the Verified Access User Guide. Includes [AWS WAF integration](https://docs.aws.amazon.com/verified-access/latest/ug/waf-integration.html). | April 27, 2023 |
 | [Preview release](#doc-history) | Preview release of the Verified Access User Guide | November 29, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Verified Access. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verified-access` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

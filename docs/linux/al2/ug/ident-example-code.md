@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/ident-example-code.html
 
  The following examples demonstrate how to programmatically detect the operating system and version using the `/etc/os-release` (or `/usr/lib/os-release` if `/etc/os-release` does not exist) file. These examples show how to distinguish between Amazon Linux and other distributions, as well as how to use the `ID_LIKE` field to determine distribution families.
 
- The script below is implemented in several different programming languages, and each implementation will produce the same output.
+ The following script is implemented in several different programming languages, and each implementation produces the same output.
 
 ------
 #### [ Shell ]
@@ -106,6 +106,9 @@ if is_amazon_linux; then
             ;;
         2023)
             echo "Amazon Linux 2023"
+            ;;
+        2027)
+            echo "Amazon Linux 2027"
             ;;
         *)
             echo "Unknown Amazon Linux version: $VERSION_ID"
@@ -215,6 +218,8 @@ def main():
             print("Amazon Linux 2")
         elif version_id == '2023':
             print("Amazon Linux 2023")
+        elif version_id == '2027':
+            print("Amazon Linux 2027")
         else:
             print(f"Unknown Amazon Linux version: {version_id}")
 
@@ -267,7 +272,7 @@ def is_like_debian(os_data):
     return 'debian' in id_like
 
 def main():
-    # Parse os-release file using the standard library function (Python 3.10+)
+    # Parse os-release file using the standard library function
     try:
         os_data = platform.freedesktop_os_release()
     except OSError:
@@ -306,6 +311,8 @@ def main():
             print("Amazon Linux 2")
         elif version_id == '2023':
             print("Amazon Linux 2023")
+        elif version_id == '2027':
+            print("Amazon Linux 2027")
         else:
             print(f"Unknown Amazon Linux version: {version_id}")
 
@@ -431,6 +438,8 @@ if (is_amazon_linux(%os_data)) {
         print "Amazon Linux 2\n";
     } elsif ($version_id eq '2023') {
         print "Amazon Linux 2023\n";
+    } elsif ($version_id eq '2027') {
+        print "Amazon Linux 2027\n";
     } else {
         print "Unknown Amazon Linux version: $version_id\n";
     }
@@ -444,7 +453,7 @@ if (is_amazon_linux(%os_data)) {
 
 ------
 
- When run on different systems, the script will produce the following output:
+ When run on different systems, the script produces the following output:
 
 ------
 #### [ AL2023 ]
@@ -463,7 +472,7 @@ Detailed OS Information:
 =======================
 ID: amzn
 VERSION_ID: 2023
-PRETTY_NAME: Amazon Linux 2023.8.20250721
+PRETTY_NAME: Amazon Linux 2023.12.20260831
 ID_LIKE: fedora
 
 Amazon Linux Version Details:
@@ -540,8 +549,8 @@ Is like Debian: YES
 Detailed OS Information:
 =======================
 ID: ubuntu
-VERSION_ID: 24.04
-PRETTY_NAME: Ubuntu 24.04.2 LTS
+VERSION_ID: 26.04
+PRETTY_NAME: Ubuntu 26.04 LTS
 ID_LIKE: debian
 ```
 
@@ -561,8 +570,8 @@ Is like Debian: YES
 Detailed OS Information:
 =======================
 ID: debian
-VERSION_ID: 12
-PRETTY_NAME: Debian GNU/Linux 12 (bookworm)
+VERSION_ID: 13
+PRETTY_NAME: Debian GNU/Linux 13 (trixie)
 ```
 
 ------
@@ -581,12 +590,8 @@ Is like Debian: NO
 Detailed OS Information:
 =======================
 ID: fedora
-VERSION_ID: 42
-PRETTY_NAME: Fedora Linux 42 (Container Image)
+VERSION_ID: 44
+PRETTY_NAME: Fedora Linux 44 (Container Image)
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

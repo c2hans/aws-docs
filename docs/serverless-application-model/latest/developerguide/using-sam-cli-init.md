@@ -334,7 +334,3 @@ To learn more about using the `sam init` command, see the following:
 <a name="w2aac18c11c39"></a>
 
 Now that you have created your AWS SAM project, you are ready to start authoring your application. See [Define your infrastructure with AWS SAM](serverless-authoring.md) for detailed instructions on the tasks you need to complete to do this.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/newrelic-integrat
 # New Relic integration
 <a name="newrelic-integration"></a>
 
-With the New Relic action connector, you can access the New Relic observability platform directly in Amazon Quick through natural language. You can investigate incidents, analyze application performance, query telemetry data, and generate reports without leaving Amazon Quick.
+With the New Relic connector, you can access the New Relic observability platform directly in Amazon Quick through natural language. You can investigate incidents, analyze application performance, query telemetry data, and generate reports without leaving Amazon Quick.
 
 New Relic is available as a built-in connector in Amazon Quick. To set up this integration, complete the following two steps. First, prepare your New Relic account with the required access. Then, create the integration in Amazon Quick and authenticate with your New Relic credentials. This integration uses OAuth 2.0 user authentication. For information about the authentication methods that Amazon Quick supports, see [Authentication methods](quick-action-auth.md).
 
@@ -98,7 +98,3 @@ To edit, share, or delete your integration, see [Managing existing integrations]
 <a name="newrelic-troubleshooting-auth"></a>
 + **Sign-in fails** – Verify that your New Relic account is active and that you can sign in to [login.newrelic.com](https://login.newrelic.com) directly. If your organization uses single sign-on (SSO), confirm that your identity provider is configured correctly.
 + **MCP server access denied** – Verify that your user has the required permissions to access the New Relic MCP server. For information about access requirements, see [New Relic AI MCP](https://docs.newrelic.com/docs/agentic-ai/mcp/overview/) in the New Relic documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

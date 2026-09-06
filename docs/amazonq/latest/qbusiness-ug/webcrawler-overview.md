@@ -23,7 +23,3 @@ The following table gives an overview of the Amazon Q Business Web Crawler conne
   - **Feature:** Filters / **Support:** Yes. The following filters are supported: +  Sync specific domains and subdomains <br />+  Include files linked on web pages <br />+  Regex patterns to crawl and index specific URLs <br />+  Regex patterns to crawl and index specific files <br />+  Include web pages by crawl depth <br />+  Specify maximum file size and links per page for Amazon Q to crawl
   - **Feature:** [Sync mode](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-sync-mode) / **Support:** Supports full and new, modified, or deleted content sync
   - **Feature:** [File types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html) / **Support:** Supports all files supported by Amazon Q.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

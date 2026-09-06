@@ -48,7 +48,3 @@ The following table describes important changes in each release of Amazon Monitr
 | [New region supported](#doc-history) | Amazon Monitron is now available in the Europe (Ireland) Region. For all supported Regions, see [Supported Regions](https://docs.aws.amazon.com/Monitron/latest/user-guide/quotas.html) . | May 5, 2021 |
 | [One-off downloads supported](#doc-history) | You can [download your data](https://docs.aws.amazon.com/Monitron/latest/user-guide/data-download-monitron) to Amazon S3 using either the CLI or the console. | January 21, 2021 |
 | [New guide and service](#doc-history) | This is the first release of the Amazon Monitron User Guide and service. | December 1, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

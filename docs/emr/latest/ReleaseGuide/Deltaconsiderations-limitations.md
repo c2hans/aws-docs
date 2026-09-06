@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Deltaconsiderati
   ```
 
   To resolve this issue, create the database in the Data Catalog with a valid, non-empty path for the `LOCATION` field. For steps to implement this solution, see [Illegal argument exception when creating a table](https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-known-issues.html#notebooks-spark-known-issues-illegal-argument-exception) in the *Amazon Athena User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

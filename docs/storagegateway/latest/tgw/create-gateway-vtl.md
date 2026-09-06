@@ -150,7 +150,3 @@ This feature requires CloudWatch policy permissions, which are *not* automatical
    To check the status of your new gateway, search for it on the **Gateway overview** page of the Storage Gateway.
 
 Now that you have created your gateway, you need to create virtual tapes for it to use. For instructions, see [Creating Tapes](https://docs.aws.amazon.com/storagegateway/latest/tgw/GettingStartedCreateTapes.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -117,7 +117,3 @@ You can specify checkpoints as part of the `createJob` API using the `checkpoint
 
 **Note**
 The localPath of `checkpointConfig` cannot start with any of the following reserved paths: `/opt/ml`, `/opt/braket`, `/tmp`, or `/usr/local/nvidia`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

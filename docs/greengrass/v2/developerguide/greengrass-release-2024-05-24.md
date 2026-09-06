@@ -26,7 +26,3 @@ The following table lists components provided by AWS that include new and update
 | Greengrass nucleus | Version 2.12.6 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.**Bug fixes and improvements**<br />   Fixes an issue that causes a crash at startup on certain ARMv8 processors, including the Jetson Nano.    |
 | Greengrass CLI | Version 2.12.6 of the [Greengrass CLI](greengrass-cli-component.md) is available.**Bug fixes and improvements**<br />   Version updated for Greengrass nucleus version 2.12.6 release.    |
 | Secret manager | Version 2.1.8 of the [secret manager](secret-manager-component.md) is available.**Bug fixes and improvements**<br />   Fixes an issue where secret manager doesn't accept a partial arn.    |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -82,7 +82,3 @@ Use a configuration like the following for the pilot. It declares the Elasticsea
 Set `allowInsecure` to `true` only if the source cluster presents a self-signed or otherwise untrusted certificate over HTTPS. If the source uses plaintext HTTP or a trusted certificate, omit `allowInsecure`.
 
 By default, the built-in type-mapping sanitization transformer merges the multiple mapping types found in an Elasticsearch 6.8 index into a single index on the target (union), which is the most common choice when moving off pre-7.0 type mappings. This happens automatically with no configuration field. If you need to rename the merged output or drop routed data, configure `TypeMappingSanitizationTransformerProvider` rather than a `multiTypeBehavior` field; see [Transform type mappings](transform-type-mappings.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

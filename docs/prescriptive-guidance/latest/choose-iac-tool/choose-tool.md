@@ -13,7 +13,3 @@ With so many different tool options and varying business requirements, there's n
 + If you want a multi-provider utility, especially for managing multi-cloud or hybrid-cloud infrastructure, Terraform might be a good choice because it is platform agnostic. With Terraform, you can also use a wide range of plugins, and it has a large community with enterprise support options.
 + If you have a top-down distribution with best practices and if you have orchestration where you create, publish, and distribute reusable modules by using common programming languages, then the AWS CDK might be a good option.
 + If your organization can tolerate a high level of risk and needs to support multi-cloud or hybrid-cloud environments, consider using Pulumi.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

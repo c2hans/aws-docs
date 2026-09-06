@@ -98,7 +98,3 @@ You can set the default version of a customer managed policy to apply that versi
 1. Choose the **Policy versions** tab. Select the checkbox next to the version that you want to set as the default version, and then choose **Set as default**.
 
 To learn how to set the default version of a customer managed policy from the AWS Command Line Interface or the AWS API, see [Edit IAM policies (AWS CLI)](access_policies_manage-edit-cli.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

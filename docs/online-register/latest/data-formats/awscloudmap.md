@@ -23,7 +23,3 @@ AWS Cloud Map provides the following APIs for data retrieval.
 | <a name="servicediscovery-ListOperations"></a>[ListOperations](https://docs.aws.amazon.com/cloud-map/latest/api/API_ListOperations.html) | List operations that match the criteria that you specify | List |
 | <a name="servicediscovery-ListServices"></a>[ListServices](https://docs.aws.amazon.com/cloud-map/latest/api/API_ListServices.html) | Get settings for all the services that match specified filters | Read |
 | <a name="servicediscovery-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/cloud-map/latest/api/API_ListTagsForResource.html) | Lists tags for the specified resource | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

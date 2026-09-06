@@ -138,7 +138,3 @@ The de-registration state machine does the following:
 1. Deletes the module from the [Registered Modules DynamoDB table](dynamodb-tables.md#registered-modules).
 
 1. In any case of failures, it updates module status to `DEREGISTER FAILED` in [External Modules DynamoDB table](dynamodb-tables.md#external-modules) and [Registered Modules DynamoDB table](dynamodb-tables.md#registered-modules).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

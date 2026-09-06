@@ -11,6 +11,9 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 
  [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWS-CreateDSManagementInstance)
 
+**Note**
+By default, this runbook reuses an existing domain join document in your account if one is already present for the directory. To have the runbook always use the AWS owned public document `AWS-JoinDirectoryServiceDomain-V2` instead, set the `UseAWSManagedDomainJoinDocument` parameter to `true`. We recommend using `true`, and following the principle of least privilege when granting AWS Systems Manager document permissions such as `ssm:CreateDocument`. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) in the AWS Identity and Access Management User Guide.
+
 **Document type**
 
 Automation
@@ -99,6 +102,15 @@ Windows
   Description: (Optional) A key-value pair you want to apply to the resources created by the automation.
 
   Default: ` [ {"Key":"Description","Value":"Created by AWS Systems Manager Automation"}, {"Key":"Created By","Value":"AWS Systems Manager Automation"} ]`
++ UseAWSManagedDomainJoinDocument
+
+  Type: String
+
+  Valid values: `false` \| `true`
+
+  Default: `false`
+
+  Description: (Optional) Determines which document the runbook uses to join the new instance to your directory. When set to `true`, the runbook uses the AWS owned public document `AWS-JoinDirectoryServiceDomain-V2`. When set to `false` (the default), the runbook reuses the directory's existing domain join document if one is present, and otherwise creates one, runs it, and then deletes it. We recommend setting this parameter to `true`.
 
 **Required IAM permissions**
 
@@ -149,10 +161,6 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 +  `aws:executeAwsApi` - Creates an inbound rule for the newly created security group that allows RDP traffic from the CIDR you specify in the `RemoteAccessCidr` parameter.
 +  `aws:executeAwsApi` - Creates an IAM role and instance profile using the value you specify in the `IamInstanceProfileName` parameter.
 +  `aws:executeAwsApi` - Launches an Amazon EC2 instance based on the values you specify in the runbook parameters.
-+  `aws:executeAwsApi` - Creates an AWS Systems Manager document to join the newly launched instance to your directory.
++  `aws:branch` - Determines which document to use for the domain join, based on the value of the `UseAWSManagedDomainJoinDocument` parameter.
 +  `aws:runCommand` - Joins the new instance to your directory.
 +  `aws:runCommand` - Installs remote server administration tools on the new instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -108,7 +108,3 @@ ACL misconfigurations do not produce explicit errors during retrieval. Retrieval
 | All users are denied after previously working. | The certificate expired, or admin consent was revoked. | Renew the certificate in the Entra app registration and in Amazon S3, and re-grant admin consent. |
 | Crawl or sync fails although the configuration looks correct. | A required Microsoft Graph application permission is missing. | Grant User.Read.All and GroupMember.Read.All. |
 | Certificate password or token-minting errors. | The .p12 password does not match certificatePassword. | Set certificatePassword to the password used to create the .p12 file. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ You can request a new application account by submitting a Deployment \| Managed 
 + PrivateSubnet{{<1-10>}}AZ{{<I-3>}}CIDRCIDR for public subnet in AZ 1: The CIDR for public subnet in Availability Zone 1.
 
 At this point, AMS deploys a new application account into your AMS management account, with the specified VPC configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

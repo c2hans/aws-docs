@@ -18,7 +18,3 @@ The parent node for this transform must be a node that returns a collection of `
 Similarly, if you use a *SelectFromCollection* node in your job diagram as the parent for a transform that expects a single `DynamicFrame` as input, your job returns an error.
 
 ![The screenshot shows the Node parents field on the Node properties tab of the node details panel. The selected node parent is SplitFields and the error message displayed reads "Parent node Split Fields outputs a collection, but node Drop Fields does not accept a collection."](http://docs.aws.amazon.com/glue/latest/dg/images/screenshot-edit-splitfields-wrong-parent.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

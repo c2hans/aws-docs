@@ -61,7 +61,3 @@ From the queue properties view, you can send a message to the queue.
 ![Message Sampling section showing one message with ID, body text, sender ID, and timestamp.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-sqs-message-sent.png)
 
    The timestamp in the queue properties view is the time you chose the **Send** button. It does not include the delay. Therefore, the time that the message appears in the queue and is available to receivers might be later than this timestamp. The timestamp is displayed in your computer's local time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 +  [Amazon Bedrock Evaluations](https://aws.amazon.com/bedrock/evaluations/)
 +  [Amazon SageMaker AI AI](https://aws.amazon.com/sagemaker/ai/?trk=bba24a8e-fec0-4c35-b7c7-d2e5e6b67eeb&sc_channel=ps&ef_id=CjwKCAjw2vTFBhAuEiwAFaScwgLGwsaX0LbsbBiFc16GhqyAGMIK79BPAbk_Bnl_-rlJVFq23-H2KRoCz5cQAvD_BwE:G:s&s_kwcid=AL!4422!3!724106169285!e!!g!!amazon%20sagemaker%20ai!19090032234!170269930766&gad_campaignid=19090032234&gbraid=0AAAAADjHtp97_-1psrdUeBS9kWnK-_Zmt&gclid=CjwKCAjw2vTFBhAuEiwAFaScwgLGwsaX0LbsbBiFc16GhqyAGMIK79BPAbk_Bnl_-rlJVFq23-H2KRoCz5cQAvD_BwE)
 +  [Amazon SageMaker AI Clarify](https://aws.amazon.com/sagemaker/ai/clarify/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

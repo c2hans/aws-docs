@@ -49,7 +49,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql
 <a name="ebsoptimized-instances"></a>
 
  Amazon EBS-optimized instances deliver dedicated throughput between Amazon EC2 and Amazon EBS. The dedicated throughput minimizes contention between Amazon EBS I/O and other traffic from Amazon EC2 instance, providing the best performance for PostgreSQL workloads. It is recommended to choose an Amazon EBS–optimized instance that provides more dedicated Amazon EBS throughput than application needs; otherwise, the connection between Amazon EBS and Amazon EC2 can become a performance bottleneck. For more information about the instance types that can be launched as Amazon EBS-Optimized instances, see [Amazon EC2 Instance Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

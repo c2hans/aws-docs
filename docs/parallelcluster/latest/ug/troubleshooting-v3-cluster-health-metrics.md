@@ -132,7 +132,3 @@ If you see a non-zero value in the `Instance Provisioning Errors` graph, then it
 + **How to resolve?**
 
   For more information about this issue, see [**Replacing, terminating, or powering down problematic instances and nodes**](troubleshooting-v3-scaling-issues.md#replacing-terminating-or-powering-down-problematic-instances-and-nodes-v3) in [Troubleshooting scaling issues](troubleshooting-v3-scaling-issues.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

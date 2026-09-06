@@ -59,7 +59,3 @@ The following table describes the important changes to the documentation. For no
 | [Added getting started pages](#doc-history) | Getting started pages were added. | August 12, 2022 |
 | [Added new AWS managed policy ROSAManageSubscription](#doc-history) | New AWS managed policy ROSAManageSubscription was added. | April 11, 2022 |
 | [Initial release](#doc-history) | The initial release of the Red Hat OpenShift Service on AWS User Guide. | March 24, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Red Hat OpenShift Service on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rosa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

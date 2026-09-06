@@ -41,7 +41,3 @@ To set up a customer managed key to encrypt data in Amazon Q Developer, administ
 To use features that are encrypted with a customer managed key, users need permissions to allow Amazon Q to access the customer managed key. For a policy that grants the needed permissions, see [Allow Amazon Q access to customer managed keys](id-based-policy-examples-users.md#id-based-policy-examples-allow-q-access-encryption).
 
 If you see an error related to KMS grants while using Amazon Q Developer, you likely need to update your permissions to allow Amazon Q to create grants. To automatically configure the needed permissions, go to the Amazon Q Developer console and choose **Update permissions** in the permissions banner.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

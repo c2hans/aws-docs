@@ -24,7 +24,3 @@ If the project's source type is `GITHUB_ENTERPRISE`, you will also need to speci
 1. If you are creating a global webhook, the webhook will need to be created manually. For more information about how to manually create a webhook within GitHub, see [GitHub manual webhooks](github-manual-webhook.md).
 
    Note that global webhooks only support the `WORKFLOW_JOB_QUEUED` event type. For more information, see [Tutorial: Configure a CodeBuild-hosted GitHub Actions runner](action-runner.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

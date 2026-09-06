@@ -15,7 +15,3 @@ The following topics show examples of how the AWS SDK for JavaScript can be used
 + [Managing Amazon S3 Bucket Access Permissions](s3-example-access-permissions.md)
 + [Working with Amazon S3 Bucket Policies](s3-example-bucket-policies.md)
 + [Using an Amazon S3 Bucket as a Static Web Host](s3-example-static-web-host.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for JavaScript SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

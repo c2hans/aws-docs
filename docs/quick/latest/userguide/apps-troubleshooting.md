@@ -49,7 +49,3 @@ You can ask the agent to add a debug panel that logs storage operations, integra
 <a name="apps-ts-export-not-working"></a>
 
 If an export feature does not work, ask the agent: "Use the `downloadFile` function from the runtime library to handle the file export." The sandbox blocks direct browser APIs for file creation. For more information, see [Sandbox restrictions](security-sandbox-apps.md#apps-sandbox-restrictions).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

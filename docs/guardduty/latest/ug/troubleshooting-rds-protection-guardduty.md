@@ -34,7 +34,3 @@ To resolve the unsupported version issue, do one of the following:
 <a name="guardduty-rds-protection-additional-security-considerations"></a>
 
 If your organization has strict compliance requirements, we recommend implementing database auditing in addition to using RDS Protection. For more information about your security responsibilities and shared responsibility model, see [Security in Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.html) in the *Amazon RDS User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

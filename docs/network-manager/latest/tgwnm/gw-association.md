@@ -30,7 +30,3 @@ You can associate a [Connect peer](https://docs.aws.amazon.com/vpc/latest/tgw/tg
 + [Disassociate a customer gateway association from a device](nm-cgw-diasssociate.md)
 + [Add a Connect peer association](connect-peer-association.md)
 + [Disassociate a Connect peer from a device](nm-cgw-connect-disassociate.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

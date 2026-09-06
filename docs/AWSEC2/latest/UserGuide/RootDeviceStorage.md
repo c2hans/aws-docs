@@ -65,7 +65,3 @@ Only the following instance types support an instance store volume as the root v
 
 **Instance failure**
 After an instance with an instance store root volume fails or terminates, it can't be restored. If you plan to use an instances with an instance store root volume, we highly recommend that you distribute the data on your instance store volumes across multiple Availability Zones. You should also back up critical data from your instance store volumes to persistent storage on a regular basis.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

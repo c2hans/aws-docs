@@ -24,7 +24,3 @@ Manual signing uses the Notation CLI and AWS Signer plugin to sign images before
 The following should be considered when using Amazon ECR image signing:
 + Signatures stored in your repository count against the service quota for the maximum number of images per repository. Each signature counts as 1 artifact against the images per repository quota. For more information, see [Amazon ECR service quotas](service-quotas.md).
 + When reference artifacts are present in a repository, Amazon ECR lifecycle policies will automatically clean up those artifacts within 24 hours of the deletion of the subject image. The artifact must also remain in its current storage class for at least 24 hours before Amazon ECR lifecycle policies can clean it up.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

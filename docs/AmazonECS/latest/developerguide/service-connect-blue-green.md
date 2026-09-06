@@ -134,7 +134,3 @@ During a deployment, Service Connect handles:
 + **Client Configuration**: All client services in the namespace automatically receive updated routing information without requiring restarts or redeployment.
 + **Gradual Transition**: Service discovery updates happen gradually and safely, ensuring no disruption to ongoing requests.
 + **Rollback Support**: If a rollback is needed, Service Connect can quickly revert service discovery configurations to route traffic back to the blue service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

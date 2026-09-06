@@ -246,7 +246,3 @@ For more flexibility on how you route traffic to your APIs, you can create a rou
  API Gateway supports custom domain names for an API by using [Server Name Indication (SNI)](https://en.wikipedia.org/wiki/Server_Name_Indication). You can invoke the API with a custom domain name using a browser or a client library that supports SNI.
 
  API Gateway enforces SNI on the CloudFront distribution. For information on how CloudFront uses custom domain names, see [Amazon CloudFront Custom SSL](https://aws.amazon.com/cloudfront/custom-ssl-domains/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

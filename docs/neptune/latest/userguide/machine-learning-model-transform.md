@@ -171,7 +171,3 @@ If the original training job was for a user-provided custom model, you must incl
 The `modeltransform` command always runs the model transform on the best SageMaker AI training job for that training.
 
 See [The modeltransform command](machine-learning-api-modeltransform.md) for more information about model transform jobs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,3 @@ View details about updates to AWS managed policies for RTB Fabric since this ser
 | [RTBFabricServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/RTBFabricServiceRolePolicy.html) – Policy updated | RTB Fabric updated the CloudWatch namespace from `rtbfabric` to `AWS/RTBFabric` for publishing custom metrics. | October 16, 2025 |
 | [RTBFabricServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/RTBFabricServiceRolePolicy.html) – New policy | RTB Fabric added a new managed policy that allows RTB Fabric to manage network interfaces and publish CloudWatch metrics on your behalf. | August 19, 2025 |
 | RTB Fabric started tracking changes | RTB Fabric started tracking changes for its AWS managed policies. | March 1, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RTB Fabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rtb-fabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

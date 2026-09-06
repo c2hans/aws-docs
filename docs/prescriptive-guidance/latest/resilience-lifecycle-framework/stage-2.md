@@ -77,7 +77,3 @@ Resilience modeling documents how an application will respond to different antic
 <a name="fail-safely"></a>
 
 If you're unable to avoid disruptions, fail safely. Consider creating your application with a default fail-safe mode of operation, where no significant business loss can be incurred. An example of a fail-safe state for a database would be to default to read-only operations, where users aren't allowed to create or mutate any data. Depending on the sensitivity of the data, you might even want the application to default to a shutdown state and not even perform read-only queries. Consider what the fail-safe state for your application should be, and default to this mode of operation under extreme conditions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

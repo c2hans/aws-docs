@@ -83,7 +83,3 @@ After it retrieves the file size, this demo creates a new range request for each
 The function `prvDownloadS3ObjectFile()` sends the range requests in a loop until the entire file is downloaded. The API function `HTTPClient_Send()` sends a request and receives the response synchronously. When the function returns, the response is received in an `xResponse`. The status-code is then verified to be `206 Partial Content` and the number of bytes downloaded so far is incremented by the `Content-Length` header value.
 
 The source code for `prvDownloadS3ObjectFile()` can be found on [ GitHub](https://github.com/aws/amazon-freertos/blob/main/demos/coreHTTP/http_demo_s3_download.c#L506-L651).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

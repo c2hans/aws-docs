@@ -22,7 +22,3 @@ Following are steps agents use to view their schedule in the agent application.
 The Agent Calendar displays times according to the following prioritized timezone logic:
 + Agent-specific timezone — If the administrator has explicitly configured a timezone in the agent's staff rules or profile settings, this timezone is used.
 + Fallback: Agent's local device timezone — If no agent-specific timezone has been configured, the calendar uses the timezone detected from the agent's computer or browser settings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

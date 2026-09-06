@@ -425,7 +425,3 @@ USER $NB_UID
  The acceptable UID/GID values for custom images are 0/0 and 1000/100 for Studio images. For examples of building custom images and the associated `AppImageConfig` settings, refer to this [Github repository](https://github.com/aws-samples/sagemaker-studio-custom-image-samples).
 
  To avoid users tampering with this, do not grant the `CreateAppImageConfig`, `UpdateAppImageConfig`, or `DeleteAppImageConfig` permissions to SageMaker AI Studio notebook users.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

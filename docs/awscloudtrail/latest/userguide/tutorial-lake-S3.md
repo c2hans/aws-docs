@@ -114,7 +114,3 @@ To enable AWS Key Management Service encryption for an organization event data s
 You are now ready to run queries on your event data store. For information about how to view and run sample queries, see [View sample queries with the CloudTrail console](lake-console-queries.md).
 
 For more information about CloudTrail Lake, see [Working with AWS CloudTrail Lake](cloudtrail-lake.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

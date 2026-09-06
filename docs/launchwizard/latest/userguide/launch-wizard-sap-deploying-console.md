@@ -933,7 +933,3 @@ With a cloned deployment, the following inputs must be provided.
   + You can **Create new configuration** by entering a new **Configuration name** and checking the **Verify connectivity** box.
   + To use the same configuration, select **Apply saved configuration** and choose a configuration from the list.
 + The application and database credentials are not carried over. Enter your application and database passwords when prompted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

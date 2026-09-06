@@ -15,7 +15,3 @@ Implement patterns for performing load smoothing and maintaining consistent high
 + [SUS03-BP03 Optimize areas of code that consume the most time or resources](sus_sus_software_a4.md)
 + [SUS03-BP04 Optimize impact on customer devices and equipment](sus_sus_software_a5.md)
 + [SUS03-BP05 Use software patterns and architectures that best support data access and storage patterns](sus_sus_software_a6.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

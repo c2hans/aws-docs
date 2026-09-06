@@ -16,7 +16,7 @@ As an Amazon Lightsail partner, you can contact the Lightsail team with question
 1. Choose **Account** in the dropdown menu.
 ![Lightsail account page.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-console-account-menu.png)
 
-1. On the **Profile** tab, in the **Lightsail partner** section, choose **Contact Lightsail**.
+1. On the **Profile & preferences** tab, in the **Lightsail Partner Program** section, choose **Contact Lightsail**.
 **Important**
 The **Contact Lightsail** action is only available to the account that requested to become a Lightsail partner and was accepted. For more information, see [Become a Lightsail partner](lightsail-partners-become-a-partner.md).
 ![Contact Lightsail from the account page.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/partners/lightsail-partner-contact-account-page.png)
@@ -27,7 +27,3 @@ The **Contact Lightsail** action is only available to the account that requested
 1. Choose **Submit**.
 
 If you provide your email address, you might be contacted about your feedback.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

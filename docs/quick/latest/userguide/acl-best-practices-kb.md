@@ -90,7 +90,3 @@ When configuring document-level ACLs for your knowledge bases, be aware of these
 
 **Research compatibility**
 Knowledge bases with document-level ACLs enabled aren't currently compatible with Quick Research. If you need to use documents from an ACL-enabled knowledge base for research, create a separate knowledge base without ACLs for those documents.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

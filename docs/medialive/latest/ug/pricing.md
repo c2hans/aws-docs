@@ -34,6 +34,8 @@ There are charges for MediaLive based on the state of resources. There are idle 
 + There is a *running output charge* for each output that is configured in a channel that is running. The charge applies even if the output has been paused by the user or by Elemental Live.
 
   The charge for each output is based on the type of output, and on a combination of key video characteristics of the output, such as video output codec, and video frame rate. You specify the characteristics in the video settings of each output in the channel. For more information, see [Set up the video encode](creating-a-channel-step6.md).
+
+  If you enable A/B forensic video watermarking for a supported output group, MediaLive creates an A variant and a B variant of each video output in that output group. Each variant is billed as a separate output, so the number of video outputs used for output-based pricing doubles for that output group. This doesn't affect outputs in other output groups. For more information, see [Creating A/B forensic video watermarks](feature-ab-watermark.md).
 + There is a *running input charge* for each input that is attached to a channel that is running. The charge applies to both push and pull inputs. It applies even to the inputs in the channel that aren't currently active or that aren't receiving any content.
 
   The input pricing is based on the type of input, and on a combination of key characteristics of the input, such as input codec, bitrate, and resolution. For detailed information about the basis for input pricing, see [https://aws.amazon.com/medialive/pricing/](https://aws.amazon.com/medialive/pricing/). You specify some of these characteristics in the input specification when you create the channel. For more information, see [Input specifications settings](input-specification.md).
@@ -42,7 +44,3 @@ There are charges for MediaLive based on the state of resources. There are idle 
 
   For channels configured with a standard channel class (two-pipeline), input and output charges are at the standard-class rate. For channels with a single-pipeline channel class, charges are at the single-pipeline rate.
 + There is an *add-on charge* for running channels that have specific features enabled. The charge applies to the channel, not to individual inputs, outputs, or other components within the channel. For example, the add-on charge for Advanced Audio is applied at the same rate for a running channel with one output that uses advanced audio as it is for a running channel with three outputs that use advanced audio. For a list of add-on charges, see [https://aws.amazon.com/medialive/pricing/](https://aws.amazon.com/medialive/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

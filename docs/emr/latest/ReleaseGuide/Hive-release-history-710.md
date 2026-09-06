@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 7.1.0 - Hive changes
 <a name="emr-Hive-710-issues"></a>
 + Amazon EMR 7.1 upgrades Hive to Netty 4.1.100.Final to solve the security vulnerabilities in Netty3. Since hive-druid-handler has a dependency on netty3, Hive doesn't have the `hive-druid-handler` JAR in Hive's classpath in Amazon EMR 7.1. An upcoming Amazon EMR release will include it in Hive's classpath once the Druid handler supports 4.1.100.Final or later versions of Netty. Reach out to AWS support if you need the `hive-druid-handler` JAR in Amazon EMR releases 7.1 or higher.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

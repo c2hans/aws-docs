@@ -60,7 +60,3 @@ Skills in:
 + Identifying the benefits of being an AWS Partner (for example, partner training and certification, partner events, partner volume discounts)
 + Identifying the key services that AWS Marketplace offers (for example, cost management, governance and entitlement)
 + Identifying technical assistance options available at AWS (for example, AWS Professional Services, AWS solutions architects)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -67,7 +67,3 @@ Because AWS Control Tower is an orchestration layer for AWS Organizations, many 
 You can extend automation by using the lifecycle events that AWS Control Tower emits. These events can be monitored through an Amazon EventBridge rule, which can then trigger custom automation, such as invoking an AWS Lambda function to apply tags, configure resources, or notify teams when specific account or control-related events occur in your landing zone.
 
 For more information about lifecycle events, see [Lifecycle events in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/lifecycle-events.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

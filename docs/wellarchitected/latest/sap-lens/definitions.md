@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/definiti
 | SAPS rating (referred to as SAPS in multiple locations) | SAP Application Performance Standard (SAPS) – is a hardware-independent unit of measurement that describes the performance of a system configuration in the SAP environment. It is derived from the Sales and Distribution (SD) benchmark, where 100 SAPS is defined as 2,000 fully business processed order line items per hour. For more information, see [SAP Standard Application Benchmarks](https://www.sap.com/about/benchmark/measuring.html) .  |  The Amazon EC2 instance type c5.large provides 3,650 SAPS.  |
 
  AWS Documentation: [AWS Glossary](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

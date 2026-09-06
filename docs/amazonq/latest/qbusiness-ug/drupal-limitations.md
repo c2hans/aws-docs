@@ -16,7 +16,3 @@ Amazon Q Business Drupal connector has the following known limitations:
 + There is no JSON API available to create the user defined content type using HTTP verbs.
 + The document body and comments for **Articles**, **Basic pages**, **Basic blocks**, user defined content type, and user defined block type, are displayed in HTML format. If the HTML content is not well-formed, then the HTML related tags will appear in the document body and comments and will be visible in Amazon Kendra search results.
 + Content types and **Block** types without description or body will not be ingested into Amazon Q. Only **Comments** and **Attachments** of such **Content** or **Block** types will be ingested into your Amazon Q index.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

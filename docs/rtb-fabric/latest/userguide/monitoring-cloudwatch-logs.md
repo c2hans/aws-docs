@@ -121,7 +121,3 @@ The sampling rates are specified as percentages (0.0 to 100.0) where:
 + `filterLog` – Percentage of filter logs to capture
 
 You can also configure sampling rates when creating links using the `CreateLink` operation with similar log-settings parameters.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RTB Fabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rtb-fabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

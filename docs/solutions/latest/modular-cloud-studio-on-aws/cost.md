@@ -109,7 +109,3 @@ Here is a **simplified cost table** for core AWS services in the hub region for 
 |  **EC2 Egress**  | First 100 GB per month is free | \~ $ 0.09 per GB |
 |  **EC2 Elastic IP Address**  | 2 used by Global Accelerator | $ 7.32 |
 |  |  **Total (excluding data transfer costs):**  |  **$ 442.10 [USD] / month**  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,7 +39,3 @@ For someone such as a manager to be able to change an agent's activity status on
 The **Agent status - View** permission is shown in the following image of the **Users and permissions** section of the security profile page.
 
 ![The Agent status - View permission.](http://docs.aws.amazon.com/connect/latest/adminguide/images/SecurityProfile_cloudscape_agent_status_view.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

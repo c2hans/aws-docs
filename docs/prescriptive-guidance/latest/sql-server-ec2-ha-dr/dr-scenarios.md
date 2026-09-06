@@ -58,7 +58,3 @@ As a sizing exercise, 80% of SQL Server applications running on Amazon EC2 that 
 | File size limitations for uploads to Amazon S3 or cross-Region transfer | N/A - Handled in synchronous-commit mode or asynchronous-commit mode to a warm standby | Yes | Yes |
 | Data loss | Near zero (depends on the workload and infrastructure provisioned) | Depends on the frequency of Amazon EC2 backup images and SQL Server backups | Depends on the frequency of Amazon EC2 backup images or EBS snapshots and SQL Server backups |
 | Cost | Medium | Low - medium | Low - medium |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

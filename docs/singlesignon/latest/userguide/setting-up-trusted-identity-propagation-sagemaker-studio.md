@@ -175,7 +175,3 @@ When trusted identity propagation is enabled, actions appear in CloudTrail event
 If an administrator sets **MaxRuntimeInSeconds** for long-running training or processing jobs that is lower than the user background session duration, SageMaker Studio runs the job for the minimum of either **MaxRuntimeInSeconds ** or the user background session duration.
 
 For more information about **MaxRuntimeInSeconds**, see the guidance for the `CreateTrainingJob` [StoppingCondition](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html#sagemaker-CreateTrainingJob-request-StoppingCondition) parameter in the *Amazon SageMaker API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

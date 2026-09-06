@@ -158,7 +158,3 @@ The AWS Lambda Developer Guide contains a [section on best practices](https://do
 For an example of building a cloud-native application in Java that uses AWS Lambda, see this [workshop content](https://github.com/aws-samples/aws-lambda-java-workshop). The workshop discussion performance optimization and other best practices.
 
 You can consider using static images that are compiled ahead of time to reduce startup latency. For example, you can use the SDK for Java 2.x and Maven to [build a GraalVM native image](setup-project-graalvm.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

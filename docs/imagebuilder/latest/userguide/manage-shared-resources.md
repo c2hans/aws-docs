@@ -63,7 +63,3 @@ For more information about sharing your AMI with AWS Organizations and OUs, see 
 Consumers can use a shared resource, but cannot modify it in any way. When they create Image Builder recipes, they can specify a shared image as the base image, and they can add shared components. They can also specify a shared recipe when they create an Image Builder image pipeline, or when they use the **create-image** command in the AWS CLI.
 
 If you belong to an organization in AWS Organizations, and sharing within your organization is enabled, consumers in your organization are automatically granted access to the shared resource. Otherwise, consumers receive an invitation to join the resource share and are granted access to the shared resource after accepting the invitation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

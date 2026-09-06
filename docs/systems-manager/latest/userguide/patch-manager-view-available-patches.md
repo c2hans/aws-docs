@@ -33,7 +33,3 @@ For Windows Server, the **Patches** tab displays updates that are available from
 1. (Optional) To add or remove information columns for your results, choose the configure button (![The icon to view configuration settings.](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/configure-button.png)) at the top right of the **Patches** list. (By default, the **Patches** tab displays columns for only some of the available patch metadata.)
 
    For information about the types of metadata you can add to your view, see [Patch](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_Patch.html) in the *AWS Systems Manager API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 + [HNSEC04-BP03 Implement network traffic security inspection](hnsec04-bp03.md)
 + [HNSEC04-BP04 Implement DNS security controls](hnsec04-bp04.md)
 + [HNSEC04-BP05 Allow only authorized personnel access to on-premises infrastructure](hnsec04-bp05.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

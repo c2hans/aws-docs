@@ -43,7 +43,3 @@ The following points illustrate how Amazon Aurora relates to the standard MySQL 
 + You can bring data from Amazon RDS for MySQL and Amazon RDS for PostgreSQL into Aurora by creating and restoring snapshots, or by setting up one-way replication. You can use push-button migration tools to convert your existing RDS for MySQL and RDS for PostgreSQL applications to Aurora.
 
 Before using Amazon Aurora, complete the steps in [Setting up your environment for Amazon Aurora](CHAP_SettingUp_Aurora.md), and then review the concepts and features of Aurora in [Amazon Aurora DB clusters](Aurora.Overview.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

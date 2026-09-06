@@ -41,7 +41,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Use Amazon GameLift Anywhere to create a test environment, reducing activation time for game server builds and enabling rapid iteration.
 +  Integrate the Amazon GameLift Testing Toolkit to automate testing tasks, simulate players, and validate FlexMatch configurations during development.
 +  Collect and analyze performance data with the GameLift Testing Toolkit to identify bottlenecks, optimize game servers, and enhance performance efficiency.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ You also need the ID of the EC2 instance that you plan to use in the tutorials. 
 + [Tutorial: View information about tasks and task executions using the AWS CLI](mw-cli-tutorial-task-info.md)
 + [Tutorial: Update a maintenance window using the AWS CLI](maintenance-windows-cli-tutorials-update.md)
 + [Tutorial: Delete a maintenance window using the AWS CLI](mw-cli-tutorial-delete-mw.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

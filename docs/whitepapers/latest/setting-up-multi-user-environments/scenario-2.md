@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user
  Consider a class with 25 students. The administrator creates 25 IAM users using the AWS Management Console, AWS Command Line Interface, or APIs, and provides each student with their IAM credentials and a login URL for the AWS Management Console. The administrator also creates a permissions policy that can be attached to a user group or an individual user to allow or deny access to different services.
 
  Each student (IAM user) has access to resources and services as defined by the access control policies set by the administrator. Students can log in to the AWS Management Console to access different AWS services as defined the policy. For example, they could launch Amazon EC2 instances and store objects in [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3) buckets.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

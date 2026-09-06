@@ -42,7 +42,3 @@ Amazon OpenSearch Service provides five workspace types, each with different fea
 + The **Search** workspace is designed for quickly finding and exploring relevant information across your organization's data sources.
 + The **Essentials** workspace is designed for OpenSearch Serverless as a data source, and enables analyzing data to derive insights, identify patterns and trends, and make data-driven decisions quickly. You can find and explore relevant information across your organization's data sources in an **Essentials** workspace.
 + The **Analytics** (all features) workspace is designed for multi-purpose use cases and supports all the features available in OpenSearch Service UI (Dashboards).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

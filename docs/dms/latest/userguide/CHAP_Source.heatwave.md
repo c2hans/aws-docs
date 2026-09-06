@@ -35,7 +35,3 @@ To configure your OCI MySQL Heatwave instance as a source endpoint for DMS, do t
 1. In the **Configuration** section, choose the **Change configuration** button, and choose the shape configuration that you created in step 4.
 
 1. Once the changes take effect, your instance is ready for logical replication.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

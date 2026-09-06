@@ -10,7 +10,7 @@ You can create an Amazon EBS snapshot of an Amazon EBS volume to create a point-
 Snapshot creation is asynchronous. The snapshot is created immediately, but it remains in the `pending` state until all of data has been transferred to Amazon S3. This can take several hours to complete, depending on the number of modified blocks on the volume. You can continue to use the volume during this time without impacting the snapshot. The snapshot includes only the data that was written to the volume at the time the snapshot was requested. It does not include data that has been cached by applications or the operating system.
 
 **Tip**
-To ensure consistent and complete snapshots, we recommend that you pause writes to the volume before you create the snapshot. If you can't pause writes to the volume, we recommend that you unmount the volume, from within the instance, before you create the snapshot. You can remount and resume writes once the snapshot enters the `pending` state.
+To make sure that the snapshots are consistent and complete, we recommend that you pause writes to the volume before you create the snapshot. If you can't pause writes to the volume, we recommend that you unmount the volume, from within the instance, before you create the snapshot. You can remount and resume writes once the snapshot enters the `pending` state.
 If you create a snapshot of a volume that serves as the root device for an Amazon EC2 instance, we recommend that you stop the instance before taking the snapshot.
 
 **Topics**
@@ -47,7 +47,3 @@ You can automate snapshot creation using [Amazon Data Lifecycle Manager](snapsho
 + We recommend that you do not create snapshots of volumes that are attached to Amazon EC2 instances that are hibernated or that are enabled for hibernation. For more information, see [How Amazon EC2 instance hibernation works](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-hibernate-overview.html#instance-hibernate-limitations).
 + Although you can take a snapshot of a volume while a previous snapshot of that volume is in the `pending` status, having multiple snapshots in the `pending` state for the same volume can result in reduced volume performance until the snapshots complete.
 + There are limits on the number of snapshots you can have in the `pending` state, and on the number of concurrent snapshots you can request per volume type. For more information, see [Quotas for Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-resource-quotas.html). If you exceed one of these quotas, wait for the current snapshots to complete and then try again.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -974,7 +974,3 @@ This dimension limits the data to a specific stream label. It is used with metri
 <a name="w2aac41c15c13b9c23"></a>
 
 This dimension limits the data to a specific table. This value can be any table name in the current region and the current AWS account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

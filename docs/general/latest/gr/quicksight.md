@@ -114,20 +114,16 @@ The following are the service endpoints and service quotas for this service.
 | Maximum number of uploaded files per space | Each supported Region: 10,000 | No | The maximum number of files that can be uploaded to a space. |
 | Maximum pinned conversations | Each supported Region: 100 | No | The maximum number of conversations a user can pin. |
 | Maximum scheduled task instruction length | Each supported Region: 50,000 | No | The maximum number of characters allowed in a scheduled task instruction. |
-| Maximum scheduled tasks per user | us-west-2: 50<br />ap-southeast-2: 50<br />Each of the other supported Regions: 20 | No | The maximum number of scheduled tasks a user can create across all triggers. |
+| Maximum scheduled tasks per user | Each supported Region: 20 | No | The maximum number of scheduled tasks a user can create across all triggers. |
 | Maximum skill size | Each supported Region: 6 Megabytes | No | The maximum size in megabytes (MBs) of a single skill bundle. |
 | Maximum skills per user | Each supported Region: 1,000 | No | The maximum number of skills a user can create. |
 | Maximum total artifact storage per user | Each supported Region: 51,200 Megabytes | No | The maximum total size in megabytes (MBs) of all artifacts stored in a users personal space. |
 | Maximum total data capacity of an index | Each supported Region: 60,000 Megabytes | No | The maximum total data capacity in megabytes (MBs) of an index. |
 | Maximum total size of attached reference documents per chat agent | Each supported Region: 50 Megabytes | No | The maximum size in megabytes (MBs) of all reference documents attached to a chat agent. |
 | Maximum total size of uploaded files per space | Each supported Region: 1 Gigabytes | No | The maximum size in gigabytes (GBs) of all files uploaded to a space. |
-| Minimum schedule interval in minutes | us-east-1: 15<br />eu-west-1: 15<br />Each of the other supported Regions: 5 | No | The minimum interval, in minutes, allowed between scheduled task runs. |
+| Minimum schedule interval in minutes | Each supported Region: 15 | No | The minimum interval, in minutes, allowed between scheduled task runs. |
 | Query timeout for visuals | Each supported Region: 120 Seconds | No | The maximum amount of time that QuickSight waits for a database to finish sending data. This applies to queries initiated by visuals. |
 | Scheduled task history retention in days | Each supported Region: 90 | No | The number of days scheduled task run history is retained. |
 | Session approval expiry in hours | Each supported Region: 12 | No | The number of hours before a session approval expires and must be renewed. |
 | The maximum amount of time to wait for a dataset preview | Each supported Region: 45 Seconds | No | The maximum amount of time that QuickSight waits for a data preview to finish loading. |
 | URL action hyperlink length | Each supported Region: 2,048 | No | The maximum number of characters allowed in the hyperlink (URL) of a custom action thats defined as a URL action. This includes all variations of the link for the different parameters you include. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

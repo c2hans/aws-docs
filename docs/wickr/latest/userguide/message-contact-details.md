@@ -19,7 +19,3 @@ To view contact details and message settings, complete the following steps.
 
    The **Contact Details** pane displays the user's full name, email address, and company name. It also displays message settings, such as expiration timer, burn-on-read timer, security verifications, user block, and message and data deletion options.
 ![The Contact Detail pane.](http://docs.aws.amazon.com/wickr/latest/userguide/images/wickr-emoji-contact-details.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -98,7 +98,3 @@ The following steps show the workflow for integrating your container product wit
 1. Software reads the license in the buyer's AWS License Manager account, discovers the entitlements purchased, and provisions the features accordingly.
 **Note**
 License Manager doesn't do any tracking or updates; this is done by the seller’s application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

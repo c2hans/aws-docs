@@ -26,7 +26,3 @@ The following diagram shows the transactional replication process for databases 
 ![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/1d486d77-5620-452d-ab02-7ae465f15992.png)
 
 For more information about transactional replication, see the [Microsoft SQL Server documentation](https://docs.microsoft.com/en-us/sql/relational-databases/replication/transactional/transactional-replication) and [How to migrate to Amazon RDS for SQL Server using transactional replication](https://aws.amazon.com/blogs/database/how-to-migrate-to-amazon-rds-for-sql-server-using-transactional-replication/) on the AWS Database blog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

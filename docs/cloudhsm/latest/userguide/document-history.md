@@ -99,7 +99,3 @@ The following table describes the important changes to the AWS CloudHSM prior to
 | New content | Added Oracle Transparent Data Encryption. For more information, see [Oracle database encryption](oracle-tde.md).  | October 25, 2017 |
 | New content | Added SSL Offload. For more information, see [SSL/TLS offload](ssl-offload.md).  | October 12, 2017 |
 | New guide | This release introduces AWS CloudHSM | August 14, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

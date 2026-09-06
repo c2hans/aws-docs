@@ -46,7 +46,3 @@ To view a stack deployment timeline graph:
 1. Choose the **Events** tab to view the stack events CloudFormation has generated for your stack.
 
 1. Choose the **Timeline graph** button to view the timeline graph for your stack.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

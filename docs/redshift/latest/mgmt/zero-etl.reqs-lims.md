@@ -121,7 +121,3 @@ The following considerations apply when a resize triggers resynchronization:
 + While a table is resynchronizing, you can't query it in Amazon Redshift. To keep tables queryable during resynchronization, set the `QUERY_ALL_STATES` parameter to `TRUE` on the destination database before you start the resize. Data returned during resynchronization might be stale until the resynchronization completes. For more information, see [CREATE DATABASE](https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_DATABASE.html) and [ALTER DATABASE](https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_DATABASE.html) in the *Amazon Redshift Database Developer Guide*.
 + Resynchronization can take 20–25 minutes or more, depending on the size of the source database.
 + You can monitor the state of integration tables using the [SVV\_INTEGRATION\_TABLE\_STATE](https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_INTEGRATION_TABLE_STATE.html) system view. Tables show the `ResyncRequired` or `ResyncInitiated` state until resynchronization completes and they return to `Synced`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

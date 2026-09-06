@@ -128,7 +128,3 @@ You can filter usage and cost history by choosing a tag key value pair. For exam
 
 **Note**
 You can save the report with the filters selected to the report library to easily review it later. You can also adjust and customize your report further, including the date range and granularity of your report.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

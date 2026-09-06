@@ -48,7 +48,3 @@ On the **Bucket details** tab of the panel, you can pivot and drill down on many
 1. To export data from the table to a CSV file, select the checkbox for each row to export, or select the checkbox in the selection column heading to select all rows. Then choose **Export to CSV** at the top of the page. You can export up to 50,000 rows from the table.
 
 1. To perform deeper, more immediate analysis of objects in one or more buckets, select the checkbox for each bucket. Then choose **Create job**. For more information, see [Creating a sensitive data discovery job](discovery-jobs-create.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

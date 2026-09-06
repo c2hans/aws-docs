@@ -20,7 +20,3 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 | **Ports** | HDMI 2.1 Output, Power, USB-A 2.0, Ethernet port 10/100 MbpsThe HDMI 2.1 Input port and IR Extender port are not supported. |
 | **Output display resolution** | 1080p |
 | **Data connection requirements** | High-speed internet connection through Wi-Fi or built-in Ethernet port and a power outlet. High-speed HDMI cable rated at 18 Gbps or higher. Wi-Fi 6E router required for Wi-Fi 6E support. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

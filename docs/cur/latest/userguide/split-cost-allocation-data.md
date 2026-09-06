@@ -34,7 +34,3 @@ For EKS: Split cost allocation data creates new cost allocation tags for some Ku
 `aws:eks:workload-type` is only populated if there is exactly one workload managing the pod, and is one of the built in workloads. Workload types include `ReplicaSet`, `StatefulSet`, `Job`, `DaemonSet`, or `ReplicationController`, and `aws:eks:workload-name` includes the name of the workload. For more information, see [Workloads](https://kubernetes.io/docs/concepts/workloads/) in the *Kubernetes Documentation*.
 `aws:eks:deployment` is only populated for the workload type `ReplicaSet`. It is the deployment that creates a `ReplicaSet`.
 These tags apply to all new EKS split cost allocation data usage records. These tags are enabled for cost allocation by default. If you previously used and disabled the `aws:eks:cluster-name` tag, then split cost allocation data keeps this setting and doesn't enable the tag. You can enable it from the [Cost allocation tags](https://console.aws.amazon.com/billing/home#/tags) console page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

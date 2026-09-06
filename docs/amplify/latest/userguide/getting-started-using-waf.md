@@ -62,7 +62,3 @@ Use the following procedure to enable AWS WAF for an existing app in the Amplify
    The following screenshots show the firewall progress status in the Amplify console, indicating when the AWS WAF configuration is **Associating** and **Enabled**.
 ![The Amplify console Firewall status progress in the Associating state.](http://docs.aws.amazon.com/amplify/latest/userguide/images/Amplify-WAF-3.png)
 ![The Amplify console Firewall status progress in the Enabled state.](http://docs.aws.amazon.com/amplify/latest/userguide/images/Amplify-WAF-4.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ You can enable high throughput for any new or existing FIFO queue. The feature i
 1. Continue specifying all options for the queue. When you finish, choose **Create queue** or **Save**.
 
 After creating or editing the FIFO queue, you can [send messages](creating-sqs-standard-queues.md#sqs-send-messages) to it and [receive and delete messages](step-receive-delete-message.md), all at a higher TPS. For high throughput quotas, see Message throughput in [Amazon SQS message quotas](quotas-messages.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

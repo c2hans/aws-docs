@@ -22,7 +22,3 @@ Amazon QLDB provides the following APIs for data retrieval.
 | <a name="qldb-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/qldb/latest/developerguide/API_ListTagsForResource.html) | List tags for a resource | Read |
 | <a name="qldb-PartiQLHistoryFunction"></a>[PartiQLHistoryFunction](https://docs.aws.amazon.com/qldb/latest/developerguide/working.history.html) | Use the history function on a table | Read |
 | <a name="qldb-PartiQLSelect"></a>[PartiQLSelect](https://docs.aws.amazon.com/qldb/latest/developerguide/ql-reference.select.html) | Select documents from a table | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

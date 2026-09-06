@@ -15,7 +15,3 @@ The template creates the following resources:
 Many messaging apps expose the same style of incoming webhook. To target Microsoft Teams, Discord, Google Chat, or Mattermost instead, set that app's webhook URL and adjust the JSON body the function builds; the README links each app's webhook documentation.
 
 For more information about the events Deadline Cloud publishes to EventBridge, see [Managing Deadline Cloud events using Amazon EventBridge](eventbridge-integration.md). For budget threshold notifications, see [Budget threshold notifications to email and Slack with CloudFormation](examples-cfn-budget-notifications.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

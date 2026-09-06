@@ -233,7 +233,3 @@ Remove the directives store from cluster-audit-agent.
 Attach only the stores that are relevant to the agent's purpose. As with tools, a focused set follows the principle of least privilege and keeps the agent's decisions consistent.
 
 For more information about memory, see [DevOps Agent Memories](about-aws-devops-agent-devops-agent-memories.md). For attachment limits, see [Quotas](quotas.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

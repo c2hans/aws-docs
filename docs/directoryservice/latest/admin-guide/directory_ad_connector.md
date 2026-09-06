@@ -30,7 +30,3 @@ Continue reading the topics in this section to learn how to connect to a directo
 + [Ways to join an Amazon EC2 instance to your Active Directory](ad_connector_join_instance.md)
 + [AD Connector quotas](ad_connector_limits.md)
 + [Troubleshooting AD Connector](ad_connector_troubleshooting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

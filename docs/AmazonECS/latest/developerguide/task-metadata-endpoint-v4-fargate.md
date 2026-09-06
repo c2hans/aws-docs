@@ -35,7 +35,3 @@ Amazon ECS tasks on AWS Fargate require that the container run for \~1 second pr
 `${ECS_CONTAINER_METADATA_URI_V4}/task/stats`
 This path returns Docker stats for all of the containers associated with the task. For more information about each of the returned stats, see [ContainerStats](https://docs.docker.com/engine/api/v1.30/#operation/ContainerStats) in the Docker API documentation.
 Amazon ECS tasks on AWS Fargate require that the container run for \~1 second prior to returning the container stats.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

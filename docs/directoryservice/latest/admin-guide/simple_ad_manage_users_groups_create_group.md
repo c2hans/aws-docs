@@ -27,7 +27,3 @@ You can run the following from a command prompt on the instance to open the Acti
 1. Type a name for the group in **Group name**, select a **Group scope** that meets your needs, and select **Security** for the **Group type**. For more information on Active Directory group scope and security groups, see [ Active Directory security groups](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups) in Microsoft Windows Server documentation.
 
 1. Click **OK**. The new security group will appear in the **Users** folder.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

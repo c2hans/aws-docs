@@ -287,7 +287,3 @@ The following table shows the metrics for AWS IoT Core for LoRaWAN. For more inf
 |  `RoleArn`  | Refers to the role Device Defender attempted to assume. |
 |  `TopicArn`  | Refers to the SNS topic Device Defender attempted to publish to. |
 |  `Error`  | Gives a short description of the Error received while attempting to publish to the SNS topic. Possible values are:+  "KMSKeyNotFound": indicates the KMS key does not exist for the topic. <br />+  "InvalidTopicName": indicates the SNS Topic is not valid. <br />+  "KMSAccessDenied": indicates that the role does not have permissions to the KMS key for the Topic. <br />+  "AuthorizationError": indicates that the role provided does not authorize Device Defender to publish to the SNS topic. <br />+  "SNSTopicNotFound": indicates the provided SNS topic does not exist. <br />+  "FailureToAssumeRole": indicates that the role provided does not authorize Device Defender to assume the role. <br />+  "CrossRegionSNSTopic": indicates that the SNS topic exists in a different region.   |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

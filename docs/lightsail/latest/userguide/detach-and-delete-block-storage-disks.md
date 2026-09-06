@@ -31,7 +31,3 @@ Once you stop your Lightsail instance, you can safely detach and delete your dis
 1. Choose **Delete disk**, and then confirm by choosing **Yes, delete**.
 **Important**
 This is a permanent operation and can't be undone. You will lose all data on the disk when you delete it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

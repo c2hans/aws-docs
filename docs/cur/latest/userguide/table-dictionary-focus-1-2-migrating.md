@@ -31,7 +31,3 @@ The following table outlines the differences between FOCUS 1.2 and FOCUS 1.0 in 
 | Table configurations | Allows TIME\_GRANULARITY to be set to HOURLY, DAILY, or MONTHLY | Only exports in HOURLY. |
 
 For more detailed information about the schema of FOCUS 1.2, see [FOCUS 1.2 with AWS columns](table-dictionary-focus-1-2-aws.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,7 @@ The encryption state of the volume depends on whether your account is [enabled f
 + Volumes are ready for use only after they enter the `available` state.
 + When you create a volume using the console, `gp3` is the default volume type. For the command line tools, API, and SDK, `gp2` is the default volume type.
 + To use a volume with an instance running on an outpost, you must create the volume on the same outpost as the instance.
-+ If you create a volume for use with a Windows instance, and it's larger than 2048 GiB, ensure that you configure the volume to use GPT partition tables. For more information, see [Amazon EBS volume constraints](volume_constraints.md) and [ Windows support for disks larger than 2 TB.](https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/support-for-hard-disks-exceeding-2-tb).
++ If you create a volume for use with a Windows instance, and it's larger than 2048 GiB, make sure that you configure the volume to use GPT partition tables. For more information, see [Amazon EBS volume constraints](volume_constraints.md) and [ Windows support for disks larger than 2 TB.](https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/support-for-hard-disks-exceeding-2-tb).
 + Volumes are also created indirectly by launching an Amazon EC2 instance. Either the AMI used to launch the instance, or the instance launch request itself could include block device mappings for Amazon EBS volumes. For more information, see [Block device mappings](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html).
 
 ------
@@ -103,7 +103,3 @@ New-EC2Volume `
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

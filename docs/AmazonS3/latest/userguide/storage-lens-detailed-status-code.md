@@ -67,7 +67,3 @@ To see **Detailed status code metrics** in your S3 Storage Lens dashboard, you m
 + [Why am I getting a 403 Forbidden error when I try to modify a bucket policy in Amazon S3?](https://aws.amazon.com/premiumsupport/knowledge-center/s3-access-denied-bucket-policy/)
 + [How do I troubleshoot 403 Forbidden errors from my Amazon S3 bucket where all the resources are from the same AWS account?](https://aws.amazon.com/premiumsupport/knowledge-center/s3-troubleshoot-403-resource-same-account/)
 + [How do I troubleshoot an HTTP 500 or 503 error from Amazon S3?](https://aws.amazon.com/premiumsupport/knowledge-center/http-5xx-errors-s3/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

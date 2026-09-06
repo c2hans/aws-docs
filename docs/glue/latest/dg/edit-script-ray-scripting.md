@@ -49,7 +49,3 @@ You can use Ray Data or other tools to access your data. For more information on
 <a name="edit-script-ray-scripting-data-glue"></a>
 
 Ray Data is supported and provided by default in the managed `Ray2.4` runtime environment. For more information about provided modules, see [Modules provided with Ray jobs](edit-script-ray-env-dependencies.md#edit-script-ray-modules-provided).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

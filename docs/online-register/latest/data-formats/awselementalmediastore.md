@@ -19,7 +19,3 @@ AWS Elemental MediaStore provides the following APIs for data retrieval.
 | <a name="mediastore-ListContainers"></a>[ListContainers](https://docs.aws.amazon.com/mediastore/latest/apireference/API_ListContainers.html) | Retrieve a list of containers in the current account | List |
 | <a name="mediastore-ListItems"></a>[ListItems](https://docs.aws.amazon.com/mediastore/latest/apireference/API_objstore_ListItems.html) | Retrieve a list of objects and subfolders that are stored in a folder | List |
 | <a name="mediastore-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/mediastore/latest/apireference/API_ListTagsForResource.html) | List tags on a container | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

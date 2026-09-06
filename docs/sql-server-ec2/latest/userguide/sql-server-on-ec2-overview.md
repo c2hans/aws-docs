@@ -38,7 +38,3 @@ For more features specific to Amazon EC2, see [Features of Amazon EC2](https://d
 For information about pricing for Amazon EC2, see the [Amazon EC2 pricing](https://aws.amazon.com/ec2/pricing/) page.
 
 For information about creating a price estimate for Microsoft Windows Server and Microsoft SQL Server, see [Tutorial: Using Windows Server and SQL Server on Amazon EC2 calculator](https://docs.aws.amazon.com/pricing-calculator/latest/userguide/estimate-workload-tutorial.html) in the *AWS Pricing Calculator User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SQL Server on Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sql-server-ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ The following resources provide additional information about the Amazon Lex Runt
   +  [Amazon Lex V2 Endpoints for each region](https://docs.aws.amazon.com/general/latest/gr/lex.html).
 +  * AWS Command Line Interface *
   +  [ Amazon Lex Runtime V2 CLI commands](https://docs.aws.amazon.com/cli/latest/reference/lexv2-runtime/index.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

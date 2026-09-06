@@ -218,7 +218,3 @@ If an administrator has already sent you the clone URL to use with **git-remote-
 You have completed the prerequisites. Follow the steps in [Getting started with CodeCommit ](getting-started-cc.md) to start using CodeCommit.
 
 To learn how to create and push your first commit, see [Create a commit in AWS CodeCommit](how-to-create-commit.md). If you're new to Git, you might also want to review the information in [Where can I learn more about Git?](welcome.md#welcome-get-started-with-git) and [Getting started with Git and AWS CodeCommit](getting-started.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

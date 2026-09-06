@@ -24,7 +24,3 @@ To change the name of an AWS *administrator* account, you must have admin permis
 1. Change the name in **Account settings**, as you would for any other AWS account.
 
 1. AWS Control Tower automatically updates itself to reflect the name change. This update will not be reflected in the provisioned product in AWS Service Catalog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

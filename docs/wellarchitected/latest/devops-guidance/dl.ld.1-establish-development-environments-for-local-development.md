@@ -20,7 +20,3 @@ Development environments can take the form of dedicated cloud environments, loca
 +  [Best practices for testing serverless applications](https://docs.aws.amazon.com/prescriptive-guidance/latest/serverless-application-testing/best-practices.html)
 +  [Improving the development cycle - Testing in the cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-architectures/improve-dev-cycle.html)
 +  [Improving the development cycle - Testing locally](https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-architectures/improve-dev-cycle.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

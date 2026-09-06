@@ -20,7 +20,3 @@ Whether you use the AWS Management Console, the AWS CLI, or the Amazon RDS API, 
 + [Controlling user access to the PostgreSQL database](Appendix.PostgreSQL.CommonDBATasks.Access.md)
 + [Delegating and controlling user password management](Appendix.PostgreSQL.CommonDBATasks.RestrictPasswordMgmt.md)
 + [Using SCRAM for PostgreSQL password encryption](PostgreSQL_Password_Encryption_configuration.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

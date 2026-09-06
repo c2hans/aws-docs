@@ -26,7 +26,3 @@ The following code examples show you how to use AWS Device Farm with an AWS soft
 + [Scenarios](device-farm_code_examples_scenarios.md)
   + [Run browser tests and take screenshots](device-farm_example_device-farm_Scenario_BrowserTesting_section.md)
   + [Upload and test device packages](device-farm_example_device-farm_Scenario_DeviceTesting_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

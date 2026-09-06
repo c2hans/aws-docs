@@ -55,7 +55,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  Similar to network failures, Availability Zone or Region failures may cause the Outpost to become disconnected from the Region. The instances running on an Outpost continue to run and are accessible from on-premises networks through the Outpost local gateway and may be impaired or fail if they rely on services in the Region.
 
  To mitigate the impact of Availability Zone and Region failures, you can deploy multiple Outposts each anchored to a different Availability Zone or Region. You may then design your workload to operate in a distributed multi-Outpost deployment model using many of the similar [mechanisms and architectural patterns](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/design-principles.html) that you use to design and deploy on AWS today.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

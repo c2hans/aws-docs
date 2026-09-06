@@ -12,7 +12,3 @@ In the following table, each row defines the video resolutions that apply to the
 | SD | Vertical resolution under 720 | Yes | Yes | Yes | Yes |
 | HD | Vertical resolution over 720, up to and including 1080 | Yes | Yes | Yes |  |
 | UHD or 4K | Vertical resolution over 1080, up to and including 2160  |  | Yes | Yes |  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

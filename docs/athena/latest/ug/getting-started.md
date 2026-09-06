@@ -22,7 +22,3 @@ The tutorial uses live resources, so you are charged for the queries that you ru
 + [Step 4: Use named queries](step-4-use-named-queries.md)
 + [Step 5: Use keyboard shortcuts and typeahead suggestions](step-5-using-keyboard-shortcuts.md)
 + [Step 6: Connect to other data sources](step-6-connect-to-other-data-sources.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

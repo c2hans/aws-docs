@@ -51,7 +51,3 @@ A resource that represents your brand identity and messaging settings for sendin
 
 **Notify template**
 A pre-approved, AWS-managed message template for sending OTP and verification messages. Templates include variable placeholders (such as a verification code) that are substituted at send time. Customers select from available templates but cannot create or modify them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

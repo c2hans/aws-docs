@@ -25,7 +25,3 @@ You can't start the tags with `AWS` or `Amazon`.
 You can't enter duplicate tags.
 
 The tags that you added are displayed in the list under the **Tags** section. The users of your private re:Post can add these custom tags in questions, articles, and selections that they post in the private re:Post.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

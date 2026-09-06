@@ -9,10 +9,12 @@ The following table describes the important changes to the documentation for AWS
 
 | Date | Change | Documentation updates | API versions updated |
 | --- | --- | --- | --- |
+| September 3, 2026 | AWS PCS released in Asia Pacific (New Zealand) | AWS PCS is now available in Asia Pacific (New Zealand) (ap-southeast-6).<br />CloudFormation templates are available to get started in the Asia Pacific (New Zealand) AWS Region. For more information, see [Use CloudFormation to create a sample AWS PCS cluster](get-started-cfn-create.md) and [CloudFormation templates to create a sample AWS PCS cluster](get-started-cfn-sample-templates.md). |  Not applicable  |
 | August 20, 2026 | Corrected Slurm REST API documentation | Corrected the example script for retrieving the JWT signing key to use `--version-id` instead of `--version-stage`, and updated endpoint URLs in the Slurm REST API topics to use `http://`, because the `slurmrestd` endpoint is HTTP only. | Not applicable |
 | August 14, 2026 | Updated node lifecycle actions best practices | Added guidance that AWS PCS does not support rebooting the instance during a lifecycle action script. | Not applicable |
 | August 11, 2026 | Updated AWS PCS agent to version 1.5.1 | Added AWS PCS agent version 1.5.1-1 in the user guide. | Not applicable |
 | August 11, 2026 | Documented rolling update limitation for Slurm CLI Filter Plugins | Added a limitation to the cluster version update page: clusters that use Slurm CLI Filter Plugins don't support rolling updates. | Not applicable |
+| August 10, 2026 | New topic: missing job records in Slurm accounting | Added a troubleshooting topic that describes why jobs can be missing from Slurm accounting reports after a period of high job submission rate, how to confirm the cause in the Slurm controller log, and how to set the `CommitDelay` slurmdbd parameter for a cluster. For more information, see [Troubleshooting missing job records in Slurm accounting](troubleshooting-missing-accounting-records.md). | Not applicable |
 | August 6, 2026 | Getting started tutorial uses node lifecycle actions | Updated the getting started tutorial so that compute node groups mount shared storage and forward node logs with node lifecycle actions instead of launch template user data. | Not applicable |
 | August 6, 2026 | New topic: collect Slurm metrics with a managed Prometheus collector | Added a task-oriented guide for configuring a managed Prometheus collector to scrape Slurm OpenMetrics from a AWS PCS cluster controller. | Not applicable |
 | July 29, 2026 | Updated Slurm installers | Updated the user guide for Slurm installers. Added version 25.11.7-1. | Not applicable |
@@ -87,7 +89,3 @@ The following table describes the important changes to the documentation for AWS
 | September 5, 2024 | Added a missing permission to the JSON in the managed policies page | This was a correction to the documentation only. The actual managed policy wasn't changed. For more information, see [AWS managed policies for AWS Parallel Computing Service](security-iam-awsmanpol.md). | Not applicable |
 | August 28, 2024 | Managed policies page added | For more information, see [AWS managed policies for AWS Parallel Computing Service](security-iam-awsmanpol.md). | Not applicable |
 | August 28, 2024 | AWS PCS release | Initial release of the AWS PCS user guide. | AWS SDK: 2024-08-28 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

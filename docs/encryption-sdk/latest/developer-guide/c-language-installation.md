@@ -18,7 +18,3 @@ Before you begin, decide whether you want to use [AWS KMS keyrings](use-kms-keyr
 You do not need to install the AWS SDK for C\+\+ if you are using another keyring type, such as a raw AES keyring, a raw RSA keyring, or a multi-keyring that doesn't include an AWS KMS keyring. However, when using a raw keyring type, you need to generate and protect your own raw wrapping keys.
 
 If you're having trouble with your installation, [file an issue](https://github.com/aws/aws-encryption-sdk-c/issues) in the `aws-encryption-sdk-c` repository or use any of the feedback links on this page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

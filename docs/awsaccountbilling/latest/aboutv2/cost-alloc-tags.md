@@ -46,7 +46,3 @@ To create and update tags, use AWS Tag Editor. For more information about Tag Ed
 + [Backfill cost allocation tags](cost-allocation-backfill.md)
 + [Using the monthly cost allocation report](configurecostallocreport.md)
 + [Understanding dates for cost allocation tags](cost-allocation-tags-timeline.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ The following table lists AWS-provided components that include new and updated f
 | --- | --- |
 | Greengrass nucleus | Version 2.5.6 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.5.6"></a>**New features**<br />   Adds support for hardware security modules that use ECC keys. You can use a hardware security module (HSM) to securely store the device's private key and certificate. For more information, see [Hardware security integration](hardware-security.md).   <br />**Bug fixes and improvements**<br />   Fixes an issue where the deployment never completes when you deploy a component with a broken install script in certain scenarios.   Improves performance during startup.   Additional minor fixes and improvements.    |
 | Log manager | Version 2.2.4 of the [log manager](log-manager-component.md) component is available.<a name="changelog-log-manager-2.2.4"></a>**Bug fixes and improvements**<br />   Improves stability when handling invalid configurations.   Additional minor fixes and improvements.    |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

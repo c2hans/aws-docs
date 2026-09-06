@@ -78,7 +78,3 @@ In some cases, you might restore from a DB snapshot of a DB instance that uses a
 The **Databases** page displays the restored DB instance, with a status of `Creating`.
 
 ![Restored DB instance on the Databases page.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/tut-restore-instance4.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

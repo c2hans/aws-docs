@@ -64,7 +64,3 @@ All devices have internet connectivity. They do not have carrier connections and
 You can take photos with any device that supports a front- or rear-facing camera. Due to the way the devices are mounted, photos might look dark and blurry.
 
 Google Play Services and Google Chrome are installed on Android devices.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

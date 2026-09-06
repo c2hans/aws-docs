@@ -64,7 +64,3 @@ When you train a new version of an existing custom classifier model or entity re
 1. (Optional) Add tags to your new version to help keep track of the details.
 
 To learn more about custom entity recognizers, see [Custom Entity Recognition](custom-entity-recognition.md) and [Creating a Custom Entity Recognizer Using the Console](realtime-analysis-cer.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

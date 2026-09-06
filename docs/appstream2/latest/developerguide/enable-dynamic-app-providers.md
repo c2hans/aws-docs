@@ -43,7 +43,3 @@ If your organization requires smart card sign in, you must create a streaming UR
 When you use a dynamic app provider, you don't need to specify any applications in the image. If you specify applications in the image, they can't be removed by dynamic app providers.
 
 1. Proceed to the steps in the next section to test your dynamic app provider.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

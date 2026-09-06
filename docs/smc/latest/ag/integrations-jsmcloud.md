@@ -46,7 +46,3 @@ The following AWS services are integrated with this Connector:
 [AWS Systems Manager OpsCenter](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html) provides a central location for operations engineers and IT professionals to manage work items (OpsItems) related to AWS resources.
 
 [Atlassian's Jira Service Management](https://www.atlassian.com/software/jira/service-management/features) is an IT service management tool that places developers, IT personnel, and business teams on the same platform so they can deliver services together. Jira Service Management has request types that provide self-service options and Jira agents that can deliver IT services like fulfillment approvals and workflows.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

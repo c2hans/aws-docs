@@ -83,7 +83,3 @@ Release notes for Amazon EMR on EKS 7.7.0
 
 The following changes are included with the 7.7.0 release of Amazon EMR on EKS:
 + The Iceberg version in use as of EMR 7.7.0 no longer supports Java 8. Additionally, Iceberg is excluded from the following Java 8 images: `emr-7.7.0-java8-latest` and `emr-7.7.0-spark-rapids-java8-latest`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

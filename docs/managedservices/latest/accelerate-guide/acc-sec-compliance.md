@@ -221,7 +221,3 @@ Paste into the request the following inputs (for every resource add a separate b
 You can reduce AWS Config costs by using the option to periodically record the `AWS::EC2::Instance` resource type. Periodic recording captures the latest configuration changes of your resources once every 24 hours, reducing the number of changes delivered. When enabled, AWS Config only records the latest configuration of a resource at the end of a 24-hour period. This allows you to tailor configuration data to specific operational planning, compliance, and audit uses cases that don’t require continuous monitoring. This change is recommended only if you have applications that depend on ephemeral architectures, meaning you constantly scale the number of instances up or down.
 
 To opt in to periodic recording for the `AWS::EC2::Instance` resource type, contact your AMS Delivery Team.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

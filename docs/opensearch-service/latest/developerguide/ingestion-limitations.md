@@ -13,7 +13,3 @@ OpenSearch Ingestion has the following limitations:
 + You can't specify a [custom endpoint](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/customendpoint.html) as a sink. You can still write to a domain that has custom endpoints enabled, but you must specify its standard endpoint.
 + You can't specify resources within [opt-in Regions](https://docs.aws.amazon.com/controltower/latest/userguide/opt-in-region-considerations.html) as sources or sinks.
 + There are some constraints on the parameters that you can include in a pipeline configuration. For more information, see [Configuration requirements and constraints](pipeline-config-reference.md#ingestion-parameters).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

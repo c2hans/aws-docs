@@ -12,7 +12,3 @@ While CloudWatch investigations will continue to analyze telemetry data and prov
 **Important**
 To help CloudWatch investigations provide the most relevant information, certain content might be used from CloudWatch investigations, including but not limited to, questions that you ask CloudWatch investigations and its response, insights, user interactions, telemetry, and metadata for service improvements. Your trust and privacy, as well as the security of your content, is our highest priority. For more information, see [**AWS Service Terms**](https://aws.amazon.com/service-terms/) and [**AWS responsible AI policy**](https://aws.amazon.com/ai/responsible-ai/policy/).
 You can opt out of having your content collected to develop or improve the quality of CloudWatch investigations by creating an AI service opt-out policy for CloudWatch or AI Operations (aiops). For more information, see [AI services opt-out policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_ai-opt-out.html) in the AWS Organizations User Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,7 +43,3 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-best-pr
 +  Create CloudWatch alarms on the delivery's `DataFreshness` and failed-record metrics (`DeliveryToS3.FailedRecordCount` or `DeliveryToIceberg.FailedRowCount`) to proactively detect delivery issues.
 +  Enable CloudWatch Logs for your delivery to capture detailed delivery diagnostics and error messages.
 +  Track the delivered-bytes metric (`DeliveryToS3.BytesOut` or `DeliveryToIceberg.BytesOut`) to monitor throughput and identify unexpected drops in data volume.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

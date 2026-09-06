@@ -52,7 +52,3 @@ The following table provides information about error codes you might see for the
 | MST-5500 | Exception occurred while getting file content response. | Error occurred while fetching file content response details from Microsoft Graph API. Please check logs for more details. |
 | MST-5501 | Only String, String List, Date and Long formats are supported for field mappings. | Error related to unsupported field mappings. Please check logs for the specific error message. |
 | MST-5502 | IO Exception occurred. | IO Exception. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

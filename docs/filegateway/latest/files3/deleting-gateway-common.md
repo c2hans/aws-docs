@@ -36,7 +36,3 @@ Before you do this step, make sure that there are no applications currently writ
 
 **Important**
 You no longer pay software charges after you delete a gateway, but resources such as Amazon S3 bucket and Amazon EC2 instances persist. You can remove the gateway Amazon EC2 instance after the file gateway is removed. If you don't need the data in Amazon S3 buckets associated with the file shares, you can choose to remove your Amazon S3 buckets. For instructions, see [Deleting your bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/deleting-object-bucket.html#clean-up-delete-bucket).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

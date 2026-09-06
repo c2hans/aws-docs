@@ -14,7 +14,3 @@ Amazon DCV clients include:
 + [Web browser client](client-web.md)– This option is useful for those who need to access remote resources from various devices or locations without the need to install a dedicated client application.
 + [Linux client](client-linux.md)– Allows Linux users to access their remote resources with the same level of performance and functionality as the Windows client.
 + [MacOS client](client-mac.md)– Provides a dedicated client that seamlessly integrates with the macOS environment. This client offers the same feature set.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

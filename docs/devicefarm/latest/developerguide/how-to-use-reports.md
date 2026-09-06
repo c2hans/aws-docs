@@ -169,7 +169,3 @@ To display only a portion of the information:
 + To remove all of the characters from a column header box, choose the **X** in that column header box. Removing all of the characters from a column header box is the same as entering **\*** in that column header box.
 
 To download all of the log information for the device, including all of the suites and tests that you ran, choose **Download logs**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

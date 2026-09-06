@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 +  Instead of ordering an Outpost with a single medium or large Outpost rack, consider splitting the capacity into two small or medium racks to allow you to take advantage of the EC2 placement groups ability to distribute instances across racks.
 + Amazon EC2 Placement group on Outposts can be used to influence the placement of EKS nodegroups, Control Plane Nodes for EKS Local Cluster and [ECS Task](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-strategies.html).
 + Use Intra-VPC Communication to spread workloads across multiple Outposts within the same VPC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

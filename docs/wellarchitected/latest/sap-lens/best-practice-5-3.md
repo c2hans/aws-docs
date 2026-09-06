@@ -43,7 +43,3 @@ Many SAP customers rely on copies of production data for testing purposes, inclu
 + Traditional data scrambling mechanisms provided by SAP or third-party providers
 + The use of additional accounts or network controls to limit access during a copy of production data
 + Use of a non-production account with the same controls as production
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

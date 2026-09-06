@@ -392,7 +392,3 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
  The `xmlstarlet` package was in EPEL7, and is not available in AL2023.
 
  The upstream package has not been touched in over 9 years (last touched in August 2014). For an additional four years prior (since at least July 2010), a request for a new maintainer has gone unanswered. It is for this reason that it is not planned to add `xmlstarlet` to AL2023.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

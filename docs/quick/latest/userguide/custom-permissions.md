@@ -156,22 +156,22 @@ Use this group to control data source connections, including adding, editing, an
 
 | Feature | Amazon Quick behavior | Badge | Parent capability |
 | --- | --- | --- | --- |
-| Actions | Restricts all action connector capabilities. | AI | Not applicable |
+| Actions | Restricts all connector capabilities. | AI | Not applicable |
 | Creating or updating all data sources | Access to creating or updating all data sources is disabled. | Not applicable | Not applicable |
 | Sharing data sources | Access to sharing data sources is disabled. | Not applicable | Not applicable |
 | Knowledge base | Restricts all knowledge base capabilities. | AI | Not applicable |
 | Creating or updating all knowledge bases | Users can't create or update knowledge bases. | AI | Knowledge base |
 | Share all knowledge bases | Users can't share knowledge bases with other users. | AI | Knowledge base |
 
-### Action connector features
+### Connector features
 <a name="action-connector-features"></a>
 
-In addition to the features listed in the preceding sections, you can restrict access to individual action connectors. Each action connector supports the following permissions:
+In addition to the features listed in the preceding sections, you can restrict access to individual connectors. Each connector supports the following permissions:
 + **Create and Update action** – Restricts the ability to create or update actions for the connector.
 + **Share action** – Restricts the ability to share actions for the connector.
 + **Use action** – Restricts the ability to use actions for the connector.
 
-These permissions are available under **Actions**, in the **Connectors** group of the **Capabilities & features** section. For a list of available action connectors, see [Action connectors](https://docs.aws.amazon.com/quick/latest/userguide/action-integrations.html).
+These permissions are available under **Actions**, in the **Connectors** group of the **Capabilities & features** section. For a list of available connectors, see [Connectors](https://docs.aws.amazon.com/quick/latest/userguide/action-integrations.html).
 
 ### Knowledge base connectors
 <a name="custom-permissions-kb-connectors"></a>
@@ -191,7 +191,3 @@ Use this group to control account-level settings, including user management, per
 | Feature | Amazon Quick behavior | Badge | Parent capability |
 | --- | --- | --- | --- |
 | Allow users to upgrade or request upgrades | Users can't upgrade their own role or request a role upgrade. | Not applicable | Not applicable |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

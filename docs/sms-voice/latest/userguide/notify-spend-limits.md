@@ -63,7 +63,3 @@ aws pinpoint-sms-voice-v2 describe-spend-limits
 <a name="notify-spend-limits-increase"></a>
 
 To increase your Notify account spend limit beyond the default, use the Service Quotas console or create a support case. For more information, see [Quotas for AWS End User Messaging SMS](quotas.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

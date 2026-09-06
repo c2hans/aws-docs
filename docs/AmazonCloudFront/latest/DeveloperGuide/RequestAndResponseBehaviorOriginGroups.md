@@ -20,7 +20,3 @@ CloudFront fails over to the secondary origin only when the HTTP method of the v
 When CloudFront sends a request to a secondary origin, the response behavior is the same as for a CloudFront origin that’s not in an origin group.
 
 For more information about origin groups, see [Optimize high availability with CloudFront origin failover](high_availability_origin_failover.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -247,7 +247,3 @@ import software.amazon.awssdk.services.sns.model.SnsException;
 See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/da520cb4436f8567a90b6f73f77232fd590a50bf/javav2/example_code/sns/src/main/java/com/example/sns/DeleteTopic.java) on GitHub.
 
 For more information, see the [Amazon Simple Notification Service Developer Guide](http://docs.aws.amazon.com/sns/latest/dg/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

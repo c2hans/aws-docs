@@ -195,7 +195,3 @@ To resolve this issue, see[ How can I resolve the "CannotPullContainerError" err
 This error indicates that the context was cancelled.
 
 The common cause for this error is because the VPC your task is using doesn't have a route to pull the container image from Amazon ECR.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,7 +51,3 @@ This example shows a `RecordAudio` action.
 Once the PSTN audio service runs the action, it invokes your AWS Lambda function again with either a success or failure indication.
 
 Your application can also make outbound phone calls and use your AWS Lambda function to control the call flow, caller experience, and call context. In this case, you call the [CreateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html) API, and your AWS Lambda is invoked with a `NEW_OUTBOUND_CALL` event. Once the call is answered, you can return actions, such as playing a voice prompt and collecting user-entered digits. You can also trigger your AWS Lambda function using the [UpdateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html) API to implement timers, participant muting, and waiting rooms.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

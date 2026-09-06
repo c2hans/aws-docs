@@ -19,7 +19,3 @@ A service-linked role makes setting up an Elastic Beanstalk environment easier b
 Elastic Beanstalk already supports a monitoring service-linked role, which it uses for health monitoring and event reporting when no explicit service role is specified during environment creation. Today's release adds a *maintenance service-linked role*, which Elastic Beanstalk will associate with environments that need regular maintenance activities. At this time, Elastic Beanstalk will use a maintenance service-linked role with environments that don't have an [instance profile](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/iam-instanceprofile.html), as an alternative way to retrieve your application source code from Amazon Simple Storage Service (Amazon S3) during deployment.
 
 For more information, see [Using Service-Linked Roles for Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-service-linked-roles.html) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

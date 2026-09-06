@@ -769,7 +769,3 @@ This example demonstrates how both AWS recommendations and partner estimates app
 1. **Provide Rich Opportunity Details:** More complete opportunity information (customer details, project description, technical requirements) yields more accurate AI recommendations.
 
 1. **Review Variance:** When partner estimates differ significantly from AWS recommendations, review opportunity details to ensure all relevant context is captured.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

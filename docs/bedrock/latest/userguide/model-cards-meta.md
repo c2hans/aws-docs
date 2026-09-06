@@ -21,7 +21,3 @@ The following Meta models are available in Amazon Bedrock:
 | [Llama 3.1 8B Instruct](model-card-meta-llama-3-1-8b-instruct.md) | Llama 3.1 8B Instruct is Meta's compact 8-billion parameter model with a 128K context window, suitable for edge deployment and fine-tuning. |
 | [Llama 3 70B Instruct](model-card-meta-llama-3-70b-instruct.md) | Llama 3 70B Instruct is Meta's 70-billion parameter instruction-tuned model with an 8K context window, optimized for dialogue and assistant-like tasks. |
 | [Llama 3 8B Instruct](model-card-meta-llama-3-8b-instruct.md) | Llama 3 8B Instruct is Meta's 8-billion parameter instruction-tuned model with an 8K context window, designed for efficient deployment on smaller infrastructure. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

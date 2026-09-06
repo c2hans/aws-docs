@@ -253,7 +253,3 @@ aws geo-places geocode --key ${YourKey} --query-components '{"PostalCode": "V5N 
 <a name="geocode-postal-code-dev-tips"></a>
 
 Learn more about [ZIP\+4](https://en.wikipedia.org/wiki/ZIP_Code#ZIP+4) (United States) and [ Eircode](https://en.wikipedia.org/wiki/Postal_addresses_in_the_Republic_of_Ireland) (Ireland). Also, learn about postal code system in Canada, the United Kingdom, the Netherlands, Singapore, and Israel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

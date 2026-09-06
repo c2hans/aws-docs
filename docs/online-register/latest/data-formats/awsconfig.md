@@ -67,7 +67,3 @@ AWS Config provides the following APIs for data retrieval.
 | <a name="config-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/config/latest/APIReference/API_ListTagsForResource.html) | List the tags for AWS Config resource | Read |
 | <a name="config-SelectAggregateResourceConfig"></a>[SelectAggregateResourceConfig](https://docs.aws.amazon.com/config/latest/APIReference/API_SelectAggregateResourceConfig.html) | Accept a structured query language (SQL) SELECT command and an aggregator to query configuration state of AWS resources across multiple accounts and regions, performs the corresponding search, and returns resource configurations matching the properties | Read |
 | <a name="config-SelectResourceConfig"></a>[SelectResourceConfig](https://docs.aws.amazon.com/config/latest/APIReference/API_SelectResourceConfig.html) | Accept a structured query language (SQL) SELECT command, performs the corresponding search, and returns resource configurations matching the properties | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ Because Connect Customer uses Kinesis for streaming, [Kinesis Video Streams quot
 1. Choose **Save** under **Live media streaming**, and then choose **Save** at the bottom of the page.
 
 After you enable live media streaming, add **Start media streaming** and **Stop media streaming** blocks to your flow. Configure those blocks to specify what audio you want to capture. For instructions and an example, see [Example flow for testing live media streaming in Connect Customer](use-media-streams-blocks.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

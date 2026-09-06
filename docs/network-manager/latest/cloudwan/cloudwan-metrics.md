@@ -65,7 +65,3 @@ The `AWS/Usage` namespace reports the following metric for Cloud WAN:
 | Resource | The type of resource that is running. Currently, valid values for Cloud WAN usage metrics include RoutesPropagated/Inbound and RoutesPropagated/Outbound, which return the number of routes advertised and learnt over Direct Connect attachments. |
 | ResourceID | The unique identifier for the resource, such as a core network attachmentId, and might include a region code prefix for region-specific resources. |
 | Class | This dimension is reserved for future use. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

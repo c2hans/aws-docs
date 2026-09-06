@@ -35,7 +35,3 @@ For more information about the event types available for notification rules, see
 You can choose to limit the details included in notifications to only what is included in an event. This is referred to as the **Basic** detail type. These events contain exactly the same information as is sent to Amazon EventBridge and Amazon CloudWatch Events.
 
 Developer Tools console services, such as CodeCommit, might choose to add information about some or all of their event types in notification messages beyond what is available in an event. This supplemental information could be added at any time to enhance current event types or supplement future event types. You can choose to include any supplemental information about the event, if available, in the notification by choosing the **Full** detail type. For more information, see [Detail types](concepts.md#detail-type).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

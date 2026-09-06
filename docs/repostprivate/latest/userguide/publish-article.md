@@ -34,7 +34,3 @@ Follow these steps to publish an article in your private re:Post:
 1. Choose **Publish article**.
 
 The article that you published is now displayed under the **Articles** tab. The users in your private re:Post can view, upvote, and downvote your article. They can also add comments to your article that are displayed in the **Comments on this article** section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

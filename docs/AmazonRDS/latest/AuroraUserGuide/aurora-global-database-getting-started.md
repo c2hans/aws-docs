@@ -21,7 +21,3 @@ Before creating an Aurora Global Database, we recommend that you understand all 
 + [Adding an AWS Region to an Amazon Aurora global database](aurora-global-database-attaching.md)
 + [Creating a headless Aurora DB cluster in a secondary Region](aurora-global-database-attach.console.headless.md)
 + [Creating an Amazon Aurora global database from an Aurora or Amazon RDS snapshot](aurora-global-database.use-snapshot.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

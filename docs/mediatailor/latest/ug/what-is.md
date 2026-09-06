@@ -48,7 +48,3 @@ As with other AWS products, there are no contracts or minimum commitments for us
 <a name="regions-endpoints"></a>
 
 To reduce data latency in your applications, MediaTailor offers regional endpoints to make your requests. To view the list of Regions in which MediaTailor is available, see [Regional endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

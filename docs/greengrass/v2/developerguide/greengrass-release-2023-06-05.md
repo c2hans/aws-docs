@@ -30,7 +30,3 @@ The following table lists components provided by AWS that include new and update
 | MQTT 3.1 broker (Moquette) | Version 2.3.3 of the [MQTT 3.1 broker (Moquette)](mqtt-broker-moquette-component.md) component is available.<a name="changelog-mqtt-broker-moquette-2.3.3"></a>**New features**<br /> Adds a new `startupTimeoutSeconds` configuration option.  |
 | MQTT bridge | Version 2.2.6 of the [MQTT bridge](mqtt-bridge-component.md) component is available.<a name="changelog-mqtt-bridge-2.2.6"></a>**New features**<br /> Adds a new `startupTimeoutSeconds` configuration option.  |
 | Stream manager | Version 2.1.7 of the [stream manager](stream-manager-component.md) component is available.<a name="changelog-stream-manager-2.1.7"></a>**Bug fixes and improvements**<br /> Fixes an issue where stream manager fails to read the proxy configuration correctly.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

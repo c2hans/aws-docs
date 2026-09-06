@@ -24,7 +24,3 @@ If you have already set up configuration files for IDT for FreeRTOS, you can use
 ![IDT test run settings dialog with options for test selection, skipping test groups, timeout multiplier, and stopping on first failure.](http://docs.aws.amazon.com/freertos/latest/userguide/images/idt-testrun-settings.png)
 
 After you finish modifying your configuration, verify that all of your configuration settings pass validation. If the status for each configuration setting is `Valid`, you can run your qualification tests with this configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

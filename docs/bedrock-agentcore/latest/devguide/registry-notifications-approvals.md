@@ -51,7 +51,3 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 For more information on how to create Amazon EventBridge Rules, see [Creating Amazon EventBridge rules](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-visual.html). AWS Agent Registry events can be found under the source: `aws.agent-registry` (or `aws.bedrock-agentcore` for registries still on the `bedrock-agentcore` namespace) and detail-type: `Registry Record State changed to Pending Approval`.
 
 You can configure the rule to any [Target](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-targets.html) supported by Amazon EventBridge.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

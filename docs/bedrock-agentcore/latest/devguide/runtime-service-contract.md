@@ -37,7 +37,3 @@ Compare the HTTP, MCP, A2A, and AG-UI protocols to understand the differences an
 |  **Discovery**  | N/A | Tool listing | Agent Cards | N/A |
 |  **Authentication**  | SigV4, OAuth 2.0; WebSocket supports SigV4 by headers and query params | SigV4, OAuth 2.0 | SigV4, OAuth 2.0 | SigV4, OAuth 2.0 |
 |  **Use Case**  | Direct API calls, real-time streaming | Tool servers | Agent-to-agent communication | Interactive UI experiences |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

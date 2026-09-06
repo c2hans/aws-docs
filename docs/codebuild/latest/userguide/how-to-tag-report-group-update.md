@@ -33,7 +33,3 @@ You can use the CodeBuild console to edit the tags associated with a CodeBuild r
 <a name="how-to-tag-report-group-update-cli"></a>
 
  To add, change, or delete tags from a report group, see [Update a report group (CLI)](report-group-export-settings.md#update-report-group-cli). Update the tags in `UpdateReportGroupInput.json`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

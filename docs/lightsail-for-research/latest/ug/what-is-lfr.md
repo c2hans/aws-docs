@@ -22,7 +22,3 @@ With Lightsail for Research, you pay only for the resources you create and use. 
 <a name="region-availability"></a>
 
 Lightsail for Research is available in the same AWS Regions as Amazon Lightsail, with the exception of the US East (N. Virginia) Region. Lightsail for Research also uses the same endpoints as Lightsail. To view the currently supported AWS Regions and endpoints for Lightsail, see [Lightsail Endpoints and Quotas](https://docs.aws.amazon.com/general/latest/gr/lightsail.html) in the *AWS General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail for Research. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail-for-research` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -77,7 +77,3 @@ The final step in the migration journey is swapping, or cutting over, to the new
 If you have a client application that needs to point to the new environment, update the DNS entry from the old environment to the new environment. Then closely monitor the application behavior to ensure that your users are getting the right experience.
 
 Generally, if you have followed the guidelines in this document, you will have a safe switchover. However, we recommend that you keep your source environment up to date so that it can act as a fallback in case you encounter any problems with the new environment. Some AWS customers continue to operate both environments for a few weeks after the swap before decommissioning the older environment. We recommend that you choose a strategy that aligns with your business continuity requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

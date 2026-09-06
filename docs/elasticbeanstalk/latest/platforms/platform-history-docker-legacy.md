@@ -407,7 +407,3 @@ The following Elastic Beanstalk Docker container types were current prior to Apr
 | **Name** | **AMI** | **Docker Version** |
 | --- |--- |--- |
 | 64bit Amazon Linux 2014.03 v1.0.2 running Docker 0.9.0 | 2014.03 | 0.9.0 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

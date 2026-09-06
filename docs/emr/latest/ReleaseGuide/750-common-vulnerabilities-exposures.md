@@ -203,7 +203,3 @@ This table was updated on November 23, 2021.
 | CVE-2022-39135 | UNTRIAGED | [https://nvd.nist.gov/vuln/detail/CVE-2022-39135](https://nvd.nist.gov/vuln/detail/CVE-2022-39135) |
 | CVE-2022-40149 | UNTRIAGED | [https://nvd.nist.gov/vuln/detail/CVE-2022-40149](https://nvd.nist.gov/vuln/detail/CVE-2022-40149) |
 | CVE-2023-26049 | UNTRIAGED | [https://nvd.nist.gov/vuln/detail/CVE-2023-26049](https://nvd.nist.gov/vuln/detail/CVE-2023-26049) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

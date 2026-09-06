@@ -311,7 +311,3 @@ AWS Cloud9 defines the following condition keys that can be used in the `Conditi
 |   [cloud9:Permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloud9.html##awscloud9-cloud9_Permissions)  | Filters access by the type of AWS Cloud9 permissions | String |
 |   [cloud9:SubnetId](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloud9.html##awscloud9-cloud9_SubnetId)  | Filters access by the subnet ID that the AWS Cloud9 environment will be created in | String |
 |   [cloud9:UserArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloud9.html##awscloud9-cloud9_UserArn)  | Filters access by the user ARN specified | ARN |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ This section provides an example step-by-step approach, based on common practice
 + *Continuous Monitoring and Improvement*: Regularly review and update compliance measures; stay informed about AWS service updates and new compliance features; conduct periodic audits and assessments.
 
 Remember, this is a general approach and should be tailored to each organization's specific circumstances and use of AWS services. It is advisable to consult with legal and privacy professionals familiar with the GDPR and AWS to ensure comprehensive compliance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

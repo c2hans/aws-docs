@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ba
 + [FSI Services Spotlight: Featuring AWS Lambda](https://aws.amazon.com/blogs/industries/fsi-services-spotlight-featuring-aws-lambda/) (AWS blog post)
 + [Amazon Rekognition announces updates to its face detection, analysis, and recognition capabilities](https://aws.amazon.com/blogs/machine-learning/amazon-rekognition-announces-updates-to-its-face-detection-analysis-and-recognition-capabilities/) (AWS Machine Learning Blog)
 + [QnA Bot on AWS](https://aws.amazon.com/solutions/implementations/aws-qnabot/) (AWS Solutions Library)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

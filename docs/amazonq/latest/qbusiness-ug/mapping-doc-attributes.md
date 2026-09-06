@@ -179,7 +179,3 @@ To ensure optimal performance and accuracy, perform a `[FORCED\_FULL\_CRAWL](htt
 <a name="w2aac31c63c33b9"></a>
 
  Amazon Q also offers the ability to intelligently ascertain user intent and apply filtering or sorting across any number of fields. For example, users can query against specific time ranges, values, or string matches by text alone. Sorting can also be inferred through text, for example, "Show me the top 5 accounts sorted by sales data from the last month."
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

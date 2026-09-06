@@ -24,7 +24,3 @@ Regardless of whether you access the Amazon SES API directly or indirectly throu
 + [Using templates to send personalized email with the Amazon SES API](send-personalized-email-api.md)
 + [Sending email through Amazon SES using an AWS SDK](send-an-email-using-sdk-programmatically.md)
 + [Content encodings supported by Amazon SES](content-encodings.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

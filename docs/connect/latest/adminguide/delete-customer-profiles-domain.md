@@ -18,7 +18,3 @@ Deleting mappings will only delete objects and data associated with that specifi
 
 1. To delete your domain, enter *confirm* in the box and choose **Delete domain**.
 ![The Connect Customer Customer Profiles delete domain page, the delete domain confirmation button after typing in confirm manually.](http://docs.aws.amazon.com/connect/latest/adminguide/images/delete-customer-profiles-domain-step3.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

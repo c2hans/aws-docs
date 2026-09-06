@@ -16,7 +16,3 @@ There are two ways to create an ID namespace target in the AWS Entity Resolution
 **Topics**
 + [Creating an ID namespace target (rule-based method)](create-id-namespace-target-rule-based.md)
 + [Creating an ID namespace target (provider services method)](create-id-namespace-target-provider-services.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

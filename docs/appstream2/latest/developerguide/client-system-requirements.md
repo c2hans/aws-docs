@@ -28,7 +28,3 @@ Local administrator rights are not supported for the macOS client.
 
 **Note**
 We recommend an internet connection for WorkSpaces Applications client installation. In some cases, the client can't be installed on a computer that is not connected to the internet, or USB devices might not work with applications streamed from WorkSpaces Applications. For more information, see [Troubleshooting WorkSpaces Applications User Issues](troubleshooting-user-issues.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

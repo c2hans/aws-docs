@@ -16,7 +16,3 @@ The application hosting diagram shows how to run enterprise and engineering appl
 1. Host enterprise applications on [Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/) with Auto Scaling and Elastic Load Balancing.
 
 1. Use [Amazon FSx](https://docs.aws.amazon.com/fsx/latest/LustreGuide/) and Amazon EC2 with WorkSpaces Applications for high performance computing (HPC), CAD, and CAE workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Reference Architecture Diagrams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query reference-architecture-diagrams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

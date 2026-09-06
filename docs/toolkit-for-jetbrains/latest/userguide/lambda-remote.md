@@ -25,7 +25,3 @@ To complete this procedure, you must first install the AWS Toolkit for JetBrains
 1. Complete the [Edit configuration (remote function settings)](run-debug-configurations-dialog-remote.md) dialog box if it's displayed, and then choose **Run** or **Debug**. Results are displayed in the **Run** or **Debug** tool window.
    + If the **Edit configuration** dialog box doesn't appear and you want to change the existing configuration, first change its configuration, and then repeat this procedure from the beginning.
    + If the configuration details are missing, expand **Templates**, **AWS Lambda**, and then choose **Local**. Choose **OK**, and then repeat this procedure from the beginning.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

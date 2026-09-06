@@ -204,7 +204,3 @@ QuerySpec spec = new QuerySpec()
 
 **Note**
 A strongly consistent read consumes one read capacity unit per 4 KB of data returned (rounded up), whereas an eventually consistent read consumes half of that. For example, a strongly consistent read that returns 9 KB of data consumes 3 read capacity units (9 KB / 4 KB = 2.25, rounded up to 3), while the same query using an eventually consistent read consumes 1.5 read capacity units. If your application can tolerate reading data that might be slightly stale, use eventually consistent reads to reduce your read capacity usage. For more information, see [Read capacity units](LSI.md#LSI.ThroughputConsiderations.Reads).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

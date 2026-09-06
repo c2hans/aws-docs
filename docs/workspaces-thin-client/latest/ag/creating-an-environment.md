@@ -21,7 +21,3 @@ WorkSpaces Thin Client only displays virtual desktops in the same Region.
 + [Step 1: Enter your environment details](entering-environment-details.md)
 + [Step 2: Select your virtual desktop provider](virtual-service-providers.md)
 + [Step 3: Send the activation code to your device users](send-activation-code.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

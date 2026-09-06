@@ -114,7 +114,3 @@ You can also configure a default Neptune notebook for use with Neptune ML by fol
 1. Save this new policy and attach it to the IAM role in Step 8.
 
 1. Select **Start** at the top right of of the SageMaker AI notebook instance details page to start the notebook instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

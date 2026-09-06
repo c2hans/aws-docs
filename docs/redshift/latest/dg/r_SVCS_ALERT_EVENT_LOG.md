@@ -40,7 +40,7 @@ You can use the SVCS\_ALERT\_EVENT\_LOG to identify potential issues in your que
   Statistics are missing. Run ANALYZE following data loads or significant updates and use STATUPDATE with COPY operations. For more information, see [Amazon Redshift best practices for designing queries](c_designing-queries-best-practices.md).
 + **Nested loop **
 
-  A nested loop is usually a Cartesian product. Evaluate your query to ensure that all participating tables are joined efficiently.
+  A nested loop is usually a Cartesian product. Evaluate your query to make sure that all participating tables are joined efficiently.
 + **Very selective filter**
 
   The ratio of rows returned to rows scanned is less than 0.05. Rows scanned is the value of `rows_pre_user_filter `and rows returned is the value of rows in the [STL\_SCAN](r_STL_SCAN.md) system table. Indicates that the query is scanning an unusually large number of rows to determine the result set. This can be caused by missing or incorrect sort keys. For more information, see [Sort keys](t_Sorting_data.md).
@@ -76,7 +76,3 @@ trim(event_time) as event_time from svcs_alert_event_log order by query;
 
 (4 rows)
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

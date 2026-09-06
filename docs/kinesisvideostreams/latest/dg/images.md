@@ -10,7 +10,3 @@ You can use Amazon Kinesis Video Streams APIs and SDKs to perform on-demand imag
 Kinesis Video Streams supports extracting images from video streams two ways:
 + **[On-demand Image Generation](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_reader_GetImages.html)** - Use the `[GetImages](https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/API_reader_GetImages.html)` API to extract a single image or multiple images from video stored in Kinesis Video Streams.
 + **[Automated real-time image generation](s3-real-time-image-create.md)** - Configure Kinesis Video Streams to automatically extract images from video data in real time based on fragment tags from video as it is ingested, and deliver the images to an S3 bucket.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

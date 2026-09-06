@@ -78,7 +78,3 @@ You can create an Amazon CloudWatch alarm that sends an Amazon SNS message when 
 
 **Important**
 To keep your Timestream for InfluxDB cluster in a healthy state, we also recommend monitoring and creating alarms for `CPUUtilization` and `MemoryUtilization` that consistently exceed a healthy 85 percent usage and `DiskUtilization` that exceeds 75 percent.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

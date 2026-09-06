@@ -187,7 +187,3 @@ trackingErrorElevation
 +  Parse the `telemetryTypeAndVersion`, `telemetryType`, and `telemetryVersion` fields to determine how to process each record.
 
  We recommend implementing version-aware payload serialization that can handle multiple schema versions gracefully, allowing your applications to continue functioning when new versions are introduced.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

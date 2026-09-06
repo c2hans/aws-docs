@@ -57,7 +57,3 @@ Each case that is created is connected to a customer profile from your Connect C
 1. Optionally, add **Case tags** to automatically propagate tags to cases created from this template. See [Tag-based access controls](cases-tag-based-access-control.md) for more information.
 
 1. When you're done, choose **Save**. The template is immediately made available to agents in the agent application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

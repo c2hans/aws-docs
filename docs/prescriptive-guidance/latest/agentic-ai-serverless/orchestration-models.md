@@ -166,7 +166,3 @@ Together, they provide organizations with the ability to do the following:
 + Scale AI without bottlenecks or architectural rigidity
 
 Orchestration is no longer just about rules, it's about intent interpretation, tool selection, and autonomous execution. Serverless on AWS combines AWS Step Functions for structured workflows and Amazon Bedrock Agents for semantic orchestration. This unified framework enables building the next generation of agentic, serverless AI systems.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

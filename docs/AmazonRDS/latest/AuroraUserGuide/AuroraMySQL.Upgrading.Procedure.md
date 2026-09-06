@@ -212,7 +212,3 @@ You can upgrade an Aurora DB cluster that has a cross-Region read replica using 
 + Don't wait a long time to upgrade the primary DB cluster after you upgrade the replica cluster. We recommend not waiting longer than the next maintenance window.
 + After you upgrade the primary DB cluster, reboot its writer DB instance. The custom DB cluster parameter group that enables binlog replication doesn't take effect until the writer DB instance is rebooted.
 + Don't resume the write workload or enable connections to the writer DB instance until you confirm that cross-Region replication has restarted, and that the replica lag in the secondary AWS Region is 0.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

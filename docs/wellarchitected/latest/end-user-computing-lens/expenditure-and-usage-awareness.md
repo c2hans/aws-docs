@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 + [EUCCOST02-BP01 Monitor your EUC cost and usage proactively](euccost02-bp01.md)
 + [EUCCOST03-BP01 Determine the level of self-service capabilities to provide your users](euccost03-bp01.md)
 + [EUCCOST03-BP02 Use a self-service portal to request your ITSM](euccost03-bp02.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

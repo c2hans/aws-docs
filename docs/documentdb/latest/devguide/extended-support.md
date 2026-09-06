@@ -38,7 +38,3 @@ You can create new clusters with an engine version that has reached the end of s
 You can end enrollment in Amazon DocumentDB Extended Support at any time. To end enrollment, upgrade each enrolled cluster to a newer engine version that is still under Amazon DocumentDB standard support. The end of Amazon DocumentDB Extended Support enrollment will be effective the day that you complete an upgrade to a newer engine version that is still under Amazon DocumentDB standard support.
 
 For more information about Amazon DocumentDB end of standard support dates and Amazon DocumentDB end of Extended Support dates, see [Amazon DocumentDB engine version support dates](docdb-version-support-dates.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

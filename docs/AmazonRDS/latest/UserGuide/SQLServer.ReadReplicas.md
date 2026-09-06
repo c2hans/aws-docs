@@ -81,7 +81,3 @@ Before you create an RDS for SQL Server replica, consider the following requirem
     For more information on native backup and restore, see [Importing and exporting SQL Server databases using native backup and restore](SQLServer.Procedural.Importing.md)
 
   When you promote a SQL Server cross-Region read replica, the promoted replica behaves the same as other SQL Server DB instances, including the management of its options. For more information about option groups, see [Working with option groups](USER_WorkingWithOptionGroups.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

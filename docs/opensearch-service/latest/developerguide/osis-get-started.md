@@ -311,7 +311,3 @@ To get started configuring your clients and ingesting data, see the following re
 + [Creating and managing pipelines](creating-pipeline.md#create-pipeline)
 + [Configuring your clients to send data to OpenSearch Ingestion](configure-client.md)
 + [Data Prepper documentation](https://opensearch.org/docs/latest/clients/data-prepper/index/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

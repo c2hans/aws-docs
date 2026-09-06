@@ -28,7 +28,3 @@ Use the following procedure to set up DataBrew permissions for users who need to
 1. Set the Trust relationships for the role so that a user or group can assume the relevant role.
    + If you are not using groups, trust the user with the role.
    + If you are using groups, trust the group with the role and add the user to the group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

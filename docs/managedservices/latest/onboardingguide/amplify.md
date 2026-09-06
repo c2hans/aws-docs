@@ -29,7 +29,3 @@ You must use `'amplify*'` as the prefix for your buckets when working with Ampli
 There are no prerequisites for the use of AWS Amplify in your AMS account.
 
 **Malz environments only**: The default onboarded role for Amplify is "customer\_amplify\_console\_role". To use a custom role, first deploy the IAM entities. Then, create an additional RFC to add your custom role to the Service Control Policy for Application Accounts allow list.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

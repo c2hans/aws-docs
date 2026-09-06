@@ -94,7 +94,3 @@ The following table shows the types of ends that each connector can have.
 |  ![An image of a line with a cross and circle at one end.](http://docs.aws.amazon.com/marketplace/latest/userguide/images/datafeeds-zero-or-one-to-n.png)  |  **Zero or one to n** – A connector with this end represents a join that has zero or one values on this side of the join. |
 |  ![An image of a line with a circle and fork at one end.](http://docs.aws.amazon.com/marketplace/latest/userguide/images/datafeeds-optional-many-to-n.png)  |  **Zero or more to n** – A connector with this end represents a join that has zero, one, or many values on this side of the join. |
 |  ![An image of a line with a cross and fork at one end.](http://docs.aws.amazon.com/marketplace/latest/userguide/images/datafeeds-one-or-more-to-n.png)  |  **One or more to n** – A connector with this end represents a join that has one or many values on this side of the join. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

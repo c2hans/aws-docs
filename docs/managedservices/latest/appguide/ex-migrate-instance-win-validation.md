@@ -170,7 +170,3 @@ You can download and run the PowerShell scripts. To do this, download the [pre-w
 + **Is WIGS Pre-Ingestion Validation available for Linux?**
 
   Yes. The Linux version launched on 31 October, 2019. It is available under the **AMS Helper Files** section on the main Documentation page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

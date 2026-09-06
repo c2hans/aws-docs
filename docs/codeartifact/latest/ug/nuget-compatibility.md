@@ -30,7 +30,3 @@ AWS CodeArtifact supports the NuGet (`nuget.exe`) and .NET Core (`dotnet`) CLI t
 
 Because CodeArtifact only supports V3 of NuGet's HTTP protocol, the following commands will not work when used against CodeArtifact resources:
 + `list`: The `nuget list` command displays a list of packages from a given source. To get a list of packages in a CodeArtifact repository, you can use the [List package names](list-packages.md) command from the AWS CLI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

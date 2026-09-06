@@ -100,7 +100,3 @@ If you prefer to use Amazon GuardDuty for anomaly detection instead of Amazon Cl
 + [[CloudWatch.12] Ensure a log metric filter and alarm exist for changes to network gateways](cloudwatch-controls.md#cloudwatch-12)
 + [[CloudWatch.13] Ensure a log metric filter and alarm exist for route table changes](cloudwatch-controls.md#cloudwatch-13)
 + [[CloudWatch.14] Ensure a log metric filter and alarm exist for VPC changes](cloudwatch-controls.md#cloudwatch-14)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

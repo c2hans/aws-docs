@@ -67,7 +67,3 @@ Instead of passing credentials as command line parameters, you can set the follo
 `AWS_SESSION_TOKEN` (required when using temporary credentials)
 If you set these environment variables and do not provide credential command line parameters, the installer uses the environment variable values. If you provide both command line parameters and environment variables, the installer uses the command line parameters.
 On Linux, use `sudo -E` to preserve the environment variables when running the installer as root.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

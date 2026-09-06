@@ -19,7 +19,3 @@ AWS Backup uses the same IAM role that you chose when assigning resources to man
 + [Managed policies for AWS Backup](security-iam-awsmanpol.md)
 + [Using service-linked roles for AWS Backup](using-service-linked-roles.md)
 + [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

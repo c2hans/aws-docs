@@ -28,7 +28,3 @@ The following table describes the released versions of the `EC2WinUtil` driver.
 | 2.0.0 | 2.0.0 | Added support for output on MMIO serial ports for metal instance types. Also improved crash parsing and updated the output format. | August 23, 2018 |
 | 1.0.1 | 1.0.1 | Changed the driver name to `EC2WinUtil` due to a namespace conflict with Amazon Inspector. Several bug fixes are included. | March 1, 2018 |
 | 1.0.0 | 1.0.0 | Initial release. The driver was initially called `AwsAgent`. | November 28, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

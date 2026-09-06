@@ -171,7 +171,3 @@ The following table summarizes the key differences in this division of labor. In
 | Event clipping | You create a feed for the channel (if there isn't one already), and you attach a clipping output.  | You make sure that the feed ARN is specified.  |
 | Smart crop | You create a feed for the channel (if there isn't one already), but you don't attach a smart crop output. | You make sure that the feed ARN is specified. And you configure the video outputs in the channel to work with smart crop. MediaLive is the actor that creates the smart crop output in Elemental Inference. |
 | Smart Subtitles | You create a feed for the channel (if there isn't one already), and you attach a subtitling output with the language configuration. | You make sure that the feed ARN is specified. You add SmartSubtitleSourceSettings caption selectors to input attachments, create caption descriptions referencing those selectors, and add a captions-only output (TTML for MediaPackage V2, CMAF Ingest, or Microsoft Smooth; or WebVTT for HLS or MediaPackage). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

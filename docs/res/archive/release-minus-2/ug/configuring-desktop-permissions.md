@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/configuri
 Administrators can toggle **Desktop permissions** on or off to globally manage the VDI functionality of all session owners. All of these permissions, or a subset, can be used to create **Desktop sharing profiles** that determine which actions the users with whom a desktop is shared can perform. If any desktop permission is disabled, this will automatically disable the corresponding permissions in the **Desktop sharing profiles**. These permissions will be labeled as "Disabled Globally". Even if the administrator enables this desktop permission again, the permission in the desktop sharing profile will remain disabled until the administrator manually enables it.
 
 ![environment boundaries](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/permission-policy-environment-boundaries.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -203,7 +203,7 @@ gFWhsx4NSHn2gh1gDZ41Ou/4exJ1lwPM
 
 To verify packages that use a Linux .AppImage binary, first complete steps 1-3 in the Linux tab, then complete the following steps.
 
-1. From the AppImageUpdate [page](https://github.com/AppImageCommunity/AppImageUpdate/releases/tag/continuous) in GitHub, download the **validate-x86\_64.AppImage** file.
+1. From the AppImageUpdate [releases page](https://github.com/AppImageCommunity/AppImageUpdate/releases/tag/continuous) on the GitHub website, download the **validate-x86\_64.AppImage** file.
 
 1. After downloading the file, to add execute permissions, run the following command.
 
@@ -277,7 +277,3 @@ To verify packages that use a Linux .rpm binary, first complete steps 1-3 in the
 1. To verify the .rpm file, confirm that `digests signatures OK` is in the output.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

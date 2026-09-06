@@ -59,7 +59,3 @@ For additional information, see the following resources:
 + [Optimize your SQL Server costs by using bring your own media (BYOM) on Amazon RDS Custom for SQL Server](https://aws.amazon.com/blogs/database/optimize-your-sql-server-costs-by-using-bring-your-own-media-byom-on-amazon-rds-custom-for-sql-server/) (AWS Database blog)
 
 For currently supported SQL Server features, versions, and options, see [Amazon RDS for SQL Server features](https://aws.amazon.com/rds/sqlserver/features/) on the AWS website, [Choosing between Amazon EC2 and Amazon RDS](comparison.md) later in this guide, and [Microsoft SQL Server on Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SQLServer.html) in the AWS documentation. If you're moving to Amazon RDS Custom, make sure to review the [requirements and limitations for Amazon RDS Custom for SQL Server](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-reqs-limits-MS.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ To upload a model, you must have trained and evaluated the model. You can train 
 1. From the file picker, navigate to the drive or share where you’ve downloaded your model artifacts and choose the the compressed model file (of the `*.tar.gz` extension) to upload.
 
 Only a successfully uploaded model will be added to the **Models** list and can be available for you to load it into the vehicle’s inference engine in the autonomous driving mode. For the instructions on how to load a model into your vehicle’s inference engine, see [Drive your AWS DeepRacer vehicle autonomously](drive-your-vehicle.md#drive-your-vehicle-autonomously).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -58,7 +58,7 @@ ERROR: S3ServiceException:The bucket you are attempting to access must be addres
 
 You can create an Amazon S3 bucket in a specific Region either by selecting the Region when you create the bucket by using the Amazon S3 Management Console, or by specifying an endpoint when you create the bucket using the Amazon S3 API or CLI. For more information, see [Uploading files to Amazon S3 to use with COPY](t_uploading-data-to-S3.md).
 
-For more information about Amazon S3 regions, see [Accessing a Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html#access-bucket-intro) in the *Amazon Simple Storage Service User Guide*.
+For more information about Amazon S3 Regions, see [Accessing a Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html#access-bucket-intro) in the *Amazon Simple Storage Service User Guide*.
 
 Alternatively, you can specify the Region using the [REGION](copy-parameters-data-source-s3.md#copy-region) option with the COPY command.
 
@@ -74,7 +74,3 @@ ERROR: S3ServiceException:Access Denied,Status 403,Error AccessDenied
 One possible cause is the user identified by the credentials does not have LIST and GET access to the Amazon S3 bucket. For other causes, see [Troubleshoot Access Denied (403 Forbidden) errors in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshoot-403-errors.html) in the *Amazon Simple Storage Service User Guide*.
 
 For information about managing user access to buckets, see [Identity and access management in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-access-control.html) in the *Amazon Simple Storage Service User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

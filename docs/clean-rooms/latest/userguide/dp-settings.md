@@ -24,7 +24,3 @@ If you increase the **Privacy budget** while keeping the **Noise added per query
 If you increase the **Noise added per query** while keeping the **Privacy budget** input the same, the member who can query can run more aggregations on your tables in the collaboration. If you decrease the **Noise added per query** while keeping the **Privacy budget** input the same, the member who can query can run fewer aggregations. You can increase or decrease the **Noise added per query** any time during the collaboration.
 
 The differential privacy policy is managed by the privacy budget template API actions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

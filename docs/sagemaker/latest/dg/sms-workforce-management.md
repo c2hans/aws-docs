@@ -18,7 +18,3 @@ You can use Amazon Cognito or your own private OpenID Connect (OIDC) Identity Pr
 + [Using the Amazon Mechanical Turk Workforce](sms-workforce-management-public.md)
 + [Subscribe to vendor workforces](sms-workforce-management-vendor.md)
 + [Private workforce](sms-workforce-private.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

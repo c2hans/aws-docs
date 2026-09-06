@@ -91,7 +91,3 @@ Optionally, you can also customize the configuration of your Express Mode servic
    1. For **Amazon CloudWatch log stream prefix**, enter a preferred prefix for log streams. The default stream prefix is `ecs/Main/.`
 
 1. Under **Tags**, add key-value pairs to tag your resources. For **Key**, enter the tag key. For **Value**, enter the tag value. Choose **Add new item** to add more tags as needed. Tags can only be added on create.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

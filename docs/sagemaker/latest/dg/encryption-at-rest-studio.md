@@ -16,7 +16,3 @@ In the `CreateDomain` API, you use the `S3KmsKeyId` parameter to specify the cus
 
 **Important**
 The working directory of your users within the storage volume is `/home/sagemaker-user`. If you specify your own AWS KMS key, everything in the working directory is encrypted using your customer managed key. If you don't specify a AWS KMS key, the data inside `/home/sagemaker-user` is encrypted with an AWS managed key. Regardless of whether you specify an AWS KMS key, all of the data outside of the working directory is encrypted with an AWS Managed Key.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

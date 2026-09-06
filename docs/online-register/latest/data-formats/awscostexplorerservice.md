@@ -44,7 +44,3 @@ AWS Cost Explorer Service provides the following APIs for data retrieval.
 | <a name="ce-ListCostCategoryResourceAssociations"></a>[ListCostCategoryResourceAssociations](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_ListCostCategoryResourceAssociations.html) | Retrieve resource associations of all Cost Categories defined in the account | List |
 | <a name="ce-ListSavingsPlansPurchaseRecommendationGeneration"></a>[ListSavingsPlansPurchaseRecommendationGeneration](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_ListSavingsPlansPurchaseRecommendationGeneration.html) | Retrieve a list of your historical recommendation generations | List |
 | <a name="ce-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_ListTagsForResource.html) | List tags for a Cost Explorer resource | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

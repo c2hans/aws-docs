@@ -36,7 +36,3 @@ In addition to your AWS account, you need the Jira Service Management software i
 Before configuring your AWS connector, ensure you follow Atlassian recommendations for securing your Jira Service Management instances. For more information, see [Preventing Security Attacks](https://confluence.atlassian.com/adminjiraserver/preventing-security-attacks-938847893.html).
 
 The Connector for Jira Service Management add-on is available to download in the [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1221283/aws-service-catalog-connector-for-jsd).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

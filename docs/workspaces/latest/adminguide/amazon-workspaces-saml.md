@@ -74,7 +74,3 @@ The Web Access-initiated flow allows users to sign in to their WorkSpaces after 
 1. Users redirected to the WorkSpaces client application to complete sign in to their WorkSpace. WorkSpaces usernames are populated automatically from the IdP SAML 2.0 assertion. When you use [ certificate-based authentication (CBA)](certificate-based-authentication.md) , users are automatically signed in.
 
 1. Users are signed in to their WorkSpace.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

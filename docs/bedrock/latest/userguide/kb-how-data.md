@@ -95,7 +95,3 @@ Other examples of queries that a knowledge base can generate a table excerpt for
 + "top 5 lowest spending customers"
 
 The more specific or detailed a query is, the more the knowledge base can narrow down the exact information to return. For example, instead of the query "top 10 customers by spending in 2020", a more specific query is "find the 10 highest total purchased amount to date for customers in 2020". The specific query refers to the column name "Total Purchased Amount To Date" in the customers spending database table, and also indicates that the data should be sorted by "highest".
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

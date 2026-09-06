@@ -129,7 +129,3 @@ For more information about using the MPI and parameter server options per framew
 [MXNet Distributed Training](https://sagemaker.readthedocs.io/en/stable/frameworks/mxnet/using_mxnet.html#distributed-training) and [SageMaker AI MXNet Estimator](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html)'s `distribution` argument
 [PyTorch Distributed Training](https://sagemaker.readthedocs.io/en/stable/frameworks/pytorch/using_pytorch.html#distributed-pytorch-training) and [SageMaker AI PyTorch Estimator](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html)'s `distribution` argument
 [TensorFlow Distributed Training](https://sagemaker.readthedocs.io/en/stable/frameworks/tensorflow/using_tf.html#distributed-training) and [SageMaker AI TensorFlow Estimator](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html)'s `distribution` argument.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

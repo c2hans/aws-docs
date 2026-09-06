@@ -20,7 +20,3 @@ The following table describes the documentation releases for AWS Payment Cryptog
 | [Feature release](#doc-history) | Adding information on VPC endpoints(PrivateLink) and iCVV examples. | May 30, 2024 |
 | [Feature release](#doc-history) | Information added on new features around key import/export using RSA and exporting DUKPT IPEK/IK keys. | January 15, 2024 |
 | [Initial release](#doc-history) | Initial release of the AWS Payment Cryptography User Guide | June 8, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

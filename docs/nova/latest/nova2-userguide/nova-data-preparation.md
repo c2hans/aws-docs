@@ -19,7 +19,3 @@ This section provides data preparation guides for each training technique and mo
 Before submitting a fine-tuning job, we recommend validating your dataset to catch formatting issues early. You have two options:
 + **Dataset validation script** – A standalone Python script hosted on GitHub. See the [dataset validation script](https://github.com/aws-samples/amazon-nova-samples/tree/main/customization/bedrock-finetuning/understanding/dataset_validation).
 + **Amazon Nova Forge SDK** – Validation support is built into the SDK. See [Data preparation](https://github.com/aws/nova-forge-sdk#data-preparation) in the Amazon Nova Forge SDK README.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

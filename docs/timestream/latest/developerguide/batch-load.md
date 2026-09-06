@@ -23,7 +23,3 @@ In addition to batch load, you can write multiple records at the same time with 
 + [Using batch load with the AWS CLI](batch-load-using-cli.md)
 + [Using batch load with the AWS SDKs](batch-load-using-sdk.md)
 + [Using batch load error reports](batch-load-using-error-reports.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

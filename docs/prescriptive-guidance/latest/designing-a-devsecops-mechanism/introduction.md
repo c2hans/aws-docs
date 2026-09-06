@@ -16,7 +16,3 @@ Key questions that arise include:
 These are important questions, but they are incomplete. This guide seeks to provide additional tactical context for these questions and others. It aims to convert the traditional IaaS and iPaaS binary into more nuanced spectrums for implementation engineers, team leads, directors, and other decision-makers.
 
 Note: This guide provides scenarios that are based on first-hand experiences of large organizations after they implement DevOps mechanisms.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

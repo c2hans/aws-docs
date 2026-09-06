@@ -16,7 +16,3 @@ AWS Data Pipeline works with the following services to store data.
 AWS Data Pipeline works with the following compute services to transform data.
 + Amazon EC2 — Provides resizable computing capacity—literally, servers in Amazon's data centers—that you use to build and host your software systems. For more information, see *[Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/)*.
 + Amazon EMR — Makes it easy, fast, and cost-effective for you to distribute and process vast amounts of data across Amazon EC2 servers, using a framework such as Apache Hadoop or Apache Spark. For more information, see *[Amazon EMR Developer Guide](https://docs.aws.amazon.com/emr/latest/DeveloperGuide/)*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

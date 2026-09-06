@@ -62,7 +62,3 @@ As an alternative to HTTPS connections with Git credentials, you can allow Git t
 + To learn more about temporary credentials, see [Temporary security credentials in IAM](id_credentials_temp.md) and [Temporary Access to CodeCommit Repositories](https://docs.aws.amazon.com/codecommit/latest/userguide/temporary-access.html).
 
 The AWS CLI credential helper is not compatible with other credential helper systems, such as Keychain Access or Windows Credential Management. There are additional configuration considerations when you configure HTTPS connections with the credential helper. For more information, see [For HTTPS Connections on Linux, macOS, or Unix with the AWS CLI Credential Helper](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-https-unixes.html) or [HTTPS Connections on Windows with the AWS CLI Credential Helper](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-https-windows.html) in the *AWS CodeCommit User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

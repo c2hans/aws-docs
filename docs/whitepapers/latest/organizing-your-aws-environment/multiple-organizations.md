@@ -43,7 +43,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
  As noted in this section, an organization itself contains collective data from multiple accounts. Data such as account names, billing data, organizational unit names, and activity logs can be accessed centrally for those with appropriate permissions, such as a cloud administrator or audit team. This means that commingling of billing and logging data from accounts that are processing data might not meet a customer's requirements for separation by classification levels.
 
  An organization's configuration could be modified to have customized separation for protective marking with proper tags, logging customization (based on protective markings), and defined permissions for administrative users. However, this might be more easily achieved with separate organizations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

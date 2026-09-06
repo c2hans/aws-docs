@@ -177,7 +177,3 @@ This procedure also uses the following additional parameters.
 | `p_datafile` | varchar2 | A valid datafile ID number or a valid datafile name including complete path | — | Yes | The datafile ID number (from `v$datafile.file#`) or the full datafile name including the path (from `v$datafile.name`). |
 | `p_from_block` | number | A valid integer | `NULL` | No | The number of the block where the validation starts within the data file. When this is `NULL`, `1` is used. |
 | `p_to_block` | number | A valid integer | `NULL` | No | The number of the block where the validation ends within the data file. When this is `NULL`, the maximum block in the data file is used. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -203,7 +203,3 @@ For detailed deployment procedures — including `make bootstrap`, `make deploy 
 For the full data product catalog including technical names, partition schemes, and DataZone subscription patterns, see [Data products](data-products.md).
 
 For cross-product Athena query patterns and CVX agent integration, see `docs/cvx-integration-contract.md`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

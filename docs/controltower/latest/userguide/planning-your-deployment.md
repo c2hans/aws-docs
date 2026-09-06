@@ -72,7 +72,3 @@ For more information about how AWS Control Tower interacts with existing AWS Org
 If you're new to AWS Control Tower and you haven't worked with AWS Organizations, the best place to begin is with our [Setting up](setting-up.md) document.
 
 AWS Control Tower sets up an organization for you automatically when you don't have one set up.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

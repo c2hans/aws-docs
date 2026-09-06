@@ -23,7 +23,3 @@ Amazon Redshift offers JDBC, Python, and ODBC drivers for download. These driver
  For more information about how to download the JDBC and ODBC drivers and configure connections to your cluster, see [Configuring a connection for JDBC driver version 2.x for Amazon Redshift](jdbc20-install.md), [Amazon Redshift Python connector](python-redshift-driver.md), and [Configuring a connection for ODBC driver version 2.x for Amazon Redshift](odbc20-install.md).
 
 For more information about managing IAM identities, including best practices for IAM roles, see [Identity and access management in Amazon Redshift](redshift-iam-authentication-access-control.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

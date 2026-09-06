@@ -59,7 +59,3 @@ Complete the following steps to create an alias for your Amazon Lex bot.
 ![A Create Alias dialog box.](http://docs.aws.amazon.com/connect/latest/adminguide/images/bot-create-alias.png)
 
 For more information about versioning and aliasing in Amazon Lex V2, see [Versioning and aliases with your Lex V2 bot](https://docs.aws.amazon.com/lexv2/latest/dg/versions-aliases.html) in the *Amazon Lex V2 Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -79,7 +79,3 @@ If your domain is registered in multiple Agent Spaces and you are using HTTP rou
 <a name="_bypass_domain_ownership_verification"></a>
 
 Customers who have authorization to perform penetration testing on an endpoint but cannot complete ownership verification can request manual verification from us. Please open a customer support case to make this request. Your request must include your business use case and your justification for manual ownership verification (i.e., why you are authorized to perform penetration testing on the endpoint).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

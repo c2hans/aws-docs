@@ -37,7 +37,3 @@ You must meet the following prerequisites before you can create a new private re
 + You must sign up for an [Enterprise](https://aws.amazon.com/premiumsupport/plans/enterprise/) or [Enterprise On-Ramp](https://aws.amazon.com/premiumsupport/plans/enterprise-onramp/) Support Plan.
 + You must [enable AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/get-started-enable-identity-center.html) in the same Region where you want to set up your private re:Post.
 + You must create an AWS Identity and Access Management role that has the required permissions to create, manage, and resolve Support cases for you. The re:Post Private service uses this role to make API calls to Support. For more information, see [Manage access to Support case creation and management in re:Post Private](repost-manage-permissions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

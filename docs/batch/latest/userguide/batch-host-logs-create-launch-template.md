@@ -100,7 +100,3 @@ aws batch create-compute-environment \
 
 **Note**
 The metadata response hop limit is set to `2` in the launch template because applications running in job containers require an extra network hop to reach the IMDSv2 endpoint. Without this setting, IMDSv2 requests from containers fail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

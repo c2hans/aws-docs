@@ -63,7 +63,3 @@ You can create your secret using the [CreateSecret](https://docs.aws.amazon.com/
 Because the admin secret is of a different type (MongoDBAtlasServiceAccount) than the user secret (MongoDBAtlasDatabaseUser), the default rotation role policy scoped by `secretsmanager:resource/Type` will not grant access to the admin secret. You must explicitly provide the rotation role access to the admin secret by adding a statement scoped to the MongoDBAtlasServiceAccount type or by specifying the admin secret ARN directly in the role policy.
 
 During rotation, the driver generates a new password, calls the Atlas Admin API to update the database user's password, and verifies the new password by opening a real MongoDB connection to the cluster. Note that there is a propagation delay of 5-10 seconds after the password update before the new password is accepted by the cluster's authentication layer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

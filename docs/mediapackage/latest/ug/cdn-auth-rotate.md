@@ -20,7 +20,3 @@ If you change the CDN custom origin HTTP header value, you need to rotate the st
 1. Wait for your CDN to update fully with the new value before you send any requests through it to MediaPackage.
 
    To disable the previous secret value, save the new secret value two times. This way, both the current and previous secret versions have the same value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

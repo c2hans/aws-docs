@@ -20,7 +20,3 @@ To delete a packaging configuration, you can use the AWS Elemental MediaPackage 
 1. On the details page for the packaging group, under **Packaging configurations**, choose either the packaging configuration ID of the configuration that you're deleting and choose **Delete** or choose **Manage configurations**, **Actions**, **Delete**.
 
 1. On the **Delete packaging configurations** page, choose **Delete**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

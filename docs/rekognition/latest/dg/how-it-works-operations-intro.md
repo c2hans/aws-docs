@@ -56,7 +56,3 @@ The [API Reference](https://docs.aws.amazon.com/rekognition/latest/APIReference/
 The Amazon Rekognition service endpoints you can use are documented at [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#rekognition_region).
 
 When calling Amazon Rekognition with HTTP, use POST HTTP operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

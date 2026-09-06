@@ -14,7 +14,3 @@ When you publish a product on the AWS Data Exchange console, you must provide th
 + [Revision access rules in AWS Data Exchange](best-practices-revisions.md)
 + [Data dictionaries in AWS Data Exchange](data-dictionaries-pro.md)
 + [Sample data in AWS Data Exchange](samples-pro.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

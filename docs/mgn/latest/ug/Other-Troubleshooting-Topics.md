@@ -118,7 +118,3 @@ UEFI to UEFI boot mode is not supported with agentless replication.
 If you get the error `Source server boot mode is UEFI which is inconsistent with target instance.` It might be because
 + The OS uses an old UEFI format from kernel 3.8 or earlier. If so, set the source server boot mode to 'Legacy BIOS'.
 + You are performing UEFI to UEFI boot mode with agentless replication.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

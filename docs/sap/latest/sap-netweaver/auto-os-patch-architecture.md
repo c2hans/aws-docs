@@ -38,7 +38,3 @@ When you patch the operating system of an SAP application, lifecycle hooks can h
 For more information about lifecycle hooks, see the following documentation:
 +  [About the AWS-RunPatchBaselineWithHooks SSM document](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager-about-aws-runpatchbaseline.html) in the * AWS Systems Manager User Guide*
 +  [Orchestrating multi-step](https://aws.amazon.com/blogs/mt/orchestrating-custom-patch-processes-aws-systems-manager-patch-manager/) in the * AWS Cloud Operations & Migrations Blog*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

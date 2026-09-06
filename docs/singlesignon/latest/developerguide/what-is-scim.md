@@ -15,7 +15,3 @@ The IAM Identity Center SCIM implementation is based on SCIM [RFC 7642](https://
 The following sections contain examples of API requests and responses currently supported in the IAM Identity Center SCIM implementation, along with important notes and constraints to consider in your design.
 
 Before you begin, we recommend that you first review [Considerations for using automatic provisioning](https://docs.aws.amazon.com/singlesignon/latest/userguide/provision-automatically.html#auto-provisioning-considerations) in the *IAM Identity Center User Guide*. That topic instructs you how to use SCIM to enable automatic provisioning in IAM Identity Center. You will need to follow those instructions to retrieve your SCIM endpoint and access token.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Identity Center SCIM Implementation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -163,7 +163,3 @@ Follow the same export path described in the Video Search section. Your data is 
 
 **Important**
 While your Overall Quality Score is an indicator for how ready your dataset is for model training or validation, these are AI-generated predictions based on patterns in data. You are responsible for evaluating your datasets for accuracy as appropriate for your use case, including by employing human review.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

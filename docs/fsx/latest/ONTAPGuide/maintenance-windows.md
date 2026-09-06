@@ -36,7 +36,3 @@ You can use the Amazon FSx Management Console, AWS CLI, AWS API, or one of the A
 1. Choose **Save** to save your changes. The new maintenance start time is displayed in the file system administration **Settings** panel.
 
 To change the weekly maintenance window using the [update-file-system](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html) CLI command, see [To update a file system (CLI)](updating-file-system.md#update-file-system-cli).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

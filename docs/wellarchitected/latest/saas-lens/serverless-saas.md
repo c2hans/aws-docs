@@ -28,7 +28,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/serverl
  Finally, on the right-hand side of this diagram, you’ll see a series of shared services. These services deliver all the functionality that is shared by all of the tenants that are running in the left-hand side of the diagram. These services represent common services that are typically built as separate microservices that are needed to onboard, manage, and operate tenants.
 
  More information on general serverless well-architected best practices can be found in the [Serverless Applications Lens whitepaper](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

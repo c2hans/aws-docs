@@ -93,7 +93,3 @@ HealthImaging enforces strict timing requirements for Lambda authorizer response
 + OIDC authentication can **only** be enabled when creating a **new** datastore
 + Enabling OIDC for existing datastores is not supported through the API
 + To enable OIDC on an existing datastore, customers must contact AWS Support
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

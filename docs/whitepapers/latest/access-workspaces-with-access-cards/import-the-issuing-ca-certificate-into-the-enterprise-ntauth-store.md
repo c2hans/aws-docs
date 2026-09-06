@@ -36,7 +36,3 @@ certutil -enterprise -addstore NTAuth issuing_ca_name.cer
 ![A screenshot showing the import of the issuing CA certificate into Enterprise NTAuth store.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard12.png)
 
 * Import the issuing CA certificate into Enterprise NTAuth store *
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

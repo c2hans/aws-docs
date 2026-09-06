@@ -23,7 +23,3 @@ This section contains the following topics, which provide additional information
 + [Provide guest access](guest-access.md) - Learn how to configure your gateway to allow guest access for any user that provides the correct guest account username and password.
 + [Configure local groups](local-group-settings.md) - Learn how to configure local groups to grant Active Directory users special file share permissions.
 + [Set file share visibility](file-share-visibility.md) - Learn how to specify whether the shares on a gateway are visible when listing shares to users.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

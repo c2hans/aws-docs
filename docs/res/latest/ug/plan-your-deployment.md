@@ -138,7 +138,3 @@ Research and Engineering Studio on AWS is supported in the following AWS Regions
 | South America (São Paulo) | sa-east-1 | yes | yes |
 | AWS GovCloud (US-East) | us-gov-east-1 | yes | yes |
 | AWS GovCloud (US-West) | us-gov-west-1 | yes | yes |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

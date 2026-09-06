@@ -20,7 +20,3 @@ MediaTailor always signs requests to these origins with SigV4.
 + The **mediatailor.amazonaws.com** service principal must have permissions to read all multivariant playlists referenced by the VOD source package configurations.
 + The caller of the API must have **s3:GetObject** IAM permissions to read all multivariant playlists referenced by your MediaTailor VOD source package configurations.
 + Your MediaTailor source location base URL must follow the Amazon S3 virtual hosted-style request URL format. For example, https://{{bucket-name}}.s3.{{Region}}.amazonaws.com/{{key-name}}. For information about Amazon S3 hosted virtual-style access, see [Virtual Hosted-Style Requests](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#virtual-hosted-style-access).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

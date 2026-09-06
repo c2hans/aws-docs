@@ -205,7 +205,3 @@ There are also several third-party tools that are available, including the follo
 <a name="attachments-a30cf791-7a8a-4f71-8927-bc61f3b332f2"></a>
 
 To access additional content that is associated with this document, download and unzip the following file: [attachment.zip](samples/p-attach/a30cf791-7a8a-4f71-8927-bc61f3b332f2/attachments/attachment.zip)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

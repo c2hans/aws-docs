@@ -65,7 +65,3 @@ For some customers, it might be the case that the source and target platforms ha
  Incremental backup is supported only for the same platforms, and from big endian platforms to Linux OS only. Following is the typical flow for migration using incremental backups when using XTTS.
 
 ![Diagram showing the typical flow for migration using incremental backups using XTTS](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/typical-migration-flow-using-xtts.jpg)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

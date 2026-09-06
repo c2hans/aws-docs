@@ -31,7 +31,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 <a name="masec03-bp05"></a>
 
  AWS encourages you to use automation to help quickly detect and respond to security events within your AWS environments. In addition to increasing the speed of detection and response, automation also helps you scale your security operations as you expand your workloads running on AWS. Do you have automation process defined on both organizations?
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

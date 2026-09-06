@@ -61,7 +61,3 @@ For an IAM principal to view Kubernetes resources in Amazon EKS console, the pri
    ```
 
 To view Kubernetes resources in your connected cluster, see [View Kubernetes resources in the AWS Management Console](view-kubernetes-resources.md). Data for some resource types on the **Resources** tab isn’t available for connected clusters.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

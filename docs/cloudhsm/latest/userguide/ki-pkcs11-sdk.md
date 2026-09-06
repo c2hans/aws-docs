@@ -135,7 +135,3 @@ When you exceed rate limits for certificate storage operations, the PKCS \#11 li
 + **Impact: **A throttled certificate storage operation returns an error to your application instead of being retried automatically.
 + **Workaround: **Retry throttled certificate storage operations in your application with exponential backoff. If throttling persists, add more HSMs to your cluster to increase the total read and write rate, or reduce your request rate. For more information, see [HSM throttling](troubleshoot-hsm-throttling.md).
 + **Resolution status: **This issue has been resolved in [Client SDK 5.18.0](latest-releases.md#client-version-5-18-0). The PKCS \#11 library now automatically retries throttled certificate storage operations. Upgrade to version 5.18.0 or later to benefit from the fix.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

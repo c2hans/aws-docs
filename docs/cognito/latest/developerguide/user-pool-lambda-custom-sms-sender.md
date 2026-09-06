@@ -182,7 +182,3 @@ When you deploy this solution to a user pool, all messages that Amazon Cognito u
 
 **Important**
 Don't use the templates in [amazon-cognito-user-pool-development-and-testing-with-sms-redirected-to-email](https://github.com/aws-samples/amazon-cognito-user-pool-development-and-testing-with-sms-redirected-to-email) to build a production environment. The custom SMS sender Lambda function in the solution *simulates* SMS messages, but the Lambda function sends them all to a single central email address. Before you can send SMS messages in a production Amazon Cognito user pool, you must complete the requirements shown at [SMS message settings for Amazon Cognito user pools](user-pool-sms-settings.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

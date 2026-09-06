@@ -149,7 +149,3 @@ The following table provides information about important JSON keys to configure 
 | deletionProtectionConfiguration | Optional configuration to protect against accidental deletion of large amounts of content. |
 | enableDeletionProtection | A Boolean value to enable deletion protection. When enabled, the connector will not delete more than the specified threshold of documents in a single sync. |
 | deletionProtectionThreshold | The maximum percentage of documents that can be deleted in a single sync when deletion protection is enabled. Specify as a string containing a number from 1 to 100. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

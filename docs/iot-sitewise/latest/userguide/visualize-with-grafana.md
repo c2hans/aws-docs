@@ -222,7 +222,3 @@ For more information about visualizing data, see the following resources:
 + [Process and visualize data with SiteWise Edge and open-source tools](open-source-edge-integrations.md)
 + [Users, teams, and permissions](https://docs.aws.amazon.com/grafana/latest/userguide/Grafana-administration-authorization.html) in the *Amazon Managed Grafana User Guide*
 + [Amazon Managed Grafana permissions and policies for AWS data sources](https://docs.aws.amazon.com/grafana/latest/userguide/AMG-manage-permissions.html) in the *Amazon Managed Grafana User Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

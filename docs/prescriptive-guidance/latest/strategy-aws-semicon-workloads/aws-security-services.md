@@ -15,7 +15,3 @@ The following AWS services and features can help you manage access and policies,
 + [Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/what-is-security-lake.html) automatically centralizes security data from cloud, on-premises, and custom sources into a purpose-built data lake stored in your AWS account. You can query and analyze this security data to discover trends and anomalies.
 + [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) are a type of policy in AWS Organizations that helps you centrally manage the use of AWS services across multiple accounts.
 + [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html) is a feature of Amazon Virtual Private Cloud (Amazon VPC) that captures information about the IP traffic going to and from network interfaces in your VPC. You can use this data to troubleshoot and respond to incidents.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

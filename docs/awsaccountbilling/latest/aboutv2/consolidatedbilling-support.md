@@ -10,7 +10,3 @@ AWS calculates Support fees independently for each member account. Typically a S
 **Note**
 When you sign in as a bill source account, your support plan charges don't appear in your pro forma Cost Explorer, AWS Cost and Usage Report, or Bills page by default. The bill transfer account must enable you to view support plan charges by modeling these charges using Billing Conductor custom line items.
 Billing transfer doesn't affect how your support charges are calculated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

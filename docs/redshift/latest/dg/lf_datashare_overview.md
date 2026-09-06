@@ -13,7 +13,7 @@ With Amazon Redshift, you can access and share live data across AWS accounts and
 
 You can also use tags in Lake Formation to configure permissions on Lake Formation resources. For more information, see [Lake Formation Tag-based access control](https://docs.aws.amazon.com/lake-formation/latest/dg/tag-based-access-control.html).
 
- Amazon Redshift currently supports data sharing via Lake Formation when sharing within the same account or across accounts. Cross-Region sharing is currently not supported.
+ Amazon Redshift currently supports data sharing through Lake Formation when sharing within the same account or across accounts. Cross-Region sharing is currently not supported.
 
 The following is a high-level overview of how to use Lake Formation to control datashare permissions:
 
@@ -34,7 +34,3 @@ The following is a high-level overview of how to use Lake Formation to control d
 1. When the producer cluster or workgroup administrator decides to no longer share the data with the consumer cluster, the producer administrator can revoke usage, deauthorize, or delete the datashare from Redshift. The associated permissions and objects in Lake Formation are not automatically deleted.
 
 For more information about sharing a datashare with AWS Lake Formation as a producer cluster or workgroup administrator, see [Working with Lake Formation-managed datashares as a producer](lake-formation-getting-started-producer.md). To consume the shared data from the producer cluster or workgroup, see [Working with Lake Formation-managed datashares as a consumer](lake-formation-getting-started-consumer.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

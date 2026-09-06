@@ -177,7 +177,3 @@ Follow these steps to create the publish action in your pipeline.
 1. In the upper right, choose **Save**.
 
 1. To verify your pipeline, make a change to your application in GitHub. For example, change the application's description in the `Metadata` section of your AWS SAM template file. Commit the change and push it to your GitHub branch. This triggers your pipeline to run. When the pipeline is complete, check that your application has been updated with your change in the [AWS Serverless Application Repository](https://console.aws.amazon.com/serverlessrepo/home).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

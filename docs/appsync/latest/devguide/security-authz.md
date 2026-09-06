@@ -500,7 +500,7 @@ At the schema level, you can specify additional authorization modes using direct
 +  `@aws_cognito_user_pools` - To specify that the field is `AMAZON_COGNITO_USER_POOLS` authorized.
 +  `@aws_lambda` - To specify that the field is `AWS_LAMBDA` authorized.
 
-You can’t use the `@aws_auth` directive along with additional authorization modes. `@aws_auth` works only in the context of `AMAZON_COGNITO_USER_POOLS` authorization with no additional authorization modes. However, you can use the `@aws_cognito_user_pools` directive in place of the `@aws_auth` directive, using the same arguments. The main difference between the two is that you can specify `@aws_cognito_user_pools` on any field and object type definitions.
+You can't use the `@aws_auth` directive along with additional authorization modes. Instead, use the `@aws_cognito_user_pools` directive in place of `@aws_auth`, with the same arguments. Unlike `@aws_auth`, you can specify `@aws_cognito_user_pools` on any field or object type definition. AWS AppSync enforces `@aws_cognito_user_pools` only when your API uses additional authorization modes. When your API uses `AMAZON_COGNITO_USER_POOLS` authorization with no additional authorization modes, AWS AppSync enforces `@aws_auth` instead.
 
 To understand how the additional authorization modes work and how they can be specified on a schema, let’s have a look at the following schema:
 
@@ -702,7 +702,3 @@ AWS AppSync communicates with data sources using Identity and Access Management 
 ------
 
 It’s important to scope down the access policy on the role to only have permissions to act on the minimal set of resources necessary. When using the AppSync console to create a data source and create a role, this is done automatically for you. However when using a built in sample template from the IAM console to create a role outside of the AWS AppSync console the permissions will not be automatically scoped down on a resource and you should perform this action before moving your application to production.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

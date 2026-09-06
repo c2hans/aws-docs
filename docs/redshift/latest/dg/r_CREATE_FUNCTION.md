@@ -46,7 +46,7 @@ If you define a function with the same name as an existing function but a differ
 
  *f\_function\_name*
 The name of the function. If you specify a schema name (such as `myschema.myfunction`), the function is created using the specified schema. Otherwise, the function is created in the current schema. For more information about valid names, see [Names and identifiers](r_names.md).
-We recommend that you prefix all UDF names with `f_`. Amazon Redshift reserves the `f_` prefix for UDF names, so by using the `f_` prefix, you ensure that your UDF name will not conflict with any existing or future Amazon Redshift built-in SQL function names. For more information, see [Preventing UDF naming conflicts](udf-naming-udfs.md).
+We recommend that you prefix all UDF names with `f_`. Amazon Redshift reserves the `f_` prefix for UDF names, so by using the `f_` prefix, you make sure that your UDF name will not conflict with any existing or future Amazon Redshift built-in SQL function names. For more information, see [Preventing UDF naming conflicts](udf-naming-udfs.md).
 You can define more than one function with the same function name if the data types for the input arguments are different. In other words, the function name is overloaded. For more information, see [Overloading function names](udf-naming-udfs.md#udf-naming-overloading-function-names).
 
  *py\_arg\_name py\_arg\_data\_type \| sql\_arg\_data\_type*
@@ -189,7 +189,3 @@ The following query calls the new `f_sql_greater` function to query the SALES ta
 ```
 select f_sql_greater (commission, pricepaid*0.20) from sales;
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ Amazon Q currently accepts English prompts for the issues shown in the following
 | Amazon ECR | Secondary account access issues | I'm having difficulty granting access to an Amazon ECR image repository from a different AWS account. Specifically, I need to allow account 222222222222 to push and pull images from the repository named "my-ecr-repo" in my account (111111111111) in the region (us-west-2). |
 
 For Amazon Q to troubleshoot your resources, you'll need the same permissions as those outlined in [Chatting about your resources with Amazon Q Developer](chat-actions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

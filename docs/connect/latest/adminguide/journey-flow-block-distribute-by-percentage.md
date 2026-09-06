@@ -24,7 +24,3 @@ When a profile is being routed through a flow, Amazon Connect generates the rand
 + If number is between 0-20, the contact is routed down the A branch.
 + Between 21-60 it's routed down the B branch.
 + Greater than 60 it's routed down the Default branch.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

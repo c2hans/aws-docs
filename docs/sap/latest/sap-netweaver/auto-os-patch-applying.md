@@ -36,7 +36,3 @@ After the patch baseline has run, you can view the patch status in Patch Manager
 Patch compliance reports allow you to view the status of managed nodes. For more information about compliance reports, including detailed instructions on how to view them, see the following documentation:
 +  [Working with patch compliance reports](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-compliance-reports.html) in the * AWS Systems Manager User Guide*
 +  [Viewing patch compliance results (console)](https://docs.aws.amazon.com/systems-manager/latest/userguide/viewing-patch-compliance-results.html) in the * AWS Systems Manager User Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -44,7 +44,3 @@ Before creating a DB instance, consider the following items:
     + You want to modify the `db2_compatibility_vector` parameter. For more information, see [Setting the db2\_compatibility\_vector parameter](db2-known-issues-limitations.md#db2-known-issues-limitations-db2-compatibility-vector).
 + In the bring your own license (BYOL) model, you must first create a custom parameter group that contains your IBM Customer ID and your IBM Site ID. For more information, see [Bring your own license (BYOL) for Db2](db2-licensing.md#db2-licensing-options-byol).
 + In the Db2 license through AWS Marketplace model, you need an active AWS Marketplace subscription for the particular IBM Db2 edition that you want to use. If you don't already have one, [subscribe to Db2 in AWS Marketplace](db2-licensing.md#db2-marketplace-subscribing-registering) for the IBM Db2 edition that you want to use. For more information, see [Db2 license through AWS Marketplace](db2-licensing.md#db2-licensing-options-marketplace).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

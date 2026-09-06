@@ -18,7 +18,3 @@ Maintain a balance where team members are adequately challenged without feeling 
 + [[OA.BCL.8] Determine team sizes based on cognitive capacity](oa.bcl.8-determine-team-sizes-based-on-cognitive-capacity.md)
 + [[OA.BCL.9] Use guiding principles to make consistent team decisions](oa.bcl.9-use-guiding-principles-to-make-consistent-team-decisions.md)
 + [[OA.BCL.10] Make informed decisions using data](oa.bcl.10-make-informed-decisions-using-data.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

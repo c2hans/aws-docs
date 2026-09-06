@@ -67,7 +67,3 @@ For more information about the analysis rules that are available in AWS Clean Ro
 + [Aggregation analysis rule](analysis-rules-aggregation.md)
 + [List analysis rule](analysis-rules-list.md)
 + [Custom analysis rule in AWS Clean Rooms](analysis-rules-custom.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

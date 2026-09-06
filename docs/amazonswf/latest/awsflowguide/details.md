@@ -138,7 +138,3 @@ Because the framework relies on replay, it is important that the orchestration c
 
 **Note**
 Incorrect Spring wiring of workflow implementation objects can also lead to nondeterminism. Workflow implementation beans as well as beans that they depend on must be in the workflow scope (`WorkflowScope`). For example, wiring a workflow implementation bean to a bean that keeps state and is in the global context will result in unexpected behavior. See the [Spring Integration](test.md#test.spring) section for more details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

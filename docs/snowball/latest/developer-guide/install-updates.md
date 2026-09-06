@@ -185,7 +185,3 @@ Restarting the Snowball Edge device without stopping all activity on the device 
 1. After each device in the cluster has rebooted twice, unlock the cluster then use the `check-for-updates` command to verify the device was updated. This command returns the latest available version of the Snowball Edge software, and also the current version that is installed on the device. If the current version and the latest available version are the same, the device was updated successfully.
 
 You have now successfully updated the Snowball Edge or cluster of devices and confirmed that the update to the latest Snowball Edge software.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

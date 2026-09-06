@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 
 Tools are declarative. You list what the agent can call; AgentCore handles invocation, credentials, and results. The harness supports five tool types, plus the built-in filesystem and shell tools.
 +  **MCP servers:** Connect to any remote [Model Context Protocol](https://modelcontextprotocol.io) endpoint by URL. No Gateway required for simple cases.
-+  ** [AgentCore Gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html):** Governed connectivity to APIs and MCP servers with inbound/outbound auth, access control, and [policy enforcement](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html). Reference a gateway ARN and every tool configured on that gateway becomes available. Use Gateway when you need a managed, policy-backed tool surface.
-+  ** [AgentCore Browser](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-tool.html):** Managed web browsing and automation.
-+  ** [AgentCore Code Interpreter](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-interpreter-tool.html):** Sandboxed Python/JavaScript/TypeScript code execution for data analysis and computation.
++  ** [AgentCore Gateway](gateway.md):** Governed connectivity to APIs and MCP servers with inbound/outbound auth, access control, and [policy enforcement](policy.md). Reference a gateway ARN and every tool configured on that gateway becomes available. Use Gateway when you need a managed, policy-backed tool surface.
++  ** [AgentCore Browser](browser-tool.md):** Managed web browsing and automation.
++  ** [AgentCore Code Interpreter](code-interpreter-tool.md):** Sandboxed Python/JavaScript/TypeScript code execution for data analysis and computation.
 +  **Inline functions:** Tool schemas that execute on the client side, not on the harness VM. The harness pauses when the tool is called and returns the call to your code, which decides what to do and sends a result back. This is the pattern for human-in-the-loop approvals and custom integrations.
 
 Default tools `shell` and `file_operations` are available in every session unless you restrict them with `allowedTools`. `shell` executes bash commands; `file_operations` supports viewing, creating, and editing files.
@@ -131,11 +131,16 @@ The `--type` flag uses underscore-separated names (for example, `agentcore_brows
 agentcore add tool --harness my-agent --type remote_mcp \
   --name exa --url https://mcp.exa.ai/mcp
 
-# Add a remote MCP server with an API key from AgentCore Identity Token Vault.
-# Use ${arn:...} syntax in header values to reference a credential provider.
-agentcore add tool --harness my-agent --type remote_mcp \
-  --name exa-secure --url https://mcp.exa.ai/mcp \
-  --header 'x-api-key=${arn:aws:bedrock-agentcore:us-west-2:123456789012:token-vault/default/apikeycredentialprovider/my-exa-key}'
+# Create a harness with a remote MCP server and request headers.
+# Use ${arn:...} syntax to reference a credential provider.
+agentcore add harness \
+  --name secure_agent \
+  --model-provider bedrock \
+  --model-id us.anthropic.claude-sonnet-4-5-20250514-v1:0 \
+  --tools remote_mcp \
+  --mcp-name exa-secure \
+  --mcp-url https://mcp.exa.ai/mcp \
+  --mcp-headers '{"x-api-key":"${arn:aws:bedrock-agentcore:us-west-2:123456789012:token-vault/default/apikeycredentialprovider/my-exa-key}"}'
 
 # Add Browser
 agentcore add tool --harness my-agent --type agentcore_browser --name browser
@@ -161,7 +166,7 @@ Deploy to apply.
 Override tools on a single invocation:
 
 ```
-agentcore invoke --harness research-agent --tools agentcore-browser "Find the latest news on AI agents"
+agentcore invoke --harness research-agent --tools agentcore_browser "Find the latest news on AI agents"
 ```
 Run `agentcore` in a project directory, select **add** , choose **Harness** , and advance to **Advanced settings** . Enable **Tools** with **Space** , then press **Enter** .
 
@@ -331,9 +336,9 @@ Then define the description and input schema in `app/my-agent/harness.json`:
 Run `agentcore deploy` to apply. When the agent calls the inline function during an invocation, the TUI pauses and prompts you to provide the tool result inline. In non-interactive (CLI) mode, the stream returns with `stopReason: "tool_use"` and you send the result back with a follow-up invoke call.
 
 Learn more about each tool:
-+  [AgentCore Gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html) · [create a gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-create.html) · [policies](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html)
-+  [AgentCore Browser](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-tool.html) · [browser profiles](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-profiles.html) · [session recording](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-session-recording.html)
-+  [AgentCore Code Interpreter](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-interpreter-tool.html) · [preinstalled libraries](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-interpreter-preinstalled-libraries.html)
++  [AgentCore Gateway](gateway.md) · [create a gateway](gateway-create.md) · [policies](policy.md)
++  [AgentCore Browser](browser-tool.md) · [browser profiles](browser-profiles.md) · [session recording](browser-session-recording.md)
++  [AgentCore Code Interpreter](code-interpreter-tool.md) · [preinstalled libraries](code-interpreter-preinstalled-libraries.md)
 
 ### Related topics
 <a name="_related_topics"></a>
@@ -341,7 +346,3 @@ Learn more about each tool:
 +  [Environment and filesystem](harness-environment.md) - bring your own container and run shell commands
 +  [Security and access controls](harness-security.md) - control which tools the agent can access with policies
 +  [API Documentation](harness-get-started.md#api-documentation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

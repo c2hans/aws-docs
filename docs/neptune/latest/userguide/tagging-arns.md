@@ -75,7 +75,3 @@ To get an ARN for a particular Neptune resource, call the following API actions 
 |  [DescribeDBSubnetGroups](API_DescribeDBSubnetGroups.html) | DBSubnetGroupArn |
 |  [DescribeDBClusters](API_DescribeDBClusters.html) | DBClusterArn |
 |  [DescribeDBClusterSnapshots](API_DescribeDBClusterSnapshots.html) | DBClusterSnapshotArn |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

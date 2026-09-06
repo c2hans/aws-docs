@@ -369,7 +369,3 @@ Verify your VPC peering connections and that the Active Directory registrations 
 **Cause:** A VPC endpoint already exists in the VPC from a different Active Directory registration. New registrations that share the same VPC endpoint VPC must use identical subnet and security group settings.
 
 **Solution:** Use the same subnets and security group as the existing registered identity provider configuration. You can view the current configuration in the License Manager console under Settings, or by using the ListIdentityProviders API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

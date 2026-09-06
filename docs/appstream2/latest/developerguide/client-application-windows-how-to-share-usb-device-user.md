@@ -22,7 +22,3 @@ If you are using a drawing tablet, USB redirection might not be required to use 
 USB devices can't be simultaneously used between local and remote applications. So after you share a USB device with a streaming session, you can't use it with applications on your local computer. To use your USB device on your local computer, switch the **Share** toggle key next to the name of the USB device that you want to use locally. This disables sharing with the streaming session.
 
 1. You can also enable your USB device to automatically connect when a new streaming session starts. To do so, select the option next to the toggle key for the USB device that you want to connect. After you enable this option, when your next streaming session starts, the USB device is connected automatically.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ A. There is initial quota of 20 global secondary indexes per table. If you want 
 A. You can add or modify up to 100 items (or 4 MB of data) per transaction. If you want to write more than 100 records to a table, you can use batched write operations.
 
 For a full list of quotas, see [Quotas in Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html) in the DynamoDB documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

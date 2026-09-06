@@ -37,7 +37,3 @@ You can also use [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormat
 + [Use IAM policies in permission sets](howtocmp.md)
 + [Remove permission sets in IAM Identity Center](howtoremovepermissionset.md)
 + [Delete permission sets in IAM Identity Center](howtodeletepermissionset.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

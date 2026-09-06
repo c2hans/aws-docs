@@ -71,7 +71,3 @@ The right storage and compute solution for vehicular data depends on a variety o
 +  Implement automatic scaling for compute resources like EC2 instances to dynamically adjust capacity based on demand: Automatic scaling helps ensure that you have the right number of resources at any given time, optimizing costs by only paying for what you use.
 +  Reserved Instances or Savings Plans: If you have predictable workloads, consider purchasing AWS Reserved Instances or Savings Plans. These offer upfront cost savings and discounted pricing compared to On-Demand Instances.
 + AWS cost management tools: Set up AWS Budgets and cost alarms to receive notifications when your spending exceeds predefined thresholds, helping you maintain better control over costs.* *
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

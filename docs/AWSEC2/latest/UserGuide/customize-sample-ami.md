@@ -50,7 +50,3 @@ If needed, you can include your own custom scripts in the image description to p
 To include custom scripts in your image description, you need to name them correctly based on the type of script, and add them to the same directory as the `appliance.kiwi` file. KIWI NG automatically detects and executes the scripts if they are named correctly and placed in the correct location, without the need to explicitly reference them in the image description file.
 
 For more information about the scripts supported by KIWI NG, see [User-Defined Scripts](https://osinside.github.io/kiwi/concept_and_workflow/shell_scripts.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

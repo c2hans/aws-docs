@@ -336,7 +336,3 @@ There are three distinct groups of timecode settings. Global job timecode config
 1. Optionally, specify job-wide timecode settings in the **Timecode configuration** pane.
 
 1. Specify values for the other job settings and enable global processors. For more information about individual settings, choose the **Info** link next to each setting.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

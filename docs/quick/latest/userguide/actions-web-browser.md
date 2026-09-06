@@ -317,7 +317,3 @@ Closes and reopens the browser. A new session starts from a blank page.
 <a name="web-browser-limitations"></a>
 
 **Element Identification Uncertainty**: If the AI cannot reliably identify UI elements, actions fail with 'LowConfidence' errors. In these cases, use more specific XPath selectors or element descriptions. **Browser Compatibility**: The system operates exclusively with Chrome browser instances and utilizes Playwright as the underlying automation framework, which means compatibility is limited to Chrome-supported web technologies and may not work with browser-specific features from other vendors. **Dynamic Content Challenges**: Highly dynamic pages with frequent layout changes, heavy JavaScript frameworks, or complex single-page applications may require additional wait times, retry logic, or specialized handling approaches. **Performance Overhead**: AI-powered features like natural language element targeting and self-healing capabilities require more processing time than direct XPath targeting.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

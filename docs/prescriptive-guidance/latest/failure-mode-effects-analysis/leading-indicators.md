@@ -84,7 +84,3 @@ These metrics track whether identified risks are being addressed on time and whe
 + **Target**:** **Minimum 50% reduction for high-priority risks
 + **Calculation**:** **((Original RPN - Post-mitigation RPN) / Original RPN) × 100
 + **Frequency**:** **Monthly assessment of completed mitigations
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

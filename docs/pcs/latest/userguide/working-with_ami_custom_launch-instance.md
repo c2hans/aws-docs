@@ -28,7 +28,3 @@ Launch a temporary instance that you can use to install and configure the AWS PC
 1.  In the **Storage** section, configure the volumes as needed. Make sure to configure sufficient space to install your own applications and libraries.
 
 1.  In the **Summary** panel, choose **Launch instance**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

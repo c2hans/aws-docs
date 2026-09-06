@@ -27,7 +27,3 @@ This section discusses important considerations to keep in mind when you impleme
 + **Testing** – Regularly test your logging setup, especially after cluster upgrades.
 + **Documentation** – Maintain clear documentation of your logging architecture and practices.
 + **Log aggregation latency** – Be aware of any latency in log aggregation and how it might affect real-time monitoring.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -63,7 +63,3 @@ Each Region is designed to be completely isolated from the other Regions. Within
 For a table of AWS products and services by region, see [Products and services by Region](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/).
 
 For a table of supported Availability Zones within Regions, see [Subnets and subnet groups](subnetgroups.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

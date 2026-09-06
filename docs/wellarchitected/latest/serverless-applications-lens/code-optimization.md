@@ -28,7 +28,3 @@ The next diagram shows that by querying Athena to get the specific data, we redu
 |   *200 seconds*   |  *95 seconds*  |
 | --- | --- |
 |  <pre># Download and process all keys<br /><br />for key in src_keys:<br /><br />response = s3_client.get_object(Bucket=src_bucket, Key=key)<br /><br />contents = response['Body'].read()<br /><br />for line in contents.split('\n')[:-1]:<br /><br />line_count +=1<br /><br />try:<br /><br />data = line.split(',')<br /><br />srcIp = data[0][:8]<br /><br />…</pre>  |  <pre># Select IP Address and Keys<br /><br />for key in src_keys:<br /><br />response = s3_client.select_object_content<br /><br />(Bucket=src_bucket, Key=key, expression =<br /><br />SELECT SUBSTR(obj._1, 1, 8), obj._2 FROM<br />s3object as obj)<br /><br />contents = response['Body'].read()<br /><br />for line in contents:<br /><br />line_count +=1<br /><br />try:<br /><br />…</pre>  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

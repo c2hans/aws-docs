@@ -392,7 +392,3 @@ The following resources can help you learn more about topics in this tutorial:
 <a name="tutorial_cross-account-with-roles-summary"></a>
 
 You have completed the cross-account API access tutorial. You created a role to establish trust with another account and defined what actions trusted entities can take. Then, you modified a role policy to control which IAM users can access the role. As a result, developers from the **Originating** account can make updates to the `amzn-s3-demo-bucket-shared-container` bucket in the **Destination** account by using temporary credentials.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

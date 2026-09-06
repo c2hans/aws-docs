@@ -27,7 +27,3 @@ You must be authorized to use this feature. If you are not authorized, the funct
    + If you're using the Linux or macOS clients, the downloaded file is automatically opened with the default associated application.
 **Note**
 The file is deleted from the Amazon DCV server after you have downloaded it, and it's no longer available for download.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

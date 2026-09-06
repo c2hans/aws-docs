@@ -129,7 +129,3 @@ ENA adapters all use the same driver. If you have multiple ENA adapters, you can
 1. To roll back the driver, open the **Driver** tab and choose **Roll Back Driver**. This opens the **Driver Package rollback** window.
 **Note**
 If the **Driver** tab doesn't show the **Roll Back Driver** action, or if the action is unavailable, it means that the [Driver Store](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/driver-store) on your instance doesn't contain the previously installed driver package. To troubleshoot this issue, see [Troubleshooting scenarios](troubleshoot-ena-driver.md#ts-ena-drv-scenarios), and expand the **Unexpected ENA driver version installed** section. For more information about the device driver package selection process, see [How Windows selects a driver package for a device](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/how-windows-selects-a-driver-for-a-device) on the *Microsoft documentation website*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

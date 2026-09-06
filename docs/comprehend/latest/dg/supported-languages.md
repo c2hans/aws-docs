@@ -51,7 +51,3 @@ For more information about RFC 5646, see [Tags for identifying languages](https:
 | [Topic modeling](topic-modeling.md) | Not dependent on the language used. Doesn't support character-based languages such as Chinese, Japanese, and Korean. |
 | [Custom classification](how-document-classification.md) | Plain-text models support the following languages: German (de), English (en), Spanish (es), French (fr), Italian (it), and Portuguese (pt).<br />[Native document models](training-classifier-model.md) support English documents only. |
 | [Custom entity recognition](custom-entity-recognition.md) | German (de), English (en), Spanish (es), French (fr), Italian (it), and Portuguese (pt).<br />Custom Entity Recognition for PDF and Word supports English documents only. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

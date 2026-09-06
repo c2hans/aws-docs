@@ -29,7 +29,3 @@ Deleting an App Studio instance also deletes all App Studio resources, such as a
 1. Enter **confirm** and choose **Delete**.
 
 1. It may take a while for your instance deletion to process. Once it has been deleted, you will receive a confirmation email. Once you receive the email, you can create another instance if desired.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ We continue to provide usability and security fixes with every release. We stron
 | 1.0.2 |  +  Added support for OpenVPN flags: connect-retry-max, dev-type, keepalive, ping, ping-restart, pull, rcvbuf, server-poll-timeout. <br />+  Minor bug fixes and enhancements.   | September 28, 2021 | No longer supported. |
 | 1.0.1 |  +  Enabled option to quit from Ubuntu application bar. <br />+  Added support for OpenVPN flags: inactive, pull-filter, route. <br />+  Minor bug fixes and enhancements.   | August 4, 2021 | No longer supported. |
 | 1.0.0 | The initial release. | June 11, 2021 | No longer supported. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

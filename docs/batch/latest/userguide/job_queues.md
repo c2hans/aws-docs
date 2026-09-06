@@ -19,7 +19,3 @@ For Amazon ECS Managed Instances job queues that include both On-Demand and Spot
 + [Quota management](quota-management.md)
 + [Track service job capacity utilization](track-capacity-utilization-service-jobs.md)
 + [Track compute job capacity utilization](track-capacity-utilization-compute-jobs.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

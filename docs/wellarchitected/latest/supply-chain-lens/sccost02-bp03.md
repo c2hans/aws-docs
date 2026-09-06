@@ -34,7 +34,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 1.  Implement data quality monitoring to make sure only valuable, accurate data is retained in storage systems.
 
 1.  Regularly review and optimize data retention policies based on changing business needs and regulatory requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

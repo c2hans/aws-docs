@@ -342,7 +342,3 @@ The following table describes the important changes to the documentation of the 
   <tr><td>Changed content: Self service provisioning of Elastic Container Registry (ECR)</td><td>Added an FAQ item for using ECR to manage user permissions. See <a href="ecr.md">Use AMS SSP to provision Amazon Elastic Container Registry in your AMS account</a>.</td><td>January 13, 2022</td></tr>
 </tbody>
 </table>
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

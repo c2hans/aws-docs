@@ -18,7 +18,3 @@ With **Toolbar controls**, you can configure the toolbar presentation for end us
   + **Toolbar theme**: Controls light or dark mode display. Configuration removes end user theme control.
   + **Toolbar state**: Sets docked or detached state of the toolbar. Configuration removes end user control over the toolbar state.
   + **Max resolution**: Defines the highest allowed display resolution. Users can only select resolutions up to this defined limit.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

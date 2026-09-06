@@ -28,7 +28,3 @@ For Slurm versions 24.11 and 25.05, CLI Filter Plugins require installing Slurm 
 + [Translate a Slurm Job Submit plugin script to use CLI Filter Plugin in AWS PCS](slurm-cli-filter-plugins-translate.md)
 + [Frequently asked questions about Slurm CLI Filter Plugins in AWS PCS](slurm-cli-filter-plugins-faq.md)
 + [Troubleshooting Slurm CLI Filter Plugin issues in AWS PCS](slurm-cli-filter-plugins-troubleshooting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

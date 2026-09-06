@@ -33,7 +33,3 @@ You can update prices and metadata through the AWS Marketplace Management Portal
 
 **Note**
 Price changes are automatically reflected on the product page in AWS Marketplace. New subscribers are subject to the price displayed on the product page. For existing subscribers of the public offer, price decreases take effect immediately. However, price increases become effective on the first day of the month following a 90-day notification period. For instance, if you send a price increase notification on March 16, the new price takes effect on July 1, the first day of the month after the 90-day period elapses.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

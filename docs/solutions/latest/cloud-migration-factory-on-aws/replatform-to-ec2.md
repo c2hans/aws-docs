@@ -138,7 +138,3 @@ The CloudFormation templates generate the following CloudFormation resource type
 <a name="ec2-deployment"></a>
 
 Once you’re ready to deploy the new EC2 instances, you can initiate the **EC2 Deployment** action can be initiated through the wave action **Replatform**>**EC2**>**EC2 Deployment**. This action will use the latest version of the CloudFormation template for each application in the wave, and deploy these templates into the target accounts selected, through AWS CloudFormation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

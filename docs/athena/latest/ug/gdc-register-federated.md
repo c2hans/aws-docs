@@ -33,7 +33,3 @@ After you create connections to federated data sources, you can register them as
   + [TPC-DS](connectors-tpcds.md)
 + When you create a resource link for Glue connection federation, the name of [resource link](https://docs.aws.amazon.com/lake-formation/latest/dg/create-resource-link-database.html) must be same as the database name of the producer.
 + Currently, only lowercase table and column names are recognized even if the data source is case insensitive.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

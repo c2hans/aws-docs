@@ -106,7 +106,3 @@ By default, the FreeRTOS demos use the Amazon Root CA 1 certificate (RSA 2048 bi
    ```
 
 1. (Optional) You can change the root CA for other demos. Repeat steps 1 through 3 for each `{{freertos}}/vendors/{{vendor}}/boards/{{board}}/aws_demos/config_files/{{demo-name}}_config.h` file.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

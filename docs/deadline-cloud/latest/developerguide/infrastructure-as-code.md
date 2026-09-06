@@ -45,7 +45,3 @@ The Deadline Cloud resource types cover farms, queues, fleets, queue environment
 A few resources don't have resource types, so you manage them with the console, the AWS CLI, or the API after your deployment completes:
 + **Budgets** – Create budgets for your farms and queues with budget manager. For more information, see [Managing budgets and usage](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/using-budget-manager.html) in the *Deadline Cloud User Guide*.
 + **Memberships** – Grant users and groups access to farms, fleets, queues, and jobs. For more information, see [Managing users](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/managing-users.html) in the *Deadline Cloud User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

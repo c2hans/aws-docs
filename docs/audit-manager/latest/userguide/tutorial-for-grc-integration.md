@@ -391,7 +391,3 @@ You can learn more about the concepts that are introduced in this tutorial by re
 + [Framework library](https://docs.aws.amazon.com/audit-manager/latest/userguide/framework-library.html) – Learn about the concepts and tasks for managing a custom framework.
 + [Evidence finder](https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-finder.html) - Learn how to export a CSV file or generate an assessment report from your query results.
 + [Download center](https://docs.aws.amazon.com/audit-manager/latest/userguide/download-center.html) - Learn how to download assessment reports and CSV exports from Audit Manager.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

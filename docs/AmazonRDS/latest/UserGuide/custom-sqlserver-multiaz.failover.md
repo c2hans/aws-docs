@@ -31,7 +31,3 @@ To determine if your Multi-AZ DB instance has failed over, you can do the follow
 <a name="custom-sqlserver-multiaz.ttldns"></a>
 
 The failover mechanism automatically changes the Domain Name System (DNS) record of the DB instance to point to the standby DB instance. As a result, you need to re-establish any existing connections to your DB instance. Ensure that any DNS cache time-to-live (TTL) configuration value is low, and validate that your application will not cache DNS for an extended time. A high TTL value might prevent your application from quickly reconnecting to the DB instance after failover.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

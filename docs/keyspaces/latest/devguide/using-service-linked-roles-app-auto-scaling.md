@@ -59,7 +59,3 @@ To delete the service-linked role used by Amazon Keyspaces automatic scaling, yo
 <a name="slr-regions-app-auto-scaling"></a>
 
 Amazon Keyspaces supports using service-linked roles in all of the Regions where the service is available. For more information, see [Service endpoints for Amazon Keyspaces](https://docs.aws.amazon.com/keyspaces/latest/devguide/programmatic.endpoints.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

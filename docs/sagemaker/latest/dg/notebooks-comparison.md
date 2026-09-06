@@ -22,7 +22,3 @@ When you're starting a new notebook, we recommend that you create the notebook i
 Studio Classic notebooks don't support *local mode*. However, you can use a notebook instance to train a sample of your dataset locally, and then use the same code in a Studio Classic notebook to train on the full dataset.
 
 When you open a notebook in SageMaker Studio Classic, the view is an extension of the JupyterLab interface. The primary features are the same, so you'll find the typical features of a Jupyter notebook and JupyterLab. For more information about the Studio Classic interface, see [Amazon SageMaker Studio Classic UI Overview](studio-ui.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

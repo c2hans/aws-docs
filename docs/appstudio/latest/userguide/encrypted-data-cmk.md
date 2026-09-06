@@ -78,7 +78,3 @@ Use the following procedure to configure encrypted DynamoDB tables to be used in
 1. Test the configuration by publishing an app that uses the DynamoDB connector and table to Testing or Production. Ensure that reading and writing data works, and using this table to create another entity works as well.
 **Note**
 When any new DynamoDB tables are created, you must configure them to be encrypted using a CMK by following the previous steps.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

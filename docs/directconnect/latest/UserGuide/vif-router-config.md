@@ -33,7 +33,3 @@ If you use any of the following routers for virtual interfaces that have MACsec 
 
 1. If you need to manually configure your router for MACsec, use the following table as a guideline.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/directconnect/latest/UserGuide/vif-router-config.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

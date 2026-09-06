@@ -51,7 +51,3 @@ After you download the version you need, read the release notes, and review the 
 Download the following documentation for the driver:
 + [JDBC driver installation and configuration guide](https://downloads.athena.us-east-1.amazonaws.com/drivers/JDBC/SimbaAthenaJDBC-2.2.4.1000/docs/Simba+Amazon+Athena+JDBC+Connector+Install+and+Configuration+Guide.pdf). Use this guide to install and configure the driver.
 + [JDBC driver migration guide](https://downloads.athena.us-east-1.amazonaws.com/drivers/JDBC/SimbaAthenaJDBC-2.2.4.1000/docs/Simba+Amazon+Athena+JDBC+Connector+Migration+Guide.pdf). Use this guide to migrate from previous versions to the current version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

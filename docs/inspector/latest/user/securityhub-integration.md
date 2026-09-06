@@ -193,7 +193,3 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/securityhub-integr
 +  Lambda code scanning
 
  For more information, see [Amazon Inspector controls](https://docs.aws.amazon.com/securityhub/latest/userguide/inspector-controls.html) in the *AWS Security Hub CSPM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

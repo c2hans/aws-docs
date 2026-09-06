@@ -10,7 +10,7 @@ If you're considering using Amazon GameLift Servers to manage your custom game s
 ## Custom game server example
 <a name="gamelift-explore-deploycustomsample"></a>
 
-This example demonstrates the process of deploying a sample game server to Amazon GameLift Servers managed EC2 fleet for hosting. Use the sample game client to connect to a live game session. You can experience how to use Amazon GameLift Servers .tools, including the console and the AWS CLI, to monitor the fleet's hosting performance and usage.
+This example demonstrates the process of deploying a sample game server to an Amazon GameLift Servers managed EC2 fleet for hosting. Use the sample game client to connect to a live game session. You can experience how to use Amazon GameLift Servers tools, including the console and the AWS CLI, to monitor the fleet's hosting performance and usage.
 
 The example walks you through the following steps:
 + Upload the sample game server build.
@@ -21,7 +21,3 @@ The example walks you through the following steps:
 Start up multiple game clients and play the game to generate hosting data. Use the Amazon GameLift Servers console to view hosting resources, track metrics, and explore options for scaling the fleet's hosting capacity.
 
 To get started, sign in to the [Amazon GameLift Servers console](https://console.aws.amazon.com/gamelift/sample-game). In the left-side navigation, go to **Resources**, **Try a sample game**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

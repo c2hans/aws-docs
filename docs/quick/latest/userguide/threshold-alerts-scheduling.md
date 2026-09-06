@@ -21,7 +21,3 @@ If you're a dataset owner, you can set an alert evaluation schedule in the datas
    + For **Time zone**, choose a time zone.
    + For **Repeats**, choose how often you want the data to be evaluated.
    + For **Starts**, enter the time that you want the alert evaluation to start.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ The [AWS Deploy Tool](https://aws.github.io/aws-dotnet-deploy/) supports deployi
 + **[Amazon ECS Scheduled Task](https://aws.amazon.com/ecs/) using [AWS Fargate](https://aws.amazon.com/fargate/)** - Supports deployments of .NET applications as a scheduled task (for example, end-of-day process) to Amazon ECS with compute power managed by AWS Fargate serverless compute engine.
 
 To learn more, see the [tool overview](https://aws.github.io/aws-dotnet-deploy/). To get started from there, navigate to **Documentation**, **Getting started**, and choose **[How to install](https://aws.github.io/aws-dotnet-deploy/docs/getting-started/installation/)** for installation instructions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ Note that the settings that you choose for the voice channel also apply to the S
 1. Choose **Save changes**.
 
 1. On the **SMS and voice** page, under **Number settings**, refer to the table to determine whether any phone numbers that are already associated with your account can be used to send voice messages. If there are, the **Voice** column displays **Enabled** next to each phone number that you can use to send voice messages. If there aren't, [Request a phone number](https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers-request.html) in the *AWS End User Messaging SMS User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,7 +55,3 @@ To determine whether your stream has sufficient capacity, we recommend that you 
   Change data records can be larger than the items they describe. Update operations replicate both the old and new images of the item, which roughly doubles the record size. Boolean and empty attribute values are stored as 1 byte in DynamoDB, but expand up to 5 bytes when they're serialized using standard JSON for Kinesis Data Streams replication. For example, certain items larger than 34 KB might expand into change data records larger than the default 1 MB maximum record size. DynamoDB skips change data records that exceed your stream's maximum record size, and automatically continues replicating subsequent records.
 
 You can create Amazon CloudWatch alarms that send an Amazon Simple Notification Service (Amazon SNS) message for notification when any of the preceding metrics exceed a specific threshold.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -79,7 +79,3 @@ You can use network analyzer to debug a multicast group session. For more inform
 1. Start the multicast group session and monitor the status by viewing the messages that are displayed in the trace message table and the JSON log message.
 
 In the trace message table, the `MulticastAddr` will be displayed in the `DevAddr` column. In the JSON log message, you can view detailed information such as the `MulticastGroupId` under **WirelessMetadata > ApplicationInfo**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

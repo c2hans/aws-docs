@@ -161,7 +161,3 @@ If you do not want to modify the hostname for your instance, but you would like 
 
 The procedures on this page are intended for use with Amazon Linux only. For more information about other Linux distributions, see their specific documentation and the following articles:
 + [How do I assign a static hostname to a private Amazon EC2 instance running RHEL 7 or Centos 7?](https://aws.amazon.com/premiumsupport/knowledge-center/linux-static-hostname-rhel7-centos7/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

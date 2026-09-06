@@ -56,7 +56,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-pe
 +  Use [test events](https://docs.aws.amazon.com/lambda/latest/dg/testing-functions.html) to create unit tests for your Lambda functions.
 +  Use Lambda, [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/userguide/what-is-fargate.html), or Amazon EC2 to automate pipelines using existing tooling or new tools designed for the cloud.
 +  Add unit tests and synthetic transactions to your [CI/CD pipeline](https://aws.amazon.com/getting-started/hands-on/set-up-ci-cd-pipeline/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

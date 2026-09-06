@@ -31,7 +31,3 @@ Possible solutions in this case:
 The /version end-point will reply with a simple webpage for the DCV server version under an HTTPS connection.
 
   The same self-signed certificate can be used later in the actual DCV Server connection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

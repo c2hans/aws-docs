@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 ## Disadvantages
 <a name="option-3-disadvantages"></a>
 + After the call is transferred to Avaya, you continue to be billed for voice service charges and telephony charges in Connect Customer because the customer called Connect Customer directly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

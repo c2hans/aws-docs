@@ -55,7 +55,3 @@ The choice of the Amazon Redshift sort keys and distribution keys is critical fo
 1. In the tree in the right panel, choose the **sh** schema, and then choose **Refresh from Database** to refresh from the target database.
 
 The database schema has now been converted and imported from source to target.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

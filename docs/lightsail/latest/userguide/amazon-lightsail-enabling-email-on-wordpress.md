@@ -187,7 +187,3 @@ The final step is to configure the WP Mail SMTP plugin on your WordPress instanc
 
      You can now choose **Lost your password?** on the sign-in page for your WordPress website’s dashboard. A new password is emailed to you if the email address on your WordPress user profile is confirmed in Amazon SES.
    + If you see a failure notice, confirm that the SMTP settings that you entered into the WP Mail SMTP plugin match those of the SMTP service in your Amazon SES account. Also confirm that you are using an email address that you verified in Amazon SES.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -74,7 +74,3 @@ The End device SDK provides Jinja2 templates tailored for data model handlers an
 +  The output from ZAP tool is `Matter IDL File (.matter)` and it defines the Matter clusters corresponding to your custom schema. This is the input for `codegen.py` tool to generate C source files for End device SDK. A sample file is located at `codegen/matter_files/custom-light.matter`.
 
  For detailed instructions on how to integrate custom managed integrations data models into your code generation workflow, see [Generate code for devices](managedintegrations-sdk-codegen-generate.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

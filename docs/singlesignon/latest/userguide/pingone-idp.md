@@ -147,7 +147,3 @@ For general SCIM and SAML troubleshooting with PingOne, see the following sectio
 The following resources can help you troubleshoot as you work with AWS:
 + [AWS re:Post](https://repost.aws/) - Find FAQs and links to other resources to help you troubleshoot issues.
 + [AWS Support](https://aws.amazon.com/premiumsupport/) - Get technical support
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

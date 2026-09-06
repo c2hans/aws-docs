@@ -240,7 +240,3 @@ Finally, to calculate the amount of time the contact was in the ACW state, and t
 + Subtract the "**StateStartTimestamp**": "2019-05-25T18:55:27.017Z" from the "**EventTimestamp**": "2019-05-25T18:55:32.022Z".
 
 In this example, the agent spent 5.005 seconds doing ACW for ContactId-1.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

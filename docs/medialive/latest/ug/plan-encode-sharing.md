@@ -27,7 +27,3 @@ Then identify opportunities for sharing, in the same way as you did for the vide
 **Example**
 
 Following from the example in the earlier steps in this section about channel planning, you might decide you have these opportunities shown in the last two columns of this table.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

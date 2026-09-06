@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/claude-messages
 # Fallback credit for refused requests (beta)
 <a name="claude-messages-fallback-credit"></a>
 
-**Warning**
-**This feature is deprecated.** The `fallback_credit_token` field is no longer present in refusal responses on any model. If a request is refused, retry client-side without a token using a different model.
-
 When Claude Fable 5 refuses a request, customers who retry the same conversation on a different model (such as Claude Opus 4.8) normally re-pay cache-write rates for the conversation prefix that was already cached on Fable 5. Fallback credit eliminates this double-charge by issuing a one-time credit token on refusal that can be redeemed on the retry.
 
 This feature requires the beta flag `fallback-credit-2026-06-01` in the `anthropic_beta` array on both the original request and the retry.
@@ -109,7 +106,3 @@ When a fallback credit token is successfully redeemed, the retry request receive
 1. The retry is billed at reduced rates for the overlapping cached prefix.
 
 If the token is `null`, expired, or invalid — retry normally without it. The credit is a cost optimization, not a functional requirement for the retry to succeed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

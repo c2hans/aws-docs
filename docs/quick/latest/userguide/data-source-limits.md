@@ -44,7 +44,3 @@ Quotas for queries are as follows:
 + 2,000 columns for each dataset.
 + 2-minute quota for generating a visual, or an optional dataset sample.
 + Data source timeout quotas apply (varies for each database engine).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

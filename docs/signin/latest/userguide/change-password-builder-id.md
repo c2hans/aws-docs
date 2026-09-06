@@ -35,7 +35,3 @@ For an Amazon Account, see [How to change Amazon password](https://www.amazon.co
 1. On the **Change your password** page, under **New password**, enter the new password that you want to use. Then under **Confirm password**, re-enter the new password that you want to use.
 
 1. Choose **Change password**. You're redirected to your AWS Builder ID profile.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ The Buildkite job fails to checkout the job's source repository due to permissio
  **Recommended solutions: **
 + Verify that CodeBuild has sufficient permissions configured to check out the job's source repository. Additionally, verify that your CodeBuild project's service role has sufficient permissions to access the configured source permission option.
 + Verify that your Buildkite pipeline is configured to use checkout using HTTPS if you are using CodeBuild managed source repository credentials.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

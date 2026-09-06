@@ -12,7 +12,3 @@ This topic covers integrating different types of video content sources with Medi
 + [Integrating an HLS source](manifest-hls.md)
 + [Integrating an MPEG-DASH source](manifest-dash.md)
 + [Securing AWS Elemental MediaTailor origin interactions with SigV4](origin-sigv4.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

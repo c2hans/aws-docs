@@ -19,7 +19,3 @@ The first time that you configure analyzers in the management account, you can c
 IAM Access Analyzer charges for unused access analyzers based on the number of IAM roles and users analyzed per analyzer per month. If you create an unused access analyzer in the management account and the delegated administrator account, you will be charged for both unused access analyzers. For more details about pricing, see [IAM Access Analyzer pricing](https://aws.amazon.com/iam/access-analyzer/pricing).
 
 After you change the delegated administrator, the new administrator must create analyzers to start monitoring access to the resources in your organization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

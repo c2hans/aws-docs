@@ -18,7 +18,3 @@ With AWS DataSync, you can transfer files and objects between a number of on-pre
 + [Configuring AWS DataSync transfers with an SMB file server](create-smb-location.md)
 + [Configuring AWS DataSync transfers with an HDFS cluster](create-hdfs-location.md)
 + [Configuring DataSync transfers with an object storage system](create-object-location.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

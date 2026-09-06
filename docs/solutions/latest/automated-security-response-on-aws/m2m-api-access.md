@@ -126,7 +126,3 @@ With this option, you get compromised-credential detection and risk-based adapti
 
 **Additional cost**
 If you enable Advanced Security, you incur additional per-authentication charges. For more information about Amazon Cognito pricing, see [Amazon Cognito pricing]({aws-url}/cognito/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

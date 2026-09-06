@@ -32,7 +32,3 @@ For more information about permissions, see [Permissions required for provisioni
 
 **Note**
  When updating a provisioned product that's associated with an account that Account Factory vends, if you specify a new user email address for AWS IAM Identity Center, AWS Control Tower creates a new user in IAM Identity Center. The previously created account isn't removed. For information about removing the previous IAM Identity Center user email address from IAM Identity Center, see [Disabling a User](https://docs.aws.amazon.com/singlesignon/latest/userguide/disableuser.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,7 +39,3 @@ If you are using the same caption source in several Stream sections (in other wo
 For example, stream 1 may use Caption Selector 1 with the Destination Type set to Burn-in. And stream 2 may also use Caption Selector 1 with the Destination Type set to Burn-in. You set the font information once in stream 1 and again in stream 2. You must make sure to set up all the font information identically in both streams.
 
 The same rule applies if the output captions are all DVB-Sub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

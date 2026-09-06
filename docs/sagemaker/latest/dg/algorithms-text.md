@@ -21,7 +21,3 @@ SageMaker AI provides algorithms that are tailored to the analysis of textual do
 | Object2Vec | train and (optionally) validation, test, or both | File | JSON Lines  | GPU or CPU (single instance only) | No |
 | Seq2Seq Modeling | train, validation, and vocab | File | recordIO-protobuf | GPU (single instance only) | No |
 | Text Classification - TensorFlow | training and validation | File | CSV | CPU or GPU | Yes (only across multiple GPUs on a single instance) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

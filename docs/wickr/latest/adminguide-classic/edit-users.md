@@ -26,7 +26,3 @@ Complete the following procedure to edit a user.
    + **Edit** — Edit the user details, such as their name, country code, phone number (optional), and assigned security group.
    + **Suspend** — Suspend the user so that they cannot sign in to your Wickr network in the Wickr client. When you suspend a user who is currently signed in to your Wickr network in the client, that user is automatically signed out.
    + **Delete** — Delete the user from your Wickr network.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

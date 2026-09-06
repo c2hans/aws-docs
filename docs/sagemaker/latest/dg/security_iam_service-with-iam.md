@@ -150,7 +150,3 @@ SageMaker AI supports service roles.
 <a name="security_iam_service-with-iam-roles-choose"></a>
 
 When you create a notebook instance, processing job, training job, hosted endpoint, or batch transform job resource in SageMaker AI, you must choose a role to allow SageMaker AI to access SageMaker AI on your behalf. If you have previously created a service role or service-linked role, then SageMaker AI provides you with a list of roles to choose from. It's important to choose a role that allows access to the AWS operations and resources you need. For more information, see [How to use SageMaker AI execution roles](sagemaker-roles.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

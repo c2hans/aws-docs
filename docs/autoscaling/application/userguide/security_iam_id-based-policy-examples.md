@@ -639,7 +639,3 @@ This policy allows console users to view and modify scaling policies in the Amaz
 You can adjust the API actions to limit user access. For example, replacing `application-autoscaling:*` with `application-autoscaling:Describe*` means that the user has read-only access.
 
 You can also adjust the CloudWatch permissions as required to limit user access to CloudWatch features. For more information, see [Permissions needed for the CloudWatch console](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-console) in the *Amazon CloudWatch User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

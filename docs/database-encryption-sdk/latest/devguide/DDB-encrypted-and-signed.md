@@ -55,7 +55,3 @@ The client stores the [material description](concepts.md#material-description) i
 <a name="sign-the-item"></a>
 
 After encrypting the specified attribute values, the AWS Database Encryption SDK for DynamoDB calculates Hash-Based Message Authentication Codes (HMACs) and a [digital signature](concepts.md#digital-sigs) over the canonicalization of the material description, [encryption context](concepts.md#encryption-context), and each field marked `ENCRYPT_AND_SIGN`, `SIGN_ONLY`, or `SIGN_AND_INCLUDE_IN_ENCRYPTION_CONTEXT` in the [attribute actions](concepts.md#crypt-actions). ECDSA signatures are enabled by default, but are not required. The client stores the HMACs and signatures in a new attribute (`aws_dbe_foot`) that it adds to the item.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

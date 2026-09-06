@@ -122,7 +122,3 @@ For information about working with CodeCatalyst from an IDE, see the following d
 + [Amazon CodeCatalyst for JetBrains IDEs](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/codecatalyst-service.html)
 + [Amazon CodeCatalyst for VS Code](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/codecatalyst-service.html)
 + [Amazon CodeCatalyst for AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/ide-toolkits-cloud9.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

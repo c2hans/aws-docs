@@ -120,7 +120,3 @@ After connecting Bitbucket to AWS Security Agent:
 + Enable **Code review comments** to have AWS Security Agent analyze each pull request and post findings in Bitbucket (see [Review code security findings in pull requests](review-code-findings-github.md))
 + Enable **Code remediation** to allow AWS Security Agent to submit pull requests with vulnerability fixes (see [Enable users to start remediation of penetration test and code review findings](enable-remediate-findings.md))
 + Create threat models from connected repositories in the web application (see [Enable threat modeling](enable-threat-model.md))
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/quotas.html
 | CIS scan configurations | 500 |  The maximum number of CIS scan configurations. You cannot request a quota increase.  |
 
  For a list of quotas associated with Amazon Inspector Classic, see [Amazon Inspector Classic service quotas](https://docs.aws.amazon.com/general/latest/gr/inspector2.html#limits_inspector2) in the *AWS General Reference*. For a list of quotas associated with AWS Organizations, see [AWS Organizations service quotas](https://docs.aws.amazon.com/general/latest/gr/ao.html#aws-organizations-limits) in the *AWS General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

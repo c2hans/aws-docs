@@ -88,7 +88,3 @@ You can also initiate the sync manually from the Lambda console.
 <a name="setting-up-cognito-users-security"></a>
 
 Prior to the 2024.12 release, [user activity logging](https://docs.aws.amazon.com/cognito/latest/developerguide/feature-plans-features-plus.html), which is part of the Amazon Cognito Plus plan feature was enabled by default. We removed this from our baseline deployment to save costs for customers who want to try RES. You may re-enable this feature as needed to align with your organization's cloud security settings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

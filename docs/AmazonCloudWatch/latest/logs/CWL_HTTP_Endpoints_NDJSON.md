@@ -171,7 +171,3 @@ Implement proper error handling in your application. Common HTTP status codes:
 + Maximum events per request: 10,000
 + Log group names must follow CloudWatch Logs naming conventions
 + Bearer token authentication must be enabled on the log group if bearer token authentication is used.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

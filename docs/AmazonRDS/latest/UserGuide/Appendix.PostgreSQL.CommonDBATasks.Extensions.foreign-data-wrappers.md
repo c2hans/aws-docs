@@ -15,7 +15,3 @@ Following, you can find information about several supported PostgreSQL foreign d
 + [Working with MySQL databases by using the mysql\_fdw extension](postgresql-mysql-fdw.md)
 + [Working with Oracle databases by using the oracle\_fdw extension](postgresql-oracle-fdw.md)
 + [Working with SQL Server databases by using the tds\_fdw extension](postgresql-tds-fdw.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

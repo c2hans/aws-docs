@@ -177,7 +177,3 @@ Customer charges display in this granular data section 24 hours after the custom
 | Product ID | The friendly unique identifier for the software product. |
 | Disbursed net revenue | The total amount for the transaction disbursed to the seller. If the amount does not equal the "seller net revenue", then this is a partial payment. |
 | Undisbursed net revenue | The total amount of the transaction not disbursed to the seller. If the amount is anything other than zero, a remaining balance is owed by the customer. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

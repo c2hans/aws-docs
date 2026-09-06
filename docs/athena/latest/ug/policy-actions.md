@@ -24,7 +24,3 @@ For more information, see the installation and configuration guides for the resp
 +  [Configure single sign-on using ODBC, SAML 2.0, and the Okta Identity Provider](okta-saml-sso.md)
 
 For information about the latest versions of the JDBC and ODBC drivers and their documentation, see [Connect to Amazon Athena with JDBC](connect-with-jdbc.md) and [Connect to Amazon Athena with ODBC](connect-with-odbc.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ If you are a first-time user of Refactor Spaces, we recommend that you begin by 
 <a name="pricing"></a>
 
 All Refactor Spaces orchestrated resources (for example, Transit Gateway) are provisioned in your AWS account. Therefore, you pay for usage of Refactor Spaces plus any costs associated with provisioned resources. You are charged for Refactor Spaces usage based on the number of hours that you run your refactor environments and API requests to Refactor Spaces. For more information, see [AWS Migration Hub pricing](https://aws.amazon.com/migration-hub/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub Refactor Spaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-refactor-spaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

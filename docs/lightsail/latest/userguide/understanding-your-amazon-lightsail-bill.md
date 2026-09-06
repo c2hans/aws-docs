@@ -72,7 +72,3 @@ Lightsail billing and usage reports use codes and abbreviations. For example, fo
 + **USE2:** US East (Ohio) (us-east-2)
 + **USW2:** US West (Oregon) (us-west-2)
 + **SAE1:** South America (São Paulo) (sa-east-1)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ Although the benefits of integrating generative AI into ADM are substantial, cha
 | Organizational alignment | AI recommendation alignment | Ensure AI suggestions align with organizational policies and best practices. |
 | Platform complexity | Lack of skills and readiness for change | Manage the intricacy of AI-enhanced platform and IT support services. |
 | Outsourcing challenges | Capability gaps in outsourced operations | Address AI-readiness in managed service providers. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

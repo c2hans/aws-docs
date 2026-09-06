@@ -128,7 +128,3 @@ Remediation documents contain multiple steps that interact with AWS services per
      This error indicates that the automation couldn't make the expected changes because the DB instance was in an invalid state.
 
      To resolve this error, [manually run the automation](#tr-remediation).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

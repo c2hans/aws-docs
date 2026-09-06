@@ -77,7 +77,3 @@ The following table describes the documentation releases for Amazon DataZone.
 | [Managed policy update](#doc-history) | Updates to the AmazonDataZonePreviewConsoleFullAccess managed policy. For more information, see [Amazon DataZone updates to AWS managed policies](https://docs.aws.amazon.com/datazone/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-updates). | June 13, 2023 |
 | [Managed policy update](#doc-history) | Updates to the AmazonDataZoneProjectDeploymentPermissionsBoundary managed policy. For more information, see [Amazon DataZone updates to AWS managed policies](https://docs.aws.amazon.com/datazone/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-updates). | April 3, 2023 |
 | [Document history for the Amazon DataZone User Guide](#doc-history) | Initial release of the Amazon DataZone (Preview) User Guide. | March 29, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

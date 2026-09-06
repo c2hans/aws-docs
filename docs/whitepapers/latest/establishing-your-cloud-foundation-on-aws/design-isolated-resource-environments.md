@@ -14,7 +14,3 @@ Workloads often have distinct security profiles that require separate control po
 You can group workloads with a common business purpose in distinct environments. This enables you to align the ownership and decision making with those environments, avoiding dependencies and conflicts with how workloads in other environments are secured and managed.
 
  Different business units or product teams might have different processes. Depending on your overall business model, you might choose to isolate distinct business units or subsidiaries in different environments. Isolation of business units can help them operate with greater decentralized control, but still provides the ability for you to implement overarching guardrails. This approach might also ease divestment of those units over time. For information about best practices for organizing your environment on AWS, refer to [Organizing your AWS environment using multiple accounts](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

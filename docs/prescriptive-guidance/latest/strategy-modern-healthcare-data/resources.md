@@ -24,7 +24,3 @@ The AWS Solutions Library offers solutions that are vetted and curated by AWS ex
 The AWS Marketplace can help kickstart or accelerate innovation. It features cloud-based solutions built by third-party AWS Partners. These solutions can help your organization lower IT costs, manage risk, and improve efficiency. The following AWS Marketplace categories are relevant to healthcare customers:
 + [Healthcare section](https://aws.amazon.com/marketplace/solutions/healthcare)
 + [Nonprofits section](https://aws.amazon.com/marketplace/solutions/public-sector/npo)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

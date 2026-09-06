@@ -77,7 +77,3 @@ You must prefix the value of the `--data-binary` parameter with a `@` character.
       ```
 
 If you only have an artifact's JAR file, you can publish a consumable package version to a CodeArtifact repository using `mvn`. This can be useful if you do not have access to the artifact's source code or POM. See [Publish third-party artifacts](maven-mvn.md#publishing-third-party-artifacts) for details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

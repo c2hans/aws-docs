@@ -15,7 +15,7 @@ The following table summarizes each outbound path, the data that can leave, and 
 
 | Outbound path | Data that can leave | What enables it |
 | --- | --- | --- |
-| Action connectors | Conversational context, user requests, and structured parameters sent to the connected third-party or AWS service | Administrator creates and configures the connector, selects authentication method and scopes; individual connectors can be restricted through custom permissions |
+| Connectors | Conversational context, user requests, and structured parameters sent to the connected third-party or AWS service | Administrator creates and configures the connector, selects authentication method and scopes; individual connectors can be restricted through custom permissions |
 | Remote MCP servers | Tool invocation parameters derived from conversational context | Administrator creates the MCP integration (Enterprise subscription required) |
 | Web search | Queries derived from user requests sent to external web search providers | Administrator enables web search for the organization |
 | Third-party research providers | Research queries derived from the research objective | Administrator sets up each integration individually and shares it with authorized users; premium providers require a provisioned license; the Research custom permission removes all providers for a profile |
@@ -25,12 +25,12 @@ The following table summarizes each outbound path, the data that can leave, and 
 | Log and metric delivery | Chat conversations, user feedback, agent hours, index storage usage, knowledge base file sync results | Administrator configures delivery destinations (CloudWatch Logs, Amazon S3, Firehose) |
 | Cross-Region inference | Inference inputs and outputs move between Regions within a defined geography | Automatic platform behavior; no outbound destination for you to review or restrict |
 
-## Action connectors
+## Connectors
 <a name="outbound-connections-action-connectors"></a>
 
-Action connectors create secure connections between Amazon Quick and third-party or AWS services. After an administrator configures a connector, it sends conversational context, user requests, and structured parameters to the target service.
+Connectors create secure connections between Amazon Quick and third-party or AWS services. After an administrator configures a connector, it sends conversational context, user requests, and structured parameters to the target service.
 + **What triggers it** – On-demand connectors execute when a user initiates them. Automated workflow connectors execute on a schedule or in response to an event, without user interaction.
-+ **Who controls it** – An administrator creates and configures each connector, choosing the authentication method (managed OAuth, custom user OAuth, API key, or service-to-service) and the scopes granted. A user can invoke only the connectors that an administrator shares with that user. Administrators can additionally restrict individual action connectors through custom permissions. Each connector supports three permissions: **Create and Update action**, **Share action**, and **Use action**. Custom permissions profiles apply at the user, role, or account level. The most specific level takes precedence. For more information, see [Custom permissions](custom-permissions.md).
++ **Who controls it** – An administrator creates and configures each connector, choosing the authentication method (managed OAuth, custom user OAuth, API key, or service-to-service) and the scopes granted. A user can invoke only the connectors that an administrator shares with that user. Administrators can additionally restrict individual connectors through custom permissions. Each connector supports three permissions: **Create and Update action**, **Share action**, and **Use action**. Custom permissions profiles apply at the user, role, or account level. The most specific level takes precedence. For more information, see [Custom permissions](custom-permissions.md).
 + **What to verify** – Before enabling a connector, verify the authentication method and OAuth scopes granted, whether the connector is shared broadly or narrowly, whether it is on-demand or automated, and what the service-level authorization permits. The credential you configure defines the connector's reach into the connected system. The connector can act on whatever the granted scopes and the service-level authorization permit, and nothing more.
 
 For more information about action types, see [On-demand actions](int-actions-types.md#qbs-actions-types-qbs-actions-on-demand) and [Automated workflows](int-actions-types.md#qbs-actions-types-qbs-actions-automated-workflows). For details on authentication methods, see [Authentication methods](quick-action-auth.md).
@@ -71,7 +71,7 @@ For more information, see [Using third party data in Amazon Quick Research](thir
 ## Quick Apps and public access
 <a name="outbound-connections-apps"></a>
 
-Quick Apps run inside a security sandbox that blocks direct external network access. All communication with external systems goes through the secure bridge API or a registered action connector. When an app owner enables public sharing, app content renders to anonymous internet viewers who have no identity, no integrations, and are rate-limited.
+Quick Apps run inside a security sandbox that blocks direct external network access. All communication with external systems goes through the secure bridge API or a registered connector. When an app owner enables public sharing, app content renders to anonymous internet viewers who have no identity, no integrations, and are rate-limited.
 + **What triggers it** – The app owner creates and publishes an app. Anonymous viewers access it through a public URL.
 + **Who controls it** – The app owner controls sharing and public access settings. Public access is available only to Free and Plus accounts. The sandbox is platform-enforced and blocks app code from making direct HTTP requests to external servers or loading external resources.
 + **What to verify** – Before making an app public, verify that public viewers have no access to integrations, that usage counts against the owner's quota, and that the sandbox restrictions meet your security requirements.
@@ -121,7 +121,3 @@ Cross-Region inference is processing within a defined geography, not customer-en
 + **Boundaries** – Cross-Region inference requests stay within the AWS Regions that are part of the geography where the data originally resides. Stored data remains only in the primary Region.
 
 For more information, see [Cross-Region inference for Australia, Japan, Europe, and the United States](regions.md#cross-region-inference).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

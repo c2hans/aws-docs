@@ -13,7 +13,3 @@ Note the following about a DNS view that's shared with you:
 + You can associate and disassociate your own private hosted zones. You can't modify or delete the DNS view itself unless the owner grants you a managed permission that allows those actions.
 + The private hosted zone associations that you create belong to your account. You can view, update, and remove them.
 + If the owner stops sharing the DNS view, you can no longer create new associations on the view. However, existing associations continue to work until you or the owner removes them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

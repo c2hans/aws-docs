@@ -184,7 +184,3 @@ To learn how to change the code on your instance, we recommend the following res
 +  **Plesk Hosting Stack on Ubuntu**: [Set up and configure Plesk on Amazon Lightsail](https://aws.amazon.com/getting-started/hands-on/plesk-on-aws/).
 +  **Redmine**: [Bitnami Redmine For AWS Cloud](https://docs.bitnami.com/aws/apps/redmine/) on the Bitnami website, and [Getting Started](http://www.redmine.org/projects/redmine/wiki/Getting_Started) on the Redmine website
 +  **WordPress**: [Getting started using WordPress from your Amazon Lightsail instance](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-tutorial-launching-and-configuring-wordpress) on the Lightsail website, and [Bitnami WordPress For AWS Cloud](https://docs.bitnami.com/aws/apps/wordpress/) on the Bitnami website
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,7 +11,3 @@ The SSH client that you use to connect to the cluster needs to use the private k
 + For more information about creating an Amazon EC2 key pair, see [Amazon EC2 key pairs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html) in the *Amazon EC2 User Guide*.
 + For instructions about using PuTTYgen to create a .ppk file from a .pem file, see [Converting your private key using PuTTYgen](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html#putty-private-key) in the *Amazon EC2 User Guide*.
 + For more information about setting .pem file permissions and how to connect to an EMR cluster's primary node using different methods - including `ssh` from Linux or macOS, PuTTY from Windows, or the AWS CLI from any supported operating system, see [Connect to the Amazon EMR cluster primary node using SSH](emr-connect-master-node-ssh.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

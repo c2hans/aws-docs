@@ -50,7 +50,3 @@ AWS provides various tools that you can use to monitor DynamoDB. We recommend th
 
   The action is a notification sent to an Amazon Simple Notification Service (Amazon SNS) topic or Amazon EC2 Auto Scaling policy. Amazon CloudWatch alarms do not invoke actions simply because they are in a particular state; the state must have changed and been maintained for a specified number of periods. For more information, see [Monitoring metrics in DynamoDB with Amazon CloudWatch](Monitoring-metrics-with-Amazon-CloudWatch.md).
 + **AWS CloudTrail log monitoring** – Share log files between accounts, monitor AWS CloudTrail log files in real time by sending them to AWS CloudTrail Logs, write log processing applications in Java, and validate that your log files haven't changed after delivery by AWS CloudTrail. For more information, see [What is Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) in the *AWS CloudTrail User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,7 +56,3 @@ If you choose to have Amazon Bedrock use only the prompts from the invocation lo
 If you choose to have Amazon Bedrock use prompt-response pairs from the invocation logs, then Amazon Bedrock won't re-generate responses from the teacher model and use the responses from the invocation log to fine-tune the student model. For Amazon Bedrock to read the responses from the invocation logs, the teacher model specified in your model distillation job must match the model used in the invocation log. If they don't match, the invocation logs aren't used. If you've added request metadata to the responses in the invocation log, then to fine-tune the student model, you can specify the request metadata filters so that Amazon Bedrock reads only specific logs that are valid for your use case.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

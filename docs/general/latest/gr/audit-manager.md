@@ -39,7 +39,3 @@ The following are the service endpoints and service quotas for this service.
 | Custom controls | Each supported Region: 500 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/auditmanager/quotas/L-0255B75F)  | The maximum number of custom controls per account per region |
 | Custom frameworks | Each supported Region: 100 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/auditmanager/quotas/L-8935A6F1)  | The maximum number of custom frameworks per account per region |
 | Running assessments | Each supported Region: 100 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/auditmanager/quotas/L-92B50F18)  | The maximum number of running assessments per account per region |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

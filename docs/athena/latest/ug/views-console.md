@@ -39,7 +39,3 @@ You can create a view in the Athena console by using a template or by running an
 **Notes**
 + If you delete a table on which a table is based and then attempt to run the view, Athena displays an error message.
 + You can create a nested view, which is a view on top of an existing view. Athena prevents you from running a recursive view that references itself.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

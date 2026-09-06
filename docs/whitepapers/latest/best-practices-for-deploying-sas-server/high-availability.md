@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
  shared file system from the nodes in the system, especially with FSx Lustre, which is backed up into Amazon S3.
 
  If customers would like to implement redundancy mechanisms, they must decide the downtime SLAs that they are willing to accept, and based on those choices, implement a pilot light, cold start, warm-standby, or active-active setup. With any of the above HA options, customers must mirror SAS deployment, SAS Files, and data store to the appropriate Region/Availability Zone for HA. At minimum, it is expected that customer builds for cold starts with data stores and deployment files are backed up to S3 in separate production accounts. For more information, refer to the option for single host SAS 9.4 on AWS with backups to Amazon Glacier.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

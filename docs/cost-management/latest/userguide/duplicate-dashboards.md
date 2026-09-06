@@ -26,7 +26,3 @@ When you duplicate a dashboard, you create an independent copy with the same wid
 You can duplicate dashboards that have been shared with you. The duplicated dashboard belongs to your account and you have full edit permissions for it, regardless of the permissions you had on the original dashboard.
 
 You can also duplicate Managed Dashboards to create custom copies. This is the recommended way to customize a Managed Dashboard for your specific needs. The duplicated dashboard belongs to your account with full edit permissions, regardless of the read-only status of the original Managed Dashboard.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

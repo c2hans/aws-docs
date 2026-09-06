@@ -17,11 +17,11 @@ If you have an AMI with a previous version of the Slurm software installed on it
 1.  Download the Slurm installer software. The Slurm installer is packaged into a compressed tarball (`.tar.gz`) file. To download the latest *stable* version, use the following command. Substitute {{region}} with the AWS Region of your temporary instance, such as `us-east-1`.
 
    ```
-   curl https://aws-pcs-repo-{{region}}.s3.{{region}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-25.11-installer-25.11.7-1.tar.gz \
-        -o aws-pcs-slurm-25.11-installer-25.11.7-1.tar.gz
+   curl https://aws-pcs-repo-{{region}}.s3.{{region}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-25.11-installer-25.11.7-3.tar.gz \
+        -o aws-pcs-slurm-25.11-installer-25.11.7-3.tar.gz
    ```
 
-   You can also get the latest version by replacing the version number with `latest` in the preceding command (for example: `aws-pcs-slurm-25.11-installer-latest.tar.gz`). For a complete list of available versions with checksums, see [Slurm versions in AWS PCS](slurm-versions.md).
+   You can also get the latest version by replacing the version number with `latest` in the preceding command (for example: `aws-pcs-slurm-25.11-installer-latest.tar.gz`). For a complete list of available versions with checksums, see [Verify installers using a checksum](working-with_ami_installers.md#working-with_ami_installers_verify).
 **Note**
 This might change in future releases of the Slurm installer software.
 
@@ -51,14 +51,14 @@ Don't run the Slurm installation script if the fingerprint doesn't match. Contac
    1. Download the signature file and verify the signature of the Slurm installer tarball file. Replace {{region}} with the AWS Region where you launched your temporary instance, such as `us-east-1`.
 
       ```
-      wget https://aws-pcs-repo-{{region}}.s3.{{region}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-25.11-installer-25.11.7-1.tar.gz.sig && \
-           gpg --verify ./aws-pcs-slurm-25.11-installer-25.11.7-1.tar.gz.sig
+      wget https://aws-pcs-repo-{{region}}.s3.{{region}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-25.11-installer-25.11.7-3.tar.gz.sig && \
+           gpg --verify ./aws-pcs-slurm-25.11-installer-25.11.7-3.tar.gz.sig
       ```
 
       The output should be similar to the following:
 
       ```
-      gpg: assuming signed data in './aws-pcs-slurm-25.11-installer-25.11.7-1.tar.gz'
+      gpg: assuming signed data in './aws-pcs-slurm-25.11-installer-25.11.7-3.tar.gz'
       gpg: Signature made Thu 26 Mar 2026 08:57:11 AM UTC using RSA key ID ECC0AE5C
       gpg: Good signature from "AWS PCS Packages (AWS PCS Packages)"
       gpg: WARNING: This key is not certified with a trusted signature!
@@ -74,7 +74,7 @@ Don't run the Slurm installation script if the fingerprint doesn't match. Contac
 1. Extract the files from the compressed `.tar.gz` file and navigate into the extracted directory.
 
    ```
-   tar -xf aws-pcs-slurm-25.11-installer-25.11.7-1.tar.gz && \
+   tar -xf aws-pcs-slurm-25.11-installer-25.11.7-3.tar.gz && \
        cd aws-pcs-slurm-25.11-installer
    ```
 
@@ -95,9 +95,5 @@ Don't run the Slurm installation script if the fingerprint doesn't match. Contac
    ```
    SLURM_INSTALL_DATE='Thu Mar 26 15:15:37 UTC 2026'
    SLURM_VERSION='25.11.7'
-   PCS_SLURM_RELEASE='1'
+   PCS_SLURM_RELEASE='3'
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

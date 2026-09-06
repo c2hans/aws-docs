@@ -76,7 +76,3 @@ The following example results in an error because the data types vary in the exp
 SELECT COALESCE(NULL, 'AWS Clean Rooms', 12);
 ERROR: invalid input syntax for integer: "AWS Clean Rooms"
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

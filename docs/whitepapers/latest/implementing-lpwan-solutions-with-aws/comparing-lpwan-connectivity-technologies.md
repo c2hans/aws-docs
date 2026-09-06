@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 |  Reachability  |  Depends on device class (high for Class A, low for Class C)  |  Depends on power saving model configuration (PSM/eDRX)  |  Depends on power saving model configuration (PSM/eDRX)  |  High (downlink transmission allowed only during <br /> 30 seconds after uplink)  |
 |  Licensed spectrum  |  No  |  Yes  |  Yes  |  No  |
 |  Maximum messages per day  |  Depends on regional regulations of duty cycle  |  Unlimited  |  Unlimited  |  140 per day (uplink) 4 per day (downlink)  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

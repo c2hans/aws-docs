@@ -41,7 +41,3 @@ To set a custom data retention period for configuration items select the checkbo
 The following image displays where you can set the data retention period in **Data Governance**. You can access **Data Governance** on the **Edit Settings** page from the AWS Config console by choosing **Settings** in the left navigation bar, and then choosing **Edit**.
 
 ![The image is a screenshot of the AWS Config console Edit settings page. It includes information related to data governance: the data retention period and the IAM role for AWS Config.](http://docs.aws.amazon.com/config/latest/developerguide/images/retention-period-console.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -396,7 +396,3 @@ You can use the console to view the lineage of a feature group. The instructions
 1. You can move through the lineage map when you choose and drag the screen. To move your lineage maps using nodes as the focal point, you can press **Tab** or **Shift\+Tab** to switch between nodes.
 
 1. If applicable, you can navigate the lineage upstream (left, earlier) or downstream (right, most recent). Do this by choosing a node and then choosing **Query upstream lineage** or **Query downstream lineage**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

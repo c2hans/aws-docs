@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-conversat
 # Conversation history
 <a name="acxd-conversation-history"></a>
 
-Conversation history provides historical information about sessions that have taken place with a deployed Agentic CX Designer application.
+Conversation history provides historical information about sessions that have taken place with a deployed agentic CX designer application.
 
 Use these historical transcripts to review what happened during real user interactions, troubleshoot unexpected behavior, inspect transcripts, and identify opportunities to improve flows, routing, prompts, integrations, or escalation paths.
 
@@ -113,7 +113,3 @@ This is useful when a conversation shows unexpected fallback behavior, missed ro
 | **Validate routing** | Search for user utterances and review whether routing matched the intended flow. |
 | **Investigate integration issues** | Review affected conversations and compare timing or failure behavior. |
 | **Discover new content needs** | Search repeated phrases and identify whether a new flow, prompt, or knowledge base content is needed. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

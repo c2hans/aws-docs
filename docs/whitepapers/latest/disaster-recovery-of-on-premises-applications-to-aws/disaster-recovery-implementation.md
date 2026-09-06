@@ -141,7 +141,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-
  You can use Elastic Disaster Recovery to run a virtually unlimited number of drills, as often as you choose. There are [no additional fees for drills](https://aws.amazon.com/disaster-recovery/pricing/), beyond payment for the provisioned resources generated. You can minimize costs by performing some disaster recovery drills using smaller Amazon EC2 instances, instead of fully provisioning resources at scale.
 
  Familiarity with drill and recovery processes enables your organization to verify that you can respond quickly if you must recover applications on AWS. You can facilitate disaster recovery drills at scale by automating drill and recovery processes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

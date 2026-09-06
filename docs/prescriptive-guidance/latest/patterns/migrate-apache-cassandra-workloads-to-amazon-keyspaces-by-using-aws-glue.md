@@ -153,7 +153,3 @@ To create a keyspace by using CQL, run the following commands:
 CREATE KEYSPACE target_keyspace WITH replication = {'class': 'SingleRegionStrategy'}
 CREATE TABLE target_keyspace.target_table ( userid uuid, level text, gameid int, description text, nickname text, zip text, email text, updatetime text, PRIMARY KEY (userid, level, gameid) ) WITH default_time_to_live = 0 AND CUSTOM_PROPERTIES = {'capacity_mode':{ 'throughput_mode':'PROVISIONED', 'write_capacity_units':76388, 'read_capacity_units':3612 }} AND CLUSTERING ORDER BY (level ASC, gameid ASC)
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

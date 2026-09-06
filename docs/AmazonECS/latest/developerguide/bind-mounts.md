@@ -72,7 +72,3 @@ When using bind mounts, consider the following.
 The `privileged` setting grants the container extended capabilities on the host, equivalent to root access. In this example, it is used to inspect the host's mount table for diagnostic purposes. For more information, see [Avoid running containers as privileged (Amazon EC2)](security-tasks-containers.md#security-tasks-containers-recommendations-avoid-privileged-containers).
 
   For more information about running commands interactively in containers, see [Monitor Amazon ECS containers with ECS Exec](ecs-exec.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

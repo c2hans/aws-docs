@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-custo
 When you create and work with custom routing accelerators in AWS Global Accelerator, keep the following guidelines and restrictions in mind.
 
 **Supported endpoint destinations**
-The virtual public cloud (VPC) subnet endpoints in a custom routing accelerator can only include EC2 instances. No other resources, such as load balancers, are supported for custom routing accelerators. The types of EC2 instances that are supported with Global Accelerator are listed in [Endpoints for standard accelerators in AWS Global Accelerator](about-endpoints.md).
+The virtual private cloud (VPC) subnet endpoints in a custom routing accelerator can only include EC2 instances. No other resources, such as load balancers, are supported for custom routing accelerators. The types of EC2 instances that are supported with Global Accelerator are listed in [Endpoints for standard accelerators in AWS Global Accelerator](about-endpoints.md).
 With custom routing accelerators, Global Accelerator can only route traffic to private IP endpoints on Amazon EC2 instances on VPC subnets. However, gaming customers who want to use custom routing might need to connect to stateful sessions. To do this, the customers run their game servers on Amazon Elastic Kubernetes Service (EKS), with sessions hosted on a specific container running inside a Kubernetes Pod.
 To use custom routing in this scenario, you can configure a VPC-CNI plugin to send traffic to Kubernetes Pods through an elastic network interface (ENI) that Global Accelerator creates for each subnet where an endpoint is present. This is a way to use a custom routing accelerator with EKS. The same configuration works to use a custom routing accelerator with Amazon Elastic Container Service (ECS). To learn more, see the detailed steps provided in the following blog post: [AWS Global Accelerator Custom Routing with Amazon Elastic Kubernetes Service](https://aws.amazon.com/blogs/networking-and-content-delivery/aws-global-accelerator-custom-routing-with-amazon-elastic-kubernetes-service/).
 
@@ -43,7 +43,3 @@ Updating a subnet or specific destination to allow or deny traffic takes time to
 
 **CloudFormation is not supported**
 CloudFormation is not supported for custom routing accelerators.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

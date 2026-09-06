@@ -66,7 +66,3 @@ AWS Partner product descriptions and reported qualifications, including complian
 | **Security**<br />The ability to retain data encryption (if any) from source to target | Available |
 | **Data selection**<br />The ability to migrate a subset of data | Available |
 | **Migration parallelism**<br />The ability to migrate multiple subsets of data in parallel | Available. Multiple degrees of parallelism can be achieved when taking an [RMAN backup](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/bradv/configuring-rman-client-advanced.html).<br />After the backup is restored, the subsequent data transfer through Oracle DataGuard happens serially in the order that the transactions were executed. The transfer is done this way so that the database at the destination always remains consistent and readable. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

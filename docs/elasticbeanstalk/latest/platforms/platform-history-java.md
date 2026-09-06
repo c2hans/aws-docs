@@ -2727,7 +2727,3 @@ The following Elastic Beanstalk platform versions for Tomcat were current prior 
 | --- |--- |--- |--- |--- |
 | 32bit Amazon Linux running Tomcat 7 | 2012.09 | Java 1.6.0\_24 | Tomcat 7.0.27 | Apache 2.2.22 |
 | 64bit Amazon Linux running Tomcat 7 | 2012.09 | Java 1.6.0\_24 | Tomcat 7.0.27 | Apache 2.2.22 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

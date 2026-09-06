@@ -55,7 +55,3 @@ This procedure assumes you've already created at least one child OU within your 
 1. Repeat the previous two steps for each OU about which your user needs information.
 
 For detailed information about the controls and their functions, see [About controls in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/controls.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

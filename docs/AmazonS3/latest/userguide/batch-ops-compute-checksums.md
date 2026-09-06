@@ -45,7 +45,3 @@ Before using the **Compute checksum** operation, review the following list of co
 <a name="batch-ops-compute-checksum-completion-report"></a>
 
 When you create a **Compute checksum** job, you can request an S3 Batch Operations completion report. This CSV file shows the objects, success or failure codes, outputs, and descriptions. For more information about job tracking and completion reports, see [Completion reports](https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-job-status.html#batch-ops-completion-report).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

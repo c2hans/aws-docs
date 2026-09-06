@@ -68,7 +68,3 @@ For detailed steps and information, see [Explore changing your application traff
 **Configuration details for publishing internet measurements to Amazon S3**
 If you have configured Internet Monitor to publish internet measurements for your monitor to an Amazon S3 bucket, the information about your configuration is shown here.
 To configure this option, see [Publishing internet measurements to S3](CloudWatch-IM-get-started.Publish-to-S3.md#IMPublishToS3).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

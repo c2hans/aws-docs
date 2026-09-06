@@ -35,7 +35,3 @@ Explore the following resources to learn about using AWS Cloud9 for some common 
 | Work with code in a running Docker container. |  [Docker tutorial for AWS Cloud9](sample-docker.md)  |
 | Invite others to use an environment with you, in real time and with text chat support. |  [Working with shared environment in AWS Cloud9](share-environment.md)  |
 | Work with code for intelligent robotics applications in AWS RoboMaker. |  [Developing with AWS Cloud9](https://docs.aws.amazon.com/robomaker/latest/dg/cloud9.html) in the *AWS RoboMaker Developer Guide*  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -251,7 +251,3 @@ When you disable this service, Trusted Advisor won't perform any checks on your 
 For more information about Trusted Advisor, see the following topics:
 + [How do I start using Trusted Advisor?](https://aws.amazon.com/premiumsupport/knowledge-center/trusted-advisor-intro/)
 + [AWS Trusted Advisor check reference](trusted-advisor-check-reference.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -66,7 +66,7 @@ To install the Deadline Cloud for Blender submitter, you need:
 There are three ways to install the Deadline Cloud for Blender submitter:
 + Using the Deadline Cloud submitter installer (recommended).
 + Installing the submitter from Blender.
-+ [Manually installing the submitter from source](https://github.com/aws-deadline/deadline-cloud-for-blender/blob/mainline/DEVELOPMENT.md#manual-installation).
++ Manually installing the submitter from source. For more information, see [Manual Installation](https://github.com/aws-deadline/deadline-cloud-for-blender/blob/mainline/DEVELOPMENT.md#manual-installation) on the GitHub website.
 
 ### Using the Deadline Cloud submitter installer
 <a name="blender-install-installer"></a>
@@ -172,7 +172,7 @@ The **Job-specific settings** tab has options specific to jobs created in Blende
 + *View Layers* - The layer to render, or "All Renderable Layers" to render each applicable layer in the scene separately.
 + *Cameras* - The camera to render, "All Renderable Cameras" to render each camera in the scene separately, or "Use Default Camera" to use the scene's default camera or cameras bound to timeline markers.
 + *Cycles GPU Rendering* - Whether to enable GPU rendering. Choose a device type supported by Blender or specify your own. If this device type is not supported on your rendering machine, the adaptor attempts to use a compatible device type before falling back to CPU rendering.
-+ *Override Frame Range* - Select this option to render a different frame or frame range than is set in the scene file. Frame ranges follow the [Open Job Description](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#34111-intrangeexpr) pattern.
++ *Override Frame Range* - Select this option to render a different frame or frame range than is set in the scene file. Frame ranges follow the Open Job Description pattern. For more information, see the [IntRangeExpr specification](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#34111-intrangeexpr) on the GitHub website.
 
 For information about the other submitter tabs, see the [Deadline Cloud guide for using a submitter](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/jobs-using-submitter.html).
 
@@ -193,7 +193,7 @@ If you require an unsupported version of Blender, you have the following options
 
 You can make Blender add-ons available on service-managed fleet workers by building a conda package from a conda recipe and adding it to a custom conda channel. When the conda environment activates on a worker, the add-on is installed through Blender's API; when it deactivates, the add-on is removed. For more information about custom conda channels, see [Creating custom conda channels](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/configure-jobs-s3-channel.html).
 
-The following conda recipes are available as starting points:
+The following conda recipes are available on the GitHub website as starting points:
 + [FLIP Fluids add-on conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/blender-flipfluids) packages the demo version of the FLIP Fluids liquid simulation add-on.
 + [Blender add-on bundle conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/blender-plugin-bundle) packages multiple Blender add-ons from a single archive so that they install together when the conda environment activates.
 
@@ -213,10 +213,6 @@ All render engines are automatically detected and configured by the Blender inte
 ## Open source resources
 <a name="blender-open-source"></a>
 
-The submitter and adaptor are open source and available on GitHub:
+The submitter and adaptor are open source and available on the GitHub website:
 + [Deadline Cloud for Blender](https://github.com/aws-deadline/deadline-cloud-for-blender)
-+ [Blender conda recipes](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/blender-4.5) are available on GitHub for supported versions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ [Blender conda recipes](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/blender-4.5) are available for supported versions.

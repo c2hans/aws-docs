@@ -129,7 +129,3 @@ The following new Performance Insights counters apply to DocumentDB serverless i
 For the full list of Performance Insights counters, see [Performance Insights for counter metrics](performance-insights-counter-metrics.md).
 
 When vCPU values are shown for a DocumentDB serverless instance in Performance Insights, those values represent estimates based on the DCU value for the instance. At the default interval of one minute, any fractional vCPU values are rounded up to the nearest whole number. For longer intervals, the vCPU value shown is the average of the integer vCPU values for each minute.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

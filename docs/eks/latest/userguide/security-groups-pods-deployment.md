@@ -86,7 +86,3 @@ If you’re using `1.11.0` or later of the Amazon VPC CNI plugin for Kubernetes 
    IMPORTANT: ** Pod security group rules aren’t applied to traffic between Pods or between Pods and services, such as `kubelet` or `nodeLocalDNS`, that are on the same node. Pods using different security groups on the same node can’t communicate because they are configured in different subnets, and routing is disabled between these subnets. ** Outbound traffic from Pods to addresses outside of the VPC is network address translated to the IP address of the instance’s primary network interface (unless you’ve also set `AWS_VPC_K8S_CNI_EXTERNALSNAT=true`). For this traffic, the rules in the security groups for the primary network interface are used, rather than the rules in the Pod’s security groups. \*\* For this setting to apply to existing Pods, you must restart the Pods or the nodes that the Pods are running on.
 
 1. To see how to use a security group policy for your Pod, see [Use a security group policy for an Amazon EKS Pod](sg-pods-example-deployment.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

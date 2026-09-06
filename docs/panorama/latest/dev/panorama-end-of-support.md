@@ -109,7 +109,3 @@ We are confident that the alternatives that are available for Panorama enable cu
 <a name="panorama-end-of-support-faq-function"></a>
 
 No. The Panorama device and applications are dependent on connectivity to the Panorama cloud service. Once that service is discontinued on May 31, 2026, neither the Panorama application nor the Panorama device will continue to function.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

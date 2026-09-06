@@ -18,7 +18,3 @@ Complete the following steps to write a room or group message.
 1. Type your message into the text box and press **Enter** to send it.
 
    You can also choose ![Send file or location icon](http://docs.aws.amazon.com/wickr/latest/userguide/images/icon-wickr-room-file-location.png) to send a file or share your location.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

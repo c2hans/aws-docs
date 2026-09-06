@@ -244,6 +244,7 @@ Content-type: application/json
             "networkConfiguration": {
                "assignPublicIp": "{{string}}"
             },
+            "networkMode": "{{string}}",
             "pidMode": "{{string}}",
             "platformVersion": "{{string}}",
             "runtimePlatform": {
@@ -632,6 +633,7 @@ Content-type: application/json
                      "networkConfiguration": {
                         "assignPublicIp": "{{string}}"
                      },
+                     "networkMode": "{{string}}",
                      "pidMode": "{{string}}",
                      "platformVersion": "{{string}}",
                      "runtimePlatform": {
@@ -872,7 +874,7 @@ The platform capabilities required by the job definition. If no value is specifi
 Jobs with the `MANAGED_INSTANCES` platform capability must use `ecsProperties` (not `containerProperties`) and do not support multi-node parallel jobs.
 If the job runs on Amazon EKS resources, then you must not specify `platformCapabilities`.
 Type: Array of strings
-Valid Values: `EC2 | FARGATE`
+Valid Values: `EC2 | FARGATE | MANAGED_INSTANCES`
 Required: No
 
  ** [propagateTags](#API_RegisterJobDefinition_RequestSyntax) **   <a name="Batch-RegisterJobDefinition-request-propagateTags"></a>
@@ -1112,7 +1114,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/batch-2016-08-10/RegisterJobDefinition)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/RegisterJobDefinition)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/batch-2016-08-10/RegisterJobDefinition)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

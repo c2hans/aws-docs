@@ -231,7 +231,3 @@ When the destination is created, CloudWatch Logs sends a test message to the des
       To validate a user's privileges against an access policy, see [Using Policy Validator](https://docs.aws.amazon.com/IAM/latest/UserGuide/policies_policy-validator.html) in the *IAM User Guide*.
 
 When you have finished, if you're using AWS Organizations for your cross-account permissions, follow the steps in [Step 2: (Only if using an organization) Create an IAM role](CreateSubscriptionFilter-IAMrole-Account.md). If you're granting permissions directly to the other account instead of using Organizations, you can skip that step and proceed to [Step 3: Create an account-level subscription filter policy](CreateSubscriptionFilter-Account.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

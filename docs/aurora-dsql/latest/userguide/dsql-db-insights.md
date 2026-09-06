@@ -196,7 +196,3 @@ When specific queries look problematic, the skill initiates a deeper SQL-focused
 + [AWS vended metrics in OpenTelemetry format](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-OTelEnrichment.html) – how AWS service metrics, including those for Aurora DSQL, are exposed as PromQL-queryable time series.
 + [Amazon CloudWatch Database Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Database-Insights.html) – the CloudWatch UI for monitoring database load and performance.
 + [Agent Plugins for AWS](https://github.com/awslabs/agent-plugins) on the GitHub website – source repository for the `databases-on-aws` plugin containing the Aurora DSQL system diagnostics AI skill.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

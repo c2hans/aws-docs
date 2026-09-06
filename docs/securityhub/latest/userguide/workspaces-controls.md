@@ -56,7 +56,3 @@ Data at rest refers to data that's stored in persistent, non-volatile storage fo
 <a name="workspaces-2-remediation"></a>
 
 To encrypt a WorkSpaces root volume, see [ Encrypt a WorkSpace](https://docs.aws.amazon.com/workspaces/latest/adminguide/encrypt-workspaces.html#encrypt_workspace) in the *Amazon WorkSpaces Administration Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

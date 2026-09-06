@@ -105,7 +105,3 @@ Container images that are being used in a current deployment cannot be deleted a
 1. In the confirmation prompt that appears, choose **Yes, delete** to confirm that you want to permanently delete the stored image.
 
    Your stored container image is immediately deleted from your container service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

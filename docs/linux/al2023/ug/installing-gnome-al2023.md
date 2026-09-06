@@ -35,7 +35,3 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/installing-gnome-al2023.
 For more information about the graphical desktop environment, see the following documentation:
 + [What Is Amazon DCV?](https://docs.aws.amazon.com/dcv/latest/adminguide/what-is-dcv.html) in the * Amazon DCV Administrator Guide*
 +  [Tutorial: Configure TigerVNC server on AL2023](vnc-configuration-al2023.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

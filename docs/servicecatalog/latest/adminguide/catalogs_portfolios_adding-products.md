@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalog
 When adding a Terraform product to a portfolio, the product requires a launch constraint. You must select an IAM role from your account, enter an IAM role ARN, or enter a role name. If you specify a role name and if an account uses the launch constraint, the account uses that name for the IAM role. This allows launch-role constraints to be account-agnostic, ensuring you can create fewer resources per shared account. For details and instructions, review [Step 6: Add a Launch constraint to your Terraform product](getstarted-launchconstraint-Terraform.md)
 
  A portfolio can contain numerous products that are mix of CloudFormation and Terraform product types.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

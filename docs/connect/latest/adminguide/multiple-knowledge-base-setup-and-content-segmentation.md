@@ -310,7 +310,3 @@ The `<sources>` block is metadata and is not spoken aloud. It does not affect wh
 After updating your prompt, place a test contact and confirm:
 + The agent answers the question correctly.
 + Check the ListSpans API response for that session. The knowledge base used to answer should appear as citations in the ListSpans details. To learn more about ListSpans, see [ListSpans API](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_ListSpans.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

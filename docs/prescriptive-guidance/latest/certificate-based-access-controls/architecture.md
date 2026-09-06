@@ -30,7 +30,3 @@ This guide covers the following scenarios to illustrate the configuration option
 + An external application that requires access to resources in your AWS account and target AWS Region.
 + The certificate authority is set up in the same Region as IAM Roles Anywhere. For instructions on setting up AWS Private Certificate Authority, see [Getting started with IAM Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/getting-started.html).
 + You have issued a certificate for the application. For more information and instructions, see [AWS Certificate Manager certificates](https://docs.aws.amazon.com/acm/latest/userguide/gs.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

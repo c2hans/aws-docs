@@ -32,7 +32,3 @@ For more information, see [AWS PrivateLink](https://aws.amazon.com/privatelink/)
 If your architecture requires hybrid connectivity from on premises to Teradata VantageCloud Lake, you can use the public internet connectivity option. You can also use this option to connect from another VPC over the internet. You control the allowed CIDR ranges. The following diagram shows a user's VPC using the internet to connect to Teradata-managed VantageCloud Lake.
 
 ![Using the public internet to access Teradata VantageCloud Lake on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-teradata-vantagecloud-lake/images/guide-img/54b73adc-60e6-4e76-a7be-f62261514119/images/e39adf7f-d253-4557-801f-d975b7f163eb.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

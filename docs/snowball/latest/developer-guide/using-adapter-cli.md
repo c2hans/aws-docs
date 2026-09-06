@@ -67,7 +67,3 @@ You can only use this option to sync the contents between your on-premises data 
   + `--delete` (Boolean) – Files that exist in the destination but not in the source are deleted during sync.
 
 You can work with files or folders with spaces in their names, such as `my photo.jpg` or `My Documents`. However, make sure that you handle the spaces properly in the AWS CLI commands. For more information, see [Specifying parameter values for the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-using-param.html) in the *AWS Command Line Interface User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,9 +34,11 @@ Effective December 30, 2025, Amazon MWAA will end support for Apache Airflow ver
 Beginning with Apache Airflow v2.2.2, Amazon MWAA supports installing Python requirements, provider packages, and custom plugins directly on the Apache Airflow webserver.
  Beginning with Apache Airflow v2.7.2, your requirements file must include a `--constraint` statement. If you don't provide a constraint, Amazon MWAA will specify one for you to ensure the packages listed in your requirements are compatible with the version of Apache Airflow you're using.
 For more information about setting up constraints in your requirements file, refer to [Installing Python dependencies](working-dags-dependencies.md#working-dags-dependencies-syntax-create).
+Amazon MWAA does not currently support [multi-team mode](https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html#multi-team). Enabling this feature is incompatible with Amazon MWAA authentication, the `CeleryExecutor`, and environment-level secrets management.
 
 | Apache Airflow version | Apache Airflow release date | Amazon MWAA availability date | Apache Airflow constraints | Python version |
 | --- | --- | --- | --- | --- |
+| [v3.3.1](https://airflow.apache.org/docs/apache-airflow/3.3.1) | [August 12, 2026](https://airflow.apache.org/docs/apache-airflow/3.3.1/release_notes.html#airflow-3-3-1-2026-08-12) | September 1, 2026 | [v3.3.1 constraints file](https://raw.githubusercontent.com/apache/airflow/constraints-3.3.1/constraints-3.12.txt) | [Python 3.12](https://peps.python.org/pep-0693/) |
 | [v3.2.1](https://airflow.apache.org/docs/apache-airflow/3.2.1) | [April 22, 2026](https://airflow.apache.org/docs/apache-airflow/3.2.1/release_notes.html#airflow-3-2-1-2026-04-22) | May 19, 2026 | [v3.2.1 constraints file](https://raw.githubusercontent.com/apache/airflow/constraints-3.2.1/constraints-3.12.txt) | [Python 3.12](https://peps.python.org/pep-0693/) |
 | [v2.11.2](https://airflow.apache.org/docs/apache-airflow/2.11.2) | [March 14, 2026](https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html#airflow-2-11-2-2026-03-14) | July 23, 2026 | [v2.11.2 constraints file](https://raw.githubusercontent.com/apache/airflow/constraints-2.11.2/constraints-3.12.txt) | [Python 3.12](https://peps.python.org/pep-0693/) |
 | [v2.11.0](https://airflow.apache.org/docs/apache-airflow/2.11.0) | [May 20, 2025](https://airflow.apache.org/docs/apache-airflow/2.11.0/release_notes.html#airflow-2-11-0-2022-05-20) | January 7, 2026 | [v2.11.0 constraints file](https://raw.githubusercontent.com/apache/airflow/constraints-2.11.0/constraints-3.12.txt) | [Python 3.12](https://peps.python.org/pep-0693/) |
@@ -71,7 +73,7 @@ The following section describes the steps to create an Amazon MWAA environment.
 
    1. Choose the Apache Airflow version in **Airflow version**.
 **Note**
-If no value is specified, defaults to the latest Apache Airflow version. The latest available version is Apache Airflow v3.2.1.
+If no value is specified, defaults to the latest Apache Airflow version. The latest available version is Apache Airflow v3.3.1.
 
    1. Enter the maintenance period for your environment in the **Weekly maintenance window**.
 **Note**
@@ -180,7 +182,3 @@ You must have permissions to the key to select it on the Amazon MWAA console. Yo
 + Review the environment summary, choose **Create environment**.
 **Note**
 It takes about twenty to thirty minutes to create an environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

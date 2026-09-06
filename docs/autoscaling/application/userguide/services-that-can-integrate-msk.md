@@ -60,7 +60,3 @@ When an Amazon MSK cluster is the scalable target, scale in is disabled and cann
 <a name="msk-related-resources"></a>
 
 For more information, see [Automatic scaling for Amazon MSK clusters](https://docs.aws.amazon.com/msk/latest/developerguide/msk-autoexpand.html) in the *Amazon Managed Streaming for Apache Kafka Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

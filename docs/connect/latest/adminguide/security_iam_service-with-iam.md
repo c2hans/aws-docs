@@ -156,7 +156,3 @@ Connect Customer supports service-linked roles. For details about creating or ma
 <a name="security_iam_service-with-iam-roles-choose"></a>
 
 When you create a resource in Connect Customer, you must choose a role to allow Connect Customer to access Amazon EC2 on your behalf. If you have previously created a service role or service-linked role, then Connect Customer provides you with a list of roles to choose from. It's important to choose a role that allows access to start and stop Amazon EC2 instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

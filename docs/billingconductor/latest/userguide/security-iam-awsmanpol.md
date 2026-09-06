@@ -39,7 +39,3 @@ View details about updates to AWS managed policies for AWS Billing Conductor sin
 | AWSBillingConductorFullAccess | Created policy | March 29, 2022 |
 | AWSBillingConductorReadOnlyAccess | Created policy | March 29, 2022 |
 | AWS Billing Conductor change log published | AWS Billing Conductor started tracking changes for its AWS managed policies. | March 29, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing Conductor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query billingconductor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

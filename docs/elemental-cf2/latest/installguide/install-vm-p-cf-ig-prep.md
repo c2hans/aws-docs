@@ -55,7 +55,3 @@ Download the installation files for each unique AWS Elemental product that you'r
 Move the` .ova` and` .run` files to a location where they can be accessed during installation. Note that:
 + The AWS Elemental software installers (`.run`) must be stored on a network share that the VM has access to. This location can't require login credentials.
 + The OVA image can be left in your workstation download directory or you can put it on the same network share as the software installers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

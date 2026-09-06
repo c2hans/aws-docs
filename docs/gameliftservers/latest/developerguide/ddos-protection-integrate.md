@@ -154,7 +154,3 @@ Follow these best practices when integrating player gateway:
 + **Maintain connection activity** – Ensure that traffic flows between the game client and game server at least once every 30 seconds. This can be either client-to-server or server-to-client traffic.
 + **Handle endpoint updates gracefully** – When your game client receives updated endpoints from the backend, transition to the new endpoints without dropping the player's connection.
 + **Choose the right algorithm** – Select the endpoint selection algorithm that best matches your game's requirements. Use the fallback algorithm for turn-based games and the predictive rotation algorithm for real-time games.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

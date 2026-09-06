@@ -65,7 +65,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
  This optional DDoS mitigation service helps protect applications hosted on any AWS Region. The service is available globally for CloudFront, Route 53, and Global Accelerator. Regionally, you can protect Application Load Balancer and Elastic IP addresses which allows you to protect [Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html) (NLBs) or [Amazon EC2](https://aws.amazon.com/ec2/) instances.
 
  For a complete list of AWS Shield Advanced features and for more information about [AWS Shield](https://aws.amazon.com/shield/), see [How AWS Shield Advanced works](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

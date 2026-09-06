@@ -10,7 +10,3 @@ Claude Platform on AWS uses [AWS Marketplace](https://aws.amazon.com/marketplace
 Billing is **arrears-only** (you pay for what you used) and **pre-tax** (AWS applies your account’s tax settings).
 
 Usage is denominated in Claude Consumption Units (CCUs) at $0.01 USD per CCU. The CCU price is fixed and never discounted. Anthropic rates your token usage in USD at standard per-model, per-feature rates, applies any negotiated discount, then converts the result to CCUs at $0.01 per CCU. Discounts result in fewer CCUs metered, not a lower CCU price. CCUs are not prepaid credits; there is no CCU balance or commitment. See [Pricing](https://platform.claude.com/docs/en/about-claude/pricing#claude-platform-on-aws-pricing) for the CCU definition and per-model token rates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Claude Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query claude-platform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

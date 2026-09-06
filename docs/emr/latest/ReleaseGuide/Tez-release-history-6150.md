@@ -42,7 +42,3 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Tez-release-hist
 ## Amazon EMR 6.15.0 - Tez features
 <a name="Tez-release-history-features-6150"></a>
 + **[Tez asynchronous split opening](tez-configure.md#tez-configure-async)** – Amazon EMR 6.15.0 introduces configurations that you can specify to asynchronously open the input splits in a Tez *grouped split*. The feature was initiated by [TEZ-4397](https://issues.apache.org/jira/browse/TEZ-4397), but had regressions in OSS Hive. Amazon EMR Hive fixed the regressions and additional bugs in Hive ACID table. This improvement results in faster performance of read queries when there are a large number of input splits in a single Tez grouped split. For more information, see [Tez asynchronous split opening](tez-configure.md#tez-configure-async).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

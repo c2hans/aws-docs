@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/delete-
 1.  Enter "confirm" in the pop-up window to confirm your choice. Then choose **Unpair brokers**.
 
 1.  Next, reboot the unpaired primary broker. This will also reboot the replica broker. For instructions on rebooting your broker, see [Rebooting an Amazon MQ broker](amazon-mq-rebooting-broker.md). After the primary broker is rebooted, both brokers are unpaired and can be individually deleted. To delete your broker, see [Deleting an Amazon MQ broker](amazon-mq-deleting-broker.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

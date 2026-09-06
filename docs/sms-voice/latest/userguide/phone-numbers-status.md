@@ -24,7 +24,3 @@ This section explains how to check that status and capabilities of your phone nu
    + **Creation date** – The time the **Origination number** was requested.
 
    When you first purchase a phone number, the phone number's **Number status** is `PENDING`. When the phone number is ready to use, the phone number's **status** is `ACTIVE`. If the phone number requires registration then that must be completed before the phone number's **Number status** is changed to `ACTIVE`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ The following tables show an example aggregation for an hourly forecast frequenc
 The following figure shows how Forecast transforms data to fit the default weekly time boundary.
 
 ![Raw CSV data points transformed into a smooth demand time series curve with weekly boundaries.](http://docs.aws.amazon.com/forecast/latest/dg/images/data-alignment.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Forecast. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query forecast` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

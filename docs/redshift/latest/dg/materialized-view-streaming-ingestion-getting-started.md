@@ -110,7 +110,7 @@ Assuming you have a Kinesis Data Streams stream available, the first step is to 
 
     Streaming ingestion for Kinesis Data Streams doesn't require an authentication type. It uses the IAM role defined in the `CREATE EXTERNAL SCHEMA` statement for making Kinesis Data Streams requests.
 
-    Optional: Use the REGION keyword to specify the region where the Amazon Kinesis Data Streams or Amazon MSK stream resides.
+    Optional: Use the REGION keyword to specify the Region where the Amazon Kinesis Data Streams or Amazon MSK stream resides.
 
    ```
    CREATE EXTERNAL SCHEMA kds
@@ -119,7 +119,7 @@ Assuming you have a Kinesis Data Streams stream available, the first step is to 
    IAM_ROLE { default | 'iam-role-arn' };
    ```
 
-   In this sample, the region specifies the location of the source stream. The IAM\_ROLE is a sample.
+   In this sample, the Region specifies the location of the source stream. The IAM\_ROLE is a sample.
 
 1. Create a materialized view to consume the stream data. With a statement like the following, if a record can't be parsed, it causes an error. Use a command like this if you don't want error records to be skipped.
 
@@ -149,7 +149,3 @@ Assuming you have a Kinesis Data Streams stream available, the first step is to 
    ```
    select * from my_view;
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

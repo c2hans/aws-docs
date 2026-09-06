@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/task-templates.html
 ---
 
-# Create task templates in Connect Customer
+# Task templates in Connect Customer
 <a name="task-templates"></a>
 
 Task templates make it easy for agents to capture the right information to create and complete a [task](tasks.md). All the fields they need to create a given type of task are provided for them.
@@ -70,6 +70,28 @@ After you configure your template, choose **Publish** to create it and make it v
 If this is your first template, when you choose **Publish**, agents are automatically required to select a task template when they create a task.
 If you want to maintain the standard task experience without selectable templates, disable all templates.
 
+## How to update a task template
+<a name="update-task-templates"></a>
+
+### Step 1: Open the task template to update
+<a name="update-template-open"></a>
+
+1. Log in to the Connect Customer console with an **Admin** account, or an account assigned to a security profile that has [permissions to create task templates](task-template-permissions.md).
+
+1. In the left navigation menu, choose **Channels**, **Task templates**.
+
+1. On the **Task templates** page, choose the task template you would like to update.
+
+### Step 2: Modify fields and publish
+<a name="update-template-fields"></a>
+
+For instructions on updating fields, see [Step 2: Add fields, task assignment, schedule, and expiry](#add-template-fields). For instructions on publishing the template, see [Step 3: Publish](#task-template-publish).
+
+## Change task template after creation
+<a name="change-task-template-after-creation"></a>
+
+You can update the task template on a contact before assignment, to support tasks that are created without a template (for example [Rules](https://docs.aws.amazon.com/connect/latest/adminguide/connect-rules.html) or [disconnect flows](https://docs.aws.amazon.com/connect/latest/adminguide/set-disconnect-flow.html)) or change the agent interaction form to represent the latest task data (for example an initial request that was submitted as a refund gets updated to an account cancellation and requires a new template).
+
 ## What your agents experience
 <a name="agent-experience-task-template"></a>
 
@@ -97,7 +119,3 @@ Let's say that in the **Task assignment** section, you choose to allow agents to
 If no quick connects exist, then the message **No data** appears when you choose the **Assign to** dropdown menu, as shown in the following image.
 
 ![The CCP, create task page, Assign to blank, No data message at the bottom of page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/task-templates-no-data.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -1037,7 +1037,3 @@ Specifies the earliest log record or event timestamp that you want. Specify this
 When Kinesis Agent for Windows has been stopped for a long time, it might be necessary to delete those bookmarks because log records and events that are bookmarked might no longer exist. Bookmark files for a given *source id* are located in `%PROGRAMDATA%\Amazon\AWSKinesisTap\source id.bm`.
 
 Bookmarks do not work on files that are renamed or truncated. Because of the nature of ETW events and performance counters, they cannot be bookmarked.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Agent for Windows. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesis-agent-windows` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

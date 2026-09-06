@@ -38,7 +38,3 @@ As organizations integrate AI more deeply into their workflows, they must also p
 <a name="other-resources.26039d6a-023e-5266-88eb-9f3ad11c40f7"></a>
 + [OWASP top 10 for LLM applications 2025](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/) (OWASP website)
 + [Uncovering limitations of large language models in information seeking from tables](https://arxiv.org/abs/2406.04113) (Cornell University study on Arxiv)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

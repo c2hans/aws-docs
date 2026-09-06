@@ -34,7 +34,3 @@ AWS IoT FleetWise provides the following APIs for data retrieval.
 | <a name="iotfleetwise-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListTagsForResource.html) | List tags for a resource | Read |
 | <a name="iotfleetwise-ListVehicles"></a>[ListVehicles](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListVehicles.html) | List all vehicles, with an optional filter on model manifest | Read |
 | <a name="iotfleetwise-ListVehiclesInFleet"></a>[ListVehiclesInFleet](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListVehiclesInFleet.html) | List vehicles in the given fleet | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

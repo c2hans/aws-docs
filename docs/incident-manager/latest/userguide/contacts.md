@@ -116,7 +116,3 @@ When an incident is created, Incident Manager can notify responders by using voi
 1. On your mobile device, either choose or enter the following URL: [https://d26vhuvd5b89k2.cloudfront.net/aws-incident-manager.vcf](https://d26vhuvd5b89k2.cloudfront.net/aws-incident-manager.vcf).
 
 1. Save or import the file to the address book on your mobile device.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

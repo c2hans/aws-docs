@@ -209,7 +209,3 @@ The data in the preceding table shows the following information:
 + The unblended rate for the three Reserved Instances is $0.00. The unblended cost of an RI is always $0.00 because RI charges are not included in blended rate calculations.
 + The unblended rate for the On-Demand Instance is $0.023. Unblended rates are associated with the current price of the product. They can't be verified from information in the preceding table.
 + The blended rate is calculated by dividing the total cost ($16.56) by the total amount of Amazon EC2 usage (2,880 hours). This produces a rate of $0.005750000 dollars per hour.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

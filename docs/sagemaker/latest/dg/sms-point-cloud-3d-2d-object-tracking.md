@@ -21,7 +21,3 @@ The following topics explain how to create a 3D-2D point cloud object tracking l
 + [Create a 3D-2D point cloud object tracking labeling job](sms-3d-2d-point-cloud-object-tracking-create-labeling-job.md)
 + [View the worker task interface for a 3D-2D object tracking labeling job](sms-point-cloud-3d-2d-object-tracking-worker-ui.md)
 + [Output data for a 3D-2D object tracking labeling job](sms-point-cloud-3d-2d-object-tracking-output-data.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

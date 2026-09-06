@@ -68,7 +68,7 @@ Library Support
 + Ports: Ports 8000, 8300, and 8443 must be unblocked and unoccupied
 + Boot Mode: UEFI
 
-If you want to use image with graphics instances such as Accelerated.g4dn, Accelerated.g5, Accelerated.G6, or Accelerated.G6e you must install proper GRID driver on your AMI. For more details please refer to [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvidia-GRID-driver.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvidia-GRID-driver.html). If the drivers are not setup correctly the streaming will work, however, graphics card may not be available.
+If you want to use image with graphics instances such as Accelerated.g4dn, Accelerated.g5, Accelerated.g6, Accelerated.g6e, or Accelerated.g7 you must install proper GRID driver on your AMI. For more details please refer to [Install NVIDIA GRID drivers](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvidia-GRID-driver.html). If the drivers are not setup correctly the streaming will work, however, graphics card may not be available.
 
 **Important**
 "Owner Account Id" of the AMI must be your AWS account id. You cannot import a public EC2 AMI.
@@ -173,7 +173,3 @@ These streaming tests will be executed in the background, you cannot connect to 
 1. **Import Image** – Review all the information you have entered and choose **Import Image**. Service will run compatibility checks to make sure AMI is compatible with WorkSpaces Applications.
    + If the static checks fail, you will receive an error straight away.
    + If the static checks pass, your import request will be submitted and depending upon the options you have selected it could take 30-60 min to create a new WorkSpaces Applications image with `type = "custom"` or `type = "BYOL"`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

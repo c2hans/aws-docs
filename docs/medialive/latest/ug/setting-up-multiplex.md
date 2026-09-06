@@ -91,7 +91,3 @@ There are some features of the channel that you can set up in the same way as yo
 + For audio, you can set up as you would set up in a UDP output group in a regular channel.
 + For captions, you can set up as you would set up in a UDP output group in a regular channel. Specifically, make sure that the input captions and output captions follow the rules for a UDP output group. See [Captions supported in MediaLive](supported-captions.md).
 + For other features, if the feature is available for a UDP output group, then it is available for a channel in a multiplex.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

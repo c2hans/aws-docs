@@ -65,7 +65,3 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-sec
 
 **AWS SDKs**
  [AWS SDKs](https://aws.amazon.com/developertools/) consist of libraries and sample code for various programming languages and platforms (C\+\+, Go, Java, .NET, and Python). They provide programmatic access to Security Hub and other AWS services in your preferred language and can help you manage tasks such as managing errors, signing requests, and retrying requests.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

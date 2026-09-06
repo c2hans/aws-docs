@@ -46,7 +46,3 @@ You can also use the Snowball Edge Client to create a profile at any time. See [
 1. Unlock your device locally and sign in according to the instructions in [Unlocking a Snowball Edge device with AWS OpsHub](connect-unlock-device.md).
 
 1. Name the profile and choose **Save profile name**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

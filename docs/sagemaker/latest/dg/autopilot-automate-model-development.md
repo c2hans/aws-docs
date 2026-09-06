@@ -66,7 +66,3 @@ With Amazon SageMaker AI, you pay only for what you use. You pay for the underly
 + [Videos: Use Autopilot to automate and explore the machine learning process](autopilot-videos.md)
 + [Autopilot quotas](autopilot-quotas.md)
 + [API Reference guide for Autopilot](autopilot-reference.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

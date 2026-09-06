@@ -35,7 +35,3 @@ There are no restrictions. Full functionality of Resilience Hub is available in 
 **Q: What are the prerequisites or dependencies to using AWS Resilience Hub in my AMS account?**
 
 There are no prerequisites or dependencies to use Resilience Hub in your AMS account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

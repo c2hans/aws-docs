@@ -71,7 +71,3 @@ The *License evaluation and cloud support* section of the AWS SCT report provide
 <a name="scaling-the-oracle-assessment.54254dd9-662a-5faa-8b55-23b060eef8c5"></a>
 
 To evaluate multiple servers, you can run batch assessments with AWS SCT by using the [multiserver assessor](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_AssessmentReport.Multiserver.html#CHAP_AssessmentReport.Multiserver.Agreggated) option. After assessing each schema, the assessor produces a server-level report that includes the *License evaluation and cloud support* section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

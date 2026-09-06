@@ -28,7 +28,3 @@ However, if you desire to have your subjects perform a particular action or woul
 **Prompt**: *"dynamic handheld shot: the dog looks to the left as colored holiday lights on its body blink rhythmically"*
 
 For videos longer than six seconds, you can only include prompt images if you use the storyboard. You can include an optional input image and prompt to guide the creation of each six second shot of the video. However, you don't need to include inputs for every six second shot.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

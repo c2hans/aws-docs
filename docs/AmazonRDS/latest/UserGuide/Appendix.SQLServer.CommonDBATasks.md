@@ -30,7 +30,4 @@ When working with a SQL Server DB instance, you can run scripts to modify a newl
 + [Using SQL Server Agent for Amazon RDS](Appendix.SQLServer.CommonDBATasks.Agent.md)
 + [Working with Amazon RDS for Microsoft SQL Server logs](Appendix.SQLServer.CommonDBATasks.Logs.md)
 + [Working with trace and dump files for Amazon RDS for SQL Server](Appendix.SQLServer.CommonDBATasks.TraceFiles.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ [Setting trace flags in RDS for Microsoft SQL Server](Appendix.SQLServer.CommonDBATasks.TraceFlags.md)

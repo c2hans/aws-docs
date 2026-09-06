@@ -208,7 +208,3 @@ Format-List
 You can use one of the following methods to configure ENA Express directly when you launch an instance. The specified links refer you to the AWS Management Console instructions for these methods.
 + **Launch instance wizard** – You can configure ENA Express at launch with the launch instance wizard. For more information, see **Advanced network configuration** in the [Network settings](ec2-instance-launch-parameters.md#liw-network-settings) for the launch instance wizard.
 + **Launch template** – You can configure ENA Express at launch when you use a launch template. For more information, see the [Create an Amazon EC2 launch template](create-launch-template.md) page, then expand the **Network settings** section and review the **Advanced network configuration**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

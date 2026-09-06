@@ -14,7 +14,3 @@ To optimize latency, you can customize the initialization behavior for functions
 ![Decision tree for deploying a AWS Lambda function in an Amazon VPC](http://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/decision-tree-aws-lambda-function-in-amazon-vpc.png)
 
 For Lambda functions in VPC, avoid DNS resolution of public host names for underlying resources in your VPC. For example, if your Lambda function accesses an Amazon RDS DB instance in your VPC, launch the instance with the no-publicly-accessible option.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

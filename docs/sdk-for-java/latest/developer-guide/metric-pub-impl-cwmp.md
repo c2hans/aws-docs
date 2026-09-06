@@ -159,7 +159,3 @@ The customizations shown in the previous snippet have the following effects.
 + By default, the SDK publishes summary metrics. Summary metrics consist of average, minimum, maximum, sum, and sample count. By specifying one or more SDK metrics in the `detailedMetrics` method, the SDK publishes additional data for each metric. This additional data enables percentile statistics like p90 and p99 that you can query in CloudWatch. The detailed metrics are especially useful for latency metrics like `APICallDuration`, which measures the end-to-end latency for SDK client requests. You can use fields of the `[CoreMetric](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/metrics/CoreMetric.html)` class to specify other common SDK metrics.
 
 **Next steps:** If you're also working with Lambda functions, see [Publish SDK metrics for AWS Lambda functions](metric-pub-impl-emf.md) for EMF-based metrics publishing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

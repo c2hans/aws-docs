@@ -20,7 +20,3 @@ Examples:
 + Don't know: Dunno, Unknown, No idea, Not sure about it, Who knows...
 
 As of August 17th, 2023, if there is an existing custom slot type named "Confirmation", the name must be changed to avoid conflict with the built-in slot Confirmation. In the left side navigation in the Lex console, go to the slot type (for an existing custom slot type named Confirmation) and update slot type name. The new slot type name must not be “Confirmation,” which is a reserved keyword for the built-in confirmation slot type.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

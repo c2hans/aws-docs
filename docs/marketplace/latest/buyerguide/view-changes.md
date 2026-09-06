@@ -29,7 +29,3 @@ All Private Marketplace change sets are listed on the **Change sets** page. This
 <a name="cloudtrail-logging"></a>
 
 Change sets are only retained for a period of 90 days. You can use AWS CloudTrail to capture all calls to the AWS Marketplace Catalog API as events. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon Simple Storage Service (Amazon S3) bucket. For more information, see [Logging AWS Marketplace Catalog API calls with CloudTrail](https://docs.aws.amazon.com/marketplace/latest/APIReference/logging-catalog-api-calls-with-cloudtrail.html) in the *AWS Marketplace Catalog API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -72,7 +72,3 @@ The [iOS sample app](https://github.com/aws-samples/amazon-ivs-broadcast-ios-sam
 + A semi-transparent watermark is added in `MixerViewController`.
 + An MP4 file is looped in `MixerViewController`.
 + A CIFilter implementation with a device camera is added in `CustomSourcesViewController`. This allows an application to manage a device camera independently of the Amazon IVS Broadcast SDK. It uses `AVCaptureSession` to capture an image from the device camera, processes the image using a CIFilter implementation, and submits `CMSampleBuffers` to `customSource` for live streaming.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

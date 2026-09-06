@@ -40,7 +40,3 @@ To get started with portal products, you can do the following:
 + To learn about sharing your portal product, see [Share portal products in API Gateway](apigateway-portals-share-resources.md).
 
 After you create a portal product, you can publish it to a portal. For more information, see [Create a portal in API Gateway](apigateway-portals-create-portal.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,7 +51,3 @@ To provide more flexibility for our partners, we use two sets of identifiers in 
  **Q: How do I prevent duplicate records from getting created in both systems?**
 
 From the partner CRM side, there must be a unique identifier for each record that’s sent to ACE, which is called `partnerCrmUniqueIdentifier`. Similarly, ACE also maintains a unique identifier for each record, which is called `apnCrmUniqueIdentifier`. When the data is sent, both ACE and the partner have to include these two fields, which helps to identify if the record is a new opportunity (if blank) or an existing opportunity (if populated).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

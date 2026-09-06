@@ -56,7 +56,3 @@ For instructions on how to customize this framework to support your specific req
 <a name="resources-gxp-21-cfr-part-11"></a>
 + [AWS Compliance page for GxP](https://aws.amazon.com/compliance/gxp-part-11-annex-11/)
 + [Considerations for Using AWS Products in GxP Systems](https://d1.awsstatic.com/whitepapers/compliance/Using_AWS_in_GxP_Systems.pdf)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

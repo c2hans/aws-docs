@@ -61,7 +61,3 @@ A set of icons appears to the right of the names. Use them to call the contact o
 Another set of controls appears to the right of each message. They show you when the message was sent, plus another actions menu. You use the menu to quote a message, copy a message, or copy a message's ID. For group chats, you also see the number of group members who've read the message. That number changes as more group members open the chat thread.
 
 ![The time, the number of people who've read the message, and three dots in a circle.](http://docs.aws.amazon.com/chime/latest/ug/images/chat-read-by.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -381,7 +381,3 @@ AWS Elastic Beanstalk defines the following condition keys that can be used in t
 |   [elasticbeanstalk:FromPlatform](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.policies.actions.html#AWSHowTo.iam.policies.conditions)  | Filters access by a platform as a dependency or a constraint on an input parameter | ARN |
 |   [elasticbeanstalk:FromSolutionStack](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.policies.actions.html#AWSHowTo.iam.policies.conditions)  | Filters access by a solution stack as a dependency or a constraint on an input parameter | ARN |
 |   [elasticbeanstalk:InApplication](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.policies.actions.html#AWSHowTo.iam.policies.conditions)  | Filters access by the application that contains the resource that the action operates on | ARN |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

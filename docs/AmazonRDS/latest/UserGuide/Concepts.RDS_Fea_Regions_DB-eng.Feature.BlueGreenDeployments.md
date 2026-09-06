@@ -43,7 +43,3 @@ For RDS for PostgreSQL, blue/green deployments are supported for version 11.1 an
 
 **Note**
 Under certain conditions, RDS for PostgreSQL uses logical replication instead of physical replication to keep the green environment in sync with the blue environment. For more information, see [PostgreSQL replication methods for blue/green deployments](blue-green-deployments-replication-type.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

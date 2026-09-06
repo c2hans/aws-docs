@@ -25,7 +25,3 @@ AWS Elemental MediaTailor doesn't encrypt or decrypt data in its management of c
 Don't put sensitive information, like customer account numbers, credit card information, or sign-in credentials, into free-form fields or query parameters. This applies to all use of AWS Elemental MediaTailor, including the console, API, SDKs, and the AWS Command Line Interface (AWS CLI). Any data that you enter into the service might get picked up for inclusion in diagnostic logs.
 
 When you provide a URL to an external server, don't include unencrypted credentials information in the URL to validate your request to that server.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

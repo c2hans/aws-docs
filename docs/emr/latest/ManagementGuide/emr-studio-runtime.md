@@ -138,7 +138,3 @@ Keep in mind the following considerations when you use a runtime role-enabled cl
 + You can't use collaboration mode in an EMR Studio Workspace with a cluster that has a runtime role. Amazon EMR disables Workspace collaboration capabilities when a Workspace is attached to a runtime role-enabled EMR cluster. The Workspace will remain accessible only to the user who attached the Workspace.
 + You can't use runtime roles in a Studio with IAM Identity Center trusted identity propagation enabled.
 + You might encounter a warning **"Page may not be safe\!"** from Spark UI for a runtime role-enabled cluster that uses Amazon EMR release 7.4.0 and lower. If this happens, bypass the alert to continue to see the Spark UI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

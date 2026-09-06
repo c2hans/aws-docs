@@ -13,7 +13,3 @@ Centralized Logging with OpenSearch supports ingesting application logs from the
 
 After creating a log analytics pipeline, you can add more log sources to the log analytics pipeline. For more information, see [add a new log source](log-sources.md#add-a-new-log-source).
 + Important If you are using Centralized Logging with OpenSearch to create an application log pipeline for the first time, you are recommended to learn the [concepts](solution-overview.md#concepts) and supported log formats and log sources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Logging with OpenSearch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -146,7 +146,3 @@ Amazon Quick doesn't support the following role features:
 + Temporary credentials (direct use): However, Amazon Quick uses temporary credentials to allow users to assume an IAM role to access embedded dashboards. For more information, see [Embedded analytics for Amazon Quick](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics.html).
 
 For more information on how Amazon Quick uses IAM roles, see [Using Amazon Quick with IAM](https://docs.aws.amazon.com/quicksight/latest/user/security_iam_service-with-iam.html) and [IAM policy examples for Amazon Quick](https://docs.aws.amazon.com/quicksight/latest/user/iam-policy-examples.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

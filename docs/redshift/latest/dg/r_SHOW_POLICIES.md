@@ -114,7 +114,3 @@ SHOW MASKING POLICIES ON sales_schema.transaction_table FOR ROLE transaction_ana
 ---------------+--------------+-------------------+---------------+----------+--------------------------+--------------+----------+---------------+----------------
  hash_username | sales_schema | transaction_table | table         | admin    | transaction_analyst_role | role         |      100 | ["user_name"] | ["user_name"]
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

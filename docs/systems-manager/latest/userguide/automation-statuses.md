@@ -47,7 +47,3 @@ The overall automation status can be different than the status reported by an in
 | Cancelling | The automation is currently stopping after being canceled by a requester. |
 | Cancelled | The automation was stopped by a requester before it completed. This is a terminal state. |
 | Failed | The automation didn't complete successfully. This is a terminal state. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -155,7 +155,3 @@ If you're experiencing storage utilization imbalance across your aggregates, the
    The volume statistics are shown on a per-constituent basis (for example, `vol1__0015` is the 15th constituent for FlexGroup `vol1`). You can see from the example output, the constituents for `aggr1` are more highly-utilized than the constituents for `aggr2`. To balance traffic between aggregates, you can move the constituent volumes between aggregates so that traffic is more evenly distributed.
 
 1. If you have added new HA pairs, then you should move existing volumes to new aggregates. For more information, see [Moving volumes between aggregates](moving-fg-volumes.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

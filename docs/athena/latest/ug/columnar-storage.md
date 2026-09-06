@@ -44,7 +44,3 @@ Options for easily converting source data such as JSON or CSV into a columnar fo
 + You can use `CREATE TABLE AS` (CTAS) queries to convert data into Parquet or ORC in one step. For an example, see [Example: Writing query results to a different format](https://docs.aws.amazon.com/athena/latest/ug/ctas-examples.html#ctas-example-format) on the [Examples of CTAS queries](ctas-examples.md) page.
 + For information about using Athena for ETL to transform data from CSV to Parquet, see [Use CTAS and INSERT INTO for ETL and data analysis](ctas-insert-into-etl.md).
 + For information about running an AWS Glue job to transform CSV data to Parquet, see the section "Transform the data from CSV to Parquet format" in the AWS Big Data blog post [Build a data lake foundation with AWS Glue and Amazon S3](https://aws.amazon.com/blogs/big-data/build-a-data-lake-foundation-with-aws-glue-and-amazon-s3/). AWS Glue supports using the same technique to convert CSV data to ORC, or JSON data to either Parquet or ORC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

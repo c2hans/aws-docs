@@ -62,7 +62,3 @@ aws rds modify-db-instance --db-instance-identifier {{dbName}} --vpc-security-gr
 The RDS console displays different security group rule names for your database if the Port value is configured to a non-default value.
 
 For RDS for Oracle DB instances, additional security groups can be associated by populating the security group options setting for the Oracle Enterprise Manager Database Express (OEM), Oracle Management Agent for Enterprise Manager Cloud Control (OEM Agent) and the Oracle Secure Sockets Layer options. In this case, both security groups associated with the DB instance and options settings apply to the DB instance. For more information about these option groups, see [Oracle Enterprise Manager](Oracle.Options.OEM.md) ,[Oracle Management Agent for Enterprise Manager Cloud Control](Oracle.Options.OEMAgent.md) , and [Oracle Secure Sockets Layer](Appendix.Oracle.Options.SSL.md) .
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

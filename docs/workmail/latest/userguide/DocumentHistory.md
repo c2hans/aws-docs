@@ -26,7 +26,3 @@ The following table describes important changes in each release of the *Amazon W
 | [Support for Amazon WorkDocs email attachments](#DocumentHistory) | You can attach a file from WorkDocs and save an email attachment to WorkDocs. For more information, see [Download Attachments](download_attachments.html) in the *Amazon WorkMail User Guide*. | October 19, 2015 |
 | [Support for Microsoft Outlook 2011 for Mac](#DocumentHistory) | Updated guidance for using Microsoft Outlook 2011 for Mac with Amazon WorkMail. | August 18, 2015 |
 | [Preview release](#DocumentHistory) | The preview release of Amazon WorkMail. | January 28, 2015 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

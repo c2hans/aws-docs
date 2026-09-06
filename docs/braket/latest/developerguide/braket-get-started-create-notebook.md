@@ -60,7 +60,3 @@ To save your work, integrate your [SageMaker AI notebook instance with a Git rep
 View and manage your Amazon Braket notebook instances in the Amazon Braket and Amazon SageMaker AI consoles. Additional Amazon Braket notebook settings are available through the [SageMaker console](https://console.aws.amazon.com/sagemaker/).
 
 If you are working in the Amazon Braket console within AWS the Amazon Braket SDK and plugins are preloaded in the notebooks you created. To run on your own machine, install the SDK and plugins when you run the command `pip install amazon-braket-sdk` or when you run the command `pip install amazon-braket-pennylane-plugin` for PennyLane plugins.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

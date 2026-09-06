@@ -45,7 +45,3 @@ The following metrics are emitted as multiple data points per minute: `total-req
 | Metric | Description |
 | --- | --- |
 | `filter-transaction` | The number of transactions filtered (not forwarded to the responder) by a module.<br />Valid Dimensions: Link, ModuleId, Reason<br />Valid Statistics: Sum<br />Units: Count |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RTB Fabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rtb-fabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

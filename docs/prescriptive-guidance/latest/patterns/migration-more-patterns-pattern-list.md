@@ -43,7 +43,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 + [Simplify private certificate management by using AWS Private CA and AWS RAM](simplify-private-certificate-management-by-using-aws-private-ca-and-aws-ram.md)
 + [Transfer large-scale Db2 z/OS data to Amazon S3 in CSV files](transfer-large-scale-db2-z-os-data-to-amazon-s3-in-csv-files.md)
 + [Transform Easytrieve to modern languages by using AWS Transform custom](transform-easytrieve-modern-languages.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

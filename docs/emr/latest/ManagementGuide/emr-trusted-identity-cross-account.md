@@ -454,7 +454,3 @@ Error: Queries return empty results even though data exists
 Error: CloudTrail shows the carrier role but not the user identity
 **Cause:** The security configuration does not have `EnableIdentityCenter` set to `true`, or the IAM Identity Center application ARN is incorrect.
 **Solution:** Verify the security configuration JSON includes the correct `IdentityCenterConfiguration` block with the right application ARN.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

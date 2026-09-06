@@ -36,7 +36,3 @@ This diagram illustrates the change in the group after one node fails. This diag
   Also consider how you will handle failure of a node that has SDI cards installed. Ideally, there will be a backup node with the same card configuration, especially if your deployment includes a router handling the SDI input. You might want to consider organizing nodes that have SDI cards in their own redundancy group.
 + You should have a policy in place for handling node failure. Decide whether you will immediately try to get the failed node back into production.
 + Keep in mind that it is possible to have so many nodes in a failed state that you have no backup nodes in the redundancy group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

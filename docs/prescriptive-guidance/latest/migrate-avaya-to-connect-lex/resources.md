@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 + [AWS Migration Acceleration Program (MAP)](https://aws.amazon.com/migration-acceleration-program/)
 + [AWS Cloud Adoption Framework (AWS CAF)](https://aws.amazon.com/professional-services/CAF/)
 + [Migration Best Practices and Resources: Moving Your Contact Center to Connect Customer](https://pages.awscloud.com/Migration-Best-Practices-and-Resources-Moving-Your-Contact-Center-to-Amazon-Connect_2021_0321-BAP_OD.html) (AWS Online Tech Talks)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -94,7 +94,3 @@ The `Condition` element includes the `ArnLike` condition operator and uses a wil
 ------
 
   Including a role that you create in IAM in such a policy will provide you with emergency access to your Amazon EKS clusters, AWS KMS keys, or other AWS resources if a permission set or all assignments to the permission set are accidentally deleted and re-created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,7 +45,3 @@ The baseline `URLAllowlist` and `URLBlocklist` policies can't be overwritten. No
 
 Customers can update the following policies for their web portal:
 + `DownloadRestrictions` – The default is set to `1` to prevent downloads identified as malicious by Chrome Safe Browsing. For more information, see [Prevent users from downloading harmful files](https://support.google.com/chrome/a/answer/7579271). You can set the value from `0` to `4`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

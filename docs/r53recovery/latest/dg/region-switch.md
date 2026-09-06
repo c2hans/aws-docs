@@ -17,7 +17,3 @@ Region switch includes the following:
 + A data plane in each AWS Region, so that you can execute your Region switch plan without taking a dependency on the Region that you’re deactivating.
 
 Region switch is fully managed by AWS. Using Region switch enables you to benefit from the resilience of a recovery platform that focuses on your application's specific requirements, instead of building and maintaining scripts, and manually gathering data about recoveries.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

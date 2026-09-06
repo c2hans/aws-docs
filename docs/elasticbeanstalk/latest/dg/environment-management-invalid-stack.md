@@ -36,7 +36,3 @@ Permission issues typically cause this effect on the CloudFormation stack and th
 **Important**
 To avoid disruption to your environment, we strongly recommend that you only initiate operations to manage and configure your environment from the Elastic Beanstalk service. Modification of resources by using the console, CLI commands, or SDK of a service other than Elastic Beanstalk is an out-of-band change, which causes *resource drift*. Resource drift affects the status of the CloudFormation stack, which in turn causes the Elastic Beanstalk environment to enter into an invalid state.
 For more information about resource drift, see [What is drift?](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html#what-is-drift) in the *AWS CloudFormation User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

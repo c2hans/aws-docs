@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-array-to-colum
 ![The screenshot shows the Transform tab for the Array To Columns transform.](http://docs.aws.amazon.com/glue/latest/dg/images/transforms-array-to-columns-transform-tab.png)
 
 1. (Optional) If you don’t want to take the array tokens in order to assign to columns, you can specify the indexes to take which will be assigned to the list of columns in the same order specified. For instance if the output columns are “column1, column2, column3” and the indexes “4, 1, 3”, the forth element of the array will go to column1, the first to column2 and the third to column3 (if the array is shorter than the index number, a NULL value will be set).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

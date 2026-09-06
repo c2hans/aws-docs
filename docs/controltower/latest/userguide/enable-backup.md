@@ -99,7 +99,3 @@ Part of the process of setting up backups in AWS Control Tower is to tag the res
 **Considerations**
 + When AWS Backup is active on an OU, you’ll see a value of **Enabled** in the **Status** field on the **OU details** page in the AWS Control Tower console. Some other possible values of the **Status** field include **Not enabled**, **In progress**, and **Failed**. If you see a status of **Failed**, choose **Re-register OU** to reapply your AWS Backup configuration to the OU.
 + If you have AWS Backup enabled on an OU, new accounts provisioned through Account Factory under that the OU will include AWS Backup.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

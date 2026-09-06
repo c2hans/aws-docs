@@ -48,7 +48,3 @@ AWS Security Incident Response uses a staged approach to achieve efficient and e
 <a name="containment-incident-lifecycle"></a>
 
 Containment sits between detection/analysis and eradication in the incident lifecycle. After automated triage identifies a confirmed or suspected threat and a case is created, the service determines whether containment action is warranted based on your preferences and the severity of the event. After a resource is contained, AWS Security Incident Response engineers continue the investigation, share findings with you, and guide you through eradication and recovery. After the incident is fully resolved, the containment actions are reversed and normal operations resume.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

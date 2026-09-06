@@ -89,7 +89,3 @@ CloudWatch launched extended retention of metrics in November 1, 2016. For more 
   <tr><td>Amazon Macie</td><td>Yes</td><td>Newly generated alerts and updates to existing alerts.<br />Macie finds any changes in the findings. These changes include newly generated findings or subsequent occurrences of existing findings.</td><td>Amazon Macie alert. For a list of supported Macie alert types, see <a href="https://docs.aws.amazon.com/macie/latest/user/findings.html">Analyzing Amazon Macie Findings</a>. Note that Macie is not enabled for all accounts.</td></tr>
 </tbody>
 </table>
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

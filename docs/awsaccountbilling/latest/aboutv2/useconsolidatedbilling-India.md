@@ -18,7 +18,3 @@ If your AWS India management account is unable to invite an account from a diffe
 The SOR of the AWS India accounts that join your organization might change depending on your management account's SOR:
 + If your management account is in AWS India, the SOR of all of the linked accounts is retained and doesn't change when they join your organization.
 + If your management account isn't in AWS India, you can still invite AWS India accounts to join your organization. However, their SORs automatically resolve to AWS Inc.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

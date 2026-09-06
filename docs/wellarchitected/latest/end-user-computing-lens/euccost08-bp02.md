@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Create your own customized CloudWatch dashboards to visualize key WorkSpaces Applications metrics for your WorkSpaces Applications fleets. These dashboards can contain several widgets that display a view of selected metrics of a specific WorkSpaces Applications fleet or across multiple WorkSpaces Applications fleets. Review these dashboards on a regular basis.
 
  Additionally, use the EUC Toolkit to review Amazon CloudWatch and OS-level metrics. This Toolkit also helps you manage large WorkSpaces and WorkSpaces Applications deployments at scale. After review of the metrics, determine whether changes to the fleet capacity or scaling policies are required, and plan for how to implement those changes. For more information, see [Use the EUC Toolkit to manage Amazon WorkSpaces Applications and Amazon WorkSpaces ](https://aws.amazon.com/blogs/desktop-and-application-streaming/euc-toolkit/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

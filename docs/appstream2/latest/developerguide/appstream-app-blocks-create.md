@@ -87,7 +87,3 @@ Application package (VHD) file size will not shrink if you uninstall an applicat
 1. Choose **Finish app block creation and disconnect** to create the application package and upload it to the Amazon S3 bucket. If you are successful, the streaming session will automatically disconnect, and the app block will be in an **Active** state.
 **Note**
 If your application installation fails, choose **Report a problem** to collect WorkSpaces Applications related logs from the instance, and report the problem to the WorkSpaces Applications team. When you are done, end your app block builder streaming session. You can try to restart the process creating an app block by using a new app block builder instance. If the problem persists, then try to create your app block using custom packaging.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

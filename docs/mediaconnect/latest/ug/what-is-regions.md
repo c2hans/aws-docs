@@ -43,7 +43,3 @@ You can use core MediaConnect flow functionality in all AWS Regions where the se
 | Europe (Stockholm) | eu-north-1 | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Middle East (UAE) | me-central-1 | ✓ |  |  |  |  |
 | South America (São Paulo) | sa-east-1 | ✓ | ✓ | ✓ |  | ✓ |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

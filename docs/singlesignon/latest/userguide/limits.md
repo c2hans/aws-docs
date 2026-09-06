@@ -90,7 +90,3 @@ If your IAM Identity Center instance is enabled in multiple AWS Regions, the req
 \* This quota applies separately to AWS accounts and to applications. You can configure up to 7000 accounts and up to 7000 applications.
 
 \*\* The[`ProvisionPermissionSet`](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_ProvisionPermissionSet.html) API operation can provision a permission set using the option `ALL_PROVISIONED_ACCOUNTS` to, at most, 3500 AWS accounts. If you need to provision a permission set to more than 3500 AWS accounts, you can use the `ProvisionPermissionSet` API operation with the `AWS_ACCOUNT` option, which provisions the permission set in a single AWS account. You can make up to three concurrent calls to `ProvisionPermissionSet`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

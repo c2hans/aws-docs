@@ -26,7 +26,3 @@ This solution uses Docker images with ﬁxed versions that match each solution r
 <a name="versions"></a>
 
 Customers on the latest solution version will receive security patches and minor, non-breaking, bug fixes automatically if they opt-in to automatic image updates. The image will automatically pull the latest image up to the latest matching minor version. In order to lock the container to a speciﬁc version, the task deﬁnition can be edited to specify the container to use a speciﬁc image version by using the tagged version of the image. Automatic updates can also be turned off by selecting **No** to automatic updates in CloudFormation when launching the stack. This will launch the image version matching the solution version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cost Optimizer for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

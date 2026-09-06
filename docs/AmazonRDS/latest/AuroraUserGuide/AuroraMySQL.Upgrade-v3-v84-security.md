@@ -128,7 +128,3 @@ If you upgrade a cluster that already has an `rdsproxyadmin` user that you creat
 However, after the upgrade, you can't modify the account. If you try to drop, rename, change privileges on, or change the password for `rdsproxyadmin`, the statement returns an error.
 
 If you want to remove the account after the upgrade, or reclaim the `rdsproxyadmin` name for RDS Proxy to use, contact [AWS Support](https://aws.amazon.com/premiumsupport/). AWS Support can remove a pre-existing `rdsproxyadmin` user carried forward from version 3.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -652,7 +652,3 @@ To bring this all together, we provide a more object-oriented approach that comb
 The complete source code for this example can be viewed or downloaded at [GitHub](https://github.com/aws/aws-sdk-java/tree/master/src/samples/AmazonEC2SpotInstances-Advanced).
 
 Congratulations\! You’ve completed the Advanced Request Features tutorial for developing Spot Instance software with the AWS SDK for Java.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

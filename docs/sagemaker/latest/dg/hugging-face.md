@@ -95,7 +95,3 @@ For a sample Jupyter Notebook, see the [Deploy your Hugging Face Transformers fo
 
 I want to deploy a pre-trained Hugging Face model in SageMaker AI.
 For a sample Jupyter Notebook, see the [Deploy pre-trained Hugging Face Transformers for inference example](https://github.com/huggingface/notebooks/blob/main/sagemaker/11_deploy_model_from_hf_hub/deploy_transformer_model_from_hf_hub.ipynb).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

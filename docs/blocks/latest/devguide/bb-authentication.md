@@ -42,7 +42,3 @@ Production-grade authentication powered by Amazon Cognito. Supports social sign-
 Locally, AuthCognito simulates auth flows. On AWS, it provisions a Cognito User Pool with your configured options. Best for production applications that need enterprise-grade auth features.
 
 For more information, see [bb-auth-cognito on GitHub](https://github.com/aws-devtools-labs/aws-blocks/tree/main/packages/bb-auth-cognito).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Blocks. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query blocks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

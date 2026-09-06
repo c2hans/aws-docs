@@ -96,7 +96,3 @@ If you are a first-time user of AWS Mainframe Modernization, we recommend that y
 AWS Mainframe Modernization charges for the usage of instances supporting the managed runtime environments. In addition, AWS Mainframe Modernization offers some tools without additional charges. You are responsible for fees incurred for other AWS services that you use in connection with AWS Mainframe Modernization. AWS will provide 30 days' notice before any pricing changes take effect for use of AWS Mainframe Modernization. For more information, see [Mainframe Modernization with AWS](https://aws.amazon.com/mainframe/).
 
 With AWS Transform for mainframe refactor, you pay for Transformation Center usage. For more information, see [AWS Mainframe Modernization pricing](https://aws.amazon.com/mainframe-modernization/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

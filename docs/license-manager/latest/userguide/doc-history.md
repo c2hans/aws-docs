@@ -44,7 +44,3 @@ The following table describes the releases of AWS License Manager.
 | Differentiate between license included and bring your own license | Filter your search results based on whether you are using licenses provided by Amazon or your own licenses. | November 8, 2019 |
 | Attach licenses to on-premises resources | After you attach licenses to an on-premises instance, License Manager periodically collects software inventory, updates licensing information, and reports usage. | March 8, 2019 |
 | AWS License Manager initial release | Initial service launch | November 28, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

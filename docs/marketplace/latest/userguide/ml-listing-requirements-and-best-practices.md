@@ -111,7 +111,3 @@ The following table provides a summary of the requirements and recommendations f
 | For training, provide an example of performing training jobs. Describe the supported hyperparameters, their ranges, and their overall impact. Specify if the algorithm supports hyperparameter tuning, distributed training, or GPU instances. Include code example such as AWS CLI commands or using an AWS SDK, for example.  |  Not applicable |  Required  |
 | Provide a Jupyter notebook hosted on GitHub demonstrating complete use of your product. See [Requirements for Jupyter notebook](#ml-requirements-for-jupyter-notebook).  |  Required  |  Required  |
 | Provide technical information related to the usage of the product, including user manuals and sample data.  |  Recommended  |  Recommended  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

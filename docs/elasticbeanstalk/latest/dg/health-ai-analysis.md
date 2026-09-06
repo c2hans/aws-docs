@@ -111,7 +111,3 @@ The `--analyze` option requires EB CLI version 3.27 or later.
 <a name="health-ai-analysis-supported-platforms"></a>
 
 AI analysis is supported on Amazon Linux 2 and AL2023 based platform versions released on or after [February 26, 2026](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2026-02-26-al2023.html). For Windows Server platforms, AI analysis is supported on platform versions released on or after [April 22, 2026](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2026-04-22-windows.html). To verify your platform version, see [Elastic Beanstalk release notes](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

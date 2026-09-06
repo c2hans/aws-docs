@@ -99,7 +99,3 @@ The same basic steps follow from the Participant service instructions, for usage
 1. Using your http client of choice, PUT file data to the signed Amazon S3 URL, ensuring that you add the headers as required from the response of Step 1.
 
 1. Call the `CompleteAttachedFileUpload` to finalize the upload to Amazon S3.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

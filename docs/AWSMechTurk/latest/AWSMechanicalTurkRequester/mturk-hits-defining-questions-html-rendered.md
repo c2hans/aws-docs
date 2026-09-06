@@ -24,7 +24,3 @@ In this example, the first line is the URL that was provided in an `ExternalQues
 + `workerId`: The ID of the worker
 
 In most cases, you won't need to directly interact with these values, but it can be useful information in various situations. For example, you can have your question check the `assignmentId` value to see if a worker is currently previewing your task or if they've accepted it. If the `assignmentId` is `ASSIGNMENT_ID_NOT_AVAILABLE,` you can disable input fields so that workers don't start working on it before they've accepted it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

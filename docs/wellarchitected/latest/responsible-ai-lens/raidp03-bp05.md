@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 +  [A Survey on Data Quality Dimensions and Tools for Machine Learning](https://arxiv.org/abs/2406.19614)
 +  [BoundingDocs: a Unified Dataset for Document Question Answering with Spatial Annotations](https://arxiv.org/pdf/2501.03403v1)
 +  [CodeUltraFeedback: An LLM-as-a-Judge Dataset for Aligning Large Language Models to Coding Preferences](https://arxiv.org/pdf/2403.09032v3)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -57,7 +57,3 @@ To connect the devices to your AWS IoT Greengrass Core device, do the following:
 1. Register the client device as an AWS IoT thing. For more information, see [Create a thing object](https://docs.aws.amazon.com/iot/latest/developerguide/create-iot-resources.html#create-aws-thing) in the *AWS IoT Core Developer Guide*. Add the private key, public key, device certificate, and root CA certificate to your client device. How you add the information depends on your device and software.
 
 Once you configure your device, you can use the certificate and public key chain to connect to the Greengrass core device. Your software is responsible for finding the core device endpoints. You can set the endpoint manually for the core device. For more information, see [Manually manage endpoints](manage-core-device-endpoints.md#manually-manage-endpoints).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

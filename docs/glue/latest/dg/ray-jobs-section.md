@@ -72,7 +72,3 @@ The number of M-DPUs that you can use concurrently in an account is subject to a
 You specify the number of worker nodes that are available to a Ray job with `--number-of-workers (NumberOfWorkers)` in the job definition. For more information about Ray values in the Jobs API, see [Jobs](aws-glue-api-jobs-job.md).
 
 You can further specify a minimum number of workers that a Ray job must allocate with the `--min-workers` job parameter. For more information about job parameters, see [Reference](author-job-ray-job-parameters.md#author-job-ray-parameters-reference).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

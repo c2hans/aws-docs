@@ -81,7 +81,3 @@ WHERE event_time >= TIMESTAMP '2024-04-18 00:00:00' AND event_time < TIMESTAMP '
 You can also use the `BETWEEN start_time AND end_time` syntax or use the multi-day ranges as long as the timestamps portions are `00:00:00`.
 
 For more information, see the [Trino blog post](https://trino.io/blog/2023/04/11/date-predicates.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

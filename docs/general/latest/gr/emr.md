@@ -168,7 +168,3 @@ If you specify the general endpoint (elasticmapreduce.amazonaws.com), Amazon EMR
 | Write-ahead logs (EMR WAL) | Each supported Region: 20,000 | No | The maximum number of Amazon EMR write-ahead logs (EMR WAL) that can be used at the same time in this account in the current Region. |
 
 Amazon EMR throttles the following API requests for each AWS account on a per-Region basis. For more information about how throttling is applied, see [API Request Throttling](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/throttling.html) in the *Amazon EC2 API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

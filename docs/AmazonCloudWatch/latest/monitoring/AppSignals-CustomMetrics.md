@@ -228,7 +228,3 @@ You can only create up to 100 metrics filters per CloudWatch Logs log group. Eac
 The solution depends on your metric type:
 + Custom metrics – See [Configuring custom metrics to Application Signals](#AppSignals-CustomMetrics-Adding) to verify the metric configuration
 + Standard or runtime metrics – See [Troubleshooting your Application Signals installation ](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Signals-Enable-Troubleshoot.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

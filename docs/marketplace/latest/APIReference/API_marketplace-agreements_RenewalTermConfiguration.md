@@ -14,7 +14,7 @@ Additional parameters specified by the acceptor while accepting the term.
 In the following list, the required parameters are described first.
 
  ** enableAutoRenew **   <a name="AWSMarketplaceService-Type-marketplace-agreements_RenewalTermConfiguration-enableAutoRenew"></a>
-Defines whether the acceptor has chosen to auto-renew the agreement at the end of its lifecycle. Can be set to `True` or `False`.
+Defines whether the acceptor has chosen to auto-renew the agreement when it reaches its end date. Can be set to `True` or `False`. The acceptor can change this value within the limits set by `LockoutPeriod` and `MaxRenewals`.
 Type: Boolean
 Required: Yes
 
@@ -25,7 +25,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/marketplace-agreement-2020-03-01/RenewalTermConfiguration)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/RenewalTermConfiguration)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/marketplace-agreement-2020-03-01/RenewalTermConfiguration)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

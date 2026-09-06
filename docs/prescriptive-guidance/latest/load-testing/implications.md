@@ -28,7 +28,3 @@ Running large tests and keeping many datapoints for a detailed analysis can resu
 <a name="bandwidth"></a>
 
 A load test usually requires a large amount of bandwidth, and it puts a strain on the servers. Scale the servers on which you run the load test appropriately. Make sure that the network upload provides enough bandwidth not to become the bottleneck. In most cases, you have a fewer servers generating load than the number of application servers receiving load. Therefore, the test servers require more bandwidth. At AWS, Amazon EC2 instances with the *n* as the suffix provide enhanced networking capabilities.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Build a Blender Docker image for GPU rendering on Deadline Cloud
 <a name="examples-container-blender"></a>
 
-The [blender-aswf-ci-base](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/containers/blender/blender-aswf-ci-base) example builds a Docker image that packages Blender with the [deadline-cloud-for-blender](https://github.com/aws-deadline/deadline-cloud-for-blender) adaptor and GPU support (CUDA/OptiX) for rendering on Deadline Cloud service-managed fleets. The base image is `aswf/ci-base:2026` (Rocky Linux 8, CUDA 12.9, VFX Platform 2026).
+The [blender-aswf-ci-base](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/containers/blender/blender-aswf-ci-base) example on the GitHub website builds a Docker image that packages Blender with the [deadline-cloud-for-blender](https://github.com/aws-deadline/deadline-cloud-for-blender) adaptor and GPU support (CUDA/OptiX) for rendering on Deadline Cloud service-managed fleets. The base image is `aswf/ci-base:2026` (Rocky Linux 8, CUDA 12.9, VFX Platform 2026).
 
 You can use this image for the following purposes:
 + Run Blender Cycles GPU renders on Deadline Cloud service-managed fleets.
@@ -36,7 +36,3 @@ The queue role needs Amazon ECR pull permissions (`ecr:BatchGetImage`, `ecr:GetD
 GPU rendering is automatic when the fleet has GPU instances. The queue environment conditionally adds `--gpus all --runtime=nvidia` based on whether the host has an NVIDIA GPU. CPU-only instances fall back to Cycles CPU rendering.
 
 For a job bundle that renders Blender scenes, see [Render Blender scenes on Deadline Cloud](examples-jb-blender-render.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,7 @@ There are two sets of tasks needed to prepare your game client:
 Set up your game client to find or start game sessions, request FlexMatch matchmaking, and reserve space for players in a game by creating player sessions.
 
 **Important**
-As a best practice, we highly recommend that your create a backend service to make all direct requests to the Amazon GameLift Servers service. Set up game client actions that initiate the backent service to make requests and then relay relevant responses back to the game client. For more information about setting up a backend service, see [ Design your backend service for Amazon GameLift Servers](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/gamelift_quickstart_customservers_designbackend.html).
+As a best practice, we highly recommend that you create a backend service to make all direct requests to the Amazon GameLift Servers service. Set up game client actions that initiate the backend service to make requests and then relay relevant responses back to the game client. For more information about setting up a backend service, see [ Design your backend service for Amazon GameLift Servers](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/gamelift_quickstart_customservers_designbackend.html).
 
 1. Add the AWS SDK to your game client, initialize an Amazon GameLift Servers client, and configure it to use the hosting resources in your fleets and queues. The AWS SDK is available in several languages; see the Amazon GameLift Servers SDKs [Amazon GameLift Servers development tools for game clients](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/gamelift-supported.html#gamelift-supported-clients).
 
@@ -201,7 +201,3 @@ namespace Example
     }
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

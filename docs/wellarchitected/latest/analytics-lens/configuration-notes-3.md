@@ -28,7 +28,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/co
 +  `ClusterStatus.yellow` maximum is >= 1 for 1 minute, 1 consecutive time
 +  `JVMMemoryPressure` maximum is >= 80% for 5 minutes, 3 consecutive times
 +  `FreeStorageSpace` minimum is <= 25% of the storage space for 1 minute, 1 consecutive time
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

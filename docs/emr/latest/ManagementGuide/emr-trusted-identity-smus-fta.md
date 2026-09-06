@@ -126,7 +126,3 @@ To avoid ongoing charges, delete the resources you created for this tutorial:
 + Remove the Amazon EMR compute connection from your Amazon SageMaker Unified Studio project, and delete the Amazon SageMaker Unified Studio project and domain if you created them only for this tutorial.
 + Deregister the Amazon S3 data location in Lake Formation and delete any test Amazon S3 buckets.
 + Delete the IAM roles you created (for example, the access role and the Lake Formation location registration role).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

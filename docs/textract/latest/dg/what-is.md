@@ -42,7 +42,3 @@ If this is your first time using Amazon Textract, we recommend that you read the
 1. **[Identifying Your Amazon Textract Use Case](how-it-works.md)** – This section introduces the Amazon Textract components and how they work together for an end-to-end experience.
 
 1. **[Getting Started with Amazon Textract](getting-started.md)** – In this section, you set up your account and test the Amazon Textract API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

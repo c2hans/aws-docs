@@ -20,7 +20,3 @@ To configure Systems Manager and enable automatic updates of the CodeDeploy agen
 <a name="codedeploy-agent-operations-update-windows-manual"></a>
 
 To update the CodeDeploy agent manually, you can install the latest version from the CLI or using Systems Manager. Follow the instructions in [ Install the CodeDeploy agent.](https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install.html) It is recommended that you uninstall older versions of the CodeDeploy agent by following the instructions in [ Uninstall the CodeDeploy agent](https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-uninstall.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

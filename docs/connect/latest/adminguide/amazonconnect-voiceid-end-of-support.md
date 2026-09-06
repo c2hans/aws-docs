@@ -20,7 +20,3 @@ You can improve contact center security by enabling One-Time-Pin (OTP) based aut
 You can get information about all your Voice ID domains in your AWS accounting using the Voice ID `ListDomains` API in conjunction with the `DescribeDomain` API. For more information about managing your Connect Customer Voice ID domains, see [Manage Connect Customer Voice ID domains](voiceid-domain-operations.md).
 
 For a specific Voice ID domain, you can download data about enrolled callers using the `ListSpeakers` API and registered fraudsters using `ListFraudsters` API. For more information about speaker and fraudster management, see [Connect Customer Voice ID speaker, watchlist, and fraudster management APIs](voiceid-speaker-fraudster-management-apis.md). You can make sure that all your customer data on Voice ID is deleted by using the Voice ID `DeleteDomain` API. You need to perform this operation for every Voice ID domain in every AWS Region and every account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

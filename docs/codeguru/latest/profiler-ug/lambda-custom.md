@@ -86,7 +86,3 @@ public class MyHandler {
 ```
 
 Your Lambda function runs the way it typically does, while the CodeGuru Profiler profiling agent runs in parallel. After running for 5 minutes, the agent submits your first profile. Processing can take up to 15 minutes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,7 +64,3 @@ This release includes all community bug fixes up to and including 8.0.23, in add
 + Fixed an issue where a stored procedure containing an IF statement using EXISTS, which acted on one or more tables that were deleted and recreated between executions, did not execute correctly for subsequent invocations following the first one. (MySQL Bug \#32855634).
 + Incorrect AUTO\_INCREMENT values were generated when the maximum integer column value was exceeded. The error was due to the maximum column value not being considered. The previous valid AUTO\_INCREMENT value should have been returned in this case, causing a duplicate key error. (Bug \#87926, Bug \#26906787)
 + Fixed an issue which can lead to a failure while upgrading an Aurora MySQL version 1 (Compatible with MySQL 5.6) database cluster containing user-created table with certain table IDs. Assignment of these table IDs may result in conflicting data dictionary table IDs while upgrading from Aurora MySQL version 2 (Compatible with MySQL 5.7) to Aurora MySQL version 3 (Compatible with MySQL 8.0) (Bug \#33919635)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

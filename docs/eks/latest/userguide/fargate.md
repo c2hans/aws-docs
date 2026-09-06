@@ -100,7 +100,3 @@ Here are some things to consider about using Fargate on Amazon EKS.
 |  AWS Region availability |  [Some Amazon EKS supported regions](https://docs.aws.amazon.com/general/latest/gr/eks.html)  |
 | Can run containers on Amazon EC2 dedicated hosts | No |
 | Pricing | Cost of an individual Fargate memory and CPU configuration. Each Pod has its own cost. For more information, see [AWS Fargate pricing](https://aws.amazon.com/fargate/pricing/). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

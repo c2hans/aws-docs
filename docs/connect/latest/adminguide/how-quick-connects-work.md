@@ -86,7 +86,3 @@ Even though the status of the transferred call (internal-transfer) shows on John
 There are no flows involved in a phone number quick connect. When an agent invokes a phone number quick connect, the call is directly connected to the destination without invoking any flows.
 
 Because no flow is involved in phone number quick connects, you can't set the outbound caller ID. Instead, the caller ID that you specified when you [created the queue](create-queue.md) is used.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

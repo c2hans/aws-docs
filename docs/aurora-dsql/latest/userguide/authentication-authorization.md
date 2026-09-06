@@ -170,7 +170,3 @@ To revoke access to database roles other than `admin`, revoke the IAM identity�
 You can also remove the association between the database role and IAM by using the command `AWS IAM REVOKE` in your database. To learn more about revoking access from database roles, see [Revoking database authorization from an IAM role](using-database-and-iam-roles.md#using-database-and-iam-roles-revoke).
 
 You can't manage permissions of the predefined `admin` database role. To learn how to manage permissions for custom database roles, see [PostgreSQL privileges](https://www.postgresql.org/docs/current/ddl-priv.html). Modifications to privileges take effect on the next transaction after Aurora DSQL successfully commits the modification transaction.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

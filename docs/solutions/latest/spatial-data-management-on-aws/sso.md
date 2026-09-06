@@ -85,7 +85,3 @@ The portal uses the refresh token to obtain new ID and access tokens without pro
 Because group membership is carried in the ID token, a change to a user’s groups in your identity provider takes effect in SDMA only when Amazon Cognito issues new tokens.
 
 You can change these lifetimes on the portal app client (`<APP_CLIENT>`) in the Amazon Cognito console. For more information about token lifetimes, see [Understanding user pool JSON web tokens (JWTs)](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-using-tokens-with-identity-providers.html) in the *Amazon Cognito Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

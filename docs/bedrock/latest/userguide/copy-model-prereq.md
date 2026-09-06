@@ -48,7 +48,3 @@ To allow a role to copy a model, you might have to set up permissions, depending
 1. (Optional) If the model to be copied is encrypted with a KMS key, attach a [key policy to the KMS key that encrypted the model](encryption-custom-job.md#encryption-key-policy-decrypt) to allow a role to decrypt it. Specify the account that the model will be shared with in the `Principal` field.
 
 1. (Optional) If you plan to encrypt the model copy with a KMS key, attach a [key policy to the KMS key that will be used to encrypt the model](encryption-custom-job.md#encryption-key-policy-encrypt) to allow a role to encrypt the model with the key. Specify the role in the `Principal` field.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

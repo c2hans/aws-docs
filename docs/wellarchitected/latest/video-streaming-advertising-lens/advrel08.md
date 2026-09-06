@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 + [ADVREL08-BP01 Design resilient architectures with privacy-preserving fault tolerance](advrel08-bp01.md)
 + [ADVREL08-BP02 Maintain data consistency and availability across collaboration workflows](advrel08-bp02.md)
 + [ADVREL08-BP03 Implement secure and privacy-preserving recovery mechanisms for collaboration workloads](advrel08-bp03.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

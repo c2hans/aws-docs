@@ -68,7 +68,3 @@ You might want to take this opportunity to make other configuration changes on o
 We strongly recommend that you don't make these changes to the configuration until you have tested your workflows in the new setup.
 
 1. Start channels on this node. You assigned the channels to this node when you added the node to the cluster. Therefore, the channels that were running on this node in the original cluster will restart on this node in the new cluster. See [Restarting channels](migrate-topic-channel-start.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

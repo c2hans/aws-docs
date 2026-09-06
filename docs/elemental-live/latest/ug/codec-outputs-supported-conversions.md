@@ -12,7 +12,3 @@ Generally, Elemental Live can convert any audio codec that is supported as a sou
   + The source can contain fewer channels. For example, you can convert Dolby 5.1 to AAC 2.0.
 
   In both cases, you might need to remix the channels in the output.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

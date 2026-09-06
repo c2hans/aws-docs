@@ -35,7 +35,3 @@ ECO supports customers with incident management and service request management, 
 To report an EDI service performance issue, use the AWS Support Center and submit an incident case. For details, see [Submitting EDI incidents](incident-mgmt.md#incident-submit). For general information about ECO incident management, see [Incident management in ECO](incident-mgmt.md).
 
 To request information, advice, or additional services from ECO, use the AWS Support Center and submit a service request. For details, see [Creating EDI service requests](service-request-mgmt.md#service-request-create).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Energy Data Insights on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query EDI` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

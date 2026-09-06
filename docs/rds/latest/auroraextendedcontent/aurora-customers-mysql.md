@@ -406,7 +406,3 @@ Wensheng Wang, CTO - Fujian Zixun
 "Our existing MySQL databases perform millions of transactions per day and we expect them to continue to grow. Amazon Aurora will give us better performance and scalability than MySQL, as well as lower latency read replicas, and we see an opportunity to use Amazon Aurora to improve the latency of our website while also reducing the number of instances required to run it. Best of all, Amazon Aurora's MySQL-compatibility means that we can use it without making changes to our existing applications."
 
 Douglas Jarquin, Director of DevOps - Zumba
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

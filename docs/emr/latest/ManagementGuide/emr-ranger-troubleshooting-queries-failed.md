@@ -18,7 +18,3 @@ This section is common across all applications that integrate with the Ranger pl
 If within Ranger Admin server your AMAZON-EMR-SPARK service looks like the following, then you should enter **amazonemrspark** as the service name.
 
 ![Ranger Admin server showing AMAZON-EMR-SPARK troubleshooting.](http://docs.aws.amazon.com/emr/latest/ManagementGuide/images/ranger-amazon-emr-spark-troubleshooting.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

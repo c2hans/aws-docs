@@ -207,7 +207,3 @@ Additionally, the production database backups stored in Amazon S3, Amazon EBS Sn
 + Well documented and tested processes are required for scaling the AWS resources, restoring the data, and moving production to the secondary Region.
 + Higher network latency from your on-premises locations to the secondary AWS Region may impact end user performance.
 + In the event of compute, Availability Zone or Region failure due to lack of high availability across two Availability Zones, there is an increased time required to recover production.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

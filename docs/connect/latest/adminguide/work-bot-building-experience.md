@@ -57,7 +57,3 @@ Your bot must have at least one intent. There are two types of intents:
      + **Closing response message**: This is the response sent to the user after the intent is fulfilled and all other messages are played. For example, "Thank you for booking a hotel room."
 
 For more information about intents for Amazon Lex bots intents and advanced configurations, see [Adding intents](https://docs.aws.amazon.com/lexv2/latest/dg/add-intents.html) in the *Amazon Lex V2 Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

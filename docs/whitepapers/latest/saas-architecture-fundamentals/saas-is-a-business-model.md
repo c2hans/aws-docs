@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  SaaS is a business and software delivery model that gives organizations the ability to offer their solutions in a low-friction, service-centric model that maximizes value for customers and providers. It relies on agility and operational efficiency as pillars of a business strategy that promotes growth, reach, and innovation.
 
  You should see the alignment between the business objectives and how they rely on having a shared experience for all customers. A big part of moving to SaaS means moving away from the one-off customizations that might be part of a traditional software model. Any effort to offer specialization for customers generally takes us away from the core values we are trying to achieve with SaaS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

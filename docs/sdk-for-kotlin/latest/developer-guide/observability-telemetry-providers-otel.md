@@ -56,7 +56,3 @@ The following resources are available to help you get started with OpenTelemetry
 +  [aws-otel-lambda](https://github.com/aws-observability/aws-otel-lambda) - AWS managed OpenTelemetry Lambda layers
 +  [aws-otel-collector](https://github.com/aws-observability/aws-otel-collector) - AWS Distro for OpenTelemetry Collector
 +  [AWS Observability Best Practices](https://aws-observability.github.io/observability-best-practices/) - General best practices for observability specific to AWS
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Kotlin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-kotlin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

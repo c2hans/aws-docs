@@ -27,7 +27,3 @@ Use the following topics to help you identify and fix certain common types of fa
 + [Diagnosing and remediating unmanaged Amazon EC2 instances in Systems Manager](remediating-unmanaged-instances.md)
 + [Remediation impact types of runbook actions](remediation-impact-type.md)
 + [Viewing execution progress and history for remediations in Systems Manager](diagnose-and-remediate-execution-history.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -113,7 +113,3 @@ An important step is deciding which policy should contain this statement. You co
   ```
 
   In this statement, the `Condition` element defines the IAM principal that is excluded from the SCP. This statement denies any IAM principal permissions to update or delete CloudFormation stacks unless the ARN of the IAM principal matches the ARN in the `Condition` element. The `aws:PrincipalARN` condition key accepts a list, which means that you can exclude more than one IAM principal from the restrictions, as necessary for your environment. For a similar SCP that prevents modifications to CloudFormation resources, see [SCP-CLOUDFORMATION-1](https://aws-samples.github.io/aws-iam-permissions-guardrails/guardrails/scp-guardrails.html#scp-cloudformation-1) (GitHub).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

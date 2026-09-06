@@ -61,7 +61,3 @@ All the security measures, controls, and tasks in this scenario come *in additio
 +  [Choosing a Well-Architected CI/CD approach: Open-source software and AWS services ](https://aws.amazon.com/blogs/devops/choosing-well-architected-ci-cd-open-source-software-aws-services/)
 +  [How to build a CI/CD pipeline for container vulnerability scanning with Trivy and AWS Security Hub CSPM](https://aws.amazon.com/blogs/security/how-to-build-ci-cd-pipeline-container-vulnerability-scanning-trivy-and-aws-security-hub/)
 +  [Building end-to-end AWS DevSecOps CI/CD pipeline with open source SCA, SAST and DAST tools ](https://aws.amazon.com/blogs/devops/building-end-to-end-aws-devsecops-ci-cd-pipeline-with-open-source-sca-sast-and-dast-tools/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

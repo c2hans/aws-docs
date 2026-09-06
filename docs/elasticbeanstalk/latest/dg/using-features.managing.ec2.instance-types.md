@@ -21,7 +21,3 @@ Create new environments that run Amazon EC2 instances on arm64 architecture and 
 To learn more about Graviton arm64 based processors, see these AWS resources:
 Benefits — [The AWS Graviton Processor](https://aws.amazon.com/ec2/graviton/)
 *Getting started* and other topics, such as *Language-specific considerations* — [Getting started with AWS Graviton](https://github.com/aws/aws-graviton-getting-started#getting-started-with-aws-graviton) GitHub article
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

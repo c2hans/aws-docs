@@ -17,7 +17,3 @@ To learn how to set a retention period using the AWS CLI, see [Enabling and disa
 
 **Note**
 Stopping a DB instance or Multi-AZ DB cluster with Database Insights enabled doesn't affect data retention. While a DB instance or Multi-AZ DB cluster is stopped, Database Insights won't collect any data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

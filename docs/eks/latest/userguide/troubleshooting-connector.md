@@ -228,7 +228,3 @@ eks-connector-0   0/2     Init:ImagePullBackOff   0          4s
 ```
 
 The default Amazon EKS Connector manifest file references images from the [Amazon ECR Public Gallery](https://gallery.ecr.aws/). It’s possible that the target Kubernetes cluster can’t pull images from the Amazon ECR Public Gallery. Either resolve the Amazon ECR Public Gallery image pull issue, or consider mirroring the images in the private container registry of your choice.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

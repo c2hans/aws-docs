@@ -108,7 +108,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/change-enablement
  As changes become more frequent with agile methodologies and automation, there is a risk that the process becomes overburdened with normal changes. Higher velocity can lead to delaying changes due to bandwidth or resource constraints, causing important details to be missed. Both scenarios introduce business risk that change enablement aims to optimize. In an environment of small, frequent changes, standard (automated) changes become the new standard. You should then give proper scrutiny to normal changes, which helps you reduce business risk and deliver on desired business outcomes.
 
  Smaller changes also enable increase in frequency. By changing frequently, you improve your organization's capability, which minimizes business disruption (ITIL® 4: High-Velocity IT, PeopleCert\+). This alone can positively impact business value and operational metrics expected from your move to AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

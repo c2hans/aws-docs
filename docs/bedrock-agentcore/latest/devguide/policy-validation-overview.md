@@ -26,7 +26,3 @@ Semantic validation uses automated reasoning to detect potential security and lo
 The `validationMode` parameter controls whether semantic validation runs during policy creation and updates. It does **not** affect schema checks, which always run.
 +  `FAIL_ON_ANY_FINDINGS` (default) — Both schema checks and semantic validation run. If either produces findings, the policy is rejected.
 +  `IGNORE_ALL_FINDINGS` — Only schema checks run. Policies are accepted as long as they pass the schema checks. This is not recommended for production because semantic validation catches security and logic issues that schema checks alone cannot detect.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

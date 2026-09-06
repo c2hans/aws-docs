@@ -121,7 +121,3 @@ For a complete list of AWS SDK developer guides and code examples, see [Using th
   + [Creating a container service for virtual machine instances](example_ecs_GettingStarted_018_section.md)
   + [Getting started with virtual machines](example_ec2_GettingStarted_013_section.md)
   + [Setting up systems management](example_iam_GettingStarted_046_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

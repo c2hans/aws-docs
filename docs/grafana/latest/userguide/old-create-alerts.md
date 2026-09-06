@@ -123,7 +123,3 @@ As you can see from the previous scenario, if the rule already is in state `Aler
 <a name="old-alert-state-history-and-annotations"></a>
 
  Alert state changes are recorded in the internal annotation table in the Amazon Managed Grafana database. The state changes are visualized as annotations in the graph panel of the alert rulel. You can also go into the `State history` submenu on the **Alert** tab to view and clear state history.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

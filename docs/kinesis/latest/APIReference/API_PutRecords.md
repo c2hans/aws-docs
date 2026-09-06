@@ -38,6 +38,7 @@ By default, data records are accessible for 24 hours from the time that they are
 
 ```
 {
+   "DryRun": {{boolean}},
    "Records": [
       {
          "Data": {{blob}},
@@ -55,6 +56,11 @@ By default, data records are accessible for 24 hours from the time that they are
 <a name="API_PutRecords_RequestParameters"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [DryRun](#API_PutRecords_RequestSyntax) **   <a name="Streams-PutRecords-request-DryRun"></a>
+Checks if your request will succeed. `DryRun` is an optional parameter.
+Type: Boolean
+Required: No
 
  ** [Records](#API_PutRecords_RequestSyntax) **   <a name="Streams-PutRecords-request-Records"></a>
 The records associated with the request.
@@ -132,6 +138,10 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 Specifies that you do not have the permissions required to perform this operation.
+HTTP Status Code: 400
+
+ ** DryRunOperationException **
+The request was rejected because the DryRun parameter was specified.
 HTTP Status Code: 400
 
  ** InternalFailureException **
@@ -339,7 +349,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/kinesis-2013-12-02/PutRecords)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/kinesis-2013-12-02/PutRecords)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/kinesis-2013-12-02/PutRecords)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

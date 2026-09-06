@@ -157,7 +157,3 @@ Once you've completed sign-up, you can start sending messages. When you're ready
 + Learn how to [send a text or media message](whatsapp-send-message.md).
 + Learn how to [receive a message](whatsapp-receive-message.md).
 + Learn about [Official Business Accounts](whatsapp-business-account.md) to have a green check mark beside your display name and increase your message throughput.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

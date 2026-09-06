@@ -46,7 +46,3 @@ You can refer to the **Example** worksheet in the spreadsheet for an example dat
 1. Use the **License(s) summary** section to clarify the list of licenses that you need to bring to AWS for the recommended dedicated hosts.
 
 1. Choose **Save and add service** to save your estimate prices, and add additional services to the AWS Pricing Calculator.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Pricing Calculator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pricing-calculator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

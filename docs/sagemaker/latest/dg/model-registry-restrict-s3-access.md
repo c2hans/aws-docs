@@ -118,7 +118,3 @@ Your account records both the tagging of the session and the resulting access de
 + In Amazon S3 data events or server access logs, `GetObject` requests against the artifact prefix show whether each read was allowed or denied, so you can confirm that non-deployment access is being refused.
 
 Before applying the policies to a production bucket, you can evaluate them with the IAM policy simulator to confirm that a deployment session is allowed and that a session without the tag is denied. For more information, see [Testing IAM policies with the IAM policy simulator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

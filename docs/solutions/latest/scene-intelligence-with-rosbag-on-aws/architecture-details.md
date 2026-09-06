@@ -34,7 +34,3 @@ The final stage of the Amazon MWAA DAG applies custom business logic to the extr
 <a name="search-metadata-output"></a>
 
 After the solution writes the data to OpenSearch Service, you can query the data with [OpenSearch Dashboards](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/dashboards.html). The solution provides an Amazon EC2 instance that acts as a proxy for secure communication. This proxy only allows [AWS Systems Manager](https://aws.amazon.com/systems-manager/) tunneling for port-forwarding to enable secure communication.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Scene Intelligence with Rosbag on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

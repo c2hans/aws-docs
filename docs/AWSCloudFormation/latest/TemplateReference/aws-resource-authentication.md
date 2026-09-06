@@ -23,7 +23,7 @@ For sources, CloudFormation looks for authentication information in the `uris` o
 
 **Topics**
 + [Syntax](#aws-resource-cloudformation-authentication-syntax)
-+ [Properties](#w2aac19c23c15c19)
++ [Properties](#w2aac19c23c17c19)
 + [Examples](#aws-resource-authentication-examples)
 
 ## Syntax
@@ -76,7 +76,7 @@ AWS::CloudFormation::Authentication
 ```
 
 ## Properties
-<a name="w2aac19c23c15c19"></a>
+<a name="w2aac19c23c17c19"></a>
 
 `accessKeyId`  <a name="cfn-cloudformation-authentication-accesskeyid"></a>
 Specifies the access key ID for S3 authentication.
@@ -293,7 +293,3 @@ AWS::CloudFormation::Authentication:
       - !Sub ${BucketName}
     roleName: !Ref myRole
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

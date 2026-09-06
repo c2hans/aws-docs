@@ -213,7 +213,3 @@ For more information, see [Access error: Public key is uploaded successfully to 
 <a name="setting-up-ssh-unixes-next-step"></a>
 
 You have completed the prerequisites. Follow the steps in [Getting started with CodeCommit ](getting-started-cc.md) to start using CodeCommit.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

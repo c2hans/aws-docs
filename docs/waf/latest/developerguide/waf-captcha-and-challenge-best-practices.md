@@ -50,7 +50,3 @@ Review your existing rules, to see if you want to alter or add to them. The foll
 As for all new functionality, follow the guidance at [Testing and tuning your AWS WAF protections](web-acl-testing.md).
 
 During testing, review your token timestamp expiration requirements and set your web ACL and rule level immunity time configurations so that you achieve a good balance between controlling access to your website and providing a good experience for your customers. For information, see [Setting timestamp expiration and token immunity times in AWS WAF](waf-tokens-immunity-times.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

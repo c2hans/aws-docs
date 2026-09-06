@@ -35,7 +35,3 @@ This checklist includes the configuration tasks that are necessary to prepare yo
   - **Reference:**  +  [Assign user or group access to AWS accounts](assignusers.md)
 
 After you complete these steps, users who federate into an AWS account using single sign-on will get access to their AWS resources based on matching attributes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

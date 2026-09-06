@@ -128,7 +128,3 @@ AWS Transform has the following limitations:
 + Multi-account migration – Single region only – You can migrate to multiple accounts within a single AWS Region. For multi-Region migrations, you must create separate projects for each target region.
 + Multi-account migration – One account per wave – Each migration wave can target only one account. Applications requiring different target accounts must be placed in separate waves.
 + Multi-account migration – AWS Organizations required – All target accounts must be part of an AWS Organization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

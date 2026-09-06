@@ -66,7 +66,3 @@ Customer is responsible for securing their service and API calls in the followin
 1.  Customers must make sure that their system's available, and that they’re protected against [DDoS attacks](https://en.wikipedia.org/wiki/Denial-of-service_attack). Here are some examples of [defense techniques](https://en.wikipedia.org/wiki/Denial-of-service_attack#Defense_techniques) against DDoS attacks.
 
 Customers are responsible for keeping their applications up-to-date. For more information, see [Face Liveness update guidelines](face-liveness-update-guidelines.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

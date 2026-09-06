@@ -311,7 +311,3 @@ For information about other options you can use with the **start-session** comma
 +  [Amazon EC2 instance port forwarding with AWS Systems Manager](https://aws.amazon.com/blogs/mt/amazon-ec2-instance-port-forwarding-with-aws-systems-manager/)
 +  [Manage AWS Managed Microsoft AD resources with Session Manager port forwarding](https://aws.amazon.com/blogs/mt/manage-aws-managed-microsoft-ad-resources-with-session-manager-port-forwarding/)
 + [Port Forwarding Using AWS Systems Manager Session Manager](https://aws.amazon.com/blogs/aws/new-port-forwarding-using-aws-system-manager-sessions-manager/) on the *AWS News Blog*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

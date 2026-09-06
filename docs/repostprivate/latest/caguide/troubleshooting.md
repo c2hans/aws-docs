@@ -28,7 +28,3 @@ Make sure that you enabled AWS IAM Identity Center for your account and set up I
 <a name="manage-console-issue"></a>
 
 Be sure that you have the required permissions to edit a private re:Post and manage users and groups within the private re:Post. For more information, see [AWS re:Post Private identity-based policy examples](security-iam-policy-examples.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

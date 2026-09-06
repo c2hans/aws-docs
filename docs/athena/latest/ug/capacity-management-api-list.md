@@ -14,7 +14,3 @@ The following list contains reference links to Athena capacity reservation API a
 +  [ListCapacityReservations](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListCapacityReservations.html)
 +  [PutCapacityAssignmentConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_PutCapacityAssignmentConfiguration.html)
 +  [UpdateCapacityReservation](https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateCapacityReservation.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

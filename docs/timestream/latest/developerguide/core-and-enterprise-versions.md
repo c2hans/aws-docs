@@ -71,7 +71,3 @@ Choose Core when:
 +  You require multi-node deployments for better performance distribution.
 
  Both versions leverage Amazon Timestream for InfluxDB's managed service benefits, including automated backups, software updates, and integration with AWS services, while providing the flexibility to choose the feature set that best matches your workload requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

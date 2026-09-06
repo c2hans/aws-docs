@@ -27,7 +27,3 @@ The **Broker** must be installed on a separate host, but it must have network co
 The **Agents** must be able to initiate secure, persistent, bi-directional HTTPs connections with the Broker.
 
 Your **client**, or frontend application, must be able to access the Broker in order to call the APIs. The client should also be able to access your authentication server.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

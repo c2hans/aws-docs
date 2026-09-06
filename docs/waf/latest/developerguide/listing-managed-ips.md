@@ -43,7 +43,3 @@ For a rate-based rule that you've defined inside a rule group, you need to provi
 ```
 aws wafv2 get-rate-based-statement-managed-keys --scope=REGIONAL --region={{region}} --web-acl-name={{WebACLName}} --web-acl-id={{WebACLId}} --rule-group-rule-name={{RuleGroupRuleName}} --rule-name={{RuleName}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

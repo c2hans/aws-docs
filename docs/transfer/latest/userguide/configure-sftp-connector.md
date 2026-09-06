@@ -61,7 +61,3 @@ IP addressing mode applies only to connectors with service-managed egress type. 
 + [Create an SFTP connector with service-managed egress](create-sftp-connector-procedure.md)
 + [Create an SFTP connector with VPC-based egress](create-vpc-sftp-connector-procedure.md)
 + [Test an SFTP connector](test-sftp-connector.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

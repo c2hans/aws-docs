@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/t_rls_performance.htm
 # Best practices for RLS performance
 <a name="t_rls_performance"></a>
 
-Following are best practices to ensure better performance from Amazon Redshift on tables protected by RLS.
+Following are best practices for better performance from Amazon Redshift on tables protected by RLS.
 
 ## Safety of operators and functions
 <a name="t_rls_safe_operators"></a>
@@ -97,7 +97,3 @@ WHERE DATE_TRUNC(datepart_col, event_date) = '2024-01-01';
 ```
 
 For the full list of conditionally safe functions and which arguments must be constant, see [Conditionally safe functions](#t_rls_conditional_safety).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

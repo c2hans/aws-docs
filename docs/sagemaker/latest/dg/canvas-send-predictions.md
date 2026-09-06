@@ -76,7 +76,3 @@ After you send your batch predictions, the **QuickSight** field for the datasets
 The Quick users that you’ve sent datasets to can open their Quick application and view the Canvas datasets that have been shared with them. Then, they can create predictive dashboards with the data. For more information, see [Getting started with Quick data analysis](https://docs.aws.amazon.com/quicksight/latest/user/getting-started.html) in the *Quick User Guide*.
 
 By default, all of the users to whom you send predictions have owner permissions for the dataset in Quick. Owners are able to create analyses, refresh, edit, delete, and re-share datasets. The changes that owners make to a dataset change the dataset for all users with access. To change the permissions, go to the dataset in Quick and manage its permissions. For more information, see [Viewing and editing the permissions users that a dataset is shared with](https://docs.aws.amazon.com/quicksight/latest/user/sharing-data-sets.html#view-users-data-set) in the *Quick User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

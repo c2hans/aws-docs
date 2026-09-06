@@ -29,7 +29,3 @@ When working with openCypher on Amazon Neptune, a variety of exceptions may occu
 | 400 | There is no token passed as part of the request | No | A properly signed token must be passed as part of the query request on an IAM enabled cluster. |
 | 400 | Error message is propagated. | No | Contact AWS Support with the Request Id. |
 | 500 | Operation terminated (internal error) | Yes | Contact AWS Support with the Request Id. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

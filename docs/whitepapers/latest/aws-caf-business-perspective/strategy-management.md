@@ -53,7 +53,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-pers
 +  Assign adequate and clear responsibilities for the definition and implementation of your strategy, while ensuring that the senior leader responsible has sufficient organizational, strategic, and digital technology experience.
 +  As your strategy is implemented you will want visible [insights](https://aws.amazon.com/executive-insights/insights/) on its progress in order to ensure success. Translate your strategic goals into quantitative targets and monitor the performance achieved against these outcomes. Consider using an integrated framework (such as the [balanced scorecard](https://en.wikipedia.org/wiki/Balanced_scorecard)) for harmonizing financial and non-financial goals.
 +  To promote understanding, continually communicate your strategy, initiatives, and targets to all employees.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

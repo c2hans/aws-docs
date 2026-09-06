@@ -18,7 +18,3 @@ Application owners and co-owners can duplicate their apps to create an exact cop
 1. Optionally provide a name of the duplicated app. The default name is {{Current\_App\_Name COPY}}.
 
 1. Choose **Duplicate**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

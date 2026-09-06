@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/emergency-
 1. Remove all users from the emergency access group in the IdP.
 
 Your emergency access role infrastructure remains in place as a backup access plan, but it is now disabled.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

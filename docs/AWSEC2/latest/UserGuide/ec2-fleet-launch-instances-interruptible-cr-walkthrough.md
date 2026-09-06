@@ -180,7 +180,3 @@ To stop incurring charges, terminate the instances when they are no longer neede
 + [Work with EC2 Fleet](manage-ec2-fleet.md)
 + [Create an EC2 Fleet](create-ec2-fleet.md)
 + [Store instance launch parameters in Amazon EC2 launch templates](ec2-launch-templates.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

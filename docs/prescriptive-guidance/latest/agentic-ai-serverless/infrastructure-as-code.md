@@ -114,7 +114,3 @@ IaC for enterprise-grade serverless AI systems is the foundation that transforms
 + Scalable with the same pace as AI adoption
 
 Whether using AWS CDK for dynamic constructs, CloudFormation for audit-aligned deployments, or AWS SAM for focused pipelines, IaC is the control plane of the intelligent, event-driven cloud.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

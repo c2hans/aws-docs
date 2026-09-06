@@ -40,7 +40,3 @@ The new schema for the statistics object.
 **{{new\_target}}**
 The statistic-gathering target for this statistics object for subsequent `ANALYZE` operations. In Aurora DSQL, the target can be set in the range `0` to `100`. Set it to `DEFAULT` to revert to using the system default statistics target (`default_statistics_target`). (Setting it to a value of `-1` is an obsolete spelling to get the same outcome.)
 If you set a target greater than `100`, Aurora DSQL returns the error `statistics target N exceeds maximum allowed value of 100`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

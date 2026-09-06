@@ -18,7 +18,3 @@ You can perform data preparation and analysis on datasets in Amazon FinSpace. Yo
 + [Importing library in Amazon FinSpace](import-library.md)
 + [Accessing Amazon S3 Bucket from FinSpace notebook](access-s3-buckets.md)
 + [Amazon FinSpace Spark time series library](finspace-time-series-library.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

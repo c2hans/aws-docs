@@ -85,7 +85,3 @@ The crawler reads data at the source location and creates tables in the Data Cat
 1. In the left-side navigation, under **Data catalog** and below **Databases**, choose **Tables**. Here you can view the `flightscsv` table created by the crawler. If you choose the table name, then you can view the table settings, parameters, and properties. Scrolling down in this view, you can view the schema, which is information about the columns and data types of the table.
 
 1. If you choose **View partitions** on the table view page, you can see the partitions created for the data. The first column is the partition key.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

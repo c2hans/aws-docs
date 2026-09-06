@@ -267,7 +267,3 @@ The following are configuration object classifications for Apache Ranger KMS.
 + It is highly recommended that you use separate MySQL database for each Amazon EMR cluster with multiple primary nodes for high security bar.
 + To configure transparent encryption in HDFS on an Amazon EMR cluster with multiple primary nodes, you must specify the `hdfs-encryption-zones` classification while creating the cluster. Otherwise, Ranger KMS will not be configured or started. Reconfiguring `hdfs-encryption-zones` classification or any of the Hadoop KMS configuration classifications on a running cluster is not supported on Amazon EMR cluster with multiple primary nodes.
 + The PEM certificate bundle that you download from [ Download certificate bundles for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL.html#UsingWithRDS.SSL.CertificatesDownload) groups multiple certificates into one file. Amazon EMR 7.3.0 and higher supports importing multiple certificates from the PEM file with the configuration `ranger.kms.trust.ca.file.s3.url`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

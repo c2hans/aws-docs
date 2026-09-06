@@ -38,7 +38,3 @@ You must secure your microservices properly to protect the integrity of your ser
 In a microservices environment, you must consider how each service will authenticate and authorize requests it receives from an external client or another microservice. Also consider how each service will securely access other AWS services.
 
 Access to AWS services should be granted through narrowly scoped [AWS Identity and Access Management (IAM) roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html). Assuming an IAM role provides the microservice with short-term IAM credentials in the form of an access key, an access secret, and a session token. These are used by the various software development kits (SDKs) to sign requests to AWS services by using [AWS Signature Version 4 (SigV4)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

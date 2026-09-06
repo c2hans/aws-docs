@@ -27,7 +27,3 @@ Your AWS account has the following quotas related to ElastiCache.
 | User groups per Region | 200 | The maximum number of user groups you can create in a Region. | UserGroup |
 | Users per user group | 100 | The maximum number of users you can define for a user group. | UsersPerUserGroup |
 | User groups per replication group | 1 | The maximum number of user groups you can associate with a replication group. | UserGroupsPerReplicationGroup |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

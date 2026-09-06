@@ -30,7 +30,3 @@ Command-line examples here assume a Linux console. If you are using Windows, rep
 + [Starting from a GraphQL schema with no directives](tools-graphql-start-from-schema.md)
 + [Working with directives for a GraphQL schema](tools-graphql-schema-with-directives.md)
 + [Command-line arguments for the GraphQL utility](tools-graphql-cmd-line-args.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

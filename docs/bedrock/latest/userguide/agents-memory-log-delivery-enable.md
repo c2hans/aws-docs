@@ -12,7 +12,3 @@ To enable logging for your Amazon Bedrock agent alias, use the [PutDeliverySourc
 You will also need the add `bedrock:AllowVendedLogDeliveryForResource` permission for the user signed into the console. This permission allows logs to be delivered for the agent alias resource.
 
 To view an example IAM role/permissions policy with all the required permissions for your specific logging destination, see [Vended logs permissions for different delivery destinations](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-vended-logs-permissions-V2). Use the example to provide details for your logging destination, including allowing updates to your specific logging destination resource (CloudWatch Logs, Amazon S3, or Amazon Data Firehose).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

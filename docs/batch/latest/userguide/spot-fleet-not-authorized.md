@@ -50,7 +50,3 @@ The example commands assume that your Amazon EC2 Spot Fleet role is named {{Amaz
        --policy-arn arn:aws:iam::aws:policy/service-role/AmazonEC2SpotFleetRole \
        --role-name {{AmazonEC2SpotFleetRole}}
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

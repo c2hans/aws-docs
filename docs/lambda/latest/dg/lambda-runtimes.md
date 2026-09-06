@@ -206,7 +206,3 @@ In almost all cases, the end-of-life date of a language version or operating sys
 + **Java** – [www.oracle.com](https://www.oracle.com/java/technologies/java-se-support-roadmap.html) and [Corretto FAQs](https://aws.amazon.com/corretto/faqs/)
 + **Go** – [golang.org](https://golang.org/doc/devel/release.html)
 + **.NET** – [dotnet.microsoft.com](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

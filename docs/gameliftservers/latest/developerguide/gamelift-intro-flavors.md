@@ -32,7 +32,7 @@ Offload the work of managing your production game servers onto Amazon GameLift S
 ## Managed containers
 <a name="gamelift-intro-flavors-hosting-managed-containers"></a>
 
-Amazon GameLift Servers provides a complete cloud hosting solution for containerized game servers, so you can take advantage of the core benefits of container usage, such as portability, agility, and fault tolerance. As with managed EC2 hosting , managed container hosting deploys and runs your containers on Amazon EC2 instances.
+Amazon GameLift Servers provides a complete cloud hosting solution for containerized game servers, so you can take advantage of the core benefits of container usage, such as portability, agility, and fault tolerance. As with managed EC2 hosting, managed container hosting deploys and runs your containers on Amazon EC2 instances.
 
 [Start developing an Amazon GameLift Servers managed hosting solution for your containerized game server.](gamelift-roadmap-containers.md)
 
@@ -70,7 +70,3 @@ Common scenarios where a hybrid solution makes sense:
 +
 
 [Start developing an Amazon GameLift Servers hybrid hosting solution for your game.](gamelift-roadmap-hybrid.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

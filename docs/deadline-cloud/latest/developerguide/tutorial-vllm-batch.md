@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/tut
 # Run batch LLM inference with vLLM
 <a name="tutorial-vllm-batch"></a>
 
-This tutorial walks you through running high-throughput large language model (LLM) inference on a JSONL file of prompts using [the vLLM inference engine on GitHub](https://github.com/vllm-project/vllm). You submit the [vLLM batch inference job bundle on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vllm_batch) with a file where every line is one prompt, pick a model, and the job fans out across a GPU fleet. Every prompt gets an LLM response, and an aggregate step packages everything into a JSONL file plus a self-contained HTML viewer you can open in any browser.
+This tutorial walks you through running high-throughput large language model (LLM) inference on a JSONL file of prompts using the [vLLM inference engine](https://github.com/vllm-project/vllm) on the GitHub website. You submit the [vLLM batch inference job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vllm_batch) on the GitHub website with a file where every line is one prompt, pick a model, and the job fans out across a GPU fleet. Every prompt gets an LLM response, and an aggregate step packages everything into a JSONL file plus a self-contained HTML viewer you can open in any browser.
 
 The bundle handles offline, embarrassingly-parallel workloads: content generation, evaluation datasets, translation, extraction, and classification. It fits anywhere you need a model to answer many independent prompts without a live API server. Under the hood it uses the Deadline Cloud task chunking feature to group prompts into batched tasks, which lets you dial parallelism against scheduling overhead with a single `ChunkSize` parameter. For more information, see [Task chunking for job templates](build-job-bundle-chunking.md).
 
@@ -33,7 +33,7 @@ To complete this tutorial, follow these steps:
 ## Set up your farm
 <a name="tutorial-vllm-batch-setup"></a>
 
-The fastest way to get a compatible farm is to deploy the [CUDA farm CloudFormation template on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cuda_farm). After the stack reaches `CREATE_COMPLETE`, configure the Deadline Cloud CLI to use the new farm:
+The fastest way to get a compatible farm is to deploy the [CUDA farm CloudFormation template](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cuda_farm) on the GitHub website. After the stack reaches `CREATE_COMPLETE`, configure the Deadline Cloud CLI to use the new farm:
 
 ```
 deadline config set defaults.farm_id {{FarmId-from-stack-outputs}}
@@ -86,7 +86,7 @@ deadline bundle submit . \
   --parameter OutputDir=$PWD/results
 ```
 
-The `ModelName` parameter defaults to `Qwen/Qwen2.5-7B-Instruct` and accepts any Hugging Face model ID. The `Prompts` parameter accepts the full Open Job Description integer range syntax, such as `2,5,8-9` for specific lines or `4,7` to re-run only failed lines. Rather than fixing the chunk size, you can also let Deadline Cloud auto-tune it: set `TargetRuntimeSeconds` to how long you want each chunk to take (default 120 seconds), and the scheduler grows or shrinks the chunk size on future tasks to hit the target. For the full parameter list, see [the parameters table in the sample README on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vllm_batch#parameters).
+The `ModelName` parameter defaults to `Qwen/Qwen2.5-7B-Instruct` and accepts any Hugging Face model ID. The `Prompts` parameter accepts the full Open Job Description integer range syntax, such as `2,5,8-9` for specific lines or `4,7` to re-run only failed lines. Rather than fixing the chunk size, you can also let Deadline Cloud auto-tune it: set `TargetRuntimeSeconds` to how long you want each chunk to take (default 120 seconds), and the scheduler grows or shrinks the chunk size on future tasks to hit the target. For the full parameter list, see the [parameters table in the sample README](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vllm_batch#parameters) on the GitHub website.
 
 ## Download and view the results
 <a name="tutorial-vllm-batch-results"></a>
@@ -128,13 +128,9 @@ To avoid ongoing charges, clean up the resources that you created for this tutor
 ## Related resources
 <a name="tutorial-vllm-batch-related"></a>
 
-The following resources provide additional information:
-+ [Sample source code on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vllm_batch)
+The following resources provide additional information on the GitHub website:
++ [Sample source code](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vllm_batch)
 + [Generate images in batch with a diffusion model](tutorial-text-to-image-batch.md)
 + [Task chunking for job templates](build-job-bundle-chunking.md)
 + [Benchmark LLMs with vLLM and lm-evaluation-harness](tutorial-vllm-leaderboard.md)
-+ [Open Job Description environments specification on GitHub](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#4-environment)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ [Open Job Description environments specification](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#4-environment)

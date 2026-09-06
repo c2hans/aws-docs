@@ -44,7 +44,3 @@ This section and others that describe Suricata-based concepts are not intended t
 + [Working with stateless rule groups in AWS Network Firewall](stateless-rule-groups-standard.md)
 + [Defining rule actions in AWS Network Firewall](rule-action.md)
 + [Setting rule group capacity in AWS Network Firewall](nwfw-rule-group-capacity.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

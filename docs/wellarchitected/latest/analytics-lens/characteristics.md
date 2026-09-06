@@ -98,7 +98,3 @@ In this step, you focus on your data processing requirements.
 +  Do you have a visual editor for the transformation code?
 +  What is your frequency of data transformation? (for example, real time, micro-batching, overnight batch)
 +  Are there any constraints with your current tool of choice?
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

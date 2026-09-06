@@ -18,7 +18,3 @@ AI Insights are based on your listing's public pricing and your product's websit
 You can review the AI Insights displayed on your product listing at any time by viewing your listing in the AWS Marketplace catalog.
 
 If you want to suggest edits to the AI Insights shown on your listing, use the [Contact us](https://aws.amazon.com/marketplace/management/contact-us/?category=listing&details=I%20would%20like%20to%20change%20the%20following%20about%20the%20AI%20Insights%20on%20my%20listing%3A%0A%0AProduct%20ID%3A%20%0AProduct%20Title%3A%20%0A&marketplace=commercial&subCategory=text#) form to submit your feedback. The AWS Marketplace team reviews your submission, follows up to discuss, and revises insights as needed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

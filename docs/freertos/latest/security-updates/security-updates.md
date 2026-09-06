@@ -31,7 +31,3 @@ The table below lists FreeRTOS security updates and the corresponding [Common Vu
 †All versions of FreeRTOS Kernel up to (excluding) v10.4.3
 
 ‡FreeRTOS Kernel versions from (including) 10.2.0 up to 10.4.6 (excluding)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

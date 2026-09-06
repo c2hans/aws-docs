@@ -24,7 +24,3 @@ All calls to AWS services are encrypted with HTTPS. The SAP ICM manages the HTTP
 + `MANDT` is the ABAP client from `SY-MANDT` variable.
 
 The session name appears in CloudTrail as *user name*. This ensures that API calls from an ABAP user can be traced back to the system, client, and user that initiated the call. For more information, see [What is AWS CloudTrail?](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for SAP ABAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-sapabap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

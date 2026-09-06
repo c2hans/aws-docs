@@ -180,7 +180,3 @@ SCS-C02 Task Statement 6.4 is mapped to the following tasks in SCS-C03:
 + 2.1 Design and test an incident response plan.
 + 1.1 Design and implement monitoring and alerting for an AWS account or organization.
 + 6.3 Evaluate the compliance of AWS resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

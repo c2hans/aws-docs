@@ -27,7 +27,3 @@ This section describes how an account statuses and OU location changes throughou
 
 **Note**
 As accounts move between these states, the solution updates the `ISB-<namespace>:Status` account cost allocation tag to reflect the current state, and applies or removes the lease-level tags on lease approval, cleanup completion, and ejection. For more information, see the [Account cost allocation tagging](account-cost-allocation-tagging.md) section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -98,7 +98,3 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 <a name="share-cross-account"></a>
 
  Deploying applications across multiple AWS accounts is common and considered a best practice that can help isolate and manage business applications and data. With AppRegistry and AWS Resource Access Manager (AWS RAM), you can share applications and attribute groups with one or more accounts, organizations, and organizaional units. You can share applications and attributes in the console and AWS CLI using the [AWS Resource Access Manager API](https://docs.aws.amazon.com/ram/latest/APIReference/Welcome.html) and [infrastructure as code](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html). Resources can be associated with shared applications. For more information, see [Sharing resources with accounts in your organization](https://docs.aws.amazon.com/servicecatalog/latest/arguide/sharing-definitions).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

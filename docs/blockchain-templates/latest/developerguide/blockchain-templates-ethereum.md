@@ -227,7 +227,3 @@ Next, configure your browser or system to use SOCKS proxy for `localhost:9001`. 
 Using FoxyProxy Standard with Chrome, select **More Tools**, **Extensions**. Under **FoxyProxy Standard**, select **Details**, **Extension options**, **Add New Proxy**. Select **Manual Proxy Configuration**. For **Host or IP Address** type **localhost** and for **Port** type **9001**. Select **SOCKS proxy?**, **Save**.
 
 You should now be able to connect to the Ethereum host addresses listed in the template output.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Blockchain Templates. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query blockchain-templates` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

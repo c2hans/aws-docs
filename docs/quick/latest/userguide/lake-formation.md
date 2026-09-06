@@ -91,7 +91,3 @@ To work with Lake Formation and Athena, make sure that you have AWS resource per
 + Enable access to the correct buckets in Amazon S3. Usually S3 access is enabled when you enable Athena. However, because you can change S3 permissions outside of that process, it's a good idea to verify them separately.
 
 For information about how to verify or change AWS resource permissions in Quick, see [Allowing autodiscovery of AWS resources](https://docs.aws.amazon.com/quicksight/latest/user/autodiscover-aws-data-sources.html) and [Accessing data sources](https://docs.aws.amazon.com/quicksight/latest/user/access-to-aws-resources.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

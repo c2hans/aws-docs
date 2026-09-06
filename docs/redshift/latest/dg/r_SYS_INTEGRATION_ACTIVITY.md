@@ -43,7 +43,3 @@ select * from sys_integration_activity;
  76b15917-afae-4447-b7fd-08e2a5acce7b |   demo1         | MySQL  | checkpoints/checkpoint_3_16329_3_17839.json |        cdc       |       13488      | 2023-05-11 01:33:57.411 |         2       | 2023-05-11 02:19:09.440121 | 2023-05-11 02:19:16.090492
  76b15917-afae-4447-b7fd-08e2a5acce7b |   demo1         | MySQL  | checkpoints/checkpoint_3_5103_3_5532.json   |        cdc       |        1657      | 2023-05-10 23:13:14.205 |         2       | 2023-05-10 23:13:23.545487 | 2023-05-10 23:13:25.652144
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

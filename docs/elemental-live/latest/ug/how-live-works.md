@@ -21,7 +21,3 @@ To create an Elemental Live workflow, you create an event. Broadly speaking this
 + A list of output groups that specifying packaging and encoding information.
 
 To start processing the content, you start the event. When the event is running, it ingests the source content from the upstream system that is identified by the input. The event then transcodes that video (and the related audio, captions, and metadata) and creates outputs. Elemental Live sends the outputs to the specified downstream systems.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

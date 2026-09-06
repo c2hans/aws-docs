@@ -69,7 +69,3 @@ arn:aws:serverlessrepo:{{us-east-1}}:{{111122223333}}::applications/S3ObjectLamb
 You can add or view this function on the AWS Management Console by using the following AWS Serverless Application Repository link: [S3ObjectLambdaDecompression](https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/create/app?applicationId=arn:aws:serverlessrepo:eu-west-1:123065155563:applications/S3ObjectLambdaDecompression).
 
 To view this function on GitHub, see [S3 Object Lambda Decompression](https://github.com/aws-samples/amazon-s3-object-lambda-decompression).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

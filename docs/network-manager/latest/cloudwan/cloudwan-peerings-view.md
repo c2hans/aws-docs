@@ -22,7 +22,3 @@ View information about a transit gateway used for peering.
 1. In the **Details** section, choose the **Resource ID** link.
 
    The **Transit gateways** page appears in a new window. Depending on your permissions, you can add or modify your transit gateways or transit gateway route tables. For more information on working with transit gateways, see the [*AWS Transit Gateway Guide*](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

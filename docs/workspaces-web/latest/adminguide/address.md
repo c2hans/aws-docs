@@ -14,7 +14,3 @@ To access WorkSpaces Secure Browser instances, user devices require outbound acc
   + Port 53 is used for communication between user devices and your DNS servers.
   + This port is optional if you are not using DNS servers for domain name resolution.
   + The port must be open to the IP addresses for your DNS servers so that public domain names can be resolved.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

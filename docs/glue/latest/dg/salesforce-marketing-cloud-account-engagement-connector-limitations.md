@@ -19,7 +19,3 @@ The following notes and limitations apply:
 + For all entities, filter is mandatory. If no filter is provided the default filter predicate is set to the `Created After` field with a value of the current date-time (adjusted to your time zone) minus one year.
 + As per Salesforce Marketing Cloud Account Engagement limitations, in Async, the maximum range to fetch data is 1 year. If a query is provided for more than 1 year, the job will throw an error.
 + Currently, there is a bug in Salesforce Pardot. When the job includes only a single field which does not have any data, the field value is not returning correct result and instead, the field name is being returned multiple times. The Salesforce Pardot team is aware of the issue and is actively working on a resolution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

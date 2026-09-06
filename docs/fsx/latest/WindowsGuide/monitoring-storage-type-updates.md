@@ -38,7 +38,3 @@ The time that Amazon FSx received the update action request.
 <a name="monitor-storage-type-cli-api"></a>
 
 You can view and monitor file system storage type update requests using the [describe-file-systems](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-file-systems.html) AWS CLI command and the [DescribeFileSystems](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileSystems.html) API action. The `AdministrativeActions` array lists the 10 most recent update actions for each administrative action type. When you increase a file system's SSD IOPS, two `AdministrativeActions` are generated: a `FILE_SYSTEM_UPDATE` and a `STORAGE_TYPE_OPTIMIZATION` action.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

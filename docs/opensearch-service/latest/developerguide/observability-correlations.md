@@ -61,7 +61,3 @@ When a correlation exists, the Discover Traces page displays related logs in the
 You can edit or remove correlations from the **Correlations** tab of either the traces or logs dataset.
 + **Editing** – Choose the correlation in the table and choose **Edit** to update the field mappings or target dataset.
 + **Removing** – Choose the correlation in the table and choose **Delete** to remove the correlation. Removing a correlation does not delete any data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

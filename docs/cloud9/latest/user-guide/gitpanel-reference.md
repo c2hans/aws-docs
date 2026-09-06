@@ -76,7 +76,3 @@ The following table provides a description of selected Git commands that you can
 | **Git: Delete Branch** | Deletes a specified branch.  |
 | **Git: Fetch** | Downloads the content from a branch in remote repository. In contrast with a `git pull`, the remote changes aren't merged into local repository.  |
 | **Git: Merge Branch** | Integrates the changes made in one branch into another branch. For more information, see the [merge branches procedure](using-gitpanel.md#merge-branch-proc). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

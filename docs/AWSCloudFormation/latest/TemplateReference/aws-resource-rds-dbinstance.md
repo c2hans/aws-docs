@@ -1275,6 +1275,14 @@ If present, specifies the name of the secondary Availability Zone for a DB insta
 `StatusInfos`  <a name="StatusInfos-fn::getatt"></a>
 The status of a read replica. If the DB instance isn't a read replica, the value is blank.
 
+`StorageOperationPercentProgress`  <a name="StorageOperationPercentProgress-fn::getatt"></a>
+The percentage of the in-progress storage operation on the DB instance that has completed, from `0` to `100`. This field appears only while a storage operation is in progress. It isn't present when no storage operation is active.
+
+`StorageOperationStatus`  <a name="StorageOperationStatus-fn::getatt"></a>
+The status of an in-progress storage operation on the DB instance. This field appears only while a storage operation is in progress. It isn't present when no storage operation is active. Possible values:
++ `Initializing` - The volume is initializing from a snapshot, such as during a snapshot restore, point-in-time restore, read replica creation, or blue/green deployment. Performance can be lower than provisioned until initialization completes.
++ `Optimizing` - The volume is optimizing following a storage scaling or modification operation.
+
 ## Remarks
 <a name="aws-resource-rds-dbinstance--remarks"></a>
 
@@ -4284,7 +4292,3 @@ Resources:
     UpdateReplacePolicy: Delete
     DeletionPolicy: Delete
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ To use your WorkSpaces Thin Client device, you must have a keyboard, mouse, and 
 | 5 | ![Orange USB icon with the letter B, representing a bootable USB drive.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/usb-symbol.jpg)  | Connect your hub’s USB-A plug to the USB port on your WorkSpaces Thin Client. |
 | 6 | ![](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/plug-symbol.jpg)  | Connect your WorkSpaces Thin Client power adapter to the power port on your WorkSpaces Thin Client. |
 | 7 |  ![Orange Ethernet cable with connectors at both ends, coiled in a circular shape.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/ethernet-cable-org.jpg)  | (Optional) Connect an Ethernet cable. A network connection is required. If you prefer a wired Ethernet connection instead of Wi-Fi, connect the Ethernet cable (not included) to the network port.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

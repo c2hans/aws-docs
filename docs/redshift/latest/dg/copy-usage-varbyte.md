@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/copy-usage-varbyte.ht
 <a name="copy-usage-varbyte"></a>
 
 You can load data from a file in CSV, Parquet, and ORC format. For CSV, the data is loaded from a file in hexadecimal representation of the VARBYTE data. You can't load VARBYTE data with the `FIXEDWIDTH` option. The `ADDQUOTES` or `REMOVEQUOTES` option of COPY is not supported. A VARBYTE column can't be used as a partition column.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

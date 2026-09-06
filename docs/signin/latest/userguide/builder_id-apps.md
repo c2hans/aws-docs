@@ -36,7 +36,3 @@ You can use your AWS Builder ID as a persistent customer identity and registrati
 **Project and AWS Settings**
 We're currently releasing our new experience to a limited number of customers. You might not be able to access this experience yet.
 Access AWS Settings and any projects with your AWS Builder ID. AWS Settings lets you manage your projects. A project contains an AWS account and settings for sharing with other collaborators. These projects are only available when you use our new AWS experience. For more information, see [Compare features for sign-up options](https://docs.aws.amazon.com/accounts/latest/reference/sign-up-for-aws.html#compare-sign-up-options).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ After you add metadata to a dataset, field descriptions become available to anyo
 1. (Optional) For **Name**, if you want to change the name of the field, you can enter a new one here.
 
 1. Choose **Apply** to save your changes. Choose cancel to exit.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

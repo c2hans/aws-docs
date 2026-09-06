@@ -42,7 +42,3 @@ Following is information about the data in this example:
     `a=rtpmap:96 AM824/48000/5 a=fmtp:96 channel-order=SMPTE2110.(AES3,AES3)`
 
     `48000` is the sample rate. `6` is the number of AM824 subframe pairs, and must be an even number.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ Once you disable your browser extension, your users will no longer be able to lo
   + Firefox policy settings: [https://mozilla.github.io/policy-templates/\#extensionsettings](https://mozilla.github.io/policy-templates/#extensionsettings)
   + Chrome policy settings: [https://chromeenterprise.google/policies/\#ExtensionSettings](https://chromeenterprise.google/policies/#ExtensionSettings)
   + Edge policy settings: [https://learn.microsoft.com/en-us/DeployEdge/microsoft-edge-policies\#extensionsettings](https://learn.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#extensionsettings) and guide: [https://learn.microsoft.com/en-us/deployedge/microsoft-edge-manage-extensions-ref-guide](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-manage-extensions-ref-guide)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

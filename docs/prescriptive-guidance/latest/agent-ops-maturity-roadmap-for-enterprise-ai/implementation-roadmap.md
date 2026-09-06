@@ -56,7 +56,3 @@ The following phased roadmap reflects realistic timelines for a greenfield deplo
 1. Deploy the data lake account if RAG or analytics requirements warrant it. This account can be deferred until workload data volumes justify the operational overhead.
 
 The infrastructure-as-code implementation for this architecture is available in the [companion GitHub repository](https://github.com/aws-solutions-library-samples/guidance-for-enterprise-agentic-ai-platform-on-aws). The repository demonstrates the multi-account structure, service placement across accounts, and the CI/CD pipeline for agent promotion between environments. It serves as the implementation companion for this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

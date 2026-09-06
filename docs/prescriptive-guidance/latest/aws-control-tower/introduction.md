@@ -20,7 +20,3 @@ Because active development of the AWS Landing Zone solution has stopped, it's im
 + Faster AWS Cloud adoption through a ready AWS environment with automated security, operations, and compliance policies management
 + Business risks reduced by migrating workloads to AWS through established preventive, detective, and compliance controls
 + More efficient security, operations, and compliance policies management through the use of the integrated dashboard
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

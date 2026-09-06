@@ -21,7 +21,3 @@ We recommend that you always use the most recent runtime version for your canari
 + [Runtime versions using Node.js](CloudWatch_Synthetics_Library_Nodejs.md)
 + [Runtime versions support policy](CloudWatch_Synthetics_Runtime_Support_Policy.md)
 + [Runtime versions update](CloudWatch_Synthetics_Runtime_Version_Update.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

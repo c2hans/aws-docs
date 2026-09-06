@@ -16,7 +16,3 @@ When you open the labeling task, three buttons on the top right allow you to dec
   Be aware that the person that creates your labeling tasks specifies a time limit in which all tasks much be completed by. If you do not return to and complete this task within that time limit, it will expire and your work will not be submitted. Contact your administrator for more information.
 
 ![Gif showing the locations of Decline task, Release task, and Stop and resume later in the UI.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/sms/video/reject-decline-task.gif)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ The following table shows AWS DMS and Amazon RDS resources that you use for this
 |  Amazon RDS for Oracle DB instance, License Included (Standard Edition Two), Single AZ | db.m3.medium | Single AZ, 10 GB storage, GP2 |
 |  Amazon Aurora MySQL DB instance | db.r3.large | Single AZ, 10 GB storage, 1 million I/O |
 |  AWS DMS replication instance | t2.small | 50 GB of storage for keeping replication logs included |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

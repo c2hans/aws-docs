@@ -19,7 +19,3 @@ AMS SSR has a data retention policy per report after the period reported, the da
 | Weekly Incident Report | 2 Months | 2 Years |
 | Security Config Rules Dashboard | 3 Months | 2 Years |
 | Resource Tagger dashboard | 1 year | 2 years |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ Do not disable IPv6. If you disable IPv6, WorkSpaces Applications will not funct
 **Note**
 WorkSpaces Applications relies on the DNS servers within your VPC to return a non-existent domain (NXDOMAIN) response for local domain names that don’t exist. This enables the WorkSpaces Applications-managed network interface to communicate with the management servers.
 When you create a directory with Simple AD, AWS Directory Service creates two domain controllers that also function as DNS servers on your behalf. Because the domain controllers don't provide the NXDOMAIN response, they can't be used with WorkSpaces Applications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

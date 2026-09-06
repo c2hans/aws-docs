@@ -43,7 +43,3 @@ This section provides migration tips that can help save time as you transition f
 + Explore AWS to locate which features can be replaced with Amazon’s services, this can help you maintain your database and decrease costs.
 + The architecture in PostgreSQL allows you to have multiple databases in a single instance, which is important for consolidation projects.
 + Beware of control characters when copying and pasting a script to Aurora PostgreSQL clients. Aurora PostgreSQL is much more sensitive to control characters than Oracle and they result in frustrating syntax errors that are hard to find.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

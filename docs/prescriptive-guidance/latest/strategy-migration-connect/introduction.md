@@ -27,7 +27,3 @@ An independent [Forrester report](https://pages.awscloud.com/Amazon_Connect_Forr
 + Provided dependability and agility at scale.
 
 The target audience for this article is decision makers (for example, the director of infrastructure) who are interested in moving to Connect Customer because they are unhappy with their existing contact center or they are researching alternatives before an upcoming contract renewal. The article assumes some technical knowledge and familiarity with contact center terminology but no AWS expertise. It provides additional details so that you can forward this article to architects or other technical people within your teams and get their perspective. We also encourage you to discuss the contents of this article with your leadership (for example, corporate executives), recommend a further look at Connect Customer, and initiate a conversation with your AWS account manager.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,7 +50,3 @@ For more information, see [Managed Blockchain API and the JSON-RPCs supported wi
 You can use AMB Access Polygon to build token-gated experiences for your users. For example, you can conditionally provide access to a piece of content only to the owners of a specific NFT. To achieve this, you must read the blockchain to determine the NFT ownership of a user's address.
 
 For more information, see [Managed Blockchain API and the JSON-RPCs supported with AMB Access Polygon](polygon-api.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

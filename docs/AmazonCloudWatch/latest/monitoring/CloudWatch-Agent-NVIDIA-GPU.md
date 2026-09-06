@@ -38,7 +38,3 @@ All of these metrics are collected with the following dimensions:
 | `index` | A unique identifier for the GPU on this server. Represents the NVIDIA Management Library (NVML) index of the device. |
 | `name` | The type of GPU. For example, `NVIDIA Tesla A100` |
 | `arch` | The server architecture. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -141,7 +141,3 @@ If you need access to a VCF version that with a `RESTRICTED` status, [contact AW
 + Your use case and business justification (for example, security/compliance, compatibility/dependency, and others)
 
  AWS Support will review your request and either approve or request additional information. After approval, the version status will change to `AVAILABLE` in the AWS console or `get-versions` API response.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

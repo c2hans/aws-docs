@@ -60,6 +60,8 @@ For pricing information, see [Amazon EC2 On-Demand Pricing](https://aws.amazon.c
 | R8idn | r8idn.large \| r8idn.xlarge \| r8idn.2xlarge \| r8idn.4xlarge \| r8idn.8xlarge \| r8idn.12xlarge \| r8idn.16xlarge \| r8idn.24xlarge \| r8idn.32xlarge \| r8idn.48xlarge \| r8idn.96xlarge \| r8idn.metal-48xl \| r8idn.metal-96xl |
 | R8ib | r8ib.large \| r8ib.xlarge \| r8ib.2xlarge \| r8ib.4xlarge \| r8ib.8xlarge \| r8ib.12xlarge \| r8ib.16xlarge \| r8ib.24xlarge \| r8ib.32xlarge \| r8ib.48xlarge \| r8ib.96xlarge \| r8ib.metal-48xl \| r8ib.metal-96xl |
 | R8idb | r8idb.large \| r8idb.xlarge \| r8idb.2xlarge \| r8idb.4xlarge \| r8idb.8xlarge \| r8idb.12xlarge \| r8idb.16xlarge \| r8idb.24xlarge \| r8idb.32xlarge \| r8idb.48xlarge \| r8idb.96xlarge \| r8idb.metal-48xl \| r8idb.metal-96xl |
+| R9g | r9g.medium \| r9g.large \| r9g.xlarge \| r9g.2xlarge \| r9g.4xlarge \| r9g.8xlarge \| r9g.12xlarge \| r9g.16xlarge \| r9g.24xlarge \| r9g.48xlarge \| r9g.metal-48xl |
+| R9gd | r9gd.medium \| r9gd.large \| r9gd.xlarge \| r9gd.2xlarge \| r9gd.4xlarge \| r9gd.8xlarge \| r9gd.12xlarge \| r9gd.16xlarge \| r9gd.24xlarge \| r9gd.48xlarge \| r9gd.metal-48xl |
 | U-3tb1 | u-3tb1.56xlarge |
 | U-6tb1 | u-6tb1.56xlarge \| u-6tb1.112xlarge \| u-6tb1.metal |
 | U-9tb1 | u-9tb1.112xlarge \| u-9tb1.metal |
@@ -120,6 +122,8 @@ For pricing information, see [Amazon EC2 On-Demand Pricing](https://aws.amazon.c
 | R8idn | [Nitro v6](ec2-nitro-instances.md) | Intel (x86\_64) | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | Windows \| Linux |
 | R8ib | [Nitro v6](ec2-nitro-instances.md) | Intel (x86\_64) | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | Windows \| Linux |
 | R8idb | [Nitro v6](ec2-nitro-instances.md) | Intel (x86\_64) | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | Windows \| Linux |
+| R9g | [Nitro v6](ec2-nitro-instances.md) | AWS Graviton (arm64) | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | Linux |
+| R9gd | [Nitro v6](ec2-nitro-instances.md) | AWS Graviton (arm64) | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | Linux |
 | U-3tb1 | [Nitro v3](ec2-nitro-instances.md) | Intel (x86\_64) | ✗ No | ✗ No | ✗ No | ✗ No | Windows \| Linux |
 | U-6tb1 | [Nitro v3](ec2-nitro-instances.md) | Intel (x86\_64) | ✓ Yes | ✓ Yes | ✗ No | ✗ No | Windows \| Linux |
 | U-9tb1 | [Nitro v3](ec2-nitro-instances.md) | Intel (x86\_64) | ✓ Yes | ✓ Yes | ✗ No | ✗ No | Windows \| Linux |
@@ -509,6 +513,30 @@ For pricing information, see [Amazon EC2 On-Demand Pricing](https://aws.amazon.c
   <tr><td>r8idb.96xlarge</td><td>3072.00</td><td>Intel Xeon Granite Rapids</td><td>384</td><td>192</td><td>2</td><td>✗ No</td><td>✗ No</td></tr>
   <tr><td>r8idb.metal-48xl</td><td>1536.00</td><td>Intel Xeon Granite Rapids</td><td>192</td><td>96</td><td>2</td><td>✗ No</td><td>✗ No</td></tr>
   <tr><td>r8idb.metal-96xl</td><td>3072.00</td><td>Intel Xeon Granite Rapids</td><td>384</td><td>192</td><td>2</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td colspan="8"><b>R9g</b></td></tr>
+  <tr><td>r9g.medium</td><td>8.00</td><td>AWS Graviton5</td><td>1</td><td>1</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9g.large</td><td>16.00</td><td>AWS Graviton5</td><td>2</td><td>2</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9g.xlarge</td><td>32.00</td><td>AWS Graviton5</td><td>4</td><td>4</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9g.2xlarge</td><td>64.00</td><td>AWS Graviton5</td><td>8</td><td>8</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9g.4xlarge</td><td>128.00</td><td>AWS Graviton5</td><td>16</td><td>16</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9g.8xlarge</td><td>256.00</td><td>AWS Graviton5</td><td>32</td><td>32</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9g.12xlarge</td><td>384.00</td><td>AWS Graviton5</td><td>48</td><td>48</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9g.16xlarge</td><td>512.00</td><td>AWS Graviton5</td><td>64</td><td>64</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9g.24xlarge</td><td>768.00</td><td>AWS Graviton5</td><td>96</td><td>96</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9g.48xlarge</td><td>1536.00</td><td>AWS Graviton5</td><td>192</td><td>192</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9g.metal-48xl</td><td>1536.00</td><td>AWS Graviton5</td><td>192</td><td>192</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td colspan="8"><b>R9gd</b></td></tr>
+  <tr><td>r9gd.medium</td><td>8.00</td><td>AWS Graviton5</td><td>1</td><td>1</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9gd.large</td><td>16.00</td><td>AWS Graviton5</td><td>2</td><td>2</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9gd.xlarge</td><td>32.00</td><td>AWS Graviton5</td><td>4</td><td>4</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9gd.2xlarge</td><td>64.00</td><td>AWS Graviton5</td><td>8</td><td>8</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9gd.4xlarge</td><td>128.00</td><td>AWS Graviton5</td><td>16</td><td>16</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9gd.8xlarge</td><td>256.00</td><td>AWS Graviton5</td><td>32</td><td>32</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9gd.12xlarge</td><td>384.00</td><td>AWS Graviton5</td><td>48</td><td>48</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9gd.16xlarge</td><td>512.00</td><td>AWS Graviton5</td><td>64</td><td>64</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9gd.24xlarge</td><td>768.00</td><td>AWS Graviton5</td><td>96</td><td>96</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9gd.48xlarge</td><td>1536.00</td><td>AWS Graviton5</td><td>192</td><td>192</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td>r9gd.metal-48xl</td><td>1536.00</td><td>AWS Graviton5</td><td>192</td><td>192</td><td>1</td><td>✗ No</td><td>✗ No</td></tr>
   <tr><td colspan="8"><b>U-3tb1</b></td></tr>
   <tr><td>u-3tb1.56xlarge</td><td>3072.00</td><td>Intel Xeon Platinum 8176M</td><td>224</td><td>112</td><td>2</td><td>✗ No</td><td>✗ No</td></tr>
   <tr><td colspan="8"><b>U-6tb1</b></td></tr>
@@ -634,7 +662,7 @@ For pricing information, see [Amazon EC2 On-Demand Pricing](https://aws.amazon.c
 <a name="mo_network"></a>
 
 **Note**
-R8a, R8g, R8gd, R8i, R8id, R8i-flex, X8g, X8aedz, X8i instance types support configurable bandwidth weightings. With these instance types, you can optimize an instance's bandwidth for either networking performance or Amazon EBS performance. The following table shows the default networking bandwidth performance for these instance types. For the supported configurable weightings, see [ Configurable bandwidth weighting preferences](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-bandwidth-weighting.html).
+R8a, R8g, R8gd, R8i, R8id, R8i-flex, R9g, R9gd, X8g, X8aedz, X8i instance types support configurable bandwidth weightings. With these instance types, you can optimize an instance's bandwidth for either networking performance or Amazon EBS performance. The following table shows the default networking bandwidth performance for these instance types. For the supported configurable weightings, see [ Configurable bandwidth weighting preferences](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-bandwidth-weighting.html).
 
 <table>
 <thead>
@@ -998,6 +1026,30 @@ R8a, R8g, R8gd, R8i, R8id, R8i-flex, X8g, X8aedz, X8i instance types support con
   <tr><td>r8idb.96xlarge</td><td>400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32 / 128</td><td>2</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
   <tr><td>r8idb.metal-48xl</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32 / 128</td><td>1</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
   <tr><td>r8idb.metal-96xl</td><td>400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32 / 128</td><td>2</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10"><b>R9g</b></td></tr>
+  <tr><td>r9g.medium 1</td><td>0.55 / 15.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1 / 1</td><td>1</td><td>2</td><td>20</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.large 1</td><td>1.0 / 15.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>2 / 2</td><td>1</td><td>3</td><td>20</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.xlarge 1</td><td>2.1 / 15.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4 / 4</td><td>1</td><td>4</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.2xlarge 1</td><td>4.25 / 17.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8 / 8</td><td>1</td><td>4</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.4xlarge 1</td><td>8.5 / 17.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8 / 16</td><td>1</td><td>8</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.8xlarge</td><td>17 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td><td>8 / 32</td><td>1</td><td>10</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.12xlarge</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td><td>16 / 64</td><td>1</td><td>12</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.16xlarge</td><td>34 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td><td>16 / 64</td><td>1</td><td>16</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.24xlarge</td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td><td>16 / 128</td><td>1</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.48xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32 / 128</td><td>1</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.metal-48xl</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32 / 128</td><td>1</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10"><b>R9gd</b></td></tr>
+  <tr><td>r9gd.medium 1</td><td>0.55 / 15.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1 / 1</td><td>1</td><td>2</td><td>20</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.large 1</td><td>1.0 / 15.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>2 / 2</td><td>1</td><td>3</td><td>20</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.xlarge 1</td><td>2.1 / 15.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4 / 4</td><td>1</td><td>4</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.2xlarge 1</td><td>4.25 / 17.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8 / 8</td><td>1</td><td>4</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.4xlarge 1</td><td>8.5 / 17.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8 / 16</td><td>1</td><td>8</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.8xlarge</td><td>17 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td><td>8 / 32</td><td>1</td><td>10</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.12xlarge</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td><td>16 / 64</td><td>1</td><td>12</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.16xlarge</td><td>34 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td><td>16 / 64</td><td>1</td><td>16</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.24xlarge</td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td><td>16 / 128</td><td>1</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.48xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32 / 128</td><td>1</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.metal-48xl</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32 / 128</td><td>1</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>U-3tb1</b></td></tr>
   <tr><td>u-3tb1.56xlarge 2</td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>U-6tb1</b></td></tr>
@@ -1137,7 +1189,7 @@ An instance's EBS performance is bounded by the instance's performance limits, o
 We recommend that you choose an EBS–optimized instance type that provides more dedicated Amazon EBS throughput than your application needs; otherwise, the connection between Amazon EBS and Amazon EC2 can become a performance bottleneck.
 
 **Note**
-R8a, R8g, R8gd, R8i, R8id, R8i-flex, X8g, X8aedz, X8i virtualized instance types support configurable bandwidth weightings. With these instance types, you can optimize an instance's bandwidth for either networking performance or Amazon EBS performance. The following table shows the default networking bandwidth performance for these instance types. Bare metal instance types are not supported. For the supported configurable weightings, see [ Configurable bandwidth weighting preferences](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-bandwidth-weighting.html).
+R8a, R8g, R8gd, R8i, R8id, R8i-flex, R9g, R9gd, X8g, X8aedz, X8i virtualized instance types support configurable bandwidth weightings. With these instance types, you can optimize an instance's bandwidth for either networking performance or Amazon EBS performance. The following table shows the default networking bandwidth performance for these instance types. Bare metal instance types are not supported. For the supported configurable weightings, see [ Configurable bandwidth weighting preferences](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-bandwidth-weighting.html).
 For maximum IOPS performance with U7i instances, we recommend that you use io2 BlockExpress volumes.
 
 <table>
@@ -1502,6 +1554,30 @@ For maximum IOPS performance with U7i instances, we recommend that you use io2 B
   <tr><td>r8idb.96xlarge</td><td>300000.00</td><td>37500.00</td><td>1440000.00</td><td>✓ Yes</td><td>✓ Yes (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs_cards.html">2 EBS cards</a>)</td><td>128 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>r8idb.metal-48xl</td><td>150000.00</td><td>18750.00</td><td>720000.00</td><td>✓ Yes</td><td>✗ No</td><td>64 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>r8idb.metal-96xl</td><td>300000.00</td><td>37500.00</td><td>1440000.00</td><td>✓ Yes</td><td>✓ Yes (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs_cards.html">2 EBS cards</a>)</td><td>78 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td colspan="7"><b>R9g</b></td></tr>
+  <tr><td>r9g.medium 1</td><td>380.00 / 12000.00</td><td>47.50 / 1500.00</td><td>2500.00 / 48000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9g.large 1</td><td>760.00 / 12000.00</td><td>95.00 / 1500.00</td><td>3600.00 / 48000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9g.xlarge 1</td><td>1500.00 / 12000.00</td><td>187.50 / 1500.00</td><td>6000.00 / 48000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9g.2xlarge 1</td><td>3000.00 / 12000.00</td><td>375.00 / 1500.00</td><td>12000.00 / 48000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9g.4xlarge 1</td><td>6000.00 / 12000.00</td><td>750.00 / 1500.00</td><td>24000.00 / 48000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9g.8xlarge</td><td>12000.00</td><td>1500.00</td><td>48000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9g.12xlarge</td><td>18000.00</td><td>2250.00</td><td>72000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9g.16xlarge</td><td>24000.00</td><td>3000.00</td><td>96000.00</td><td>✓ Yes</td><td>✗ No</td><td>48 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9g.24xlarge</td><td>36000.00</td><td>4500.00</td><td>144000.00</td><td>✓ Yes</td><td>✗ No</td><td>64 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9g.48xlarge</td><td>72000.00</td><td>9000.00</td><td>288000.00</td><td>✓ Yes</td><td>✗ No</td><td>128 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9g.metal-48xl</td><td>72000.00</td><td>9000.00</td><td>288000.00</td><td>✓ Yes</td><td>✗ No</td><td>79 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td colspan="7"><b>R9gd</b></td></tr>
+  <tr><td>r9gd.medium 1</td><td>380.00 / 12000.00</td><td>47.50 / 1500.00</td><td>2500.00 / 48000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9gd.large 1</td><td>760.00 / 12000.00</td><td>95.00 / 1500.00</td><td>3600.00 / 48000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9gd.xlarge 1</td><td>1500.00 / 12000.00</td><td>187.50 / 1500.00</td><td>6000.00 / 48000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9gd.2xlarge 1</td><td>3000.00 / 12000.00</td><td>375.00 / 1500.00</td><td>12000.00 / 48000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9gd.4xlarge 1</td><td>6000.00 / 12000.00</td><td>750.00 / 1500.00</td><td>24000.00 / 48000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9gd.8xlarge</td><td>12000.00</td><td>1500.00</td><td>48000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9gd.12xlarge</td><td>18000.00</td><td>2250.00</td><td>72000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9gd.16xlarge</td><td>24000.00</td><td>3000.00</td><td>96000.00</td><td>✓ Yes</td><td>✗ No</td><td>48 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9gd.24xlarge</td><td>36000.00</td><td>4500.00</td><td>144000.00</td><td>✓ Yes</td><td>✗ No</td><td>64 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9gd.48xlarge</td><td>72000.00</td><td>9000.00</td><td>288000.00</td><td>✓ Yes</td><td>✗ No</td><td>128 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>r9gd.metal-48xl</td><td>72000.00</td><td>9000.00</td><td>288000.00</td><td>✓ Yes</td><td>✗ No</td><td>79 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td colspan="7"><b>U-3tb1</b></td></tr>
   <tr><td>u-3tb1.56xlarge</td><td>19000.00</td><td>2375.00</td><td>80000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td colspan="7"><b>U-6tb1</b></td></tr>
@@ -1762,6 +1838,18 @@ The following table shows the instance store volume configuration for supported 
   <tr><td>r8idb.96xlarge</td><td>6 x 3800 GB</td><td>NVMe SSD</td><td>6,439,992 / 3,220,008</td><td> </td><td>✓ Yes</td></tr>
   <tr><td>r8idb.metal-48xl</td><td>3 x 3800 GB</td><td>NVMe SSD</td><td>3,219,996 / 1,610,004</td><td> </td><td>✓ Yes</td></tr>
   <tr><td>r8idb.metal-96xl</td><td>6 x 3800 GB</td><td>NVMe SSD</td><td>6,439,992 / 3,220,008</td><td> </td><td>✓ Yes</td></tr>
+  <tr><td colspan="6"><b>R9gd</b></td></tr>
+  <tr><td>r9gd.medium</td><td>1 x 59 GB</td><td>NVMe SSD</td><td>21,802 / 10,901</td><td> </td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.large</td><td>1 x 118 GB</td><td>NVMe SSD</td><td>43,604 / 21,802</td><td> </td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.xlarge</td><td>1 x 237 GB</td><td>NVMe SSD</td><td>87,207 / 43,604</td><td> </td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.2xlarge</td><td>1 x 474 GB</td><td>NVMe SSD</td><td>174,417 / 87,209</td><td> </td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.4xlarge</td><td>1 x 950 GB</td><td>NVMe SSD</td><td>348,832 / 174,417</td><td> </td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.8xlarge</td><td>1 x 1900 GB</td><td>NVMe SSD</td><td>697,665 / 348,834</td><td> </td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.12xlarge</td><td>3 x 950 GB</td><td>NVMe SSD</td><td>1,046,496 / 523,251</td><td> </td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.16xlarge</td><td>1 x 3800 GB</td><td>NVMe SSD</td><td>1,395,331 / 697,668</td><td> </td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.24xlarge</td><td>3 x 1900 GB</td><td>NVMe SSD</td><td>2,092,995 / 1,046,502</td><td> </td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.48xlarge</td><td>3 x 3800 GB</td><td>NVMe SSD</td><td>4,185,993 / 2,093,004</td><td> </td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.metal-48xl</td><td>3 x 3800 GB</td><td>NVMe SSD</td><td>4,185,993 / 2,093,004</td><td> </td><td>✓ Yes</td></tr>
   <tr><td colspan="6"><b>X1</b></td></tr>
   <tr><td>x1.16xlarge</td><td>1 x 1920 GB</td><td>SSD</td><td></td><td>✓ Yes</td><td> </td></tr>
   <tr><td>x1.32xlarge</td><td>2 x 1920 GB</td><td>SSD</td><td></td><td>✓ Yes</td><td> </td></tr>
@@ -2185,6 +2273,30 @@ The following table shows the instance store volume configuration for supported 
   <tr><td>r8idb.96xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
   <tr><td>r8idb.metal-48xl</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✗ No</td><td>✗ No</td></tr>
   <tr><td>r8idb.metal-96xl</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td colspan="7"><b>R9g</b></td></tr>
+  <tr><td>r9g.medium</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td></tr>
+  <tr><td>r9g.large</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.xlarge</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.2xlarge</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.4xlarge</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.8xlarge</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.12xlarge</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.16xlarge</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.24xlarge</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.48xlarge</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9g.metal-48xl</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td></tr>
+  <tr><td colspan="7"><b>R9gd</b></td></tr>
+  <tr><td>r9gd.medium</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td></tr>
+  <tr><td>r9gd.large</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.2xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.4xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.8xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.12xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.16xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.24xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.48xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>r9gd.metal-48xl</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td></tr>
   <tr><td colspan="7"><b>U-3tb1</b></td></tr>
   <tr><td>u-3tb1.56xlarge</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✗ No</td><td>✗ No</td></tr>
   <tr><td colspan="7"><b>U-6tb1</b></td></tr>
@@ -2305,7 +2417,3 @@ The following table shows the instance store volume configuration for supported 
   <tr><td>z1d.metal</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>✗ No</td></tr>
 </tbody>
 </table>
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

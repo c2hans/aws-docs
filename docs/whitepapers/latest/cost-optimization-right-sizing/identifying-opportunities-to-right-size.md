@@ -38,7 +38,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-rig
 
      Maximum NetworkIn (or NetworkOut) x 8 (bytes to bits) /1024/1024/ 60 = Number of Mbps
   +  If the ephemeral storage disk I/O is less than 3,000, you can use [Amazon Elastic Block Store](https://aws.amazon.com/ebs/) (Amazon EBS) storage. If not, use instance families that have ephemeral storage. For more information, see [Amazon EBS Volume Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

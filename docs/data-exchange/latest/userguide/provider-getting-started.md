@@ -92,7 +92,3 @@ To confirm the eligibility of your data, review the [Publishing guidelines for A
 If you have questions about the eligibility of your data set, contact the [AWS Marketplace Seller Operations team](https://aws.amazon.com/marketplace/management/contact-us).
 
 You can create your product after you've reviewed the publishing guidelines for data products on AWS Data Exchange, and you've confirmed that your data set can be listed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

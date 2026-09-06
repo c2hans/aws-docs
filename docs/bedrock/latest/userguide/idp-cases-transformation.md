@@ -30,7 +30,3 @@ Another example is with address blocks that could appear as a single field
 You can define these fields as completely individual fields, or create a Custom Type. Custom Types are re that you can reuse for different fields. In the example below, we create a custom type “NameInfo” that we use for “EmployeeName” and “ManagerName”.
 
 ![Console showing how to add custom type details. It also shows the sub-properties added to the custom type.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/bda/bdacustomtype.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

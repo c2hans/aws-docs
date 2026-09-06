@@ -55,7 +55,3 @@ Complete the following procedure to create an Amazon DataZone domain.
    + **Quick setup** - (optional) check this box to get started faster by having Amazon DataZone set-up your account for data consumption and publishing. Amazon DataZone will create three IAM roles for provisioning, ingesting, and managing access to AWS Glue and Amazon Redshift resources, create a new Amazon S3 bucket, create an administrative Amazon DataZone project, and create environment profiles for the data lake and data warehouse default blueprints.
    + Tags -**** (optional) specify AWS tags (key and value pairs) for the domain.
    + Once the domain is successfully created, your browser should be refreshed to display your new Amazon DataZone domain’s details page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ Updating the message feedback status record when a message is received or not re
 <a name="message-feedback-processing"></a>
 
 Message feedback can be set through an API parameter in [SendTextMessage](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendTextMessage.html), [SendMediaMessage](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendMediaMessage.html), or as part of a configuration set. The API parameter takes precedent over the configuration set setting. For example, if the API parameter is set to False and the configuration set is set to True then message feedback is disabled because of the API parameter.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

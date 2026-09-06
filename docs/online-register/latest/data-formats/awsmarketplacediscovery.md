@@ -19,7 +19,3 @@ AWS Marketplace Discovery provides the following APIs for data retrieval.
 | <a name="aws-marketplace-ListPurchaseOptions"></a>[ListPurchaseOptions](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-discovery_ListPurchaseOptions.html) | List purchase options available to the buyer | List |
 | <a name="aws-marketplace-SearchFacets"></a>[SearchFacets](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-discovery_SearchFacets.html) | Search for facet values to filter listings | List |
 | <a name="aws-marketplace-SearchListings"></a>[SearchListings](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-discovery_SearchListings.html) | Search for product listings | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ The following table includes a **Sample values** column. Depending on your monit
 | ROLE\_SESSION\_NAME | This environment variable specifies the session name to be associated with the credentials for the assumed IAM role. | None | AWSAppConfigAgentSession |
 | SERVICE\_REGION | This environment variable specifies an alternative AWS Region that AWS AppConfig Agent uses to call the AWS AppConfig service. If left undefined, the agent attempts to determine the current Region. If it can't, the agent fails to start. | None | us-east-1<br />eu-west-1 |
 | `WAIT_ON_MANIFEST` | This environment variable configures AWS AppConfig Agent to wait until the manifest is processed before completing startup. | true | true<br />false |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

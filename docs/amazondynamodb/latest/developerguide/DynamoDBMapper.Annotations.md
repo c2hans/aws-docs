@@ -268,7 +268,3 @@ An annotation to override the standard attribute type binding. Standard types do
 <a name="DynamoDBMapper.Annotations.DynamoDBVersionAttribute"></a>
 
 Identifies a class property for storing an optimistic locking version number. `DynamoDBMapper` assigns a version number to this property when it saves a new item, and increments it each time you update the item. Only number scalar types are supported. For more information about data types, see [Data types](HowItWorks.NamingRulesDataTypes.md#HowItWorks.DataTypes). For more information about versioning, see [DynamoDB and optimistic locking with version number](DynamoDBMapper.OptimisticLocking.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

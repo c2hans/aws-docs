@@ -41,7 +41,3 @@ To make these changes, the [CreateHostedConfigurationVersion](https://docs.aws.a
 
 **Important**
 When AMS Accelerate updates the default configuration profile, it's not calibrated against your configured custom alarms, so review changes to the default alarms when you're overriding them in your customization configuration profile.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

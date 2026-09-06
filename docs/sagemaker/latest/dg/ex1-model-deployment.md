@@ -134,7 +134,3 @@ Instead of hosting an endpoint in production, you can run a one-time batch infer
    ```
 
    This should create the `test.csv.out` file under the current working directory. You'll be able to see the float values that are predicted based on the logistic regression of the XGBoost training job.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

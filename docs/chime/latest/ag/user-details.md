@@ -30,7 +30,3 @@ Complete user details don't appear for Team account users until after they accep
 | Last active date | The date when the user was last active. | 06/12/2020 |
 | Chat messages sent | The number of chat messages the user sent. | 1025 |
 | Phone number | The phone number assigned to a user, if any. | \+12065550100 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ When testing ad insertion, look for these indicators of success:
 + No buffering or playback errors during ad transitions
 
 For more detailed testing procedures, see [Understanding AWS Elemental MediaTailor ad insertion behavior](ad-behavior.md). For comprehensive CDN integration testing and validation, see [Testing and validation for CDN and MediaTailor integrations](cdn-integration-testing.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

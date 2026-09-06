@@ -31,7 +31,3 @@ Currently, you can use the versions 3.3.x, 3.4.x, 3.5.x, 4.0.x, and 4.1.x of Spa
 +  We recommend turning on [ Amazon Redshift at-rest encryption](https://docs.aws.amazon.com/redshift/latest/mgmt/security-server-side-encryption.html).
 +  We recommend turning on SSL for the JDBC connection from Spark on Amazon EMR to Amazon Redshift.
 + We recommend passing an IAM role using the parameter `aws_iam_role` for the Amazon Redshift authentication parameter.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

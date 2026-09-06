@@ -76,8 +76,4 @@ Following are ways to improve Redshift Spectrum performance:
 + Use partitions to limit the data that is scanned. Partition your data based on your most common query predicates, then prune partitions by filtering on partition columns. For more information, see [Partitioning Redshift Spectrum external tables](c-spectrum-external-tables.md#c-spectrum-external-tables-partitioning).
 
   Query [SVL\_S3PARTITION](r_SVL_S3PARTITION.md) to view total partitions and qualified partitions.
-+  Use AWS Glue's statistics generator to compute column-level statistics for AWS Glue Data Catalog tables. Once AWS Glue generates statistics for tables in the Data Catalog, Amazon Redshift Spectrum automatically uses those statistics to optimize the query plan. For more information about computing column-level statistics using AWS Glue, see [Working with column statistics](https://docs.aws.amazon.com/glue/latest/dg/column-statistics.html) in the *AWS Glue Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++  Use AWS Glue's statistics generator to compute column-level statistics for AWS Glue Data Catalog tables. After AWS Glue generates statistics for tables in the Data Catalog, Amazon Redshift Spectrum automatically uses those statistics to optimize the query plan. For more information about computing column-level statistics using AWS Glue, see [Working with column statistics](https://docs.aws.amazon.com/glue/latest/dg/column-statistics.html) in the *AWS Glue Developer Guide*.

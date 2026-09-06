@@ -115,7 +115,3 @@ For more information, see [AWS CodeBuild permissions reference](auth-and-access-
 +  [Allow a user to get a list of reports](auth-and-access-control-iam-identity-based-access-control.md#customer-managed-policies-example-get-list-of-reports)
 +  [Allow a user to get a list of reports for a report group](auth-and-access-control-iam-identity-based-access-control.md#customer-managed-policies-example-get-list-of-reports-for-report-group)
 +  [Allow a user to get a list of test cases for a report](auth-and-access-control-iam-identity-based-access-control.md#customer-managed-policies-example-get-list-of-test-cases-for-report)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

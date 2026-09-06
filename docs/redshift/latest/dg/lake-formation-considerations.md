@@ -14,11 +14,7 @@ The following are considerations and limitations for sharing Amazon Redshift dat
 + If you created and shared a view and its tables to Lake Formation, you can configure filters to manage access of the tables, Amazon Redshift enforces Lake Formation defined policies when consumer cluster users access shared objects. When a user accesses a view shared with Lake Formation, Redshift enforces only the Lake Formation policies defined on the view and not the tables contained within the view. However, when users directly access the table, Redshift enforces the defined Lake Formation policies on the table.
 + You can't create materialized views on the consumer based on a shared table if the table has Lake Formation filters configured.
 + The Lake Formation administrator must have [ data lake administrator](https://docs.aws.amazon.com/lake-formation/latest/dg/getting-started-setup.html#create-data-lake-admin) permissions and the [ required permissions to accept a datashare](https://docs.aws.amazon.com/lake-formation/latest/dg/redshift-ds-prereqs.html).
-+ The producer consumer cluster must be an RG or RA3 cluster with the latest Amazon Redshift cluster version or a serverless workgroup to share datashares via Lake Formation.
++ The producer consumer cluster must be an RG or RA3 cluster with the latest Amazon Redshift cluster version or a serverless workgroup to share datashares through Lake Formation.
 + Both the producer and consumer clusters must be encrypted.
 + Redshift row-level and column-level access control policies implemented in the producer cluster or workgroup are ignored when the datashare is shared to Lake Formation. The Lake Formation administrator must configure these policies in Lake Formation. The producer cluster or workgroup administrator can turn off RLS for a table by using the [ALTER TABLE](https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_TABLE.html) command.
-+ Sharing datashares via Lake Formation is only available to users who have access to both Redshift and Lake Formation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ Sharing datashares through Lake Formation is only available to users who have access to both Redshift and Lake Formation.

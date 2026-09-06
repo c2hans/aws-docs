@@ -91,7 +91,3 @@ The **Jobs** list in the EMR Studio UI displays only job runs that you submit us
 1. From the cluster detail page, select a job run to debug.
 
 1. In the upper right of the **Jobs** list, choose **Launch Spark History Server** to open the application interface in a new browser tab.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

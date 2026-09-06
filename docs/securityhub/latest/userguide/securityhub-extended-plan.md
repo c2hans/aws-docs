@@ -58,7 +58,3 @@ You are not billed for the partner solution until you complete the onboarding pr
 
 **Important**
 In addition to canceling your subscription, follow any additional offboarding steps that are required for the partner solution, based on how you configured the solution for your company.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

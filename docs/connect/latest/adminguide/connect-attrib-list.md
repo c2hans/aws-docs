@@ -34,6 +34,7 @@ The JSONPath reference for each attribute is provided so you can [create dynamic
 + [Customer Profiles attributes](#customer-profiles-attributes)
 + [Outbound campaign attributes](#campaign-attributes)
 + [agent assist attribute](#qic-attributes)
++ [Agentic CX attributes](#agentic-cx-attributes)
 
 ## System attributes
 <a name="attribs-system-table"></a>
@@ -82,7 +83,7 @@ Segment attributes are a set of system defined key-value pairs stored on individ
 
 | Attribute | Description | Allowed values | Type | JSONPath Reference |
 | --- | --- | --- | --- | --- |
-| connect:Subtype | Represents the subtype of the channel used for the contact. |  +  "connect:SMS" <br />+  "connect:WebRTC" <br />+  "connect:Guide" <br />+  "connect:Apple" <br />+  "connect:WhatsApp" <br />+  "connect:ExternalAudio" <br />+  "connect:Chat" <br />+  "connect:Telephony" <br />+  "connect:Task" <br />+  "connect:Email"   | ValueString | $.SegmentAttributes['connect:Subtype'] |
+| connect:Subtype | Represents the subtype of the channel used for the contact. |  +  "connect:SMS" <br />+  "connect:WebRTC" <br />+  "connect:Guide" <br />+  "connect:Apple" <br />+  "connect:WhatsApp" <br />+  "connect:ExternalAudio" <br />+  "connect:Chat" <br />+  "connect:Telephony" <br />+  "connect:Task" <br />+  "connect:Email" <br />+  "connect:Assistant"   | ValueString | $.SegmentAttributes['connect:Subtype'] |
 | connect:Direction | Represents the direction of the contact. For example, inbound or outbound. |  +  "INBOUND" <br />+  "OUTBOUND"   | ValueString | $.SegmentAttributes['connect:Direction'] |
 | connect:BlockReasonHeader | Provides access to the 603\+ Network Blocked information. | Redress header, for example: `SIP; cause=603; text=\"v=analytics1;url=https://carrier-example.com/redress;tel=+18005551234;email=support@carrier-example.com;id=block-12345\"; location=LN"` | ValueString | $.SegmentAttributes['connect:BlockReasonHeader'] |
 | connect:CreatedByUser | Represents the user's ARN who created the task. |  | ValueString | $.SegmentAttributes['connect:CreatedByUser'] |
@@ -479,6 +480,11 @@ The following attribute stores the agent assist session ARN. A use case for this
 | --- | --- | --- | --- |
 | SessionArn | The Amazon Resource Name (ARN) of an agent assist session. | Flow | $.Wisdom.SessionArn |
 
-## See also
+## Agentic CX attributes
+<a name="agentic-cx-attributes"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+Attributes set by the [Agentic CX](agentic-cx-block.md) block. After the block completes, these attributes contain the context variables returned by the Agentic CX Designer application and can be referenced in subsequent blocks.
+
+| Attribute | Description | Type | JSONPath Reference |
+| --- | --- | --- | --- |
+| Context variables | The context variables set by the Agentic CX Designer application that handled the contact. Replace `<variableName>` with the name of the context variable you want to reference. | Agentic CX | $.AgenticCX.ContextVariables.<variableName> |

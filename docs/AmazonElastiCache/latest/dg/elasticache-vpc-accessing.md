@@ -182,7 +182,3 @@ The following diagram illustrates accessing an ElastiCache cache from an applica
 1. Modify the Security Group of your ElastiCache cache to allow inbound connection from the on-premises application servers.
 
 Accessing a cache over DX connection may introduce networking latencies and additional data transfer charges.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,3 @@ To list products on AWS Marketplace, you must be a registered seller. To registe
 To start the listing process, do one of the following:
 + From the SageMaker AI console, choose the product, choose **Actions**, and choose **Publish new ML Marketplace listing**. This carries over your product reference, the Amazon Resource Name (ARN), and directs you to the AMMP to create the listing.
 + Go to [ML listing process](https://aws.amazon.com/marketplace/management/ml-products/), manually enter the Amazon Resource Name (ARN), and start your product listing. This process carries over the product metadata that you entered when creating the product in SageMaker AI. For an algorithm listing, the information includes the supported instance types and hyperparameters. In addition, you can enter a product description, promotional information, and support information as you would with other AWS Marketplace products.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

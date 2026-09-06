@@ -28,7 +28,3 @@ In AWS GovCloud (US-West) (`us-gov-west-1`), the following features are not supp
 + **Document-level access control (ACLs).** The `aclEnabled` setting and ACL filtering at query time are not available.
 + **Service-managed embedding, reranking, and agentic retrieval models.** You must provide your own Amazon Bedrock embedding model when you create a knowledge base, and your own reranking model at query time if you want reranking. Agentic retrieval is not available.
 + **Amazon Bedrock AgentCore Gateway integration.** The AgentCore Gateway target for managed knowledge bases is not available.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

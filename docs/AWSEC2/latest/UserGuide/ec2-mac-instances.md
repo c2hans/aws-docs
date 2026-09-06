@@ -112,7 +112,3 @@ For information about pricing, see [Pricing](https://aws.amazon.com/ec2/instance
 For more information about Mac instances, see [Amazon EC2 Mac Instances](https://aws.amazon.com/ec2/instance-types/mac/).
 
 For more information about hardware specifications and network performance of Mac instances, see [General purpose instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/gp.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

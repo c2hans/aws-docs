@@ -35,7 +35,3 @@ Additional costs apply to access token customization with version 2 events. For 
 + [Verifying JSON web tokens](amazon-cognito-user-pools-using-tokens-verifying-a-jwt.md)
 + [Managing user pool token expiration and caching](amazon-cognito-user-pools-using-tokens-caching-tokens.md)
 + [Scopes, M2M, and resource servers](cognito-user-pools-define-resource-servers.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

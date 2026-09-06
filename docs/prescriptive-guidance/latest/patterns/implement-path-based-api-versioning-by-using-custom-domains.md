@@ -185,7 +185,3 @@ To invoke and test your API, use the following steps:
 1. Take note on how validation (passing in non-number values) is handled in V1 compared to V2.
 
 To see screenshots of example API invocation and comparison of V1 and V2 validation, see **Testing your sample API** in the `README.md` file in this pattern’s [code repository](https://github.com/aws-samples/path-based-versioning-with-api-gateway).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

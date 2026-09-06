@@ -26,7 +26,3 @@ The genomics market is highly competitive, so having a development lifecycle tha
 The [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/?actwpp_AWSGDFWAF_HTML) helps you understand the pros and cons of the decisions you make when building systems on AWS. Using the Framework allows you to learn architectural best practices for designing and operating reliable, secure, efficient, and cost-effective systems in the cloud.
 
 In the [Machine Learning Lens](https://aws.amazon.com/architecture/machine-learning/?actwpp_AWSGDFML_HTML), we focus on how to design, deploy, and architect your machine learning workloads in the AWS Cloud. This lens adds to the best practices described in the Well-Architected Framework.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

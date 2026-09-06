@@ -29,7 +29,3 @@ This imports the library and gives you access to all of the elements. You can th
 Crowd HTML Elements includes a range of elements ranging from wrappers for common form elements such as text fields and check boxes (`crowd-input` and `crowd-checkbox`), to full task interfaces for tasks such as drawing bounding boxes on images (`crowd-bounding-box`) and text entity annotation (`crowd-entity-annotation`).
 
 For a full list of the available elements, see the [Crowd HTML Elements Reference](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

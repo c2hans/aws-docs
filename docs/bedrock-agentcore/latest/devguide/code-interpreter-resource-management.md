@@ -35,7 +35,3 @@ VPC mode
 Connects the tool to your Virtual Private Cloud (VPC), allowing access to private resources within your AWS environment such as databases, internal APIs, and other services while maintaining network isolation from the public internet. This option requires additional VPC configuration.
 
 The following topics show you how to create and manage Code Interpreters, start and stop sessions, and how to execute code.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

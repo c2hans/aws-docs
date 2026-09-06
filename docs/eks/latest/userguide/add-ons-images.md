@@ -52,7 +52,3 @@ When you deploy [AWS Amazon EKS add-ons](workloads-add-ons-available-eks.md) to 
 | us-gov-east-1 | 151742754352.dkr.ecr.us-gov-east-1.amazonaws.com |
 | us-gov-west-1 | 013241004608.dkr.ecr.us-gov-west-1.amazonaws.com |
 | eusc-de-east-1 | 877088126301.dkr.ecr.eusc-de-east-1.amazonaws.eu |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

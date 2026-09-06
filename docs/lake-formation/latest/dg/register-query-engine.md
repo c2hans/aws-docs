@@ -61,7 +61,3 @@ Before a third-party query engine can use the application integration API operat
 When `LakeFormationAuthorizedCaller` calls the STS:AssumeRole API operation to fetch credentials for the query engine to use, the session tag must be included in the [ AssumeRole request](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html#id_session-tags_adding-assume-role). The returned temporary credential can be used to make Lake Formation application integration API requests.
 
 Lake Formation application integration API operations require the calling principal to be an IAM role. The IAM role must include a session tag with a predetermined value that has been registered with Lake Formation. This tag allows Lake Formation to verify that the role used to call the application integration API operations is allowed to do so.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

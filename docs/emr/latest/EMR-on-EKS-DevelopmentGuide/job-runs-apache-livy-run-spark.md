@@ -77,7 +77,3 @@ To run interactive sessions with Apache Livy, see the following steps.
 <a name="job-runs-apache-livy-run-ui"></a>
 
 To monitor the progress of your Spark applications with the Livy UI, use the link `http://<livy-endpoint>/ui`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -72,7 +72,3 @@ Do not use the DynamoDB console or scheduler CLI to delete or modify schedules a
 Before you delete the main Instance Scheduler stack, you must delete all additional stacks that contain schedules and periods created using the custom resource because the custom resource stacks contain dependencies on the main stack’s DynamoDB table.
 
 In the configuration DynamoDB table, schedules and periods that were configured with the custom resource can be identified by the **configured\_in\_stack** attribute. The attribute contains the Amazon Resource Name of the stack that was used to create the item.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Instance Scheduler on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

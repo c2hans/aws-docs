@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/database-caching-stra
  This reader endpoint splits your incoming read connection requests evenly between all read replicas. This reduces the need for the clients to direct traffic to an individual replica, and simplifies configuration to look up and access cached data. Reader endpoint also helps your Amazon ElastiCache (Redis OSS) cluster to load balance all read traffic, as well as to achieve High Availability by placing read replicas in different AWS Availability Zones (AZ).
 
  Reader endpoints works with ElastiCache (Redis OSS) clusters with cluster-mode disabled. For more information, see [Finding Replication Group Endpoints](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Replication.Endpoints.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -140,7 +140,3 @@ Amazon S3 bucket owner condition has the following restrictions and limitations:
 + The value of the bucket owner condition parameter must be an AWS account ID (12-digit numeric value). Service principals aren't supported.
 + Bucket owner condition isn't available for [CreateBucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html), [ListBuckets](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBuckets.html), or any of the operations included in [AWS S3 Control](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_AWS_S3_Control.html). Amazon S3 ignores any bucket owner condition parameters included with requests to these operations.
 + Bucket owner condition only verifies that the account specified in the verification parameter owns the bucket. Bucket owner condition doesn't check the configuration of the bucket. It also doesn't guarantee that the bucket's configuration meets any specific conditions or matches any past state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

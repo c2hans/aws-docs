@@ -18,7 +18,3 @@ You need to configure patching to ensure that your software is up-to-date and me
 See [Patching recommendations](acc-patching.md#acc-patching-recos) for guidance with Amazon EC2 patch policies.
 + To start configuring patch management, see [Understand patch management in AMS Accelerate](acc-patching.md)
 + To create a custom patch configuration, see [Custom patch baseline with AMS Accelerate](acc-patch-baseline-custom.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

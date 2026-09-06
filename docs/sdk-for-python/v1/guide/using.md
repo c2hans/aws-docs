@@ -19,7 +19,3 @@ Before using these patterns, configure credentials and an AWS Region as describe
 + [Handling errors](using-errors.md)
 + [Customizing SDK behavior with plugins and interceptors](using-extensions.md)
 + [Testing applications that use the SDK](using-testing.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Python. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-python` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

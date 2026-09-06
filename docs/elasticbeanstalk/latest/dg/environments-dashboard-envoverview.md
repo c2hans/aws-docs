@@ -47,7 +47,3 @@ If your platform version is not the most recently available, then a status label
 <a name="environments-dashboard-envoverview.Platformstate"></a>
 
 The lifecycle state of the platform version running on your environment, such as **Supported**, **Deprecated**, or **Retired**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

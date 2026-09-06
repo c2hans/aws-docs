@@ -171,7 +171,3 @@ To access a block storage disk after attaching it to an instance, you must mount
 
    The disk should now be labeled as **Online**, and a drive letter should be associated with it. You can now access the block storage disk and its contents by opening File Explorer and browsing to the designated drive letter.
 ![Online disk on a Windows instance.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-windows-disk-management-online.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

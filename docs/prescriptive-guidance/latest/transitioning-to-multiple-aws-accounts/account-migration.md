@@ -14,7 +14,3 @@ If you have followed the recommendations in this guide, your organization now ha
 ![](http://docs.aws.amazon.com/prescriptive-guidance/latest/transitioning-to-multiple-aws-accounts/images/guide-img/b35f7443-fbaf-4ce8-bb48-32b6441d573f/images/178a8dc0-7b47-4c4b-a166-453a9fea58d6.png)
 
 If there are workloads running within the preexisting account, you now migrate these workloads into independent accounts, according to the criteria you established in [Define scoping criteria](manage-member-accounts.md#define-scoping-criteria). Migrate any non-production workloads to the new **dev-nonprod** organizational unit, and migrate production workloads to the **network-prod** account. For more information about migrating common AWS resources, see the following section of this guide, [Resource migration](resource-migration.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

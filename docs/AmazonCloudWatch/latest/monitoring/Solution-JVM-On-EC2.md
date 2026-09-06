@@ -367,7 +367,3 @@ In the **Threads and Classes Loaded by Host** section, find the **Top 10 Threads
 **Identify garbage collection issues**
 
 In the **Garbage Collection** section, find the **Top 10 Garbage Collections Invocations Per Minute** and **Top 10 Garbage Collection Duration** widgets for the different garbage collector types: **Young**, **Concurrent**, and **Mixed**. Look for any JVMs that have an unusually high number of collections or long collection durations compared to others. This could indicate configuration issues or memory leaks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

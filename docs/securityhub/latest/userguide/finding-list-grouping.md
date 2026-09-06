@@ -27,7 +27,3 @@ When you choose an attribute value, Security Hub CSPM displays the list of match
 1. In the **Group by** drop down, choose the attribute to use for the grouping.
 
    To remove a grouping attribute, choose the **x** icon. When you remove the grouping attribute, the list changes from the list of attribute values to a list of findings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

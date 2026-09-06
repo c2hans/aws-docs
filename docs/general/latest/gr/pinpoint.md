@@ -199,7 +199,3 @@ For AWS End User Messaging SMS and Voice V2 API service endpoints see [AWS End U
 | Voice message length | Each supported Region: 30 | No | The maximum voice message length. If your account is in the sandbox: 30 seconds. If your account is out of the sandbox: 5 minutes. |
 
 For more information, see [Amazon Pinpoint quotas](https://docs.aws.amazon.com/pinpoint/latest/developerguide/limits.html) in the *Amazon Pinpoint Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

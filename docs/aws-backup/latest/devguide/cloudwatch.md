@@ -86,7 +86,3 @@ The following table lists all the metrics available to you.
 | NumberOfRecoveryPointsCold | The number of recovery points that AWS Backup tiered to cold storage. |
 
 More dimensions are available beyond those listed in the table. To view all the dimensions of a metric, type the name of that metric into the `AWS/Backup` namespace of the **Metrics** section of the CloudWatch console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

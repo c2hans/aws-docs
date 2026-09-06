@@ -12,7 +12,3 @@ Notifications are beneficial to proactively take action on your expiring, or out
 Purchase order notifications are sent to your contacts for the following scenarios:
 + Balance tracking – When your purchase order's line item balance drops below the 75% threshold. The purchase order balance is tracked at the line item level, and must be enabled at each level.
 + Expiration tracking – When your purchase order is approaching its expiration. Your contacts receive notifications leading up to your expiration date. If your purchase order expiration is less than one month away, notifications are sent one week prior and on the expiration date. If your expiration date is one to three months away, a notification is sent one month before the expiration date. If the expiration is more than three months away, notifications are sent two months before the expiration date.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

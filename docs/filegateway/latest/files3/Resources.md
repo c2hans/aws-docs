@@ -22,7 +22,3 @@ This section contains the following topics, which provide additional information
 + [Using storage classes](storage-classes.md) - Learn about the Amazon S3 storage classes that File Gateway supports, and what to consider when choosing a storage class.
 + [Using Kubernetes CSI drivers](using-csi-drivers.md) - Learn how to install and configure Container Storage Interface (CSI) drivers to allow Kubernetes instances to use File Gateway for storage.
 + [Terraform module](sgw-terraform.md) - Learn how to use Terraform to deploy File Gateway as a virtual machine.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

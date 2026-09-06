@@ -124,7 +124,3 @@ To access files in your Windows installation from within Ubuntu, navigate to the
 With Visual Studio Code, you can edit application code in your development environment and run commands with an integrated terminal. To install Visual Studio Code, visit [code.visualstudio.com](https://code.visualstudio.com/). After installation, add the [Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension.
 
 Windows terminal is an alternative to the standard Ubuntu terminal that you’ve been running commands in. It supports multiple tabs and can run PowerShell, Command Prompt, and terminals for any other variety of Linux that you install. It supports copy and paste with  Ctrl C  and  Ctrl V , clickable URLs, and other useful improvements. To install Windows Terminal, visit [microsoft.com](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

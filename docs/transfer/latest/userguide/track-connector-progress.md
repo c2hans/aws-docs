@@ -93,7 +93,3 @@ Use monitoring data to troubleshoot common VPC connector issues:
 + **Connection timeouts**: Check VPC Flow Logs and security group rules for blocked traffic on port 22
 + **Transfer failures**: Review CloudWatch logs for detailed error messages and VPC Lattice access logs for network-level issues
 + **Performance issues**: Monitor VPC Lattice access logs for connection timing and throughput metrics
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

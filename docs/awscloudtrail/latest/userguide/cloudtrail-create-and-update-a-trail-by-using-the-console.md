@@ -31,7 +31,3 @@ For information specific to creating a trail for an organization in AWS Organiza
 + [Updating a trail with the CloudTrail console](cloudtrail-update-a-trail-console.md)
 + [Deleting a trail with the CloudTrail console](cloudtrail-delete-trails-console.md)
 + [Turning off logging for a trail](cloudtrail-turning-off-logging.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

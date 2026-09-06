@@ -110,7 +110,3 @@ The following are the service events that AWS CloudHSM logs to CloudTrail.
 You can identify AWS CloudHSM service events in CloudTrail logs by the following attribute values:
 + `eventSource`: `cloudhsm.amazonaws.com`
 + `eventType`: `AwsServiceEvent`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

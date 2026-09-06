@@ -36,7 +36,3 @@ Use the following procedure to view filters in analyses.
    Any filters applied to the analysis appear here.
 
    The way that a filter is scoped is listed at the bottom of each filter. For more information about scoping filters, see [Adding filters](add-a-filter-data-prep.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

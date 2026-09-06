@@ -32,7 +32,3 @@ In addition to findings, Macie creates sensitive data discovery results for S3 o
 + [Filtering findings](findings-filter-overview.md)
 + [Investigating sensitive data with findings](findings-investigate-sd.md)
 + [Suppressing findings](findings-suppression.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

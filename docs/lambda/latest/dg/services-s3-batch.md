@@ -72,7 +72,3 @@ If the Lambda function returns a `TemporaryFailure` response code, Amazon S3 ret
 For more information about Amazon S3 batch operations, see [Performing batch operations](https://docs.aws.amazon.com/AmazonS3/latest/dev/batch-ops.html) in the *Amazon S3 Developer Guide*.
 
 For an example of how to use a Lambda function in Amazon S3 batch operations, see [Invoking a Lambda function from Amazon S3 batch operations](https://docs.aws.amazon.com/AmazonS3/latest/dev/batch-ops-invoke-lambda.html) in the *Amazon S3 Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

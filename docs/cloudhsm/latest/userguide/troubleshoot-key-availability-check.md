@@ -22,7 +22,3 @@ OpenSSL frequently forks new instances of the SDK.
 + Use the **--disable-key-availability-check** parameter to set key availability to false in the configure file of your [configure tool](configure-tool.md). For more information, see the [AWS CloudHSM Client SDK 5 configuration parameters](configure-tool-params5.md) section of the Configure tool.
 + If using a cluster with two HSMs, avoid using the operations that prompted the error, except during initialization code.
 + Increase the amount of HSMs in your cluster to at least three.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

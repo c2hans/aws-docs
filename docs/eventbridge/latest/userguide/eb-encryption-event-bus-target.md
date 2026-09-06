@@ -14,7 +14,3 @@ When a custom or partner event is sent to an event bus, EventBridge encrypts tha
 
   EventBridge encrypts the event at rest according to the KMS key configuration on the first event bus. EventBridge uses TLS to send the event to the second event bus in the different Region, where it is then encrypted according to the KMS key configuration specified for the target event bus.
 ![An event sent to a target event bus in a different Region, using TLS in transit.](http://docs.aws.amazon.com/eventbridge/latest/userguide/images/cmkms-bus-cross-region_eventbridge_conceptual.svg)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

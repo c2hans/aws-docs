@@ -52,7 +52,3 @@ Here's what happens next:
 Verifying the authenticity of the winning carrier's port-out request is critical for the security of your phone number. If the contact details are not correct (for example, there's a name mismatch), your port-out request might be rejected, causing delays and requiring you to resubmit your request.
 
 1. The winning carrier will complete the port-out request on the date and time that you establish with them. Work with the winning carrier to complete the remainder of the port-out process to ensure a seamless transition.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

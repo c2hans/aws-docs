@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/visualization-g
 ![Ontology model designer showing semantic graph with entities such as Airport, Route, City, and Airline connected by relationships.](http://docs.aws.amazon.com/neptune/latest/userguide/images/graph-build-screenshot.png)
 
  [Request a demo](https://graph.build/enquire/book-a-demo) today.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

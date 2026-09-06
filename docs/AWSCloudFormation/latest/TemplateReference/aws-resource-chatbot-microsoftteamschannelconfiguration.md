@@ -191,7 +191,3 @@ Common troubleshooting scenarios:
 +  *I have already done the initial authorization for my workspace. Do I need to do it again?*
 
   No, you can use your existing workspace. You must log into the Amazon Q Developer in chat applications console to get the workspace ID.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -348,7 +348,3 @@ if err != nil {
 ```
 
 After you complete this migration, you can proceed to testing and deployment using your application’s best practices. After deploying your application deployment, you will have successfully migrated it from the V1 to V2 Amazon S3 encryption clients.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Go. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-go` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

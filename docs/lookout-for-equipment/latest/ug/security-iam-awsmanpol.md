@@ -121,7 +121,3 @@ View details about updates to AWS managed policies for Lookout for Equipment sin
 | [AmazonLookoutEquipmentReadOnlyAccess](#security-iam-awsmanpol-AmazonLookoutEquipmentReadOnlyAccess) – New policy | Lookout for Equipment added a new policy to allow read only access for all Lookout for Equipment resources. | May 05, 2021 |
 | [AmazonLookoutEquipmentFullAccess](#security-iam-awsmanpol-AmazonLookoutEquipmentFullAccess) – Update to an existing policy | Lookout for Equipment added permissions to describe AWS KMS managed encryption keys. <br />You must use these permissions to use the Lookout for Equipment console to display information about AWS KMS keys across AWS accounts. | May 05, 2021 |
 | Lookout for Equipment started tracking changes | Lookout for Equipment started tracking changes for its AWS managed policies. | April 08, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ To do this using the API, see the `GET` method in the [Tags arn](https://docs.aw
 1. Choose the name of the specific resource that has tags that you want to view.
 
 1. View the tags for the resource in the **Tags** section at the bottom of the page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

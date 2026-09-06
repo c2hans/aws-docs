@@ -35,7 +35,3 @@ You can set thresholds for Face Liveness and face match confidence scores. Your 
 The following graphic demonstrates the user flow, from instructions to liveness check to returned result:
 
 ![User flow showing face centering, moving closer, holding still for liveness check, and successful result with confidence score.](http://docs.aws.amazon.com/rekognition/latest/dg/images/mobile-flow.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

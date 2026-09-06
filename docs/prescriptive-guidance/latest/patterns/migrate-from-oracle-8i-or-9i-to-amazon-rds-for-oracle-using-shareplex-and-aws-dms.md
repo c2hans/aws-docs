@@ -132,7 +132,3 @@ The diagram shows the following workflow:
 + [Debugging Your AWS DMS Migrations: What to Do When Things Go Wrong? (Part 3)](https://aws.amazon.com/blogs/database/debugging-your-aws-dms-migrations-what-to-do-when-things-go-wrong-part-3/)
 + [SharePlex for Database Replication](https://aws.amazon.com/marketplace/pp/B07943W4MJ)
 + [SharePlex: database replication for any environment](https://www.youtube.com/watch?v=ygS_ouUaNus)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

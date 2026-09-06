@@ -50,7 +50,3 @@ WorkSpaces Core Managed Instances only support instances with all sizes as shown
 Bare metal sizes such as m7i.metal-24xlarge are not supported.
 
 For a list of available WorkSpaces Core bundles, visit the [Amazon WorkSpaces Core pricing page](https://aws.amazon.com/workspaces-family/core/pricing/). To help you choose the right instances for your use case, refer to [Amazon EC2 instance types](https://aws.amazon.com/ec2/instance-types/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-core` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -74,7 +74,3 @@ The following procedure describes how to view backtrack information for a DB clu
 <a name="AuroraMySQL.Managing.Backtrack.Describing.API"></a>
 
 To view backtrack information for a DB cluster using the Amazon RDS API, use the [DescribeDBClusters](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusters.html) operation. This operation returns backtrack information for the DB cluster specified in the `DBClusterIdentifier` value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

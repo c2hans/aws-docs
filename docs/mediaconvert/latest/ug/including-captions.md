@@ -59,7 +59,3 @@ In jobs with multiple inputs, each input must have the same number of captions s
 1. For most formats, more fields appear. Specify the values for these fields as described in the topic that relates to your input captions format. Choose the appropriate topic from the list that follows this procedure.
 
 1. Create more captions selectors as necessary. The number of captions selectors that you need depends on your input captions format. Choose the appropriate topic from the list that follows this procedure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

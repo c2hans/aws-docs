@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_MERGE.html
 # MERGE
 <a name="r_MERGE"></a>
 
-Conditionally merges rows from a source table into a target table. Traditionally, this can only be achieved by using multiple insert, update or delete statements separately. For more information on the operations that MERGE lets you combine, see [UPDATE](https://docs.aws.amazon.com/redshift/latest/dg/r_UPDATE.html), [DELETE](https://docs.aws.amazon.com/redshift/latest/dg/r_DELETE.html), and [INSERT](https://docs.aws.amazon.com/redshift/latest/dg/r_INSERT_30.html).
+Conditionally merges rows from a source table into a target table. Traditionally, this can only be achieved by using multiple insert, update or delete statements separately. For more information on the operations that you can combine with MERGE, see [UPDATE](https://docs.aws.amazon.com/redshift/latest/dg/r_UPDATE.html), [DELETE](https://docs.aws.amazon.com/redshift/latest/dg/r_DELETE.html), and [INSERT](https://docs.aws.amazon.com/redshift/latest/dg/r_INSERT_30.html).
 
 ## Syntax
 <a name="r_MERGE-synopsis"></a>
@@ -268,7 +268,3 @@ After MERGE runs, there's only one row with an ID value of 23 in *target\_table*
 <a name="r_MERGE-see-also"></a>
 
  [INSERT](r_INSERT_30.md), [UPDATE](r_UPDATE.md), [DELETE](r_DELETE.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

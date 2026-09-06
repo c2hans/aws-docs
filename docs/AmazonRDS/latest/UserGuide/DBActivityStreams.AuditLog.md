@@ -651,7 +651,3 @@ The audit log activity event record is a JSON object that contains the following
 | `type` | string | The type of JSON record. The value is `DatabaseActivityMonitoringRecord`. |
 | instanceId | string | The DB instance resource identifier. It corresponds to the DB instance attribute DbiResourceId. |
 | [databaseActivityEventList JSON array](DBActivityStreams.AuditLog.databaseActivityEventList.md)  | string | An array of activity audit records or heartbeat messages. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

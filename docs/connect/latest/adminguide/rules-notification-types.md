@@ -21,7 +21,3 @@ The conversational analytics events for speech and chat analytics enable numerou
 + Aggregating and reporting on reoccurring issues and topics
 + Measuring the impact of the latest marketing campaign by detecting how many customers referenced it during a call
 + Customizing agent compliance standards for each Region and lines of business, and enrolling agents into additional training where required.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

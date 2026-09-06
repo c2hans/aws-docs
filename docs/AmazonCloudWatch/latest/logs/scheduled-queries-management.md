@@ -62,7 +62,3 @@ The **Scheduled queries** page provides an overview of all your scheduled querie
 ------
 
 The **Scheduled queries** page header shows the total number of scheduled queries in your account, helping you track your usage and manage your automated log analysis workflows effectively.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

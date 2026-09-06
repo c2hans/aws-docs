@@ -29,7 +29,3 @@ AWS Direct Connect provides the following APIs for data retrieval.
 | <a name="directconnect-DescribeVirtualInterfaces"></a>[DescribeVirtualInterfaces](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeVirtualInterfaces.html) | Describe all virtual interfaces for an AWS account | Read |
 | <a name="directconnect-ListVirtualInterfaceRoutes"></a>[ListVirtualInterfaceRoutes](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_ListVirtualInterfaceRoutes.html) | List the routes accepted and advertised over a virtual interface | List |
 | <a name="directconnect-ListVirtualInterfaceTestHistory"></a>[ListVirtualInterfaceTestHistory](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_ListVirtualInterfaceTestHistory.html) | List the virtual interface failover test history | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

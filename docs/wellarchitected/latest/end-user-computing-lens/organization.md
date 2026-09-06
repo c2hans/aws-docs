@@ -41,7 +41,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 + [EUCOPS02-BP02 Build a matrix of all internal and external stakeholders who may be affected by changes to the way you deliver EUC services](eucops02-bp02.md)
 + [EUCOPS03-BP01 Identify the business goals and success criteria for your EUC project](eucops03-bp01.md)
 + [EUCOPS04-BP01 Identify the key capabilities and features that deliver business value and drive project success](eucops04-bp01.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

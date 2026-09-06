@@ -13,7 +13,3 @@ A rule is a condition that tells Amazon Fraud Detector how to interpret variable
 + **Outcome** – An outcome is a response returned by Amazon Fraud Detector when a rule is matched. The outcome indicates the result of a fraud prediction. You can create outcomes for each possible fraud prediction and add them to a rule. For more information, see [Outcomes](outcomes.md).
 
 A detector must have at least one associated rule. A rule can have up to 3 lists, and a detector can have up to 30 lists. You create rule as part of the detector creation process. You can also create and associate new rules with an existing detector.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

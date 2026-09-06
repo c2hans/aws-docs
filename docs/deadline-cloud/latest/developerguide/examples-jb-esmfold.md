@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Predict protein structures with ESMFold on Deadline Cloud
 <a name="examples-jb-esmfold"></a>
 
-The [esmfold\_predict](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/esmfold_predict) job bundle runs protein structure prediction with ESMFold (Meta's `facebook/esmfold_v1`, MIT license). The bundle takes a FASTA file as input and produces a `.pdb` file per sequence as output, along with confidence metrics and an optional validation report against experimental reference structures.
+The [esmfold\_predict](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/esmfold_predict) job bundle on the GitHub website runs protein structure prediction with ESMFold (Meta's `facebook/esmfold_v1`, MIT license). The bundle takes a FASTA file as input and produces a `.pdb` file per sequence as output, along with confidence metrics and an optional validation report against experimental reference structures.
 
 The job runs four steps:
 
@@ -17,7 +17,7 @@ The job runs four steps:
 
 1. Optional: when you supply a directory of experimental reference PDBs, compute TM-score, RMSD, and a per-residue pLDDT/error calibration plot.
 
-The bundle requires a farm with an NVIDIA GPU service-managed fleet (A10G, L4, or A100; at least 16 GB VRAM and 16 GB system RAM) and a queue with a conda queue environment that consumes the `CondaPackages` and `CondaChannels` job parameters. The fastest setup is the [cuda\_farm](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cuda_farm) AWS CloudFormation (CloudFormation) template. Amazon Elastic Compute Cloud (Amazon EC2) GPU instances are gated by per-region vCPU quotas; if your fleet doesn't scale up, request an increase for *Running On-Demand G and VT instances* in the Service Quotas console.
+The bundle requires a farm with an NVIDIA GPU service-managed fleet (A10G, L4, or A100; at least 16 GB VRAM and 16 GB system RAM) and a queue with a conda queue environment that consumes the `CondaPackages` and `CondaChannels` job parameters. The fastest setup is the [cuda\_farm](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cuda_farm) AWS CloudFormation (CloudFormation) template on the GitHub website. Amazon Elastic Compute Cloud (Amazon EC2) GPU instances are gated by per-region vCPU quotas; if your fleet doesn't scale up, request an increase for *Running On-Demand G and VT instances* in the Service Quotas console.
 
 Submit the demo, which folds three short benchmark proteins (Trp-cage variants 1L2Y and 2JOF, and villin headpiece 1VII):
 
@@ -29,7 +29,3 @@ deadline bundle submit ./job_bundles/esmfold_predict/ \
 The first fold on a fresh worker downloads the 5.2 GB `facebook/esmfold_v1` weights into `<OutputDir>/.hf_cache/` (about three minutes on a `g5.2xlarge`). Subsequent fold tasks in the same job reuse the cache.
 
 To validate predictions against experimental references, place `<seq_id>.pdb` files in a directory and pass it as `ReferencePdbDir`. The `Validate` step writes `validation.csv` and a per-sequence `calibration.png`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

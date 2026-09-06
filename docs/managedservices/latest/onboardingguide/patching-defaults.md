@@ -26,7 +26,3 @@ At the time of the AMS-standard patching process, AMS performs the following:
 1. AMS performs patching in a manner that ensures that a sufficient number of EC2 instances are running concurrently (configured through the `healthy-host-threshold` setting) so that the stack remains healthy.
 
 1. After the patching operation is complete for all EC2 instances, AMS updates the RFC with the patching status: Success, Partial Success or Failure. In the case of any status other than Success, a ticket is created for an operator to follow up on the patching results and take any corrective actions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,7 +64,3 @@ AWS FIS scenario is a console-only feature with multiple predefined actions. Hen
 <a name="arh-running-aws-fis-experiments"></a>
 
 After creating an experiment in AWS FIS console, follow the steps in [Start an experiment from a template](https://docs.aws.amazon.com/fis/latest/userguide/start-experiment-from-template.html) to run an experiment in AWS FIS console. If you want AWS Resilience Hub to detect the latest experiments you have run in AWS FIS, you must run a new assessment. For more information about running assessments, see [Running resiliency assessments in AWS Resilience Hub](run-assessment.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

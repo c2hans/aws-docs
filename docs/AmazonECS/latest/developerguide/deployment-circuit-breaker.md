@@ -132,7 +132,3 @@ There are two stages for the deployment status check.
 For example, when the threshold is 3, the circuit breaker starts with the failure count set at 0. When a task fails to reach the `RUNNING` state, the deployment circuit breaker increases the failure count by one. When the failure count equals 3, the deployment is marked as `FAILED`.
 
 For additional examples about how to use the rollback option, see [Announcing Amazon ECS deployment circuit breaker](https://aws.amazon.com/blogs/containers/announcing-amazon-ecs-deployment-circuit-breaker/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

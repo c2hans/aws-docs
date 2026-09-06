@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  The second option for deploying AWS services focuses on the use of AWS Outposts without AWS Local Zones. Follow steps 1 to 5 as above in Option 1: AWS Local Zones, and deploy the regulated workload on AWS Outposts.
 
  **Note:** For business continuity and disaster recovery (DR) purposes, backup and snapshot considerations are not included in this step. Since data is being stored within a specific Region or Local Zone, backup or snapshot to a remote Region may be necessary for meeting RTO and RPO requirements. These aspects should be validated with relevant regulators.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

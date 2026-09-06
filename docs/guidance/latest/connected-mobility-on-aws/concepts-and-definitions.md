@@ -54,7 +54,3 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
  **fleet-operator** – An Amazon Cognito user-pool group that grants per-fleet access scoped by the `custom:fleetIds` claim attached to the user’s token. Users in the `fleet-operator` group can manage vehicles, trips, alerts, and drivers within the fleets they are assigned to, but cannot access other fleets or perform cross-fleet bulk operations.
 
  **fleet-viewer** – An Amazon Cognito user-pool group that grants read-only access to fleet data. Users in the `fleet-viewer` group can view vehicle state, trips, alerts, and analytics but cannot modify fleet configuration or enrollment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

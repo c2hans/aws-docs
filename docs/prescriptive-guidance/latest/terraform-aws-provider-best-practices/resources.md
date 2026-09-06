@@ -30,7 +30,3 @@ Automation tools:
 + [HCP Terraform](https://www.terraform.io/cloud): Helps teams version, collaborate, and build Terraform workflows with policy checks and approval gates.
 + [Atlantis:](https://www.runatlantis.io/) An open source Terraform pull request automation tool for validating code changes.
 + [CDK for Terraform](https://developer.hashicorp.com/terraform/cdktf): A framework that lets you use familiar languages such as TypeScript, Python, Java, C\#, and Go instead of HashiCorp Configuration Language (HCL) to define, provision, and test your Terraform infrastructure as code.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

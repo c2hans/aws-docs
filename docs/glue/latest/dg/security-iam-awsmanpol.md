@@ -81,7 +81,3 @@ View details about updates to AWS managed policies for AWS Glue since this servi
 | AWSGlueConsoleSageMakerNotebookFullAccess – Update to an existing policy. | Removed a redundant resource ARN (`arn:aws:s3:::aws-glue-*/*`) for the action that grants read/write permissions on Amazon S3 buckets that AWS Glue uses to store scripts and temporary files.<br />Fixed a syntax issue by changing `"StringEquals"` to `"ForAnyValue:StringLike"`, and moved the` "Effect": "Allow"` lines to precede the `"Action":` line in each place where they were out of order. | July 15, 2021 |
 | AWSGlueConsoleFullAccess – Update to an existing policy. | Removed a redundant resource ARN (arn:aws:s3:::aws-glue-\*/\*) for the action that grants read/write permissions on Amazon S3 buckets that AWS Glue uses to store scripts and temporary files. | July 15, 2021 |
 | AWS Glue started tracking changes. | AWS Glue started tracking changes for its AWS managed policies. | June 10, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

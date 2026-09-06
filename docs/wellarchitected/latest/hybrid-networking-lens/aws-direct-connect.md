@@ -32,7 +32,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
  You can associate up to 20 virtual private gateways across different AWS Regions directly to a Direct Connect gateway. You can create a transit virtual interface to attach a total of 6 transit gateways across different AWS Regions to a Direct Connect gateway or attach 1 Cloud WAN core network across to all or selective core network edges within the core network to a Direct Connect gateway.
 
  For standard use cases, we recommend starting with a transit virtual interface to enable connectivity to multiple VPCs through transit gateway or Cloud WAN. However, if your data transfer volume is high or requires low latency, for example on-premises data backup to a VPC, or if you have 100 Gbps connections and want full 100 Gps bandwidth to a VPC, we recommend using a private virtual interface to connect to VPC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

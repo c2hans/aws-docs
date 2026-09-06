@@ -61,7 +61,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/slack-new-account-creatio
 **Note**
  Appflow redirect URLs are subject to change post redirect URLs for AWS Glue platform are available. Client ID and Client Secret are from the settings for your OAuth 2.0 client ID.
 <a name="slack-redirect-url-detail"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/slack-new-account-creation.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

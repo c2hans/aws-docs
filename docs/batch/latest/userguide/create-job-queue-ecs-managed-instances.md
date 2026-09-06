@@ -30,7 +30,3 @@ If your job queue includes both On-Demand and Spot compute environments, all On-
 1. For **Compute environment order**, choose the up and down arrows to configure the order that you want.
 
 1. Choose **Create job queue** to finish and create your job queue.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

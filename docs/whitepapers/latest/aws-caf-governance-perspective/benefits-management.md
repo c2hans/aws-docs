@@ -47,7 +47,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-pe
 <a name="excel-1"></a>
 
  Organizations gain business commitments though transparent communication on the benefit progress report. The benefits management tools and framework should be used as part of demand management for future innovations, experiments, products, and features. The consistent use of the framework will allow the leadership to compare opportunities on common ground and focus commitments on the most important tasks that create the most value and business impact.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,7 +54,3 @@ When using the AWS CloudShell integration, consider the following trade-offs.
 + **Terminal-style interface** - The experience operates as a terminal interface rather than a full-featured code editor.
 
 The AWS CloudShell integration simplifies the connection process while providing essential CQL functionality for managing your Amazon Keyspaces data directly from the AWS Management Console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

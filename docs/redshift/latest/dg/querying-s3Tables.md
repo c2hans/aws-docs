@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/querying-s3Tables.htm
 # Query Amazon S3 Tables from Amazon Redshift
 <a name="querying-s3Tables"></a>
 
-Amazon Redshift integrates with Amazon S3 table buckets, allowing you to access S3 table resources using Amazon Redshift. Whether you are just getting started or managing thousands of tables in your Iceberg environment, table buckets simplify data lake management at any scale. For more information, see [Table buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-buckets.html).
+Amazon Redshift integrates with Amazon S3 table buckets, so you can access S3 table resources using Amazon Redshift. Whether you are just getting started or managing thousands of tables in your Iceberg environment, table buckets simplify data lake management at any scale. For more information, see [Table buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-buckets.html).
 
 This topic describes how to get started with Amazon S3 Tables and Redshift and access S3 Tables objects using Amazon Redshift.
 
@@ -216,7 +216,7 @@ aws glue create-database \
 
 This command creates a resource link named `sales_resource_link` in your default AWS Glue Data Catalog that points to the `sales` database in the S3 table bucket `analytics-bucket`.
 
-Once resource links are created, Amazon Redshift provides three methods to query S3 Tables. Choose the method that best fits your use case.
+After resource links are created, Amazon Redshift provides three methods to query S3 Tables. Choose the method that best fits your use case.
 
 **Note**
 To create a resource link at the database level, the Redshift Administrator must have the `AWS Glue:CreateDatabase` permission on the default catalog and the database being created.
@@ -291,7 +291,7 @@ For detailed instructions on setting up federated access, see [Using a federated
 
 **Query S3 Tables**
 
-Once federated access is configured, verify the mounted schemas and query your S3 Tables.
+After federated access is configured, verify the mounted schemas and query your S3 Tables.
 
 Verify mounted schemas:
 
@@ -304,7 +304,3 @@ Query S3 Tables using the resource link name from Step 3:
 ```
 SELECT * FROM awsdatacatalog.sales_resource_link.transactions;
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

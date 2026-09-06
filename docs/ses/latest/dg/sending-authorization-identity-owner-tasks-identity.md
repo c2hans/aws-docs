@@ -18,7 +18,3 @@ After you create your sending authorization policy and attach it to your identit
 1. In the **Summary** pane, the second column, **Amazon Resource Name (ARN)**, will contain the identity's ARN. It will look similar to *arn:aws:ses:us-east-1:123456789012:identity/user@example.com*. Copy the entire ARN and give it to your delegate sender.
 **Important**
 If the identity you're authorizing is duplicated in a secondary region as part of the [Global endpoints](global-endpoints.md) feature, replace the region parameter, such as, `us-east-1`, with an asterisk `*` as in the following example, `arn:aws:ses:*:123456789012:identity/user@example.com`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

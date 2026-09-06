@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/red-hat-ope
 + [Red Hat OpenShift Service on AWS (ROSA) User Guide](https://docs.aws.amazon.com/ROSA/latest/userguide/what-is-rosa.html) (documentation)
 + [Red Hat OpenShift Service on AWS: architecture and networking](https://aws.amazon.com/blogs/containers/red-hat-openshift-service-on-aws-architecture-and-networking/) (blog post)
 + [Architecture Patterns for Red Hat OpenShift on AWS](https://aws.amazon.com/blogs/architecture/architecture-patterns-for-red-hat-openshift-on-aws/) (blog post)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

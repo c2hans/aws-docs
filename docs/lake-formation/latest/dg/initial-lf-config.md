@@ -393,7 +393,3 @@ In the following policy, replace {{<account-id>}} with a valid AWS account numbe
 1. Verify that the role `LakeFormationWorkflowRole` has two policies attached.
 
 1. If you are ingesting data that is outside the data lake location, add an inline policy granting permissions to read the source data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

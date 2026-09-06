@@ -26,7 +26,3 @@ After you create a SMART on FHIR enabled data store, you can update its identity
 + [Using fine-grained authorization with a SMART on FHIR enabled HealthLake data store](reference-smart-on-fhir-fine-grained-authorization.md)
 + [Fetching the SMART on FHIR Discovery Document](reference-smart-on-fhir-discovery-document.md)
 + [Making a FHIR REST API request on a SMART-enabled HealthLake data store](reference-smart-on-fhir-request-example.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

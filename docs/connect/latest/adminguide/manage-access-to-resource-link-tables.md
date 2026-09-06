@@ -49,7 +49,3 @@ You must repeat this process for each table individually. You cannot grant permi
 **Grant access per table**
 You must grant access for each table individually. You cannot grant access to all tables in a database at once.
 The database value shown in the **Grant on target** step might not match your expected database name. Use the value shown in the interface. Changing it to a different value causes the permission grant to fail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

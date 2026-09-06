@@ -28,7 +28,3 @@ Within minutes, your Lightsail for Research virtual computer is ready and you ca
 
 **Important**
 Newly created virtual computers have a set of firewall ports open by default. For more information about these ports, see [Manage firewall ports for Lightsail for Research virtual computers](manage-ports.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail for Research. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail-for-research` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

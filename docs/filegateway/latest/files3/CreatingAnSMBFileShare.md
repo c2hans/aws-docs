@@ -175,7 +175,3 @@ Setting this value shorter than 30 minutes can negatively impact gateway perform
 1. Review the file share configuration. Choose **Edit** to modify the settings for any section that you want to change. When finished, choose **Create**.
 
 After your SMB file share is created, you can view its configuration settings in the AWS Storage Gateway console on the file share's **Details** tab. For instructions to mount your file share, see [Mount your SMB file share on your client](https://docs.aws.amazon.com/filegateway/latest/files3/using-smb-fileshare.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

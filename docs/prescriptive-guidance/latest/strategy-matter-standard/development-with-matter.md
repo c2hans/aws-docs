@@ -85,7 +85,3 @@ The following are key capabilities relevant to Matter:
 + Available in Canada (Central), Europe (Ireland), and Middle East (UAE) regions
 
 For more information, see [What is managed integrations for AWS IoT Device Management?](https://docs.aws.amazon.com/iot-mi/latest/devguide/what-is-managedintegrations.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -179,7 +179,3 @@ The June 30, 2027 end-of-service date is final. We encourage all customers to be
 
 **Will there be any impact to my other AWS services?**
 No. The end of re:Post Private will not affect any other AWS services in your account. Only the re:Post Private service will be decommissioned.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

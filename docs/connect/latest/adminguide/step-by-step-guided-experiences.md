@@ -38,7 +38,3 @@ When mapping a view to a **Show view** block, you will be able to select from a 
 <a name="step-by-step-guided-experiences-complex-json"></a>
 
 Use the [Show view](show-view-block.md) block to pass complex JSON objects between Connect Customer agent workspaces and flows. Use the [AWS Lambda function](invoke-lambda-function-block.md) block specify JSON objects as input and output parameters. With these blocks, you can pass larger quantities of data with fewer mapping steps.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

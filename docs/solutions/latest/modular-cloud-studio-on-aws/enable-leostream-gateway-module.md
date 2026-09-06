@@ -42,7 +42,3 @@ If you provided a FQDN in the previous steps, you’ll be directed to the domain
 1. To access workstations through Leostream, sign in using your Active Directory credentials ([Step 3: Enable Identity modules](enable-identity-modules.md) step 7 if you created a new AD using MCS). When signing in, use the username format `your-username@mad.mcs.int`.
 
    Download the Amazon DCV Client from [https://www.amazondcv.com](https://www.amazondcv.com/). After the connection is established, send the Ctrl\+Alt\+Delete command from the Connection menu in the Amazon DCV Client to unlock the workstation and proceed to the login screen.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

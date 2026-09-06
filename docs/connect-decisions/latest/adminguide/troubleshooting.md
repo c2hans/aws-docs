@@ -4,17 +4,3 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/trou
 
 # Troubleshooting
 <a name="troubleshooting"></a>
-
-When issues arise during setup or day-to-day use of Amazon Connect Decisions, this section provides guidance to help you diagnose and resolve the most common problems. Start by identifying the category that best matches the issue you are experiencing, then follow the troubleshooting steps on the relevant page. If you are unsure which category applies, begin with Common Setup Issues, which covers the broadest range of initial configuration problems.
-
-## What you'll find in this section
-<a name="troubleshooting-what-youll-find"></a>
-
-The following pages will guide you through resolving common issues in Amazon Connect Decisions:
-+ **Common Setup Issues**: Troubleshoot problems encountered during initial instance setup, user provisioning, and onboarding configuration
-
-If you are unable to resolve an issue using the guidance in this section, contact AWS Support with details about the error message, the steps you took before the issue occurred, and any relevant configuration information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

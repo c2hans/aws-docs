@@ -79,7 +79,3 @@ See the following documentation for more information about AWS CloudShell:
 + [Supported browsers in AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/browsers.html)
 + [Troubleshooting in AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/troubleshooting.html)
 + [Working with AWS services in AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/working-with-aws-cli.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

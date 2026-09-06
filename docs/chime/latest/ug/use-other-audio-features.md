@@ -17,7 +17,3 @@ You can use the **Audio** menu to start and stop a number of meeting features. T
    + **Push-to-talk (Spacebar)** – Allows you to press and hold the spacebar to unmute your microphone. Release the spacebar to mute your microphone.
    + **Switch to dial-in** – Starts a dialog box that allows you to choose a phone number and dial in to a meeting. As a best practice, you should dial in to meetings hosted in conference rooms, or when you don't have a stable network connection. For more information, see [Switching from VoIP to dial-in](dial-switch.md).
    + **Disable mic and speakers** – Turns off your microphone and stops playing meeting audio through your speakers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

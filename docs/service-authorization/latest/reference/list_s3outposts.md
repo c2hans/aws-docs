@@ -385,7 +385,3 @@ Amazon S3 on Outposts defines the following condition keys that can be used in t
 |   [s3-outposts:x-amz-metadata-directive](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)  | Filters access by enabling enforcement of object metadata behavior (COPY or REPLACE) when objects are copied | String |
 |   [s3-outposts:x-amz-server-side-encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingServerSideEncryption.html)  | Filters access by requiring server-side encryption | String |
 |   [s3-outposts:x-amz-storage-class](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html#sc-howtoset)  | Filters access by storage class | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

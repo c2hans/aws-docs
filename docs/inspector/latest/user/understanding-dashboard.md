@@ -83,7 +83,3 @@ Choose **Function name** to see more information about the affected AWS Lambda f
 
 **Amazon Inspector code scans with the most critical findings**
  The **Projects with the most critical code vulnerabilities** section shows the top five projects with critical findings. You can choose a project to view details about the findings. When you choose a project, you're directed to the repository where the findings are located. The findings tab shows the names of your findings and their severity ratings. It shows what type of analysis was used to generate your findings. It also shows how old your findings are and their statuses.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

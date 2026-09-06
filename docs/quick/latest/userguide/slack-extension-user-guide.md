@@ -78,7 +78,7 @@ With Quick integrated into Slack, you can search and access your organization's 
 
 1. Start a direct message (DM) with Quick.
 
-1. Ask it to perform an action of your choice in an external application using [action connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) configured by your organization.
+1. Ask it to perform an action of your choice in an external application using [connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) configured by your organization.
 
 **Upload and analyze images**
 
@@ -132,7 +132,3 @@ The following are known limitations of the Amazon Quick Slack extension:
 + Actions that require file uploads as inputs are not supported by the Slack extension.
 + [Flows](https://docs.aws.amazon.com/quicksuite/latest/userguide/flows.html) are not supported in the Slack extension at this time.
 + File upload limitations are the same within Amazon Quick chat. For more information, see [Upload files and chat](https://docs.aws.amazon.com/quicksuite/latest/userguide/using-quick-chat.html#file-uploads).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

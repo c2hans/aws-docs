@@ -40,7 +40,3 @@ The following return codes appear at the end of execution of a CLI command:
 + `253` The system environment or configuration was invalid. While the command provided may be syntactically valid, missing configuration or credentials prevented the command from running.
 + `254` The command was successfully parsed and a request was made to the specified service but the service returned an error. This will generally indicate incorrect API usage or other service specific issues.
 + `255` General catch-all error. The command may have parsed correctly but an unspecified runtime error occurred when running the command. Because this is a general error code, an error may change from 255 to a more specific return code. A return code of 255 shouldn't be relied on to determine a specific error case.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

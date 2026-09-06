@@ -29,7 +29,3 @@ If you are not able to use certificate based authentication, follow this guide t
 + [Configure the EMQX broker](configure-emqx-broker.md)
 + [Connect an application to the EMQX broker on AWS IoT SiteWise Edge](connect-app-to-broker.md)
 + [Set up authorization rules for AWS IoT SiteWise Edge in EMQX](authorization-rules-emqx-broker.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

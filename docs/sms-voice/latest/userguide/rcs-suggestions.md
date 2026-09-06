@@ -210,7 +210,3 @@ For deeper guidance, see [RCS best practices](rcs-best-practices.md).
 + [Sending RCS text messages](rcs-text-messages.md)
 + [Sending RCS rich cards](rcs-rich-cards.md)
 + [RCS message events](rcs-events.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -256,7 +256,3 @@ Resources:
 HTTP header modification enables you to rename specific load balancer generated headers, insert specific response headers, and disable server response header. Application Load Balancers support header modification for both request and response headers.
 
 For more information, see [Enable HTTP header modification for your Application Load Balancer](enable-header-modification.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

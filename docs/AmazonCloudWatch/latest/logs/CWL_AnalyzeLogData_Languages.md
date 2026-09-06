@@ -11,7 +11,3 @@ The following sections list the commands supported in each query language. They 
 + [CloudWatch Logs Insights query language (Logs Insights QL)](CWL_AnalyzeLogData_LogsInsights.md)
 + [OpenSearch Piped Processing Language (PPL)](CWL_AnalyzeLogData_PPL.md)
 + [OpenSearch Structured Query Language (SQL)](CWL_AnalyzeLogData_SQL.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

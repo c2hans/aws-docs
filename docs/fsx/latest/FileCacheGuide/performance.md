@@ -191,7 +191,3 @@ Your chosen request model has tradeoffs in consistency (if you're using multiple
 + **Workload balance across OSTs** – In some cases, your workload isn’t driving the aggregate throughput that your cache can provide (1000 MBps per TiB of storage). If so, you can use CloudWatch metrics to troubleshoot if performance is affected by an imbalance in your workload’s I/O patterns. To identify if this is the cause, look at the Maximum `DataReadBytes` and `DataWriteBytes` CloudWatch metrics for Amazon File Cache.
 
   In some cases, this statistic shows a load at or above 1200 MBps of throughput (the throughput capacity of a single 1.2 TiB Amazon File Cache disk). In such cases, your workload isn't evenly spread out across your disks. If this is the case, you can use the `lfs setstripe` command to modify the striping of files your workload is most frequently accessing. For optimal performance, stripe files with high throughput requirements across all the OSTs comprising your cache.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

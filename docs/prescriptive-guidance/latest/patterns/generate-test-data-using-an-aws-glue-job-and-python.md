@@ -205,7 +205,3 @@ You can create any type of content, such as text files with different delimiters
 *What level of IAM permission do I need in the S3 bucket?*
 
 You must have an identity-based policy that allows `Write` access to objects in your S3 bucket. For more information, see [Amazon S3: Allows read and write access to objects in an S3 bucket](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_s3_rw-bucket.html) in the Amazon S3 documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

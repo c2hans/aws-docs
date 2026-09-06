@@ -16,7 +16,3 @@ The following table describes the documentation releases for the *Amazon VPC Pee
 | [Stale security group rules](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-security-groups.html) | You can identify if your security group is being referenced in the rules of a security group in a peer VPC and you can identify stale security group rules. | May 12, 2016 |
 | [Using ClassicLink over a VPC peering connection](#doc-history) | You can modify your VPC peering connection to enable local linked EC2-Classic instances to communicate with instances in a peer VPC, or vice versa. | April 26, 2016 |
 | [VPC peering](https://docs.aws.amazon.com/vpc/latest/peering/) | You can create a VPC peering connection between two VPCs, which allows instances in either VPC to communicate with each other using private IP addresses | March 24, 2014 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

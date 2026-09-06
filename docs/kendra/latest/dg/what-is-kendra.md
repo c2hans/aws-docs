@@ -78,7 +78,3 @@ If you are a first-time user of Amazon Kendra, we recommend that you read the fo
 |  **1** **[How Amazon Kendra works](how-it-works.md)**  |  **2** **[Getting started](getting-started.md)**  |  **3** **[Creating an index](create-index.md)**  |  **4** **[Adding documents directly to an index with batch upload](in-adding-documents.md)**  |  **5** **[Creating a data source connector](data-source.md)**  |  **6** **[Searching an index](searching.md)**  |
 | --- | --- | --- | --- | --- | --- |
 | Introduces Amazon Kendra components and describes how you use them to create a search solution. | Explains how to set up your account and test the Amazon Kendra search API. | Explains how to use Amazon Kendra to create a search index and to add data sources to sync your documents. | Explains how to add documents directly to an Amazon Kendra index. | Explains how to add documents from your data repository to an Amazon Kendra index. | Explains how to use the Amazon Kendra search API to search an index. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

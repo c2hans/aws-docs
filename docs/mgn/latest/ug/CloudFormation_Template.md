@@ -18,7 +18,3 @@ If you prefer to deploy the roles using CloudFormation StackSets manually, you c
 1. Download the **Member Account Template** (`mgn-connector-sharing-role.json`) to deploy to member accounts.
 
 1. Using the CloudFormation console or AWS CLI, create a StackSet from the template and deploy it to the desired member accounts. For instructions, see [Getting started with AWS CloudFormation StackSets](https://docs.aws.amazon.com/cloudformation/latest/userguide/stacksets-getting-started.html) in the *AWS CloudFormation User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

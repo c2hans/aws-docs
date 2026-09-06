@@ -97,7 +97,3 @@ There are several ways that you can influence how a queue's locations are priori
     + Don't include player latency data in the same placement request. Including latency data sets up conflicts when prioritizing locations that Amazon GameLift Servers can't resolve.
     + Decide how you want Amazon GameLift Servers to proceed if it can't find an available resource on the priority override list. Choose between falling back to the queue's other locations, or limit placements to the override list. By default, Amazon GameLift Servers falls back to attempt placement on the queue's other locations.
     + Update the queue's filter configuration as needed, such as adding locations on the override list. The override list doesn't invalidate the filter list.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

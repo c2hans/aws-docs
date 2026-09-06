@@ -65,7 +65,3 @@ replaces:
 Note the following:
 After the collector is built, deploy and configure the custom collector in a host or kubernetes environment by following the procedure under [OpenTelemetry Collector](CloudWatch-OTLPSimplesetup.md).
 For information on setting up custom OpenTelemetry collector with Application Signals Processor, see an [Application Signals custom configuration](https://github.com/aws-observability/application-signals-demo/blob/main/scripts/opentelemetry/appsignals_custom_otel_setup/custom-opentelemetry.yaml)example. Application Signals Processor only supports the latest versions of the OpenTelemetry Collectors for custom builds. For information on the supported versions, see [opentelemetry-collector-contrib repository.](https://github.com/amazon-contributing/opentelemetry-collector-contrib/tags)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

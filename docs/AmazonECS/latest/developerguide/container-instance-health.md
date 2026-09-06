@@ -58,7 +58,3 @@ When the `overallStatus` any status other than `OK`, try the following:
 + View your container instance health in the EC2 console or by using the CLI.
 + Review the CloudWatch metrics. For more information, see [Monitor Amazon ECS using CloudWatch](cloudwatch-metrics.md)
 + Check the AWS Health Dashboard to see if there are any issues with the service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

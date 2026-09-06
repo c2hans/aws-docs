@@ -105,7 +105,3 @@ After you submit your request, we review your case. To check the status of your 
 If your account is in the email sandbox and you are granted a sending quota increase, your account is automatically taken out of the sandbox. After your account is out of the sandbox, you can send email to non-verified addresses. However, you must still verify your sending addresses and domains.
 
 Over time, we will gradually increase your sending quotas. If your needs exceed the gradual increase, you can open another request to increase your sending quotas.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

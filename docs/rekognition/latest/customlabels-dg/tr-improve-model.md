@@ -29,7 +29,3 @@ To add more images to a training or test dataset, see [Adding more images to a d
 + Use a lower value for the assumed threshold. You can't set the assumed threshold for a label, but you can achieve the same result by specifying a lower `MinConfidence` input parameter to `DetectCustomLabels`. For more information, see [Analyzing an image with a trained model](detecting-custom-labels.md).
 + Use better examples to model the variety of both the object and the images in which they appear.
 + Split your label into two classes that are easier to learn. For example, instead of good cookies and bad cookies, you might want good cookies, burnt cookies, and broken cookies to help the model learn each unique concept better.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

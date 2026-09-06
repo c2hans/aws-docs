@@ -110,7 +110,3 @@ Your output should be similar to the following:
 {{58904752-7de3-4bdf-ba89-6953e48c3cc7}}
 audit-report/{{16075838-061c-4f7a-b54b-49bbc111bcff}}/{{58904752-7de3-4bdf-ba89-6953e48c3cc7}}.json
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

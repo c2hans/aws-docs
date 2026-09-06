@@ -99,7 +99,3 @@ Even if you specify a `/126`, the console displays the IPv6 tunnel CIDR as a `/1
  When using an AWS-generated tunnel IP, or specifying a `/128` CIDR range establishment of the BGP, peering will fail by default. The reason is that a `/128`, like a `/32` in IPv4, is a host route. You will need to define a static route pointing at the AWS side of the tunnel to establish the BGP peering.
 
 ![This is a diagram that shows AWS VPN dual-stack configuration.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/aws-vpn-dual-stack-configuration.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

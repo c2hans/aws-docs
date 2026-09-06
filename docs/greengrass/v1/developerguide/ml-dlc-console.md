@@ -673,7 +673,3 @@ This directory and its contents are in the Lambda runtime namespace, so they are
 <a name="next-dlc-steps"></a>
 
  Next, explore other optimized models. For information, see the [SageMaker AI Neo documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/neo.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

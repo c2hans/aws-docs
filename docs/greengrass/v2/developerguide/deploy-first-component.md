@@ -208,7 +208,3 @@ If the log messages don't change, the deployment failed or didn't reach the core
    gc {{C:\greengrass\v2}}\\logs\\greengrass.log -Tail 10 -Wait
    ```
 For more information, see [Troubleshooting AWS IoT Greengrass V2](troubleshooting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

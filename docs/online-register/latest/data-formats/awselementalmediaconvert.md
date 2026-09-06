@@ -23,7 +23,3 @@ AWS Elemental MediaConvert provides the following APIs for data retrieval.
 | <a name="mediaconvert-ListVersions"></a>[ListVersions](https://docs.aws.amazon.com/mediaconvert/latest/apireference/versions.html) | List AWS Elemental MediaConvert job engine versions | List |
 | <a name="mediaconvert-Probe"></a>[Probe](https://docs.aws.amazon.com/mediaconvert/latest/apireference/probe.html) | Probe a file | Read |
 | <a name="mediaconvert-SearchJobs"></a>[SearchJobs](https://docs.aws.amazon.com/mediaconvert/latest/apireference/search.html) | Search AWS Elemental MediaConvert jobs | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

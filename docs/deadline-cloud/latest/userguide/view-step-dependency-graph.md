@@ -20,7 +20,3 @@ In the graph, you can do the following:
 + On a node, choose the actions menu, then choose **View step dependencies** to filter the panel to the steps that the selected step depends on and the steps that depend on it.
 
 If a job has no step dependencies, the graph reports that none were found. Jobs with dependencies are created by workflows that submit dependent steps, such as a job that renders frames and then publishes the result.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -127,7 +127,3 @@ For detailed comparisons including capability-specific features, upstream differ
 +  [Comparing EKS Capability for ACK to self-managed ACK](ack-comparison.md)
 +  [Comparing EKS Capability for Argo CD to self-managed Argo CD](argocd-comparison.md)
 +  [Comparing EKS Capability for kro to self-managed kro](kro-comparison.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

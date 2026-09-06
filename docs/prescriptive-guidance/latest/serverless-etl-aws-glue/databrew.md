@@ -18,7 +18,3 @@ DataBrew is based on the following six core concepts:
 + **Data profile** – A summary view of the shape of your data
 
 [AWS Glue DataBrew is integrated with AWS Glue Studio](https://aws.amazon.com/blogs/big-data/use-aws-glue-databrew-recipes-in-your-aws-glue-studio-visual-etl-jobs/), so you can orchestrate DataBrew recipes within your AWS Glue ETL jobs and workflows. DataBrew recipes can also take advantage of AWS Glue features such as job bookmarks, automatic retries, and automatic scaling. To get started with DataBrew, use the [AWS Glue DataBrew sample project](https://aws.amazon.com/blogs/big-data/use-aws-glue-databrew-recipes-in-your-aws-glue-studio-visual-etl-jobs/) tutorial.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -58,7 +58,3 @@ Once the License Expiry Date is set, License Manager can send notifications on 1
 **To create a self-managed license using the command line**
 + [create-license-configuration](https://docs.aws.amazon.com/cli/latest/reference/license-manager/create-license-configuration.html) (AWS CLI)
 + [New-LICMLicenseConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/New-LICMLicenseConfiguration.html) (AWS Tools for PowerShell)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

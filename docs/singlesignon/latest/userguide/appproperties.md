@@ -38,7 +38,3 @@ Session duration can be interpreted by applications in either of the following w
 + Applications can use it as the exact duration and might not allow administrators to configure the value. This can happen when the application only supports a specific session length.
 
 For more information about how session duration is used, see your specific application’s documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

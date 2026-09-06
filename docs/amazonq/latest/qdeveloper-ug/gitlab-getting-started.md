@@ -12,7 +12,3 @@ At any time, you can configure the availability of GitLab Duo with Amazon Q by t
 Once you set up GitLab Duo with Amazon Q, you can begin using the AI capabilities of Amazon Q in GitLab to review merge requests for quality and vulnerabilities, and suggest unit tests. You can also use the GitLab Duo Chat feature that supports Amazon Q to address developmental tasks, such as vulnerability explanation, troubleshoot failed pipelines, and code refactoring.
 
 To learn more about how to invoke quick actions in GitLab issues and merge requests, see [GitLab Duo with Amazon Q](https://docs.gitlab.com/ee/user/duo_amazon_q/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

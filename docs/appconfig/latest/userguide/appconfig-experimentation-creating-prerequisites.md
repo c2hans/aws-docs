@@ -17,7 +17,3 @@ Before you begin, complete the following tasks:
    Note that each section includes information about configuring IAM permissions so the agent can retrieve feature flags and other configuration data.
 
 1. [Configure experiment assignment logging](appconfig-experimentation-about-data-collection.md): To capture treatment assignment data during an experiment run, set the `EXPERIMENT_ASSIGNMENT_LOG_DESTINATION` agent option (Lambda: `AWS_APPCONFIG_EXTENSION_EXPERIMENT_ASSIGNMENT_LOG_DESTINATION`) to `stderr` or to a disk path such as `file:/var/log/appconfig/experiments/`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

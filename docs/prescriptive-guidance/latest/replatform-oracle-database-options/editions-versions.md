@@ -22,7 +22,3 @@ Each replatform option supports different Oracle editions. The following table l
 | Enterprise Edition | Yes | Yes |
 | Standard Edition 2 | Yes | Yes |
 | Versions | 19c<br />21c | 12.1.0.2<br />12.2.0.1<br />18c<br />19c |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

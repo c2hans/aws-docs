@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 +  *Lower volume requirements:* Attackers can achieve significant impact with relatively low request volumes, making these attacks harder to detect through traditional traffic monitoring.
 
  The evolution of these attacks has prompted the development of more sophisticated protection mechanisms, such as the [AntiDDoS AWS Managed Rules rule group (Anti-DDoS AMR)](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.html), which can detect and mitigate attacks within seconds while providing customizable protection levels.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

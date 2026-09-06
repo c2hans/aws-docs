@@ -32,7 +32,3 @@ Your Amazon Managed Grafana workspace must have permission to access AWS data so
    Select the AWS notification channel that you want to use in this workspace. Selecting a notification channel enables Amazon Managed Grafana to create IAM roles and permissions that allow Amazon Managed Grafana to use these services. You must still add the notification channels in the Grafana workspace console.
 **Note**
 For more information about using notifications, see [Manage your alert notifications](v9-alerting-managenotifications.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

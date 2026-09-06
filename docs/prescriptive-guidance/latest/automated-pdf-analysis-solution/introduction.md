@@ -30,7 +30,3 @@ You should expect the following three outcomes after designing an automated solu
 + Automatically process raw data from multiple PDF files at scale by using an automated solution that refreshes when new data becomes available.
 + Downstream modeling and analytics applications (for example, ML modeling in [Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)) can access the extracted PDF file content.
 + Data dashboards that show all PDF file contents to your end users in Amazon Quick Sight.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

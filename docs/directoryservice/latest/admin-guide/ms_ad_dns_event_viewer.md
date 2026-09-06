@@ -24,7 +24,3 @@ To do that, you must be logged on with the **Admin** account or with an account 
 1. Select **Another computer**, type one of your AWS Managed Microsoft AD DNS servers name or IP address, and choose **OK**.
 
 1. In the left pane, navigate to **Applications and Services Logs**>**Microsoft**>**Windows**>**DNS-Server**, and then select **Audit**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

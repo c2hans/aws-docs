@@ -48,7 +48,3 @@ Verify that you set up and configured services that populate Explorer widgets wi
 1. Choose **Settings**, and then choose the **Configure Dashboard** tab.
 
 1. In the **OpsData sources** section, in the **Status** column, turn on or turn off sources according to the data you want to view.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

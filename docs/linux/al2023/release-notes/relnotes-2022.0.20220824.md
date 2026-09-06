@@ -101,7 +101,3 @@ Minimal AMI
 + `system-release-2022.0.20220824-0.amzn2022.noarch`
 + `kernel-5.15.57-29.131.amzn2022.x86_64`
 + `kernel-5.15.57-29.131.amzn2022.aarch64`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

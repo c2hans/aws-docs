@@ -71,7 +71,3 @@ As you review the **S3 buckets** map, you can interact with it in different ways
 1. To review data sensitivity statistics and other information for a particular bucket, choose the bucket's square. Then refer to the details panel. For information about these details, see [Reviewing data sensitivity details for S3 buckets](discovery-asdd-results-s3-inventory-details.md).
 **Tip**
 On the **Bucket details** tab of the panel, you can pivot and drill down on many of the fields. To show buckets that have the same value for a field, choose ![The zoom in icon, which is a magnifying glass that has a plus sign in it.](http://docs.aws.amazon.com/macie/latest/user/images/icon-magnifying-glass-plus-sign.png) in the field. To show buckets that have other values for a field, choose ![The zoom out icon, which is a magnifying glass that has a minus sign in it.](http://docs.aws.amazon.com/macie/latest/user/images/icon-magnifying-glass-minus-sign.png) in the field.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-complian
  In addition, AWS regularly undergoes independent third-party audits to provide assurance that the control activities are operating as intended. These audits, along with the many certifications AWS has obtained, provide an additional level of validation of the AWS control environment that benefit customers.
 
  Taken together with customer-managed security controls, these efforts allow AWS to securely innovate on behalf of customers and help customers improve their security posture when building on AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

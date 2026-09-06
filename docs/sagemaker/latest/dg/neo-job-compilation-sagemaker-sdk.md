@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-job-compilation-
 # Compile a Model (Amazon SageMaker AI SDK)
 <a name="neo-job-compilation-sagemaker-sdk"></a>
 
- You can use the [`compile_model`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) API in the [Amazon SageMaker AI SDK for Python](https://sagemaker.readthedocs.io/en/stable/) to compile a trained model and optimize it for specific target hardware. The API should be invoked on the estimator object used during model training.
+ You can use the [`compile_model`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) API in the [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/) to compile a trained model and optimize it for specific target hardware. The API should be invoked on the estimator object used during model training.
 
 **Note**
 You must set `MMS_DEFAULT_RESPONSE_TIMEOUT` environment variable to `500` when compiling the model with MXNet or PyTorch. The environment variable is not needed for TensorFlow.
@@ -40,7 +40,3 @@ optimized_model = model_builder.optimize(
 ```
 
 The code compiles the model, saves the optimized model at `output_path`, and creates a SageMaker AI model that can be deployed to an endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

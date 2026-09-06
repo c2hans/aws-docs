@@ -16,7 +16,3 @@ You can grant permissions by using the AWS Lake Formation console, APIs, or the 
 + [Granting database permissions using the named resource method](granting-database-permissions.md)
 + [Granting table permissions using the named resource method](granting-table-permissions.md)
 + [Granting permissions on views using the named resource method](granting-view-permissions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

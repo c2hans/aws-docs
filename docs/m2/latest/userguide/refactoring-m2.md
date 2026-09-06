@@ -31,7 +31,3 @@ This guide will help you understand the runtime concepts and how to use them in 
 + [Set up AWS Transform for mainframe Runtime](ba-runtime-setup.md)
 + [Modify the source code with AWS Transform for mainframe Developer IDE](ba-modify-source.md)
 + [AWS Transform for mainframe FAQ](ba-faq.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

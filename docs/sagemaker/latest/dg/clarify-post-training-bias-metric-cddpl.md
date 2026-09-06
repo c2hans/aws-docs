@@ -38,7 +38,3 @@ The range of DDPL values for binary, multicategory, and continuous outcomes is [
 + Values near zero indicate there is no demographic disparity on average.
 + Negative values indicate there is a demographic disparity in predicted labels as facet *a* or subgroup has a larger proportion of the predicted rejected labels than of the predicted accepted labels. The lower the value the greater the disparity.
 + -1: when there are no predicted rejection lapels for facet *d* or subgroup and no predicted acceptances for facet *a* or subgroup.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

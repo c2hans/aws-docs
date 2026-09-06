@@ -48,7 +48,3 @@ We recommend that customers review the [Cloud Adoption Framework](https://aws.am
  For financial institutions, it can be difficult to practice these principles in traditional, on-premises environments, many of which reflect decades of consolidation with other entities and ad-hoc changes in their IT infrastructures. On the other hand, these principles are what drive the design of AWS’s global infrastructure and services and form the basis of our guidance to customers on how to achieve continuity of service. Financial institutions using AWS services can take advantage of AWS’s services to improve their resiliency, regardless of the state of their existing systems.
 
  For a comprehensive overview of our guidance to customers, see the AWS Well-Architected Framework [Reliability Pillar whitepaper](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -71,7 +71,3 @@ For information about using CLI queries, see [ How to Filter the Output with the
 **Subnet names**
 
 Your AMS subnets are created automatically after input is gathered from you and added to the system. AMS uses a formula to create your subnet names: A{{ACCOUNT\_ID}}-{{SUBNET-TYPE}}-{{AZ-IDENTIFIER}}. The subnet type would be either `dmz`, `shared-services`, or `customer-application`. Should you have more than one customer-application subnet, an optional identifier may be added to the subnet name, after the account ID, to indicated that the subnet is an "additional" or "reserved" subnet.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

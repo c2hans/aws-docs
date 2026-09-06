@@ -17,7 +17,3 @@ To learn how to deploy a Nuxt.js app to Amplify, see [Deploy a Nuxt.js app to Am
 For a video demonstration, see *Nuxt Hosting With ZERO Configuration In Minutes (With AWS)* on YouTube.
 
 [![AWS Videos](http://img.youtube.com/vi/CAk5_XGkOG4/0.jpg)](http://www.youtube.com/watch?v=CAk5_XGkOG4)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

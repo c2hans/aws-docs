@@ -35,7 +35,7 @@ For more information, see [Create an Amazon EBS volume](ebs-creating-volume.md).
 
 When you have enabled encryption by default, encryption is mandatory for volumes restored from unencrypted snapshots, and no encryption parameters are required for your default KMS key to be used. The following diagram shows this simple default case:
 
-![When you create a volume from an unencrypted snapshot but encryption by default is enabled, we use the default KMS key to create an encrypted volume.](http://docs.aws.amazon.com/ebs/latest/userguide/images/volume-encrypt-account-on.png)
+![When you create a volume from an unencrypted snapshot but encryption by default is enabled, EBS uses the default KMS key to create an encrypted volume.](http://docs.aws.amazon.com/ebs/latest/userguide/images/volume-encrypt-account-on.png)
 
 If you want to encrypt the restored volume to a symmetric customer managed encryption key, you must supply both the `Encrypted` and `KmsKeyId` parameters as shown in [Restore an unencrypted volume (encryption by default not enabled)](#volume-account-off).
 
@@ -136,7 +136,3 @@ The following table describes the encryption outcome for each possible combinati
 \* This is the default customer managed key used for EBS encryption for the AWS account and Region. By default this is a unique AWS managed key for EBS, or you can specify a customer managed key.
 
 \*\* This is a customer managed key specified for the volume at launch time. This customer managed key is used instead of the default customer managed key for the AWS account and Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

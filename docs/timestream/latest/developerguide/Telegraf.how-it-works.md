@@ -70,7 +70,3 @@ The resulting Timestream for LiveAnalytics table will look like this.
 | 2016-06-13 17:43:50 | us-midwest | summer | weather | humidity | 71 |
 | 2016-06-13 17:43:50 | us-midwest | summer | airquality | no2 | 5 |
 | 2016-06-13 17:43:50 | us-midwest | summer | weather | pm25 | 16 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -103,7 +103,3 @@ Before you can run a query, a query result bucket location in Amazon S3 must be 
 For more details on specifying query result locations in the Athena console, see [Specifying a query result location using the Athena console](https://docs.aws.amazon.com/athena/latest/ug/querying.html#query-results-specify-location-console) in the *Amazon Athena User Guide*.
 
 To see examples of how to query your HealthLake data store in Athena, see [Querying HealthLake data with SQL](integrating-athena-query-sql.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

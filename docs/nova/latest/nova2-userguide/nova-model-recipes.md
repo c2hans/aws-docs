@@ -96,7 +96,3 @@ The table below lists detailed information of the Amazon Nova 2.0 Lite recipes r
 | Nova 2.0 Lite | General Text Benchmark | Evaluation | nova\_lite\_2\_0\_p5\_48xl\_gpu\_general\_text\_benchmark\_eval.yaml | 708977205387.dkr.ecr.us-east-1.amazonaws.com/nova-evaluation-repo:SM-TJ-Eval-V2-latest | 708977205387.dkr.ecr.us-east-1.amazonaws.com/nova-evaluation-repo:SM-HP-Eval-V2-latest | ml.p5.48xlarge, ml.p5en.48xlarge |
 | Nova 2.0 Lite | RFT Evaluation | Evaluation | nova\_lite\_2\_0\_p5\_48xl\_gpu\_rft\_eval.yaml | 708977205387.dkr.ecr.us-east-1.amazonaws.com/nova-evaluation-repo:SM-TJ-Eval-V2-latest | 708977205387.dkr.ecr.us-east-1.amazonaws.com/nova-evaluation-repo:SM-HP-Eval-V2-latest | ml.p5.48xlarge, ml.p5en.48xlarge |
 | Nova 2.0 Lite | LLM Rubric Based Judge | Evaluation | nova\_lite\_2\_0\_p5\_48xl\_gpu\_rubric\_llm\_judge\_eval.yaml | 708977205387.dkr.ecr.us-east-1.amazonaws.com/nova-evaluation-repo:SM-TJ-Eval-V2-latest | 708977205387.dkr.ecr.us-east-1.amazonaws.com/nova-evaluation-repo:SM-HP-Eval-V2-latest | ml.p5.48xlarge, ml.p5en.48xlarge |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

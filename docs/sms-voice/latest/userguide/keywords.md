@@ -40,7 +40,3 @@ The response message must confirm that messages will stop being sent to the indi
 + [View keywords used by a phone pool](keywords-pool-list.md)
 + [Edit a keyword in a phone pool](keywords-pool-edit.md)
 + [Delete a keyword from a phone pool](keywords-pool-delete.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,7 +38,3 @@ When you run Windows Sysprep with the Windows launch agents, the system prevents
 + Before performing Windows Sysprep, we recommend that you remove all local user accounts and all account profiles other than a single administrator account under which Windows Sysprep will be run. If you perform Windows Sysprep with additional accounts and profiles, unexpected behavior could result, including loss of profile data or failure to complete Windows Sysprep.
 + Learn more about [Sysprep Overview](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/sysprep--system-preparation--overview).
 + Learn which [Sysprep Support for Server Roles](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/sysprep-support-for-server-roles).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

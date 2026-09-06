@@ -24,7 +24,3 @@ Swapping Snowball Edge devices during the long-term pricing period involves orde
 1. Create a new job for the replacement Snowball Edge device. The replacement device must be for the same job type and have the same compute and storage options as the device you have. See [Creating a job to order a Snowball Edge device](https://docs.aws.amazon.com/snowball/latest/developer-guide/create-job-common.html) in this guide.
 
 1. Immediately return the device you have. See [Powering off the Snowball Edge](turnitoff.md) and [Returning the Snowball Edge device](return-device.md). AWS will manage the device replacement logistics, and there will be a device cycling fee assessed for this swap.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

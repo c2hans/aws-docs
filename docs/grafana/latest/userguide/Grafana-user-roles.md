@@ -30,7 +30,3 @@ In Amazon Managed Grafana, each user enabled to use the Amazon Managed Grafana w
 User assignment and user access management from the Grafana workspace is not supported in Amazon Managed Grafana. How you manage user and group access depends on whether you use IAM Identity Center or SAML for authentication:
 + If your workspace uses IAM Identity Center for authentication, you can use Amazon Managed Grafana console or APIs to assign roles. For more information, see [Manage user and group access to Amazon Managed Grafana workspaces](AMG-manage-users-and-groups-AMG.md).
 + If your workspace uses SAML for authentication, user roles are defined only by assertion attributes. For more information, see [Assertion mapping](authentication-in-AMG-SAML.md#AMG-SAML-Assertion-Mapping).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

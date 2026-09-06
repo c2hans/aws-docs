@@ -236,7 +236,3 @@ Use the following steps to set up the required networking infrastructure to use 
 Open the Amazon MWAA console and navigate to the Apache Airflow UI. If you are setting up an Network Load Balancer in a private subnet instead of the Application Load Balancer used here, you must access the webserver with one of the following options.
 + [Tutorial: Configuring private network access using a Linux Bastion Host](tutorials-private-network-bastion.md)
 + [Tutorial: Configuring private network access using an AWS Client VPN](tutorials-private-network-vpn-client.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

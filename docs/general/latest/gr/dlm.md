@@ -60,7 +60,3 @@ The following are the service endpoints and service quotas for this service.
 | --- | --- | --- | --- |
 | Policies per Region | Each supported Region: 100 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/dlm/quotas/L-5407D8DA)  | The maximum number of policies per Region. |
 | Target accounts per sharing rule | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/dlm/quotas/L-DCA05F2F)  | The maximum number of target accounts per sharing rule. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

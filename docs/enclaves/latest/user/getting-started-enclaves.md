@@ -16,7 +16,3 @@ The following sections walk you through three foundational topics:
 + [Getting started: Hello Enclaves](getting-started.md)
 + [Getting started: Using the virtio-vsock](enclave-networking.md)
 + [Getting started: Integrating with AWS KMS](connect-enclave-kms.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query enclaves` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

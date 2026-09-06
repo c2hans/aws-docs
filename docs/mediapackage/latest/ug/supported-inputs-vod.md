@@ -38,7 +38,3 @@ These are the video, audio, and subtitles codecs that MediaPackage supports for 
 | DASH-ISO | MPEG-DASH | MP4 |  +  H.264 (AVC) <br />+  H.265 (HEVC) with HDR-10 support   |  +  AAC <br />+  Dolby Digital <br />+  Dolby Digital Plus   |  +  EBU-TT <br />+  CEA-608 and CEA-708 closed captions   |
 | Microsoft Smooth | MSS | MP4 |  +  H.264 (AVC) <br />+  H.265 (HEVC) with HDR-10 support   |  +  AAC <br />+  Dolby Digital <br />+  Dolby Digital Plus   | DFXP |
 | CMAF | HLS | CMAF |  +  H.264 (AVC) <br />+  H.265 (HEVC) with HDR-10 support   |  +  AAC <br />+  Dolby Digital <br />+  Dolby Digital Plus   |  +  WebVTT <br />+  CEA-608 and CEA-708 closed captions   |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ AWS Invoicing Service provides the following APIs for data retrieval.
 | <a name="invoicing-ListProcurementPortalSuppliers"></a>[ListProcurementPortalSuppliers](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_invoicing_ListProcurementPortalSuppliers.html) | List suppliers for a procurement portal | List |
 | <a name="invoicing-ListProcurementPortals"></a>[ListProcurementPortals](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_invoicing_ListProcurementPortals.html) | List procurement portals for an account | List |
 | <a name="invoicing-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_invoicing_ListTagsForResource.html) | List tags for a resource | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

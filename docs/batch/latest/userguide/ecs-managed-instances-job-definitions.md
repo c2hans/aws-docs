@@ -33,7 +33,7 @@ When not specified, the default is `host`. With `host` mode, the container share
 "networkMode": "host"
 ```
 `runtimePlatform`
-Specifies the operating system family and CPU architecture for the task. Use this to run jobs on ARM64 (Graviton) instances. The valid value for `operatingSystemFamily` is `LINUX` (default). The valid values for `cpuArchitecture` are `X86_64` and `ARM64`.
+Specifies the operating system family and CPU architecture for the task. This parameter applies to both Fargate and Amazon ECS Managed Instances job definitions. Use this to run jobs on ARM64 (AWS Graviton) instances. The valid value for `operatingSystemFamily` is `LINUX` (default). The valid values for `cpuArchitecture` are `X86_64` and `ARM64`.
 
 ```
 "runtimePlatform": {
@@ -73,7 +73,3 @@ Amazon ECS Managed Instances does not support multi-node parallel jobs. Use Amaz
 Parameters in `logConfiguration`
 `logDriver`
 Only `awslogs`, `splunk`, and `awsfirelens` are supported for Amazon ECS Managed Instances jobs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

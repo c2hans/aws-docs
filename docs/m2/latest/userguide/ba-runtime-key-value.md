@@ -845,7 +845,3 @@ Sample log output:
 ```
 2026-02-02 20:00:00 default INFO [6966b3c1dc96c2da73be7e2b6f9f25dc,73be7e2b6f9f25dc] - q.t.s.i.TestJobProcessImpl - Length is: 100
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

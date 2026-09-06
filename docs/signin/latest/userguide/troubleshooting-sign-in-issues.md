@@ -277,7 +277,3 @@ This error indicates there is a setup problem with your instance of IAM Identity
 + Verify that the IdP certificate uploaded to IAM Identity Center is the same one provided by your identity provider. You can check the certificate from the [IAM Identity Center console](https://console.aws.amazon.com/singlesignon/) by navigating to **Settings**. In the **Identity Source** tab, under **Action**, choose **Manage Authentication**. You may need to import a new certificate.
 + In your IdP’s SAML metadata file, ensure that the NameID Format is `urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress`.
 + If you're using AD Connector, verify that the credentials for the service account are correct and have not expired. For more information, see [ Update your AD Connector service account credentials in Directory Service](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_connector_update_creds.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

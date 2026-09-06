@@ -46,7 +46,3 @@ More involved sample applications that show the use of additional web frameworks
 + **[Locust Load Generator ](https://github.com/awslabs/eb-locustio-sample)** - This project shows the use of Java SE platform features to install and run [Locust](http://locust.io/), a load generating tool written in Python. The project includes configuration files that install and configure Locust, a build script that configures a DynamoDB table, and a Procfile that runs Locust.
 + **[Share Your Thoughts](https://github.com/awslabs/eb-demo-php-simple-app)** ([tutorial](php-ha-tutorial.md)) - PHP application that shows the use of MySQL on Amazon RDS, Composer, and configuration files.
 + **[A New Startup](https://github.com/awslabs/eb-node-express-sample)** ([tutorial](nodejs-dynamodb-tutorial.md)) - Node.js sample application that shows the use of DynamoDB, the AWS SDK for JavaScript in Node.js, npm package management, and configuration files.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,7 +43,3 @@ For more information on CloudWatch metrics, see [Using Amazon CloudWatch metrics
 | ServiceType | Only shows metrics with the specified service type.<br />**Valid Options**: batch |
 | Operation | Only shows metrics with the specified operation.<br />**Valid Options**: any Amazon Transcribe API |
 | LanguageCode | Only shows metrics with the specified language.<br />**Valid Options**: any valid language code, in the form `en-US` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,7 +54,3 @@ View details about updates to AWS managed policies for Amazon DataZone since thi
 | AmazonDataZoneFullAccess - New policy | Amazon DataZone added a new policy called **AmazonDataZoneFullAccess** that provides full access to Amazon DataZone via the AWS Management Console.  | September 12, 2023 |
 | Managed policy update | Updates to the **AmazonDataZonePreviewConsoleFullAccess** managed policy that consists of an additional `iam:GetPolicy` permissions. | June 13, 2023 |
 | Amazon DataZone started tracking changes | Amazon DataZone started tracking changes for its AWS managed policies. | March 20, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ## Monitoring and observability
 <a name="monitoring-and-observability.38a3a0ae-cadb-5ac3-8871-7fb8b5c2e4a2"></a>
 + Amazon CloudWatch Container Insights: [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html](https://strandsagents.com/docs/user-guide/quickstart/overview/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

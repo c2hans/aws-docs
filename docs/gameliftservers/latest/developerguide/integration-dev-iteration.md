@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/in
 
 Amazon GameLift Servers provides tools and solutions to help you set up a hosted test environment for use during game development. With these tools, you can create an environment that mirrors the real-world player experience of managed hosting with Amazon GameLift Servers and supports a rapid, iterative development process.
 
-With a separate test environment, you remove the overhead of an Amazon GameLift Servers managed fleet during testing. You no longer have to upload each new game server build iteration, create a new fleet for it, and then wait 15\+ minutes to it to activate. Instead, you can create a new build, quickly update the test fleet with the new build, start it, and commence testing.
+With a separate test environment, you remove the overhead of an Amazon GameLift Servers managed fleet during testing. You no longer have to upload each new game server build iteration, create a new fleet for it, and then wait 15\+ minutes for it to activate. Instead, you can create a new build, quickly update the test fleet with the new build, start it, and commence testing.
 
 Using an Amazon GameLift Servers Anywhere fleet, you can set up a test environment using a local device, such as your development workstation. You can also set up a test environment using a cloud-based hosting resource.
 
@@ -26,14 +26,10 @@ Later, as you prepare your game for launch, you'll want to add Amazon GameLift S
 
 **Fast Build Update Tool (for development only)**
 With managed EC2 fleets, to deploy a game server build update, you need to upload each new build to Amazon GameLift Servers and create a new fleet for it.
-The Fast Build Update Tool lets you can bypass these steps during development, saving you time and allowing for faster development iteration. With this tool, you can quickly update your game build files across all computes in an existing fleet. The tool has several options; you can replace an entire game build or change 6 specific files, and you can manage how to restart game server processes after the updates. You can also use it to update individual computes in a fleet.
-To get the Fast Build Update Tool and learn more about how to use it, visit the Amazon GameLift Servers Toolkit repo for [ The Fast Build Update Tool](https://github.com/aws/amazon-gamelift-toolkit/tree/main/fast-build-update-tool) in Github.
+The Fast Build Update Tool lets you bypass these steps during development, saving you time and allowing for faster development iteration. With this tool, you can quickly update your game build files across all computes in an existing fleet. The tool has several options; you can replace an entire game build or change specific files, and you can manage how to restart game server processes after the updates. You can also use it to update individual computes in a fleet.
+To get the Fast Build Update Tool and learn more about how to use it, visit the Amazon GameLift Servers Toolkit repo for [ The Fast Build Update Tool](https://github.com/aws/amazon-gamelift-toolkit/tree/main/fast-build-update-tool) in GitHub.
 
 **Topics**
 + [Build a cloud-based test environment](integration-dev-iteration-cloud.md)
 + [Set up local testing with Amazon GameLift Servers Anywhere](integration-testing.md)
 + [Test your integration using Amazon GameLift Servers Local](integration-testing-local.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

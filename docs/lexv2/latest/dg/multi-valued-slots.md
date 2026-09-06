@@ -74,7 +74,3 @@ When Amazon Lex V2 sends the prompt to the user, it sends "Would you like me to 
 Multi-valued slots support single default values. If multiple default values are provided, Amazon Lex V2 populates the slot with only the first available value. For more information, see [Using default slot values in intents for your Lex V2 bot](context-mgmt-default.md).
 
 You can use slot obfuscation to mask the values of a multi-value slot in conversation logs. When you obfuscate slot values, the value of each of the slot values is replaced with the name of the slot. For more information, see [Obscuring slot values in conversation logs from Lex V2](monitoring-obfuscate.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

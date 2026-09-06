@@ -40,7 +40,3 @@ If you don't assign users or groups to your application, your users will get an 
 ![Screen showing the Add new users dialog.](http://docs.aws.amazon.com/transfer/latest/userguide/images/webapp-transfer-add-user-new.png)
 
    1. Choose **Next**, then choose **Add** to add the user and close the dialog box, or **Add new user** to create another user.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,3 @@ For information on using public identity providers like Amazon, Facebook, Twitte
 Amazon Cognito supports developer authenticated identities, in addition to web identity federation through Facebook, Google, and Amazon. With developer authenticated identities, you can register and authenticate users via your own existing authentication process, while still using [Amazon Cognito Sync](cognito-sync.md) to synchronize user data and access AWS resources. Using developer authenticated identities involves interaction between the end user device, your backend for authentication, and Amazon Cognito.
 
 For information on developer authenticated identities, see the [Developer Authenticated Identities](https://docs.aws.amazon.com/cognito/latest/developerguide/developer-authenticated-identities.html) in the Amazon Cognito Developer Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mobile SDK for Xamarin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mobile` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

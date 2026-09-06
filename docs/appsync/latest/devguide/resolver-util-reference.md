@@ -22,7 +22,3 @@ AWS AppSync defines a set of utilities that you can use within a GraphQL resolve
 +  [ Math helpers in $util.math ](https://docs.aws.amazon.com/appsync/latest/devguide/math-helpers-in-util-math.html) - $util.math contains methods to help with common Math operations.
 +  [ String helpers in $util.str ](https://docs.aws.amazon.com/appsync/latest/devguide/str-helpers-in-util-str.html) - $util.str contains methods to help with common String operations.
 +  [ Extensions ](https://docs.aws.amazon.com/appsync/latest/devguide/extensions.html) - $extensions contains a set of methods to make additional actions within your resolvers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

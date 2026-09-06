@@ -57,7 +57,3 @@ When you create a database migration assessment report in AWS SCT, the **License
 <a name="scaling-the-sql-server-assessment.ecfeacc5-c323-51dc-b9f3-04ca9fbe5892"></a>
 
 AWS SCT now supports batch assessment using the [multiserver assessor](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_AssessmentReport.Multiserver.html#CHAP_AssessmentReport.Multiserver.Agreggated) to evaluate multiple servers based on input that you provide for each schema definition that you want to assess. Your schema definition contains database server connection parameters and the full name of each schema. After assessing each schema, the assessor produces a summary aggregated report that shows the estimated complexity for each possible migration target. It also produces a server-level report that includes the License Evaluation and Cloud Support section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

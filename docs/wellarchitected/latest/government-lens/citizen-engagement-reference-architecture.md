@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/c
 +  Inclusion of real-time and archival flows.
 
 ![A reference architecture diagram showing a citizen engagement solution to perform sentiment analysis on content posted to Twitter.](http://docs.aws.amazon.com/wellarchitected/latest/government-lens/images/citizen-engagement.jpg)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -133,7 +133,3 @@ Any of the 5 default roles (such as `Admin`) not authorized by IAM which are add
 ## Related resources
 <a name="limit-access-to-dags-related-resources"></a>
 + [Access Control](https://airflow.apache.org/docs/apache-airflow/stable/security/access-control.html) (Apache Airflow Documentation) – Learn more about the default Apache Airflow roles on the Apache Airflow documentation website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

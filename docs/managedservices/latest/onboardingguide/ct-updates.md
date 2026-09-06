@@ -12,7 +12,3 @@ AMS provides Update change types to update resources that were created with Crea
 We recommend keeping a record of the change type ID and version that you use when provisioning a resource to make it easy to update it.
 
 **YouTube Video**: [ How do I use update CTs to change resources in an AWS Managed Services (AMS) account?](https://www.youtube.com/watch?v=dqb31yaAXhc&list=PLhr1KZpdzukc_VXASRqOUSM5AJgtHat6-&index=8&t=30s)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

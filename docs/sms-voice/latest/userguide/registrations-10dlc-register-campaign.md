@@ -169,7 +169,3 @@ Don't use placeholder text in your sample MMS images. The example MMS images tha
 1. Choose **Submit registration**.
 **Note**
 After your 10DLC campaign registration has been approved you can request a new 10DLC phone number or use an existing 10DLC phone number and associate it with the 10DLC campaign. For more information on registering for 10DLC, see [Requesting dedicated long codes](phone-numbers-request-long-code.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

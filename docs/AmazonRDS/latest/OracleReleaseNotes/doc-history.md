@@ -86,7 +86,3 @@ The following table describes the important changes in each release of the *Amaz
 | New feature | Updated to support version 11.2.0.4.v3 of Oracle Database 11g, which includes the PSU released in October 2014. | November 20, 2014 |
 | New feature | Updated to support version 11.2.0.4v2 of Oracle Database 11g. | October 16, 2014 |
 | New feature | Updated to support Oracle Database 11g (11.2.0.4). | April 23, 2014 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

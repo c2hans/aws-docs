@@ -70,7 +70,3 @@ To detect text asynchronously, use [StartDocumentAnalysis](https://docs.aws.amaz
 To specify which type of analysis to perform, you can use the `FeatureTypes` list input parameter. Add TABLES to the list to return information about the tables that are detected in the input document—for example, table cells, cell text, and selection elements in cells. Add FORMS to return word relationships, such as key-value pairs and selection elements. Add QUERIES to specify information you want Amazon Textract to look for in the document and get a response back in the form of a question-answer pair. Add LAYOUT to determine the layout of the document. To perform all types of analysis, add TABLES, FORMS, QUERIES, and LAYOUT to `FeatureTypes`.
 
 All lines and words that are detected in the document are included in the response (including text not related to the value of `FeatureTypes`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

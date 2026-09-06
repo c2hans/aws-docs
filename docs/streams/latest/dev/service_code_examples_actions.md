@@ -23,7 +23,3 @@ The following code examples demonstrate how to perform individual Kinesis action
 + [`PutRecord`](example_kinesis_PutRecord_section.md)
 + [`PutRecords`](example_kinesis_PutRecords_section.md)
 + [`RegisterStreamConsumer`](example_kinesis_RegisterStreamConsumer_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

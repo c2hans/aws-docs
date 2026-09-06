@@ -23,7 +23,3 @@ The Summary section provides a high-level overview of the key features of the Wo
 | Maintenance window days of the week | The days that automatic software updates occur. |
 | Associated devices | The number of WorkSpaces Thin Client devices that are accessing this environment. |
 | Time created | The date and time that this environment was created. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

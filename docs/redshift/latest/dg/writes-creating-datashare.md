@@ -32,7 +32,7 @@ On the console, you can create datashares from the **Datashares** tabs in the cl
 
 1. In the **Data consumers** section, you can choose to publish to Amazon Redshift, or publish to the AWS Glue Data Catalog, which starts the process of sharing data with Lake Formation. Publishing your datashare to Amazon Redshift means sharing your data with another namespace or Amazon Redshift account that acts as the consumer.
 **Note**
-Once the datashare is created, you can't edit the configuration to publish to the other option.
+After the datashare is created, you can't edit the configuration to publish to the other option.
 
 1. Choose **Create datashare**.
 
@@ -58,7 +58,3 @@ Setting PUBLICACCESSIBLE = TRUE allows consumers to query your datashare from pu
 You can modify properties about the type of consumers after you create a datashare. For example, you can define that clusters that want to consume data from a given datashare can't be publicly accessible. Queries from consumer clusters that don't meet security restrictions specified in datashare are rejected at query runtime. For more information, see [ALTER DATASHARE](r_ALTER_DATASHARE.md).
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

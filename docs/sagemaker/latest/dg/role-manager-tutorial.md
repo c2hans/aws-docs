@@ -153,7 +153,3 @@ Optionally, use tag-based policy conditions to assign metadata information to ca
 <a name="role-manager-tutorial-review-role"></a>
 
 Take the time to review all of the information associated with your new role. Choose **Previous** to go back and edit any of the information. When you are ready to create your role, choose **Create role**. This generates a role with permissions for your selected ML activities. You can view your new role in the **Roles** section of the [IAM console](https://console.aws.amazon.com/iamv2/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ If your storage modification involves an I/O-intensive operation, it consumes I/
 We recommend as a best practice to schedule these storage modification requests outside of peak hours to help reduce the time required to complete the storage modification operation. Alternatively, you can create a read replica of the DB instance and perform the storage modification on the read replica. Then promote the read replica to be the primary DB instance. For more information, see [Working with DB instance read replicas](USER_ReadRepl.md).
 
 For more information, see [Why is an Amazon RDS DB instance stuck in the modifying state when I try to increase the allocated storage?](https://aws.amazon.com/premiumsupport/knowledge-center/rds-stuck-modifying/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

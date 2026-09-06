@@ -135,7 +135,3 @@ kubectl apply -f nodeclass.yaml
   +  [Permissions for AWS services in key policies](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html)
   +  [Change a key policy](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying.html)
   +  [Grants in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

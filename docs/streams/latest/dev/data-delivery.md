@@ -78,7 +78,3 @@ Delivery to general purpose Amazon S3 buckets follows a similar flow, with two d
 + For streaming tables on Apache Iceberg, cross-account delivery is not supported. The source stream, the destination S3 table bucket, and AWS Glue Schema Registry must all be in the same AWS account and the same Region.
 + For general purpose Amazon S3 buckets, cross-account delivery is supported for the destination bucket only. The channel and its source stream must be in the same AWS account; only the destination bucket can be in a different account.
 + For streaming tables on Apache Iceberg, you must configure a dead-letter queue in Amazon S3.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

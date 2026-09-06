@@ -123,7 +123,3 @@ print(f"Version ID: {response['versionId']}")
 |  `AccessDeniedException`  | 403 | Insufficient permissions. Verify IAM policies include `bedrock-agentcore:CreateConfigurationBundle`. |
 |  `ThrottlingException`  | 429 | Request rate exceeded. Retry with exponential backoff. |
 |  `InternalServerException`  | 500 | Service-side error. Retry the request. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

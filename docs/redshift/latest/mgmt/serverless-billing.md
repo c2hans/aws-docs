@@ -84,7 +84,3 @@ To optimize costs while running zero-ETL integrations on Amazon Redshift Serverl
 + Use the lower base RPU capacity of 8 RPU where available for workloads.
 + Configure the REFRESH\_INTERVAL of your target Redshift instance to balance freshness with cost. Shorter intervals ensure near real-time updates but drive up compute costs. Longer intervals (5 minutes or longer) reduce charges for workloads where immediate freshness is not critical, such as reporting or historical analysis. To edit your Redshift target REFRESH\_INTERVAL, see the refresh interval clause in the [ALTER DATABASE](https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_DATABASE.html) description.
 + Maximize utilization of your Amazon Redshift Serverless environment by concurrently running analytics workloads while zero-ETL data is being ingested. This ensures that compute capacity is actively serving multiple business purposes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

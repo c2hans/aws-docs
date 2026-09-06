@@ -339,7 +339,3 @@ Business logic optimization:
 + [Refactoring applications automatically with AWS Blu Age](https://docs.aws.amazon.com/m2/latest/userguide/refactoring-m2.html) (*AWS Mainframe Modernization User Guide*)
 + [pgAdmin documentation](https://www.pgadmin.org/docs/)
 + [JProfiler documentation](https://www.ej-technologies.com/jprofiler/docs)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

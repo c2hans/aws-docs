@@ -74,7 +74,3 @@ Clusters that run in heterogeneous mode (indicated by specifying a [`queue_setti
 <a name="computemgtd"></a>
 
 Clusters that run in heterogeneous mode (indicated by specifying a [`queue_settings`](cluster-definition.md#queue-settings) value) have compute management daemon (`computemgtd`) processes that run on each of the compute node. Every five (5) minutes, the compute management daemon confirms that the head node can be reached and is healthy. If five (5) minutes pass during which the head node cannot be reached or is not healthy, the compute node is shut down.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

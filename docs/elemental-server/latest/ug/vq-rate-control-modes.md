@@ -38,7 +38,3 @@ Rate control modes define how the encoding engine uses the buffer model and how 
 | Streams – Video > Advanced > Start QP | stream\_assembly/video\_description/{{codec}}/qp<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings**  |
 | Streams – Video > Advanced > Min QP | stream\_assembly/video\_description/{{codec}}/min\_qp<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings**  |
 | Streams – Video > Advanced > Max QP | stream\_assembly/video\_description/{{codec}}/max\_qp<br />where {{codec}} is one of the following:+  **h265\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings**  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

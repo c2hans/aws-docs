@@ -237,7 +237,3 @@ For more information, see [Control Group in Slurm](https://slurm.schedmd.com/cgr
 Implement epilogue scripts to automatically clean up resources after jobs complete. Resources might not be cleared correctly when jobs crash unexpectedly, contain bugs that prevent normal cleanup, or when shared memory buffers (include those shared between processes and GPU drivers) retain allocated.
 
 Epilogue scripts can perform tasks such as clearing GPU memory, removing temporary files, and unmounting file systems. These scripts have limitations when resources are not exclusively allocated to a single job. For detailed instructions and sample scripts, see the second bullet point of the question [Why does my parallel training job fail when I use NVIDIA Collective Communications Library (NCCL) with Slurm on SageMaker HyperPod platform?](#hyperpod-faqs-q4). For more information, see [Enable Slurm epilog script](https://catalog.workshops.aws/sagemaker-hyperpod/en-US/07-tips-and-tricks/18-slurm-epilogue).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

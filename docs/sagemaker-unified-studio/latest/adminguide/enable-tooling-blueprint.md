@@ -32,7 +32,3 @@ Before you begin, verify that you have the following:
 1. After you specify all configuration settings, choose **Enable blueprint**.
 
 After you enable the Tooling blueprint, you can create projects that use compute capabilities. To configure blueprint parameters such as idle timeout settings and permissions boundaries, see [Manage Tooling blueprint parameters](manage-tooling-blueprint.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

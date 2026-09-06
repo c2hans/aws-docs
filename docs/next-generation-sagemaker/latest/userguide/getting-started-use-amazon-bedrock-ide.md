@@ -123,7 +123,3 @@ Amazon Bedrock in SageMaker Unified Studio offers many additional capabilities t
 + You can enhance your chat agent app by adding data sources and guardrails. For more information, see [Build a chat agent app](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/create-chat-app.html).
 + You can share your chat agent app with other users and use it as a component in a flows app. For more information, see [Share a chat agent app](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/app-share.html) and [Deploy a chat agent app](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/app-deploy.html).
 + You can create a flows app to link together different components such as knowledge bases and reusable prompts. For more information, see [Build a flow app](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/create-flows-app.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Sagemaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query next-generation-sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

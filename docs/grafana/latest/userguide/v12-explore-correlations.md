@@ -163,7 +163,3 @@ To follow this example, make sure you have set up a [test data source](testdata-
    ```
 
    This closes the split view and reruns the left query. Expand any log line to see the correlation button. Chooseing the correlation button opens the split view with the `time` (a field), `msg` (extracted with *logfmt* from the log line), `host number` (extracted with *regex* from the `hostname`) and the `status` (extracted with *logfmt* from the log line).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ When configuring views in flows using the [Show view](show-view-block.md) block,
 
 **Tip**
 For the best data mapping experience, we recommend using the **Set JSON** option in the [Show view](show-view-block.md) block. All namespaces in flows can be referenced in the **Show View** block, including `$.External`, so you will be able to share data from external systems to your agent in whichever view you create. You can mix and match data from Connect Customer and other sources to create a consolidated UI for your agent.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

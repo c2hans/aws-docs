@@ -62,7 +62,3 @@ If you have existing pull requests open for updating a blueprint version, close 
 The blueprint won’t update until the pull request is approved and merged. For more information, see [Reviewing a pull request](pull-requests-review.md) and [Merging a pull request](pull-requests-merge.md).
 **Note**
 If you have existing pull requests open for updating a blueprint version, close the previous pull requests before creating a new one. When you choose **Update version**, you will be directed to the list of pending pull requests for the blueprint. You can also view pending pull requests from the **Blueprints** tab in the project **Settings** and the project summary page. For more information, see [Viewing pull requests](pull-requests-view.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

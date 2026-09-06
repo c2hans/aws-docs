@@ -21,7 +21,3 @@ We strongly recommend that you perform this performance testing before you deplo
    + Continually monitor the logs that Elemental Live produces. See [Assessing performance with logging messages](performance-via-logs.md).
 
 1. Revise the workflows in terms of density and video quality, and continue testing. You should revise the workflows incrementally.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

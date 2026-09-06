@@ -41,7 +41,3 @@ Selecting any public event after September 2023 will populate the URL in the bro
 1. (Optional) If you have an account, choose **Open your account health** to sign in. After you sign in, you can view events that are specific to your account. For more information, see [Getting started with your AWS Health Dashboard](getting-started-health-dashboard.md).
 **Note**
 Although an RSS feed is available for health events, the format is subject to changes. So, scraping the RSS feed might not provide all the relevant data. To programmatically ingest health event data, we recommend integrating with Amazon EventBridge. For more information, see [Monitoring events in AWS Health with Amazon EventBridge](cloudwatch-events-health.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -130,7 +130,3 @@ CloudFront drops any incoming `Client-Cert` or `Client-Cert-Chain` headers from 
 **Customize certificate headers**
 
 Use the mTLS helper functions in viewer-request CloudFront Functions to rename, reformat, or combine the certificate headers before they reach your origin. This is useful when migrating from other services that use different header names or certificate encoding formats.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

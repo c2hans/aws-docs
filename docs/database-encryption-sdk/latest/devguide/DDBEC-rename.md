@@ -26,7 +26,3 @@ When you configure the AWS Database Encryption SDK, you provide [cryptographic a
 
 **[Configure existing DynamoDB tables for client-side encryption](ddb-java-config-existing-table.md)**
 Legacy versions of the DynamoDB Encryption Client were designed to be implemented in new, unpopulated tables. With the AWS Database Encryption SDK for DynamoDB, you can migrate your existing Amazon DynamoDB tables to version 3.*x* or 4.*x* of the Java client-side encryption library for DynamoDB.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

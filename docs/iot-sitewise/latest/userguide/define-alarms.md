@@ -104,7 +104,3 @@ The following asset model represents a boiler that has an alarm to monitor its t
 + [Requirements for alarm notifications in AWS IoT SiteWise](iot-events-alarm-notification-requirements.md)
 + [Define AWS IoT Events alarms for AWS IoT SiteWise](define-iot-events-alarms.md)
 + [Define external alarms in AWS IoT SiteWise](define-external-alarms.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

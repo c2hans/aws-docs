@@ -30,7 +30,3 @@ Before you can receive AWS Artifact email notifications, you must first open the
 1. Select the notification hubs in the AWS Regions where you want to store your AWS User Notifications resources. By default, your User Notifications data is stored in the US East (N. Virginia) Region. User Notifications replicates your notifications data across the other Regions that you select. For more information, see the [notification hubs documentation](https://docs.aws.amazon.com/notifications/latest/userguide/notification-hubs.html) in the *AWS User Notifications User Guide*.
 
 1. Choose **Save and continue**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Artifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query artifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -127,7 +127,3 @@ Use the `LIMIT` clause to reduce the amount of data scanned for some queries. No
 
 **Note**
  AWS IoT SiteWise may scan a minimum amount of data even with the `LIMIT` clause applied, especially for raw data queries that scan over multiple properties.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

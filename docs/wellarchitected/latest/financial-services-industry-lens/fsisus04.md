@@ -35,7 +35,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 +  **Prioritize resource allocation for critical generative AI applications in financial services:** Implement right-sized generative AI models for different business criticality levels - use smaller, efficient models for non-critical functions. Evaluate if generative AI is necessary or if simpler approaches can achieve the same outcome. FSISUS05: How do you define, review, and optimize network access patterns for sustainability?
 
  Assess and optimize network access patterns for sustainability. Pay attention to redundant layers and redirects or patterns generating excessive and unnecessary data movement.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

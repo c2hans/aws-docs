@@ -270,7 +270,3 @@ Use the following procedures to restore backed up indexes from a snapshot.
 
 **Note**
 When restoring a snapshot with a command that includes a request body, you can use several parameters to control the restore behavior. The `indices` parameter specifies which indices to restore and supports wildcard patterns. Set `ignore_unavailable` to continue the restore operation even if an index in the snapshot is missing. Use `include_global_state` to determine whether to restore the cluster state, and `include_aliases` to control whether to restore associated aliases. The `rename_pattern` and `rename_replacement` parameters rename indexes during the restore operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

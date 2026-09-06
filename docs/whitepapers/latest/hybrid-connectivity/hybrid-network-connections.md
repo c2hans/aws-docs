@@ -39,7 +39,3 @@ Hosted Virtual Interface (Hosted VIF) is a type of Private VIF where the VIF is 
 <a name="transit-gateway-connect"></a>
 
  Transit Gateway Connect uses GRE tunnels between an AWS Transit Gateway and an on-premises gateway device. BGP is used on top of TGW Connect to enable dynamic routing. Note that TGW Connect is not encrypted. For more information, see [Transit Gateway Connect](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

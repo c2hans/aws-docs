@@ -86,7 +86,3 @@ The following policy is attached to IAM principals in addition to the [AWS manag
 ```
  **Explanation of Permissions**
 Allows queries to invoke the AWS Lambda functions for the AWS Lambda functions specified in the `Resource` block. For example, `arn:aws:lambda:*:{{MyAWSAcctId}}:function:{{MyAthenaLambdaFunction}}`, where {{MyAthenaLambdaFunction}} specifies the name of a Lambda function to be invoked. Multiple functions can be specified as shown in the example.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

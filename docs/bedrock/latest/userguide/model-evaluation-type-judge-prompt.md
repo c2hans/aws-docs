@@ -31,7 +31,3 @@ Refer to the following sections to see the prompts used by the available evaluat
 + [Anthropic Claude 3.5 Haiku](model-evaluation-type-judge-prompt-haiku35.md)
 + [Meta Llama 3.1 70B Instruct](model-evaluation-type-judge-prompt-llama.md)
 + [Mistral Large](model-evaluation-type-judge-prompt-mistral.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,7 +39,3 @@ The following table shows the key activities for each pillar of adoption.
 | Platform | + Develop reusable AI components, such as microservices architectures and automated pipelines for evaluating solutions with human oversight.<br />+ Create standardized solution templates such as RAG implementations and agentic workflows.<br />+ Establish a standardized blueprint to integrate with third-party tools, using industry standards such as Model Context Protocol (MCP).+ Implement self-service capabilities through an internal portal, such as an API-first integration architecture and a component marketplace. |
 | Security | + Implement enterprise-grade security controls and automated compliance verification. |
 | Operations | + Build process and guidelines to support an inner-source or crowd-source development model.+ Deploy comprehensive observability frameworks.+ Create dashboards that help you monitor performance.+ Implement automated systems to collect feedback. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

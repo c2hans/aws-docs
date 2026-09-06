@@ -82,7 +82,3 @@ To bring Wickr Backend online, scale back ingress `kubectl scale deployment/ingr
 **Internal Database**
 
 For more information, see [Backup and Restore MySQL](https://github.com/aws-samples/sample-packages-for-aws-wickr/blob/main/docs/mysql-backup.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -126,7 +126,3 @@ The following are the maximum character counts and size limits for IAM and AWS S
 | Tag value | 256 charactersThis character limit applies to tags on IAM resources and [session tags](id_session-tags.md).<br />Tag values can be empty which means tag values can have a length of 0 characters. |
 | Unique IDs created by IAM | 128 characters. For example:+  User IDs that begin with `AIDA` <br />+  Group IDs that begin with `AGPA` <br />+  Role IDs that begin with `AROA` <br />+  Managed policy IDs that begin with `ANPA` <br />+  Server certificate IDs that begin with `ASCA`  This isn't intended to be an exhaustive list, nor is it a guarantee that IDs of a certain type begin only with the specified letter combination.  |
 | User name | 64 characters |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

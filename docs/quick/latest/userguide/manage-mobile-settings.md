@@ -38,7 +38,3 @@ Mobile settings allow Amazon Quick admins to enhance data security and maintain 
 + Enable biometric/PIN requirements for additional security, especially when dealing with sensitive data
 + Keep operating system requirements enabled to ensure devices have the latest security updates
 + Communicate changes in mobile settings to your users before implementation
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

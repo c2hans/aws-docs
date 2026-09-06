@@ -78,7 +78,3 @@ For detailed information about how to use AWS Support Center to monitor a case, 
 You can use the AWS Support API to create service requests and add correspondence throughout investigations of your issues and interactions with AWS Support. Similar to AWS Support, the ECO team also receives service requests programmatically created by you using the AWS Support API with the `service-ams-operations-service-request` service code.
 
 For information about how to use the AWS Support API, see [Managing Accelerate incidents with the support API](https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/managing-incidents-with-sapi.html) in the *AMS Accelerate User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Energy Data Insights on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query EDI` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

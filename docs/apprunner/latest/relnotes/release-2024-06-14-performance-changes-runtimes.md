@@ -21,7 +21,3 @@ Starting from 17 Jun, 2024, customers using the following runtimes are expected 
 + Python 3.8
 
 To maintain similar build times, we recommend that Node.js 12 and Node.js 14 users migrate to Node.js 18 and that Python 3.7 and Python 3.8 users migrate to Python 3.11. Otherwise, since builds are billed by time, expect an associated increase in cost. For more information about App Runner pricing, see  [App Runner Pricing](https://aws.amazon.com/apprunner/pricing).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

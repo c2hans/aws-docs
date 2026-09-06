@@ -71,7 +71,3 @@ The following models vary significantly in size, number of model parameters, tra
 | BiT-M R50x3 ImageNet-21k | `tensorflow-ic-bit-m-r50x3-imagenet21k-classification-1` | [TensorFlow Hub link](https://tfhub.dev/google/bit/m-r50x3/imagenet21k_classification/1) |
 | BiT-M R101x1 ImageNet-21k | `tensorflow-ic-bit-m-r101x1-imagenet21k-classification-1` | [TensorFlow Hub link](https://tfhub.dev/google/bit/m-r101x1/imagenet21k_classification/1) |
 | BiT-M R101x3 ImageNet-21k | `tensorflow-ic-bit-m-r101x3-imagenet21k-classification-1` | [TensorFlow Hub link](https://tfhub.dev/google/bit/m-r101x3/imagenet21k_classification/1) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

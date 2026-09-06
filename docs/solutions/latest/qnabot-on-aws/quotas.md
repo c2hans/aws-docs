@@ -33,7 +33,3 @@ Your AWS account has Amazon Lex quotas, which you can view by following these st
 1. Choose **Amazon Lex**.
 
 Amazon Lex V2 requires the fulfillment Lambda’s maximum output size to be set to 50 KB. You cannot adjust this setting through the AWS account’s Service endpoints and quotas. You might reach this quota when you are trying to return very large responses by increasing the number of words or context in the response. Additionally, when you use RAG with Amazon Kendra or Knowledge Bases for Amazon Bedrock, you might want to limit your output by customizing the settings such as prompt templates, max retrieved results, or documents.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

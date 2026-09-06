@@ -124,7 +124,3 @@ The Share shortened link capability allows you to create smaller and simpler URL
 **Sharing shortened links with absolute time**
 
 Short links have two options: keeping relative time (for example, from two hours ago to the current time) or absolute time (for example, from 8am to 10am). Sharing a shortened link by default will copy the time range selected, relative or absolute. Choosing the dropdown button next to the share shortened link button and selecting one of the options under **Time-Sync URL Links** will allow you to create a short link with the absolute time, meaning anyone receiving the link will see the same data you are seeing, even if they open the link at another time. This option will not affect the time range selected in your Explore view.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

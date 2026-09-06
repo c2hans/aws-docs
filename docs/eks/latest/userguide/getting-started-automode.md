@@ -22,7 +22,3 @@ If you are comparing different approaches to creating your first EKS cluster, yo
 + Choose default settings that determine things like the size and speed of node storage and Pod network configuration.
 
 For details on what you get with EKS Auto Mode clusters, see [Automate cluster infrastructure with EKS Auto Mode](automode.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

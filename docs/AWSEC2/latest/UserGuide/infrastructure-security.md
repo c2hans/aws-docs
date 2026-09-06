@@ -57,7 +57,3 @@ Consider the following options for controlling network traffic to your EC2 insta
 + [Windows instances] Many of the Windows OS roles and Microsoft business applications also provide enhanced functionality such as IP Address Range restrictions within IIS, TCP/IP filtering policies in Microsoft SQL Server, and connection filter policies in Microsoft Exchange. Network restriction functionality within the application layer can provide additional layers of defense for critical business application servers.
 
 Amazon VPC supports additional network security controls, such as gateways, proxy servers, and network monitoring options. For more information, see [Control network traffic](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html#control-network-traffic) in the *Amazon VPC User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

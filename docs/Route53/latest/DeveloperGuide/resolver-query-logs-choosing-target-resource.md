@@ -32,7 +32,12 @@ If the S3 bucket is in an account that you own, the required permissions are aut
                 "Service": "delivery.logs.amazonaws.com"
             },
             "Action": "s3:PutObject",
-            "Resource": "arn:aws:s3:::{{your_bucket_name}}/AWSLogs/{{your_caller_account}}/*"
+            "Resource": "arn:aws:s3:::{{your_bucket_name}}/AWSLogs/{{your_caller_account}}/*",
+            "Condition": {
+                "StringEquals": {
+                    "aws:SourceAccount": "{{your_caller_account}}"
+                }
+            }
         },
         {
             "Effect": "Allow",
@@ -40,7 +45,12 @@ If the S3 bucket is in an account that you own, the required permissions are aut
                 "Service": "delivery.logs.amazonaws.com"
             },
             "Action": "s3:GetBucketAcl",
-            "Resource": "arn:aws:s3:::{{your_bucket_name}}"
+            "Resource": "arn:aws:s3:::{{your_bucket_name}}",
+            "Condition": {
+                "StringEquals": {
+                    "aws:SourceAccount": "{{your_caller_account}}"
+                }
+            }
         },
         {
             "Effect": "Allow",
@@ -63,7 +73,3 @@ For more information, see the [Amazon Data Firehose Developer Guide](https://doc
 For information about the pricing for Resolver query logging, see [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/).
 
 CloudWatch Vended Logs charges apply when using VPC Resolver logs, even when logs are published directly to Amazon S3. For more information, see [*Logs pricing* at Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/#Vended_Logs).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,7 +64,3 @@ The cost and usage dashboard table is generated from CUR 2.0 data, which means t
 | usage\_date | The start date and time for the line item in UTC. The format is `YYYY-MM-DDTHH:mm:ssZ`.<br />**Example:** 2023-10-01T00:00:00.000Z |
 | usage\_quantity | The amount of usage that you incurred during the specified time period. For size-flexible Reserved Instances, use the reservation/TotalReservedUnits column instead. Certain subscription charges will have a UsageAmount of 0.  |
 | usage\_type | The usage details of the line item. For example, USW2-BoxUsage:m2.2xlarge describes an M2 High Memory Double Extra Large instance in the US West (Oregon) Region. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

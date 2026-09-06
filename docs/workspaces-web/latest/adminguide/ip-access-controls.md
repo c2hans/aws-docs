@@ -22,7 +22,3 @@ Customers are responsible for understanding the potential legal issues that aris
 + [Associating an IP access setting with a web portal in Amazon WorkSpaces Secure Browser](associate-ip-access-controls.md)
 + [Editing an IP access control group in Amazon WorkSpaces Secure Browser](edit-ip-access-controls.md)
 + [Deleting an IP access control group in Amazon WorkSpaces Secure Browser](delete-ip-access-controls.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

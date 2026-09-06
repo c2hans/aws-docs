@@ -52,7 +52,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 
 **Note**
 The Amazon EC2 instance [limits the number of packets](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html) that can be sent to the Amazon provided DNS server to a maximum of 1024 packets per second per network interface. This limit cannot be increased. If you run into this performance limit, you must set up conditional forwarding for Amazon Route 53 private zones to use the Amazon DNS Server (.2 resolver) and use root hints for internet name resolution. This setup reduces the chances of you exceeding the 1024 packet limit on AWS DNS resolver.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ There are no changes to the functionality of AWS Site-to-Site VPN as part of thi
 + 5 Gbps tunnels are not supported.
 + Site-to-Site VPN Concentrator is not supported.
 + Site-to-Site VPN [quotas](https://docs.aws.amazon.com/vpn/latest/s2svpn/vpn-limits.html) do not change with this integration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

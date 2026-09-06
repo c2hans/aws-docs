@@ -38,7 +38,3 @@ The following diagram summarizes how you use change sets to update a stack:
 After you execute a change, CloudFormation removes all change sets that are associated with the stack because they aren't applicable to the updated stack.
 
 You can also delete change sets to prevent executing a change set that shouldn't be applied.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

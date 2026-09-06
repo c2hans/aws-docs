@@ -32,7 +32,3 @@ For an active/standby broker, Amazon MQ provides two ActiveMQ Web Console URLs, 
 The following diagram illustrates an active/standby broker with Amazon EFS storage replicated across multiple AZs.
 
 ![Active MQ broker in us-west-2a and standby broker in us-west-2b, both connected to client and EFS volume.](http://docs.aws.amazon.com/amazon-mq/latest/developer-guide/images/amazon-mq-activemq-broker-architecture-active-standby.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

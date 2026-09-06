@@ -35,7 +35,3 @@ The API uses the following regular expressions to define what is valid content f
 + Custom string pattern \#9 – "`^([\p{L}\p{Z}\p{N}_.:\/=+\-@%]*)$`"
 + Custom string pattern \#10 – "`^([\p{L}\p{Z}\p{N}_.:\*\/=+\-@%]*)$`"
 + Custom string pattern \#11 – "`[\p{L}\p{N}\p{P}]*`"
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ The data ingestion diagram shows how to bring data from factory floors and enter
 1. Use AWS Snowball Edge for large data set migration from on-premises systems.
 
 1. Use [AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/) to synchronize databases into [Amazon Relational Database Service](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/) (Amazon RDS).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Reference Architecture Diagrams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query reference-architecture-diagrams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

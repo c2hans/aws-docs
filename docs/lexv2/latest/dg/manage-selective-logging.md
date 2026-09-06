@@ -54,7 +54,3 @@ You can only enable selective conversation log capture for text and/or audio log
 + In an intent elicitation turn, if multiple slot values are given by the user, the text and/or audio log will only get generated if the text/audio session attributes allow logging for all the slots filled in this turn.
 + The recommended operational approach is to set the selective conversation log capture session attribute at the beginning of the session and to refrain from modifying it during the session.
 + If any slots contain sensitive data, you should always enable slot obfuscation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

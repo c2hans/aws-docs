@@ -56,7 +56,3 @@ For information about how to create a task definition with the secret specified 
 <a name="secrets-ssm-paramstore-update-app"></a>
 
 To retrieve the sensitive data stored in the Systems Manager Parameter Store parameter, see [Code examples for Systems Manager using AWS SDKs](https://docs.aws.amazon.com/code-library/latest/ug/ssm_code_examples.html) in the *AWS SDK Code Examples Code Library*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

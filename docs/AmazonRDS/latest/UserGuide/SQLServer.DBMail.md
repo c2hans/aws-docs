@@ -57,7 +57,3 @@ If you create a read replica from your Multi-AZ instance that has Database Mail 
 <a name="SQLServer.DBMail.SMTP"></a>
 
 By default, AWS blocks outbound traffic on SMTP (port 25) for RDS for SQL Server DB instances. This is done to prevent spam based on the elastic network interface owner's policies. You can remove this restriction if needed. For more information, see [ How do I remove the restriction on port 25 from my Amazon EC2 instance or Lambda function?](https://repost.aws/knowledge-center/ec2-port-25-throttle).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

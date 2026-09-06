@@ -5,12 +5,13 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/doc-history.h
 # Document history for AWS Backup
 <a name="doc-history"></a>
 + **API version: **November 19, 2025
-+ **Latest documentation update: **August 27, 2026
++ **Latest documentation update: **September 1, 2026
 
 The following table lists all AWS Backup launches since the launch of the service in January 2019 to present. For notifications about updates to this documentation you can subscribe to the RSS feed above.
 
 | Change | Description | Date |
 | --- | --- | --- |
+| Expanded Amazon S3 bucket support | AWS Backup now supports protecting more than 1,000 Amazon S3 buckets per account by integrating with Amazon S3 Event Notifications with system-generated tags. See [Amazon S3 backups](https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html) for more details. | September 1, 2026 |
 | AWS Backup adds cross-Region and cross-account copy support for FSx for ONTAP | AWS Backup now supports cross-account and cross-Region copy of FSx for ONTAP backups in most AWS Regions where FSx for ONTAP is supported. For more information, see [Creating backup copies across AWS Regions](https://docs.aws.amazon.com/aws-backup/latest/devguide/cross-region-backup.html). | August 27, 2026 |
 | Cross-account backup copy and cross-account management in the China Regions | AWS Backup now supports cross-account backup copy and cross-account management in China (Beijing) and China (Ningxia). See [Feature availability by AWS Region](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region). | August 27, 2026 |
 | Amazon DocumentDB cross-account and cross-Region copy in opt-in Regions | Cross-account and cross-Region backup copy for Amazon DocumentDB is now supported in AWS Regions where opt-in is required. For more information, see [Feature availability by AWS Region](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region). | August 26, 2026 |
@@ -195,7 +196,3 @@ The following table lists all AWS Backup launches since the launch of the servic
 | Support for configuring services to work with AWS Backup | You can now configure AWS Backup to back up resources for specific AWS services. For more information, see [Opt in to managing services with AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.html#service-opt-in). | May 20, 2020 |
 | Support for backing up Amazon EC2 instances and also adds support for cross-Region backup | You can now back up entire Amazon EC2 instances and also copy resources across AWS Regions. For more information, see [Creating backup copies across AWS Regions](https://docs.aws.amazon.com/aws-backup/latest/devguide/cross-region-backup.html). | January 13, 2020 |
 | New guide | AWS launches AWS Backup and the AWS Backup Developer Guide. | January 15, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

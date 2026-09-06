@@ -37,7 +37,3 @@ There are components of the CAP that you define and that are not covered in this
 By using virtual private cloud (VPCs), you can establish boundaries in each AWS account to help adhere to the SCCA standards. This isn't configured as part of the LZA because VPCs, IP addressing, and routing are components that you must set up as needed for your infrastructure. You can implement components such as Domain Name System Security Extensions (DNSSEC) in [Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html). You can also add AWS WAF or third-party, commercial WAFs to help you achieve necessary standards.
 
 Additionally, to support requirement 2.1.2.7in the DISA SCCA, you can use [GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html) and [Network Firewall](https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html) to help secure and monitor the environment for malicious traffic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

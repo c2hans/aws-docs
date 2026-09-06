@@ -71,7 +71,3 @@ The biggest cause of frustration from users is when the skill doesn’t behave a
 +  Account linking can provide user information that may be stored in an external system. Use that information to provide contextual and personalized experience for your user. Alexa has [guidelines on Account Linking](https://developer.amazon.com/blogs/alexa/post/0fbd9756-6ea0-43d5-b213-873ede1b0595/tips-for-successfully-adding-account-linking-to-your-alexa-skill) to provide frictionless experiences.
 +  Use the skill beta testing tool to collect early feedback on skill development, and for skills versioning, to reduce impact on skills that are already live.
 +  Use ASK CLI to automate skill development and deployment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

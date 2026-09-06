@@ -16,7 +16,3 @@ The following example template snippets describe CloudFormation resources or com
 **Topics**
 + [Configure Amazon EC2 Auto Scaling resources](quickref-ec2-auto-scaling.md)
 + [Configure Application Auto Scaling resources](quickref-application-auto-scaling.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

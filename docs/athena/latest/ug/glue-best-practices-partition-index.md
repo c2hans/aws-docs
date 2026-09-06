@@ -28,7 +28,3 @@ You can disable partition filtering on this table at any time by setting the `pa
 After you complete the above steps, you can return to the Athena console to query the data.
 
 For more information about using partition indexing and filtering, see [Improve Amazon Athena query performance using AWS Glue Data Catalog partition indexes](https://aws.amazon.com/blogs/big-data/improve-amazon-athena-query-performance-using-aws-glue-data-catalog-partition-indexes/) in the *AWS Big Data Blog*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ On the output side, in each video encode, you specify whether to include the tim
 1. Choose **Timecode**, then in **Timecode insertion**, choose an option:
    + **DISABLED** – This encode won't include timecode metadata.
    + **METADATA\_OBU** (for AV1) or **PIC\_TIMING\_SEI** (for H.264 or H.265) or **GOP\_timecode** (MPEG) – This encode will include timecode metadata.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

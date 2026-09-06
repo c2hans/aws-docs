@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/enhanced-cust
 When you integrate CloudWatch with Amazon EMR, you can track critical statuses for applications like HiveServer2. You can publish status to CloudWatch custom metrics and configure alerts for service unavailability.
 
 Specifically, you can create a script to monitor Amazon EMR applications like YARN ResourceManager and HiveServer2 on a primary node. See [Publish and monitor an Amazon EMR application status with CloudWatch integration](https://repost.aws/knowledge-center/emr-publish-monitor-service-status) in the *re:Post Knowledge Center* for details on how to configure this use case.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

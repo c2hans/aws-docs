@@ -42,7 +42,3 @@ Elastic fleets rely on applications that are stored on app blocks. When a user c
 AWS manages the streaming instance provisioning and availability with an Elastic fleet. You need to configure the maximum concurrency you expect when creating and updating the fleet, and ensure that you have sufficient streaming instance limits to meet your user demand.
 
 For more information about creating app blocks for your Elastic fleets, see [App Blocks](app-blocks.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

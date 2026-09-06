@@ -18,7 +18,3 @@ You can also export files and their associated metadata (including POSIX metadat
 
 **Important**
 If you have linked one or more caches to a data repository on Amazon S3, don't delete the Amazon S3 bucket until you have deleted all linked caches.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

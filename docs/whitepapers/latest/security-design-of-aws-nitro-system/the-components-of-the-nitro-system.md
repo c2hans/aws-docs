@@ -128,7 +128,3 @@ EC2 provides customers with access to [instance console output](https://docs.aws
  A crucial aspect of maintaining system security is routine updates. The Nitro Hypervisor allows for full system live update. When a new version of the Nitro Hypervisor is available, the full running hypervisor code is replaced in-place while preserving customer EC2 instances with near-imperceptible performance impact to those instances. These update processes are designed such that at no time do any of the security protocols or defenses of the Nitro System need to be dropped or relaxed. This overall live update capability is designed to provide zero downtime for customers’ instances, while ensuring that not only new features but also security updates can be applied regularly and rapidly.
 
 The decoupling of customer instance downtime from Nitro System component updates eliminates the need for the EC2 service to carefully balance tradeoffs between customer experience and potential security impact when planning system updates, thereby yielding improved security outcomes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

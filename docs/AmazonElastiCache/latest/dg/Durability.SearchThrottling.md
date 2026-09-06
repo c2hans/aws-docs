@@ -65,7 +65,3 @@ The following Amazon CloudWatch metrics are available for monitoring search writ
 + **Monitor `SearchWriteThrottleActive`** — Track whether throttling is active so you can investigate and respond promptly.
 + **Plan sustained ingestion around the 2-hour window** — The system uses a 2-hour rolling average, so short bursts of high write activity are fully supported as long as they are offset by lower usage within the same window.
 + **Scale your cluster if you observe sustained or frequent throttling** — If your workload consistently exceeds the threshold and throttling impacts your application's latency requirements, consider scaling to add capacity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

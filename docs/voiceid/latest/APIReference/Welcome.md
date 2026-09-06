@@ -14,8 +14,4 @@ Connect Customer Voice ID provides real-time caller authentication and fraud ris
 
 For more information about the Voice ID feature, see [Use real-time caller authentication with Voice ID](https://docs.aws.amazon.com/connect/latest/adminguide/voice-id.html) in the *Connect Customer Administrator Guide*.
 
-This document was last published on September 1, 2026.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Voice ID. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query voiceid` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+This document was last published on September 4, 2026.

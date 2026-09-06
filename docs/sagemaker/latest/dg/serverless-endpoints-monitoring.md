@@ -46,7 +46,3 @@ These CloudWatch metrics are published for serverless endpoints with Provisioned
 <a name="serverless-endpoints-monitoring-logs"></a>
 
 If you want to monitor the logs from your endpoint for debugging or progress analysis, you can use Amazon CloudWatch Logs. The SageMaker AI-provided log group that you can use for serverless endpoints is `/aws/sagemaker/Endpoints/[EndpointName]`. For more information about using CloudWatch Logs in SageMaker AI, see [CloudWatch Logs for Amazon SageMaker AI](logging-cloudwatch.md). To learn more about CloudWatch Logs, see [What is Amazon CloudWatch Logs?](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) in the *Amazon CloudWatch Logs User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

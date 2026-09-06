@@ -17,7 +17,7 @@ Steps 1 to 3 occur only if you run pre scripts. If you run post scripts only, st
 
 1. Systems Manager sends pre script commands to the SSM Agent running on the target instances. The SSM Agent runs the commands on the instance, and sends status information back to Systems Manager.
 
-   For example, if the SSM document is used to create application-consistent snapshots, the pre script might freeze and flush I/O to ensure that all buffered data is written to the volume before the snapshot is taken.
+   For example, if the SSM document is used to create application-consistent snapshots, the pre script might freeze and flush I/O to make sure that all buffered data is written to the volume before the snapshot is taken.
 
 1. Systems Manager sends pre script command status updates to Amazon Data Lifecycle Manager. If the pre script fails, Amazon Data Lifecycle Manager takes one of the following actions, depending on how you configure the pre and post script options:
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/ebs/latest/userguide/script-flow.html)
@@ -30,17 +30,13 @@ Steps 5 to 7 occur only if you run pre scripts. If you run post scripts only, st
 
 1. Systems Manager sends post script commands to the SSM Agent running on the target instances. The SSM Agent runs the commands on the instance, and sends status information back to Systems Manager.
 
-   For example, if the SSM document enables application-consistent snapshots, this post script might thaw I/O to ensure that your databases resume normal I/O operations after the snapshot has been taken.
+   For example, if the SSM document enables application-consistent snapshots, this post script might thaw I/O to make sure that your databases resume normal I/O operations after the snapshot has been taken.
 
 1. If you run a post script and Systems Manager indicates that it completed successfully, the process completes.
 
    If the post script fails, Amazon Data Lifecycle Manager takes one of the following actions, depending on how you configure the pre and post script options:
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/ebs/latest/userguide/script-flow.html)
 
-   Keep in mind that if the post script fails, the pre script (if enabled) will have completed successfully, and the snapshots might have been created. You might need to take further action on the instance to ensure that it is operating as expected. For example if the pre script paused and flushed I/O, but the post script failed to thaw I/O, you might need to configure your database to auto-thaw I/O or you need to manually thaw I/O.
+   Keep in mind that if the post script fails, the pre script (if enabled) will have completed successfully, and the snapshots might have been created. You might need to take further action on the instance to make sure that it is operating as expected. For example if the pre script paused and flushed I/O, but the post script failed to thaw I/O, you might need to configure your database to auto-thaw I/O or you need to manually thaw I/O.
 
 1. The snapshot creation process might complete after the post script completes. The time taken to complete the snapshot depends on the snapshot size.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

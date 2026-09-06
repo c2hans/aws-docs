@@ -97,7 +97,3 @@ For a list of reference variables for data transformations, see [Variables for d
 | $context.xrayTraceId | The trace ID for the X-Ray trace. For more information, see [Set up AWS X-Ray with API Gateway REST APIs](apigateway-enabling-xray.md). |
 | $context.wafResponseCode | The response received from [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html): `WAF_ALLOW` or `WAF_BLOCK`. Will not be set if the stage is not associated with a web ACL. For more information, see [Use AWS WAF to protect your REST APIs in API Gateway](apigateway-control-access-aws-waf.md). |
 | $context.webaclArn | The complete ARN of the web ACL that is used to decide whether to allow or block the request. Will not be set if the stage is not associated with a web ACL. For more information, see [Use AWS WAF to protect your REST APIs in API Gateway](apigateway-control-access-aws-waf.md). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

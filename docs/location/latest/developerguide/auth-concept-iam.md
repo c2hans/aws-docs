@@ -18,7 +18,3 @@ The Amazon Resource Name that uniquely identifies an Amazon Location Service res
 
 **SigV4 signing**
 The AWS Signature Version 4 process used to authenticate IAM and Amazon Cognito requests. The AWS SDKs handle SigV4 signing automatically. API keys bypass SigV4 signing entirely.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

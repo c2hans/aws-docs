@@ -14,64 +14,48 @@ Before you begin, ensure you have:
 +  ** AWS Account** with credentials configured. To configure your AWS credentials, see [Configuration and credential file settings in the AWS CLI.](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
 +  [Uv](https://docs.astral.sh/uv/getting-started/installation/) **installed** and [Python 3.10\+](https://docs.astral.sh/uv/guides/install-python/) installed
 +  ** AWS Permissions** : To create and deploy an agent with the AgentCore CLI, you must have appropriate permissions. For more information, see [Use the AgentCore CLI](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-permissions.html#runtime-permissions-cli).
-+  **Model access** : Anthropic Claude Sonnet 4.0 [enabled](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access-modify.html) in the Amazon Bedrock console. For information about using a different model with the Strands Agents see the *Model Providers* section in the [Strands Agents SDK](https://strandsagents.com/latest/documentation/docs/) documentation.
++  **Model access** : Amazon Bedrock enables access to foundation models by default. To use a non-foundation model, follow the [model access steps](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html#model-access-sdk-step4).
 
-## Step 1: Set up project and install dependencies
+## Step 1: Install the AgentCore CLI
 <a name="step-1-setup"></a>
 
-Initialize your project with the following commands:
-
-```
-uv init agentcore_runtime_direct_deploy --python 3.13
-cd agentcore_runtime_direct_deploy
-```
-
-Add core packages:
-
-```
-uv add bedrock-agentcore strands-agents
-```
-
-Install the AgentCore CLI (required for the steps that follow):
+Install the AgentCore CLI:
 
 ```
 npm install -g @aws/agentcore
 ```
 
-Package descriptions:
-+  **bedrock-agentcore** - The Amazon Bedrock AgentCore SDK for building AI agents
-+  **strands-agents** - The [Strands Agents](https://strandsagents.com/latest/) SDK
-+  **@aws/agentcore** - The AgentCore CLI
-
-Optionally, run `uv add aws-opentelemetry-distro` to enable [Amazon Bedrock AgentCore observability traces](https://docs.aws.amazon.com/xray/latest/devguide/xray-services-adot.html).
-
-Uv will automatically create a `pyproject.toml` file with dependencies, `uv.lock` file with dependency closure and `.venv` directory.
-
 ## Step 2: Create your agent project
 <a name="step-2-create-agent"></a>
 
-Use the `agentcore create` command to set up a skeleton agent project with the framework of your choice:
+Create one AgentCore project for the tutorial:
 
 ```
-agentcore create
+agentcore create \
+  --project-name DirectDeployProject \
+  --name DirectDeployAgent \
+  --language Python \
+  --framework Strands \
+  --model-provider Bedrock \
+  --memory none \
+  --build CodeZip
+cd DirectDeployProject
 ```
-
-The command will prompt you to:
-+ Choose a framework (choose Strands Agents for this tutorial)
-+ Provide a project name
-+ Choose a template (basic or production)
-+ Choose model provider and other options
 
 This command generates:
 + Agent code with your selected framework
 + A `pyproject.toml` file with necessary dependencies
 + An `agentcore/agentcore.json` configuration file
-+ Infrastructure as Code (IaC) files if production template is selected
++ An `agentcore/cdk/` infrastructure project
+
+The generated `pyproject.toml` includes the AgentCore and Strands dependencies. Uv creates the virtual environment and lock file during project creation.
+
+Optionally, run `cd app/DirectDeployAgent && uv add aws-opentelemetry-distro && cd ../..` to enable [Amazon Bedrock AgentCore observability traces](https://docs.aws.amazon.com/xray/latest/devguide/xray-services-adot.html).
 
 ## Step 3: Test locally
 <a name="step-3-test-locally"></a>
 
-Make sure port 8080 is free before starting. See *Port 8080 in use (local only)* in [Common issues and solutions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-cli.html#common-issues).
+Make sure port 8080 is free before starting. See [Troubleshoot](runtime-get-started-cli.md#common-issues) if the port is already in use.
 
 Open a terminal window and start your agent with the following command:
 
@@ -101,7 +85,7 @@ Deploy your agent using one of the following methods:
 
 **Example**
 
-1. The following steps will be required to deploy an agent to AgentCore Runtime. For more information, see [Get started with the AgentCore CLI](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-cli.html) . If Uv is available, the AgentCore CLI will recommend direct code deployment. Otherwise it will default to container deployment type.
+1. The following steps deploy the CodeZip project created in Step 2. For more information, see [Get started with the AgentCore CLI](runtime-get-started-cli.md). Uv is required to create and package the Python project.
 
    Once you have your agent set up using `agentcore create` , use the `deploy` command to create a zip deployment package, upload it to the specified bucket, and deploy the agent.
 
@@ -203,7 +187,7 @@ Deploy your agent using one of the following methods:
    print(f"Status: {response['status']}")
    ```
 
-   For more information about invoking an agent programmatically, see [Invoke an agent programmatically](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-cli.html#invoke-programmatically).
+   For more information about invoking an agent programmatically, see [Invoke an agent programmatically](runtime-get-started-cli.md#invoke-programmatically).
 
 1. You can deploy your agent using the Amazon Bedrock AgentCore console with managed runtime support. The console provides an intuitive interface for uploading ZIP files and configuring agent settings.
 
@@ -414,7 +398,3 @@ To see what distributions are available for your required package, do the follow
 If your package is only available as a source distribution, you need to build the C/C\+\+ libraries yourself. To make your package compatible with the Amazon Bedrock AgentCore Runtime execution environment, you need to build it in an environment that uses the same Amazon Linux operating system with **arm64** instruction set. You can do this by building your package in an Amazon Elastic Compute Cloud (Amazon EC2) Linux instance.
 
 To learn how to launch and connect to an Amazon EC2 Linux instance, see [Get started with Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) in the *Amazon EC2 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

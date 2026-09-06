@@ -19,7 +19,3 @@ Disabling VBS reduces the security posture of your Windows WorkSpace. Only disab
 + **Disabled code integrity checks** – Hypervisor-Enforced Code Integrity (HVCI) will not function, allowing unsigned drivers to run in kernel mode.
 + **Increased vulnerability to exploits** – The system becomes more susceptible to attacks that could result in full system compromise.
 + **Loss of advanced security features** – Features such as Windows Defender Credential Guard and System Guard cannot operate as intended.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ $ aws cloudformation delete-stack --stack-name <installation-stack-name>
 <a name="deleting-dns-records"></a>
 
 If you chose the ALB \+ ECS Fargate deployment option, delete the CNAME or Route 53 Alias record that maps your custom domain to the ALB DNS name in your DNS provider. If the ACM certificate is no longer needed, you can also delete it from the [ACM console](https://console.aws.amazon.com/acm/). The AWS WAF web ACL deployed in front of the ALB is automatically deleted when the CloudFormation stack is deleted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

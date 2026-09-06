@@ -48,7 +48,3 @@ This tutorial is divided into five short modules. You must complete each module 
 1. [Module 5: Add the Ability to Store Images](module-five.md) (10 minutes): Add storage to your app.
 
 You will be building this iOS application using the [Terminal](https://support.apple.com/en-gb/guide/terminal/welcome/mac) and Apple's [Xcode](https://developer.apple.com/xcode/) IDE.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

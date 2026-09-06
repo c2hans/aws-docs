@@ -87,7 +87,3 @@ This table shows updates to the AWS access management policies for DynamoDB.
 | DynamoDBReplicationServiceRolePolicy update to an existing policy | DynamoDBReplicationServiceRolePolicy added the permission account:ListRegions. This permission allows the service-linked role to evaluate replica accessibility | May 10, 2023 |
 | DynamoDBReplicationServiceRolePolicy added to list of managed policies | Added information about the managed policy DynamoDBReplicationServiceRolePolicy, which is used by the DynamoDB global tables service-linked role. | May 10, 2023 |
 | DynamoDB global tables started tracking changes | DynamoDB global tables started tracking changes for its AWS managed policies. | May 10, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

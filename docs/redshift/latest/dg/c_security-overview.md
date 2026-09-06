@@ -18,7 +18,3 @@ Amazon Redshift database security is distinct from other types of Amazon Redshif
 + **Data in transit** — To protect your data in transit within the AWS Cloud, Amazon Redshift uses hardware accelerated SSL to communicate with Amazon S3 or Amazon DynamoDB for COPY, UNLOAD, backup, and restore operations.
 + **Column-level access control** — To have column-level access control for data in Amazon Redshift, use column-level grant and revoke statements without having to implement views-based access control or use another system.
 + **Row-level security control** — To have row-level security control for data in Amazon Redshift, create and attach policies to roles or users that restrict access to rows defined in the policy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -63,7 +63,3 @@ For information about how to use multiple configuration files with Amazon ECS, i
 For information about example configurations, see [Example Amazon ECS task definition: Route logs to FireLens](firelens-taskdef.md).
 
 For more information about configuring logs for high throughput, see [Configuring Amazon ECS logs for high throughput](firelens-docker-buffer-limit.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

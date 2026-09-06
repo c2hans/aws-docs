@@ -11,7 +11,3 @@ On April 30, 2027, AWS will discontinue support for Amazon Q Developer IDE plugi
 <a name="q-developer-ide-migrating-to-kiro"></a>
 
 If you've been using Amazon Q Developer in your IDE, everything you rely on today (inline suggestions, chat, and code generation) is available in Kiro. For migration steps, see [Migrating from Amazon Q Developer to Kiro](https://kiro.dev/docs/upgrade-guides/migrating-from-q-developer/) on the Kiro website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

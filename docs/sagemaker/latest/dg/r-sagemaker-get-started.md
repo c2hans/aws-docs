@@ -23,7 +23,3 @@ This topic explains how to get started using the R software environment in SageM
 Alternatively, when you are in a Jupyter notebook, you can use the **Kernel** menu, and then select **R** from the **Change kernel** submenu.
 
 ![Location of where to change your notebook kernel to R.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/An-R-User-Guide-to-SageMaker/An-R-User-Guide-to-SageMaker-4.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

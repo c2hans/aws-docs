@@ -225,7 +225,3 @@ aws amscm create-rfc --change-type-id "ct-00tlkda4242x7" --change-type-version "
 <a name="ex-cd-dep-group-ec2-create-tip"></a>
 
 For more information about AWS CodeDeploy deployment groups, see [Create a Deployment Group with AWS CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups-create.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

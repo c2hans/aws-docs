@@ -12,6 +12,7 @@ For notification about these updates, you can subscribe to the Amazon WorkSpaces
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Graphics G7 instance family](https://docs.aws.amazon.com/appstream2/latest/developerguide/instance-types.html) | Added support for the Graphics G7 instance family (stream.graphics.g7.\* instance types), powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs. | August 31, 2026 |
 | [Added FAQ page for supported protocols](#doc-history) | Added an FAQ page with answers to common questions about the AWS JSON and Smithy RPC v2 CBOR wire protocols. For more information, see [ FAQs on supported protocols](https://docs.aws.amazon.com/appstream2/latest/dg/cbor-faq.html). | July 23, 2026 |
 | [New agent access guidance](https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-access.html) | WorkSpaces Applications agent access public preview | May 1, 2026 |
 | [Updated AmazonAppStreamServiceAccess](https://docs.aws.amazon.com/appstream2/latest/developerguide/managed-policies-required-to-access-appstream-resources.html) | Updated the AmazonAppStreamServiceAccess managed policy | November 17, 2025 |
@@ -250,7 +251,3 @@ Individual WorkSpaces Applications base image and WorkSpaces Applications agent 
 | [ SAML 2.0 support](external-identity-providers.html) | Created "Single Sign-on Access to WorkSpaces Applications Using SAML 2.0" and updated other content as needed. | February 15, 2017 |
 | [ Image builders](managing-image-builders.html) | Created "WorkSpaces Applications Image Builders" and updated other content as needed. | January 19, 2017 |
 | [ Initial documentation release](what-is-appstream.html) | Created the initial release of the Amazon WorkSpaces Applications Administration Guide. | December 01, 2016 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

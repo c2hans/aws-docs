@@ -58,7 +58,3 @@ Security Hub CSPM is a regional service. This means that you must enable Securit
 + Configure Security Hub CSPM to automatically enroll new AWS accounts when they are added into the organization.
 + Enable the [AWS Foundational Security Best Practices standard](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp.html) (Security Hub CSPM documentation) to detect when resources deviate from security best practices.
 + Enable [Cross-Region aggregation](https://docs.aws.amazon.com/securityhub/latest/userguide/finding-aggregation.html) (Security Hub CSPM documentation) so that you can view and manage all of your Security Hub CSPM findings from a single Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

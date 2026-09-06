@@ -68,7 +68,3 @@ The ARN `arn:aws:iam::account-id:role/service-role/aws-quicksight-service-role-v
 + **Review CloudTrail logs** for AccessDenied errors to identify the specific permission issue.
 + **Check Amazon S3 Block Public Access settings** - while these typically don't affect authenticated access, verify they're not interfering with your specific use case.
 + **Verify bucket ownership** - ensure the bucket exists and you have the correct bucket name.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

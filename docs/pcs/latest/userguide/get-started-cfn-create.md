@@ -18,6 +18,7 @@ The following procedure uses a CloudFormation template in the AWS Management Con
    + [Asia Pacific (Singapore) (ap-southeast-1)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/create/review?stackName=get-started-cfn&templateURL=https://s3.amazonaws.com/aws-hpc-recipes/main/recipes/pcs/getting_started/assets/cluster.yaml&param_ClientIpCidr=0.0.0.0%2F0)
    + [Asia Pacific (Sydney) (ap-southeast-2)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/create/review?stackName=get-started-cfn&templateURL=https://s3.amazonaws.com/aws-hpc-recipes/main/recipes/pcs/getting_started/assets/cluster.yaml&param_ClientIpCidr=0.0.0.0%2F0)
    + [Asia Pacific (Jakarta) (ap-southeast-3)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-3#/stacks/create/review?stackName=get-started-cfn&templateURL=https://s3.amazonaws.com/aws-hpc-recipes/main/recipes/pcs/getting_started/assets/cluster.yaml&param_ClientIpCidr=0.0.0.0%2F0)
+   + [Asia Pacific (New Zealand) (ap-southeast-6)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-6#/stacks/create/review?stackName=get-started-cfn&templateURL=https://s3.amazonaws.com/aws-hpc-recipes/main/recipes/pcs/getting_started/assets/cluster.yaml&param_ClientIpCidr=0.0.0.0%2F0)
    + [Asia Pacific (Tokyo) (ap-northeast-1)](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/create/review?stackName=get-started-cfn&templateURL=https://s3.amazonaws.com/aws-hpc-recipes/main/recipes/pcs/getting_started/assets/cluster.yaml&param_ClientIpCidr=0.0.0.0%2F0)
    + [Asia Pacific (Seoul) (ap-northeast-2)](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/create/review?stackName=get-started-cfn&templateURL=https://s3.amazonaws.com/aws-hpc-recipes/main/recipes/pcs/getting_started/assets/cluster.yaml&param_ClientIpCidr=0.0.0.0%2F0)
    + [Asia Pacific (Osaka) (ap-northeast-3)](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-3#/stacks/create/review?stackName=get-started-cfn&templateURL=https://s3.amazonaws.com/aws-hpc-recipes/main/recipes/pcs/getting_started/assets/cluster.yaml&param_ClientIpCidr=0.0.0.0%2F0)
@@ -59,7 +60,3 @@ The following procedure uses a CloudFormation template in the AWS Management Con
 1. Choose **Create stack**.
 
 1. Monitor the status of your stack. You can connect to the cluster after the status of the stack is `CREATE_COMPLETE`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

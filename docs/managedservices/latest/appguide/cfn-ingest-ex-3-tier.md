@@ -42,7 +42,3 @@ This includes an Application Load Balancer, Application Load Balancer target gro
      ```
 
    Find the Application Load Balancer URL in the CloudFormation RFC execution output to access the website. For information about accessing resources, see [Accessing instances](https://docs.aws.amazon.com/managedservices/latest/userguide/access-instance.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

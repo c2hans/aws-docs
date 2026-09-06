@@ -63,7 +63,3 @@ After you enable Enhanced Container Insights (Classic), you can explore the foll
 + For information about the metrics that Enhanced Container Insights (Classic) collects, see [Enhanced Container Insights (Classic) metric reference](container-insights-eks-classic-metrics.md).
 + To migrate to OTel Container Insights, see [Migrate from Enhanced Container Insights (Classic) to OTel Container Insights](container-insights-eks-migrate-from-classic.md).
 + For more information about OTel Container Insights, see [OTel Container Insights (Recommended)](container-insights-eks-otel.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

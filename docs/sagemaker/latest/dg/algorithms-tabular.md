@@ -25,7 +25,3 @@ Amazon SageMaker AI provides built-in algorithms that are tailored to the analys
 | Linear Learner | train and (optionally) validation, test, or both | File or Pipe | recordIO-protobuf or CSV | CPU or GPU | Yes |
 | TabTransformer | training and (optionally) validation | File | CSV | CPU or GPU (single instance only) | No |
 | XGBoost (0.90-1, 0.90-2, 1.0-1, 1.2-1, 1.2-21) | train and (optionally) validation | File or Pipe | CSV, LibSVM, or Parquet | CPU (or GPU for 1.2-1) | Yes |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

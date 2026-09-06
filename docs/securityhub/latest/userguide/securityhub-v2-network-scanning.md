@@ -86,7 +86,12 @@ aws securityhub enable-security-hub-feature-v2 --feature-name NETWORK_SCANNING
 ## Network Scanning findings
 <a name="network-scanning-findings"></a>
 
- Network Scanning publishes findings in OCSF format, using the AWS OCSF Extension, and they appear alongside other Security Hub findings. Each finding represents a single reachable port on a specific resource and address combination. Scan results are contained in the `port_scan_result_list` section of an OCSF finding. The following examples show information returned for a reachable resource:
+ Network Scanning publishes findings in Open Cybersecurity Schema Framework (OCSF) format, using the AWS OCSF Extension, and they appear alongside other Security Hub findings. Network Scanning creates findings whether or not a resource has reachable ports. If a finding does not exist for a supported resource type, Network Scanning has not scanned the resource yet.
+
+### Findings for reachable ports
+<a name="network-scanning-reachable-ports"></a>
+
+ Each finding represents a single reachable port on a specific resource and address combination. The `port_scan_result_list` section of an OCSF finding contains the scan results. The following examples show information returned for a reachable resource:
 
 ```
 "port_scan_result_list": [
@@ -132,21 +137,31 @@ aws securityhub enable-security-hub-feature-v2 --feature-name NETWORK_SCANNING
   ],
 ```
 
- If no finding exists for a resource, Network Scanning did not detect it as reachable from the internet. The absence of a finding indicates that the resource is not internet-reachable from the scanning infrastructure.
+### Informational findings for no open ports
+<a name="network-scanning-informational-findings"></a>
+
+ Network Scanning creates a finding when it detects no open ports on a resource. This finding has a severity of `Informational` and requires no action. It confirms that Network Scanning scanned the resource.
+
+ The Informational finding remains open in Security Hub until you delete the resource or until Network Scanning detects open ports on the resource. When Network Scanning identifies open ports on a resource with an Informational finding, it closes the Informational finding. It then creates a finding for each open port.
+
+ Informational findings for no open ports cover the ports that Network Scanning currently supports. For a list of supported ports, see [Supported ports](#network-scanning-supported-ports).
+
+### Finding lifecycle events
+<a name="network-scanning-finding-lifecycle"></a>
 
  The following table describes the lifecycle for a Network Scanning finding.
 
-**Finding lifecycle events**
-
 | Event | What happens |
 | --- | --- |
+| No open ports detected | Network Scanning creates an Informational finding that requires no action |
+| Open ports detected on resource with Informational finding | Network Scanning closes the Informational finding and creates a finding for each open port |
 | Port first detected as reachable | Network Scanning creates and publishes a new finding |
 | Port still reachable on rescan (no change) | Network Scanning periodically refreshes the finding |
 | Port still reachable but evidence changed | Network Scanning republishes the finding with updated evidence |
 | Port no longer reachable | Finding remains open until next rescan confirms port is unreachable |
 | Resource terminated or deleted | Network Scanning closes all findings for the resource by setting the activity\_name attribute to Close |
 | IP address removed from resource | Network Scanning closes findings for that specific IP |
-| Network Scanning disabled | Network Scanning produces no new findings; existing findings remain until aged off |
+| Network Scanning disabled | Network Scanning produces no new findings; existing findings remain until they age out |
 | Security Hub disabled | You no longer have access to findings |
 
  If a port is intermittently reachable, Network Scanning bases findings on positive evidence at scan time. After you fix an issue (for example, by closing a firewall rule or stopping a service), Network Scanning closes the finding on the next scan.
@@ -154,7 +169,7 @@ aws securityhub enable-security-hub-feature-v2 --feature-name NETWORK_SCANNING
  Disabling Network Scanning does not immediately close findings. Existing findings remain visible until they age out through the normal Security Hub finding lifecycle.
 
 **Note**
- When an EIP is attached to an EC2 instance, Network Scanning produces findings on the EIP resource. The EIP is the top-level IP resource that owns the address. For NLB resources, the DNS name and attached EIPs are distinct network entry points, so Network Scanning produces separate findings for each.
+ When you attach an Elastic IP address (EIP) to an Amazon EC2 instance, Network Scanning produces findings on the EIP resource. The EIP is the top-level IP resource that owns the address. For Network Load Balancer (NLB) resources, the DNS name and attached EIPs are distinct network entry points, so Network Scanning produces separate findings for each.
 
 ## Scan evidence
 <a name="network-scanning-evidence"></a>
@@ -194,11 +209,6 @@ Identified application or protocol running on the port.
 21, 22, 23, 25, 53, 80, 110, 143, 443, 445, 1433, 3306, 3389, 5432,
 5900, 6379, 8080, 8443, 9200, 27017
 ```
-
-## Scan traffic
-<a name="network-scanning-traffic"></a>
-
- Scans use TCP only (no UDP) and scan a well-known subset of TCP ports. The exact list of ports might evolve over time. The scanning service never runs inside your VPC or account – it operates from AWS-owned infrastructure.
 
 ## Multi-cloud support
 <a name="network-scanning-multicloud"></a>
@@ -254,7 +264,3 @@ aws securityhub disable-security-hub-feature-v2 --feature-name NETWORK_SCANNING
 + Network Scanning does not trigger new scans.
 +  Existing findings remain visible until they age out through the normal Security Hub finding lifecycle.
 +  Network Scanning completes any scans already in progress.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

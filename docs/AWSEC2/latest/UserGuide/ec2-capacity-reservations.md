@@ -172,7 +172,3 @@ Before you create Capacity Reservations, take note of the following limitations 
 + Capacity Reservations do not ensure that a hibernated instance can resume after you try to start it.
 + You can request future-dated Capacity Reservations for an instance count with a minimum of 32 vCPUs. For example, if you request a future-dated Capacity Reservation for `m5.xlarge` instances, you must request at least 8 instances (*8 \* m5.xlarge = 32 vCPUs*).
 + You can request future-dated Capacity Reservations for instance types in the following families: C, G, I, M, R, T, U, and X.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

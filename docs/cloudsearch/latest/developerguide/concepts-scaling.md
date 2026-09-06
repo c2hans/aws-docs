@@ -33,7 +33,3 @@ When traffic drops, Amazon CloudSearch removes search instances to minimize cost
 If your domain experiences a sudden surge in traffic, Amazon CloudSearch deploys additional search instances. It takes a few minutes to set up the new instances, however, so you might see an increase in 5xx errors until the new instances can start processing requests. For more information about handling 5xx errors, see [Handling Errors](error-handling.md).
 
 Keep in mind that the type and complexity of your search requests affect overall search performance and in some cases increase the number of search instances required to operate your domain. Submitting a high volume of small or single-document batches can affect your search domain's performance. For more information, see [Tuning Search Request Performance in Amazon CloudSearch](tuning-search.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

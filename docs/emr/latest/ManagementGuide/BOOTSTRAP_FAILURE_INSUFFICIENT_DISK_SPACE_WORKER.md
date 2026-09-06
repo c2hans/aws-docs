@@ -29,7 +29,3 @@ The public URL of the documentation for the error code.
 1.  Review the best practices for your cluster’s EBS root device volume. See [Customizing the Amazon EBS root device volume](emr-custom-ami-root-volume-size.md) in the *Amazon EMR Management Guide*.
 
 1. Launch a new cluster with a larger EBS root device volume size.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

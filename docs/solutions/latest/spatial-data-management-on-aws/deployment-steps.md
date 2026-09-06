@@ -68,7 +68,8 @@ Optional Parameters
 |  `ExistingVpcCidrBlock`  | CIDR block of the existing VPC (for example, `10.0.0.0/16`). Required when `ExistingVpcId` is set. | Empty | Valid CIDR range or empty |
 |  `ExistingIsolatedSubnetIds`  | Comma-separated IDs of isolated subnets (no internet route) in the existing VPC. Optional — if omitted, all Lambdas are placed in private subnets. | Empty | Comma-separated subnet IDs or empty |
 |  `ExistingPrivateSubnetIds`  | Comma-separated IDs of private subnets (with outbound internet route) in the existing VPC. Required when `ExistingVpcId` is set. | Empty | Comma-separated subnet IDs or empty |
-|  `ExistingOpenSearchVpcEndpointId`  | ID of the Amazon OpenSearch Serverless VPC endpoint in the existing VPC. Required when `ExistingVpcId` is set. | Empty | Valid VPC endpoint ID (`vpce-<hex>`) or empty |
+|  `ExistingOpenSearchVpcEndpointId`  | ID of the Amazon OpenSearch Serverless VPC endpoint in the existing VPC. Required when `ExistingVpcId` is set and `UseVpcEndpoints` is `Yes`. | Empty | Valid VPC endpoint ID (`vpce-<hex>`) or empty |
+|  `UseVpcEndpoints`  | For bring-your-own (BYO) VPC deployments: set to `No` to skip VPC endpoint creation and validation. When set to `No`, Lambda functions reach AWS services over the internet via NAT instead of through VPC endpoints. Only applicable when `ExistingVpcId` is provided. See [Reuse existing networking infrastructure](reuse-existing-networking.md) for details. |  `Yes`  |  `Yes`, `No`  |
 
 ![Advanced parameters configuration for production deployment](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/production-advanced-parameters-deploy.png)
 
@@ -144,7 +145,3 @@ The main stack creates the following nested stacks:
 1.  **Deadline Stack** (2-3 minutes, if enabled) – AWS Deadline Cloud farm configuration – Integration with asset management system – Job queue setup
 
 1.  **Monitoring Stack** (2-3 minutes) – Amazon CloudWatch alarms and dashboards – AWS CloudTrail for audit logging – Amazon Athena workgroup for log analysis
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

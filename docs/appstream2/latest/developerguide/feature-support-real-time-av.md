@@ -62,7 +62,3 @@ After you finish configuring your image builder and creating an image that suppo
 **Note**
 To use real-time AV with the WorkSpaces Applications client, your WorkSpaces Applications base image and agent version should be June 1, 2021 or later. We recommend using the latest WorkSpaces Applications client. For guidance that you can provide to your users to help them use real-time AV, see [Video and Audio Conferencing](client-application-windows-how-to-use-local-webcam-user.md).
 To use real-time AV with web browser access, your WorkSpaces Applications image must use a version of the WorkSpaces Applications agent released on or after June 24, 2021. For more information on supported web browsers, see [Web Browser Access](web-browser-user.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

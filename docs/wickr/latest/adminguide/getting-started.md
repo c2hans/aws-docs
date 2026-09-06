@@ -22,7 +22,3 @@ Before you start, be sure to complete the following prerequisites if you haven't
 + Sign up for Amazon Web Services (AWS). For more information, see [Setting up for AWS Wickr](setting-up.md).
 + Ensure that you have the permissions required to administer Wickr. For more information, see [AWS managed policy: AWSWickrFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AWSWickrFullAccess).
 + Make sure you allow list the appropriate ports and domains for Wickr. For more information, see [Ports and domains to allow list for your Wickr network](allow-list-ports-domains.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

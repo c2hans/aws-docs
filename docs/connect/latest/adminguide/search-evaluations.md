@@ -34,7 +34,3 @@ Users can search for evaluated contacts and view evaluations side-by-side alongs
 
 **AI answer details in submitted evaluations**
 When you view a submitted evaluation that contains answers filled using native generative AI, you can also view the AI answer details. These details include the reasoning behind each AI answer and the relevant reference points from the transcript. AI answer details appear only when the submitted answer matches the answer that AI provided.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

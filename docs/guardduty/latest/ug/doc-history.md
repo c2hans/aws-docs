@@ -9,6 +9,7 @@ The following table describes important changes to the documentation since the l
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [New feature - Custom Detection Rules](#doc-history) | GuardDuty introduces Custom Detection Rules, a curated library of detection rules aligned with threat actor techniques. You can browse, enable, and manage rules to detect specific techniques in your environment. For more information, see [Custom Detection Rules](https://docs.aws.amazon.com/guardduty/latest/ug/custom-detection-rules.html). | September 1, 2026 |
 | [Updated functionality – GuardDuty Investigation (Preview)](#doc-history) | Removed the limit of 100 accounts for organization-level investigations. Organization investigations now analyze all accounts in your organization. For more information, see [GuardDuty Investigation](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.html). | August 24, 2026 |
 | [Updated functionality - Runtime Monitoring](#doc-history) | GuardDuty Runtime Monitoring releases the new security agent version 1.16.0 for Amazon EKS, Amazon EC2, and Amazon ECS-AWS Fargate resources. For more information about the new agent version and a list of additional resources to update your security agent, see [GuardDuty security agent release versions](https://docs.aws.amazon.com/guardduty/latest/ug/runtime-monitoring-agent-release-history.html). | July 17, 2026 |
 | [New finding type - UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.InsideAWS and updated finding type - UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.OutsideAWS](#doc-history) | GuardDuty introduces a new finding type that detects when temporary AWS credentials created for an Amazon ECS task are used from a different AWS account. Additionally, the existing ResourceCredentialExfiltration.OutsideAWS finding now detects Amazon ECS task credential exfiltration in addition to Lambda. For more information, see [UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.InsideAWS](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html#unauthorizedaccess-iam-resourcecredentialexfiltrationinsideaws) and [UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.OutsideAWS](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html#unauthorizedaccess-iam-resourcecredentialexfiltrationoutsideaws). | July 15, 2026 |
@@ -239,7 +240,3 @@ The following table describes important changes to the documentation since the l
 | Change | Description | Date |
 | --- | --- | --- |
 | Initial publication | Initial publication of the Amazon GuardDuty User Guide. | November 28, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

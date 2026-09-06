@@ -42,7 +42,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-pe
  As the collection of data in the catalog becomes more valuable, it will become increasingly important that the business-focused data governance team be involved the maintenance of the catalog platform. In turn, a data catalog can often support that data governance organization by serving as the platform to manage relevant data governance policies, data procedures, and associated standards.
 
  Consider incorporating additional types of metadata; for example, data science algorithms may be defined and viewable in the data catalog. There is a myriad of different ways in which the data catalog and the curation efforts can benefit your organization; we have touched on just a few here. The more consistent and well understood an organizations data is, the more time and energy collectively it has to focus on driving value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

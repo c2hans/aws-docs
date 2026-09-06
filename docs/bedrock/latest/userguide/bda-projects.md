@@ -32,7 +32,3 @@ When processing documents, you might want to use multiple blueprints for differe
 Currently, images only support a single blueprint definition per project. Image file types JPG and PNG might be treated as images or as scanned documents based on their contents. We recommend that you create a custom blueprint for images when you process custom output for documents so BDA provides the desired output for image files that contain text.
 
 Audio files also only support a single blueprint definition per project.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

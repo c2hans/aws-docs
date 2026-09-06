@@ -11,7 +11,3 @@ MediaLive produces channel logs that contain detailed information about activity
 + [About channel logs](monitoring-logs-about.md)
 + [Enabling channel encoder logs](enabling-disabling-logs.md)
 + [Working with logs](working-with-logs.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

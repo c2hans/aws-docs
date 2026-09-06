@@ -16,7 +16,3 @@ To read this table, find a color space in the first column, then read across to 
 | HDR10  | Rec. 2020 | SMPTE ST 2084 (PQ)  | SMPTE ST 2086  |
 | HLG or HLG 2020  | Rec. 2020 | HLG rec. 2020  | Not applicable. This color space doesn't include display metadata. |
 | Dolby Vision 8.1 | Rec. 2020 | SMPTE ST 2084 (PQ) | Proprietary Dolby Vision 8.1 metadata (RPU), on a per-frame basis, and SMPTE ST 2086 on a per-stream basis. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

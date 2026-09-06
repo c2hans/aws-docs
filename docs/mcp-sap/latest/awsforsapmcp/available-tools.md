@@ -24,7 +24,3 @@ With the AWS for SAP Model Context Protocol (MCP) Server, your AI agents can acc
 
 **Important**
 By default, the AWS for SAP MCP Server runs in **read-only mode**. Your AI agents can perform non-mutating tasks such as querying service catalogs, inspecting metadata, and running read operations. Write actions — including create, read, update, and delete (CRUD) operations and function imports — are disabled unless you set both the global `Write Enabled` configuration and the operation specific flag to `true`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MCP Servers for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mcp-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

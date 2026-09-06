@@ -32,7 +32,3 @@ The following table gives information about the available kernels for SageMaker 
 | Sparkmagic (SparkR) | A kernel used to do data science with remote Spark clusters from Jupyter notebooks using the R programming language. This kernel comes with Python 3.10. |
 | conda\_python3 | A conda environment that comes pre-installed with popular packages for data science and machine learning. This kernel comes with Python 3.10. |
 | conda\_pytorch | A conda environment that comes pre-installed with PyTorch version 2.10.0, as well as popular data science and machine learning packages. This kernel comes with Python 3.10. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

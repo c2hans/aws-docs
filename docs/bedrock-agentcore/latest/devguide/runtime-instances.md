@@ -12,7 +12,3 @@ For a broader overview of the Instances compute type and how to use it, see [Ins
 **Topics**
 + [Security model and permissions for Runtime Instances](runtime-instances-security.md)
 + [Encryption at rest for Runtime Instances](runtime-instances-encryption.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

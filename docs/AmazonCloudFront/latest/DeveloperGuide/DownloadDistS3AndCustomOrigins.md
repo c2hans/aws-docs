@@ -546,7 +546,3 @@ For more information, including the steps for setting up an origin group, see [O
 You can use API Gateway as a custom origin for your CloudFront distribution. For more information, see the following topics:
 + [Securing Amazon API Gateway with secure ciphers using Amazon CloudFront](https://aws.amazon.com/blogs/networking-and-content-delivery/securing-amazon-api-gateway-with-secure-ciphers-using-amazon-cloudfront/) AWS blog post
 + [How do I set up API Gateway with my own CloudFront distribution?](https://repost.aws/knowledge-center/api-gateway-cloudfront-distribution) AWS re:Post
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

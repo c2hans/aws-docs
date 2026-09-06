@@ -96,7 +96,7 @@ NULLS FIRST \| NULLS LAST
 Option that specifies whether NULLS should be ordered first, before non-null values, or last, after non-null values. By default, NULLS are sorted and ranked last in ASC ordering, and sorted and ranked first in DESC ordering.
 
  *frame\_clause*
-For aggregate functions, the frame clause further refines the set of rows in a function's window when using ORDER BY. It enables you to include or exclude sets of rows within the ordered result. The frame clause consists of the ROWS keyword and associated specifiers.
+For aggregate functions, the frame clause further refines the set of rows in a function's window when using ORDER BY. With the frame clause, you can include or exclude sets of rows within the ordered result. The frame clause consists of the ROWS keyword and associated specifiers.
 The frame clause doesn't apply to ranking functions. Also, the frame clause isn't required when no ORDER BY clause is used in the OVER clause for an aggregate function. If an ORDER BY clause is used for an aggregate function, an explicit frame clause is required.
 When no ORDER BY clause is specified, the implied frame is unbounded, equivalent to ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING.
 
@@ -254,7 +254,3 @@ INSERT INTO winsales VALUES
   (30004, '4/18/2004', 3, 'b', 20, null),
   (30007, '9/7/2004', 3, 'c', 30, null);
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,7 +54,3 @@ Currently, SageMaker geospatial capabilities are only supported in the US West (
 For a customer working within VPC mode, company firewalls can cause connection issues with SageMaker Studio Classic or between JupyterServer and the KernelGateway. Make the following checks if you encounter one of these issues when using SageMaker Studio Classic from behind a firewall.
 Check that the Studio Classic URL is in your networks allowlist.
 Check that the websocket connections are not blocked. Jupyter uses websocket under the hood. If the KernelGateway application is InService, JupyterServer may not be able to connect to the KernelGateway. You should see this problem when opening System Terminal as well.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,7 +49,3 @@ The following services do not provide full access to service APIs:
 | Amazon Elastic Inference | You can only call the Elastic Inference API action `elastic-inference:Connect`. This permission is included in the `customer_sagemaker_admin_policy` that is attached to the `customer_sagemaker_admin_role`. This action gives you access to the Elastic Inference accelerator. |
 | AWS Shield | No access to any of this services APIs or console. |
 | Amazon Simple Workflow Service | No access to any of this services APIs or console. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

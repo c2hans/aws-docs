@@ -76,7 +76,3 @@ The following fields can't appear more than once in the header section of a mess
 + If you specify a `Return-Path` header, Amazon SES sends bounce and complaint notifications to the address that you specified. However, the message that your recipients receive contains a different value for the `Return-Path` header.
 + If you use the Amazon SES API v2 `SendEmail` operation with either *Simple* or *Templated* content, or use the `SendBulkEmail` operation, you cannot set custom header content for headers that are set by SES; therefore, the following headers are disallowed as custom headers:
   + `BCC`, `CC`, `Content-Disposition`, `Content-Type`, `Date`, `From`, `Message-ID`, `MIME-Version`, `Reply-To`, `Return-Path`, `Subject`, `To`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

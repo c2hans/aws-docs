@@ -66,7 +66,3 @@ Some commands in key\_mgmt\_util and cloudhsm\_mgmt\_util have the same names. H
 | [shareKey](cloudhsm_mgmt_util-shareKey.md) | Shares an existing key with other users. | CU |
 | [syncKey](cloudhsm_mgmt_util-syncKey.md) | Syncs a key across cloned AWS CloudHSM clusters. | CU, CO |
 | [syncUser](cloudhsm_mgmt_util-syncUser.md) | Syncs a user across cloned AWS CloudHSM clusters. | CO |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

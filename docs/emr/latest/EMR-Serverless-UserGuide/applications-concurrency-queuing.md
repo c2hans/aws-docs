@@ -66,7 +66,3 @@ Take the following into consideration when you implement concurrency and queuing
 + The valid range for `maxConcurrentRuns` is 1 to 1000, and for `queueTimeoutMinutes` it is 15 to 720.
 + A maximum of 2000 jobs can be in the **QUEUED** state for an account.
 + Concurrency and queuing applies to batch and streaming jobs. It cannot be used for interactive jobs. For more information, refer to [Run interactive workloads with EMR Serverless through EMR Studio](interactive-workloads.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

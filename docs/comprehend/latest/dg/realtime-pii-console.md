@@ -36,7 +36,3 @@ The **Offsets** analysis mode identifies the location of PII in your text docume
 The **Labels** analysis mode returns the labels of identified PII entity types. For more information, see [Labeling PII entities](how-pii-labels.md).
 
 ![The PII labels analysis mode.](http://docs.aws.amazon.com/comprehend/latest/dg/images/gs-console-pii-labels.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

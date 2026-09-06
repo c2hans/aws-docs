@@ -67,7 +67,3 @@ Before you delete a canary, you might want to view the canary details and make n
    Enter **Delete** into the box and choose **Delete** .
 
 1. Delete the other resources used by and created for the canary, as listed earlier in this section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

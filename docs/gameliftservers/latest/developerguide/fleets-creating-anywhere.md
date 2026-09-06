@@ -25,7 +25,7 @@ Because Anywhere fleets are self-managed, setting up a fleet requires some addit
 <a name="fleet-anywhere-start"></a>
 
 Before creating an Anywhere fleet, do the following tasks. For more detailed guidance, see the [Development roadmap for hosting with Amazon GameLift Servers Anywhere](gamelift-roadmap-anywhere.md) or [Development roadmap for hybrid hosting with Amazon GameLift Servers](gamelift-roadmap-hybrid.md).
-+ **Integrate your game server code with the Amazon GameLift Servers server SDK version 5.x (or higher).** You don't need to complete all game integration tasks, just those required for a game server build. A common practice is to set up your local machine as an Anywhere fleet and use a command line interface to test your game server integration (see [Set up local testing with Amazon GameLift Servers Anywhere](integration-testing.md)). You can incorporate additional components (such as an Amazon GameLift Servers enabled game client) as your develop them.
++ **Integrate your game server code with the Amazon GameLift Servers server SDK version 5.x (or higher).** You don't need to complete all game integration tasks, just those required for a game server build. A common practice is to set up your local machine as an Anywhere fleet and use a command line interface to test your game server integration (see [Set up local testing with Amazon GameLift Servers Anywhere](integration-testing.md)). You can incorporate additional components (such as an Amazon GameLift Servers enabled game client) as you develop them.
 + **Package your game server software for installation onto your Anywhere fleet computes.** The package should include your integrated game server build and all support software needed to run your game server.
 + **Decide whether to use the Amazon GameLift Servers Agent with your Anywhere fleet.** The Agent is an on-compute process management tool that automates some of the key tasks related to managing server processes and computes for use with Amazon GameLift Servers. For more information, see [Work with the Amazon GameLift Servers Agent](integration-dev-iteration-agent.md).
 
@@ -183,7 +183,7 @@ Each of the startup actions returns compute-specific values that you need to sto
 ------
 #### [ AWS CLI ]
 
-The following instructions describe how manually submit each request using the AWS CLI.
+The following instructions describe how to manually submit each request using the AWS CLI.
 
 **To register a compute**
 
@@ -260,7 +260,3 @@ If you've deployed the Amazon GameLift Servers Agent with your game server softw
 Run an instance of your game server executable on a compute. If your game server build is properly integrated, the game server process calls the server SDK action `InitSDK()` with a set of valid server parameters. When the server process is ready to host a game session, it calls `ProcessReady()`.
 If you deployed your game server software with the Amazon GameLift Servers Agent, you can skip this step. The Agent automatically launches game server processes based on the runtime instructions you provide.
 You can monitor progress by viewing server process metrics for activating and active server processes. See [Amazon GameLift Servers metrics for fleets](monitoring-cloudwatch.md#gamelift-metrics-fleet). If your game server process fails to initialize, verify that the process is retrieving the right server parameter values for the compute it's running on.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

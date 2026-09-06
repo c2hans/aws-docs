@@ -190,7 +190,3 @@ In this step, you view the resolved values and results of the variable check rul
 
 1. View the variable information on the **Timeline** tab.
 ![The history page showing the Timeline tab with variables succeeded](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/varcheck-tut-history.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

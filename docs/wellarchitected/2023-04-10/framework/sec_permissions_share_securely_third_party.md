@@ -98,7 +98,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 + [ Well-Architected Lab - Lambda cross account IAM role assumption (Level 300) ](https://www.wellarchitectedlabs.com/security/300_labs/300_lambda_cross_account_iam_role_assumption/)
 + [ Configure cross-account access to Amazon DynamoDB ](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/configure-cross-account-access-to-amazon-dynamodb.html)
 + [AWS STS Network Query Tool ](https://github.com/aws-samples/aws-sts-network-query-tool)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -44,7 +44,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 <a name="sec-sel"></a>
 
  Follow the guidance of “*what gets measured, gets done*”. Implement metrics for each part of your security organization and review regularly to verify you have the right level of organization buy-in and attention. Measure the performance of your security operations along with the threats themselves. Include metrics around your security operations paired with metrics around security campaigns, findings, and tools. For example, mean time to identify (MTTI) root cause and mean time to respond (MTTR) provide insights into your security incident response effectiveness. Drive operational insights and reviews to continually improve your threat modeling, threat detection, incident management, and response and remediation capabilities.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

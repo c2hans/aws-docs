@@ -118,7 +118,3 @@ The following table details the scope of support for each add-on type:
  `*`: Validation for community add-ons only includes Kubernetes version compatibility. For example, if you install a community add-on on a cluster, AWS checks if it is compatible with the Kubernetes version of your cluster.
 
  AWS Marketplace add-ons can download additional software dependencies from external sources outside of AWS. These external dependencies are not scanned or validated by AWS. Consider your security requirements when deploying AWS Marketplace add-ons that fetch external dependencies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

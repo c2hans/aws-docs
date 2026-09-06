@@ -21,7 +21,3 @@ The SharePoint (Online) connector has the following known limitations:
 + To use **Identity Crawler** with SharePoint (Online) to crawl nested groups, you have to enable both Local and AD Group Crawling.
 + Query responses based on AD Group ACLs are not supported for SharePoint (Online). You need to add users and groups directly to your document permissions list.
 +  Microsoft requires granting the "Sites.FullControl.All" permission to the application in order to ingest the source ACLs from SharePoint
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

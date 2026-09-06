@@ -64,7 +64,3 @@ The domain name used to create the User Principal Name (UPN) for user authentica
 With the LDAP integration for Amazon EMR, you can further integrate with Apache Ranger. When you pull .your LDAP users into Ranger, you can then associate those users with an Apache Ranger policy server to integrate with Amazon EMR and other applications. To do this, define the `RangerConfiguration` field within `AuthorizationConfiguration` in the security configuration that you use with your LDAP cluster. For more information on how to set up the security configuration, see [Create the EMR security configuration](emr-ranger-security-config.md).
 
 When you use LDAP with Amazon EMR, you don't need to provide a `KerberosConfiguration` with the Amazon EMR integration for Apache Ranger.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -76,7 +76,3 @@ When the telemetry is flowing and ingested into an observability platform, creat
 <a name="validation"></a>
 
 Throughout your software development lifecycle (SDLC), validate that dashboards provide the expected behaviors and updates during system tests. Implement [chaos engineering](https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/) and validate the steps that are documented in playbooks and runbooks, to make sure that they are accurate and serve their purpose. You should also validate alert ownership and escalation paths.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

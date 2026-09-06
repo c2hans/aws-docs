@@ -41,7 +41,3 @@ If you have not done so already, prepare a detailed dataset of the websites that
 1. **Implement version control** – Use a version control system, such as Git, to track changes to the table over time. Back up the dataset regularly.
 
 1. **Maintain the table** – Set up a schedule, such as quarterly, for updating the table. Standardize and implement a process for adding new companies or removing those you no longer need. When possible, automate discovery of subdomains.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ Use the list of recommended best practices in this topic when you are using and 
 + Make sure that all countries referenced in external transfers or used for outbound dialing are added to the service quota for your account/instance.
 + Make sure that all numbers referenced in external transfers are in E.164 format. Drop the national trunk prefix that you use when calling locally. This prefix would be the leading 0 for most of Europe, 1 for the US. The prefix is replaced by the country code. For example, the UK mobile number **07911 123456** in E.164 format is **\+44 7911 123456 (tel:\+447911123456)**.
 + Make sure that there are no infinite loops in the flow logic. Also make sure that for each call, the flow connects the caller to an agent, bot, or transferred externally for further assistance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

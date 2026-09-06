@@ -55,7 +55,3 @@ The cost for **Scenario 2** is based on the following assumptions:
 The default values provided in Cost Optimizer for Amazon WorkSpaces for each of the WorkSpaces bundle type should be considered a guidance value only. Review Amazon WorkSpaces pricing for the AWS Region where you deployed the solution to determine the value for your location. Pricing differences between AWS Regions can mean a different billing break-even point between AutoStop and AlwaysOn instances.
 
 Prices are subject to change. For full details, see the pricing webpage for each AWS service you will be using in this solution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cost Optimizer for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

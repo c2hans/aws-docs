@@ -20,7 +20,3 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 + [Networking Account \| Disassociate TGW Attachment](management-managed-networking-account-disassociate-tgw-attachment.md)
 + [Networking Account \| Enable TGW Propagation](management-managed-networking-account-enable-tgw-propagation.md)
 + [Networking Account \| Remove TGW Static Route](management-managed-networking-account-remove-tgw-static-route.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

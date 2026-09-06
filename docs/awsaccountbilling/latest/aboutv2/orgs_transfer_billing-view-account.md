@@ -64,7 +64,3 @@ For both Invoices and Payments, you don’t need to enable the Billing View mode
 1. Select the desired ‘Billing Transfer view’ reflecting the costs of the bill source accounts. You can choose between ‘My view’ and the ‘Showback/Chargeback view’
 
 1. To configure resources (for example, Cost Explorer Saved Reports, Cost and Usage Reports, Budgets) you need to select the specific billing view in scope for the resource you want to create. For more information, see [What is AWS Billing and Cost Management?](billing-what-is.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ Each deployment requires its own set of four stacks (AccountPool, IDC, Data, Com
 The namespace must be 3–8 alphanumeric characters (for example, `myisb`, `team2`, `prodisb`).
 
 When running multiple deployments in the same Organization, keep in mind that all instances share the same underlying AWS Organizations API quotas, IAM Identity Center instance, and service quotas in the management and Hub accounts. High-volume operations in one deployment (such as bulk account moves or large-scale lease approvals) can consume shared API capacity that affects the other deployments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

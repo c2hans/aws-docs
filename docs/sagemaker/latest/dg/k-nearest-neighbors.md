@@ -65,7 +65,3 @@ Use a Jupyter notebook instance to run the example in SageMaker AI. To learn how
 We recommend training on a CPU instance (such as ml.m5.2xlarge) or on a GPU instance. The k-NN algorithm supports P2, P3, G4dn, and G5 GPU instance families for training and inference.
 
 Inference requests from CPUs generally have a lower average latency than requests from GPUs because there is a tax on CPU-to-GPU communication when you use GPU hardware. However, GPUs generally have higher throughput for larger batches.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

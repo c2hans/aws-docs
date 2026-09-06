@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 | --- | --- | --- | --- |
 | hive-site | hive.ignore.failure.partition.dir.not.found | false | Ignores failure if the table partition exists but the actual object storage path does not exist. |
 | hive-site | hive.tez.union.flatten.subdirectories | false | When writing data into a table and UNION ALL is the last step of the query, Hive on Tez creates a subdirectory for each branch of the UNION ALL. When this property is enabled, the subdirectories are removed, and the files are renamed and moved to the parent directory. Note that this has no effect when hive.blobstore.use.output-committer is enabled. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

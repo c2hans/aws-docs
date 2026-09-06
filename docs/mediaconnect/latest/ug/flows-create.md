@@ -16,7 +16,3 @@ The method that you use to create a flow is dependent on the type of flow that y
 
 **Note**
 If you want to create a transport stream flow that uses redundant sources for failover, create the flow with one of the sources. After the flow is created, [add the other source](source-adding.md). Because MediaConnect treats both sources as the primary source, it doesn't matter which one you specify when you first create the flow. If your flow uses an entitled source, you can't add a second source. For redundancy with CDI workflows, create two separate flows.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

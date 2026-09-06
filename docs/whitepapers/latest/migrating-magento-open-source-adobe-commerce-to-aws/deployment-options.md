@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-ope
 |  Self-managed  |  AWS Quick Start for Magento  |  Deploys Magento open-source reference architecture per AWS best practices in minutes. Highly configurable. Customer responsible for server and Magento maintenance.  |
 |  Managed hosting  |  AWS Consulting partners  |  Easy deployments, including Magento open-source or Adobe Commerce on cloud infrastructure self-service store front customizations. Partner responsible for infrastructure and Magento maintenance. Best for organizations with less evolved IT departments or lacking skills/people to build/customize Magento deployments  |
 |  Managed hosting  |  Magento Commerce Cloud by Adobe  |  Most popular, highly scalable hosting option with Magento Commerce application and infrastructure managed by Adobe and store front customizations managed by merchant.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

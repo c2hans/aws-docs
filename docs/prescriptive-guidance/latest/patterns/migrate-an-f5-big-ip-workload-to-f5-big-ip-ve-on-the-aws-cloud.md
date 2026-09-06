@@ -169,7 +169,3 @@ During the migration, you might also use the following, depending on your requir
 + [F5 BIG-IP Image Generator Tool](https://clouddocs.f5.com/cloud/public/v1/ve-image-gen_index.html)
 + [Updating an F5 BIG-IP VE virtual machine](https://techdocs.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/bigip-ve-setup-vmware-esxi-11-5-0/3.html)
 + [Overview of the UCS archive "platform-migrate" option](https://support.f5.com/csp/article/K82540512)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

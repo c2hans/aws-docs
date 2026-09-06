@@ -12,7 +12,3 @@ The [AWS Management Console](https://console.aws.amazon.com/) is designed to wor
 To access the AWS Management Console on a mobile device, you must use the AWS Console Mobile Application. This app is available for Android and iOS. The Console Mobile Application provides mobile-relevant tasks that are a good companion to the full web experience. For example, you can easily view and manage your existing Amazon EC2 instances and Amazon CloudWatch alarms from your phone. For more information, see [What is the AWS Console Mobile Application?](https://docs.aws.amazon.com/consolemobileapp/latest/userguide/what-is-consolemobileapp.html) in the *AWS Console Mobile Application User Guide*.
 
  You can download the Console Mobile Application from [Amazon Appstore](http://www.amazon.com/AWS-Mobile-LLC-Console/dp/B00ATSN730), [Google Play](https://play.google.com/store/apps/details?id=com.amazon.aws.console.mobile), and the [iOS App Store](https://itunes.apple.com/us/app/aws-console/id580990573?mt=8).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Management Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

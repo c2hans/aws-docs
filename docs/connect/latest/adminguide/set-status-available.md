@@ -10,7 +10,3 @@ As a call center agent, set an **Available** status when you're ready to handle 
 Connect Customer uses information in the agent's [routing profile](routing-profiles.md) to determine which contacts to route to them.
 
 For more information about agent statuses, see [Agent status in the Contact Control Panel (CCP)](metrics-agent-status.md). For information about how Connect Customer counts the Available status in the real-time metrics report, see [Available](metrics-definitions.md#available-real-time).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

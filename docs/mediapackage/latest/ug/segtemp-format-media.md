@@ -40,7 +40,3 @@ The value that replaces the variable must be an exact `t` value of a segment. If
    The request URL for the first segment is **155\_video\_1\_2\_{{255197799}}.mp4**. With a 360360 duration, the next segment request is **155\_video\_1\_2\_{{255558159}}.mp4**, and so on through the ninth segment.
 
    The final segment request is **155\_video\_1\_2\_{{258441039}}.mp4**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

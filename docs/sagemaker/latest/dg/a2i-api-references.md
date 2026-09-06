@@ -35,7 +35,3 @@ The following tutorials provide example code and step-by-step instructions for c
 + [Create and Start a Human Loop](a2i-start-human-loop.md)
 + [Using Amazon Augmented AI with Amazon Rekognition](https://docs.aws.amazon.com/rekognition/latest/dg/a2i-rekognition.html) in the *Amazon Rekognition Developer Guide*
 + [Using Amazon Augmented AI with Amazon Textract AnalyzeDocument](https://docs.aws.amazon.com/textract/latest/dg/a2i-textract.html) in the *Amazon Textract Developer Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

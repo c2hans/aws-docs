@@ -200,7 +200,3 @@ The following new features are available with the general availability of AWS Gl
 + With AWS Glue Data Quality, you can now use the `Distribution` Analyzer to compute frequency distributions for your data columns. For numeric columns, it generates binned histograms. For categorical columns, it generates value distributions sorted by frequency. For more information, see [Distribution Analyzer](dqdl.md#dqdl-analyzers-distribution).
 + You can now write data quality results to Apache Iceberg tables in the AWS Glue Data Catalog for querying with . This includes rule results, profiling results, distribution results, row-level results, and observation results. For more information, see [Writing data quality results to Data Catalog tables](data-quality-results-catalog-tables.md).
 + You can now use anomaly detection with the AWS Glue Data Catalog. To enable anomaly detection for cataloged tables, run evaluation runs with `ObservationScope` set to `ALL`. For more information, see [Anomaly detection in AWS Glue Data Quality](data-quality-anomaly-detection.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

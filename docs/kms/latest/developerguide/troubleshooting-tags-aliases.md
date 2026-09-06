@@ -147,7 +147,3 @@ $ aws kms list-aliases --query 'Aliases[?starts_with(AliasName, `alias/ProjectAl
 The remedy for this change isn't simple. You can update the alias again to associate it with the original KMS key. However, before you act, you need to consider the effect of that change on the currently associated KMS key. If principals used the latter KMS key in cryptographic operations, they might need continued access to it. In this case, you might want to update the policy to ensure that principals have permission to use both of the KMS keys.
 
 You can prevent an error like this one: Before updating an alias, search policies to detect access that depends on the alias. Then get KMS keys in all Regions that are associated with the alias. Give alias management permissions only to principals who need it and [limit their alias-management permissions](alias-access.md#alias-access-limiting) to aliases they need to manage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

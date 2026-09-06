@@ -74,7 +74,3 @@ You can use [`SlurmQueues`](Scheduling-v3.md#Scheduling-v3-SlurmQueues) / [`Comp
 To check a compute node's actual available memory, run the `/opt/slurm/sbin/slurmd -C` command on the node. This command returns the hardware configuration of the node, including the [`RealMemory`](https://slurm.schedmd.com/slurm.conf.html#OPT_RealMemory) value. For more information, see [`slurmd -C`](https://slurm.schedmd.com/slurmd.html#OPT_-C).
 
 Make sure that the compute node's operating system processes have sufficient memory. To do this, limit the memory available to jobs by setting the `SchedulableMemory` value to lower than the `RealMemory` value that the `slurmd -C` command returned.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

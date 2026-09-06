@@ -606,7 +606,3 @@ The following table describes the changes in each version of the component.
 | 2.1.0 |  **New features**<br />   Adds the `brokerUri` parameter, which enables you to use a non-default MQTT broker port.     |
 | 2.0.1 | This version includes bug fixes and improvements. |
 | 2.0.0 | Initial version. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

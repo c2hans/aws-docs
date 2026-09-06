@@ -33,7 +33,3 @@ There are no restrictions for the use of AWS Audit Manager in your AMS account. 
 1. **(Optional)** There is an additional prerequisite if you want to enable Organizations as part of your multi-account landing zone in Audit Manager and you want a delegated administrator account: In the description field for RFC (Management \| AWS service \| Compatible Service\| Add), mention that you want to use the delegated administrator account as part of Audit Manager Setup and provide the below details:
    + KMS CMK ARN (used to set up Audit Manager, initially)
    + Delegated administrator account ID for Audit Manager to use as part of this multi-account landing zone (can be a MALZ application account)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

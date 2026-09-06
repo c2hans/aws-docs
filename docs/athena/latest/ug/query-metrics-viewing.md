@@ -120,7 +120,3 @@ These metrics for Athena have the following dimensions.
 | QueryState | The query state.<br />Valid statistics: SUCCEEDED, FAILED, or CANCELED. |
 | QueryType | The query type.<br />Valid statistics: `DDL`, `DML`, or `UTILITY`. The type of query statement that was run. `DDL` indicates DDL (Data Definition Language) query statements. `DML` indicates DML (Data Manipulation Language) query statements, such as `CREATE TABLE AS SELECT`. `UTILITY` indicates query statements other than DDL and DML, such as `SHOW CREATE TABLE`, or `DESCRIBE TABLE`. |
 | WorkGroup | The name of the workgroup. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/moodys-integratio
 # Moodys GenAI Ready Data integration
 <a name="moodys-integration"></a>
 
-With the Moodys GenAI Ready Data action connector, you can access credit ratings, financial research, and risk analytics data directly in Amazon Quick through natural language.
+With the Moodys GenAI Ready Data connector, you can access credit ratings, financial research, and risk analytics data directly in Amazon Quick through natural language.
 
 Amazon Quick supports two authentication methods for Moodys GenAI Ready Data. Choose the method that best fits your organization's security requirements.
 + **Default OAuth app** – Uses an AWS-managed OAuth application. No additional credentials are needed. Users authenticate directly with their Moody's account.
@@ -95,7 +95,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 <a name="moodys-troubleshooting-auth"></a>
 + **Sign-in fails (Default OAuth app or Custom OAuth app)** – Verify that your Moody's account is active and that you can sign in to the Moody's portal directly. For Custom OAuth app, confirm that the redirect URI in your Moody's OAuth app matches the Amazon Quick callback URL.
 + **Invalid client credentials (Custom OAuth app)** – Verify that the Client ID and Client secret match the values in your Moody's OAuth app.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

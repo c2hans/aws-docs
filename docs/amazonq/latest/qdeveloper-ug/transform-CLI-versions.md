@@ -23,7 +23,3 @@ Review the following information for details about current and past releases of 
 |  [0.3.0](https://desktop-release.codewhisperer.us-east-1.amazonaws.com/amzn_qct_cli/amzn_qct_cli-0.3.0.zip)  | February 12, 2025 | Includes support for converting embedded SQL in Java applications. |
 |  [0.2.0](https://desktop-release.codewhisperer.us-east-1.amazonaws.com/amzn_qct_cli/amzn_qct_cli-0.2.0.zip)  | February 3, 2025 | Includes support for receiving upgraded Java code in multiple commits. |
 | [0.1.0](https://desktop-release.codewhisperer.us-east-1.amazonaws.com/amzn_qct_cli/amzn_qct_cli-0.1.0.zip) | November 27, 2024 | Initial release. Includes support for upgrading Java code versions from the command line. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

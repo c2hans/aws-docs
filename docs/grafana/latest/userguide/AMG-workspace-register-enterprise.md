@@ -32,7 +32,3 @@ If you have previously registered your Grafana Labs account and are prompted for
 + You can get the token by looking it up in your Grafana Labs account by going to [https://grafana.com/partners/amg/support](https://grafana.com/partners/amg/support), and choosing **My Account**.
 + You can get the token from an existing, already linked workspace, by using the [DescribeWorkspace](https://docs.aws.amazon.com/grafana/latest/APIReference/API_DescribeWorkspace.html) API to retrieve the token.
 + If the token is no longer available to you via either of those methods, you must [contact Grafana Labs support](https://grafana.com/contact).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

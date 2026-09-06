@@ -24,7 +24,3 @@ The following topics provide more information about quorum authentication in AWS
 + [Supported AWS CloudHSM service names and types for quorum authentication with CloudHSM CLI](key-quorum-auth-chsm-cli-service-names.md)
 + [Set up quorum authentication for AWS CloudHSM crypto-users using CloudHSM CLI](key-quorum-auth-chsm-cli-first-time.md)
 + [Key management and usage with quorum authentication enabled for AWS CloudHSM using CloudHSM CLI](key-quorum-auth-chsm-cli-crypto-user.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

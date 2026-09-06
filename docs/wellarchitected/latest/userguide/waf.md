@@ -12,7 +12,3 @@ By using the framework, you learn architectural best practices for designing and
 When designing a workload, you make trade-offs between these pillars based on your business needs. These business decisions help drive your engineering priorities. In development environments, you might optimize to reduce cost at the expense of reliability. In mission-critical solutions, you might optimize reliability and be willing to accept increased costs. In ecommerce solutions, you might prioritize performance, since customer satisfaction can drive increased revenue. Security and operational excellence are generally not traded off against the other pillars.
 
 For much more information on the framework, visit the [AWS Well-Architected website](https://aws.amazon.com/architecture/well-architected/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ Actions represent what the testing framework should do in response to an event, 
 <a name="testing-language-concepts-actors"></a>
 
 Actors represent roles to be played in the testing framework. When observing events, actors can be the system or agent, such as a play prompt coming from the system or an agent accepting the call. When simulating actions, actors can be the customer, system, or agent, such as simulating a customer input DTMF or utterance, or simulating a system response from a Lambda function.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

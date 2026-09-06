@@ -23,7 +23,3 @@ To create a pipeline model that can be deployed to an endpoint or used for a bat
 
    The **MyInferencePipelineModel** page summarizes the settings for the containers that provide input for the model. If you provided the environment variables in a corresponding container definition, SageMaker AI shows them in the **Environment variables** field.
 ![The summary of container settings for the pipeline model.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/pipeline-MyInferencePipelinesModel-recap.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

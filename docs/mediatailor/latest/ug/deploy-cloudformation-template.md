@@ -35,7 +35,3 @@ To deploy the CloudFormation template and set up your automated ad insertion wor
 
 **Note**
 If you're using AWS Elemental MediaPackage as your content origin, make sure your MediaPackage endpoints are properly configured and accessible. For more information, see [MediaPackage CDN integration](mediapackage-integration.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

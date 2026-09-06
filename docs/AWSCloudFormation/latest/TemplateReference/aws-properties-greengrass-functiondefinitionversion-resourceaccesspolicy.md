@@ -56,7 +56,3 @@ The ID of the resource. This ID is assigned to the resource when you create the 
 <a name="aws-properties-greengrass-functiondefinitionversion-resourceaccesspolicy--seealso"></a>
 + [ResourceAccessPolicy](https://docs.aws.amazon.com/greengrass/v1/apireference/definitions-resourceaccesspolicy.html) in the * AWS IoT Greengrass Version 1 API Reference *
 +  [AWS IoT Greengrass Version 1 Developer Guide](https://docs.aws.amazon.com/greengrass/v1/developerguide/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

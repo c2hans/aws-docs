@@ -64,7 +64,3 @@ Secrets Manager never removes labeled versions, but unlabeled versions are consi
 The following figure shows a secret that has AWS labeled versions and customer labeled versions. The versions without labels are considered deprecated and will be removed by Secrets Manager at some point in the future.
 
  ![A secret that contains multiple secret versions, some with labels such as AWSCURRENT or MyLabelA, and some without labels.](http://docs.aws.amazon.com/secretsmanager/latest/userguide/images/SecretVersions.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

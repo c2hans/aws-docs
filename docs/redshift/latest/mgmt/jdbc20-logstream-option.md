@@ -16,7 +16,3 @@ Set the LogLevel key in your connection URL to turn on logging and specify the a
 1. To configure the driver to log general information that describes the progress of the driver, set the LogLevel property to 1 or INFO.
 
 1. To make sure that the new settings take effect, restart your JDBC application and reconnect to the server.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

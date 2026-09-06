@@ -23,7 +23,3 @@ This workaround is not officially supported, and may run into instability. This 
 1. Deploy the stack.
 
 1. Upon completion of the deployment, follow the instructions in [Attaching an Existing CloudFront distribution](attaching-existing-distribution.md) to attach the CloudFront distribution referenced to the newly deployed resources. This will require that you overwrite the existing values on the distribution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -521,7 +521,3 @@ You can further restrict outbound access in the CIDR of your Amazon MWAA securit
 <a name="create-vpc-next-up"></a>
 + Learn how to create an Amazon MWAA environment in [Create an Amazon MWAA environment](create-environment.md).
 + Learn how to create a VPN tunnel from your computer to your Amazon VPC with private routing in [Tutorial: Configuring private network access using an AWS Client VPN](tutorials-private-network-vpn-client.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

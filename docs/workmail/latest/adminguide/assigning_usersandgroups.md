@@ -46,7 +46,3 @@ Users and groups synced with your IAM Identity Center directory are available to
 
 **Note**
 All new IAM Identity Center users are enabled by default in IAM Identity Center. To grant access to Amazon WorkMail, you must set their password in IAM Identity Center and assign them to Amazon WorkMail. For more information, see [Add users to your Identity Center directory ](https://docs.aws.amazon.com/singlesignon/latest/userguide/addusers.html?icmpid=docs_sso_console).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

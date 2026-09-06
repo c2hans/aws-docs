@@ -27,7 +27,3 @@ Chat messages are also permanently deleted from Amazon Chime when you or an acco
 + End an Amazon Chime meeting in which chat messages are present.
 **Note**
 As needed, you can manually copy and save chat messages from a meeting, but you must do so before the meeting ends. For more information, see [Using in-meeting chat](https://docs.aws.amazon.com/chime/latest/ug/meeting-chat.html), in the *Amazon Chime User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

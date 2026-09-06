@@ -294,7 +294,3 @@ Alternatively, you can use an interceptor Lambda function for inbound authentica
 +  **Inbound authorization required** : Gateway targets configured with a `privateEndpoint` cannot use `NO_AUTH` as the inbound authorizer type unless an interceptor Lambda is configured on the gateway.
 
 For additional limitations related to cross-account connectivity and DNS TTL configuration, see [Limitations and considerations](vpc-egress-private-endpoints.md#lattice-vpc-egress-limitations) in [Connect to private resources in your VPC using VPC Lattice](vpc-egress-private-endpoints.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

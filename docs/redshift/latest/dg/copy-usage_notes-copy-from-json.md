@@ -176,7 +176,3 @@ You might lose precision when loading numbers from data files in JSON format to 
 + Represent the number as a string by enclosing the value in double quotation characters.
 + Use [ROUNDEC](copy-parameters-data-conversion.md#copy-roundec) to round the number instead of truncating.
 + Instead of using JSON or Avro files, use CSV, character-delimited, or fixed-width text files.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

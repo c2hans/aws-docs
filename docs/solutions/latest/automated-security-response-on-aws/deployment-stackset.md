@@ -253,7 +253,3 @@ Because the [member stack](https://solutions-reference.s3.amazonaws.com/automate
  **Specify regions**: Select all of the Regions where you want to remediate findings. You can adjust Deployment options as appropriate for the number of accounts and Regions. Region Concurrency can be parallel.
 
 You can view the status of the StackSet operation in the AWS CloudFormation console on the StackSet details page. You should receive a **SUCCEEDED** operation status for each account and Region combination. Deployment time varies based on the number of accounts and Regions selected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

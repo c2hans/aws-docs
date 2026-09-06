@@ -28,7 +28,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-db2-
 + [LOAD FROM CURSOR](https://www.ibm.com/docs/en/db2/11.5?topic=data-moving-using-cursor-file-type)
 + [db2move utility](https://www.ibm.com/docs/en/db2/11.5?topic=commands-db2move-database-movement-tool)
 + [db2look utility](https://www.ibm.com/docs/en/db2/11.5?topic=commands-db2look-db2-statistics-ddl-extraction-tool)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

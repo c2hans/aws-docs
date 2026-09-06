@@ -91,7 +91,7 @@ To place players into game sessions, game clients and backend services need perm
 ## Allow access to one Amazon GameLift Servers queue
 <a name="security_iam_id-based-policy-examples-access-one-bucket"></a>
 
-The following example provides a user with access to a specific Amazon GameLift Servers queues.
+The following example provides a user with access to a specific Amazon GameLift Servers queue.
 
 This policy grants the user permissions to add, update, and delete queue destinations with the following actions: `gamelift:UpdateGameSessionQueue`, `gamelift:DeleteGameSessionQueue`, and `gamelift:DescribeGameSessionQueues`. As shown, this policy uses the `Resource` element to limit access to a single queue: `gamesessionqueue/examplequeue123`.
 
@@ -191,7 +191,3 @@ After you integrate your game server with Amazon GameLift Servers, upload the bu
 ------
 
 For more information about uploading Amazon GameLift Servers game files, see [Create a game server build for Amazon GameLift Servers](gamelift-build-cli-uploading.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

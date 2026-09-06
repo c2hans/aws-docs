@@ -94,7 +94,3 @@ As well as conforming to basic JSON syntax, your template must conform to the sc
    After the resource is created, it's added to the list under the resource type heading.
 
 1. If your file contains errors, a message displays to explain that the resource couldn't be created or updated. Open the **Event Log** to identify the template elements that you need to fix.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

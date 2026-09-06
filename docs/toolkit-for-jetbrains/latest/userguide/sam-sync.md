@@ -94,7 +94,3 @@ For information about AWS Lambda package types, see the [Lambda deployment packa
 **Optional, Docker required:** Selecting this options builds your serverless-application functions inside of a local Docker container, prior to deployment. This option is useful if a function depends on packages with natively compiled dependencies or programs.
 
 For more information, see the [Building applications](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-build.html) topic in the *AWS Serverless Application Model Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

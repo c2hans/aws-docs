@@ -40,7 +40,3 @@ The following resources provide additional information about using Amazon SageMa
 + For a tutorial that walks you through processing and transforming a sample dataset, see [Demo: Data Wrangler Titanic Dataset Walkthrough](https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler-getting-started.html#data-wrangler-getting-started-demo) in the *Amazon SageMaker AI Developer Guide*. This tutorial introduces the fields and functions of Data Wrangler.
 + For information on onboarding to Amazon SageMaker AI domains, see [Quick onboard to Amazon SageMaker AI Domain](https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-quick-start.html) in the *Amazon SageMaker AI Developer Guide*.
 + For information on Amazon Personalize data requirements, see [Preparing training data for Amazon Personalize](preparing-training-data.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

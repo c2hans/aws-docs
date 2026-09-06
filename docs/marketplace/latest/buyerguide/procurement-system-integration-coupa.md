@@ -33,7 +33,7 @@ You might want your invoices in the AWS Billing console to reference the commerc
 
 After you have completed the integration in AWS Marketplace, you must go on to set up the integration in Coupa. You use the information generated on this page to configure the punchout in your Coupa system.
 
-The AWS Marketplace configuration defaults to test mode being enabled. In test mode, subscription requests go to the Coupa backend so you can see the full flow, but a final invoice is not created. This helps you complete the configuration and enable the punchout in a planned manner.
+The AWS Marketplace configuration defaults to test mode being enabled. In test mode, subscription requests are transmitted to the Coupa backend, but transmitted purchase orders will not result in a subscription and will not generate an invoice. This helps you complete the configuration and enable the punchout in a planned manner.
 
 **Note**
 You can toggle testing mode on or off, as needed.
@@ -42,7 +42,7 @@ Don't forget to turn off testing mode when you're finished with your integration
 ## Step 3. Configure Coupa
 <a name="procurement-system-coupa-step3"></a>
 
- To configure the integration with AWS Marketplace in your Coupa system, copy the information from the **Purchase information** pane of the **Manage Coupa integration** page in AWS Marketplace. Use this information to complete the steps in the following links that guide you through configuring your Coupa procurement system:
+ To configure the integration with AWS Marketplace in your Coupa system, your Coupa administrator will copy the information from the **Purchase information** pane of the **Manage Coupa integration** page in AWS Marketplace. To send purchase orders to AWS Marketplace, your Coupa administrator must turn on **Enable Mutual TLS for PO cXML** under the **PO Transmission** setup section of your Coupa Supplier Portal. Use this information to complete the steps in the following links that guide you through configuring your Coupa procurement system:
 +  [Coupa Punchout Setup](https://success.coupa.com/Suppliers/For_Customers/Toolkit/Manage_Catalogs/Punchout_Catalogs/Punchout_Setup)
 +  [Configuring a Supplier for cXML Purchase Orders](https://success.coupa.com/Suppliers/For_Customers/Toolkit/Document_Exchange/cXML/Configuring_a_Supplier_for_cXML_Purchase_Orders)
 
@@ -51,7 +51,3 @@ For information about UNSPSC codes used by AWS Marketplace, see [UNSPSC codes us
 
 **Note**
 For information about CloudTrail events for invoicing actions used with procurement system integrations, see [Logging procurement system API calls with AWS CloudTrail](buyer-cloudtrail-logging.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

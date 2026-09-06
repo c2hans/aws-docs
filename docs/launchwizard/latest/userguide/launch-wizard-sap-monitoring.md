@@ -102,7 +102,3 @@ You can use the `DescribeLogStreams` operation to find the available log streams
 1. Repeat these steps as necessary to review all of the relevant log streams.
 
 If you find that your deployment has experienced issues, or you want to know more about other logs generated during an SAP deployment, see [Troubleshoot AWS Launch Wizard for SAP](launch-wizard-sap-troubleshooting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

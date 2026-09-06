@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_json_serialization_
 <a name="description"></a>
 
 A session configuration that modifies the JSON serialization behavior of ORC, JSON, Ion, and Parquet formatted data. If `json_serialization_enable` is `true`, all top-level collections are automatically serialized to JSON and returned as VARCHAR(65535). Noncomplex columns are not affected or serialized. Because collection columns are serialized as VARCHAR(65535), their nested subfields can no longer be accessed directly as part of the query syntax (that is, in the filter clause). If `json_serialization_enable` is `false`, top-level collections are not serialized to JSON. For more information about nested JSON serialization, see [Serializing complex nested JSON](serializing-complex-JSON.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

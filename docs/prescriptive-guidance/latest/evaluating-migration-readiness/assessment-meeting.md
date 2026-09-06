@@ -49,7 +49,3 @@ The following table shows an example agenda.
 
 **Note**
 AWS uses a list of around 70 questions that align to the AWS CAF and engage participants through the various areas under evaluation. These questions cover around 24 areas of readiness, and each area is assessed with 2-3 questions. You can request an MRA facilitation or the list of questions from your AWS Account Manager. To see the questions or to do a self-assessment with a smaller subset of questions, see the [AWS Cloud Adoption Readiness Tool (CART)](https://cloudreadiness.amazonaws.com/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

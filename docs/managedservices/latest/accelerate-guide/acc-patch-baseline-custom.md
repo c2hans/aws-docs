@@ -12,7 +12,3 @@ For more information, see the following resources:
 +  [ Creating a custom patch baseline (Windows)](https://docs.aws.amazon.com/systems-manager/latest/userguide/create-baseline-console-windows.html)
 +  [ Creating a custom patch baseline (Linux)](https://docs.aws.amazon.com/systems-manager/latest/userguide/create-baseline-console-linux.html)
 +  [ Updating or deleting a custom patch baseline (console)](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-baseline-update-or-delete.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

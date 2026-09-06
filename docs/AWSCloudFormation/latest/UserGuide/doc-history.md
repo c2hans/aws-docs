@@ -299,7 +299,3 @@ The following table describes important changes in each release of the AWS Cloud
 | New features | May 26, 2011 | The `describe-stack-resources` and `get-template` commands now enable you to get information from stacks that have been deleted for 90 days after they have been deleted. For more information, see [Listing Resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/service_code_examples.html) and [Retrieving a Template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/service_code_examples.html). | 2010-05-15 |
 | New link | March 1, 2011 | CloudFormation endpoint information is now located in the AWS General Reference. For more information, go to Regions and Endpoints in [AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/Welcome.html). | 2010-05-15 |
 | Initial release | February 25, 2011 | The initial public release of CloudFormation. | 2010-05-15 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

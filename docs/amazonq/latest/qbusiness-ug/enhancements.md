@@ -32,7 +32,3 @@ You can choose from the following available enhancements:
 + [Tuning the query results based on document attribute relevancy](relevancy-tuning.md)
 + [Boosting chat responses using metadata boosting](metadata-boosting.md)
 + [Configuring metadata controls in Amazon Q Business](mapping-doc-attributes.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 + [Common issues to watch for](#common-issues-to-watch-for-6)
 + [AGENTPERF07-BP01 Design efficient multitenant agent deployment models](agentperf07-bp01.md)
 + [AGENTPERF07-BP02 Implement tenant-aware performance isolation and throttling](agentperf07-bp02.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

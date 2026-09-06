@@ -224,7 +224,3 @@ In the `AWS::Lambda::Function` resource, set the following properties to create 
   + Runtime – Set the runtime value.
   + Architecture – Set the architecture value to `arm64` to use the AWS Graviton2 processor. By default, the architecture value is `x86_64`.
   + S3ObjectStorageMode – (Optional) Set to `REFERENCE` to use [self-managed S3 code storage](configuration-self-managed-storage.md). Set to `COPY` (default) to use Lambda-managed storage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

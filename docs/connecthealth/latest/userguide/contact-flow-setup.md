@@ -82,7 +82,3 @@ Customization typically includes the following tasks:
 +  **Localization** — Replace default audio with organization-approved recordings or text-to-speech content that reflects your communication standards.
 
 For guidance on building and modifying contact flows, see [Use the flow designer in Amazon Connect to create flows](https://docs.aws.amazon.com/connect/latest/adminguide/create-contact-flow.html) in the *Amazon Connect Administrator Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connecthealth` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -95,7 +95,7 @@ The following procedure uses the `createSnapshot` event to automatically copy a 
    };
    ```
 
-   To ensure that your Lambda function is available from the EventBridge console, create it in the Region where the EventBridge event will occur. For more information, see the [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/).
+   To make sure that your Lambda function is available from the EventBridge console, create it in the Region where the EventBridge event will occur. For more information, see the [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/).
 
 1. Open the Amazon EventBridge console at [https://console.aws.amazon.com/events/](https://console.aws.amazon.com/events/).
 
@@ -107,7 +107,7 @@ The following procedure uses the `createSnapshot` event to automatically copy a 
 
    1. For **Event bus**, keep **default**.
 
-   1. Ensure that **Enable the rule on the selected event bus** is toggled on.
+   1. Make sure that **Enable the rule on the selected event bus** is toggled on.
 
    1. For **Event type**, select **Rule with an event pattern**.
 
@@ -117,7 +117,7 @@ The following procedure uses the `createSnapshot` event to automatically copy a 
 
    1. For **Event source**, select **AWS events or EventBridge partner events**.
 
-   1. In the **Event pattern** section, for **Event source**, ensure that **AWS service** is selected, and for **AWS service**, select **EC2**.
+   1. In the **Event pattern** section, for **Event source**, make sure that **AWS service** is selected, and for **AWS service**, select **EC2**.
 
    1. For **Event type**, select **EBS Snapshot Notification**, select **Specific event(s)**, and then choose **createSnapshot**.
 
@@ -138,7 +138,3 @@ The following procedure uses the `createSnapshot` event to automatically copy a 
 1. For **Step 5: Review and create**, review the rule and then choose **Create rule**.
 
 Your rule should now appear on the **Rules** tab. In the example shown, the event that you configured should be emitted by EBS the next time you copy a snapshot.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

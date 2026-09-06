@@ -54,7 +54,3 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/faq-gosdk.
  The signature algorithm for AWS services (generally sigv4) is tied to the serialized request's headers, more specifically most headers prefixed with `X-`. Proxies are prone to modifying the outgoing request by adding additional forwarding information (often via an `X-Forwarded-For` header) which effectively breaks the signature that the SDK calculated.
 
  If you're using an HTTP proxy and experiencing signature errors, you should work to capture the request **as it appears outgoing from the proxy** and determine whether it is different.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Go v2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-go` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

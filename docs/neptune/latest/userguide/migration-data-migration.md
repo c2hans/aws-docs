@@ -161,7 +161,3 @@ You can import data into Neptune either by using the [Neptune bulk loader](bulk-
 The Neptune bulk loader is the preferred approach to importing large amounts of data because it provides optimized import performance if you follow [best practices](bulk-load-optimize.md). The bulk loader supports [two different CSV formats](bulk-load-tutorial-format.md), to which data exported from Neo4j can be converted using the the open-source utilities mentioned above in the [Exporting data](#migration-data-exporting) section.
 
 You can also use openCypher to import data with custom logic for parsing, transforming, and importing. You can submit the openCypher queries either through the [HTTPS endpoint](access-graph-opencypher-queries.md) (which is recommended) or by using the [bolt driver](access-graph-opencypher-bolt.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

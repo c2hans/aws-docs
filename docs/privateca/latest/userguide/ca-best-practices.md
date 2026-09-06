@@ -90,7 +90,3 @@ AWS Private CA recommends using the Amazon S3 Block Public Access (BPA) feature 
 <a name="kubernetes"></a>
 
 When using AWS Private CA to provision Amazon EKS with X.509 certificates, follow the recommendations for securing multi-tenant environments in the [Amazon EKS Best Practices Guides](https://aws.github.io/aws-eks-best-practices/security/docs/multitenancy/#kubernetes-as-a-service). For general information about integrating AWS Private CA with Kubernetes, see [Secure Kubernetes with AWS Private Certificate Authority](PcaKubernetes.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

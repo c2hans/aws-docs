@@ -23,7 +23,3 @@ lo_session->set_product_id( 'INVOICE_ANALYZER' ).
 The product ID must only contain letters, numbers, and underscores with no spaces or special characters. You can match it to the product's technical name or any other identifier. If you develop multiple products or add-ons, the product ID must be unique for each product. For example, the product IDs for Invoice Analyzer, Tax Calculator, and Pricing Engine products can be `INVOICE_ANALYZER`, `TAX_CALCULATOR`, and `PRICING_ENGINE`.
 
 Adding a product ID to the session enhances the telemetry that is sent to AWS with each service call. The product ID and the namespace of the object making the call is included in the telemetry. With this telemetry, Support can identify the product that is making the call in case of your customer facing issues with the SDK. It can help clarify that the call is actually being made by the product, and not your customer's code.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for SAP ABAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-sapabap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -415,7 +415,3 @@ If `TagPropagationStatus` shows `Unhealthy`, check the `TagPropagationFailureRea
 + `RoleLacksPermissions`: The role was assumed but the tag API call was denied. Ensure the role's permissions policy grants `logs:ListTagsForResource`, `logs:TagResource`, and `logs:UntagResource` on the destination log groups.
 
 To diagnose centralization issues, review the centralization rule health status in the console, check CloudWatch metrics for errors and throttling, and examine AWS CloudTrail logs for API call failures. For more information about centralization metrics, see [Centralization metrics and dimensions](CloudWatch-Logs-Monitoring-CloudWatch-Metrics.md#CloudWatchLogs-Centralization-Metrics).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

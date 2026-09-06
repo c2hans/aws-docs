@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  If performance or productivity suffers for various users, increase the size of their instances.
 +  For Personal WorkSpaces, establish the current or required pattern of usage of the applications or desktops being delivered. Select an Always-On running mode for user environments that are broadly used throughout each month (> 80 hours), select the Auto-Stop running mode where usage will be <80 hours per month. Alternatively, consider implementing the [Cost Optimizer for Amazon WorkSpaces Solution](https://aws.amazon.com/solutions/implementations/cost-optimizer-for-amazon-workspaces/) to automatically select the optimum running mode for each instance.
 +  [Enable self-service WorkSpace management capabilities for your users.](https://docs.aws.amazon.com/workspaces/latest/adminguide/enable-user-self-service-workspace-management.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

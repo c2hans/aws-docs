@@ -60,7 +60,3 @@ The following table provides details about the parameters shown in the this code
 | frame-no | Yes | Integer | The frame order number. This will determine the order of a frame in the sequence.  |
 | `unix-timestamp` | No | Integer | The unix timestamp of a frame. The number of seconds since January 1st, 1970 until the UTC time when the frame was captured.  |
 | frame | Yes | String | The name of a video frame image file.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

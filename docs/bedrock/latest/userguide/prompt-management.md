@@ -42,7 +42,3 @@ The following list introduces you to the basic concepts of Prompt management:
 + **Variable** – A placeholder that you can include in the prompt. You can include values for each variable when testing the prompt or when you invoke the model at runtime.
 + **Prompt variant** – An alternative configuration of the prompt, including its message or the model or inference configurations used. You can create different variants of a prompt, test them, and save the variant that you want to keep.
 + **Prompt builder** – A tool in the Amazon Bedrock console that lets you create, edit, and test prompts and their variants in a visual interface.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

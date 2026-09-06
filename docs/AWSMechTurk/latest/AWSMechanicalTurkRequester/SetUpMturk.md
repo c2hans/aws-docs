@@ -111,7 +111,3 @@ You also need to create a worker account on the worker sandbox website located a
 To create HITs in the sandbox using the Mechanical Turk APIs, you also need to link your AWS account to your sandbox requester account, as described in [Step 2: Link your AWS account to your Mechanical Turk requester account](#set-up-link), on the [requester sandbox website](https://requestersandbox.mturk.com/developer).
 
 To configure the AWS CLI or SDKs to access the sandbox instead of the production environment, you must set the API endpoint to be [https://mturk-requester-sandbox.us-east-1.amazonaws.com](https://mturk-requester-sandbox.us-east-1.amazonaws.com). Refer to the [AWS CLI Command Reference](https://aws.amazon.com/cli/) or [SDK documentation](https://aws.amazon.com/tools/) for how best to do this.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

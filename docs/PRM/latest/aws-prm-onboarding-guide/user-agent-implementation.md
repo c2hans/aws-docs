@@ -73,7 +73,3 @@ In scenarios where your partner solution does not make frequent regular AWS API/
 **AWS CloudFormation / AWS CDK:** CloudFormation does not support custom User Agent strings natively. When CloudFormation creates resources, it makes regular AWS API/CLI calls using its own service principal, and you cannot control the User Agent string in those calls. Use [Resource Tagging](resource-tagging.md) for CloudFormation-deployed resources instead. If your CloudFormation template includes Custom Resources (Lambda-backed), the Lambda function code can include a User Agent string via the SDK approach.
 
 **Terraform:** Terraform supports User Agent attribution via `provider_meta` with the `user_agent` argument (AWS provider **>= 6.27.0** or AWSCC provider **>= 1.67.0**). This is scoped to the declaring module only, ensuring correct attribution without collision across multiple partner modules. See [Terraform Implementation Sample](user-agent-samples.md#terraform-user-agent-sample) for full details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

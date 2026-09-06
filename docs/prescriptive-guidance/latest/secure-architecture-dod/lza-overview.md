@@ -31,7 +31,3 @@ There are no additional charges or upfront commitments required to use Landing Z
 <a name="planning"></a>
 
 AWS has created a detailed [﻿implementation guide﻿](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/solution-overview.html) for deploying the Landing Zone Accelerator (LZA) solution on AWS. For an architecture diagram and an overview of the deployment steps, see [Architecture diagram](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/architecture-diagram.html) in the *Landing Zone Accelerator on AWS Implementation Guide*. Your environment must meet [﻿prerequisites﻿](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/prerequisites.html) before deploying the solution. Using the requirements in the SCCA components and requirements chapter in this guide, you can choose between the deployment options that are described in the [LZA implementation guide](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/solution-overview.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

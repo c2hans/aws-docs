@@ -59,7 +59,3 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/view-sop
    + **AppComponent** – Indicates the Application Components (AppComponents) that are associated with this SOP. For more information about supported AppComponents, see [Grouping resources in an AppComponent](https://docs.aws.amazon.com/resilience-hub/latest/userguide/AppComponent.grouping.html?icmpid=docs_resiliencehub_help_panel_operational_recommendations_alarms).
    + **Reference ID** – Indicates the logical identifier of the AWS CloudFormation stack event in AWS CloudFormation.
    + **Recommendation ID** – Indicates the logical identifier of the AWS CloudFormation stack resource in AWS CloudFormation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

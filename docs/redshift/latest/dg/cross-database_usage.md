@@ -14,7 +14,3 @@ When you work with the cross-database query feature in Amazon Redshift, consider
 + Amazon Redshift supports joining data from tables or views across one or more databases in the same Amazon Redshift cluster.
 + All queries in a transaction on the connected database read data in the same state of the other database as the data was at the beginning of the transaction. This approach helps to provide query transactional consistency across databases. Amazon Redshift supports transactional consistency for cross-database queries.
 + To get metadata across databases, use SVV\_ALL\* and SVV\_REDSHIFT\* metadata views. You can't use the three-part notation or external schemas to query cross-database metadata tables or views under information\_schema and pg\_catalog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

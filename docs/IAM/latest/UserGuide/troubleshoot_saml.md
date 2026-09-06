@@ -12,7 +12,7 @@ Use the information here to help you diagnose and fix issues that you might enco
 + [Error: RoleSessionName is required in AuthnResponse (service: AWSSecurityTokenService; status code: 400; error code: InvalidIdentityToken)](#troubleshoot_saml_missing-rolesessionname)
 + [Error: Not authorized to perform sts:AssumeRoleWithSAML (service: AWSSecurityTokenService; status code: 403; error code: AccessDenied)](#troubleshoot_saml_missing-role)
 + [Error: RoleSessionName in AuthnResponse must match [a-zA-Z\_0-9\+=,.@-]{2,64} (service: AWSSecurityTokenService; status code: 400; error code: InvalidIdentityToken)](#troubleshoot_saml_invalid-rolesessionname)
-+ [Error: Source Identity must match [a-zA-Z\_0-9\+=,.@-]{2,64} and not begin with `"aws:"` (service: AWSSecurityTokenService; status code: 400; error code: InvalidIdentityToken)](#troubleshoot_saml_invalid-sourceidentity)
++ [Error: Source Identity must match [a-zA-Z\_0-9\+=,.@-]{2,256} and not begin with `"aws:"` (service: AWSSecurityTokenService; status code: 400; error code: InvalidIdentityToken)](#troubleshoot_saml_invalid-sourceidentity)
 + [Error: Response signature invalid (service: AWSSecurityTokenService; status code: 400; error code: InvalidIdentityToken)](#troubleshoot_saml_invalid-metadata)
 + [Error: Invalid private key.](#troubleshoot_saml_invalid-private-key)
 + [Error: Failed to remove private key.](#troubleshoot_saml_invalid-remove-key)
@@ -67,10 +67,10 @@ This error can occur if the `RoleSessionName` attribute value is too long or con
 
 For more information, see [Configure SAML assertions for the authentication response](id_roles_providers_create_saml_assertions.md). To view the SAML response in your browser, follow the steps listed in [View a SAML response in your browser](troubleshoot_saml_view-saml-response.md).
 
-## Error: Source Identity must match [a-zA-Z\_0-9\+=,.@-]{2,64} and not begin with `"aws:"` (service: AWSSecurityTokenService; status code: 400; error code: InvalidIdentityToken)
+## Error: Source Identity must match [a-zA-Z\_0-9\+=,.@-]{2,256} and not begin with `"aws:"` (service: AWSSecurityTokenService; status code: 400; error code: InvalidIdentityToken)
 <a name="troubleshoot_saml_invalid-sourceidentity"></a>
 
-This error can occur if the `sourceIdentity` attribute value is too long or contains invalid characters. The maximum valid length is 64 characters. For more information about source identity, see [Monitor and control actions taken with assumed roles](id_credentials_temp_control-access_monitor.md).
+This error can occur if the `sourceIdentity` attribute value is too long or contains invalid characters. The maximum valid length is 256 characters. For more information about source identity, see [Monitor and control actions taken with assumed roles](id_credentials_temp_control-access_monitor.md).
 
 For more information about creating SAML assertions, see [Configure SAML assertions for the authentication response](id_roles_providers_create_saml_assertions.md). To view the SAML response in your browser, follow the steps listed in [View a SAML response in your browser](troubleshoot_saml_view-saml-response.md).
 
@@ -162,7 +162,3 @@ Remove private keys that have expired before adding a new private key. For more 
 <a name="troubleshoot_saml_required-audience"></a>
 
 This error can occur if there is a mismatch between the audience URL and the identity provider in the SAML configuration. Make sure that your identity provider (IdP) relying party identifier exactly matches the audience URL (entity ID) provided in the SAML configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

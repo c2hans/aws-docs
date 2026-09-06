@@ -57,7 +57,3 @@ Running a proof of concept (POC) with AWS DataSync helps you validate the follow
    While the transfer time will likely be shorter for incremental transfers, DataSync will always prepare your transfer the same way by scanning and comparing your locations to identify what to transfer. You can use these preparation times to [estimate cutover timelines](datasync-large-migration-timelines.md#datasync-large-migration-cutover-timelines) for your migration.
 
 1. If needed, update your migration plan based on what you learned during the POC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

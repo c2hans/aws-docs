@@ -63,7 +63,3 @@ DNS aliases can have one of the following status values:
 We recommend that you use Kerberos-based authentication and encryption in transit with Amazon FSx. Kerberos provides the most secure authentication for clients accessing your file system. To enable Kerberos authentication for clients that access your Amazon FSx file system using a DNS alias, you must configure service principal names (SPNs) that correspond to the DNS alias on your file system’s Active Directory computer object.
 
 If you have SPNs conﬁgured for the DNS alias that you've assigned to another ﬁle system on a computer object in your Active Directory, you must ﬁrst remove those SPNs before adding SPNs to your ﬁle system’s computer object. For more information, see [Configure service principal names (SPNs) for Kerberos](step2-configure-spn-kerberos.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

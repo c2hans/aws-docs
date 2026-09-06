@@ -24,7 +24,3 @@ We strongly recommend that you never put sensitive identifying information, such
 By default, the AWS Console Mobile App stores and processes user data such as your device identification number and diagnostic information about the app’s performance. Collected diagnostic information specifically includes: crash logs and performance data. This data helps AWS continuously improve the Console Mobile Application and your experience. Your diagnostic data isn’t shared with any third parties, is anonymized, and is protected using sophisticated controls to prevent unauthorized access and misuse.
 
 If you would like to turn off sharing this diagnostic information, you can do so by turning off sharing of this information in your device’s settings. For more information see [Share analytics, diagnostics, and usage information with Apple](https://support.apple.com/en-us/HT202100) for iOS and [Learn more about Google Play services for system diagnostics](https://support.google.com/android/answer/12464559) for Android.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Console Mobile Application. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query consolemobileapp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

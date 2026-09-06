@@ -108,7 +108,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 When a querystring parameter is listed in querystrings property in token policy, the value of which is later used when calculating a signature related to viewer attributes, **generate** method looks up its value in a following order:
 +  playback\_url input parameter when **generate** method is called
 +  viewer attributes querystring object
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

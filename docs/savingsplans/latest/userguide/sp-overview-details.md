@@ -13,7 +13,3 @@ After you purchase Savings Plans, you see a **Details** section in your **Overvi
 + **MTD/YTD savings** – The total savings from Savings Plans during the selected period.
 
 To see details of the Savings Plans you own, choose **View all** in the **Details** section, or choose **Inventory** in the left navigation pane.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

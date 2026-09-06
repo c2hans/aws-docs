@@ -170,7 +170,3 @@ Changes are eventually consistent. Creating, updating, or promoting a policy is 
 Result lists are bounded. `LOG_ONLY` match and decision-flipping lists are each capped at 1,000 entries per request. For engines with very large numbers of `LOG_ONLY` policies, rely on the CloudWatch metrics for complete aggregate counts.
 
 Evaluation can be partial. When `LOG_ONLY` evaluation is incomplete for a request, the `LOG_ONLY` signals for that request might be missing entries. The enforced decision is never affected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

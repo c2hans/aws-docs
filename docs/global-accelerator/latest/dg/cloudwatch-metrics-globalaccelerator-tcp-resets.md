@@ -28,11 +28,11 @@ The following are common reasons that Global Accelerator sends a TCP reset:
 + If a client or endpoint sends data after the idle timeout period elapses, it receives a TCP reset packet from Global Accelerator to indicate that the connection is no longer valid.
 + If Global Accelerator receives an unexpected packet while building the connection with either the client or the endpoint during the TCP handshake, Global Accelerator generates a TCP reset.
 
-If you see a stable number of `AGA_Reset_Count` metrics for an accelerator, this is because the client or the endpoint sent data towards Global Accelerator to a closed or expired connection.
+If you see a stable number of `TCP_AGA_Reset_Count` metrics for an accelerator, this is because the client or the endpoint sent data towards Global Accelerator to a closed or expired connection.
 
 Not all increases in TCP reset metrics are cause for concern nor do they always indicate an issue that needs to be addressed. Review the information provided in the following sections of this topic to understand the scenarios that can cause a temporary increase in RSTs, such as endpoint resource scaling.
 
-If you notice a sharp increase in `AGA_Reset_Count` metrics and the increase aligns with related metrics changes on the endpoint side, such as a scale up, scale down, or an unhealthy endpoint, the endpoint might have become unreachable and triggered the Global Accelerator TCP reset. If you can't locate the source of ongoing TCP reset increases or can't address the issue yourself, you can get help investigating the issue by contacting AWS support. To learn more about when to get additional help, see [When to take action for increased RST metrics](#cloudwatch-metrics-globalaccelerator-tcp-resets-definitions.when-to-take-action).
+If you notice a sharp increase in `TCP_AGA_Reset_Count` metrics and the increase aligns with related metrics changes on the endpoint side, such as a scale up, scale down, or an unhealthy endpoint, the endpoint might have become unreachable and triggered the Global Accelerator TCP reset. If you can't locate the source of ongoing TCP reset increases or can't address the issue yourself, you can get help investigating the issue by contacting AWS support. To learn more about when to get additional help, see [When to take action for increased RST metrics](#cloudwatch-metrics-globalaccelerator-tcp-resets-definitions.when-to-take-action).
 
 ## TCP\_AGA\_Reset\_Count
 <a name="cloudwatch-metrics-globalaccelerator-tcp-resets-definitions.aga-reset-count"></a>
@@ -231,7 +231,3 @@ Contact AWS support when you observe any of the following:
 + Data that shows the pattern for reset metrics issues
 + Any application metrics that correlate with RST issues
 + A description of actions that you've already taken to troubleshoot the issues
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

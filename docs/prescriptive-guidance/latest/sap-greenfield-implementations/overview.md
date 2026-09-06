@@ -21,7 +21,3 @@ When deploying SAP environments on AWS, the infrastructure teams are typically m
 <a name="intended-audience"></a>
 
 This document is written with project managers in mind, as a guide for project implementation, and as a tool for setting expectations and providing strong IT leadership during an SAP on AWS implementation. In a large-scale SAP implementation, it is likely that all the members of the infrastructure team will participate with their own project managers to manage their piece of work. We recommend that you identify a single, overarching infrastructure project manager to manage the overall cloud journey and to take accountability for ensuring that these best practices are followed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

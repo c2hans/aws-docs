@@ -72,7 +72,3 @@ The following table describes errors that might occur during the creation proces
 | Ingress endpoint provisioning failed | An error occurred while provisioning the ingress endpoint. | Check the status of the ingress endpoint in Mail Manager. The error banner includes a link to Mail Manager for further troubleshooting. |
 | Password generation failed | Your IAM user or role doesn't have the secretsmanager:GetRandomPassword permission. | Enter a custom password manually, or add the permission and try again. |
 | Provisioning timeout | The console stopped checking the ingress endpoint status after 10 minutes before it reached Active. | Use the link provided in the timeout message to check the current status of your ingress endpoint in Mail Manager. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

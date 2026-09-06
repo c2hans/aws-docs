@@ -43,7 +43,3 @@ Create your secret using the [CreateSecret](https://docs.aws.amazon.com/secretsm
 During rotation, the driver extracts the key ID and resolves the Paddle API host from the key prefix. It then calls the Paddle rotation endpoint with a configurable grace period. Secrets Manager stores the new key as AWSPENDING, verifies it by making a non-mutating API call, and promotes it to AWSCURRENT. The old key remains valid for the duration of the grace period (default 300 seconds) before auto-expiring.
 
 The API key must be created with the "rotatable" option enabled in the Paddle Dashboard. Secrets Manager rejects non-rotatable keys with an error.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

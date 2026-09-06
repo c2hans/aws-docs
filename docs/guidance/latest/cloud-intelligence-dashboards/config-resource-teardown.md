@@ -70,7 +70,3 @@ Follow these steps if you deployed the dashboard on a dedicated Dashboard accoun
 1. Empty the Dashboard bucket, as well. This bucket contains a copy of the AWS Config files from the AWS Config Logs bucket. The bucket name is in the CloudFormation stack output.
 
 1. In the same account, open CloudFormation and delete the stack that installed the data pipeline resources for the dashboard.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

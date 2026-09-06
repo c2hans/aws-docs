@@ -23,7 +23,3 @@ After you deploy the Innovation Sandbox on AWS solution:
 1. Choose to open the web UI for the solution. The Amazon Cognito hosted sign-in page opens.
 
 The solution authenticates you through Amazon Cognito, which federates to AWS IAM Identity Center using SAML 2.0. Sign in with your IAM Identity Center credentials.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

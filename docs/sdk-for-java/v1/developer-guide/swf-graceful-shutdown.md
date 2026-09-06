@@ -117,7 +117,3 @@ public class ActivityWorkerWithGracefulShutdown {
 In this version, the polling code that was in the `main` function in the original version has been moved into its own method, `pollAndExecute`.
 
 The `main` function now uses a [CountDownLatch](https://docs.oracle.com/javase/8/docs/api/index.html?java/util/concurrent/CountDownLatch.html) in conjunction with a [shutdown hook](https://docs.oracle.com/javase/8/docs/api/index.html?java/lang/Runtime.html) to cause the thread to wait for up to 60 seconds after its termination is requested before letting the thread shut down.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

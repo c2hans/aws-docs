@@ -26,7 +26,3 @@ resource "aws_secretsmanager_secret_rotation" "createrotation" {
 The following architecture diagram shows how you can use Secrets Manager, an Amazon VPC endpoint, and a Lambda function to rotate sensitive data in an AWS account.
 
 ![Automatically schedule an AWS Lambda function that rotates secrets on a regular schedule.](http://docs.aws.amazon.com/prescriptive-guidance/latest/secure-sensitive-data-secrets-manager-terraform/images/guide-img/e6185df2-3707-4018-a94c-6edc793f0353/images/37a32a01-6350-41b2-a7fb-2e54fa1c45dc.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

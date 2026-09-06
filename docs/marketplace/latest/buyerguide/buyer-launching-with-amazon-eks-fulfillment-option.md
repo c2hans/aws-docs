@@ -20,7 +20,3 @@ For a fulﬁllment option with an Add-on for Amazon EKS delivery method, use the
 1. Select the version that you want to deploy and choose **Next**. For more information about Amazon EKS deployment, see [EKS add-ons](https://docs.aws.amazon.com/eks/latest/userguide/eks-add-ons.html).
 
 1. Review your selections and choose **Create**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

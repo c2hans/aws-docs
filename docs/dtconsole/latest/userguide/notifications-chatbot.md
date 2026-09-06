@@ -124,7 +124,3 @@ You can configure more than one notification rule to use the same Amazon SNS top
 1. Choose **Configure**.
 
 1. (Optional) To test the integration, make a change in the resource that matches an event type for a notification rule that is configured to use the Amazon SNS topic as its target. For example, if you have a notification rule configured to send notifications when comments are made on a pull request, comment on a pull request and then watch the Amazon Chime chatroom to see when the notification appears.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

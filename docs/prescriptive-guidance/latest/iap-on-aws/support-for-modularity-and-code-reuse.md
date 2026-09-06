@@ -15,7 +15,3 @@ Service Catalog uses CloudFormation natively to deploy a product provisioning te
 Service Catalog allows you to successfully *define* products with provisioning templates that use these CloudFormation constructs. However, you will encounter *provision-time errors* if you use the include macro or nest multiple levels of scripts in a Service Catalog CloudFormation template.
 
 These restrictions might make it difficult to implement modular and reusable products in Service Catalog. If modularity is a requirement, you might explore using the AWS CDK to implement your products and their provisioning templates, or use the provisioning workflows and engine in the AWS Labs Service Catalog Tools project, as described later in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

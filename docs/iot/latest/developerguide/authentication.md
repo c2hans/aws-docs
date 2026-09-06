@@ -11,7 +11,3 @@ Authentication is a mechanism where you verify the identity of a client or a ser
 <a name="x509-certificate-overview"></a>
 
 X.509 certificates are digital certificates that use the [X.509 public key infrastructure standard](https://en.wikipedia.org/wiki/X.509) to associate a public key with an identity contained in a certificate. X.509 certificates are issued by a trusted entity called a certification authority (CA). The CA maintains one or more special certificates called CA certificates that it uses to issue X.509 certificates. Only the certification authority has access to CA certificates. X.509 certificate chains are used both for server authentication by clients and client authentication by the server.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

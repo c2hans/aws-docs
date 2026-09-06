@@ -12,6 +12,9 @@ Each interface endpoint is represented by one or more [Elastic Network Interface
 **Note**
 Each service that you access from within a VPC has its own interface endpoint, with its own endpoint policy. Image Builder downloads the AWSTOE component manager application and accesses managed resources from S3 buckets to create custom images. To grant access to those buckets, you must update the S3 endpoint policy to allow it. For more information, see [Custom policies for S3 bucket access](#vpc-endpoint-policy-s3).
 
+**Tip**
+For information about a deployable private VPC build example, including the required endpoints and endpoint policies, see the [private VPC builds sample](https://github.com/aws-samples/amazon-ec2-image-builder-samples/tree/HEAD/networking/private-vpc-builds) on GitHub. For more information, see [Explore Image Builder sample projects on GitHub](sample-projects.md).
+
 For more information about VPC endpoints, see [Interface VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in the *Amazon VPC User Guide*.
 
 ## Considerations for Image Builder VPC endpoints
@@ -189,7 +192,3 @@ To ensure that Image Builder can bootstrap the build and test instances, add the
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

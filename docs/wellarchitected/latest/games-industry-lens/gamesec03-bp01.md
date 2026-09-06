@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Use unauthenticated or anonymous access to reduce barriers for first-time players by generating a unique device identifier to track usage and enabling account linking later.
 +  Implement username and password authentication for dedicated user accounts, using existing player account systems or creating a unified experience across games.
 +  Integrate third-party identity providers for federated authentication, simplifying login processes and enabling access to social features and personalization data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

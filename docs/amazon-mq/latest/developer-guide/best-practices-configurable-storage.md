@@ -62,7 +62,3 @@ The disk limit for each node's EBS volume. When free disk space on any node fall
 **Important**
 When `RabbitMQDiskFree` drops below `RabbitMQDiskFreeLimit` on any node, RabbitMQ raises a disk alarm (`RABBITMQ_DISK_ALARM`). This alarm is cluster-wide. If any node goes under the limit, all nodes block incoming messages. Consumers can still drain messages, but no new data is accepted until free space recovers above the limit.
 For steps on diagnosing and resolving the disk limit alarm, see [RabbitMQ on Amazon MQ: Disk limit alarm](troubleshooting-action-required-codes-disk-limit-alarm.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,7 +52,3 @@ After an in-application stream is created, you can perform normal SQL queries.
 When you query streams, most SQL statements are bound using a row-based or time-based window. For more information, see [Windowed Queries](windowed-sql.md).
 
 You can also join streams. For examples of joining streams, see [Streaming Data Operations: Stream Joins](stream-joins-concepts.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,7 +42,3 @@ For each filters, the values are based on the time period selected in the previo
 The usage is aggregated based on the account, Region, service code, usage type, and operation. This means that if the time range is across multiple months and your selection yields usage from the same account, Region, service code, usage type, and operation across multiple months, then all the usage amount and cost is added together into one line.
 
 1. To add the historical usage to the workload estimate, choose **Import**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

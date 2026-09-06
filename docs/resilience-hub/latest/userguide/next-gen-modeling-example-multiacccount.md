@@ -95,7 +95,3 @@ This example shows how to model a large e-commerce platform with 30 services acr
    ```
 
 Services can be added incrementally – start with the most critical services and onboard more over time. The system-level view in the console shows all services across accounts in a single canvas.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

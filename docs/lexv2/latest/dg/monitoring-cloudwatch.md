@@ -44,7 +44,3 @@ The following dimensions are supported for the Amazon Lex V2 metrics.
 |  LocaleId  | The identifier of the bot's locale, such as en-US or fr-CA. |
 |  Model  | Indicates the model id of the Amazon Bedrock large language model. |
 |  ModelType  | Indicates the type of large language model invoked from Amazon Bedrock. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ To assign authorization policies to projects within a domain unit, complete the 
 1. Choose **Manage domain** and choose the domain and the domain unit where you want to assign authorization policies.
 
 1. On the domain unit details page, choose the authorization policy that you want to assign and click to configure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

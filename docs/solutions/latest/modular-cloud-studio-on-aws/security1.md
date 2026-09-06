@@ -109,7 +109,3 @@ The API Gateway used in this solution defaults to allowing TLS 1.0 and above. Fo
 <a name="content-security-policy"></a>
 
 The solution deploys a CloudFront Distribution with preset Content Security Policies. One of these policies has the value `https://*.amazonaws.com`, which is used to connect with the solution’s resources. If this policy grants broader permissions than required for your use case, consider restricting access to specific domains by configuring CloudFront distribution settings through the AWS Management Console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ This information is intended for the following audiences:
 <a name="objectives"></a>
 
 The information in this guide helps you elevate your observability practices to create more resilient and efficient systems that are aligned across your organization. It provides you with a framework for adopting good observability practices across three pillars: people, process, and technology. The information is broadly applicable regardless of the tools you choose to use. If you are interested in the AWS services that support observability, see [Monitoring and observability](https://aws.amazon.com/cloudops/monitoring-and-observability/) on the AWS website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

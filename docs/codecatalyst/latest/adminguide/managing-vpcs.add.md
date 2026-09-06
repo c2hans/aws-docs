@@ -81,7 +81,3 @@ Each VPC connection name must be unique per space.
 1. After you've reviewed your selections, choose **Add VPC connection**.
 
 1. You can now associate this VPC connection with an environment to use with your workflow actions or create a Dev Environment associated to your VPC connection. For instructions, see [ Associating a VPC connection with an environment](https://docs.aws.amazon.com/codecatalyst/latest/userguide/deploy-environments-managing-environment.html#deploy-environments-associate-vpc) or [ Using Dev Environments with a VPC connection](https://docs.aws.amazon.com/codecatalyst/latest/userguide/devenvironment-using-vpc.html) in the *CodeCatalyst User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

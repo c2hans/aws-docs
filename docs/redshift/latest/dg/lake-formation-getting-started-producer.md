@@ -9,9 +9,9 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/lake-formation-gettin
 
 With Amazon Redshift, you can access and analyze data shared through AWS Lake Formation datashares. AWS Lake Formation datashares enable secure data sharing across AWS accounts and Amazon Redshift clusters without having to copy or move the underlying data.
 
-Sharing data to AWS Lake Formation lets you centrally define AWS Lake Formation permissions of Amazon Redshift datashares and restrict user access to objects within a datashare.
+By sharing data to AWS Lake Formation, you can centrally define AWS Lake Formation permissions of Amazon Redshift datashares and restrict user access to objects within a datashare.
 
-With Amazon Redshift, you can securely share live data across AWS accounts and Amazon Redshift clusters using AWS Lake Formation-managed datashares as a producer. A Lake Formation-managed datashare is an object that allows you to share live data from your Amazon Redshift cluster with other AWS accounts and services.
+With Amazon Redshift, you can securely share live data across AWS accounts and Amazon Redshift clusters using AWS Lake Formation-managed datashares as a producer. A Lake Formation-managed datashare is an object that you use to share live data from your Amazon Redshift cluster with other AWS accounts and services.
 
 As a producer cluster or workgroup administrator, follow these steps to share datashares to Lake Formation:
 
@@ -90,7 +90,3 @@ As a producer cluster or workgroup administrator, follow these steps to share da
    ```
 
    The Lake Formation administrator must also create local resources that define how objects within the datashare should map to objects within Lake Formation. For more information about discovering datashares and creating local resources, see [Managing permissions for data in an Amazon Redshift datashare](https://docs.aws.amazon.com/lake-formation/latest/dg/data-sharing-redshift.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

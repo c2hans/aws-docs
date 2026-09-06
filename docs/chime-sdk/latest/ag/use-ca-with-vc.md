@@ -31,7 +31,3 @@ The following steps explain how to associate a call analytics session with a Voi
 1. Under **Sending to Kinesis Video Streams**, choose **Start**.
 
 1. Under **Call Analytics**, choose **Activate**, choose a configuration from the list, then choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

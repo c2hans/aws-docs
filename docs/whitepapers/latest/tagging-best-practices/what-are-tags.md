@@ -68,7 +68,3 @@ Tags that a user creates and applies to AWS resources using the AWS CLI, API, or
 
 **Note**
 Although tag keys are case sensitive, IAM has additional validations for IAM resources to prevent the application of tag keys that only differ in casing. We recommend not using keys that only differ in casing. Refer to [Tags for IAM resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html#id_tags_rules) for more details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

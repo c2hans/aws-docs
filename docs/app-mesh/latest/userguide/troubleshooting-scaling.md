@@ -70,7 +70,3 @@ When active health checking is enabled, each Envoy endpoint of the downstream (c
 To resolve this issue, modify the frequency of the health check probe, which would reduce the total volume of health check probes. In addition to active health checks, App Mesh allows configuring [outlier detection](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_OutlierDetection.html) as means of passive health checking. Use outlier detection to configure when to remove a particular host based on consecutive `5xx` responses.
 
 If your issue is still not resolved, then consider opening a [GitHub issue](https://github.com/aws/aws-app-mesh-roadmap/issues/new?assignees=&labels=Bug&template=issue--bug-report.md&title=Bug%3A+describe+bug+here) or contact [AWS Support](https://aws.amazon.com/premiumsupport/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

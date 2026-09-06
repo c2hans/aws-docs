@@ -102,7 +102,3 @@ After completing the setup steps, verify that everything is configured correctly
 1. In the search box, enter "AWSServiceRoleForMarketplaceLicenseManagement" and verify the role exists.
 
 If you do not see these roles, wait 2-3 minutes for IAM propagation and refresh the console. If roles still do not appear, you may need to create them manually by going to IAM console, choosing **Create role**, selecting **AWS service**, and finding License Manager or Marketplace in the service list.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

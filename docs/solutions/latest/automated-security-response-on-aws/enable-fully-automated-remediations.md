@@ -94,7 +94,3 @@ To limit the scope in which the solution runs fully automated remediations, appl
 A resource filter is a reusable definition that scopes which findings are automatically remediated. Each filter can combine account IDs, AWS Organizations organizational units (OUs), resource ARN patterns, and resource tags. You create filters on the **Filters** page of the Web UI, then apply them to a single control from the **Controls** page (or to every control at once) using either **Include** or **Exclude** mode.
 
 For the full walkthrough, including creating filters, applying them to controls, and how the solution evaluates include and exclude modes, see [Create and apply resource filters](manage-automated-remediation.md#manage-resource-filters) in the *Administrator guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

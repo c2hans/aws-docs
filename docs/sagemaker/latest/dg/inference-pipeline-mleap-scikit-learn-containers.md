@@ -25,7 +25,3 @@ For an example that shows how to feature process with Spark ML, see the [Train a
 <a name="feature-processing-with-scikit"></a>
 
 You can run and package scikit-learn jobs into containers directly in Amazon SageMaker AI. For an example of Python code for building a scikit-learn featurizer model that trains on [Fisher's Iris flower data set](http://archive.ics.uci.edu/ml/datasets/Iris) and predicts the species of Iris based on morphological measurements, see [IRIS Training and Prediction with Sagemaker Scikit-learn](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/scikit_learn_iris).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

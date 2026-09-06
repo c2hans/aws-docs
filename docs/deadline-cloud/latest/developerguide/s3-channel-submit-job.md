@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/s3-
 # Test your package with a Blender render job
 <a name="s3-channel-submit-job"></a>
 
-After you build the Blender 4.5 package, you can test it with a render job. If you do not have a Blender scene, download the Blender 3.5 - Cozy Kitchen scene from the [Blender demo files](https://www.blender.org/download/demo-files) page. The Deadline Cloud samples repository contains a `blender_render` job bundle and a conda queue environment that you can use for both local and cloud testing.
+After you build the Blender 4.5 package, you can test it with a render job. If you do not have a Blender scene, download the Blender 3.5 - Cozy Kitchen scene from the [Blender demo files page](https://www.blender.org/download/demo-files) on the Blender website. The Deadline Cloud samples repository contains a `blender_render` job bundle and a conda queue environment that you can use for both local and cloud testing.
 
 ## Testing locally
 <a name="blender-test-locally"></a>
 
-You can run the job template on your workstation using the [Open Job Description CLI](https://github.com/OpenJobDescription/openjd-cli#readme). Install the CLI with `pip`.
+You can run the job template on your workstation using the [Open Job Description CLI](https://github.com/OpenJobDescription/openjd-cli#readme) on the GitHub website. Install the CLI with `pip`.
 
 ```
 pip install openjd-cli
@@ -42,7 +42,3 @@ deadline bundle submit blender_render \
 ```
 
 Use the Deadline Cloud monitor to track the progress of the job. In the monitor, select the task for the job and choose **View logs**. Select the **Launch conda** session action to verify that the package was found in the Amazon S3 channel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

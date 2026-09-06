@@ -84,7 +84,3 @@ To establish an effective foundation model strategy, consider the following reco
 + Remember that the largest foundation model is not necessarily always the best model for your use case. Begin proof-of-concept development with top-tier models to validate business value, and then systematically evaluate smaller models for cost optimization.
 + Develop dashboards to track key metrics, such as inference latency, throughput, error rates, and cost per inference.
 + Provide clear guidance to teams about how to select the right model for their use case, including experimentation processes and evaluation criteria.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ Removing bloat and keeping a database healthy requires periodic maintenance, whi
 + [Vacuuming and analyzing tables manually](manual-vacuum.md)
 + [Removing bloat with pg\_repack](pg-repack.md)
 + [Rebuilding indexes](reindex.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

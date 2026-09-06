@@ -17,7 +17,3 @@ AWS App Runner now supports incoming requests with HTTP1.0.
 AWS App Runner now provides support for HTTP 1.0 version. Previously, App Runner only supported HTTP 1.1 and terminated all requests that used HTTP 1.0. With this release, App Runner provides you with the flexibility to use either the HTTP 1.0 or HTTP 1.1 protocols.
 
 For more information, see [Developing application code for App Runner](https://docs.aws.amazon.com/apprunner/latest/dg/develop.html) in the *AWS App Runner Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

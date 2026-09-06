@@ -44,7 +44,3 @@ SageMaker AI provides different options for your inference use cases, giving you
 + **Cost optimization.** To optimize your inference costs, consider the following options:
   + [Model performance optimization with SageMaker Neo](neo.md). Use SageMaker Neo to optimize and run your machine learning models with better performance and efficiency, helping you to minimize compute costs by automatically optimizing models to run in environments like AWS Inferentia chips.
   + [Automatic scaling of Amazon SageMaker AI models](endpoint-auto-scaling.md). Use autoscaling to dynamically adjust the compute resources for your endpoints based on incoming traffic patterns, which helps you optimize costs by only paying for the resources you're using at a given time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

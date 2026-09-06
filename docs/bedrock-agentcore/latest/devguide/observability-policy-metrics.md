@@ -87,7 +87,3 @@ Amazon Bedrock AgentCore provides additional structured span data through AgentC
 |  | aws.agentcore.policy.target\_resource.id | AgentCore Gateway resource identifier the request applies to |
 |  | aws.agentcore.gateway.policy.arn | Policy Engine Amazon Resource Name (ARN) configured on the AgentCore Gateway |
 |  | aws.agentcore.gateway.policy.mode | Policy Engine enforcement mode configured on the AgentCore Gateway, valid values are `LOG_ONLY` and `ENFORCE`  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

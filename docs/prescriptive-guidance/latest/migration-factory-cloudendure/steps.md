@@ -14,7 +14,3 @@ The Cloud Migration Factory process consists of five main steps. These are discu
 
 **Important**
 The automation scripts for the migration steps described in this guide require Cloud Migration Factory. To get Cloud Migration Factory, see the [AWS Cloud Migration Factory Solution](https://aws.amazon.com/solutions/implementations/cloud-migration-factory-on-aws/)** **on the AWS Solutions website. If you have any questions, email AWS Professional Services at *migration-factory-support@amazon.com*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

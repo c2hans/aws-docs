@@ -248,7 +248,3 @@ In this example, `cr_g6` and `cr_g6e` fetch the per-instance-type `ConcurrentReq
 | Higher weight on low-priority (0.3 / 0.7) | Higher (runs hotter) | Lower (protected) | Preventing smaller fallback instances from becoming saturated |
 
 For more information about custom metrics with auto-scaling, see [Define a custom metric (CloudWatch metric: CPUUtilization)](endpoint-auto-scaling-add-code-define.md#endpoint-auto-scaling-add-code-custom).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

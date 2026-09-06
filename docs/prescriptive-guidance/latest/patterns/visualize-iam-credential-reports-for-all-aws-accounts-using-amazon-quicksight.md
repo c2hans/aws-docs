@@ -116,7 +116,3 @@ You can use this pattern to achieve the following targeted business outcomes:
 + **Track AWS Regions accessed by IAM users **– You can control IAM user access to Regions for various purposes, such as data sovereignty and cost control. You can also track use of Regions by any IAM user.
 + **Stay compliant **– By following the principle of least privilege, you can grant only the specific IAM permissions that are required to perform a specific task. Also, you can track access to AWS services, the AWS Management Console, and long-term credentials usage.
 + **Share information with other stakeholders **– You can share curated dashboards with other stakeholders, without granting them access to IAM credential reports or AWS accounts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

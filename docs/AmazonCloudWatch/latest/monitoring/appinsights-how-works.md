@@ -46,7 +46,3 @@ CloudWatch Application Insights retains problems for 55 days and observations fo
 <a name="appinsights-limits"></a>
 
 For default quotas for CloudWatch Application Insights, see [Amazon CloudWatch Application Insights endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/applicationinsights.html). Unless otherwise noted, each quota is per AWS Region. Contact [AWS Support](https://console.aws.amazon.com/support/home#/case/create?issueType=technical) to request an increase in your service quota. Many services contain quotas that cannot be changed. For more information about the quotas for a specific service, see the documentation for that service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

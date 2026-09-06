@@ -51,7 +51,3 @@ Please use the Session Manager Broker CLI commands `register-server-dns-mapping`
 <a name="persistence"></a>
 
 We strongly recommend that you enable the persistence feature of the Session Manager Broker, to protect against the mapping loss when multiple brokers or the entire cluster go down. For more information about enabling data persistence, see [Configure Broker Persistence](https://docs.aws.amazon.com/dcv/latest/sm-admin/configure_broker_persistence.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,3 @@ The following table shows the different configuration options for Trino `propert
 ## Additional considerations
 <a name="emr-trino-deployment-config-additional"></a>
 + For Trino on EMR version 6.1.0 and later, Amazon EMR automatically configures a shared secret key for secure internal communication between cluster nodes. You don't need to do any additional configuration to enable this security feature, and you can override the configuration with your own secret key. For information about Trino internal authentication, see [Trino 353 documentation: Secure internal communication.](https://trino.io/docs/current/security/internal-communication.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

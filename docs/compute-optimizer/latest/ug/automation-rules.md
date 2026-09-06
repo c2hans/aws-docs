@@ -253,7 +253,3 @@ For example, if a recommended action matches all of the rules in the following t
 - ** Organization rules after before member account rules **
   - **Rule order:** 1 / **Rule name:** Rule-E / **Status:** Inactive / **Schedule:** Weekly on Mondays from 12:00 to 13:00 UTC
   - **Rule order:** 2 / **Rule name:** Rule-F / **Status:** Active / **Schedule:** Daily from 12:00 to 13:00 UTC
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

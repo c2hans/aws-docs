@@ -122,7 +122,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-ana
 |  [CloudFormation \+ Service Catalog](control-name-descriptions.md#cloudformation-service-catalog) <br /> (ID: Ops.1)  |  These controls help you to provision your infrastructure in an automated and secure manner. The CloudFormation template file serves as the single source of truth for your cloud environment.  |
 |  [Immutable Infrastructure – Short-Lived Environments](control-name-descriptions.md#immutable-infrastructure-short-lived-environments) <br /> (ID: Ops.2)  |  These controls rebuild or refresh your environments periodically to make it more difficult for an attack payload to persist.  |
 |  [AWS DR Options](control-name-descriptions.md#aws-dr-options) <br /> (ID: Ops.4)  |  These controls can help you rapidly recover your IT infrastructure and data.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

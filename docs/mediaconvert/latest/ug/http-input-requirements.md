@@ -15,7 +15,3 @@ If your HTTP(S) input uses redirection, it must follow these restrictions:
 + You can redirect only once from the URL that you provide as your input. You can't redirect to a URL that, in turn, contains a redirect.
 + The HTTP(S) status response code from the initial server must be either 301 or 302.
 + The HTTP(S) response from the initial server must use its `Location` headers to provide the URL that it's redirecting MediaConvert to.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

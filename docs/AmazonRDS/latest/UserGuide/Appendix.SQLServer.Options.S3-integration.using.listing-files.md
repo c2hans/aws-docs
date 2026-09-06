@@ -25,7 +25,3 @@ The `rds_fn_list_file_details` function returns a table with the following colum
 | size\_in\_bytes | File size (in bytes) |
 | last\_modified\_utc | Last modification date and time in UTC format |
 | is\_directory | Option that indicates whether the item is a directory (true/false) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 1.  **Train resources:** Train teams from both companies on best practices for cost optimization and governance. Share knowledge about how each team was using AWS and the best ways to reduce costs. Get everyone on the same page about how to architect in a cost-optimized manner.
 
 1.  **Continually optimize:** Cost optimization is an ongoing process. Continue to review new resources for cost effectiveness, look for new discounts or programs from AWS to leverage, and make cost optimization a priority across teams. Small optimizations made over time can add up to major savings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

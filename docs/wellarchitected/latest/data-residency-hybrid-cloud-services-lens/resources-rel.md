@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 +  [Architecting for Disaster Recovery on AWS Outposts racks with AWS Elastic Disaster Recovery](https://aws.amazon.com/blogs/compute/architecting-for-disaster-recovery-on-aws-outposts-racks-with-aws-elastic-disaster-recovery/)
 +  [Direct Connect resiliency recommendation](https://aws.amazon.com/directconnect/resiliency-recommendation/)
 +  [Implementing backup for workloads running on AWS Outposts servers](https://aws.amazon.com/blogs/compute/implementing-backup-for-workloads-running-on-aws-outposts-servers/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

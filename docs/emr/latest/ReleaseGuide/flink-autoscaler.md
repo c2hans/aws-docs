@@ -128,7 +128,3 @@ We can detect an in-effective scale up operation based past job vertex scaling d
 | job.autoscaler.scale-down.max-factor | 0.6 | Max scale down factor. A value of 1 means no limit on scale down; 0.6 means job can only be scaled down with 60% of the original parallelism. | 0 - 1 |
 | job.autoscaler.scale-up.max-factor | 100000. | Maximum scale up ratio. A value of 2.0 means job can only be scaled up with 200% of the current parallelism. | 0 - Integer.MAX\_VALUE |
 | job.autoscaler.scaling.effectiveness.detection.enabled | false | Whether to enable detection of ineffective scaling operations and allowing the autoscaler to block further scale ups. | true, false |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

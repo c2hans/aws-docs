@@ -40,7 +40,3 @@ The response is XML content consisting of one **hash** element with the followin
 | md-raid | String | Provides Redundant Array of Independent Disks (RAID) information, including:+  RAID-Level <br />+  X <br />+  RAID-Devices <br />+  Total-Devices <br />+  State <br />+  Active-Devices <br />+  Working-Devices  |
 | hardware-raid | Array | Provides appliance hardware RAID information. |
 | mount-info | Array | Provides information about the devices that are mounted to the AWS Elemental Conductor Live 3 system. Includes:+  Device name <br />+  Path <br />+  Size <br />+  Used space <br />+  Available space <br />+  Percent space used  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ The maximum capacity of each node (router or shard) is 128 TiB, as this is the m
 The maximum number of relations per database (including tables, views, and indexes) in both Aurora PostgreSQL and Aurora PostgreSQL Limitless Database is 1,431,650,303.
 
 For more information, see [Appendix K. PostgreSQL limits](https://www.postgresql.org/docs/current/limits.html) in the PostgreSQL documentation and [Amazon Aurora size limits](CHAP_Limits.md#RDS_Limits.FileSize.Aurora).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,3 @@ Amazon S3 Tables provides the following APIs for data retrieval.
 | <a name="s3tables-ListTableBuckets"></a>[ListTableBuckets](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_ListTableBuckets.html) | List table buckets | List |
 | <a name="s3tables-ListTables"></a>[ListTables](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_ListTables.html) | List tables | List |
 | <a name="s3tables-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-tables-tagging.html) | List the tags for an S3 Tables resource | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

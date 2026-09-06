@@ -584,7 +584,3 @@ View details about updates to access policies, since they were introduced. For a
 | Add policies for Amazon EKS Auto Mode | These access policies give the Cluster IAM Role and Node IAM Role permission to call Kubernetes APIs. AWS uses these to automate routine tasks for storage, compute, and networking resources. | December 2, 2024 |
 | Add `AmazonEKSAdminViewPolicy`  | Add a new policy for expanded view access, including resources like Secrets. | April 23, 2024 |
 | Access policies introduced. | Amazon EKS introduced access policies. | May 29, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

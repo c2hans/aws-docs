@@ -94,7 +94,3 @@ A contact is routed down the Error branch if the flows services runs into any of
 + When using Email message (Plain text):
   + When the size of the email message in plaintext format is more than 32KB.
   + Connect Customer is unable to download the email body from the S3 bucket. This might be due to the S3 bucket policy not being set up correctly (see [Step 4: Enable email and create an Amazon S3 bucket](enable-email1.md#enable-email-buckets)), Amazon Connect does not have proper access to the S3 bucket (see [Step 5: Configure a CORS policy](enable-email1.md#config-email-attachments-cors1)), or there is no email message in plaintext format available on the contact.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

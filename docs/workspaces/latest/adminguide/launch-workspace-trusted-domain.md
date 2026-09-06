@@ -24,7 +24,3 @@ A one-way or two-way trust can be used to manage and authenticate with WorkSpace
 **Note**
 Red Hat Enterprise Linux, Rocky Linux, and Ubuntu WorkSpaces use System Security Services Daemon (SSSD) for Active Directory integration, and SSSD does not support forest trust. Configure external trust instead. Two-way external trust is recommended for Linux WorkSpaces.
 Web Access is supported for Windows and Linux WorkSpaces. For information about Web Access limitations on Amazon Linux 2 WorkSpaces, see [Manage your Amazon Linux 2 WorkSpaces in WorkSpaces Personal](manage_linux_workspace.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

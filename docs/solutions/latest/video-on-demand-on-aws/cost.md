@@ -47,7 +47,3 @@ HLS profile: 3 SD and 2 HD (3 x 60 x $ 0.0075) \+ (2 x 60 x $ 0.024)
 Total cost = $ 1.35 \+ $ 2.88 = **$ 4.23**
 
 The costs for CloudFront and Amazon S3 storage varies depending on the number and format of outputs created and the number of requests to view the content delivered through CloudFront. To calculate your average cost, use the data size of your output multiplied by the average number of viewers for your stream.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Video on Demand on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

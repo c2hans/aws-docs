@@ -18,7 +18,3 @@ For Unified Operations to deliver maximum value, we recommend the following coll
 + Participate in gameday exercises to validate incident response processes.
 
 This collaborative framework helps you maximize the value of Unified Operations, achieve your uptime goals, mitigate operational risks, and receive comprehensive support for your mission-critical workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

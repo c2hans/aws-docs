@@ -52,7 +52,3 @@ Cost allocation based on queue only applies to jobs that run in on-demand queues
 
 **Listing hopped jobs**
 When you view your job, MediaConvert displays the queue that you submitted your job. For example, if you submit a job to `Queue1`, and it hops to `Queue2`, that job appears in lists that are filtered for `Queue1`. It doesn't appear in lists filtered for `Queue2`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

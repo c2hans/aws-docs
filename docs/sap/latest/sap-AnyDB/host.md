@@ -348,7 +348,3 @@ Add the following lines to `/etc/fstab` to preserve mounted file systems during 
 + Changes to the `nconnect` parameter take effect only if the NFS file system is unmounted and mounted again.
 + Client systems must have unique host names when accessing FSx for ONTAP. If there are systems with the same name, the second system may not be able to access FSx for ONTAP.
 + For RHEL operating system, the `nconnect` parameter is supported only on RHEL 8.3 or higher.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

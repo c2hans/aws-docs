@@ -233,7 +233,3 @@ For more information about this execution block, see [ARC routing control execut
 1. You can view detailed steps as the plan executes on the execution details page. You can see each step in the plan execution, including start time, end time, resource ARN, and log messages.
 
 When the impaired Region has recovered, you can execute the plan again (changing the parameters that you provide) to activate the original Region, to switch back your application operations to the original primary Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

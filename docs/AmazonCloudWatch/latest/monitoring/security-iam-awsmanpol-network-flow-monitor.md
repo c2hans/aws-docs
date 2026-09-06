@@ -42,7 +42,3 @@ To view the permissions for this policy, see [CloudWatchNetworkFlowMonitorAgentP
 <a name="security-iam-awsmanpol-network-flow-monitor-updates"></a>
 
 For updates to the AWS managed policies for the Network Flow Monitor service-linked roles, see the [AWS managed policies updates table](managed-policies-cloudwatch.md#security-iam-awsmanpol-updates) for CloudWatch. You can also subscribe to automatic RSS alerts on the CloudWatch [Document history page](DocumentHistory.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -156,7 +156,3 @@ The response includes an `Errors` list for records that failed and an `Unprocess
 
 **Note**
 The `TtlDuration` is calculated relative to the record's `EventTime`. If the `EventTime` plus the `TtlDuration` is in the past, Amazon SageMaker Feature Store does not store the record in the online store.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

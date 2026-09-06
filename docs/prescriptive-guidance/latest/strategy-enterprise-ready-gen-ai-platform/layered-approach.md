@@ -27,7 +27,3 @@ This layered approach provides the following key benefits:
 + It reduces risk through proven patterns and practices.
 
 By implementing these four layers, organizations can create a solid foundation for their generative AI initiatives while maintaining the flexibility to adapt to new requirements and opportunities.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

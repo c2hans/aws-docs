@@ -20,7 +20,3 @@ Obtain the following information from the video engineer who created the SMPTE 2
 + A list of the audio selectors you must create and the IDs of the channel groups (audio tracks) to include in each selector. (You don't need this information for video or ancillary streams.)
 
   MediaLive assigns a track number to each channel group, starting with the first channel group in the first line in the first SDP file, and covering all the audio lines in all the audio SDP files. The tracks are numbered from 1.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

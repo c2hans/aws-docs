@@ -16,7 +16,3 @@ Customers should monitor changes such as new adequacy decisions, evolving case l
 Customers can take advantage of AWS's multi-region, multi-account capabilities to structure environments that align with different legal requirements, including national restrictions on data location, access, or processing. AWS provides tools that support data residency controls, granular access management, detailed logging, and encryption key management across regions. In addition, AWS regularly updates its compliance programs, guidance, and service-level features to reflect new legal standards and regulatory frameworks.
 
 By using these AWS capabilities as part of a structured compliance strategy, customers can adapt more easily to regulatory change, reduce the need for costly architectural rework, and stay aligned with evolving data protection expectations across jurisdictions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

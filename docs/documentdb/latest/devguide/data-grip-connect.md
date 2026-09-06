@@ -80,7 +80,3 @@ DataGrip provides various features to help you work with Amazon DocumentDB effic
 + **Export and Import Data** — Transfer data between Amazon DocumentDB and other databases using DataGrip's export and import features.
 
 Refer to the official [DataGrip documentation](https://www.jetbrains.com/datagrip/features/) for more advanced features and tips on working with Amazon DocumentDB and other database systems.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

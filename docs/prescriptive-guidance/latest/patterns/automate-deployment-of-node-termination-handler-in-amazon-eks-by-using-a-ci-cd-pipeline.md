@@ -194,7 +194,3 @@ kubectl -n kube-system logs aws-node-termination-handler-65445555-kbqc7
 2022/07/17 20:20:44 INF Node successfully cordoned and drained node_name=ip-192-168-75-60.us-east-2.compute.internal reason="ASG Lifecycle Termination event received. Instance will be interrupted at 2022-07-17 20:20:42.702 +0000 UTC \n"
 2022/07/17 20:20:44 INF Completed ASG Lifecycle Hook (NTH-K8S-TERM-HOOK) for instance i-0409f2a9d3085b80e
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

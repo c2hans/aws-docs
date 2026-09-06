@@ -94,7 +94,3 @@ The following are the basic policy elements:
 To learn more about IAM policy syntax and descriptions, see [IAM JSON policy reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies.html) in the *IAM User Guide*.
 
 For a table showing all of the CodeGuru Reviewer API actions and the resources they apply to, see [Amazon CodeGuru Reviewer permissions reference](auth-and-access-control-permissions-reference.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

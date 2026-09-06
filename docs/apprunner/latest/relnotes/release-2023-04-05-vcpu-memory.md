@@ -19,7 +19,3 @@ AWS App Runner adds support for seven new vCPU and memory configurations. Previo
 After this release, you can now create configurations that have even higher vCPU and memory requirements. Or, if your vCPU and memory requirements are lower, you can create more cost-effective configurations by using one of the additional supported configurations. For more information about the supported configurations, see [App Runner architecture and concepts](https://docs.aws.amazon.com/apprunner/latest/dg/architecture.html).
 
 You pay based on the vCPU and memory configuration that you choose. For more information on pricing see, [AWS App Runner Pricing](https://aws.amazon.com/apprunner/pricing).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

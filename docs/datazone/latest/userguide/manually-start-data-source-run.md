@@ -22,7 +22,3 @@ Even if your source runs on a schedule, you can still run it manually at any tim
 1. Choose **Run on demand**.
 
    The data source status changes to `Running` as Amazon DataZone updates the asset metadata with the most recent data from the source. You can monitor the status of the run on the **Data source runs** tab.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

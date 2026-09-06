@@ -22,7 +22,3 @@ The following sections provide details on how to use each monitoring feature in 
 + [Viewing thumbnails of the source video](monitor-with-thumbnails.md)
 + [Monitoring using source metadata](monitor-with-source-stream-monitoring.md)
 + [Monitoring flow and source health](monitor-flow-and-source-health.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

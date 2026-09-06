@@ -130,7 +130,3 @@ Skills in:
 + Identifying the services that can present the output of virtual machines (VMs) on end-user machines
 + Identifying the services that can create and deploy frontend and mobile services
 + Identifying the services that manage IoT devices
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

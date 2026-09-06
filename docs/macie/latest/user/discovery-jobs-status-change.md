@@ -31,7 +31,3 @@ To pause, resume, or cancel a job by using the Amazon Macie console, follow thes
    + To pause the job temporarily, choose **Pause**. This option is available only if the job's current status is **Active (Idle)**, **Active (Running)**, or **Paused (By Macie)**.
    + To resume the job, choose **Resume**. This option is available only if the job's current status is **Paused (By user)**.
    + To cancel the job permanently, choose **Cancel**. If you choose this option, you can't subsequently resume or restart the job.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

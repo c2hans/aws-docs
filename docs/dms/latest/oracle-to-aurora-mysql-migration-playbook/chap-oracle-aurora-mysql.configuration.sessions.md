@@ -120,7 +120,3 @@ You can also use a time zone name such as `Europe/Helsinki` instead of `+10:00`.
 | Memory allocated to hash-joins |  <pre>ALTER SESSION<br />SET hash_area_sizee= 1048576000;</pre>  |  <pre>SET SESSION join_buffer_size=1048576000;</pre>  |
 
 For more information, see [SET Syntax for Variable Assignment](https://dev.mysql.com/doc/refman/5.7/en/set-variable.html) in the *MySQL documentation*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -82,7 +82,3 @@ When you update a table from on-demand to provisioned mode:
   + Minimum provisioned capacity: 5 units
   + Maximum provisioned capacity: The Region maximum
 +  If you're using the AWS CLI or SDK, your previous auto scaling settings (if any) are preserved.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

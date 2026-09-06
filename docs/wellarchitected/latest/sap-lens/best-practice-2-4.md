@@ -34,7 +34,3 @@ Use multiple SAP environments to experiment, develop, and test your workload. Us
 
  When environments are not in use, turn them off to avoid costs associated with idle resources (for example, development systems on evenings and weekends).
 +  SAP on AWS Blog: [Automate Start or Stop of Distributed SAP HANA systems using AWS Systems Manager](https://aws.amazon.com/blogs/awsforsap/automate-start-or-stop-of-distributed-sap-hana-systems-using-aws-systems-manager/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

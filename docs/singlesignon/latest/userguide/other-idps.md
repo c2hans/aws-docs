@@ -31,7 +31,3 @@ If you have any issues connecting your IdP to IAM Identity Center, we recommend 
 
 **Note**
 Some IdPs, such as the ones in the [IAM Identity Center identity source tutorials](tutorials.md), offer a simplified configuration experience for IAM Identity Center in the form of an “application” or “connector” built specifically for IAM Identity Center. If your IdP provides this option, we recommend that you use it, being careful to choose the item that’s built specifically for IAM Identity Center. Other items called “AWS”, “AWS federation”, or similar generic "AWS" names may use other federation approaches and/or endpoints, and may not work as expected with IAM Identity Center.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

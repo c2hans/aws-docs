@@ -114,7 +114,3 @@ In the preceding example, do the following:
 + Replace {{resource-arn}} with the Amazon Resource Name (ARN) of the resource that you want to add a tag to.
 + Replace {{key1}} and {{key2}} with the keys of the tags that you want to add to the resource.
 + Replace {{value1}} and {{value2}} with the values of the tags that you want to add for the respective keys.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

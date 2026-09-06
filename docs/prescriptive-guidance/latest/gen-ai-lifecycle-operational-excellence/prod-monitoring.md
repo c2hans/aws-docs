@@ -19,7 +19,3 @@ This section details the technical implementation of monitoring systems, drift d
 + [Advanced operations for generative AI applications in production](prod-monitoring-advanced-operations.md)
 + [Enterprise-grade security and governance for generative AI applications](prod-monitoring-security.md)
 + [Scalable maintenance and user support for generative AI applications](prod-monitoring-maintenance.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

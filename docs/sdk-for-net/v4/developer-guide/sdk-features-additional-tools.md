@@ -29,7 +29,3 @@ If you're using services such as Amazon SQS, Amazon SNS or Amazon EventBridge, y
 <a name="sdk-features-aspire-integrations"></a>
 
 You can take advantages of integrations with .NET Aspire to improve the inner dev loop. For more information, see [Integrating AWS with .NET Aspire in the AWS SDK for .NET](aspire-integrations.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

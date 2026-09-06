@@ -45,7 +45,3 @@ If you have configured an out-of-order time window, consider setting the rule qu
    1. (Optional) To define another label set, choose **Add another label set** and repeat the previous steps.
 
 1. When you are finished, choose **Save changes**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Service for Prometheus. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prometheus` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

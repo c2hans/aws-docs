@@ -60,7 +60,3 @@ The following categories and associated prompts are examples of the types of tas
 + **Security and compliance** – Check traffic and internet accessibility to EC2 resources, verify internet connectivity for EC2 instances across regions.
 
 For a list of suggested use cases, choose the Amazon Q prompt library icon in the Q chat panel and filter by table or visualization response type.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

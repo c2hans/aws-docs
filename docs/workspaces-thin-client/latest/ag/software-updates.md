@@ -25,7 +25,3 @@ To ensure the security posture of the device remains intact, the service automat
 If a Software set with security patches or a critical update is released, all prior Software sets will be set to expire in 3 days. To ensure your device remains secure and minimize disruption to daily operations, we recommend updating these Software sets immediately.
 
 Refer to [ WorkSpaces Thin Client environment software sets](environment-software-sets.md) for the list of released Software Sets.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

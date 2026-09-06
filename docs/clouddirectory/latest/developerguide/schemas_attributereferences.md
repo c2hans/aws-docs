@@ -126,7 +126,3 @@ An attribute references can have a required behavior that is different from its 
 + As with attribute definitions, you must provide values for any required attribute definitions when you create the object or when you add a facet to an existing object.
 + As a convenience, when more than one attribute on an object refers to the same storage location, you only need to provide a value for one of the attributes for that storage location.
 + Similarly, if you do provide multiple values for the same storage location, the values must be equal.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,3 @@ The following table summarizes the actions available on source servers at each p
 | Disconnect from service | After migration | Remove the server from active AWS Transform MGN management. |
 | Archive server | After migration | Move the server to the archived view to keep the console organized. |
 | Delete server | After migration | Permanently remove the server record from AWS Transform MGN. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

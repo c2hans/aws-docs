@@ -34,7 +34,3 @@ A profile for an SPTS channel must include a UDP/TS output group that has one ou
 The profile that you created is listed on the **Profiles** page:
 + Conductor Live assigns a unique numerical ID to the profile.
 + Under the **Channels** column, the profile displays **0 0**. This indicates that the profile is not yet being used by any channels.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

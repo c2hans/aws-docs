@@ -14,7 +14,3 @@ Here are some prerequisites for importing data into Neptune using AWS DMS:
 + You will need to create a Neptune `GraphMappingConfig` to specify how the data extracted from the source database should be loaded into Neptune. For RDF data (queried using SPARQL), the `GraphMappingConfig` is written in the W3's standard [R2RML](https://www.w3.org/TR/r2rml/) mapping language. For property graph data (queried using Gremlin), the `GraphMappingConfig` is a JSON object, described in [GraphMappingConfig Layout for Property-Graph/Gremlin Data](dms-neptune-graph-mapping.md#dms-neptune-graph-mapping-gremlin).
 + You must use AWS DMS to create a replication instance in the same VPC as your Neptune DB cluster, to mediate the transfer of data.
 + You will also need an Amazon S3 bucket to be used as intermediate storage for staging the migration data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

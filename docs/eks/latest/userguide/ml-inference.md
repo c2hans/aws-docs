@@ -88,7 +88,3 @@ The [Load & Serve Model](ml-inference-load-serve-model.md) walkthrough guides yo
 1.  **Deploy a chat frontend** — Open WebUI provides a browser-based chat interface connected to the vLLM endpoint.
 
 The walkthrough uses the cluster infrastructure from the [Set up Amazon EKS cluster for AI/ML workloads](ml-cluster-setup.md) section and works with both EKS Auto Mode and self-managed Karpenter paths.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

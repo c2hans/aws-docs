@@ -56,7 +56,3 @@ View details about updates to AWS managed policies for CloudTrail. For automatic
 | [`CloudTrailServiceRolePolicy`](#security-iam-awsmanpol-CloudTrailServiceRolePolicy) – Update to an existing policy | Updated policy to allow the following actions on an organization event data store when federation is disabled:+  `glue:DeleteTable` <br />+  `lakeformation:DeregisterResource`  | November 26, 2023 |
 | [`AWSCloudTrail_ReadOnlyAccess`](#security-iam-awsmanpol-AWSCloudTrail-ReadOnlyAccess) – Update to an existing policy | CloudTrail changed the name of the `AWSCloudTrailReadOnlyAccess` policy to `AWSCloudTrail_ReadOnlyAccess`. Also, the scope of permissions in the policy has been reduced to CloudTrail actions. It no longer includes Amazon S3, AWS KMS, or AWS Lambda action permissions. | June 6, 2022 |
 | CloudTrail started tracking changes | CloudTrail started tracking changes for its AWS managed policies. | June 6, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

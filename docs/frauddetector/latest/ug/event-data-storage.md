@@ -20,7 +20,3 @@ The following table provides details about the model type and the data source it
 | Account Takeover Insights | Internal storage |
 
 For information on storing your dataset externally with Amazon Simple Storage Service, see [Store your event data externally with Amazon S3](uploading-event-data-to-an-s3-bucket.md). For information on storing your dataset internally with Amazon Fraud Detector see [Store your event data internally with Amazon Fraud Detector](storing-event-data-afd.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

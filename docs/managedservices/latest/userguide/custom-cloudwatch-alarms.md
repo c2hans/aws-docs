@@ -32,7 +32,3 @@ You can use the CloudWatch event stream. AMS is integrated with CloudWatch and y
 To do this, submit a Management \| Other \| Other \| Update CT (ct-0xdawir96cy7k) with the API calls that you are interested in. An AMS operator will talk to you to gather requirements. To learn more, see the [Amazon CloudWatch Documentation](https://docs.aws.amazon.com/cloudwatch/index.html).
 
 To get access to the CloudWatch event stream, submit a Management \| Other \| Other \| Update CT (ct-0xdawir96cy7k) to add a party to the SNS notification topic. An AMS operator will talk to you to gather requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

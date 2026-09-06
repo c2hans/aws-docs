@@ -279,7 +279,3 @@ CloudFormation property-level change sets does not resolve cross-stack reference
       "ChangeSetId": "arn:aws:cloudformation:us-east-1:123456789012:changeSet/ExampleChangeSet/9f7b541b-126b-44f7-998e-932174557841",
       "StackId": "arn:aws:cloudformation:us-east-1:123456789012:stack/ExampleStack/ab664180-f686-11ee-9e29-12cd92393671",
   ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

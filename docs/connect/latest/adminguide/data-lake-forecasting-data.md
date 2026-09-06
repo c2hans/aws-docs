@@ -208,7 +208,3 @@ If you are unable to access the scheduling tables by using Option 1, try using O
 |  is\_deleted  |  Boolean  |  Yes  |  Whether the demand group is deleted.  |
 |  last\_updated\_timestamp |  Timestamp  |  Yes  |  Timestamp when the demand group was last created/updated/deleted.  |
 | data\_lake\_last\_processed\_timestamp |  Timestamp  |  Yes  | Timestamp, which shows the last time the record was touched by the data lake. This can include transformation and backfill. This field cannot reliably be used to determine data freshness. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

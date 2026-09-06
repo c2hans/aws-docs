@@ -292,7 +292,3 @@ Amazon S3 offers an MFA Delete feature for *root* account access (only). You can
    For an example of a program that calls `GetSessionToken`, see [Calling GetSessionToken with MFA authentication](id_credentials_mfa_sample-code.md#MFAProtectedAPI-example-getsessiontoken) later in this document.
 **Note**
 The temporary credentials that `AssumeRole` returns won't work in this case. Although the user can provide MFA information to assume a role, the temporary credentials returned by `AssumeRole` don't include the MFA information. That information is required in order to meet the MFA condition in the policy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -787,7 +787,10 @@ Sample PURL: pkg:generic/github/copilot@0.1.36?distro=linux
 
  For each of the supported artifacts, the Sbomgen parses and collects either chrome file or the puppeteer file. For puppeteer installations, the corresponding Chromium version is collected based on the puppeteer version. For more information, see [Supported browsers](https://pptr.dev/supported-browsers) on the Puppeteer website.
 
- When the `PUPPETEER_SKIP_CHROMIUM_DOWNLOAD` environment variable is set to `true`, evaluation is skipped, and the `skip_chromium_download=true` qualifier is added to the Puppeteer package URL.
+ When any of the following environment variables is set to `true`, evaluation is skipped, and the `skip_chromium_download=true` qualifier is added to the Puppeteer package URL.
++  `PUPPETEER_SKIP_CHROMIUM_DOWNLOAD`
++  `PUPPETEER_CHROME_SKIP_DOWNLOAD`
++  `PUPPETEER_SKIP_DOWNLOAD`
 
 **Example `chrome/VERSION` version file**
  The following is an example of the `chrome/VERSION` version file.
@@ -1817,7 +1820,3 @@ Sample PURL: pkg:generic/wordpress/theme/avada@1.0.0
 ```
 Sample PURL: pkg:generic/zed-industries/zed@1.2.6?distro=linux
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

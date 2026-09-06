@@ -23,7 +23,3 @@ To update a single account in the AWS Control Tower console, see [Update the acc
 1. In the upper right, choose the **Actions** dropdown to **Update**.
 
 To learn more about updating in AWS Service Catalog, see [Update the provisioned product in Service Catalog](update-provisioned-product.md) and [Updating products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/productmgmt-update.html) in the *Service Catalog Administrator Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

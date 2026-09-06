@@ -112,7 +112,3 @@ Your Lambda function comes with a CloudWatch Logs log group. The function runtim
 + [Log and monitor Java Lambda functions](java-logging.md)
 + [Instrumenting Java code in AWS Lambda](java-tracing.md)
 + [Java sample applications for AWS Lambda](java-samples.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

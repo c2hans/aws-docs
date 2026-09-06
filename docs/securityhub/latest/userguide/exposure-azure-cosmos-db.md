@@ -47,7 +47,3 @@ Take one or more of the following actions to address this exposure:
 
 **Remediation: Enable continuous backup mode**
  Configure the account to use continuous backup mode (7-day or 30-day tier) so that point-in-time restore is available. Review the current limitations and supported APIs before migrating from periodic to continuous backup. For more information, see [Continuous backup with point-in-time restore](https://learn.microsoft.com/en-us/azure/cosmos-db/continuous-backup-restore-introduction) in the Microsoft Azure documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

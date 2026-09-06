@@ -23,7 +23,3 @@ Use the following attributes in query plans to identify how data is moved to fac
 + **DS\_DIST\_OUTER** – Indicates that the outer join table is redistributed. If the outer table is much smaller or infrequently updated, consider changing that table to `DISTSTYLE ALL`.
 + **DS\_DIST\_ALL\_INNER** – Indicates that the inner join table is being sent to a single node because the join table uses `DISTSTYLE ALL`. This join is executed on a single node and is likely to be slow.
 + **DS\_DIST\_BOTH** – Indicates that both tables in the join are being redistributed to all nodes. This is the worst possible option.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

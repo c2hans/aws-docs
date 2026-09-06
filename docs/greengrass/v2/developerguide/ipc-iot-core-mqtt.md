@@ -15,6 +15,7 @@ This MQTT messaging IPC service lets you exchange messages with AWS IoT Core. Fo
 + [Authorization](#ipc-iot-core-mqtt-authorization)
 + [PublishToIoTCore](#ipc-operation-publishtoiotcore)
 + [SubscribeToIoTCore](#ipc-operation-subscribetoiotcore)
++ [SubscribeToIoTCoreConnectionStatus](#ipc-operation-subscribetoiotcoreconnectionstatus)
 + [Examples](#ipc-iot-core-mqtt-examples)
 
 ## Minimum SDK versions
@@ -1339,6 +1340,60 @@ int main() {
 
 ------
 
+## SubscribeToIoTCoreConnectionStatus
+<a name="ipc-operation-subscribetoiotcoreconnectionstatus"></a>
+
+Use this operation to subscribe to the status of the MQTT connection between the core device and AWS IoT Core. After you subscribe, you receive the current connection status as the first event. Then, you receive an event each time the core device connects to or disconnects from AWS IoT Core.
+
+<a name="ipc-subscribe-operation-note"></a>This operation is a subscription operation where you subscribe to a stream of event messages. To use this operation, define a stream response handler with functions that handle event messages, errors, and stream closure. For more information, see [Subscribe to IPC event streams](interprocess-communication.md#ipc-subscribe-operations).
+
+**Event message type:** `IoTCoreConnectionStatusEvent`
+
+**Note**
+This operation doesn't require an authorization policy, because it's an informational, local-only operation that doesn't expose MQTT topic data. You can call this operation in your components without an `accessControl` entry in the component recipe.
+
+### Request
+<a name="ipc-operation-subscribetoiotcoreconnectionstatus-request"></a>
+
+This operation's request doesn't have any parameters.
+
+### Response
+<a name="ipc-operation-subscribetoiotcoreconnectionstatus-response"></a>
+
+This operation's response has the following information:
+
+`connectionStatusEvent` (Python: `connection_status_event`)
+The `ConnectionStatusEvent` object in each streamed `IoTCoreConnectionStatusEvent`. This object reports the MQTT connection state of the core device, and contains the following information:
+`status`
+The status of the MQTT connection between the core device and AWS IoT Core. This enum, `ConnectionStatus`, has the following values:
++ `CONNECTED` – The core device is connected to AWS IoT Core.
++ `DISCONNECTED` – The core device is disconnected from AWS IoT Core.
+
+### Example events
+<a name="ipc-operation-subscribetoiotcoreconnectionstatus-examples"></a>
+
+Each event in the stream is the JSON serialization of an `IoTCoreConnectionStatusEvent` object. The `connectionStatusEvent` key identifies the type of event in the stream.
+
+After you subscribe, you receive the following example event when the core device is connected to AWS IoT Core. You also receive this event when the connection resumes.
+
+```
+{
+  "connectionStatusEvent": {
+    "status": "CONNECTED"
+  }
+}
+```
+
+You receive the following example event when the core device loses its MQTT connection.
+
+```
+{
+  "connectionStatusEvent": {
+    "status": "DISCONNECTED"
+  }
+}
+```
+
 ## Examples
 <a name="ipc-iot-core-mqtt-examples"></a>
 
@@ -2219,7 +2274,3 @@ int main() {
     }
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

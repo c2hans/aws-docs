@@ -124,7 +124,3 @@ https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-modify-sdp-pt.html
 ```
 
 In v1.4.0 and later, the library only needs to be imported once at the top of your training script and set as the backend during the PyTorch distributed initialization. With the single line of backend specification, you can keep your PyTorch training script unchanged and directly use the PyTorch distributed modules. See [Use the SMDDP library in your PyTorch training script](data-parallel-modify-sdp-pt.md) to learn about the breaking changes and the new way to use the library with PyTorch.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

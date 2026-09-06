@@ -103,7 +103,3 @@ Shows the number of times that users created new accounts for your app for each 
 
 **Authentication failures**
 Shows the number of times that users attempted to sign in but were unable to do so for each day in the selected time period. This chart also provides the average number of authentication failures for the entire time period, and the percentage change in the number of authentication failures from the beginning to the end of the time period.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

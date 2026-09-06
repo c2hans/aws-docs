@@ -72,7 +72,3 @@ Use one of the following templates to integrate with your ticketing system.
  [![View Template](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/blueprints/ServiceNowBlueprintStack.template) **ServiceNowBlueprintStack.template** - Deploy if you use ServiceNow as your ticketing system.
 
 If you want to integrate a different external ticketing system, you can use either of these stacks as blueprint to understand how to implement your own custom integration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

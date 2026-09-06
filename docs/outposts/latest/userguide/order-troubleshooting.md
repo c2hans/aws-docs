@@ -171,7 +171,3 @@ To resolve this issue, use the AWS Outposts console or CLI.
    1. If there are no running capacity tasks for an isolated asset, then the asset may be degraded.
 
 1. After you verify that the asset exists and is in a valid state, retry your request to create the capacity task.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

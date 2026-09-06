@@ -57,7 +57,3 @@ To perform the following steps, you must sign into the account as an IAM user wh
 1. When you are finished editing your trust policy, choose **Update Trust Policy** to save your changes.
 
 1. The IAM role that you selected will display in the WorkSpaces Applications console. This role grants permissions to applications and scripts to perform API actions and management tasks on streaming instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

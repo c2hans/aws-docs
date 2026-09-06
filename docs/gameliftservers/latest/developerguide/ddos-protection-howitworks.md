@@ -59,7 +59,3 @@ This per-player rate limit helps prevent individual players from overwhelming ga
 Game clients communicate using IPv4. Player gateway uses IPv6 to communicate with game servers. Amazon GameLift Servers automatically handles the translation between IPv4 and IPv6 based on your fleet configuration.
 
 For more information on configuring player gateway on your fleet, see [CreateFleet](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_CreateFleet.html#gameliftservers-CreateFleet-request-PlayerGatewayMode) or [CreateContainerFleet](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_CreateContainerFleet.html#gameliftservers-CreateContainerFleet-request-PlayerGatewayMode). For more information about IPv4 and IPv6 support, see [IPv4 and IPv6 compatibility](ddos-protection-enable.md#ddos-protection-enable-ip-protocol).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

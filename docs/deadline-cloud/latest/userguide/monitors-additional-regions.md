@@ -10,7 +10,7 @@ The Deadline Cloud monitor displays farms from all AWS Regions where AWS Deadlin
 ## Managing users across Regions
 <a name="monitors-add-users-cross-region"></a>
 
-You can add users and groups to farms in any Region from the Deadline Cloud console. The console handles cross-Region AWS IAM Identity Center (IAM Identity Center) membership assignment. For more information about managing farm membership, see [Managing users in Deadline Cloud](managing-users.md).
+You can add users and groups to farms in any Region from the Deadline Cloud console. The console handles cross-Region AWS IAM Identity Center (IAM Identity Center) membership assignment. Your IAM Identity Center instance doesn't need to be in the same Region as the farm: a membership references the IAM Identity Center user or group by its identifier, so you can assign the same users and groups to farms in any Region. If you assign memberships with the API or the AWS CLI, for example with `AssociateMemberToQueue`, send the request to the Region that contains the farm. For more information about managing farm membership, see [Managing users in Deadline Cloud](managing-users.md).
 
 ## When to create additional monitors
 <a name="monitors-when-multiple"></a>
@@ -58,7 +58,3 @@ Multi-Region replication is useful in the following scenarios:
 + You need monitors that continue to work if the IAM Identity Center primary Region is unavailable.
 
 To enable multi-Region replication, see [Using IAM Identity Center across multiple AWS Regions](https://docs.aws.amazon.com/singlesignon/latest/userguide/multi-region-iam-identity-center.html) in the *IAM Identity Center User Guide*. After you enable replication for a Region, you can create Deadline Cloud monitors there by using the console or an AWS SDK.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

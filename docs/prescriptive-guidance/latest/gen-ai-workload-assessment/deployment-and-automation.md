@@ -25,7 +25,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-work
 | What monitoring and observability tools are you considering for generative AI deployments? | Prometheus for metrics collection and Grafana for visualization, with additional custom logging solutions for model-specific monitoring. |
 | How are you addressing data movement and synchronization in a hybrid deployment model? | We will use AWS DataSync for efficient data transfer between on-premises storage and AWS, with automated synchronization jobs that are scheduled based on our training cycles. |
 | What security measures are you implementing for generative AI deployments across different environments? | We will use IAM for cloud resources, integrated with our on-premises Active Directory to implement end-to-end encryption and network segmentation to secure data flows. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

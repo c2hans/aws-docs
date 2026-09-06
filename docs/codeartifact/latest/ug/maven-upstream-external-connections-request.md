@@ -49,7 +49,3 @@ For example, let's say a domain has three repositories: `repo-A`, `repo-B`, and 
 Package version `7.3.1` of Maven package `com.android.tools.build:aapt2` is present in `repo-B` and has a status of `Published`. It is not present in `repo-A`. If a client requests an asset of this package version from `repo-A`, the response will be a 200 (OK) and Maven package version `7.3.1` will be retained in `repo-A`. However, if the status of package version `7.3.1` in `repo-B` is `Archived` or `Disposed`, the response will be 404 (Not Found) because the assets of package versions in those two statuses are not downloadable.
 
 Note that setting the [package origin control](package-origin-controls.md) to `upstream=BLOCK` for `com.android.tools.build:aapt2` in `repo-A`, `repo-B`, and `repo-C` will prevent new assets from being fetched for all versions of that package from `repo-A`, regardless of the package version status.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

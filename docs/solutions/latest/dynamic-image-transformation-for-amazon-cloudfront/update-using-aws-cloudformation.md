@@ -18,7 +18,3 @@ Dynamic Image Transformation for Amazon CloudFront version 8.0.0 introduces sign
  **Clean Deployment Required**: To use the ECS architecture or any v8.0.0 features, you must deploy a **new stack** using the v8.0.0 CloudFormation template
  **Migration Path:** - **Lambda Architecture**: Existing deployments can be updated to v8.0.0 Lambda template for maintenance and security updates - **ECS Architecture**: Requires a completely new deployment - cannot be updated from any previous version - **Feature Access**: Advanced features (transformation policies, non-S3 origins, Admin UI) are only available in the new ECS architecture
  **Recommendation**: Deploy the new ECS architecture as a separate stack, test thoroughly, then migrate traffic and [uninstall](uninstall-the-solution.md) the previous version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

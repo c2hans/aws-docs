@@ -25,7 +25,3 @@ The overall process consists of six steps, which are highlighted in the followin
 1. **Establish cadence** – Establish a cadence to repeat the cost optimization review.
 
 Continuously repeat this cost optimization process and compare the previous documented results. Using this process, you can reduce costs iteratively.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

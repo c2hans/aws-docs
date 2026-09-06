@@ -39,7 +39,3 @@ Amazon ECS sends a task state change event (`START`) for each task that it start
 Amazon ECS sends a task state change event (`STOPPED`) event for each task that it stops as part of the rebalancing process. The reason is set to `Availability-zone rebalancing initiated by (deployment ecs-svc/{{deployment-id}})`.
 
 For more information about the events, see [Amazon ECS task state change events](ecs_task_events.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

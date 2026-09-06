@@ -65,6 +65,14 @@ The console validates that the selected task definition family and revision are 
 
       1.  (Optional) For **Hook details**, enter a key value pair that provides information about the hook.
 
+1. Under **Deployment configuration**, to complete the deployment before the target service revision reaches the full desired count, configure early success criteria. You can also choose when Amazon ECS cleans up the tasks on the source service revision.
+
+   1. Turn on **Early success criteria**.
+
+   1. For **Healthy percent**, enter the percentage of tasks that must be running and healthy on the target service revision before Amazon ECS completes the deployment.
+
+   1. For **Source service revision cleanup**, choose **Blocking** or **Deferred**.
+
 1. To configure how Amazon ECS detects and handles deployment failures, expand **Deployment failure detection**, and then choose your options.
 
    1. To stop a deployment when the tasks cannot start, select **Use the Amazon ECS deployment circuit breaker**.
@@ -155,7 +163,3 @@ To disable access logs, for **Format**, choose **None**.
 <a name="update-service-next-steps"></a>
 
 Track your deployment and view your service history for services that Amazon ECS circuit breaker. For more information, see [View service history using Amazon ECS service deployments](service-deployment.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

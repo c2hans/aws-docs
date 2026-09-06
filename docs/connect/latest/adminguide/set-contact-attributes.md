@@ -88,10 +88,19 @@ Attributes can be up to 32 KB, which is the maximum size of the contact record a
 ## Configuration tips
 <a name="set-contact-attributes-tips"></a>
 + When using a user-defined destination key, you can name it anything you want but don't include the **$** and **.** (period) characters. They are not allowed because they are both used in defining the attribute paths in JSONPath.
-+ You can use the **Set contact attribute** block to set the language attribute required for an Amazon Lex V2 bot. (Your language attribute in Connect Customer must match the language model used to build your Amazon Lex V2 bot.) The following image shows a language attribute set to Spanish.
++ You can use the **Set contact attributes** block to set the language attribute required for an Amazon Lex V2 bot. (Your language attribute in Connect Customer must match the language model used to build your Amazon Lex V2 bot.) The following image shows a language attribute set to Spanish.
 ![The properties page for Set contact attributes, Value set to Spanish.](http://docs.aws.amazon.com/connect/latest/adminguide/images/set-contact-attributes-language.png)
 
   Or, you can use the [Set voice](set-voice.md) block to set the language required for an Amazon Lex V2 bot.
++ You can use the **Set contact attributes** block to update the task template currently in use on task contacts. The following image shows a task template being set to the "Password reset template".
+![The Set contact attributes block configured with System namespace, Task template key, Set manually selected, and Password reset template chosen from the Task template dropdown.](http://docs.aws.amazon.com/connect/latest/adminguide/images/set-contact-attributes-task-template.png)
+  + Task templates can only be updated on in-progress task contacts before they are connected to an agent.
+  + If setting the task template dynamically, the value must be a valid task template ID.
+  + The task template update will be executed after all other updates, so you can update a task to have compatible references and update the task's task template within the same block.
++ You can set attributes on the contact to be the task template ID that the contact currently uses by selecting **Set dynamically**, then selecting **System** and **Task template**.
++ You can use the **Set contact attributes** block to update the contact duration for tasks and emails. The following image shows contact duration being set to 60 minutes.
+![The Set contact attributes block configured to set contact duration to 60 minutes.](http://docs.aws.amazon.com/connect/latest/adminguide/images/set-contact-attributes-expiry-duration.png)
+  + The unit for Expiry Duration is minutes.
 
 For more information about how to use contact attributes, see [Use Connect Customer contact attributes](connect-contact-attributes.md).
 
@@ -113,7 +122,3 @@ Connect Customer includes a set of sample flows. For instructions that explain h
 
 See these topics for scenarios that use this block:
 + [How to reference contact attributes in Connect Customer](how-to-reference-attributes.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

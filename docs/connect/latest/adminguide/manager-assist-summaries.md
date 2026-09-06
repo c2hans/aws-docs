@@ -49,7 +49,3 @@ Summaries are delivered as short narrative paragraphs rather than as lists of nu
 
 **Important**
 Summaries are generated from the available metrics data, and might not capture every operational nuance. Always cross-reference summaries with your Connect Customer dashboards and reports for critical decisions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

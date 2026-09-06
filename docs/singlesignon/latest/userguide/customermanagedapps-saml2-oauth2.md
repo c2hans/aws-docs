@@ -102,7 +102,3 @@ AWS adds scopes to IAM Identity Center for supported AWS services. The following
 | datazone:domain:access | Access your DataZone Domain Execution Role | Amazon DataZone |
 | nosqlworkbench:datamodeladviser | Create and read data models | NoSQL Workbench |
 | transform:read\_write | Enable access to AWS Transform Agent for code transformation | AWS Transform |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

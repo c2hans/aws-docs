@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 +  [AWS App Runner](https://aws.amazon.com/apprunner/) is a fully managed container application service that lets you build, deploy, and run containerized web applications and API services without prior infrastructure or container experience.
 +  [AWS Fargate](https://aws.amazon.com/fargate/), a serverless compute engine, works with both Amazon ECS and Amazon EKS to automatically manage compute resources for container applications.
 +  [Amazon ECR](https://aws.amazon.com/ecr/) is a fully managed container registry offering high-performance hosting, so you can reliably deploy application images and artifacts anywhere.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

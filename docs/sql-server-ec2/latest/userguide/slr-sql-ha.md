@@ -22,7 +22,3 @@ Amazon EC2 uses the [AWSEC2SqlHaServiceRolePolicy](https://docs.aws.amazon.com/a
 To view the permissions for this policy, see [AWSEC2SqlHaServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2SqlHaServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
 For more information about using managed policies for EC2 instances, see [AWS managed policies for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-iam-awsmanpol.html) in the *Amazon EC2 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SQL Server on Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sql-server-ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

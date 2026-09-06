@@ -17,7 +17,3 @@ The metrics for Amazon Neptune are qualified by the values for the account, grap
 | DatabaseClass | Filters the data you request for all instances in a database class. For example, you can aggregate metrics for all instances that belong to the database class db.r4.large |
 | EngineName | The engine name for all Neptune instances is neptune. |
 | GlobalDbDBClusterIdentifier, SecondaryRegion | Filters the data by the secondary cluster of a specified global database in a secondary region. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

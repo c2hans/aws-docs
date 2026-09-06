@@ -16,7 +16,3 @@ We recommend that you don’t use your production workloads for the migration in
 Make sure that you create all your AWS and DMS Schema Conversion resources in the AWS Regions that support DMS Schema Conversion. For more information, see the [list of supported Regions](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_SchemaConversion.html#schema-conversion-supported-regions). In other Regions, you can use the AWS Schema Conversion Tool (AWS SCT). To download AWS SCT, see [Installing, verifying, and updating](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Installing.html) in the *Schema Conversion Tool User Guide*.
 
 For more information about DMS Schema Conversion, see the [user guide](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_SchemaConversion.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

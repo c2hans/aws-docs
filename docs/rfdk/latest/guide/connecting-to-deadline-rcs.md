@@ -61,7 +61,3 @@ Once you are on the instance, you will need to enter the Docker container that i
    ```
 
 This will put you in the Docker container running the Deadline RCS, where you can inspect the system and perform administrative tasks via [DeadlineCommand](https://docs.thinkboxsoftware.com/products/deadline/10.2/1_User%20Manual/manual/command.html) (typically located at `/opt/Thinkbox/Deadline10/bin/deadlinecommand`). For more information about Deadline, please see [Deadline documentation](https://docs.thinkboxsoftware.com/products/deadline/10.2/1_User%20Manual/index.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Render Farm Deployment Kit on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rfdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

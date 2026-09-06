@@ -62,6 +62,11 @@ The section walks through the steps required to create a static website hosted i
 + Delete objects from an Amazon S3 bucket.
 + Designate an Amazon S3 bucket as a website.
 
+## [Use Amazon S3 as a PowerShell drive](pstools-s3-drive.md)
+<a name="using-s3-drive"></a>
+
+Mount Amazon S3 storage as a drive and work with buckets and objects by using common PowerShell navigation commands such as `Set-Location`, `Get-ChildItem`, `Get-Content`, and `Set-Content`.
+
 ## [AWS Lambda and AWS Tools for PowerShell](pstools-lambda.md)
 <a name="using-lambda"></a>
 
@@ -88,14 +93,11 @@ This section provides an example of how to publish custom data to CloudWatch.
 +  [Configuring and using the AWS Tools for PowerShell](pstools-getting-started.md)
 
 ## Topics
-<a name="w2aac13c23"></a>
+<a name="w2aac13c25"></a>
 + [Amazon S3 and Tools for Windows PowerShell](pstools-s3.md)
++ [Use Amazon S3 as a PowerShell drive](pstools-s3-drive.md)
 + [Amazon EC2 and Tools for Windows PowerShell](pstools-ec2.md)
 + [AWS Lambda and AWS Tools for PowerShell](pstools-lambda.md)
 + [Amazon SQS, Amazon SNS and Tools for Windows PowerShell](pstools-sqs-queue-sns-topic.md)
 + [CloudWatch from the AWS Tools for Windows PowerShell](pstools-cw.md)
 + [Using the ClientConfig parameter in cmdlets](pstools-clientconfig.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

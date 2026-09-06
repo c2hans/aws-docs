@@ -16,7 +16,3 @@ If you plan to join a fleet to an Active Directory domain, configure your Active
 + [Create a Stack in Amazon WorkSpaces Applications](set-up-stacks-fleets-install.md)
 + [Provide Access to Users in Amazon WorkSpaces Applications](set-up-stacks-fleets-add.md)
 + [Clean Up Resources in Amazon WorkSpaces Applications](set-up-stacks-fleets-finish.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

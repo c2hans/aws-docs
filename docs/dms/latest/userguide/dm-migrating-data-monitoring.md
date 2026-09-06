@@ -48,7 +48,3 @@ For homogeneous data migrations, AWS DMS includes the following metrics in Amazo
 | --- | --- |
 | OverallCDCLatency | The overall latency during the CDC phase.<br />For MySQL databases, this metric shows the number of seconds that passes between the change in the source binary log and the replication of this change.<br />For PostgreSQL databases, this metric shows the number of seconds that passes between `last_msg_receipt_time` and `last_msg_send_time` from the `pg_stat_subscription` view.<br />Units: Seconds |
 | StorageConsumption | The storage that your data migration consumes.<br />Units: Bytes |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

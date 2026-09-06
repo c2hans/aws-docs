@@ -37,7 +37,3 @@ Java application transformations with Amazon Q in the IDE and command line maint
 | Lines of code per month | Free tier: 2000 lines of code |
 | Concurrent jobs | 1 job per user<br />25 jobs per AWS account |
 | Jobs per month | Pro tier: 1000 jobs<br />Free tier: 100 jobs |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

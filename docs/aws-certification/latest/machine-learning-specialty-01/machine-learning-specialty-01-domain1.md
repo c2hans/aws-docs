@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/machine-learnin
 <a name="machine-learning-specialty-01-domain1-task3"></a>
 + Transform data in transit (ETL, AWS Glue, Amazon EMR, AWS Batch).
 + Handle ML-specific data by using MapReduce (for example, Apache Hadoop, Apache Spark, Apache Hive).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

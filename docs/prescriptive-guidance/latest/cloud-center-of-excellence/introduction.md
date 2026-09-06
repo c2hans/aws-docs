@@ -31,7 +31,3 @@ The CCoE also plays a pivotal role in driving and sustaining cultural change wit
 Within the central CCoE there can be separate workstreams, or *AWS practices*. An AWS practice is usually focused on a specific technology or industry area, and it can apply to one or multiple geographical areas.
 
 In summary, a Cloud Center of Excellence can be also viewed as Culture Center of Excellence driving and sustaining culture transformation within an organization. It's important to recognize that culture transformation is an ongoing process. The CCoE should continuously monitor and evaluate the culture, making adjustments as necessary to ensure that the changes you want are sustained.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

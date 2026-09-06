@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 <a name="fsirel05-bp02"></a>
 
  Use Direct Connect to provide a consistent network experience rather than internet-based connections. Achieve highly resilient network connections between Amazon Virtual Private Cloud (Amazon VPC) and your on-premises infrastructure by using multiple redundant Direct Connect connections. Use AWS Direct Connect Resiliency Toolkit to help you choose the right resiliency model. The AWS Direct Connect Failover Testing feature allows you to test the resiliency of your AWS Direct Connect connection by disabling the Border Gateway Protocol session between your on-premises networks and AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ In the [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIRef
 | overlap\_threshold | The evaluation overlap threshold.<br />**Optional**<br />Valid values: float in (0, 1]<br />Default: 0.5 |
 | use\_pretrained\_model | Indicates whether to use a pre-trained model for training. If set to 1, then the pre-trained model with corresponding architecture is loaded and used for training. Otherwise, the network is trained from scratch.<br />**Optional**<br />Valid values: 0 or 1<br />Default: 1 |
 | weight\_decay | The weight decay coefficient for `sgd` and `rmsprop`. Ignored for other optimizers.<br />**Optional**<br />Valid values: float in (0, 1)<br />Default: 0.0005 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

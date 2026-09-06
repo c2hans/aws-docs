@@ -385,7 +385,3 @@ For more information, see [Creating a key policy](https://docs.aws.amazon.com/km
 <a name="zero-etl.create-next-smlh"></a>
 
 After you successfully create a zero-ETL integration with Amazon SageMaker, you can start adding data to the source RDS database and querying it in your Amazon SageMaker lakehouse. The data will be automatically replicated and made available for analytics and machine learning workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

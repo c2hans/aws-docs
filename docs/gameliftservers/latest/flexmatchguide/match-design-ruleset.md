@@ -23,7 +23,3 @@ When building a matchmaking rule set, consider the following optional and requir
 + [Allow requirements to relax over time](match-rulesets-components-expansion.md)
 
 You can build your rule set using the Amazon GameLift Servers console or the `[CreateMatchmakingRuleSet](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_CreateMatchmakingRuleSet.html)` operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

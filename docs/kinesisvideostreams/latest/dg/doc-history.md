@@ -30,7 +30,3 @@ The following table describes the important changes to the documentation since t
 | Android support for streaming video | Kinesis Video Streams now supports streaming video from Android devices. For more information, see [Android](producer-sdk-android.md). | January 12, 2018 |
 | Kinesis Video example documentation | Documentation for the Kinesis Video example application, which shows how to use the [Watch output from cameras using parser library](parser-library.md) in an application. For more information, see [KinesisVideoExample](parser-library-write.md#parser-library-write-example). | January 9, 2018 |
 | Kinesis Video Streams documentation released | This is the initial release of the Amazon Kinesis Video Streams Developer Guide. | November 29, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

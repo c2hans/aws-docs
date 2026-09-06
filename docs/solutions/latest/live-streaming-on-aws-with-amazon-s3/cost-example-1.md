@@ -114,7 +114,3 @@ The cost estimate for viewer traffic assumes that all viewers get the highest bi
 |  | Total MB per second (1,000 x 1.8 / 8) | 225 |
 |  | Total egress per hour ( 225 / 1,024 x 60 x 60 ) | 791 GB/hour |
 |  |  **Total (791 GB \* $0.085):**  | $67.24 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Live Streaming on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

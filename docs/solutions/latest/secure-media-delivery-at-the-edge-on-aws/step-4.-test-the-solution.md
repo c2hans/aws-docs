@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 1.  To test manual session revocation, select **Revoke current session** to see how current playback session will get blocked when the session ID corresponding to the used token will start being blocked by AWS WAF.
 
 1.  If you need to generate a new token and refresh current playback session, select the **Refresh token** option on the website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -104,7 +104,3 @@ This topic describes how to create the resources needed for the [message archivi
       For more information on subscribing to SNS topics, see [Creating a subscription to an Amazon SNS topic](sns-create-subscribe-endpoint-to-topic.md). You can also subscribe SQS queues to SNS topics from the Amazon SQS console. For more information, see [Subscribing an Amazon SQS queue to an Amazon SNS topic (console)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-subscribe-queue-sns-topic.html) in the *Amazon Simple Queue Service Developer Guide*.
 
 You've created the initial resources for this example use case. To continue, see [Setting-up a Amazon Data Firehose delivery stream for Amazon SNS message archiving](firehose-example-create-delivery-stream.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

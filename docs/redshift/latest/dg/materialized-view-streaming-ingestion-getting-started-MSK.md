@@ -280,7 +280,3 @@ Assuming you have an Apache Kafka cluster available, the first step is to define
    The materialized view is updated directly from the topic when `REFRESH` is run. You create a materialized view that maps to the Kafka topic data source. You can perform filtering and aggregations on the data as part of the materialized view definition. Your streaming ingestion materialized view (base materialized view) can reference only one Kafka topic, but you can create additional materialized views that join with the base materialized view and with other materialized views or tables.
 
 For more information about limitations for streaming ingestion, see [Streaming ingestion behavior and data types](materialized-view-streaming-ingestion.md#materialized-view-streaming-ingestion-limitations).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

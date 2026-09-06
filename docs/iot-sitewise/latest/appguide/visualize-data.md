@@ -24,7 +24,3 @@ You can perform the following data visualization tasks:
 | [Customize visualizations](customize-visualizations.md) | Portal administrator, project owner | Change the type of visualization and configure other features, such as thresholds and trend lines. |
 | [Adjust dashboard layout](adjust-layout.md) | Portal administrator, project owner | Change the size or location of visualizations in a dashboard. |
 | [Delete dashboards in AWS IoT SiteWise Monitor](delete-dashboards.md) | Portal administrator, project owner | Delete dashboards that you don't need. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

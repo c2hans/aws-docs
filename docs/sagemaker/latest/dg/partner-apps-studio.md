@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/partner-apps-studio.
 Users can use these values to write code that uses the Partner AI App SDK for app-specific tasks.
 
 Each Partner AI App’s details page includes a sample notebook. To get started, users can launch the sample notebook in a JupyterLab space in the Studio environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

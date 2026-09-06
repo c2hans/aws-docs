@@ -30,7 +30,3 @@ For examples of the `config.json`, `device.json`, and `userdata.json` files, see
 ![Configuration created dialog for Device Tester for FreeRTOS, showing details about creating a new test configuration with options to edit or run tests.](http://docs.aws.amazon.com/freertos/latest/userguide/images/gsg-configuration-created.png)
 
 After you finish reviewing your configuration, to run your qualification tests, choose **Run tests**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

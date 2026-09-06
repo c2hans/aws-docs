@@ -10,13 +10,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ## Contents
 <a name="API_CloudWatchLogsInputConfig_Contents"></a>
 
- ** logGroupNames **   <a name="bedrockagentcorecontrol-Type-CloudWatchLogsInputConfig-logGroupNames"></a>
- The list of CloudWatch log group names to monitor for agent traces.
-Type: Array of strings
-Array Members: Minimum number of 1 item. Maximum number of 5 items.
-Pattern: `[.\-_/#A-Za-z0-9]+`
-Required: Yes
-
  ** serviceNames **   <a name="bedrockagentcorecontrol-Type-CloudWatchLogsInputConfig-serviceNames"></a>
  The list of service names to filter traces within the specified log groups. Used to identify relevant agent sessions.
 Type: Array of strings
@@ -25,6 +18,21 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[a-zA-Z0-9._-]+`
 Required: Yes
 
+ ** logGroupNamePrefixes **   <a name="bedrockagentcorecontrol-Type-CloudWatchLogsInputConfig-logGroupNamePrefixes"></a>
+ The list of CloudWatch log group name prefixes to monitor for agent traces. Specify this instead of `logGroupNames` to match log groups by prefix. Specify either `logGroupNames` or `logGroupNamePrefixes`, not both. One of the two is required.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `[.\-_/#A-Za-z0-9]+`
+Required: No
+
+ ** logGroupNames **   <a name="bedrockagentcorecontrol-Type-CloudWatchLogsInputConfig-logGroupNames"></a>
+ The list of CloudWatch log group names to monitor for agent traces.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Pattern: `[.\-_/#A-Za-z0-9]+`
+Required: No
+
 ## See Also
 <a name="API_CloudWatchLogsInputConfig_SeeAlso"></a>
 
@@ -32,7 +40,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/bedrock-agentcore-control-2023-06-05/CloudWatchLogsInputConfig)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/bedrock-agentcore-control-2023-06-05/CloudWatchLogsInputConfig)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/bedrock-agentcore-control-2023-06-05/CloudWatchLogsInputConfig)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore Control Plane. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore-control` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

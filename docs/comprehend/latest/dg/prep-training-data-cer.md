@@ -37,7 +37,3 @@ We recommend using the annotations mode in the following cases:
 We recommend using an entity list in the following cases:
 + When you already have a list of entities or when it is relatively easy to compose a comprehensive list of entities. If you use an entity list, the list should be complete or at least covers the majority of valid entities that might appear in the documents you provide for training.
 + For first-time users, it is generally recommended to use an entity list because this requires a smaller effort than constructing annotations. However, it is important to note that the trained model might not be as accurate as if you used annotations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ INNER JOIN sys.availability_replicas AR ON ARS.replica_id = AR.{{replica_id}}
 --WHERE DB_NAME(ARS.database_id) = '{{database_name}}'
 ORDER BY AR.{{replica_server_name}};
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

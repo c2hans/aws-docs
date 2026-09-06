@@ -246,7 +246,3 @@ The MQTT long duration test case runs for longer duration than regular test case
 + *The device reconnection backoff type, if validated for the reconnect backoff test.*
 + *The topics the device published to, during the test case run.*
 + *The topics the device subscribed to, during the test case run.*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

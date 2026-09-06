@@ -16,7 +16,3 @@ You must set all zonal shifts to expire when you start the shifts. You can initi
 **When traffic does not shift away** - In specific scenarios, a zonal shift does not shift traffic from the Availability Zone. For example, say you start a zonal shift for a load balancer when the load balancer target groups in the AZs don't have any instances, or if all of the instances are unhealthy. In this scenario, the load balancer is in a fail open state and starting a zonal shift does not shift away traffic.
 
 Before you start a zonal shift for a resource, make sure that all the conditions for a successful zonal shift are met. AWS resources handle zonal shifts differently. For more information about zonal shift support, see [Supported resources](arc-zonal-shift.resource-types.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -91,7 +91,3 @@ The following families have fewer technical controls but still require documente
 | Media Protection (MP) | AWS KMS encryption for all storage. Amazon S3 lifecycle policies. Account-level Amazon EBS encryption defaults. | Cloud media protection is largely addressed by encryption controls. |
 | Personnel Security (PS) | IAM access provisioning/deprovisioning. Identity Center lifecycle management. | Primarily procedural. Document onboarding/offboarding procedures. |
 | Security Assessment (CA) | Security Hub compliance dashboards. AWS Config conformance packs. Automated evidence pipeline. | Your continuous monitoring and evidence pipeline directly address these controls. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

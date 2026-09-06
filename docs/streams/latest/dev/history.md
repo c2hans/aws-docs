@@ -34,7 +34,3 @@ The following table describes the important changes to the Amazon Kinesis Data S
 | Default shard limit | Updated the [Quotas and limits](service-sizes-and-limits.md): the default shard limit has been raised from 2 to 5. | January 28, 2014 |
 | API version updates | Updates for version 2013-12-02 of the Kinesis Data Streams API. | December 12, 2013 |
 | Initial release | Initial release of the Amazon Kinesis Developer Guide. | November 14, 2013 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ The following section describes the main components that make up an Amazon MWAA 
  When you configure the Apache Airflow in [private mode](https://docs.aws.amazon.com/mwaa/latest/userguide/vpc-vpe-access.html#vpc-vpe-about-private), the Apache Airflow UI can only be accessible to your Amazon VPC though Amazon VPC endpoints.
 
  For more information about networking, refer to [Networking](https://docs.aws.amazon.com/mwaa/latest/userguide/networking.html) in the *Amazon MWAA User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

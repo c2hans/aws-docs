@@ -54,7 +54,3 @@ The `neptune-ml:predicate` predicate is used differently depending on the task b
 <a name="machine-learning-sparql-inference-predicates-batchSize"></a>
 
 The `neptune-ml:batchSize` specifies the input size for the remote service call.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

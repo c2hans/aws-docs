@@ -21,7 +21,3 @@ EventBridge does not support connections to private APIs across Regions. However
 1. Create a connection for the second event bus to target the private API.
 
 For more information, see [Sending and receiving events between AWS Regions in Amazon EventBridge](eb-cross-region.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

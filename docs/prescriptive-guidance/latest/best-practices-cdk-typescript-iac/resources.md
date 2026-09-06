@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ## Guides and patterns
 <a name="guides-and-patterns.dd1e22bf-e4d4-5777-840d-32f5fc3a5c11"></a>
 + [AWS Solutions Constructs patterns](https://aws.amazon.com/solutions/constructs/patterns/?constructs-master-cards.sort-by=item.additionalFields.headline&constructs-master-cards.sort-order=asc&awsf.constructs-master-filter-tech-categories=*all&awsf.constructs-master-filter-products=*all) (AWS documentation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

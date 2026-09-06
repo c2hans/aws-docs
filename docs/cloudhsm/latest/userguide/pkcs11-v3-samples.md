@@ -30,7 +30,3 @@ Code Samples for the AWS CloudHSM Software Library for PKCS\#11 are available on
 + [Wrap and unwrap keys with AES using zero padding](https://github.com/aws-samples/aws-cloudhsm-pkcs11-examples/blob/master/src/wrapping/aes_zero_padding_wrapping.c)
 + [Wrap and unwrap keys with AES-GCM](https://github.com/aws-samples/aws-cloudhsm-pkcs11-examples/tree/master/src/wrapping/aes_gcm_wrapping.c)
 + [Wrap and unwrap keys with RSA](https://github.com/aws-samples/aws-cloudhsm-pkcs11-examples/blob/master/src/wrapping/rsa_wrapping.c)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

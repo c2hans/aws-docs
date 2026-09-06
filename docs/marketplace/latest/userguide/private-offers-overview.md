@@ -21,6 +21,7 @@ Sellers in India can create private offers in USD and INR, and can extend these 
 + [Reporting for private offers](#reporting-for-seller-private-offers)
 + [Supported product types for AWS Marketplace private offers](private-offers-supported-product-types.md)
 + [Creating and managing private offers](creating-private-offer.md)
++ [Auto-generated private offers](auto-generated-private-offers.md)
 + [Creating private offers as an AWS Marketplace Channel Partner](channel-partner-offers.md)
 + [Express private offers](express-private-offers.md)
 + [Private offer installment plans](installment-plans.md)
@@ -55,6 +56,7 @@ When working with private offers, consider the following:
 + Private offers don't support the Bring Your Own License (BYOL) model.
 + Use the **Custom EULA** option when creating a private offer with unique negotiated contract terms in your private offer. You can attach up to five documents.
 + For software as a service (SaaS) contracts and SaaS contracts with consumption products, you can offer upgrades and renewals on agreements that were made when buyers accepted private offers. For example, you can do this to grant new entitlements, offer pricing discounts, adjust payment schedules, or change the end user license agreement (EULA) to use standardized license terms. For more information, see [Amending agreements in AWS Marketplace](private-offers-upgrades-and-renewals.md).
++ **Auto-renewal** – You can add renewal terms to a private offer so the agreement renews automatically at its end date, either at the same price or with a price uplift. The buyer chooses whether to opt in during initial offer acceptance and can change that preference any time before the renewal decision deadline. The seller can also disable auto-renewal before the renewal decision deadline. Auto-renewal is available only for offers that use contract pricing. For more information, see [Configuring auto-renewal when creating a private offer](https://docs.aws.amazon.com/marketplace/latest/userguide/creating-private-offer.html).
 
 ## Private offer experience for buyers
 <a name="private-offer-experience-buyers"></a>
@@ -85,7 +87,3 @@ For more information, see [Express private offers](express-private-offers.md).
 Private offers appear on the existing seller reports and in the reports relevant to the offer. The [Billed revenue dashboard](billed-revenue-dashboard.md) is generated every month and has offer visibility and offer ID information. When an invoice is generated for a buyer, it appears in the report covering the appropriate billing period. For more information, see [Seller dashboards](https://docs.aws.amazon.com/marketplace/latest/userguide/dashboards.html).
 
  The **Offer ID** field contains the unique offer ID generated for the private offer. It's blank unless the report entry is for a private offer. The **Offer Visibility** field indicates whether the report entry is a public or private offer. For all private offers, the entry is marked private.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,7 +11,3 @@ Communication between you and your ECO team occurs for the following reasons:
 + Occasional important EDI Cloud Operations announcements. Your E-SDM contacts you when action is required on your part
 
 ECO or your E-SDM sends all notiﬁcations to the email address that you provided when you were onboarded. We recommend that you use a group email address that you can easily update rather than individual email addresses. You can use named lists of contacts for non-resource based notiﬁcations, such as alerts based on GuardDuty or AWS Config. For example, you might have a list that's named SecurityContacts for security alarms and notiﬁcations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Energy Data Insights on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query EDI` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

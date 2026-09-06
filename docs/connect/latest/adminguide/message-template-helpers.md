@@ -730,7 +730,3 @@ Connect Customer custom attribute names support spaces. To have a custom attribu
  You can nest multiple message template helpers within each other. The following example shows how to format two helpers: `{{ first helper (second helper)}}`. The second helper is processed first, followed by the first helper. Remember that the first helper always determines the output. Subsequent helpers must be nested within the previous helper as follows: `{{ first helper (second helper (third helper) )}}`.
 
 The following example shows how to nest two helpers to change **JANE** to **Jane**: `{{capitalizeFirst (lower "JANE")}}`. `lower` first converts **JANE** to **jane**. Then `capitalizeFirst` converts **jane** to **Jane**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

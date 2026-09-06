@@ -412,7 +412,3 @@ In this scenario, the administrator creates resources using AWS Service Catalog 
 1. The user calls [UpdateProvisionedProduct](https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_UpdateProvisionedProduct.html) to update the underlying resources in place. Depending on the specific updates requested, this operation can update with no interruption, with some interruption, or replace the provisioned product entirely.
 
 1. Finally, the user calls [TerminateProvisionedProduct](https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_TerminateProvisionedProduct.html) to terminate the provisioned product.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

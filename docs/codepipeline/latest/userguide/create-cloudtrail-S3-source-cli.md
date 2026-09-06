@@ -210,7 +210,3 @@ Be sure to include `file://` before the file name. It is required in this comman
    This command returns the entire structure of the edited pipeline.
 **Note**
 The **update-pipeline** command stops the pipeline. If a revision is being run through the pipeline when you run the **update-pipeline** command, that run is stopped. You must manually start the pipeline to run that revision through the updated pipeline. Use the **start-pipeline-execution** command to manually start your pipeline.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,7 @@ Key capabilities include:
 + **Calendar and meeting management:** Summarize your calendar, find optimal meeting times with coworkers, and schedule meetings using natural language instructions.
 + **Email summaries and replies:** Open the Quick side panel to ask questions about an email thread in focus or generate a contextual reply.
 + **Enterprise knowledge integration:** Use Quick's knowledge sources to draft contextual responses to emails or to perform inbox and calendar tasks.
-+ **External actions:** Perform actions in third-party applications using your configured [action connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) or apps directly from Outlook.
++ **External actions:** Perform actions in third-party applications using your configured [connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) or apps directly from Outlook.
 
 **Important**
 The Amazon Quick Outlook extension uses generative AI to create and execute code within your Outlook application sandbox. AI can make mistakes and perform inaccurate actions within your Outlook mailbox. No email or content is read when the side panel is closed, and no data is sent to Amazon Quick unless you explicitly send a prompt.
@@ -56,7 +56,3 @@ The following prompts demonstrate common ways to use Quick within Outlook. You c
 
 **Tip**
 For best results, be specific in your prompts. Include names, dates, and goals. You can also reference your Quick spaces, dashboards, and knowledge bases for personalized results.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,6 @@ The following are the service endpoints and service quotas for this service.
 | Region Name | Region | Endpoint | Protocol |
 | --- | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | admin.wickr.us-east-1.amazonaws.com<br />admin.wickr.us-east-1.api.aws | HTTPS<br />HTTPS |
-| Asia Pacific (Malaysia) | ap-southeast-5 | admin.wickr.ap-southeast-5.amazonaws.com<br />admin.wickr.ap-southeast-5.api.aws | HTTPS<br />HTTPS |
 | Asia Pacific (Singapore) | ap-southeast-1 | admin.wickr.ap-southeast-1.amazonaws.com<br />admin.wickr.ap-southeast-1.api.aws | HTTPS<br />HTTPS |
 | Asia Pacific (Sydney) | ap-southeast-2 | admin.wickr.ap-southeast-2.amazonaws.com<br />admin.wickr.ap-southeast-2.api.aws | HTTPS<br />HTTPS |
 | Asia Pacific (Tokyo) | ap-northeast-1 | admin.wickr.ap-northeast-1.amazonaws.com<br />admin.wickr.ap-northeast-1.api.aws | HTTPS<br />HTTPS |
@@ -36,7 +35,3 @@ The following are the service endpoints and service quotas for this service.
 | Region Name | Region | Endpoint | Protocol |
 | --- | --- | --- | --- |
 | AWS GovCloud (US-West) | us-gov-west-1 | admin.wickr.us-gov-west-1.amazonaws.com<br />admin.wickr.us-gov-west-1.api.aws | HTTPS<br />HTTPS |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

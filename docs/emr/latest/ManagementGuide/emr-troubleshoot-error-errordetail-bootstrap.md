@@ -15,7 +15,3 @@ The following sections provide troubleshooting information for bootstrap failure
 + [BOOTSTRAP\_FAILURE\_INSUFFICIENT\_DISK\_SPACE\_WORKER](BOOTSTRAP_FAILURE_INSUFFICIENT_DISK_SPACE_WORKER.md)
 + [BOOTSTRAP\_FAILURE\_HIVE\_METASTORE\_CONNECTION\_ERROR\_PRIMARY](BOOTSTRAP_FAILURE_HIVE_METASTORE_CONNECTION_ERROR_PRIMARY.md)
 + [BOOTSTRAP\_FAILURE\_HIVE\_METASTORE\_CONNECTION\_ERROR\_WORKER](BOOTSTRAP_FAILURE_HIVE_METASTORE_CONNECTION_ERROR_WORKER.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

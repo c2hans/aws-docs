@@ -33,7 +33,3 @@ Enterprise ML platforms built on AWS normally have requirements to access on-pre
 ![A diagram showing networking architecture for Amazon SageMaker AI Studio inside a VPC.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-6.png)
 
 * Networking architecture for Amazon SageMaker AI Studio inside a VPC (Not all VPC endpoints are shown for simplicity) *
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

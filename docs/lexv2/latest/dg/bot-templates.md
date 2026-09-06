@@ -66,7 +66,3 @@ The use of different AWS services incurs respective usage costs for each service
 + Check that you have the proper permissions to create the template that you are choosing. Users need CloudFormation:CreateStack permission along with permissions for the AWS resources that are listed within the template. A list of resources that need user permissions are at the bottom of the **Create template** page.
 + If your bot template fails to be created, the red banner within the Amazon Lex V2 console provides a link to the CloudFormation stack that is responsible for creating the template. Within the CloudFormation console, you can view the events tab to see the specific error that caused the template to fail. Once you have reviewed the CloudFormation error, see [ Troubleshooting CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html) for more information.
 + Bot templates work with the sample data only. You must populate the DynamoDB table with your data to make the templates work with your custom data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

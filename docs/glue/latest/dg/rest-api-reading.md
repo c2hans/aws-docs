@@ -184,7 +184,3 @@ The following `FieldDataType` values are supported for partitioning:
 
 **Note**
  The connector combines partition filters with user filters using AND. If your filter contains a LIMIT clause, the connector skips partitioning. If partition generation fails, the connector falls back to a single partition and the job still completes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

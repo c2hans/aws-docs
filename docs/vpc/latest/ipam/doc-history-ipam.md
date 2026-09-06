@@ -32,7 +32,3 @@ The following table describes the releases for IPAM.
 | [Integrate IPAM with accounts outside of your organization](enable-integ-ipam-outside-org.md)  | You can now manage IP addresses outside of your organization from a single IPAM account and share IPAM pools with the accounts of other AWS Organizations. | January 25, 2023 |
 | Amazon-provided IPv6 contiguous CIDR block for IPAM pools | When you create an IPAM pool in the public scope, you can now provision an Amazon-provided IPv6 contiguous CIDR block to the pool. For more information, see [Create IPv6 address pools in your IPAM](intro-create-ipv6-pools.md). | January 25, 2023 |
 | Initial release | This release introduces Amazon VPC IP Address Manager. | December 2, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

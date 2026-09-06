@@ -39,7 +39,3 @@ A software defined radio (SDR) that can be used to modulate/demodulate the signa
 <a name="dataflows.ec2-configuration.amis"></a>
 
 To reduce the build and configuration times of these installs, AWS Ground Station also offers preconfigured AMIs. The AMIs with a dataflow endpoint networking application and a software defined radio (SDR) are made available to your account after your onboarding is complete. They can be found in the Amazon EC2 console by searching for *groundstation* in private [Amazon Machine Images (AMIs)](https://console.aws.amazon.com/ec2/home?#Images:visibility=private;search=groundstation;sort=imageName). The AMIs with AWS Ground Station Agent are public and can be found in the Amazon EC2 console by searching for *groundstation* in public [Amazon Machine Images (AMIs)](https://console.aws.amazon.com/ec2/home?#Images:visibility=public-images;search=groundstation;sort=imageName).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

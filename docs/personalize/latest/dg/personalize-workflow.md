@@ -28,7 +28,3 @@ The Amazon Personalize workflow is as follows. For a checklist that provides lis
 1. **[Record real-time events](recording-events.md)** – Record real-time events as your customers interact with recommendations. This builds out your interactions data and keeps your data fresh. And it tells Amazon Personalize about the current interests of your user, which can improve recommendation relevance.
 
 After you complete the Amazon Personalize workflow the first time, keep your data current, and regularly re-train any custom solutions that use manual training. This allows your model to learn from your user’s most recent activity and sustains and improves the relevance of recommendations. For more information, see [Maintaining recommendation relevance](maintaining-relevance.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 This approach is only meant to represent a conceptual model. The strategies that are employed by each framework might take a different approach to expressing and applying their policies.
 
  It’s worth noting that the boundaries of policy-based isolation and role-based access control (RBAC) often get blurred as part of this discussion. The tooling here, in fact, often contributes to this confusion. As a generality, though, we wouldn’t want to equate RBAC to tenant isolation. In many cases, RBAC has a functional mapping where user roles (defined by an application) are used to control access to a system’s functionality. That scope is different than drawing boundaries of isolation between the tenants of your system, which is less about a functional goal and more about preventing one tenant from accessing another tenant’s data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ The following table lists details about updates to AWS managed policies for AWS 
 | [AWSSupplyChainFederationAdminAccess](#security-iam-awsmanpol-AWSSupplyChainFederationAdminAccess) – Updated policy | AWS Supply Chain updated the managed policy to allow federated users access to the PutObject and GetObject operations on the dedicated S3 bucket with resource arn arn:aws:s3:::aws-supply- chain-data-\*. | September 21, 2023 |
 | [AWSSupplyChainFederationAdminAccess](#security-iam-awsmanpol-AWSSupplyChainFederationAdminAccess) – New policy | AWS Supply Chain added a new policy to allow federated users to access the AWS Supply Chain application. This includes permissions necessary to perform actions within the AWS Supply Chain application. | March 01, 2023 |
 | AWS Supply Chain started tracking changes | AWS Supply Chain started tracking changes for its AWS managed policies. | March 01, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

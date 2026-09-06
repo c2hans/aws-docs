@@ -43,7 +43,3 @@ To set up this cross-Region replication architecture:
 1. Make the tables available in the AWS Glue Data Catalog in the secondary Region. You can choose from two options:
    + Set up a pipeline for replicating Iceberg table metadata by using AWS Glue Data Catalog replication. This utility is available in the GitHub  [Glue Catalog and Lake Formation Permissions replication](https://github.com/aws-samples/lake-formation-pemissions-sync) repository. This event-driven mechanism replicates tables in the target Region based on event logs.
    + Register the tables in the secondary Region when you need to fail over. For this option, you can use the previous utility or the Iceberg [register\_table procedure](https://iceberg.apache.org/docs/latest/spark-procedures/#register_table) and point it to the latest `metadata.json` file.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

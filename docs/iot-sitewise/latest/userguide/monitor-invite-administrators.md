@@ -59,7 +59,3 @@ You can change the list of portal administrators later. For more information, se
 Because only a portal administrator can create projects and assign assets to them, you should specify at least one portal administrator.
 
 As the last step, you add users who can access your new portal.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

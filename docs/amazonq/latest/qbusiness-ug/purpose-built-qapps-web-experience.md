@@ -34,7 +34,3 @@ Published Amazon Q Apps are made available in the your Amazon Q Apps library. Th
 
 **Note**
 If you update an Amazon Q App with a verified label, it will lose its verified status until the admin re-applies the label. Maintaining an app's *Verified * state requires ongoing collaboration with your administrators.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

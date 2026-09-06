@@ -55,7 +55,3 @@ Each endpoint instance exposes metrics from multiple sources. The OTel Collector
 <a name="detailed-observability-pricing"></a>
 
 Detailed observability metrics are included at no additional cost. For information about Amazon CloudWatch data ingestion costs related to OTel enrichment, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

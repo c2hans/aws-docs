@@ -20,7 +20,3 @@ The following tools can help you monitor least-privilege access and permissions 
 + You can use a linting tool, such as [cfn-policy-validator](https://github.com/awslabs/aws-cloudformation-iam-policy-validator) (GitHub), to help identify excessive permissions.
 
 When you are comfortable with creating and managing CloudFormation permissions, it is recommended that you use continuous integration and continuous delivery (CI/CD) pipelines to deploy your CloudFormation templates. This reduces the risk of human errors and speeds up your deployment process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

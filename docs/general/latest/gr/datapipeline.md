@@ -42,7 +42,3 @@ The following are the service endpoints and service quotas for this service.
 | Retries of a pipeline activity per task | Each supported Region: 5 | No | The maximum number of retries of a pipeline activity per task. |
 
 For more information, see [AWS Data Pipeline Quotas](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-limits.html) in the *AWS Data Pipeline Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,7 +47,3 @@ This approach makes workflows more reliable. For example, if an activity worker 
 <a name="awsflow-basics-reliable-execution-errors"></a>
 
 Activities often fail for ephemeral reasons, such as a brief disconnection, so a common strategy for handling failed activities is to retry the activity. Instead of handling the retry process by implementing complex message passing strategies, applications can depend on the AWS Flow Framework. It provides several mechanisms for retrying failed activities, and provides a built-in exception-handling mechanism that works with asynchronous, distributed execution of tasks in a workflow.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

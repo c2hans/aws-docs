@@ -77,7 +77,3 @@ For more information about configuring these permissions, see your browser's doc
 
 **Important**
 Some browsers provide a setting that turns off local network protections for all websites. Because this setting reduces protection for your local network, we don't recommend it. If you use it to test this behavior, review the change against your organization's security requirements and revert it when you're finished.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

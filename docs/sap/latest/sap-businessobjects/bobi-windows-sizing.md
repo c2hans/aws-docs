@@ -10,7 +10,3 @@ At a high level, BOBI platform sizing is a two-step process. The first step is t
 For sizing your storage requirements for the database and app tier, AWS provides various volume types, such as general purpose SSDs (gp3) and provisioned IOPS SSD (io2). You can read more about the differences at [Amazon EBS Volume Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html). As general guidance, we recommend that you consider the gp3 volume type as a starting point to see if it satisfies your throughput and IOPS requirement of your workload, and consider io2 volume types if you have a need for sustained IOPS.
 
 It is easy to add capacity to your existing SAP BOBI deployment in AWS. Therefore, for migrating your existing deployment to AWS, you may not need the same degree of over-provisioning as is typical for on-premises environments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

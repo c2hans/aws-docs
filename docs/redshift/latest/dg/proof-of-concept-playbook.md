@@ -74,7 +74,7 @@ For quick ingestion and analysis, you can use [Amazon Redshift query editor v2](
 ### Load an Amazon S3 file
 <a name="proof-of-concept-load-data-s3-file"></a>
 
-To load data from an Amazon S3 bucket into Amazon Redshift, begin by using the [COPY command](https://docs.aws.amazon.com/redshift/latest/dg/t_loading-tables-from-s3.html), specifying the source Amazon S3 location and target Amazon Redshift table. Ensure that the IAM roles and permissions are properly configured to allow Amazon Redshift access to the designated Amazon S3 bucket. Follow [Tutorial: Loading data from Amazon S3](https://docs.aws.amazon.com/redshift/latest/dg/tutorial-loading-data.html) for step-by-step guidance. You can also choose the **Load data** option in query editor v2 to directly load data from your S3 bucket.
+To load data from an Amazon S3 bucket into Amazon Redshift, begin by using the [COPY command](https://docs.aws.amazon.com/redshift/latest/dg/t_loading-tables-from-s3.html), specifying the source Amazon S3 location and target Amazon Redshift table. Make sure that the IAM roles and permissions are properly configured to allow Amazon Redshift access to the designated Amazon S3 bucket. Follow [Tutorial: Loading data from Amazon S3](https://docs.aws.amazon.com/redshift/latest/dg/tutorial-loading-data.html) for step-by-step guidance. You can also choose the **Load data** option in query editor v2 to directly load data from your S3 bucket.
 
 ### Continuous data ingestion
 <a name="proof-of-concept-load-data-autocopy"></a>
@@ -131,7 +131,3 @@ Amazon Redshift empowers tens of thousands of users to process exabytes of data 
 <a name="proof-of-concept-optimize-test-drive"></a>
 
 You can use [Test Drive](https://github.com/aws/redshift-test-drive/tree/main) to automatically replay your existing workload on potential configurations and analyze the corresponding outputs to evaluate the optimal target to migrate your workload to. See [Find the best Amazon Redshift configuration for your workload using Redshift Test Drive](https://aws.amazon.com/blogs/big-data/find-the-best-amazon-redshift-configuration-for-your-workload-using-redshift-test-drive/) for information about using Test Drive to evaluate different Amazon Redshift configurations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -120,7 +120,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise
  To achieve this task, Genworth built a serverless machine learning pipeline at scale using services like AWS Glue, a serverless managed ETL processing service to ingest and transform data, and Amazon SageMaker AI to batch transform jobs and, perform ML inference, and process and publish the results of the analysis.
 
  With the ML models, Genworth could analyze recent repayment patterns for each insurance policy to prioritize them in likelihood and impact for each claim. This process was automated end-to-end to help the business make data-driven decisions and simplify high-value manual work performed by the Loss Mitigation team. Read the Machine Learning blog [How Genworth built a serverless ML pipeline on AWS using Amazon SageMaker AI and AWS Glue](https://aws.amazon.com/blogs/machine-learning/how-genworth-built-a-serverless-ml-pipeline-on-aws-using-amazon-sagemaker-and-aws-glue/) for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

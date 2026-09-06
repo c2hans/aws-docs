@@ -93,7 +93,3 @@ unzip $DEVICEFARM_TEST_PACKAGE_PATH -d /tmp
 In the case of an APK or JAR file, you would find your extra files unzipped to the {{/tmp}} directory (e.g., {{/tmp/extra\_file}}). In the case of an IPA file, as explained before, extra files would be in a slightly different location inside the folder ending in {{.app}}, which is inside of the {{Payload}} directory. For example, based on the IPA example above, the file would be found at the location {{/tmp/Payload/ADFiOSReferenceAppUITests-Runner.app/extra\_file}} (referenceable as {{/tmp/Payload/\*.app/extra\_file}}).
 
 For more ways to extend your test suite and optimize your tests, see [Extending custom test environments in Device Farm](custom-test-environments-extending.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

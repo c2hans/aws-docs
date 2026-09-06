@@ -14,7 +14,3 @@ Publication date: **August 2026** ([Document revisions](document-revisions.md))
  This paper is intended for IT decision makers and security engineers who are familiar with the basic concepts of networking, security, and AWS. Each section has links to AWS documentation that provides more detail on the best practice or capability.
 
  AWS detects over a million DDoS attacks per year and mitigates thousands on a daily basis against our customers. AWS recommends implementing these best practices proactively, as they significantly reduce the likelihood of business impact from DDoS events.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

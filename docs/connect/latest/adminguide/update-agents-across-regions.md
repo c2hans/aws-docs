@@ -154,7 +154,3 @@ We recommend you to adjust your run book and agent training guide to reflect thi
 ![The Agent Workspace UI showing a banner that highlights regional failover during TDG adjustments.](http://docs.aws.amazon.com/connect/latest/adminguide/images/acgr-failover-banner.png)
 
 ![The confirmation popup that appears when an agent selects Continue in Backup.](http://docs.aws.amazon.com/connect/latest/adminguide/images/acgr-failover-confirmation.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

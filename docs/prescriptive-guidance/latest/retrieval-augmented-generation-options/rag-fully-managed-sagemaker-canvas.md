@@ -28,7 +28,3 @@ The diagram shows the following workflow:
 1. The foundation model uses the original question and the retrieved context to generate an answer.
 
 1. SageMaker AI Canvas provides the generated answer to the user. It includes references to the data sources, such as documents, that were used to generate the response.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

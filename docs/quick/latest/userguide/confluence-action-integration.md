@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/confluence-action
 # Atlassian Confluence Cloud action integration
 <a name="confluence-action-integration"></a>
 
-Use the Atlassian Confluence Cloud action connector to create, update, and manage Confluence pages and spaces directly in Amazon Quick through natural language.
+Use the Atlassian Confluence Cloud connector to create, update, and manage Confluence pages and spaces directly in Amazon Quick through natural language.
 
 To set up this integration, you first create an OAuth 2.0 (3LO) app in the Atlassian Developer Console and configure its permissions. Then, you create the integration in Amazon Quick and connect it to your Atlassian app. For information about the authentication methods that Amazon Quick supports, see [Authentication methods](quick-action-auth.md).
 
@@ -117,7 +117,7 @@ Before you leave the Atlassian Developer Console, confirm that you have the foll
 ## Prepare authentication
 <a name="confluence-action-auth-setup"></a>
 
-Confluence Cloud action connectors support two authentication methods. Gather the required credentials before configuring Amazon Quick.
+Confluence Cloud connectors support two authentication methods. Gather the required credentials before configuring Amazon Quick.
 
 **User authentication (3LO)**
 If you completed the Atlassian Developer Console setup in the previous section, you should have the following values ready. Enter these when you configure the integration in Amazon Quick.
@@ -200,7 +200,3 @@ To edit, share, or delete your integration, see [Managing existing integrations]
 <a name="confluence-action-troubleshooting-errors"></a>
 + **`Access denied. You do not have permission to perform this action`** – The authenticated user does not have the required permissions in Confluence Cloud. Contact your Confluence Cloud administrator to verify and grant appropriate permissions.
 + **`OAuth 2.0 authorization failed`** – Verify the client ID, client secret, and OAuth scopes are configured correctly in both the Atlassian Developer Console and Amazon Quick.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

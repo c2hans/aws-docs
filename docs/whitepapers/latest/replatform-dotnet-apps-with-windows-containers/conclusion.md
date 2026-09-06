@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
 <a name="conclusion"></a>
 
  This guide describes the business and technical aspects of replatforming an existing .NET Framework application to Windows containers. Anyone tasked with evaluating modernization of Windows applications can use this guide to better understand how to approach and complete a replatforming strategy to accelerate innovation, lower TCO, and increase developer productivity for their organization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

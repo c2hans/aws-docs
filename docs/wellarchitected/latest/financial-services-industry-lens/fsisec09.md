@@ -38,7 +38,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 +  [AWS re:Invent 2022 – Protecting secrets, keys, and data: Cryptography for the long term](https://www.youtube.com/watch?v=9vr3oMODIUE&t=2535s&ab_channel=AWSEvents)
 +  [AWS re:Invent 2022 – AWS data protection: Using locks, keys, signatures, and certificates](https://www.youtube.com/watch?v=lD34wbc7KNA&ab_channel=AWSEvents)
 +  [AWS re:Invent 2022 – Introducing AWS KMS external keys](https://www.youtube.com/watch?v=prj6xgpHFTo&t=672s&ab_channel=AWSEvents)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,7 +53,3 @@ If you configure CloudFront to forward specific cookies to your origin, the tota
 If you configure CloudFront to forward all cookies to your origin, the length of cookie names doesn’t matter.
 
 For information about using the CloudFront console to update a distribution so CloudFront forwards cookies to the origin, see [Update a distribution](HowToUpdateDistribution.md). For information about using the CloudFront API to update a distribution, see [UpdateDistribution](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateDistribution.html) in the *Amazon CloudFront API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ You can access Quote Confirmation through the console at this address: [https://
 There are no fees or usage charges for using your AWS account to place orders with AWS Elemental. All new AWS accounts require a credit card for billing and fraud prevention, but you incur charges only for the AWS Elemental Appliances and Software that you use. As long as you don't use other AWS services, the credit card on file isn't charged.
 
 The AWS Free Tier allows you to get hands-on experience with AWS services such as Amazon EC2, Amazon S3, and Amazon RDS. The AWS Free Tier includes services with a free tier available for 12 months following your AWS sign-up date, and additional service offers that do not automatically expire at the end of your 12-month AWS Free Tier term. The 12 months of free tier access refers to AWS services and doesn't impact your use of the AWS Elemental Appliances and Software Quote Confirmation service, which is always free to use.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Appliances and Software. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-appliances-software` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

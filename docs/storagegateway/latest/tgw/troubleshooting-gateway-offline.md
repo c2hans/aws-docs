@@ -57,7 +57,3 @@ Make sure you add the disk to the same disk node.
 1. Restart the gateway.
 
 For more information on troubleshooting a corrupted cache disk for a tape gateway, see [You need to recover a virtual tape from a malfunctioning cache disk](https://docs.aws.amazon.com/storagegateway/latest/tgw/Main_TapesIssues-vtl.html#creating-recovery-tape-vtl).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

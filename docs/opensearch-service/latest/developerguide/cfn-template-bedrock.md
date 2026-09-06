@@ -28,7 +28,3 @@ OpenSearch Service also provides a separate template to configure an Amazon VPC 
 In addition, OpenSearch Service provides the following Amazon Bedrock templates to connect to the Cohere model and the Amazon Titan Multimodal Embeddings model:
 + `Integration with Cohere Embed through Amazon Bedrock`
 + `Integrate with Amazon Bedrock Titan Multi-modal`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

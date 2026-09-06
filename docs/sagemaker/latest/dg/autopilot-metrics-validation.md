@@ -139,7 +139,3 @@ The OOF predictions for each base model are then used as features to train a sta
 In ensemble mode, you can either provide your own validation dataset or let Autopilot split the input dataset automatically into 80% train and 20% validation datasets. The training data is then split into `k`-folds for cross-validation and produces an OOF prediction and a base model for each fold.
 
 These OOF predictions are used as features to train a stacking model, which simultaneously learns weights for each base model. These weights are used to combine the OOF predictions to form the final prediction. The validation datasets for each fold are used for hyperparameter tuning of all base models and the stacking model. Performance on the validation datasets determines which base or stacking model is the best model, and this model is returned as the final model.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

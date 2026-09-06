@@ -32,7 +32,3 @@ An Amazon VPC user must set up the VPC and identify subnets and security groups 
    + If any communication with the public internet is expected, you will need either a NAT or an Internet Gateway in your VPC.
    + Inside the VPC, you must configure routing tables, to allow communication between the subnets you intend to use.
    + All IP addresses must be IPV4.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

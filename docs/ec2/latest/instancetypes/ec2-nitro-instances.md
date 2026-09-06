@@ -75,7 +75,7 @@ The following virtualized instances are built on the Nitro System:
 #### [ Nitro v6 ]
 + **General Purpose**: M8a \| M8azn \| M8gb \| M8gn \| M8i \| M8id \| M8i-flex \| M8in \| M8idn \| M8ine \| M8ib \| M8idb \| M9g \| M9gd
 + **Compute Optimized**: C8a \| C8gb \| C8gn \| C8i \| C8id \| C8i-flex \| C8in \| C8ine \| C8ib \| C9g \| C9gd
-+ **Memory Optimized**: R8a \| R8gb \| R8gn \| R8i \| R8id \| R8i-flex \| R8in \| R8idn \| R8ib \| R8idb \| X8aedz \| X8i
++ **Memory Optimized**: R8a \| R8gb \| R8gn \| R8i \| R8id \| R8i-flex \| R8in \| R8idn \| R8ib \| R8idb \| R9g \| R9gd \| X8aedz \| X8i
 + **Storage Optimized**: I8ge
 + **Accelerated Computing**: G7 \| G7e \| P6-B200 \| P6-B300
 + **High Performance Computing**: Hpc8a
@@ -126,7 +126,7 @@ The following bare metal instances are built on the Nitro System:
 #### [ Nitro v6 ]
 + **General Purpose**: M8a \| M8azn \| M8gb \| M8gn \| M8i \| M8id \| M8in \| M8idn \| M8ib \| M8idb \| M9g \| M9gd
 + **Compute Optimized**: C8a \| C8gb \| C8gn \| C8i \| C8id \| C8in \| C8ib \| C9g \| C9gd
-+ **Memory Optimized**: R8a \| R8gb \| R8gn \| R8i \| R8id \| R8in \| R8idn \| R8ib \| R8idb \| X8aedz \| X8i
++ **Memory Optimized**: R8a \| R8gb \| R8gn \| R8i \| R8id \| R8in \| R8idn \| R8ib \| R8idb \| R9g \| R9gd \| X8aedz \| X8i
 + **Storage Optimized**: I8ge
 
 ------
@@ -233,7 +233,3 @@ Linux instances with AWS Graviton processors have the following additional requi
 
 **Note**
 AWS Graviton processors only support Linux operating systems.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

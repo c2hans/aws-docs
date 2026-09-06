@@ -52,7 +52,3 @@ AWS offers multiple [serverless services](https://aws.amazon.com/serverless/) th
 | [Amazon MQ](https://aws.amazon.com/amazon-mq/) | Managed message broker service that streamlines the setup, operation, and management of message brokers on AWS. Message brokers allow software systems, which often use different programming languages on various platforms, to communicate and exchange information. |   |   |  |
 
 For more information, see [Integrating microservices by using AWS serverless services](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-integrating-microservices/welcome.html) on the AWS Prescriptive Guidance website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

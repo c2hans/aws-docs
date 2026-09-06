@@ -96,7 +96,3 @@ When you select field names with string values, OR logic allows you to combine t
    Review the information for your flow. To change the information for a step, choose **Edit**. When you are finished, choose **Create flow**.
 **Tip**
 If the flow creation fails, review the error message and confirm that all required fields have been entered, and that the user or role you are using has permission to the `UseConnectorProfile` action for the connection selected for the flow.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

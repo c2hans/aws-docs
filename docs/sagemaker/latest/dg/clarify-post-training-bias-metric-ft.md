@@ -23,7 +23,3 @@ The range of values for the counterfactual fliptest for binary and multicategory
 + Positive values occur when the number of unfavorable counterfactual fliptest decisions for the disfavored facet *d* exceeds the favorable ones.
 + Values near zero occur when the number of unfavorable and favorable counterfactual fliptest decisions balance out.
 + Negative values occur when the number of unfavorable counterfactual fliptest decisions for the disfavored facet *d* is less than the favorable ones.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

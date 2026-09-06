@@ -57,7 +57,3 @@ For direct resources about the Debugger and `sagemaker-debugger` API operations,
 If you use the SDK for Java to conduct SageMaker training jobs and want to configure Debugger APIs, see the following references:
 + [Amazon SageMaker Debugger APIs](debugger-reference.md#debugger-apis)
 + [Configure Debugger using SageMaker API](debugger-createtrainingjob-api.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

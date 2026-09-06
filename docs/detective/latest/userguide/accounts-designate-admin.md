@@ -24,7 +24,3 @@ The Detective administrator account chooses organization accounts to enable as m
 The Detective administrator account can also send invitations to accounts that do not belong to the organization. For more information, see [Managing organization accounts as Detective member accounts](accounts-orgs-members.md) and [Managing invited member accounts in Detective](accounts-invited-members.md).
 
 Required permissions to configure the Detective administrator account – To ensure that the organization management account is able to configure the Detective administrator account, you can attach the [`AmazonDetectiveOrganizationsAccess` managed policy](security-iam-awsmanpol.md#security-iam-awsmanpol-amazondetectiveorganizationsaccesspolicy) to your AWS Identity and Access Management (IAM) entities.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

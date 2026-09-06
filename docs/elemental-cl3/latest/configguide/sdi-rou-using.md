@@ -15,7 +15,3 @@ Typically, all of your SDI inputs are connected to your router. Therefore, you s
 If your inputs are all connected to your router and you select a direct input in the profile or event, when the event starts, an input not detected error occurs.
 
 You should only use the direct inputs for inputs on the Conductor Live node that do not connect to the router but are instead direct inputs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

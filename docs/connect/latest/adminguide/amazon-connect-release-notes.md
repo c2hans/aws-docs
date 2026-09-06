@@ -7,6 +7,16 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect
 
 We recommend subscribing to the RSS feed so updates to these notes are delivered to your Inbox. Choose the **RSS** link (under the topic title **Release notes**), and then copy the URL (it ends with `doc-history.xml.rss`) into your RSS reader. For example, you can subscribe to an RSS feed in Outlook.
 
+## September 2026 Updates
+<a name="sep26-release-notes"></a>
+
+### Connect Customer Global Resiliency now routes contacts across two active AWS Regions
+<a name="sep26-global-routing-acgr"></a>
+
+Connect Customer Global Resiliency now supports routing contacts to agents across paired ACGR Regions. For example, a contact arriving in US East (N. Virginia) is offered to the longest-available matching agent whether that agent is in US East (N. Virginia) or US West (Oregon), while managers view analytics and search contacts across both Regions as a unified contact center. When agents and contacts are distributed across both Regions, your full configuration and any integrations are continuously validated with live traffic in both Regions at all times, providing confidence that either environment is ready to absorb the full workload. You retain full control over how traffic is distributed, and can shift new contacts and agents to a single Region or disable cross-region routing at any time.
+
+To request access to this feature, contact your AWS account team. Unified routing, analytics, and contact search are now enabled by default for all new ACGR instances created on or after September 1, 2026. Existing ACGR instances can opt into this feature set on request. For more details, see [Global routing across ACGR Regions](global-routing-across-acgr-regions.md).
+
 ## August 2026 Updates
 <a name="aug26-release-notes"></a>
 
@@ -1639,7 +1649,7 @@ Connect Customer supports push notifications for mobile chat on iOS and Android 
 #### Configure tasks to expire up to 30 days from creation
 <a name="tasks2-dec24"></a>
 
-You can set task durations to expire up to 30 days from creation, with a default of 7 days. For example, you can specify one issue to expire at 2 hours from creation for urgent escalations, and specify another issue for mandatory training to stay active for 30 days. For more information, see [Create task templates in Connect Customer](task-templates.md).
+You can set task durations to expire up to 30 days from creation, with a default of 7 days. For example, you can specify one issue to expire at 2 hours from creation for urgent escalations, and specify another issue for mandatory training to stay active for 30 days. For more information, see [Task templates in Connect Customer](task-templates.md).
 
 #### Track the originating agent when they create a task manually
 <a name="tasks1-dec24"></a>
@@ -3660,7 +3670,7 @@ Added identity resolution APIs to Customer Profiles. For more information, see t
 #### conversational analytics: Use category tags to navigate transcript
 <a name="contact-lens-april2021-"></a>
 
-For more information, see [Tap or click category tags to navigate through transcript](turn-by-turn-transcript.md#category-navigation).
+For more information, see [Choose category tags to navigate through transcript](turn-by-turn-transcript.md#category-navigation).
 
 #### Fixes for chat metrics
 <a name="chat-metrics-april2021"></a>
@@ -4708,7 +4718,3 @@ The following updates were released in April and May 2018:
 + Agent username is now available as part of agent configuration data in the [Connect Customer Streams](https://github.com/aws/amazon-connect-streams/blob/master/Documentation.md) API.
 + Contact attributes are now available when using the streams.js (Streams API) for screenpops after queued callbacks.
 + Fixed issue where for some auto-accept calls, the agent continued to hear ringing after accepting and joining the call.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,7 +59,3 @@ If you are going to test service request functionality, add the no-action flag, 
 ![Correspondence interface showing email exchange with star rating options for feedback.](http://docs.aws.amazon.com/managedservices/latest/onboardingguide/images/guiSRcorrespond.png)
 
 For billing-related queries, use the **Other** Category in the AMS console; the `ChangeTypeId ct-1e1xtak34nx76` in the AMS CM API, or the `IssueType=AMS` in the AWS Support API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

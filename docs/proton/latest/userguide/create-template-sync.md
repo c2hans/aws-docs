@@ -238,7 +238,3 @@ compatible_environments:
 
 **Note**
 Previously, AWS Proton defined a different file, `.compatible-envs`, for specifying compatible environments. AWS Proton still supports that file and its format for backward compatibility. We don't recommend using it anymore, because it isn't extensible and can't support newer features like components.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -72,7 +72,3 @@ You can configure with an opacity and with fade-in and fade-out.
 **Input insertion and overlays**
 
 You might insert image overlays in a channel where you are also performing input switching (to ingest different inputs). Keep in mind that the handling for input switches and image overlays is completely decoupled. In other words, you don't have to worry that when MediaLive switches to a different input, the currently active image overlays will disappear. They won't disappear.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

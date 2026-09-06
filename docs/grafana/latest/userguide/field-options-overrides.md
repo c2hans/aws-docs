@@ -271,7 +271,3 @@ Let’s assume that our result set is a data frame that consists of four fields:
   +  **Value** – Enter a value. If the field value is greater than or equal to the value, the **Text** is displayed.
   +  **From** and **To** – Enter a range. If the field value is between or equal to the values in the range, the **Text** is displayed.
 +  **Text** – Text that is displayed if the conditions are met in a field. This field accepts variables.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

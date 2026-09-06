@@ -79,7 +79,3 @@ The ADDF user is fully responsible for any custom module that is deployed using 
 <a name="secure-addf-updates-and-operations.7cf0e2eb-2ded-583d-878d-0107b58f1513"></a>
 
 As the framework evolves, ADDF receives feature and security updates. It is the ADDF user's responsibility to regularly check for updates published to the GitHub repository and to operate ADDF securely over the long-term. For more information, see [Reoccurring ADDF deployments](reoccurring-addf-deployments.md), [Reoccurring security audits](reoccurring-security-audits.md), [ADDF updates](addf-updates.md), and [Decommissioning](decommissioning.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

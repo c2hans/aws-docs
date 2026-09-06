@@ -10,7 +10,3 @@ A tag is a label that you assign to an AWS resource. Each tag consists of a key 
 Tags are not automatically assigned to your resources. After you add a tag to a resource, modify a tag’s value or remove the tag from the resource at any time. Tags do not have any semantic meaning to Amazon EMR Serverless and are interpreted strictly as strings of characters. If you add a tag that has the same key as an existing tag on that resource, the new value overwrites the earlier value.
 
 If you use IAM, you can control which users in your AWS account have permission to manage tags. For tag-based access control policy examples, refer to [Policies for tag-based access control](security-iam-TBAC.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

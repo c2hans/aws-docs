@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/prevent
  In this example, you’ll see that we have three tenants accessing a set of Lambda functions. Because these functions are being shared, they are deployed with an execution role that covers all tenants. Within the implementation of these functions, our code will use the context of the current tenant (supplied via a JWT) to acquire a new set of tenant-scoped credentials from AWS Security Token Service (AWS STS). Once we have these credentials, they can be used to access resources with tenant context. In this example, we’re using these scoped credentials to access storage.
 
  It’s important to note that this model does push part of the isolation model into the code of your Lambda functions. There are techniques (function wrappers, for example) that can introduce this concept outside the view of developers. The details of acquiring these credentials can also be moved to a Lambda layer to make this a more seamless, centrally managed construct.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

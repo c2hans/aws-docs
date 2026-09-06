@@ -47,7 +47,3 @@ If an export is larger than most applications can handle, AWS splits the report 
 <a name="cur-no-report-files"></a>
 
 Confirm that the Amazon S3 bucket policy grants the **billingreports.amazonaws.com** service permission to put files in the bucket. For more information on the required bucket policy, see [Setting up an Amazon S3 bucket for data exports](https://docs.aws.amazon.com/cur/latest/userguide/dataexports-s3-bucket.html) or [Setting up an Amazon S3 bucket for Cost and Usage Reports](https://docs.aws.amazon.com/cur/latest/userguide/cur-s3.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

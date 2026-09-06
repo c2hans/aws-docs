@@ -22,7 +22,3 @@ Amazon SageMaker Debugger is a capability of SageMaker AI that provides tools to
 + [Amazon SageMaker Debugger](train-debugger.md)
 + [Access a training container through AWS Systems Manager for remote debugging](train-remote-debugging.md)
 + [Release notes for debugging capabilities of Amazon SageMaker AI](debugger-release-notes.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

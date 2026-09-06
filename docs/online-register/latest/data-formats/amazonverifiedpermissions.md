@@ -23,7 +23,3 @@ Amazon Verified Permissions provides the following APIs for data retrieval.
 | <a name="verifiedpermissions-ListPolicyStores"></a>[ListPolicyStores](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_ListPolicyStores.html) | Return a paginated list of all policy stores in the calling Amazon Web Services account | List |
 | <a name="verifiedpermissions-ListPolicyTemplates"></a>[ListPolicyTemplates](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_ListPolicyTemplates.html) | Return a paginated list of all policy templates in the specified policy store | List |
 | <a name="verifiedpermissions-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_ListTagsForResource.html) | View a list of resource tags for the specified policy store | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

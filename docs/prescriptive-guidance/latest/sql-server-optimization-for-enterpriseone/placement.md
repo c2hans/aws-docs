@@ -10,7 +10,3 @@ Because EnterpriseOne completes most business logic in the application tier, it 
 If you are architecting a high availability configuration, you can use multiple techniques to ensure that the most sensitive processes run close to the database server. These techniques include using EnterpriseOne Object Configuration Manager (OCM) to map specific batch jobs (also known as UBEs) to specific servers, and using Virtual Batch Queues (VBQ) with remote nodes disabled.
 
 For information about how to use a placement group on AWS, see [Placement groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) in the Amazon EC2 documentation[.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

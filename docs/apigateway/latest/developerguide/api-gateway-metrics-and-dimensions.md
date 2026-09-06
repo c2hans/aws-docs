@@ -37,7 +37,3 @@ API Gateway removes non-ASCII characters from the ApiName dimension before sendi
 | ApiName | Filters API Gateway metrics for the REST API with the specified API name. |
 | ApiName, Method, Resource, Stage | Filters API Gateway metrics for the API method with the specified API name, stage, resource, and method.<br />API Gateway will not send these metrics unless you have explicitly enabled detailed CloudWatch metrics. In the console, choose a stage, and then for **Logs and tracing**, select **Edit**. Select **Detailed metrics**, and then choose **Save changes**. Alternatively, you can call the [update-stage](https://docs.aws.amazon.com/cli/latest/reference/apigateway/update-stage.html) AWS CLI command to update the `metricsEnabled` property to `true`.<br />Enabling these metrics will incur additional charges to your account. For pricing information, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/). |
 | ApiName, Stage | Filters API Gateway metrics for the API stage resource with the specified API name and stage. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

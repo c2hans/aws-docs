@@ -9,7 +9,3 @@ Consider draining a fleet instance when:
 + A new image version has been published and you want to roll it out without a full fleet restart.
 + An instance has been running for an extended period and you want to refresh it.
 + You observe performance degradation on sessions running on a specific instance and want to recycle it without terminating active sessions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

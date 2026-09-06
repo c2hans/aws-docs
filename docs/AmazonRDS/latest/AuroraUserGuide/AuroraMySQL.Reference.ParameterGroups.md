@@ -193,6 +193,7 @@ The following table shows all of the parameters that apply to the entire Aurora 
 |  `aurora_pq`  |  Yes  | Set to `OFF` to turn off parallel query for specific DB instances in Aurora MySQL versions before 2.09. In version 2.09 or higher, turn parallel query on and off with `aurora_parallel_query` instead. For more information, see [Parallel query for Amazon Aurora MySQL](aurora-mysql-parallel-query.md). |
 | `aurora_read_replica_read_committed` | Yes |  Enables `READ COMMITTED` isolation level for Aurora Replicas and changes the isolation behavior to reduce purge lag during long-running queries. Enable this setting only if you understand the behavior changes and how they affect your query results. For example, this setting uses less-strict isolation than the MySQL default. When it's enabled, long-running queries might see more than one copy of the same row because Aurora reorganizes the table data while the query is running. For more information, see [Aurora MySQL isolation levels](AuroraMySQL.Reference.IsolationLevels.md).  |
 | `aurora_tmptable_enable_per_table_limit` | Yes | Determines whether the `tmp_table_size` parameter controls the maximum size of in-memory temporary tables created by the `TempTable` storage engine in Aurora MySQL version 3.04 and higher.<br />For more information, see [Limiting the size of internal, in-memory temporary tables](ams3-temptable-behavior.md#ams3-temptable-behavior-limit). |
+| `aurora_transaction_timeout` | Yes | Sets the maximum duration, in seconds, for an InnoDB transaction. Transactions that exceed this duration are rolled back. A value of `0` (the default) disables the timeout. Available in Aurora MySQL version 8.4.8 and higher.<br />For more information, see [Transaction timeout in Amazon Aurora MySQL](AuroraMySQL.TransactionTimeout.md). |
 | `aurora_use_vector_instructions` | Yes | When this parameter is enabled, Aurora MySQL uses optimized vector processing instructions provided by modern CPUs to improve performance on I/O-intensive workloads.<br />This setting is enabled by default in Aurora MySQL version 3.05 and higher. |
 |  `autocommit`  |  Yes  | None |
 |  `automatic_sp_privileges`  |  Yes  | None |
@@ -531,7 +532,3 @@ The following MySQL parameters don't apply to Aurora MySQL. This list isn't exha
 + `innodb_undo_tablespaces`
 + `innodb_use_native_aio`
 + `innodb_write_io_threads`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

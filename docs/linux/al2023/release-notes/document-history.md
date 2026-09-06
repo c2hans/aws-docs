@@ -129,7 +129,3 @@ The following table describes the documentation for releases of Amazon Linux 202
 | [AL2023 `2023.1.20230705` released](relnotes-2023.1.20230705.md#major-updates-2023.1.20230705) | [AL2023 release notes](https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html) | February 22, 2023 |
 | [AL2023 `2023.0.20230222` released](https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-20230222.html) | This is an updated Release Candidate (RC) for Amazon Linux 2023 (AL2023) - **RC0**. | February 22, 2023 |
 | [AL2023 `2023.3.20240122` released](relnotes-2023.3.20240122.md#major-updates-2023.3.20240122) | [AL2023 release notes](https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html) | January 22, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

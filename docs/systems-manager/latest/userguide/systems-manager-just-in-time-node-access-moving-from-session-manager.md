@@ -179,7 +179,3 @@ Throughout the migration process, conduct the following tests:
 + **Document everything** - Maintain detailed records of your approval policies, IAM policy changes, and configuration settings.
 + **Monitor and adjust** - Continuously monitor access requests and approval workflows, adjusting policies as needed.
 + **Establish governance** - Create a process for regularly reviewing and updating approval policies as your environment changes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

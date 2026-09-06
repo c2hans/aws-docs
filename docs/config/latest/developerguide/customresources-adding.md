@@ -141,7 +141,3 @@ Determine the schema version id from CloudFormation `DescribeType`.
 In AWS Config, you can see see if this resource configuration is accepted. To evaluate compliance you can write AWS Config rules using this resource.
 
 (Optional) To automate recording of configuration, implement periodic or change-based configuration collectors.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

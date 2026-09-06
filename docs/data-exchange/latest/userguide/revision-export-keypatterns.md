@@ -29,7 +29,3 @@ If you export a revision with the Id `testRevisionId` that has two assets named 
 
 **Note**
 Your resulting objects must have unique names. If they have the same names as existing objects in the S3 bucket, your export will overwrite existing objects. If the revision you are exporting has non-unique names (for example, two assets with the same name), the export will fail. The only dynamic reference that is unique is `${Asset.Id}`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

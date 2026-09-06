@@ -337,7 +337,3 @@ When using this script, keep the following in mind:
 + If the script is interrupted, you can restart it with `retrieve_archive=False` to continue downloading chunks without initiating a new retrieval job.
 + Adjust the {{chunk\_size}} and {{workers}} parameters based on your network bandwidth and system resources.
 + Standard AWS charges apply for Amazon S3 retrievals, Amazon SNS, and Amazon SQS usage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

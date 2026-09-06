@@ -85,7 +85,3 @@ To avoid RDS reboots of replicas due to insufficient memory, we recommend applyi
   + You should always increase the parameter values of all the read replicas first, and perform a rolling reboot of all replicas. Then, apply the parameter changes on the primary instance and reboot.
 +  **Decreasing the parameter values:**
   + You should first decrease the parameter values of the primary instance and perform a reboot. Then, apply the parameter changes to all the associated read replicas and perform a rolling reboot.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

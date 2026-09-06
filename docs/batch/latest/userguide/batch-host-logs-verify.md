@@ -38,7 +38,3 @@ When you use Spot instances or short-lived compute environments that scale to ze
 + **Spot reclaim risk** – Lower the `upload_timeout` and `total_file_size` values in `fluent-bit.conf` to flush log data more frequently. This reduces the window of data that might be lost if an instance is reclaimed.
 + **Short-lived instances** – When AWS Batch scales to zero between jobs, lower the `Flush` interval and `upload_timeout` so that collected data is uploaded before the instance terminates.
 + **Amazon S3 lifecycle rules** – We recommend configuring an Amazon S3 lifecycle rule to expire or transition old log objects to a lower-cost storage class. This prevents unbounded storage growth.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

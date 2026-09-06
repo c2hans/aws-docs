@@ -274,7 +274,3 @@ For the full Messages API request and response field reference, see [Request and
 <a name="inference-messages-api-count-tokens"></a>
 
 To count the number of input tokens that a request would consume before sending it for inference, use the Anthropic `count_tokens` path on the `bedrock-mantle` endpoint. This is the only token-counting path supported for Claude models that are not available on `bedrock-runtime` with a Region-specific endpoint, including Claude models that launch with cross-Region inference (CRIS) only. For details and an example, see [Count tokens using the bedrock-mantle endpoint](count-tokens.md#count-tokens-mantle).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

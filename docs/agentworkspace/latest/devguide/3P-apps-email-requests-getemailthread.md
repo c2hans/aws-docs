@@ -63,7 +63,3 @@ const filteredEmailContactsInEmailThread = emailThreadContacts.filter(emailConta
 
 **Note**
 Each time an email contact is transferred, a new contact ID is created with initiationMethod === 'TRANSFER' and its previousContactId is the contact id before the transfer. You may optionally filter out these transferred contacts to avoid duplicate content when rendering the email thread.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer Agent Workspace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agentworkspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

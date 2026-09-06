@@ -42,6 +42,7 @@ We recommend different actions depending on the causes of your insight.
 + [Don't begin any operation involving a database shutdown until the InnoDB history list decreases](#proactive-insights.history-list.actions.no-shutdown)
 + [Identify and end long-running transactions](#proactive-insights.history-list.actions.long-txn)
 + [Identify the top hosts and top users by using Performance Insights.](#proactive-insights.history-list.actions.top-PI)
++ [Use transaction timeout to prevent future occurrences](#proactive-insights.history-list.actions.transaction-timeout)
 
 ### Don't begin any operation involving a database shutdown until the InnoDB history list decreases
 <a name="proactive-insights.history-list.actions.no-shutdown"></a>
@@ -86,6 +87,11 @@ Make sure also to look for long-running transactions on read replicas.
 
 Optimize transactions so that large numbers of modified rows are immediately committed.
 
+### Use transaction timeout to prevent future occurrences
+<a name="proactive-insights.history-list.actions.transaction-timeout"></a>
+
+To prevent long-running transactions from causing a large history list in the future, consider enabling the `aurora_transaction_timeout` parameter. This parameter automatically terminates transactions that exceed a specified duration. For more information, see [Transaction timeout in Amazon Aurora MySQL](AuroraMySQL.TransactionTimeout.md).
+
 ## Relevant metrics
 <a name="proactive-insights.history-list.metrics"></a>
 
@@ -98,7 +104,3 @@ The following metrics are related to this insight:
 + `TruncateFinishedPoint` – The transaction number up to which undo truncation is performed. This CloudWatch metric is available only for Aurora MySQL version 2.11 and higher, and version 3.08 and higher.
 
 For more information on the CloudWatch metrics, see [Instance-level metrics for Amazon Aurora](Aurora.AuroraMonitoring.Metrics.md#Aurora.AuroraMySQL.Monitoring.Metrics.instances).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

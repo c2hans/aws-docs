@@ -23,7 +23,3 @@ Amazon Pinpoint uses HTTPS and Transport Layer Security (TLS) 1.2 or later to co
 <a name="security-data-protection-key-mgmt"></a>
 
 To encrypt your Amazon Pinpoint data, Amazon Pinpoint uses internal AWS KMS keys that the service owns and maintains on your behalf. We rotate these keys on a regular basis. You can't provision and use your own AWS KMS or other keys to encrypt data that you store in Amazon Pinpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

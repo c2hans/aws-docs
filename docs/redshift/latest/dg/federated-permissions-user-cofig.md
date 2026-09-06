@@ -51,7 +51,3 @@ The following **user-level [configurations](https://docs.aws.amazon.com/redshift
 <a name="federated-user-config-management"></a>
 + When connecting to Amazon Redshiftusing **JDBC**, some **session-level configurations** may also be automatically applied. For more details, refer to the JDBC session-level configuration documentation.
 + Users can also define persistent **user-level configurations** using the [ALTER USER](https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_USER.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,12 +39,8 @@ To install a digital content creation (DCC) adaptor on a customer-managed fleet
    pip install deadline-cloud-for-maya
    ```
 
-   The following table lists the adaptor package name and documentation link for each supported DCC application:
+   The following table lists the adaptor package name and documentation link for each supported DCC application. All adaptor packages are available on the GitHub website:
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/deadline-cloud/latest/developerguide/install-software.html)
 
 **Installing multiple adaptors on the same worker**
 If you install more than one DCC adaptor on the same worker, install each adaptor into its own Python virtual environment. Adaptors can pin different version ranges for shared Python packages (for example, `deadline` or `openjd-adaptor-runtime`). An environment with multiple adaptors might fail with a `ResolutionImpossible` error. It might also silently downgrade a shared package and break the adaptors that need the newer version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

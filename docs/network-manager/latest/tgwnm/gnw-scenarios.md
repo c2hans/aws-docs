@@ -100,7 +100,3 @@ For this scenario, do the following in global networks:
 + Create a device for the EC2 virtual device. For visualization in the global networks console, specify the AWS location of the device (for example, the Availability Zone). For more information, see [Devices in AWS Global Networks for Transit Gateways](nm-devices.md).
 + Create a connection between the on-premises device and the virtual device. For more information, see [Associate or disassociate an on-premises link using AWS Network Manager](nm-devices-onprem.md).
 + Associate the Connect peer with the on-premises device. For more information, see [Associate or disassociate a Connect peer using AWS Network Manager](nm-devices-connect-peer.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

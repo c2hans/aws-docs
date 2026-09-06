@@ -20,7 +20,3 @@ The following code examples demonstrate how to perform individual Amazon Keyspac
 + [`ListTables`](example_keyspaces_ListTables_section.md)
 + [`RestoreTable`](example_keyspaces_RestoreTable_section.md)
 + [`UpdateTable`](example_keyspaces_UpdateTable_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,7 +55,3 @@ Remote VS Code connection requires VS Code remote development, which needs speci
 + Access to Microsoft's VS Code server endpoints is required to install and update the VS Code remote server.
 + Access to VS Marketplace and related CDN endpoints is required for installing VS Code extensions through the extension panel (alternatively, extensions can be installed manually using VSIX files without internet connection).
 + Some extensions may require access to additional endpoints for downloading their specific dependencies. See the extension's documentation for their specific connectivity requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-applicati
 
 An application is the control center for the conversational AI application your users interact with. You might think of it as your "bot."
 
-From the Agentic CX Designer application page, you can:
+From the agentic CX designer application page, you can:
 + Organize the flows the application can handle
 + Define default behavior for entry, unknown, fallback, or escalation scenarios
 + Attach guardrails to user inputs and application outputs
@@ -31,13 +31,13 @@ Use a name that helps teammates quickly understand the purpose of the applicatio
 ## Adding flows to an application
 <a name="acxd-applications-flows"></a>
 
-Once you've designed the workflows and necessary resources in your workspace, you can come back to the **Flows** tab of your application and attach the flows your application should use, the default behavior, and any guardrails.
+Once you've designed the workflows and necessary resources in your workspace, you can come back to the **Design** tab of your application and attach the flows your application should use, the default behavior, and any guardrails.
 
 To start, flows define what your application can do.
 
 **To add flows**
 
-1. Open the application > Select the **Flows** tab.
+1. Open the application > Select the **Design** tab.
 
 1. Choose one or more flows from the workspace to attach.
 
@@ -50,7 +50,7 @@ Default behavior determines which flow runs when the application needs a standar
 
 **To configure default behavior**
 
-1. Open the application > Select the **Flows** tab.
+1. Open the application > Select the **Design** tab.
 
 1. Select the edit icon under the Flows section OR select the three-dot menu beside each attached flow to manage defaults.
 
@@ -76,7 +76,7 @@ Attach guardrails when the application needs safety, compliance, brand, privacy,
 
 **To add guardrails**
 
-1. Open the application > Select the **Guardrails** tab.
+1. Open the application > Select the **Design** tab.
 
 1. Select **Add guardrail**.
 
@@ -95,7 +95,3 @@ Once you have attached and configured flow behavior and guardrails, you can move
 + [Attaching guardrails](#acxd-applications-guardrails)
 + [Builds and deployments](acxd-builds-deployments.md)
 + [Testing](acxd-testing.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

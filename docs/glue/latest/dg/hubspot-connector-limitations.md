@@ -16,7 +16,3 @@ The following are limitations or notes for the HubSpot connector:
 + The 'Quote' and 'Communications' objects are not present for Associations as they are currently not supported in the connector.
 + For Async, SaaS sorts the values in ascending order only.
 + For the `Ticket` entity, SaaS doesn't return the `hs_object_id` field in the Async mode.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

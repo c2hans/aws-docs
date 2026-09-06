@@ -11,7 +11,3 @@ Use File Transfer to use external file transfer applications to transfer files. 
 + AWS Transfer for FTP (Amazon EFS)
 
 ![File transfer](http://docs.aws.amazon.com/res/latest/ug/images/res-filetransfer.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

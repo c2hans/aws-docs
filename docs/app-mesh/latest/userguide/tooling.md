@@ -41,7 +41,3 @@ For more information on the App Mesh controller, see the [App Mesh Controller do
 [Terraform](https://www.terraform.io/) is an open-source infrastructure as code software tool. Terraform can manage cloud services using thier CLI and interacts with APIs using declaritive configuration files.
 
 To see more about using App Mesh with Terraform, check out the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appmesh_mesh).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

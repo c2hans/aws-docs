@@ -64,7 +64,3 @@ Amazon Lex V2 provides predefined request attributes for managing the way that i
 To control whether users can switch between intents during intent confirmation or slot elicitation, use the `x-amz-lex:intent-switch` request attribute. When set to `DISABLE`, this attribute prevents users from triggering a different intent while they are in the middle of completing the current intent flow.
 
 For example, if a user is in the process of booking a flight and is being prompted for flight details, then utterances such as “check weather” or “book hotel” - which might normally trigger other intents - will be ignored, ensuring the conversation remains focused on the current booking process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

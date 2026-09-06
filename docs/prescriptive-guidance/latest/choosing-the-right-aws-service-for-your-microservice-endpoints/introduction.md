@@ -15,7 +15,3 @@ To address HTTP endpoint specific needs, AWS offers the following services:
 + [AWS Lambda function URLs](function-urls.md)
 
 This guide reviews the key capabilities and use cases of each service for creating HTTP endpoints to support your microservices. To help you make an informed design decision, the guide provides a [comparison](services-comparison.md) of these AWS services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

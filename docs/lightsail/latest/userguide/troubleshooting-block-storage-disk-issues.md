@@ -38,7 +38,3 @@ If you encounter the following error, you need to recreate your disk in the same
 ![Block storage disk can't be attached because it's in the wrong Availability Zone](http://docs.aws.amazon.com/lightsail/latest/userguide/images/block-storage-disk-in-different-zone-than-lightsail-instance.png)
 
  *Actual error message:* **There are currently no instances in the {{AWS Region}} that can use this disk.**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

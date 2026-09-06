@@ -45,7 +45,3 @@ In [transforms](transforms.md) and [metrics](metrics.md), you can use the follow
   1. `join('', "abc", 1+2, 'd')` returns a string, `abc3.000000d`.
 
   You can also write the expression in the following way: `join('', "abc", format(1+2: "f"), 'd')`. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

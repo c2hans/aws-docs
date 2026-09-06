@@ -20,7 +20,3 @@ Before getting started, get [set up](ag-setting-up.md) to use AWS Proton and ver
 + [Getting started with the AWS Management Console](ag-getting-started-console.md)
 + [Getting started with the AWS CLI](ag-getting-started-cli.md)
 + [The AWS Proton template library](ag-getting-started-templates.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

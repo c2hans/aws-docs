@@ -13,7 +13,3 @@ For your Amazon EMR configuration, this guide covers the following topics:
 + [Choosing the right storage](storage.md)
 + [Choosing the automatic scaling approach](scaling.md)
 + [Configuration best practices](configuration-best-practices.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

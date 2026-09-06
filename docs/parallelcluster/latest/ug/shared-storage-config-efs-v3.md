@@ -16,7 +16,3 @@ You delete the cluster.
 You change the managed shared storage configuration [`SharedStorage`](SharedStorage-v3.md) / [`Name`](SharedStorage-v3.md#yaml-SharedStorage-Name).
 You remove the managed shared storage from the configuration.
 We recommend that you back up your shared storage regularly to avoid the loss of data. For more information about how to back up individual Amazon EFS volumes, see [Backing up your Amazon EFS file systems](https://docs.aws.amazon.com/efs/latest/ug/efs-backup-solutions.html) in the *Amazon Elastic File System User Guide*. To learn how to manage data backups across AWS services, see [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html) in the *AWS Backup Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-k
 
 Use the **key generate-asymmetric-pair ml-dsa** command in CloudHSM CLI to generate an asymmetric ML-DSA key pair in your AWS CloudHSM cluster. ML-DSA is a post-quantum digital signature algorithm. Generate an ML-DSA key pair when you need to sign or verify data using a quantum-resistant algorithm.
 
+**Note**
+Starting September 1, 2026, ML-DSA is available in FIPS mode for hsm2m.medium clusters.
+
 ## User type
 <a name="key-generate-asymmetric-pair-mldsa-userType"></a>
 
@@ -278,7 +281,3 @@ Required: No
 + [Key attributes for CloudHSM CLI](cloudhsm_cli-key-attributes.md)
 + [Generate a signature with the ML-DSA mechanism in CloudHSM CLI](cloudhsm_cli-crypto-sign-mldsa.md)
 + [Verify a signature signed with the ML-DSA mechanism in CloudHSM CLI](cloudhsm_cli-crypto-verify-mldsa.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ Currently, MediaLive supports event clipping with video for soccer games and bas
 <a name="event-clip-inference-view"></a>
 
 To view information for a feed on the Elemental Inference console, see [ Creating an Elemental Inference workflow](https://docs.aws.amazon.com/elemental-inference/latest/userguide/monitoring-inference-via-console) in the *AWS Elemental Inference user guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

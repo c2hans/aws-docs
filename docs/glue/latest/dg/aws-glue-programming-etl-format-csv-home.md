@@ -243,7 +243,3 @@ Note the following limitations of the vectorized CSV reader:
 + It doesn't support creating a DynamicFrame with [ChoiceType](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pyspark-extensions-types.html#aws-glue-api-crawler-pyspark-extensions-types-awsglue-choicetype).
 + It doesn't support creating a DynamicFrame with [error records](https://docs.aws.amazon.com/glue/latest/dg/glue-etl-scala-apis-glue-dynamicframe-class.html#glue-etl-scala-apis-glue-dynamicframe-class-defs-errorsAsDynamicFrame).
 + It doesn't support reading CSV files with multibyte characters such as Japanese or Chinese characters.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

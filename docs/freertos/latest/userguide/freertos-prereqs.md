@@ -228,7 +228,3 @@ FreeRTOS is a C language project, and the certificate and private key must be sp
 The certificate and private key are hard-coded for demonstration purposes only. Production-level applications should store these files in a secure location.
 
 After you configure FreeRTOS, you can continue to the Getting Started guide for your board to set up your platform's hardware and its software development environment, and then compile and run the demo on your board. For board-specific instructions, see the [Board-specific getting started guides](getting-started-guides.md). The demo application that is used in the Getting Started tutorial is the coreMQTT Mutual Authentication demo, which is located at `demos/coreMQTT/mqtt_demo_mutual_auth.c`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

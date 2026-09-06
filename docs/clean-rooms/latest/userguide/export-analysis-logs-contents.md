@@ -93,7 +93,3 @@ Because the free-form reason an executor stopped can contain AWS Clean Rooms ser
 
 **Unrecognized records are redacted by default**
 If a log record isn't one that AWS Clean Rooms recognizes, all of its text is replaced with `[REDACTED]`, including its field names, and all of its numbers are replaced with zero. Only the record type is preserved. Such a record carries no diagnostic information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

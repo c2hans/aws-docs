@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
  **Validate lifecycle policies are enforced**
 
  Because the cloud is API-driven, you can monitor changes to your environment as described in the operational excellence and security tiers. Set up alerts for when an API action alters a data retention policy so you can quickly review the change to make sure it was authorized and operating correctly. If using AWS Backup, use AWS Backup Audit Manager to automatically detect when your AWS Backup policies violate your data retention requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

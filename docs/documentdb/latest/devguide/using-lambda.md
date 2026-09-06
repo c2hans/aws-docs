@@ -20,7 +20,3 @@ The following are limitations to consider when working with Amazon DocumentDB an
 + AWS Lambda is currently supported only on Amazon DocumentDB 4.0 and 5.0.
 + AWS Lambda is not currently supported on elastic clusters or global clusters.
 + AWS Lambda payload sizes cannot exceed 6MB. For more information about Lambda batch sizes, see “Batching behavior” in [Lambda event source mappings](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventsourcemapping.html#invocation-eventsourcemapping-batching) section in the *AWS Lambda Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -223,7 +223,3 @@ Answer the following questions to determine the right type of origination identi
 If both dedicated short codes and dedicated long codes are available in the destination country, you should use a dedicated short code. Mobile carriers are more likely to block or limit the messages that are sent from long codes if short codes are also available.
 
      If you want to determine what kind of origination number to use for another country, return to [question 1](#two-way-q1). Otherwise, **stop here**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

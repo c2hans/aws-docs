@@ -25,7 +25,3 @@ To request access to Amazon Bedrock submit an RFC with the Management \| AWS ser
 **Q: What are the prerequisites or dependencies to using Amazon Bedrock in my AMS account?**
 + Third-party model subscriptions that require AWS Marketplace permissions must be done by the default role (`AWSManagedServicesAdminRole` on MALZ and `Customer_ReadOnly_Role` on SALZ). This is because the default role includes AWS Marketplace permissions.
 + If data encryption is used, then you must provide the AWS KMS key ARN when you request creation of the console role. Also, the Amazon S3 bucket in use must have “bedrock” in its name.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

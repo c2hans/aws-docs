@@ -223,7 +223,3 @@ s3_client.put_object(
  Your HIT will be rendered inside an IFRAME that has certain limitations. The IFRAME operates in HTML5 "sandbox" mode that has extra restrictions on the content that can appear in the frame. This limits your ability to execute certain code and to use technologies such as Adobe Flash. To ensure your HITs work as expected, we recommend you test them first in the [Requester Sandbox](https://requester.mturk.com/developer/sandbox).
 
 Finally, please remember that external questions must meet the Amazon Mechanical Turk Participation Agreement, and Amazon Mechanical Turk's standards for appropriate content. Specifically, the Participation Agreement expressly prohibits the use of Amazon Mechanical Turk for advertising or solicitation. If your website typically displays advertising to visitors, please make sure those advertisements do not appear in your external questions. Amazon Mechanical Turk reserves the right to remove HITs with inappropriate content.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

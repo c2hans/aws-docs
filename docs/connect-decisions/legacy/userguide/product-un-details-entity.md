@@ -22,7 +22,3 @@ The table below lists the column names supported by the data entity:
 | image\_url | string | No | Image of the symbol for the hazmat class.  |
 | un\_description | string | No | Description of the UN Proper Shipping Name.  |
 | un\_id | string | Yes | UN IDs are four-digit numbers that identify dangerous goods, hazardous substances and articles (such as explosives, flammable liquids, toxic substances, and so on.) in the framework of international transport.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

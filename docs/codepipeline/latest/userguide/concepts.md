@@ -159,7 +159,3 @@ There are three types of conditions. Entry conditions answer the question “If 
 <a name="concepts-rules"></a>
 
 Conditions use one or more preconfigured *rules* that run and perform checks that will then engage the configured result for when the condition is not met. For example, meeting all rules for an Entry condition rule that checks for alarm status and deployment window times will deploy a successful stage after all checks pass. For more information, see [How do stage conditions work?](concepts-how-it-works-conditions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

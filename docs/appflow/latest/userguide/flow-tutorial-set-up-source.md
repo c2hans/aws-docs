@@ -90,7 +90,3 @@ You now have an S3 bucket with sample data in the `source` folder.
 For more information on Amazon S3, see the following resources:
 + [Amazon S3](https://docs.aws.amazon.com/appflow/latest/userguide/s3.html) in the *Amazon AppFlow User Guide*.
 + [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) in the *Amazon S3 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

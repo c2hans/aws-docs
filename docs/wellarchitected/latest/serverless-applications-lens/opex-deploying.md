@@ -20,7 +20,3 @@ When deploying to production, favor safe deployments over all-at-once systems as
  You can also combine the use of synthetic traffic, custom metrics, and alerts as part of a rollout deployment. These help you proactively detect errors with new changes that otherwise would have impacted your customer experience.
 
 ![Diagram showing AWS CodeDeploy Lambda deployment and hooks](http://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/aws-codedeploy-lambda-deployment-and-hooks.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

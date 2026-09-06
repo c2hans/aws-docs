@@ -17,7 +17,3 @@ The following are limitations for the Mixpanel connector:
 +  To run a AWS Glue job for the entities mentioned below, mandatory filters are required. Refer to the table below for entity names and their required filters.
 **Entity name and required filters**
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/mixpanel-connector-limitations.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -755,7 +755,3 @@ The following tables summarize the key differences between domain types, authent
 | Data plane access denied for IAM Identity Center user | Verify that the backend role mapping includes the IAM Identity Center group ID, the domain policy allows the IAM Identity Center application role, and IdentityCenterInstanceRegion is correctly set to the same Region as the OpenSearch UI application on the domain. |
 | Cross-partition data source rejected | Cross-partition access is not supported. Ensure the data source ARN is in the same partition as the application. |
 | IAM Identity Center authentication fails for cross-region domain | Verify that IdentityCenterInstanceRegion is set to the correct Region where your IAM Identity Center instance is enabled. The OpenSearch UI application must also be in this same Region. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

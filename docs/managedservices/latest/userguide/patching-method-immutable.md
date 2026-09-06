@@ -34,7 +34,3 @@ New AMS AMIs are generated after Patch Tuesday from updated AWS AMIs. Then, AMS 
 When needed, AMS provides AMIs updated with critical security patches released since the last monthly AMI release.
 
 The process for critical security updates to immutable infrastructures is identical to the monthly AMI process for immutable infrastructures, except that a new AMS AMI is created outside the normal schedule (Patch Tuesday), based on the release of new critical updates. AMS makes available a new AMI with the critical security patches according to the service level agreements (SLAs) defined for your account. AMS updates of Auto Scaling groups by request only. Use a service request to submit AMI replacement requests.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

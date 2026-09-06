@@ -87,7 +87,3 @@ Microsoft requires that, in addition to a Windows Server Client Access License (
 If you run a Amazon DCV server on an Amazon EC2 instance and you use a [ Windows Server AMI](https://aws.amazon.com/windows/resources/amis/), Amazon takes care of the licensing costs for the Windows Server CAL, and provides two Windows Server RDS CALs that are intended solely for administrative purposes. This is for testing, maintenance, and administration only.
 
 For more information, see the [Microsoft Product Terms Site](https://www.microsoft.com/licensing/terms/). If you have questions about your licensing or rights to Microsoft software, consult your legal team, Microsoft, or your Microsoft reseller.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

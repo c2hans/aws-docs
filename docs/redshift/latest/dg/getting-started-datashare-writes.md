@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/getting-started-datas
 # Getting started with multi-warehouse writes using data sharing in Amazon Redshift
 <a name="getting-started-datashare-writes"></a>
 
-You can share database objects for both reads and writes across different Amazon Redshift clusters or Amazon Redshift Serverless workgroups within the same AWS account, across accounts, and across regions. The procedures in this topic show how to set up data sharing that includes write permissions. You can grant permissions such as SELECT, INSERT, and UPDATE for different tables and USAGE and CREATE for schemas.
+You can share database objects for both reads and writes across different Amazon Redshift clusters or Amazon Redshift Serverless workgroups within the same AWS account, across accounts, and across Regions. The procedures in this topic show how to set up data sharing that includes write permissions. You can grant permissions such as SELECT, INSERT, and UPDATE for different tables and USAGE and CREATE for schemas.
 
-Data is live and available to all warehouses as soon as you commit a write transaction Producer account administrators can determine whether or not specific namespaces or regions get read-only, read-and-write, or any access to the data. The procedures assume you're working in a database in a provisioned cluster or Amazon Redshift Serverless workgroup.
+Data is live and available to all warehouses as soon as you commit a write transaction Producer account administrators can determine whether or not specific namespaces or Regions get read-only, read-and-write, or any access to the data. The procedures assume you're working in a database in a provisioned cluster or Amazon Redshift Serverless workgroup.
 
 With Amazon Redshift, you can manage data sharing with writes using the console or the SQL interface to control access and govern data across Amazon Redshift clusters and AWS accounts. The following sections provide step-by-step instructions on configuring and managing data sharing with writes using Amazon Redshift.
 
@@ -24,7 +24,3 @@ Amazon Redshift multi-warehouse writes using data sharing is only supported on A
 + [Consumer actions for new datashares in Amazon Redshift](writes-consumer-new.md)
 + [Producer actions for existing datashares in Amazon Redshift](writes-producer-existing.md)
 + [Consumer actions for existing datashares in Amazon Redshift](writes-consumer-existing.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

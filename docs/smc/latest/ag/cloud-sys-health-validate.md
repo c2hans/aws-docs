@@ -16,7 +16,3 @@ This section describes how to validate the AWS Health integration in Jira Servic
 1. Open your Jira project, and choose a Jira issue with type *AWS Health Event*.
 
 1. Select the **AWS Health Affected Resources** panel to view event resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -104,7 +104,3 @@ Keep your thinking brief and provide step by step thinking in <thinking> tags.
 ```
 
 To improve model performance, chain-of-thought prompting can be an effective technique. This approach allows the model to break down complex problems into more manageable components, consider alternative solutions, and ultimately enhance the overall quality of its output. However, it is important to note that increased use of chain-of-thought prompting can come with trade-offs, such as higher computational cost and latency due to the generation of additional output tokens.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

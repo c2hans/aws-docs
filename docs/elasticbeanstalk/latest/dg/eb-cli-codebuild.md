@@ -64,7 +64,3 @@ This timeout controls the maximum duration for a CodeBuild run, and the EB CLI a
 Whenever your application code needs to be deployed, the EB CLI uses CodeBuild to run a build, then deploys the resulting build artifacts to your environment. This happens when you create an Elastic Beanstalk environment for your application using the [**eb create**](eb3-create.md) command, and each time you later deploy code changes to the environment using the [**eb deploy**](eb3-deploy.md) command.
 
 If the CodeBuild step fails, environment creation or deployment doesn't start.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

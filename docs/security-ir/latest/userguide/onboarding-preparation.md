@@ -11,7 +11,3 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/onboarding-
 + **Determine account scope**: Decide whether AWS Security Incident Response will cover your entire AWS organization or specific organizational units (OUs). Defining this scope early makes implementation and scaling more straightforward.
 + **Establish escalation protocols**: Update your existing escalation procedures to include AWS Security Incident Response. Communicate the updated protocols to all stakeholders and response personnel.
 + **Collect points of contact and critical information**: Collecting customer information early ensures a smooth onboarding experience and enables timely outreach from the AWS Security Incident Response Engineering team when needed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,3 @@ To enable the Hive Queries tab on the Tez web UI, set the following configuratio
 You can also view Tez, Spark, and YARN application UI details using links on the **Application user interfaces** tab of a cluster's detail page in the console. Amazon EMR application user interfaces (UI) are hosted off-cluster and are available after the cluster has terminated. They don't require you to set up a SSH connection or web proxy, making it easier for you to troubleshoot and analyze active jobs and job history.
 
 For more information, see [View application history](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-cluster-application-history.html) in the *Amazon EMR Management Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

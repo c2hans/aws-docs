@@ -20,7 +20,3 @@ aws opensearch update-domain-config \
 
 **Note**
 Granting the migration role broad access (for example, an `all_access`-equivalent role) is convenient during migration. Scope the permissions down or remove the mapping after cutover so the migration role no longer has standing write access to the domain. See [Security](security-1.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ A business executive using Amazon Quick Desktop can ask these questions through 
 This is a demo-scale illustration of the pattern, not a production BI deployment guide. Production deployments of Amazon Quick Suite require IAM Identity Center configuration, DataZone group-to-reader-group mapping, and reader-group provisioning in the Quick namespace — steps that are outside the scope of this chapter and depend on the organization’s existing IAM Identity Center setup.
 
 The value of the pattern is not the deployment complexity; it is the observation that the same `adp-{stage}-data-consumers` IAM Identity Center group that controls Athena and notebook access to ADP products also controls which users can subscribe to those products in Amazon Quick Suite — one access-control model governs all consumption patterns.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ Traditional methods for IVR experience design can be static and complex. Organiz
 This type of a monolithic architecture design leads to excessive administrative processes and management overhead, and impedes innovation. Developers spend more time implementing small changes across multiple dependencies, which makes it difficult for them to follow agile processes. Often, this complexity becomes burdensome and companies must rely on professional services organizations or external consultants to help manage these changes. As a result, the business experiences increased turnaround time for typical updates. A complicated architecture that involves these complex and time-consuming development cycles results in increased cost.
 
 This guide focuses on a foundational architecture for an IVR application that helps eliminate redundancies and streamlines the change management process. This architecture makes it easy for developers to maintain and innovate, and also provides businesses with the agility they need.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

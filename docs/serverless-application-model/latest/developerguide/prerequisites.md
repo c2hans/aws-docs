@@ -97,7 +97,3 @@ For information about configuring your AWS credentials in VS Code, see [ Setting
 <a name="prerequisites-next-steps"></a>
 + You are now ready to install the AWS SAM CLI and start using AWS SAM. To install the AWS SAM CLI, see [Install the AWS SAM CLI](install-sam-cli.md).
 + To set up Visual Studio Code for serverless development, see [Setting up the AWS Toolkit for VS Code](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/setting-up.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

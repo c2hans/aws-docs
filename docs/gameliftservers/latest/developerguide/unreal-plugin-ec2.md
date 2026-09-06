@@ -60,7 +60,7 @@ For more detailed instructions on preparing a game server built for Linux, see [
 
 1. **Designate a working directory to organize your build files.** The working directory's structure is deployed as is onto each hosting compute. Add your Linux-built game server and all dependent files.
 
-1. **Create a server build install script in the root of your working directory.** If needed,create an `install.sh` file and add any commands needed to properly install your game server build. Amazon GameLift Servers uses this file to install the server build onto each EC2 hosting resource.
+1. **Create a server build install script in the root of your working directory.** If needed, create an `install.sh` file and add any commands needed to properly install your game server build. Amazon GameLift Servers uses this file to install the server build onto each EC2 hosting resource.
 
 1. **Add the OpenSSL library files to your game server build.** You can skip this step if your game server is integrated with server SDK 5.3 or later.
 
@@ -104,7 +104,7 @@ In this step, you choose the game hosting solution that you want to deploy at th
 ## Step 4: Set game parameters
 <a name="unreal-plugin-ec2-parameters"></a>
 
-In this step, you describe your game for uploading to AWS;
+In this step, you describe your game for uploading to AWS.
 + Server build name: Provide a meaningful name for your game server build. AWS uses this name to refer to the copy of your server build that's uploaded and used for deployments.
 + Server build OS: Enter the operating system that your server is built to run on. This tells AWS what type of compute resources to use to host your game.
 + Game server folder: Identify the path to your local server build folder.
@@ -129,7 +129,3 @@ At this point, you've completed all of the tasks needed to launch and play your 
 If you deployed the single fleet scenario, you can open a single client instance with one player, enter the server map and move around. Open additional instances of the game client to add a second player to the same server game map.
 
 If you deployed the FlexMatch scenario, the solution waits for at least two clients to be queued for game session placement before the players can enter the server map.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,7 +59,3 @@ You can configure an OpsItem with Automation Documents and mark it as *Associate
 1. In **OpsItem Automation Executions**, review the success or failure status.
 
 1. Follow your organization's Incident management procedures to determine related Incident resolution actions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

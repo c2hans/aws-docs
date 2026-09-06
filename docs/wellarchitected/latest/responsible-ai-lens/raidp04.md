@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 + [RAIDP04-BP03 Protect data from being manipulated or accessed for unintended purposes](raidp04-bp03.md)
 + [RAIDP04-BP04 Establish governance procedures for managing your datasets](raidp04-bp04.md)
 + [RAIDP04-BP05 Document the characteristics of each dataset using a datasheet](raidp04-bp05.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

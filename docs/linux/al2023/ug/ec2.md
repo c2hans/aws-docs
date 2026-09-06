@@ -187,7 +187,3 @@ Regularly using an updated AMI to launch an instance ensures that the instance s
 For more information about using SSM parameters to launch an instance, see:
 + [Launching AL2023 using the SSM parameter and AWS CLI](#launch-via-aws-cli)
 + [Launching the latest AL2023 AMI using CloudFormation](#launch-from-cloudformation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 + [PERF07-BP04 Use monitoring to generate alarm-based notifications](perf_monitor_instances_post_launch_generate_alarms.md)
 + [PERF07-BP05 Review metrics at regular intervals](perf_monitor_instances_post_launch_review_metrics_collected.md)
 + [PERF07-BP06 Monitor and alarm proactively](perf_monitor_instances_post_launch_proactive.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

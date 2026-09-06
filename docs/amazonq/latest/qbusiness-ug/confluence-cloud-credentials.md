@@ -16,7 +16,3 @@ The following sections give you an overview of how to configure Confluence (Clou
 + [OAuth 2.0 authentication](confluence-cloud-credentials-oauth.md)
 + [How Amazon Q works with Confluence (Cloud) access and refresh tokens](confluence-cloud-credentials-notes.md)
 + [Checking Confluence (Cloud) connectivity](confluence-cloud-connection-check.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

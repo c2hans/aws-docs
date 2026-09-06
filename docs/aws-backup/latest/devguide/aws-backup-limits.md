@@ -30,7 +30,6 @@ The following quotas apply when working with AWS Backup.
 | Backup plans per Region per account | 300 | Yes |
 | Versions per backup plan | 2,000 | Yes |
 | Resource assignments per backup plan | 100 | No |
-| Amazon S3 buckets per account | 100 | Yes |
 | Concurrent cross-Region or in-Region copy jobs per account in destination Region | 1002 | No |
 | Additional cross-Region copy jobs per vault in a destination Region after the limit in row above entry has been reached.1 | 52 | No |
 | Concurrent cross-account copies that can be made of the same resource to the same destination Region | 30 | No |
@@ -195,7 +194,3 @@ You might also encounter quotas imposed by a AWS Backup-supported service, inclu
 + [Amazon Neptune](https://docs.aws.amazon.com/neptune/latest/userguide/limits.html)
 + [Amazon Simple Storage Service](https://docs.aws.amazon.com/general/latest/gr/s3.html#limits_s3)
 + [Amazon Timestream](https://docs.aws.amazon.com/timestream/latest/developerguide/backups-limits.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

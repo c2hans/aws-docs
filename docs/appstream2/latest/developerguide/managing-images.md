@@ -18,7 +18,3 @@ Images that are available to you are listed in the **Image Registry** in the Wor
 + [Create Your Amazon WorkSpaces Applications Image Programmatically by Using the Image Assistant CLI Operations](programmatically-create-image.md)
 + [Create Your Linux-Based Images](create-linux-based-images.md)
 + [Use Session Scripts to Manage Your Amazon WorkSpaces Applications Users' Streaming Experience](use-session-scripts.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

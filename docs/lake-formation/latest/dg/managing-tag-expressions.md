@@ -142,7 +142,3 @@ The LF-Tag expression creator role gets the ability to create, update, or delete
 | Super | For LF-Tag expressions, the Super permission grants the ability to Describe, Alter, Drop, and grant permissions on the tag expression to other principals. |
 
 These permissions are grantable. A principal who has been granted these permissions with the grant option can grant them to other principals.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

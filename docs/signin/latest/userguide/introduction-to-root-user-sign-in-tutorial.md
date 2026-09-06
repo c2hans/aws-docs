@@ -75,7 +75,3 @@ If you want more information about the AWS account root user, refer to the follo
 + For an overview of the root user, see [AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html).
 + For details about using the root user, see [Using the AWS account root user](https://docs.aws.amazon.com/accounts/latest/reference/root-user.html).
 + For step-by-step directions on how to reset your root user password, see [I forgot my root user password for my AWS account](troubleshooting-sign-in-issues.md#troubleshoot-forgot-root-password).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

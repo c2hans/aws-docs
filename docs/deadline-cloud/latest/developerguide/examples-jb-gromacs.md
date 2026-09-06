@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Run GROMACS molecular dynamics simulations on Deadline Cloud
 <a name="examples-jb-gromacs"></a>
 
-The [gromacs\_md](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/gromacs_md) job bundle runs a [GROMACS](https://www.gromacs.org/) molecular dynamics simulation pipeline from raw protein structure to analyzed trajectory. The pipeline runs system preparation, energy minimization, NVT/NPT equilibration, production MD, and analysis (RMSD, RMSF, radius of gyration, hydrogen bonds). Multiple independent replicas fan out in parallel through the `MaxReplicaIndex` parameter.
+The [gromacs\_md job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/gromacs_md) on the GitHub website runs a molecular dynamics simulation pipeline from raw protein structure to analyzed trajectory with [GROMACS](https://www.gromacs.org/) on the GROMACS website. The pipeline runs system preparation, energy minimization, NVT/NPT equilibration, production MD, and analysis (RMSD, RMSF, radius of gyration, hydrogen bonds). Multiple independent replicas fan out in parallel through the `MaxReplicaIndex` parameter.
 
 The bundle requires a Deadline Cloud farm with a Linux x86\_64 service-managed fleet (minimum 4 vCPU) and a conda queue environment with `gromacs` from `conda-forge`. No host configuration script or custom conda recipe is needed.
 
@@ -31,7 +31,3 @@ deadline bundle submit gromacs_md \
   -p "MaxReplicaIndex=9" \
   -p "ProductionSteps=5000000"
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

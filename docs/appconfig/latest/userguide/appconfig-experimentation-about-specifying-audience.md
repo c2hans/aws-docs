@@ -27,7 +27,3 @@ Be aware of overlapping experiments. Avoid assigning the same users to multiple 
 
 **Alignment with rollout plans**
 Align the experiment audience with your intended rollout strategy. Choose an audience that reflects the users you plan to expose to the final treatment. If needed, start additional experiment runs to validate results across broader audiences. This helps ensure that experiment results remain valid as exposure increases.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

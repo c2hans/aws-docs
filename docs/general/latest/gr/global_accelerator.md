@@ -40,7 +40,3 @@ The following are the service endpoints and service quotas for this service.
 | Principals per cross-account attachment | Each supported Region: 10 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/globalaccelerator/quotas/L-3D1423D2)  | The maximum number of principals per cross-account attachment. |
 | Standard accelerators per AWS account | Each supported Region: 20 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/globalaccelerator/quotas/L-BE074EF3)  | The maximum number of standard accelerators for each AWS account. |
 | Tags per accelerator | Each supported Region: 50 | No | The maximum number of tags for each accelerator. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

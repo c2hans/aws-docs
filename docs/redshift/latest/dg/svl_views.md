@@ -48,7 +48,3 @@ The SVL\_QUERY\_SUMMARY view only contains information about queries run by Amaz
 + [SVL\_UDF\_LOG](r_SVL_UDF_LOG.md)
 + [SVL\_USER\_INFO](r_SVL_USER_INFO.md)
 + [SVL\_VACUUM\_PERCENTAGE](r_SVL_VACUUM_PERCENTAGE.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

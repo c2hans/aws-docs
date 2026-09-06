@@ -34,7 +34,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 1.  Establish automated workflows for access requests, approvals, and provisioning that incorporate appropriate segregation of duties checks and maintain audit trails of all access changes across the supply chain environment.
 
 1.  Implement regular access reviews and certification processes specific to supply chain roles, with automated detection of toxic combinations of permissions that could violate separation of duties principles.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

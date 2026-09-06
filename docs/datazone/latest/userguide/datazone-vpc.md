@@ -14,7 +14,3 @@ To connect your Amazon VPC to Amazon DataZone, you must first define an interfac
 **Important**
 In VPC, an endpoint policy is a resource-based policy that you can attach to a VPC endpoint to control which AWS principals can use the endpoint to access an AWS service.
 The current release of Amazon DataZone supports the use of endpoint policies for establishing and using connections between your Amazon VPC and Amazon DataZone endpoints.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

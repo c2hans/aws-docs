@@ -31,7 +31,3 @@ For the complete scripts and manifests, see the [4-karpenter-cost-optimization](
 Switch from the default `random` expander to `least-waste` for general cost optimization, or `priority` if you have mixed Spot/On-Demand/Graviton node groups and want explicit control over which scales first. Never use `random` in production — it ignores cost entirely.
 
 **Key takeaway: **The expander strategy is a one-line change that determines whether every scale-up event picks the cheapest option or an arbitrary one. `least-waste` alone can reduce per-scale-up cost by 20–30% by avoiding oversized instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

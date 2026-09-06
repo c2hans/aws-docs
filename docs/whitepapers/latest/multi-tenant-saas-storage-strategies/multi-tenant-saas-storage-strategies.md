@@ -33,7 +33,3 @@ In the [SaaS Lens](https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/
  This paper explores all the moving parts of this puzzle. It examines and classifies the models that are typically used to achieve multitenancy, and helps you weigh the pros and cons that shape your selection of a partitioning model. It also outlines how each model is realized on [Amazon RDS](https://aws.amazon.com/rds/), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon Redshift](https://aws.amazon.com/redshift). As you dig into each storage technology, you’ll learn how to use the AWS constructs to scope and manage your multitenant storage.
 
  Although this paper gives you general guidance for selecting a multitenant partitioning strategy, it’s important to recognize that the business, technical, and operational dimensions of your environment will often introduce factors that will also shape the approach you select. In many cases, SaaS organizations adopt a hybrid of the variations described in this paper.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

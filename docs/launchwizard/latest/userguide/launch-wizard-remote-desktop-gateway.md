@@ -85,7 +85,3 @@ Additionally, a new VPC deployment includes the following components:
 + Managed network address translation (NAT) gateways to allow outbound internet access for resources in the private subnets.
 
 ![A Remote Desktop gateway application deployed in two Availability Zones using an Auto Scaling group and a Network Load Balancer.](http://docs.aws.amazon.com/launchwizard/latest/userguide/images/rdgateway-architecture-diagram.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

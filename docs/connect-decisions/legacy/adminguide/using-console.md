@@ -28,7 +28,3 @@ The following permissions are needed by the Console Admin to create and update A
 ------
 
 {{key\_arn}} specifies the key you would like to use for the AWS Supply Chain instance. For best practices and to restrict access to only the keys you would like to use for AWS Supply Chain, see [Specifying KMS keys in IAM policy statements](https://docs.aws.amazon.com/kms/latest/developerguide/cmks-in-iam-policies.html). To represent all KMS keys, use a wildcard character alone ("\*").
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

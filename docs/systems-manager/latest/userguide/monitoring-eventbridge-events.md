@@ -51,7 +51,3 @@ For more information about how to get started with EventBridge and set up rules,
 + [Configuring EventBridge for Systems Manager events](monitoring-systems-manager-events.md)
 + [Amazon EventBridge event examples for Systems Manager](monitoring-systems-manager-event-examples.md)
 + [Sample scenarios: Systems Manager targets in Amazon EventBridge rules](monitoring-systems-manager-targets.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

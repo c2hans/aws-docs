@@ -7,20 +7,20 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/run
 
  In many rendering use cases, loading the application and scene data can take a significant amount of time. If a job reloads them for every frame, it will spend most of its time on overhead. It's often possible to load the application once as a background daemon process, have it load the scene data, and then send it commands via inter-process communication (IPC) to perform the renders.
 
- Many of the open source Deadline Cloud integrations use this pattern. The Open Job Description project provides an [adaptor runtime library](https://github.com/OpenJobDescription/openjd-adaptor-runtime-for-python) with reliable IPC patterns on all supported operating systems.
+ Many of the open source Deadline Cloud integrations use this pattern. The Open Job Description project provides an [adaptor runtime library](https://github.com/OpenJobDescription/openjd-adaptor-runtime-for-python) on the GitHub website with reliable IPC patterns on all supported operating systems.
 
- To demonstrate this pattern, there is a [self-contained sample job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_daemon_process/template.yaml) that uses Python and bash code to implement a background daemon and the IPC for tasks to communicate with it. The daemon is implemented in Python, and listens for a POSIX SIGUSR1 signal for when to process a task. The task details are passed to the daemon in a specific JSON file, and the results of running the task are returned as another JSON file.
+ To demonstrate this pattern, there is a [self-contained sample job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_daemon_process/template.yaml) on the GitHub website that uses Python and bash code to implement a background daemon and the IPC for tasks to communicate with it. The daemon is implemented in Python, and listens for a POSIX SIGUSR1 signal for when to process a task. The task details are passed to the daemon in a specific JSON file, and the results of running the task are returned as another JSON file.
 
 ## Prerequisites
 <a name="daemon-prerequisites"></a>
 
- Perform the following steps to run the [sample job bundle with a daemon process](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_daemon_process/template.yaml) from the Deadline Cloud samples github repository.
+ Perform the following steps to run the [sample job bundle with a daemon process](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_daemon_process/template.yaml) from the Deadline Cloud samples repository on the GitHub website.
 
 1.  If you do not have a Deadline Cloud farm with a queue and associated Linux fleet, follow the guided onboarding experience in the [Deadline Cloud console](https://console.aws.amazon.com/deadlinecloud/home) to create one with default settings.
 
 1.  If you do not have the Deadline Cloud CLI and Deadline Cloud monitor on your workstation, follow the steps in [Set up Deadline Cloud submitters](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/submitter.html) from the user guide.
 
-1.  Use `git` to clone the [Deadline Cloud samples GitHub repository](https://github.com/aws-deadline/deadline-cloud-samples).
+1.  Use `git` to clone the [Deadline Cloud samples GitHub repository](https://github.com/aws-deadline/deadline-cloud-samples) on the GitHub website.
 
    ```
    git clone https://github.com/aws-deadline/deadline-cloud-samples.git
@@ -52,7 +52,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/run
 
 1. In this section you use the Deadline Cloud monitor to compare the session actions with where they are defined in the job template. It continues from the previous section.
 
-    Open the file [job\_env\_daemon\_process/template.yaml](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_daemon_process/template.yaml) in a text editor. Compare the session actions to where they are defined in the job template.
+    Open the file [job\_env\_daemon\_process/template.yaml](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_daemon_process/template.yaml) from the Deadline Cloud samples repository on the GitHub website in a text editor. Compare the session actions to where they are defined in the job template.
 
 1.  Select the `Launch DaemonProcess` session action in Deadline Cloud monitor. You will see log output as follows.
 
@@ -223,7 +223,3 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/run
           anyOf:
           - linux
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

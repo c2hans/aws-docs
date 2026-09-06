@@ -148,7 +148,3 @@ If you use Change Manager across an organization, you use a delegated administra
 + For Explorer and OpsCenter, see [Deregister an Explorer delegated administrator ](https://docs.aws.amazon.com/systems-manager/latest/userguide/Explorer-setup-delegated-administrator-deregister.html).
 + For Change Manager, see [Setting up an organization and delegated account for Change Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager-organization-setup.html).
 + For Quick Setup see [Deregister a delegated administrator for Quick Setup ](https://docs.aws.amazon.com/systems-manager/latest/userguide/quick-setup-deregister-delegated-administrator.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -164,7 +164,3 @@ With AWS services, you don't have to worry about administration tasks such as se
 You never have to over-provision or under-provision infrastructure to accommodate application growth, intermittent spikes, and performance requirements, or incur fixed capital costs, including software licensing and support, hardware refresh, and resources to maintain hardware. AWS manages these, so you can spend time innovating and building new applications, not managing infrastructure.
 
 For more information, see [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) on the AWS website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

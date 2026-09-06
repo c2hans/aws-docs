@@ -64,7 +64,3 @@ Amazon GameLift Servers provides the following APIs for data retrieval.
 | <a name="gamelift-ResolveAlias"></a>[ResolveAlias](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_ResolveAlias.html) | Retrieve the fleet ID associated with an alias | Read |
 | <a name="gamelift-SearchGameSessions"></a>[SearchGameSessions](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_SearchGameSessions.html) | Retrieve game sessions that match a set of search criteria | Read |
 | <a name="gamelift-ValidateMatchmakingRuleSet"></a>[ValidateMatchmakingRuleSet](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_ValidateMatchmakingRuleSet.html) | Validate the syntax of a FlexMatch matchmaking rule set | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

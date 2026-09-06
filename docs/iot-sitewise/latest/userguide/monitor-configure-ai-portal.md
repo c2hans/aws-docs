@@ -58,7 +58,3 @@ The **Status** column can be one of the following values.
 + **DELETING** ‐ AWS IoT SiteWise is processing your request to delete the portal. This process can take several minutes to complete.
 + **ACTIVE** ‐ When the portal becomes active, your portal users can access it.
 + **FAILED** ‐ AWS IoT SiteWise couldn't process your request to create, update, or delete the portal. If you enabled AWS IoT SiteWise to send logs to Amazon CloudWatch Logs, you can use these logs to troubleshoot issues. For more information, see [ Monitoring AWS IoT SiteWise with CloudWatch Logs](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/monitor-cloudwatch-logs.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ EMR Notebooks are available as EMR Studio Workspaces in the console. The **Creat
 Because EMR Notebooks are EMR Studio Workspaces in the new console, you can you can refer to [Link Git-based repositories to an EMR Studio Workspace](emr-studio-git-repo.md) for more information on working with Git repositories in your Workspace. But at this time, you can't delete Git repositories from Workspaces.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

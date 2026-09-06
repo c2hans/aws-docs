@@ -20,7 +20,3 @@ You can adjust the number of Amazon EC2 instances available to an Amazon EMR clu
 <a name="emr-scaling-considerations"></a>
 + An Amazon EMR cluster always comprises one or three primary nodes. Once you initially configure the cluster, you can only scale core and task nodes. You can't scale the number of primary nodes for the cluster.
 + For instance groups, reconfiguration operations and resize operations occur consecutively and not concurrently. If you initiate a reconfiguration while an instance group is resizing, the reconfiguration starts once the instance group completes the resize in progress. Conversely, if you initiate a resize operation while an instance group is busy with reconfiguration, the resizing starts once the reconfiguration is complete.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

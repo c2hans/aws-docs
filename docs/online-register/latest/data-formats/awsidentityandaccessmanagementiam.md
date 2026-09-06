@@ -86,7 +86,3 @@ AWS Identity and Access Management (IAM) provides the following APIs for data re
 | <a name="iam-ListVirtualMFADevices"></a>[ListVirtualMFADevices](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListVirtualMFADevices.html) | List virtual MFA devices by assignment status | List |
 | <a name="iam-SimulateCustomPolicy"></a>[SimulateCustomPolicy](https://docs.aws.amazon.com/IAM/latest/APIReference/API_SimulateCustomPolicy.html) | Simulate whether an identity-based policy or resource-based policy provides permissions for specific API operations and resources | Read |
 | <a name="iam-SimulatePrincipalPolicy"></a>[SimulatePrincipalPolicy](https://docs.aws.amazon.com/IAM/latest/APIReference/API_SimulatePrincipalPolicy.html) | Simulate whether an identity-based policy that is attached to a specified IAM entity (user or role) provides permissions for specific API operations and resources | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

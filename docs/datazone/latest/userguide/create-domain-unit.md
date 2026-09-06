@@ -22,7 +22,3 @@ In Amazon DataZone, domain units enable you to organize your assets and other do
    + Under **Domain unit details**, for **Description**, specify the domain unit description.
    + **Domain unit parent** - choose the parent domain unit under which you'd like to add the new domain unit.
    + **Domain unit owners** - specify domain unit owners who can edit this domain unit.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

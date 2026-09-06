@@ -320,7 +320,3 @@ SELECT * FROM sys.jobs WHERE job_type = 'ANALYZE';
  `ANALYZE` jobs are billed like other asynchronous jobs in Aurora DSQL. When you modify a table, this may indirectly trigger an automatic background statistics collection job, which can result in metering charges due to the associated system-level activity.
 
  Background `ANALYZE`jobs, triggered automatically, collect the same types of statistics as a manual `ANALYZE` and apply them by default to user tables. System and catalog tables are excluded from this automated process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

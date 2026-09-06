@@ -29,7 +29,3 @@ The following managed SageMaker AI containers do not support network isolation b
 <a name="mkt-algo-model-internet-free-isolation-marketplace"></a>
 
 Network isolation can be used in conjunction with a VPC. In this scenario, the download and upload of customer data and model artifacts are routed through your VPC subnet. However, the training and inference containers themselves continue to be isolated from the network, and do not have access to any resource within your VPC or on the internet.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -117,7 +117,3 @@ After you activated advanced features, you can do the following:
 + [Create an organizational unit](https://docs.aws.amazon.com/organizations/latest/userguide/create_ou.html)
 + [Enable or disable AWS Regions in your account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html)
 + [Create IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

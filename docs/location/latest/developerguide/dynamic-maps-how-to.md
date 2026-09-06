@@ -25,7 +25,3 @@ Each how-to is designed to be accessible, with step-by-step instructions for imp
 + [How to create a logistics map](how-to-create-logistic-map.md)
 + [How to show transit details on a map](how-to-show-transit-details-map.md)
 + [How to create a 3D map](how-to-create-a-3d-map.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

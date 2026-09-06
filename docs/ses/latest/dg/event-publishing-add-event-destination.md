@@ -26,7 +26,3 @@ If you want to receive notifications when certain events occur, you can use Amaz
 + [Set up an Amazon EventBridge destination for event publishing](event-publishing-add-event-destination-eventbridge.md)
 + [Set up an Amazon Pinpoint event destination for event publishing](event-publishing-add-event-destination-pinpoint.md)
 + [Set up an Amazon SNS event destination for event publishing](event-publishing-add-event-destination-sns.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

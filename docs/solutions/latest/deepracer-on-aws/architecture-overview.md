@@ -144,7 +144,3 @@ Amazon CloudWatch provides comprehensive monitoring and logging across all syste
 |  [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/)  | Core | Provides monitoring and logging capabilities for all components of the DeepRacer on AWS solution. |
 |  [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/)  | Core | Manages access control and permissions for various components of the DeepRacer on AWS solution. |
 |  [Amazon Virtual Private Cloud (VPC)](https://aws.amazon.com/vpc/)  | Optional | Can be used to provide network isolation for SageMaker AI training jobs for enhanced security. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

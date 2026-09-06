@@ -43,7 +43,3 @@ The following procedures summarize the actions to take for each AWS service.
 <a name="aurora-global-database-arc"></a>
 
 When planning your business continuity and disaster recovery strategy, you need to orchestrate recovery across application stacks and their dependencies. [Amazon Application Recovery Controller (ARC)](https://docs.aws.amazon.com/r53recovery/latest/dg/region-switch.html) integrates with Aurora Global Database to automate this process through ARC Region Switch, a centralized solution for automated multi-Region application recovery. Region Switch orchestrates failover steps across AWS accounts and Regions, provides real-time recovery dashboards, and generates compliance reports by aggregating data across resources and accounts. Learn more about [using Region Switch for Aurora Global Database](https://docs.aws.amazon.com/r53recovery/latest/dg/aurora-global-database-block.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

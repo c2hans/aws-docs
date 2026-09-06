@@ -34,7 +34,3 @@ The following table describes important additions to the Amazon FinSpace documen
 |  [Deployment modes](update-kdb-clusters-databases.md#update-kdb-clusters-databases.title) | Updates to kdb cluster database worklfow to include deployment modes. | August 21, 2023 |
 | [Managed kdb Insights](finspace-managed-kdb.md)  | Amazon FinSpace with Managed kdb Insights provides customers with a fully managed service for the latest version of kdb’s analytics engine. | June 5, 2023 |
 |  [ New IAM policy](security-iam-awsmanpol.md#security-iam-awsmanpol-AWSFinSpaceServiceRolePolicy) | To enable access to AWS service and resources, FinSpace uses the service-linked role named `AWSServiceRoleForFinSpace`. | June 5, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

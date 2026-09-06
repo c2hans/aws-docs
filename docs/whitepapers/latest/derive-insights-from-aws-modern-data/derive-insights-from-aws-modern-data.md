@@ -23,7 +23,3 @@ Publication date: **June 3, 2021** ([Document history](document-revisions.md))
  This whitepaper presents [Modern Data](https://aws.amazon.com/big-data/datalakes-and-analytics/data-lake-house/) persona-centric usage patterns that enable you to collect, manage, process, and analyze all your structured and unstructured data in a simple and integrated fashion. A Modern Data architecture also enables you to use all your data for a variety of use cases, such as interactive SQL, business intelligence (BI), machine learning (ML), streaming, and big data analytics.
 
  This whitepaper first discusses the concept of the Modern Data solution as compared to data warehouse and data lake solutions. It then presents three Modern Data patterns to derive insights from your Modern Data, based on user role or job function.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

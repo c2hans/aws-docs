@@ -24,7 +24,3 @@ In the following set of filter rules, rule 10 mirrors HTTPS traffic from all IPv
 | 20 | accept | TCP (6) |  | 443 | ::/0 | ::/0 |
 
 Note that if you don't add outbound rules, then no outbound traffic is mirrored.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

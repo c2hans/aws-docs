@@ -36,7 +36,3 @@ Working with customers, AWS observed the following two main drivers for IPv6 ado
    **Adoption strategy** — Create dual-stack VPCs and subnets. Configure AWS services such as load balancers and edge service in dual-stack model with corresponding DNS records on the AWS Cloud. Optionally, provide separate endpoints for IPv4 and IPv6 in dedicated IPv4-only and IPv6-only stacks.
 
  Your organization should be prepared to operate in heterogeneous mode for many years to come. For over 20 years, IPv6 coexisted side-by-side with IPv4, and it will continue to do so. The long-term goal is to be IPv6 everywhere and retire the IPv4 stack, but you don’t need to rush it. Instead, work backwards from your business requirements and act accordingly. If you are just starting with IPv6, small steps along with the power of the AWS Cloud will give you the needed confidence to transition more of your network to IPv6-only mode.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

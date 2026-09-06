@@ -26,7 +26,3 @@ response = runtime_sm_client.invoke_endpoint(
 + Specify a `TargetContainerHostname` that does not exist in the endpoint
 + Do not specify a value for `TargetContainerHostname` in a request to an endpoint configured for direct invocation
 + Specify a value for `TargetContainerHostname` in a request to an endpoint that is not configured for direct invocation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

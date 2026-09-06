@@ -202,7 +202,3 @@ You can also create a canary release deployment from an existing regular deploym
    ```
 
    Because you enabled a canary on an existing version of the API, both the production release (`Stage`) and canary release (`canarySettings`) point to the same deployment. After you change the API and deploy it to this stage again, the new version will be in the canary release, while the base version remains in the production release. This is manifested in the stage evolution when the `deploymentId` in the canary release is updated to the new deployment `id` and the `deploymentId` in the production release remains unchanged.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

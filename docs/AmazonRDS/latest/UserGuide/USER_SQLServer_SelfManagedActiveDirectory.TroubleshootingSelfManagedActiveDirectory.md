@@ -31,7 +31,3 @@ node {{node_n. message}}
 For Multi-AZ instances, you might notice the error reporting for both node1 and node2, which indicates your instance's Kerberos configuration is not ready for failover. In the event of a failover, you might experience authentication difficulties using Kerberos. Resolve the configuration issues to ensure Kerberos setup is valid and up to date. For Multi-AZ instances, no actions are required to use Kerberos authentication on the new primary host given all network and permission configurations are in place.
 
 For Single-AZ instances, node1 is the primary node. If your Kerberos authentication is not working as expected, check the instance events and resolve the configuration issues to ensure Kerberos setup is valid and up to date.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

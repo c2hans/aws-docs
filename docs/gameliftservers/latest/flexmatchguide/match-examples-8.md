@@ -18,7 +18,7 @@ The example rule set creates a match using the following instructions:
 
 Notes on using this rule set:
 + This rule set defines teams that can potentially hold up to 155 players, which makes it a large match. (10 x 15 hunters \+ 5 monsters = 155)
-+ Because the algorithm uses the "fastest region" batching preference, players tend to be placed in regions where they report faster latency and not in regions where they report high (but acceptable) latency. At the same time, matches are likely to have fewer players, and the balancing criteria (number of monster skills) may vary more widely.
++ Because the algorithm uses the "fastest region" batching preference, players tend to be placed in regions where they report faster latency and not in regions where they report high (but acceptable) latency. At the same time, matches are likely to have fewer players, and the balancing criteria (number of monster kills) may vary more widely.
 + When an expansion is defined for a multi-team definition (quantity > 1), the expansion applies to all teams created with that definition. So by relaxing the hunter team minimum players setting, all ten hunter teams are affected equally.
 + Since this rule set is optimized to minimize player latency, the latency rule acts as a catch-all to exclude players who have no acceptable connection options. We don't need to relax this requirement.
 + Here's how FlexMatch fills matches for this rule set before any expansions take effect:
@@ -73,7 +73,3 @@ Notes on using this rule set:
     }]
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

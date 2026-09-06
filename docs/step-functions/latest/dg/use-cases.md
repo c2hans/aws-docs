@@ -108,7 +108,3 @@ Some examples automation workflows include the following:
 **Human Approval**
 + Automate machine learning model training, then get approval of the model by a data scientist before deploying the updated model.
 + Automate customer feedback routing based on sentiment analysis so negative comments are quickly escalated for review.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

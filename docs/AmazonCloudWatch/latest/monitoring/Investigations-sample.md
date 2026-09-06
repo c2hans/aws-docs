@@ -16,7 +16,3 @@ If you'd like to see an investigation in action before you configure an investig
 1. Choose **Try a sample investigation**.
 
    The console displays the sample investigation, with suggestions and findings in the right pane. In each popup, choose **Next** to advance to the next part of the sample walkthrough.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

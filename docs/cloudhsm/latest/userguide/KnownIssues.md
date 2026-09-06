@@ -21,7 +21,3 @@ AWS CloudHSM has the following known issues. Choose a topic to learn more.
 + [Known issues for integrating third-party applications](ki-third-party.md)
 + [Known issues for cluster modification](ki-cluster-modification.md)
 + [Known issues of operation failure using AWS CloudHSM client version 5.12.0 on hsm2.medium](ki-hsm2-old-sdk.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

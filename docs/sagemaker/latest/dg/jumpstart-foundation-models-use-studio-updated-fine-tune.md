@@ -50,7 +50,3 @@ Specify the security settings to use for your training job, including the IAM ro
 In the **Additional Information** field you can edit the training job name. You can also add and remove tags in the form of key-value pairs to help organize and categorize your fine-tuning training jobs.
 
 After providing information for your fine-tuning configuration, choose **Submit**. If the pre-trained foundation model that you chose to fine-tune requires explicit agreement of an end-user license agreement (EULA) before training, the EULA is provided in a pop-up window. To accept the terms of the EULA, choose **Accept**. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

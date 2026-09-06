@@ -264,7 +264,3 @@ User Store is an Amazon Q Business data source connector feature that streamline
 <a name="web-exp"></a>
 
 An Amazon Q Business web experience is the chat interface that you create using your Amazon Q Business application environment. Then, your end users can chat with your organization’s Amazon Q Business web experience. You can configure and customize your Amazon Q Business web experience using either the Amazon Q Business console or the Amazon Q Business API. For more information, see [Customizing your web experience](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/customize-web-experience.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -9,7 +9,7 @@ The Quick extension for Microsoft Teams integrates AI-powered assistance directl
 
 The Teams extension enables users to:
 + Mention **@Amazon Quick** in conversations in Teams channels to add it as a collaborator.
-+ Use actions from action connectors configured in Amazon Quick.
++ Use actions from connectors configured in Amazon Quick.
 + Access any company knowledge sources added to your Amazon Quick instance from within Microsoft Teams.
 
 **Important**
@@ -393,8 +393,4 @@ Follow these steps to permanently remove a Microsoft Teams extension access conf
 **Note**
 Deleting a extension access removes access for all users in your M365 tenant and deletes all extensions created for Teams. If delete extension access fails, the admin must switch to the author view and delete the Teams extensions that are using the configured extension access before returning to delete the extension access.
 
-With Microsoft Teams extension access configured, your team can now use **@Quick** mentions in conversations to access AI assistance, company knowledge, and action connectors directly within their Teams environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+With Microsoft Teams extension access configured, your team can now use **@Quick** mentions in conversations to access AI assistance, company knowledge, and connectors directly within their Teams environment.

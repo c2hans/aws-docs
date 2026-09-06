@@ -103,6 +103,13 @@ The following options are available:
 The default behavior is `ROLLBACK`.
 You can specify either the `--disable-rollback` option or the `--on-failure` option, but not both.
 
+`--output {{[ text | json ]}}`  <a name="ref-sam-cli-deploy-options-output"></a>
+The format of the command output:
++ `text` – Prints regular, human-readable output. This is the default value.
++ `json` – Prints structured, machine-readable output. Use this format when you want to consume the output programmatically, such as in CI/CD pipelines, IDE extensions, and AI-assisted tools.
+A deployment runs over a period of time. When you specify `--output json`, the AWS SAM CLI prints a stream of JSON objects, one per line, as the deployment progresses. Each object includes a `type` field that identifies the kind of information it contains, such as the changeset, deployment events, stack outputs, and the final result. On failure, the final object includes an `error` object that describes what went wrong.
+The `--output json` option isn't compatible with options that require interactive prompts, such as `--guided` and `--confirm-changeset`.
+
 `--parameter-overrides {{LIST}}`  <a name="ref-sam-cli-deploy-options-parameter-overrides"></a>
 A string that contains CloudFormation parameter overrides encoded as key-value pairs. Each override uses the format `ParameterKey=name,ParameterValue=value`. Multiple overrides are separated by spaces. Here are two examples:
 
@@ -159,7 +166,3 @@ Output JSON for the CloudFormation template. The default output is YAML.
 <a name="sam-cli-command-reference-sam-deploy-examples"></a>
 
 For a detailed example and in-depth walkthrough on using the `sam deploy` subcommand, refer to [Introduction to deploying with AWS SAM](using-sam-cli-deploy.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -73,7 +73,3 @@ The following instructions are for **screen** on macOS. You can find **screen** 
    An empty console window appears. It can take between 1 to 2 minutes for one of the following to appear:
    + `Please wait for the system to stabilize. This can take up to 900 seconds, so far {{x seconds}} have elapsed on this boot.`
    + The `Outpost>` prompt.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

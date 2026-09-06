@@ -275,7 +275,3 @@ For more information, see [Maintenance Plans](chap-sql-server-aurora-pg.manageme
 | Partial restore |  `RESTORE DATABASE…​ FILE= …​ \| FILEGROUP = …​`  | N/A | You can restore the cluster to a new cluster and copy the needed data to the primary cluster. |
 
 For more information, see [Managing an Amazon Aurora DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_Aurora.html) in the *User Guide for Aurora*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

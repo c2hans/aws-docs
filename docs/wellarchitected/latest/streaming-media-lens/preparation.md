@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
  Consider using Infrastructure and Event Management (IEM) and Media Events Management programs for large-scale live events that might require immediate support during an event. By engaging AWS through these programs, you enable AWS experts to become familiar with your workload, provide architectural and operational guidance, and real-time support for your planned event.
 
  In addition to IEM, Enterprise Support customers are eligible for a Cloud Operations Review and a Well-Architected Framework Review designed to help identify risks in your cloud operations. This cross-team engagement helps establish a common understanding of your workload and helps AWS contribute to your streaming events. You can always perform your own architecture review for any workload by using the [AWS Well-Architected Tool](https://console.aws.amazon.com/wellarchitected) in the AWS Management Console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

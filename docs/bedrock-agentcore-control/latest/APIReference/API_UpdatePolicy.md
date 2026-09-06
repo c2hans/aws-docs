@@ -49,7 +49,7 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [definition](#API_UpdatePolicy_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdatePolicy-request-definition"></a>
-The new Cedar policy statement that defines the access control rules. This replaces the existing policy definition with new logic while maintaining the policy's identity.
+The new Cedar or Dogwood policy statement that defines the access control rules. This replaces the existing policy definition with new logic while maintaining the policy's identity.
 Type: [PolicyDefinition](API_PolicyDefinition.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
@@ -105,7 +105,7 @@ The original creation timestamp of the policy.
 Type: Timestamp
 
  ** [definition](#API_UpdatePolicy_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdatePolicy-response-definition"></a>
-The updated Cedar policy statement.
+The updated Cedar or Dogwood policy statement.
 Type: [PolicyDefinition](API_PolicyDefinition.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 
@@ -203,7 +203,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/bedrock-agentcore-control-2023-06-05/UpdatePolicy)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/bedrock-agentcore-control-2023-06-05/UpdatePolicy)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/bedrock-agentcore-control-2023-06-05/UpdatePolicy)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore Control Plane. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore-control` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -420,7 +420,3 @@ After configuring with any of the Client SDK 5 configure tools, connection betwe
    ```
 **Warning**
 After you enforce mTLS usage in the cluster, all existing non-mTLS connections will be dropped and you can only connect to the cluster with mTLS certificates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

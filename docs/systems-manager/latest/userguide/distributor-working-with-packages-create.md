@@ -486,7 +486,3 @@ You can use the AWS CLI to create a package. Have the URL ready from the bucket 
    ```
 
 For information about other options you can use with the **create-document** command, see [**create-document**](https://docs.aws.amazon.com/cli/latest/reference/ssm/create-document.html) in the AWS Systems Manager section of the *AWS CLI Command Reference*. For information about other options you can use with the **get-document** command, see [**get-document**](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-document.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

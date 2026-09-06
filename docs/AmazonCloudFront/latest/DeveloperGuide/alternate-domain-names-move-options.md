@@ -126,7 +126,3 @@ If the source and target distributions are in different AWS accounts, and you do
 1. [Contact Support](https://console.aws.amazon.com/support/home) to request that they verify that you own the domain, and move the domain to the new CloudFront distribution for you.
 
 1. After the target distribution is fully deployed, update your DNS configuration to point the alternate domain name’s DNS record to the distribution domain name of the target distribution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

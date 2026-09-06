@@ -159,7 +159,3 @@ The following are the service endpoints and service quotas for this service.
 | ValidateStateMachineDefinition throttle token refill rate per second | Each supported Region: 1 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/states/quotas/L-BE784273)  | The token refill rate per second for ValidateStateMachineDefinition calls. |
 
 For more information, see [Quotas](https://docs.aws.amazon.com/step-functions/latest/dg/limits-overview.html) in the *AWS Step Functions Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

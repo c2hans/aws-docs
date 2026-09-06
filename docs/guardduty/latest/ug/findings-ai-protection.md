@@ -109,7 +109,3 @@ This finding maps to the [MITRE ATLAS technique AML.T0051 - LLM Prompt Injection
 **Remediation recommendations:**
 
 Review the prompt that triggered the guardrail intervention and the IAM identity that submitted the prompt. If the activity is unexpected for the associated identity, the credentials might have been compromised. For more information, see [Remediating potentially compromised AWS credentials](compromised-creds.md). If the guardrail detected but did not block the prompt attack, consider setting the prompt attack content filter's action to **Block** rather than **Detect** so that the guardrail blocks the content. For more information, see [Options for handling harmful content detected by Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-harmful-content-handling-options.html) in the *Amazon Bedrock User Guide*. You can also restrict access to the Amazon Bedrock invocation APIs for the affected identity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

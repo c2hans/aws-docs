@@ -29,7 +29,3 @@ The `AmazonIVSBroadcast` module implements the interface described in this docum
 The camera managed by the broadcast SDK optimizes its resolution and frame rate (frames-per-second, or FPS) to minimize heat production and energy consumption. This section explains how the resolution and frame rate are selected to help host applications optimize for their use cases.
 
 When attaching an `IVSCamera` to an `IVSBroadcastSession`, the camera is optimized for a frame rate of `IVSVideoConfiguration.targetFramerate` and a resolution of `IVSVideoConfiguration.size`. These values are provided to the `IVSBroadcastSession` on initialization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

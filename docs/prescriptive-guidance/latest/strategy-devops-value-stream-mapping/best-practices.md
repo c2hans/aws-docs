@@ -11,7 +11,3 @@ Use the following best practices when creating and using a development value str
 + Choose a tool that works best for the participants. If you are working collaboratively in the same space, you can use a whiteboard and sticky notes. If you have participants who are attending virtually, you might prefer a digital tool, such as an online whiteboard, Microsoft Visio, or Microsoft Excel.
 + Evaluate the results of your changes and look for additional opportunities for improvement. Development value stream mapping is not a one-time activity. It is a part of continuous improvement cycle to identify new constraints and evaluate the effectiveness of your actions.
 + Don't choose constraints merely because they are convenient. Use data to prioritize. The *theory of constraints* is a management philosophy that theorizes that a very small number of constraints are responsible for limiting any system. Although there may be many convenient things a team could fix, focusing on the few that are limiting the system produces the most value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

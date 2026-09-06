@@ -49,7 +49,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  **Load testing stages:** Conduct load testing at various development stages (early development, sprints, pre-production, and post-deployment) to validate system performance and identify issues.
 +  **Load-generating architectures:** Choose appropriate load-generating architectures (EC2, EKS, Fargate, or Lambda) based on scalability needs, management preferences, and specific test requirements.
 +  **Load testing frameworks:** Select a load testing framework (like JMeter, Locust, Grafana K6, or Gatling) that balances ease of use, performance, flexibility, and community support to suit your team's needs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

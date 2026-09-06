@@ -1079,7 +1079,3 @@ The following tables show PostgreSQL extensions for PostgreSQL version 9.6.x tha
 |  [unaccent ](http://www.postgresql.org/docs/9.6/static/unaccent.html) | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 |
 | [uuid-ossp](http://www.postgresql.org/docs/9.6/static/uuid-ossp.html) | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 |
 | [wal2json](https://github.com/eulerto/wal2json) | version 2.3 | version 2.3 | version 2.3 | version 2.3 | version 2.3 | version 2.1 | version 2.1 | Commit hash 9e962ba | Commit hash 9e962ba | Commit hash 9e962ba | Commit hash 9e962ba | Commit hash 9e962ba | Commit hash 01c5c1e | Commit hash 5352cc4 | Commit hash 5352cc4 | Commit hash 645ab69 | Commit hash 645ab69 | Commit hash 2828409 | N/A | N/A |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

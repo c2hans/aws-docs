@@ -13,7 +13,3 @@ You must have sufficient permissions to create an Auto Scaling group. You must a
 + [Create an Auto Scaling group using a launch template](create-asg-launch-template.md)
 + [Create an Auto Scaling group using the Amazon EC2 launch wizard](create-asg-ec2-wizard.md)
 + [Auto Scaling groups with multiple instance types and purchase options](ec2-auto-scaling-mixed-instances-groups.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

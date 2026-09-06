@@ -118,7 +118,3 @@ Amazon RDS for Oracle
 + [Configuring Oracle GoldenGate](https://docs.oracle.com/goldengate/1212/gg-winux/GIORA/setup.htm#GIORA357) (Oracle documentation)
 + [Understanding Oracle GoldenGate Adapters](https://docs.oracle.com/goldengate/gg12201/gg-adapter/GADAD/GUID-F9105B02-9836-4F98-99F8-6E9C46D42764.htm#GADAD101) (Oracle documentation)
 + [Configuring the Flat File Adapter](https://docs.oracle.com/goldengate/gg12201/gg-adapter/GADAD/GUID-DF13488D-E0E9-497C-8AFF-70B839DE4843.htm#GADAD424) (Oracle documentation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

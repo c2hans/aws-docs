@@ -47,7 +47,3 @@ Using [AWS Control Tower](https://aws.amazon.com/de/controltower/), you can conf
 + *Granular access:* Access restrictions that limit all access to your data, unless the access is requested by you, or by a partner whom you trust.
 + *Encryption:* Features and controls that help you encrypt data, whether in transit, at rest, or in memory.
 + *Resiliency:* Ability to sustain operations through disruption or disconnection, which is essential in the case of events such as supply chain disruption, network interruption, and natural disaster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -405,7 +405,3 @@ To perform any operation on a `SecureString` parameter, Parameter Store must be 
 + The KMS key is not enabled. When this occurs, Parameter Store returns an InvalidKeyId exception with a detailed error message from AWS KMS. If the KMS key state is `Disabled`, [enable it](https://docs.aws.amazon.com/kms/latest/developerguide/enabling-keys.html). If it is `Pending Import`, complete the [import procedure](https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys.html). If the key state is `Pending Deletion`, [cancel the key deletion](https://docs.aws.amazon.com/kms/latest/developerguide/deleting-keys-scheduling-key-deletion.html) or use a different KMS key.
 
   To find the [key state](https://docs.aws.amazon.com/kms/latest/developerguide/key-state.html) of a KMS key, use the [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

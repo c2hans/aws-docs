@@ -17,7 +17,3 @@ When an export is complete, the export files are published to the Amazon S3 loca
 + **`statements/`**   –   This folder contains **RDF** data files in Turtle, N-Quads, N-Triples, or JSON format.
 + **`config.json`**   –   This file contains the *schema* of the graph as inferred by the export process.
 + **`lastEventId.json`**   –   This file contains the `commitNum` and `opNum` of the last event on the database's Neptune streams. The export process only includes this file if you set the `includeLastEventId` export parameter to `true`, and the database from which you are exporting data has [Neptune streams](streams-using.md) enabled.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

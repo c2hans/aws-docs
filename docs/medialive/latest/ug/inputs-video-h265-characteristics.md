@@ -17,7 +17,3 @@ The HEVC (H.265) codec encoding schemes for input video include profile, bit dep
 | Main | 8-bit | 4:2:2 | High |
 | Main | 10-bit | 4:2:2 | Main |
 | Main | 10-bit | 4:2:2 | High |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

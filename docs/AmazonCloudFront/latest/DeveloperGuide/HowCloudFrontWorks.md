@@ -55,7 +55,3 @@ When the origin is an Amazon S3 bucket and the request’s optimal regional edge
 The following diagram illustrates how requests and responses flow through CloudFront edge locations and regional edge caches.
 
 ![Diagram showing request/response paths from viewers to origin via edge locations and regional edge caches.](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/images/regional-edge-caches.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -191,7 +191,3 @@ Before submitting your registration, verify:
 1. **Keep your website clear** – Your site should show your company as an employer or staffing agency, not a job listing marketplace. If you list roles, they should be your own openings or your agency's active placements.
 
 1. **Don't use purchased lists** – Messaging candidates who didn't directly apply to your organization has no valid opt-in path and will fail consent review.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

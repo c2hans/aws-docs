@@ -30,7 +30,3 @@ Complete the following steps when this error occurs:
 1. Delete the solution-created Amazon S3 bucket that’s causing the conflict.
 
 1.  [Retry](https://docs.aws.amazon.com/codepipeline/latest/userguide/actions-retry.html) the failing **AWSAccelerator-Pipeline** stage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

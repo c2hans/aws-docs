@@ -9,7 +9,7 @@ Idempotency ensures that an API request completes only once. With an idempotent 
 
 The [ StartSnapshot](https://docs.aws.amazon.com/ebs/latest/APIReference/API_StartSnapshot.html) API supports idempotency using a *client token*. A client token is a unique string that you specify when you make an API request. If you retry an API request with the same client token and the same request parameters after it has completed successfully, the result of the original request is returned. If you retry a request with the same client token, but change one or more of the request parameters, the `ConflictException` error is returned.
 
-If you do not specify your own client token, the AWS SDKs automatically generates a client token for the request to ensure that it is idempotent.
+If you do not specify your own client token, the AWS SDKs automatically generates a client token for the request to make sure that it is idempotent.
 
 A client token can be any string that includes up to 64 ASCII characters. You should not reuse the same client tokens for different requests.
 
@@ -38,7 +38,3 @@ Specify the `client-token` request parameter.
 ```
 $ C:\> aws ebs start-snapshot --region us-east-2 --volume-size 8 --parent-snapshot snap-123EXAMPLE1234567 --timeout 60 --client-token 550e8400-e29b-41d4-a716-446655440000
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

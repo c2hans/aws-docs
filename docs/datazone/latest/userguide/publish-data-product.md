@@ -20,7 +20,3 @@ To publish a data product complete the following steps.
 1. Choose the data product that you want to publish, and then choose **Publish**. Confirm the publishing of this data product by choosing **Publish data product**.
 **Note**
 Any unpublished data assets that are in this data product will become published, but will only be available through this data product.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

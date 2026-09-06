@@ -19,7 +19,3 @@ Amazon SimpleDB is designed to support highly parallel applications. To improve 
 + If last two bits equal 11, place item in Domain3
 
  This algorithm provides a distribution of items among domains, uniformity of which is directly controlled by the hash function. The additional advantage of this scheme is the ease with which it can be adjusted to partition your data among larger number of domains by considering more and more bits of the hash value (3 bits will distribute to 8 domains, 4 bits to 16 domains and so on).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

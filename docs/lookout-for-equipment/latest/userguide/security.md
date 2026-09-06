@@ -31,7 +31,3 @@ As a managed service, Amazon Lookout for Equipment is protected by the AWS globa
 You use published AWS API calls to access Amazon Lookout for Equipment through the network. Clients must support Transport Layer Security (TLS) 1.2 or later. Clients must also support cipher suites with perfect forward secrecy (PFS) such as Ephemeral Diffie-Hellman (DHE) or Elliptic Curve Ephemeral Diffie-Hellman (ECDHE). Most modern systems such as Java 7 and later support these modes.
 
 Requests must be signed by using an access key ID and a secret access key that is associated with an IAM principal. If you don't have an access key and a secret access key, you can use the AWS Security Token Service to generate temporary security credentials to sign requests.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

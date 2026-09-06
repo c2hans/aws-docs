@@ -20,7 +20,3 @@ The end date must not be more than 1 month after the start date.
 + **Bot filters** – To filter by locale, alias, and version of your bot, select the dropdown menus labeled **All locales**, **All aliases**, and **All versions**.
 + **Modality** – Select the gear icon and choose the **Modality** dropdown menu to choose whether to display results for **Speech** or **Text**.
 + **Channel** – Select the gear icon and choose the **Channel** dropdown menu to choose the channel for which you want to display results. For more information about channel integration, see [Integrating an Amazon Lex V2 bot with a messaging platform](deploying-messaging-platform.md) and [Amazon Connect contact centers](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-contact-centers.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

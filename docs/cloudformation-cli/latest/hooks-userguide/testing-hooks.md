@@ -359,7 +359,3 @@ Hooks won't be invoked for skipped resources.
    ```
 
    *Results*: CloudFormation successfully created the stack. The Hook's logic verified that the `AWS::S3::Bucket` resource contained server-side encryption before provisioning the resource.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

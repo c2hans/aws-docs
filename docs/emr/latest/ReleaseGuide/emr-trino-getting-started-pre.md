@@ -19,7 +19,3 @@ Complete these steps to configure your AWS account if you haven't already:
 1. Create a group and assign users to it.
 
 1. Create an Amazon EC2 key pair, which you can use later to secure communication between resources with SSH. This step is required if you plan to connect to the primary node to perform tasks. For more information, see [Connect to the Amazon EMR cluster primary node using SSH](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-connect-master-node-ssh.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

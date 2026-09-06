@@ -43,7 +43,3 @@ The following is a list of considerations and good practices to explore with the
 +  [How cloud can help agencies enhance security, save costs, and improve mission delivery through the Technology Modernization Fund (TMF)](https://aws.amazon.com/blogs/publicsector/how-cloud-help-agencies-enhance-security-improve-mission-delivery-technology-modernization-fund-tmf/)
 +  [For Small Governments – The Cloud is Only as Big as You Want it to Be](https://aws.amazon.com/blogs/publicsector/for-small-governments-the-cloud-is-only-as-big-as-you-want-it-to-be/)
 +  [Optimizing nonprofits’ costs in the cloud](https://aws.amazon.com/blogs/publicsector/optimizing-nonprofits-costs-cloud/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,3 @@ Private offers can be created in multiple currencies including USD, EUR, GBP, AU
 <a name="buyer-private-offers-prerequsite-steps-tax-settings"></a>
 
 If your company qualifies for a tax exemption, verify your tax settings. To view or modify your tax settings, sign in to the AWS Management Console and, in your account settings, view the tax settings. For more information on tax registration, see [How do I add or update my tax registration number or business legal address for my AWS account?](https://aws.amazon.com/premiumsupport/knowledge-center/update-tax-registration-number/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

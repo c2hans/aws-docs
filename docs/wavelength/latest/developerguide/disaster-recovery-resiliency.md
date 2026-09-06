@@ -16,7 +16,3 @@ To learn more about resiliency in Amazon EC2 and Amazon EC2 Auto Scaling, see th
 + [Resilience in Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/disaster-recovery-resiliency.html) in the *Amazon EC2 Auto Scaling User Guide*.
 
 For more information about AWS Regions, Availability Zones, Local Zones, and Wavelength Zones, see [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wavelength. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wavelength` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

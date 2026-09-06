@@ -68,7 +68,3 @@ If you’ve selected a gated model, you’ll have to accept the End User License
 1. Choose **Delete**.
 
 1. The **Status** will change to **Deleting**. Once the HyperPod deployment has been deleted, you’ll see a message confirming it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

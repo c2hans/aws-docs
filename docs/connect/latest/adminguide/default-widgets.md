@@ -146,7 +146,3 @@ Built using the Table JSON component, the Assets widget displays your Customer P
 + Access detailed asset information
 
 For more information about Customer Profiles Asset objects, see [Object type mapping for the standard asset in Customer Profiles](object-type-mapping-standard-asset.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

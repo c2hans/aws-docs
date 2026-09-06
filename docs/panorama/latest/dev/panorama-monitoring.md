@@ -17,7 +17,3 @@ For help troubleshooting specific errors, see [Troubleshooting](panorama-trouble
 + [Monitoring in the AWS Panorama console](monitoring-console.md)
 + [Viewing AWS Panorama logs](monitoring-logging.md)
 + [Monitoring appliances and applications with Amazon CloudWatch](monitoring-metrics.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

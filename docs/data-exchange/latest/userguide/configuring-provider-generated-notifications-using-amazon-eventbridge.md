@@ -56,7 +56,3 @@ AWS Data Exchange events are published to your default Amazon EventBridge event 
    1. For the **function**, select the function created in Step 1. Complete the creation of the rule.
 
       This Lambda function will be triggered any time a provider-generated notification is delivered. From the **Monitor** tab in the Lambda console, you can view recent invocations of the function.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

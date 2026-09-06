@@ -15,7 +15,3 @@ Before you send a high volume of push notifications, make sure that your account
 Make sure that your account is correctly configured with the credentials for each of the push notification providers that you plan to use, such as FCM or APNs.
 
 Finally, devise a way to handle exceptions. Each push notification service provides different exception messages. For transactional sends, you receive a main status code of 200 for the API call, with a per endpoint status code of 400 permanent failure if the corresponding platform token (for example, FCM) or certificate (for example, APN) is determined to be invalid during message sends.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Push. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query push-notifications` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,7 @@ The type of compute environment: `EC2`, `SPOT`, `FARGATE`, `FARGATE_SPOT`, or `E
 If you choose `ECS_MANAGED_INSTANCES`, you must also specify a `managedInstancesProvider` configuration. To use Spot capacity, set `capacityOptionType` to `SPOT` in the `managedInstancesProvider.instanceLaunchTemplate` configuration. For more information, see [Amazon ECS Managed Instances compute environments](https://docs.aws.amazon.com/batch/latest/userguide/ecs_managed_instances.html) in the * AWS Batch User Guide*.
 Multi-node parallel jobs aren't supported on Spot Instances or Amazon ECS Managed Instances.
 Type: String
-Valid Values: `EC2 | SPOT | FARGATE | FARGATE_SPOT`
+Valid Values: `EC2 | SPOT | FARGATE | FARGATE_SPOT | ECS_MANAGED_INSTANCES`
 Required: Yes
 
  ** allocationStrategy **   <a name="Batch-Type-ComputeResource-allocationStrategy"></a>
@@ -55,6 +55,15 @@ Required: No
 The maximum percentage that a Spot Instance price can be when compared with the On-Demand price for that instance type before instances are launched. For example, if your maximum percentage is 20%, then the Spot price must be less than 20% of the current On-Demand price for that Amazon EC2 instance. You always pay the lowest (market) price and never more than your maximum percentage. If you leave this field empty, the default value is 100% of the On-Demand price. For most use cases, we recommend leaving this field empty.
 This parameter isn't applicable to jobs that are running on Fargate resources. Don't specify it.
 Type: Integer
+Required: No
+
+ ** capacityTags **   <a name="Batch-Type-ComputeResource-capacityTags"></a>
+The tags to apply to the Amazon ECS capacity provider and Amazon EC2 instances launched by the compute environment. These tags are separate from the compute environment resource tags (the top-level `tags` parameter). Use `capacityTags` for cost allocation and organization of the underlying infrastructure resources.
+This parameter is only valid for `ECS_MANAGED_INSTANCES` compute environments. You must have the `batch:SetCapacityTags` permission on the compute environment resource to use this parameter.
+Type: String to string map
+Map Entries: Maximum number of 50 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** desiredvCpus **   <a name="Batch-Type-ComputeResource-desiredvCpus"></a>
@@ -110,6 +119,12 @@ This parameter isn't applicable to jobs that are running on Fargate resources. D
 Type: [LaunchTemplateSpecification](API_LaunchTemplateSpecification.md) object
 Required: No
 
+ ** managedInstancesProvider **   <a name="Batch-Type-ComputeResource-managedInstancesProvider"></a>
+The configuration for the Amazon ECS Managed Instances capacity provider. This parameter is required when `computeResources.type` is `ECS_MANAGED_INSTANCES` and must not be specified for other compute environment types.
+For more information, see [Amazon ECS Managed Instances compute environments](https://docs.aws.amazon.com/batch/latest/userguide/ecs_managed_instances.html) in the * AWS Batch User Guide*.
+Type: [ManagedInstancesProvider](API_ManagedInstancesProvider.md) object
+Required: No
+
  ** minvCpus **   <a name="Batch-Type-ComputeResource-minvCpus"></a>
 The minimum number of vCPUs that a compute environment should maintain (even if the compute environment is `DISABLED`).
 This parameter isn't applicable to jobs that are running on Fargate resources. Don't specify it.
@@ -160,7 +175,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/batch-2016-08-10/ComputeResource)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/ComputeResource)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/batch-2016-08-10/ComputeResource)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

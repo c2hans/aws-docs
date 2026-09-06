@@ -55,7 +55,3 @@ For more information about these reports, see [Viewing the activity of specific 
 | Transformation\_EventCount | Number of times the user engaged with Amazon Q through the [/transform command](transform-in-IDE.md), excluding the times when the when the user [transformed code on the command line](transform-CLI.md). |
 | Transformation\_LinesGenerated | Lines of code suggested by Amazon Q. This metric applies to code generated through the [/transform command](transform-in-IDE.md), excluding code [transformed on the command line](transform-CLI.md). |
 | Transformation\_LinesIngested | Lines of code provided to Amazon Q for transformation. This metric applies to code that is provided through the [/transform command](transform-in-IDE.md), excluding code provided for [transformation on the command line](transform-CLI.md), or for an [SQL conversion](transform-sql.md). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

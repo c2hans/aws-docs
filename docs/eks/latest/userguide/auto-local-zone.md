@@ -164,7 +164,3 @@ kubectl get pods -o wide
 ```
 
 This approach ensures that only workloads that specifically tolerate the Local Zone taint will be scheduled on these nodes, helping you control costs and make the most efficient use of your Local Zone resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

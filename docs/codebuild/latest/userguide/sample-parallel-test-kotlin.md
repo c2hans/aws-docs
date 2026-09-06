@@ -54,7 +54,3 @@ phases:
 ```
 
 In the above example, the `codebuild-tests-run` CLI is used twice. During the first run, kotlinc compiles the files. The `CODEBUILD_CURRENT_SHARD_FILES` variable retrieves the test files assigned to the current shard, which are then converted into a space-separated list. In the second run, JUnit executes the tests. Again, `CODEBUILD_CURRENT_SHARD_FILES` fetches the test files assigned to the current shard, but this time they are converted into class names.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

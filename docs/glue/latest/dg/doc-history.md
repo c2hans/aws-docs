@@ -202,7 +202,3 @@ The following table describes the important changes in each release of the *AWS 
 | Support XML data sources and new crawler configuration option | Added information about classifying XML data sources and new crawler option for partition changes.  | November 16, 2017 |
 | New transforms, support for additional Amazon RDS database engines, and development endpoint enhancements | Added information about the map and filter transforms, support for Amazon RDS Microsoft SQL Server, and Amazon RDS Oracle, and new features for development endpoints. | September 29, 2017 |
 | AWS Glue initial release | This is the initial release of the AWS Glue Developer Guide. | August 14, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

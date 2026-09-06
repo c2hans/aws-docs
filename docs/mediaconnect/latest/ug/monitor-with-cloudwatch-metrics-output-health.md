@@ -56,7 +56,3 @@ The following table lists source metrics that MediaConnect sends to CloudWatch w
 | --- | --- |
 | OutputEnabled | The status of the output. A value of 1 indicates that the output is enabled, and a value of 0 (zero) indicates that the output is disabled.<br />Units: None<br />Valid dimensions:+  Output ARN <br />+  Flow ARN <br />+  Availability Zone <br />+  All flows  |
 | OutputBitrate | The bitrate of the outgoing (output) video.<br />Units: bits per second (bps)<br />Valid dimensions:+  Output ARN <br />+  Flow ARN <br />+  Availability Zone <br />+  All flows  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

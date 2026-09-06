@@ -27,7 +27,3 @@ PCR0 and PCR1 are generally used to measure the initial boot code, which is cont
 
   If you need to maintain a single KMS policy that persists across instance updates, you can create a policy that validates against PCR7 to validate a UEFI Secure Boot certificate. During creation of an Attestable AMI, you can then sign the boot binary with your certificate and install it as the only permitted certificate in the AMI’s UEFI-data. Keep in mind that this model requires you to still generate a new certificate, install it in your policy and update AMIs if you want to prevent instances launched from old (untrusted) AMIs from passing your KMS policy.
 + **PCR12** — Contains the hash of the command line passed to the UEFI boot binary. Required in conjunction with PCR4 for standard boot to validate the command line was not modified.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

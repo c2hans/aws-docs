@@ -58,7 +58,3 @@ Vehicle manufacturers can deliver value-added services to fleet operators and ve
 1. Collect real time telemetry, analyze performance and component usage metrics to provide prescriptive guidance to vehicle owners.
 
 1.  The Request/Response messaging pattern in AWS IoT Core is a method to track responses to client requests in an asynchronous way. For vehicle remote commands, this enables the publisher to specify a topic for the response to be sent for a particular message, ensuring proper messaging to the customer on success or failure of the command state. Using the Message Expiry feature of AWS IoT Core, the vehicle operator could specify how long to attempt the remote command before expiring the message.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

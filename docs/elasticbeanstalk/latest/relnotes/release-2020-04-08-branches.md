@@ -24,7 +24,3 @@ Elastic Beanstalk supports multiple platforms that you can use to build your app
 A *platform branch* is a line of successive platform versions sharing specific (typically major) versions of some of their components, such as the operating system (OS), runtime, or Elastic Beanstalk components. An Elastic Beanstalk platform may support several concurrent platform branches. When we release platform updates, we provide a new platform version for each platform branch. A platform branch has a support lifecycle—it can be in beta, a regular supported branch, or a retiring (deprecated) branch.
 
 For definitions of platform branch and other platform-related terms, see [Elastic Beanstalk Platforms Glossary](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-glossary.html) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

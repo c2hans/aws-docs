@@ -21,7 +21,3 @@ AWS Shield Network Security Director policies can be applied to the entire organ
 When you attach an AWS Shield Network Security Director policy to your organization or organizational unit, AWS Organizations automatically evaluates the policy and applies it based on the scope you define. The policy enforcement logic follows specific conflict resolution rules:
 +  When regions appear in both enable and disable lists, the disable configuration takes precedence. For example, if a region is listed in both enable and disable configurations, AWS Shield Network Security Director will be disabled in that region.
 +  When `ALL_SUPPORTED` is specified for enablement, AWS Shield Network Security Director is enabled in all current and future regions unless explicitly disabled. This allows you to maintain comprehensive coverage as AWS expands into new regions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

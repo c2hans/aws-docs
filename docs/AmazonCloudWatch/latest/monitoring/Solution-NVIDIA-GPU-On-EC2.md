@@ -312,7 +312,3 @@ In the **PCIe** section, find the **PCIe Link Generation** and **PCIe Link Width
 **Review GPU clocks**
 
 In the **Clock** section, find the **Graphics Clock**, **SM Clock**, **Memory Clock**, and **Video Clock** widgets. These metrics show the current operating frequencies of various GPU components. Monitoring these clocks can help identify potential issues with GPU clock scaling or frequency throttling, which could impact performance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

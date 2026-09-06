@@ -220,7 +220,3 @@ After you connect AWS Glue with IAM Identity Center, you can use [ identity-enha
 Additionally, Runtime role would need permissions for downstream AWS services which job-run would invoke to fetch data using user identity. Please refer to the following links to configure Amazon S3 Access Grants and Lake Formation:
 + [Using Lake Formation with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/security-lake-formation-fgac.html)
 + [Using Amazon S3 Access Grants with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/security-s3-access-grants.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

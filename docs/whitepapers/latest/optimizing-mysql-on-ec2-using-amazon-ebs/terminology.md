@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-e
 +  **Amazon EBS General Purpose SSD volume** — General Purpose SSD volume that provides a balance of price and performance. AWS recommends these volumes for most workloads. Currently, AWS offer two types of General Purpose SSD volumes: gp2 and gp3.
 +  **Amazon EBS Provisioned IOPS SSD volume** — Highest performance SSD volume designed for high performance for mission-critical, low-latency, or high-throughput workloads. Currently AWS offer two types of Provisioned IOPS SSD volumes: io1 and io2.
 +  **Amazon EBS Throughput Optimized hard disk drive (HDD) (st1) volume** — Low- cost HDD volume designed for frequently accessed, throughput-intensive workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

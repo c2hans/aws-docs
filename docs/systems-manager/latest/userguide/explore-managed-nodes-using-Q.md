@@ -20,7 +20,3 @@ For more information about interacting with Amazon Q, see [Chatting with Amazon 
 For tips on creating effective prompts, review the information in [Learning to craft effective prompts to ask Amazon Q about your fleet](view-aggregated-node-details-Q-prompts.md) .
 
 1. Examine information about specific nodes, or choose **Open AWS Systems Manager console** to continue exploring.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

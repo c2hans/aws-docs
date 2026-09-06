@@ -22,7 +22,3 @@ These topics contain information about package groups in AWS CodeArtifact.
 + [Package group origin controls](package-group-origin-controls.md)
 + [Package group definition syntax and matching behavior](package-group-definition-syntax-matching-behavior.md)
 + [Tag a package group](package-group-tags.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

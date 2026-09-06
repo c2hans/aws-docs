@@ -17,7 +17,3 @@ Before you begin querying the logs, enable Web distributions access log on your 
 + [Create a table for CloudFront logs in Athena using partition projection with Parquet](create-cloudfront-table-partition-parquet.md)
 + [Create a table for CloudFront real-time logs](create-cloudfront-table-real-time-logs.md)
 + [Additional resources](cloudfront-logs-additional-resources.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

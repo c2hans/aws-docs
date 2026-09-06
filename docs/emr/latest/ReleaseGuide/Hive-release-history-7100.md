@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 **Known issues**
 + AWS EMR from EMR-7.10.0 now uses S3A as the default filesystem (replacing EMRFS), which means Hive operations will no longer create `_$folder$` marker objects in S3, and the intermediate manifest files used in Hive write queries are now stored in S3 as compared to EMRFS’s HDFS. For considerations while using S3A, please refer to the [migration guide](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-s3a-migrate.html).
 + From EMR-7.3.0 to EMR-7.10.0, there is a Bug due to Hive Iceberg integration which causes HBase table creation in Hive to fail when AWS Glue Data Catalog is used as the metastore. Please reach out to the AWS support team if you encounter this issue.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

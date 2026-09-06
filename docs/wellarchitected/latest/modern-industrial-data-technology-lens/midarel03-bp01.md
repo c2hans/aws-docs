@@ -83,7 +83,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 +  [Serverless event-driven architecture for industrial data ingestion ](https://docs.aws.amazon.com/serverless/latest/devguide/serverless-transition.html)
 +  [Implementing the IoT analytics pipeline for manufacturing ](https://docs.aws.amazon.com/iotanalytics/latest/userguide/create-pipeline.html)
 +  [Designing scalable IoT applications with AWS ](https://aws.amazon.com/blogs/iot/how-to-build-a-scalable-multi-tenant-iot-saas-platform-on-aws-using-a-multi-account-strategy/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

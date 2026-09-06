@@ -224,7 +224,3 @@ After you have created and pushed your container image to Amazon ECR, you can us
 + [Learn how to create an Amazon ECS Linux task for Fargate](getting-started-fargate.md)
 + [Learn how to create an Amazon ECS Windows task for Fargate](Windows_fargate-getting_started.md)
 + [Creating an Amazon ECS Linux task for the Fargate with the AWS CLI](ECS_AWSCLI_Fargate.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

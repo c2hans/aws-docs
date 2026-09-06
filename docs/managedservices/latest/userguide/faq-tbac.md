@@ -10,7 +10,3 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 Scenario: Two application teams A, and B, use a single AMS account for their apps "AA", and "BB", respectively. Team A wants access only to resources for app "AA", and team B wants access only to resources for app "BB". How do I set that up?
 
 Use their ITSM's tools to implement team-based access controls (TBAC). For example, you could use the AMS ServiceNow Connector App for integration with AMS APIs. Contact your CSDM for high level guidance of this implementation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

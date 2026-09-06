@@ -180,7 +180,3 @@ After you've created a multicast group and added devices, you can continue addin
 If you want to update the firmware of the devices in the multicast group, you can perform Firmware Updates Over-The-Air (FUOTA) with AWS IoT Core for LoRaWAN. For more information, see [Firmware update over-the-air (FUOTA) for AWS IoT Core for LoRaWAN](lorawan-mc-fuota-overview.md).
 
 If your devices weren't added or if you see an error in the multicast group or device statuses, you can hover over the error to get more information and resolve it. If you still see an error, for information about how to troubleshoot and resolve the issue, see [Monitor and troubleshoot your multicast groups](lorawan-multicast-status.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

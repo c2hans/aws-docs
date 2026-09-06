@@ -29,7 +29,3 @@ When you are utilizing TGW, SAP’s default setup is to propagate routes only fo
 This routing configuration is a critical detail that customers should keep in mind during their SAP deployment, as it can significantly impact the efficiency of their network traffic flow from end-users and other external systems outside of RISE with SAP.
 
 ![Overlay IP in RISE.](http://docs.aws.amazon.com/sap/latest/general/images/rise-oip.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -161,7 +161,3 @@ The charged cost includes the storage cost for Amazon S3, but not for the bandwi
 | 10 RPS | 16.50 | $0.38 |
 | 100 RPS | 165 | $3.80 |
 | 1000 RPS | 1650 | $38 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Clickstream Analytics on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

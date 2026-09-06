@@ -24,7 +24,3 @@ Amazon S3 access points for FSx for OpenZFS ﬁle systems deliver latency in the
 + [Managing Amazon S3 access points](access-points-manage.md)
 + [Using access points](access-points-usage-examples.md)
 + [Troubleshooting S3 access point issues](troubleshooting-access-points.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

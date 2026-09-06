@@ -16,7 +16,7 @@ Before you begin, ensure you have:
 +  ** AWS Account** with credentials configured. To configure your AWS credentials, see [Configuration and credential file settings in the AWS CLI.](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
 +  [**Node.js**](https://nodejs.org/) and **npm** installed. We recommend installing the same major version you plan to deploy on AgentCore Runtime (for example, Node.js 22 for the `NODE_22` runtime). For supported versions, see [Supported language runtimes](runtime-code-deploy-supported-runtimes.md).
 +  ** AWS Permissions** : To create and deploy an agent, you must have appropriate permissions. For more information, see [AgentCore Runtime permissions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-permissions.html).
-+  **Model access** : Anthropic Claude Sonnet 4.0 [enabled](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access-modify.html) in the Amazon Bedrock console. For information about using a different model with the Strands Agents see the *Model Providers* section in the [Strands Agents SDK](https://strandsagents.com/latest/documentation/docs/) documentation.
++  **Model access** : Amazon Bedrock enables access to foundation models by default. To use a non-foundation model, follow the [model access steps](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html#model-access-sdk-step4).
 
 ## Step 1: Set up project and install dependencies
 <a name="step-1-setup-node"></a>
@@ -146,7 +146,7 @@ server.listen(PORT, "0.0.0.0", () => {
 ## Step 3: Test locally
 <a name="step-3-test-locally-node"></a>
 
-Make sure port 8080 is free before starting. See *Port 8080 in use (local only)* in [Common issues and solutions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-cli.html#common-issues).
+Make sure port 8080 is free before starting. See [Troubleshoot](runtime-get-started-cli.md#common-issues) if the port is already in use.
 
 Open a terminal window and start your agent:
 
@@ -276,7 +276,7 @@ To enable OTEL auto-instrumentation, include `node_modules/@aws/aws-distro-opent
 entryPoint: ["opentelemetry-instrument", "dist/app.js"],
 ```
 
-To invoke an agent on Amazon Bedrock AgentCore runtime programmatically, refer: [Invoke an agent programmatically](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-cli.html#invoke-programmatically)
+To invoke an agent on Amazon Bedrock AgentCore Runtime programmatically, see [Invoke an agent programmatically](runtime-get-started-cli.md#invoke-programmatically).
 
 ## Step 6: Stop session, update, or cleanup
 <a name="step-6-update-cleanup-node"></a>
@@ -508,7 +508,3 @@ The following declarations are incompatible and will cause agent creation to fai
 AgentCore Runtime also checks the `engines.node` field for common dependencies in your `node_modules/` . If any of these declare a Node.js version range that excludes the target runtime version, agent creation will fail.
 
 If you encounter an `engines.node` incompatibility, update the package to a version that supports your target Node.js version or remove the `engines` field from your `package.json` . For supported Node.js versions, see [Supported language runtimes](runtime-code-deploy-supported-runtimes.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

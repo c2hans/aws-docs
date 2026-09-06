@@ -20,7 +20,3 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Resilience in AWS Security Hub](sh-disaster-recovery-resiliency.md)
 + [Infrastructure security in AWS Security Hub](sh-infrastructure-security.md)
 + [AWS Security Hub and interface VPC endpoints (AWS PrivateLink)](sh-security-vpc-endpoints.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

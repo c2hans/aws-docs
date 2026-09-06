@@ -14,7 +14,3 @@ The following table describes significant changes to this guide.
 | Significant updates | We added Cloud Computing Compliance Controls Catalog (C5) to the [AWS Artifact](org-management-account.md#aws-artifact) section. We added Amazon Security Lake to the [Log Archive account](log-archive-account.md). We added Amazon Bedrock, AWS Clean Rooms, Amazon DataZone, AWS Lake Formation, Amazon SageMaker AI, and *AWS services and features that help discover, classify, or catalog data* to the [PD Application account](personal-data-account.md). We added the [Strategizing for global expansion](global-expansion.md) section. | September 16, 2025 |
 | Significant updates | We made significant updates throughout. | March 26, 2024 |
 | Initial publication | — | October 2, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

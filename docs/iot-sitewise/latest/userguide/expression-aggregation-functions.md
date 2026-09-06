@@ -37,7 +37,3 @@ If your expressions contain attributes, AWS IoT SiteWise uses the latest values 
 | `max(x0, ..., xn)` | Returns the maximum of the given variables' values over the current time interval.<br /><a name="aggregation-function-no-output"></a>This function outputs a data point only if the given variables have at least one data point over the current time interval. |
 | `count(x0, ..., xn)` | Returns the total number of data points for the given variables over the current time interval. For more information about how to count the number of data points that meet a condition, see [Count data points that match a condition](expression-tutorials.md#count-filtered-data).<br /><a name="aggregation-function-always-output"></a>This function computes a data point for every time interval. |
 | `stdev(x0, ..., xn)` | Returns the standard deviation of the given variables' values over the current time interval.<br />This function outputs a data point only if the given variables have at least one data point over the current time interval. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

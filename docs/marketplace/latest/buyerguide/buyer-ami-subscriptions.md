@@ -54,7 +54,3 @@ Mid-year, the customer wants to add an additional unit of the m5.large instance 
 
 **Example 6: Removing an instance type**
 Mid-year, the customer wants to remove one unit of the m5.large instance type. The prorated cost of this change is calculated as the prorated cost of instance removed (six months of m5.large - $2,000). The net cost is -$2,000 (less than $0), so the amendment can't occur.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

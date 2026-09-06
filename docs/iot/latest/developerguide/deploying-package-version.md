@@ -61,7 +61,3 @@ You are required to choose the same packages and package versions that are speci
 1. Review the job selections and then choose **Submit**.
 
 After you create the job, the console generates a JSON signature and places it in your job document. You can use the AWS IoT console to view the status of a job, or cancel or delete a job. To manage jobs, go to the [Job hub of the console](https://console.aws.amazon.com/iot/home#/jobhub).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

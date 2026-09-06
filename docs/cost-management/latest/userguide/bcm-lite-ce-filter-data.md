@@ -239,7 +239,3 @@ S3: Data Transfer - Region to Region (Out)
 Filters by the costs associated with how many GB are transferred from Amazon S3 to a different AWS Region.
 S3: Storage - Standard
 Filters by the costs associated with how many GB that you have stored in Amazon S3.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

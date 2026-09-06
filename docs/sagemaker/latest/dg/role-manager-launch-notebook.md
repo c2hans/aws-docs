@@ -92,7 +92,3 @@ Your IAM Identity Center Authentication directory and Studio Classic domain must
 1. Choose **Next** through the rest of the settings pages, and choose **Submit** to save your changes.
 
 When your data scientist or other user logs into the IAM Identity Center portal, they see a tile for this Studio Classic domain. Choosing that tile logs them into Studio Classic with their assigned user execution role.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,7 +54,3 @@ The exact procedure that you follow depends on your device resources, required f
 **[Upgrade V1 core devices to run V2](upgrade-v1-core-devices.md)**
 
    After testing on a new device, upgrade your existing V1 core devices to run the AWS IoT Greengrass Core software v2.x and AWS IoT Greengrass V2 components. To migrate a fleet of devices from V1 to V2, you repeat this step for each device in the fleet.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

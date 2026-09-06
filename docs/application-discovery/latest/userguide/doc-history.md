@@ -39,7 +39,3 @@ The following table describes documentation releases for the *Application Discov
 | Agentless discovery | This release describes how to set up and configure agentless discovery. | July 28, 2016 |
 | New details for Microsoft Windows Server and command issue fixes | This update adds details about Microsoft Windows Server. It also documents fixes to various command issues. | May 20, 2016 |
 | Initial publication | This is the first release of the Application Discovery Service User Guide. | May 12, 2016 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
  Many commercial software vendors provide their own update and upgrade process for applications which they have tested and validated for distribution. While vendors are increasingly adopting the principles of immutable infrastructure and automated deployment, currently not all software products have those capabilities.
 
  Working around the vendor’s recommended update and deployment practices to try to implement or simulate a blue/green deployment process may also introduce unnecessary risk that can potentially negate the benefits of this methodology.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
  The silo, bridge, and pool models provide the backdrop for our discussion. As you dig into each AWS storage technology, you’ll discover how the conceptual elements of these models are realized on a specific AWS storage technology. Some map very directly to these models; others require a bit more creativity to achieve each type of tenant isolation.
 
  It’s worth noting that these models are all equally valid. Although we’ll discuss the merits of each, the regulatory, business, and legacy dimensions of a given environment often play a big role in shaping the approach you ultimately select. The goal here is to simply bring visibility to the mechanics and tradeoffs associated with each approach.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

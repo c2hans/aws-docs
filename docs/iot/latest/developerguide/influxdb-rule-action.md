@@ -485,7 +485,3 @@ humidity,device_id=deviceA,floor=1 value=55.0 1700000000200
 ```
 
 Notice that the points are no longer in the order they appeared within each client payload. The three points from Device A (timestamps 1700000000000, 1700000000100, 1700000000200) are interleaved with the two points from Device B (timestamps 1700000000050, 1700000000150). The server-side batch does not guarantee the original ordering within each message. InfluxDB uses the timestamp field to place each point on the timeline, so reordering does not affect query correctness. However, if your application relies on write-order semantics (for example, handling field type conflicts or last-write-wins deduplication within the same millisecond), be aware that the effective write order may differ from the publish order.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

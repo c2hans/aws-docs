@@ -37,10 +37,8 @@ Consider the following best practices when you create a blue/green deployment fr
 + Optimize read replicas and the green environment for binary log replication. If supported by your DB engine, enable GTID, parallel, and crash-safe replication to ensure data consistency and durability before you create your blue/green deployment. For more information, see [Using GTID-based replication](mysql-replication-gtid.md).
 + If the green environment experiences replica lag, consider the following:
   + Temporarily set the `innodb_flush_log_at_trx_commit` parameter to `2` in the green DB parameter group. After replication catches up, revert to the default value of `1` before switchover. If an unexpected shutdown or crash occurs with the temporary parameter value, rebuild the green environment to avoid undetected data corruption.
-  + To reduce write latency and improve replication throughput, temporarily change green Multi-AZ DB instances to Single-AZ DB instances. Re-enable Multi-AZ right before switchover.
 + Monitor the following CloudWatch metrics to identify periods of low activity in your production environment:
   + `DatabaseConnections`
-  + `ActiveTransactions`
 
   Schedule the blue/green switchover during your planned maintenance window or during a period of low activity.
 + Blue/Green switchover duration varies based on your workload and the number of secondary regions. When you initiate a blue/green switchover, the service waits for replica lag to reach zero before proceeding. We recommend checking replica lag before initiating a switchover.
@@ -90,7 +88,3 @@ Consider the following best practices when you create a blue/green deployment th
 + If you're using triggers, make sure they don't interfere with the creating, updating, and dropping of `pg_catalog.pg_publication`, `pg_catalog.pg_subscription`, and `pg_catalog.pg_replication_slots` objects whose names start with 'rds'.
 + If you specify a higher engine version for the green environment, run the `ANALYZE` operation on all databases to refresh the `pg_statistic` table. Optimizer statistics aren't transferred during a major version upgrade, so you must regenerate all statistics to avoid performance issues. For additional best practices during major version upgrades, see [How to perform a major version upgrade for RDS for PostgreSQL](USER_UpgradeDBInstance.PostgreSQL.MajorVersion.Process.md).
 + Avoid configuring triggers as `ENABLE REPLICA` or `ENABLE ALWAYS` if the trigger is used on the source to manipulate data. Otherwise, the replication system propagates changes and executes the trigger, which leads to duplication.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

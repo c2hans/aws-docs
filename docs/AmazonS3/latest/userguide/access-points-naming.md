@@ -107,7 +107,3 @@ https://{{access-point-name}}-{{account-id}}.s3-accesspoint.{{region}}.amazonaws
 **Note**
 If your access point name includes dash (-) characters, include the dashes in the URL and insert another dash before the account ID. For example, to use an access point named {{`finance-docs`}} owned by account {{`123456789012`}} in the Region {{`us-west-2`}}, the appropriate URL would be `https://{{finance-docs}}-{{123456789012}}.s3-accesspoint.{{us-west-2}}.amazonaws.com`.
 S3 access points don't support access through HTTP. Access points support only secure access through HTTPS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

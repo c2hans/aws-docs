@@ -38,7 +38,3 @@ End of support notice: On March 31, 2027, AWS will end support for AWS Service M
 1. If that Connector feature is available, AWS Config information appears. You can expand **Configuration Items** or **Relationships** to see more information. Related resources can be loaded by continuing to expand them underneath the** Relationships** section.
 
 1. Once the product is in the **Available** status, end users can request post-provision operations actions such as **Request update**, **Request termination**, and **Request self-service actions**. These actions render additional product events and activities within the request. Once the product terminates, the request closes in a resolved state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

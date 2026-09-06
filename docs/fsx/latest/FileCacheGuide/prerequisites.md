@@ -14,7 +14,3 @@ To perform this getting started exercise, you'll need the following:
   + We recommend that you create your instance in your default VPC.
   + We recommend that you use the default security group when creating your Amazon EC2 instance.
 + An Amazon S3 bucket storing the data for your workload to process. The Amazon S3 bucket will be the linked data repository for your cache.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

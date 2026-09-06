@@ -39,7 +39,3 @@ The dashboard is organized into three tabs:
 ![SageMaker Insights dashboard header with summary bar showing Invocations, Instances, Inference Components, and Avg AZ Skew.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/SageMaker Observability/New_Insights_Dashbaord.png)
 
 For detailed information about the widgets and visualizations in each tab, see [SageMaker AI Insights Dashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SageMaker-AI-Insights-Dashboard.html) in the *Amazon CloudWatch User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -67,7 +67,3 @@ The remainder of this section contains fields that let you configure the followi
   For other data, complete the fields as appropriate. With some of these fields, the behavior is different for fields that you leave empty. MediaLive might omit the data from the transport stream. Or MediaLive might use default values.
 
 Change any values as appropriate. For details about a field, choose the **Info** link next to the field in the MediaLive console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

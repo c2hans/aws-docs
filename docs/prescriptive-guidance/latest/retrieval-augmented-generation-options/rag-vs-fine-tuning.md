@@ -17,7 +17,3 @@ The following table describes the advantages and disadvantages of the fine-tunin
 If you need to build a question-answering solution that references your custom documents, then we recommend that you start from a RAG-based approach. Use fine-tuning if you need the model to perform additional tasks, such as summarization.
 
 You can combine the fine-tuning and RAG approaches in a single model. In the case, the RAG architecture does not change, but the LLM that generates the answer is also fine-tuned with the custom documents. This combines the best of both worlds, and it might be an optimum solution for your use case. For more information about how to combine supervised fine-tuning with RAG, see the [RAFT: Adapting Language Model to Domain Specific RAG](https://arxiv.org/pdf/2403.10131) research from the University of California, Berkeley.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

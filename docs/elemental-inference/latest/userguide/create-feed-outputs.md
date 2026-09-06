@@ -307,7 +307,3 @@ When creating or updating a dictionary, the following validation rules apply:
   + Each entry must include a `content` field that is not blank.
   + Each entry may optionally include a `sounds_like` field. If provided, it must be an array of non-blank strings.
   + Each `sounds_like` hint must contain only characters from the dictionary language's primary script. Currently, all supported languages use Latin script (Latin alphabet, accented letters, and script-neutral punctuation are accepted; non-Latin scripts are rejected).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Inference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-inference` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

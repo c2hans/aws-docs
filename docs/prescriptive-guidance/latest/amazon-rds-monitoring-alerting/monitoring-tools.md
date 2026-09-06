@@ -15,7 +15,3 @@ We recommend that you use observability, monitoring, and alerting tools to:
 You have different options and solutions to choose from, including AWS-provided, cloud-native observability and monitoring tools and services; free, open-source software solutions; and commercial third-party solutions for monitoring Amazon RDS DB instances. Some of these tools are discussed in the sections that follow.
 
 To determine which tool best suits your needs, compare each tool's features and capabilities against your organization's requirements. We also recommend that you evaluate the tools for ease of deployment, configuration and integration, software updates and maintenance, method of deployment (for example, hardware or serverless), licensing, price, and any other factors that are specific to your organization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

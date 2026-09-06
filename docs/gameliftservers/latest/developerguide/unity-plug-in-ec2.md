@@ -135,13 +135,9 @@ When your fleet is successfully deployed, you now have game servers running and 
 
 1. Build your game client. Build a client executable using the standard Unity build process. In File, Build Settings, switch the platform to Windows, Mac, Linux. If you imported the sample game and initialized the settings, the build list and build target are automatically updated.
 
-1. Launch the newly build game client executable. To start playing the game, start two to four client instances and use the UI in each to join a game session.
+1. Launch the newly built game client executable. To start playing the game, start two to four client instances and use the UI in each to join a game session.
 
 If you're using the sample game client, it has the following characteristics:
 + A player login component. When connecting to a game server on an Anywhere fleet, there is no player validation. You can enter any values to join the game session.
 + A simple join game UI. When a client attempts to join a game, the client automatically looks for an active game session with an available player slot. If no game session is available, the client requests a new game session. If a game session is available, the client requests to join the available game session. When testing your game with multiple concurrent clients, the first client starts the game session, and the remaining clients automatically join the existing game session.
 + Game sessions with four player slots. You can launch up to four game client instances concurrently and they will join the same game session.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

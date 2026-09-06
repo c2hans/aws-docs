@@ -18,7 +18,3 @@ The preceding figure summarizes the shared responsibility model between AWS and 
 ![Shared responsibility model diagram showing customer and AWS security roles in cloud services.](http://docs.aws.amazon.com/whitepapers/latest/applying-security-practices-to-network-workload-for-csps/images/shared-responsibility-edge.png)
 
  The preceding figure shows an edge model with AWS Outposts, where the responsibility of the physical security, networking, cooling, and electricity for AWS Outposts is owned by the customer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -174,7 +174,3 @@ The `TIME_EXPRESSION` category detects entities related to time. This includes e
 +  The relationship between an entity and an attribute. The recognized `Relationship_type` is the following:
 
   `Overlap` – The `TIME_EXPRESSION` concurs with the entity detected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend Medical. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend-medical` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

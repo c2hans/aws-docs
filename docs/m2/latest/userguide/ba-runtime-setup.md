@@ -19,7 +19,3 @@ This section explains the steps to set up AWS Transform for mainframe Runtime on
 + [Deploy AWS Transform for mainframe Runtime on Amazon EC2](ba-deploy-ec2.md)
 + [Deploy AWS Transform for mainframe Runtime on containers on Amazon ECS and Amazon EKS](ba-deploy-container.md)
 + [Test the PlanetsDemo application](ba-runtime-test-planetsdemo.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

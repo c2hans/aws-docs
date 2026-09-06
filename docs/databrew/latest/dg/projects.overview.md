@@ -119,7 +119,3 @@ If you choose the **PROFILE** tab, you can see detailed volumetric information a
 
    The **Column statistics** tab shows a column-by-column breakdown of the data values:
 ![Column statistics tab showing data profile overview, column types, and data quality metrics.](http://docs.aws.amazon.com/databrew/latest/dg/images/project-profile-view-02.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

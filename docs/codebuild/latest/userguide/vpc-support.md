@@ -52,7 +52,3 @@ For more information about using CloudFormation to configure a VPC to use the Co
 ## Limitations of VPCs
 <a name="vpc-limitations"></a>
 + VPC connectivity from CodeBuild is not supported for shared VPCs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

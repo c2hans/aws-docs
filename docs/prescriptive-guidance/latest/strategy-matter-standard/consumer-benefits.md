@@ -24,7 +24,3 @@ Consumers gain the flexibility to choose which voice assistant ecosystem best su
 This cross-compatibility of voice control creates a more open environment that gives users greater choice. They can pick devices based on features and pricing instead of compatibility with a single ecosystem. If a user wants to change voice assistants in the future, their existing smart-home setup can easily move with them because all devices speak the common Matter language.
 
 The Enhanced Multi-Admin feature added in Matter version 1.4 allows a single device to be controlled by multiple voice assistants simultaneously. This means family members can use their preferred voice assistant (Alexa, Google Assistant, or Siri) to control the same devices without conflicts or additional setup.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

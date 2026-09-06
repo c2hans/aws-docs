@@ -81,7 +81,3 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/al2-extras-list.html
 | unbound1.13 | 2025-05-01 |
 | unbound1.17 |  |
 | vim | 2018-11-14 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

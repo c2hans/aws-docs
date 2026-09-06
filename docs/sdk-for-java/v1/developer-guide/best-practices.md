@@ -28,7 +28,3 @@ The most reliable way to avoid a [ResetException](https://docs.aws.amazon.com/sd
 If the stream isn’t a [FileInputStream](https://docs.oracle.com/javase/8/docs/api/index.html?java/io/FileInputStream.html) but does support mark and reset, you can set the mark limit by using the `setReadLimit` method of [RequestClientOptions](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/RequestClientOptions.html). Its default value is 128 KB. Setting the read limit value to *one byte greater than the size of stream* will reliably avoid a [ResetException](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/ResetException.html).
 
 For example, if the maximum expected size of a stream is 100,000 bytes, set the read limit to 100,001 (100,000 \+ 1) bytes. The mark and reset will always work for 100,000 bytes or less. Be aware that this might cause some streams to buffer that number of bytes into memory.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

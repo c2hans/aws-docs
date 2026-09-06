@@ -86,7 +86,3 @@ To monitor and report on compliance, you must continually work to reduce permiss
 + `IAM_USER_UNUSED_CREDENTIALS_CHECK`
 + `IAM_PASSWORD_POLICY`
 + `ROOT_ACCOUNT_HARDWARE_MFA_ENABLED`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

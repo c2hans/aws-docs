@@ -76,7 +76,3 @@ To view the error messages in the CloudWatch Logs interface:
 You can enable server-side encryption for your Kinesis stream before setting up Kinesis data export. However, if server-side encryption is enabled after Kinesis data export is set up, Amazon Monitron will not be able to publish to the stream. That's because Amazon Monitron will not have permission to call [kms:GenerateDataKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) so that it can encrypt data sent to Kinesis.
 
 To work around this, follow the instructions under [Editing live data export settings](#edit-live-export-v2), but without changing the configuration. This will associate the encryption you have set up with your export configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -71,7 +71,3 @@ You can refer to the following blogs for examples of using custom connectors:
 As an AWS partner, you can create custom connectors and upload them to AWS Marketplace to sell to AWS Glue customers.
 
 The process for developing the connector code is the same as for custom connectors, but the process of uploading and verifying the connector code is more detailed. Refer to the instructions in [ Creating Connectors for AWS Marketplace](https://github.com/aws-samples/aws-glue-samples/tree/master/GlueCustomConnectors/marketplace/publishGuide.pdf) on the GitHub website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

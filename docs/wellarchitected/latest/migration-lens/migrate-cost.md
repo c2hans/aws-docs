@@ -175,7 +175,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/mi
   +  **Containers**: Containers provide a standard way to package an application's code, configurations, and dependencies into a single object. Examples of container services include Amazon Elastic Container Service (ECS) and AWS Elastic Kubernetes Service (EKS).
   +  **Managed data:** A fully managed, purpose-built database service, supporting diverse data models and applications.
   +  **Managed analytics:** A range of services supporting analytics use cases like data lake initiatives, big data processing, real-time analytics, and operational analytics.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

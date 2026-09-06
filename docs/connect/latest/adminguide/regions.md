@@ -24,6 +24,7 @@ This topic lists the AWS Regions where Connect Customer features are available.
 + [External Tool](#externaltool_region)
 + [Forecasting & agent scheduling](#optimization_region)
 + [Amazon Connect agentic voice](#gv_region)
++ [Agentic CX Designer](#agentic-cx_region)
 + [Global Resiliency](#gr_region)
 + [In-app, web, and video calling capabilities](#inapp_region)
 + [Live media streaming](#livemediastreaming_region)
@@ -278,6 +279,20 @@ The calculated attributes API is available in the following AWS Regions:
 + Asia Pacific (Singapore)
 + Canada (Central)
 
+## Agentic CX Designer
+<a name="agentic-cx_region"></a>
+
+Agentic CX Designer, and the [Agentic CX](agentic-cx-block.md) block that connects contacts to Agentic CX Designer applications, are available in the following Regions:
++ US East (N. Virginia)
++ US West (Oregon)
++ Europe (Frankfurt)
++ Europe (London)
++ Asia Pacific (Sydney)
++ Asia Pacific (Seoul)
++ Asia Pacific (Tokyo)
++ Asia Pacific (Singapore)
++ Canada (Central)
+
 ## Global Resiliency availability by Region
 <a name="gr_region"></a>
 + US East (N. Virginia)
@@ -364,7 +379,3 @@ The phone numbers that outbound campaigns can call are based on the AWS Region w
 | Canada (Central) | ca-central-1 |  voiceid.ca-central-1.amazonaws.com <br /> voiceid-fips.ca-central-1.amazonaws.com  | HTTPS<br />HTTPS |
 | Europe (Frankfurt) | eu-central-1 |  voiceid.eu-central-1.amazonaws.com  | HTTPS |
 | Europe (London) | eu-west-2 |  voiceid.eu-west-2.amazonaws.com  | HTTPS |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

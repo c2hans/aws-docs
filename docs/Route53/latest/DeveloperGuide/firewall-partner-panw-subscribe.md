@@ -49,7 +49,3 @@ Use the following procedure to subscribe through Marketplace.
 
 **Note**
 When subscribing through the Marketplace console, you are redirected to the seller's home page. If you subscribe through the DNS Firewall console, you are not redirected. We recommend visiting the seller's home page separately to complete any required registration details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

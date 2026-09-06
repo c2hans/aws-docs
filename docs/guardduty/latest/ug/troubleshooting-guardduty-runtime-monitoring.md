@@ -58,7 +58,3 @@ If `systemd` terminates the GuardDuty agent because of the `out-of-memory` issue
 If the GuardDuty container contributed to the workflow failure, see [Troubleshooting Amazon ECS-Fargate runtime coverage issues](gdu-assess-coverage-ecs.md#ecs-runtime-monitoring-coverage-issues-troubleshoot). If the issue persists, then to prevent the workflow failure because of the GuardDuty container, perform **one** of the following steps:
 + Add the `GuardDutyManaged`:`false` tag to associated Amazon ECS cluster.
 + Disable the automated agent configuration for AWS Fargate (ECS only) at the account level. Add the inclusion tag `GuardDutyManaged`:`true` to the associated Amazon ECS cluster that you want to continue monitoring with the GuardDuty automated agent.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

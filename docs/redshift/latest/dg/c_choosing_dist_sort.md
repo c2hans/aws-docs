@@ -37,7 +37,3 @@ To view the distribution style applied to a table, query the PG\_CLASS\_INFO sys
  After you have specified a distribution style for a column, Amazon Redshift handles data distribution at the cluster level. Amazon Redshift does not require or support the concept of partitioning data within database objects. You don't need to create table spaces or define partitioning schemes for tables.
 
 In certain scenarios, you can change the distribution style of a table after it is created. For more information, see [ALTER TABLE](r_ALTER_TABLE.md). For scenarios when you can't change the distribution style of a table after it's created, you can recreate the table and populate the new table with a deep copy. For more information, see [Performing a deep copy](performing-a-deep-copy.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

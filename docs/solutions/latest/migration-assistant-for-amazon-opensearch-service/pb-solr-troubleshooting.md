@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 | Target document count is lower than the source | Check the workflow logs with `workflow log all --follow` for bulk-indexing errors. Document counts can legitimately differ if the Solr backup was taken while writes were still occurring — confirm writes were paused before the backup in [Step 1](pb-solr-step1.md). |
 
 For broader diagnostics across all migration phases, see [Troubleshooting](troubleshooting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

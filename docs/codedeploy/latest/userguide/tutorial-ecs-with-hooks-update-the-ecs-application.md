@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-ecs
 1.  Choose **Create**. You should see that your task definition's revision number has been incremented by one.
 
 1.  Choose the **JSON** tab. Make a note of the value for `taskDefinitionArn`. Its format is `arn:aws:ecs:{{aws-region}}: {{account-id}}:task-definition/{{task-definition-family}}: {{task-definition-revision}}`. This is the ARN of your updated task definition.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ You can view directory assessments in the AWS Management Console to review asses
    1. AWS Systems Manager managed node information, such as IP address, assessment status, and the number of passed and failed assessment tests.
 
    1. Assessment status for domain controllers. You can also review assessment test details by choosing the domain controllers. Error codes appear in the **Status** column for failed assessment tests.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

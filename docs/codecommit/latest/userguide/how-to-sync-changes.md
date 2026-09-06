@@ -35,7 +35,3 @@ git pull origin main
 If you add the `-u` option to **git push**, you set upstream tracking information. For example, if you run **git push -u origin main**), in the future you can run **git push** and **git pull** without {{remote-name}} {{branch-name}}. To get upstream tracking information, run **git remote show {{remote-name}}** (for example, **git remote show origin**).
 
 For more options, see your Git documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

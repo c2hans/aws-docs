@@ -34,7 +34,3 @@ If you are using an existing VPC, you can configure your ROSA clusters to use an
 <a name="infrastructure-security-pod-network"></a>
 
 If you are a cluster administrator, you can define network policies at the pod level that restrict traffic to pods in your ROSA cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Red Hat OpenShift Service on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rosa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

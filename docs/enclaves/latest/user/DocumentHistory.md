@@ -19,7 +19,3 @@ The following table describes important additions to the AWS Nitro Enclaves docu
 | [Nitro Enclaves 1.1.0 for Windows](https://docs.aws.amazon.com/enclaves/latest/user/developing-applications-windows.html#release-notes) | Nitro Enclaves 1.1.0 is now available for Windows. | July 28, 2021 |
 | [Nitro Enclaves on Windows](https://docs.aws.amazon.com/enclaves/latest/user/developing-applications-windows.html) | Nitro Enclaves supports the creation of isolated compute environments form parent Amazon EC2 instances running Windows operating system. | April 27, 2021 |
 | [Initial release](https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave.html) | Initial release of AWS Nitro Enclaves. Nitro Enclaves is an Amazon EC2 feature that allows you to create isolated execution environments, called enclaves, from Amazon EC2 instances. | October 28, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query enclaves` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ To get started with Ready-to-use models, do the following:
 1. **(Optional) Import your data.** You can import a tabular, image, or document dataset to generate batch predictions, or a dataset of predictions, with Ready-to-use models. To get started with importing a dataset, see [Create a data flow](canvas-data-flow.md).
 
 1. **Generate predictions.** You can generate single or batch predictions with your chosen Ready-to-use model. To get started with making predictions, see [Make predictions for text data](canvas-ready-to-use-predict-text.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

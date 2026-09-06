@@ -492,10 +492,30 @@ if __name__ == "__main__":
    npm install -g @aws/agentcore
    ```
 
+1. Set up an Amazon Cognito user pool as described in [Set up Cognito user pool for authentication](runtime-mcp.md#runtime-mcp-appendix-a). Source the setup script so that `REGION`, `POOL_ID`, `CLIENT_ID`, and `BEARER_TOKEN` are available in your shell.
+
 1. Create a project for deployment:
 
    ```
-   agentcore create --name TravelAgentDemo --protocol MCP
+   agentcore create --project-name TravelAgentDemo --no-agent
+   cd TravelAgentDemo
+   agentcore add agent \
+     --name TravelAgent \
+     --language Python \
+     --protocol MCP \
+     --authorizer-type CUSTOM_JWT \
+     --discovery-url "https://cognito-idp.$REGION.amazonaws.com/$POOL_ID/.well-known/openid-configuration" \
+     --allowed-clients "$CLIENT_ID" \
+     --request-header-allowlist Authorization
+   ```
+
+1. Replace the generated server with the server from this tutorial, and add its dependencies:
+
+   ```
+   cp ../travel_server.py app/TravelAgent/main.py
+   cd app/TravelAgent
+   uv add "fastmcp>=2.10.0" mcp
+   cd ../..
    ```
 
 1. Deploy the agent:
@@ -640,7 +660,3 @@ Thank you for booking with Travel Agent!
 
 **Tip**
 You can also test your MCP server using the MCP Inspector, a visual tool for testing MCP servers. For local testing instructions, see [Local testing with MCP inspector](runtime-mcp.md#runtime-mcp-appendix-b) . For remote testing instructions, see [Remote testing with MCP inspector](runtime-mcp.md#runtime-mcp-appendix-c).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

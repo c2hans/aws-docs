@@ -52,7 +52,3 @@ If you want to use an existing VPC that does not have a public subnet, you can a
 You can enable internet access when you [create the WorkSpaces Pool directory](https://docs.aws.amazon.com/workspaces/latest/adminguide/create-directory-pools.html). Choose the VPC with a public subnet when you create the directory. Then select a public subnet for **Subnet 1** and, optionally, another public subnet for **Subnet 2**.
 
 You can test your internet connectivity by starting your WorkSpaces Pool, and then connecting to a WorkSpace in the pool and browsing to the internet.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

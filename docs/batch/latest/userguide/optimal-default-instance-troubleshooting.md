@@ -10,7 +10,3 @@ AWS Batch supported a single option in **instanceTypes** for `optimal` to match 
 The `optimal` option now selects instance types from modern m, c, and r instance families based on regional availability. AWS Batch periodically updates the pool with newer generations within these families. If you are using `optimal`, no action is needed on your part.
 
 However, please be aware that only `ENABLED` and `VALID` Compute Environments (CEs) will be updated with new instance types. If you have any `DISABLED` or `INVALID` CEs, they will receive updates once they are re-enabled and set to a `VALID` state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

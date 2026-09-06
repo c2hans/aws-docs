@@ -37,7 +37,3 @@ To access the dashboard for monitoring the resource utilization metrics of a tra
 + [Amazon SageMaker Profiler](train-use-sagemaker-profiler.md)
 + [Monitor AWS compute resource utilization in Amazon SageMaker Studio Classic](debugger-profile-training-jobs.md)
 + [Release notes for profiling capabilities of Amazon SageMaker AI](profiler-release-notes.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

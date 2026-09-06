@@ -153,7 +153,3 @@ If you are using [Amazon Managed Grafana](https://aws.amazon.com/grafana/) (AMG)
 + **Updating credentials** – If your service account token expires or needs to be updated, you can rotate it without deregistering. On the **Capability Providers** page, select your Grafana registration, choose **Update** from the **Actions** menu, and enter the new token. Your Agent Space associations are preserved.
 + **Viewing connected instances** – In the AWS DevOps Agent console, select your Agent Space and go to the Capabilities tab to view connected telemetry sources.
 + **Removing Grafana** – To disconnect Grafana from an Agent Space, select it in the Telemetry section and choose **Remove**. To completely remove the registration, remove it from all Agent Spaces first, then deregister from the Capability Providers page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

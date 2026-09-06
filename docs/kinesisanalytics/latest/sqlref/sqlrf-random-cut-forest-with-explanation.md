@@ -200,7 +200,3 @@ This theoretical example shows two sets of data that follow an oscillating patte
 <a name="random-cut-forest-with-explanation-examples-bloodpressure"></a>
 
 For a more detailed example, with code that detects and explains anomalies in blood pressure readings, see [Example: Detecting Data Anomalies and Getting an Explanation](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/app-anomaly-detection-with-explanation.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

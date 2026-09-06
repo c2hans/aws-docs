@@ -24,7 +24,3 @@ If you are a seasoned machine learning practitioner, you will find DeepRacer on 
 1. Use the simulator to evaluate a model and test autonomous racing in a virtual environment.
 
 1. Deploy a trained model to an AWS DeepRacer to test autonomous racing in a physical environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -123,7 +123,3 @@ The audit log files include the following comma-delimited information in rows, i
 | database | The active database, as set by the `USE` command. |
 | object | For `QUERY` events, this value indicates the query that the database performed. For `TABLE` events, it indicates the table name. |
 | retcode | The return code of the logged operation. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

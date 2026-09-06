@@ -43,7 +43,3 @@ To prevent waste, optimize your data model and queries. Share compute resources 
 + Optimize your queries and InfluxDB data model to minimize the resources required to compute the results.
 + Use [InfluxDB tasks](https://docs.influxdata.com/influxdb/cloud/process-data/get-started/) to pre-aggregate the data and reduce the scanning of the same raw data by different users for visualizing or dashboarding.
 + Keep your Timestream for InfluxDB environments up to date. The newest versions of Timestream for InfluxDB support the latest EC2 instances, such as Graviton, that are more efficient. The newest DB versions also include query optimization improvements and bug fixes that reduce the amount of resources needed to calculate your queries.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

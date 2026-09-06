@@ -60,7 +60,3 @@ If a minimum quorum of healthy nodes doesn't exist, contact AWS Support.
 You can use the `describe-cluster` command to view the lock state and network reachability of each node. Ensuring that the devices in your cluster are healthy and connected is an administrative responsibility that you take on when you using cluster storage. For more information, see [Getting device status](https://docs.aws.amazon.com/snowball/latest/developer-guide/using-client-commands.html#client-status).
 
 If you determine one or more nodes are unhealthy, you can replace nodes in the cluster to maintain quorom and the health and stability of your data. For more information, see [Replacing a node in a cluster](replacement.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

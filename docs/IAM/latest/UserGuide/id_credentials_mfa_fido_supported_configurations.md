@@ -253,7 +253,3 @@ AWS supports using passkeys and security keys only in the AWS Management Console
 + For more information on using passkeys and security keys in AWS, see [Assign a passkey or security key in the AWS Management Console](id_credentials_mfa_enable_fido.md).
 + For help with troubleshooting passkeys and security keys in AWS, see [Troubleshoot Passkeys and FIDO Security Keys](troubleshoot_mfa-fido.md).
 + For general industry information on FIDO2 support, see [FIDO2 Project](https://en.wikipedia.org/wiki/FIDO2_Project).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

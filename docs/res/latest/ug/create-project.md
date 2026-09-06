@@ -25,7 +25,3 @@ The project ID cannot be changed after creation.
 1. Assign users, groups, or both the appropriate role ("Project Member" or "Project Owner"). See [Default permissions profiles](permission-matrix.md) for the actions each role can take.
 
 1. Choose **Submit**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

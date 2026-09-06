@@ -24,7 +24,3 @@ You must be a member of a project in order to request subscription to an asset w
    You receive a notification in the data portal when the publisher approves your request.
 
 To view the status of the subscription request, locate and choose the project with which you subscribed to the asset. Navigate to the **Data** tab for the project, then choose **Requested data** from the left navigation pane. This page lists the assets to which the project has requested access. You can filter the list by the status of the request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ Tags for manual snapshots of databases are not currently included in billing rep
 <a name="what-is-the-difference-between-key-value-and-key-only-tags"></a>
 
 Lightsail tags are key-value pairs, allowing you to organize resources such as instances across different categories (e.g. project:Blog, project:Game, project:Test). This allows you full control across all use cases such as resource organization, bill reporting, and access management. The Lightsail console also allows you to tag your resources with key-only tags for quick filtering in the console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

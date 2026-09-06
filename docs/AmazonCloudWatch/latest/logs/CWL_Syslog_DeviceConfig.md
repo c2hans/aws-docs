@@ -201,7 +201,3 @@ Consult your device's documentation for the specific configuration syntax. The k
 The TLS connection on port 6514 uses an AWS-managed certificate issued by Amazon Trust Services. Most operating systems and syslog daemons trust this certificate automatically because the Amazon Trust Services root certificates are included in standard CA trust stores.
 
 If your device does not trust the certificate by default, download the Amazon Trust Services root certificates from [https://www.amazontrust.com/repository/](https://www.amazontrust.com/repository/) and add them to your device's CA trust store.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

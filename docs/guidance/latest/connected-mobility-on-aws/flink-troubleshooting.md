@@ -284,7 +284,3 @@ The CampaignSyncProcessor is running but the agent does not receive collection s
 1. Verify the agent is subscribed to the correct MQTT topic. The agent subscribes to `cms/fleetwise/vehicles/{vin}/collection_schemes_and_decoder_manifests` where `{vin}` must match the VIN in the campaign’s target.
 
 1. Check campaign status in DynamoDB. Campaigns in `SUSPENDED` state will cause the processor to push an empty collection scheme, clearing the agent’s active collection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

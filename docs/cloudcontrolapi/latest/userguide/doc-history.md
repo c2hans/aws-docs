@@ -886,7 +886,3 @@ For a complete list of resources that currently support AWS Cloud Control API, s
 | [New resource](#doc-history) | [`AWS::Rekognition::Project`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rekognition-project.html) resource type added. | October 1, 2021 |
 | [New resource](#doc-history) | [`AWS::IAM::Role`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-role.html) resource type added. | September 30, 2021 |
 | [Initial release](#doc-history) | Initial release of the Cloud Control API User Guide | September 30, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Control API. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudcontrolapi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

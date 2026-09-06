@@ -509,10 +509,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateTest  **
   - **SDK client:** resiliencehubv2
-  - **IAM action:**  [resiliencehub:CreateTest](#list_resilience-hub-action-CreateTest)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [resiliencehub:CreateTest](#list_resilience-hub-action-CreateTest)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** fis.amazonaws.com / **Access level:** Write
 
 - **   CreateUserJourney  **
   - **SDK client:** resiliencehubv2
@@ -913,10 +911,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateTest  **
   - **SDK client:** resiliencehubv2
-  - **IAM action:**  [resiliencehub:UpdateTest](#list_resilience-hub-action-UpdateTest)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [resiliencehub:UpdateTest](#list_resilience-hub-action-UpdateTest)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** fis.amazonaws.com / **Access level:** Write
 
 - **   UpdateUserJourney  **
   - **SDK client:** resiliencehubv2
@@ -1741,7 +1737,3 @@ AWS Resilience Hub defines the following condition keys that can be used in the 
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag)  | Filters access by the presence of tag key-value pairs in the request | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag)  | Filters access by tag key-value pairs attached to the resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys)  | Filters access by the tag keys that are passed in the request | ArrayOfString |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

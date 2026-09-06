@@ -18,7 +18,3 @@ If a user stops receiving emails, your Amazon WorkMail organization may be exper
 **Outbound mail issues**
 + Ensure your SPF record includes Amazon SES. Check the domains page in the Amazon WorkMail console to verify. For more information about SPF, see [Authenticating email with SPF](authenticate_domain.md).
 + Ensure Amazon WorkMail has permissions to use the domain. If not, add the domain again. [Adding a domain](add_domain.md) in this guide provides the how-to steps.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

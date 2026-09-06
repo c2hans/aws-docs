@@ -48,7 +48,3 @@ Then, you can create a pipeline using `bucket_owners` to enable cross-account ac
 When creating a pipeline for custom sources:
 + A parser must be the first processor in the pipeline
 + You can specify any supported processor for custom log pipelines
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

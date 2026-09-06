@@ -36,7 +36,3 @@ The `outputs` array configures auto-optimization. Each `type` (`quality`, `forma
 |  `autosize`  | An array of one or more derivative widths (positive integers). |  `{ "viewportWidth": <320-3840> }`: the viewport width used when no viewport signal is available. |
 
 The `fallback` object is optional on every output; policies without it remain valid.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

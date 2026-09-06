@@ -11,7 +11,3 @@ Amazon WorkSpaces AgentAccess MCP Server provides the following APIs for data re
 | --- | --- | --- |
 | <a name="agentaccess-mcp-CheckConnectionStatus"></a>[CheckConnectionStatus](https://docs.aws.amazon.com/appstream2/latest/developerguide/) | Check the connection status of a streaming session | Read |
 | <a name="agentaccess-mcp-GetScreenshot"></a>[GetScreenshot](https://docs.aws.amazon.com/appstream2/latest/developerguide/) | Capture screen state | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

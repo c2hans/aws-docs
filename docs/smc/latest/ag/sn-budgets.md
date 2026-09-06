@@ -10,7 +10,3 @@ End of support notice: On March 31, 2027, AWS will end support for AWS Service M
  The Connector for ServiceNow enables ServiceNow administrators to view budgets related to Service Catalog products and portfolios. Service Catalog administrators can create or associate existing budgets to products and portfolios.
 
  For more information on creating and associating budgets, see [Managing Budgets.](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_budgets.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

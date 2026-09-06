@@ -153,7 +153,3 @@ Following is a list of error messages that might be displayed on the Contact det
 
   This error can occur in Connect Customer for Concurrent post-contact summary jobs. Connect Customer passes contact data to Amazon Bedrock for summary generation. If the contact data contains unredacted Personally Identifiable Information (PII), the safety guidelines of Amazon Bedrock are triggered. As a result, Amazon Bedrock refuses to generate the summary to protect sensitive information, leading to the error in Connect Customer.
 + Internal system error. ReasonCode: `INTERNAL_ERROR`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

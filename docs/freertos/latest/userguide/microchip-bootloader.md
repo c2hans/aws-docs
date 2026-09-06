@@ -182,7 +182,3 @@ The demo bootloader is included as a loadable project in the `aws_demos` project
 <a name="bootloader-pre-build"></a>
 
 This pre-build step executes a utility script called `codesigner_cert_utility.py` that extracts the public key from the code-signing certificate and generates a C header file that contains the public key in Abstract Syntax Notation One (ASN.1) encoded format. This header is compiled into the bootloader project. The generated header contains two constants: an array of the public key and the length of the key. The bootloader project can also be built without `aws_demos` and can be debugged as a normal application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

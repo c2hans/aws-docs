@@ -15,7 +15,3 @@ To use MediaConvert to encode Kantar watermarks, you use AWS Secrets Manager to 
 + [Granting IAM permissions to your Kantar credentials](granting-permissions-for-mediaconvert-to-access-secrets-manager-secret.md)
 + [Configuring a job for Kantar watermarking](setting-up-your-job-for-kantar-watermarking.md)
 + [Kantar job requirements](kantar-requirements.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

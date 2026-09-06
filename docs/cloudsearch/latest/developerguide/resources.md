@@ -15,7 +15,3 @@ The following table lists resources that you might find useful as you work with 
 | [Amazon CloudSearch Pricing](http://aws.amazon.com/cloudsearch/pricing) | Pricing information for Amazon CloudSearch. |
 | [Request to Increase Limits](https://aws.amazon.com/support/createCase?type=service_limit_increase&serviceLimitIncreaseType=cloudsearch-partitions-and-instances) | The form to request an increase in the maximum number of search instances or partitions for a search domain.  |
 | [Amazon CloudSearch 2011-02-01 Developer Guide](https://s3.amazonaws.com/awsdocs/cloudsearch/2011-02-01/cloudsearch-dg-2011-02-01.pdf) | The 2011-02-01 Amazon CloudSearch Developer Guide is available in PDF only: [Download PDF](https://s3.amazonaws.com/awsdocs/cloudsearch/2011-02-01/cloudsearch-dg-2011-02-01.pdf).  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

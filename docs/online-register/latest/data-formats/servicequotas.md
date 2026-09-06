@@ -24,7 +24,3 @@ Service Quotas provides the following APIs for data retrieval.
 | <a name="servicequotas-ListServices"></a>[ListServices](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_ListServices.html) | List the AWS services available in Service Quotas | Read |
 | <a name="servicequotas-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_ListTagsForResource.html) | View the existing tags on a SQ resource | Read |
 | <a name="servicequotas-StartQuotaUtilizationReport"></a>[StartQuotaUtilizationReport](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_StartQuotaUtilizationReport.html) | Query quota utilization and create a report for your account | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

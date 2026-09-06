@@ -100,7 +100,3 @@ To make a key a trusted key, its `CKA_TRUSTED` attribute must be set to true. Yo
 To wrap the data key referenced in Step 1 with the trusted key you set in Step 2, refer to the following links for code samples. Each demonstrates how to wrap keys.
 + [AWS CloudHSM PKCS \#11 examples](https://github.com/aws-samples/aws-cloudhsm-pkcs11-examples/tree/master/src/wrapping)
 + [AWS CloudHSM JCE examples](https://github.com/aws-samples/aws-cloudhsm-jce-examples/tree/sdk5/src/main/java/com/amazonaws/cloudhsm/examples)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -146,7 +146,3 @@ The following considerations apply to the use of shortcut links:
 + If you share shortcut links with coworkers, they need to have the same account assignments to be able to use the links in the same way.
 + Shortcut links are Regional links. If the referenced Region is experiencing a disruption, the link might not work.
 + Shortcut links contain the account ID and role name in plain text. Consider whether your organization's policies restrict where this metadata is stored.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 +  Amazon EC2 Spot Instances: For non-critical workloads, consider using EC2 Spot Instances. Spot Instances are available at significantly lower prices compared to On-Demand instances but can be interrupted with short notice when the Spot price exceeds your bid. Use Spot Instances to handle non-time-sensitive tasks and save costs.
 +  AWS Cost Explorer and AWS Budgets: Utilize AWS Cost Explorer and AWS Budgets to monitor and analyze your AWS costs. These tools provide insights into spending patterns and can help you identify opportunities for optimization.
 +  Finally, for large batch processing [*AWS Batch*](https://docs.aws.amazon.com/batch/latest/userguide/what-is-batch.html) that helps you to run batch computing workloads on the AWS Cloud.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -58,7 +58,3 @@ The following are examples for the acknowledgement output filenames:
 + TA1 acknowledgement: `s3://amzn-s3-demo-bucket/OUT/TP_ID/ACK/edi214xml-test83.txt.2023-11-21T19:26:49.774Z.TA1`
 
 For direct transformer API calls, the format is `s3://amzn-s3-demo-bucket/OUT/ACK/{{filename}}.{{timestamp}}.997` (`.TA1` for TA1 acknowledgements).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS B2B Data Interchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query b2bi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

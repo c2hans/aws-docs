@@ -27,7 +27,3 @@ We recommend that you *don't* construct your production job settings specificati
 1. If you are using the SDK for Python or the AWS CLI, copy the JSON object and save it as a file to submit with your `CreateJob` request.
 
    If you are using one of the other AWS SDKs, translate the JSON job settings according to the SDK documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

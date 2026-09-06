@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/o
  Thorough preparation across your people, processes, and technology is key to being effective in operations. Thus, follow the best practices from the [Preparation](preparation.md) section to be able to effectively respond to an active security event.
 
  To learn more, see the [Operations](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/operations.html) section of AWS Security Incident Response Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

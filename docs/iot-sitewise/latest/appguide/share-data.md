@@ -22,7 +22,3 @@ You can perform the following data sharing tasks:
 | [Assign project viewers](assign-project-viewers.md) | Portal administrators can invite viewers to any project in the portal. Project owners can invite viewers to projects that they administer. |
 | [Change project details](edit-project-details.md) | Only portal administrators can update the name and description for a project. |
 | [Delete projects in AWS IoT SiteWise Monitor](delete-projects.md) | Only portal administrators can delete projects. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

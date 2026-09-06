@@ -30,7 +30,3 @@ AWS handles storage networking with seamless integration into its virtual privat
 + **Amazon EFS access points –** Amazon EFS uses mount targets within each Availability Zones for network connectivity and access points to manage application-specific controls. Amazon EFS supports the NFS protocols, making it compatible with legacy systems that require file-level storage.
 + **AWS PrivateLink and Amazon S3 transfer acceleration –** For enhanced security and performance, AWS PrivateLink connects to AWS services using private IP addresses. Amazon S3 provides transfer acceleration, which optimizes upload speeds by routing traffic through Amazon CloudFront edge locations.
 + **VPC endpoints for Amazon S3 and Amazon EFS –** Amazon VPC provides endpoints that allow instances to privately access Amazon S3 and Amazon EFS without traversing the public internet. This reduces latency and improves security by keeping traffic within the AWS network.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

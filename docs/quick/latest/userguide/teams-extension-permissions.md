@@ -39,7 +39,3 @@ After installation, go to Microsoft Entra > **Enterprise Applications**, find th
 Use the following locations to review permissions for the Microsoft Teams extension:
 + **RSC Permissions:** Teams Admin Center > **Teams apps** > **Manage apps** > **Amazon Quick** > **Permissions**
 + **Application Permissions:** Microsoft Entra > **Enterprise Applications** > find the app starting with "qbs" and ending with "teams" > **Permissions**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

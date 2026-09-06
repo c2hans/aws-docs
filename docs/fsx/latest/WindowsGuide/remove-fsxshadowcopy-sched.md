@@ -16,7 +16,3 @@ Performing the operation "Remove-FsxShadowCopySchedule" on target "Removing FSx 
 [Y] Yes [A] Yes to All [N] No [L] No to All [?] Help (Default is "Y"): Y
 [fs-0123456789abcdef1]PS>
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

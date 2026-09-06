@@ -19,7 +19,3 @@ How you provide this service role, and who assumes the role, depends on your env
 + *Self-managed provisioning* – It's your responsibility to configure your provisioning automation to assume an appropriate role using appropriate credentials when a pull request (PR) triggers a provisioning action. For an example GitHub Action that assumes a role, see [Assuming a Role](https://github.com/aws-actions/configure-aws-credentials#assuming-a-role) in the *"Configure AWS Credentials" Action For GitHub Actions* documentation.
 
 For more information about provisioning methods, see [How AWS Proton provisions infrastructure](ag-works-prov-methods.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

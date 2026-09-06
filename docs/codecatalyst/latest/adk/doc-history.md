@@ -16,7 +16,3 @@ The following table describes the documentation releases for the CodeCatalyst Ac
 | [New content: [Deleting an action version](https://docs.aws.amazon.com/codecatalyst/latest/adk/deleting-action-version.html)](amh-actions.md) | Added a [Deleting an action version](https://docs.aws.amazon.com/codecatalyst/latest/adk/deleting-action-version.html) topic. | June 28, 2023 |
 | [[New content: Action reference](https://docs.aws.amazon.com/codecatalyst/latest/adk/action-ref.html)](action-ref.md) | Added [Action reference](https://docs.aws.amazon.com/codecatalyst/latest/adk/action-ref.html) topic.  | April 1, 2023 |
 | [New content](#doc-history) | Initial publication of the Amazon CodeCatalyst Action Development Kit guide.  | March 31, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

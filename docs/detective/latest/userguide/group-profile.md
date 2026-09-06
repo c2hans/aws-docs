@@ -25,7 +25,3 @@ Focuses on the entities in the finding group, including what findings within the
 
 **Involved findings**
 Has details about each finding, including finding severity, each entity involved, and when that finding was first and last seen. Select a finding type in the list to open a finding details panel with additional information about that finding. As part of the **Involved findings** panel, you may see **Informational** findings based on Detective evidence from your behavior graph.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

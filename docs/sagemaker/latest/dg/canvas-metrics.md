@@ -96,7 +96,3 @@ The following defines the advanced metrics for time series forecasts in Amazon S
 + Root Mean Square Error (RMSE) – The square root of the average squared errors. A lower RMSE indicates a more accurate model, where RMSE = 0 is a model with no errors.
 + Mean Absolute Percent Error (MAPE) – The percentage error (percent difference of the mean forecasted value versus the actual value) averaged over all time points. A lower value indicates a more accurate model, where MAPE = 0 is a model with no errors.
 + Mean Absolute Scaled Error (MASE) – The mean absolute error of the forecast normalized by the mean absolute error of a simple baseline forecasting method. A lower value indicates a more accurate model, where MASE < 1 is estimated to be better than the baseline and MASE > 1 is estimated to be worse than the baseline.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

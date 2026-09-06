@@ -74,7 +74,3 @@ Greengrass core devices use the following endpoints and ports when you [install 
 <a name="public-component-endpoints"></a>
 
 Greengrass core devices use additional endpoints depending on which software components they run. You can find the endpoints that each AWS-provided component requires in the **Requirements** section on each component's page in this developer guide. For more information, see [AWS-provided components](public-components.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

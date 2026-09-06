@@ -13,13 +13,13 @@ Amazon Redshift machine learning (Amazon Redshift ML) is a robust, cloud-based s
 
 **Note**
 **Opting out of using your data for service improvement**
-If you are using Amazon Bedrock models, we encourage you to read the AWS policies about how the Amazon Bedrock service handles your data. You should determine if you need to use an opt-out policy to prevent the service from using your data for model or service improvements, should Amazon Bedrock implement such functionality in the future. To ensure that the service doesn't use your data for such purposes, use the general AWS opt-out policy.
+If you are using Amazon Bedrock models, we encourage you to read the AWS policies about how the Amazon Bedrock service handles your data. You should determine if you need to use an opt-out policy to prevent the service from using your data for model or service improvements, should Amazon Bedrock implement such functionality in the future. To make sure that the service doesn't use your data for such purposes, use the general AWS opt-out policy.
 For more information, see the following:
 [AI services opt-out policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_ai-opt-out.html)
 [Amazon Bedrock FAQs](https://aws.amazon.com/bedrock/faqs/)
 
 **Note**
- LLMs can generate inaccurate or incomplete information. We recommend verifying the information that LLMs produce to ensure that it is accurate and complete.
+ LLMs can generate inaccurate or incomplete information. We recommend verifying the information that LLMs produce to make sure that it is accurate and complete.
 
 **How Amazon Redshift ML works with Amazon SageMaker AI**
 
@@ -48,7 +48,3 @@ The general workflow is as follows:
 + [Getting started with Amazon Redshift ML](getting-started-machine-learning.md)
 + [Tutorials for Amazon Redshift ML](tutorials_for_amazon_redshift_ml.md)
 + [Amazon Redshift ML integration with Amazon Bedrock](machine-learning-br.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ For example, a landing zone typically deploys a networking account that will con
 The following diagram shows two network interface (NIC) instances from an F5 BIG-IP workload deployed in an active standby cluster. You can add more elastic network interfaces to these systems, up to the instance limit. F5 recommends that you use a Multi-AZ pattern for your deployment to avoid Availability Zone failure.
 
 ![Overview of migration strategy decisions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f5-big-ip/images/guide-img/migration-f5-big-ip/images/F5-aws-architecture.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

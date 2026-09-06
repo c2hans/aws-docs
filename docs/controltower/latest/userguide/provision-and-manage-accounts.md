@@ -28,7 +28,3 @@ When you create accounts from the AWS Control Tower console with Account Factory
 When provisioning an account, the account requester always must have the `CreateAccount` and the `DescribeCreateAccountStatus` permissions. This permission set is part of the **Admin** role, and it is given automatically when a requester assumes the **Admin** role. If you delegate permission to provision accounts, you may need to add these permissions directly for the account requestors.
 
 For general information about permissions required in AWS Control Tower, see [Using identity-based policies (IAM policies) for AWS Control Tower](access-control-managing-permissions.md). For information about roles and accounts in AWS Control Tower, see [Roles and accounts](https://docs.aws.amazon.com/controltower/latest/userguide/roles.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

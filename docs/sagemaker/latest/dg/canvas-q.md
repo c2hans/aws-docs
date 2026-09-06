@@ -160,7 +160,3 @@ After building your model, you can perform additional actions using either natur
 ![A Q Developer conversation ellipsis menu expanded, showing options for viewing models details, predictions, and deployment.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/amazon-q-ellipsis-menu.png)
 
 You can also perform any of these actions by going to the **My Models** page of Canvas and selecting your model. From your model's page, you can navigate to the **Analyze**, **Predict**, and **Deploy** tabs to view model metrics and visualizations, make predictions, and manage deployments, respectively.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -189,7 +189,3 @@ In the **Incident properties** section, you can view the following:
 + **Owner** – The account in which the incident was created.
 
 In the **Tags** section, you can view and edit the tag keys and values associated with the incident record. For more information about tags in Incident Manager, see [Tagging resources in Incident Manager](tagging.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

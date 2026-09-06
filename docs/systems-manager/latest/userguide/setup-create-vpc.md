@@ -34,6 +34,7 @@ You can use Amazon Virtual Private Cloud (Amazon VPC) to define a virtual networ
 + [VPC endpoint restrictions and limitations](#vpc-requirements-and-limitations)
 + [Creating VPC endpoints for Systems Manager](#create-vpc-endpoints)
 + [Create an interface VPC endpoint policy](#create-vpc-interface-endpoint-policies)
++ [VPC endpoint policy considerations for hybrid nodes](#vpc-endpoint-policies-hybrid-nodes)
 
 ## VPC endpoint restrictions and limitations
 <a name="vpc-requirements-and-limitations"></a>
@@ -92,6 +93,11 @@ You can create policies for VPC interface endpoints for AWS Systems Manager in w
 
 For more information, see [Control access to services with VPC endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html) in the *Amazon VPC User Guide*.
 
-## See also
+## VPC endpoint policy considerations for hybrid nodes
+<a name="vpc-endpoint-policies-hybrid-nodes"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+Hybrid nodes don't natively belong to an AWS account – they are registered to one. Because of this, the `ssm:RegisterManagedInstance`, `ssm:RequestManagedInstanceRoleToken`, and `ssm:UpdateManagedInstancePublicKey` APIs don't use AWS Signature Version 4 (SigV4) when authenticating hybrid nodes. As a result, policy evaluation can't access an AWS principal identity or global context keys such as `aws:PrincipalOrgId`, `aws:PrincipalAccount`, and `aws:SourceAccount`. VPC endpoint policy restrictions that rely on these global keys or on AWS principal identity might block access to these three APIs.
+
+To address this, you can use two condition keys that AWS Systems Manager provides. These keys work consistently across both Amazon EC2 and hybrid scenarios:
++ `ssm:NodeAccountId` – Resolves to the account in which an Amazon EC2 instance exists, or the account to which a hybrid node is registered.
++ `ssm:NodeOrgId` – Resolves to the organization that owns the Amazon EC2 instance's account, or the organization of the account to which a hybrid node is registered.

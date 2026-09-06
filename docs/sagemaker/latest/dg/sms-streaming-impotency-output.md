@@ -28,7 +28,3 @@ When you do not specify a key, you can find the deduplication ID that Ground Tru
 ```
 
 For `{{<service-generated-key>}}`, if the data object came through an Amazon S3 configuration, Ground Truth adds a unique value used by the service and emits a new field keyed by `${{sequencer}}` which shows the Amazon S3 sequencer used. If object was fed to SNS directly, Ground Truth use the SNS message ID.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

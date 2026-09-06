@@ -34,7 +34,3 @@ Or, if desired, use the shortcut keys.
 
 **Tip**
 Connect Customer uses the clipboard for this feature. Paste won't work if you edit the JSON in your clipboard and introduce a typo or other error, or if you have multiple items saved to your clipboard.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

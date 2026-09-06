@@ -92,7 +92,3 @@ The following tables list the metrics for all EventBridge Scheduler schedules, a
   <tr><td><code>AWS/Scheduler</code></td><td><code>InvocationsSentToDeadLetterCount_Truncated_MessageSizeExceeded</code></td><td>Count</td><td>Emitted when the payload of the event sent to the DLQ exceeds the maximum size allowed by Amazon SQS, and EventBridge Scheduler truncates the payload you specify in the <code>Input</code> attribute of a schedule.</td></tr>
 </tbody>
 </table>
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge Scheduler. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query scheduler` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

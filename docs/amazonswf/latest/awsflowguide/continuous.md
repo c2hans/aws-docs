@@ -40,7 +40,3 @@ public class ContinueAsNewWorkflowImpl implements ContinueAsNewWorkflow {
 ```
 
 When a workflow recursively calls itself, the framework will close the current workflow when all pending tasks have completed and start a new workflow execution. Note that as long as there are pending tasks, the current workflow execution will not close. The new execution will not automatically inherit any history or data from the original execution; if you want to carry over some state to the new execution, then you must pass it explicitly as input.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

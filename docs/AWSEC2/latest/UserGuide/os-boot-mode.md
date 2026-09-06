@@ -71,7 +71,3 @@ Use the instructions for your instance's operating system.
 
 1. Go to **System Information** and check the **BIOS Mode** row.
 ![System Information window showing the BIOS Mode row selected. The value for BIOS Mode is Legacy.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/BIOS-mode-win.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

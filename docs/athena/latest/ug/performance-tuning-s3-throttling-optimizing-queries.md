@@ -49,7 +49,3 @@ Queries that include clauses such as `LIKE '%string%'` on large strings can be v
 <a name="performance-tuning-s3-throttling-use-the-limit-clause"></a>
 
 Instead of selecting all columns when you run a query, use the `LIMIT` clause to return only the columns that you require. This reduces the size of the dataset that is processed through the query execution pipeline. `LIMIT` clauses are more helpful when you query tables that have a large of number of columns that are string-based. `LIMIT` clauses are also helpful when you perform multiple joins or aggregations on any query.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

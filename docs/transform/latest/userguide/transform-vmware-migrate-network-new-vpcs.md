@@ -296,6 +296,9 @@ AWS Transform might recommend the following optimizations:
 
   Review the suggested removals before you apply them to confirm that they align with your security policies.
 + **VPC consolidation:** Identifies fragmented VPCs that appear separated by physical infrastructure limits rather than logical isolation requirements, and suggests merging them.
++ **Application alignment:** Identifies VPCs that host applications from multiple environments, such as development and production workloads that share a single VPC. When the environments can be cleanly separated along subnet boundaries, so that no environment has workloads on both sides of the proposed split, AWS Transform suggests splitting the VPC along that boundary. Subnets and server IP addresses remain unchanged. Separating environments into dedicated VPCs follows AWS best practices for workload isolation and environment-specific access control.
+
+  This recommendation requires the application and environment data from your migration plan, so it is available only after migration planning.
 
 **Note**
 All recommendations require your explicit confirmation before AWS Transform applies any changes. AWS Transform presents trade-offs when a recommendation affects multiple aspects of your network.
@@ -429,7 +432,3 @@ To extract configuration files from your firewall and network environments, foll
   1. In the **Take a snapshot** dialog, select the remote location option and choose **Create a snapshot now**.
 
   1. After receiving "Transfer successful" message, connect to the remote location server and retrieve the latest snapshot file (.gz file)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

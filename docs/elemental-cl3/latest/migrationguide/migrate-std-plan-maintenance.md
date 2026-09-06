@@ -25,7 +25,3 @@ Perform all the following tasks on every node, all in one maintenance window.
 + [Step F: Rebuild the cluster](migrate-std-rebuild-cluster.md)
 
 These steps upgrade all the nodes in one maintenance window. You must perform the upgrade in this way because you can't have a cluster where some nodes are on the previous version of the AWS Elemental software and some are on the new version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

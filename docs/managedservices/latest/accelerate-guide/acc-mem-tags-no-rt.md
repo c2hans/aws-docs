@@ -20,7 +20,3 @@ After the Resource Tagger has been set to read-only mode, and the configuration 
 | OpenSearch Domain with Dedicated Master Node | ams:rt:ams-monitoring-with-master | ams-monitored-with-master |
 
 Resources that have these tag keys and values are managed by the AMS Accelerate Alarm Manager.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

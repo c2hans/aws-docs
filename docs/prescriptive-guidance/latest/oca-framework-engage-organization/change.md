@@ -64,7 +64,3 @@ To get started on change acceleration implementation, do the following:
 1. Document and share lessons learned with the cloud transformation team and other teams within the company to create a culture of evolution, iteration, and continuous improvement.
 
 The effective implementation of change acceleration is critical for realizing the full value of cloud transformation. By following these steps and best practices, and systematically implementing the change strategy, organizations can minimize disruption, align stakeholders, and accelerate cloud adoption to achieve their desired business outcomes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

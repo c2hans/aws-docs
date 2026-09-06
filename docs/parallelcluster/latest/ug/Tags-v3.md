@@ -30,7 +30,3 @@ Defines the value of the tag.
 Starting with AWS ParallelCluster 3.15.0, Tag updates are supported with the following limitations:
 EBS Volume on HeadNode - Will only retain the tags from when the cluster was created; updating tags on this EBS volume is not supported.
 Running Nodes - Tag updates will not be applied to running compute or login nodes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

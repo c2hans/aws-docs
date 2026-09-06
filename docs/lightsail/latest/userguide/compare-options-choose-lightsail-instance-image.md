@@ -252,7 +252,3 @@ Bitnami Redmine is a preconfigured, ready-to-use image for running Redmine on Li
 This blueprint is compatible with both dual-stack and IPv6-only Lightsail instance plans.
 [Configure and secure a Redmine instance on Lightsail](amazon-lightsail-quick-start-guide-redmine.md)
 Learn more about the [Redmine stack](https://bitnami.com/stack/redmine) at the *Bitnami* website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

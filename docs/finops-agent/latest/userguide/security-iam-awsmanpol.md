@@ -30,7 +30,3 @@ Attach `FinOpsAgentOperatorPolicy` to the operator role. AWS FinOps Agent assume
 For instructions on setting up the operator role, see [Operator permissions policy](setting-up.md#setting-up-operator-policy).
 
 For more information about the current policy document, see [FinOpsAgentOperatorPolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FinOpsAgentOperatorPolicy.html) in the *AWS Managed Policy Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS FinOps Agent (preview). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finops-agent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

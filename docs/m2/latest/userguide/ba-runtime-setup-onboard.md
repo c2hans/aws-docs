@@ -130,7 +130,3 @@ total 230928
 
 **Note**
 Access to artifacts may be temporarily interrupted, and versions may be removed for security reasons. We strongly recommend that you store the artifacts you use in your own account. The local version should be used for reference in your internal architectures.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

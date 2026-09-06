@@ -45,7 +45,3 @@ Before you use Real-Time Streaming for the first time, complete the following ta
 1. [Integrate the IVS Broadcast SDK](getting-started-broadcast-sdk.md) — Add the broadcast SDK to your app to enable participants to send and receive video: [Web](getting-started-broadcast-sdk.md#getting-started-broadcast-sdk-web), [Android](getting-started-broadcast-sdk.md#getting-started-broadcast-sdk-android), and [iOS](getting-started-broadcast-sdk.md#getting-started-broadcast-sdk-ios).
 
 1. [Publish and subscribe to video](getting-started-pub-sub.md) — Send your video to the stage and receive video from other hosts: [IVS console](getting-started-pub-sub.md#getting-started-pub-sub-console), [Publish & Subscribe with the IVS Web Broadcast SDK](getting-started-pub-sub-web.md), [Publish & Subscribe with the IVS Android Broadcast SDK](getting-started-pub-sub-android.md), and [Publish & Subscribe with the IVS iOS Broadcast SDK](getting-started-pub-sub-ios.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

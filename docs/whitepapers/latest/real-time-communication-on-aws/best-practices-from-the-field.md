@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/real-time-communicati
 ![A diagram depicting using SIP routing to override network routing .](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/using-sip-to-override.png)
 
  In the preceding figure, SIP infrastructure (represented by green dots inside the cubes) is running in all four US Regions. The solid blue lines represent a fictional depiction of the AWS backbone. If no SIP routing is implemented, a call originating in the US west coast and destined for the US east coast goes over the backbone link that is directly connecting the Oregon and Virginia regions. The diagram shows how a customer might override the network level routing and make the same call between Oregon and Virginia routed through California using SIP routing. This type of SIP traffic engineering can be implemented using SIP proxies and media gateways based on network metrics such as SIP retransmissions and customer specific business preferences.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

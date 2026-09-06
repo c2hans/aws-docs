@@ -185,7 +185,3 @@ Set up Lake Formation permissions on the catalog link container, databases, tabl
 1. Under **Catalog permissions**, select **Describe** for **Catalog permissions**.
 
 1. Repeat these steps to grant additional permissions to {{`Glue-execution-role`}}.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker lakehouse architecture. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-lakehouse-architecture` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

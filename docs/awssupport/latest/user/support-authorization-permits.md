@@ -191,7 +191,3 @@ Follow these recommendations when you create support permits:
 + **Apply least-privilege scoping**: Specify only the actions and resources that AWS Support needs for the investigation. Avoid using `allActions` and `allResourcesInRegion` together unless necessary.
 + **Link support permits to support cases**: Use the `supportCaseDisplayId` parameter to automatically deactivate the support permit when the support case closes.
 + **Audit regularly**: Use `ListSupportPermits` to review active support permits and delete support permits that are no longer needed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

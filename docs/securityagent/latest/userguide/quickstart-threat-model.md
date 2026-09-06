@@ -101,7 +101,3 @@ Provide **both** sources and scope docs to scope the threat model to a specific 
    1. Update the threat status to **Resolved** or **Dismissed** as you address or triage each threat.
 
 For more details, see [Create a threat model](perform-threat-model.md) and [Review threats from a threat model](review-threat-model-findings.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

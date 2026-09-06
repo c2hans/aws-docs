@@ -64,7 +64,3 @@ You can also attach a role to an already running EC2 instance by calling the fol
 + Attach an instance profile with a role to a stopped or running EC2 instance: [`AssociateIamInstanceProfile`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateIamInstanceProfile.html)
 + Get information about an instance profile attached to an EC2 instance: [`DescribeIamInstanceProfileAssociations`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIamInstanceProfileAssociations.html)
 + Detach an instance profile with a role from a stopped or running EC2 instance: [`DisassociateIamInstanceProfile`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateIamInstanceProfile.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

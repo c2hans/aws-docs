@@ -124,7 +124,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 </table>
 
  If you choose to deploy the demo website (which we recommend deactivating after you launch the solution in a production environment), the solution automatically deploys Amazon S3 bucket for storing the static website assets in your account, and use the same CloudFront distribution created in front of API Gateway endpoint. You are responsible for the incurred variable charges from these services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

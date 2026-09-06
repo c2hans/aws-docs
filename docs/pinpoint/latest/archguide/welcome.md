@@ -46,7 +46,3 @@ To learn more about the number of Availability Zones that are available in each 
 <a name="welcome-resources"></a>
 
 AWS provides several additional resources for designing resilient architectures. For an overview of disaster recovery at AWS and related concepts, see the [AWS Disaster Recovery](https://disaster-recovery.workshop.aws/en/) Workshop and the [Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) section in the [Well-Architected Framework documentation](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

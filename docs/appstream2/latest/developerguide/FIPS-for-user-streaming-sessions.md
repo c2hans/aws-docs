@@ -14,7 +14,3 @@ To configure a FIPS-compliant connection for users who authenticate through a st
 ```
 aws appstream create-streaming-url --stack-name {{stack-name}} --fleet-name {{fleet-name}} --user-id {{user-id}} --endpoint-url https://appstream2-fips.us-east-1.amazonaws.com
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

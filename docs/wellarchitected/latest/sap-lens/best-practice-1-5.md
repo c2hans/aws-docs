@@ -15,7 +15,3 @@ Consider outside-in monitoring approaches by deploying user agents or robots at 
 + SAP on AWS Blog: [Monitor and Optimize SAP Fiori User Experience on AWS using CloudWatch RUM](https://aws.amazon.com/blogs/awsforsap/monitor-and-optimize-sap-fiori-user-experience-on-aws/)
 +  SAP Documentation: [SAP User Experience Monitoring](https://help.sap.com/viewer/82f6dd44db4e4518aad4dfce00116fcf/LATEST/en-US/1083786db5f1461c8cff8fbcc1666a4d.html)
 +  AWS Marketplace: [Products and Tools for SAP Monitoring](https://aws.amazon.com/marketplace/search/results?page=1&searchTerms=SAP&category=45c68cc2-ccd6-426b-94bd-92a791004dc2)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

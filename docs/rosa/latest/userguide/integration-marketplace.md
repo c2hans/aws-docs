@@ -207,7 +207,3 @@ If an AWS Marketplace private offer is not accepted, the ROSA service fees from 
 Private Marketplace enables administrators to build customized digital catalogs of approved products from AWS Marketplace. Administrators can create unique sets of vetted software available in AWS Marketplace for AWS organizational units or different AWS accounts within their organization to purchase.
 
 If your organization uses a private marketplace, an administrator must add the AWS Marketplace listings for ROSA to the private marketplace before users can enable the service. For more information, see [Getting started with private marketplace](https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-catalog-administration.html) in the * AWS Marketplace Buyer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Red Hat OpenShift Service on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rosa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,7 +64,3 @@ For more information about AWS Backup, see the following:
 + [ Protecting your data with AWS Backup](https://aws.amazon.com/blogs/storage/protecting-your-data-with-aws-backup/). With Anthony Fiore (Jul. 2019).
 + [Marketing Video: Introducing AWS Backup](https://www.youtube.com/watch?v=QDiXzFx2iMU). Jan. 2019.
 + [Video: Introduction to AWS Backup](https://www.aws.training/Details/Video?id=29646). With AWS Training and Certification.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

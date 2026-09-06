@@ -18,7 +18,3 @@ The following steps describe the architecture:
 1. Single sign-in is established through federation of Active Directory SAML 2.0 with Auth0.
 
 1. Siemens NX streams through WorkSpaces Applications and communicates through the Amazon VPC peer to Siemens Teamcenter running on another VPC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Reference Architecture Diagrams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query reference-architecture-diagrams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

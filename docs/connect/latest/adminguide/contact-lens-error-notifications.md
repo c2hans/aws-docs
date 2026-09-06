@@ -57,8 +57,5 @@ The format of a notification looks like the following sample:
 | RECORDING\_FILE\_INVALID | The recording file is invalid. |
 | RECORDING\_FILE\_CANNOT\_BE\_READ | An error occurred when conversational analytics tried to read the recording file. |
 | RECORDING\_FILE\_EMPTY | The recording file is empty. |
-| RECORDING\_SAMPLE\_RATE\_NOT\_SUPPORTED | The sample rate of the audio file is not supported. conversational analytics currently supports audio files with an 8kHz sample rate. That is the sample rate for Connect Customer recordings. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+| RECORDING\_SAMPLE\_RATE\_NOT\_SUPPORTED | The sample rate of the audio file is not supported. conversational analytics supports audio files with an 8kHz sample rate. That is the sample rate for Connect Customer recordings. |
+| INSUFFICIENT\_CONVERSATION\_CONTENT | Conversational analytics did not find enough plain text content in the conversation to generate an analysis. This can occur when the conversation is too short, or the content didn't convert to any plain text. |

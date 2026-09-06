@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/g-core
 ![Figure 2. Bringing the cloud where the network needs it.](http://docs.aws.amazon.com/wellarchitected/latest/telco-lens/images/image3.png)
 
  The network functions (NFs) in a telco core network can be split into control and user plane. The user plane NFs are throughput intensive and depend heavily on packet forwarding mechanisms. However, the control plane functions are compute intensive and require higher levels of resiliency and reliability. In a distributed architecture, these control plane NFs are deployed in AWS Regions to offer better scalability and resilience. On the other hand, the user plane NFs are moved closer to the end user for better experience and low latency, using the higher throughput capabilities of Local Zones or AWS Outpost Racks. Outpost servers can be used to deploy the RAN part of the network as shown in the previous diagram.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -78,7 +78,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
  **Related examples:**
 +  [Gain Insights with Natural Language Query into your AWS environment using Amazon CloudTrail and Amazon Q in QuickSight](https://aws.amazon.com/blogs/mt/gain-insights-with-natural-language-query-into-your-aws-environment-using-amazon-cloudtrail-and-amazon-q-in-quicksight/)
 +  [Auditing generative AI workloads with AWS CloudTrail](https://aws.amazon.com/blogs/mt/auditing-generative-ai-workloads-with-aws-cloudtrail/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

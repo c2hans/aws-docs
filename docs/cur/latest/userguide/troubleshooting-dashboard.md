@@ -53,7 +53,3 @@ The Data Exports console page reads from a file in your S3 bucket in order to id
 <a name="dataexports-qs-configure"></a>
 
 The cost and usage dashboard feature does not support visualizing resource tags. However, you can still receive your resource tag data in the CUR 2.0 export. If you want an AWS supported QuickSight dashboard for visualizing your cost and usage with tags, refer to the [CUDOS Dashboard from AWS Well-Architected Labs](https://catalog.workshops.aws/awscid/en-US/dashboards/foundational/cudos-cid-kpi/#cudos-dashboard). It currently only uses data from legacy CUR, but will support CUR 2.0 in the future.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

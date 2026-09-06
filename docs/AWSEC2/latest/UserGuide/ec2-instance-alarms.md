@@ -53,7 +53,3 @@ You can edit the alarm for an instance from the **Instances** screen.
 1. In the **Instances** table, for your chosen instance, choose the plus sign (numbered **2** in the preceding screenshot).
 
 1. In the **Manage CloudWatch alarms** screen, edit your alarm. For more information, see [Edit or delete a CloudWatch alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Manage-CloudWatch-Alarm.html#Edit-CloudWatch-Alarm) in the *Amazon CloudWatch User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

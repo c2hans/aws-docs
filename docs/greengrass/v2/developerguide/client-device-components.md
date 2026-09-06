@@ -20,7 +20,3 @@ Several AWS-provided components depend on specific minor versions of the Greengr
 | <a name="mqtt-broker-moquette-component-table-row"></a>[MQTT 3.1.1 broker (Moquette)](mqtt-broker-moquette-component.md) | Runs an MQTT 3.1.1 broker that handles messages between client devices and the core device. | Plugin | Linux, Windows | [Yes](https://github.com/aws-greengrass/aws-greengrass-moquette-mqtt) |
 | <a name="mqtt-broker-emqx-component-table-row"></a>[MQTT 5 broker (EMQX)](mqtt-broker-emqx-component.md) | Runs an MQTT 5 broker that handles messages between client devices and the core device. | Generic | Linux, Windows | No |
 | <a name="shadow-manager-component-table-row"></a>[Shadow manager](shadow-manager-component.md) | Enables interaction with shadows on the core device. It manages shadow document storage and also the synchronization of local shadow states with the AWS IoT Device Shadow service. | Plugin | Linux, Windows | [Yes](https://github.com/aws-greengrass/aws-greengrass-shadow-manager) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

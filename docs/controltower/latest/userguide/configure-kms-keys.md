@@ -27,6 +27,7 @@ You may see an error banner if the key does not meet these requirements. In that
 +  **`YOUR-MANAGEMENT-ACCOUNT-ID`** – the ID of the management account in which AWS Control Tower will be set up.
 +  **`YOUR-HOME-REGION`** – the home Region that you will select when setting up AWS Control Tower.
 +  **`YOUR-KMS-KEY-ID`** – the KMS key ID that will be used with the policy.
++  **`PARTITION`** – the partition of the AWS Region where you set up AWS Control Tower, such as `aws`, `aws-us-gov`, `aws-cn`, or `aws-eusc`.
 
 **To update the KMS key policy**
 
@@ -53,7 +54,7 @@ You may see an error banner if the key does not meet these requirements. In that
            "kms:Decrypt",
            "kms:GenerateDataKey"
        ],
-       "Resource": "arn:aws:kms:{{YOUR-HOME-REGION}}:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:key/{{YOUR-KMS-KEY-ID}}"
+       "Resource": "arn:{{PARTITION}}:kms:{{YOUR-HOME-REGION}}:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:key/{{YOUR-KMS-KEY-ID}}"
    }
    ```
 
@@ -70,13 +71,13 @@ You may see an error banner if the key does not meet these requirements. In that
            "kms:GenerateDataKey*",
            "kms:Decrypt"
        ],
-       "Resource": "arn:aws:kms:{{YOUR-HOME-REGION}}:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:key/{{YOUR-KMS-KEY-ID}}",
+       "Resource": "arn:{{PARTITION}}:kms:{{YOUR-HOME-REGION}}:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:key/{{YOUR-KMS-KEY-ID}}",
        "Condition": {
            "StringEquals": {
-               "aws:SourceArn": "arn:aws:cloudtrail:{{YOUR-HOME-REGION}}:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:trail/aws-controltower-BaselineCloudTrail"
+               "aws:SourceArn": "arn:{{PARTITION}}:cloudtrail:{{YOUR-HOME-REGION}}:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:trail/aws-controltower-BaselineCloudTrail"
            },
            "StringLike": {
-               "kms:EncryptionContext:aws:cloudtrail:arn": "arn:aws:cloudtrail:*:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:trail/*"
+               "kms:EncryptionContext:aws:cloudtrail:arn": "arn:{{PARTITION}}:cloudtrail:*:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:trail/*"
            }
        }
    }
@@ -106,7 +107,7 @@ You may see an error banner if the key does not meet these requirements. In that
                 "kms:Decrypt",
                 "kms:GenerateDataKey"
             ],
-            "Resource": "arn:PARTITION:kms:{{YOUR-HOME-REGION}}:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:key/{{YOUR-KMS-KEY-ID}}"
+            "Resource": "arn:{{PARTITION}}:kms:{{YOUR-HOME-REGION}}:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:key/{{YOUR-KMS-KEY-ID}}"
         },
         {
             "Sid": "Allow CloudTrail to use KMS for encryption",
@@ -118,13 +119,13 @@ You may see an error banner if the key does not meet these requirements. In that
                 "kms:GenerateDataKey*",
                 "kms:Decrypt"
               ],
-            "Resource": "arn:PARTITION:kms:{{YOUR-HOME-REGION}}:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:key/{{YOUR-KMS-KEY-ID}}",
+            "Resource": "arn:{{PARTITION}}:kms:{{YOUR-HOME-REGION}}:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:key/{{YOUR-KMS-KEY-ID}}",
             "Condition": {
                 "StringEquals": {
-                    "aws:SourceArn": "arn:PARTITION:cloudtrail:{{YOUR-HOME-REGION}}:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:trail/aws-controltower-BaselineCloudTrail"
+                    "aws:SourceArn": "arn:{{PARTITION}}:cloudtrail:{{YOUR-HOME-REGION}}:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:trail/aws-controltower-BaselineCloudTrail"
                 },
                 "StringLike": {
-                    "kms:EncryptionContext:aws:cloudtrail:arn": "arn:PARTITION:cloudtrail:*:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:trail/*"
+                    "kms:EncryptionContext:aws:cloudtrail:arn": "arn:{{PARTITION}}:cloudtrail:*:{{YOUR-MANAGEMENT-ACCOUNT-ID}}:trail/*"
                 }
             }
         }
@@ -144,7 +145,3 @@ The AWS Key Management Service (AWS KMS) allows you to create multi-Region KMS k
 For more information about AWS KMS, see [ the AWS KMS Developer Guide.](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 
 Note that customer data in AWS Control Tower is encrypted at rest, by default, using SSE-S3.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

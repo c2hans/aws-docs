@@ -21,7 +21,3 @@ For hands-on practice with common IAM tasks, see [IAM tutorials](tutorials.md). 
 After you set up your account, plan how people and workloads access it. For more information, see [Plan access to your AWS account](gs-identities.md).
 
 Then use [Prepare for least-privilege permissions](getting-started-reduce-permissions.md) to follow the principle of least privilege.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

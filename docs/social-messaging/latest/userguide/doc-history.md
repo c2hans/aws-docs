@@ -24,7 +24,3 @@ The following table describes the documentation releases for AWS End User Messag
 | [Add a message and event destination](#doc-history) | Added support for Connect Customer as an event destination. For more information, see [Add a message and event destination](https://docs.aws.amazon.com/social-messaging/latest/userguide/managing-event-destinations-add.html).  | December 1, 2024 |
 | [AWS PrivateLink](#doc-history) | Added support for AWS PrivateLink. For more information, see [AWS PrivateLink](https://docs.aws.amazon.com/social-messaging/latest/userguide/vpc-interface-endpoints.html).  | October 22, 2024 |
 | [Initial release](#doc-history) | Initial release of the AWS End User Messaging Social User Guide | October 10, 2024 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

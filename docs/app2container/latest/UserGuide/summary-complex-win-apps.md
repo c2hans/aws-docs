@@ -250,7 +250,3 @@ Sign in to the AWS Management Console and open the CloudFormation console at [ht
 In the console, you can see stacks that are being created, as well as existing stacks. For more information, see [Viewing CloudFormation stack data and resources on the AWS Management Console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-view-stack-data-resources.html) in the *AWS CloudFormation User Guide*.
 Use one of these CloudFormation commands in the AWS CLI: **list-stacks** or **describe-stacks**. For more information, see **Available Commands** in the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/index.html#cli-aws-cloudformation).
 Use one of these CloudFormation API commands: **ListStacks** or **DescribeStacks**. For more information, see [Actions](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/) in the *AWS CloudFormation API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App2Container. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app2container` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

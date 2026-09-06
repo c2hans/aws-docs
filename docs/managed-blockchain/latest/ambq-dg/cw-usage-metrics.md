@@ -24,7 +24,3 @@ AMB Query publishes the following API metrics in the `AWS/Usage` namespace, with
 | Type | The type of the entity being reported. `API` will always be the value for this dimension. |
 | Resource | The type of resources being reported. The *name* of the [AMB Query API operation](https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIReference/API_Operations.html) used will be the value for this dimension. |
 | Class | The class of the resource being reported. `None` will always be the value for this dimension. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

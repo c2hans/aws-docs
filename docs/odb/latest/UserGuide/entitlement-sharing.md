@@ -36,7 +36,3 @@ When sharing Oracle Database@AWS entitlements, keep the following limitations in
 + A buyer account cannot share entitlements with another buyer account
 + Recipient accounts must initialize the Oracle Database@AWS service before they can use the shared entitlement
 + Entitlement grant operations can only be performed from the US East (N. Virginia) Region
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

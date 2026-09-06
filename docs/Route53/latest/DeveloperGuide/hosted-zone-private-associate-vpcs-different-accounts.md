@@ -26,7 +26,3 @@ If you want to associate a VPC that you created with one AWS account with a priv
 The `ListHostedZonesByVPC` returns the hosted zones given a VPC and `GetHostedZone` API returns the VPCs associated to the hosted zone. These APIs only consider the hosted zone to VPC association that are created by `AssociateVPCWithHostedZone` API or when the private hosted zone is created. If you want a complete list of hosted zone associations to a VPC, also call [ListProfileResourceAssociations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_ListProfileResourceAssociations.html).
 **Note**
 For the maximum number of authorizations that you can create, see [Quotas on entities](DNSLimitations.md#limits-api-entities).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

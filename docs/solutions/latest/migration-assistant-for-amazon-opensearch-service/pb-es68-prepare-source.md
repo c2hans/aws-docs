@@ -64,7 +64,3 @@ Migration Assistant reads the source data from a snapshot in Amazon S3, so the s
 
 **Note**
 You can let the workflow create and monitor the snapshot by configuring `sourceClusters.<source>.snapshotInfo.snapshots.<snapshot>.config.createSnapshotConfig`. Register `migration-repo` yourself when you want to control the repository name, base path, or bucket explicitly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

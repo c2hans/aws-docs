@@ -18,13 +18,13 @@ You can attach `AmazonMQFullAccess` to your users, groups, and roles.
 <a name="AmazonMQFullAccess-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: November 28, 2017, 15:28 UTC
-+ **Edited time:** November 04, 2020, 16:34 UTC
++ **Edited time:** September 03, 2026, 22:47 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AmazonMQFullAccess`
 
 ## Policy version
 <a name="AmazonMQFullAccess-version"></a>
 
-**Policy version:** v5 (default)
+**Policy version:** v6 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -67,12 +67,28 @@ The policy's default version is the version that defines the permissions for the
       ]
     },
     {
-      "Action" : "iam:CreateServiceLinkedRole",
       "Effect" : "Allow",
-      "Resource" : "*",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/mq.amazonaws.com/AWSServiceRoleForAmazonMQ",
       "Condition" : {
         "StringLike" : {
           "iam:AWSServiceName" : "mq.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid" : "CloudFormationTagOnCreate",
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
+      ],
+      "Resource" : "*",
+      "Condition" : {
+        "StringEquals" : {
+          "cloudformation:CreateAction" : [
+            "CreateStack"
+          ]
         }
       }
     }
@@ -86,7 +102,3 @@ The policy's default version is the version that defines the permissions for the
 + [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
 + [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
 + [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Policy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-managed-policy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -172,7 +172,3 @@ Some of the stories in this pattern include AWS CDK and AWS CLI command examples
 + [Gaining operational insights with AIOps using Amazon DevOps Guru](https://aws.amazon.com/blogs/devops/gaining-operational-insights-with-aiops-using-amazon-devops-guru/)
 + [Easily configure Amazon DevOps Guru across multiple accounts and Regions using AWS CloudFormation StackSets](https://aws.amazon.com/blogs/devops/configure-devops-guru-multiple-accounts-regions-using-cfn-stacksets/)
 + [DevOps Guru Workshop](https://aiops-using-devops-guru.workshop.aws/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

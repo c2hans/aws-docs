@@ -21,7 +21,3 @@ Use the following topics to learn how to secure your Amazon Textract resources.
 + [Infrastructure Security in Amazon Textract](infrastructure-security.md)
 + [Configuration and Vulnerability Analysis in Amazon Textract](vulnerability-analysis-and-management.md)
 + [Amazon Textract and interface VPC endpoints (AWS PrivateLink)](vpc-interface-endpoints.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

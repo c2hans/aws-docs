@@ -46,7 +46,3 @@ You can define data filters in AWS Lake Formation to control your Redshift Spect
 After the table is defined in Amazon Redshift, you can query the Lake Formation table and access only the rows and columns that are allowed by the data filter.
 
 For a detailed guide on how to set up row-level and cell-level security in Lake Formation, and then query using Redshift Spectrum, see [Use Amazon Redshift Spectrum with row-level and cell-level security policies defined in AWS Lake Formation](https://aws.amazon.com/blogs/big-data/use-amazon-redshift-spectrum-with-row-level-and-cell-level-security-policies-defined-in-aws-lake-formation/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

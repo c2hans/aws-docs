@@ -82,7 +82,3 @@ FSx for OpenZFS provides additional dimensions to further refine the metrics lis
 | `DataType` | This dimension filters the metrics that you requested to a specific type of stored data. Metrics with `DataType` set to `Snapshot` report information about the snapshots within the volume. Metrics without a `DataType` dimension report aggregated information from the volume, which includes any child volumes and snapshots within the volume.  |
 
 FSx for OpenZFS metrics use the `FSx` namespace and provide metrics for the dimensions that are listed in the table above.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

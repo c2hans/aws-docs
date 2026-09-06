@@ -14,7 +14,3 @@ This section describes how to manage users that you've already added to the AWS 
 + [Change and Delete Users](config-wrkr-sm-cg-users-candd.md)
 + [Create New User Roles](config-wrkr-sm-cg-users-create.md)
 + [Manage Global Access Features](config-wrkr-sm-cg-users-manage.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Statmux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-statmux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

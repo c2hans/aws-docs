@@ -42,7 +42,3 @@ Perform the following steps on the primary Conductor Live node.
 1. If an Elemental Live node has SDI cards, you must import the devices so that Conductor Live recognizes them. (You [configured these devices](conductor-live-config-sdi-dev.md) when you configured each worker for the network.)
 
    Choose the down arrow beside the node and select **Import Devices**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

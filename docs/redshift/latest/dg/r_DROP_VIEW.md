@@ -51,7 +51,7 @@ The following example drops the view called *event*:
 drop view event;
 ```
 
-To remove a view that has dependencies, use the CASCADE option. For example, say we start with a table called EVENT. We then create the eventview view of the EVENT table, using the CREATE VIEW command, as shown in the following example:
+To remove a view that has dependencies, use the CASCADE option. For example, suppose you start with a table called EVENT. You then create the eventview view of the EVENT table by using the CREATE VIEW command, as shown in the following example:
 
 ```
 create view eventview as
@@ -59,7 +59,7 @@ select dateid, eventname, catid
 from event where catid = 1;
 ```
 
-Now, we create a second view called *myeventview*, that is based on the first view *eventview*:
+Now, you create a second view called *myeventview* that is based on the first view *eventview*:
 
 ```
 create view myeventview as
@@ -98,7 +98,3 @@ The following example either drops the *eventview* view if it exists, or does no
 ```
 drop view if exists eventview;
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

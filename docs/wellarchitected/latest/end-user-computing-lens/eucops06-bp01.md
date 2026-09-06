@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  AWS CloudFormation templates can be used to deploy new AWS services such as WorkSpaces and WorkSpaces Applications to reduce the likelihood of human error and reduce configuration drift.
 
  AWS Systems Manager Runbooks can be used to automate some aspects of WorkSpaces deployment. For more detail, see [SSM Runbooks for Amazon WorkSpaces](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-ref-wsp.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -808,7 +808,3 @@ You can remove an image set from the primary collection with the `DeleteImageSet
              id a8d19e7875e1532d9b5652f6b25e12c9 --image-set-
              id 103785414bc2c89330f7ce51bbd13f7a
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

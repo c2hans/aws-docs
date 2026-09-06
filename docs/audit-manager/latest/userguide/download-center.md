@@ -83,7 +83,3 @@ If you want to delete an assessment report or a CSV export from your S3 destinat
 + [ Troubleshooting CSV export issues](https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-finder-issues.html#csv-exports)
 + [Downloading an object from Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/download-objects.html)
 + [Deleting Amazon S3 objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/DeletingObjects.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

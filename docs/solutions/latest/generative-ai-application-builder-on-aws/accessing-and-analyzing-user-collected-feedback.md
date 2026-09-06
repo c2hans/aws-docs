@@ -172,7 +172,3 @@ You can also build additional widgets in this Dashboard or create Amazon Quick S
 +  **Create separate analysis for each use case** to identify model-specific improvement opportunities
 +  **Establish feedback thresholds** that trigger alerts when negative feedback exceeds acceptable levels
 +  **Export critical insights** periodically for sharing with stakeholders and model improvement teams
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Generative AI Application Builder on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

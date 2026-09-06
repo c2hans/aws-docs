@@ -141,7 +141,3 @@ You must meet the following prerequisites.
 For more information, see [Using SAP Credential Store](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/credential-store.html).
 
 The SAP Credential Store service runs in SAP BTP outside of the ABAP BTP system. See [SAP Credential Store](https://help.sap.com/docs/credential-store) for more details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for SAP ABAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-sapabap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

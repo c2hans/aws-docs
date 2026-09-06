@@ -30,7 +30,3 @@ The following example shows how the Spot price per unit hour calculation works w
 | c5.12xlarge  | $0.779 | 12 | $0.065 |
 | c5.18xlarge  | $1.207 | 18 | $0.067 |
 | c5.24xlarge | $1.555 | 24 | $0.065 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

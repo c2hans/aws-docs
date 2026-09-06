@@ -210,7 +210,3 @@ The following is an example output of the `kubectl -n poc-efs-eks-fargate get pv
 NAME          STATUS   VOLUME       CAPACITY   ACCESS MODES   STORAGECLASS   AGE
 poc-app-pvc   Bound    poc-app-pv   1Mi        RWX            efs-sc         4m34s
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

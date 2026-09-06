@@ -49,7 +49,3 @@ A static input is always associated with the same source. A dynamic input can be
 1. Decide whether each set of file sources becomes a static file input or a dynamic file input. Follow these rules:
    + Any set that contains more than one file source becomes one dynamic input.
    + Any set that contains only one file source can become a static input. However, if you think you might later use other file sources from that location (for example, from that Amazon S3 bucket), you might want to treat the set as a dynamic input, in order to not exceed the [limit for file inputs](eml-limitations-and-rules.md#limits-inputs).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

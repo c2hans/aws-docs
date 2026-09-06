@@ -121,7 +121,3 @@ The following best practices are general guidelines and don't represent a comple
 + **Monitor with Amazon CloudWatch.** Use Amazon CloudWatch metrics and alarms to monitor the status and performance of your benchmark and recommendation jobs.
 + **Review IAM Access Analyzer findings.** Use IAM Access Analyzer to identify IAM policies that grant overly broad access to your SageMaker AI resources.
 + **Enable Amazon S3 access logging.** Enable server access logging on Amazon S3 buckets used for model artifacts and benchmark results to track access patterns.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

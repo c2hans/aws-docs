@@ -16,141 +16,141 @@ Below is the IAM policy needed to create, update, or delete instances through th
 
 ```
 {
-    "Version": "2012-10-17"		 	 	 ,
-    "Statement": [
-        {
-            "Action": "scn:*",
-            "Resource": "*",
-            "Effect": "Allow"
-        },
-        {
-            "Action": [
-                "s3:GetObject",
-                "s3:PutObject",
-                "s3:ListBucket",
-                "s3:CreateBucket",
-                "s3:PutBucketVersioning",
-                "s3:PutBucketObjectLockConfiguration",
-                "s3:PutEncryptionConfiguration",
-                "s3:PutBucketPolicy",
-                "s3:PutLifecycleConfiguration",
-                "s3:PutBucketPublicAccessBlock",
-                "s3:DeleteObject",
-                "s3:ListAllMyBuckets",
-                "s3:PutBucketOwnershipControls",
-                "s3:PutBucketNotification",
-                "s3:PutAccountPublicAccessBlock",
-                "s3:PutBucketLogging",
-                "s3:PutBucketTagging"
-            ],
-            "Resource": "arn:aws:s3:::aws-supply-chain-*",
-            "Effect": "Allow"
-        },
-        {
-            "Action": [
-                "cloudtrail:CreateTrail",
-                "cloudtrail:PutEventSelectors",
-                "cloudtrail:GetEventSelectors",
-                "cloudtrail:StartLogging"
-            ],
-            "Resource": "*",
-            "Effect": "Allow"
-        },
-        {
-            "Action": [
-                "events:DescribeRule",
-                "events:PutRule",
-                "events:PutTargets"
-            ],
-            "Resource": "*",
-            "Effect": "Allow"
-        },
-        {
-            "Action": [
-                "cloudwatch:PutMetricData",
-                "cloudwatch:Describe*",
-                "cloudwatch:Get*",
-                "cloudwatch:List*"
-            ],
-            "Resource": "*",
-            "Effect": "Allow"
-        },
-        {
-            "Action": [
-                "organizations:CreateOrganization",
-                "organizations:DescribeAccount",
-                "organizations:DescribeOrganization",
-                "organizations:EnableAWSServiceAccess",
-                "organizations:ListDelegatedAdministrators"
-            ],
-            "Resource": "*",
-            "Effect": "Allow"
-        },
-        {
-            "Action": [
-                "kms:ListAliases"
-            ],
-            "Resource": "*",
-            "Effect": "Allow"
-        },
-        {
-            "Action": [
-                "iam:CreateRole",
-                "iam:CreatePolicy",
-                "iam:GetRole",
-                "iam:PutRolePolicy",
-                "iam:AttachRolePolicy",
-                "iam:CreateServiceLinkedRole"
-            ],
-            "Resource": "*",
-            "Effect": "Allow"
-        },
-        {
-            "Action": [
-                "sso:AssociateDirectory",
-                "sso:AssociateProfile",
-                "sso:CreateApplication",
-                "sso:CreateApplicationAssignment",
-                "sso:CreateInstance",
-                "sso:CreateManagedApplicationInstance",
-                "sso:DeleteApplication",
-                "sso:DeleteApplicationAssignment",
-                "sso:DeleteManagedApplicationInstance",
-                "sso:DescribeApplication",
-                "sso:DescribeDirectories",
-                "sso:DescribeInstance",
-                "sso:DescribeRegisteredRegions",
-                "sso:DescribeTrusts",
-                "sso:DisassociateProfile",
-                "sso:GetManagedApplicationInstance",
-                "sso:GetPeregrineStatus",
-                "sso:GetProfile",
-                "sso:GetSharedSsoConfiguration",
-                "sso:GetSsoConfiguration",
-                "sso:GetSSOStatus",
-                "sso:ListApplicationAssignments",
-                "sso:ListApplicationTemplates",
-                "sso:ListDirectoryAssociations",
-                "sso:ListInstances",
-                "sso:ListProfileAssociations",
-                "sso:ListProfiles",
-                "sso:PutApplicationAuthenticationMethod",
-                "sso:PutApplicationGrant",
-                "sso:RegisterRegion",
-                "sso:SearchDirectoryGroups",
-                "sso:SearchDirectoryUsers",
-                "sso:SearchGroups",
-                "sso:SearchUsers",
-                "sso:StartPeregrine",
-                "sso:StartSSO",
-                "sso:UpdateSsoConfiguration",
-                "sso-directory:SearchUsers"
-            ],
-            "Resource": "*",
-            "Effect": "Allow"
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Action": "scn:*",
+                    "Resource": "*",
+                    "Effect": "Allow"
+                },
+                {
+                    "Action": [
+                        "s3:GetObject",
+                        "s3:PutObject",
+                        "s3:ListBucket",
+                        "s3:CreateBucket",
+                        "s3:PutBucketVersioning",
+                        "s3:PutBucketObjectLockConfiguration",
+                        "s3:PutEncryptionConfiguration",
+                        "s3:PutBucketPolicy",
+                        "s3:PutLifecycleConfiguration",
+                        "s3:PutBucketPublicAccessBlock",
+                        "s3:DeleteObject",
+                        "s3:ListAllMyBuckets",
+                        "s3:PutBucketOwnershipControls",
+                        "s3:PutBucketNotification",
+                        "s3:PutAccountPublicAccessBlock",
+                        "s3:PutBucketLogging",
+                        "s3:PutBucketTagging"
+                    ],
+                    "Resource": "arn:aws:s3:::aws-supply-chain-*",
+                    "Effect": "Allow"
+                },
+                {
+                    "Action": [
+                        "cloudtrail:CreateTrail",
+                        "cloudtrail:PutEventSelectors",
+                        "cloudtrail:GetEventSelectors",
+                        "cloudtrail:StartLogging"
+                    ],
+                    "Resource": "*",
+                    "Effect": "Allow"
+                },
+                {
+                    "Action": [
+                        "events:DescribeRule",
+                        "events:PutRule",
+                        "events:PutTargets"
+                    ],
+                    "Resource": "*",
+                    "Effect": "Allow"
+                },
+                {
+                    "Action": [
+                        "cloudwatch:PutMetricData",
+                        "cloudwatch:Describe*",
+                        "cloudwatch:Get*",
+                        "cloudwatch:List*"
+                    ],
+                    "Resource": "*",
+                    "Effect": "Allow"
+                },
+                {
+                    "Action": [
+                        "organizations:CreateOrganization",
+                        "organizations:DescribeAccount",
+                        "organizations:DescribeOrganization",
+                        "organizations:EnableAWSServiceAccess",
+                        "organizations:ListDelegatedAdministrators"
+                    ],
+                    "Resource": "*",
+                    "Effect": "Allow"
+                },
+                {
+                    "Action": [
+                        "kms:ListAliases"
+                    ],
+                    "Resource": "*",
+                    "Effect": "Allow"
+                },
+                {
+                    "Action": [
+                        "iam:CreateRole",
+                        "iam:CreatePolicy",
+                        "iam:GetRole",
+                        "iam:PutRolePolicy",
+                        "iam:AttachRolePolicy",
+                        "iam:CreateServiceLinkedRole"
+                    ],
+                    "Resource": "*",
+                    "Effect": "Allow"
+                },
+                {
+                    "Action": [
+                        "sso:AssociateDirectory",
+                        "sso:AssociateProfile",
+                        "sso:CreateApplication",
+                        "sso:CreateApplicationAssignment",
+                        "sso:CreateInstance",
+                        "sso:CreateManagedApplicationInstance",
+                        "sso:DeleteApplication",
+                        "sso:DeleteApplicationAssignment",
+                        "sso:DeleteManagedApplicationInstance",
+                        "sso:DescribeApplication",
+                        "sso:DescribeDirectories",
+                        "sso:DescribeInstance",
+                        "sso:DescribeRegisteredRegions",
+                        "sso:DescribeTrusts",
+                        "sso:DisassociateProfile",
+                        "sso:GetManagedApplicationInstance",
+                        "sso:GetPeregrineStatus",
+                        "sso:GetProfile",
+                        "sso:GetSharedSsoConfiguration",
+                        "sso:GetSsoConfiguration",
+                        "sso:GetSSOStatus",
+                        "sso:ListApplicationAssignments",
+                        "sso:ListApplicationTemplates",
+                        "sso:ListDirectoryAssociations",
+                        "sso:ListInstances",
+                        "sso:ListProfileAssociations",
+                        "sso:ListProfiles",
+                        "sso:PutApplicationAuthenticationMethod",
+                        "sso:PutApplicationGrant",
+                        "sso:RegisterRegion",
+                        "sso:SearchDirectoryGroups",
+                        "sso:SearchDirectoryUsers",
+                        "sso:SearchGroups",
+                        "sso:SearchUsers",
+                        "sso:StartPeregrine",
+                        "sso:StartSSO",
+                        "sso:UpdateSsoConfiguration",
+                        "sso-directory:SearchUsers"
+                    ],
+                    "Resource": "*",
+                    "Effect": "Allow"
+                }
+            ]
         }
-    ]
-}
 ```
 
 ## Policy best practices
@@ -164,7 +164,3 @@ Identity-based policies determine whether someone can create, access, or delete 
 + **Require multi-factor authentication (MFA)** – If you have a scenario that requires IAM users or a root user in your AWS account, turn on MFA for additional security. To require MFA when API operations are called, add MFA conditions to your policies. For more information, see [Secure API access with MFA](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_configure-api-require.html) in the *IAM User Guide*.
 
 For more information about best practices in IAM, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) in the *IAM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ The manifest is embedded in the MP4 file using a standard C2PA UUID box, placed 
 
 **Note**
 If your input file already contains C2PA manifests, MediaConvert does not preserve them in the output. Instead, it generates a new manifest.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

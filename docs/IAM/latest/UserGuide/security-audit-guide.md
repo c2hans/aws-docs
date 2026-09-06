@@ -141,7 +141,3 @@ Policies are powerful and subtle, so it's important to study and understand the 
 + Examine policy names to make sure they reflect the policy's function. For example, although a policy might have a name that includes "read only," the policy might actually grant write or change permissions.
 
 For more information about planning for your security audit, see [Best Practices for Security, Identity, and Compliance](https://aws.amazon.com/architecture/security-identity-compliance/) in the *AWS Architecture Center*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

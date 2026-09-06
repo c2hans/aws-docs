@@ -117,7 +117,3 @@ If your domain uses [fine-grained access control](https://docs.aws.amazon.com/op
 The following image shows how to map the pipeline role to a backend role:
 
 ![Backend roles section showing an AWS IAM role ARN for a pipeline role with a Remove option.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ingestion-fgac.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

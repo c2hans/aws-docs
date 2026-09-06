@@ -14,7 +14,3 @@ For security best practices when using Amazon EFS, see the [AWS documentation](h
 If there is no storage at the source for Oracle database dump files, you can do the following:
 + Add a network attached storage (NAS) device for taking Oracle database dump files. For more information, see the [Oracle documentation](https://docs.oracle.com/cd/E11882_01/install.112/e48357/app_nas.htm#SSDBI1365).
 + Mount an Amazon EFS file system on premises and take Oracle database dump files by using AWS Direct Connect and AWS Virtual Private Network (Site-to-Site VPN). For more information, see the [AWS documentation](https://docs.aws.amazon.com/efs/latest/ug/efs-onpremises.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -536,7 +536,3 @@ This control checks whether an Elastic Load Balancing target group uses an encry
 <a name="elb-22-remediation"></a>
 
 To use an encrypted protocol, you must create a new target group with HTTPS, TLS, or QUIC protocol. Target group protocol cannot be modified after creation. To create Application Load Balancer target group, see [Create a target group for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-target-group.html) in the *Elastic Load Balancing User Guide*. To create Network Load Balancer target group, see [Create a target group for your Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/create-target-group.html) in the *Elastic Load Balancing User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

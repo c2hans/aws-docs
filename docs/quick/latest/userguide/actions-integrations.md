@@ -319,7 +319,7 @@ Before creating automations with REST API integration, ensure you have:
 + **Connected Integration to Automation Group**
   + Link your configured REST API integration to your automation group
   + Verify integration appears in available actions
-  + Step-by-step guide: [AWS service action connectors](builtin-services-integration.md)
+  + Step-by-step guide: [AWS service connectors](builtin-services-integration.md)
 + **Authentication Configured**
   + OAuth 2.0 credentials obtained from your API provider
 
@@ -473,7 +473,3 @@ REST API actions must be added through the Actions Panel; they are not available
   }
   ```
 + **Output Variable:** `ticketResponse`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

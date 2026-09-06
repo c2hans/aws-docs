@@ -127,7 +127,3 @@ spec:
 ```
 
 For more details on the operator and the usage of ServiceMonitor, checkout the official [operator](https://github.com/prometheus-operator/kube-prometheus) documentation. Note that Prometheus does support dynamic target discovery using many [service discovery](https://prometheus.io/blog/2015/06/01/advanced-service-discovery/) options.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

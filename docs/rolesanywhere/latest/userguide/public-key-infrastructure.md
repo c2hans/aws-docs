@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/public-ke
 <a name="key-management"></a>
 
 PKI uses a pair of keys to perform cryptographic operations such as encryption and generating digital signatures. One of the keys is public and is typically made available in an X.509 certificate. The other key is private and should be stored securely. Take care to ensure that your private keys are not shared.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

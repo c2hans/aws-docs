@@ -60,7 +60,3 @@ Here are a few important considerations when increasing your metadata performanc
 Increase the number of Metadata IOPS when you need to run workloads that require higher levels of metadata performance than is provisioned by default on your file system. You can monitor your metadata performance on the AWS Management Console by using the `Metadata IOPS Utilization` graph which provides the percentage of provisioned metadata server performance you are consuming on your file system.
 
 You can also monitor your metadata performance using more granular CloudWatch metrics. CloudWatch metrics include `DiskReadOperations` and `DiskWriteOperations`, which provide the volume of metadata server operations that require disk IO, as well as granular metrics for metadata operations including file and directory creation, stats, reads, and deletes. For more information, see [FSx for Lustre metadata metrics](fs-metrics.md#fs-metadata-metrics).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

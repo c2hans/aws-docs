@@ -19,7 +19,3 @@ Athena natively supports the AWS Glue Data Catalog. The AWS Glue Data Catalog is
 + [Use Amazon DataZone in Athena](datazone-using.md)
 + [Use an external Hive metastore](connect-to-data-source-hive.md)
 + [Manage your data sources](data-sources-managing.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

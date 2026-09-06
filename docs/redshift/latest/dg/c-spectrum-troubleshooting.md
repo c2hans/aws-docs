@@ -193,7 +193,3 @@ Following are the fields that must be filled when retrieving a partition from th
 You can query [SVV\_EXTERNAL\_PARTITIONS](r_SVV_EXTERNAL_PARTITIONS.md) to find existing partitions and see details on their fields.
 
 For a full list of AWS Glue Data Catalog partition fields, see [ Partition](https://docs.aws.amazon.com/glue/latest/webapi/API_Partition.html) in the *AWS Glue Web API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

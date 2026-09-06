@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Typically, the gameplay is conducted over a mix of protocols (like game servers using faster UDP-based messaging with matchmaking, authentication, and other client-server traffic using HTTPS).
 +  Game servers employ algorithms and design to minimize client-server traffic like transform streaming, deltas, and data compression.
 +  Game servers are frequent targets for malicious activities and should be protected with a DDoS protection solution like AWS Shield Advanced.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

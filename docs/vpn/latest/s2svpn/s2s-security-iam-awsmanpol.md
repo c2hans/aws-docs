@@ -26,7 +26,3 @@ View details about updates to AWS managed policies for Site-to-Site VPN since th
 | Change | Description | Date |
 | --- | --- | --- |
 | [AWSVPCS2SVpnServiceRolePolicy](#security-iam-AWSVPCS2SVpnServiceRolePolicy) - Updated policy.  | New permissions added to the policy allowing Site-to-Site VPN to manage the VPN connection's AWS Secrets Manager s2svpn-managed secret. | May 14, 2025 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

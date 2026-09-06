@@ -103,7 +103,3 @@ Create an RDB cluster with a single-AZ mode by following the steps in [this](cre
  You should be able to successfully connect to port *5005*.
 
 Repeat the steps for [starting a q process](#step6c-start-q) and [ testing connection](#step6e-test-connection) with port *5006*. You will fail to connect because only port *5005* is allowed in the in-bound rules of the security groups.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

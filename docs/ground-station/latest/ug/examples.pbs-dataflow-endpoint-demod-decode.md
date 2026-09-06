@@ -98,10 +98,25 @@ Resources:
           echo "Waiting for dataflow endpoint application to start"
           while netstat -lnt | awk '$4 ~ /:80$/ {exit 1}'; do sleep 10; done
 
+          OS_VERSION_ID=$([ -f /etc/os-release ] && . /etc/os-release && echo "${VERSION_ID}")
+          if [ "${OS_VERSION_ID}" = "2023" ]; then PYTHON_BIN="python3"; else PYTHON_BIN="python"; fi
+
           echo "Configuring dataflow endpoint application streams"
-          python "${GROUND_STATION_BIN_DIR}/configure_streams.py" --configFileName "${STREAM_CONFIG_PATH}"
-          sleep 2
-          python "${GROUND_STATION_BIN_DIR}/save_default_config.py"
+          streams_configured=false
+          for attempt in $(seq 1 6); do
+            if ${PYTHON_BIN} "${GROUND_STATION_BIN_DIR}/configure_streams.py" --configFileName "${STREAM_CONFIG_PATH}"; then
+              streams_configured=true
+              break
+            fi
+            echo "configure_streams attempt ${attempt} failed; retrying in 10s"
+            sleep 10
+          done
+          if [ "${streams_configured}" = "true" ]; then
+            sleep 2
+            ${PYTHON_BIN} "${GROUND_STATION_BIN_DIR}/save_default_config.py"
+          else
+            echo "ERROR: configure_streams failed after ${attempt} attempts; not saving a default config"
+          fi
 
           exit 0
 ```
@@ -478,7 +493,3 @@ The `AquaSnppJpss` template includes the following additional resources:
  **Where do I receive my data?**
 
  The dataflow endpoint group is set up to use the receiver instance network interface that part of the template creates. The receiver instance uses a dataflow endpoint application to receive the data stream from AWS Ground Station on the port defined by the dataflow endpoint. Once received, the data is available for consumption via UDP port 50000 on the loopback adapter of the receiver instance. For more information about setting up a dataflow endpoint group, see [ AWS::GroundStation::DataflowEndpointGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-groundstation-dataflowendpointgroup.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

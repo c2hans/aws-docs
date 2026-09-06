@@ -14,7 +14,3 @@ Following, you can find information about how to get started querying data on re
 + [Querying data on remote database managers](federated-query.md)
 + [Accessing data in other Amazon Redshift databases](datasharing.md)
 + [Training machine learning models with Amazon Redshift data](machine-learning.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

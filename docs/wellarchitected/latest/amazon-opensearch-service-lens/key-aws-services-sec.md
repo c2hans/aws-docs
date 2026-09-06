@@ -11,7 +11,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 +  [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html): Provides a record of all API calls made within your AWS account.
 +  [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html): A service that helps you respond to events in your AWS resources and applications.
 +  [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html): Provides a detailed view of your AWS resources and helps you ensure they are configured in compliance with your organization's security and compliance requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

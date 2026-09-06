@@ -59,7 +59,3 @@ void registerToEventBusForPubSub(final EventBus eb) {
 ```
 
  In this code snippet, the Redis client first subscribes to the Redis channel using `redis.connect()`. After successful subscription, data is sent to the verticle over the event bus. The verticle unwraps the data and sends it to the caching verticle to store the data in the L1-cache. This is a very fast and lightweight implementation and you can reuse existing infrastructure, because Redis is already being used for caching purposes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

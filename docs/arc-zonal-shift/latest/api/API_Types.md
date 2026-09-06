@@ -18,7 +18,3 @@ The following data types are supported:
 +  [PracticeRunConfiguration](API_PracticeRunConfiguration.md)
 +  [ZonalShiftInResource](API_ZonalShiftInResource.md)
 +  [ZonalShiftSummary](API_ZonalShiftSummary.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query arc-zonal-shift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

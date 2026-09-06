@@ -18,7 +18,3 @@ Following are requirements and considerations for enabling your users to use dra
 + This feature is not supported on Chromebooks.
 
 To get started with using drawing tablets during application streaming sessions, users connect their drawing tablet to their local computer with USB, share the device with WorkSpaces Applications if required for pressure sensitivity detection, and then use the WorkSpaces Applications client or a [supported web browser](drawing-tablet-support-web-access-admin.md) to start a WorkSpaces Applications streaming session.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -259,7 +259,3 @@ The following table lists and describes the updates made to the Amazon Chime IAM
 | `AmazonChimeVoiceConnectorServiceLinkedRolePolicy` – Update to an existing policy | Amazon Chime Voice Connector added new permissions to allow access to Amazon Kinesis Video Streams and send notification events to SNS and SQS. These permissions are required for Amazon Chime Voice Connectors to stream media to Amazon Kinesis Video Streams and provide streaming notifications. | December 20, 2021 |
 | Change to existing policy. [Creating IAM users or roles with the Chime SDK policy](https://docs.aws.amazon.com/chime/latest/dg/iam-users-roles.html). | Amazon Chime added new actions added to support expanded validation.<br />A number of actions were added to allow listing and tagging of attendees and meeting resources, and for starting and stopping meeting transcription. | September 23, 2021 |
 | Amazon Chime started tracking changes | Amazon Chime started tracking changes for its AWS managed policies. | September 23, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

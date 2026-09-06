@@ -47,7 +47,3 @@ The following sets of data types are synonyms:
 Regarding dates, times, and timestamps:
 + Implicit type conversion is not supported (that is, datetime values are mutually assignable only if the source and target of the assignment are both of type DATE, or both of type TIME, or both of type TIMESTAMP).
 + The Amazon Kinesis Data Analytics timezone is always UTC. The time functions, including the Amazon Kinesis Data Analytics extension CURRENT\_ROW\_TIMESTAMP, return time in UTC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

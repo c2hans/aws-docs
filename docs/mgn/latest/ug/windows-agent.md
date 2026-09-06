@@ -368,7 +368,3 @@ Note that the returned disks need be replicated from the beginning. Any disk siz
 ![Command prompt showing successful installation of AWS Replication Agent with disk replication details.](http://docs.aws.amazon.com/mgn/latest/ug/images/new-soureservers-windows7.png)
 
    You can review this process in real time on the **Source servers** page. [Learn more about the initial sync process](migration-dashboard.md#initiation).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

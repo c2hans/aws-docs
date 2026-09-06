@@ -49,6 +49,7 @@ In the **Voice provider** dropdown, choose the third-party text-to-speech provid
 
 1. Under **Secrets Manager ARN**, choose **Set manually** and enter the ARN of the provider secret.
    + The secret must be in the same AWS Region.
+   + The secret value must contain your provider API key. To use a specific provider Region, store the key as a JSON object. For more information about the secret value format and supported provider Regions, see [Endpoints and Regions for third-party speech providers](endpoints-regions-third-party-stt.md).
    + AWS Secrets Manager and KMS policies must permit retrieval and decryption. For more information, see [Managing secrets and resource policies](managing-secrets-resource-policies.md).
 
 1. Under **Language**, choose **Set manually** and choose a language that is supported by the provider voice.
@@ -73,7 +74,3 @@ In the **Voice provider** dropdown, choose the third-party text-to-speech provid
 + **Authentication errors**: Verify Secrets Manager and KMS permissions.
 + **Dynamic attributes**: Ensure runtime values resolve to valid provider parameters.
 + **High latency**: Validate provider region alignment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

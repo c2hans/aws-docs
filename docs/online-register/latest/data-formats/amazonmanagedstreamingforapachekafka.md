@@ -38,7 +38,3 @@ Amazon Managed Streaming for Apache Kafka provides the following APIs for data r
 | <a name="kafka-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/msk/1.0/apireference/tags-resourcearn.html#ListTagsForResource) | List tags of an MSK resource | Read |
 | <a name="kafka-ListTopics"></a>[ListTopics](https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn-topics.html) | List all Kafka topics for a specified MSK cluster | List |
 | <a name="kafka-ListVpcConnections"></a>[ListVpcConnections](https://docs.aws.amazon.com/msk/1.0/apireference/vpc-connections.html#ListVpcConnections) | List all MSK VPC connections that this account uses | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

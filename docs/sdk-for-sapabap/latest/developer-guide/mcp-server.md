@@ -83,7 +83,3 @@ Keep the following in mind when using the AWS SDK for SAP ABAP Knowledge MCP Ser
 + The quality and format of generated code may vary depending on your IDE's AI assistant capabilities.
 
 Separately from the AWS SDK for SAP ABAP Knowledge MCP Server described on this page, AWS also offers the [AWS Knowledge MCP Server](https://awslabs.github.io/mcp/servers/aws-documentation-mcp-server/), which provides broad AWS service information, architectural guidance, and troubleshooting across all AWS services. The two servers complement each other and are especially effective when used together.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for SAP ABAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-sapabap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,7 +10,3 @@ Cost considerations for the solutions described in this guide depend on various 
 + Megaport hosted connection to AWS – The price varies depending on product usage and capacity. Megaport Port, MVE, and MCR are available [directly from Megaport](https://www.megaport.com/integrations/amazon-web-services/) or can be procured through [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-amjqne7gnoh2e?sr=0-1&ref_=beagle&applicationId=AWSMPContessa).
 + Megaport SEC – This is available directly through [Megaport](https://docs.megaport.com/cloud/megaport/salesforce/).
 + Salesforce Hyperforce – This is available directly through [Salesforce](https://www.salesforce.com/platform/public-cloud-infrastructure/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

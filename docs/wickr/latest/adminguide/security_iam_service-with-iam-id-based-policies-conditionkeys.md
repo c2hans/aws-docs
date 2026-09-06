@@ -16,7 +16,3 @@ The `Condition` element specifies when statements execute based on defined crite
 To see a list of Wickr condition keys, see [Condition Keys for AWS Wickr](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awswickr.html#awswickr-policy-keys) in the *Service Authorization Reference*. To learn with which actions and resources you can use a condition key, see [Actions Defined by AWS Wickr](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awswickr.html#awswickr-actions-as-permissions).
 
 To view examples of Wickr identity-based policies, see [Identity-based policy examples for AWS Wickr](security_iam_id-based-policy-examples.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

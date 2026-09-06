@@ -11,7 +11,3 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/manag
 +  Graph engine version
 
  Neptune Analytics doesn't have a maintenance window for the graphs. It automatically performs maintenance operations which require the Neptune service to take your graph offline for a short time, normally on the order of 10s of seconds. Maintenance items require a resource to be offline during the maintenance period, however Neptune Analytics will make a best effort attempt to provide request queuing during this time. Required patching is automatically scheduled for patches related to security, instance reliability, engine upgrades, and other items as required. Such patching occurs infrequently, typically one to two times every month but may occur as needed. There are no actions required from you for this to take place.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

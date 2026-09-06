@@ -60,7 +60,3 @@ For the following services, service role policies will use the new prefix in pol
 To use the CloudFormation resources for connections, a new resource will be available. The existing resource will still be supported.
 + The new [AWS CloudFormation](http://aws.amazon.com/cloudformation/) resource is named AWS::CodeConnections::Connection. See [AWS::CodeConnections::Connection](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codeconnections-connection.html) in the CloudFormation User Guide.
 + The existing AWS::CodeStarConnections::Connection resource will still be supported. See [AWS::CodeStarConnections::Connection](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestarconnections-connection.html) in the CloudFormation User Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ Document as you build, but keep it practical. Focus on recording the *why *behin
 You're not building for perfect resilience; you're building for appropriate resilience. Every hour spent over-engineering resilience is an hour not spent on features that customers are asking for. Use AWS managed services as your foundation, add targeted resilience where it matters most, and create clear paths to scale up resilience as your business grows.
 
 The next chapter discusses how to validate these design choices without burning through engineering resources. For startups, testing should be a reasonable lift and a smart investment in your application's resilience.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

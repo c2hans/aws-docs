@@ -70,7 +70,3 @@ Using HTTP requests, the following *runtime* actions are accessible via endpoint
 | Maximum size (in GB) of all files in a DICOM import job | Each supported Region: 10 Gigabytes | No | The maximum size (in GB) of all files in a DICOM import job in the current AWS Region |
 | Maximum size (in GB) of each DICOM P10 file in a DICOM import job | Each supported Region: 10 Gigabytes | No | The maximum size (in GB) of each DICOM P10 file in the DICOM import job in the current AWS Region |
 | Maximum size limit (in MB) on ImageSetMetadata per Import, Copy, and UpdateImageSet | Each supported Region: 50 Megabytes |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/medical-imaging/quotas/L-AD2C6765)  | The maximum size limit (in MB) on ImageSetMetadata per Import, Copy, and UpdateImageSet in the current AWS Region |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

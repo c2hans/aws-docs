@@ -42,7 +42,3 @@ If you specify a key ID or ARN for `VolumeKmsKeyId`, your SageMaker AI execution
 
 **Note**
 If you specify an AWS KMS customer managed key when you create a labeling job in the console, that key is *only* used to encrypt your output data. It is not used to encrypt the storage volume attached to the ML compute instances used for automated data labeling.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

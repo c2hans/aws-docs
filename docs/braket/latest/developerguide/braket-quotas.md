@@ -118,7 +118,3 @@ If your hybrid job is unable to provision requested ML compute capacity, use ano
 + For QuEra's Aquila device, the maximum is 1,000 shots per task.
 + For IQM's Garnet and Emerald devices, the maximum is 20,000 shots per task.
 + For QPU devices, shots per task must be > 0.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

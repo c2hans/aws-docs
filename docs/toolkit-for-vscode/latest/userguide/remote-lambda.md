@@ -187,7 +187,3 @@ This process may take a few minutes.
 1. When prompted by VS Code, enter a stack name, then press the **Enter** key to continue.
 
 1. VS Code continues to update you with the status of your project, then notifies your when the process is complete and opens your new AWS SAM project as a VS Code workspace.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

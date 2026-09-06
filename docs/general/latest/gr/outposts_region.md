@@ -83,7 +83,3 @@ The following are the service endpoints and service quotas for this service.
 | --- | --- | --- | --- |
 | Outpost sites | Each supported Region: 100 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/outposts/quotas/L-3D389D34)  | The maximum number of Outpost sites that you can create in this account in the current region. An Outpost site is the customer-managed physical building where you power and attach your Outpost equipment to the network. |
 | Outposts per site | Each supported Region: 10 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/outposts/quotas/L-0B277C74)  | The maximum number of Outposts that you can create per site. AWS Outposts includes hardware and virtual resources known as Outposts. This quota limits your Outpost virtual resources. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

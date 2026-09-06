@@ -160,7 +160,3 @@ Minimal AMI
 | ` systemd-udev-250.7-1.amzn2022.0.6.aarch64` |
 | ` systemd-udev-250.7-1.amzn2022.0.6.x86_64` |
 | ` tzdata-2022c-1.amzn2022.0.1.noarch` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

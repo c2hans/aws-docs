@@ -188,7 +188,3 @@ Invite the users you've added to your Amazon Monitron project.
       Your email client opens a draft that contains an invitation to your Amazon Monitron project. It contains both a link to download the Amazon Monitron mobile app from the Google Play Store and a link to open the project.
 
    1. Email this message to the user.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

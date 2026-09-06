@@ -137,7 +137,3 @@ Using complex data types with the spark connector has the following limitations:
 + All nested struct field names and map keys must be lowercase. If querying for complex field names with uppercase letters, you can try omitting the schema and using the `from_json` spark function to convert the returned string locally as a workaround.
 + Any map fields used in read or write operations must have only `StringType` keys.
 + Only `CSV`, `CSV GZIP`, and `PARQUET `are supported tempformat values for writing complex types to Redshift. Attempting to use `AVRO `will throw an exception.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

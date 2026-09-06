@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/design-p
 
  For more details, refer to the following:
 +  AWS Documentation: [Architecture Guidance for Availability and Reliability of SAP on AWS including Failure Scenarios and Architecture Patterns ](https://docs.aws.amazon.com/sap/latest/general/architecture-guidance-of-sap-on-aws.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

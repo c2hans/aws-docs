@@ -19,7 +19,3 @@ AWS App Runner now supports automatic configuration for your Amazon Route 53 do
 You no longer have to copy and paste any information from the App Runner console to your Route 53 domain. With just a few clicks from the **Custom domains** tab on your service dashboard page, you can select from your account's available Amazon Route 53 domain names. Then App Runner automatically configures the Route 53 domain with the required certificate validation and DNS records to link to your App Runner web application.
 
 For more information, see [Managing custom domain names for an App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage-custom-domains.html) in the *AWS App Runner Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,7 +39,3 @@ If you want to try forwarding DNS queries for all domain names to your network, 
 + Set the `enableDnsHostnames` flag for the VPC to `false`
 + Create rules for the domain names that are listed in [Domain names that VPC Resolver creates autodefined system rules for](resolver-overview-forward-vpc-to-network-autodefined-rules.md)
 If you forward all domain names to your network, including the domain names that VPC Resolver excludes when you create a "." rule, some features might stop working.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

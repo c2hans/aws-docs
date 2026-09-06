@@ -67,7 +67,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/monitoring-river-leve
  From here, you can configure rules to implement any number of out-of-the-box AWS IoT actions to forward this data to the intended AWS service.
 
  For example, for a river level monitoring system, it might be beneficial for this data to be considered an input to a detector model in AWS IoT Events, so that the measurements can be interpreted and actioned in the context of predefined states. Alternatively, this data could populate a data lake in [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3), a time-series database in [Amazon Timestream](https://aws.amazon.com/timestream/), or a key-value table in [Amazon DynamoDB](https://aws.amazon.com/dynamodb/). All of this is possible through built-in integrations via an AWS IoT rule and action.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

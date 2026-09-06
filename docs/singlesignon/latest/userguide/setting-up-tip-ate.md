@@ -26,7 +26,3 @@ To set up trusted identity propagation with Athena, the Athena administrator mus
 1. Review [Considerations and limitations in using IAM Identity Center enabled Athena workgroups](https://docs.aws.amazon.com/athena/latest/ug/workgroups-identity-center.html#workgroups-identity-center-considerations-and-limitations).
 
 1. [Create an IAM Identity Center enabled Athena workgroup](https://docs.aws.amazon.com/athena/latest/ug/workgroups-identity-center.html#workgroups-identity-center-creating-an-identity-center-enabled-athena-workgroup).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

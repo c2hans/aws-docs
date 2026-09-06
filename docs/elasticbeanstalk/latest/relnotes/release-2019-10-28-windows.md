@@ -92,7 +92,3 @@ This release provides new Windows Server platform versions for AWS Elastic Beans
 |  ** Windows Server 2012 R2 with IIS 8.5 **  | 2019.10.09 | 3.15.846 | 4.9.3519 | 2.3.634.0 | 3.6 | 3.1.0 |
 |  ** Windows Server 2012 R2 Server Core with IIS 8.5 **  | 2019.10.09 | 3.15.846 | 4.9.3519 | 2.3.634.0 | 3.6 | 3.1.0 |
 |  ** Windows Server 2012 with IIS 8 **  | 2019.10.09 | 3.15.846 | 4.9.3519 | 2.3.634.0 | 3.6 | 3.1.0 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

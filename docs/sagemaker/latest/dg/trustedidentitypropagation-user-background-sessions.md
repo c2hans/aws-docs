@@ -67,7 +67,3 @@ The same behavior applies if background sessions are enabled at the IAM Identity
 <a name="user-background-session-runtime-considerations"></a>
 
 When an administrator sets `MaxRuntimeInSeconds` for long-running Training or Processing jobs that is lower than the user background session duration, SageMaker AI runs the job for the minimum of either `MaxRuntimeInSeconds` or user background session duration. For more information about `MaxRuntimeInSeconds`, see [CreateTrainingJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html#sagemaker-CreateTrainingJob-request-StoppingCondition). See [user background sessions in the IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-background-sessions.html) for information on how to set the runtime.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

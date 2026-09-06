@@ -183,7 +183,3 @@ Modifying an RDS Custom for SQL Server DB instance to use a new CEV is an offlin
 +
 **Important**
 If an AMI used by a CEV is deleted, any modifications that may require host replacement, for example, scale compute, will fail. The RDS Custom for SQL Server DB instance will then be placed outside of the RDS support perimeter. We recommend that you avoid deleting any AMI that's associated to a CEV.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

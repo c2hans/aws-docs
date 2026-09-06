@@ -14,7 +14,3 @@ The bots release notes provide details about the client versions that are suppor
 + [Bots 6.32 release](bots-release-notes-6.32.md)
 + [Bots 6.34 release](bots-release-notes-6.34.md)
 + [Bots 6.66 release](bots-release-notes-6.66.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

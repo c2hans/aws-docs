@@ -202,7 +202,3 @@ Just like Pod creation, it is imperative to understand what is the sequence of e
 1.  [TheEndpointSlice Controller](https://kubernetes.io/docs/concepts/overview/components/#kube-controller-manager) removes the endpoint from the [EndpointSlice](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#conditions) object.
 
 1. API server deletes the Pod object.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

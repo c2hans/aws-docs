@@ -72,7 +72,3 @@ The [configuration](emr-spark-upgrade-agent-setup.md#spark-upgrade-agent-setup-r
 <a name="emr-spark-upgrade-agent-setup-target"></a>
 
 Create the EMR cluster or EMR Serverless application with the expected Spark version that you plan to use for the upgraded application. The target EMR Cluster or EMR-S Application will be used to submit the validation job runs after the Spark application artifacts are upgraded to verify successful upgrade or fix additional errors encountered during the validation. If you already have a target EMR cluster or EMR Serverless application, you can refer to the existing one and skip this step. Use non-production developer accounts and select sample mock datasets that represent your production data but are smaller in size for validation with Spark Upgrades. Please refer to this page for the guidance to create a target EMR cluster or EMR Serverless application from existing ones: [Creating target EMR Cluster/EMR-S application from existing ones](emr-spark-upgrade-agent-target-cluster.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

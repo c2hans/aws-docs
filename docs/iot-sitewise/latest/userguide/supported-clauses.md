@@ -83,7 +83,3 @@ An explanation of each clause and it's description is listed below:
 | `JOIN` |  <pre>SELECT column1, column2<br />FROM table1 JOIN table2<br />ON table1.column1 = table2.column1;<br /></pre>  |
 | `INNER JOIN` |  <pre>SELECT columns<br />FROM table1<br />INNER JOIN table2 ON table1.column = table2.column;<br /></pre>  | An `INNER JOIN` returns all rows from both tables, that match the join condition. |
 | `UNION` |  <pre>query<br />   { UNION [ ALL ] }<br />another_query<br /></pre>  | The `UNION` operator computes the set union of its two arguments, automatically removing duplicate records from the result set. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 1.  Use AWS managed services to design automated failover with Amazon Route 53 health checks, Amazon RDS Multi-AZ failover, or Auto Scaling group replacements.
 
 1.  Keep AWS CloudTrail, AWS Config, and Amazon CloudWatch monitoring active during failover, and include these checks in validation evidence to demonstrate persistence.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

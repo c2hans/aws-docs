@@ -11,7 +11,3 @@ This playbook is an end-to-end runbook for migrating an Apache Solr 8.x or 9.x d
 This playbook’s main procedure is backup-based backfill. If you need zero-downtime migration for a SolrCloud source, add Capture and Replay so writes that arrive after the backup are captured and replayed to the target. Solr replay requires JSON-format write requests and Solr-specific transform provider configuration. Standalone Solr sources remain backfill-only.
 
 This playbook assumes Migration Assistant is already deployed on [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks) (Amazon EKS). If you have not deployed it yet, complete [Deploy the solution](deploy-the-solution.md) first. It also assumes you have confirmed the installed version with `console --version` and loaded the version-matched sample with `workflow configure sample --load` on the Migration Console pod (`migration-console-0`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

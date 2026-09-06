@@ -17,7 +17,3 @@ For information about the developer tools that are available for common web brow
 + [Microsoft Edge (EdgeHTML) Developer Tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide)
 
 After you locate the developer tools for your browser, search for the session storage for the WorkSpaces Applications website. The domain for the website is **https://appstream2.<{{aws-region}}>.aws.amazon.com**. Expand the domain, and choose **sessionStorage.as2SessionData**. The session ID is stored in the key **sessionId**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

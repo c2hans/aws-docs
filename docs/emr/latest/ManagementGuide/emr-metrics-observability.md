@@ -23,7 +23,3 @@ EMR Observability encompasses a comprehensive monitoring and management approach
 1. [AWS EMR Advisor](https://github.com/aws-samples/aws-emr-advisor) tool analyzes Spark event logs to provide tailored recommendations for optimizing EMR cluster configurations, enhancing performance, and reducing costs. By leveraging historical data, it suggests ideal executor sizes and infrastructure settings, enabling more efficient resource utilization and improved overall cluster performance.
 
 1. [Amazon CodeGuru Profiler](https://github.com/amzn/amazon-codeguru-profiler-for-spark) tool helps developers identify performance bottlenecks and inefficiencies in their Spark applications by collecting and analyzing runtime data. The tool integrates seamlessly with existing Spark applications, requiring minimal setup, and provides detailed insights through the AWS Console about CPU usage, memory patterns, and performance hotspots.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -90,7 +90,3 @@ The following steps and resources will help you get started with integrating Con
 1. Set up React Native integration: Use the [React Native](https://github.com/amazon-connect/amazon-connect-chat-ui-examples/tree/master/mobileChatExamples/connectReactNativeChat) example for guidance on implementing react native based solution.
 
 1. If there are any questions or issues regarding the set up or use of the Connect Customer Chat SDK on your mobile applications, you can file an issue on either the [Connect Customer Chat SDK for iOS Issues](https://github.com/amazon-connect/amazon-connect-chat-ios/issues) page or the [Connect Customer Chat SDK for Android Issues](https://github.com/amazon-connect/amazon-connect-chat-android/issues) page. If there is an issue with the mobile chat UI examples, you can file an issue on the [Connect Customer Chat UI Examples Issues](https://github.com/amazon-connect/amazon-connect-chat-ui-examples/issues) page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

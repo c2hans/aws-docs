@@ -19,7 +19,3 @@ Consider the following best practices for this service:
   + Limit the local cache to the smallest number of data keys necessary to achieve the performance improvements for your specific application use case. For instructions and an example of configuring limits for the local cache, see [Using data key caching: Step-by-step](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/implement-caching.html).
 
   For more information, see [AWS Encryption SDK: How to Decide if Data Key Caching Is Right for Your Application](https://aws.amazon.com/blogs/security/aws-encryption-sdk-how-to-decide-if-data-key-caching-is-right-for-your-application/) (AWS blog post).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -66,7 +66,3 @@ Additionally, the increased focus on system observability and monitoring that of
 Both the one-time experiment and periodic GameDay modes are more manual approaches compared to the continuous experimentation mode. They require a more hands-on and exploratory process, where engineers actively shape and refine hypotheses through their observations and experiments.
 
 The continuous experimentation mode is, on the other hand, more automated in nature. This mode focuses on running approved and validated hypotheses in a controlled and iterative manner. It uses automation and integration in the development process [through a dedicated chaos pipeline](https://adhorn.substack.com/p/decoupling-chaos-and-delivery) to help ensure consistent and repeatable experiments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ When migrating from Incident Manager to an alternate solution, we recommend expo
 Once your migration is complete, we also recommend cleaning up the remaining Incident Manager resources to prevent any ongoing charges. For more information, see [Cleaning up Incident Manager Resources](migration-cleanup.md).
 
 For additional support, you can contact your Technical Account Manager or [create a support case in the Support Center](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html) of the AWS Management Console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

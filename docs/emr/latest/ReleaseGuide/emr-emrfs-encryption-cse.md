@@ -194,7 +194,3 @@ To configure EMRFS to use S3EC V2, add the following configuration:
 | fs.s3.cse.materialsDescription.enabled | false | When set to `true`, populates the materialsDescription of encrypted objects with the Amazon S3 URI for the object and the JobFlowId. Set to `true` when using custom encryption materials. |
 | fs.s3.cse.kms.keyId | N/A | Applies when using CSE-KMS. The value of the KeyId, ARN, or alias of the KMS key used for encryption. |
 | fs.s3.cse.cryptoStorageMode | ObjectMetadata  | The Amazon S3 storage mode. By default, the description of the encryption information is stored in the object metadata. You can also store the description in an instruction file. Valid values are ObjectMetadata and InstructionFile. For more information, see [Client-side data encryption with the AWS SDK for Java and Amazon S3](https://aws.amazon.com/articles/client-side-data-encryption-with-the-aws-sdk-for-java-and-amazon-s3/). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

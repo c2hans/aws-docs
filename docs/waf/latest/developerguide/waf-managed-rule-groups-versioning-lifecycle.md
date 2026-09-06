@@ -17,7 +17,3 @@ Providers handle the following life cycle stages of a managed rule group static 
 + **Version expiration** – If you have a protection pack (web ACL) configured to use an expired version of a managed rule group, then during protection pack (web ACL) evaluation, AWS WAF uses the rule group's default version. Additionally, AWS WAF blocks any updates to the protection pack (web ACL) that don't either remove the rule group or change its version to an unexpired one.
 
 If you use AWS Marketplace managed rule groups, ask the provider for any additional information about version life cycles.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

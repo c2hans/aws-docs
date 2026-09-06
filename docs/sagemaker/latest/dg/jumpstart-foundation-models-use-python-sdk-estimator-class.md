@@ -12,7 +12,7 @@ You can fine-tune a built-in algorithm or pre-trained model in just a few lines 
 
 1. First, find the model ID for the model of your choice in the [Built-in Algorithms with pre-trained Model Table](https://sagemaker.readthedocs.io/en/stable/doc_utils/pretrainedmodels.html).
 
-1. Using the model ID, define your training job as a JumpStart estimator.
+1. Using the model ID, define your training job with a JumpStart `ModelTrainer`.
 
    ```
    from sagemaker.train import ModelTrainer
@@ -22,11 +22,16 @@ You can fine-tune a built-in algorithm or pre-trained model in just a few lines 
    model_trainer = ModelTrainer.from_jumpstart_config(jumpstart_config=jumpstart_config)
    ```
 
-1. Run `estimator.fit()` on your model, pointing to the training data to use for fine-tuning.
+1. Call the `train()` method on your `ModelTrainer`, pointing to the training data to use for fine-tuning.
 
    ```
+   from sagemaker.train.configs import InputData
+
    model_trainer.train(
-       input_data_config={"train": {{training_dataset_s3_path}}, "validation": {{validation_dataset_s3_path}}}
+       input_data_config=[
+           InputData(channel_name="train", data_source={{training_dataset_s3_path}}),
+           InputData(channel_name="validation", data_source={{validation_dataset_s3_path}}),
+       ]
    )
    ```
 
@@ -59,7 +64,7 @@ You can optionally specify model versions or instance types when creating your `
 You can optionally include specific model versions or instance types when fine-tuning a pre-trained model using the `JumpStartEstimator` class. All JumpStart models have a default instance type. Retrieve the default training instance type using the following code:
 
 ```
-from sagemaker import instance_types
+from sagemaker.core import instance_types
 
 instance_type = instance_types.retrieve_default(
     model_id=model_id,
@@ -76,7 +81,7 @@ You can see all supported instance types for a given JumpStart model with the `i
 To check the default hyperparameters used for training, you can use the `retrieve_default()` method from the `hyperparameters` class.
 
 ```
-from sagemaker import hyperparameters
+from sagemaker.core import hyperparameters
 
 my_hyperparameters = hyperparameters.retrieve_default(model_id=model_id, model_version=model_version)
 print(my_hyperparameters)
@@ -97,9 +102,7 @@ For more information on available hyperparameters, see [Commonly supported fine-
 You can also check the default metric definitions:
 
 ```
+from sagemaker.core import metric_definitions
+
 print(metric_definitions.retrieve_default(model_id=model_id, model_version=model_version))
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

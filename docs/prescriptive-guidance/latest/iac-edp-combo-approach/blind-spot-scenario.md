@@ -34,7 +34,3 @@ The following diagram shows a recommended approach that aligns with the best pra
 You can use Parameter Store to see a history of the values and use it for values that change. Parameter Store also integrates with multiple services, such as CloudFormation and Lambda. The Lambda function in this scenario doesn't directly interact with the EBS volume to increase volume size. Instead, the Lambda function interacts with CloudFormation to update the API. As a result, CloudFormation stacks are safeguarded from drift. Finally, this approach relies on CloudFormation as the single source for performing updates.
 
 ![Recommended scenario with EBS volume](http://docs.aws.amazon.com/prescriptive-guidance/latest/iac-edp-combo-approach/images/guide-img/1c2f9dce-c146-4233-a850-fc07cab4966b/images/02d49e50-00a7-476f-b1fc-31a2bf843339.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

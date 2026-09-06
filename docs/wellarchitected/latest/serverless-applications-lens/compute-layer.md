@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
  With [Amazon API Gateway](https://aws.amazon.com/api-gateway/), you can run a fully managed REST API that integrates with [Lambda](https://aws.amazon.com/lambda/) to apply your business logic, and includes traffic management, authorization and access control, monitoring, and API versioning.
 
  [AWS Step Functions](https://aws.amazon.com/step-functions/) orchestrates serverless workflows including coordination, state, and function chaining as well as combining long-running executions not supported within [Lambda](https://aws.amazon.com/lambda/) execution limits by breaking into multiple steps or by calling workers running on [Amazon Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/ec2/) instances or on-premises.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

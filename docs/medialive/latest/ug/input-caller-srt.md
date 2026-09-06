@@ -22,7 +22,3 @@ In terms of the categorization of inputs into push and pull, an SRT input is a p
 + [Create an SRT input](input-caller-srt-setup.md)
 + [Ensure correct setup in the upstream system](setup-uss-srt-caller.md)
 + [Result of this procedure](input-caller-srt-result.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

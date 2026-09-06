@@ -32,7 +32,3 @@ Quick Flows uses Amazon Bedrock models for AI reasoning in the General knowledge
 After ensuring that all prerequisites are met, you can:
 + Learn about key concepts in Quick Flows. See [Terminology and key concepts](terminology-and-key-concepts.md).
 + Create your first flow. See [Creating flows](creating-flows.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

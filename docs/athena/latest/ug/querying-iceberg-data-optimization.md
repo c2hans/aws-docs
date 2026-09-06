@@ -53,7 +53,3 @@ Iceberg statistics are turned on by default when you use S3 Tables. For other Ic
 Parquet column indexing makes it possible for Athena to perform more precise data pruning during query execution by leveraging page-level min/max statistics in addition to row group-level statistics. This allows Athena to skip unnecessary pages within row groups, significantly reducing the amount of data scanned and improving query performance. It works best for queries with selective filter predicates on sorted columns, improving both execution time and data scan efficiency while reducing the amount of data Athena needs to read from Amazon S3.
 
 Athena uses Parquet column indexes by default with S3 Tables if column indexes are present in the underlying Parquet files. For other Iceberg tables, Athena uses the `use_iceberg_parquet_column_index` property to determine whether to utilize the column indexes in the Parquet file. Set this table property using the AWS Glue console or `UpdateTable` API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

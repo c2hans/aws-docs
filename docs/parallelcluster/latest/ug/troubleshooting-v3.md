@@ -34,7 +34,3 @@ Starting with AWS ParallelCluster version 3.16.0, you can also run the on-node d
 + [Seeing errors with custom Slurm configuration](troubleshooting-v3-custom-slurm-config.md)
 + [Cluster alarms](troubleshooting-v3-cluster-alarms.md)
 + [Resolving OS configuration changes that cause errors or failures](resolving-os-configuration-changes.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

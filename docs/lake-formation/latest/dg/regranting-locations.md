@@ -23,7 +23,3 @@ You can use the AWS Lake Formation console, the API, or the AWS Command Line Int
   aws lakeformation grant-permissions --principal DataLakePrincipalIdentifier=arn:aws:iam::{{<account-id>}}:user/{{<user-name>}} --permissions "DATA_LOCATION_ACCESS" --resource '{ "DataLocation": {"CatalogId":"{{<owner-account-ID>}}","ResourceArn":"arn:aws:s3:::{{<s3-location>}}"}}'
   aws lakeformation grant-permissions --principal DataLakePrincipalIdentifier=arn:aws:iam::{{<account-id>}}:role/{{<role-name>}} --permissions "DATA_LOCATION_ACCESS" --resource '{ "DataLocation": {"CatalogId":"{{<owner-account-ID>}}","ResourceArn":"arn:aws:s3:::{{<s3-location>}}"}}'
   ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

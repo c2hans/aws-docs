@@ -14,7 +14,3 @@ The AWS Organizations policies were migrated manually by applying the desired po
 Account migration was semi-automated and followed a staggered or batched approach. The initial migration targeted AWS accounts that were considered less critical, using a batch of five AWS accounts per migration run. Migration batches did not exceed 10 accounts. When the accounts were migrated, reviewers and testers used the AWS Control Tower console to verify that these accounts were moved to the correct OU and monitored AWS CloudTrail logs for errors. Reviewers also checked the AWS Service Catalog and AWS Control Tower consoles for any [drift](https://docs.aws.amazon.com/controltower/latest/userguide/drift.html) or accounts in tainted or unknown states.
 
 Changes to OU placement of accounts did not affect the connectivity or accessibility of resources. No outage in a production application was reported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

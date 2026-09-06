@@ -77,7 +77,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-pers
   +  A somewhat commonly practiced example of an ecosystem level data and insight business value is when companies negotiate the rights to maintain “data residue” from services they provide to their customers. They in turn license this data, often augmented by other data residues or the insight they have generated to third parties.
   +  This stage of your roadmap will depend on the maturity of additional disciplines in your internal processes (such as contract and partner management) while it will generate extended benefits to your data monetization (both implied return and captured value) business use cases through models benefiting from improved learning from enhanced data sets.
   +  Very few companies will advance to this stage of maturity. Achieving an Advanced status from the perspective of generating business value through data and insights is the proper level of maturity for most businesses.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

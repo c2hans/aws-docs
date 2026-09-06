@@ -31,7 +31,3 @@ Share success stories from teams that use observability tools. For example, high
 <a name="learnings"></a>
 
 Conduct blameless post-incident exercises similar to the [correction of errors (COE)](https://aws.amazon.com/blogs/mt/why-you-should-develop-a-correction-of-error-coe/) process at Amazon to identify areas for improvement and to prevent future issues. As with wins, the learnings from this exercise can be shared broadly with other teams to reinforce the value of observability and best practices.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

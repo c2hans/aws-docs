@@ -28,7 +28,3 @@ Amazon SQS uses AWS JSON protocol to communicate between AWS SDK clients (for ex
 For more information about AWS JSON protocol with Amazon SQS, see [Amazon SQS AWS JSON protocol FAQs](sqs-json-faqs.md).
 
 AWS JSON protocol is available on the specified [AWS SDK version](sqs-json-faqs.md#json-protocol-getting-started). To review SDK version and release dates across language variants, see the [AWS SDKs and Tools version support matrix](https://docs.aws.amazon.com/sdkref/latest/guide/version-support-matrix.html) in the *AWS SDKs and Tools Reference Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -229,7 +229,3 @@ When exporting S3 Storage Lens metrics to S3 tables, the data is organized into 
 |  inregion\_request\_count  | long | Number of requests that originate from a client in same Region as bucket's home Region |
 |  inregion\_transferred\_bytes  | decimal(0,0) | Number of bytes that are transferred from calls from same Region as bucket's home Region |
 |  unique\_objects\_accessed\_daily\_count  | long | Number of objects that were accessed at least once in last 24 hrs |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

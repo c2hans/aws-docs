@@ -20,7 +20,7 @@ When client IP address preservation is enabled, traffic bypasses the following s
 
 **Defaults for client IP address preservation**
 When you create a new accelerator using the console, client IP address preservation is enabled, by default, for supported endpoints. You can choose to disable the option for some endpoints, depending on the endpoint type:
-+ When you use an internet-facing Application Load Balancer or a Network Load Balancer with security groups as an endpoint with Global Accelerator, client IP address preservation is enabled by default for new accelerators. You can choose to disable the option when you create the accelerator or by editing the accelerator later.
++ When you use an internet-facing Application Load Balancer as an endpoint with Global Accelerator, client IP address preservation is enabled by default for new accelerators. For an Network Load Balancer endpoint that has security groups, client IP address preservation is not enabled by default, but you can enable the option when you create the accelerator or by editing the accelerator later.
 + When you use an internal Application Load Balancer or an EC2 instance with Global Accelerator, the endpoint always has client IP address preservation enabled.
 Be aware of the following:
 + Internal Application Load Balancers and EC2 instances always have client IP address preservation enabled. You can't disable the option for these endpoints.
@@ -34,7 +34,3 @@ For existing accelerators, you can transition endpoints without client IP addres
 + For existing Application Load Balancer or Network Load Balancer with security groups endpoints, first add to Global Accelerator a duplicate load balancer endpoint that targets the same backends, and make sure that client IP address preservation is enabled for it. Then adjust the weights on the endpoints to slowly move traffic from the load balancer that does *not* have client IP address preservation enabled to the load balancer *with* client IP address preservation.
 + For an existing Elastic IP address endpoint, you can move traffic to an EC2 instance endpoint with client IP address preservation. First add an EC2 instance endpoint to Global Accelerator, and then adjust the weights on the endpoints to slowly move traffic from the Elastic IP address endpoint to the EC2 instance endpoint.
 For step-by-step transition guidance, see [Transitioning endpoints to use client IP address preservation](about-endpoints.sipp.md#about-endpoints.transition-to-IP-preservation).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

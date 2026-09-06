@@ -33,7 +33,3 @@ To manually create an asset through a project, you must be the owner or the cont
 1. Choose **Create**.
 
    Once the asset is created, it will either be directly published as an active asset in the catalog, or will be stored in the inventory until you decide to publish it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

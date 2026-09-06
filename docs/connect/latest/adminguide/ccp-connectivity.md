@@ -30,7 +30,3 @@ If you see the **Session expired** message while logging in, you probably just n
 
 **Panic logout**
 + If the browser window where the CCP is running is closed, the call remains connected, but you can't re-establish the media connection by opening the browser and logging back in. You are still able to transfer or end the call, but no audio path is established between the agent and caller.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

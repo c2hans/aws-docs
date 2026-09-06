@@ -20,7 +20,3 @@ The following diagram describes the general workflow of access control with the 
 ![Figure five in the previous diagram.](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/number-5-red.png) Amazon SQS evaluates the policies and determines whether the requester is allowed to use your queue.
 
 ![Figure six in the previous diagram.](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/number-6-red.png) Based on the policy evaluation result, Amazon SQS either returns an `Access denied` error to the requester or continues to process the request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

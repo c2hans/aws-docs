@@ -28,7 +28,3 @@ For help with preventing pinning, see [Avoiding pinning](https://docs.aws.amazon
 No, code changes are not needed for most applications when using RDS Proxy. The application code uses the new endpoint provided by RDS Proxy for communicating with the database.
 
 Additional FAQs can be found at [Amazon RDS Proxy FAQs](https://aws.amazon.com/rds/proxy/faqs/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

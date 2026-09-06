@@ -343,7 +343,3 @@ query searchPosts {
 + OpenSearch Service should be for querying data, not as your primary database. You may want to use OpenSearch Service in conjunction with Amazon DynamoDB as outlined in [Combining GraphQL Resolvers](tutorial-combining-graphql-resolvers.md#aws-appsync-tutorial-combining-graphql-resolvers).
 + Only give access to your domain by allowing the AWS AppSync service role to access the cluster.
 + You can start small in development, with the lowest-cost cluster, and then move to a larger cluster with high availability (HA) as you move into production.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -96,7 +96,3 @@ To use Oracle Database@AWS in multiple Regions, perform the following steps:
    If you don't enable a Region in OCI, and then you switch to this Region in the Oracle Database@AWS console, you receive an error stating that you haven't subscribed. In this case, you must enable this Region in OCI before you can use the Oracle Database@AWS dashboard in this Region.
 
 1. Access Oracle Database@AWS in any supported AWS Region without repeating the subscription process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

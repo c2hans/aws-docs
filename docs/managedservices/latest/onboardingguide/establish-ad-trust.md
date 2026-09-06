@@ -16,7 +16,3 @@ Creating a trust connection is a two-part exercise:
 First, configure a conditional forward, a DNS configuration so DNS queries know which DNS server to go to.
 
 Second, configure a trust, an Active Directory (AD) construct to allow access from users in one domain to use resources in another domain.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

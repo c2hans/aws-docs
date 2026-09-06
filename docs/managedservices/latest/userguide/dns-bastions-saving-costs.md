@@ -12,7 +12,3 @@ AMS provides two SSH bastions and two RDP bastions in the default configuration 
 If you are using on-demand instances, or spot instances, or a savings plan, you should consider this feature, and save costs. If you use Reserved Instances consider if using t3.small instances might lower your costs. To change the instance type, submit an RFC with Management \| Advanced stack components \| EC2 instance stack \| Resize (ct-15mazjj88xc69) CT from your AMS account.
 
 Contact your cloud service delivery manager (CSDM) for additional questions, or to check if you can benefit from this feature.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

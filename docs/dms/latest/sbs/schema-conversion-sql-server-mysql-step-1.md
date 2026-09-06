@@ -123,7 +123,3 @@ Next, you create an Amazon S3 bucket to use in your DMS Schema Conversion migrat
 1. Keep the rest of the settings as they are, and then choose **Create bucket**.
 
 Use this Amazon S3 bucket when you create your instance profile in [Step 5](schema-conversion-sql-server-mysql-step-5.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

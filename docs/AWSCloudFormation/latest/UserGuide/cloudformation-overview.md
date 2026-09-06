@@ -221,7 +221,3 @@ Change sets don't indicate whether your stack update will be successful. For exa
 To create a hello world CloudFormation stack with the console, see [Creating your first stack](gettingstarted.walkthrough.md).
 
 For guided learning, try the [Getting Started with CloudFormation](https://catalog.us-east-1.prod.workshops.aws/workshops/df7f72cf-4f10-4664-acb6-b30dc8d4bcf0/en-US) workshop, which offers hands-on experience with template development.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

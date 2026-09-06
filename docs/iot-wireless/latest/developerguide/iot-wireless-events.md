@@ -107,7 +107,3 @@ If you've subscribed to these topics, you'll be notified when a message is publi
 <a name="iot-wireless-events-pricing"></a>
 
 For information about pricing for subscribing to events and for receiving notifications, see [AWS IoT Core pricing](https://aws.amazon.com/iot-core/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

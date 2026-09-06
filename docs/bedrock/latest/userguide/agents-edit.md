@@ -52,7 +52,3 @@ To add tags to an agent, send a [TagResource](https://docs.aws.amazon.com/bedroc
 To remove tags from an agent, send an [UntagResource](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UntagResource.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt) and include the Amazon Resource Name (ARN) of the agent. The `tagKeys` request parameter is a list containing the keys for the tags that you want to remove.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

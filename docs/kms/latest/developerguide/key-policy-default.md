@@ -386,7 +386,3 @@ For example, key users can use these permissions on the KMS key in the following
 + Use this KMS key with other [AWS services integrated with AWS KMS](service-integration.md) that use grants to create, manage, or use encrypted resources with those services.
 
 The default key policy allows key users to delegate their grant permission to *all* integrated services that use grants. However, you can create a custom key policy that restricts the permission to specified AWS services. For more information, see the [kms:ViaService](conditions-kms.md#conditions-kms-via-service) condition key.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

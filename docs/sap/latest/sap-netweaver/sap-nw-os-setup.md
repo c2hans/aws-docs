@@ -238,7 +238,3 @@ Configure NFS filesystems for shared SAP directories such as transport directori
 
 **Note**
 Replace `SID` with your actual SAP System ID (for example, `PRD` or `DEV`). Replace `your-efs-mount-target.efs.region.amazonaws.com` with your actual Amazon EFS mount target DNS name and region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

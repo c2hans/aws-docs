@@ -122,7 +122,3 @@ If the Adaptive Hash Index is turned off, consider turning it on. To learn more 
 **Note**
 The Adaptive Hash Index isn't supported on Aurora reader DB instances.
 In some cases, performance might be poor on a reader instance when `synch/sxlock/innodb/btr_search_latch` and `io/table/sql/handler` are dominant. If so, consider redirecting the workload temporarily to the writer DB instance and turning on the Adaptive Hash Index.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

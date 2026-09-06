@@ -33,7 +33,3 @@ After scaffolding, edit the generated `mdaa.yaml` and module config files to mat
 The clone-and-copy workflow shown in each starter-kit section below still works and remains useful when developing against the MDAA source. `mdaa init` is the recommended path for a new configuration project because it also generates version-pinned schemas and editor validation for you.
 
 The following sections provide detailed information about each available starter package, including architecture components, deployment instructions, and usage guidelines.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Modern Data Architecture Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

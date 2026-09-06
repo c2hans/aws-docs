@@ -249,7 +249,3 @@ aws cognito-idp delete-user-pool-client --user-pool-id "{{MyUserPoolID}}" --clie
 See the AWS CLI command reference for more information: [delete-user-pool-client](https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/delete-user-pool-client.html)
 
 AWS API: [DeleteUserPoolClient](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DeleteUserPoolClient.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

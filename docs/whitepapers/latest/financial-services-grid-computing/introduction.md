@@ -38,7 +38,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
  Diverse pricing models offer flexibility to these customers. For example, [Amazon EC2 Spot Instances](https://aws.amazon.com/ec2/spot/) can reduce compute costs by up to 90%. These instances are occasionally interrupted by AWS, but HPC schedulers can typically react to these events and reschedule tasks accordingly.
 
  This document includes several recommended approaches to building HPC systems in the cloud, and highlights AWS services that are used by financial services organizations to help to address their compute, networking, storage, and security requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

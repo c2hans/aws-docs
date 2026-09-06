@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 | August 2024 | Release v.1.2.4: Updated package versions to resolve security vulnerabilities. For more information, refer to the [CHANGELOG.md](https://github.com/aws-solutions/secure-media-delivery-at-the-edge-on-aws/blob/main/CHANGELOG.md) file in the GitHub repository.  |
 | September 2024 | Release v.1.2.5: Updated package versions to resolve security vulnerabilities. For more information, refer to the [CHANGELOG.md](https://github.com/aws-solutions/secure-media-delivery-at-the-edge-on-aws/blob/main/CHANGELOG.md) file in the GitHub repository. |
 | November 2024 | Release v.1.2.6: Updated package versions to resolve security vulnerabilities. For more information, refer to the [CHANGELOG.md](https://github.com/aws-solutions/secure-media-delivery-at-the-edge-on-aws/blob/main/CHANGELOG.md) file in the GitHub repository. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

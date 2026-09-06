@@ -196,7 +196,3 @@ If your RDS instance is currently on CA certificate `rds-ca-2019`, and you want 
 <a name="migrate-amazon-rds-for-oracle-to-amazon-rds-for-postgresql-in-ssl-mode-by-using-aws-dms-additional"></a>
 
 Amazon RDS Certificate Authority certificates `rds-ca-2019` expired in August 2024. If you use or plan to use SSL or TLS with certificate verification to connect to your RDS DB instances or Multi-AZ DB clusters, consider using one of the new CA certificates: `rds-ca-rsa2048-g1`, `rds-ca-rsa4096-g1`, or `rds-ca-ecc384-g1`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

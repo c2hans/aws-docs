@@ -72,7 +72,3 @@ For more information, see [AWS IoT Core policies](https://docs.aws.amazon.com/io
 Replace `your-role-alias-arn` with the ARN of the role alias that you created in [Create the AWS IoT role alias](gs-create-role-alias.md).
 
 1. Choose **Create** to save your work.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

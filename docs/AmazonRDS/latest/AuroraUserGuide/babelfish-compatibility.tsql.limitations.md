@@ -57,7 +57,3 @@ Babelfish is available with Aurora PostgreSQL-Compatible Edition. For more infor
 | Transaction isolation levels | READUNCOMMITTED is treated the same as READCOMMITTED. |
 | Virtual computed columns (non-persistent) | Virtual computed columns are created as persistent. |
 | Without SCHEMABINDING clause | This clause isn't supported in functions, procedures, triggers, or views. The object is created, but as if WITH SCHEMABINDING was specified. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

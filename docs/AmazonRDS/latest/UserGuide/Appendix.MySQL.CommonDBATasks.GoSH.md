@@ -40,7 +40,3 @@ select a.collection_end, a.collection_start, (( a.variable_Delta-b.variable_delt
     from mysql.rds_global_status_history as a join mysql.rds_global_status_history as b on a.collection_end = b.collection_end
     where a. variable_name = 'Innodb_buffer_pool_read_requests' and b.variable_name = 'Innodb_buffer_pool_reads'
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

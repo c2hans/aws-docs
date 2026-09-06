@@ -53,7 +53,3 @@ To change the configuration of a Dev Environment, you must edit the devfile. We 
 + [Editing the repository devfile for a Dev Environment in AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/devenvironment-cloud9.title.html#ide-toolkits-edit-devfile-cloud9)
 + [Editing the repository devfile for a Dev Environment in VS Code](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/codecatalyst-devenvironment.html#codecatalyst-devenvironment-devfile)
 + [Editing the repository devfile for a Dev Environment in JetBrains](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/codecatalyst-overview.html#codecatalyst-overview-default)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -217,7 +217,3 @@ Notice in the `MovieActor` table that the `Blue Jasmine` movie item has been rep
 
 **Note**
 Although the API documentation suggests that condition expressions can be used and that consumed capacity and collection metrics can be returned with individual [put](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/PutItemEnhancedRequest.html) and [delete](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/DeleteItemEnhancedRequest.html) requests, this is not the case in a batch write scenario. To improve performance for batch operations, these individual options are ignored.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

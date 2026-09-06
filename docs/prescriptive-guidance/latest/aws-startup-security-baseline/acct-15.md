@@ -24,7 +24,3 @@ Review the Security Hub dashboard periodically and address findings marked **Cri
 
 **Note**
 Security Hub includes a 30-day free trial when you enable it for the first time. AWS Config recording charges apply separately. For more information about pricing, see [AWS Security Hub pricing](https://aws.amazon.com/security-hub/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

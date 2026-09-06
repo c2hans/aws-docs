@@ -9,7 +9,3 @@ The [SendChannelMessage](https://docs.aws.amazon.com/chime-sdk/latest/APIReferen
 
 **Note**
 Message senders can only edit or redact messages if they belong the sub-channel that they send messages to. If membership balancing transfers a member to another sub-channel, that member can only edit or redact the messages that they send in that new sub-channel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

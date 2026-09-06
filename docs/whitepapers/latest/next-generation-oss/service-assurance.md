@@ -23,7 +23,3 @@ The workflow and the result of the workflow can be achieved using a low-code vis
  By decoupling persistent data layer from the application layer through usage of managed services (e.g., [Amazon Aurora](https://aws.amazon.com/rds/aurora/) and [Amazon Neptune](https://aws.amazon.com/neptune)), data is easily consumed by applications within the OSS stack, enabling closed loop use cases. For example, real-time state of inventory can be used to input service orchestration and fulfillment.
 
  Finally, [AWS Auto Scaling](https://aws.amazon.com/autoscaling/) is used to scale up or down based on demand, and thus optimal usage of infrastructure is achieved and total cost of ownership is optimized. An OSS solution on AWS scales with the network as network events occur.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

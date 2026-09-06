@@ -34,7 +34,3 @@ While CloudWatch investigations will continue to analyze telemetry data and prov
 + 3For Amazon EKS, enable CloudWatch Container Insights and configure Amazon EKS Access Entries. For more information, see [Container Insights](ContainerInsights.md) and [Integration with Amazon EKS](EKS-Integration.md).
 + 4For Amazon RDS, enable CloudWatch Database Insights in the **Advanced mode**. For more information, see [Turning on the Advanced mode of Database Insights for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DatabaseInsights.TurningOnAdvanced.html) in the *Aurora User Guide*.
 + Enable CloudWatch Application Signals and X-Ray. For more information, see [Application Signals](CloudWatch-Application-Monitoring-Sections.md) and [What is AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

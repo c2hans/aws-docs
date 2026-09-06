@@ -258,7 +258,3 @@ If a user on a one-on-one call selects to ignore the call, a declined call messa
      "vgroupid":"4c84cfa0a7b780f76fdb8d86cb5569f61e66a7a43ef8ab1cc5b537b427e1989b"
      }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

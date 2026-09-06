@@ -40,7 +40,7 @@ Required: No
 The name that you assign to the AWS Config rule. The name is required if you are adding a new rule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `.*\S.*`
+Pattern: `[A-Za-z0-9_-]+`
 Required: No
 
  ** ConfigRuleState **   <a name="config-Type-ConfigRule-ConfigRuleState"></a>
@@ -103,7 +103,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/config-2014-11-12/ConfigRule)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/config-2014-11-12/ConfigRule)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/config-2014-11-12/ConfigRule)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

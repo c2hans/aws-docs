@@ -59,7 +59,3 @@ Following are example questions you can ask Amazon Q that leverage workspace con
 + @workspace add auth to this project
 + @workspace what third-party libraries or packages are used in this project, and for what purpose?
 + @workspace add unit tests for function {{<function name>}}
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

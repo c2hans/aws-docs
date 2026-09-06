@@ -199,7 +199,3 @@ You can also check these common scenarios:
 + Ensure your event destination IAM role has the necessary permissions. For more information, see [Step 1: Enable Connect Customer as the event destination](#enable-connect-destination) earlier in this section. You have a misconfigured role if CloudTrail throws `AccessDeniedException` errors from the `SendIntegrationEvent` API.
 + Make sure that your WhatsApp phone number imported successfully to your Connect Customer instance, and that the number has an associated inbound contact flow. For more information, see [Step 2: Configure an inbound contact flow on your phone number](#inbound-contact-flow).
 + Inbound messages were dropped because they are not yet supported. For more information, see [WhatsApp Business messaging capabilities and limitations with Connect Customer](whatsapp-messaging-capabilities.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

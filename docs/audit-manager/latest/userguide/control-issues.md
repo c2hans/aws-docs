@@ -158,7 +158,3 @@ If a custom rule is updated outside of your AWS environment, Audit Manager doesn
 | --- | --- | --- |
 | Sender |  +  You shared a framework that uses custom rules as a data source mapping. <br />+  After you shared the framework, you updated or deleted one of those rules in AWS Config.   | Let the recipient know about your update. That way, they can apply the same update and stay in sync with the latest rule definition. |
 | Recipient |  +  You accepted a shared framework that uses custom rules as a data source mapping. <br />+  After you recreated the custom rules in your instance of AWS Config, the sender updated or deleted one of those rules.   | Make the corresponding rule update in your own instance of AWS Config. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

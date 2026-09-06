@@ -240,7 +240,3 @@ The following instructions describe how to import documentation parts.
 1. Choose how to handle warnings on import. Select either **Fail on warnings** or **Ignore warnings**. For more information, see [Errors and warnings from importing your API into API Gateway](api-gateway-import-api-errors-warnings.md).
 
 1. Choose **Import**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

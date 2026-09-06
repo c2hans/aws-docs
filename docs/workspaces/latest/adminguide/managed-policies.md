@@ -321,7 +321,3 @@ View details about updates to AWS managed policies for WorkSpaces since this ser
 | [AWS managed policy: AmazonWorkSpacesAdmin](#workspaces-admin) - Updated policy | WorkSpaces added the workspaces:RestoreWorkspace action to the Amazon WorkSpacesAdmin managed policy, granting admins access to restore WorkSpaces.  | June 25, 2023 |
 | [AWS managed policy: AmazonWorkspacesPCAAccess](#workspaces-pca-access) - Added new policy | WorkSpaces added a new managed policy to grant acm-pca permission to manage AWS Private CA to manage certificate-based authentication. | November 18, 2022 |
 | WorkSpaces started tracking changes | WorkSpaces started tracking changes for its WorkSpaces managed policies. | March 1, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

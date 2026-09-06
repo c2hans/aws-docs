@@ -253,7 +253,3 @@ For detailed guidance on resolving these errors and properly configuring SCIM pr
 + 2 validation errors detected: Value at 'urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.manager.value' failed to satisfy constraint: Member must have length greater than or equal to 1; Value at 'urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.manager.value' failed to satisfy constraint: Member must satisfy regular expression pattern: [\\\\p{L}\\\\p{M}\\\\p{S}\\\\p{N}\\\\p{P}\\\\t\\\\n\\\\r ]\+",
 + Invalid JSON from RequestBody
 + Invalid Filter format
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ For AWS Services architected within the AWS GovCloud (US) Regions, the following
   + Intent definitions
   + Slot definitions
   + Session attributes that customers use for the Get customer input block in the Amazon Connect console, such as `x-amz-lex:start-silence-threshold-ms` or ` x-amz-lex:end-silence-threshold-ms`. For all session attributes, see [Contact block: Get customer input](https://docs.aws.amazon.com/connect/latest/adminguide/get-customer-input.html) in the Amazon Connect Administrator Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

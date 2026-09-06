@@ -62,7 +62,3 @@ Some containers and codecs have additional restrictions. For more information ab
 - ** [No container](supported-containers-codecs-details.md#container-none) **
   - **Supported video codecs:** [AVC-Intra](supported-containers-codecs-details.md#codec-avc-intra)<br />[AVC (H.264)](supported-containers-codecs-details.md#codec-avc)<br />[GIF](supported-containers-codecs-details.md#codec-gif)<br />[HEVC (H.265)](supported-containers-codecs-details.md#codec-hevc)<br />[MPEG-2](supported-containers-codecs-details.md#codec-mpeg2)<br />[VC-3](supported-containers-codecs-details.md#codec-vc3)<br />[XAVC](supported-containers-codecs-details.md#codec-xavc)
   - **Supported audio codecs:** [AAC](supported-containers-codecs-details.md#codec-aac)<br />[AIFF](supported-containers-codecs-details.md#codec-aiff)<br />[Dolby Digital (AC3)](supported-containers-codecs-details.md#codec-ac3)<br />[Dolby Digital Plus (EAC3)](supported-containers-codecs-details.md#codec-eac3)<br />[PCM/WAV](supported-containers-codecs-details.md#codec-pcm)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

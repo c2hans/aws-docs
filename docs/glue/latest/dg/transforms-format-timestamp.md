@@ -20,7 +20,3 @@ For example, if you want your date string to be formatted like “2023-01-01 00:
 1. On the **Transform** tab, enter the **Timestamp format** pattern to use, expressed using [Spark date syntax](https://spark.apache.org/docs/latest/sql-ref-datetime-pattern.html) or [Python date codes](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes).
 
 1. (Optional) On the **Transform** tab, instead of converting the selected column, you can create a new one and keep the original by entering a name for the new column.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

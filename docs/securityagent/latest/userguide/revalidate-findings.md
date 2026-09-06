@@ -60,7 +60,3 @@ A revalidation run appears in your run history with a type of **Revalidation**, 
 After revalidation, consider these next steps:
 + Revalidate a finding again after each remediation attempt until its status is **Resolved**.
 + Run a full penetration test for broad changes to your application instead of revalidating individual findings. For details, see [Create a penetration test](perform-penetration-test.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

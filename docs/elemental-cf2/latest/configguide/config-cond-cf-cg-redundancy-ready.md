@@ -24,7 +24,3 @@ This is version 2.18 of the AWS Elemental Conductor File documentation. This is 
    + An address on the same subnet as the Conductor nodes.
 
 1. Decide on the ID for a virtual router. The ID can be any arbitrary integer from 1-255. This ID must be unique on the subnet for each AWS Elemental cluster or any other keepalived-managed VIPs that are in the network.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -1250,7 +1250,3 @@ Build ID: build-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
 ```
 For more information, see [Upload a Custom Server Build to GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-build-cli-uploading.html) in the *Amazon GameLift Developer Guide*.
 +  For API details, see [UploadBuild](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/upload-build.html) in *AWS CLI Command Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

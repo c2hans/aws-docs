@@ -342,7 +342,3 @@ You can use the following commands to retrieve the virtual machine generation id
 **Example: Retrieve the virtual machine generation identifier from Windows**
 
 You can create a sample application to retrieve the virtual machine generation identifier from your instances running Windows. For more information, see [Obtaining the virtual machine generation identifier](https://learn.microsoft.com/en-us/windows/win32/hyperv_v2/virtual-machine-generation-identifier#obtaining-the-virtual-machine-generation-identifier) in the Microsoft documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

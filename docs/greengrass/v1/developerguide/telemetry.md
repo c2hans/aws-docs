@@ -452,7 +452,3 @@ Use the following information to help troubleshoot issues with configuring AWS I
 + Make sure that your core device is online.
 + Enable [Amazon CloudWatch Logs in AWS IoT Core](https://docs.aws.amazon.com/iot/latest/developerguide/cloud-watch-logs.html#viewing-logs) to monitor the shadow.
 + Use [AWS IoT metrics](https://docs.aws.amazon.com/iot/latest/developerguide/monitoring-cloudwatch.html) to monitor your thing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

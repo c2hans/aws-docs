@@ -98,7 +98,3 @@ Each structure in the list of `propertyValues` is a timestamp-quality-value (TQV
   + `UNCERTAIN` – The data is affected by an issue such as sensor inaccuracy.
 
   For more information about how AWS IoT SiteWise handles data quality in computations, see [Data quality in formula expressions](expression-tutorials.md#data-quality).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

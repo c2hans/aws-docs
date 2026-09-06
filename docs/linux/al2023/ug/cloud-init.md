@@ -42,7 +42,3 @@ AL2023 uses the cloud-init actions in `/etc/cloud/cloud.cfg.d` and `/etc/cloud/c
 For information about using cloud-init with SELinux, see [Use cloud-init to enable `enforcing` mode](enforcing-mode.md#cloud-init-enforcing).
 
 For information about cloud-init user-data formats, see [User-Data Formats](https://cloudinit.readthedocs.io/en/22.2.2/topics/format.html#format) in the cloud-init documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

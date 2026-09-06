@@ -201,7 +201,3 @@ View details about updates to AWS managed policies for Connect Customer since th
 |  [AmazonConnectServiceLinkedRolePolicy](connect-slr.md) – Added actions for Amazon Lex | Added the following actions for the all bots created in the account across all Regions. These actions were added to support integration with Amazon Lex. +  `lex:ListBots` - Lists all the bots available in a given Region for your account.  <br />+  `lex:ListBotAliases` - Lists all the aliases for a given bot.   | June 15, 2021 |
 | [AmazonConnect\_FullAccess](security-iam-amazon-connect-permissions.md) – Added actions for Amazon Lex  | Added the following actions for the all bots created in the account across all Regions. These actions were added to support integration with Amazon Lex. +  `lex:ListBots` <br />+  `lex:ListBotAliases`  | June 15, 2021 |
 | Connect Customer started tracking changes | Connect Customer started tracking changes for its AWS managed policies. | June 15, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ There are two ways to embed Connect Customer in-app, web, and video calling, and
 
 **Note**
 If you have custom agent desktops, you don't need to make any changes for Connect Customer in-app and web calling. However, you need to [integrate video calling and screen sharing](integrate-video-calling-for-agents.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,7 +49,3 @@ Use data anonymization if the individual's real identity is not required in the 
 + Only administrative users should be able to pause or stop logging services or modify configurations.
 + If your logging service has a log file integrity validation feature, enable it. This helps you detect modification, deletion, or forging of log files. For more information about this feature in AWS services, see [Using CloudTrail](cloudtrail.md#using-cloudtrail) in this guide.
 + Logging changes must be intrinsic to the application, such as made automatically by the application based on an approved algorithm, or follow an approved change management processes, such as when you change configuration data or modify the  source code.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -121,7 +121,3 @@ Now that you have the Sysprep and backup snapshots, here are some next steps you
 + Create a new instance using the Sysprep snapshot, connect to it, and confirm that your applications on the new instance function as expected. For more information, see [Create an instance from a snapshot](lightsail-how-to-create-instance-from-snapshot.md).
 + Delete your backup snapshot after you confirm that the original instance functions as expected after running Sysprep. For more information, see [Delete snapshots](amazon-lightsail-deleting-snapshots.md).
 + If your instance doesn't function as expected after running Sysprep, then follow the steps in [Create an instance from a snapshot](lightsail-how-to-create-instance-from-snapshot.md) to create a new instance from the backup snapshot.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

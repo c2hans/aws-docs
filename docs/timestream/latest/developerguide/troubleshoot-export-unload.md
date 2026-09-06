@@ -18,7 +18,3 @@ Following is guidance for troubleshooting related to the UNLOAD command.
 - **S3 throttles**
   - **Error message:** We have detected that Amazon S3 is throttling the writes from UNLOAD command. See Amazon Timestream documentation for more information
   - **How to troubleshoot:** Refer to S3 documentation [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html). S3 API call rate could be throttled when multiple readers/writers access the same folder. Please audit the call volume to the bucket provided. If you are using same bucket for multiple concurrent `UNLOAD` queries, try using different buckets for the same. If you are using same bucket for multiple operations other than Timestream for LiveAnalytics `UNLOAD`, consider moving `UNLOAD` results to separate bucket.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

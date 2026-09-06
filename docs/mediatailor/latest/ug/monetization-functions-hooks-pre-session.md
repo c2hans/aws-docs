@@ -41,7 +41,3 @@ The total serialized size of all `player_params` output keys and values must not
 <a name="monetization-functions-hooks-pre-session-failure"></a>
 
 If a function attached to `PRE_SESSION_INITIALIZATION` fails for any reason, MediaTailor discards the function's output and proceeds as if no function were attached. The session starts normally without the function's player parameter values.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

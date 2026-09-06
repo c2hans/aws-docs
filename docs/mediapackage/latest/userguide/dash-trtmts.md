@@ -40,7 +40,3 @@ MediaPackage can modify how some of these elements are presented in the output m
 + Separate the manifest into multiple periods, to permit ad breaks. See [Multi-period DASH in AWS Elemental MediaPackage](multi-period.md).
 + Reduce the length of the manifest to make processing and playback more efficient. See [DASH manifest compactness](compacted.md).
 + Compress repeating audio segment durations using Segment Duration Patternization (SDP). See [DASH audio timeline pattern](dash-audio-timeline-pattern.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

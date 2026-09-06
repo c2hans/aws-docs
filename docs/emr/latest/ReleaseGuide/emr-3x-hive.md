@@ -192,7 +192,3 @@ To connect to Hive via JDBC requires you to download the JDBC driver and install
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-3x-hive.html)
 
    If your cluster uses AMI version 3.3.1 or later, in the **Select Connection Profile** dialog box, type **hadoop** in the **Username** field.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

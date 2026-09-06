@@ -118,7 +118,3 @@ To remove credential profiles, run the new [Remove-AWSCredentialProfile](https:/
 <a name="important-notes"></a>
 
 Only [Initialize-AWSDefaultConfiguration](https://docs.aws.amazon.com/powershell/v4/reference/items/Initialize-AWSDefaultConfiguration.html), [New-AWSCredential](https://docs.aws.amazon.com/powershell/v4/reference/items/New-AWSCredential.html), and [Set-AWSCredential](https://docs.aws.amazon.com/powershell/v4/reference/items/Set-AWSCredential.html) support the parameters for role profiles. You cannot specify the role parameters directly on a command such as `Get-S3Bucket {{-SourceProfile source_profile_name -RoleArn arn:aws:iam::999999999999:role/role_name}}`. That does not work because service cmdlets do not directly support the `SourceProfile` or `RoleArn` parameters. Instead, you must store those parameters in a profile, then call the command with the `-ProfileName` parameter.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

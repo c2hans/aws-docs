@@ -159,7 +159,3 @@ After you create an organization, it can have one of the following states.
 | **Inactive** | Your organization is inactive. |
 | **Requested** | Your organization creation request is in the queue and waiting to be created. |
 | **Validating** | All settings for the organization are being health-checked. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

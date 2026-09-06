@@ -39,7 +39,3 @@ An Outpost is an extension of an AWS Region, and you can extend an Amazon VPC in
 ![VPC spanning AWS Region with two availability zones and an Outpost with local gateway.](http://docs.aws.amazon.com/app-mesh/latest/userguide/images/network-components.png)
 
  To create an App Mesh Envoy proxy on an Outpost, add the App Mesh Envoy container image to the Amazon ECS task or Amazon EKS pod running on an Outpost. For more information, see [Amazon Elastic Container Service on AWS Outposts](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-on-outposts.html) in the *Amazon Elastic Container Service Developer Guide* and [Amazon Elastic Kubernetes Service on AWS Outposts](https://docs.aws.amazon.com/eks/latest/userguide/eks-on-outposts.html) in the **Amazon EKS User Guide**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

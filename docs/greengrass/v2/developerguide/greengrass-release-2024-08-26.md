@@ -26,7 +26,3 @@ The following table lists AWS-provided components that include new and updated f
 | IP detector | Version 2.2.0 of the [IP detector component](ip-detector-component.md) is available.<a name="changelog-nucleus-2.13.0"></a>**New features**<br />   Adds support for IPv6. You can now use IPv6 for local messaging.    |
 | Client device auth | Version 2.5.1 of the [Client device auth](client-device-auth-component.md) is available.<a name="changelog-nucleus-2.13.0"></a>**Bug fixes and improvements**<br />   General bugs and fixes.   Supports FIPS endpoint.    |
 | Local debug console | Version 2.4.3 of the [Local debug console](local-debug-console-component.md) is available.<a name="changelog-nucleus-2.13.0"></a>**Bug fixes and improvements**<br />   Fixes an issue that incorrectly displayed STREAM\_MANAGER\_EXPORTER\_MAX\_BANDWIDTH in Mpbs instead of bytes/sec.    |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

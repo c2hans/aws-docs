@@ -44,7 +44,3 @@ Set up an OpenSearch Serverless collection for my search application
 1. Make sure your AWS credentials are configured with permission for the OpenSearch operations you intend to run. See [Identity-based policies](ac.md#ac-types-identity) for domains and [Data access control for Amazon OpenSearch Serverless](serverless-data-access.md) for collections.
 
 1. Ask your agent an OpenSearch question. It loads the `amazon-opensearch-service` skill and runs the work for you.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

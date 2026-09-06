@@ -23,7 +23,3 @@ This section includes several advanced topics that are useful to more experience
 + [Third party notices for AWS CodeBuild for Windows](notice.md)
 + [Use CodeBuild condition keys as IAM service role variables to control build access](permissions-conditionkeys-variables.md)
 + [AWS CodeBuild condition keys](action-context-keys.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

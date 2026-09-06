@@ -35,9 +35,6 @@ AgentCore Identity uses specific terminology to describe the components, process
   <tr><td colspan="2"> <b>Service Components</b> </td></tr>
   <tr><td>Resource credential provider</td><td>A component that manages connections to external identity providers and resource servers, handling OAuth 2.0 authorization flows and credential retrieval. It orchestrates the complex process of obtaining and refreshing credentials from third-party services. For detailed configuration information, see <a href="resource-providers.md">Configure credential provider</a>.</td></tr>
   <tr><td>Token vault</td><td>A secure storage system for OAuth 2.0 tokens, API keys, and other credentials that operates with strict access controls. The token vault ensures credentials can only be accessed by the specific agent and user combination that originally obtained them.</td></tr>
+  <tr><td>Consent portal</td><td>A hosted, AWS-managed portal that authenticates your end users to an OIDC identity provider and gathers their consent before an agent accesses a downstream resource on their behalf. A consent portal attaches to an AgentCore Gateway configured with JWT inbound authentication and keeps the OAuth flow server-side. For more information, see <a href="identity-consent-portal.md">Configure a consent portal</a>.</td></tr>
 </tbody>
 </table>
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

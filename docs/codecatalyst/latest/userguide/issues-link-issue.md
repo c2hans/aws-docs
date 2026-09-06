@@ -30,7 +30,3 @@ You can change the state of a link after you create it. Links and their link sta
 1. To add another link, choose **Add linked issue**.
 
 1. When you are done, choose **Update** to update the issue and all linked issues with the linked relationship.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

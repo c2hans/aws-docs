@@ -82,7 +82,3 @@ For pause hooks, you can configure the timeout up to 20,160 minutes (14 days). T
 | POST\_PRODUCTION\_TRAFFIC\_SHIFT | The production traffic shift is complete. | Yes |
 | BAKE\_TIME | The duration when both blue and green service revisions are running simultaneously. | No |
 | CLEAN\_UP | The blue service revision has completely scaled down to 0 running tasks. The green service revision is now the production service revision after this stage. | No |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

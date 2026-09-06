@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/welcome.html
 
 Welcome to the *Amazon Redshift Database Developer Guide*. This guide focuses on helping you understand how to use Amazon Redshift to create and manage a data warehouse. If you work with databases as a designer, software developer, or administrator, this guide gives you the information you need to design, build, query, and maintain your data warehouse.
 
-Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. Amazon Redshift Serverless lets you access and analyze data without the usual configurations of a provisioned data warehouse. Resources are automatically provisioned and data warehouse capacity is intelligently scaled to deliver fast performance for even the most demanding and unpredictable workloads. You don't incur charges when the data warehouse is idle, so you only pay for what you use. Regardless of the size of the dataset, you can load data and start querying right away in the Amazon Redshift query editor v2 or in your favorite business intelligence (BI) tool. Enjoy the best price performance and familiar SQL features in an easy-to-use, zero administration environment.
+Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. With Amazon Redshift Serverless, you can access and analyze data without the usual configurations of a provisioned data warehouse. Resources are automatically provisioned and data warehouse capacity is intelligently scaled to deliver fast performance for even the most demanding and unpredictable workloads. You don't incur charges when the data warehouse is idle, so you only pay for what you use. Regardless of the size of the dataset, you can load data and start querying right away in the Amazon Redshift query editor v2 or in your favorite business intelligence (BI) tool. Enjoy the best price performance and familiar SQL features in an easy-to-use, zero administration environment.
 
 **Topics**
 + [Prerequisites for using Amazon Redshift](#c-dev-guide-prereqs)
@@ -27,7 +27,3 @@ Before you use this guide, you should read [Get started with Redshift Serverless
 + Loading in data from Amazon S3.
 
 You should also know how to use your SQL client and should have a fundamental understanding of the SQL language.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

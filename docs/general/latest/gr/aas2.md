@@ -612,7 +612,3 @@ The following are the service endpoints and service quotas for this service.
 | Users in the user pool | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/appstream2/quotas/L-6A8C9986)  | The maximum number of users that you can create in the user pool in this account in the current Region. |
 
 \*For fleets that have **Default Internet Access** enabled, the quota is 100 fleet instances. If your deployment must support more than 100 concurrent users, use a NAT gateway configuration instead.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ Review all the entities (for example, Inbound Order, Inbound Order Line, and Inb
 1. Choose **Confirm and configure data ingestion later** if you want to ingest data later. You can ingest data anytime after creating the connection from the AWS Supply Chain dashboard.
 
 1. On the AWS Supply Chain dashboard, choose **Open Connections**. Select the connection dataflow that you want to ingest data, choose the vertical ellipsis, and select **Ingestion setup**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

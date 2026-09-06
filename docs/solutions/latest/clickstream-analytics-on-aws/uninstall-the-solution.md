@@ -36,7 +36,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
    1.  In the search bar, enter DataBucket. It shows all resources with the name DataBucket created by the guidance. You can find the resource type **AWS::S3::Bucket**, and the **Physical ID** field is the S3 bucket name.
 
    1.  Go to the S3 console, and find the S3 bucket with the bucket name. **Empty** and **Delete** the S3 bucket.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Clickstream Analytics on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

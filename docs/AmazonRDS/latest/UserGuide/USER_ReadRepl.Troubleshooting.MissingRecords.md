@@ -115,7 +115,3 @@ We recommend the following best practices to avoid replication inconsistencies:
 + Set `sync_binlog` to `1` on the primary instance.
 + Verify table schema parity between the primary and replica.
 + Ensure that replicated tables have primary keys.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,7 +35,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/design
 1.  AWS Wavelength: Deploy 5G applications at the edge of the mobile network using AWS Wavelength. Wavelength Zones are AWS infrastructure deployments embedded within the telco's data centers, providing ultra-low latency connectivity to mobile users and devices.
 
 1.  AWS Local Zones: Deploy 5G, Cable, and Wireline networks using AWS Local Zones.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

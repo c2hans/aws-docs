@@ -17,16 +17,10 @@ MediaLive implements the following features of AWS Elemental Inference:
 
 Elemental Inference has its own quotas. All of these quotas apply when you use the Elemental Inference features of MediaLive.
 
-For example, there are Elemental Inference quotas relating to feeds and feed outputs. When you include Elemental Inference features in a MediaLive channel, feeds and feed outputs are created as follows:
-+ One feed is created, regardless of the number of enabled features.
-+ One output is created for each enabled feature in the channel.
+For example, there are Elemental Inference quotas relating to feeds and feed outputs. To use Elemental Inference features with an MediaLive channel, select an existing feed. Configure the feed with the appropriate outputs for the features you want to use (for example, a subtitling output for Smart Subtitles, a cropping output for smart crop, or a clipping output for event clipping).
 
-Keep in mind that these feeds and outputs are part of your Elemental Inference quotas.
+Keep in mind that these feeds and outputs count toward your Elemental Inference quotas.
 
 For information about the default values for quotas and which quotas can be changed (adjusted) see the Elemental Inference section in [AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits).
 
 For more information about changing Elemental Inference quotas, see the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/elemental-inference/quotas).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

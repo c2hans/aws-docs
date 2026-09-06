@@ -10,7 +10,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics
  MQTT is a simple, secure, flexible, and robust IoT protocol. It allows you to define communication networks between devices and the cloud that can tailor fit an increasingly large number of customer use cases. To support you on your initial steps in using MQTT on AWS IoT, this whitepaper has presented several best practices, guidelines, and considerations that can be used when reviewing how to implement IoT device communications.
 
  AWS IoT enables the definition of several MQTT communication patterns - point-to-point, broadcast, and fan-in — that relate to different use cases. In addition, AWS IoT Services provide you with additional managed services including, but not limited to, AWS IoT Jobs, AWS IoT Device Shadow service, and the AWS IoT Rules Engine.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

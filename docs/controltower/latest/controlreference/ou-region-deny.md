@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ou-
 
 *This control is commonly referred to as the OU Region deny control, or the configurable Region deny control.*
 
-This control disallows access to unlisted operations in global and regional AWS services, outside of the specified Regions for an organizational unit (OU). You can apply this control to any subset of the Regions that are governed by your AWS Control Tower landing zone.
+With this control, you can restrict access to unlisted operations in global and regional AWS services outside of the specified Regions. You apply this control to an organizational unit (OU). You can apply this control to any subset of the Regions that are governed by your AWS Control Tower landing zone. You must always include your AWS Control Tower home Region.
 
 You may wish to review the information at [Configure the Region deny control](https://docs.aws.amazon.com/controltower/latest/userguide/region-deny.html) before you enable this control.
 
@@ -242,7 +242,3 @@ The following example shows a full SCP artifact for the control. It shows the ac
     ]
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

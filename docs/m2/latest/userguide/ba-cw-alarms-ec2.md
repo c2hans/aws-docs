@@ -89,7 +89,3 @@ In order for the above configuration to correctly push logs to CloudWatch, updat
 <a name="alarm-setup"></a>
 
 Thanks to CloudWatch logs, you can then configure different metrics and alarms, depending on your application and your needs. Specifically, you can set up proactive alarms for usage alerts, in order to be warned in the case of errors that might put your application in a grace period (and in the end, prevent it from working at all). To achieve this, you can add a metric concerning the "Error C5001" string in the logs, which highlights errors in the connection to the AWS Transform for mainframe control system. You can then define an alarm that reacts to this metric.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

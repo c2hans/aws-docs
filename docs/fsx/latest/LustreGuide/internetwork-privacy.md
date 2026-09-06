@@ -25,7 +25,3 @@ To access AWS-published API operations, clients must support Transport Layer Sec
 <a name="encrypt-data-traffic"></a>
 
  Encryption of data in transit is enabled from supported EC2 instances accessing the file systems from within the AWS Cloud. For more information, see [Encrypting data in transit](encryption-in-transit-fsxl.md). FSx for Lustre does not natively offer encryption in transit between on-premise clients and file systems.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ Establish scalable, fine-grained access controls that balance security with team
 + [[AG.SAD.6] Conduct periodic identity and access management reviews](ag.sad.6-conduct-periodic-identity-and-access-management-reviews.md)
 + [[AG.SAD.7] Implement rotation policies for secrets, keys, and certificates](ag.sad.7-implement-rotation-policies-for-secrets-keys-and-certificates.md)
 + [[AG.SAD.8] Adopt a zero trust security model, shifting towards an identity-centric security perimeter](ag.sad.8-adopt-a-zero-trust-security-model-shifting-towards-an-identity-centric-security-perimeter.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

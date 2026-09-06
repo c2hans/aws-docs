@@ -63,7 +63,3 @@ Lightsail object storage is intentionally built with a minimal feature set that 
 + **Change the storage plan** – Upsize your bucket if it's being over-utilized, or downsize it if it's being under-utilized. For more information, see [Change the plan of your bucket](amazon-lightsail-changing-bucket-plans.md).
 + **Connect your bucket** – Connect your Lightsail bucket to your WordPress website to store website images and attachments. You can also specify your bucket as the origin of a Lightsail content delivery network (CDN) distribution. This speeds up the delivery of objects in your bucket to your users around the world. For more information, see [Tutorial: Connect a bucket to your WordPress instance](amazon-lightsail-connecting-buckets-to-wordpress.md) and [Tutorial: Use a bucket with a content delivery network distribution](amazon-lightsail-using-distributions-with-buckets.md).
 + **Delete your bucket** – Delete your bucket if you are no longer using it. For more information, see [Delete a bucket](amazon-lightsail-deleting-buckets.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

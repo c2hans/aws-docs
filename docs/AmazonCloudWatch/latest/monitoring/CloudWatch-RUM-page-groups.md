@@ -23,7 +23,3 @@ awsRum.recordPageView({ pageId: '/home', pageTags: ['en', 'landing']});
 
 **Note**
 Page groups are intended to facilitate aggregating analytics across different pages. For information about how to define and manipulate `pageIds` for your application, see the **Manually recording page views** section in [Modifying the code snippet to configure the CloudWatch RUM web client (optional)](CloudWatch-RUM-modify-snippet.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

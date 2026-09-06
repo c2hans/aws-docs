@@ -18,7 +18,3 @@ The following topics explain how to use HealthImaging cloud native actions in th
 + [Getting image set properties](get-image-set-properties.md)
 + [Getting image set metadata](get-image-set-metadata.md)
 + [Getting image set pixel data](get-image-frame.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

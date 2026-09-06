@@ -24,7 +24,3 @@ This documentation helps you understand how to apply the shared responsibility m
 
 **Note**
 When you use billing transfer as a bill source account, your billing and cost management data transfers to an external management account (bill transfer account). The bill transfer account controls your billing and cost management experience. The bill source account can't override billing transfer effects using IAM policies. To regain control of your billing and cost management data, you must withdraw from billing transfer. For more information, see [Transfer billing management to external accounts](orgs_transfer_billing.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

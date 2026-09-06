@@ -44,7 +44,3 @@ For information about the AWS Regions that RStudio on SageMaker AI is supported 
 Users can create multiple RSession applications on the same instance. Each instance type supports up to four colocated RSession applications. This applies to each user independently. For example, if two users create applications, then SageMaker AI allocates different underlying instances to each user. Each of these instances would support 4 RSession applications.
 
 Customers only pay for the instance type used regardless of how many Rsession applications are running on the instance. If a user creates an RSession with a different associated instance type, then a new underlying instance is created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

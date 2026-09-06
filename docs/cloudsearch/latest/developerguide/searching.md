@@ -26,7 +26,3 @@ For information about all of the Amazon CloudSearch search parameters, see the [
 + [Searching DynamoDB Data with Amazon CloudSearch](searching-dynamodb-data.md)
 + [Filtering Matching Documents in Amazon CloudSearch](filtering-results.md)
 + [Tuning Search Request Performance in Amazon CloudSearch](tuning-search.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,7 +10,3 @@ When you join a meeting, you can choose to join with audio or audio and video. I
 **To turn on your webcam**
 + In the call control bar at the bottom of the meeting window, choose the **Video** icon.
 + To turn your camera off, choose the **Video** icon again.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ The data type of a condition key determines which condition operators you can us
 **IAM condition keys for Neptune data-access policy statements**
 + [Global condition keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html)   –   The subset of these keys that Neptune supports in data-access policy statements is listed in [AWS global condition context keys supported by Neptune in data-access policy statements](iam-data-condition-keys.md#iam-data-global-condition-keys).
 + Service-specific condition keys that Neptune defines for data-access policy statements are listed in [Condition Keys](iam-data-condition-keys.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

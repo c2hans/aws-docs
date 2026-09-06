@@ -41,7 +41,3 @@ For notification about updates to this documentation, you can subscribe to the R
 | [CloudFormation integration](https://docs.aws.amazon.com/entityresolution/latest/userguide/creating-resources-with-cloudformation.html) | AWS Entity Resolution now integrates with CloudFormation. | August 24, 2023 |
 | [AWS managed policy update - New policies](https://docs.aws.amazon.com/entityresolution/latest/userguide/security-iam-awsmanpol.html) | AWS Entity Resolution added two new managed policies. | August 18, 2023 |
 | [Initial release](#doc-history) | Initial release of the AWS Entity Resolution User Guide | July 26, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

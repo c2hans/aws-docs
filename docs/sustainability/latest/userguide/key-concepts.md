@@ -38,7 +38,3 @@ The environmental data presented in the AWS Sustainability service reflects the 
 **AWS Organizations**
 If you're signed in as a management account of AWS Organizations, the AWS Sustainability service will report the consolidated environmental impact of all the member accounts within that management account, for the duration that those member accounts were a part of your organization. The field **usage account** shows the breakdown of each account with usage within the management account, so you can understand where your environmental impact comes from.
 If you're signed in as a member account, the AWS Sustainability service will report emission data for the member account only.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sustainability. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sustainability` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

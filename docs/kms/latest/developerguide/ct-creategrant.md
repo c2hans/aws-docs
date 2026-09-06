@@ -107,7 +107,3 @@ The following example shows a `CreateGrant` log entry for a service principal gr
 
 **Note**
 When a grant is created with the `GranteeServicePrincipal` parameter, the CloudTrail log entry for the `CreateGrant` operation includes a `granteeServicePrincipal` field instead of `granteePrincipal`. Similarly, if a `RetiringServicePrincipal` is specified, the log entry includes a `retiringServicePrincipal` field instead of `retiringPrincipal`. This distinguishes grants that were explicitly created with `GranteeServicePrincipal` for an AWS [service principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html#principal-services) from grants where an AWS service is represented in the `granteePrincipal` field.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

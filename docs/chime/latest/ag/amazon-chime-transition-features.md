@@ -199,7 +199,3 @@ Organizations with at least one Amazon Chime Team or Enterprise account, can con
 + [Amazon Chime Help Center](https://answers.chime.aws)
 + Learn more about [AWS Wickr](https://aws.amazon.com/wickr) and [AWS partner solutions](https://aws.amazon.com/marketplace).
 + If you need assistance or have feedback, contact [Support](https://aws.amazon.com/support/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

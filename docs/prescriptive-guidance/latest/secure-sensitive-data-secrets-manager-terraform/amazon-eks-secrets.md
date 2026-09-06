@@ -14,7 +14,3 @@ The following image shows Amazon EKS deployed on an [Amazon Elastic Compute Clou
 The following image shows Amazon EKS deployed on [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html). You can use the open source [External Secrets Operator API](https://github.com/external-secrets/external-secrets) (GitHub) to retrieve secrets from Secrets Manager. For more information, see [Leverage AWS secrets stores from EKS Fargate with External Secrets Operator](https://aws.amazon.com/blogs/containers/leverage-aws-secrets-stores-from-eks-fargate-with-external-secrets-operator/) in the AWS Containers Blog.
 
 ![Amazon EKS deployed on AWS Fargate.](http://docs.aws.amazon.com/prescriptive-guidance/latest/secure-sensitive-data-secrets-manager-terraform/images/guide-img/e6185df2-3707-4018-a94c-6edc793f0353/images/79e0f20a-c152-4a6b-8c0e-76fd96e4f86e.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

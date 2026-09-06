@@ -18,7 +18,3 @@ The following table describes the documentation for this release of Conductor Li
 | [Rules for software versions](upgrades-version-rules.md) | This guide now contains information about the rules for combining different software versions on the nodes in a AWS Elemental Conductor Live cluster. | February 19, 2024 |
 | [Cross-version release of the guide](about-cl3-upg.md) | This guide has been modified so that it isn't for a specific version of AWS Elemental Conductor Live. The upgrade and downgrade procedures don't change from version to version.  | November 11, 2021 |
 | [Version 3.22 release](about-cl3-upg.md) | First release of the 3.22 software version. | February 6, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

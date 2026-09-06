@@ -15,7 +15,3 @@ Before you install Apache Ranger, review the information in this section to make
 + [Start an EMR cluster with Apache Ranger](emr-ranger-start-emr-cluster.md)
 + [Configure Zeppelin for Apache Ranger-enabled Amazon EMR clusters](emr-ranger-configure-zeppelin.md)
 + [Known issues for Amazon EMR integration](emr-ranger-security-considerations.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

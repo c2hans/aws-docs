@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/adobe-integration
 # Adobe Marketing Agent integration
 <a name="adobe-integration"></a>
 
-With the Adobe Marketing Agent action connector, you can work with Adobe Experience Platform marketing data and AI-powered marketing capabilities directly in Amazon Quick through natural language.
+With the Adobe Marketing Agent connector, you can work with Adobe Experience Platform marketing data and AI-powered marketing capabilities directly in Amazon Quick through natural language.
 
 Amazon Quick supports multiple authentication methods for Adobe Marketing Agent. Choose the method that best fits your organization's security requirements.
 + **Default OAuth app** – Uses an AWS-managed OAuth application. No additional credentials are needed. Users authenticate directly with their Adobe account.
@@ -108,7 +108,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Sign-in fails (Default OAuth app or Custom OAuth app)** – Verify that your Adobe account is active and that you can sign in to Adobe directly. For Custom OAuth app, confirm that the redirect URI in your Adobe Developer Console app matches the Amazon Quick callback URL.
 + **Invalid client credentials (Custom OAuth app or Service-to-Service OAuth)** – Verify that the Client ID and Client secret match the values in your Adobe Developer Console app.
 + **API Key authentication fails** – Verify that the API key has not been revoked and that it has the required scopes for the operations you want to perform.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -198,7 +198,3 @@ Ensure that your activation code is in the base64 format.
 If you have any issues with these steps, see [Troubleshoot Amazon EKS Connector issues](troubleshooting-connector.md).
 
 To grant additional [IAM principals](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html#iam-term-principal) access to the Amazon EKS console to view Kubernetes resources in a connected cluster, see [Grant access to view Kubernetes cluster resources on an Amazon EKS console](connector-grant-access.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

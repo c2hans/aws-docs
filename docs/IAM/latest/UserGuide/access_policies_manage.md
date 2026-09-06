@@ -27,7 +27,3 @@ The following resources can help you learn more about AWS policies.
 + For information about how to use IAM Access Analyzer to generate an IAM policy that is based on access activity for an entity, see [IAM Access Analyzer policy generation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-generation.html).
 + For information about how permissions are evaluated when multiple policies are in effect for a given IAM identity, see [Policy evaluation logic](reference_policies_evaluation-logic.md).
 + The number and size of IAM resources in an AWS account are limited. For more information, see [IAM and AWS STS quotas](reference_iam-quotas.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

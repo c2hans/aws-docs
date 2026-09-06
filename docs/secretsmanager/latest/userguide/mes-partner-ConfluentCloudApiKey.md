@@ -59,7 +59,3 @@ You can create your secret using the [CreateSecret](https://docs.aws.amazon.com/
 For customers opting to rotate their secrets using a separate set of admin credentials, create the Admin Secret in AWS Secrets Manager containing the admin `apiKey` and `apiSecret`. You must provide the ARN of this Admin Secret in the rotation metadata in a [RotateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html) call for your API key secret.
 
 During rotation, the driver creates a new API key for the target Service Account via the Confluent Cloud API, verifies the new key, updates the secret with new credentials, and deletes the old API key.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

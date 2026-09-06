@@ -155,7 +155,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 **Note**
  If you are currently using AWS Identity Center and you are not using an external IdP (you are using the IAM Identity Center store or your domain service for your identity source), you can use this break glass access in case of Identity Center failure. Review how to set up [emergency access for your IAM Identity Center.](https://docs.aws.amazon.com/singlesignon/latest/userguide/emergency-access.html)
  We strongly recommend configuring these users with a hardware-based MFA device, which can be used in exceptional circumstances to gain access to the organization management account or sub-accounts within the organization by assuming a role. While we recommend the use of the organization management account for break glass access, some organizations might choose to add a dedicated break glass account. This does not eliminate the need for organizational break glass users in the organization management account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

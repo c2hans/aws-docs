@@ -46,7 +46,3 @@ To choose the drive letters for your volumes, choose **Mappings**. In the **Driv
 After you specify a drive letter mapping and attach a volume with same label as one of the volume names that you specified, EC2Config automatically assigns your specified drive letter to that volume. However, the drive letter mapping fails if the drive letter is already in use. Note that EC2Config doesn't change the drive letters of volumes that were already mounted when you specified the drive letter mapping.
 
 1. To save your settings and continue working on them later, choose **OK** to close the **EC2 Service Properties** system dialog. If you have finished customizing your instance and want to create an AMI from that instance, see [Create an Amazon EC2 AMI using Windows Sysprep](ami-create-win-sysprep.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

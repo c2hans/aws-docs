@@ -27,7 +27,3 @@ Disconnects caused by AWS IoT's service maintenance are logged as `SERVER_INITIA
 Disconnects caused by a throttling limit are logged as `THROTTLED` in AWS IoT's lifecycle event and CloudWatch. To handle these disconnects, you can request [message broker limit increases](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#message-broker-limits) as the device count grows.
 
 For more information, see [AWS IoT Core Message Broker](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#message-broker-limits).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,13 +11,10 @@ You can use runtime hooks to implement code before Lambda creates a snapshot or 
 + **External integrations:** You can use runtime hooks to integrate with external services or systems, such as sending notifications or updating external state, as part of the checkpointing and restoration process.
 + **Performance tuning:** You can use runtime hooks to fine-tune your function's startup sequence, such as by preloading dependencies. For more information, see [Performance tuning](snapstart-best-practices.md#snapstart-tuning).
 
-The following pages explain how to implement runtime hooks for your preferred runtime. For Java-specific instructions, see [Lambda SnapStart runtime hooks for Java](snapstart-runtime-hooks-java.md).
+The following pages explain how to implement runtime hooks for your preferred runtime.
 
 **Topics**
 + [Java](snapstart-runtime-hooks-java.md)
 + [Python](snapstart-runtime-hooks-python.md)
 + [.NET](snapstart-runtime-hooks-dotnet.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ [Container image functions](snapstart-runtime-hooks-custom.md)

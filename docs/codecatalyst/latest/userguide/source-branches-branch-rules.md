@@ -55,7 +55,3 @@ You must have the Project administrator role to configure branch rules for sourc
 1. To create or change a branch rule, choose **Manage settings**. On the settings page for the source repository, in **Branch rules**, choose **Edit**.
 
 1. In **Branch**, choose the name of the branch for which you want to configure a rule from the drop-down list. For each of the allowed action types, choose the roles you want to allow to perform that action from the drop-down list, and then choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

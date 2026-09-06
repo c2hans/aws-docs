@@ -147,7 +147,3 @@ In addition, the target warehouse places certain limits on the number of tables 
 <a name="zero-etl.regions"></a>
 
 RDS zero-ETL integrations are available in a subset of AWS Regions. For a list of supported Regions, see [Supported Regions and DB engines for Amazon RDS zero-ETL integrations](Concepts.RDS_Fea_Regions_DB-eng.Feature.ZeroETL.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

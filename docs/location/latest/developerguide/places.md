@@ -64,7 +64,3 @@ Determine the correct time zone for specific locations (city, address, coordinat
 | Suggest | Suggest provides intelligent predictions or recommendations based on the user’s input or context, such as relevant places, points of interest or query term | [Suggest](suggest.md) |
 | Search Text | Search Text provides an ability to search for places, addresses or point of interest using textual input, and it returns information such as a place name, address, phone, category, food type, contact, opening hours. | [Search Text](search-text.md) |
 | Search Nearby | Search nearby provides an ability to search for points of interest within a specified radius or distance from a geographic coordinates. | [Search Nearby](search-nearby.md) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

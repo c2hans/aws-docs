@@ -17,7 +17,3 @@ The *Operation* field in your billing report identifies the type of MediaLive ch
 | INACTIVE\_CHANNEL | Idle channel charges |
 | INACTIVE\_INPUT | Idle push input charges |
 | INACTIVE\_MULTIPLEX | Idle multiplexer charges |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

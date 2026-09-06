@@ -48,7 +48,3 @@ Following are some sample dates or times you can encounter in your source data, 
 <a name="r_DATEFORMAT_and_TIMEFORMAT_strings-examples"></a>
 
 For an example of using TIMEFORMAT, see [Load a timestamp or datestamp](r_COPY_command_examples.md#r_COPY_command_examples-load-a-time-datestamp).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

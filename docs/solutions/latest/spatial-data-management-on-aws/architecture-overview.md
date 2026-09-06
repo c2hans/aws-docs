@@ -41,7 +41,3 @@ Third-party systems integrate through:
 +  **S3 APIs** – Direct access to spatial assets with temporary credentials
 +  **Webhooks** – Event notifications for asset changes
 +  **Connectors** – Pre-built integrations for common platforms (Digital Twin, Geographic Information Systems (GIS), and Computer-Aided Design (CAD) tools)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

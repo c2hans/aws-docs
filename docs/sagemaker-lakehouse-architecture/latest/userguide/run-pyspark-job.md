@@ -44,7 +44,3 @@ To avoid incurring costs on your AWS accounts, delete the following resources th
 + Amazon S3 buckets that you created as part of data transfer in both accounts
 + Athena query results bucket in account B
 + IAM roles for the lakehouse architecture setup
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker lakehouse architecture. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-lakehouse-architecture` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

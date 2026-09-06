@@ -88,7 +88,3 @@ In this section, you implement one Lambda function for your Amazon ECS deploymen
    ```
 
 1.  Make a note of your Lambda function ARN in the `create-function` response. You use this ARN when you update your CodeDeploy deployment's AppSpec file in the next step.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

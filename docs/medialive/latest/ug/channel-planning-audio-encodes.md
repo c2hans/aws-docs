@@ -21,7 +21,3 @@ You must decide on the number of audio encodes. Follow this procedure for each o
    + There is no requirement for the count of encodes to be the same for all languages. For example, you could create two encodes for Spanish, and only one encode for the other languages.
 
 1. Identify the bitrate for each audio encode. You might have obtained requirements or recommendations from your downstream system when you [identified the output encodes](#channel-planning-audio-encodes).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

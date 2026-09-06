@@ -28,8 +28,8 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/minimal-container.html
 | --- | --- | --- | --- |
 | Amazon Linux 1 (AL1) | 2018.03.0.20230918.0 | 62.3MB | x86-64 only |
 | Amazon Linux 2 | 2.0.20230926.0 | 64.2MB | aarch64 is 1.6MB larger than x86-64 |
-| Amazon Linux 2023 base container image | 2023.2.20231002.0 | 52.4MB |  |
-| Amazon Linux 2023 minimal container image | 2023.2.20231002.0-minimal | 35.2MB |  |
+| Amazon Linux 2023 base container image | 2023.12.20260831.0 | 54.6MB |  |
+| Amazon Linux 2023 minimal container image | 2023.12.20260831.0-minimal | 37.4MB |  |
 
 ## Using the AL2023 Minimal Container image
 <a name="using-container-minimal"></a>
@@ -52,7 +52,3 @@ The following example shows a `Dockerfile` that takes the minimal container imag
 FROM public.ecr.aws/amazonlinux/amazonlinux:2023-minimal
 RUN dnf install -y gcc && dnf clean all
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

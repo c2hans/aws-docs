@@ -136,7 +136,3 @@ The IonQ and Rigetti devices compile the provided circuit into their respective 
 QPU devices have limited capacity. You can expect longer wait times when capacity is reached.
 
  Amazon Braket can run QPU quantum tasks within certain availability windows, but you can still submit quantum tasks any time (24/7) because all corresponding data and metadata are stored reliably in the appropriate S3 bucket. As shown in the next section, you can recover your quantum task using `AwsQuantumTask` and your unique quantum task ID.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

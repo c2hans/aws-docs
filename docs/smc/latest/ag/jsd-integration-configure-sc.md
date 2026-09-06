@@ -28,7 +28,3 @@ The AWS configuration design requires each Service Catalog product to have eithe
 This video (11:22) describes how to integrate AWS products into your Jira Service Management portal. Jira Service Management enables end users to provision, manage, and operate AWS resources natively with Jira Service Management from Atlassian.
 
 [![AWS Videos](http://img.youtube.com/vi/1AODGjhqufo/0.jpg)](http://www.youtube.com/watch?v=1AODGjhqufo)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

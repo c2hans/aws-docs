@@ -23,23 +23,23 @@ For other examples, see [Amazon Bedrock AgentCore Memory examples](memory-exampl
 Before starting, make sure you have:
 +  ** AWS Account** with credentials configured ( `aws configure` )
 +  **Python 3.10\+** installed
-+ Node.js 18\+ installed (for the AgentCore CLI)
++ Node.js 20\+ installed (for the AgentCore CLI)
 
 To get started with Amazon Bedrock AgentCore Memory, install the dependencies, create an AgentCore CLI project, and set up a virtual environment. The following commands can be run directly in the terminal.
 
 ```
-pip install bedrock-agentcore
 npm install -g @aws/agentcore
-agentcore create --name agentcore-memory-quickstart --no-agent
-cd agentcore-memory-quickstart
+agentcore create --project-name MemoryQuickstart --no-agent
+cd MemoryQuickstart
 python -m venv .venv
 source .venv/bin/activate
+pip install bedrock-agentcore
 ```
 
-The AgentCore CLI provides commands for creating and managing memory resources. Use `agentcore add memory` to create a memory, and `agentcore deploy` to provision it in AWS. For event operations and session management, use the AWS Python SDK (Boto3) ( `bedrock-agentcore` ).
+The AgentCore CLI provides commands for creating and managing memory resources. Use `agentcore add memory` to create a memory, and `agentcore deploy` to provision it in AWS. For event operations and session management, use the AgentCore Python SDK (`bedrock-agentcore`).
 
 **Note**
-The AgentCore CLI helps you create and deploy memory resources. For the complete set of Amazon Bedrock AgentCore Memory operations, see the Boto3 documentation: [bedrock-agentcore-control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/bedrock-agentcore-control.html) and [bedrock-agentcore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/bedrock-agentcore.html).
+The AgentCore CLI helps you create and deploy memory resources. For direct service API operations, see the Boto3 documentation: [bedrock-agentcore-control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/bedrock-agentcore-control.html) and [bedrock-agentcore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/bedrock-agentcore.html).
 
  **Full example:** See the [Amazon Bedrock AgentCore samples](https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/01-features/04-manage-context-of-your-agent/memory) that demonstrate steps 1-3.
 
@@ -269,7 +269,3 @@ Consider the following:
 +  [Add another strategy](long-term-enabling-long-term-memory.md#long-term-adding-strategies-to-existing-memory) to your memory resource.
 +  [Enable observability](memory-observability.md) for more visibility into how memory is working
 + Look at further [examples](memory-examples.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

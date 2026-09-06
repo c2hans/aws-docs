@@ -52,9 +52,11 @@ The following data types are supported by Agents for Amazon Bedrock:
 +  [CustomS3Location](API_agent_CustomS3Location.md)
 +  [CustomTransformationConfiguration](API_agent_CustomTransformationConfiguration.md)
 +  [CyclicConnectionFlowValidationDetails](API_agent_CyclicConnectionFlowValidationDetails.md)
++  [DailySchedule](API_agent_DailySchedule.md)
 +  [DataSource](API_agent_DataSource.md)
 +  [DataSourceConfiguration](API_agent_DataSourceConfiguration.md)
 +  [DataSourceSummary](API_agent_DataSourceSummary.md)
++  [DayOfMonth](API_agent_DayOfMonth.md)
 +  [DeletionProtectionConfiguration](API_agent_DeletionProtectionConfiguration.md)
 +  [DocumentAccessControlEntry](API_agent_DocumentAccessControlEntry.md)
 +  [DocumentContent](API_agent_DocumentContent.md)
@@ -112,6 +114,7 @@ The following data types are supported by Agents for Amazon Bedrock:
 +  [KnowledgeBasePromptTemplate](API_agent_KnowledgeBasePromptTemplate.md)
 +  [KnowledgeBaseSummary](API_agent_KnowledgeBaseSummary.md)
 +  [LambdaFunctionFlowNodeConfiguration](API_agent_LambdaFunctionFlowNodeConfiguration.md)
++  [LastDayOfMonth](API_agent_LastDayOfMonth.md)
 +  [LexFlowNodeConfiguration](API_agent_LexFlowNodeConfiguration.md)
 +  [LoopControllerFlowNodeConfiguration](API_agent_LoopControllerFlowNodeConfiguration.md)
 +  [LoopFlowNodeConfiguration](API_agent_LoopFlowNodeConfiguration.md)
@@ -140,6 +143,7 @@ The following data types are supported by Agents for Amazon Bedrock:
 +  [MissingStartingNodesFlowValidationDetails](API_agent_MissingStartingNodesFlowValidationDetails.md)
 +  [MongoDbAtlasConfiguration](API_agent_MongoDbAtlasConfiguration.md)
 +  [MongoDbAtlasFieldMapping](API_agent_MongoDbAtlasFieldMapping.md)
++  [MonthlySchedule](API_agent_MonthlySchedule.md)
 +  [MultipleLoopControllerNodesFlowValidationDetails](API_agent_MultipleLoopControllerNodesFlowValidationDetails.md)
 +  [MultipleLoopInputNodesFlowValidationDetails](API_agent_MultipleLoopInputNodesFlowValidationDetails.md)
 +  [MultipleNodeInputConnectionsFlowValidationDetails](API_agent_MultipleNodeInputConnectionsFlowValidationDetails.md)
@@ -218,6 +222,7 @@ The following data types are supported by Agents for Amazon Bedrock:
 +  [StorageFlowNodeServiceConfiguration](API_agent_StorageFlowNodeServiceConfiguration.md)
 +  [SupplementalDataStorageConfiguration](API_agent_SupplementalDataStorageConfiguration.md)
 +  [SupplementalDataStorageLocation](API_agent_SupplementalDataStorageLocation.md)
++  [SyncSchedule](API_agent_SyncSchedule.md)
 +  [SystemContentBlock](API_agent_SystemContentBlock.md)
 +  [TextContentDoc](API_agent_TextContentDoc.md)
 +  [TextPromptTemplateConfiguration](API_agent_TextPromptTemplateConfiguration.md)
@@ -254,7 +259,4 @@ The following data types are supported by Agents for Amazon Bedrock:
 +  [WebCrawlerLimits](API_agent_WebCrawlerLimits.md)
 +  [WebDataSourceConfiguration](API_agent_WebDataSourceConfiguration.md)
 +  [WebSourceConfiguration](API_agent_WebSourceConfiguration.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++  [WeeklySchedule](API_agent_WeeklySchedule.md)

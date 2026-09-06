@@ -20,7 +20,3 @@ This model requires you to modify your mechanisms to work with those of your ser
 You gain the advantage of your providers’ standards, best practices, processes, and expertise. You also gain the benefits of their ongoing development of their service offerings.
 
 Adding managed services to your operating model can save you time and resources and keeps your internal teams lean and focused on strategic outcomes that differentiate your business, rather than developing new skills and capabilities. It can also provide time for you to build and mature your own platform capabilities without slowing down your cloud migration programs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,7 +38,3 @@ Trusted Advisor has the following Amazon RDS -related checks:
 For more information on these checks, see [Trusted Advisor best practices (checks)](https://aws.amazon.com/premiumsupport/trustedadvisor/best-practices/).
 
 For more information about monitoring Amazon RDS , see [Monitoring metrics in an Amazon RDS instance](CHAP_Monitoring.md) .
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

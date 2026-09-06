@@ -90,7 +90,3 @@ Explore the following resources to learn more about Audit Manager.
 + Video: Collect Evidence and Manage Audit Data Using AWS Audit Manager
 [![AWS Videos](http://img.youtube.com/vi/G4yRj4nLwFI/0.jpg)](http://www.youtube.com/watch?v=G4yRj4nLwFI)
 +  [Integrate across the Three Lines Model (Part 2): Transform AWS Config conformance packs into AWS Audit Manager assessments](https://aws.amazon.com/blogs/mt/integrate-across-the-three-lines-model-part-2-transform-aws-config-conformance-packs-into-aws-audit-manager-assessments/) from the *AWS Management & Governance Blog*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

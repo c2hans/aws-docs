@@ -166,7 +166,3 @@ This step describes how to download multiple files using zipped folders.
    If the path is correct, a browser dialog offers the choice of opening the zipped folder or saving it to your local machine.
 
 1. On your local machine, you can now unzip the contents of the downloaded zipped folder.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

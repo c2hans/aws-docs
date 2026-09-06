@@ -13,7 +13,3 @@ You create the cross-account attachment in Global Accelerator. The attachment li
 Before you can add a BYOIP IP address range to a cross-account attachment to share with principals, you must complete the process to *provision* and *advertise* the address range. For more information, see [Bring your own IP addresses (BYOIP) in Global Accelerator](using-byoip.md).
 
 After you, as a resource owner, create an attachment, principals listed in the attachment can work with resources that are listed in the attachment. That is, they can add as endpoints AWS resources that are listed, or select as a static IP address a BYOIP address from CIDR prefixes that are listed. When a principal wants to add a cross-account resource for an accelerator, they must specify the cross-account attachment that authorizes them as a principal with permission to use the resource.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

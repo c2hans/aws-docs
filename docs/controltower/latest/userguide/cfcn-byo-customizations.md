@@ -13,7 +13,3 @@ This section explains the two main parts of building your own customizations:
 
 **JSON schema for the customization package**
 The JSON schema for the customization package for CfCT is located in the [source code repository on GitHub](https://github.com/aws-solutions/aws-control-tower-customizations). You can use the schema with many of your favorite development tools, and you may find it helpful for reducing errors when you build your own CfCT `manifest.yaml` file.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

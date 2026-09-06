@@ -101,7 +101,3 @@ These updates are mandatory and applied directly in your maintenance windows wit
 **Why are you doing these node replacements?** - These replacements are needed to apply mandatory software updates to your underlying host. The updates help strengthen our security, reliability, and operational performance.
 
 **Do these replacements affect my nodes in Multiple Availability Zones and clusters from different regions at the same time?** - Replacements can run in multiple Availability Zones or regions in parallel, depending on the maintenance window for clusters.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

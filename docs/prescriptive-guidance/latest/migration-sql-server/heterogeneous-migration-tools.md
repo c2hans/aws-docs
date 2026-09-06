@@ -57,7 +57,3 @@ For additional information, see the following resources:
 + [Modify SSIS packages from SQL Server to Babelfish for Aurora PostgreSQL](https://aws.amazon.com/blogs/database/modify-ssis-packages-from-sql-server-to-babelfish-for-aurora-postgresql/) (AWS Database blog)
 + [Run SQL Server Reporting Services reports against Babelfish for Aurora PostgreSQL](https://aws.amazon.com/blogs/database/run-sql-server-reporting-services-reports-against-babelfish-for-aurora-postgresql/) (AWS Database blog)
 + [Prepare for Babelfish migration with the AWS SCT assessment report](https://aws.amazon.com/blogs/database/prepare-for-babelfish-migration-with-the-aws-sct-assessment-report/) (AWS Database blog)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

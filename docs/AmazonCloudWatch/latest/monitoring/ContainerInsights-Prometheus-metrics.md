@@ -235,7 +235,3 @@ The values of the `backend` dimension can be:
 The values of the `frontend` dimension can be:
 `httpfront-default-backend`, `httpfront-shared-frontend`, or `httpfronts` for HAProxy Ingress version 0.0.27 or earlier.
 `_front_http` or `_front_https` for HAProxy Ingress versions later than 0.0.27.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

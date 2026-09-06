@@ -68,7 +68,3 @@ To view InfluxDB logs generated from the Instance you have created through Times
 + After creating the instance, you can modify the log delivery configuration with the `update-db-instance` API command.
 
 InfluxDB offers different types of logs. These can be configured by setting the InfluxDB Parameters. Use the flux-log-enabled and log-level parameters to configure the type of logs that is emitted from the instance. For more information, see [Supported parameters and parameter values](timestream-for-influx-db-connecting.md#timestream-for-influx-parameter-groups-overview-supported-parameters).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -74,7 +74,3 @@ If you are unable to export your function's configuration to Infrastructure Comp
 For a more detailed tutorial on how to design a serverless application in Infrastructure Composer based on an existing Lambda function, see [Using Lambda with infrastructure as code (IaC)](foundation-iac.md).
 
 To use Infrastructure Composer and AWS SAM to design and deploy a complete serverless application using Lambda, you can also follow the [AWS Infrastructure Composer tutorial](https://catalog.workshops.aws/serverless-patterns/en-US/dive-deeper/module1a) in the [AWS Serverless Patterns Workshop](https://catalog.workshops.aws/serverless-patterns/en-US).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

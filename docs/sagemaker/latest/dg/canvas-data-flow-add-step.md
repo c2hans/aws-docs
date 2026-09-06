@@ -13,7 +13,3 @@ To add a step to your data flow, select **\+** next to any dataset node or previ
 + **Get data insights**: Add analyses, such as histograms or custom visualizations. You can use this option to analyze your data at any point in the data flow. See [Perform exploratory data analysis (EDA)](canvas-analyses.md) to learn more about the analyses you can add.
 + **Join**: Find this option under **Combine data** to join two datasets and add the resulting dataset to the data flow. To learn more, see [Join Datasets](canvas-transform.md#canvas-transform-join).
 + **Concatenate**: Find this option under **Combine data** to concatenate two datasets and add the resulting dataset to the data flow. To learn more, see [Concatenate Datasets](canvas-transform.md#canvas-transform-concatenate).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

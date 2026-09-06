@@ -57,7 +57,3 @@ AWS Application Migration Service provides the following APIs for data retrieval
 | <a name="mgn-ListTemplateActions"></a>[ListTemplateActions](https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListTemplateActions.html) | List launch configuration template action documents | List |
 | <a name="mgn-ListWaves"></a>[ListWaves](https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListWaves.html) | List wave summaries | List |
 | <a name="mgn-VerifyClientRoleForMgn"></a>[VerifyClientRoleForMgn](https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html) | Verify client role | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

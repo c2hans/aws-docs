@@ -115,7 +115,3 @@ You receive a response that lists all variant stores, along with their IDs, stat
 You can also filter the responses for the **list-variant-stores** API based on statuses or other criteria.
 
  VCF Files imported into analytic stores created on or after May 15, 2023 have defined schemas for Variant Effect Predictor (VEP) annotations. This makes it easier to query and parse imported VCF data. The change doesn't impact stores created before May 15, 2023, except if the `annotation fields` parameter is included in the API or CLI call. For these stores, using the `annotation fields` parameter will cause the request to fail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

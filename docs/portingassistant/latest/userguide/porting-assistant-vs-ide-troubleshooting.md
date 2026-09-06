@@ -8,7 +8,3 @@ AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container 
 <a name="porting-assistant-vs-ide-troubleshooting"></a>
 
 If the Porting Assistant for .NET extension is disabled, contact [aws-porting-assistant-support@amazon.com](mailto:aws-porting-assistant-support@amazon.com).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Porting Assistant for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query portingassistant` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

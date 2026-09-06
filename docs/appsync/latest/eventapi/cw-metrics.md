@@ -7,15 +7,28 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/cw-metrics.html
 
 You can use CloudWatch metrics to monitor and provide alerts about specific events that can result in HTTP status codes or from latency.
 
+**Note**
+AWS AppSync Event API metrics use different CloudWatch dimensions than AWS AppSync GraphQL API metrics. For information about GraphQL API metrics, which are emitted under the **GraphQLAPIId** dimension, see [Using CloudWatch to monitor and log GraphQL API data](https://docs.aws.amazon.com/appsync/latest/devguide/monitoring.html).
+
+The following table summarizes the CloudWatch dimensions for each Event API metric group:
+
+| Metric group | Dimensions |
+| --- | --- |
+| HTTP endpoint metrics | EventAPIId |
+| Handler metrics | EventAPIId and ChannelNamespaceName |
+| Real-time endpoint metrics | EventAPIId and ChannelNamespaceName |
+
 ## HTTP endpoint metrics
 <a name="cw-metrics-HTTP-endpoints"></a>
+
+These metrics are emitted in one dimension: **EventAPIId**.
 
  `4XXError`
 Errors resulting from requests that are not valid due to an incorrect client configuration. For example, these errors can occur when the request includes an incorrect JSON payload, when the service is throttled, or when the authorization settings are misconfigured.
  **Unit**: *Count*. Use the Sum statistic to get the total occurrences of these errors.
 
  `5XXError`
-Errors encountered during the execution of a request. This could also happen if AWS AppSyncc encounters an issue during processing of a request.
+Errors encountered during the execution of a request. This could also happen if AWS AppSync encounters an issue during processing of a request.
  **Unit**: *Count*. Use the Sum statistic to get the total occurrences of these errors.
 
  `Latency`
@@ -32,6 +45,8 @@ Tokens are allocated to `Requests` based on the amount of resources (processing 
 
 ## Handler metrics
 <a name="cw-metrics-handler"></a>
+
+These metrics are emitted in two dimensions: **EventAPIId** and **ChannelNamespaceName**.
 
 `DroppedEvents`
 The count of input events filtered by a OnPublish handler.
@@ -51,6 +66,8 @@ The number of OnPublish handler invocations.
 
 ## Real-time endpoint metrics
 <a name="cw-metrics-real-time-endpoints"></a>
+
+These metrics are emitted in two dimensions: **EventAPIId** and **ChannelNamespaceName**.
 
 `ConnectRequests`
 The number of WebSocket connection requests made to AWS AppSync, including both successful and unsuccessful attempts.
@@ -163,7 +180,3 @@ The number of publish requests that were rejected by AWS AppSync because of clie
 `PublishServerError `
 The number of publish requests that originated from AWS AppSync while processing publish requests on a WebSocket connection. This is usually caused by an unexpected server-side issue.
 **Unit**: *Count*. Use the Sum statistic to get the total occurrences of these errors.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

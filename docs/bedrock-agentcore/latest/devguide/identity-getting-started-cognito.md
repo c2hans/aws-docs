@@ -26,8 +26,9 @@ By the end of this tutorial, you’ll have a fully deployed agent that can authe
 Before you begin, ensure you have:
 + An AWS account with appropriate permissions
 + Python 3.10\+ installed
++  [Uv](https://docs.astral.sh/uv/getting-started/installation/) installed
 + The latest AWS CLI and `jq` installed
-+ Node.js 18\+ installed (for the AgentCore CLI)
++ Node.js 20\+ installed (for the AgentCore CLI)
 +  AWS credentials and region configured ( `aws configure` )
 
 This tutorial requires that you have an OAuth 2.0 authorization server. If you do not have one, Step 1 will create one for you using Amazon Cognito user pools. If you have an OAuth 2.0 authorization server with a client id, client secret, and a user configured, you may proceed to step 2. This authorization server will act as a resource credential provider, representing the authority that grants the agent an outbound OAuth 2.0 access token.
@@ -43,15 +44,6 @@ cd agentcore-identity-quickstart
 python3 -m venv .venv
 source .venv/bin/activate
 pip install bedrock-agentcore boto3 strands-agents pyjwt
-```
-
-Also create the `requirements.txt` file with the following content. This will be used later by the AgentCore deployment tool.
-
-```
-bedrock-agentcore
-boto3
-pyjwt
-strands-agents
 ```
 
 ## Step 1: Create a Cognito user pool (Optional)
@@ -317,11 +309,12 @@ For a sample local callback server implementation to handle [session binding](ht
 
 We will host this agent on AgentCore Runtime. We can do this easily with the AgentCore CLI.
 
-From your terminal, install the AgentCore CLI and create a new project:
+From your terminal, install the AgentCore CLI and create a Python Strands agent project. The explicit options create a code-based agent instead of a harness:
 
 ```
 npm install -g @aws/agentcore
-agentcore create --name IdentityQuickstart --defaults
+agentcore create --name IdentityQuickstart --language Python --framework Strands \
+  --model-provider Bedrock --memory none
 ```
 
 Copy your agent script into the project’s agent directory, replacing the default agent:
@@ -330,16 +323,17 @@ Copy your agent script into the project’s agent directory, replacing the defau
 cp agentcoreidentityquickstart.py IdentityQuickstart/app/IdentityQuickstart/main.py
 ```
 
-Also copy your requirements file into the agent directory to ensure all dependencies are included in the deployment:
+Add the JWT dependency to the generated project:
 
 ```
-cp requirements.txt IdentityQuickstart/app/IdentityQuickstart/
+cd IdentityQuickstart/app/IdentityQuickstart
+uv add pyjwt
+cd ../..
 ```
 
 Then deploy your project:
 
 ```
-cd IdentityQuickstart
 agentcore deploy
 ```
 
@@ -459,7 +453,3 @@ When working with identity information:
 1.  **Audit access logs** to monitor agent activity
 
 1.  **Implement proper error handling** for authentication failures
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

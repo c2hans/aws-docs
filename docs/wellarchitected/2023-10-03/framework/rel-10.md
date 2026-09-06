@@ -14,7 +14,3 @@ Fault isolated boundaries limit the effect of a failure within a workload to a l
 + [REL10-BP02 Select the appropriate locations for your multi-location deployment](rel_fault_isolation_select_location.md)
 + [REL10-BP03 Automate recovery for components constrained to a single location](rel_fault_isolation_single_az_system.md)
 + [REL10-BP04 Use bulkhead architectures to limit scope of impact](rel_fault_isolation_use_bulkhead.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

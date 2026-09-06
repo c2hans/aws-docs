@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/cross-accou
 
 Follow the steps in this section to edit a cross-account attachment using the AWS Global Accelerator console.
 
-This section explains how to edit a cross-acount attachment by using the AWS Global Accelerator console. To learn about using API operations with Global Accelerator, see the [AWS Global Accelerator API Reference](https://docs.aws.amazon.com/global-accelerator/latest/api/Welcome.html).
+This section explains how to edit a cross-account attachment by using the AWS Global Accelerator console. To learn about using API operations with Global Accelerator, see the [AWS Global Accelerator API Reference](https://docs.aws.amazon.com/global-accelerator/latest/api/Welcome.html).
 
 You can edit a cross-account attachment to add or remove principals or resources, rename the attachment, or delete the attachment.
 
@@ -30,7 +30,3 @@ Be aware of the following when you remove principals or resources, or delete an 
 1. Modify the attachment to make the desired changes. For example, you can add or remove principals, rename the attachment, or add or remove resources.
 
 1. Choose **Save changes**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,3 @@ WHERE condition [GROUP BY expression ] [ HAVING condition]
 The GROUP BY clause aggregates and groups results by the unique values in a specified column or columns. The HAVING clause restricts the results returned to rows where a particular aggregate condition is true, such as count (\*) > 1. The HAVING clause is used in the same way as WHERE to restrict rows based on the value of a column. For an example of these additional clauses, see the [COUNT](r_COUNT.md).
 
 Aggregate functions don't accept nested aggregate functions or window functions as arguments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

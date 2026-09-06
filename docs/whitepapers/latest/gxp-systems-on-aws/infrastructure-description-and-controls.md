@@ -91,7 +91,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/in
 <a name="uptime"></a>
 
  AWS maintains SLAs (Service Level Agreements) for various services across the platform, which, at the time of this writing, includes a guaranteed monthly uptime percentage of at least 99.99% for Amazon EC2 and Amazon EBS within a Region. A full list of AWS SLAs can be found at [https://aws.amazon.com/legal/service-level-agreements/](https://aws.amazon.com/legal/service-level-agreements/). In addition, Amazon Web Services publishes the most up-to-the-minute information on service availability in the AWS Service Health Dashboard ([https://status.aws.amazon.com/](https://status.aws.amazon.com/)). It is important to note that as part of the shared security responsibility model, it is your responsibility to architect your application for resilience based on your organization’s requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

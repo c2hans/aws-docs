@@ -22,7 +22,3 @@ The following AWS SDKs and tools support CodeBuild:
 + The [AWS SDK for Python (Boto3)](https://aws.amazon.com/sdk-for-python/). For more information, see the [CodeBuild](https://boto3.readthedocs.io/en/latest/reference/services/codebuild.html) section of the *Boto 3 Documentation*.
 + The [AWS SDK for Ruby](https://aws.amazon.com/sdk-for-ruby/). For more information, see the [Module: Aws::CodeBuild](http://docs.aws.amazon.com/sdkforruby/api/Aws/CodeBuild.html) section of the *AWS SDK for Ruby API Reference*.
 + The [AWS Tools for PowerShell](https://aws.amazon.com/powershell/). For more information, see the [AWS CodeBuild](http://docs.aws.amazon.com/powershell/latest/reference/items/AWS_CodeBuild_cmdlets.html) section of the *AWS Tools for PowerShell Cmdlet Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ Your solution will have the following components:
 + [Integrate a game client for Amazon GameLift Servers Realtime](realtime-client.md)
 + [Upload a script for Amazon GameLift Servers Realtime servers](realtime-script-uploading.md)
 + [Update an Amazon GameLift Servers Realtime script](realtime-script-uploading-update.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

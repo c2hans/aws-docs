@@ -26,7 +26,3 @@ The following steps describe the steps you need to take to migrate a virtual pri
    Both the Direct Connect gateway and a virtual private gateway need to be associated. For the steps to create the association, see [Associate or disassociate virtual private gateways](associate-vgw-with-direct-connect-gateway.md).
 
 1. Delete the virtual interface that was associated with the virtual private gateway. For more information, see [Delete a virtual interface](deletevif.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

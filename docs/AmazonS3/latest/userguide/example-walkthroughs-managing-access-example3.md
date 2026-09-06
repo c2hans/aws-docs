@@ -220,7 +220,3 @@ Now verify that user Dave in Account A can access the object owned by Account B.
      + In the [IAM Console](https://console.aws.amazon.com/iam/), remove the **AccountAadmin** user. For step-by-step instructions, see [Deleting an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_manage.html#id_users_deleting) in the *IAM User Guide*.
 
 1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/) using Account B credentials. In the [IAM Console](https://console.aws.amazon.com/iam/), delete the user **AccountBadmin**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ If you must use AWS account credentials instead of an IAM role, you can specify 
   ```
 + If you're using the **Publish to Elastic Beanstalk** wizard, on the **Application Options** page, in the **Key** row of the **Key** and **Value** area, choose **AWSAccessKey**. In the **Value** row, type the access key. Repeat these steps for **AWSSecretKey**.
 + If you're using the legacy **Publish to Amazon Web Services** wizard, on the **Application Options** page, in the **Application Credentials** area, choose **Use these credentials**, and then type the access key and secret access key into the **Access Key** and **Secret Key** boxes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

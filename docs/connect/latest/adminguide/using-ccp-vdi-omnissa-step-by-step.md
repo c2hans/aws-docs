@@ -221,7 +221,3 @@ The following image shows IP ranges for .
 The following CCP configurations are not supported:
 + Native CCP: Audio optimization for native CCP is not supported. Media will continue to flow through the browser inside the VM for calls handled using the same.
 + Salesforce CTI Adapter: Does not support VDI platform detection, resulting in media routing through VM's browser instead of optimized client-side audio processing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

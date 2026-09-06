@@ -63,7 +63,3 @@ You have successfully joined your Mac instance to your AWS Managed Microsoft AD 
 When you first log in to your Mac instance, you should be provided with an option to log in as the "Other" user. At this point, you can use your Active Directory domain credentials to log in to the Mac instance. If you're not provided with "Other" on the log in screen after completing these steps, log in as ec2-user and then log out.
 
 To log in using the graphical user interface with a domain user, follow the steps in [Connect to your instance's graphical user interface (GUI)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-vnc) in *Amazon EC2 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

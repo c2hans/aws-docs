@@ -62,7 +62,3 @@ For more information about IAM policies, see [Policies and permissions in IAM](h
 When you copy a backup to a different AWS Region from the source backup, the first copy is always a full backup copy. This is the case even if you use the same AWS KMS key to encrypt both the source and destination copies of the backup. After the first copy, all subsequent backup copies to the same destination Region within the same AWS account are incremental. This applies as long as you haven't deleted all previously-copied backups in that Region and have been using the same AWS KMS key. If both conditions aren't met, the copy operation results in a full (not incremental) backup copy.
 
 To learn how to copy backups of your volumes, see [Copying backups within the same AWS account](copying-backups-same-account.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

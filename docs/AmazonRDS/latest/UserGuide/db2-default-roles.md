@@ -12,7 +12,3 @@ RDS for Db2 adds the following six roles and grants them to the `master_user_rol
 + **ROLE\_NULLID\_PACKAGES** – RDS for Db2 grants `EXECUTE` privileges to this role on `ALL NULLID` packages that were bound by Db2 when `CREATE DATABASE` was run.
 + **ROLE\_PROCEDURES** – RDS for Db2 grants `EXECUTE` privileges to this role on all `SYSIBM` procedures.
 + **ROLE\_TABLESPACES** – RDS for Db2 grants `USAGE` privileges on tablespaces created by the `CREATE DATABASE` command.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,3 @@ When loading a service client’s configuration [from the environment](creating-
 1. The SDK attempts to use the Amazon EC2 Instance Metadata Service to determine the Region of the currently running EC2 instance.
 
 1. If the Region still isn’t resolved at this point, client creation fails with an exception.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Kotlin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-kotlin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

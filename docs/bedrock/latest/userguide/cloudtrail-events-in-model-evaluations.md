@@ -14,7 +14,3 @@ Model evaluation jobs log events for multiple AWS services
 + **Amazon SageMaker AI**: Data events for all human-based model evaluation jobs.
 + **Amazon S3**: Data events for reading and writing data to the Amazon S3 bucket specified when the model evaluation job was created.
 + **AWS Key Management Service**: Data events related to using customer managed AWS KMS keys.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

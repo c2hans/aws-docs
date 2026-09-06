@@ -99,7 +99,3 @@ View details about updates to AWS managed policies for Amazon Translate since th
 | --- | --- | --- |
 | [TranslateReadOnly](#security-iam-awsmanpol-TranslateReadOnly) – Update to an existing policy | Amazon Translate now allows the TranslateDocument action in the TranslateReadOnly policy | May 23, 2023 |
 | Amazon Translate started tracking changes | Amazon Translate started tracking changes for its AWS managed policies. | May 23, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Translate. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query translate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

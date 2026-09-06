@@ -10,7 +10,3 @@ Following this list of best practices can help you ensure your Connect Customer 
 + AWS Key Management Service (KMS) encrypts Amazon S3 contents at the object level, which covers recordings, logs, and saved reports by default for Amazon S3. Make sure encryption in transit and at rest rules apply downstream or to third party apps.
 + Use encryption in the **Store customer input** block for sensitive DTMF information.
 + For more information about HIPAA compliance, see [https://www.hipaacompliance.org/](https://www.hipaacompliance.org/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

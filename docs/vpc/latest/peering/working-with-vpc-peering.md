@@ -23,7 +23,3 @@ Use the following procedures to create and work with VPC peering connections.
 + [Enable DNS resolution for a VPC peering connection](vpc-peering-dns.md)
 + [Delete a VPC peering connection](delete-vpc-peering-connection.md)
 + [Troubleshoot a VPC peering connection](troubleshoot-vpc-peering-connections.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

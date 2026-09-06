@@ -106,7 +106,3 @@ View details about updates to AWS managed policies for VPC Flow Logs since this 
 | --- | --- | --- |
 | [AWS managed policy: AWSVPCFlowLogsServiceRolePolicy](#flow-logs-managed-policy-AWSVPCFlowLogsServiceRolePolicy) – New policy | New AWSVPCFlowLogsServiceRolePolicy policy enables VPC Flow Logs to create and manage EventBridge Managed Rules and call DescribeTag APIs on your behalf to automatically track updates to EC2 Tag values associated with resources under Flow Logs subscriptions that include tag fields. | March 31, 2026 |
 | VPC Flow Logs started tracking changes | VPC Flow Logs started tracking changes for its AWS managed policies. | March 31, 2026 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

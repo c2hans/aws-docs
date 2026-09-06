@@ -21,7 +21,3 @@ These release notes apply to RDS for Oracle. If you are looking for details abou
 + [Amazon RDS for Oracle Database 12c Release 2 (12.2.0.1)](oracle-version-12-2.md)
 + [Amazon RDS for Oracle Database 12c Release 1 (12.1.0.2)](oracle-version-12-1.md)
 + [Amazon RDS for Oracle Database 11g Release 2 (11.2.0.4)](oracle-version-11-2.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

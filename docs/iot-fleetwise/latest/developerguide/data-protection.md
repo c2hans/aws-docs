@@ -34,7 +34,3 @@ Encryption at rest integrates with AWS Key Management Service (AWS KMS) to manag
 All data exchanged with AWS IoT services is encrypted in transit by using Transport Layer Security (TLS). For more information, see [Transport security](https://docs.aws.amazon.com/iot/latest/developerguide/transport-security.html) in the *AWS IoT Developer Guide*.
 
 Also, AWS IoT Core supports [authentication](https://docs.aws.amazon.com/iot/latest/developerguide/authentication.html) and [authorization](https://docs.aws.amazon.com/iot/latest/developerguide/authorization.html) to help securely control access to AWS IoT FleetWise resources. Vehicles can use X.509 certificates to get authenticated (signed in) to use AWS IoT FleetWise and use AWS IoT Core policies to get authorized (have permissions) to perform specified actions. For more information, see [Provision AWS IoT FleetWise vehicles](provision-vehicles.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

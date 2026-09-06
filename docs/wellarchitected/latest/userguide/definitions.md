@@ -15,7 +15,3 @@ The following defines common terms used in AWS WA Tool and the AWS Well-Architec
 + **Medium risk issues (MRIs)** are architectural and operational choices that AWS has found might negatively impact business, but to a lesser extent than HRIs.
 
   For additional information, see [High Risk Issues (HRIs) and Medium Risk Issues (MRIs)](workloads.md#wat-hri-mri).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -194,7 +194,3 @@ The following table lists the public fingerprints for Git connection endpoints i
 | git-codecommit.af-south-1.amazonaws.com | SHA256 | C34ji3x/cnsDZjUpyNGXdE5pjHYimqJrQZ3leTgqJHM |
 | git-codecommit.il-central-1.amazonaws.com | MD5 | 04:74:89:16:98:7a:61:b1:69:46:42:3c:d1:b4:ac:a9 |
 | git-codecommit.il-central-1.amazonaws.com | SHA256 | uFxhp51kUWhleTLeYbxQVYm4RnNLNZ5Dbdm1cgdSl/8 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

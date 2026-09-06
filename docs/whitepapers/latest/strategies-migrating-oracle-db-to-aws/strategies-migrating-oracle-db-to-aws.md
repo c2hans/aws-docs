@@ -23,7 +23,3 @@ Publication date: **January 27, 2022** ([Document history](document-revisions.md
 +  **Amazon EC2** provides scalable computing capacity in the cloud. Using Amazon EC2 removes the need to invest in hardware up front, so you can develop and deploy applications faster. You can use Amazon EC2 to launch as many or as few virtual servers as you need, configure security and networking, and manage storage.
 
  Running the database on Amazon EC2 is very similar to running the database on your own servers. Depending on whether you choose to run your Oracle Database on Amazon EC2 or Amazon RDS, the process for data migration can differ. For example, users don’t have OS-level access in Amazon RDS instances. It’s important to understand the different possible strategies, so you can choose the one that best fits your needs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

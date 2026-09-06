@@ -43,8 +43,11 @@ Linux, macOS, Windows
 **Required IAM permissions**
 
 The `AutomationAssumeRole` parameter requires the following actions to use the runbook successfully.
++  `lambda:GetFunction`
 +  `lambda:GetPolicy`
++  `lambda:ListTags`
 +  `s3:GetBucketNotification`
++  `s3:ListBucket`
 
  **Document Steps**
 +  `aws:executeScript` - Runs the script to validate configuration settings for the Amazon S3 event notification. Validates the resource-based IAM policy for your Lambda function, and generates an AWS Command Line Interface (AWS CLI) command to add the needed permissions if the required permissions are missing from the policy. Validates other Lambda functions resource policies which are part of event notifications for the same S3 bucket and generates an AWS CLI command as output if the required permissions are missing.
@@ -52,7 +55,3 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
  **Outputs**
 
 lambdaS3Event.output
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

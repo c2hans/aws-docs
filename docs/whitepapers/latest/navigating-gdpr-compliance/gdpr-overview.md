@@ -12,7 +12,3 @@ The GDPR applies to:
 + Organizations outside the EU that process personal data of individuals located in the EU, where the processing relates to offering goods or services to or monitoring the behavior of individuals in the EU.
 
 Personal data means any information relating to an identified or identifiable natural person. This includes names, identification numbers, location data, online identifiers, or factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that person.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,7 +53,3 @@ The secondary failover record values should be something like the following:
 Now, say that you want to reroute traffic because there's a failure. To do this, you update the associated routing control states to change the primary routing control state to `OFF` and the secondary routing control state to `ON`. When you do this, the associated health checks stop traffic from going to the primary replica and route it instead to the secondary replica. For more information about failing over traffic with routing controls, see [Getting and updating routing control states using the ARC API (recommended)](routing-control.update.api.md).
 
 To see examples of the AWS CLI commands for creating routing controls and the associated health checks using ARC API operations, see [Examples of using ARC routing control API operations with the AWS CLI](getting-started-cli-routing.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

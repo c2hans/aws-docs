@@ -84,7 +84,3 @@ Business problems are unique and often require custom technologies to address re
 <a name="define-dataops.af9de4b3-99ac-5145-88e1-5dd7738ca554"></a>
 
 Most data professionals spend a significant amount of time performing data operations such as locating the right data, transforming, modeling, and so on. Having agile data operations (DataOps) can greatly enhance the data architecture by breaking down the silos of data engineers, data scientists, data owners, and analysts. DataOps enables better communication between teams, reduces cycle time, and ensures high data quality. Data and analytics architectures have undergone numerous transformations over time because of changing business needs and technological advancements. An organization must strive to develop, implement, and maintain a data and analytics architecture that evolves over time and supports its business.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

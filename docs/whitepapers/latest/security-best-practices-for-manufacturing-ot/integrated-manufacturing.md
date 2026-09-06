@@ -28,7 +28,3 @@ AWS for the Edge consists of following software components:
 Cloud computing becomes the preferred platform for the migration and the modernization of Level 4-5 manufacturing applications such as Production Planning, Enterprise Resource Planning (ERP), Product Lifecycle Management (PLM), High-Performance Computing (HPC), Computer-Aided Design (CAD), and industrial data lakes. Edge computing extends modernization to MES and SCADA to Industrial Internet of Things (IIoT) and to the management of proliferating industrial things and industrial computers (IPC).
 
 By connecting their industrial facilities to the rest of the corporation, enterprise manufacturers can get better insight into their operations at global scale, and provide continuous guidance to each leader and manager accordingly. The bidirectional flow of information generated and consumed by the shop floor enables new levels of collective efficiency that we call integrated manufacturing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

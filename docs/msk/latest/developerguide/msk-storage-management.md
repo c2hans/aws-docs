@@ -19,7 +19,3 @@ For information about managing throughput, see [Provision storage throughput for
 + [Tiered storage for Standard brokers](msk-tiered-storage.md)
 + [Scale up Amazon MSK Standard broker storage](msk-update-storage.md)
 + [Manage storage throughput for Standard brokers in a Amazon MSK cluster](msk-provision-throughput-management.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

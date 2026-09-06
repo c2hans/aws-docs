@@ -84,7 +84,3 @@ In both cases, the curl command returns a response: `{"Message":"...."}`. Return
 <a name="use-vpc-endpoint-upgrade"></a>
 
 Once you have verified the connection, you can follow the steps to configure the MCP in [Setup for Upgrade Agent](emr-spark-upgrade-agent-setup.md). Simply use the private VPC endpoint in your MCP configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

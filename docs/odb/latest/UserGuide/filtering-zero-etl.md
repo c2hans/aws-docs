@@ -13,7 +13,3 @@ Oracle Database and Amazon Redshift handle object name casing differently, which
 + Amazon Redshift queries default to lowercase object names unless explicitly quoted. For example, a query of `MYTABLE` (no quotes) searches for `mytable`.
 
 Be mindful of the case differences when you create the Amazon Redshift filter and query the data. The filtering considerations for Oracle Database@AWS are the same as for Amazon RDS for Oracle. For examples of how case can affect data filters in an Oracle database, see [RDS for Oracle examples](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.filtering.html#zero-etl.filtering-examples-oracle) in the *Amazon Relational Database Service User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

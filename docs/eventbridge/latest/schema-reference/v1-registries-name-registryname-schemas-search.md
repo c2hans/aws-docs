@@ -136,7 +136,3 @@ Search the schemas
 | --- |--- |--- |--- |
 | NextToken | string | False | The token that specifies the next page of results to return. To request the first page, leave NextToken empty. The token will expire in 24 hours, and cannot be shared with other accounts. |
 | Schemas | Array of type [SearchSchemaSummary](#v1-registries-name-registryname-schemas-search-model-searchschemasummary) | False | An array of `SearchSchemaSummary` information. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge Schemas. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

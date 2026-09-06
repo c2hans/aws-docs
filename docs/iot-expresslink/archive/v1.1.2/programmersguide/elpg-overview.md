@@ -30,7 +30,3 @@ The top-level goals are to:
 <a name="elpg-overview-specifications"></a>
 
 The specifications in this document are the minimum set of requirements needed by the ExpressLink module to provide connectivity and basic support for AWS services. The ExpressLink manufacturer (third party) can provide additional pins and commands that can present key differentiators of their unique product or technology within the guidelines provided in this document. Testing and AWS qualification of the device will be based on this specification and not on any additional features or functionality.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

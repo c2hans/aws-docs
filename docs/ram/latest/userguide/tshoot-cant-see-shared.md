@@ -76,7 +76,3 @@ When you share a resource in account A to another account B, roles and users in 
 AWS RAM is a Regional service. Resources exist in a specific AWS Region, and to see them, the AWS Management Console must be configured to view the resources in that Region.
 
 The AWS Region that the console is currently accessing is displayed in the upper-right corner of the console. To change it, choose the current Region name and from the dropdown menu, choose the Region whose resources you want to see.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

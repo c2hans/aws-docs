@@ -74,7 +74,3 @@ datasink = glueContext.write_dynamic_frame.from_options(frame = df, connection_t
 **Memory profile:** The metrics show the [active memory consumption](monitoring-awsglue-with-cloudwatch-metrics.md#glue.executorId.jvm.heap.used) across all executors—reconfirming that there is activity across all executors. As data is streamed in and written out in parallel, the total memory footprint of all executors is roughly uniform and well below the safe threshold for all executors.
 
 ![The memory profile metrics showing active memory consumption across all executors.](http://docs.aws.amazon.com/glue/latest/dg/images/monitor-debug-straggler-8.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

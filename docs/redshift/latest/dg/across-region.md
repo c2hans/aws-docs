@@ -13,7 +13,7 @@ With cross-Region data sharing, you can share data across clusters in the same A
 
 If clusters sharing data are in different AWS accounts and AWS Regions, you can follow the same workflow as sharing data across AWS accounts and include Region-level associations on the consumer cluster. Cross-Region data sharing supports datashare association with the entire AWS account, the entire AWS Region, or specific namespaces within an AWS Region. For more information about sharing data across AWS accounts, see [Sharing data across AWS accounts](across-account.md).
 
-When consuming data from a different Region, the consumer pays the Cross-Region data transfer fee from the producer region to the consumer Region.
+When consuming data from a different Region, the consumer pays the Cross-Region data transfer fee from the producer Region to the consumer Region.
 
 To use the datashare, a consumer account administrator can associate the datashare in one of the following three ways.
 + Association with an entire AWS account spanning all its AWS Regions
@@ -65,7 +65,3 @@ You can use the Amazon Redshift console to associate datashares with your entire
 After the AWS account or specific namespaces are associated, the datashares become available for consumption. You can also change datashare association at any time. When changing association from individual namespaces to an AWS account, Amazon Redshift overwrites the namespaces with the AWS account information. When changing association from an AWS account to specific namespaces, Amazon Redshift overwrites the AWS account information with the namespace information. When changing association from an entire AWS account to specific AWS Regions and namespaces, Amazon Redshift overwrites the AWS account information with the specific Region and namespace information.
 
 **If you are a consumer administrator**, you can create local databases that reference to the datashares and grant permissions on databases created from the datashares to user or roles in the consumer cluster as needed. You can also create views on shared objects and create external schemas to refer and assign granular permissions to specific schemas in the consumer database imported on the consumer cluster. For more information, see [consumer administrator actions](consumer-cluster-admin.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

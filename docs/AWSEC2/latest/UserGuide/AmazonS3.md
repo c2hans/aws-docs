@@ -177,7 +177,3 @@ aws s3 sync s3://{{amzn-s3-demo-source-bucket}} {{local_directory}}
 You can use an API to access data in Amazon S3. You can use this API to help develop your application and integrate it with other APIs and SDKs. For more information, see [Code examples for Amazon S3 using AWS SDKs](https://docs.aws.amazon.com/AmazonS3/latest/API/service_code_examples.html) in the *Amazon Simple Storage Service API Reference*.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

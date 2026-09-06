@@ -19,7 +19,3 @@ You can switch between running modes when a WorkSpaces Pool is in stopped state.
 
 **To modify the running mode of a WorkSpaces Pool using the AWS CLI**
 + Use the [update-workspaces-pool](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workspaces/update-workspaces-pool.html) command.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

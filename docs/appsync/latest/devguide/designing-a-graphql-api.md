@@ -18,7 +18,3 @@ In this section, you'll review the following concepts:
 1. [Merged APIs](merged-api.md#aws-appsync-merged-api): This guide will show you how to create new GraphQL APIs by associating and merging data from multiple existing GraphQL APIs.
 
 1. [Building GraphQL APIs with RDS introspection](rds-introspection.md): This guide will show you how to integrate your Amazon RDS tables using a Data API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

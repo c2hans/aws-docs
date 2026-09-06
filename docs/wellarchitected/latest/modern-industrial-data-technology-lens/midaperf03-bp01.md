@@ -78,7 +78,3 @@ Implement intelligent data retention using Amazon S3 Intelligent Tiering for his
 +  [AWS X-Ray features](https://aws.amazon.com/xray/features/)
 +  [AWS IoT Device Management features](https://aws.amazon.com/iot-device-management/features/)
 +  [AWS Solutions Library](https://aws.amazon.com/solutions/implementations/centralized-logging/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

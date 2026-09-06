@@ -48,7 +48,3 @@ Lambda provides the following sample applications for the Go runtime:
 **Sample Lambda applications in Go**
 + [go-al2](https://github.com/aws-samples/sessions-with-aws-sam/tree/master/go-al2) – A hello world function that returns the public IP address. This app uses the `provided.al2` custom runtime.
 + [blank-go](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/blank-go) – A Go function that shows the use of Lambda's Go libraries, logging, environment variables, and the AWS SDK. This app uses the `go1.x` runtime.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

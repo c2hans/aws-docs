@@ -10,7 +10,3 @@ The AWS PCS tutorial has many steps and is intended to help you understand the p
 CloudFormation is an AWS service that enables you to create and provision AWS infrastructure deployments predictably and repeatedly. You can use a CloudFormation template to automatically provision the AWS resources for the sample cluster as a single unit, called a **stack**. You can delete the stack when you are done with it.
 
 For more information, see [Get started with CloudFormation and AWS PCS](get-started-cfn.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -280,7 +280,3 @@ When using `aws-smithy-mocks` for testing:
 1.  Test retry logic: Use response sequences to verify that your code correctly handles any custom retry classifiers or other retry behavior.
 
 1. Keep tests focused: Create separate tests for different scenarios rather than trying to cover everything in one test.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Rust. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-rust` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

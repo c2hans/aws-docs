@@ -73,7 +73,3 @@ Most information required to compose this file for a deployed AWS Cloud Migratio
 Replace {{<LoginApi-value>}}, {{<UserApi-value>}}, {{<Region-value>}}, and {{<UserPoolId-value>}} with the corresponding values you retrieved from the AWS CloudFormation Outputs console. Do not add a forward slash (/) to the end of the URLs.
 
 The file has an optional `DefaultUser` key. You can set the value for this key to the default user ID to be used to access the Cloud Migration Factory on AWS instance to avoid having to enter it every time. When prompted for the Cloud Migration Factory user ID, you can either enter a user ID or use the default value by pressing the enter key. You can only do this when the scripts are run manually.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

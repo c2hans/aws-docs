@@ -24,7 +24,3 @@ When evaluating a matchmaking ticket that includes multiple players, all players
 + [Example: Create a large match with players with similar attributes](match-examples-9.md)
 + [Example: Use a compound rule to create a match with players with similar attributes or similar selections](match-examples-10.md)
 + [Example: Create a rule that uses a player's block list](match-examples-11.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

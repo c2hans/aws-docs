@@ -183,7 +183,3 @@ Every minute, FSx for OpenZFS emits usage metrics to Amazon CloudWatch and you c
 You can investigate aggregate file system performance with the `Sum` statistic of each metric. For example, the `Sum` of the `DataReadBytes` statistic reports the total read throughput by file system or volume, and the `Sum` of the `DataWriteBytes` statistic reports the total write throughput by file system or volume.
 
 For more information on monitoring your file system’s performance, see [Monitoring with Amazon CloudWatch](monitoring-cloudwatch.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

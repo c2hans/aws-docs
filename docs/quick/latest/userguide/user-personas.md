@@ -26,7 +26,3 @@ Admins configure and manage governance controls for Amazon Quick Flows within Am
 + Enable or disable Bedrock models for output refinement
 + Require approval before users can share flows
 + Unpublish shared flows and transfer ownership between users
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

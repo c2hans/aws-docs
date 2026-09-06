@@ -44,7 +44,3 @@ Use templates in contact points to customize your notifications.
 1. Enter the templates you wish to use in a field, such as **Message** or **Subject**. To enter a template, use the form `{{ template "{{template_name}}" . }}`, replacing {{template\_name}} with the name of the template you want to use.
 
 1. Choose **Save contact point**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

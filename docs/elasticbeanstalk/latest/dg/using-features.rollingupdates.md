@@ -106,7 +106,3 @@ option_settings:
 `Timeout` and `PauseTime` values must be specified in [ISO8601 duration](http://en.wikipedia.org/wiki/ISO_8601#Durations): `PT{{#}}H{{#}}M{{#}}S`, where each \# is the number of hours, minutes, or seconds, respectively.
 
 The EB CLI and Elastic Beanstalk console apply recommended values for the preceding options. You must remove these settings if you want to use configuration files to configure the same. See [Recommended values](command-options.md#configuration-options-recommendedvalues) for details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

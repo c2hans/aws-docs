@@ -49,7 +49,3 @@ Qualitative measures are descriptive, and they focus on understanding experience
 By considering both quantitative financial impacts and qualitative organizational benefits, you can make more-informed decisions about continued chaos engineering investment while fostering a resilience culture.
 
 For more information about these measures and their associated incident classification framework, see [Appendix B](appendix-b.md) and [Appendix C](appendix-c.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

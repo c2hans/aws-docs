@@ -156,7 +156,3 @@ The "currentIndexBuildName", "msg", and "progress" fields are not supported on A
 See the following resources on troubleshooting index creation issues:
 + [Index build fails](troubleshooting.index-creation.md#troubleshooting.index-build-fails)
 + [Background index build latency issues and fails](troubleshooting.index-creation.md#troubleshooting.background-index-build-fails)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

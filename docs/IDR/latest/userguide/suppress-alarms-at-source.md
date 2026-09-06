@@ -84,7 +84,3 @@ The following table contains metric math function examples, along with associate
 <a name="suppress-alarms-third-party-apm"></a>
 
 Refer to your third party APM vendor’s documentation for instructions on how to suppress alarms. Examples of third party APM vendors are New Relic, Splunk, Dynatrace, Datadog, and SumoLogic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

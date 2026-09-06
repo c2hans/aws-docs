@@ -115,7 +115,3 @@ To determine whether an update succeeded or failed:
 
 **Tip**
  Some AWS SDKs and the AWS Command Line Interface support a `ContactUpdated` waiter that automatically polls `DescribeContactVersion` until the version reaches `ACTIVE` or `FAILED_TO_UPDATE` status. For example, the AWS Command Line Interface provides an [aws groundstation wait contact-updated](https://docs.aws.amazon.com/cli/latest/reference/groundstation/wait/contact-updated.html) command. Use the waiter instead of implementing your own polling logic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -120,7 +120,3 @@ For a sample notebook that shows how to prepare a time series dataset for traini
 For more information about the Amazon SageMaker AI DeepAR algorithm, see the following blog posts:
 + [Now available in Amazon SageMaker AI: DeepAR algorithm for more accurate time series forecasting](https://aws.amazon.com/blogs/machine-learning/now-available-in-amazon-sagemaker-deepar-algorithm-for-more-accurate-time-series-forecasting/)
 + [Deep demand forecasting with Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/deep-demand-forecasting-with-amazon-sagemaker/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

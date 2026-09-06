@@ -22,7 +22,3 @@ After you've enabled projects for the Connector, AWS Security Hub CSPM requires 
 1. Under **AWS Security Hub CSPM Configuration,** in the **Sync Interval **field, you can change the sync interval if you want. **SQS Queue Name **and **Number of messages to pull from SQS** set the Amazon SQS queue and the polling size, respectively. **Synchronize AWS Security Hub CSPM Findings according to their Severity value ** determines the Findings with specific severities that sync to the JSM project.
 
 1. Choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

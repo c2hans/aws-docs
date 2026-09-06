@@ -24,7 +24,3 @@ If a CloudFormation stack involves custom resources and the EDP solution makes c
 <a name="ebs-volume-question"></a>
 
 The EBS volume scenario isn't an edge case. The EBS volume scenario illustrates the importance of ensuring synchronization between CloudFormation and actual AWS resources. Another example of a common scenario involves modifying an Amazon Simple Storage Service (Amazon S3) bucket policy. You can make a policy update to an S3 bucket by using the AWS Management Console or an API (when you [use an S3 bucket as an origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistS3AndCustomOrigins.html#using-s3-as-origin) for an Amazon CloudFront distribution). In this scenario, the Amazon S3 policy could be overwritten by pipeline.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

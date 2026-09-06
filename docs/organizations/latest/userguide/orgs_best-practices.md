@@ -78,7 +78,3 @@ When managing an organization, you get a consolidated bill that covers all charg
 <a name="bp_multi-acct_plan-tagging"></a>
 
 As your accounts and workloads scale, tags can be a useful feature for cost tracking, access control, and resource organization. For tagging naming strategies, follow the guidance in [Tagging your AWS resources](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html). In addition to resources, you can create tags on the organization root, accounts, OUs, and policies. Refer to the [Building your tagging strategy](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/building-your-tagging-strategy.html) for additional information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

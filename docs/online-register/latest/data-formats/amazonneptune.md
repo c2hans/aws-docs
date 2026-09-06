@@ -25,7 +25,3 @@ Amazon Neptune provides the following APIs for data retrieval.
 | <a name="neptune-db-ListMLModelTrainingJobs"></a>[ListMLModelTrainingJobs](https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#listmlmodeltrainingjobs) | List all the ML model training jobs | List |
 | <a name="neptune-db-ListMLModelTransformJobs"></a>[ListMLModelTransformJobs](https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#listmlmodeltransformjobs) | List all the ML model transform jobs | List |
 | <a name="neptune-db-ReadDataViaQuery"></a>[ReadDataViaQuery](https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#readdataviaquery) | Run read data via query APIs on database | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

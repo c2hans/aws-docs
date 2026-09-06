@@ -18,7 +18,3 @@ The migration will also create new considerations in the following areas.
 + **VIP density** – If you have a larger number of virtual IP addresses (VIPs), you must consider the instance limit to the number of VIPs that can be mapped to the network interfaces.
 + **Concurrent connection** – There are flow limits to the maximum number of connections that the instances can support.
 + **Session state** – Different applications use different types of persistence. Stateful and stateless applications will change the methods used to shared state, and this can impact scale for in/out operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,7 +35,3 @@ In order for a target domain to be used in a penetration test, it must first be 
 
 **Note**
 For DNS TXT, HTTP route, and Route 53 verification, sub-domains of a verified domain are automatically covered and do not require separate verification. For Private VPC verification, each domain must be verified individually.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -129,7 +129,3 @@ After you review the generated security groups, choose how to deploy them. As wi
 + **Self-deployment:** AWS Transform generates the security groups as Infrastructure as Code (IaC) that you deploy yourself. The same output formats are available: CloudFormation, AWS CDK, HashiCorp Terraform, and Landing Zone Accelerator (LZA).
 
 This flow deploys security groups only. Unlike mapping a source network to new VPCs, AWS Transform does not run Reachability Analyzer, because no new network infrastructure is created, and there is no automatic rollback of deployed resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

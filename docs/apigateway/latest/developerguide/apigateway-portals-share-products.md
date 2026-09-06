@@ -60,7 +60,3 @@ At any time, you can modify the product sharing policy to modify which principal
 1. If you haven't shared your product before, your product sharing policy will deny all access to other accounts to your portal products. You need to update the policy to allow access for certain accounts to your portal product.
 
 1. After you have updated your product sharing policy, choose **Save changes**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

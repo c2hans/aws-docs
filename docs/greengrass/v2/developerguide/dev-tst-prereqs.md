@@ -807,7 +807,3 @@ AWS IoT Device Tester also uses the following permission for optional metrics re
 + `iot-device-tester:SendMetrics`
 
   Grants permission to AWS to collect metrics about AWS IoT Device Tester internal usage. If this permission is omitted, these metrics will not be collected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

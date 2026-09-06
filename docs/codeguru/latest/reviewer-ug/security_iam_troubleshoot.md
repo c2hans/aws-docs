@@ -43,7 +43,3 @@ User: arn:aws:iam::123456789012:user/marymajor is not authorized to perform: iam
 In this case, Mary's policies must be updated to allow her to perform the `iam:PassRole` action.
 
 If you need help, contact your AWS administrator. Your administrator is the person who provided you with your sign-in credentials.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

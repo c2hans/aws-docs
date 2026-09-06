@@ -16,7 +16,3 @@ If you use the console to create your Amazon Q Business application, a web exper
 | [GetWebExperience](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetWebExperience.html) | Gets information about an Amazon Q Business web experience | [Getting Amazon Q Business web experience properties](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-exp-actions.html#describe-web-experience) |
 | [ListWebExperiences](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListWebExperiences.html) | Lists Amazon Q Business web experiences | [Listing Amazon Q Business web experiences](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-exp-actions.html#list-web-experiences) |
 | [UpdateWebExperience](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateWebExperience.html) | Updates an Amazon Q Business web experience | [Updating an Amazon Q Business web experience](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-exp-actions.html#update-web-experience) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

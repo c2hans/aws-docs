@@ -501,7 +501,3 @@ How you build and invoke a LlamaIndex agent affects what appears in its telemetr
 +  **Register tools as `FunctionTool` objects.** Define each tool as a LlamaIndex `FunctionTool` (or use `@tool`-style helpers that produce one). Tool spans are identified by their entity name, and their arguments and results are serialized in the `kwargs` and `blocks` structures AgentCore Evaluations unwraps.
 +  **Keep tool results text-serializable.** Return tool results as strings or JSON-serializable values. LlamaIndex wraps them in a text block; keeping them serializable ensures the tool result is captured cleanly.
 +  **For ReAct agents, use the standard output format.** AgentCore Evaluations extracts the final answer from the `Answer:` section of a ReAct agent’s output. Using the standard ReAct prompt (the LlamaIndex default) keeps the agent response recoverable.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

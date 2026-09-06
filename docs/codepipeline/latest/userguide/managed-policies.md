@@ -200,7 +200,3 @@ View details about updates to AWS managed policies for CodePipeline since this s
 | **AWSCodePipelineFullAccess** – Deprecated | This policy has been replaced by `AWSCodePipeline_FullAccess`.<br />After November 17, 2022, this policy can not be attached to any new users, groups, or roles. For more information, see [AWS managed policies for AWS CodePipeline](#managed-policies). | November 17, 2022 |
 | **AWSCodePipelineReadOnlyAccess** – Deprecated | This policy has been replaced by `AWSCodePipeline_ReadOnlyAccess`.<br />After November 17, 2022, this policy can not be attached to any new users, groups, or roles. For more information, see [AWS managed policies for AWS CodePipeline](#managed-policies). | November 17, 2022 |
 | CodePipeline started tracking changes | CodePipeline started tracking changes for its AWS managed policies. | March 12, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

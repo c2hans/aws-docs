@@ -119,7 +119,3 @@ If a device fails connection authorization, the `connection-attempt-failure-reas
 + `client-connect-handler-throttled` — The Lambda function was throttled.
 + `client-connect-handler-invalid-response` — The Lambda function returned a response that was not valid.
 + `client-connect-handler-service-error` — There was a service-side error during the connection attempt.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

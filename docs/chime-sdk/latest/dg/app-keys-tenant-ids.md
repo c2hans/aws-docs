@@ -98,7 +98,3 @@ Users can access only the media sessions for engineering and sales in the specif
 `X-Amzn-Chime-App-Keys: {{AppKey1}},{{AppKey2}}`
 `X-Amzn-Chime-Tenants: {{AppKey1}}:{{orgId}}`
 Users can access only the organization's media sessions in App 1, and any session in App 2. All other apps are blocked.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

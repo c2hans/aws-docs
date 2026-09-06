@@ -30,7 +30,3 @@ Most of the benefits discussed in the previous section are outside a typical lif
 + Preparation – You have to pre-provision and configure the target infrastructure, database servers, and clusters fully before you can use any of the native database methods.
 + Complexity – Some methods, such as full or logical backup/restore, have to be combined with another replication method to detect all the changes since the initial backup was created.
 + Scalability – There's no simple automation framework available to roll these methods out to other database clusters and servers when you migrate at scale.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,7 +41,3 @@ An Amazon Redshift external schema can reference a database in an external RDS P
 An Amazon Redshift external schema can reference a database in an external RDS MySQL or Aurora MySQL. When it does, these limitations apply:
 + When creating an external schema referencing Aurora DB cluster, the Aurora MySQL database must be at version 5.6 or later.
 + When creating an external schema referencing Amazon RDS, the RDS MySQL database must be at version 5.6 or later.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

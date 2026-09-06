@@ -45,7 +45,3 @@ Your license count doesn't limit how many workers Deadline Cloud starts. To keep
 <a name="license-overview-combine"></a>
 
 You can list your license server ahead of the UBL endpoint in an application's license configuration so that workers consume your existing licenses first and fall back to UBL when those licenses run out. For more information, see [Combining BYOL and UBL](license-combine-byol-ubl.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

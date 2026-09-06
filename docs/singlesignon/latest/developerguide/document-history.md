@@ -18,7 +18,3 @@ The following table describes the important changes to the documentation in this
 | Updates to ListUsers and ListGroups | Added information about 50 maximum results returned. | April 9, 2021 |
 | Updates to PatchGroup and added new topic | Added member operations examples to PatchGroup and added new Making API Requests topic. | September 28, 2020 |
 | New guide | This is the first release of the IAM Identity Center SCIM Implementation Developer Guide. | August 27, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Identity Center SCIM Implementation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

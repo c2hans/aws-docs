@@ -443,7 +443,3 @@ if __name__ == "__main__":
 The client initializes the SageMaker Runtime HTTP/2 client with the regional endpoint URI on port 8443, which is required for bidirectional streaming connections. The start\_`session()` method calls `invoke_endpoint_with_bidirectional_stream()` to establish the persistent connection and creates an asynchronous task to process incoming responses concurrently.
 
 The `send_event()` method wraps payload data in the appropriate request objects and sends them through the input stream, while the `_process_responses()` method continuously listens for and processes responses from the endpoint as they arrive. This bidirectional approach enables real-time interaction where both sending requests and receiving responses happen simultaneously over the same connection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ Additionally, the IoT SiteWise OPC UA collector can accept NaN or null values on
 These are the limitations for OPC UA data type conversion to strings in AWS IoT SiteWise.
 + Complex data type conversion is not supported.
 + String limits after conversion are 1024 bytes. If the string is longer than 1024 bytes, the string is rejected by AWS IoT SiteWise.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

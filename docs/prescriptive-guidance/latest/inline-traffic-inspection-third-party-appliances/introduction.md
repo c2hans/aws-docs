@@ -22,7 +22,3 @@ This guide provides a traffic inspection solution for the following three use ca
 + [VPC-to-VPC traffic inspection](vpc-to-vpc-traffic-inspection.md)
 + [VPC-to-on-premises traffic inspection](on-premises-traffic-inspection.md)
 + [Outbound traffic inspection through a NAT gateway and internet gateway](outbound-inspection-through-a-nat-and-internet-gateway.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

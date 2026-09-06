@@ -83,7 +83,3 @@ eventname         first_show             last_show              month_diff
 A Bronx Tale      2008-01-21 19:00:00.0  2008-12-15 15:00:00.0  10.8
 A Catered Affair  2008-01-08 19:30:00.0  2008-12-19 19:00:00.0  11.35
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

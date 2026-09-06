@@ -34,7 +34,3 @@ The **Hourly commitment** is the Savings Plans rate, and not the On-Demand spend
 Before adding to cart, you can choose **Analyze Savings Plan** to transfer your Savings Plan details and commitment to **Purchase Analyzer**. There, you can review, update, or run analysis to see the impact of your planned Savings Plan purchase.
 
 1. On the **Cart** page, review your order, and choose **Submit order**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

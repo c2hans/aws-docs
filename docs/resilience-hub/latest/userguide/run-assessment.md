@@ -38,7 +38,3 @@ You can run a new resiliency assessment when your application or resiliency poli
 1. Choose **Run**.
 
    To review the assessment report, choose **Assessments** in your application. For more information, see [Reviewing assessments reports](review-assessment.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

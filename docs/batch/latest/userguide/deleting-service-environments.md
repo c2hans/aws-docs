@@ -85,7 +85,3 @@ Use the `delete-service-environment` command to remove a service environment wit
 The service environment transitions to `DELETING` state during the deletion process. Once deletion completes, the service environment is no longer listed in describe operations. Associated job queues remain but cannot process service jobs until associated with a different service environment.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

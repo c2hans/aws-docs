@@ -153,7 +153,3 @@ The `Neptune#ml.prediction` predicate is attached to `in()` and `out()` steps to
 The `Neptune#ml.score` predicate is used in Gremlin node or edge classification queries to fetch a machine-learning confidence Score. The `Neptune#ml.score` predicate should be passed together with the query predicate in the `properties()` step to obtain an ML confidence score for node or edge classification queries.
 
 You can find a node classification example with [other node classification examples](machine-learning-gremlin-vertex-classification-queries.md#machine-learning-gremlin-node-class-other-queries), and an edge classification example in the [edge classification section](machine-learning-gremlin-edge-classification-queries.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

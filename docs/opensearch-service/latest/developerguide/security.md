@@ -26,7 +26,3 @@ This documentation helps you understand how to apply the shared responsibility m
 + [IAM Identity Center Trusted Identity Propagation Support for OpenSearch](idc-aos.md)
 + [Configuring Amazon Cognito authentication for OpenSearch Dashboards](cognito-auth.md)
 + [Using service-linked roles for Amazon OpenSearch Service](slr.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

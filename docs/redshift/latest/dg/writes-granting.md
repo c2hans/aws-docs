@@ -33,7 +33,3 @@ GRANT SELECT ON sales_db.public.tickit_sales_redshift to Bob;
 ------
 
 For more information about granting permissions with multi-warehouse writes, see [Managing permissions for a datashares in Amazon Redshift](writes-managing-permissions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

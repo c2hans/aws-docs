@@ -390,7 +390,3 @@ Cost Explorer refreshes your cost data at least once every 24 hours. For more in
 Managers or Administrators may need to access a user’s AWS account for troubleshooting.
 
 To access a user’s account, from the **Leases** page, find the lease corresponding to the account. If the lease is active, the **Login** option will be visible under the **Access** column. This will allow you to access the AWS Access portal, where you can log in using one of the available IAM roles.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

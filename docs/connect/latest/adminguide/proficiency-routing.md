@@ -128,7 +128,3 @@ Models have been added for proficiency routing in the following sections:
   + For a sample Lambda function for setting routing criteria, see [Sample Lambda function for setting routing criteria](set-routing-criteria.md#set-routing-criteria-sample-lambda-function).
 +  **What happens to the routing criteria set on a contact if the contact is being transferred to an agent queue?**
   + The routing criteria has no effect on contacts present in an agent queue. If a contact with routing criteria is transferred from an agent queue to a standard queue, then the routing criteria is forwarded to the new contact segment created due to queue transfer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

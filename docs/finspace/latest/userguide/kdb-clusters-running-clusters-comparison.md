@@ -19,7 +19,3 @@ This configuration provides strong workload isolation between clusters and nodes
 + Currently, a kdb scaling group is limited to only one host residing in one Availability Zone.
 +  The [HDB clusters](kdb-cluster-types.md#kdb-clusters-hdb) running on kdb scaling groups must use dataviews instead of cluster-specific [disk cache](kdb-cluster-types.md#kdb-cluster-cache-config) to store database data for high-performance read access.
 + RDB and General Purpose clusters running on scaling groups must use a [kdb volume](finspace-managed-kdb-volumes.md) for their savedown storage configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/ransomware-risk-manag
 |   |  [AWS CodeCommit](https://aws.amazon.com/codecommit/)  |  AWS CodeCommit is a fully-managed source control service that hosts secure GitHub-based repositories.  |  Provides backup and restore capabilities for configuration files.  |  Yes  |
 
 For more information about backup considerations on AWS, refer to [Backup and restore](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html#backup-and-restore) in the *Disaster Recovery of Workloads on AWS: Recovery in the Cloud* whitepaper, and [Back up data](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/back-up-data.html) in the* Reliability Pillar* whitepaper.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

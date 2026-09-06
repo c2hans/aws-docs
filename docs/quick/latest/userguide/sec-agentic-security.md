@@ -37,7 +37,7 @@ The following sources can supply content to the assistant's context. Each is a p
 + Files uploaded in chat
 + Web search results
 + Third-party research provider data
-+ Content returned by action connectors
++ Content returned by connectors
 + Content returned by remote MCP server tools
 
 Retained context also contributes to the read surface. Past conversations and, on Quick Desktop, entities extracted from connected data sources persist across sessions and can inform later responses. For more information, see [Memory and retained context](#sec-agentic-security-memory).
@@ -87,7 +87,7 @@ You can apply human approval gates at five points in the lifecycle of AI and age
 
 1. **Capability approval (Deny by Default)** – New AI capabilities in a restricted category are denied on launch until an administrator explicitly allows them. This gate applies before a capability is available to any user. For more information, see [Deny by Default](custom-permissions-governance.md).
 
-1. **Build-time consent (Apps integration consent)** – When the Apps agent adds an integration to an app (action connector, space, dashboard visual, or AI inference), it prompts the author for approval. The published app never includes unapproved integrations, and app viewers inherit the approved integration scope rather than broader access. For more information, see [Integration consent model](security-sandbox-apps.md#apps-integration-consent).
+1. **Build-time consent (Apps integration consent)** – When the Apps agent adds an integration to an app (connector, space, dashboard visual, or AI inference), it prompts the author for approval. The published app never includes unapproved integrations, and app viewers inherit the approved integration scope rather than broader access. For more information, see [Integration consent model](security-sandbox-apps.md#apps-integration-consent).
 
 1. **Share approval (Flows)** – Custom permissions control which users can review and approve flow sharing requests, and whether creators can share flows without approval. Administrators configure these capabilities through custom permissions profiles. For more information, see [Custom permissions](custom-permissions.md).
 
@@ -210,7 +210,3 @@ Retained context is part of the read surface described in [Two-condition model f
 + [AI guardrails in Amazon Quick](guardrails.md) – Built-in content safety screening and administrator-configured blocked words.
 + [Custom permissions](custom-permissions.md) – Role-based capability restriction and deny-by-default governance.
 + [Best practices for managing ACLs in knowledge bases](acl-best-practices-kb.md) – Document-level access control for knowledge bases, including fail-closed retrieval behavior.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

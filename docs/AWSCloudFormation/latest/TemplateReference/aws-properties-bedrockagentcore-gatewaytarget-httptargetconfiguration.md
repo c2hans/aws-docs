@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[AgentcoreRuntime](#cfn-bedrockagentcore-gatewaytarget-httptargetconfiguration-agentcoreruntime)" : {{RuntimeTargetConfiguration}},
+  "[Connector](#cfn-bedrockagentcore-gatewaytarget-httptargetconfiguration-connector)" : {{HttpConnectorTargetConfiguration}},
   "[Passthrough](#cfn-bedrockagentcore-gatewaytarget-httptargetconfiguration-passthrough)" : {{PassthroughTargetConfiguration}}
 }
 ```
@@ -30,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [AgentcoreRuntime](#cfn-bedrockagentcore-gatewaytarget-httptargetconfiguration-agentcoreruntime): {{
     RuntimeTargetConfiguration}}
+  [Connector](#cfn-bedrockagentcore-gatewaytarget-httptargetconfiguration-connector): {{
+    HttpConnectorTargetConfiguration}}
   [Passthrough](#cfn-bedrockagentcore-gatewaytarget-httptargetconfiguration-passthrough): {{
     PassthroughTargetConfiguration}}
 ```
@@ -43,12 +46,14 @@ The AgentCore Runtime target configuration for HTTP-based communication with an 
 *Type*: [RuntimeTargetConfiguration](aws-properties-bedrockagentcore-gatewaytarget-runtimetargetconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`Connector`  <a name="cfn-bedrockagentcore-gatewaytarget-httptargetconfiguration-connector"></a>
+Property description not available.
+*Required*: No
+*Type*: [HttpConnectorTargetConfiguration](aws-properties-bedrockagentcore-gatewaytarget-httpconnectortargetconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Passthrough`  <a name="cfn-bedrockagentcore-gatewaytarget-httptargetconfiguration-passthrough"></a>
 The passthrough configuration for the HTTP target. A passthrough target forwards requests directly to an external HTTP endpoint.
 *Required*: No
 *Type*: [PassthroughTargetConfiguration](aws-properties-bedrockagentcore-gatewaytarget-passthroughtargetconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

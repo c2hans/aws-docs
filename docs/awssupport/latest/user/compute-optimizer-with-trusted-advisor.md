@@ -32,7 +32,3 @@ For more information, see the following topics:
 + [Viewing Lambda function recommendations](https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-lambda-recommendations.html) in the *AWS Compute Optimizer User Guide*
 + [Configuring Lambda function memory](https://docs.aws.amazon.com/lambda/latest/dg/configuration-function-common.html#configuration-memory-console) in the *AWS Lambda Developer Guide*
 + [Request modifications to your Amazon EBS volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/requesting-ebs-volume-modifications.html) in the *Amazon EC2 User Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

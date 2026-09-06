@@ -71,7 +71,3 @@ Complete the following procedure to configure set up to discover database server
    winrm set winrm/config/service '@{Negotiation="true"}' # Allow Negosiate auth usage
    winrm set winrm/config/service '@{AllowUnencrypted="true"}' # Allow unencrypted connection
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

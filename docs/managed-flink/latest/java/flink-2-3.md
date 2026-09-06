@@ -71,7 +71,3 @@ The following Apache Flink 2.3 features are not supported in Amazon Managed Serv
 <a name="flink-2-3-known-issues-studio"></a>
 
 Flink 2.3 in Amazon Managed Service for Apache Flink does not support Studio applications. For more information, see [Creating a Studio notebook](https://docs.aws.amazon.com/managed-flink/latest/java/how-zeppelin-creating.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

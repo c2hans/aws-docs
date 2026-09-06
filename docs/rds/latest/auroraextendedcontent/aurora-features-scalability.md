@@ -44,7 +44,3 @@ Aurora provides a reader endpoint for automatic connection routing and load bala
 <a name="aurora-features-custom-endpoints"></a>
 
 Custom endpoints allow you to distribute and load balance workloads across different sets of database instances. For example, you can provision a set of Aurora read replicas to use an instance type with higher memory capacity in order to run an analytics workload while keeping other instances isolated for transactional traffic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

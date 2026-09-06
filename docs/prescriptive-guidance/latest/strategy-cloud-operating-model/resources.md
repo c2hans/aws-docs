@@ -24,7 +24,3 @@ Additional resources:
 + [Predicts 2023: Collaborate, Automate and Orchestrate to Optimize Costs and Value During the Economic Crisis](https://www.gartner.com/en/documents/4020625) (Gartner Research, November 1, 2022)
 + [The Business Value of Migration to Amazon Web Services](https://pages.awscloud.com/rs/112-TZM-766/images/hackett-group-the-business-value-of-migration-to-aws-012022.pdf) (by Richard Pastore, The Hackett Group, February 2022)
 + [What Is a Balanced Scorecard (BSC), How Is It Used in Business?](https://www.investopedia.com/terms/b/balancedscorecard.asp) (by Evan Tarver, *Investopedia*, March 10, 2023)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

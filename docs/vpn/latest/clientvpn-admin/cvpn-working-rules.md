@@ -198,7 +198,3 @@ When using SAML federated authentication, the Group ID field corresponds to the 
 + The manager group can access the public internet, `192.168.0.0/24`, and a single host (`10.0.2.119/32`) within the `10.0.0.0/16` network, but does not have access to `172.16.0.0/24` or any of the remaining hosts in the `10.0.0.0/16` network.
 + The engineering group can access the public internet, `172.16.0.0/24`, and `172.16.0.128/25`.
 + Any other user group, for example "admin group," can access the public internet, but not any other destination networks defined in the other rules.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

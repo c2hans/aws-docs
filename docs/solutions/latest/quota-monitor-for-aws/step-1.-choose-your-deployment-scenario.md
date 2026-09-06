@@ -60,7 +60,3 @@ The following table summarizes the decision criteria for choosing templates, reg
 | Which spoke account should you use? | Any | Any |
 | Which AWS Region should you use for the Trusted Advisor spoke template? |  `us-east-1` or `us-gov-west-1` Region |  `us-east-1` or `us-gov-west-1` Region |
 | Which AWS Region should you use for the Service Quota spoke template? | Any | Any |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Quota Monitor for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

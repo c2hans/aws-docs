@@ -33,7 +33,3 @@ The Access Console has three components, the Web Client, the Handler, and the Au
 If you haven’t changed the default, this is port 8443
 
 If the Broker is already running on the same host where you are going to install all three components, you don’t have to do anything. The Setup Wizard will register a new client with the broker for you.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

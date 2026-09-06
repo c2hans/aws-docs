@@ -18,7 +18,3 @@ Don't create a subfolder named **projects** within a folder of the same name wit
 
 **Note**
 It is not currently possible to create a subfolder named **projects** within a folder of the same name, using the File System of the AWS Cloud9 IDE for CodeCatalyst. You will not be able to access any files within this directory from the AWS Cloud9 IDE File Explorer, but you will be able access them using the command line. Please use an alternative folder name. This issue only affects the file path **/projects/projects**, file paths such as **/test/projects **and **/projects/test/projects** should work. This is a known issue and only affects the AWS Cloud9 IDE File Explorer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

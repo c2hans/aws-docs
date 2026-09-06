@@ -56,7 +56,3 @@ The following table provides some approximations of frame sampling and token uti
 | frames\_to\_sample | 10 | 30 | 960 | 1200 | 1800 | 2700 |  |  |
 | sample\_rate\_fps | 1 | 1 | 1 | 1 | 1 | 1 |  |  |
 | Estimated token count | 2,880 | 8,640 | 276,480 | 345,600 | 518,400 | 777,600 |  |  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

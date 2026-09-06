@@ -370,7 +370,3 @@ Every application in App Studio has content security settings that you can use t
 <a name="automations-s3-preview-publish-test"></a>
 
 The application is now ready for testing. For more information about previewing and publishing applications, see [Previewing, publishing, and sharing applications](applications-preview-publish-share.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

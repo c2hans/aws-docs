@@ -23,7 +23,3 @@ When you shut down all resources belonging to a resource type, the following occ
 1. Choose the **X** symbol to the right of the resource you wish to shut down. You can view the **X** symbol by hovering your cursor over a resource.
 
 1. (Optional) You can shut down all the resources of a given resource type by choosing **Shut Down All** to the right of the resource type name.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

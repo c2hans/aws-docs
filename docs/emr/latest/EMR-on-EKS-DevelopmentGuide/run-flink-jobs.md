@@ -16,7 +16,3 @@ Amazon EMR releases 6.13.0 and higher support Amazon EMR on EKS with Apache Flin
 + [Using Autoscaler for Flink applications](jobruns-flink-autoscaler.md)
 + [Maintenance and troubleshooting for Flink jobs on Amazon EMR on EKS](jobruns-flink-troubleshooting.md)
 + [Supported releases for Amazon EMR on EKS with Apache Flink](jobruns-flink-security-release-versions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

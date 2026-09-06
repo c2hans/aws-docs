@@ -54,7 +54,7 @@ If you omit this configuration or specify the default chunking strategy, the ser
 Expand the section that corresponds to the chunking strategy that you want to use:
 
 ### No chunking
-<a name="w2aac32c12c25c13c17c11c15b1"></a>
+<a name="w2aac32c12c25c13c19c11c15b1"></a>
 
 To treat each document in your data source as a single source chunk, specify `NONE` in the `chunkingStrategy` field of the `ChunkingConfiguration`, as in the following format:
 
@@ -65,7 +65,7 @@ To treat each document in your data source as a single source chunk, specify `NO
 ```
 
 ### Fixed-size chunking
-<a name="w2aac32c12c25c13c17c11c15b3"></a>
+<a name="w2aac32c12c25c13c19c11c15b3"></a>
 
 To divide each document in your data source into chunks of approximately the same size, specify `FIXED_SIZE` in the `chunkingStrategy` field of the `ChunkingConfiguration` and include a [FixedSizeChunkingConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FixedSizeChunkingConfiguration.html) in the `fixedSizeChunkingConfiguration` field, as in the following format:
 
@@ -81,7 +81,3 @@ To divide each document in your data source into chunks of approximately the sam
 
 **Note**
 Semantic chunking is not supported for managed knowledge bases.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

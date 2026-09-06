@@ -18,7 +18,3 @@ You must have a multi-account AWS Managed Services (AMS) environment set up with
 For onboarding questions, contact your cloud service delivery manager (CSDM). See also [Application accounts: AMS-managed, Dev-mode, Customer-managed](https://docs.aws.amazon.com/managedservices/latest/userguide/application-account.html). For general information about modes, see [AMS modes](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/ams-modes.html) [Service management in AWS Managed Services](service-management.md).
 
 For information on the different modes of application accounts, see [Application accounts: AMS-managed, Dev-mode, Customer-managed](https://docs.aws.amazon.com/managedservices/latest/userguide/application-account.html). For general information about modes, see [AMS modes](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/ams-modes.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

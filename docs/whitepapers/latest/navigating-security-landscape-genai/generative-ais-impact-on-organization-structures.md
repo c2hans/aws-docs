@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
  An organization can take a similar approach and embed security into its data science teams, called shifting security left. This keeps security close to the work, allowing for fast feedback. When taking this approach, it's important to take the approach of enablement instead of simply blocking work from happening. While it's easier to say "no," a better approach is to think of how to say "yes, but."
 
  Technical organizations that invest in a scaled security approach also see an increase in software delivery velocity, because security reviews are traditionally gatekept by a central team. There is an organizational tax imposed whenever a team moves between organizational structures. This tax can be reduced by keeping a tight feedback loop with security.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

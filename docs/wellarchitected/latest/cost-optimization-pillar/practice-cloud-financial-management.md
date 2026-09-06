@@ -60,7 +60,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization
 + [COST01-BP07 Keep up-to-date with new service releases](cost_cloud_financial_management_scheduled.md)
 + [COST01-BP08 Create a cost-aware culture](cost_cloud_financial_management_culture.md)
 + [COST01-BP09 Quantify business value from cost optimization](cost_cloud_financial_management_quantify_value.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

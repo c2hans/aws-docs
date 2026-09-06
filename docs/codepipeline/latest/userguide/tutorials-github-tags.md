@@ -201,7 +201,3 @@ After you create your pipeline and specify Git tags, you can tag commits in your
    Under **Logs**, view the CodeBuild build output. The commands output the value of the entered variable.
 
 1. In the **History** page, view the **Triggers** column. View the trigger type **GitTag : release-1**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

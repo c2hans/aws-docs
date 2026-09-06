@@ -386,7 +386,3 @@ The following table describes important additions to the Amazon EC2 User Guide i
 | Amazon VPC IP Address Designation | 2010-06-15 | Amazon VPC users can now specify the IP address to assign an instance launched in a VPC. | 12 July 2010 |
 | Amazon CloudWatch monitoring for Amazon EBS Volumes |  | Amazon CloudWatch monitoring is now automatically available for Amazon EBS volumes. | 14 June 2010 |
 | Reserved Instances with Windows |  | Amazon EC2 now supports Reserved Instances with Windows. | 22 February 2010 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

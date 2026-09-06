@@ -68,7 +68,3 @@ You can add value mappings to your panels.
 1. Choose **Update** to save the value mapping.
 
 After you've added a mapping, the **Edit value mappings** button replaces the **Add value mappings** button. Choose the edit button to add or update mappings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

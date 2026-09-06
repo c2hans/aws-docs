@@ -72,6 +72,7 @@ Instance Scheduler creates and updates the tags listed above on managed resource
  `IS-ErrorMessage`
  `IS-PreferredInstanceTypes` (if using alternate instance types)
  `IS-MinDesiredMax` (if scheduling Auto Scaling groups)
+ `IS-SelfHealLastAttempt` (if scheduling Auto Scaling groups)
 If you cannot accommodate these tags in your governance policies, disable informational tagging by setting the **Enable informational tagging** parameter to `No` on the hub stack. Note that this will also disable the `IS-ManagedBy` tag that is used to confirm resource registration.
 
 ### Control tags
@@ -83,6 +84,7 @@ In addition to informational tags, Instance Scheduler uses the following control
 | --- | --- |
 |  `IS-PreferredInstanceTypes`  | A comma-separated list of alternate EC2 instance types to try when starting an instance fails due to insufficient capacity. For more information, refer to [Handling EC2 Insufficient Capacity Errors](specifying-alternate-instance-types-for-ec2.md). |
 |  `IS-MinDesiredMax`  | The minimum, desired, and maximum capacity values for an Auto Scaling group in the format `min-desired-max`. For more information, refer to [EC2 Auto Scaling Group Scheduling](ec2-auto-scaling-group-scheduling.md). |
+|  `IS-SelfHealLastAttempt`  | The UTC timestamp of the most recent automatic re-registration attempt for an Auto Scaling group, used to throttle repeated attempts. For more information, refer to [Automatic re-registration (self-heal)](ec2-auto-scaling-group-scheduling.md#asg-automatic-re-registration-self-heal). |
 
 ### Tag capacity
 <a name="informational-tag-capacity"></a>
@@ -248,7 +250,3 @@ To monitor Instance Scheduler events:
 1. Configure targets such as SNS topics, Lambda functions, or CloudWatch Logs
 
 For more information about EventBridge, refer to [What is Amazon EventBridge?](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) in the *Amazon EventBridge User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Instance Scheduler on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

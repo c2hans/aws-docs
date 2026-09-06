@@ -40,7 +40,3 @@ Use a [Set contact attributes](set-contact-attributes.md) block to set a value t
 1. For the **Destination key**, provide a name for the attribute, such as *Company*. This is the value you use for the **Attribute** field when using or referencing attributes in other blocks. For the **Value**, use your company name.
 
    You can also choose to use an existing attribute as the basis for creating the new attribute.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

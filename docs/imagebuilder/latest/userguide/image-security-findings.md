@@ -37,7 +37,7 @@ To activate Amazon Inspector security scans for your account from the Image Buil
 **Note**
 Amazon Inspector incurs charges. For more information, see [Amazon Inspector pricing](https://aws.amazon.com/inspector/pricing/).
 
-If you've activated scanning for your pipeline, Image Builder takes a snapshot of the findings for your build instance when you create a new image. This way, you can access the findings after Image Builder terminates the build instance.
+If you've activated scanning for your pipeline, Image Builder takes a snapshot of the findings for your test instance when you create a new image. This way, you can access the findings after Image Builder terminates the test instance.
 
 **Step 2: Configure your pipeline to save snapshots for vulnerability findings**
 To configure vulnerability finding snapshots for your pipeline, perform the following steps:
@@ -96,7 +96,7 @@ The severity level of the CVE finding. Values are as follows:
 + Critical
 
 **Finding ID**
-The unique identifier for the CVE finding that Amazon Inspector detected for your image when it scanned the build instance. The ID is linked to the **Security findings > By vulnerability** page.
+The unique identifier for the CVE finding that Amazon Inspector detected for your image when it scanned the test instance. The ID is linked to the **Security findings > By vulnerability** page.
 
 **Image ARN**
 The Amazon Resource Name (ARN) for the image with the finding specified in the **Finding ID** column.
@@ -115,7 +115,3 @@ Links to details about the recommended course of action to remediate the finding
 
 **Published date**
 The date and time when this vulnerability was first added to the vendor's database.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

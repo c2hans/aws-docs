@@ -51,7 +51,3 @@ These three phases provide a concrete path from initial scoping through assessme
 + Establish ongoing continuous monitoring processes and annual affirmation procedures to maintain certification between assessments
 
 Organizations with existing AWS environments and security tooling can typically complete Phases 1-3 in 90-120 days. Organizations building new environments should plan for 150-180 days. Either way, starting now positions you well ahead of the November 2026 Phase 2 deadline.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

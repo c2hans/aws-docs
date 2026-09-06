@@ -41,7 +41,7 @@ Before you can send test RCS messages, you must register one or more test device
 ------
 #### [ Console ]
 
-In the console, test devices are added as part of the AWS RCS Agent creation workflow. For step-by-step console instructions, see [Step 2: Add a test device](rcs-getting-started.md#rcs-getting-started-add-test-device).
+In the console, test devices are managed on the **RBM tester management** sub-tab within the **Testing** tab of your AWS RCS Agent. For step-by-step console instructions, see [Step 2: Add a test device](rcs-getting-started.md#rcs-getting-started-add-test-device).
 
 ------
 #### [ AWS CLI ]
@@ -72,7 +72,7 @@ You can view the test devices registered for your AWS RCS Agent using the AWS En
 ------
 #### [ Console ]
 
-To view your registered test devices in the console, navigate to the details page for your AWS RCS Agent and choose the **Testing** tab. The tab displays all verified destination numbers associated with the agent, including their verification status and phone number.
+To view your registered test devices in the console, navigate to the details page for your AWS RCS Agent and choose the **Testing** tab. Choose the **RBM tester management** sub-tab to see all verified destination numbers associated with the agent, including their verification status and phone number.
 
 ------
 #### [ AWS CLI ]
@@ -177,7 +177,3 @@ To find the invitation:
 1. Tap **Unknown Senders**.
 
 1. Look for the RBM Tester Management message and tap **Make me a tester** to accept the invitation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

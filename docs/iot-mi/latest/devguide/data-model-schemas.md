@@ -49,7 +49,3 @@ Each type definition includes:
 Types can be either simple primitives, such as integers or strings with defined limits, or complex structures such as enumerations or custom objects with multiple fields. Type definitions use JSON schema syntax to specify constraints including minimum and maximum values, string lengths, and allowable patterns.
 
 For more information, see [Schema for type definitions](schema-for-type-definitions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,7 +39,3 @@ You can monitor the metrics that a training job emits in real time by using the 
 
 1. In the **Monitor** section, you can review the graphs of instance utilization and algorithm metrics.
 ![Example graphs in the Monitor section in the console.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/console-metrics.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

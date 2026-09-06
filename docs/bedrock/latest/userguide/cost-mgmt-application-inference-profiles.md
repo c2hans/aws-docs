@@ -66,7 +66,3 @@ To reduce profile proliferation:
 + Tag at the team or cost center level rather than per-user.
 + For per-user cost attribution without creating additional profiles, use [IAM principal attribution](cost-mgmt-iam-principal-tracking.md). IAM principal tracking works alongside application inference profiles and attributes costs at the identity level automatically.
 + For per-prompt token detail rather than aggregated dollars, use [Per-request metadata tagging](cost-mgmt-request-metadata.md) with your [model invocation logs](model-invocation-logging.md). It needs no per-model resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

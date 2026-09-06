@@ -26,7 +26,3 @@ The **Users & Permissions** page displays the following information to make user
 
    Amazon Monitron diplays how the user was assigned permissions to all locations. If a user is assigned an **Admin** role at the project level, they inherit access to all locations within that project. In this case, Amazon Monitron indicates their access level as **Admin – inherited**.
 ![Modify user permissions page showing Project name with Admin role and inherited permissions for sites.](http://docs.aws.amazon.com/Monitron/latest/user-guide/images/user-9.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

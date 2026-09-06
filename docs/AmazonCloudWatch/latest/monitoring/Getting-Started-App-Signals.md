@@ -41,7 +41,3 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Getti
 | Out of the box logging with CloudWatch Logs | Yes | No | No |
 | Out of the box runtime metrics | Yes | No | No |
 | Always gets metrics on 100% of traffic | Yes | Only at 100% sampling rate | Only at 100% sampling rate |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

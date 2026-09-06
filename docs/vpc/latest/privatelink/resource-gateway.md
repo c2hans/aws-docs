@@ -69,7 +69,3 @@ You can specify how a resource gateway does DNS resolution for resource configur
 + ** IN\_VPC ** - Domain names are resolved using the DNS server configured in the DHCP option set of the VPC which the resource gateway is in. You should use this if you are using a private DNS server or your domain-name targets are in a Route53 private hosted zone.
 
  If DNS resolution is IN\_VPC, you cannot attach resource configurations defined by ARN to the resource gateway. You cannot set DNS Resolution to IN\_VPC if the resource gateway uses IPv6-only subnets.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

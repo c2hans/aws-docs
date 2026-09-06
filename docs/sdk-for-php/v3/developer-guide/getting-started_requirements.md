@@ -30,7 +30,3 @@ In addition to the minimum requirements, we recommend you also install, uninstal
 Run the [`compatibility-test.php`](https://github.com/aws/aws-sdk-php/blob/master/compatibility-test.php) file located in the SDK code base to verify your system can run the SDK. In addition to meeting the SDK’s minimum system requirements, the compatibility test checks for optional settings and makes recommendations that can help improve performance. The compatibility test outputs results either to the command line or a web browser. When reviewing test results in a browser, successful checks appear in green, warnings in purple, and failures in red. When running from the command line, the result of a check appears on a separate line.
 
 When reporting an issue with the SDK, sharing the output of the compatibility test helps identify the underlying cause.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for PHP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-php` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

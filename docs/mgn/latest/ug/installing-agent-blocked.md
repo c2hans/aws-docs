@@ -52,7 +52,3 @@ Run the AWS Replication Agent installer with the --s3-endpoint parameter. Enter 
  A detailed guide for rehosting servers using MGN over private networks is available here:
 
 [Migrating on-premises servers to AWS over private networks by using MGN.](https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-servers-over-private-networks-mgn/welcome.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 ![Block diagram showing VMware Cloud on AWS](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/vmware-cloud.png)
 
  VMware Cloud on AWS supports several ways to migrate your workload VMs from your on-premises hosts to the ones in your Software Defined Data Centre (SDDC) and back again, as well as across hosts in your SDDC. The method you choose should be based on your tolerance for workload VM downtime, the number of VMs you need to move, and your on-premises networking configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

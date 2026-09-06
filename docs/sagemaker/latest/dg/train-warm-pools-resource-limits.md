@@ -31,7 +31,3 @@ All warm pool instance usage counts toward your SageMaker training resource limi
 There is a limit on the number of instances that you can retain for each account, which is determined by instance type. You can check your resource limits in the [AWS Service Quotas console](https://console.aws.amazon.com/servicequotas/home/) or directly using the [list-service-quotas](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-service-quotas.html) AWS CLI command. For more information on AWS Service Quotas, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
 
 You can also use [AWS Support Center](https://support.console.aws.amazon.com) to request a warm pool quota increase. For a list of available instance types according to Region, see [Amazon SageMaker Pricing](https://aws.amazon.com/sagemaker/pricing/) and choose **Training** in the **On-Demand Pricing** table.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

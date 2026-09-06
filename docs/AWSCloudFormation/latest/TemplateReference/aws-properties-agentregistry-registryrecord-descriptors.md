@@ -21,7 +21,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[A2aAgentCard](#cfn-agentregistry-registryrecord-descriptors-a2aagentcard)" : {{A2aAgentCardDescriptor}},
   "[AgentSkillsDefinition](#cfn-agentregistry-registryrecord-descriptors-agentskillsdefinition)" : {{AgentSkillsDefinitionDescriptor}},
+  "[Agui](#cfn-agentregistry-registryrecord-descriptors-agui)" : {{AgUiDescriptor}},
   "[Custom](#cfn-agentregistry-registryrecord-descriptors-custom)" : {{CustomDescriptor}},
+  "[Http](#cfn-agentregistry-registryrecord-descriptors-http)" : {{HttpDescriptor}},
   "[McpServer](#cfn-agentregistry-registryrecord-descriptors-mcpserver)" : {{McpServerDescriptor}}
 }
 ```
@@ -34,8 +36,12 @@ To declare this entity in your CloudFormation template, use the following syntax
     A2aAgentCardDescriptor}}
   [AgentSkillsDefinition](#cfn-agentregistry-registryrecord-descriptors-agentskillsdefinition): {{
     AgentSkillsDefinitionDescriptor}}
+  [Agui](#cfn-agentregistry-registryrecord-descriptors-agui): {{
+    AgUiDescriptor}}
   [Custom](#cfn-agentregistry-registryrecord-descriptors-custom): {{
     CustomDescriptor}}
+  [Http](#cfn-agentregistry-registryrecord-descriptors-http): {{
+    HttpDescriptor}}
   [McpServer](#cfn-agentregistry-registryrecord-descriptors-mcpserver): {{
     McpServerDescriptor}}
 ```
@@ -55,10 +61,22 @@ The agent skills definition descriptor, populated when the record type is `SKILL
 *Type*: [AgentSkillsDefinitionDescriptor](aws-properties-agentregistry-registryrecord-agentskillsdefinitiondescriptor.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`Agui`  <a name="cfn-agentregistry-registryrecord-descriptors-agui"></a>
+The AG-UI descriptor, populated for records detected from an AG-UI protocol source.
+*Required*: No
+*Type*: [AgUiDescriptor](aws-properties-agentregistry-registryrecord-aguidescriptor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Custom`  <a name="cfn-agentregistry-registryrecord-descriptors-custom"></a>
 The custom descriptor, populated when the record type is `CUSTOM`.
 *Required*: No
 *Type*: [CustomDescriptor](aws-properties-agentregistry-registryrecord-customdescriptor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Http`  <a name="cfn-agentregistry-registryrecord-descriptors-http"></a>
+The HTTP descriptor, populated for records detected from an HTTP protocol source.
+*Required*: No
+*Type*: [HttpDescriptor](aws-properties-agentregistry-registryrecord-httpdescriptor.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `McpServer`  <a name="cfn-agentregistry-registryrecord-descriptors-mcpserver"></a>
@@ -66,7 +84,3 @@ The Model Context Protocol (MCP) server descriptor, populated when the record ty
 *Required*: No
 *Type*: [McpServerDescriptor](aws-properties-agentregistry-registryrecord-mcpserverdescriptor.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

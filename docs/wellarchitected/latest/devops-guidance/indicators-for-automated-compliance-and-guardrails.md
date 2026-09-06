@@ -19,7 +19,3 @@ Integrate risk management and governance mechanisms into the maintenance of comp
 + [[AG.ACG.9] Integrate software provenance tracking throughout the development lifecycle](ag.acg.9-integrate-software-provenance-tracking-throughout-the-development-lifecycle.md)
 + [[AG.ACG.10] Automate resolution of findings in tracking systems](ag.acg.10-automate-resolution-of-findings-in-tracking-systems.md)
 + [[AG.ACG.11] Digital attestation verification for zero trust deployments](ag.acg.11-digital-attestation-verification-for-zero-trust-deployments.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

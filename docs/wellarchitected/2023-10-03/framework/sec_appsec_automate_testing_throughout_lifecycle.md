@@ -73,7 +73,3 @@ As you build your software, adopt various mechanisms for software testing to ens
 +  [Industry awareness for developers](https://owasp.org/www-project-top-ten/)
 +  [AWS CodePipeline Governance](https://github.com/awslabs/aws-codepipeline-governance) (GitHub)
 +  [Security for Developers workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/66275888-6bab-4872-8c6e-ed2fe132a362/en-US)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

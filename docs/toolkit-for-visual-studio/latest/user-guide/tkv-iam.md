@@ -154,7 +154,3 @@ In the policy editor, add policy statements to specify the level of access to pr
 For more precise access control, you can expand the subnodes in the policy editor to allow or disallow actions associated with Amazon Web Services.
 
 When you have edited the policy, choose the **Save** link.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

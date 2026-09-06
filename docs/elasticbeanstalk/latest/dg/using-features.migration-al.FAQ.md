@@ -95,7 +95,3 @@ The environment’s resources would remain active and continue to function. And,
 Although Amazon Linux AMI and AL2023/AL2 share the same Linux kernel, they differ in their initialization system, `libc` versions, the compiler tool chain, and various packages. For more information, see [Amazon Linux 2 FAQs](https://aws.amazon.com//amazon-linux-2/faqs/).
 
 The Elastic Beanstalk service has also updated platform specific versions of runtime, build tools, and other dependencies. The AL2023/AL2 based platform branches aren't guaranteed to be backward compatible with your existing application. Furthermore, even if your application code successfully deploys to the new platform version, it might behave or perform differently due to operating system and run time differences. For a list and description of configurations and customizations that you'll need to review and test, see [Migrating your Elastic Beanstalk Linux application to Amazon Linux 2023 or Amazon Linux 2](using-features.migration-al.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ The following steps need to be completed for alarm ingestion:
 <a name="idr-gs-idrcli-alternatives-alarms"></a>
 
 If you can't use the IDR CLI for onboarding, consult your Technical Account Manager (TAM) for alternative options. For more information, see [Workload onboarding questionnaire in Incident Detection and Response (exception path)](idr-gs-questionnaire.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ Your AWS account has the following quotas related to Multi-party approval.
 | Maximum number of identity sources for each account | 1 | No |
 | Maximum number of approval teams for each account | 10 | No |
 | Maximum number of approvers for each approval team | 20 | No |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Multi-party approval. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mpa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

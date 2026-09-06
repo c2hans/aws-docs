@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Use agents on Amazon WorkSpaces Applications and Amazon WorkSpaces instances to aggregate security logs. If instance security logs need to be captured from WorkSpaces Applications instances, then event forwarding agents such as Amazon CloudWatch, Amazon Kinesis Agent for Windows, or Telegraf can be used to forward relevant events into the central security logging system.
 
  For WorkSpaces, these agents can be pre-installed into a WorkSpaces custom bundle to make sure a logging capability is available before users attempt to access WorkSpaces. For WorkSpaces Applications, these agents need to be installed into the Image Builder for On-Demand and Always-On fleets.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

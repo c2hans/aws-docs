@@ -33,7 +33,3 @@ Using child control operators is optional. You can use the `@@operators_allowed_
 
 **Note**
 If an inherited child control operator limits the use of an operator, you can't reverse that rule in a child policy. If you include child control operators in a parent policy, they limit the value-setting operators in all child policies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

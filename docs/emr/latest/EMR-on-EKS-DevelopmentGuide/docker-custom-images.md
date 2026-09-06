@@ -15,7 +15,3 @@ You can use customized Docker images with Amazon EMR on EKS. Customizing the Ama
 + [How to customize Docker images](docker-custom-images-steps.md)
 + [Details for selecting a base image URI](docker-custom-images-tag.md)
 + [Considerations for customizing images](docker-custom-images-considerations.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

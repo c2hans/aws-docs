@@ -55,7 +55,3 @@ The query returns the following sample output:
  106     | 12720          | tickit_db     | Column was renamed          | 2023-07-26 14:59:12.82297  | tickit_db                | mv_schema         | test_table_95d6d861 | mv_schema   | materialized_view_a1f3f862 | Unrefreshable
  106     | 12727          | tickit_db     | Table was renamed           | 2023-07-26 15:00:08.051321 | tickit_db                | mv_schema         | test_table_95d6d861 | mv_schema   | materialized_view_a1f3f862 | Unrefreshable
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

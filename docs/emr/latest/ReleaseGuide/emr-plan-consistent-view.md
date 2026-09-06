@@ -138,7 +138,3 @@ After you remove EMRFS CV from your Amazon EMR clusters, delete the DynamoDB res
 + [Configure consistency notifications for CloudWatch and Amazon SQS](emrfs-configure-sqs-cw.md)
 + [Configure consistent view](emrfs-configure-consistent-view.md)
 + [EMRFS CLI Command Reference](emrfs-cli-reference.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,7 +49,3 @@ Enabling automated backups and Point-in-Time Recovery (PITR) for one replica in 
 <a name="globaltables-bestpractices-multiregion"></a>
 
 For prescriptive guidance on deploying global tables, see [Best Practices for DynamoDB global table design](bp-global-table-design.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-opensearch-sourc
 1. Optionally, provide **Query**, an OpenSearch query to deliver more specific results. For more information about writing OpenSearch queries, consult [Reading from OpenSearch Service indexes](aws-glue-programming-etl-connect-opensearch-home.md#aws-glue-programming-etl-connect-opensearch-read).
 
 1.  In **Custom OpenSearch Service properties**, enter parameters and values as needed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

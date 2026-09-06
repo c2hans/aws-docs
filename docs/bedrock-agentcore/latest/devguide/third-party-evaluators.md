@@ -186,7 +186,3 @@ The following evaluators are available at launch.
 In the evaluator picker, third-party evaluators appear in their own **Third-party evaluators** section, grouped by provider, separate from the built-in evaluator groups. This section is collapsed by default.
 
 To create a custom evaluator derived from a base evaluator, use the existing **Create custom evaluator** flow and choose **Third-party library** as the evaluator definition type. This option removes the instruction and scale sections shown for LLM-as-a-judge, since the base evaluator owns the prompt and scoring. Choose a library and metric, then supply the model and inference parameters. The evaluation level is shown read-only, set by the metric.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

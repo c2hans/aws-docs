@@ -52,7 +52,3 @@ Support for key commitment includes [new algorithm suites](supported-algorithms.
 It's a best practice to [limit the number of encrypted data keys](configure.md#config-limit-keys) in messages that you decrypt, especially messages from untrusted sources. Decrypting a message with numerous encrypted data keys that you can't decrypt can cause extended delays, run up expenses, throttle your application and others that share your account, and potentially exhaust your key infrastructure. Without limits, an encrypted message can have up to 65,535 (2^16 - 1) encrypted data keys. For details, see [Limiting encrypted data keys](configure.md#config-limit-keys).
 
 For more information about the AWS Encryption SDK security features that underlie these best practices, see [Improved client-side encryption: Explicit KeyIds and key commitment](https://aws.amazon.com/blogs/security/improved-client-side-encryption-explicit-keyids-and-key-commitment/) in the *AWS Security Blog*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

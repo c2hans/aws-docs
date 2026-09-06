@@ -29,7 +29,3 @@ The security framework mapping process uses the [AWS Security Reference Architec
 By using standardized mapping templates in the workshop, you map the requirement to the target end state. You highlight the tools, AWS services, processes, policies, controls, and changes that are required to achieve the target end state.
 
 When running the security framework mapping workshop, you can use AWS Professional Services, AWS Security Solution Architects, or AWS Partners. These resources can help you accelerate and facilitate the workshop. Security framework mapping workshops can be included as part of an [Experience-Based Acceleration (EBA) party](https://aws.amazon.com/blogs/mt/level-up-your-cloud-transformation-with-experience-based-acceleration-eba/), which is led by AWS Solution Architects, AWS Customer Solution Managers, or AWS Partners. The EBA party acts as an accelerator to help you build a strong AWS Cloud foundation that follows AWS migration and modernization best practices.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

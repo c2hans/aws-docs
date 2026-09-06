@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/encode-rules.html
 Some output groups also support audio-only outputs. See [Setting up the output](audio-only-outputs-and-outputgroups.md).
 
 Some output groups also support outputs that contain JPEG files, to support trick play according to the Roku specification. See [Trick-play track via the Image Media Playlist specification](trick-play-roku.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

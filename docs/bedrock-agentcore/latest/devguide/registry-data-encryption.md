@@ -129,7 +129,3 @@ To restore access, re-enable the key or update the IAM policy to grant the requi
 +  **Customer managed key** — You create and manage a symmetric encryption KMS key in AWS KMS. You have full control over key policies, rotation schedules, and key deletion. You can audit key usage through AWS CloudTrail.
 
 You select the key management option when you create a registry. You cannot change the encryption key after the registry is created. For configuration steps, see [Set customer managed key policy](registry-kms-key-policy.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

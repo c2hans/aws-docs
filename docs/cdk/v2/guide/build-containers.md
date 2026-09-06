@@ -119,7 +119,3 @@ Aliasing or linking is not supported. To replace Docker, you must use the `CDK_D
  Finch is supported, although there may be some Docker features that are unavailable or may work differently as the tool evolves. For more information on Finch, see [Ready for Flight: Announcing Finch 1.0 GA\!](https://aws.amazon.com/blogs/opensource/ready-for-flight-announcing-finch-1-0-ga/) in the * AWS Open Source Blog*.
 
 Other container management tools may work. The CDK doesn’t check which Docker replacement you are using to determine if it’s supported. If the tool has equivalent Docker commands and behaves similarly, it should work.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

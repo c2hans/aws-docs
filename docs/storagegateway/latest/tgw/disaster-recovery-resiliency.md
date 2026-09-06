@@ -16,7 +16,3 @@ For more information about AWS Regions and Availability Zones, see [AWS Global I
 In addition to the AWS global infrastructure, Storage Gateway offers several features to help support your data resiliency and backup needs:
 + Use VMware vSphere High Availability (VMware HA) to help protect storage workloads against hardware, hypervisor, or network failures. For more information, see [Using VMware vSphere High Availability with Storage Gateway](vmware-ha.md).
 + Archive virtual tapes in S3 Glacier Flexible Retrieval. For more information, see [Archiving Virtual Tapes](archiving-tapes-vtl.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

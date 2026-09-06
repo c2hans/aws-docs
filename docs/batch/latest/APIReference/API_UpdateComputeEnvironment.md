@@ -19,6 +19,9 @@ Content-type: application/json
    "computeResources": {
       "allocationStrategy": "{{string}}",
       "bidPercentage": {{number}},
+      "capacityTags": {
+         "{{string}}" : "{{string}}"
+      },
       "desiredvCpus": {{number}},
       "ec2Configuration": [
          {
@@ -47,6 +50,35 @@ Content-type: application/json
          "userdataType": "{{string}}",
          "version": "{{string}}"
       },
+      "managedInstancesProvider": {
+         "infrastructureOptimization": {
+            "scaleInAfter": {{number}}
+         },
+         "infrastructureRoleArn": "{{string}}",
+         "instanceLaunchTemplate": {
+            "capacityReservations": {
+               "reservationGroupArn": "{{string}}",
+               "reservationPreference": "{{string}}"
+            },
+            "ec2InstanceProfileArn": "{{string}}",
+            "instanceMetadataTagsPropagation": {{boolean}},
+            "instanceRequirements": {
+               "allowedInstanceTypes": [ "{{string}}" ]
+            },
+            "localStorageConfiguration": {
+               "useLocalStorage": {{boolean}}
+            },
+            "monitoring": "{{string}}",
+            "networkConfiguration": {
+               "securityGroups": [ "{{string}}" ],
+               "subnets": [ "{{string}}" ]
+            },
+            "storageConfiguration": {
+               "storageSizeGiB": {{number}}
+            }
+         },
+         "propagateTags": "{{string}}"
+      },
       "maxvCpus": {{number}},
       "minvCpus": {{number}},
       "placementGroup": "{{string}}",
@@ -62,6 +94,9 @@ Content-type: application/json
       "updateToLatestImageVersion": {{boolean}}
    },
    "context": "{{string}}",
+   "ecsSettings": {
+      "containerInsights": "{{string}}"
+   },
    "serviceRole": "{{string}}",
    "state": "{{string}}",
    "unmanagedvCpus": {{number}},
@@ -95,6 +130,11 @@ Required: No
  ** [context](#API_UpdateComputeEnvironment_RequestSyntax) **   <a name="Batch-UpdateComputeEnvironment-request-context"></a>
 Reserved.
 Type: String
+Required: No
+
+ ** [ecsSettings](#API_UpdateComputeEnvironment_RequestSyntax) **   <a name="Batch-UpdateComputeEnvironment-request-ecsSettings"></a>
+The Amazon ECS settings for the compute environment. These settings control CloudWatch Container Insights collection for the compute environment.
+Type: [EcsSettings](API_EcsSettings.md) object
 Required: No
 
  ** [serviceRole](#API_UpdateComputeEnvironment_RequestSyntax) **   <a name="Batch-UpdateComputeEnvironment-request-serviceRole"></a>
@@ -229,7 +269,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/batch-2016-08-10/UpdateComputeEnvironment)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/UpdateComputeEnvironment)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/batch-2016-08-10/UpdateComputeEnvironment)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ When you write data to a tape, you can view the amount of data stored on the tap
    + **Used:** The size of data written to the tape by your backup application.
 **Note**
 This value is not available for tapes created before May 13, 2015.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

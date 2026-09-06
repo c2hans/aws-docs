@@ -568,7 +568,3 @@ if (!result.failedTransfers().isEmpty()) {
 When the automatic parallel transfer feature is enabled in the v2 SDK, the S3 Transfer Manager uses [byte-range fetches](https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance-guidelines.html#optimizing-performance-guidelines-get-range) to retrieve specific portions of the object in parallel (multipart download). The way an object is downloaded with v2 does not depend on how the object was originally uploaded. All downloads can benefit from high throughput and concurrency.
 
 In contrast, with v1's Transfer Manager, it does matter how the object was originally uploaded. The v1 Transfer Manager retrieves the parts of the object the same way that the parts were uploaded. If an object was originally uploaded as a single object, the v1 Transfer Manager is not able to accelerate the downloading process by using sub-requests.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

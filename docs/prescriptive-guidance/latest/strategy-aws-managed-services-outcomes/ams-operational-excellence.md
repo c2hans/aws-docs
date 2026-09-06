@@ -93,7 +93,3 @@ AMS augments a Cloud Center of Excellence (CCoE) team by providing ongoing gover
 <a name="pay-as-you-go"></a>
 
 Unlike many other service providers, AMS has a month-to-month, pay-as-you-go model, similar to most other AWS services. Cloud operations teams can learn from AMS automation and governance. Over time, as they upskill through experience with AMS, teams can improve their own IT operational practices and eventually take over infrastructure and security management and operations. Because AMS uses only cloud-native AWS services, subscribing to AMS doesn't require commitment to any third-party contracts or licensing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

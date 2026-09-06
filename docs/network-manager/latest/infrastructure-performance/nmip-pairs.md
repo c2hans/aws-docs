@@ -107,7 +107,3 @@ The Network latency section shows the actual network performance speed between t
 This example is provided for illustrative purposes only and does not represent the actual network latency between these Regions during this time.
 
 ![Network latency status, showing the actual network performance for two sets of Region pairs.](http://docs.aws.amazon.com/network-manager/latest/infrastructure-performance/images/nmip-latency-all.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

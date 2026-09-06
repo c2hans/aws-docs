@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 <a name="implementation-guidance-2"></a>
 
  AWS Local Zones are ideal when you require low-latency access to cloud services from specific geographic locations while still adhering to data residency rules. Local Zones extend the AWS Cloud closer to users or on-premises facilities, which helps your organization process and store data within the defined geographic boundaries without compromising performance. For more detail, see [AWS Local Zones locations.](https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

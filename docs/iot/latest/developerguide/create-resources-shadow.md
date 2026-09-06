@@ -60,7 +60,3 @@ After you have installed and configured the Raspberry Pi OS, open the Raspberry 
 If you can open the AWS IoT Core console, you're Raspberry Pi is ready and you can continue to [Tutorial: Provisioning your device in AWS IoT](shadow-provision-cloud.md).
 
 If you're having trouble or need additional help, see [Getting help for your Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/5).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

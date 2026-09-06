@@ -24,7 +24,3 @@ To create and manage a multi-VPC AWS network infrastructure at scale, it's a bes
 **AWS Transit Gateway**
 + Traffic between each VPC is managed through the AWS Transit Gateway service, which acts as a centralized hub that connects each VPC.
 + AWS Transit Gateway supports transitive routing. Traffic is routed among all the connected networks by using route tables.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

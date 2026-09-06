@@ -50,7 +50,3 @@ The URL query strings in viewer requests that CloudFront includes in origin requ
 + **Include the following query strings** – You specify which query strings in viewer requests are included in origin requests.
 + **All query strings except** – You specify which query strings in viewer requests are ***not*** included in origin requests. All other query strings are included.
 When you use the **Include the following query strings** or **All query strings except** setting, you specify query strings by their name only. CloudFront includes the full query string, including its value, in origin requests.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

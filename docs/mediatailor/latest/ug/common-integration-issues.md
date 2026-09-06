@@ -25,7 +25,3 @@ Multivariant playlist, media playlist, or MPD requests return 404 errors
 Verify that your CDN routing rules are correctly configured to forward multivariant playlist, media playlist, and MPD requests to MediaTailor.
 Check that the MediaTailor configuration exists and is correctly set up.
 Ensure your CDN behavior patterns match the expected manifest request paths (for example, `*.m3u8`, `*.mpd`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

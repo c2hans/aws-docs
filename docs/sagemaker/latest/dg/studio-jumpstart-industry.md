@@ -110,7 +110,3 @@ For additional documentation and tutorials, see the following resources:
 + [SageMaker JumpStart Industry: Financial Python SDK Tutorials](https://sagemaker-jumpstart-industry-pack.readthedocs.io/en/latest/notebooks/index.html#)
 + [The SageMaker JumpStart Industry: Financial GitHub repository](https://github.com/aws/sagemaker-jumpstart-industry-pack/)
 + [Getting started with Amazon SageMaker AI - Machine Learning Tutorials](https://aws.amazon.com/sagemaker/getting-started/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

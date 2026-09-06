@@ -30,7 +30,3 @@ The ECS architecture implements a multi-layer caching strategy to optimize perfo
 + Existing tasks maintain cached data until manual refresh or natural replacement
 + Auto-scaling events automatically provision tasks with current data
 + Stale cache scenarios are resolved through the rolling update process
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

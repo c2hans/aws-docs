@@ -57,7 +57,3 @@ Import the Client VPN endpoint configuration file to the AWS provided client or 
 For Client VPN endpoints that use Active Directory authentication, you will be prompted to enter your user name and password. If multi-factor authentication (MFA) has been enabled for the directory, you will also be prompted to enter your MFA code.
 
 For Client VPN endpoints that use SAML-based federated authentication (single sign-on), the AWS provided client opens a browser window on your computer. You'll be prompted to enter your corporate credentials before you can connect to the Client VPN endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ If you provide only the invoker role name and if your resources are located in a
   + `AwsResilienceHubExecutorAccountRole` in other accounts
 
   In addition, when you configure a scheduled assessment, AWS Resilience Hub will assume the `AwsResilienceHubPeriodicAssessmentRole` role. However, using `AwsResilienceHubPeriodicAssessmentRole` is not advised because you must manually configure roles and permissions, and some functionalities (such as **Drift notification**) might not work as expected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -61,7 +61,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 The following screenshot shows NoSQL Workbench.
 
 ![Screenshot showing NoSQL Workbench.](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/images/guide-img/225c2600-95f1-4c8c-9e23-419bc7ae3c55/images/47f3a9c6-75f6-4d92-a2c9-a5af8e87cbc1.jpeg)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

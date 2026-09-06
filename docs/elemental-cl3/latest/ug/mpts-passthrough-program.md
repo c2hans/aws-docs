@@ -33,7 +33,3 @@ When the MPTS starts, Elemental Statmux connects to the source transport stream 
 + It assigns new output PIDs to the streams. You could specify the output PIDs that you want Elemental Statmux to use, but that step is optional.
 + It restamps the PCR in each program as it inserts the packets.
 + It creates a new PMT for the program, and includes that PMT in the PAT and SDT for the MPTS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

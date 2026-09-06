@@ -17,7 +17,3 @@ Other examples of common feature processing:
 + Variable-specific features. Some variable types such as text features, features that capture the structure of a web page, or the structure of a sentence have generic ways of processing that help extract structure and context. For example, forming *n-grams* from text “the fox jumped over the fence” can be represented with *unigrams*: the, fox, jumped, over, fence or *bigrams*: the fox, fox jumped, jumped over, over the, the fence.
 
 Including more relevant features helps to improve prediction power. Clearly, it is not always possible to know the features with “signal” or predictive influence in advance. So it is good to include all features that can potentially be related to the target label and let the model training algorithm pick the features with the strongest correlations. In Amazon ML, feature processing can be specified in the recipe when creating a model. See the Developer Guide for a list of available feature processors.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

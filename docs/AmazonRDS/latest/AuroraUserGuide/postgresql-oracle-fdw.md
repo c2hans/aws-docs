@@ -156,7 +156,3 @@ No additional permissions are required for an `rds_superuser` to view passwords 
 Users who don't have the `rds_superuser` role can view passwords in `pg_user_mappings` only under the following conditions:
 + The current user is the user being mapped and owns the server or holds the `USAGE` privilege on it.
 + The current user is the server owner and the mapping is for `PUBLIC`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

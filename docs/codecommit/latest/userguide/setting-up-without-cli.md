@@ -76,7 +76,3 @@ If you have more than one SSH configuration, make sure you include the blank lin
 You have completed the prerequisites. Follow the steps in [Getting started with CodeCommit ](getting-started-cc.md) to start using CodeCommit.
 
 To connect to a repository, follow the steps in [Connect to a repository](how-to-connect.md). To create a repository, follow the steps in [Create a repository](how-to-create-repository.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

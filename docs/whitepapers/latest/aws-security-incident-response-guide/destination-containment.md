@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
  An example of destination containment is demonstrated in the following diagram with an incident response analyst adding an NACL to a subnet in order to block a network connection request from an unauthorized host.
 
 ![Diagram showing an example of destination containment](http://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/destination-containment.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

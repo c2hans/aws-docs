@@ -28,7 +28,3 @@ If you already use identity federation to access your AWS accounts, you can use 
 <a name="external-idp-configuration"></a>
 
 For instructions, see [Setting up IdP federation using IAM and Amazon Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/external-identity-providers-setting-up-saml.html) in the Quick documentation. For more information about configuring the permissions policy for Quick, see [Configuring IAM policies](configuring-iam-policies.md) in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

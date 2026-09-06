@@ -22,7 +22,3 @@ After the scan completes, you can view a visualization of resources found during
 1. On the right side of the page is the **Scan summary details** panel. To open the panel, choose the **open panel** icon.
 
 ![The IaC generator console provides a visual breakdown of scanned resources.](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/IaC-generator-scan-summary.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

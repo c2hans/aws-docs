@@ -181,7 +181,3 @@ Generated images appear as artifacts that you can save to your local machine.
 When Quick generates a document, visualization, or image, it appears as an artifact in your conversation. You can save artifacts to your local machine or to your **My Stuff** library for later use.
 
 To save an artifact, choose the save icon on the artifact and select a destination. Artifacts saved to My Stuff are accessible from the sidebar and can be reused across conversations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

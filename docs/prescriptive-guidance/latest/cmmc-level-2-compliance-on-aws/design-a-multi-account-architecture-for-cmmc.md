@@ -86,7 +86,3 @@ SCPs on the Management Account enforce baseline guardrails across all other acco
 + Deny removal of encryption on Amazon S3 buckets and Amazon EBS volumes in CUI accounts
 
 SCPs and IAM policies work in tandem to define granular access controls, specifying who can access specific resources within accounts. This account-level isolation can be changed only by establishing explicit communication channels between resources in separate accounts, helping prevent accidental scope creep.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

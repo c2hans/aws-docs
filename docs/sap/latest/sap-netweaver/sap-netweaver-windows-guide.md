@@ -39,7 +39,3 @@ In addition, this document also follows best practices from AWS, Microsoft, and 
 This document doesn’t provide guidance on how to set up network and security constructs, such as Amazon Virtual Private Cloud (Amazon VPC), subnets, route tables, ACLs, NAT Gateway, AWS Identity and Access Management (IAM) roles, and AWS Security Groups. Instead, it focuses on how to configure and maintain the compute, storage, and operating system constructs for SAP NetWeaver deployment and operation on Windows on AWS.
 
 SAP NetWeaver is also available to deploy on Linux. If you’re considering using Linux, see the [SAP NetWeaver Quick Start](https://aws.amazon.com/quickstart/architecture/sap-netweaver-abap/) for Linux.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -103,7 +103,3 @@ AWS CodeConnections manages the lifecycle of these endpoints. To delete the endp
 The webhook endpoint is where webhooks from third-party repositories are sent for AWS CodeConnections processing. A webhook describes a customer action. When you perform a `git push`, the webhook endpoint receives a webhook from the provider detailing the push. For example, AWS CodeConnections can notify CodePipeline to start your pipeline.
 
 For cloud providers, such as Bitbucket, or GitHub Enterprise Server hosts that do not use a VPC, the webhook VPC endpoint does not apply because the providers are sending webhooks to AWS CodeConnections where the Amazon network is not used.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

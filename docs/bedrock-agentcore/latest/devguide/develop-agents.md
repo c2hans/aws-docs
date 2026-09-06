@@ -39,7 +39,7 @@ Configuration is managed through JSON files in the `agentcore/` directory of you
 
 Under the hood, the AgentCore CLI uses AWS CDK constructs from the `@aws/agentcore-cdk` package to provision and manage AWS resources.
 
-For step-by-step instructions, see [Get started with Amazon Bedrock AgentCore](agentcore-get-started-cli.md).
+For step-by-step instructions, see [Get started with the AgentCore CLI](runtime-get-started-cli.md).
 
 ## AgentCore Python SDK
 <a name="develop-agents-bedroock-agentcore-sdk"></a>
@@ -80,7 +80,3 @@ You can use the AgentCore console to create and manage the AgentCore services th
 <a name="bedrock-agentcore-configure-deploy-cli"></a>
 
 You can use the AWS CLI with the AgentCore services that you use. Use [control plane api](https://docs.aws.amazon.com/cli/latest/reference/bedrock-agentcore-control/) to create and manage services. For example you can create an AgentCore Memory or update the endpoint for an AgentCore Runtime. You can also perform runtime actions with the [data plane API](https://docs.aws.amazon.com/cli/latest/reference/bedrock-agentcore/) , which can be useful for testing an agent.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

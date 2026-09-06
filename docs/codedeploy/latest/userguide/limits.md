@@ -40,7 +40,3 @@ The *EC2/On-Premises in-place deployment run in hours* limit varies. For custom 
 | Size of tag value | Each supported Region: 256 | No | Maximum number of characters in a tag value |
 | Tags in a deployment group | Each supported Region: 10 | No | Maximum number of tags in a deployment group |
 | Traffic that can be shifted in one increment during an AWS Lambda deployment | Each supported Region: 99 | No | Maximum percentage of traffic that can be shifted in one increment during an AWS Lambda deployment |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

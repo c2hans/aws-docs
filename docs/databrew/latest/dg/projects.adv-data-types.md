@@ -27,7 +27,3 @@ The data types DataBrew can detect are:
 + [EXTRACT\_ADVANCED\_DATATYPE\_DETAILS](recipe-actions.EXTRACT_ADVANCED_DATATYPE_DETAILS.md): Extracts details for an advanced data type.
 + [ADVANCED\_DATATYPE\_FILTER](recipe-actions.ADVANCED_DATATYPE_FILTER.md): Filters a current source column based on advanced data type detection.
 + [ADVANCED\_DATATYPE\_FLAG](recipe-actions.ADVANCED_DATATYPE_FLAG.md): Creates a new flag column based on the values for the current source column.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

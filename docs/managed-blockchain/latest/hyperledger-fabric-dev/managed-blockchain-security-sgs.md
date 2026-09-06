@@ -22,7 +22,3 @@ Security groups act as virtual firewalls. They control inbound and outbound traf
 | --- | --- | --- | --- |
 | Outbound | All traffic | 0.0.0/0 (Anywhere) | Default. Allows unrestricted outbound traffic from the Hyperledger Fabric client to all recipients. If necessary, you can limit the destination to the interface VPC endpoint. |
 | Inbound | SSH (Port 22) | The IP address, address range, or security group that includes trusted SSH clients that connect to the Hyperledger Fabric client. | Allows trusted clients to use SSH to connect to the Hyperledger Fabric client to interact—for example, to query and run chaincode. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

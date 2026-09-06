@@ -381,7 +381,3 @@ For detailed information about Web Grounding, see [Web Grounding](web-grounding.
 The Model Context Protocol (MCP) is an open standard that enables secure, two-way connections between data sources and AI-powered tools. Instead of writing custom adapters for each API or service, run an MCP server and let Amazon Nova discover its tools automatically through a client bridge.
 
 Once connected, Amazon Nova treats MCP tools like any other external integration: it decides when to call them, sends required parameters and incorporates results into responses. Using Amazon Nova with Strands makes this easier with a built-in MCPClient that manages discovery, connection and result mapping automatically.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,7 +52,3 @@ A Service environment defines how AWS Batch integrates with SageMaker for job ex
 <a name="component_service_job"></a>
 
 A service job is a unit of work that you submit to AWS Batch to run on a service environment. Service jobs leverage AWS Batch's queuing and scheduling capabilities while delegating actual execution to the external service. For example, SageMaker Training jobs submitted as service jobs are queued and prioritized by AWS Batch, but the SageMaker Training job execution occurs within SageMaker AI infrastructure. This integration enables data scientists and ML engineers to benefit from AWS Batch's automated workload management, and priority queuing, for their SageMaker AI Training workloads. Service jobs can reference other jobs by name or ID and support job dependencies. For more information, see [Service jobs in AWS Batch](service-jobs.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

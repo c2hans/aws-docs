@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 + [MFGSCE3: Industrial data mesh](mfgsce3-industrial-data-mesh.md)
 + [MFGSCE4: Digital thread: contextualization and knowledge graph](mfgsce4-digital-thread-contextualization-and-knowledge-graph.md)
 + [MFGSCE5: Computer vision for automated quality inspection](mfgsce5-computer-vision-for-automated-quality-inspection.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

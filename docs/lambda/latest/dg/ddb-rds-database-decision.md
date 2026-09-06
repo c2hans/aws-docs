@@ -90,7 +90,3 @@ Now that you've read about the criteria for selecting between DynamoDB and Amazo
 + Learn more about using Lambda with Amazon RDS by reading [Using AWS Lambda with Amazon RDS](services-rds.md).
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

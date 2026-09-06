@@ -59,7 +59,3 @@ This article describes the default report. You can customize the report by apply
 Below image is a sample dashboard for your reference.
 
 ![Dashboard showing active users by platform, operating system, browser, device, and app version.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/device.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Clickstream Analytics on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

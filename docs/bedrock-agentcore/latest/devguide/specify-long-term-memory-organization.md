@@ -260,7 +260,3 @@ The following policy restricts access to retrieving memories to a specific names
 
 **Note**
 Retrieval APIs (`ListMemoryRecords`, `RetrieveMemoryRecords`) require the fully resolved namespace. Custom namespace variables are already substituted at this point, so the existing `bedrock-agentcore:namespace` and `bedrock-agentcore:namespacePath` condition keys cover the read path with no additional configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

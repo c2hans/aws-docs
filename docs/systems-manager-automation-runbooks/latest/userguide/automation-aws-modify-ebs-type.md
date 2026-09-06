@@ -54,7 +54,3 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 +  `aws:waitForAwsResourceProperty` - Verifies the state of the volume is `available` or `in-use` .
 +  `aws:executeAwsApi` - Modifies the Amazon EBS volume you specify in the `EbsVolumeId` parameter.
 +  `aws:waitForAwsResourceProperty` - Verifies the type of the volume has been changed to the value you specified in the `EbsVolumeType` parameter.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

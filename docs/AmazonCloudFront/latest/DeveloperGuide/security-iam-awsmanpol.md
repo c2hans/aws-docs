@@ -145,7 +145,3 @@ View details about updates to AWS managed policies for CloudFront since this ser
 | [CloudFrontReadOnlyAccess](#security-iam-awsmanpol-cloudfront-read-only) and [CloudFrontFullAccess](#security-iam-awsmanpol-cloudfront-full-access) - Update to two existing policies. | CloudFront added new permissions for key value stores.<br />The new permissions allow users to get information about, and take action on, key value stores. | December 19, 2023 |
 | [CloudFrontReadOnlyAccess](#security-iam-awsmanpol-cloudfront-read-only) – Update to an existing policy | CloudFront added a new permission to describe CloudFront Functions.<br />This permission allows the user, group, or role to read information and metadata about a function, but not the function’s code. | September 8, 2021 |
 | CloudFront started tracking changes | CloudFront started tracking changes for its AWS managed policies. | September 8, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

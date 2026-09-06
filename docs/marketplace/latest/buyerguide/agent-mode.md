@@ -126,7 +126,3 @@ We process all uploaded files securely:
 + **Use comparisons**: Request side-by-side views when evaluating multiple options.
 + **Generate purpose proposals**: Create shareable artifacts for team collaboration and stakeholder approval.
 + **Refine with AI**: Provide additional instruction to specific sections of AI-generated content.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

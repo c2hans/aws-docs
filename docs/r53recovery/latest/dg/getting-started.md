@@ -41,7 +41,3 @@ To help you understand how routing control works, we provide an example applicat
 After you deploy the sample app, you can use the templates to create ARC components, and then explore using routing controls to manage traffic flow to the app. You can adapt the template and process for your own scenario and applications.
 
 To get started with a sample application and CloudFormation templates, see the README instructions in the [ARC GitHub repo](https://github.com/aws-samples/r53-arc-iad). You can learn more about using CloudFormation templates by reading [CloudFormation concepts](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html) in the AWS CloudFormation User Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,7 +43,3 @@ s3.list_buckets()
 The previous example is for Amazon S3, however the concept is the same for all operations. Certain operations might have additional methods on `CustomizeableOperation`.
 
 For an example of adding an interceptor using `customize` for a single operation, see [Interceptor for only a specific operation](interceptors.md#interceptors-registration-specific).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Rust. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-rust` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,7 +35,3 @@ Metrics are generated to be consumed by CloudWatch. The namespace used for bots 
 | Product | The product for the bot. Can be `WickrPro_` or `WickrEnterprise_` with `Alpha`, `Beta`, or `Production` appended. |
 | BotType | The bot type. Labeled as **Compliance** for the compliance bots. |
 | Network | The ID of the associated network. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

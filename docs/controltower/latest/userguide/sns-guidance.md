@@ -24,7 +24,3 @@ AWS Control Tower will stop sending drift notifications to SNS topic for all cus
 + All SNS topics are encrypted at rest with disk encryption. for more information, see [Data encryption](https://docs.aws.amazon.com/sns/latest/dg/sns-data-encryption.html).
 
 For more information about SNS topics and compliance, see [Prevention and notification](https://docs.aws.amazon.com/controltower/latest/userguide/prevention-and-notification.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

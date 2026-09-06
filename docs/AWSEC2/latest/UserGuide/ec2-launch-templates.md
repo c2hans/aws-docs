@@ -20,7 +20,3 @@ The following diagram shows a launch template with three versions. The first ver
 + [Create an Amazon EC2 launch template](create-launch-template.md)
 + [Modify a launch template (manage launch template versions)](manage-launch-template-versions.md)
 + [Delete a launch template or a launch template version](delete-launch-template.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

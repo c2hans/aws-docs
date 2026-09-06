@@ -229,7 +229,3 @@ When you close your AWS account, the data in your AWS account is retained for 90
 
 **To close your AWS account**
 Complete instructions on how to close your AWS account is covered in [Close an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-closing.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

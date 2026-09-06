@@ -15,7 +15,3 @@ Amazon Keyspaces (for Apache Cassandra) provides the following APIs for data ret
 | <a name="cassandra-ListStreams"></a>[ListStreams](https://docs.aws.amazon.com/keyspaces/latest/devguide/) | Return an array of CDC stream ARNs associated with the current account and endpoint | List |
 | <a name="cassandra-Select"></a>[Select](https://docs.aws.amazon.com/keyspaces/latest/devguide/) | SELECT data from a table | Read |
 | <a name="cassandra-SelectMultiRegionResource"></a>[SelectMultiRegionResource](https://docs.aws.amazon.com/keyspaces/latest/devguide/) | SELECT data from a multiregion table | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

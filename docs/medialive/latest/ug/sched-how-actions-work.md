@@ -16,7 +16,3 @@ This section describes how MediaLive handles each combination of [action type](x
 + [How ID3 metadata actions work](x-actions-in-schedule-id3.md)
 + [How ID3 segment tag actions work](x-actions-in-schedule-id3-segment-tag.md)
 + [How pause and unpause actions work](x-actions-in-schedule-pause.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

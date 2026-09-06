@@ -17,7 +17,3 @@ On March 11, 2019 [Elastic Beanstalk extended support for tagging all resources]
 Starting with today's release, you can use the Elastic Beanstalk console and EB CLI to manage tags for all supported resources: applications, environments, application versions, saved configurations, and custom platform versions.
 
 For more information about tagging Elastic Beanstalk resources, see [Tagging AWS Elastic Beanstalk Application Resources](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-tagging-resources.html) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

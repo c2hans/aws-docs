@@ -32,7 +32,3 @@ All databases supported by SAP provide mechanisms for reclaiming space. These me
 | Oracle |  SAP Note: [541538 - FAQ: Reorganization](https://launchpad.support.sap.com/#/notes/541538) [Requires SAP Portal Access]  |
 | Microsoft SQL Server |  SAP Note: [1721843 - MSSQL: Post-steps after archiving, deleting or compression](https://launchpad.support.sap.com/#/notes/1721843) [Requires SAP Portal Access]  |
 | SAP MaxDB | (Consult SAP or Vendor documentation for guidance) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

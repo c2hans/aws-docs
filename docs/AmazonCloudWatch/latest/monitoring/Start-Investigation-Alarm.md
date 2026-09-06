@@ -61,7 +61,3 @@ Replace the example values with your own AWS account ID, region, and investigati
    For each hypothesis, choose **Add to findings** or **Discard**.
 
 1. When you think you have completed the investigation and found the root cause of the issue, choose the **Overview** tab and then choose **Investigation summary**. CloudWatch investigations then creates a natural-language summary of the important findings and hypotheses from the investigation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

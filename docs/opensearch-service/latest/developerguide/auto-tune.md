@@ -37,7 +37,3 @@ Based on your domain's performance metrics, Auto-Tune can suggest adjustments to
 You can monitor Auto-Tune statistics in Amazon CloudWatch. For a full list of metrics, see [Auto-Tune metrics](managedomains-cloudwatchmetrics.md#managedomains-cloudwatchmetrics-autotune-metrics).
 
 OpenSearch Service sends Auto-Tune events to Amazon EventBridge. You can use EventBridge to configure rules that send an email or perform a specific action when an event is received. To see the format of each Auto-Tune event sent to EventBridge, see [Auto-Tune events](monitoring-events.md#monitoring-events-autotune).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

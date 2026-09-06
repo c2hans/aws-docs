@@ -10,7 +10,3 @@ The AWS global infrastructure is built around AWS Regions and Availability Zones
 For more information about AWS Regions and Availability Zones, see [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/).
 
 For specific information about AWS Regions supported by the Console Mobile Application, see [Supported regions](supported-services-regions.md#supported-regions).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Console Mobile Application. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query consolemobileapp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

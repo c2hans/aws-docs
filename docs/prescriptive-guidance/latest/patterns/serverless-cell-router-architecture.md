@@ -291,7 +291,3 @@ The `Validator` is designed to enhance user experience. Consider a scenario wher
 + Provide a support contact number for obtaining additional information.
 
 The demo code for the `Validator` function verifies that the user-supplied cell URLs in the request match the records stored in the `tbl_router` table. The `Validator` function also checks whether the cells are healthy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

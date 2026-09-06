@@ -17,7 +17,3 @@ console clusters curl target /<INDEX>/_search?pretty
 ```
 
 If your indexes use multi-fields (for example, a `text` field with a `.keyword` sub-field), confirm those sub-fields exist on the target and that your application references the correct one for each operation. Running these checks against representative, non-production data first is the safest way to catch mismatched query patterns before cutover.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

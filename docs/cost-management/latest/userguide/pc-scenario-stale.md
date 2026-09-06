@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-scen
 This section describes the stale and expired status of your bill scenario.
 
 When a bill scenario displays a **Stale** status, you can no longer use it to create a Bill Estimate. A bill scenario will go stale after the final day of the month in which it was created. For example, if you created a bill scenario on the 15th of February, the scenario would go stale on March 1st. The stale scenario will be visible for 13 months. After 13 months the scenario will expire and delete automatically. For example, a bill scenario created in February 2025 will expire and delete automatically on March 31, 2026.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,7 +10,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
  When you provide an Outpost deployment with adequate power, space, and cooling and resilient connections to the AWS Region, you can build highly available single data center services. And, for higher levels of availability and resiliency, you can deploy multiple Outposts and distribute your applications across logical and geographic boundaries.
 
  Outposts rack removes the undifferentiated heavy lifting of building on-premises compute, storage, and application networking pools and allow you to extend the reach of the AWS Global Infrastructure to your data centers and co-location facilities. Now, you can focus your time and energy towards modernizing your applications, streamlining your application deployments, and increasing the business impact of your IT services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

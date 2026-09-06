@@ -38,7 +38,3 @@ Balance the performance with the cost efficiency by using these strategies:
    + Static assets like player files and images
 
    Improved cache hit ratios significantly reduce origin costs. Work with your CDN provider to optimize cache configurations for your specific content patterns. For detailed implementation steps, see [Configuring cache behaviors](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/ConfiguringCaching.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

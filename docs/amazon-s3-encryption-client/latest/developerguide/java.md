@@ -60,7 +60,3 @@ The Amazon S3 Encryption Client for Java is available through [Apache Maven](htt
 **Multipart upload (high-level API)**
 To perform multipart uploads with the [high-level API](java-examples.md#highlevel-multipart-upload), create dependencies for the AWS CRT-based Amazon S3 client. For help creating these dependencies, see [Add dependencies to use the AWS CRT-based Amazon S3 client](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/crt-based-s3-client.html#crt-based-s3-client-depend) in the *AWS SDK for Java 2.x Developer Guide*.
 For more information on multipart uploads in the Amazon S3 Encryption Client, see [Multipart upload](java-examples.md#multipart-upload).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon S3 Encryption Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-s3-encryption-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

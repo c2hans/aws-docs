@@ -20,7 +20,3 @@ An existing GuardDuty account can enable RDS Protection with a 30-day trial peri
 For information about the AWS Regions where GuardDuty doesn't yet support RDS Protection, see [Region-specific feature availability](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.html#gd-regional-feature-availability) in the *Amazon GuardDuty User Guide*.
 
 For information about the RDS database versions that GuardDuty RDS Protection supports, see [Supported Amazon Aurora, Amazon RDS, and Aurora Limitless databases](https://docs.aws.amazon.com/guardduty/latest/ug/rds-protection.html#rds-pro-supported-db) in the *Amazon GuardDuty User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

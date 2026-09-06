@@ -131,7 +131,3 @@ The following permissions policy uses a wildcard character (`"codeguru-reviewer:
 <a name="identity-based-policies-example-4"></a>
 
 You can create a policy that only allows users CodeGuru Reviewer read-only access if their IP address is within a certain IP address range. The following example grants read-only CodeGuru Reviewer permissions to users whose IP addresses are within the specified IP address block of 203.0.113.0/24.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

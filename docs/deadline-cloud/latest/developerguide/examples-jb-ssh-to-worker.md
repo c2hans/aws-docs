@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # SSH or RDP to a Deadline Cloud worker through Session Manager
 <a name="examples-jb-ssh-to-worker"></a>
 
-The [ssh\_to\_smf](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/ssh_to_smf) (Linux) and [ssh\_to\_smf\_windows](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/ssh_to_smf_windows) (Windows) job bundles register a Deadline Cloud worker as an SSM hybrid managed node, enabling SSH, RDP, or PowerShell access through Session Manager for the duration of the job. Use these bundles to debug a job interactively or to forward ports for web UIs and Jupyter notebooks running on the worker.
+The [ssh\_to\_smf](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/ssh_to_smf) (Linux) and [ssh\_to\_smf\_windows](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/ssh_to_smf_windows) (Windows) job bundles on the GitHub website register a Deadline Cloud worker as an SSM hybrid managed node, enabling SSH, RDP, or PowerShell access through Session Manager for the duration of the job. Use these bundles to debug a job interactively or to forward ports for web UIs and Jupyter notebooks running on the worker.
 
 The job follows this sequence:
 
@@ -30,7 +30,7 @@ The job follows this sequence:
      --region {{region}}
    ```
 
-1. The Linux variant requires the [sudo\_for\_job\_user](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/sudo_for_job_user) host configuration script. The Windows variant requires the bundle's `setup/host_config.ps1` as the fleet host configuration script.
+1. The Linux variant requires the [sudo\_for\_job\_user](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/sudo_for_job_user) host configuration script on the GitHub website, and the Windows variant requires the bundle's `setup/host_config.ps1` as the fleet host configuration script.
 
 **Important**
 The Windows variant gives the RDP user local Administrator access and adds `job-user` to `Administrators`. Use this configuration for debugging only. Shut down all workers in the fleet after debugging completes.
@@ -53,7 +53,3 @@ Once the job is running, find the managed node ID in the job log and connect:
 ```
 aws ssm start-session --target mi-{{XXXXXXXXX}} --region {{region}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

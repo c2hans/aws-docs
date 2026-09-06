@@ -539,7 +539,3 @@ Amazon CloudWatch Observability Admin Service defines the following condition ke
 |   [observabilityadmin:CentralizationSourceRegions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/reference_policies_condition-keys.htmlcondition-keys-observabilityadmin.html#condition-keys-centralizationsourceregions)  | Filters access by the source regions that are passed in the request | ArrayOfString |
 |   [observabilityadmin:SourceType](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/reference_policies_condition-keys.htmlcondition-keys-observabilityadmin.html#condition-keys-sourcetype)  | Filters access by the source type that is passed in the request | String |
 |   [observabilityadmin:TargetRegions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/reference_policies_condition-keys.htmlcondition-keys-observabilityadmin.html#condition-keys-targetregions)  | Filters access by the regions that are targetted by the request | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

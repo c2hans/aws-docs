@@ -176,7 +176,3 @@ With Amazon MQ, you pay only for the provisioned capacity that you use. Factors 
 For data transferred in and out of Amazon MQ, you pay standard AWS data transfer charges.
 
 To get started, Amazon MQ offers a Free Tier, which includes up to 750 hours of a single-instance `mq.t2.micro` or `mq.t3.micro` broker per month, and up to 5 GB of durability-optimized storage per month for one year. For more information on the Free Tier, pricing, and associated costs, see [Amazon MQ Pricing](https://aws.amazon.com/amazon-mq/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

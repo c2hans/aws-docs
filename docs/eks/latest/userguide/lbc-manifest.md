@@ -313,7 +313,3 @@ We recommend using the `quay.io` container registry to install `cert-manager`. I
    You receive the previous output if you deployed using Helm. If you deployed using the Kubernetes manifest, you only have one replica.
 
 1. Before using the controller to provision AWS resources, your cluster must meet specific requirements. For more information, see [Route application and HTTP traffic with Application Load Balancers](alb-ingress.md) and [Route TCP and UDP traffic with Network Load Balancers](network-load-balancing.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

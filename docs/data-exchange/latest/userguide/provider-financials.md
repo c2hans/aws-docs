@@ -39,7 +39,3 @@ AWS Data Exchange providers who use the payment scheduler for their private offe
 As a provider, you control the refund policy for your products, which you must specify when you create your product. AWS Data Exchange doesn't require you to offer refunds. You must approve all requests for refunds before AWS processes them on your behalf.
 
 Submit a [refund approval form](https://aws.amazon.com/marketplace/management/support/refund-request) to AWS Support. They process your request and issue the refund to the subscriber. You can view all refunds that AWS processed on your behalf in the monthly billed revenue report.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

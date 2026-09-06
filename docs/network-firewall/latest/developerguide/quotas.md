@@ -45,7 +45,3 @@ Network Firewall has the following quotas that can't be changed.
 | Maximum number of firewall policies that can use the same TLS inspection configuration. | 1,000 |
 | Maximum number of certificate authority (CA) certificates per TLS inspection configuration. CA certificates are used for outbound SSL/TLS inspection. | 1 |
 | Maximum number of server certificates per TLS inspection configuration. Server certificates are used for inbound SSL/TLS inspection. | 10 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

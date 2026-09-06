@@ -226,7 +226,3 @@ When you create your instance role, be sure to add a trust policy that declares 
 If you use the App Runner console to create a service, the console lists the roles in your account, and you can select the role that you created for this purpose.
 
 For information about creating a service, see [Creating an App Runner service](manage-create.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ This section contains the following topics, which provide additional information
 + [Tagging your resources](tagging-resources-common.md) - Learn how to use metadata tags to categorize your resources and make them easier to manage.
 + [Open-source components](AboutAWSStorageGatewaySoftware.md) - Learn about the third-party tools and licenses that are used to deliver Storage Gateway functionality.
 + [Quotas](fgw-quotas.md) - Learn about limits and quotas for File Gateway, including minimum and maximum limitations for file shares and local cache disks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

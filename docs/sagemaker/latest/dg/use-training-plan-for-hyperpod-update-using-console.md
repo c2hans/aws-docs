@@ -18,7 +18,3 @@ You can update, remove, or add a training plan to an existing SageMaker HyperPod
 ![SageMaker AI console interface showing a modal window for updating an instance group within an SageMaker HyperPod cluster. The form includes fields for instance group name, instance type, quantity, instance capacity (with options for on-demand and training plans), and a directory path for on-create lifecycle script.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/training-plans/tp-update-hyperpod-clusters.png)
 
 Review and update your cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

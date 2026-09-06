@@ -546,7 +546,3 @@ The OpenSearch Service console is the simplest way to disable cold storage. Sele
 To use the AWS CLI or configuration API, under `ColdStorageOptions`, set `"Enabled"="false"`.
 
 Before you disable cold storage, you must either delete all cold indexes or migrate them back to warm storage, otherwise the disable action fails.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

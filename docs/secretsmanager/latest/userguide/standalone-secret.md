@@ -40,7 +40,3 @@ aws secretsmanager stop-replication-to-replica \
 <a name="standalone-secret-sdk"></a>
 
 To promote a replica to a standalone secret, use the [`StopReplicationToReplica`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_StopReplicationToReplica.html) command. You must call this command from the replica secret Region. For more information, see [AWS SDKs](asm_access.md#asm-sdks).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

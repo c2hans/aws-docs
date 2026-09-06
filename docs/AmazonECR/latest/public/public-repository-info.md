@@ -24,7 +24,3 @@ Beginning with Docker version 1.9, the Docker client compresses image layers bef
    + Choose **Images** to view information about the images in the repository. If there are untagged images that you want to delete, you can select the box to the left of the repositories to delete and choose **Delete**. For more information, see [Deleting an image in a public repository in Amazon ECR public](public-image-delete.md).
    + Choose **Gallery detail** to view the public catalog data for the repository.
    + Choose **Permissions** to view the repository policies that are applied to the repository. For more information, see [Public repository policies in Amazon ECR Public](public-repository-policies.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

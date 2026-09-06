@@ -11,7 +11,3 @@ To save metadata from the processing container after exiting it, containers can 
 Don't write sensitive data to the `/opt/ml/output/message` file.
 
 If the data in this file isn't UTF-8 encoded, the job fails and returns a `ClientError`. If multiple containers exit with an `ExitMessage,` the content of the `ExitMessage` from each processing container is concatenated, then truncated to 1 KB.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

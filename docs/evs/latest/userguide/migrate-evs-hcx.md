@@ -331,7 +331,3 @@ Before you enable HCX MON, make sure that in the NSX interface you’ve configur
 <a name="hcx-step-10"></a>
 
 VMware HCX includes built-in diagnostic tools that can be used to test connectivity. For more information, see [VMware HCX Troubleshooting](https://techdocs.broadcom.com/us/en/vmware-cis/hcx/vmware-hcx/4-10/vmware-hcx-user-guide-4-10/vmware-hcx-troubleshooting.html) in the *VMware HCX User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,6 +13,7 @@ There are two primary details that determine what kind of information is availab
 + [Finding overview](#findings-summary-section)
 + [Resource](#findings-resource-affected)
 + [Attack sequence finding details](#guardduty-extended-threat-detection-attack-sequence-finding-details)
++ [Custom Detection Rules finding details](#custom-detection-rules-finding-details)
 + [RDS database (DB) user details](#rds-pro-db-user-details)
 + [Runtime Monitoring finding details](#runtime-monitoring-runtime-details)
 + [EBS volumes scan details](#mp-ebs-volumes-scan-details)
@@ -270,6 +271,26 @@ Indicators include a combination of network indicator values that explain why a 
 ```
 The following table includes the network indicator values and their description. These tags are added based on the threat intelligence GuardDuty collects from sources such as Spur
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-summary.html)
+
+## Custom Detection Rules finding details
+<a name="custom-detection-rules-finding-details"></a>
+
+Custom Detection Rules findings use the same `Service.Detection.Sequence` structure as [Attack sequence finding details](#guardduty-extended-threat-detection-attack-sequence-finding-details). The Actors, Endpoints, Resources, and Signals fields share the same schema. This section describes the differences specific to Custom Detection Rules findings.
+
+**Type**
+The finding type follows the format `Tactic:Service/Technique`. For example, `Persistence:EC2/ExternalRemoteServices`.
+
+**Signals**
+Each signal represents a single matched rule event. The `Name` field contains the Custom Detection Rules name, and `SignalIndicators` contains the MITRE ATT&CK® tactic and technique. Multiple signals with the same rule can appear when the rule matches multiple events within the aggregation window.
+
+**Actors**
+Details about the IAM principals that performed the detected activity. Includes the user type (such as `AssumedRole` or `IAMUser`), credential information, and session details including the issuing role ARN and MFA status.
+
+**Resources**
+Details about the AWS resources involved in the detected activity, when applicable, such as Amazon EC2 instances, Amazon S3 buckets, or IAM access keys.
+
+**Endpoints**
+Details about the network endpoints from which the activity originated. Includes the IP address, geographic location (city and country), and the autonomous system (AS) name and number.
 
 ## RDS database (DB) user details
 <a name="rds-pro-db-user-details"></a>
@@ -566,7 +587,3 @@ This section details the count of login attempts performed by the unusual actor 
 + **successfulLoginCount** – This counter represents the sum of successful connections (correct combination of login attributes) made to the database instance by the unusual actor. Login attributes include user name, password, and database name.
 + **failedLoginCount** – This counter represents the sum of failed (unsuccessful) login attempts made to establish a connection to the database instance. This indicates that one or more attributes of the login combination, such as user name, password, or database name were incorrect.
 + **incompleteConnectionCount** – This counter represents the number of connection attempts that can't be classified as successful or failed. These connections are closed before the database provides a response. For example, port scanning where the database port is connected but no piece of information is sent to the database, or the connection was aborted before the login completed in a successful or failed attempt.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,7 +49,3 @@ The following diagram shows an example of steps that you can take to create a *t
  ![Number 3 icon.](http://docs.aws.amazon.com/proton/latest/userguide/images/label-three.png) Create [IaC files](ag-infrastructure-tmp-files.md) that reference your input parameters. You can reference environment IaC file *outputs* as *inputs* for your service IaC files.
 
  ![Number 4 icon.](http://docs.aws.amazon.com/proton/latest/userguide/images/label-four.png) [Register a template version](template-create.md) with AWS Proton and upload your template bundle.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

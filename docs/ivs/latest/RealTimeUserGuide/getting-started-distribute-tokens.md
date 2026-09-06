@@ -328,7 +328,3 @@ The payload contains data specific to IVS. All fields are mandatory:
 A connection token does not contain a stage ARN, stage ID, WHIP endpoint, participant capabilities, participant attributes, or user ID. Those values belong in the participant token for the stage that the client joins.
 
 Sign the token as described in [Create Participant Tokens with a Key Pair](#getting-started-distribute-tokens-self-signed-generate-sign), using the connection token header and payload above.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

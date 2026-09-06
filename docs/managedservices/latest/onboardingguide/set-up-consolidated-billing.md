@@ -15,7 +15,3 @@ If you'd like your new AMS-managed AWS account bill to be rolled into a payment 
 You can perform these steps before doing the account handover to AMS. After the handover, the steps for joining your organization (provided above) can be done through the change management process. Consult with your cloud service deliver manager (CSDM) or cloud architect (CA) if you need assistance.
 
 For general billing information including managing consolidated billing, see [What is AWS Billing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html). For general AWS Organizations information about how accounts can work together, see [What is AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html). For prescriptive guidance on AWS Organizations management accounts, see [The management account, trusted access, and delegated administrators](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/management-account.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

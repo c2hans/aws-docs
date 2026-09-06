@@ -69,7 +69,3 @@ Although these examples and additional programming considerations were created f
 +  [Making Requests Using Federated User Temporary Credentials](https://docs.aws.amazon.com/AmazonS3/latest/dev/AuthUsingTempFederationTokenDotNet.html)
 +  [Specifying Server-Side Encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/SSEUsingDotNetSDK.html)
 +  [Specifying Server-Side Encryption with Customer-Provided Encryption Keys](https://docs.aws.amazon.com/AmazonS3/latest/dev/sse-c-using-dot-net-sdk.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

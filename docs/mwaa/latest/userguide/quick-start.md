@@ -22,7 +22,7 @@ This quick start tutorial uses an AWS CloudFormation template that creates the A
 Use this tutorial to upload a DAG to Amazon S3, run the DAG in Apache Airflow, and access logs in CloudWatch using three AWS Command Line Interface (AWS CLI) commands. Finally, you'll learn to create an IAM policy for an Apache Airflow development team.
 
 **Note**
-The CloudFormation template on this page creates an Amazon Managed Workflows for Apache Airflow environment for the latest version of Apache Airflow available in CloudFormation. The latest available version is Apache Airflow v3.2.1.
+The CloudFormation template on this page creates an Amazon Managed Workflows for Apache Airflow environment for the latest version of Apache Airflow available in CloudFormation. The latest available version is Apache Airflow v3.3.1.
 
 The CloudFormation template creates the following:
 + **VPC infrastructure**. The template uses [Public routing over the internet](networking-about.md#networking-about-overview-public). It uses the [Public network access mode](configuring-networking.md#access-overview-public) for the Apache Airflow webserver in `WebserverAccessMode: PUBLIC_ONLY`.
@@ -533,7 +533,3 @@ You can access Apache Airflow logs in the CloudWatch console for all of the Apac
 + Learn more about the best practices we recommend to tune the performance of your environment in [Performance tuning for Apache Airflow on Amazon MWAA](best-practices-tuning.md).
 + Create a monitoring dashboard for your environment in [Monitoring dashboards and alarms on Amazon MWAA](monitoring-dashboard.md).
 + Run some of the DAG code samples in [Code examples for Amazon Managed Workflows for Apache Airflow](sample-code.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -86,7 +86,3 @@ In the side panel, you can use **Visualize by** to change the visualization meth
 <a name="canvas-explore-data-analytics-correlation-matrix-color"></a>
 
 In the side panel, you can use **Color selection** to change the color palette used for the scale of negative to positive correlation in the matrix. Select one of the alternative color palettes to change the colors used in the matrix.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

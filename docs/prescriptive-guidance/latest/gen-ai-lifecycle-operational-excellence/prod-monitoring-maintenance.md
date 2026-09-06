@@ -46,7 +46,3 @@ Business and operations support focuses on maintaining system reliability to pre
 1. Integrate with a ticketing system to streamline support operations. This automates the assignment and routing of issues to the appropriate engineers, and it provides a mechanism to trace and audit overall support health while tracking operational issues.
 
 1. Design detailed runbooks for root-cause analysis and resolution. These runbooks serve three essential purposes: to facilitate knowledge transfer between engineers, to enable automated resolution of recurring issues, and to provide a systematic approach to debug errors and reduce response times.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -92,7 +92,3 @@ View details about updates to AWS managed policies for IPAM since this service b
 | AWSIPAMServiceRolePolicy | Actions added to the AWSIPAMServiceRolePolicy managed policy (ec2:DescribeAccountAttributes, ec2:DescribeNetworkInterfaces, ec2:DescribeSecurityGroups, ec2:DescribeSecurityGroupRules, ec2:DescribeVpnConnections, globalaccelerator:ListAccelerators, and globalaccelerator:ListByoipCidrs) to enable IPAM to get public IP addresses during resource discovery. | November 1, 2023 |
 | AWSIPAMServiceRolePolicy | Two actions added to the AWSIPAMServiceRolePolicy managed policy (`ec2:GetIpamDiscoveredAccounts` and `ec2:GetIpamDiscoveredResourceCidrs`) to enable IPAM to get the AWS accounts and resource CIDRs being monitored during resource discovery. | January 25, 2023 |
 | IPAM started tracking changes | IPAM started tracking changes for its AWS managed policies. | December 2, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

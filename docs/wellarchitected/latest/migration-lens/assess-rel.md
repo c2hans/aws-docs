@@ -186,7 +186,3 @@ Communication channels should be used to make decisions during unexpected events
 **Suggestion 3.3.3:** Determine how data can be copied back to the source environment.
 
  After deciding to rollback a migration, you may need to copy data back to the source environment. For EC2 instances, AWS Elastic Disaster Recovery can be used to [perform a failback](https://docs.aws.amazon.com/drs/latest/userguide/failback-performing-main.html) from AWS to on-premises environments. For databases, depending on the amount of data to be synchronized, native replication tools can be used, or a database backup and restore can be performed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

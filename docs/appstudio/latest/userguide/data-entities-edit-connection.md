@@ -17,7 +17,3 @@ You can press CTRL\+Z to undo the most recent change to your entity.
 1. In **Table**, choose the table you want to use as a data source for the entity.
 
 1. The table shows the fields of entity, and the data source column they are mapped to. Choose **Auto map** to automatically map your entity fields with your data source columns. You can also map fields manually in the table by choosing the data source column in the dropdown for each entity field.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

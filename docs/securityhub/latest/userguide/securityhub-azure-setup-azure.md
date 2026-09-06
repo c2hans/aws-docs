@@ -177,7 +177,3 @@ To forward Defender for Cloud security alerts to Security Hub CSPM, configure co
 **Amazon Inspector data event configuration (optional):**
 
 If you plan to use Amazon Inspector for Azure VM scanning, additional data event configuration is required. For details about configuring Inspector-specific data events, see the Amazon Inspector documentation for Azure integration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ Modernizing operations is an iterative process. It evolves over time as you inte
 + **Optimize. **In this phase, you revisit workloads on AWS to identify areas for improvement and implement them. It's during this phase that you might consider AIOps, for example.
 
 The process of modernizing operations in the cloud involves readiness, automation, and integration. This guide described how to achieve readiness by deﬁning a cloud operating model, how to automate your operations by using AWS services, and how to integrate your tools by using best practices. It also showed you how to use a migration project with a targeted application to start the process of modernizing operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

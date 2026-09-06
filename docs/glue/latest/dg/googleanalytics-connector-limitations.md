@@ -35,7 +35,3 @@ The following are limitations for the Google Analytics 4 connector:
     +  [ https://developers.google.com/analytics/devguides/reporting/data/v1/advanced ](https://developers.google.com/analytics/devguides/reporting/data/v1/advanced)
     +  [ https://developers.google.com/analytics/devguides/reporting/data/v1/rest/v1beta/CohortSpec ](https://developers.google.com/analytics/devguides/reporting/data/v1/rest/v1beta/CohortSpec)
   +  Provision is given for the user to override dateRange and granularity default value. Refer to the above table.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

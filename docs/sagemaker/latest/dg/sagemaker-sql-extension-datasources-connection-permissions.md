@@ -477,7 +477,3 @@ For finer-grained control over access to your AWS resources, replace the wildcar
 + **Use specific Amazon Redshift cluster ARNs**
 
   For example `"arn:aws:redshift:region:account-id:cluster:cluster-name"`. For information about resource types in Amazon Redshift, see [Resource types defined by Amazon Redshift](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonredshift.html#amazonredshift-resources-for-iam-policies). For information about all resource types in Redshift Serverless, see [Resource types defined by Redshift Serverless](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonredshiftserverless.html#amazonredshiftserverless-resources-for-iam-policies).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

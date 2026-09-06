@@ -94,7 +94,3 @@ What MI OTA eliminates:
 + Creating IoT Jobs.
 
 Managed Integrations OTA handles all three operations internally based on your query string, automatically discovering devices that match your criteria, creating IoT Jobs under the hood, and orchestrating the complete OTA workflow without requiring you to interact with multiple AWS services directly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

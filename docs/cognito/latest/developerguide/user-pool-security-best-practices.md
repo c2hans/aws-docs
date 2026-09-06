@@ -209,7 +209,3 @@ The `openid`, `profile`, `email`, and `phone` scopes authorize requests to the [
 User attributes that might end up as delivery methods and usernames, for example `email`, have [format restrictions](user-pool-settings-attributes.md#cognito-user-pools-standard-attributes). Other attributes can have string, boolean, or number data types. String attribute values support a variety of inputs. Configure your application to guard against attempts to write unwanted data to your user directory or the messages that Amazon Cognito delivers to users. Perform client-side validation of user-submitted string attribute values in your application before submitting them to Amazon Cognito.
 
 User pools map attributes from IdPs to your user pool based on an [attribute mapping](cognito-user-pools-specifying-attribute-mapping.md) that you specify. Only map secure and predictable IdP attributes to user pool string attributes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

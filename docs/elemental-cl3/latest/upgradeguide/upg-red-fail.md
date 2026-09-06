@@ -21,7 +21,3 @@ Fail over the running channels from the first active worker node that you're upg
 
 **Warning**
 Your worker redundancy group will persist in an N\+0 redundancy type until you've upgraded all worker nodes. In a production scenario, this is *not a valid configuration*. An alert will persist until you are back to an N\+1, 1\+1, or N\+M redundancy type.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

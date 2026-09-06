@@ -33,7 +33,3 @@ You can interact with a chat agent in the following ways:
 You can also use your chat agents while automating your routine tasks with Quick Flows. For more information, see [Chat agent](ai-response-steps.md#chat-agent-step).
 
 To learn more about chatting using chat agents, see [Using Amazon Quick chat](https://docs.aws.amazon.com/quicksuite/latest/userguide/using-quick-chat.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

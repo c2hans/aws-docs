@@ -111,7 +111,3 @@ The Network Manager console provides a dashboard for you to view and monitor bot
 1. On the **Global networks** page, choose the global network ID.
 
 1. The **Overview** page provides an inventory of the objects in your global network for your transit gateway network. For more information about the pages in the dashboard, see [Access transit gateway network dashboards using AWS Network Manager](nm-monitoring-console.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

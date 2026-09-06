@@ -20,7 +20,3 @@ aws appconfig get-configuration --application AMSAlarmManager --environment AMSI
 + The alarm definitions can be viewed in the specified output file, which in this case is `outfile.json`
 
  You can see which version of configuration is deployed to your account by viewing the past deployments in the AMSInfrastructure environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

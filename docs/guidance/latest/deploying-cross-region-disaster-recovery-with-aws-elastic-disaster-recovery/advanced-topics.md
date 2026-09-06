@@ -52,7 +52,3 @@ For a scalable and centralized network design, AWS Transit Gateway offers a powe
 By using Transit Gateway, your disaster recovery setup benefits from a simplified, hub-and-spoke topology that reduces complexity and enhances security. This design ensures that data replication for AWS Elastic Disaster Recovery is efficient and secure, with the added flexibility to manage and scale your network easily. Using Transit Gateway also provides seamless connectivity and failover capabilities across multiple AWS accounts and Regions, delivering a robust disaster recovery protection for your critical workloads.
 
 To learn more about setting up and configuring Transit Gateway, visit the [AWS Transit Gateway Guide](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying Cross-Region Disaster Recovery with AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

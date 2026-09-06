@@ -120,7 +120,3 @@ Another AWS account from which you want to ingest AWS Service logs or applicatio
  **Access Proxy**
 
 An Access Proxy serves as an intermediary for accessing Amazon OpenSearch Service domains from the internet securely. By default, an Amazon OpenSearch Service domain within a VPC is not accessible from the internet. The Centralized Logging with OpenSearch solution implements a Nginx-based proxy stack architecture to enable internet access to OpenSearch Dashboards. This allows users to interact conveniently with the dashboards from anywhere with internet connectivity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Logging with OpenSearch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,7 +60,3 @@ To use a stage variable for a Lambda function, the function must be in the same 
 
  You can use a stage variable as part of an AWS user or role credential ARN, as shown in the following example.
 +  `arn:aws:iam::<account_id>:${stageVariables.<variable_name>}`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

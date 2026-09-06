@@ -53,7 +53,3 @@ The following are the considerations and limitations for the release version Pys
 + When multiple users use the console to open an existing session in a workgroup, they access the same notebook. To avoid confusion, only open sessions that you create yourself.
 + The hosting domains for Apache Spark applications that you might use with Amazon Athena (for example, `analytics-gateway.us-east-1.amazonaws.com`) are registered in the internet [Public Suffix List (PSL)](https://publicsuffix.org/list/public_suffix_list.dat). If you ever need to set sensitive cookies in your domains, we recommend that you use cookies with a `__Host-` prefix to help defend your domain against cross-site request forgery (CSRF) attempts. For more information, see the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#cookie_prefixes) page in the Mozilla.org developer documentation.
 + For information on troubleshooting Spark notebooks, sessions, and workgroups in Athena, see [Troubleshoot Athena for Spark](notebooks-spark-troubleshooting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

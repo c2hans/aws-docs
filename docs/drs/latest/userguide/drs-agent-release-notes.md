@@ -98,7 +98,3 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/drs-agent-release-n
 | 3.2.0 |  +  Added support for RHEL 5 and CentOS 5 (See [Supported Operating Systems](Supported-Operating-Systems-Linux.md)). <br />+  Miscellaneous bug fixes and performance enhancements.   | 6 September 2022 |
 | 3.1.0 |  +  Fixed issue preventing agent startup on CentOS. <br />+  Miscellaneous bug fixes and performance enhancements.   | 6 September 2022 |
 | 3.0.0 |  +  Added support for legacy Windows Server operating systems (See [Supported Operating Systems](Supported-Operating-Systems-Windows.md)). <br />+  Added [proxy support for Linux](Agent-Related-FAQ.md#Can-Proxy-Used). <br />+  Miscellaneous bug fixes and performance enhancements.   | 6 September 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

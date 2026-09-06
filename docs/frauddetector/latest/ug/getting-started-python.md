@@ -367,7 +367,3 @@ After you completed this tutorial, you did the following:
 <a name="gs-jupyter-notebook"></a>
 
 For more examples for how to use the Amazon Fraud Detector APIs, see [aws-fraud-detector-samples GitHub repository](https://github.com/aws-samples/aws-fraud-detector-samples). The topics that the notebooks cover include both building models and detectors using the Amazon Fraud Detector APIs and making batch fraud prediction requests using the `GetEventPrediction` API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

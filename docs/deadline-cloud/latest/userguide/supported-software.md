@@ -47,7 +47,3 @@ For an overview of all the ways to provide software to your jobs, see [Provide a
 <a name="supported-software-other-workloads"></a>
 
 Deadline Cloud also supports general-purpose compute-intensive workloads including scientific simulations, financial modeling, machine learning model training and evaluation, autonomous driving simulation, and data processing. You can run any workload that benefits from distributed parallel processing by creating custom job bundles. For examples that span these domains, see [Code examples](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/code-examples.html) in the *Deadline Cloud Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

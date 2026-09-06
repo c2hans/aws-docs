@@ -31,7 +31,3 @@ The lifecycle state of a Flow. See [Understanding Flow status](managing-flows-st
 
 Flow token
 A unique identifier you provide when sending a Flow to track the session. The token is returned in the Flow response webhook when the user completes the Flow.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

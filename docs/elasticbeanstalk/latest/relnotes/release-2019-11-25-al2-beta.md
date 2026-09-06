@@ -37,7 +37,3 @@ For a list of beta program platform versions, see [Elastic Beanstalk Platform Ve
 | --- | --- | --- | --- | --- |
 |  ** (BETA) Corretto 11 version 0.1.0** <br /> * 64bit Amazon Linux 2 v0.1.0 running Corretto 11 (BETA) *  | 2.0.20191116 | Corretto 11.0.5.10.1 | Ant 1.10.7, Gradle 5.6.2, Maven 3.6.2 | nginx 1.16.1 |
 |  ** (BETA) Corretto 8 version 0.1.0** <br /> * 64bit Amazon Linux 2 v0.1.0 running Corretto 8 (BETA) *  | 2.0.20191116 | Corretto 8.232.09.1 | Ant 1.10.7, Gradle 5.6.2, Maven 3.6.2 | nginx 1.16.1 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

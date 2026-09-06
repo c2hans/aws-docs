@@ -35,7 +35,3 @@ If the source DB instance of a Multi-AZ deployment fails over to a standby, the 
 To learn more about failover, see [Failing over a Multi-AZ DB instance for Amazon RDS](Concepts.MultiAZ.Failover.md). To learn more about how read replicas work in a Multi-AZ deployment, see [Working with DB instance read replicas](USER_ReadRepl.md).
 
 To provide failover support for a read replica, you can create the read replica as a Multi-AZ DB instance so that Amazon RDS creates a standby of your replica in another Availability Zone (AZ). Creating your read replica as a Multi-AZ DB instance is independent of whether the source database is a Multi-AZ DB instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

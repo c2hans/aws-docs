@@ -168,7 +168,3 @@ You can't delete a virtual service that is referenced by a gateway route. You ne
 For more information on deleting a virtual service with the AWS CLI for App Mesh, see the [delete-virtual-service](https://docs.aws.amazon.com/cli/latest/reference/appmesh/delete-virtual-service.html) command in the AWS CLI reference.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

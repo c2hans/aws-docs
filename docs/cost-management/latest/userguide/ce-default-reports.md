@@ -169,7 +169,3 @@ Cost Explorer shows the combined coverage across all of your instance types in t
 You can use this information to track how many hours you use and how many of those hours are covered by RIs.
 
 The daily chart displays the number of RI hours that your account used on a daily basis for the last three months. The monthly chart displays your RI coverage for the previous 12 months, listed by month.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

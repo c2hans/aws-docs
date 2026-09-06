@@ -24,7 +24,3 @@ For tutorials to connect programmatically to Amazon Keyspaces using different Ap
 + [Create, read, update, and delete data (CRUD) using CQL in Amazon Keyspaces](getting-started.dml.md)
 + [Delete a table in Amazon Keyspaces](getting-started.clean-up.table.md)
 + [Delete a keyspace in Amazon Keyspaces](getting-started.clean-up.keyspace.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

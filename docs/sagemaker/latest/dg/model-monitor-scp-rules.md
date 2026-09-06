@@ -85,7 +85,3 @@ Amazon SageMaker Model Monitor is no longer open to new customers. Existing cust
 ------
 
  The first two rules in the example, ensure that the security parameters are always set for monitoring job definitions. The final rule requires that anyone, in your organization, creating or updating a schedule, have to always specify the `MonitoringJobDefinitionName` field. This ensures that no one in your organization, can set insecure values for the security parameters by specifying the `MonitoringJobDefinition` field, when creating or updating schedules.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

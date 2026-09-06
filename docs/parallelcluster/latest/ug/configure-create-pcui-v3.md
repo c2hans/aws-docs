@@ -50,7 +50,3 @@ This section guides you through how to configure and create a cluster using the 
 When you choose **Shell**, AWS ParallelCluster opens an Amazon EC2 Systems Manager session and adds an `ssm-user` to `/etc/sudoers`. For more information, see [Turn on or turn off `ssm-user` account administrative permissions](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-ssm-user-permissions.html) in the *Amazon EC2 Systems Manager User Guide*.
 
 1. To clean up, in the **Clusters** view, select the cluster, and choose **Actions**, **Delete cluster**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

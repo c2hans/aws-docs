@@ -49,7 +49,3 @@ Some AWS services have built in automatic type or size selection, such as [Amazo
 +  [Optimize Costs and Gain Visibility into Usage with Amazon S3 Storage Lens](https://aws.amazon.com/getting-started/hands-on/amazon-s3-storage-lens/)
 +  [Well-Architected Labs: Rightsizing Recommendations (Level 100)](https://wellarchitectedlabs.com/cost/100_labs/100_aws_resource_optimization/)
 +  [Well-Architected Labs: Rightsizing with AWS Compute Optimizer and Memory Utilization Enabled (Level 200)](https://www.wellarchitectedlabs.com/cost/200_labs/200_aws_resource_optimization/5_ec2_computer_opt/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

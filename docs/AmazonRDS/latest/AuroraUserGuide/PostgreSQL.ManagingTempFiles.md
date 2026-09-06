@@ -101,7 +101,3 @@ You can use the following parameters and functions to manage the temporary files
   For more information about how to analyze metrics and queries with Performance Insights, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DatabaseInsights.html).
 
   For an example of viewing temporary file usage with Performance Insights, see [Viewing temporary file usage with Performance Insights](PostgreSQL.ManagingTempFiles.Example.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

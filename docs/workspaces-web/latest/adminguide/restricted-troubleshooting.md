@@ -11,7 +11,3 @@ After Chrome policy is applied, if your WorkSpaces Secure Browser session still 
 + Verify that the Chrome policy is correct.
   +  Confirm the following formatting for the `ProxyServer` field of the policy: `<Proxy DNS name>:<Proxy port>`. There should be no `http://` or `https://` in the prefix.
   +  In the WorkSpaces Secure Browser session, use Chrome to navigate to chrome://policy, and make sure that the ProxySettings policy is successfully applied.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

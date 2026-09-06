@@ -63,7 +63,3 @@ Evacuating an Availability Zone can have a lower RTO than a multi-Region strateg
 It's possible that the impairment of a single Availability Zone impacts one or more AWS [Regional services](https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/regional-services.html) in addition to your workload. If you observe Regional impact, you should treat the event as a Regional service impairment although the source of that impact is from a single Availability Zone. Evacuating an Availability Zone will not mitigate this type of problem. Use the response plans you have in place to respond to a Regional service impairment when this occurs.
 
 The rest of this document focuses on the second option, evacuating the Availability Zone, as a way to achieve lower RTOs and RPOs for single-AZ gray failures. These patterns can help achieve better value and efficiency of multi-AZ architectures and, for most classes of workloads, can reduce the need to create multi-Region architectures to handle these types of events.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

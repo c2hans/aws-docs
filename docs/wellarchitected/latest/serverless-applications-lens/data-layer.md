@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
  [Amazon OpenSearch Service (OpenSearch Service)](https://aws.amazon.com/opensearch-service/) makes it easy to deploy, secure, operate, and scale OpenSearch for log analytics, full-text search, application monitoring, and more. [OpenSearch Service](https://aws.amazon.com/opensearch-service/) is a fully managed service that provides both a search engine and analytics tools.
 
  [AWS AppSync](https://aws.amazon.com/appsync/) is a managed GraphQL service with real-time and offline capabilities, as well as enterprise-grade security controls that make developing applications simple. [AWS AppSync](https://aws.amazon.com/appsync/) provides a data-driven API and consistent programming language for applications and devices to connect to services such as [DynamoDB](https://aws.amazon.com/dynamodb/), [OpenSearch Service](https://aws.amazon.com/opensearch-service/), and [Amazon S3](https://aws.amazon.com/s3/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ Complete the steps in [Launch Amazon SageMaker Studio Classic](studio-launch.md)
 Now that you're in Studio Classic, you can try any of the following options:
 + To create a Studio Classic notebook or explore Studio Classic end-to-end tutorial notebooks – See [Amazon SageMaker Studio Classic Tour](gs-studio-end-to-end.md) in the next section.
 + To familiarize yourself with the Studio Classic interface – See [Amazon SageMaker Studio Classic UI Overview](studio-ui.md) or try the **Getting started notebook** by selecting **Open the Getting started notebook** in the **Quick actions** section of the Studio Classic Home page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

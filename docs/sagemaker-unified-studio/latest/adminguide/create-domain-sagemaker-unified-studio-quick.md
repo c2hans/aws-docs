@@ -38,7 +38,3 @@ If you choose to create a new VPC, note that the VPC template with which it is c
 The Amazon SageMaker domain can reside in a different AWS Region than where the IAM Identity Center organization instance is located using IAM Identity Center multi-Region support. To use this feature, your IAM Identity Center instance must be connected to an external identity provider (IdP). For information about setting up IAM Identity Center multi-Region, see [Using IAM Identity Center across multiple AWS Regions](https://docs.aws.amazon.com/singlesignon/latest/userguide/multi-region-iam-identity-center.html).
 
 1. Choose **Create domain**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

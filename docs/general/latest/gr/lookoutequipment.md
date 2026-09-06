@@ -56,7 +56,3 @@ The following are the service endpoints and service quotas for this service.
 | Size per dataset | Each supported Region: 50 Gigabytes | No | Maximum size per dataset. |
 | Size per file | Each supported Region: 5 Gigabytes | No | Maximum size per file. |
 | Timespan of training data | Each supported Region: 180 per day | No | Minimum timespan of training data |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ For more information, see [How Amazon File Cache uses AWS KMS](FileCacheKMS.md).
 Data and metadata are automatically encrypted before being written to the cache. When you attach the encrypted volume to an instance, Amazon EC2 sends a `CreateGrant` request to AWS KMS, so that it can decrypt the data key. Amazon EC2 uses the plaintext data key in hypervisor memory to encrypt disk I/O to the volume. The plaintext data key persists in memory as long as the volume is attached to the instance.Similarly, as data and metadata are read, they are automatically decrypted before being presented to the application. These processes are handled transparently by Amazon File Cache, so you don't have to modify your applications.
 
 Amazon File Cache uses industry-standard AES-256 encryption algorithm to encrypt cache data at rest. For more information, see [Cryptography Basics](https://docs.aws.amazon.com/kms/latest/developerguide/crypto-intro.html) in the *AWS Key Management Service Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

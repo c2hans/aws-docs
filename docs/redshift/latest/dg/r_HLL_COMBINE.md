@@ -47,7 +47,3 @@ sketches
 {"version":1,"logm":15,"sparse":{"indices":[20812342,20850007,22362299,40314817,42650774,47158030],"values":[1,2,1,3,2,1]}}
 (1 row)
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

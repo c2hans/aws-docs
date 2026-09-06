@@ -143,7 +143,3 @@ The following diagram illustrates how different retry backoff functions affect t
 + The **horizontal axis** represents the retry sequence, ranging from the first to the tenth attempt.
 
 ![The diagram shows how retry delays progress over 10 attempts based on four backoff functions: exponential, arithmetic, linear, and geometric. Each colored line represents a function's delay pattern: Exponential: Increases rapidly, reaching the maximum delay the quickest, Linear: Increases steadily with each retry, Arithmetic and Geometric: Show moderate increases, steeper than linear but less rapid than exponential. All lines start near the minimum delay of 5 seconds and approach the maximum delay of 260 seconds by the tenth retry.](http://docs.aws.amazon.com/sns/latest/dg/images/backoff-graph.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

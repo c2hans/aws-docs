@@ -112,7 +112,3 @@ With every passing day, you notice that larger-than-previous-month spike begins 
 | 1st of month total ($) | $18,000 | $13,500 | $10,400 | $9,300 |
 
 As a new block drops off each day, it has its usage adjusted to how many days it existed, versus the full month amount. As a result, by month’s end the charges observed on the 1st will have dropped from the initial $18,000 down to the expected $9,300. This number, combined with the newly created backups through the month (which will have a billing table similar to the above, but reversed), will result in a monthly expense in line with last month’s $18,600.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

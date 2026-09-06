@@ -39,7 +39,3 @@ Review the arrangement of the group or groups you selected and their individual 
 
 **View and edit extraction details**
 You can view the details of the extraction from the **Application details** page by selecting the radio button next to the **Service name** under **Extractions**, and choosing **View details** from the **Actions** dropdown. On the service details page, you can view the **Extraction details** and **Nodes and dependencies**. To edit the extraction details, choose **Re-extract service** from the **Actions** dropdown. You must re-extract a service in order to edit its configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

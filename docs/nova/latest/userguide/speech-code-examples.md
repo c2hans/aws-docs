@@ -34,7 +34,3 @@ For advanced examples demonstrating more complex use cases, refer to the followi
 <a name="speech-code-examples-workshop"></a>
 
 We also offer a hands-on workshop that guides you through building a voice chat application using Nova Sonic with a bidirectional streaming interface. You can [access the workshop here](https://catalog.us-east-1.prod.workshops.aws/workshops/5238419f-1337-4e0f-8cd7-02239486c40d/en-US) and find the [complete code examples of the workshop here](https://github.com/aws-samples/amazon-nova-samples/tree/main/speech-to-speech/workshops).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

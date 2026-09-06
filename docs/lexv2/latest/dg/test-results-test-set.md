@@ -18,7 +18,3 @@ You can get a detailed view of intents and slots that had performance discrepanc
 1. Go to the list of test sets from the left side menu to select the **Test results** option under Test workbench. NOTE: Test results indicate a **Status** of complete if they were successful.
 
 1. Select the **Test Result ID** for the test results you want to review.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

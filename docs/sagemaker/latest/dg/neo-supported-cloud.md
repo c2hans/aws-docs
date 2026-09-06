@@ -67,7 +67,3 @@ You can deploy your SageMaker Neo-compiled model to AWS Inferentia-based Amazon 
 <a name="neo-supported-inferentia-trainium"></a>
 
 Currently, you can deploy your SageMaker Neo-compiled model to AWS Inferentia2-based Amazon EC2 Inf2 instances (in US East (Ohio) Region), and to AWS Trainium-based Amazon EC2 Trn1 instances (in US East (N. Virginia) Region). For more information about supported models on these instances, see [ Model Architecture Fit Guidelines](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/general/arch/model-architecture-fit.html) in the AWS Neuron documentation, and the examples in the [Neuron Github repository](https://github.com/aws-neuron/aws-neuron-sagemaker-samples).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ If you choose to open the notebook in Jupyter, a list of expandable files and fo
 To open any of the additional repositories, navigate to other folders.
 
 If you choose to open the notebook with a JupyterLab interface, you can use the pre-installed JupyterLab Git extension. For information about the extension, see [jupyterlab-git](https://github.com/jupyterlab/jupyterlab-git).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

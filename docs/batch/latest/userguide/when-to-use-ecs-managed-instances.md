@@ -14,7 +14,8 @@ Use Amazon ECS Managed Instances if your jobs require any of the following:
 + Your containers need host-level devices or volumes.
 + You need specific Amazon EC2 instance types or instance families.
 + You want to use On-Demand Capacity Reservations, Reserved Instances, or Amazon EC2 Instance Savings Plans.
-+ You need ARM64 (Graviton) instances via `runtimePlatform` configuration.
++ You need ARM64 (AWS Graviton) instances through `runtimePlatform` configuration.
++ You want to run both x86 (`X86_64`) and `ARM64` jobs from a single compute environment. For more information, see [Running mixed-architecture jobs (X86\_64 and ARM64)](ecs-managed-instances-multi-architecture.md).
 + You need arbitrary vCPU and memory combinations without the fixed size pairings that Fargate requires.
 
 Fargate is the simplest and recommended option if you don't have specific requirements for the underlying compute infrastructure. Continue to use Fargate if:
@@ -27,7 +28,3 @@ Use Amazon EC2 managed compute environments if:
 + You require custom AMIs or launch templates.
 + You need fine-grained control over allocation strategies.
 + You need a minimum capacity warm pool (`minvCpus`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

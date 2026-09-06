@@ -64,7 +64,3 @@ After you add jobs to your plan, you can see metrics on the dashboard as the job
 + **Total Snow Jobs** – The number of Snowball Edge jobs ordered compared to the remaining jobs to be ordered.
 + **Average duration for a migration job** – The average duration of a job in days.
 + **Snow Job Status** – The number of jobs in each status.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

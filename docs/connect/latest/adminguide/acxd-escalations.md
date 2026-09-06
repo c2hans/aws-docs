@@ -5,21 +5,21 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-escalatio
 # Configuring escalations
 <a name="acxd-escalations"></a>
 
-Escalations let an Agentic CX Designer conversation hand control back to a flow in Amazon Connect Customer when the user needs human support or the application should leave the conversational AI experience.
+Escalations let an agentic CX designer conversation hand control back to a flow in Amazon Connect Customer when the user needs human support or the application should leave the conversational AI experience.
 
 Use escalations when a task requires an agent, a business rule prevents automation, the user asks for a person, or the flow needs to transfer the conversation into a Connect Customer queue.
 
-When an Escalate node is reached in an Agentic CX Designer flow, the conversation exits through the Escalation path on the Agentic CX block in the Connect Customer flow.
+When an Escalate node is reached in an agentic CX designer flow, the conversation exits through the Escalation path on the Agentic CX block in the Connect Customer flow.
 
 From there, the Connect Customer flow controls what happens next.
 
 A common escalation pattern is:
 
-1. The user reaches an Escalate node in Agentic CX Designer.
+1. The user reaches an Escalate node in agentic CX designer.
 
 1. The conversation returns to the flow in Connect Customer through the Escalation path on the Agentic CX block.
 
-1. A **Set contact attributes** block stores any context returned from Agentic CX Designer.
+1. A **Set contact attributes** block stores any context returned from agentic CX designer.
 
 1. A **Set working queue** block selects the queue.
 
@@ -32,7 +32,7 @@ A common escalation pattern is:
 
 1. Open the flow in the Canvas.
 
-1. Add an Escalate node where the conversation should transfer out of Agentic CX Designer.
+1. Add an Escalate node where the conversation should transfer out of agentic CX designer.
 
 1. Add a message, if needed.
 
@@ -73,7 +73,7 @@ The Node payload must use key-value syntax:
 summary={transferSummary}
 ```
 
-The key on the left becomes the value available to Connect Customer. The value on the right references the Agentic CX Designer variable.
+The key on the left becomes the value available to Connect Customer. The value on the right references the agentic CX designer variable.
 
 Do not enter only the variable by itself.
 
@@ -101,7 +101,7 @@ summary={transferSummary}&customerIntent={customerIntent}
 
 After the Agentic CX block's Escalation path, add a **Set contact attributes** block in a flow in Connect Customer.
 
-Use this block to store the values returned from Agentic CX Designer so they can be used later in the Connect Customer flow or surfaced to an agent.
+Use this block to store the values returned from agentic CX designer so they can be used later in the Connect Customer flow or surfaced to an agent.
 
 **To set returned context**
 
@@ -133,7 +133,7 @@ After setting contact attributes, continue the Connect Customer flow by routing 
 
 A typical queue transfer sequence is:
 
-1. **Set contact attributes** — Stores context returned from Agentic CX Designer.
+1. **Set contact attributes** — Stores context returned from agentic CX designer.
 
 1. **Set working queue** — Selects the queue the contact should use.
 
@@ -167,9 +167,9 @@ and confirmed they are the account holder.
 ## Escalation design pattern
 <a name="acxd-escalations-design-pattern"></a>
 
-Use this pattern when designing escalation from Agentic CX Designer to Connect Customer:
+Use this pattern when designing escalation from agentic CX designer to Connect Customer:
 
-1. In Agentic CX Designer, collect or generate the context you want to preserve.
+1. In agentic CX designer, collect or generate the context you want to preserve.
 
 1. Store important values as context variables, slots, Define outputs, or Generative text outputs.
 
@@ -192,13 +192,9 @@ Use this pattern when designing escalation from Agentic CX Designer to Connect C
 
 | Issue | Cause | Fix |
 | --- | --- | --- |
-| Escalation does not leave Agentic CX Designer | The flow did not reach an Escalate node or the deployed build is outdated. | Confirm the Escalate node is connected, then create and deploy a new build. |
+| Escalation does not leave agentic CX designer | The flow did not reach an Escalate node or the deployed build is outdated. | Confirm the Escalate node is connected, then create and deploy a new build. |
 | Returned context is missing in Connect Customer flow | Node payload was not configured or used the wrong format. | Use key={variable} format in the Escalate node's Node payload. |
 | Returned value is empty | The referenced variable was not in scope at the Escalate node. | Store the value as a context variable, Define output, Generative text output, or captured slot before escalation. |
 | Agent receives no summary | The Set contact attributes block was not added after the Agentic CX escalation path. | Add Set contact attributes before Set working queue or Transfer to queue. |
 | Wrong queue is selected | Queue routing logic does not use the returned context. | Use returned attributes to determine the correct queue before transfer. |
 | Recent escalation changes are not active | The application was edited but not redeployed. | Create a new build and deploy it to the environment used by the Connect Customer flow. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

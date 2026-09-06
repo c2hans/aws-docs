@@ -44,7 +44,3 @@ Here is a list of the key changes in this release.
 |  Configuration and *Solution Stack Name*   |  AMI  |  Language  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  **Go 1.11 version 2.9.3** <br /> * 64bit Amazon Linux 2018.03 v2.9.3 running Go 1.11.3 *  | 2018.03.0 | Go 1.11.3 | 2.0.0 | nginx 1.12.1 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

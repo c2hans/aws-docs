@@ -52,7 +52,3 @@ You can only manage AWS resources for one project at a time. You can always tell
 1. In the navigation bar on the upper right, choose **Create and manage cloud infrastructure**.
 
    You'll be redirected back to the AWS Management Console for your new project.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

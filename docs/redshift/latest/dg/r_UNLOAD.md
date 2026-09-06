@@ -15,7 +15,7 @@ Unloads the result of a query to one or more text, JSON, or Apache Parquet files
 
 By default, the format of the unloaded file is pipe-delimited ( `|` ) text.
 
-You can manage the size of files on Amazon S3, and by extension the number of files, by setting the MAXFILESIZE parameter. Ensure that the S3 IP ranges are added to your allow list. To learn more about the required S3 IP ranges, see [ Network isolation](https://docs.aws.amazon.com/redshift/latest/mgmt/security-network-isolation.html#network-isolation).
+You can manage the size of files on Amazon S3, and by extension the number of files, by setting the MAXFILESIZE parameter. Make sure that the S3 IP ranges are added to your allow list. To learn more about the required S3 IP ranges, see [ Network isolation](https://docs.aws.amazon.com/redshift/latest/mgmt/security-network-isolation.html#network-isolation).
 
 You can unload the result of an Amazon Redshift query to your Amazon S3 data lake in Apache Parquet, an efficient open columnar storage format for analytics. Parquet format is up to 2x faster to unload and consumes up to 6x less storage in Amazon S3, compared with text formats. This enables you to save data transformation and enrichment you have done in Amazon S3 into your Amazon S3 data lake in an open format. You can then analyze your data with Redshift Spectrum and other AWS services such as Amazon Athena, Amazon EMR, and Amazon SageMaker AI.
 
@@ -315,7 +315,3 @@ You can't use Amazon S3 access point aliases with the UNLOAD command.
 <a name="r_UNLOAD-examples"></a>
 
 For examples that show how to use the UNLOAD command, see [UNLOAD examples](r_UNLOAD_command_examples.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

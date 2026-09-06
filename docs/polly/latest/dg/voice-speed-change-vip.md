@@ -33,7 +33,3 @@ Two speed options are available to you when using SSML with Amazon Polly:
 Test your selected voice at various speeds. The speed of each option is approximate and depends on the voice you choose.
 
 For more information on using the `prosody` tag, see [Controlling volume, speaking rate, and pitch](prosody-tag.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Polly. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query polly` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

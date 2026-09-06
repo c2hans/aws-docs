@@ -156,7 +156,3 @@ Before proceeding to enable AWS Shield network security director, ensure you hav
 + ✓ You have access to both the Organizations management account and the delegated administrator account
 
 Once you have completed these setup tasks, you can proceed to [Enabling AWS Shield network security director](nsd-enablement.md) to enable AWS Shield network security director for your organization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

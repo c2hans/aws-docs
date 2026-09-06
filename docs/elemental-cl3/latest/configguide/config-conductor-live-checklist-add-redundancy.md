@@ -28,7 +28,3 @@ Perform the following steps in the specified order:
 1. Create a redundancy group for the two Conductor Live nodes, and add the nodes to that group. See [Creating a Conductor Live redundancy group](conductor-live-config-redundancy-cl.md).
 
 1. [Enable HA (high availability)](conductor-live-config-ha.md) on the primary Conductor Live. When you enable HA, the secondary Conductor Live synchronizes itself with the primary Conductor Live.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

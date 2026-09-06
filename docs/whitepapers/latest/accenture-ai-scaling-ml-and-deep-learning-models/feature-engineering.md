@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-
  The [Amazon SageMaker AI Feature Store](https://aws.amazon.com/sagemaker/feature-store/) is accessible across the organization for different teams to collaborate, promoting reuse, reducing overall cost, and avoiding silos with duplicate work efforts. The following query is a sample of the central Feature Store created with BERT embeddings. A [SageMaker AI Feature Group](https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-create-feature-group.html) and a Feature Store are created. Multiple downstream teams can retrieve and use features from this central store instead of redoing feature engineering repeatedly, adding to the organization’s operational costs and non-standardization issues.
 
 ![A screenshot of the Feature Store with BERT embeddings ready for reuse across the organization .](http://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/feature-store.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

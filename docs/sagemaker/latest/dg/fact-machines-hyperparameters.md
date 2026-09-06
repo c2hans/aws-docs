@@ -35,7 +35,3 @@ The following table contains the hyperparameters for the Factorization Machines 
 | linear\_wd | The weight decay for linear terms.<br />**Optional**<br />Valid values: Non-negative float. Suggested value range: [1e-8, 512].<br />Default value: 0.001 |
 | mini\_batch\_size | The size of mini-batch used for training. <br />**Optional**<br />Valid values: Positive integer<br />Default value: 1000 |
 | rescale\_grad | Gradient rescaling optimizer parameter. If set, multiplies the gradient with `rescale_grad` before updating. Often choose to be 1.0/`batch_size`. <br />**Optional**<br />Valid values: Float<br />Default value: None |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

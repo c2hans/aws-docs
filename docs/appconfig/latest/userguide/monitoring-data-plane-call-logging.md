@@ -105,7 +105,3 @@ If you set up the error metric with no dimension, as described here, you can vie
 <a name="monitoring-data-plane-call-logging-alarms"></a>
 
 After you create metrics, you can create metric alarms in CloudWatch. For example, you can create an alarm for the *AWS AppConfig calls* metric you created in the previous procedure. Specifically, you can create an alarm for calls to the AWS AppConfig `StartConfigurationSession` API action that surpass a threshold. For information about how to create an alarm for a metric, see [Create a CloudWatch alarm based on a static threshold](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ConsoleAlarms.html) in the *Amazon CloudWatch User Guide*. For information about default limits for calls to the AWS AppConfig data plane, see [Data plane default limits](https://docs.aws.amazon.com/general/latest/gr/appconfig.html#limits_appconfig) in the *Amazon Web Services General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

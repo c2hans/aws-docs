@@ -37,7 +37,3 @@ Before you begin deploying task definitions that use the 64-bit ARM architecture
   ```
 
   For more information, see [describe-instance-type-offerings ](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-type-offerings.html)in the *Amazon EC2 Command Line Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -187,7 +187,3 @@ This solution combines AWS managed services (Amazon SageMaker AI, Amazon Athena,
 <a name="model-monitor-meta-monitoring-setup"></a>
 
 Set up training to prepare for monitoring. You can drive everything from the three notebooks in SageMaker Studio, or use the equivalent CLI commands (each notebook cell maps to a `python main.py ...` command for CI/CD). If you run the sample end to end, you do not need to edit `config.yaml`; populating `.env` and using the defaults works. If you already have a model deployed, adapt the training pipeline to your own steps and ensure the inference endpoint pushes prediction records to Amazon SQS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

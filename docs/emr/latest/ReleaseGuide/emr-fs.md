@@ -40,7 +40,3 @@ If you need to write data in formats that use EMRFS direct write from Spark to A
 + [Authorizing access to EMRFS data in Amazon S3](emr-plan-credentialsprovider.md)
 + [Managing the default AWS Security Token Service endpoint](emr-emrfs-sts-endpoint.md)
 + [Specifying Amazon S3 encryption using EMRFS properties](emr-emrfs-encryption.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

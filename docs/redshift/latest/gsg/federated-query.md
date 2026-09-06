@@ -14,7 +14,3 @@ To run federated queries, Amazon Redshift first makes a connection to the remote
 For information about setting up your environment for federated queries, see one of the following topics in the *Amazon Redshift Database Developer Guide*:
 + [Getting started with using federated queries to PostgreSQL](https://docs.aws.amazon.com/redshift/latest/dg/getting-started-federated.html)
 + [Getting started with using federated queries to MySQL ](https://docs.aws.amazon.com/redshift/latest/dg/getting-started-federated-mysql.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ The event structure sent to your Amazon SNS input topic must be a JSON message f
 To see examples of how you can set up an event notification for your Amazon S3 bucket using the Amazon S3 console, AWS SDK for .NET, and AWS SDK for Java, follow this walkthrough,[Walkthrough: Configure a bucket for notifications (SNS topic or SQS queue)](https://docs.aws.amazon.com/AmazonS3/latest/dev/ways-to-add-notification-config-to-bucket.html) in the *Amazon Simple Storage Service User Guide*.
 
 Amazon EventBridge notifications are not natively supported. To use EventBridge based notification you must update the output format to match the JSON format used in the [Event message structure](https://docs.aws.amazon.com/AmazonS3/latest/dev/notification-content-structure.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

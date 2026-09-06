@@ -168,7 +168,3 @@ The following diagram shows the program flow than enables the `Speak` action for
 A caller enters a number registered to a SIP media application, and the application responds as described for the previous diagram. When the Lambda function receives the `NEW_INBOUND_CALL` event, it returns the [CallAndBridge](call-and-bridge.md) action to the SIP application. The application then uses the SIP `INVITE` method to send the `Trying (100)` and `Ringing (180)` responses to the callee.
 
 If the callee answers, the SIP media application recieves a `200 (OK)` response, and it sends the same response to the caller. That establishes media, and the SIP application sends an `ACTION_SUCCESSFUL` event for the [CallAndBridge](call-and-bridge.md) action to the Lambda function. The function then returns the Speak action and data to the SIP application, which converts
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

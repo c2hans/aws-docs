@@ -26,7 +26,3 @@ Prior to submitting tasks to Mechanical Turk, you should review the [Acceptable 
 To experiment with Mechanical Turk without spending money on the Mechanical Turk marketplace, you can use the [*sandbox* environment for requestors](https://requestersandbox.mturk.com) and [the one for workers](https://workersandbox.mturk.com). This is a mirror image of the *production* environment, but no money changes hands when work is completed. Many requesters create tasks here first and complete them themselves so that they can validate their task interface and ensure they get the results they expect back. You can find more information on using the sandbox in [Using the sandbox](mturk-use-sandbox.md).
 
 Note that there is no financial incentive to complete work in the sandbox marketplace, so you shouldn't expect tasks you post in the sandbox to be completed unless you do so yourself.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ Disassociating a project from an S3 bucket will not impact the data in the S3 bu
 
 1. Choose **Save bucket setup**.
 ![The Edit S3 Bucket page with display name and project association fields entered and Save bucket setup button highlighted](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/docs-edit-bucket.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

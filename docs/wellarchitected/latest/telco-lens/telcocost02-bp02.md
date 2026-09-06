@@ -50,7 +50,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoc
 +  [Amazon EC2](https://aws.amazon.com/pm/ec2/)
 +  [AWS Graviton Processor](https://aws.amazon.com/ec2/graviton/)
 +  [AWS Compute Optimizer](https://aws.amazon.com/compute-optimizer/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

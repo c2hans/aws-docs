@@ -139,7 +139,3 @@ You are required to specify one of the following options in each rule that you c
     + **Record value** – The custom DNS record to send back in response to the query.
     + **Record type**– The DNS record's type. This determines the format of the record value. This must be `CNAME`.
     + **Time to live in seconds**– The recommended amount of time for the DNS resolver or web browser to cache the override record and use it in response to this query, if it is received again. By default, this is zero, and the record isn't cached.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

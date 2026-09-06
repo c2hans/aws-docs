@@ -16,7 +16,3 @@ AWS Marketplace provides tools and features to help you manage your account, inc
 + [Managing your invoices](managing-invoices.md)
 + [Managing account communications](managing-account-communications.md)
 + [Managing secondary users for Know Your Customer (KYC)](managing-secondary-users.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

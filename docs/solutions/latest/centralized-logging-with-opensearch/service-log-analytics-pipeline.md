@@ -180,7 +180,3 @@ The log pipeline runs the following workflow:
 1. Logs that fail to be processed are exported to Amazon S3 bucket (Backup Bucket).
 
 For cross-account ingestion, the AWS Services store logs on Amazon CloudWatch log group in the member account, and other resources remain in the main account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Logging with OpenSearch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

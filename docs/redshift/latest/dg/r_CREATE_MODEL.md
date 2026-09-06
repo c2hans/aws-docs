@@ -206,13 +206,9 @@ S3\_BUCKET clause specifies the Amazon S3 location that is used to store interme
 (Optional) S3\_GARBAGE\_COLLECT { ON \| OFF } specifies whether Amazon Redshift performs garbage collection on the resulting datasets used to train models and the models. If set to OFF, the resulting datasets used to train models and the models remains in Amazon S3 and can be used for other purposes. If set to ON, Amazon Redshift deletes the artifacts in Amazon S3 after the training completes. The default is ON.
 (Optional) MAX\_CELLS specifies the number of cells in the training data. This value is the product of the number of records (in the training query or table) times the number of columns. The default is 1,000,000.
 (Optional) MAX\_RUNTIME specifies the maximum amount of time to train. Training jobs often complete sooner depending on dataset size. This specifies the maximum amount of time the training should take. The default is 5,400 (90 minutes).
-HORIZON specifies the maximum number of predictions the forecast model can return. Once the model is trained, you can't change this integer. This parameter is required if training a forecast model.
+HORIZON specifies the maximum number of predictions the forecast model can return. After the model is trained, you can't change this integer. This parameter is required if training a forecast model.
 FREQUENCY specifies how granular in time units you want the forecasts to be. Available options are `Y | M | W | D | H | 30min | 15min | 10min | 5min | 1min`. This parameter is required if training a forecast model.
 (Optional) PERCENTILES is a comma-delimited string that specifies the forecast types used to train a predictor. Forecast types can be quantiles from 0.01 to 0.99, in increments of 0.01 or higher. You can also specify the mean forecast with mean. You can specify a maximum of five forecast types.
 
  MAX\_BATCH\_ROWS *integer*
 (Optional) The maximum number of rows that Amazon Redshift sends in a single batch request for a single SageMaker AI invocation. It is supported only for BYOM with remote inference. This parameter's minimum value is 1. The maximum value is `INT_MAX`, or 2,147,483,647. This parameter is required only when both input and returned data types are *SUPER*. The default value is `INT_MAX`, or 2,147,483,647.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

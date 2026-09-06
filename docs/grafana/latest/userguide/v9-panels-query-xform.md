@@ -120,7 +120,3 @@ Panel time overrides have no effect when the dashboard’s time range is absolut
 Panel time overrides have no effect when the dashboard's time range is absolute.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v9-panels-query-xform.html)
 + **Cache timeout** – *(Visible only if available in the data source)* Overrides the default cache timeout if your time series store has a query cache. Specify this value as a numeric value in seconds.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

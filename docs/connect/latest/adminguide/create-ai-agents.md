@@ -263,7 +263,3 @@ aws qconnect list-ai-agents \
 
 **Note**
  `--origin SYSTEM` is specified as an argument to fetch the system AI agent versions. Without this argument, your customized AI agent versions will be listed. After the AI agent versions are listed, use them to reset to the default agent assist experience at the level of the agent assist Assistant or session; use the CLI command described in [Set AI agents for use with agent assist](#cli-ai-agents-sample6).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/c
  Developing and running OSS solutions on AWS helps CSPs transition to DSPs by providing the framework to develop a programmatic network, fully automated and fully integrated, and by enabling end-to-end 5G services that meet the specificity of your end users.
 
  To learn more about how telecommunications companies are leveraging AWS services, visit [Telecommunications on AWS](https://aws.amazon.com/telecom/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

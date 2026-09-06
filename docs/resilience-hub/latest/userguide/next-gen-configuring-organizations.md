@@ -28,7 +28,3 @@ When selecting a home Region, choose a Region that:
 Service summary data (identifiers, compliance scores, status) replicates from all Regions and accounts into the home Region for fast, centralized queries. Full details such as topology, findings, and dependencies remain in their source Regions and are accessed on demand.
 
 For detailed setup instructions, see [AWS Organizations integration](next-gen-organizations.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

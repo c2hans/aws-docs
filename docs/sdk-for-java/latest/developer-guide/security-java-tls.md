@@ -126,7 +126,3 @@ You cannot combine `postQuantumTlsEnabled(false)` with `minTlsVersion(TlsVersion
 <a name="tls-more-info"></a>
 
 See this [blog post](https://aws.amazon.com/blogs/security/tls-1-2-required-for-aws-endpoints/) for information about AWS API endpoints moving to TLS 1.2 for the minimum version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

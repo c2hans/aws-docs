@@ -47,7 +47,3 @@ The following individuals and organizations contributed to earlier versions of t
 + David Tucker, Senior Manager of Analytics Solutions Architects, Amazon Web Services
 + Srikanth Baheti, Senior Quick Senior Solutions Architect, Amazon Web Services
 + Raji Sivasubramaniam, Quick Senior Solutions Architect, Amazon Web Services
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

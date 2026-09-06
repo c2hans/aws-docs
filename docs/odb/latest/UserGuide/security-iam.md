@@ -103,7 +103,3 @@ When multiple types of policies apply to a request, the resulting permissions ar
 <a name="odb-authentication-oci"></a>
 
 When you use AWS APIs to create resources for Oracle Database@AWS, those resources logically reside in your linked Oracle Cloud Infrastructure (OCI) tenancy. To deploy these resources, AWS communicates with OCI APIs on your behalf. To mitigate the confused deputy problem, OCI and Oracle Database@AWS use AWS STS as a trusted entity and forward access sessions to authorize your intent to use OCI APIs in your linked tenancy. Consequently, events are recorded for the `sts:getCallerIdentity` API from OCI IP space in your AWS CloudTrail trails and events history. Expect these events when you use Oracle Database@AWS APIs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

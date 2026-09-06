@@ -36,7 +36,3 @@ When architecting with a buffer-based approach, ensure that you architect your w
 +  [Amazon Simple Queue Service](https://aws.amazon.com/sqs/)
 +  [Getting started with Amazon SQS](https://aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-getting-started.html)
 +  [Amazon Kinesis](https://aws.amazon.com/kinesis/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

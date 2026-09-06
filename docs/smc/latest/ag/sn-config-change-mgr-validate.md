@@ -76,7 +76,3 @@ This procedure requires you to create and configure AWS CloudTrail Lake on AWS a
 1. Choose the same Change Request to reopen the record.
 
 1. Scroll to the bottom of the Change Request form and use **CloudTrail Events** related list to review the events of the Change execution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

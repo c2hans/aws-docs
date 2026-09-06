@@ -82,7 +82,3 @@ You can't add a reviewer as both required and optional. You can't add yourself a
 1. When you are satisfied that the pull request contains the changes that you want reviewed and includes the required reviewers, choose **Create**.
 
 If you have any workflows configured to run where the branch matches the destination branch in the pull request, you will see information about those workflow runs in **Overview** in the **Pull request details** area after the pull request is created. For more information, see [Adding triggers to workflows](workflows-add-trigger-add.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

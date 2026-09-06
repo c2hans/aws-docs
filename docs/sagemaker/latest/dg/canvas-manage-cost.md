@@ -31,7 +31,3 @@ After you add tags to your domain, it might take up to 24 hours for the tags to 
 On the **Cost explorer** page, you can group and filter your costs by tags and usage types to separate your Workspace instance charges from your Training charges. The charges for each are listed as the following:
 + Workspace instance charges: Charges show up under the usage type `REGION-Canvas:Session-Hrs (Hrs)`.
 + Training charges: Charges show up under the usage types for SageMaker AI Hosting, Training, Processing, or Batch Transform jobs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

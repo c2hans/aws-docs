@@ -15,7 +15,3 @@ With `pg_columnmask`, you create masking policies that determine data visibility
 + **Policy prioritization** – Define multiple policies for a single column. Use weights to determine which masking policy should be used when multiple policies apply to a column. Aurora PostgreSQL applies policies based on weight and user role membership.
 
 `pg_columnmask` is available on Aurora PostgreSQL version 16.10 and higher, and version 17.6 and higher. It is available is available at no additional cost.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

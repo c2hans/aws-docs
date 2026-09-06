@@ -26,7 +26,3 @@ Applications are containers of services and routes that provide multi-account tr
    The proxy’s endpoint can be either Regional or private. Regional API Gateway endpoints are accessible through the public internet, and private API Gateway endpoints are only accessible through VPCs.
 
 1. Choose **Next** to move to the **Share environment** page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub Refactor Spaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-refactor-spaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

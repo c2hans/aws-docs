@@ -70,7 +70,7 @@ The following diagrams show how minimum worker count and standby worker count af
 
 ------
 
-To automatically adjust your standby worker count on a schedule, use the sample AWS CloudFormation (CloudFormation) template at [fleet\_standby\_scheduling](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/fleet_standby_scheduling) on GitHub.
+To automatically adjust your standby worker count on a schedule, use the sample AWS CloudFormation (CloudFormation) template at [fleet\_standby\_scheduling](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/fleet_standby_scheduling) on the GitHub website.
 
 ## Configuring auto scaling settings
 <a name="auto-scaling-configure"></a>
@@ -95,7 +95,3 @@ You can configure auto scaling settings when you create a fleet or update an exi
    + **Standby worker count** – Enter the number of standby workers to maintain.
 
 1. Choose **Save changes**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

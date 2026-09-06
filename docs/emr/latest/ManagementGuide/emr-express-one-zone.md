@@ -152,7 +152,3 @@ Consider the following when you integrate Apache Spark on Amazon EMR with the S3
 + The Amazon S3 Express One Zone storage class supports SSE-S3 and SSE-KMS encryption. For more information, see [Server-side encryption with Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-data-protection.html#s3-express-ecnryption).
 + The Amazon S3 Express One Zone storage class does not support writes with the S3A `FileOutputCommitter`. Writes with the S3A `FileOutputCommitter` on S3 Express One Zone buckets result in an error: *InvalidStorageClass: The storage class you specified is not valid*.
 + Amazon S3 Express One Zone is supported with Amazon EMR releases 6.15.0 and higher on EMR on EC2. Additionally, it's supported on Amazon EMR releases 7.2.0 and higher on Amazon EMR on EKS and on Amazon EMR Serverless.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

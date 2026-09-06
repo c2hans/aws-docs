@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
  As client requests come through the CDN, the origin layer must elastically respond to meet viewership demand. Implement your origin service within Auto Scaling groups, across multiple Availability Zones, and behind Application Load Balancers to ensure high availability. To determine the additional demand back to the origin, refer to the Performance Pillar in this paper to estimate load and inform scaling needs.
 
  For best practices in change management, refer to the [Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) whitepaper.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

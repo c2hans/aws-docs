@@ -117,7 +117,3 @@ Dates with only a month and a year are approximate, and will be updated with the
 | 11.22-rds.20250220\* | Not applicable | 3 April 2025 | 31 October 2026 |
 
 \* PostgreSQL Community retired major versions 11, 12, and 13 and won't be releasing new minor versions. Amazon RDS released this minor version with critical security patches and bug fixes for PostgreSQL databases that are covered under Amazon RDS Extended Support. For more information about these minor versions, see [Amazon RDS Extended Support updates](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-extendedsupport.html). For more information about Amazon RDS Extended Support, see [Using Amazon RDS Extended Support](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

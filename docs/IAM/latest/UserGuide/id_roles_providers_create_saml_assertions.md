@@ -128,7 +128,7 @@ The value of the `Name` attribute in the `Attribute` tag is case-sensitive. It m
 
 (Optional) You can use an `Attribute` element with the `Name` attribute set to `https://aws.amazon.com/SAML/Attributes/SourceIdentity`. This element contains one `AttributeValue` element that provides an identifier for the person or application that is using an IAM role. The value for source identity persists when you use the SAML session to assume another role in AWS known as [role chaining](id_roles.md#iam-term-role-chaining). The value for source identity is present in the request for every action taken during the role session. The value that is set cannot be changed during the role session. Administrators can then use AWS CloudTrail logs to monitor and audit the source identity information to determine who performed actions with shared roles.
 
-The value in the `AttributeValue` element must be between 2 and 64 characters long, can contain only alphanumeric characters, underscores, and the following characters: **. , \+ = @ -** (hyphen). It cannot contain spaces. The value is typically an attribute that is associated with the user such as a user id (`john`) or an email address (`johndoe@example.com`). It should not be a value that includes a space, like a user's display name (`John Doe`). For more information about using source identity, see [Monitor and control actions taken with assumed roles](id_credentials_temp_control-access_monitor.md).
+The value in the `AttributeValue` element must be between 2 and 256 characters long, can contain only alphanumeric characters, underscores, and the following characters: **. , \+ = @ -** (hyphen). It cannot contain spaces. The value is typically an attribute that is associated with the user such as a user id (`john`) or an email address (`johndoe@example.com`). It should not be a value that includes a space, like a user's display name (`John Doe`). For more information about using source identity, see [Monitor and control actions taken with assumed roles](id_credentials_temp_control-access_monitor.md).
 
 **Important**
 If your SAML assertion is configured to use the [`SourceIdentity`](#saml_sourceidentity) attribute, then your role trust policy must also include the `sts:SetSourceIdentity` action, otherwise the assume role operation will fail. For more information about using source identity, see [Monitor and control actions taken with assumed roles](id_credentials_temp_control-access_monitor.md).
@@ -197,7 +197,3 @@ The following table shows X.500 attributes.
 | `0.9.2342.19200300100.1.1` | `uid` | String |
 | `0.9.2342.19200300100.1.3` | `mail` | String |
 | `0.9.2342.19200300.100.1.45` | `organizationStatus` | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

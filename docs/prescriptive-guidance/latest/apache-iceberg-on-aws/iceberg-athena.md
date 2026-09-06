@@ -48,7 +48,3 @@ The following table lists limitations and recommendations.
 | Table DDL generation | Iceberg tables created with other engines can have properties that are not exposed in Athena. For these tables, it's not possible to generate the DDL. | Use the equivalent statement in the engine that created the table (for example, the `SHOW CREATE TABLE` statement for Spark). |
 | Random Amazon S3 prefixes in objects that are written to an Iceberg table | By default, Iceberg tables that are created with Athena have the `write.object-storage.enabled` property enabled. | To disable this behavior and gain full control over Iceberg table properties, create an Iceberg table with another engine such as Spark on Amazon EMR or AWS Glue. |
 | Incremental queries | Not currently supported in Athena. | To use incremental queries to enable incremental data ingestion pipelines, use Spark on Amazon EMR or AWS Glue. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,7 +60,3 @@ For more information about key-only and key-value tags, see [Tags](amazon-lights
 Complete the following actions after your new database is up and running:
 + Delete the original database if you no longer need it. For more information, see [Delete your database](amazon-lightsail-deleting-your-database.md).
 + Databases created from a point-in-time backup are configured to use a strong password created by Lightsail. For more information, see [Manage your database password](amazon-lightsail-managing-database-password.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -44,7 +44,3 @@ Here is a list of the key changes in this release.
 |  **Go 1.4 (Docker) version 2.12.8** <br /> * 64bit Debian jessie v2.12.8 running Go 1.4 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Debian Jessie | Go 1.4.2 | nginx 1.14.1 | none | golang:1.4.2-onbuild |
 |  **Go 1.3 (Docker) version 2.12.8** <br /> * 64bit Debian jessie v2.12.8 running Go 1.3 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Debian Jessie | Go 1.3.3 | nginx 1.14.1 | none | golang:1.3.3-onbuild |
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.12.8** <br /> * 64bit Debian jessie v2.12.8 running Python 3.4 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Debian Jessie | Python 3.4 | nginx 1.14.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

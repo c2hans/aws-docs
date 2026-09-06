@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/view-auto-column-stats-se
  After you create or update a table, you can verify the table details to confirm the statistics generation. The `Statistics generation summary` shows the `Schedule` property set as `AUTO` and `Statistics configuration` value is `Inherited from catalog`. Any table setting with the following setting would be automatically triggered by Glue internally.
 
 ![An image of a Hive table with catalog-level statistics collection has been applied and statistics have been collected.](http://docs.aws.amazon.com/glue/latest/dg/images/auto-stats-summary.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

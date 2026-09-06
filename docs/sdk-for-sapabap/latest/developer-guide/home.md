@@ -50,7 +50,3 @@ In addition to this guide, the following online resources are available for SDK 
 +  [AWS developer blog](http://aws.amazon.com/blogs/developer/category/developer-tools/)
 +  [AWS developer forums](http://forums.aws.amazon.com/forum.jspa?forumID=53)
 +  [@awsdevelopers](https://twitter.com/awsdevelopers)(Twitter)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for SAP ABAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-sapabap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

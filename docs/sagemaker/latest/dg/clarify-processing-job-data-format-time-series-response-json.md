@@ -16,7 +16,3 @@ The following table is an example response from an endpoint that only outputs th
 | --- | --- | --- |
 | Single record example. Config should be `TimeSeriesModelConfig(forecast="prediction.mean")` to extract prediction properly. | `'{"prediction": {"mean": [1, 2, 3, 4, 5]}'` | `'prediction.mean'` |
 | Multiple records. An AWS deepAR endpoint response. | `'{"predictions": [{"mean": [1, 2, 3, 4, 5]}, {"mean": [1, 2, 3, 4, 5]}]}'` | `'predictions[*].mean'` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

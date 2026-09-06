@@ -85,7 +85,3 @@ CloudTrail Lake offers the following types of dashboards:
 
 **Widgets**
 *Widgets* are the components that make up a dashboard and provide a visualization, such as a line chart or bar chart. Each widget corresponds to a SQL query. When you refresh a dashboard, CloudTrail runs a query for each widget on the dashboard to populate the data for the widget.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

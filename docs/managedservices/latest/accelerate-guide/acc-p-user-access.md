@@ -28,7 +28,3 @@ After your account is onboarded to AMS Accelerate patching, AMS Accelerate deplo
 1. Under **Role details**, enter a Role name such as PatchRole, add a description for the role (recommended), also add tags to help you identify this role. Role names aren't case sensitive, but must be unique within the AWS account. When finished, click **Create Role**.
 **Note**
 Role names can't be edited after they've been created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

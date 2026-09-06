@@ -48,7 +48,3 @@ For code review, S3 sources must be ZIP files stored in a connected bucket. Any 
 + Configure penetration testing for your Agent Space (see [Enable penetration test](enable-penetration-test.md)).
 + Run a threat model on connected sources (see [Enable threat modeling](enable-threat-model.md)).
 + Run a differential code scan from a diff stored in S3 (see [Run a differential code scan with S3](run-diff-scan-s3.md)).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

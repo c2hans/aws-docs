@@ -20,7 +20,3 @@ This process should never be used in production because the private key is trans
 Security risks are mitigated because the devices are not deployed in the field. The devices are tightly controlled by a developer or in a lab environment. A compromised device can be re-programmed and the certificate can be revoked.
 
 The process of creating all resources in the AWS Cloud and copying the necessary keys to the device is manual and time consuming. Unique firmware and files need to be programmed into each device by the developer. For testing and development, most operations are performed in the lab environment, but the process is not scalable when entering the pilot or production phase of an IoT project. To scale an IoT project, there is typically a much more complex supply chain.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

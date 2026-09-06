@@ -26,7 +26,3 @@ The following code examples show you how to use Amazon Data Firehose with an AWS
     + [`PutRecordBatch`](firehose_example_firehose_PutRecordBatch_section.md)
 + [Scenarios](firehose_code_examples_scenarios.md)
   + [Put records to Firehose](firehose_example_firehose_Scenario_PutRecords_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

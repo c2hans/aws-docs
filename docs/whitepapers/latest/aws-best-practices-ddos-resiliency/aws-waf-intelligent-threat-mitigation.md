@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
  You can monitor and control account creation fraud attempts by implementing the AWS WAF Fraud Control account creation fraud prevention (ACFP) feature. AWS WAF offers this feature in the AWS Managed Rules rule group `AWSManagedRulesACFPRuleSet` with companion [application integration](https://docs.aws.amazon.com/waf/latest/developerguide/waf-application-integration.html) SDKs.
 
  Learn more about these protections in [AWS WAF intelligent threat mitigation](https://docs.aws.amazon.com/waf/latest/developerguide/waf-managed-protections.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

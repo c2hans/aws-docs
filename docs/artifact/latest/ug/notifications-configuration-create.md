@@ -29,7 +29,3 @@ After you [select your User Notifications notification hubs](managing-notificati
    + Choose **Create configuration**.
 
      User Notifications sends a verification email to each of the recipient email addresses that you provided. To verify the email address, in the verification email, the recipient must choose **Verify email**. Only verified email addresses will receive AWS Artifact notifications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Artifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query artifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -91,7 +91,3 @@ For more information about AWS endpoints, see [AWS Support endpoints and quotas]
 The AWS Command Line Interface (AWS CLI), and the AWS Software Development Kits (SDKs) include support for the Support API.
 
 For a list of languages that support the AWS Support API, choose an operation name, such as [CreateCase](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_CreateCase.html), and in the [See Also](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_CreateCase.html#API_CreateCase_SeeAlso) section, choose your preferred language.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

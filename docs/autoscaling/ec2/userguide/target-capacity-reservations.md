@@ -57,7 +57,3 @@ If you have 10 Capacity Reservations in AZ-a, 3 in AZ-b, 1 in AZ-c, and a desire
 
 **Note**
 To prioritize Capacity Reservation utilization over Availability Zone balance, use the `reservations-then-balanced` Availability Zone distribution strategy. For more information, see [Auto Scaling group Availability Zone distribution](ec2-auto-scaling-availability-zone-balanced.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

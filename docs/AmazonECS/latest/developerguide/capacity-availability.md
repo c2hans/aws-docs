@@ -18,7 +18,3 @@ The following recommendations show you how to run your Amazon ECS workloads to m
 + [Amazon ECS cluster capacity](capacity-cluster-best-practice.md)
 + [Choosing Fargate task sizes for Amazon ECS](fargate-task-size-best-practice.md)
 + [Speeding up Amazon ECS cluster capacity provisioning with capacity providers on Amazon EC2](capacity-cluster-speed-up-ec2-best-practice.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

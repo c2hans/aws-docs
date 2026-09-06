@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/hybrid-
  The key to this strategy is that both environments (the left and right) are running the *same* version of the SaaS application. Any new changes or updates are applied to both environments at the same time. More importantly, you’ll see that we have a single, unified management experience that spans both of these environments. Onboarding, identity, metering, and billing are shared and common to both environments.
 
  This shared experience allows a SaaS organization to manage and operate these environments through a single pane of glass. By fitting these one-off tenants into this model, you’re able to minimize the impact to the overall agility and operational efficiency of your SaaS environment. This model impacts cost efficiency and adds operational complexity. However, it can represent a reasonable compromise for many SaaS companies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

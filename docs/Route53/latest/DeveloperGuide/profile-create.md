@@ -62,7 +62,3 @@ To associate your Profiles with different resources and edit the VPC configurati
 + [Associate VPC Resolver query logging configurations to a Route 53 Profile](profile-associate-query-logging.md)
 + [Edit Route 53 Profile configurations](profile-edit-configurations.md)
 + [Associate a Route 53 Profile to VPCs](profile-associate-vpcs.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

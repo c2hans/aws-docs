@@ -225,7 +225,3 @@ To support rollback workflows, IPAM retains copies of the previous 10 prefix lis
 <a name="step-4-optional-enable-disable-sync"></a>
 
 If a managed prefix list has been configured as an IPAM prefix list target and you want to make changes to the prefix list without needing permission to access the IPAM prefix list resolver target, you can [modify the managed prefix list](https://docs.aws.amazon.com/vpc/latest/userguide/work-with-cust-managed-prefix-lists.html#modify-managed-prefix-list) and disable synchronization with the IPAM prefix list resolver. When disabled, the prefix list CIDRs are not automatically updated and you can make changes to them. When enabled, the prefix list CIDRs are automatically updated based on the associated resolver's CIDR selection rules.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

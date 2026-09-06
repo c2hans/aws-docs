@@ -163,7 +163,3 @@ You can set a Capacity Reservation preference and target on your Auto Scaling gr
 + **Mixed instances policies** – Launch-template-based targeting of Capacity Blocks or interruptible Capacity Reservations is not supported with mixed instances policies. To use these reservation types with a mixed instances policy, see [Use Distribution Segments to target multiple Capacity Reservation types](use-distribution-segments.md).
 + **Warm pools** – Warm pools are not supported when your launch template targets a Capacity Block or an interruptible Capacity Reservation.
 + **One Capacity Reservation type per launch template** – A launch template can target only one Capacity Reservation type. To target multiple Capacity Reservation types in one Auto Scaling group, use distribution segments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

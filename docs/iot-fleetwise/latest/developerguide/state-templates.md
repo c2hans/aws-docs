@@ -104,7 +104,3 @@ You can use the AWS IoT FleetWise console to add associated state templates to a
 Associate the created state template with a vehicle to allow the collection of state updates from the vehicle to the cloud. To do this, use:
 + When creating a vehicle, use the `stateTemplates` field of the `create-vehicle` command. For more information, see [Create an AWS IoT FleetWise vehicle](create-vehicle.md#create-vehicle-cli).
 + When updating a vehicle, use the `stateTemplatesToAdd` or `stateTemplatesToRemove` fields of the `update-vehicle` command. For more information, see [Update an AWS IoT FleetWise vehicle](update-vehicle-cli.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

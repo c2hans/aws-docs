@@ -65,7 +65,3 @@ These are example scenarios that typically leverage back-end integration pattern
 + **Predictive Learner Support**: machine learning (ML) models process LMS data via ETL to identify at-risk students before performance issues become critical.
 + **Automated Assignment Grading**: Integration processes submissions through Amazon Bedrock for objective assessment without UI changes.
 + **Knowledge Base Population:** Upload new course content to an Amazon Bedrock Knowledge Base to power Retrieval Augmented Generation (RAG) workloads such as chat applications and question generation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

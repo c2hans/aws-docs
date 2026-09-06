@@ -137,7 +137,3 @@ For developers getting started with serverless and experts alike, the responsibi
 We'll explain more along the way, but you should at least know that AWS commitment to security is not taken lightly. AWS services have carefully established security mechanisms for you to create secure solutions from the start. However, you have the responsibility to learn how and properly implement these mechanisms in your solutions.
 
 For more details, see the [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/), [AWS Cloud Security](https://aws.amazon.com/security/), and [Security Documentation Index](https://docs.aws.amazon.com/security/?icmpid=docs_homepage_addtlrcs) with links to security documents for every service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

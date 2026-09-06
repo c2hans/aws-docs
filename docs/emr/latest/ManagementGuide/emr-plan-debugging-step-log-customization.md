@@ -55,7 +55,3 @@ response = emr_client.add_job_flow_steps(
 + If your cluster does not enable cluster logging, step logs will not be uploaded to S3 even if you provide a `StepMonitoringConfiguration`.
 + If your step runs a Spark application, the application's container logs will also be uploaded to the location specified in the `StepMonitoringConfiguration`.
 + You are allowed to specify a `LogUri` without specifying an `EncryptionKeyArn` or vice versa. EMR will default to the cluster-wide setting for any field which is omitted in the `StepMonitoringConfiguration`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

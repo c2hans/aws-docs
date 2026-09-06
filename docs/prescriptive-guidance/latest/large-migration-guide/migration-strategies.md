@@ -128,7 +128,3 @@ The following are common use cases for the refactor migration strategy:
 For a list of migration patterns for the refactor migration strategy, see [Re-architect](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migration-rearchitect-pattern-list.html) on the AWS Prescriptive Guidance website.
 
 Refactoring is the most complex and costly of the migration strategies because you modernize the application during the migration, which involves redesigning the core components so that it runs in the target cloud environment. For a large migration, refactor only when the other migration strategies are not an acceptable option. In large migrations, whenever possible, we recommend that you modernize applications after the migration is complete.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

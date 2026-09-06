@@ -19,7 +19,3 @@ Read this information if your organization doesn't deploy MediaLive Anywhere.
 
 Read this information if your channel is a MediaLive Anywhere channel, which means that it is running on an on-premises hardware, not in the AWS Cloud.
 + Obtain the IP address of the Gateway into the network. You might need to speak to the network administrator in your organization. Give this address to the downstream operator.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

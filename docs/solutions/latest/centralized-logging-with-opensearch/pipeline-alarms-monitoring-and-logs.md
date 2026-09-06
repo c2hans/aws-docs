@@ -107,7 +107,3 @@ The Log Processor Lambda is responsible for performing final processing on the d
 + Duration - The amount of time that your function code spends processing an event. The billed duration for an invocation is the value of Duration rounded up to the nearest millisecond.
 + Throttles - The number of invocation requests that are throttled. When all function instances are processing requests and no concurrency is available to scale up, Lambda rejects additional requests with a TooManyRequestsException error. Throttled requests and other invocation errors don’t count as either Invocations or Errors.
 + Invocations - The number of times that your function code is invoked, including successful invocations and invocations that result in a function error. Invocations aren’t recorded if the invocation request is throttled or otherwise results in an invocation error. The value of Invocations equals the number of requests billed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Logging with OpenSearch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

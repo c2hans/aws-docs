@@ -110,7 +110,3 @@ For more information on workflows and blueprints, see the following topics.
 + [Overview of workflows in AWS Glue](workflows_overview.md)
 + [Running and monitoring a workflow in AWS Glue](running_monitoring_workflow.md)
 + [Creating a workflow from a blueprint in AWS Glue](creating_workflow_blueprint.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

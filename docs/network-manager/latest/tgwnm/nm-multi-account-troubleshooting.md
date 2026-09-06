@@ -40,7 +40,3 @@ This might break other functionality if a custom role has other attached policie
 1. In the **IAM role deployment status section**, choose **Retry role deployment**.
 
    Depending on the size of your organization, it might take several minutes or longer to disable trusted access. During this time you won't be able to re-enable trusted access.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

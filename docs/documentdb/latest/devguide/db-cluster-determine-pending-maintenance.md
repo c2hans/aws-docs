@@ -84,7 +84,3 @@ The following maintenance action types apply to Amazon DocumentDB clusters:
 +  `os-upgrade` — Update the operating systems of all the DB instances in the Amazon DocumentDB cluster, using rolling upgrades.
 
    For more information, see [Amazon DocumentDB operating system updates](db-instance-maintain.md#os-system-updates).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

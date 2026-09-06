@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/s3-integration.ht
 With Amazon S3 integration in Amazon Quick, you can create knowledge bases from documents stored in S3 buckets. This integration supports data ingestion capabilities for indexing and searching S3 content.
 
 **Note**
-This guide covers Amazon S3 data ingestion integration for knowledge base creation. For Amazon S3 action connectors that perform Amazon S3 operations such as uploading, downloading, and deleting files, see [AWS service action connectors](builtin-services-integration.md). Amazon S3 actions are only supported for Quick Automate.
+This guide covers Amazon S3 data ingestion integration for knowledge base creation. For Amazon S3 connectors that perform Amazon S3 operations such as uploading, downloading, and deleting files, see [AWS service connectors](builtin-services-integration.md). Amazon S3 actions are only supported for Quick Automate.
 
 ## What you can do
 <a name="s3-integration-capabilities"></a>
@@ -29,7 +29,3 @@ Before you set up Amazon S3 integration, make sure you have the following:
 
 **Note**
 Cross-account Amazon S3 access is only supported within the same AWS region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

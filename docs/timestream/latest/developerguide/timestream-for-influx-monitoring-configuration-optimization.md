@@ -974,7 +974,3 @@ Configuration Changes:
 + If CPUUtilization > 70% sustained: Scale to larger instance
 + If MemoryUtilization > 70% sustained: Scale to memory-optimized instance
 + If query rate exceeds instance capacity: Scale to next tier per sizing table
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

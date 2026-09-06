@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/within-account.html
 # Sharing read access to data within an AWS account
 <a name="within-account"></a>
 
-With Amazon Redshift, you can share read access to data across different database users or groups within the same AWS account. This feature allows you to control data access privileges at a granular level, ensuring that only authorized users or groups can read specific data sets.
+With Amazon Redshift, you can share read access to data across different database users or groups within the same AWS account. With this feature, you can control data access privileges at a granular level, ensuring that only authorized users or groups can read specific data sets.
 
 ## Share data for read purposes as a producer administrator or database owner
 <a name="share-producer"></a>
@@ -197,7 +197,7 @@ With Amazon Redshift, you can share read access to data across different databas
    CREATE DATABASE sales_db FROM DATASHARE salesshare OF NAMESPACE '13b8833d-17c6-4f16-8fe4-1a018f5ed00d';
    ```
 
-   If you want more granular control over access to the objects in the local database, use the WITH PERMISSIONS clause when creating the database. This lets you grant object-level permissions for objects in the database in step 4.
+   If you want more granular control over access to the objects in the local database, use the WITH PERMISSIONS clause when creating the database. With this clause, you can grant object-level permissions for objects in the database in step 4.
 
    ```
    CREATE DATABASE sales_db WITH PERMISSIONS FROM DATASHARE salesshare OF NAMESPACE '13b8833d-17c6-4f16-8fe4-1a018f5ed00d';
@@ -270,7 +270,3 @@ With Amazon Redshift, you can share read access to data across different databas
 
    SELECT * FROM sales_data;
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

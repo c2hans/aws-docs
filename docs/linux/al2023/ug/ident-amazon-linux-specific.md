@@ -2,25 +2,27 @@
 source_url: https://docs.aws.amazon.com/linux/al2023/ug/ident-amazon-linux-specific.html
 ---
 
-# Amazon Linux Specific
+# Amazon Linux-specific identification
 <a name="ident-amazon-linux-specific"></a>
 
- There are some files that are specific to Amazon Linux that can be used for identifying Amazon Linux and what version it is. New code should use the [`/etc/os-release`](ident-os-release.md) standard in order to be cross-distribution compatible. Use of any Amazon Linux specific files is discouraged.
+ Some files are specific to Amazon Linux and can identify Amazon Linux and its version. For new code, use the [`/etc/os-release`](ident-os-release.md) standard for cross-distribution compatibility, and avoid the Amazon Linux-specific files.
 
 **Topics**
 + [The `/etc/system-release` file](#ident-system-release)
 + [Image identification file](#ident-image-id-file)
-+ [Examples of Amazon Linux Specific files](#ident-version-examples)
++ [Examples of Amazon Linux-specific files](#ident-version-examples)
 
 ## The `/etc/system-release` file
 <a name="ident-system-release"></a>
 
- Amazon Linux contains an `/etc/system-release` file that specifies the current release that is installed. This file is updated using package managers and on Amazon Linux is part of the `system-release` package. While some other distributions like Fedora also have this file, it is not present in Debian-based distributions like Ubuntu.
+ Amazon Linux contains an `/etc/system-release` file that specifies the current release that is installed. This file is updated through package managers, and on Amazon Linux it is part of the `system-release` package. Although some other distributions like Fedora also have this file, it is not present in Debian-based distributions like Ubuntu.
 
 **Note**
  The `/etc/system-release` file contains a human-readable string and should not be used programmatically to identify an OS or release. Use the machine-readable fields in `/etc/os-release` (or `/usr/lib/os-release` if `/etc/os-release` does not exist) instead.
 
  Amazon Linux also contains a machine-readable version of `/etc/system-release` that follows the Common Platform Enumeration (CPE) specification in the `/etc/system-release-cpe` file.
+
+ On AL2027, the `/etc/system-release` and `/etc/system-release-cpe` files are symbolic links to files under `/usr/lib`. The `/etc/amazon-linux-release` and `/etc/amazon-linux-release-cpe` links point to the same files. The presence of either link indicates an Amazon Linux system.
 
 ## Image identification file
 <a name="ident-image-id-file"></a>
@@ -31,13 +33,45 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/ident-amazon-linux-speci
 + `image_date` – The UTC time of image creation, in *YYYYMMDDhhmmss* format.
 + `recipe_name`, `recipe_id` – The name and ID of the build recipe used to construct the image.
 
-## Examples of Amazon Linux Specific files
+## Examples of Amazon Linux-specific files
 <a name="ident-version-examples"></a>
 
- The following sections provide examples of the Amazon Linux specific identification files for each major version of Amazon Linux.
+ The following sections provide examples of the Amazon Linux-specific identification files for each major version of Amazon Linux.
 
 **Note**
 In any real-world code, `/usr/lib/os-release` should be used if the `/etc/os-release` file does not exist.
+
+### AL2027
+<a name="ident-image-id-amazon-linux-2027"></a>
+
+The following examples show the identification files for an AL2027 container image.
+
+Example of `/etc/image-id` for AL2027:
+
+```
+[ec2-user ~]$ cat /etc/image-id
+```
+
+```
+image_name="al2027-preview-container"
+image_version="2027"
+image_arch="aarch64"
+image_file="al2027-preview-container-2027.0.20260903.0-arm64"
+image_stamp="c6c3-7b9f"
+image_date="20260901070223"
+recipe_name="al2027-preview container"
+recipe_id="ce25d616-1f24-28ca-9b6b-b436-69ee-3b04-9101499b"
+```
+
+Example of `/etc/system-release` for AL2027:
+
+```
+[ec2-user ~]$ cat /etc/system-release
+```
+
+```
+Amazon Linux release 2027.0.20260903 (Amazon Linux)
+```
 
 ### AL2023
 <a name="ident-image-id-amazon-linux-2023"></a>
@@ -53,12 +87,12 @@ Example of `/etc/image-id` for AL2023:
 ```
 image_name="al2023-container"
 image_version="2023"
-image_arch="x86_64"
-image_file="al2023-container-2023.8.20250721.2-x86_64"
-image_stamp="822b-1a9e"
-image_date="20250719211531"
+image_arch="aarch64"
+image_file="al2023-container-2023.12.20260831.0-arm64"
+image_stamp="3edb-dbbb"
+image_date="20260826031129"
 recipe_name="al2023 container"
-recipe_id="89b25f7b-be82-2215-a8eb-6e63-0830-94ea-658d41c4"
+recipe_id="697759ad-93a1-fbd8-433c-218f-db48-0369-d107f5a1"
 ```
 
 Example of `/etc/system-release` for AL2023:
@@ -68,7 +102,7 @@ Example of `/etc/system-release` for AL2023:
 ```
 
 ```
-Amazon Linux release 2023.8.20250721 (Amazon Linux)
+Amazon Linux release 2023.12.20260831 (Amazon Linux)
 ```
 
 ### AL2
@@ -85,12 +119,12 @@ Example of `/etc/image-id` for AL2:
 ```
 image_name="amzn2-container-raw"
 image_version="2"
-image_arch="x86_64"
-image_file="amzn2-container-raw-2.0.20250721.2-x86_64"
-image_stamp="4126-16ad"
-image_date="20250721225801"
+image_arch="aarch64"
+image_file="amzn2-container-raw-2.0.20260826.0-arm64"
+image_stamp="60a9-e332"
+image_date="20260826163727"
 recipe_name="amzn2 container"
-recipe_id="948422df-a4e6-5fc8-ba89-ef2e-0e1f-e1bb-16f84087"
+recipe_id="33b97c11-a4f7-3b8c-b51e-583d-f0e1-34af-12f98d79"
 ```
 
 Example of `/etc/system-release` for AL2:
@@ -134,7 +168,3 @@ Example of `/etc/system-release` for Amazon Linux AMI:
 ```
 Amazon Linux AMI release 2018.03
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

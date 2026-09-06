@@ -11,7 +11,3 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/mgmt-dochisto
 | --- | --- | --- |
 | Managed policy update |  [Amazon EMR updates to AWS managed policies](https://docs.aws.amazon.com/emr/latest/ManagementGuide/security-iam-awsmanpol-updates.html) – Amazon EMR updates to AWS managed policies – Additional permissions for AmazonEMRServicePolicy\_v2.  | March 4, 2025 |
 | Initial Release |  Initial release of the Amazon EMR Management Guide for versions 4.x and later of Amazon EMR. <br />For more information about previous versions of Amazon EMR, see [Amazon EMR Developer Guide](https://docs.aws.amazon.com/emr/latest/DeveloperGuide/). | July 24, 2015 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

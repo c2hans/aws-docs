@@ -17,7 +17,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 + [PERF01-BP05 Use guidance from your cloud provider or an appropriate partner](perf_performing_architecture_external_guidance.md)
 + [PERF01-BP06 Benchmark existing workloads](perf_performing_architecture_benchmark.md)
 + [PERF01-BP07 Load test your workload](perf_performing_architecture_load_test.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

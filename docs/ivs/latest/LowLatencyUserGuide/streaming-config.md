@@ -335,7 +335,3 @@ The Amazon IVS broadcast SDK is for developers who are building Android, iOS, or
 **Always verify that your stream works.**
 
 Navigate to the video stream in the [Amazon IVS console](https://console.aws.amazon.com/ivs), to watch what is being streamed and manage the live stream.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

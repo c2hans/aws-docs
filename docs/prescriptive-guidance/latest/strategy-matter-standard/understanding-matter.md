@@ -25,7 +25,3 @@ Matter is an IP-based, application-level protocol for smart-home devices across 
 + A *Matter bridge* connects non-IP protocol devices to a Matter fabric.
 
 For information about the different roles that hardware and software can assume in Matter, see [Peeking Under the Hood of Your Matter Smart Home](https://csa-iot.org/newsroom/peeking-under-the-hood-of-your-matter-smart-home/) (CSA blog post). Matter version 1.4 introduced Enhanced multi-admin with improved credential sharing using Home Router Access Protocol (HRAP). Matter version 1.5 introduced camera streaming. Matter versions are released approximately twice a year.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

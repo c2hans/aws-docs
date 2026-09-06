@@ -126,7 +126,3 @@ A workflow definition template that can be used to execute multiple workflow run
 workflow run
 
 An execution instance of a workflow definition with specified parameters. A workflow can be run multiple times with different inputs, producing different results for each run. For more information, see [CreateWorkflowRun](https://docs.aws.amazon.com/nova-act/latest/APIReference/API_CreateWorkflowRun.html) in the *Amazon Nova Act API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

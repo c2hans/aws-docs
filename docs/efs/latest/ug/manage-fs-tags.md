@@ -61,7 +61,3 @@ You can tag Amazon EFS file system and access point resources that already exist
 
   The AWS CLI commands for managing tags, and the equivalent Amazon EFS API actions, are listed in the following table.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/manage-fs-tags.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

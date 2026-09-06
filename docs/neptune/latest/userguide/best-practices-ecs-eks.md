@@ -13,7 +13,3 @@ The following sections describe practical considerations for running Neptune wor
 + [Manage connection pools and lifecycle in containerized environments](best-practices-ecs-eks-connections.md)
 + [Handle host replacement and connection stalling](best-practices-ecs-eks-host-replacement.md)
 + [Configure networking, security groups, and IAM authentication](best-practices-ecs-eks-networking-iam.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

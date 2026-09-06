@@ -71,7 +71,3 @@ If your users require access to services that aren't supported by AWS PrivateLin
 AWS Sign-In resource-based policies (RBPs) apply to individual AWS accounts. Resource control policies (RCPs) apply organization-wide through AWS Organizations. Both deny console sign-in when the request does not originate from your specified IP ranges or VPCs.
 
 To configure AWS Sign-In RBPs and RCPs, see [Controlling console access with resource-based policies and resource control policies](https://docs.aws.amazon.com/signin/latest/userguide/console-access-control.html) in the *AWS Sign-In User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Management Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

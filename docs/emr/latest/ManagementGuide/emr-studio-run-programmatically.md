@@ -9,7 +9,3 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-ru
 Programmatic execution of notebooks isn't supported with Amazon EMR Serverless interactive applications.
 
 You can run your Amazon EMR Studio Workspace notebooks programmatically with a script or on the AWS CLI. To learn how to run your notebook programmatically, see [Sample programmatic commands for EMR Notebooks](emr-managed-notebooks-headless.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

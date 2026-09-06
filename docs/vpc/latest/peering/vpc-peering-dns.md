@@ -41,7 +41,3 @@ The public IPv4 DNS hostname resolves to the private IPv4 address of the instanc
 **To describe VPC peering connection options using the command line**
 + [describe-vpc-peering-connections](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-vpc-peering-connections.html) (AWS CLI)
 + [Get-EC2VpcPeeringConnection](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2VpcPeeringConnection.html) (AWS Tools for Windows PowerShell)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

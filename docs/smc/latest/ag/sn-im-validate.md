@@ -64,7 +64,3 @@ This section describes how to validate AWS Systems Manager Incident Manager inte
 1. To open the record, choose the **Number** field of an Incident.
 
 1. Scroll to the bottom of the Incident form and use the AWS OpsItems related list to see associated OpsItems.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

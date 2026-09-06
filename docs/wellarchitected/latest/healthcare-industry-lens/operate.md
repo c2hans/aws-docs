@@ -66,7 +66,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 1.  **Rerun evaluation:** Verify remediation was implemented and the environment is back in compliance.
 
  For example, you can create an AWS Config rule that marks an Amazon S3 bucket as non-compliant if the server-side encryption is not enabled. That rule can invoke a corresponding remediation Lambda function that configures server-side encryption on the bucket, bringing the bucket to a compliant state. For more information, refer to [Remediating Noncompliant AWS Resources by AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/remediation.html). AWS also provides sample AWS Config rules with remediation actions for [Amazon DynamoDB](https://docs.aws.amazon.com/config/latest/developerguide/templateswithremediation.html) and [Amazon S3](https://docs.aws.amazon.com/config/latest/developerguide/templateswithremediation.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

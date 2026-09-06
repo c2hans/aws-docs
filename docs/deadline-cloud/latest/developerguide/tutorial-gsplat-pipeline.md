@@ -5,15 +5,15 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/tut
 # Train 3D Gaussian Splatting from your own video
 <a name="tutorial-gsplat-pipeline"></a>
 
-This tutorial walks you through training your own 3D Gaussian Splatting point cloud from a video that you capture. You submit the [Gaussian Splatting pipeline job bundle on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/gsplat_pipeline) to your Deadline Cloud farm. The job takes a video file as input and produces a Gaussian Splatting `.ply` file as output. When the job completes, you can view the result in any Gaussian Splatting viewer, such as [SuperSplat](https://github.com/playcanvas/supersplat).
+This tutorial walks you through training your own 3D Gaussian Splatting point cloud from a video that you capture. You submit the [Gaussian Splatting pipeline job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/gsplat_pipeline) on the GitHub website to your Deadline Cloud farm. The job takes a video file as input and produces a Gaussian Splatting `.ply` file as output. When the job completes, you can view the result in any Gaussian Splatting viewer, such as [SuperSplat](https://github.com/playcanvas/supersplat) on the GitHub website.
 
 The pipeline runs a single task that:
 
-1. Extracts video frames with the [FFmpeg video processing tool](https://www.ffmpeg.org/).
+1. Extracts video frames with [FFmpeg](https://www.ffmpeg.org/) on the FFmpeg website.
 
-1. Solves Structure-from-Motion with [COLMAP](https://colmap.github.io/) and [GLOMAP](https://github.com/colmap/glomap), saving the pinhole model and undistorted images.
+1. Solves Structure-from-Motion with [COLMAP](https://colmap.github.io/) on the COLMAP website and [GLOMAP](https://github.com/colmap/glomap) on the GitHub website, saving the pinhole model and undistorted images.
 
-1. Trains Gaussian Splatting with [NeRF Studio splatfacto](https://docs.nerf.studio/nerfology/methods/splat.html), [Splatfacto in the Wild](https://docs.nerf.studio/nerfology/methods/splatw.html), or the [simple\_trainer.py gsplat library example](https://docs.gsplat.studio/main/examples/colmap.html), and saves the output to the `.ply` file you specify.
+1. Trains Gaussian Splatting with [NeRF Studio splatfacto](https://docs.nerf.studio/nerfology/methods/splat.html) on the Nerfstudio website, [Splatfacto in the Wild](https://docs.nerf.studio/nerfology/methods/splatw.html) on the Nerfstudio website, or the [simple\_trainer.py gsplat library example](https://docs.gsplat.studio/main/examples/colmap.html) on the gsplat website, and saves the output to the `.ply` file you specify.
 
 The following video demonstrates the Gaussian Splatting pipeline workflow on Deadline Cloud.
 
@@ -54,9 +54,9 @@ Before you begin, complete the following setup:
 
 You need a Deadline Cloud farm with a CUDA GPU fleet to run the Gaussian Splatting job. To set one up, complete the following steps:
 
-1. Follow the [CUDA farm sample CloudFormation template](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cuda_farm) instructions to create a Deadline Cloud farm that has a CUDA GPU fleet and can build conda packages.
+1. Follow the [CUDA farm sample CloudFormation template](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cuda_farm) instructions on the GitHub website to create a Deadline Cloud farm that has a CUDA GPU fleet and can build conda packages.
 
-1. Follow the [NeRF Studio sample conda package recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/nerfstudio) instructions to build a [NeRF Studio](https://docs.nerf.studio/) conda package into the Amazon S3 channel of your CUDA farm.
+1. Follow the [NeRF Studio sample conda package recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/nerfstudio) instructions on the GitHub website to build a NeRF Studio conda package into the Amazon S3 channel of your CUDA farm. For more information, see [NeRF Studio](https://docs.nerf.studio/) on the Nerfstudio website.
 
 **Note**
 If you only need the default `NERFSTUDIO` (splatfacto) trainer, you don't need to deploy the CUDA farm CloudFormation template or build the custom NeRF Studio conda package. The minimum requirements are a Deadline Cloud farm with a GPU fleet, a queue environment with `conda-forge` included in the conda channels, and the conda packages `ffmpeg colmap glomap nerfstudio cuda`. The `GSPLAT_SIMPLE_TRAINER` and `NERFSTUDIO_SPLATFACTOW` trainer options depend on commands that are only available in the custom-built NeRF Studio conda package.
@@ -78,7 +78,7 @@ Copy the video you captured from your camera to your computer for submitting to 
 
 **To submit the Gaussian Splatting job**
 
-1. If you don't have a local copy of the [deadline-cloud-samples GitHub repository](https://github.com/aws-deadline/deadline-cloud-samples), clone it or [download it as a ZIP](https://github.com/aws-deadline/deadline-cloud-samples/archive/refs/heads/mainline.zip):
+1. If you don't have a local copy of the [deadline-cloud-samples repository](https://github.com/aws-deadline/deadline-cloud-samples) on the GitHub website, clone it or [download it as a ZIP](https://github.com/aws-deadline/deadline-cloud-samples/archive/refs/heads/mainline.zip):
 
    ```
    git clone https://github.com/aws-deadline/deadline-cloud-samples.git
@@ -120,11 +120,11 @@ If you encounter errors, the log output in this view helps you track down the ca
 
 1. When the job completes successfully, open the context menu for the completed task in the **Tasks** table of Deadline Cloud monitor and choose **Download output**. Depending on your settings, it either shows the download progress or presents a CLI command you can use to download. Deadline Cloud saves the `.ply` file to the location you selected when submitting the job.
 
-1. To view the result in your browser, open the [SuperSplat Editor](https://superspl.at/editor) website and drag the file from your operating system's file browser onto the SuperSplat page.
+1. To view the result in your browser, open the [SuperSplat Editor](https://superspl.at/editor) on the SuperSplat website and drag the file from your operating system's file browser onto the SuperSplat page.
 
 1. Toggle the **Show/Hide Splats** option, then rotate and move around the scene to find the subject of your capture.
 
-With SuperSplat, you can also edit your Gaussian Splatting. For example, you can select a sphere, invert the selection, and delete the splats outside it to crop the scene. The [SuperSplat documentation](https://github.com/playcanvas/supersplat/wiki) explains how to use the editor, or you can import your `.ply` file into your tool of choice.
+With SuperSplat, you can also edit your Gaussian Splatting. For example, you can select a sphere, invert the selection, and delete the splats outside it to crop the scene. The [SuperSplat documentation](https://github.com/playcanvas/supersplat/wiki) on the GitHub website explains how to use the editor, or you can import your `.ply` file into your tool of choice.
 
 ## Understand the cost of your training jobs
 <a name="tutorial-gsplat-cost"></a>
@@ -145,21 +145,17 @@ To avoid ongoing charges, clean up the resources that you created for this tutor
 ## Next steps
 <a name="tutorial-gsplat-next-steps"></a>
 
-You can pull apart, edit, and remix the `gsplat_pipeline` job bundle to suit your needs. You can customize your own 3D reconstruction pipeline, or follow the same patterns to run different CUDA workloads on your Deadline Cloud CUDA farm. The [sample README](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/gsplat_pipeline#this-sample-is-a-starting-point) works through the following directions in detail:
-+ Run the job anywhere with the [Open Job Description CLI](https://github.com/OpenJobDescription/openjd-cli), such as locally or on an Amazon EC2 instance, instead of on your farm.
-+ Decompose the pipeline's single task into multiple Open Job Description steps connected by dependencies, following the pattern in the [Job Development Progression sample on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_dev_progression). Separate steps can run on different fleets, such as a CPU-only fleet for frame extraction and a GPU fleet for training.
+You can pull apart, edit, and remix the `gsplat_pipeline` job bundle to suit your needs. You can customize your own 3D reconstruction pipeline, or follow the same patterns to run different CUDA workloads on your Deadline Cloud CUDA farm. The following directions are documented in the [sample README](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/gsplat_pipeline#this-sample-is-a-starting-point) on the GitHub website:
++ Run the job anywhere with the [Open Job Description CLI](https://github.com/OpenJobDescription/openjd-cli) on the GitHub website, such as locally or on an Amazon EC2 instance, instead of on your farm.
++ Decompose the pipeline's single task into multiple Open Job Description steps connected by dependencies, following the pattern in the [Job Development Progression sample](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_dev_progression) on the GitHub website. Separate steps can run on different fleets, such as a CPU-only fleet for frame extraction and a GPU fleet for training.
 + Split the pipeline into multiple jobs with different structure. For example, one job to solve Structure-from-Motion once, and a second job to iteratively try different variations of Gaussian Splatting training parameters.
 
 ## Related resources
 <a name="tutorial-gsplat-related"></a>
 
 The following resources provide additional information:
-+ [Sample source code on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/gsplat_pipeline)
-+ [CUDA farm CloudFormation template](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cuda_farm)
-+ [NeRF Studio conda package recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/nerfstudio)
++ [Sample source code](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/gsplat_pipeline) on the GitHub website
++ [CUDA farm CloudFormation template](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cuda_farm) on the GitHub website
++ [NeRF Studio conda package recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/nerfstudio) on the GitHub website
 + [3D Gaussian Splatting blog post](https://aws.amazon.com/blogs/spatial/3d-gaussian-splatting-performant-3d-scene-reconstruction-at-scale/)
 + [Open Job Description (OpenJD) templates for Deadline Cloud](build-job-bundle.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

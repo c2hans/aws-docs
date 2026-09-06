@@ -19,7 +19,3 @@ The following table describes important changes to the documentation since the l
 | Table of contents reorganization | Topic categories are now more intuitive. | August 18, 2017 |
 | New SQL functions | Addition of [STEP](sql-reference-step.md), [LAG](sql-reference-lag.md), [TO\_TIMESTAMP](sql-reference-to-timestamp.md), [UNIX\_TIMESTAMP](sql-reference-unix-timestamp.md), [REGEX\_REPLACE](sql-reference-regex-replace.md), and addition of regex support to [SUBSTRING](sql-reference-substring.md) | August 3, 2017 |
 | New guide | This is the first release of the Amazon Kinesis Data Analytics SQL Reference guide. | August 11, 2016 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

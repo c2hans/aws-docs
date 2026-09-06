@@ -30,7 +30,3 @@ The part of a processor that acts as the layer between the source and the sink. 
 The part of a processor that allows pipeline authors to only send events that match certain conditions to different sinks.
 
 A valid sub-pipeline definition must contain a source and a sink. For more information about each of these pipeline elements, see the [configuration reference](pipeline-config-reference.md#ingestion-parameters).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

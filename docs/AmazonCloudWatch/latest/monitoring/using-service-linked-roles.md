@@ -574,7 +574,3 @@ View details about updates to AWS managed policies for CloudWatch since this ser
 | [ AWSServiceRoleForCloudWatchMetrics\_DbPerfInsights](#service-linked-role-permissions-dbperfinsights) – New service-linked role | CloudWatch added this new service-linked role to allow CloudWatch to fetch Performance Insights metrics for alarming and snapshotting. An IAM policy is attached to this role, and the policy grants permission to CloudWatch to fetch Performance Insights metrics on your behalf. | September 13, 2023 |
 | [ AWSServiceRoleForCloudWatchAlarms\_ActionSSMIncidents](#service-linked-role-permissions-incident-manager) – New service-linked role | CloudWatch added a new service-linked role to allow CloudWatch to create incidents in AWS Systems Manager Incident Manager. | April 26, 2021 |
 | CloudWatch started tracking changes | CloudWatch started tracking changes for its service-linked roles. | April 26, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

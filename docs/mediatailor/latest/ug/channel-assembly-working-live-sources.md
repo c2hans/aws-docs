@@ -46,7 +46,3 @@ If you use other AWS Elemental media services as part of your live sources workf
 | DASH | `SegmentTemplateFormat` | `NUMBER_WITH_TIMELINE` or `TIME_WITH_TIMELINE` | Recommended | `NUMBER_WITH_DURATION` is not supported. |
 | DASH | `ManifestWindowSeconds` | 30 seconds longer than the channel assembly manifest window | Required |  |
 | DASH | `PeriodTriggers` | `ADS` | Required when passing through ad markers |  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

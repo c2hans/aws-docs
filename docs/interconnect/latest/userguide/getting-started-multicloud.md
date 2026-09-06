@@ -61,7 +61,3 @@ To create a free multicloud Interconnect, go to the top-level [AWS Direct Connec
 Once you are in the creation flow, follow the same steps described above for creating a multicloud Interconnect. Note that the Free Tier creation flow will have preselected 500 Mbps as the Interconnect speed.
 
 The 500 Mbps speed could be subject to quotas on the other CSP. Before creating a new Free Tier Interconnect, confirm with the other CSP whether that speed is subject to a quota and, if that is the case, that you have remaining quota for the 500 Mbps speed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Interconnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query interconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

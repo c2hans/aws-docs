@@ -51,7 +51,3 @@ The following sample document is generated by TypeDoc.
 ![Sample TypeDoc document](http://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/images/guide-img/b7d5d887-7172-4d47-9f1f-1cf7ae181482/images/3525b7c2-7570-4535-90cc-090d8040d9f6.png)
 
 For more information about TypeDoc integration options, see [Doc Comments](https://typedoc.org/guides/doccomments/) in the TypeDoc documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

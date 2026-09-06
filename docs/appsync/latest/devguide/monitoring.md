@@ -146,6 +146,9 @@ The CPU utilization (percentage) allocated to the Redis OSS process. This is use
 
 All metrics are emitted in one dimension: **GraphQLAPIId**. This means that all metrics are coupled with GraphQL API IDs. The following metrics are related to GraphQL subscriptions over pure WebSockets:
 
+**Note**
+This dimension applies to AWS AppSync GraphQL APIs only. AWS AppSync also offers Event APIs, a separate API type whose metrics are emitted under a different dimension (**EventAPIId**). For more information, see [CloudWatch metrics](https://docs.aws.amazon.com/appsync/latest/eventapi/cw-metrics.html).
+
 #### Metrics list
 <a name="cw-metrics-real-time-subscriptions-list"></a>
 
@@ -667,7 +670,3 @@ When using OpenSearch Service, use **“cwl\*”** as the filter pattern to sear
 Log events that AWS AppSync generates are primarily formatted as fully structured JSON. However, certain diagnostic and intermediate processing messages may be emitted in an unstructured format. If you need to migrate unstructured logs to fully structured JSON, you may use a script available in the [GitHub Sample](https://github.com/aws-samples/aws-appsync-cwl-migrator).
 
 You can also use [metric filters](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogsConcepts.html) in CloudWatch to turn log data into numerical CloudWatch metrics, so that you can graph or set an alarm on them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

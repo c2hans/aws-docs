@@ -63,7 +63,3 @@ If you have questions about migrating to WorkSpaces Applications, contact [AWS S
 
 Will I continue to receive support before December 31, 2027?
 Yes, you will continue to receive support through [AWS Support](https://aws.amazon.com/support) before December 31, 2027.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

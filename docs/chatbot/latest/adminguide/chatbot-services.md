@@ -15,7 +15,3 @@ Amazon Q Developer in chat applications also supports notifications for the foll
 + AWS Cost Anomaly Detection
 
 Most AWS services that you can manage using the [AWS Command Line Interface (CLI)](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) are also supported. Subsequently, you can manage your AWS resources from these services using AWS CLI commands directly from your chat channels.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

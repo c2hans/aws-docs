@@ -681,8 +681,8 @@ When performing logically air-gapped vault copy operations, customers can utiliz
             "Effect": "Allow",
             "Action": "kms:DescribeKey",
             "Resource": [
-                "arn:aws:kms:*:[source-account-id]:key/*",  - Source logically air-gapped vault CMK -
-                "arn:aws:kms:*:[destination-account-id]:key/*".  - Destination logically air-gapped vault CMK -
+                "arn:aws:kms:*:[source-account-id]:key/*",  //[Source logically air-gapped vault CMK]
+                "arn:aws:kms:*:[destination-account-id]:key/*"  //[Destination logically air-gapped vault CMK]
             ]
         },
         {
@@ -690,15 +690,15 @@ When performing logically air-gapped vault copy operations, customers can utiliz
             "Effect": "Allow",
             "Action": "kms:CreateGrant",
             "Resource": [
-                "arn:aws:kms:*:[source-account-id]:key/*",  - Source logically air-gapped vault CMK -
-                "arn:aws:kms:*:[destination-account-id]:key/*".  - Destination logically air-gapped vault CMK -
-            ]
+                "arn:aws:kms:*:[source-account-id]:key/*",  //[Source logically air-gapped vault CMK]
+                "arn:aws:kms:*:[destination-account-id]:key/*"  //[Destination logically air-gapped vault CMK]
+            ],
             "Condition": {
                 "Bool": {
                     "kms:GrantIsForAWSResource": "true"
                 }
             }
-        },
+        }
     ]
 }
 ```
@@ -845,7 +845,3 @@ This can similarly happen for copy jobs for other resources like Amazon FSx.
 + The IAM role used to call `CreateRestoreAccessBackupVault` did not have the `mpa:StartSession` permission required for the Multi-party approval workflow.
 
 **Resolution: **Call `DeleteBackupVault` from the recovery account to remove the FAILED restore access backup vault. `RevokeRestoreAccessBackupVault` applies only to vaults in AVAILABLE state. Vault Lock does not prevent this deletion, because a restore access backup vault is a view of the underlying logically air-gapped vault and contains no recovery points of its own. After deletion, correct the KMS key policy and add the `mpa:StartSession` permission before recreating the vault.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

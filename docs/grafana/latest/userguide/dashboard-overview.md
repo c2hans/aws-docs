@@ -41,7 +41,3 @@ For Grafana workspaces that support Grafana version 9.x, see [Working in Grafana
  To collapse a row, choose the row title. If you save a dashboard with a row collapsed, the dashboard is saved in that state, and those graphs do not load until you expand the row.
 
  Use the repeating rows functionality to dynamically create or remove entire rows of panels, based on the template variables selected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

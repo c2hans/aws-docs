@@ -118,7 +118,3 @@ Before creating a machine learning product listing, ensure that you have the fol
 + [Requirements for usage information](ml-listing-requirements-and-best-practices.md#ml-requirements-for-usage-information) — Provide details about inputs, outputs, and code examples.
 +  [Requirements for inputs and outputs](ml-listing-requirements-and-best-practices.md#ml-requirements-for-inputs-and-outputs) — Provide either files or text.
 + [Requirements for Jupyter notebook](ml-listing-requirements-and-best-practices.md#ml-requirements-for-jupyter-notebook) — Demonstrate complete product usage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

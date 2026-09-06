@@ -260,7 +260,3 @@ You can use the following metrics to troubleshoot the frequency and severity of 
   + If this is greater than 0, packets were dropped in transit and were not recovered by error correction. A loss of packets can result in poor video quality. You can compare this with the value of **Total packets** to determine what percentage of incoming packets were lost.
 + **Error seconds**
   + If this is greater than 0, it indicates that the stream experienced one or more seconds in which packets were dropped and not recovered. This metric quantifies video quality issues as a total period of impacted time, rather than a packet count.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

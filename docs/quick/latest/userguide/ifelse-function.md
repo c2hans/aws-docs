@@ -199,7 +199,3 @@ There are other ways to do the initial comparison for the if expression. For exa
    /*The if expression:*/      NOT (locate('New York, New Jersey, Connecticut, Vermont, Maine, Rhode Island, New Hampshire',{State}) = 0),
    ```
 Both versions are correct. The version that you choose should make the most sense to you and your team, so you can maintain it easily. If all the options seem equal, choose the simplest.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

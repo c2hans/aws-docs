@@ -21,7 +21,3 @@ Additionally, it's worth considering any learnings that will help improve the pr
 <a name="warranty-period"></a>
 
 It's common for migration projects to have a warranty period in which the migration teams provide support in the event that an issue occurs within a predefined window (typically from one day to one week). It's important to agree on a suitable timeframe based on the application that you're migrating. For example, a one-week warranty might not be sufficient if your application runs on a quarterly batch schedule. Furthermore, we recommend that your migration team uses the warranty period to validate that business continuity and disaster recovery elements are configured and working as expected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

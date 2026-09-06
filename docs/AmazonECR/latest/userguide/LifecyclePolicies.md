@@ -55,7 +55,3 @@ There is a maximum limit of four wildcards (`*`) per string. For example, `["*te
 + With `countType = sinceImagePulled`, all images whose `last_recorded_pulltime` is older than the specified number of days based on `countNumber` are archived. If an image was never pulled, the image's `pushed_at_time` is used instead of the `last_recorded_pulltime`. If an image was archived and then restored at any point in the past, but never pulled since the image was restored, the image's `last_activated_at` is used instead of the `last_recorded_pulltime`.
 + With `countType = sinceImageTransitioned`, all archived images whose `last_archived_at` is older than the specified number of days based on `countNumber` are expired.
 + Expiration is always ordered by `pushed_at_time` and always expires older images before newer ones.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

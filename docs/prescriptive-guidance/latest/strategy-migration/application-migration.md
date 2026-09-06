@@ -29,7 +29,3 @@ Migrate business applications from on premises to the AWS Cloud:
 **AWS Partners and tools**
 
 When you have some foundational experience migrating a few applications and a plan in place that the organization supports, it's time to accelerate the migration and achieve scale. Migration Delivery Partners, such as 2nd Watch and Accenture, can help you though every stage of migration. Migration Marketplace Partners such as RiverMeadow Software, and Attunity can also help, and you can use tools and services such as [AWS Transform MGN](https://aws.amazon.com/application-migration-service/) and [AWS Database Migration Service (AWS DMS)](https://aws.amazon.com/dms/). For a full list of all AWS Migration Partners and solutions, see the [AWS Migration and Modernization Competency Partners](https://aws.amazon.com/migration/partner-solutions/) website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

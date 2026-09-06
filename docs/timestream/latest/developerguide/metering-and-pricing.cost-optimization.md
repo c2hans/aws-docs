@@ -17,7 +17,3 @@ To optimize the cost of writes, storage, and queries, use the following best pra
 + Where possible, include a time range in the WHERE clause of your query. For example, if you only need the last one hour of data in your dataset, include a time predicate such as `time > ago(1h)`.
 + When a query accesses a subset of measures in a table, always include the measure names in the WHERE clause of the query.
 + If you've started running a query and realize that the query will not return the results you're looking for, cancel the query to save on cost.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,3 @@ The following resources can help you learn more about OIDC federation:
 + Use OpenID Connect within your GitHub workflows by [Configuring OpenID Connect in Amazon Web Services](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services)
 + [Amazon Cognito Identity](https://docs.amplify.aws/lib/auth/advanced/q/platform/android/) in the *Amplify Libraries for Android Guide* and [Amazon Cognito Identity](https://docs.amplify.aws/lib/auth/advanced/q/platform/ios/) in the *Amplify Libraries for Swift Guide*.
 + [How to use external ID when granting access to your AWS resources](https://aws.amazon.com/blogs/security/how-to-use-external-id-when-granting-access-to-your-aws-resources/) on the *AWS Security Blog* provides guidance on securely configuring cross-account access and external identity federation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

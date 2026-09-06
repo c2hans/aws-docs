@@ -58,7 +58,3 @@ acr_ml_client.start_trained_model_export_job(
 The results are exported to the following path in the Amazon S3 location that was specified in the ML configuration: `yourSpecifiedS3Path/collaborationIdentifier/trainedModelName/callerAccountId/jobName`. Only the `filesToExport`, up to the `maxSize` specified, that you selected when associating the configured model algorithm are exported.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

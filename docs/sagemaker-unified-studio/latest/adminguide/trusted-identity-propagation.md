@@ -34,7 +34,3 @@ In the current release, trusted identity propagation within Amazon SageMaker uni
 We recommend creating a dedicated project profile for trusted identity propagation supported tools and setting enableTrustedIdentityPropagationPermissions to True. This approach clearly establishes trusted identity propagation as the data authorization method for all projects using this profile.
 
 Notebooks in Amazon SageMaker Unified Studio support trusted identity propagation for SQL analytics (Amazon Athena, Amazon Redshift) and interactive Spark sessions (Amazon EMR Serverless). When you run these tasks from a notebook in a project whose profile has `enableTrustedIdentityPropagationPermissions` set to **True**, the engine uses your IAM Identity Center identity for fine-grained data access control. AWS Glue and Amazon EMR on EC2 do not support trusted identity propagation from notebooks. These services use compatibility permission mode for data access instead.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

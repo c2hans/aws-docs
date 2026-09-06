@@ -22,7 +22,3 @@ You can also configure settings to permanently delete images after they've been 
 You can also archive images using the Amazon ECR console or AWS CLI. Refer to [Archiving an image](archive-image.md) for more information.
 
 When you need to use an archived image again, you can restore it back to the ECR Standard storage class. You can expect ECR to restore the image within 20 minutes. Restored images behave like newly pushed images and are immediately available for use when the restore is complete. Restored images are subject to scanning, replication, and repository lifecycle policies. Refer to [Restoring an image](restore-image.md) for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ AWS provides the following native tools for monitoring storage:
 + **Amazon CloudWatch –** CloudWatch provides centralized monitoring for all storage services including EBS, S3, and EFS. Metrics include IOPS, read and write latency, throughput, and storage utilization. Custom alarms trigger notifications or automated actions when performance thresholds are exceeded.
 + **Amazon EBS –** CloudWatch tracks EBS metrics that include read and write IOPS, throughput, latency, and burst credit balance (for gp2/gp3 volumes).
 + **Amazon S3 and Amazon EFS –** CloudWatch provides S3 metrics that include request counts, data transfer rates, error rates, and latency. EFS provides throughput metrics, burst credit balance, and client connection counts to optimize file system performance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

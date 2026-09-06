@@ -28,7 +28,3 @@ The following table lists the read-only configurations for Express brokers.
 | transaction.state.log.min.isr | Overridden min.insync.replicas configuration for the transaction topic. | 2 |
 | transaction.state.log.replication.factor | The replication factor for the transaction topic. | Apache Kafka Default |
 | unclean.leader.election.enable | Allows replicas not in the ISR set to serve as leader as a last resort, even though this might result in data loss. | FALSE |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

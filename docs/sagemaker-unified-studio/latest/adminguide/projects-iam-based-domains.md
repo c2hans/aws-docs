@@ -19,7 +19,3 @@ Projects within IAM-based domains require a project member and an Execution IAM 
 
 **Note**
 The Execution IAM role can be the same IAM role as the Member IAM role. Both roles require specific policy attachments and trust relationships to function correctly within the IAM-based domain architecture. The system validates these permissions during setup and provides guidance for any missing configurations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

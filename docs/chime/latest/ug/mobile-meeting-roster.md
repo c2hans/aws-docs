@@ -14,7 +14,3 @@ A crown icon, ![Icon of a small crown.](http://docs.aws.amazon.com/chime/latest/
 The microphone indicates whether an attendee is muted. ![Image of a microphone with a diagonal slash over it.](http://docs.aws.amazon.com/chime/latest/ug/images/mobile-mic-icon-muted.png)
 
 To see other pages, such as a shared screen or other attendee's video tiles, just swipe left or right.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,7 +41,3 @@ To add tags to all newly added source servers and replication sources:
 AWS Elastic Disaster Recovery automatically tags every newly-added source server and replication resources with the tag key “map-migrated” and the value of the tag that you provide.
 
 For more details about the tag value that should be used here, please refer to the MAP tagging guide provided in your MAP term.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

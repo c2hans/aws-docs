@@ -16,7 +16,3 @@ Only the owner has the permission to modify or destroy an object.
 By default, all users have CREATE and USAGE permissions on the PUBLIC schema of a database. To disallow users from creating objects in the PUBLIC schema of a database, use the REVOKE command to remove that permission.
 
 To revoke a permission that was previously granted, use the [REVOKE](r_REVOKE.md) command. The permissions of the object owner, such as DROP, GRANT, and REVOKE permissions, are implicit and cannot be granted or revoked. Object owners can revoke their own ordinary permissions, for example, to make a table read-only for themselves and others. Superusers retain all permissions regardless of GRANT and REVOKE commands.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

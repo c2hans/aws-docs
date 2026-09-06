@@ -12,7 +12,3 @@ Consider the following before you deploy:
 +  **Tags are not retroactive**: The solution attributes cost to a tag only from the time it applies the tag to the account.
 +  **Account tag limit**: AWS Organizations allows a maximum of 50 tags per account. The solution reserves 5 tags for its ISB tag keys, so a sandbox account must have 45 or fewer of your own custom tags when a lease is approved. If an account already has more tags than this limit, the solution logs a `TagResourceFailed` event with `reason: "TagSpaceExhausted"` and the lease proceeds using the legacy cost attribution path.
 +  **Backward compatibility**: Leases created before you deploy this feature continue to use the solution’s existing AWS Cost Explorer cost attribution until they are terminated. No migration is required.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

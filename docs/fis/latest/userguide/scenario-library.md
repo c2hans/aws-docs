@@ -66,7 +66,3 @@ Scenarios are a console-only experience. While similar to experiment templates, 
 1. Follow the steps in [Using a scenario](#using-a-scenario) to create a valid AWS FIS experiment template and export that template.
 
 1. Follow the steps in [Viewing a scenario](#viewing-a-scenario) and in step 3, from the **Content** tab, copy and save the scenario content, then add missing parameters manually to create a valid experiment template.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

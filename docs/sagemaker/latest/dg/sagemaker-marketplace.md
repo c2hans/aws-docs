@@ -30,7 +30,3 @@ Buyers use the inference component with the model artifacts generated during a t
 Buyers use a model package to build a deployable model in SageMaker AI. They can use the deployable model for real-time inference by using SageMaker AI hosting services. Or, they can get inferences for an entire dataset by running batch transform jobs. For more information, see [Model deployment options in Amazon SageMaker AI](how-it-works-deployment.md). As a seller, you can build your model artifacts by training in SageMaker AI, or you can use your own model artifacts from a model that you trained outside of SageMaker AI. You can charge buyers for inference.
 
 **Topics**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

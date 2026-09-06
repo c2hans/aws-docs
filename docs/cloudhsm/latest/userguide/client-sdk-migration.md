@@ -18,7 +18,3 @@ See the following topics for detailed instructions on migrating from Client SDK 
 + [Migrate your JCE provider from AWS CloudHSM Client SDK 3 to Client SDK 5](java-lib-migrate_to_sdk5.md)
 
 For functionality or use cases that are not supported by CloudHSM CLI, contact [AWS Support](https://support.console.aws.amazon.com/support/home#/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

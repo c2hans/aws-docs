@@ -41,7 +41,3 @@ For ongoing maintenance and to maintain the highest level of security in your ed
 + Follow your organization's security practices for credential management
 
 These practices help maintain secure and reliable operations for your SiteWise Edge gateways while remaining aligned with your broader security policies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

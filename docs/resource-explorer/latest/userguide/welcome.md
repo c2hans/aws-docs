@@ -126,7 +126,3 @@ myApplications is an extension of the AWS Management Console that helps you mana
 Automatic setup and basic search functionality are available at no additional cost. There are no charges to search for resources by using AWS Resource Explorer, including creating views, completing setup in AWS Regions, or searching for resources.
 
 In the process of building your resource inventory, Resource Explorer calls APIs on your behalf that may result in charges. Interacting with the resources that you find in your search results can result in usage charges that vary depending on the resource type and its AWS service. Some sources of additional data available in the Resource Explorer console are from other AWS services that can result in usage charges, such as AWS Config. These sources are only used if you explicitly enable them in your account. For more information about how AWS bills for the normal use of a specific resource type, refer to the documentation for that resource type's owning service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

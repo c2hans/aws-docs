@@ -43,7 +43,3 @@ If you do this, you'll need to provide the same credentials when you configure y
 ![The conversational analytics integrations page, the short host name of the connector.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-connector-shorthostname.png)
 
 1. You're done creating the conversational analytics connector. Continue to the next step: [Configure your external voice system for integration with conversational analytics](configure-external-voice-system.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

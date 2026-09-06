@@ -11,7 +11,3 @@ You can quickly get started with AWS AppSync Events by creating an AWS AppSync E
 + [Prerequisites](event-api-prerequisites.md)
 + [Creating an AWS AppSync Event API](create-event-api-tutorial.md)
 + [Getting started with the Amplify Events client](build-amplify-app.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

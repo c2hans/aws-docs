@@ -75,7 +75,3 @@ If the automatic dashboard meets your needs, you can use it as is. To build a ta
 For cross-account Amazon EKS monitoring, we recommend using Amazon CloudWatch metric centralization. For more information, see [CloudWatch metrics centralization](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html).
 
 For alternative cross-account scraper configurations, see [Cross-account scrapers](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-collector-cross-account.html) in the *Amazon Managed Service for Prometheus User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

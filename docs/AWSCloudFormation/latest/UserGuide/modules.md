@@ -40,7 +40,3 @@ For information about developing modules, see [Developing modules](https://docs.
 + Parameters specified in the module aren't propagated to parameters at the template level.
 
   However, you can create template-level parameters that reference module-level parameters. For more information, see [Use parameters to specify module values](module-using-params.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ An Amazon Rekognition Custom Labels model is a provisioned inference endpoint th
 + Confirm the model is running (`StartProjectVersion`) and that its ARN, including the version, matches the `customModelArn` value in your policy or request.
 + Confirm the ECS task role is permitted to call the model. If the model is in a different Region or account from the deployment, you must grant access explicitly. See the Amazon Rekognition Custom Labels access and lifecycle guidance in the deployment section.
 + To detect a stopped model in logs, search the ECS task log group for the `customLabelsModelStatus` field on smart crop requests. A value of `model_not_running` confirms the model is stopped.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -85,7 +85,3 @@ Some occurrences in AWS services can be reported to EventBridge both by the serv
 If you use a `Put*Events` API call event as the basis for creating an event pattern, make sure the final event pattern does not exceed 1 MB. The maximum size of any `Put*Events` requests is 1 MB. For more information, see [](eb-putevents.md).
 
 For more information about the services that CloudTrail supports, see [CloudTrail supported services and integrations](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.html) in the *CloudTrail User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

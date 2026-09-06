@@ -145,7 +145,3 @@ The following inline policies contain specific permissions required to view, upd
 + `sso:DeleteApplicationGrant` – Deletes the trust token issuer information.
 + `sso:PutApplicationAccessScope` – Adds or updates the list of authorized targets for an IAM Identity Center access scope for an application.
 + `sso:PutApplicationAssignmentConfiguration` – Used to configure how users gain access to an application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

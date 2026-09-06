@@ -206,7 +206,3 @@ If you try to assign a literal value outside of the value space of a type (for e
 That is, Neptune accepts `"999"^^xsd:byte` even though it is a value outside of the defined `xsd:byte` value range. However, after the value is persisted in the database, it can only be used in exact match semantics, in an object position of a triple pattern. No range filter can be executed on it because out-of-range literals are not treated as numeric values.
 
 The SPARQL 1.1 specification defines [range operators](https://www.w3.org/TR/sparql11-query/#OperatorMapping) in the form `numeric`*-operator-*`numeric`, `string`*-operator-*`string`, `literal`*-operator-*`literal`, and so forth. Neptune can't execute a range comparison operator anything like `invalid-literal`*-operator-*`numeric-value`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

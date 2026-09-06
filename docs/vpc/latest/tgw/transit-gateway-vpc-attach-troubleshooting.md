@@ -31,7 +31,3 @@ Depending on the cause, try the following:
 1. Verify that the service-linked role has the correct permissions. For more information, see [Transit gateway service-linked role](service-linked-roles.md#tgw-service-linked-roles).
 
 1. Verify that the transit gateway is in the `available` state. For more information, see [View transit gateway information in AWS Transit Gateway](view-tgws.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,7 +10,3 @@ Elastic Beanstalk defines a large number of configuration options that you can u
 For a complete list of namespaces and options, including default and supported values for each, see [General options for all environments](command-options-general.md) and [.NET Core on Linux platform options](command-options-specific.md#command-options-dotnet-core-linux).
 
 ![Screenshot of advanced configurations options panel in Visual Studio Toolkit for Elastic Beanstalk](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-vs-linux-advanced-tab.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

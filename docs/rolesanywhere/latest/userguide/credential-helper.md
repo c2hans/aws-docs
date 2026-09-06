@@ -717,7 +717,3 @@ On September 8, 2022, AWS IAM Roles Anywhere released Credential Helper version 
 <a name="credential-helper-version-1.0.1"></a>
 
 On July 14, 2022, AWS IAM Roles Anywhere released Credential Helper version 1.0.1. As a part of this release, the tool now has better error handling.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ Your compliance responsibility when using Elastic Beanstalk is determined by the
 + [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) – A comprehensive view of your security state within AWS that helps you check your compliance with security industry standards and best practices.
 
 For other Elastic Beanstalk security topics, see [AWS Elastic Beanstalk security](security.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

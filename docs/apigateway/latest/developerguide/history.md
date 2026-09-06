@@ -116,7 +116,3 @@ The following table describes important changes in each release of the *API Gate
 | Swagger integration | Use the [Swagger import tool on GitHub](https://github.com/awslabs/aws-apigateway-swagger-importer) to import Swagger API definitions into Amazon API Gateway. Learn more about [OpenAPI extensions for API Gateway](api-gateway-swagger-extensions.md) to create and deploy APIs and methods using the import tool. With the Swagger importer tool you can also update existing APIs. | July 21, 2015 |
 | Mapping Template Reference | Read about the `$input` parameter and its functions in the [Variables for data transformations for API Gateway](api-gateway-mapping-template-reference.md). | July 18, 2015 |
 | Initial public release | This is the initial public release of the *API Gateway Developer Guide*. | July 9, 2015 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

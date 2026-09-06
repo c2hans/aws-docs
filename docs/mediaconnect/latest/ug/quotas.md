@@ -44,7 +44,3 @@ The following table describes the limits for API request frequency in MediaConne
 
 **Note**
 If your application exceeds these limits, implement exponential backoff for retries. For more information, see [Error Retries and Exponential Backoff in AWS](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html) in the *Amazon Web Services General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

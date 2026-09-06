@@ -17,7 +17,3 @@ Encourage the usage of On-Demand fleet type. With On-Demand, streaming instances
 An additional option is to select a multi-session fleet according to the performance pillar to select the right instances type.
 
 Elastic fleets offer a pool of streaming instances managed by WorkSpaces Applications service. When you use Elastic fleets, an app block (also known as a virtual hard disk) will be downloaded and mounted from Amazon S3. You do not have to configure scaling policies, so you will not consume and reserve unnecessary resources. Elastic fleets do not support domain join, for further details see: [Using Active Directory with WorkSpaces Applications](https://docs.aws.amazon.com/appstream2/latest/developerguide/active-directory.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

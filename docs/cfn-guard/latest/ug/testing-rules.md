@@ -415,7 +415,3 @@ This isn’t a valid CloudFormation template, but it's useful to test whether th
    `%api_gws` is a block rule that corresponds to the `BlockClause` level in the output (line:21). The rule clauseis a set of conjunction (AND) clauses, where each conjunction clause is a set of disjunctions (`OR`s). The conjunction has a single clause, `Properties.EndpointConfiguration.Types[*] == "PRIVATE"`. Therefore, the verbose output shows a single clause. The path `/Resources/apiGw/Properties/EndpointConfiguration/Types/1` shows which values in the input are compared, which in this case is the element for `Types` indexed at 1.
 
 In [Validating input data against Guard rules](validating-rules.md), you can use the examples in this section to use the `validate` command to evaluate input data against rules.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation Guard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cfn-guard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

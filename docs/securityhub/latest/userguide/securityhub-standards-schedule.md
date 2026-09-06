@@ -26,7 +26,3 @@ Checks that use Security Hub CSPM custom Lambda functions are periodic.
 Change-triggered security checks run when the associated resource changes state. AWS Config lets you choose between *continuous recording* of changes in resource state and *daily recording*. If you choose daily recording, AWS Config delivers resource configuration data at the end of each 24 hour period if there are changes in resource state. If there are no changes, no data is delivered. This may delay the generation of Security Hub CSPM findings until a 24-hour period is complete. Regardless of your chosen recording period, Security Hub CSPM checks at least once every 24 hours to ensure no resource updates from AWS Config were missed.
 
 In general, Security Hub CSPM uses change-triggered rules whenever possible. For a resource to use a change-triggered rule, it must support AWS Config configuration items.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

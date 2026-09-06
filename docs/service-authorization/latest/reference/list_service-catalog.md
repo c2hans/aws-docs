@@ -1546,7 +1546,3 @@ AWS Service Catalog defines the following condition keys that can be used in the
 |   [servicecatalog:accountLevel](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/permissions-examples.html)  | Filters access by user to see and perform actions on resources created by anyone in the account | String |
 |   [servicecatalog:roleLevel](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/permissions-examples.html)  | Filters access by user to see and perform actions on resources created either by them or by anyone federating into the same role as them | String |
 |   [servicecatalog:userLevel](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/permissions-examples.html)  | Filters access by user to see and perform actions on only resources that they created | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

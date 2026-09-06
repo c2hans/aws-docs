@@ -32,7 +32,3 @@ In the preceding command, do the following:
 + If you enable the two-way messaging feature for the phone number, you must specify the ARN of an Amazon SNS topic. Replace {{arn:aws:sns:us-east-1:111122223333:MyTopic}} with the ARN of the Amazon SNS topic that you want to use. When you receive incoming messages, they are sent to the topic that you specify.
 
 The `PhoneNumberId` parameter is the only required parameter for this command. You can omit any of the other parameters if you don't want to change the corresponding settings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

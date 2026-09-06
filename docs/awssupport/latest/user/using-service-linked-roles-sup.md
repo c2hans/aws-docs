@@ -55,7 +55,3 @@ The `AWSServiceRoleForSupport` role is necessary for Support to provide administ
 Customers onboarded to AWS Organizations and who have an Enterprise Support plan can delete the `AWSServiceRoleForSupport` service-linked role. Deleting this role restricts access to your resources by AWS Support engineers, limiting their ability to perform actions on your behalf. For more information, or to request to delete the `AWSServiceRoleForSupport` service-linked role, contact your Technical Account Manager (TAM).
 
 For more information about the `AWSServiceRoleForSupport` role or its uses, contact [Support](http://aws.amazon.com/support).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

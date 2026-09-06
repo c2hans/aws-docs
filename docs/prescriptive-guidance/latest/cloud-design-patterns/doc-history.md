@@ -17,7 +17,3 @@ The following table describes significant changes to this guide.
 | New patterns | Added three new patterns: [saga choreography](saga-choreography.md), [publish-subscribe](publish-subscribe.md), and [event sourcing](event-sourcing-pattern.md). | November 14, 2023 |
 | Update | Updated the [strangler fig pattern implementation](strangler-fig.md#strangler-fig-implementation) section. | October 2, 2023 |
 | Initial publication | This first release includes eight design patterns: anti-corruption layer (ACL), API routing, circuit breaker, orchestration and choreography, retry with backoff, saga orchestration, strangler fig, and transactional outbox. | July 28, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

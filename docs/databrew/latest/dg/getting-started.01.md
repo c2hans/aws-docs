@@ -34,7 +34,3 @@ In this step, you use the DataBrew console to quickly get started with a sample 
    The toolbar provides access to hundreds of data transforms that you can apply to the data.
 
    The recipe pane at right in the DataBrew console tracks the transformations you applied so far.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

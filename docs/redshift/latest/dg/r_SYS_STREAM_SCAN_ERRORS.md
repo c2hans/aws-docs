@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_SYS_STREAM_SCAN_ERR
 # SYS\_STREAM\_SCAN\_ERRORS
 <a name="r_SYS_STREAM_SCAN_ERRORS"></a>
 
-Records errors for records loaded via streaming ingestion.
+Records errors for records loaded through streaming ingestion.
 
 SYS\_STREAM\_SCAN\_ERRORS is visible to all users. Superusers can see all rows; regular users can see only their own data. For more information, see [Visibility of data in system tables and views](cm_chap_system-tables.md#c_visibility-of-data).
 
@@ -28,7 +28,3 @@ SYS\_STREAM\_SCAN\_ERRORS is visible to all users. Superusers can see all rows; 
 | position | character(128)  | The position of the record. This corresponds with the sequence number in Kinesis or the offset in Amazon MSK. It is case sensitive. |
 | error\_code | integer  | The error code. |
 | error\_reason | character(128)  | The error reason. It is case sensitive. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

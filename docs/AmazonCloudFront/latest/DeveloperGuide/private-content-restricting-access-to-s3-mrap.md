@@ -243,7 +243,3 @@ Properties:
 <a name="oac-signing-behavior-s3-mrap"></a>
 
 The signing behavior options for S3 Multi-Region Access Point origins are the same as those for regular Amazon S3 bucket origins. For more information, see [Advanced settings for origin access control](private-content-restricting-access-to-s3.md#oac-advanced-settings-s3) in *Restrict access to an Amazon S3 origin*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

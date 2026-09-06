@@ -36,7 +36,3 @@ As the infrastructure becomes more abstracted and modernized, the footprint beco
 When using serverless services, nearly all of the responsibility for security belongs to AWS. The scope of your responsibility is minimal. For example, a managed serverless database (DB) eliminates the need for you to secure the network, hardware, and operating system. All OS and DB patching is covered by AWS. Your only concern is securing access to the data through encryption and authentication.
 
 ![AWS shared responsibility model for serverless services.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerating-security-maturity/images/guide-img/2162f372-44e6-4f4b-80cc-427f9fca7a33/images/32ec276a-3f72-4233-bdf9-e7f6eeae201d.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

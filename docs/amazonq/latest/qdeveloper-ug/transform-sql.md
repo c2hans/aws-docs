@@ -56,7 +56,3 @@ To convert the embedded SQL code in your Java application to a format that is co
    Amazon Q also provides a transformation summary with details about the changes it made.
 
 1. After updating your code, return to the AWS DMS console to verify the new SQL is compatible with the migrated database.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

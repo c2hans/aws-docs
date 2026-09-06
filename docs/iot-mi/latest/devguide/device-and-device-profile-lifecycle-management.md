@@ -32,7 +32,3 @@ The device lifecycle starts with the creation of the Managed Thing in Managed In
 A device profile represents a specific type of device such as a light bulb or doorbell. It is associated with a manufacturer and contains the capabilities of the device. The device profile stores the authentication materials needed for device connectivity setup requests with Managed Integrations. The authentication materials used are the device bar code.
 
 During the device manufacturing process, the manufacturer can register their device profiles with Managed Integrations. This enables the manufacturer to obtain the necessary materials for the devices from Managed Integrations during the onboarding and provisioning workflows. The metadata from the device profile is stored on the physical device or printed on the device labeling. The lifecycle of the device profile ends when the manufacturer deletes it in Managed Integrations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

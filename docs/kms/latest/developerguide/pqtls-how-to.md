@@ -46,7 +46,3 @@ To see a complete working example of configuring and using hybrid post-quantum T
    ```
 
    To confirm that your call used hybrid post-quantum TLS, inspect its CloudTrail log entry as described in [Verifying Hybrid Post-Quantum TLS](pqtls.md#pqtls-verify).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

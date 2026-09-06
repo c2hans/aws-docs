@@ -140,7 +140,3 @@ You create and run code reviews only in the AWS Security Agent web application.
    1. Use **Remediate code** to generate a pull request with a fix, or review automatic remediation PRs if you enabled that option.
 
 For more details, see [Create a code review](perform-code-review-scan.md) and [Review findings from a code review](review-code-scan-findings.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

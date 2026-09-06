@@ -25,7 +25,3 @@ This was the traditional way to back up DynamoDB tables to Amazon S3 and to rest
 + Additional AWS services (Data Pipeline and Amazon S3) are required.
 + The process consumes provisioned throughput on the source table and the target tables involved, so it can affect performance and availability.
 + This approach incurs additional costs, over the cost of DynamoDB read capacity units (RCUs) and write capacity units (WCUs).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

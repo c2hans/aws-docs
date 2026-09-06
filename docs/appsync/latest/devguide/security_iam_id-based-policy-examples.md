@@ -128,7 +128,3 @@ In addition to granting the `s3:PutObject`, `s3:GetObject`, and `s3:DeleteObject
 You can use conditions in your identity-based policy to control access to AWS AppSync resources based on tags. This example shows how you might create a policy that allows viewing a {{widget}}. However, permission is granted only if the {{widget}} tag `Owner` has the value of that user's user name. This policy also grants the permissions necessary to complete this action on the console.
 
 You can attach this policy to the IAM users in your account. If a user named `richard-roe` attempts to view an AWS AppSync {{widget}}, the {{widget}} must be tagged `Owner=richard-roe` or `owner=richard-roe`. Otherwise he is denied access. The condition tag key `Owner` matches both `Owner` and `owner` because condition key names are not case-sensitive. For more information, see [IAM JSON policy elements: Condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) in the *IAM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

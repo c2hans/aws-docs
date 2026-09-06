@@ -11,7 +11,3 @@ This page refers to the Amazon-FreeRTOS repository which is deprecated. We recom
 After you build, flash, and run the FreeRTOS demo project for your board, you can visit the FreeRTOS.org website to learn more about [ Creating a New FreeRTOS Project](https://www.freertos.org/Creating-a-new-FreeRTOS-project.html). There are also demos for many FreeRTOS libraries that show how to perform important tasks, interact with AWS IoT services, and program board-specific capabilities (such as cellular modems). For more information, see the [FreeRTOS Library Categories](https://www.freertos.org/libraries/categories.html) page.
 
 The FreeRTOS.org website also has in-depth information on [ the FreeRTOS Kernel](https://www.freertos.org/RTOS.html) as well as fundamental real-time operating system concepts. For more information, see the [FreeRTOS Kernel Developer Docs](https://www.freertos.org/features.html) and [FreeRTOS Kernel Secondary Docs](https://www.freertos.org/kernel/secondarydocs.html) pages.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

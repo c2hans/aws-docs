@@ -48,7 +48,3 @@ When you run a command, AWS Tools for PowerShell searches for credentials in the
 If this search fails to locate the specified credentials, the command throws an exception.
 
 For additional information about environment variables and credentials profiles, see the following topics in the [AWS SDKs and Tools Reference Guide](https://docs.aws.amazon.com/sdkref/latest/guide/): [Environment variables](https://docs.aws.amazon.com/sdkref/latest/guide/environment-variables.html), [Environment variables list](https://docs.aws.amazon.com/sdkref/latest/guide/settings-reference.html#EVarSettings), and [Shared config and credentials files](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

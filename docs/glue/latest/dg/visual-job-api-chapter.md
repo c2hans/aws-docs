@@ -98,7 +98,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/visual-job-api-chapter.ht
 <a name="visual-job-limitations"></a>
 
  Since the ‘codeGenConfigurationNodes’ parameter has been added to existing APIs, any limitations in those APIs will be inherited. In addition, the codeGenConfigurationNodes and some nodes will be limited in size. See [ Job Structure ](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-job.html#aws-glue-api-jobs-job-Job) for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

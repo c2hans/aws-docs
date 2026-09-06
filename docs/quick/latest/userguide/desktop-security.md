@@ -76,7 +76,3 @@ Amazon Quick on desktop provides privacy controls that let you manage whether Qu
 <a name="desktop-clearing-data"></a>
 
 If you need to completely reset Amazon Quick on desktop, you can use the **Clear all data** option in **Settings** > **Customization** > **Danger zone**. This action is irreversible and removes all conversations, knowledge graph data, saved credentials, and user preferences. For more information, see [Danger zone](desktop-settings.md#desktop-settings-danger-zone).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

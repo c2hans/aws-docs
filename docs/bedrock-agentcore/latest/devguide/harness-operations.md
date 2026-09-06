@@ -12,23 +12,9 @@ This page covers monitoring your harness, controlling execution costs, and manag
 
 Every harness invocation automatically generates traces, logs, and metrics through [AgentCore Observability](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html) in CloudWatch. Model calls, tool invocations, memory operations, shell commands: each step appears with timing and payload details. No extra configuration. Traces are available from the first invocation.
 
-**Example**
 Traces, logs, and metrics flow to CloudWatch through the harness execution role. View them in the [AgentCore Observability dashboard](https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2#/gen-ai-observability/agent-core/agents), or query programmatically through the CloudWatch Logs and X-Ray APIs.
+
 Before you see traces, [enable Transaction Search in CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Enable-Lambda-TransactionSearch.html) (one-time per account). See [AgentCore Observability getting started](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-get-started.html) for setup details.
-
-```
-# Stream logs
-agentcore logs --harness research-agent
-
-# Filter
-agentcore logs --harness research-agent --since 1h --level error
-
-# List recent traces
-agentcore traces list --harness research-agent
-
-# Get a specific trace
-agentcore traces get <trace-id> --harness research-agent
-```
 
 Learn more: [Observability overview](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html) · [metrics](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-runtime-metrics.html) · [telemetry](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-telemetry.html)
 
@@ -76,7 +62,7 @@ Don’t estimate CPU cost from wall-clock invocation or session duration alone. 
 ### Measure and attribute usage
 <a name="_measure_and_attribute_usage"></a>
 + Read `metadata` events in the invocation stream for model token usage.
-+ Use AgentCore Observability traces and `agentcore logs --harness <name>` to identify model calls, tool calls, memory operations, and their duration. Observability explains activity but is not a billing report.
++ Use [AgentCore Observability](observability.md) traces, CloudWatch Logs, and X-Ray APIs to identify model calls, tool calls, memory operations, and their duration. Observability explains activity but is not a billing report.
 + Use AWS Cost Explorer or the AWS Cost and Usage Report for billed usage. Activate your harness tags as cost allocation tags to filter supported charges.
 
 Harness tags propagate to the managed Runtime, Runtime endpoint, and managed Memory created for the harness. Tag separately created resources, such as Gateway, EFS, S3, or a bring-your-own Memory resource, independently.
@@ -153,7 +139,3 @@ Harness tags propagate to the managed Runtime, Runtime endpoint, and managed Mem
 +  [Environment and filesystem](harness-environment.md) - environment variables and custom containers
 +  [Security and access controls](harness-security.md) - execution role policy and IAM permissions
 +  [API Documentation](harness-get-started.md#api-documentation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

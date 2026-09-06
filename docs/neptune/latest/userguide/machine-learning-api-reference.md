@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
   + [Delete an endpoint](machine-learning-api-endpoints.md#machine-learning-api-endpoints-delete-endpoint)
   + [Listing inference endpoints](machine-learning-api-endpoints.md#machine-learning-api-endpoints-list-endpoints)
 + [Exceptions](machine-learning-api-exceptions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

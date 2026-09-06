@@ -63,7 +63,3 @@ The following options can be set using configurations or AWS CLI `--emrfs` argum
 | fs.s3.consistent.notification.SQS.customMsg | none | This property allows you to specify custom information included in SQS messages regarding Amazon S3 eventual consistency issues. If a value is not specified for this property, the corresponding field in the message is empty.  |
 | fs.s3.consistent.dynamodb.endpoint | none | This property allows you to specify a custom DynamoDB endpoint for your consistent view metadata. |
 | fs.s3.useRequesterPaysHeader | false | When set to true, this property allows Amazon S3 requests to buckets with the request payer option enabled.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

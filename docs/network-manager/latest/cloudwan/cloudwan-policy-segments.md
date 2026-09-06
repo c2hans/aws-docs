@@ -38,7 +38,3 @@ The following steps guide you through configuring a core network for a policy ve
 1. (Optional) If you want to limit your edge locations for the segment, choose **Choose edge locations**, and then choose the edge locations you want to limit the segment to.
 
 1. Choose **Create policy**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

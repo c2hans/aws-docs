@@ -33,7 +33,3 @@ Updated [API Reference](https://docs.aws.amazon.com/lake-formation/latest/APIRef
 + [Common data types](aws-lake-formation-api-aws-lake-formation-api-common.md)
   + [ErrorDetail structure](aws-lake-formation-api-aws-lake-formation-api-common.md#aws-lake-formation-api-aws-lake-formation-api-common-ErrorDetail)
   + [String patterns](aws-lake-formation-api-aws-lake-formation-api-common.md#aws-lake-formation-api-aws-lake-formation-api-common-_string-patterns)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

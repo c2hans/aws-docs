@@ -233,7 +233,3 @@ For more information about working with DynamoDB and monitoring your data, see t
 + [Best practices for designing and using partition keys effectively in ](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-partition-key-design.html) in the *DynamoDB Developer Guide*
 + [Rules for AWS IoT](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html) in the *AWS IoT Developer Guide*
 + [Visualize and share data in Grafana](visualize-with-grafana.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

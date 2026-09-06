@@ -134,7 +134,3 @@ You can also define additional labels, known as *Kubernetes label selectors*, to
 
 **Note**
 You can only use the `node-labels` property with either with a `managed-nodegroup-name` or `self-managed-nodegroup-name` property.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

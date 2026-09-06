@@ -1128,7 +1128,3 @@ The forecast value is parsed as the following:
 <a name="clarify-processing-job-configure-analysis-feature-attr-dataconfig"></a>
 
 Use the `time_series_data_config` attribute to instruct the SageMaker Clarify processor to parse data correctly from the data passed as an S3 URI in `dataset_uri`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

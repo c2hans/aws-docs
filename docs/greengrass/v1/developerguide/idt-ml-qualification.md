@@ -305,7 +305,3 @@ We recommend that you compile the model on your target device. This practice is 
 ![The resnet18 compiled model directory contains four files.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/idt/idt-ml-qualification-dlr-compiled-tvm.png)
 
 Next, [configure your AWS credentials and `device.json` file](set-config.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  Assess your users' applications and tasks, and deploy a sufficient level of fleet types and instance types as are needed.
 +  Monitor the resulting user feedback to verify that performance meets their needs without overprovisioning their instance types.
 +  If performance or productivity suffers for various users, increase the performance of their instances. This can be achieved by using larger instances with more CPU or in the case of WorkSpaces Applications using a different instance family that provides higher clock speed for CPU cores.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

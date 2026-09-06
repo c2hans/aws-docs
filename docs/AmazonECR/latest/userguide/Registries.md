@@ -14,7 +14,3 @@ An Amazon ECR private registry hosts your container images in a highly available
 + You must authenticate your Docker client to your private registry so that you can use the **docker push** and **docker pull** commands to push and pull images to and from the repositories in that registry. For more information, see [Private registry authentication in Amazon ECR](registry_auth.md).
 + Private repositories can be controlled with both user access policies and repository policies. For more information about repository policies, see [Private repository policies in Amazon ECR](repository-policies.md).
 + The repositories in your private registry can be replicated across AWS Regions in your own private registry and across separate accounts by configuring replication for your private registry. For more information, see [Private image replication in Amazon ECR](replication.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

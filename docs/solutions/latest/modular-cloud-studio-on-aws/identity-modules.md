@@ -29,7 +29,3 @@ The following Identity modules are available in MCS after deployment:
 <a name="spoke-managed-identity-module"></a>
 
 1.  [Directory Service](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html) deploys an [AD Connector](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_ad_connector.html) instance that establishes a connection to the Microsoft AD instance in the Hub environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

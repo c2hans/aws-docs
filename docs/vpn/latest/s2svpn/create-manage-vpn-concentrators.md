@@ -13,7 +13,3 @@ After creating your Site-to-Site VPN Concentrators, you can view and manage them
 + [Create a VPN Concentrator](create-vpn-concentrator.md)
 + [Manage VPN Concentrator tags](manage-vpn-concentrator-tags.md)
 + [Delete a VPN Concentrator](delete-vpn-concentrator.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

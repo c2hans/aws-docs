@@ -116,7 +116,3 @@ For the complete policy template, see the sample Lambda code at https://github.c
 1. In the Amazon Connect Health console, configure the Lambda function ARN in the domain settings under **Integration function**.
 
 1. Test the integration in a non-production environment before enabling in production.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connecthealth` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

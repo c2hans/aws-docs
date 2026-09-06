@@ -101,7 +101,3 @@ Image Builder provides the following system variables that you can use in your w
 | terminateInstanceOnFailure | The current value of the setting that directs Image Builder to terminate the instance on failure or keep it for troubleshooting. | Boolean | `true` \| `false` |
 | workflowPhase | The current stage that's running for the workflow execution. | String | `Build` \| `Test` |
 | workingDirectory | The path to the working directory. | String | `/tmp` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

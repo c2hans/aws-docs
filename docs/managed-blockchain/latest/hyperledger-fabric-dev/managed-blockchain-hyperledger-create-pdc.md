@@ -17,7 +17,3 @@ Private data collections with Amazon Managed Blockchain (AMB) require the follow
 + A network created using Hyperledger Fabric version 1.4 or later.
 + A channel configuration that supports the latest features of your version. The [multi-member channel configuration](get-started-joint-channel.md#get-started-joint-channel-channel-configtx) featured in the [Getting Started](managed-blockchain-get-started-tutorial.md) tutorial of this guide enables the latest features.
 + At least one anchor peer for each member that participates in the private data collection. This is because Hyperledger Fabric uses the gossip protocol to distribute private data to authorized peers. For more information, see [Add an Anchor Peer to a Channel](hyperledger-anchor-peers.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

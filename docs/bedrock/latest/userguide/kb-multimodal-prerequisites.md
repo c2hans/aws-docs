@@ -56,7 +56,3 @@ When configuring your multimodal storage destination, consider the following:
 + **Use separate buckets (recommended):** Configure different Amazon S3 buckets for your data source and multimodal storage destination. This provides the simplest setup and avoids potential conflicts.
 + **If using the same bucket:** You must specify an inclusion prefix for your data source that limits which content is ingested. This prevents re-ingesting extracted media files.
 + **Avoid "aws/" prefix:** When using the same bucket for both data source and multimodal storage destination, do not use inclusion prefixes starting with "aws/" as this path is reserved for extracted media storage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

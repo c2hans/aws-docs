@@ -18,7 +18,3 @@ The relationships among these functions are described in the following table.
 | Population standard deviation | [STDDEV\_POP](sql-reference-STDDEVPOP.md) | Square root of the population variance (VAR\_POP). | When VAR\_POP returns null, STDDEV\_POP returns null. |
 | Sample variance | [VAR\_SAMP](sql-reference-VARSAMP.md) | (SUM(expr\*expr) - SUM(expr)\*SUM(expr) / COUNT(expr)) / (COUNT(expr)−1) | Applied to an empty set, it returns null.<br /><br />Applied to an input set of one element, VAR\_SAMP returns null. |
 | Sample standard deviation | [STDDEV\_SAMP](sql-reference-STDDEVSAMP.md) (expr) | Square root of the sample variance (VAR\_SAMP). | Applied to only 1 row of input data, STDDEV\_SAMP returns null. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

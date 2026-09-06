@@ -15,7 +15,3 @@ We don't recommend having multiple writers for one Amazon S3 bucket. If you do, 
 To assign metadata defaults to objects accessed using NFS, see Editing Metadata Defaults in [Managing your Amazon S3 File Gateway](managing-gateway-file.md).
 
 For SMB, you can export a share using Microsoft AD or guest access for an Amazon S3 bucket with pre-existing objects. Objects exported through an SMB file share inherits POSIX ownership and permissions from the parent directory right above it. For objects under the root folder, root Access Control Lists (ACL) are inherited. For Root ACL, the owner is `smbguest` and the permissions for files are `666` and the directories are `777`. This applies to all forms of authenticated access (Microsoft AD and guest).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

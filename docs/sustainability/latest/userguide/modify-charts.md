@@ -32,7 +32,3 @@ This section lets you filter the data based on your needs. Once you've selected 
 + Region
 + Emissions scope
 + Usage account: If you are logged in as a member account, the only usage account will be the member account. If you are logged in as a management account, you will be able to see all usage accounts under the management account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sustainability. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sustainability` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

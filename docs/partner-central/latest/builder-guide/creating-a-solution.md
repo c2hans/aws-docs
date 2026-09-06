@@ -52,7 +52,3 @@ When creating a solution, provide as much detail as you can to improve your disc
    1. Click **Submit** when ready to activate your solution. The solution will be set to "limited" status, meaning it is active but not yet visible on AWS Marketplace.
 
 1. Solution created: You see a banner that shows your solution was created successfully and your solution status changed to limited. A limited solution means you can attach this solution to an opportunity or request an FTR.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

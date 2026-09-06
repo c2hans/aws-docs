@@ -18,7 +18,3 @@ Complete the following procedure to remove an associated account from your domai
 1. Choose **Disassociate**. Confirm your choice by entering disassociate in the field and choosing **Disassociate**.
 
 1. The account is now removed from your domain and cannot be used by the domain’s users to publish and consume data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

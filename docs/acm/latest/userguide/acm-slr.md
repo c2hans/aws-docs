@@ -79,7 +79,3 @@ ACM supports using SLRs in all of the regions where both ACM and AWS Private CA 
 | South America (São Paulo) | sa-east-1 | Yes |
 | AWS GovCloud (US-West) | us-gov-west-1 | Yes |
 | AWS GovCloud (US-East) East | us-gov-east-1 | Yes |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

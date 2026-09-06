@@ -26,7 +26,3 @@ SVV\_EXTERNAL\_PARTITIONS is visible to all users. Superusers can see all rows; 
 | serde\_parameters | text | SerDe parameters. |
 | compressed | integer | A value that indicates whether the partition is compressed; 1 indicates compressed, 0 indicates not compressed. |
 | parameters | text | Partition properties. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -100,7 +100,3 @@ The final part of the Gremlin query, `Next()`, is required to submit the travers
 <a name="access-graph-gremlin-dotnet-iam"></a>
 
 Neptune supports [IAM authentication](iam-auth-enable.md) to control access to your DB cluster. If you have IAM authentication enabled, you need to use Signature Version 4 signing to authenticate your requests. For detailed instructions and code examples for connecting from a .NET client, see [Connecting to Amazon Neptune databases using IAM authentication with Gremlin .NET](gremlin-dotnet-iam-auth.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

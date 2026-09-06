@@ -119,7 +119,3 @@ The following table provides details about updates to AWS managed policies for A
 | [AWSDataExchangeProviderFullAccess](#security-iam-awsmanpol-awsdataexchangeproviderfullaccess) and [AWSDataExchangeFullAccess](#security-iam-awsmanpol-awsdataexchangefullaccess) – Update to existing policies | Added `dataexchange:PublishDataSet`, a new permission to control access to publishing new versions of data sets. | May 25, 2021 |
 | [AWSDataExchangeReadOnly](#security-iam-awsmanpol-awsdataexchangereadonly), [AWSDataExchangeProviderFullAccess](#security-iam-awsmanpol-awsdataexchangeproviderfullaccess), and [AWSDataExchangeFullAccess](#security-iam-awsmanpol-awsdataexchangefullaccess) – Update to existing policies | Added `aws-marketplace:SearchAgreements` and `aws-marketplace:GetAgreementTerms` to enable viewing subscriptions for products and offers. | May 12, 2021 |
 | AWS Data Exchange started tracking changes | AWS Data Exchange started tracking changes for its AWS managed policies. | April 20, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

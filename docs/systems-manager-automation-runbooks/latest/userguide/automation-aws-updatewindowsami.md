@@ -123,7 +123,3 @@ Windows
   Default: UpdateWindowsAmi\_from\_{{SourceAmiId}}\_on\_{{global:DATE\_TIME}}
 
   Description: (Optional) The name of the new AMI that will be created. Default is a system-generated string including the source AMI id, and the creation time and date.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

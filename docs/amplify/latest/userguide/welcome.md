@@ -75,7 +75,3 @@ If you are looking for the documentation for building backends for a Gen 1 app, 
 <a name="amplify-pricing"></a>
 
 AWS Amplify only charges you for what you use. For more information, see [AWS Amplify Pricing](https://aws.amazon.com/amplify/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

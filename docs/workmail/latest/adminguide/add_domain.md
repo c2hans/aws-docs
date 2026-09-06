@@ -89,7 +89,3 @@ Missing – Unable to resolve record.
    + Copy the records and paste them into your DNS provider. You can copy the records in bulk or one at a time. To copy records in bulk, choose **Copy all**. That creates a file zone that you can import into your DNS provider. To copy records one at a time, choose the overlapping squares next to the record name, and then paste each one into your DNS provider.
 
 1. Choose the refresh icon update the **Status** for each record. This verifies domain ownership and proper configuration of your domain with Amazon WorkMail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -461,7 +461,3 @@ Each update to OpenSSL introduces new ciphers and removes support for old ones. 
   ```
 
   This typically means that your EC2 instance is not running AL2. This tutorial only supports instances freshly created from an official AL2 AMI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

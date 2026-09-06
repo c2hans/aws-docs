@@ -24,7 +24,3 @@ You can use services, such as [Amazon SageMaker AI Clarify](https://aws.amazon.c
 <a name="faq-4"></a>
 
 No, Amazon Rekognition and Amazon Rekognition Custom Labels do not allow you to use your own pretrained models. You can deploy your existing pretrained model by using Amazon SageMaker AI or a custom container solution on Amazon Elastic Container Service (Amazon ECS) or Amazon Elastic Kubernetes Service (Amazon EKS).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

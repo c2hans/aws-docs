@@ -344,7 +344,3 @@ To run ML qualification tests, your devices under test must meet the following r
 <a name="idt-config-hsm-components"></a>
 
 AWS IoT Greengrass provides [PKCS\#11 provider component](pkcs11-provider-component.md) to integrate with the PKCS Hardware Security Module (HSM) on the device. The HSM setup depends on your device and the HSM module that you have chosen. As long as the expected HSM configuration, as documented in the [IDT configuration settings](set-config.md), is provided, IDT will have the information required to run this optional feature qualification test.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -72,7 +72,3 @@ Migration outcomes:
  **Subscribe to the SNS topic before upgrading.** Migration failure notifications publish to the solution’s existing `SO0111-ASR_Topic` Amazon SNS topic. If you do not have a confirmed subscription on that topic before the upgrade, the failure notification does not reach you. In that case, you only see the failure in the `SO0111-ASR-MigrationAutoRemediation` AWS Lambda function’s Amazon CloudWatch logs. To subscribe an endpoint, retrieve the topic ARN from AWS Systems Manager Parameter Store at `/Solutions/SO0111/SNS_Topic_ARN` and add an SNS subscription (email, SQS, AWS Lambda function, or any other supported protocol) before starting the v4 stack update. Confirm any email subscriptions through the AWS confirmation email so the topic is ready to deliver before the migration runs.
 
 If migration is unable to write a control you want auto-remediated in v4, enable it manually in the Remediation Configuration DynamoDB table. Refer to [Enable fully-automated remediations](enable-fully-automated-remediations.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

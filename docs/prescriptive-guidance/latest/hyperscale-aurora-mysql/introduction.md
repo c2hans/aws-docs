@@ -21,7 +21,3 @@ Note that the recommendations outlined in this guide will require implementation
 The approaches covered in this guide will help you do the following:
 + Stabilize your business in the event of unexpected hypergrowth. Achieve enough stability to implement long-term best practices for hypergrowth.
 + Prevent financial loss. Sudden interruptions on a hyperscaled environment can lead to a drop in business transactions that are performed on your application by your customers. This can lead to substantial financial losses in some cases. A stabilized hyperscaled environment is key to preventing long outages that result in a loss of business.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

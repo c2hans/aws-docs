@@ -22,7 +22,3 @@ For example, the product management capability in the Business perspective secti
 For each of these perspectives, there is a natural or logical order by which the capabilities are addressed or improved that orders your areas of action for your AI transformation journey in time. The following image depicts a sample order and an assessment together with experienced implementors of AI Strategies. It is best used to establish which of these capabilities already exist in your organization and how mature they are.
 
 ![Diagram showing the AWS CAF-AI foundational capabilities ordered by maturity and evolution.](http://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/images/caf-ai-foundational-capabilities-maturity-evolution.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

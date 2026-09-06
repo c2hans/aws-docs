@@ -18,7 +18,3 @@ The topics in this section explain various object operations in a versioning-ena
 + [Retrieving object versions from a versioning-enabled bucket](RetrievingObjectVersions.md)
 + [Deleting object versions from a versioning-enabled bucket](DeletingObjectVersions.md)
 + [Configuring versioned object permissions](VersionedObjectPermissionsandACLs.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
  Where long-lived Amazon EC2 instances are being used to support more traditional operations practices then this approach can be utilized, the blog [Configure IAM Identity Center ABAC for Amazon EC2 instances and Systems Manager Session Manager](https://aws.amazon.com/blogs/security/configure-aws-sso-abac-for-ec2-instances-and-systems-manager-session-manager/) discusses this form of attribute based access control in more detail. As mentioned earlier, not all resource types support tagging, and of those that do, not all support enforcement using tag policies, so it’s a good idea to evaluate this prior to starting to implement this strategy on an AWS account.
 
 To learn about services that support ABAC, see [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

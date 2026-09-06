@@ -14,7 +14,3 @@ To set up a private connection between your Amazon VPC and your corporate networ
 1. [Create a flow that uses a VPC *source*](flows-create-vpc-source.md). During this process, you add a VPC *interface* to your flow to establish the initial connection between your VPC and your flow. You also specify that same VPC interface as the source for the new flow.
 **Note**
 If your flow already exists, you can update the flow to [add a VPC interface](vpc-interface-add.md) and then [add another source that uses that VPC interface](source-adding-vpc.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,7 +49,3 @@ The update process is irreversible and can't be paused or canceled. We recommend
 You can also update the version using the [UpdateWorkspaceConfiguration](https://docs.aws.amazon.com/grafana/latest/APIReference/API_UpdateWorkspaceConfiguration.html) operation in the Amazon Managed Grafana API.
 
 If you run into issues with your updated workspace, see [Troubleshooting issues with updated workspaces](AMG-workspace-version-update-troubleshoot.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

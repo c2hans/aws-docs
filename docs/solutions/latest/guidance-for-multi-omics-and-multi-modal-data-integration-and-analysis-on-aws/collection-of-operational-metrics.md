@@ -41,7 +41,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 1.  Under **Upload a template file**, choose **Choose file** and select the edited template from your local drive.
 
 1.  Choose **Next** and follow the steps in [Launch the stack](automated-deployment.md#launch-the-stack) in the Automated Deployment section of this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

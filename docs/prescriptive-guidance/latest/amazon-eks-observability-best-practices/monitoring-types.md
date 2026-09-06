@@ -40,7 +40,3 @@ Security monitoring in Amazon EKS is a critical activity that helps organization
 + **Configuration and compliance monitoring** is essential for maintaining security baselines and meeting regulatory requirements. It involves scanning container images continuously for vulnerabilities, monitoring runtime security, and tracking configuration changes that might impact the security posture. Regular compliance audits ensure adherence to industry standards and organizational security policies, and configuration drift detection helps prevent unauthorized changes that could introduce security risks.
 
 Security monitoring in Amazon EKS provides the necessary visibility and control to help protect against modern security threats while ensuring compliance with regulatory requirements. By implementing comprehensive security monitoring, your organization can maintain a strong security posture, respond quickly to security incidents, and demonstrate compliance with various regulatory standards.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

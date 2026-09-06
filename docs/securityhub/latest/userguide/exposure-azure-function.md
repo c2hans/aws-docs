@@ -113,7 +113,3 @@ Take one or more of the following actions to address this exposure:
 
 **Remediation: Investigate and remove malicious packages**
  Review the finding details to identify the affected packages, remove them from your project dependencies, rebuild from a trusted source, and redeploy the app. After remediation, audit your dependency supply chain to confirm no related malicious components remain. For more information, see [Microsoft Defender for App Service](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-app-service-introduction) in the Microsoft Azure documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

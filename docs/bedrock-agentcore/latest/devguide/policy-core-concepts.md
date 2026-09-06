@@ -94,7 +94,3 @@ Cedar analysis uses automated reasoning to examine policies and detect potential
 <a name="concept-policy-authoring-service"></a>
 
 The policy authoring service automatically converts natural language authorization requirements into Cedar policies. When you submit a natural language policy, the service generates syntactically correct Cedar code, validates it against the gateway schema, and runs automated analysis to detect potential issues. This ensures all generated policies are valid and helps identify overly permissive or restrictive rules before deployment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

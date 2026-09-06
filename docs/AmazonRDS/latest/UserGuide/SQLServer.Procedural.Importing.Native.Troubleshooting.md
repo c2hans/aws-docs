@@ -21,7 +21,3 @@ The following are issues you might encounter when you use native backup and rest
 | User <ARN> is not authorized to perform <kms action> on resource <ARN> | You requested an encrypted operation, but didn't provide correct AWS KMS permissions. Verify that you have the correct permissions, or add them. <br />For more information, see [Setting up for native backup and restore](SQLServer.Procedural.Importing.Native.Enabling.md). |
 | The Restore task is unable to restore from more than 10 backup file(s). Please reduce the number of files matched and try again. | Reduce the number of files that you're trying to restore from. You can make each individual file larger if necessary. |
 | Database '{{database\_name}}' already exists. Two databases that differ only by case or accent are not allowed. Choose a different database name. | You can't restore a database with the same name as an existing database. Database names are unique. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

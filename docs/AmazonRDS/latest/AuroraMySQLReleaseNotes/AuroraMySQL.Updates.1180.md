@@ -31,7 +31,3 @@ If you have any questions or concerns, AWS Support is available on the community
   + "tune, decline, kill\_query" – Performs the actions described for "tune", "decline", and "kill\_query".
 
   For information about handling out-of-memory conditions and other troubleshooting advice, see [Amazon Aurora MySQL out of memory issues](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-mysql-troubleshooting-workload.html#AuroraMySQLOOM) in the *Amazon Aurora User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

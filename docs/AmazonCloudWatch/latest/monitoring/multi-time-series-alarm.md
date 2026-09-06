@@ -55,7 +55,3 @@ This alarm differs from aggregated metric-query alarms in several ways:
 + It prioritizes evaluation using the `ORDER BY` clause.
 + For each contributor that breaches the threshold, the alarm sends a contributor state change event, which has a different event type in EventBridge than an alarm state change event. The alarm itself also changes state: as soon as at least one contributor is in alarm, the alarm also enters the alarm state.
 + Some actions however, such as SSM Incident, are triggered at the alarm level. Such actions are not repeated when the list of contributors in alarm changes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

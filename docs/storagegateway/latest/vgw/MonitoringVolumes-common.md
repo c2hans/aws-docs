@@ -32,7 +32,3 @@ The following table describes the Storage Gateway metrics that you can use to ge
 | WriteBytes | The total number of bytes written to your on-premises applications in the reporting period.<br />Use this metric with the `Sum` statistic to measure throughput and with the `Samples` statistic to measure IOPS.<br />Units: Bytes | Yes | Yes |
 | WriteTime | The total number of milliseconds spent on write operations from your on-premises applications in the reporting period. <br />Use this metric with the `Average` statistic to measure latency.<br />Units: Milliseconds | Yes | Yes |
 | QueuedWrites | The number of bytes waiting to be written to AWS, sampled at the end of the reporting period. <br />Units: Bytes | Yes | Yes |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

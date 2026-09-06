@@ -297,7 +297,3 @@ Although the file path information in this code might seem counterintuitive, 32-
 64-bit Windows PowerShell uses a path like:
 
  `c:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

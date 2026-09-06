@@ -37,7 +37,3 @@ To use a message variable, choose the name of an existing attribute from the **A
 1. When you finish entering content and settings for the template, choose **Create**.
 
 To test the template before you use it in a message that you send to users, you can [send a test message](messages-sms.md) that uses the template. If you do this, make sure that you first complete step 8 to specify default values for all the variables in the template. Otherwise, the message might not be sent or it might not render correctly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

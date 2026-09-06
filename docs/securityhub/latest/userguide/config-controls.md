@@ -63,7 +63,3 @@ In linked Regions, you can use any AWS Config recording mode, as long as you are
 The `StatusReasons` field in the `Compliance` object of your finding can help you determine why you have a failed finding for this control. For more information, see [Compliance details for control findings](controls-findings-create-update.md#control-findings-asff-compliance).
 
 For a list of which resources must be recorded for each control, see [Required AWS Config resources for control findings](controls-config-resources.md). For general information about enabling AWS Config and configuring resource recording, see [Enabling and configuring AWS Config for Security Hub CSPM](securityhub-setup-prereqs.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

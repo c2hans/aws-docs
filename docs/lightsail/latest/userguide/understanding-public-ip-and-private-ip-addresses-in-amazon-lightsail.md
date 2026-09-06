@@ -80,7 +80,3 @@ Keep the following in mind when you enable and use IPv6 for your resources:
   + **Plesk** – For more information, see [Configure IPv6 for Plesk instances](amazon-lightsail-configure-ipv6-on-plesk.md).
 **Note**
 PrestaShop does not currently support IPv6 addresses. You can enable IPv6 for the instance, but the PrestaShop software will not respond to requests over the IPv6 network.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

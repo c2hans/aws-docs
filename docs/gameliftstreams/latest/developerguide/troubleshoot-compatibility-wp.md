@@ -26,7 +26,3 @@ Refer to the [Proton GitHub wiki](https://github.com/ValveSoftware/Proton/wiki) 
 
 **Unreal Engine applications on Proton**
 + If you run into problems on Proton 8.x with Electra Media Player, (an Unreal Engine plugin) we recommend using the fixes found in [https://github.com/ValveSoftware/wine/pull/257](https://github.com/ValveSoftware/wine/pull/257).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

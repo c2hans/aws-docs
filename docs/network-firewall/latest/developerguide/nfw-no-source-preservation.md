@@ -43,7 +43,3 @@ To create and use an AWS Network Firewall firewall in no-source-preservation mod
 + **Configure your workloads to use the proxy** – Point your application's proxy environment variables (for example, `http_proxy`, `https_proxy`) to the firewall's `DnsName` on the configured listener port. An explicit proxy setting does not require any route changes. The applications send traffic to the proxy hostname, which automatically resolves to the firewall endpoint.
 
 After you implement a firewall, you can extend its protections to additional VPCs by creating VPC endpoint associations. Network Firewall automatically creates private hosted zones so the firewall's hostname resolves in the associated VPC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

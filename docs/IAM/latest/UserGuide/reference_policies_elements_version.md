@@ -33,7 +33,3 @@ The `Version` policy element specifies the language syntax rules that are to be 
 IAM supports the following `Version` element values:
 + `2012-10-17`. This is the current version of the policy language, and you should always include a `Version` element and set it to `2012-10-17`. Otherwise, you cannot use features such as [policy variables](reference_policies_variables.md) that were introduced with this version.
 + `2008-10-17`. This was an earlier version of the policy language. You might see this version on older existing policies. Do not use this version for any new policies or when you update any existing policies. Newer features, such as policy variables, will not work with your policy. For example, variables such as `${aws:username}` aren't recognized as variables and are instead treated as literal strings in the policy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

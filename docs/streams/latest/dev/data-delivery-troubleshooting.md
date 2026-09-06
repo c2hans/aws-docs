@@ -98,7 +98,3 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-trouble
  A `DeleteStream` request fails with `ResourceInUseException` when the stream has one or more active deliveries. A stream cannot be deleted while deliveries are attached to it.
 
  To resolve: list the deliveries on the stream with `ListChannels` (using a stream filter), delete each delivery with `DeleteChannel`, and then delete the stream.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

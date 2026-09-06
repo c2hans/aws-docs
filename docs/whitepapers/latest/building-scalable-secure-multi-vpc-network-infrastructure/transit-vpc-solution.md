@@ -30,7 +30,3 @@ Transit VPC comes with its own challenges, such as higher costs for running thir
 | Visibility  | VPC Flow Logs  | VPC Flow Logs and CloudWatch Metrics  | Transit Gateway Network Manager, VPC Flow Logs, CloudWatch Metrics  | CloudWatch Metrics  | Network Manager, VPC Flow Logs, CloudWatch Metrics  | CloudWatch Access Logs |
 | Security group <br />cross-referencing  | Supported  | Not supported  | Not supported  | Not supported | Not supported | Not applicable |
 | IPv6 support  | Supported | Depends on virtual appliance  | Supported | Supported | Supported | Supported |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

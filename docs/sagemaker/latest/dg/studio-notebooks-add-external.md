@@ -79,7 +79,3 @@ Attempting to install a package in an environment with incompatible dependencies
 <a name="nbi-add-external-lcc"></a>
 
 Install custom images and kernels on the Studio Classic instance's Amazon EBS volume so that they persist when you stop and restart the notebook, and that any external libraries you install are not updated by SageMaker AI. To do that, use a lifecycle configuration that includes both a script that runs when you create the notebook (`on-create)` and a script that runs each time you restart the notebook (`on-start`). For more information about using lifecycle configurations with Studio Classic, see [Use Lifecycle Configurations to Customize Amazon SageMaker Studio Classic](studio-lcc.md). For sample lifecycle configuration scripts, see [SageMaker AI Studio Classic Lifecycle Configuration Samples](https://github.com/aws-samples/sagemaker-studio-lifecycle-config-examples).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

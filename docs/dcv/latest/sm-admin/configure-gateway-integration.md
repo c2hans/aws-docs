@@ -94,7 +94,3 @@ If the Session Manager is behind a load balancer, TLS client authentication cann
 + Please follow the [section](https://docs.aws.amazon.com/dcv/latest/gw-admin/setting-up-configuring.html) in the Amazon DCV Connection Gateway documentation.
   + use the full path of the certificate file that you copied in the previous step when setting the `cert-file` parameter in the `[resolver]` section
   + use the full path of the key file that you copied in the previous step when setting the `cert-key-file` parameter in the `[resolver]` section
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

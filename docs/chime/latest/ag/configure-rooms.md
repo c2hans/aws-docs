@@ -51,7 +51,3 @@ The following table is a subset of the compatible VTC devices list.
 | Polycom RealPresence Desktop | No | Yes | Audio/Video: OK, Screen: From device is OK |
 | Polycom Trio | Yes | Yes | Audio/Video/Screen: To and From OK |
 | Tandberg C40 | Yes | Yes | Audio/Video/Screen: To and From OK |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

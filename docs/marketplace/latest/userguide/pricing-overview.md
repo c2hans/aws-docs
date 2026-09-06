@@ -12,7 +12,3 @@ Products can take many forms, so the pricing models also take many forms. For ex
 Flexible pricing options include free trial, hourly, monthly, annual, multi-year, and bring your own license (BYOL). AWS handles billing and payments, and charges appear on your customers’ AWS bills.
 
 When you list a product or service, you must also include an end user license agreement and terms of service. That combination of product and license becomes an* offer*. You can use a standard EULA for public offers, listed price using an ISV’s standard end user license agreement (EULA). In addition, software products can be offered with custom pricing and EULA through private offers. Products can also be purchased under a contract with specifed time or usage boundaries.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

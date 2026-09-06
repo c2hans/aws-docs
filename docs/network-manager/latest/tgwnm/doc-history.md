@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/doc-history
 | [Multi-account support](#doc-history) | Network Manager now supports multi-account, which allows you to centrally manage multiple AWS Organizations accounts and transit gateways in a single global network. | May 24, 2022 |
 | [New guide created](#doc-history) | Network Manager documentation was removed from the *AWS Transit Gateway User Guide * and included as part of a new, standalone *AWS Network Manager User Guide*.  | December 2, 2021 |
 | [Documentation updated for AWS Cloud WAN](#doc-history) | The *AWS Network Manager User Guide* was updated, as Network Manager supports both AWS Transit Gateways and AWS Cloud WAN. | December 2, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

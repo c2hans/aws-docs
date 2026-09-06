@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/getting-started
 +  [Virtualizing the satellite ground segment with AWS](https://aws.amazon.com/blogs/publicsector/virtualizing-satellite-ground-segment-aws/)
 +  [Earth observation using AWS Ground Station: A how to guide](https://aws.amazon.com/blogs/publicsector/earth-observation-using-aws-ground-station/)
 +  [Building high-throughput satellite data downlink architectures with AWS Ground Station WideBand DigIF and Amphinicy Blink SDR](https://aws.amazon.com/blogs/publicsector/building-high-throughput-satellite-data-downlink-architectures-aws-ground-station-wideband-digif-amphinicy-blink-sdr/) (and it's associated GitHub repository [aws-samples/aws-groundstation-wbdigif-snpp](https://github.com/aws-samples/aws-groundstation-wbdigif-snpp))
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -214,7 +214,3 @@ Create one online evaluation config per variant with `create_online_evaluation_c
 + Confirm gateway tracing is enabled ([Step 4: Enable AgentCore gateway tracing](#ab-testing-3p-step4-gateway-tracing)) — without it the aggregation pipeline cannot attribute sessions to variants.
 + Confirm each online evaluation config’s `serviceNames` matches the endpoint’s `service.name` and its `logGroupNames` includes the endpoint’s event log group. Online evaluation reads `aws/spans` automatically, so you do not list it — but the event log group (message content) must be listed.
 + Results appear after a session is idle for the configured `sessionTimeoutMinutes`, then within roughly 15 minutes of the next scoring cycle.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

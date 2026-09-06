@@ -43,7 +43,3 @@ This topic describes how to create a custom automation unit. For information abo
 1. In the **IAM role - *optional*** section, specify an IAM role that has the trust policy that Migration Hub needs to run the unit, and the permissions policy that your custom unit needs to perform its actions. To learn how to create such a role, see [IAM role and policies for custom automation units](mha-iam-roles.md#iam-custom-automation-units).
 
 1. Review the details that you entered for the unit, and then choose **Create automation unit**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

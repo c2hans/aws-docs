@@ -21,7 +21,3 @@ Considering the wide variety of PLM and ERP systems, the design for this pattern
 1. Organizations can import data from ERP and PLM to an Amazon Simple Storage Service (Amazon S3) bucket. If those systems are hosted in the AWS Cloud, the file vault might be another S3 bucket and can be replicated for MES. Another way to connect to those applications is through the API by using Amazon API Gateway.
 
 1. Regardless of how organizations import the data from ERP and PLM, an AWS Lambda function can process the received information and route the data to microservice databases, because the ERP and PLM interfaces and this type of data processing are primarily event-driven.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ Support plans offer different response times for your support cases. See [Choosi
 + [Request a service quota increase](create-service-quota-increase.md)
 + [Legacy experience: Creating support cases and case management](case-management-legacy.md)
 + [Using AWS Support with an AWS SDK](sdk-general-information-section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

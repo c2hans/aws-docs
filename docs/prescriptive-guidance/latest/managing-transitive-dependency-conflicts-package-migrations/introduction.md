@@ -304,7 +304,3 @@ Build the roadmap from the report as follows:
 <a name="reanalyze-after-each-pass.c3e3a914-4b16-53c7-bcbe-7f9632e47a26"></a>
 
 Dependency analysis is iterative on large projects. Rerun the script after each migration wave. A clean report confirms that no package in the tree still depends on the version you are replacing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

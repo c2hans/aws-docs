@@ -123,7 +123,3 @@ The following screenshot shows an example AWS WAF rule that applies a CAPTCHA ac
 ![A screenshot of a AWS WAF rule that applies a CAPTCHA action to all requests that don't have a x-amzn-cognito-operation-name header value of AssociateSoftwareToken or VerifySoftwareToken.](http://docs.aws.amazon.com/cognito/latest/developerguide/images/cup-WAF-rule-TOTP.png)
 
 For more information about AWS WAF web ACLs and Amazon Cognito, see [Associate an AWS WAF web ACL with a user pool](user-pool-waf.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

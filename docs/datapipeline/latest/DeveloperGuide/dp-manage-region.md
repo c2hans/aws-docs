@@ -66,7 +66,3 @@ The following list includes regions in which AWS Data Pipeline can orchestrate w
 | Asia Pacific (Tokyo) | ap-northeast-1 |
 | Asia Pacific (Seoul) | ap-northeast-2 |
 | South America (São Paulo) | sa-east-1 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

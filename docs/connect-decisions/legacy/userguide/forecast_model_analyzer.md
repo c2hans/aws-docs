@@ -47,7 +47,3 @@ To view the generated forecast model analyzer details, complete the following st
    You can view up to two forecast model analyzer results simultaneously. The most recent analyzer result remains fully interactive, allowing you to select and apply the preferred forecast method after careful evaluating the products. This will be applied in the next forecast generation. The previous analyzer result is rendered as read-only. You can export both the results of the forecast method with actual demand history. The exported data includes detailed information at the forecast period and granularity level, forecast by the P10/50/90 quantiles. For back test scenarios, the export will include actual demand data and corresponding accuracy metrics.
 
    You can modify the forecast selection method using the forecast model analyzer or under demand plan settings anytime. The changes will be applied during the subsequent forecast cycle. The demand plan page will show meta data around the forecast method for current and the next forecast model.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -160,7 +160,3 @@ You can adjust all the same cluster and database configuration parameters for cl
 Almost all of the parameters work the same way for Aurora serverless writers and readers as for provisioned ones. The exceptions are some parameters that Aurora automatically adjusts during scaling, and some parameters that Aurora keeps at fixed values that depend on the maximum capacity setting.
 
 For example, the amount of memory reserved for the buffer cache increases as a writer or reader scales up, and decreases as it scales down. That way, memory can be released when your database isn't busy. Conversely, Aurora automatically sets the maximum number of connections to a value that's appropriate based on the maximum capacity setting. That way, active connections aren't dropped if the load drops and Aurora serverless scales down. For information about how Aurora serverless handles specific parameters, see [Working with parameter groups for Aurora serverless](aurora-serverless-v2.setting-capacity.md#aurora-serverless-v2.parameter-groups).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

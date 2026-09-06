@@ -17,7 +17,3 @@ For more information about using CloudTrail with Gateway, see the following reso
 + [Amazon Bedrock AgentCore Gateway event types](gateway-event-types.md)
 + [Enable CloudTrail data event logging for Amazon Bedrock AgentCore Gateway resources](enabling-cloudtrail-data-event-logging.md)
 + [Understanding Amazon Bedrock AgentCore Gateway CloudTrail events](understanding-gateway-cloudtrail-log-entries.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

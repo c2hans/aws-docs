@@ -37,7 +37,3 @@ With any type of sidecar format, there might be a small error in your input capt
 **Example problem:** Your video has embedded captions that start at zero. The first instance of dialogue that requires captions is at 00:06:15:00, but the captions appear on the screen three seconds late, at 00:06:18:00.
 
 **Solution:** Subtract three seconds from the captions. Enter **-3** for **Time delta**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

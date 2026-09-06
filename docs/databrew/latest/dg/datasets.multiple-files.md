@@ -200,7 +200,3 @@ Similar to setting a date parameter in a path, you can define a time range when 
 To limit the number of matching files, select a number of files that is greater than 0 and whether you want the latest or the oldest matching files.
 
 ![Checkbox selected for Specify number of files to include with Latest dropdown and 10 files.](http://docs.aws.amazon.com/databrew/latest/dg/images/dynamic-datasets-05.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

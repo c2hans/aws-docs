@@ -16,7 +16,3 @@ This section covers best practices on how to optimize costs for your existing Dy
 + [Evaluate your DynamoDB table usage patterns](CostOptimization_TableUsagePatterns.md)
 + [Evaluate your DynamoDB streams usage](CostOptimization_StreamsUsage.md)
 + [Evaluate your provisioned capacity for right-sized provisioning in your DynamoDB table](CostOptimization_RightSizedProvisioning.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

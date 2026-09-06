@@ -35,7 +35,3 @@ fter creating a version of a policy, you can deploy the policy version as your n
    + The **Execution progress** page displays the status of the policy deployment. You can view all events related to the deployment or you can view specific events. For example, you might want to view the deployment status of core network edges.
 
 1. When finished, the **Alias** changes to **LIVE/LATEST** and the **Change set state** changes to **Execution succeeded**. The **Change set state** of any previous policies that were in a **Ready to execute** change set state change to **Out of date**. This indicates that those policies are now considered older than the current LIVE policy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

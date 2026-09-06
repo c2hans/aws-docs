@@ -105,7 +105,7 @@ When you no longer need this IAM user, we recommend that you remove it to align 
 
 Complete the following steps before creating a cron job or scheduled task for automatic download.
 
-1. If you haven't already, install [Python](https://www.python.org/).
+1. If you haven't already, install [Python](https://www.python.org/) from the Python website.
 
 1. Install the Deadline CLI by running:
 
@@ -169,7 +169,7 @@ Complete the following steps before creating a cron job or scheduled task for au
 
    1. Download the .zip file from GitHub.
 
-      1. Open the [deadline-cloud-samples GitHub repository](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline).
+      1. Open the [deadline-cloud-samples repository](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline) on the GitHub website.
 
       1. Choose **Code** and then, from the dropdown menu, select **Download ZIP**.
 
@@ -459,7 +459,7 @@ Select the tab for your operating system to learn how to configure automatic dow
 
 **Note**
 The scheduled task created using these instructions only work when the user is logged in.
-To set it up at system startup without requiring user login, see the official [Windows documentation](https://learn.microsoft.com/en-us/windows/win32/taskschd/using-the-task-scheduler).
+To set it up at system startup without requiring user login, see the official [Windows documentation](https://learn.microsoft.com/en-us/windows/win32/taskschd/using-the-task-scheduler) on the Microsoft website.
 
 For all steps below use Command Prompt - run as Administrator:
 
@@ -819,7 +819,3 @@ Viewing Launch Agent Execution Logs:
    ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

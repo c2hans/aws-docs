@@ -12,7 +12,3 @@ Collaboration with third parties is essential during development in order to deb
 The following image is a reference architecture for a collaboration chamber. This architecture can be used as reference when designing and building a collaboration chamber on AWS. The AWS security, governance, and monitoring services in the diagram help secure the chamber in order to protect IP. For more information about these services, see [AWS security services for semiconductor development environments](aws-security-services.md) in this guide.
 
 ![Diagram of a collaboration chamber in the AWS Cloud with access from the on-premises network](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aws-semicon-workloads/images/guide-img/f421e0e1-7aa6-442a-ac92-5451f69fd602/images/fbf30cad-6125-4c53-aace-8b7472455b66.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

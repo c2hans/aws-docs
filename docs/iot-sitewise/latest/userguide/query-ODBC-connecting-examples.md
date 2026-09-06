@@ -41,7 +41,3 @@ Driver={AWS IoT SiteWise ODBC Driver};Auth={{AAD}};region={{us-east-1}};idPUsern
 ```
 Driver={AWS IoT SiteWise ODBC Driver};Auth={{IAM}};AccessKeyId={{(your access key ID)}};SecretKey={{(your secret key)}};EndpointOverride={{iotsitewise.us-east-1.amazonaws.com}};Region={{us-east-1}};LogLevel={{2}};
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

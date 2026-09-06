@@ -93,7 +93,3 @@ $ {
 
 **Note**
 After an S3 access point is created and in the `AVAILABLE` state, it can transition to `MISCONFIGURED` if the file system identity associated with the access point can no longer be resolved on the file system, or if the attached volume becomes offline or unmounted. Amazon FSx periodically checks for these conditions and automatically returns the access point to `AVAILABLE` when the underlying issue is resolved. While in the `MISCONFIGURED` state, S3 requests made through the access point may fail. For more information, see [S3 access point is in MISCONFIGURED state](troubleshooting-access-points-for-fsxn.md#misconfigured-access-point).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

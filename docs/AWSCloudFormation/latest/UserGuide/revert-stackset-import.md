@@ -16,7 +16,3 @@ To revert a stack import operation, complete the following procedure.
 1. Delete stack instances from your StackSet. For more information, see [Delete stacks from CloudFormation StackSets](stackinstances-delete.md).
 
 1. Delete your StackSet. For more information, see [Delete CloudFormation StackSets](stacksets-delete.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

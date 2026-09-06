@@ -87,7 +87,3 @@ Connected mobility is a peculiar scenario in Internet of Things (IoT) given that
 Connected mobility application reliability must also encompass the vehicle itself. Vehicles might be operating in remote locations and deal with intermittent connectivity, or loss in connectivity, due to a variety of external factors that are out of your connected mobility application’s control. For example, if an ISP is interrupted for several hours, how will the vehicle behave and respond to these long periods of potential network outage? Implement a minimum set of embedded operations on the vehicle to make it more resilient to the nuances of managing connectivity and communication to AWS control plane.
 
 The vehicle must be able to operate without internet connectivity. You must implement robust operations in your vehicle firmware and software to provide the basic capabilities. Store important messages durably offline and, once reconnected, send those messages to the AWS control plane. Implement exponential retry and back-off logic when connection attempts fail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ Have you registered a device for multi-factor authentication (MFA) yet? We stron
 <a name="id-trusted-device"></a>
 
 After you choose the option **This is a trusted device** from the sign-in page, Amazon CodeCatalyst considers all future sign-ins from that device as authorized. Amazon CodeCatalyst will not present an option to enter an MFA code as long as you use that trusted device. Some exceptions include signing in from a new browser or when your device has been issued an unknown IP address.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

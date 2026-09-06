@@ -40,7 +40,3 @@ kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/<VE
 ```
 
 The installation of the [NVIDIA Kubernetes device plugin](https://github.com/NVIDIA/k8s-device-plugin) will be skipped if the cluster only includes Bottlerocket nodegroups, since Bottlerocket already handles the execution of the device plugin. If you use different AMI families in your cluster’s configurations, you may need to use taints and tolerations to keep the device plugin from running on Bottlerocket nodes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

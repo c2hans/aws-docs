@@ -35,7 +35,3 @@ cassandraRequest = CreateAmazoncassandraClient(tempCredentials);
 For an example that implements temporary credentials using the Python driver to access Amazon Keyspaces, see [Connect to Amazon Keyspaces using the DataStax Python driver for Apache Cassandra and the SigV4 authentication plugin](using_python_driver.md#python_SigV4).
 
 For details about how to call `AssumeRole`, `GetFederationToken`, and other API operations, see the [AWS Security Token Service API Reference](https://docs.aws.amazon.com/STS/latest/APIReference/). For information on getting the temporary security credentials and session token from the result, see the documentation for the SDK that you're working with. You can find the documentation for all the AWS SDKs on the main [AWS documentation page](http://aws.amazon.com/documentation), in the **SDKs and Toolkits** section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -318,7 +318,3 @@ Every iteration contains an output. At the end of a loop run, AWSTOE consolidate
 For example, `ExecuteBash`, `ExecutePowerShell`, and `ExecuteBinary` are action modules which return `STDOUT` as the action module output. `STDOUT` messages are joined with the new line character to produce the overall output of the step in `detailedOutput.json`.
 
 AWSTOE will not consolidate the outputs of unsuccessful iterations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

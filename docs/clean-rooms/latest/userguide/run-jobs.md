@@ -30,7 +30,3 @@ The following topics explain how to run a PySpark job on a configured table in a
 + [Running a PySpark job on a configured table using a PySpark analysis template](run-jobs-with-analysis-template.md)
 + [Viewing recent jobs](view-recent-jobs.md)
 + [Viewing job details](view-job-details.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

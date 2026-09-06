@@ -43,7 +43,3 @@ For more information about using Amazon EKS-optimized Amazon Linux AMIs, see the
 + For version information, see [Retrieve Amazon Linux AMI version information](eks-linux-ami-versions.md).
 + To retrieve the latest IDs of the Amazon EKS-optimized Amazon Linux AMIs, see [Retrieve recommended Amazon Linux AMI IDs](retrieve-ami-id.md).
 + For open-source scripts that are used to build the Amazon EKS-optimized AMIs, see [Build a custom EKS-optimized Amazon Linux AMI](eks-ami-build-scripts.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

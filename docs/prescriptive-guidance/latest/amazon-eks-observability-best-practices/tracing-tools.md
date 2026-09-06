@@ -27,7 +27,3 @@ Amazon EKS supports several AWS and third-party options for implementing distrib
 + [Grafana Tempo](https://grafana.com/docs/tempo/latest/): Distributed tracing
 
   Tempo is a Grafana Labs solution that provides high-scale trace storage and seamless integration with Prometheus metrics. Its cost-effective trace retention model and native integration with Grafana make it suitable for organizations that already use Grafana for visualization. Tempo's architecture is designed specifically for cloud-native environments such as Amazon EKS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

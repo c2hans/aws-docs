@@ -18,7 +18,3 @@ AWS offers four types of Savings Plans: Compute Savings Plans, Database Savings 
 Savings Plans provides low prices in exchange for commitment. The terms of the commitment can't be changed after purchase. As your usage changes, you can sign up for additional Savings Plans.
 Dedicated Instances are charged $2/hour in every Region you have at least one Dedicated Instance running. These dedicated fees are not discounted by Savings Plans.
 Both Compute and EC2 Instance plan types apply to EC2 instances that are a part of Amazon EMR, Amazon EKS, and Amazon ECS clusters. Amazon EKS charges will not be covered by Savings Plans, but the underlying EC2 instances will be.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

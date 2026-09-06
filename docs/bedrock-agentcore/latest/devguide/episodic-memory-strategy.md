@@ -85,7 +85,3 @@ There are multiple ways to utilize episodic memory:
 When performing retrievals, note that memory records are indexed based on "intent" for episodes and "use case" for reflection.
 
 For other memory strategies, memory records are generated on a regular basis throughout an interaction. Episodic memory records, by contrast, will only be generated once AgentCore Memory detects a completed episode. If an episode is not complete, it will take longer to generate because the systems waits to see if the conversation is continued.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,10 +13,10 @@ You cannot change the permissions defined in AWS managed policies. If AWS update
 
 For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) in the *IAM User Guide*.
 
-## AWS managed policy: AWSServiceRoleForGlobalAccelerator
+## AWS managed policy: AWSGlobalAcceleratorSLRPolicy
 <a name="security-iam-awsmanpol-AWSServiceRoleForGlobalAccelerator"></a>
 
-You can't attach `AWSServiceRoleForGlobalAccelerator` to your IAM entities. This policy is attached to a service-linked role that allows AWS Global Accelerator to access AWS services and resources that are used or managed by Global Accelerator. For more information, see [Service-linked role for AWS Global Accelerator](using-service-linked-roles.md).
+You can't attach the `AWSGlobalAcceleratorSLRPolicy` managed policy to your IAM entities. This policy is attached to the `AWSServiceRoleForGlobalAccelerator` service-linked role, which allows AWS Global Accelerator to access AWS services and resources that are used or managed by Global Accelerator. For more information, see [Service-linked role for AWS Global Accelerator](using-service-linked-roles.md).
 
 ## AWS managed policy: GlobalAcceleratorReadOnlyAccess
 <a name="security-iam-awsmanpol-GlobalAcceleratorReadOnlyAccess"></a>
@@ -47,7 +47,3 @@ View details about updates to AWS managed policies for Global Accelerator since 
 |  [AWSGlobalAcceleratorSLRPolicy](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/aws-service-role/AWSGlobalAcceleratorSLRPolicy) – Updated policy | Global Accelerator added new permissions to support IPv6 addresses.<br />Global Accelerator uses `ec2:AssignIpv6Addresses` to update the Global Accelerator ENI on a customer subnet with an IPv6 address for sending and receiving IPv6 traffic, and uses `UnassignIpv6Addresses` to remove the IPv6 address when it's no longer needed. | November 15, 2021 |
 |  [AWSGlobalAcceleratorSLRPolicy](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/aws-service-role/AWSGlobalAcceleratorSLRPolicy) – Updated policy | Global Accelerator added a new permission to help Global Accelerator to diagnose errors.<br />Global Accelerator uses `ec2:DescribeRegions` to determine the AWS Region that a customer is in, which can help Global Accelerator to troubleshoot errors. | May 18, 2021 |
 | Global Accelerator started tracking changes | Global Accelerator started tracking changes for its AWS managed policies. | May 18, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

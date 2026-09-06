@@ -59,7 +59,3 @@ In addition to `and`, `or`, and `not`, the Amazon CloudSearch structured search 
 + `term`—Searches for an individual term or value in any field; for example: `(and (term field=title 'star')(term field=year 1977))`. Syntax: `(term field=FIELD boost=N 'STRING'|VALUE)`.
 
 For more information about searching particular types of data, see the following sections. For more information about the structured search syntax, see [Structured Search Syntax](search-api.md#structured-search-syntax).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

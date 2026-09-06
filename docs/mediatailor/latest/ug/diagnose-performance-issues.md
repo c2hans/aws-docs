@@ -191,7 +191,3 @@ HTTP errors in CDN integrations often indicate configuration issues or service p
 + For performance testing procedures, see [Testing and validation for CDN and MediaTailor integrations](cdn-integration-testing.md)
 
 **Success criteria:** When resolved, response times should meet target benchmarks (manifests less than 200ms, segments less than 100ms), cache hit ratios should exceed 90% for most content types, and origin request volume should be less than 5% of total requests. Performance should be consistent across all geographic regions and device types.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

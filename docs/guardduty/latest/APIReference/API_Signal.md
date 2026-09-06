@@ -56,6 +56,12 @@ The timestamp when this signal was last observed.
 Type: Timestamp
 Required: Yes
 
+ ** activities **   <a name="guardduty-Type-Signal-activities"></a>
+Contains information about the activities, such as API calls, that were observed for this signal.
+Type: Array of [Activity](API_Activity.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 100 items.
+Required: No
+
  ** actorIds **   <a name="guardduty-Type-Signal-actorIds"></a>
 Information about the IDs of the threat actors involved in the signal.
 Type: Array of strings
@@ -98,7 +104,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/guardduty-2017-11-28/Signal)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/guardduty-2017-11-28/Signal)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/guardduty-2017-11-28/Signal)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

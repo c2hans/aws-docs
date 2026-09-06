@@ -150,7 +150,3 @@ The preproduction stage must begin with the creation of a detailed cost model. T
 + The cost of the underlying cloud infrastructure, such as compute for hosting, vector database storage and queries, and guardrails
 
 Every architectural decision—from the choice of vector database to the selection of a foundation model—must be evaluated against this cost model. This practice forces the team to make conscious, data-driven trade-offs and provides the business with a predictable cost forecast for the production deployment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

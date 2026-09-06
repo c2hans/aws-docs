@@ -198,7 +198,3 @@ Once the MDAA deployment is complete, follow these steps to interact with the da
    + The tables created by the crawler should be available for query under the MDAA-created Database
 
 For more detailed information about the configuration files and their purposes, refer to the README.md file in the starter\_kits/basic\_datalake directory of the MDAA repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Modern Data Architecture Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

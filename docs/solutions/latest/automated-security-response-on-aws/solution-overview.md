@@ -41,7 +41,3 @@ The solution also includes a Security Controls (SC) playbook for the [consolidat
 This implementation guide discusses architectural considerations and configuration steps for deploying the Automated Security Response on AWS solution in the AWS Cloud. It includes links to [AWS CloudFormation](https://aws.amazon.com/cloudformation/) templates that launch, configure, and run the AWS compute, network, storage, and other services required to deploy this solution on AWS, using AWS best practices for security and availability.
 
 The guide is intended for IT infrastructure architects, administrators, and DevOps professionals who have practical experience architecting in the AWS Cloud.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

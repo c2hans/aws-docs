@@ -80,7 +80,3 @@ Disabling or deleting the KMS key, or removing CloudTrail permissions on the key
 1. Choose **Save changes**.
 **Note**
 If the KMS key that you chose is disabled or is pending deletion, you cannot save the event data store configuration with that KMS key. You can enable the KMS key, or choose a different key. For more information, see [Key state: Effect on your KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/key-state.html) in the *AWS Key Management Service Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ In this example, the Position 3 sensor has detected a persistent increase in tem
 |  |  |
 | --- |--- |
 |  ![Vibration monitoring dashboard showing total and single axis vibration graphs with ISO alarm threshold exceeded on Dec 15.](http://docs.aws.amazon.com/Monitron/latest/user-guide/images/mobile-understand-sensor-measurement.png)  |  ![Vibration monitoring dashboard showing total and single axis vibration graphs with ISO alarm threshold exceeded.](http://docs.aws.amazon.com/Monitron/latest/user-guide/images/web-understand-sensor-measurement.png)  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

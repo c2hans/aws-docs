@@ -74,7 +74,3 @@ Limitations specific to `next-hop-` fields:
 + The next hop fields are not available for cross-region traffic.
 + The next hop fields are not available for ingress traffic from some network services(for example, transit gateway and Network Load Balancer).
 + If traffic goes through a middlebox (for example, transit gateway or Network Load Balancer), the next hop network interface is the interface associated with the middlebox(such as the transit gateway attachment), not the final destination of the traffic
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

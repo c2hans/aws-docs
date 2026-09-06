@@ -125,7 +125,3 @@ When a member account leaves an AWS Organization, their budget's behavior change
 + Historical cost data from before the account's departure is not included in budget calculations or alerts.
 
 Regularly review your AWS Budgets configuration when organizational changes occur, particularly when member accounts leave the organization. Update budget thresholds and settings to reflect the new standalone account status and ensure continuous cost monitoring.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

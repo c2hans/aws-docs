@@ -23,7 +23,3 @@ The following code examples show how to use the basics of AWS Config with AWS SD
   + [`GetComplianceSummaryByResourceType`](example_config-service_GetComplianceSummaryByResourceType_section.md)
   + [`PutConfigRule`](example_config-service_PutConfigRule_section.md)
   + [`PutDeliveryChannel`](example_config-service_PutDeliveryChannel_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

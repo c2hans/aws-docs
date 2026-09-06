@@ -22,7 +22,3 @@ After you create a monitor, you can use it to access or be alerted to the inform
 + **Use Athena with S3 logs** to access and analyze Internet Monitor internet measurements for your application, if you turned on publishing measurements to S3.
 + **Create Amazon EventBridge notifications** to alert you when Internet Monitor determines there is a health event. To learn more, see [Using Internet Monitor with Amazon EventBridge](CloudWatch-IM-EventBridge-integration.md).
 + **Receive an AWS Health Dashboard notification** automatically, when Internet Monitor determines that an issue is caused by the AWS network. The notification includes the steps that AWS is taking to mitigate the problem.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

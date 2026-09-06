@@ -60,7 +60,3 @@ Before connecting the ESC to the servo hat, **remove the center (power/positive)
 ![Raspberry Pi 5 compute stack mounted on the Evo chassis top plate.](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/custom-car/deepracer_car_top_view.png)
 
 ![Waveshare PCA9685 servo driver HAT mounted on GPIO header extender above Raspberry Pi 5.](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/custom-car/deepracer_servo_hat.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

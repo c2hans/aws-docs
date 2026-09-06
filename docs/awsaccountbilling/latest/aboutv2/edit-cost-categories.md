@@ -20,7 +20,3 @@ You can edit your cost categories using the following procedure. Cost category n
 1. If you want the changes to retroactively apply from a previous date, choose the month you want the parameter changes to apply from.
 
 1. Make changes to parameters and choose **Confirm cost category**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

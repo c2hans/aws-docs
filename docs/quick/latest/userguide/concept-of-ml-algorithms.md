@@ -26,7 +26,3 @@ First, let's look at some of the terminology involved:
 + [How RCF is applied to detect anomalies](how-does-rcf-detect-anomalies.md)
 + [How RCF is applied to generate forecasts](how-does-rcf-generate-forecasts.md)
 + [References for machine learning and RCF](learn-more-about-machine-learning-and-rcf.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

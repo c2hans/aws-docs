@@ -17,7 +17,3 @@ ElastiCache for Valkey meets these requirements:
 + **Vector index support** – ElastiCache supports both HNSW (Hierarchical Navigable Small World) and FLAT index algorithms with COSINE, Euclidean, and inner product distance metrics.
 + **Zero-downtime scalability** – ElastiCache supports scaling without downtime, allowing you to adjust capacity as your cache grows.
 + **Framework integration** – ElastiCache for Valkey integrates with Amazon Bedrock AgentCore through the LangGraph framework, enabling you to implement a Valkey-backed semantic cache for agents built on Amazon Bedrock.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

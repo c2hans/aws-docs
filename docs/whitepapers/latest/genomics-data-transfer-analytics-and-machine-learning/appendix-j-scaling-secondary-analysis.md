@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  Configure your VPC and AWS Batch compute environments to use multiple Availability Zones (AZs) so you have access to a bigger pool of instances. Configure your compute environment to use instance types or instance families that are optimal for your workload, for example, the Sentieon aligner and variant caller both run optimally with 40 cores and 50 GB of RAM and are compute bound so the c5.12xlarge and c5.24xlarge would provide optimal performance and maximum utilization of the compute instances. Try to include as many instance types as possible to increase the pool of instances that can be used in your compute environments.
 
  You may need to increase your Amazon EC2 instance limits, Elastic Block Store (EBS) volumes limit, and move to a shared file system like Amazon Elastic File System (EFS) or Amazon FSx for Lustre to avoid request rate limits in Amazon S3.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

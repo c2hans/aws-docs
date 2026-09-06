@@ -30,7 +30,3 @@ The following table provides the service quotas for AWS Batch that can't be chan
 | Maximum number of attempts with retry strategy for a service job | 10 |
 
 Depending on how you use AWS Batch, additional quotas might apply. To learn about Amazon EC2 quotas, see [Amazon EC2 Service Quotas](https://docs.aws.amazon.com/general/latest/gr/ec2-service.html#limits_ec2) in the *AWS General Reference*. For more information about Amazon ECS quotas, see [Amazon ECS Service Quotas](https://docs.aws.amazon.com/general/latest/gr/ecs-service.html#limits_ecs) in the *AWS General Reference*. For more information about Amazon EKS quotas, see [Amazon EKS Service Quotas](https://docs.aws.amazon.com/general/latest/gr/eks.html#limits_eks) in the *AWS General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

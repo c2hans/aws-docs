@@ -63,7 +63,3 @@ Similarly, Alice can `READ` anything that starts with `s3://DOC-BUCKET-EXAMPLE/a
 ![S3 Access Grants location with IAM role issuing scoped credentials: Bob gets read and write access, Alice gets read-only access.](http://docs.aws.amazon.com/AmazonS3/latest/userguide/images/s3ag-how-it-works.png)
 
 This pattern scales to a high number of users and buckets and simplifies management of those permissions. Rather than editing potentially large S3 bucket policies every time you want to add or remove an individual user-prefix access relationship, you can add and remove individual, discrete grants.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

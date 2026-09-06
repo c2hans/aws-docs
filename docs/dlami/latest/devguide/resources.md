@@ -17,7 +17,3 @@ You can find other resources with related information about DLAMI outside of the
 + [AWS Machine Learning Blog \| New AWS Deep Learning AMIs for Machine Learning Practitioners](https://aws.amazon.com/blogs/machine-learning/new-aws-deep-learning-amis-for-machine-learning-practitioners/)
 + [AWS Partner Network (APN) Blog \| New Training Courses Available: Introduction to Machine Learning & Deep Learning on AWS](https://aws.amazon.com/blogs/apn/new-training-courses-available-introduction-to-machine-learning-deep-learning-on-aws/)
 + [AWS News Blog \| Journey into Deep Learning with AWS](https://aws.amazon.com/blogs/aws/journey-into-deep-learning-with-aws/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

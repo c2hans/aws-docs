@@ -100,7 +100,3 @@ To run the export job on a regular basis, you can create a scheduled trigger usi
    ```
 
 To clean up the AWS resources created in this tutorial, proceed to [Step 4: (Optional) Cleanup](S3-tutorial-step4.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -112,7 +112,3 @@ Here's what our architecture looks like now:
 We have created a continuous delivery pipeline on AWS CodePipeline with three stages: source, build, and deploy. The source code from the GitHub repo created in [Module 1: Set Up Git Repo](module-one.md) is part of the source stage. That source code is then built by AWS CodeBuild in the build stage. Finally, the built code is deployed to the AWS Elastic Beanstalk environment created in [Module 3: Create Build Project](module-three.md).
 
 ![Diagram illustrating a DevOps pipeline using a Git repository as the source, AWS CodePipeline for orchestration, AWS CodeBuild for building the application, and AWS Elastic Beanstalk for deployment.](http://docs.aws.amazon.com/hands-on/latest/create-continuous-delivery-pipeline/images/devops-git-codebuild-elastic-beanstalk.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ The following settings provide additional diagnostic information about the Amazo
 + **Send diagnostic logs** – Send diagnostic information to Amazon Chime when something goes wrong.
 + **About** – Display the app's version and copyright information.
 + **Amazon Chime push service** – When on, you receive device push notifications whenever someone messages you. When off, you don't receive push notifications and must open the Amazon Chime app to see new messages.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

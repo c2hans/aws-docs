@@ -117,7 +117,3 @@ For details on a specific remediation, refer to the Systems Manager automation d
 |  **ASR-ConfigureDynamoDBAutoScaling** <br />DynamoDB tables should automatically scale capacity with demand | DynamoDB.1 |  |  |  | DynamoDB.1 |  | DynamoDB.1 |
 |  **ASR-TagDynamoDBTableResource** <br />DynamoDB tables should be tagged |  |  |  |  |  |  | DynamoDB.5 |
 |  **ASR-EnableDynamoDBDeletionProtection** <br />DynamoDB tables should have deletion protection enabled |  |  |  |  | DynamoDB.6 |  | DynamoDB.6 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

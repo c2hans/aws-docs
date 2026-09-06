@@ -41,7 +41,3 @@ If you approve the service notification, AMS applies the updates within your spe
 In the case of multiple updates, you can exclude specific updates from the patching by specifying the updates to be excluded in your response to the service notification.
 
 AMS sends you a service notification for each stack, of the outcome of each update (that is, success or fail).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

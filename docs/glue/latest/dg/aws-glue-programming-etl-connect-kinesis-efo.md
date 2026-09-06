@@ -26,7 +26,3 @@ Use the following procedures to enable and disable enhanced fan-out for your str
 1. Restart your job.
 
 1. Follow the instructions to *deregister a consumer* in the [Kinesis documentation](https://docs.aws.amazon.com/streams/latest/dev/building-enhanced-consumers-console.html). These instructions apply to the console, but can also be achieved through the Kinesis API. For more information about stream consumer deregistration through the Kinesis API, consult [DeregisterStreamConsumer](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DeregisterStreamConsumer.html) in the Kinesis documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,7 +41,3 @@ The following procedure shows you how to get started with Mail Manager using the
    1. Part of the workflow on the *Email ingress endpoint* page will be to assign the traffic policy and rule set you just created to the ingress endpoint. If you need additional information, see [Creating an ingress endpoint in the SES console](eb-ingress.md#eb-ingress-create-console).
 
 With your first ingress endpoint created, you can start using Mail Manager and utilize its other features such as SMTP relays and email archiving. You can also create additional ingress endpoints with unique traffic policies and rule sets to further customize how you manage all of your incoming email.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

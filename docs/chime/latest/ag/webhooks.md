@@ -53,7 +53,3 @@ The following is a list of webhook-related errors:
 + If the webhook in a room is deleted, using the old URL results in an HTTP 404 error.
 + Invalid webhook URLs result in HTTP 403 errors.
 + If the service is unavailable, the user receives an HTTP 503 error in the response.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

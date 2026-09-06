@@ -91,7 +91,3 @@ This does not apply to the bulk loading API, only direct connections.
 + Plan for and efficiently handle [ConcurrentModificationExceptions](https://docs.aws.amazon.com/neptune/latest/userguide/transactions-exceptions.html) during all write processes, even if only a single connection is writing data at any time. Design your clients for reliability when `ConcurrentModificationExceptions` occur.
 + If you want to delete all of your data, consider using the [fast reset API](https://docs.aws.amazon.com/neptune/latest/userguide/manage-console-fast-reset.html) instead of issuing concurrent delete queries. The latter will take much longer and incur substantial I/O cost compared with the former.
 + If you want to delete most of your data, consider exporting the data you that you want to keep by using [neptune-export](https://github.com/aws/neptune-export) to load the data into a new cluster. Then delete the original cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

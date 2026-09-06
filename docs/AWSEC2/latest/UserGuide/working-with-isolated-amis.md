@@ -16,7 +16,3 @@ The following actions will result in a change to the reference measurements in t
 If you perform any of these actions, you must then update your attestation service with the new reference measurements. For example, you must update your KMS key policy to the new reference measurements if you are using AWS KMS for attestation.
 
 An instance retains its NitroTPM key material for the entire instance lifecycle, and persists through stop/starts and root volume replacement operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

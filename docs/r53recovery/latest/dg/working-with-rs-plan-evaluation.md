@@ -114,7 +114,3 @@ In addition to execution block checks, Region switch evaluates plan-level config
   - **Check category:** Resource accessibility / **Description:** Checks that the CloudWatch alarm exists and is accessible with the configured role.
   - **Check category:** IAM permissions / **Description:** Checks that the plan's role has cloudwatch:DescribeAlarms and cloudwatch:DescribeAlarmHistory permissions required to validate alarm state.
   - **Check category:** Cross-account configuration / **Description:** Checks that the external ID is provided and valid when a cross-account role is specified for the alarm.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

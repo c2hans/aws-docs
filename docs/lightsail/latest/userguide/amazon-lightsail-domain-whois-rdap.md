@@ -23,7 +23,3 @@ To report any illegal activity or violation of the [Acceptable Use Policy](http:
    + **RDAP**: [https://registrar.amazon.com/rdap](https://registrar.amazon.com/rdap)
 
 1. Enter the name of the domain that you want to view information about, and choose **Search**. If the domain you search for was not registered using Amazon Lightsail or Route 53, then you will see a message stating that the domain is not in the registrar database.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

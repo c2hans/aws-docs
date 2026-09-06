@@ -14,7 +14,3 @@ For more information about sharing licenses with your organization in AWS Licens
 The following video provides a walkthrough of the license sharing experience.
 
 [![AWS Videos](http://img.youtube.com/vi/BY3O1p6xHvo/0.jpg)](http://www.youtube.com/watch?v=BY3O1p6xHvo)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

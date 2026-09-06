@@ -82,7 +82,3 @@ The solution does support deployment in GovCloud (US) regions, however **you mus
 +  **automated-security-response-member.template**:
 
  [![automated-security-response-member-template launch button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.amazonaws-us-gov.com/cloudformation/home?region=us-gov-west-1#/stacks/new?stackName=automated-security-response-on-aws-member&templateURL=https:%2F%2Fs3.us-gov-west-1.amazonaws.com%2Fsolutions-reference-us-gov%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member.template&redirectId=ImplementationGuide)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

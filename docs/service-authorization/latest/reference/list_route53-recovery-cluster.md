@@ -94,7 +94,3 @@ Amazon Route 53 Recovery Cluster defines the following condition keys that can b
 | Condition keys | Description | Type |
 | --- | --- | --- |
 |   [route53-recovery-cluster:AllowSafetyRulesOverrides](https://docs.aws.amazon.com/routing-control/latest/APIReference/API_UpdateRoutingControlState.html)  | Override safety rules to allow routing control state updates | Bool |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

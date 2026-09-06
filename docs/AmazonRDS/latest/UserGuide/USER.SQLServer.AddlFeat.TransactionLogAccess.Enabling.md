@@ -47,7 +47,3 @@ exec rdsadmin.dbo.rds_show_configuration @name='target_s3_arn_for_tlog_copy';
 ```
 exec msdb.dbo.rds_tlog_copy_setup @target_s3_arn='arn:aws:s3:::{{amzn-s3-demo-logging-bucket1}}/{{mynewfolder}}';
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

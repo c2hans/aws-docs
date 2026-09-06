@@ -109,7 +109,3 @@ Some AWS Data Exchange actions can only be performed on the AWS Data Exchange co
 | Decline subscription verification requests | `aws-marketplace:RejectAgreementApprovalRequest` |
 | Delete information from subscription verification requests | `aws-marketplace:UpdateAgreementApprovalRequest` |
 | View subscription details | `aws-marketplace:SearchAgreements`<br />`aws-marketplace:GetAgreementTerms` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ By following these best practices, you can enhance the accuracy, reliability, an
 + **Incorporate domain knowledge** – Collaborate closely with domain experts and business stakeholders to incorporate their knowledge and insights into the modeling process. Their domain expertise can help identify potential biases, interpret results, and make informed decisions based on the forecasts.
 + **Scenario analysis and what-if simulations** – Incorporate the ability to perform scenario analysis and what-if simulations into the forecasting solution. This allows stakeholders to explore the effect of different business decisions or external factors on the demand forecast, enabling more informed decision-making.
 + **Automated and scalable pipeline** – Build an automated and scalable pipeline for data ingestion, preprocessing, model training, and deployment. This consistently and efficiently executes the forecasting process, especially when dealing with multiple products or regions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

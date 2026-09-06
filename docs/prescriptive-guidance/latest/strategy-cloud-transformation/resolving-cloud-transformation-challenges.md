@@ -101,7 +101,3 @@ The following mechanism helps you manage and operate your cloud environment in o
   + Ensure that critical workloads are well-architected and have backup and disaster recovery (DR) plans
 
 There are also AWS services, such as AWS Managed Services (AMS), that can help you adopt an automation-first approach. Automations help cloud operations teams focus on innovation instead of day-to-day operational activities. For more information, see [Strategy for using AWS Managed Services to achieve target business outcomes](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aws-managed-services-outcomes/introduction.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

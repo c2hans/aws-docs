@@ -50,7 +50,3 @@ Send at most **50 finding IDs per request**. To remediate a larger backlog, spli
 <a name="batch-remediate-monitor"></a>
 
 Remediations initiated through the API run asynchronously, just like those started from the Web UI. Track their progress on the **Execution History** page of the Web UI, through the solution’s Amazon SNS notifications, or by querying `POST /remediations`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

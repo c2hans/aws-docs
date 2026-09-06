@@ -179,7 +179,3 @@ OpenStreetMap (OSM) and Natural Earth are community-driven open data projects. I
 
 **Note**
 Correcting errors in OpenStreetMap can happen quickly, however, it can take time for corrections to appear in the Daylight map distribution of the OSM data that is used by the Open Data provider. The [Daylight Map Distribution](https://daylightmap.org) website provides more information about the process. Additionally, Amazon Location Service updates the map data used in Amazon Location Service approximately monthly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

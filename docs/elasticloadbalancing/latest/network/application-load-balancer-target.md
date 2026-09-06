@@ -242,7 +242,3 @@ To use the Network Load Balancer that you set up in the previous step as an endp
 1. On the **Integrations** tab, expand **VPC Endpoint Services (AWS PrivateLink)**.
 
 1. Choose **Create endpoint services** to open the **Endpoint services** page. For the remaining steps, see [Create an endpoint service](https://docs.aws.amazon.com/vpc/latest/privatelink/create-endpoint-service.html#create-endpoint-service-nlb) in the *AWS PrivateLink Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

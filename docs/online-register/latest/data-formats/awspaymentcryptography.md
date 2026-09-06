@@ -21,7 +21,3 @@ AWS Payment Cryptography provides the following APIs for data retrieval.
 | <a name="payment-cryptography-ListAliases"></a>[ListAliases](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ListAliases.html) | Return a list of aliases created for all keys in the caller's AWS account and Region | List |
 | <a name="payment-cryptography-ListKeys"></a>[ListKeys](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ListKeys.html) | Return a list of keys created in the caller's AWS account and Region | List |
 | <a name="payment-cryptography-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ListTagsForResource.html) | Return a list of tags created in the caller's AWS account and Region | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

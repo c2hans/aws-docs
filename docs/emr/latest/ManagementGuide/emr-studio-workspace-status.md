@@ -16,7 +16,3 @@ After you create an EMR Studio Workspace, it appears as a row in the **Workspace
 | Idle | The Workspace has stopped. To reactivate an idle Workspace, select it from the Workspaces list. The status changes from Idle to Starting to Ready when you select the Workspace. |
 | Stopping | The Workspace is shutting down and will be set to Idle. When you stop a Workspace, it terminates any corresponding notebook kernels. EMR Studio stops notebooks that have been inactive for a long time.  |
 | Deleting | When you delete a Workspace, EMR Studio marks it for deletion and starts the deletion process. After the deletion process completes, the Workspace disappears from the list. When you delete a Workspace, its notebook files will remain in the Amazon S3 storage location. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

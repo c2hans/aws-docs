@@ -65,7 +65,3 @@ The following table shows the format that you should use when constructing an AR
 | Manual DB snapshot | arn:aws:rds:{{<region>}}:{{<account>}}:snapshot:{{<name>}}<br />For example:<pre>arn:aws:rds:{{us-east-2}}:{{123456789012}}:snapshot:{{my-mysql-db-snap}}</pre> |
 | Manual DB cluster snapshot | arn:aws:rds:{{<region>}}:{{<account>}}:cluster-snapshot:{{<name>}}<br />For example:<pre>arn:aws:rds:{{us-east-2}}:{{123456789012}}:cluster-snapshot:{{my-aurora-cluster-snap}}</pre> |
 | DB subnet group | arn:aws:rds:{{<region>}}:{{<account>}}:subgrp:{{<name>}}<br />For example:<pre>arn:aws:rds:{{us-east-2}}:{{123456789012}}:subgrp:{{my-subnet-10}}</pre> |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -104,7 +104,3 @@ To get the CodeCommit repository's name, run the [list-repositories](how-to-view
 Changing the name of the AWS CodeCommit repository changes the SSH and HTTPS URLs that users need to connect to the repository. Users cannot connect to this repository until they update their connection settings. Also, because the repository's ARN changes, changing the repository name invalidates any IAM user policies that rely on this repository's ARN.
 
 1. To verify the changed name, run the **list-repositories** command and review the list of repository names.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

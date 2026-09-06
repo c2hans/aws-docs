@@ -43,7 +43,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 +  [Editions and supported features of SQL Server 2022 on Linux](https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-editions-and-components-2022?view=sql-server-ver16)
 
  **Related tools:** [Windows to Linux replatforming assistant for Microsoft SQL Server Databases](https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/replatform-sql-server.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

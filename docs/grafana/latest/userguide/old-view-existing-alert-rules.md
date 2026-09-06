@@ -20,7 +20,3 @@ For Grafana workspaces that support Grafana version 8.x, see [Grafana alerting](
 +  **Filter alerts by state** – In **States**, select which alert states you want to see. All others will be hidden.
 +  **Pause or resume an alert** – choose the **Pause** or **Play** icon next to the alert to pause or resume evaluation.
 +  **Access alert rule settings** – Choose the alert name or the **Edit alert rule** (gear) icon. Amazon Managed Grafana opens the **Alert** tab of the panel where the alert rule is defined. This is helpful when an alert is firing, but you don’t know which panel it is defined in.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

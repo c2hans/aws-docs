@@ -19,7 +19,3 @@ The JavaScript API for Amazon SQS is exposed through the `AWS.SQS` client class.
 + [Managing Visibility Timeout in Amazon SQS](sqs-examples-managing-visibility-timeout.md)
 + [Enabling Long Polling in Amazon SQS](sqs-examples-enable-long-polling.md)
 + [Using Dead Letter Queues in Amazon SQS](sqs-examples-dead-letter-queues.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for JavaScript SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

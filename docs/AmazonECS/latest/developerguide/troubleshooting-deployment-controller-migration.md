@@ -252,7 +252,3 @@ If you decide that you want to return to the previous deployment controller, you
 + If you used the Amazon ECS console, or the AWS CLI, you can update the service. For more information, see [Updating an Amazon ECS service](update-service-console-v2.md).
 
   If you use the update-service command, use the `--deployment-controller` option and set it to the previous deployment controller.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

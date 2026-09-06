@@ -7,6 +7,25 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/releas
 
 We recommend subscribing to the RSS feed so updates to these notes are delivered to your Inbox.
 
+## September 2026
+<a name="_september_2026"></a>
+
+### Evaluations: TypeScript agent framework support
+<a name="_evaluations_typescript_agent_framework_support_2"></a>
+
+Amazon Bedrock AgentCore Evaluations now evaluates agents built with the TypeScript versions of supported frameworks, alongside the Python versions. Supported TypeScript frameworks are Strands Agents, LangGraph, OpenAI Agents, and the Vercel AI SDK (a TypeScript-only framework).
+
+For more information, see [Supported agent frameworks](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/supported-frameworks.html).
+
+### Consent Portal for AgentCore Identity
+<a name="_consent_portal_for_agentcore_identity_2"></a>
+
+Amazon Bedrock AgentCore Identity now offers a Consent Portal, a hosted portal that lets your end users grant consent for an agent to access resources on their behalf. You direct users to the portal’s `portalUrl`, where they review and approve the requested access before the agent proceeds.
+
+A Consent Portal requires an Amazon Bedrock AgentCore Gateway configured with JWT inbound authentication as its source, and an identity provider whose permitted scopes include `openid`. You create and manage portals with the create, get, list, update, and delete consent-portal operations.
+
+See [Consent Portal](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity-consent-portal.html).
+
 ## August 2026
 <a name="_august_2026"></a>
 
@@ -412,7 +431,7 @@ Your coding agent can now spin up an AgentCore agent, cloud browser, run code in
 ### AgentCore CLI: Agent Inspector
 <a name="_agentcore_cli_agent_inspector_2"></a>
 
-Developers running `agentcore dev` now get a browser-based UI for chatting with agents, inspecting token usage and tool calls, viewing execution traces on a timeline, and browsing deployed AgentCore Memory — all locally before pushing to the cloud. See [documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-get-started-cli.html).
+Developers running `agentcore dev` now get a browser-based UI for chatting with agents, inspecting token usage and tool calls, viewing execution traces on a timeline, and browsing deployed AgentCore Memory — all locally before pushing to the cloud. See [Get started with the AgentCore CLI](runtime-get-started-cli.md).
 
 ### Observability: UI Enhancements for Trace and Trajectory
 <a name="_observability_ui_enhancements_for_trace_and_trajectory_2"></a>
@@ -437,7 +456,7 @@ AgentCore launched cross-account observability. Customers can monitor logs, metr
 ### AgentCore CLI: Resource Import and Bash Commands
 <a name="_agentcore_cli_resource_import_and_bash_commands_2"></a>
 
-CLI now supports importing existing AgentCore resources (evaluator and online evaluation config) from your account, executing bash commands within the agent’s Runtime or locally within its container, BYO Dockerfile for Runtime, and Memory streaming. See [documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-get-started-cli.html).
+CLI now supports importing existing AgentCore resources (evaluator and online evaluation config) from your account, executing bash commands within the agent’s Runtime or locally within its container, BYO Dockerfile for Runtime, and Memory streaming. See [Get started with the AgentCore CLI](runtime-get-started-cli.md).
 
 ### Browser: OS-Level Interaction Capabilities
 <a name="_browser_os_level_interaction_capabilities_2"></a>
@@ -485,7 +504,7 @@ Support deployed for `bedrock-agentcore:RuntimeAuthorizerType` (mandate specific
 ### AgentCore CLI is now Generally Available
 <a name="_agentcore_cli_is_now_generally_available_2"></a>
 
-AgentCore CLI reached GA (v0.4.0), providing a comprehensive command-line tool for building and deploying AI agents in minutes. Streamlines the full lifecycle — scaffolding projects with multiple frameworks (Strands, LangChain, Google ADK, OpenAI Agents), local development with hot reload, adding capabilities like memory and credentials, and deploying to production with full infrastructure management. See [documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-get-started-cli.html).
+AgentCore CLI reached GA (v0.4.0), providing a comprehensive command-line tool for building and deploying AI agents in minutes. Streamlines the full lifecycle — scaffolding projects with multiple frameworks (Strands, LangChain, Google ADK, OpenAI Agents), local development with hot reload, adding capabilities like memory and credentials, and deploying to production with full infrastructure management. See [Get started with the AgentCore CLI](runtime-get-started-cli.md).
 
 ### Browser and Code Interpreter: Chrome Policies and Custom Root CA Support
 <a name="_browser_and_code_interpreter_chrome_policies_and_custom_root_ca_support_2"></a>
@@ -555,7 +574,7 @@ AgentCore Runtime now supports [Python 3.14 for Direct Code Deploy](https://docs
 ### AgentCore CLI: Additional Features
 <a name="_agentcore_cli_additional_features_2"></a>
 
-AgentCore CLI integrates with AgentCore Gateway and introduces logs/traces commands. New and updated commands: `agentcore add` (incorporate Gateways and Gateway Targets into your project), `agentcore logs` (view logs for deployed agents), `agentcore traces` (view traces for deployed agents). Individual memory resources can now be deployed independently. See [documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-get-started-cli.html).
+AgentCore CLI integrates with AgentCore Gateway and introduces logs/traces commands. New and updated commands: `agentcore add` (incorporate Gateways and Gateway Targets into your project), `agentcore logs` (view logs for deployed agents), `agentcore traces` (view traces for deployed agents). Individual memory resources can now be deployed independently. See [Get started with the AgentCore CLI](runtime-get-started-cli.md).
 
 ### Latency Improvements in Runtime
 <a name="_latency_improvements_in_runtime_2"></a>
@@ -692,7 +711,3 @@ AgentCore resources now support tagging for cost allocation, access control, and
 <a name="_initial_release_preview_2"></a>
 
 Initial release of the Amazon Bedrock AgentCore Developer Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

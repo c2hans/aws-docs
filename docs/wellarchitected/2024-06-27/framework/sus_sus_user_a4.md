@@ -47,7 +47,3 @@ Decommission unused assets in your workload to reduce the number of cloud resour
 + [AWS re:Invent 2023 - Sustainable architecture: Past, present, and future ](https://www.youtube.com/watch?v=2xpUQ-Q4QcM)
 + [AWS re:Invent 2022 - Preserving and maximizing the value of digital media assets using Amazon S3 ](https://www.youtube.com/watch?v=8OI0Uu-YvD8)
 + [AWS re:Invent 2023 - Optimize costs in your multi-account environments ](https://www.youtube.com/watch?v=ie_Mqb-eC4A)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

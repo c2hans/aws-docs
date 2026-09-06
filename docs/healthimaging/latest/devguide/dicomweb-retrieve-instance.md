@@ -48,7 +48,3 @@ JPEG XL Image Compression - `1.2.840.10008.1.2.4.112` - if the instance is store
 Instances stored in HealthImaging with one or more image frames encoded in the MPEG family of [Transfer Syntaxes](supported-transfer-syntaxes.md) (which includes MPEG2, MPEG-4 AVC/H.264 and HEVC/H.265) may be retrieved with the corresponding transfer-syntax UID. For example, `1.2.840.10008.1.2.4.100` if the instance is stored as MPEG2 Main Profile Main Level.
 
    For more information, see [Supported transfer syntaxes](supported-transfer-syntaxes.md) and [Image frame decoding libraries for AWS HealthImaging](reference-libraries.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

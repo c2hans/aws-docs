@@ -69,7 +69,3 @@ You can create up to 20 buckets in the Lightsail object storage service per acco
 <a name="does-object-storage-support-monitoring"></a>
 
 With Lightsail object storage, customers can easily view metrics on the total used space within a bucket and number of objects within the bucket. Alerting based on these metrics is also supported. For more information, see [Viewing metrics for your bucket in Amazon Lightsail](amazon-lightsail-viewing-bucket-metrics.md) and [Create bucket metric alarms](amazon-lightsail-adding-bucket-metric-alarms.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

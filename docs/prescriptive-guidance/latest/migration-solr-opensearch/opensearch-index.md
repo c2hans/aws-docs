@@ -64,7 +64,3 @@ OpenSearch supports [dynamic mapping,](https://docs.opensearch.org/latest/field-
 The `properties` section in the mappings block defines how you configure individual fields.
 
 Index templates let you dynamically initialize new indexes with predefined mappings and settings. For example, if you continuously index log data or any time-series data, you can define an index template so that all indexes have the same number of shards and replicas.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

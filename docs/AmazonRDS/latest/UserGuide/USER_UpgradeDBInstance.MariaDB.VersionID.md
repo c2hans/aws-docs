@@ -46,7 +46,3 @@ The following table explains the naming scheme for RDS for MariaDB version 10.4.
 | --- | --- |
 | ≥ 30 | New DB instances use *major.minor.patch.YYMMDD*, for example, 10.4.30.R2.20231201.<br />Existing DB instances might use *major.minor.patch*, for example, 10.4.30.R2, until your next major or minor version upgrade. |
 | < 30 | Existing DB instances use *major.minor.patch*, for example, 10.4.29.R2. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

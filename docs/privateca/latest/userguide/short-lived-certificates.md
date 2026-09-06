@@ -32,7 +32,3 @@ AWS Certificate Manager cannot issue certificates signed by a private CA with sh
 Use of short-lived certificates is supported by the following AWS services:
 + [Amazon AppStream](https://docs.aws.amazon.com/appstream/latest/developerguide/)
 + [Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

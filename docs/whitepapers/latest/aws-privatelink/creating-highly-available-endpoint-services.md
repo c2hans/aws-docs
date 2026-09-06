@@ -52,7 +52,3 @@ myservice.example.com
  In the following figure, the owner of VPC B is the service provider, and has configured a Network Load Balancer with targets in two different Availability Zones. The service consumer (VPC A) has created interface endpoints in the same two Availability Zones in their Amazon VPC. Requests to the service from instances in VPC A can use either interface endpoint. The DNS name resolution of the Endpoint Specific Regional DNS Hostname will alternate between the two IP addresses. NLB attribute: Client routing policy (DNS Record) will not influence the DNS name resolution of the Endpoint Specific Regional DNS Hostname.
 
 ![A diagram depicting round-robin DNS load balancing.](http://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/round-robin-dns.jpeg)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

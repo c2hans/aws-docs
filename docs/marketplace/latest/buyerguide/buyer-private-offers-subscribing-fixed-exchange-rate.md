@@ -51,7 +51,3 @@ For more information, see [Payment methods](buyer-paying-for-products.md#payment
 **Important Note on Cost and Usage Reports (CUR)**
 When you purchase a Private Offer in a non-USD currency (EUR, GBP, JPY, AUD), please be aware that your AWS Cost and Usage Reports (CUR) will display all usage and costs in USD only. This is intended behavior, as CUR reports currently support pricing in USD only.
 While your invoices will reflect the original currency of your Private Offer with the locked exchange rate, the CUR data will show USD-converted amounts. For accurate financial reconciliation in your original offer currency, please refer to your invoices rather than relying solely on CUR reports.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

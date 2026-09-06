@@ -21,7 +21,3 @@ The following diagram illustrates how a CCoE can provide a centralized approach 
 + Structure your CCoE to maintain strategic oversight while embedding specialized expertise for each cloud provider. Focus on recruiting deep expertise in individual cloud platforms instead of seeking rare multicloud specialists, and foster internal knowledge sharing to build organizational capabilities.
 + Empower your CCoE to establish enterprise-wide standards for cross-cutting concerns such as security and observability, while giving individual teams the autonomy to execute within these guidelines by using cloud-native tools and services.
 + Develop a comprehensive talent strategy that balances deep expertise in primary cloud platforms with broader architectural knowledge. Focus on building teams that combine strong, cloud-specific skills with enterprise architecture experience.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

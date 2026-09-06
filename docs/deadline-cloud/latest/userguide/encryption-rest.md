@@ -12,7 +12,3 @@ Encrypting data means sensitive data saved on disks isn't readable by a user or 
 Deadline Cloud deletes Amazon Elastic Block Store volumes when service-managed fleet worker instances terminate.
 
 For information about how Deadline Cloud uses AWS KMS for encrypting data at rest, see [Key management](key-management.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

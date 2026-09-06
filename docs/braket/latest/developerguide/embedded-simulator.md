@@ -11,7 +11,3 @@ Embedded simulators operate by having the simulation embedded directly within th
 <a name="lightning-simulator"></a>
 
 You can use PennyLane's lightning simulators as embedded simulators on Braket. With PennyLane's lightning simulators, you can use advanced gradient computation methods, such as [adjoint differentiation](https://docs.pennylane.ai/en/stable/introduction/interfaces.html#simulation-based-differentiation), to evaluate gradients faster. The [lightning.qubit simulator](https://docs.pennylane.ai/projects/lightning/en/stable/lightning_qubit/device.html) is available as a device through Braket NBIs and as an embedded simulator, whereas the lightning.gpu simulator needs to be run as an embedded simulator with a GPU instance. See the [Embedded simulators in Braket Hybrid Jobs](https://github.com/amazon-braket/amazon-braket-examples/blob/main/examples/hybrid_jobs/4_Embedded_simulators_in_Braket_Hybrid_Jobs/Embedded_simulators_in_Braket_Hybrid_Jobs.ipynb) notebook for an example of using lightning.gpu.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

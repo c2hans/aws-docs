@@ -22,7 +22,3 @@ The remaining pages cover complete runbooks, migration phases, target-specific p
 +  [Monitor the solution with Service Catalog AppRegistry](monitoring-the-solution-with-aws-service-catalog-appregistry.md) - monitor deployed resources with Application Manager and CloudWatch Application Insights.
 +  [Troubleshooting](troubleshooting.md) - diagnose platform health, connectivity, authentication, workflow, snapshot, metadata, and backfill issues.
 +  [Uninstall the solution](uninstall-the-solution.md) - remove Migration Assistant after cutover and the rollback window.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

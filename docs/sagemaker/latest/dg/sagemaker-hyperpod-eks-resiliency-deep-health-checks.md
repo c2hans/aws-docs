@@ -132,7 +132,3 @@ The following is an example output of the NCCL connectivity test.
 
 2024-08-20T23:22:43Z    info    Nccl test successful. Summary: NcclMaxAlgoBw: 1.190000, NcclAvgAlgoBw: 0.488398, NcclThresholdAlgoBw: 1.180000, NcclOutOfBoundError: OK, NcclOperations: all_reduce_perf, NcclTotalDevices: 2, NcclNodes: 2, NcclClusterMessage:
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

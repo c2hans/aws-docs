@@ -22,7 +22,3 @@ If the provider has marked a product as containing protected health information 
 The following video explains more about how to export assets from AWS Data Exchange (starting at 2:18).
 
 [![AWS Videos](http://img.youtube.com/vi/VpIdwc3zLlo/0.jpg)](http://www.youtube.com/watch?v=VpIdwc3zLlo)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ The following table describes significant changes to this guide.
 | Major update | Significant changes and additions to all sections of the guide. | March 25, 2024 |
 | Update | Updated with the latest details on AWS Control Tower controls. | November 17, 2022 |
 | Initial publication | — | September 10, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

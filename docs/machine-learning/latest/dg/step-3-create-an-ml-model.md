@@ -32,7 +32,3 @@ We are no longer updating the Amazon Machine Learning service or accepting new u
 Now you are ready to [review your model's performance and set a cut-off score](step-4-review-model-and-set-cutoff.md).
 
  For more information about training and evaluating models, see [Training ML Models](training-ml-models.md) and [Evaluating ML Models](evaluating_models.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

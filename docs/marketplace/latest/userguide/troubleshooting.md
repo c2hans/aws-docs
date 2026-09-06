@@ -47,7 +47,3 @@ The following table describes common seller registration error messages and thei
 | Your business location is in a non-supported jurisdiction. You are not eligible to publish paid products. | Your business location is in a non-supported jurisdiction. You aren't eligible to publish paid products. For more information on eligible jurisdictions, see [Eligible jurisdictions for paid products](seller-eligibility.md#eligible-jurisdictions).  |
 | AWS account is not registered as a seller in AWS Marketplace. | You aren't registered as a seller in AWS Marketplace. Complete registration from [AWS Partner Central](https://aws.amazon.com/marketplace/management/seller-settings/register). |
 | Seller must have a public profile to be able to become a paid seller. | Your seller public profile must be completed and approved. Complete it and check your account status in [AWS Partner Central](https://aws.amazon.com/marketplace/management/seller-settings). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

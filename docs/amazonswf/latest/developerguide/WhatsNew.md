@@ -38,7 +38,3 @@ The following table describes the important changes to the documentation since t
 | Update | Updates and fixes. | August 1, 2013 |
 | Update | Updated the document to describe how to use IAM for access control. | February 22, 2013 |
 | Initial Release | This is the first release of the *Amazon Simple Workflow Service Developer Guide*. | October 16, 2012 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

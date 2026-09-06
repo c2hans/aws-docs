@@ -37,7 +37,3 @@ If you create an application outside of Studio, ensure that you manually enable 
 Once the application is created, the Studio Classic UI displays a *The application has been successfully created* message and the new application appears in the list of **Serverless applications**.
 
 To connect to your EMR Serverless application, see [Connect to an EMR Serverless application from Studio](connect-emr-serverless-application.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,7 +54,3 @@ A device can handle jobs that it runs using either of the following ways.
   If the device remains online, it is notified of all pending job executions when a new pending job execution becomes available. When this occurs, the device can continue as described in step 2.
 
 If the device is unable to carry out the job, it should call the [UpdateJobExecution](jobs-mqtt-api.md#mqtt-updatejobexecution) MQTT API to update the job status to `REJECTED`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

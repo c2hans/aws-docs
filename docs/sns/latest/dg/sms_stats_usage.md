@@ -161,7 +161,3 @@ PublishTimeUTC,MessageId,DestinationPhoneNumber,MessageType,DeliveryStatus,Price
 2016-05-10T03:00:29.561Z,1e29d394-d7f4-4dc9-996e-26412032c344,1XXX5550100,Promotional,Message has been accepted by phone carrier,0.34322,0,1
 2016-05-10T03:00:30.769Z,98ba941c-afc7-4c51-ba2c-56c6570a6c08,1XXX5550100,Transactional,Message has been accepted by phone carrier,0.27815,0,1
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

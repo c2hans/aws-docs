@@ -122,7 +122,3 @@ While we will test the system and implement recovery strategies in the [Reliabil
  Choosing managed services and features for your storage and scheduling systems reduces your operational burden, for example [AWS Parallel Computing Service](https://aws.amazon.com/pcs/), and using the persistent file system mode in [Amazon FSx for Lustre](https://aws.amazon.com/fsx/lustre/). At the scheduler level, implement job retries on failure.
 
  For example, if using AWS Batch you can implement [Automated job retries](https://docs.aws.amazon.com/batch/latest/userguide/job_retries.html) strategies to take action based on the reason for failure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

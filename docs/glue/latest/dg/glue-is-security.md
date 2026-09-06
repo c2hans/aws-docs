@@ -246,7 +246,3 @@ You can attach the **AWSGlueSessionUserRestrictedPolicy** to IAM roles attached 
  If you'd like to configure a policy tailored to your specific needs, see [ IAM documentation about configuring resources for a policy ](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html). For example, in order to isolate sessions that belong to an user, you can use the TagOnCreate feature supported by AWS Glue Interactive sessions. See [Make your session private with TagOnCreate](#glue-is-tagoncreate).
 
  Interactive sessions supports limiting session creation based on certain VPC conditions. See [Control policies that control settings using condition keys](security_iam_id-based-policy-examples.md#glue-identity-based-policy-condition-key-vpc).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

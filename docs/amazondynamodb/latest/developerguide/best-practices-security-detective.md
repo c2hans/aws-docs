@@ -41,7 +41,3 @@ For more information, see [AWS Tagging Strategies](https://aws.amazon.com/answer
 **Monitor your usage of Amazon DynamoDB as it relates to security best practices by using AWS Security Hub CSPM.**
 Security Hub CSPM uses security controls to evaluate resource configurations and security standards to help you comply with various compliance frameworks.
 For more information about using Security Hub CSPM to evaluate DynamoDB resources, see [Amazon DynamoDB controls](https://docs.aws.amazon.com/securityhub/latest/userguide/dynamodb-controls.html) in the *AWS Security Hub CSPM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

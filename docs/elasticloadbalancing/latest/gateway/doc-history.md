@@ -17,7 +17,3 @@ The following table describes the releases for Gateway Load Balancers.
 | [Available in new regions](#doc-history) | This release adds support for Gateway Load Balancers in the Canada (Central), Asia Pacific (Seoul), and Asia Pacific (Osaka) region. | March 31, 2021 |
 | [Available in new regions](#doc-history) | This release adds support for Gateway Load Balancers in the US West (N. California), Europe (London), Europe (Paris), Europe (Milan), Africa (Cape Town), Middle East (Bahrain), Asia Pacific (Hong Kong), Asia Pacific (Singapore), and Asia Pacific (Mumbai) region. | March 19, 2021 |
 | [Initial release](#doc-history) | This release of Elastic Load Balancing introduces Gateway Load Balancers. | November 10, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

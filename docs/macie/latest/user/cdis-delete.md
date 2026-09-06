@@ -61,7 +61,3 @@ If the request succeeds, Macie returns an empty HTTP 200 response. Otherwise, Ma
 ------
 
 To review a custom data identifier's settings after you delete it, use the [GetCustomDataIdentifier](https://docs.aws.amazon.com/macie/latest/APIReference/custom-data-identifiers-id.html) operation of the Amazon Macie API. Or, if you're using the AWS CLI, run the [get-custom-data-identifier](https://docs.aws.amazon.com/cli/latest/reference/macie2/get-custom-data-identifier.html) command. For the `id` parameter, specify the custom data identifier's ID. After you delete a custom data identifier, you can't access its settings by using the Amazon Macie console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ Promote organizational commitment to DevOps adoption with clear strategy, commun
 + [[OA.LS.3] Drive continued improvement through business reviews](oa.ls.3-drive-continued-improvement-through-business-reviews.md)
 + [[OA.LS.4] Open dialogue between leadership and teams](oa.ls.4-open-dialogue-between-leadership-and-teams.md)
 + [[OA.LS.5] Assemble a cross-functional enabling team that focuses on organizational transformation](oa.ls.5-assemble-a-cross-functional-enabling-team-that-focuses-on-organizational-transformation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

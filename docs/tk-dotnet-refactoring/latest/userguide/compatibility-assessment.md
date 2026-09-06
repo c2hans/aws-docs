@@ -29,7 +29,3 @@ After the extension is installed, you can run a compatibility assessment with To
 There is an **Error list** pane at the bottom of the window that displays the incompatibilities that Toolkit for .NET Refactoring discovered during the assessment. Select an entry in the list to view the incompatibility in the source code. The incompatible code is highlighted.
 
 You can change the settings you entered into the **Getting Started** screen by selecting the **Tools** tab and choosing **Options** from the drop-down menu. Under **AWS Toolkit for .NET Refactoring VS Extension**, select **Data usage sharing** to select a different **AWS Named Profile**, **Add a named profile**, or to change your usage data selection. Choose **General** under **AWS Toolkit for .NET Refactoring VS Extension** to update the **Target Framework**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

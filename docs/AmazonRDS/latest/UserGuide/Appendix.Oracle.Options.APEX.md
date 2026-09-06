@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.Options.APEX.html
 ---
 
-# Oracle Application Express (APEX)
+# Oracle APEX
 <a name="Appendix.Oracle.Options.APEX"></a>
 
-Amazon RDS supports Oracle Application Express (APEX) through the use of the `APEX` and `APEX-DEV` options. You can deploy Oracle APEX as a runtime environment or as a full development environment for web-based applications. Using Oracle APEX, you can build applications entirely within the web browser. For more information, see [Oracle application Express](https://apex.oracle.com/) in the Oracle documentation.
+Amazon RDS supports Oracle APEX through the use of the `APEX` and `APEX-DEV` options. You can deploy Oracle APEX as a runtime environment or as a full development environment for web-based applications. Using Oracle APEX, you can build applications entirely within the web browser. For more information, see [Oracle APEX](https://apex.oracle.com/) in the Oracle documentation.
 
 **Topics**
 + [Oracle APEX components](#Appendix.Oracle.Options.APEX.components)
@@ -31,7 +31,3 @@ Amazon RDS doesn't support the Oracle XML DB HTTP server with the embedded PL/SQ
   For more information about these listener types, see [About choosing a web listener](https://docs.oracle.com/en/database/oracle/apex/23.2/htmig/choosing-web-listener.html) in the Oracle documentation.
 
 When you add the `APEX` and `APEX-DEV` options to your RDS for Oracle DB instance, Amazon RDS installs the Oracle APEX repository only. Install your listener on a separate host.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

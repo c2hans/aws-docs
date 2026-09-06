@@ -14,7 +14,3 @@ At a high level, there are three steps to using Device Farm for client-side Appi
 1. Once the session is running, you can [copy the Appium endpoint URL](appium-endpoint-interaction.md), and use it either through a stand-alone tool (like [Appium Inspector](https://github.com/appium/appium-inspector)) or from your Appium test code in your IDE. The URL will be valid for the duration of the remote access session.
 
 1. And finally, once your Appium test has started, you can [review your Appium server logs](appium-endpoint-server-logs.md) live during the test execution alongside the video stream of your device.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/determining-iops-need
  Cold HDD volumes (`sc1`) are suitable for legacy systems that you retain for occasional reference or archive purposes. These systems are accessed less frequently and only a few scans are performed each day on the volume.
 
  You can create striped volumes (areas of free space on multiple volumes) for more IOPS and larger capacity. The maximum IOPS an EC2 instance can support across all EBS volumes is 260,000. The maximum IOPS an RDS instance can support is 256,000. Use only Amazon EBS-optimized instances with `gp2` and PIOPS. You can use multiple EBS volumes individually for different data files, but striped volumes allow better throughput, balancing, scalability, and burstable performance (for `gp2`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

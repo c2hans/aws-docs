@@ -56,7 +56,3 @@ Updates to Security Hub Finding fields from Jira Service Management displays in 
 
 **Note**
 Jira does not duplicate findings. If a Security Hub CSPM finding is sent to Jira with the same finding ID as one previously sent to Jira, Jira updates the ticket with the most recent information in the finding.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

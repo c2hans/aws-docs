@@ -73,7 +73,3 @@ Because there is no way to prevent Snapshots from consuming disk space greater t
 If a snapshot is created when the disks are full, deleting files from the primary SSD tier does not create any free space because all that data is also referenced by the newly created Snapshot. You must [delete the Snapshot](#delete-snapshots) in order to free up storage in order to create or update any files.
 
 You can modify the amount of Snapshot reserve on a volume using the NetApp ONTAP CLI. For more information, see [Updating your volume's snapshot reserve](modify-snapshot-reserve.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

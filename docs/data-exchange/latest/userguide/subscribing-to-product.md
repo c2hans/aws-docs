@@ -18,7 +18,3 @@ The following topics describe the process of subscribing to and accessing a prod
 **Note**
 By subscribing to a product, you agree that your use of the product is subject to the provider's offer terms including pricing information and data subscription agreement (DSA).
 You also agree and acknowledge that AWS may share information about the transaction (including your payment terms and product usage metrics) with the respective seller, reseller, or underlying provider, as applicable, in accordance with the [AWS Privacy Notice](https://aws.amazon.com/privacy/). AWS will issue invoices and collect payments from you on behalf of the provider through your AWS account. Your use of AWS services remains subject to the AWS Customer Agreement or other agreement with AWS governing your use of such services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

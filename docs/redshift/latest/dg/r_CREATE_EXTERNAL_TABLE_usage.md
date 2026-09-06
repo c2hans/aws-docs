@@ -16,7 +16,7 @@ In some cases, you might run the CREATE EXTERNAL TABLE AS command on an AWS Glue
 
 If you use a Lake Formation catalog, the IAM role must have the permission to create table in the catalog. In this case, it must also have the data lake location permission on the target Amazon S3 path. This IAM role becomes the owner of the new AWS Lake Formation table.
 
-To ensure that file names are unique, Amazon Redshift uses the following format for the name of each file uploaded to Amazon S3 by default.
+To make sure that file names are unique, Amazon Redshift uses the following format for the name of each file uploaded to Amazon S3 by default.
 
 `{{<date>}}_{{<time>}}_{{<microseconds>}}_{{<query_id>}}_{{<slice-number>}}_part_{{<part-number>}}.{{<format>}}`.
 
@@ -88,7 +88,3 @@ You can set table parameters to specify input handling for data being queried in
 + Replacement character to use when you specify REPLACE for the external table property `invalid_char_handling`.
 + Cast overflow handling in columns containing integer and decimal data. For more information, see the external table property `numeric_overflow_handling`.
 + Surplus\_bytes\_handling to specify input handling for surplus bytes in columns containing varbyte data. For more information, see the external table property `surplus_bytes_handling`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

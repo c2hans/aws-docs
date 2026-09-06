@@ -51,7 +51,3 @@ You can move your groups and services to organize your estimate. All sub-groups 
 
 **Note**
 You can't move Support calculator into a group because estimates for your chosen support plans aren't specific to a group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Pricing Calculator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pricing-calculator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

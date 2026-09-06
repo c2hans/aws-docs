@@ -20,7 +20,3 @@ Define the access control values.
 1. (Optional) For **CDN identifier secret ARN**, enter the ARN for the authorization code secret in Secrets Manager that your CDN uses for authorization to access your endpoint. The CDN identifier must be in this format: `arn:aws:secretsmanager:{{region}}:{{accountID}}:secret:{{guid}}`
 
 For information about how this authorization works, see [CDN authorization in AWS Elemental MediaPackage](cdn-auth.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

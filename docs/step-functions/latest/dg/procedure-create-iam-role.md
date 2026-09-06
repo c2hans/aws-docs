@@ -85,7 +85,3 @@ For more information about how AWS Step Functions can control other AWS services
 
 **Note**
 For examples of IAM policies created by the Step Functions console, see [How Step Functions generates IAM policies for integrated services](service-integration-iam-templates.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

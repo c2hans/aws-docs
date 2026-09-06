@@ -34,7 +34,3 @@ If you enabled CloudWatch Logs, then the logs may help you troubleshoot ingestio
 + INSUFFICIENT\_SENSOR\_DATA : A sensor is associated with less than [14 days](formatting-data.md#understanding-date-range) of data. The log contains the sensor name, the component name, and the date range of data (in days) associated with the sensor.
 + DUPLICATE\_TIMESTAMPS : A value in the timestamp column of the data is a duplicate entry. The timestamp in question and the associated file path are part of the log.
 + FILES\_NOT\_INGESTED : A file was not ingested during the ingestion workflow. The log contains details about the file's path.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

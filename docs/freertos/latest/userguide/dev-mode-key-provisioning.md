@@ -83,7 +83,3 @@ With the certificate issued, the next step is to import it into your device. You
 **Device Authorization**
 Import `deviceCert.pem` into the AWS IoT registry as described in [ Use Your Own Certificate](https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-your-own.html#manual-cert-registration). You must create a new AWS IoT thing, attach the PENDING certificate and a policy to your thing, then mark the certificate as ACTIVE. All of these steps can be performed manually in the AWS IoT console.
 Once the new client certificate is ACTIVE and associated with a thing and a policy, run the coreMQTT Mutual Authentication demo again. This time, the connection to the AWS IoT MQTT broker will succeed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

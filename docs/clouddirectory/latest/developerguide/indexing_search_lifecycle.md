@@ -22,7 +22,3 @@ You can use the following API calls to help with the development lifecycle of in
 1. Once you detach all objects from the index, you can delete the index with the `[DeleteObject](http://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_DeleteObject.html)` API call.
 
 There is no limit on the number of indexes within a directory, other than the limit on the space used by all objects. Indexes and their attachments do consume space, but it is similar to that consumed by nodes and parent–child links. There is a limit on the number of indexes that can be attached to a given object. For more information, see [Amazon Cloud Directory Limits](limits.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

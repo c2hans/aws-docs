@@ -1028,7 +1028,3 @@ The construct tree is separate from the constructs you define in your AWS CDK co
 The construct tree defines an implicit order in which constructs are synthesized to resources in the final CloudFormation template. Where one resource must be created before another, CloudFormation or the AWS Construct Library will generally infer the dependency and make sure the resources are created in the right order. You can also add an explicit dependency between two nodes using `node.addDependency()`; see [Dependencies](https://docs.aws.amazon.com/cdk/api/v1/docs/core-readme.html#dependencies) in the AWS CDK API Reference.
 
 The AWS CDK provides a simple way to visit every node in the construct tree and perform an operation on each one. See [Aspects](aspects.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

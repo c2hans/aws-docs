@@ -139,7 +139,7 @@ UNNEST ... WITH OFFSET
 Adds an offset column to the unnested output, with the offset representing the zero-based index of each element in the array. This variant is useful when you want to see the position of elements within an array. For more information on unnesting SUPER data, see [Querying semi-structured data](query-super.md). For examples, see [UNNEST examples](r_FROM_clause-unnest-examples.md).
 
 *offset\_column\_name*
-A custom name for the offset column that lets you explicitly define how the index column will appear in the output. This parameter is optional. By default, the offset column name is `offset_col`.
+A custom name for the offset column that you use to explicitly define how the index column will appear in the output. This parameter is optional. By default, the offset column name is `offset_col`.
 
 ## Usage notes
 <a name="r_FROM_clause_usage_notes"></a>
@@ -151,7 +151,3 @@ A NATURAL or USING join retains only one of each pair of joining columns in the 
 A join with the ON syntax retains both joining columns in its intermediate result set.
 
 See also [WITH clause](r_WITH_clause.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

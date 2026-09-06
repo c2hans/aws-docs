@@ -36,7 +36,3 @@ If you are logging in for the first time, the system will open the Authing.cn lo
 1.  Enter the username and password you registered when you deployed the Guidance, then choose **Login**. The system opens the Data Transfer Hub web console.
 
 1.  Change your password and then sign in again.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

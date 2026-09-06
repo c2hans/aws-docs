@@ -176,7 +176,3 @@ For additional troubleshooting, including sync monitoring and reports, see [Trou
 <a name="sharepoint-kb-user-next-steps"></a>
 
 After your knowledge base is created and the initial sync completes, you can use it in Amazon Quick to answer questions from your SharePoint content. To manage your knowledge base, see [Managing existing integrations](integration-workflows.md#managing-existing-integrations).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

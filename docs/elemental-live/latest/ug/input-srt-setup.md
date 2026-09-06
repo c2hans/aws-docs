@@ -22,7 +22,3 @@ You create an SRT input in Elemental Live in order to ingest a transport stream.
 1. Complete the encryption fields, if applicable:
    + **Encryption**: Choose **None**, or choose the encryption level that you obtained from the upstream system.
    + **Passphrase**: Enter the passphrase that the upstream system provided.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

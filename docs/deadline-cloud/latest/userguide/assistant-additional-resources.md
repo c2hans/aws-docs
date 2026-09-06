@@ -18,7 +18,3 @@ The following resources provide additional information related to the Deadline C
 + [Identity-based policy examples for Deadline Cloud](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/security_iam_id-based-policy-examples.html)
 + [AWS Responsible AI Policy](https://aws.amazon.com/ai/responsible-ai/policy/)
 + [AWS Data Privacy FAQ](https://aws.amazon.com/compliance/data-privacy-faq/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

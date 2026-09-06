@@ -50,7 +50,3 @@ pip install jupyter-server==2.0.0rc3
  **Customize a shared space**
 
 To attach a lifecycle configuration or custom image to a shared space, you must use the AWS CLI. For more information about creating and attaching lifecycle configurations, see [Create and Associate a Lifecycle Configuration with Amazon SageMaker Studio Classic](studio-lcc-create.md). For more information about creating and attaching custom images, see [Custom Images in Amazon SageMaker Studio Classic](studio-byoi.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ The range of LP values for binary, multicategory, and continuous outcomes is [0,
 + Values near zero indicate the labels were evenly distributed between facets in all outcome categories. For example, both facets applying for a loan got 50% of the acceptances and 50% of the rejections.
 + Values near one indicate the labels for one outcome were all in one facet. For example, facet *a* got 100% of the acceptances and facet *d* got none.
 + Intermittent values indicate relative degrees of maximum label imbalance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

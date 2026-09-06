@@ -17,7 +17,3 @@ AWS Directory Service Data provides the following APIs for data retrieval.
 | <a name="ds-data-ListUsers"></a>[ListUsers](https://docs.aws.amazon.com/directoryservicedata/latest/DirectoryServiceDataAPIReference/API_ListUsers.html) | List users on a directory | List |
 | <a name="ds-data-SearchGroups"></a>[SearchGroups](https://docs.aws.amazon.com/directoryservicedata/latest/DirectoryServiceDataAPIReference/API_SearchGroups.html) | Search for groups on a directory | Read |
 | <a name="ds-data-SearchUsers"></a>[SearchUsers](https://docs.aws.amazon.com/directoryservicedata/latest/DirectoryServiceDataAPIReference/API_SearchUsers.html) | Search for users on a directory | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

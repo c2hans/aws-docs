@@ -139,7 +139,3 @@ The following APIs can be used to create and manage audit finding suppressions.
 + [ListAuditSuppressions](https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuditSuppressions.html)
 
 To filter *for* specific audit findings, you can use the [ListAuditFindings](https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuditFindings.html) API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Device Defender. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-device-defender` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

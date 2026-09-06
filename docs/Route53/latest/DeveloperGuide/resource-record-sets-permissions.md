@@ -20,7 +20,3 @@ You can also create access permissions that combine any of the Route 53 policy 
 For more information about resource record set permissions and examples of how to use them, see [Using IAM policy conditions for fine-grained access control](specifying-conditions-route53.md).
 
 To learn how to authenticate AWS users, see [Authenticating with identities](security-iam.md#security_iam_authentication) and to learn how to control access to Route 53 resources, see [Access control](security-iam.md#access-control).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

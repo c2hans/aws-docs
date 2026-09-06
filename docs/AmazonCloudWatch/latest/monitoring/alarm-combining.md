@@ -80,7 +80,3 @@ The request parameter `AlarmRule` supports the use of the logical operators `AND
 + `AT_LEAST(2, ALARM, (AZ1Health, AZ2Health, AZ3Health)) AND NOT ALARM(MaintenanceWindow)`
 
   The expression specifies that the composite alarm goes into `ALARM` when at least 2 out of 3 availability zone health alarms are in `ALARM` state and the maintenance window alarm is not in `ALARM`. This combines the AT\_LEAST function with other logical operators for more complex monitoring scenarios.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,7 +42,3 @@ View details about updates to AWS managed policies for ACM since this service be
 | Added SearchCertificates support to the [AWSCertificateManagerReadOnly](#acm-read-only-managed-policy) policy. | The AWSCertificateManagerReadOnly policy now includes permission to call the SearchCertificates API action. | March 31, 2026 |
 | Added GetAccountConfiguration support to the [AWSCertificateManagerReadOnly](#acm-read-only-managed-policy) policy. | The AWSCertificateManagerReadOnly policy now includes permission to call the GetAccountConfiguration API action. | March 3, 2021 |
 | ACM starts tracking changes | ACM starts tracking changes for AWS managed policies. | March 3, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

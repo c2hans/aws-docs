@@ -71,7 +71,3 @@ When you run **Process Now** to run the task, you can monitor the status of each
    + Below that, a line appears for each individual action. Each line shows the current status of the action: **Pending**, **Success**, or an explanation of why the task failed.
 
      As the status of an action changes, the page automatically refreshes to display the latest information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

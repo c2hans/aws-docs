@@ -166,7 +166,3 @@ For more information about how Tag Editor integrates with AWS Identity and Acces
 + [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html#management_svcs)
 + [Actions, resources, and condition keys for Tag Editor](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstageditor.html)
 + [Controlling access to AWS resources using policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_controlling.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Tagging and Tag Editor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tag-editor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

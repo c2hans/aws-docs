@@ -42,7 +42,3 @@ If the subscriber still doesn't have access, follow these steps:
 1. From the navigation pane, choose **Data Catalog** and **Catalog settings**.
 
 1. Give permission to the subscriber to access the AWS Glue tables with a resource-based policy. For information about creating resource-based policies, see [Resource-based policy examples for AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/security_iam_resource-based-policy-examples.html) in the *AWS Glue Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

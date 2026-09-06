@@ -99,7 +99,3 @@ AWS IoT FleetWise integrates with the following AWS services to improve the avai
 + **AWS IoT Core** – Register and control AWS IoT devices that upload vehicle data to AWS IoT FleetWise, and remotely send commands to a vehicle. For more information, see [What is AWS IoT](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html) in the *AWS IoT Developer Guide*.
 + **Amazon Timestream** – Use a time series database to store and analyze your vehicle data. For more information, see [What is Amazon Timestream](https://docs.aws.amazon.com/timestream/latest/developerguide/what-is-timestream.html) in the *Amazon Timestream Developer Guide*.
 + **Amazon S3** – Use an object storage service to store and manage your vehicle data. For more information, see [What is Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) in the *Amazon Simple Storage Service User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -57,7 +57,3 @@ After you delete the AWSServiceRoleForAutoScalingPlans\_EC2AutoScaling service-l
 <a name="slr-regions"></a>
 
 AWS Auto Scaling supports using service-linked roles in all of the AWS Regions where scaling plans available. For information about the Regional availability of scaling plans, see [AWS Auto Scaling endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/autoscaling_region.html) in the *AWS General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

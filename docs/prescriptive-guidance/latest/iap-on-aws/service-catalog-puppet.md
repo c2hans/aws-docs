@@ -75,7 +75,3 @@ Service Catalog Puppet also helps automate testing through an assertion statemen
 <a name="maturity-completeness-support"></a>
 
 Although Service Catalog Puppet isn't an officially supported AWS service, it has been widely adopted. This tool has been used by large organizations over the last few years to successfully and centrally provision products to hundreds of OU accounts within their desired provisioning time windows. It has proven to provide fault-tolerant product provisioning at scale. Users who encounter any issues with Service Catalog Puppet can log them in the [GitHub repository](https://github.com/awslabs/aws-service-catalog-puppet) for resolution by the contributors to this AWS Labs solution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -131,7 +131,3 @@ To complete this tutorial, you need the following resources:
 + The [AWS Regional Services List](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/). To reduce latency, you should choose the AWS region closest to your geographic location that is supported by both Amazon Comprehend and Amazon Kendra.
 + (Optional) An [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html). While this tutorial does not use encryption, you might want to use encryption best practices for your specific use case.
 + (Optional) An [Amazon Virtual Private Cloud](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html). While this tutorial does not use a VPC, you might want to use VPC best practices to ensure data security for your specific use case.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

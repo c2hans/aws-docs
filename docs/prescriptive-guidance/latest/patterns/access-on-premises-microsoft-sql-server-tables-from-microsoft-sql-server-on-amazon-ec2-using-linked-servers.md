@@ -126,7 +126,3 @@ Note 2: `@server` name `SQLLIN` and host file entry name `172.12.12.4 SQLLIN` sh
 + Linux SQL Server to Windows SQL Server through a linked server (as specified in this pattern)
 + Windows SQL Server to Linux SQL Server through a linked server
 + Linux SQL Server to another Linux SQL Server through a linked server
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

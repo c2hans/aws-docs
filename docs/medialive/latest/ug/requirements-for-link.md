@@ -24,7 +24,3 @@ You must assign permissions for actions in several services, as described in the
 | On the MediaLive console, view MediaConnect flows in the dropdown list. This dropdown list appears in the **Flow ARN** field in the **Attachments** tab on the **Device details** page. | MediaConnect | ListFlows |
 | On the MediaLive console, view IAM roles in the dropdown list. This dropdown list appears in the **Role ARN** field in the **Attachments** tab on the **Device details** page. | IAM | ListRoles |
 | On the MediaLive console, view Secrets Manager secrets in the dropdown list. This dropdown list appears in the **Secret ARN** field in the **Attachments** tab on the **Device details** page. | Secrets Manager | ListSecrets |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -379,7 +379,3 @@ WHERE database = 'DATABASE_NAME';
 | AWS KMS access-denied reading the secret | You replaced the default key policy on your CMK. Ensure the Timestream for InfluxDB service-linked role can kms:Decrypt the key. |
 | Updated a plugin but the trigger runs the old version | Run influxdb3 update trigger to re-fetch the updated plugin for that trigger. |
 | Plugin fails with a Python import error | The plugin imports a package that is not in the managed Python environment. The package manager is disabled; use only the standard library and pre-installed libraries. Check system.processing\_engine\_logs. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

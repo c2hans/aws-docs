@@ -208,7 +208,3 @@ To resolve this issue:
 + After the VM is reconnected and running normally, create a new entitlement to resume Windows Server usage.
 
 If you are still unable to resolve the issue after following this guidance, we recommend that you reach out to AWS Support for further assistance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

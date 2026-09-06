@@ -29,10 +29,6 @@ You can also use other AWS services in your custom applications. For example, yo
 ## Open Job Description
 <a name="how-it-works-openjd"></a>
 
-Deadline Cloud uses the [Open Job Description (OpenJD) specification](https://github.com/OpenJobDescription/openjd-specifications) to specify the details of a job. OpenJD was developed to define jobs that are portable between solutions. You use it to define a job that is a set of commands that run on worker hosts.
+Deadline Cloud uses the Open Job Description (OpenJD) specification to specify the details of a job. OpenJD was developed to define jobs that are portable between solutions. You use it to define a job that is a set of commands that run on worker hosts. For more information, see the [OpenJD specification](https://github.com/OpenJobDescription/openjd-specifications) on the GitHub website.
 
 You can create an OpenJD job template using a submitter that Deadline Cloud provides, or you can use any tool that you want to create the template. After creating the template, you send it to Deadline Cloud. If you use a submitter, it takes care of sending the template. If you created the template another way, you call a Deadline Cloud command-line action, or you can use one of the AWS SDKs to send the job. Either way, Deadline Cloud adds the job to the specified queue and schedules the work.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

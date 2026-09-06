@@ -135,7 +135,3 @@ The AWS CLI [list-artifacts](https://docs.aws.amazon.com/cli/latest/reference/de
 <a name="artifacts-api"></a>
 
 The Device Farm API [ListArtifacts](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListArtifacts.html) method returns a list of artifacts, such as files, screenshots, and logs. Each artifact has a URL so you can download the file.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,7 +35,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 +  [Watermark detection for Amazon Titan Image Generator now available in Amazon Bedrock](https://aws.amazon.com/about-aws/whats-new/2024/04/watermark-detection-amazon-titan-image-generator-bedrock/)
 +  [Generating images with Amazon Nova Canvas](https://docs.aws.amazon.com/nova/latest/userguide/image-generation.html)
 +  [Amazon Nova – AWS AI Service Card](https://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/overview.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

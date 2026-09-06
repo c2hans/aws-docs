@@ -238,7 +238,3 @@ In the following steps, you clean up the resources you created in this tutorial.
 <a name="congratulations"></a>
 
 You have learned how to create an Amazon S3 bucket, upload objects to the Amazon Glacier and S3 Glacier Deep Archive storage classes, and how to restore your objects so that they can be easily retrieved.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

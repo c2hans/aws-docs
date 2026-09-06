@@ -81,7 +81,3 @@ The following are the supported core network attachments:
 <a name="cloudwan-policy-service-insertion-pricing"></a>
 
 There are no additional charges for using service insertion other than the standard AWS Cloud WAN pricing charges. Information about Cloud WAN pricing can be found here: [AWS Cloud WAN Pricing](https://aws.amazon.com/cloud-wan/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

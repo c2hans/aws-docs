@@ -41,7 +41,3 @@ This occurs only if you provide your Organizations ARN for the **Account List or
 1. The solution updates [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) with the information extracted from the event and resources created, updated, or deleted in the workflow.
 
 Users can view tagging event details and the history of network requests from different accounts, and monitor their status in the web UI. Administrators can accept or reject requests when manual approval is required.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Network Orchestration for AWS Transit Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

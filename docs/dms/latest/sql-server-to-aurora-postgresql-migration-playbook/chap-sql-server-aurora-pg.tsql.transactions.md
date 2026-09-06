@@ -247,7 +247,3 @@ You can use parameter groups to modify instance-level parameters for Aurora Post
 | Nested transactions | Supported, view level with `@@trancount`  | Not Supported |
 
 For more information, see [Transactions](https://www.postgresql.org/docs/13/tutorial-transactions.html), [Transaction Isolation](https://www.postgresql.org/docs/13/transaction-iso.html), and [SET TRANSACTION](https://www.postgresql.org/docs/13/sql-set-transaction.html) in the *PostgreSQL documentation*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ The Zendesk connector has the following known limitations:
 + Deleted community topics, community posts, and their comments are not supported in **Change Log** mode since there are no SDK methods/REST API available for fetching deleted topics, deleted posts, and their comments.
 + The Zendesk connector can't fetch community topics (added, edited, or deleted), and community posts and their comments (added, edited, or deleted) based on timestamps in **Change log** mode.
 + When Access Control Lists (ACLs) are enabled, the "Sync only new or modified content" option is not available due to Zendesk API limitations. We recommend using "Full sync" or "New, modified, or deleted content sync" modes instead, or disable ACLs if you need to use this sync mode.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

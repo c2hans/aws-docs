@@ -36,7 +36,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This typically leads to longer and more complex release cycles, which tends to reduce the number of releases that are made each year. More importantly, this complexity has teams devoting more time to analyzing each new feature long before it’s released to a customer. Teams begin to be more focused on validating new features and less on the speed of delivery. The overhead of releasing new features becomes so significant that teams become more focused on the mechanics of testing, and less on the new functionality that drives the innovation of their offering.
 
  In this slower, more cautious mode, teams tend to have long cycle times that put larger and larger gaps between the inception of an idea and when it lands in the hands of a customer. Overall, this can hinder your ability to react to market dynamics and competitive pressures.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

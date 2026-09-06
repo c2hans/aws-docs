@@ -31,7 +31,3 @@ Every Manged kdb environment has a weekly maintenance window during which system
 | Asia Pacific (Singapore) | 02:00–03:30 UTC |
 | Asia Pacific (Sydney) | 23:00–12:30 UTC |
 | Asia Pacific (Tokyo) | 01:00–02:30 UTC |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

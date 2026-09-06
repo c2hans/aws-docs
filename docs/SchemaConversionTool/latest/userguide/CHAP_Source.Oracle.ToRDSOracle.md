@@ -207,7 +207,3 @@ Some limitations you should consider when migrating Oracle schema and code to Am
   You can grant all other privileges to an Oracle RDS user role.
 + Amazon RDS for Oracle supports traditional auditing, fine-grained auditing using the DBMS\_FGA package, and Oracle Unified Auditing.
 + Amazon RDS for Oracle doesn’t support change data capture (CDC). To do CDC during and after a database migration, use AWS Database Migration Service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Schema Conversion Tool User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query SchemaConversionTool` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

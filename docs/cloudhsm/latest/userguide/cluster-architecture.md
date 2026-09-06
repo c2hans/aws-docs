@@ -16,7 +16,3 @@ To interact with the HSMs in a cluster, you need the AWS CloudHSM client softwar
 The following figure represents an AWS CloudHSM cluster with three HSMs, each in a different Availability Zone in the VPC.
 
 ![Architecture of an AWS CloudHSM cluster with three HSMs.](http://docs.aws.amazon.com/cloudhsm/latest/userguide/images/cluster-architecture.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

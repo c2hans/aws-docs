@@ -99,7 +99,3 @@ After the imported historical data is deleted, the last previously uploaded data
   1. You deleted file Y, the baseline will be: 7/1 to 7/9 from original, 7/10 to 8/1 from X.
 
   1. You deleted file X, the baseline will be: 7/1 to 7/14 from original, 7/15 to 8/1 is from Y.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

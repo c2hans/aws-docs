@@ -107,7 +107,3 @@ AppFabric will request a client secret. To find your client secret in HubSpot, u
 <a name="hubspot-approve-authorization"></a>
 
 After creating the app authorization in AppFabric, you will receive a pop-up window from HubSpot to approve the authorization. Sign in to your account using your enterprise account credentials (not your developer account) to approve the AppFabric authorization. Choose **allow**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

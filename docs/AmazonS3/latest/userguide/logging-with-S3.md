@@ -25,7 +25,7 @@ The following table lists the key properties of CloudTrail logs and Amazon S3 se
 | Bucket operations (by using Amazon S3 APIs) | Yes | Yes |
 | Searchable UI for logs | Yes | Yes3 |
 | Fields for Object Lock parameters, Amazon S3 Select properties for log records | Yes | No |
-| Fields for `Object Size`, `Total Time`, `Turn-Around Time`, and `HTTP Referer` for log records | No | Yes |
+| Fields for `Object Size`, `Total Time`, `Turn-Around Time`, and `HTTP Referer` for log records | Yes | Yes |
 | Lifecycle transitions, expirations, restores | No | Yes |
 | Logging of keys in a batch delete operation | Yes | Yes |
 | Authentication failures1 | No | Yes |
@@ -45,7 +45,3 @@ The following table lists the key properties of CloudTrail logs and Amazon S3 se
 1. In addition to direct delivery to an Amazon S3 bucket, you can deliver Amazon S3 server access logs to Amazon CloudWatch Logs. With this delivery path, you gain additional capabilities, including forwarding to other destinations, delivery to multiple destinations, cross-account and cross-Region aggregation, AWS KMS encryption, and interactive querying with CloudWatch Logs Insights. You can also deliver these logs to Amazon S3 Tables in Apache Iceberg format for SQL analytics. For more information, see [Logging requests with server access logging](ServerLogs.md).
 
 1. S3 does not support delivery of CloudTrail logs or server access logs to the requester or the bucket owner for VPC endpoint requests when the VPC endpoint policy denies them or for requests that fail before the VPC policy is evaluated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

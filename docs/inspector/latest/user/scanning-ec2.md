@@ -217,7 +217,3 @@ Your EC2 scan mode determines which scan methods Amazon Inspector will use when 
 Amazon Inspector scans supported Mac, Windows, and Linux instances for vulnerabilities in operating system packages. For Linux instances, Amazon Inspector can produce findings for application programming language packages using [Amazon Inspector deep inspection for Linux-based Amazon EC2 instances](deep-inspection.md). For Mac and Windows instances only operating system packages are scanned.
 
 For information about supported operating systems, including which operating systems can be scanned without an SSM agent, see [Amazon EC2 instances status values](supported.md#supported-os-ec2).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

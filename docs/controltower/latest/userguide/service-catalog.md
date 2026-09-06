@@ -14,7 +14,3 @@ In AWS Control Tower, your central cloud administrators and your end users can p
 You can interact with AWS Control Tower accounts through the AWS Service Catalog console and APIs. For more information, see [Interact with AWS Control Tower accounts from AWS Service Catalog](handle-accounts-with-service-catalog.md)
 
 AWS Control Tower also can make use of the Service Catalog APIs to further automate account provisioning and updating. For details, see [the AWS Service Catalog Developer Guide](https://docs.aws.amazon.com/servicecatalog/latest/dg/what-is-service-catalog.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

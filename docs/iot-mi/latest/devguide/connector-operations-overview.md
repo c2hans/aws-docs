@@ -214,7 +214,3 @@ Your connector calls this managed integrations for AWS IoT Device Management API
 + **"DEVICE\_DISCOVERY"** - Used to send list of discovered devices within third-party cloud for a specific access token
 + **"DEVICE\_COMMAND\_RESPONSE"** - Used to send a specific device event as a result of command execution
 + **"DEVICE\_EVENT"** - Used for any event that originates from the device which is not the direct result of a user-based command. This can serve as a general event type to proactively report device state changes or notifications
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

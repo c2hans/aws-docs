@@ -40,7 +40,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-model-in
 + [Amazon SageMaker Clarify Model Explainability](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-model-explainability.html) (SageMaker documentation)
 + [SageMaker Clarify repository](https://github.com/aws/amazon-sagemaker-clarify) (GitHub)
 + Molnar, Christoph. [Interpretable machine learning. A Guide for Making Black Box Models Explainable](https://christophm.github.io/interpretable-ml-book/), 2019.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

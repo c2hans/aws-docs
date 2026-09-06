@@ -91,7 +91,3 @@ You can quickly access user directories through the following environment variab
 <a name="loading-db-code-dir"></a>
 
 We have added a symlink to the code directory to allow loading of database relative to the code path. For example, if the database is labeled as *kxDatabase* and the current working directory is /`opt/kx/app/code` then the database can be loaded as `\l /kxDatabase`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

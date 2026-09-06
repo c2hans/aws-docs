@@ -88,7 +88,7 @@ When your Windows worker host requires long path names (greater than 250 charact
 
 1. Make sure that the long path registry key is enabled. For more information, see [Registry setting to enable long paths](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#registry-setting-to-enable-long-paths) on the Microsoft website.
 
-1. Install the Windows SDK for Desktop C\+\+ x86 Apps. For more information, see [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/) in the Windows Dev Center.
+1. Install the Windows SDK for Desktop C\+\+ x86 Apps. For more information, see [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/) on the Microsoft website.
 
 1. Open the Python installation location in your environment where the worker agent is installed. The default is `C:\Program Files\Python311`. There is an executable file named `pythonservice.exe`.
 
@@ -300,7 +300,3 @@ The worker agent writes log files that may contain sensitive information from ho
    These commands restrict access to the log directory to only the worker agent user and Administrators group, preventing job users and other unauthorized users from reading potentially sensitive information.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

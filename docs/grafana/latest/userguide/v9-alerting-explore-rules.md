@@ -22,7 +22,3 @@ An interval specifies how frequently an alerting rule is evaluated. Duration, wh
 + [Alert instances](v9-alerting-rules-instances.md)
 + [Namespaces and groups](v9-alerting-rules-grouping.md)
 + [Notification templating](v9-alerting-rules-notification-templates.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

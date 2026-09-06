@@ -68,7 +68,3 @@ For longer-term retention of existing findings, you can export the findings to a
 For customers in AWS GovCloud (US) Regions, back up and then delete your policy data and other account resources before you close your account. You won't have access to the resources and data after you close your account.
 
 For more information, see [Close an AWS account](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/close-account.html) in the *AWS Account Management Reference Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

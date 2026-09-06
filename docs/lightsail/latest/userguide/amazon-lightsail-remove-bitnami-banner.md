@@ -52,7 +52,3 @@ Complete the following procedure to confirm that your instance has a Bitnami ico
       ```
 
    You can confirm that the process was successful by browsing to the public IP address of your instance and confirming that the Bitnami icon is gone.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

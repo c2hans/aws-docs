@@ -65,7 +65,3 @@ Use the following procedure to add a build action to your CodeCatalyst workflow.
 <a name="build-add-action-definition"></a>
 
 The build action is defined as a set of YAML properties inside your workflow definition file. For information on these properties, see [Build and test actions YAML](build-action-ref.md) in the [Workflow YAML definition](workflow-reference.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

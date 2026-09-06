@@ -155,7 +155,3 @@ The following walkthrough demonstrates how to modify an existing parameter group
 1. Change parameter values and choose **Save changes**.
 
 For more information, see [Working with parameter groups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithParamGroups.html) in the *Amazon Relational Database Service User Guide* and [Server System Variables](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html) in the *MySQL documentation*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

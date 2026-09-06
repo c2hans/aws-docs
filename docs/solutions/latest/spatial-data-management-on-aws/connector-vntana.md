@@ -50,7 +50,3 @@ The VNTANA quickstart generates the connector configuration automatically. You d
 +  **ECS bridge parameters** — the Deadline job template launches a VNTANA container as an ECS task, passing cluster ARN, task definition, subnets, security groups, and the pipeline configuration as job parameters.
 
 The connector produces multiple derived files from a single upload — GLB as the primary web-ready 3D format, plus USDZ, FBX, PNG, and HTML as additional format variants and previews. All outputs are governed through the same template chain and traceable to the VNTANA processing job that produced them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

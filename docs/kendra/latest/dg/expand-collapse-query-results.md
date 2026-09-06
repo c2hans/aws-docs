@@ -57,7 +57,3 @@ To configure the number of expanded results to show per collapsed primary docume
 + Collapsing and expanding results doesn't change the number of facets or impact the total number of results displayed.
 + Amazon Kendra [featured search results](https://docs.aws.amazon.com/kendra/latest/dg/featured-results.html) won't be collapsed even if they have the same field value as the collapse field you configure.
 + Collapsing and expanding results only applies to results of type `DOCUMENT`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

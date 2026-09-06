@@ -52,7 +52,3 @@ For compliance with regulatory requirements and your own, internal standards, go
 <a name="next-steps-repetition"></a>
 
 Using learnings from your initial efforts, set up a lightweight, repeatable process to stay aligned in the future. Define which roles you need inputs from, how often, how accurate the data needs to be, how the data will be shared, and who will act on it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

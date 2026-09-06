@@ -31,7 +31,3 @@ For more information, see [Encrypt Log Data in CloudWatch Logs Using AWS KMS](ht
 + [Setting up Container Insights on RedHat OpenShift on AWS (ROSA)](deploy-container-insights-RedHatOpenShift.md)
 + [Viewing Container Insights metrics](Container-Insights-view-metrics.md)
 + [Metrics collected by Container Insights](Container-Insights-metrics.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

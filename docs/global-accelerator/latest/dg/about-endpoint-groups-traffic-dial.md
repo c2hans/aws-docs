@@ -14,7 +14,7 @@ By default, the traffic dial is set to 100 (that is, 100%) for all regional endp
 Here are a few examples to illustrate how you can use traffic dials to change the traffic flow to endpoint groups.
 
 **Upgrade your application by Region**
-If you want to upgrade an application in a Region or do maintenance, first set the traffic dial to 0 to cut off traffic for the Region. When you complete the work and you're ready bring the Region back into service, adjust the traffic dial to 100 to dial the traffic back up.
+If you want to upgrade an application in a Region or do maintenance, first set the traffic dial to 0 to cut off traffic for the Region. When you complete the work and you're ready to bring the Region back into service, adjust the traffic dial to 100 to dial the traffic back up.
 
 **Mix traffic between two Regions**
 This example shows how traffic flow works when you change the traffic dials for two regional endpoint groups at the same time. Let’s say that you have two endpoint groups for your accelerator—one for the `us-west-2` Region and one for the `us-east-1` Region—and you've set the traffic dials to 50% for each endpoint group.
@@ -25,7 +25,3 @@ The result in this scenario is that both endpoint groups serve the same amount o
 
 **Load sharing multi-Region architectures**
 You can configure the traffic dial and endpoint weights to implement complex scenarios as well, to configure load sharing between application endpoints. With these Global Accelerator features, you can deploy and run applications in multi-Region architectures, including active-active and active-standby setups. For more information and detailed examples, see the following blog post: [ Deploying multi-Region applications in AWS using AWS Global Accelerator](https://aws.amazon.com/blogs/networking-and-content-delivery/deploying-multi-region-applications-in-aws-using-aws-global-accelerator/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

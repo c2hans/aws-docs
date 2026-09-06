@@ -502,7 +502,3 @@ The following table includes the **Cost Reporting** settings you can view or mod
 | --- | --- | --- | --- |
 | Cost report groups | Array of strings | Empty | List of valid cost report group names that can be assigned to lease templates. Maximum of 100 cost report groups, with each group name limited to 50 characters. |
 | Require cost report group | Boolean | Off | Determines whether a cost report group is required on leases and lease templates. When enabled, all new lease template creation and updates require a valid cost report group to be assigned. This is not enforced for existing leases or lease templates; they need to be manually updated. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

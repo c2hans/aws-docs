@@ -135,7 +135,3 @@ AWS Organizations SCPs never affect service-linked roles. These roles are exempt
 <a name="ec2-report-policy"></a>
 
 The`AWSServiceRoleForDeclarativePoliciesEC2Report` service-linked role is used by Organizations to describe account attribute states for member accounts to create Declarative Policies reports. The role's permissions are defined in the [AWS managed policy: DeclarativePoliciesEC2Report](orgs_reference_available-policies.md#security-iam-awsmanpol-DeclarativePoliciesEC2Report).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -117,7 +117,3 @@ The following example shows typical JSON output when scanning Amazon S3 buckets 
 <a name="ui-view-resource-scanning"></a>
 
 The scanned infrastructure is displayed in the UI as expandable sections organized by AWS service and Region. Users can drill down into each service to view discovered resources and attached resource-based policies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

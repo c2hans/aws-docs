@@ -368,7 +368,3 @@ arn:aws:kms:us-west-2:111122223333:alias/ExampleAlias
 When the permission doesn't apply to a particular resource (KMS key or alias), use an asterisk (`*`).
 In an IAM policy for an AWS KMS permission, an asterisk in the `Resource` element indicates all AWS KMS resources (KMS keys and aliases). You can also use an asterisk in the `Resource` element when the AWS KMS permission doesn't apply to any particular KMS keys or aliases. For example, when allowing or denying `kms:CreateKey` or `kms:ListKeys` permission, you must set the `Resource` element to `*`.
 + **AWS KMS condition keys** lists the AWS KMS condition keys that you can use to control access to the operation. You specify conditions in a policy's `Condition` element. For more information, see [AWS KMS condition keys](conditions-kms.md). This column also includes [AWS global condition keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) that are supported by AWS KMS, but not by all AWS services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

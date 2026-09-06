@@ -95,7 +95,3 @@ Let's say you add an attribute to the Store customer input block. The **Namespac
 ![Store customer input block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-attributes-errorbranch.png)
 
 If the flow runs and the agent user name is not available, then the contact is routed down the error branch.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

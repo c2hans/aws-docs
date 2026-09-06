@@ -73,7 +73,3 @@ You can use an ensemble approach to perform model voting.* Model voting* is the 
 The model voting technique can help improve robustness and reduce the likelihood of a single model's idiosyncratic failure affecting the final output. However, it comes at the cost of increased latency and expense.
 
 The iterative process between component optimization and model selection continues until the system meets the defined success criteria. This prepares the application for the transition from PoC to preproduction deployment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

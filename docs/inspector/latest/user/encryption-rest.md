@@ -154,7 +154,3 @@ You can use [UpdateEncryptionKey](https://docs.aws.amazon.com/inspector/v2/APIRe
 If you delete the key or change it's policy to deny access to Amazon Inspector or Amazon Q you will be unable to access your code vulnerability findings and Lambda code scanning will fail for your account.
 
 You can use `ResetEncryptionKey` to resume using an AWS owned key to encrypt code extracted as part of your Amazon Inspector findings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

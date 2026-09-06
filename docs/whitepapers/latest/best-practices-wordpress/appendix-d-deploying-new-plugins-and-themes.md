@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpr
  When deploying new themes in WordPress, a little more effort may be required. If you are only making use of Amazon EFS to store all your WordPress installation files, then new themes will be immediately available to all running instances. However, if you are offloading static content to Amazon S3, you must process a copy of these to the right bucket location. Plugins like W3 Total Cache provide a way for you to manually initiate that task. Alternatively, you could automate this step as part of a build process.
 
  Because theme assets can be cached on CloudFront and at the browser, you need a way to invalidate older versions when you deploy changes. The best way to achieve this is by including some sort of version identifier in your object. This identifier can be a query string with a date-time stamp or a random string. If you use the W3 Total Cache plugin, you can update a media query string that is appended to the URLs of media files.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

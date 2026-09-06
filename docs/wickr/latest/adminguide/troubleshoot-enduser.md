@@ -271,7 +271,3 @@ If you cannot access the Wickr menu (for example, the client crashes at the logi
 If you cannot access Settings (for example, you are stuck on the login screen):
 + **iOS:** Connect your device to a Mac, open Console.app, filter for "Wickr", and reproduce the issue.
 + **Android:** Enable USB debugging, connect to a computer, and run `adb logcat | grep -i wickr`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

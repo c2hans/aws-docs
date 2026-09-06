@@ -37,7 +37,3 @@ The DMS data collector requires additional permissions to run the discovery scri
 + For OS discovery, the DMS data collector needs credentials for the domain server to run requests using the LDAP protocol.
 + For database discovery in Linux, the DMS data collector needs credentials with `sudo SSH` grants. Also, you should configure your Linux servers to allow running remote SSH scripts.
 + For database discovery in Windows, the DMS data collector needs credentials with grants to run Windows Management Instrumentation (WMI) and WMI Query Language (WQL) queries and read the registry. Also, you should configure your Windows servers to allow running remote WMI, WQL, and PowerShell scripts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

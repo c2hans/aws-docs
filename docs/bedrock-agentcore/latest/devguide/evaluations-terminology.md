@@ -62,7 +62,3 @@ A skill is a reusable instruction file that an agent loads at runtime to help wi
 <a name="llms-as-judges"></a>
 
 Large Language Models (LLMs) as judges refers to an evaluation method that uses a large language model (LLM) to automatically assess the quality, correctness, or effectiveness of an agent or another model’s output. Instead of relying on manual review or rule-based checks, the LLM is prompted with evaluation criteria and produces a score, label, or explanation based on the input and output being evaluated. Unlike traditional evaluations that rely on ground-truth data, LLM-as-a-judge methods rely on the model’s internal knowledge to make judgments. This approach enables scalable, consistent, and customizable qualitative assessments, such as correctness, reasoning quality, or instruction adherence, across large numbers of agent interactions or model responses.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

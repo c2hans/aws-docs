@@ -294,7 +294,3 @@ To access S3 Express One Zone with filesystem semantics, we recommend using the 
 +  **Testing:** Test retrieval latency in a non-production environment to validate performance gains. Monitor for throttling in standard S3 scenarios (e.g., high GPU saturation) and compare.
 
 The S3 Express One Zone storage class is available in multiple regions and integrates with EKS for workloads needing object access without waiting on storage. To learn more, see [Getting started with S3 Express One Zone](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-getting-started.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

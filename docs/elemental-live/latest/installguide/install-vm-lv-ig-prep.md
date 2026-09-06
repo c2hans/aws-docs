@@ -41,7 +41,3 @@ Download the installation files for each unique AWS Elemental product that you'r
      `elemental_production_live_2.25.4.12345.run`
 
      Make sure that you download the right version of software for the processing architecture that you need, either CPU-only or GPU-enabled.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -112,7 +112,3 @@ After ingestion, memory records typically appear within seconds to minutes depen
 If extraction fails, AgentCore moves the failed job to a dedicated queue for your memory resource. Use `ListMemoryExtractionJobs` to view failed jobs, and `StartMemoryExtractionJob` to re-drive them after addressing the root cause. For failure reason codes, remediation steps, and how to set up proactive monitoring with the `FailedExtraction` CloudWatch metric, see [Redrive failed ingestions](long-term-redrive.md).
 
 To enable application logs and traces for deeper visibility into the processing lifecycle, see [Enabling observability for AgentCore runtime, memory, gateway, built-in tools, and identity resources](observability-configure.md#observability-configure-cloudwatch).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

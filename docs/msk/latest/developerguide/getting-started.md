@@ -15,7 +15,3 @@ This tutorial shows you an example of how you can create an MSK cluster, produce
 + [Step 5: Produce and consume data](produce-consume.md)
 + [Step 6: Use Amazon CloudWatch to view Amazon MSK metrics](view-metrics.md)
 + [Step 7: Delete the AWS resources created for this tutorial](delete-cluster.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

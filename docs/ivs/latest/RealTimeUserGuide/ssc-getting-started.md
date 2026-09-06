@@ -128,7 +128,3 @@ The response is:
 ```
 
 **Note**: You need to have publisher participants actively publishing to the stage to keep the composition alive. For more information, see the "Publishing and Subscribing" sections of the real-time streaming broadcast SDK guides: [Web](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/web-publish-subscribe.html), [Android](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/android-publish-subscribe.html), and [iOS](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/ios-publish-subscribe.html). You must create a distinct stage token for each participant.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

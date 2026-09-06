@@ -218,7 +218,3 @@ Next, create the feature group in Account A, with an offline store Amazon S3 buc
 + Provide `Account-A-Offline-Feature-Store-Role-ARN` as the `RoleArn`.
 + Provide `Account-A-Offline-Feature-Store-KMS-Key-ARN` for `OfflineStoreConfig.S3StorageConfig.KmsKeyId`.
 + Provide `Account-B-Offline-Feature-Store-Bucket` for `OfflineStoreConfig.S3StorageConfig.S3Uri`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

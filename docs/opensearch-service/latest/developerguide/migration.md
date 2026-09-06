@@ -280,7 +280,3 @@ The `base_path` parameter specifies the path within the S3 bucket where snapshot
    ```
 
 At this point, the migration is complete. You might configure your clients to use the new OpenSearch Service endpoint, [resize the domain](sizing-domains.md) to suit your workload, check the shard count for your indexes, switch to an [IAM master user](fgac.md#fgac-concepts), or start building visualizations in OpenSearch Dashboards.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

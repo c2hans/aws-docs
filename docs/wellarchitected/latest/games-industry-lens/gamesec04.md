@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 + [GAMESEC04-BP02 Limit origin access to authorized content delivery networks (CDNs)](gamesec04-bp02.md)
 + [GAMESEC04-BP03 Implement geographic restrictions to limit unauthorized access](gamesec04-bp03.md)
 + [GAMESEC04-BP04 Restrict access to content with digital rights management (DRM) solutions](gamesec04-bp04.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

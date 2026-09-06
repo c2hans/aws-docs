@@ -25,7 +25,3 @@ The suitable database sizes provided in the preceding table are the AWS DMS reco
 + [PostgreSQL pg\_dump and pg\_restore utility](chap-manageddatabases.postgresql-rds-postgresql-full-load-pd_dump.md)
 + [PostgreSQL publisher and subscriber model](chap-manageddatabases.postgresql-rds-postgresql-full-load-publisher.md)
 + [PostgreSQL pglogical extension](chap-manageddatabases.postgresql-rds-postgresql-full-load-pglogical.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

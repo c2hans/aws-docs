@@ -250,7 +250,3 @@ The following table provides a complete list of the countries and territories th
 <a name="useragent-enrichment"></a>
 
 If you create the Account Takeover Insights (ATI) model, you must provide a variable of the `useragent` variable type in your dataset. This variable contains the browser, device, and OS data of a login event. Amazon Fraud Detector enriches the useragent data with additional information such as `user_agent_family` `OS_family`, and `device_family`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

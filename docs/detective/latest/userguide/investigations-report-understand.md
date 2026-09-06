@@ -26,7 +26,3 @@ Detective generates the report for the selected **Scope** time and **User**. The
 + **New Geolocations** – Identifies new geolocations used either at the resource or account level. For example, this indicator lists an observed geolocation that is an infrequent or unused location based on previous user activity.
 + **New User Agents** – Identifies new user agents used either at the resource or account level.
 + **New ASOs** – Identifies new Autonomous System Organizations (ASOs) used either at the resource or account level. For example, this indicator lists a new organization assigned as an ASO.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

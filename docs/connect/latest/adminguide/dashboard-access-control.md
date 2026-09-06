@@ -69,7 +69,3 @@ The following limitations apply when you use hierarchy-based access controls in 
   + If two security profiles have tag-based access control and one of the profiles has hierarchy-based access control, then the hierarchy filter will be applied to resources with either tags.
   + If both security profiles have unique configurations for tag-based and hierarchy-based access control, we cannot enforce hierarchy-based access control effectively. This could allow users to access more data than intended in certain scenarios. In such cases, we recommend not granting access to Real-time and Historical reports for users with this type of access control setup, or just use hierarchy-based or tag-based controls to restrict users access.
   + If you have hierarchy-based access controls enabled in your Security Profile, the **Agent performance summary** widget on the dashboards will display a summary of metrics for the agent hierarchy you have access to.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

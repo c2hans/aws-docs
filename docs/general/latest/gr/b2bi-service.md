@@ -35,7 +35,3 @@ The following are the service endpoints and service quotas for this service.
 | Partnerships | Each supported Region: 700 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/b2bi/quotas/L-CD5D2786)  | Maximum number of Partnerships. |
 | Profiles | Each supported Region: 5 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/b2bi/quotas/L-05F6A9EF)  | Maximum number of Profiles. |
 | Transformers | Each supported Region: 500 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/b2bi/quotas/L-E15C983E)  | Maximum number of Transformers. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

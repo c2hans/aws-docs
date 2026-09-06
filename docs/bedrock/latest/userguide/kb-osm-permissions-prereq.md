@@ -70,7 +70,3 @@ To configure fine-grained access control and provide the role mapping:
 + [(Optional) Fine-grained access control](#kb-osm-permissions-console-fgap)
 + [Configuring resource-based policies for OpenSearch Managed clusters](kb-osm-permissions-slr-rbp.md)
 + [Configuring OpenSearch permissions with fine-grained access control](kb-osm-permissions-console-fgap.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

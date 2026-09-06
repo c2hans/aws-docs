@@ -69,7 +69,3 @@ innodb_flush_log_at_trx_commit=1
  The immediate synchronize log to disk MySQL parameter does not provide any benefit for EBS volumes. In fact, it causes degraded performance. EBS volumes are automatically replicated within an Availability Zone, which protects them from component failures. Turning off the `sync_binlog` parameter allows the OS to determine when to flush the bin and relay log buffers to the disk, reducing I/O.
 
  The `innodb_flush_log_at_trx_commit=1` is required for full ACID compliance. If you need to synchronize the log to disk for every transaction, then you may want to consider increasing the IOPS and throughput of the EBS volume. In this situation, you may want to separate the binlog and relay log from your data files as separate EBS volumes. You can use Provisioned IOPS SSD volumes for the binlog and relay log to have more predictable performance. You may also use the local SSD of the MySQL secondary instance if you need more throughput and IOPS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

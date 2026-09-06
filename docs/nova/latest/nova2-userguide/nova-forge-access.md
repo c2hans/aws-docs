@@ -122,7 +122,3 @@ Set up the necessary SageMaker HyperPod infrastructure by following the [worksho
 If you need access to Nova Forge, customizable content moderation settings (CCMS) are available for Amazon Nova Lite 1.0 and Pro 1.0 models. CCMS allows adjustment of content moderation controls to align with specific business requirements while maintaining essential responsible AI safeguards. To determine if a business model is appropriate for CCMS, contact an AWS Account Manager.
 
 For additional information on configuring and using CCMS with custom models, see the [Responsible AI Toolkit and Content Moderation section](nova-responsible-ai-toolkit.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

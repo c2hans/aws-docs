@@ -76,7 +76,3 @@ SELECT ST_AsEWKT(ST_Transform(ST_GeomFromText('POLYGON Z ((-10 10 -7, -65 10 -6,
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  SRID=6317;POLYGON Z ((6186430.2771091 -1090834.57212608 1100247.33216237,2654831.67853801 -5693304.90741276 1100247.50581055,2760987.41750022 -486836.575101877 5709710.44137268,6186430.2771091 -1090834.57212608 1100247.33216237),(6146675.25029258 -1194792.63532103 1209007.1115113,6125027.87562215 -1190584.81194058 1317403.77865723,6124888.99555252 -1301885.3455052 1209007.49312929,6146675.25029258 -1194792.63532103 1209007.1115113))
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

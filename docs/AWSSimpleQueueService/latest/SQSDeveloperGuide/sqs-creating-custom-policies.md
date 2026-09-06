@@ -17,7 +17,3 @@ To allow or deny access based on specific conditions, such as request time or th
 + [Relationships between explicit and default denials](sqs-creating-custom-policies-relationships-between-explicit-default-denials.md)
 + [Custom policy limitations](sqs-limitations-of-custom-policies.md)
 + [Custom Access Policy Language examples](sqs-creating-custom-policies-access-policy-examples.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

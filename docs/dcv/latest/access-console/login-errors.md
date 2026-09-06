@@ -54,7 +54,3 @@ When the Authentication Server is setup to use PAM authentication, it validates 
 
 **Note**
  Enabling “Debug” logging prints the access and refreshes tokens in the logs. It is recommended you change the verbosity back to “Info” after debugging.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ For information about how to configure ABAC using the IAM Identity Center consol
 + [Benefits](#abac-benefits)
 + [Checklist: Configuring ABAC in AWS using IAM Identity Center](abac-checklist.md)
 + [Attributes for access control](attributesforaccesscontrol.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

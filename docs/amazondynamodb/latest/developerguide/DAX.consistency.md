@@ -184,7 +184,3 @@ For example, consider a user (Charlie) who wants to work with a different table,
 1. Finally, Charlie decides to rerun his earlier `Query` to retrieve all of his data from `GameScores`. Charlie does not see his high score for Meteor Blasters in the results. This is because the query results come from the query cache, not the item cache. The two caches are independent from one another, so a change in one cache does not affect the other cache.
 
 DAX does not refresh result sets in the query cache with the most current data from DynamoDB. Each result set in the query cache is current as of the time that the `Query` or `Scan` operation was performed. Thus, Charlie's `Query` results don't reflect his `PutItem` operation. This is the case until DAX evicts the result set from the query cache.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

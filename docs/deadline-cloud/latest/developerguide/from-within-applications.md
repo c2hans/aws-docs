@@ -35,7 +35,7 @@ If the job that you submit with a job bundle contains similar parameters and ass
 
 To pull information from an application so that users don't have to manually add it to the submission, you can integrate Deadline Cloud with the application so that your users can submit jobs using a familiar interface without needing exit the application or use command line tools.
 
-If your application has a scripting runtime that supports Python and pyside/pyqt, you can use the GUI components from the [Deadline Cloud client library](https://github.com/aws-deadline/deadline-cloud) to create a UI. For an example, see [Deadline Cloud for Maya integration](https://github.com/aws-deadline/deadline-cloud-for-maya) on GitHub.
+If your application has a scripting runtime that supports Python and pyside/pyqt, you can use the GUI components from the Deadline Cloud client library to create a UI. For more information about the client library, see the [deadline-cloud](https://github.com/aws-deadline/deadline-cloud) repository on the GitHub website. For an example integration, see the [deadline-cloud-for-maya](https://github.com/aws-deadline/deadline-cloud-for-maya) repository on the GitHub website.
 
 The Deadline Cloud client library provides operations that do the following to help you provide a strong integrated user experience:
 + Pull queue environment parameters, job parameters, and asset references form environment variables and by calling the application SDK.
@@ -44,7 +44,3 @@ The Deadline Cloud client library provides operations that do the following to h
 If you use the `deadline bundle gui-submit` command to submit the job bundle, you must programmatically the `parameter_values.yaml` and `asset_references.yaml` files to pass the information from the application. For more information about these files see [Open Job Description (OpenJD) templates for Deadline Cloud](build-job-bundle.md).
 
 If you need more complex controls than the ones offered by OpenJD, need to abstract the job from the user, or want to make the integration match the application's visual style, you can write your own dialog that calls the Deadline Cloud client library to submit the job.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

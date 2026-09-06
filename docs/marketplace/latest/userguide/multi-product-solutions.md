@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/multi-produ
 + **Offer sets**: Process groups of private offers as a single transaction. This makes it easier for customers to buy multiple products from your solution.
 
  You can use one or both capabilities depending on your business needs. Solution listings help customers find your integrated offerings. Offer sets make buying easier when selling to specific customers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

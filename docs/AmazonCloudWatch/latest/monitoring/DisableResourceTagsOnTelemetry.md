@@ -36,7 +36,3 @@ After you complete these steps, CloudWatch stops enriching telemetry with tags. 
 
 **To disable resource tags for telemetry (AWS CloudFormation)**
 If you enabled resource tags for telemetry by using an [AWS::ObservabilityAdmin::TelemetryEnrichment](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-observabilityadmin-telemetryenrichment.html) resource, disable the feature by removing that resource from your CloudFormation template and updating the stack.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -88,7 +88,3 @@ The sample code for private content shows only how to create the signature for s
 + [Create a URL signature using PHP](CreateURL_PHP.md)
 + [Create a URL signature using C\# and the .NET Framework](CreateSignatureInCSharp.md)
 + [Create a URL signature using Java](CFPrivateDistJavaDevelopment.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -69,7 +69,3 @@ A successful response contains an empty body. The error response is a JSON objec
 + If the token that Amazon Cognito sent in the revocation request isn't a refresh token, you receive an HTTP 400 and error `unsupported_token_type`.
 + If the client credentials aren't valid, you receive an HTTP 401 and error `invalid_client`.
 + If the token has been revoked or if the client submitted a token that isn't valid, you receive an HTTP 200 OK.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

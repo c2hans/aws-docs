@@ -43,7 +43,3 @@ You should not see any messages after you subscribe.
 ![Screenshot showing Invocation Count now at 2.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-065.png)
 
 You should now understand the two types of Lambda functions that can run on the AWS IoT Greengrass core. The next module, [Module 4](module4.md), shows you how local IoT devices can interact in an AWS IoT Greengrass group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

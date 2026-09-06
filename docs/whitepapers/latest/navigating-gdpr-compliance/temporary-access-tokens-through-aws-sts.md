@@ -13,7 +13,3 @@ These differences provide the following advantages when customers use temporary 
 + Customers do not have to distribute or embed long-term AWS security credentials with an application.
 + Temporary credentials are the basis for roles and identity federation. Customers can provide access to their AWS resources to users by defining a temporary AWS identity for them.
 + Temporary security credentials have a limited customizable lifespan. Because of this, customers do not have to rotate them or explicitly revoke them when they're no longer needed. After temporary security credentials expire, they cannot be reused. Customers can specify the maximum amount of time the credentials are valid.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

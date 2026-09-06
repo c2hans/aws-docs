@@ -83,7 +83,3 @@ The stream manager optional test group is supported only in IDT v4.9.3.
 Hardware Security Integration (HSI)
 This test is available in IDT v4.9.3 and later for Linux-based devices only. AWS IoT Greengrass doesn't currently support hardware security integration for Windows devices.
 <a name="description-hsi"></a>Validates that the device can authenticate connections to the AWS IoT and AWS IoT Greengrass services using a private key and certificate that are stored in a hardware security module (HSM). This test also verifies that the AWS-provided [PKCS\#11 provider component](pkcs11-provider-component.md) can interface with the HSM using a vendor-provided PKCS\#11 library. For more information, see [Hardware security integration](hardware-security.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

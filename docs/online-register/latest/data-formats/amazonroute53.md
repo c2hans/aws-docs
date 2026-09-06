@@ -47,7 +47,3 @@ Amazon Route 53 provides the following APIs for data retrieval.
 | <a name="route53-ListTrafficPolicyVersions"></a>[ListTrafficPolicyVersions](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTrafficPolicyVersions.html) | Get information about all the versions for a specified traffic policy | List |
 | <a name="route53-ListVPCAssociationAuthorizations"></a>[ListVPCAssociationAuthorizations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListVPCAssociationAuthorizations.html) | Get a list of the VPCs that were created by other accounts and that can be associated with a specified hosted zone | List |
 | <a name="route53-TestDNSAnswer"></a>[TestDNSAnswer](https://docs.aws.amazon.com/Route53/latest/APIReference/API_TestDNSAnswer.html) | Get the value that Route 53 returns in response to a DNS query for a specified record name and type | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ This guide is intended for those in technology roles, such as chief technology o
 By using the decision tree in this guide, you can effectively evaluate whether your organization should adopt an AWS security service. Appropriately evaluating the business and technical requirements can provide organizational opportunities, such as cost savings, improved risk mitigation, automation, agility, scalability, and effectiveness.
 
 Data-driven decisions support the adoption and raise the security posture of your company, sustaining growth and helping you achieve business goals.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

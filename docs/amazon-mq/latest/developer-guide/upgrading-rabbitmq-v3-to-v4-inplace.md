@@ -65,7 +65,3 @@ If the calling role does not have these permissions, the `UpdateBroker` API retu
 
 **Important**
 If your RabbitMQ 3 broker uses any resource at a count higher than the RabbitMQ 4 default limits, the broker may reject new connections, channels, or queue declarations that exceed the new limits after the upgrade. Review the [default resource limits](rabbitmq-resource-limits-configuration.md) for your instance type and deployment mode before upgrading. After the upgrade completes, update the broker configuration to adjust the resource limits to match your workload requirements. For more information, see [Resource limit configuration](configure-resource-limits.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

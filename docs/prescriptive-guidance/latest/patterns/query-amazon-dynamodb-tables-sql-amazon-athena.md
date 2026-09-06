@@ -79,7 +79,3 @@ The code for this pattern is available in the GitHub [Athena Query Federation](h
 <a name="query-amazon-dynamodb-tables-sql-amazon-athena-resources"></a>
 + [Amazon Athena DynamoDB Connector](https://github.com/awslabs/aws-athena-query-federation/tree/master/athena-dynamodb)
 + [Amazon Athena Federated Query](https://docs.aws.amazon.com/athena/latest/ug/connect-to-a-data-source.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -115,7 +115,3 @@ The following are the service endpoints and service quotas for this service.
 | UpdateCustomKeyStore request rate | Each supported Region: 5 per second |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/kms/quotas/L-275D92F3)  | Maximum UpdateCustomKeyStore requests per second. When you reach this quota, KMS rejects requests for this operation for the remainder of the interval. |
 | UpdateKeyDescription request rate | Each supported Region: 5 per second |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/kms/quotas/L-A3828E1F)  | Maximum UpdateKeyDescription requests per second. When you reach this quota, KMS rejects requests for this operation for the remainder of the interval. |
 | UpdatePrimaryRegion request rate | Each supported Region: 5 per second |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/kms/quotas/L-F83AC7F7)  | Maximum UpdatePrimaryRegion requests per second. When you reach this quota, KMS rejects requests for this operation for the remainder of the interval. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

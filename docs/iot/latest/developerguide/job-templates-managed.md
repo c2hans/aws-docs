@@ -416,7 +416,3 @@ The following shows the job document and its latest version. The template shows 
 + [Managed template remote actions and job documents](#job-template-manage-actions)
 + [Create a job from AWS managed templates by using the AWS Management Console](job-template-manage-console-create.md)
 + [Create a job from AWS managed templates by using the AWS CLI](job-template-manage-cli-create.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

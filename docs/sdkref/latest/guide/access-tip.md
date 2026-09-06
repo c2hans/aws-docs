@@ -76,7 +76,7 @@ Trust Policy with Web token provider:
         {
             "Effect": "Allow",
             "Principal": {
-                "Federated": "arn:aws:iam::ACCOUNT_ID:oidc-provider/IDENTITY_PROVIDER_URL"
+                "Federated": "arn:aws:iam::{{111122223333}}:oidc-provider/IDENTITY_PROVIDER_URL"
             },
             "Action": "sts:AssumeRoleWithWebIdentity",
             "Condition": {
@@ -102,7 +102,7 @@ Permission Policy:
                 "sts:SetContext"
             ],
             "Resource": [
-                "accessRoleArn"
+                "arn:aws:iam::{{111122223333}}:role/{{accessRole}}"
             ]
         },
         {
@@ -356,7 +356,3 @@ try {
 For additional details and source, see [trusted-identity-propagation-js](https://github.com/aws-sdk-plugin/trusted-identity-propagation-js) on GitHub.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdkref` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

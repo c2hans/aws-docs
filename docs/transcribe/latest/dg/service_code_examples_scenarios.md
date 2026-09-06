@@ -14,7 +14,3 @@ Scenarios target an intermediate level of experience to help you understand serv
 + [Convert text to speech and back to text](example_cross_Telephone_section.md)
 + [Create and refine a custom vocabulary](example_transcribe_Scenario_CustomVocabulary_section.md)
 + [Transcribe audio and get job data](example_transcribe_Scenario_GettingStartedTranscriptionJobs_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,12 +22,12 @@ The following table lists the latest version of the Amazon EKS add-on type for e
 
 | Kubernetes version | CoreDNS version |
 | --- | --- |
-| 1.36 | v1.14.3-eksbuild.14 |
-| 1.35 | v1.14.3-eksbuild.14 |
-| 1.34 | v1.13.2-eksbuild.22 |
-| 1.33 | v1.12.4-eksbuild.29 |
-| 1.32 | v1.11.4-eksbuild.51 |
-| 1.31 | v1.11.4-eksbuild.51 |
+| 1.36 | v1.14.3-eksbuild.16 |
+| 1.35 | v1.14.3-eksbuild.16 |
+| 1.34 | v1.13.2-eksbuild.24 |
+| 1.33 | v1.12.4-eksbuild.31 |
+| 1.32 | v1.11.4-eksbuild.53 |
+| 1.31 | v1.11.4-eksbuild.53 |
 
 **Important**
 If you’re self-managing this add-on, the versions in the table might not be the same as the available self-managed versions. For more information about updating the self-managed type of this add-on, see [Update the CoreDNS Amazon EKS self-managed add-on](coredns-add-on-self-managed-update.md).
@@ -78,7 +78,3 @@ If you’re self-managing this add-on, the versions in the table might not be th
 ### CoreDNS `v1.11` upgrade considerations
 <a name="coredns-upgrade-1"></a>
 + In EKS add-on versions `v1.11.1-eksbuild.4` and later, the container image is based on a [minimal base image](https://gallery.ecr.aws/eks-distro-build-tooling/eks-distro-minimal-base) maintained by Amazon EKS Distro, which contains minimal packages and doesn’t have shells. For more information, see [Amazon EKS Distro](https://distro.eks.amazonaws.com/). The usage and troubleshooting of the CoreDNS image remains the same.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

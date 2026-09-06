@@ -23,7 +23,3 @@ For more information, see [Amazon DataZone terminology and concepts](datazone-co
 + [Manage user permissions in the Amazon DataZone data portal](user-management-portal.md)
 + [Restricting access to Amazon DataZone](user-management-portal-restricting-programmatic-access.md)
 + [Upgrade Amazon DataZone domains to Amazon SageMaker unified domains](upgrade-domain.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

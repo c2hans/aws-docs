@@ -56,7 +56,3 @@ Submit fixes and enhancements for community modules that are hosted in GitHub:
 + Request new best practice configurations to be added to existing OSS modules by creating issues.
 
 Contributing to community modules enhances reusable, codified patterns for all Terraform practitioners.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

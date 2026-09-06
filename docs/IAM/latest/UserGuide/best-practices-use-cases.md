@@ -15,7 +15,3 @@ To get the most out of IAM, take the time to learn the recommended best practice
 + [Security best practices in IAM](best-practices.md)
 + [Root user best practices for your AWS account](root-user-best-practices.md)
 + [Business use cases for IAM](business-use-cases.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

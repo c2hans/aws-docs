@@ -270,7 +270,3 @@ tasks.named('test') {
 ------
 
 For next steps, see the Getting Started guide on the Gradle website for instructions on how to [build and run a Gradle application](https://docs.gradle.org/current/samples/sample_building_java_applications.html#run_the_application).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

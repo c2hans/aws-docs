@@ -71,7 +71,3 @@ Accept the default value of **300**.
 
 **Important**
 If you release the elastic IP, make sure you also delete the DNS record pointing to it. If you don't, you will have a dangling DNS record that can be taken over by an unauthorized user.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

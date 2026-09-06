@@ -32,7 +32,3 @@ Currently, CloudShell terminal accessibility features are not available on mobil
 You can customize the appearance of CloudShell to accommodate your visual preferences.
 + **Font size** – Choose from **Smallest**, **Small**, **Medium**, **Large**, and **Largest** font sizes in the terminal. For more information about changing the font size, see [Changing font size](customizing-cshell.md#font-size).
 + **Theme** – Choose between **Light** and **Dark** interface themes. For more information about changing the interface theme, see [Changing the interface theme](customizing-cshell.md#color-theme).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

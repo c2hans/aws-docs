@@ -72,7 +72,3 @@ For a complete list of AWS SDK developer guides and code examples, see [Using th
     + [`UpdateAutoScalingGroup`](example_auto-scaling_UpdateAutoScalingGroup_section.md)
 + [Scenarios](service_code_examples_scenarios.md)
   + [Build and manage a resilient service](example_cross_ResilientService_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

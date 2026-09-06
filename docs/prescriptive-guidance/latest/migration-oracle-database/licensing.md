@@ -38,7 +38,3 @@ If you use the BYOL model, you must have a license for both the primary DB insta
 The BYOL model supports Oracle Database Enterprise Edition (EE) and Standard Edition Two (SE2).
 
 For more information about licensing options for Amazon RDS for Oracle, see [Oracle Licensing](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Oracle.html#Oracle.Concepts.Licensing) and the [Amazon RDS for Oracle FAQs](https://aws.amazon.com/rds/oracle/faqs/) on the AWS website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,7 +11,3 @@ MediaLive enforces the following validation rules when you create or update SRT 
 + **Listener port range**: The port number must be in the range 5000 to 5200 inclusive.
 + **Cannot remove channel security group**: If the channel has SRT outputs in listener mode, you cannot remove the channel security group. You must first remove all SRT outputs configured in listener mode, or change them to caller mode.
 + **Cannot change mode on running channel**: You cannot change an output's connection mode (from caller to listener or vice versa) while the channel is running. You must stop the channel first.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

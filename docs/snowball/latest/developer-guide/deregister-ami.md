@@ -20,7 +20,3 @@ AWS Snowball Edge is no longer available to new customers. New customers should 
 
 1. In the **Confirm deregister image** window, confirm the image ID and choose **Deregister image**. When deregistering is successful, the image is removed from the list of images.
 ![Confirm deregister image window showing image name and Deregister image button.](http://docs.aws.amazon.com/snowball/latest/developer-guide/images/opshub-confirm-deregister-image-console.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

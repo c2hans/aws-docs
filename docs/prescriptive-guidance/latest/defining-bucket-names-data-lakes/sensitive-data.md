@@ -39,7 +39,3 @@ The diagram shows the following workflow:
 1. An AWS Glue job validates and transforms the data into a consumption-ready format and places the files into the Amazon S3 bucket for the stage layer.
 
 1. An AWS Glue job aggregates the data according to your organization's requirements and places the data into an Amazon S3 bucket in the analytics layer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

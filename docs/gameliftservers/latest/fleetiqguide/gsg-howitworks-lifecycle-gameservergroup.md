@@ -17,7 +17,3 @@ Game server groups go through the following life cycle, including provisioning a
 + Amazon GameLift Servers FleetIQ activates an asynchronous deactivation workflow in response to the DELETE\_SCHEDULED status, transitioning the game server group status to DELETING. You have the option of deleting just the game server group or delete both the game server group and the linked Auto Scaling group.
   + If deactivation fails for any reason, the game server group is placed into status ERROR. To get additional error information to help debug the failure cause, call `DescribeGameServerGroup()` on a game server group in an error state.
   + If deactivation succeeds, the game server group is transitioned to status DELETED.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

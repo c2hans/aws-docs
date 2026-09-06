@@ -27,7 +27,3 @@ This section shows you how to get started with the MediaConvert API to transcode
    + For information about interacting programmatically with each resource type, see the [Resources](https://docs.aws.amazon.com/mediaconvert/latest/apireference/resources.html) topic of this guide.
    + For detailed information about each transcoding setting, see the [Properties](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-properties) topic of the Jobs resource chapter of this guide. You might find it easiest to navigate to a particular setting in the Properties topic by following the links in the [Schemas](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-schemas) section.
    + To prevent duplicate jobs from being created, use client request tokens. For more information see [Preventing duplicate jobs](idempotency.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

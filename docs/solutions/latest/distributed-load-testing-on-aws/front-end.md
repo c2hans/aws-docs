@@ -37,7 +37,3 @@ The solution supports three web console hosting options. The backend architectur
 The optional Model Context Protocol (MCP) Server provides an additional interface for AI development tools to access and analyze load testing data through natural language interactions. This component is only deployed if you select the MCP Server option during solution deployment.
 
 The MCP Server enables AI agents to query test results, analyze performance metrics, and gain insights into your load testing data using tools like Amazon Q, Claude, and other MCP-compatible AI assistants. For detailed information about the MCP Server architecture and configuration, refer to [MCP Server](MCP-Server.md) in this section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

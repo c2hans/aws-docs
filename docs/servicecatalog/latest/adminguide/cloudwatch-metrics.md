@@ -43,7 +43,3 @@ AWS Service Catalog sends the following dimensions to Amazon CloudWatch.
 | `ProductId` | This dimension filters the data you request for the identified product id only. This helps you to pinpoint an exact product from which to be launched. |
 | `ProvisioningArtifactId` | This dimension filters the data you request for the identified provisioning artifact id only. This helps you to pinpoint an exact version of products from which to be launched. |
 | `State` | This dimension filters the data you request for all provisioned products launched with this specified state. This helps you categorize your data by the state of launch.<br />Valid State: SUCCEEDED, FAILED |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

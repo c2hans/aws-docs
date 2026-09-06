@@ -36,7 +36,3 @@ The following table describes the major updates and new features for the *AWS Pa
 | [AWS ParallelCluster introduces support for Intel MPI](https://docs.aws.amazon.com/parallelcluster/latest/ug/intelmpi.html) | AWS ParallelCluster version 2.4.1 introduces support for Intel MPI. | July 29, 2019 |
 | [AWS ParallelCluster introduces support for EFA](https://docs.aws.amazon.com/parallelcluster/latest/ug/efa.html) | AWS ParallelCluster version 2.4.0 introduces support for Elastic Fabric Adapter (EFA). | June 11, 2019 |
 | [AWS ParallelCluster documentation released on AWS documentation site](#document_history) | The AWS ParallelCluster documentation is now available in 10 languages and in both HTML and PDF formats. | May 24, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

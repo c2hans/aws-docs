@@ -18,7 +18,3 @@ View details about updates to AWS managed policies for WorkSpaces Secure Browser
 | [AmazonWorkSpacesWebReadOnly](security-iam-awsmanpol-AmazonWorkSpacesWebReadOnly.md) – New policy | WorkSpaces Secure Browser added a new policy to provide read-only access to WorkSpaces Secure Browser and its dependencies through the AWS Management Console, SDK, and CLI. | November 30, 2021 |
 | [AmazonWorkSpacesWebServiceRolePolicy](security-iam-awsmanpol-AmazonWorkSpacesWebServiceRolePolicy.md) – New policy | WorkSpaces Secure Browser added a new policy to allow access to AWS services and resources used or managed by WorkSpaces Secure Browser. | November 30, 2021 |
 | WorkSpaces Secure Browser started tracking changes | WorkSpaces Secure Browser started tracking changes for its AWS managed policies.  | November 30, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,7 +50,3 @@ Regardless of the authentication method used, you are charged for Amazon Locatio
 + [Jobs pricing](jobs-pricing.md)
 
 For a complete pricing overview and free tier information, see the [Amazon Location Service pricing page](https://aws.amazon.com/location/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

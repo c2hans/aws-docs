@@ -55,7 +55,3 @@ Service features are sometimes rolled out incrementally to the AWS Regions where
 | [Support for attribute key matching using the '`exists`' operator](https://docs.aws.amazon.com/sns/latest/dg/sns-subscription-filter-policies.html#attribute-key-matching) | To check whether an incoming message has an attribute whose key is listed in the filter policy, you can use the `exists` operator. | July 5, 2019 |
 | [Support for anything-but matching of multiple numeric values](https://docs.aws.amazon.com/sns/latest/dg/sns-subscription-filter-policies.html#numeric-anything-but-matching) | In addition to multiple strings, Amazon SNS allows anything-but matching of multiple numeric values. | July 5, 2019 |
 | [Amazon SNS release notes are available as an RSS feed](https://docs.aws.amazon.com/sns/latest/dg/sns-release-notes.html) | Following the title on this page (**Documentation history**), choose **RSS**. | June 22, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

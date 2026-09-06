@@ -25,7 +25,3 @@ To successfully generate thumbnails, make sure that your flow meets the followin
 | Type of flows that support thumbnails | Any type of flow except CDI flows. |
 | Maximum number of outputs that can be attached to the flow | 10If the flow exceeds this limit, then MediaConnect won't generate any thumbnails for this flow. |
 | Maximum bitrate for all the outputs that are attached to the flow | 400 MbpsIf the flow exceeds this limit, then MediaConnect won't generate any thumbnails for this flow. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ Alternatively, you can set `dependencies` to `auto_capture` to let the SageMaker
 + Your local development environment must not contain operating system-specific dependencies that are not compatible with Linux.
 
 In case `auto_capture` does not work, we recommend that you pass in your dependencies as a requirement.txt or conda environment.yaml file, as described in the first coding example in this section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

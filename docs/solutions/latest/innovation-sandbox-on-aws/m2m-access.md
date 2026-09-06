@@ -56,7 +56,3 @@ The [`scripts/m2m` tooling](https://github.com/aws-solutions/innovation-sandbox-
 <a name="remove-m2m-client"></a>
 
 To permanently remove a client’s access, delete its CloudFormation stack using the AWS CloudFormation console or `aws cloudformation delete-stack`. This also deletes the IAM role. To immediately block access while leaving the stack intact — for example, in response to a suspected credential leak — use the `revoke-m2m-role.sh` script in the `scripts/m2m` tooling. This script denies or restores a client’s access and invalidates in-flight sessions without destroying the stack. For uninstall instructions, see [Delete machine-to-machine client stacks](delete-m2m-clients.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
  If you would like support implementing this guidance, or assisting you with building the foundational elements prescribed by the M&G Guide, we recommend you review the offerings provided by [AWS Professional Services](https://aws.amazon.com/professional-services/) or the AWS Partners in the [Built on Control Tower program](https://aws.amazon.com/controltower/partners/).
 
  If you are seeking help to operate your workloads in AWS following this guidance, [AWS Managed Services (AMS)](https://aws.amazon.com/managed-services/) can augment your operational capabilities as a short-term accelerator or a long-term solution, letting you focus on transforming your applications and businesses in the cloud.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ The following Stability AI models are available in Amazon Bedrock:
 | [Stable Image Control Sketch](model-card-stability-ai-stable-image-control-sketch.md) | Stable Image Control Sketch is Stability AI's model that generates images guided by sketch inputs for controlled image creation. |
 | [Stable Image Outpaint](model-card-stability-ai-stable-image-outpaint.md) | Stable Image Outpaint is Stability AI's model that extends images beyond their original boundaries with contextually coherent content. |
 | [Stable Image Inpaint](model-card-stability-ai-stable-image-inpaint.md) | Stable Image Inpaint is Stability AI's model that fills in masked regions of images with contextually appropriate content based on text prompts. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

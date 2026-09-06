@@ -27,7 +27,3 @@ If a projection description file (.prj) exists with the shapefile, Redshift uses
 Query the `SYS_SPATIAL_SIMPLIFY` or `SVL_SPATIAL_SIMPLIFY` system views to view which records have been simplified, along with the calculated tolerance. When you specify `SIMPLIFY tolerance`, this view contains a record for each COPY operation. Otherwise, it contains a record for each simplified geometry. For more information, see [SYS\_SPATIAL\_SIMPLIFY](SYS_SPATIAL_SIMPLIFY.md) or [SVL\_SPATIAL\_SIMPLIFY](r_SVL_SPATIAL_SIMPLIFY.md).
 
 For examples of loading a shapefile, see [Loading a shapefile into Amazon Redshift](r_COPY_command_examples.md#copy-example-spatial-copy-shapefile).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -117,7 +117,3 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/create-an-a
 **Responsible AI disclosure**
 
  Investigation summaries are generated using AWS Generative AI capabilities. You are responsible for evaluating AI-generated recommendations in your specific context, implementing appropriate oversight mechanisms, verifying findings independently, and maintaining human oversight of all security decisions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -405,7 +405,3 @@ Pipelines that are inactive for longer than 30 days will have polling disabled f
 + Active pipelines will not be affected.
 
 For more information, see the `pollingDisabledAt` parameter under [PipelineMetadata](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_PipelineMetadata.html) object in the * CodePipeline API Guide*. For the steps to migrate your pipeline from polling to event-based change detection, see [Change Detection Methods](change-detection-methods.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

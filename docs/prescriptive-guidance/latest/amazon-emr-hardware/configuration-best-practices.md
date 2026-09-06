@@ -30,7 +30,3 @@ Finally, set up automatic scaling in Amazon EMR for an instance group. Instances
 Use Spot Instances on task nodes. The task nodes process data but do not hold persistent data in Hadoop Distributed File System (HDFS). If task nodes shut down because the Spot price has risen above your maximum Spot price, no data is lost, and the effect on your cluster is minimal.
 
 When you launch task instance groups as Spot Instances, Amazon EMR provisions as many task nodes as it can, using your maximum Spot price. For example, you can request a task instance group with six nodes. If only five Spot Instances are available at or below your maximum Spot price, Amazon EMR launches the instance group with five nodes. Amazon EMR adds the sixth node later if possible. For more information, see [Cluster configuration guidelines and best practices](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-instances-guidelines.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

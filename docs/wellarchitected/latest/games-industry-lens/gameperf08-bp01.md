@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Implement a diagnostic dump and submission feature in the game client and create a support forum to foster community-driven troubleshooting and improvement.
 +  Tailor performance optimizations to player community expectations, such as low latency for competitive Regions or responsive login/lobby experiences for casual and long-session players.
 +  Design Live Ops workflows to account for the entire player experience, from active gameplay to idle client behavior, facilitating seamless engagement.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

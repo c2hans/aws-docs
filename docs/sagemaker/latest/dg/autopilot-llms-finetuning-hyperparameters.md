@@ -14,7 +14,3 @@ You can optimize the learning process of your base model by adjusting any combin
 + **Learning Rate Warmup Steps**: The `learningRateWarmupSteps` hyperparameter specifies the number of training steps during which the learning rate gradually increases before reaching its target or maximum value. This helps the model converge more effectively and avoid issues like divergence or slow convergence that can occur with an initially high learning rate.
 
 To learn about how to adjust hyperparameters for your fine-tuning experiment in Autopilot and discover their possible values, see [How to set hyperparameters to optimize the learning process of a model](autopilot-create-experiment-finetune-llms.md#autopilot-llms-finetuning-set-hyperparameters).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -61,7 +61,3 @@ The following custom cgroup settings are supported at the cluster level:
 + [MaxSwapPercent](https://slurm.schedmd.com/cgroup.conf.html#OPT_MaxSwapPercent)
 + [MinRAMSpace](https://slurm.schedmd.com/cgroup.conf.html#OPT_MinRAMSpace)
 + [SignalChildrenProcesses](https://slurm.schedmd.com/cgroup.conf.html#OPT_SignalChildrenProcesses)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

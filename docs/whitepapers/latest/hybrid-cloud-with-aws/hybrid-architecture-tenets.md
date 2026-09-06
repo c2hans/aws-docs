@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-with-aws
 +  **Build once, deploy anywhere**: Hybrid cloud customers want to develop once and deploy workloads to cloud, on-premises, and edge environments in an agile and consistent fashion using a common set of development and management APIs, while getting consistent performance across the environment. In essence, the hybrid infrastructure must support the workload requirements, independent of where they are deployed.
 +  **Enterprise-class application Service Level Agreements (SLAs)**: Hybrid cloud customers need their infrastructure to be highly reliable and available, similar to what they get with [AWS today](https://aws.amazon.com/legal/service-level-agreements/).
 +  **Existing skill sets and tools**: While deploying a hybrid cloud, customers often want to leverage organizational skill sets and tools that they have already invested in.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

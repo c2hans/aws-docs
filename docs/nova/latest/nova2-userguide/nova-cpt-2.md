@@ -141,7 +141,3 @@ The parameters that are available for fine-tuning with CPT include:
 + **weight\_decay**: The L2 regularization strength. Higher values (between 0.01-0.1) increase regularization.
 + **warmup\_steps**: The number of steps to gradually increase learning rate. This improves training stability. Valid values are between 1-20, inclusive.
 + **min\_lr**: The minimum learning rate at the end of decay. Valid values are between 0-1, inclusive, but must be less than learning rate.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

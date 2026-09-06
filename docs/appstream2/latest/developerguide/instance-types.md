@@ -20,20 +20,22 @@ Graphics Design instances will no longer be available from AWS after 12/31/2025 
 
 | Instance Family | Description | Base Image Name |
 | --- | --- | --- |
-| General Purpose | Basic computing resources for running web browsers and most business applications. | For stream.standard.\* instance types:<br />AppStream-WinServer-{{OperatingSystemVersion}}-{{MM-DD-YYYY}}<br />AppStream-RockyLinux8-{{MM-DD-YYYY}}<br />AppStream-RHEL8-{{MM-DD-YYYY}} |
+| General Purpose | Basic computing resources for running web browsers and most business applications. | For stream.standard.\* instance types:<br />AppStream-{{WinServerOperatingSystemVersion}}-{{MM-DD-YYYY}}<br />AppStream-RockyLinux8-{{MM-DD-YYYY}}<br />AppStream-RHEL8-{{MM-DD-YYYY}} |
 |  |  | [Import Image](import-image.md) for GeneralPurpose.\* instance types |
-| Compute Optimized | Optimized for compute-bound applications that benefit from high performance processors. | For stream.compute.\* instance types:<br />AppStream-WinServer-{{OperatingSystemVersion}}-{{MM-DD-YYYY}}<br />AppStream-RockyLinux8-{{MM-DD-YYYY}}<br />AppStream-RHEL8-{{MM-DD-YYYY}} |
+| Compute Optimized | Optimized for compute-bound applications that benefit from high performance processors. | For stream.compute.\* instance types:<br />AppStream-{{WinServerOperatingSystemVersion}}-{{MM-DD-YYYY}}<br />AppStream-RockyLinux8-{{MM-DD-YYYY}}<br />AppStream-RHEL8-{{MM-DD-YYYY}} |
 |  |  | [Import Image](import-image.md) for ComputeOptimized.\* instance types |
-| Memory Optimized | Optimized for memory-intensive applications that process large amounts of data.If you plan to use WorkSpaces Applications z1d-based instances, you must provision them from images that were created from WorkSpaces Applications base images published on or after June 12, 2018. | For stream.memory.\* instance types:<br />AppStream-WinServer-{{OperatingSystemVersion}}-{{MM-DD-YYYY}}<br />AppStream-RockyLinux8-{{MM-DD-YYYY}}<br />AppStream-RHEL8-{{MM-DD-YYYY}} |
+| Memory Optimized | Optimized for memory-intensive applications that process large amounts of data.If you plan to use WorkSpaces Applications z1d-based instances, you must provision them from images that were created from WorkSpaces Applications base images published on or after June 12, 2018. | For stream.memory.\* instance types:<br />AppStream-{{WinServerOperatingSystemVersion}}-{{MM-DD-YYYY}}<br />AppStream-RockyLinux8-{{MM-DD-YYYY}}<br />AppStream-RHEL8-{{MM-DD-YYYY}} |
 |  |  | [Import Image](import-image.md) for MemoryOptimized.\* instance types |
-| Graphics Design | Uses AMD FirePro S7150x2 Server GPUs and AMD Multiuser GPU technology to support graphics applications that use DirectX, OpenGL, or OpenCL. | AppStream-Graphics-Design-WinServer-{{OperatingSystemVersion}}-{{MM-DD-YYYY}}  |
-| Graphics G4dn | Uses NVIDIA T4 GPUs to support graphics intensive applications. | For stream.graphics.g4dn.\* instance types:<br />AppStream-Graphics-G4dn-WinServer-{{OperatingSystemVersion}}-{{MM-DD-YYYY}}<br />AppStream-Graphics-G4dn-RockyLinux8-{{MM-DD-YYYY}}<br />AppStream-Graphics-G4dn-RHEL8-{{MM-DD-YYYY}} |
+| Graphics Design | Uses AMD FirePro S7150x2 Server GPUs and AMD Multiuser GPU technology to support graphics applications that use DirectX, OpenGL, or OpenCL. | AppStream-Graphics-Design-{{WinServerOperatingSystemVersion}}-{{MM-DD-YYYY}}  |
+| Graphics G4dn | Uses NVIDIA T4 GPUs to support graphics intensive applications. | For stream.graphics.g4dn.\* instance types:<br />AppStream-Graphics-G4dn-{{WinServerOperatingSystemVersion}}-{{MM-DD-YYYY}}<br />AppStream-Graphics-G4dn-RockyLinux8-{{MM-DD-YYYY}}<br />AppStream-Graphics-G4dn-RHEL8-{{MM-DD-YYYY}} |
 |  |  | [Import Image](import-image.md) for Accelerated.g4dn.\* instance types |
-| Graphics G5 | Uses NVIDIA A10G GPUs to support graphics-intensive applications such as remote workstations, video rendering, and gaming, to produce high fidelity graphics in real time. | For stream.graphics.g5.\* instance types:<br />AppStream-Graphics-G5-WinServer-{{OperatingSystemVersion}}-{{MM-DD-YYYY}}<br />AppStream-Graphics-G5-RockyLinux8-{{MM-DD-YYYY}}<br />AppStream-Graphics-G5-RHEL8-{{MM-DD-YYYY}} |
+| Graphics G5 | Uses NVIDIA A10G GPUs to support graphics-intensive applications such as remote workstations, video rendering, and gaming, to produce high fidelity graphics in real time. | For stream.graphics.g5.\* instance types:<br />AppStream-Graphics-G5-{{WinServerOperatingSystemVersion}}-{{MM-DD-YYYY}}<br />AppStream-Graphics-G5-RockyLinux8-{{MM-DD-YYYY}}<br />AppStream-Graphics-G5-RHEL8-{{MM-DD-YYYY}} |
 |  |  | [Import Image](import-image.md) for Accelerated.g5.\* instance types |
 | Graphics G6 | +  G6 provides full GPU capabilities with 1:4 vCPU and Memory ratio. <br />+  Gr6 provides full GPU capabilities with 1:8 vCPU and Memory ratio. <br />+  G6f provides fractional GPU capabilities with 1:4 vCPU and Memory ratio. <br />+  Gr6f provides fractional GPU capabilities with 1:8 vCPU and Memory ratio. Note: For G6f and Gr6f, use images with date 07-28-2025 or later. | For stream.graphics.g6/gr6/g6f/gr6f.\* instance types:<br />AppStream-Graphics-G6-{{WinServerOperatingSystemVersion}}-{{MM-DD-YYYY}}<br />AppStream-Graphics-G6-RockyLinux8-{{MM-DD-YYYY}}<br />AppStream-Graphics-G6-RHEL8-{{MM-DD-YYYY}} |
 |  |  | [Import Image](import-image.md) for Accelerated.g6/gr6/g6f/gr6f.\* instance types |
 | Graphics G6e | Powered by NVIDIA L40S Tensor Core GPUs and third generation AMD EPYC processors. | [Import Image](import-image.md) for Accelerated.g6e.\* instance types |
+| Graphics G7 | Powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs to support graphics-intensive and AI inference applications. | For stream.graphics.g7.\* instance types:<br />AppStream-Graphics-G7-{{WinServerOperatingSystemVersion}}-{{MM-DD-YYYY}}<br />AppStream-Graphics-G7-RockyLinux8-{{MM-DD-YYYY}}<br />AppStream-Graphics-G7-RHEL8-{{MM-DD-YYYY}} |
+|  |  | [Import Image](import-image.md) for Accelerated.g7.\* instance types |
 |  |  |  |
 
 WorkSpaces Applications instances have one 200 GB fixed-size volume, which is used for the C drive. Because WorkSpaces Applications is non-persistent, each instance's volume is immediately deleted after each user session.
@@ -42,7 +44,3 @@ For more information, see the following:
 + [WorkSpaces Applications Base Image and Managed Image Update Release Notes](base-image-version-history.md)
 + [Amazon WorkSpaces Applications Service Quotas](limits.md)
 + [WorkSpaces Applications Pricing](https://aws.amazon.com/appstream2/pricing/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

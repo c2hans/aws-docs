@@ -35,7 +35,3 @@ You can attach instances that are in a running or stopped state only. Additional
 1. Choose **Attach** to attach the instance. Otherwise, choose **Cancel**.
 
    The instance has full access to the bucket and its objects after it's attached. You can configure software or a plugin on your instance to programmatically upload and access files on your bucket. For example, if you want to configure a WordPress instance to store media files on a bucket. For more information, see [Tutorial: Connect a bucket to your WordPress instance](amazon-lightsail-connecting-buckets-to-wordpress.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

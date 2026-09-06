@@ -32,7 +32,3 @@ The following table identifies the color spaces in the source that can be conver
 | Rec. 601, Rec. 709, HLG | HDR10 |
 | Rec. 601, Rec. 709, HDR10 | HLG |
 | HDR10<br />If MediaLive encounters a portion of non-HDR10 content, it passes through the color space and color space metadata for that portion, | Dolby Vision 8.1 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

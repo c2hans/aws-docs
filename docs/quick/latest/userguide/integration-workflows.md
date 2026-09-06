@@ -26,10 +26,10 @@ Knowledge bases connect external data sources to Amazon Quick so you can ask que
 
 After you choose **Create**, the data sync starts automatically.
 
-## Creating an action connector
+## Creating a connector
 <a name="creating-task-integration"></a>
 
-Action connectors enable you to perform actions in external applications directly from Amazon Quick.
+Connectors enable you to perform actions in external applications directly from Amazon Quick.
 
 1. In the Amazon Quick console, choose **Connectors**.
 
@@ -43,7 +43,7 @@ Action connectors enable you to perform actions in external applications directl
 
 1. Review the available actions and choose **Publish**.
 
-After successful creation, your action connector is available for use in Amazon Quick chat, workflows, and Amazon Q Apps.
+After successful creation, your connector is available for use in Amazon Quick chat, workflows, and Amazon Q Apps.
 
 ## Managing existing integrations
 <a name="managing-existing-integrations"></a>
@@ -63,7 +63,7 @@ For knowledge bases:
 
 1. Modify the settings as needed and choose **Save changes**.
 
-For action connectors:
+For connectors:
 
 1. In the Amazon Quick console, choose **Connectors**.
 
@@ -86,7 +86,7 @@ For knowledge bases:
 
 1. In the confirmation dialog, choose **Delete** to confirm.
 
-For action connectors:
+For connectors:
 
 1. In the Amazon Quick console, choose **Connectors**.
 
@@ -103,10 +103,10 @@ The integration is permanently removed from your account. Any dependent resource
 
 From the connector or knowledge base details page, choose the menu icon (⋮) and select **Share**.
 
-### Managing action connectors
+### Managing connectors
 <a name="managing-action-connectors"></a>
 
-Action connectors have additional management options available from the connector details page.
+Connectors have additional management options available from the connector details page.
 
 **Sign in or re-connect**
 For connectors that use Default OAuth app or Custom OAuth app authentication, you must sign in to the service before you can use its actions. If you have not yet signed in, a **Sign in** button appears on the details page. After you sign in, you can use **Re-Connect** to re-authenticate if your session expires or the connection is interrupted.
@@ -115,8 +115,4 @@ For connectors that use Default OAuth app or Custom OAuth app authentication, yo
 Choose **Test action APIs** in the Actions section of the details page to test individual actions provided by the connector. This lets you verify that the connection is working correctly and that the service responds as expected.
 
 **Note**
-The **Test action APIs** option is available for action connectors only. Knowledge bases do not support action testing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+The **Test action APIs** option is available for connectors only. Knowledge bases do not support action testing.

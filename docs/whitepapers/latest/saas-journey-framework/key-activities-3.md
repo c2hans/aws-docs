@@ -58,7 +58,3 @@ The MVS phase plays an important role in refining the GTM strategy for GA, and s
 +  **Goal:** Define the scope of your product updates and its impact on your customers, including metrics that will help you measure effectiveness and ongoing improvements of your communications plan.
 +  **Outcome:** Definition of your target internal and external audiences, beyond technical users or admins, including business leaders and other stakeholders. Development of content types that would resonate with each target audience the most, and multiple communication channels to reach out them.
 +  **Key Decision Point:** How can you announce a launch of a new SaaS solution? Which communication strategies would resonate the most with your customers, investors, and internal teams?
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

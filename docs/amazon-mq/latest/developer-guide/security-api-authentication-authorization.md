@@ -141,7 +141,3 @@ If an Amazon MQ API action is not listed in this table, then it does not support
 | [`UpdateBroker`](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/rest-api-broker.html#UpdateBroker) | [brokers\*](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonmq.html#amazonmq-resources-for-iam-policies) |
 | [`UpdateConfiguration`](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/rest-api-configuration.html#UpdateConfiguration) | [configurations\*](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonmq.html#amazonmq-resources-for-iam-policies) |
 | [`UpdateUser`](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/rest-api-user.html#UpdateUser) | [brokers\*](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonmq.html#amazonmq-resources-for-iam-policies) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

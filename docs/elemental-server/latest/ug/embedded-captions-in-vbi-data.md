@@ -29,7 +29,3 @@ To include embedded captions in this scenario, you do not create caption selecto
 1. Do not create a captions tab in this stream.
 
 All the VBI data (including embedded captions) from the input is included in the output that is associated with this stream.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

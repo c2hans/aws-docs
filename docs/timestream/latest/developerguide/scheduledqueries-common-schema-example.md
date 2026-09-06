@@ -192,7 +192,3 @@ SHOW MEASURES FROM "raw_data"."devops_single"
 | eu-west-1-1 | hercules | i-zaZswmJk-hercules-eu-west-1-cell-9-silo-2-00000027.amazonaws.com |  | AL2012 |  | eu-west-1-cell-9 | eu-west-1 | eu-west-1-cell-9-silo-2 | r5.4xlarge | network\_bytes\_out | 34:57.2 | 0.51424 |  |  |
 | eu-west-1-1 | hercules | i-zaZswmJk-hercules-eu-west-1-cell-9-silo-2-00000027.amazonaws.com | server |  | JDK\_8 | eu-west-1-cell-9 | eu-west-1 | eu-west-1-cell-9-silo-2 |  | task\_completed | 34:57.2 |  | 69 |  |
 | eu-west-1-1 | hercules | i-zaZswmJk-hercules-eu-west-1-cell-9-silo-2-00000027.amazonaws.com | server |  | JDK\_8 | eu-west-1-cell-9 | eu-west-1 | eu-west-1-cell-9-silo-2 |  | task\_end\_state | 34:57.2 |  |  | SUCCESS\_WITH\_RESULT |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

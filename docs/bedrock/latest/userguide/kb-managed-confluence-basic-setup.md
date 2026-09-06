@@ -79,7 +79,3 @@ Record the secret ARN from the response. You use it as the data source `secretAr
 <a name="kb-managed-confluence-basic-next"></a>
 
 After you store the secret, create the data source with `authType` set to `BASIC`. See [Connect a Confluence data source](kb-managed-ds-confluence-connect.md). To filter query results by user permissions, see [Document-level access controls](kb-managed-ds-confluence-acl.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

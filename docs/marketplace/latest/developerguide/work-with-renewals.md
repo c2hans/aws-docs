@@ -56,7 +56,3 @@ There are four types of renewals in AWS Marketplace:
   +  [Lab: Create a replacement private offer](https://catalog.workshops.aws/mpseller/en-US/manage-offers-with-api/create-a-replacement-private-offer)
 + For a video on creating replacement offers, see [Renew SaaS Contract Private Offers - AWS Marketplace](https://www.youtube.com/watch?v=KzcE0ZWyjzk) on YouTube.
 +  For a video on creating future dated offers, see [Create an AWS Marketplace Future Dated Private Offer](https://www.youtube.com/watch?v=xLqQjXa2edo) on YouTube.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

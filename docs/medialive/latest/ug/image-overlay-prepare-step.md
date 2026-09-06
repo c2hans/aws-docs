@@ -48,7 +48,3 @@ Follow these guidelines:
   + You can create multiple versions of the same file, with each file in a different size. Create separate actions for each size. In each action, specify all the outputs where the image will be inserted.
   + You can resize the image when you create the insert action. Create separate actions for each size. In each action, resize the image by setting a height and width. Specify all the outputs where the resized image will be inserted.
 + If the image is bigger than the output video frame, MediaLive trims off the excess.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -77,7 +77,3 @@ To use VPAID, follow these guidelines:
 
   It is theoretically possible to use the default server-side reporting mode with VPAID. However, if you use server-side reporting, you lose any information about the presence of the VPAID ad and the metadata surrounding it, because that is available only through the client-side API.
 + In live scenarios, make sure that your ad avails, denoted by `EXT-X-CUE-OUT: Duration`, are long enough to accommodate any user interactivity on VPAID. For example, if the VAST XML specifies a VPAID ad that is 30 seconds long, consider configuring your ad avail to be more than 30 seconds. This additional time gives users more chance to interact with the ad. If you don't add time, you could lose the VPAID metadata because the remaining duration in the ad avail is not long enough to accommodate the VPAID ad.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

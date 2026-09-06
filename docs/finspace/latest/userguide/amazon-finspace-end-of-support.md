@@ -30,7 +30,3 @@ To migrate your kdb Insights application to self-managed on AWS, you need to fir
 1. **Setup new kdb application on AWS**
 
    AWS continues to provide a broadest set of infrastructure resources to build and operate your kdb applications. There are many different architectures and services you can leverage to meet your cost, performance, and integration needs. In addition, we have a broad number of technical people with kdb experience who can help you. For assistance with making these architecture decisions, please reach out to your AWS technical account team and they can work with you.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

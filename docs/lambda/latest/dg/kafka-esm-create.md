@@ -106,7 +106,3 @@ The following example uses the [get-event-source-mapping](https://awscli.amazona
 aws lambda get-event-source-mapping
               --uuid {{dh38738e-992b-343a-1077-3478934hjkfd7}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

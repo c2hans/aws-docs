@@ -104,7 +104,3 @@ The edited machine class will go into effect during the next Amazon Monitron mea
 You can't delete custom machine classes that are currently in use by one or more positions. You will be prompted with a list of positions currently using the machine class and you will need to update these positions to a different machine class before deleting the machine class attached to these positions.
 
 1. To confirm deletion, type **delete**, and then select **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

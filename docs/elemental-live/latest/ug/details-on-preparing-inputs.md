@@ -29,7 +29,3 @@ Read this section if your inputs are not being prepared as expected.
 
   For example, you prepare with a prepare time of 2:00 p.m., then you prepare it immediately, then the input becomes Active and completes at 1:45 p.m. The input will not get prepared again at 2:00 p.m.
 + If you prepare input X with a prepare time, any previously prepared input will immediately become unprepared, even though the preparation of input x is still in the future. although input x is not being prepared, it is still considered to be in the Prepared state; only one input can be Prepared at a time, so the previous input becomes unprepared.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

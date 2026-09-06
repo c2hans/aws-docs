@@ -12,7 +12,7 @@ A container group definition describes how to deploy your containerized game ser
 
 Tips on what to do before you start creating a container group definition:
 + Finalize your container images and push them to an Amazon Elastic Container Registry (Amazon ECR) repository in the same AWS Region where you plan to create the container group. Amazon GameLift Servers captures a snapshot of each image at the time you create container group definition, and uses the snapshot when deploying to a container fleet. See [Build a container image for Amazon GameLift Servers](containers-prepare-images.md).
-+ Create your container definitions as JSON files. A container group definition includes one or more container definitions. You can use the JSON files if you create a container group definition using the AWS CLIfor Amazon GameLift Servers.
++ Create your container definitions as JSON files. A container group definition includes one or more container definitions. You can use the JSON files if you create a container group definition using the AWS CLI for Amazon GameLift Servers.
 + Verify that your AWS user has IAM permissions to access the Amazon ECR repository. See [IAM permission examples for Amazon GameLift Servers](gamelift-iam-policy-examples.md).
 
 ## Create a game server container group definition
@@ -61,7 +61,7 @@ At minimum, a game server container group has one game server container. In the 
 
 1. In **Internal container port range**, set the protocol and define a port range. The range size must be greater than the number of concurrent game server processes that will run in this container. If the game server container runs only one server process per container, this port range only needs a few ports. For more details, see [Configure network connections](containers-design-fleet.md#containers-custom-network).
 
-1. Add more containers as needed to run additional support software. Additional containers are automatically designated support containers. A game server container group can have only one game server containers and up to eight support containers. Provide the following minimal required settings:
+1. Add more containers as needed to run additional support software. Additional containers are automatically designated support containers. A game server container group can have only one game server container and up to eight support containers. Provide the following minimal required settings:
    + Container definition **Name**
    + **ECR image URI**.
    + **Internal container ports** (Include this only if the container has processes that need network access.)
@@ -101,7 +101,7 @@ aws gamelift create-container-group-definition \
 ## Create a container definition `JSON` file
 <a name="containers-definitions-create"></a>
 
-When you create a container group definition, you also define the containers for the group. A container definition specifies the Amazon ECR repository where the container image is stored, and optional configurations for network ports, limits for CPU and memory usage, and other settings. We recommend creating a single `JSON` file with the configurations for all the containers in a container group. Maintaining a file is useful for storing, sharing, version tracking these critical configurations. If you use the AWS CLI to create your container group definitions, you can reference the file in the command.
+When you create a container group definition, you also define the containers for the group. A container definition specifies the Amazon ECR repository where the container image is stored, and optional configurations for network ports, limits for CPU and memory usage, and other settings. We recommend creating a single `JSON` file with the configurations for all the containers in a container group. Maintaining a file is useful for storing, sharing, and version tracking these critical configurations. If you use the AWS CLI to create your container group definitions, you can reference the file in the command.
 
 **To create a container definition**
 
@@ -137,7 +137,3 @@ This example describes the essential container for your game server container gr
     "ServerSdkVersion": "5.2.0"
   }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -83,7 +83,3 @@ Some models require acceptance of an end-user license agreement (EULA). If this 
    The training job might take a long time to complete. You can view it at any time from the **Training jobs** page.
 
    When the training job completes, the status becomes **Completed**. After the job completes, you can choose **Deploy** to deploy the fine-tuned model to an inference endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Sagemaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query next-generation-sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

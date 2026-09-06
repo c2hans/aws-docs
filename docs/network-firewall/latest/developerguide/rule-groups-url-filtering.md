@@ -104,7 +104,3 @@ To use URL and Domain Category filtering, you provide either the `aws_url_catego
 + You can specify multiple categories in a single rule
 + You cannot combine URL/Domain category filtering keywords (`aws_url_category, aws_domain_category`) with geographic IP filtering (`geoip`) in the same rule. You must create separate rules if you want to filter traffic using both geographic IP filter and URL /Domain Category filter.
 + Using URL/Domain category filtering may increase traffic latency due to the additional category lookups performed for each connection matching the rule protocol and IP specifications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

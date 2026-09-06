@@ -62,7 +62,3 @@ After installs `amazon-efs-utils` on your EC2 instance, proceed to the next step
 + [Install `botocore`](install-botocore.md) so that you can use Amazon CloudWatch to monitor your file system's mount status.
 + [Upgrade to the latest version of `stunnel`](upgrading-stunnel.md) to enable encryption of data in transit.
 + [Mount your file system](efs-mount-helper.md) using the EFS mount helper.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

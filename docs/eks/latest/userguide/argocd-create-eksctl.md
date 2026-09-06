@@ -80,16 +80,15 @@ By default, the Argo CD UI and API endpoint are publicly accessible over the int
 ### Create a VPC endpoint for EKS Capabilities
 <a name="_create_a_vpc_endpoint_for_eks_capabilities"></a>
 
-Create an interface VPC endpoint for the EKS Capabilities service in your VPC. Replace {{vpc-id}}, {{subnet-id-1}}, {{subnet-id-2}}, {{sg-id}}, and {{region-code}} with your own values:
+Create an interface VPC endpoint for the EKS Capabilities service in your VPC. Replace {{vpc-id}}, {{subnet-id-1 subnet-id-2}}, {{sg-id}}, and {{region-code}} with your own values:
 
 ```
 aws ec2 create-vpc-endpoint \
   --vpc-endpoint-type Interface \
   --service-name com.amazonaws.{{region-code}}.eks-capabilities \
-  --vpc-id {{vpc-xxxxxxxx}} \
-  --subnet-ids {{subnet-xxxxxxxx}}
-            {{subnet-yyyyyyyy}} \
-  --security-group-ids {{sg-xxxxxxxx}} \
+  --vpc-id {{vpc-id}} \
+  --subnet-ids {{subnet-id-1 subnet-id-2}} \
+  --security-group-ids {{sg-id}} \
   --region {{region-code}}
 ```
 
@@ -157,7 +156,7 @@ metadata:
 capabilities:
   - name: my-argocd
     type: ARGOCD
-    roleArn: arn:aws:iam::[.replaceable]111122223333:role/ArgoCDCapabilityRole
+    roleArn: arn:aws:iam::{{111122223333}}:role/ArgoCDCapabilityRole
     deletePropagationPolicy: RETAIN
     networkConfiguration:
       elasticNetworkInterfaces:
@@ -218,7 +217,3 @@ You should see `Application` and `ApplicationSet` resource types listed.
 +  [Working with Argo CD](working-with-argocd.md) - Learn how to create and manage Argo CD Applications
 +  [Argo CD considerations](argocd-considerations.md) - Configure SSO and multi-cluster access
 +  [Working with capability resources](working-with-capabilities.md) - Manage your Argo CD capability resource
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

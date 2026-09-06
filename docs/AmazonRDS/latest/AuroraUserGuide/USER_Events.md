@@ -18,7 +18,3 @@ Amazon RDS uses the Amazon Simple Notification Service (Amazon SNS) to provide n
 + [Removing a source identifier from an Amazon RDS event notification subscription](USER_Events.RemovingSource.md)
 + [Listing the Amazon RDS event notification categories](USER_Events.ListingCategories.md)
 + [Deleting an Amazon RDS event notification subscription](USER_Events.Deleting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ If you'd like to stop routing traffic through Global Accelerator to your load ba
 1. Delete the load balancer from the accelerator. For more information, see *To remove an endpoint* in [Add a standard endpoint](about-endpoints-adding-endpoints.md).
 
 1. Delete the accelerator. For more information, see [Delete accelerator](about-accelerators.deleting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

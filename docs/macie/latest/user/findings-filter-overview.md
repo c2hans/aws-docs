@@ -23,7 +23,3 @@ You can also save a filter as a *suppression rule*. A *suppression rule* is a se
 + [Fields for filtering findings](findings-filter-fields.md)
 + [Creating and applying filters](findings-filter-procedure.md)
 + [Defining filter rules](findings-filter-rule-procedures.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

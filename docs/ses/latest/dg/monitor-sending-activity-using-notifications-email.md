@@ -90,7 +90,3 @@ If you used the `SendRawEmail` API operation to send the message, then the notif
 
 **Note**
 When you specify a `Return-Path` address in an email, you receive notifications at that address. However, the version of the message that the recipient receives contains a `Return-Path` header that includes an anonymized email address (such as *a0b1c2d3e4f5a6b7-c8d9e0f1-a2b3-c4d5-e6f7-a8b9c0d1e2f3-000000@amazonses.com*). This anonymization happens regardless of how you sent the email.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

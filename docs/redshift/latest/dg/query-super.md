@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/query-super.html
 # Querying semi-structured data
 <a name="query-super"></a>
 
-With Amazon Redshift, you can query and analyze semi-structured data, such as JSON, Avro, or Ion, alongside your structured data. Semi-structured data refers to data that has a flexible schema, allowing for hierarchical or nested structures. The following sections demonstrate querying semi-structured data using Amazon Redshift's support for open data formats, allowing you to unlock valuable information from complex data structures.
+With Amazon Redshift, you can query and analyze semi-structured data, such as JSON, Avro, or Ion, alongside your structured data. Semi-structured data refers to data that has a flexible schema, allowing for hierarchical or nested structures. The following sections demonstrate querying semi-structured data using Amazon Redshift's support for open data formats, so you can unlock valuable information from complex data structures.
 
 Amazon Redshift uses the PartiQL language to offer SQL-compatible access to relational, semi-structured, and nested data.
 
@@ -321,7 +321,3 @@ SELECT c.c_orders.o_orderstatus::integer FROM customer_orders_lineitem c;
 Amazon Redshift doesn't define SUPER comparisons among values with different dynamic types. A SUPER value that is a string is neither smaller nor larger than a SUPER value that is a number. To use ORDER BY clauses with SUPER columns, Amazon Redshift defines a total ordering among different types to be observed when Amazon Redshift ranks SUPER values using ORDER BY clauses. The order among dynamic types is boolean, number, string, array, object.
 
 For an example of using GROUP BY and ORDER BY in a SUPER query, see [Filtering semi-structured data](super-examples.md#super-examples-filter).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

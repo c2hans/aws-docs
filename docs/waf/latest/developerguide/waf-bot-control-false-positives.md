@@ -26,7 +26,3 @@ Situations where you might encounter false positives include the following:
 If your mobile app uses a non-standard HTTP library, or if users access your site through in-app browsers (such as links opened from social media apps), these clients may trigger the `SignalNonBrowserUserAgent` rule. Standard native mobile frameworks are excluded from this rule, but other non-browser user agents are not. Plan to test and add exceptions before enabling Bot Control in block mode. For an example, see [Bot Control example: Creating an exception for a blocked user agent](waf-bot-control-example-user-agent-exception.md).
 
 For information about how to handle false positives that you might get from the AWS WAF Bot Control managed rule group, see the guidance in the section that follows, [Testing and deploying AWS WAF Bot Control](waf-bot-control-deploying.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

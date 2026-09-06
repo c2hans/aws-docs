@@ -159,6 +159,17 @@ By default, client programs establish an encrypted connection with RDS Proxy, wi
 | 12 | TLS 1.3 | TLS\_AES\_256\_GCM\_SHA384 | TLS\_AES\_256\_GCM\_SHA384 |
 | 13 | TLS 1.3 | TLS\_AES\_128\_GCM\_SHA256 | TLS\_AES\_128\_GCM\_SHA256 |
 
+### Hybrid Post-quantum Cryptography (ML-KEM) Support in RDS Proxy
+<a name="rds-proxy-security.pqc"></a>
+
+ TLS 1.3 supports hybrid post-quantum key exchange through named groups. These named groups combine the post-quantum key exchange algorithm ML-KEM with a classical Elliptic Curve Diffie-Hellman (ECDH) key exchange algorithm—such as `X25519MLKEM768` and `SecP256r1MLKEM768`.
+
+ RDS Proxy does not currently support these hybrid post-quantum named groups. Post-quantum key-exchange negotiation applies only to direct connections to your database, not to connections through RDS Proxy.
+
+ When you connect through RDS Proxy:
++  Clients that offer both post-quantum and classical key-exchange groups negotiate a classical group with RDS Proxy and connect successfully.
++  Clients configured to offer only post-quantum key-exchange groups (with no classical fallback) cannot connect to RDS Proxy; the TLS handshake fails.
+
 ## Failover
 <a name="rds-proxy-failover"></a>
 
@@ -190,7 +201,3 @@ By default, client programs establish an encrypted connection with RDS Proxy, wi
  RDS Proxy detects when a transaction ends through the network protocol used by the database client application. Transaction detection doesn't rely on keywords such as `COMMIT` or `ROLLBACK` appearing in the text of the SQL statement.
 
  In some cases, RDS Proxy might detect a database request that makes it impractical to move your session to a different connection. In these cases, it turns off multiplexing for that connection the remainder of your session. The same rule applies if RDS Proxy can't be certain that multiplexing is practical for the session. This operation is called *pinning*. For ways to detect and minimize pinning, see [Avoiding pinning an RDS Proxy](rds-proxy-pinning.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

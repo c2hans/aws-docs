@@ -1092,7 +1092,3 @@ Turbot ensures that your cloud infrastructure is secure, compliant, scalable, an
 [Product link](https://turbot.com/features/)
 
 [Partner documentation](https://turbot.com/blog/2018/11/aws-security-hub/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

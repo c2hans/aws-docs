@@ -26,7 +26,3 @@ Refer to [Understanding AMI-based products and AMI product codes](https://docs.a
 <a name="marketplace-metering-ml"></a>
 
 When a buyer purchases, deploys, and starts consuming an ML product, AWS Marketplace can measure the usage of the product to bill the customer. Partner Revenue Measurement integrates with AWS Marketplace Metering to measure the customers' usage of Amazon SageMaker AI resources created by your product and automatically attributes the consumption to your product.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

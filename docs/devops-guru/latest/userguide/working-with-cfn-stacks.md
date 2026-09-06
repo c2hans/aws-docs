@@ -43,7 +43,3 @@ Specify the resources that you want Amazon DevOps Guru to analyze by choosing t
 <a name="choose-stacks-sdk"></a>
 
 To specify CloudFormation stacks using the Amazon DevOps Guru SDK, use the `UpdateResourceCollection` method. For more information, see [UpdateResourceCollection](https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_UpdateResourceCollection.html) in the *Amazon DevOps Guru API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -85,7 +85,3 @@ JupyterLab 1 and JupyterLab 3 are no longer supported as of June 30, 2025. You c
 +  Jupyter notebook has been upgraded from 5.x to 6.x.
 +  jupyterlab-git has been updated to version 0.37.1.
 +  nbserverproxy 0.x (0.3.2) has been replaced with jupyter-server-proxy 3.x (3.2.1).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ In addition, security must evolve to accommodate the distributed architecture. E
 The team structure should align with service boundaries in order to define clear ownership and accountability. Organizations must establish new communication patterns and build additional technical capabilities within teams. This structure should support both maintenance of existing services and your continued architectural evolution.
 
 You must update your operational processes to handle the distributed architecture. Teams must modify deployment procedures, adapt incident response processes, and evolve change management practices to coordinate across multiple services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

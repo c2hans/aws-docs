@@ -20,7 +20,3 @@ The following sections will describe how utility operations can be used in mappi
 +  [ Resolver mapping template reference for EventBridge ](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-mapping-template-reference-eventbridge.html) - Learn more about resolver request and response structure and interactions with EventBridge.
 +  [ Resolver mapping template reference for None data source ](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-mapping-template-reference-none.html) - Learn more about resolver request and response structure and interactions with NONE data sources.
 +  [ Resolver mapping template reference for HTTP ](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-mapping-template-reference-http.html) - Learn more about resolver request and response structure and interactions with HTTP endpoints.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,7 +65,3 @@ You don't have to create an extension to use AWS authored extensions, but you do
 <a name="working-with-appconfig-extensions-how-it-works-step-4"></a>
 
 After you create an association, when a hosted configuration is created or a configuration is deployed, AWS AppConfig invokes the extension and performs the specified actions. When an extension is invoked, if the system experiences an error during a `PRE-*` action point, AWS AppConfig returns information about that error.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

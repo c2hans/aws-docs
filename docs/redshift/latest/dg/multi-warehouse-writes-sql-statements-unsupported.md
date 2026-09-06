@@ -23,7 +23,3 @@ The following aren't supported:
 + CREATE TABLE statements with:
   + DEFAULT expression set to data type VARBYTE. The VARBYTE data type can't be implicitly converted to any other data type. For more information, see [CAST function](r_CAST_function.md).
   + AS OF SELECT statements with NULL parameter to consumer warehouses, when writing to producers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

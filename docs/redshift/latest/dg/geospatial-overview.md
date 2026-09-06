@@ -105,7 +105,3 @@ For details about loading spatial data, see [Loading a column of the GEOMETRY or
 + [Loading a shapefile into Amazon Redshift](spatial-copy-shapefile.md)
 + [Terminology for Amazon Redshift spatial data](spatial-terminology.md)
 + [Considerations when using spatial data with Amazon Redshift](spatial-limitations.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

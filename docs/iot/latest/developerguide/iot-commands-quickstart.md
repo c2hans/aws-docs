@@ -23,7 +23,3 @@ Complete these steps to send your first command:
 + *Remote diagnostics* - Retrieve logs, run diagnostics, check device health
 + *Configuration updates* - Change settings, update parameters, toggle features
 + *Device control* - Lock/unlock, power on/off, mode changes
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

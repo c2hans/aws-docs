@@ -162,7 +162,3 @@ Now that you've set up the IAM role that authenticates with Identity Center, and
 The following sections describe how to configure your Identity Center enabled cluster with security options that Amazon EMR supports:
 + [Working with S3 Access Grants on an IAM Identity Center enabled EMR cluster](emr-idc-s3ag.md)
 + [Configure Lake Formation for an IAM Identity Center enabled EMR cluster](emr-idc-lf.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/neptune-ana
 + [Build with Amazon Neptune](https://explore.skillbuilder.aws/learn/course/external/view/elearning/16559/build-with-amazon-neptune)
 + [Data Modeling for Amazon Neptune](https://explore.skillbuilder.aws/learn/course/external/view/elearning/16133/data-modeling-for-amazon-neptune)
 + [Amazon Neptune Analytics Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/28907bd0-e855-428a-aabd-ae2173eef31b/en-US)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

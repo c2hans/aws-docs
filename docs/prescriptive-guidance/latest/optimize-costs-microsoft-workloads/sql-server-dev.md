@@ -82,7 +82,3 @@ If you have SQL Server instances that use a BYOL, you can choose from the follow
 + [AWS Pricing Calculator](https://calculator.aws/#/addService/ec2-enhancement) (SQL Server on Amazon EC2 documentation)
 + [Microsoft SQL Server 2019 Licensing guide](https://download.microsoft.com/download/e/2/9/e29a9331-965d-4faa-bd2e-7c1db7cd8348/SQL_Server_2019_Licensing_guide.pdf) (download from Microsoft)
 + [SQL Server 2022 Developer edition](https://download.microsoft.com/download/c/c/9/cc9c6797-383c-4b24-8920-dc057c1de9d3/SQL2022-SSEI-Dev.exe) (download from Microsoft)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -148,7 +148,3 @@ Additional options for auditing SQL Server databases are discussed in the follow
 <a name="rds-monitoring"></a>
 
 You can use database activity streams in Amazon RDS to integrate SQL Server audit events with database activity monitoring tools from Imperva, McAfee, and IBM. For more information, see [Auditing in Microsoft SQL Server](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/DBActivityStreams.Overview.html#DBActivityStreams.Overview.SQLServer-auditing) in the Amazon RDS documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -103,7 +103,3 @@ To restrict users to accessing only specific Bedrock Marketplace models, use an 
 This policy only allows access to the specified model and denies access to all other models. If basing your policy off of `AmazonBedrockFullAccess`, this should replace the `MarketplaceModelEndpointMutatingAPIs` and `BedrockEndpointTaggingOperations` statements.
 
 For information about using tag-based access control with Marketplace model endpoint operations, see [Tag-based access control for Amazon Bedrock AWS Marketplace model endpoints](marketplace-tag-based-access-control.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

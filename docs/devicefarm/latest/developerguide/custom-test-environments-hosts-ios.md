@@ -34,7 +34,3 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 <a name="ios-host-software-support"></a>
 
  In order to support iOS device testing, Device Farm test hosts for iOS devices come pre-configured with Xcode and its associated command line tooling. For other available software, please review the topic regarding [Supported software within custom test environments](custom-test-environments-hosts-software.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

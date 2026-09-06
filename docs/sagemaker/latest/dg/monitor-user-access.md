@@ -25,7 +25,3 @@ When these API calls invoke other services to perform additional operations, `so
 The following exceptions apply when using `sourceIdentity`.
 SageMaker Studio Classic shared spaces do not support `sourceIdentity` passthrough. AWS API calls made from SageMaker AI shared spaces do not record `sourceIdentity` in CloudTrail logs.
 If AWS API calls are made from sessions that are created by users or other services and the sessions are not based on the Studio Classic execution role session, then the `sourceIdentity` is not recorded in CloudTrail logs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

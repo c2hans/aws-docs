@@ -12,7 +12,7 @@ Connect Amazon Quick to your Asana workspace to manage projects, tasks, and team
 
 With Asana integration, you can perform actions within your Asana workspaces through the Asana API.
 
-**Action connector**
+**Connector**
 Create, update, and manage projects, tasks, and team assignments through the Asana API.
 
 ## Set up Asana integration
@@ -70,7 +70,3 @@ You can perform these management tasks for your Asana integrations:
 + **Edit integration settings** - Update authentication settings or Asana configuration.
 + **Share integration access** - Make the integration available to other users.
 + **Delete integration** - Remove the integration and revoke authentication.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ The following sections describe how to manage permissions for IAM Identity Cente
 +  [Identity-based policy examples for IAM Identity Center](iam-auth-access-using-id-policies.md)
 +  [Resource-based policy example for IAM Identity Center](iam-auth-access-using-resource-based-policies.md)
 +  [Using service-linked roles for IAM Identity Center](using-service-linked-roles.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

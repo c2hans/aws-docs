@@ -188,7 +188,3 @@ This video demonstrates how you can integrate AWS Glue with Git and build a cont
 1.  Choose **Confirm**. This takes the latest commit from the repository and updates your job in AWS Glue Studio.
 
 1.  Edit your job in AWS Glue Studio. If you make changes, you can sync your job to your repository by choosing **Push to repository** from the **Actions** drop-down menu.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

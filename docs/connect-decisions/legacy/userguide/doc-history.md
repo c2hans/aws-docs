@@ -39,7 +39,3 @@ The following table describes the documentation releases for AWS Supply Chain.
 | [Updated information on regions support](#doc-history) | AWS Supply Chain is now also supported in Asia Pacific (Sydney) Region, and Europe (Ireland) Region Regions but AWS Supply Chain Demand Planning is not supported on these two new regions. | July 19, 2023 |
 | [General availability release](#doc-history) | Added a chapter on data entities supported in AWS Supply Chain and updated the configuring to S/4 HANA and ECC sections. | April 3, 2023 |
 | [Initial release](#doc-history) | Initial release of the AWS Supply Chain User Guide | November 29, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

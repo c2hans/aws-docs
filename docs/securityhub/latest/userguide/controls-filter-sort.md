@@ -24,7 +24,3 @@ If you're signed in to a Security Hub CSPM administrator account, **Enabled** co
 If you select the option next to an enabled a control, a panel appears and displays the standards in which the control is currently enabled. You can also see the standards in which the control is currently disabled. From this panel, you can disable a control in all standards. For more information, see [Disabling controls in Security Hub CSPM](disable-controls-overview.md). For administrator accounts, the information in the panel reflects settings for all of your member accounts.
 
 To retrieve a list of controls programmatically, you can use the [ListSecurityControlDefinitions](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html) operation of the Security Hub CSPM API. To retrieve the details of individual controls, use the [BatchGetSecurityControls](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGetSecurityControls.html) operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ The JavaScript API for Amazon SES is exposed through the `AWS.SES` client class.
 + [Sending Email Using Amazon SES](ses-examples-sending-email.md)
 + [Using IP Address Filters for Email Receipt in Amazon SES](ses-examples-ip-filters.md)
 + [Using Receipt Rules in Amazon SES](ses-examples-receipt-rules.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for JavaScript SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

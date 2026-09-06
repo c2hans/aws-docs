@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 + [DRHCSEC03-BP01 Implement controls that enhance your digital sovereignty governance posture](drhcsec03-bp01.md)
 + [DRHCSEC04-BP01 Restrict access by location of resource](drhcsec04-bp01.md)
 + [DRHCSEC04-BP02 Grant least privilege access with a strong focus on actions that enable the storage of data](drhcsec04-bp02.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -253,7 +253,3 @@ The following coupling-cohesion matrix can help you identify the difficulty of d
 
 **Note**
 Database structure often mirrors application architecture. Tables that are easier to decouple at the database level typically correspond to components that are easier to convert into microservices at the application level.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,7 +51,3 @@ Relevance tuning has replaced metadata boosting. For more information, see [Tuni
 To customize boosting levels, you can boost document attribute values for only `STRING` type document attributes.
 
 For example, suppose that you're applying an importance boost to a `STRING` attribute called `department`. The `department` attribute has values like `HR` and `Legal`. You can assign the values `HR, VERY_HIGH` and `Legal, HIGH` to customize the importance that Amazon Q gives to these attribute values when they match a chat request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

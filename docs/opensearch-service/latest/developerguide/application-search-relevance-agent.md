@@ -40,7 +40,3 @@ With the Search Relevance Agent, you can run end-to-end experiments with query d
 + Refine search fields, adjust weights, and tune boost functions (rules that increase the relevance score of specific results)
 
 You can enter the conversation at any stage of the search improvement cycle. Start with a diagnostic check or bring specific hypotheses for immediate testing. The agent uses User Behavior Insights (UBI) data when available for deeper optimization, but UBI is not required to begin.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

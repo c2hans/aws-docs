@@ -265,7 +265,3 @@ Consider the following when running interactive workloads through Spark Connect.
 + The Spark configuration `spark.connect.grpc.binding.address` is reserved by EMR Serverless and cannot be overridden by users.
 + The PySpark package you install locally must match the Spark version on your EMR Serverless application. A version mismatch causes connection errors. Python UDFs (`@udf`, `spark.udf.register`) also require the local Python minor version to match the worker, or they fail with `PYTHON_VERSION_MISMATCH`. Built-in SQL functions and DataFrame operations do not require a Python version match.
 + To pass Spark configurations with `start-session`, set them under `runtimeConfiguration` in the `--configuration-overrides` parameter. The `start-job-run` API uses `applicationConfiguration` instead.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

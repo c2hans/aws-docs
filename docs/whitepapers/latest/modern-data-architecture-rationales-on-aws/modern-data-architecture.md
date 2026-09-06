@@ -66,7 +66,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/modern-data-architect
  Mostly, these business domain-focused teams have many end products that are useful for particular business domains; however, in some cases these could also be products that are useful for other business domains. These are sometimes called *golden datasets* and can be offloaded to the data lake for sharing across the business.
 
  All the end product datasets in this layer should also be added to the central data catalog with proper labels, metadata, and the purpose of the datasets.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -112,7 +112,3 @@ To show value distribution over time, use a [heatmap](v12-panels-heatmap.md) vis
 A [state timeline](v12-panels-state-timeline.md) shows discrete state changes over time. When used with time series, thresholds are used to turn numerical values into discrete state regions.
 
 ![An image showing an example of a state timeline visualization in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/state_timeline_example.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

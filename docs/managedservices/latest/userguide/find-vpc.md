@@ -62,7 +62,3 @@ You can obtain the AMS SKMS CLI through the **Developer's Resources** page in th
    |2016-01-15T18:50:11Z | vpc-01234567890abcdef | 952444781316-initial-VPC |
    +---------------------+-----------------------+--------------------------+
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

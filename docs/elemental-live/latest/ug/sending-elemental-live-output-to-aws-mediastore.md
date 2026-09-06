@@ -95,7 +95,3 @@ To set up MediaStore as the destination in the HLS or DASH output group:
    + **Password/Secret Access Key**: The Secret access key you created in IAM. For example, wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 Repeat the preceding steps to create a second output in this output group, if applicable.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

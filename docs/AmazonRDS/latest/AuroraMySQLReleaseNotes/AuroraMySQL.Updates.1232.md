@@ -52,7 +52,3 @@ This engine version is scheduled to be deprecated on February 28, 2023. For more
 ## Integration of MySQL community edition bug fixes
 <a name="AuroraMySQL.Updates.1232.Patches"></a>
 +  *Replication*: While a `SHOW BINLOG EVENTS` statement was executing, any parallel transaction was blocked. The fix ensures that the `SHOW BINLOG EVENTS` process now only acquires a lock for the duration of calculating the file's end position, therefore parallel transactions are not blocked for long durations. (Bug \#76618, Bug \#20928790)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

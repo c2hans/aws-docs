@@ -63,7 +63,3 @@ Create your secret using the [CreateSecret](https://docs.aws.amazon.com/secretsm
 When using admin-assisted rotation, the admin secret is also of type `GitLabAccessToken`. You must explicitly provide the rotation role access to the admin secret. You can do this by adding a statement scoped to the admin secret ARN directly in the role policy.
 
 During rotation, the driver validates that the current token is active. It then calls the GitLab rotate endpoint, which atomically creates a new token and revokes the old one. Secrets Manager stores the new token value and ID as AWSPENDING, verifies them via the GitLab API, and promotes them to AWSCURRENT. Applications using the Secrets Manager caching library automatically pick up the new token on their next refresh.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

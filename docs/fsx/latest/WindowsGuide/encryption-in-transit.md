@@ -29,7 +29,3 @@ Following are commands that you can use to manage user in-transit encryption on 
 | **Set-FSxSmbShare -name {{name}} -EncryptData $True** | Set this parameter to `True` to turn on in-transit data encryption for the share. Set this parameter to `False` to turn off in-transit data encryption for the share. |
 
 The online help for each command provides a reference of all command options. To access this help, run the command with **-?**, for example **Get-FSxSmbServerConfiguration -?**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

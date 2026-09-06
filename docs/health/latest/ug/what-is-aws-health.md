@@ -18,7 +18,3 @@ The AWS Health Dashboard is available for all AWS customers at no additional cos
 All AWS customers can receive AWS Health events through Amazon EventBridge at no additional cost.
 If you have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan, you can use the AWS Health API to integrate with in-house and third-party systems. If you're in an AWS Region that doesn't offer one of these AWS Support plans, or if you haven't transitioned to one of these plans, you can use the AWS Health API with a Business, Enterprise On-Ramp, or Enterprise Support plan. For more information, see the [AWS Health API Reference](https://docs.aws.amazon.com/health/latest/APIReference/).
 For more information about available AWS Support plans, see [AWS Support](https://aws.amazon.com/premiumsupport/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

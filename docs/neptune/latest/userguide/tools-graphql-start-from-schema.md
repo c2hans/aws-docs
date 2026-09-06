@@ -142,7 +142,3 @@ After having created a Comment using `createNodeComment`, you can use the `conne
 ![Screenshot showing a nested query to retrieve Todos and their attached comments in the AppSync Queries console](http://docs.aws.amazon.com/neptune/latest/userguide/images/todoNestedQuery.png)
 
 If you want to make changes to the `TodoExample.source.graphql` file as described in [Working with directives](tools-graphql-schema-with-directives.md), you can then use the edited schema as input and run the utility again. The utility will then modify the GraphQL API accordingly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ ADOT is integrated with a growing number of AWS services to simplify sending tra
 For more information about the AWS Distro for OpenTelemetry, including integration with additional AWS services, see the [AWS Distro for OpenTelemetry Documentation](https://aws-otel.github.io/docs/introduction).
 
 For more information about instrumenting your application with AWS Distro for OpenTelemetry and X-Ray, see [Instrumenting your application with the AWS Distro for OpenTelemetry](xray-instrumenting-your-app.md#xray-instrumenting-opentel).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

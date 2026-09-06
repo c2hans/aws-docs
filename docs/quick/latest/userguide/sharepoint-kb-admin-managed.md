@@ -43,7 +43,3 @@ To edit, share, or delete your integration, see [Managing existing integrations]
 + **Documents skipped with "File has no ACL" error** – If sync reports show items with status SKIPPED and error type VALIDATION\_ERROR with the message "File has no ACL while crawlACL is true, skipping ingestion," the Entra app registration is missing the required ACL permissions. Verify the app has the correct permissions for your setup. For the required permissions, see [Permissions](sharepoint-kb-admin-config.md#sharepoint-kb-admin-config-permissions).
 
 For additional troubleshooting, including sync monitoring, reports, and ACL verification, see [Troubleshooting SharePoint knowledge bases](sharepoint-kb-troubleshooting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

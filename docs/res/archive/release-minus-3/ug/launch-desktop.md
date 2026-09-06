@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/launch-de
 1. Choose **Submit**.
 
 A new card with your desktop information appears instantly, and your desktop will be ready to use within 10-15 minutes. Startup time depends on the selected image. RES detects GPU instances and installs the relevant drivers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

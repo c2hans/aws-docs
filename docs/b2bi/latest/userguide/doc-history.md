@@ -19,7 +19,3 @@ The following table describes the documentation releases for AWS B2B Data Interc
 | Add the ability to return acknowledgements | AWS B2B Data Interchange now automatically creates return acknowledgements for all inbound EDI files. For details, see [EDI acknowledgements](edi-ack.md) | April 30, 2024 |
 | Integrate with Amazon EventBridge | AWS B2B Data Interchange now automatically publishes event to Amazon EventBridge for transformation operations. For details, see [Managing AWS B2B Data Interchange events using Amazon EventBridge](eventbridge.md). | March 22, 2024 |
 | First version of AWS B2B Data Interchange released | This initial release includes the ability to set up and exchange electronic data interchange (EDI) transactions in AWS B2B Data Interchange | November 27, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS B2B Data Interchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query b2bi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

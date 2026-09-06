@@ -210,7 +210,3 @@ By following these best practices, you can ensure that your integration of the L
 The extension sends logs as a nested document to OpenSearch by default. This allows you to perform nested queries to retrieve individual column values.
 
 If the default log output doesn't meet your specific needs, you can customize it by modifying the source code of the Lambda extension that’s provided by AWS. AWS encourages customers to adapt the output to suit their business requirements. To change the log output, locate the `dispatch_to_opensearch` function in the `telemetry_dispatcher.py` file within the extension's source code and make the necessary alterations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

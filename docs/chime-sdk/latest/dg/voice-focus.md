@@ -124,7 +124,3 @@ This diagram shows the call flow for enabling and disabling Amazon Voice Focus f
 ![The call flow when you enable or disable Amazon Voice focus for two bridged PSTN calls.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/voice_focus-pstn1.png)
 
 For the outbound call leg, the AWS Lambda function enables Amazon Voice focus for the caller and returns a set of actions, including `CallAndBridge`. Once the call is bridged, the `VoiceFocus` action returns an `ACTION_SUCCESSFUL` event, and the Lambda function returns another set of events that enables Amazon Voice Focus for the person being called. That set of actions includes `VoiceFocus`, `Enable`, `True`, and the caller's ID. No further action is taken until the caller hangs up. The Lambda function then sends a `Hangup` action to the SIP media application. The application hangs up the person being called and sends a Hangup function back to the Lambda function, which takes no further actions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

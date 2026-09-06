@@ -93,7 +93,3 @@ For more information, contact https://aws.amazon.com/premiumsupport/.
 + [View SageMaker AI resources in your domain](sm-console-domain-resources-view.md)
 + [Shut down SageMaker AI resources in your domain](sm-console-domain-resources-shut-down.md)
 + [Where to shut down resources per SageMaker AI features](sm-shut-down-resources-per-feature.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

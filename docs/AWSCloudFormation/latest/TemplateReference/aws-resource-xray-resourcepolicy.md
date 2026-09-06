@@ -172,7 +172,3 @@ Resources:
 +  [X-Ray resource-based policies](https://docs.aws.amazon.com/xray/latest/devguide/security_iam_service-with-iam.html#security_iam_service-with-iam-resource-based-policies)
 +  [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
 + [PutResourcePolicy](https://docs.aws.amazon.com/xray/latest/api/API_PutResourcePolicy.html) action in the X-Ray API Reference
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ Oozie runs multiple Java Virtual Machine (JVM) processes. This page explains how
   This property ensures that the Oozie Launcher AM for the Oozie job runs on the Java version that you specify, rather than the Java version that is set in Hadoop.
 + **Application Client Executable**: Because Oozie Launcher AM invokes the application client by default, the Java runtime for the client executable is the same as the Oozie Launcher AM.
 + **Applications launched by an Oozie job**: Unless otherwise specified, the runtime versions for the actual application JVMs that are launched by an Oozie job are the same as the Java runtimes for Hadoop in the EMR cluster. Depending on the type of Oozie Workflow Action used to launch the application in an Oozie job (Spark or Hive action), you can update the default Java runtime for the actual application JVMs in the `workflow.xml` for the Oozie job.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

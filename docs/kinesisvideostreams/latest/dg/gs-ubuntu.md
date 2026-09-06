@@ -56,7 +56,3 @@ Do the following to create an Ubuntu Amazon EC2 instance.
 If you see a screen telling you that some services need to be restarted, press Enter to select **Ok**.
 
    For more information, see [*Amazon Corretto 11 User Guide*](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/generic-linux-install.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

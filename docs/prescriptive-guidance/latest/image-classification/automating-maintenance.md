@@ -13,7 +13,3 @@ After your image classification model is deployed and available for use, it migh
 In all of these scenarios, the models require periodic retraining. Retraining is required based on model drift (the properties of the input data have changed over time) or due to updates required for the model to handle a modified task. The creation of ML operations pipelines in AWS can be pursued at several levels of abstraction. The most flexible and abstract is to use AWS Step Functions to create the workflow for model maintenance.
 
 For an example of an ML operations pipeline, see [MLOps End-to-End Example using Amazon SageMaker AI Pipeline, AWS CodePipeline, and AWS CDK](https://github.com/aws-samples/mlops-e2e) on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

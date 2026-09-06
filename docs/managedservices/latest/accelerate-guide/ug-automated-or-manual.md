@@ -18,7 +18,3 @@ You do not need to continue to *Getting started 2: Create on on-demand backup*.
 + [AWS Backup Supported Services](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html#supported-resources)
 + [Point-in-time restore](https://docs.aws.amazon.com/aws-backup/latest/devguide/point-in-time-recovery.html)
 + [AWS Backup Features](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html#features-for-all-resources)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

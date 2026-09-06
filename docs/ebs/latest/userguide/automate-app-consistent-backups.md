@@ -56,11 +56,11 @@ You need to prepare the targeted instances for application-consistent snapshots 
 
    For more information, see [ Working with SSM Agent on EC2 instances for Windows server](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-windows.html).
 
-1. Ensure that the SSM Agent is running. For more information, see [ Checking SSM Agent status and starting the agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-status-and-restart.html).
+1. Make sure that the SSM Agent is running. For more information, see [ Checking SSM Agent status and starting the agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-status-and-restart.html).
 
 1. Set up Systems Manager for Amazon EC2 instances. For more information, see [Setting up Systems Manager for Amazon EC2 instances](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-ec2.html) in the *AWS Systems Manager User Guide*.
 
-1. [ Ensure the system requirements for VSS backups are met](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/application-consistent-snapshots-prereqs.html).
+1. [ Make sure the system requirements for VSS backups are met](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/application-consistent-snapshots-prereqs.html).
 
 1. [ Attach a VSS-enabled instance profile to the target instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vss-iam-reqs.html).
 
@@ -125,7 +125,7 @@ You need to prepare the targeted instances for application-consistent snapshots 
 
    For more information, see [ Manually installing SSM Agent on EC2 instances for Linux](https://docs.aws.amazon.com/systems-manager/latest/userguide/manually-install-ssm-agent-linux.html).
 
-1. Ensure that the SSM Agent is running. For more information, see [ Checking SSM Agent status and starting the agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-status-and-restart.html).
+1. Make sure that the SSM Agent is running. For more information, see [ Checking SSM Agent status and starting the agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-status-and-restart.html).
 
 1. Set up Systems Manager for Amazon EC2 instances. For more information, see [Setting up Systems Manager for Amazon EC2 instances](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-ec2.html) in the *AWS Systems Manager User Guide*.
 
@@ -138,7 +138,7 @@ You need to prepare the targeted instances for application-consistent snapshots 
    + (Linux instances) [ Manually installing SSM Agent on EC2 instances for Linux](https://docs.aws.amazon.com/systems-manager/latest/userguide/manually-install-ssm-agent-linux.html)
    + (Windows instances) [ Working with SSM Agent on EC2 instances for Windows Server](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-windows.html)
 
-1. Ensure that the SSM Agent is running. For more information, see [ Checking SSM Agent status and starting the agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-status-and-restart.html).
+1. Make sure that the SSM Agent is running. For more information, see [ Checking SSM Agent status and starting the agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-status-and-restart.html).
 
 1. Set up Systems Manager for Amazon EC2 instances. For more information, see [Setting up Systems Manager for Amazon EC2 instances](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-ec2.html) in the *AWS Systems Manager User Guide*.
 
@@ -155,7 +155,7 @@ If you are automating application-consistent snapshots for a self-managed databa
 If your MySQL, PostgreSQL, or InterSystems IRIS database uses standard configurations, you can create an SSM command document using the sample SSM document content below. If your MySQL, PostgreSQL, or InterSystems IRIS database uses a non-standard configuration, you can use the sample content below as a starting point for your SSM command document and then customize it to meet your requirements. Alternatively, if you want to create a new SSM document from scratch, you can use the empty SSM document template below and add your pre and post commands in the appropriate document sections.
 
 **Note the following:**
-It is your responsibility to ensure that the SSM document performs the correct and required actions for your database configuration.
+It is your responsibility to make sure that the SSM document performs the correct and required actions for your database configuration.
 Snapshots are guaranteed to be application-consistent only if the pre and post scripts in your SSM document can successfully freeze, flush, and thaw I/O.
 The SSM document must include required fields for `allowedValues`, including `pre-script`, `post-script`, and `dry-run`. Amazon Data Lifecycle Manager will execute commands on your instance based on the contents of those sections. If your SSM document does not have those sections, then Amazon Data Lifecycle Manager will treat it as a failed execution.
 
@@ -1032,14 +1032,14 @@ $ aws ssm create-document \
 This step is needed if:
 You create or update a pre/post script-enabled snapshot policy that uses a custom IAM role.
 You use the command line to create or update a pre/post script-enabled snapshot policy that uses the default.
-If you use the console to create or update a pre/post script-enabled snapshot policy that uses the default role for managing snapshots (**AWSDataLifecycleManagerDefaultRole**), skip this step. In this case, we automatically attach the **AWSDataLifecycleManagerSSMFullAccess** policy to that role.
+If you use the console to create or update a pre/post script-enabled snapshot policy that uses the default role for managing snapshots (**AWSDataLifecycleManagerDefaultRole**), skip this step. In this case, the **AWSDataLifecycleManagerSSMFullAccess** policy is automatically attached to that role.
 
-You must ensure that the IAM role that you use for policy grants Amazon Data Lifecycle Manager permission to perform the SSM actions required to run pre and post scripts on instances targeted by the policy.
+You must make sure that the IAM role that you use for policy grants Amazon Data Lifecycle Manager permission to perform the SSM actions required to run pre and post scripts on instances targeted by the policy.
 
-Amazon Data Lifecycle Manager provides a managed policy (**AWSDataLifecycleManagerSSMFullAccess**) that includes the required permissions. You can attach this policy to your IAM role for managing snapshots to ensure that it includes the permissions.
+Amazon Data Lifecycle Manager provides a managed policy (**AWSDataLifecycleManagerSSMFullAccess**) that includes the required permissions. You can attach this policy to your IAM role for managing snapshots to make sure that it includes the permissions.
 
 **Important**
-The AWSDataLifecycleManagerSSMFullAccess managed policy uses the `aws:ResourceTag` condition key to restrict access to specific SSM documents when using pre and post scripts. To allow Amazon Data Lifecycle Manager to access the SSM documents, you must ensure that your SSM documents are tagged with `DLMScriptsAccess:true`.
+The AWSDataLifecycleManagerSSMFullAccess managed policy uses the `aws:ResourceTag` condition key to restrict access to specific SSM documents when using pre and post scripts. To allow Amazon Data Lifecycle Manager to access the SSM documents, you must make sure that your SSM documents are tagged with `DLMScriptsAccess:true`.
 
 Alternatively, you can manually create a custom policy or assign the required permissions directly to the IAM role that you use. You can use the same permissions that are defined in the AWSDataLifecycleManagerSSMFullAccess managed policy, however, the `aws:ResourceTag` condition key is optional. If you decide to not include that condition key, then you do not need to tag your SSM documents with `DLMScriptsAccess:true`.
 
@@ -1249,7 +1249,7 @@ The following Amazon EC2 instance types are not supported for VSS backups. If yo
 ## Shared responsibility for application-consistent snapshots
 <a name="shared-responsibility"></a>
 
-**You must ensure that:**
+**You must make sure that:**
 + The SSM Agent is installed, up-to-date, and running on your target instances
 + Systems Manager has permissions to perform the required actions on the target instances
 + Amazon Data Lifecycle Manager has permissions to perform the Systems Manager actions required to run pre and post scripts on the target instances.
@@ -1262,7 +1262,3 @@ The following Amazon EC2 instance types are not supported for VSS backups. If yo
 + Post scripts run after the pre script succeeds and the snapshot creation has been initiated. Amazon Data Lifecycle Manager runs the post script only if the pre script succeeds. If the pre script fails, Amazon Data Lifecycle Manager will not run the post script.
 + Snapshots are tagged with the appropriate tags on creation.
 + CloudWatch metrics and events are emitted when scripts are initiated, and when they fail or succeed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

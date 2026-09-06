@@ -19,7 +19,3 @@ Amazon RDS for MariaDB supports Transport Layer Security (TLS) versions 1.3, 1.2
 | TLS 1.2 | All minor versions | All minor versions | All minor versions | All minor versions |
 | TLS 1.1 | Not supported | 10.6.16 and lower | 10.5.23 and lower | 10.4.32 and lower |
 | TLS 1.0 | Not supported | 10.6.16 and lower | 10.5.23 and lower | 10.4.32 and lower |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

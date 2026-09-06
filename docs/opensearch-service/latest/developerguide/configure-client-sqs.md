@@ -537,7 +537,3 @@ Consider the following limitations when setting up an OpenSearch Ingestion pipel
 | High latency | Large message volume or insufficient compute | Increase pipeline OCUs (Ingestion OpenSearch Compute Units). For multiple high-volume queues, consider separate pipelines or increase workers per queue. |
 | KMS.AccessDeniedException errors | Encrypted queue without AWS KMS permissions | Add kms:Decrypt permission to the pipeline role for the AWS KMS key used to encrypt the queue. |
 | Messages retained in queue despite errors | on\_error is set to retain\_messages | This is the default safe behavior. Messages will be retried until the DLQ threshold is reached. Set on\_error: "delete\_messages" only if data loss on error is acceptable. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

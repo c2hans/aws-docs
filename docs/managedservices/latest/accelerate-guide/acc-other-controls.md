@@ -77,7 +77,3 @@ By default, AMS doesn't enable VPC Flow logs for the default VPC.
 *Remediation:*
 
 You can self-remediate the control by adding the `ams:managed=true` tag key/value, clearing the state of the config rule and re-running the evaluation of the rule. The auto-remediation component of AMS enables VPC Flow Logs on the vpc.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

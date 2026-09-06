@@ -248,7 +248,3 @@ These tunings include:
 For detailed instructions on implementing these performance tunings:
 + For optimizing performance for standard nodes (non-EFA), see [Optimize Amazon FSx for Lustre performance on nodes (non-EFA)](fsx-csi-tuning-non-efa.md) for a complete script that can be added to your launch template user data.
 + For optimizing performance for EFA-enabled nodes, see [Optimize Amazon FSx for Lustre performance on nodes (EFA)](fsx-csi-tuning-efa.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

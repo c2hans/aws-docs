@@ -49,7 +49,3 @@ The `getAppCatalog()` method returns an empty array or does not include expected
  **Possible causes and solutions**
 + Applications not enabled: Verify that the required applications are enabled in the Amazon Connect instance.
 + Security Profile permissions: Confirm that the user has necessary Security Profile permissions to access the applications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer Agent Workspace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agentworkspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -576,7 +576,3 @@ Together with `BobAccessPolicy`, the following `DAXAccessPolicy` gives `BobUser
 ------
 
 As this example shows, when you configure access control for the user access policy and the DAX cluster access policy, you must fully understand the end-to-end access to make sure that the principle of least privilege is observed. Also make sure that giving a user access to a DAX cluster does not subvert previously established access control policies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

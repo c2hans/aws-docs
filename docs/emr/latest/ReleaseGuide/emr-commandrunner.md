@@ -78,7 +78,3 @@ The following table identifies additional tools that you can run using `command-
 | spark-submit | Runs a Spark application. In the console, this is a Spark step. |
 | hadoop-lzo | Runs the [Hadoop LZO indexer](https://github.com/kevinweil/hadoop-lzo/blob/master/README.md) on a directory. |
 | s3-dist-cp | Distributed copy large amounts of data from Amazon S3 into HDFS. For more information, see [S3DistCp (s3-dist-cp)](UsingEMR_s3distcp.md). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

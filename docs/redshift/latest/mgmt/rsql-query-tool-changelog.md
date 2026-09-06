@@ -114,7 +114,3 @@ Choose one of the links to download the version of Amazon Redshift RSQL you need
 + [RSQL Version 1.0.4](https://s3.amazonaws.com/redshift-downloads/amazon-redshift-rsql/1.0.4/AmazonRedshiftRsql-1.0.4.msi)
 + [RSQL Version 1.0.3](https://s3.amazonaws.com/redshift-downloads/amazon-redshift-rsql/1.0.3/AmazonRedshiftRsql-1.0.3.msi)
 + [RSQL Version 1.0.1](https://s3.amazonaws.com/redshift-downloads/amazon-redshift-rsql/1.0.1/AmazonRedshiftRsql-1.0.1.msi)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

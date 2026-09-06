@@ -14,7 +14,3 @@ This section covers best practices on how to optimize costs for your existing Am
 + [Identify your unused resources to optimize costs in Amazon Keyspaces](CostOptimization_UnusedResources.md)
 + [Evaluate your table usage patterns to optimize performance and cost](CostOptimization_TableUsagePatterns.md)
 + [Evaluate your provisioned capacity for right-sized provisioning](CostOptimization_RightSizedProvisioning.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

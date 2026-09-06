@@ -179,7 +179,3 @@ Connections*=*{'Connections': ['string']}
 To avoid these run time errors while creating a workflow from a blueprint, you can validate the workflow, job and crawler definitions as outlined in [Testing a blueprint](https://docs.aws.amazon.com/glue/latest/dg/developing-blueprints-testing.html).
 
 Refer to the syntax in [AWS Glue blueprint Classes Reference](https://docs.aws.amazon.com/glue/latest/dg/developing-blueprints-code-classes.html) for defining the AWS Glue job, crawler and workflow in the layout script.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

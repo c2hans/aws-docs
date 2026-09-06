@@ -29,7 +29,3 @@ Organizations implement database and SQL Server auditing for several reasons, in
   + Are internal users using their privileges properly?
 + Because audit trails help identify infiltrators, they help deter insiders. People who know that their actions are scrutinized are less likely to access unauthorized databases or tamper with specific data.
 + Finance, medical, energy, food service, public works, and many other industries need to analyze data access and produce detailed reports regularly for government agencies. For example, [HIPAA](https://www.hhs.gov/hipaa/index.html) regulations require healthcare providers to deliver audit trails that detail who accessed the data in their records, down to the row and record level. [GDPR](https://gdpr.eu/what-is-gdpr/) has similar requirements. The [Sarbanes Oxley Act (SOX)](https://www.sarbanes-oxley-101.com/sarbanes-oxley-audits.htm) places a wide range of accounting regulations on public corporations. These organizations need to analyze data access and produce detailed reports regularly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ To delete a RUM app monitor, follow these steps.
 1. In the confirmation box, enter **Delete** and then choose **Delete**.
 
 1. If you haven't done so already, delete the CloudWatch RUM code snippet from your application's code.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

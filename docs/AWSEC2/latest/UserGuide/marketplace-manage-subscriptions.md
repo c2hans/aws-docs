@@ -46,7 +46,3 @@ Before you terminate an instance, ensure that you have backed up all data that y
 1. Log in to the [AWS Marketplace](https://aws.amazon.com/marketplace), and choose **Your Marketplace Account**, then **Manage your software subscriptions**.
 
 1. Choose **Cancel subscription**. You are prompted to confirm your cancellation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

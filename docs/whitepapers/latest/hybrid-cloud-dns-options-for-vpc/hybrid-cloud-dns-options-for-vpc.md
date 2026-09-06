@@ -35,7 +35,3 @@ Publication date: **December 02, 2022** ([Document revisions](document-revisions
 You can configure Route 53 Resolver to forward queries to customer-managed authoritative DNS servers hosted on-premises, and to respond to DNS queries that your on-premises DNS servers forward to your Amazon VPC.
 
  This whitepaper illustrates several different architectures that you can implement on AWS using native and custom-built solutions. These architectures meet the need for name resolution of on-premises infrastructure from your Amazon VPC, and address constraints that have only been partially addressed by previously published solutions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

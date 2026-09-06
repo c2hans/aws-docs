@@ -221,7 +221,3 @@ In this situation, we recommend the following:
   dbms_datapump.metadata_filter(handle =>h1, name=>'NAME_EXPR', value => 'NOT IN (''TABLE_1'',''TABLE_2'')');
   ```
 + Use an AWS DMS task (full-load migration, with CDC replication if required) to migrate the identified tables. AWS DMS will extract multiple rows from the source Oracle database, and insert them in a batch to the target Amazon RDS instance, which improves performance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,7 +68,3 @@ If the AWS service your app is calling has an HTTP or HTTPS endpoint, you can us
 +  [Fiddler](http://www.telerik.com/fiddler) - a web debugging proxyfidd for Windows
 
 Both Charles and Fiddler require some configuration to be able to view SSL encrypted traffic, please read the documentation for these tools for further information. If you are using a web debugging proxy that cannot be configured to display encrypted traffic, open the aws\_endpoints\_json file and set the HTTP tag for the AWS service you need to debug to true.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mobile SDK for Xamarin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mobile` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

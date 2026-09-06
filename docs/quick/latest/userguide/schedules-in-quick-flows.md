@@ -70,11 +70,7 @@ You receive email notifications when:
 + A flow with your schedules is deleted
 + A flow with your schedules is updated with a new version (schedules continue with the updated version)
 
-## Authentication for action connectors
+## Authentication for connectors
 <a name="authentication-for-action-connectors"></a>
 
-Ensure your authentication for action connectors is current before scheduling. If authentication expires before a scheduled run, you receive an email notification. To verify, run the flow manually or visit the action connector page in Quick to sign in.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+Ensure your authentication for connectors is current before scheduling. If authentication expires before a scheduled run, you receive an email notification. To verify, run the flow manually or visit the connector page in Quick to sign in.

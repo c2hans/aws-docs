@@ -441,7 +441,3 @@ Amazon S3 Glacier defines the following condition keys that can be used in the `
 | --- | --- | --- |
 |   [glacier:ArchiveAgeInDays](https://docs.aws.amazon.com/amazonglacier/latest/dev/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys)  | Filters access by how long an archive has been stored in the vault, in days | String |
 |   [glacier:ResourceTag/](https://docs.aws.amazon.com/amazonglacier/latest/dev/security_iam_service-with-iam.html#security_iam_service-with-iam-tags)  | Filters access by a customer-defined tag | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

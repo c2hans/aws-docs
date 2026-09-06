@@ -19,7 +19,3 @@ Elastic Beanstalk already supports a monitoring service-linked role. Elastic Bea
 Today's release adds support for a *managed-updates service-linked role*. When you launch an environment with managed platform updates enabled and you specify your account's managed-updates service-linked role as the managed-updates service role, Elastic Beanstalk creates this service-linked role for your account if it doesn't exist yet. Elastic Beanstalk associates it with the new environment. This streamlines the process of enabling managed updates for new environments in cases that failed before.
 
 For more information, see [Managed Platform Updates](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-platform-update-managed.html) and [Using service-linked roles for Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-service-linked-roles.html) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ When isolation and customization are your primary concerns. The relationship bet
 
 **Level of effort**
 The development and operation effort to use this approach is high. To ensure consistent and predictable outcomes for your family of apps, you must integrate Amazon Cognito resources with your automation tools and maintain your baselines as your authentication architecture grows more complex. When you want to create a single starting place for your apps, you have to build the user-interface (UI) elements to capture the initial decision that routes users to the correct resource.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

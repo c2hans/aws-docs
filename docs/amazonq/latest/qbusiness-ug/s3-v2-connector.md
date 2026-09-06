@@ -18,7 +18,3 @@ The Amazon S3 connector has the following known limitations:
 + VPC connectivity not supported (use the old version if VPC support is required)
 + Custom field mappings not supported (use the old connector version if required)
 + Document enrichment is not supported. (use the old connector version if required)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,7 +65,3 @@ Follow these security best practices when using the DRSFA client:
 + Do not grant additional permissions to the DRSFA client beyond those listed in the prerequisites.
 + Follow the [AWS recommended password policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html) when setting the password for the VM that hosts the DRS Failback Client.
 + Restrict access to the vCenter environment to trusted administrators only. The DRSFA client treats the executing user and anyone with datastore access as a single trust entity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

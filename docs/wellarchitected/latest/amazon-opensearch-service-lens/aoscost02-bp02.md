@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 +  [Amazon OpenSearch Service Under the Hood: OpenSearch Optimized Instances (OR1)](https://aws.amazon.com/blogs/big-data/amazon-opensearch-service-under-the-hood-opensearch-optimized-instancesor1/)
 +  [OpenSearch optimized instance (OR1) is game changing for indexing performance and cost](https://aws.amazon.com/blogs/big-data/opensearch-optimized-instance-or1-is-game-changing-for-indexing-performance-and-cost/)
 +  [Improve your Amazon OpenSearch Service performance with OpenSearch Optimized Instances](https://aws.amazon.com/blogs/big-data/improve-your-amazon-opensearch-service-performance-with-opensearch-optimized-instances/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

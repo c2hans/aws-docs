@@ -64,7 +64,3 @@ You can delete the resources that you create in B2B Data Interchange. See the gu
 + [Deleting a partnership](https://docs.aws.amazon.com/b2bi/latest/APIReference/API_DeletePartnership.html)
 + [Deleting a profile](https://docs.aws.amazon.com/b2bi/latest/APIReference/API_DeleteProfile.html)
 + [Deleting a transformer](https://docs.aws.amazon.com/b2bi/latest/APIReference/API_DeleteTransformer.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS B2B Data Interchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query b2bi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

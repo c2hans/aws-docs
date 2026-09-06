@@ -45,7 +45,3 @@ The `aws/datasync` namespace includes the following metrics. Some metrics aren't
 | `FilesVerified` | Enhanced | The number of objects that DataSync verifies during your transfer.<br />Unit: Count |
 | `FilesVerifiedDestination` | Basic | The number of files, objects, and directories that DataSync verifies at the destination location.<br />Unit: Count |
 | `FilesVerifiedSource` | Basic | The number of files, objects, and directories that DataSync verifies at the source location.<br />Unit: Count |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

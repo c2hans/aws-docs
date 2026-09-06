@@ -69,7 +69,3 @@ Regions that do not support Service Catalog do not support Account Factory Custo
   For more information about AWS Control Tower functionality in Regions that do not support AWS Service Catalog, see [AWS Control Tower available in AWS Canada West (Calgary)](2024-all.md#yyc-available).
 + When calling a control API to activate or deactivate a control, the limit for `EnableControl` and `DisableControl` updates in AWS Control Tower is one hundred (100) concurrent operations. Ten operations (10) can be in progress simultaneously, with the remaining operations queued. You may need to adjust your code to wait for completions.
 + When you provision accounts through **Account Factory Customizations (AFC)**, with blueprints that are based in Terraform, you can deploy those blueprints to only one AWS Region. By default, AWS Control Tower deploys to the home Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

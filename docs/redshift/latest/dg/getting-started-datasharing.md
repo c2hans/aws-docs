@@ -14,7 +14,3 @@ You can get started with data sharing by following one of the guides in this sec
 + [Getting started with read-only data sharing with the SQL interface](getting-started-datashare-sql.md)
 + [Getting started with multi-warehouse writes using data sharing in Amazon Redshift](getting-started-datashare-writes.md)
 + [Getting started with data sharing with AWS CloudFormation in Amazon Redshift](data-sharing-within-account-CF.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

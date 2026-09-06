@@ -46,7 +46,3 @@ When the process is complete, your browser will automatically download a compres
 | MgnInventory-{type}-{date}.csv | A list of server configurations that are compatible with AWS Transform MGN and recommend Amazon EC2 instance configurations. For more information, see [Importing your data inventory](https://docs.aws.amazon.com/mgn/latest/ug/import-main.html) in the *AWS Transform MGN User Guide*. |
 
 Large datasets can take a few minutes to generate recommendations. You can generate new recommendations at any time by repeating this procedure with a different set of preferences.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

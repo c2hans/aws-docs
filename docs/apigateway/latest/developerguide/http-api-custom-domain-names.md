@@ -78,7 +78,3 @@ If account A and account B share an owner, you can contact the [AWS Support Cent
 To set up a custom domain name for an HTTP API, you use documentation from the REST API section of the API Gateway Developer Guide.
 
 First, specify a certificate for your custom domain name. For more information, see [Get certificates ready in AWS Certificate Manager](how-to-specify-certificate-for-custom-domain-name.md). Next, you create a Regional custom domain name. For more information, see [Set up a Regional custom domain name in API Gateway](apigateway-regional-api-custom-domain-create.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

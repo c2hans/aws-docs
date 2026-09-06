@@ -182,7 +182,3 @@ You can use this farm to explore the features of Deadline Cloud, then develop an
 <a name="gs-create-farm-next"></a>
 
 After you create your farm, you can run the Deadline Cloud worker agent on the hosts in your fleet to process jobs. See [Run the Deadline Cloud worker agent](run-worker.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

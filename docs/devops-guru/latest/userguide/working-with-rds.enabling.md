@@ -59,7 +59,3 @@ You can configure DevOps Guru to monitor your Amazon RDS databases either in th
 When you tag Amazon RDS resources, you must tag the database instance and not the cluster.
 
 To enable DevOps Guru monitoring from the Amazon RDS console, see [Turning on DevOps Guru in the RDS console](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/devops-guru-for-rds.html#devops-guru-for-rds.configuring.coverage.rds-console). Note that to enable DevOps Guru from the Amazon RDS console you must use tags. For more information about tags, see [Using tags to identify resources in your DevOps Guru applications](working-with-resource-tags.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

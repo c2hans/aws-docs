@@ -24,7 +24,3 @@ AWS Migration Hub Orchestrator provides the following APIs for data retrieval.
 | <a name="migrationhub-orchestrator-ListWorkflowStepGroups"></a>[ListWorkflowStepGroups](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_ListWorkflowStepGroups.html) | Get list of step groups associated with a workflow | List |
 | <a name="migrationhub-orchestrator-ListWorkflowSteps"></a>[ListWorkflowSteps](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_ListWorkflowSteps.html) | Get a list of steps within step group associated with a workflow | List |
 | <a name="migrationhub-orchestrator-ListWorkflows"></a>[ListWorkflows](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_ListWorkflows.html) | List all workflows | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

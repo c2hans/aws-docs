@@ -356,7 +356,3 @@ Example: Using certain transaction and batch operations with conflict detection/
 <a name="cloudwatch-logs"></a>
 
 If an AWS AppSync API has enabled CloudWatch Logs with the logging settings set to Field-Level Logs `enabled` and log-level for the Field-Level Logs set to `ALL`, then AWS AppSync will emit Conflict Detection and Resolution information to the log group. For information about the format of the log messages, see the [documentation for Conflict Detection and Sync Logging](monitoring.md#aws-appsync-monitoring-conflict-detection-and-sync-logging).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

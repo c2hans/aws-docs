@@ -53,7 +53,3 @@ The following table describes common implementation errors for Revenue Attributi
 | Revenue Attribution ID | Cost allocation rejected | Total exceeds 100% for billing month | Ensure all entries for the same Revenue Attribution ID and billing month sum to 100% or less. |
 | Revenue Attribution ID | Prior month update rejected | Past the 7th of current month | Updates to the prior month's allocation are only accepted until the 7th. |
 | Revenue Attribution ID | Association fails validation | Offer or opportunity doesn't meet requirements | Verify that the offer has a buyer account ID or the opportunity is in Launched stage with a customer AWS Account ID. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

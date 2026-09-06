@@ -55,7 +55,3 @@ For more information about change acceleration and organizational change managem
 + [Turning Potential into Success: The Missing Link in Leadership Development](https://hbr.org/2017/11/turning-potential-into-success-the-missing-link-in-leadership-development) (Harvard Business Review)
 + [What's missing in leadership development?](https://www.mckinsey.com/featured-insights/leadership/whats-missing-in-leadership-development) (McKinsey & Company)
 + [Your Enterprise's Flywheel to the Cloud](https://medium.com/aws-enterprise-collection/your-enterprise-s-flywheel-to-the-cloud-67127fe4a369) (Medium website)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

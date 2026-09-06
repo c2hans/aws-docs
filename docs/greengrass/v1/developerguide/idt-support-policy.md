@@ -15,7 +15,3 @@ You can also use any of the supported versions of AWS IoT Greengrass and IDT to 
 As of April 4, 2022, AWS IoT Device Tester (IDT) for AWS IoT Greengrass V1 no longer generates signed qualification reports. You can no longer qualify new AWS IoT Greengrass V1 devices to list in the [AWS Partner Device Catalog](https://devices.amazonaws.com/) through the [AWS Device Qualification Program](https://aws.amazon.com/partners/programs/dqp/). While you can't qualify Greengrass V1 devices, you can continue to use IDT for AWS IoT Greengrass V1 to test your Greengrass V1 devices. We recommend that you use [IDT for AWS IoT Greengrass V2](https://docs.aws.amazon.com/greengrass/v2/developerguide/device-tester-for-greengrass-ug.html) to qualify and list Greengrass devices in the [AWS Partner Device Catalog](https://devices.amazonaws.com/).
 
 If you have questions about the support policy, contact [AWS Customer Support](https://aws.amazon.com/contact-us/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

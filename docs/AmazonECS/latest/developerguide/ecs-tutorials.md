@@ -40,7 +40,3 @@ You can use any of the following tutorials to learn more about how to use Active
 | Use group Managed Service Account with Windows containers on EC2. |  [Learn how to use gMSAs for EC2 Windows containers for Amazon ECS](windows-gmsa.md)  |
 | Use group Managed Service Account with Linux containers on Fargate. |  [Using gMSA for Linux containers on Fargate](fargate-linux-gmsa.md)  |
 | Create a task that runs a Windows container that has credentials to access Active Directory with domainless group Managed Service Account. |  [Using Amazon ECS Windows containers with domainless gMSA using the AWS CLI](tutorial-gmsa-windows.md)  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

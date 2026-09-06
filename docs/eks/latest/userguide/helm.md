@@ -52,7 +52,3 @@ sudo yum install openssl
    + Experiment by installing an example chart. See [Install an example chart](https://helm.sh/docs/intro/quickstart#install-an-example-chart) in the Helm [Quickstart guide](https://helm.sh/docs/intro/quickstart/).
    + Create an example chart and push it to Amazon ECR. For more information, see [Pushing a Helm chart](https://docs.aws.amazon.com/AmazonECR/latest/userguide/push-oci-artifact.html) in the *Amazon Elastic Container Registry User Guide*.
    + Install an Amazon EKS chart from the [eks-charts](https://github.com/aws/eks-charts#eks-charts) GitHub repo or from [ArtifactHub](https://artifacthub.io/packages/search?page=1&repo=aws).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

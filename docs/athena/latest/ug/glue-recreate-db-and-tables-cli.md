@@ -90,7 +90,3 @@ Now you are ready to get the definition for a table that you want to copy to the
    The table now appears in the new database in AWS Glue and can be queried from Athena.
 
 1. Repeat the steps to copy each additional table to the new database in AWS Glue.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

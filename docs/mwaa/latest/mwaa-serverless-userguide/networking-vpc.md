@@ -477,7 +477,3 @@ It takes about 30 minutes to create the Amazon VPC infrastructure.
 
 **Note**
 You can further restrict outbound access in the CIDR of your Amazon MWAA Serverless security group. For example, you can restrict to itself by adding a self-referencing outbound rule and the CIDR of your Amazon VPC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

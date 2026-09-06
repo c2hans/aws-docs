@@ -20,7 +20,3 @@ If you do not enable identity propagation, you can manage data permissions manua
 The following identity propagation methods are available:
 + **AWS Glue Data Catalog** – Trusted identity propagation through AWS IAM Identity Center and Lake Formation. For setup instructions, see [Setting up trusted identity propagation for AWS Glue Data Catalog](catalog-integration-glue-tip.md).
 + **Databricks Unity Catalog** – OAuth 3LO (three-legged OAuth) with end-user identities. For setup instructions, see [Setting up identity enforcement with Databricks 3LO](catalog-integration-databricks-3lo.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

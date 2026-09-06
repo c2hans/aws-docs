@@ -33,7 +33,3 @@ The following actions are supported:
 +  [UpdateRepositoryLink](API_UpdateRepositoryLink.md)
 +  [UpdateSyncBlocker](API_UpdateSyncBlocker.md)
 +  [UpdateSyncConfiguration](API_UpdateSyncConfiguration.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeConnections. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeconnections` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

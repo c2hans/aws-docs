@@ -19,7 +19,3 @@ When registry blob mounting is enabled and mounting parameters are included, Ama
 + [Pushing a Docker image to an Amazon ECR private repository](docker-push-ecr-image.md)
 + [Pushing a multi-architecture image to an Amazon ECR private repository](docker-push-multi-architecture-image.md)
 + [Pushing a Helm chart to an Amazon ECR private repository](push-oci-artifact.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

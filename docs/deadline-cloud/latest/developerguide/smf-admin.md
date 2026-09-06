@@ -177,7 +177,7 @@ For more information about CloudWatch Logs Insights, see [Analyzing log data wit
 ##### Worker agent structured logging
 <a name="smf-admin-structured-logging"></a>
 
-The Deadline Cloud worker agent publishes structured JSON logs to CloudWatch. The worker agent offers many structured logs for analyzing worker health. For more information, see [Deadline Cloud worker agent logging](https://github.com/aws-deadline/deadline-cloud-worker-agent/blob/mainline/docs/logging.md) on GitHub.
+The Deadline Cloud worker agent publishes structured JSON logs to CloudWatch. The worker agent offers many structured logs for analyzing worker health. For more information, see [Deadline Cloud worker agent logging](https://github.com/aws-deadline/deadline-cloud-worker-agent/blob/mainline/docs/logging.md) on the GitHub website.
 
 The attributes of the structured logs are unpacked to fields in Log Insights. You can use this CloudWatch capability to count and analyze host configuration startup failures. For example, a count and bin query can be used to determine how often failures occur:
 
@@ -225,7 +225,3 @@ You can set up CloudWatch metric filters to generate CloudWatch metrics from log
 After creating metric filters, you can configure standard CloudWatch alarms to take action on elevated host configuration failure rates, or add the metrics to a CloudWatch dashboard for day-to-day operations and monitoring.
 
 For more details, see [Filter and pattern syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html) in the *Amazon CloudWatch Logs User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

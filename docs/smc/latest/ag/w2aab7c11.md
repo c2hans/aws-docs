@@ -14,7 +14,3 @@ Service Management Connector is not within the scope of any AWS compliance progr
  **Encryption at rest** — Service Management Connector does not store any customer data. The connector installs Tables and Schemas on third-party platforms that can store credentials in the platform’s database. All credentials are encrypted and masked to comply with platform best practices.
 
  **Encryption in transit** — By default, AWS encrypts all data transmitted between external platforms and Service Management Connector by sending data through a HTTPS/TLS connection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

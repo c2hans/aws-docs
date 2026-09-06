@@ -69,7 +69,3 @@ To view the status of all AWS services, including the AWS Management Console, se
 The language selection menu has moved to the new Unified Settings page. To change the language of the AWS Management Console, [navigate to the Unified Settings page](unified-settings.md), and then choose the language for the console.
 
 For more information, see [Changing the language of the AWS Management Console](change-language.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Management Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

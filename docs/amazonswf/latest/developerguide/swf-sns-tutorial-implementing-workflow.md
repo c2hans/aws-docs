@@ -315,7 +315,3 @@ The code also waits for the user to start running the activities starter *before
 <a name="implementing-workflow-next-steps"></a>
 
 You have implemented the work flow. Next, you will define the activities and an activities starter, in [Subscription Workflow Tutorial Part 3: Implementing the Activities](swf-sns-tutorial-implementing-activities.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

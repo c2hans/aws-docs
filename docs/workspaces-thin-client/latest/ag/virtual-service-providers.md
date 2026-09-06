@@ -58,7 +58,3 @@ Amazon WorkSpaces Secure Browser is a low-cost, fully managed WorkSpaces console
 1. Select the **Create environment** button.
 
 After you create your environment, you can still edit the details later. For more information, see [Editing an environment](editing-an-environment.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

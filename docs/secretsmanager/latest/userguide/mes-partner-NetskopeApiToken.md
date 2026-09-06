@@ -48,7 +48,3 @@ During rotation, Secrets Manager calls the Netskope service account endpoint wit
 Netskope invalidates the old token as soon as it generates the new one, so the two tokens never overlap. For roughly 30 seconds during rotation, the current version of the secret holds a token that no longer works. Your application must handle an HTTP 401 response by reading the secret again and retrying. An application that caches the token without this pattern fails during every rotation.
 
 If the service account role uses an IP allowlist, add the AWS-managed prefix list `com.amazonaws.{{region}}.secretsmanager-managed-external-secrets` to that allowlist. Rotation calls originate from this prefix list, and Netskope returns HTTP 403 if the allowlist excludes them. For more information, see [AWS-managed prefix lists](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-aws-managed-prefix-lists.html) in the *Amazon VPC User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

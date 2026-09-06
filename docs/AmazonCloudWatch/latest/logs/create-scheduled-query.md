@@ -113,7 +113,3 @@ For detailed IAM policy examples, see [Identity and access management for Amazon
 ------
 
 After creating the scheduled query, you can view and manage it from the **Scheduled queries** page and using ListScheduledQueries API, which shows all your scheduled queries with their names, creation dates, status of last run, last triggered time, and repeat frequency.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

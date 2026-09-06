@@ -34,7 +34,3 @@ The only account that has permission to run the failover test is the account tha
 + [Start a virtual interface failover test](start_failover_test.md)
 + [View a virtual interface failover test history](view_failover_test.md)
 + [Stop a virtual interface failover test](stop_failover_test.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -112,7 +112,3 @@ For more information, see the [Microsoft SQL Server documentation](https://learn
 <a name="ec2-monitoring"></a>
 
 You can monitor audit logs that are logged to an audit file, an application or security event log, or an audit table in the database by using monitoring solutions such as [Nagios](https://www.nagios.com/solutions/mssql-monitoring/). A monitoring solution that's integrated with a ticketing or alerting mechanism can generate real-time alerts and incidents to notify the systems administrator or database administrator.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

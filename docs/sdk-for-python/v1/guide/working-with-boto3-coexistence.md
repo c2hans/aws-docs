@@ -496,7 +496,3 @@ Avoid these issues when using both SDKs together:
 | Assuming configuration is shared between SDKs | One SDK may use an unexpected Region or credentials | Verify each SDK resolves the correct Region and credentials independently |
 | Calling asyncio.run() from inside a running event loop | Raises RuntimeError — you cannot nest event loops | Use await directly if already inside an async context, or restructure to call asyncio.run() only from synchronous code |
 | Creating Boto3 clients inside tight async loops | Client construction is synchronous and repeated creation adds latency | Create Boto3 clients once outside the loop and pass them in, wrapped with asyncio.to\_thread() if called from async code |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Python. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-python` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

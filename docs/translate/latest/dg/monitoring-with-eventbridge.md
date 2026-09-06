@@ -105,7 +105,3 @@ The `status` attribute provides the status of the prior version of the parallel 
 The `latestUpdateAttemptStatus` attribute provides the status of the new version of the parallel data resource, which is being created by the update. Values are:
 + `ACTIVE` – The `UpdateParallelData` operation succeeded, and the updated resource is ready for you to use.
 + `FAILED` – The `UpdateParallelData` operation failed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Translate. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query translate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

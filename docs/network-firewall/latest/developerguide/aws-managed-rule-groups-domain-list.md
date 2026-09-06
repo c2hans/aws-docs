@@ -17,7 +17,3 @@ Each rule name in the table below is appended by either `StrictOrder` or `Action
 | MalwareDomainsStrictOrder, MalwareDomainsActionOrder | Rules that allow you to block requests to domains that are known for hosting malware. This can help reduce the risk of receiving malware or viruses originating from these known sources. |
 | AbusedLegitBotNetCommandAndControlDomainsStrictOrder, AbusedLegitBotNetCommandAndControlDomainsActionOrder | Rules that allow you to block requests to a class of domains, which are generally legitimate but are compromised and may host botnets. This can help reduce the risk of resources accessing botnets originating from these sources with poor reputation. |
 | BotNetCommandAndControlDomainsStrictOrder, BotNetCommandAndControlDomainsActionOrder | Rules that allow you to block requests to domains that are known for hosting botnets. This can help reduce the risk of resources accessing botnets originating from these known sources. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

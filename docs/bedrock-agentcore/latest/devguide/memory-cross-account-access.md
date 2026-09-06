@@ -452,7 +452,3 @@ aws bedrock-agentcore-control create-memory \
 +  **Audit cross-account access** — Use AWS CloudTrail to monitor cross-account API calls to your memory resources.
 +  **Separate read and write access** — Create separate policy statements for read-only consumers and read-write producers.
 +  **Validate before removing policies** — Before removing a resource-based policy, verify that no active workloads in other accounts depend on the access.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

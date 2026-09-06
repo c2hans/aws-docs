@@ -288,7 +288,3 @@ Replace the following values in each key policy statement:
 +  `kms:ViaService` — Replace {{us-east-1}} with the AWS Region of your registry.
 +  `kms:EncryptionContext:aws:agent-registry:registry-arn` — Replace with the ARN of your registry. To allow access to all registries in your account, use `StringLike` with a wildcard: `arn:aws:agent-registry:us-east-1:111122223333:registry/*`.
 +  `aws:PrincipalOrgID` — In the AWS RAM sharing statement, replace `o-EXAMPLE1234` with your AWS Organization ID. You can find it in the AWS Organizations console, or run `aws organizations describe-organization --query 'Organization.Id' --output text`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

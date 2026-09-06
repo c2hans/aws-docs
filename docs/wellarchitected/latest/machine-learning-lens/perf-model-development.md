@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 + [MLPERF04-BP04 Establish feature statistics](mlperf04-bp04.md)
 + [MLPERF04-BP05 Perform a performance trade-off analysis](mlperf04-bp05.md)
 + [MLPERF04-BP06 Detect performance issues when using transfer learning](mlperf04-bp06.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

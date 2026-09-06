@@ -70,7 +70,3 @@ Amazon SNS custom data identifiers have the following limitations:
   + RegEx reserved characters: ( '^' \| '$' \| '?' \| '[' \| ']' \| '{' \| '}' \| '\|' \| '\\\\' \| '\*' \| '\+' \| '.' )
 + Custom data identifiers cannot share the same name as a managed data identifier.
 + Custom data identifiers must be specified in every data protection policy for each Amazon SNS topic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

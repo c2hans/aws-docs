@@ -65,7 +65,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/cost.
 |  Data Transfer Out  |  $0.09 per GB  |  $0.27  |
 |  Others (for example, CloudWatch, Secrets Manager, etc.)  |  Almost 0 |  $0  |
 |   |  TOTAL |  \~ $0.287  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

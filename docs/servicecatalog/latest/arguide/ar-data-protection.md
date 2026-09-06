@@ -37,7 +37,3 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
  You can privately access AppRegistry APIs from Amazon Virtual Private Cloud (Amazon VPC) by creating VPC endpoints. With VPC endpoints, the routing between the VPC and AppRegistry is handled by the AWS network without the need for an internet gateway, NAT gateway, or VPN connection.
 
  AWS PrivateLink powers the latest generation of VPC endpoints that AppRegistry uses. AWS PrivateLink is an AWS technology that enables the private connectivity between AWS services using Elastic Network Interfaces (ENIs) with private IPs in your VPCs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

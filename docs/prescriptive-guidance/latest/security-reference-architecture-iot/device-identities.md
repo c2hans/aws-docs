@@ -46,7 +46,3 @@ Provision devices that have unique identities by using X.509 certificates or oth
 <a name="network-security.44137336-c123-5117-a7b1-a027926d6938"></a>
 
 Use secure communication protocols such as MQTT over TLS for device-to-cloud communications. Where possible, implement [AWS PrivateLink VPC endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) for secure configuration management and update downloads. Apply network segmentation to isolate IoT and IIoT devices from other critical network assets. Use [AWS IoT Device Defender](https://docs.aws.amazon.com/iot-device-defender/latest/devguide/what-is-device-defender.html) to continuously audit and monitor the security posture of your device fleet, including checking for compliance with security best practices such as the principle of least privilege and unique identity per device.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

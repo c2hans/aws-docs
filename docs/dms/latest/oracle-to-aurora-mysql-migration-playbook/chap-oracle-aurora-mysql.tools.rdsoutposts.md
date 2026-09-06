@@ -22,7 +22,3 @@ When you deploy Amazon RDS on Outposts, you can run Amazon RDS on premises for l
 This option is helpful when you need to run Amazon RDS on premises for low latency workloads that need to be run in close proximity to your on-premises data and applications.
 
 For more information, see [AWS Outposts Family](https://aws.amazon.com/outposts), [Amazon RDS on Outposts](https://aws.amazon.com/rds/outposts), and [Create Amazon RDS DB Instances on Outposts](https://aws.amazon.com/blogs/aws/new-create-amazon-rds-db-instances-on-aws-outposts).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

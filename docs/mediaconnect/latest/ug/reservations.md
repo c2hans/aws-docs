@@ -19,7 +19,3 @@ For information on charges for reservations, see the [MediaConnect price list](h
 <a name="reservations-unused-minutes"></a>
 
 Reserved outbound bandwidth is billed hourly. For each billing cycle, AWS charges your account for outbound bandwidth at the discounted rate, as specified in your reservation. If your account uses more outbound bandwidth than is covered in the reservation, the overage is charged at on-demand rates. If your account used less bandwidth, AWS charges you for the amount of outbound bandwidth that's specified in the reservation. Unused bandwidth is not carried over to the next month.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

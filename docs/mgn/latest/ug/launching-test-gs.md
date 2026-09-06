@@ -98,7 +98,3 @@ To finalize a test:
 1. You can now terminate the launched test instance directly from the Amazon EC2 Console as that instance is no longer needed (if you have not done so already through the MGN Console). You can quickly access the Test instance by navigating to the specific servers > **Server Details > Migration dashboard > Lifecycle > Launch status** and choosing **View in EC2 Console.**
 
 1. The Amazon EC2 Console will automatically search for and display the test instance. Select the instance, open the **Instance state** menu, and choose **Terminate instance**. When the confirmation dialogue appears, choose **Terminate**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

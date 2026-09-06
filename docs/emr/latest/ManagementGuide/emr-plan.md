@@ -14,7 +14,3 @@ This section explains configuration options and instructions for planning, confi
 + How to set up clusters so you can manage them more easily, and monitor activity, performance, and health. See [Configure Amazon EMR cluster logging and debugging](emr-plan-debugging.md) and [Tag and categorize Amazon EMR cluster resources](emr-plan-tags.md).
 + How to authenticate and authorize access to cluster resources, and how to encrypt data. See [Security in Amazon EMR](emr-security.md).
 + How to integrate with other software and services. See [Drivers and third-party application integration on Amazon EMR](emr-plan-third-party.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -78,7 +78,3 @@ AMS Advanced offers the following features for supported AWS services:
   This feature enables you to request AWS accounts within the same managed environment but the ongoing operations of workloads and AWS resources within those accounts are your responsibility. AMS provisions customer-managed accounts, but once the accounts are created, no other AMS features or services are provided to those accounts. AWS will not enroll customer-managed accounts in enterprise-level premium support. It will be your responsibility to enroll customer-managed accounts in AWS support at the support rate you choose.
 
 When you onboard AMS, you receive a complete list of your AMS network infrastructure. To get an updated list of services running in support of your AMS infrastructure at any time, file a service request with specifics about the information you want. To request a change to your network design, create a service request describing the changes you want to make—for example, adding a VPC or requesting a security group rule change.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,7 +56,3 @@ The recommended order of operations is:
 
 **Important**
 Auto-generated document IDs are not preserved during replay. If a captured write relied on the source assigning an `_id`, the replayed request can create a differently identified document on the target. Validate identity-sensitive indexes before cutover.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

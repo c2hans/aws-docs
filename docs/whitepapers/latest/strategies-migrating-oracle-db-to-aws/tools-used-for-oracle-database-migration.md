@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-
 +  **[Oracle GoldenGate](https://www.oracle.com/integration/goldengate/)** is a tool for replicating data between a source and one or more destination databases. You can use it to build high-availability architectures. You can also use it to perform real-time data integration, transactional change data capture, and replication in heterogeneous IT environments.
 +  **[Oracle SQL Developer](https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html)** is a no-cost GUI tool available from Oracle for data manipulation, development, and management. This Java-based tool is available for Microsoft Windows, Linux, or iOS X.
 +  **[Oracle SQL\*Loader](https://docs.oracle.com/cd/B19306_01/server.102/b14215/part_ldr.htm)** is a bulk data-load utility available from Oracle for loading data from external files into a database. SQL\*Loader is included as part of the full database client installation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

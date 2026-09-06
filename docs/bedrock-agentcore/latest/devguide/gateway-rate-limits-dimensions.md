@@ -82,7 +82,3 @@ The combination of dimension keys and entry values determines whether traffic sh
 
 **Warning**
 Avoid using high-cardinality or unbounded JWT claims as dimension keys (for example, `$.context.jwt.jti`, `$.context.jwt.nonce`, or request IDs). These create an unbounded number of rate buckets, which might reduce the effectiveness of rate limiting. Use stable, bounded identifiers such as `sub`, `team`, or `tier` instead.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

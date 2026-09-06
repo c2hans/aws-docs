@@ -2,23 +2,23 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/builtin-services-integration.html
 ---
 
-# AWS service action connectors
+# AWS service connectors
 <a name="builtin-services-integration"></a>
 
-With AWS service action connectors in Amazon Quick, you can create action connectors that interact directly with AWS services like Amazon Bedrock, Amazon Textract, and Amazon Comprehend. These connectors enable automated workflows that leverage AWS AI and machine learning capabilities.
+With AWS service connectors in Amazon Quick, you can create connectors that interact directly with AWS services like Amazon Bedrock, Amazon Textract, and Amazon Comprehend. These connectors enable automated workflows that leverage AWS AI and machine learning capabilities.
 
 ## What you can do
 <a name="aws-builtin-services-capabilities"></a>
 
-AWS service action connectors enable you to integrate powerful AWS capabilities into your automated workflows. For example, you can use Amazon Bedrock to generate content with foundation models, Amazon Textract to extract text and data from documents, or Amazon Comprehend to analyze sentiment and extract insights from text. These action connectors allow you to build sophisticated automation workflows that combine multiple AWS services for document processing, content generation, and data analysis—all while maintaining security through IAM role-based authentication.
+AWS service connectors enable you to integrate powerful AWS capabilities into your automated workflows. For example, you can use Amazon Bedrock to generate content with foundation models, Amazon Textract to extract text and data from documents, or Amazon Comprehend to analyze sentiment and extract insights from text. These connectors allow you to build sophisticated automation workflows that combine multiple AWS services for document processing, content generation, and data analysis—all while maintaining security through IAM role-based authentication.
 
 **Note**
-AWS services action connectors can only be used with Amazon Quick Automate because they require an IAM identity for authentication. These connectors are created through the admin console and provide direct access to AWS service APIs.
+AWS services connectors can only be used with Amazon Quick Automate because they require an IAM identity for authentication. These connectors are created through the admin console and provide direct access to AWS service APIs.
 
 ## Supported AWS services
 <a name="aws-builtin-services-supported"></a>
 
-Amazon Quick supports the following AWS services for action connectors:
+Amazon Quick supports the following AWS services for connectors:
 + **Amazon Bedrock Agent** - Invoke Bedrock agents for complex AI workflows.
 + **Amazon Bedrock Runtime** - Access foundation models for text generation and conversation.
 + **Amazon Bedrock Data Automation** - Automate data processing workflows with AI.
@@ -30,16 +30,16 @@ Amazon Quick supports the following AWS services for action connectors:
 ## Before you begin
 <a name="aws-builtin-services-prerequisites"></a>
 
-Before you set up an AWS service action connectors, make sure you have the following:
+Before you set up an AWS service connectors, make sure you have the following:
 + AWS account with access to the desired AWS services.
 + IAM role with appropriate permissions for the AWS services you want to use.
-+ Amazon Quick Admin access to create action connectors.
-+ Amazon Quick Automate access to use the action connectors in workflows.
++ Amazon Quick Admin access to create connectors.
++ Amazon Quick Automate access to use the connectors in workflows.
 
 ## Prepare IAM role and permissions
 <a name="aws-builtin-services-authentication"></a>
 
-Before setting up the action connectors in Amazon Quick, prepare your IAM role with the necessary permissions for the AWS services you want to use.
+Before setting up the connectors in Amazon Quick, prepare your IAM role with the necessary permissions for the AWS services you want to use.
 
 ### Required IAM permissions
 <a name="aws-builtin-services-iam-permissions"></a>
@@ -55,7 +55,7 @@ First, you will need to create an IAM role that will be used by Amazon Quick to 
 
 1. Open IAM and create a new IAM role.
 
-1. Give it all the permissions for the AWS service you want to invoke via action connectors. For example, you can assign a managed policy like `AmazonS3FullAccess` if you need to invoke Amazon S3.
+1. Give it all the permissions for the AWS service you want to invoke via connectors. For example, you can assign a managed policy like `AmazonS3FullAccess` if you need to invoke Amazon S3.
 
 1. In the trust relationship, give the assume role permission to `quicksight.amazonaws.com`. This allows Amazon Quick to assume this role and call AWS services on your behalf.
 
@@ -81,7 +81,7 @@ Example trust policy:
 }
 ```
 
-## Create AWS services action connector
+## Create AWS services connector
 <a name="aws-builtin-services-setup"></a>
 
 After preparing your IAM role and permissions, follow these steps to set up AWS Actions in Quick Suite.
@@ -113,7 +113,7 @@ You need administrative access to Amazon Quick Suite to perform the following st
 Owner access is required to add integrations to Automation Groups in order to give access within Quick Automate.
    + Provide **User access** for any users who need to invoke actions across Quick Suite.
 
-     For a list of integrations supported in various Quick Suite capabilities, see [Action connector compatibility matrix](action-connector-apis-supported-types.md#action-connector-compatibility-matrix).
+     For a list of integrations supported in various Quick Suite capabilities, see [Connector compatibility matrix](action-connector-apis-supported-types.md#action-connector-compatibility-matrix).
 
 1. Select **Add** to finish creating the integration.
 
@@ -127,7 +127,3 @@ After creating your action integration, you can:
 + Add the integration to an **Automation Group** in order to use it in Quick Automate. See [Setup tasks](getting-started-quick-automate.md#automate-setup-tasks) for more details.
 + Monitor the integration's usage and performance through the admin console.
 + Update the integration's configuration or permissions as requirements change.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

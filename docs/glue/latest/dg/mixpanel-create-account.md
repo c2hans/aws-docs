@@ -61,7 +61,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/mixpanel-create-account.h
 1. From the **Service Account** dropdown list, select the **service Account or enter name to create**, add **Project Role**, specify **expires**, and select **Add**.
 **Important**
 After completing the previous step, the following page displays the service account's secret key. Ensure to save the service account's secret key. You will not be able to access it again after this point.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

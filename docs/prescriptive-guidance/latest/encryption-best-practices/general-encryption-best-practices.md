@@ -44,7 +44,3 @@ The following are general best practices when encrypting data at rest in the AWS
 + Define an organizational encryption policy for data at rest, based on your data classification, organizational requirements, and any applicable regulatory or compliance standards. For more information, see [Creating an enterprise encryption strategy for data at rest](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-at-rest-encryption/welcome.html). We strongly recommend that you encrypt data at rest that is classified as highly confidential or confidential. Your policy might also specify encryption for other categories, such as non-confidential or public data, on an as-needed basis.
 + When encrypting data at rest, we recommend using approved cryptography algorithms, block cipher modes, and key lengths.
 + Identify access control policies for your encryption keys based on the principle of least privilege.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

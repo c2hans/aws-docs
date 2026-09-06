@@ -14,7 +14,3 @@ This topic covers the Android tutorial designed to demonstrate the key features 
 + [Tutorial: Use AWS Lambda with MQTT](qs-android-tracking-lambda.md)
 + [Tutorial: Set up the sample app code](qs-android-tracking-sample-app-code.md)
 + [Tutorial: Use the sample app](qs-android-tracking-use.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

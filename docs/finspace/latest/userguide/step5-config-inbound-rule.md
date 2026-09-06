@@ -32,7 +32,3 @@ As an example, add an entry to allow TCP traffic for port *5005* to connect to a
 If you need to restrict outbound traffic to specific ports and destination, add [network ACL](step1-config-ntw.md#nacl) while creating a network connection to deny outbound traffic from FinSpace for each port range and destination.
 When you create an Amazon EC2 instance, you need to specify the default security group for these inbound rules to apply. See next section for an example of how an Amazon EC2 instance is created with this security group.
 If you have hosts with different port rules you can create a security group for each host. When you launch an EC2 instance, use the security group with the port rules for your host.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

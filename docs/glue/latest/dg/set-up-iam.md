@@ -55,7 +55,3 @@ You've now completed the minimum IAM permissions setup for AWS Glue. In a produc
 Now that you have IAM permissions set up, you can explore the following topics to get started using AWS Glue:
 + [Getting Started with AWS Glue in AWS Skill Builder](https://explore.skillbuilder.aws/learn/course/external/view/elearning/8171/getting-started-with-aws-glue)
 + [Getting started with the AWS Glue Data Catalog](start-data-catalog.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

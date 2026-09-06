@@ -24,7 +24,3 @@ All the data in the shard is sent to the same worker that is processing the shar
 + [Write to Kinesis Data Streams using third-party integrations](using-other-services-third-party.md)
 + [Troubleshoot Amazon Kinesis Data Streams producers](troubleshooting-producers.md)
 + [Optimize Kinesis Data Streams producers](advanced-producers.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

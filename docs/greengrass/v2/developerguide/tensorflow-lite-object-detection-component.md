@@ -339,7 +339,3 @@ The following table describes the changes in each version of the component.
 | 2.1.2 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.1.1 |  <a name="changelog-tensorflow-lite-object-detection-2.1.1"></a>**Bug fixes and improvements**<br />   Fixes an image scaling issue that resulted in inaccurate bounding boxes in the sample TensorFlow Lite object detection inference results.     |
 | 2.1.0 | Initial version. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

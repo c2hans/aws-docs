@@ -17,7 +17,3 @@ For information about referencing these variables in a workflow, see [Using pred
 | region | The region code of the AWS Region that the AWS CDK bootstrap stack was deployed to during the workflow run.<br />Example: `us-west-2` |
 | stack-id | The Amazon Resource Name (ARN) of the deployed AWS CDK bootstrap stack.<br />Example: `arn:aws:cloudformation:us-west-2:111122223333:stack/codecatalyst-cdk-bootstrap-stack/6aad4380-100a-11ec-a10a-03b8a84d40df` |
 | SKIP-DEPLOYMENT | A value of `true` indicates that deployment of your AWS CDK bootstrap stack was skipped during the workflow run. A stack deployment will be skipped if there is no change in the stack since the last deployment.<br />This variable is only produced if its value is `true`.<br />Hardcoded to `true`. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

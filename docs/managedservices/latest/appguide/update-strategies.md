@@ -14,7 +14,3 @@ There are a few different strategies you can employ to update your applications 
 
   To learn more, see [ AWS CodeDeploy Introduces Blue/Green Deployments.](https://aws.amazon.com/about-aws/whats-new/2017/01/aws-codedeploy-introduces-blue-green-deployments/)
 + Rolling Update with new AMI: This is where you have a new AMI that you customize (see [Create AMI](https://docs.aws.amazon.com/managedservices/latest/ctref/ex-create-ami.html)) and then request that AMS deploy it to your Auto Scaling group. Use a Management \| Other \| Other \| Update CT (ct-0xdawir96cy7k) to do this.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

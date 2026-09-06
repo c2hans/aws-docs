@@ -148,7 +148,3 @@ As opposed to AWS IoT Core, the AWS IoT Greengrass core supports the following *
 | TLS\_ECDHE\_RSA\_WITH\_AES\_256\_CBC\_SHA | Supported | 1.0 |
 | TLS\_RSA\_WITH\_AES\_128\_CBC\_SHA | Not supported | 1.0 |
 | TLS\_RSA\_WITH\_AES\_256\_CBC\_SHA | Not supported | 1.0 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

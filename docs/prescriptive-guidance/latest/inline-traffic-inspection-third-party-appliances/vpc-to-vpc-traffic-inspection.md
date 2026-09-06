@@ -35,7 +35,3 @@ VPC-to-VPC traffic inspection occurs when traffic originates from one VPC and is
 
 **Note**
 Transit Gateway maintains Availability Zone affinity and uses the same Availability Zone that the original requests was created in. For example, if an EC2 instance in `Workload spoke VPC2` in Availability Zone 2 initiated the request, the packet is forwarded to the Transit Gateway elastic network interface subnet in `Workload spoke VPC2` in Availability Zone 2, lands on the transit gateway, and is then forwarded to the Transit Gateway elastic network interface subnet in Availability Zone 2 in the destination VPC. By turning on appliance mode in the appliance VPC, you can ensure that the flow of symmetry is maintained using the 4-tuple hash for the life of traffic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

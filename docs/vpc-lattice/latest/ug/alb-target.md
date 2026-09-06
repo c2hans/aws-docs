@@ -67,7 +67,3 @@ You can either register the load balancer as a target now or later on.
 1. For **Port**, keep the default or specify a different port as needed. This port must match an existing listener port on your Application Load Balancer. If you continue without a matching port, traffic won't reach your Application Load Balancer.
 
 1. Choose **Create target group**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

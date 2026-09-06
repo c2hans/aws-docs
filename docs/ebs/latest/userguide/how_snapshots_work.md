@@ -48,7 +48,3 @@ The diagram assumes that you own **Vol 1** and **Snap A**, and that **Vol 2** is
 ![Snapshots capturing an initial volume state and two subsequent states after data has been changed.](http://docs.aws.amazon.com/ebs/latest/userguide/images/snapshot_1c.png)
 
 For more information about how data is managed when you delete a snapshot, see [Delete an Amazon EBS snapshot](ebs-deleting-snapshot.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

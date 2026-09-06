@@ -44,7 +44,3 @@ RPO, RTO and SLOs are good indicators of resilience, but you can also think abou
 If you think about the objective to continue operating if you lose 5% of the instances that power your application, you might determine that your application should be prescaled or have the ability to scale fast enough to support the additional traffic . Or, you might determine that you should leverage different architectural patterns, as described in the [*Stage 2: Design and implement*](stage-2.md) section.
 
 You also should implement observability measures for your specific business objectives. For example, you can track *average order rate*, *average order price*, *average number of subscriptions*, or other metrics that can provide insights into the health of the business based on your application's behavior. By implementing observability capabilities for your application, you can create alarms and take action if these metrics exceed your defined boundaries. Observability is covered in more detail in the [*Stage 4: Operate*](stage-4.md) section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -91,7 +91,3 @@ fields @timestamp, @message
 | Custom catalog: exceeds entry limit | Catalog has more than 1024 entries. | Reduce the number of entries to 1024 or fewer. |
 | Custom catalog: changes not reflected | Catalog is loaded at startup only. | Restart the MCP server to pick up changes to `catalog.json`. |
 | Private IdP unreachable | OAuth token exchange fails with connection timeout or DNS resolution errors. Server logs show failures reaching the SAP/IdP token endpoint. | If the SAP authorization server or external IdP is hosted inside a VPC, confirm that a `privateEndpoint` is configured on the AgentCore OAuth credential provider. Verify that the specified subnets and security groups allow HTTPS to the IdP. For more information, see [Connect to private identity providers](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity-private-idp.html). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MCP Servers for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mcp-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

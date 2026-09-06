@@ -36,7 +36,3 @@ For more information about how to subscribe to LiveRamp, see [Step 1: Subscribe 
 1. Choose **Create ID namespace**.
 
 The ID namespace target is created. After you create the ID namespaces (source and target) required for an ID mapping workflow, you're ready to [Create the ID mapping workflow](create-id-mapping-workflow.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

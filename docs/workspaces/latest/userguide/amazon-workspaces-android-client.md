@@ -279,7 +279,3 @@ Version 2.4.13 is the final release of the Amazon WorkSpaces Chromebook client a
 | 2.1.3 |  |  +  Adds support for the following new WorkSpace states: STOPPING and STOPPED <br />+  Adds support for audio in, enabling you to make calls or attend web conferences <br />+  Resolves minor bugs and improves stability   |
 | 2.0.0 |  |  +  Adds support for saving registration codes, enabling you to switch WorkSpaces without re-entering the registration codes <br />+  Improves usability and stability   |
 | 1.0 |  | Initial release |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

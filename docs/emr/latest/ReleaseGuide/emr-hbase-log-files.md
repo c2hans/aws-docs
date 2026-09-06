@@ -14,7 +14,3 @@ If you configure your cluster to persist log files to Amazon S3, you should know
 
 **To view HBase logs on Amazon S3**
 + To access HBase logs and other cluster logs on Amazon S3, and to have them available after the cluster terminates, specify an Amazon S3 bucket to receive these logs when you create the cluster. This is done using the `--log-uri` option. For more information about enabling logging for your cluster, see [Configure logging and debugging (optional)](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-debugging.html) in the *Amazon EMR Management Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -166,7 +166,3 @@ When the Conductor Live node comes back online, it automatically takes over mana
 + If an alert was active and the problem still exists, the alert is not cleared.
 + If a problem occurred on a worker node while the Conductor Live node was offline, the Conductor Live now detects this problem and displays a new alert or message.
 + If a problem occurred and got resolved on a worker node while the Conductor node was offline, the Conductor Live has no knowledge of that problem ever having existed. This is really the only missing information from the outage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

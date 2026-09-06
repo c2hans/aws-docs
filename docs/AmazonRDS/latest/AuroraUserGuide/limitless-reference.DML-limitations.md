@@ -128,7 +128,3 @@ You can perform vacuuming on both sharded and reference tables. The following `V
 + Consolidated views for [pg\_stat\_user\_indexes](https://www.postgresql.org/docs/current/monitoring-stats.html), [pg\_class](https://www.postgresql.org/docs/current/catalog-pg-class.html), and [pg\_stats](https://www.postgresql.org/docs/current/view-pg-stats.html) aren't implemented.
 
 For more information on the `VACUUM` command, see [VACUUM](https://www.postgresql.org/docs/current/sql-vacuum.html) in the PostgreSQL documentation. For more information on how vacuuming works in Aurora PostgreSQL Limitless Database, see [Reclaiming storage space by vacuuming](limitless-vacuum.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

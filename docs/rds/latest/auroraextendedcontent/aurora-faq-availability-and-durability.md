@@ -152,7 +152,3 @@ Since replicas share the same data volume as the primary instance in the same AW
 Can I set up binlog replication with an external MySQL database?
 
 Yes, you can set up binlog replication between an Aurora MySQL instance and an external MySQL database. The other database can run on Amazon RDS, as a self-managed database on AWS, or completely outside of AWS. If you're running Aurora MySQL 5.7, consider setting up GTID-based binlog replication for complete consistency.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

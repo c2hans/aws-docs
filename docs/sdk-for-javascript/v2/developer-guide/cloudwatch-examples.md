@@ -19,7 +19,3 @@ The JavaScript API for CloudWatch is exposed through the `AWS.CloudWatch`, `AWS.
 + [Getting Metrics from Amazon CloudWatch](cloudwatch-examples-getting-metrics.md)
 + [Sending Events to Amazon CloudWatch Events](cloudwatch-examples-sending-events.md)
 + [Using Subscription Filters in Amazon CloudWatch Logs](cloudwatch-examples-subscriptions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for JavaScript SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

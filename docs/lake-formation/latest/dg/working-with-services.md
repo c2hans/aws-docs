@@ -50,7 +50,3 @@ The following tables lists the types of Lake Formation permissions supported by 
 + [Using AWS Lake Formation with Amazon EMR](emr-integ-lf.md)
 + [Using AWS Lake Formation with Quick](qs-integ-lf.md)
 + [Using AWS Lake Formation with AWS CloudTrail Lake](cloudtrail-lake-integ-lf.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

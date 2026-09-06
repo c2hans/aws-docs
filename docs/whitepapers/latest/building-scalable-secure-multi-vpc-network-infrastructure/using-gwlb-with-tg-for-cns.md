@@ -36,7 +36,3 @@ For more information on centralized security inspection with Gateway Load Balanc
 |  Complexity  | AWS managed service. AWS handles the scalability and availability of the service. | AWS managed service. AWS will handle the scalability and availability of the the Gateway Load Balancer service. The customer is responsible for managing the scaling and availability of the virtual appliances behind Gateway Load Balancer. |
 |  Scale  | AWS Network Firewall endpoints are powered by AWS PrivateLink. Network Firewall supports up to 100 Gbps of network traffic per firewall endpoint. | Gateway Load Balancer endpoints support maximum bandwidth of up to 100 Gbps per endpoint  |
 |  Cost  | AWS Network Firewall endpoint cost \+ Data processing charges  | Gateway Load Balancer \+ Gateway Load Balancer endpoints \+ virtual appliances \+ data processing charges  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

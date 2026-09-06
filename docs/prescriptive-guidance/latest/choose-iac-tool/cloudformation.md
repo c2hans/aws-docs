@@ -24,7 +24,3 @@ CloudFormation templates are written by using JSON or YAML. A CloudFormation *st
 + If you are not familiar with JSON or YAML syntax, it may take some getting used to. JSON was not designed to be human readable, and it does not allow you to make inline comments. YAML allows you to make comments and is easier to read. However, its syntax is based on tabs and spaces, so it can be easy to make indentation mistakes.
 + CloudFormation does not support multi-cloud deployments.
 + You must use a higher-level implementation, such as the AWS Cloud Development Kit (AWS CDK), to create reusable constructs and other modularized code.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,6 +11,7 @@ EC2 Image Builder provides a number of security features to consider as you deve
 + Do not make images public that have private or sensitive data.
 + Apply all available Windows or Linux security patches during image builds.
 + Periodically apply managed AMI updates to your macOS recipes and create new images to launch instances that have the latest security patches.
++ When you import a Windows ISO disk image, obtain the ISO from Microsoft or an authorized reseller. Also, grant the instance profile role only the permissions that the import requires. For more information, see [Security considerations for ISO disk image import](import-iso-disk.md#iso-import-security).
 
 We strongly recommend that you test your images to validate the security posture and applicable security compliance levels. Solutions such as [Amazon Inspector](https://aws.amazon.com/inspector/) can help validate the security and compliance posture of images.
 
@@ -692,7 +693,3 @@ The files that you create to skip a section of the clean up script should not in
 | `INSTANCE_LOG_FILES` | `/var/log/amazon/ec2/ec2-macos-init.log`<br />`/var/log/amazon/ec2/ena-ethernet.log`<br />`/var/log/amazon/ec2/system-monitoring.log` | `skip_cleanup_instance_log_files` |
 | `TOE_FILES` | `{{workingDirectory}}/TOE_*` | `skip_cleanup_toe_files` |
 | `SSM_LOG_FILES` | `/var/log/amazon/ssm/*` | `skip_cleanup_ssm_log_files` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

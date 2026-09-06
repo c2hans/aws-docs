@@ -29,7 +29,3 @@ Connect Customer uses the forecasts and planning scenarios as inputs for creatin
 ![The Capacity Plans table showing the Plan Type and Status columns, with Status set to In Progress.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wfm-capacity-planning-in-progress.png)
 
    It usually takes between 5-10 minutes for the plan to be generated. If the plan generation fails, check the forecasts for the selected forecast group, and then generate the capacity plan again. For Hiring plans, try publishing the selected long-term forecasts. For Scheduling plans, confirm that a short-term forecast is published and that it covers the plan date range.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

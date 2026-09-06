@@ -17,7 +17,3 @@ Understanding these restrictions helps you ensure that your edge functions opera
 + [Restrictions on Lambda@Edge](lambda-at-edge-function-restrictions.md)
 
 For information about quotas (formerly referred to as limits), see [Quotas on CloudFront Functions](cloudfront-limits.md#limits-functions) and [Quotas on Lambda@Edge](cloudfront-limits.md#limits-lambda-at-edge).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

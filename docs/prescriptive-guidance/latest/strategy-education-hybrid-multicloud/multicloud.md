@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 + **Are you able to minimize TCO and maximize pricing discounts when you deploy applications across cloud providers?**
 
   It is important to account for the total cost of ownership (TCO) when considering multicloud. Running your applications across multiple cloud providers can increase operational costs and administrative overhead to maintain and manage resources in each environment. Furthermore, spreading usage across multiple providers makes it more difficult to take advantage of a specific provider's volume pricing discounts or enterprise agreements. Take these factors into account when you determine whether the benefits of multicloud warrant the increased TCO.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

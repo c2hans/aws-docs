@@ -43,7 +43,3 @@ The following table presents a number of business use cases that are best solved
 | **Optimize waypoints for a route with access hour awareness**<br />Supports travel modes, such as truck, pedestrian, car, and scooter. | `OptimizeWaypoint` |  |
 | **Match GPS traces to road network **Supports travel modes, such as truck, pedestrian, car, and scooter. | Snap to road | [How to match GPS traces to a road network](how-to-match-gps-traces.md) |
 | **Visualize matched GPS traces on a map **Supports travel modes, such as truck, pedestrian, car, and scooter. | `GetStyleDescriptor` with rendering engine (MapLibre) with Snap to road |  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

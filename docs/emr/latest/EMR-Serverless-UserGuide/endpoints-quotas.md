@@ -38,7 +38,7 @@ To connect programmatically to an AWS service, you use an *endpoint*. An endpoin
 | Europe (Frankfurt) | eu-central-1 | `emr-serverless.eu-central-1.amazonaws.com` | HTTPS |
 | Europe (Zurich) | eu-central-2 | `emr-serverless.eu-central-2.amazonaws.com` | HTTPS |
 | Europe (Ireland) | eu-west-1 | `emr-serverless.eu-west-1.amazonaws.com` | HTTPS |
-| Europe (London) | eu-west-2 | `emr-serverless.eu-west-2.amazonaws.com` | HTTPS |
+| Europe (London) | eu-west-2 (limited to the following Availability Zones: euw2-az1, euw2-az2, and euw2-az3) | `emr-serverless.eu-west-2.amazonaws.com` | HTTPS |
 | Europe (Milan) | eu-south-1 | `emr-serverless.eu-south-1.amazonaws.com` | HTTPS |
 | Europe (Paris) | eu-west-3 | `emr-serverless.eu-west-3.amazonaws.com` | HTTPS |
 | Europe (Spain) | eu-south-2 | `emr-serverless.eu-south-2.amazonaws.com` | HTTPS |
@@ -101,7 +101,3 @@ The following describes the API limits per Region for your AWS account.
 | [GetJobRun](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_GetJobRun.html) | 10 transactions per second. Burst of 50 transactions per second. |
 | [StartApplication](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StartApplication.html) | 1 transaction per second. Burst of 25 transactions per second. |
 | [StopApplication](https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StopApplication.html) | 1 transaction per second. Burst of 25 transactions per second. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

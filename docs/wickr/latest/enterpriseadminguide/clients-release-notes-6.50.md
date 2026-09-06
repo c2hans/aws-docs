@@ -112,7 +112,3 @@ Performance and stability improvement.
 | Desktop version 6.50.12 > Desktop version 6.50.14 | Bug fix | February 25, 2025 |
 | iOS version 6.50.21 > iOS version 6.50.23 | Performance and stability improvement | February 21, 2025 |
 | Initial release | Initial release of February release notes | February 18, 2025 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

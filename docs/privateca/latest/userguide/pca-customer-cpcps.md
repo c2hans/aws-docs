@@ -40,7 +40,3 @@ This document presents a framework that aligns to [RFC 3647](https://datatracker
 | 7. Certificate, CRL, and OCSP Profiles (All) | Shared | You are responsible for documenting profile requirements and certificate input that meet the needs of your PKI environment.<br />AWS Private CA provides you with profile templates to help meet your profile requirements. |
 | 8. Compliance Audit and Other Assessment (All) | Shared | You are responsible for documenting compliance audit and other assessments.<br />AWS Private CA provides you with a SOC 2 Report to help you and your auditors understand the AWS controls established to support operations and compliance. |
 | 9. Other Business and Legal Matters | You | You are responsible for documenting general business and legal matters that cover your Private CA. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

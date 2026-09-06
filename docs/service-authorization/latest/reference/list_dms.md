@@ -1549,7 +1549,3 @@ AWS Database Migration Service defines the following condition keys that can be 
 |   [dms:req-tag/${TagKey}](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdatabasemigrationservice.html#awsdatabasemigrationservice-dms_req-tag___TagKey_)  | Filters access by the presence of tag key-value pairs in the given request | String |
 |   [dms:subgrp-tag/${TagKey}](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdatabasemigrationservice.html#awsdatabasemigrationservice-dms_subgrp-tag___TagKey_)  | Filters access by the presence of tag key-value pairs in the request for ReplicationSubnetGroup | String |
 |   [dms:task-tag/${TagKey}](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdatabasemigrationservice.html#awsdatabasemigrationservice-dms_task-tag___TagKey_)  | Filters access by the presence of tag key-value pairs in the request for ReplicationTask | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/sett
 + All users can view any exception or recommendation page, regardless of whether it was generated for a product or site included in their access control.
 + To perform mutate actions (such as dismissing an exception or changing status from In Progress to Complete), users must have the appropriate product OR site configured in their access control.
 + Users with configured access control can also use User Assignment and the Access View Toggle.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,7 +38,3 @@ One-way authentication requires a signed, trusted SSL certificate for verifying 
 1. Choose one:
    + To validate the certificate, set the SSLMode property to verify-ca.
    + To validate the certificate and verify the host name in the certificate, set the SSLMode property to verify-full.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

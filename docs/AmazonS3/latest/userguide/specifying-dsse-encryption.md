@@ -135,7 +135,3 @@ You can encrypt an unencrypted object to use DSSE-KMS by copying the object back
 ```
 aws s3api copy-object --bucket {{amzn-s3-demo-bucket}} --key {{example-object-key}} --copy-source {{amzn-s3-demo-bucket}}/{{example-object-key}} --server-side-encryption aws:kms:dsse --ssekms-key-id {{example-key-id}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

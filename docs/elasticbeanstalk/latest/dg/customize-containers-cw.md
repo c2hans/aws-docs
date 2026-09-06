@@ -93,7 +93,3 @@ For more information about managing policies, see [Working with Policies](http:/
 After deploying the CloudWatch configuration file to your environment, check the [Amazon CloudWatch console](https://console.aws.amazon.com/cloudwatch/home) to view your metrics. Custom metrics will be located in the **CWAgent** namespace.
 
 For more information, see [Viewing available metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/viewing_metrics_with_cloudwatch.html) in the *Amazon CloudWatch User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

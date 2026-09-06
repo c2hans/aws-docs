@@ -82,7 +82,3 @@ For information describing how to create a new ONTAP user, see [Creating ONTAP u
 + [Configuring public key authentication](public-key-auth.md)
 + [Updating password requirements for file system and SVM roles](update-password-requirements.md)
 + [Updating the `fsxadmin` account password fails](updating-admin-password.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

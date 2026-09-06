@@ -159,7 +159,3 @@ If you don't specify a preferred maintenance window when you create or modify a 
 |  us-east-2 |  US East (Ohio) Region  |  23:00–07:00 UTC  |
 |  us-west-1  |  US West (N. California) Region  |  06:00–14:00 UTC  |
 |  us-west-2  |  US West (Oregon) Region  |  06:00–14:00 UTC  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

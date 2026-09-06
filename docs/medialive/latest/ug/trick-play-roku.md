@@ -60,7 +60,3 @@ To create a frame capture encode in a MediaPackage output group, you create a re
 1. Choose **Audio 1** and choose **Remove audio** so that the container has only one encode (a video encode).
 
 The output is part of the ABR stack and has the same destination as the other encodes in the HLS or MediaPackage output group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

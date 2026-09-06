@@ -193,7 +193,3 @@ print(response)
   print(response.output_text)
   ```
 + **Default parameters** — Grok 4.3 uses defaults that differ from the standard OpenAI API specification: `temperature` defaults to `0.7` (not `1`), `top_p` defaults to `0.95` (not `1`), and `max_completion_tokens` defaults to `131072`. Adjust these values explicitly if your application requires different behavior.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

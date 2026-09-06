@@ -351,7 +351,3 @@ The following table lists the availability of the updated retry behavior in each
 | [SDK for Go V2 (1.x)](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/) | See tracking issue | [Tracking issue](https://github.com/aws/aws-sdk-go-v2/issues/3416) |
 | [SDK for C\+\+](https://docs.aws.amazon.com/sdk-for-cpp/latest/developer-guide/) | See tracking issue | [Tracking issue](https://github.com/aws/aws-sdk-cpp/issues/3832) |
 | [AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/) | See tracking issue | [Tracking issue](https://github.com/aws/aws-cli/discussions/10329) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdkref` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

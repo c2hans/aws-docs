@@ -26,7 +26,3 @@ This guide helps you create a customized roadmap for your journey, from identify
 This guide is for IT and business executives, program and project managers, architects, product owners, and decision makers in OT, such as heads of operations, plant managers, operations managers.
 
 Whether you are at the beginning or in the middle of your IIoT digital transformation journey, you can use the phased approach described in this guide to either build a customized plan for your journey or identify any gaps in your current plan.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

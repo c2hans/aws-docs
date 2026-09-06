@@ -106,7 +106,3 @@ The following table summarizes recommended approaches for common access point is
 | Block a role in the same account from mounting the file system | Remove network access to port 2049, deny in file system policy, and do not grant in IAM. |
 | Multiple workloads on the same file system, each scoped to their own access point | Maintain one allow \+ deny pair per role in the file system policy, each scoped to a different access point ARN. |
 | Cross-account access through an access point | Use the file system policy to grant the cross-account role on the specific access point ARN. Do not rely on identity policies alone. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

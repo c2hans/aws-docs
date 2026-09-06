@@ -118,6 +118,7 @@ The following data types are supported:
 +  [EnrichmentJobConfiguration](API_EnrichmentJobConfiguration.md)
 +  [EnrichmentJobSummary](API_EnrichmentJobSummary.md)
 +  [EnrichmentTrimSettings](API_EnrichmentTrimSettings.md)
++  [EphemeralStorageConfiguration](API_EphemeralStorageConfiguration.md)
 +  [ErrorDetails](API_ErrorDetails.md)
 +  [ErrorReportLocation](API_ErrorReportLocation.md)
 +  [EventDetection](API_EventDetection.md)
@@ -165,6 +166,9 @@ The following data types are supported:
 +  [MetricProcessingConfig](API_MetricProcessingConfig.md)
 +  [MetricWindow](API_MetricWindow.md)
 +  [MonitorErrorDetails](API_MonitorErrorDetails.md)
++  [Mount](API_Mount.md)
++  [MountOverrides](API_MountOverrides.md)
++  [MountSource](API_MountSource.md)
 +  [Mp4](API_Mp4.md)
 +  [MultiLayerStorage](API_MultiLayerStorage.md)
 +  [Parquet](API_Parquet.md)
@@ -196,6 +200,7 @@ The following data types are supported:
 +  [ResponseStream](API_ResponseStream.md)
 +  [RetentionPeriod](API_RetentionPeriod.md)
 +  [Row](API_Row.md)
++  [S3AccessPointSource](API_S3AccessPointSource.md)
 +  [SearchFilters](API_SearchFilters.md)
 +  [SearchResult](API_SearchResult.md)
 +  [SearchSummary](API_SearchSummary.md)
@@ -224,7 +229,3 @@ The following data types are supported:
 +  [WorkspaceErrorDetails](API_WorkspaceErrorDetails.md)
 +  [WorkspaceStatus](API_WorkspaceStatus.md)
 +  [WorkspaceSummary](API_WorkspaceSummary.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

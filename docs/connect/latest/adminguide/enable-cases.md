@@ -70,7 +70,3 @@ Make sure that you have the `cases:CreateRelatedItem ` permission for your IAM e
 1. Optionally, set up a [AI agents domain](ai-agent-initial-setup.md) and [Configure your flow](ai-agent-initial-setup.md#enable-ai-agents-step4) to generate AI-powered Case Summaries in the agent workspace
 
 1. Optionally, [set up tag-based access controls for cases](cases-tag-based-access-control.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

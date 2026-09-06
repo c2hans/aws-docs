@@ -33,7 +33,3 @@ Maintainability refers to operating and monitoring an application to ensure that
 To understand the current and historical state of your system, you must make it *observable*. You can do this by providing specific metrics, logs, and traces that operators can use to ensure that the system works as expected and to track bugs. These mechanisms should also allow operators to conduct root cause analysis without having to log in to the machine and read the code.
 
 A hexagonal architecture aims to increase the maintainability of your web applications so that your code requires less work overall. By separating modules, localizing changes, and decoupling application business logic from adapter implementation, you can produce metrics and logs that help operators gain a deep understanding of the system and understand the scope of specific changes made to the primary or secondary adapters.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

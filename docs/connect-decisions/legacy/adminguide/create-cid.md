@@ -32,7 +32,3 @@ This can be used if your organization has an established IdC instance that you w
 1. Do one of the following:
    + **To create an instance using standard configuration** – Select **Create**. See [Use standard configuration](create-instance-standard.md).
    + **To create an instance using a custom configuration** – Select **Edit in advanced setup**. See [Use advanced configuration](create-instance-advanced.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

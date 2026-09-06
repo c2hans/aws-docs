@@ -98,7 +98,7 @@ Type: FSimpleDelegate
 Required: No
 
 **onHealthCheck**
-Name of callback function that the Amazon GameLift Servers service invokes to request a health status report from the server process. Amazon GameLift Servers calls this function every 60 seconds. After calling this function Amazon GameLift Servers waits 60 seconds for a response, and if none is received. records the server process as unhealthy.
+Name of callback function that the Amazon GameLift Servers service invokes to request a health status report from the server process. Amazon GameLift Servers calls this function every 60 seconds. After calling this function Amazon GameLift Servers waits 60 seconds for a response, and if none is received, records the server process as unhealthy.
 Type: FOnHealthCheck
 Required: No
 
@@ -157,7 +157,3 @@ Required: Yes
 Unique identifier of the backfill request ticket to be canceled.
 Type: FString
 Required: Yes
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

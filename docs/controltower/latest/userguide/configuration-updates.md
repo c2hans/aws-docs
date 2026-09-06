@@ -47,7 +47,3 @@ You have the opportunity to clear unused AWS Identity Center (formerly called AW
 
 **Prerequisite for Update and Reset – turn off Requester Pays**
 Before you update or reset your landing zone, be sure that the Amazon S3 logging bucket for the Log Archive account does not have the **Requester Pays** feature enabled. You must turn off that feature before you begin the **Update** or **Reset** process. When AWS Control Tower sets up your logging bucket, this feature is not enabled. Therefore, only the customers who have subsequently activated the Requester Pays feature must turn it off. For more information, see [Amazon S3 bucket policy for CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/create-s3-bucket-policy-for-cloudtrail.html) and [Using Requester Pays buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,7 +75,3 @@ Amazon MSK has deep AWS service integrations with Amazon EMR, AWS Lambda, Amazon
 Amazon MSK has the following anti-patterns:
 + **Ad hoc queries** — MSK is a stream of unbounded data. It is not used for ad hoc queries.
 + **Long-term data storage and analytics** — MSK is not suited for long-term data storage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ Suppose you submit a job that requires a large number of nodes, more than can be
 If a job needs a large amount of capacity, or must start at a specific time, on-demand capacity might not be available when you submit it. To reserve capacity in advance so it's available when your job runs, you can use On-Demand Capacity Reservations (ODCRs) or Amazon EC2 Capacity Blocks for ML.
 
 Configure your compute node group to use the reservation, then submit jobs to a queue associated with that node group. Reserved capacity is billed according to your ODCR or Capacity Block whether or not a job is running against it. For more information, see [Using ODCRs with AWS PCS](https://docs.aws.amazon.com/pcs/latest/userguide/capacity-reservations-odcr.html) and [Using Amazon EC2 Capacity Blocks for ML with AWS PCS](https://docs.aws.amazon.com/pcs/latest/userguide/capacity-blocks.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

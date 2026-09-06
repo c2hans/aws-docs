@@ -153,7 +153,3 @@ Consider the following questions when examining the workload:
 1. Are there any changes in blocked transactions or increases in deadlocks? Examine Performance Insights DB metrics for any changes in status variables in the `Locks` section, such as `innodb_row_lock_time`, ` innodb_row_lock_waits`, and ` innodb_dead_locks`. Use 1-minute or 5-minute intervals.
 
 1. Are there increased wait events? Examine Performance Insights wait events and wait types using 1-minute or 5-minute intervals. Analyze the top wait events and see whether they are correlated to workload changes or database contention. For example, `buf_pool mutex` indicates buffer pool contention. For more information, see [Tuning Aurora MySQL with wait events](AuroraMySQL.Managing.Tuning.wait-events.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

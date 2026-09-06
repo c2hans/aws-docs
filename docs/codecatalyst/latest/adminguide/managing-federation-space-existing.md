@@ -23,7 +23,3 @@ After a space is updated to SSO and associated with an Identity Center applicati
 1. On the **SSO not enabled** message, choose **Set up in AWS**. The wizard page opens for creating a space. To complete the wizard, see the steps in [Creating a space for identity federation](setting-up-federation-space-create.md).
 
    To view information in IAM Identity Center, choose **IAM Identity Center**. You will be taken to IAM Identity Center, where you can work with your Identity federation administrator to configure SSO users and groups for your instance in IAM Identity Center.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

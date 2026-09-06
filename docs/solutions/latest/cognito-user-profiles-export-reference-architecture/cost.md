@@ -16,7 +16,3 @@ You are responsible for the cost of the AWS services used while running this gui
 | AWS Lambda | $1.00 |
 
  **IMPORTANT:** When the `ImportWorkflow` Step Functions workflow is run, it will create new users with the same profiles and group memberships in a new, empty user pool that you create. These new users will be treated by Cognito as additional monthly active users (MAU) when they are initially created by the guidance. Therefore, your Cognito cost could rise significantly during any month in which you run the `ImportWorkflow` Step Functions workflow. Refer to [Cognito’s Pricing Page](https://aws.amazon.com/cognito/pricing/) for more details on how Cognito MAUs are priced.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for User Profiles Export with Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

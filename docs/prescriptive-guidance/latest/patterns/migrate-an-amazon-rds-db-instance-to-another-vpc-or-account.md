@@ -108,7 +108,3 @@ The steps consist of the following. See the [Epics](#migrate-an-amazon-rds-db-in
 + [How do I transfer ownership of Amazon RDS resources to a different AWS account?](https://aws.amazon.com/premiumsupport/knowledge-center/account-transfer-rds/) (AWS re:Post article)
 + [How do I share manual Amazon RDS DB snapshots or Aurora DB cluster snapshots with another AWS account?](https://aws.amazon.com/premiumsupport/knowledge-center/rds-snapshots-share-account/) (AWS re:Post article)
 + [AWS DMS documentation](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

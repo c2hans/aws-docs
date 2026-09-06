@@ -713,7 +713,3 @@ The bootstrap template is versioned and evolves over time with the AWS CDK itsel
  ** What if I want to fix this finding? ** As long as the resource policies on your AWS KMS keys are not unnecessarily permissive, the current Role policy does not allow the Deploy Role to access any more data than it should. If you still want to get rid of the finding, you can do so by customizing the bootstrap stack (using the process outlined above) in one of these 2 ways:
 + If you are not using AWS CDK Pipelines for cross-account deployments: remove the statement with `Sid: PipelineCrossAccountArtifactsBucket` from the deploy role; or
 + If you are using AWS CDK Pipelines for cross-account deployments: after deploying your AWS CDK Pipeline, look up the AWS KMS Key ARN of the Artifact Bucket and replace the `Resource: *` of the `Sid: PipelineCrossAccountArtifactsBucket` statement with the actual Key ARN.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

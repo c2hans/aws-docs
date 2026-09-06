@@ -15,7 +15,3 @@ Now you perform pre-migration and migration tasks and adhere to a schedule based
 | Install replication agent | Wave 1 | Build | Jane Doe |
 | Validate launch template | Wave 2 | Validate | Jane Doe |
 | Launch test instances | Wave 3 | Boot-up testing | Jane Doe |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

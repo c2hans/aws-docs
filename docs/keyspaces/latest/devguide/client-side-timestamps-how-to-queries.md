@@ -27,7 +27,3 @@ To see the timestamp value that is stored for a specific column, you can use the
 SELECT year, award, rank, category, book_title, author, publisher, WRITETIME(year), WRITETIME(award), WRITETIME(rank),
   WRITETIME(category), WRITETIME(book_title), WRITETIME(author), WRITETIME(publisher) from catalog.book_awards;
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

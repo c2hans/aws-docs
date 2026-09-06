@@ -77,7 +77,3 @@ For more information, see the following:
 + [Passing parameters to a service API in Step Functions](connect-parameters.md)
 + [Accessing the Context object](input-output-contextobject.md#contextobject-access)
 + [AWS Step Functions](connect-stepfunctions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

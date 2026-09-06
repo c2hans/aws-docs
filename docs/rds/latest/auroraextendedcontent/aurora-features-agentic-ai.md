@@ -24,7 +24,3 @@ With Aurora PostgreSQL, you can store, search, index, and query vector embedding
 <a name="aurora-features-machine-learning"></a>
 
 [Aurora machine learning (Aurora ML)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-ml.html) simplifies adding generative AI model predictions to your Aurora database. Aurora ML exposes ML models as SQL functions, allowing you to use standard SQL to call ML models, pass data to them, and return predictions, text summaries, or sentiment as query results. With Aurora ML, you can make the process of adding new embeddings to your [Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/postgresql-ml.html) database with the pgvector extension real-time via periodic calls to a SageMaker or Amazon Bedrock model, which returns the latest, up-to-date embeddings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

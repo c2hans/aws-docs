@@ -40,7 +40,3 @@ The easiest way to prevent problems with file ingestion is to take the following
   Valid characters are: 0-9, a-z, A-Z, and \# $ . \\ - (hyphen) \_ (underscore)
 + Make sure that the timestamp column is the one furthest to the left in your CSV file.
 + Make sure that you don't have any duplicated column headers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

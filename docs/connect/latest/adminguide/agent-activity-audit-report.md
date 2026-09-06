@@ -99,7 +99,3 @@ To view real-time metrics reports, you need to be assigned to a security profile
 If only **Agent activity audit - Access** is selected, you have access to only agent activity audit report and no other analytics pages or reports. The following image shows the **Analytics and Optimization** section, with only **Agent activity audit - Access** selected.
 
 ![The agent activity audit permission on the security profile permissions page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/permissions-create-and-share-reports-3.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

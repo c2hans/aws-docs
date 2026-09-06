@@ -20,7 +20,3 @@ If a lens is no longer relevant for your workload, you can remove it.
    The AWS Well-Architected Framework Lens cannot be removed from a workload.
 
 The data associated with the lens is retained. If the lens is added back to the workload, the data is restored.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ where:
 + **Step 2: Jenkins build and image creation**. Jenkins is automatically triggered by the Git repository through a webhook or polling. Jenkins builds the application, creates a Docker image, and pushes the built image to a configured Docker registry (such as Amazon ECR or Docker Hub).
 + **Step 3: Spinnaker image monitoring and pipeline trigger**. Spinnaker continuously monitors the Docker registry for new images. When a new image version is detected, Spinnaker automatically triggers a pipeline to start the deployment process.
 + **Step 4: Deployment to target namespaces**. Spinnaker deploys the new Docker image to Amazon EKS. Based on pipeline configurations, the image is deployed to target namespaces in the cluster. Spinnaker ensures that the latest application version is deployed while adhering to defined deployment strategies such as blue/green or canary deployments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

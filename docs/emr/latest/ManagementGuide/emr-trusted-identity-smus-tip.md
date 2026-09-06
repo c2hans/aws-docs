@@ -20,7 +20,3 @@ The resources you create in these tutorials might result in charges to your AWS 
 + [Common setup for Amazon SageMaker Unified Studio with TIP on Amazon EMR on EC2](emr-trusted-identity-smus-tip-common-setup.md)
 + [Full Table Access with Amazon SageMaker Unified Studio and TIP on Amazon EMR on EC2](emr-trusted-identity-smus-fta.md)
 + [Fine-Grained Access Control with Amazon SageMaker Unified Studio and TIP on Amazon EMR on EC2](emr-trusted-identity-smus-fgac.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

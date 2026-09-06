@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reliability-pilla
 + [Design your workload service architecture](design-your-workload-service-architecture.md)
 + [Design interactions in a distributed system to prevent failures](design-interactions-in-a-distributed-system-to-prevent-failures.md)
 + [Design interactions in a distributed system to mitigate or withstand failures](design-interactions-in-a-distributed-system-to-mitigate-or-withstand-failures.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

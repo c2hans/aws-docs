@@ -98,7 +98,3 @@ To access a resource, you must first submit a request for change (RFC) for that 
 Once you've been granted access, you can update the request as needed.
 
 For examples of how to request access, see [Stack Admin Access \| Grant](https://docs.aws.amazon.com/managedservices/latest/ctref/management-access-stack-admin-access-grant.html) or [Stack Read-only Access \| Grant](https://docs.aws.amazon.com/managedservices/latest/ctref/management-access-stack-read-only-access-grant.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

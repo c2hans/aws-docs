@@ -47,7 +47,3 @@ The AWS Regions in the following table apply to WorkSpaces Instances.
 | --- | --- | --- | --- |
 | WorkSpaces Core Managed Instances | 1000 | The maximum number of WorkSpaces Managed Instances in this account in the current Region. | Yes |
 | Concurrent WorkSpaces Managed Instances in allocating state | 700 | The maximum number of concurrent WorkSpaces Managed Instances in allocating state in this account in the current Region. | No |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

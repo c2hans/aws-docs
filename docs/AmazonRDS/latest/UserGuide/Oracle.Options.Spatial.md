@@ -10,7 +10,7 @@ Amazon RDS supports Oracle Spatial through the use of the `SPATIAL` option. Orac
 ## How Supplemental Patch Bundles (SPBs) work
 <a name="Oracle.Options.Spatial.SPBs"></a>
 
-Every quarter, RDS for Oracle releases new minor engine versions for every supported major engine. A Release Update (RU) engine version incorporates bug fixes from Oracle by including the RU patches for the specified quarter. A Supplemental Patch Bundle (SPB) engine version contains all of the RU patches plus additional supplemental patches. If your DB instance uses Oracle Spatial and you require additional patches related to the Spatial option, use the SPB release. For example, 19.0.0.0.ru-2026-04.spb-1.r1 is a minor engine version that contains the RU patches in engine version 19.0.0.0.ru-2026-04.rur-2026-04.r1 plus supplemental patches. SPBs are supported only for Oracle Database 19c.
+Every quarter, RDS for Oracle releases new minor engine versions for every supported major engine. A Release Update (RU) engine version incorporates bug fixes from Oracle by including the RU patches for the specified quarter. A Supplemental Patch Bundle (SPB) engine version contains all of the RU patches plus additional supplemental patches. If your DB instance uses Oracle Spatial and you require additional patches related to the Spatial option, use the SPB release. For example, 19.0.0.0.ru-2026-04.spb-1.r1 is a minor engine version that contains the RU patches in engine version 19.0.0.0.ru-2026-04.rur-2026-04.r1 plus supplemental patches. SPBs are supported for Oracle Database 19c and Oracle Database 26ai.
 
 **Note**
 Spatial Patch Bundle has been renamed to Supplemental Patch Bundle (SPB). SPBs now include additional bundle patches beyond Oracle Spatial such as Data Pump and GoldenGate. The abbreviation "SPB" remains unchanged. All existing SPB engine versions continue to work as before.
@@ -105,7 +105,3 @@ If the instance uses data types that were enabled as part of the option, and if 
 1. Do one of the following:
    + Remove the `SPATIAL` option from the option group it belongs to. This change affects all DB instances that use the option group. For more information, see [Removing an option from an option group](USER_WorkingWithOptionGroups.md#USER_WorkingWithOptionGroups.RemoveOption).
    + Modify the DB instance and specify a different option group that doesn't include the `SPATIAL` option. This change affects a single DB instance. You can specify the default (empty) option group, or a different custom option group. For more information, see [Modifying an Amazon RDS DB instance](Overview.DBInstance.Modifying.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -1617,7 +1617,3 @@ The following services and resource types support enforcement with tag policies:
 \*For iam:role and iam:user, required tag keys in reporting mode currently only applies to resources deployed through CloudFormation, Terraform, and Pulumi. After you enable reporting mode, if you deploy these two resource types through infrastructure as code (IaC) without the required tags, a warning appears. For more information, see [Enforcing required tag keys with infrastructure as code](enforce-required-tag-keys-iac.md). However, these findings do not appear in the organization-wide compliance report.
 + See [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/guides/tag-policy-compliance) for resource type support in Terraform AWS Provider.
 + See [Pulumi documentation](https://www.pulumi.com/docs/insights/policy/integrations/aws-organizations-tag-policies/#aws-provider-types) for resource type support in Pulumi Cloud.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

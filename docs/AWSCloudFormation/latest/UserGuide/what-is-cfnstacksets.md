@@ -30,7 +30,3 @@ This section helps you get started using StackSets, and answers common questions
 + [Best practices for using CloudFormation StackSets](stacksets-bestpractices.md)
 + [CloudFormation StackSets sample templates](stacksets-sampletemplates.md)
 + [Troubleshooting CloudFormation StackSets](stacksets-troubleshooting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

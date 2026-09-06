@@ -139,7 +139,3 @@ Quick partner setup streams to Sumo Logic use the following defaults:
 + **Firehose stream content encoding** GZIP
 + **Firehose stream buffering options** Interval of 60 seconds, size of 1 MB
 + **Firehose stream retry option** Duration of 60 seconds
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

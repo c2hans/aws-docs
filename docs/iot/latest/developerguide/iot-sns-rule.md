@@ -373,7 +373,3 @@ After you send a few text messages with this rule, try experimenting with it to 
 + Change the test in the rule query statement to test for a minimum temperature instead of a maximum temperature. Remember to change the name of `max_temperature`\!
 + Add a republish rule action to send an MQTT message when an SNS notification is sent.
 + Try the next tutorial in this series and learn how to [Tutorial: Storing device data in a DynamoDB table](iot-ddb-rule.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

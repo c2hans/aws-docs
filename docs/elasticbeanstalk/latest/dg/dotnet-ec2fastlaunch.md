@@ -31,7 +31,3 @@ Follow these steps to enable EC2 Fast Launch on a Windows base AMI used by your 
 1. Enable EC2 Fast Launch on the AMI:
 
    Use the instructions in [Enable EC2 Fast Launch](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/win-fast-launch-configure.html) in the *Amazon EC2 User Guide* to configure EC2 Fast Launch for your AMI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

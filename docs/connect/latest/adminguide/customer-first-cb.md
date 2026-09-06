@@ -233,7 +233,3 @@ The following image shows a sample callback creation flow. The [Set customer que
 In the outbound dial flow shown in the following image, Connect Customer evaluates the presence of the customer by using a [Check call progress](check-call-progress.md) block. If voicemail is detected, a callback contact is recreated. If a customer is detected on other end of the call, the call is transferred to queue for the agent to be joined to the customer.
 
 ![An outbound dial flow with a Check call progress block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-first-callback-contact-lifecycle-sample-flows-outbound-1.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

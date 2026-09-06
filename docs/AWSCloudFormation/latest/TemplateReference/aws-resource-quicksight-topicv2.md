@@ -82,7 +82,7 @@ The relations between the data sets that the topic is associated with.
 *Required*: No
 *Type*: Array of [DataSetRelation](aws-properties-quicksight-topicv2-datasetrelation.md)
 *Minimum*: `0`
-*Maximum*: `20`
+*Maximum*: `32`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DataSets`  <a name="cfn-quicksight-topicv2-datasets"></a>
@@ -90,7 +90,7 @@ The data sets that the topic is associated with.
 *Required*: No
 *Type*: Array of [DataSetReference](aws-properties-quicksight-topicv2-datasetreference.md)
 *Minimum*: `1`
-*Maximum*: `20`
+*Maximum*: `32`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Description`  <a name="cfn-quicksight-topicv2-description"></a>
@@ -156,7 +156,3 @@ The ID of the topic. This ID is unique per AWS Region for each AWS account.
 
 `Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the topic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

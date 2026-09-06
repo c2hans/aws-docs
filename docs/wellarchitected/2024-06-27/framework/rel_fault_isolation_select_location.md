@@ -118,7 +118,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 +  [Netflix: Active-Active for Multi-Regional Resilience](https://netflixtechblog.com/active-active-for-multi-regional-resiliency-c47719f6685b)
 +  [How we build Data Residency for Atlassian Cloud](https://www.atlassian.com/engineering/how-we-build-data-residency-for-atlassian-cloud)
 +  [Intuit TurboTax runs across two Regions](https://www.youtube.com/watch?v=286XyWx5xdQ)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -133,7 +133,3 @@ To use custom logic to send SMS or email messages for your user pool, set up cus
    ```
 
 1. Generate an [UpdateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPool.html) API request with a `LambdaConfig` parameter that adds custom sender Lambda triggers. You can't add triggers of this type in the Amazon Cognito console. Custom sender triggers require `LambdaConfig` parameters of `KMSKeyID` and `CustomSMSSender` or `CustomEmailSender` (or both).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

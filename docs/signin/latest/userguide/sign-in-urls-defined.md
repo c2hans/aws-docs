@@ -84,7 +84,3 @@ For more information about federated identities, see [About web identity federat
 <a name="builder-id-url"></a>
 
 The URL for your AWS Builder ID profile is [https://profile.aws.amazon.com/](https://profile.aws.amazon.com/). When using your AWS Builder ID, the sign-in URL depends on what service you want to access. For example, to sign in to Amazon CodeCatalyst, go to [https://codecatalyst.aws/login](https://codecatalyst.aws/login).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

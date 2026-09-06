@@ -16,7 +16,3 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 | [Third publication](#document-revisions) | Updated and expanded capabilities. Added transformation domains and journey phases. | November 22, 2021 |
 | [Second publication](#document-revisions) | Structural changes to perspectives and capabilities. | February 1, 2017 |
 | [Initial publication](#document-revisions) | Whitepaper first published. | February 1, 2015 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

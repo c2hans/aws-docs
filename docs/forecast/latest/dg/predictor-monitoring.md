@@ -57,7 +57,3 @@ Consider the following restrictions and best practices when working with predict
 + The [StopResource](API_StopResource.md) operation will stop all current evaluations and all future evaluations.
 + The avgWQL metric is available only when you generate forecasts for quantiles other than the mean.
 + In-progress monitor evaluations are not shown in the [ListMonitorEvaluations](API_ListMonitorEvaluations.md) operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Forecast. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query forecast` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

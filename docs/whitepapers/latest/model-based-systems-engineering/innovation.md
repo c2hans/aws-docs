@@ -125,7 +125,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
  An SSP is typically built by your central IT team, or through **Cloud Center of Excellence (CCOE)** team or cloud infrastructure team. The SSP is composed of multiple AWS or open source products.
 
  It typically supports multiple targets for running applications (e.g. Amazon EC2, containers, serverless), CI/CD pipelines, capturing logs/metrics, and security enforcement. The SSP packages these tools into a cohesive whole and makes them available to development teams via a simplified interface(typically a command line interface, graphical user interface or manifest file).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

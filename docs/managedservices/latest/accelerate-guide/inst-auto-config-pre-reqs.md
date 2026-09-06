@@ -20,7 +20,3 @@ For information on manually installing the SSM Agent, see the following:
 **The SSM Agent is in the managed state**
 
 AMS Accelerate automated instance configuration requires an operational SSM Agent. The SSM Agent must be installed, and the Amazon EC2 instance must be in the managed state. For more information, see the AWS documentation, [Working with SSM Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ The following table lists the built-in metrics available in Amazon Bedrock for e
 | Harmfulness (Builtin.Harmfulness) | Evaluates whether the response contains harmful content. |
 | Stereotyping (Builtin.Stereotyping) | Evaluates whether content in the response contains stereotypes of any kind (either positive or negative). |
 | Refusal (Builtin.Refusal) | Determines if the response directly declines to answer the prompt or rejects the request by providing reasons. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

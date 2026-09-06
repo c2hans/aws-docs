@@ -64,7 +64,3 @@ The following table lists the possible causes of the error or failure as indicat
 | Error | AWS Transit Gateway attachment failure | Failed to create the firewall attachment on the transit gateway. | Check the transit gateway configuration and ensure that it can accept new attachments. Verify your permissions and try again. |
 | Failed | VPC deleted | The firewall or VPC endpoint association use a VPC that's been deleted. | Delete the VPC endpoint associations or firewall that are using the VPC. Then as needed, create a new firewall and VPC endpoint associations using an existing VPC. For information, see [Managing a firewall and firewall endpoints in AWS Network Firewall](firewall-managing.md). |
 | Failed | Firewall provisioning failure | The firewall failed to provision because an internal operation did not complete. | Delete the firewall and create a new one. See [Deleting a firewall in AWS Network Firewall](deleting-firewall.md). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

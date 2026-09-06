@@ -18,7 +18,3 @@ If you purchase a device from an AWS reseller, you must claim the device.
    The device now appears in the list of devices.
 
 1. Find the card for the Link input device. If there are many Link input devices, enter part of the name to filter the list.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -228,7 +228,3 @@ The encryption methods used by each actual AWS service that integrates with AWS 
    Some AWS services might cache the plaintext data key to use for multiple objects, or to reuse while the resource is in use. For details, see [How unusable KMS keys affect data keys](unusable-kms-keys.md).
 
 To decrypt the encrypted object, the AWS service must send the encrypted data key back to AWS KMS in a [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) request. To decrypt the encrypted data key, AWS KMS must send the encrypted data key back to your external key store proxy with the ID of the external key. If the decrypt request to the external key store proxy fails for any reason, AWS KMS cannot decrypt the encrypted data key, and the AWS service cannot decrypt the encrypted object.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,7 @@ SHOW SCHEMAS FROM DATABASE database_name [LIKE 'filter_pattern'] [LIMIT row_limi
 
  *database\_name*
 The name of the database that contains the tables to list.
-To show tables in an AWS Glue Data Catalog, specify (`awsdatacatalog`) as the database name, and ensure the system configuration `data_catalog_auto_mount` is set to `true`. For more information, see [ALTER SYSTEM](r_ALTER_SYSTEM.md).
+To show tables in an AWS Glue Data Catalog, specify (`awsdatacatalog`) as the database name, and make sure the system configuration `data_catalog_auto_mount` is set to `true`. For more information, see [ALTER SYSTEM](r_ALTER_SYSTEM.md).
 
  *filter\_pattern*
 A valid UTF-8 character expression with a pattern to match schema names. The LIKE option performs a case-sensitive match that supports the following pattern-matching metacharacters:
@@ -73,7 +73,3 @@ SHOW SCHEMAS FROM DATABASE awsdatacatalog LIMIT 5;
  awsdatacatalog | all_shapes_10mb      |              | EXTERNAL    |            |                 |
  awsdatacatalog | all_shapes_1g        |              | EXTERNAL    |            |                 |
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

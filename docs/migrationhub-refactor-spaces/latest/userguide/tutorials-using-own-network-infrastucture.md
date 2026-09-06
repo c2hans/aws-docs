@@ -16,7 +16,3 @@ For the VPC peering scenario, traffic that targets services with private URL end
 For both scenarios, we provide sample CIDR ranges and port numbers. You can use the values that apply to your configuration.
 
 To avoid connectivity errors, make sure that your VPC CIDR ranges don’t overlap with the Refactor Spaces application proxy VPC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub Refactor Spaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-refactor-spaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

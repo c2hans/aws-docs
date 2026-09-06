@@ -17,7 +17,3 @@ You can manage StackSets using *self-managed* or *service-managed* permissions.
 + [Prepare to perform StackSet operations in AWS Regions that are disabled by default](stacksets-opt-in-regions.md)
 + [Grant self-managed permissions](stacksets-prereqs-self-managed.md)
 + [Activate trusted access for StackSets with AWS Organizations](stacksets-orgs-activate-trusted-access.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

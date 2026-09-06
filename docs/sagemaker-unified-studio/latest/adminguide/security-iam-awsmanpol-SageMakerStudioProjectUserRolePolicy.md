@@ -32,7 +32,3 @@ To view the permissions for this policy, see [SageMakerStudioProjectUserRolePoli
 
 **Note**
 Amazon SageMaker Unified Studio creates IAM roles for project users to perform data analytics, AI, and ML actions. You can attach the SageMakerStudioProjectUserRolePolicy managed policy as your user role policy or you can create and attach your own user role policy. Using your own policy provides more granular control over permissions but requires knowledge of IAM policy configuration. The IAM policy must include all necessary permissions required for the service to function properly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -74,7 +74,3 @@ The following table describes important updates to the Support Plans managed pol
 | [AWSSupportPlansReadOnlyAccess](#support-plan-read-only-access-managed-policy) - Update to an existing policy<br />[AWSSupportPlansFullAccess](#support-plan-full-access-managed-policy) - Update to an existing policy | Add ListSupportPlanModifiers action to AWSSupportPlansFullAccess and AWSSupportPlansReadOnlyAccess managed policies. | September 9, 2024 |
 | [AWSSupportPlansFullAccess](#support-plan-full-access-managed-policy) - Update to an existing policy | Add CreateSupportPlanSchedule action to AWSSupportPlansFullAccess managed policy.  | May 8, 2023 |
 | Change log published | Change log for the Support Plans managed policies. | September 29, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

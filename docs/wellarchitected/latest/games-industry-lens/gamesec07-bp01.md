@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
  AnyCompany Games creates a tiered incident response system in which minor infractions like inappropriate chat messages result in automatic 24-hour account suspensions, while more severe violations such as cheating or harassment trigger immediate 7-day suspensions with mandatory review by human moderators.
 
  Additionally, AnyCompany Games establishes escalation procedures in which repeat offenders face progressively longer suspensions. They create appeal processes that allow falsely flagged players to contest automated actions while maintaining security through identity verification requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

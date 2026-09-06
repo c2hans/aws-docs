@@ -17,7 +17,3 @@ The following table summarizes the pros and cons of the evacuation patterns desc
 |  Control plane-controlled evacuation  |  Prevents new capacity from being deployed in the impacted Availability Zone <br /> Removes existing capacity from the impacted Availability Zone  |  Relies on each service’s control plane <br /> Requires code to be written for each service <br /> Has to be completed service by service <br /> Needs to be careful not to overwhelm capacity during the update  |
 
  You will likely use both approaches together as part of an Availability Zone evacuation plan. Start with the data plane-controlled evacuation actions that are more likely to succeed to quickly stop processing work in the impacted Availability Zone. Then, once the initial impact is mitigated, follow-up with the control plane-controlled evacuation actions, if you deem it necessary.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

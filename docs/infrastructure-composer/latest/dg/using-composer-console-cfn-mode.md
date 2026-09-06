@@ -19,7 +19,3 @@ Infrastructure Composer in CloudFormation console mode generally has the same fu
 These cards and local sync can be used in the [Infrastructure Composer Console](https://aws.amazon.com/application-composer/) or the AWS Toolkit for Visual Studio Code.
 
 When you open Infrastructure Composer from the CloudFormation console, Infrastructure Composer opens in CloudFormation console mode. In this mode, you can use Infrastructure Composer to visualize, create, and update your templates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,7 +42,3 @@ The following table describes important changes in each release of the *Amazon E
 | Amazon EventBridge Schemas | You can now manage schemas and generate code bindings for events in Amazon EventBridge. For more information, see the following. +  [Amazon EventBridge schemas](eb-schema.md) <br />+  [EventBridge Schemas API Reference](https://docs.aws.amazon.com/eventbridge/latest/schema-reference/index.html) <br />+  [EventSchemas Resource Type Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_EventSchemas.html) in CloudFormation  | December 1, 2019 |
 | AWS CloudFormation support for Event Buses | CloudFormation now supports the EventBus resource. It also supports the EventBusName parameter in both the EventBusPolicy and Rule resources. For more information, see [Amazon EventBridge Resource Type Reference ](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_Events.html). | October 7, 2019 |
 | New service | Initial release of Amazon EventBridge. | July 11, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

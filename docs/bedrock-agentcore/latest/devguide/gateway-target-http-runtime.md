@@ -124,7 +124,3 @@ You can integrate MCP servers with the Amazon Bedrock AgentCore gateway using tw
 | Tool/capability aggregation | Aggregates capabilities from all MCP targets into a single unified virtual MCP server. Clients see one consolidated `tools/list` response. | Operates in isolation. The gateway sends traffic directly to the target without merging capabilities. Clients must address each target individually through path-based routing. |
 | Semantic tool search | Indexes tool descriptions and enables discovery through natural-language queries. | Not available. The gateway does not ingest or index capabilities. Clients must know exact tool names or use the server’s own `tools/list`. |
 | Response interceptor Lambda | Supports both request and response interceptors for non-streaming MCP operations. | Supports both request and response interceptor Lambda functions in buffered mode. Interceptors are not yet supported in streaming mode. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

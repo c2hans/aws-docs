@@ -127,7 +127,3 @@ type Query {
 ```
 
 In use case 1, the list cannot contain null items. In use case 2, the list itself cannot be set to null. In use case 3, the list and its items cannot be null. However, in any case, you can still return empty lists.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

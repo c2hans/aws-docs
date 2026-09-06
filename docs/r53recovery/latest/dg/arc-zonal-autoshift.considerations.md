@@ -61,7 +61,3 @@ The following are the possible practice run outcomes:
   + Practice run was ended because a zonal autoshift with precedence was initiated. See [Precedence for zonal shifts](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-autoshift.how-it-works.html#ZAShiftPrecedence).
 + **CAPACITY\_CHECK\_FAILED:** The check for balanced capacity across Availability Zones for your load balancing and Auto Scaling group resources failed.
 + **PENDING:** The practice run is active (in progress). There's no outcome to return yet.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

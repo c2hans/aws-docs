@@ -19,7 +19,3 @@ The following tutorial walks you through steps and best practices required to re
 + [Step 4: Prepare the source data and the target table in Amazon Keyspaces](spark-tutorial-step4.md)
 + [Step 5: Write and read Amazon Keyspaces data using the Apache Cassandra Spark Connector](spark-tutorial-step5.md)
 + [Troubleshooting common errors when using the Spark Cassandra Connector with Amazon Keyspaces](spark-tutorial-step6.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

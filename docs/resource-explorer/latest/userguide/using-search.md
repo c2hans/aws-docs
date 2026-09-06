@@ -131,7 +131,3 @@ You can choose from the following query templates:
 + **Resources not in [**application**]** — This template returns resources that do not belong in the specified application.
 + **All resources in [**application**]** — This template returns resources that belong to the specified application.
 + **Amazon EC2 resources that are not instances in [**application**]** — This template returns Amazon EC2 resources that are *not* the `ec2:instance` resource type and that belong in the specified application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

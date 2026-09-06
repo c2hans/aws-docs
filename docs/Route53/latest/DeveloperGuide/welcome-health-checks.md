@@ -37,7 +37,3 @@ In addition to checking the health of a specified endpoint, you can configure a 
 If you have multiple resources that perform the same function, for example, web servers or database servers, you can configure DNS failover. Associate a health check with each record for that resource. If a health check determines that the underlying resource is unhealthy, Route 53 routes traffic away from the associated record.
 
 For more information about using Route 53 to monitor the health of your resources, see [Creating Amazon Route 53 health checks](dns-failover.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

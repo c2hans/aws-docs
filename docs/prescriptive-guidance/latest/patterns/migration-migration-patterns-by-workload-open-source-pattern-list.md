@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 + [Migrate Oracle external tables to Amazon Aurora PostgreSQL-Compatible](migrate-oracle-external-tables-to-amazon-aurora-postgresql-compatible.md)
 + [Automatically restart the AWS Replication Agent after a RHEL reboot without disabling SELinux](restart-the-aws-replication-agent-automatically-without-disabling-selinux-after-rebooting-a-rhel-source-server.md)
 + [Transport PostgreSQL databases between two Amazon RDS DB instances using pg\_transport](transport-postgresql-databases-between-two-amazon-rds-db-instances-using-pg-transport.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

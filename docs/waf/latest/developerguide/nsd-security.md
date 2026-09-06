@@ -29,7 +29,3 @@ Review the following encryption considerations when using network security direc
 + [Identity and Access Management for AWS Shield network security director](nsd-iam.md)
 + [Identity-based policy examples for AWS Shield network security director](security-nsd-with-iam-id-based-policies.md)
 + [Using service-linked roles for AWS Shield network security director](security_iam_nsd-with-iam-roles-service-linked.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

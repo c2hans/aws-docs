@@ -46,7 +46,3 @@ As you navigate through the results, you might see the following message: **No r
 **Problem:** The results of my search query aren't showing up, and it appears to be taking too long.
 
 **Possible fixes:** Your search may not be completed when there are many searches being made at the same time in the space, either programmatically or because of high team activity. If you're running programmatic searches, pause or decrease them. Otherwise, try again in a few seconds.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

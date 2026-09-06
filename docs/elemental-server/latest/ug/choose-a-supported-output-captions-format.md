@@ -33,7 +33,3 @@ Choose the word **Support**. Don't choose from the dropdown menu.
 If your input captions format isn't shown in any row that also shows your input container, your input captions format isn't supported.
 
 1. Find your choices for output captions formats in the third column of that row under **Supported Output Caption Formats**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ Tag policies are available only in an organization that has [all features enable
 
 **Important**
 To get started with tag policies, AWS strongly recommends that you follow the example workflow described in [Getting started with tag policies](orgs_manage_policies_tag-policies-getting-started.md) before moving on to more advanced tag policies. It's best to understand the effects of attaching a simple tag policy to a single account before expanding tag policies to an entire OU or organization. It's especially important to understand a tag policy's effects before you *enforce* compliance with any tag policy. The tables on the [Getting started with tag policies](orgs_manage_policies_tag-policies-getting-started.md) page also provide links to instructions for more advanced policy-related tasks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,7 +52,3 @@ Release notes for Amazon EMR on EKS 6.12.0
 
 The following features are included with the 6.12 release of Amazon EMR on EKS.
 + **Java 17** - With Amazon EMR on EKS 6.12 and higher, you can launch Spark with Java 17 runtime. To do this, pass `emr-6.12.0-java17-latest` as a release label. We recommend that you validate and run performance tests before you move your production workloads from earlier versions of the Java image to the Java 17 image.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

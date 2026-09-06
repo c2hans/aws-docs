@@ -430,7 +430,3 @@ In AWS GovCloud (US), you use the **Model access** page in the Amazon Bedrock co
 1. If you agree with the terms, choose **Submit**. The changes can take several minutes to be reflected in the console.
 
 1. If your request is successful, the **Access status** changes to **Access granted** or **Available to request**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

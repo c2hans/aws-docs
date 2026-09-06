@@ -16,7 +16,3 @@ You can associate and disassociate applications from an Elastic fleet at any tim
 1. To associate a new application to the fleet, choose **Associate** in **Assigned applications**, select the application to be associated, and choose **Associate**.
 
 1. To disassociate an existing application from the fleet, select the application to disassociate, choose **Disassociate**, and confirm that you want to disassociate the selected application by choosing **Disassociate**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

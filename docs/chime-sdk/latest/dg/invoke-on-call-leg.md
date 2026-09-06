@@ -48,7 +48,3 @@ When the AWS Lambda function returns the list of actions to the SIP media applic
 1. The application then replaces the old action set with a new set of actions received from the latest invocation event.
 
 If the SIP media application receives a `NULL` action set, it keeps the existing actions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

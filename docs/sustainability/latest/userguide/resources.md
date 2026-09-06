@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/userguide/resource
 +  [The Climate Pledge](https://www.theclimatepledge.com?icmpid=docs_sustainability_resources_climate-pledge): Learn about the commitment co-founded by Amazon to achieve net-zero carbon emissions by 2040, a decade ahead of the Paris Agreement.
 +  [Amazon's sustainability exchange](https://sustainabilityexchange.amazon.com/?icmpid=docs_sustainability_resources_sustainability-exchange): Access Amazon's platform for sharing sustainability insights, best practices, and collaborative solutions across the business community.
 +  [Amazon's carbon credit service](https://sustainabilityexchange.amazon.com/credits?icmpid=docs_sustainability_resources_carbon-credit-service): Explore how Amazon helps organizations invest in verified carbon removal and reduction projects to offset their remaining emissions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sustainability. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sustainability` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

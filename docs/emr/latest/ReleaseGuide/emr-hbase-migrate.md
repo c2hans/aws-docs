@@ -147,7 +147,3 @@ If you are currently running an EMR 6.0.0\+ HBase on Amazon S3 cluster and want 
 
 **Note**
 There can be only one active cluster pointing to an Amazon S3 location at any point in time. Therefore, switching the read-replica to active should be done only after the source cluster is terminated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

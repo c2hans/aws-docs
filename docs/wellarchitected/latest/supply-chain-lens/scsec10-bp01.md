@@ -32,7 +32,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 1.  Establish an encryption governance framework that documents which encryption methods are applied to different types of supply chain data and systems based on classification and risk assessment.
 
 1.  Implement automated compliance monitoring to verify that encryption controls remain consistently applied as supply chain infrastructure evolves and new resources are provisioned.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

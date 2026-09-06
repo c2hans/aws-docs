@@ -54,7 +54,3 @@ The validator exclusion configuration is stored in AWS AppConfig alongside the A
 
 **Note**
 AWS Resource Explorer does not index all AWS resource types. Validation provides additional confidence but cannot guarantee complete cleanup. AWS Nuke remains the primary cleanup mechanism.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

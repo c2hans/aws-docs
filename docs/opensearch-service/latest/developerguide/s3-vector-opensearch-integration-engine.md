@@ -265,7 +265,3 @@ Before you disable the `s3vector` engine, delete *all* indexes that are currentl
 Also note that enabling or disabling the `s3vector` engine triggers a [blue/green deployment](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-configuration-changes.html) on your domain.
 
 To disable the `s3vector` engine, [edit your domain configuration](https://docs.aws.amazon.com/cli/latest/reference/opensearch/update-domain-config.html) and set `S3VectorsEngine.Enabled: false`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

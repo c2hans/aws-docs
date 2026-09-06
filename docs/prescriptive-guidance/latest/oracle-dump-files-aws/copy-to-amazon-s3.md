@@ -32,7 +32,3 @@ After successful validation of the AWS CLI, you can start copying the source Ora
 The process for transferring the dump files from Amazon S3 differs depending on the target that you are using:
 + [Amazon RDS for Oracle](amazon-rds-target.md)
 + [Amazon EC2](amazon-ec2-target.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

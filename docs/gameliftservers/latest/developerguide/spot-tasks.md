@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/sp
 # Build a queue for Spot Instances
 <a name="spot-tasks"></a>
 
-You can achieve of potentially significant savings in hosting costs by using Spot fleets. For more details about Spot fleets and how to use them, see [On-Demand Instances versus Spot Instances](gamelift-compute.md#gamelift-compute-spot).
+You can achieve potentially significant savings in hosting costs by using Spot fleets. For more details about Spot fleets and how to use them, see [On-Demand Instances versus Spot Instances](gamelift-compute.md#gamelift-compute-spot).
 
 If your game hosting solution includes Spot fleets, you must use a game session placement queue. Amazon GameLift Servers uses queues to search across multiple game hosting resources and select the best one available to host a new game session. With Spot fleets, queues are particularly important for minimizing hosting costs and avoiding possible Spot interruptions. This topic helps you set up a resilient queue that can continue to host games for players even in the event of interruptions, slowdowns and outages. You can customize how the queue prioritizes available hosting resources based on several factors including hosting cost.
 
@@ -45,13 +45,13 @@ When creating or updating your game hosting solution to use Spot fleets, complet
 
  Use the following best practices when creating fleets and queues for Spot instances.
 + **Expand your queue's geographic coverage.** Even if your players are clustered in a single AWS Region, add adjacent locations to your Spot fleet. This approach improves the queue's ability to maintain capacity during regional slowdowns, outages, and Spot interruptions. Multi-location fleets work with both Spot and On-Demand instances.
-+ **Diversify your queue's instance type coverage.** Amazon GameLift Servers evaluates Spot viability based on instance type, so having Spot fleets with a variety of instance types reduces the chance that multiple Spot fleets are nonviable at the same time. Include at least two Spot fleets with different instances types each location.
++ **Diversify your queue's instance type coverage.** Amazon GameLift Servers evaluates Spot viability based on instance type, so having Spot fleets with a variety of instance types reduces the chance that multiple Spot fleets are nonviable at the same time. Include at least two Spot fleets with different instance types in each location.
 **Note**
 Pricing is based on the instances you use, not the number of fleets. Running five fleets with 10 instances each is the same as running one fleet with 50 instances of similar cost. Pricing varies by instance type, size, and location.
 
   Tips for grouping Spot instance types:
   + Use instance types in the same family, such as `m6g.medium`, `m6g.large`, and `m6g.xlarge`. Larger instance types cost more, but can also host more game sessions at a time.
-  + Select widely available instances types. Typically, older generation families (such as C5, M5, and R5) and common sizes (such as .large, .xlarge, and .2xlarge) have better availability.
+  + Select widely available instance types. Typically, older generation families (such as C5, M5, and R5) and common sizes (such as .large, .xlarge, and .2xlarge) have better availability.
   + Check the 30-90 day pricing history in the Amazon GameLift Servers console. Look for instance types with consistent availability patterns.
   + Use the Amazon GameLift Servers console, fleet creation tool, to explore location coverage for instance types.
 + **Add On-Demand fleets for backup capacity.** Game hosting can switch to On-Demand fleets whenever Spot fleets are unavailable. Put at least one On-Demand fleet in each location to maintain low player latency. Add auto-scaling to your backup On-Demand fleets, so you can keep them scaled down until they're needed.
@@ -59,7 +59,3 @@ Pricing is based on the instances you use, not the number of fleets. Running fiv
 + **Apply a queue prioritization strategy.** You can customize how a queue prioritizes where to place game sessions (see [Prioritize game session placement](queues-design-priority.md) for more details). For Spot-optimized queues, prioritizing by cost ensures that low-cost Spot fleets are used whenever possible.
 
   You can also prioritize certain fleets by specifying a destination order. For example, some users designate a set of primary fleets for regular use and also a set of secondary fleets as backup. In this scenario, set the queue's destination order to list the primary fleets first. Then configure the queue's priority order with destination followed by cost.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

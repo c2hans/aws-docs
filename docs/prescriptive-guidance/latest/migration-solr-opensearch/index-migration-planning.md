@@ -35,7 +35,3 @@ After you select your migration approach, you can perform a detailed ETL assessm
   + Connector-based solution (for example, using Solr DIH, request handlers, or Apache Nutch)
   + Purpose-built integration (for example, Apache Tika connectors)
 + **Reviewing Solr handlers.** Solr provides handlers such as select and export by default. These help export millions of records.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

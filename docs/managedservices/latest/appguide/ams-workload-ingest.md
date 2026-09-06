@@ -166,7 +166,3 @@ If the RFC is rejected, the execution output includes a link to Amazon CloudWatc
 If the RFC is rejected, the execution output includes a link to Amazon CloudWatch logs. AMS Workload Ingest (WIGS) RFCs are rejected when requirements are not met; for example, if anti-virus software is detected on the instance. The CloudWatch logs will include information about the failed requirement and the actions to take for remediation.
 
 If needed, see [Workload ingestion (WIGS) failure](https://docs.aws.amazon.com/managedservices/latest/userguide/rfc-troubleshoot.html#rfc-valid-execute-wigs).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

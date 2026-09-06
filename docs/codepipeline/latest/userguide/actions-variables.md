@@ -298,7 +298,3 @@ This example shows you how to add output variable syntax from a GitHub source ac
        For more information, see [View variables (console)](#actions-variables-view-console).
    + **CodeBuild console:** Choose your build project and choose the link for your build run. Under **Environment variables**, your resolved output variable is the value for the CodeBuild environment variable. In this example, the environment variable **Name** is `BranchName` and the **Value** is the resolved `BranchName` output variable from the GitHub source action. In this example, the resolved value is `main`.
 ![Screen shot showing the resolved variable in the console](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/variable-codebuild-resolved.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

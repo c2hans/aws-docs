@@ -24,7 +24,3 @@ FreeRTOS LTS includes the FreeRTOS kernel and IoT libraries: FreeRTOS\+TCP, core
 AWS also offers FreeRTOS Extended Maintenance Plan (EMP), which provides security patches and critical bug fixes on your chosen FreeRTOS Long Term Support (LTS) version for up to ten additional years. With FreeRTOS EMP, your FreeRTOS based long-lived devices can rely on a version that has feature stability and receives security updates for years. You receive timely notifications of upcoming patches on FreeRTOS libraries, so you can plan the deployment of security patches on your Internet of Things (IoT) devices.
 
 To learn more about FreeRTOS EMP, see the [Features](https://aws.amazon.com/freertos/features/#FreeRTOS_Extended_Maintenance_Plan) page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

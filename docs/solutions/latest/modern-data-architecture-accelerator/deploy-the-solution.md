@@ -237,7 +237,3 @@ The following context values are required for all modules. Note that additional 
 +  **module\_name** - Name of the MDAA module (allows multiple deployments of the same CDK app within same org/domain/env)
 +  **module\_configs** - Comma separated list of paths to one or more app config files. Multiple config files will be merged, with later-listed config files taking precedence over earlier-listed config files.
 +  **tag\_configs** - Comma separated list of paths to one or more tag config files. Multiple config files will be merged, with later-listed config files taking precedence over earlier-listed config files.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Modern Data Architecture Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

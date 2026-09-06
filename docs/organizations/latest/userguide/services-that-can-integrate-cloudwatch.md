@@ -143,7 +143,3 @@ Only an administrator signed in with the Organizations management account can de
  You can deregister the delegated administrator account by using either the CloudWatch console, or by using the Organizations `DeregisterDelegatedAdministrator` API operation with the AWS Command Line Interface or an SDK. For more information, see [ Deregistering a delegated administrator account](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/telemetry-config-turn-on.html#telemetry-config-deregister-administrator) in the *Amazon CloudWatch User Guide*.
 
 When you deregister a delegated administrator account in CloudWatch, you can no longer use the account for management operations with telemetry auditing and with Network Flow Monitor.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,7 +11,3 @@ Replay applies to zero-downtime and capture-and-replay migrations only. After ba
 For Apache Solr sources, capture and replay requires Solr-specific transform providers and a different workflow configuration. See [Capture and replay live traffic from Solr](solr-capture-replay.md) in the Solr migration chapter.
 
 Once replay has caught the target up to the live edge and you have validated source and target behavior, proceed to [Switch traffic to the target](switch-traffic.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

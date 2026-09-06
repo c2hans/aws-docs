@@ -60,7 +60,3 @@ searchQuickResponses(queryRequest: SearchQuickResponsesRequest): Promise<SearchQ
 | operator | QuickResponsesQueryOperator | The operator to use for matching attribute field values in the query. Supported values: "CONTAINS" or "CONTAINS\_AND\_PREFIX" |
 | priority | QuickResponsesQueryPriority | The importance of the attribute field when calculating query result relevancy scores. The value set for this parameter affects the ordering of search results. Supported values: "HIGH", "MEDIUM", or "LOW" |
 | allowFuzziness | boolean | Whether the query expects only exact matches on the attribute field values. The results of the query will only include exact matches if this parameter is set to false. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer Agent Workspace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agentworkspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

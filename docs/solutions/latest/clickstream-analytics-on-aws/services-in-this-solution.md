@@ -33,7 +33,3 @@ The following AWS services are included in this guidance:
 |  [Amazon API Gateway](https://aws.amazon.com/api-gateway/)  |  Supporting. To provide the backend APIs.  |
 |  [Amazon DynamoDB](https://aws.amazon.com/dynamodb/)  |  Supporting. To store projects data.  |
 |  [AWS CloudFormation](https://aws.amazon.com/cloudformation/)  |  Supporting. To provision the AWS resources for the modules of data pipeline.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Clickstream Analytics on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ Amazon Athena uses service-owned Amazon S3 buckets to store example queries and 
 | Resource ARN | Required permissions | Identity used for access | Access scenarios |
 | --- | --- | --- | --- |
 |  arn:aws:s3:::athena-examples-<region>  | s3:GetObjects3:ListBucket | The IAM principal accessing Athena. |  +  Running example queries in the Athena console <br />+  Exploring sample datasets that Athena provides   |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

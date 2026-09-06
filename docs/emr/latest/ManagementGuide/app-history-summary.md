@@ -40,7 +40,3 @@ On the job details page, you can expand information about individual job stages,
 On the stage details page, you can view key metrics for stage tasks and executors. You can also view task and executor logs using the **View logs** links.
 
 ![Stage details page showing executor and task metrics with View logs links highlighted.](http://docs.aws.amazon.com/emr/latest/ManagementGuide/images/app-history-job-3.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

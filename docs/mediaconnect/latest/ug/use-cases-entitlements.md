@@ -12,7 +12,3 @@ The subscriber must set up their flow in MediaConnect in the same Region as the 
 This following illustration shows how to share content in a transport stream flow with another AWS subscriber. The output of the originator's flow can be used as the source of the subscriber's flow.
 
 ![This illustration shows how to share content with another AWS subscriber. The output of the originator's flow can be used as the source of the subscriber's flow.](http://docs.aws.amazon.com/mediaconnect/latest/ug/images/use-case-entitlementv2.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

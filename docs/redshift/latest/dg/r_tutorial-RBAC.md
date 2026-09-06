@@ -611,7 +611,7 @@ To use the user\_is\_member\_of function
 ## System views for RBAC (optional)
 <a name="tutorial-rbac-system-views"></a>
 
-To view the roles, the assignment of roles to users, the role hierarchy, and the privileges for database objects via roles, use the system views for Amazon Redshift. These views are available to superusers and regular users. Superusers can check all role details. Regular users can only check details for roles that they have been granted access to.
+To view the roles, the assignment of roles to users, the role hierarchy, and the privileges for database objects through roles, use the system views for Amazon Redshift. These views are available to superusers and regular users. Superusers can check all role details. Regular users can only check details for roles that they have been granted access to.
 
 1. To view a list of users that are explicitly granted roles in the cluster, use the following example.
 
@@ -812,7 +812,3 @@ For more information about RBAC, see the following documentation:
 + [Role assignment](t_role_assignment.md)
 + [Database object permissions](r_roles-database-privileges.md)
 + [ALTER DEFAULT PRIVILEGES for RBAC](r_roles-alter-default-privileges.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

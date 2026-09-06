@@ -41,7 +41,3 @@ The following are the rules for job arguments passed by a trigger:
 + If the key in the key-value pair matches a non-overridable argument, the passed argument is ignored.
 
 For more information, see [Triggers](aws-glue-api-jobs-trigger.md) in the AWS Glue API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

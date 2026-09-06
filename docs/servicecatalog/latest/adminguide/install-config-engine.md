@@ -18,7 +18,3 @@ When you call a provisioning operation, AWS Service Catalog prepares a payload m
 For example, if ProvisionProduct is called in `us-east-1` from account 1111111111 using a product created by account 0000000000000, AWS Service Catalog assumes the correct SQS ARN is `arn:aws:sqs:us-east-1:0000000000000:ServiceCatalogTerraformOSProvisionOperationQueue`.
 
 The same logic applies for the Lambda function called by `DescribeProvisioningParameters`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

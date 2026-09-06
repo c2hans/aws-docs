@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 + [FSICOST12: Are you saving costs by adopting a set of modern microservice architectures?](fsicost12.md)
 + [FSICOST13: Do you use cloud services to accommodate consulting or testing of projects?](fsicost13.md)
 + [FSICOST14: How do you measure the cost of licensing third-party applications and software?](fsicost14.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

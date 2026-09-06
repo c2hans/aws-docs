@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ![A diagram depicting a UDP reflection attack](http://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/udp-reflection-attack.png)
 
  It should be noted that reflection attacks, while they provide attackers with amplification, require IP spoofing capability and as increasing numbers of network providers adopt Source Address Validation Everywhere (SAVE) or [BCP38](https://www.rfc-editor.org/info/bcp38/), this capability is removed, requiring DDoS attackers to cease reflection attacks or to relocate to data centers and network providers who don't implement source address validation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

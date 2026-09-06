@@ -55,7 +55,3 @@ In the preceding example, replace the `{{<SQLAgentRole>}}` placeholder with the 
 To detect log shipping, grant the `SELECT on dbo.log_shipping_primary_databases` privilege on the `msdb` database.
 
 To use the notification approach of the data definition language (DDL) replication, grant the `RECEIVE ON {{<schema_name>}}.{{<queue_name>}}` privilege on your source databases. In this example, replace the `{{<schema_name>}}` placeholder with the schema name of your database. Then, replace the `{{<queue_name>}}` placeholder with the name of a queue table.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

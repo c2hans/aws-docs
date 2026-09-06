@@ -25,7 +25,3 @@ The Amazon Application Recovery Controller REST API includes the following resou
 + [ListResourceSets, CreateResourceSet](resourcesets.md)
 + [ListRules](rules.md)
 + [ListTagsForResources, TagResource, UntagResource](tags-resource-arn.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query recovery-readiness` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

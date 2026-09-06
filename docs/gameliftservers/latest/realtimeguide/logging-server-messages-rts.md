@@ -82,7 +82,7 @@ The output in the log files indicates the type of message (`DEBUG`, `INFO`, `WAR
 ## Accessing server logs
 <a name="accessing-rts-server-logs"></a>
 
-When a game session ends, Amazon GameLift Servers automatically stores the logs in Amazon S3 and retains them for 14 days. You can use the [GetGameSessionLogUrl API call](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetGameSessionLogUrl.html) to get the location of the logs for a game session. Use URL returned by the API call to download the logs.
+When a game session ends, Amazon GameLift Servers automatically stores the logs in Amazon S3 and retains them for 14 days. You can use the [GetGameSessionLogUrl API call](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetGameSessionLogUrl.html) to get the location of the logs for a game session. Use the URL returned by the API call to download the logs.
 
 ## Adjusting the logging level
 <a name="adjusting-rts-logging-level"></a>
@@ -136,7 +136,3 @@ Follow the instructions at [ Update an Amazon GameLift Servers fleet configurati
                                     Parameters=loggingLevel:error +map Winter444,
                                     ConcurrentExecutions=10}]"
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

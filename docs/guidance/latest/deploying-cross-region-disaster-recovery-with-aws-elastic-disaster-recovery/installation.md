@@ -86,7 +86,3 @@ Remember, if there are instances that are not managed by AWS Systems Manager, yo
         + Spikes in data volume that exceed the processing capacity of the system, leading to a backlog.
         + Scheduled maintenance or other operational activities that temporarily pause the replication process.
       + Even if there is no lag, meaning the server or service is in the desired state, a backlog of data can still build up that needs to be processed. For example, a server generating traffic at a lower rate than the network bandwidth, resulting in no lag, but there could still be a backlog of data that needs to be replicated. *Once the installation process has been completed across all needed servers, you can move on to the next section, where you will configure monitoring and notifications*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying Cross-Region Disaster Recovery with AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

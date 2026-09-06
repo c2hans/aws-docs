@@ -48,7 +48,3 @@ The telemetry collection system should be able to withstand a sudden connection 
 1. Enable different user personas from fleet aggregators to data scientists, analysts, and vehicle owners.
 
 1. You can use Amazon SageMaker AI improve ADAS/AV models to optimize vehicle design for performance and efficiency. Insights from structured and semistructured data can be gathered by using Amazon Redshift. Utilizing Quick and other analytics platforms to continually improve vehicle quality, safety, and autonomy using near real time data from AWS IoT FleetWise.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 <a name="for-amazon-ec2.1bb53b3d-9ce4-5e8f-af9d-124a32ab1545"></a>
 + Make sure that there is sufficient storage space provisioned on the drive that stores the audit log files based on the retention period.
 + CPU consumption for running audits is generally minimal. Monitor CPU usage when you run audit queries and size the EC2 instance accordingly. You can use [Amazon CloudWatch to monitor EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/using-cloudwatch.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,3 @@ You need the following Java development environment requirements to work with SD
   + For information about how to install and use Apache Ivy, see [https://ant.apache.org/ivy/](https://ant.apache.org/ivy/).
   + For information about how to install and use Gradle, see [https://gradle.org/](https://gradle.org/).
   + For information about how to install and use IntelliJ IDEA, see [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

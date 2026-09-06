@@ -15,7 +15,3 @@ For information about using NAT Gateways and this configuration, see [NAT Gatewa
 + [Create and Configure a New VPC](create-configure-new-vpc-with-private-public-subnets-nat.md)
 + [Add a NAT Gateway to an Existing VPC](add-nat-gateway-existing-vpc.md)
 + [Enable Internet Access for Your Fleet, Image Builder, or App Block Builder in Amazon WorkSpaces Applications](managing-network-manual-enable-internet-access.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

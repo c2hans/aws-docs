@@ -38,7 +38,3 @@ Amazon Q provides several ways to discover keyboard shortcuts:
 + Keyboard shortcuts for agentic chat are only active when your focus is in the Amazon Q chat panel
 + This prevents conflicts with existing IDE keybindings
 + If you modify a shortcut, you may need to refresh your IDE for the changes to be reflected in tooltips
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ If you create a pipe with Amazon MSK, self managed Apache Kafka, or Amazon MQ so
 There can be a delay between when a pipe is `STOPPED` and when it no longer processes events:
 + For Amazon SQS and stream sources, this delay is typically less than two minutes.
 + For Amazon MQ and Apache Kafka sources, this delay may be up to fifteen minutes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

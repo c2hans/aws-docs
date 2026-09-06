@@ -28,6 +28,7 @@ More service quotas for SFTP connectors are listed in [AWS Transfer Family endpo
 | Maximum request wait time per file | 12 hours | No |
 | Maximum bandwidth for connectors per account (both SFTP and AS2 connectors contribute to this value) | 50 MBps | No |
 | Maximum number of items for directory listing operations | 200,000 | No |
+| Maximum number of ordered secret version stages per connector | 2 | No |
 
 **Note**
  By default, SFTP connectors process one file at a time, transferring files sequentially. You have an option to accelerate transfer performance by having your connectors create concurrent sessions with remote servers that support concurrent sessions from the same user, and process up to 5 files in parallel.
@@ -54,7 +55,3 @@ This section describes considerations for how to scale your AWS Transfer Family 
 
   You have an option to accelerate transfer performance by having your connectors transfer multiple files in parallel. You can create concurrent sessions with remote servers that support concurrent sessions from the same user, and process up to 5 files in parallel. When you create an SFTP connector, choose a value up to 5 for the **Maximum concurrent connections** setting when you create or update the connector. For details, see [Create an SFTP connector with service-managed egress](create-sftp-connector-procedure.md).
 + **The rate of `StartFileTransfer` requests.** You can request up to 100 file paths per second for transfer with each SFTP connector. The requested file paths are added to your connectors’ queue for processing. You can use the `StartFileTransfer` command recursively to request up to 100 file paths per second per connector, irrespective of the number of files provided in an individual `StartFileTransfer` command.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

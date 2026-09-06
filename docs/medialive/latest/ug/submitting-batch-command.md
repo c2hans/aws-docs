@@ -45,7 +45,3 @@ The following rules apply to delete actions:
    `aws medialive batch-update-schedule --channel-id 999999 --cli-input-json schedule-create-actions.txt`
 
 1. To submit the command, press **Enter**. The response appears on the screen. The response repeats the data from the request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

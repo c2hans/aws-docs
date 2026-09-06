@@ -12,7 +12,3 @@ A detector is a container that contains fraud detection logic, such as the model
 You then add rules and rule execution order to a detector to create a version of the detector. A detector version defines the rules and optionally a model that will be run as part of the request for generating fraud predictions. You can add any of the rules defined within a detector to the detector version. You can also add any model trained on the evaluated event type to the detector version. A detector can have multiple versions, with each version having different rules and rule execution order to meet multiple use cases.
 
  Each detector version must have a status of `DRAFT`, `ACTIVE`, or `INACTIVE`. Only one detector version can be in `ACTIVE` status at a time. Amazon Fraud Detector uses the detector version with `ACTIVE` status to generate fraud predictions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

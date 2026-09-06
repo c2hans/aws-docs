@@ -16,7 +16,3 @@ IAM roles allow this solution to assign granular access policies and permissions
 <a name="vpc-security-groups"></a>
 
 The solution creates security groups designed to control and isolate network traffic between the Lambda functions, Amazon EC2 instances, and remote virtual private network (VPN) endpoints. We recommend that you review the security groups and further restrict access as needed once the deployment is up and running.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Scene Intelligence with Rosbag on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

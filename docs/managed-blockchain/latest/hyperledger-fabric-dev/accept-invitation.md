@@ -52,7 +52,3 @@ You can set up Amazon CloudWatch Events along with Amazon Simple Notification Se
   ```
 
 You can use the `InvitationID` with the `create-member` command to create a member and join the network. For next steps, see [Create a Member and Join a Network](managed-blockchain-hyperledger-create-member.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

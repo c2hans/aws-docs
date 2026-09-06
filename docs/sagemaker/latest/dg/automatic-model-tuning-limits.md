@@ -45,7 +45,3 @@ When you plan hyperparameter tuning jobs, you also have to take into account the
 1. In the **Case description** panel, provide a description of your use case .
 
 1. In the **Contact options** panel, select your preferred **Contact methods** (**Web**, **Chat** or **Phone**) and then choose **Submit**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

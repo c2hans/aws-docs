@@ -38,7 +38,3 @@ To trace the application of RLS policies on queries that reference RLS-protected
 To allow users full access to an RLS-protected relation, you can grant the IGNORE RLS permission. Superusers or sys:secadmin are automatically granted IGNORE RLS. For more information, see [GRANT](r_GRANT.md).
 
 To explain the RLS policy filters of a query in the EXPLAIN plan to troubleshoot RLS-related queries, you can grant the permission EXPLAIN RLS to any user. For more information, see [GRANT](r_GRANT.md) and [EXPLAIN](r_EXPLAIN.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

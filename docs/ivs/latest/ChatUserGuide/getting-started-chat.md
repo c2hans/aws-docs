@@ -27,7 +27,3 @@ The rest of this document takes you through the steps to build your first chat a
 + [Step 3: Create a Chat Token](getting-started-chat-auth.md)
 + [Step 4: Send and Receive Your First Message](getting-started-chat-send-and-receive.md)
 + [Step 5: Check Your Service-Quota Limits (Optional)](getting-started-chat-check-service-quota.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

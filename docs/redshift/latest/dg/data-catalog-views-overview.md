@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/data-catalog-views-ov
 
 This topic describes how to create views in the AWS Glue Data Catalog. You can use views in the Data Catalog to access data in different data sources using the same schema.
 
-By creating views in the Data Catalog, you can create a single common view schema and metadata object to use across engines such as Amazon Athena and Amazon EMR Spark. Doing so lets you use the same views across your data lakes and data warehouses to fit your use cases. Views in the Data Catalog are special in that they are categorized as definer views, where access permissions are defined by the user who created the view instead of the user querying the view. The following are some use cases and benefits of creating views in the Data Catalog:
+By creating views in the Data Catalog, you can create a single common view schema and metadata object to use across engines such as Amazon Athena and Amazon EMR Spark. By doing so, you can use the same views across your data lakes and data warehouses to fit your use cases. Views in the Data Catalog are special in that they are categorized as definer views, where access permissions are defined by the user who created the view instead of the user querying the view. The following are some use cases and benefits of creating views in the Data Catalog:
 + Create a view that restricts data access based on the permissions the user needs. For example, you can use views in the Data Catalog to prevent employees who don’t work in the HR department from seeing personally identifiable information (PII).
 + Make sure that users can’t access incomplete records. By applying certain filters onto your view in the Data Catalog, you make sure that data records inside a view in the Data Catalog are always complete.
 + Data Catalog views have an included security benefit of making sure that the query definition used to create the view must complete to create the view. This security benefit means that views in the Data Catalog are not susceptible to SQL commands from malicious players.
@@ -137,7 +137,3 @@ The following are considerations and limitations that apply to views created in 
   + Redshift tables, views, materialized views, and late binding views that aren’t in a Lake Formation managed data share.
 + Views can’t contain nested Redshift Spectrum tables.
 + AWS Glue representations of the base objects of a view must be in the same AWS account and Region as the view.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

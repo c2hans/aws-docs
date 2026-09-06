@@ -29,7 +29,3 @@ aws s3 cp s3://{{{BUCKET}}}/inbound_{{{MEDIA_ID}}}.jpeg
 In the preceding command, do the following:
 + Replace {{{BUCKET}}} with the name of the Amazon S3 bucket.
 + Replace {{{MEDIA\_ID}}} with the MEDIA\_ID returned from the previous step.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

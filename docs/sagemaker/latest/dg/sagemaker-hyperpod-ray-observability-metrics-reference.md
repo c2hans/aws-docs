@@ -53,7 +53,3 @@ The **Ray Serve** dashboard covers request rate, latency, errors, and replica he
 Metrics land in Amazon Managed Service for Prometheus, so you can query them outside Grafana. The collector adds `cluster_name`, `cluster_id`, and `namespace`. Ray adds `ray_io_cluster`, which identifies the Ray cluster and is the label the dashboards pivot on.
 
 For more information about visualizing these metrics, see [Ray Grafana dashboards](sagemaker-hyperpod-ray-observability-dashboards.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -70,7 +70,3 @@ If you specify length for `CHAR` or `VARCHAR`, Firehose truncates the strings at
 <a name="record-format-conversion-serializers"></a>
 
 The serializer that you choose depends on your business needs. To learn more about the two serializer options, see [ORC SerDe](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+ORC) and [Parquet SerDe](https://cwiki.apache.org/confluence/display/Hive/Parquet).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,7 +53,3 @@ Timestream for Live Analytics queries are expressed in a SQL grammar that has ex
 
 **Note**
 *When using VPC endpoints with Timestream for Live Analytics or directly accessing REST API operations for Timestream for Live Analytics, you will need to interact directly with the cellular endpoints.* For guidance on how to do so, see [VPC Endpoints](VPCEndpoints.md) for instructions on how to set up VPC endpoints, and [Endpoint Discovery Pattern](Using.API.md) for instructions on direct invocation of the REST API operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

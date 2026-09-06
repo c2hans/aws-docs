@@ -115,7 +115,3 @@ In **Information**, you can access information about the loaded training job, su
 The SageMaker AI Profiler UI application instance is configured to shut down after 2 hours of idle time by default. In **Settings**, use the following settings to adjust the auto shutdown timer.
 + **Enable app auto shutdown** – Choose and set to **Enabled** to let the application automatically shut down after the specified number of hours of idle time. To turn off the auto-shutdown functionality, choose **Disabled**.
 + **Auto shutdown threshold in hours** – If you choose **Enabled** for **Enable app auto shutdown**, you can set the threshold time in hours for the application to shut down automatically. This is set to 2 by default.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

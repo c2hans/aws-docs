@@ -13,7 +13,3 @@ Following are some best practices you can use to migrate resources using the AMS
 + **Amazon RDS DB instance parameter must be specified**– When creating an Amazon RDS database via CloudFormation ingest, you must specify the `DBSnapshotIdentifier` parameter in order to restore from a previous DB snapshot. This is required because CloudFormation ingest does not currently handle sensitive data.
 
 For an example of how to use a CloudFormation template for AMS CloudFormation template ingest, see [CloudFormation Ingest: Examples](cfn-ingest-examples.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

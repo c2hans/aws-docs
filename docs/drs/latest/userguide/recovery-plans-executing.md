@@ -102,7 +102,3 @@ The following conditions prevent an execution from starting. Each one returns th
 | The plan is being deleted. | `ConflictException` — *Cannot start execution: recovery plan {{planId}} is being deleted.* |
 | A server listed in `--source-servers` is not part of the plan, or is missing a `recoverySnapshotID`. | `ValidationException` — *Source server IDs not found in plan* or *Missing recoverySnapshotID for servers*, listing the servers concerned. |
 | The AWS account has not been initialized for AWS Elastic Disaster Recovery. | `UninitializedAccountException` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

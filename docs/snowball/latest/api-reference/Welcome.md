@@ -34,7 +34,3 @@ If you use a Snowball Edge, use the Snowball Edge Client to unlock the appliance
 <a name="Welcome_AWS_Snow_Device_Management"></a>
 
  AWS Snowball Edge Device Management allows you to manage your AWS Snowball Edge devices and local AWS services remotely. You can use AWS Snowball Edge Device Management to create and manage tasks such as unlocking or rebooting a device, check device and task status, and manage Amazon EC2-compatible instances and resources on your device. For more information, see [Using AWS Snowball Edge Device Management to manage Snowball Edge](https://docs.aws.amazon.com/snowball/latest/developer-guide/aws-sdm.html) in the * AWS Snowball Edge Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

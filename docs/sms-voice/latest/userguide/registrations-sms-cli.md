@@ -40,7 +40,3 @@ Once your registration has been submitted you can check its status using the [de
 If the registration's **AssociationBehavior** is `ASSOCIATE_AFTER_COMPLETE` you can purchase an origination identity and associate it with the registration, once the registration's status is set to **COMPLETE**.
 
 If your registration's status is changed to **REQUIRES\_UPDATES** then you can find and [edit the flagged fields](registrations-edit.md) and resubmit the registration. For a list of registration rejection reasons, see [Gen-AI Feedback on Registrations](registrations-genai-feedback.md). If you require help from Support with your registration rejection you can [open a ticket](registrations-request-support.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

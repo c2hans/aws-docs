@@ -43,7 +43,3 @@ You should not use CDK in an environment where untrusted authors write parts of 
  *(Your responsibility)* Because of the unlimited expressivity afforded by a general purpose programming language, custom CDK constructs cannot *guarantee* an unbypassable compliance with security policies. CDK has mechanisms to [shift left compliance checks](compliance-validation.md), and mechanisms that can [help developers meet compliance requirements with minimal effort](blueprints.md); but a determined enough developer will always be able to bypass the output of the specially designed constructs.
 
 If you need compliance guarantees, impose them via a process external to the CDK application like [CloudFormation Hooks](https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguide/what-is-cloudformation-hooks.html), or a separate CloudFormation template validation step in the CI Pipeline.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

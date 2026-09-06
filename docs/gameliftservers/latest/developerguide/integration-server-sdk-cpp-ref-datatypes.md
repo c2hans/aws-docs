@@ -98,12 +98,12 @@ Type: `const std::function<void(Aws::GameLift::Model::GameSession)> onStartGameS
 Required: Yes
 
 **onProcessTerminate**
-Name of callback function that the Amazon GameLift Servers service invokes to force the server process to shut down. After calling this function, Amazon GameLift Servers waits five minutes for the server process to shut down and respond with a [ProcessEnding()](integration-server-sdk-cpp-ref-actions.md#integration-server-sdk-cpp-ref-processending) call. If no response is receive, it shuts down the server process.
+Name of callback function that the Amazon GameLift Servers service invokes to force the server process to shut down. After calling this function, Amazon GameLift Servers waits five minutes for the server process to shut down and respond with a [ProcessEnding()](integration-server-sdk-cpp-ref-actions.md#integration-server-sdk-cpp-ref-processending) call. If no response is received, it shuts down the server process.
 Type: `std::function<void()> onProcessTerminate`
 Required: No
 
 **onHealthCheck**
-Name of callback function that the Amazon GameLift Servers service invokes to request a health status report from the server process. Amazon GameLift Servers calls this function every 60 seconds. After calling this function Amazon GameLift Servers waits 60 seconds for a response, and if none is received. records the server process as unhealthy.
+Name of callback function that the Amazon GameLift Servers service invokes to request a health status report from the server process. Amazon GameLift Servers calls this function every 60 seconds. After calling this function Amazon GameLift Servers waits 60 seconds for a response, and if none is received, records the server process as unhealthy.
 Type: `std::function<bool()> onHealthCheck`
 Required: No
 
@@ -126,7 +126,7 @@ Type: String
 Required: Yes
 
 **MatchmakingConfigurationArn**
-Unique identifier, in the form of an ARN, for the matchmaker to use for this request. To find the matchmaker that was used to create the original game session, look in the game session object, in the matchmaker data property. Learn more about matchmaker data in [ Word with matchmaker data](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-server.html#match-server-data).
+Unique identifier, in the form of an ARN, for the matchmaker to use for this request. To find the matchmaker that was used to create the original game session, look in the game session object, in the matchmaker data property. Learn more about matchmaker data in [ Work with matchmaker data](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-server.html#match-server-data).
 Type: String
 Required: Yes
 
@@ -162,7 +162,3 @@ Required: Yes
 Unique identifier of the backfill request ticket to be canceled.
 Type: String
 Required: Yes
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

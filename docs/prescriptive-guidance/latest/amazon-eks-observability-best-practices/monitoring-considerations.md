@@ -29,7 +29,3 @@ Continuous improvement:
 + Incorporate user feedback.
 
 These best practices provide a framework for implementing and maintaining effective monitoring solutions for Amazon EKS environments. Regularly review and update these practices so they remain aligned with your organizational needs and industry standards. Monitoring is not a one-time setup—it's a continuous process that requires regular attention and refinement.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

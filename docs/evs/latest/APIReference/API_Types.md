@@ -11,6 +11,7 @@ The Amazon Elastic VMware Service API contains several data types that various a
 The order of each element in a data type structure is not guaranteed. Applications should not assume a particular order.
 
 The following data types are supported:
++  [AccountSetting](API_AccountSetting.md)
 +  [Check](API_Check.md)
 +  [ConnectivityInfo](API_ConnectivityInfo.md)
 +  [Connector](API_Connector.md)
@@ -33,7 +34,3 @@ The following data types are supported:
 +  [VcfVersionInfo](API_VcfVersionInfo.md)
 +  [Vlan](API_Vlan.md)
 +  [VmEntitlement](API_VmEntitlement.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

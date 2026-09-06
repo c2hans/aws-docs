@@ -54,7 +54,3 @@ If you specify a custom username:
 + The username can’t start with `system:`, `eks:`, `aws:`, `amazon:`, or `iam:`.
 + If the username is for an IAM role, we recommend that you add `{{SessionName}}` or `{{SessionNameRaw}}` to the end of your username.
   + If you add either `{{SessionName}}` or `{{SessionNameRaw}}` to your username, the username must include a colon *before* {{SessionName}}.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

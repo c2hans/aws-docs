@@ -64,7 +64,3 @@ Each SageMaker AI project has a unique name and ID that are applied as tags to a
 No. SageMaker pipelines are standalone entities just like training jobs, processing jobs, and other SageMaker AI jobs. You can create, update, and run pipelines directly within a notebook by using the SageMaker Python SDK without using a SageMaker AI project.
 
 Projects provide an additional layer to help you organize your code and adopt operational best practices that you need for a production-quality system.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

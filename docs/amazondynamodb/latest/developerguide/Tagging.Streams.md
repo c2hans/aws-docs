@@ -60,7 +60,3 @@ The following examples show how to use the AWS CLI to tag existing streams and l
   aws dynamodb list-tags-of-resource \
       --resource-arn arn:aws:dynamodb:us-east-1:111122223333:table/Movies/stream/2024-01-01T00:00:00.000
   ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,3 @@ The following issues impact customers attempting to use the modify-cluster API t
   + Cannot handle blocking token key migrations and cannot do a blue/green deployment.
   + Can handle blocking token key operations for the duration of the migration, but can’t wait the full 7 day period.
 + **Resolution status: **This issue has been resolved. Customers performing token key based workloads can now begin the migration. Token key creations and deletions will be blocked for the duration of the migration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -270,7 +270,7 @@ When updating compute environment, changing the type of a compute environment re
 When updating the type of a compute environment, changing between `EC2` and `SPOT` or between `FARGATE` and `FARGATE_SPOT` will initiate an infrastructure update, but if you switch between `EC2` and `FARGATE`, CloudFormation will create a new compute environment.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `EC2 | SPOT | FARGATE | FARGATE_SPOT`
+*Allowed values*: `EC2 | SPOT | FARGATE | FARGATE_SPOT | ECS_MANAGED_INSTANCES`
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `UpdateToLatestImageVersion`  <a name="cfn-batch-computeenvironment-computeresources-updatetolatestimageversion"></a>
@@ -284,7 +284,3 @@ When updating a compute environment, changing this setting requires an infrastru
 ## See also
 <a name="aws-properties-batch-computeenvironment-computeresources--seealso"></a>
 + [Compute Environments](https://docs.aws.amazon.com/batch/latest/userguide/compute_environments.html) in the * AWS Batch User Guide *.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

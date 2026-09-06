@@ -31,7 +31,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 <a name="api-gateway"></a>
 
  HTTP API Gateway is configured to require AWS IAM authorization before the target Lambda functions responsible for token activities are invoked. Therefore, anonymous viewers without appropriate IAM permissions will not be able to make API calls. To successfully integrate other services with the API Gateway endpoint created in the solution, explicit IAM permissions must be granted to the corresponding user or role, allowing to invoke deployed API resource.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

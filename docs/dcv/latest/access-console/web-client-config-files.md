@@ -33,7 +33,3 @@ For the `/etc/dcv-access-console-webclient/access-console-webclient-secrets.prop
 | `auth-server-client-id` | Yes | `dcv-access-console-web-client` | Specifies the client id for the Web Client. It should be the same in the Authentication Server properties. |
 | `auth-server-client-secret` | Yes |  | Specifies the secret for the Web Client. It should be the same in the Authentication Server properties. |
 | `cookie-secret` | Yes |  | Specifies a random string used to sign/encrypt cookies and JWT. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

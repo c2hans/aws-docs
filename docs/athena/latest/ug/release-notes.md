@@ -41,11 +41,6 @@ This release resolved the following issues:
 
 To learn more, and to download the ODBC 1.x driver, release notes, and documentation, see [Athena ODBC 1.x driver](connect-with-odbc-driver-and-documentation-download-links.md).
 
-### August 21, 2026
-<a name="release-note-2026-08-21"></a>
-
-AWS releases Amazon Athena ODBC driver version 2.3.0.0. For more information about this version of the driver, see [Amazon Athena ODBC 2.x release notes](odbc-v2-driver-release-notes.md). To download the ODBC 2.x driver, see [ODBC 2.x driver download](odbc-v2-driver.md#odbc-v2-driver-download).
-
 ### July 06, 2026
 <a name="release-note-2026-07-06"></a>
 
@@ -2842,7 +2837,3 @@ Added support for AvroSerDe and OpenCSVSerDe, US East (Ohio) Region, and bulk ed
 #### Improvements
 <a name="release-note-2017-02-20-improvements"></a>
 + Improved performance on large Parquet tables.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

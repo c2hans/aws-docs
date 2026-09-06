@@ -27,7 +27,3 @@ This tutorial can take up to 90 minutes to complete.
 + [Download and save the AWS IoT Device Client](iot-dc-install-download.md)
 + [Provision your Raspberry Pi in AWS IoT](iot-dc-install-provision.md)
 + [Configure the AWS IoT Device Client to test connectivity](iot-dc-install-configure.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

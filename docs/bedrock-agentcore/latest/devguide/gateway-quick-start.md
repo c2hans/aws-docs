@@ -27,10 +27,10 @@ The AgentCore CLI provides both commands and an interactive TUI wizard for manag
 
 Before starting, make sure you have the following:
 +  ** AWS Account** with credentials configured. To configure credentials, you can install and use the AWS Command Line Interface by following the steps at [Getting started with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
-+  **Node.js 18\+** installed (for the AgentCore CLI).
++  **Node.js 20\+** installed (for the AgentCore CLI).
 +  **Python 3.10\+** installed (for the agent script).
 +  **IAM permissions** for creating roles, Lambda functions, and using Amazon Bedrock AgentCore.
-+  **Model Access** – Enable Anthropic’s Claude Sonnet 3.7 in the Amazon Bedrock console (or another model for the demo agent)
++  **Model access.** Amazon Bedrock enables access to foundation models by default. To use a non-foundation model, follow the [model access steps](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html#model-access-sdk-step4).
 
 ## Step 1: Setup and install
 <a name="gateway-quick-start-setup"></a>
@@ -48,10 +48,12 @@ Create a new AgentCore project with an agent and a gateway:
 1.
 
    ```
-   agentcore create --name MyGatewayAgent --defaults
+   agentcore create --project-name MyGatewayProject --name MyGatewayAgent \
+     --language Python --framework Strands --model-provider Bedrock --memory none
+   cd MyGatewayProject
    ```
 
-   The `--defaults` flag creates a project with a default Python Strands agent. Alternatively, omit `--defaults` and `--name` to use the interactive wizard to select your preferred framework.
+   These options create a Python Strands agent that uses Amazon Bedrock and no memory. Alternatively, run `agentcore create` without options and select **Agent** in the interactive wizard.
 
 1. You can also run `agentcore create` without flags to use the interactive wizard. The wizard guides you through selecting a project name, agent framework, model provider, and other options.
 
@@ -263,7 +265,7 @@ The following table shows some possible issues and their solutions:
 | Issue | Solution |
 | --- | --- |
 | "No module named 'strands'" | Run: `pip install strands-agents`  |
-| "Model not enabled" | Enable Claude Sonnet 3.7 in Bedrock console → Model access |
+| "Model access denied" | Amazon Bedrock enables access to foundation models by default. For a non-foundation model, follow the [model access steps](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html#model-access-sdk-step4). |
 | "AccessDeniedException" | Check IAM permissions for bedrock-agentcore:\* |
 | Gateway not responding | Wait 30-60 seconds after creation for DNS propagation |
 
@@ -303,7 +305,3 @@ agentcore deploy
 +  **Custom Lambda Tools** : Create Lambda functions with your business logic
 +  **Add Your Own APIs** : Extend your Gateway with OpenAPI specifications for real services
 +  **Production Setup** : Configure VPC endpoints, custom domains, and monitoring
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

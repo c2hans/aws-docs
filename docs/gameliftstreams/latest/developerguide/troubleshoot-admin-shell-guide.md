@@ -126,7 +126,3 @@ To resolve this issue:
 + Verify that the stream session is not in a `TERMINATED` or `ERROR` state by calling [GetStreamSession](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_GetStreamSession.html).
 + If the terminal connection timed out due to idle or maximum duration, call `CreateStreamSessionAdminShell` again to open a new terminal connection.
 + If the stream session has ended, start a new stream session to open a new terminal connection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

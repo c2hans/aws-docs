@@ -27,7 +27,3 @@ The Aurora DB clusters that make up an Aurora global database have the following
 Before you can follow the procedures in this section, you need an AWS account. Complete the setup tasks for working with Amazon Aurora. For more information, see [Setting up your environment for Amazon Aurora](CHAP_SettingUp_Aurora.md). You also need to complete other preliminary steps for creating any Aurora DB cluster. To learn more, see [Creating an Amazon Aurora DB cluster](Aurora.CreateInstance.md).
 
  When you are ready to set up your global database, see [Creating an Amazon Aurora global database](aurora-global-database-creating.md) for the procedure to create all the necessary resources. You can also follow the procedure in [Adding an AWS Region to an Amazon Aurora global database](aurora-global-database-attaching.md) to create a global database using an existing Aurora cluster as the primary cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

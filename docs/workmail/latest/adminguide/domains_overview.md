@@ -18,7 +18,3 @@ You can configure Amazon WorkMail to use a custom domain. You can also make a do
 + [Editing domain identity policies](editing_domains.md)
 + [Authenticating email with SPF](authenticate_domain.md)
 + [Configuring a custom MAIL FROM domain](custom-mail-from-domain.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

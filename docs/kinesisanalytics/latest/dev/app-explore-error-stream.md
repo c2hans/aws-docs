@@ -70,7 +70,3 @@ In this exercise, you update the application code to introduce a runtime error (
 1. Run the application.
 
    Because the division by zero runtime error occurs, instead of writing the results to the `DESTINATION_SQL_STREAM`, Kinesis Data Analytics sends rows to the in-application error stream. On the **Real-time analytics** tab, choose the error stream, and then you can see the rows in the in-application error stream.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

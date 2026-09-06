@@ -153,7 +153,3 @@ To allow the ESX hosts to see the NVMe namespace, you must add a controller on t
 <a name="create-vmfs"></a>
 
 Virtual Machine File System (VMFS) datastores serve as repositories for VMware virtual machines. Follow the instruction in [Create a vSphere VMFS Datastore](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/working-with-datastores-in-vsphere-storage-environment/creating-vsphere-datastores.html#GUID-5AC611E0-7CEB-4604-A03C-F600B1BA2D23-en) to set up the VMFS datastore in VMware vSphere. When prompted to select a device, choose the iSCSI LUN or NVMe namespace that you previously configured.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

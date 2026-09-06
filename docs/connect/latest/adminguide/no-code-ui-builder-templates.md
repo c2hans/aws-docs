@@ -23,7 +23,3 @@ If you have already placed UI components onto the canvas, these components are o
 The following image shows an example of a few of the templates available in the **Create** panel: Screen Pop, Disposition, Payment
 
 ![A few of the templates that are available in the Create panel: Screen Pop, Disposition, Payment.](http://docs.aws.amazon.com/connect/latest/adminguide/images/no-code-ui-builder-templates-example.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -44,7 +44,7 @@ Integrate and build your 64-bit game servers with the server SDK for Amazon Game
     + [C\# server SDK reference](integration-server-sdk5-csharp-actions.md)
   + [Server SDK for Unreal](https://github.com/amazon-gamelift/amazon-gamelift-plugin-unreal)
     + [Server SDK reference](integration-server-sdk5-unreal-actions.md)
-    + [Integrate Amazon GameLift Serversinto an Unreal Engine project](integration-engines-setup-unreal.md)
+    + [Integrate Amazon GameLift Servers into an Unreal Engine project](integration-engines-setup-unreal.md)
   + [Server SDK for Unity](https://github.com/amazon-gamelift/amazon-gamelift-plugin-unity)
     + [Server SDK reference](integration-server-sdk5-csharp-actions.md)
     + [Integrate Amazon GameLift Servers into a Unity project](integration-engines-unity-using.md)
@@ -104,7 +104,7 @@ For more information about using the AWS SDK with Amazon GameLift Servers, see t
 Use the following tools to create, update, and monitor your Amazon GameLift Servers managed hosting resources.
 + [AWS Management Console](https://console.aws.amazon.com/) – The AWS Console is a web-based application that provides centralized access to all individual AWS service consoles, including Amazon GameLift Servers. Use the Console to create or sign into an AWS account and open the Amazon GameLift Servers console to work with your game hosting resources. You can configure and deploy hosting fleets and other resources, view usage and performance metrics, track resources in the dashboard, and many other tasks. [Go to the Amazon GameLift Servers console.](https://console.aws.amazon.com/gamelift)
 + [Service API for Amazon GameLift Servers](https://docs.aws.amazon.com/gameliftservers/latest/apireference/Welcome.html) – This API gives you programmatic access to all of your Amazon GameLift Servers resources. It is part of the AWS SDK, which you can download for use with most popular programming languages. [Get the AWS SDK.](https://aws.amazon.com/developer)
-+ [AWS command line interface (CLI)](https://docs.aws.amazon.com/cli/) – The AWS CLI lets you interact with AWS services using a command-line shell. The tools provides direct access to the public APIs for AWS services as well as customized commands that are available for a service. [Get the AWS CLI.](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
++ [AWS command line interface (CLI)](https://docs.aws.amazon.com/cli/) – The AWS CLI lets you interact with AWS services using a command-line shell. The tools provide direct access to the public APIs for AWS services as well as customized commands that are available for a service. [Get the AWS CLI.](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 + [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) for Amazon GameLift Servers – The CloudFormation service helps you model and set up AWS resources to streamline infrastructure deployment and management. Create an CloudFormation template to describe the Amazon GameLift Servers resources for your hosting solution, and then use the template to build additional resources or update configurations. View the [Amazon GameLift Servers resource type reference.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_GameLift.html)
 
 ## For Amazon GameLift Servers Realtime
@@ -131,7 +131,3 @@ Node.js 10 will reach end of support on September 30, 2026. See more details in 
 You can deploy Realtime servers onto hosting resources that run on the following platforms:
 + [Amazon Linux 2023](https://aws.amazon.com/linux/amazon-linux-2023/)
 + [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

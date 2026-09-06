@@ -129,7 +129,3 @@ Let's look at the tests for the same `determine_prefix_file_size()` function in 
    When the call to `determine_prefix_file_size()` is finished, an assert is used to confirm that the returned value matches the expected value. Then, the `StaticReplayClient` method `assert_requests_match()` function is called. This function scans the recorded HTTP requests and confirms that they all match the ones specified in the array of `ReplayEvent` objects provided when creating the replay client.
 
 You can [view the complete code for these examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/testing) on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Rust. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-rust` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

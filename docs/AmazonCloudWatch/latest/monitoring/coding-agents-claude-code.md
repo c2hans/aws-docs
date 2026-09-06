@@ -23,7 +23,3 @@ For the complete, continually updated guidance, including deployment templates a
 + [Choose a setup path](#coding-agents-claude-code-paths)
 + [Set up Claude Code metrics in Amazon CloudWatch with a bearer token](coding-agents-claude-code-bearer-token.md)
 + [Set up Claude Code with the Claude apps gateway](coding-agents-claude-code-gateway.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

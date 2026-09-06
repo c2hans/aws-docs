@@ -110,7 +110,3 @@ For information about AMIs that you can subscribe to on the AWS Marketplace see 
 For information about using Systems Manager to help your users find the latest AMI that they should use when launching an instance, see the following:
 + [Reference AMIs using Systems Manager parameters](using-systems-manager-parameter-to-find-AMI.md)
 + [Reference the latest AMIs using Systems Manager public parameters](finding-an-ami-parameter-store.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

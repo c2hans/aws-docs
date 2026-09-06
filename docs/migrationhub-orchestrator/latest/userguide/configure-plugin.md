@@ -301,7 +301,3 @@ Any WSMan Instance that has an HTTP listener is removed, along with existing HTT
 If Windows Remote Management (WinRM) is not set up properly on the Windows Remote Server, an attempt to communicate will fail. If this happens, you must delete the certificate that corresponds to that server from the following location on the container:
 ** /opt/amazon/mhub-orchestrator-plugin/remote-auth/windows/certs/{{ads-server-id}}.cer**
 After you delete the certificate, wait for the ongoing process to be retried.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Hub Orchestrator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-orchestrator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

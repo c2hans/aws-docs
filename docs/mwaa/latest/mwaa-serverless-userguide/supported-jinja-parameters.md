@@ -45,7 +45,3 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/su
 | ds\_add | ds\_add(ds, days): Add or subtract days from a YYYY-MM-DD. |
 | ds\_format | ds\_format(ds, input\_format, output\_format): Output datetime string in a given format. |
 | random | The standard lib's random.random |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,7 +52,3 @@ Within a dynamic label, you can use the following values relating to properties 
 For example, suppose you have a search expression **SEARCH(' {AWS/Lambda, FunctionName} Errors ', 'Sum')**, which finds the `Errors` for each of your Lambda functions. If you set the label to be `[max: ${MAX} Errors for Function Name ${LABEL}]`, the label for each metric is **[max: {{number}} Errors for Function Name {{Name}}]**.
 
 You can add as many as six dynamic values to a label. You can use the `${LABEL}` placeholder only once within each label.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

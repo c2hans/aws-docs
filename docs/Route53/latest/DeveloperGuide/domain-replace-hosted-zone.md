@@ -18,7 +18,3 @@ If you [delete the hosted zone](https://docs.aws.amazon.com/Route53/latest/Devel
 When you create a hosted zone, Route 53 assigns a set of four name servers to the hosted zone. If you delete a hosted zone and then create one, Route 53 assigns another set of four name servers. Typically, none of the name servers for the new hosted zone match any of the name servers for the previous hosted zone. If you don't update the domain configuration to use the name servers for the new hosted zone, the domain will remain unavailable on the internet.
 
 1. If you encounter issues while replacing the hosted zone for a domain, you can contact AWS Support for free. For more information, see [Contacting AWS Support about domain registration issues](domain-contact-support.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

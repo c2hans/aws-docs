@@ -14,7 +14,3 @@ Review the following resources to understand the pricing considerations for usin
 + For information about Network Firewall pricing, see [Network Firewall pricing](https://aws.amazon.com/network-firewall/pricing/).
 + For information about Amazon S3 pricing, see [Amazon S3 pricing](https://aws.amazon.com/S3/pricing/).
 + For information about Amazon Athena pricing, see [Amazon Athena pricing](https://aws.amazon.com/athena/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

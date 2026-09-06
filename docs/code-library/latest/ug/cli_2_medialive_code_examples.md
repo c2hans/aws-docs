@@ -211,7 +211,3 @@ The output repeats back the contents of the JSON file, plus the following values
 `Arn` for the input. The last part of the ARN is the unique input ID.`Attached Channels`, which is always empty for a newly created input.`Destinations`, which is empty in this example because it is used only with a PUSH input.`Id` for the input, the same as the ID in the ARN.`MediaConnectFlows`, which is empty in this example because it is used only with an input of type MediaConnect.`SecurityGroups`, which is empty in this example because it is used only with a PUSH input.`State` of this input.`Tags`, which is empty (the default for this parameter).
 For more information, see [Creating an Input](https://docs.aws.amazon.com/medialive/latest/ug/create-input.html) in the *AWS Elemental MediaLive User Guide*.
 +  For API details, see [CreateInput](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/medialive/create-input.html) in *AWS CLI Command Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

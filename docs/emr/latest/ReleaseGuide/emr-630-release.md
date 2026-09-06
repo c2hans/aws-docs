@@ -420,7 +420,3 @@ Reconfiguration actions occur when you specify a configuration for instance grou
 | zeppelin-site | Change configuration settings in zeppelin-site.xml. | Restarts Zeppelin. |
 | zookeeper-config | Change values in ZooKeeper's zoo.cfg file. | Restarts Zookeeper server. |
 | zookeeper-log4j | Change values in ZooKeeper's log4j.properties file. | Restarts Zookeeper server. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ By default, EventBridge Scheduler encrypts event metadata and message data that 
 If your specific use case requires that you control and audit the encryption keys that protect your data on EventBridge Scheduler, you can use a customer managed key.
 
 You must request an RFC using the Management \| AWS service \| Self-provisioned service \| Add (managed automation) change type prior to using Amazon EventBridge to onboard the AWS KMS permission.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

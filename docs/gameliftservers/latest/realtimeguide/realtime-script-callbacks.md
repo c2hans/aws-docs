@@ -34,7 +34,7 @@ onMessage(gameMessage)
 ## onHealthCheck
 <a name="realtime-script-callback-onhealthcheck"></a>
 
-Invoked to set the status of the game session health. By default, health status is healthy (or `true`. This callback can be implemented to perform custom health checks and return a status.
+Invoked to set the status of the game session health. By default, health status is healthy (or `true`). This callback can be implemented to perform custom health checks and return a status.
 
 ### Syntax
 <a name="realtime-script-callback-onhealthcheck-syntax"></a>
@@ -162,7 +162,3 @@ Invoked when a player sends a request to leave a group.
 ```
 onPlayerLeaveGroup(groupId, peerId)
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ AWS Ground Station allows you to communicate with your satellites bi-directional
 +  To learn essential AWS Ground Station concepts, see [How AWS Ground Station works](how-it-works.md).
 +  To learn how to set up your account and resources to use AWS Ground Station, see [Get started](getting-started.md).
 +  To programmatically use AWS Ground Station, please refer to the [AWS Ground Station API Reference](https://docs.aws.amazon.com/ground-station/latest/APIReference/Welcome.html). The API Reference describes all the API operations for AWS Ground Station in detail. It also provides sample requests, responses, and errors for the supported web service protocols. You can use the [AWS CLI](https://aws.amazon.com/cli), or an [AWS SDK](https://aws.amazon.com/developer/tools/), in the language of your choice, to write code that interacts with AWS Ground Station.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

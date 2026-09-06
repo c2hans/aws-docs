@@ -120,7 +120,3 @@ aws --profile saml --region us-east-1 amscm create-rfc --change-type-id "ct-1d2f
 <a name="ex-dms-rt-create-tip"></a>
 
 You can create a AWS DMS task that captures three different types of changes or data. For more information, see [Working with AWS DMS Tasks](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.html), [Creating a Task](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Creating.html), and [Creating Tasks for Ongoing Replication Using AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Task.CDC.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

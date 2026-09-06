@@ -83,7 +83,3 @@ View details about updates to AWS managed policies for AWS Batch since this serv
 | [BatchServiceRolePolicy](#security-iam-awsmanpol-BatchServiceRolePolicy) policy added | With the **BatchServiceRolePolicy** managed policy for the **AWSServiceRoleForBatch** service-linked role, you can use a service-linked role managed by AWS Batch. With this policy, you don't need to maintain your own role for use in your compute environments. | March 10, 2021 |
 | [AWSBatchFullAccess](#security-iam-awsmanpol-BatchFullAccess) - add permission to add service-linked role | Add IAM permissions to allow the **AWSServiceRoleForBatch** service-linked role to be added to the account. | March 10, 2021 |
 | AWS Batch started tracking changes | AWS Batch started tracking changes for its AWS managed policies. | March 10, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

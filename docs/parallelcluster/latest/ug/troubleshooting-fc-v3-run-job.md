@@ -68,7 +68,3 @@ A possible cause for this error is that your application has been compiled for a
 <a name="run-job-mpi-dns-disabled-v3"></a>
 
 For clusters created with [SlurmSettings](Scheduling-v3.md#Scheduling-v3-SlurmSettings) / [Dns](Scheduling-v3.md#Scheduling-v3-SlurmSettings-Dns) / [DisableManagedDns](Scheduling-v3.md#yaml-Scheduling-SlurmSettings-Dns-DisableManagedDns) and [UseEc2Hostnames](Scheduling-v3.md#yaml-Scheduling-SlurmSettings-Dns-UseEc2Hostnames) set to `true`, the Slurm node name isn't resolved by the DNS. Slurm can bootstrap MPI processes when `nodenames` aren't enabled and if the MPI job is run in a Slurm context. We recommend following the guidance in the [Slurm MPI User's Guide](https://slurm.schedmd.com/mpi_guide.html) to run MPI jobs with Slurm.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

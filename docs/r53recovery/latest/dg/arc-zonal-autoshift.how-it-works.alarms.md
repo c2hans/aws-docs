@@ -19,7 +19,3 @@ Outcome alarms also provide information for the *practice run outcome* that ARC 
 **Blocking alarms (optional)**
 Optionally, you can specify a second type of alarm, the *blocking alarm*. Blocking alarms block practice runs from starting, or continuing, when one or more of the alarms is in an `ALARM` state. Blocking alarms block practice run traffic shifts from being started—and stop any practice runs in progress—when at least one of the alarms is in an `ALARM` state.
 For example, in a large architecture with multiple microservices, when one microservice is experiencing a problem, you typically want to stop all other changes in the application environment, which would including blocking practice runs. You can add a blocking alarm in ARC to accomplish this.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

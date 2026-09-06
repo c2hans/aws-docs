@@ -46,7 +46,3 @@ For more information, see [Logging Connect Customer API calls with AWS CloudTrai
 Connect Customer is integrated with Amazon EventBridge, a service that provides a record of the Connect Customer API calls that a user, role, or AWS service makes. All public Connect Customer APIs support EventBridge, with events published to CloudTrail consumable in EventBridge.
 
 Some Connect Customer resources are integrated directly into EventBridge. For more information, see [EventBridge events emitted by Connect Customer.](https://docs.aws.amazon.com/connect/latest/adminguide/connect-eventbridge-events.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

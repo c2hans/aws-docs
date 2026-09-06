@@ -220,7 +220,3 @@ To flatten arrays, use the syntax: `[*]` in the `ResultSelector` field as shown 
 For examples that show how to flatten an array, see *Step 3* in the following tutorials:
 + [Processing batch data with a Lambda function in Step Functions](tutorial-itembatcher-param-task.md)
 + [Processing individual items with a Lambda function in Step Functions](tutorial-itembatcher-single-item-process.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

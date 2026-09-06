@@ -87,7 +87,3 @@ Any attributes you do not explicitly specify are set to the defaults listed in t
 Use the Java class `KeyPairAttributesMap` to handle key attributes for a key pair. `KeyPairAttributesMap` encapsulates two `KeyAttributesMap` objects; one for a public key and one for a private key.
 
 To set individual attributes for the public key and private key separately, you can use the `put()` method on corresponding `KeyAttributes` map object for that key. Use the `getPublic()` method to retrieve the attribute map for the public key, and use `getPrivate()` to retrieve the attribute map for the private key. Populate the value of multiple key attributes together for both public and private key pairs using the `putAll()` with a key pair attributes map as its argument.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

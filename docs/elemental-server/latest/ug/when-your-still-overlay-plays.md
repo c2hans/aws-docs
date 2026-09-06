@@ -22,7 +22,3 @@ Unless you have a reason to set it otherwise, set both of these settings to **St
 Specify the length of time, in milliseconds, that you want the overlay to remain for. This duration includes fade-in time, but not fade-out time, as the following image shows.
 
 ![This image shows three rectangles, representing the time when the overlay is fading in, the time when the overlay is at full opacity, and the time when the overlay is fading out. A brace labeled "Duration" surrounds the first two boxes.](http://docs.aws.amazon.com/elemental-server/latest/ug/images/overlay-fadein-fadeout-duration.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

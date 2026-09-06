@@ -89,7 +89,3 @@ In this step, you run the AWS Glue export job created in the previous step. Afte
    ```
 
 To schedule the AWS Glue job you just ran manually, proceed to [Step 3: (Optional) Create a trigger to schedule the export job](S3-tutorial-step3.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -133,7 +133,3 @@ The code for this pattern is available in the GitHub [sample-awsconfig-bedrock-c
 + [Use action groups to define actions for your agent to perform](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-create.html) (Amazon Bedrock documentation)
 + [desired-instance-type rule](https://docs.aws.amazon.com/config/latest/developerguide/desired-instance-type.html) (AWS Config documentation)
 + [How AWS Config works](https://docs.aws.amazon.com/config/latest/developerguide/how-does-config-work.html) (AWS Config documentation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

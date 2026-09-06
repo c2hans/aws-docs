@@ -54,7 +54,3 @@ Amazon Simple Email Service v2 provides the following APIs for data retrieval.
 | <a name="ses-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListTagsForResource.html) | Retrieve a list of the tags (keys and values) that are associated with a specific resource for your account | Read |
 | <a name="ses-ListTenantResources"></a>[ListTenantResources](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListTenantResources) | List all the resources associated to a tenant | List |
 | <a name="ses-ListTenants"></a>[ListTenants](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListTenants) | List all the tenants for your account | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

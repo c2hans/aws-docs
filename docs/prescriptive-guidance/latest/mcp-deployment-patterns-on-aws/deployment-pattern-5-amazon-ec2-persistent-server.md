@@ -10,7 +10,3 @@ Amazon Elastic Compute Cloud (EC2) provides virtual server instances where MCP s
 **Architecture Characteristics**
 + Pros: Full OS and runtime control with no execution time limits, native WebSocket and SSE support without gateway timeout constraints, zero cold starts with predictable performance, cost-efficient at sustained high throughput with reserved Instances, familiar operational model for teams migrating from on-premises environments.
 + Limitations: Highest operational overhead — OS patching, AMI maintenance, and security hardening are fully self-managed. Scaling via Auto Scaling Groups is slower (2–5 min) compared to serverless patterns. Instances accrue costs 24/7 regardless of traffic. Multi-AZ high availability requires explicit configuration. Long-lived access keys on instances are a common security anti-pattern.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

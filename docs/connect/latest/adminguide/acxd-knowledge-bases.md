@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-knowledge
 # Knowledge bases
 <a name="acxd-knowledge-bases"></a>
 
-Knowledge bases are reusable libraries of trusted content that your Agentic CX Designer applications can use to answer user questions.
+Knowledge bases are reusable libraries of trusted content that your agentic CX designer applications can use to answer user questions.
 
 Use a knowledge base when you want your conversational AI application to provide grounded answers without creating a dedicated flow for every possible question. Knowledge bases are useful for FAQs, policies, product information, troubleshooting guidance, support instructions, and other content users may ask about during a conversation.
 
@@ -13,7 +13,7 @@ To access knowledge bases, select **Resources** from your workspace menu, then c
 
 A knowledge base is an on-demand content source that helps your application answer questions using approved information.
 
-When a user asks a question, Agentic CX Designer can search the knowledge base for relevant content and return an answer based on the best match. This helps the application respond to common questions while keeping answers grounded in the content your team provides.
+When a user asks a question, agentic CX designer can search the knowledge base for relevant content and return an answer based on the best match. This helps the application respond to common questions while keeping answers grounded in the content your team provides.
 
 Knowledge bases can be used in:
 
@@ -22,7 +22,7 @@ Knowledge bases can be used in:
 | **Knowledge base node** | Retrieves an answer at a specific point in a deterministic flow. |
 | **Agent tool** | Lets an agent use the knowledge base as a tool when answering questions or completing a task. |
 
-Agentic CX Designer supports these knowledge base content types:
+Agentic CX designer supports these knowledge base content types:
 
 |  |  |
 | --- |--- |
@@ -205,7 +205,7 @@ At a high level:
 
 1. A user asks a question.
 
-1. Agentic CX Designer compares the user's question against knowledge base content.
+1. Agentic CX designer compares the user's question against knowledge base content.
 
 1. The most relevant matching content is retrieved.
 
@@ -251,7 +251,3 @@ When attaching a knowledge base as a tool, provide clear instructions so the age
 + Identify the tool as a knowledge base and when to use
 + What to do if no answer is found
 + Whether it should summarize or quote content
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

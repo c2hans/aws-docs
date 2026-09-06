@@ -61,7 +61,3 @@ The **Logs** tab is available for CodeBuild and CloudFormation actions that have
 1. To retry actions in a stage that were not completed successfully, choose **Retry**.
 
 1. The status from the last time the action ran, including the results of that action (**Succeeded** or **Failed**) is displayed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

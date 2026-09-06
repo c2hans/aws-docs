@@ -64,7 +64,3 @@ Changes made to a policy can take a few minutes to become effective because of h
 <a name="iot-authorization-training"></a>
 
 For information about authorization in AWS IoT Core, take the [Deep Dive into AWS IoT Core Authentication and Authorization](https://www.aws.training/Details/Curriculum?id=42335) course on the AWS Training and Certification website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

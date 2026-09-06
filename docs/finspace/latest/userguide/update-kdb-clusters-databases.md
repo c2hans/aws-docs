@@ -38,7 +38,3 @@ This button is not available for *RDB* and *Gateway* type clusters.
 After the update completes, you must re-load the updated database. However, if you use a historical database (HDB) cluster with a single database in a rolling deployment, FinSpace autoloads the database after an update.
 
 1. Choose **Save changes**. The cluster details page opens and the updated information is displayed once the cluster updates successfully.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

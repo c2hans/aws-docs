@@ -70,7 +70,3 @@ The following table describes the important changes in each release of the *Amaz
 | [IAM managed policies](#doc-history) | Amazon AppFlow now supports IAM managed policies. For more information, see [Identity and access management for Amazon AppFlow](https://docs.aws.amazon.com/appflow/latest/userguide/security-iam.html). | July 3, 2020 |
 | [Google Analytics service quota](#doc-history) | When you use Google Analytics as a source, you can include up to 9 dimensions and 10 metrics per flow run. For more information, see [Quotas for Amazon AppFlow](https://docs.aws.amazon.com/appflow/latest/userguide/service-quotas.html). | June 23, 2020 |
 | [Initial release](#doc-history) | Initial release of the Amazon AppFlow User Guide. | April 22, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-sqlser
 <a name="custom-sqlserver-WinAuth.ManagingDBI.Restoring"></a>
 
 You can restore a DB snapshot or do point-in-time recovery (PITR) for a SQL Server DB instance and then add it to an Active Directory domain. Once the DB instance is restored, modify the instance using the process explained in [Step 5: Create or modify a RDS Custom for SQL Server DB instance](custom-sqlserver-WinAuth.settingUp.md#custom-sqlserver-WinAuth.settingUp.CreateDBInstance) to add the DB instance to an AD domain.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

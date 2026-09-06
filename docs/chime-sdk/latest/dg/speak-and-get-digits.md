@@ -272,7 +272,3 @@ This table lists and describes the error messages thrown by the the `Speak` acti
 You don't need to manually create a service-linked role for the `Speak` or `SpeakAndGetDigits` actions. When you create or update a SIP media application in the Amazon Chime SDK console, the AWS Command Line Interface, or the AWS API, the Amazon Chime SDK creates the service-linked role for you.
 
 For more information, see [Using the Amazon Chime service-linked role](https://docs.aws.amazon.com/chime/latest/ag/using-service-linked-roles-stream.html) in the *Amazon Chime SDK Administrator Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

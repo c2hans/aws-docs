@@ -9,7 +9,7 @@ The following table compares the features that are supported by the different ac
 
 | Feature | Browser-Based Access | Client-Based Access for Windows | Client-Based Access for macOS | Notes |
 | --- | --- | --- | --- | --- |
-| Enterprise Deployement Tool | ✗ | ✓ | ✗ | For more information, see [Tutorial: Install the Amazon WorkSpaces Applications Client and Customize the Client Experience for Your Users](install-client-configure-settings.md). |
+| Enterprise Deployment Tool | ✗ | ✓ | ✗ | For more information, see [Tutorial: Install the Amazon WorkSpaces Applications Client and Customize the Client Experience for Your Users](install-client-configure-settings.md). |
 | HIPAA/PCI compliance | ✓ | ✓ | ✓ | For more information, see [Compliance](https://aws.amazon.com/appstream2/faqs/#Compliance). |
 | Active Directory authentication | ✓ | ✓ | ✓ | For more information, see [Using Active Directory with WorkSpaces Applications](active-directory.md). |
 | MFA (multi-factor authentication) | ✓ | ✓ | ✓ | For WorkSpaces Applications, MFA is supported via SAML 2.0. |
@@ -36,7 +36,3 @@ The following table compares the features that are supported by the different ac
 The next topics provide information about how to configure user access to WorkSpaces Applications for application streaming.
 
 For guidance that you can provide your users to help them get started with application streaming, see [Guidance for WorkSpaces Applications Users](user-guidance.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

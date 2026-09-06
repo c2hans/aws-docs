@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/federated-permissions
 # Amazon Redshift federated permissions
 <a name="federated-permissions"></a>
 
-Amazon Redshift federated permissions simplifies permissions management across multiple Redshift data warehouses by enabling you to define data permissions once and automatically enforce them across all warehouses in your AWS account. This eliminates the need to redefine, manage permissions and fine grained access control policies across multiple warehouses.
+Amazon Redshift federated permissions simplifies permissions management across multiple Redshift data warehouses so you can define data permissions once and automatically enforce them across all warehouses in your AWS account. This eliminates the need to redefine, manage permissions and fine grained access control policies across multiple warehouses.
 
  When you register Redshift warehouse namespace/cluster with AWS Glue Data Catalog, all databases from registered warehouse namespaces/clusters are automatically mounted in every warehouse, providing seamless data discovery without manual configuration.
 
@@ -33,7 +33,7 @@ You define permissions on database objects using familiar Redshift SQL commands,
 + Reduce administrative overhead and potential for configuration errors
 
 **Enhanced security and compliance**
-+ Ensure consistent security policy enforcement across all warehouses
++ Maintain consistent security policy enforcement across all warehouses
 + Implement fine-grained access controls at table, and column level
 + Audit permissions from any warehouse
 + Enhanced compliance tooling with additional SHOW commands
@@ -67,7 +67,3 @@ Implement a data mesh approach where multiple independent compute resources oper
 **Cost optimization**
 
 Scale compute resources independently for different use cases while maintaining centralized permission management.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

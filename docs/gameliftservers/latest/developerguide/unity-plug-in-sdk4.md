@@ -134,7 +134,7 @@ This scenario creates a game backend service that performs player authentication
 **Single-Region fleet**
 This scenario creates a game backend service with a single Amazon GameLift Servers fleet. It creates the following resources:
 + An Amazon Cognito user pool for a player to authenticate and start a game.
-+ An AWS Lambda handler to search for an existing game session with an open player slot on the fleet. If it can't find a open slot, it creates a new game session.
++ An AWS Lambda handler to search for an existing game session with an open player slot on the fleet. If it can't find an open slot, it creates a new game session.
 
 **Multi-Region fleet with a queue and custom matchmaker**
 This scenario forms matches by using Amazon GameLift Servers queues and a custom matchmaker to group together the oldest players in the waiting pool. It creates the following resources:
@@ -195,7 +195,7 @@ For more information about Amazon S3 buckets, see [Creating, configuring, and wo
 
 1. In the **Account Bootstrapping** window, you choose an existing Amazon S3 bucket or create a new Amazon S3 bucket:
    + To choose an existing bucket, choose **Choose existing Amazon S3 bucket** and **Update** to save your selection.
-   + Choose **Create new Amazon S3 bucket** to create a new Amazon Simple Storage Service bucket, then choose a **Policy**. The policy specifies when the Amazon S3 bucket will be expire. Choose **Create** to create the bucket.
+   + Choose **Create new Amazon S3 bucket** to create a new Amazon Simple Storage Service bucket, then choose a **Policy**. The policy specifies when the Amazon S3 bucket will expire. Choose **Create** to create the bucket.
 
 ### Deploy a game scenario
 <a name="unity-plug-in-sdk4-scenario-deploy"></a>
@@ -310,7 +310,7 @@ Set up the game client files of the sample game.
 
    Unity builds the sample game client, placing the executable and required assets in the specified client build folder.
 
-1. You've no built the game server and client. In the next steps, you run the game and see how it interacts with Amazon GameLift Servers.
+1. You've now built the game server and client. In the next steps, you run the game and see how it interacts with Amazon GameLift Servers.
 
 ### Test the sample game locally
 <a name="unity-plug-in-sdk4-sample-game-test"></a>
@@ -326,7 +326,7 @@ Run the sample game you imported using Amazon GameLift Servers Local.
 
 1. In the **Local Testing** window, specify a **Game Server .exe File Path**. The path must include the executable name. For example, `C:/MyGame/GameServer/MyGameServer.exe`.
 
-1. Choose **Deploy and Run**. The plugin for Unity launches the game server and opens an Amazon GameLift Servers Local log window. The windows contains log messages including messages sent between the game server and Amazon GameLift Servers Local.
+1. Choose **Deploy and Run**. The plugin for Unity launches the game server and opens an Amazon GameLift Servers Local log window. The window contains log messages including messages sent between the game server and Amazon GameLift Servers Local.
 
 1. Launch the game client. Find the build location with the sample game client and choose the executable file .
 
@@ -411,7 +411,3 @@ After you're done with your sample game, shut down the server in Unity.
 1. In the game client, choose **Quit** or close the window to stop the game client.
 
 1. In Unity, in the **Local Testing** window, choose **Stop** or close the game server windows to stop the server.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

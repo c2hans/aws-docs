@@ -116,7 +116,3 @@ The following table describes the available SAML-based authentication options fo
 | AADClientSecret | The client secret associated with the registered application on Azure AD used to authorize fetching tokens. | NONE |
 | AADTenant | The Azure AD Tenant ID. | NONE |
 | IdpARN | The Amazon Resource Name (ARN) of the SAML provider in IAM that describes the Idp. | NONE |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

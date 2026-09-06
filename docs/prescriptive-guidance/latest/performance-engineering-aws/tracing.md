@@ -70,7 +70,3 @@ AWS provides the following services for tracing and its associated visualization
   For a reference example of how to instrument your application by using the ADOT SDK, see the [documentation](https://aws-otel.github.io/docs/getting-started/java-sdk/auto-instr). For a reference example of how to use the ADOT SDK to send data to Amazon OpenSearch Service, see the [OpenSearch Service documentation](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/trace-analytics.html).
 
   For a reference example of how to instrument your application running on Amazon EKS, see the blog post [Metrics and traces collection using Amazon EKS add-ons for AWS Distro for OpenTelemetry](https://aws.amazon.com/blogs/containers/metrics-and-traces-collection-using-amazon-eks-add-ons-for-aws-distro-for-opentelemetry/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

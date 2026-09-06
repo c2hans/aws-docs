@@ -202,7 +202,3 @@ In addition, you should include "(WARNING: This HIT may contain adult content. W
 <a name="CustomQualType"></a>
 
 Requester-defined qualification types can also be created to handle a range of needs in managing who can work on your tasks. Information on how to create and use custom qualification types can be found in [Working with custom qualification types](WorkWithCustomQualType.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

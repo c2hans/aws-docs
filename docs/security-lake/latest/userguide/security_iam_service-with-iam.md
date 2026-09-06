@@ -227,7 +227,3 @@ Changing the permissions for a service role may create operational issues with y
 Security Lake uses an IAM service-linked role named `AWSServiceRoleForAmazonSecurityLake`. The Security Lake service-linked role grants permissions to operate a security data lake service on behalf of customers. This service-linked role is an IAM role that's linked directly to Security Lake. It's predefined by Security Lake, and it includes all the permissions that Security Lake requires to call other AWS services on your behalf. Security Lake uses this service-linked role in all the AWS Regions where Security Lake is available.
 
 For details about creating or managing the Security Lake service-linked role, see [Using service-linked roles for Security Lake](using-service-linked-roles.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

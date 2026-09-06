@@ -75,7 +75,3 @@ For detailed instructions on granting admin consent through the consent dialog o
 <a name="onedrive-kb-acl-next-steps"></a>
 
 For more information about ACL best practices, see [Best practices for managing ACLs in knowledge bases](acl-best-practices-kb.md). For information about creating admin-managed OneDrive knowledge bases, see [Admin-managed setup (service credentials)](onedrive-kb-admin-managed.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

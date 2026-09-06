@@ -67,7 +67,3 @@ You can learn more about a partner's integration with CloudTrail Lake by viewing
 1.  From the navigation pane, under **Lake**, choose **Integrations**.
 
 1. From the **Integrations** page, choose **Available sources**, then choose **Learn more** for the partner whose documentation you want to view.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

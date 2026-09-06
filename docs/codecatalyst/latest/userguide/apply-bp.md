@@ -58,7 +58,3 @@ The blueprint won’t be applied until the pull request is approved and merged. 
 Blueprint authors can also add a custom blueprint to projects in specified spaces that don't have the blueprint available to create new projects or add to existing projects. For more information, see [Publishing and adding a custom blueprint in specified spaces and projects](publish-bp.md#publish-preview-existing-project-bp).
 
 If you no longer want to receive updates for a blueprint, you can disassociate the blueprint from your project. For more information, see [Disassociating a blueprint from a project to stop updates](disassociate-bp.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

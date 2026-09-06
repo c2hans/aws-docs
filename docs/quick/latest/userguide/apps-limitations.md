@@ -31,7 +31,7 @@ The following limitations apply to apps in Amazon Quick in its current release.
 ## Sharing and access
 <a name="apps-limits-sharing"></a>
 + **Subscription requirement** — Only users with Author, Professional, Author Pro, Enterprise, or Admin Pro subscriptions can view apps.
-+ **External access** — Users must have a Amazon Quick account to view an app, unless the app is published publicly. Public access is available on Free and Plus accounts only. Public apps cannot use action connectors, embedded visuals, embedded chat, or spaces.
++ **External access** — Users must have a Amazon Quick account to view an app, unless the app is published publicly. Public access is available on Free and Plus accounts only. Public apps cannot use connectors, embedded visuals, embedded chat, or spaces.
 
 ## Portability
 <a name="apps-limits-portability"></a>
@@ -51,7 +51,3 @@ For detailed information about sandbox restrictions, see [Sandbox restrictions](
 + **No direct link navigation** — Users must use Cmd\+Click or Ctrl\+Click.
 + **No external images** — CSP blocks loading images from external URLs.
 + **No built-in app analytics** — As a workaround, you can ask the agent to implement a view counter using shared app storage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

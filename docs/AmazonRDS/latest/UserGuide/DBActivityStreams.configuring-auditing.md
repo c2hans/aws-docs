@@ -29,7 +29,3 @@ When you configure unified auditing for use with database activity streams, the 
 We strongly recommend that you back up your audit data before activating a database activity stream.
 
   For a description of the `UNIFIED_AUDIT_TRAIL` view, see [UNIFIED\_AUDIT\_TRAIL](https://docs.oracle.com/database/121/REFRN/GUID-B7CE1C02-2FD4-47D6-80AA-CF74A60CDD1D.htm#REFRN29162). If you have an account with Oracle Support, see [How To Purge The UNIFIED AUDIT TRAIL](https://support.oracle.com/knowledge/Oracle%20Database%20Products/1582627_1.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

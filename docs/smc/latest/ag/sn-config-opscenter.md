@@ -15,7 +15,3 @@ For more information, see [AWS Systems Manager OpsCenter](https://docs.aws.amazo
 + [Configuring ServiceNow for AWS Systems Manager OpsCenter](sn-opscenter-integ.md)
 + [Validating AWS Systems Manager OpsCenter integration in ServiceNow](sn-opscenter-validate.md)
 + [Fields mapped from OpsCenter OpsItem records to ServiceNow Incident records](fields-opsitems.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

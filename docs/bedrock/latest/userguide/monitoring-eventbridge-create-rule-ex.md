@@ -32,7 +32,3 @@ This example shows how to set up notification of Amazon Bedrock state change eve
    + Select **SNS topic** as the target and choose the topic that you created.
 
 1. After you create the rule, Amazon SNS notifies you when a batch inference job completes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

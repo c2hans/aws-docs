@@ -86,7 +86,3 @@ To run the backend and the frontend together, use the following steps:
 1. Open the UI at **http://localhost:3000"**. The UI connects automatically to the backend at **http://127.0.0.1:8000**.
 
 From the UI, you can trigger scans, view service-wise expandable infrastructure data, explore dependency graphs, and download Markdown documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

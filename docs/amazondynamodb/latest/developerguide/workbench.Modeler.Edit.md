@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/wor
 1. You can also **Duplicate**, **Move**, **Delete**, and **Export** the model from the same menu.
 
 1. To change to another model, you can either go through the main screen again, or use the model selection dropdown.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

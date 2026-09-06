@@ -190,7 +190,3 @@ Create alerts from any panel type. This means you can reuse the queries in the p
 1. From the dropdown menu, select **More…** and then choose **New alert rule**.
 
 This will open the alert rule form, allowing you to configure and create your alert based on the current panel’s query.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

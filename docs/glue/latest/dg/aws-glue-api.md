@@ -938,7 +938,3 @@ This section describes data types and primitives used by AWS Glue SDKs and Tools
   + [UnrecognizedRunnerException structure](aws-glue-api-exceptions.md#aws-glue-api-exceptions-UnrecognizedRunnerException)
   + [ValidationException structure](aws-glue-api-exceptions.md#aws-glue-api-exceptions-ValidationException)
   + [VersionMismatchException structure](aws-glue-api-exceptions.md#aws-glue-api-exceptions-VersionMismatchException)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

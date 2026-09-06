@@ -329,7 +329,3 @@ end;
 ```
 
  Once the job is complete, check the Amazon RDS database to make sure all the data has been successfully imported. At this point, you can delete all the dump files using `UTL_FILE.FREMOVE` to reclaim disk space.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

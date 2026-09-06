@@ -120,7 +120,3 @@ Follow this procedure if you want to enable or disable passthrough of SCTE 35 me
 1. If appropriate, repeat for other outputs in this or other UDP output groups.
 
 All SCTE 35 messages from the input will be included in the data stream of the outputs that you have set up.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

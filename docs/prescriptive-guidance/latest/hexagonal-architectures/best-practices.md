@@ -81,7 +81,3 @@ As discussed earlier, the domain is the core of the application and doesn't depe
 The primary adapters are the entry points to the application, as represented by the entrypoints folder. This example uses the api folder as the primary adapter. This folder contains an API model, which defines the interface the primary adapter requires to communicate with clients. The tests folder contains end-to-end tests for the API. These are shallow tests that validate that the components of the application are integrated and work in harmony.
 
 The secondary adapters, as represented by the adapters folder, implement the external integrations required by the domain ports. A database repository is a great example of a secondary adapter. When the database system changes, you can write a new adapter by using the implementation that's defined by the domain. There is no need to change the domain or business logic. The tests subfolder contains external integration tests for each adapter.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

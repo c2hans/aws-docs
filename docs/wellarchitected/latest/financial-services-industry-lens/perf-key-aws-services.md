@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 +  [Amazon Bedrock Model Evaluation](https://aws.amazon.com/bedrock/evaluations/) helps you evaluate, compare, and select the most appropriate foundation models for your specific use cases by measuring performance on custom evaluation sets.
 +  [Amazon OpenSearch Service vector](https://aws.amazon.com/opensearch-service/serverless-vector-database/) database capabilities enable efficient similarity search functionality for AI applications, with support for multiple algorithms and high-scale vector operations.
 +  [Amazon Bedrock Prompt Engineering tools](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html) help optimize prompts for better AI responses, with features for tracking and managing prompt history and performance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

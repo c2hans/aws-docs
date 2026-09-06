@@ -24,8 +24,4 @@ For authentication of requests, Support uses [Signature Version 4 Signing Proces
 
 For more information about this service and the endpoints to use, see [About the AWS Support API](https://docs.aws.amazon.com/awssupport/latest/user/about-support-api.html) in the * AWS Support User Guide*.
 
-This document was last published on September 1, 2026.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+This document was last published on September 4, 2026.

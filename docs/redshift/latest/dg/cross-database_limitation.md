@@ -15,7 +15,3 @@ When you work with the cross-database query feature in Amazon Redshift, be aware
 + You can only create late-binding and materialized views on objects of other databases in the cluster. You can't create regular views on objects of other databases in the cluster.
 + Amazon Redshift doesn't support tables with column-level privileges for cross-database queries.
 +  Running cross-database queries on tables with interleaved sort keys isn't supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

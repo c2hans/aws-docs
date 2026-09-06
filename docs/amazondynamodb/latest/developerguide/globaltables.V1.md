@@ -15,7 +15,3 @@ To determine which version you are using, see [Determining the version of a glob
 + [Creating a global table (Version 2017.11.29)](globaltables.tutorial.md)
 + [Monitoring global tables](globaltables_monitoring.md)
 + [Using IAM with global tables](gt_IAM.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

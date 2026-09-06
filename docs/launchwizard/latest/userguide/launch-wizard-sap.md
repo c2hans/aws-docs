@@ -221,7 +221,3 @@ Elastic Load Balancing can be deployed as an optional component to load balance 
 <a name="launch-wizard-sap-related-services-ssm"></a>
 
 AWS Systems Manager for SAP is a secure end-to-end management solution for resources on AWS. It provides automation capabilities to help you manage and operate your SAP applications on AWS more efficiently with features such as as managed backups with AWS Backup for SAP HANA and graceful start/stop of SAP HANA.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
 +  **Combined approach** — You can easily combine Spot Instances with On-Demand and RIs to further optimize workload cost with performance. For example, in the following figure, you could use Reserved Instances for your daily workloads, Spot Instances for component exploration, and On-Demand Instances for design review.
 
 ![A graph showing EC2 cost optimization for CFD cases.](http://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/ec2-cost-optimization.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

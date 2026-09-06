@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/sysops-administ
 + Skill 4.2.3: Implement, configure, and troubleshoot encryption in transit (for example, AWS Certificate Manager [ACM]).
 + Skill 4.2.4: Securely store secrets by using AWS services.
 + Skill 4.2.5: Configure reports and remediate findings from AWS services (for example, AWS Security Hub, Amazon GuardDuty, AWS Config, Amazon Inspector, AWS Security Agent).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

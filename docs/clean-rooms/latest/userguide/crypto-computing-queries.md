@@ -36,7 +36,3 @@ For more information, see [Using the same data for both JOIN and SELECT queries]
 If the data in a column is not sensitive, it can appear in a cleartext target column, which allows it to be used for any purpose.
 
 If data in a column is sensitive and must be used for both JOIN and SELECT queries, map that source column to two target columns in the output file. One column is encrypted with the `type` as a fingerprint column, and one column is encrypted with the `type` as a sealed column. The interactive schema generation of the C3R encryption client suggests header suffixes of `_fingerprint` and `_sealed`. These header suffixes can be a useful convention for differentiating such columns quickly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

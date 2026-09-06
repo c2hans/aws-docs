@@ -56,7 +56,3 @@ RDS Proxy can retrieve database credentials from AWS Secrets Manager, and you ca
 A connection pooler must be complemented with additional proxy servers to deliver high availability and load balancing. This setup increases operational complexity. Traditional proxy servers are difficult to deploy, patch, and manage. Using them consumes time and energy that could be better spent on developing products.
 
 Amazon RDS Proxy gives you the benefits of a database proxy without requiring the additional burden of patching and managing your own proxy server. RDS Proxy is serverless and scales automatically to accommodate your workload. With its self-service setup option, RDS Proxy can increase developer velocity, resulting in faster delivery of new applications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

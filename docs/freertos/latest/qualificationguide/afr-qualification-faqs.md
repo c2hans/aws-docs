@@ -69,7 +69,3 @@ Q: *Do I need to pay to use AWS IoT Device Tester?*
 No, it is free to use. However, you may incur some charges due to the use of AWS services (for example, for MQTT messages, connectivity, OTA execution).
 
 If you have questions about qualification that are not answered on this page or in the rest of the *FreeRTOS Qualification Guide*, contact your AWS representative or [the FreeRTOS engineering team](https://freertos.org/RTOS-contact-and-support.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

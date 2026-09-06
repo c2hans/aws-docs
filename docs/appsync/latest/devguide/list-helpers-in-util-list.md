@@ -26,7 +26,3 @@ Sorts a list of objects, which is provided in the first argument. If the second 
  INPUT:      $util.list.sortList([{"description":"youngest", "age":5},{"description":"middle", "age":45}, {"description":"oldest", "age":85}], false, "description")
  OUTPUT:     [{"description":"middle", "age":45}, {"description":"oldest", "age":85}, {"description":"youngest", "age":5}]
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

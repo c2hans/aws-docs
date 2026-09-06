@@ -26,7 +26,3 @@ Perform the following steps to onboard to monitoring and incident management for
 
 **Note**
 After your Amazon EKS cluster is onboarded, AMS analyzes alert signals and performs a baseline assessment to identify existing issues in your cluster. After the baseline assessment is complete, AMS shares findings and remediation recommendations through Trusted Advisor and a service request that you can use to address issues in your cluster. From the assessment, AMS creates an Amazon EKS monitoring baseline specific to your EKS clusters by adjusting our account-level alarm thresholds. To eliminate duplicate AMS responses against these findings, we adjust our monitoring to exclude those alert signals. We readjust our monitoring to include the signals when your CSDM informs us that the underlying issues have been remediated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

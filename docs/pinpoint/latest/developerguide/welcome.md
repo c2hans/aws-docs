@@ -46,7 +46,3 @@ Keep your customers informed by sending transactional mobile push and SMS messag
 Gain insights about your audience and the effectiveness of your campaigns by using the analytics that Amazon Pinpoint provides. You can view trends about your users' level of engagement, purchase activity, demographics, and more. You can also monitor your message traffic by viewing metrics such as the total number of messages that were sent or opened for a campaign or application. Through the Amazon Pinpoint API, your application can report custom data, which Amazon Pinpoint makes available for analysis, and you can query analytics data for certain standard metrics.
 
 To analyze or store analytics data outside Amazon Pinpoint, you can configure Amazon Pinpoint to [stream the data](event-streams.md) to Amazon Kinesis.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

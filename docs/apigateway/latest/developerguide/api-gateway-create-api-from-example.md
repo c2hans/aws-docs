@@ -100,7 +100,3 @@ The following procedure walks you through the steps to create and test an API fr
    ```
 
     Invoking the API method as shown is possible because its **Authorization** type is set to `NONE`. If the `AWS_IAM` authorization were used, you would sign the request using the [Signature Version 4](https://docs.aws.amazon.com/IAM/latest/UserGuide/create-signed-request.html) (SigV4) or [Signature Version 4a](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv.html#how-sigv4a-works) (SigV4a) protocols. For an example of such a request, see [Tutorial: Create a REST API with an HTTP non-proxy integration](api-gateway-create-api-step-by-step.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

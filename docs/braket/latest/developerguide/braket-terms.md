@@ -96,7 +96,3 @@ An IAM role is an identity that you can assume to gain temporary access to permi
   ** Amazon S3 bucket**
  Amazon Simple Storage Service (Amazon S3) is an AWS service that lets you store data as *objects* in *buckets*. Amazon S3 buckets offer unlimited storage space. The maximum size for an object in an Amazon S3 bucket is 5 TB. You can upload any type of file data to an Amazon S3 bucket, such as images, videos, text files, backup files, media files for a website, archived documents, and your Braket quantum task results.
 +  **Best practice:** You can set permissions to control access to your S3 bucket. For more information, see [Bucket policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) in the Amazon S3 documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

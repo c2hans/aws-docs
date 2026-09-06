@@ -40,7 +40,3 @@ When you choose a Region for your AWS for SAP MCP Server deployment, consider th
 +  **Data residency requirements** — Choose a Region that meets your organization’s data residency and compliance requirements for SAP data processing.
 +  **Dependent AWS services** — The MCP Server uses AWS Secrets Manager, Amazon S3, and Amazon Bedrock AgentCore Identity. These services must be available in your chosen Region.
 +  **Network connectivity** — Ensure that the VPC and subnets in your chosen Region have network connectivity to your SAP system, whether through AWS Direct Connect, VPN, or internal routing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MCP Servers for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mcp-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

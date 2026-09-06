@@ -145,7 +145,3 @@ For more information about these programs, see the following sections:
 + [04-Query-Test.cs](DAX.client.run-application-dotnet.04-Query-Test.md)
 + [05-Scan-Test.cs](DAX.client.run-application-dotnet.05-Scan-Test.md)
 + [06-DeleteTable.cs](DAX.client.run-application-dotnet.06-DeleteTable.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

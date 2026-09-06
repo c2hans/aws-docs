@@ -36,7 +36,3 @@ Batch evaluation runs evaluators against multiple agent sessions in a single asy
 Batch evaluation supports ground truth through session metadata, enabling reference-based scoring with expected responses, assertions, and expected tool trajectories. Results include both aggregate summaries (per-evaluator averages and session counts) and per-session detail written to CloudWatch Logs.
 
 This evaluation type is designed for baseline measurement before making changes, pre/post comparison after applying prompt or model updates, regression testing across curated session sets, and periodic quality audits across production traffic from a specific time window.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

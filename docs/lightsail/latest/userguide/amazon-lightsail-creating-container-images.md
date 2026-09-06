@@ -165,7 +165,3 @@ After you create your container images, push them to your Lightsail container se
 + [Manage container images](amazon-lightsail-pushing-container-images.md)
 + [Install container services plugin](amazon-lightsail-install-software.md)
 + [ECR private repository access](amazon-lightsail-container-service-ecr-private-repo-access.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

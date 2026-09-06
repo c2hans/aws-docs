@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 | --- | --- | --- | --- |
 |  [AWS Client VPN](aws-client-vpn.md)  |  AWS managed remote access solution to Amazon VPC and/or internal networks  |  AWS managed high availability and scalability service  |  OpenVPN clients only  |
 |  [Software client VPN](software-client-vpn.md)  |  Software VPN appliance remote access solution to Amazon VPC and/or internal networks  |  Supports a wider array of VPN vendors, products, and protocols <br /> Fully customer-managed solution  |  You are responsible for implementing HA solutions  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

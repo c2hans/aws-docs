@@ -12,7 +12,3 @@ The following diagram illustrates the architecture in the hybrid scenario where 
 This architecture simplifies the requirements for the staging area subnet, because HTTPS communications from agents don't travel through the private channel. Also, there is no need to create additional Amazon S3 interface VPC endpoints or Amazon Route 53 Profiles inbound resolver endpoints for DNS traffic, because source servers will use their traditional DNS servers to resolve the standard, public DNS names of MGN and Amazon S3 endpoints.
 
 However, in this scenario, staging area subnet resources still run on a private and fully isolated network and have no public access to any HTTPS endpoints, so they need to create both MGN and Amazon EC2 interface endpoints as well as an Amazon S3 gateway endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

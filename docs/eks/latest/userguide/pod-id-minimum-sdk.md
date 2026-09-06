@@ -41,7 +41,3 @@ When using [Learn how EKS Pod Identity grants pods access to AWS services](pod-i
 To ensure that you’re using a supported SDK, follow the installation instructions for your preferred SDK at [Tools to Build on AWS](https://aws.amazon.com/tools/) when you build your containers.
 
 For a list of add-ons that support EKS Pod Identity, see [Pod Identity Support Reference](retreive-iam-info.md#pod-id-add-on-versions).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

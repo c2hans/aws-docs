@@ -39,7 +39,7 @@ If you define a function with the same name as an existing function but a differ
 
 *external\_fn\_name*
 The name of the external function. If you specify a schema name (such as myschema.myfunction), the function is created using the specified schema. Otherwise, the function is created in the current schema. For more information about valid names, see [Names and identifiers](r_names.md).
-We recommend that you prefix all UDF names with `f_`. Amazon Redshift reserves the `f_` prefix for UDF names. By using the `f_` prefix, you help ensure that your UDF name won't conflict with any built-in SQL function names for Amazon Redshift now or in the future. For more information, see [Preventing UDF naming conflicts](udf-naming-udfs.md).
+We recommend that you prefix all UDF names with `f_`. Amazon Redshift reserves the `f_` prefix for UDF names. By using the `f_` prefix, you help make sure that your UDF name won't conflict with any built-in SQL function names for Amazon Redshift now or in the future. For more information, see [Preventing UDF naming conflicts](udf-naming-udfs.md).
 
 *data\_type*
 The data type for the input arguments. For more information, see [Scalar Python UDFs](udf-creating-a-scalar-udf.md) and [Scalar Lambda UDFs](udf-creating-a-lambda-sql-udf.md).
@@ -360,7 +360,3 @@ DETAIL:
   process:   query2_16_38 [pid=30494]
   -----------------------------------------------
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -89,19 +89,16 @@ If custom resource instances exist but the underlying Kubernetes resources (Depl
 
 ```
 # Describe the instance (replace with your custom resource kind and name)
-kubectl describe {{custom-kind}}
-         {{my-instance}}
+kubectl describe {{custom-kind my-instance}}
 
 # View instance events
 kubectl get events --field-selector involvedObject.name={{my-instance}}
 
 # Check instance status conditions
-kubectl get {{custom-kind}}
-         {{my-instance}} -o jsonpath='{.status.conditions}'
+kubectl get {{custom-kind my-instance}} -o jsonpath='{.status.conditions}'
 
 # Check instance state
-kubectl get {{custom-kind}}
-         {{my-instance}} -o jsonpath='{.status.state}'
+kubectl get {{custom-kind my-instance}} -o jsonpath='{.status.state}'
 ```
 
 Instances have a `state` field showing high-level status:
@@ -193,8 +190,7 @@ This shows the computed order based on CEL expression references between resourc
 
 ```
 # View instance status to see which resources are ready
-kubectl get {{custom-kind}}
-         {{my-instance}} -o jsonpath='{.status}'
+kubectl get {{custom-kind my-instance}} -o jsonpath='{.status}'
 
 # Check specific resource status
 kubectl get deployment {{my-deployment}} -o jsonpath='{.status.conditions}'
@@ -230,8 +226,7 @@ If instances fail to create due to schema validation errors, verify the instance
 kubectl apply -f instance.yaml
 
 # View existing instance validation status
-kubectl describe {{custom-kind}}
-         {{my-instance}} | grep -A 5 "Validation"
+kubectl describe {{custom-kind my-instance}} | grep -A 5 "Validation"
 ```
 
  **Common validation issues**:
@@ -255,7 +250,3 @@ Ensure your instance provides all required fields with correct types.
 +  [Configure kro permissions](kro-permissions.md) - Configure RBAC for platform and application teams
 +  [kro concepts](kro-concepts.md) - Understand kro concepts and resource lifecycle
 +  [Troubleshooting EKS Capabilities](capabilities-troubleshooting.md) - General capability troubleshooting guidance
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,6 +65,7 @@ If you are unable to access the scheduling tables by using Option 1, try using O
 |  shift\_rotation\_start\_step\_id  |  bigint  |  Yes  |  The step ID where the Agent begins in the assigned Shift Rotation Pattern.  |
 |  timezone  |  string  |  Yes  |  Timezone configured for the Agent.  |
 |  is\_deleted  |  Boolean  |  Yes  |  Set to True if the Agent is deleted. Else set to False.  |
+|  last\_updated\_by  |  string  |  Yes  |  The ARN of the user who updated the Staff Scheduling Profile.  |
 |  last\_updated\_timestamp  |  Timestamp  |  Yes  |  Timestamp when the Staff Scheduling Profile was created/updated/deleted.  |
 |  data\_lake\_last\_processed\_timestamp  |  Timestamp  |  Yes  |  Timestamp, which shows the last time the record was touched by the data lake. This can include transformation and backfill. This field cannot reliably be used to determine data freshness.  |
 
@@ -93,6 +94,7 @@ If you are unable to access the scheduling tables by using Option 1, try using O
 |  is\_adherence\_tracked  |  Boolean  |  Yes  |  Set to True if the Shift Activity is configured for Adherence tracking. Else set to False.  |
 |  is\_paid  |  Boolean  |  Yes  |  Set to True if the Shift Activity is configured as Paid. Else set to False.  |
 |  is\_deleted  |  Boolean  |  Yes  |  Set to True if the Shift Activity is deleted. Else set to False.  |
+|  last\_updated\_by  |  string  |  Yes  |  The ARN of the user who created/updated the Shift Activity.  |
 |  last\_updated\_timestamp  |  Timestamp  |  Yes  | The Timestamp when the Shift Activity was created/updated/deleted.  |
 |  data\_lake\_last\_processed\_timestamp  |  Timestamp  |  Yes  | The Timestamp, which shows the last time the record was touched by the data lake. This can include transformation and backfill. This field cannot be used to determine reliably data freshness.  |
 
@@ -117,6 +119,7 @@ If you are unable to access the scheduling tables by using Option 1, try using O
 |  instance\_arn  |  string  |  Yes  |  The ARN of the Connect Customer instance.  |
 |  shift\_profile\_name  |  string  |  Yes  |  The name of the Shift Profile.  |
 |  is\_deleted  |  Boolean  |  Yes  |  Set to True if the Shift Profile is deleted. Else set to False.  |
+|  last\_updated\_by  |  string  |  Yes  |  The ARN of the user who created/updated the Shift Profile.  |
 |  last\_updated\_timestamp  |  Timestamp  |  Yes  | The Timestamp when the Shift Profile was created/updated/deleted.  |
 |  data\_lake\_last\_processed\_timestamp  |  Timestamp  |  Yes  | The Timestamp, which shows the last time the record was touched by the data lake. This can include transformation and backfill. This field cannot be used to determine reliably data freshness.  |
 
@@ -141,6 +144,7 @@ If you are unable to access the scheduling tables by using Option 1, try using O
 |  instance\_arn  |  string  |  Yes  |  The ARN of the Connect Customer instance.  |
 |  staffing\_group\_name  |  string  |  Yes  |  The name of the Staffing Group.  |
 |  is\_deleted  |  Boolean  |  Yes  |  Set to True if the Staffing Group is deleted. Else set to False.  |
+|  last\_updated\_by  |  string  |  Yes  |  The ARN of the user who created/updated the Staffing Group.  |
 |  last\_updated\_timestamp  |  Timestamp  |  Yes  |  The Timestamp when the Staffing Group was created/updated/deleted.  |
 |  data\_lake\_last\_processed\_timestamp  |  Timestamp  |  Yes  | The Timestamp, which shows the last time the record was touched by the data lake. This can include transformation and backfill. This field cannot be used to determine reliably data freshness.  |
 
@@ -166,6 +170,7 @@ If you are unable to access the scheduling tables by using Option 1, try using O
 |  forecast\_group\_arn  |  string  |  No  |  The ARN of the Forecast Group associated to the Staffing Group.  |
 |  instance\_arn  |  string  |  Yes  |  The ARN of the Connect Customer instance.  |
 |  is\_deleted  |  Boolean  |  Yes  |  Set to False when the StaffingGroup-ForecastGroup association is valid.  |
+|  last\_updated\_by  |  string  |  Yes  |  The ARN of the user who created/updated the Staffing Group.  |
 |  last\_updated\_timestamp  |  Timestamp  |  Yes  |  The Timestamp when the Staffing Group was created/updated.  |
 |  data\_lake\_last\_processed\_timestamp  |  Timestamp  |  Yes  |  The Timestamp, which shows the last time the record was touched by the data lake. This can include transformation and backfill. This field cannot be used to determine reliably data freshness.  |
 
@@ -191,6 +196,7 @@ If you are unable to access the scheduling tables by using Option 1, try using O
 |  supervisor\_arn  |  string  |  No  |  The Agent ARN of the Supervisor associated to the Staffing Group.  |
 |  instance\_arn  |  string  |  Yes  |  The ARN of the Connect Customer instance.  |
 |  is\_deleted  |  Boolean  |  Yes  |  Set to False when the StaffingGroup-ForecastGroup association is valid.  |
+|  last\_updated\_by  |  string  |  Yes  |  The ARN of the user who created/updated the Staffing Group.  |
 |  last\_updated\_timestamp  |  Timestamp  |  Yes  |  The Timestamp when the Staffing Group was created/updated.  |
 |  data\_lake\_last\_processed\_timestamp  |  Timestamp  |  Yes  |  The Timestamp, which shows the last time the record was touched by the data lake. This can include transformation and backfill. This field cannot be used to determine reliably data freshness.  |
 
@@ -367,6 +373,7 @@ If you are unable to access the scheduling tables by using Option 1, try using O
 | instance\_arn  | string  |  Yes  | The ARN of the Connect Customer instance. |
 | is\_override  | Boolean  |  Yes  | Set to 'true' if this is Agent to Demand Group association is Agent level override. |
 | is\_deleted  | Boolean  |  Yes  | Set to true if agent to demand group association is deleted. |
+| last\_updated\_by  | string  |  Yes  | The ARN of the user who created/updated the Agent to Demand Group association. |
 | last\_updated\_timestamp  | Timestamp  |  Yes  | The Timestamp when the agent to demand group association was created/updated. |
 | data\_lake\_last\_processed\_timestamp  | Timestamp  |  Yes  | The Timestamp, which shows the last time the record was touched by the data lake. This can include transformation and backfill. This field cannot be used to determine reliably data freshness. |
 
@@ -393,6 +400,7 @@ If you are unable to access the scheduling tables by using Option 1, try using O
 |  priority  |  string  |  Yes  |  Priority of the Demand Group for this Staffing Group. Can be LOW, MEDIUM or HIGH |
 |  instance\_arn  |  string  |  Yes  |  The ARN of the Connect Customer instance. |
 |  is\_deleted  |  Boolean  |  Yes  |  Set to true if the staffing group to demand group association is deleted. |
+|  last\_updated\_by  |  string  |  Yes  |  The ARN of the user who created/updated the Staffing Group to Demand Group association. |
 |  last\_updated\_timestamp  |  Timestamp  |  Yes  |  Timestamp when the staffing group to demand group association was created/updated/deleted. |
 |  data\_lake\_last\_processed\_timestamp  |  Timestamp  |  Yes  |  The Timestamp, which shows the last time the record was touched by the data lake. This can include transformation and backfill. This field cannot be used to determine reliably data freshness. |
 
@@ -822,7 +830,3 @@ FROM latest_staff_timeoffs to
     INNER JOIN latest_supervisor_names_view sn ON sn.staffing_group_arn = asgfg.staffing_group_arn
     INNER JOIN users u ON u.user_arn = to.agent_arn
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

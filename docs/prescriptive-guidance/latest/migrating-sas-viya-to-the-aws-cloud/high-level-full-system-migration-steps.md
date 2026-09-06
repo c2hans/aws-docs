@@ -82,7 +82,3 @@ For more information, see [Step 3: Restore (Cluster Administrator)](https://docu
 SAS Viya 4 provides the SAS Viya 4 inventory and SAS Viya comparison reports for comparing content between the source SAS Viya 3.x and target SAS Viya 4 environments. These reports and the associated SASVIYATYPES table are accessible through the SAS environment manager.
 
 For more information, see [Step 5: Validate](https://documentation.sas.com/doc/en/sasadmincdc/v_012/calmigration3x/p0s8n6d5si7oqun1ixkvuw10mzcx.htm#p1i6iynmof3andn1c2w9zoyreg8h) in the SAS documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

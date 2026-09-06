@@ -74,7 +74,3 @@ Your new records take time to propagate to the Route 53 DNS servers. Currently,
 1. Sign in to the AWS Management Console again using the AWS account that you used to create the Route 53 hosted zone.
 
 1. Return to step 3 of the procedure [Creating records by using the Amazon Route 53 console](#resource-record-sets-creating).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

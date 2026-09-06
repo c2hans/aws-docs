@@ -17,7 +17,3 @@ Once you've added a gateway to your project, you can edit the gateway's name to 
 **Topics**
 + [Ethernet gateways](setting-up-ethernet-gateways.md)
 + [Wi-Fi gateways](setting-up-Wi-Fi-gateways.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

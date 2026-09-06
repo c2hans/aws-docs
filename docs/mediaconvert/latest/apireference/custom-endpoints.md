@@ -29,7 +29,3 @@ To get started with AWS Elemental MediaConvert using one of the AWS SDKS or the 
 When you send requests, use camelCase or PascalCase as appropriate for the language you are using. All examples in this guide use PascalCase, which is the correct casing for the AWS CLI and AWS SDK for Python (Boto3). The MediaConvert console JSON export function also generates JSON job specifications in PascalCase.
 
 When you use a language that specifies camelCase, such as JavaScript, you must convert the casing of your properties before you submit your requests. For example, if you use the properties "Settings" and "TimecodeConfig" in your call through the AWS CLI, you must change those to "settings" and "timecodeConfig" for your call through the AWS SDK for JavaScript.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

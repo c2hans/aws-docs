@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Encode a movie from another Deadline Cloud job's output with FFmpeg
 <a name="examples-jb-ffmpeg-from-job"></a>
 
-The [ffmpeg\_movie\_from\_job\_output](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/ffmpeg_movie_from_job_output) job bundle downloads the rendered output of another completed job in the same queue and encodes the image sequence into an MP4 video using FFmpeg. Use it as a post-processing utility — for example, to automatically assemble frames into a movie after a Blender or Maya render job completes.
+The [ffmpeg\_movie\_from\_job\_output](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/ffmpeg_movie_from_job_output) job bundle on the GitHub website downloads the rendered output of another completed job in the same queue and encodes the image sequence into an MP4 video using FFmpeg. Use it as a post-processing utility, for example, to automatically assemble frames into a movie after a Blender or Maya render job completes.
 
 For encoding a local image sequence (no source-job download), see [Encode video with FFmpeg on Deadline Cloud](examples-jb-ffmpeg-encode.md).
 
@@ -29,7 +29,3 @@ deadline bundle submit ffmpeg_movie_from_job_output/ \
 ```
 
 To restrict the download to a single step's output, also pass `SourceStepId`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ The following is not a comprehensive list of IDEs. The links are provided solely
   Alternatively, install the AWS Toolkit for Visual Studio. For more information, see [Integrate Visual Studio with AWS CodeCommit](setting-up-ide-vs.md).
 ![Cloning a repository in Visual Studio.](http://docs.aws.amazon.com/codecommit/latest/userguide/images/codecommit-ide-vs1.png)
 + [XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/xcode_guide-continuous_integration/PublishYourCodetoaSourceRepository.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

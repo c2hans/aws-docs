@@ -230,7 +230,3 @@ The number of Neuron devices allocated to your serving application can be adjust
    ```
    [[(u'n02123045', u'tabby', 0.68817204), (u'n02127052', u'lynx', 0.12701613), (u'n02123159', u'tiger_cat', 0.08736559), (u'n02124075', u'Egyptian_cat', 0.063844085), (u'n02128757', u'snow_leopard', 0.009240591)]]
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

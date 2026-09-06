@@ -19,7 +19,3 @@ The following table shows how you can use generative AI to enhance collaboration
 | **Knowledge sharing:** Use discussion forums to document and track decisions made during project discussions, making sure that the rationale behind key decisions is captured and accessible for future reference | Product manager |
 | **Project asset management:** Facilitate easy sharing of project-related resources | Development team |
 | **Project asset management:** Implement version control for shared content so that team members can track changes, revert to previous versions, and collaborate on content updates | Development team |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

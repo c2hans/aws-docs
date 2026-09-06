@@ -93,7 +93,3 @@ Follow these steps:
 If you’re deploying agents to Amazon Bedrock AgentCore Runtime, you’ll also need to create an IAM execution role with a service trust policy. For more information, see [Get started with AgentCore Runtime](runtime-getting-started.md).
 
 The following sections show you how to use the Amazon Bedrock AgentCore Code Interpreter with and without the agent framework. Using the Code Interpreter directly without an agent framework is especially useful when you want to execute specific code snippets programmatically.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

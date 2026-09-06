@@ -38,7 +38,3 @@ You can also view your currently active Canvas workspace instances and active en
 The following screenshot shows the SageMaker AI dashboard. In the **Canvas** section, you can see that one workspace instance is in service and four endpoints are active.
 
 ![Screenshot of the SageMaker AI dashboard showing the active Canvas workspace instances and endpoints.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/canvas-sagemaker-dashboard.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

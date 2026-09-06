@@ -21,7 +21,3 @@ AWS Tax Settings provides the following APIs for data retrieval.
 | <a name="tax-ListSupplementalTaxRegistrations"></a>[ListSupplementalTaxRegistrations](https://docs.aws.amazon.com/marketplace/latest/userguide/detailed-management-portal-permissions.html) | View supplemental tax registrations | Read |
 | <a name="tax-ListTaxRegistrations"></a>[ListTaxRegistrations](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html) | View tax registrations | Read |
 | <a name="tax-ListWithholdingEligibleInvoices"></a>[ListWithholdingEligibleInvoices](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html) | View eligible withholding invoices | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

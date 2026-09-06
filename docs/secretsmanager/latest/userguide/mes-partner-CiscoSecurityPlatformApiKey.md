@@ -54,7 +54,3 @@ Your application reads the refresh token from the secret and exchanges it for an
 Rotate this secret at least every 15 days. Secrets Manager rejects a rotation interval longer than 50 days, which follows Cisco guidance to refresh at least that often. A longer interval can also skip the window between day 45 and day 60 in which Cisco issues the replacement refresh token. If the remaining life of the token is shorter than your rotation interval, rotation fails with an error instead of letting the token expire.
 
 A refresh token that expires cannot be renewed. If that happens, issue a new API key in the Cisco Security Cloud Control console and update the secret. Monitor rotation failures so that a prolonged outage does not reach that state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

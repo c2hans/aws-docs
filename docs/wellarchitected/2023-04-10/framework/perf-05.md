@@ -17,7 +17,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 + [PERF05-BP05 Choose network protocols to improve performance](perf_select_network_protocols.md)
 + [PERF05-BP06 Choose your workload’s location based on network requirements](perf_select_network_location.md)
 + [PERF05-BP07 Optimize network configuration based on metrics](perf_select_network_optimize.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

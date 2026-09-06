@@ -12,7 +12,7 @@ This section provides steps for creating a custom routing accelerator, which rou
 + [Step 1: Create a custom routing accelerator](#getting-started-accelerator-custom)
 + [Step 2: Add listeners](#getting-started-create-listeners-custom)
 + [Step 3: Add endpoint groups](#getting-started-add-endpoint-groups-custom)
-+ [Step 4: Add endpoints](#getting-started-add-endpoints-custom)
++ [Step 4: Add VPC subnet endpoints](#getting-started-add-endpoints-custom)
 + [Step 5 (optional): Delete your accelerator](#getting-started-delete-accelerator-custom)
 
 ## Before you begin
@@ -20,7 +20,7 @@ This section provides steps for creating a custom routing accelerator, which rou
 
 Before you create a custom routing accelerator, create a resource that you can add as an endpoint to direct traffic to. A custom routing accelerator endpoint must be a virtual private cloud (VPC) subnet, which can include multiple Amazon EC2 instances. For instructions for creating the resources see the following:
 + Create a VPC subnet. For more information, see [ Create and Configure Your VPC](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/gsg_create_vpc.html) in the *Directory Service Administration Guide*.
-+ Optionally, launch one or more Amazon EC2 instances in your VPC. For more information, see [Create your EC2 resources and launch your EC2 instance](https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html) in the *Amazon EC2 User Guide*.
++ Optionally, launch one or more Amazon EC2 instances in your VPC. For more information, see [Get started with Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) in the *Amazon EC2 User Guide*.
 
 When you create a resource to add to Global Accelerator, be aware of the following:
 + When you add an EC2 instance endpoint in Global Accelerator, you enable internet traffic to flow directly to and from the endpoint in a VPC by targeting it in a private subnet. The VPC that contains the EC2 instance must have an [internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html) attached to it, to indicate that the VPC accepts internet traffic. For more information, see [Secure VPC connections in AWS Global Accelerator](secure-vpc-connections.md).
@@ -130,7 +130,3 @@ Be aware of the following when you delete an accelerator:
 1. Choose **Delete accelerator**.
 
 1. In the confirmation dialog box, choose **Delete**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -67,7 +67,3 @@ The AWS SDK for Java 2.x simplifies and enhances buffering functionality with th
 | Maximum number of prefetched receive batches stored client-side | maxDoneReceiveBatches (10 batches) | Not supported because it is handled internally |
 | Maximum number of active outbound batches processed simultaneously | maxInflightOutboundBatches (default 5 batches) | Not supported because it is handled internally |
 | Maximum number of active receive batches processed simultaneously | maxInflightReceiveBatches (default 10 batches) | Not supported because it is handled internally |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

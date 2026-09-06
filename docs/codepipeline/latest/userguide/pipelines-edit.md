@@ -224,7 +224,3 @@ The **update-pipeline** command stops the pipeline. If a revision is being run t
 1. To manually run the last revision through the revised structure of the pipeline, run the **start-pipeline-execution** command. For more information, see [Start a pipeline manually](pipelines-rerun-manually.md).
 
 For more information about the structure of a pipeline and expected values, see [CodePipeline pipeline structure reference](reference-pipeline-structure.md) and [AWS CodePipeline API Reference](http://docs.aws.amazon.com/codepipeline/latest/APIReference).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

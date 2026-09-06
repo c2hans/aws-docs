@@ -37,8 +37,7 @@ Your AWS account has the following quotas related to EventBridge Scheduler.
 **Input payload size limit**
 The maximum size of a target's `Input` payload is 256 KB. This limit applies to the `Input` field on a schedule's target for all target types. Target types include templated targets (such as Amazon SQS and Lambda) and universal targets. The `Input` API parameter has a fixed limit, not an adjustable Service Quotas quota. For this reason, the limit does not appear in the preceding table. For more information, see [Input](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Target.html#scheduler-Type-Target-Input) in the *Amazon EventBridge Scheduler API Reference*.
 
+**Per-schedule operation rate limit**
+In addition to the per-account request rate quotas in the preceding table, EventBridge Scheduler limits the rate at which a single schedule can be read or written. This per-schedule limit is 10 TPS. The limit can be lower depending on the size of the schedule's target `Input` parameter. This limit is not adjustable through the Service Quotas console.
+
  For more information about quotas and service endpoints for EventBridge Scheduler, see [Amazon EventBridge Scheduler endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/eventbridgescheduler.html) in the *AWS General Reference* guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge Scheduler. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query scheduler` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,7 +38,3 @@ CodeBuild commands include:
 + `start-build`: Starts running a build. For more information, see [Run a build (AWS CLI)](run-build-cli.md).
 + `stop-build`: Attempts to stop the specified build from running. For more information, see [Stop a build (AWS CLI)](stop-build.md#stop-build-cli).
 + `update-project`: Changes information about the specified build project. For more information, see [Change a build project's settings (AWS CLI)](change-project.md#change-project-cli).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

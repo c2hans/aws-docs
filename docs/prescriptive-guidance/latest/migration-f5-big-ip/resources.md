@@ -31,7 +31,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ## Related guides and patterns
 <a name="related-guides-and-patterns"></a>
 + [Migrate an F5 BIG-IP workload to F5 BIG-IP VE on the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-f5-big-ip-workload-to-f5-big-ip-ve-on-the-aws-cloud.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

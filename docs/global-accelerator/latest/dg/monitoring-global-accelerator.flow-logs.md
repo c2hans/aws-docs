@@ -17,7 +17,7 @@ A flow log record represents a network flow in your flow log. Each record captur
 CloudWatch Logs charges apply when using flow logs, even when logs are published directly to Amazon S3. For more information, see *Vended Logs* under the *Logs* tab at [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/).
 
 **Tip**
-Using Amazon Athena and Amazon Quick with your Global Accelerator flow log data can help you troubleshoot reachability issues for your application, identify security vulnerabilities, and get an overview of how users access your application. To learn more, see the following AWS blog post: [ Analyzing and visualizing AWS Global Accelerator flow logs using Amazon Athena and Quick](https://aws.amazon.com/blogs/networking-and-content-delivery/analyzing-and-visualizing-aws-global-accelerator-flow-logs-using-amazon-athena-and-amazon-quicksight/).
+Using Amazon Athena and Amazon Quick with your Global Accelerator flow log data can help you troubleshoot reachability issues for your application, identify security vulnerabilities, and get an overview of how users access your application. To learn more, see the following AWS blog post: [ Analyzing and visualizing AWS Global Accelerator flow logs using Amazon Athena and Amazon QuickSight](https://aws.amazon.com/blogs/networking-and-content-delivery/analyzing-and-visualizing-aws-global-accelerator-flow-logs-using-amazon-athena-and-amazon-quicksight/).
 
 **Topics**
 + [Enable flow logs](#monitoring-global-accelerator.flow-logs-publishing-S3.enable)
@@ -40,11 +40,11 @@ To enable flow logs in AWS Global Accelerator, follow the steps in this procedur
 1. Run the following AWS CLI command, with the Amazon S3 bucket name and prefix that you want to use for your log files:
 
    ```
-   aws globalaccelerator update-accelerator-attributes
-          --accelerator-arn arn:aws:globalaccelerator::{{012345678901}}:accelerator/{{1234abcd-abcd-1234-abcd-1234abcdefgh}}
-          --region us-west-2
-          --flow-logs-enabled
-          --flow-logs-s3-bucket {{s3-bucket-name}}
+   aws globalaccelerator update-accelerator-attributes \
+          --accelerator-arn arn:aws:globalaccelerator::{{012345678901}}:accelerator/{{1234abcd-abcd-1234-abcd-1234abcdefgh}} \
+          --region us-west-2 \
+          --flow-logs-enabled \
+          --flow-logs-s3-bucket {{s3-bucket-name}} \
           --flow-logs-s3-prefix {{s3-bucket-prefix}}
    ```
 
@@ -293,7 +293,3 @@ The following table describes the fields of a flow log record.
 | `reject_reason` | The reason traffic was not served. The value is `BPA` if traffic was not served due to VPC Block Public Access feature settings. Otherwise, the field is empty. |
 
 If a field does not apply for a specific record, the record displays a '-' symbol for that entry.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

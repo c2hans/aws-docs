@@ -339,7 +339,3 @@ The metrics include timing information, service details, operation names, and HT
 After using `LoggingMetricPublisher` for development and debugging, consider these options for production environments:
 + For long-running applications, use [CloudWatchMetricPublisher](metric-pub-impl-cwmp.md) to send metrics to Amazon CloudWatch for analysis and alerting
 + For AWS Lambda functions, use [EmfMetricLoggingPublisher](metric-pub-impl-emf.md) to publish metrics in CloudWatch Embedded Metric Format
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

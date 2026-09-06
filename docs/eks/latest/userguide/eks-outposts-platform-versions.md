@@ -89,7 +89,3 @@ The following admission controllers are enabled for all `1.29` platform versions
 |  `1.29.6`  |  `eks-local-outposts.3`  | New platform version with security fixes and enhancements. Updated Bottlerocket version to `v1.22.0`. | October 22, 2024 |
 |  `1.29.6`  |  `eks-local-outposts.2`  | New platform version with security fixes and enhancements. Updated Bottlerocket version to `v1.21.0`. | August 27, 2024 |
 |  `1.29.6`  |  `eks-local-outposts.1`  | Initial release of Kubernetes version `v1.29` for local Amazon EKS clusters on Outposts. | August 20, 2024 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

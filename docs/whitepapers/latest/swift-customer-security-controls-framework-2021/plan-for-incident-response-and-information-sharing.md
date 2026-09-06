@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/swift-customer-securi
  The [AWS Acceptable Use Policy](https://aws.amazon.com/aup/) describes permitted and prohibited behavior on AWS, and includes descriptions of prohibited security violations and network abuse. AWS customers are welcome to carry out security assessments or penetration tests against their accounts on AWS infrastructure without prior approval for eight services, listed in [Penetration Testing](https://aws.amazon.com/security/penetration-testing/) under “Permitted Services.” All penetration testers and vulnerability scan managers must understand and comply with the [AWS Customer Support Policy for Penetration Testing](https://aws.amazon.com/security/penetration-testing/).
 
  [AWS Security Competency Partners](https://aws.amazon.com/security/partner-solutions/?nc=sn&loc=8) offer an array of security offerings like network and infrastructure security, vulnerability and configuration analysis, application security, and security engineering.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

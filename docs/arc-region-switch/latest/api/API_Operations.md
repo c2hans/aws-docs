@@ -27,7 +27,3 @@ The following actions are supported:
 +  [UpdatePlan](API_UpdatePlan.md)
 +  [UpdatePlanExecution](API_UpdatePlanExecution.md)
 +  [UpdatePlanExecutionStep](API_UpdatePlanExecutionStep.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query arc-region-switch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

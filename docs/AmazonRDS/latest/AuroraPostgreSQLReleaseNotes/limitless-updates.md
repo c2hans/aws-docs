@@ -26,8 +26,17 @@ Amazon Amazon Aurora PostgreSQL Limitless Database follows the same engine versi
  This version of Aurora PostgreSQL Limitless Database is compatible with [PostgreSQL 16.13](https://www.postgresql.org/docs/release/16.13/). For more information about the improvements in PostgreSQL 16.13, see [ Aurora PostgreSQL 16.13](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/AuroraPostgreSQL.Updates.html#aurorapostgresql-versions-version1613x).
 
 **Topics**
++ [Aurora PostgreSQL Limitless Database 16.13.102, September 3, 2026](#16.13.102)
 + [Aurora PostgreSQL Limitless Database 16.13.101, July 13, 2026](#16.13.101)
 + [Aurora PostgreSQL Limitless Database 16.13.100, April 25, 2026](#16.13.100)
+
+### Aurora PostgreSQL Limitless Database 16.13.102, September 3, 2026
+<a name="16.13.102"></a>
+
+**Bug fixes**
++ Fixed a distributed deadlock between `GRANT` or `REVOKE` on a table and concurrent reads or writes of the same table.
++ Fixed an issue where a node in a shard group could repeatedly restart while recovering an in-progress distributed transaction due to OID mismatch for database object. This made the node unavailable and required manual intervention.
++ Fixed an issue where, in rare cases, a router continued using outdated writer information after a failover. Write requests routed through that router were rejected.
 
 ### Aurora PostgreSQL Limitless Database 16.13.101, July 13, 2026
 <a name="16.13.101"></a>
@@ -66,8 +75,19 @@ Amazon Amazon Aurora PostgreSQL Limitless Database follows the same engine versi
  This version of Aurora PostgreSQL Limitless Database is compatible with [PostgreSQL 16.11](https://www.postgresql.org/docs/release/16.11/). For more information about the improvements in PostgreSQL 16.11, see [ Aurora PostgreSQL 16.11](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/AuroraPostgreSQL.Updates.html#aurorapostgresql-versions-version1611x).
 
 **Topics**
++ [Aurora PostgreSQL Limitless Database 16.11.102, September 1, 2026](#16.11.102)
 + [Aurora PostgreSQL Limitless Database 16.11.101, June 9, 2026](#16.11.101)
 + [Aurora PostgreSQL Limitless Database 16.11.100, February 25, 2026](#16.11.100)
+
+### Aurora PostgreSQL Limitless Database 16.11.102, September 1, 2026
+<a name="16.11.102"></a>
+
+**Bug fixes**
++ Fixed a distributed deadlock between `GRANT` or `REVOKE` on a table and concurrent reads or writes of the same table.
++ Fixed an issue where a node in a shard group could repeatedly restart while recovering an in-progress distributed transaction due to OID mismatch for database object. This made the node unavailable and required manual intervention.
++ Fixed an issue where, in rare cases, a router continued using outdated writer information after a failover. Write requests routed through that router were rejected.
++ Fixed an issue where queries hung indefinitely when retrieving results from a shard node. This occurred after the connection to that node was reset or stopped responding.
++ Fixed an issue where errors returned when requesting a new chunk for a global sequence were misclassified. A sequence that reached its last value was reported as a connection failure. A transient failure could also stop `nextval` from returning new values.
 
 ### Aurora PostgreSQL Limitless Database 16.11.101, June 9, 2026
 <a name="16.11.101"></a>
@@ -422,7 +442,3 @@ This release includes Aurora PostgreSQL patches till [ 16.6.3](https://docs.aws.
 Release 16.4.103 is the GA version of Aurora PostgreSQL Limitless Database.
 
 For information on this release, see [Using Amazon Aurora PostgreSQL Limitless Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitless.html) in the *Amazon Aurora User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

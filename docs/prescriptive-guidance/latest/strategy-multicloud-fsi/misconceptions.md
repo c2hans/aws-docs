@@ -11,7 +11,3 @@ As outlined in the previous section, there are valid reasons for adopting a mult
 + **Better pricing** – Traditional procurement approaches that use multiple suppliers to ensure price competitiveness do not adapt well to the pay-as-you-go purchasing, volume discounts, and price competition of the cloud. Companies often underestimate the operational complexity of managing multiple cloud environments and fail to properly evaluate whether the benefits justify this added complexity in competitive sourcing decisions.
 
 For more information about these misconceptions, see [Tenet 2](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-multicloud/tenet-2.html) in *Proven practices for developing a multicloud strategy*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -209,7 +209,3 @@ For security purposes, you can use AWS CloudTrail to audit the use of roles in t
 1. To return to the original EC2 instance profile permissions in account `111111111111`, run the CLI commands without the `--profile` parameter.
 
 For more information, see [Assuming a Role](https://docs.aws.amazon.com/cli/latest/userguide/cli-roles.html) in the *AWS Command Line Interface User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

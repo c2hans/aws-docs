@@ -128,7 +128,3 @@ print(f"Total items retrieved from all shards: {len(all_items)}")
 Before running this code, make sure to replace `YourTableName` and `YourGSIName` with the actual table and GSI names from your DynamoDB setup. Also, adjust `total_shards`, `time_start`, and `time_end` variables according to your specific requirements.
 
 This script queries each shard for items within the specified time range and aggregates the results.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

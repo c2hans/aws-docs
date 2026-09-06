@@ -35,7 +35,3 @@ To view model details after running an Autopilot job, follow these steps:
 Feature importance and information in the **Performance** tab is only generated for the **Best model**.
 
    For more information about how the SHAP values help explain predictions based on feature importance, see the whitepaper [Understanding the model explainability](https://pages.awscloud.com/rs/112-TZM-766/images/Amazon.AI.Fairness.and.Explainability.Whitepaper.pdf). Additional information is also available in the [Model Explainability](clarify-model-explainability.md) topic in the SageMaker AI Developer Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

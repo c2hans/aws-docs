@@ -23,7 +23,3 @@ Another critical aspect of Redfish API adoption is the need for robust authentic
 This guide is intended for IT infrastructure managers, systems administrators, DevOps engineers, network administrators, and other IT operations professionals who have a basic understanding of the following:
 + [Amazon Elastic Kubernetes Service (Amazon EKS)](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html) is a managed Kubernetes service for deploying and managing containerized applications.
 + Container services, such as [Docker](https://www.docker.com/resources/what-container/), are lightweight virtualization technologies that you can use to package applications with their dependencies into portable, self-contained units. These units are called *containers*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -534,7 +534,3 @@ For GeneralAuthorization: When using GeneralAuthorization, for each Secrets ARN 
    To share your connector with other users, use the **Make visible** option in the AWS Management Console on the connector details page to submit your connector ID to AWS for review. Once approved, the connector is available to all managed integrations users in the same AWS Region. Additionally, you can restrict access to specific AWS account IDs by modifying the access policy on the connector's associated AWS Lambda function. To ensure your connector is usable by other customers, manage the IAM access permissions on your Lambda function from other AWS accounts to your visible connector.
 
    Review the AWS service terms and your organization's policies that govern connector sharing and access permissions before making connectors visible to other managed integrations customers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

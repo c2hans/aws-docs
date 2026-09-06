@@ -69,7 +69,3 @@ After you upload all the lifecycle scripts and the `provisioning_parameters.json
 ![Image showing all the lifecycle scripts uploaded to the Amazon S3 bucket in the Amazon Simple Storage Service console.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/hyperpod/hyperpod-lifecycle-scripts-s3.png)
 
 For more information, see [Start with base lifecycle scripts provided by HyperPod](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-lifecycle-best-practices-slurm-slurm-base-config.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

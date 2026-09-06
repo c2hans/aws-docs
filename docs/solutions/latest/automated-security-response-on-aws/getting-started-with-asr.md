@@ -162,7 +162,3 @@ Create a log group in each account and Region with the same name, for example: `
 | --- | --- | --- | --- |
 |  `111111111111`  | Admin | Create a log group | Create a log group |
 |  `222222222222`  | Member | Create a log group | Create a log group |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

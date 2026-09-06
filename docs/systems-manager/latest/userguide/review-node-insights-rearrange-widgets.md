@@ -20,7 +20,3 @@ You can customize the layout in the **Review node insights** page by rearranging
 1. Repeat this process for each widget that you want to reposition.
 
 If you decide that you don't like the new layout, choose **Reset to default layout** to move all widgets back to their original location.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

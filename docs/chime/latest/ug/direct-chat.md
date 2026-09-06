@@ -27,7 +27,3 @@ Be careful about the messages that you send. By design, Amazon Chime doesn't all
 You can also add emoji codes to a message, such as `:-)` or `:(`. The emojis appear after you send the message.
 
 1. Choose send (![An arrow pointed to the right.](http://docs.aws.amazon.com/chime/latest/ug/images/icon-send-msg.png)) or press **Enter**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

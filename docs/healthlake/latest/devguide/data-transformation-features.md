@@ -248,7 +248,3 @@ The drift report contains the following information:
 The sync conversion operation (TransformData) and source validation (ValidateSource) are REST-only and may not appear as MCP tools. Your agent can construct and execute the REST calls on your behalf: see Step 3: Test with sync conversion for the request format.
 
  Because MCP shares the same API surface as the AWS CLI and SDKs for profile and job operations, there is no capability gap for those workflows between working in your IDE and working through code or the AWS Management Console. See [Getting started with MCP](data-transformation-getting-started-mcp.md) for setup and an example workflow.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

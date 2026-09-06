@@ -197,7 +197,3 @@ In your Linux host firewall rule, add an inbound rule for port 8883 to allow inc
 In your Microsoft Windows host firewall rule, add an inbound rule for port 8883 to allow incoming connections from outside of the gateway host. Ensure the rule is an allow rule, of type port, specifying port 8883. You can configure this according to your network configuration to allow connections from your external applications to the broker.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

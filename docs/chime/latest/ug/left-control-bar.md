@@ -27,7 +27,3 @@ Opens a menu of additional options that apply to the current meeting, such as ad
 
 **Record meeting (![An icon showing a REC button.](http://docs.aws.amazon.com/chime/latest/ug/images/left-control-7.png))**
 Starts and stops recording a meeting. Only meeting hosts, moderators, or delegates can record meetings. For more information, see [Recording a meeting](record-meeting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

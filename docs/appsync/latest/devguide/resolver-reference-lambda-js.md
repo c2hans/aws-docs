@@ -177,7 +177,3 @@ There are no required fields or shape restrictions that apply to the response ob
 <a name="aws-appsync-resolver-reference-lambda-batched-response-js"></a>
 
 If the `operation` field is set to `BatchInvoke`, AWS AppSync expects a list of items back from the Lambda function. In order for AWS AppSync to map each result back to the original request item, the response list must match in size and order. It's valid to have `null` items in the response list; `ctx.result` is set to *null* accordingly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -108,7 +108,3 @@ After IAM authorization succeeds, S3 Files enforces standard POSIX (Unix-style) 
 <a name="s3-files-security-iam-security-groups"></a>
 
 Security groups act as a network-level firewall that controls traffic between your compute resources and the file system's mount targets. For details on configuring security groups to get started on S3 Files, see [Security groups](s3-files-prereq-policies.md#s3-files-prereq-security-groups).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

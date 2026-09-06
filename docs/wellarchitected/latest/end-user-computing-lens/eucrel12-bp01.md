@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Collaborate with key stakeholders to gather valuable insights and align plans with organizational objectives. Document comprehensive procedures, clearly define roles and responsibilities, establish effective communication channels, prioritize incidents based on severity, and set response timelines.
 
  Regularly review and update these plans to incorporate lessons learned and evolving requirements, improving their ongoing effectiveness and relevance. This structured and inclusive approach fosters readiness to respond swiftly and effectively, bolstering overall system reliability and resilience.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,7 +38,3 @@ Use the [AWS Support Console](https://support.console.aws.amazon.com/support/hom
 
 **Note**
 You must have the appropriate permissions to create cases in the AWS Support Console. For more information, see [AWS Support identity-based policy examples](https://docs.aws.amazon.com/awssupport/latest/user/security_iam_id-based-policy-examples.html) in the *AWS Support User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

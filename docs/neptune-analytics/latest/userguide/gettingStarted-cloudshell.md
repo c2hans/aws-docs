@@ -107,7 +107,3 @@ The output looks similar to the following (order might vary):
 + [Working with vector similarity in Neptune Analytics](vector-similarity.md) – Use vector embeddings for similarity search.
 
 To avoid ongoing charges, delete the graph if you created it only for this quick start. For instructions, see [Managing your Neptune Analytics graphs](managing.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

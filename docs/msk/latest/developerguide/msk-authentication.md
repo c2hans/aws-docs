@@ -13,7 +13,3 @@ Amazon MSK doesn't support certificate revocation lists (CRLs). To control acces
 + [Create a Amazon MSK cluster that supports client authentication](msk-authentication-cluster.md)
 + [Set up a client to use authentication](msk-authentication-client.md)
 + [Produce and consume messages using authentication](msk-authentication-messages.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

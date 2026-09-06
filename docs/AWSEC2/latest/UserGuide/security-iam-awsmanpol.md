@@ -135,7 +135,3 @@ View details about updates to AWS managed policies for Amazon EC2 since this ser
 | [Ec2InstanceConnectEndpoint](#Ec2InstanceConnectEndpoint) – New policy | Amazon EC2 added the Ec2InstanceConnectEndpoint policy. This policy is attached to the AWSServiceRoleForEC2InstanceConnect service-linked role, to allow Amazon EC2 to perform actions on your behalf when you create an EC2 Instance Connect Endpoint. | January 24, 2023 |
 | [EC2FastLaunchServiceRolePolicy](#security-iam-awsmanpol-EC2FastLaunchServiceRolePolicy) – New policy | Amazon EC2 added the EC2 Fast Launch feature to enable Windows AMIs to launch instances faster by creating a set of pre-provisioned snapshots. | November 26, 2021 |
 | Amazon EC2 started tracking changes | Amazon EC2 started tracking changes to its AWS managed policies | March 1, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

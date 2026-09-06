@@ -69,7 +69,3 @@ The following are the high-level steps to provide users access to an Amazon Reds
    After completing this step, you can manage the Amazon Redshift namespace catalog within the Data Catalog.
 
 1. Grant permissions to users on catalogs, databases and tables. You can share the entire namespace catalog or a subset of tables with users in the same account or another account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

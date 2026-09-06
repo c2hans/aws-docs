@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 +  **Billing** – As part of adopting SaaS, organizations often embrace new billing models. They may also explore integration with third-party billing providers. This core service is largely focused on supporting the onboarding of new tenants, and collecting consumption and activity data that is used to generate bills for tenants.
 +  **Metrics** – SaaS teams rely heavily on their ability to capture and analyze rich metric data that brings more visibility to how tenants use their system, how they consume resources, and how their tenants engage their systems. This data is used to shape operational, product, and business strategies.
 +  **Admin user management** – SaaS systems must support both tenant users and admin users. The admin users represent the administrators of a SaaS provider. They will log into your operational experience to monitor and manage your SaaS environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

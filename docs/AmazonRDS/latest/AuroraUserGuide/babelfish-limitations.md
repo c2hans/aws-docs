@@ -31,7 +31,3 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 
   To learn more about PostgreSQL extensions, see [Working with extensions and foreign data wrappers](Appendix.PostgreSQL.CommonDBATasks.md).
 + The open source [jTDS driver](https://github.com/milesibastos/jTDS/) that is designed as an alternative to the Microsoft JDBC driver is not supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

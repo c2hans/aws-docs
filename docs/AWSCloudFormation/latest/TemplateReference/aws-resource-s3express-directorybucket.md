@@ -172,7 +172,3 @@ Example: `arn:aws:s3express:us-west-2:account_id:bucket/bucket_base_name--usw2-a
 Returns the code for the Availability Zone or the Local Zone where the directory bucket was created.
 Example value for an Availability Zone code: *us-east-1f*
 An Availability Zone code might not represent the same physical location for different AWS accounts. For more information, see [Availability Zones and Regions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-Endpoints.html) in the *Amazon S3 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

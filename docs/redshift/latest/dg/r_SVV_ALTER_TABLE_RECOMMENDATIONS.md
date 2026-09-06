@@ -40,7 +40,3 @@ from svv_alter_table_recommendations;
  diststyle | db0      | 117885   | 1        | ALTER TABLE "sch"."catalog_returns" ALTER DISTSTYLE KEY DISTKEY "cr_sold_date_sk", ALTER COMPOUND SORTKEY ("cr_sold_date_sk","cr_returned_time_sk") | t
  sortkey   | db0      | 117890   | -1       | ALTER TABLE "sch"."customer_addresses" ALTER COMPOUND SORTKEY ("ca_address_sk")                                                                     | t
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

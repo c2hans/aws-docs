@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 <a name="implementation-guidance-59"></a>
 
  Create and use Amazon EBS volumes in Local Zones with size, throughput, and latency characteristics appropriate for your data residency workloads. Provision the smallest suitable EBS volumes, and use [elasticity and automation](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_data_a5.html) to expand volumes as data grows. This improves sustainability by preventing over-provisioning of workload storage. Use [Amazon CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html) to collect and monitor guest disk utilization, and set thresholds to initiate EBS volume expansion when thresholds are reached.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

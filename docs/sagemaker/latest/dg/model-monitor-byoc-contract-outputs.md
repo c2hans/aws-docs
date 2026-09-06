@@ -25,7 +25,3 @@ In addition, if the `publish_cloudwatch_metrics` value is `"Enabled"` container 
 **Topics**
 + [Schema for Statistics (statistics.json file)](model-monitor-byoc-statistics.md)
 + [Schema for Constraints (constraints.json file)](model-monitor-byoc-constraints.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

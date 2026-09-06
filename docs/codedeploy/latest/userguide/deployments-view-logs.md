@@ -131,7 +131,3 @@ notepad C:\ProgramData\Amazon\CodeDeploy\{{deployment-group-ID}}\{{deployment-ID
 For version 2.0.x and later, the agent log rotates daily or when the file reaches 64 MB (configurable). The scripts log is size-rotated at 64 MB with up to 8 archived files (configurable).
 
 To browse the log file for error messages, press CTRL\+F, type **stderr**, and then press Enter to find the first error.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

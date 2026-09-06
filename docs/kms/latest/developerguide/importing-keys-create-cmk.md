@@ -85,7 +85,3 @@ Copy the `KeyId` value from your command output to use in later steps, and then 
 
 **Note**
 This command creates a symmetric encryption KMS key with a `KeySpec` of `SYMMETRIC_DEFAULT` and `KeyUsage` of `ENCRYPT_DECRYPT`. You can use the optional parameters `--key-spec` and `--key-usage` to create an asymmetric or HMAC KMS key. For more information, see the [CreateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

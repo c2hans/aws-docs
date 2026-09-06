@@ -34,7 +34,3 @@ For more detailed examples of ways to analyze the content of messages that are i
 
 **Note**
 You only use the Amazon WorkMail Message Flow API to access email messages in transit. You can only access the messages within 24 hours of being sent or received. To programmatically access messages in a user’s mailbox, use one of the other protocols supported by Amazon WorkMail, such as IMAP or Exchange Web Services (EWS).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

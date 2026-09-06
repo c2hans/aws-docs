@@ -15,7 +15,3 @@ These are the supported and/or required resources for monitoring and incident ma
 <a name="available-regions-table"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/managedservices/latest/accelerate-guide/acc-requirements.html)
 **Note**
 Metrics for Amazon EKS clusters in af-south-1, Africa (Cape Town) and ap-east-1, Asia Pacific (Hong Kong) are exported to the AMS monitoring service in the same AWS Region, respectively. Metrics for these AWS Regions are then transported within the AMS monitoring service to different Regions where they are processed and stored. See the preceding table for Regions that the AMS monitoring service uses to store metrics.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

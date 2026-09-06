@@ -66,7 +66,3 @@ The Appflow redirect URLs are subject to change. Once available, please update t
 1. The **Client ID** and **Client Secret** will now be visible. Copy and save them in a secure location.
 
 1. You can set up and verify `OAuth2` by following the steps in the [How to Integrate with Productboard via OAuth2 developer](https://developer.productboard.com/docs/how-to-integrate-with-productboard-via-oauth2-developer-documentation) documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/shopify-integrati
 # Shopify integration
 <a name="shopify-integration"></a>
 
-With the Shopify action connector, you can manage products, orders, customers, and store operations directly in Amazon Quick through natural language.
+With the Shopify connector, you can manage products, orders, customers, and store operations directly in Amazon Quick through natural language.
 
 Shopify uses Custom OAuth app authentication. For more information about the authentication methods that Amazon Quick supports, see [Authentication methods](quick-action-auth.md).
 
@@ -69,7 +69,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Sign-in fails** – Verify that you can sign in to your Shopify store admin directly. Confirm that the allowed redirection URL in your Shopify custom app matches the Amazon Quick callback URL.
 + **Invalid client credentials** – Verify that the Client ID (API key) and Client Secret (API secret key) match the values in your Shopify custom app.
 + **Insufficient permissions** – Verify that the Admin API access scopes configured on your Shopify custom app match the operations you want to use.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

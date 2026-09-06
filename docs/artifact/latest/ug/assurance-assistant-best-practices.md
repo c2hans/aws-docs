@@ -29,7 +29,7 @@ Assurance Assistant treats each question independently. To ensure you receive th
 + **Be specific and include relevant context** – Name the AWS service, security control, or compliance standard. For example: "How does Amazon S3 encrypt data at rest?" rather than "How is data encrypted?"
 + **Ask one clear question at a time** – Avoid compound or multi-part questions within a single submission.
 + **Use industry-standard terminology** – Where possible, align your phrasing with common compliance vocabulary to improve matching.
-+ **For bulk uploads** – Ensure each row in your XLSX file contains a complete, clearly articulated question.
++ **For bulk uploads** – Ensure each question is complete and clearly articulated. In XLSX files, use one question per row; in Word or PDF files, present each question as a distinct, clearly delineated item.
 
 ## Additional resources
 <a name="assurance-assistant-additional-resources"></a>
@@ -41,7 +41,3 @@ The following resources provide additional context and support for using AWS Art
 + [AWS Compliance Programs](https://aws.amazon.com/compliance/programs/) – Browse the full list of AWS compliance certifications and attestations.
 + [AWS Services in Scope by Compliance Program](https://docs.aws.amazon.com/general/latest/gr/aws-service-information-for-compliance-programs.html) – Check which AWS services are in scope for specific compliance programs.
 + [AWS Support](https://aws.amazon.com/contact-us/) – Contact AWS for additional support through your existing support plan.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Artifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query artifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

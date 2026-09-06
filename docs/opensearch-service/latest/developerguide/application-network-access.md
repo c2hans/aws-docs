@@ -125,7 +125,3 @@ Keep the following in mind when you configure network access controls:
 + **Pre-authentication versus authenticated access**. Only `opensearch:ViewLoginPage`, enforced with an RCP, blocks off-network users before they sign in and applies uniformly to both IAM and AWS IAM Identity Center users. Conditions applied only to `opensearch:ApplicationAccessAll` restrict where an authenticated principal can access the application from.
 + **Policy evaluation**. An explicit `Deny` always overrides an `Allow`. A resource control policy sets the maximum available permissions for resources in your organization, and an explicit `Deny` in an RCP cannot be overridden by an identity-based policy. Test your policy against a non-production application before applying it broadly.
 + **Monitoring**. Use AWS CloudTrail and IAM Access Analyzer to review the effect of your network conditions on access.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

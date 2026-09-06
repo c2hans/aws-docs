@@ -56,7 +56,3 @@ A statistical alert indicates that a drift has happened, but it doesn't indicate
 For more information about using an LLM to gain a semantic understanding of detected drift, see the following resources:
 + [Joint Detection of Fraud and Concept Drift inOnline Conversations with LLM-Assisted Judgment](https://arxiv.org/abs/2505.07852v1) (Arxiv)
 + [LLM-as-a-judge: a complete guide to using LLMs for evaluations](https://www.evidentlyai.com/llm-guide/llm-as-a-judge) (Evidently AI)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

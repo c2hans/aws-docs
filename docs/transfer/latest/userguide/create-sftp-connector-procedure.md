@@ -118,6 +118,7 @@ You must accept the new key as trusted, or verify the presented fingerprint with
    + (Optional) For **Maximum concurrent connections**, from the dropdown list, choose the number of concurrent connections that your connector creates to the remote server. The default selection on the console is **5**.
 
      This setting specifies the number of active connections that your connector can establish with the remote server at the same time. Creating concurrent connections can enhance connector performance by enabling parallel operations.
+   + (Optional) For **Ordered secret version stages**, enter an ordered list of Secrets Manager version stage labels. The connector attempts authentication using each stage in order during file transfers. If you don't specify version stages, the connector uses only `AWSCURRENT`. For example, specify `AWSCURRENT`, `AWSPREVIOUS` to enable automatic fallback during secret rotation.
 
 1. In the **Cryptographic algorithm options** section, choose a **Security policy** from the dropdown list in the **Security Policy** field. The security policy enables you to select the cryptographic algorithms that your connector supports. For details on the available security policies and algorithms, see [Security policies for AWS Transfer Family SFTP connectors](security-policies-connectors.md).
 
@@ -225,9 +226,12 @@ You can also store secrets containing your SFTP credentials in another AWS accou
      "UserSecretId": "arn:aws::secretsmanager:{{us-east-2}}:{{123456789012}}:secret:aws/transfer/{{example-username-key}}",
      "TrustedHostKeys": [
         "{{sftp.example.com ssh-rsa AAAAbbbb...EEEE=}}"
-     ]
+     ],
+     "OrderedUserSecretVersionStages": ["AWSCURRENT", "AWSPREVIOUS"]
   }
   ```
+**Note**
+The `OrderedUserSecretVersionStages` parameter is optional. If you omit this parameter, the connector defaults to `["AWSCURRENT"]`.
 + Specify a security policy for your connector, entering the security policy name.
 
 **Note**
@@ -273,7 +277,3 @@ When you describe a VPC egress type connector, the response includes the new fie
 Note that `ServiceManagedEgressIpAddresses` is null for VPC egress type connectors since traffic routes through your VPC instead of AWS managed infrastructure.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

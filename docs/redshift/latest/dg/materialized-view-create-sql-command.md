@@ -81,7 +81,7 @@ You can't define a materialized view that references or includes any of the foll
 + Late-binding references to base tables. In other words, any base tables or related columns referenced in the defining SQL query of the materialized view must exist and must be valid.
 + Leader node-only functions: CURRENT\_SCHEMA, CURRENT\_SCHEMAS, HAS\_DATABASE\_PRIVILEGE, HAS\_SCHEMA\_PRIVILEGE, HAS\_TABLE\_PRIVILEGE.
 + You can't use the AUTO REFRESH YES option when the materialized view definition includes mutable functions or external schemas. You also can't use it when you define a materialized view on another materialized view.
-+ You don't have to manually run [ANALYZE](r_ANALYZE.md) on materialized views. This happens currently only via AUTO ANALYZE. For more information, see [Analyzing tables](t_Analyzing_tables.md).
++ You don't have to manually run [ANALYZE](r_ANALYZE.md) on materialized views. This happens currently only by using AUTO ANALYZE. For more information, see [Analyzing tables](t_Analyzing_tables.md).
 + RLS-protected or DDM-protected tables.
 + Materialized view creation from remote datasharing clusters does not support references on other materialized views, Spectrum tables, tables defined in a different Redshift cluster and UDFs. These are supported for materialized view creation from the local (producer) cluster.
 
@@ -180,7 +180,3 @@ For details about materialized view overview and SQL commands used to refresh an
 + [Materialized views in Amazon Redshift](materialized-view-overview.md)
 + [REFRESH MATERIALIZED VIEW](materialized-view-refresh-sql-command.md)
 + [DROP MATERIALIZED VIEW](materialized-view-drop-sql-command.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

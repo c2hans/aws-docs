@@ -39,7 +39,7 @@ As a consumer administrator, you can associate one or more datashares that are s
 
 It's possible for the producer to go back and change settings for an authorization, which can affect association settings on consumers.
 
- If you're associating the datashare with a Lake Formation account, go to the Lake Formation console to create a database, then define permissions over the database. For more information, see [ Setting up permissions for Amazon Redshift datashares](https://docs.aws.amazon.com/lake-formation/latest/dg/setup-ds-perms.html) in the AWS Lake Formation Developer Guide. Once you create a AWS Glue database or a federated database, you can use query editor v2 or any preferred SQL client with your consumer cluster to query the data.
+ If you're associating the datashare with a Lake Formation account, go to the Lake Formation console to create a database, then define permissions over the database. For more information, see [ Setting up permissions for Amazon Redshift datashares](https://docs.aws.amazon.com/lake-formation/latest/dg/setup-ds-perms.html) in the AWS Lake Formation Developer Guide. After you create a AWS Glue database or a federated database, you can use query editor v2 or any preferred SQL client with your consumer cluster to query the data.
 
 After the datashare is associated, the datashares become available.
 
@@ -53,7 +53,7 @@ You can also change datashare association at any time. When changing association
 The steps in this section are performed after the producer administrator grants specific actions on the shared database objects and, if the datashare is being shared with another account, the producer security administrator authorizes access.
 
 The consumer security administrator determines the following:
-+ Whether or not all namespaces in an account, namespaces in specific regions in the account, or specific namespaces have access to the datashare.
++ Whether or not all namespaces in an account, namespaces in specific Regions in the account, or specific namespaces have access to the datashare.
 + If namespaces have access to the datashare, whether or not those namespace have write permissions.
 
 The consumer security administrator can associate the datashare with the following command:
@@ -72,7 +72,3 @@ The consumer security administrator must explicitly set `allow-writes` to true w
 You can change the association of a namespace for a datashare by calling `associate-data-share-consumer` again, with a different value. The old association is overwritten by the new association, so if you originally associate and set `allow-writes`, but associate and specify `no-allow-writes`, or simply do not specify a value, the consumer will have their write permissions revoked.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

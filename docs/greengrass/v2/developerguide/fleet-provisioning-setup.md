@@ -699,7 +699,3 @@ To help you better manage the number of devices, and which devices, that registe
    The command doesn't have any output if the request succeeds.
 
 You now have a provisioning claim certificate and private key that devices can use to register with AWS IoT and provision themselves as Greengrass core devices. You can embed the claim certificate and private key in devices during manufacturing, or copy the certificate and key to devices before you install the AWS IoT Greengrass Core software. For more information, see [Install AWS IoT Greengrass Core software with AWS IoT fleet provisioning](fleet-provisioning.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

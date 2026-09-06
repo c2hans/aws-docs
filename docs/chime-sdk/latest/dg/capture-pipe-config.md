@@ -22,7 +22,3 @@ The following sections explain how to create a media capture pipeline. Follow th
 + [Understanding meeting event files for Amazon Chime SDK media capture pipelines](meeting-events.md)
 + [Understanding transcription files for Amazon Chime SDK media capture pipelines](transcription-messages.md)
 + [Concatenating data streams for Amazon Chime SDK media capture pipelines](concatenate-streams.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

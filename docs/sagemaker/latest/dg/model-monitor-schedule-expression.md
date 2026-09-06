@@ -37,7 +37,3 @@ For example, the following are valid `cron` expressions:
 Although the `cron` expression is set to start at 5 PM UTC, note that there could be a delay of 0-20 minutes from the actual requested time to run the execution.
 If you want to run on a daily schedule, don't provide this parameter. SageMaker AI picks a time to run every day.
 Currently, SageMaker AI only supports hourly integer rates between 1 hour and 24 hours.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

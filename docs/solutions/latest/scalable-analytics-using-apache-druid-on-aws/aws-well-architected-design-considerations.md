@@ -64,7 +64,3 @@ This section describes how we architected this guidance using the principles and
 This section describes how we architected this guidance using the principles and best practices of the [sustainability pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html).
 + Support for Graviton-based EC2 instances aids in minimizing your carbon footprint and aligning with sustainability objectives.
 + Amazon EC2 Auto Scaling is used to scale your workloads dynamically. The predicative auto scaling is used to proactively scale as you anticipate predicted and planned changes in demand.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Scalable Analytics Using Apache Druid on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

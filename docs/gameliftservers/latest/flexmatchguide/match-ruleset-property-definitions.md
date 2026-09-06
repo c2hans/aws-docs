@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 This section defines each property in the rule set schema. For additional help with creating a rule set, see [Build a FlexMatch rule set](match-rulesets.md).
 
 **`name`**
-A descriptive label for the rule set. This value is not associated with the name assigned to the Amazon GameLift Servers [MatchmakingRuleSet resource](https://docs.aws.amazon.com/gamelift/latest/apireference/API_MatchmakingRuleSet.html). This value is included in the matchmaking data describing a completed match, but it not used by any Amazon GameLift Servers processes.
+A descriptive label for the rule set. This value is not associated with the name assigned to the Amazon GameLift Servers [MatchmakingRuleSet resource](https://docs.aws.amazon.com/gamelift/latest/apireference/API_MatchmakingRuleSet.html). This value is included in the matchmaking data describing a completed match, but it is not used by any Amazon GameLift Servers processes.
 Allowed values: String
 Required? No
 
@@ -21,7 +21,7 @@ Required? Yes
 A collection of player data that is included in matchmaking requests and is used in the matchmaking process. You can also declare attributes here to have the player data included in the matchmaking data that is passed to game servers, even if the data is not used in the matchmaking process.
 Required? No
 **`name`**
-A unique name for player attribute to be used by matchmaker. This name must match the player attribute name that is referenced in matchmaking requests.
+A unique name for a player attribute to be used by a matchmaker. This name must match the player attribute name that is referenced in matchmaking requests.
 Allowed values: String
 Required? Yes
 **`type`**
@@ -39,7 +39,7 @@ Required? No
 **`strategy`**
 The method to use when building matches. If this property is not set, the default behavior is "exhaustiveSearch".
 Allowed values:
-+ "exhaustiveSearch" – Standard matching method. FlexMatch forms a match around the oldest ticket in a batch by evaluating other tickets in the pool based a set of custom match rules. This strategy is used for matches of 40 players or fewer. When using this strategy, `batchingPreference` should be set to either "random" or "sorted".
++ "exhaustiveSearch" – Standard matching method. FlexMatch forms a match around the oldest ticket in a batch by evaluating other tickets in the pool based on a set of custom match rules. This strategy is used for matches of 40 players or fewer. When using this strategy, `batchingPreference` should be set to either "random" or "sorted".
 + "balanced" – Method that's optimized to form large matches quickly. This strategy is used only for matches of 41 to 200 players. It forms matches by pre-sorting the ticket pool, building potential matches and assigning players to teams, and then balancing each team in a match using a specified player attribute. For example, this strategy can be used to equalize the average skill levels of all teams in a match. When using this strategy, `balancedAttribute` must be set, and `batchingPreference` should be set to either "largestPopulation" or "fastestRegion". Most custom rule types are not recognized with this strategy.
 Required? Yes
 **`batchingPreference`**
@@ -128,7 +128,3 @@ The length of time, in seconds, to wait before applying the new value for the ta
 Required? Yes
 **`value`**
 The new value for the target rule set element.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

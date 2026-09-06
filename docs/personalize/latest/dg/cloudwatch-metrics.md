@@ -38,7 +38,3 @@ The following table lists the Amazon Personalize metrics. All metrics except Get
 | PutUsers4xxErrors | The number of `PutUsers` API calls that returned a 4xx HTTP response code.<br />Dimension: ` DatasetGroupArn, DatasetArn` |
 | PutUsers5xxErrors | The number of `PutUsers` API calls that returned a 5xx HTTP response code.<br />Dimension: ` DatasetGroupArn, DatasetArn` |
 | PutUsersLatency | The time taken for the completion of the `PutUsers` API call (excludes 4xx and 5xx errors).<br />Dimension: ` DatasetGroupArn, DatasetArn`<br />Unit: Milliseconds |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -129,7 +129,3 @@ You can also convert an internationalized domain name to Punycode when you creat
 <a name="create-namespace-next-steps"></a>
 
 After creating a namespace, you can create services in the namespace to group together application resources that collectively serve a particular purpose in your application. A service acts as a template for registering application resources as instances. For more information about creating AWS Cloud Map services, see [Creating an AWS Cloud Map service for an application component](creating-services.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Map. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud-map` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

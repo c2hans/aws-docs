@@ -85,7 +85,3 @@ The annual re-vetting process is similar to the initial PIN verification:
 Failure to complete annual re-vetting can result in suspension of your short code service. Monitor your email for verification requests and complete them promptly.
 
 If your business contact details have changed since your initial registration or last re-vetting, you must open a support case with AWS to update your contact information with the carriers before the annual re-vetting period. This ensures that the verification email is sent to the correct recipient.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ Agents can use the CCP with a softphone on their computer, or a desk phone. If t
 
 **Note**
 If you see the **Session expired** message while logging in, you probably just need to refresh the session token. Go to your identity provider and log in. Refresh the Connect Customer page. If you still get this message, contact your IT team.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

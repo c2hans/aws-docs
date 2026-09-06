@@ -26,7 +26,3 @@ Amazon Chime does not support virtual backgrounds.
 + [Sorting active speakers into view](sort-speaker.md)
 + [Unmirroring your self view](un-mirror-self.md)
 + [Uncropping your video tile](uncrop-video-tile.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

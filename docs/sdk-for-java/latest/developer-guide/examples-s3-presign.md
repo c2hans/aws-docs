@@ -762,7 +762,3 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 <a name="presign-query-parameters-verify"></a>
 
 To check which headers a specific pre-signed request requires the caller to send, call [signedHeaders()](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/awscore/presigner/PresignedRequest.html#signedHeaders()) on the returned [PresignedRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/awscore/presigner/PresignedRequest.html). Any `x-amz-*` name in the returned map is a header the caller must send. If you want to remove a header from the requirement, pass its value through `putRawQueryParameter` instead of setting the typed field.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

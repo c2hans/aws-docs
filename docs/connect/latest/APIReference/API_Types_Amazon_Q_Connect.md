@@ -214,7 +214,3 @@ The following data types are supported by Amazon Q Connect:
 +  [WhatsAppMessageTemplateContent](API_amazon-q-connect_WhatsAppMessageTemplateContent.md)
 +  [WhatsAppMessageTemplateSourceConfiguration](API_amazon-q-connect_WhatsAppMessageTemplateSourceConfiguration.md)
 +  [WhatsAppMessageTemplateSourceConfigurationSummary](API_amazon-q-connect_WhatsAppMessageTemplateSourceConfigurationSummary.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

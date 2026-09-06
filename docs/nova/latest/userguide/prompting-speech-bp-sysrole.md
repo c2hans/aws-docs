@@ -12,7 +12,3 @@ Amazon Nova text models benefit from [clear role definitions](https://docs.aws.a
 + Define roles that sound natural when speaking (such as, "friendly advisor" rather than "information retrieval system").
 + Use role descriptions that emphasize conversational attributes (warm, patient, concise) rather than text-oriented attributes (detailed, comprehensive, systematic).
 + Consider how the chosen voice might influence the perceived personality. Test the voices to chose the best voice for your use case. Review the [System prompt authoring guidelines and examples](prompting-speech-speech.md) section for techniques on how to indirectly influence the model's natural prosody.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

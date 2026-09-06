@@ -182,7 +182,3 @@ Amazon SageMaker AI API Operations and Required Permissions for Actions
 | [`UpdateUserProfile`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateUserProfile.html) | `sagemaker:UpdateUserProfile` | `arn:aws:sagemaker:{{region}}:{{account-id}}:user-profile/domain-id/{{userProfileName}}` |
 | [`UpdateWorkforce`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateWorkforce.html) | `sagemaker:UpdateWorkforce` | `arn:aws:sagemaker:{{region}}:{{account-id}}:workforce/*` |
 | [`UpdateWorkteam`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateWorkteam.html) | `sagemaker:UpdateWorkteam` | `arn:aws:sagemaker:{{region}}:{{account-id}}:workteam/private-crowd/*` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

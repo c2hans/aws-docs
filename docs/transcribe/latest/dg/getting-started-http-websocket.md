@@ -55,7 +55,3 @@ For more information on these methods, refer to [Setting up an HTTP/2 stream](st
 
 **Note**
 We strongly recommend using an SDK for streaming transcriptions. For a list of supported SDKs, refer to [Supported programming languages](supported-languages.md#supported-sdks).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

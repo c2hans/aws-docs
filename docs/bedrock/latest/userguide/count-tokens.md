@@ -141,7 +141,7 @@ The `bedrock-mantle` endpoint exposes Anthropic's `count_tokens` API at `/anthro
 + **URL** – `POST https://bedrock-mantle.{{region}}.api.aws/anthropic/v1/messages/count_tokens`. For supported Regions, see [Supported Regions and Endpoints](bedrock-mantle.md#bedrock-mantle-supported).
 + **Request body** – The Anthropic `count_tokens` shape, including `model`, `messages`, and optional `system` and `tools` fields. See the [Anthropic Messages count tokens reference](https://docs.anthropic.com/en/api/messages-count-tokens).
 + **Authentication** – Either a SigV4 signature with service name `bedrock-mantle`, or an Amazon Bedrock API key passed in the `x-api-key` header. See [API keys](api-keys.md).
-+ **IAM action** – `bedrock-mantle:CountTokens`. The authorization is scoped to a Amazon Bedrock [Project](projects.md) resource of the form `arn:aws:bedrock-mantle:{{region}}:{{account-id}}:project/{{project-name}}`. The default project name is `default`.
++ **IAM action** – `bedrock-mantle:CountTokens`. This action uses the `bedrock-mantle` service prefix and appears in the [Amazon Bedrock Powered by AWS Mantle service authorization reference](https://docs.aws.amazon.com/service-authorization/latest/reference/list_bedrock-mantle.html), rather than the Amazon Bedrock (`bedrock`) reference. The authorization is scoped to an Amazon Bedrock [Project](projects.md) resource of the form `arn:aws:bedrock-mantle:{{region}}:{{account-id}}:project/{{project-name}}`. The default project name is `default`.
 + **SDK support** – The AWS SDKs do not currently expose a method that targets this endpoint. Send the request as a SigV4-signed HTTP `POST`, or use any HTTP client with a Amazon Bedrock API key. The `bedrock-runtime` client method `count_tokens` does not target this endpoint and returns a validation error for models that are not supported on `bedrock-runtime`.
 + **Error format** – Errors follow the Anthropic shape: `{"type": "error", "request_id": "...", "error": {"type": "error-type", "message": "error-message"}}`. This differs from the standard AWS JSON error envelope returned by `bedrock-runtime`.
 
@@ -164,7 +164,3 @@ curl -X POST https://bedrock-mantle.us-east-1.api.aws/anthropic/v1/messages/coun
 ```
 
 The response contains an `input_tokens` field whose value is the token count for the supplied input.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

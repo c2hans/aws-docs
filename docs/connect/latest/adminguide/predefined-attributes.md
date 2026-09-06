@@ -26,6 +26,7 @@ You can create and manage predefined attributes manually by using the Connect Cu
 + A predefined attribute **name** can be up to 100 characters long.
 + A predefined attribute **value** can be up to 100 characters long.
 + The pattern for predefined attribute name and value is `^(?!(aws:|connect:))[\p{L}\p{Z}\p{N}_.:/=+-@']+$`. For example, it can contain any letter, numeric value, whitespace, or `_.:/=+-@'` special characters, but can't start with `aws:` or `connect:`.
++ The preceding pattern restriction applies to **customer-created** predefined attributes only. System predefined attributes (such as `connect:WorkloadType`, `connect:Language`, and `connect:Subtype`) use the `connect:` prefix and are managed by Connect Customer. You can add custom values to system attributes where permitted, but you cannot rename or delete the attribute itself.
 + You cannot create duplicate predefined attribute names or values. In addition, case sensitivity means you cannot use duplicate names. For example, a new predefined attribute with the name `language` cannot be created if a predefined attribute with name `Language` exists in your Connect Customer instance.
 + An attribute can only be deleted if it not associated with any agent.
 
@@ -40,6 +41,7 @@ System attributes, identified as `connect:`, are predefined attributes set by Co
 The following system attributes are available:
 + `connect:Language`. You can add 500 custom values for `connect:Language`.
 + `connect:Subtype`. You cannot change `connect:Subtype` but it can be used in routing criteria for routing.
++ `connect:WorkloadType`. Represents the complexity or urgency of a contact's work. You can add up to 500 custom values for `connect:WorkloadType`. These values are used to configure workload-type concurrency in routing profiles, allowing you to set different agent capacity limits for different types of work within the same channel (Task or Email). For more information, see [Channels and concurrency for routing contacts in Connect Customer](channels-and-concurrency.md).
 
 ## Create a predefined attribute
 <a name="predefined-attributes-create-web-admin"></a>
@@ -84,7 +86,3 @@ The following system attributes are available:
 + [DeletePredefinedAttribute](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeletePredefinedAttribute.html)
 + [DescribePredefinedAttribute](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribePredefinedAttribute.html)
 + [ListPredefinedAttributes](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListPredefinedAttributes.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

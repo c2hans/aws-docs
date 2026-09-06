@@ -38,7 +38,3 @@ Partners manage profiles containing company details (name, description, website,
 1. **PutProfileVisibility API:** By calling this API, partners can control the visibility of a profile regardless of locale. This allows partners to make profiles public or private without modifying the content.
 
 1. **GetProfileVisibility API:** By calling the UpdatePartnerProfileVisibility API, partners can control the visibility of a profile regardless of locale. This allows partners to make profiles public or private without modifying the content.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

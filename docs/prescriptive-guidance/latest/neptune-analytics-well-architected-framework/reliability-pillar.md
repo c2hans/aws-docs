@@ -71,7 +71,3 @@ If no replica is configured and the graph fails, Neptune Analytics recovers from
 Create snapshots of the graph. (Neptune Analytics doesn't take automatic snapshots.) If the graph is modified on a regular basis after creation, take frequent snapshots to capture its current state. Delete older snapshots if restoration to an earlier point in time isn't required.
 
 You can share snapshots with other accounts and across AWS Regions. If you have DR requirements, consider whether restoring the graph in a different Region from a snapshot meets your recovery time objective (RTO) and recovery point objective (RPO) requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

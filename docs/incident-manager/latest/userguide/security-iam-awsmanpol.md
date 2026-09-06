@@ -79,7 +79,3 @@ View details about updates to AWS managed policies for Incident Manager since th
 | [`AWSIncidentManagerResolverAccess`](#security-iam-awsmanpol-AWSIncidentManagerResolverAccess) – New policy | Incident Manager added a new policy to allow you to start incidents, list response plans, list incidents, update incidents, list timeline events, create custom timeline events, update custom timeline events, delete custom timeline events, list related items, create related items, and update related items. | April 26, 2021 |
 | [`AWSIncidentManagerServiceRolePolicy`](#security-iam-awsmanpol-AWSServiceRoleforIncidentManagerPolicy) – New policy | Incident Manager added a new policy to grant Incident Manager permissions to list incidents, create timeline events, create OpsItems, associate related items to OpsItems, and start engagements related to an incident. | April 26, 2021 |
 | Incident Manager started tracking changes | Incident Manager started tracking changes for its AWS managed policies. | April 26, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

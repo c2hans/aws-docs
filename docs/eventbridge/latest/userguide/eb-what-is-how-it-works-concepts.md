@@ -109,7 +109,3 @@ Once you have a schema for an event, you can download code bindings for popular 
 To organize AWS resources or to track costs in EventBridge, you can assign a custom label, or *[tag](eb-tagging.md)*, to AWS resources. Using [tag-based policies](eb-tag-policies.md), you can control what resources can and can’t do within EventBridge.
 
 In addition to tag-based policies, EventBridge supports [identity-based](eb-use-identity-based.md) and [resource-based](eb-use-resource-based.md) policies to control access to EventBridge. Use identity-based policies to control the permissions of a group, role, or user. Use resource-based policies to give specific permissions to each resource, such as a Lambda function or Amazon SNS topic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

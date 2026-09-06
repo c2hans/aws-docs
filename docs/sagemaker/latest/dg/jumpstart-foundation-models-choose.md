@@ -109,7 +109,3 @@ The `accept_eula` value is `false` by default and must be explicitly redefined a
 
 **Important**
 The `custom_attributes` parameter accepts key-value pairs in the format `"key1=value1;key2=value2"`. If you use the same key multiple times, the inference server uses the last value associated with the key. For example, if you pass `"accept_eula=false;accept_eula=true"` to the `custom_attributes` parameter, then the inference server associates the value `true` with the `accept_eula` key.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

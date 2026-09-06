@@ -116,7 +116,7 @@ AWS Security Agent detects vulnerabilities in the OWASP Top 10 for web applicati
 #### Does AWS Security Agent report open network ports?
 <a name="exposed-network-ports"></a>
 
-Yes. During a penetration test, AWS Security Agent scans each target host for open network ports. When a host has open TCP ports beyond the standard web ports your application uses, it adds a single informational Exposed Network Ports finding. The finding lists each open port with its detected service and version. AWS Security Agent identifies these ports for your awareness. It does not attack the services on them or attempt to exploit them. The port scan does not accrue task hours.
+Yes. During a penetration test, AWS Security Agent scans each target host for open network ports. When a host has open TCP ports beyond the standard web ports your application uses, it adds a single informational Exposed Network Ports finding. The finding lists each open port with its detected service and version. AWS Security Agent identifies these ports for your awareness. It does not attempt to exploit the services on them.
 
 #### What authentication methods does AWS Security Agent support?
 <a name="_what_authentication_methods_does_aws_security_agent_support"></a>
@@ -196,7 +196,3 @@ AWS Security Agent does not have public APIs or the ability to schedule the pene
 <a name="_whats_the_typical_duration_for_a_complete_security_assessment"></a>
 
 The runtime for each penetration test depends on the breadth of the target application, and the risk types configured to be assessed. Most penetration test runs complete within 16 hours.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

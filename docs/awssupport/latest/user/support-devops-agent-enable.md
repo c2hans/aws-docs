@@ -26,7 +26,3 @@ Activation includes the following four phases:
 When activation completes, you can open the AWS DevOps Agent web app from the success message link, or anytime from the AWS Management Console.
 
 For a detailed explanation of what the agent does in your account, what data it stores, and the IAM access it has, see [About AWS DevOps Agent](https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent.html) in the *AWS DevOps Agent User Guide*. For an overview of the agent's security posture, see [AWS DevOps Agent Security](https://docs.aws.amazon.com/devopsagent/latest/userguide/aws-devops-agent-security.html) in the *AWS DevOps Agent User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

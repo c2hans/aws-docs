@@ -61,7 +61,3 @@ If you created a product REST endpoint page or a product page and it's not visib
 1. Choose your portal product.
 
 1. In the **Documentation** tab, confirm your pages are not in the **Draft documentation pages** or **Draft API reference pages** section, but are in the **Custom documentation pages** or **API reference pages**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,7 +51,3 @@ These criteria do not apply if your notification setting is in a `disabled` stat
 | CA certificate expiry | CloudWatch | Number of days until certificate expiry ≤ threshold | Day of certificate expiry |
 | CA certificate expiry | EventBridge and AWS Health | Number of days until certificate expiry ≤ threshold | 14 days after certificate expires |
 | End-entity certificate expiry | EventBridge and AWS Health | Number of days until certificate expiry ≤ threshold | Day of certificate expiry |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

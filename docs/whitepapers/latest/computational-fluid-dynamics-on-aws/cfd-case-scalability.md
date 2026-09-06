@@ -53,7 +53,3 @@ Scaling is considered to be excellent when the scale-up is close to or equal to 
  In the preceding figure, the turn-around time is shown on the horizontal axis. The cost is shown on the vertical axis. The price is based on the “on-demand” price of a `c5n.18xlarge` for 1000 iterations, and only includes the computational costs. Small costs are also incurred for data storage. Minimum cost was obtained at approximately 50,000 cells per core or more. As the efficiency is 100% over a range of core counts, the price is the same regardless of the number of cores. Many users choose a cell count per core to achieve the lowest possible cost.
 
  As core count goes up, inefficiencies start to show up, but turn-around time continues to drop. When a fast turn-around is needed, users may choose a large number of cores to accelerate the time to solution. For this case, a turn-around time of about five minutes can be obtained by running on about 20,000 cells per core. When considering total cost, the inclusion of license costs may make the fastest run the cheapest run.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -7,12 +7,12 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 
 The alias resource represents a pointer to a fleet or terminal destination. They are used to direct player traffic to specific hosting destinations. Use an alias to abstract a destination so that you can more easily redirect traffic when you update your hosting fleets.
 
-View information about aliases in the Amazon GameLift Servers console or using the or AWS SDK for Amazon GameLift Servers.
+View information about aliases in the Amazon GameLift Servers console or using the AWS SDK for Amazon GameLift Servers.
 
 ------
 #### [ Console ]
 
-The **Alias** page displays information about Amazon GameLift Servers aliases that direct traffic specific hosting destinations. To view aliases, choose **Hosting**, **Aliases** in the navigation pane.
+The **Alias** page displays information about Amazon GameLift Servers aliases that direct traffic to specific hosting destinations. To view aliases, choose **Hosting**, **Aliases** in the navigation pane.
 
 You can do the following on the aliases page:
 + Create a new alias. Choose **Create alias**.
@@ -47,7 +47,3 @@ Use the following AWS CLI commands to retrieve information about this resource:
 + [DescribeAlias](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_DescribeAlias.html)
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

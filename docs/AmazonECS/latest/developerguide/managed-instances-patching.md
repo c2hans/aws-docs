@@ -38,7 +38,3 @@ At the designated maintenance time, Amazon ECS begins its maintenance sequence b
 Amazon ECS stops tasks and launches replacement tasks according to the service's deployment configuration (`maximumPercent` and `minimumHealthyPercent`). With the default `maximumPercent` of 200%, Amazon ECS first schedules new tasks and waits for them to be running before stopping existing ones, minimizing service disruption. When `maximumPercent` is set to 100%, Amazon ECS stops tasks first, then replaces them. Throughout this process, Amazon ECS services honor all service deployment configurations while continuing draining attempts until day 21 from the instance launch.
 
 If draining has not completed by day 21, Amazon ECS executes the `DeregisterContainerInstance` API to stop the managed container instance and its remaining workloads to maintain compliance and patch the managed instance with the latest software.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

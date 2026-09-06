@@ -98,7 +98,3 @@ No. Drift remediation is not supported for stacks provisioned through the AMS Cl
 
 Can I know the changes that would be performed to the stack before remediation?
 Yes. The drift remediation change type (ct-3kinq0u4l33zf) provides a **DryRun** option that you can use to request changes that would be performed if the stack was remediated. However, the final remediation changes might differ depending on the drift present on the stack at the time of remediation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

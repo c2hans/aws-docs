@@ -33,7 +33,3 @@ The log group and the destination must be in the same AWS Region. However, the A
 **Topics**
 + [Setting up a new cross-account subscription](Cross-Account-Log_Subscription-New.md)
 + [Updating an existing cross-account subscription](Cross-Account-Log_Subscription-Update.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

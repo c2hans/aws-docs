@@ -84,7 +84,3 @@ The solution displays a warning when files with Windows-incompatible characters 
 <a name="aws-deadline-cloud"></a>
 
 When using AWS Deadline Cloud for content derivation jobs, the solution uses service-managed fleets. For security details on Deadline Cloud, see [AWS Deadline Cloud Documentation](https://docs.aws.amazon.com/deadline-cloud/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

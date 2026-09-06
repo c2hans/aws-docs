@@ -192,7 +192,3 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/servicenow.
 1.  Choose **Add integration**. After you complete the configuration, you can view your configured integrations in the **Configured integrations** tab.
 
  After you configure your integration with ServiceNow, you can test the connection to confirm that everything is configured properly in your ServiceNow environment and in Security Hub. For more information, see [Testing configured ticketing integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-test-ticket-integration.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

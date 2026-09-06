@@ -109,7 +109,3 @@ Error while uploading file to S3: Failed to calculate presigned URL.
 ```
 
 This error is typically caused by either an incorrect IAM role configuration, or incorrect CORS configuration on the Amazon S3 bucket and can be resolved by fixing those configurations with the information in [Connect to Amazon Simple Storage Service (Amazon S3)](connectors-s3.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

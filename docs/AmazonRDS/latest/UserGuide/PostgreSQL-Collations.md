@@ -14,7 +14,3 @@ When you create a new DB instance in RDS for PostgreSQL , it checks the operatin
 RDS for PostgreSQL depends on the glibc library in the operating system for collation support. RDS for PostgreSQL instance is periodically updated with the latest versions of the operating system. These updates sometimes include a newer version of the glibc library. Rarely, newer versions of glibc change the sort order or collation of some characters, which can cause the data to sort differently or produce invalid index entries. If you discover sort order issues for collation during an update, you might need to rebuild the indexes.
 
 To reduce the possible impacts of the glibc updates, RDS for PostgreSQL now includes an independent default collation library. This collation library is available in RDS for PostgreSQL 14.6, 13.9, 12.13, 11.18, 10.23 and newer minor version releases. It is compatible with glibc 2.26-59.amzn2, and provides sort order stability to prevent incorrect query results.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

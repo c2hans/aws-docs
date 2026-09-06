@@ -71,7 +71,3 @@ Gremlin property-graph data is expressed in the SPOG model using three classes o
 + [Property Statements](gremlin-explain-background-statements.md#gremlin-explain-background-property-statements)
 
 For an explanation of how these are used in Gremlin queries, see [Understanding how Gremlin queries work in Neptune](gremlin-explain-background.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

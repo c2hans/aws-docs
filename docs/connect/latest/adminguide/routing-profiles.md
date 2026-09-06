@@ -24,6 +24,27 @@ Each agent is assigned to one routing profile. For more information about routin
 1. In the **Channel Settings** section, enter or choose the following information:
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/routing-profiles.html)
 
+1. (Optional) Configure workload type concurrency.
+
+   If you enabled workload type concurrency for a channel in the **Channel Settings** section, configure the individual workload type rows:
+
+   1. Under the channel (for example, **TASK**), choose **Add workload type**.
+
+   1. For each workload type row, configure the following:
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/routing-profiles.html)
+
+   1. Repeat for each workload type the agent should handle on this channel.
+
+   1. Choose **Save**.
+
+   Rules and validations:
+   + You can add up to 5 workload types per channel in a single routing profile.
+   + The sum of concurrency values across all workload types for a channel cannot exceed the channel's maximum concurrency limit (10).
+   + You cannot have both channel-level concurrency and workload-type concurrency active for the same channel. Enabling one disables the other.
+   + Every workload type assigned to contacts (through flows or APIs) that route to this profile must have a corresponding row here. Missing entries cause contacts to queue indefinitely.
+**Important**
+When you enable workload type concurrency for a channel, the channel-level **Maximum contacts per agent** and **Cross-channel concurrency** fields for that channel become inactive. All capacity and cross-channel settings are managed per workload type.
+
 1. In the **Queues** section, enter the following information:
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/routing-profiles.html)
 
@@ -52,6 +73,8 @@ Each agent is assigned to one routing profile. For more information about routin
 + For each queue in the profile, choose whether it's for voice, chat, task, email, or all channels.
 + If you want a queue to handle voice, chat, task, and email but want to assign a different priority to each channel, add the queue twice. For example, in the following image, voice is priority 1 but chat, task, and email are priority 2.
 ![Queue configuration showing two BasicQueue entries with different channel and priority settings.](http://docs.aws.amazon.com/connect/latest/adminguide/images/set-channels-and-concurrency-2.png)
++ When using workload type concurrency, cross-channel behavior is set per workload type, not per channel. A "Fraud Investigation" workload type might block all other channels, while a "Password Reset" on the same task channel might allow concurrent chats.
++ If a contact's workload type doesn't match any entry in the routing profile, the contact stays in queue. Audit your flows to ensure alignment between assigned workload types and routing profile entries.
 
 ## Example of how a contact is routed with cross-channel concurrency
 <a name="example-routing-concurrency"></a>
@@ -99,7 +122,3 @@ Use the following APIs to create and manage routing profiles programmatically:
 + [UpdateRoutingProfileConcurrency](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRoutingProfileConcurrency.html)
 + [UpdateRoutingProfileQueues](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRoutingProfileQueues.html)
 + [UpdateRoutingProfileDefaultOutboundQueue](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRoutingProfileDefaultOutboundQueue.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

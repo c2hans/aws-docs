@@ -26,7 +26,3 @@ For more information, see [Enable a delegated admin account for AWS Account Mana
 When your AWS account is part of an organization that is managed by AWS Organizations, then the administrator of the organization can apply [service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) that can limit what the principals in member accounts can do. An SCP never grants permissions; instead, it is a filter that limits what permissions can be used by the member account. A user or role (*a principal*) in a member account can perform only those operations that are in the intersection of what is allowed by the SCPs that apply to the account and the IAM permission policies attached to the principal. For example, you can use SCPs to prevent any principal in an account from modifying their own account's alternate contacts.
 
 For example SCPs that apply to AWS accounts, see [Restrict access using AWS Organizations service control policies](using-orgs-example-scps.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

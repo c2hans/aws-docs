@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ![App Runner architecture with two services: one deploying from code repository, another from ECR.](http://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image7.png)
 
  App Runner supports full stack development, including both frontend and backend web applications that use HTTP and HTTPS protocols. These applications include API services, backend web services, and websites. App Runner supports container images as well as runtimes and web frameworks including Node.js and Python.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

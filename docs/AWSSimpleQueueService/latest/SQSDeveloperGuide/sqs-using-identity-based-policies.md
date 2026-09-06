@@ -43,7 +43,3 @@ A user who wants to work with the Amazon SQS console must have the minimum set o
 If you create an IAM policy that is more restrictive than the minimum required permissions, the console might not function as intended for users with that IAM policy.
 
 You don't need to allow minimum console permissions for users that make calls only to the AWS CLI or Amazon SQS actions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

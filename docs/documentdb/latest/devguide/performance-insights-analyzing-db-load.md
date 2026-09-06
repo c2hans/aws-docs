@@ -26,7 +26,3 @@ For example, in the following dashboard, **CPU** waits account for most of the D
 ![Database load chart showing CPU usage spike. A corresponding Top queries tab shows queries contributing the most to wait states.](http://docs.aws.amazon.com/documentdb/latest/devguide/images/performance-insights/db-load-1.png)
 
 ![Database load chart showing CPU usage spike for the query contributing the most to wait states. A corresponding Top queries tab shows that query's child queries.](http://docs.aws.amazon.com/documentdb/latest/devguide/images/performance-insights/db-load-2.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

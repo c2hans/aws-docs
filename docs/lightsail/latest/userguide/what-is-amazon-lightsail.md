@@ -94,7 +94,3 @@ To see your bill, go to the **Billing and Cost Management Dashboard** in the [AW
 If you have questions concerning AWS billing, accounts, and events, [contact AWS Support](https://aws.amazon.com/contact-us/).
 
 You can optimize the cost, security, and performance of your AWS environment using [AWS Trusted Advisor](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

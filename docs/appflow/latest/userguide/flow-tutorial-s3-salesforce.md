@@ -173,7 +173,3 @@ For the sample data set, suppose you consider account records valid only if they
 1. If you use the sample Salesforce account data, navigate to your Salesforce **Account** tab to view the imported account records. For more information on Salesforce accounts, see [Salesforce Accounts](https://help.salesforce.com/s/articleView?id=sf.accounts).
 
 If you used the sample data, only seven of the nine records transferred. `Example4` and `Example8` do not appear because they have no account ratings associated with them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

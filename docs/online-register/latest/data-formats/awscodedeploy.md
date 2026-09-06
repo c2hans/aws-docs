@@ -34,7 +34,3 @@ AWS CodeDeploy provides the following APIs for data retrieval.
 | <a name="codedeploy-ListGitHubAccountTokenNames"></a>[ListGitHubAccountTokenNames](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ListGitHubAccountTokenNames.html) | List the names of stored connections to GitHub accounts | List |
 | <a name="codedeploy-ListOnPremisesInstances"></a>[ListOnPremisesInstances](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ListOnPremisesInstances.html) | Get a list of one or more on-premises instance names | List |
 | <a name="codedeploy-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ListTagsForResource.html) | Return a list of tags for the resource identified by a specified ARN. Tags are used to organize and categorize your CodeDeploy resources | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

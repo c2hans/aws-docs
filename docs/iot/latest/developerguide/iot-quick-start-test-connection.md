@@ -235,7 +235,3 @@ This procedure tests your IoT device's connection to your device data endpoint u
 1. If `nmap` didn't return a successful output, check the endpoint value to make sure you have the correct endpoint and check your device's connection with the internet.
 
 You can test other ports on your device data endpoint, such as port 443, the primary HTTPS port, by replacing the port used in step 1, `8443`, with the port that you want to test.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

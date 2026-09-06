@@ -19,7 +19,3 @@ This section provides specific EC2 instance type and Amazon Elastic Block Store 
 The Amazon EC2 [X2iedn](https://aws.amazon.com/ec2/instance-types/x2i/) instance type is the preferred instance type for SQL Server databases that support EnterpriseOne. X2iedn provides high Amazon EBS throughput, high network throughput, and a large quantity of memory and quantity of instance storage per vCPU provisioned. It also supports [Provisioned IOPS SSD (io2) Block Express](https://aws.amazon.com/ebs/provisioned-iops/).
 
 Some EnterpriseOne processes might require low-latency write I/O to support chatty commits. The volume type with the lowest latency write I/O is io2 Block Express, which is available only on a subset of x86/x64 instances that contain instance storage, including X2idn and X2iedn instances. When you use other x86/x64 instances that have instance storage, the lowest latency write I/O volume type will be `io2`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

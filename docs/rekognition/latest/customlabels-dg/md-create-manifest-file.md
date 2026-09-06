@@ -51,7 +51,3 @@ The `source-ref` field value in each JSON line must map to an image that you upl
 1. Note the location of the manifest file.
 
 1. Follow the instructions at [Creating a dataset with a SageMaker AI Ground Truth manifest file (Console)](md-create-dataset-ground-truth.md#md-create-dataset-ground-truth-console) to create a dataset with the uploaded manifest file. For step 8, in **.manifest file location**, enter the Amazon S3 URL for the location you noted in the previous step. If you are using the AWS SDK, do [Creating a dataset with a SageMaker AI Ground Truth manifest file (SDK)](md-create-dataset-ground-truth.md#md-create-dataset-ground-truth-sdk).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

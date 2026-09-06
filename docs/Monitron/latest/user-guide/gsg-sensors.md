@@ -49,7 +49,3 @@ For more information about safely using the adhesive, see [Loctite 454 Technical
 1. Apply a thin layer of the adhesive on the bottom of the sensor, maximizing the contact area.
 
 1. Hold the sensor to the mounting location on the machine part, pressing firmly for the length of time specified by the adhesive instructions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

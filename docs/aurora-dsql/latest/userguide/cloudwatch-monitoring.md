@@ -59,7 +59,3 @@ Aurora DSQL publishes the following metrics for change data capture (CDC) stream
 | BehindSourceLag | Behind source lag | milliseconds | The delay, in milliseconds, between when a transaction commits in Aurora DSQL and when the CDC system processes the resulting record. A rising value indicates that the CDC pipeline is falling behind the write workload. If lag grows beyond the failure threshold, the stream transitions to FAILED. |
 | BytesStreamed | Bytes streamed | bytes | The total bytes streamed through the CDC pipeline for billing purposes. This metric reflects the data volume used to calculate streaming charges. |
 | StreamDPU | Stream DPU | DPU | The Distributed Processing Units (DPU) consumed by the CDC stream. This metric reflects the processing cost of streaming change data. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

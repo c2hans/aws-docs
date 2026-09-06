@@ -81,7 +81,3 @@ with NovaAct(starting_page="https://allowed-domain.com", state_guardrail=url_gua
     # The following will be blocked if agent tries to visit a blocklisted domain or leave one of the allowlisted domains
     nova.act("Navigate to the homepage")
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

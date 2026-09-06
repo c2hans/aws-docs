@@ -18,7 +18,3 @@ To query data in a Region, your account must be enabled in that Region even if t
 + **Federated queries** – Using federated queries across AWS Regions is not supported.
 
 Provided the above conditions are met, you can create an Athena table that points to the `LOCATION` value that you specify and query the data transparently. No special syntax is required. For information about creating Athena tables, see [Create tables in Athena](creating-tables.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

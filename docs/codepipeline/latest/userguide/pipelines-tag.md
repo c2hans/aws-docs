@@ -168,7 +168,3 @@ aws codepipeline untag-resource --resource-arn arn:aws:codepipeline:{{us-west-2}
 ```
 
 If successful, this command returns nothing. To verify the tags associated with the pipeline, run the **list-tags-for-resource** command.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

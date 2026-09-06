@@ -46,7 +46,3 @@ Create a calendar which schedules regular (at least annually) BCP and fault scen
 +  AWS Documentation: [Business Continuity Plan (BCP) Definition](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/business-continuity-plan-bcp.html)
 +  AWS Documentation: [Architecture Guidance for Availability and Reliability of SAP on AWS](https://docs.aws.amazon.com/sap/latest/general/architecture-guidance-of-sap-on-aws.html)
 +  SAP Lens [Reliability]: [Best Practice 11.4 - Conduct periodic tests of resilience](best-practice-11-4.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

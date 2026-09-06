@@ -60,7 +60,3 @@ The numbered steps in the architecture diagram illustrate the complete workflow:
  **Step 15: Processing Results** – AWS Deadline Cloud stores processing results (previews, converted formats) back to Amazon S3, and Lambda functions publish completion events to EventBridge for downstream workflows.
 
 This flow demonstrates how Spatial Data Management on AWS uses serverless architecture for scalability, event-driven processing for automation, and direct S3 access for performance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

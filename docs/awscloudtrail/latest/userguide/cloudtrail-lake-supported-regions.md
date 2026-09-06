@@ -46,7 +46,3 @@ Currently, CloudTrail Lake is supported in the following AWS Regions:
 For information about CloudTrail service endpoints, see [AWS CloudTrail endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ct.html).
 
 For more information about using CloudTrail in the AWS GovCloud (US) Regions, see [Service Endpoints](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/using-govcloud-endpoints.html) in the *AWS GovCloud (US) User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

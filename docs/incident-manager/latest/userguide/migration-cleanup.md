@@ -45,7 +45,3 @@ To delete Incident Manager-related resources:
 1. Navigate to the appropriate section (e.g., "Response Plans", "Contacts", "Runbooks") and locate the resources you want to delete
 
 1. Select the resources and click the "Delete" button to remove them
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

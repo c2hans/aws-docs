@@ -15,7 +15,3 @@ Organizations need to navigate the following key phases for a successful transit
 + [**Cutover**](cutover.md): The final phase focuses on implementing strategies for a smooth transition and controlling the shift from the legacy mainframe to the modernized environment. This includes careful planning of the migration schedule and contingency plans to minimize disruption to business operations.
 
 The following sections discuss these phases in detail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

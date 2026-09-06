@@ -84,7 +84,3 @@ Creates a key that exists only in the current session. The key cannot be recover
 To change a session key to a persistent (token) key, use [key set-attribute](cloudhsm_cli-key-set-attribute.md).
 By default, when keys are generated they are persistent/token keys. Using <SESSION> changes this, ensuring a key generated with this argument is a session/ephemeral
 Required: No
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

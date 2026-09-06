@@ -162,7 +162,3 @@ You can set your local time zone to one of the values listed in the following ta
 | West Bank Standard Time | (UTC\+02:00) | Gaza, Hebron |  |
 | West Pacific Standard Time | (UTC\+10:00) | Guam, Port Moresby | This time zone doesn't observe daylight saving time. |
 | Yakutsk Standard Time | (UTC\+09:00) | Yakutsk |  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,7 +42,3 @@ AppRegistry.registerComponent(appName, () => App);
 This integration requires endpoints on your server that talk to the [Amazon IVS Chat API](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/Welcome.html). Use the [official AWS libraries](https://aws.amazon.com/developer/tools/) for access to the Amazon IVS API from your server. These libraries are accessible within several languages from the public packages; e.g., [node.js](https://www.npmjs.com/package/aws-sdk), [java](https://github.com/aws/aws-sdk-java), and [go](https://github.com/aws/aws-sdk-go).
 
 Create a server endpoint that talks to the Amazon IVS Chat API [CreateChatToken](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CreateChatToken.html) operation, to create a chat token for chat users.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

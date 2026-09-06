@@ -52,7 +52,3 @@ Access is controlled through three AWS managed policies, each mapped to a specif
 | Organization Contributor (Full Assessment Access) | This individual requires full read/write access to all assessments in the organization. This persona is suited for senior practitioners or delivery leads who need to edit, delete, or share assessments created by any user in the organization, including historical assessments. | AWSPartnerProServeToolsFullAccess |  +  Create, edit, delete, and share any A2T assessments/MPA portfolios in the organization <br />+  Access to all historical A2T assessments/MPA portfolios created prior to partner migration to AWS Console   |
 
 For more information about IAM managed policies, see [Managing IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-using.html). For information about attaching policies to users and groups, see [Attaching a policy to an IAM user group](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups_manage_attach-policy.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

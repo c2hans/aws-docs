@@ -279,7 +279,3 @@ This error occurs when there is a problem with the metadata structure of the rep
 To prevent this from happening in the future, perform one of the following actions:
 + If possible, disable multi-threading on your replicas. Starting with MySQL 8.0.27, multi-threading is enabled by default.
 + If you need to use multi-threading on your replicas, then we recommend that you use GTID-based replication. For more information, see [Using GTID-based replication](mysql-replication-gtid.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

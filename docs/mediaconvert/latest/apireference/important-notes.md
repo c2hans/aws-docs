@@ -18,7 +18,3 @@ The schemas provided in this guide are not working examples. Instead, they provi
 If you access AWS Elemental MediaConvert directly through the API, using theAWS CLI, or using the AWS SDK for Python (Boto), you submit your job settings as a JSON file. The simplest way to generate this file is to set up your job using the [MediaConvert console](https://console.aws.amazon.com/mediaconvert/) and then, on the **Create job** page, choose **Show job JSON**.
 
 If you access AWS Elemental MediaConvert through one of the AWS SDKs other than Python, consult the documentation for those SDKs for information about the syntax to use to for your job settings specification. For more information about using the AWS SDKs to access MediaConvert, see [Getting Started with AWS Elemental MediaConvert Using the AWS SDKs or the AWS CLI](custom-endpoints.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ You can select from a set of pre-defined Review Policies. One Review Policy leve
 Mechanical Turk has Review Policies that calculate consensus/agreement among multiple Workers performing the same HITs. For instance, you can specify a Review Policy that measures agreement on work items within the HIT and authorizes Mechanical Turk to keep asking additional Workers to work on the HIT, until a certain level of agreement is achieved. Once the required level of agreement is achieved, the results are returned to you for immediate use.
 
 Review Policies that track Worker performance on your known answers and agreement with other Workers give you information you can use to manage your Workers. For more information about using Review Policies, see [Review Policy Use Cases](ApiReference_ReviewPolicyUseCases.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

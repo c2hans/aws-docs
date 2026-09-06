@@ -18,6 +18,7 @@ The following table describes the released versions of the AWS VSS component pac
 
 | Version | Details | Release date | Downloadable |
 | --- | --- | --- | --- |
+| 2.5.2 |  +  Added support for the `aws-eusc` partition endpoint. <br />+  Updated AWS SDK to incorporate security updates.   | September 2, 2026 | Yes |
 | 2.5.1 | Fixed a case where SQL database restoration could fail when the target database parameter is specified. | March 13, 2025 | Yes |
 | 2.5.0 |  +  Added the capability to read VSS metadata files and restore a Microsoft SQL Server database on the instance. For more information, see [Restore from VSS based snapshots](https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/ms-ssdb-ec2-restore-vss.html) in the *Microsoft SQL Server on Amazon EC2 User Guide*. <br />+  Added support for the in-place update option when installing or upgrading the `AwsVssComponents` package.   | January 17, 2025 | Yes |
 | 2.4.0 | Added the capability to save VSS metadata files on snapshot creation. To enable this feature, see SaveVssMetadata in [Parameters for Systems Manager VSS snapshot documents](create-vss-snapshots-ssm.md#create-vss-snapshots-ssm-params). | October 7, 2024 | Yes |
@@ -49,7 +50,3 @@ The following table shows which AWS VSS solution versions you should run on each
 | Windows Server 2012 R2 | 2.1.0 | not supported | 2012R2 |
 | Windows Server 2012 | 2.1.0 | not supported | 2012R2 |
 | Windows Server 2008 R2 | 1.3.1.0 | not supported | 2008R2 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,7 +41,3 @@ For information on how to have EventBridge re-authorize the connection once you 
 To successfully create or update a connection, you must use an account that has permission to use Secrets Manager. The required permission is included in the [AWS managed policy: AmazonEventBridgeFullAccess](eb-use-identity-based.md#eb-full-access-policy). The same permission is granted to the [service-linked role](eb-api-destinations.md#eb-api-destination-slr) that's created in your account for the connection.
 
 For examples of how to create a CloudFormation template that provisions an EventBridge connection with authentication, see [AWS::Events::Connection](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-connection.html) in the *CloudFormation User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

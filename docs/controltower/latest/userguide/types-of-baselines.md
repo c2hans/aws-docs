@@ -42,6 +42,8 @@ The OU-level Region deny control has no way to allow Regions that the landing zo
   **Consideration**: This baseline does not retain the settings of the landing zone Region deny control. Region deny control will not be enabled as part of enabling ConfigBaseline.
 
   **Limitation**: AWSControlTowerBaseline and ConfigBaseline cannot be enabled on the same OU. Only one of them is allowed on an OU.
+**ConfigBaseline status of "Not enabled"**
+If your OU has `AWSControlTowerBaseline` enabled, the `ConfigBaseline` status shows as "Not enabled." This is expected behavior. `AWSControlTowerBaseline` includes AWS Config functionality. You do not need to separately enable `ConfigBaseline` on OUs that already have `AWSControlTowerBaseline`.
 +  **Name**: `BackupBaseline`
 
   **Description**: This baseline sets up resources and controls for member accounts within the target OU. These are required so that integration with AWS Backup can automate your data backup across AWS services, and centralize your backup policy management.
@@ -106,7 +108,3 @@ AWS Control Tower does not allow you to disable a child enabled baseline linked 
 <a name="baselines-and-versioning"></a>
 
 If your AWS Control Tower landing zone is already set up, and then you choose to enable a landing zone baseline, AWS Control Tower enables the latest version of the baseline that is compatible with your landing zone version. If you choose to enable a baseline for an OU that is not already registered with AWS Control Tower, AWS Control Tower provides the latest compatible version of the baseline for that OU, automatically.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

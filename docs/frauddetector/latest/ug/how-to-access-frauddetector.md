@@ -26,7 +26,3 @@ You can create, train, deploy, test, run, and manage fraud detection models and 
 **AWS SDK ** - Provides language-specific APIs and manage many of the connection details, such as signature calculation, request retry handling, and error handling. For more information, go to [Tools to build AWS](http://aws.amazon.com/tools/) page, scroll down to the **SDK** section, and choose plus (\+) sign to expand the section.
 
 **AWS CloudFormation** - Provides templates that you can use to define your Amazon Fraud Detector resources and properties. For more information, see [Amazon Fraud Detector resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_FraudDetector.html) in the AWS CloudFormation User Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ Neptune Analytics supports four centrality algorithms along with their mutate va
 + [`pageRank.mutate`](page-rank-mutate.md)   –   This algorithm stores the calculated PageRank of a given node as a property of the node.
 + [`closenessCentrality`](closeness-centrality.md)   –   This algorithm computes the closeness centrality (CC) metric of nodes in a graph. The closeness centrality metric of a vertex is a positive measure of how close it is to all other vertices, or how central it is in the graph. Because it indicates how quickly all other nodes in a network can be reached from a given node, it can be used in transportation networks to identify key hub locations, and in disease-spread modeling to pinpoint central locations for targeted intervention efforts.
 + [`closenessCentrality.mutate`](closeness-centrality-mutate.md)   –   This algorithm computes the closeness centrality (CC) metric of vertices in a graph and writes them as a property of each vertex.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

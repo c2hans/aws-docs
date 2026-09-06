@@ -343,7 +343,3 @@ The following table describes the important changes to the documentation of the 
   <tr><td>Management | Advanced stack components | AMI | Encrypt. Note warning not to try to encrypt AMIs that are already encrypted. <a href="schemas.md#ct-3u9yd8jznb2zd-schema-section">ct-3u9yd8jznb2zd</a>.</td><td>July 15, 2021</td></tr>
 </tbody>
 </table>
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

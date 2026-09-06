@@ -186,7 +186,3 @@ When you view the site in your browser, you should see a WordPress welcome page 
 ![WordPress welcome page](http://docs.aws.amazon.com/codedeploy/latest/userguide/images/WordPress-Welcome-Page-013118.png)
 
  If your Amazon EC2 instance does not have an HTTP inbound rule added to its security group, then the WordPress welcome page does not appear. If you see a message that says the remote server is not responding, make sure the security group for your Amazon EC2 instance has the inbound rule. For more information, see [Add an inbound rule that allows HTTP traffic to your Amazon Linux or RHEL Amazon EC2 instance](tutorials-wordpress-launch-instance.md#tutorials-wordpress-launch-instance-add-inbound-rule).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

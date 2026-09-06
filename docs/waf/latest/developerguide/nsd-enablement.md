@@ -74,7 +74,3 @@ At the end of this step the following actions will be complete:
 + Redirection to the **Summary dashboard**, where you can view organization-wide insights as well as resource-level details for each account.
 
 Now that the setup is complete, you will be redirected to the **Summary dashboard** page, where you can view organization-wide insights as well as resource-level details for each account. To manage the policies in the future with the delegated administrator account, navigate to the network security director console and choose **Manage settings**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,7 +51,3 @@ To activate Amazon Q in the Lambda console code editor, complete these steps.
 1. As you type in the code editor, automatic code suggestions from Amazon Q are enabled by default. To pause suggestions, choose **Amazon Q** in the status bar of the **Code source** panel. The command palette opens. From there, choose **Pause auto-suggestions**.
 
 For shortcut keys, see [Using shortcut keys](actions-and-shortcuts.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 <a name="implementation-steps-12"></a>
 +  Do not use the root user after setting up an account unless absolutely necessary. Create the account, secure the root user, and immediately create the required administration IAM roles and assign that role to federated user.
 +  Only use the root user when you need to perform [a limited number of tasks that are only available to the root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-tasks.html). Examples of these tasks include changing your root user email address and changing your AWS support plan.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

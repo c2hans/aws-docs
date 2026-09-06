@@ -246,7 +246,3 @@ If an AZ is unavailable and during regular maintenance events, read-replicas ser
 <a name="neptune-9-remediation"></a>
 
 To deploy a Neptune DB cluster in multiple AZs,, see [Read-replica DB instances in a Neptune DB cluster](https://docs.aws.amazon.com/neptune/latest/userguide/feature-overview-db-clusters.html#feature-overview-read-replicas) in the *Neptune User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

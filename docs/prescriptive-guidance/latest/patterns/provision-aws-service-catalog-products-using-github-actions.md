@@ -145,7 +145,3 @@ To see screenshots related to the [Epics](#provision-aws-service-catalog-product
 + [AWS Service Catalog portfolio, Administration section](https://github.com/aws-samples/service-catalog-with-github-actions/blob/main/images/SC_portfolio.png)
 + [AWS Service Catalog product, Administration section](https://github.com/aws-samples/service-catalog-with-github-actions/blob/main/images/SC_Product.png)
 + [AWS Service Catalog product, User/Provisioning section](https://github.com/aws-samples/service-catalog-with-github-actions/blob/main/images/SC_Product_User.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

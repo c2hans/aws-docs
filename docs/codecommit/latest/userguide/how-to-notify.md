@@ -33,7 +33,3 @@ You can integrate Amazon SNS topics and Lambda functions with triggers in CodeCo
   + For information about using Amazon SNS to send messages to Amazon SQS queues, see [Sending Messages to Amazon SQS Queues](https://docs.aws.amazon.com/sns/latest/dg/SendMessageToSQS.html) in the *Amazon SNS Developer Guide*.
   + For information about using Amazon SNS to invoke a Lambda function, see [Invoking Lambda Functions](https://docs.aws.amazon.com/sns/latest/dg/sns-lambda.html) in the *Amazon SNS Developer Guide*.
 + You can configure Lambda functions by creating the trigger in the Lambda console as part of the function. This is the simplest method, because triggers created in the Lambda console automatically include the permissions required for CodeCommit to invoke the Lambda function. If you create the trigger in CodeCommit, you must include a policy to allow CodeCommit to invoke the function. For more information, see [Create a trigger for an existing Lambda function](how-to-notify-lambda-cc.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

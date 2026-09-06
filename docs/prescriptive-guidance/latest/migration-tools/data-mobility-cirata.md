@@ -66,7 +66,3 @@ AWS Partner product descriptions and reported qualifications, including complian
 | **Security**<br />The ability to retain data encryption (if any) from source to target | Available |
 | **Data selection**<br />The ability to migrate a subset of data | Available |
 | **Migration parallelism**<br />The ability to migrate multiple subsets of data in parallel | Available. Metadata migration is defined based on the table and database pattern. If the metadata matches the pattern, it will be migrated in parallel based on the configured thread count and system limits. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

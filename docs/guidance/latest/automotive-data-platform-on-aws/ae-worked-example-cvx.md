@@ -50,7 +50,3 @@ This pattern demonstrates two things that are independently useful for any team 
 1.  **Grounding-transparency as an operational pattern** — requiring agents to explicitly disclose non-grounded answers is a practical approach to the problem of AI systems that confidently answer questions from training data when they should be retrieving from a governed source. The disclosure text appears in the response itself, making it auditable without additional tooling.
 
 For the 17 sample SQL blocks and detailed Athena query patterns that define the full ADP↔CVX data contract, see `docs/cvx-integration-contract.md` in the ADP repository. This chapter describes the grounding pattern; that document is the executable technical contract.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

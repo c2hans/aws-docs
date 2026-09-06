@@ -20,7 +20,3 @@ For example, let's say you have a rule set with three teams. The Red and Blue te
 1. With all teams at `minPlayers`, additional players are now assigned based on the number of open slots. The Red and Blue teams each have 5 open slots, while the Green team has 1. The next 8 players are assigned (4 each) to the Red and Blue teams. All teams now have 1 open slot.
 
 1. The remaining 3 player slots are assigned (1 each) to teams in no particular order.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ This chapter reviews the following mechanisms for configuring and managing acces
 + [Identity-based policies for CloudFormation](identity-based-policies-for-cloudformation.md) – Use this type of policy to configure which IAM principals can access CloudFormation and which actions they can perform in CloudFormation.
 + [Service roles for CloudFormation](service-roles-for-cloudformation.md) – Create a service role that allows CloudFormation to create, update, or delete stack resources on behalf of the IAM principal who deploys the stack. The service role is created in IAM and can be associated with one or more stacks.
 + [CloudFormation stack policies](cloudformation-stack-policies.md) – Use this type of policy to determine when a stack can be updated. This type of policy can help prevent stack resources from being unintentionally updated or deleted. Stack policies are created and associated to stacks in CloudFormation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

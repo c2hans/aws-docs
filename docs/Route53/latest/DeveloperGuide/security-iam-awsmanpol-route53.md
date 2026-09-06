@@ -473,7 +473,3 @@ View details about updates to AWS managed policies for Route 53 since this serv
 | [AmazonRoute53ReadOnlyAccess](#security-iam-awsmanpol-AmazonRoute53ReadOnlyAccess)– New policy  | Amazon Route 53 added a new policy to allow read-only access to Route 53 resources. | July 14, 2021 |
 | [AmazonRoute53FullAccess](#security-iam-awsmanpol-AmazonRoute53FullAccess)– New policy  | Amazon Route 53 added a new policy to allow full access to Route 53 resources. | July 14, 2021 |
 | Route 53 started tracking changes | Route 53 started tracking changes for its AWS managed policies. | July 14, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 ![This simplified view of an on-premises semiconductor design environment shows four components: remote desktop; license managers, workfload schedulers, and directory services; compute nodes; shared file storage.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/on-premises-semiconductor-environment.png)
 
 **Traditional on-premises environment**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

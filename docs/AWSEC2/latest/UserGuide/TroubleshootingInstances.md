@@ -801,7 +801,3 @@ Kernel panic - not syncing: No init found.  Try passing init= option to kernel.
 | --- | --- |
 | Amazon EBS-backed | Do one of the following:+  Modify the AMI and instance to use a modern kernel and relaunch the instance. <br />+  Reboot the instance.  |
 | Instance store-backed | Do one of the following:+  Terminate the instance. <br />+  Modify the AMI to use a modern kernel, and launch a new instance using this AMI.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

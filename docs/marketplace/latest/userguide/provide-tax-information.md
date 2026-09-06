@@ -109,7 +109,3 @@ Consider these best practices when providing your tax information:
 After providing your tax information, you can proceed to the next step in the registration process: [Step 3: Provide bank account information](provide-bank-information.md).
 
 After you begin selling and have tax activity, you can access your tax documents such as 1099 forms. For more information, see [Access tax documents](access-tax-documents.md) in [Managing your seller account](seller-account-management.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

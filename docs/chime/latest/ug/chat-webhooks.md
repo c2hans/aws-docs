@@ -29,7 +29,3 @@ Chat room members can't interact with webhooks or send messages back to them.
 1. Send the webhook URL to the webhook developer.
 
 The webhook developer uses the webhook URL in their application to allow it to send messages to the Amazon Chime chat room. The webhook appears in the chat room roster with a webhook icon next to its name. Chat room messages sent by the webhook appear in the chat room under the webhook name followed by (**Webhook**).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

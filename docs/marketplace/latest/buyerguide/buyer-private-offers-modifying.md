@@ -83,7 +83,3 @@ The annual licenses on your previous offer are deactivated immediately upon acce
 <a name="buyer-private-offers-upgrading-ami-annual-to-ami-hourly"></a>
 
  When your annual subscription expires, any linked accounts subscribed to the product are automatically switched to the AMI hourly pricing. If an annual subscription is in place, the linked account can't switch to an hourly subscription for that product without canceling the subscription.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

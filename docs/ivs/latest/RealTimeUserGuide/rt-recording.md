@@ -39,7 +39,3 @@ A thumbnail configuration includes a `storage` field, which can be set to `SEQUE
 + `LATEST` saves only the most recent thumbnail, overwriting the previous one.
 
 If you specify both `SEQUENTIAL` and `LATEST`, thumbnails are written to two separate S3 paths, one for the sequential archive and one for the latest thumbnail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

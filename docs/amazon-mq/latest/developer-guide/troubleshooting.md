@@ -31,7 +31,3 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/trouble
 | [RABBITMQ\_INVALID\_ARN](troubleshooting-action-required-codes-invalid-arn.md) | RabbitMQ on Amazon MQ will raise an INVALID\_ARN critical action required code when one or more ARNs in the broker configuration are invalid or inaccessible. |
 | [RABBITMQ\_DISK\_ALARM](troubleshooting-action-required-codes-disk-limit-alarm.md) | Disk limit alarm is an indication that the volume of disk used by a RabbitMQ node has decreased due to a high number of messages not consumed while new messages were added. |
 | [RABBITMQ\_BROKER\_NOT\_UPGRADEABLE\_TO\_V4](troubleshooting-action-required-codes-rabbitmq-not-upgradeable-to-v4.md) | RabbitMQ on Amazon MQ will raise a RABBITMQ\_BROKER\_NOT\_UPGRADEABLE\_TO\_V4 critical action required code when an upgrade to RabbitMQ 4 is attempted on a broker that has classic queues or Khepri enabled. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

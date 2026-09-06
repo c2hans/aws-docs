@@ -275,14 +275,14 @@ These values are case sensitive.
 
 | Value | Registry path | Type | Description | Data |
 | --- | --- | --- | --- | --- |
-| EULAAccepted | HKCU\\Software\\Amazon\\Appstream Client | String | Set this value to true to accept the WorkSpaces Applications client EULA on behalf of your users. | true/false |
-| AcceptedEULAVersion | HKCU\\Software\\Amazon\\Appstream Client | String | The version of EULA that is accepted. If the current version of the WorkSpaces Applications client EULA is different from the version of the EULA that is accepted, users are prompted to accept the current version of the EULA. | 1.0 |
-| DiagnosticInfoCollectionAllowed | HKCU\\Software\\Amazon\\Appstream Client | String | Set this value to true to enable WorkSpaces Applications to automatically send diagnostic logs from the WorkSpaces Applications client to WorkSpaces Applications (AWS). | true/false |
-| USBDriverOptIn | HKCU\\Software\\Amazon\\Appstream Client | String | Set this value to true to enable WorkSpaces Applications to automatically update the USB driver that is used to pass USB devices to WorkSpaces Applications. | true/false |
-| HardwareRenderingEnabled | HKCU\\Software\\Amazon\\Appstream Client | String | Set this value to true to enable hardware rendering in the WorkSpaces Applications client. | true/false |
-| FileRedirectionCustomDefaultFolders | HKCU\\Software\\Amazon\\Appstream Client | String | Set this value to include at least one folder path for file system redirection. Separate multiple folder paths by using '\|'. By default, the following folder paths are specified: %USERPROFILE%\\Desktop\|%USERPROFILE%\\Documents\|%USERPROFILE%\\Downloads | {{Valid folder path}} |
-| OpenIdpUrlInSystemBrowser | HKCU\\Software\\Amazon\\Appstream Client | String | Set this value to true to enable the WorkSpaces Applications client to open the IdP URL in a system default browser. This feature is supported on client version 1.1.1360 and later. | true/false |
-| DataLossIndicator | HKLM\\Software\\Amazon\\Appstream Client | String | Set this value to SHOW\_ON\_LOSSY to include a red warning indicator when there is streaming data loss. Set this value to SHOW\_ON\_LOSSLESS to include a green healthy indicator when there is no streaming data loss. | DISABLED/SHOW\_ON\_LOSSY/SHOW\_ON\_LOSSLESS |
+| EULAAccepted | HKCU\\Software\\Amazon\\AppStream Client | String | Set this value to true to accept the WorkSpaces Applications client EULA on behalf of your users. | true/false |
+| AcceptedEULAVersion | HKCU\\Software\\Amazon\\AppStream Client | String | The version of EULA that is accepted. If the current version of the WorkSpaces Applications client EULA is different from the version of the EULA that is accepted, users are prompted to accept the current version of the EULA. | 1.0 |
+| DiagnosticInfoCollectionAllowed | HKCU\\Software\\Amazon\\AppStream Client | String | Set this value to true to enable WorkSpaces Applications to automatically send diagnostic logs from the WorkSpaces Applications client to WorkSpaces Applications (AWS). | true/false |
+| USBDriverOptIn | HKCU\\Software\\Amazon\\AppStream Client | String | Set this value to true to enable WorkSpaces Applications to automatically update the USB driver that is used to pass USB devices to WorkSpaces Applications. | true/false |
+| HardwareRenderingEnabled | HKCU\\Software\\Amazon\\AppStream Client | String | Set this value to true to enable hardware rendering in the WorkSpaces Applications client. | true/false |
+| FileRedirectionCustomDefaultFolders | HKCU\\Software\\Amazon\\AppStream Client | String | Set this value to include at least one folder path for file system redirection. Separate multiple folder paths by using '\|'. By default, the following folder paths are specified: %USERPROFILE%\\Desktop\|%USERPROFILE%\\Documents\|%USERPROFILE%\\Downloads | {{Valid folder path}} |
+| OpenIdpUrlInSystemBrowser | HKLM\\Software\\Amazon\\AppStream Client | String | Set this value to true to enable the WorkSpaces Applications client to open the IdP URL in a system default browser. This setting applies only when the URL that the client connects to is not an WorkSpaces Applications URL. In that case, you must also set the StartUrl or TrustedDomains registry value for your IdP domain. When the client opens the IdP URL in the system default browser, the client closes. After authentication completes in the browser, the streaming session opens the client again. This feature is supported on client version 1.1.1360 and later. | true/false |
+| DataLossIndicator | HKLM\\Software\\Amazon\\AppStream Client | String | Set this value to SHOW\_ON\_LOSSY to include a red warning indicator when there is streaming data loss. Set this value to SHOW\_ON\_LOSSLESS to include a green healthy indicator when there is no streaming data loss. | DISABLED/SHOW\_ON\_LOSSY/SHOW\_ON\_LOSSLESS |
 
 After the WorkSpaces Applications client is installed, you can run the following PowerShell script to create these registry keys. If you don’t want to create all of the registry keys, modify the script as needed to create only the registry keys that you want. Or, you can use the administrative template that is provided in the WorkSpaces Applications client Enterprise Deployment Tool to configure the client through Group Policy.
 
@@ -298,10 +298,9 @@ New-ItemProperty -Path $registryPath -Name "DiagnosticInfoCollectionAllowed" -Va
 New-ItemProperty -Path $registryPath -Name "USBDriverOptIn" -Value "true" -PropertyType String -Force | Out-Null
 New-ItemProperty -Path $registryPath -Name "HardwareRenderingEnabled" -Value "true" -PropertyType String -Force | Out-Null
 New-ItemProperty -Path $registryPath -Name "FileRedirectionCustomDefaultFolders" -Value "%USERPROFILE%\Desktop|%USERPROFILE%\Documents|%USERPROFILE%\Downloads" -PropertyType String -Force | Out-Null
-New-ItemProperty -Path $registryPath -Name "OpenIdpUrlInSystemBrowser" -Value "true" -PropertyType String -Force | Out-Null
 ```
 
-To set the `DataLossIndicator` registry value, run the following PowerShell script. This value is stored in the HKLM registry path and requires Administrator permissions.
+To set the `OpenIdpUrlInSystemBrowser` and `DataLossIndicator` registry values, run the following PowerShell script. These values are stored in the HKLM registry path and require Administrator permissions.
 
 **Note**
 To run this script, you must be logged in to the applicable computer with Administrator permissions. You can also run the script remotely under the System account on startup.
@@ -310,6 +309,7 @@ To run this script, you must be logged in to the applicable computer with Admini
 $registryPath="HKLM:\Software\Amazon\AppStream Client"
 New-Item -Path "HKLM:\Software\Amazon" -Name "AppStream Client" -Force
 
+New-ItemProperty -Path $registryPath -Name "OpenIdpUrlInSystemBrowser" -Value "true" -PropertyType String -Force | Out-Null
 New-ItemProperty -Path $registryPath -Name "DataLossIndicator" -Value "SHOW_ON_LOSSY" -PropertyType String -Force | Out-Null
 ```
 
@@ -317,7 +317,3 @@ New-ItemProperty -Path $registryPath -Name "DataLossIndicator" -Value "SHOW_ON_L
 <a name="configure-client-with-adm-template-group-policy"></a>
 
 You can use the administrative template that is provided in the WorkSpaces Applications client Enterprise Deployment Tool to configure the client through Group Policy. To learn how to load administrative templates into the Group Policy Management Console, see [Recommendations for managing Group Policy administrative template (.adm) files](https://support.microsoft.com/en-us/help/816662/recommendations-for-managing-group-policy-administrative-template-adm) in the Microsoft Support documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -137,7 +137,3 @@ Your source data provider can be a self-managed engine running on-premises or on
 For information about working with a specific source, see [Creating source data providers for homogeneous data migrations in AWS DMS](dm-data-providers-source.md).
 
 For information about supported target databases, see [Target data providers for DMS homogeneous data migrations](CHAP_Introduction.Targets.md#CHAP_Introduction.Targets.HomogeneousDataMigrations).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

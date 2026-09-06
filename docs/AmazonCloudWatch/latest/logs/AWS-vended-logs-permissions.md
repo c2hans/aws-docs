@@ -17,7 +17,3 @@ The following topics provide more details for each of these destinations.
 + [Logs sent to CloudWatch Logs](AWS-logs-infrastructure-CWL.md)
 + [Logs sent to Amazon S3](AWS-logs-infrastructure-S3.md)
 + [Logs sent to Firehose](AWS-logs-infrastructure-Firehose.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

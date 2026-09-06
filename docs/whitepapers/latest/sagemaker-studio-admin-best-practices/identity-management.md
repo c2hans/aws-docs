@@ -154,7 +154,3 @@ Here are a few considerations when choosing a domain's authentication mode:
 1. All user profiles are automatically assigned the default execution role in IdC mode. If you would like your users to be assigned different execution roles, you will need to update the user profiles using the [UpdateUserProfile](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateUserProfile.html) API.
 
 1. If you would like to restrict SageMaker AI Studio UI access in IAM mode (using the generated presigned URL) to a VPC endpoint, without traversing the internet, you can use a custom DNS resolver. Refer to the [Secure Amazon SageMaker AI Studio presigned URLs Part 1: Foundational infrastructure](https://aws.amazon.com/blogs/machine-learning/secure-amazon-sagemaker-studio-presigned-urls-part-1-foundational-infrastructure/) blog post.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

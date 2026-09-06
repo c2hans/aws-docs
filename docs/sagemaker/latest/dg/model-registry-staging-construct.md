@@ -21,7 +21,3 @@ The following topics will walk you through how to set up a stage construct on th
 + [Update a model package stage and status example (boto3)](model-registry-staging-construct-update-boto3.md)
 + [Invoke ModelLifeCycle using the AWS CLI examples](model-registry-staging-construct-cli.md)
 + [Get event notifications for ModelLifeCycle](model-registry-staging-construct-event-bridge.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

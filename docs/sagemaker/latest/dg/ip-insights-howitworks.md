@@ -24,7 +24,3 @@ Given an nth (entity, IP address pair), the IP Insights model outputs a *score*,
 The score is essentially a measure of the similarity between the vector representations of the nth entity and IP address. It can be interpreted as how much more likely it would be to observe this event in reality than in a randomly generated dataset. During training, the algorithm uses this score to calculate an estimate of the probability of a sample coming from the real distribution, pn, to use in the cross entropy minimization, where:
 
 ![An image showing the equation for probability that the sample is from a real distribution.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/ip-insight-image-sample-probability.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

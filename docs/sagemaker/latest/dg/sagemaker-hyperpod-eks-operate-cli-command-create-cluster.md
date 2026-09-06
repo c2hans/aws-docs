@@ -166,7 +166,3 @@ Removing a RIG will not delete any artifacts stored in the service-managed Amazo
 **Important**
 When using an onboarded On-Demand Capacity Reservation (ODCR), you must map your instance group to the same Availability Zone ID (AZ ID) as the ODCR by setting `OverrideVpcConfig` with a subnet in the matching AZ ID.
 CRITICAL: Verify `OverrideVpcConfig` configuration before deployment to avoid incurring duplicate charges for both ODCR and On-Demand Capacity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

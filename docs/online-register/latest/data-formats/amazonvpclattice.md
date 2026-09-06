@@ -39,7 +39,3 @@ Amazon VPC Lattice provides the following APIs for data retrieval.
 | <a name="vpc-lattice-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_ListTagsForResource.html) | List tags for a vpc-lattice resource | Read |
 | <a name="vpc-lattice-ListTargetGroups"></a>[ListTargetGroups](https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_ListTargetGroups.html) | List some or all target groups | List |
 | <a name="vpc-lattice-ListTargets"></a>[ListTargets](https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_ListTargets.html) | List some or all targets in a target group | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

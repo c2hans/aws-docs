@@ -224,7 +224,3 @@ Note the following limitations:
 + Providing input records that do not match the input schema will cause the reader to fail.
 + [Error records](https://docs.aws.amazon.com/glue/latest/dg/glue-etl-scala-apis-glue-dynamicframe-class.html#glue-etl-scala-apis-glue-dynamicframe-class-defs-errorsAsDynamicFrame) will not be created.
 + JSON files with multi-byte characters (such as Japanese or Chinese characters) are not supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

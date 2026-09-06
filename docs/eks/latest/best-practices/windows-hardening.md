@@ -92,7 +92,3 @@ Watch the [Threat Detection for Windows Workloads using Amazon GuardDuty](https:
 <a name="_security_in_amazon_ec2_for_windows"></a>
 
 Read up on the [Security best practices for Amazon EC2 Windows instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2-security.html) to implement security controls at every layer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

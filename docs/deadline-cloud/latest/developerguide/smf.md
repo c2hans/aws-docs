@@ -18,7 +18,3 @@ To install custom software on workers using host configuration scripts, see [Run
 + [Connect VPC resources to your SMF with VPC resource endpoints](smf-vpc.md)
 + [Use job attachments with service-managed fleets](smf-job-attachments.md)
 + [Persistent storage for service-managed fleets](smf-persistent-storage-dev.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -598,7 +598,3 @@ Now that you've created a VPC with public and private subnets, you can:
 1. [Implement VPC peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) to connect with other VPCs.
 
 1. [Set up VPN connections](https://docs.aws.amazon.com/vpn/latest/s2svpn/SetUpVPNConnections.html) to connect your VPC with your on-premises network.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

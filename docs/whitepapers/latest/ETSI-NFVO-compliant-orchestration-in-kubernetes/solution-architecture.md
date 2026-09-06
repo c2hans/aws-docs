@@ -88,7 +88,3 @@ Because network functions continuously emit performance data and Key Performance
 ![Example implementation architecture of a cloud-native CNF and infrastructure orchestrator.](http://docs.aws.amazon.com/whitepapers/latest/ETSI-NFVO-compliant-orchestration-in-kubernetes/images/cloud-native-cns2.png)
 
  This diagram represents VPC constructs, EKS clusters, load-balancers and repositories, network connections, and so on in the context of Region, Availability Zones, and on-premises data centers. For ease of representation, we haven’t depicted some of the functionalities such as account and user administration, the creation of a landing zone, security, and DNS that were part of the earlier architecture, because many of those features will run in their own VPCs within control of cross-account permissions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

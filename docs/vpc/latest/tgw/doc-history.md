@@ -31,7 +31,3 @@ The following table describes the releases for transit gateways.
 | [AWS Network Manager](https://docs.aws.amazon.com/network-manager/latest/tgwnm/) | You can visualize and monitor your global networks that are built around transit gateways. | December 3, 2019 |
 | [AWS Direct Connect support](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-dcg-attachments.html) | You can use an Direct Connect gateway to connect your Direct Connect connection over a transit virtual interface to the VPCs or VPNs attached to your transit gateway. | March 27, 2019 |
 | [Initial release](#doc-history) | This release introduces transit gateways. | November 26, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

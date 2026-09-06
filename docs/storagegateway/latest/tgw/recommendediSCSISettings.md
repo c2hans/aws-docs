@@ -141,7 +141,3 @@ Different backup software can be optimized to work best using different iSCSI se
 1. Restart your system to ensure that the new configuration values take effect.
 
    Before restarting, make sure that the results of all write operations to your tapes are flushed. To do this, unmount tapes before restarting.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

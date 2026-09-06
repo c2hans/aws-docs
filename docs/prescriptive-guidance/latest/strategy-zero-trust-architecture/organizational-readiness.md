@@ -91,7 +91,3 @@ Establishing systems to elicit opinions and insights from stakeholders will help
 <a name="org-readiness-summary"></a>
 
 By addressing these organizational and cultural considerations, your organization can foster a supportive environment for the cloud adoption of a Zero Trust security model. The next section explores phased adoption approaches, providing guidance on how to gradually implement Zero Trust principles in a practical and manageable manner.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

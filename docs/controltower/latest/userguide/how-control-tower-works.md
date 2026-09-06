@@ -47,7 +47,3 @@ When a stack instance goes into **Outdated** status, it usually means that the s
 If the stack set update includes changes to the template (that is, if the `TemplateBody` or `TemplateURL` properties are specified), or if the `Parameters` property is specified, CloudFormation marks all stack instances with a status of **Outdated** prior to updating the stack instances in the specified accounts and AWS Regions. If the stack set update does not include changes to the template or parameters, CloudFormation updates the stack instances in the specified accounts and Regions, while leaving all other stack instances with their existing stack instance status. To update all of the stack instances associated with a stack set, do not specify the `Accounts` or `Regions` properties.
 
 For more information, see [Update Your Stack Set](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-update.html) in the CloudFormation User Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

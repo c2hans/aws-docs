@@ -22,7 +22,3 @@ appstream2client = boto3.client('appstream',region_name='<aws-region>',endpoint_
 Subsequent commands using the `appstream2client` object automatically use the interface endpoint that you specified.
 
 If you enabled the private DNS host names on the interface endpoint, you don’t need to specify the endpoint URL. The WorkSpaces Applications API DNS host name that the API and CLI use by default resolves within your VPC. For more information about private DNS host names, see [Private DNS](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#vpce-private-dns) in the *Amazon VPC User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

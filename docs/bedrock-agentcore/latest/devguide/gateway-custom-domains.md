@@ -267,7 +267,3 @@ If your custom domain doesn’t connect to your gateway:
 Setting up a custom domain name for your Gateway endpoint enhances the professional appearance of your application and provides flexibility in managing your API endpoints. By following the steps outlined in this guide, you can create a secure and reliable custom domain configuration using CloudFront as a reverse proxy.
 
 For more information about Gateway features and capabilities, see [Amazon Bedrock AgentCore Gateway: Securely connect tools and other resources to your Gateway](gateway.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ One issue with this approach is that if the model uses tags in its answer, eithe
 <a name="teach-the-llm-to-detect-attacks-by-providing-specific-instructions.fb44c90d-e6a0-594a-9968-4786090b5b8b"></a>
 
 We also include a set of instructions that explain common attack patterns, to teach the LLM how to detect attacks. The instructions focus on the user input query. They instruct the LLM to identify the presence of key attack patterns and return "Prompt Attack Detected" if it discovers a pattern. The presence of these instructions enable us to give the LLM a shortcut for dealing with common attacks. This shortcut is relevant when the template uses `<thinking>` and `<answer>` tags, because the LLM usually parses malicious instructions repetitively and in excessive detail, which can ultimately lead to compliance (as demonstrated in the comparisons in the next section).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

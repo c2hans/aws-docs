@@ -14,7 +14,3 @@ The following table lists the deprecated features of AWS Deep Learning AMIs (DLA
 | Chainer | 07/01/2020 | Chainer has announced [the end of major releases](https://chainer.org/announcement/2019/12/05/released-v7.html) as of December, 2019. Consequently, we will no longer include Chainer Conda environments on the DLAMI starting July 2020. Previous releases of the DLAMI that contain these environments will continue to be available. We will provide updates to these environments only if there are security fixes published by the open source community for these frameworks.  |
 | Python 3.6 | 06/15/2020 | Due to customer requests, we are moving to Python 3.7 for new TF/MX/PT releases. |
 | Python 2 | 01/01/2020 |  The Python open source community has officially ended support for Python 2. <br /> The TensorFlow, PyTorch, and MXNet communities have also announced that TensorFlow 1.15, TensorFlow 2.1, PyTorch 1.4, and MXNet 1.6.0 releases will be the last ones supporting Python 2. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

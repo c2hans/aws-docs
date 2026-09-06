@@ -163,7 +163,3 @@ After you have reset the administrator password using EC2Launch, reattach the vo
 1. Retrieve your new Windows administrator password using the private key for the new key pair and connect to the instance. For more information, see [Connect to your Windows instance using RDP](connecting_to_windows_instance.md).
 
 1. (Optional) If you have no further use for the temporary instance, you can terminate it. Select the temporary instance, and choose **Instance State**, **Terminate instance**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,7 +59,3 @@ You can set up to convert the source color space in one or more outputs.
    If you choose **HDR10**, the **Max CLL** and **Max FALL** fields appear. Complete these fields to set the display metadata.
 
 1. Go back to **Codec details** and choose **Additional settings**. More fields appear, including **Color metadata**. In **Color metadata**, choose **Insert** or **Ignore** to specify how you want to handle the color space metadata.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

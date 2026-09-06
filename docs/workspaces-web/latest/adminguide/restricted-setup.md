@@ -42,7 +42,3 @@ To set up an HTTP outbound proxy for WorkSpaces Secure Browser, follow these ste
 1. Go to chrome://policy and the **Chrome policy** tab to confirm that the policy is applied.
 
 1. Verify that your WorkSpaces Secure Browser session can successfully browse internet content without NAT gateway. In the CloudWatch Logs, verify that Squid proxy access logs are recorded.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

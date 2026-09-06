@@ -28,7 +28,3 @@ SMS uses the infrastructure that's already in place for voice calls, operating o
 1. **Message displays**: The recipient's mobile device receives the message and displays it to the recipient.
 
 1. **Possible delivery confirmation**. The recipient's mobile device might send a delivery receipt (DLR) confirmation back to the sender's SMSC, indicating that the message was successfully received. This DLR is then relayed back to AWS who then passes it along to application owner.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

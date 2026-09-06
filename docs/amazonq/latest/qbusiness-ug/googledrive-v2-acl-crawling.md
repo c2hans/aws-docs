@@ -26,7 +26,3 @@ The Google Drive connector for Amazon Q Business crawls files with enhanced perf
 **Change Management**: ACL changes are automatically detected and processed during incremental synchronization.
 
 **Failure handling**: The connector implements a fail-close approach, meaning that if there are permissions-related issues or API failures, a document is skipped from ingestion rather than being made publicly accessible.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

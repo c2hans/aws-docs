@@ -638,7 +638,3 @@ aws lambda invoke \
 
 **Note**
 This test confirms that Lambda is deployed and can reach your agent. The rollout won't complete successfully because no active training job exists, so an error response is expected. Check your agent's logs to confirm it received the request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

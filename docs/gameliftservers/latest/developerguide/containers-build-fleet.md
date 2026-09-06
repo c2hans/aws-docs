@@ -46,7 +46,7 @@ Fleets with Regions that aren't enabled that you created before February 28, 202
 To create new multi-location fleets or to update existing multi-location fleets, first enable any Regions or Local Zones that you choose to use.
 For more information about Regions that aren't enabled by default and how to enable them, see [Managing AWS Regions](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html) in the *AWS General Reference*. See [Getting started with Local Zones](https://docs.aws.amazon.com/local-zones/latest/ug/getting-started.html) in the *AWS Local Zones User Guide*.
 
-1. Select an **Instance configuration** for the fleet. The console automatically calculates the minimum vCPU and memory required (based on the total limits you set for each container group). It filters the complete list of available instance types base on resource requirements and the locations you entered. You can add additional filters as needed.
+1. Select an **Instance configuration** for the fleet. The console automatically calculates the minimum vCPU and memory required (based on the total limits you set for each container group). It filters the complete list of available instance types based on resource requirements and the locations you entered. You can add additional filters as needed.
 **Note**
 For Graviton ARM instances, make sure the container images in your container group definitions are built for ARM architecture. Otherwise the fleet deployment will fail.
 
@@ -94,7 +94,3 @@ You can change the fleet's capacity and other configuration settings as needed u
 + [delete-fleet-locations](https://docs.aws.amazon.com/cli/latest/reference/gamelift/delete-fleet-locations.html)
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

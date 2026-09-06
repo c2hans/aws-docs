@@ -168,7 +168,3 @@ You can create a graph that displays resources from data sources other than Clou
 ![Duplicate a metric.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/metric_graph_duplicate.png)
 
 1. Update the duplicate metric as needed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

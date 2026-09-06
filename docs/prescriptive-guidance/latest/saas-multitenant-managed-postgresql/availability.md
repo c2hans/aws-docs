@@ -14,7 +14,3 @@ Aurora PostgreSQL-Compatible automatically backs up data in a way that can susta
 ![](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-managed-postgresql/images/guide-img/df8a9c2c-aa88-448f-93ca-fcf7168e9781/images/6c7495ac-8a8f-4fbb-91c8-3af2e28ef37e.png)
 
 Regardless of whether you're using Amazon RDS for PostgreSQL or Aurora PostgreSQL-Compatible, we recommend that you implement high availability features to mitigate the impact of any outages for all multi-tenant SaaS applications that use a pool model.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

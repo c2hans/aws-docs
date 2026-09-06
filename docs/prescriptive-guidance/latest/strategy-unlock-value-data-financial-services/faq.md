@@ -34,7 +34,3 @@ You can start by creating a secure experimentation environment where data scient
 <a name="should-an-mlops-transformation-be-driven-by-a-top-down-or-bottom-up-approach-in-an-organization-.3ddc4991-936c-52bf-9ca6-d4708f2a528f"></a>
 
 While bottom-up approaches can be successful, support from leadership is essential for the success of MLOps platform development. With a top-down approach, you can ensure faster standardization of the developed solution, reduce costs, and achieve higher scalability and reusability between the models developed by different teams in your organization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

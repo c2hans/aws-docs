@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/un
 In this workflow, you add client and server game code for Amazon GameLift Servers functionality and use the plugin to designate your local workstation as a test game server host. When you've completed integration tasks, use the plugin to build your game client and server components.
 
 **To start the Amazon GameLift Servers Anywhere workflow:**
-+ In the Unity editor main menu, choose **Amazon GameLift Servers** and select **Host with Anywhere**. This action opens the plugin page for setting up your game with an @Anywhere fleet. The page presents a five-step process to integrate, build, and launch your game components.
++ In the Unity editor main menu, choose **Amazon GameLift Servers** and select **Host with Anywhere**. This action opens the plugin page for setting up your game with an Anywhere fleet. The page presents a five-step process to integrate, build, and launch your game components.
 
 ## Set your profile
 <a name="unity-plug-in-anywhere-profile"></a>
@@ -52,7 +52,7 @@ If you want to customize the sample server code, see these resources:
 ### Integrate your client code
 <a name="unity-plug-in-anywhere-integrate-client"></a>
 
-If you’re using your own game project with custom scenes, then you need to integrate basic functionality into your game client. You also need to add UI elements so that players can sign in and join a game session. Use the service API for Amazon GameLift Servers (in the AWS SDK) to get game session information, create new game sessions, or join existing game sessions,
+If you’re using your own game project with custom scenes, then you need to integrate basic functionality into your game client. You also need to add UI elements so that players can sign in and join a game session. Use the service API for Amazon GameLift Servers (in the AWS SDK) to get game session information, create new game sessions, or join existing game sessions.
 
 When building a client for local testing with an Anywhere fleet, you can add direct calls to the Amazon GameLift Servers service. When you develop your game for cloud hosting—or if you plan to use Anywhere fleets for production hosting—you’ll need to create a client-side backend service to handle all communication between game clients and the Amazon GameLift Servers service.
 
@@ -61,7 +61,7 @@ To integrate Amazon GameLift Servers into your client code, use the following re
 + View sample game integrations, available in the GitHub repo aws/amazon-gamelift-plugin-unity, `Samples~/SampleGame/Assets/Scripts/Client/GameLiftClient.cs`.
 + Follow instructions in Add Amazon GameLift Servers to your Unity game client.
 
-For game clients connecting to an Anywhere fleet, your game client needs the following information. The plugin automatically updates your game project to use the resources that your create in the plugin.
+For game clients connecting to an Anywhere fleet, your game client needs the following information. The plugin automatically updates your game project to use the resources that you create in the plugin.
 + FleetId - The unique identifier for your Anywhere fleet.
 + FleetLocation - The custom location of your Anywhere fleet.
 + AwsRegion - The AWS region where your Anywhere fleet is hosted. This is the region you set in your user profile.
@@ -135,7 +135,3 @@ You can build and launch your game server executable for testing on an Anywhere 
    ```
    my_project.exe --authToken [token]
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,3 @@ For full requirements and deployment instructions, see [Reuse existing networkin
 + You must provide subnet IDs explicitly and pre-create all required VPC endpoints before deploying. The solution validates that they exist but does not create them.
 + The choice to use an existing VPC is permanent for the lifetime of the stack. Plan your networking configuration before the initial deployment.
 + The solution never modifies your existing VPC resources. It only creates new solution-owned security groups inside your VPC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

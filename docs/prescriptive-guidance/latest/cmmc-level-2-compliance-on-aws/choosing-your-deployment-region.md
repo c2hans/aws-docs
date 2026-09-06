@@ -37,7 +37,3 @@ The key takeaway: if your contract involves CUI without ITAR or EAR restrictions
 <a name="fips-endpoints-in-gov-cloud-and-commercial-regions"></a>
 
 When deploying in commercial or AWS GovCloud (US) regions, you activate FIPS-validated cryptography by directing application traffic to FIPS-specific service endpoints. For example, instead of calling `kms.us-east-1.amazonaws.com`, you use `kms-fips.us-east-1.amazonaws.com`. AWS publishes a [complete list of FIPS endpoints ](https://aws.amazon.com/compliance/fips/)for each service and Region. Your SDK configurations and service endpoint URLs must be updated to reference these endpoints throughout your CUI boundary in both partitions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ This capability allows you to configure your Elastic Beanstalk VPC endpoints to 
 This functionality is available in all of the AWS Commercial Regions and AWS GovCloud (US) Regions that Elastic Beanstalk supports. At this time Elastic Beanstalk dual-stack support is not available in the AWS China Regions. You can view the list of [AWS Services Available by Region](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) on the *AWS Regional Services* website.
 
 For more information about Elastic Beanstalk dual-stack traffic support, see [IPV6 support](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/vpc-vpce.html#vpc-vpce.ipv6) in the *AWS Elastic Beanstalk Developer Guide*. To learn more about adopting IPv6 on AWS see the whitepaper [IPv6 on AWS](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/IPv6-on-AWS.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

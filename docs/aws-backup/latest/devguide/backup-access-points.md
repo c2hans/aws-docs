@@ -12,7 +12,7 @@ AWS Backup now lets you access Amazon S3 backup data directly through S3 access 
 
 Backup access points provide on-demand, read-only connections to recovery points. You create a backup access point for a specific recovery point, and AWS Backup provisions an S3 access point that routes S3 API calls to your backup data. This enables use cases such as targeted file recovery, data validation, compliance auditing, and forensic investigation without waiting for a full restore to complete.
 
-While a backup access point is active for a recovery point, AWS Backup pauses lifecycle transitions and blocks deletion of that recovery point. This protects your data from being removed while applications are actively reading it. You must delete all backup access points associated with a recovery point before the recovery point can be deleted or lifecycled.
+While a backup access point is active for a recovery point, AWS Backup pauses lifecycle deletion and blocks manual deletion of that recovery point. This protects your data from being removed while applications are actively reading it. Backup tiering to lower-cost warm storage, which is configured separately, is not affected. You must delete all backup access points associated with a recovery point before the recovery point can be deleted or lifecycled.
 
 This page explains how to create, manage, and delete backup access points using the AWS Backup console and AWS CLI.
 
@@ -30,7 +30,7 @@ When you create a backup access point, AWS Backup performs the following steps:
 
 1. Provisions an S3 access point on your behalf (asynchronously)
 
-1. Pauses lifecycle for the associated recovery point
+1. Pauses lifecycle deletion and blocks manual deletion of the associated recovery point
 
 1. Updates the backup access point status to AVAILABLE
 
@@ -336,6 +336,7 @@ The following table shows which S3 API operations are compatible with backup acc
 While one or more active access points exist for a recovery point:
 + **Scheduled lifecycle transitions are paused.** The recovery point will not be automatically deleted by lifecycle rules.
 + **Manual deletion is blocked.** Calls to `DeleteRecoveryPoint` return an error until all access points are deleted.
++ **Tiering is not affected.** Backup tiering to lower-cost warm storage is configured independently and continues to apply normally while access points are active.
 
 You can still update the recovery point lifecycle (for example, changing the delete-after-days value), but the deletion will not be enforced until all backup access points for the recovery point are removed.
 
@@ -396,7 +397,6 @@ AWS Backup emits CloudTrail events, EventBridge events, and Amazon SNS notificat
 + **External deletion**: If the S3 access point is deleted directly through S3 APIs, the backup access point moves to EXPIRED status and becomes unusable.
 + **Access**: The access point creator's account must have access to the recovery point (either owns it, has RAM share access or has a restore access backup vault for the logically air-gapped vault via Multi-Party Approval).
 + **Access point name**: After you delete a backup access point, wait for sometime before you attempt to create a new backup access point with the same name in the same account and Region. Attempting to reuse the name before it becomes available returns a `ConflictException`.
-+ **S3 object key restrictions**: Objects named `.` or `..` are not accessible through backup access points. Object keys that start with `./` or `../`, contain `/./` or `/../`, contain consecutive slashes (`//`), or end with `/.`, `/..`, or `/` are also inaccessible. Attempting to access any object with these keys through a backup access point will return an `InvalidKey` error.
 
 ## Troubleshooting
 <a name="backup-access-points-troubleshooting"></a>
@@ -423,7 +423,3 @@ S3 API calls return `409 InvalidBucketState`
 
 `ConflictException` when creating
 + You are attempting to create a backup access point with a name that was recently deleted. Wait for the name to become available, or choose a different name.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

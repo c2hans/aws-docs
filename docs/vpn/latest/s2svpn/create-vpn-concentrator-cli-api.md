@@ -86,7 +86,3 @@ A successful API response returns the VPN connection details with Site-to-Site V
 ```
 
 The response includes the VPN connection ID and references the Site-to-Site VPN Concentrator ID instead of a transit gateway ID. This connection allows your remote site to communicate with other sites connected to the same Site-to-Site VPN Concentrator, enabling hub-and-spoke network topologies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

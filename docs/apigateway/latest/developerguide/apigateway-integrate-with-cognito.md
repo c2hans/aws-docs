@@ -33,7 +33,3 @@ In this section, we describe how to create a user pool, how to integrate an API 
 + [Call a REST API integrated with an Amazon Cognito user pool](apigateway-invoke-api-integrated-with-cognito-user-pool.md)
 + [Configure cross-account Amazon Cognito authorizer for a REST API using the API Gateway console](apigateway-cross-account-cognito-authorizer.md)
 + [Create an Amazon Cognito authorizer for a REST API using CloudFormation](apigateway-cognito-authorizer-cfn.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

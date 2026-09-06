@@ -18,7 +18,3 @@ sudo ./setup_workstation_linux.sh https://{{mystudio.us-west-2}}.deadlinecloud.a
 On Windows, run the PowerShell script in an elevated session as the artist's own account, because the monitor profile and Blender add-on preferences are stored for each user. The README covers running the scripts from EC2 user data or an image bake, the Ubuntu and browser requirements for monitor sign-in, and splitting the Windows script for studios where artists are standard users.
 
 For scripts that configure the workers instead of workstations, see [Host configuration script examples for Deadline Cloud](examples-host-config.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

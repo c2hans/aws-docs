@@ -36,7 +36,3 @@ Use the following procedure to select a service, and then specify individual app
 1. On the **Review configuration** page, review the choices that you made. To make changes, choose the configuration section that you want, choose **Edit access**, and then make the required changes.
 
 1. After you are finished, choose **Trust applications**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

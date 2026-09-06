@@ -17,7 +17,3 @@ Sync operations enable efficient data retrieval and updates in client applicatio
 + [Versioning DynamoDB data sources](versioned-data-sources.md)
 + [Conflict detection and resolution](conflict-detection-and-resolution.md)
 + [Using DynamoDB sync operations on versioned data sources](aws-appsync-conflict-detection-and-sync-sync-operations.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

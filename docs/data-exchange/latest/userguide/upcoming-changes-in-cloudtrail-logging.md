@@ -22,7 +22,3 @@ This section summarizes the upcoming changes for logging API calls in AWS CloudT
 | Provider | Approve subscription verification request | AcceptAgreementApprovalRequest | AcceptAgreementApprovalRequest | aws-marketplace.amazonaws.com | agreement-marketplace.amazonaws.com |
 | Provider | Decline subscription verification request | RejectAgreementApprovalRequest | RejectAgreementApprovalRequest | aws-marketplace.amazonaws.com | agreement-marketplace.amazonaws.com |
 | Provider | Delete subscriber contact information | UpdateAgreementApprovalRequest | UpdateAgreementApprovalRequest | aws-marketplace.amazonaws.com | agreement-marketplace.amazonaws.com |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

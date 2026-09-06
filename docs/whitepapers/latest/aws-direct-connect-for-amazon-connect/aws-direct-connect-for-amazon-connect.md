@@ -53,7 +53,3 @@ Publication date: **November 2, 2022** ([Document revisions](document-revisions.
 <a name="customers-with-requirements-for-resiliency-over-public-and-private-links"></a>
 
  In some cases, meeting business-defined uptime requirements may require redundant or resilient connectivity links. There are cases when multiple internet service providers (ISPs) are unavailable at specific locations, or additional ISPs may ride the same fiber links as the incumbent ISP. With AWS Direct Connect, customers can use a Site-to-Site VPN over private connections as well as public connections independently, to allow for maximum resilience to ISP or private networks. For more information about Transit Gateway peering and multicast, refer to [AWS Transit Gateway features](https://aws.amazon.com/transit-gateway/features/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,7 +75,7 @@ ESCAPE   <a name="copy-escape"></a>
 When this parameter is specified, the backslash character (`\`) in input data is treated as an escape character. The character that immediately follows the backslash character is loaded into the table as part of the current column value, even if it is a character that normally serves a special purpose. For example, you can use this parameter to escape the delimiter character, a quotation mark, an embedded newline character, or the escape character itself when any of these characters is a legitimate part of a column value.
 If you specify the ESCAPE parameter in combination with the REMOVEQUOTES parameter, you can escape and retain quotation marks (`'` or `"`) that might otherwise be removed. The default null string, `\N`, works as is, but it can also be escaped in the input data as `\\N`. As long as you don't specify an alternative null string with the NULL AS parameter, `\N` and `\\N` produce the same results.
 The control character `0x00` (NUL) can't be escaped and should be removed from the input data or converted. This character is treated as an end of record (EOR) marker, causing the remainder of the record to be truncated.
-You can't use the ESCAPE parameter for FIXEDWIDTH loads, and you can't specify the escape character itself; the escape character is always the backslash character. Also, you must ensure that the input data contains the escape character in the appropriate places.
+You can't use the ESCAPE parameter for FIXEDWIDTH loads, and you can't specify the escape character itself; the escape character is always the backslash character. Also, you must make sure that the input data contains the escape character in the appropriate places.
 Here are some examples of input data and the resulting loaded data when the ESCAPE parameter is specified. The result for row 4 assumes that the REMOVEQUOTES parameter is also specified. The input data consists of two pipe-delimited fields:
 
 ```
@@ -137,7 +137,3 @@ Removes the trailing white space characters from a VARCHAR string. This paramete
 
 TRUNCATECOLUMNS   <a name="copy-truncatecolumns"></a>
 Truncates data in columns to the appropriate number of characters so that it fits the column specification. Applies only to columns with a VARCHAR or CHAR data type, and rows 4 MB or less in size.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

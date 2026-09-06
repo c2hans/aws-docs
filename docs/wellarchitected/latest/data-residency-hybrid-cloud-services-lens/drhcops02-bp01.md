@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 <a name="implementation-guidance-1"></a>
 
  You can use AWS Outposts to run AWS services on-premises, providing the same infrastructure, services, and operational models as the AWS Cloud while keeping sensitive data within your data center. Review the updated shared responsibility model to understand additional responsibilities when using AWS Outposts. For more detail, see [Available locations for AWS Outposts racks and Servers](https://aws.amazon.com/outposts/rack/faqs/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

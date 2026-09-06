@@ -48,7 +48,3 @@ Any attribute returned from an AWS Lambda function is overwritten when you invok
 1. Choose **Add another condition**.
 
 1. Under **Conditions to check**, choose the operator for the condition, then enter a value to compare to the attribute value. The block creates a branch for each comparison you enter, letting you route the contact based on the conditions specified. If no condition is matched, the contact takes the **No Match** branch from the block.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

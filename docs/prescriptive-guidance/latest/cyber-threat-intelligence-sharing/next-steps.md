@@ -37,7 +37,3 @@ We recommend that you review the following additional resources. These resources
 <a name="threat-intelligence-platforms"></a>
 + [OpenCTI](https://github.com/OpenCTI-Platform/opencti)
 + [MISP](https://www.misp-project.org/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

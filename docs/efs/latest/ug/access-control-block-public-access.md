@@ -105,7 +105,3 @@ You can make this file system policy non-public by using the EFS condition key `
 ------
 
 For more information about Amazon EFS condition keys, see [EFS condition keys for clients](iam-access-control-nfs-efs.md#efs-condition-keys-for-nfs). For more information about creating file system policies, see [Creating file system policies](create-file-system-policy.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

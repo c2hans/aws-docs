@@ -43,7 +43,3 @@ Newer versions of PowerShell, including PowerShell Core, are available as downlo
 + [Install `AWS.Tools` (recommended)](ps-installing-awstools.md)
 + [Install AWSPowerShell.NetCore](ps-installing-awspowershellnetcore.md)
 + [Install AWSPowerShell (legacy)](ps-installing-awswindowspowershell.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,7 +84,3 @@ With presigned URLS, an object owner can share private Amazon S3 objects with ot
 1. In the AWS Toolkit command pane, enter the number of minutes that the URL can be used to access the object. Press **Enter** to confirm.
 
    The status at the bottom of the IDE confirms that presigned URL for the object was copied to your clipboard.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

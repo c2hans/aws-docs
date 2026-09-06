@@ -35,7 +35,3 @@ Complete the following procedure to edit a security group.
      + **Restricted Federation** — The ability to federate with specific networks (Enterprise or AWS) belonging to different regions. Admins can allowlist specific networks their users can federate with. After the restriction, users can only communicate with users in the allowlisted networks. Both networks must allowlist each other from the security group settings in the federation tab to use restricted federation.
 
 1. Choose **Save** to save edits that you make to the security group details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

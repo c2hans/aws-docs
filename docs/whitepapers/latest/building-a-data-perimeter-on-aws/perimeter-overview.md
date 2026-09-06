@@ -110,7 +110,3 @@ The following table outlines how the different types of policies are used to ach
 - ** **Only expected networks****
   - **Perimeter objective:**  Ensure that my identities can access resources only from expected networks.  / **Policy type used:**  SCPs  / **Primary IAM condition(s) used:**  aws:SourceIp, aws:SourceVpc, aws:ViaAWSService
   - **Perimeter objective:**  Ensure my resources can only be accessed from expected networks.  / **Policy type used:**  RCPs / **Primary IAM condition(s) used:**  aws:SourceIp, aws:SourceVpc, aws:ViaAWSService, aws:PrincipalIsAWSService
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

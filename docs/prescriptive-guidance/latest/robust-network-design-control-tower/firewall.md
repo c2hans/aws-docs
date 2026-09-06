@@ -35,7 +35,3 @@ Configure the firewall VPC transit gateway subnet destination of `0.0.0.0/0` to 
 <a name="firewall-logging"></a>
 
 To help analyze traffic that is blocked by the network firewall, enable firewall logging. In addition to identifying unauthorized activities, firewall logging can help you analyze other activities that are happening inside and outside the VPC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

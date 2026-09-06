@@ -18,7 +18,3 @@ After the majority of SAS content has been migrated to the new target system on 
 ![SAS Migration Utility and SAS Deployment Wizard tasks](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sas-grid/images/guide-img/305d2670-30eb-46db-a41c-bed418267f47/images/3d622aa9-ad14-4181-abc1-7842cc7958c6.png)
 
 For additional details on the SAS Migration Utility, see the [SAS 9.4 Intelligence Platform Migration Guide](https://documentation.sas.com/doc/en/bicdc/9.4/bimig/p01intellplatform00migrategd.htm) on the SAS website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

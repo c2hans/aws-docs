@@ -160,7 +160,3 @@ To get started, download and unzip the [`OpsCenterCrossAccountManagementRole.zip
 Note the following important information about this task:
 If you plan to specify an account as a delegated administrator for OpsCenter, be sure to specify that AWS account when you create the stack.
 You must perform this procedure while signed in to the AWS Organizations management account and again while signed in to the delegated administrator account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

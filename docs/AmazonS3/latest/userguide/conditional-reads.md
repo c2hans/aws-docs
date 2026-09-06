@@ -53,7 +53,3 @@ For more information about these headers, errors returned, and the order S3 hand
 For more information about these headers, errors returned, and the order S3 handles multiple conditional headers in a single request, see [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html) in the Amazon Simple Storage Service API Reference.
 
 For information about using conditional headers to prevent overwrites during write operations, see [How to prevent object overwrites with conditional writes](conditional-writes.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

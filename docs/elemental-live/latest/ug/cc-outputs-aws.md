@@ -26,7 +26,3 @@ The rows are sorted by downstream system (destination AWS service). The *Release
 Note A. You could send to a MediaConnect Zixi flow using the Zixi option, but the AWS Elemental MediaConnect option provides a seamless integration with MediaConnect. The Zixi option is designed for destinations other than MediaConnect.
 
 Note B. You could send to a MediaConnect SRT flow using the SRT option, but the AWS Elemental MediaConnect option provides a seamless integration with MediaConnect. The SRT option is designed for destinations other than MediaConnect.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

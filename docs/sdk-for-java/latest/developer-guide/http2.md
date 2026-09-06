@@ -13,7 +13,3 @@ HTTP/2 is a major revision of the HTTP protocol. This new version has several en
 Developers upgrading to the latest SDKs will automatically use HTTP/2 when it’s supported by the service they’re working with. New programming interfaces seamlessly take advantage of HTTP/2 features and provide new ways to build applications.
 
 The AWS SDK for Java 2.x features new APIs for event streaming that implement the HTTP/2 protocol. For examples of how to use these new APIs, see [Working with Kinesis](examples-kinesis.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

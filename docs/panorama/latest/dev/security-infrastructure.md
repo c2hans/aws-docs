@@ -25,7 +25,3 @@ You are responsible for the following:
 +  Complying with any applicable laws or regulations associated with the content of the videos and images you gather from your production environments, including those related to privacy.
 
 The AWS Panorama Appliance uses unencrypted RTSP camera streams. For more information on connecting the AWS Panorama Appliance to your network, see [Connecting the AWS Panorama Appliance to your network](appliance-network.md). For details on encryption, see [Data protection in AWS Panorama](security-dataprotection.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

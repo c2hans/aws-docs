@@ -112,7 +112,3 @@ Backup and restore options are tried-and-true mechanisms for saving data on a so
 ![Diagram of Storage Gateway.](http://docs.aws.amazon.com/sap/latest/sap-hana/images/migrating-hana-storage-gateway.png)
 + Amazon EFS file transfer: AWS provides options to copy data from an on-premises environment to AWS by using Amazon Elastic File System (Amazon EFS). Amazon EFS is a fully managed service, and you pay only for the storage that you use. You can mount an Amazon EFS file share on your on-premises server, as long as you have AWS Direct Connect set up between your corporate data center and AWS.
 ![Diagram of Amazon EFS file transfer.](http://docs.aws.amazon.com/sap/latest/sap-hana/images/migrating-hana-efs.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

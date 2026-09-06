@@ -192,7 +192,3 @@ You can also process data stored in DynamoDB. Amazon CloudSearch represents each
 <a name="processing-source-data-console"></a>
 
 When you upload source documents or DynamoDB items through the Amazon CloudSearch console, they are automatically converted to the Amazon CloudSearch JSON format. You can use the console to upload up to 5 MB of data at a time. If you choose, you can download the generated JSON file. For more information about uploading data through the console, see [Uploading Data to an Amazon CloudSearch Domain](uploading-data.md) and [Uploading DynamoDB Data](searching-dynamodb-data.md#searching-dynamodb-data-console).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

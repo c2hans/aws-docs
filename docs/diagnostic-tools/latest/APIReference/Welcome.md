@@ -9,8 +9,4 @@ AWS Diagnostic Tools provides an HTTP endpoint to self diagnose common troublesh
 
  The AWS Diagnostic Tools includes several diagnostic tools you can run to diagnose various AWS services. The service includes a set of APIs designed to streamline and manage diagnostic processes. These APIs enable a range of actions: `GetTool` and `ListTools` provide information about the diagnostic tools available within the service. `StartExecution` initiates a diagnostic process, termed an `Execution`. Post-execution, `GetExecution` and `GetExecutionOutput` allow users to retrieve details and results of these Executions, respectively. For organizational efficiency, Executions can be tagged or untagged using `TagResource` and `UntagResource`. Additionally, ListExecutions offers a view of all Executions, and `ListTagsForResource` aids in viewing tags associated with a specific resource. Altogether, these APIs facilitate robust and efficient diagnostic operations within the DT service.
 
-This document was last published on September 1, 2026.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Diagnostic Tools. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query diagnostic-tools` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+This document was last published on September 4, 2026.

@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/federated-permissions
 ## IAM policy requirements for Amazon Redshift federated permissions setup
 <a name="federated-permissions-prereqs-iam"></a>
 
-Amazon Redshift federated permissions enables you to centrally manage data access across your analytics workloads, with permissions managed by the Redshift warehouse directly.
+With Amazon Redshift federated permissions, you can centrally manage data access across your analytics workloads, with permissions managed by the Redshift warehouse directly.
 
 To enable Amazon Redshift federated permissions, specific IAM permissions are required beyond the standard permissions needed for creating Redshift provisioned clusters and serverless namespaces.
 
@@ -37,7 +37,7 @@ Amazon Redshift supports identity center identity propagation to seamlessly pass
 
 *Required IAM Permissions*
 
-To create and manage the identity center application for identity center identity propagation, ensure your IAM permissions include the following permissions:
+To create and manage the identity center application for identity center identity propagation, make sure your IAM permissions include the following permissions:
 
 *For Amazon Redshift IdC application management:*
 + `redshift:CreateRedshiftIdcApplication`
@@ -344,7 +344,7 @@ This privilege enables administrators to control user access through granular pe
 
 ```
 GRANT CONNECT [ON WORKGROUP]
-TO [USER] <prefix>:<username> | ROLE <prefix>:<rolename> | PUBLIC;
+TO <prefix>:<username> | ROLE <prefix>:<rolename> | PUBLIC;
 ```
 
 CONNECT [ON WORKGROUP]
@@ -358,7 +358,3 @@ Indicates the AWS IAM Identity Center federated group receiving the permissions.
 
 PUBLIC
 Grants the CONNECT permissions to all AWS IAM Identity Center federated users, including users created later.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

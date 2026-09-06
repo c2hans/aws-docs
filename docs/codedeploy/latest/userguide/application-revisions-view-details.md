@@ -51,7 +51,3 @@ To view details about multiple application revisions, call the [list-application
 + Optionally, the column name and order by which to sort the list of revision details. (If not specified, CodeDeploy will list results in an arbitrary order.)
 
 You can list all revisions or only those revisions stored in Amazon S3. You cannot list only those revisions stored in GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

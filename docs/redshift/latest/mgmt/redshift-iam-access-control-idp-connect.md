@@ -48,7 +48,3 @@ Upon completing the steps to set up an AWS IAM Identity Center connection with R
 <a name="redshift-iam-access-control-idp-connect-multi-region"></a>
 
 Amazon Redshift supports AWS IAM Identity Center in multiple AWS Regions. You can extend AWS IAM Identity Center from your primary AWS Region to additional Regions for improved performance through proximity to users and reliability. When a new Region is added in AWS IAM Identity Center, you can create Redshift IAM Identity Center applications in the new Region without replicating identities from the primary Region. You can set up Amazon Redshift federated permissions using AWS IAM Identity Center in the new Region where you can enable row-level, column-level, and masking controls. For more details to get started with AWS IAM Identity Center in multiple Regions, see [Manage AWS IAM Identity Center in multiple AWS Regions](https://docs.aws.amazon.com/singlesignon/latest/userguide/multi-region-iam-identity-center.html) in the *AWS IAM Identity Center User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

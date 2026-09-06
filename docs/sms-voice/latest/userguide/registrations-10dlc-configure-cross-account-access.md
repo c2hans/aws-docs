@@ -30,7 +30,3 @@ You can use IAM roles to associate other accounts with your main account. Then, 
 1. Delegate and test access permission from your primary account using IAM roles with any of your other accounts that need to use your 10DLC numbers. For example, you might delegate access permission from your Production account to your Development account. For more information about delegating and testing permissions, see [Delegate access across AWS account using IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html) in the *IAM User Guide*.
 
 1. Using the new role, send a message using a 10DLC number from a secondary account. For more information about using a role, see [Using IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage-assume.html) in the *IAM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

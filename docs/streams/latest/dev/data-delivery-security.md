@@ -61,7 +61,3 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-securit
 <a name="data-delivery-security-cloudtrail"></a>
 
  All delivery API calls are logged by AWS CloudTrail. This includes `CreateChannel`, `UpdateChannel`, `DeleteChannel`, `DescribeChannel`, and `ListChannels`. You can use AWS CloudTrail logs to audit who created, modified, or deleted delivery resources, and when those actions occurred.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -164,7 +164,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
  Customers can integrate these sources into automatic notification systems, for example by subscribing to the RSS feeds for the AWS Service Health Dashboard and the AWS Security Bulletins. Monitoring these sites is the best way for customers to access the information required to help meet APRA's requirements for notification.
 
  Customers should also keep their accounts up to date with accurate email addresses and security contact information to facilitate timely response and notification.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

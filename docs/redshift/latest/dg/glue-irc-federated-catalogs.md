@@ -7,13 +7,13 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/glue-irc-federated-ca
 # Querying AWS Glue IRC federated catalogs with Amazon Redshift
 <a name="glue-irc-federated-catalogs"></a>
 
-AWS Glue Iceberg REST Catalog (IRC) enables you to federate external data catalogs, such as Databricks Unity Catalog, into the AWS Glue Data Catalog. Once federated, Amazon Redshift can query these external tables directly without requiring data movement. This chapter describes how to access Databricks Unity Catalog tables using federation from Amazon Redshift.
+With AWS Glue Iceberg REST Catalog (IRC), you can federate external data catalogs, such as Databricks Unity Catalog, into the AWS Glue Data Catalog. After the catalog is federated, Amazon Redshift can query these external tables directly without requiring data movement. This chapter describes how to access Databricks Unity Catalog tables using federation from Amazon Redshift.
 
 ## Architecture overview
 <a name="glue-irc-architecture"></a>
 
 The architecture involves three components that may reside in different accounts and Regions:
-+ **Source data (Amazon S3 bucket)** – The Amazon S3 bucket managed by the external data platform (for example, Databricks). This is where the actual Iceberg table data files reside. To read Delta tables, ensure Iceberg metadata is available for these tables using UniForm.
++ **Source data (Amazon S3 bucket)** – The Amazon S3 bucket managed by the external data platform (for example, Databricks). This is where the actual Iceberg table data files reside. To read Delta tables, make sure Iceberg metadata is available for these tables using UniForm.
 + **AWS Glue IRC federated catalog** – The Data Catalog entry that federates the external catalog (for example, Databricks Unity Catalog) and exposes its metadata through the Iceberg REST protocol.
 + **Amazon Redshift compute** – The provisioned cluster or serverless workgroup that executes queries against the federated tables.
 
@@ -100,7 +100,7 @@ Follow the instructions in [Federate to Databricks Unity Catalog](https://docs.a
 #### Setting the cross-account version
 <a name="glue-irc-cross-account-grantor-version"></a>
 
-Set the cross-account version to V4 in AWS Lake Formation settings. If catalog-level permissions already exist, ensure AWS RAM has permission to share resources by adding the following Data Catalog resource policy:
+Set the cross-account version to V4 in AWS Lake Formation settings. If catalog-level permissions already exist, make sure AWS RAM has permission to share resources by adding the following Data Catalog resource policy:
 
 ```
 {
@@ -210,8 +210,4 @@ SELECT * FROM "awsdatacatalog"."{{resource_link_database}}"."{{table_name}}" LIM
 ## Best practices and limitations
 <a name="glue-irc-best-practices"></a>
 + **Prefer automount for cross-Region deployments.** Automount handles cross-Region resolution transparently and requires no schema management overhead.
-+ **Use same-Region deployment when external schemas are required.** If your workflow requires external schemas (for example, to control schema-level permissions or naming), ensure the AWS Glue federated catalog, Amazon Redshift compute, and source Amazon S3 bucket are all in the same Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ **Use same-Region deployment when external schemas are required.** If your workflow requires external schemas (for example, to control schema-level permissions or naming), make sure the AWS Glue federated catalog, Amazon Redshift compute, and source Amazon S3 bucket are all in the same Region.

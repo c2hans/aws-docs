@@ -12,7 +12,3 @@ Agentic search introduces an intelligent agent system that understands user inte
 With OpenSearch Service, you can configure [AI connectors for AWS services](ml-amazon-connector.md) and [external services](ml-external-connector.md). Using the console, you can also create an ML model with a CloudFormation template that can be used for building your agent. For more information, see [Configuring Agentic Search with Bedrock Claude](cfn-template-agentic-search.md).
 
 For complete documentation and step-by-step implementation, see [Agentic Search](https://docs.opensearch.org/latest/vector-search/ai-search/agentic-search/index/) in the OpenSearch documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

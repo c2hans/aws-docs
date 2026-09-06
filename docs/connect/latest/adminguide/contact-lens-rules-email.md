@@ -62,8 +62,4 @@ With rules for cases, you can insert **rule name, instance URL** and **case ID**
 + All emails are sent from `no-reply@amazonconnect.com`, which you cannot customize.
 + SAML users do not have primary email addresses or passwords. They use a username to log in. A username is typically an email address but it does not have to be. For these users the field label **Email address** is empty inside Connect Customer. When email notifications are sent for SAML users, they must have a secondary email configured in order to get it. If a secondary email is not configured, the user will not receive the email.
 
-If the default option for sending emails does not meet your requirements, please contact your Technical Account Manager or Support to discuss with the Connect Customer service team.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+If the default option for sending emails does not meet your requirements, contact your Technical Account Manager or Support to discuss with the Connect Customer service team.

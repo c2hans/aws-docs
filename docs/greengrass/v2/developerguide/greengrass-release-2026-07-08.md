@@ -30,7 +30,3 @@ The following table lists components provided by AWS that include new and update
 | [Secret manager](secret-manager-component.md) | Version 2.2.9 of the [secret manager](secret-manager-component.md) is available.**Bug fixes and improvements**<br />   General bug fixes and improvements.    |
 | [Greengrass CLI](greengrass-cli-component.md) | <a name="changelog-cli-2.18.0"></a>Version 2.18.0 of the [Greengrass CLI](greengrass-cli-component.md) is available.<br />Updates the component version for the Greengrass nucleus version 2.18.0 release. |
 | [Secure tunneling](secure-tunneling-component.md) | Version 2.0.1 of the [secure tunneling](secure-tunneling-component.md) component is available.**Bug fixes and improvements**<br />   Updates the bundled local proxy binary to version 3.3.0.   Fixes concurrency and object-lifetime bugs that could affect tunnel data integrity.   Requires TLS 1.2 or later and no longer allows SSLv2, SSLv3, TLS 1.0, or TLS 1.1.    |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

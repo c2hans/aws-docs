@@ -243,7 +243,3 @@ This feature is exclusive to [managed login authentication](authentication-flows
 1. The authorization server validates the resource request, completes authentication, and sets the access token `aud` claim to the requested resource URL.
 
 1. To validate that tokens were issued specifically for it, the resource that consumes your user's access token checks the `aud` claim.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -92,7 +92,3 @@ Tags added to the session through the `sts:AssumeRole` request take precedence i
 Amazon EKS adds a key `eks-cluster-name` and value `my-cluster` to the session when EKS assumes the customer role and
 You add an `eks-cluster-name` tag to the IAM role with the value `my-own-cluster`.
 In this case, the former takes precedence and the value for the `eks-cluster-name` tag will be `my-cluster`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

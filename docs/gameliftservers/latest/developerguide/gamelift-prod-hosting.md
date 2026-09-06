@@ -76,7 +76,3 @@ Leverage these integrations to create a comprehensive management solution that a
 + [Updating Your Amazon GameLift Fleets](https://docs.aws.amazon.com/gamelift/latest/developerguide/fleets-updating.html)
 + [Scaling Game Hosting Capacity with Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/fleets-autoscaling.html)
 + [Amazon GameLift Server SDK Reference](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-sdk-server-api.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

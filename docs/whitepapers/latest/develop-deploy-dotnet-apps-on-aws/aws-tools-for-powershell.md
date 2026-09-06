@@ -16,7 +16,3 @@ PowerShell is a scripting environment built on .NET, and is widely used as the s
 [These tool extensions](https://github.com/aws/aws-extensions-for-dotnet-cli) are focused on building .NET Core and ASP.NET Core applications and deploying them to AWS Services (AWS Elastic Beanstalk, Amazon ECS, and AWS Lambda). Many of these deployment commands are the same commands the AWS Toolkit for Visual Studio uses to perform its deployment features. This enables you to do initial deployment in Visual Studio, and then transition from Visual Studio to the command line and automate the deployment.
 
 For example, with the AWS Lambda .NET CLI tool extension configured, you can deploy a Lambda function from the command line in the Lambda function's project root directory.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

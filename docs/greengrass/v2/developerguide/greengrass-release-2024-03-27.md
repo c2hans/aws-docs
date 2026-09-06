@@ -30,7 +30,3 @@ The following table lists components provided by AWS that include new and update
 | Moquette MQTT 3.1.1 broker component | Version 2.3.6 of the [Moquette MQTT 3.1.1 broker component](mqtt-broker-moquette-component.md) is available.**Bug fixes and improvements**<br /> General bug fixes and improvements.  |
 | Lambda manager | Version 2.3.3 of the [Lambda manager component](lambda-manager-component.md) is available.**Bug fixes and improvements**<br /> General bug fixes and improvements.  |
 | Local debug console | Version 2.4.2 of the [local debug console component](local-debug-console-component.md) is available.**Bug fixes and improvements**<br /> General bug fixes and improvements.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

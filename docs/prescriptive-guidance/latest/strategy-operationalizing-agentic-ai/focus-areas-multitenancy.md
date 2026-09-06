@@ -36,7 +36,3 @@ Example use cases for multi-tenant systems include the following:
 + An internal workflow automation agent serves multiple departments with different data boundaries and permissions. It maintains isolation while accelerating task fulfillment.
 
 By designing agents as multi-tenant-aware services, organizations avoid the overhead of siloed AI initiatives. Instead, they foster a unified intelligence platform. This architecture enables scalable rollout, operational consistency, and better ROI. It also makes it easier to expand AI adoption across the enterprise.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

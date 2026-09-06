@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Build a Foundry Nuke conda package for Deadline Cloud
 <a name="examples-conda-nuke"></a>
 
-The samples repository includes the following Nuke conda recipes:
+The following Nuke conda recipes are available on the GitHub website:
 + [nuke-16.0](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/nuke-16.0): Foundry Nuke 16.0 for Linux 64-bit.
 + [nuke-17.0](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/nuke-17.0): Foundry Nuke 17.0 for Linux 64-bit.
 + [nuke-denoise](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/nuke-denoise): Nuke De:Noise OFX plugin. The recipe demonstrates how to package OFX plugins for Nuke. Place `.bundle` files in a known directory in `$PREFIX` and set the `OFX_PLUGIN_PATH` environment variable.
@@ -19,7 +19,3 @@ Submit the build:
 ```
 ./submit-package-job nuke-17.0
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -174,7 +174,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  [Use the EUC Toolkit to manage Amazon WorkSpaces Applications and Amazon WorkSpaces](https://aws.amazon.com/blogs/desktop-and-application-streaming/euc-toolkit/)
 
  In summary, AWS EUC deployments are dependent on the reliability and performance of both the Amazon WorkSpaces or WorkSpaces Applications services themselves and also many external systems, taking a holistic approach to management of each component of the end to end deployment is key to maintaining end user engagement and productivity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

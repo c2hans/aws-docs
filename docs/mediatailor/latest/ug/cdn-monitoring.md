@@ -157,7 +157,3 @@ For additional guidance on specific monitoring scenarios:
 + **Performance optimization**: For detailed optimization techniques based on monitoring data, see [CDN performance optimization](cdn-optimization.md).
 + **Troubleshooting**: For detailed troubleshooting procedures using monitoring data, see your workflow-specific troubleshooting documentation.
 + **Log analysis**: For comprehensive log analysis and monitoring, see [CDN integration log analysis and error code reference for MediaTailor](cdn-log-error-reference.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

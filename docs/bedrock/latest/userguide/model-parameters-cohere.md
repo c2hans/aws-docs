@@ -15,7 +15,3 @@ When you make inference calls with Cohere models, you include a prompt for the m
 + [Cohere Command models](model-parameters-cohere-command.md)
 + [Cohere Embed and Cohere Embed v4 models](model-parameters-embed.md)
 + [Cohere Command R and Command R\+ models](model-parameters-cohere-command-r-plus.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 + [LSPERF10-BP02 Establish intelligent cache warming and preloading based on clinical workflow patterns and seasonal variations](lsperf10-bp02.md)
 + [LSPERF11-BP01 Optimize large dataset storage based on project phases and collaboration needs](lsperf11-bp01.md)
 + [LSPERF11-BP02 Monitor data usage patterns and automatically adjust storage tiers for cost optimization](lsperf11-bp02.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,7 +55,3 @@ You can create your secret using the [CreateSecret](https://docs.aws.amazon.com/
 For customers opting to rotate their secrets using a separate set of credentials (stored in an Admin Secret), create the Admin Secret in AWS Secrets Manager containing the admin service account's `clientId` and `clientSecret`. You must provide the ARN of this Admin Secret in the rotation metadata in a [RotateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html) call for your service account secret.
 
 During rotation, the driver creates a new secret for the service account via the Atlas Admin API, verifies the new secret by generating an OAuth token, updates the secret with new credentials, and deletes the old secret.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

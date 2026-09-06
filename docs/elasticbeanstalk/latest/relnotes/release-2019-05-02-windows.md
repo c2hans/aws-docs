@@ -78,7 +78,3 @@ This release applies Windows April 2019 security updates to the Windows Server p
 |  **Windows Server 2012 R2 Server Core with IIS 8.5**  | 2019.04.21 | 3.15.715 | 4.9.3289 | 2.3.444.0 | 3.6 | 1.0.0 |
 |  **Windows Server 2012 with IIS 8**  | 2019.04.21 | 3.15.715 | 4.9.3289 | 2.3.444.0 | 3.6 | 1.0.0 |
 |  **Windows Server 2008 R2 with IIS 7.5**  | 2019.04.21 | 3.15.715 | 4.9.3289 | 2.3.444.0 | 3.6 | 1.0.0 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

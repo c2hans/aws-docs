@@ -51,7 +51,3 @@ If you use Amazon ECS or Amazon EKS, we recommend that you install Container ins
 <a name="Investigations-DatabaseInsights"></a>
 
 If you use Amazon RDS, we recommend that you enable the Advanced mode of Database Insights on your database instances. Database Insights monitors database load and provides detailed performance analysis that helps CloudWatch investigations identify database-related issues during investigations. When Advanced Database Insights is enabled, CloudWatch investigations can automatically generate performance analysis reports that include detailed observations, metric anomalies, root cause analysis, and recommendations specific to your database workload. For more information about Database Insights and how to enable Advanced mode, see [Monitoring Amazon RDS databases with CloudWatch Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

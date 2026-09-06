@@ -183,7 +183,3 @@ If you run the Lambda function in a container, complete the following steps to c
 After you configure settings for your Lambda function component, choose **Create** to finish creating the new component.
 
 To run the Lambda function on your core device, you can then deploy the new component to your core devices. For more information, see [Deploy AWS IoT Greengrass components to devices](manage-deployments.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

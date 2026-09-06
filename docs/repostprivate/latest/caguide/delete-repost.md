@@ -22,7 +22,3 @@ When you delete the private re:Post, all the configuration information that's re
 1. Enter the name of your private re:Post when prompted for additional written consent. Then, choose **Delete**.
 
 It takes approximately 30 minutes for your private re:Post to be deleted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

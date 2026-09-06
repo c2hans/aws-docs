@@ -86,7 +86,3 @@ How AWS Managed Services (AMS) auto-remediation works with ONTAP volume capacity
 + Remediation is limited to no more than three updates within a seven-day period.
 + The maximum storage limit that AMS Automation expands to is 5120 GiB.
 + If iSCSI LUN is configured on top of the volume, you must manually expand the iSCSI LUN at the OS level after the automatic remediation completes. For more information, see [Why is my FSx for ONTAP LUN in read-only mode?](https://repost.aws/knowledge-center/fsx-ontap-lun-in-read-only-mode)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

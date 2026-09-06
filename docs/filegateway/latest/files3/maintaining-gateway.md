@@ -15,7 +15,3 @@ This section contains the following topics, which describe concepts and procedur
 + [Shutting down your gateway VM](MaintenanceShutDown-common.md) – Learn about what to do if you need to shutdown or reboot your gateway virtual machine for maintenance, such as when applying a patch to your hypervisor.
 + [Replacing your existing S3 File Gateway with a new instance](migrate-data.md) – Learn how to replace your S3 File Gateway with a new instance when you want to improve performance or to respond to a notification to migrate the gateway.
 + [Deleting your gateway and removing associated resources](deleting-gateway-common.md) – Learn how to delete your gateway using the AWS Storage Gateway console and clean up associated resources to avoid being charged for their continued use.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

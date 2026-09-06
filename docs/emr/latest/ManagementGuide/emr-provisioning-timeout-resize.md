@@ -63,7 +63,3 @@ When you configure cluster provisioning timeouts for your instance fleets, consi
 + When you create a cluster, you can configure provisioning timeouts. You can add a timeout or update an existing timeout for a running cluster.
 + If you submit multiple resize operations, then Amazon EMR tracks provisioning timeouts for every resize operation. For example, set the provisioning timeout on a cluster to {{60}} minutes. Then, submit a resize operation {{R1}} at time {{T1}}. Submit a second resize operation {{R2}} at time {{T2}}. The provisioning timeout for R1 expires at {{T1 \+ 60 minutes}}. The provisioning timeout for R2 expires at {{T2 \+ 60 minutes}}.
 + If you submit a new scale-up resize operation before the timeout expires, Amazon EMR continues its attempt to provision capacity for your EMR cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

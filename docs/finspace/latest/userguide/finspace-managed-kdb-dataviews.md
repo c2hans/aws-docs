@@ -84,7 +84,3 @@ You can create multiple dataviews for a single database. For example, you may wi
 <a name="kdb-dataviews-datav-consideration"></a>
 + Dataviews are only available for clusters running on a scaling group. They are not supported on dedicated clusters.
 + The paths placed on different volumes cannot overlap. For example, you could not place a path of `/2023.10.31/*` on one volume of a dataview and `/2023.10*` on another volume of the same dataview because the paths overlap. This constraint is because each volume is a different segment in the `par.txt` file on the database and contents of a segment can’t overlap.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,3 @@ The following topics explains more about how to publish a new data product on AW
 
 AWS Data Exchange also offers programmatic access to its resources using the following API:
 + **AWS Data Exchange API** – Use these API operations to create, view, update, and delete data sets and revisions. You can also use these API operations to import and export assets to and from those revisions. For more information, see the [AWS Data Exchange API Reference](https://docs.aws.amazon.com/data-exchange/latest/apireference/welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

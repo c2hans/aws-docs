@@ -133,7 +133,3 @@ Consider the following when using AWS Glue Data Catalog as Apache Iceberg REST C
 + The AWS Glue Data Catalog IRC endpoint supports only the Amazon SigV4 authentication scheme. OAuth is not supported. For OAuth users, please use IAM Identity Center to configure access. See [Connecting Lake Formation with IAM Identity Center](https://docs.aws.amazon.com/lake-formation/latest/dg/connect-lf-identity-center.html).
 + The AWS Glue Iceberg REST catalog does not support all operations in open source.
 + Here are the [Considerations](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-lf-limitations-cont.html) for Amazon EMR with Lake Formation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 +  Depending on the deployment, experience with Kubernetes operator, Docker, or Ansible
 
  Optionally, SAS also provides a content assessment tool that helps you migrate your environment to SAS Viya. The [content assessment tool](https://blogs.sas.com/content/sgf/2021/07/23/how-to-use-the-sas-9-content-assessment-tool/) provides the inventory of what is in your SAS 9 environment and additionally provides you with details specifically around if your current code will transition to SAS Viya.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

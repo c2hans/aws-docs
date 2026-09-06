@@ -10,7 +10,3 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 Continuity management is not available for resources provisioned outside of the AMS Advanced change management process, or for resources provisioned through change management and then altered by an account using Developer mode permissions.
 
 Environment recovery initiation time can take up to 12 hours for resources provisioned outside of the AMS Advanced change management process, or for resources provisioned through change management and then altered by an account using Developer mode permissions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

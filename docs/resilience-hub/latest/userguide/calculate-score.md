@@ -72,7 +72,3 @@ If you choose not to define Regional RTO or RPO targets for your policy, the wei
 | Infrastructure | 30 points | 33.33 points |
 | Availability Zone | 20 points | 22.22 points |
 | Region | 10 points | N/A |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ The following are special security considerations for Nova Act.
 + We recommend you do not provide sensitive information within the act() statements, such as account passwords. Instead, such information should be passed directly to the browser using Playwright keyboard API calls. Note that if you use sensitive information through Playwright, the information could still be collected in screenshots by AWS if it appears unobstructed on the browser when Nova Act is engaged in completing an action.
 + Nova Act accepts inputs from customers for tool definitions and service details, which can potentially contain personally identifiable information (PII).
 + Usage metrics and logs are stored in the customer account’s CloudWatch.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,7 @@ Before you request a short code, consider the following information:
 
 You can only use short codes to send messages to recipients in the same country where the short code is based. If your use case requires you to use short codes in more than one country, you must request a separate short code for each country that your recipients are located in.
 
-Countries support through console and APIs:
+Countries supported through the console and APIs:
 + Chile (CL)
 + Finland (FI)
 + Germany (DE)
@@ -37,14 +37,17 @@ Countries support through console and APIs:
 ## Step 1: Open a support case
 <a name="phone-numbers-request-short-code-open"></a>
 
-The first step in requesting a short code is to open a Service Limit Increase case in the Support Center Console.
+The first step in requesting a short code is to open a support case in the Support Center Console.
 
 **To request a short code**
 
-1. Create an AWS Support case at [https://support.console.aws.amazon.com/support/home\#/case/create?issueType=service-limit-increase](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase).
+1. Open the Support Center Console at [https://console.aws.amazon.com/support/home](https://console.aws.amazon.com/support/home) and choose **Create case**.
 
-1. On the **Create Case** page, complete the following:
-   + Select **Account and Billing**.
+1. Choose **Service limit increase** or **Account and billing**, depending on the options available in your console.
+**Note**
+If the Support Center Console presents a conversational interface, describe your request as a short code request for AWS End User Messaging SMS. You can also go directly to the service limit increase form at [https://console.aws.amazon.com/support/home\#/case/create?issueType=service-limit-increase](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase).
+
+1. Provide the following information for your short code request:
    + For **Service**, choose **Service Quotas**.
    + For **Category** choose either **AWS End User Messaging SMS (Pinpoint)** or **AWS End User Messaging Voice (Pinpoint)**, depending on your request.
    + For **Severity**, choose **General Limits**.
@@ -93,7 +96,3 @@ You can't complete this step until the short code request has been approved and 
 1. On the **Phone number** page, choose the short code.
 
 1. On the **Keywords** tab, verify that the responses for the *HELP* and *STOP* keywords match the values that you specified in your request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

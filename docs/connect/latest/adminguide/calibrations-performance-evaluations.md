@@ -23,9 +23,9 @@ In addition, for both sets of users, you also need permissions to search and vie
 
 1. Login to Amazon Connect Customer with a user account that has the necessary permissions within their security profile.
 
-1. On the left nav, go to **Analytics and optimization, Contact search**.
+1. On the left navigation menu, choose **Analytics and optimization, Contact search**.
 
-1. Search for a contact that you wish to perform calibrations on, for example, minimum interaction duration, specific queue.
+1. Search for a contact that you want to perform calibrations on, for example, minimum interaction duration, specific queue.
 
 1. On the **Contact details** page of a contact, choose **Evaluations** on the top right to open the **Evaluations** side panel.
 
@@ -60,7 +60,7 @@ Use the following procedure to perform evaluations as a part of a calibration se
 1. On the side panel locate the **Calibration evaluations assigned to you** section to view your calibration evaluations.
 ![A diagram of calibration evaluations assigned to you.](http://docs.aws.amazon.com/connect/latest/adminguide/images/calibration-evaluations1.png)
 
-1. Choose an evaluation to open it. You can respond to these evaluations in the same manner as standard evaluations, with options to save your progress or submit the completed evaluation. Note that automation is disabled on calibration sessions.
+1. Choose an evaluation to open it. You can respond to these evaluations in the same manner as standard evaluations, with options to save your progress or submit the completed evaluation. Automation is disabled on calibration sessions.
 ![A diagram of responding to calibration evaluations.](http://docs.aws.amazon.com/connect/latest/adminguide/images/calibration-evaluations2.png)
 
 1. Calibration managers can access a list of all evaluations associated with a specific calibration session by viewing the calibration session details in the side panel. Calibration managers will also be able to view evaluations submitted by participants.
@@ -73,7 +73,7 @@ Use the following procedure to perform evaluations as a part of a calibration se
 1. Access the calibration session details view and choose **Finalize**.
 ![A diagram showing the finalize button for calibrations.](http://docs.aws.amazon.com/connect/latest/adminguide/images/calibrations-finalize.png)
 
-1. Confirm the finalization when prompted. Note that once finalized, neither the session nor its evaluations can be edited.
+1. Confirm the finalization when prompted. After a session is finalized, neither the session nor its evaluations can be edited.
 
 1. Within a few seconds, a calibration report will be available for download in .csv format. This report contains the answers of participants that have submitted evaluations, along with the weighted scores for each question, section and the overall form, evaluator notes and comparison of the evaluator's scores with the expert evaluator.
 
@@ -82,10 +82,6 @@ Use the following procedure to perform evaluations as a part of a calibration se
 ## Finding calibration sessions
 <a name="calibrations-find"></a>
 
-Amazon Connect Customer notifies users participating in calibration sessions through email (for example, if a user is added as a participant, if there is a change to the due date). If a user managing a calibration session has added themselves as the **expert** participant, then they would also receive emails. The email contains a link to the contact which is being used for calibration. Note that in order for users to receive email notifications, you need to assign emails to the users on Connect Customer. For more information, see [Add users to Connect Customer](user-management.md).
+Amazon Connect Customer notifies users participating in calibration sessions through email (for example, if a user is added as a participant, if there is a change to the due date). If a user managing a calibration session has added themselves as the **expert** participant, then they would also receive emails. The email contains a link to the contact which is being used for calibration. For users to receive email notifications, you need to assign emails to the users on Connect Customer. For more information, see [Add users to Connect Customer](user-management.md).
 
-As a manager setting up a calibration, you can copy the contact ID to search for the contact on which the calibration session was set up. Note that if you have not added yourself as an expert or if user emails are not set up within Connect Customer, you will not receive an email containing a link to the contact on which the calibration session was set up.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+As a manager setting up a calibration, you can copy the contact ID to search for the contact on which the calibration session was set up. If you have not added yourself as an expert or if user emails are not set up within Connect Customer, you will not receive an email containing a link to the contact on which the calibration session was set up.

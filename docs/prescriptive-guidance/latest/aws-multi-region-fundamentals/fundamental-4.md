@@ -80,7 +80,3 @@ Each strategy has trade-offs and addresses different challenges, including flexi
 + Extend monitoring for the workload beyond the primary Region. Monitor customer experience metrics for each Region, and measure this data from outside each Region in which a workload is running.
 + Test failover and failback regularly. Implement a single runbook for failover and failback processes and use it both for testing and live events. Runbooks for testing and live events should not be different.
 + Understand the trade-offs of the failover strategies. Implement a dependency graph or entire application portfolio strategy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -104,7 +104,16 @@ Create a new project using the AgentCore CLI. This sets up your project folder, 
 
 ```
 npm install -g @aws/agentcore
-agentcore create --name StrandsClaudeGettingStarted
+agentcore create \
+  --project-name StrandsObservability \
+  --name StrandsClaudeGettingStarted \
+  --language Python \
+  --framework Strands \
+  --model-provider Bedrock \
+  --memory none
+cd StrandsObservability/app/StrandsClaudeGettingStarted
+uv add strands-agents-tools
+cd ../..
 ```
 
 In the project’s agent directory, replace the default agent code with your own agent logic. The following is an example using the Strands Agents SDK:
@@ -151,7 +160,6 @@ if __name__ == "__main__":
 Deploy the agent to AgentCore Runtime. The AgentCore CLI handles packaging, deployment, and automatic OTEL instrumentation:
 
 ```
-cd StrandsClaudeGettingStarted
 agentcore deploy
 ```
 
@@ -364,7 +372,3 @@ After implementing observability, you can view the collected data in CloudWatch:
 1.  **Filter sensitive data** - Prevent exposure of confidential information by filtering sensitive data from observability attributes and payloads.
 
 1.  **Set up alerts** - Configure CloudWatch alarms to notify you of potential issues before they impact users
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

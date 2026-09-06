@@ -14,7 +14,3 @@ When you pass a `RoleArn` on [StartStreamSession](https://docs.aws.amazon.com/ga
 1. Your application's AWS SDK automatically discovers and uses the credentials. Credentials are refreshed automatically for the lifetime of the session.
 
 If you do not pass a `RoleArn`, the session starts without access to your AWS resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

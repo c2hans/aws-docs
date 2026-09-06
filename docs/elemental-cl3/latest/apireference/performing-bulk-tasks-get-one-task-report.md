@@ -45,7 +45,3 @@ Task Elements
 | description | String | The type of bulk task for this task report: “Channel Start” or “Channel Stop.” |
 | state | String | The state of this bulk task. When the state changes to "Success," the <successful\_count> increments; when the state changes to "Failure," then <failure\_count> increments.  |
 | message | String | “Success” or “Failure.” |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

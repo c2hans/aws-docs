@@ -37,7 +37,3 @@ After you onboard an application, Microservice Extractor displays its nodes and 
 Manually remove node dependencies to prepare parts of your application for extraction as smaller services. The parts are displayed as groups in the graph. Microservice Extractor can also extract API endpoints as separate services by isolating the code that underlies the API endpoints and replacing local calls with network calls. This creates a new implementation of the calling class in a new solution, while preserving the interface and original solution. You can then develop, build, and deploy the new repositories independently as services.
 
 For more information about actions you can take from the main visualization, see [Features of the AWS Microservice Extractor for .NET visualization tool](#microservice-extractor-use-visualization-features).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

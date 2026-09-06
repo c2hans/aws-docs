@@ -28,7 +28,3 @@ The targeted level of the AWS WAF Bot Control rule group and the AWS WAF rate-ba
 | Resiliency against highly distributed attacks  | Medium - 10,000 IP address maximum for IP address limiting on its own | Medium - limited to 50,000 total between IP addresses and tokens  |
 | [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/) | Included in the standard fees for AWS WAF.  | Included in the fees for the targeted level of Bot Control intelligent threat mitigation.  |
 | For more information | [Using rate-based rule statements in AWS WAF](waf-rule-statement-type-rate-based.md) | [AWS WAF Bot Control rule group](aws-managed-rule-groups-bot.md) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

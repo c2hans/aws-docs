@@ -205,7 +205,3 @@ The following table describes the other commands besides **add** and **start**.
 | delete (bot number) | Delete removes a bot from your system. If you have more than one, use the number shown from the list command to specify which bot you’d like to delete. |
 | pause (bot number) | Pause temporarily stops a running bot. |
 | restart (bot number) | Restart will restart a bot. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

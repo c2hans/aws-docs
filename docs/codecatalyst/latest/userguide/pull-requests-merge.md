@@ -64,7 +64,3 @@ Git supports many options for merging and managing branches. The following comma
 | Merges the source branch into the destination branch, specifying a three-way merge. This creates a merge commit and adds the individual commits from the source branch to the destination branch. | `git checkout {{destination-branch-name}}`<br />`git merge --no-ff {{source-branch-name}}` |
 | Deletes the source branch in the local repo. This is useful to do as a clean-up for your local repo after merging to the destination branch and pushing the changes to the source repository. | `git branch -d {{source-branch-name}}` |
 | Deletes the source branch in the remote repository (the source repository in CodeCatalyst) using the local repo's specified nickname for the remote repository. (Note the use of the colon (`:`).) Alternatively, specify `--delete` as part of the command. | `git push {{remote-name}} :{{source-branch-name}}`<br />`git push {{remote-name}} --delete {{source-branch-name}}` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

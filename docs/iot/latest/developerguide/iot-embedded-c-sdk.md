@@ -153,7 +153,3 @@ This procedure exaplains how to generate the `mqtt_demo_mutual_auth` application
 Your device is now connected to AWS IoT using the AWS IoT Device SDK for Embedded C.
 
 You can also use the AWS IoT console to view the MQTT messages that the sample app is publishing. For information about how to use the MQTT client in the [AWS IoT console](https://console.aws.amazon.com/iot/home), see [View MQTT messages with the AWS IoT MQTT client](view-mqtt-messages.md) .
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

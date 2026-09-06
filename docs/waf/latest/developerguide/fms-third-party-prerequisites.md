@@ -32,7 +32,3 @@ For information about working with Fortigate CNF policies, see [Using Fortigate 
 1. Complete the Palo Alto Networks Cloud NGFW deployment steps listed in the [Deploy Palo Alto Networks Cloud NGFW for AWS with the AWS Firewall Manager](https://docs.paloaltonetworks.com/cloud-ngfw/aws/cloud-ngfw-on-aws/getting-started-with-cloud-ngfw-for-aws/deploy-cloud-ngfw-for-aws-with-the-aws-firewall-manager.html) topic in the *Palo Alto Networks Cloud Next Generation Firewall for AWS deployment guide*.
 
 For information about working with Palo Alto Networks Cloud NGFW policies, see [Using Palo Alto Networks Cloud NGFW policies for Firewall Manager](cloud-ngfw-policies.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,3 @@ AWS Professional Services uses a phased approach to build and realize a plan for
 <a name="before-you-begin"></a>
 
 It is important to have executive-level commitment to the long-term investment of an IIoT digital transformation journey. Executive sponsors must be aligned to a sustainable strategy and have patience for achieving the target outcomes. According to [The age of analytics: Competing in a data-driven world](https://www.mckinsey.com/business-functions/quantumblack/our-insights/the-age-of-analytics-competing-in-a-data-driven-world) (McKinsey Global Institute study), "Less than one-third of all respondents say their organizations have engaged a chief digital officer to support their transformations. But those that do are 1.6 times more likely than others to report a successful digital transformation." Therefore, prior to starting your journey, make sure the executive team understands and is aligned on the investment strategy, budget, and timeline. Confirm that all of the business stakeholders across IT and OT are committed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

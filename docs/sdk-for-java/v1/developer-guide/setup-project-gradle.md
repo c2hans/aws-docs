@@ -152,7 +152,3 @@ dependencies {
 In the previous example, replace the dependency for Amazon S3 with the dependencies of the AWS service you will use in your project. The modules (dependencies) that are managed by the AWS SDK for Java BOM are listed on [Maven central repository](https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-bom/latest).
 
 For more information about specifying SDK dependencies by using the BOM, see [Using the SDK with Apache Maven](setup-project-maven.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

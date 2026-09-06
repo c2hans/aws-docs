@@ -32,7 +32,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
  Moreover, engineering teams practicing MBSE may discover more **incompatibilities** or **missing functionalities** as they use it over time. Hence, IT teams may need to work on these missing functionalities- or provide extra work-around solutions that create **technical debt for their MBSE** solution. Therefore, customers will work on finding simple, but versatile, solutions to start with an MBSE solution or solution built on MBSE.
 
  In the next chapter, we first talk about how cloud would help MBSE and go beyond.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

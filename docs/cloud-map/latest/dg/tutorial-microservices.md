@@ -361,7 +361,3 @@ The following table lists procedures that you can follow to delete the other res
 | --- | --- |
 | DynamoDB table | [Step 6: (Optional) Delete your DynamoDB table to clean up resources](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/getting-started-step-6.html) in the Amazon DynamoDB Developer Guide |
 | Lambda functions and associated IAM execution role | [Clean up](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html#gettingstarted-cleanup) in the *AWS Lambda Developer Guide* |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Map. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud-map` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

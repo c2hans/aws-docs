@@ -81,7 +81,3 @@ The following example shows the same audio adaptation set with the `PATTERNED` s
 When you enable the `PATTERNED` setting, MediaPackage adds the `EssentialProperty` descriptor with `schemeIdUri="urn:mpeg:dash:pattern:2024"` at the `AdaptationSet` level. This descriptor signals to DASH players that the adaptation set may contain `Pattern` elements. You will never encounter pattern elements without this descriptor present, but the descriptor may be present without any pattern elements if no repeating cycle has been detected. Players that don't recognize this scheme are required by the DASH specification to ignore the adaptation set, which prevents misinterpretation of any `Pattern` elements that may be present. For this reason, only enable `PATTERNED` when your target players support `urn:mpeg:dash:pattern:2024`.
 
 To configure the audio timeline pattern for a DASH endpoint, set the `AudioTimelinePattern` field in the [manifest configuration](endpoints-create.md#dash-manifest).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

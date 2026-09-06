@@ -803,7 +803,3 @@ subnet-be9b61d7
 <a name="instance-metadata-ex-7-imdsv1"></a>
 
 If access to instance tags in the instance metadata is turned on, you can get the tags for a instance from instance metadata. For more information, see [Retrieve tags from instance metadata](work-with-tags-in-IMDS.md#retrieve-tags-from-IMDS).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

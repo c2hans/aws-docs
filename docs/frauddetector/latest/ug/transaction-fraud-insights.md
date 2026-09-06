@@ -47,7 +47,3 @@ The event type used to train the model must contain at least 2 variables, apart 
 As part of the training process, Transaction Fraud Insights validates the training dataset for data quality issues that might impact model training. After validating the data, Amazon Fraud Detector takes appropriate action to build the best possible model. This includes issuing warnings for potential data quality issues, automatically removing variables that have data quality issues, or issuing an error and stopping the model training process. For more information, see [Dataset validation](https://docs.aws.amazon.com/frauddetector/latest/ug/create-event-dataset.html#dataset-validation).
 
 Amazon Fraud Detector will issue a warning but continue training a model if the number of unique entities is less than 1,500 because this can impact the quality of the training data. If you receive a warning, review the [performance metric](training-performance-metrics.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

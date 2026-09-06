@@ -52,7 +52,3 @@ You can also download the Mobile SDK for Unity as a .zip file [here](https://sdk
 <a name="what-s-included-in-the-aws-mobile-sdk-for-unity"></a>
 
 For the complete list of NuGet packages, samples, and other files in the Mobile SDK for Unity, see [AWS SDK for .NET](https://github.com/aws/aws-sdk-net/tree/unityv3) on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mobile SDK for Unity. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mobile` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

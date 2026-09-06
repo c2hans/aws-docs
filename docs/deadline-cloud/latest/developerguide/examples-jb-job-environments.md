@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Use job environments on Deadline Cloud
 <a name="examples-jb-job-environments"></a>
 
-The following job bundles supplement the [Control the job environment with OpenJD queue environments](control-the-job-environment.md) section in the developer guide. Each bundle demonstrates a different way to use [Open Job Description environments](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#4-environment):
+The following job bundles supplement the [Control the job environment with OpenJD queue environments](control-the-job-environment.md) section in the developer guide. Each demonstrates a different way to use [Open Job Description environments](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#4-environment) on the GitHub website. The following bundles are in the [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples) repository on the GitHub website:
 
 [job\_env\_vars](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_vars)
 Sets environment variables through a job environment.
@@ -23,7 +23,3 @@ Defines a job environment that creates a Python virtual environment with `pip` a
 Provides the job's Python dependencies through the [Pip queue environment for Deadline Cloud](examples-queue-env-pip.md) instead of a job environment. The job only sets the `PipPackages` parameter that the queue environment reads. Use this style to define the pip environment once and share it across many jobs on a queue.
 
 For more queue-level environment examples, see [Queue environment examples for Deadline Cloud](examples-queue-environments.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

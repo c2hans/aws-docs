@@ -66,7 +66,3 @@ Complete the following actions after your new database is up and running:
 + If you’re creating a new database to replace an existing database, and you have an application that depends on the existing database, then make sure to update your application dependencies to your new database.
 + Delete the original database if you no longer need it. For more information, see [Delete your database](amazon-lightsail-deleting-your-database.md).
 + Databases created from a snapshot are configured to use a strong password created by Lightsail. For more information, see [Manage your database password](amazon-lightsail-managing-database-password.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

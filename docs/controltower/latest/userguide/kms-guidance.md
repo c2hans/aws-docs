@@ -12,7 +12,3 @@ AWS KMS allows you to create multi-Region KMS keys and asymmetric keys. However,
 *For customers who operate an AWS CloudHSM cluster:* Create a custom key store associated with your CloudHSM cluster. Then you can create a KMS key, which resides in the CloudHSM custom key store you created. You can add this KMS key to AWS Control Tower.
 
 You must make a specific update to the permissions policy of a KMS key to make it work with AWS Control Tower. For details, refer to the section called [Update the KMS key policy](configure-kms-keys.md#kms-key-policy-update).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

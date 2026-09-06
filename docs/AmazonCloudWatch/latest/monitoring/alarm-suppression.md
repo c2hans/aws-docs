@@ -97,7 +97,3 @@ Because composite alarms allow you to get an aggregated view of your health acro
 <a name="action-suppression-and-mute-rules"></a>
 
  When both action suppression and alarm mute rules are active for a composite alarm, mute rules take precedence and suppress all alarm actions. After the mute window ends, the composite alarm's action suppression configuration determines whether actions are executed based on the suppressor alarm state and configured wait or extension periods. For more information about alarm mute rules, see [Alarm Mute Rules](alarm-mute-rules.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

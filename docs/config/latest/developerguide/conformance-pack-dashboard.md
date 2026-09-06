@@ -21,7 +21,3 @@ You can use this dashboard to understand the level of compliance of your conform
 You cannot edit a deployed conformance pack. You can modify the other selections at any time by choosing the name of the conformance pack and **Edit** in the **Actions** dropdown.
    + To view the history of compliance state changes, choose a conformance pack and choose **Conformance pack timeline**. For more information, see [Viewing the Compliance History Timeline for Conformance Packs](https://docs.aws.amazon.com/config/latest/developerguide/compliance-history-conformance-pack.html).
    + To view the deployment status, compliance score, compliance score timeline, and rules for a conformance pack in a detailed view, choose a conformance pack and choose **View**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -73,7 +73,3 @@ print(response)
 ```
 + For information about getting started with LangChain, see the [Introduction](https://python.langchain.com/v0.2/docs/introduction/) in the LangChain documentation.
 + For information about using LangChain code built for Amazon Personalize, including more advanced code samples, see [Amazon Personalize LangChain extensions](https://github.com/aws-samples/amazon-personalize-langchain-extensions) in the [AWS samples](https://github.com/aws-samples/) repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

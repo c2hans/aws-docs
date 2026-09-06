@@ -38,7 +38,3 @@ Understanding license and grant states helps you track the lifecycle of entitlem
 **Rejected**: End user has rejected the license that was granted to them. This is a terminal state for that grant. The grantor can create a new grant for the end user on the same license.
 
 **Deleted**: Grantor or administrator has deleted the grant. This is a terminal state for that grant. The grantor can create a new grant for the end user on the same license.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

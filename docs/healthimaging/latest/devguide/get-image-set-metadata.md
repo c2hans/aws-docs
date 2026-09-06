@@ -378,7 +378,3 @@ Can't find what you need? Request a code example using the **Provide feedback** 
 
 **Transfer Syntax Metadata**
 When importing DICOM data, HealthImaging keeps the original value for the transfer syntax attribute in the image set metadata. The transfer syntax of the original DICOM data imported is stored as `TransferSyntaxUID`. HealthImaging uses `StoredTransferSyntaxUID` to indicate the format used to encode image frame data in the data store: `1.2.840.10008.1.2.4.202` for HTJ2K enabled data stores (default) and `1.2.840.10008.1.2.4.90` for JPEG 2000 Lossless enabled data stores.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,7 +75,3 @@ This example generates output similar to the following.
 You can use the `DB_PERF_INSIGHTS` metric math function in the CloudWatch console to query Amazon DocumentDB Performance Insights counter metrics. The `DB_PERF_INSIGHTS` function also includes the `DBLoad` metric at sub-minute intervals. You can set CloudWatch alarms on these metrics. For more details on how to create an alarm, see [Create an alarm on Performance Insights counter metrics from an AWS database](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_alarm_database_performance_insights.html).
 
 For more information about CloudWatch, see [What is Amazon CloudWatch?](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) in the *Amazon CloudWatch User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

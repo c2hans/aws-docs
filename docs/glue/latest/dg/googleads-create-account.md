@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googleads-create-account.
 
 1.  Add the scopes according to your application need based, choose **OAuth consent screen** and provide the required information and add the scopes based on requirements.
 ![The screenshot shows the Update selected scopes page. Select your scopes as needed.](http://docs.aws.amazon.com/glue/latest/dg/images/google-ads-selected-scopes.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

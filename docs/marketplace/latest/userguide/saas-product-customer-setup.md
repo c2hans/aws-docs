@@ -57,7 +57,3 @@ Do not activate a product subscription unless you receive a `License Updated` ev
 <a name="security-and-ordering"></a>
 
  As a seller, it’s your responsibility to trust only AWS account IDs that are immediately returned from AWS or those that your system has signed. We recommend that you resolve the registration token immediately because it may expire after approximately one hour. After you resolve the registration token, store the AWS account ID as a signed attribute on the customer’s browser session until the registration is complete.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

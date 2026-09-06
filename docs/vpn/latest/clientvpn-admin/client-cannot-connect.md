@@ -36,7 +36,3 @@ The server certificate being used for the Client VPN endpoint has expired.
 Check the status of your server certificate in the AWS Certificate Manager console or by using the AWS CLI. If the server certificate is expired, create a new certificate and upload to ACM. For detailed steps to generate the server and client certificates and keys using the [OpenVPN easy-rsa utility](https://github.com/OpenVPN/easy-rsa), and import them into ACM see [Mutual authentication in AWS Client VPN](mutual.md).
 
 Alternatively, there might be an issue with the OpenVPN-based software that the client is using to connect to the Client VPN. For more information about troubleshooting OpenVPN-based software, see [Troubleshooting Your Client VPN Connection](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/troubleshooting.html) in the *AWS Client VPN User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

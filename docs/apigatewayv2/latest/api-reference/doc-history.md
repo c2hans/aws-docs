@@ -19,7 +19,3 @@ The following table describes major updates to the Amazon API Gateway WebSocket 
 | [HTTP APIs](#doc-history) | General availability release of HTTP APIs. | March 12, 2020 |
 | [HTTP APIs](#doc-history) | Beta release of HTTP APIs. | December 4, 2019 |
 | [Major release](#doc-history) | Initial documentation release. | November 29, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigatewayv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

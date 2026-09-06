@@ -63,7 +63,3 @@ Any one of the following methods can be used for Oracle database backup.
 + There are many third-party tools from partner like Commvault, NetBackup, etc. that use the SAP backint interface and have Oracle database agents, with the capability to backup the database directly to Amazon S3.
 
 To configure and tune backups for your Oracle database, see [SAP on Oracle – Backup and Recovery](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=448466928) and [Database Backup and Recovery User’s Guide - Tuning RMAN Performance](https://docs.oracle.com/database/121/BRADV/rcmtunin.htm#BRADV011).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

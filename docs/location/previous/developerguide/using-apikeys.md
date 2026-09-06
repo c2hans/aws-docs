@@ -203,7 +203,3 @@ When creating a new API key, or updating an existing one, you can set the expira
 + If you have an inactive key that you haven't yet deleted, you can restore it by updating the expiration time to a future time.
 + To create a permanent key, you can remove the expiration time.
 + If you attempt to deactivate an API key that has been used within the last 7 days, you'll be prompted to confirm that you want to make the change. If you are using the Amazon Location Service API, or the AWS CLI, you will receive an error, unless you set `ForceUpdate` parameter to true.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

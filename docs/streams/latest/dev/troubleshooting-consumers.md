@@ -149,7 +149,3 @@ This error occurs due to a known issue in the AWS SDK for Java that affects the 
 + [Why is my Kinesis data stream returning a 500 Internal Server Error?](https://aws.amazon.com/premiumsupport/knowledge-center/kinesis-data-stream-500-error/)
 + [How do I troubleshoot a blocked or stuck KCL application for Kinesis Data Streams?](https://aws.amazon.com/premiumsupport/knowledge-center/kcl-kinesis-data-streams/)
 + [Can I use different Amazon Kinesis Client Library applications with the same Amazon DynamoDB table?](https://aws.amazon.com/premiumsupport/knowledge-center/kinesis-kcl-apps-dynamodb-table/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

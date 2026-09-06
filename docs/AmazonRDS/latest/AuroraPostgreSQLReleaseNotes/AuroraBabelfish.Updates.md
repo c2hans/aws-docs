@@ -3229,7 +3229,3 @@ This release of Babelfish is provided with Aurora PostgreSQL 13.4. For more info
 #### Babelfish for Aurora PostgreSQL release 1.0.0, October 28, 2021
 <a name="AuroraBabelfish.Updates.100"></a>
 + Babelfish for Aurora PostgreSQL version 1.0.0 supports Babelfish 1.0.0 which extends your Amazon Aurora PostgreSQL database with the ability to accept database connections from Microsoft SQL Server clients. For more information, see see [Working with Babelfish for Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

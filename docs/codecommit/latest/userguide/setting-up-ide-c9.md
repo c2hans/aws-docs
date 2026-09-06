@@ -118,7 +118,3 @@ You can find the Clone URL for your repository in the CodeCommit console by choo
 <a name="setting-up-ide-c9-next"></a>
 
 For more information, see the [AWS Cloud9 User Guide](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html) and [CodeCommit sample for AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/sample-codecommit.html). For more information about using Git with CodeCommit, see [Getting started with Git and AWS CodeCommit](getting-started.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

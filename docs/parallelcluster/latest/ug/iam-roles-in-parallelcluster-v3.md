@@ -1539,7 +1539,3 @@ To use this option, make sure the [AWS ParallelClusteruser](#iam-roles-in-parall
 This parameter forces AWS ParallelCluster to attach the given IAM policy as a `PermissionsBoundary` to all IAM roles that are created as part of custom AMI build.
 
 See [`PermissionsBoundary` mode](#iam-roles-in-parallelcluster-v3-permissionsboundary-mode) for the list of policies required to use such functionality.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

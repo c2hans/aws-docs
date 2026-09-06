@@ -124,7 +124,3 @@ The options for handling error cases are listed in the following table.
 | Alerting | Set alert rule state to `Alerting` |
 | OK | Set alert rule state to `Normal` |
 | Error | Create an alert `DatasourceError` with the name and UID of the alert rule, and UID of the data source that returned no data as labels. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

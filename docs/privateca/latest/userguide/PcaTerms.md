@@ -156,7 +156,3 @@ A client that relies on a certificate validates that a path exists from the end-
 <a name="terms-pathlength"></a>
 
 The basic constraints *pathLenConstraint* for a CA certificate sets the number of subordinate CA certificates that may exist in the chain below it. For example, a CA certificate with a path length constraint of zero cannot have any subordinate CAs. A CA with a path length constraint of one may have up to one level of subordinate CAs underneath it. [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.9) defines this as, “the maximum number of non-self-issued intermediate certificates that may follow this certificate in a valid certification path." The path length value excludes the end-entity certificate, though informal language about the "length" or "depth" of a validation chain may include it...leading to confusion.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

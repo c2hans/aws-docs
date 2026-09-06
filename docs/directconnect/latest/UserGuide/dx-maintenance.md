@@ -77,7 +77,3 @@ You can also use the Network Resilience Agent, an open-source sample solution, t
 <a name="operations-maintenance-rescehedule"></a>
 
 Direct Connect devices are shared across multiple customers. Therefore, we do not accommodate specific requests for maintenance rescheduling or cancellation. Rescheduling or cancellation requests for one customer can negatively impact other customers using that endpoint. This can also pose a risk for mitigating availability or security issues in a timely manner.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

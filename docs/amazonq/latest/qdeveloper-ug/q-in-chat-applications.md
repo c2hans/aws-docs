@@ -69,7 +69,3 @@ Following are some examples of questions that you can ask Amazon Q from your con
 +  `@Amazon Q get the configuration for my lambda function {{name}}? `
 +  `@Amazon Q what is the size of the auto scaling group {{name}} in us-east-2?`
 +  `@Amazon Q can you show ec2 instances running in us-east-1?`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

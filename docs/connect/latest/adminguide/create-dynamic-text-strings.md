@@ -26,7 +26,3 @@ For example, if the contact in question has attributes "FirstName" and "LastName
 
 You can also use backticks (`) to resolve keys dynamically. For example, suppose you retrieve a customer's name from a Lambda function that returns FirstName and LastName values from your customer database. If the customer's preference for which name to use is stored in $.Attributes.NameToPlay, you can dynamically select the appropriate name by enclosing the dynamic key in backticks (`).
 + Hello $.External.['`$.Attributes.NameToPlay`'], thank you for calling.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

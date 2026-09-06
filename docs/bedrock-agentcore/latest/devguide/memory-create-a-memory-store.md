@@ -25,8 +25,8 @@ When creating an AgentCore Memory, consider the following factors to maintain it
 1. The AgentCore CLI memory commands must be run inside an existing agentcore project. If you don’t have one yet, create a project first:
 
    ```
-   agentcore create --name my-agent --no-agent
-   cd my-agent
+   agentcore create --project-name MemoryProject --no-agent
+   cd MemoryProject
    ```
 
     **Create** a basic memory (short-term only):
@@ -143,7 +143,3 @@ When creating an AgentCore Memory, consider the following factors to maintain it
 
 **Topics**
 + [Encrypt your Amazon Bedrock AgentCore Memory](storage-encryption.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

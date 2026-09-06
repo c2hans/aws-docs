@@ -59,7 +59,3 @@ You can register your device using the SageMaker AI console at [https://console.
    The **Devices** page displays the name of the device you have added, the fleet to which it belongs, when it was registered, the last heartbeat, and the description and AWS IoT name, if you provided one.
 
    Choose a device to view the device’s details, including the device name, fleet, ARN, description, IoT Thing name, when the device was registered, and the last heartbeat.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

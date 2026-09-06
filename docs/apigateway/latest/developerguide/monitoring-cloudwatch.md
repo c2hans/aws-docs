@@ -18,7 +18,3 @@ The metrics reported by API Gateway provide information that you can analyze in 
 + [View API Gateway metrics in the CloudWatch console](metrics_dimensions_view_in_cloud_watch.md)
 + [View API Gateway log events in the CloudWatch console](view-cloudwatch-log-events-in-cloudwatch-console.md)
 + [Monitoring tools in AWS for API Gateway](monitoring_automated_manual.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

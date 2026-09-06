@@ -74,7 +74,3 @@ Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20160603/us-east-1/ap
 To have an authorizer return an API key, set the `value` to `AUTHORIZER` in the previous `patchOperations` input.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

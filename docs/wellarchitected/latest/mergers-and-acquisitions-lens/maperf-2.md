@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 <a name="maperf02-bp04"></a>
 
  Cloud solutions architects should ideally build an architecture with the future in mind, meaning their solutions need to cater to current scale requirements as well as the anticipated growth of the solution. This growth can be either the organic growth of a solution, or it could be related to a merger and acquisition scenario where its size is increased dramatically within a short period of time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

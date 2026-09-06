@@ -14,7 +14,3 @@ The Amazon Interactive Video (IVS) Chat Client Messaging iOS SDK provides interf
 **Sample code:** See the iOS sample repository on GitHub: [https://github.com/aws-samples/amazon-ivs-chat-for-ios-demo](https://github.com/aws-samples/amazon-ivs-chat-for-ios-demo).
 
 **Platform requirements:** iOS 13.0 or greater is required for development.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

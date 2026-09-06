@@ -81,7 +81,3 @@ The following walkthrough demonstrates how to create an Aurora replica:
 1. View the new record on the instances page. Make sure that the **Status** changes to **available** and the **Replication role** changes to **reader**.
 
 For more information, see [Create an Amazon Aurora Read Replica from an RDS MySQL DB Instance](https://aws.amazon.com/blogs/aws/new-create-an-amazon-aurora-read-replica-from-a-mysql-db-instance) in the *Amazon Web Services News Blog*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -44,7 +44,3 @@ Known accuracy considerations:
 + Root-cause analysis for cost anomalies is investigative. The agent correlates cost trends from Cost Explorer with CloudTrail events during anomaly investigations to identify likely causes, but the identified root cause might not always be correct. Treat root-cause analysis as a starting point for investigation rather than a definitive conclusion.
 + Report generation creates charts and visualizations from cost data. Verify that charts accurately represent the underlying data, particularly for complex multi-dimensional breakdowns.
 + Optimization recommendations come from Cost Optimization Hub and Compute Optimizer. The agent summarizes and contextualizes these recommendations but does not generate its own optimization analysis.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS FinOps Agent (preview). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finops-agent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

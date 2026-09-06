@@ -33,7 +33,3 @@ This section describes how to configure your AWS services in Jira Service Manage
 
 **Note**
 You can use the AWS CloudFormation templates for the Connector for Jira Service Management to automate the AWS Config custom resource and AWS Security Hub CSPM integration features. For more information, refer to [Setting baseline permissions for AWS Service Management Connector for ServiceNow](sn-base-perms.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

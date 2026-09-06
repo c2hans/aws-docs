@@ -23,7 +23,3 @@ If your AWS account doesn’t have an EC2 instance profile or a service role, yo
 You can optionally create [user policies](concepts-roles-user.md) and apply them to IAM users and groups in your account. Doing so allows the users to create and manage Elastic Beanstalk applications and environments. You can also assign Elastic Beanstalk [managed policies](AWSHowTo.iam.managed-policies.md) for full access and read-only access to users or groups. For more information about these policies, see [Managing Elastic Beanstalk user policies](AWSHowTo.iam.managed-policies.md).
 
 You can create your own instance profiles and user policies for advanced scenarios. If your instances need to access services that aren't included in the default policies, you can create a new policy or add additional policies to the default one. If the managed policy is too permissive for your needs, you can also create more restrictive user policies. For more information about AWS permissions, see the [[IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/)]().
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

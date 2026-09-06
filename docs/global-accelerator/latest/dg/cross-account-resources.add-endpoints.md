@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/cross-accou
 # Add cross-account endpoints in AWS Global Accelerator
 <a name="cross-account-resources.add-endpoints"></a>
 
-Follow the steps in this section to add a cross-account endpoints using the Global Accelerator console.
+Follow the steps in this section to add cross-account endpoints using the Global Accelerator console.
 
 This section explains how to add cross-account endpoints by using the AWS Global Accelerator console. To learn about using API operations with Global Accelerator, see the [AWS Global Accelerator API Reference](https://docs.aws.amazon.com/global-accelerator/latest/api/Welcome.html).
 
@@ -21,10 +21,6 @@ This section explains how to add cross-account endpoints by using the AWS Global
 
    Note that only the resource types included in the cross-account attachment appear in the drop-down menu.
 
-1. For **Endpoint**, choose resource that you want to add.
+1. For **Endpoint**, choose the resource that you want to add.
 
    Note that only resources that are included in the cross-account attachment appear in the drop-down menu. To see resources that are not enabled by a cross-account attachment, clear the **Add a resource specified in a cross-account attachment** check box.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

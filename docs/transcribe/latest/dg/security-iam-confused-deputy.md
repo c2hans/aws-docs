@@ -19,7 +19,3 @@ If you want only one resource to be associated with the cross-service access, us
 The most effective way to protect against the confused deputy problem is to use the `aws:SourceArn` global condition context key with the **full ARN** of the resource. If you don’t know the full ARN, or if you're specifying multiple resources, use the `aws:SourceArn` global context condition key with wildcards (`*`) for the unknown portions of the ARN. For example, `arn:aws:transcribe::{{123456789012}}:*`.
 
 For an example of an assume role policy that shows how you can prevent a confused deputy issue, see [Confused deputy prevention policy](security_iam_id-based-policy-examples.md#confused-deputy-policy).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-la
 **Invest in Observability and Explainability** Implement OpenTelemetry tracing across the semantic stack to diagnose performance bottlenecks and understand query execution paths. Capture provenance metadata for all assertions, inferences, and entity resolutions. Provide citations and reasoning chains in agent responses to build user trust. Observability and explainability are not optional — they are foundational to operating trustworthy semantic AI in production.
 
 These best practices reflect lessons learned from semantic layer deployments across industries and ensure that your semantic data foundation delivers sustainable value while scaling with organizational maturity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

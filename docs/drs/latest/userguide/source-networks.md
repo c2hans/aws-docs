@@ -38,7 +38,3 @@ Use the **Actions** menu to perform various actions including:
 If you choose to make changes to the CloudFormation template, it cannot be reuploaded to AWS Elastic Disaster Recovery.
 + Manage tags – This option will open the **Manage tags** page which allows you to add or remove tags from your selected network resource.
 + Select S3 bucket – This option allows you to save network CFN stacks in your account’s Amazon S3 bucket. You must specify the S3 bucket before you initiate network replication. It is recommended that you employ [security best practices for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

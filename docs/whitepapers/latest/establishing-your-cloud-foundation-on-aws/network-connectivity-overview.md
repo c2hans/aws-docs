@@ -12,7 +12,3 @@ Connecting the underlying infrastructure is an essential piece of every workload
 Having a strong networking foundation and planning ahead on the underlying network helps organizations to deploy, manage, and establish controls on the network.
 
 Networking plays a critical role in the way organizations address their growing infrastructure needs, regional expansions, and redundancy plans. You can design, configure, and manage a cloud network to establish connectivity between your cloud, on-premises, and hybrid workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

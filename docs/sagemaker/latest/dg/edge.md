@@ -38,7 +38,3 @@ If you are a first time user of SageMaker Edge Manager, we recommend that you do
 1. **Read the [Getting Started](https://docs.aws.amazon.com/sagemaker/latest/dg/edge-manager-getting-started.html) section** - This section walks you through setting up your first edge packaging job and creating your first fleet.
 
 1. **Explore Edge Manager Jupyter notebook examples **- Example notebooks are stored in the [amazon-sagemaker-examples](https://github.com/aws/amazon-sagemaker-examples) GitHub repository in the [sagemaker\_edge\_manager](https://github.com/aws/amazon-sagemaker-examples/tree/master/sagemaker_edge_manager) folder.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

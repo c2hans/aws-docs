@@ -12,7 +12,3 @@ Before you can install Apache Livy on your Amazon EKS cluster, you must install 
 + **[Get started with Amazon EKS – eksctl](https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html) ** – Follow the steps to create a new Kubernetes cluster with nodes in Amazon EKS.
 + **[Select an Amazon EMR release label](docker-custom-images-tag.md)** – the Apache Livy is supported with Amazon EMR releases 7.1.0 and higher.
 + **[Install the ALB controller](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html)** – the ALB controller manages AWS Elastic Load Balancing for Kubernetes clusters. It creates an AWS Network Load Balancer (NLB) when you create a Kubernetes Ingress while setting up Apache Livy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

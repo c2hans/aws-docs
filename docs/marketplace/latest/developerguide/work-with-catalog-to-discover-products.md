@@ -171,7 +171,3 @@ The Discovery API is designed to integrate with enterprise procurement platforms
 
 **Note**
 The Discovery API provides the product and pricing data you need to build integrated procurement experiences. Combine it with your existing procurement workflows to streamline purchasing decisions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

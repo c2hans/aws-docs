@@ -376,7 +376,7 @@ The response includes the networking mode, configuration details, and VPC config
 ### Configuration immutability
 <a name="vpc-config-immutability"></a>
 
-Workflows use a snapshot of the configuration as it existed when the run started. You can safely modify or delete configurations during run execution without affecting active runs.
+Configuration resources are immutable—after you create a configuration, you cannot change its settings. To use different networking settings, create a new configuration. You cannot delete a configuration while it is in use by active workflow runs—the `DeleteConfiguration` request is rejected until those runs reach a terminal state.
 
 ### Call caching considerations
 <a name="vpc-call-caching"></a>
@@ -446,7 +446,3 @@ The following table lists the quotas for VPC networking configurations:
 | Elastic network interfaces per Region (customer VPC) | 5,000 | Yes |
 
 To request a quota increase, open the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home), choose **AWS services**, search for **AWS HealthOmics**, select the quota you want to increase, and choose **Request quota increase**. Quota increase requests are typically processed within 1-2 business days.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

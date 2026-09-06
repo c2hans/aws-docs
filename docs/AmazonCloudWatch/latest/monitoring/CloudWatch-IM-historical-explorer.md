@@ -23,7 +23,3 @@ Additional graphs show the monitored bytes transferred (for VPCs, Network Load B
 Note that when round-trip time (RTT) is aggregated across end-user locations, the value is weighted by the amount of your traffic that is driven by each client location. For example, with two client locations, one serving 90% of traffic with a 5 ms RTT, and the other serving 10% of traffic with a 10 ms RTT, the result is an aggregated RTT of 5.5 ms (which comes from 5 ms \* 0.9 \+ 10 ms \* 0.1).
 
 You can also explore the internet measurements that Internet Monitor stores for your monitored traffic by using CloudWatch tools or other methods. For more information, see [Exploring your data with CloudWatch tools and the Internet Monitor query interface](CloudWatch-IM-view-cw-tools.md). In addition, you can create CloudWatch alarms based on Internet Monitor data, for example, to notify you of health events. For more information, see [Create alarms with Internet Monitor](CloudWatch-IM-create-alarm.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

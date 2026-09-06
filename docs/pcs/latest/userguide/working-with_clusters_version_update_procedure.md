@@ -306,7 +306,3 @@ The following example updates a cluster from **23.11 to 25.11** using the Option
 
 **Note**
 Each controller hop must land on a version within the compatibility window of the previous one. To find valid intermediate versions, see [Version compatibility](working-with_clusters_version_update.md#version_update-cluster-compatibility). The fleet remains at zero through Steps 3a and 3b, so no intermediate AMI updates are required.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

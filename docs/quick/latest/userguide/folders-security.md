@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/folders-security.html
 ---
 
-# Permissions for Quick Sight shared folders
+# Permissions for Quick shared folders
 <a name="folders-security"></a>
 
-Shared folders have three permission levels. To set folder-level permissions for a user or group, see [Create and manage membership permissions for Quick Sight shared folders](sharing-folders.md).
+Shared folders have three permission levels. To set folder-level permissions for a user or group, see [Create and manage membership permissions for Quick shared folders](sharing-folders.md).
 + **Owners** - The folder *owner* owns everything (folders, analyses, dashboards, datasets, data sources, topics) inside of the folder. They can create, edit, and delete the assets in the folder, modify permissions on the folder and its assets, and delete the folder entirely. The owner role is not supported for restricted shared folders.
 + **Contributors** - A *contributor* can create, edit, and delete assets in a folder just like an owner. They can't delete the folder or modify permissions on the folder or on assets where they have contributor access that they inherited from the folder.
 + **Viewers** - A *viewer* can only view the assets (folders, dashboards, datasets, data sources, topics) in the folder. A viewer can't edit or share those assets.
@@ -20,8 +20,4 @@ The following rules also apply to security for shared folders:
 + The owner role is not supported for restricted folders. The contributor role is assigned to authors that create and edit assets within the restricted folders. Folder contributors can't manage the permissions of the restricted folder or its assets.
 + The correct IAM permissions are required to update the permissions of a restricted shared folder with the `UpdateFolderPermissions` API.
 
-To create and manage permissions of a shared folder, see [Create and manage membership permissions for Quick Sight shared folders](sharing-folders.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+To create and manage permissions of a shared folder, see [Create and manage membership permissions for Quick shared folders](sharing-folders.md).

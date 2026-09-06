@@ -20,7 +20,3 @@ After you publish your AWS Resilience Hub application, you are redirected to the
 1. After you are notified that the assessment report has been generated, choose the **Assessments** tab and your assessment to view the report.
 
 1. Choose the **Review** tab to view your application's assessment report.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

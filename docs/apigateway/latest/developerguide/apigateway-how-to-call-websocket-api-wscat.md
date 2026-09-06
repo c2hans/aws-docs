@@ -41,7 +41,3 @@ The `[wscat](https://www.npmjs.com/package/wscat)` utility is a convenient tool 
    For more information about JSONPath, see [JSONPath](https://goessner.net/articles/JsonPath/) or [JSONPath for Java](https://github.com/json-path/JsonPath).
 
 1. To disconnect from your API, enter `ctrl-C`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

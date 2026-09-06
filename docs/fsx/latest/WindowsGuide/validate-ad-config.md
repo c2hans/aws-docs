@@ -146,7 +146,3 @@ The `Domain Admins` group has a different name if the operating system is not in
    ```
 
    If you receive warnings or errors when you run the validation tool, refer to the Troubleshooting guide included in the validation tool package (`TROUBLESHOOTING.md`) and [Troubleshooting Amazon FSx](troubleshooting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

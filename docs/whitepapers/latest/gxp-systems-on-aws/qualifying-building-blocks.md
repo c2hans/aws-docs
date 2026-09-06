@@ -114,7 +114,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/qu
  The handover stage ensures that the cloud operation team is familiar with the new building block and is trained in any service specific operations. Once the operations team approves the new building block, the service can be approved by changing a Service Control Policy (SCP). The Infrastructure as Code template can be made available for use by adding it into the [Service Catalog](https://aws.amazon.com/servicecatalog) or other secure template repository.
 
  If the response to a risk was a SCP or Monitoring Rule change, then the process to deploy those changes are triggered at this stage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

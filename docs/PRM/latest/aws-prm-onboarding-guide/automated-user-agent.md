@@ -92,7 +92,3 @@ After configuring automated User Agent settings, verify the configuration:
 1. Check AWS CloudTrail logs to verify the User Agent string appears in the `userAgent` field
 
 1. Confirm the format matches exactly: `APN_1.1/pc_<YOUR-PRODUCT-CODE>$`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

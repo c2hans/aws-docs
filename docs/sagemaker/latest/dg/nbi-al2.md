@@ -119,7 +119,3 @@ The following table is a timeline for when AL1 entered its extended maintenance 
 <a name="nbi-al2-upgrade"></a>
 
 Your existing AL1 notebook instance is not automatically migrated to AL2023. To upgrade, you must create a new notebook instance with `notebook-al2023-v1`, replicate your code and environment, and delete your old notebook instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

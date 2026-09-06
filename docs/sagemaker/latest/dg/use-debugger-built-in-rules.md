@@ -16,7 +16,3 @@ In the following topics, you'll learn how to use the SageMaker Debugger built-in
 + [Example notebooks and code samples to configure Debugger rules](debugger-built-in-rules-example.md)
 
 For an advanced configuration of the Debugger built-in rules using the `CreateTrainingJob` API, see [Configure Debugger using SageMaker API](debugger-createtrainingjob-api.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

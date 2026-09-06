@@ -28,7 +28,3 @@ To assign a role to your private re:Post user, follow these steps:
 1. Choose **Edit role**, and then choose the role that you want to assign to the selected users.
 
 The selected users are assigned the role that you chose. Under the **Users** tab, the **Role** for these users is updated to the role that you chose.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

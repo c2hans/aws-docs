@@ -16,7 +16,3 @@ When integrating customer managed applications with an IAM Identity Center insta
 + [Single sign-on access to SAML 2.0 and OAuth 2.0 applications](customermanagedapps-saml2-oauth2.md)
 + [Setting up customer managed SAML 2.0 applications](customermanagedapps-saml2-setup.md)
 + [Enable AWS account access for customer managed applications](enable-account-access-customer-managed-apps.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

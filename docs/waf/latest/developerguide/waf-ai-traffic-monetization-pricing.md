@@ -91,7 +91,3 @@ The exact latency depends on blockchain network conditions at the time of settle
 Because AI traffic monetization relies on third-party blockchain settlement services, payment processing may occasionally fail for reasons outside of our control. Possible causes include temporary unavailability of the Coinbase Developer Platform's x402 facilitator service, blockchain network congestion, or transient errors during on-chain settlement. When payment processing fails, content is not served to the client. The client receives a response indicating the failure and can retry the request.
 
 Additionally, AWS might throttle excessively high volumes of payment traffic to protect the integrity of the payment processing infrastructure and prevent abuse. If throttled, payment requests receive an error response and should be retried after a brief backoff. Normal request volumes are not affected by throttling.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

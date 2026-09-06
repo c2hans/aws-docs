@@ -33,7 +33,3 @@ As part of your load-testing, validate these metrics and associated alerts, ensu
 <a name="fsirel08-bp05-monitor-ai-model-performance-and-drift"></a>
 
  Continuous monitoring should track key performance indicators against established baselines, with automated alerts for significant deviations and configurable thresholds with escalation procedures. Establish regular cadences for model evaluation using production data, comparing predictions against actual outcomes. Implement comprehensive logging systems that capture input data characteristics, prediction outputs, and environmental factors to facilitate root cause analysis when performance issues arise. For regulated applications, consider deploying parallel inference systems where both current and candidate models run simultaneously to compare outputs before deployment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

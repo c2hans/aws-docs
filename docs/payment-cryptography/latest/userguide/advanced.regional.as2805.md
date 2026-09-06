@@ -9,9 +9,6 @@ Australia Standard 2805 (AS2805) is a standard for electronic funds transfers us
 
 Part 6 provides guidance on key management including host-to-host (node-to-node) communication and relevant cryptographic requirements while other aspects are covered in other parts. All cryptography in this standard is currently based on TDES.
 
-**Note**
- AS2805 is currently available in the ap-southeast-2 Region. It will be rolled out to additional Regions in the near future.
-
 AS2805 has a number of differences compared to other implementations, which are summarized below.
 
 *Key Protection*
@@ -45,7 +42,3 @@ Given two nodes, node1 and node2, the following examples are from the perspectiv
 + [Exporting working keys](as2805.workingkeys.export.md)
 + [Pin Translation](as2805.pintranslation.md)
 + [Mac Generation and Validation](as2805.mac.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

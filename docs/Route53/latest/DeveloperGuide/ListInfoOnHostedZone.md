@@ -24,7 +24,3 @@ You can use the Amazon Route 53 console to list all of the hosted zones that yo
    **More than 2,000 hosted zones**
    + You can search for properties based on exact domain name, all properties, and type.
    + Search using the exact domain name for faster search results.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

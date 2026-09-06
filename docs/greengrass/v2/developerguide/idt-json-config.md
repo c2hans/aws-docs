@@ -242,7 +242,3 @@ To indicate that test runners must provide a `userdata.json` file:
 1. Edit the `userdata_schema.json` file to create a valid [IETF Draft v4 JSON Schema](https://json-schema.org/specification-links.html#draft-4).
 
 When IDT runs your test suite, it automatically reads the schema and uses it to validate the `userdata.json` file provided by the test runner. If valid, the contents of the `userdata.json` file are available in both the [IDT context](idt-context.md) and in the [test orchestrator context](idt-state-machine.md#state-machine-context).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

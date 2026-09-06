@@ -26,7 +26,3 @@ AWS Compute Optimizer provides the following APIs for data retrieval.
 | <a name="compute-optimizer-GetRDSDatabaseRecommendations"></a>[GetRDSDatabaseRecommendations](https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_GetRDSDatabaseRecommendations.html) | Get rds recommendations for the specified account(s) | List |
 | <a name="compute-optimizer-GetRecommendationPreferences"></a>[GetRecommendationPreferences](https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_GetRecommendationPreferences.html) | Get recommendation preferences | Read |
 | <a name="compute-optimizer-GetRecommendationSummaries"></a>[GetRecommendationSummaries](https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_GetRecommendationSummaries.html) | Get the recommendation summaries for the specified account(s) | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

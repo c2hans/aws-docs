@@ -104,7 +104,3 @@ Custom providers enable you to connect to any OAuth2-compatible resource server 
 For a detailed comparison of managed vs self-managed Lattice modes, see [Supported VPC egress modes](vpc-egress-private-endpoints.md#lattice-vpc-egress-compare-modes).
 
 After completing either configuration, AgentCore Identity securely stores your OAuth settings and provides an ARN you can reference in your agent code, enabling token requests without embedding sensitive credentials in your application. You can find this ARN in the properties page of the OAuth client (Choose the client name in the **Outbound Auth** section).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

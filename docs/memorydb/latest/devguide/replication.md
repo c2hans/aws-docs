@@ -19,7 +19,3 @@ Applications use the MemoryDB cluster's *cluster endpoint* to connect with the n
 MemoryDB clusters are regional and can contain nodes only from one Region. To improve fault tolerance, you must provision primaries and read replicas across multiple Availability Zones within that region.
 
 Using replication, which provides you with Multi-AZ, is strongly recommended for all MemoryDB clusters. For more information, see [Minimizing downtime in MemoryDB with Multi-AZ](autofailover.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

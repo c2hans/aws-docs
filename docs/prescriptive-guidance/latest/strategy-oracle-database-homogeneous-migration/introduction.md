@@ -20,7 +20,3 @@ The paper includes services and tools provided by AWS as well as migration solut
 Selecting the most appropriate migration approach depends on several factors related to the database environment, including database version, size, and specific workload requirements. You can choose a migration strategy that aligns optimally with your operational needs and that minimizes disruption during the transition. This strategic flexibility is essential for ensuring that the migration process is efficient and tailored to your unique demands.
 
 The goal of this document is to assist organizations that are in their initial phases of migrating Oracle workloads to AWS. It introduces migration options so you can choose the migration path for each of your workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

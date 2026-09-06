@@ -22,7 +22,3 @@ Follow the steps in the [QuickStart for .NET Core on Linux](dotnet-linux-quickst
 + [Using the Elastic Beanstalk .NET core on Linux platform](dotnet-linux-platform.md)
 + [The AWS Toolkit for Visual Studio - Working with .Net Core on Elastic Beanstalk](dotnet-toolkit-linux.md)
 + [Migrating from .NET on Windows Server platform to the .NET Core on Linux platform on Elastic Beanstalk](dotnet-linux-migration.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -67,7 +67,3 @@ The local gateway supports only IPv4 traffic. It does not support IPv6.
 The following image shows the connectivity through the local gateway:
 
 ![Shows local gateway connections.](http://docs.aws.amazon.com/outposts/latest/userguide/images/outpost-rack-local-gateway-connection-Nov-23.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

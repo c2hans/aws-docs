@@ -130,7 +130,3 @@ aws ram create-resource-share \
 1. Select the penetration test that you need to add VPC configuration for, and then choose **Modify pentest details**
 
 1. Update the penetration test to use the shared VPC resources
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

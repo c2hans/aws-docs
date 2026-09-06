@@ -427,7 +427,3 @@ Before you can send an email using Amazon SES, you must verify the address or do
 After verify-email-identity is called, the email address will receive a verification email. The user must click on the link in the email to complete the verification process.
 For more information, see Verifying Email Addresses in Amazon SES in the *Amazon Simple Email Service Developer Guide*.
 +  For API details, see [VerifyEmailIdentity](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ses/verify-email-identity.html) in *AWS CLI Command Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -118,7 +118,3 @@ The following external linters are available:
 The following list describes the distinction between built-in and external linters:
 + **Built-in linters** – Run server-side during `CreateWorkflow` and `CreateWorkflowVersion`. For WDL, findings are blocking. For Nextflow DSL2, findings are non-blocking. Apply to WDL and Nextflow DSL2 workflows only.
 + **External linters** – Run locally before workflow creation. Can include additional HealthOmics-specific compatibility rules. Available as public Amazon ECR images.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

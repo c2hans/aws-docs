@@ -32,7 +32,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
  Migration Evaluator service analyzes an enterprise’s compute footprint, including server conﬁguration, utilization, annual costs to operate, eligibility for bring-your-own-license, and hundreds of other parameters. It then statistically models utilization patterns, matching each workload with optimized placements in EC2 and Amazon Elastic Block Store (Amazon EBS). Finally, it outputs a business case with a comparison of the current-state against multiple future-state conﬁgurations showing the ﬂexibility of AWS.
 
  For more information, see [Migration Evaluator](https://aws.amazon.com/migration-evaluator/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

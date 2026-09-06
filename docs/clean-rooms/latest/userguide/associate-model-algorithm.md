@@ -179,7 +179,3 @@ acr_client.create_configured_table_association_analysis_rule(
 Because configured model algorithm associations are immutable, we recommend that training data providers who wants to allowlist models for use to use wild cards in `allowedAdditionalAnalyses` during the first few iterations of custom model configuration. This allows model providers to iterate on their code without requiring other training providers to re-associate before training their updated model code with data.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

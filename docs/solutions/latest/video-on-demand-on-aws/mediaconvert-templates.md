@@ -24,7 +24,3 @@ By default, the solution is configured to leverage Quality-Defined Variable Bitr
 You can also modify the solution to use different QVBR settings, other system job templates, or your own custom job templates. For more information about working with job templates for MediaConvert, refer to [Working with MediaConvert Job Templates](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-job-templates.html). For more information about QVBR Mode, refer to [Using the QVBR Rate Control Mode](https://docs.aws.amazon.com/mediaconvert/latest/ug/cbr-vbr-qvbr.html).
 
 If you set the solution to ingest source videos and metadata files, you can specify the template using the **JobTemplate** field in your metadata file. For more information, refer to [Metadata file](metadata-file.md). Or, you can replace the default templates in the Input Validate AWS Lambda function by modifying the `MediaConvert_Template_` {{<resolution>}} environment variables.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Video on Demand on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,3 @@ Resource matching links resources based on the healthcare identifiers present in
 + [Querying linked data](resource-matching-querying.md)
 + [Tracking linkage history](resource-matching-tracking-history.md)
 + [Enable resource matching](resource-matching-enabling.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

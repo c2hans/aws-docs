@@ -93,7 +93,3 @@ Similar to an entity, a relationship has a type, which identifies the types of e
 The time window that is used to scope the data displayed on profiles.
 The default scope time for a finding reflects the first and last times when the suspicious activity was observed.
 The default scope time for an entity profile is the previous 24 hours.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

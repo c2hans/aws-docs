@@ -73,7 +73,3 @@ Yes, just-in-time node access supports requesting access to and starting session
 A blank screen can have more than one cause. If you access the Systems Manager console through an interface Amazon VPC endpoint with private DNS enabled, your browser might apply its Local Network Access policy. This policy can block the request. The request is also missing from your AWS CloudTrail event history, because your browser stops it before it reaches AWS. For details and workarounds, see [Allowing local network access in your browser](systems-manager-just-in-time-node-access-start-session.md#just-in-time-node-access-local-network-access).
 
 Otherwise, verify that an approval policy applies to the node and that you have the permissions required to create access requests. For more information, see [What happens if there isn't an approval policy that applies to a node?](#no-policy-error) and [Setting up just-in-time access with Systems Manager](systems-manager-just-in-time-node-access-setting-up.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

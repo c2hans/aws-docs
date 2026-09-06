@@ -54,7 +54,3 @@ Using Quick Setup for OpsCenter, you can assign a delegated administrator accoun
 <a name="setting_up_delegated_administrator_quick_setup"></a>
 
 Quick Setup helps you to quickly configure frequently used AWS services and features with recommended best practices. You can configure a delegated administrator account for Quick Setup to help you deploy and manage configurations across accounts and Regions using AWS Organizations. A delegated administrator for Quick Setup can create, update, view, and delete configuration manager resources in your organization. Systems Manager registers a delegated administrator for Quick Setup as part of the setup process for the integrated console experience. For more information, see [Setting up Systems Manager unified console for an organization](systems-manager-setting-up-organizations.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

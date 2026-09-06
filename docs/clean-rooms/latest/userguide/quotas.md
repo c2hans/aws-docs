@@ -14,7 +14,3 @@ To request a quota increase, see [Requesting a Quota Increase](https://docs.aws.
 **Topics**
 + [AWS Clean Rooms quotas](clean-rooms-quotas.md)
 + [AWS Clean Rooms ML quotas](clean-rooms-ml-quotas.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

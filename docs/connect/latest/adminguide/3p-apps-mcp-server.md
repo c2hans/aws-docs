@@ -46,7 +46,3 @@ To add the supported version, edit the gateway in Amazon Bedrock AgentCore. In *
 
 1. If the integration was successfully created, you will be sent to the **View integration** page where you will see a success banner and the integration summary.
 ![The View integration page showing a success banner after integrating an MCP server.](http://docs.aws.amazon.com/connect/latest/adminguide/images/3p-apps-mcp-success.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

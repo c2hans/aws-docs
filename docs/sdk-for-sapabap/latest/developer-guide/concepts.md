@@ -147,7 +147,3 @@ A map is one of the very few cases where AWS SDK uses a true structure, rather 
 The [API classes](#api-classes) described in the preceding section precisely mirror the AWS service APIs and represent those APIs as familiar ABAP classes. In some cases, the SDK also includes higher level functions that build on top of the API classes to simplify certain operations. The higher level functions are included for programmer convenience and do not replace the lower-level API classes.
 
 If the SDK includes higher level functions for a module, they are included in the same transport and can be access through a factory class called `/AWS1/CL_TLA_L2_FACTORY`. The factory class includes methods to create various higher level clients for the module that are documented along with the rest of the API with the [API documentation](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for SAP ABAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-sapabap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

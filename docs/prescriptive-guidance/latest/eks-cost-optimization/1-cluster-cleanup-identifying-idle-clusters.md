@@ -33,7 +33,3 @@ Before deleting an idle cluster, verify these items:
 For the complete scripts and manifests, see the [01-idle-cluster-cleanup](https://github.com/aws-samples/sample-eks-cost-optimization-guide/tree/main/01-idle-cluster-cleanup) folder in the code repository.
 
 The cheapest resource is the one you don't run. Eliminating idle clusters delivers immediate savings with zero risk to active applications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

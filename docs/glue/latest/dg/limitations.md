@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/limitations.html
 ## Multiple integrations limitations
 <a name="multiple-integrations-limitations"></a>
 +  If you need to replicate the same source with different schema unnest/partition configurations, it is required to create a new AWS Glue database for each integration separately. Later invoke CreateIntegrationTableProperty for each table from individual AWS Glue Database with desired schema unnesting and partitioning configurations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

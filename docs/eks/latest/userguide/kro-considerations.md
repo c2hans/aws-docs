@@ -197,7 +197,3 @@ For detailed information on using kro:
 +  [Troubleshoot issues with kro capabilities](kro-troubleshooting.md) - Troubleshoot kro issues
 +  [ACK concepts](ack-concepts.md) - Learn about ACK resources for composition
 +  [Working with Argo CD](working-with-argocd.md) - Deploy RGDs and instances with GitOps
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

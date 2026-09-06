@@ -91,10 +91,6 @@ Your integration should handle the complete lifecycle of delegation requests, in
 After you obtain temporary credentials, orchestrate the necessary workflows to configure resources in the customer's AWS account. This might include:
 + Calling AWS service APIs directly to create and configure resources
 + Deploying infrastructure using AWS CloudFormation templates
-+ Creating IAM roles for ongoing access (requires using permission boundaries)
++ Creating IAM roles for ongoing access (requires using permission boundaries). As a defense-in-depth measure, we recommend that you use dynamic role names, for example, a name with a randomly generated suffix. This approach makes the role name in each customer account unique and unpredictable.
 
 Your orchestration logic should be idempotent and handle failures gracefully, as customers might need to retry or modify their delegation approvals.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

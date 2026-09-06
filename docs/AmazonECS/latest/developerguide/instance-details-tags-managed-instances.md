@@ -60,7 +60,3 @@ Customers are allowed to add tags directly to the EC2 instances, but those tags 
 You can also tag or untag the capacity provider using [Adding tags to existing resources (AWS CLI)](tag-resources-console.md#tag-resources-api-sdk) or [Adding tags to existing resources (Amazon ECS console)](tag-resources-console.md#adding-or-deleting-tags)
 
 For more information about Amazon ECS Managed Instances capacity providers, see [Amazon ECS Managed Instances capacity providers](managed-instances-capacity-providers-concept.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

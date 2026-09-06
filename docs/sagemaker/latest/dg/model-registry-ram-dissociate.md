@@ -26,7 +26,3 @@ aws ram delete-resource-share --resource-share-arn {{<resource-share-arn>}}
 <a name="model-registry-ram-dissociate-ram"></a>
 
 For more details about how to dissociate principals from a resource share, see [Update a Resource Share](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-update.html) in the [AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html) documentation. For more details about how to delete a resource share, see [Deleting a resource share](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-delete.html) in the [AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html) documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

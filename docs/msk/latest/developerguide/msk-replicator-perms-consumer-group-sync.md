@@ -98,7 +98,3 @@ When the target is a non-MSK cluster, consumer group offset sync requires the fo
 | `${replicatedTopicPattern}` | Topic | LITERAL or PREFIXED | Describe | Log end offset (ListOffsets) |
 | `${consumerGroupPattern}` | Group | LITERAL or PREFIXED | Describe | FindCoordinator, DescribeGroup |
 | `${consumerGroupPattern}` | Group | LITERAL or PREFIXED | Read | Commit translated offsets (OffsetCommit) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

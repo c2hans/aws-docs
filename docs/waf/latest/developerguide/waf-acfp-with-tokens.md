@@ -16,7 +16,3 @@ We highly recommend implementing the application integration SDKs, for the most 
 For more information about the rule group capabilities see [AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group](aws-managed-rule-groups-acfp.md).
 
 For information about the SDKs, see [Client application integrations in AWS WAF](waf-application-integration.md). For information about AWS WAF tokens, see [Token use in AWS WAF intelligent threat mitigation](waf-tokens.md). For information about the rule actions, see [CAPTCHA and Challenge in AWS WAF](waf-captcha-and-challenge.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

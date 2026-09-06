@@ -15,7 +15,3 @@ The decommissioning process should be documented and include guidance on the req
 + A method for determining if any assets or data within the environment should be retained.
 + Applying restrictive controls on the isolated resource environment for a period of time to prevent the use of the resources but allow a recovery process, if necessary.
 + A process or automation for disabling resources or deleting data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

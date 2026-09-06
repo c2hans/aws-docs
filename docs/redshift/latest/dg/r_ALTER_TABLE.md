@@ -343,7 +343,7 @@ A clause that turns on or off row-level security for a relation.
 When row-level security is turned on for a relation, you can only read the rows that the row-level security policy permits you to access. When there isn't any policy granting you access to the relation, you can't see any rows from the relation. Only superusers and users or roles that have the `sys:secadmin` role can set the ROW LEVEL SECURITY clause. For more information, see [Row-level security](t_rls.md). This statement is supported on the connected database or on a database with amazon redshift federated permissions. FOR DATASHARES clause is not supported on a database with Amazon Redshift federated permissions.
 + [ CONJUNCTION TYPE { AND \| OR } ]
 
-  A clause that allows you to choose the conjunction type of row-level security policy for a relation. When multiple row-level security policies are attached to a relation, you can combine the policies with the AND or OR clause. By default, Amazon Redshift combines RLS policies with the AND clause. Superusers, users, or roles that have the `sys:secadmin` role can use this clause to define the conjunction type of row-level security policy for a relation. For more information, see [Combining multiple policies per user](t_rls_combine_policies.md).
+  A clause that you use to choose the conjunction type of row-level security policy for a relation. When multiple row-level security policies are attached to a relation, you can combine the policies with the AND or OR clause. By default, Amazon Redshift combines RLS policies with the AND clause. Superusers, users, or roles that have the `sys:secadmin` role can use this clause to define the conjunction type of row-level security policy for a relation. For more information, see [Combining multiple policies per user](t_rls_combine_policies.md).
 + FOR DATASHARES
 
   A clause that determines whether an RLS-protected relation can be accessed over datashares. By default, an RLS-protected relation can’t be accessed over a datashare. An ALTER TABLE ROW LEVEL SECURITY command run with this clause only affects the relation’s datashare accessibility property. The ROW LEVEL SECURITY property isn’t changed.
@@ -360,7 +360,3 @@ For examples that show how to use the ALTER TABLE command, see the following.
 + [ALTER TABLE examples](r_ALTER_TABLE_examples_basic.md)
 + [ALTER EXTERNAL TABLE examples](r_ALTER_TABLE_external-table.md)
 + [ALTER TABLE ADD and DROP COLUMN examples](r_ALTER_TABLE_COL_ex-add-drop.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops-11.
 + [OPS11-BP07 Perform operations metrics reviews](ops_evolve_ops_metrics_review.md)
 + [OPS11-BP08 Document and share lessons learned](ops_evolve_ops_share_lessons_learned.md)
 + [OPS11-BP09 Allocate time to make improvements](ops_evolve_ops_allocate_time_for_imp.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -95,7 +95,3 @@ The parts are delimited by a double quotation mark (") and a specified escape ch
 <a name="sql-reference-substring-notes"></a>
 + Amazon Kinesis Data Analytics streaming SQL doesn't support the optional 'USING CHARACTERS \| OCTETS' clause defined in SQL:2008. USING CHARACTERS is simply assumed.
 + The second and third forms of the SUBSTRING function listed preceding (using a regular expression, and using commas rather than FROM...FOR) are not part of the SQL:2008 standard. They are part of the streaming SQL extension to Amazon Kinesis Data Analytics.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

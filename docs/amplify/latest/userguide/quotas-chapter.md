@@ -27,7 +27,3 @@ The Service Quotas console provides information about the quotas for your accoun
 | Webhooks per app | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/amplify/quotas/L-4113FC04)  | The maximum number of webhooks per app that you can create in this account in the current Region. |
 
 For more information about Amplify service quotas, see [AWS Amplify endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/amplify.html) in the *AWS General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

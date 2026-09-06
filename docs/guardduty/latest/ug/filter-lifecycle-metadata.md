@@ -20,7 +20,3 @@ An integer that counts how many times you have modified the filter. It starts at
 
 **Note**
 These lifecycle metadata fields are read-only. The CreateFilter and UpdateFilter operations do not accept these fields as input, and their responses do not include these fields. To view lifecycle metadata, call GetFilter.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

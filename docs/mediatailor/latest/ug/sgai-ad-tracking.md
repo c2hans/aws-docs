@@ -14,7 +14,3 @@ For details about how SGAI server-side beaconing works, see [Server-side trackin
 Client-side tracking
 Add `aws.reportingMode=CLIENT` to your session initialization request. The asset list response includes a `TRACKING` section with beacon URLs that the player fires during ad playback. The `GetTracking` API endpoint is *not* used for SGAI sessions. Instead, each asset list response includes tracking data directly. The tracking data uses the same JSON schema as the server-side ad insertion (SSAI) tracking response.
 For details, see [Server-guided ad insertion](ad-reporting-client-side.md#ad-reporting-client-side-best-practices-sgai).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

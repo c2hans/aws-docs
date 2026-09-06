@@ -44,7 +44,3 @@ Perform these steps on both Conductor nodes.
    The primary Conductor node now has all the configuration information about the cluster. This means that when you add worker nodes back into the cluster, all the information about redundancy groups, for example, is present on the primary Conductor node. You don't have to set it up again.
 
 1. If you moved custom files to a safe location as part of your preparation, you can now copy these files back to their original location.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -479,7 +479,3 @@ This section links to resources about use case or industry-specific AWS IoT serv
   Explore videos that will help you better use and understand the available AWS IoT services.
 
   [Watch the videos](https://aws.amazon.com/architecture/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=content-type%23video&awsf.methodology=*all&awsf.tech-category=tech-category%23iot&awsf.industries=*all&awsf.business-category=*all)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Decision Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query decision-guides` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

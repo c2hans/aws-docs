@@ -14,7 +14,3 @@ To help protect against ransomware, semiconductor companies must be vigilant to 
 + [eBook: Protecting your AWS environment from ransomware](https://d1.awsstatic.com/psc-digital/2022/gc-200/security-ransomware-ebook/Security-Ransomware-eBook.pdf) (AWS eBook)
 + [The anatomy of ransomware event targeting data residing in Amazon S3](https://aws.amazon.com/blogs/security/anatomy-of-a-ransomware-event-targeting-data-in-amazon-s3/) (AWS Security blog post)
 + [Ransomware Risk Management on AWS Using the NIST Cyber Security Framework (CSF)](https://docs.aws.amazon.com/whitepapers/latest/ransomware-risk-management-on-aws-using-nist-csf/ransomware-risk-management-on-aws-using-nist-csf.html) (AWS whitepaper)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

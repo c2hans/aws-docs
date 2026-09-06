@@ -101,7 +101,3 @@ If outbound internet access is not available, consider using Amazon S3 or Amazon
 1. Verify the model ID exists by visiting `https://huggingface.co/<org>/<model>` in your browser.
 
 1. Ensure the `modelId` in your InferenceEndpointConfig is in the correct `org/model` format (for example, `mistralai/Mistral-7B-Instruct-v0.3`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

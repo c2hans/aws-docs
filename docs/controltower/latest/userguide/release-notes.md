@@ -18,7 +18,3 @@ Features and releases are listed in reverse chronological order (most recent fir
 + [January - December 2021](2021-all.md)
 + [January - December 2020](2020-all.md)
 + [June - December 2019](2019-all.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

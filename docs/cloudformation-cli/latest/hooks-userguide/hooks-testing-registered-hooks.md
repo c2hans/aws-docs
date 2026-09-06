@@ -20,7 +20,3 @@ Each handler and target is tested twice. Once for `SUCCESS` and once for `FAILED
 + For `IN_PROGRESS` response case:
   + Must not return an error code.
   + `Result` field must not be set in response.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

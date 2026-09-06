@@ -64,7 +64,3 @@ The cloud enables precise tracking of resource usage and costs per workload, whi
 + Set up detailed usage analysis by configuring WorkSpaces Applications usage reports, using [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html) to query usage data, and creating visualizations in [Amazon Quick](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) for cost and usage insights.
 + Evaluate total cost considerations such as Windows Server licensing, application licensing models, and per-user licensing compared with per-device licensing.
 + Use Amazon Athena to query and analyze home folder storage costs and usage patterns by user. For more information, see the AWS blog post [How to report Amazon WorkSpaces Applications home folder use with Amazon Athena](https://aws.amazon.com/blogs/desktop-and-application-streaming/how-to-report-amazon-appstream-2-0-home-folder-use-with-amazon-athena/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

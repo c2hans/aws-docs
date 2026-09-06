@@ -393,7 +393,3 @@ You have authorization to perform security testing on all target domains
 
 **Note**
 After the penetration test starts, you can monitor its progress from the **Penetration test runs** section. The test can take several hours to complete, depending on the scope and complexity of your application. If you set a maximum task-hours limit, AWS Security Agent stops the test when it reaches that limit. AWS Security Agent preserves the findings discovered so far.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

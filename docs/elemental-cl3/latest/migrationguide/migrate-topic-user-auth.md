@@ -36,7 +36,3 @@ This procedure involves working with two users (that should already exist in the
 1. Verify that enabling has succeeded. Enabling succeeds only if the *elemental* user on the primary Conductor and on the worker node have the same password. The lock icon might not be a valid indicator that user authentication succeeded on a worker node.
 
    If your organization has the policy of setting a different *elemental* password on every node, you must repeat this process. Each time that you display the **Enter the SSH credentials to access nodes page**, enter the password for another worker node, until you have set up all the worker nodes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

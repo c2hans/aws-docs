@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/realtimeguide/rea
 
 If you're looking for a game server solution for your multiplayer game, but you don't want to expend the time and resources to develop, test, and deploy a fully custom game server, consider using Amazon GameLift Servers Realtime. Realtime servers are lightweight, ready-to-go game servers that Amazon GameLift Servers provides for you.
 
-**Amazon GameLift Servers Realtimekey features**
+**Amazon GameLift Servers Realtime key features**
 + Full network stack for game client and server interaction
 + Core game server functionality
 + Customizable server logic
@@ -22,7 +22,3 @@ Setting up your game to use Realtime servers involves these tasks:
 + Deploy a fleet of hosting resources with Realtime servers configured for your game.
 + Create a simple backend service that your game client can use to find or start game sessions on your Realtime servers.
 + Add functionality to your game client (using provided APIs) to request a game session, connect to it, and play the game.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

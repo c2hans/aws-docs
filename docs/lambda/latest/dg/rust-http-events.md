@@ -69,7 +69,3 @@ For another example of how to use `lambda_http`, see the [http-axum code sample]
 + [Lambda HTTP events](https://github.com/aws/aws-lambda-rust-runtime/tree/main/examples/http-basic-lambda): A Rust function that handles HTTP events.
 + [Lambda HTTP events with CORS headers](https://github.com/aws/aws-lambda-rust-runtime/blob/main/examples/http-cors): A Rust function that uses Tower to inject CORS headers.
 + [Lambda HTTP events with shared resources](https://github.com/aws/aws-lambda-rust-runtime/tree/main/examples/basic-shared-resource): A Rust function that uses shared resources initialized before the function handler is created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -115,7 +115,3 @@ The following are the permissions available for a LF-Tag creator role:
 | Grant with LF-Tag expression | A principal with this permission on a LF-Tag can grant permissions on a Data Catalog resources using the LF-Tag key and values. Granting Grant with LF-Tag expression implicitly grants Describe. |
 
 These permissions are grantable. A principal who has been granted these permissions with the grant option can grant them to other principals.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

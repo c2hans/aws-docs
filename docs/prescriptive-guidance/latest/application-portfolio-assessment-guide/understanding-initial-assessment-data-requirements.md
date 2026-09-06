@@ -254,7 +254,3 @@ After you have selected and procured a discovery tool, consider the following qu
 + What is the network security zones outline? Are network diagrams available?
 + What is the process for requesting firewall rules in the data centers?
 + What are the current support service-level agreements (SLAs) in relation to data center operations (discovery tool installation, firewall requests)?
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

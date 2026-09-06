@@ -139,7 +139,3 @@ The following table lists changes prior to December, 2021.
 | SQL database | `SQLi_URIPATH` | The rules now check the message URI. | 2020-01-23 |
 | SQL database | `SQLi_BODY`<br />`SQLi_QUERYARGUMENTS`<br />`SQLi_COOKIE` | Updated text transformations. | 2019-12-20 |
 | Core rule set (CRS) | `CrossSiteScripting_URIPATH`<br />`CrossSiteScripting_BODY`<br />`CrossSiteScripting_QUERYARGUMENTS`<br />`CrossSiteScripting_COOKIE` | Updated text transformations. | 2019-12-20 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

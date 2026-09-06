@@ -103,7 +103,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user
 <a name="clean-up-the-environment-1"></a>
 
  When users have finished their work or when the account limits are reached, they (or the administrator) can end the AWS resources. Administrators can also delete the IAM users. If an instance of SSO was created for the users to log in, the directory should be disabled. The users will lose their work unless they take steps to save it (a procedure that is beyond the scope of this whitepaper).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

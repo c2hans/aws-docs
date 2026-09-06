@@ -30,7 +30,3 @@ For sample commands, see the [cloudwatch-right-sizing-metrics.sh](https://github
 Deploy VPA in `"Off"` mode first to collect recommendations for 7 days, then right-size requests to p95 usage \+ 20% buffer. Combine with HPA to scale horizontally at 70% utilization, this keeps pods lean while handling traffic spikes.
 
 **Key takeaway:** Over-provisioned requests are invisible waste, they don't show up as errors or alerts, but they force extra nodes to exist. Right-sizing is often the single biggest cost win within an active cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

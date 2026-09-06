@@ -83,7 +83,3 @@ The `X-Amz-Algorithm`, `X-Amz-Credential`, `X-Amz-SignedHeaders`, and `X-Amz-Sig
 |  `SecurityToken`  | The temporary security token obtained through a call to AWS Security Token Service.<br />Example: `AQoEXAMPLEH4aoAH0gNCAPyJxz4BlCFFxWNE1OPTgk5TthT+FvwqnKwRcOIfrRh3c/L` | No |
 
 Parameter values must be URL-encoded. This is true for any Query parameter passed to Amazon EC2 and is typically necessary in the `Signature` parameter. Some clients do this automatically, but this is not the norm.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

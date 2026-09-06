@@ -133,7 +133,3 @@ When designing serverless AI architecture, keep in mind the following key design
 + **Latency** – Leverage Lambda@Edge, provisioned concurrency, or async inference.
 + **Modularity** – Design pipelines using event triggers and isolated functions for each task.
 + **Reusability** – Parameterize prompts, use shared Lambda layers, and decouple logic by using Step Functions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

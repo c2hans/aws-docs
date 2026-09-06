@@ -62,7 +62,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-a
  You can [deploy Amazon SageMaker AI trained models](https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html) into production with a few clicks and easily scale them across a fleet of fully managed EC2 instances. You can choose from multiple EC2 instance types and attach cost-effective [GPU-powered inference acceleration](https://docs.aws.amazon.com/sagemaker/latest/dg/ei.html). After the models are deployed, Amazon SageMaker AI can [monitor key model metrics](https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-overview.html) for inference accuracy and detect any concept drift.
 
  Amazon SageMaker AI provides native integrations with AWS services in the storage and security layers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ When executing operations, the SDK uses your credentials to create a digital sig
 Waiters are a feature of the SDK that make it easier to work with operations that change the state of a resource and that are *eventually consistent* or *asynchronous* in nature. For example, the Amazon DynamoDB`CreateTable` operation sends a response back immediately, but the table may not be ready to access for several seconds. Executing a waiter allows you to wait until a resource enters into a particular state by sleeping and polling the resource’s status. Waiters are accessed using the `waitUntil()` method of the client. See the [Waiters in the AWS SDK for PHP Version 3](guide_waiters.md) guide for more details.
 
 For the latest AWS terminology, see the [AWS Glossary](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html) in the AWS General Reference.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for PHP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-php` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

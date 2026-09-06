@@ -50,7 +50,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/iot-edge
 +  Configure and deploy the IP detector component in AWS IoT Greengrass to make sure that the core device's IP addresses are included in the subject alternative name (SAN) field of the MQTT broker certificate. The subject alternative name (SAN) plays a critical role in the server name verification on the TLS client end. It helps the TLS client make sure that it connects to the correct server and helps avoid man-in-the-middle attacks during TLS session setup.
 
  For more information, see [Set up and troubleshoot AWS IoT Greengrass with client devices](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-and-troubleshoot-aws-iot-greengrass-with-client-devices.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -44,7 +44,3 @@ cfn-get-metadata --access-key {{access.key}} \
 |  `--access-key`  | AWS Access Key for an account with permission to call DescribeStackResource on CloudFormation.<br />*Type*: String<br />Condition: The credential file parameter supersedes this parameter. | Conditional |
 |  `--secret-key`  | AWS Secret Key that corresponds to the specified AWS Access Key.<br />*Type*: String<br />Condition: The credential file parameter supersedes this parameter. | Conditional |
 |  `-f, --credential-file`  | A file that contains both a secret key and an access key.<br />*Type*: String<br />Condition: The credential file parameter supersedes the --access-key and --secret-key parameters. | Conditional |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

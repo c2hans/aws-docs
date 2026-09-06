@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 + [Scenario 4: Windows server and file services migration](scenario-4-windows-server-and-file-services-migration.md)
 + [Scenario 5: Windows-based infrastructure modernization](scenario-5-windows-based-infrastructure-modernization.md)
 + [Scenario 6: High availability and disaster recovery for Windows workloads on AWS](scenario-6-high-availability-and-disaster-recovery-for-windows-workloads-on-aws.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

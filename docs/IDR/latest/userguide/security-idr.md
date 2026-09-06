@@ -30,7 +30,3 @@ AWS Identity and Access Management (IAM) is a web service that helps you securel
 <a name="idr-sec-alarms"></a>
 
 By default, Incident Detection and Response receives the Amazon resource name (ARN) and state of every CloudWatch alarm in your account and then starts the incident detection and response process when your onboarded alarm changes into the ALARM state. If you would like to customize what information incident detection and response receives about alarms from your account, contact your Technical Account Manager.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

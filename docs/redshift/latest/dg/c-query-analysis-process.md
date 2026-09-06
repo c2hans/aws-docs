@@ -26,7 +26,3 @@ If a query is taking longer than expected, use the following steps to identify a
 1. Use the [SVL\_QUERY\_SUMMARY](r_SVL_QUERY_SUMMARY.md) and [SVL\_QUERY\_REPORT](r_SVL_QUERY_REPORT.md) views to get summary information and use it to optimize the query. For more information, see [Analyzing the query summary](c-analyzing-the-query-summary.md).
 
 Sometimes a query that should run quickly is forced to wait until another, longer-running query finishes. In that case, you might have nothing to improve in the query itself, but you can improve overall system performance by creating and using query queues for different types of queries. To get an idea of queue wait time for your queries, see [Reviewing queue wait times for queries](review-queue-wait-times-for-queries.md). For more information about configuring query queues, see [Workload management](cm-c-implementing-workload-management.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

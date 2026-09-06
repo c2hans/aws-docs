@@ -280,7 +280,3 @@ The following table describes important changes in each release of Amazon Bedroc
 | [Region expansion](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-service.html#bedrock-regions) | Amazon Bedrock is now available in Europe (Frankfurt) (eu-central-1). For information on endpoints, see [Amazon Bedrock endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/bedrock.html).  | October 19, 2023 |
 | [Region expansion](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html#bedrock-regions) | Amazon Bedrock is now available in Asia Pacific (Tokyo) (ap-northeast-1). For information on endpoints, see [Amazon Bedrock endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/bedrock.html).  | October 3, 2023 |
 | [Gated general release](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) | Gated general release of the Amazon Bedrock service. For more information, see [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html).  | September 28, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

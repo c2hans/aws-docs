@@ -187,6 +187,30 @@ If certificates in your computing environment are managed by a Group Policy Obje
 
 For more information about the Amazon Root and Starfield certificates, see the blog post [How to Prepare for AWS’s Move to Its Own Certificate Authority](https://aws.amazon.com/blogs/security/how-to-prepare-for-aws-move-to-its-own-certificate-authority/).
 
-## See also
+## Solution 8: Verify Default Host Management Configuration (DHMC) settings
+<a name="instances-missing-solution-8"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+Default Host Management Configuration (DHMC) allows Systems Manager to manage Amazon EC2 instances automatically without requiring an instance profile on each instance. Verify that DHMC is enabled in your account and Region, and that the associated IAM role has the required permissions and trust policy.
+
+To resolve DHMC-related issues:
+
+1. Verify that DHMC is enabled in your account and Region. For more information, see [Managing EC2 instances automatically with Default Host Management Configuration](fleet-manager-default-host-management-configuration.md).
+
+1. If DHMC is enabled, verify that the associated IAM role includes the AmazonSSMManagedInstanceCore managed policy.
+
+1. Verify that the IAM role has the correct trust policy allowing Systems Manager to assume the role.
+
+## Solution 9: Verify hybrid activation settings
+<a name="instances-missing-solution-9"></a>
+
+For hybrid-activated nodes (on-premises servers or VMs in other cloud environments), verify that the hybrid activation is valid and that the node can connect to Systems Manager service endpoints. Issues can occur if the activation has expired, the registration limit has been reached, or if there are conflicting registrations.
+
+To resolve hybrid activation issues:
+
+1. Verify that the hybrid activation has not expired. If it has expired, create a new activation. For more information, see [Create a hybrid activation to register nodes with Systems Manager](hybrid-activation-managed-nodes.md).
+
+1. Check that the activation registration limit has not been reached. If needed, create a new activation with a higher registration limit, or deregister unused nodes.
+
+1. If you cloned a VM that was previously registered with Systems Manager, deregister the original node before registering the clone to avoid registration conflicts.
+
+1. Verify that the hybrid node can reach the required Systems Manager service endpoints from its network location. For more information, see [Improve the security of EC2 instances by using VPC endpoints for Systems Manager](setup-create-vpc.md).

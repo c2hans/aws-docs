@@ -163,7 +163,3 @@ For more information, see the following:
 + Control who has access to your WorkSpaces Applications streaming instances. For more information, see [Identity and Access Management for Amazon WorkSpaces Applications](controlling-access.md), [Amazon WorkSpaces Applications User Pools](user-pool.md) and [Amazon WorkSpaces Applications Integration with SAML 2.0](external-identity-providers.md).
 + Monitor your WorkSpaces Applications resources by using Amazon CloudWatch. For more information, see [WorkSpaces Applications Metrics and Dimensions](monitoring-with-cloudwatch.md).
 + Troubleshoot your WorkSpaces Applications streaming experience. For more information, see [Troubleshooting](troubleshooting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

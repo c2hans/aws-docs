@@ -28,7 +28,3 @@ You can only approve previously rejected assignments that were submitted within 
 Approving a rejected assignment initiates two payments from your Requester Amazon.com account: one payment to the Worker who submitted the results for the reward amount specified in the HIT and one payment for Mechanical Turk fees. For the operation to succeed, you must have sufficient funds in your account to pay the Worker and the fees.
 
 If your HITs were created using the Mechanical Turk API, you can approve a previously rejected assignment using the [ApproveRejectedAssignment](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ApproveRejectedAssignmentOperation.html) operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

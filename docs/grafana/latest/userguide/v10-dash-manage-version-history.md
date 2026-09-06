@@ -29,7 +29,3 @@ If you want to view the diff of the raw JSON that represents your dashboard, you
 If you need to restore to a previously saved dashboard version, you can either select the **Restore** button on the right of a row in the dashboard version list, or select the **Restore to version *<x>*** button in the diff view. Selecting either of these will prompt you to confirm the restoration.
 
 After restoring to a previous version, a new version will be created containing the same exact data as the previous version, only with a different version number. This is indicated in the **Notes column** for the row in the new dashboard version. This ensures your previous dashboard versions are not affected by the change.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

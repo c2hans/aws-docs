@@ -156,7 +156,3 @@ aws ssm start-session --target sagemaker-endpoint:prod-image-classifier_variant1
  You cannot connect to 1P algorithm containers or containers of models obtained from SageMaker AI MarketPlace with SSM. However you can connect to deep learning containers (DLCs) provided by AWS or any custom container that you own.
  If you have enabled network isolation for a model container that prevents it from making outbound network calls, you cannot start an SSM session for that container.
  You can only access one container from one SSM session. To access another container, even if it is behind the same endpoint, start a new SSM session with the target ID of that endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

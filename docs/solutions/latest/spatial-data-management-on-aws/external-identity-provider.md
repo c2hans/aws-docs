@@ -133,7 +133,3 @@ Newly federated users start with no permissions in SDMA. An administrator in the
 + Confirm that the groups claim is configured in your identity provider.
 + Confirm that the group name in your identity provider matches the Cognito group used for access assignment. For more information, see [Access Management](access-control.md).
 + Recent group changes can take a few minutes to propagate. Sign out and sign back in to refresh tokens.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

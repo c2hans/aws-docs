@@ -115,13 +115,13 @@ Managed node groups enforce a maximum number on the value of `maxPods`. For inst
        kind: NodeConfig
        spec:
         cluster:
-          apiServerEndpoint: [.replaceable]`my-cluster`
-          certificateAuthority: [.replaceable]`LS0t...`
-          cidr: [.replaceable]`10.100.0.0/16`
-          name: [.replaceable]`my-cluster
+          apiServerEndpoint: {{my-cluster}}
+          certificateAuthority: {{LS0t...}}
+          cidr: {{10.100.0.0/16}}
+          name: {{my-cluster}}
         kubelet:
           config:
-            maxPods: [.replaceable]`110`
+            maxPods: {{110}}
        --//--
        ```
 
@@ -226,7 +226,3 @@ This can happen due to fragmentation of existing secondary IP addresses spread o
    ```
 
    In the previous output, `110` is the maximum number of Pods that Kubernetes will deploy to the node, even though {{144}} IP addresses are available.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

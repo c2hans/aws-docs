@@ -214,7 +214,3 @@ Use the following App Runner API actions to manage your auto scaling configurati
 + [DeleteAutoScalingConfiguration](https://docs.aws.amazon.com/apprunner/latest/api/API_DeleteAutoScalingConfiguration.html) – Deletes an auto scaling configuration. You can delete a top level auto scaling configuration, a specific revision of one, or all revisions associated with the top level configuration. Use the optional `DeleteAllRevisions` parameter to delete all of the revisions. If you reach the auto scaling configuration [resource quota](architecture.md#architecture.quotas) for your AWS account, you might need to delete unnecessary auto scaling configurations.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

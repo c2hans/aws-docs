@@ -37,7 +37,3 @@ For users of SageMaker distribution image versions 1.7 and later, no action is n
 **Note**
 Auto-completion is only triggered if the SQL keywords are in uppercase. For instance, entering `SEL` prompts for `SELECT`, but typing `sel` does not.
 The first time you connect to a data source, SQL auto-completion indexes the data source's metadata. This indexing process may take some time to complete depending on the size of your databases.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

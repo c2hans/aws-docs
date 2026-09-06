@@ -25,7 +25,3 @@ Once you choose a custom billing view, the contents of the AWS Billing and Cost 
 
 **Note**
 Not all widgets on the AWS Billing and Cost Management home page support custom billing views. Cost management data included in the selected custom billing view is shown in the “Cost summary”, “Cost breakdown”, and “Cost allocation coverage” widgets. The “Recommended actions”, “Savings opportunities”, and “Cost monitor” widgets don't display recommended actions, savings opportunities, or cost monitors when accessing a custom billing view.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

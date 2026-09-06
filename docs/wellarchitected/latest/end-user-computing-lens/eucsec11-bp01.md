@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  **WorkSpaces Applications agent**: Customers can choose to consistently use the latest agent version in the Image Assistant. With this option, streaming instances that are launched from the image automatically use the latest version of the agent.
 +  **Clients**: Where the Amazon WorkSpaces Applications client is in use, this should also be updated upon the release of each new version.
 +  **Regularly patch Amazon WorkSpaces Personal instances:** Amazon WorkSpaces Personal instances need to be scanned for vulnerabilities and patched regularly post-deployment. Use configuration management tools or patch management tools to satisfy the requirement for ongoing assessment and deployment of patches. The Amazon WorkSpaces client should also be updated upon the release of a new version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

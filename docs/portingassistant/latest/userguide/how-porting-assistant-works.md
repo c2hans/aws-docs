@@ -27,7 +27,3 @@ If you accept the data collection option in the **Settings** menu of the Porting
 1. Metrics for assessments run by the Porting Assistant for .NET tool on public NuGet packages, such as the number of packages and solutions, and the amount of time taken to create a solution.
 
 Porting Assistant for .NET leverages the information on the public NuGet packages and APIs to continuously improve its API replacement suggestions. Porting Assistant for .NET periodically analyzes the collected information and updates its replacement engine so that the experience continuously improves.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Porting Assistant for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query portingassistant` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

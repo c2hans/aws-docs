@@ -33,7 +33,3 @@ Virtualized instance types in the following instance families are supported as T
 + **Storage optimized:** D2 \| D3 \| D3en \| H1 \| I3 \| I3en \| I4g \| I4i \| I7i \| Im4gn \| Is4gen
 + **Accelerated computing:** DL1 \| DL2q \| F2 \| G3 \| G4ad \| G4dn \| G5 \| G5g \| G6 \| G6e \| G6f \| Gr6 \| Gr6f \| Inf1 \| Inf2 \| P3 \| P3dn \| P4d \| P4de \| P5 \| P5e \| Trn1 \| Trn1n \| VT1
 + **High-performance computing:** Hpc6a \| Hpc6id \| Hpc7a
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

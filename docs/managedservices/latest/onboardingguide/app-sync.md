@@ -27,7 +27,3 @@ Request access by submitting a Management \| AWS service \| Self-provisioned ser
 **Q: What are the prerequisites or dependencies to using AWS AppSync?**
 
 The service allows multiple other services to be used as a data source, The basic permissions to use them as such is included in the service role (`customer_appsync_service_role`), but you must manually select the service role when using the service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

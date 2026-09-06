@@ -199,7 +199,3 @@ If the file doesn't exist, the deployment may not be complete yet. If the file d
    Hello, World! Battery level (80) is above threshold (70), so the component will acknowledge updates.
    Acknowledged update for deployment f9499eb2-4a40-40a7-86c1-c89887d859f1.
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

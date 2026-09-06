@@ -54,7 +54,3 @@ AMS access roles allow AMS operators to access your resources to provide AMS cap
 **Note**
 This is the template for the ams-access-management role. It is the stack that cloud architects (CAs) manually deploy in your account at onboarding time: [management-role.yaml](https://ams-account-access-templates.s3.amazonaws.com/management-role.yaml).
 This is the template for the different access roles for the different access levels: ams-access-read-only, ams-access-operations, ams-access-admin-operations, ams-access-admin: [accelerate-roles.json](https://ams-account-access-templates.s3.amazonaws.com/ams-access-roles.template.json).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,3 @@ However, containers might not solve every use case or eliminate all the challeng
 **Our guidance:**
 + Use each cloud provider's native container management capabilities to maximize business value and accelerate delivery. This approach ensures optimal performance while avoiding the complexity of creating cloud-agnostic solutions that rarely deliver meaningful returns.
 + Develop container strategies that address the complete operational picture, including data management, security, and cross-cloud dependencies. Focus on business outcomes when you make container architecture decisions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

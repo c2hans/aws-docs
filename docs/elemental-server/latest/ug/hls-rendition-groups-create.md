@@ -15,7 +15,3 @@ This means that when rendition groups are present in the HLS output group, an ou
 + [Getting Ready to Create HLS Rendition Groups](hls-rendition-groups-getting-ready-to-create.md)
 + [Creating HLS Rendition Groups (Web Interface)](hls-rendition-groups-create-using-web-interface.md)
 + [Creating HLS Rendition Groups (REST API)](hls-rendition-groups-create-using-rest-api.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

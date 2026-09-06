@@ -19,7 +19,3 @@ Amazon CodeCatalyst provides the following APIs for data retrieval.
 | <a name="codecatalyst-ListIdentityCenterApplicationsForSpace"></a>[ListIdentityCenterApplicationsForSpace](https://docs.aws.amazon.com/codecatalyst/latest/userguide/security-iam.html#permissions-reference-applications) | View a list of IAM Identity Center applications by Amazon CodeCatalyst space | List |
 | <a name="codecatalyst-ListSpacesForIdentityCenterApplication"></a>[ListSpacesForIdentityCenterApplication](https://docs.aws.amazon.com/codecatalyst/latest/userguide/security-iam.html#permissions-reference-applications) | View a list of Amazon CodeCatalyst spaces by IAM Identity Center application | List |
 | <a name="codecatalyst-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/codecatalyst/latest/userguide/security-iam.html#permissions-reference-connections) | List tags for an Amazon CodeCatalyst resource | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

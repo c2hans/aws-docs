@@ -11,7 +11,3 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/case-invest
  Security Incident Response collects information about your environment's activity patterns and resource configurations. It does not collect the actual contents of your Amazon S3 buckets, database records, or application data. Security Incident Response collects the "who did what and when" rather than the underlying data itself.
 
  This case investigation data is collected on-demand for specific incidents and remains associated with your case. Security Incident Response retains this data for 90 days by default to allow you to review investigation history, support ongoing or follow-up investigations, and meet audit and compliance documentation requirements. If you require data deletion before the 90-day period expires, contact AWS Support to request early deletion.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

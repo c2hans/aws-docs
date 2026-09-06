@@ -56,7 +56,3 @@ Use the following procedure to add or remove blocked words and phrases for chat 
 1. From the navigation pane, choose **Customization**, and then choose **Chat agent customization**.
 
 1. In **Chat agent customization**, under **Guardrails and safety controls**, choose **Remove** to remove existing entries, or choose **Add** to add entries. You can add up to 50 words and phrases. Each entry can contain up to 36 characters.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

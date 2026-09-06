@@ -33,7 +33,3 @@ Configuring and invoking an inline agent is currently not supported in the Amazo
 + **Encryption** — Use `customer managed key ` to encrypt the session details at rest/storage. If a session is started with a customer managed key, it will be required for all future requests made for the same session. using a different customer managed key for the same sessions will result in an exception.
 + **Session sharing** — Going forward all sessions are account level instead of role level. You can isolate sessions at the agent level by specifying a unique value for `agentName`.
 + **Inline sessions state** — The attributes inside of `InlineSessionState` persists through the session. Use the attributes to provide additional context for your model and for [few-shot prompting](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-a-prompt.html#few-shot-prompting-vs-zero-shot-prompting).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

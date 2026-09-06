@@ -240,7 +240,3 @@ If you receive any authorization or resource type errors, see [Unauthorized or a
 1. (Optional) Deploy a [sample application](sample-deployment.md) to test your cluster and Linux nodes.
 
 1. If your cluster is deployed on an Outpost, then skip this step. If your cluster is deployed on the AWS Cloud, the following information is optional. If the **AmazonEKS\_CNI\_Policy** managed IAM policy is attached to your [Amazon EKS node IAM role](create-node-role.md), we recommend assigning it to an IAM role that you associate to the Kubernetes `aws-node` service account instead. For more information, see [Configure Amazon VPC CNI plugin to use IRSA](cni-iam-role.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

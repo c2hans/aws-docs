@@ -39,7 +39,3 @@ If your organization requires smart card sign in, you must create a streaming UR
 
 **Note**
 All existing instances and user sessions will continue to run with the old image, but all new instance launches will spin up from the new image. For multi-session fleets, it is possible that instances keep running with the older image for a longer duration of time because the service will not terminate an instance if there is an active session on the instance, and if user sessions keep getting provisioned on these instances, it is possible the instance will continue to run with the old image. To get rid of long-running instances on multi-session fleets, evaluate the option of putting them in drain mode. To learn more, refer to [Manage Multi-Session Fleet Instances](manage-multi-session-instances.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

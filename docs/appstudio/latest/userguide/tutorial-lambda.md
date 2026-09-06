@@ -76,7 +76,3 @@ Now, any user that chooses this button in your app will cause the configured aut
 <a name="tutorial-lambda-preview-publish-test"></a>
 
 Your application is now ready for testing. When previewing your app in the Development environment, connectors are not active, so you cannot test the automation while previewing as it uses a connector to connect to AWS Lambda. To test your app's functionality that depends on connectors, you must publish the app to the Testing environment. For more information about previewing and publishing applications, see [Previewing, publishing, and sharing applications](applications-preview-publish-share.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

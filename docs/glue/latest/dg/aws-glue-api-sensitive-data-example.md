@@ -357,7 +357,3 @@ classifyColumns(frame: DynamicFrame,
 +  **sampleFraction** – (type: `Double`, default: 10%) The fraction of the data to sample when scanning for PII entities.
 +  **thresholdFraction** – (type: `Double`, default: 10%): The fraction of the data that must be met in order for a column to be identified as PII data.
 +  **detectionSensitivity** – (type: `String`, options: "LOW" or "HIGH", default: "LOW") Specifies the sensitivity of the detection process. Valid options are "LOW" or "HIGH". If not provided, the default sensitivity is set to "LOW".
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

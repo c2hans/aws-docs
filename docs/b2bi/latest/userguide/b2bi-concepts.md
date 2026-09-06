@@ -55,7 +55,3 @@ In the case of inbound, EDI documents are automatically transformed into JSON or
 A *partnership* represents the connection between you and your trading partner. It incorporates a profile and one or more trading capabilities. It is also where you define the interchange control header and functional group header information necessary to generate outbound EDI documents. To create a partnership, add your partner’s contact information and a unique name to easily identify this partnership. You also need to select one of your business profiles and one or more trading capabilities to automatically transform inbound X12 EDI documents and to generate outbound X12 EDI documents. When you configure a partnership for generating outbound EDI documents, you must specify all the required interchange control header and functional group header values.
 
 ![An example partnership, showing the partnership details and assigned trading capabilities.](http://docs.aws.amazon.com/b2bi/latest/userguide/images/partnership.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS B2B Data Interchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query b2bi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

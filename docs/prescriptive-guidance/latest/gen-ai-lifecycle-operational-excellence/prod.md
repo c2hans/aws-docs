@@ -12,7 +12,3 @@ The production environment introduces unique challenges that demand specialized 
 This chapter is organized into two main sections:
 + [Delivering and sustaining the value of a generative AI application](prod-value.md) – The first section focuses on how to deliver sustained value from generative AI applications in production and how to define success through key business objectives.
 + [Performance monitoring and continuous improvement for generative AI applications](prod-monitoring.md) – The second section describes how to monitor and improve production generative AI applications through performance monitoring, drift detection, feedback loops, and security controls.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

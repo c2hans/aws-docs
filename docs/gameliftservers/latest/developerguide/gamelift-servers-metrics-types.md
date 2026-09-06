@@ -112,7 +112,3 @@ Metrics are organized into specialized dashboards in [Amazon Managed Grafana](ht
 + **Server Performance dashboard (Container)** — Game loop timing, network performance, memory, and CPU metrics for individual game sessions in containers.
 
 For detailed dashboard information and usage instructions, see [Dashboard organization and usage](gamelift-servers-metrics-dashboards.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ Adapter deployment is an iterative process, as you’ll likely need to retrain s
 If your adapter’s accuracy is lacking in any area, add new examples of those documents to increase the adapter’s performance for those queries. Try to provide the adapter with additional, varied examples that reflect the cases where it struggles. Providing your adapter with representative, varied documents enables it to handle diverse real-world examples.
 
 After adding new documents to your training set, retrain the adapter. Then re-evaluate on your test set and queries. Repeat this process until the adapter reaches your desired level of performance. Precision, recall, and F1 scores should gradually improve over successive training iterations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

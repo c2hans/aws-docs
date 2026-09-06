@@ -56,7 +56,3 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the **AWSServiceRoleF
 <a name="slr-regions"></a>
 
 CloudWatch Logs supports using service-linked roles in all of the AWS Regions where the service is available. For more information, see [CloudWatch Logs Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#cwl_region).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

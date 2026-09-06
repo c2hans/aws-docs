@@ -36,7 +36,3 @@ This engine version is scheduled to be deprecated on February 28, 2023. For more
 +  Fixed a memory leak in dynamic resizing feature, introduced in Aurora MySQL 1.23.0.
 +  Fixed an issue that might cause server restart during execution of a query using the parallel query feature.
 +  Fixed an issue that might cause a client session to hang when the database engine encounters an error while reading from or writing to the network.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

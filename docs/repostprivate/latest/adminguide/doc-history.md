@@ -18,7 +18,3 @@ The following table describes the documentation releases for AWS re:Post Private
 | [Guide structure review and improvements](#doc-history) | The structure of the guide was reviewed and improvements were made to improve the customer experience related to finding information for specific scenarios. | September 6, 2024 |
 | [Update](#doc-history) | Added a section on how to deactivate and activate users in a private re:Post | May 7, 2024 |
 | [Initial release](#doc-history) | Initial release of the re:Post Private Administration Guide | November 26, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

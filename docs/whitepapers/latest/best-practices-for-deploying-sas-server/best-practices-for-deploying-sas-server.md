@@ -43,7 +43,3 @@ Many SAS customers are moving their SAS applications from on-premises data cente
 1.  Environment Management
 
  SAS is also a 4GL programming language used by data scientists for more than 80,000 customers globally. SAS 9 does not leverage the benefits of the cloud in terms of managed hosting, elasticity, and scalability. SAS Viya, on the other hand, is a cloud-enabled, in-memory analytics engine with features such as elasticity, scalability, and fault tolerance. In this whitepaper, SAS customers can learn about the best practices for running their SAS 9 workloads on AWS and evaluate how to modernize their architecture of SAS Viya.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

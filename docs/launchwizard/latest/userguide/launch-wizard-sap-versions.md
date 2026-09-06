@@ -76,7 +76,3 @@ For more information on the supported operating systems for SAP service pack sta
 <a name="applications-ase"></a>
 
 Launch Wizard for SAP supports SAP Web Dispatcher version 7.93. SAP Web Dispatcher is downward compatible however as the newest version can be used with all older backend systems. For more information, see [SAP Note 908097](https://me.sap.com/notes/908097/E) in the SAP documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ The following procedures explain how to find your account information and SNS to
 1. In the navigation pane, choose **Topics**.
 
 1. In the list of topics, the SNS topic ARNs are displayed in the **ARN** column. The ARN resembles the following example: *arn:aws:sns:us-east-1:444455556666:my-sns-topic*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

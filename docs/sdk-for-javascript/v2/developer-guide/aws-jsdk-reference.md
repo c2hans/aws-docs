@@ -17,7 +17,3 @@ The API Reference topics for the latest version of the SDK for JavaScript are fo
 The changelog for releases from version 2.4.8 and later is found at:
 
 [Change log](https://github.com/aws/aws-sdk-js/blob/master/CHANGELOG.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for JavaScript SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

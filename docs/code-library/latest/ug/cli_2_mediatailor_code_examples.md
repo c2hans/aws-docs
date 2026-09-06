@@ -173,7 +173,3 @@ Output:
 ```
 For more information, see [Creating a Configuration](https://docs.aws.amazon.com/mediatailor/latest/ug/configurations-create.html) in the *AWS Elemental MediaTailor User Guide*.
 +  For API details, see [PutPlaybackConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediatailor/put-playback-configuration.html) in *AWS CLI Command Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,7 +42,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-be
 The following code repositories provide you with a management and deployment solution for implementing backup and recovery with AWS Backup across your AWS Organizations organization spanning multiple accounts and AWS Regions.
 + [Implement AWS Backup using AWS](https://github.com/aws-samples/aws-backup-automation)
 + [Implement AWS Backup using CI/CD Pipelines](https://github.com/aws-samples/backup-recovery-with-aws-backup)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

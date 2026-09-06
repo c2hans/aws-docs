@@ -10,7 +10,3 @@ You can install libraries to run your scripts in your own processing container o
 **Topics**
 + [Run Scripts with Your Own Processing Container](processing-container-run-scripts.md)
 + [How to Build Your Own Processing Container (Advanced Scenario)](build-your-own-processing-container.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -219,7 +219,3 @@ For the best performance, set the fetch size to the highest value that does not 
 If you need to extract large datasets, we recommend using an [UNLOAD](https://docs.aws.amazon.com/redshift/latest/dg/r_UNLOAD.html) statement to transfer the data to Amazon S3. When you use UNLOAD, the compute nodes work in parallel to speed up the transfer of data.
 
 For more information about setting the JDBC fetch size parameter, go to [Getting results based on a cursor](https://jdbc.postgresql.org/documentation/query/#getting-results-based-on-a-cursor) in the PostgreSQL documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

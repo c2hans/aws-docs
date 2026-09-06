@@ -58,7 +58,3 @@ AWS Glue interactive sessions with Spark Connect is available in the following A
 + You can't change the session type after you create a session. To switch between Livy and Spark Connect, you must create a new session.
 + Spark Connect is not supported on AWS Glue Studio. For interactive development using AWS Glue, you can use Notebooks in SageMaker Unified Studio or your preferred IDEs with Python interpreters.
 + Fine-grained access control through Lake Formation is not supported for Spark Connect sessions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

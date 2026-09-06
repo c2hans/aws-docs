@@ -66,6 +66,14 @@ Content-type: application/json
          "executionEnvironmentVariables": {
             "string" : "string"
          },
+         "executionMounts": [
+            {
+               "name": "string",
+               "relativePath": "string",
+               "source": { ... },
+               "storageType": "string"
+            }
+         ],
          "startTime": number,
          "status": {
             "state": "string",
@@ -99,6 +107,18 @@ Content-type: application/json
       },
       "global": {
          "string" : "string"
+      }
+   },
+   "requestMountOverrides": {
+      "computeNodes": {
+         "string" : [
+            {
+               "name": "string",
+               "relativePath": "string",
+               "source": { ... },
+               "storageType": "string"
+            }
+         ]
       }
    },
    "startTime": number,
@@ -166,6 +186,10 @@ Pattern: `^(0|([1-9]{1}\d*))$`
 The environment variables provided as input for the pipeline execution.
 Type: [ExecutionEnvironmentVariables](API_ExecutionEnvironmentVariables.md) object
 
+ ** [requestMountOverrides](#API_DescribePipelineExecution_ResponseSyntax) **   <a name="iotsitewise-DescribePipelineExecution-response-requestMountOverrides"></a>
+The mount overrides provided as input for the pipeline execution. Present when mount overrides were supplied at execution time.
+Type: [MountOverrides](API_MountOverrides.md) object
+
  ** [startTime](#API_DescribePipelineExecution_ResponseSyntax) **   <a name="iotsitewise-DescribePipelineExecution-response-startTime"></a>
 The time the pipeline execution started, in Unix epoch time.
 Type: Timestamp
@@ -220,7 +244,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotsitewise-2019-12-02/DescribePipelineExecution)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/iotsitewise-2019-12-02/DescribePipelineExecution)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotsitewise-2019-12-02/DescribePipelineExecution)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

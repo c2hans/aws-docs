@@ -27,7 +27,3 @@ workflow manage
 
 **Important**
 Unioning types that define the same field name with incompatible field types produces a mapping conflict and fails the migration. If you are unsure whether your types are compatible, keep approvals enabled and review the `evaluateMetadata` output before approving metadata migration. If the union cannot be made compatible, plan a custom migration path that creates compatible target metadata rather than relying on the standard workflow to split one legacy index into multiple target indexes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

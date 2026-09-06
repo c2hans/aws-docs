@@ -26,7 +26,3 @@ This solution can initiate runbooks based on custom AWS Config findings. To do t
 1. RunbookName is a required field. It specifies the runbook that runs when you remediate this AWS Config rule. RunbookRole is the role that the orchestrator assumes when running this remediation. It is not a required field, and if left out, the orchestrator defaults to using the account’s member role.
 
 1. Once this is in place, you can remediate your AWS Config rule using the "Remediate with ASR" custom action found on the Security Hub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

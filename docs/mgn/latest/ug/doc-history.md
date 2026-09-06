@@ -44,7 +44,3 @@ For additional details regarding new features and major updates, [see the MGN re
 | Updated AWS managed policy | Updated the [AWSApplicationMigrationSSMAccess](security-iam-awsmanpol-AWSApplicationMigrationSSMAccess.md) policy to support both command and automation SSM documents for the custom actions feature. | March 21, 2023 |
 | Updated AWS managed policy | Updated the [AWSApplicationMigrationReadOnlyAccess](security-iam-awsmanpol-AWSApplicationMigrationReadOnlyAccess.md) policy to support the new import and export feature. | March 21, 2023 |
 | Updated AWS managed policy | Updated the [AWSApplicationMigrationEC2Access](security-iam-awsmanpol-AWSApplicationMigrationEC2Access.md) policy to support: DescribeSnapshots, DescribeImages, DescribeVolumes.  | January 29, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -508,7 +508,3 @@ The following recommendations summarize the key actions for minimizing replicati
 1. **Avoid long-running transactions and queries on replicas** – Long-running read transactions prevent history list purging, which can degrade replication performance.
 
 1. **Enable GTID-based replication** – Provides automatic position tracking and enables the Aurora in-memory relay log (Aurora MySQL 3.10\+). For more information, see [Aurora-specific replication optimizations](#aurora-mysql-replication-lag-aurora-optimizations).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

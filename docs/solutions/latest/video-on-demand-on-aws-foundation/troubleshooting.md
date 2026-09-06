@@ -23,7 +23,3 @@ If these instructions don’t address your issue, [Contact AWS Support](contact-
 
 **Note**
  When overriding the sample `job-settings.json`, we recommend exporting job settings from a MediaConvert job that's successfully completed. Incorrect encoding settings will result in the `job_submit` Lambda function to fail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Video on Demand on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

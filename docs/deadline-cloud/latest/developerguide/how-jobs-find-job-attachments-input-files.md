@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/how
 # How jobs find job attachment input files
 <a name="how-jobs-find-job-attachments-input-files"></a>
 
- For a job to use the files that Deadline Cloud uploads to Amazon S3 using job attachments, your job needs those files available through the file system on the worker hosts. When a [session](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run#sessions) for your job runs on a worker host, Deadline Cloud downloads the input files for the job into a temporary directory on the worker host's local drive and adds path mapping rules for each of the job's root paths to its file system location on the local drive.
+ For a job to use the files that Deadline Cloud uploads to Amazon S3 using job attachments, your job needs those files available through the file system on the worker hosts. When a session for your job runs on a worker host, Deadline Cloud downloads the input files for the job into a temporary directory on the worker host's local drive and adds path mapping rules for each of the job's root paths to its file system location on the local drive. For more information about sessions, see [How jobs are run](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run#sessions) on the GitHub website.
 
  For this example, start the Deadline Cloud worker agent in an AWS CloudShell tab. Let any previously submitted jobs finish running, and then delete the job logs from the logs directory:
 
@@ -153,7 +153,3 @@ deadline bundle submit --farm-id $FARM_ID --queue-id $QUEUE1_ID job_attachments_
 2024-07-17 01:40:35,283 INFO Output:
 2024-07-17 01:40:35,284 INFO The location of /shared/projects/project2 in the session is /sessions/session-{{5b33f}}/assetroot-{{3751a}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

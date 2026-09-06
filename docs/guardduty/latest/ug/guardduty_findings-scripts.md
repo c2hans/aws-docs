@@ -319,7 +319,3 @@ GuardDuty has identified common issues and recommends troubleshooting steps:
      1. In this file, replace `maxAzs: 2,` with `availabilityZones: ['{{us-east-1a}}', '{{us-east-1c}}'],` where you must specify the Availability zones for your instance type.
 
      1. Continue with the remaining steps under [Steps to deploy AWS resources](#steps-deploy-resource-test-guardduty-findings).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

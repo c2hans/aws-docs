@@ -21,7 +21,3 @@ You can use the AWS CLI or SDK to work with generic packages. The following Code
 **Note**
 You can use the `publish` origin control setting to allow or block publishing of a generic package name in a repository. However, the `upstream` setting does not apply to generic packages because they cannot be fetched from an upstream repository.
 + [update-package-versions-status](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codeartifact/update-package-versions-status.html) (see [Updating package version status](update-package-version-status.md#updating-pv-status))
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

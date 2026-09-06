@@ -106,7 +106,3 @@ To detect and respond to delivery issues, monitor the `SyslogMessagesDropped` me
 | Ingestion throughput | Shared with PutLogEvents | Syslog ingestion counts against your account's PutLogEvents quota (5,000 requests per second per account per Region by default). |
 
 The `PutLogEvents` quota is adjustable. If your syslog traffic requires higher throughput, request a quota increase through [Service Quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

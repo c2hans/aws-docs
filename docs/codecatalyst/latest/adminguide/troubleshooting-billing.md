@@ -36,7 +36,3 @@ Before you can change your CodeCatalyst plan from the Free tier, you must first 
 This does not change the billing tier for the space. It authorizes the Standard tier for the account, so the **Space administrator** will be able to upgrade to the Standard tier.
 
 You must have the **Space administrator** role in CodeCatalyst and have administrator permissions for your account in AWS to manage billing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

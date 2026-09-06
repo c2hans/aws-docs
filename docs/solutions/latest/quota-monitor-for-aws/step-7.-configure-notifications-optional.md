@@ -50,7 +50,3 @@ Service quotas in AWS set a limit of 1 for certain resources to provide highly a
  **1. Check the ServiceQuotas Table:** Go to the `SQQuotaTable` DynamoDB table and see the `Value` column for quotas, then sort it.
 
  **2. Run a Script:** Run this script from our [Github](https://github.com/aws-solutions/quota-monitor-for-aws/blob/main/scripts/listQuotasWithLimitOne.ts) repo to get the list of quotas which have a limit of 1.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Quota Monitor for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

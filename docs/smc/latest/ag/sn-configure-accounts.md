@@ -51,7 +51,3 @@ AWS Support API uses a specific GovCloud endpoint for GovCloud accounts to enabl
 1. Validate AWS account connectivity by following the steps in [Validating connectivity to AWS Regions](validate-regions.md). Note that in this Connector for ServiceNow, **Validate Accounts** only appears once after you submit or update the account entry.
 **Note**
 AWS Service Management Connector allows synchronization of updated keys using any automation or integration through a REST endpoint. For more information, see [Syncing updated keys programatically in ServiceNow](sn-sync-keys.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

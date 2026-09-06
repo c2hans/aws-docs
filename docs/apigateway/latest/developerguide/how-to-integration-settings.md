@@ -25,7 +25,3 @@ To set up an integration request, you create an [`Integration`](https://docs.aws
 + [Stream the integration response for your proxy integrations in API Gateway](response-transfer-mode.md)
 + [Private integrations for REST APIs in API Gateway](private-integration.md)
 + [Mock integrations for REST APIs in API Gateway](how-to-mock-integration.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

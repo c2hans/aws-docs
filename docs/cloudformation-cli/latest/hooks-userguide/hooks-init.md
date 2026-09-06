@@ -114,7 +114,3 @@ src
 
 **Note**
 The files in the `src` directory are created based on your language selection. There are some useful comments and examples in the generated files. Some files, such as `models.py`, are automatically updated in a later step when you run the `generate` command to add runtime code for your handlers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

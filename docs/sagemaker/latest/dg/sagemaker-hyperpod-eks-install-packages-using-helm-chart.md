@@ -45,7 +45,3 @@ In summary, the Helm installation sets up various components for your Amazon EKS
 + **`aws-efa-k8s-device-plugin`** – This is a Kubernetes device plug-in that enables the use of AWS Elastic Fabric Adapter (EFA) on Amazon EKS clusters. EFA is a network device that provides low-latency and high-throughput communication between instances in a cluster. Required when using an EFA supported instance type.
 
 For more information about the installation procedure using the provided Helm charts, see the [README file in the SageMaker HyperPod CLI repository](https://github.com/aws/sagemaker-hyperpod-cli/tree/main/helm_chart).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

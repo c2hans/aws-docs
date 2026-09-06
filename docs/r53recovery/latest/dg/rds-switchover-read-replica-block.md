@@ -90,7 +90,3 @@ Region switch also validates that the plan's IAM role has the correct permission
 <a name="rds-switchover-read-replica-block-resources"></a>
 + [Amazon RDS Switchover Read Replica execution block sample policy](security_iam_region_switch_rds_switchover_read_replica.md)
 + [Working with Oracle replicas for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-read-replicas.html) in the *Amazon RDS User Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

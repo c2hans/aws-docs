@@ -58,7 +58,3 @@ The following table displays available statistics that you can use for Value dis
   - **Statistics name:** Variance / **Additional parameters:**  / **SDK syntax:** "CheckExpression": "AGG(VARIANCE) > :val", "SubstitutionMap": {":val", "0"}
   - **Statistics name:** Absolute deviation / **Additional parameters:**  / **SDK syntax:** "CheckExpression": "AGG(MEDIAN\_ABSOLUTE\_DEVIATION) > :val", "SubstitutionMap": {":val", "0"}
   - **Statistics name:** Quantile / **Additional parameters:** Quantile: one of '0.25', '0.5', '0.75' / **SDK syntax:** "CheckExpression": "AGG(QUANTILE, :pct) > :val", "SubstitutionMap": {":pct": "0.25", ":val", "0"}
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ This section covers known limitations that you might encounter when working with
 + Cascading controls are not supported for dataset parameters.
 + Dataset parameters can only be used by dataset filters when the dataset is using direct query.
 + In a custom SQL query, only 128 dataset parameters can be used.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

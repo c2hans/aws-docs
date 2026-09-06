@@ -118,7 +118,3 @@ To delete the Systems Manager State Manager association:
 <a name="tutorials-windows-clean-up-whats-next"></a>
 
 If you've arrived here, you have successfully completed a deployment with CodeDeploy. Congratulations\!
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

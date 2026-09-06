@@ -57,7 +57,3 @@ aws dynamodb query \
     --key-condition-expression "Artist = :v_artist and AlbumTitle = :v_title" \
     --expression-attribute-values  '{":v_artist":{"S":"Acme Band"},":v_title":{"S":"Songs About Life"} }'
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

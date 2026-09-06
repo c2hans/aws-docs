@@ -30,7 +30,3 @@ Step caching is available for the following step types:
 + [Turn off step caching](pipelines-caching-disabling.md)
 + [Default cache key attributes by pipeline step type](pipelines-default-keys.md)
 + [Cached data access control](pipelines-access-control.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

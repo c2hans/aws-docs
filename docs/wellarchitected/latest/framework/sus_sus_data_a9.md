@@ -53,7 +53,3 @@ Avoid backing up data that has no business value to minimize storage resources r
 + [AWS re:Invent 2023 - Backup and disaster recovery strategies for increased resilience](https://www.youtube.com/watch?v=E073XISxrSU)
 + [AWS re:Invent 2023 - What's new with AWS Backup](https://www.youtube.com/watch?v=QIffkOyTf7I)
 + [AWS re:Invent 2021 - Backup, disaster recovery, and ransomware protection with AWS](https://www.youtube.com/watch?v=Ru4jxh9qazc)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

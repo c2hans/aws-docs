@@ -162,7 +162,3 @@ Cancel membership from the service console. Membership remains active until the 
  Once membership is cancelled disable service access through the Organizations console, CLI or SDK.
 
  Only an administrator in the Organizations management account can remove a delegated administrator for Security Incident Response. You can remove the delegated administrator using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

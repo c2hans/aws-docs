@@ -64,7 +64,3 @@ foreach (var item in response.S3Objects)
  This process involves adding a TLS listener to your load balancer, configuring backend containers to listen on the secure port, terminate HTTPS connections, using a self-signed certificate, and configuring the listener on the load balancer to forward traffic to the secure port used by the backend containers.
 
 ![Re-encrypt traffic using self-signed certificate](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/reencrypt-traffic.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

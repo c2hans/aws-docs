@@ -219,7 +219,3 @@ Screen-8: In-flight live view. You can also view Top-N queries
 <a name="w2aac24c13c35"></a>
 
 You can monitor insights through Amazon EventBridge events. For additional details check [notifications](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-notifications.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

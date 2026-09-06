@@ -16,7 +16,3 @@ The  [AWS Well-Architected Framework ](https://aws.amazon.com/architecture/well
 + **Design long-running operations asynchronously** - MCP tools that take more than a few seconds to complete should be decoupled from the synchronous request path. Accept the request, queue the work, return a job ID, and provide a polling or callback mechanism. This avoids gateway timeouts and improves user experience.
 + **Tag every resource** - Apply consistent tags — at minimum environment, application, team, and cost centre — to all resources. Enforce tagging policy through automated rules. Without tagging, cost attribution and compliance reporting become impractical at scale.
 + **Prefer managed services over self-managed infrastructure** - Managed and serverless compute eliminates idle resource consumption and reduce operational burden. When evaluating compute options, only choose self-managed infrastructure when there is a specific capability requirement that managed services cannot satisfy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

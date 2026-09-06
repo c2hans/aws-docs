@@ -25,7 +25,3 @@ This procedure describes planning the workflow starting from the output and then
 1. Collect identifiers for the source content. For example, ask the operator at the upstream system for the identifiers for the different audio languages that you want to extract from the content. See [Collect information about the source content](planning-content-extract.md).
 
 1. Coordinate with the downstream system or systems to provide a destination for the output groups that MediaLive will produce. See [Coordinate with downstream systems](setting-up-downstream-system.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

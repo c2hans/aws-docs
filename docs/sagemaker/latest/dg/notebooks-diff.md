@@ -40,7 +40,3 @@ To revert the notebook to the checkpoint file, from the main Studio Classic menu
 If a notebook is opened from a Git repository, you can view the difference between the notebook and the last Git commit.
 
 To view the changes in the notebook from the last Git commit, choose the **Git diff** icon (![Dark button with white text displaying "git" in lowercase letters.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/icons/notebook-git-diff.png)) in the center of the notebook menu.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

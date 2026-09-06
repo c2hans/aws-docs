@@ -73,7 +73,3 @@ View details about updates to AWS managed policies for Partner AI Apps since thi
 | --- | --- | --- | --- |
 | [AmazonSageMakerPartnerAppsFullAccess](#security-iam-awsmanpol-AmazonSageMakerPartnerAppsFullAccess) – Update to an existing policy | 2 | Added SageMaker AI Partner AI App create, update, and delete permissions.<br />Added AWS Marketplace permissions to create, accept, and search agreements to enable Partner App usage. | July 31, 2026 |
 | AmazonSageMakerPartnerAppsFullAccess - New policy | 1 | Initial policy | January 17, 2025 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

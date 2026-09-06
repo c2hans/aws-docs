@@ -45,7 +45,3 @@ You can also use the AWS CLI to start Live Tail sessions for CloudWatch Logs. Th
 + [start-live-tail command reference](https://docs.aws.amazon.com/cli/latest/reference/logs/start-live-tail.html) - Complete command syntax, parameters, and examples for the `aws logs start-live-tail` command.
 + [CloudWatch Logs Live Tail user guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs_LiveTail.html) - Comprehensive guide including AWS CLI usage with both print-only and interactive modes.
 + [StartLiveTail SDK examples](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/example_cloudwatch-logs_StartLiveTail_section.html) - Programmatic examples for using the StartLiveTail API with various AWS SDKs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

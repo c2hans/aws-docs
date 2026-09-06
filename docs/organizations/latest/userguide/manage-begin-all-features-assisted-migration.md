@@ -30,7 +30,3 @@ After you have begun the assisted migration process, it cannot be rolled back. Y
 If you use assisted migration, you do not need to worry about accessing your invited account as the root user to accept the migration to all features.
 
 You can reach out to your Technical Account Manager (TAM) for exact details, progress, and timelines for the assisted migration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

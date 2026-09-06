@@ -98,7 +98,3 @@ The following table lists algorithms considered suitable for use within AWS for 
 AWS services rely on secure, open-source implementations of vetted algorithms to protect your data. The specific choices and configurations of algorithms will vary by service. Some AWS tools and services use a specific algorithm. In others, you can choose between supported algorithms and key lengths, or you can use the recommended defaults.
 
 AWS cryptographic services comply with a wide range of cryptographic security standards, so you can comply with governmental or industry regulations. For a full list of the data security standards that AWS services comply with, see [AWS compliance programs](https://aws.amazon.com/compliance/programs/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

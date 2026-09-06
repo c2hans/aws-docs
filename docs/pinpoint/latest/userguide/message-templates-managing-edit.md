@@ -28,7 +28,3 @@ If you edit a template, Amazon Pinpoint might apply your changes to existing mes
 1. When you finish making changes, do one of the following:
    + To save your changes as a new version of the template, choose **Save as new version**. To help make sure that your changes don't affect any existing messages, we recommend that you choose this option.
    + To save your changes as an update to the most recent version of the template, choose **Update version**. This option is available only if you chose the most recent version of the template in step 5. If you choose this option, your changes might affect existing messages that use the template.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

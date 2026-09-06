@@ -15,7 +15,3 @@ If you've already set up AWS Organizations and are going to add IAM Identity Cen
 To enable an organization instance of IAM Identity Center, you must sign in to the AWS Management Console by signing in to your AWS Organizations management account as a user that has administrative credentials or as the root user (not recommended unless no other administrative users exist). For more information, see [Creating and managing an AWS Organization](http://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org.html) in the *AWS Organizations User Guide*.
 
 When signed in with administrative credentials from an AWS Organizations member account, you can enable an account instance of IAM Identity Center. Account instances have limited capabilities and are bound to a single AWS account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

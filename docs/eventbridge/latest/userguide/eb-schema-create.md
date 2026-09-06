@@ -16,7 +16,3 @@ When you choose between OpenAPI 3 and JSONSchema Draft4 formats, consider the fo
 We recommend using JSONSchema format to implement client-side validation so that events sent to EventBridge conform to the schema. You can use JSONSchema to define a contract for valid JSON documents, and then use a [JSON schema validator](https://json-schema.org/tools) before sending the associated events.
 
 After you have a new schema, you can download [code bindings](eb-schema-code-bindings.md) to help create applications for events with that schema.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ If you want to monitor a single EKS cluster with enhanced visibility of workload
 **Topics**
 + [Install the EKS AWS Network Flow Monitor Agent add-on](CloudWatch-NetworkFlowMonitor-agents-kubernetes-eks.md)
 + [Additional network path metadata included for Amazon EKS](CloudWatch-NetworkFlowMonitor-work-with-eks.performance-metadata.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

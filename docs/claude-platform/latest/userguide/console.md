@@ -50,7 +50,3 @@ The **Via AWS gateway** column indicates whether the page reads and writes data 
 <a name="_switching_organizations"></a>
 
 The Claude Console does not support organization switching for Claude Platform on AWS. To access a different organization, sign out and reauthenticate through the AWS Console using the IAM role for that organization’s AWS account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Claude Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query claude-platform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

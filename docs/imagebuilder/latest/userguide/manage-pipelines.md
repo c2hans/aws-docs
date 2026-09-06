@@ -20,7 +20,3 @@ For more information about using the EventBridge API to view or change rules, se
 + [Create and update container image pipelines](container-image-pipelines.md)
 + [Configure image pipeline workflows in Image Builder](pipeline-workflows.md)
 + [Use EventBridge with Image Builder pipelines](ev-rules-for-pipeline.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -98,7 +98,3 @@ The following metrics provide primary statistics for an Oracle SQL digest query.
 | db.sql\_tokenized.stats.physical\_write\_requests | Physical writes |
 | db.sql\_tokenized.stats.total\_sharable\_mem | Total shareable memory (in bytes)  |
 | db.sql\_tokenized.stats.cpu\_time | CPU time (in ms) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,7 +51,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
  The following diagram shows a basic organization that consists of seven accounts that are organized into four OUs under the [root.](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html#root) The organization also has a few policies that are applied to OUs.
 
 ![Diagram showing an example of a basic organization](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/basic-organization-example.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -91,7 +91,3 @@ The mount command used in this procedure does the following at the given points:
   You can retrieve the file system's preferred file server IP address as follows:
   + Using the Amazon FSx console, on the **Network & security** tab of the **File system details** page.
   + In the response of the `describe-file-systems` CLI command or the equivalent [DescribeFileSystems](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileSystems.html) API command.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

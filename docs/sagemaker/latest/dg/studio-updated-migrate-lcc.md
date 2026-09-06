@@ -48,7 +48,3 @@ Consider the following differences between Studio Classic and Studio when refact
 + SageMaker Distribution images that run inside JupyterLab and Code Editor apps use the Debian-based package manager, `apt-get`.
 + Studio JupyterLab and Code Editor applications use the Conda package manager. SageMaker AI creates a single base Python3 Conda environment when a Studio application is launched. For information about updating packages in the base Conda environment and creating new Conda environments, see [JupyterLab user guide](studio-updated-jl-user-guide.md). In contrast, not all KernelGateway applications use Conda as a package manager.
 + The Studio JupyterLab application uses `JupyterLab 4.0`, while Studio Classic uses `JupyterLab 3.0`. Validate that all JupyterLab extensions you use are compatible with `JupyterLab 4.0`. For more information about extensions, see [Extension Compatibility with JupyterLab 4.0](https://github.com/jupyterlab/jupyterlab/issues/14590).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

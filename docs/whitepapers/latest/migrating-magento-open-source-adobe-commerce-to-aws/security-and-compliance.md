@@ -60,7 +60,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-ope
  AWS is certified as a PCI DSS 3.2 Level 1 Service Provider, the highest level of assessment available. Magento Commerce is PCI certified as a Level 1 Solution Provider. Organizations can use AWS and Magento’s PCI Attestation of Compliance to aid their own PCI certification process.
 
  The PCI DSS certification for an organization involves attestation of the following 12 requirements, broken into 6 groups: 1) Build and Maintain a Secure Network, 2) Protect Cardholder Data 3) Maintain a Vulnerability Management Program, 4) Implement Strong Access Control Measures, 5) Implement Strong Access Control Measures and 6) Regularly Monitor and Test Networks. For more information on PCI Compliance, refer to [PCI DSS resources on AWS website](https://aws.amazon.com/compliance/pci-dss-level-1-faqs/) and [PCI Security Standards Council website](https://www.pcisecuritystandards.org/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

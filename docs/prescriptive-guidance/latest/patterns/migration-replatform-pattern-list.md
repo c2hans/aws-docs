@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 + [Migrate on-premises MySQL databases to Aurora MySQL using Percona XtraBackup, Amazon EFS, and Amazon S3](migrate-on-premises-mysql-databases-to-aurora-mysql-using-percona-xtrabackup-amazon-efs-and-amazon-s3.md)
 + [Migrate shared file systems in an AWS large migration](migrate-shared-file-systems-in-an-aws-large-migration.md)
 + [Migrate an Oracle database to Amazon RDS for Oracle by using Oracle GoldenGate flat file adapters](migrate-an-oracle-database-to-amazon-rds-for-oracle-by-using-oracle-goldengate-flat-file-adapters.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

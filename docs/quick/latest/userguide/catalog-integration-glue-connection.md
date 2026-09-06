@@ -62,7 +62,3 @@ Because AWS Glue Data Catalog provides metadata and Amazon Athena provides query
 1. **Connect to AWS Glue Data Catalog for metadata** – Navigate to **Create Data Source** and select **Glue Data Catalog**. This connection provides access to table names, table descriptions, column information, and other catalog metadata.
 
 1. **Connect to Amazon Athena for data queries** – Select **Athena** and configure the primary workgroup. This connection enables queries against the underlying Amazon S3 and Apache Iceberg tables. The supported underlying data store is Amazon S3.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

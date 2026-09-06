@@ -36,7 +36,3 @@ Ends a search for certificate objects.
 
 **Throttling return codes**
  When certificate storage throttles an operation for exceeding the read or write rate limit, the return code depends on the operation. Write operations (`C_CreateObject`, `C_SetAttributeValue`, and `C_DestroyObject`) and the `C_FindObjectsInit` read operation return `CKR_FUNCTION_FAILED`. `C_GetAttributeValue` currently returns `CKR_DEVICE_ERROR`. In all cases, follow the best practices for handling throttling in [HSM throttling](troubleshoot-hsm-throttling.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

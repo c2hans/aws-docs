@@ -78,7 +78,3 @@ If you're using Lambda@Edge, an HTTP 503 status code can indicate that Lambda re
 + The function exceeded the Lambda function timeout quota.
 
 For more information about the Lambda@Edge quotas, see [Quotas on Lambda@Edge](cloudfront-limits.md#limits-lambda-at-edge). For more details about how to identify and resolve Lambda@Edge errors, see [Test and debug Lambda@Edge functions](lambda-edge-testing-debugging.md). You can also see the [Lambda service quotas](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html) in the *AWS Lambda Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

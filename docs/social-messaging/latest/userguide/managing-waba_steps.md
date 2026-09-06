@@ -20,7 +20,3 @@ You can view the WABA associated with your AWS account.
    On the **Templates** tab, choose **Manage message templates** to edit your WhatsApp templates through Meta. Each WABA has a 250 template limit.
 
    On the **Tags** tab, you can manage your WABA resource tags.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,3 @@ For more information about the Aurora end of standard support dates and the RDS 
 + [Viewing the enrollment of your Aurora DB clusters or global clusters in Amazon RDS Extended Support](extended-support-viewing.md)
 + [Viewing support dates for engine versions in Amazon RDS Extended Support](extended-support-viewing-support-dates.md)
 + [Restoring an Aurora DB cluster or a global cluster with Amazon RDS Extended Support](extended-support-restoring-db-instance.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

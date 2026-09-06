@@ -66,7 +66,3 @@ Wait for deletion to complete successfully before proceeding.
 1.  Delete the {{<project-name>}}`-Pipe` AWS CodeCommit repository.
 
 1.  [Cancel your Quick subscription](https://docs.aws.amazon.com/quicksight/latest/user/closing-account.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

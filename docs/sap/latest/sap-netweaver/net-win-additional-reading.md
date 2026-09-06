@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-additio
 +  [2539944 - Windows Server / Microsoft SQL Server on AMI](https://me.sap.com/notes/2539944)
 +  [1409604 - Virtualization on Windows: Enhanced monitoring](https://me.sap.com/notes/1409604)
 +  [2198693 - Key Monitoring Metrics for SAP on Amazon Web Services](https://me.sap.com/notes/2198693)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

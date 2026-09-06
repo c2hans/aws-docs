@@ -91,7 +91,3 @@ The following example report shows what happens when a **Compute checksum** oper
 {{amzn-s3-demo-bucket1}},image_14975,,failed,200,PermanentFailure,"error details: {""failureMessage"":"Task 2845ca0d-38d9-4c4b-abcf-379dc749c452 Key not found", ""errorCode"": "404"}"
 {{amzn-s3-demo-bucket1}},image_14975,,failed,200,PermanentFailure,"error details: {""failureMessage"":"Task 2845ca0d-38d9-4c4b-abcf-379dc749c452 Internal server error, please retry", ""errorCode"": "500"}"
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -117,7 +117,3 @@ Do not remove the `kubernetes.io/role/cni` tag to stop using a subnet. Removing 
 + The VPC CNI does not deallocate ENIs that still have IP addresses assigned to Pods, regardless of tag changes.
 + When using shared VPCs (cross-account subnets), tag the subnets in the participant account where the cluster is launched.
 + You can use enhanced subnet discovery together with security groups for Pods, network policies, prefix delegation, and SNAT.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

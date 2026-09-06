@@ -22,7 +22,3 @@ The following lists provide quick reminders of best practices to use when buildi
 + Don't proceed without clearly defined objectives and scope for the CCoE. Vague or overly broad goals can lead to confusion.
 + Don't operate the CCoE in isolation. Collaboration and communication with other departments are essential for success.
 + Don't focus solely on short-term goals. A successful CCoE should have a long-term vision for cloud excellence.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

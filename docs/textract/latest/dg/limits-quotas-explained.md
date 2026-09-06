@@ -159,7 +159,3 @@ The following table lists the different types of quotas and the effects modifyin
 | Asynchronous Start operation TPS | Increases how often you can request that Textract begin the asynchronous processing of an input document, measured in transactions per second |
 | Asynchronous Get operation TPS | Increases how often you can request that Textract return the results of a given asynchronous analysis job, measured in transactions per second |
 | Asynchronous Concurrent jobs | Increases the total number of documents that you can have processing in parallel. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

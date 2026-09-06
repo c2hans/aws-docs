@@ -29,7 +29,3 @@ Verify ISP IPv6 support
 Ensure that your internet service provider (ISP) properly supports IPv6.
 
 If you continue to experience issues with IPv6 Client Route Enforcement after trying these troubleshooting steps, contact AWS Support for further assistance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

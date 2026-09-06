@@ -20,11 +20,8 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/general-information-
 | SCTE-20 | Yes |  | Captions that are compliant with the standard “SCTE 20 2012 Methods for Carriage of CEA-608 Closed Captions and Non-Real Time Sampled Video.” |
 | SCTE-20\+Embedded |  | Yes | Captions that are compliant with SCTE-43. The SCTE-20 captions are inserted in the video before the embedded captions. |
 | SCTE-27 | Yes |  | Captions that are compliant with the standard “SCTE-27 (2011), Subtitling Methods for Broadcast Cable.” |
+| Smart Subtitles | Yes |  | Subtitles that AWS Elemental Inference generates from the audio in the source, using automatic speech recognition. These subtitles don't rely on captions carried in the source. MediaLive produces these subtitles as TTML or WebVTT. For more information, see [Smart Subtitles using Elemental Inference](elemental-inference-automatic-subtitling.md). |
 | SMPTE-TT |  | Yes | Captions that are compliant with the standard "SMPTE ST 2052-1:2010". |
 | Teletext  | Yes | Yes | From TS input: Captions in the EBU Teletext format.From a CDI input, a SMPTE2110 input, or in a Link container: Captions in OP47 teletext format, also known as SMPTE RDD-08 (compliant with ITU-R BT.1120-7). |
 | TTML |  | Yes | Captions files that are compliant with the standard “Timed Text Markup Language 1 (TTML1) (Second Edition).” |
 | WebVTT |  | Yes | Captions that are compliant with “webvtt: The Web Video Text Tracks Format” ([https://www.w3.org/TR/webvtt1/](https://www.w3.org/TR/webvtt1/)). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

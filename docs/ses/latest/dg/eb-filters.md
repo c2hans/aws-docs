@@ -83,7 +83,3 @@ The following reference table lists all the policy statement properties that are
 **Recipient address matching and subaddressing**
 The *Recipient address* property uses the full SMTP envelope recipient address exactly as received, including any subaddress extension (also known as "plus addressing"). For example, if a message is sent to `user+tag@example.com`, the recipient address evaluated in the policy statement is `user+tag@example.com`, not `user@example.com`.
 This means that an `EQUALS` or `CONTAINS` rule targeting `user@example.com` will not match `user+tag@example.com`. If you need to match all subaddressed variants of an address, consider using an address list with wildcard entries (e.g., `user*@example.com`). Alternatively, `ENDS_WITH` with the domain (e.g., `@example.com`) can be used for broader domain-level matching.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

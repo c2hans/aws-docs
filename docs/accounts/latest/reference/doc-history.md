@@ -22,7 +22,3 @@ The following table describes the documentation releases for AWS Account Managem
 | [New contact information APIs](https://docs.aws.amazon.com/accounts/latest/APIReference/API_Operations.html) | Support for new `GetContactInformation` and `PutContactInformation` APIs. | July 22, 2022 |
 | [AWS Account Management now supports updating alternate contacts via the AWS Organizations console.](#doc-history) | You can now update your organization's alternate contacts via AWS Organizations console using Account API permissions provided by updated AWS Organizations managed policies. | February 8, 2022 |
 | [Initial release](#doc-history) | Initial release of the AWS Account Management Reference Guide | September 30, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

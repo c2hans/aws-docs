@@ -302,7 +302,3 @@ You can verify that Neuron devices are accessible by running the `neuron-ls` too
 When using the Neuron device plugin, contiguous device allocation on instances with multiple Neuron devices (such as `trn2.48xlarge`) requires the [Neuron Kubernetes scheduler extension](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/containers/tutorials/k8s-neuron-scheduler.html). The Neuron DRA driver handles this automatically through topology constraints.
 
 For more information about using Neuron devices with Amazon EKS, see the [Neuron documentation for running on EKS](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/containers/kubernetes-getting-started.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

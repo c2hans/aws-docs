@@ -13,7 +13,3 @@ The following NVIDIA models are available in Amazon Bedrock:
 | [NVIDIA Nemotron Nano 12B v2 VL BF16](model-card-nvidia-nvidia-nemotron-nano-12b-v2-vl-bf16.md) | Nemotron Nano 12B v2 VL is NVIDIA's 12-billion parameter vision-language model for multimodal tasks including image understanding and visual Q&A. |
 | [Nemotron Nano 3 30B](model-card-nvidia-nemotron-nano-3-30b.md) | Nemotron Nano 3 30B is NVIDIA's 30-billion parameter model with strong reasoning and coding performance, optimized for deployment on NVIDIA GPUs. |
 | [NVIDIA Nemotron 3 Super 120B](model-card-nvidia-nemotron-super-3-120b.md) | NVIDIA Nemotron 3 Super 120B is NVIDIA's open hybrid MoE model with 120B total parameters and 12B active, designed for complex multi-agent applications with a 1M token context window. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

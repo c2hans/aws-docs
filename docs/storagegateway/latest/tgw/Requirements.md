@@ -367,7 +367,3 @@ AWS has tested the third-party backup applications in the following table to ens
 
 **Important**
 We highly recommend that you choose the medium changer that's listed for your backup application. Other medium changers might not function properly. You can choose a different medium changer after the gateway is activated. For more information, see [Selecting a Medium Changer After Gateway Activation](https://docs.aws.amazon.com/storagegateway/latest/tgw/resource_vtl-devices.html#change-mediumchanger-vtl).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

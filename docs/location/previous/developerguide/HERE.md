@@ -157,7 +157,3 @@ For additional information about HERE's attribution guidelines, see Section 2 of
 <a name="HERE-support"></a>
 
 To report map errors and discrepancies to HERE, go to [https://www.here.com/contact](https://www.here.com/contact) and choose **Report a map error**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

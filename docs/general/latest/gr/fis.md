@@ -101,7 +101,3 @@ The following are the service endpoints and service quotas for this service.
 | Target functions for aws:lambda:invocation-http-integration-response action. | Each supported Region: 140 | No | The maximum number of Lambda functions that aws:lambda:invocation-http-integration-response can target when you identify targets using tags, per experiment. |
 | Target multi-Region clusters for aws:memorydb:multi-region-cluster-pause-replication action. | Each supported Region: 50 | No | The maximum number of MemoryDB multi-Region clusters that aws:memorydb:multi-region-cluster-pause-replication can target when you identify targets using tags, per experiment. If you require a higher quota, contact customer support. |
 | Target tables for aws:dynamodb:global-table-pause-replication action | Each supported Region: 60 | No | The maximum number of global tables that aws:dynamodb:global-table-pause-replication can target, per experiment. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -243,7 +243,3 @@ If the granular config file exists but has no rules for a specific module, that 
 +  **Region restrictions not taking effect:** Verify that the regions you are restricting are included in the top-level **Regions in Scope** parameter of the Data Collection Stack. The granular policy cannot add regions outside of that scope.
 +  **Wildcard not working as expected:** The ` ` wildcard must be the only character in the field. It does not support pattern matching (e.g., `budget` is not valid).
 +  **Unexpected behavior:** Review CloudWatch Logs for the Account Collector Lambda to see which configuration files were detected and how rules were applied. Set the Lambda’s logging level to `DEBUG` for detailed tracing of policy parsing, rule evaluation, and the final computed ruleset.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

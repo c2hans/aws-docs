@@ -36,7 +36,3 @@ An RTMP output group requires one set of destination addresses for each output.
    Where `xyz` is the application name, and `ywq7b` is the stream name.
 
    In this example, the two URLs have different IP addresses but the same application name/stream name portion. Your RTMP server might follow a different rule.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

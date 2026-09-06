@@ -18,7 +18,3 @@ This architecture follows these recommendations:
 + **Differentiate between SaaS applications and foundational cloud services. **The university differentiates between SaaS applications and core cloud analytics services, and uses integrations with the SaaS applications to gather data and initiate the appropriate communications.
 + **Establish security and governance requirements for each cloud service provider. **The university ensures that all components of the architecture are secure by enforcing guardrails and controls, including encryption in transit and at rest, to handle student data appropriately.
 + **Adopt cloud-native, managed solutions wherever possible and practical. **Cloud-native managed services are used for data ingestion, storage, database, and extract, transform, and load (ETL) functionality, which reduces the time to develop the end-to-end data processing workflow.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

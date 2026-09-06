@@ -20,7 +20,3 @@ To use a shared Private CA resource with WorkSpaces Applications CBA, complete t
 1. Use the API or CLI to associate the Private CA ARN with CBA in your WorkSpaces Applications Directory Config. At this time, the WorkSpaces Applications console does not support selection of shared Private CA ARNs. The following are example CLI commands:
 
    `aws appstream update-directory-config --directory-name <value> --certificate-based-auth-properties Status=<value>,CertificateAuthorityArn=<value>`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

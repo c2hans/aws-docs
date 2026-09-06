@@ -249,7 +249,3 @@ When you create an app client in the AWS Management Console, Amazon Cognito auto
 
 **Managed login authentication prompt times out**
 Amazon Cognito cancels authentication requests that do not complete within five minutes, and redirects the user to managed login. The page displays a `Something went wrong` error message.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,7 +47,3 @@ The following topics show you how to use one of the AWS SDKs, the [AWS SDK for J
 + [Removing tags from a resource](sdk-untagresource.md)
 + [Updating an ACME domain validation](sdk-acme-update-domain-validation.md)
 + [Updating an ACME endpoint](sdk-acme-update-endpoint.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

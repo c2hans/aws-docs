@@ -408,7 +408,3 @@ When authenticated against the LMS API most platform use either OAuth 2.0 or oth
 The following AWS Workshops are useful for exploring ETL based integration in more detail:
 + [Higher Education Data Lake Immersion Day](https://catalog.workshops.aws/dataedu-student-datalake/en-US)
 + [Amazon SageMaker Unified Studio Workshop - Improve Student Engagement](https://catalog.us-east-1.prod.workshops.aws/workshops/1e711c46-2bda-4c72-9f62-fde6347800f8/en-US)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

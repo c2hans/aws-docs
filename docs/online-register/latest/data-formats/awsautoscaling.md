@@ -12,7 +12,3 @@ AWS Auto Scaling provides the following APIs for data retrieval.
 | <a name="autoscaling-plans-DescribeScalingPlanResources"></a>[DescribeScalingPlanResources](https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_DescribeScalingPlanResources.html) | Describes the scalable resources in the specified scaling plan. | Read |
 | <a name="autoscaling-plans-DescribeScalingPlans"></a>[DescribeScalingPlans](https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_DescribeScalingPlans.html) | Describes the specified scaling plans or all of your scaling plans. | Read |
 | <a name="autoscaling-plans-GetScalingPlanResourceForecastData"></a>[GetScalingPlanResourceForecastData](https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_GetScalingPlanResourceForecastData.html) | Retrieves the forecast data for a scalable resource. | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

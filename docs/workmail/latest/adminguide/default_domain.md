@@ -18,7 +18,3 @@ You can make a domain associated with your organization the default for users an
 1. In the navigation pane, choose **Organizations**, and then choose the name of your organization.
 
 1. In the list of domains, select the check box next to the domain name you want to use and choose **Set as default**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

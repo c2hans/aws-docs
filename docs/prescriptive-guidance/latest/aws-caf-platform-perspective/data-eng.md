@@ -103,7 +103,3 @@ DataOps is a modern approach to data engineering that emphasizes the integration
 Implementing DataOps methodologies helps foster a collaborative environment for data engineers, data scientists, and business users, and enables rapid development, deployment, and monitoring of data pipelines and analytics solutions. This approach provides more seamless communication and collaboration across teams, which leads to faster innovation and better outcomes.
 
 To take full advantage of the benefits of DataOps, it is important to streamline data engineering processes. This is achieved by using best practices from platform engineering teams, including code review, continuous integration, and automated testing. By implementing these practices, organizations ensure that data pipelines are reliable, scalable, and secure, and that they meet the needs of both business and technical stakeholders.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ Widgets include total monthly cost trends, current and forecasted costs, cost by
 **Reservations** gives you a consolidated view of Reserved Instance performance across all RI-eligible services: Amazon EC2, Amazon ElastiCache, Amazon RDS, Amazon OpenSearch Service, Amazon Redshift, and Amazon MemoryDB. Each service shows cost by instance type alongside coverage metrics and utilization detail. Use this dashboard to scan all services and identify coverage gaps or underutilization across your RI portfolio.
 
 **Savings Plans** shows utilization and coverage for your Savings Plans portfolio across all three types: Compute, EC2 Instance, and Amazon SageMaker. It displays utilization and coverage for each type alongside on-demand spend and purchase option composition. Use this dashboard to assess whether your Savings Plans are optimally sized and identify where additional purchases would yield savings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

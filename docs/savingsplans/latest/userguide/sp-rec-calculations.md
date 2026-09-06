@@ -14,7 +14,3 @@ Recommendations at the management account level are calculated considering usage
 Recommendations are generated for customers that have an average On-Demand spend of $0.10/hour during the lookback period (7, 30, or 60 days). If you recently purchased a Savings Plan, returned a Savings Plan, or if your Savings Plans recently expired, refresh your Savings Plans recommendations to take your current Savings Plans inventory and latest usage data into account.
 Compute and EC2 Instance Savings Plans recommendations are created using the same set of usage. You can purchase both Compute Savings Plans and EC2 Instance Savings Plans to cover your usage, but the two sets of recommendations are not meant to be taken together simultaneously.
 Recommendations are calculated using Savings Plans rates referenced in [Pricing with Savings Plans](https://aws.amazon.com/savingsplans/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

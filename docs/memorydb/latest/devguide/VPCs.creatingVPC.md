@@ -55,7 +55,3 @@ Make a note of your subnet identifiers, and which are public and private. You wi
       Choose **Apply Rule Changes**.
 
 Now you are ready to create a [ subnet group](https://docs.aws.amazon.com/memorydb/latest/devguide/subnetgroups.html) and [create a cluster](https://docs.aws.amazon.com/memorydb/latest/devguide/getting-started.createcluster.html) in your VPC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

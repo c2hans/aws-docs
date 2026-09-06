@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 # Getting started with FlexMatch
 <a name="match-getting-started"></a>
 
-Use the resources in this section to help you get started with buildiing a matchmaking system with FlexMatch.
+Use the resources in this section to help you get started with building a matchmaking system with FlexMatch.
 
 **Topics**
 + [Set up an AWS account for FlexMatch](#match-setting-up)
@@ -27,7 +27,7 @@ If you are using FlexMatch with other Amazon GameLift Servers solutions, see the
 
 1. **Set up an administrative user group.** Open the AWS Identity and Access Management (IAM) service console and follow the steps to create or update users or user groups. IAM manages access to your AWS services and resources. Everyone who accesses your FlexMatch resources, using the Amazon GameLift Servers console or by calling Amazon GameLift Servers APIs, must be given explicit access. For detailed instructions on using the console (or the AWS CLI or other tools) to set up user groups, see [Creating IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html).
 
-1. **Attach a permissions policy to your user or user group. **Access to AWS services and resources are managed by attaching an [IAM policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) to a user or user group. Permissions policies specify a set of AWS services and actions a user has to have access to.
+1. **Attach a permissions policy to your user or user group. **Access to AWS services and resources is managed by attaching an [IAM policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) to a user or user group. Permissions policies specify a set of AWS services and actions a user has to have access to.
 
    For Amazon GameLift Servers, you must create a custom permissions policy and attach it to each user or user group. A policy is a JSON document. Use the example below to create your policy.
 
@@ -51,7 +51,3 @@ The following example illustrates an inline permissions policy with administrati
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

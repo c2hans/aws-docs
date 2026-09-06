@@ -14,6 +14,7 @@ AWS Glue supports an extension of the PySpark Python dialect for scripting extra
 + [Setting up to use Python with AWS Glue](aws-glue-programming-python-setup.md)
 + [Calling AWS Glue APIs in Python](aws-glue-programming-python-calling.md)
 + [Using Python libraries with AWS Glue](aws-glue-programming-python-libraries.md)
++ [Using Python virtual environments with AWS Glue](aws-glue-programming-python-virtual-environments.md)
 + [AWS Glue Python code samples](aws-glue-programming-python-samples.md)
 
 ## AWS Glue PySpark extensions
@@ -56,7 +57,3 @@ AWS Glue has created the following transform Classes to use in PySpark ETL opera
 + [SplitRows class](aws-glue-api-crawler-pyspark-transforms-SplitRows.md)
 + [Unbox class](aws-glue-api-crawler-pyspark-transforms-Unbox.md)
 + [UnnestFrame class](aws-glue-api-crawler-pyspark-transforms-UnnestFrame.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

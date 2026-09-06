@@ -177,7 +177,3 @@ In the current example, after cross account access is granted to `444455556666,`
 In the following example, the SQL Workbench profile `perf-test-1` is for account `444455556666`. The query uses catalog `ehms` to access the Hive metastore and the Amazon S3 data in account `111122223333`.
 
 ![Accessing Hive metastore and Amazon S3 data across accounts in SQL Workbench.](http://docs.aws.amazon.com/athena/latest/ug/images/hive-metastore-iam-access-lambda-1.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

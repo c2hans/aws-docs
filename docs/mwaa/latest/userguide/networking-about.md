@@ -183,7 +183,3 @@ If internet access in your VPC is **not allowed** by your organization, *and* yo
    1. We recommend creating and attaching the VPC endpoints needed for each AWS service used by Amazon MWAA, and the VPC endpoints needed for Apache Airflow in [Creating the required VPC service endpoints in an Amazon VPC with private routing](vpc-vpe-create-access.md).
 
    1. We recommend configuring access using an AWS Client VPN to your Apache Airflow webserver in [Tutorial: Configuring private network access using an AWS Client VPN](tutorials-private-network-vpn-client.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

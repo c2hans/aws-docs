@@ -43,7 +43,3 @@ After you select and enable your CSPs—including setting up a secure landing zo
 We recommend that you follow a phased approach with checkpoints to develop your workload placement strategy. Remember that multicloud is a strategy, not a goal. It requires balancing business value, technological feasibility, product velocity, and cost.
 
 Develop a clear business case for using multiple providers. Do not proceed without documented justification. Next, map each critical capability for your cloud environments against your business requirements. A "no" response to any critical capability question disqualifies the workload. A multicloud approach is feasible only when a workload meets all your business and technical requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

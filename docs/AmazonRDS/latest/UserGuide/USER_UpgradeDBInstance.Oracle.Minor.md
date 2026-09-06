@@ -26,7 +26,7 @@ Make sure that you thoroughly test any upgrade to verify that your applications 
 ## Release Updates (RUs) and Supplemental Patch Bundles (SPBs)
 <a name="RUs-and-SPBs"></a>
 
-In RDS, a release update (RU) is a quarterly minor engine version that includes security fixes, bug fixes, and new features for Oracle Database. A Supplemental Patch Bundle (SPB) is an RU engine version that includes additional database patches recommended by Oracle for specific use cases, such as Oracle Spatial, Oracle Data Pump, and Oracle GoldenGate. For example, the SPB named 19.0.0.0.ru-2026-04.spb-1.r1 includes all patches in the corresponding RU 19.0.0.0.ru-2026-04.rur-2026-04.r1 plus supplemental patches. SPBs are supported only for Oracle Database 19c.
+In RDS, a release update (RU) is a quarterly minor engine version that includes security fixes, bug fixes, and new features for Oracle Database. A Supplemental Patch Bundle (SPB) is an RU engine version that includes additional database patches recommended by Oracle for specific use cases, such as Oracle Spatial, Oracle Data Pump, and Oracle GoldenGate. For example, the SPB named 19.0.0.0.ru-2026-04.spb-1.r1 includes all patches in the corresponding RU 19.0.0.0.ru-2026-04.rur-2026-04.r1 plus supplemental patches. SPBs are supported for Oracle Database 19c and Oracle Database 26ai.
 
 When your instance is configured for automatic minor version upgrades, RUs and SPBs are on separate upgrade paths. Typically, an SPB is released 2–3 weeks after its corresponding RU. The following table shows sample minor versions for Oracle Database 19c.
 
@@ -218,7 +218,3 @@ To opt out of an automatic minor version upgrade, modify your DB instance and tu
 To learn more about how to turn off automatic minor version upgrade, see [Automatically upgrading the minor engine version](USER_UpgradeDBInstance.Upgrading.md#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades). If you need assistance with turning off automatic minor version upgrade, please reach out to the AWS Support.
 
 Sometimes a new minor version becomes available before RDS applies a previous minor version. For example, your instance is running on `21.0.0.0.ru-2025-07.rur-2025-07.r1` when `both 21.0.0.0.ru-2025-10.rur-2025-10.r1` and `21.0.0.0.ru-2026-01.rur-2026-01.r1` are available as upgrade targets. In this situation, to avoid unnecessary downtime for your DB instances, RDS schedules the automatic minor version upgrade to the most recent version, skipping the upgrade to the previous version. In this example, RDS upgrades your instance from `21.0.0.0.ru-2025-07.rur-2025-07.r1` directly to `21.0.0.0.ru-2026-01.rur-2026-01.r1`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

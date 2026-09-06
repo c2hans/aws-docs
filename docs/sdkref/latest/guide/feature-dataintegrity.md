@@ -71,7 +71,3 @@ In the following table, 'CRT' refers to the [AWS Common Runtime (CRT) libraries]
 | [SDK for Swift](https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/) | Yes | CRC32 | CRC64NVME, CRC32, CRC32C, SHA1, SHA256 | CRT dependency required for all algorithms. |
 | [Tools for PowerShell V5](https://docs.aws.amazon.com/powershell/latest/userguide/) | Yes | CRC32 | CRC32, CRC32C, SHA1, SHA256, xxHash3, SHA512 |  |
 | [Tools for PowerShell V4](https://docs.aws.amazon.com/powershell/v4/userguide/) | Yes | CRC32 | CRC32, CRC32C, SHA1, SHA256, SHA512 |  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdkref` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

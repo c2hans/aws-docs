@@ -95,7 +95,3 @@ For a notebook that demonstrates how to use SageMaker AI Lineage APIs to query l
 <a name="tracking-lineage-xaccount-authorization"></a>
 
 Amazon SageMaker AI must validate that you have permissions to perform the `QueryLineage` API action on the `StartArns`. This is enforced through the resource policy attached to the `LineageGroup`. The result from this action includes all the lineage entities to which you have access, whether they are owned by your account or shared by another account. For more information, see [Querying Lineage Entities](querying-lineage-entities.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

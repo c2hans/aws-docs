@@ -44,7 +44,3 @@ The following procedure describes how to create a service starting from the envi
 1. (Optional) Under **Route traffic to this service**, if you want to set this service as the application's default route, select the corresponding check box.
 
    When you create a service, you can optionally route application traffic to it at the same time. If the application the service is being created in does not have any routes, you can make the service the application’s default route so that all traffic is routed to the service. If the application has existing routes, then you can add a route with a path to point to the service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub Refactor Spaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-refactor-spaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

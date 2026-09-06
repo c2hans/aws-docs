@@ -245,7 +245,3 @@ namespace IamCreatePolicyFromJson
 ------
 + You can verify that the policy was created by looking in the [IAM console](https://console.aws.amazon.com/iam/home#/policies). In the **Filter policies** drop-down list, select **Customer managed**. Delete the policy when you no longer need it.
 +  For more information about policy creation, see [Creating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) and the [IAM JSON policy reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies.html) in the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

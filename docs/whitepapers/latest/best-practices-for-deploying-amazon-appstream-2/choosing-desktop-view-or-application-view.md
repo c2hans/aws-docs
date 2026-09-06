@@ -53,7 +53,3 @@ $session_token = $parsed.SessionToken
 <a name="protecting-appstream-bucket"></a>
 
 If your WorkSpaces Applications workload is configured with Home Folder and/or Application Persistence, then it is a best practice to protect the Amazon S3 bucket that the persistent data is being stored in from unauthorized access or accidental deletion. The first layer of protection is to add an Amazon S3 bucket policy to [prevent accidental deletion of the bucket](https://docs.aws.amazon.com/appstream2/latest/developerguide/s3-iam-policy.html#s3-iam-policy-delete). The second layer of protection is to add a bucket policy that aligns to the principle of least privilege. Aligning to the principle can be done by only [allowing bucket access to the necessary parties](https://docs.aws.amazon.com/appstream2/latest/developerguide/s3-iam-policy.html#s3-iam-policy-restricted-access).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

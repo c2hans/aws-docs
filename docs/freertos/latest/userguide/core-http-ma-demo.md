@@ -47,7 +47,3 @@ The [ connectToServerWithBackoffRetries](https://github.com/aws/amazon-freertos/
 <a name="core-http-ma-demo-send-receive"></a>
 
 The [ prvSendHttpRequest](https://github.com/aws/amazon-freertos/blob/main/demos/coreHTTP/http_demo_mutual_auth.c#L402-L507) function demonstrates how to send a POST request to the AWS IoT HTTP server. For more information on making a request to the REST API in AWS IoT, see [Device communication protocols - HTTPS](https://docs.aws.amazon.com/iot/latest/developerguide/http.html). The response is received with the same coreHTTP API call, `HTTPClient_Send`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

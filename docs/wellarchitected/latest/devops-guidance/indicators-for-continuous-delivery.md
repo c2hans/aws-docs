@@ -15,7 +15,3 @@ Ensure that your code base remains in a releasable state at all times and deploy
 + [[DL.CD.5] Ensure on-demand deployment capabilities](dl.cd.5-ensure-on-demand-deployment-capabilities.md)
 + [[DL.CD.6] Refine delivery pipelines using metrics for continuous improvement](dl.cd.6-refine-delivery-pipelines-using-metrics-for-continuous-improvement.md)
 + [[DL.CD.7] Remove manual approvals to practice continuous deployment](dl.cd.7-remove-manual-approvals-to-practice-continuous-deployment.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

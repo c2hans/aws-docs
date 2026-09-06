@@ -147,7 +147,3 @@ Release a change to run your pipeline. Verify that the build commands ran by vie
 
 1. To view the logs for the action, choose **View details ** on the successful Commands action. View the logs for the Commands action.
 ![Example logs for the Commands action](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/commands-output-logs.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

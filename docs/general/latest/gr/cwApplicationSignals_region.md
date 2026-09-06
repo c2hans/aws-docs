@@ -76,7 +76,3 @@ source_url: https://docs.aws.amazon.com/general/latest/gr/cwApplicationSignals_r
 | Rate of UpdateServiceLevelObjective requests | Each supported Region: 5 per second |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/application-signals/quotas/L-7AB759D6)  | The maximum number of UpdateServiceLevelObjective requests you can make per second in this Region. |
 
 For more information, see [CloudWatch Quotas](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_limits.html) in the *Amazon CloudWatch User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

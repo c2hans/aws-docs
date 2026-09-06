@@ -28,7 +28,3 @@ You can edit the DNS records for your domain's DNS zone at any time using the Li
 1. When you're done, choose the **Save** icon to save your changes.
 **Note**
 Allow time for the DNS record changes to propagate through the internet's DNS, which may take several hours.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

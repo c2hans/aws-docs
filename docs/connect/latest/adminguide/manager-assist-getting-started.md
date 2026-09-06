@@ -29,7 +29,3 @@ Assign users the following security profile permissions so that they can open th
 
 1. Review the response, and then ask a follow-up question to drill into your data or to view historical trends. You can also choose from the suggested follow-up prompts. For more information about the types of questions that you can ask, see [Capabilities overview](manager-assist-capabilities.md).
 ![A response that includes recommended actions, followed by three suggested follow-up prompts.](http://docs.aws.amazon.com/connect/latest/adminguide/images/manager-assistant-follow-up-prompts.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

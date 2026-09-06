@@ -52,7 +52,3 @@ You must have AWS administrator access to the AWS account with the role and poli
 1. In the role from step 5, change the permission policy to include the `codeguru-reviewer:*` and `codeguru:*` permissions. After adding these permissions, the permission policy should look similar to the following:
 
 1. After you make the policy corrections, return to CodeCatalyst and start the workflow run again.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

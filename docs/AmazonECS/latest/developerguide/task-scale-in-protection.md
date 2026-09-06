@@ -46,6 +46,7 @@ Consider the following points before using task scale-in protection:
 + We recommend using the Amazon ECS container agent endpoint because the Amazon ECS agent has built-in retry mechanisms and a simpler interface.
 + You can reset the task scale-in protection expiration period by calling `UpdateTaskProtection` for a task that already has protection turned on.
 + Determine how long a task would need to complete its requisite work and set the `expiresInMinutes` property accordingly. If you set the protection expiration longer than necessary, then you will incur costs and face delays in the deployment of new tasks.
++ With `DEFERRED` source service revision cleanup, Amazon ECS cleans up the tasks on the source service revision after the deployment completes, and tries for up to two weeks. Amazon ECS can't stop tasks that have scale-in protection. If tasks remain protected for more than two weeks after the deployment, Amazon ECS can't clean them up. For more information, see [Complete Amazon ECS rolling deployments early with early success criteria](early-success-criteria.md).
 + Task scale-in protection is supported on Amazon ECS container agent `1.65.0` or later. You can add support for this feature on Amazon EC2 instances using older versions of the Amazon ECS container agent by updating the agent to the latest version. For more information, see [Updating the Amazon ECS container agent](ecs-agent-update.md).
 + Deployment considerations:
   + If the service uses a rolling update, new tasks will be created but tasks running older version will not be terminated until `protectionEnabled` is cleared or expires. You can adjust the `maximumPercentage` parameter in deployment configuration to a value that allows new tasks to be created when old tasks are protected.
@@ -64,7 +65,3 @@ Consider the following points before using task scale-in protection:
 The task must have the Amazon ECS task role with the following permissions:
 + `ecs:GetTaskProtection`: Allows the Amazon ECS container agent to call `GetTaskProtection`.
 + `ecs:UpdateTaskProtection`: Allows the Amazon ECS container agent to call `UpdateTaskProtection`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

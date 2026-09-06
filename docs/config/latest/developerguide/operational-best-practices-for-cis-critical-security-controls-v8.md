@@ -145,7 +145,3 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 <a name="cis-critical-security-controls-v8-conformance-pack-sample"></a>
 
 The template is available on GitHub: [ Operational Best Practices for CIS Critical Security Controls v8 IG1](https://github.com/awslabs/aws-config-rules/blob/master/aws-config-conformance-packs/Operational-Best-Practices-for-CIS-Critical-Security-Controls-v8-IG1.yaml).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

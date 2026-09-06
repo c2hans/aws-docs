@@ -276,7 +276,3 @@ API Gateway uses Java pattern-style regexes for response mapping. For more infor
 Then, as part of the integration response setup, you set the [responseParameters](https://docs.aws.amazon.com/apigateway/latest/api/API_IntegrationResponse.html#responseParameters) property on the corresponding [IntegrationResponse](https://docs.aws.amazon.com/apigateway/latest/api/API_IntegrationResponse.html) resource to specify the parameter-to-parameter mappings. You also set the [responseTemplates](https://docs.aws.amazon.com/apigateway/latest/api/API_IntegrationResponse.html#responseTemplates) map to specify mapping templates, one for each supported content type. The mapping templates map integration response parameters, or integration response body properties, to the method response body.
 
  For more information about setting up mapping templates, see [Data transformations for REST APIs in API Gateway](rest-api-data-transformations.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

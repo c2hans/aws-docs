@@ -80,7 +80,3 @@ When you create a DB cluster snapshot using the Amazon RDS API, you need to iden
 You can check that the DB cluster snapshot is available by looking under **Snapshots** on the **Maintenance & backups** tab on the detail page for the cluster in the AWS Management Console, by using the [`describe-db-cluster-snapshots`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-snapshots) CLI command, or by using the [`DescribeDBClusterSnapshots`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusterSnapshots.html) API action.
 
 You can also use the [`wait db-cluster-snapshot-available`](https://docs.aws.amazon.com/cli/latest/reference/rds/wait/db-cluster-snapshot-available.html) CLI command to poll the API every 30 seconds until the snapshot is available.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

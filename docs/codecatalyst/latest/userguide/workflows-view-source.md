@@ -47,7 +47,3 @@ AWS does not support or guarantee the action code of GitHub Actions or third-par
    A page appears, showing the Amazon S3 bucket where the action's source code resides. For information about Amazon S3, see [What is Amazon S3?](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) in the *Amazon Simple Storage Service User Guide*.
 
 1. Inspect the code to ensure it meets your expectations for quality and security.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

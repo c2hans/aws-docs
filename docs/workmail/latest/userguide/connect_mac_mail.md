@@ -29,7 +29,3 @@ If you use macOS, you can add your Amazon WorkMail account to use with macOS app
 If you need to provide an endpoint, see [Amazon WorkMail endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/workmail.html) for a current list.
 
 The information you provide in step 4 is used to set up your email account automatically. After that, you can select which macOS apps to use with Amazon WorkMail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ After you have created a dashboard, you can add, edit, or remove panels at any t
 + **Add panel**: To add a panel to a dashboard, choose the **Add panel** icon in the menu bar near the top of the page.
 + **Edit panel**To edit an existing panel on a dashboard, choose the menu icon that appears when you hover over the panel, and then choose **Edit**.
 + **Remove panel**To remove an existing panel on a dashboard, choose the menu icon that appears when you hover over the panel, and then choose **Remove**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

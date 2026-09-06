@@ -30,7 +30,3 @@ To review the change template, follow the link in your notification, sign in to 
 1. In the summary page, review the proposed content of the change template and do one of the following:
    + To approve the change template, which allows it to be used in change requests, choose **Approve**.
    + To reject the change template, which prevents it from being used in change requests, choose **Reject**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

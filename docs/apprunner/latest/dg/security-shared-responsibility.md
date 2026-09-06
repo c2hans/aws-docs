@@ -15,7 +15,3 @@ AWS and our customers share responsibility for achieving a high level of softwar
 Patching the container image is part of the customer's responsibility in the shared security model. The image owner is responsible for updating and regularly patching the container image. We recommend establishing a routine schedule for checking and applying updates to your container images. For more information on how to scan your images for vulnerabilities, see the [AWS App Runner Documentation](security-best-practices.md#security-best-practices.preventive.scan)
 
 For other App Runner security topics, see [Security in App Runner](security.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -130,7 +130,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/nhs-cloud-security-gu
  Should customers detect a vulnerability or have a security concern regarding AWS, they may want to report it as part of their incident management process. For details, see [Vulnerability Reporting](https://aws.amazon.com/security/vulnerability-reporting/).
 
  For further guidance, see [Building a cloud-specific incident response plan](https://aws.amazon.com/blogs/publicsector/building-a-cloud-specific-incident-response-plan/) on the AWS Government, Education, and Nonprofits Blog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

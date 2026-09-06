@@ -159,7 +159,3 @@ In this pattern, you deploy all your production systems in one Availability Zone
 
  **Considerations**
 + Well documented and tested processes for scaling the AWS resources and restoring data in a different Availability Zone are required to ensure recoverability.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

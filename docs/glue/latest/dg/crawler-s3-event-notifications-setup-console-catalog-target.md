@@ -25,7 +25,3 @@ When you have a Data Catalog table, set up a crawler for Amazon S3 event notific
    +  **Include dead-letter SQS ARN** (Optional): Specify a valid Amazon dead-letter SQS ARN. (For example, `arn:aws:sqs:region:account:deadLetterQueue`).
    +  Choose **Confirm**.
 ![Add Glue tables dialog showing database selection, table selection, and event-based crawling options.](http://docs.aws.amazon.com/glue/latest/dg/images/crawler-s3-event-console2-cat.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

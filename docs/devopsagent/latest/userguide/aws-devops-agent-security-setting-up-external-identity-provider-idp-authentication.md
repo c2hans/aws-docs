@@ -53,7 +53,7 @@ Choose your identity provider and follow the corresponding setup instructions.
 
 1. Leave the **Sign-in redirect URIs** as the default value for now — you will update it after configuring the Agent Space
 
-1. Under **Assignments**, assign the users or groups that should have access
+1. Under **Assignments**, assign the users or groups that should have access. Application assignment controls who can sign in. For more information, see [Managing user and group access](#managing-user-and-group-access).
 
 1. Choose **Save**
 
@@ -174,6 +174,80 @@ After choosing **Connect**, the console displays the **External Identity Provide
 
 1. After successful authentication, you are redirected back to the Agent Space web app
 
+## Managing user and group access
+<a name="managing-user-and-group-access"></a>
+
+With external IdP authentication, your identity provider is where you grant and revoke access to the Agent Space web app.
+
+### Managing access in Okta
+<a name="managing-access-in-okta"></a>
+
+Assignment to the OIDC application you created in [Step 1](#option-a-okta) governs access.
+
+#### Grant access in Okta
+<a name="grant-access-in-okta"></a>
+
+1. In the Okta Admin Console, navigate to **Applications and Resources** > **Applications** and select your application
+
+1. Choose the **Assignments** tab
+
+1. Choose **Assign**, then choose **Assign to People** or **Assign to Groups**
+
+1. Choose **Assign** next to each person or group, then choose **Done**
+
+Assign groups rather than individual people where you can. Ongoing maintenance then happens in **Directory** > **Groups**. Adding someone to the group grants access; removing them revokes it, without editing the application.
+
+#### Remove access in Okta
+<a name="remove-access-in-okta"></a>
+
+1. On the **Assignments** tab, find the person or group
+
+1. Choose the **X** (Unassign) icon and confirm
+
+Removing a group revokes access for everyone whose only assignment came through that group. If a person is also assigned directly, remove the direct assignment as well.
+
+To revoke a person's access to all applications in a single action, deactivate or suspend them in **Directory** > **People**.
+
+### Managing access in Microsoft Entra ID
+<a name="managing-access-in-microsoft-entra-id"></a>
+
+Entra ID represents your application as two objects, and the second object manages user and group assignment:
++ The **app registration** (under **App registrations**) stores the client ID, client secret, and redirect URIs. You configured it in Step 1 and Step 3.
++ The **enterprise application** (under **Enterprise applications**), also called the service principal, manages user and group assignments and sign-in properties.
+
+#### Require assignment
+<a name="require-assignment"></a>
+
+By default, an application registered in your tenant is available to every user in the tenant who authenticates successfully. Entra ID does not enforce assignment until you turn it on.
+
+1. In the Azure portal or Microsoft Entra admin center, navigate to **Enterprise applications** and select your application
+
+1. Choose **Properties**
+
+1. Set **Assignment required?** to **Yes**
+
+1. Choose **Save**
+
+#### Grant access in Entra ID
+<a name="grant-access-in-entra-id"></a>
+
+1. Navigate to **Enterprise applications** and select your application
+
+1. Choose **Users and groups**
+
+1. Choose **Add user/group**
+
+1. Select the users or groups, then choose **Assign**
+
+#### Remove access in Entra ID
+<a name="remove-access-in-entra-id"></a>
+
+1. On the **Users and groups** page, select the assignment
+
+1. Choose **Remove** and confirm
+
+To remove a user's access to all applications, disable the account. Navigate to **Users**, select the user, and set **Account enabled** to **No**.
+
 ## Updating IdP configuration
 <a name="updating-idp-configuration"></a>
 
@@ -195,6 +269,7 @@ To change any other IdP configuration field (such as Issuer URL, Client ID, or i
 <a name="how-users-access-the-agent-space-web-app"></a>
 
 After configuring external IdP authentication:
++ Confirm the users are assigned to the OIDC application in your identity provider. For more information, see [Managing user and group access](#managing-user-and-group-access).
 + Share the Agent Space web app URL with authorized users
 + When users navigate to the URL, they are redirected to your identity provider's login page
 + After entering their credentials (and completing MFA if configured by your IdP), they are redirected back to the Agent Space web app
@@ -275,7 +350,3 @@ Active user sessions will continue until they expire or the next credential refr
 + **Login fails after IdP authentication** — For Entra, verify `requestedAccessTokenVersion` is not set to `null` in the application **Manifest**. For Okta, verify the **Issuer URL** is correct.
 + **Error page after choosing Logout (Okta)** — If you see a `post_logout_redirect_uri` error after logging out, add `https://{agentSpaceId}.aidevops.global.app.aws/authorizer/welcome` as a **Sign-out redirect URI** in your Okta application's **General** tab.
 + **Users stay on identity provider page after logout (Entra)** — To redirect users back to the web app after logout, add `https://{agentSpaceId}.aidevops.global.app.aws/authorizer/welcome` as a **Redirect URI** in your Entra application's **Authentication** page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

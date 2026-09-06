@@ -40,7 +40,3 @@ The Monthly Billing report is only available in your Management Payer Account (M
 | Payer Account Total AMS Charges | payer\_account\_total<br />ams\_charges | Sum of all charges for payer account |
 | Minimum Fee | minimum\_fees | AMS Minimum Fees (if applicable) |
 | Reserved Instance and Savings Plan discount | adj\_ri\_sp\_charges | RI/SP discount to be applied against RI/SP charges (applicable under certain circumstances) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

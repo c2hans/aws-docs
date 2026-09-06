@@ -48,7 +48,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-gover
  Technical metadata is collected from various enterprise sources by a Database/Application Programming Interface (API). The API/JDBC connection periodically pulls data dictionary details from various relational/application data stores.
 
  Technical metadata is enriched by extended metadata related to the objects and attributes. The third-party data cataloging tool’s graphical user interface is used to view and update the collected metadata. Third-party tools like Collibra also provide out-of-the-box reports around the collected and enriched metadata.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

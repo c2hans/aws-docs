@@ -74,7 +74,3 @@ When the product is in the `Available` status, internal customers and Jira agent
 1. If Self-Service Actions are available, you can select a service action from the list, and then choose **Execute**.
 
 1. After the product is in the `Available` status, internal customers and Jira agents can request post-provision operations including **Request update** and **Request termination** from the **Actions** menu at the top right corner of the issue page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ If you want to switch to a dial-in connection to a meeting, you can do so in the
 1. Enter the **Meeting ID** followed by the \# key when prompted.
 
 The Amazon Chime desktop client also prompts you to switch to dial-in if your internet connection is poor. When prompted, dial the number shown to rejoin the meeting.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,7 +45,3 @@ For on-demand mode, you're billed 1 write request unit (WRU) to write up to 1 KB
 For provisioned mode, you're billed 1 write capacity unit (WCU) to write up to 1 KB of data per row, the same way as for single-Region tables. But you're billed for writes in each Region of your multi-Region keyspace. For example, writing a row of 3 KB of data per second in a multi-Region keyspace with two Regions requires 6 WCUs: 3 \* 2 = 6 WCUs. Additionally, writes that include both static and non-static data require additional write operations.
 
 For more information about pricing, see [Amazon Keyspaces (for Apache Cassandra) pricing](https://aws.amazon.com/keyspaces/pricing).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

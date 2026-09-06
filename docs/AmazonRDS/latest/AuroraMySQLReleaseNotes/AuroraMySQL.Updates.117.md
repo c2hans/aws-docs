@@ -41,7 +41,3 @@ The zero-downtime patching (ZDP) feature attempts, on a *best-effort* basis, to 
 + INNODB FTS : Assert in FTS\_CACHE\_APPEND\_DELETED\_DOC\_IDS (BUG \#18079671)
 + Assert RBT\_EMPTY(INDEX\_CACHE->WORDS) in ALTER TABLE CHANGE COLUMN (BUG \#17536995)
 + INNODB fulltext search doesn't find records when savepoints are involved (BUG \#70333, BUG \#17458835)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

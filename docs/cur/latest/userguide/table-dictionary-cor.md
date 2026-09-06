@@ -32,7 +32,3 @@ A service-linked role for Data Exports is required to create an export of the co
 Cost Optimization Hub integrates with AWS Organizations to control whether a management account can see member account recommendations in Cost Optimization Hub. For more information, see [Getting started with Cost Optimization Hub](https://docs.aws.amazon.com/cost-management/latest/userguide/coh-getting-started.html) in the *AWS Cost Management User Guide*.
 
 The cost optimization recommendations table for a given AWS account inherits the same AWS Organizations settings you configured for Cost Optimization Hub. This means the content of the cost optimization recommendations table matches the recommendations that appear in Cost Optimization Hub for each AWS account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

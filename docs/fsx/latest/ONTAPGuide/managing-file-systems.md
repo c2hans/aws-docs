@@ -36,7 +36,3 @@ You can manage FSx for ONTAP file systems by using the NetApp ONTAP CLI or REST 
 + **Intercluster** – Use this endpoint when setting up replication using NetApp SnapMirror or caching using NetApp FlexCache.
 
 For more information, see [Managing FSx for ONTAP resources using NetApp applications](managing-resources-ontap-apps.md) and [Replicating your data using NetApp SnapMirror](scheduled-replication.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

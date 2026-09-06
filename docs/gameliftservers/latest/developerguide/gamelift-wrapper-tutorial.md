@@ -213,7 +213,7 @@ aws gamelift create-game-session \
 --region us-west-2
 ```
 
-You can also pass customized game properties to your server executable. See the Game Server Arguments in the README for details. When it receives the create-game-session call, the Amazon GameLift Servers inform the wrapper to launch the game server executable and start a game session. What is in the `config.yaml` affects the game server's configuration, and the launch parameters that are set in the console determine the configuration of the game session itself.
+You can also pass customized game properties to your server executable. See the Game Server Arguments in the README for details. When it receives the create-game-session call, Amazon GameLift Servers informs the wrapper to launch the game server executable and start a game session. What is in the `config.yaml` affects the game server's configuration, and the launch parameters that are set in the console determine the configuration of the game session itself.
 
 Example format for adding game properties:
 
@@ -271,7 +271,7 @@ To use target-based auto scaling
 
 Target-based autoscaling (target tracking) links fleet scaling to the percentage of available game sessions. As players surge to play your game and available game sessions decrease, it responds by automatically adding more instances to the fleet.
 
-1. Under **Target-based auto scaling policy**, choose **Add policy** and set the fleet's capacity to change automatically when it reaches the threshold of the percentage of available game sessions that you set. A larger buffer can better handle surges, getting new players get into games fast, but it may also lead to higher hosting costs.
+1. Under **Target-based auto scaling policy**, choose **Add policy** and set the fleet's capacity to change automatically when it reaches the threshold of the percentage of available game sessions that you set. A larger buffer can better handle surges, getting new players into games fast, but it may also lead to higher hosting costs.
 
 1. Choose **Confirm** to accept the changes.
 
@@ -326,7 +326,3 @@ For real-time log access or extended retention periods through CloudWatch:
 + [Experiment with FlexMatch matchmaking by creating a matchmaker and rule set for your game](https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/match-intro.html)
 + [Start working on functionality for your game client and backend service components, so players can make join requests and directly connect to game sessions](gamelift-sdk-client-api.md)
 + [When ready, move to a fully-integrated solution](gamelift-roadmap-managed.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

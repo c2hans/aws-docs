@@ -372,7 +372,3 @@ Authorization: AWS4-HMAC-SHA256 Credential={{access_key_id}}/{{YYYYMMDD}}/{{regi
 ```
 
 To use the API Gateway console to export and download the published documentation of an API, follow the instructions in [Export REST API using the API Gateway console](api-gateway-export-api.md#api-gateway-export-api-from-console).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ For more information regarding supported target databases, see [Target data prov
 <a name="sc-data-providers-rds-privileges"></a>
 
 To use Amazon RDS for Db2 as a target, DMS Schema Conversion requires the `master_user_role` role. For more information, see [Amazon RDS for Db2 default roles](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-default-roles.html) in the *Amazon Relational Database Service User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

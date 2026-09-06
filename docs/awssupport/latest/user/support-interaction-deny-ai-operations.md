@@ -51,7 +51,3 @@ The following example policy explicitly denies all AI-enhanced troubleshooting o
 
 **Note**
 Denying these operations doesn't affect access to traditional support case management. You can continue creating and managing support cases using the standard workflow.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -244,7 +244,7 @@ SETTINGS ( S3_BUCKET 'amzn-s3-demo-bucket'
 ### Get probabilities
 <a name="probability_metrics_create_model_get_probability"></a>
 
- Once the probability function is ready, running the command returns a [SUPER type](https://docs.aws.amazon.com/redshift/latest/dg/r_SUPER_type.html) that contains arrays of the returned probabilities and their associated labels. For example, the result `"probabilities" : [0.7, 0.3], "labels" : ["False.", "True."]` means that the False label has a probability of 0.7, and the True label has a probability of 0.3.
+ After the probability function is ready, running the command returns a [SUPER type](https://docs.aws.amazon.com/redshift/latest/dg/r_SUPER_type.html) that contains arrays of the returned probabilities and their associated labels. For example, the result `"probabilities" : [0.7, 0.3], "labels" : ["False.", "True."]` means that the False label has a probability of 0.7, and the True label has a probability of 0.3.
 
 ```
 SELECT customer_churn_predict_probabilities(Account_length, Area_code,
@@ -326,7 +326,3 @@ labels     | probabilities
 -----------+--------------
  "True."   | 0.75
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

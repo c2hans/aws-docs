@@ -31,7 +31,3 @@ VPC Lattice can listen on HTTP, HTTPS, HTTP/1.1, and HTTP/2 and communicate to t
 You can create a TLS listener to ensure that your application decrypts the encrypted traffic instead of VPC Lattice. For more information, see [TLS listeners](tls-listeners.md).
 
 VPC Lattice does not natively support WebSockets. However, you can still connect to Websocket-based services by using TLS Listeners or routing through VPC Lattice resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

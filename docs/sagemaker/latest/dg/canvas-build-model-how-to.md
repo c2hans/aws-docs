@@ -218,7 +218,3 @@ If you make batch predictions with your model after building, Canvas adds droppe
 1. After reviewing your data and making any changes to your dataset, choose **Quick build** or **Standard build** to begin a build for your model.
 
 After your model begins building, you can leave the page. When the model shows as **Ready** on the **My models** page, it’s ready for analysis and predictions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

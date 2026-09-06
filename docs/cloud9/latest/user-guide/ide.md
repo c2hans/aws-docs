@@ -45,7 +45,3 @@ Learn how to work with the AWS Cloud9 IDE by reading one or more of these topics
 + [Windows / Linux Emacs Keybindings Reference](keybindings-emacs-windows-linux.md)
 + [Windows / Linux Sublime Keybindings Reference](keybindings-sublime-windows-linux.md)
 + [Commands reference](commands.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

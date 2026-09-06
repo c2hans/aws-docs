@@ -56,7 +56,3 @@ Elemental Inference produces metadata for a feature type (for example, smart cro
 Elemental Inference retains metadata for 7 days, for both ENABLED and DISABLED outputs.
 
 It continually discards data that is older than 7 days, for both ENABLED and DISABLED outputs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Inference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-inference` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

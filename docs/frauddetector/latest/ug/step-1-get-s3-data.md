@@ -56,7 +56,3 @@ The example dataset you use in this tutorial provides details of online account 
    1. The example data file is uploaded to Amazon S3 bucket. Make a note of the bucket location. In the **Objects**, choose the example data file that you just uploaded.
 
    1. In the **Object overview**, copy the location under **S3 URI**. This is the Amazon S3 location of your example data file. You use it later. You can additionally copy the **Amazon Resource Name (ARN)** of your S3 bucket and save it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

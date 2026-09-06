@@ -14,7 +14,3 @@ Version 2 of the SDK for Java has the following changes from version 1.
 + Operations support a short-hand way to create requests: `dynamoDbClient.putItem(request -> request.tableName(...))`.
 
 The following sections describe specific changes between version 1 and version 2. Some parameter type changes can be converted automatically using the [migration tool](migration-tool.md), while other changes require manual updates to your code.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

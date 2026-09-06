@@ -437,7 +437,3 @@ Generative Journey includes settings that control how the agent behaves.
 | **Timeout** | Sets how long the agent has to respond before the timeout path is triggered. |
 
 Use conservative settings when latency, cost, or predictable behavior is important.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

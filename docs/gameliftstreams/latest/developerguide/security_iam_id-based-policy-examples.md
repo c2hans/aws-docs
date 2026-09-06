@@ -129,7 +129,3 @@ If you pass an IAM role in `RoleArn` when you create a stream URL, also grant `i
 
 **Important**
 Because `CreateStreamUrl` freezes the stream URL's configuration (including an optional IAM role passed in `RoleArn`) at creation time, grant this permission only to trusted principals. Anyone who can create a stream URL can hand out unauthenticated, temporary access to a stream session.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

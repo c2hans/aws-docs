@@ -38,7 +38,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  Generally, the focus of SaaS is placed on how the application in the middle of this model is implemented. Businesses want to focus on how data is stored, how resources are shared, and so on. However, the reality is that, while these details are definitely important, there are many ways your application can be built and still present itself as a SaaS solution to your customers.
 
  What’s critical is the broader goal of having a single, unified experience that surrounds your tenant environments. Having this shared experience is what allows you to drive the growth, agility, and operational efficiency that is connected to the overall objectives of a SaaS business.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

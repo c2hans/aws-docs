@@ -22,7 +22,3 @@ The following table describes the documentation releases for Wickr.
 | [Guest users (preview)](#doc-history) | Guest users can sign in to the Wickr client and collaborate with Wickr network users. For more information, see [Guest users (preview)](https://docs.aws.amazon.com/wickr/latest/userguide/guest-users.html). | May 31, 2023 |
 | [Emoji reactions](#doc-history) | Users can now add emoji reactions to messages in the Wickr client. For more information, see [Use emojis](https://docs.aws.amazon.com/wickr/latest/userguide/emoji-reactions.html). | March 14, 2023 |
 | [Initial release](#doc-history) | Initial release of the Wickr User Guide | November 28, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

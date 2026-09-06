@@ -26,7 +26,3 @@ For binary and multicategory facet labels, the DPL values range over the interva
 + Negative DPL values indicate that facet *d* has a higher proportion of positive outcomes when compared with facet *a*.
 
 Whether or not a high magnitude of DPL is problematic varies from one situation to another. In a problematic case, a high-magnitude DPL might be a signal of underlying issues in the data. For example, a dataset with high DPL might reflect historical biases or prejudices against age-based demographic groups that would be undesirable for a model to learn.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ Read operations such as `GetItem`, `Query`, and `Scan` provide an optional `Cons
 DynamoDB also supports [global tables](GlobalTables.md) for multi-active and multi-Region replication. A global table is composed of multiple replica tables in different AWS Regions. Any change made to any item in any replica table is replicated to all the other replicas within the same global table.
 
 Global tables support two consistency modes. With multi-Region eventual consistency (MREC), the default mode, item changes are replicated to the other replicas typically within a second and are eventually consistent across Regions. With multi-Region strong consistency (MRSC), item changes are synchronously replicated to another Region before the write returns, and strongly consistent read operations on any replica always return the latest version of an item. For more information, see [Consistency modes](V2globaltables_HowItWorks.md#V2globaltables_HowItWorks.consistency-modes).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -69,7 +69,3 @@ We recommend that you consider the following in regard to query processing:
 + Cached compiled code is shared across sessions on the same cluster, so subsequent executions of the same query will be faster, often even with different parameters.
 + When you benchmark your queries, we recommend that you always compare the times for the second execution of a query, because the first execution time includes the overhead of compiling the code. For more information, see [Query performance factors](https://docs.aws.amazon.com/prescriptive-guidance/latest/query-best-practices-redshift/query-performance-factors.html) in the *Query best practices for Amazon Redshift* guide.
 + The compute nodes could return some data to the leader node during query execution if necessary. For example, if you have a subquery with a `LIMIT` clause, the limit is applied on the leader node before data is redistributed across the cluster for further processing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -94,7 +94,3 @@ AWS SigV4 can be expressed in the HTTP Authorization header or as a query string
   + AWS SDK for Python (Boto) – [signers.py](https://github.com/boto/botocore/blob/develop/botocore/signers.py)
   + AWS SDK for Ruby – [signer.rb](https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sigv4/lib/aws-sigv4/signer.rb)
 + If you encounter errors when signing requests, see [Troubleshoot Signature Version 4 signing for AWS API requests](reference_sigv-troubleshooting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

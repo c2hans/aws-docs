@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/zapier-integratio
 # Zapier integration
 <a name="zapier-integration"></a>
 
-With the Zapier action connector, you can trigger workflows across thousands of applications that Zapier connects to, directly in Amazon Quick through natural language. Use this connector to extend the action capabilities of Amazon Quick to any application that you have already configured in your Zapier account.
+With the Zapier connector, you can trigger workflows across thousands of applications that Zapier connects to, directly in Amazon Quick through natural language. Use this connector to extend the action capabilities of Amazon Quick to any application that you have already configured in your Zapier account.
 
 Amazon Quick supports multiple authentication methods for Zapier. Choose the method that best fits your organization's security requirements.
 + **Default OAuth app** – Uses an AWS-managed OAuth application. No additional credentials are needed. Users authenticate directly with their Zapier account.
@@ -110,7 +110,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Invalid client credentials (Custom OAuth app or Service-to-Service OAuth)** – Verify that the Client ID and Client secret match the values in your Zapier OAuth app.
 + **API Key authentication fails** – Verify that the API key has not been revoked.
 + **Expected actions are missing** – Verify that the Zaps or actions that you want to use are configured and enabled in your Zapier account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

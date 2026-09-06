@@ -76,7 +76,3 @@ After you install Node.js on an Amazon EC2 instance, you can create an Amazon Ma
 For more information about the commands and software used in this topic, see the following webpages:
 + Node version manager (`nvm`) –⁠See [nvm repo on GitHub](https://github.com/creationix/nvm).
 + Node Package Manager (`npm`) –⁠See [npm website](https://www.npmjs.com).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for JavaScript. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

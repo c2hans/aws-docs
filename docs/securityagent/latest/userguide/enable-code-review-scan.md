@@ -189,7 +189,3 @@ After setting up code review configurations:
 + Connect additional GitHub repositories or S3 buckets as your codebase grows
 + Configure security requirement packs for organization-specific validation (see [Manage security requirements](security-requirements.md))
 + Review how pull request findings appear in GitHub (see [Review code security findings in pull requests](review-code-findings-github.md))
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

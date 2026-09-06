@@ -158,7 +158,7 @@ You can use the device name, such as `/dev/xvdf`, in `/etc/fstab`, but we recomm
 
 1. Add the following entry to `/etc/fstab` to mount the device at the specified mount point. The fields are the UUID value returned by **blkid** (or **lsblk** for Ubuntu 18.04), the mount point, the file system, and the recommended file system mount options. For more information about the required fields, run `man fstab` to open the **fstab** manual.
 
-   In the following example, we mount the device with UUID `aebf131c-6957-451e-8d34-ec978d9581ae` to mount point `/data` and we use the `xfs` file system. We also use the `defaults` and `nofail` flags. We specify `0` to prevent the file system from being dumped, and we specify `2` to indicate that it is a non-root device.
+   The following example mounts the device with UUID `aebf131c-6957-451e-8d34-ec978d9581ae` to mount point `/data` and uses the `xfs` file system. It also uses the `defaults` and `nofail` flags. It specifies `0` to prevent the file system from being dumped, and specifies `2` to indicate that it is a non-root device.
 
    ```
    UUID={{aebf131c-6957-451e-8d34-ec978d9581ae}}  {{/data}}  {{xfs}}  defaults,nofail  0  2
@@ -238,7 +238,7 @@ Use one of the following methods to make a volume available on a Windows instanc
 
    1. Navigate to a directory, such as C:\\, to store the script file.
 
-   1. Choose or right-click an empty space within the folder to open the dialog box, position the cursor over **New** to access the context menu, and then choose **Text Document**.
+   1. Choose (right-click) an empty space within the folder to open the dialog box, position the cursor over **New** to access the context menu, and then choose **Text Document**.
 
    1. Name the text file `diskpart.txt`.
 
@@ -319,7 +319,3 @@ If you're mounting a volume that already has data on it (for example, a public d
 ![Review your settings and finish the wizard.](http://docs.aws.amazon.com/ebs/latest/userguide/images/windows-2016-new-simple-volume-wizard-finish.png)
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

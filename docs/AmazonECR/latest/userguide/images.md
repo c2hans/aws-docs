@@ -24,7 +24,3 @@ The [Sign images in Amazon ECR](image-signing.md) and [Deleting signatures and o
 + [Container image manifest format support in Amazon ECR](image-manifest-formats.md)
 + [Using Amazon ECR images with Amazon ECS](ECR_on_ECS.md)
 + [Using Amazon ECR Images with Amazon EKS](ECR_on_EKS.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

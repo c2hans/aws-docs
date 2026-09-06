@@ -30,7 +30,3 @@ Before registering a Bitbucket or Confluence integration in the AWS Console, you
 1. Choose **Copy to Clipboard** to copy the installation ID.
 
 You will need this installation ID when completing the registration in the AWS Security Agent Management Console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

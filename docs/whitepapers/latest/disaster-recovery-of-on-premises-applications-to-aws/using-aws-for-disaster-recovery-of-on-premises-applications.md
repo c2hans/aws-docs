@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-
 +  **Application** **support** – Atomicity, consistency, isolation, durability (ACID)-compliant applications are supported, including any ACID-compliant database, such as Microsoft SQL Server, Oracle Database, and SAP HANA.
 +  **Automation** – Ability to fully automate all of the disaster recovery-related operations.
 +  **Ease of use** – Ability to add the disaster recovery capabilities to working applications with no need for redesign or re-architecture work.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

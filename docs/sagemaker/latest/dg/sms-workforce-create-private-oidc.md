@@ -255,7 +255,3 @@ After you have created your OIDC IdP workforce, you can use the following proced
 Once you've created a private workforce using your IdP and verified your IdP authentication response, you can create work teams using your IdP groups. To learn more, see [Manage a Private Workforce (OIDC IdP)](sms-workforce-manage-private-oidc.md).
 
 You can restrict worker access to tasks to specific IP addresses, and update or delete your workforce using the SageMaker API. To learn more, see [Private workforce management using the Amazon SageMaker API](sms-workforce-management-private-api.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

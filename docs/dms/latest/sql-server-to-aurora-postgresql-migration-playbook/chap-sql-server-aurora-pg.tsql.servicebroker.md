@@ -181,7 +181,3 @@ You can also use AWS Lambda to query a table from the database, process the data
 For even more decoupling and reducing workloads from the database, you can use Amazon SQS with Lambda.
 
 For more information, see [Database Mail](chap-sql-server-aurora-pg.management.databasemail.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

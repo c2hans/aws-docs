@@ -409,7 +409,3 @@ For more information about how to use the `BaselineOverride` parameter, see [Usi
 **Usage**: Optional.
 
 The time in seconds—between 1 and 36000 seconds (10 hours)—for a command to be completed before it is considered to have failed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

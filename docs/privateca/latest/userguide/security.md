@@ -20,7 +20,3 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Compliance validation for AWS Private Certificate Authority](security-compliance-validation.md)
 + [Infrastructure security in AWS Private Certificate Authority](infrastructure-security.md)
 + [AWS Private Certificate Authority Customer CP/CPS Framework](pca-customer-cpcps.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

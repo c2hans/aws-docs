@@ -106,7 +106,3 @@ The Minimal Container image is a new container image introduced in the AL2023.2 
 + `gpg-pubkey-d832c631-6515c85e`
 + `libcurl-minimal-8.3.0-1.amzn2023.0.2`
 + `system-release-2023.2.20231011-0.amzn2023`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

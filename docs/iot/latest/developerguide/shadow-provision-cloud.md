@@ -114,7 +114,3 @@ Do not use personally identifiable information in your thing name. The thing nam
 
 **Next steps**
 You can now install the AWS IoT device SDK for Python, run the `shadow.py` sample application, and use Device Shadows to control the state. For more information about how to run this tutorial, see [Tutorial: Installing the Device SDK and running the sample application for Device Shadows](lightbulb-shadow-application.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

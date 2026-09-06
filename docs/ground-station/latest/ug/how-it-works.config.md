@@ -267,7 +267,3 @@ This config represents a destination node in a dataflow. It will convert the pro
 +  [ AWS::GroundStation::Config TelemetrySinkConfig CloudFormation property](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-groundstation-config-telemetrysinkconfig.html)
 +  [ Config AWS CLI reference](https://docs.aws.amazon.com/cli/latest/reference/groundstation/create-config.html) (see the `telemetrySinkConfig -> (structure)` section)
 +  [ TelemetrySinkConfig API reference](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TelemetrySinkConfig.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

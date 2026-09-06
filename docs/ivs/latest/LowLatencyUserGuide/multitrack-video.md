@@ -40,7 +40,3 @@ Resolutions for IVS are defined as follows:
 If you are interested in integrating IVS APIs and SDKs into your applications, see the [Multitrack Video Setup Guide](multitrack-video-setup.md).
 
 If you are interested in integrating support for multitrack video into creator broadcast software or a third-party streaming service, see the [Multitrack Video Broadcast Software Integration Guide](multitrack-video-sw-integration.md) and the Veovera Software Organization’s [Enhanced RTMP Specification v2](https://veovera.org/docs/enhanced/enhanced-rtmp-v2).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

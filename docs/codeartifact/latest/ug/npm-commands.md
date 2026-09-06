@@ -85,7 +85,3 @@ These npm commands are not supported by CodeArtifact repositories.
 |  [token](https://docs.npmjs.com/cli/token)  | Manages your authentication tokens. | CodeArtifact uses a different model for getting authentication tokens. For information, see [Authentication with npm](npm-auth.md). |
 |  [unpublish](https://docs.npmjs.com/cli/unpublish)  | Removes a package from the registry. | CodeArtifact does not support removing a package version from a repository using the npm client. You can use the [delete-package-version](delete-package.md) command. |
 |  [whoami](https://docs.npmjs.com/cli/whoami)  | Displays the npm user name. | CodeArtifact uses a user model that is different from the public npmjs repository. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ When you open the Service Quotas console, the dashboard displays cards for up to
 **Next steps**
 + [View the AWS default value and applied values](https://docs.aws.amazon.com/servicequotas/latest/userguide/gs-request-quota.html) of a particular quota.
 + For adjustable quotas, you can [request a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Service Quotas. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicequotas` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

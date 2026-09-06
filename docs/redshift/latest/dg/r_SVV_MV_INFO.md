@@ -22,7 +22,7 @@ SVV\_MV\_INFO is visible to all users. Superusers can see all rows; regular user
 | schema\_name | char(128)  | The schema of the database.  |
 | user\_name | char(128)  | The user who owns the materialized view.  |
 | name  | char(128)  | The materialized view name.  |
-| is\_stale  | char(1)  | A t indicates that the materialized view is stale. A stale materialized view is one where the base tables have been updated but the materialized view hasn't been refreshed. An f indicates that the materialized view is up-to-date with the base table changes. A u indicates unknown staleness (e.g., in case of MVs on plain external tables). This information might not be accurate if a refresh hasn't been run since the last restart. |
+| is\_stale  | char(1)  | A t indicates that the materialized view is stale. A stale materialized view is one where the base tables have been updated but the materialized view hasn't been refreshed. An f indicates that the materialized view is up-to-date with the base table changes. A u indicates unknown staleness (for example, in case of MVs on plain external tables). This information might not be accurate if a refresh hasn't been run since the last restart. |
 | state  | integer  | The state of the materialized view as follows: +  0 – The materialized view is fully recomputed when refreshed.  <br />+  1 – The materialized view is incremental. <br />+  101 – The materialized view can't be refreshed due to a dropped column. This constraint applies even if the column isn't used in the materialized view. <br />+  102 – The materialized view can't be refreshed due to a changed column type. This constraint applies even if the column isn't used in the materialized view. <br />+  103 – The materialized view can't be refreshed due to a renamed table. <br />+  104 – The materialized view can't be refreshed due to a renamed column. This constraint applies even if the column isn't used in the materialized view. <br />+  105 – The materialized view can't be refreshed due to a renamed schema.   |
 | autorewrite | char(1) | A t indicates that the materialized view is eligible for automatic rewriting of queries.  |
 | autorefresh | char(1) | A t indicates that the materialized view can be automatically refreshed.  |
@@ -45,7 +45,3 @@ database_name |       schema_name       | user_name |   name  |  is_stale | stat
  dev          | test_ivm_setup          | catch-22  | mv      |   f       |     1 |           1 |           0
  dev          | test_ivm_setup          | lotr      | old_mv  |   t       |     1 |           0 |           1
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

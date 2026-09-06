@@ -26,7 +26,3 @@ If you try to perform an action restricted by a chat applications policy, an err
 
 **Note**
 Chat applications policies are validated at runtime. This means that existing resources are continuously checked for compliance. There is no overlap with existing IAM permissions since runtime-based IAM permissions for sending notifications or interacting with Amazon Q Developer in chat applications are not currently supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

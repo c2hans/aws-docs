@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
  Supporting tenant isolation is fundamental for some organizations and domains. The notion that data is separated—even in a virtualized environment—can be seen as essential to SaaS providers that have specific regulatory or security requirements.
 
  As you consider each AWS storage solution, think about how isolation is achieved on each of the AWS storage services. As you will see, achieving isolation on RDS looks very different from how it does on DynamoDB. Consider these differences as you select your storage strategy and assess the security considerations of your customers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

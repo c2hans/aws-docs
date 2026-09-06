@@ -203,6 +203,8 @@ The following table shows the maximum number of running Dedicated Hosts that you
 | Running Dedicated r8idb Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-D09C33FE) |
 | Running Dedicated r8idn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-2C6EB73A) |
 | Running Dedicated r8in Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-088AF713) |
+| Running Dedicated r9g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-335EB165) |
+| Running Dedicated r9gd Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-6403048D) |
 | Running Dedicated t1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-BD62EDF4) |
 | Running Dedicated t2 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-DBCD5944) |
 | Running Dedicated t3 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-1586174D) |
@@ -246,7 +248,3 @@ The following table shows the maximum number of vCPUs for concurrently active Ca
 | Concurrent Trn1 Capacity Blocks per organization | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-C4947F9A) |
 | Concurrent Trn2 Capacity Blocks per account | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-64569A79) |
 | Concurrent Trn2 Capacity Blocks per organization | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-24E8B4C0) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

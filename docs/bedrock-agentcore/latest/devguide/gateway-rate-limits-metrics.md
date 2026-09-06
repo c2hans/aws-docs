@@ -78,7 +78,3 @@ The following example shows a rate limit that enforces both requests per minute 
 ```
 
 In this example, each caller is throttled if they exceed either 300 requests per minute or 50,000 tokens per minute to `my-inference-target`, whichever limit is reached first.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

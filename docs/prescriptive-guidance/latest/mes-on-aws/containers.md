@@ -25,7 +25,3 @@ The architecture in the following diagram combines DNS and load balancing for a 
 1. Elastic Load Balancing (ELB) automatically distributes incoming traffic for MES modules across multiple targets in one or more Availability Zones. For more information, see [Workloads](https://docs.aws.amazon.com/eks/latest/userguide/eks-workloads.html) in the Amazon EKS documentation.
 
 1. Amazon Route 53 serves as a DNS service to resolve incoming requests to the load balancer in the primary AWS Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

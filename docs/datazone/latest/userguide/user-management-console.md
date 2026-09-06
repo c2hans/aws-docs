@@ -96,7 +96,3 @@ SSO groups are created or synchronized with your identity provider in AWS IAM Id
    + When a member of the group accesses the domain's data portal, the status will change automatically to **Activated**.
 
 1. Remove an **Assigned SSO group** by selecting the group and choosing **Unassign** from the **Actions** menu. As a result, the group will lose access to the Amazon DataZone domain. The group’s status will show as **Not Assigned**. Users that gained their access to Amazon DataZone via their membership in this group will lose access. This option is unavailable if the domain is set to implicit user assignment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

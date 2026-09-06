@@ -134,7 +134,3 @@ If you don't see the expected outcomes, examine the troubleshooting content in t
 +  For guidance about available data management libraries in AWS Glue for Ray, see [Connecting to data in Ray jobs](edit-script-ray-connections-formats.md). For more experience using Ray Data to transform and write datasets, follow the examples in the Ray Data documentation. See [Ray Data: Examples (2.4.0)](https://docs.ray.io/en/releases-2.4.0/data/examples/index.html).
 + For more information about configuring AWS Glue for Ray jobs, see [Working with Ray jobs in AWS Glue](ray-jobs-section.md).
 + For more information about writing AWS Glue for Ray scripts, continue reading the documentation in this section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

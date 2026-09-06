@@ -116,7 +116,3 @@ For information on AWS Support, see [Getting started with AWS Support](https://d
 <a name="oracle-service-level-agreements"></a>
 
 If you have questions about Oracle Database@AWS Service Level Agreements (SLAs), or want to request service credits for SLA breaches, contact your Oracle account manager. See [Service Level Agreements](https://docs.oracle.com/iaas/Content/General/Reference/slastatement.htm) for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

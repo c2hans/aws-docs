@@ -173,7 +173,3 @@ A principal denied by this SCP can still perform Kubernetes admin operations if 
 + Consider using AWS Config rules to detect untagged EKS clusters that should be tagged
 + Review the denied action list against the current EKS API and add any newer mutating actions your organization wants to restrict (for example, EKS capability management or `eks:CancelUpdate`), since AWS adds control plane actions over time
 + Test the SCP in a non-production OU before applying broadly
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

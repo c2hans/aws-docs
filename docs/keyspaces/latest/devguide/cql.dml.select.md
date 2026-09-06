@@ -103,7 +103,3 @@ The `WRITETIME` function can’t be used on multi-cell columns such as collectio
 
 **Note**
 For compatibility with established Cassandra driver behavior, tag-based authorization policies are not enforced when you perform operations on system tables by using Cassandra Query Language (CQL) API calls through Cassandra drivers and developer tools. For more information, see [Amazon Keyspaces resource access based on tags](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-tags).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

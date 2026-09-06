@@ -32,7 +32,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/co
 <a name="maintaining-an-applications-qualified-state"></a>
 
  Of course, once an application has been deployed, it needs to be maintained under a state of control. However, a lot of the heavy lifting for things like change management, configuration management, security management, backup and restore have been built into the regulated landing zone for the benefit of all application teams.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

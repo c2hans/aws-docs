@@ -530,6 +530,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [bedrock-agentcore:CreateConfigurationBundle](#list_bedrock-agentcore-action-CreateConfigurationBundle)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [bedrock-agentcore:TagResource](#list_bedrock-agentcore-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateConsentPortal  **
+  - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:TagResource](#list_bedrock-agentcore-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** bedrock-agentcore.amazonaws.com / **Access level:** Write
+
 - **   CreateDataset  **
   - **SDK client:** bedrock-agentcore-control
   - **IAM action:**  [bedrock-agentcore:CreateDataset](#list_bedrock-agentcore-action-CreateDataset)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -3236,7 +3241,3 @@ Amazon Bedrock Agentcore defines the following condition keys that can be used i
 |   [bedrock-agentcore:strategyId](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/#condition-keys-strategyId)  | Filters access by Memory Strategy Id | String |
 |   [bedrock-agentcore:subnets](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/security-vpc-condition.html)  | Filters access by the ID of subnets configured for an AgentCore resource | ArrayOfString |
 |   [bedrock-agentcore:userid](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/#condition-keys-userid)  | Filters access by the static user ID value passed in the request | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

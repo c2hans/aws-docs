@@ -50,7 +50,3 @@ All services on a Snowball Edge device use some of the finite resources on the d
   + While Amazon S3 compatible storage on Snowball Edge is ACTIVE on a Snowball Edge Compute Optimized with AMD EPYC Gen2 and NVME, for a single node with the minimum configuration of 3 TB of Amazon S3 compatible storage on Snowball Edge, it uses 8 vCPU cores and 16 GB of memory. For a single node with more than 3 TB of Amazon S3 compatible storage on Snowball Edge, it uses 20 vCPU cores and 40 GB of memory. For a cluster, it uses 20 vCPU cores and 40 GB of memory.
 
 You can determine whether a service is `ACTIVE` on a Snowball Edge by using the command `snowballEdge describe-service` on the Snowball Edge client. For more information, see [Vieiwing status of services running on Snowball Edge](using-client-commands.md#client-service-status).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

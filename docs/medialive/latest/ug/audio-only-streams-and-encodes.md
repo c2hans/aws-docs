@@ -25,7 +25,3 @@ This section describes the rules for setting up the audio-only encode in a Media
 1. In each **Streams settings** section, in the **Audio** section, set up each encode as follows.
    + In **Audio selector name**, choose one of the audio sources that you set up when you configured the input attachment.
    + In **Codec settings**, choose any output audio codec that the output type supports.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

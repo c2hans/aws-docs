@@ -303,7 +303,3 @@ To start fresh, delete the key and its replica in the AWS KMS console and choose
 
 **Note**
 These errors can also occur when using **Custom instance** if instance creation or Region replication fails. If you provided your own customer managed key, the key creation and replication steps do not apply.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -184,7 +184,3 @@ The following example shows how to write a comma-separated command line option f
 ```
 
 To learn more about the available command line options in X-Ray, see [Configuring the AWS X-Ray Daemon](xray-daemon-configuration.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

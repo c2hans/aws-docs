@@ -256,7 +256,3 @@ When task is scheduled for a future date and time, **Contact Summary** also disp
 + [Accept a task assigned in the Contact Control Panel (CCP)](accept-task.md)
 + [Create a new task in the Contact Control Panel (CCP)](create-task.md)
 + [Transfer a task to another agent or queue in the Connect Customer Contact Control Panel (CCP)](transfer-task.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

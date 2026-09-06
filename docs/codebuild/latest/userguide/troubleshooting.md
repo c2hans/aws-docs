@@ -617,7 +617,3 @@ curl: (23) Failed writing body
 **Possible cause:** Atlassian enforces single-use rotating refresh tokens for Bitbucket OAuth. Each time you use a refresh token, Bitbucket invalidates it and returns a new one. For more information, see [Bitbucket OAuth single-use refresh tokens (CHANGE-3052)](https://developer.atlassian.com/cloud/bitbucket/changelog/#CHANGE-3052) on the Atlassian developer website.
 
 **Recommended solution:** Add the `secretsmanager:PutSecretValue` permission to your CodeBuild service role. For more information about the required IAM permission, see [Required action for Secrets Manager-stored credentials](connections-bitbucket-app.md#connections-bitbucket-oauth-sm-action).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

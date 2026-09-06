@@ -62,7 +62,3 @@ AWS Clean Rooms provides the following APIs for data retrieval.
 | <a name="cleanrooms-PassCollaboration"></a>[PassCollaboration](https://docs.aws.amazon.com/clean-rooms/latest/userguide/ml-behaviors-byom.html#ml-behaviors-byom-membership-collaboration-access) | Access a collaboration in the context of Clean Rooms ML custom models | Read |
 | <a name="cleanrooms-PassMembership"></a>[PassMembership](https://docs.aws.amazon.com/clean-rooms/latest/userguide/ml-behaviors-byom.html#ml-behaviors-byom-membership-collaboration-access) | Access a membership in the context of Clean Rooms ML custom models | Read |
 | <a name="cleanrooms-PreviewPrivacyImpact"></a>[PreviewPrivacyImpact](https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_PreviewPrivacyImpact.html) | Preview privacy budget template settings | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

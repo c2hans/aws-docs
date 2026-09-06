@@ -33,9 +33,9 @@ Amazon GameLift Servers supports filtering metrics by the following dimensions.
 | `ConfigurationName` | Filter metrics for a single matchmaking configuration. This dimension is used with metrics for matchmaking configurations.  |
 | `ConfigurationName-RuleName` | Filter metrics for an intersect of a matchmaking configuration and matchmaking rule. This dimension is used with metrics for matchmaking rules only.  |
 | `InstanceType` | Filter metrics for an EC2 instance type designation, such as "c4.large". This dimension is used with metrics for spot instances.  |
-| `OperatingSystem` | Filter metrics for an instance's operating system This dimension is used with metrics for spot instances.  |
+| `OperatingSystem` | Filter metrics for an instance's operating system. This dimension is used with metrics for spot instances.  |
 | `GameServerGroup` | Filter FleetIQ metrics for a game server group. |
-| `ContainerGroupType` | Filter container fleet metrics to distinguish between GameServer ContainerGroup metrics on the fleet location and PerInstance ContainerGroup metrics on the fleet location. This dimension is included for certain container fleet metrics (such as ContainerNetworkIn, ContainerStorageReadBytes) allow you to distinguish between metrics for different container group types. |
+| `ContainerGroupType` | Filter container fleet metrics to distinguish between GameServer ContainerGroup metrics on the fleet location and PerInstance ContainerGroup metrics on the fleet location. This dimension is included for certain container fleet metrics (such as ContainerNetworkIn, ContainerStorageReadBytes) to allow you to distinguish between metrics for different container group types. |
 
 ## Amazon GameLift Servers metrics for fleets
 <a name="gamelift-metrics-fleet"></a>
@@ -192,7 +192,7 @@ For more information on the sequence of matchmaking activity, see [How Amazon Ga
 ## Amazon GameLift Servers metrics for FleetIQ
 <a name="gamelift-metrics-fiq"></a>
 
-The `Amazon GameLift` namespace includes metrics for FleetIQ game server group and game server activity as part of a FleetIQ standalone solution for game hosting. The Amazon GameLift Servers service sends metrics to CloudWatch every minute. Also see [Monitoring your Auto Scaling groups and instances using amazon CloudWatch](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html) in the *Amazon EC2 Auto Scaling User Guide*.
+The `Amazon GameLift` namespace includes metrics for FleetIQ game server group and game server activity as part of a FleetIQ standalone solution for game hosting. The Amazon GameLift Servers service sends metrics to CloudWatch every minute. Also see [Monitoring your Auto Scaling groups and instances using Amazon CloudWatch](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html) in the *Amazon EC2 Auto Scaling User Guide*.
 
 | Metric | Description |
 | --- | --- |
@@ -203,7 +203,3 @@ The `Amazon GameLift` namespace includes metrics for FleetIQ game server group a
 | `PercentUtilizedGameServers` | Portion of game servers that are currently supporting game executions. This metric indicates the amount of game server capacity that is currently in use. It is useful for driving an Auto Scaling policy that can dynamically add and remove instances to match with player demand.<br />Units: Percent<br />Relevant Amazon CloudWatch statistics: Average, Minimum, Maximum<br />Dimensions: GameServerGroup |
 | `GameServerInterruptions` | Game servers on Spot Instances that were interrupted due to limited Spot availability.<br />Units: Count<br />Relevant Amazon CloudWatch statistics: Sum<br />Dimensions: GameServerGroup, InstanceType |
 | `InstanceInterruptions` | Spot Instances that were interrupted due to limited availability.<br />Units: Count<br />Relevant Amazon CloudWatch statistics: Sum<br />Dimensions: GameServerGroup, InstanceType |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

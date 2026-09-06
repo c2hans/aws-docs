@@ -12,7 +12,3 @@ The AWS Service Management Connector (connector) for Jira Service Management Dat
 Jira Data Center 7.13.18 to 9.16.1
 
 A Jira Service Management Connector (connector) for Jira Service Management Cloud is also available in the Atlassian Marketplace. For more information, see [AWS Service Management Connector for Jira Service Management Cloud](https://docs.aws.amazon.com/smc/latest/ag/integrations-jsmcloud.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

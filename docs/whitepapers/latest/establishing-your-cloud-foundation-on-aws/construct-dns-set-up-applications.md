@@ -16,7 +16,3 @@ Typical application architecture involves monolithic, virtual machines (VMs), or
 For customers with hybrid workloads, which include on-premises and cloud-based resources, extra steps are necessary to configure DNS to work seamlessly across both environments. You can use different endpoints on AWS for DNS traffic to be routed in and out of your cloud and on-premises network. Further, centralizing DNS management for all your cloud network and on-premises domains should be considered for ease of management. Additionally, when you have hybrid connectivity between on-premises and cloud architecture of the DNS is one of the main players in the room as resources on-premises will need to resolve DNS names for resources in cloud and vice-versa.
 
 Finally, to get insights into DNS traffic for auditing; DNS logging should be enabled and pushed to a monitoring system to get more insights into DNS data and perform necessary actions from that data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

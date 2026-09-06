@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
  How you choose to implement this could also be influenced by the stack or compute construct that your application uses. With Lambda, for example, it may make sense to move these libraries to Lambda Layers where these horizontal concepts are versioned separately and universally referenced by you Lambda functions.
 
  You may also look to introduce mechanisms that will take this completely outside of the view of your developers, intercepting and acquiring these scoped credentials before you get into the implementation of your microservices. With some languages, for example, you could use aspects to intercept incoming requests, acquire the scoped credentials, and inject them into the microservice. With Lambda functions, there are various open source *wrapper* libraries that could be used to inject scoped credentials into a Lambda functions. For some, these strategies may provide a stricter model for enforcing isolation
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
  Best practice options are available to secure customers’ data on the device and should be utilized whenever possible. For AWS IoT Greengrass, all IoT AWS IoT Greengrass devices should enable full disk encryption and follow key management best practices. Customers can utilize full disk encryption, using AES 256-bit keys based on NIST FIPS 140-2 validated algorithms and follow key management best practices. For low-power devices such as those using FreeRTOS, customers can follow NIST 8114 lightweight cryptography recommendations.
 
  The previous sections covered microcontrollers and edge use cases. The following sections will focus on IoT services that operate in the cloud.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

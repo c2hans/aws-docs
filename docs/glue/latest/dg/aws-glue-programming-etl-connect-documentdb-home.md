@@ -179,7 +179,3 @@ Use the following connection options with `"connectionType": "documentdb"` as a 
 + `"replaceDocument"`: (Optional) If `true`, replaces the whole document when saving datasets that contain an `_id` field. If `false`, only fields in the document that match the fields in the dataset are updated. The default is `true`.
 + `"maxBatchSize"`: (Optional): The maximum batch size for bulk operations when saving data. The default is 512.
 + `"retryWrites"`: (Optional): Automatically retry certain write operations a single time if AWS Glue encounters a network error.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

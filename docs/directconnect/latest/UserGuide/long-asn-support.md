@@ -30,7 +30,3 @@ When choosing to use either an ASN or a long ASN, note the following:
 + **Private ASN ranges**: When using private long ASNs (`4200000000-4294967294`), the same replacement behavior applies as with private ASNs. Direct Connect will replace your private ASN with `7224` when advertising to other networks.
 + **BGP community tags**: All existing BGP community tags (`7224:xxxx`) work with long ASNs. The community tag format remains unchanged.
 + **Monitoring and troubleshooting**: CloudWatch metrics, BGP session logs, and troubleshooting tools display long ASNs in asplain format for consistency.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

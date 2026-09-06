@@ -135,7 +135,3 @@ For a custom automation unit that uses an AWS Lambda function as its target, you
 ------
 
 You must also attach to the IAM role a permissions policy that has at least the permissions that are in the following policy. Add to this policy any permissions that the custom unit needs in order to perform its actions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

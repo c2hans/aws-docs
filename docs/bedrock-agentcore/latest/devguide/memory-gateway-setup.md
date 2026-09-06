@@ -65,7 +65,3 @@ This example uses OAuth inbound, which always uses the `GATEWAY_IAM_ROLE` outbou
 
 **Note**
 The name you give the target becomes part of every Cedar action id for that target — a target named `<target-name>` produces action ids that begin with `<target-name>___`. Choose a target name you are comfortable referencing in access-control policies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

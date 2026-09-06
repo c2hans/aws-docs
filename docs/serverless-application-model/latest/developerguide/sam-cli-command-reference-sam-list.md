@@ -35,7 +35,3 @@ Displays the resources in your AWS Serverless Application Model (AWS SAM) templa
 
 `stack-outputs`  <a name="sam-cli-command-reference-sam-list-subcommands-stack-outputs"></a>
 Displays the outputs of your CloudFormation stack from an AWS SAM or CloudFormation template. For more information, see [sam list stack-outputs](sam-cli-command-reference-sam-list-stack-outputs.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

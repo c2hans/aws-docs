@@ -190,7 +190,7 @@ To learn how to create a knowledge base, refer to [Working with integrations](ht
 You can use application actions to read and write data to external SaaS applications and MCP servers from within a space. When you add actions to a space, only those actions will be considered when you select the space as your chat context.
 
 **Note**
-Only authors can create action connectors.
+Only authors can create connectors.
 
 **To use actions in a space**
 
@@ -203,8 +203,4 @@ Only authors can create action connectors.
 1. Select **All actions**, and choose an action that others have created in your organization.
 
 **Note**
-To learn how to create an action connector, refer to [Working with integrations](https://docs.aws.amazon.com/quicksuite/latest/userguide/working-with-integrations.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+To learn how to create a connector, refer to [Working with integrations](https://docs.aws.amazon.com/quicksuite/latest/userguide/working-with-integrations.html).

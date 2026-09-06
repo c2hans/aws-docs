@@ -15,6 +15,8 @@ To request a quota increase, see [Requesting a quota increase](https://docs.aws.
 
 Your AWS account has the following quotas related to Deadline Cloud.
 
+The *associated members* quotas count the memberships that you assign to a farm, fleet, queue, or job. Each user grant and each group grant counts as one membership, so a group counts as one member no matter how many users it contains. Deadline Cloud doesn't limit the number of users in a group or the number of groups that a user belongs to; the quotas for AWS IAM Identity Center apply instead. To grant access to more users within the membership quota, assign groups instead of individual users. For more information, see [How permissions work in Deadline Cloud](permissions-overview.md).
+
 Compute for service-managed fleets counts against the Deadline Cloud vCPU and GPU quotas in the following table, not against your Amazon Elastic Compute Cloud (Amazon EC2) service quotas. For more information, see [Quotas for related services](#related-service-quotas).
 
 The following table includes quotas for persistent storage volumes used by service-managed fleets. For more information about persistent storage, see [Persistent storage for service-managed fleets](volumes.md).
@@ -97,7 +99,3 @@ If you experience throttling errors when using the assistant, you can request an
 1. Enter your desired quota value and submit the request.
 
 You can monitor your Amazon Bedrock quota usage through CloudWatch metrics. Set up CloudWatch alarms on Amazon Bedrock throttling metrics to identify when you are approaching your quota limits. For more information, see [Monitoring Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-overview.html) in the *Amazon Bedrock User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

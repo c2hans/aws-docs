@@ -20,7 +20,3 @@ The following Aurora feature is currently available when Aurora lab mode is enab
 **Fast DDL**
 This feature allows you to run an `ALTER TABLE {{tbl_name}} ADD COLUMN {{col_name}} {{column_definition}}` operation nearly instantaneously. The operation completes without requiring the table to be copied and without materially impacting other DML statements. Because it doesn't consume temporary storage for a table copy, it makes DDL statements practical even for large tables on small instance classes.
 Fast DDL is currently only supported for adding a nullable column, without a default value, at the end of a table. For more information about using this feature, see [Altering tables in Amazon Aurora using Fast DDL](AuroraMySQL.Managing.FastDDL.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -979,7 +979,3 @@ The following Elastic Beanstalk preconfigured Docker container types were curren
 | 64bit Debian Jessie v1.0.0 running Glassfish 4.1 Java 8 (Preconfigured - Docker) | 2014.09 | Debian Jessie | 1.2.0 | Java 8 | nginx 1.6.2 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
 | 64bit Debian Jessie v1.0.0 running Glassfish 4.0 Java 7 (Preconfigured - Docker) | 2014.09 | Debian Jessie | 1.2.0 | Java 7 | nginx 1.6.2 | Glassfish 4.0 | amazon/aws-eb-glassfish:4.0-jdk7-onbuild-3.5.1 |
 | 64bit Debian Jessie v1.0.0 running Python 3.4 (Preconfigured - Docker) | 2014.09 | Debian Jessie | 1.2.0 | Python 3.4 | nginx 1.6.2 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

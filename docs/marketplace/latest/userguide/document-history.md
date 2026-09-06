@@ -174,7 +174,3 @@ For notiﬁcation about updates to this documentation, you can subscribe to the 
 | [Added search engine optimization guidance for sellers.](https://docs.aws.amazon.com/marketplace/latest/userguide/search-engine-optimization.html) | Added guidance for sellers who want to optimize their product for search. | July 3, 2018 |
 | [Updated link to AWS Marketplace logos](https://docs.aws.amazon.com/marketplace/latest/userguide/product-marketing.html#using-the-aws-marketplace-logo) | Updated link to point to new AWS Marketplace logos. | June 12, 2018 |
 | [Added seller guides](https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html) | Converted all PDF seller guides to online content. | May 9, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

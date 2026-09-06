@@ -246,7 +246,3 @@ The following table lists all built-in system tools and their default state.
 
 **Note**
 All system tools are enabled by default with **Full Access** permissions. You can restrict or disable any tool at any time. Changes take effect immediately for new conversations and agent runs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

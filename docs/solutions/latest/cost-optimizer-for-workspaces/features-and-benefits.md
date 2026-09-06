@@ -93,7 +93,3 @@ In order for the solution to be deployed to a PUBLIC SUBNET, the subnet itself h
 If you run your patches or other maintenance scripts by changing the WorkSpaces to `ALWAYS_ON` mode, you will need to account for the `ALWAYS_ON` hours and adjust the threshold values in the CloudFormation template accordingly. For example, if you change the mode from `AUTO_STOP` to `ALWAYS_ON` for 10 hours to run the maintenance scripts, you should subtract 10 hours from the set threshold value in the CloudFormation template.
 
 The solution automatically accounts for default AWS maintenance activities on AUTO\_STOP workspaces when maintenance mode is enabled in the directory. For directories with maintenance mode enabled, the solution adds one hour of usage to AUTO\_STOP workspaces at the end of each month to account for maintenance windows.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cost Optimizer for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

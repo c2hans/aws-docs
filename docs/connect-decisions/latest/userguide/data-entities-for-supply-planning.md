@@ -18,7 +18,7 @@ The following table lists the data entities and columns used by Supply Planning.
 
 How is this data entity used? Supply Planning uses the site data to define the physical locations (plants, warehouses, and distribution centers) within the supply chain network. Sites serve as the origin and destination nodes for transportation lanes, sourcing rules, and inventory policies.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | id | Required | Unique identifier for the physical site (plant, warehouse, or distribution center) within the supply chain network. Make sure the column values do not have invalid characters such as asterisk and double-quotes. |
 | description | Optional | Human-readable name or label for the site. |
@@ -37,7 +37,7 @@ How is this data entity used? Supply Planning uses the site data to define the p
 
 How is this data entity used? Supply Planning uses the product data to identify and classify all items being planned. Product attributes are used to establish hierarchy filters for supply plan review, link products to inventory policies and sourcing rules, and support multi-level product segmentation.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | id | Required | Unique identifier for the product/material (SKU-level). Make sure the column values do not have duplicate IDs and special characters such as asterisk and double-quotes. |
 | description | Required | Human-readable name or description of the product. |
@@ -59,7 +59,7 @@ How is this data entity used? Supply Planning uses the product data to identify 
 
 How is this data entity used? Supply Planning uses product hierarchy data to organize products into structured category trees. This enables multi-level filtering and aggregated analysis of supply plans, and allows sourcing rules and inventory policies to be applied at a group level rather than individual SKU level.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | id | Required | Unique identifier for the product group/category level. |
 | description | Optional | Name or label of the product group/category. |
@@ -70,7 +70,7 @@ How is this data entity used? Supply Planning uses product hierarchy data to org
 
 How is this data entity used? Supply Planning uses geography data to establish hierarchical location classifications for sites. Geographic entities enable regional rollup analysis and allow lead times and inventory policies to be defined at geographic region granularity.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | id | Required | Unique identifier for the geographic entity (city, state, country, region). |
 | description | Optional | Name of the geographic location (e.g., city name, region name). |
@@ -81,7 +81,7 @@ How is this data entity used? Supply Planning uses geography data to establish h
 
 How is this data entity used? Supply Planning uses transportation lane data to model the physical routes between origin and destination sites in the network. This data defines transit times and validity windows that the planning engine uses to schedule inbound and outbound shipments accurately.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | id | Required | Unique identifier for the transportation lane, typically a composite of origin, destination, product group, and vendor. |
 | from\_site\_id | Required | Origin site (supplier warehouse or manufacturing plant) from which goods are shipped. |
@@ -97,7 +97,7 @@ How is this data entity used? Supply Planning uses transportation lane data to m
 
 How is this data entity used? Supply Planning uses trading partner data to identify vendors, suppliers, customers, and carriers in the supply chain. Trading partners are referenced by sourcing rules, inbound order lines, and vendor lead times to associate supply activities with external business entities.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | id | Required | Unique identifier for the trading partner (vendor, customer, carrier, or other external entity). |
 | description | Optional | Name of the trading partner organization. |
@@ -109,7 +109,7 @@ How is this data entity used? Supply Planning uses trading partner data to ident
 
 How is this data entity used? Supply Planning uses vendor product data to define which vendors are authorized to supply specific products. This data enables the planning engine to validate sourcing rules and generate purchase orders only to approved vendor-product combinations within their effective date ranges.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | vendor\_tpartner\_id | Required | Vendor/supplier who can provide this product. |
 | product\_id | Required | Product that the vendor is authorized/capable of supplying. |
@@ -121,7 +121,7 @@ How is this data entity used? Supply Planning uses vendor product data to define
 
 How is this data entity used? Supply Planning uses vendor lead time data to determine the expected duration between placing a purchase order and receiving the goods at the destination site. Accurate lead times are critical for the planning engine to recommend orders with the correct timing to meet demand without creating unnecessary stockouts or excess inventory.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | vendor\_tpartner\_id | Required | Vendor/supplier whose lead time is being defined. |
 | product\_id | Optional | Specific product the lead time applies to (if product-level granularity). |
@@ -137,7 +137,7 @@ How is this data entity used? Supply Planning uses vendor lead time data to dete
 
 How is this data entity used? Supply Planning uses company data to support multi-entity planning environments where different legal entities or business units operate within a shared supply chain instance.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | id | Required | Unique identifier for the company/legal entity. |
 | description | Optional | Name or label of the company. |
@@ -155,7 +155,7 @@ How is this data entity used? Supply Planning uses company data to support multi
 
 How is this data entity used? Supply Planning uses sourcing rules to determine how each product at each destination site is replenished. Rules specify whether supply comes from an external buy (purchase order), internal transfer (transfer order), or manufacturing (production order), and define the sourcing priority and allocation ratios when multiple supply options exist.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | sourcing\_rule\_id | Required | Unique identifier for the sourcing rule. |
 | product\_id | Optional | Specific product governed by this sourcing rule. |
@@ -178,7 +178,7 @@ How is this data entity used? Supply Planning uses sourcing rules to determine h
 
 How is this data entity used? Supply Planning uses inventory policy data to determine the safety stock calculation method and replenishment thresholds for each product-site combination. The policy type (absolute level, days-of-cover demand, or days-of-cover forecast) governs how the planning engine computes minimum inventory buffers and generates replenishment recommendations.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | id | Required | Unique identifier for the inventory policy record. |
 | site\_id | Optional | The site/warehouse to which this inventory policy applies. |
@@ -201,7 +201,7 @@ How is this data entity used? Supply Planning uses inventory policy data to dete
 
 How is this data entity used? Supply Planning uses inventory level snapshots to establish the current on-hand stock position at each site for each product. This data is the starting point for replenishment calculations, enabling the planning engine to determine the gap between current inventory and the target level defined by the inventory policy.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | snapshot\_date | Required | Date/time when the inventory snapshot was taken. |
 | site\_id | Required | Site/warehouse where this inventory is physically located. |
@@ -214,7 +214,7 @@ How is this data entity used? Supply Planning uses inventory level snapshots to 
 
 How is this data entity used? Supply Planning uses forecast data as the primary demand signal for replenishment calculations. The planning engine uses the forecasted demand quantities by product and site to determine how much inventory needs to be replenished and when, driving purchase, transfer, and production order recommendations across the planning horizon. This data is not required if forecast is generated by Amazon Connect Decisions Demand Intelligence.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | snapshot\_date | Required | Date when this forecast was generated or last updated. |
 | site\_id | Required | Site for which demand is being forecasted. |
@@ -230,7 +230,7 @@ How is this data entity used? Supply Planning uses forecast data as the primary 
 
 How is this data entity used? Supply Planning uses outbound order line data to track customer orders and demand commitments. This data provides visibility into confirmed demand, allowing the planning engine to reserve inventory for committed customer orders and factor fulfillment obligations into replenishment recommendations.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | id | Required | Unique identifier for the outbound order line (delivery line item). |
 | product\_id | Required | Product being shipped to the customer. |
@@ -251,7 +251,7 @@ How is this data entity used? Supply Planning uses outbound order line data to t
 
 How is this data entity used? Supply Planning uses inbound order line data to track open purchase orders, transfer orders, and manufacturing orders. This data provides visibility into planned supply receipts, enabling the planning engine to account for in-transit and confirmed inventory when generating replenishment recommendations.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | id | Required | Unique identifier for the order line item (typically a composite of order ID and line number). |
 | order\_id | Required | Inbound order header number. |
@@ -282,7 +282,7 @@ How is this data entity used? Supply Planning uses inbound order line data to tr
 
 How is this data entity used? Supply Planning uses Product Bill of Materials (BOM) data to explode finished goods demand into component-level requirements. When the planning engine generates production orders for manufactured products, it uses the BOM to calculate how much of each raw material or sub-assembly is needed, creating dependent demand signals for component procurement and production planning.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | id | Required | Unique identifier for the BOM line record, typically a surrogate key or composite of parent product, component product, site, and effective dates. |
 | product\_id | Required | Foreign key to the Product table identifying the finished good or parent assembly that is manufactured using this BOM. |
@@ -298,7 +298,7 @@ How is this data entity used? Supply Planning uses Product Bill of Materials (BO
 
 How is this data entity used? This data entity is not supported in Supply Planning right now. But it will be added soon. When supported, the planning engine will use setup time and operation time to calculate the manufacturing lead times and evaluate production capacity feasibility.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | production\_process\_id | Required | Unique identifier for the manufacturing process or production route. Represents a specific sequence of operations that transforms raw materials/components into a finished product at a given site. |
 | product\_id | Required | Foreign key to the Product table identifying the finished good or output product manufactured by this production process. |
@@ -311,7 +311,7 @@ How is this data entity used? This data entity is not supported in Supply Planni
 
 How is this data entity used? This data entity is not supported in Supply Planning right now. But it will be added soon. Segmentation Rule data will enable differentiated planning by classifying products and sites into segments (e.g., by demand variability, customer tier, or product lifecycle). When supported, the planning engine will apply segment-specific inventory policies, forecast models, and service-level targets.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | segmentation\_rule\_id | Required | Unique identifier for a segmentation rule mapping a specific segment\_type \+ segment\_value combination to product/site/channel dimensions. |
 | segment\_type | Required | Name of the segmentation dimension being defined (e.g., DemandVariability, CustomerTier, ProductLifecycle, ServiceLevel). |
@@ -352,7 +352,7 @@ capacity\_constraints, capacity\_product\_mapping, warehouse\_space\_limit, and 
 
 How is this data entity used? Supply Planning uses capacity constraint data to define the minimum and maximum throughput limits for each capacity resource at each site within defined time buckets. The planning engine enforces these constraints when generating production and storage recommendations to ensure plans remain within physical or contractual feasibility boundaries.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | id | Required | Unique identifier for the capacity constraint record. References a combination of capacity resource, site, time bucket, and effective date range. |
 | capacity\_id | Required | Foreign key to the Capacity table identifying the specific resource being constrained (e.g., a production line, storage zone, dock, or labor pool). |
@@ -368,7 +368,7 @@ How is this data entity used? Supply Planning uses capacity constraint data to d
 
 How is this data entity used? Supply Planning uses capacity product mapping data to link products to the capacity resources they consume at each site. This mapping enables the planning engine to aggregate total capacity demand across all products sharing a common resource, identify bottlenecks, and prioritize production sequencing when capacity is limited.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | id | Required | Unique identifier for the capacity-to-product mapping record linking a specific product to the capacity resource it consumes at a given site. |
 | product\_id | Required | Foreign key to the Product table identifying the specific SKU or material whose production or handling consumes capacity from the mapped resource. |
@@ -380,7 +380,7 @@ How is this data entity used? Supply Planning uses capacity product mapping data
 
 How is this data entity used? Supply Planning uses warehouse space limit data to constrain replenishment recommendations so that planned inventory never exceeds the physical storage capacity of a warehouse. This prevents the planning engine from generating supply orders that would result in overcrowding or infeasible storage requirements at a site.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | site\_id | Required | Identifier of the warehouse whose capacity is being defined. |
 | max\_capacity | Required | Maximum storage capacity of the warehouse, expressed in the volume unit of measure defined in the Product entity. Used to constrain supply plans from exceeding physical space. |
@@ -390,13 +390,9 @@ How is this data entity used? Supply Planning uses warehouse space limit data to
 
 How is this data entity used? Supply Planning uses planning time fence constraint data to define time boundaries within which the planning engine is restricted from making changes to existing supply orders. These constraints enable planners to protect near-term supply plans from automatic rescheduling, preserving confirmed orders for specific products and sites within the defined time fence window.
 
-| Column | Requirement | Supply Planning usage |
+| Column | Is the column required? | How is this column used in Supply Planning? |
 | --- | --- | --- |
 | rule\_id | Required | Unique identifier for the planning time fence constraint rule. |
 | product\_id | Optional | Foreign key to the Product table. When populated, the time fence applies to this specific product only. When left blank, the constraint applies to all products at the specified site. |
 | site\_id | Optional | Foreign key to the Site table. When populated, the time fence applies to this specific site only. When left blank, the constraint applies to the specified product across all sites. |
 | planning\_time\_fence\_days | Required | Number of calendar days from the planning run date within which the planning engine will not automatically reschedule or cancel existing supply orders. Orders with order start dates within this window are treated as frozen and protected from automated changes. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

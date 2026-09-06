@@ -60,7 +60,3 @@ Amazon MQ for RabbitMQ 3 brokers, the default is configured with the maximum res
 | mq.m7g.8xlarge | 8000 | 24,000 | 10 | 16,000 | 250 | 480 | 16,000 | 524288 |
 | mq.m7g.12xlarge | 12000 | 36,000 | 10 | 24,000 | 300 | 720 | 24000 | 524288 |
 | mq.m7g.16xlarge | 16,000 | 48,000 | 10 | 32,000 | 350 | 960 | 32,000 | 524288 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

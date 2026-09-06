@@ -29,7 +29,3 @@ Your AWS Lambda function must contain the following claims for it to be a valid 
 + `isAuthorized`: A boolean set to `True`. Indicates that request has been authorized on the authorization server.
 + `aud`: [(Audience) Claim](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.3) — The "aud" (audience) claim identifies the recipients that the JWT is intended for. This must be a SMART on FHIR enabled HealthLake data store endpoint.
 + `scope`: This must be at least one FHIR resource related scope. This scope is defined on your authorization server. To learn more about FHIR resource related scopes accepted by HealthLake, see [SMART on FHIR resource scopes for HealthLake](reference-smart-on-fhir-oauth-scopes.md#smart-on-fhir-scopes-rest).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

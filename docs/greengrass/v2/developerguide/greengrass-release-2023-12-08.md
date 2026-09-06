@@ -28,7 +28,3 @@ The following table lists components provided by AWS that include new and update
 | Disk spooler | Version 1.0.2 of the [ disk spooler component](disk-spooler-component.md) is available.**Bug fixes and improvements**<br /> Fixes an issue where the MQTT message format field isn't persisted in certain cases.  |
 | MQTT bridge | Version 2.3.1 of the [ disk spooler component](mqtt-bridge-component.md) is available.**Bug fixes and improvements**<br /> Fixes an issue where the local MQTT client gets into a disconnect loop.  |
 | Stream manager | Version 2.1.12 of the [ stream manager component](stream-manager-component.md) is available.**Bug fixes and improvements**<br /> Updates the order that credentials are used so that Greengrass credentials are preferred for AWS service requests.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

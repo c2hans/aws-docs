@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql
 +  **Flexibility** — Provides a number of features and capabilities to help you optimize your application's performance, including read and write replicas, Multi-AZ deployments, automatic scaling, and flexible pricing options based on usage. MemoryDB is well-suited for a wide range of use cases, including caching, near real-time analytics, and session stores. It is particularly useful for applications that require fast and frequent access to data, such as gaming, e-commerce, and advertising.
 
  Amazon NoSQL databases integrate with [AWS Identity and Access Management](https://aws.amazon.com/iam/) (AWS IAM) for access control and security. IAM allows you to manage access to your NoSQL databases by creating policies that define permissions for specific users, groups, or roles. You can use IAM to control access to specific tables or resources within your NoSQL databases, as well as to enforce fine-grained permissions for read and write operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ With Connect Customer, you can set up different kinds of transfers:
 1. Add the quick connect that you created to any queue used in a flow for which to enable contact transfer, such as the queue used in the flow for incoming contacts.
 
 1. Make sure the queue is in a routing profile assigned to the agents who transfers contacts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

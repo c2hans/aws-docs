@@ -17,7 +17,3 @@ CodeCatalyst data is automatically encrypted at rest. No customer action is requ
 CodeCatalyst uses AWS-owned AWS KMS keys. CodeCatalyst does not support encryption at rest using customer managed KMS keys for the identity attributes retrieved from IAM Identity Center.
 
 For more information about AWS KMS keys, see the user documentation at [AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

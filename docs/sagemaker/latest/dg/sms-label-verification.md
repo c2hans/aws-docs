@@ -15,7 +15,3 @@ Ground Truth provides a worker console similar to the following for labeling tas
 ![Example worker console for labeling tasks, provided by Ground Truth.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/label-verification-example.png)
 
 You can create a label verification labeling job using the SageMaker AI console or API. To learn how to create a labeling job using the Ground Truth API operation `CreateLabelingJob`, see [Create a Labeling Job (API)](sms-create-labeling-job-api.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

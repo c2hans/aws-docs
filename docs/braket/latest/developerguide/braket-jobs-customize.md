@@ -12,7 +12,3 @@ Amazon Braket provides several ways to customize how your hybrid jobs run, allow
 + [Using hyperparameters](braket-jobs-hyperparameters.md)
 + [Configure your hybrid job instance](braket-jobs-configure-job-instance-for-script.md)
 + [Using parametric compilation to speed up Hybrid Jobs](braket-jobs-parametric-compilation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

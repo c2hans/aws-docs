@@ -28,7 +28,3 @@ To use player gateway, you need the following:
 + Game client and game backend updated to use player gateway tokens and relay endpoints.
 
 For details on how player gateway works, see [How player gateway works](ddos-protection-howitworks.md). To get started with integration, see [Enable player gateway on fleets](ddos-protection-enable.md) and [Integrate player gateway into a game](ddos-protection-integrate.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

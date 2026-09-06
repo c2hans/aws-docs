@@ -36,7 +36,3 @@ For example, consider a scenario where you create a Firehose stream that deliver
 Firehose console allows you to choose how you want to provide these roles. You can choose from one of the following options.
 + [Choose an existing IAM role](console-managed-iam-existing-roles.md)
 + [Create a new IAM role from console](console-managed-iam-create-new-roles.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

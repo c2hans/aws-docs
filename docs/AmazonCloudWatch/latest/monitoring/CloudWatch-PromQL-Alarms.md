@@ -61,8 +61,4 @@ This expression works across multiple label values, so the alarm can track anoma
 
 You can adjust the multiplier and time window to match your metric's behavior. A higher multiplier produces wider bounds with fewer false positives. A longer time window smooths out short-term spikes. The `clamp_min` function prevents the lower bound from going negative for metrics that can't have negative values.
 
-For more information about building anomaly detection bands with PromQL, see [Anomaly detection using PromQL](CloudWatch_Anomaly_Detection.md#anomaly_detection_promql).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+For more information about building anomaly detection bands with PromQL, see [Anomaly detection using PromQL](anomaly_detection_promql.md).

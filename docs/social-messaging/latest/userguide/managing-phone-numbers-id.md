@@ -14,7 +14,3 @@ To be able to send messages with the AWS CLI, you need the **Phone number ID** t
 1. In the **Phone numbers** section, choose a phone number.
 
 1. The **Phone number details** section contains the **Phone number ID** of the phone number.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

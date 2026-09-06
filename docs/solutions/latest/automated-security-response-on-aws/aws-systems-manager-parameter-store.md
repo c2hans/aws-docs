@@ -23,7 +23,3 @@ Automated Security Response on AWS uses AWS Systems Manager Parameter Store for 
 |  `/ASR/Filters/OUFilters`  | Comma-delimited list of Organization Unit Ids | List of OUs for which the solution should filter automated remediations. |
 |  `/ASR/Filters/TagFilterMode`  | Include, Exclude, or Disabled | Controls the Resource Tag filtering behavior for fully automated remediations |
 |  `/ASR/Filters/TagFilters`  | Comma-delimited list of Resource Tag Keys | List of Resource Tag Keys for which the solution should filter automated remediations. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

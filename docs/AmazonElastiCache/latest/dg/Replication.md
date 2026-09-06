@@ -49,7 +49,3 @@ For Valkey 9.0\+ clusters with durability enabled, replication is mediated throu
 For clusters with durability enabled, synchronization and backup operations differ from standard clusters:
 + **Off-box snapshotting:** Snapshots are created by ephemeral instances that read from the Multi-AZ transactional log, eliminating performance impact on your cluster.
 + **Log-based recovery:** Failed replicas restore from the transactional log and snapshots rather than requiring a full synchronization from the primary.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

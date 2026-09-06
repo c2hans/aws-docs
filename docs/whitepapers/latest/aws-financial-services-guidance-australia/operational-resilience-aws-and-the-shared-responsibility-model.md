@@ -43,7 +43,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 +  Who has access to their content, and how those access rights are granted, managed, and revoked.
 
  AWS provides tools and information to assist customers assessing controls in their extended IT environment. For more information, see the [AWS Compliance Center](https://aws.amazon.com/compliance), [Amazon Web Services' Approach to Operational Resilience in the Financial Sector and Beyond](https://docs.aws.amazon.com/pdfs/whitepapers/latest/aws-operational-resilience/aws-operational-resilience.pdf#aws-operational-resilience), [Shared Responsibility Model for Resiliency](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/shared-responsibility-model-for-resiliency.html), and the [AWS Well Architected Framework](https://aws.amazon.com/architecture/well-architected/). Contact your AWS representative to discuss how the AWS FSI Compliance team, the AWS Partner Network, as well as AWS Solution Architects, and Professional Services teams can assist.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -124,7 +124,3 @@ Compare the quota value against the number of running instances in the staging a
 + Verify IAM permissions and ensure required roles are correctly configured.
 + Check if you have activated throttling. For more information, see [route control](data-routing.md#route-control).
 + Check CloudTrail logs for throttling errors.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

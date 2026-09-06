@@ -29,7 +29,3 @@ The `awsApplication` tag will be automatically added to all resources that are a
 You can deactivate the `awsApplication` tag, but this will affect the cost reporting for the application. If you deactivate the tag, it won’t be automatically activated again. To manually activate the tag, use the Billing console or the [UpdateCostAllocationTagsStatus](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_UpdateCostAllocationTagsStatus.html) API operation.
 
 The `awsApplication` tag doesn’t count towards your cost allocation tag quota. For more information about quotas and restrictions for cost allocation tags, see [Quotas and restrictions](billing-limits.md). For more information about AppRegistry, see the [AWS Service Catalog AppRegistry Administrator Guide](https://docs.aws.amazon.com/servicecatalog/latest/arguide/overview-appreg.html#ar-user-tags).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

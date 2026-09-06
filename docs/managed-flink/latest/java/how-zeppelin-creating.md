@@ -27,7 +27,3 @@ When creating the application from the console, you have the following options:
 + In the Amazon MSK console choose your cluster, then choose **Process data in real time**.
 + In the Kinesis Data Streams console choose your data stream, then on the **Applications** tab choose **Process data in real time**.
 + In the Managed Service for Apache Flink console choose the **Studio** tab, then choose **Create Studio notebook**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

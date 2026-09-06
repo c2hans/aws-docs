@@ -48,7 +48,3 @@ You can set up a specific date and time for the maintenance window (red mark). T
 1. On the dialog that appears, set a **Start hour**. Ignore **Start date**.
 
 1. Expand **Additional maintenance settings** in the **Upcoming maintenance** section. In **Maintenance window date**, set the specific date. Choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

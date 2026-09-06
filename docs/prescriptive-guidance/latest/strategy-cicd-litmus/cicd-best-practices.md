@@ -13,7 +13,3 @@ The following are best practices for fully CI/CD pipelines:
 + **Make small and frequent merges** – In order to take full advantage of continuous integration, it's a good idea to push local changes into the pipeline continuously as well. After all, it's much more beneficial for the development environments to stay in sync if the local environments keep up with them too.
 
 For more best practices for CI/CD pipelines, see [Summary of best practices](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/summary-of-best-practices.html) in *Practicing Continuous Integration and Continuous Delivery on AWS*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

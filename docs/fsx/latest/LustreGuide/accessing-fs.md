@@ -22,7 +22,3 @@ Before you can mount a file system, you must create, configure, and launch your 
 + [Mounting specific filesets](mounting-from-fileset.md)
 + [Unmounting file systems](unmounting-fs.md)
 + [Working with Amazon EC2 Spot Instances](working-with-ec2-spot-instances.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ Discovery Agent discovers data for many types of hardware, hypervisors, and oper
 Agentless Collector discovers data for VMware vCenter hosts and systems, using VMware metadata. For specific information about the data fields that are returned by Agentless Collector, see [Data collected by Agentless Collector](https://docs.aws.amazon.com/application-discovery/latest/userguide/agentless-collector-data-collected.html) in the *Application Discovery Service User Guide*.
 
 Alternatively, you can use Migration Hub import to import details of your on-premises environment directly into Migration Hub without using Agentless Collector or Discovery Agent. For more information, see [Migration Hub import](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-import.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

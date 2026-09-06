@@ -70,7 +70,3 @@ The API is now ready to use. At this point, you have to deploy it in order to cr
 1. On the **Enable CORS** pane, choose **Enable CORS and replace existing CORS headers**.
 
 **Next**: [Create and deploy the web form](tutorials-two-way-sms-part-5.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

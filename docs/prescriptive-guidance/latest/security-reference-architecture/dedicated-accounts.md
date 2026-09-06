@@ -21,7 +21,3 @@ The AWS SRA utilizes the following accounts to achieve effective security operat
 | Network | Infrastructure | The gateway between your application and the broader internet. The Network account isolates the broader networking services, configuration, and operation from the individual application workloads, security, and other infrastructure. |
 | Shared Services | Infrastructure | This account supports the services that multiple applications and teams use to deliver their outcomes. Examples include Identity Center directory services (Active Directory), messaging services, and metadata services. |
 | Application | Workloads | AWS accounts that host the AWS organization's applications and perform the workloads. (These are sometimes called *Workload accounts*.) Application accounts should be created to isolate software services instead of being mapped to your teams. This makes the deployed application more resilient to organizational change. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

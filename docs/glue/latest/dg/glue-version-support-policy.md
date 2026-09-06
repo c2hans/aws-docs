@@ -50,7 +50,3 @@ For migrating your Python shell jobs to the latest AWS Glue version:
 + In the console, choose `Python 3 (Glue Version 6.0)`.
 + In the [CreateJob](https://docs.aws.amazon.com/glue/latest/webapi/API_CreateJob.html)/[UpdateJob](https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateJob.html) API, set the `GlueVersion` parameter to `6.0`, and the `PythonVersion` to `3` under the `Command` parameter. The `GlueVersion` configuration does not affect the behavior of Python shell jobs, so there is no advantage to incrementing `GlueVersion`.
 + You need to make your job script compatible with Python 3.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

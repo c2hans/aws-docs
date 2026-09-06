@@ -493,7 +493,3 @@ For Launch Wizard deployments created after January 2023, IMDSv1 is disabled on 
 1. When your deployment is ready, a notification informs you that your SQL Server application is successfully deployed. If you have set up an SNS notification, you are also alerted through SNS. You can manage and access all of the resources related to your SQL Server Developer Edition application by selecting the deployment, and then selecting **Manage** from the **Actions** dropdown list.
 
 1. When the SQL Server Developer Edition application is deployed, you can access your Amazon EC2 instance through the EC2 console. You can also use [AWS SSM](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html) to manage your SQL Server Developer Edition application for future updates and patches with built-in integration through resource groups.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

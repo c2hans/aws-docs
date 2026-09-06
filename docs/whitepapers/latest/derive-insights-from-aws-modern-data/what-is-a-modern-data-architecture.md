@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 | --- | --- | --- | --- |
 |  Data  |  Relational data from transactional systems, operational databases, and line of business applications  |  All data, including structured, semi-structured, and unstructured  |  Modern Data is the next step of the evolution that enables querying data across data warehouse, data lake, and databases  |
 |  Performance  |  Fastest query results using local storage  |  Query results getting faster using low-cost storage and decoupling of compute and storage  |  Faster and deeper insights without moving data  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

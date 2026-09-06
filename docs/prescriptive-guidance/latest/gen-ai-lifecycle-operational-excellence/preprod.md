@@ -24,7 +24,3 @@ This chapter is organized into the following main sections to help you overcome 
 + [Hardening the generative AI application through a GenAIOps framework](preprod-hardening.md) – This section describes how to harden generative AI applications through testing, security, and continuous improvement. It helps you implement CI/CD pipelines, observability, and feedback loops to prepare for production.
 
 When you have finished architecting and hardening your application, use the recommendations in the [Advancing your generative AI application to production](preprod-advancing.md) section to determine whether to progress to the next stage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

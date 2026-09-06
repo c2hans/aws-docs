@@ -28,7 +28,3 @@ Session Manager is only able to create Amazon DCV sessions on behalf of users th
 
 **Tip**
 If you intend to use multiple broker hosts or Amazon DCV servers with agents, we recommend that you configure only one broker and one Amazon DCV server with an agent by performing the following steps, creating Amazon Machine Images (AMI) of the hosts with the completed configurations, and then using the AMIs to launch the remaining brokers and Amazon DCV servers. Alternatively, you can use AWS Systems Manager to run the commands on multiple instances remotely.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

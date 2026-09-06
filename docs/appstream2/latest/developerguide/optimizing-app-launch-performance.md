@@ -18,7 +18,3 @@ By default, Image Assistant replaces the application optimization manifest each 
 + Before you choose **Disconnect and create image** on the Image Assistant **Review** page.
 
 Alternatively, you can specify the optimization manifest on a per-application basis by using the Image Assistant command line interface (CLI) operations. When you specify the optimization manifest by using the Image Assistant CLI operations, WorkSpaces Applications merges the specified application optimization manifest with the files identified by the Image Assistant **Optimize** step. For more information, see [Create Your Amazon WorkSpaces Applications Image Programmatically by Using the Image Assistant CLI Operations](programmatically-create-image.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

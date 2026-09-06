@@ -137,7 +137,3 @@ Only an administrator in the organization management account can configure a del
  To disable the delegated admin Compute Optimizer account using the Compute Optimizer console, see [https://docs.aws.amazon.com/compute-optimizer/latest/ug/delegate-administrator-account.html](https://docs.aws.amazon.com/compute-optimizer/latest/ug/delegate-administrator-account.html) in the *AWS Compute Optimizer User Guide*.
 
  To remove a delegated administrator using the AWS AWS CLI, see [deregister-delegated-administrator](https://docs.aws.amazon.com/cli/latest/reference/organizations/deregister-delegated-administrator.html) in the *AWS AWS CLI Command Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

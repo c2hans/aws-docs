@@ -21,7 +21,3 @@ As you consider the mitigations for the identified failure modes in the user sto
 **Impact** is an estimate of the harm that an event can cause. It should be assessed from both a financial and a reputational perspective, and is relative to the value of the user stories it impacts. For example, an overwhelmed database could have a significant impact on an e-commerce system's ability to accept new orders. However, the loss of a single instance out of a fleet of 20 instances behind a load balancer would likely have very little impact.
 
 You can compare the answers to these questions against the cost of the trade-offs you have to make to mitigate the risk. When you consider this information in view of your risk threshold and your resilience objectives, it informs your decision on which failure modes you plan to actively mitigate.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

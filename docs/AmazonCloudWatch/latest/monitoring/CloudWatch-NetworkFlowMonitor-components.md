@@ -43,7 +43,3 @@ Network Flow Monitor generates a unique *query ID* for each query that is create
 Network Flow Monitor gathers and calculates end-to-end *performance metrics*, including TCP round-trip time (RTT), TCP retransmissions, TCP retransmission time outs, and bytes transferred for each flow that is in your Network Flow Monitor scope. The service aggregates these metrics and returns them to the service backend. You can view top contributors by metric type. When you see an anomaly in Network Flow Monitor, you can also check the network health indicator (NHI) to see if there is an underlying AWS network issue.
 Be aware that RTT data can be sparse because RTT is not always calculated.
 You can also use Amazon CloudWatch features to create dashboards, alarms, and notifications based on these metrics. For example, you can learn about setting up alarms with Network Flow Monitor metrics by reviewing the information in [Create alarms with Network Flow Monitor](CloudWatch-NetworkFlowMonitor-create-alarm.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

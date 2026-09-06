@@ -90,7 +90,3 @@ You must meet the following requirements to use the SageMaker AI Edge Manager ag
 <a name="use-sm-edge-manager"></a>
 
 You can complete a tutorial to get started using SageMaker AI Edge Manager. The tutorial shows you how to get started using SageMaker AI Edge Manager with AWS-provided sample components on an existing core device. These sample components use the SageMaker AI Edge Manager component as a dependency to deploy the Edge Manager agent, and perform inference using pre-trained models that were compiled using SageMaker AI Neo. For more information, see [Tutorial: Get started with SageMaker AI Edge Manager](get-started-with-edge-manager-on-greengrass.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

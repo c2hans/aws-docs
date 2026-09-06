@@ -137,7 +137,3 @@ AMS then investigates the OpsItem. If AMS can correct the failure without your i
 
 **Note**
 Patch failure OpsItems aren't created for instances that have unsupported operating systems, or that are in the Stopped state during the Patch Maintenance Window.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

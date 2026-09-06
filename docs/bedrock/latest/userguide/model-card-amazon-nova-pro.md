@@ -64,7 +64,7 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
-| bedrock-runtime | amazon.nova-pro-v1:0 | https://bedrock-runtime.{region}.amazonaws.com | `us.amazon.nova-pro-v1:0`<br />`eu.amazon.nova-pro-v1:0` | Not supported |
+| bedrock-runtime | amazon.nova-pro-v1:0 | https://bedrock-runtime.{region}.amazonaws.com | `us.amazon.nova-pro-v1:0`<br />`eu.amazon.nova-pro-v1:0`<br />`apac.amazon.nova-pro-v1:0` | Not supported |
 
 *For example, if region is us-east-1 (N. Virginia), then the bedrock-runtime endpoint URL will be "https://bedrock-runtime.us-east-1.amazonaws.com" and for bedrock-mantle will be "https://bedrock-mantle.us-east-1.api.aws/v1".*
 
@@ -133,6 +133,12 @@ Geo Inference ID: `eu.amazon.nova-pro-v1:0`
 | eu-west-1 (Ireland) | eu-central-1 (Frankfurt), eu-north-1 (Stockholm), eu-west-1 (Ireland), eu-west-3 (Paris) |
 | eu-west-3 (Paris) | eu-central-1 (Frankfurt), eu-north-1 (Stockholm), eu-west-1 (Ireland), eu-west-3 (Paris) |
 | il-central-1 (Tel Aviv) | eu-central-1 (Frankfurt), eu-north-1 (Stockholm), eu-south-1 (Milan), eu-west-1 (Ireland), eu-west-3 (Paris), il-central-1 (Tel Aviv) |
+
+**Geo: APAC**
+
+Geo Inference ID: `apac.amazon.nova-pro-v1:0`
+
+To retrieve current details for this inference profile, use the [GetInferenceProfile](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetInferenceProfile.html) operation.
 
 ## Quotas and Limits
 <a name="model-card-amazon-nova-pro-quotas"></a>
@@ -203,7 +209,3 @@ print(response)
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

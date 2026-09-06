@@ -64,7 +64,3 @@ In your standards, consider the following when deciding where to store your encr
 + Compliance and regulatory requirements might dictate where your encryption keys can be stored.
 + Decide whether you want to store keys in a centralized location or with their corresponding data. For more information, see *Why should I centrally manage encryption keys?* in the [FAQ](faq.md) section.
 + If you choose centralized storage, decide whether to store keys in an enterprise-managed infrastructure, such as a hardware security module (HSM), or a managed service provider, such as AWS KMS. For more information, see *When do I need to use a hardware security module (HSM)?* in the [FAQ](faq.md) section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

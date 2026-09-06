@@ -22,7 +22,3 @@ Also, the devices Software Set version is determined by the system. This version
    + [Amazon WorkSpaces](virtual-service-providers.md#setting-up-ws)
    + [Amazon WorkSpaces Secure Browser](virtual-service-providers.md#setting-up-wsw)
    + [WorkSpaces Applications](virtual-service-providers.md#setting-up-as)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

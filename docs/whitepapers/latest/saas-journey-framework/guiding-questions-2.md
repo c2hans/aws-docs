@@ -53,7 +53,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 +  What near-term tradeoffs will be made to get to market at a faster pace?
 +  How will these tradeoffs impact the customer experience and long-term viability of your solution?
 +  What measures are part of this MVS to ensure that the company is enabling the operational efficiency and agility that will be needed to support the growth and innovation of the platform?
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

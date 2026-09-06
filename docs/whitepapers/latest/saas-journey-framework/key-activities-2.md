@@ -43,7 +43,3 @@ This could be in many forms and not necessarily a feature you are building (e.g.
 +  **Goal**: Capture and document the core tenets that will define where the SaaS bar is being set for this initial offering. This is important to ensure success at each delivery.
 +  **Outcome**: A list of the tenets that outline precisely which goals you are targeting for the business, operational, and agility attributes of this minimum viable service. The challenge here is to have your sights on general SaaS best practices while still acknowledging that you may not target the longer-term experience for this MVS. Being clear about this is essential to defining where the bar is.
 +  **Key Decision Point**: Which compromises you are making in this MVS? How those compromises will impact the success and agility of your overall SaaS story (this is about forcing your team to agree on these goals and boundaries)?
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

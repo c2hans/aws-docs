@@ -15,7 +15,3 @@ You can configure one of the following options for storing this data:
 + Store all captured messages and files encrypted in an Amazon S3 bucket. The data retention bot will re-encrypt all captured messages and files using a key that you supply and save them to the Amazon S3 bucket you specify. The captured messages and files are removed from the host machine after they are successfully re-encrypted and saved to the bucket. You will need software to decrypt the messages and files.
 
   For more information about creating an Amazon S3 bucket to use with your data retention bot, see [Creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) in the *Amazon S3 User Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

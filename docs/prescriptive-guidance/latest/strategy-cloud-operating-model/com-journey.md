@@ -18,7 +18,3 @@ Because the aim of AWS CAF is to improve your cloud readiness, we will add anoth
 Using these stages together with the AWS COM Framework helps you identify the capabilities that are important to you at each point in time. For example, if you are in the **Launch** phase, you might be more interested in the *Architecture and Patterns* capability than the *Resource/Estate Management* capability, which is more relevant during the **Scale** phase.
 
 You carry out specific activities at each stage. For example, in the **Align **phase, you identify the capabilities you currently have and maturity level, then determine which capabilities you need to focus on first. If you are in the **Launch** phase, identifying pilot teams to develop the next level of maturity will be important. This requires planning, so we recommend that you define a roadmap.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

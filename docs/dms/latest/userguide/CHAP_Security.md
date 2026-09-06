@@ -279,7 +279,3 @@ In most situations, changing the database password for your source or target end
 1. Choose the task that you stopped previously, and choose **Restart/Resume**.
 
 1. Choose either **Restart** or **Resume**, depending on how you want to continue the task, and then choose **Start task**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

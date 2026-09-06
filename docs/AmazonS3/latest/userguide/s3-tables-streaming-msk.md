@@ -64,7 +64,3 @@ Read access to a streaming table works the same as for any other Amazon S3 table
 ```
 
 The permissions that Amazon MSK needs to create the table and write to it belong to the Amazon MSK service role. For those permissions, see [IAM permissions for Amazon MSK data delivery](https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-delivery-iam.html) in the *Amazon Managed Streaming for Apache Kafka Developer Guide*. If your table bucket is in a different AWS account from the Amazon MSK cluster, the bucket owner must attach a table bucket policy that grants the Amazon MSK service role the actions it needs. For more information, see [Managing table bucket policies](s3-tables-bucket-policy.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ You can access data on your FSx for OpenZFS file systems within the AWS Cloud an
 + [Mounting volumes](mounting-volumes.md)
 + [Accessing data with S3 access points](s3accesspoints-for-FSx.md)
 + [Accessing data using AWS container services](openzfs-integrations.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

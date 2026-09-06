@@ -19,6 +19,7 @@ The following data types are supported:
 +  [AttemptEcsTaskDetails](API_AttemptEcsTaskDetails.md)
 +  [AttemptTaskContainerDetails](API_AttemptTaskContainerDetails.md)
 +  [CapacityLimit](API_CapacityLimit.md)
++  [CapacityReservationRequest](API_CapacityReservationRequest.md)
 +  [ComputeEnvironmentDetail](API_ComputeEnvironmentDetail.md)
 +  [ComputeEnvironmentOrder](API_ComputeEnvironmentOrder.md)
 +  [ComputeResource](API_ComputeResource.md)
@@ -36,6 +37,7 @@ The following data types are supported:
 +  [EcsProperties](API_EcsProperties.md)
 +  [EcsPropertiesDetail](API_EcsPropertiesDetail.md)
 +  [EcsPropertiesOverride](API_EcsPropertiesOverride.md)
++  [EcsSettings](API_EcsSettings.md)
 +  [EcsTaskDetails](API_EcsTaskDetails.md)
 +  [EcsTaskProperties](API_EcsTaskProperties.md)
 +  [EFSAuthorizationConfig](API_EFSAuthorizationConfig.md)
@@ -76,6 +78,10 @@ The following data types are supported:
 +  [FrontOfQuotaSharesDetail](API_FrontOfQuotaSharesDetail.md)
 +  [Host](API_Host.md)
 +  [ImagePullSecret](API_ImagePullSecret.md)
++  [InfrastructureOptimization](API_InfrastructureOptimization.md)
++  [InstanceLaunchTemplate](API_InstanceLaunchTemplate.md)
++  [InstanceLaunchTemplateUpdate](API_InstanceLaunchTemplateUpdate.md)
++  [InstanceRequirementsRequest](API_InstanceRequirementsRequest.md)
 +  [JobCapacityUsageSummary](API_JobCapacityUsageSummary.md)
 +  [JobDefinition](API_JobDefinition.md)
 +  [JobDependency](API_JobDependency.md)
@@ -92,6 +98,10 @@ The following data types are supported:
 +  [LinuxParameters](API_LinuxParameters.md)
 +  [ListJobsByConsumableResourceSummary](API_ListJobsByConsumableResourceSummary.md)
 +  [LogConfiguration](API_LogConfiguration.md)
++  [ManagedInstancesLocalStorageConfiguration](API_ManagedInstancesLocalStorageConfiguration.md)
++  [ManagedInstancesNetworkConfiguration](API_ManagedInstancesNetworkConfiguration.md)
++  [ManagedInstancesProvider](API_ManagedInstancesProvider.md)
++  [ManagedInstancesStorageConfiguration](API_ManagedInstancesStorageConfiguration.md)
 +  [MountPoint](API_MountPoint.md)
 +  [NetworkConfiguration](API_NetworkConfiguration.md)
 +  [NetworkInterface](API_NetworkInterface.md)
@@ -140,9 +150,6 @@ The following data types are supported:
 +  [TaskPropertiesOverride](API_TaskPropertiesOverride.md)
 +  [Tmpfs](API_Tmpfs.md)
 +  [Ulimit](API_Ulimit.md)
++  [UpdateManagedInstancesProviderConfiguration](API_UpdateManagedInstancesProviderConfiguration.md)
 +  [UpdatePolicy](API_UpdatePolicy.md)
 +  [Volume](API_Volume.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

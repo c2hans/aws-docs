@@ -187,7 +187,3 @@ You don't need to provide a manifest—the console creates one for you.
 Specifying an environment name is optional when you specify service and service instance names. The combination of these two is unique in your AWS account, and AWS Proton can determine the environment from the service instance.
 
 1. Update your service instance to redeploy it. AWS Proton uses outputs from your component in the rendered service instance template, to enable your application to use the Amazon S3 bucket that the component provisioned.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -136,7 +136,3 @@ The actual autoscaling responsiveness you observe also depends on factors beyond
 +  **Larger scaling tier** – If you intend to run your cluster on scaling tier larger than 8XL, contact your Amazon Web Services account team for additional pricing information.
 +  **Kubernetes version and region support** – EKS Provisioned Control Plane is supported in all Amazon Web Services commercial, GovCloud, and China regions. Provisioned Control Plane works on EKS v1.28 and higher.
 +  **Higher SLA** - EKS Provisioned Control Plane offers higher EKS SLA than Standard Control Plane. Learn more in [EKS SLA page](https://aws.amazon.com/eks/sla/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

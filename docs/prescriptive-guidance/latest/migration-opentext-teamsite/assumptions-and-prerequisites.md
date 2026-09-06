@@ -21,7 +21,3 @@ The following table provides information about the resources that must be availa
 | Infrastructure experts (for example, technical architects and system administrators) | Discovery of current infrastructure |
 | Solution experts for your current OpenText or related applications | Discovery of application landscape and identify dependencies |
 | A group of final users, including content contributors and final users of supported web applications | User acceptance testing (UAT) and validation of the new platform |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

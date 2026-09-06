@@ -97,7 +97,3 @@ Delegate senders can only send emails from the AWS Region where the identity own
 With the exception of Amazon S3 buckets, all of the AWS resources that you use for receiving email with SES have to be in the same AWS Region as the SES endpoint. For example, if you use SES in the US West (Oregon) region, then any SNS topics, KMS keys, and Lambda functions that you use also have to be in the US West (Oregon) region. Similarly, to receive email with SES within a region, you have to create an active receipt rule set in that region. Email receiving concepts and setup process are explained in [Email receiving with Amazon SES](receiving-email.md).
 
 The [Email Receiving endpoints](https://docs.aws.amazon.com/general/latest/gr/ses.html#ses_inbound_endpoints) table in the AWS General Reference lists the email receiving endpoints for all of the AWS Regions where SES supports email receiving.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ Yes, Network Firewall needs its own security subnet. The security subnet (public
 <a name="is-the-target-architecture-valid-for-both-ingress-and-egress-traffic-firewalling-.bd9951d9-bcaf-5794-b94a-10903a4fc921"></a>
 
 Yes, the target architecture is valid for both ingress and egress traffic firewalling. If a connection is initiated from the application to outside the VPC, then you must add a NAT gateway to the endpoint's subnet. Also, you must forward the traffic from the application's subnet to the NAT gateway by using a route table (as illustrated by** Route table app **in the diagram from the *Perimeter zone architecture based on Network Firewall* section of this guide.). Then, no further changes are required because all the outgoing traffic still goes through Network Firewall.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

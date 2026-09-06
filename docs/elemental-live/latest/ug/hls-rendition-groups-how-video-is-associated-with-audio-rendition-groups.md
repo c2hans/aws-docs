@@ -16,7 +16,3 @@ For example:
 + To group streams 6, 7 and 8 to another audio rendition group, set the ID for each of these streams to “audio 2” or some other name.
 + To associate video 1 with the first rendition group, set the “audio rendition sets ID” of that video to “audio 1”.
 + To associate video 2 with the other group, set the audio rendition sets ID to “audio 2.”
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

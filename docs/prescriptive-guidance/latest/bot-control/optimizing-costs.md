@@ -41,7 +41,3 @@ For continuous optimization, the most significant activity is monitoring [CloudW
 [AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html) is a tool that enables you to view and analyze your costs and usage. Cost Explorer facilitates analysis of AWS costs, including AWS WAF costs incurred. The tool provides cost information for the most recent 12 months and forecasts future spend for the next 12 months.
 
 [AWS Cost Anomaly Detection](https://docs.aws.amazon.com/cost-management/latest/userguide/manage-ad.html) is another cost management control tool that can be useful for monitoring AWS WAF costs. It uses advanced ML technologies to identify anomalous spend and root causes. This helps you quickly take action or receive alerts if there's an unexpected increase in cost. To receive an alert when a specific cost threshold is reached,[AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) can provide that tracking and monitoring functionality.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

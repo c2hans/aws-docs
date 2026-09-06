@@ -24,7 +24,3 @@ As a delegated GuardDuty administrator account, you are responsible for maintain
   You can use GuardDuty console to perform the same task by navigating to the **Accounts** page in the GuardDuty console.
 
   For information about enabling protection plans for individual accounts by using either console or API, see the configuring page for the corresponding protection plan.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

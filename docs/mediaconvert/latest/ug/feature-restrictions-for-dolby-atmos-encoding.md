@@ -13,7 +13,3 @@ Note the following restrictions in the MediaConvert implementation of Dolby Atmo
 + **Output codec:** You can create Dolby Atmos audio outputs encoded with only the Dolby Digital Plus (EAC3) codec.
 + **Output containers:** For file outputs, you can create Dolby Atmos audio in only in one of the video containers that supports Dolby Digital Plus: MPEG-4, MPEG-2 Transport Stream, or QuickTime.
 + **Output packages:** For adaptive bitrate (ABR) outputs, you can create Dolby Atmos audio in any of the MediaConvert output group types: CMAF, Apple HLS, DASH ISO, or Microsoft Smooth Streaming.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

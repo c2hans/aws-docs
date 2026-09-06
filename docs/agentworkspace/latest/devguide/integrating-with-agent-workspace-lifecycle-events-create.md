@@ -9,7 +9,3 @@ The create event in the Connect Customer agent workspace results in the ` onCrea
 + **appInstanceId**: The ID for this instance of the app provided by the workspace.
 + **appConfig**: The application configuration being used by the instance for this app.
 + **contactScope**: Provides the current ` contactId` if the app is opened during an active contact.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer Agent Workspace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agentworkspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

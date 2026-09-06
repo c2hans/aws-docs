@@ -16,7 +16,3 @@ The following information can help you troubleshoot certain issues that you migh
 For more advanced connection troubleshooting, you can take the following steps:
 + If you can't communicate with the Snowball Edge, ping the IP address of the device. If the ping returns `no connect`, confirm the IP address for the device and confirm your local network configuration.
 + If the IP address is correct and the lights on the back of the device are flashing, use telnet to test the device on ports 22, 9091, and 8080. Testing port 22 determines whether the Snowball Edge is working correctly. Testing port 9091 determines whether the AWS CLI can be used to send commands to the device. Testing port 8080 helps ensure that the device can write to the Amazon S3 buckets on it with S3 adapter only. If you can connect on port 22 but not on port 8080, first power off the Snowball Edge and then unplug all the cables. Leave the device for 10 minutes, and then reconnect it and start again.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

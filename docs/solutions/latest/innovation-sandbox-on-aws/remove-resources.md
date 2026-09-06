@@ -77,7 +77,3 @@ In this step, you move accounts out of the Organization Unit so that the StackSe
 1. Move the accounts in *Exit* to outside the Innovation Sandbox OU, or the root OU.
 
 This ensures that there are no accounts in the OU before you uninstall the stacks for the solution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

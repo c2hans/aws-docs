@@ -23,7 +23,3 @@ If you are onboarding an additional account or Identity Provider and have access
    + Identity provider name.
    + For Existing Accounts: Whether the identity provider should be propagated to all existing console roles, or the list of roles which should trust the new identity provider.
    + Case ID of service request created in Step 1, where the metadata XML file is attached.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

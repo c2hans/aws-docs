@@ -18,7 +18,3 @@ To create a new data product complete the following steps.
 1. Choose the **Data** tab, then choose **Inventory data**, and then choose **Create new data product**.
 
 1. In the **Create new data product** page, specify the name and the description for the data product, then choose **Select assets** to add various assets to your data product. In the **Select assets** pop up window, choose the assets that you want to add to this data product, and then choose **Select**. To complete creating the data product, choose **Create**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

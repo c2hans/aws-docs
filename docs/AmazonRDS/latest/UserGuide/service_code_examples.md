@@ -41,7 +41,3 @@ For a complete list of AWS SDK developer guides and code examples, see [Using th
   + [Creating a relational database instance](example_rds_GettingStarted_036_section.md)
 + [Serverless examples](service_code_examples_serverless_examples.md)
   + [Connecting to an Amazon RDS database in a Lambda function](example_serverless_connect_RDS_Lambda_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

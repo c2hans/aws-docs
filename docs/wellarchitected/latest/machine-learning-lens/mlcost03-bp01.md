@@ -70,7 +70,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
  **Related examples:**
 +  [Bring your own model for SageMaker AI labeling workflows with active learning](https://github.com/aws/amazon-sagemaker-examples/blob/master/ground_truth_labeling_jobs/bring_your_own_model_for_sagemaker_labeling_workflows_with_active_learning/bring_your_own_model_for_sagemaker_labeling_workflows_with_active_learning.ipynb)
 +  [SageMaker AI Ground Truth recipe](https://github.com/aws-samples/aws-sagemaker-ground-truth-recipe)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

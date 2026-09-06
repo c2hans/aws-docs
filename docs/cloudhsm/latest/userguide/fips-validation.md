@@ -26,7 +26,3 @@ PCI 3DS (or Three Domain Secure, 3-D Secure) provides security of data for EMV 3
 
 **SOC2**
 SOC2 is a framework to help service organizations demonstrate their cloud and data center security controls. AWS CloudHSM has implemented SOC2 controls in critical areas to adhere to the trusted service principles. For further information, refer to [The AWS SOC FAQs page](https://aws.amazon.com/compliance/soc-faqs/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

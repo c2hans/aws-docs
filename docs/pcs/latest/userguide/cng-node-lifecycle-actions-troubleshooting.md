@@ -17,7 +17,3 @@ Use this troubleshooting information to resolve common node lifecycle action iss
 | Script didn't re-run after reboot | `executionPolicy` is `FIRST_BOOT_ONLY` (default) | Set `executionPolicy=EVERY_BOOT` for scripts that must run on every boot. |
 | `sinfo` or `scontrol` not found in a script | The script runs in the `nodeBootstrapped` stage, before `slurmd` | Move Slurm-dependent work to the `nodeReady` stage. |
 | Can't see logs after termination | Logs are local to the instance | Add a node bootstrapped script that forwards logs to Amazon CloudWatch. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

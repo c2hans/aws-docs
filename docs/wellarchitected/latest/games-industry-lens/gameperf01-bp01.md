@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Evaluate game server resource requirements for CPU, memory, network, and storage to select suitable instance types, considering game-specific performance needs such as high network throughput for FPS games or memory optimization for turn-based strategy games.
 +  Compare different hosting options such as containers, instances, bare-metal, and managed services by analyzing performance data using frameworks like the USE method. Use these insights to make better decisions about your system architecture.
 +  Design fleets for scalability and elasticity, leveraging tools like EC2 Spot Instance Advisor to optimize costs while facilitating quick scaling to meet player demand during peak times.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

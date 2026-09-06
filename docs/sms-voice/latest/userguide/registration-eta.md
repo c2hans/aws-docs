@@ -73,7 +73,3 @@ The following table shows estimated registration processing times for different 
 | United States | US | Toll-Free | [United States Toll-free number registration](registrations-tfn.md) | 15 days |
 | Vietnam | VN | Sender ID | [Vietnam sender ID registration](registrations-vietnam.md) | 30 days |
 | Zambia | ZM | Sender ID | [Zambia sender ID registration](registrations-zambia.md) | 21 days |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

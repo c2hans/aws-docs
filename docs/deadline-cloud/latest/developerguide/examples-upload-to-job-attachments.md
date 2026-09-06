@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Upload files to Deadline Cloud job attachments
 <a name="examples-upload-to-job-attachments"></a>
 
-The [upload\_to\_job\_attachments](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/utility_scripts/upload_to_job_attachments) Python script uploads files and directories from your workstation to a Deadline Cloud job attachments Amazon S3 bucket in content-addressable storage format. After files are uploaded, jobs that reference them don't need to upload them again. The script is useful for pre-populating job attachments with large datasets.
+The [upload\_to\_job\_attachments](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/utility_scripts/upload_to_job_attachments) Python script on the GitHub website uploads files and directories from your workstation to a Deadline Cloud job attachments Amazon S3 bucket in content-addressable storage format. After files are uploaded, jobs that reference them don't need to upload them again. The script is useful for pre-populating job attachments with large datasets.
 
 The script provides the following:
 + Recursive uploads of files or whole directories.
@@ -35,7 +35,3 @@ python upload_to_job_attachments.py \
 For high-bandwidth networks, increase `--threads` and `--max-concurrency`. For bandwidth-constrained environments, set `--max-bandwidth` to throttle uploads. For large files, increase `--multipart-chunksize`.
 
 For a job-based alternative that copies files between Amazon S3 buckets, see [Copy an S3 prefix to job attachments on Deadline Cloud](examples-jb-copy-s3-to-attachments.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

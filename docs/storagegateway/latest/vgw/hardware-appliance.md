@@ -26,7 +26,3 @@ In the sections that follow, you can find instructions about how to set up, rack
 + [Configuring a gateway IP address on the hardware appliance](appliance-configure-ip.md)
 + [Removing gateway software from your hardware appliance](appliance-remove-gateway.md)
 + [Deleting your Storage Gateway Hardware Appliance](delete-appliance.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

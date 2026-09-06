@@ -123,7 +123,3 @@ When creating a new Canvas application, if you encounter an error stating `Unabl
 To determine the root cause of your why space creation failed, you can use the [DescribeSpace](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeSpace.html) API to check the `FailureReason` field. For more information about the possible statuses of spaces and what they mean, see [Amazon SageMaker AI domain entities and statuses](sm-domain.md).
 
 To resolve this issue, find your domain in the SageMaker AI console and delete the failed space listed in the error message you received. For detailed steps on how to find and delete a space, see the page [Stop and delete your Studio running applications and spaces](studio-updated-running-stop.md) and follow the instructions to **Delete a Studio space**. Deleting the space also deletes any applications associated with the space. After deleting the space, you can try to create your Canvas application again. The space should now provision successfully, allowing Canvas to launch.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

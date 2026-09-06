@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 1.  Redo your risk and benefit analysis using this more focused scope, since narrowing your use case may change both the potential harms and the benefits you can deliver. You might discover new risks in your focused area that you had not considered or find that some broad risks no longer apply.
 
 1.  Rewrite your release criteria to match your refined use case, making sure they capture the specific standards that matter for your new boundaries. Your updated criteria may be achievable with your current system design while still maintaining the quality standards that protect users and deliver real value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

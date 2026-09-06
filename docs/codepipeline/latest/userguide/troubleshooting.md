@@ -511,7 +511,3 @@ Try these other resources:
 + [Request a quota increase](https://console.aws.amazon.com/support/home#/case/create%3FissueType=service-limit-increase). For more information, see [Quotas in AWS CodePipeline](limits.md).
 **Note**
 It can take up to two weeks to process requests for a quota increase.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

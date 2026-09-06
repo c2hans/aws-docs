@@ -35,7 +35,3 @@ This journey follows a maturity progression from Explorer through Practitioner t
 | 7 | Automating Performance in CI/CD | Expert | Performance testing delivers the most value when it runs automatically on every change, not as a... |
 | 8 | Chaos Engineering Meets Load Testing | Expert | Load testing tells you how the system performs under expected conditions. Chaos engineering... |
 | 9 | Scaling to Production-Grade Testing | Expert | Moving from "my first load test" to "production-grade performance engineering" requires... |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Performance Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

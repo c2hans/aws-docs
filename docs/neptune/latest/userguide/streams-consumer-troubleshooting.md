@@ -79,7 +79,3 @@ Note that this approach deletes all the data in the OpenSearch domain and re-syn
 1. Re-enable the replication process as described in [Re-enabling the stream poller process](full-text-search-re-enable-poller.md).
 
 1. Delete the cloned database and the CloudFormation stack created for the `export-neptune-to-elasticsearch` tool.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

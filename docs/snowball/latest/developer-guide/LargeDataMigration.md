@@ -82,7 +82,3 @@ Metadata operations are performed for each file that's transferred. Regardless o
 Creating data transfer segments can make it easier for you to quickly resolve transfer issues because trying to troubleshoot a large, heterogeneous transfer after the transfer runs for a day or more can be complex.
 
 When you've finished planning your petabyte-scale data transfer, we recommend that you transfer a few segments onto the Snowball Edge device from your server to calibrate your speed and total transfer time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

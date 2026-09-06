@@ -408,7 +408,3 @@ You'll stop incurring charges once you delete all of the transit gateway attachm
 <a name="conclusion"></a>
 
 You've successfully created a transit gateway, attached two VPCs to it, configured routing between them, and verified connectivity. This simple example demonstrates the basic functionality of AWS Transit Gateways. For more complex scenarios, such as connecting to on-premises networks or implementing more advanced routing configurations, see the [*AWS Transit Gateways Guide*](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,3 @@ After disabling interoperability support, users and groups that are not enabled 
 + **Create an AutoDiscover DNS record** – Configure an AutoDiscover DNS record for all mail domains in the organization. This enables users to connect to their Amazon WorkMail mailboxes from their Microsoft Outlook and mobile clients. For more information, see [Use AutoDiscover to configure endpoints](https://docs.aws.amazon.com/workmail/latest/adminguide/autodiscover.html).
 + **Switch your MX DNS record to Amazon WorkMail** – To deliver all incoming emails to Amazon WorkMail, you must switch your MX DNS record to Amazon WorkMail. Changes to DNS records can take up to 72 hours to propagate to all DNS servers.
 + **Decommission your mail server** – After you’ve verified that all email is being routed directly to Amazon WorkMail, you can decommission your mail server if you don't intend to use it going forward.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

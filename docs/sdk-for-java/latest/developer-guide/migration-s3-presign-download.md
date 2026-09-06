@@ -85,7 +85,3 @@ The following table describes the Transfer Manager configuration changes from v1
 
 **Note**
 The AWS CRT-based S3 client (`S3AsyncClient.crtBuilder()`) does not currently support the pre-signed URL extension. Use `S3AsyncClient.builder()`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

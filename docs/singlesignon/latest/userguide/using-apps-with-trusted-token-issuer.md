@@ -76,7 +76,3 @@ If IAM Identity Center receives a request to exchange a token that IAM Identity 
 Not all OAuth 2.0 authorization servers add a JTI claim to tokens. Some OAuth 2.0 authorization servers might not allow you to add a JTI as a custom claim. OAuth 2.0 authorization servers that support the use of a JTI claim might add this claim to identity tokens only, access tokens only, or both. For more information, see the documentation for your OAuth 2.0 authorization server.
 
  For information about building applications that exchange tokens, see the IAM Identity Center API documentation. For information about configuring a customer managed application to obtain and exchange the correct tokens, see the documentation for the application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

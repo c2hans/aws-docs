@@ -28,7 +28,3 @@ Annotation tables have the following schema:
 | `checksum_algorithm` | No | String | The checksum algorithm used for the annotation. If no checksum is present, this value is null. |
 | `replication_status` | No | String | The replication status of the annotation. `PENDING`, `COMPLETED`, and `FAILED` are visible only at the replication source. `REPLICA` is visible only at the replication destination. If there is no applicable replication configuration, this value is null. |
 | `text_value` | No | String | The annotation content (UTF-8 text). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

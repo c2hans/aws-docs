@@ -22,7 +22,3 @@ console clusters curl target /<index>/_mapping?pretty
 For split routing, verify that each former type now appears as its own index (for example, `new_users` and `new_posts`). For union routing, verify that the single target index contains the combined set of fields from all merged types, with no conflicting field definitions. If the mappings do not match your intent, change the transformer configuration and re-run the migration as described in [Apply a changed transformer configuration](ttm-restart-required.md).
 
 Run representative application queries against the target before cutover so you catch any client-side impact from the reshaped indexes. See [Migrate metadata](migrate-metadata.md) for the rest of the metadata phase.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

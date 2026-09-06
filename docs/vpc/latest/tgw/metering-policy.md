@@ -121,7 +121,3 @@ Metering policies are supported for both IPv4 and IPv6 traffic. CIDR block match
 + [Create a metering policy entry](create-metering-policy-entry.md)
 + [Delete a metering policy entry](metering-policy-entry-delete.md)
 + [Manage metering policy middlebox attachments](metering-policy-middlebox.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

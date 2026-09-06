@@ -35,7 +35,3 @@ Your DNS provider might not be able to redirect CNAME records. Amazon SES and IS
 **Your emails contain two DKIM signatures**
 The extra DKIM signature, which contains `d=amazonses.com`, is automatically added by Amazon SES. You can ignore it.
 Microsoft Enterprise Outlook randomly selects one DKIM signature for validation while ignoring the other. This behavior does not appear to correlate with the order in which signatures are arranged, making procedural workarounds ineffective. SES cannot discontinue signing emails with `amazonses.com` DKIM signatures because they are required for complaint feedback loops. Microsoft has acknowledged this as a known issue, attributing it to DNS resolution problems within their infrastructure. These DNS resolution failures would explain why DKIM signature validation appears to fail randomly, given that public keys are retrieved from DNS records.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

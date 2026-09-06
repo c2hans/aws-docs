@@ -71,7 +71,3 @@ View details about updates to AWS managed policies for Amazon Nova Act since thi
 | --- | --- | --- |
 | NovaActServiceRolePolicy | Amazon Nova Act added a new policy. This policy allows Amazon Nova Act to publish operational metrics to CloudWatch using the cloudwatch:PutMetricData action, scoped to the AWS/NovaAct namespace through a condition statement. | December 2, 2025 |
 | Amazon Nova Act started tracking changes | Amazon Nova Act started tracking changes for its AWS managed policies. | December 2, 2025 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

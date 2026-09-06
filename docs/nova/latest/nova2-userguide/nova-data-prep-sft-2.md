@@ -1168,7 +1168,3 @@ When your source data consists of standard operating procedures, runbooks, or st
 
 **Note**
 In Patterns 1 and 2, if the factual content (such as codes, categories, or resolutions) is not already in the model's pre-training data, consider using RAG to supply this information at inference time rather than relying solely on SFT to memorize it. SFT is most effective for teaching the model the response format and reasoning pattern, while RAG handles the factual grounding.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

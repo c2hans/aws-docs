@@ -29,7 +29,3 @@ The following table contains distribution and warehousing calculations. In the f
 | Average orders picked per hour | This calculation returns the rate at which orders are picked per hour, for a defined time period. | `# of order numbers picked / # of hours worked` |
 | Average SKU count per tote | This calculation returns the average number of individual SKUs packed into totes, for a defined time period. | `Count of SKU-tote combinations / # of totes` |
 | Average totes processed per shipment | This calculation returns the average number of totes processed for each shipment, for a defined time period. | `Total # of totes / # of shipments` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

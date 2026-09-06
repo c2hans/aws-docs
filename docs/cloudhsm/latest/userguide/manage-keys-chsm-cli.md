@@ -12,7 +12,3 @@ If using the [latest SDK version series](use-hsm.md), use [CloudHSM CLI](cloudhs
 + [Sharing and unsharing keys](manage-keys-cloudhsm-cli-share.md) details how key owners share and unshare keys.
 + [Filtering keys](manage-keys-cloudhsm-cli-filtering.md) offers guidelines on how to use filters to find keys.
 + [Manage key quorum authentication (M of N) ](key-quorum-auth-chsm-cli.md) offers guidelines on how to setup and use quorum authentication with keys.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

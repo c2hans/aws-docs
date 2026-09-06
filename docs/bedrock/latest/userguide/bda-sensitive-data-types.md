@@ -43,7 +43,3 @@ The following table lists the PII entity types that BDA can detect and redact.
 | UK\_NATIONAL\_HEALTH\_SERVICE\_NUMBER | UK | A UK National Health Service Number - a 10-17 digit number. |
 | UK\_NATIONAL\_INSURANCE\_NUMBER | UK | A UK National Insurance Number (NINO) for accessing National Insurance benefits. |
 | UK\_UNIQUE\_TAXPAYER\_REFERENCE\_NUMBER | UK | A UK Unique Taxpayer Reference (UTR) - a 10-digit number identifying a taxpayer or business. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

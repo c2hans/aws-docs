@@ -12,7 +12,3 @@ You and AMS can maintain the Amazon Elastic Compute Cloud (Amazon EC2) instances
 + Mutable: In this model, the infrastructure is updated with new code being deployed on existing systems in the Cloud. This model is a mix of manually pushing updates and using infrastructure-as-code to deploy updates and does not rely on new AMIs.
 
  These maintenance models are discussed in more detail in later sections of this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ Implementing backup policies as code can help you meet data protection regulatio
 + Implementing [lifecycle rules](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_Lifecycle.html) to specify how long before a recovery point either transitions to cold storage or is deleted, which can help optimize your costs
 
 When automating your backup operations, you can scale resource assignment options by using AWS tags and resource IDs to automatically identify the AWS resources that store data for your business-critical applications and protect your data using immutable backups. This can help you prioritize security controls, such as access permissions and backup plans or policies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

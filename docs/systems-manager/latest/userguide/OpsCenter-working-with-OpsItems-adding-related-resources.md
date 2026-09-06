@@ -91,7 +91,3 @@ The following table lists the resource types that automatically create deep link
 | Amazon Simple Storage Service (Amazon S3) bucket |  <pre>arn:aws:s3:::{{bucket_name}}</pre>  |
 | AWS Config recording of AWS Systems Manager managed node inventory |  <pre>arn:aws:ssm:{{region}}:{{account-id}}:managed-instance-inventory/{{node_id}}</pre>  |
 | Systems Manager State Manager association |  <pre>arn:aws:ssm:{{region}}:{{account-id}}:association/{{association_ID}}</pre>  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

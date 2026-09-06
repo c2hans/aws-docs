@@ -9,7 +9,7 @@ A Realtime server acts as a stateless relay server, where the server relays pack
 
 You set up Realtime servers by uploading a Realtime servers script to Amazon GameLift Servers and deploying it to a managed EC2 hosting fleet. The Realtime script is a custom configuration for your game. Amazon GameLift Servers uses the script's instructions to manage the tasks of setting up and running game servers for your players.
 
-The default Realtime script is a set of JavaScript code. You configuration it for use with your game client. Amazon GameLift Servers defines a set of server-side callbacks for Realtime scripts. Implement these callbacks to add event-driven functionality to your server. For example, you can:
+The default Realtime script is a set of JavaScript code. You configure it for use with your game client. Amazon GameLift Servers defines a set of server-side callbacks for Realtime scripts. Implement these callbacks to add event-driven functionality to your server. For example, you can:
 + Authenticate a player when a game client tries to connect to the server.
 + Validate whether a player can join a group upon request.
 + Determine when to deliver messages from a certain player or to a target player, or perform additional processing in response.
@@ -36,7 +36,3 @@ Amazon GameLift Servers Realtime provides functionality to manage groups of pla
 
 **Encryption with TLS certificates**
 With Amazon GameLift Servers Realtime, server authentication and data packet encryption are built into the service. You can choose to turn on these security features when you enable TLS certificate generation. When a game client tries to connect with a Realtime server, the server automatically responds with the TLS certificate, which the client validates. Amazon GameLift Servers encrypts TCP (WebSockets) traffic using TLS 1.2 and UDP traffic using DTLS 1.2.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

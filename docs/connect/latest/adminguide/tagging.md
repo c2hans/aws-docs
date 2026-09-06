@@ -73,7 +73,3 @@ To use tags to control access to resources within your AWS accounts, you need to
 For more detailed information on tag-based access control in the Connect Customer console, see [Apply tag-based access control in Connect Customer](tag-based-access-control.md).
 
 For more detailed information on tag-based access control in IAM, see [Controlling access to AWS resources using tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html) in the *IAM User Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

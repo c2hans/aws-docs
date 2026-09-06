@@ -216,7 +216,33 @@ This example illustrates one usage of GetAgreementTerms.
                 "Type": "RenewalTerm",
                 "Configuration": {
                     "EnableAutoRenew": false
-                }
+                },
+                "LockoutPeriod": "P30D",
+                "MaxRenewals": 3,
+                "AdjustmentDeadline": "P60D",
+                "PriceIncrease": {
+                    "PercentageRange": {
+                        "MinValue": "0",
+                        "MaxValue": "10.00",
+                        "DefaultValue": "5.00"
+                    }
+                },
+                "TermTemplates": [{
+                        "PaymentScheduleTermTemplate": {
+                            "Schedule": [{
+                                    "ChargeDateOffset": "P0M",
+                                    "ChargePercentage": "50.00",
+                                    "DayOfMonth": 1
+                                },
+                                {
+                                    "ChargeDateOffset": "P6M",
+                                    "ChargePercentage": "50.00",
+                                    "DayOfMonth": 1
+                                }
+                            ]
+                        }
+                    }
+                ]
             }
         },
         {
@@ -266,7 +292,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/marketplace-agreement-2020-03-01/GetAgreementTerms)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/GetAgreementTerms)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/marketplace-agreement-2020-03-01/GetAgreementTerms)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

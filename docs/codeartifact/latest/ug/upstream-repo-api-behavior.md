@@ -55,7 +55,3 @@ Package not found in repository. RepoId: {{repo-id}}, Package = PackageCoordinat
  The `CopyPackageVersions` API behaves differently. By default, `CopyPackageVersions` API only copies package versions that are stored in the target repository. If a package version is stored in the upstream repository but not in the target repository, it will not be copied. To include package versions of packages that are stored only in the upstream repository, set the value of `includeFromUpstream` to `true` in your API request.
 
 For more information on the `CopyPackageVersions` API, see [Copy packages between repositories](copy-package.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

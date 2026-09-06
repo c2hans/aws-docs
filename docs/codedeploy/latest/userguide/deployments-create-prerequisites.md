@@ -81,7 +81,3 @@ The instances in your replacement environment will be registered with the load b
 + Your template does not need to model resources for a CodeDeploy application or deployment group.
 + Your template must include resources for a VPC using Amazon VPC that contains at least two subnets.
 + Your template must include resources for one or more Classic Load Balancers, Application Load Balancers, or Network Load Balancers in Elastic Load Balancing that are used to direct traffic to your target groups.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

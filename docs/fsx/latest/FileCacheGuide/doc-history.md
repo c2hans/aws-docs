@@ -28,7 +28,3 @@ The following table describes important changes to the *Amazon File Cache User G
 | [Lustre client support for Amazon Linux and Amazon Linux 2 added](#doc-history) | The Lustre client now supports Amazon EC2 instances running Amazon Linux and Amazon Linux 2. For more information, see [ Installing the Lustre client](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/install-lustre-client.html). | December 13, 2022 |
 | [Additional AWS Region support added for caches](#doc-history) | Amazon File Cache is now available in the Europe (Stockholm), Asia Pacific (Hong Kong), Asia Pacific (Mumbai), and Asia Pacific (Seoul) AWS Regions. For more information, see [ Amazon File Cache availability](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/what-is.html#cache-availability). | November 10, 2022 |
 | [Amazon File Cache is now generally available](#doc-history) | Amazon File Cache is a high-speed cache on AWS that makes it easier to process file data, regardless of where the data is stored. | September 29, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

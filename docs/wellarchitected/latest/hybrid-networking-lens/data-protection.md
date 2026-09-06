@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 + [HNSEC05-BP01 Use IPSec VPN over Internet](hnsec05-bp01.md)
 + [HNSEC05-BP02 Use MACsec encryption for dedicated connections](hnsec05-bp02.md)
 + [HNSEC05-BP03 Use application layer encryption](hnsec05-bp03.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

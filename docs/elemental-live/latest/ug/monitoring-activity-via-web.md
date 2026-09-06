@@ -33,7 +33,3 @@ The numbers in the ID column are the REST IDs of the inputs.
 <a name="controls"></a>
 
 The operator can click the triangle to switch to that input. The input will become Active. Processing will stop on the current Active input.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

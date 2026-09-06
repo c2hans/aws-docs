@@ -123,7 +123,3 @@ For the full metadata attribute schema used in filtering queries, see [MetadataA
 In addition to the CSV-based metadata configuration described on this page, you can also configure metadata using a sidecar `.metadata.json` file for any document type in an Amazon S3 data source. This method supports the full set of data types and the `includeForEmbedding` option. For more information, see [Document metadata fields](s3-data-source-connector.md#ds-s3-metadata-fields).
 
 To learn how to filter query results using metadata, see the **Knowledge base prompt templates** section in [Configure and customize queries and response generation](kb-test-config.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

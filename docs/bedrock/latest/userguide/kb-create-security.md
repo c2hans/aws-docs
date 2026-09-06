@@ -171,7 +171,3 @@ For an AWS CLI example, see [Creating data access policies (AWS CLI)](https://do
 
 ------
 + Use the Amazon OpenSearch Service console by following the steps at [Creating network policies (console)](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-network.html#serverless-network-console). Instead of creating a network policy, note the **Associated policy** in the **Network** subsection of the collection details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

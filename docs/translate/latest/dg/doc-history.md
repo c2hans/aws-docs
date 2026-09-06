@@ -56,7 +56,3 @@ The following table describes the documentation for this release of Amazon Trans
 | [New feature](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) | Amazon Translate adds multiple new languages for translation: Chinese (Tradition), Czech, Italian, Japanese, Russian, and Turkish. For a list of languages that Amazon Translate supports, see [Supported languages](https://docs.aws.amazon.com/translate/latest/dg/what-is-languages.html). | July 17, 2018 |
 | [New feature](https://docs.aws.amazon.com/translate/latest/dg/how-it-works.html) | Amazon Translate adds support for automatic source language detection. For more information, see [ How Amazon Translate works](https://docs.aws.amazon.com/translate/latest/dg/how-it-works.html). | April 4, 2018 |
 | [New guide](#doc-history) | This is the first release of the *Amazon Translate Developer Guide*. | November 29, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Translate. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query translate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

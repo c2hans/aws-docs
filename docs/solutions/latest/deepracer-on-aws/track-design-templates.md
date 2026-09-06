@@ -68,7 +68,3 @@ This regular loop track is a repeating, 90-degree, single-turn track. It require
 ![AWS DeepRacer Loop track template](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-loop-template.png)
 
 ![AWS DeepRacer Loop track visual](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-loop-visual.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

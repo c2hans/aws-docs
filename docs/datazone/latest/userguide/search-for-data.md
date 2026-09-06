@@ -38,7 +38,3 @@ As you search through your data, you might need to locate specific technical ass
    + A **Schema** tab which displays the schema of the asset, including business and technical column names, data types, and business descriptions of the columns. The schema tab is visible only for tables and views (not for Amazon S3 objects).
    + A **Subscriptions** tab which includes a list of subscribers to the domain.
    + A **History** tab which includes a list of past revisions of the asset.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

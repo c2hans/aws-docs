@@ -41,7 +41,3 @@ The onboarding-by-claim process uses the [Just-in-time provisioning (JITP)](http
 1. The identifier can now be used to find the unique "thing" present in the staging account and communicate with it (using the configuration topic) to provide the desired customer/OEM endpoint. It is this latter action that constitutes the actual "claim". After that, the device disconnects from the staging account, and then connects to the newly assigned endpoint.
 
 1. The just-in-time provisioning (JITP) mechanism completes the process– the new device is authenticated, and a new "thing" is created in the selected customer/OEM account according to the instructions provided by a JITP template.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

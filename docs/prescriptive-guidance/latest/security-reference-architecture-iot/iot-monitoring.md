@@ -53,7 +53,3 @@ Begin by identifying potential incident scenarios that are specific to your depl
 Implement continuous health checks and monitoring systems to detect anomalies before they escalate into major incidents. Automate initial response actions where possible to contain events quickly and to return systems to a known good state. As your IoT environment matures, regularly review and update these playbooks to address new threats and incorporate lessons learned from previous incidents or simulations.
 
 For business continuity and disaster recovery, define clear parameters for system behavior during failures or disruptions. Determine whether systems should fail open or closed, if recovery should be automatic or require human intervention, and the conditions under which manual controls should be enabled or disabled. These decisions should be based on the criticality of the systems and potential impact on safety, operations, and the environment. Test your continuity and recovery plans to ensure that they perform as expected under various scenarios.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

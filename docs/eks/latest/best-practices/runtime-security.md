@@ -89,7 +89,3 @@ As of Kubernetes 1.25, PSPs have been removed and replaced with the [Pod Securit
 +  [Sysdig Secure](https://sysdig.com/products/kubernetes-security/)
 +  [Prisma](https://docs.paloaltonetworks.com/cn-series)
 +  [NeuVector by SUSE](https://www.suse.com/neuvector/) open source, zero-trust container security platform, provides process profile rules and file access rules.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

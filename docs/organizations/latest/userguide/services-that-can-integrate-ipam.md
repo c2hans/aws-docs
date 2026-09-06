@@ -97,7 +97,3 @@ Only an administrator in the organization management account can configure a del
  To remove a delegated administrator using the AWS AWS CLI, see [disable-ipam-organization-admin-account](https://docs.aws.amazon.com/cli/latest/reference/ec2/disable-ipam-organization-admin-account.html) in the *AWS AWS CLI Command Reference*.
 
  To disable the delegated admin IPAM account using the IPAM console, see [Integrate IPAM with AWS Organizations](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam.html) in the *Amazon VPC IPAM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

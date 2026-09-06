@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/sub
 # Test your packages with a Maya render job
 <a name="submit-render-maya-mtoa"></a>
 
-After you build the Maya, MtoA, and `maya-openjd` packages, you can test them with a render job. The Deadline Cloud samples repository contains a [turntable with Maya/Arnold](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/turntable_with_maya_arnold) job bundle that renders an animation using Maya and Arnold. The job bundle also uses FFmpeg to encode a video, which is available from the `conda-forge` channel.
+After you build the Maya, MtoA, and `maya-openjd` packages, you can test them with a render job. The Deadline Cloud samples repository contains a [turntable with Maya/Arnold job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/turntable_with_maya_arnold) on the GitHub website that renders an animation using Maya and Arnold. The job bundle also uses FFmpeg to encode a video, which is available from the `conda-forge` channel.
 
 ## Testing locally
 <a name="maya-test-locally"></a>
 
-You can run the job template on your workstation using the [Open Job Description CLI](https://github.com/OpenJobDescription/openjd-cli#readme). Install the CLI with `pip`.
+You can run the job template on your workstation using the [Open Job Description CLI](https://github.com/OpenJobDescription/openjd-cli#readme) on the GitHub website. Install the CLI with `pip`.
 
 ```
 pip install openjd-cli
@@ -41,7 +41,3 @@ deadline bundle submit turntable_with_maya_arnold
 ```
 
 Use the Deadline Cloud monitor to track the progress of the job. In the monitor, select the task for the job and choose **View logs**. Select the **Launch conda** session action to verify that the `maya`, `maya-mtoa`, and `maya-openjd` packages were found in the Amazon S3 channel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

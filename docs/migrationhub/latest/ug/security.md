@@ -18,7 +18,3 @@ This documentation will help you understand how to apply the shared responsibili
 **Topics**
 + [Identity and access management in AWS Migration Hub](auth-and-access-control.md)
 + [Logging and monitoring in AWS Migration Hub](logging-monitoring.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

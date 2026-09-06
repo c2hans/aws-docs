@@ -61,7 +61,3 @@ After creating your Agent Space:
 + Configure penetration testing capabilities including domain verification
 +  **(If using IAM Identity Center)** Assign users to this Agent Space under the **Web app** section of the Agent Space page. (see [Grant users access to the AWS Security Agent web application](grant-user-access.md))
 +  **(If using IAM-only access)** Users with console access can launch the web application through the admin access link for this Agent Space
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,7 +38,3 @@ A data lake administrator or a user with the required permissions completes the 
 1.  Grants access to specific catalogs, databases, and tables to data analysts using Lake Formation permissions. Fine-grained access control policies can be defined across data lakes, warehouses, and OLTP sources using Lake Formation, enabling row-level and column-level security filters.
 
     Data analysts can then access all data through the Data Catalog using SQL queries in Athena, without needing separate connections or data source credentials. Analysts can run federated SQL queries that scan data from multiple sources, joining data in-place without complex data pipelines.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

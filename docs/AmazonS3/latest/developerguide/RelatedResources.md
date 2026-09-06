@@ -21,7 +21,3 @@ Following is a table that lists related resources that you'll find useful as you
 | [Amazon S3 product information](https://aws.amazon.com/s3/) | The primary web page for information about Amazon S3.  |
 | [Contact Us](https://aws.amazon.com/contact-us/) | A central contact point for inquiries concerning AWS billing, account, events, abuse, etc.  |
 | [Conditions of Use](https://aws.amazon.com/terms) | Detailed information about the copyright and trademark usage at Amazon.com and other topics.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

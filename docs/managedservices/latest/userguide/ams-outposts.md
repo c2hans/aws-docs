@@ -162,7 +162,3 @@ How will the AMS Service Level Agreement change to accommodate AWS Outposts?
 Incident management will be contingent on AWS Outposts availability. AWS Outposts availability is subject to customer network availability, which is the responsibility of the customer. AWS Outposts availability is also subject to AWS Outposts hardware uptime, which is dependent on AWS Outposts Service Level Agreements.
 
 See also [AWS Outposts FAQs](https://aws.amazon.com/outposts/faqs/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ To get started with Compliance, complete the following tasks.
 | (Optional) Configure the system to view compliance history and change tracking.  | [Viewing compliance configuration history and change tracking](compliance-about.md#compliance-history) |
 | (Optional) Create custom compliance types.  | [Assign custom compliance metadata using the AWS CLI](compliance-custom-metadata-cli.md) |
 | (Optional) Create a resource data sync to aggregate all compliance data in a target Amazon Simple Storage Service (Amazon S3) bucket. | [Creating a resource data sync for Compliance](compliance-datasync-create.md) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

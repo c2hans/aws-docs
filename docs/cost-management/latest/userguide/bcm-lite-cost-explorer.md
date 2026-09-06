@@ -46,7 +46,3 @@ Because you're using our new AWS experience, we provide a streamlined version of
 + [Ask questions about your costs using Amazon Q Developer in the AWS Billing and Cost Management console](bcm-lite-ce-amazon-q.md)
 + [Cost comparisons in the AWS Billing and Cost Management console](bcm-lite-ce-cost-comparisons.md)
 + [Troubleshoot Cost Explorer in the AWS Billing and Cost Management console](bcm-lite-ce-troubleshooting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

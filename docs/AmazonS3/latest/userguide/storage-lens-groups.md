@@ -76,7 +76,7 @@ Here's an example of how to configure your IAM policy in the account that create
                 "s3:UpdateStorageLensGroup",
                 "s3:GetStorageLensGroup",
                 "s3:ListStorageLensGroups",
-                "s3:DeleteStorageLensGroup,
+                "s3:DeleteStorageLensGroup",
                 "s3:TagResource",
                 "s3:UntagResource",
                 "s3:ListTagsForResource"
@@ -212,7 +212,3 @@ You can identify metrics for Storage Lens groups by looking for one of the follo
 + `STORAGE_LENS_GROUP_ACCOUNT`
 
 The `record_value` column displays the resource ARN for the Storage Lens group (for example, `arn:aws:s3:{{us-east-1}}:{{111122223333}}:storage-lens-group/{{Marketing-Department}}`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -102,7 +102,3 @@ The following table summarizes the snapshot states.
 | recoverable | The snapshot is currently in the Recycle Bin. To use the snapshot, you must first recover it from the Recycle Bin. |
 | recovering | The snapshot is being recovered from the Recycle Bin. After the snapshot has been recovered, it transitions to the completed state and becomes ready for use. |
 | error | The snapshot creation process has failed. A snapshot can't be used if it is in the error state. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,7 +47,3 @@ Abandoned workloads fragment your cluster capacity and prevent autoscalers from 
 + Set `ttlSecondsAfterFinished: 86400` on all Job specs to auto-clean completed jobs after 24 hours
 
 For the complete scripts and manifests, see the [02-application-cleanup](https://github.com/aws-samples/sample-eks-cost-optimization-guide/tree/main/02-application-cleanup) folder in the code repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

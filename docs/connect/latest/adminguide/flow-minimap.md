@@ -20,7 +20,3 @@ Note the following functionality:
 + It highlights selected blocks in blue, notes in yellow, search results in orange, and termination blocks in black.
 + It allows continuous movement of the view when you drag on the mini-map.
 + It returns the view to the **Entry** block and trims unused space when you choose **Reset**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -9,13 +9,16 @@ This reference documents the public Amazon Bedrock AgentCore CLI releases.
 
 **Topics**
 + [Project Lifecycle](#cli-project-lifecycle)
++ [Invocation & Runtime](#cli-invocation)
 + [Resource Management](#cli-resources)
++ [Evaluation & Datasets](#cli-evaluation)
 + [Optimization & Config Bundles](#cli-optimization)
++ [Operations & Settings](#cli-operations)
 
 ## Project Lifecycle
 <a name="cli-project-lifecycle"></a>
 
- *Auto-generated from `@aws/agentcore` v0.24.2 — do not edit by hand.*
+ *Auto-generated from `@aws/agentcore` v0.28.1 — do not edit by hand.*
 
 ### agentcore create
 <a name="_agentcore_create"></a>
@@ -290,10 +293,284 @@ Project directory containing agentcore config
  `--json` *(optional)*
 Output as JSON [non-interactive]
 
+## Invocation & Runtime
+<a name="cli-invocation"></a>
+
+ *Auto-generated from `@aws/agentcore` v0.28.1 — do not edit by hand.*
+
+### agentcore invoke
+<a name="_agentcore_invoke"></a>
+
+```
+agentcore invoke|i [options] [prompt]
+```
+
+Invoke a deployed agent endpoint.
+
+ **Parameters**
+
+ `prompt`
+Prompt to send to the agent. Also accepts piped stdin when no prompt is provided and stdin is not a TTY [non-interactive]
+
+ `--prompt <text>` *(optional)*
+Prompt to send to the agent [non-interactive]
+
+ `--prompt-file <path>` *(optional)*
+Read the prompt from a file (for long or structured payloads that exceed shell arg limits) [non-interactive]
+
+ `--runtime <name>` *(optional)*
+Select specific runtime [non-interactive]
+
+ `--gateway <name>` *(optional)*
+Invoke through a gateway [non-interactive]
+
+ `--gateway-target-name <name>` *(optional)*
+HTTP runtime target on the gateway [non-interactive]
+
+ `--target <name>` *(optional)*
+Select deployment target [non-interactive]
+
+ `--session-id <id>` *(optional)*
+Use specific session ID for conversation continuity
+
+ `--user-id <id>` *(optional)*
+User ID for runtime invocation (default: "default-user")
+
+ `--api-base <url>` *(optional)*
+The LiteLLM API base URL override for harness invocations. Available only with `lite_llm` in non-interactive mode.
+
+ `--additional-params <json>` *(optional)*
+The additional LiteLLM parameters, as a JSON object, for harness invocations. Available only with `lite_llm` in non-interactive mode.
+
+ `--payment-user-id <id>` *(optional)*
+End-user/wallet-owner identity (defaults to --user-id)
+
+ `--payment-instrument-id <id>` *(optional)*
+Payment instrument (wallet) ID
+
+ `--payment-session-id <id>` *(optional)*
+Payment session ID for budget tracking
+
+ `--auto-session` *(optional)*
+Auto-create/reuse a payment session for testing
+
+ `--json` *(optional)*
+Output as JSON
+
+ `--stream` *(optional)*
+Stream response in real-time
+
+ `--tool <name>` *(optional)*
+MCP tool name (use with "call-tool" prompt)
+
+ `--input <json>` *(optional)*
+MCP tool arguments as JSON (use with --tool)
+
+ `--exec` *(optional)*
+Execute a shell command in the runtime container
+
+ `--timeout <seconds>` *(optional)*
+Timeout in seconds for --exec commands
+
+ `-H, --header <header>` *(optional)*
+Custom header "Name: Value" (repeatable)
+
+ `--bearer-token <token>` *(optional)*
+Bearer token for CUSTOM\_JWT auth (bypasses SigV4)
+
+ `--harness <name>` *(optional)*
+Select specific harness to invoke
+
+ `--harness-arn <arn>` *(optional)*
+Invoke a harness by ARN (no project required)
+
+ `--region <region>` *(optional)*
+The AWS Region (required with --harness-arn)
+
+ `--verbose` *(optional)*
+Print verbose streaming JSON events
+
+ `--model-id <id>` *(optional)*
+Override model
+
+ `--model-provider <provider>` *(optional)*
+The model provider. Valid values: `bedrock`, `open_ai`, or `gemini`.
+
+ `--api-key-arn <arn>` *(optional)*
+API key ARN for open\_ai/gemini
+
+ `--tools <tools>` *(optional)*
+Override tools (comma-separated)
+
+ `--allowed-tools <tools>` *(optional)*
+Override allowed tools (comma-separated)
+
+ `--skills <paths>` *(optional)*
+Skills (comma-separated paths)
+
+ `--system-prompt <text>` *(optional)*
+Override system prompt
+
+ `--actor-id <id>` *(optional)*
+Override memory actor ID
+
+ `--max-iterations <n>` *(optional)*
+Override max iterations
+
+ `--max-tokens <n>` *(optional)*
+Override max tokens
+
+ `--harness-timeout <seconds>` *(optional)*
+Override timeout seconds
+
+### agentcore exec
+<a name="_agentcore_exec"></a>
+
+```
+agentcore exec [options] [command...]
+```
+
+Open an interactive shell or run a one-shot command in a deployed agent container.
+
+ **Parameters**
+
+ `command`
+Command to execute (one-shot mode, non-interactive)
+
+ `--it` *(optional)*
+Open an interactive PTY shell session
+
+ `--runtime <name|arn>` *(optional)*
+Target agent name or runtime ARN (skips agent picker)
+
+ `--harness <name|arn>` *(optional)*
+Target harness name or harness ARN (skips agent picker)
+
+ `--session-id <id>` *(optional)*
+Pin to a specific runtime session / VM
+
+ `--shell-id <id>` *(optional)*
+Reconnect to an existing shell
+
+ `--region <region>` *(optional)*
+The AWS Region
+
+ `--bearer-token <token>` *(optional)*
+Bearer token for CUSTOM\_JWT authentication (skips SigV4)
+
+ `--target <name>` *(optional)*
+Deployment target name (from agentcore.json)
+
+ `--timeout <seconds>` *(optional)*
+Timeout in seconds for one-shot commands
+
+ `--json` *(optional)*
+Output result as JSON (one-shot mode only, incompatible with --it)
+
+### agentcore run
+<a name="_agentcore_run"></a>
+
+```
+agentcore run [options] [command]
+```
+
+Run evaluations, batch evaluations, or optimization recommendations.
+
+### agentcore logs
+<a name="_agentcore_logs"></a>
+
+```
+agentcore logs|l [options] [command]
+```
+
+Stream or search agent runtime logs.
+
+ **Parameters**
+
+ `--runtime <name>` *(optional)*
+Select specific runtime
+
+ `--since <time>` *(optional)*
+Start time — defaults to 1h ago in search mode (for example, "1h", "30m", "2d", ISO 8601)
+
+ `--until <time>` *(optional)*
+End time — defaults to now in search mode (for example, "now", ISO 8601)
+
+ `--level <level>` *(optional)*
+Filter by log level (error, warn, info, debug)
+
+ `-n, --limit <count>` *(optional)*
+Maximum number of log lines to return
+
+ `--query <text>` *(optional)*
+Server-side text filter
+
+ `--json` *(optional)*
+Output as JSON Lines
+
+### agentcore traces
+<a name="_agentcore_traces"></a>
+
+```
+agentcore traces|t [options] [command]
+```
+
+View and download agent traces.
+
+### agentcore status
+<a name="_agentcore_status"></a>
+
+```
+agentcore status|s [options]
+```
+
+Show deployed resource details and status.
+
+ **Parameters**
+
+ `--runtime-id <id>` *(optional)*
+Look up a specific runtime by ID
+
+ `--target <name>` *(optional)*
+Select deployment target
+
+ `--type <type>` *(optional)*
+Filter by resource type (agent, runtime-endpoint, memory, credential, gateway, evaluator, online-eval, payment, policy-engine, policy, config-bundle, dataset, knowledge-base, harness)
+
+ `--state <state>` *(optional)*
+Filter by deployment state (deployed, local-only, pending-removal)
+
+ `--runtime <name>` *(optional)*
+Filter to a specific runtime
+
+ `--name <name>` *(optional)*
+Show details for a single resource by name (knowledge-base)
+
+ `--json` *(optional)*
+Output as JSON
+
+### agentcore fetch
+<a name="_agentcore_fetch"></a>
+
+```
+agentcore fetch [options] [command]
+```
+
+Fetch access info for deployed resources.
+
+### agentcore view
+<a name="_agentcore_view"></a>
+
+```
+agentcore view [options] [command]
+```
+
+View job history and details
+
 ## Resource Management
 <a name="cli-resources"></a>
 
- *Auto-generated from `@aws/agentcore` v0.24.2 — do not edit by hand.*
+ *Auto-generated from `@aws/agentcore` v0.28.1 — do not edit by hand.*
 
 ### agentcore add
 <a name="_agentcore_add"></a>
@@ -333,10 +610,50 @@ Deployment target name (only needed if project has multiple targets)
  `-y, --yes` *(optional)*
 Auto-confirm prompts
 
+## Evaluation & Datasets
+<a name="cli-evaluation"></a>
+
+ *Auto-generated from `@aws/agentcore` v0.28.1 — do not edit by hand.*
+
+### agentcore evals
+<a name="_agentcore_evals"></a>
+
+```
+agentcore evals [options] [command]
+```
+
+View saved eval and batch eval results from past runs.
+
+### agentcore batch-evaluations
+<a name="_agentcore_batch_evaluations"></a>
+
+```
+agentcore batch-evaluations [options] [command] <id>
+```
+
+View batch evaluation jobs and their results.
+
+ **Parameters**
+
+ `id`
+Batch evaluation job ID to view
+
+ `--json` *(optional)*
+Output as JSON
+
+### agentcore dataset
+<a name="_agentcore_dataset"></a>
+
+```
+agentcore dataset [options] [command]
+```
+
+Manage dataset content and versions
+
 ## Optimization & Config Bundles
 <a name="cli-optimization"></a>
 
- *Auto-generated from `@aws/agentcore` v0.24.2 — do not edit by hand.*
+ *Auto-generated from `@aws/agentcore` v0.28.1 — do not edit by hand.*
 
 ### agentcore config-bundle
 <a name="_agentcore_config_bundle"></a>
@@ -365,6 +682,80 @@ agentcore archive [options] [command]
 
 Archive (delete) a batch evaluation or recommendation on the service and clear local history.
 
-## See also
+## Operations & Settings
+<a name="cli-operations"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+ *Auto-generated from `@aws/agentcore` v0.28.1 — do not edit by hand.*
+
+### agentcore pause
+<a name="_agentcore_pause"></a>
+
+```
+agentcore pause [options] [command]
+```
+
+Pause a deployed resource (online eval config, A/B test).
+
+### agentcore resume
+<a name="_agentcore_resume"></a>
+
+```
+agentcore resume [options] [command]
+```
+
+Resume a paused resource (online eval config, A/B test).
+
+### agentcore stop
+<a name="_agentcore_stop"></a>
+
+```
+agentcore stop [options] [command]
+```
+
+Stop a running batch evaluation or A/B test.
+
+### agentcore config
+<a name="_agentcore_config"></a>
+
+```
+agentcore config [options] [key] [value]
+```
+
+Adjust global configuration settings such as telemetry opt-out status
+
+ **Parameters**
+
+ `key`
+Config key in dot notation (for example, telemetry.enabled)
+
+ `value`
+Value to set
+
+### agentcore telemetry
+<a name="_agentcore_telemetry"></a>
+
+```
+agentcore telemetry [options] [command]
+```
+
+Manage anonymous usage analytics preferences.
+
+### agentcore feedback
+<a name="_agentcore_feedback"></a>
+
+```
+agentcore feedback [options] [message]
+```
+
+Send feedback about the AgentCore CLI to the team.
+
+ **Parameters**
+
+ `message`
+Feedback message [non-interactive]
+
+ `--screenshot <path>` *(optional)*
+Path to a PNG or JPG screenshot (max 100MB) [non-interactive]
+
+ `--json` *(optional)*
+Output result as JSON [non-interactive]

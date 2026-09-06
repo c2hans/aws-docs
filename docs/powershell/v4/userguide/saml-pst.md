@@ -204,7 +204,3 @@ PS > (Get-Ec2Instance -ProfileName ADFS-Production -Region ap-southeast-2).Insta
 For general information about how to implement federated API access, see [How to Implement a General Solution for Federated API/CLI Access Using SAML 2.0](https://aws.amazon.com/blogs/security/how-to-implement-a-general-solution-for-federated-apicli-access-using-saml-2-0/).
 
 For support questions or comments, visit the AWS Developer Forums for [PowerShell Scripting](https://forums.aws.amazon.com/forum.jspa?forumID=149) or [.NET Development](https://forums.aws.amazon.com/forum.jspa?forumID=61).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

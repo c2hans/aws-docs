@@ -53,7 +53,3 @@ The diagram below represents the logical interaction view of forensic memory and
 1. The forensic instance is terminated.
 
 1. Details about forensic ID, compromised Amazon EC2 instance or EKS cluster, Amazon S3 bucket location of the results, and Amazon DynamoDB table details about disk and memory analysis are sent as SNS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Forensics Orchestrator for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,7 +45,3 @@ When you delete an S3 bucket, you also delete the folders and objects that it co
 1. When you’re prompted, enter the bucket's name into the text field, and then press **Enter** to delete the bucket and close the confirmation prompt.
 **Note**
 If your bucket contains objects, it’s emptied before it's deleted. If you attempt to delete a large number of resources or objects at one time, it can take some time for them to be deleted. After they're deleted, you receive a notification that says that they're successfully deleted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

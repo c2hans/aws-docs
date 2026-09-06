@@ -15,7 +15,3 @@ For information on other query languages you can use, see [OpenSearch Service PP
 + [Sample queries](CWL_QuerySyntax-examples.md)
 + [Compare (diff) with previous time ranges](CWL_AnalyzeLogData_Compare.md)
 + [Visualize log data in graphs](CWL_Insights-Visualizing-Log-Data.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

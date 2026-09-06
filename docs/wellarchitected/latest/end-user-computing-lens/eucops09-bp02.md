@@ -65,7 +65,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  [Amazon WorkSpaces Primer](https://explore.skillbuilder.aws/learn/course/external/view/elearning/517/amazon-workspaces-primer)
 +  [Amazon WorkSpaces Deep Dive](https://explore.skillbuilder.aws/learn/course/external/view/elearning/1723/amazon-workspaces-deep-dive)
 +  [Amazon AppStream Primer](https://www.aws.training/Details/Curriculum?id=67990&redirect=false)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

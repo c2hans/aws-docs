@@ -117,7 +117,3 @@ The following limitations and recommendations apply to using logical replication
   replication slot {{slot_name}} is already active for PID {{x}} providing immediate feedback.
   ```
 + While using the `pglogical` extension, you can only use the cluster writer endpoint. The extension has known limitations that can create unused logical replication slots during table synchronization. Stale replication slots reserve write-ahead log (WAL) files and can lead to disk space problems.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

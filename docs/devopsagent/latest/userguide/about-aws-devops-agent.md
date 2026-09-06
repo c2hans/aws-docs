@@ -65,7 +65,3 @@ AWS DevOps Agent automatically builds an application topology that maps your res
 + **Prevent recurring incidents** – Targeted recommendations address root causes and strengthen system resilience across observability, infrastructure, deployments, and application code.
 + **Improve operational efficiency** – Free your team from repetitive investigation and review tasks to focus on higher-value work.
 + **Work within existing workflows** – Integrates with your existing tools and processes without disruption, delivering results where your team already works.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

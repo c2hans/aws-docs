@@ -50,7 +50,3 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/data-engineer-a
 + Skill 3.4.3: Investigate data consistency (for example, DataBrew).
 + Skill 3.4.4: Describe data sampling techniques.
 + Skill 3.4.5: Implement data skew mechanisms.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

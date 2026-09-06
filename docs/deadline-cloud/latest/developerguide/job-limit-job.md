@@ -84,11 +84,11 @@ If your submitter doesn't support adding host requirements, you can also apply a
 ## Automate limits with submission hooks
 <a name="job-limit-hooks"></a>
 
-If you want to enforce limits across all job submissions without requiring artists to manually edit job templates, you can use a [pre-submission hook](https://github.com/aws-deadline/deadline-cloud/blob/mainline/docs/submission-hooks.md) to automatically inject the host requirement into every job template at submission time.
+If you want to enforce limits across all job submissions without requiring artists to manually edit job templates, you can use a pre-submission hook to automatically inject the host requirement into every job template at submission time. For more information, see [Submission hooks](https://github.com/aws-deadline/deadline-cloud/blob/mainline/docs/submission-hooks.md) on the GitHub website.
 
 A pre-submission hook is a script that runs before the job is submitted. The hook can modify the job bundle's `template.yaml` to add the `hostRequirements` amounts entry for your limit. This approach ensures that every job submitted through the Deadline Cloud CLI or DCC submitters declares its need for the limited resource.
 
-For a complete working example, see the [license limits submission hook sample](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/submission_hooks/license_limits) in the Deadline Cloud samples repository.
+For a complete working example, see the [license limits submission hook sample](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/submission_hooks/license_limits) in the Deadline Cloud samples repository on the GitHub website.
 
 ## End-to-end example: Enforce V-Ray license limits
 <a name="job-limit-example"></a>
@@ -142,7 +142,3 @@ This example shows how to set up a limit for 5 V-Ray floating licenses and verif
 1. Submit the job. The scheduler allows at most 5 tasks with `amount.vray` to run concurrently across all jobs in the queue. Additional tasks remain in the `READY` state until a slot becomes available.
 
 To verify the limit is working, temporarily set `maxCount` to 1 and submit two jobs. The first job runs while the second remains in the `READY` state until the first completes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ If you don't enable sharing within AWS Organizations, you can't share resources 
 + [Terms and concepts](getting-started-terms-and-concepts.md)
 + [Sharing your resources](getting-started-sharing.md)
 + [Using shared resources](getting-started-shared.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

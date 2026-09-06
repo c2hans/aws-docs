@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/custom-visual-transform-u
 If you determine the default icon for your **Action** does not visually distinguish it as part of your workflows, you can provide a custom icon, as described in [Getting started with custom visual transforms](custom-visual-transform-getting-started.md). You can update the icon by updating the corresponding SVG hosted in Amazon S3.
 
 For best results, design your image to be viewed at 32x32px following guidelines from the Cloudscape Design System. For more information about Cloudscape guidelines, see [The Cloudscape documentation](https://cloudscape.design/foundation/visual-foundation/iconography/#custom-icons)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

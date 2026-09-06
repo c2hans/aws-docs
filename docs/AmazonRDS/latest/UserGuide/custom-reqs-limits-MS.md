@@ -49,7 +49,3 @@ The following limitations apply to RDS Custom for SQL Server:
 + The maximum DB instance storage is 64 TiB.
 + You can't use RDS Proxy with RDS Custom for SQL Server.
 + You can't use the `describe-reserved-db-instances` API for RDS Custom for SQL Server DB instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

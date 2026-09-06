@@ -122,7 +122,3 @@ Make sure you get the Lightsail default key pair (DKP) for the virtual computer 
 
    You should see a response similar to the following example. It shows each file that was transferred from the origin folder to the destination directory. You should now be able to access those files on your virtual computer.
 ![Response to the SCP transfer.](http://docs.aws.amazon.com/lightsail-for-research/latest/ug/images/scp-transfer-response-linux.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail for Research. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail-for-research` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

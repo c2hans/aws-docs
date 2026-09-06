@@ -63,7 +63,3 @@ To link to a new silence page for an external Alertmanager, add an `alertmanager
 1. Select the silence that you want to end, and choose **Unsilence**. This ends the alert suppression.
 **Note**
 Unsilencing ends the alert suppression, as if the end time was set for the current time. Silences that have ended (automatically or manually) are retained and listed for five days. You cannot remove a silence from the list manually.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

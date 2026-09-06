@@ -36,7 +36,3 @@ Use the following steps to create a custom line item that applies either a credi
 1. For **Display settings**, choose a service that you want the flat custom line item present in the bills. The default value is `AWSBillingConductor`.
 
 1. Choose **Create**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing Conductor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query billingconductor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

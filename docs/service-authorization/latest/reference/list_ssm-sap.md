@@ -392,7 +392,3 @@ AWS Systems Manager for SAP defines the following condition keys that can be use
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/systems-manager/index.html)  | Filters access by the tags that are passed in the request | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/systems-manager/index.html)  | Filters access by the tags associated with the resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/systems-manager/index.html)  | Filters access by the tag keys that are passed in the request | ArrayOfString |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

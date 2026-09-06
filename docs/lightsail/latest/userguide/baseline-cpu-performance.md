@@ -57,7 +57,3 @@ The following table outlines the performance baselines for Lightsail instances t
 | Linux or Unix $44 and Windows $74 | 2 | 8 GB | 160 GB | 30% |
 | Linux or Unix $84 and Windows $124 | 4 | 16 GB | 320 GB | 22.5% |
 | Linux or Unix $164 and Windows $244 | 8 | 32 GB | 640 GB | 17% |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

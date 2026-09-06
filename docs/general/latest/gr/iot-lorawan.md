@@ -283,7 +283,3 @@ This table describes the maximum TPS for other, additional AWS IoT Wireless API 
 | `[TPS limit for UpdatePosition](https://console.aws.amazon.com/servicequotas/home/services/iotwireless/quotas/L-C80BC655)` | TPS limit for UpdatePosition | 10 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotwireless/quotas/L-C80BC655) |
 | `[TPS limit for UpdateResourceEventConfiguration](https://console.aws.amazon.com/servicequotas/home/services/iotwireless/quotas/L-70D824D9)` | TPS limit for UpdateResourceEventConfiguration | 10 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotwireless/quotas/L-70D824D9) |
 | `[TPS limit for UpdateResourcePosition](https://console.aws.amazon.com/servicequotas/home/services/iotwireless/quotas/L-E01F1EA2)` | TPS limit for UpdateResourcePosition | 10 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotwireless/quotas/L-E01F1EA2) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

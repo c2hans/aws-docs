@@ -65,7 +65,3 @@ It takes approximately 30 minutes for the private re:Post to be created. When yo
 
 **Note**
 From April 18, 2025, all new re:Post Private instances support dual stack networking with both IPv4 and IPv6 connectivity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

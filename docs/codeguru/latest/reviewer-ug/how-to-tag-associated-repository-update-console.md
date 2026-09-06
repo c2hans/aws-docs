@@ -22,7 +22,3 @@ You can use the CodeGuru Reviewer console to update, add, or remove the tags ass
 1. Enter new values in **key** and **value** to edit tags. Choose **Remove** next to a tag to remove it. Choose **Add new tag** to add a new tag.
 
 1. Choose **Save changes** when you are finished.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

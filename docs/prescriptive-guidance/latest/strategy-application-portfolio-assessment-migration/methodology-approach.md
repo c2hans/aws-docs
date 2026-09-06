@@ -22,7 +22,3 @@ As the migration date approaches, detailed application information, down to the 
 The following diagram shows the key activities for each stage of assessment and how they pivot between *portfolio-level* assessment (identification of sources of data, high-level discovery, initial inventory, prioritization, and directional business case) and *application-level* assessment (detailed discovery, AWS design, and migration strategy). Portfolio-level and application-level assessments represent the breadth and depth of information required.
 
 ![Timeline for discovery, application assessment, migration planning, and continuous improvement.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-application-portfolio-assessment-migration/images/guide-img/7c9d894c-c8ca-4901-8b62-e1a8c08d1940/images/75c04ac9-0103-4877-af7d-5fcd7fe2a71d.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

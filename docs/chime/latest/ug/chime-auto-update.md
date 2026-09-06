@@ -12,7 +12,3 @@ The Amazon Chime web application – [https://app.chime.aws](https://app.chime.a
 The Amazon Chime desktop client automatically downloads updates when they become available. A message on the Home screen notifies you about the update. To install it, just restart the client. You can select the message to restart, or open the **File** menu, located above your name in the upper-left corner, and choose **Restart Amazon Chime**.
 
 **On your mobile device** – Amazon Chime mobile applications use the update options provided by the App Store and Google Play to deliver the latest version of the Amazon Chime client. If your company manages your mobile device, updates may come through your IT department's mobile device management systems.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -289,7 +289,3 @@ For more information about creating roles or roles for Amazon EC2 instances, see
 + For more information about using temporary security credentials, see [Temporary security credentials in IAM](id_credentials_temp.md).
 + If you work with the IAM API or CLI, you must create and manage IAM instance profiles. For more information about instance profiles, see [Use instance profiles](id_roles_use_switch-role-ec2_instance-profiles.md).
 + For more information about temporary security credentials for roles in the instance metadata, see [Retrieving Security Credentials from Instance Metadata](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#instance-metadata-security-credentials) in the *Amazon EC2 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

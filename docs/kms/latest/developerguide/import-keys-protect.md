@@ -24,7 +24,3 @@ You *must* retain a copy of the imported key material outside of AWS in a system
 
 **Important**
 Symmetric encryption keys can have multiple key materials associated with them. The entire KMS key becomes unusable as soon as you delete any one of those key materials or if any one of those key materials expires (unless the deleted or expiring key material is `PENDING_ROTATION` or `PENDING_MULTI_REGION_IMPORT_AND_ROTATION`). You must reimport any expired or deleted key materials associated with such a key before the key becomes usable for cryptographic operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

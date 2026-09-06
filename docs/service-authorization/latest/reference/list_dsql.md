@@ -336,7 +336,3 @@ Amazon Aurora DSQL defines the following condition keys that can be used in the 
 |   [dsql:FisActionId](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html)  | Filters access by the ID of an AWS FIS action | String |
 |   [dsql:FisTargetArns](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html)  | Filters access by the ARN of an AWS FIS target | ArrayOfARN |
 |   [dsql:WitnessRegion](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/using-iam-condition-keys.html#using-iam-condition-keys-create-mr-cluster-witness)  | Filters access by the witness region of multi-Region clusters | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

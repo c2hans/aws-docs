@@ -228,7 +228,3 @@ room.disconnect();
 ```
 
 Calling this method causes the room to close the underlying WebSocket in an orderly manner. The room instance transitions to a `disconnected` state and emits a disconnect event, with the `disconnect` reason set to `"clientDisconnect"`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

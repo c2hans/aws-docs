@@ -113,7 +113,3 @@ If you have an external trust configured between your AWS Managed Microsoft Acti
 <a name="dfs-namespace"></a>
 
 FSx for Windows File Server supports the use of Microsoft DFS Namespaces. Use DFS Namespaces to organize file shares that are located on multiple file systems into one common folder structure (a namespace) that you use to access the entire file dataset. You can use a name in your DFS Namespace to access your Amazon FSx file system by configuring its link target to be the file system's DNS name. For more information, see [Group multiple FSx for Windows File Server file systems with DFS Namespaces](using-dfs-namespaces.md#group-file-systems).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

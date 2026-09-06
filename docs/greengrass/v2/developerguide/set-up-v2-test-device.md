@@ -112,7 +112,3 @@ After you create and deploy V2 components to your new V2 core device, verify tha
 If you deployed the [Greengrass CLI](greengrass-cli-component.md) to the core device, you can use it to debug components and their configurations. For more information, see [Greengrass CLI commands](gg-cli-reference.md).
 
 After you verify that your applications work on a V2 core device, you can deploy your application's Greengrass components to other core devices. If you developed custom components that run native processes or Docker containers, you must first [publish those components](publish-components.md) to the AWS IoT Greengrass service to deploy them to other core devices.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

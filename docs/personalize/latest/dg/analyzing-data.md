@@ -76,7 +76,3 @@ You must first import data before Amazon Personalize can analyze it. For more in
    + To view detailed statistics for a column, expand the dataset section, choose **Column level statistics** and choose the radio button for the column.
 
 1.  Correct any issues in your data, import it again, and run another analysis to verify. For more information on importing data again, see [Updating data in datasets after training](updating-datasets.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

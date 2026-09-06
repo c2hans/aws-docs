@@ -16,7 +16,3 @@ To access the complete AWS Prescriptive Guidance series for large migrations, se
 + [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html)
 + [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 + [Cloud Migration Factory](https://aws.amazon.com/solutions/implementations/aws-cloudendure-migration-factory-solution/?did=sl_card&trk=sl_card)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

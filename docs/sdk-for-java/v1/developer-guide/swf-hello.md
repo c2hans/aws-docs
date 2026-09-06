@@ -687,7 +687,3 @@ You can browse the [complete source](https://github.com/awsdocs/aws-doc-sdk-exam
 + The workers presented here can result in lost tasks if they are shutdown while a workflow poll is still going on. To find out how to shut down workers gracefully, see [Shutting Down Activity and Workflow Workers Gracefully](swf-graceful-shutdown.md).
 + To learn more about Amazon SWF, visit the [Amazon SWF](https://aws.amazon.com/swf/) home page or view the [Amazon SWF Developer Guide](https://docs.aws.amazon.com/amazonswf/latest/developerguide/).
 + You can use the AWS Flow Framework for Java to write more complex workflows in an elegant Java style using annotations. To learn more, see the [AWS Flow Framework for Java Developer Guide](https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

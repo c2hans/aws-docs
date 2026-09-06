@@ -33,7 +33,3 @@ The Service Catalog API provides programmatic control over all end-user actions 
 This video (7:27) describes how to create, organize, and govern a curated catalog of AWS products, and share products with permissions level. As a result, end users can quickly provision approved IT resources without direct access to the underlying AWS services.
 
 [![AWS Videos](http://img.youtube.com/vi/A6-jv3gZa4U/0.jpg)](http://www.youtube.com/watch?v=A6-jv3gZa4U)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

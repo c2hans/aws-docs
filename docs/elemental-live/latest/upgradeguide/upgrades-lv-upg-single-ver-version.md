@@ -18,7 +18,3 @@ To identify changes in behavior with the upgrade, see the essential notes in the
 The software installer that you use for the nodes varies depending on whether you have GPU-accelerated software type or CPU-only. To determine the type of software, look at any web interface screen of the worker node. The top shows one or two icons as follows:
 + CPU and GPU icons: the software is *GPU-accelerated*.
 + CPU icon only: the software is *CPU-only*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -96,7 +96,3 @@ If you haven't launched any EC2 instances for a directory, a dash (**-**) displa
 1. Under **Directory details**, under **Directory administration EC2 instance**, choose one or all of your instances to view.
 
 1. When you choose an instance, you're routed to the EC2 **Connect to instance** page to connect a remote desktop to your instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

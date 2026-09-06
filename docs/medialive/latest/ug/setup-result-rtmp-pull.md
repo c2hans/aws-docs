@@ -10,7 +10,3 @@ As a result of this setup, an RTMP pull input exists that specifies one or two *
 At runtime of the channel, the input will connect to two URLs (for a standard channel) or one URL (for a single-pipeline channel), and pull the source content identified by the application name and instance name into MediaLive.
 
 ![Diagram showing upstream systems sending GET requests to two input URLs with different IP addresses.](http://docs.aws.amazon.com/medialive/latest/ug/images/rtmp-pull-uss-input.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

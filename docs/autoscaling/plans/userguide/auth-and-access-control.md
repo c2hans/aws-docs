@@ -21,7 +21,3 @@ The following sections provide details on how an IAM administrator can use IAM t
 + [How scaling plans work with IAM](security_iam_service-with-iam.md)
 + [Predictive scaling service-linked role](aws-auto-scaling-service-linked-roles.md)
 + [Identity-based policy examples for scaling plans](security_iam_id-based-policy-examples.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

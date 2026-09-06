@@ -46,7 +46,3 @@ The following table lists the application versions that are available in each Am
 | Zeppelin-Sandbox | 0.6.1 | 0.6.1 | 0.6.1 | 0.6.1 | 0.6.1 | 0.6.1 | 0.6.1 | 0.6.1 | 0.6.1 | 0.6.1 | 0.6.1 | 0.6.1 | 0.5.6-incubating | 0.5.6-incubating | 0.5.6-incubating | 0.5.6-incubating | 0.5.6-incubating | 0.5.6-incubating | 0.5.6-incubating | 0.5.6-incubating | 0.5.6-incubating | 0.5.5-incubating-amzn-1 | 0.5.5-incubating-amzn-0 | 0.6.0-incubating-SNAPSHOT |  -  |
 | ZooKeeper |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 | ZooKeeper-Sandbox | 3.4.9 | 3.4.9 | 3.4.9 | 3.4.9 | 3.4.9 | 3.4.9 | 3.4.9 | 3.4.9 | 3.4.9 | 3.4.8 | 3.4.8 | 3.4.8 | 3.4.8 | 3.4.8 | 3.4.8 | 3.4.8 | 3.4.8 | 3.4.8 | 3.4.8 |  -  |  -  |  -  |  -  |  -  |  -  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

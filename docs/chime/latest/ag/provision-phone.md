@@ -24,7 +24,3 @@ When provisioning completes, the phone numbers appear in your **Inventory**. You
 1. Search for available phone numbers. Select the phone numbers that you want, then choose **Provision**.
 
 The phone numbers appear in your **Orders** and **Pending** lists while the provisioning occurs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

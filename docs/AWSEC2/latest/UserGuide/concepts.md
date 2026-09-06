@@ -159,7 +159,3 @@ You can use AWS Cost Explorer to analyze the cost and usage of your EC2 instance
 + [Hands-on Tutorials](https://aws.amazon.com/getting-started/hands-on/)
 + [Web Hosting](https://aws.amazon.com/websites/)
 + [Windows on AWS](https://aws.amazon.com/windows/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ For example, if you have a collection of microservices that handle restaurant re
 **Note**
 If you want to delete your profiling group, visit the CodeGuru Profiler console. If you disable **Code profiling** in the Lambda console, your profiling group still exists.
 If the execution role of your Lambda function doesn’t have the required CodeGuru Profiler permissions such as [AmazonCodeGuruProfilerAgentAccess](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/security-iam-awsmanpol.html#security-iam-awsmanpol-amazoncodeguruprofileragentaccess) or your function doesn’t have the required environment variables, the Lambda console attempts to add them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

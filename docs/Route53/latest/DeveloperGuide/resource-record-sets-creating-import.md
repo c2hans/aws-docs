@@ -73,7 +73,3 @@ If you're creating a record that has the same name as the hosted zone, don't ent
 Depending on the number of records in your zone file, you might have to wait a few minutes for the records to be created.
 
 1. If you're using another DNS service for the domain (which is common if you registered the domain with another registrar), move DNS service to Route 53. When that step is done, your registrar will identify Route 53 as your DNS service for DNS queries for your domain, and the queries will start going to Route 53 DNS servers. (Typically, there's a day or two of delay before DNS queries start going to Route 53 because your previous DNS service's data is cached on DNS resolvers for that long.) For more information, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -179,7 +179,3 @@ You can utilize Powertools for Lambda to efficiently write your Lambda function 
 + TypeScript/Node.js — See [https://docs.powertools.aws.dev/lambda/typescript/latest/features/event-handler/appsync-events/](https://docs.powertools.aws.dev/lambda/typescript/latest/features/event-handler/appsync-events/) in the *Powertools for AWS Lambda (TypeScript)* documentation.
 + Python — See [https://docs.powertools.aws.dev/lambda/python/latest/core/event\_handler/appsync\_events/](https://docs.powertools.aws.dev/lambda/python/latest/core/event_handler/appsync_events/) in the *Powertools for AWS Lambda (Python)* documentation.
 + .NET — See [https://docs.powertools.aws.dev/lambda/dotnet/core/event\_handler/appsync\_events/](https://docs.powertools.aws.dev/lambda/dotnet/core/event_handler/appsync_events/) in the *Powertools for AWS Lambda (.NET) * documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -91,7 +91,3 @@ This section provides an example of how to publish custom data to CloudWatch.
 + [Amazon SQS, Amazon SNS and Tools for Windows PowerShell](pstools-sqs-queue-sns-topic.md)
 + [CloudWatch from the AWS Tools for Windows PowerShell](pstools-cw.md)
 + [Using the ClientConfig parameter in cmdlets](pstools-clientconfig.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ No. AWS PCS manages the secret value. If you try to change the `SecretString` or
 
 **What happens if the service-linked role loses access to the key?**
 Rotation and node operations that read the secret fail. The underlying cause is a AWS KMS access-denied error that is visible in AWS CloudTrail, and the rotation surfaces as a failed rotation. The cluster itself remains `ACTIVE`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

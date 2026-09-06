@@ -12,7 +12,3 @@ AWS Microservice Extractor for .NET analyzes the source code of a monolithic app
 After Microservice Extractor extracts a specified functionality group within the application, you can manually package and deploy the functionalities as independent services in containers. You can then integrate the smaller services with your custom workflows.
 
 Extracting monolithic applications into smaller, independent services is an iterative process. Based on your requirements, you can repeat the process by onboarding the newly extracted monolithic application into Microservice Extractor. This further assists with identifying and extracting components as independent services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -1951,7 +1951,3 @@ Amazon Redshift defines the following condition keys that can be used in the `Co
 |   [redshift:InboundIntegrationArn](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-overview.html#redshift-policy-resources.conditions)  | Filters access by the ARN of an inbound zero-ETL Integration resource | ARN |
 |   [redshift:IntegrationSourceArn](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-overview.html#redshift-policy-resources.conditions)  | Filters access by the ARN of a zero-ETL Integration source | ARN |
 |   [redshift:IntegrationTargetArn](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-overview.html#redshift-policy-resources.conditions)  | Filters access by the ARN of a zero-ETL Integration target | ARN |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

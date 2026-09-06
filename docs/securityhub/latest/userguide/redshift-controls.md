@@ -454,7 +454,3 @@ Amazon Redshift supports multiple Availability Zones (Multi-AZ) deployments for 
 <a name="redshift-18-remediation"></a>
 
 For information about configuring Multi-AZ deployments for an Amazon Redshift cluster, see [Converting a Single-AZ data warehouse to a Multi-AZ data warehouse](https://docs.aws.amazon.com/redshift/latest/mgmt/convert-saz-to-maz.html) in the *Amazon Redshift Management Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

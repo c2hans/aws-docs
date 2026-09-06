@@ -125,7 +125,3 @@ sudo reboot
 | g4dn |  + g4dn.metal<br />+ g4dn.16xlarge<br />+ g4dn.12xlarge  |  + 0,1,48,49<br />+ 0,1,32,33<br />+ 0,1,24,25  |  + ffffffff,ffffffff,ffffffff<br />+ ffffffff,ffffffff<br />+ ffff,ffffffff  |
 | p4d |  + p4d.24xlarge  |  + 0,1,48,49  |  + ffffffff,ffffffff,ffffffff  |
 | p3dn |  + p3dn.24xlarge  |  + 0,1,48,49  |  + ffffffff,ffffffff,ffffffff  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

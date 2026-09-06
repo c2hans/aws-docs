@@ -18,7 +18,3 @@ Make sure that you configure the network to permit interaction between your sour
 + [Using an IBM Db2 for Linux, UNIX and Windows database as a source in DMS Schema Conversion](sc-data-providers-db2luw.md)
 + [Using an IBM Db2 for z/OS database as a source in DMS Schema Conversion](sc-data-providers-db2zos.md)
 + [Using a SAP ASE (Sybase ASE) database as a source in AWS DMS Schema Conversion](dm-data-providers-source-sybase-ASE.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

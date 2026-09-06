@@ -37,7 +37,3 @@ For an autoscaling example, see [ Scale SageMaker AI Workloads with Application 
 <a name="kubernetes-sagemaker-operators-ack-reference"></a>
 
 See also the [ACK service controller for Amazon SageMaker AI GitHub repository](https://github.com/aws-controllers-k8s/sagemaker-controller) or read [AWS Controllers for Kubernetes Documentation](https://aws-controllers-k8s.github.io/community/docs/community/overview/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

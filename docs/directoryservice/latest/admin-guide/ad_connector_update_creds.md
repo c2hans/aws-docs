@@ -21,7 +21,3 @@ If AWS IAM Identity Center is enabled for the directory, Directory Service must 
 1. In the **Service account credentials** section, choose **Update**.
 
 1. In the **Update service account credentials** dialog box, type the service account username and password. Reenter the password to confirm it and then choose **Update**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

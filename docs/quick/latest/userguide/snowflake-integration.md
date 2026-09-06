@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/snowflake-integra
 **Note**
 This guide covers an integration validated with a third-party MCP server. Snowflake manages the setup and availability of the Cortex Agent MCP server.
 
-With the Snowflake Cortex Agent action connector, you can query Snowflake data and run AI-powered analytics through Cortex Agent directly in Amazon Quick via Model Context Protocol (MCP) server connectivity.
+With the Snowflake Cortex Agent connector, you can query Snowflake data and run AI-powered analytics through Cortex Agent directly in Amazon Quick via Model Context Protocol (MCP) server connectivity.
 
 Snowflake Cortex Agent uses MCP server connectivity. To set up this integration, complete the following two steps. First, enable the Cortex Agent MCP server in your Snowflake account and obtain the server endpoint URL. Then, create the integration in Amazon Quick. For more information about Snowflake's Cortex Agent MCP server, see [Cortex Agents MCP server](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp) in the Snowflake documentation.
 
@@ -59,7 +59,3 @@ After you set up the integration, the actions exposed by Snowflake Cortex Agent 
 <a name="snowflake-integration-troubleshooting"></a>
 
 To edit, share, or delete your integration, see [Managing existing integrations](integration-workflows.md#managing-existing-integrations). For general MCP integration troubleshooting, see [Troubleshooting](mcp-integration.md#mcp-integration-troubleshooting).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

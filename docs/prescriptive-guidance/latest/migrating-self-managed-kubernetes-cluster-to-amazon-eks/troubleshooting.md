@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrating-s
 | ImagePullBackOff errors on migrated pods | Ensure Amazon EKS nodes have access to the container registry used by the source cluster. Configure Amazon ECR pull-through cache or image pull secrets as needed. |
 | StorageClass provisioner mismatch | The migration script automatically remaps `kubernetes.io/aws-ebs` to `ebs.csi.aws.com`. For other provisioners, manually update the StorageClass before migration or after extraction. |
 | Rollback script cannot find migration report | Specify the report path explicitly: `python3 rollback_eks_migration.py --report <path-to-migration_report.json>`. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

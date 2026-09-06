@@ -125,7 +125,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-ana
 |  [AWS Partner Offerings – File Integrity Monitoring](control-name-descriptions.md#aws-partner-network-apn-offerings-file-integrity-monitoring) <br /> (ID: Sec.IR.13)  |  This control helps to maintain the integrity of operating system and application files.  |
 |  [CloudFormation \+ Service Catalog](control-name-descriptions.md#cloudformation-service-catalog) <br /> (ID: Ops.1)  |  These controls help you to provision your infrastructure in an automated and secure manner. The CloudFormation template file serves as the single source of truth for your cloud environment.  |
 |  [AWS DR Options](control-name-descriptions.md#aws-dr-options) <br /> (ID: Ops.4)  |  These controls can help you rapidly recover your IT infrastructure and data.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

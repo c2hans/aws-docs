@@ -15,7 +15,3 @@ Schedule a reservation at one of our physical Data Transfer Terminal facilities 
  **To access Data Transfer Terminal**:
 +  ** AWS Data Transfer Terminal console**: https://console.aws.amazon.com/datatransferterminal
 +  **Data Transfer Terminal facilities**: The location of Data Transfer Terminal facilities are provided once a reservation is made in the console. For more information, see [Make a data transfer](accessing-site.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Transfer Terminal. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datatransferterminal` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

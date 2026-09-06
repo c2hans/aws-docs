@@ -19,7 +19,3 @@ For implementing your modern healthcare-data strategy, we recommend following th
   For example, use AWS managed services to implement [data mesh architectures](https://aws.amazon.com/what-is/data-mesh/), minimize the overhead involved in data movement, and use [federated query](https://aws.amazon.com/blogs/big-data/query-any-data-source-with-amazon-athenas-new-federated-query/).
 
 For additional information and details on implementing an architecture to support a modern health data strategy, see [Appendix D: Additional guidance for implementing a modern health data strategy](appendix-d.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

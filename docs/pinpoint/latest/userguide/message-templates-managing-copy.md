@@ -24,7 +24,3 @@ To quickly create a new message template that's similar to an existing template,
 1. When you finish entering the name, choose **Duplicate template**. The template page opens and displays all the content and settings for the active version of the template that you copied.
 
 1. (Optional) To change the template copy, choose **Edit**, make the changes that you want, and then choose **Save as new version**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,3 @@ We recommend following best practices and if applicable, your organization's sec
 The Wickr IO bot container is moderately hardened to remove unnecessary services, etc., but its threat model assumes that it is deployed on an internal network segment and configured as a client system. Don't forget to augment your security controls as you expand your use cases. The bottom line is if you lose control of your bot host, you will likely lose control of your bot and all the data. Log only what you need to log, encrypt what you need to encrypt, and use strong access controls.
 
 Bots are not isolated by default. Users outside your network can interact with bots if they guess the bot username and your security group allows external federation. For more information, see [Security groups for AWS Wickr ](https://docs.aws.amazon.com/wickr/latest/adminguide/security-groups.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

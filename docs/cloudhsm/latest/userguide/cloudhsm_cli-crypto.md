@@ -20,7 +20,3 @@ In the CloudHSM CLI, **crypto** is a parent category for a group of commands tha
   + [ml-dsa](cloudhsm_cli-crypto-verify-mldsa.md)
   + [rsa-pkcs](cloudhsm_cli-crypto-verify-rsa-pkcs.md)
   + [rsa-pkcs-pss](cloudhsm_cli-crypto-verify-rsa-pkcs-pss.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

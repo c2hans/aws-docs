@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 +  Many systems of record host health data in proprietary formats and schemas. Therefore, interoperability architectures perform some transformations to map data elements to and from the interoperability standard.
 +  The architecture may store the exchanged health data using a database service like DynamoDB, or it may exchange data without persisting it.
 +  [AWS HealthLake](https://aws.amazon.com/healthlake/) enables use cases that require enrichment of health data in FHIR format or downstream analytics and machine learning. AWS HealthLake can improve semantic interoperability by applying natural language processing (NLP) to link concepts in unstructured data to terms in standard health ontologies, like ICD-10-CM, SNOMED CT, and RxNorm.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

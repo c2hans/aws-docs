@@ -30,7 +30,3 @@ Analyze timing and performance metrics
 + [Troubleshooting CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Troubleshooting.html) - Comprehensive CDN troubleshooting guide
 + [Increase CloudFront cache hit ratio](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cache-hit-ratio.html) - Performance optimization guidance
 + [Monitor AWS resources](https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/monitor-aws-resources.html) - Performance monitoring best practices
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

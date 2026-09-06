@@ -20,7 +20,3 @@ If all nodes are tagged with the same key and value, you only need one associati
    If you're working in the console, choose **Specify instance tags** in the **Targets** field. For **Instance tags**, enter the **Tag** key and value for your Auto Scaling group.
 
    If you're using the AWS Command Line Interface (AWS CLI), specify `--targets Key=tag:{{tag-key}},Values={{tag-value}}` where the key and value match what you tagged your nodes with.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

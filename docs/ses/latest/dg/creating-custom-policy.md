@@ -24,7 +24,3 @@ If you want to create a custom policy and attach it to an identity, you have the
 1. In the **Policy document** pane, type or paste the text of your policy in JSON format. You can also use the policy generator to quickly create the basic structure of a policy and then customize it here.
 
 1. Choose **Apply Policy**. (If you ever need to modify your custom policy, just select its check box under the **Authorization** tab, choose **Edit**, and make your changes in the **Policy document** pane followed by **Save changes**).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

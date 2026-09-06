@@ -21,7 +21,3 @@ For details on the JSON contents, we recommend that you read the [AWS Elemental 
 + [JSON payload for delete actions](cli-schedule-delete-json.md)
 + [JSON payload for combining create and delete](schedule-create-and-delete-json.md)
 + [Viewing the schedule (AWS CLI)](viewing-schedule-using-cli.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

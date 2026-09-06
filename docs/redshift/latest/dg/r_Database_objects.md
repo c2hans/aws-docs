@@ -29,16 +29,12 @@ Access to database objects depends on the permissions that you grant to users or
 + Schemas are collections of database tables and other database objects. Schemas are similar to file system directories, except that schemas cannot be nested. Users can be granted access to a single schema or to multiple schemas.
 
 Additionally, Amazon Redshift employs the following features to give you finer control over which users have access to which database objects:
-+  Role-based access control (RBAC) lets you assign permissions to roles which you can then apply to users, letting you control permissions for large groups of users. Unlike groups, roles can inherit permissions from other roles.
++  With role-based access control (RBAC), you can assign permissions to roles which you can then apply to users, letting you control permissions for large groups of users. Unlike groups, roles can inherit permissions from other roles.
 
-  Row-level security (RLS) lets you define policies that restrict access to rows of your choosing, then apply those policies to users or groups.
+  With row-level security (RLS), you can define policies that restrict access to rows of your choosing, then apply those policies to users or groups.
 
    Dynamic data masking (DDM) further protects your data by transforming it at query runtime so that you can allow users access to data without exposing sensitive details.
 
 For examples of security implementation, see [Example for controlling user and group access](t_user_group_examples.md).
 
 For more information about protecting your data, see [Security in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/iam-redshift-user-mgmt.html) in the *Amazon Redshift Management Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

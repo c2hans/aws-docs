@@ -19,7 +19,3 @@ Follow the step-by-step instructions in this section to configure and deploy the
  **Time to deploy:** Approximately 60 minutes
 
 Before you launch the solution, review the [Cost](cost.md), [Architecture](architecture-overview.md), [Network security](security-1.md), and other considerations discussed in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

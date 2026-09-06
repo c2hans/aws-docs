@@ -44,7 +44,3 @@ Amazon Connect Health patient engagement uses AI to capture and transcribe conve
 AWS’s patient engagement agent provides the following language at the outset of each interaction:
 
 "Hi, I’m your AI assistant. This call may be monitored and recorded by your health care provider and its service providers to improve their services."
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connecthealth` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

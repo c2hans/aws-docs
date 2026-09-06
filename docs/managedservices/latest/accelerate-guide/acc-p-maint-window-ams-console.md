@@ -32,7 +32,3 @@ Verify the next execution time.
 Visit the [SSM Maintenance Window console](https://console.aws.amazon.com/systems-manager/maintenance-windows) , search for your newly created patch maintenance window, and verify the next execution time. If you have any questions or need to edit your patch maintenance window, create a service request to talk with an AMS patch expert
 
 To schedule a CRON-based patch maintenance window using CloudFormation, see [Create a patch maintenance window using CloudFormation for AMS Accelerate](acc-p-maint-window-cfn.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

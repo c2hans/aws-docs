@@ -106,7 +106,3 @@ In IAM Identity Center (IdC) domains, you can also disable the SageMaker Data Ag
 The following image shows the domain configuration option for disabling the SageMaker Data Agent.
 
 ![Screenshot of the domain configuration page showing the toggle option to disable the SageMaker Data Agent.](http://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/images/data-agent/disable-data-agent.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

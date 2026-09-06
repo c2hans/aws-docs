@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 +  Define acceptable generative AI model response times that optimize for sustainability.
 +  Use timeout mechanisms on generative AI agent workflows to prevent excessive resource consumption.
 +  These considerations integrate the sustainability best practices from the Generative AI Lens with each existing FSI sustainability pillar, verifying that generative AI implementations in financial services maintain both regulatory adherence and environmental responsibility.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

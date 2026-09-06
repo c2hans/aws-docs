@@ -46,7 +46,3 @@ To take advantage of a multi-Region setup, you must use an external identity pro
    The AWS access portal is a web portal that provides your users with seamless access to all their assigned applications, AWS accounts, or both. New users in IAM Identity Center must activate their user credentials before they can sign in to the AWS access portal.
 
    For information about how to sign in to the AWS access portal, see [Sign in to the AWS access portal](https://docs.aws.amazon.com/signin/latest/userguide/iam-id-center-sign-in-tutorial.html) in the *AWS Sign-In User Guide*. To learn about the sign-in process for the AWS access portal, see [Signing in to the AWS access portal](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtosignin.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

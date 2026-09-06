@@ -18,7 +18,3 @@ The action supports the following condition keys, which let you control exactly 
 
 **Important**
 Because `batch:SetCapacityTags` is evaluated only when `capacityTags` is present, an explicit `Deny` on this action prevents a principal from setting capacity tags while still allowing them to create and update compute environments that do not use `capacityTags`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,7 +47,3 @@ You can create your secret using the [CreateSecret](https://docs.aws.amazon.com/
 The admin secret type (`DatadogAdminKey`) differs from the user secret type (`DatadogApiKey`). Because of this difference, the default rotation role policy scoped by `secretsmanager:resource/Type` will not grant access to the admin secret. You must explicitly provide the rotation role access to the admin secret. You can do this by adding a statement scoped to the `DatadogAdminKey` type. Alternatively, specify the admin secret `ARN` directly in the role policy.
 
 During rotation, the driver creates a new API key via the Datadog Key Management API v2, verifies the new key using the validation endpoint, promotes the new key to AWSCURRENT, and deletes the displaced key (two rotations old) from Datadog. This maintains a 2-key alternating pattern ensuring zero-downtime rotation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

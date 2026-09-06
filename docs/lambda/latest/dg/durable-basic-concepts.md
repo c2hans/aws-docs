@@ -125,7 +125,3 @@ Choose a retention period based on your compliance requirements, debugging needs
 <a name="durable-basic-concepts-see-also"></a>
 + [AWS Durable Execution SDK Developer Guide](https://docs.aws.amazon.com/durable-execution/) – Complete SDK reference, quickstart tutorials, testing framework, and language-specific guides.
 + [Durable functions or Step Functions](durable-step-functions.md) – Compare durable functions with Step Functions to understand when each approach is most effective.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

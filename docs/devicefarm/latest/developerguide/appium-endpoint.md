@@ -16,7 +16,7 @@ To learn more about server-side execution, please see [Test frameworks and built
 + [Getting started with Appium testing](appium-endpoint-getting-started.md)
 + [Interacting with the device using Appium](appium-endpoint-interaction.md)
 + [Reviewing your Appium server logs](appium-endpoint-server-logs.md)
-+ [Supported Appium capabilities and commands](appium-endpoint-supported-caps-and-commands.md)
++ [Supported features and versions](appium-endpoint-support.md)
 
 ## What is an Appium endpoint?
 <a name="appium-endpoint-what-is"></a>
@@ -26,7 +26,3 @@ To learn more about server-side execution, please see [Test frameworks and built
 Appium is built on the client-server model, where a local client requests a (local or remote) Appium server to command a device on their behalf. The Appium server manages a driver for communicating with the device, such as the [UIAutomator2 driver](https://github.com/appium/appium-uiautomator2-driver/) for Android or the [XCUITest driver](https://appium.github.io/appium-xcuitest-driver/9.10/) for iOS. All commands follow the [W3C WebDriver](https://www.w3.org/TR/webdriver2/) standards for how to control a device.
 
 Device Farm's Appium endpoint exposes an Appium server URL for the device in your remote access session. The Appium endpoint URL will be specific to that device in that session, and remain valid for the duration of the session, allowing you to iterate on the same device without additional setup time. For more information about Remote Access, please see [Remote access in AWS Device Farm](remote-access.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

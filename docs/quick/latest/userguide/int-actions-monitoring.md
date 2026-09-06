@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/int-actions-monit
 # Monitoring and maintenance
 <a name="int-actions-monitoring"></a>
 
-Monitoring your action connectors helps ensure reliable performance and identify issues before they impact users. Regular monitoring allows you to track usage patterns, optimize performance, and maintain healthy connections to external services.
+Monitoring your connectors helps ensure reliable performance and identify issues before they impact users. Regular monitoring allows you to track usage patterns, optimize performance, and maintain healthy connections to external services.
 
 ## Performance monitoring
 <a name="qbs-actions-monitoring-qbs-actions-performance-monitoring"></a>
 
-You can assess action connector performance using the following metrics and analytics.
+You can assess connector performance using the following metrics and analytics.
 
 ### CloudWatch metrics
 <a name="qbs-actions-monitoring-qbs-actions-cloudwatch-metrics"></a>
@@ -22,8 +22,8 @@ You can assess action connector performance using the following metrics and anal
 ### Usage analytics
 <a name="qbs-actions-monitoring-qbs-actions-usage-analytics"></a>
 
-The following usage analytics are collected for action connectors:
-+ Active users - Track how many users are actively using action connectors to understand adoption and usage patterns.
+The following usage analytics are collected for connectors:
++ Active users - Track how many users are actively using connectors to understand adoption and usage patterns.
 + Popular actions - Identify which actions are used most frequently to prioritize optimization efforts.
 + Execution patterns - Analyze when and how often actions are executed to optimize resource allocation.
 + Error trends - Monitor error patterns over time to identify systemic issues and improvement opportunities.
@@ -31,7 +31,7 @@ The following usage analytics are collected for action connectors:
 ## Connection health
 <a name="qbs-actions-monitoring-qbs-actions-connection-health"></a>
 
-You can assess action connector health using the following connection health tools:
+You can assess connector health using the following connection health tools:
 
 ### Status monitoring
 <a name="qbs-actions-monitoring-qbs-actions-status-monitoring"></a>
@@ -58,7 +58,3 @@ You can assess action connector health using the following connection health too
 | ActionLatency | Execution time | Milliseconds |
 | AuthFailures | Failed authentications | Count |
 | APIThrottling | API throttling events | Count |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

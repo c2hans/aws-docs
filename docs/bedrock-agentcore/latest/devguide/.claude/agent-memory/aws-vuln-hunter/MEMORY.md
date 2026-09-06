@@ -1,0 +1,2 @@
+- [Test Environment & Tooling](env-tooling.md) — in-scope accounts, creds path, aws-cli-not-on-PATH quirk, canary skills
+- [Agent Registry Hunt Results](agent-registry-findings.md) — which leads confirmed/refuted on the agent-registry service (avoid re-testing)

@@ -42,7 +42,3 @@ For a list of things to consider while configuring your data source, see [ Data 
 
 **Note**
 For more information on connecting GitHub (Cloud) to Amazon Q Business, see [Connect the Amazon Q Business generative AI coding companion to your GitHub repositories with Amazon Q GitHub (Cloud) connector](https://aws.amazon.com/blogs/machine-learning/connect-the-amazon-q-business-generative-ai-coding-companion-to-your-github-repositories-with-amazon-q-github-cloud-connector/) in the *AWS Machine Learning Blog*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

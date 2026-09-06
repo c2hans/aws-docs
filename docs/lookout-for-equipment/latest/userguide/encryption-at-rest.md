@@ -11,7 +11,3 @@ Amazon Lookout for Equipment encrypts your data at rest with your choice of an e
 + An AWS owned key. If you don't specify an encryption key, your data is encrypted with this key by default.
 + A customer managed key. You can provide the Amazon Resource Name (ARN) of an encryption key that you created in your account. When you use a customer managed key, you must give the key a key policy that enables Amazon Lookout for Equipment to use the key. You must choose a symmetric customer managed key. Amazon Lookout for Equipment doesn't support asymmetric customer managed keys. For more information, see [Key management](key-management.md).
 + Amazon Lookout for Equipment follows the Amazon S3 bucket encryption policy. You have to set Amazon S3 default encryption on your bucket to encrypt objects stored in your bucket by Amazon Lookout for Equipment. For more information ,see [S3 bucket encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

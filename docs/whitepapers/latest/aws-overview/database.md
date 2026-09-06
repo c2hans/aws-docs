@@ -134,7 +134,3 @@ Amazon DocumentDB is designed from the ground-up to give you the performance, sc
 [Amazon Lightsail managed databases](https://aws.amazon.com/lightsail/) are separate from compute workloads, so you can build applications and websites on Lightsail instances without interruption. Lightsail supports MySQL and PostgreSQL databases , and you can configure them for standard availability for regular workloads or high availability for critical workloads. Lightsail-managed databases bundle the underlying compute, SSD-based storage, and data transfer bandwidth into a fixed monthly price. You can manage your Lightsail-managed database by using the Lightsail console, the [AWS Command Line Interface](https://aws.amazon.com/cli/) (AWS CLI), the Lightsail API, or an [AWS SDK](https://aws.amazon.com/developer/tools/).
 
 Return to [AWS services](amazon-web-services-cloud-platform.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -165,7 +165,3 @@ After you configure an identity to use a custom MAIL FROM domain, the state of t
 | Success | Uses custom MAIL FROM domain | Amazon SES continuously checks that the required MX record is in place.  |
 | TemporaryFailure | Uses custom MAIL FROM fallback setting | Amazon SES attempts to detect the required MX record for 72 hours. If unsuccessful, the state changes to "Failed"; if successful, the state changes to "Success". |
 | Failed | Uses custom MAIL FROM fallback setting | Amazon SES no longer attempts to detect the required MX record. To use a custom MAIL FROM domain, you have to restart the setup process in [Configuring your custom MAIL FROM domain](#mail-from-set).  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

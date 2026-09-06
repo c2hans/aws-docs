@@ -21,7 +21,3 @@ The migration dataflow using AWS DMS is as follows:
 + [Part 2: Designing the property graph model](https://aws.amazon.com/blogs/database/populating-your-graph-in-amazon-neptune-from-a-relational-database-using-aws-database-migration-service-dms-part-2-designing-the-property-graph-model/)
 + [Part 3: Designing the RDF Model](https://aws.amazon.com/blogs/database/populating-your-graph-in-amazon-neptune-from-a-relational-database-using-aws-database-migration-service-dms-part-3-designing-the-rdf-model/)
 + [Part 4: Putting it all together](https://aws.amazon.com/blogs/database/populating-your-graph-in-amazon-neptune-from-a-relational-database-using-aws-database-migration-service-dms-part-4-putting-it-all-together/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

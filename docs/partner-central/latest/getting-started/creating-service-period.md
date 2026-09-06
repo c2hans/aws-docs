@@ -17,7 +17,3 @@ Service periods can be added to any channel relationship using Partner Central C
    + Accept or reject the service period agreement
 
 1. **Service period activation** – Once the customer accepts the channel handshake, the service period becomes active and governs the billing transfer relationship according to the agreed terms.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -227,7 +227,3 @@ To find an XPath in your browser, open the context (right-click) menu for the fo
 | Authentication fails (HTTP 401 or 403, login redirect loop, or session timeout). | Credentials are incorrect or expired, or the XPath expressions do not match the login page elements. | Verify the credentials in your secret. For FORM or SAML auth, validate each XPath in your browser's developer tools, and verify loginPageUrl. |
 | Sync fails with rate limiting (HTTP 429) or incomplete content. | The crawler is fetching pages faster than the site allows. | Lower maxCrawledUrlsPerMinute, or increase implicitWaitInSeconds for sites with dynamic content that loads after the page becomes ready. |
 | Pages are missing because they are larger than expected. | The page or attachment exceeds maxFileSizeInMegaBytes. | Increase maxFileSizeInMegaBytes, or accept that files larger than the limit are not ingested. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

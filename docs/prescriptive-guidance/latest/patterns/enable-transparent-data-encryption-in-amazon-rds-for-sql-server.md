@@ -82,7 +82,3 @@ For the latest information about supported versions and editions, see [Support f
 + [Modifying an Amazon RDS DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html) (Amazon RDS documentation)
 + [Transparent Data Encryption for SQL Server](https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption) (Microsoft documentation)
 + [Using SSMS](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms) (Microsoft documentation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

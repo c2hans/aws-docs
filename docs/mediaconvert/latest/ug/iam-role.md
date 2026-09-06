@@ -24,7 +24,3 @@ If you enable Amazon S3 default encryption on your Amazon S3 buckets, and you an
 <a name="default-role"></a>
 
 If you use the name `MediaConvert_Default_Role`, then the MediaConvert console uses it by default when you create jobs in the future. This happens regardless of how you create the IAM service role for MediaConvert to use.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -383,7 +383,3 @@ When you add an entity list or an IP address list, GuardDuty shows the status of
 + **Activating** – Indicates that GuardDuty has initiated the process of activating the list. You can continue monitoring the status for this list. If there is no error, the status should update to **Active**. While the status remains **Activating**, you can't perform any action on this list. It might take a few minutes for the list status to change to **Active**.
 + **Deactivating** – Indicates that GuardDuty has initiated the process of deactivating the list. You can continue monitoring the status for this list. If there is no error, the status should update to **Inactive**. While the status remains **Deactivating**, you can't perform any action on this list.
 + **Delete Pending** – Indicates that the list is in the process of being deleted. While the status remains **Delete Pending**, you can't perform any action on this list.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

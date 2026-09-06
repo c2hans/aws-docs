@@ -26,7 +26,3 @@ AWS Service Catalog does not update AutoTags after you apply AutoTags to provisi
 + **aws:servicecatalog:provisioningPrincipalArn** - The ARN of the provisioning principal (user) who created the provisioned product.
 + **aws:servicecatalog:provisionedProductArn** - The provisioned product ARN.
 + **aws:servicecatalog:provisioningArtifactIdentifier** - The ID of the original provisioning artifact (product version).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

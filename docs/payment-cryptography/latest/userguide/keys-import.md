@@ -694,7 +694,3 @@ Use the following command to import an intermediate certificate:
 
 ****Import Public Key Certificate(Leaf) into AWS Payment Cryptography****
  Although you can import a leaf ECC certificate, there is currently no defined functions in AWS Payment Cryptography for it besides storage. This is because when using ECDH functions, the leaf certificate is passed at runtime.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

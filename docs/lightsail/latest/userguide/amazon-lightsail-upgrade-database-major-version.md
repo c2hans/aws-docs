@@ -90,7 +90,3 @@ Complete the following procedure to upgrade the database major version for your 
 <a name="upgrade-database-major-version-next-steps"></a>
 
 If you created a test database, you can delete it after you have verified that your application will work with the upgraded database. Keep the snapshot that you created of your previous database in case you need to go back to it. You should also create a snapshot of your upgraded database so that you have a new point-in-time copy of it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

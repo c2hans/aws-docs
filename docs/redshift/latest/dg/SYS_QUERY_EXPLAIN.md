@@ -46,7 +46,3 @@ SELECT * FROM sys_query_explain WHERE query_id = 612635 ORDER BY plan_node_id;
     100 |   612635 |                    1 |            9 |              8 |                                       ->  XN Seq Scan on sales a  (cost=0.00..7063797.76 rows=706379776 width=8)                                                                                                                                                                                                                                                                                                 |
 (9 rows)
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ Follow these steps to add blocked terminology to your private re:Post:
 1. In the **Add blocked terminology?** dialog box, enter the text that you want to block your private re:Post users from using. Then, choose **Add**.
 
 The term that you added is displayed in the list under the **Blocked terminology** section. When users try to use the blocked term in their private re:Post content, they get a warning message that asks them to edit the content and remove the term.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

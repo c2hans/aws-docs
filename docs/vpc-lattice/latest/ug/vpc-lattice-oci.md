@@ -101,7 +101,3 @@ To use VPC Lattice for Oracle Database@AWS, we recommend that you are familiar w
 + [Amazon S3 access](vpc-lattice-oci-s3-access.md)
 + [Zero-ETL for Amazon Redshift](vpc-lattice-oci-zero-etl.md)
 + [Access and share VPC Lattice entities](vpc-lattice-oci-entities.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

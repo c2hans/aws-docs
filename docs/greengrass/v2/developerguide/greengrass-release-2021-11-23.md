@@ -24,7 +24,3 @@ The following table lists AWS-provided components that include new and updated f
 | **Component** | **Details** |
 | --- | --- |
 | Greengrass nucleus | Version 2.5.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.5.1"></a>**Bug fixes and improvements**<br />   Adds support for 32-bit versions of the Java Runtime Environment (JRE) on Windows.   Changes thing group removal behavior for core devices whose AWS IoT policy doesn't grant the `greengrass:ListThingGroupsForCoreDevice` permission. With this version, the deployment continues, logs a warning, and doesn't remove components when you remove the core device from a thing group. For more information, see [Deploy AWS IoT Greengrass components to devices](manage-deployments.md).   Fixes an issue with system environment variables that the Greengrass nucleus makes available to Greengrass component processes. You can now restart a component for it to use the latest system environment variables.    |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

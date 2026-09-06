@@ -16,7 +16,3 @@ You use AWS published API calls to access Amazon IVS through the network. See [A
 <a name="infrastructure-ivs-chat"></a>
 
 Amazon IVS Chat message ingestion and delivery occurs over encrypted WSS connections to our edge. The Amazon IVS Messaging API uses encrypted HTTPS connections. As with video streaming and playback, TLS version 1.2 or later is required and messaging data may be transmitted unencrypted internally for processing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

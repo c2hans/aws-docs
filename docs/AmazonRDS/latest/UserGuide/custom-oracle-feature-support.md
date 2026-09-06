@@ -69,7 +69,3 @@ RDS Custom for Oracle supports the following DB instance classes. If you create 
 <a name="custom-oracle-feature-support.option-groups"></a>
 
 You can specify an option group when you create or modify an RDS Custom for Oracle DB instance. For more information, see [Working with option groups in RDS Custom for Oracle](custom-oracle-option-groups.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

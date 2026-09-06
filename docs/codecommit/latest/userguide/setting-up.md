@@ -76,7 +76,3 @@ When you work with CodeCommit, you use Git. You might use other programs, too. T
 | Python (git-remote-codecommit only) | git-remote-codecommit requires version 3 and later. |
 | Pip (git-remote-codecommit only) | git-remote-codecommit requires version 9.0.3 and later. |
 | AWS CLI (git-remote-codecommit only) | We recommend a recent version of AWS CLI version 2 for all CodeCommit users. git-remote-codecommit requires AWS CLI version 2 to support AWS SSO and connections that require temporary credentials, such as federated users.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,7 +65,3 @@ If you plan to use cross-Region aggregation, and have multiple administrator acc
 
 **Note**
 To understand how cross-Region aggregation impacts central configuration, see [Impact of central configuration on cross-Region aggregation](aggregation-central-configuration.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

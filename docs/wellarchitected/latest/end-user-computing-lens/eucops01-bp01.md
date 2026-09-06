@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Many frameworks exist that define a structured project approach, including advice on project board formulation. The [Prince II methodology](https://prince2.wiki/roles/project-board/) is a common example that embraces this approach.
 
  Implementing a structured approach or following a proven project management framework will make sure that project requirements, key timelines and success criteria are well documented, and that day-to-day tracking of project activities and progress towards key milestones is in effect.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

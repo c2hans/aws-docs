@@ -39,16 +39,16 @@ In our example, the first listener port is 10001. That port is associated with t
 | 10019 | 192.0.2.5 | 89 |
 | 10020 | 192.0.2.5 | 90 |
 | ... | ... | ... |
-| 12501 | 192.0.2.244 | 81 |
-| 12502 | 192.0.2.244 | 82 |
-| 12503 | 192.0.2.244 | 83 |
-| 12504 | 192.0.2.244 | 84 |
-| 12505 | 192.0.2.244 | 85 |
-| 12506 | 192.0.2.244 | 86 |
-| 12507 | 192.0.2.244 | 87 |
-| 12508 | 192.0.2.244 | 88 |
-| 12509 | 192.0.2.244 | 89 |
-| 12510 | 192.0.2.244 | 90 |
+| 12501 | 192.0.2.254 | 81 |
+| 12502 | 192.0.2.254 | 82 |
+| 12503 | 192.0.2.254 | 83 |
+| 12504 | 192.0.2.254 | 84 |
+| 12505 | 192.0.2.254 | 85 |
+| 12506 | 192.0.2.254 | 86 |
+| 12507 | 192.0.2.254 | 87 |
+| 12508 | 192.0.2.254 | 88 |
+| 12509 | 192.0.2.254 | 89 |
+| 12510 | 192.0.2.254 | 90 |
 | 12511 | 192.0.3.4 | 81 |
 | 12512 | 192.0.3.4 | 82 |
 | 12513 | 192.0.3.4 | 83 |
@@ -59,7 +59,3 @@ In our example, the first listener port is 10001. That port is associated with t
 | 12518 | 192.0.3.4 | 88 |
 | 12519 | 192.0.3.4 | 89 |
 | 12520 | 192.0.3.4 | 90 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

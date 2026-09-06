@@ -323,7 +323,3 @@ The [Verify Pod Identity association](#verify-pod-identity-association) troubles
 <a name="troubleshooting-rig-fluent-bit"></a>
 
 This is expected behavior. Fluent Bit is intentionally not deployed on restricted nodes. Logs from restricted nodes are published to CloudWatch through the SageMaker HyperPod platform independently of the observability add-on. Use the **Cluster Logs** dashboard in Amazon Managed Grafana to view these logs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

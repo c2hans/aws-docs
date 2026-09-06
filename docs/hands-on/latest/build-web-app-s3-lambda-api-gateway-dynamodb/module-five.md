@@ -135,7 +135,3 @@ You will need two Amplify libraries for your project. The main **aws-amplify lib
 
    AWS Amplify automatically builds your source code and deployed your app at ****https://...amplifyapp.com**** , and on every git push your deployment instance will update. Select the **Visit deployed URL** button to see your web app up and running live.
 ![The AWS Amplify Console showing the overview page for a web application named 'profilesapp', including deployment status, branch information, and the 'Visit deployed URL' button highlighted.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/basic-console-amplifylong-overview-page.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

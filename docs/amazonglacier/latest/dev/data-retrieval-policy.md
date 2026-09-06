@@ -100,7 +100,3 @@ When you use the [Initiate Job (POST jobs)](api-initiate-job-post.md) operation 
 <a name="data-retrieval-policy-managed-using-api-sdk"></a>
 
 AWS provides SDKs for you to develop applications for Amazon Glacier. These SDKs provide libraries that map to the underlying REST API and provide objects that enable you to easily construct requests and process responses. For more information, see [Using the AWS SDKs with Amazon Glacier](using-aws-sdk.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

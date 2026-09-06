@@ -25,6 +25,11 @@ The Unix timestamp for the time when the daemon revision was created.
 Type: Timestamp
 Required: No
 
+ ** critical **   <a name="ECS-Type-DaemonRevision-critical"></a>
+If the `critical` parameter of this daemon revision is `true`, and the daemon task fails, stops, or becomes unhealthy, Amazon ECS drains the container instance and stops the other tasks running on it. If the parameter is `false`, the daemon task failure doesn't affect the other tasks on the instance, and doesn't block instance registration. The default value is `true`.
+Type: Boolean
+Required: No
+
  ** daemonArn **   <a name="ECS-Type-DaemonRevision-daemonArn"></a>
 The Amazon Resource Name (ARN) of the daemon for this revision.
 Type: String
@@ -63,7 +68,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/DaemonRevision)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/DaemonRevision)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/DaemonRevision)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic Container Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

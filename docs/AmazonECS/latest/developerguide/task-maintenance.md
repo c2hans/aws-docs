@@ -96,6 +96,13 @@ You can identify tasks scheduled for retirement in the following ways:
 
 For information about how to prepare for task retirement, see [Prepare for AWS Fargate task retirement on Amazon ECS](prepare-task-retirement.md).
 
+## Affected resource status in a task retirement notice
+<a name="task-retirement-resource-status"></a>
+
+Each affected resource listed in a task retirement notice has a status that reflects whether that task is still waiting to be retired. While a task's retirement is pending, its status is *Impaired*. This indicates that the task is still running on the platform version revision that is scheduled for retirement.
+
+After a task stops running, the status changes to *Resolved* automatically, typically within 24 hours. This applies whether AWS retired the task as part of task maintenance, or you stopped or replaced the task yourself before the scheduled retirement. After all of the affected resources in a notice are *Resolved*, AWS closes the retirement notice.
+
 ## Can I opt-out of task retirement?
 <a name="task-retirement-opt-out"></a>
 
@@ -133,7 +140,3 @@ If Amazon ECS cannot start a replacement task during task retirement, your servi
 + Task definition errors
 
 When Amazon ECS cannot launch replacement tasks, the retired tasks are stopped without replacement, reducing your service's available capacity and potentially causing service disruption. Monitor your service's task count and Amazon CloudWatch metrics to ensure replacement tasks are successfully launched during retirement events.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -281,7 +281,3 @@ The time that it takes to create a knowledge base depends on your specific confi
 [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/) is a fully managed service that simplifies the deployment, scaling, and operation of OpenSearch in the AWS Cloud. There are two integrations between S3 Vectors and OpenSearch. One is to export vector data from S3 Vectors to OpenSearch Serverless for high-performance search capabilities. The other uses S3 Vectors as a cost-effective storage engine within OpenSearch while maintaining access to OpenSearch functionality.
 
 For more information, see [Using S3 Vectors with OpenSearch Service](s3-vectors-opensearch.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

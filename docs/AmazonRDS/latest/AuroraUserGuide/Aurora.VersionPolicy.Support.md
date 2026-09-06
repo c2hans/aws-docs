@@ -30,7 +30,3 @@ For the version numbers of all Aurora LTS versions, see [Aurora MySQL long-term 
 With Amazon RDS Extended Support, you can continue to run your database on a major engine version past the Aurora end of standard support date for an additional cost. During RDS Extended Support, Amazon RDS will supply patches for Critical and High CVEs as defined by the National Vulnerability Database (NVD) CVSS severity ratings. For more information, see [Amazon RDS Extended Support with Amazon Aurora](extended-support.md).
 
 RDS Extended Support is only available on certain Aurora versions. For more information, see [Amazon Aurora major versions](Aurora.VersionPolicy.Versioning.md#Aurora.VersionPolicy.MajorVersions).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

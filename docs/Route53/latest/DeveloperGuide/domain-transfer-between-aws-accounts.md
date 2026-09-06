@@ -98,7 +98,3 @@ To create a new hosted zone, see [Making Amazon Route 53 the DNS service for an
 **When transferring domain registration:** Update glue records with your new registrar after transfer completion
 **When migrating hosted zones:** Update glue records with your domain registrar after zone migration, as IP addresses change even though hostnames remain the same
 For detailed instructions, see [Step 7: Create glue records and change the registrar's name servers](white-label-name-servers.md#white-label-name-servers-create-glue-records).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

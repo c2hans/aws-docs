@@ -436,7 +436,3 @@ LIMIT 10
 ```
 
 Use the `object_join_key` column when joining annotation and inventory tables to ensure consistency. This column contains a unique identifier for the object, assigned with each new version, or when the null version is created or overwritten. It guarantees that the annotation row corresponds to the correct object version state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ Apache Kafka APIs for Amazon MSK clusters provides the following APIs for data r
 | <a name="kafka-cluster-DescribeTopicDynamicConfiguration"></a>[DescribeTopicDynamicConfiguration](https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions) | Describe the dynamic configuration of topics on a cluster, equivalent to Apache Kafka's DESCRIBE\_CONFIGS TOPIC ACL | List |
 | <a name="kafka-cluster-DescribeTransactionalId"></a>[DescribeTransactionalId](https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions) | Describe transactional IDs on a cluster, equivalent to Apache Kafka's DESCRIBE TRANSACTIONAL\_ID ACL | List |
 | <a name="kafka-cluster-ReadData"></a>[ReadData](https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions) | Read data from topics on a cluster, equivalent to Apache Kafka's READ TOPIC ACL | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

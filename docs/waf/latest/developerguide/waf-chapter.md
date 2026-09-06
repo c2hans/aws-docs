@@ -45,7 +45,3 @@ You can also use AWS WAF to protect your applications that are hosted in Amazon 
 + [Security in your use of the AWS WAF service](security.md)
 + [AWS WAF quotas](limits.md)
 + [Migrating your AWS WAF Classic resources to AWS WAF](waf-migrating-from-classic.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

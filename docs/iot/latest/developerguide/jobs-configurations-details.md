@@ -287,7 +287,3 @@ If you enable timeout when creating a job, then AWS IoT Jobs will attempt to ret
 
 **Continuous jobs and thing group membership updates**
 For continuous jobs that have a job status as `IN_PROGRESS`, the number of retry attempts is reset to zero when there are updates to a thing's group membership. For example, consider that you specified five retry attempts and three retries have already been performed. If a thing is now removed from the thing group and then rejoins the group, such as with dynamic thing groups, the number of retry attempts is reset to zero. You can now perform five retry attempts for your thing group instead of the two attempts that were remaining. In addition, when a thing is removed from the thing group, additional retry attempts are canceled.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

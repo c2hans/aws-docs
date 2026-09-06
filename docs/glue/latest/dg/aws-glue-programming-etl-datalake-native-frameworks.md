@@ -23,7 +23,3 @@ In this video, you can learn about the basics of how Apache Hudi, Apache Iceberg
 + [Using the Hudi framework in AWS Glue](aws-glue-programming-etl-format-hudi.md)
 + [Using the Delta Lake framework in AWS Glue](aws-glue-programming-etl-format-delta-lake.md)
 + [Using the Iceberg framework in AWS Glue](aws-glue-programming-etl-format-iceberg.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

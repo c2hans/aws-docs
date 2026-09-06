@@ -26,7 +26,3 @@ The flags tell the SDK to adapt the NALUs to AVCC or Annex-B for frame data and 
 | NAL\_ADAPTATION\_ANNEXB\_CPD\_AND\_FRAME\_NALS | Adapt Annex-B NALUs for the codec and frame private data to AVCC format NALUs. |
 
 For more information about NALU types, see **Section 1.3: Network Abstraction Layer Unit Types** in [RFC 3984](https://www.ietf.org/rfc/rfc3984.txt).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

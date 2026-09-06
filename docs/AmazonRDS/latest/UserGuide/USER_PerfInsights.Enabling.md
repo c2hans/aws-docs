@@ -120,7 +120,3 @@ You can also specify the `EnablePerformanceInsights` value using the following A
 When you turn on detailed per-query and database counter metrics, you can optionally specify the amount of time, in days, to retain the data with the `PerformanceInsightsRetentionPeriod` parameter. You can specify `7`, {{month}} \* 31 (where {{month}} is a number from 1–23), or `731`. For example, if you want to retain your performance data for 3 months, specify `93`, which is 3 \* 31. The default is `7` days. For more information about retention periods, see [Pricing and data retention for Database Insights](USER_PerfInsights.Overview.cost.md).
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

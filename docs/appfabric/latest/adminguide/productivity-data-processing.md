@@ -22,7 +22,3 @@ AWS AppFabric supports encryption at rest, a server-side encryption feature in w
 <a name="ahead-encryption-in-transit"></a>
 
 AppFabric secures all content in transit using TLS 1.2 and signs API requests for AWS services with AWS Signature Version 4.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

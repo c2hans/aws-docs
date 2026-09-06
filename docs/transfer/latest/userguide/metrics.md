@@ -36,7 +36,3 @@ The following table describes the CloudWatch dimensions for Transfer Family.
 | --- | --- |
 | `ServerId` | The unique ID of the server. |
 | `ConnectorId` | The unique ID of the connector. Used for AS2, for `OutboundMessage` and `OutboundFailedMessage` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

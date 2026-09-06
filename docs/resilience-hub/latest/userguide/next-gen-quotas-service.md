@@ -26,7 +26,3 @@ The following table lists the quotas for Next generation Resilience Hub.
 | 15 | Tests per test template | 1 | No |
 
 Resilience tests run on AWS Fault Injection Service, so AWS FIS service quotas also apply to your test runs. These include quotas for the maximum number of active experiments and the maximum action duration. For more information, see [Quotas and limitations for AWS Fault Injection Service](https://docs.aws.amazon.com/fis/latest/userguide/fis-quotas.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

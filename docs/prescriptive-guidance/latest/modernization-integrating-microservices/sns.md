@@ -28,7 +28,3 @@ Some of the functionality described in this section for Amazon SNS overlaps with
 + You require ordered delivery to subscribers (per message group).
 
 If you have many topics, and subscriptions and filters are being used to route messages between microservices, EventBridge is likely the better choice.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

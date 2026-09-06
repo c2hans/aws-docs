@@ -19,7 +19,3 @@ This guide covers the following topics related to managing and connecting to you
 Follow the step-by-step instructions to learn how to control the state of your instances, force stop instances that are stuck, update instances for enhanced networking, extend the file system of Windows Server instances, configure instances at launch using scripts, and secure your Windows Server instances.
 
 The guide covers both Linux or Unix and Windows Server instances, providing tips and best practices for tasks such as installing software, updating configurations, managing passwords, enabling security patches, and configuring firewall settings. By following this guide, you can effectively manage and secure your Lightsail instances, ensuring optimal performance, security, and customization for your specific use case.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

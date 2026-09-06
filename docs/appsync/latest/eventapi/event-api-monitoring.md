@@ -13,7 +13,7 @@ CloudWatch metrics is a tool that provides a wide range of metrics to monitor AP
 
 1. **Real-time Subscription Metrics**: These metrics focus on WebSocket connections and subscription activities. They include metrics for connection requests, successful connections, subscription registrations, message publishing, and active connections and subscriptions.
 
-CloudWatch Logs is a tool that enables logging capabilities for your Eent APIs. Logs can be set at two levels of the API:
+CloudWatch Logs is a tool that enables logging capabilities for your Event APIs. Logs can be set at two levels of the API:
 
 1. **Request-level Logs**: These capture overall request information, including HTTP headers, operation summaries, and subscription registrations.
 
@@ -24,7 +24,7 @@ You can configure logging, interpret log entries, and use log data for troublesh
 ## Setting up and configuring logging on an Event API
 <a name="setup-and-configuration"></a>
 
-Us the following instruction to turn on automatic logging on a Event API using the AWS AppSync console.
+Use the following instructions to turn on automatic logging on an Event API using the AWS AppSync console.
 
 1. Sign in to the AWS Management Console and open the [AppSync console](https://console.aws.amazon.com/appsync/).
 
@@ -108,7 +108,3 @@ Next, create a new role with the name **AWSAppSyncPushToCloudWatchLogsRole**, an
 ------
 
 Copy the role ARN and use it when setting up logging for an AWS AppSync Event API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

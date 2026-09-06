@@ -402,7 +402,3 @@ The SQL Server Generate and Publish Scripts Wizard is available as part of Micro
 1. Decide on a bulk import method to use after considering performance and other concerns discussed in [About bulk import and bulk export operations](http://msdn.microsoft.com/en-us/library/ms187042%28v=sql.105%29.aspx) in the SQL Server documentation.
 
 1. Bulk import the data from the data files that you created using the bcp utility. To do so, follow the instructions at either [Import and export bulk data by using the bcp utility](http://msdn.microsoft.com/en-us/library/aa337544%28v=sql.110%29.aspx) or [Import bulk data by using BULK INSERT or OPENROWSET(BULK...)](http://msdn.microsoft.com/en-us/library/ms175915%28v=sql.110%29.aspx) in the SQL Server documentation, depending on what you decided in step 11.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,7 @@ The following are some considerations that might affect your bandwidth weighting
 Instance types in the following instance families support configurable bandwidth weighting.
 + **General purpose:** M8a, M8g, M8gd, M8i, M8id, M8i-flex, M9g, M9gd
 + **Compute optimized:** C8a, C8g, C8gd, C8i, C8id, C8i-flex, C9g, C9gd
-+ **Memory optimized:** R8a, R8g, R8gd, R8i, R8id, R8i-flex, X8g, X8aedz, X8i
++ **Memory optimized:** R8a, R8g, R8gd, R8i, R8id, R8i-flex, R9g, R9gd, X8g, X8aedz, X8i
 
 ## Check current bandwidth settings
 <a name="config-bw-check-settings"></a>
@@ -496,6 +496,28 @@ The following table shows the networking performance, in Gbps, that can be achie
 | r8i-flex.8xlarge | 7.5 / 15.0 | 9.375 / 18.75 | 6.25 / 12.5 |
 | r8i-flex.12xlarge | 11.25 / 22.5 | 14.063 / 28.125 | 9.375 / 18.75 |
 | r8i-flex.16xlarge | 15.0 / 30.0 | 18.75 / 37.5 | 12.5 / 25.0 |
+| r9g.medium | 0.55 / 15.0 | 0.688 / 15.0 | 0.455 / 12.0 |
+| r9g.large | 1.0 / 15.0 | 1.25 / 15.0 | 0.81 / 12.0 |
+| r9g.xlarge | 2.1 / 15.0 | 2.625 / 15.0 | 1.725 / 12.0 |
+| r9g.2xlarge | 4.25 / 17.0 | 5.313 / 17.0 | 3.5 / 14.0 |
+| r9g.4xlarge | 8.5 / 17.0 | 10.625 / 17.0 | 7.0 / 14.0 |
+| r9g.8xlarge | 17.0 | 21.25 | 14.0 |
+| r9g.12xlarge | 25.0 | 31.25 | 20.5 |
+| r9g.16xlarge | 34.0 | 42.5 | 28.0 |
+| r9g.24xlarge | 50.0 | 62.5 | 41.0 |
+| r9g.48xlarge | 100.0 | 125.0 | 82.0 |
+| r9g.metal-48xl | 100.0 | 125.0 | 82.0 |
+| r9gd.medium | 0.55 / 15.0 | 0.688 / 15.0 | 0.455 / 12.0 |
+| r9gd.large | 1.0 / 15.0 | 1.25 / 15.0 | 0.81 / 12.0 |
+| r9gd.xlarge | 2.1 / 15.0 | 2.625 / 15.0 | 1.725 / 12.0 |
+| r9gd.2xlarge | 4.25 / 17.0 | 5.313 / 17.0 | 3.5 / 14.0 |
+| r9gd.4xlarge | 8.5 / 17.0 | 10.625 / 17.0 | 7.0 / 14.0 |
+| r9gd.8xlarge | 17.0 | 21.25 | 14.0 |
+| r9gd.12xlarge | 25.0 | 31.25 | 20.5 |
+| r9gd.16xlarge | 34.0 | 42.5 | 28.0 |
+| r9gd.24xlarge | 50.0 | 62.5 | 41.0 |
+| r9gd.48xlarge | 100.0 | 125.0 | 82.0 |
+| r9gd.metal-48xl | 100.0 | 125.0 | 82.0 |
 | x8g.medium | 0.52 / 12.5 | 0.65 / 12.5 | 0.441 / 10.0 |
 | x8g.large | 0.937 / 12.5 | 1.171 / 12.5 | 0.779 / 10.0 |
 | x8g.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
@@ -789,6 +811,28 @@ The following table shows the Amazon EBS performance, in Gbps, that can be achie
 | r8i-flex.8xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 12.5 |
 | r8i-flex.12xlarge | 7.5 / 15.0 | 4.687 / 9.375 | 9.375 / 18.75 |
 | r8i-flex.16xlarge | 10.0 / 20.0 | 6.25 / 12.5 | 12.5 / 25.0 |
+| r9g.medium | 0.38 / 12.0 | 0.242 / 7.75 | 0.475 / 12.0 |
+| r9g.large | 0.76 / 12.0 | 0.51 / 7.75 | 0.95 / 12.0 |
+| r9g.xlarge | 1.5 / 12.0 | 0.975 / 7.75 | 1.875 / 12.0 |
+| r9g.2xlarge | 3.0 / 12.0 | 1.937 / 7.75 | 3.75 / 12.0 |
+| r9g.4xlarge | 6.0 / 12.0 | 3.875 / 7.75 | 7.5 / 12.0 |
+| r9g.8xlarge | 12.0 | 7.75 | 15.0 |
+| r9g.12xlarge | 18.0 | 11.75 | 22.5 |
+| r9g.16xlarge | 24.0 | 15.5 | 30.0 |
+| r9g.24xlarge | 36.0 | 23.5 | 45.0 |
+| r9g.48xlarge | 72.0 | 47.0 | 90.0 |
+| r9g.metal-48xl | 72.0 | 47.0 | 90.0 |
+| r9gd.medium | 0.38 / 12.0 | 0.242 / 7.75 | 0.475 / 12.0 |
+| r9gd.large | 0.76 / 12.0 | 0.51 / 7.75 | 0.95 / 12.0 |
+| r9gd.xlarge | 1.5 / 12.0 | 0.975 / 7.75 | 1.875 / 12.0 |
+| r9gd.2xlarge | 3.0 / 12.0 | 1.937 / 7.75 | 3.75 / 12.0 |
+| r9gd.4xlarge | 6.0 / 12.0 | 3.875 / 7.75 | 7.5 / 12.0 |
+| r9gd.8xlarge | 12.0 | 7.75 | 15.0 |
+| r9gd.12xlarge | 18.0 | 11.75 | 22.5 |
+| r9gd.16xlarge | 24.0 | 15.5 | 30.0 |
+| r9gd.24xlarge | 36.0 | 23.5 | 45.0 |
+| r9gd.48xlarge | 72.0 | 47.0 | 90.0 |
+| r9gd.metal-48xl | 72.0 | 47.0 | 90.0 |
 | x8g.medium | 0.315 / 10.0 | 0.185 / 6.25 | 0.394 / 10.0 |
 | x8g.large | 0.63 / 10.0 | 0.396 / 6.25 | 0.788 / 10.0 |
 | x8g.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
@@ -823,7 +867,3 @@ The following table shows the Amazon EBS performance, in Gbps, that can be achie
 | x8i.96xlarge | 80.0 | 55.0 | 100.0 |
 | x8i.metal-48xl | 60.0 | 41.25 | 75.0 |
 | x8i.metal-96xl | 80.0 | 55.0 | 100.0 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

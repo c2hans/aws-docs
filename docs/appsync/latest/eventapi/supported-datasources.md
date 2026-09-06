@@ -38,7 +38,3 @@ HTTP endpoints can be used as data sources to integrate with external services o
 **Amazon Bedrock**
 
 Amazon Bedrock enables AWS AppSync to integrate directly with foundation models for AI/ML capabilities. Through this data source, you can incorporate generative AI features into your event processing workflows without managing complex ML infrastructure. Amazon Bedrock provides access to various foundation models from leading AI companies, including Anthropic, AI21 Labs, Cohere, Meta, Stability AI, and Amazon.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

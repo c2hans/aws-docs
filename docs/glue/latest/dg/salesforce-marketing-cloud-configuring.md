@@ -53,7 +53,3 @@ To get a project and OAuth 2.0 credentials:
 1. Select the **Integration Type** as 'Server-to-Server' (which has the client credentials OAuth grant type) and click **Next**.
 
 1. Add the scopes based on your requirements and click **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

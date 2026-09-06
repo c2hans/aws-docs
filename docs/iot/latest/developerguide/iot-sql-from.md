@@ -48,7 +48,3 @@ Incoming payload published on topic `'topic-2/subtopic-x'`: `{temperature: 80}`.
 SQL: `"SELECT temperature AS t FROM 'topic/+'"`.
 
 The rule is subscribed to all topics with two path elements where the first element is `'topic'`. The rule is executed for the messages sent to `'topic/subtopic'` and `'topic/subtopic-2'`, but not `'topic/subtopic-3/details'` (it has more levels than the topic filter) or `'topic-2/subtopic-x'` (it doesn't start with `topic`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

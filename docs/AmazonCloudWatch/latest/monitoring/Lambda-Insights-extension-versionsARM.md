@@ -408,7 +408,3 @@ Version 1.0.135.0 also now reports file descriptor usage (`fd_use` and `fd_max`)
 | Europe (Frankfurt) | `arn:aws:lambda:eu-central-1:580247275435:layer:LambdaInsightsExtension-Arm64:1` |
 | Europe (Ireland) | `arn:aws:lambda:eu-west-1:580247275435:layer:LambdaInsightsExtension-Arm64:1` |
 | Europe (London) | `arn:aws:lambda:eu-west-2:580247275435:layer:LambdaInsightsExtension-Arm64:1` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

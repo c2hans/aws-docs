@@ -80,7 +80,3 @@ To configure a Custom Availability Provider (CAP), complete the following proced
    + **ARN** — The ARN of the Lambda function that will provide the availability information.
 
 To build a CAP Lambda function, see [Building a Custom Availability Provider Lambda function](building_cap.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

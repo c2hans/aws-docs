@@ -25,7 +25,3 @@ If you want to re-subscribe to the asset (or to a different asset), see [Request
 
 **Note**
 A pending subscription request can be canceled when there’s no longer need for a 'read' access to the asset. The asset and the user whose pending subscription request is cancelled is not affected by this action.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

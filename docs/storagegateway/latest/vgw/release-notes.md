@@ -90,7 +90,3 @@ The following table lists the release notes for gateways based on AL2.
 | 2024-03-06 | 2.8.0 |  +  Updated operating system and software elements to improve security and performance for new gateways <br />+  Security patch updates  |
 | 2023-12-19 | 2.7.0 |  +  Updated operating system and software elements to improve security and performance for new gateways  |
 | 2023-12-14 | 2.6.6 |  +  Maintenance release  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

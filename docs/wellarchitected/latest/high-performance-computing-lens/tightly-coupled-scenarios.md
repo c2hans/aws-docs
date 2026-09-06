@@ -51,7 +51,3 @@ Tightly coupled simulations typically rely on a Message Passing Interface (MPI) 
 1.  Data can be exported to Amazon S3 (and archived in Amazon Glacier), with S3 also being used as a means of loading data onto the cluster from on-premises machines.
 
  AWS ParallelCluster can be used for data-light and data-intensive workloads. It also can be deployed in a single Availability Zone or across multiple Availability Zones within an AWS Region for scalability with additional compute capacity. When using any multi-AZ architecture, consider the service and location of the storage for lower latency and data-transfer costs, especially for data-intensive workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

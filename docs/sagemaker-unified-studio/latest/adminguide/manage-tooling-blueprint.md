@@ -136,7 +136,3 @@ The permissions boundary only affects new projects. Existing projects retain the
 The boundary applies to all three IAM roles created by the Tooling blueprint. You cannot selectively apply it to individual roles.
 The IAM policy referenced by `PermissionsBoundaryArn` must exist in the account before project creation. If the policy is deleted or the ARN is invalid, provisioning fails.
 To remove the boundary from future projects, run `put-environment-blueprint-configuration` again without the `PermissionsBoundaryArn` parameter.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

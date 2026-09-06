@@ -30,7 +30,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/u
 <a name="join-the-devops-discussion"></a>
 
  Engage with the [AWS DevOps community](https://community.aws/devops) for tutorials, best practices, and insight into how others are practicing DevOps. Join the discussion over at [AWS re:Post](https://www.repost.aws/topics/TAhKbT3t5sTO-a3dztUGYS7w/devops) if you have additional questions about the Well-Architected Framework DevOps Guidance or implementing DevOps on AWS. AWS DevOps experts regularly monitor the [re:Post DevOps topic](https://www.repost.aws/topics/TAhKbT3t5sTO-a3dztUGYS7w/devops) for discussion and questions that could be answered to assist our customers and partners following DevOps practices with AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

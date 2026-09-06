@@ -126,7 +126,3 @@ In the **Clusters** navigation box, the column **Cluster identifier** shows both
 ![Instance health column showing healthy and unhealthy states for instances listed on the Clusters page.](http://docs.aws.amazon.com/documentdb/latest/devguide/images/health-status-1.png)
 **Note**
 Instance health status polling occurs every 60 seconds and is based on the CloudWatch `EngineUptime` system metric. The values in the **Instance health** column are automatically updated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ Sets the maximum number of write operations that can be buffered in the WAL writ
 | db.influx.2xlarge | 64 | 200,000–300,000 |
 | db.influx.4xlarge | 128 | 300,000–500,000 |
 | db.influx.8xlarge\+ | 256\+ | 500,000–1,000,000 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

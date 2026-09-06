@@ -16,7 +16,3 @@ The IAM roles and SAML identity provider (Trusted Entity) detailed in the follow
 | AWSManagedServicesChangeManagementRole | Allows you to view the AMS infrastructure in the application accounts, file RFCs, file AWS Support tickets, write to S3 buckets, manage Secrets Manager secrets, and manage Reserved Amazon Elastic Compute Cloud (Amazon EC2) instances. |
 | AWSManagedServicesSecurityOpsRole | Allows you to view the AMS infrastructure in the application accounts, manage Secrets Manager secrets, manage Web Application Firewall rules, manage certificates, and file AWS Support tickets. |
 | AWSManagedServicesAdminRole | Allows you to view the AMS infrastructure in the application accounts, manage Marketplace subscriptions, manage Secrets Manager secrets, manage Web Application Firewall rules, manage certificates, create RFCs, manage Reserved Amazon EC2 instances, write to S3 buckets, file AWS Support tickets, and manage AWS Artifacts agreements. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

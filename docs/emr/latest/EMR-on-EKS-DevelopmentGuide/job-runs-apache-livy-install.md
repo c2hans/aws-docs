@@ -182,7 +182,3 @@ By default, SSL is not enabled within this Livy endpoint and the endpoint is onl
 1. Installing Livy creates the service account `emr-containers-sa-spark` to run Spark applications. If your Spark application uses any AWS resources like S3 or calls AWS API or CLI operations, you must link an IAM role with the necessary permissions to your spark service account. For more information, see [Setting up access permissions with IAM roles for service accounts (IRSA).](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/job-runs-apache-livy-irsa.html)
 
 Apache Livy supports additional configurations that you can use while installing Livy. For more information, see Installation properties for Apache Livy on Amazon EMR on EKS releases.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

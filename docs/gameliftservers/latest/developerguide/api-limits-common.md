@@ -130,7 +130,3 @@ The following table lists the default rate limits for Amazon GameLift Servers AP
 | UpdateRuntimeConfiguration | 20 | 20 | No | Limit is per account. |
 | UpdateScript | 20 | 20 | No | Limit is per account. |
 | ValidateMatchmakingRuleSet | 30 | 30 | No | Limit is per account. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

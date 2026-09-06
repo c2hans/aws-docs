@@ -22,7 +22,3 @@ Amazon IVS does not require that you supply any customer (end user) data. There 
 Do not put sensitive identifying information such as your customer (end user) account numbers into free-form fields such as a Name field. This includes when you work with the Amazon IVS console or API, AWS CLI, or AWS SDKs. Any piece of data that you enter into Amazon IVS might be included in diagnostic logs.
 
 Streams are not end-to-end encrypted; a stream may be transmitted unencrypted internally in the IVS network, for processing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

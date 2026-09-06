@@ -42,7 +42,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 <a name="right-stakeholders-in-the-discussion"></a>
 
  It is important to engage the right stakeholders throughout the process. In AWS discussions with customers, AWS engaged personas such as Head of IT, database administrators (DBAs), and Chief Information Officers (CIOs). When working with AWS teams, it is also helpful to set up deep dive technical discussions in the form of workshops. Also bring everyone on the same page in terms of current skills in the team, implementation timelines, and post-migration activities.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

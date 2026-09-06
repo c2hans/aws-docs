@@ -54,7 +54,3 @@ Have processes in place for successful and unsuccessful changes to your workload
 + [ Amazon Web Services: Risk and Compliance ](https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/welcome.html)
 + [AWS Shared Responsibility Model ](https://aws.amazon.com/compliance/shared-responsibility-model/)
 + [ Governance in the AWS Cloud: The Right Balance Between Agility and Safety ](https://aws.amazon.com/blogs/apn/governance-in-the-aws-cloud-the-right-balance-between-agility-and-safety/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

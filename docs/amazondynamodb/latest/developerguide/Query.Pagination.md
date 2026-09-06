@@ -67,7 +67,3 @@ For code examples in various programming languages, see the [Amazon DynamoDB Get
 You can also reduce page size by limiting the number of items in the result set, with the `Limit` parameter of the `Query` operation.
 
 For more information about querying with DynamoDB, see [Querying tables in DynamoDB](Query.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

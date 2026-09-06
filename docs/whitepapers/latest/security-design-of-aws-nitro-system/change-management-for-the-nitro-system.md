@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aw
 
 **Note**
  Refer to the [Amazon Builder’s Library](https://aws.amazon.com/builders-library) for more on how Amazon builds and operates software. Specifically, [Automating safe, hands-off deployments](https://aws.amazon.com/builders-library/automating-safe-hands-off-deployments/) by Clare Liguori, Sr. Principal Engineer at AWS, [Going faster with continuous delivery](https://aws.amazon.com/builders-library/going-faster-with-continuous-delivery) by Mark Mansour, Senior Manager of Software Development at AWS, and [Ensuring rollback safety during deployments](https://aws.amazon.com/builders-library/ensuring-rollback-safety-during-deployments/) by Sandeep Pokkunuri, Senior Principal Engineer at AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,3 @@ When you use `UpdateImageSetMetadata` to update HealthImaging [metadata](getting
 +  Cannot update attributes which are not considered valid attributes according to the DICOM standard unless the `force` flag is set
 +  Cannot update attributes across modules. For example, if a Patient level attribute is given at the Study level in customer payload request, the request can be invalidated.
 +  Cannot update attributes if the associated attribute module is not present in existing `ImageSetMetadata`. For example, you are not allowed to update attributes for a `seriesInstanceUID` if the Series with `seriesInstanceUID` is not present in existing image set metadata.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

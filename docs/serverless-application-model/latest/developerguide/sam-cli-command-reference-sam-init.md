@@ -71,6 +71,13 @@ Disables Cookiecutter prompting and accepts the vcfdefault values that are defin
 `--no-interactive`  <a name="sam-cli-command-reference-sam-init-options-no-interactive"></a>
 Disable interactive prompting for init parameters, and fail if any required values are missing.
 
+`--output {{[ text | json ]}}`  <a name="sam-cli-command-reference-sam-init-options-output"></a>
+The format of the command output:
++ `text` – Prints regular, human-readable output. This is the default value.
++ `json` – Prints structured, machine-readable output. Use this format when you want to consume the output programmatically, such as in CI/CD pipelines, IDE extensions, and AI-assisted tools.
+When you specify `--output json`, the AWS SAM CLI prints a single JSON object after the command completes. On success, this object includes fields such as the project directory and the template file. You can chain the output into subsequent commands such as `sam build`. On failure, it includes an `error` object that describes what went wrong.
+The `--output json` option isn't compatible with the interactive workflow. To use it, specify a fully non-interactive run by providing all of the required options.
+
 `--output-dir, -o {{PATH}}`  <a name="sam-cli-command-reference-sam-init-options-output-dir"></a>
 The location where the initialized application is output.
 
@@ -91,7 +98,3 @@ Activate AWS X-Ray tracing for your Lambda functions.
 <a name="sam-cli-command-reference-sam-init-examples"></a>
 
 For a detailed example and in-depth walkthrough on using the `sam init` subcommand, refer to [Create your application in AWS SAM](using-sam-cli-init.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

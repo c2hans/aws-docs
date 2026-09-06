@@ -120,7 +120,3 @@ If the S3 request volume for a particular workload exceeds the file system’s c
 <a name="ap-arn-format"></a>
 
 Some S3-integrated AWS services will create a custom service role and customize the attached permissions to your specific usecase. When specifying your S3 access point alias as the S3 resource, those attached permissions may include your access point using a bucket ARN format (for example, `arn:aws:s3:::my-fsx-ap-foo7detztxouyjpwtu8krroppxytruse1a-ext-s3alias`) rather than the access point ARN format (for example, `arn:aws:s3:us-east-1:1234567890:accesspoint/my-fsx-ap`). To resolve this, modify the policy to use the ARN of the access point.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

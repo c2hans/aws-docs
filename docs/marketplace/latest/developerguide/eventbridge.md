@@ -10,7 +10,3 @@ The AWS Marketplace API Reference was restructured. For more information about t
 AWS Marketplace is integrated with Amazon EventBridge, formerly called Amazon CloudWatch Events. EventBridge is an event bus service that you can use to connect your applications with data from a variety of sources.
 
 For information on how sellers, channel partners, and private marketplace administrators can receive ChangeSet status events using EventBridge, see [Events for change sets](https://docs.aws.amazon.com/marketplace/latest/userguide/seller-eventbridge.html#events-changesets) in the *AWS Marketplace Seller Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

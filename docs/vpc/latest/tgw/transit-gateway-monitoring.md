@@ -21,7 +21,3 @@ You can use AWS CloudTrail to capture detailed information about the calls made 
 
 **CloudWatch Events using Network Manager**
 You can use AWS Network Manager to forward events to CloudWatch, and then route those events to target functions or streams. Network Manager generates events for topology changes, routing updates, and status updates, all of which can be used to alert you to changes in your transit gateways. For more information, see [Monitoring your global network with CloudWatch Events](https://docs.aws.amazon.com/network-manager/latest/tgwnm/monitoring-events.html) in the *AWS Global Networks for Transit Gateways User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

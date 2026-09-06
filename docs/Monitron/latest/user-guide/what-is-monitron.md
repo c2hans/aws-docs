@@ -130,7 +130,3 @@ If you are a first-time technician user of Amazon Monitron, we recommend that yo
 |  **1** **[How Amazon Monitron works](how-monitron-works.md)**  |  **2** **[Assets](assets-chapter.md)**  |  **3** **[Understanding sensor measurements and monitoring machine abnormalities](anom-monitoring-chapter.md)**  |  **4** **[Ethernet gateways](setting-up-ethernet-gateways.md)**  |  **5** **[Wi-Fi gateways](setting-up-Wi-Fi-gateways.md)**  |  **6** **[Troubleshooting Amazon Monitron device issues](troubleshooting.md)**  |
 | --- | --- | --- | --- | --- | --- |
 | Introduces Amazon Monitron components and describes how Amazon Monitron works | Describes how to manage assets and sensors | Explains how to understand sensor measurements and monitor machine abnormalities | Explains how to set up and configure ethernet gateways | Explains how to set up and configure Wi-Fi gateways | Explains how to troubleshoot Amazon Monitron device issues |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

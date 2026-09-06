@@ -39,7 +39,3 @@ You can subscribe to an RSS feed to be notified of updates to this documentation
 | [CDC native start support](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Task.CDC.html) | Added support for native start points when using change data capture (CDC). | June 28, 2018 |
 | [Db2 LUW support](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.DB2.html) | Added support for IBM Db2 LUW as a source for data migration. | April 26, 2018 |
 | [SQL Server as target support](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.SQLServer.html) | Added support for Amazon RDS for Microsoft SQL Server as a source. | February 6, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

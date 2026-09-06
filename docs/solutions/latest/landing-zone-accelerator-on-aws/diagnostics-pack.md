@@ -23,7 +23,3 @@ aws codebuild start-build --project-name $[ACCELERATOR_PREFIX]-DiagnosticProject
 
 **Note**
 We recommend that you review the diagnostic report and configuration files before providing them to AWS Support to ensure that no sensitive information is located within the logs or configuration files.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

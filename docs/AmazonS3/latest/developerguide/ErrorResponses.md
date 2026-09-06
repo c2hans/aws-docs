@@ -1085,7 +1085,3 @@ The following table contains special errors that Amazon S3 Tables operations mig
 | InternalServerErrorException | The request failed due to an internal server error. | 500 Internal Server Error |
 | NotFoundException | The request was rejected because the specified resource could not be found. | 404 Not Found |
 | TooManyRequestsException | The limit on the number of requests per second was exceeded. | 429 Too Many Requests |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

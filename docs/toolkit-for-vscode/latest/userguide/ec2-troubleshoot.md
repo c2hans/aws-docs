@@ -68,7 +68,3 @@ You may encounter this issue for a number of different reasons. To fix the issue
 <a name="w2aac17c31c11c13"></a>
 
 If you recently started or created a new IAM role for an instance and are unable to establish a connection, wait a few additional minutes before making another attempt to establish a connection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -519,7 +519,3 @@ For more information about working with Systems Manager parameters, see the foll
 + EC2 Fleets of type `maintain` and `request`, and Spot Fleets do not support using a launch template that has a Systems Manager parameter specified in place of an AMI ID. For EC2 Fleets of type `maintain` and `request`, and for Spot Fleets, if you specify an AMI in the launch template, you must specify the AMI ID.
 + If you use [attribute-based instance selection](ec2-fleet-attribute-based-instance-type-selection.md) in your EC2 Fleet, you can't specify a Systems Manager parameter in place of an AMI ID. When using attribute-based instance selection, you must specify the AMI ID.
 + Amazon EC2 Auto Scaling provides other restrictions. For more information, see [Use AWS Systems Manager parameters instead of AMI IDs in launch templates](https://docs.aws.amazon.com/autoscaling/ec2/userguide/using-systems-manager-parameters.html) in the *Amazon EC2 Auto Scaling User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

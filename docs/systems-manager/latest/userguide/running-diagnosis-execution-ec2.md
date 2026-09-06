@@ -11,6 +11,12 @@ Use the following procedure to diagnose the network-related and VPC-related issu
 
 The diagnosis operation can detect and group together issues of the following types:
 + **Network configurations issues** – Types of networking issues that might be preventing EC2 instances from communicating with the Systems Manager service in the cloud. Remediation operations might be available for these issues. For more information about the network configuration issues, see [Categories of diagnosable unmanaged EC2 instance issues](diagnosing-ec2-category-types.md).
++ **IAM roles and permissions** – Issues related to missing or misconfigured IAM instance profiles and permissions required for EC2 instances to communicate with Systems Manager.
++ **SSM Agent version** – Issues related to outdated or incompatible versions of SSM Agent installed on EC2 instances.
++ **Instance status check** – Issues related to failing system or instance status checks that prevent SSM Agent from establishing communication with Systems Manager.
++ **Operating system configuration** – Issues related to OS-level problems that prevent SSM Agent from running or communicating with Systems Manager.
++ **Systems Manager service configuration** – Issues related to Default Host Management Configuration (DHMC) not being properly configured in the account and Region.
++ **Hybrid activation issues** – Issues related to hybrid-activated nodes experiencing registration or connectivity problems with Systems Manager.
 + **Unidentified issues** – A list of findings for cases where the diagnostic operation was unable to determine why EC2 instances are not able to communicate with the Systems Manager service in the cloud.
 
 **To run a diagnosis and remediation for unmanaged EC2 instances**
@@ -30,6 +36,7 @@ The diagnosis operation can detect and group together issues of the following ty
 While the diagnosis is running, choose **View progress** or **View executions** to monitor the current state of the execution. For more information, see [Viewing execution progress and history for remediations in Systems Manager](diagnose-and-remediate-execution-history.md).
 
 1. After the diagnosis completes, do the following:
+   + For any issues reported in the **IAM roles and permissions**, **SSM Agent version**, **Instance status check**, **Operating system configuration**, **Systems Manager service configuration**, or **Hybrid activation issues** sections, choose the **Learn more** link for information about resolving the problem.
    + For any issues reported in the **Unidentified issues** section, choose the **Learn more** link for information about resolving the problem.
    + For issues reported in the **Network configurations issues** section, continue with the next step.
 
@@ -66,7 +73,3 @@ Choosing to execute the runbook would incur charges. Review the preview informat
       + Choose **Execute** to run the runbook with the options you have already selected.
 
    If you choose to run the operation, choose **View progress** or **View executions** to monitor the current state of the execution. For more information, see [Viewing execution progress and history for remediations in Systems Manager](diagnose-and-remediate-execution-history.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

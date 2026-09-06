@@ -19,7 +19,3 @@ For a list of SageMaker AI quotas, see [Amazon SageMaker AI endpoints and quotas
 The [ Service Quotas console](https://console.aws.amazon.com/servicequotas/home/services/sagemaker/quotas) provides information about your service quotas. You can use the Service Quotas console to view your default service quotas or to request quota increases. To request a quota increase for adjustable quotas, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html).
 
 You can set up a quota request template for your AWS Organization that automatically requests quota increases during account creation. For more information, see [Using Service Quotas request templates](https://docs.aws.amazon.com/servicequotas/latest/userguide/organization-templates.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

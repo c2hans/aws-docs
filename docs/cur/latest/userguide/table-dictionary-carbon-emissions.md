@@ -39,7 +39,3 @@ After a member account joins a new organization, or a management account convert
 When a member account leaves an organization or converts to a standalone account, the member account can still access previous exports if it has permissions to the Amazon S3 bucket where those exports are stored. Carbon emissions associated with terminated or suspended accounts will appear in the management account data exports for the periods when these accounts were active.
 
 For more information, see [Consolidated billing for AWS Organizations](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html) in the *AWS Billing User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

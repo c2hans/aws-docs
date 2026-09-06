@@ -22,7 +22,3 @@ The source editor provides a replacement suggestion for each incompatibility in 
 
 **Run code**
 When all of the source files are updated, you can compile, test, and run your code. If you have the AWS Toolkit for Visual Studio plug-in installed on your IDE, you can deploy your application on Amazon Web Services. To install, see [AWS Toolkit for Visual Studio Code](https://aws.amazon.com/visualstudiocode).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Porting Assistant for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query portingassistant` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

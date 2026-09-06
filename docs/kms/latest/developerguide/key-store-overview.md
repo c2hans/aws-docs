@@ -115,7 +115,3 @@ External key stores provide the lowest TPS and highest latency of all key store 
 <a name="external-store-responsibility"></a>
 
 In addition to the standard key store responsibilities described previously, you assume responsibility for the availability and durability of cryptographic keys and the scalability of the external key manager including the XKS proxy and the HSMs. Because the communication path between AWS and your XKS proxy runs outside the AWS network, AWS has limited visibility into networking issues on that path and has no ability to troubleshoot them on your behalf.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

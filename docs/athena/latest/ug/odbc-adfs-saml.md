@@ -322,7 +322,3 @@ After you have created your AD users and groups, you are ready to use the ODBC D
 1. Choose **OK** to close **Authentication Options**.
 
 1. Choose **Test** to test the connection, or **OK** to finish.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

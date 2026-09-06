@@ -53,7 +53,3 @@ When you use the `EXCHANGE PARTITION` feature to archive historical data, we rec
   It might be possible to run `EXCHANGE PARTITION` during low-traffic windows in your application or microservice. However, there should be no writes and no or very few selects on the partitioned table. Existing long-running select queries can cause your `EXCHANGE PARTITION` DDL to wait, causing resource contentions on your database. Design scripts that verify all these conditions are met before you run `EXCHANGE PARTITION` on your system.
 
 If your application design can support partitioned data and you currently have an unpartitioned table, consider moving your data into partitioned tables to support archiving your data. For more information, see the [MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/alter-table-partition-operations.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,7 @@ Connect Amazon Quick to your PagerDuty system to manage incidents, alerts, sched
 
 With PagerDuty integration, you can perform actions within your PagerDuty systems through the PagerDuty API.
 
-**Action connector**
+**Connector**
 Create, update, and manage incidents, alerts, schedules, and escalation policies through the PagerDuty API.
 
 ## Set up PagerDuty integration
@@ -54,7 +54,3 @@ You can perform these management tasks for your PagerDuty integrations:
 + **Edit integration** - Update authentication settings or PagerDuty configuration.
 + **Share integration** - Make the integration available to other users in your organization.
 + **Delete integration** - Remove the integration and revoke authentication.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

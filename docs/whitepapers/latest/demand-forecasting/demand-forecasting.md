@@ -33,7 +33,3 @@ Publication date: **September 23, 2022** ([Document revisions](document-revision
  The first part of this document provides high-level information and background, such as common practices of demand forecasting in the industries. Next it introduces industry pain points to help you to identify your own business pain points.
 
  In the second part, we provide solutions to address your business environments, skillsets, data residency, and business needs. The following section explores technical aspects of the solutions, including various reference architectures and patterns.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -57,7 +57,3 @@ When you create a directory with Simple AD, AWS Directory Service creates two do
 
   For a complete list of ports, see [Active Directory and Active Directory Domain Services Port Requirements](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772723(v=ws.10)) in the Microsoft documentation.
 + All WorkSpaces require that port 80 (HTTP) be open to IP address `169.254.169.254` to allow access to the EC2 metadata service. The IP address range `169.254.0.0/16` is reserved for WorkSpaces Pools service usage for management traffic. Failure to exclude this range might result in streaming issues.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

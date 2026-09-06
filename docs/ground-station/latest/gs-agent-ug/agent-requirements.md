@@ -60,7 +60,3 @@ The AWS Ground Station Agent supports the following operating systems:
 + Amazon Linux 2 (kernel 5.10)
 
  Supported instances types are listed in [Select Amazon EC2 instance and reserve CPU cores for your architecture](agent-instance-selection.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

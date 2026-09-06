@@ -12,7 +12,3 @@ Using a JSON format for your message payload enables the AWS IoT rules engine to
 For more information about designing your MQTT topics and their corresponding message payloads, see [Designing MQTT Topics for AWS IoT Core](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/designing-mqtt-topics-aws-iot-core.html).
 
 If a message size limit exceeds the service quotas, it will result in a `CLIENT_ERROR` with reason `PAYLOAD_LIMIT_EXCEEDED` and "Message payload exceeds size limit for message type." For more information about message size limit, see [AWS IoT Core message broker limits and quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#message-broker-limits.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

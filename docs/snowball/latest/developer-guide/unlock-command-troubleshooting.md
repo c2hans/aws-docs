@@ -29,7 +29,3 @@ Each job has a specific manifest file associated with it. If you create multiple
 If you lose a manifest file or if a manifest file is corrupted, you can download the manifest file for a specific job again. You do so using the console, AWS CLI, or one of the AWS APIs.
 
 If you run an update on the Snowball Edge, then a new manifest file needs to be downloaded and used for the job. For information about downloading a manifest file, see [Getting credentials to access a Snowball Edge](getting-started.md#get-credentials).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -109,7 +109,3 @@ The validation response includes confidence verdicts to help you make decisions 
   + `HIGH` – Strong indication of the specific check (e.g., HIGH for IsRandomInput means the email is very likely randomly generated).
   + `MEDIUM` – Moderate indication of the specific check (e.g., MEDIUM for IsRandomInput means that there is some likelihood that the email address is randomly generated).
   + `LOW` – Weak or no indication of the specific check (e.g., LOW for IsRandomInput means that the email address is less likely randomly generated).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

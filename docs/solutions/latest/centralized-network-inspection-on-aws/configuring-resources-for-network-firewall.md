@@ -117,7 +117,3 @@ After deploying the guidance, you can customize the resources for your network. 
   ```
 **Note**
  The `drop.rules` file must be added to the configuration package, and only a local path is allowed. Amazon S3 and HTTP links are not allowed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Network Inspection on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

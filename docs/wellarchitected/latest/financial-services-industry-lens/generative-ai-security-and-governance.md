@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 + [FSISEC14: How do you monitor AI system outputs for security issues?](fsisec14.md)
 + [FSISEC15: How do you implement AI model governance and access controls?](fsisec15.md)
 + [FSISEC16: How do you use AI for threat detection and security automation?](fsisec16.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

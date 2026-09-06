@@ -37,7 +37,3 @@ The following considerations might impact your use of private APIs:
 <a name="apigateway-private-api-next-steps"></a>
 
  To learn how to create a private API and associate a VPC endpoint see, [Create a private API](apigateway-private-api-create.md). To follow a tutorial where you create dependencies in CloudFormation and a private API in the AWS Management Console, see [Tutorial: Create a private REST API](private-api-tutorial.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

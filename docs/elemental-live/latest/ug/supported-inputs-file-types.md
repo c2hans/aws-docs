@@ -18,7 +18,3 @@ The rows are sorted by type of input.
 | SCP server  | Pull a VOD asset from a server that supports SCP.  | File input  | scp://  | Pull  |
 | Amazon S3 bucket  | Pull an HLS VOD asset from an Amazon S3 bucket, using a secure or unsecure connection.  | HLS file input  | custom protocol s3:// or s3ssl://  | Pull  |
 | HTTP or HTTPS server  | Pull an HLS VOD asset from a server that supports HTTP or HTTPS.  | HLS file input  | http:// or https://  | Pull  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

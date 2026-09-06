@@ -14,7 +14,3 @@ The namespace for a client class follows the convention `Aws::Service::ServiceCl
 All client classes for all AWS services are thread-safe.
 
 When instantiating a client class, AWS credentials must be supplied. Credentials can be supplied from your code, the environment, or the shared AWS `config` file and shared `credentials` file. For more information about credentials, see [instructions for setting up the recommended IAM Identity Center authentication](credentials.md) or use [another credential provider that is available](credproviders.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for C++. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-cpp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

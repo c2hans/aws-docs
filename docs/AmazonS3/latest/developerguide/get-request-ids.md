@@ -272,7 +272,3 @@ tracing_subscriber::fmt::init();
 For more information, see [Configuring and using logging in the AWS SDK for Rust](https://docs.aws.amazon.com/sdk-for-rust/latest/dg/logging.html) in the *AWS SDK for Rust Developer Guide*.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

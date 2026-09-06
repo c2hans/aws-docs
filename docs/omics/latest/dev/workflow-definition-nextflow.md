@@ -521,7 +521,3 @@ The following tables summarize HealthOmics support for new features, enhancement
 | listFiles() method | 26.04 | Deprecation warning | Replace with listDirectory(). |
 | nextflow.enable.strict flag | 26.04 | No longer needed | Remove from config. Strict mode is now the default. |
 | manifest.defaultBranch | 26.04 | No longer needed | Remove from config. HealthOmics does not use Git-based pipeline checkout and has never supported this option. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

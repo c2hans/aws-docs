@@ -15,7 +15,3 @@ The `Data` attribute, which is common to all the items, has different content de
 + Look up an employee by name in the global secondary index, using `Employee_Name` as the partition key value and the employee's name (for example `Murphy, John`) as the sort key value.
 + Use the global secondary index to find all employees working in a particular warehouse by searching on a warehouse ID (such as `Warehouse_01`).
 + Get a list of recent hires, querying the global secondary index on `HR_confidential` as a partition key value and using a range of dates in the sort key value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

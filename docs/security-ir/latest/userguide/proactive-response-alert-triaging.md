@@ -20,7 +20,3 @@ If you experience onboarding issues or need help enabling Amazon GuardDuty or Se
 If you have questions about Amazon GuardDuty suppression rules, alert triaging configurations, or proactive response workflows, you can create an AWS supported case with the case type **Investigations and Inquiries** to consult with the AWS Security Incident Response team. For more information, see [Create an AWS supported case](create-an-aws-supported-case.md).
 
 **Containment:** In the event of a security incident, AWS Security Incident Response can execute containment actions to quickly mitigate the impact, such as isolating compromised hosts or rotating credentials. Security Incident Response doesn't enable containment capabilities by default. To execute these containment actions, you must first grant the necessary permissions to the service. This can be done by deploying an [AWS CloudFormation StackSet](https://docs.aws.amazon.com/security-ir/latest/userguide/working-with-stacksets.html), which creates the required roles.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

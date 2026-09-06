@@ -22,7 +22,3 @@ Complete the following steps to enable certificate-based authentication.
 1. Choose **Save Changes**.
 
 1. Certificate-based authentication is now enabled. When users authenticate with SAML 2.0 to an WorkSpaces Applications stack using the domain-joined fleet from the WorkSpaces Applications web client or the client for Windows (version 1.1.1099 and later), they will no longer receive a prompt for the domain password. Users will see a “Connecting with certificate-based authentication...” message when connecting to a session enabled for certificate-based authentication.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

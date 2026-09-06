@@ -38,7 +38,3 @@ For examples of IAM policies that let you call the `CreateAutoScalingGroup`, `Up
 <a name="launch-templates-api-operations"></a>
 
 For a list of API operations supported by launch templates, see [Amazon EC2 actions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/OperationList-query-ec2.html) in the *[Amazon EC2 API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/)*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

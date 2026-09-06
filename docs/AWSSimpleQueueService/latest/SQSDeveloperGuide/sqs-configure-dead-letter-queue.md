@@ -22,7 +22,3 @@ A dead-letter queue (DLQ) is a queue that receives messages that were not succes
 1. Set the **Maximum receives** value, which defines how many times a message can be received before being sent to the dead-letter queue (valid range: **1 to 1,000**).
 
 1. Choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -207,6 +207,10 @@ All of the following instance types support EFA. Additionally, the tables indica
 | r8idb.96xlarge | Yes | Yes |
 | r8idb.metal-48xl | Yes | Yes |
 | r8idb.metal-96xl | Yes | Yes |
+| r9g.48xlarge | Yes | Yes |
+| r9g.metal-48xl | Yes | Yes |
+| r9gd.48xlarge | Yes | Yes |
+| r9gd.metal-48xl | Yes | Yes |
 | x8aedz.24xlarge | Yes | Yes |
 | x8aedz.metal-24xl | Yes | Yes |
 | x8i.48xlarge | Yes | Yes |
@@ -509,7 +513,3 @@ EFAs have the following limitations:
 <a name="efa-pricing"></a>
 
 EFA is available as an optional Amazon EC2 networking feature that you can enable on any supported instance at no additional cost.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

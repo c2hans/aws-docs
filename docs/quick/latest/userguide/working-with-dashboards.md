@@ -16,7 +16,7 @@ Use the following sections to learn how to publish and share dashboards, subscri
 **Topics**
 + [Publishing dashboards](creating-a-dashboard.md)
 + [Sharing Amazon Quick Sight dashboards](sharing-a-dashboard.md)
-+ [Using Quick action connectors in dashboard visuals](action-connectors-in-dashboard-visuals.md)
++ [Using Quick connectors in dashboard visuals](action-connectors-in-dashboard-visuals.md)
 + [Sharing your view of a Amazon Quick Sight dashboard](share-dashboard-view.md)
 + [Scheduling and sending Quick Sight reports by email](sending-reports.md)
 + [Subscribing to email reports in Amazon Quick Sight](subscribing-to-reports.md)
@@ -24,8 +24,4 @@ Use the following sections to learn how to publish and share dashboards, subscri
 + [Printing a dashboard or analysis](printing1.md)
 + [Exporting Amazon Quick Sight analyses or dashboards as PDFs](export-dashboard-to-pdf.md)
 + [Error codes for failed PDF export jobs](qs-reports-error-codes.md)
-+ [Organizing assets into folders for Amazon Quick Sight](folders.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ [Organizing assets into folders for Amazon Quick](folders.md)

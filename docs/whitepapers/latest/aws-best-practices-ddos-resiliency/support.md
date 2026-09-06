@@ -14,7 +14,3 @@ If you're running production workloads on AWS, consider subscribing to Business 
 For more information, refer to [Compare Support Plans](https://aws.amazon.com/premiumsupport/plans/).
 
 If you're subscribed to AWS Shield Advanced and are also subscribed to either Business Support\+, Enterprise Support, or Unified Operations, you can also escalate to AWS Shield Response Team (SRT) by creating an Support case under AWS Shield using the [Support console](https://console.aws.amazon.com/support/home) (sign-in required), or the [support API](https://docs.aws.amazon.com/awssupport/latest/APIReference/Welcome.html) when a DDoS-related event affects your application's availability.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

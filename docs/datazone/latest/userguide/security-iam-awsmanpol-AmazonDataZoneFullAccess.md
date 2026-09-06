@@ -60,7 +60,3 @@ There are certain functionalities that the `AmazonDataZoneFullAccess` policy doe
 + If you want to create required resource for SageMaker Unified Studio network setup, you must have permissions to the following and attach AmazonVpcFullAccess policy:
   + iam:PassRole
   + cloudformation:CreateStack
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

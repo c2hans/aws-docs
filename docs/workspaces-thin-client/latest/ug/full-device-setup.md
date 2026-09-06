@@ -22,7 +22,3 @@ You are now ready to set up your WorkSpaces Thin Client service. Go to [Setting 
 If you set up two monitors, the primary monitor must be placed on the left side and the secondary monitor on the right side.
 
 ![WorkSpaces Thin Client full setup](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/connected-all.jpg)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

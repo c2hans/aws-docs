@@ -47,7 +47,3 @@ Fraud detection is another example of a two-way, data-driven action. Companies m
 However, some actions aren't easily reversible and require further discussion and approval by a board of executives. Those are called *one-way door *decisions. For example, actions that involve the construction of facilities or a significant money investments are usually hard to reverse. These aren't good candidates for automatic data-driven actions.
 
 A data-driven action** **should be evaluated for the** **visibility of its impact** **with constant measurements. These measurements help you follow up with decisions to roll back a feature or to test and engage a team for deeper analysis of distinct behavior.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

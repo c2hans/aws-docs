@@ -122,7 +122,3 @@ For more information about using the AWS SDKs, see [AWS SDKs and tools](https://
 After enabling S3 Tables export, you can:
 + Learn about [Table naming for S3 Storage Lens export to S3 Tables](storage-lens-s3-tables-naming.md)
 + Learn about [Understanding S3 Storage Lens table schemas](storage-lens-s3-tables-schemas.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

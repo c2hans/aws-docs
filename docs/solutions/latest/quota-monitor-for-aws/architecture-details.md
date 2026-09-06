@@ -23,7 +23,3 @@ This section describes the components and AWS services that make up this solutio
 |  [Amazon EventBridge](https://aws.amazon.com/eventbridge/)  |  **Supporting.** Connects solution components by routing events |
 |  [AWS Systems Manager](https://aws.amazon.com/systems-manager/)  |  **Supporting.** Saves parameters such as notification configurations, OU IDs, or account IDs |
 |  [AWS Organizations](https://aws.amazon.com/organizations/)  |  **Optional.** Supports management of resources from manager and delegated administrator accounts |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Quota Monitor for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

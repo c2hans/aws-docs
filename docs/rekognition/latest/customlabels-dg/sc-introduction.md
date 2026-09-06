@@ -111,7 +111,3 @@ You can secure access an identity’s access to `DetectCustomLabels` by applying
 <a name="security-iam-awsmanpol"></a>
 
 We provide the `AmazonRekognitionCustomLabelsFullAccess` AWS managed policy that you can use to control access to Amazon Rekognition Custom Labels. For more information, see [AWS managed policy: AmazonRekognitionCustomLabelsFullAccess](https://docs.aws.amazon.com/rekognition/latest/dg/security-iam-awsmanpol.html#security-iam-awsmanpol-custom-labels-full-access).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

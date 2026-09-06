@@ -140,7 +140,3 @@ Use the following resources for detailed deployment instructions, configuration 
 + [Deployment guide](https://code.claude.com/docs/en/claude-apps-gateway-deploy) — Production deployment patterns, scaling, and operational best practices.
 
 After the gateway is sending metrics to CloudWatch, view the dashboards as described in [View the dashboards](coding-agents-insights.md#coding-agents-insights-view).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

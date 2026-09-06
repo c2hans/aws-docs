@@ -121,7 +121,3 @@ If you are unable to access the scheduling tables by using Option 1, try using O
 |  is\_active  |  Boolean  |  Yes  |  Whether the agent exists or has been deleted.  |
 |  data\_lake\_last\_processed\_timestamp |  Timestamp  |  Yes  |  Timestamp, which shows the last time the record was touched by the data lake. This can include transformation and backfill. This field cannot be used to determine reliably data freshness. |
 |  agent\_voice\_enhancement\_mode  |  string  |  Yes  |  The voice enhancement mode used by the agent. Valid values: VOICE\_ISOLATION \| NOISE\_SUPPRESSION \| NONE. A value of null indicates this mode has not yet been set for this user.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

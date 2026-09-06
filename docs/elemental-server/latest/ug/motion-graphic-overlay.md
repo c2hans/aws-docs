@@ -19,7 +19,3 @@ Motion graphic overlays are in the global processors. They appear on every outpu
 
 1. Specify values for the motion image inserter settings. See the following table for information about each field. For information about **Action Time** and **Loop Input**, see [Setting Up When Your Motion Graphic Plays](when-your-motion-overlay-plays.md).
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/motion-graphic-overlay.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

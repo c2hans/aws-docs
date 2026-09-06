@@ -98,7 +98,3 @@ For more information, see [Managing billing](https://docs.aws.amazon.com/codecat
 Failed at <action\_name>: The connection name is not valid.
 
 **Possible fixes:** Make sure you provide the account ID that you want to add to your space, and make sure that the account is not enabled for project-restricted account connections. If the account is enabled for project-restricted account connections, then you might need to update the account connection by enabling access to the new project. For more information, see [Configuring project-restricted account connections](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-accounts.html#managing-accounts-restriction).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

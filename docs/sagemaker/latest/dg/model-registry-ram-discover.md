@@ -108,7 +108,3 @@ Different combinations of actions can be attached to the resource policy. For cu
 1. Accept the resource share invitation from the consumer account. Once the model owner creates the resource share and principal associations, the specified resource consumer accounts receive an invitation to join the resource share. The resource consumer accounts can view and accept the invitations in the [Shared with me: Resource shares](https://console.aws.amazon.com/ram/home#SharedResourceShares:) page in the AWS RAM console. For more information about accepting and viewing resources in AWS RAM, see [Access AWS resources shared with you](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared.html).
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

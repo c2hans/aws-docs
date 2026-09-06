@@ -48,7 +48,3 @@ COPY . /usr/share/nginx/html
  Maintain the Dockerfile for all container images in a source control repository in the image hierarchy and ensure proper tagging of container images. In addition, use a contentious integration process to create a direct correlation between the container's images in source control and the image tag. This best practice is critical to determine what changed in the container image from a prior release.
 
  For example, tag `1.0` indicates that this tag will always point to the latest patch release `1.0.1`, `1.0.2`, `1.0.3`, and so on.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

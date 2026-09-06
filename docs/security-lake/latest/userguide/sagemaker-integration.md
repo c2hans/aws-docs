@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/sagemaker
 <a name="sagemaker-integration-insights"></a>
 
 You can generate machine learning insights for Security Lake by using SageMaker AI Studio. This Studio is a web integrated development environment (IDE) for machine learning that provides tools for data scientists to prepare, build, train, and deploy machine learning models. With this solution, you can quickly deploy a base set of Python notebooks focusing on [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) findings in Security Lake, which can also be expanded to incorporate other AWS sources or custom data sources in Security Lake. For more details, see [Generate machine learning insights for Amazon Security Lake data using Amazon SageMaker AI](https://aws.amazon.com/blogs/security/generate-machine-learning-insights-for-amazon-security-lake-data-using-amazon-sagemaker/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -102,7 +102,3 @@ Test whether your DataSync agent can connect to the DataSync service. For more i
 <a name="test-agent-connections-next-steps"></a>
 
 Create the DataSync location that you want to use with your agent. This might be an [on-premises](transferring-on-premises-storage.md) or [other cloud](transferring-other-cloud-storage.md) location.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

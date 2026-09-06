@@ -25,7 +25,3 @@ You can use Teletext captions in one of the following ways:
 + **Page**: This field specifies the captions page you want. A captions page usually corresponds to a language. Complete as follows:
   + If you are doing Teletext-to-Teletext captions (that is, you create only one captions selector for the input embedded captions), keep this field blank. AWS Elemental Server ignores any value that you provide.
   + If you are converting Teletext to another format (that is, you create several captions selectors, one for each language), then specify the page for the language that you want. If you keep this field blank, you will get a validation error when you submit the job.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

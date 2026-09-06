@@ -47,7 +47,3 @@ Replace the role ARN with the ARN of the role you want to pass. You can use a wi
 
 **"Stream group does not support IAM role credentials" error**
 The stream group was created before July 16, 2026. Create a new stream group to use this feature.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

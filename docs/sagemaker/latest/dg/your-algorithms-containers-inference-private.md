@@ -180,7 +180,3 @@ An execution role with the `AmazonSageMakerFullAccess` managed policy attached t
 Create an interface endpoint so that your Amazon VPC can communicate with your AWS Lambda function without sending traffic over the internet. For information about how to do this, see [Configuring interface VPC endpoints for Lambda](https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc-endpoints.html) in the *AWS Lambda Developer Guide*.
 
 SageMaker AI hosting sends a request through your VPC to `lambda.{{region}}.amazonaws.com`, to call your Lambda function. If you choose Private DNS Name when you create your interface endpoint, Amazon Route 53 routes the call to the Lambda interface endpoint. If you use a different DNS provider, make sure to map `lambda.{{region}}.amazonaws.com` to your Lambda interface endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

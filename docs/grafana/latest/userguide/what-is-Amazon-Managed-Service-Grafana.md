@@ -36,7 +36,3 @@ Amazon Managed Grafana currently supports the following Regions:
 | Europe (London) | eu-west-2 |  grafana.eu-west-2.amazonaws.com <br /> grafana.eu-west-2.api.aws  | HTTPS<br />HTTPS |
 |  AWS GovCloud (US-East) | us-gov-east-1 |  grafana.us-gov-east-1.amazonaws.com <br /> grafana-fips.us-gov-east-1.api.aws <br /> grafana-fips.us-gov-east-1.amazonaws.com <br /> grafana.us-gov-east-1.api.aws  | HTTPS<br />HTTPS<br />HTTPS<br />HTTPS |
 |  AWS GovCloud (US-West) | us-gov-west-1 |  grafana.us-gov-west-1.amazonaws.com <br /> grafana-fips.us-gov-west-1.api.aws <br /> grafana-fips.us-gov-west-1.amazonaws.com <br /> grafana.us-gov-west-1.api.aws  | HTTPS<br />HTTPS<br />HTTPS<br />HTTPS |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

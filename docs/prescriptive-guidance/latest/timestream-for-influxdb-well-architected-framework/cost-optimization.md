@@ -52,7 +52,3 @@ For storing data, use the following best practices:
 + Delete any InfluxDB buckets that are not required for your workloads. InfluxDB supports deletes. You can perform scheduled cleanups if that fits your use case.
 
 For data transfer, we recommend deploying your application in same AWS Region as your Timestream for InfluxDB database instance to avoid cross-Region network overhead. There might also be data transfer charges. For more information about data transfer, see the [pricing page](https://aws.amazon.com/timestream/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

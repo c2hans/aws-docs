@@ -19,7 +19,3 @@ You can configure EMR Serverless applications to use Lake Formation with either 
 | Full table access for Delta Lake | EMR 7.11\+ |
 | Write operations (DDL, DML) for Hive, Iceberg and Delta Lake tables | EMR 7.12\+ |
 | Full table access for Hudi | EMR 7.12\+ |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

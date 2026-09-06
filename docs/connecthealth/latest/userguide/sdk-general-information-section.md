@@ -19,7 +19,3 @@ AWS software development kits (SDKs) are available for many popular programming 
 | AWS SDK for Ruby |  [Amazon Connect Health AWS SDK for Ruby API reference](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/ConnectHealth.html)  |
 | AWS SDK for Rust |  [Amazon Connect Health AWS SDK for Rust API reference](https://docs.rs/aws-sdk-connecthealth/latest/aws_sdk_connecthealth/)  |
 | AWS SDK for Swift |  [Amazon Connect Health AWS SDK for Swift API reference](https://docs.aws.amazon.com/sdk-for-swift/latest/api/awsconnecthealth/documentation/awsconnecthealth/)  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connecthealth` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

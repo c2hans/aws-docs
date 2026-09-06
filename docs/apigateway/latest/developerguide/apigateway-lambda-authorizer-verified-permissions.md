@@ -48,7 +48,3 @@ Verified Permissions still creates a Lambda authorizer for you. The Lambda autho
 You can call your Lambda authorizer by providing an identity or access token in the `Authorization` header. For more information, see [Call an API with an API Gateway Lambda authorizer](call-api-with-api-gateway-lambda-authorization.md).
 
 API Gateway caches the policy that your Lambda authorizer returns for 120 seconds. You can modify the TTL in the API Gateway console or by using the AWS CLI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,7 +54,3 @@ Your actual savings depend on the **variant multiplier** — how many distinct C
 These reductions are illustrative and assume source images are shared evenly across variants; a variant multiplier of 5 is a modeling assumption, not a measured value. Your results depend on your traffic and configuration.
 
 For current rates, including volume-tier pricing, see [Amazon Rekognition pricing](https://aws.amazon.com/rekognition/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

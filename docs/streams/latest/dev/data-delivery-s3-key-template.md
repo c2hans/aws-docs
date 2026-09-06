@@ -71,7 +71,3 @@ kinesis-channel/!{channel-name}/!{channel-id}/!{yyyy}/!{MM}/!{dd}/!{HH}/!{channe
 | data/\!{partition-id}\!{extension} | No | \!{partition-id} is not a supported variable. |
 | data/\!{channel-name} (with GZIP or ZSTD compression) | No | Compression is enabled but the template has no extension placeholder. |
 | data/\!{channel-name}/\!{yyyy} (missing closing brace) | No | Unclosed variable placeholder. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

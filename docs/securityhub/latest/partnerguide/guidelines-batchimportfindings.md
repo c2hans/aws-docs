@@ -11,7 +11,3 @@ When using the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1
 + The throttle rate limit is 10 TPS per account per Region, with a burst of 30 TPS.
 + You must implement a mechanism to retain the state of findings if throttling or network issues exist. You also need the finding state so that you can submit finding updates as a finding moves in and out of compliance.
 + For information about the maximum lengths of strings and other limitations, see [AWS Security Finding Format (ASFF)](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-format.html) in the *AWS Security Hub User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

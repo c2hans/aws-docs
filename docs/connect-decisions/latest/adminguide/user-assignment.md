@@ -11,7 +11,3 @@ User Assignment is a feature that makes it easier to balance insights between mu
 + Only one user can be assigned to each exception, but an exception can be reassigned to another user if needed. It can only be reassigned to a user with product or site access
 + Auto-assignment for insights occurs when the exception is first created. Previously created insights will not be reassigned automatically. Further, if a user is deleted or their access control is updated, the user assignment is not automatically updated
 + In the insights listing page, a user can filter by the Assigned To dimension to easily identify all insights assigned to them. They can also use this same filter to view unassigned insights. User Assignment is currently available only for insights
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

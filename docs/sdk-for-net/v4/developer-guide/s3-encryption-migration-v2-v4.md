@@ -325,7 +325,3 @@ var secureConfig = new AmazonS3CryptoConfigurationV4(SecurityProfile.V4, Commitm
 ```
 
 Start with `ForbidEncryptAllowDecrypt` during initial migration, move to `RequireEncryptAllowDecrypt` for the transition phase, and finally use `RequireEncryptRequireDecrypt` when all clients have been upgraded and all objects have been re-encrypted with commitment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ For instructions, see [Migrating a hosted zone to a different AWS account](https
 Note the following:
 + Some Route 53 features are not yet available in AWS GovCloud (US). For more information, see [Amazon Route 53 in AWS GovCloud (US)](govcloud-r53.md).
 + Health checks can be created and managed directly within AWS GovCloud (US). While it’s possible to use health checks from commercial Regions with DNS records in AWS GovCloud (US), we recommend creating health checks in AWS GovCloud (US) for DNS failover operations. When migrating hosted zones to AWS GovCloud (US), consider migrating the associated health checks as well.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ You can find out whether one of your queries is being executed in whole or in pa
 
   Details about Neptune engine support for individual Gremlin steps are documented in [Gremlin step support](gremlin-step-support.md).
 + Similarly, SPARQL `explain` tells you whether a SPARQL query is being executed by the DFE. See [Example of SPARQL `explain` output when the DFE is enabled](sparql-explain-examples.md#sparql-explain-output-dfe) and [`DFENode` operator](sparql-explain-operators.md#sparql-explain-operator-dfenode) for more details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

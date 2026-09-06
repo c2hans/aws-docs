@@ -199,7 +199,3 @@ Eventually your source and target will be in sync. You can verify whether they a
 <a name="docdb-migration.versions-step8"></a>
 
 After the full load is complete and the CDC process is replicating continuously, you are ready to change your application’s database connection endpoint from your source Amazon DocumentDB cluster to your target Amazon DocumentDB cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

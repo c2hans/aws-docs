@@ -54,7 +54,3 @@ The full path for each output in a Microsoft Smooth output group consists of the
    + With an event ID that you specify – Set **Event ID mode** to **USE\_CONFIGURED**. Then specify the ID. For example, **curling**. The event ID will look like this: **/Events(curling)**
    + With a timestamp – Set **Event ID mode** to **USE\_TIMESTAMP**. MediaLive generates a Unix timecode based on the time that you start the channel. The event ID will look like this: **/Events(1585232182)**
    + With no event ID – set **Event ID mode** to **NO\_EVENT\_ID**. We strongly recommend that you don't use this method.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

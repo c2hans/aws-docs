@@ -70,7 +70,3 @@ The following sections list output file examples for batch inference jobs by rec
 {"input":{"itemId":"43"},"output":{"recommendedItems":["50","21","36","3","17","2","39","1","10","5"],"theme":"The best movies of 1995","itemsThemeRelevanceScores":[0.184988,0.1795761,0.11143453,0.0989443,0.08258403,0.07952615,0.07115086,0.0621634,-0.138913,-0.188913]}}
 ...
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

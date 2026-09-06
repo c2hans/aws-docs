@@ -29,7 +29,3 @@ The following are the service endpoints and service quotas for this service.
 | Application bundles | Each supported Region: 1 | No | The maximum number of application bundles that you can create in an account in the current AWS Region. |
 | Ingestion destinations | Each supported Region: 5 | No | The maximum number of ingestion destinations that you can create per ingestion in an account in the current AWS Region. |
 | Ingestions | Each supported Region: 50 | No | The maximum number of ingestions that you can create in an account in the current AWS Region. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

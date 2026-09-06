@@ -82,7 +82,3 @@ WZE78DJZ  |   Kay Avila       | Bette Midler         |  2008-07-01  |	2008-07-07
 HXY04NVE  |   Dante Austin    | Britney Spears       |  2008-07-02  |	2008-07-07
 URY81YWF  |   Wilma Anthony   | Britney Spears       |  2008-07-02  |	2008-07-07
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

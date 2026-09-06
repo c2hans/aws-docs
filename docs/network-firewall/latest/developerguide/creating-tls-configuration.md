@@ -64,7 +64,3 @@ Your new TLS inspection configuration is added to the list in the Network Firewa
 If you've configured the inspection for certificate revocation checks on outbound traffic, you can log failures for these checks by enabling TLS logging. For information, see [Logging network traffic](firewall-logging.md).
 
 To use your TLS inspection configuration in a firewall policy, follow the procedures at [Managing your firewall policy](firewall-policy-managing.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,8 +26,9 @@ This guide walks through setting up a guardrail that blocks violent content on a
 
 Before starting, make sure you have the following:
 +  ** AWS credentials** configured.
-+  **A bootstrapped CDK environment**.
 +  **AgentCore CLI version 0.20.0 or later**. Earlier versions don’t include the policy form and enforcement mode options used in this guide.
+
+The AgentCore CLI checks the CDK bootstrap stack during deployment. If bootstrap is required, interactive deployment asks for confirmation. Use `agentcore deploy --yes` to authorize it automatically.
 
 Install the AgentCore CLI:
 
@@ -163,7 +164,3 @@ Expected blocked result (`forbid` \+ `ACTIVE`):
 agentcore remove all --json
 agentcore deploy
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

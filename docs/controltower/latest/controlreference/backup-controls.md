@@ -13,7 +13,3 @@ When you enable AWS Backup in your AWS Control Tower landing zone, some preventi
 + [[CT.BACKUP.PV.3] Disallow modification of an AWS Backup resource that AWS Control Tower manages](ct-backup-pv-3.md)
 + [[CT.IAM.PV.1] Disallow modification of an AWS IAM role that AWS Control Tower utilizes to manage AWS Backup resources](ct-iam-pv-1.md)
 + [[CT.S3.PV.1] Disallow modification of an Amazon S3 bucket that stores AWS Backup reports for AWS Control Tower](ct-s3-pv-1.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

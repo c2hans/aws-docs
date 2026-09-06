@@ -342,7 +342,3 @@ This pattern provides a foundation for authentication integration. We recommend 
 + For an overview of the Microsoft Authentication Library (MSAL), see the [Microsoft Entra documentation](https://learn.microsoft.com/en-us/azure/active-directory/develop/msal-overview).
 + For information about user profiles on an AS/400 system, see the [IBM i (AS400) tutorial](https://www.go4as400.com/subsystem-jobs-user-profile-in-as400/jobs.aspx?cid=14).
 + For the OAuth 2.0 and OpenID Connect (OIDC) authentication flow in the Microsoft identity platform, see the [Microsoft Entra documentation](https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,3 @@ The following table describes the documentation for this release of AWS Glue Dat
 | [Additional CSV delimiters](#doc-history) | DataBrew now supports additional delimiters besides commas in comma-separated value (CSV) files used to create DataBrew datasets. For more information, see [ Creating and using AWS Glue DataBrew datasets](https://docs.aws.amazon.com/databrew/latest/dg/datasets.html). | January 28, 2021 |
 | [DataBrew extension for JupyterLab](#doc-history) | Now you can use AWS Glue DataBrew as an extension in JupyterLab. For more information, see [ Using DataBrew as an extension in JupyterLab](https://docs.aws.amazon.com/databrew/latest/dg/jupyter.html?icmpid=docs_bru_doc_history). | November 20, 2020 |
 | [New data preparation tool: AWS Glue DataBrew](#doc-history) | This is the first release of the *AWS Glue DataBrew Developer Guide.* | November 11, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

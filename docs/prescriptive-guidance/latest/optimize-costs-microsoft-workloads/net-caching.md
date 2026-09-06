@@ -180,7 +180,3 @@ DynamoDB is priced on-demand or with provisioned capacity, so the number of read
 + [In-memory acceleration with DynamoDB Accelerator (DAX) - Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html) (DynamoDB documentation)
 + [Integrating Amazon DynamoDB DAX into Your ASP.NET Application](https://www.youtube.com/watch?v=ZMkLhD8OxYQ) (YouTube)
 + [Downloading objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/download-objects.html) (Amazon S3 documentation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

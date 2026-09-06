@@ -116,6 +116,7 @@ The following actions are supported:
 +  [GetOperation](API_GetOperation.md)
 +  [GetOperations](API_GetOperations.md)
 +  [GetOperationsForResource](API_GetOperationsForResource.md)
++  [GetProfile](API_GetProfile.md)
 +  [GetRegions](API_GetRegions.md)
 +  [GetRelationalDatabase](API_GetRelationalDatabase.md)
 +  [GetRelationalDatabaseBlueprints](API_GetRelationalDatabaseBlueprints.md)
@@ -167,7 +168,3 @@ The following actions are supported:
 +  [UpdateLoadBalancerAttribute](API_UpdateLoadBalancerAttribute.md)
 +  [UpdateRelationalDatabase](API_UpdateRelationalDatabase.md)
 +  [UpdateRelationalDatabaseParameters](API_UpdateRelationalDatabaseParameters.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

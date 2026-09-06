@@ -129,7 +129,3 @@ You can have one Elastic IP (EIP) address associated with a running instance at 
 <a name="ec2-additional-costs"></a>
 
 You can add a custom cost to your Amazon EC2 pricing estimates. You can use this to add any placeholder costs you'd like to include in your estimates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Pricing Calculator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pricing-calculator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,7 +53,3 @@ Beneath the trace details map, a timeline of trace segments displays, including 
 
 1. Choose **Cancel trace selection** to view the entire set of linked traces.
 ![Single linked trace](http://docs.aws.amazon.com/xray/latest/devguide/images/console-batch-tracedetails-filteredbatch.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

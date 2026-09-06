@@ -58,7 +58,3 @@ The response contains headers such as `CacheControl`, `ContentType`, and `ETag`,
 ![Sprite sheet of map icons for the Amazon Location Service Hybrid (Satellite) style, including road shields, traffic signs, and navigation markers used on satellite imagery.](http://docs.aws.amazon.com/location/latest/developerguide/images/styling-hybrid.png)
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

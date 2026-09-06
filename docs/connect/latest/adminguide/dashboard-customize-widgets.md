@@ -336,7 +336,3 @@ Note the following behavior when you use pagination controls:
 + Changing the number of rows per page or the sort order returns the widget to the first page.
 + A downloaded CSV file includes only the rows shown on the current page. To download more rows, increase the number of rows per page before you download.
 + Widgets support a maximum page size of 200 items per page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,7 +75,3 @@ For more information about how to add a composite model to a new or existing ass
 + [Update an asset model, component model, or interface (AWS CLI)](update-asset-models.md#update-asset-model-cli)
 
 After you define the external alarm, you can ingest alarm state to assets based on the asset model. For more information, see [Ingest an external alarm state in AWS IoT SiteWise](ingest-external-alarm-state.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

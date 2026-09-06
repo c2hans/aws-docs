@@ -22,7 +22,3 @@ The following sections explain the different ways to connect to resources in a L
 + [Direct Connect](local-zones-connectivity-direct-connect.md)
 + [Transit gateway between Local Zones](local-zones-connectivity-transit-gateway-lzs.md)
 + [Transit gateway to data center](local-zones-connectivity-transit-gateway-dc.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Local Zones. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query local-zones` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

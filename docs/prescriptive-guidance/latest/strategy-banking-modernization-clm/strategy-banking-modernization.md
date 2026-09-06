@@ -54,7 +54,3 @@ In the post-COVID crisis age, banking and FS customers must face cumbersome and 
 1. If the customer's address, civil status, or any other data considered as a "change of circumstance" is updated, the process is initiated again.
 
 Completion of this process can take up to several days or even weeks, and it often requires intervention from and approval by several bank employees from different departments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

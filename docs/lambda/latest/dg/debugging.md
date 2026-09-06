@@ -96,7 +96,3 @@ Disabling this feature prevents the debugging layer from being added during func
 For more information on using Lambda in VS Code, refer to [Developing Lambda functions locally with VS Code](foundation-iac-local-development.md).
 
 For detailed instructions on troubleshooting, advanced use cases, and region availability, see [Remote debugging Lambda functions](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/lambda-remote-debug.html) in the AWS Toolkit for Visual Studio Code User Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

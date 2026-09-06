@@ -107,7 +107,3 @@ This enables you to see the cost of your AWS commitments, such as Amazon EC2 Res
 <a name="net-amortized-costs"></a>
 
 This enables you to see the cost of your AWS commitments, such as Amazon EC2 Reserved Instances or Savings Plans, after discounts with the additional logic that shows how the actual cost applies over time. Since Savings Plans and Reserved Instances usually have upfront or recurring monthly fees associated with them, the net amortized cost dataset reveals the true cost by showing how post-discount fees amortize over the period of time that the upfront or recurring fee applies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ The following shows an example of the offer target data feed. For readability, t
 | 925ddc73f6a373b7d5544ea3210610803b600 | offer-dacpxznflfwin | 1 | ParticipatingPrograms | PositiveTargeting | EnterpriseContract |
 | 471ff22ae3165278f1fb960d3e14517bcd601 | offer-gszhmle5npzip | 1 | ParticipatingPrograms | PositiveTargeting | FieldDemonstration |
 | 511ff22adfj65278f1fb960d3e14517bcd6e602 | offer-gszhmle5npzip | 1 | ParticipatingPrograms  | PositiveTargeting | EnterpriseContract |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

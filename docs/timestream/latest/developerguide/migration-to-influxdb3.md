@@ -87,7 +87,3 @@ Multi-node clusters (up to 15 nodes), InfluxData Marketplace license required. R
 + [InfluxDB 3 Processing Engine](https://docs.influxdata.com/influxdb3/enterprise/process-data/)
 + [Line Protocol Reference](https://docs.influxdata.com/influxdb3/enterprise/reference/line-protocol/)
 + [SQL Reference for InfluxDB 3](https://docs.influxdata.com/influxdb3/enterprise/reference/sql/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

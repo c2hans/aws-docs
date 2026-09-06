@@ -9,12 +9,12 @@ Amazon WorkSpaces Applications provides base images to help you create images th
 
 **Important**
 Operating system versions that are no longer supported by the vendor are not guaranteed to work and are not supported by AWS Support.
-+ Windows Server 2025 Base — Available on the following image types: Base, Graphics G4dn, Graphics G5, and Graphics G6
-+ Windows Server 2022 Base — Available on the following image types: Base, Graphics G4dn, Graphics G5, and Graphics G6
++ Windows Server 2025 Base — Available on the following image types: Base, Graphics G4dn, Graphics G5, Graphics G6, and Graphics G7
++ Windows Server 2022 Base — Available on the following image types: Base, Graphics G4dn, Graphics G5, Graphics G6, and Graphics G7
 + Windows Server 2019 Base — Available on the following image types: Base, Graphics G4dn and Graphics G5
 + Windows Server 2016 Base — Available on the following image types: Base, Graphics G4dn and Graphics G5
-+ Red Hat Enterprise Linux 8 – Available on the following image types: Base, Graphics G4dn, Graphics G5, and Graphics G6
-+ Rocky Linux 8 – Available on the following image types: Base, Graphics G4dn, Graphics G5, and Graphics G6
++ Red Hat Enterprise Linux 8 – Available on the following image types: Base, Graphics G4dn, Graphics G5, Graphics G6, and Graphics G7
++ Rocky Linux 8 – Available on the following image types: Base, Graphics G4dn, Graphics G5, Graphics G6, and Graphics G7
 
 After you create your own image that includes your own applications, you are responsible for installing and maintaining the updates for the operating system, your applications, and their dependencies. WorkSpaces Applications provides an automated way to update your image using managed WorkSpaces Applications image updates. With managed image updates, you select the image that you want to update. WorkSpaces Applications creates an image builder in the same AWS account and Region to install the updates and create the new image. After the new image is created, you can test it on a pre-production fleet before updating your production fleets or sharing the image with other AWS accounts. For more information, see "Keep Your WorkSpaces Applications Image Up-to-Date" in [Administer Your Amazon WorkSpaces Applications Images](administer-images.md).
 
@@ -33,6 +33,7 @@ Public base images for Amazon Linux 2 are no longer available from AWS after 04/
 | Graphics G4dn |  +  AppStream-Graphics-G4dn-WinServer2025-12-18-2025 <br />+  AppStream-Graphics-G4dn-WinServer2022-11-10-2025 <br />+  AppStream-Graphics-G4dn-WinServer2019-11-10-2025 <br />+  AppStream-Graphics-G4dn-WinServer2016-11-10-2025 <br />+  AppStream-Graphics-G4dn-RHEL8-02-18-2026 <br />+  AppStream-Graphics-G4dn-RockyLinux8-02-18-2026   |
 | Graphics G5 |  +  AppStream-Graphics-G5-WinServer2025-12-18-2025 <br />+  AppStream-Graphics-G5-WinServer2022-11-10-2025 <br />+  AppStream-Graphics-G5-WinServer2019-11-10-2025 <br />+  AppStream-Graphics-G5-WinServer2016-11-10-2025 <br />+  AppStream-Graphics-G5-RHEL8-02-18-2026 <br />+  AppStream-Graphics-G5-RockyLinux8-02-18-2026   |
 | Graphics G6  |  +  AppStream-Graphics-G6-WinServer2025-12-18-2025 <br />+  AppStream-Graphics-G6-WinServer2022-11-10-2025 <br />+  AppStream-Graphics-G6-RHEL8-02-18-2026 <br />+  AppStream-Graphics-G6-RockyLinux8-02-18-2026   |
+| Graphics G7  |  +  AppStream-Graphics-G7-WinServer2025-08-31-2026 <br />+  AppStream-Graphics-G7-WinServer2022-08-31-2026 <br />+  AppStream-Graphics-G7-RHEL8-08-31-2026 <br />+  AppStream-Graphics-G7-RockyLinux8-08-31-2026   |
 | Sample apps | Amazon-AppStream2-Sample-Image-06-17-2024<br />For information about how to access this base image, see [Get Started with Amazon WorkSpaces Applications: Set Up With Sample Applications](getting-started.md). |
 
 The following table lists the software components for the latest released base images and the components that are available if you update your image using managed image updates. If the version is marked “latest”, the current stable software component available from the vendor will be installed. If the version is marked “not included”, managed image updates is not managing the component and the version will not be changed when you update your image.
@@ -174,7 +175,3 @@ The following table describes all released base images.
 | 07-24-2017 | Windows |  +  Base   |  +  Includes Microsoft Windows updates up to July 13, 2017 <br />+  Adds support for Microsoft Active Directory domains   |
 | 06-20-2017 | Windows |  +  Base <br />+  Sample apps   |  +  Optimizes application launch performance <br />+  Resolves an issue with applications not displaying in tile view <br />+  Resolves an issue with applications displaying in tile view only <br />+  Resolves an issue with applications displaying multiple times in tile view <br />+  Resolves an issue with recently launched application windows not appearing in the foreground <br />+  Resolves an issue with page margins when printing   |
 | 05-18-2017 | Windows |  +  Base <br />+  Sample apps   |  +  Adds support for WorkSpaces Applications home folders <br />+  Includes Microsoft Windows updates up to May 16, 2017 <br />+  Resolves an intermittent network issue that affects internet connections from streaming instances <br />+  Resolves an issue with application tiles not functioning correctly   |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

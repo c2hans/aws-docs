@@ -19,7 +19,3 @@ Before you get started with Node.js, you must do the following:
 1. [Install Node.js](https://nodejs.org/en/).
 
 1.  [Install the AWS SDK for JavaScript](https://aws.amazon.com/sdk-for-node-js/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -62,7 +62,3 @@ You can delete an inline policy from the AWS CLI.
    + [aws iam delete-user-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-user-policy.html)
    + [aws iam delete-group-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-group-policy.html)
    + [aws iam delete-role-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-role-policy.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,3 @@ Only the app owner receives an email when an app is published.
 If your end users are unable to access your published app, and are getting a `Forbidden` message when trying to access it, it's likely that the published app is not shared with the users attempting to access it. Published apps must be shared with groups to grant access to the users in the groups.
 
 To learn more about sharing applications, see [Sharing published applications](application-share.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

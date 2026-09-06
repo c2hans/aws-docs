@@ -36,7 +36,3 @@ If you cannot guarantee the data preview session is ended directly, consider set
 You will need to perform the following steps before running your AWS Glue job:
 + Grant the IAM role associated with your AWS Glue job permissions to {{tempS3Path}}.
 + Grant the IAM role associated with your AWS Glue job permission to read {{secretName}}.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

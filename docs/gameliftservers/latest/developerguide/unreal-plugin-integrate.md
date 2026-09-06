@@ -144,7 +144,7 @@ private:
 + Open the related source file `[project-name]GameMode.cpp` file (for example `GameLiftUnrealAppGameMode.cpp`). Change the code to align with the following example code. Be sure to replace "GameLiftUnrealApp" with your own project name. These updates are specific to the game server; we recommend that you make a backup copy of the original file for use with your client.
 
   The following example code shows how to add the minimum required elements for server integration with Amazon GameLift Servers:
-  + Initialize an Amazon GameLift Servers API client. The `InitSDK()` call with server parameters is required for an Amazon GameLift Servers Anywhere fleet. When you connect to an Anywhere fleet, the plugin stores the server parameters as console arguments The sample code can access the values at runtime.
+  + Initialize an Amazon GameLift Servers API client. The `InitSDK()` call with server parameters is required for an Amazon GameLift Servers Anywhere fleet. When you connect to an Anywhere fleet, the plugin stores the server parameters as console arguments. The sample code can access the values at runtime.
   + Implement required callback functions to respond to requests from the Amazon GameLift Servers service, including `OnStartGameSession`, `OnProcessTerminate`, and `onHealthCheck`.
   + Call `ProcessReady()` with a designated port to notify the Amazon GameLift Servers service when ready to host game sessions.
 
@@ -465,7 +465,3 @@ For Unreal Engine 5.6 or later, if you cannot move the character after connectin
 Each packaging process generates an executable: `[your-application-name]Client.exe` or `[your-application-name]Server.exe`.
 
 In the plugin, set the paths to the client and server build executables on your local workstation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

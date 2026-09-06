@@ -298,7 +298,3 @@ https://sts.amazonaws.com/
 **Note**
 The call to AWS STS can be to the global endpoint or to any of the Regional endpoints that you activate your AWS account. For more information, see the [AWS STS section of *Regions and Endpoints*](https://docs.aws.amazon.com/general/latest/gr/rande.html#sts_region).
 The `AUTHPARAMS` parameter in the example is a placeholder for your *signature*. A signature is the authentication information that you must include with AWS HTTP API requests. We recommend using the [AWS SDKs](https://aws.amazon.com/tools/) to create API requests, and one benefit of doing so is that the SDKs handle request signing for you. If you must create and sign API requests manually, see [Signing AWS Requests By Using Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html) in the *Amazon Web Services General Reference* to learn how to sign a request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/uifn-service.h
 # Connect Customer support of the inbound only UIFN service
 <a name="uifn-service"></a>
 
-A Universal International Freephone number (UIFN) is a unique **inbound only** freephone number that can be used throughout the world. It provides toll-free calling from international locations to your contact center.
+A Universal International Freephone number (UIFN) is a unique **inbound only** freephone number that can be used throughout the world. It provides toll-free calling from international locations to your contact center. Connect Customer provides UIFN for businesses that are unable to get access to local toll free or DID numbers due to being unable to meet the documentation requirements.
 
-You can use UIFN with Connect Customer in [many countries](#list-of-uifn-countries) registered with the International Telecommunications Union (ITU). The ITU supports the administration of the UIFN service. Availability depends on carrier support and might vary by country.
+Connect Customer UIFN setup in more than [60 countries](#list-of-uifn-countries) that are registered with the International Telecommunications Union. In recent years however smaller carriers increasingly do not support UIFN. Please review the below validated and supported networks alongside other configurations that are not guaranteed before making an informed choice for your customer base.
 
 **Note**
 With Connect Customer, you can enable UIFNs in as many countries as you need, however, it requires a minimum of 5 countries.
@@ -98,7 +98,3 @@ Full National reachability means the UIFN reaches all local (in-country) network
 | Thailand | 001-800-XXXX-XXXX<br />National reachability: full | 10-20 |
 | United Kingdom | 00-800-XXXX-XXXX<br />National reachability: BT, Vodafone, EE networks | 20-40 |
 | Uruguay | 00-800-XXXX-XXXX<br />National reachability: full | 15-25 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

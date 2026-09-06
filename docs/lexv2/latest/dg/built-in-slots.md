@@ -27,7 +27,3 @@ Amazon Lex supports built-in slot types that define how data in the slot is reco
 |  [AMAZON.Time](built-in-slot-time.md)  | Recognizes words that indicate times and converts them into a time format. | All locales |
 |  [AMAZON.UKPostalCode](built-in-slot-uk-postal-code.md)  | Recognizes words that represent a UK post code and converts them to a standard form. | English (British) (en-GB) only |
 |  [AMAZON.FreeFormInput](built-in-slot-free-form.md)  | Recognizes strings that consist of any words or characters. | All locales |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

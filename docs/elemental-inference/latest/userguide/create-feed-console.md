@@ -37,7 +37,3 @@ This section describes how to use the Elemental Inference console to create an E
    For information about feed and output status, see [Lifecycle of an AWS Elemental Inference workflow](monitor-inference-feed-lifecycle.md).
 
 1. Make a note of the data endpoint (in the **Integration** field). You will need this value in order to deliver the source media to Elemental Inference.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Inference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-inference` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

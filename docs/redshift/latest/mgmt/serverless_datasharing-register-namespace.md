@@ -26,7 +26,3 @@ You can register entire namespaces to the AWS Glue Data Catalog and create catal
 1.  Choose **Register**. You’ll be taken to the AWS Lake Formation console.
 
 1.  Follow the catalog creation process in AWS Lake Formation. For information about creating a catalog, see [ Bringing Amazon Redshift data into the AWS Glue Data Catalog](https://docs.aws.amazon.com/lake-formation/latest/dg/managing-namespaces-datacatalog.html) in the AWS Lake Formation Developer Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,7 +56,3 @@ New unexpired license keys must be assigned to vCenter Server before the license
 <a name="remove-vcf-license"></a>
 
 You can remove VCF license keys from the SDDC Manager inventory to reduce your core and vSAN capacity after deleting hosts in your environment. To remain in compliance with the licensing models of products that you use with vSphere, you must remove all unassigned license keys from the inventory. If you have split, merged, or upgraded license keys in the Broadcom Support Portal, you must remove the old license keys. For more information, see [Remove a license](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-and-host-management-8-0/license-management-host-management/managing-licenses-host-management/remove-a-license-host-management.html) in the VMware documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

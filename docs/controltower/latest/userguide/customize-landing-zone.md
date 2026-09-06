@@ -14,7 +14,7 @@ For example, you can create more extensive customizations of your landing zone w
 
 The package of functionality that we refer to as *Customizations for AWS Control Tower* (CfCT) helps you create more extensive customizations for your landing zone than you can create in the AWS Control Tower console. It offers a GitOps-style, automated process. You can reshape your landing zone to meet your business requirements.
 
-This *infrastructure-as-code* customization process integrates AWS CloudFormation templates with AWS service control policies (SCPs) and AWS Control Tower [lifecycle events](lifecycle-events.md), so that your resource deployments remain synchronized with your landing zone. For example, when you create a new account with Account Factory, the resources attached to the account and the OU can be deployed automatically.
+This *infrastructure-as-code* customization process integrates AWS CloudFormation templates with AWS service control policies (SCPs), resource control policies (RCPs), and AWS Control Tower [lifecycle events](lifecycle-events.md), so that your resource deployments remain synchronized with your landing zone. For example, when you create a new account with Account Factory, the resources attached to the account and the OU can be deployed automatically.
 
 **Note**
 Unlike Account Factory and AFT, CfCT is not specifically intended to create new accounts, but to customize accounts and OUs in your landing zone by deploying resources that you specify.
@@ -35,7 +35,3 @@ The target organizational unit (OU) configured in CfCT must have AWSControlTower
 + Additional code examples regarding CfCT are available as part of the AWS Security Reference Architecture, in the [`aws-samples` repository](https://github.com/aws-samples/aws-security-reference-architecture-examples). Many of these examples contain sample `manifest.yaml` files in a directory named `customizations_for_aws_control_tower`.
 
 For more information about the AWS Security Reference Architecture, see the [AWS Prescriptive Guidance pages](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

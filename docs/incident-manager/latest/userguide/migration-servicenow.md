@@ -21,7 +21,3 @@ Along with automated incident creation, ServiceNow Incident Management offers a 
 + [Escalation process](https://www.servicenow.com/docs/bundle/zurich-it-service-management/page/administer/on-call-scheduling/concept/designing-escalation-process-oncall.html)
 
 For additional support, you can contact your Technical Account Manager or a [ServiceNow sales representative](https://www.servicenow.com/be/contact-us/sales.html) for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

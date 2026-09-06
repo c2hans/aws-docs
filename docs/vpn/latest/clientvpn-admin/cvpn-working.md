@@ -18,7 +18,3 @@ The following topics explain the primary administrative tasks needed to work wit
 + **Routes** — Configure authorization rules for each Client VPN route to specify which clients have access to the destination network. For information about configuring authorization rules, see [AWS Client VPN authorization rules](cvpn-working-rules.md)
 + **Target networks** — Associate VPC subnets or attach directly to an AWS Transit Gateway to enable clients to connect and establish a VPN connection. For information about target networks, see [AWS Client VPN target networks](cvpn-working-target.md). For information about Transit Gateway integration, see [Transit Gateway integration with Client VPN](cvpn-tgw.md).
 + **Maximum VPN session duration** — Set options for maximum VPN session duration to meet your security and compliance requirements. For information about maximum VPN session duration, see [AWS Client VPN maximum VPN session duration timeout](cvpn-working-max-duration.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

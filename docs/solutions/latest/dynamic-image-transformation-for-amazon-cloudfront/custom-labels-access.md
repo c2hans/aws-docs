@@ -45,7 +45,3 @@ A Custom Labels model is a provisioned inference endpoint, not a serverless reso
 If a request references a model that is not running, smart cropping does not fail the image request; it proceeds with the other detection methods and applies the configured fallback if no targets are found. For how to confirm a stopped model is the cause and how to detect it from the solution’s logs, see [Custom Labels detection has no effect](custom-labels-model-stopped.md).
 
 For predictable traffic windows, consider automating start and stop on a schedule: for example, an Amazon EventBridge rule that invokes an AWS Lambda function to call `StartProjectVersion` and `StopProjectVersion` at set times.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

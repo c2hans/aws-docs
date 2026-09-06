@@ -58,7 +58,3 @@ For more details about how to manage state and reuse the delta token to retrieve
 A delta token is associated with the service collection and a user. If a new initial pull with `“ENABLE_CDC” : “true”` is initiated for the same service collection and the user, all previous delta tokens issued as a result of a previous initialization will be invalidated by SAP OData service. Invoking the connector with an expired delta token will lead to an exception:
 
 `Could not open data access via extraction API RODPS_REPL_ODP_OPEN`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

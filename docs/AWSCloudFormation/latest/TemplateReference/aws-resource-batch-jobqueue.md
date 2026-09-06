@@ -77,7 +77,7 @@ The name of the job queue. It can be up to 128 letters long. It can contain uppe
 The type of job queue. For service jobs that run on SageMaker AI, this value is `SAGEMAKER_TRAINING`. For regular container jobs, this value is `EKS`, `ECS`, or `ECS_FARGATE` depending on the compute environment.
 *Required*: No
 *Type*: String
-*Allowed values*: `EKS | ECS | ECS_FARGATE | SAGEMAKER_TRAINING`
+*Allowed values*: `EKS | ECS | ECS_FARGATE | SAGEMAKER_TRAINING | ECS_MANAGED_INSTANCES`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `JobStateTimeLimitActions`  <a name="cfn-batch-jobqueue-jobstatetimelimitactions"></a>
@@ -198,7 +198,3 @@ JobQueue:
 ## See also
 <a name="aws-resource-batch-jobqueue--seealso"></a>
 + [Job Queue Parameters](https://docs.aws.amazon.com/batch/latest/userguide/job_queue_parameters.html) in the * AWS Batch User Guide *.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

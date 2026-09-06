@@ -36,7 +36,3 @@ Follow these steps for both types of handling—extract and use, and passthrough
 1. In **Input** > **Advanced**, set **Prefer SMPTE 2038**:
    + **Checked** – You should choose this option if the source content contains SMPTE 2038 ancillary data. If the content provider has included SMPTE-2038, they intend for you to use it.
    + **Unchecked** – If you do not want Elemental Live to look at the SMPTE 2038, uncheck this field. Choose this option if the source content doesn't include SMPTE 2038 ancillary data. Elemental Live looks for ancillary data in the native TS. Even if a SMPTE 2038 PID is present, Elemental Live ignores that PID.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

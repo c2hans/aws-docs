@@ -23,7 +23,3 @@ After careful consideration, we decided to end support for Amazon FinSpace, effe
    + **Monitoring** tab – Displays the dashboard of volume metrics. You can view activity logs for your volume here.
    + **Clusters** tab – Displays a list of clusters attached to this volume. For information on how to create clusters, see [Creating a Managed kdb Insights cluster](create-kdb-clusters.md).
    + **Tags** tab – Displays a list of key-value pairs associated with the volume. If you did not provide tags during volume creation, choose **Manage tags** to add new tags.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

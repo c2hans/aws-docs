@@ -181,7 +181,3 @@ The following table lists the issue types and the corresponding troubleshooting 
 - ** Agent not reporting **
   - **Issue message:** (Empty on purpose)
   - **Troubleshooting steps:** The issue type has reached end of support. If you continue experiencing this issue and not already done so, enable GuardDuty automated agent for Amazon EC2.<br />If the issue still persists, consider disabling Runtime Monitoring for a few minutes and then enable it again.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

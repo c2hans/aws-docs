@@ -45,6 +45,7 @@ In Scala jobs, we provide an object named `GlueArgParser`. For more information,
  A comma delimited list representing a set of Python packages to be installed. You can install packages from PyPI or provide a custom distribution. A PyPI package entry will be in the format `{{package}}=={{version}}`, with the PyPI name and version of your target package. A custom distribution entry is the S3 path to the distribution.
 Entries use Python version matching to match package and version. This means you will need to use two equals signs, such as `==`. There are other version matching operators, for more information see [PEP 440](https://peps.python.org/pep-0440/#version-matching).
 To pass module installation options to `pip3`, use the [--python-modules-installer-option](#python-modules-installer-option) parameter.
+To run your job in a Python virtual environment instead, see [--python-virtual-env](#python-virtual-env) and [--python-virtual-env-storage-prefix](#python-virtual-env-storage-prefix).
 
 **`--auto-scale-within-microbatch`**
 The default value is true. This parameter can only be used for AWS Glue streaming jobs, which process the streaming data in a series of micro batches, and auto scaling must be enabled. When setting this value to false, it computes the exponential moving average of batch duration for completed micro-batches and compares this value with the window size to determine whether to scale up or scale down the number of executors. Scaling only happens when a micro batch is completed. When setting this value to true, during a micro-batch, it scales up when the number of Spark tasks remains the same for 30 seconds, or the current batch processing is greater than the window size. The number of executors will drop if an executor has been idle for more than 60 seconds, or the exponential moving average of batch duration is low.
@@ -170,6 +171,19 @@ The script programming language. This value must be either `scala` or `python`. 
 A plaintext string that defines options to be passed to `pip3` when installing modules with [--additional-python-modules](#additional-python-modules). Provide options as you would in the command line, separated by spaces and prefixed by dashes. For more information about usage, see [Installing additional Python modules with pip in AWS Glue 2.0 or later](aws-glue-programming-python-libraries.md#addl-python-modules-support).
 This option is not supported for AWS Glue jobs when you use Python 3.9.
 
+**`--python-virtual-env`**
+The Amazon S3 path to a packaged Python virtual environment that your job runs in, in the form `s3://{{path}}/pyspark_venv.tar.gz`. You build and upload the virtual environment before the job runs.
+The virtual environment replaces the Python environment of the job entirely, so it must contain every package that your job needs, including packages that the AWS Glue container otherwise provides. Do not use this parameter together with [--additional-python-modules](#additional-python-modules).
+This parameter is supported in AWS Glue 5.0 and later. For more information, see [Using Python virtual environments with AWS Glue](aws-glue-programming-python-virtual-environments.md).
+
+**`--python-virtual-env-storage-prefix`**
+An Amazon S3 prefix where AWS Glue stores a virtual environment that it builds for you, in the form `s3://{{path}}/`. AWS Glue builds the virtual environment from the packages in [--additional-python-modules](#additional-python-modules) on the first job run, caches it at this prefix, and reuses it on later runs.
+This parameter is supported in AWS Glue 6.0 and later. For more information, see [Using a service-generated virtual environment with Amazon S3 caching](aws-glue-programming-python-virtual-environments.md#python-venv-service-generated).
+
+**`--python-virtual-env-version`**
+A value that you increment to invalidate the virtual environment cache that [--python-virtual-env-storage-prefix](#python-virtual-env-storage-prefix) maintains. The default value is `0`.
+This parameter is supported in AWS Glue 6.0 and later.
+
 **`--scriptLocation`**
 The Amazon Simple Storage Service (Amazon S3) location where your ETL script is located (in the form `s3://path/to/my/script.py`). This parameter overrides a script location set in the `JobCommand` object.
 
@@ -209,7 +223,3 @@ AWS Glue uses the following arguments internally and you should never use them:
  AWS Glue supports bootstrapping an environment with Python's `site` module using `sitecustomize` to perform site-specific customizations. Bootstrapping your own initilization functions is recommended for advanced use cases only and is supported on a best-effort basis on AWS Glue 4.0.
 
  The environment variable prefix, `GLUE_CUSTOMER`, is reserved for customer use.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

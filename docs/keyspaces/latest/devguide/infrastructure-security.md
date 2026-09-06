@@ -18,7 +18,3 @@ The second method uses an authentication plugin for the open-source DataStax Jav
 You can call these API operations from any network location, but Amazon Keyspaces does support resource-based access policies, which can include restrictions based on the source IP address. You can also use Amazon Keyspaces policies to control access from specific Amazon Virtual Private Cloud (Amazon VPC) endpoints or specific VPCs. Effectively, this isolates network access to a given Amazon Keyspaces resource from only the specific VPC within the AWS network.
 
 You can use an interface VPC endpoint to keep traffic between your Amazon VPC and Amazon Keyspaces from leaving the Amazon network. Interface VPC endpoints are powered by AWS PrivateLink, an AWS technology that enables private communication between AWS services using an elastic network interface with private IPs in your Amazon VPC. For more information, see [Using Amazon Keyspaces with interface VPC endpoints](vpc-endpoints.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

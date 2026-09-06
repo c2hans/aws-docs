@@ -68,7 +68,3 @@ If there is only one payer candidate for job compute in the collaboration, it de
 You can't run the job if the member who can receive results hasn’t configured the job results settings.
 
 1. Continue to adjust parameters and run your job again, or choose the **\+** button to start a new job in a new tab.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

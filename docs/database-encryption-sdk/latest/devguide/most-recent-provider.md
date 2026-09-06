@@ -250,7 +250,3 @@ To update to the `CachingMostRecentProvider`, you have to change the symbol name
 However, the `CachingMostRecentProvider` generates more calls to the underlying key infrastructure. It calls the provider store at least once in each time-to-live (TTL) interval. Applications with numerous active CMPs (due to frequent rotation) or applications with large fleets are most likely to be sensitive to this change.
 
 Before releasing your updated code, test it thoroughly to ensure that the more frequent calls don't impair your application or cause throttling by services on which your provider depends, such as AWS Key Management Service (AWS KMS) or Amazon DynamoDB. To mitigate any performance problems, adjust the cache size and the time-to-live of the `CachingMostRecentProvider` based on the performance characteristics you observe. For guidance, see [Setting a time-to-live value](#most-recent-provider-ttl).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

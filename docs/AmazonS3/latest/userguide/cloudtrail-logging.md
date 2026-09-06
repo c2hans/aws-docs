@@ -68,7 +68,3 @@ Newer Amazon S3 features are not supported for SOAP. We recommend that you use e
 + [CloudTrail log file entries for Amazon S3 and S3 on Outposts](cloudtrail-logging-understanding-s3-entries.md)
 + [Enabling CloudTrail event logging for S3 buckets and objects](enable-cloudtrail-logging-for-s3.md)
 + [Identifying Amazon S3 requests using CloudTrail](cloudtrail-request-identification.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

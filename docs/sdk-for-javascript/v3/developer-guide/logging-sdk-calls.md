@@ -48,7 +48,3 @@ await client.listTables({});
 ```
 
 In the example above, a middleware is added to the DynamoDB client’s middleware stack. The first argument is a function that accepts `next`, the next middleware in the stack to call, and `context`, an object that contains some information about the operation being called. It returns a function that accepts `args`, an object that contains the parameters passed to the operation and the request, and it returns the result from calling the next middleware with `args`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for JavaScript. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

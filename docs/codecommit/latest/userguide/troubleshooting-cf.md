@@ -16,7 +16,3 @@ The following information might help you troubleshoot configuration errors you m
 **Problem:** When you run `aws configure` to configure the AWS CLI, you see a `ConfigParseError` message.
 
 **Possible fixes:** The most common cause for this error is that a credentials file already exists. Browse to \~/.aws and look for a file named `credentials`. Rename or delete that file, and then run **aws configure** again.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -110,7 +110,3 @@ View details about updates to AWS managed policies for OpenSearch Service since 
 |  +  Added `AmazonOpenSearchServiceCognitoAccess` <br />+  Deprecated `AmazonESCognitoAccess`   | This new policy is meant to replace the old policy. Both policies provide the minimum Amazon Cognito permissions necessary to enable [Cognito authentication](cognito-auth.md). | 7 September 2021 |
 |  +  Added [AmazonOpenSearchServiceRolePolicy](slr-aos.md#slr-permissions) <br />+  Deprecated `AmazonElasticsearchServiceRolePolicy`   | This new policy is meant to replace the old policy. Both policies provide the minimum Amazon EC2 and Elastic Load Balancing permissions necessary for [the service-linked role](slr-aos.md#slr-permissions) to enable [VPC access](cognito-auth.md). | 7 September 2021 |
 | Started tracking changes | Amazon OpenSearch Service now tracks changes to AWS-managed policies. | 7 September 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

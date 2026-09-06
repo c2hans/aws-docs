@@ -66,7 +66,7 @@ For an Anywhere fleet, you need to manually configure certain game server settin
    + `webSocketUrl` – Set this parameter to the `GameLiftServiceSdkEndpoint` value that is returned when you register a compute with the fleet.
    + `hostId` – Set this parameter to the compute name that you specify when you register a compute with the Anywhere fleet.
    + `fleetId` – Set this parameter to the ID of the Anywhere fleet.
-   + `authToken` – Set this parameter to the token that is returned in response to a request to retrieve an authenticaiton token for a compute.
+   + `authToken` – Set this parameter to the token that is returned in response to a request to retrieve an authentication token for a compute.
    + `processId` – Set this parameter to identify a game server process that's running on the local compute. Each concurrent game server process must have a unique process ID.
 
    The server parameter values that each game server process uses needs to be specific to the Anywhere fleet compute where the process is running. For details on how to get the appropriate values for a compute, see [Add a compute to the fleet](fleets-creating-anywhere.md#fleet-anywhere-compute). As a best practice, set `webSocketUrl`, `hostId`, `fleetId`, and `authToken` as environment variables on the local compute. All server processes that run on the compute will use these values.
@@ -90,7 +90,7 @@ You can use the same Anywhere fleet and compute to test other versions of your g
 
 1. **Clean up your existing `GameSession`.** If the game server process crashes or won't call `ProcessEnding()`, Amazon GameLift Servers cleans up the `GameSession` after the game server stops sending health checks.
 
-1. **Generate a new game server build.** Make changes to your game server and package an revised build.
+1. **Generate a new game server build.** Make changes to your game server and package a revised build.
 
 1. **Update the game server build on your local compute.** Your previous Anywhere fleet is still active and your laptop is still registered as a compute resource in the fleet.
 
@@ -106,9 +106,5 @@ After you've completed development testing and you're ready to prepare for launc
 You need to make a few minor modifications to transition from a local Anywhere test fleet to an Amazon GameLift Servers managed fleet. You can reuse the same queues and matchmakers. Do the following tasks:
 + **Change the game server code call to `InitSdk()`.** Remove the server parameters. For a managed fleet, Amazon GameLift Servers automatically tracks this information.
 + **Create an Amazon GameLift Servers build resource.** With an Anywhere test fleet, you have to manually deploy your game server build and dependencies to each fleet compute. With a managed fleet, you create and upload your game build package to Amazon GameLift Servers, which automatically deploys it to all fleet computes. See [Create a game server build for Amazon GameLift Servers](gamelift-build-cli-uploading.md) for details on packaging your game build files and creating a build resource with files in an Amazon S3 bucket. Don't include scripts that register a compute and get an authentication token, as Amazon GameLift Servers automatically handles these tasks with managed fleets.
-+ **Create a managed fleet.** Create a fleet using the console or AWS CLI, specifying an EC2 managed fleet. This type of fleet requires additional configuration settings, including specifying the build resource and instance types. You alls need to set up a runtime configuration to manage game server life cycle on each fleet compute. See [Create an Amazon GameLift Servers managed EC2 fleet](fleets-creating.md) for details on creating a managed fleet.
++ **Create a managed fleet.** Create a fleet using the console or AWS CLI, specifying an EC2 managed fleet. This type of fleet requires additional configuration settings, including specifying the build resource and instance types. You also need to set up a runtime configuration to manage game server life cycle on each fleet compute. See [Create an Amazon GameLift Servers managed EC2 fleet](fleets-creating.md) for details on creating a managed fleet.
 + **Redirect fleet aliases (optional).** If you set up aliases to use with your Anywhere fleets, you can reuse the same aliases for your managed fleets. See [Create an Amazon GameLift Servers alias](aliases-creating.md) for details on creating or updating an alias.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

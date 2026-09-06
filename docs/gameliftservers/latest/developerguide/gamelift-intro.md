@@ -75,7 +75,7 @@ See more details at [Amazon GameLift Servers game hosting options](gamelift-intr
 <a name="gamelift-servers-intro-features-integration"></a>
 + Use services such as Amazon DynamoDB, Amazon Simple Storage Service, and Amazon Aurora DSQL for game state persistence.
 + Implement Amazon Cognito for player authentication.
-+ Process game analytics with Amazon Kinesisand Amazon S3.
++ Process game analytics with Amazon Kinesis and Amazon S3.
 + Add voice chat with Amazon Chime SDK.
 + Create custom game features using AWS Lambda and Amazon API Gateway.
 
@@ -96,6 +96,7 @@ The Amazon GameLift Servers SDKs contain the libraries required to establish com
 **AWS CloudFormation**
 Use AWS CloudFormation to model, provision, and manage AWS resources for your game hosting solution by treating infrastructure as code. Create templates that describe the resources, and CloudFormation automates the tasks of configuring and deploying resources to the locations you specify.
 
-## See also
+## Pricing
+<a name="gamelift-intro-pricing-overview"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+For information about pricing, cost estimation, and strategies for reducing hosting costs, see [Amazon GameLift Servers pricing and cost planning](gamelift-intro-pricing.md) and [Amazon GameLift Servers Pricing](https://aws.amazon.com/gamelift/pricing/).

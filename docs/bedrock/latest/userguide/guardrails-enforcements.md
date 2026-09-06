@@ -403,7 +403,3 @@ If a model appears in both lists, it is excluded.
 
 **Can I delete a guardrail that's being used in an enforcement configuration?**
 No. By default, the [DeleteGuardrail](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteGuardrail.html) API prevents deletion of guardrails associated with account-level or organization-level enforcement configurations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

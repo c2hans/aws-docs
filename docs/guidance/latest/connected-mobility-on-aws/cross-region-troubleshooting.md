@@ -54,7 +54,3 @@ cdk deploy cms-$STAGE-ui \
 IAM role names are account-wide. If you see an IAM role-name conflict, check whether the role name includes a region suffix. The guidance ships all globally-scoped resource names with an `{account}-{region}` suffix by default. If a custom role name was set via CDK context without a region component, add the region suffix.
 
 Refer to the cross-region namespace discipline in the deployment guide for the full naming convention rules and the per-resource length budget across all AWS Regions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

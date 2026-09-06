@@ -107,7 +107,3 @@ aws apigateway --region us-east-1 update-usage-plan --usage-plan-id {{planId}} -
 Call [`usageplan:update`](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateUsagePlan.html) to maintain a usage plan.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

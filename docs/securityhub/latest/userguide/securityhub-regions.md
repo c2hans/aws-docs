@@ -105,7 +105,3 @@ Other security standards are available in all the Regions where Security Hub CSP
 Some Security Hub CSPM controls aren't available in all AWS Regions. For a list of controls that aren't available in each Region, see [Regional limits on Security Hub CSPM controls](regions-controls.md).
 
 On the Security Hub CSPM console, a control doesn't appear in the list of controls if it isn't available in the Region that you're currently signed in to. The exception is an aggregation Region. If you set an aggregation Region and sign in to that Region, the console shows controls that are available in the aggregation Region or one or more linked Regions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

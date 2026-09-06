@@ -158,7 +158,3 @@ This pathway applies to the following situations:
 Example: A healthcare company deploys software quarterly through a manual checklist involving multiple teams over a weekend maintenance window. Failures during deployment cause extended outages. After adopting modern DevOps practices, deployments happen multiple times per week through automated pipelines. Every change passes through automated tests, security scans, and compliance checks before reaching production. Rollbacks that once took hours now happen in minutes.
 
 For more information, contact your AWS account team.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

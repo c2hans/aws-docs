@@ -82,7 +82,3 @@ Layers that use [self-managed S3 code storage](configuration-self-managed-storag
 
 **Note**
 Deleting a layer version never deactivates functions that reference it. Functions remain `Active` regardless of whether the layer used Lambda-managed or self-managed S3 storage. The `Inactive` state only applies when Lambda loses access to a function's own source code stored in a self-managed S3 bucket.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

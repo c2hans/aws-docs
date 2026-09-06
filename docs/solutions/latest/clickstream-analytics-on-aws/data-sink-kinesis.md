@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 <a name="addtional-settings"></a>
 +  **Sink maximum interval**: You can specify the maximum interval (in seconds) that records should be buffered before streaming to the AWS service.
 +  **Batch size**: You can specify the maximum number of records to deliver in a single batch.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Clickstream Analytics on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

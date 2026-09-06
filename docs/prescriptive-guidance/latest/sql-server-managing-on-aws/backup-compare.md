@@ -20,7 +20,3 @@ There is an almost endless variety of possible configurations for these types of
 | AWS Backup AMI | 00:08:00 | Not applicable (snapshot) |
 
 Based on our testing, native SQL Server database backups to FSx for Windows File Server is the fastest option, while backups to Storage Gateway and locally attached EBS volumes are more cost-efficient with slower performance. For server-level backups (AMI), AWS Backup should be used for optimal performance, cost, and manageability.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

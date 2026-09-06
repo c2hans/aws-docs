@@ -216,7 +216,3 @@ You can create an SSH connection with the primary node using the AWS CLI on Wind
 1. When you are done working on the primary node, close the AWS CLI window.
 
    For more information, see [Amazon EMR commands in the AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/emr). If you're experiencing difficulty with using SSH to connect to your primary node, see [Troubleshoot connecting to your instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

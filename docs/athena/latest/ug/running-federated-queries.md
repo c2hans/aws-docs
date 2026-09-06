@@ -133,7 +133,3 @@ FROM {{federated_source_name}}.{{federated_source_database}}."person" p
 <a name="running-federated-queries-federated-views-additional-resources"></a>
 + For an example of a federated view that is decoupled from its originating source and is available for on-demand analysis in a multi-user model, see [Extend your data mesh with Amazon Athena and federated views](https://aws.amazon.com/blogs/big-data/extend-your-data-mesh-with-amazon-athena-and-federated-views/) in the *AWS Big Data Blog*.
 + For more information about working with views in Athena, see [Work with views](views.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

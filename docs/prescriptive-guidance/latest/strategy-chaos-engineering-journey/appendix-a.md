@@ -38,7 +38,3 @@ The financial services industry has emerged as a front runner in embracing chaos
 + The European Commission's proposal for a Digital Operational Resilience Act (DORA)
 
 If your organization is a financial institution, comply with these regulations by setting explicit goals for demonstrating operational resilience through comprehensive testing and validation strategies. For an example, see [London Stock Exchange Group uses chaos engineering on AWS to improve resilience](https://aws.amazon.com/blogs/architecture/london-stock-exchange-group-uses-chaos-engineering-on-aws-to-improve-resilience/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

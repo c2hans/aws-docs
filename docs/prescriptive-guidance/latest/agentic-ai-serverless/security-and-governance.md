@@ -101,7 +101,3 @@ The following AWS services play key roles in enabling AI governance:
 Security and governance in serverless AI systems is about more than perimeter control. It requires deep understanding of how AI systems behave, how users interact with them, and how decisions are made.
 
 Enterprises can implement several key controls to enhance security and governance. These include fine-grained IAM roles, prompt and agent scoping, data protection controls, and comprehensive logging and validation. By doing so, enterprises can confidently scale AI-driven workloads while remaining secure, auditable, and compliant, fostering trust among customers, regulators, and internal stakeholders.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

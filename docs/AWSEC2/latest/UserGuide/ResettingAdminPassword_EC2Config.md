@@ -157,7 +157,3 @@ After you have modified the configuration file, reattach the volume to the origi
 The instance gets a new public IP address after you stop and start it. Make sure to connect to the instance using its current public DNS name. For more information, see [Amazon EC2 instance state changes](ec2-instance-lifecycle.md).
 
 1. (Optional) If you have no further use for the temporary instance, you can terminate it. Select the temporary instance, and choose **Instance State**, **Terminate instance**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

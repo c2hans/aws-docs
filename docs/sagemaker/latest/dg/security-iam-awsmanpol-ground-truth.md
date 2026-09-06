@@ -194,7 +194,3 @@ View details about updates to AWS managed policies for Amazon SageMaker AI Groun
 | [AmazonSageMakerGroundTruthExecution](#security-iam-awsmanpol-gt-AmazonSageMakerGroundTruthExecution) - Update to an existing policy | 3 | Add `ec2:CreateVpcEndpoint`, `ec2:DescribeVpcEndpoints`, and `ec2:DeleteVpcEndpoints` permissions. | April 29, 2022 |
 | AmazonSageMakerGroundTruthExecution - Update to an existing policy | 2 | Remove `sqs:SendMessageBatch` permission. | April 11, 2022 |
 | AmazonSageMakerGroundTruthExecution - New policy | 1 | Initial policy | July 20, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

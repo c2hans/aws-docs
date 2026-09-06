@@ -114,7 +114,3 @@ One of the common use cases for this solution is to help you plan for migrating 
 We recommend that you engage with AWS Solutions Architects, Technical Account Managers, and AWS Professional Services to review your AWS Organizations-based dependencies identified by the solution before initiating account migration. Additional resources include the following:
 +  [How do I move accounts between organizations in AWS Organizations?](https://aws.amazon.com/premiumsupport/knowledge-center/organizations-move-accounts/) – This blog post identifies some of the account, reporting, billing, and other considerations you will need to take when migrating accounts.
 +  [Migrating accounts between AWS Organizations with consolidated billing to all features](https://aws.amazon.com/blogs/mt/migrating-accounts-between-aws-organizations-with-consolidated-billing-to-all-features/) – This blog post provides further insights into consolidated billing and account migration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Account Assessment for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

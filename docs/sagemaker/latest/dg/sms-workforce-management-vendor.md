@@ -37,7 +37,3 @@ You must use the console to subscribe to a vendor workforce. Once you have a sub
 1. If the vendor meets your requirements, choose **Continue to subscribe**.
 
 1. Review the details of the subscription. If you agree to the terms, choose **Subscribe** to complete your subscription to the service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

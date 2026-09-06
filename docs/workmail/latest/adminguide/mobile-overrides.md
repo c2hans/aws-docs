@@ -54,7 +54,3 @@ This will delete the mobile device access override for the specified Amazon Work
 ```
 aws workmail delete-mobile-device-access-override --organization-id m-{{a123b4c5de678fg9h0ij1k2lm234no56}} --user-id {{user1@domain.com}} --device-id {{6APMEKPHCP2ND42VIJ4BR8ECDO}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

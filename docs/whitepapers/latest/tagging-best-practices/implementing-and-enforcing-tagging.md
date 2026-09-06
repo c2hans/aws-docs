@@ -209,7 +209,3 @@ rule tags_asg_costAllocation_CostCenter when %all_asgs !empty {
 ------
 
  It is not possible to retrieve the effective service control policy that applies to a linked account by design. Where you enforce tagging with SCPs, documentation needs to be available to developers so they can ensure their resources meet the policies that have been applied to their accounts. Providing read only access to CloudTrail events within their account can support developers in the task of debugging when their resources fail to comply.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

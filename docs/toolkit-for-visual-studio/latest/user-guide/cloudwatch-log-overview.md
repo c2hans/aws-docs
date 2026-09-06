@@ -225,7 +225,3 @@ If a Task is only associated with a single container, the **View Logs** link ope
 If a Task is associated with multiple containers, the **View Logs** link opens the **View CloudWatch Logs for ECS Task** dialog, use the **Container:** drop-down menu to choose the container you want to view Logs for, then choose **OK**.
 
 1. A new tab opens in the **document** window displaying the log streams associated with your container selection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

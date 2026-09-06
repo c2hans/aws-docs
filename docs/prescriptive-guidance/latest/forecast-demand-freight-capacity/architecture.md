@@ -22,7 +22,3 @@ The solution architecture includes the following main components:
 1. **Model output and monitoring** – The regression model outputs the forecast results to Amazon S3. You can visualize the forecast in [Amazon Quick](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html). Analysts can monitor the forecast results and evaluate accuracy by comparing the forecast with actual demand volume.
 
 The entire processing pipeline from data ingestion to final model output can be orchestrated to run automatically. For example, you can set it up to automatically run monthly for a monthly demand forecast. If you need forecasts for more than one product, you can run the pipeline in parallel for multiple products. For more information, see [Implement MLOps](https://docs.aws.amazon.com/sagemaker/latest/dg/mlops.html) in the SageMaker AI documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/backups-using.
  You can create a cluster from a backup. You might want to do this to set a recovery point for your cluster. Nominate a backup that contains all the users, key material, certificates that you want in your recovery point, and then use that backup to create a new cluster. For more information about creating a cluster from a backup, see [Creating clusters from backups](create-cluster-from-backup.md).
 
  You can also copy a backup of a cluster into a different region, where you can create a new cluster as a clone of the original. You may want to do this for a number of reasons, including simplification of the disaster recovery process. For more information about copying backups to regions, see [Copying backups across Regions](copy-backup-to-region.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

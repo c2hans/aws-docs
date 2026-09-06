@@ -39,7 +39,3 @@ You must include `blob:` to your provided expression to allow file data returned
      + `https://example.com/subdirectory/`: Matches all attempts to load files under subdirectory directory. For example, `https://example.com/subdirectory/path/to/file.jpeg`. It does not match `https://example.com/path/to/file.jpeg`.
 
 1. Choose **Save** to save your changes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

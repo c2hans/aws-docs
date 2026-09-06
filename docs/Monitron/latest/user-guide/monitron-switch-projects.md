@@ -57,7 +57,3 @@ When you add a project, it gets saved only on the platform you are adding it on.
 
 1. If you want to switch between projects, choose the project you want to view from the projects list. You will see this message before you switch.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/Monitron/latest/user-guide/monitron-switch-projects.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

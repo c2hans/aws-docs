@@ -59,7 +59,7 @@ Superusers can access all objects regardless of GRANT and REVOKE commands that s
 ## Usage notes for column-level access control
 <a name="r_GRANT-usage-notes-clp"></a>
 
-The following usage notes apply to column-level privileges on Amazon Redshift tables and views. These notes describe tables; the same notes apply to views unless we explicitly note an exception.
+The following usage notes apply to column-level privileges on Amazon Redshift tables and views. These notes describe tables; the same notes apply to views unless an exception is explicitly noted.
 + For an Amazon Redshift table, you can grant only the SELECT and UPDATE privileges at the column level. For an Amazon Redshift view, you can grant only the SELECT privilege at the column level.
 + The ALL keyword is a synonym for SELECT and UPDATE privileges combined when used in the context of a column-level GRANT on a table.
 + If you don't have the SELECT privilege on all columns in a table, performing a SELECT \* operation returns only those columns that you have access to. When using a view, a SELECT \* operation attempts to access all columns in the view. If you do not have permission to access all columns, these queries fail with a permission denied error.
@@ -132,7 +132,3 @@ SETTINGS (
  S3_BUCKET 'amzn-s3-demo-bucket'
 );
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ The following table describes the documentation releases for Microsoft SQL Serve
 | [Downgrade your SQL Server edition](https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/downgrade-sql-server-on-ec2.html) | Added a new section about downgrading your Microsoft SQL Server edition. | August 28, 2023 |
 | [Migration](https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/migrate-sql-server-on-ec2.html) | Added a new section about migrating to Microsoft SQL Server on Amazon EC2. | August 1, 2023 |
 | [Initial release](#doc-history) | Initial release of the Microsoft SQL Server on Amazon EC2 User Guide | August 18, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SQL Server on Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sql-server-ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

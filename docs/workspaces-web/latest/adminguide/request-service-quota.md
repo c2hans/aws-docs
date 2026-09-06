@@ -27,7 +27,3 @@ Service quotas affect one AWS Region at a time. You must request service quota i
 + [Requesting a maximum concurrent sessions increase in Amazon WorkSpaces Secure Browser](request-max-concurrent-session.md)
 + [Limit example for Amazon WorkSpaces Secure Browser](limit-example.md)
 + [Other service quotas in Amazon WorkSpaces Secure Browser](other-quotas.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

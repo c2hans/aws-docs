@@ -74,7 +74,3 @@ When you have met the following exit criteria, proceed to the next task:
 + You have validated the list of clearly defined migration patterns.
 + The source location of the migration metadata has all the required metadata for each pattern, or a process is in place to capture any missing metadata.
 + You have validated the wave plan and migration metadata for at least five waves, and you have defined a process for notifications and updates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -130,7 +130,3 @@ With `fallbackToIAM` enabled, users can access the data that the Access Grant al
 
 **Note**
 We recommend that you test your access permissions with the `fallbackToIAM` configuration enabled even if you plan to disable the option for production workloads. With Spark jobs, there are other ways that users might be able to access all permission sets with their IAM credentials. When enabled on EMR clusters, grants from S3 give Spark jobs access to S3 locations. You should ensure that you protect these S3 locations from access outside of EMRFS. For example, you should protect the S3 locations from access by S3 clients used in notebooks, or by applications that aren't supported by S3 Access Grants such as Hive or Presto.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

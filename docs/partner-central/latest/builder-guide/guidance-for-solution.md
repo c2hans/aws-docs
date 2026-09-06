@@ -39,7 +39,3 @@ Products are the specific items customers can transact on AWS Marketplace. These
 The distinction matters because partners deliver value that extends beyond what can be captured in a single Marketplace listing. For example, you might offer an enterprise software platform as your solution, but that platform could include multiple purchasable products: the core application, add-on modules, professional services packages, and managed service offerings. Each of these would be a separate product in Marketplace, but together they comprise your complete solution.
 
 When you create a solution in AWS Partner Central, you must now associate it with the products or services that make up your offering. This requirement serves two purposes. First, it gives customers a complete view of what they can actually purchase and how your solution comes to life in their environment. Second, it enables AWS to better support your business by understanding the transactable components of your go-to-market strategy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

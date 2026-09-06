@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Use Amazon GuardDuty to monitor account behavior, network activity, and data access patterns for threats, and integrate with Security Hub CSPM for a unified security view.
 +  Implement AWS WAF Bot Control to help detect and mitigate bot traffic that can harm resources and player experiences.
 +  Conduct penetration testing exercises regularly, adhering to AWS customer support policies, to assess and strengthen your security posture.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -121,7 +121,3 @@ asyncWaiter.waitUntilTableExists(b -> b.tableName("myTable"),
 For a complete example using waiters with DynamoDB, see [CreateTable.java](https://github.com/awsdocs/aws-doc-sdk-examples/blob/869b7ddbc7c8f66c7c45acd5b813429aff37003e/javav2/example_code/dynamodb/src/main/java/com/example/dynamodb/CreateTable.java) in the AWS Code Examples Repository.
 
 For a complete example using waiters with Amazon S3, see [S3BucketOps.java](https://github.com/awsdocs/aws-doc-sdk-examples/blob/869b7ddbc7c8f66c7c45acd5b813429aff37003e/javav2/example_code/s3/src/main/java/com/example/s3/S3BucketOps.java) in the AWS Code Examples Repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

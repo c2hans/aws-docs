@@ -115,7 +115,3 @@ In this notebook, the PyTorch ResNet model is trained on [the German Traffic Sig
 During the training process, SageMaker Debugger collects tensors to plot the class activation maps in real time. As shown in the animated image, the class activation map (also called as a *saliency map*) highlights regions with high activation in red color.
 
 Using tensors captured by Debugger, you can visualize how the activation map evolves during the model training. The model starts by detecting the edge on the lower-left corner at the beginning of the training job. As the training progresses, the focus shifts to the center and detects the speed limit sign, and the model successfully predicts the input image as Class 3, which is a class of speed limit 60km/h signs, with a 97% confidence level.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -119,7 +119,3 @@ The following are the service endpoints and service quotas for this service.
 | UntagResource throttle limit in transactions per second | Each supported Region: 1 | No | The maximum number of UntagResource requests allowed per account per second, in the current Region |
 
 For more information, see [Guidelines and Quotas](https://docs.aws.amazon.com/comprehend/latest/dg/guidelines-and-limits.html) in the *Amazon Comprehend Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,12 +13,12 @@ The `rattler-build publish` command authenticates with AWS using the standard cr
 <a name="publish-s3-prereqs"></a>
 
 Before you publish packages to Amazon S3, complete the following prerequisites:
-+ **pixi and rattler-build** – Install pixi from [pixi.sh](https://pixi.sh), then install `rattler-build`.
++ **pixi and rattler-build** – Install pixi from [pixi.sh](https://pixi.sh) on the Pixi website, then install `rattler-build`.
 
   ```
   pixi global install rattler-build
   ```
-+ **git** – Required to clone the samples repository. On Windows, [git for Windows](https://gitforwindows.org/) also provides a `bash` shell, which some of the Windows sample recipes require.
++ **git** – Required to clone the samples repository. On Windows, [git for Windows](https://gitforwindows.org/) on the Git for Windows website also provides a `bash` shell, which some of the Windows sample recipes require.
 + **Amazon S3 bucket** – An Amazon S3 bucket to use as the conda channel. You can use the job attachments bucket from your Deadline Cloud farm or create a separate bucket.
 + **AWS credentials** – Configure credentials on your workstation using the `aws configure` command or the `aws login` command. For more information, see [Setting up the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html) in the *AWS Command Line Interface User Guide*.
 + **IAM permissions** – (Optional) To reduce the scope of permissions your credentials have, you can use an AWS Identity and Access Management (IAM) policy that only grants the following permissions on the Amazon S3 bucket and the channel prefix you use (for example, `/Conda/*`):
@@ -33,7 +33,7 @@ Before you publish packages to Amazon S3, complete the following prerequisites:
 
 Use `rattler-build publish` with an `s3://` target to publish a package to your Amazon S3 conda channel. If the channel does not exist in the bucket, `rattler-build` initializes the channel automatically. Before you begin, make sure that you have completed the [prerequisites](#publish-s3-prereqs).
 
-The following example publishes the Blender 4.5 sample recipe from the [Deadline Cloud samples](https://github.com/aws-deadline/deadline-cloud-samples) repository on GitHub. You can substitute a different recipe from the samples repository or use your own recipe.
+The following example publishes the Blender 4.5 sample recipe from the [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples) repository on the GitHub website. You can substitute a different recipe from the samples repository or use your own recipe.
 
 **Note**
 Large applications can require tens of GB of free disk space for the source archive, extracted files, and build output. Make sure that you use a disk with enough available space for the package build output.
@@ -64,7 +64,7 @@ Large applications can require tens of GB of free disk space for the source arch
 The `--build-number=+1` option automatically picks the next build number based on what already exists in the destination channel. The best practice is to never overwrite a package in a channel. Always build to a new build number if the package would otherwise have the same filename. Using `--build-number=+1` achieves this when you build to a production channel or a staging channel that mirrors production.
 If you want to control the build number directly, you can set it with a specific value such as `--build-number=7`. If you omit the option, `rattler-build` uses the build number defined in the `recipe.yaml` file.
 
-If your package recipe depends on packages from a particular channel, such as [conda-forge](https://conda-forge.org/), add `-c conda-forge` to the command.
+If your package recipe depends on packages from a particular channel, such as [conda-forge](https://conda-forge.org/) on the conda-forge website, add `-c conda-forge` to the command.
 
 You can also publish a package file that you already built, for example, a `.conda` file from a local build. Replace {{amzn-s3-demo-bucket}} with your bucket name.
 
@@ -136,7 +136,7 @@ After you publish the package, create a temporary pixi project to verify that th
    pixi run blender --version
    ```
 
-   The [`pixi run`](https://pixi.sh/latest/reference/cli/pixi/run/) command activates the conda environment for the project directory and runs the specified command within it. The environment persists in the project directory, so you can use the same `pixi run` command from other terminals.
+   The `pixi run` command activates the conda environment for the project directory and runs the specified command within it. The environment persists in the project directory, so you can use the same `pixi run` command from other terminals. For more information, see the [`pixi run` command](https://pixi.sh/latest/reference/cli/pixi/run/) on the Pixi website.
 
 ## Removing packages from the channel
 <a name="publish-s3-remove-packages"></a>
@@ -186,7 +186,7 @@ If a build fails, `rattler-build` preserves the build directory so you can inves
 rattler-build debug shell
 ```
 
-From the debug shell, you can modify files, run individual build commands, and add dependencies to isolate the issue. For more information, see [Debugging builds](https://rattler-build.prefix.dev/latest/debugging_builds/) in the rattler-build documentation.
+From the debug shell, you can modify files, run individual build commands, and add dependencies to isolate the issue. For more information, see [Debugging builds](https://rattler-build.prefix.dev/latest/debugging_builds/) on the prefix.dev website.
 
 ## Building packages for other platforms
 <a name="publish-s3-cross-platform"></a>
@@ -194,7 +194,7 @@ From the debug shell, you can modify files, run individual build commands, and a
 The `rattler-build publish` command builds packages for the operating system of the workstation where the command runs. If your Deadline Cloud fleet uses a different operating system than your workstation, or if your package has other host requirements, you have the following options:
 + Run `rattler-build publish` on a host that matches the target operating system. For example, use an Amazon Elastic Compute Cloud (Amazon EC2) instance running Linux to build packages for a Linux fleet.
 + Use a Deadline Cloud package building queue to automate builds on the target platform. See [Create a package building queue](automate-package-builds.md#s3-channel-create-queue).
-+ (Advanced) Use cross-compilation to build packages for a different platform from your workstation. For more information, see [Cross-compilation](https://rattler-build.prefix.dev/latest/compilers/#cross-compilation) in the rattler-build documentation.
++ (Advanced) Use cross-compilation to build packages for a different platform from your workstation. For more information, see [Cross-compilation](https://rattler-build.prefix.dev/latest/compilers/#cross-compilation) on the prefix.dev website.
 
 ## Next steps
 <a name="publish-s3-next-steps"></a>
@@ -202,7 +202,3 @@ The `rattler-build publish` command builds packages for the operating system of 
 After you publish packages to your Amazon S3 conda channel, configure your Deadline Cloud queues to use the channel:
 + [Configure production queue permissions for custom conda packages](configure-jobs-s3-channel.md#s3-channel-configure-permissions) – Grant your production queues read-only access to the Amazon S3 conda channel.
 + [Add a conda channel to a queue environment](configure-jobs-s3-channel.md#s3-channel-add-channel) – Configure the queue environment to install packages from the Amazon S3 conda channel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

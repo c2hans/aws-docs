@@ -42,7 +42,3 @@ Full functionality of Workspaces is available with the Amazon WorkSpaces self-pr
      For more information, see [ Best Practices for Deploying Amazon WorkSpaces (Scenario 6)](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/scenario-6-aws-microsoft-ad-shared-services-vpc-and-a-one-way-trust-to-on-premises.html).
 **Note**
 The AD Connector can be configured by submitting a Management \| Other \| Other \| Create change type RFC with the prerequisite AD configuration details; for more information, see [Create an AD Connector](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/create_ad_connector.html). If method 2 is used to create a Resource forest in AMS-managed AD, submit another Management \| Other \| Other \| Create change type RFC in AMS shared-services account by running the AMS-managed AD.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

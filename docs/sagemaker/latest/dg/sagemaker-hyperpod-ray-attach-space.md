@@ -82,7 +82,3 @@ The space's SageMaker AI Distribution image carries its own Ray version, and it 
 The Python version must match as well, including the patch version. A space running Python 3.11.9 and a cluster running Python 3.11.4 are not compatible.
 
 A version mismatch surfaces as errors during development. For a simpler experience you can choose the same SageMaker AI Distribution image for both the Ray cluster and the Space Image to ensure compatibility.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

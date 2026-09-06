@@ -69,7 +69,3 @@ If you select **IPv6** for the outside IP address type, you must create a custom
 1. (Optional) Choose **Tunnel 2 options** and follow the previous steps to set up a second tunnel.
 
 1. Choose **Create VPN connection**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

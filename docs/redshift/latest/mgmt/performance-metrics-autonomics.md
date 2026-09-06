@@ -18,7 +18,3 @@ The Amazon Redshift console provides information about automatic optimizations, 
 1. From the cluster's details page, select **Manage usage limit** from the **Actions** drop-down menu. You can also select the **Maintenance** tab for a cluster, then scroll down and select **Create usage limits**.
 
 1. The graph showing extra compute autonomics data appears under the section titled **Usage limit for extra compute for automatic optimization**. The graph displays the amount of time that Amazon Redshift runs autonomics using extra compute resources in a given time period.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

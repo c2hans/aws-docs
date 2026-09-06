@@ -12,7 +12,3 @@ Before you use Amazon CodeGuru Reviewer to create code reviews, the source code 
 If you want to suppress recommendations from CodeGuru Reviewer, you can create and add to the root directory of your repository an `aws-codeguru-reviewer.yml` file that lists files and directories to exclude from analysis. For more information, see [Suppress recommendations](recommendation-suppression.md).
 
 After you know the repository type and the name of your repository, you need to create a repository association. For GitHub repositories, you can create a repository association using only the CodeGuru Reviewer console. For the other supported repository types, you can use the console, AWS CLI, or Amazon CodeGuru Reviewer SDK to create a repository association. For more information, see [Working with repository associations in Amazon CodeGuru Reviewer](working-with-repositories.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ To ensure that your task definition validates for use with Amazon ECS Managed In
 + In the AWS Management Console, for the **Requires Compatibilities** field, specify `MANAGED_INSTANCES`.
 + In the AWS CLI, specify the `--requires-compatibilities` option.
 + In the Amazon ECS API, specify the `requiresCompatibilities` flag.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -381,7 +381,3 @@ As Karpenter takes an application-first approach to provision compute capacity f
 +  [Karpenter vs Cluster Autoscaler](https://youtu.be/FIBc8GkjFU0)
 +  [Karpenter Session at re:Invent 2023](https://youtu.be/lkg_9ETHeks)
 +  [Tutorial: Run Kubernetes Clusters for Less with Amazon EC2 Spot and Karpenter](https://community.aws/tutorials/run-kubernetes-clusters-for-less-with-amazon-ec2-spot-and-karpenter#step-6-optional-simulate-spot-interruption)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

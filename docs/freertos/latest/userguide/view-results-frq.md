@@ -20,7 +20,3 @@ The `awsiotdevicetester_report.xml` is the qualification test report that you su
 The `FRQ_Report.xml` is a report in standard [JUnit XML format](https://llg.cubic.org/docs/junit/). You can integrate it into CI/CD platforms like [Jenkins](https://jenkins.io/), [Bamboo](https://www.atlassian.com/software/bamboo), and so on. The report contains the following elements:
 + An aggregate summary of test case results.
 + A breakdown of test case results by libraries that were tested based on the device features.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

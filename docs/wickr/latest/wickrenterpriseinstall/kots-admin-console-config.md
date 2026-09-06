@@ -31,7 +31,3 @@ Once in the KOTS admin console, configure your installation according to your ne
  Once you have configured all the necessary features, scroll to the bottom of the configuration page, and choose **Save Config**. This will initiate some preflight host checks. Once the preflight checks are complete, choose **Deploy** to begin the Wickr Enterprise Installation.
 
  Now you are ready to begin configuring your Wickr Enterprise installation. For more information on configuring Wickr Enterprise, see [What is Wickr Enterprise?](https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/what-is-wickr.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

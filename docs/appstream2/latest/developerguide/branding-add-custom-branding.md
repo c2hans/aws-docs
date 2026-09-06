@@ -42,7 +42,3 @@ If you want to choose your organization logo or favicon from your Amazon S3 buck
 **Note**
 WorkSpaces Applications retains the custom branding changes that you save. If you save your custom branding changes, but then choose to restore the WorkSpaces Applications default branding, your custom branding changes are saved for later use. If you restore the WorkSpaces Applications default branding and decide later to reapply your custom branding, choose **Custom**, **Save**. In this case, the most recently saved custom branding is displayed to your users.
    + To discard your branding changes, choose **Cancel**. When prompted to confirm your choice, choose **Confirm**. If you cancel your changes, the most recently saved branding is displayed to your users.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

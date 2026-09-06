@@ -36,7 +36,3 @@ To learn more about these techniques, see the following papers:
 + [Large Batch Optimization for Deep Learning: Training BERT in 76 Minutes](https://arxiv.org/pdf/1904.00962.pdf), You et al.
 + [Accelerated Large Batch Optimization of BERT Pretraining in 54 minutes](https://arxiv.org/pdf/2006.13484.pdf), Zheng et al.
 + [Deep Gradient Compression](https://arxiv.org/abs/1712.01887), Lin et al.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

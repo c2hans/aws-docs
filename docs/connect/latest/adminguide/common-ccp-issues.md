@@ -175,7 +175,3 @@ If an agent can hear the customer, but the customer can't hear the agent, this m
 + To fix sound problems on a Mac, see [Change the sound input settings on Mac](https://support.apple.com/guide/mac-help/change-the-sound-input-settings-mchlp2567/mac).
 
 To troubleshoot call quality issues, see [Troubleshoot audio quality issues by using `QualityMetrics` in the contact record](sop-audio-qa.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

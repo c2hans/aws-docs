@@ -11,7 +11,3 @@ This section describes how you can build a physical track for an AWS DeepRacer m
 +  [Track materials and build tools](track-materials-build-tools.md)
 +  [Lay your track for AWS DeepRacer](lay-your-track.md)
 +  [AWS DeepRacer track design templates](track-design-templates.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

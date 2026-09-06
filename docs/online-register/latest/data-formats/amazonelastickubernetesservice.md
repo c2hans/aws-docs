@@ -43,7 +43,3 @@ Amazon Elastic Kubernetes Service provides the following APIs for data retrieval
 | <a name="eks-ListPodIdentityAssociations"></a>[ListPodIdentityAssociations](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListPodIdentityAssociations.html) | List EKS Pod Identity associations | List |
 | <a name="eks-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListTagsForResource.html) | List tags for the specified resource | Read |
 | <a name="eks-ListUpdates"></a>[ListUpdates](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListUpdates.html) | List the updates for a given Amazon EKS cluster/nodegroup/add-on (in the specified or default region) | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,7 @@ Foundation models in Amazon Bedrock support input and output modalities, which v
 When you make inference calls with Meta Llama models, you include a prompt for the model. For general information about creating prompts for the models that Amazon Bedrock supports, see [Prompt engineering concepts](prompt-engineering-guidelines.md). For Meta Llama specific prompt information, see the [Meta Llama prompt engineering guide](https://ai.meta.com/llama/get-started/#prompting).
 
 **Note**
-Llama 3.2 Instruct and Llama 3.3 Instruct models use geofencing. This means that these models cannot be used outside the AWS Regions available for these models listed in the Regions table.
+Llama 3.2 11B Instruct, Llama 3.2 90B Instruct, Llama 4 Scout 17B Instruct, and Llama 4 Maverick 17B Instruct models use geofencing. Access to these models is restricted based on the country associated with your AWS account and the country associated with the request's source IP address. For information about supported countries and territories, see [Serverless Third-Party Model License Agreements](https://aws.amazon.com/legal/bedrock/third-party-models/).
 
 This section provides information for using the following models from Meta.
 + Llama 3 Instruct
@@ -177,7 +177,3 @@ print(response_text)
 ```
 
 This example shows how to control the generation length using Llama 3 Instruct models. For detailed responses or summaries, adjust `max\_gen\_len` and include specific instructions in your prompt.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

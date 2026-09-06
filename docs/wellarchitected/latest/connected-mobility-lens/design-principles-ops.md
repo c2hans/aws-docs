@@ -25,7 +25,3 @@ Best practices implementing observability include:
  **Leading versus lagging indicators:** Leading indicators are metrics that are used to measure future performance. For example, customer satisfaction and connected mobility feature usage metrics can be used to predict renewal rates, as a happy and engaged customer is more likely to renew the paid subscription. Similarly, quality metrics of the feature releases can be a leading indicator to predict the failure rate of the system.
 
 Lagging indicators are metrics used to measure past performance for example connected mobility subscription renewal rates, Mean Time Between Failures (MTBF), and remote command latency. Lagging indicators provide valuable feedback on the effectiveness of past decisions and help identify areas for improvement. Both leading and lagging indicators are important for managing and measuring operational efficiency of connected mobility workloads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

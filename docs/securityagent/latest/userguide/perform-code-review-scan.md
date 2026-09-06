@@ -113,22 +113,6 @@ Everyone with read access to the private repository can see the remediation pull
 **Note**
 When automatic code remediation is disabled, you can still trigger it manually for individual findings. This works for findings from a connected repository or an Amazon S3 source.
 
-### Set a maximum task-hours limit
-<a name="_set_a_maximum_task_hours_limit"></a>
-
-Limit how much work AWS Security Agent performs for a code review by setting a maximum number of task hours. Task hours measure the cumulative time the agent spends actively working on the review, including time across parallel analysis. Task hours are not the same as elapsed wall-clock time, because AWS Security Agent runs multiple tasks at once. Total task hours is also the unit that AWS Security Agent bills for a run, so setting a limit caps how much a review can cost. The smallest limit you can set is 20 hours.
-
-1. (Optional) In the **Max task hours** section, choose a limit:
-   + Choose a preset value, such as **20** or **30** hours.
-   + Choose **No limit** to run the review to completion without a task-hours limit.
-   + Choose **Custom** to enter your own value. A custom limit must be at least 20 hours.
-
-**Tip**
-For larger applications, or to get the most complete results, set a higher limit such as **30** hours or more. AWS Security Agent bills only for the task hours a run actually uses, so a higher limit does not increase cost unless the review needs the extra time.
-
-**Note**
-When a review reaches its maximum task hours, AWS Security Agent stops working on the review and keeps the findings already discovered. The run finishes with a status of **Completed**. You can review these findings or run the code review again.
-
 ### Configure simulated validation
 <a name="_configure_simulated_validation"></a>
 
@@ -243,7 +227,3 @@ After running a code review:
 + Remediate findings through automated pull requests or manual fixes (see [Remediate code review findings](remediate-code-scan-findings.md))
 + Run additional reviews after implementing fixes to verify remediation
 + Adjust your code review configuration or sources as your codebase evolves
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

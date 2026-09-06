@@ -32,7 +32,3 @@ Before you set up an EMR Studio, make sure you have the following items:
 1. [Assign a user or group to an EMR Studio](emr-studio-manage-users.md#emr-studio-assign-users-groups)
 
 After you complete the setup steps, you can [Use an Amazon EMR Studio](use-an-emr-studio.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

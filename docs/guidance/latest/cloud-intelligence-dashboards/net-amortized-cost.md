@@ -215,7 +215,3 @@ Now that we’ve created the parameter and control we need to associate it with 
     ![Edit calculated filed in hourly view](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/net_Summary_view_cost_amortized.png)
 
 1. Publish the modified analysis as a new dashboard which now has option to switch between both unblended and net\_amortized cost.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

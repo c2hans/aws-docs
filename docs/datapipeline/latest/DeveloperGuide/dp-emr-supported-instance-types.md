@@ -16,7 +16,3 @@ This table lists the Amazon EC2 instances that AWS Data Pipeline supports and ca
 | Memory optimized | m2.xlarge \| m2.2xlarge \| m2.4xlarge \| r3.xlarge \| r3.2xlarge \| r3.4xlarge \| r3.8xlarge \| cr1.8xlarge \| m4.large \| m4.xlarge \| m4.2xlarge \| m4.4xlarge \| m4.10xlarge \| m4.16large \| m5.xlarge \| m5.2xlarge \| m5.4xlarge \| m5.12xlarge \| m5.24xlarge \| m5d.xlarge \| m5d.2xlarge \| m5d.4xlarge \| m5d.12xlarge \| m5d.24xlarge \| r4.large \| r4.xlarge \| r4.2xlarge \| r4.4xlarge \| r4.8xlarge \| r4.16xlarge |
 | Storage optimized | h1.4xlarge \| hs1.2xlarge \| hs1.4xlarge\| hs1.8xlarge \| i2.xlarge \| i2.2xlarge \| i2.4large \| i2.8xlarge \| d2.xlarge \| d2.2xlarge\| d2.4xlarge \| d2.8xlarge |
 | Accelerated computing | g2.2xlarge \| cg1.4xlarge |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

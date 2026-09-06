@@ -16,7 +16,3 @@ The following are limitations for the Asana connector:
   + In partition2, we get the same data with due\_date as 2019-09-15 (which was in partition1) along with other data, causing data duplication.
 + Filtering and partitioning cannot be supported on the same field as a bad request error is thrown from the SaaS end.
 + The Task entity requires a minimum of 1 field in filter criteria. There is a limitation with Asana where pagination is not identified without sorting the records based on a time-based field. Hence, the Created\_at field is used along with pagination to distinguish the next set of records. The Created\_at field is marked as mandatory in the filter, with a default value of 2000-01-01T00:00:00Z if not provided. For more information about Pagination, see [Tasks in a workspace](https://developers.asana.com/reference/searchtasksforworkspace).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

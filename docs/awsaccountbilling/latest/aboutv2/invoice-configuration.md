@@ -51,7 +51,3 @@ An AWS Identity and Access Management (IAM) identity, such as a user or role, mu
 There are some quotas and restrictions that apply to Invoice configuration. See [AWS invoice configuration](billing-limits.md#limits-invoicing) in the *Quotas and restrictions* page for details.
 
 For more information about service quotas, see [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html) in the *AWS General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

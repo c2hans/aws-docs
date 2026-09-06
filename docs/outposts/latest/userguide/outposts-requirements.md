@@ -198,7 +198,3 @@ You must ensure that electrical installations, and any changes to those installa
 The team will establish network connectivity for the Outposts rack over the uplink that you provide, and will configure the rack's capacity.
 
 The installation is complete when you confirm that the Amazon EC2 and Amazon EBS capacity for your Outposts rack is available from your AWS account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

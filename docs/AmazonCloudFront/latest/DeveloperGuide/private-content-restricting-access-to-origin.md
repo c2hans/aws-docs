@@ -18,7 +18,3 @@ To do this, configure CloudFront to send authenticated requests to your AWS orig
 + [Restrict access to an Amazon S3 origin](private-content-restricting-access-to-s3.md)
 + [Restrict access with VPC origins](private-content-vpc-origins.md)
 + [Restrict access to an Amazon S3 Multi-Region Access Point origin](private-content-restricting-access-to-s3-mrap.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

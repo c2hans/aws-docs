@@ -18,13 +18,13 @@ You can attach `BedrockAgentCoreFullAccess` to your users, groups, and roles.
 <a name="BedrockAgentCoreFullAccess-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: July 16, 2025, 13:37 UTC
-+ **Edited time:** August 11, 2026, 19:07 UTC
++ **Edited time:** September 03, 2026, 22:07 UTC
 + **ARN**: `arn:aws:iam::aws:policy/BedrockAgentCoreFullAccess`
 
 ## Policy version
 <a name="BedrockAgentCoreFullAccess-version"></a>
 
-**Policy version:** v19 (default)
+**Policy version:** v21 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -136,6 +136,37 @@ The policy's default version is the version that defines the permissions for the
         },
         "StringLike" : {
           "kms:EncryptionContext:aws:bedrock-agentcore-gateway:arn" : "arn:aws:bedrock-agentcore:*:*:gateway/*",
+          "kms:ViaService" : [
+            "bedrock-agentcore.*.amazonaws.com"
+          ]
+        }
+      }
+    },
+    {
+      "Sid" : "BedrockAgentCorePolicyKMSGrantsAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:CreateGrant"
+      ],
+      "Resource" : [
+        "arn:aws:kms:*:*:key/*"
+      ],
+      "Condition" : {
+        "ForAllValues:StringEquals" : {
+          "kms:GrantOperations" : [
+            "Encrypt",
+            "Decrypt",
+            "GenerateDataKey",
+            "GenerateDataKeyWithoutPlaintext",
+            "ReEncryptFrom",
+            "ReEncryptTo"
+          ]
+        },
+        "StringEquals" : {
+          "kms:GrantConstraintType" : "EncryptionContextSubset"
+        },
+        "StringLike" : {
+          "kms:EncryptionContext:aws:bedrock-agentcore-policy:policy-engine-arn" : "arn:aws*:bedrock-agentcore:*:*:policy-engine/*",
           "kms:ViaService" : [
             "bedrock-agentcore.*.amazonaws.com"
           ]
@@ -415,6 +446,23 @@ The policy's default version is the version that defines the permissions for the
       ]
     },
     {
+      "Sid" : "AgentCoreEvaluationCloudWatchLogCustomLogGroupCreate",
+      "Effect" : "Allow",
+      "Action" : [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource" : [
+        "arn:aws:logs:*:*:log-group:*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    },
+    {
       "Sid" : "AgentCoreEvaluationCloudWatchLogIndexAccess",
       "Effect" : "Allow",
       "Action" : [
@@ -474,7 +522,3 @@ The policy's default version is the version that defines the permissions for the
 + [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
 + [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
 + [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Policy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-managed-policy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

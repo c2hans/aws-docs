@@ -33,7 +33,3 @@ Starting with Docker version 1.9, the Docker client compresses image layers befo
    + Choose **Permissions** to view the repository policies that are applied to the repository. For more information, see [Private repository policies in Amazon ECR](repository-policies.md).
    + Choose **Lifecycle Policy** to view the lifecycle policy rules that are applied to the repository. The lifecycle events history is also viewed here. For more information, see [Automate the cleanup of images by using lifecycle policies in Amazon ECR](LifecyclePolicies.md).
    + Choose **Tags** to view the metadata tags that are applied to the repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

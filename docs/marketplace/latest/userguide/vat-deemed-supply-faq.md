@@ -432,7 +432,3 @@ The following table summarizes the key differences:
 For questions about the VAT on Deemed Supplies invoicing process, invoice submission, or disbursement status, please Contact Us through the AMMP portal.
 
 For tax-specific questions regarding the Deemed Supply treatment, applicable VAT rates, or legal references, please consult your tax advisor. AWS is unable to provide tax advice on the VAT treatment of your individual transactions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

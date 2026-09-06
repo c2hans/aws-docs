@@ -180,7 +180,3 @@ The default configuration options that Amazon MWAA overrides are marked in {{red
 | **[celery.worker\_autoscale](https://airflow.apache.org/docs/apache-airflow-providers-celery/stable/configurations-ref.html#worker-autoscale)**<br />The task concurrency for workers.<br />**Defaults:**+ **mw1.micro** - 3,0<br />+ **mw1.small** - 5,0<br />+ **mw1.medium** - 10,0<br />+ **mw1.large** - 20,0<br />+ **mw1.xlarge** - 40,0<br />+ **mw1.2xlarge** - 80,0 | Use this option to free up resources by **reducing** the `maximum`, `minimum` task concurrency of workers. Workers accept up to the `maximum` concurrent tasks configured, regardless of whether there are sufficient resources to do so. If tasks are scheduled without sufficient resources, the tasks immediately fail. We recommend changing this value for resource-intensive tasks by reducing the values to be less than the defaults to allow more capacity per task. |
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ The **Orders in Progress** table displays detailed information of the current or
 
 **Note**
 The x-axis in the Historical Orders chart shows months according to the UTC timezone regardless of your location. This means that the beginning of the month coincides with 00h:00m:00s UTC of the first day of the month and the end of the month coincides with 23h:59m:59s UTC of the last day of the month.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

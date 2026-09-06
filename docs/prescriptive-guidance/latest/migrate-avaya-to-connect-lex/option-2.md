@@ -46,7 +46,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 + Additional hardware and licenses are required, based on the number of concurrent calls.
 + Additional telephony lines are required to transfer the call.
 + If you need to pass data from Avaya to Connect Customer, you need to build additional architecture to support the data transfer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

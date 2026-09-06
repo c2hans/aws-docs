@@ -19,7 +19,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 + [SEC03-BP07 Analyze public and cross-account access](sec_permissions_analyze_cross_account.md)
 + [SEC03-BP08 Share resources securely within your organization](sec_permissions_share_securely.md)
 + [SEC03-BP09 Share resources securely with a third party](sec_permissions_share_securely_third_party.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

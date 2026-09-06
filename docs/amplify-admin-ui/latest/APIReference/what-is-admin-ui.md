@@ -15,7 +15,3 @@ All backend resources created in Amplify Studio generate infrastructure as code 
 <a name="get-started"></a>
 
 For more information on getting started with Amplify Studio, see [Getting started](https://docs.amplify.aws/console/adminui/start) in the *Amplify Docs*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify Admin UI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify-admin-ui` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,11 +21,12 @@ This programming guide provides an orientation for programmers who want to use A
 + [Logging](#JavaLogging)
 + [Pagination](#JavaPagination)
 + [Data class annotations](#JavaDataClassAnnotation)
++ [Best practices](#JavaBestPractices)
 
 ## About the AWS SDK for Java 2.x
 <a name="AboutProgrammingWithJavaSDK"></a>
 
-You can access DynamoDB from Java using the official AWS SDK for Java. The SDK for Java has two versions: 1.x and 2.x. The end-of-support for 1.x was [announced](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-java-v1-x-on-december-31-2025/) on January 12, 2024. It will enter maintenance mode on July 31, 2024 and its end-of-support is due on December 31, 2025. For new development, we highly recommend that you use 2.x, which was first released in 2018. This guide exclusively targets 2.x and focuses only on the parts of the SDK relevant to DynamoDB.
+You can access DynamoDB from Java using the official AWS SDK for Java. The SDK for Java has two versions: 1.x and 2.x. Support for 1.x ended on December 31, 2025. For more information, see [Announcing end of support for AWS SDK for Java v1.x](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-java-v1-x-on-december-31-2025/) on the AWS Developer Tools Blog. For new development, we highly recommend that you use 2.x, which was first released in 2018. This guide exclusively targets 2.x and focuses only on the parts of the SDK relevant to DynamoDB.
 
 For information about maintenance and support for the AWS SDKs, see [AWS SDK and Tools maintenance policy](https://docs.aws.amazon.com/sdkref/latest/guide/maint-policy.html) and [AWS SDKs and Tools version support matrix](https://docs.aws.amazon.com/sdkref/latest/guide/version-support-matrix.html) in the *AWS SDKs and Tools Reference Guide*.
 
@@ -369,8 +370,6 @@ After you create the project and it contains the complete `Handler` class, build
    mvn exec:java -Dexec.mainClass="org.example.App"
    ```
 
-After you view the file, delete the object, and then delete the bucket.
-
 #### Success
 <a name="GetStartedSuccessJava"></a>
 
@@ -458,7 +457,7 @@ import software.amazon.awssdk.services.dynamodb.model.ReturnConsumedCapacity;
 public class DynamoDbEnhancedClientPutItem {
     private static final DynamoDbEnhancedClient ENHANCED_DYNAMODB_CLIENT = DynamoDbEnhancedClient.builder().build();
     private static final DynamoDbTable<YourItem> DYNAMODB_TABLE = ENHANCED_DYNAMODB_CLIENT.table("YourTableName", TableSchema.fromBean(YourItem.class));
-    private static final Logger LOGGER = LoggerFactory.getLogger(PutItem.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(DynamoDbEnhancedClientPutItem.class);
 
     private void putItem() {
         PutItemEnhancedResponse<YourItem> response = DYNAMODB_TABLE.putItemWithResponse(PutItemEnhancedRequest.builder(YourItem.class)
@@ -959,16 +958,9 @@ The `NettyNioAsyncHttpClient` class supports async clients. It's the default cho
 ### AWS CRT-based HTTP client
 <a name="AWSCRTHttpClient"></a>
 
-The newer `AwsCrtHttpClient` and `AwsCrtAsyncHttpClient` classes from the AWS Common Runtime (CRT) libraries are more options that support synchronous and asynchronous clients. Compared to other HTTP clients, AWS CRT offers:
-+ Faster SDK startup time
-+ Smaller memory footprint
-+ Reduced latency time
-+ Connection health management
-+ DNS load balancing
+The newer `AwsCrtHttpClient` and `AwsCrtAsyncHttpClient` classes from the AWS Common Runtime (CRT) libraries are more options that support synchronous and asynchronous clients.
 
 For information about configuring the `AwsCrtHttpClient` and `AwsCrtAsyncHttpClient` classes, see [Configure the AWS CRT-based HTTP clients](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http-configuration-crt.html) in the *AWS SDK for Java 2.x Developer Guide*.
-
-The AWS CRT-based HTTP client isn't the default because that would break backward compatibility for existing applications. However, for DynamoDB we recommend that you use the AWS CRT-based HTTP client for both sync and async uses.
 
 For an introduction to the AWS CRT-based HTTP client, see [Announcing availability of the AWS CRT HTTP Client in the AWS SDK for Java 2.x](https://aws.amazon.com/blogs/developer/announcing-availability-of-the-aws-crt-http-client-in-the-aws-sdk-for-java-2-x/) on the *AWS Developer Tools Blog*.
 
@@ -993,11 +985,12 @@ The `ClientOverrideConfiguration` provides standard configuration choices. The d
 + [RetryMode](#RetryMode)
 + [DefaultsMode](#DefaultsMode)
 + [Keep-Alive configuration](#KeepAliveConfig)
++ [Max connections and concurrency](#MaxConnectionsConcurrency)
 
 ### Timeout configuration
 <a name="TimeoutConfig"></a>
 
-You can adjust the client configuration to control various timeouts related to the service calls. DynamoDB provides lower latencies compared to other AWS services. Therefore, you might want to adjust these properties to lower timeout values so that you can fail fast if there's a networking issue.
+You can adjust the client configuration to control timeouts related to the service calls. DynamoDB provides lower latencies compared to other AWS services. Therefore, you can adjust these properties to lower timeout values (between 4 and 10 seconds) to fail faster if there's a networking issue.
 
 You can customize the latency related behavior using `ClientOverrideConfiguration` on the DynamoDB client or by changing detailed configuration options on the underlying HTTP client implementation.
 
@@ -1005,7 +998,11 @@ You can configure the following impactful properties using `ClientOverrideConfig
 + `apiCallAttemptTimeout` – The amount of time to wait for a single attempt for an HTTP request to complete before giving up and timing out.
 + `apiCallTimeout` – The amount of time that the client has to completely execute an API call. This includes the request handler execution that consists of all the HTTP requests, including retries.
 
-The AWS SDK for Java 2.x provides [default values](https://github.com/aws/aws-sdk-java-v2/blob/a0c8a0af1fa572b16b5bd78f310594d642324156/http-client-spi/src/main/java/software/amazon/awssdk/http/SdkHttpConfigurationOption.java#L134) for some timeout options, such as connection timeout and socket timeouts. The SDK doesn't provide default values for API call timeouts or individual API call attempt timeouts. If these timeouts aren't set in the `ClientOverrideConfiguration`, then the SDK uses the socket timeout value instead for the overall API call timeout. The socket timeout has a default value of 30 seconds.
+The AWS SDK for Java 2.x provides [default values](https://github.com/aws/aws-sdk-java-v2/blob/a0c8a0af1fa572b16b5bd78f310594d642324156/http-client-spi/src/main/java/software/amazon/awssdk/http/SdkHttpConfigurationOption.java#L134) for some timeout options, such as connection timeout and socket timeouts. The SDK doesn't provide default values for API call timeouts or individual API call attempt timeouts. If these timeouts aren't set in the `ClientOverrideConfiguration`, then the SDK effectively uses the socket timeout value as the `apiCallAttemptTimeout` and does not impose an `apiCallTimeout`. The socket timeout has a default value of 30 seconds.
+
+For more information and examples, see [Timeouts](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/timeouts.html) in the *AWS SDK for Java 2.x Developer Guide*.
+
+Don't set extremely low timeouts or you risk all requests failing during times of elevated latency. A better pattern is to use request hedging and initiate a second concurrent request if the first is taking too long. For an example of how request hedging can reduce tail latency, see [How Global Payments Inc. improved their tail latency using request hedging with DynamoDB](https://aws.amazon.com/blogs/database/how-global-payments-inc-improved-their-tail-latency-using-request-hedging-with-amazon-dynamodb/) on the AWS Database Blog.
 
 ### RetryMode
 <a name="RetryMode"></a>
@@ -1014,10 +1011,12 @@ Another configuration related to the timeout configuration that you should consi
 
 The SDK for Java 2.x supports the following retry modes:
 + `legacy` – The default retry mode if you don't explicitly change it. This retry mode is specific to the Java SDK. It's characterized by up to three retries, or more for services such as DynamoDB, which has up to eight retries.
-+ `standard` – Named "standard" because it's more consistent with other AWS SDKs. This mode waits for a random amount of time ranging from 0ms to 1,000ms for the first retry. If another retry is necessary, then this mode picks another random time from 0ms to 1,000ms and multiplies it by two. If an additional retry is necessary, then it does the same random pick multiplied by four, and so on. Each wait is capped at 20 seconds. This mode performs retries on more detected failure conditions than the `legacy` mode. For DynamoDB, it performs up to three total max attempts unless you override with [the maximum number of attempts](#numRetries).
++ `standard` – Named "standard" because it's more consistent with other AWS SDKs. For each retry, this mode waits a random amount of time between 0 ms and an exponentially growing ceiling. This approach, called full jitter, fully randomizes each wait rather than using a fixed delay. For DynamoDB, that ceiling starts from a 25 ms base delay and doubles with each subsequent retry, capped at 20 seconds. This mode performs retries on more detected failure conditions than the `legacy` mode. For DynamoDB, it performs up to nine total max attempts unless you override with [the maximum number of attempts](#numRetries).
 + `adaptive` – Builds on `standard` mode and dynamically limits the rate of AWS requests to maximize success rate. This can occur at the expense of request latency. We don't recommend adaptive retry mode when predictable latency is important.
 
 You can find an expanded definition of these retry modes in the [Retry behavior](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html) topic in the *AWS SDKs and Tools Reference Guide*.
+
+For information about upcoming changes to the default retry behavior across all AWS SDKs, see [Announcing updated retry behavior for AWS SDKs and Tools](https://aws.amazon.com/blogs/developer/announcing-updated-retry-behavior-for-aws-sdks-and-tools/) on the AWS Developer Tools Blog. For the exact details for the SDK for Java 2.x, see the [retry behavior update (discussion \#6984)](https://github.com/aws/aws-sdk-java-v2/discussions/6984) on the GitHub website.
 
 #### Retry strategies
 <a name="RetryPolicies"></a>
@@ -1030,8 +1029,8 @@ Each retry mode is implemented by a retry *strategy*. The retry strategy API (th
 For more information, see [Configure retry behavior in the AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/retry-strategy.html).
 
 When a client encounters a retryable error, such as a throttling exception or a temporary server error, then the SDK automatically retries the request. You can control how many times and how quickly these retries happen by customizing the retry strategy with the following:
-+ `maxAttempts` – The maximum number of attempts (the first attempt plus retries) before a request is considered to be failed. For DynamoDB clients, the default is 8 attempts for all strategies.
-+ `backoffStrategy` – A [`BackoffStrategy`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/api/BackoffStrategy.html) that determines the delay between retries. The standard strategy uses `BackoffStrategy.exponentialDelay` with a base delay of 100 ms and a maximum delay of 20 seconds.
++ `maxAttempts` – The maximum number of attempts (the first attempt plus retries) before a request is considered to be failed. For DynamoDB clients, the default is 9 attempts for all strategies.
++ `backoffStrategy` – A [`BackoffStrategy`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/api/BackoffStrategy.html) that determines the delay between retries. By default, the DynamoDB client uses `BackoffStrategy.exponentialDelay` with a base delay of 25 ms and a maximum delay of 20 seconds.
 + `retryOnException` – Adds exception types to the set that triggers a retry, in addition to the SDK's default set of retryable exceptions.
 
 The following code configures a DynamoDB client with a standard retry strategy customized to a maximum of six attempts (the first attempt plus five retries) and an exponential backoff that starts at 100 ms and is capped at one second.
@@ -1146,6 +1145,21 @@ DynamoDbAsyncClient client = DynamoDbAsyncClient.builder()
     .build();
 ```
 
+### Max connections and concurrency
+<a name="MaxConnectionsConcurrency"></a>
+
+Every HTTP engine except the basic `URLConnection` offers either `maxConnections()` (for synchronous) or `maxConcurrency()` (for asynchronous) to control the number of allowed concurrent requests. The default is 50. You can raise this when expecting high concurrency against the same client instance.
+
+```
+ApacheHttpClient.Builder httpClientBuilder =
+  ApacheHttpClient.builder()
+                  .maxConnections(100); // Set to 100 from this synchronous client
+
+NettyNioAsyncHttpClient.Builder nettyClientBuilder =
+  NettyNioAsyncHttpClient.builder()
+                         .maxConcurrency(200); // Async allows higher throughput
+```
+
 ## Error handling
 <a name="JavaErrorHandling"></a>
 
@@ -1246,7 +1260,7 @@ Here is an example of the log output:
 
 Some requests, such as [`Query`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html) and [`Scan`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html), limit the size of data returned on a single request and require you make repeated requests to pull subsequent pages.
 
-You can control the maximum number of items to read for each page with the `Limit` parameter. For example, you can use the `Limit` parameter to retrieve only the last 10 items. This limit specifies how many items to read from the table before any filtering is applied. If you want exactly 10 items after filtering, there's no way to specify that. You can control only the pre-filtered count and check client-side when you've actually retrieved 10 items. Regardless of the limit, responses always have a maximum size of 1 MB.
+You can control the maximum number of items to read for each page with the `Limit` parameter. For example, you can use the `Limit` parameter to retrieve only 10 items. This limit specifies how many items to read from the table before any filtering is applied. If you want exactly 10 items after filtering, there's no way to specify that. You can control only the pre-filtered count and check client-side when you've actually retrieved 10 items. Regardless of the limit, responses always have a maximum size of 1 MB.
 
 A `LastEvaluatedKey` might be included in the API response. This indicates that the response ended because it reached a count limit or a size limit. This key is the last key evaluated for that response. By interacting directly with the API, you can retrieve this `LastEvaluatedKey` and pass it to a follow-up call as `ExclusiveStartKey` to read the next chunk from that starting point. If no `LastEvaluatedKey` is returned, it means that there are no more items that match the `Query` or `Scan` API call.
 
@@ -1280,8 +1294,7 @@ The AWS SDK for Java 2.x can simplify this interaction with DynamoDB by providin
 By using the `Iterable` methods available in the DynamoDB client, such as [`QueryPaginator`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html#queryPaginator(software.amazon.awssdk.services.dynamodb.model.QueryRequest)) and [`ScanPaginator`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html#scanPaginator(software.amazon.awssdk.services.dynamodb.model.ScanRequest)), the SDK takes care of the pagination. The return type of these methods is a custom iterable that you can use to iterate through all the pages. The SDK internally handles service calls for you. Using the Java Stream API, you can handle the result of `QueryPaginator` as shown in the following example.
 
 ```
-QueryPublisher queryPublisher =
-    DYNAMODB_CLIENT.queryPaginator(QueryRequest.builder()
+QueryIterable results = DYNAMODB_CLIENT.queryPaginator(QueryRequest.builder()
         .expressionAttributeValues(Map.of(
             ":pk_val", AttributeValue.fromS("123"),
             ":sk_val", AttributeValue.fromN("1000")))
@@ -1290,8 +1303,8 @@ QueryPublisher queryPublisher =
         .tableName("YourTableName")
         .build());
 
-queryPublisher.items().subscribe(item ->
-    System.out.println(item.get("itemData"))).join();
+results.items().stream()
+    .forEach(item -> System.out.println(item.get("itemData")));
 ```
 
 ## Data class annotations
@@ -1299,6 +1312,7 @@ queryPublisher.items().subscribe(item ->
 
 The Java SDK provides several annotations that you can put on the attributes of your data class. These annotations influence how the SDK interacts with the attributes. By adding an annotation, you can have an attribute behave as an implicit atomic counter, maintain an auto-generated timestamp value, or track an item version number. For more information, see [Data class annotations](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-anno-index.html).
 
-## See also
+## Best practices
+<a name="JavaBestPractices"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+For more information about Java SDK best practices, see [Best practices for using the AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/best-practices.html) in the *AWS SDK for Java 2.x Developer Guide*.

@@ -36,7 +36,3 @@ The Data Catalog can also contain *resource links* to databases. A database reso
 The Data Catalog can also contain table resource links.
 
 For more information about resource links, see [Creating Resource Links](https://docs.aws.amazon.com/lake-formation/latest/dg/creating-resource-links.html) in the *AWS Lake Formation Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

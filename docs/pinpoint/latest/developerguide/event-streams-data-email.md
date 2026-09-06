@@ -382,7 +382,3 @@ Includes information about the content of the email message, and metadata about 
 | headers\_truncated | A Boolean value that indicates whether the email headers were truncated. |
 | headers | An object that contains several name-value pairs that correspond to the headers in the message. This object typically contains information about the following headers:+  `From` – The sender's email address. <br />+  `To` – The recipient's email address. <br />+  `Subject` – The subject line of the email.The subject header isn't included for campaign \_email.send events. <br />+  `MIME-Version` – Indicates that the message is in MIME format. If this header is present, the value is always `1.0`. <br />+  `Content-Type` – The MIME media type of the message content.  |
 | common\_headers | Contains information about several common headers for email messages. The information can include the date when the message was sent, and the to, from, and subject lines of the message. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

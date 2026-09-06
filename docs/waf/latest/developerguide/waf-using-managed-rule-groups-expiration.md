@@ -27,7 +27,3 @@ Sign up for Amazon SNS notifications for managed rule groups, and keep current w
 1. Set an alarm on the metrics that you're interested in, so that you're notified in time to switch to a newer version of the rule group.
 
 For information about using Amazon CloudWatch metrics and configuring alarms, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

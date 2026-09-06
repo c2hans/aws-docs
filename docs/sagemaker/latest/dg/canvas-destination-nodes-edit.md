@@ -28,7 +28,3 @@ Use the following procedure to edit a destination node in your data flow and ini
 1. When you're done making changes, choose **Update**.
 
 Saving changes to your destination node configuration doesn't automatically re-run a job or overwrite data that has already been processed and exported. Export your data again to run a job with the new configuration. If you decide to export your data again with a job, Canvas uses the updated destination node configuration to transform and output the data to the specified location, overwriting any existing data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

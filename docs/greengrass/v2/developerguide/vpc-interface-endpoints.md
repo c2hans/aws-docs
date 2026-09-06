@@ -171,7 +171,3 @@ The following table gives information about the corresponding custom private DNS
 | AWS IoT data | `com.amazonaws.{{region}}.iot.data` | Interface | `{{prefix}}-ats.iot.{{region}}.amazonaws.com` | The private DNS record should match your account's AWS IoT data endpoint: `aws iot describe–endpoint ––endpoint–type iot:Data-ATS`. |
 | AWS IoT Credentials | `com.amazonaws.{{region}}.iot.credentials` | Interface | `{{prefix}}.credentials.iot.{{region}}.amazonaws.com` | The private DNS record should match your account AWS IoT Credentials endpoint: `aws iot describe–endpoint ––endpoint–type iot:CredentialProvider`. |
 | Amazon S3 | `com.amazonaws.{{region}}.s3` | Interface |  | The DNS record is automatically created. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

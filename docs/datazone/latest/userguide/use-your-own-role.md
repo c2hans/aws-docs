@@ -66,7 +66,3 @@ Also make sure that the roles (IAM role for the AWS Glue and the database role f
 
 **Step 3: Subscribe to a new table and fulfill subscription to the new target**
 + Once you have created the subscription target, you can subscribe to a new table and Amazon DataZone will fulfill it to the above target.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

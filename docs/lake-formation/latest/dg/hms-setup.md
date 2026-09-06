@@ -139,7 +139,3 @@ The AWS SAM application creates the connection for the Hive metastore behind Ama
    Replace `fed_glue_db` with the local database name that you created earlier.
 
     `Select * from fed_glue_db.customers limit 10;`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

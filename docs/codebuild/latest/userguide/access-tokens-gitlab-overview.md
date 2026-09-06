@@ -112,7 +112,3 @@ A connection created through the AWS CLI or AWS CloudFormation is in `PENDING` s
 
 **To create a connection**
 + Follow the instructions in the *Developer Tools console User Guide* for [Create a connection to GitLab (CLI)](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-create-gitlab.html#connections-create-gitlab-cli).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

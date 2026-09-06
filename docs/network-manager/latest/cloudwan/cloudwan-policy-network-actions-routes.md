@@ -200,7 +200,3 @@ You must first have created your segments and network functions group.
 1. Choose **Create service insertion**.
 
 1. (Optional) Add **Attachment policies**. For more information, see [Create an attachment policy in an AWS Cloud WAN core network policy version](cloudwan-policy-attachments.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

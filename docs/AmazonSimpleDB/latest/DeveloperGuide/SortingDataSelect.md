@@ -23,7 +23,3 @@ The following table shows sort queries, how they are interpreted, and the result
 | select \* from mydomain order by Year asc | Invalid because Year is not constrained by a predicate in the where clause. | InvalidSortExpression error. See [API Error Codes](APIError.md). |
 | select \* from mydomain where Year < '1980' order by Year limit 2 | Retrieves two items that were released before 1980 and lists them in ascending order. | 0802131786, 0385333498 |
 | select itemName() from mydomain where itemName() like 'B000%' order by itemName() | Retrieves all itemNames() that start with B000 and lists them in ascending order. | B00005JPLW, B000SF3NGK, B000T9886K |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

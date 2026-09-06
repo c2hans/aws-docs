@@ -171,7 +171,3 @@ When your organization already operates a landing zone through the Landing Zone 
 | Identity and access management | Existing shared services account, where applicable |
 
 Create the Agentic and Gateway organizational units under your existing OU hierarchy. Enroll workload accounts (dev, staging, prod) in the Agentic OU and generative AI gateway accounts in the Gateway OU. This enables targeted SCP application and cost allocation tagging without affecting existing workload accounts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

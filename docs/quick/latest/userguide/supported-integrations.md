@@ -25,7 +25,6 @@ Amazon Quick supports integrations with various third-party applications and ser
 | Cisco Webex Video Messaging | ✓ | — |
 | Dropbox | ✓ | — |
 | Dun & Bradstreet | ✓ | — |
-| Figma | ✓ | — |
 | GitHub | ✓ | — |
 | Gmail | ✓ | — |
 | Google Analytics | ✓ | — |
@@ -81,7 +80,7 @@ Not all applications support all integration types. The available options depend
 <a name="integration-capability-definitions"></a>
 
 **Actions**
-Call APIs and perform actions in external applications directly from Amazon Quick. You can share action connectors with other users and use them in automated workflows.
+Call APIs and perform actions in external applications directly from Amazon Quick. You can share connectors with other users and use them in automated workflows.
 
 **Knowledge base**
 Create searchable repositories of information from external sources. Knowledge bases are children of data access integrations. Add them to spaces or use them directly in chat agents.
@@ -109,7 +108,3 @@ Form-based or SAML authentication with configurable field selectors.
 
 **JSON schema**
 Schema-based authentication for OpenAPI specifications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

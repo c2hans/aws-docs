@@ -23,7 +23,3 @@ Reliability includes the ability of a system to recover from infrastructure or s
 
 **Product**
 + [Trusted advisor](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/): An online tool that provides you real-time guidance to help you provision your resources following AWS best practices.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

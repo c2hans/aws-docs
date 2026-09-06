@@ -22,7 +22,3 @@ The debug panel automatically updates with new errors or warnings as they occur,
 1. **Errors caused by renaming resources:** When JavaScript expressions reference resource names in App Studio, changing those names will cause the expressions to be incorrect and produce errors. You can view these errors in the debug panel.
 
 1. **Data type issues:** Data type mismatches will produce errors in your app. For example, if an automation is configured to accept a parameter of type `String`, but a component is configured to send a value of type `Integer`, an error will be occur. Check that data types match between appropriate resources, including components, automations, and data entities and actions. You may need to change the type of the value in a JavaScript expression.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

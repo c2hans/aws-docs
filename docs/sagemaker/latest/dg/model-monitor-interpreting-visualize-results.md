@@ -50,7 +50,3 @@ You can create a chart that displays the baseline and captured metrics for a tim
 
 1. The chart that shows the baseline and current metric statistic you chose in the previous step shows up in the **Endpoint** tab.
 ![Example chart showing the baseline and current average metric chosen in the previous step.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/model_monitor/mm-studio-f1-chart.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

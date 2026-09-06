@@ -282,7 +282,3 @@ AWS Data Pipeline defines the following condition keys that can be used in the `
 |   [datapipeline:PipelineCreator](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-example-tag-policies.html#ex3)  | Filters access by the IAM user that created the pipeline | ArrayOfString |
 |   [datapipeline:Tag/${TagKey}](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-iam-resourcebased-access.html#dp-control-access-tags)  | Filters access by customer-specified key/value pair that can be attached to a resource | String |
 |   [datapipeline:workerGroup](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-iam-resourcebased-access.html#dp-control-access-workergroup)  | Filters access by the name of a worker group for which a Task Runner retrieves work | ArrayOfString |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

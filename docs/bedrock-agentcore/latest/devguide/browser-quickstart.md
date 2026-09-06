@@ -159,7 +159,3 @@ Now that you have AgentCore Browser working, explore these advanced features:
 +  [Session Recording and Replay](browser-session-recording.md) - Record and replay sessions for debugging
 +  [Using AgentCore Browser with Nova Act](browser-quickstart-nova-act.md) and [Using AgentCore Browser with Playwright](browser-quickstart-playwright.md) - Use other frameworks like Nova Act or Playwright
 +  [Fundamentals](browser-resource-session-management.md) - Learn about API operations and custom browsers
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

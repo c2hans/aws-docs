@@ -39,13 +39,9 @@ Your search query must return at least 300 contacts with issues detected by conv
    Conversational analytics applies machine learning to automatically group contacts with similar issues. When the report is generated, a banner displays a link to the theme report. An example banner is shown in the following image.
 ![The contact search page, the theme detection banner.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-theme-detection-banner.png)
 
-1. Click or tap the link for the theme report.
+1. Choose the link for the theme report.
 
    The theme report is displayed. It includes theme labels and a list of contacts, as shown in the following image.
 ![A theme report with several theme labels.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-theme-detection-drilldown.png)
 
-1. Click or tap the theme labels to view associated contacts, listen to specific recordings, and read transcripts for deeper analysis.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+1. Choose the theme labels to view associated contacts, listen to specific recordings, and read transcripts for deeper analysis.

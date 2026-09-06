@@ -147,7 +147,3 @@ The ID of the association.
 `ExternalId`  <a name="ExternalId-fn::getatt"></a>
 The unique identifier for this EKS Pod Identity association for a target IAM role. You put this value in the trust policy of the target role, in a `Condition` to match the `sts.ExternalId`. This ensures that the target role can only be assumed by this association. This prevents the *confused deputy problem*. For more information about the confused deputy problem, see [The confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) in the *IAM User Guide*.
 If you want to use the same target role with multiple associations or other roles, use independent statements in the trust policy to allow `sts:AssumeRole` access from each role.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

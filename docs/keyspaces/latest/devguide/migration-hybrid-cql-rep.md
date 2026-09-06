@@ -20,7 +20,3 @@ The following diagram shows the typical architecture of a CQLReplicator job usin
 ![Using CQLReplicator to migrate data from Apache Cassandra to Amazon Keyspaces.](http://docs.aws.amazon.com/keyspaces/latest/devguide/images/migration/hybrid-migration-CQLRep.png)
 
 For more information about the migration process using CQLReplicator, see the following post on the AWS Database blog [ Migrate Cassandra workloads to Amazon Keyspaces using CQLReplicator](https://aws.amazon.com/blogs/database/migrate-cassandra-workloads-to-amazon-keyspaces-using-cqlreplicator/) and the AWS prescriptive guidance [ Migrate Apache Cassandra workloads to Amazon Keyspaces by using AWS Glue](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-apache-cassandra-workloads-to-amazon-keyspaces-using-aws-glue.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ The first execution is from the orchestrator step function in the target account
 <a name="cloudwatch-log-group"></a>
 
 In the admin account, navigate to the [CloudWatch Logs console](https://console.aws.amazon.com/cloudwatch/home#logsV2:log-groups) and locate a Log Group named "**SO0111-ASR**". This log group is the destination for remediation runbook output. For Orchestrator Step Functions logs, refer to the "**SO0111-ASR-Orchestrator**" log group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

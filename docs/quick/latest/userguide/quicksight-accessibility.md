@@ -23,7 +23,3 @@ You can use the `TAB`, `Shift+TAB`, and `Enter` keys to navigate and select diff
 You can also use these keyboard shortcuts to navigate and enter the on-visual menu on the upper-right corner of a visual. To do this, select the visual that you want and use the `TAB` key to get to the field that you want to select. If you miss the field that you want, use the `Shift+TAB` keys to go back a field.
 
 ![Dashboard showing revenue trends, customer segments, regional data, and service line breakdown.](http://docs.aws.amazon.com/quick/latest/userguide/images/keyboard-shortcuts-3.gif)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ To protect your [applications, models](gettingstarted-concepts.md), and hardware
 + **Signed kernel** – Kernel modules are signed with an asymmetric encryption key. The operating system kernel decrypts the signature with the public key and verifies that it matches the module's signature before loading the module into memory.
 + **dm-verity** – Similar to how kernel modules are validated, the appliance uses the Linux Device Mapper's `dm-verity` feature to verify the integrity of the appliance software image before mounting it. If the appliance software is modified, it won't run.
 + **Rollback prevention** – When you update the appliance software, the appliance blows an electronic fuse on the SoC (system on a chip). Each software version expects an increasing number of fuses to be blown, and can't run if more are blown.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

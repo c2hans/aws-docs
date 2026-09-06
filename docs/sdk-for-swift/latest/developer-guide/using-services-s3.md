@@ -17,7 +17,3 @@ The following topics present guided code examples for select SDK for Swift APIs 
 + [Multipart uploads](using-multipart-uploads.md)
 + [Binary streaming](using-binary-streaming.md)
 + [Data integrity protection with checksums](s3-checksums.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Swift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-swift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

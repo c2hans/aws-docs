@@ -24,7 +24,7 @@ The propagation of stack-level tags to resources, including tags with the `aws:`
 Some resources require explicit tag propagation settings. For example, the `AWS::AutoScaling::AutoScalingGroup` resource must have its `PropagateAtLaunch` property set to `true` to propagate tags to its EC2 instances. However, stack-level tags are automatically applied to EC2 instances regardless of the `PropagateAtLaunch` setting.
 
 ## Syntax
-<a name="w2aac14d550c13c17"></a>
+<a name="w2aac14d552c13c17"></a>
 
 ### JSON
 <a name="aws-properties-resource-tags-syntax.json"></a>
@@ -45,7 +45,7 @@ Value: {{String}}
 ```
 
 ## Properties
-<a name="w2aac14d550c13c19"></a>
+<a name="w2aac14d552c13c19"></a>
 
 `Key`  <a name="cfn-resource-tags-key"></a>
 The key name of the tag. You can specify a value that's 1 to 128 Unicode characters in length and can't be prefixed with `aws:`. You can use any of the following characters: the set of Unicode letters, digits, whitespace, `_`, `.`, `:`, `/`, `=`, `+`, `@`, `-`, and `"`.
@@ -90,10 +90,6 @@ This example shows a `Tags` property. You specify this property within the `Prop
 ```
 
 ## See also
-<a name="w2aac14d550c13c23"></a>
+<a name="w2aac14d552c13c23"></a>
 + [Configure stack options](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stack.html#configure-stack-options) in the *AWS CloudFormation User Guide*
 + [Viewing CloudFormation stack data and resources on the AWS Management Console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-view-stack-data-resources.html) in the *AWS CloudFormation User Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

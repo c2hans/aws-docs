@@ -71,7 +71,3 @@ Following are examples of calls that receive C-level attestation:
 + While Connect Customer provides STIR/SHAKEN headers to carriers, attestation might not be preserved end-to-end due to legacy equipment in some carrier networks that cannot transmit these headers.
 +  Carriers might use attestation levels as part of their process of determining whether they deliver calls in their network.
 +  To maintain the highest levels of attestation for your calls, Connect Customer might ask you for additional information. In the notification email we send to you, we will state when you need to reply with the requested information. Any delays in providing us the information might impact the attestation level of your calls and as a result, might impact the success of your call delivery.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

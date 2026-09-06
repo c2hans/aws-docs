@@ -58,7 +58,3 @@ You can configure event destinations to send the following types of events:
 + **MEDIA\_FILE\_TYPE\_UNSUPPORTED (File type unsupported)** – File type unsupported events occur when a media file is not in a supported format. For a list of supported file types, see [MMS file types, size and character limits](mms-limitations-character.md)
 + **MEDIA\_FILE\_SIZE\_EXCEEDED (File size)** – File size exceeded event occur when the media file is larger than 600 KB in size.
 + **MEDIA\_FILE\_INACCESSIBLE (File inaccessible)** – File inaccessible events occur when AWS End User Messaging SMS doesn't have permissions to access the file.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

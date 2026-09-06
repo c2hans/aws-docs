@@ -13,7 +13,3 @@ FlexMatch backfill is not currently available for games using Amazon GameLift Se
 There are two types of backfill mechanisms:
 + Enable automatic backfill to fill game sessions that start with fewer than the maximum allowed players. Automatic backfill doesn't backfill players who join the game and then drop out.
 + Set up a manual backfill mechanism to replace players who drop out of a game session in progress. This mechanism must be able to detect an open slot and generate a backfill request to fill it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

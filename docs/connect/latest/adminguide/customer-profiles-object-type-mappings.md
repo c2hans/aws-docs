@@ -182,7 +182,3 @@ Ingesting account-based profiles should only happen after verifying successful i
 Auto-generate mapping doesn't work for ingesting account-based profiles and it's sub-profiles.
 Email and phone list of contact preferences can either have `KeyName` and `KeyValue` or `ProfileId` to reference child profiles. `KeyName` should be the unique identifier.
 Updates to sub-profiles doesn't update the engagement preferences in account-based profiles. Updates have to be through ingestion path.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

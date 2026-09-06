@@ -29,7 +29,3 @@ Completing this tutorial might result in charges to your AWS account. These incl
 + [Step 5: Use the CodeDeploy console to deploy your Amazon ECS service](tutorial-ecs-with-hooks-deployment.md)
 + [Step 6: View your Lambda hook function output in CloudWatch Logs](tutorial-ecs-with-hooks-view-cw-logs.md)
 + [Step 7: Clean up](tutoria-ecs-with-hooks-clean-up.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

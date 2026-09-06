@@ -18,7 +18,3 @@ The following topics cover various limitations of AL2, and if they have been res
  In order to ensure backwards compatibility for existing users, the version of `rpm` in AL2 receives only security backports.
 
  The version of `rpm` in AL2023 includes support for verifying package signatures made with GPG subkeys.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

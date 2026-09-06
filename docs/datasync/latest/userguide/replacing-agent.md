@@ -267,7 +267,3 @@ The following instructions describe how to update locations with a new agent by 
 **Note**
 **Replacing agents for scheduled tasks** – If you replace an agent for a [scheduled task](task-scheduling.md), you must start that task manually if the new agent is using a different type of [service endpoint](choose-service-endpoint.md) than your old agent. If you don't run the task manually before its next scheduled run, the task fails.
 For example, if your old agent used a public service endpoint, but the new agent uses a VPC endpoint, start that task manually by using the console or `StartTaskExecution` operation. After that, your task will resume running on its schedule.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

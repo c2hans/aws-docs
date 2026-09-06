@@ -32,7 +32,3 @@ The high-level process flow for the ECS architecture is as follows:
 1.  [Amazon Cognito](https://aws.amazon.com/cognito/) provides authentication and authorization for the administrative interface. The Playground uses the same Cognito user pool to authorize the extended transformation metrics returned by ECS.
 
 1. (Optional) Amazon Rekognition integration for smart cropping and content moderation features. When a request misses the CloudFront edge cache and reaches ECS, the task first checks the DynamoDB result cache for stored detection results for that source image, and calls Amazon Rekognition only when no cached result is found.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

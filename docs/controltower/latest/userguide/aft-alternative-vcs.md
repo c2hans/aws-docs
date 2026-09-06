@@ -52,7 +52,3 @@ By default, AFT sources from the `main` branch of each `git` repository. You can
 **Step 3: Complete the AWS CodeCommit connection for third-party VCS providers**
 
 When your deployment runs, AFT either creates the required AWS CodeCommit repositories, or it creates an AWS CodeCommit connection for your chosen third-party VCS provider. In case of the latter, you must manually sign in to the AFT management account’s console to complete the pending CodeCommit connection. See [the AWS CodeCommit documentation](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-update.html) for further instructions on completing the CodeCommit connection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

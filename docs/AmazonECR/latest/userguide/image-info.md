@@ -26,7 +26,3 @@ After you push an image to your repository, you can view information about it. T
 1. On the **Private repositories** page, choose the repository to view.
 
 1. On the **Repositories : {{repository\_name}}** page, choose the image to view the details of.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

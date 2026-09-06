@@ -126,7 +126,3 @@ Most state changes should run through CI/CD pipelines. Generate alerts if state 
 <a name="monitor-access-attempts.52ac9910-4fb6-5348-9665-97963faf1768"></a>
 
 Authentication failures on state buckets might indicate reconnaissance activity. Notice if multiple accounts are trying to access state, or unusual IP addresses appear, which signals compromised credentials.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

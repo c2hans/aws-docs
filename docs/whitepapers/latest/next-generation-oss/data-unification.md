@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/d
  In this figure, the concept of Telco Data Lake is introduced. AWS enables you to unify your configuration, performance, and inventory data. This improves your overall operational efficiency, reduces your costs, and enables you to innovate faster. For example, a BSS Analytics solution may require information on the network availability to enable a service request requiring additional QoS at additional costs. That same information may also be used by the Service Assurance solution to build a prediction model supporting network optimization. AWS services allow you to consolidate that information, scale it, and govern its access.
 
  Moreover, with the advent of 5G networks, the classical division between OSS and BSS is blurred. The mechanisms to monetize and configure the network now need to happen in seconds, dynamically, and automatically. To realize the benefits of 5G, the OSS and BSS architectures should align with data unification concepts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

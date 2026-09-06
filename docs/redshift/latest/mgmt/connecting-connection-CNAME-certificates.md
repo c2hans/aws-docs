@@ -37,7 +37,3 @@ There are a couple restraints regarding creating CNAME records for a custom doma
 After you register your domain and create the CNAME record, you select a new or existing certificate. You perform this step using AWS Certificate Manager:
 
 We recommend that you create a [DNS validated certificate](https://docs.aws.amazon.com/acm/latest/userguide/dns-renewal-validation.html) that meets eligibility for managed renewal, which is available with AWS Certificate Manager. Managed renewal means that ACM either renews your certificates automatically or it sends you email notices when expiration is approaching. For more information, see [Managed renewal for ACM certificates](https://docs.aws.amazon.com/acm/latest/userguide/managed-renewal.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

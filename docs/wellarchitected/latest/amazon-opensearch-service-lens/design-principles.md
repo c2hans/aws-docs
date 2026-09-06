@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 +  **Data backup and recovery:** Establish a robust backup and recovery strategy, including regular snapshots of the Amazon OpenSearch Service indices. Test the restoration process to ensure data integrity and minimize downtime in case of data loss.
 +  **Disaster recovery planning:** Develop and test a comprehensive disaster recovery plan. Implement failover mechanisms and practice disaster recovery drills to validate the effectiveness of the plan in real-world scenarios.
 +  **Upgradability and compatibility:** Plan for regular upgrades of Amazon OpenSearch Service versions to benefit from new features, improvements, and security patches. Ensure compatibility with your applications and dependencies during the upgrade process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

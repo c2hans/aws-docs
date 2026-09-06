@@ -155,7 +155,3 @@ For more information, see [Accessing GitHub resources with personal connections]
 A *role* defines a user's access to the resources for a project or a space and which actions that user can take. You choose the role for a user when you invite them to a project. There are space-level roles and project-level roles in CodeCatalyst. A user with an administrative role at the correct level can change assigned roles. For example, a user with the **Project administrator** role for a project has full control over that project and can change the roles of users in that project. For information about which roles are available and which permissions each role has, see [Granting access with user roles](ipa-roles.md).
 
 For more information about roles, see [Granting access with user roles](ipa-roles.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

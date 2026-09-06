@@ -21,7 +21,3 @@ The following table shows the availability of each stream class family across al
 | Europe (London) | eu-west-2 | ✓ Yes | ✓ Yes | ✓ Yes |
 | Europe (Stockholm) | eu-north-1 | ✓ Yes | ✓ Yes | ✓ Yes |
 | South America (São Paulo) | sa-east-1 | ✓ Yes | ✓ Yes | ✓ Yes |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

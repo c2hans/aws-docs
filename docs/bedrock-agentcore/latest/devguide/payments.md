@@ -50,7 +50,3 @@ You can interact with AWS AgentCore payments by directly invoking the payments s
 +  ** [AgentCore Gateway](gateway.md) ** - Connect to paid MCP servers ensuring your agents have secure access to them via AgentCore Gateway. You can also leverage pre-existing integration of Coinbase x402 Bazaar through AgentCore Gateway to discover thousands of existing paid MCP tools.
 +  ** [AgentCore Browser](browser-tool.md) ** - AgentCore Browser, together with AgentCore payments, helps you autonomously and securely access paywalled websites that support x402.
 +  ** [AgentCore Observability](observability.md) ** - Helps you trace, debug, and monitor AI agents' performance in production environments. AgentCore payments provides metrics and traces for you to observe for your AI agent.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/bui
 # Open Job Description (OpenJD) templates for Deadline Cloud
 <a name="build-job-bundle"></a>
 
-A *job bundle* is one of the tools you use to define jobs for AWS Deadline Cloud. They group an [Open Job Description (OpenJD)](https://github.com/OpenJobDescription/openjd-specifications) template with additional information such as files and directories that your jobs use with job attachments. You use the Deadline Cloud command-line interface (CLI) to use a job bundle to submit jobs for a queue to run.
+A *job bundle* is one of the tools you use to define jobs for AWS Deadline Cloud. They group an Open Job Description (OpenJD) template with additional information such as files and directories that your jobs use with job attachments. For more information, see the [Open Job Description specification](https://github.com/OpenJobDescription/openjd-specifications) on the GitHub website. You use the Deadline Cloud command-line interface (CLI) to use a job bundle to submit jobs for a queue to run.
 
 A job bundle is a directory structure that contains an OpenJD job template, other files that define the job, and job-specific files required as input for your job. You can specify the files that define your job as either YAML or JSON files.
 
@@ -18,7 +18,7 @@ The only required file is either `template.yaml` or `template.json`. You can als
 /{{other job-specific files and directories}}
 ```
 
-Use a job bundle for custom job submissions with the Deadline Cloud CLI and a job attachment, or you can use an graphical submission interface. For example, the following is the Blender sample from GitHub. To run the sample using the following command in [the Blender sample directory](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles):
+Use a job bundle for custom job submissions with the Deadline Cloud CLI and a job attachment, or you can use an graphical submission interface. For example, the following is the Blender sample from the [deadline-cloud-samples repository](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles) on the GitHub website. To run the sample, use the following command in the Blender sample directory:
 
 ```
 deadline bundle gui-submit blender_render
@@ -68,7 +68,3 @@ When your job is running on a Deadline Cloud worker, it has access to environmen
 + [Task chunking for job templates](build-job-bundle-chunking.md)
 + [Parameter values elements for job bundles](build-job-bundle-parameters.md)
 + [Asset references elements for job bundles](build-job-bundle-assets.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

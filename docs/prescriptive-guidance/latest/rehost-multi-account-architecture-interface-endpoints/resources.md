@@ -10,7 +10,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-mult
 + [Integrating AWS Transit Gateway with AWS PrivateLink and Amazon Route 53 Resolver](https://aws.amazon.com/blogs/networking-and-content-delivery/integrating-aws-transit-gateway-with-aws-privatelink-and-amazon-route-53-resolver/) (AWS blog post)
 + [Centralizing VPC endpoints with AWS Transit Gateway](https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/centralizing-vpc-endpoints-with-transit-gateway-ra.pdf) (AWS Reference Architecture)
 + [Connect to MGN data and control planes over a private network](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/connect-to-application-migration-service-data-and-control-planes-over-a-private-network.html) (AWS Prescriptive Guidance)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

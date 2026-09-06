@@ -9,6 +9,7 @@ After you create a target group for your Gateway Load Balancer, you can edit its
 
 **Topics**
 + [Target failover](#target-failover)
++ [TCP reset on target failure and deregistration](#send-tcp-reset-target-failover)
 + [Deregistration delay](#deregistration-delay)
 + [Flow stickiness](#flow-stickiness)
 
@@ -47,6 +48,45 @@ Use the [modify-target-group-attributes](https://docs.aws.amazon.com/cli/latest/
 
 **Note**
 Both attributes (`target_failover.on_deregistration` and `target_failover.on_unhealthy`) must have the same value.
+
+## TCP reset on target failure and deregistration
+<a name="send-tcp-reset-target-failover"></a>
+
+When enabled, the Gateway Load Balancer sends a TCP reset (RST) to the sender of traffic when a target becomes unhealthy or is deregistered, after the connection drain time elapses. With this feature, traffic senders can recover quickly by establishing new connections to healthy targets.
+
+`send_tcp_reset.on_unhealthy.enabled`
+Indicates whether the Gateway Load Balancer sends a TCP reset when a target becomes unhealthy. The possible values are `true` and `false`. The default is `false`.
+
+`send_tcp_reset.on_deregistration.enabled`
+Indicates whether the Gateway Load Balancer sends a TCP reset when a target is deregistered and the connection drain time has elapsed. The possible values are `true` and `false`. The default is `false`.
+
+**To enable TCP reset on target failure and deregistration using the AWS CLI**
+Use the [modify-target-group-attributes](https://docs.aws.amazon.com/cli/latest/reference/elbv2/modify-target-group-attributes.html) command, with both attributes set to `true`.
+
+```
+aws elbv2 modify-target-group-attributes --target-group-arn {{target-group-arn}} --attributes Key=send_tcp_reset.on_unhealthy.enabled,Value=true Key=send_tcp_reset.on_deregistration.enabled,Value=true
+```
+
+**To enable TCP reset on target failure and deregistration using the console**
+
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
+
+1. In the navigation pane, under **Load Balancing**, choose **Target Groups**.
+
+1. Select your target group, choose the **Attributes** tab, and then choose **Edit**.
+
+1. Choose the **No rebalance and send TCP reset (recommended)** tile.
+
+1. Choose **Send TCP reset on unhealthy** and **Send TCP reset on deregister**.
+
+1. Choose **Save changes**.
+
+This feature has the following requirements:
++ This feature requires 5-tuple flow stickiness, which the target group uses by default when `stickiness.enabled` is set to `false`.
++ You can't enable `send_tcp_reset.on_unhealthy.enabled` or `send_tcp_reset.on_deregistration.enabled` when `stickiness.enabled` is set to `true`.
++ You can't enable this feature when the target failover attributes (`target_failover.on_unhealthy` or `target_failover.on_deregistration`) are set to `rebalance`.
++ This feature applies to TCP traffic only. UDP and other protocols are unaffected.
++ This feature works with new and existing Gateway Load Balancers.
 
 ## Deregistration delay
 <a name="deregistration-delay"></a>
@@ -108,7 +148,3 @@ By default, the Gateway Load Balancer maintains stickiness of flows to a specifi
 
 **To update the flow stickiness attribute using the AWS CLI**
 Use the [modify-target-group-attributes](https://docs.aws.amazon.com/cli/latest/reference/elbv2/modify-target-group-attributes.html) command with the `stickiness.enabled` and `stickiness.type` target group attributes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

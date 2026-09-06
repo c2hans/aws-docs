@@ -80,7 +80,3 @@ The following are issues you might encounter when you use Oracle Label Security.
 | Issue | Troubleshooting suggestions |
 | --- | --- |
 | When you try to create a policy, you see an error message similar to the following: `insufficient authorization for the SYSDBA package`.  | A known issue with Oracle's Label Security feature prevents users with usernames of 16 or 24 characters from running Label Security commands. You can create a new user with a different number of characters, grant LBAC\_DBA to the new user, log in as the new user, and run the OLS commands as the new user. For additional information, contact Oracle Support.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

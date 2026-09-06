@@ -126,6 +126,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DisassociateVirtualMachinesFromExadbVmCluster  **
+  - **IAM action:**  [odb:DisassociateVirtualMachinesFromExadbVmCluster](#list_odb-action-DisassociateVirtualMachinesFromExadbVmCluster)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   FailoverAutonomousDatabase  **
   - **IAM action:**  [odb:FailoverAutonomousDatabase](#list_odb-action-FailoverAutonomousDatabase)
   - **Condition key:**
@@ -308,6 +314,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListExascaleDbStorageVaults  **
   - **IAM action:**  [odb:ListExascaleDbStorageVaults](#list_odb-action-ListExascaleDbStorageVaults)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListFlexComponents  **
+  - **IAM action:**  [odb:ListFlexComponents](#list_odb-action-ListFlexComponents)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -1059,7 +1071,3 @@ AWS Service - Oracle Database@AWS defines the following condition keys that can 
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag)  | Filters access by a tag key and value pair that is allowed in the request | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag)  | Filters access by a tag key and value pair of a resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys)  | Filters access by a list of tag keys that are allowed in the request | ArrayOfString |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

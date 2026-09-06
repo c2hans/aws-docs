@@ -48,7 +48,3 @@ aws s3control create-access-point --account-id {{123456789012}} --name {{example
 
 **Example**
 For examples of how to create an access point for an S3 Outposts bucket with the AWS SDK for Java, see [CreateOutpostsAccessPoint.java](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/javav2/example_code/s3/src/main/java/com/example/s3/outposts/CreateOutpostsAccessPoint.java) in the *AWS SDK for Java 2.x Code Examples*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

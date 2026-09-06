@@ -93,7 +93,3 @@ Conflicts cause errors instead of waits. Design your workload to retry failed tr
 
 Minimize key-column churn on heavily-referenced rows
 If multiple referencing rows reference the same row and its key columns change often, consider restructuring the schema. Move frequently-changing values to non-key columns so that the referenced column stays stable. Changing non-key columns on the referenced table doesn't conflict with referencing inserts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

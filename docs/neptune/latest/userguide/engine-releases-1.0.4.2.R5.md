@@ -24,7 +24,3 @@ Before upgrading a DB cluster to version 1.0.4.2.R5, make sure that your project
 Your cluster will be upgraded to this patch release automatically during your next maintenance window if you are running engine version `1.0.4.2`.
 
 You can manually upgrade any previous Neptune engine release to this release.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

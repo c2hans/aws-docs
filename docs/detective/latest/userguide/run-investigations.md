@@ -82,7 +82,3 @@ You can also run an investigation from the following pages in Detective:
 + IAM user or IAM role on a finding page.
 
 After Detective runs the investigation for a resource, an investigation report is generated. To access the report, go to **Investigations** from the navigation pane.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

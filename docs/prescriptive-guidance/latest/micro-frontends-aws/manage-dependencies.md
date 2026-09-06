@@ -47,7 +47,3 @@ When absolutely necessary, introduce well-defined interfaces for global state, a
 If you need to share several pieces of information across micro-frontends, we recommend revisiting the micro-frontend boundaries. The need to share might be caused by business evolution or a subpar initial design.
 
 It's also possible to use server-side sessions, where each micro-frontend fetches the required data by using a session identifier. To reduce coupling, it's important to eliminate shared state and to keep micro-frontend specific session data separate.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -9,7 +9,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 +  **One-to-one connectivity** — In this setup, a VPN connection and/or Direct Connect private VIF is created for every VPC. This is accomplished by using the virtual private gateway (VGW). This option is great for small numbers of VPCs, but as a customer scales their VPCs, managing hybrid connectivity per VPC can become difficult.
 +  **Edge consolidation** — In this setup, customers consolidate hybrid IT connectivity for multiple VPCs at a single endpoint. All the VPCs share these hybrid connections. This is accomplished by using AWS Transit Gateway and the Direct Connect gateway.
 +  **Full mesh hybrid consolidation** — In this setup, customers consolidate connectivity for multiple VPCs at a single endpoint using CloudWAN, built on AWS Transit Gateway. This is a full policy-based approach to networking in one or more AWS accounts, represented in code. At this time, using Direct Connect for edge connectivity requires peering Transit Gateway to CloudWAN.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

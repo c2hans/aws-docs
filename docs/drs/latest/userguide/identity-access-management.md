@@ -47,7 +47,3 @@ There are various elements that make up a statement:
 + **Action**: The action is the specific AWS Elastic Disaster Recovery API action for which you are granting or denying permission.
 + **Resource**: The resource that's affected by the action. For AWS Elastic Disaster Recovery, you must specify "\*" as the resource.
 + **Condition**: Conditions are optional. They can be used to control when your policy is in effect.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

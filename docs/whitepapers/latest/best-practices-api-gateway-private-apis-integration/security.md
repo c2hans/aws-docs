@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 +  Private REST APIs support TLS 1.2 only. Earlier TLS versions are not supported. If you make a request using HTTP/2 protocol, the request is enforced to use HTTP/1.1 protocol.
 +  Private custom domain names use the TLS-1-2 security policy. You cannot configure a different security policy for private custom domain names.
 +  Public custom domain names support enhanced TLS 1.3 security policies (announced October 2023). These policies provide improved performance and security for public-facing APIs. TLS 1.3 enhanced policies do not apply to private custom domain names. For more information, see [Security policies for custom domain names in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-custom-domain-tls-version.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -155,7 +155,3 @@ actions:
 The following related resources can help you as you work with this action.
 + [AWS AppConfig](https://docs.aws.amazon.com/systems-manager/latest/userguide/appconfig.html) – For information about AWS AppConfig deployments, see the *AWS Systems Manager User Guide*.
 + [Tutorial: Create a pipeline that uses AWS AppConfig as a deployment provider](tutorials-AppConfig.md) – This tutorial gets you started setting up simple deployment configuration files and AppConfig resources, and shows you how to use the console to create a pipeline with an AWS AppConfig deployment action.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

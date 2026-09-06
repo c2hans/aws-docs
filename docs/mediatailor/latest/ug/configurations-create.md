@@ -197,7 +197,3 @@ This setting corresponds to the `PrefetchMaximumAdsPersonalizationTimeMillisecon
 
 **Setting timeouts together**
 For each workflow, you must set the individual timeout and the total time budget together. The individual timeout can't exceed the total budget. Live and VOD workflows share a single **Individual ADS request timeout**. Set that timeout together with both the live and VOD total time budgets. Similarly, set **Prefetch ADS request timeout** and **Prefetch maximum ADS personalization time** together — you can't set one without the other.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -169,7 +169,3 @@ In the following diagram, Db2 on premises is running on `db2-server1` as the pri
 + [Set up Db2 STORAGE ACCESS ALIAS and DB2REMOTE](https://www.ibm.com/docs/en/db2/11.5?topic=commands-catalog-storage-access)
 + [Db2 high availability disaster recovery](https://www.ibm.com/docs/en/db2/11.5?topic=server-high-availability-disaster-recovery-hadr)
 + [hadr\_syncmode - HADR synchronization mode for log writes in peer state configuration parameter](https://www.ibm.com/docs/en/db2/11.5?topic=dcp-hadr-syncmode-hadr-synchronization-mode-log-writes-in-peer-state)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

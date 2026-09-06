@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-snapch
 1.  Enter your App Name and Add following URL as Snap Redirect URI `https://<aws-region>.console.aws.amazon.com/gluestudio/oauth`. For example, if using the us-west-1 region, the URL would be `https://us-west-1.console.aws.amazon.com/gluestudio/oauth) and choose Create OAuth App`. Choose **Create OAuth App**.
 
 1.  Your app credentials (Client ID and client Secret) will be displayed. Save them as they will be required to create a connection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

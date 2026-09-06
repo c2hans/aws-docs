@@ -146,7 +146,3 @@ For optimal performance with your multimodal knowledge base, consider these fact
 + **Processing time:** BDA processing takes longer due to content conversion
 + **Query latency:** Image queries may have higher latency than text queries
 + **Chunking duration:** Longer audio/video chunk durations increase processing time but may improve accuracy
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

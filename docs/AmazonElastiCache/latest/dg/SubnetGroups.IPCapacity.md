@@ -13,7 +13,3 @@ If a subnet is approaching IP address exhaustion, take one of the following acti
 + Add a subnet with sufficient available IP addresses to the subnet group in the same Availability Zone.
 + Remove unused resources, such as unattached network interfaces, to free IP addresses in the existing subnet.
 + Replace the subnet with one that uses a larger CIDR block.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

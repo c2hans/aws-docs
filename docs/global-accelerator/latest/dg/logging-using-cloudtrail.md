@@ -40,6 +40,7 @@ CloudTrail lets you view recent events in **Event history**. To view events for 
 A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify. Each JSON-formatted CloudTrail log file contains one or more log entries. A log entry represents a single request from any source and includes information about the requested action, including any parameters, the date and time of the action, and so on. CloudTrail log files aren't an ordered stack trace of the public API calls, so they don't appear in any specific order.
 
 The following example shows a CloudTrail log entry that includes the following Global Accelerator actions:
++ Creating an accelerator: `eventName` is `CreateAccelerator`.
 + Listing the accelerators for an account: `eventName` is `ListAccelerators`.
 + Creating a listener: `eventName` is `CreateListener`.
 + Updating a listener: `eventName` is `UpdateListener`.
@@ -374,7 +375,3 @@ The following example shows a CloudTrail log entry that includes the following G
   ]
 }
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

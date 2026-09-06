@@ -230,7 +230,3 @@ For a tutorial, see [Copy Data to Amazon Redshift Using AWS Data Pipeline](dp-co
 | @error | Error describing the ill-formed object. | String |
 | @pipelineId | Id of the pipeline to which this object belongs to. | String |
 | @sphere | The sphere of an object. Denotes its place in the life cycle. For example, Component Objects give rise to Instance Objects which execute Attempt Objects. | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -126,7 +126,3 @@ A plain String field displays values as text. HTML and journal fields can render
 For more information about ServiceNow security hardening, see the following resources:
 +  [ServiceNow input validation (instance security hardening)](https://www.servicenow.com/docs/bundle/washingtondc-platform-security/page/administer/security/reference/input-validation-instance-security-hardening.html)
 +  [Render journal field entries as HTML (default High Security escaping behavior)](https://docs.servicenow.com/bundle/paris-governance-risk-compliance/page/administer/field-administration/task/render-journal-field-entries-as-html.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

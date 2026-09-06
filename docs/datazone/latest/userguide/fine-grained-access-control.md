@@ -19,7 +19,3 @@ To utilize fine-grained access control, you can create row and column filters fo
 + [Delete row or column filters in Amazon DataZone](delete-row-column-filter.md)
 + [Edit row or column filters in Amazon DataZone](edit-row-column-filter.md)
 + [Grant access with filters in Amazon DataZone](grant-access-with-filters.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

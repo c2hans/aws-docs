@@ -79,7 +79,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 +  **Step 10:** [AWS Key Management Service](https://aws.amazon.com/kms/) (AWS KMS) stores and manages encryption keys used for securing persisted data in Kinesis Data Streams and Amazon S3.
 
  Additional reference available [here](https://aws.amazon.com/solutions/guidance/building-a-real-time-bidder-for-advertising-on-aws/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

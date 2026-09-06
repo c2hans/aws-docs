@@ -28,7 +28,3 @@ Amazon Textract communicates exclusively through HTTPS endpoints, which are supp
 <a name="custom-queries"></a>
 
  Any content used for generating adapters is processed internally within Amazon Textract for the duration of the training. The content is encrypted at rest and in transit. The content is stored and processed in the AWS Region where you are training the adapter, and is deleted once training completes. By default, the content is encrypted using AWS owned AWS KMS keys. If a KMSKeyId is provided when creating an adapter version, the content is encrypted using the Customer managed CMK provided. Customer content (training images, prelabeling results, annotations) is not logged or retained even for debugging purposes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

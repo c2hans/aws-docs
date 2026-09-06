@@ -34,7 +34,3 @@ Updates about significant changes or changes of interest to the AWS SDK for Swif
 | [New code examples for Amazon S3 and IAM](#doc-history) |  Added new examples for Amazon S3 and IAM, cleaned up and removed obsolete information, and fixed reported content errors.  | November 4, 2022 |
 | [Documentation update](#doc-history) |  Minor corrections and organizational improvements to the AWS SDK for Swift Developer Guide.  | August 19, 2022 |
 | [AWS SDK for Swift Developer Preview release](#doc-history) |  [AWS SDK for Swift Developer Preview](https://aws.amazon.com/sdk-for-swift) draft documentation.  | December 2, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Swift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-swift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

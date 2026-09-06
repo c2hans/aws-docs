@@ -496,7 +496,3 @@ You can use the Fleet Manager section of the Systems Manager console to view inf
    + **Connection history**
 
 1. To further narrow the list of connection results displayed, specify one or more filters in the search (![The Search icon](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/search-icon.png)) box. You can also enter a free-text search term.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

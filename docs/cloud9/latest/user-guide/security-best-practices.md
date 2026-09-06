@@ -14,7 +14,3 @@ The following best practices are general guidelines and don’t represent a comp
 + For your AWS Cloud9 EC2 development environments, configure and use [Amazon Elastic Block Store](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html) encrypted volumes.
 + For your EC2 environments, use [tags](tags.md) to control access to your AWS Cloud9 resources.
 + For your shared AWS Cloud9 development environments, follow the [best practices](share-environment-best-practices.md) for them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

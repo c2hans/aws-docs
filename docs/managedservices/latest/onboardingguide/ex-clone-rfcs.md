@@ -26,7 +26,3 @@ To clone, or recreate, an RFC by using the AMS console, follow these steps:
 1. Make the changes you want. To set additional options, change the **Basic** option to **Advanced**. After you have set all options, choose **Submit**.
 
    The active RFC details page opens with a new RFC ID for the cloned RFC and the cloned RFC appears in the RFC dashboard.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

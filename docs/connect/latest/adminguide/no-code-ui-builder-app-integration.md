@@ -54,7 +54,3 @@ The following image shows an App Launch component that's been dropped onto the c
 The following image shows an example [Flow block in Connect Customer: Set event flow](set-event-flow.md) block that's added to the flow, and configured to the **DefaultAgentUI** event hook.
 
 ![A Set event flow block that is configured to the DefaultAgentUI event hook.](http://docs.aws.amazon.com/connect/latest/adminguide/images/no-code-ui-builder-app-integration-2.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

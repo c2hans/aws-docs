@@ -40,7 +40,3 @@ AWS Clean Rooms ML provides the following APIs for data retrieval.
 | <a name="cleanrooms-ml-ListTrainedModelVersions"></a>[ListTrainedModelVersions](https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_ListTrainedModelVersions.html) | Return a list of trained model versions | List |
 | <a name="cleanrooms-ml-ListTrainedModels"></a>[ListTrainedModels](https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_ListTrainedModels.html) | Return a list of trained models | List |
 | <a name="cleanrooms-ml-ListTrainingDatasets"></a>[ListTrainingDatasets](https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_ListTrainingDatasets.html) | Return a list of training datasets | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

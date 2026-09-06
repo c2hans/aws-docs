@@ -24,7 +24,3 @@ After reading this guide, you should be able to understand:
 + Who should be able to manage and access your application logs
 + The AWS services and features that you can configure to monitor and log your applications in the AWS Cloud
 + How to use the log data from your application and AWS services and features to triage problems and diagnose issues
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

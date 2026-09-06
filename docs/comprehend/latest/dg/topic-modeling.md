@@ -78,7 +78,3 @@ The second file, `doc-topics.csv`, lists the documents associated with a topic a
 | sample-docN | 000 | 3.57E-04 |
 
 Amazon Comprehend utilizes information from the *Lemmatization Lists Dataset by MBM*, which is made available [here](https://github.com/michmech/lemmatization-lists) under the [Open database license (ODbL) v1.0](https://opendatacommons.org/licenses/odbl/1-0/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

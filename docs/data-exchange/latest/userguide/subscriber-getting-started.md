@@ -194,7 +194,3 @@ For more information about how to subscribe to products containing different typ
 + [Subscribing to and accessing an AWS Data Exchange product containing Amazon Redshift data sets](subscribing-to-Redshift-product.md)
 + [Subscribing to and accessing an AWS Data Exchange product containing Amazon S3 data access](subscribing-to-S3-data-access.md)
 + [Subscribing to and accessing an AWS Data Exchange product containing AWS Lake Formation data sets (Preview)](subscribing-to-LakeFormation-product.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

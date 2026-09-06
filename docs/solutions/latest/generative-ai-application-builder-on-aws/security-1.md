@@ -27,7 +27,3 @@ You can enable verbose mode while deploying a use case using the Deployment Dash
 
 **Note**
 When verbose mode is enabled, retrieved documents from the knowledge base (if RAG is enabled) and prompts will also be logged, which may contain sensitive information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Generative AI Application Builder on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

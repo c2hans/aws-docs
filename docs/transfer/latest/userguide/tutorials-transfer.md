@@ -25,7 +25,3 @@ The AWS Transfer Family user guide provides detailed walkthroughs for several us
 + [Setting up an AS2 configuration](as2-example-tutorial.md)
 + [Tutorial: Setting up a basic Transfer Family web app](web-app-tutorial.md)
 + [Tutorial: Setting up AWS Transfer Family web app with selective multi-bucket access](webapp-s3-tutorial.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

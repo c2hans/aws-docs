@@ -257,7 +257,3 @@ SELECT * FROM TABLE(
 <a name="connectors-docdb-additional-resources"></a>
 + For an article on using [Amazon Athena Federated Query](federated-queries.md) to connect a MongoDB database to [Quick](https://aws.amazon.com/quicksight/) to build dashboards and visualizations, see [Visualize MongoDB data from Quick using Amazon Athena Federated Query](https://aws.amazon.com/blogs/big-data/visualize-mongodb-data-from-amazon-quicksight-using-amazon-athena-federated-query/) in the *AWS Big Data Blog*.
 + For additional information about this connector, visit [the corresponding site](https://github.com/awslabs/aws-athena-query-federation/tree/master/athena-docdb) on GitHub.com.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

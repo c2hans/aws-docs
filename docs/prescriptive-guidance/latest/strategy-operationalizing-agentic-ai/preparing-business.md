@@ -93,7 +93,3 @@ Successfully scaling agentic AI is not about experimenting with more tools. It's
 Aligning with the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) helps your systems meet enterprise standards for reliability, security, performance efficiency, and cost optimization. Tools such as the [Strands Agents SDK](https://strandsagents.com/latest/) can accelerate this journey by providing structured prompts, tool registration, and CI/CD readiness. This helps teams shift from experimentation to scalable delivery by using familiar AWS workflows.
 
 Agentic AI isn't a tool; it's a shift in how intelligence is embedded into operations. Organizations that prepare accordingly can automate more, operate smarter, adapt faster, and create lasting advantage in an increasingly complex world.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

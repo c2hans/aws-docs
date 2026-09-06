@@ -62,7 +62,3 @@ This query returns the following sample output:
  dev     |    138 | mv_schema | mv_test |  5099 | 2020-02-14 02:10:23.492344 | 2020-02-14 02:10:23.492344 | Cascade refresh skipped because materialized view mv_schema.child was not refreshed.|  Manual
  dev     |    138 | mv_schema | child   |  5099 | 2020-02-14 02:10:23.492344 | 2020-02-14 02:10:23.492344 | Refresh failed due to an internal error.                                            |  Manual
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

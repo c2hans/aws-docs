@@ -30,7 +30,3 @@ Here you’ll see that we have a product microservice that is storing its data i
  The first step in configuring RLS is to alter your table to enable row level security for that table. Then, you’ll create an isolation policy for that that requires the tenant\_id column to match the value of the current user (which is supplied contextually). Now, with these changes in place, all interactions with this table will be restricted to the rows that are valid for the current tenant.
 
  In contrasting the DynamoDB and Aurora PostgreSQL approaches, you can see that you’ll need to do some exploration with each storage service that you are using to find a model that will let you achieve isolation. There are also cases where services may not offer a more granular isolation model. In these cases, you’ll have to introduce your own mechanisms to enforce your pool isolation policies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

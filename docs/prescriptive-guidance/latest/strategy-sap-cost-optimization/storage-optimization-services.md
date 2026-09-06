@@ -40,7 +40,3 @@ As part of your cost optimization strategy the review of overprovisioned EBS vol
 For SAP interface file systems, consider configuring an [EFS lifecycle policy](https://docs.aws.amazon.com/efs/latest/ug/lifecycle-management-efs.html). With lifecycle policies, you can reduce storage costs by transitioning files with specific retention requirements to a lower-cost storage class. If you use the industry-accepted estimate, 80% of your data is infrequently accessed. Moving this data to lower-cost storage classes is a prime opportunity to reduce your costs. For more information, see [Amazon EFS Infrequent Access](https://aws.amazon.com/efs/features/infrequent-access/).
 
 As part of your cost optimization strategy, review EFS lifecycle policies every other review cycle. If there are continuous opportunities, enable EFS lifecycle policies to automate the process and implement a clean-up routine.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,3 @@ For more information about working with JSON and nested JSON in Athena, see the 
 + [Create tables in Amazon Athena from nested JSON and mappings using JSONSerDe](https://aws.amazon.com/blogs/big-data/create-tables-in-amazon-athena-from-nested-json-and-mappings-using-jsonserde/) (AWS Big Data Blog)
 + [I get errors when I try to read JSON data in Amazon Athena](https://aws.amazon.com/premiumsupport/knowledge-center/error-json-athena/) (AWS Knowledge Center article)
 + [hive-json-schema](https://github.com/quux00/hive-json-schema) (GitHub) – Tool written in Java that generates `CREATE TABLE` statements from example JSON documents. The `CREATE TABLE` statements that are generated use the OpenX JSON Serde.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

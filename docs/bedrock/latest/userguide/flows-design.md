@@ -67,7 +67,3 @@ The following pointers apply to building a flow:
 + Begin by setting the data type for the output of the flow input node. This data type should match what you expect to send as the input when you invoke the flow.
 + When you define the inputs for a flow using expressions, check that the result matches the data type that you choose for the input.
 + If you include an iterator node, include a collector node downstream after you've sent the output through the nodes that you need. The collector node will return the outputs in an array.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -80,7 +80,3 @@ In [Amazon Bedrock AgentCore](https://docs.aws.amazon.com/bedrock-agentcore/late
 Prompt, agent, and model lifecycle management becomes a foundational discipline as enterprises move from experimentation to production-grade generative AI. It protects users, developers, and the organization from several risks: Silent behavioral drift, unexpected cost spikes, trust and safety violations, and non-reproducible decisioning.
 
 Through a disciplined approach to lifecycle management, organizations can innovate safely, while maintaining confidence that AI behavior is consistent, explainable, and aligned with enterprise standards.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

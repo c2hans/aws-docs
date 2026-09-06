@@ -43,7 +43,3 @@ This returns an available balance of *10000.00*, the default balance in the sand
 To test your HITs in the sandbox, you can use the same operations described in [Creating HITs](mturk-creating-hits.md), provided you've configured the SDK or CLI to use the sandbox endpoint. When you create HITs in the sandbox, they are published to [https://workersandbox.mturk.com](https://workersandbox.mturk.com) instead of the production marketplace. Since this is a separate location and workers won't receive a reward for completing your tasks there, you need to create an account and complete the tasks yourself, or have members of your team assist, to fully test your HITs.
 
 When HITs are completed in the sandbox environment, you can retrieve results using the same operations as those described in the following sections of this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

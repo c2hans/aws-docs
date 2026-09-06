@@ -72,7 +72,7 @@ With Amazon Redshift, you can perform administrative tasks on consumer clusters 
    CREATE DATABASE sales_db FROM DATASHARE salesshare OF ACCOUNT '123456789012' NAMESPACE 'dd8772e1-d792-4fa4-996b-1870577efc0d';
    ```
 
-   If you want more granular control over access to the objects in the local database, use the WITH PERMISSIONS clause when creating the database. This lets you grant object-level permissions for objects in the database in step 4.
+   If you want more granular control over access to the objects in the local database, use the WITH PERMISSIONS clause when creating the database. With this clause, you can grant object-level permissions for objects in the database in step 4.
 
    ```
    CREATE DATABASE sales_db WITH PERMISSIONS FROM DATASHARE salesshare OF ACCOUNT '123456789012' NAMESPACE 'dd8772e1-d792-4fa4-996b-1870577efc0d';
@@ -133,7 +133,3 @@ With Amazon Redshift, you can perform administrative tasks on consumer clusters 
 
    SELECT * FROM sales_data;
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -92,7 +92,3 @@ Provide the contact phone number for your site reliability engineering (SRE) tea
   <tr><td>Example:<br />ALB_5xx_Target_Response<br />Account ID: 123456789012<br />Region: us-east-1</td><td>Example:<br />This metric represents transaction responses from the targets behind the ALB. If 5XX errors exceeds threshold, it represents a critical failure to process business transactions.</td><td>Example:<br />Sam Smith - Application Manager<br />sam.smith@example.com<br />+61 2 3456 7890</td><td>Example:<br />ECS</td></tr>
 </tbody>
 </table>
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

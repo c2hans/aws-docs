@@ -67,7 +67,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/applicat
  **Prescriptive guidance IOTSEC12-BP03-**02 *Use deployment automation to deploy updated to IoT application code*
 
  Deployment automation tools enable a staged roll-out of updates to large fleets of devices. By rolling out in stages, issues found in rolling out the updated application can be limited in scope. Deployment automation tools provide information on the progress of deployments for those responsible for the roll-outs to monitor and take appropriate action if necessary. Consider using services such as [AWS IoT Greengrass](https://aws.amazon.com/greengrass/) deployments, [IoT Fleet Management](https://aws.amazon.com/solutions/iot/fleet-management/), and [AWS IoT Core](https://aws.amazon.com/iot-core/) Jobs for automating deployments of updated IoT application code.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

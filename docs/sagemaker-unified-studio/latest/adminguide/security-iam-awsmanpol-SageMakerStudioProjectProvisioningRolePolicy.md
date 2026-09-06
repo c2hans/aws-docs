@@ -25,7 +25,3 @@ You can't create new projects with AWS CodeCommit. Existing projects that were c
 + Amazon Bedrock permissions are required to provision Amazon Bedrock IDE related resources to enable discovery of Amazon Bedrock models and build generative AI apps that use Amazon Bedrock models and features.
 
 To view the permissions for this policy, see [SageMakerStudioProjectProvisioningRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioProjectProvisioningRolePolicy.html) in the *AWS Managed Policy Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

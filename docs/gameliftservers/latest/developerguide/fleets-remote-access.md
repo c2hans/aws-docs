@@ -37,7 +37,7 @@ To connect to an Amazon GameLift Servers managed EC2 fleet instance, you need th
 + The ID of the instance you want to connect to. You can use either the instance ID or ARN.
 + the server SDK for Amazon GameLift Servers version being used on the instance. The server SDK is integrated with the game build that is running on the instance.
 
-The following instructions describe how complete these tasks using the AWS CLI. You must know the fleet ID for the instance you want to connect to.
+The following instructions describe how to complete these tasks using the AWS CLI. You must know the fleet ID for the instance you want to connect to.
 
 1. **Get the compute name.** Get a list of all active computes in the fleet. Call [list-compute](https://docs.aws.amazon.com/cli/latest/reference/gamelift/list-compute.html) with a fleet ID or ARN. For a single-location fleet, specify the fleet identifier only. For a multi-location fleet, specify the fleet identifier and a location. With managed EC2 fleets, `list-compute` returns a list of fleet instances, and the property `ComputeName` is the instance ID. Find the compute you want to access.
 
@@ -252,7 +252,3 @@ Look for these resources on a hosting instance:
 + **TLS certificates.** If the instance is on a fleet that has TLS certificate generation enabled, look for certificate files, including the certificate, certificate chain, private key, and root certificate in the following location:
   + On Windows: `c:\\GameMetadata\Certificates`
   + On Linux: `/local/gamemetadata/certificates/`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

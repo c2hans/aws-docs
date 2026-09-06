@@ -21,7 +21,3 @@ The configurations enable you to use Salesforce with Partner Central and AWS Mar
 + [Configuring the connector for a Partner Central API integration](p-c-api-integration.md)
 + [Configuring the connector for AWS Marketplace](aws-marketplace-integration.md)
 + [Personas for CRM connector permission sets](permission-sets.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -318,7 +318,3 @@ The AWS Transform MGN console is color-coded for ease of use.
 + Servers that are experiencing serious issues such as a loss of connection or a stall are characterized by the color red. You have to fix these issues for data replication to resume. The **Next actions** box provides additional information.
 
   For example, if a stall occurred during initiation, you would scroll down to** Replication initiation steps**, where the problematic step is marked with a red 'x'.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

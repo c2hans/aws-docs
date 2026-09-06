@@ -12,7 +12,3 @@ AWS KMS supports asymmetric key signatures for messages up to 4 KB using the `RA
 For more information about using ML-DSA and the EXTERNAL\_MU message type, see [ML-DSA key specs](symm-asymm-choose-key-spec.md#key-spec-mldsa).
 
 For an example of using ML-DSA and the EXTERNAL\_MU message type, see [Offline verification with ML-DSA key pairs](offline-operations.md#mldsa-offline-verification).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

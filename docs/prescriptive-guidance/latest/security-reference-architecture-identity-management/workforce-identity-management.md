@@ -23,7 +23,3 @@ AWS offers several several options for workforce identity and access management:
 **Design considerations:**
 + Although this section discusses several services and options, we recommend that you use IAM Identity Center to manage workforce access, because it has advantages over the other two approaches. Later sections discuss the advantages and use cases for individual approaches. A growing number of AWS managed applications require the use of IAM Identity Center. If you are currently using IAM federation, you can enable and use IAM Identity Center with AWS applications without changing your existing configurations.
 + To improve federation resiliency, we recommend that you configure your IdP and AWS federation to support multiple SAML sign-in endpoints. For details, see the AWS blog post [How to use regional SAML endpoints for failover](https://aws.amazon.com/blogs/security/how-to-use-regional-saml-endpoints-for-failover).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

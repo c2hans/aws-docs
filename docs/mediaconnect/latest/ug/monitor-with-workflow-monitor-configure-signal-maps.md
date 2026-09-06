@@ -14,7 +14,3 @@ Signal maps are visual mappings of AWS resources in your media workflow. You can
 + [Deploying templates to the signal map of your AWS media workflow](monitor-with-workflow-monitor-configure-deploy.md)
 + [Updating the signal map of your AWS media workflow](monitor-with-workflow-monitor-configure-signal-maps-update.md)
 + [Deleting the signal map of your AWS media workflow](monitor-with-workflow-monitor-configure-signal-maps-delete.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ AWS Migration Hub makes it possible to automate migration tasks. The core concep
 + [Automation runs in AWS Migration Hub](mha-runs.md)
 + [IAM roles and permissions for AWS Migration Hub automation units](mha-iam-roles.md)
 + [Associating an IAM role with an AWS Migration Hub automation unit](associate-role-with-unit.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

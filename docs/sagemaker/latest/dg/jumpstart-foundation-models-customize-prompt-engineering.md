@@ -34,7 +34,3 @@ Changing inference parameters might also affect the responses to your prompts. W
 For more information on foundation model inference, see [Deploy publicly available foundation models with the `JumpStartModel` class](jumpstart-foundation-models-use-python-sdk-model-class.md).
 
 If prompt engineering is not sufficient to adapt your foundation model to specific business needs, domain-specific language, target tasks, or other requirements, you can consider fine-tuning your model on additional data or using Retrieval Augmented Generation (RAG) to augment your model architecture with enhanced context from archived knowledge sources. For more information, see [Foundation models and hyperparameters for fine-tuning](jumpstart-foundation-models-fine-tuning.md) or [Retrieval Augmented Generation](jumpstart-foundation-models-customize-rag.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

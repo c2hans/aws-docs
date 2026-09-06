@@ -84,7 +84,3 @@ The total number of participants on the chat would look like this:
 1. Log in to the Connect Customer admin website. [Assign security profile permissions](assign-permissions-to-review-recordings.md) to managers so they can monitor and barge live conversations, and review recordings.
 
 1. Show managers how to [monitor live conversations](monitor-conversations-howto.md), [barge live conversations](monitor-barge.md) and [review past recordings](review-recorded-conversations.md) in Connect Customer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

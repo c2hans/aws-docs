@@ -48,7 +48,7 @@ Use the following procedure to install the Amazon Athena ODBC driver on a Linux 
      Output:
 
      ```
-     amazon-athena-odbc-driver.x86_64 2.3.0.0-1.amzn2023 installed
+     amazon-athena-odbc-driver.x86_64 2.2.0.1-1.amzn2023 installed
      ```
    +
 
@@ -59,7 +59,7 @@ Use the following procedure to install the Amazon Athena ODBC driver on a Linux 
      Output:
 
      ```
-     amazon-athena-odbc-driver-2.3.0.0-1.amzn2023.x86_64
+     amazon-athena-odbc-driver-2.2.0.1-1.amzn2023.x86_64
      ```
 
 ## Configuring a data source name on Linux
@@ -174,22 +174,18 @@ Follow these steps to verify the signature of the Athena ODBC driver RPM package
 1. **Prepare the templates**
 
    Prepare the commands with appropriate public key, RPM signature, and the corresponding access link to the RPM scripts hosted in Amazon S3 buckets. You must download the following to your device.
-   +  [Athena ODBC driver](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.3.0.0/Linux/AmazonAthenaODBC-2.3.0.0-x86_64.rpm)
-   +  [Public Key](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.3.0.0/Linux/public_key.pem)
-   +  [Athena ODBC RPM signature](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.3.0.0/Linux/signature.bin)
+   +  [Athena ODBC driver](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.2.0.1/Linux/AmazonAthenaODBC-2.2.0.1-x86_64.rpm)
+   +  [Public Key](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.2.0.1/Linux/public_key.pem)
+   +  [Athena ODBC RPM signature](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.2.0.1/Linux/signature.bin)
 
 1. Download the Athena ODBC driver, public key, and Athena ODBC RPM signature to your device.
 
 1. Run the following command to verify ODBC driver signature:
 
    ```
-   openssl dgst -sha256 -verify public_key.pem -signature signature.bin AmazonAthenaODBC-2.3.0.0-x86_64.rpm
+   openssl dgst -sha256 -verify public_key.pem -signature signature.bin AmazonAthenaODBC-2.2.0.1-x86_64.rpm
    ```
 
    If verification passes, you will see a message similar to `Verified OK`. This means you can now proceed to install the Athena ODBC driver.
 
    If it fails with a message `Verification Failure`, it means that the signature on RPM has been tampered. Ensure that all the three files mentioned in step 1 are present, the paths are correctly specified ,and the files haven't been modified since download and then retry the verification process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

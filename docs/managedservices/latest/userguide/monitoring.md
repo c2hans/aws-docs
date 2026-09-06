@@ -63,7 +63,3 @@ With OpsCenter, AMS provides you with a transparent view of operational work ite
 To learn more about OpsCenter and OpsItems, see [AWS Systems Manager OpsCenter](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html). For information about getting access to the AWS Management Console, see [Working with the AWS Management Console](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/getting-started.html). From the AWS Management Console you can navigate to the AWS Systems Manager Console, and OpsCenter; to learn more, see [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html). OpsCenter also provides an API that you can use; for information, see [Learn More About OpsCenter](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-learn-more.html).
 
 OpsCenter is a priced feature with \~1000 OpsItems that cost under $10. For information, see [AWS Systems Manager pricing](https://aws.amazon.com/systems-manager/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

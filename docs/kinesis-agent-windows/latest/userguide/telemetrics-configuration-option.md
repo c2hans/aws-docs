@@ -76,7 +76,3 @@ The Amazon EC2 instance ID if Kinesis Agent for Windows is running on an Amazon 
 The Amazon EC2 instance type if Kinesis Agent for Windows is running on an Amazon EC2 instance.
 
 In addition, we collect the metrics listed in [List of Kinesis Agent for Windows Metrics](source-object-declarations.md#kinesis-agent-metric-list).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Agent for Windows. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesis-agent-windows` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

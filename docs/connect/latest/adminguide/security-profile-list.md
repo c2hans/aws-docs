@@ -255,6 +255,7 @@ The following table lists legacy permissions. You can not access these permissio
 | Transfer Contact | TransferContact.Enabled | [Transfer contacts on Analytics and optimization pages](transfer-contacts-admin.md). Currently transfer of task contacts to quick connects is supported on the **Contact details** page. |
 | End contact | StopContact.Enabled | [End contacts on Analytics and optimization pages](end-contacts-admin.md). Currently supported on the **Contact details** page. |
 | Reschedule contact | UpdateContactSchedule.Enabled | [Reschedule previously scheduled contact on Analytics and optimization pages](reschedule-contacts-admin.md). Currently supported on the **Contact details** page for task contacts only. |
+| Update contact tags | Contacts.Tag.Edit | Add and remove tags from contacts on the **Contact details** page. For more information, see [Tag contacts on the Contact details page in Connect Customer](tag-contacts-admin.md). |
 
 ## Historical changes
 <a name="historical-changes-list"></a>
@@ -363,7 +364,3 @@ The following table lists legacy permissions. You can not access these permissio
 | Campaigns - Edit | Campaigns.Edit | Edit outbound campaigns. |
 | Campaigns - Manage | Campaigns.Delete | Manage outbound campaigns. |
 | Campaigns - View |   | View outbound campaigns. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

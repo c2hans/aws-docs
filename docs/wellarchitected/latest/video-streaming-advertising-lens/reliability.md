@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 +  **Recovery Time Objective (RTO):** The maximum amount of time allowed for a system to resume its normal operations after a failure.
 +  **Uptime:** A measure of system reliability, expressed as the period of time a machine, typically a computer, has been continuously working and available.
 +  **Microservices:** An architectural pattern that arranges an application as a collection of loosely-coupled, fine-grained services communicating through lightweight protocols. One of its goals is to enable teams to develop and deploy their services independently.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,7 +45,3 @@ Amazon DynamoDB provides the following APIs for data retrieval.
 | <a name="dynamodb-ReadDataForReplication"></a>[ReadDataForReplication](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables_MA_security.html) | Read data from a multi account global table replica | Read |
 | <a name="dynamodb-Scan"></a>[Scan](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html) | Return one or more items and item attributes by accessing every item in a table or a secondary index | Read |
 | <a name="dynamodb-SearchVectors"></a>[SearchVectors](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_SearchVectors.html) | Perform a vector similarity search on a vector index associated with an Amazon DynamoDB table | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -67,7 +67,3 @@ Some organizations require thorough separation of their workloads operating in t
 The AWS European Sovereign Cloud is physically and logically separate from existing AWS Regions, all while offering the same security, availability, and performance. Only AWS employees who are located in the EU have control of the operations and support for the AWS European Sovereign Cloud. If you have stringent data residency requirements, the AWS European Sovereign Cloud keeps all metadata that you create (such as the roles, permissions, resource labels, and configurations they use to run AWS) in the EU. The AWS European Sovereign Cloud also features its own billing and usage metering systems.
 
 For this approach, you would use a similar pattern as in the previous section, [Regional landing zones](#global-expansion-regional). However, for services that you provide to European customers, you could deploy a dedicated MALZ in the AWS European Sovereign Cloud.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ If your add-ons are encountering errors while attempting AWS API, SDK, or CLI op
   + For information about the available add-ons, see [AWS add-ons](workloads-add-ons-available-eks.md).
 + Check configuration of MutatingWebhookConfiguration named `pod-identity-webhook`
   +  `admissionReviewVersions` of the webhook needs to be `v1beta1` and doesn’t work with `v1`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

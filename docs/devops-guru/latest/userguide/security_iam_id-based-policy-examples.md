@@ -430,7 +430,3 @@ The `AmazonDevOpsGuruReadOnlyAccess` policy contains the following statement.
 ` AmazonDevOpsGuruOrganizationsAccess` – Provides Organizations administrators access to the DevOps Guru multi-account view within an organization. Apply this policy to your organization's administrator-level users for whom you want to grant full access to DevOps Guru within an organization. You can apply this policy in your organization's management account and delegated administrator account for DevOps Guru. You can apply `AmazonDevOpsGuruReadOnlyAccess` or `AmazonDevOpsGuruFullAccess` in addition to this policy to provide read-only or full access to DevOps Guru.
 
 The `AmazonDevOpsGuruOrganizationsAccess` policy contains the following statement.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

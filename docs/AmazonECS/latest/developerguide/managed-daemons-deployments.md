@@ -24,6 +24,8 @@ The deployment lifecycle transitions through the following states:
 
 Amazon ECS automatically rolls back to the previous daemon revision if the deployment circuit breaker detects failures or if a CloudWatch alarm triggers during the deployment.
 
+During a deployment, a non-critical daemon task failure doesn't drain or replace the instance, so the instance stays active and continues to run your application tasks. Daemon task launch failures still count toward the deployment circuit breaker, which can roll back an unstable target revision.
+
 ## Deployment configuration parameters
 <a name="managed-daemons-deploy-config"></a>
 
@@ -176,7 +178,3 @@ In this scenario, you update an existing daemon to use a new task definition rev
    aws ecs describe-daemon-deployments \
        --daemon-deployment-arns arn:aws:ecs:{{us-east-1}}:{{123456789012}}:daemon-deployment/{{my-daemon-cluster}}/{{deployment-id}}
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

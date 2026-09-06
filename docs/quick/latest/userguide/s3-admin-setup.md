@@ -286,7 +286,3 @@ After creating the IAM policy, assign it to Amazon Quick users or groups.
 1. On the **Review and enable changes** page, verify your assignment details and choose **Save and enable**.
 
 Users who are not explicitly granted access through an IAM policy assignment will not be able to access the restricted Amazon S3 buckets for creating integrations or knowledge bases.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

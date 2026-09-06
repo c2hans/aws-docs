@@ -43,7 +43,3 @@ Before installing and using a sensor, see [ Ex Safety and Compliance Guide](http
  If you try to commission a sensor under a safety notification, the commissioning process will fail. You’ll receive a notification describing the reason for the failure.
 
 ![Mobile app screens showing commissioning failure with error notification and alert icon.](http://docs.aws.amazon.com/Monitron/latest/user-guide/images/ex-rated-sensor-notification.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

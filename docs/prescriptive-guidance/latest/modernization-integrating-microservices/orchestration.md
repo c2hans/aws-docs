@@ -63,7 +63,3 @@ For information about working with DAGs, see the [Amazon MWAA documentation](htt
 + Step Functions is a fully-managed serverless service, so there is no infrastructure to pre-provision and no need to schedule a maintenance window. Amazon MWAA must be deployed ahead of time, and you choose the size and number of nodes in your cluster.
 + In Step Functions, you can author state machines in a variety of ways, including Workflow Studio, directly as JSON, or using the AWS Cloud Development Kit (AWS CDK). Apache Airflow DAGs are written in Python.
 + With Step Functions, you incur no cost when there are no workflows running. With Amazon MWAA, you will incur costs even when no DAGs are running.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

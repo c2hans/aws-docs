@@ -31,7 +31,7 @@ To forward an email contact to an external address:
 
 1. Optionally, add a message in the body field to provide context or instructions for the external recipients.
 
-1. Optionally, add any attachments required.
+1. Optionally, attach files you want to include. Original inbound attachments do not carry over to the forwarded email.
 
 1. Review the forwarded content, which includes:
    + The original email message and thread
@@ -87,7 +87,3 @@ It's important to understand the difference between forwarding and transferring 
 + **Transferring**: [Quick connect scenarios for transferring contacts](how-quick-connects-work.md), transfers the email contact to another agent or queue within Connect Customer. The contact is removed from your queue and assigned to the transfer destination.
 
 Use forwarding when you need to share information with external parties while maintaining ownership of the contact. Use transferring when you need to hand off the contact to another agent or team within your contact center.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

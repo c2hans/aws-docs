@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/view-historica
 
 1. On the **View recent changes for [resource name]** page, you can view details about what changed in the user record, when the change occurred, and who made it, as shown in the following image.
 ![The View recent change page, a list of recent changes to the user record for John Doe.](http://docs.aws.amazon.com/connect/latest/adminguide/images/user-management-view-recent-changes-johndoe.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

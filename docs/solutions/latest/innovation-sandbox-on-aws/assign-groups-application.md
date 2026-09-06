@@ -26,7 +26,3 @@ To assign groups to your application:
 ![Assign users and groups](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/assign-user-groups.png)
 
 1. Choose **Done** to assign these groups to your application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

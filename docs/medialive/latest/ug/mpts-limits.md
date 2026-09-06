@@ -15,7 +15,3 @@ Following is a summary of the restrictions associated with multiplexes:
 + These limitations apply to a channel in a multiplex:
   + Each channel is single use. You can attach it to only one program in the multiplex, and you can use it only for that multiplex.
   + Each channel contains one and only one output group, of type multiplex. It can't contain any other type of output group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

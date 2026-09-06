@@ -66,7 +66,3 @@ When you use customer managed KMS key to encrypt your Amazon Fraud Detector data
 + Variable data source
 
 If customer managed KMS key was either deleted or is scheduled for deletion, your data might not be available. For more information, see [Deleting KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/deleting-keys.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -58,7 +58,3 @@ AWS Lambda provides the following APIs for data retrieval.
 | <a name="lambda-ListProvisionedConcurrencyConfigs"></a>[ListProvisionedConcurrencyConfigs](https://docs.aws.amazon.com/lambda/latest/dg/API_ListProvisionedConcurrencyConfigs.html) | Retrieve a list of provisioned concurrency configurations for an AWS Lambda function | List |
 | <a name="lambda-ListTags"></a>[ListTags](https://docs.aws.amazon.com/lambda/latest/dg/API_ListTags.html) | Retrieve a list of tags for an AWS Lambda function, event source mapping, capacity provider, code signing configuration, network connector or MicroVM image resource | Read |
 | <a name="lambda-ListVersionsByFunction"></a>[ListVersionsByFunction](https://docs.aws.amazon.com/lambda/latest/dg/API_ListVersionsByFunction.html) | Retrieve a list of versions for an AWS Lambda function | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

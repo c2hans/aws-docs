@@ -36,7 +36,3 @@ After you deploy this Guidance and transfer your archives, you can validate your
  After you transfer your Amazon Glacier data to the Amazon S3 service, you can change your storage classes to fit your use cases. For information about how to do this, see the following resources:
 +  [Managing your Amazon S3 storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/managing-storage.html) in the *Amazon Simple Storage Service User Guide*
 +  [Using Amazon S3 storage classes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html) in the *Amazon Simple Storage Service User Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer from Amazon S3 Glacier Vaults to Amazon S3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

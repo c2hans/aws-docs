@@ -58,7 +58,3 @@ There's one more step. It's important for item caching to keep a mapping between
 | Track list of entries for table `t1`, key `k1` | `hash('list', t1, k1)` | ( `0xad4c812a, 0x045deaab` ) |
 | --- |--- |--- |
 | Track list of entries for table `t1`, key `k2` | `hash('list', t1, k2) ` | ( `0x9cda78af` ) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

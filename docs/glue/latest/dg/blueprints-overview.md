@@ -53,7 +53,3 @@ blueprints are developed, tested, registered with AWS Glue, and run to create wo
 [Developing blueprints in AWS Glue](developing-blueprints.md)
 [Creating a workflow from a blueprint in AWS Glue](creating_workflow_blueprint.md)
 [Permissions for personas and roles for AWS Glue blueprints](blueprints-personas-permissions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

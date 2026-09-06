@@ -38,7 +38,3 @@ The high-level process flow for the solution components deployed with the AWS Cl
 1.  [AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html) stores the account cleanup configuration, including the AWS Nuke resource filter that AWS CodeBuild reads at the start of each cleanup run, and the post-cleanup validation exclusion list. Administrators manage these configurations through the AWS AppConfig console.
 
 1. Users access assigned sandbox accounts via the IAM Identity Center access portal console, or programmatically using credentials. The solution provides a direct link in the web UI to access the AWS account with Single Sign-On (SSO).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

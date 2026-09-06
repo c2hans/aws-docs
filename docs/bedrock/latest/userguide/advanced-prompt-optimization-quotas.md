@@ -58,7 +58,3 @@ When using the custom LLM-as-a-judge evaluation method, the following models are
 | --- | --- | --- |
 | Image | JPG (.jpg), JPEG (.jpeg), PNG (.png), GIF (.gif), WebP (.webp) | Support depends on the target model. For animated GIF and WebP files, models typically use only the first frame. To include multiple frames, split them into separate image files and include them as individual multimodal files in the evaluation sample. |
 | Document | PDF (.pdf) |  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

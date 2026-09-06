@@ -65,7 +65,3 @@ Logging DNS queries for a Route 53 hosted zone addresses DNS security and compl
 <a name="route53-2-remediation"></a>
 
 To log DNS queries for Route 53 public hosted zones, see [ Configuring logging for DNS queries](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/query-logs.html#query-logs-configuring) in the *Amazon Route 53 Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

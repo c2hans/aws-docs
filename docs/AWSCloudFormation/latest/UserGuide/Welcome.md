@@ -43,7 +43,3 @@ To start using CloudFormation, see [Creating your first stack](gettingstarted.wa
 You can learn more about CloudFormation in this user guide, as well as the following resources:
 + For product details and FAQs, see the [AWS CloudFormation product page](https://aws.amazon.com/cloudformation/).
 + For pricing information, see [AWS CloudFormation pricing](https://aws.amazon.com/cloudformation/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

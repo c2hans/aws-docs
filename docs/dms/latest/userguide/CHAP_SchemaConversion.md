@@ -135,7 +135,3 @@ The following table lists the AWS Regions where you can create a DMS Schema Conv
 | US West (Oregon) | us-west-2 | Yes |
 
 To convert a database that runs in a Region that isn't listed, create your migration project in a supported Region. Then set up cross-Region connectivity between the VPC in that Region and the VPC where your database runs. For more information, see [Setting up a network for DMS Schema Conversion](instance-profiles-network.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

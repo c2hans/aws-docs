@@ -50,7 +50,3 @@ To use computer use tools with your Amazon Bedrock Agents, you do the following:
 1. Implement the computer use functions in your application. For example tool implementations, see [anthropic-quickstarts/computer-use-demo/tools](https://github.com/anthropics/anthropic-quickstarts/tree/main/computer-use-demo/computer_use_demo/tools) in the [anthropic-quickstarts](https://github.com/anthropics/anthropic-quickstarts) GitHub repository.
 
 1. Handle computer use tool requests from agents in conversations. After you use the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) API operation, extract the tool and action choice from the response, and then execute your implementation of the tool action.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

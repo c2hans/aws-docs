@@ -52,6 +52,7 @@ Amazon Connect provides the following APIs for data retrieval.
 | <a name="connect-GetAttachedFile"></a>[GetAttachedFile](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetAttachedFile.html) | Get an attached file from an Amazon Connect instance | Read |
 | <a name="connect-GetContactAttributes"></a>[GetContactAttributes](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetContactAttributes.html) | Retrieve the contact attributes for the specified contact | Read |
 | <a name="connect-GetContactMetrics"></a>[GetContactMetrics](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetContactMetrics.html) | Get contact metrics in an Amazon Connect instance | Read |
+| <a name="connect-GetCrossRegionRouting"></a>[GetCrossRegionRouting](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCrossRegionRouting.html) | Retrieve the cross-region routing configuration for an Amazon Connect Global Resiliency instance | Read |
 | <a name="connect-GetCurrentMetricData"></a>[GetCurrentMetricData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentMetricData.html) | Retrieve current metric data for queues and routing profiles in an Amazon Connect instance | Read |
 | <a name="connect-GetCurrentUserData"></a>[GetCurrentUserData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentUserData.html) | Retrieve current user data in an Amazon Connect instance | Read |
 | <a name="connect-GetEffectiveHoursOfOperations"></a>[GetEffectiveHoursOfOperations](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetEffectiveHoursOfOperations.html) | Get effective hours of operation resources in an Amazon Connect instance | Read |
@@ -158,7 +159,3 @@ Amazon Connect provides the following APIs for data retrieval.
 | <a name="connect-SearchVocabularies"></a>[SearchVocabularies](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchVocabularies.html) | Search vocabularies in a Amazon Connect instance | List |
 | <a name="connect-SearchWorkspaceAssociations"></a>[SearchWorkspaceAssociations](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchWorkspaceAssociations.html) | Search workspace associations in an Amazon Connect instance | Read |
 | <a name="connect-SearchWorkspaces"></a>[SearchWorkspaces](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchWorkspaces.html) | Search workspaces in an Amazon Connect instance | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

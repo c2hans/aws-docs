@@ -64,7 +64,3 @@ For more information about extending a container, see [Extend a Pre-built Contai
 
 To learn how to train and debug training jobs using SageMaker Debugger, see the following notebook. A training script provided through this example uses the TensorFlow Keras ResNet 50 model and the CIFAR10 dataset. A Docker custom container is built with the training script and pushed to Amazon ECR. While the training job is running, Debugger collects tensor outputs and identifies debugging problems. With `smdebug` client library tools, you can set a `smdebug` trial object that calls the training job and debugging information, check the training and Debugger rule status, and retrieve tensors saved in an Amazon S3 bucket to analyze training issues.
 + [build\_your\_own\_container\_with\_debugger](https://sagemaker-examples.readthedocs.io/en/latest/sagemaker-debugger/build_your_own_container_with_debugger/debugger_byoc.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

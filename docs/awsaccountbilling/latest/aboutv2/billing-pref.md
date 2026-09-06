@@ -332,7 +332,3 @@ If you use billing transfer, the detailed billing report (legacy) isn't availabl
 1. To configure the granularity of the reports to show your AWS usage, select the reports to activate.
 
 1. In the **Report activation** section, choose **Activate**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

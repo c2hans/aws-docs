@@ -9,14 +9,13 @@ Fargate is a technology that you can use with AWS Batch to run [containers](http
 
 When you run your jobs with Fargate resources, you package your application in containers, specify the CPU and memory requirements, define networking and IAM policies, and launch the application. Each Fargate job has its own isolation boundary and does not share the underlying kernel, CPU resources, memory resources, or elastic network interface with another job.
 
+Fargate runs both x86 (`X86_64`) and `ARM64` (AWS Graviton) jobs. You select the architecture per job in the job definition with `runtimePlatform.cpuArchitecture`. A single Fargate compute environment and job queue can run both architectures. For more information, see [Running mixed-architecture jobs (X86\_64 and ARM64)](fargate-multi-architecture.md).
+
 Fargate is only available for AWS Batch compute environments that use Amazon ECS as the orchestrator. Fargate is not supported for AWS Batch on Amazon EKS compute environments. For more information, see [Amazon EKS compute environments](eks.md).
 
 **Topics**
 + [When to use Fargate](when-to-use-fargate.md)
 + [Job definitions on Fargate](fargate-job-definitions.md)
++ [Running mixed-architecture jobs (X86\_64 and ARM64)](fargate-multi-architecture.md)
 + [Job queues on Fargate](fargate-job-queues.md)
 + [Compute environments on Fargate](fargate-compute-environments.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

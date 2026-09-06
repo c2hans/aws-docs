@@ -74,7 +74,3 @@ The display name and description fields have character restrictions beyond their
 + Nested scopes such as `{outer content (inner content)}` or `([nested {example}])`
 
 These restrictions are enforced by Google's RCS Business Messaging platform and apply regardless of which carrier or region you launch in.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

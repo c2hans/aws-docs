@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
  [AWS Security Hub CSPM](https://aws.amazon.com/security-hub/) is a service that gives you a comprehensive view of your security alerts and security posture across your AWS accounts. With Security Hub CSPM, you have a single place that aggregates, organizes, and prioritizes your security alerts, or findings. Security Hub CSPM findings can also enable your organization to create incidents within ITSM tooling via integrations depending on the finding’s severity level.
 
  [Service Catalog](https://aws.amazon.com/servicecatalog/) allows you to centrally manage commonly deployed AWS services and provisioned software products. The curated products are vetted and enable end users to request services and resources as needed without having direct permissions enabling segregation of duty. Service Catalog also helps your organization achieve consistent governance and compliance requirements, while enabling users to quickly deploy only the approved AWS services they need.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

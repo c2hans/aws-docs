@@ -40,14 +40,17 @@ The following table lists the role template for each service that role manager s
 | Amazon SageMaker Unified Studio | AmazonSageMakerAdminIAMPermissiveExecutionRoleTemplate | arn:aws:iam::aws:role-template/datazone.amazonaws.com/AmazonSageMakerAdminIAMPermissiveExecutionRoleTemplate:1 | CMK\_ENABLED, RoleName, accountId, keyAccountId, keyRegion, kmsKeyId |
 | Amazon SageMaker Unified Studio | AmazonSageMakerUserIAMPermissiveExecutionRoleTemplate | arn:aws:iam::aws:role-template/datazone.amazonaws.com/AmazonSageMakerUserIAMPermissiveExecutionRoleTemplate:1 | RoleName, accountId |
 | AWS Secrets Manager | AWSSecretsManagerRotationRoleTemplate | arn:aws:iam::aws:role-template/secretsmanager.amazonaws.com/AWSSecretsManagerRotationRoleTemplate:1 | ADMIN\_RESOURCE\_ENABLED, CMK\_ENABLED, RoleName, accountId, adminType, kmsKeyArn, region, resourceType |
-| AWS Step Functions | PowerUserRoleTemplate | arn:aws:iam::aws:role-template/iam.amazonaws.com/PowerUserRoleTemplate:1 | AWSServiceName, RoleName |
+| Amazon CloudWatch | PowerUserRoleTemplate | arn:aws:iam::aws:role-template/iam.amazonaws.com/PowerUserRoleTemplate:1 | AWSServiceName, RoleName |
+| Amazon CloudWatch | AmazonCloudWatchLogsScheduledQueryExecutionRoleTemplate | arn:aws:iam::aws:role-template/logs.amazonaws.com/AmazonCloudWatchLogsScheduledQueryExecutionRoleTemplate:1 | RoleName, account, region |
+| Amazon CloudWatch | AmazonCloudWatchMetricStreamsFirehosePutRecordsRoleTemplate | arn:aws:iam::aws:role-template/streams.metrics.cloudwatch.amazonaws.com/AmazonCloudWatchMetricStreamsFirehosePutRecordsRoleTemplate:1 | RoleName, accountId, deliveryStreamName, region |
+| Amazon CloudWatch | AmazonCloudWatchMetricStreamsFirehoseToS3RoleTemplate | arn:aws:iam::aws:role-template/firehose.amazonaws.com/AmazonCloudWatchMetricStreamsFirehoseToS3RoleTemplate:1 | RoleName, accountId, bucketName, logGroupName, logStreamName, region |
+| Amazon CloudWatch | AmazonCloudWatchRUMPutEventsRoleTemplate | arn:aws:iam::aws:role-template/rum.amazonaws.com/AmazonCloudWatchRUMPutEventsRoleTemplate:1 | RoleName, accountId, appMonitor, identityPool, region |
+| Amazon CloudWatch | AmazonCloudWatchSyntheticsExecutionRoleTemplate | arn:aws:iam::aws:role-template/synthetics.amazonaws.com/AmazonCloudWatchSyntheticsExecutionRoleTemplate:1 | RoleName, account\_id, canary\_name, region\_name, role\_uuid |
+| Amazon CloudWatch | AmazonCloudWatchSyntheticsKmsExecutionRoleTemplate | arn:aws:iam::aws:role-template/synthetics.amazonaws.com/AmazonCloudWatchSyntheticsKmsExecutionRoleTemplate:1 | RoleName, account\_id, canary\_name, region\_name, role\_uuid |
+| Amazon CloudWatch | AmazonCloudWatchSyntheticsVpcExecutionRoleTemplate | arn:aws:iam::aws:role-template/synthetics.amazonaws.com/AmazonCloudWatchSyntheticsVpcExecutionRoleTemplate:1 | RoleName, account\_id, canary\_name, region\_name, role\_uuid |
 
 ## Related information
 <a name="id_roles_create_role-template_related"></a>
 + [Create roles automatically with role manager](id_roles_create_role-manager.md)
 + [Manage access to role manager](id_roles_create_role-manager_enable-use.md)
 + [IAM API Reference](https://docs.aws.amazon.com/IAM/latest/APIReference/welcome.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

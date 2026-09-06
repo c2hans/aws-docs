@@ -831,7 +831,3 @@ Consider the following when using materialized views with AWS Glue:
 + Full refresh operations override the entire table and make previous snapshots unavailable.
 + Non-deterministic functions such as rand() or current\_timestamp() are not supported in materialized view definitions.
 + AWS Lake Formation fine-grained access control (row-level security, column-level security, cell-level security) on materialized views is not currently supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

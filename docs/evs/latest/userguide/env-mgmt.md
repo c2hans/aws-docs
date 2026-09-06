@@ -19,7 +19,3 @@ This chapter includes the following topics to help you manage your environment.
 +  [Delete an Amazon EVS entitlement](evs-env-delete-entitlement.md) - Describes how to delete an Amazon EVS entitlement to remove AWS offered Windows licensing coverage from VMs.
 +  [Configure Windows Server Activation](evs-activate-windows-server.md) - Describes how to configure Windows Server activation on VMs that have Windows Server entitlements.
 +  [Access the Amazon EVS Custom Addon depot](addon-depot.md) - Describes how to access the Amazon EVS Custom Addon depot and configure it as a download source in vLCM.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

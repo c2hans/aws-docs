@@ -112,7 +112,3 @@ If you want your journey to repeat running, select the **Repeats** radio button 
 A recipient can be active only in a journey once at any given time. So if they are still waiting to exit the journey when the next Segment Snapshot is created, and are a member of that Snapshot, they are **NOT** allowed to enter the journey as a part of the second Snapshot. If a recipient is a part of a segment Snapshot and is not currently in the journey, they are allowed to enter, regardless of whether they have previously gone through the journey.
 
  Choose **Publish** to schedule your journey.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

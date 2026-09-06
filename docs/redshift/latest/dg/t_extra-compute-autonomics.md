@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/t_extra-compute-auton
 # Allocating extra compute resources for automatic database optimization
 <a name="t_extra-compute-autonomics"></a>
 
-Autonomics improve query performances on your cluster and help manage storage costs and optimization. You can choose to allocate extra compute resources to ensure that autonomics features run consistently, even during times of high traffic, to benefit from the optimization. Note that autonomics run using these extra resources are billable. For more information on billing for autonomics, see [Billing for autonomics operations](t_autonomics-billing.md) and [Amazon Redshift pricing](https://aws.amazon.com/redshift/pricing/).
+Autonomics improve query performances on your cluster and help manage storage costs and optimization. You can choose to allocate extra compute resources to make sure that autonomics features run consistently, even during times of high traffic, to benefit from the optimization. Note that autonomics run using these extra resources are billable. For more information on billing for autonomics, see [Billing for autonomics operations](t_autonomics-billing.md) and [Amazon Redshift pricing](https://aws.amazon.com/redshift/pricing/).
 
  If extra compute resources for autonomics are disabled, Amazon Redshift temporarily suspends autonomics operations during periods of high system load in order to minimize impact on concurrent workloads, until there are enough resources to run them without negatively impacting user queries, potentially impacting performances.
 
@@ -124,7 +124,7 @@ You can set usage limits on extra compute resources used for autonomics on provi
 
 To create a usage limit for extra compute using the console:
 + Navigate to the cluster details page and select the **Maintenance** tab from the cluster navigation menu.
-+ Scroll down and click **Create usage limits**, it will navigate to **Manage usage limits** page.
++ Scroll down and choose **Create usage limits**, it will navigate to **Manage usage limits** page.
 + On the **Manage usage limits** page, locate the section titled **Usage limit for extra compute for automatic optimization** and select **Add limit**.
 
 To create a usage limit for extra compute using the AWS CLI, use the `create-usage-limit` command with the feature type `extra-compute-for-automatic-optimization`. The `--limit-type` parameter must be set to `time` for this feature type.
@@ -155,7 +155,3 @@ You can see how many RPU-seconds that your serverless workgroup is using for ext
 For more information, see [ Amazon Redshift Serverless console ](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-console.html) in the *Amazon Redshift Management Guide*.
 
 You can also check the [SYS\_SERVERLESS\_USAGE](SYS_SERVERLESS_USAGE.md) system view to find the `charged_extra_compute_for_automatic_optimization_seconds`, which records accumulated compute unit (RPU) seconds charged for automatic optimizations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

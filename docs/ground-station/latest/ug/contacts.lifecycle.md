@@ -46,7 +46,3 @@ The following table describes the statuses that a contact can have:
  If you need to retain contact data beyond one year, it is recommended to export your data before the retention period expires. For more information on how to access and export contact data, refer to:
 +  [AWS Ground Station API Reference](https://docs.aws.amazon.com/ground-station/latest/APIReference/Welcome.html)
 +  [AWS Ground Station CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/groundstation/index.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

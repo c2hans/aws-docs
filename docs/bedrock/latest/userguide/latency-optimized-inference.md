@@ -39,7 +39,3 @@ The following table shows the inference profiles that support latency optimizati
 | Meta | Llama 3.1 70B Instruct | meta.llama3-1-70b-instruct-v1:0 | us-east-2<br />us-west-2 |
 
 For more information about inference profiles, see [Supported Regions and models for inference profiles](inference-profiles-support.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

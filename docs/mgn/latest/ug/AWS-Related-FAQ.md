@@ -169,7 +169,3 @@ MGN events can be selected when defining a rule from the EventBridge console:
 ![Event source dropdown showing MGN filter with three MGN event types listed below.](http://docs.aws.amazon.com/mgn/latest/ug/images/EB-cw3.jpg)
 
 [Learn more about monitoring MGN](monitoring-overview.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

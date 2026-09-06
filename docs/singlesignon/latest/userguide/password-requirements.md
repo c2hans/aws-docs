@@ -18,7 +18,3 @@ When you use IAM Identity Center as your identity source, users must adhere to t
   + Non-alphanumeric characters (\~\!@\#$%^&\*\_-\+=`\|\\(){}[]:;"'<>,.?/)
 + The last three passwords cannot be reused.
 + Passwords that are publicly known through a data set leaked from a third party cannot be used.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

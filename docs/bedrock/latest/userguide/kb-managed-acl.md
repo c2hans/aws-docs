@@ -68,7 +68,3 @@ Because Bedrock Managed Knowledge Base provides ACL-aware filtering and not a co
 + **Authenticating end users** — You must authenticate users in your application before passing their identity to Bedrock Managed Knowledge Base. Bedrock Managed Knowledge Base does not verify that the user context you provide is authentic.
 + **Consistent email identity** — The email address you pass must match the email used in each connected data source. If emails differ across systems, ACL matching fails silently and the user receives no results from that data source.
 + **Email lifecycle management** — If an email address is reassigned to a different person (for example, after an employee departure), you must detect this before passing the identity to Bedrock Managed Knowledge Base. Real-time ACL verification acts as a safety net for connectors that support it, but is not a substitute for proper identity lifecycle management.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

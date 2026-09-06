@@ -348,7 +348,3 @@ Aurora MySQL has its own specific requirements when upgrading from version 3 to 
 + All objects in the `sys` schema must have the correct object types. Mismatches can occur if the schema was manually modified. For more information, see [auroraUpgradeCheckForSysSchemaObjectTypeMismatch](AuroraMySQL.upgrade-prechecks-v3-to-v84.descriptions.md#v84-auroraUpgradeCheckForSysSchemaObjectTypeMismatch).
 
 For details of the prechecks that are run, see [Precheck descriptions for upgrading Aurora MySQL version 3 to version 8.4](AuroraMySQL.upgrade-prechecks-v3-to-v84.descriptions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

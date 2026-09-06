@@ -81,7 +81,3 @@ The stat names listed in the following table are used as CSV column headers in t
 | shared\_sys\_gpu\_pct | Percentage of total GPU utilization across the shared compute. | Shared System |
 | shared\_sys\_vram\_mb | Total VRAM (GPU memory) used on the shared compute (measured in MiB). | Shared System |
 | shared\_sys\_vram\_pct | Percentage of total VRAM (GPU memory) in use across the shared compute. | Shared System |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

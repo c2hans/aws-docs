@@ -308,7 +308,3 @@ After a successful deployment, you have a Bedrock AgentCore runtime with AWS for
 If the CloudFormation stack creation fails (status `CREATE_FAILED` or `ROLLBACK_COMPLETE`), open the AWS CloudFormation console, select your stack, and choose the **Events** tab. The events list shows each resource creation attempt in chronological order. Look for the first event with a `CREATE_FAILED` status to identify the root cause. Common failure reasons include invalid parameter values or insufficient IAM permissions.
 
  **Private IdP connectivity failure:** If the stack fails while creating the OAuth credential provider or the Runtime, check that the specified subnets can reach the IdP’s discovery and token endpoints over HTTPS. Verify that the security groups permit outbound traffic on the IdP’s port. For managed Lattice, also verify that the deployer has `iam:CreateServiceLinkedRole` permission. For more information, see [Troubleshooting](troubleshooting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MCP Servers for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mcp-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

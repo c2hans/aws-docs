@@ -212,7 +212,3 @@ If you’re using Windows 10 or later where the [`wmic` command is deprecated](h
    If the **PsExec License Agreement** opens, choose **Accept** to agree to the license and run the command.
 **Note**
 On Windows devices, the LocalSystem account runs the Greengrass nucleus, and you must use the PsExec utility to store the default user information in the LocalSystem account. Using the Credential Manager application stores this information in the Windows account of the currently logged on user, instead of the LocalSystem account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ Jobs that generate per-frame metrics take longer to complete than standard encod
 For high-resolution outputs (such as 4K), jobs might take up to twice as long to complete compared to standard encoding.
 
 Some metrics require more computational resources than others. For example, VMAF calculation is more computationally intensive than other metrics. Consider enabling only the metrics you need for your specific analysis.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

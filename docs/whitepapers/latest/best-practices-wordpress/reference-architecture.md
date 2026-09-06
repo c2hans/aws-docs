@@ -31,7 +31,3 @@ The based AMI in the GitHub was changed from Amazon Linux1 to Amazon Linux2 in J
  Within the **Amazon VPC** there exist two types of subnets: public (**Public** **Subnet**) and private (**App Subnet** and **Data Subnet**). Resources deployed into the public subnets will receive a public IP address and will be publicly visible on the internet. The **Application Load Balancer** (4) and a Bastion host for administration are deployed here. Resources deployed into the private subnets receive only a private IP address and hence are not publicly visible on the internet, improving the security of those resources. The **WordPress web** **server instances** (6), **ElastiCache cluster instances** (7), **Aurora MySQL database instances** (8), and **EFS Mount Targets** (9) are all deployed in private subnets.
 
  The remainder of this section covers each of these considerations in more detail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

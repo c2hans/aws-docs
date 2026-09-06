@@ -71,7 +71,3 @@ The S3 bucket whose name contains **LoggingBucket** is the centralized bucket fo
    \+ .. Choose the CloudFormation stack of the Centralized Logging with OpenSearch solution, and select the **Resources** tab. .. In the search bar, enter AWS::S3::Bucket. This will show all the S3 buckets created by Centralized Logging with OpenSearch solution, and the **Physical ID** field is the S3 bucket name. .. Go to the Amazon S3 console, and find the S3 bucket using the bucket name. **Empty** and **Delete** the S3 bucket.
 
 1. Delete the CloudFormation Stack of the Centralized Logging with OpenSearch solution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Logging with OpenSearch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ If you're new to Mobile Analytics, use Amazon Pinpoint instead. If you're curren
 + [Migrating to Amazon Pinpoint in the AWS Mobile SDKs or JavaScript Library](migrate-sdk.md)
 + [Migrating to the Amazon Pinpoint API](migrate-api.md)
 + [Migrating to the Amazon Pinpoint Console](migrate-console.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mobile Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mobileanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

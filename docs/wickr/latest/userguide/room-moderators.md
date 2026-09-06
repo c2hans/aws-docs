@@ -21,7 +21,3 @@ Groups cannot have moderators. Any group member can add members, and members can
 1. Choose ![Information icon](http://docs.aws.amazon.com/wickr/latest/userguide/images/icon-wickr-room-information.png) in the room window to view contact details.
 
    In the **Room Details** pane that appears, choose ![User actions icon](http://docs.aws.amazon.com/wickr/latest/userguide/images/icon-wickr-room-user-actions.png) for the user that you want to make moderator or remove as moderator, and choose one of those options.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

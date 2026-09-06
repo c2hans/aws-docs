@@ -53,7 +53,3 @@ In this phase, agent and user credentials are uploaded into the Connect Customer
 <a name="post-go-live-support--pgls-.525be35a-1667-5a63-b53b-5a23bf9502b5"></a>
 
 The project team remains engaged with the service line stakeholders, the business as usual (BAU) support teams, and end users during the first few weeks after the new contact center goes live. The project team can help users get started on the new system, get involved in troubleshooting live issues alongside the BAU support team, and improve contact flows based on customer and agent feedback.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

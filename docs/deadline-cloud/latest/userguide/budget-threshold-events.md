@@ -20,7 +20,3 @@ For examples of an EventBridge rule, see the following topics:
 + [Getting started with Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html).
 
 For more information about budget events, see the [Budget Threshold Reached event](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/events-detail-reference.html#event-detail-budget-threshold-reached) in the *Deadline Cloud Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

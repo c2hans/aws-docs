@@ -1133,6 +1133,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetCrossRegionRouting  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:GetCrossRegionRouting](#list_connect-action-GetCrossRegionRouting)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetCurrentMetricData  **
   - **SDK client:** connect
   - **IAM action:**  [connect:GetCurrentMetricData](#list_connect-action-GetCurrentMetricData)
@@ -2178,6 +2185,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   UpdateContactSchedule  **
   - **SDK client:** connect
   - **IAM action:**  [connect:UpdateContactSchedule](#list_connect-action-UpdateContactSchedule)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateCrossRegionRouting  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:UpdateCrossRegionRouting](#list_connect-action-UpdateCrossRegionRouting)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -3586,6 +3600,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [instance\*](#list_connect-resource-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Read
 
+- **   [GetCrossRegionRouting](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCrossRegionRouting.html)  **
+  - **Description:** Grants permission to retrieve the cross-region routing configuration for an Amazon Connect Global Resiliency instance
+  - **Resource types (\*required):** [instance\*](#list_connect-resource-instance)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** Read
+
 - **   [GetCurrentMetricData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentMetricData.html)  **
   - **Description:** Grants permission to retrieve current metric data for queues and routing profiles in an Amazon Connect instance
   - **Resource types (\*required):** [queue\*](#list_connect-resource-queue) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
@@ -4610,6 +4630,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:Channel](#list_connect-connect_Channel)<br />[connect:ContactAssociationId](#list_connect-connect_ContactAssociationId)<br />[connect:InstanceId](#list_connect-connect_InstanceId)<br />[connect:UserArn](#list_connect-connect_UserArn)
   - **Access level:** Write
 
+- **   [UpdateCrossRegionRouting](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateCrossRegionRouting.html)  **
+  - **Description:** Grants permission to update the cross-region routing configuration for an Amazon Connect Global Resiliency instance
+  - **Resource types (\*required):** [instance\*](#list_connect-resource-instance)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** Write
+
 - **   [UpdateDataTableAttribute](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateDataTableAttribute.html)  **
   - **Description:** Grants permission to update an attribute of a data table in an Amazon Connect instance
   - **Resource types (\*required):** [data-table\*](#list_connect-resource-data-table)
@@ -5054,7 +5080,3 @@ Amazon Connect defines the following condition keys that can be used in the `Con
 |   [connect:StorageResourceType](https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_service-with-iam.html)  | Filters access by restricting the storage resource type of the Amazon Connect instance storage configuration | String |
 |   [connect:Subtype](https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_service-with-iam.html)  | Filters access by restricting creation of a contact for specific subtypes | String |
 |   [connect:UserArn](https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_service-with-iam.html)  | Filters access by UserArn | ARN |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

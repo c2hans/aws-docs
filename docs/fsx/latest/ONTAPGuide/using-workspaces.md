@@ -94,7 +94,3 @@ You can use Amazon FSx to provide a shared folder to users in your organization.
 
 1. After the connection is made, you can see the shared folder (named `team-shared` in this example) in the SMB share named `workspace`.
 ![A Windows dialog showing a shared folder.](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/images/workspace-mounted.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

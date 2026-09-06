@@ -90,7 +90,3 @@ https://console.aws.amazon.com/elasticbeanstalk/home?region={{us-west-2}}#/newAp
 1. After the Elastic Beanstalk console opens, on the **Create a web app** page, choose **Review and launch** to view the settings that Elastic Beanstalk uses to create the application and launch the environment where the application runs.
 
 1. On the **Configure** page, choose **Create app** to create the application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

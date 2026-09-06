@@ -22,7 +22,3 @@ EMR Serverless provides a serverless runtime environment to simplify the operati
 You can store your data in AWS Secrets Manager and then use the secret ID in your EMR Serverless configurations. This way, you don't pass sensitive configuration data in plain text and expose it to external APIs.
 
 For more information, see [Secrets Manager for data protection with EMR Serverless](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/secrets-manager.html) in the *Amazon EMR Serverless User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

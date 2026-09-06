@@ -14,7 +14,3 @@ According to the [AWS Deployment Pipeline Reference Architecture](https://pipeli
 These metrics help teams track their progress toward becoming fully CI/CD. Teams should have open discussions with the organization's stakeholders regarding what the optimal goals should be. Situations and needs vary greatly from organization to organization, and even from team to team.
 
 It's very important to remember that rapid, drastic change usually increases the risk of problems arising. Set goals to aim for small, incremental improvements. A common optimal lead time for fully CI/CD pipelines is less than 3 hours. A team that starts with a lead time of 5.2 days should target a reduction of one day every few weeks. After this team reaches a lead time of one day or less, they can stay there for several months and move to a more aggressive lead time only if the team and organization stakeholders deem it necessary.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,7 +48,3 @@ To view details about a single instance, call the [get-deployment-instance](http
 To view a list of IDs for instances used in a deployment, call the [list-deployment-instances](https://docs.aws.amazon.com/cli/latest/reference/deploy/list-deployment-instances.html) command, specifying:
 + The unique deployment ID. To get the deployment ID, call the [list-deployments](https://docs.aws.amazon.com/cli/latest/reference/deploy/list-deployments.html) command.
 + Optionally, whether to include only specific instance IDs by their deployment status. (If not specified, all matching instance IDs will be listed, regardless of their deployment status.)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

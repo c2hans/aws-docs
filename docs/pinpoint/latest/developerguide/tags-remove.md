@@ -63,7 +63,3 @@ C:\> aws pinpoint untag-resource ^
 In the preceding example, make the following changes:
 + Replace {{resource-arn}} with the ARN of the resource that you want to remove tags from.
 + Replace {{key1}} and {{key2}} with the keys of the tags that you want to remove from the resource.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

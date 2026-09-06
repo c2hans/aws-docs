@@ -17,7 +17,3 @@ Elastic Beanstalk provides support for running Amazon RDS instances in your Elas
 Starting with today’s release you can decouple a database managed by Elastic Beanstalk from a Beanstalk environment. The environment’s health is not affected by the decoupling operation, and you can keep the database operational as an external database, available for multiple environments to connect to it. You also have the option to terminate an Elastic Beanstalk environment, while leaving the database operational.
 
 For more information, see [ Adding a database to your Elastic Beanstalk environment ](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.db.html) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

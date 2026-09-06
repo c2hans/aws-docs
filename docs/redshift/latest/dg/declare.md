@@ -63,6 +63,7 @@ The following table shows the maximum cumulative result set size for each cluste
 |  rg.4xlarge multiple nodes  | 1,600,000 |
 |  rg.xlarge multiple nodes  | 240,000 |
 |  rg.large multiple nodes  | 100,000 |
+|  rg.large single node  | 8,000 |
 |  ra3.16xlarge multiple nodes  | 14,400,000 |
 |  ra3.4xlarge multiple nodes  | 3,200,000 |
 |  ra3.xlplus multiple nodes  | 1,000,000 |
@@ -166,7 +167,3 @@ SELECT message
       a 1
       a 3
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -73,19 +73,19 @@ Before connecting your database to Amazon Connect Decisions, you'll need to set 
 
    ```
    {
-     "Sid": "Allow GDIS service to decrypt",
-     "Effect": "Allow",
-     "Principal": {
-       "Service": "scn.amazonaws.com"
-     },
-     "Action": [
-       "kms:Decrypt",
-       "kms:DescribeKey",
-       "kms:CreateGrant",
-       "kms:GenerateDataKeyWithoutPlaintext"
-     ],
-     "Resource": "*"
-   }
+         "Sid": "Allow GDIS service to decrypt",
+         "Effect": "Allow",
+         "Principal": {
+           "Service": "scn.amazonaws.com"
+         },
+         "Action": [
+           "kms:Decrypt",
+           "kms:DescribeKey",
+           "kms:CreateGrant",
+           "kms:GenerateDataKeyWithoutPlaintext"
+         ],
+         "Resource": "*"
+       }
    ```
 
 1. **Review and finalize**
@@ -120,10 +120,10 @@ Now that you have a KMS key, you'll create a secret in AWS Secrets Manager to se
 
    ```
    Key: username, Value: your database username
-   Key: password, Value: your database password
-   Key: host, Value: your database hostname (e.g., database.example.com)
-   Key: port, Value: your database port (e.g., 3306 for MySQL)
-   Key: database, Value: your database name
+       Key: password, Value: your database password
+       Key: host, Value: your database hostname (e.g., database.example.com)
+       Key: port, Value: your database port (e.g., 3306 for MySQL)
+       Key: database, Value: your database name
    ```
 
 1. **Select your encryption key**
@@ -141,16 +141,16 @@ Now that you have a KMS key, you'll create a secret in AWS Secrets Manager to se
 
    ```
    {
-     "Version" : "2012-10-17"		 	 	 ,
-     "Statement" : [ {
-       "Effect" : "Allow",
-       "Principal" : {
-         "Service" : "scn.amazonaws.com"
-       },
-       "Action" : [ "secretsmanager:GetSecretValue", "secretsmanager:DescribeSecret" ],
-       "Resource" : "<COPY-THE-SECRET-ARN-HERE-AFTER-CREATING>"
-     } ]
-   }
+         "Version" : "2012-10-17",
+         "Statement" : [ {
+           "Effect" : "Allow",
+           "Principal" : {
+             "Service" : "scn.amazonaws.com"
+           },
+           "Action" : [ "secretsmanager:GetSecretValue", "secretsmanager:DescribeSecret" ],
+           "Resource" : "<COPY-THE-SECRET-ARN-HERE-AFTER-CREATING>"
+         } ]
+       }
    ```
 
 1. **Save the policy**
@@ -278,7 +278,3 @@ Once your connection is established and tables are selected, Amazon Connect Deci
 + **Update credentials securely**: When database passwords change, update them in AWS Secrets Manager, Amazon Connect Decisions will automatically use the new credentials
 + **Document custom configurations**: Keep notes about any special refresh schedules, transformation logic, or connection requirements for your team's reference
 + **Review table selections periodically**: As your data needs evolve, revisit which tables you're ingesting and whether refresh schedules still align with business requirements
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -190,7 +190,3 @@ You are all set for working with the message streaming APIs.
 1. Because SNS has [limited retention](https://aws.amazon.com/blogs/aws/sns-ttl-control/), we recommend that you set up [Amazon Simple Queue Service (Amazon SQS)](https://aws.amazon.com/sqs/) [Amazon Kinesis](https://aws.amazon.com/kinesis/), or another service to retain messages.
 
 1. Using [StopContactStreaming](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContactStreaming.html) is optional and not required if the chats are being [disconnected](disconnect-hang-up.md) through a contact flow, or if the customer disconnects the chat. However, `StopContactStreaming` provides the option to stop the message streaming on the SNS topic, even if the chat is active and ongoing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

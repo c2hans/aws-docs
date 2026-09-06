@@ -37,7 +37,3 @@ For more information about these settings, see [AWS WAF rules that match labels]
 <a name="label-match-where-to-find"></a>
 + **Rule builder** on the console – For **Request option**, choose **Has label**.
 + **API** – [LabelMatchStatement](https://docs.aws.amazon.com/waf/latest/APIReference/API_LabelMatchStatement.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

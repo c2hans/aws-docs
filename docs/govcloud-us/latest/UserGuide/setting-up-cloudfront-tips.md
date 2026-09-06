@@ -15,7 +15,3 @@ As you set up CloudFront to serve your AWS GovCloud (US) content, keep the follo
 + Since CloudFront is not within AWS GovCloud (US) Regions, CloudFront is not within the ITAR boundary. If you want to use CloudFront to distribute your export-controlled data, encrypt your content in transit.
 + Integrated support for CloudFront Live Streaming is not available for origins located in the AWS GovCloud (US) Regions.
 + For detailed information about CloudFront, see the [CloudFront documentation](https://aws.amazon.com/documentation/cloudfront/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

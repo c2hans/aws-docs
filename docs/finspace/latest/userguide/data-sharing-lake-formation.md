@@ -24,7 +24,3 @@ The following diagram illustrates how you can access FinSpace data views with AW
 + Next, the AWS support engineer enables the database and the data view tables to be shared in the designated FinSpace environment within the customer’s account.
 + A Lake Formation administrator in the customer’s account creates a resource link to the shared database. Then, the administrator grants access to the resource link, the shared database, and the shared tables to other principals in the customer account.
 + Finally, principals in the customer’s account are able to access the FinSpace data view tables with AWS integrated services such as Athena, Amazon Redshift, Quick, and SageMaker AI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

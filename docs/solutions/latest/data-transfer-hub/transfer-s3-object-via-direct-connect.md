@@ -63,7 +63,3 @@ As DTH deployment VPC has public internet access (IGW or NAT), EC2 worker/finder
  DTH worker nodes running on EC2 transfer data from bucket in one AWS account to bucket in another AWS account.
 +  To access bucket in the account where DTH is deployed, DTH worker nodes use S3 Gateway Endpoint
 +  To access bucket in another account, DTH worker nodes use S3 Private Link by S3 Interface Endpoint
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

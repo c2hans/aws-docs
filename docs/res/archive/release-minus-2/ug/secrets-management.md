@@ -38,7 +38,3 @@ The following secret ARN values are contained in the `{{<envname>}}-cluster-sett
 | cluster.secretsmanager.kms\_key\_id |  |
 | cluster.load\_balancers.external\_alb.certificates.private\_key\_secret\_arn | stack |
 | cluster-manager.client\_secret |  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

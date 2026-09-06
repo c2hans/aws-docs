@@ -20,7 +20,3 @@ Scenarios target an intermediate level of experience to help you understand serv
 + [Permission policy to grant read-only access to Compute Optimizer Automation for a management account of an organization](organizations_example_iam-policies.AWSMettleDocs.latest.userguide.automation.xml.6_section.md)
 + [Permission policy to grant read-only access to Compute Optimizer Automation for standalone AWS accounts](organizations_example_iam-policies.AWSMettleDocs.latest.userguide.automation.xml.4_section.md)
 + [Permission policy to grant service-linked role permissions for Compute Optimization Automation](organizations_example_iam-policies.AWSMettleDocs.latest.userguide.slr-automation.xml.1_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -9,6 +9,7 @@ The following table describes the documentation releases for Aurora MySQL Releas
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Aurora MySQL version 8.4.8](AuroraMySQL.Updates.848.md) | Aurora MySQL version 8.4.8 is available. This version is compatible with MySQL 8.4.8. | September 3, 2026 |
 | [Aurora MySQL version 3.13.0, compatible with MySQL 8.0.45](AuroraMySQL.Updates.3130.md) | Aurora MySQL version 3.13.0 is available. This version is compatible with MySQL 8.0.45. For more information about this release, see [Aurora MySQL database engine updates 2026-08-27 (version 3.13.0, compatible with MySQL 8.0.45)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.3130.html). | August 27, 2026 |
 | [Aurora MySQL version 3.10.5, compatible with MySQL 8.0.42](AuroraMySQL.Updates.3105.md) | Aurora MySQL version 3.10.5 is available. This version is compatible with MySQL 8.0.42. For more information, see [Aurora MySQL database engine updates 2026-07-30 (version 3.10.5, compatible with MySQL 8.0.42)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.3105.html). | July 30, 2026 |
 | [Aurora MySQL version 8.4.7](AuroraMySQL.Updates.847.md) | Aurora MySQL version 8.4.7 is available. This version is compatible with MySQL 8.4.7. | May 21, 2026 |
@@ -136,7 +137,3 @@ The following table describes the documentation releases for Aurora MySQL Releas
 | [Aurora MySQL version 2.02.4](AuroraMySQL.Updates.2024.md) | Aurora MySQL version 2.02.4 is available. | September 21, 2018 |
 | [Aurora MySQL version 1.18.0](AuroraMySQL.Updates.1180.md) | Aurora MySQL version 1.18.0 is available. | September 20, 2018 |
 | [Aurora MySQL version 1.17.6](AuroraMySQL.Updates.1176.md) | Aurora MySQL version 1.17.6 is available. | September 6, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

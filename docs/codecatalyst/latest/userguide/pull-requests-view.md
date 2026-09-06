@@ -44,7 +44,3 @@ Not all changes in a pull request can be displayed in the console. For example, 
 1. To view quality reports for this pull request, choose **Reports**.
 **Note**
 A workflow must be configured to generate reports in order for them to show up in your pull requests. For more information, see [Testing with workflows](test-workflow-actions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

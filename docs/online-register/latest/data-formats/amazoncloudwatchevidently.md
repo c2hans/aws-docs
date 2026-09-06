@@ -23,7 +23,3 @@ Amazon CloudWatch Evidently provides the following APIs for data retrieval.
 | <a name="evidently-ListSegments"></a>[ListSegments](https://docs.aws.amazon.com/cloudwatchevidently/latest/APIReference/API_ListSegments.html) | List segments | Read |
 | <a name="evidently-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/cloudwatchevidently/latest/APIReference/API_ListTagsForResource.html) | List tags for resources | Read |
 | <a name="evidently-TestSegmentPattern"></a>[TestSegmentPattern](https://docs.aws.amazon.com/cloudwatchevidently/latest/APIReference/API_TestSegmentPattern.html) | Test a segment pattern | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

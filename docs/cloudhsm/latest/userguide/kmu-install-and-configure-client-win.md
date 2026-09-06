@@ -31,7 +31,3 @@ To work with a hardware security module (HSM) in your AWS CloudHSM cluster on Wi
 + If you are updating the client, existing configuration files from previous installations are *not* overwritten.
 + The AWS CloudHSM client installer for Windows automatically registers the Cryptography API: Next Generation (CNG) and Key Storage Provider (KSP). To uninstall the client, run the installer again and follow the uninstall instructions.
 + If you are using Linux, you can install the Linux client. For more information, see [Install and configure the AWS CloudHSM client for KMU (Linux)](kmu-install-and-configure-client-linux.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

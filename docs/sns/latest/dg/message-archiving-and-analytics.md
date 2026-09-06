@@ -13,7 +13,3 @@ Amazon SNS FIFO topics support an in-place, no-code, message archive that lets t
 | --- | --- | --- |
 | Message archiving | [Fanout to Firehose delivery streams](sns-firehose-as-subscriber.md) | [Amazon SNS message archiving for FIFO topic owners](message-archiving-and-replay-topic-owner.md) |
 | Message replay | Replay for standard topics is not a built in feature. Many customers build their own based on their message archive. | [Amazon SNS message replay for FIFO topic subscribers](message-archiving-and-replay-subscriber.md) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

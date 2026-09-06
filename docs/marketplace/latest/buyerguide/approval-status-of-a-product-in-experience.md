@@ -22,7 +22,3 @@ The links in **Product** column of all tables in Private Marketplace opens a pag
 1. Choose **Experiences with product declined** tab to view all experiences where the product is declined.
 
 1. From any of the tabs, select experiences and choose **Approve product** or **Decline product** to approve or decline the product from the selected experiences.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,7 +60,3 @@ You can only export forecast commits data in EDI format.
 1. From the **Actions** drop-down, choose **Export EDI data**.
 
    The .json file with the forecast commits information is downloaded to your local computer and also downloaded to the Amazon S3 folder created as part of the outbound connection setup for Supply Planning.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

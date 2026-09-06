@@ -46,7 +46,3 @@ The high-level flow for the solution components deployed with the AWS CloudForma
    1.  **Queue and dispatch the notification**: The Orchestrator sends the remediation result to a notification [Amazon Simple Queue Service](https://aws.amazon.com/sqs/) (Amazon SQS) queue. A notification dispatcher Lambda function consumes the queue and fans the result out through a solution-managed [Amazon Simple Notification Service](https://aws.amazon.com/sns/) (Amazon SNS) topic. In addition to the solution-managed SNS topic, you can create notification configurations from the Web UI to deliver findings and remediation results to email, Slack, JIRA, ServiceNow, or an SNS topic. For more information, see the [Configure notifications](configure-notifications.md) section.
 
    1.  **Monitor delivery**: The solution’s CloudWatch alarms publish to an SNS alarm topic, and the ASR Amazon CloudWatch dashboard surfaces remediation and notification-pipeline health so you can detect delivery failures.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

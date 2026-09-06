@@ -333,7 +333,3 @@ When updating an existing bridge source to use SSM, keep these key points in min
 1. **Verifying bridge source information**: You can view the current state of your bridge sources (including the multicast source IP) by using the [DescribeBridge](https://docs.aws.amazon.com/mediaconnect/latest/api/v1-bridges-bridgearn.html) API or checking the bridge details in the console.
 
 By following these guidelines, you can successfully manage your bridge's multicast settings, switching between SSM and ASM modes as needed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

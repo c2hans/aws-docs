@@ -26,7 +26,3 @@ AWS Elemental MediaTailor provides the following APIs for data retrieval.
 | <a name="mediatailor-ListSourceLocations"></a>[ListSourceLocations](https://docs.aws.amazon.com/mediatailor/latest/apireference/sourcelocations.html) | Retrieve the list of existing source locations | Read |
 | <a name="mediatailor-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/mediatailor/latest/apireference/tags-resourcearn.html) | List the tags assigned to the specified playback configuration resource | Read |
 | <a name="mediatailor-ListVodSources"></a>[ListVodSources](https://docs.aws.amazon.com/mediatailor/latest/apireference/sourcelocation-sourcelocationname-vodsources.html) | Retrieve the list of existing VOD sources on the source location with the specified source location name | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,7 +50,3 @@ To understand this behavior (and make sure that your application doesn't block c
 This allows you to preview the guardrail evaluation and see that `VIOLENCE` was detected (`true`), but no action was taken because you configured that to `NONE`.
 
 If you don't want to block that text, you might tune the filter strength to `MEDIUM` or `LOW` and redo the evaluation. Once you get the results you're looking for, you can update your policy action to `BLOCK` or `ANONYMIZE`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

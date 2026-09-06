@@ -110,7 +110,3 @@ Before you add an SMF, you must set up a Deadline Cloud farm, queue, and fleet. 
 
 After creating and testing a service-managed fleet, you should remove the resources that you created to avoid unnecessary charges.
 + [Clean up your farm resources in Deadline Cloud](cleaning-up.md) to shut down the resources that you used for this tutorial.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,7 +53,3 @@ To learn more about modifying branch protection rules in GitHub, see [Creating a
    Consider reassigning this issue to a user. This will help you stay within the quotas for generative AI feature usage.
 
 **Solution**: If Amazon Q Developer is not able to process your issue and generate code for it, create a new issue and apply the **Amazon Q development agent** label to the new issue. To learn more about creating an issue and applying an Amazon Q Developer agent label, see [Developing features and iterating with Amazon Q Developer in GitHub](github-feature-development.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

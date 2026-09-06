@@ -33,7 +33,3 @@ The following table lists the top recommendations for the highest-impact cost op
 The estimated savings in the preceding table apply to each individual technical domain, not overall AWS spend within an account. For example, you can implement the Instance Scheduler in a variety of environment types and sizes that can alter the potential savings. The estimates apply specifically to Amazon EC2 instance costs and don't imply any overall savings for other AWS services. These estimates are provided as a gauge, not a guarantee.
 
 MACO experts are available to talk about cost optimizations in more depth. To set up a meeting for a deep dive into your use case, contact your account team or email optimize-microsoft@amazon.com.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

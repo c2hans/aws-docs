@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/information-ex
 # View extracted information
 <a name="information-extraction-view"></a>
 
-Extracted information is available in the following locations:
+Extracted information appears in alphabetical order by display label, and is available in the following locations:
 + **Contact Control Panel (CCP)** – During after-call work
 + **Contact details page** – After the contact ends
 + **Contact search** – Displayed in the contact search results table
@@ -74,7 +74,3 @@ Failed extractions appear under `JobDetails.SkippedAnalysis` with the feature `I
 | `FAILED_SAFETY_GUIDELINES` | Extraction processing did not satisfy security or quality guardrails. |
 | `FEATURE_UNAVAILABLE` | The instance is an Amazon Connect Customer Basic instance, which does not support information extraction. |
 | `SYSTEM_ERROR` | An unexpected system error occurred during extraction. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

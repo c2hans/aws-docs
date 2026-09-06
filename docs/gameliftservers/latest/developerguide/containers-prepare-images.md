@@ -50,7 +50,7 @@ If you're trying out this feature and don't have a working game server build yet
 ## Dockerfile template for a game server container image
 <a name="w2aab9c11c13c17c15b1"></a>
 
-This template contains the minimum instructions that a game server container needs to usable in an Amazon GameLift Servers fleet. Modify the content as needed for your game server.
+This template contains the minimum instructions that a game server container needs to be usable in an Amazon GameLift Servers fleet. Modify the content as needed for your game server.
 
 ```
 # Base image
@@ -109,7 +109,7 @@ ENTRYPOINT ["/bin/sh", "-c", "./$GAME_EXECUTABLE", "$LAUNCH_PARAMS"]
 ## Push a container image to Amazon ECR
 <a name="containers-prepare-images-upload"></a>
 
-After you've created a container image for deployment to Amazon GameLift Servers, store the image In a public or private repository in Amazon ECR. This repository is assigned a URI value, which Amazon GameLift Servers uses to take a snapshot of the image for deployment to a container fleet.
+After you've created a container image for deployment to Amazon GameLift Servers, store the image in a public or private repository in Amazon ECR. This repository is assigned a URI value, which Amazon GameLift Servers uses to take a snapshot of the image for deployment to a container fleet.
 
 **Note**
 If you don't yet have an Amazon ECR private repository, then [create one](https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-create.html).
@@ -143,7 +143,3 @@ If you don't yet have an Amazon ECR private repository, then [create one](https:
    ```
    [~/work/glc]$ docker image push  {{<Amazon ECR private repository URI>}}
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

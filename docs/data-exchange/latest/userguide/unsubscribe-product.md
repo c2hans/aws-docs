@@ -26,7 +26,3 @@ After your subscription expires, you immediately lose access to all data sets an
 1. Do not export any more data, and let the subscription run its course.
 **Note**
 For paid products, consult the provider's refund policy. Contact the provider for any exceptions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

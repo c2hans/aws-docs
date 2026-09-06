@@ -23,7 +23,3 @@ When you enable OCR, you must make sure that you don't use the `--skip-all` opti
 For more information about setting up to convert captions using OCR, see [Sidecar captions or SMPTE-TT captions in MS Smooth](output-sidecar-and-smptett-mss.md).
 
 For a list of languages supported with OCR conversion, see [Reference: Languages supported with OCR captions](captions-ocr-languages.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

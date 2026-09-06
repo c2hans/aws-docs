@@ -132,7 +132,3 @@ The ID of the AWS account, with no hyphens (for example, `123456789012`).
 The ID of the WorkSpaces Instance (for example, `"Resource": "arn:aws:workspaces-instances:region:account_id:workspaceinstance/workspace_instance_identifier"`).
 
 You can use the `*` wildcard to specify all WorkSpaces Instances that belong to a specific account in a specific Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-core` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

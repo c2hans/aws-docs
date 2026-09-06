@@ -38,7 +38,3 @@ Important details to highlight in this page include:
 + **Endpoint**: The endpoints which host your model for real-time inference. Within the Model Dashboard, you can select the endpoint column to view performance metrics such as CPU, GPU, disk, and memory utilization of your endpoints in real time to help you track the performance of your compute instances.
 + **Batch transform job**: The most recent batch transform job that ran using this model. This column helps you determine if a model is actively used for batch inference.
 + Model details: Each entry in the dashboard links to a model details page where you can dive deeper into an individual model. You can access the model’s lineage graph, which visualizes the workflow from data preparation to deployment, and metadata for each step. You can also create and view the model card, review alert details and history, assess the performance of your real-time endpoints, and access other infrastructure-related details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

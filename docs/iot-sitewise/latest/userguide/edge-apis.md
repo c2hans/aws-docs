@@ -15,7 +15,3 @@ After you configure these APIs, you can retrieve comprehensive data about your a
 + [Enable CORS on AWS IoT SiteWise Edge APIs](enable-cors-edge-apis.md)
 + [Configure session timeouts for AWS IoT SiteWise Edge](edge-apis-session-timeout.md)
 + [Tutorial: List asset models on an AWS IoT SiteWise Edge gateway](edge-apis-tutorial.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

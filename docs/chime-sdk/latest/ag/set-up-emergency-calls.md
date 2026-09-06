@@ -18,7 +18,3 @@ The following sections explain how to use both options.
 + [Validating addresses for emergency calls](validate-emergency-addresses.md)
 + [Setting up third-party emergency routing numbers](chime-voice-connector-emergency-calling.md)
 + [Using PIDF-LO in emergency calls](use-pidf-lo.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

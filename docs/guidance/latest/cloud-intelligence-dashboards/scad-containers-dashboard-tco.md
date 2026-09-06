@@ -130,7 +130,3 @@ From this visual, we can learn that for the label key we selected, the label val
 You can continue scrolling down the sheet to see other visuals, breaking down the costs by different dimensions, allowing you to investigate the cost of your application, both from the K8s perspective and the AWS services perspective.
 
 The same process can be repeated with your own labels. To use your own labels, repeat the same process outlined earlier in this page, to add your labels to the Athena view. Then in the dashboard, the process is the same, but in this case, the calculated fields are named `cat_selector_labels_tags_explorer` and `cat_selector_include_exclude_labels_tags_explorer`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

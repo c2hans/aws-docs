@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/sysops-administ
 + Skill 2.3.2: Use various methods to restore databases (for example, point-in-time restore) to meet recovery time objective (RTO), recovery point objective (RPO), and cost requirements.
 + Skill 2.3.3: Implement versioning for storage services (for example, Amazon S3, Amazon FSx).
 + Skill 2.3.4: Follow disaster recovery procedures and best practices (for example, backup and restore, pilot light, warm standby, active/active).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

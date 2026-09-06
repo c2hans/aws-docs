@@ -28,7 +28,3 @@ Follow this procedure if you want to enable the blackout feature in a MediaLive 
    + **Network end blackout image**: To use a special image for network end blackout. In the **URL** field, enter the path to a file in an Amazon S3 bucket. For integration with MediaLive, the bucket name mustn't use dot notation, which means it mustn't use . (dot) between the words in the bucket name. The file must be of type .bmp or .png. Also enter the user name and Systems Manager password for accessing the S3 bucket. See [About the feature for creating password parameters](requirements-for-EC2.md#about-EC2Password).
 
 1. For **Additional settings**, in **Network ID**, type the EIDR ID of the network in the format 10.nnnn/xxxx- xxxx- xxxx- xxxx-xxxx-c (case insensitive). Only network end events with this ID will trigger blackout.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

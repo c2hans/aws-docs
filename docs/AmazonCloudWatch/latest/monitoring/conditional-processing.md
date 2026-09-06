@@ -156,7 +156,3 @@ length(message) > 100 and contains(message, "error")
 + Expression maximum length is 256 characters.
 + Parser processors (except Grok) do not support conditional processing. This includes JSON, CSV, KeyValue, WAF, Postgres, CloudFront, VPC, Route53, and OCSF parsers.
 + If the Grok processor is used as the parser (first processor) in a pipeline and its `when` condition evaluates to false, the entire pipeline does not execute for that log event.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

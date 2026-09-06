@@ -47,7 +47,3 @@ Identifying the home Region is crucial for the successful deployment of the ISB 
 
 **Note**
 The home Region is only for deployment resources. The sandbox accounts can use any Regions that are defined in the managed Regions list (CFN Param).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ The following table describes significant changes to this guide.
 | Update | Revised the section about [pod evictions during zonal disruptions](pod-eviction.md). | October 29, 2025 |
 | Update | Revised the [Use pod topology spread constraints](spread-workloads.md#spread-constraints) section. | January 27, 2025 |
 | Initial publication | — | October 23, 2024 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
  At first blush, this can seem like a very appealing strategy for those SaaS providers that require a silo environment. It certainly can simplify some aspects of management and migration of individual tenants. Assembling a view of your tenant costs would also be more straightforward because you can summarize the AWS expenses at the Linked Account level.
 
  Even with these advantages, the Linked Account silo model has important limitations. Provisioning, for example, is certainly more complex. In addition to creating the tenant’s infrastructure, you need to automate the creation of each Linked Account and adjust any limits that need it. The larger challenge, however, is scale. AWS has constraints on the number of Linked Accounts you can create, and these limits aren’t likely to align with environments that will be creating a large number of new SaaS tenants.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

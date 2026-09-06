@@ -82,7 +82,3 @@ The **Transcript** lets you review the conversation utterances and your bot’s 
   + Switched intent: {{intent name}} – The bot has switched to a different intent based on the utterance.
   + {{intent name}}: Success – The bot has fulfilled the intent.
 + **Slot state** – Specifies the slot that the bot is eliciting during an utterance, if applicable, and the value that the customer provides.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

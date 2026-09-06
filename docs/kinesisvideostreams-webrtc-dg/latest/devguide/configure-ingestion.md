@@ -154,7 +154,3 @@ The live web page with this code sample is available for use on [GitHub](https:/
 Expand the **WebRTC Ingestion and Storage** node, verify that the **Stream Name** field is empty, then choose **Update Media Storage Configuration**. The channel will no longer be configured to ingest media to the specified stream.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams-webrtc-dg` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

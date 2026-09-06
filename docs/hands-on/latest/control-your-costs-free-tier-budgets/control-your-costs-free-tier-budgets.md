@@ -108,7 +108,3 @@ Congratulations\! You have finished the Control your AWS Costs tutorial.
 You have successfully analyzed your Free Tier usage, explored and managed your credits, and set up cost alerts using AWS Budgets. You can now confidentially explore the portfolio of services without incurring costs, making it even easier to get started with AWS.
 
 For more information about AWS Free Tier, see the [AWS Free Tier User Guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html?trk=769a1a2b-8c19-4976-9c45-b6b1226c7d20&sc_channel=el), [AWS Free Tier Blog](https://aws.amazon.com/blogs/aws/aws-free-tier-update-new-customers-can-get-started-and-explore-aws-with-up-to-200-in-credits/), or [AWS Free Tier FAQs](https://aws.amazon.com/free/free-tier-faqs/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -172,7 +172,3 @@ The following related resources can help you as you work with this rule.
 + [Tutorial: Create a variable check rule for a pipeline as an entry condition](tutorials-varcheckrule.md) – This section provides a tutorial with steps for creating an On Entry condition with a variable check rule.
 + [Variables reference](reference-variables.md) – This section provides reference information and examples for pipeline variables.
 + For more information about rules and conditions, see [Condition](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Condition.html), [RuleTypeId](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_RuleTypeId.html), and [RuleExecution](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_RuleExecution.html) in the *CodePipeline API Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

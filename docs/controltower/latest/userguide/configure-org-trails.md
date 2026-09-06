@@ -8,7 +8,3 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/configure-
 As a best practice, we recommend that you set up logging. If you wish to allow AWS Control Tower to set up an organization-level CloudTrail trail and manage it for you, choose **Opt in**. If you wish to manage logging with your own CloudTrail trails or a third-party logging tool, choose **Opt out**. Confirm your selection when requested to do so in the console. You can change your selection, and opt into, or opt out of, organization-level trails when you update your landing zone.
 
 You can set up and manage your own CloudTrail trails at any time, including organization-level and account-level trails. If you set up duplicate CloudTrail trails, you may incur duplicate costs when CloudTrail events are logged.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

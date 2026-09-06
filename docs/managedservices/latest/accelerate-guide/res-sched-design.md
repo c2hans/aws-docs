@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 **Note**
 The Resource Scheduler doesn't validate that a resource is started or stopped. It makes the API call for the relevant service and moves on. If the API call fails, it logs the error for investigation.
 AMS Resource Scheduler does not support AWS Backup window. If you map an AWS Backup-enabled RDS instance with Resource Scheduler schedule, for the backup to work as expected, the backup window must lie within the running window of the schedule.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

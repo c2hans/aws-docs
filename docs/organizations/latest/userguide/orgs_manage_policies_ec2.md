@@ -71,7 +71,3 @@ The following table displays the attributes supported for Amazon EC2 related ser
   - **Policy effect:** Controls if Amazon EBS snapshots are publicly accessible.
   - **Policy contents:** [View policy](orgs_manage_policies_ec2_syntax.md#ec2-policy-vpc-eb2-snapshots-block-public-access)
   - **More information:** For more information, see [Block public access for Amazon EBS snapshots ](https://docs.aws.amazon.com/ebs/latest/userguide/block-public-access-snapshots.html) in the Amazon Elastic Block Store User Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

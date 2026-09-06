@@ -85,7 +85,3 @@ If your workload revokes enough certificates to fill the CRL, issuance is blocke
 + **Monitor `CertificatesPerCA` with CloudWatch alarms.** Set an alarm at 70–80% of your configured issuance limit so you can request an increase or rotate to a new CA before users are affected.
 + **Plan for CA rotation.** Because the issuance limit is cumulative, high-volume deployments eventually need to rotate to a new CA or request periodic limit increases.
 + **Consider partitioned CRLs with caution.** Partitioned CRLs support 100M certificates for both the issuance and CRL capacity limits. However, they have a known limitation: every time a new CRL partition is rotated, there can be up to a 15-minute window where the CRL file is absent, which might cause authentication failures.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

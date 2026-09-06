@@ -75,7 +75,3 @@ When completed, typically within 14 days, an AWS Wickr support representative wi
 1. The transfer is now complete\! You will see your Wickr network dashboard.
 
 Billing for your network will now be transferred to your AWS account. Allow up to 3 business days for support to reach out with a confirmation. After receiving your confirmation, you can view and pay your bill through the AWS console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

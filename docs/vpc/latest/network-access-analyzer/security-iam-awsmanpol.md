@@ -32,7 +32,3 @@ View details about updates to AWS managed policies for Network Access Analyzer s
 | [AmazonVPCNetworkAccessAnalyzerFullAccessPolicy](#AmazonVPCNetworkAccessAnalyzerFullAccessPolicy) – Update to an existing policy | Removed resource ID prefixes from the resource ARNs used to allow tagging Network Access Analyzer resources on create. | November 3, 2023 |
 | [AmazonVPCNetworkAccessAnalyzerFullAccessPolicy](#AmazonVPCNetworkAccessAnalyzerFullAccessPolicy) – New policy | Added a policy that provides full access to Network Access Analyzer. | June 15, 2023 |
 | Network Access Analyzer started tracking changes | Network Access Analyzer started tracking changes for its AWS managed policies. | December 1, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Virtual Private Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

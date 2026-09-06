@@ -22,7 +22,3 @@ After you enable projects for the Connector, Support integration requires Jira a
 1. Under **Support Configuration**, in the **Sync Interval,** you can change the sync interval if you want. The **Sync Interval** determines how often Jira Service Management conducts syncs for all **AWS Services** and **AWS Categories**.** SQS Queue Name **identifies the Amazon SQS queue from which the Support case events sync to JSM
 
 1. Choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-
  Using Amazon Textract (which offers AI powered extraction of text and structured data from documents) and a series of models in an inference pipeline, AWS was able to provide the recommended insights. This also allowed AWS to integrate human judgement into the workflow wherever needed with A2I, to help the models learn better and improve over time.
 
  A front-end web application integrated with augmented AI instills confidence in the predictions and recommendations being made by the models. This is especially important in creating and maintaining a matured, productionized, enterprise AI system such as the ones in our use case. The Ground Truth labels that were acquired using A2I and human-in-the-loop workflow are actively used with SageMaker AI Model Monitor to continuously evaluate concept drift. For all other drifts in model bias, feature importance, and explainability, use Model Monitor to compare against the baseline provided to each SageMaker AI deployed endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

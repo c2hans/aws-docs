@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 ![Diagram showing how to make isolation transparent.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/making-isolation-transparent.png)
 
 Here you’ll notice that we have two tenants that have resources. Some of the resources are deployed in a silo model (on the left and right). Other resources for these tenants are deployed in a pool model (in the overlapping portion of these two circles). The idea here is that, despite the fact that there is a mix of silo and pool here, your system offers a comprehensive approach to isolation that prevents any cross-tenant access. To your customer, they just need assurance that this isolation is in place. Ideally, they won’t need to know which resources are pooled and which are siloed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

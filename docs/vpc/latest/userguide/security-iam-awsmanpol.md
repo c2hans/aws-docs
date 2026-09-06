@@ -59,7 +59,3 @@ View details about updates to AWS managed policies for Amazon VPC since this ser
 | [AWS managed policy: AmazonVPCFullAccess](#security-iam-awsmanpol-AmazonVPCFullAccess) – Update to an existing policy | Added the DescribeSecurityGroupRules and ModifySecurityGroupRules actions, which allow you to view and modify [security group rules](security-group-rules.md). | August 2, 2021 |
 | [AWS managed policy: AmazonVPCFullAccess](#security-iam-awsmanpol-AmazonVPCFullAccess) – Update to an existing policy | Added actions for carrier gateways, IPv6 pools, local gateways, and local gateway route tables. | June 23, 2021 |
 | [AWS managed policy: AmazonVPCReadOnlyAccess](#security-iam-awsmanpol-AmazonVPCReadOnlyAccess) – Update to an existing policy | Added actions for carrier gateways, IPv6 pools, local gateways, and local gateway route tables. | June 23, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

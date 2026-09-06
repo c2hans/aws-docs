@@ -28,7 +28,3 @@ As a result, files are created with the following names:
   + **index-low-00001.ts**, **index-low-00002.ts**,** index-low-00003.ts**, and so on
 
 The files will be published to both URL inputs on MediaPackage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

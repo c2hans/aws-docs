@@ -44,7 +44,3 @@ The core ASN and the transit gateway ASN must be unique. ASNs must be unique for
 1. Choose **Create peering**.
 
    The **Create peering progress** displays the current status of the peering deployment. When deployment is complete, the **State** of the peering on the **Peerings** page displays **Available**. You can then use this peering to create a transit gateway route table attachment. See [Transit gateway route table attachments in AWS Cloud WAN](cloudwan-tgw-attachment.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

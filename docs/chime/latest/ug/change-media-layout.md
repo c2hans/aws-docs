@@ -20,7 +20,3 @@ Hiding your video tile doesn't turn off your camera. Other attendees can see you
    + **Sort active speaker into view** – Ensures that the video tile for the active speaker is always visible. This setting is turned on by default.
    + **Hide my own screen share view** – Prevents the "infinite windows" effect. If you clear this setting, you and others see the effect when you select the meetings window while sharing your screen. Amazon Chime enables this setting by default.
 ![The Amazon Chime meetings window, repeated to infinity.](http://docs.aws.amazon.com/chime/latest/ug/images/infinity-mirror.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

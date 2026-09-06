@@ -46,7 +46,3 @@ Data Transformation AI agent authors and edits a profile's conversion logic.
 + For CSV, it analyzes sample files to produce a YAML configuration with column-to-FHIR field mappings, date and value translations, primary/foreign-key relationships, and aggregation rules, flagging anything that needs review.
 
 You can interact with the agent through natural language including any of the following combinations: instructions, FHIR validation errors, schema documentation, and sample data. You can also edit profiles manually.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

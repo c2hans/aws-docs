@@ -82,7 +82,3 @@ Snowflake connection parameters
 | timezone | Type: string - maxLength: 128 | None by default, which honors the Snowflake parameter TIMEZONE. Set to a valid time zone (such as America/Los\_Angeles) to set the session time zone. | Timezone in a format similar to America/Los\_Angeles | No |
 | validate\_default\_parameters | Type: boolean | Set to true to raise an exception if the specified database, schema, or warehouse doesn’t exist. Defaults to false. |  | No |
 | warehouse | Type: string - maxLength: 256 | The name of the default warehouse to use. |  | No |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

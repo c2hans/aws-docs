@@ -20,7 +20,3 @@ The following table lists the hyperparameters that you can set for the Amazon Sa
 | index\_metric | The metric to measure the distance between points when finding nearest neighbors. When training with `index_type` set to `faiss.IVFPQ`, the `INNER_PRODUCT` distance and `COSINE` similarity are not supported.<br />**Optional**<br />Valid values: *L2* for Euclidean-distance, *INNER\_PRODUCT* for inner-product distance, *COSINE* for cosine similarity.<br />Default value: *L2* |
 | index\_type | The type of index.<br />**Optional**<br />Valid values: *faiss.Flat*, *faiss.IVFFlat*, *faiss.IVFPQ*.<br />Default values: *faiss.Flat* |
 | mini\_batch\_size | The number of observations per mini-batch for the data iterator. <br />**Optional**<br />Valid values: positive integer<br />Default value: 5000 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

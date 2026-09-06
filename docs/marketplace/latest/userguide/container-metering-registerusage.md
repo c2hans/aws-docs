@@ -70,7 +70,3 @@ The following table describes the errors that the `RegisterUsage` API operation 
 |  PlatformNotSupportedException  |  AWS Marketplace doesn't support metering usage from the underlying platform. Only Amazon ECS, Amazon EKS, and AWS Fargate are supported.  |
 |  ThrottlingException  |  The calls to RegisterUsage are throttled.  |
 |  InvalidRegionException  |  RegisterUsage must be called in the same AWS Region that the Amazon ECS task or Amazon EKS pod was launched in. This prevents a container from choosing a Region (for example, withRegion(“us-east-1”)) when calling RegisterUsage.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

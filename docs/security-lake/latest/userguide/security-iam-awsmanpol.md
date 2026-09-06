@@ -162,7 +162,3 @@ View details about updates to AWS managed policies for Security Lake since this 
 | [AmazonSecurityLakeMetastoreManager](#security-iam-awsmanpol-AmazonSecurityLakeMetastoreManager) – New policy | Security Lake added a new managed policy that grants permissions for Security Lake to manage metadata in your data lake. | January 23, 2024 |
 | [AmazonSecurityLakeAdministrator](#security-iam-awsmanpol-AmazonSecurityLakeAdministrator) – New policy | Security Lake added a new managed policy that grants a principal full access to all Security Lake actions. | May 30, 2023 |
 | Security Lake started tracking changes | Security Lake started tracking changes for its AWS managed policies. | November 29, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,7 @@ With cross-database queries, you can do the following:
 
   When you query database objects on any other unconnected databases, you have read access only to those database objects. You can use cross-database queries to access data from any of the databases on your Amazon Redshift cluster without having to connect to that specific database. Doing this can help you query and join data that is spread across multiple databases in your Amazon Redshift cluster quickly and easily.
 
-  You can also join datasets from multiple databases in a single query and analyze the data using business intelligence (BI) or analytics tools. You can continue to set up granular table-level read access controls for users by using standard Amazon Redshift SQL commands. By doing so, you can help ensure that users see only the relevant subsets of the data that they have permissions for.
+  You can also join datasets from multiple databases in a single query and analyze the data using business intelligence (BI) or analytics tools. You can continue to set up granular table-level read access controls for users by using standard Amazon Redshift SQL commands. By doing so, you can help make sure that users see only the relevant subsets of the data that they have permissions for.
 + **Write data across databases in your Amazon Redshift cluster.**.
 
   You can write from databases that you are connected to, and also write from any other database that you have permissions to.
@@ -61,7 +61,3 @@ With cross-database queries, you can do the following:
 + [Limitations](cross-database_limitation.md)
 + [Cross-database query examples](cross-database_example.md)
 + [Using cross-database queries with the query editor](cross-database_console.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

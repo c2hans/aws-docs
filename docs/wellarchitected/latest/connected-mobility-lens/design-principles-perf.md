@@ -25,7 +25,3 @@ Core capabilities
  **Measuring and improving with growth:** Having mechanisms in place where critical workloads are monitored for specific KPI's for performance and ensuring that it meets the desired SLAs is critical. Even with features like auto-scalable systems, as more and more vehicles are on-boarded to connected mobility systems it's inevitable that feature level and overall system performance will degrade over time. Therefore, understanding tradeoffs in latency and cost in order to support continuously evolving systems, architectures and mechanisms are needed in order to support critical workloads wherever the vehicle is operating.
 
  **Regulatory compliance tradeoffs:** Adhering to local laws and regulatory compliance is mandatory. Care must be taken to assess and consider any impact on performance while adhering to them. Based on data processing compliance requirements design your workload architecture to process the data closer to the edge whenever possible can offset some of the performance concerns.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

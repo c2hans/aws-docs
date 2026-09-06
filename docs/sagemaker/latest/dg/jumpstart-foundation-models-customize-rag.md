@@ -25,7 +25,3 @@ For more information on RAG foundation model solutions, see the following exampl
 + [Amazon SageMaker JumpStart - Text Embedding and Sentence Similarity](https://sagemaker-examples.readthedocs.io/en/latest/introduction_to_amazon_algorithms/jumpstart-foundation-models/question_answering_retrieval_augmented_generation/text-embedding-sentence-similarity.html)
 
 You can clone the [Amazon SageMaker AI examples repository](https://github.com/aws/amazon-sagemaker-examples/tree/main/introduction_to_amazon_algorithms/jumpstart-foundation-models) to run the available JumpStart foundation model examples in the Jupyter environment of your choice within Studio. For more information on applications that you can use to create and access Jupyter in SageMaker AI, see [Applications supported in Amazon SageMaker Studio](studio-updated-apps.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -62,7 +62,3 @@ Package retention behavior is similar when pulling a package version from a publ
 ![Upstream repository diagram showing three repositories chained together with an external upstream connection to npmjs.com.](http://docs.aws.amazon.com/codecatalyst/latest/userguide/images/packages/upstream-chaining-external.png)
 
  If a package manager connected to `repo-A` requests a specific package version, *lodash 4.17.20* for example, and the package version is not present in any of the three repositories, it will be fetched from **npmjs.com**. When *lodash 4.17.20* is fetched, it is retained in `repo-A` as that is the furthest downstream repository and `npm-public-registry-gateway` as it has the upstream connection to the public external repository, **npmjs.com**. *lodash 4.17.20* is not retained in `repo-B` because that is an intermediate repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

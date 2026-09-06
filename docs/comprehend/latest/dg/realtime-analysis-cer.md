@@ -151,7 +151,3 @@ When you use a VPC with your custom entity recognition job, the `DataAccessRole`
 1. Choose **Train**.
 
 The new recognizer will then appear in the list, showing its status. It will first show as `Submitted`. It will then show `Training` for a classifier that is processing training documents, `Trained` for a classifier that is ready to use, and `In error` for a classifier that has an error. You can click on a job to get more information about the recognizer, including any error messages.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

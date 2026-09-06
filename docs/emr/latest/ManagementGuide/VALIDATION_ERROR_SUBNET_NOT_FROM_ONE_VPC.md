@@ -38,7 +38,3 @@ Perform the following steps to identify and fix the error:
    + Use the AWS CLI to find all available public and private subnets in the VPC that your cluster uses. For more information, see the [describe-subnets](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html) API. To create new subnets in a VPC, see the [create-subnet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSubnet.html) API.
 
 1. Launch a new cluster with subnets from the same VPC as the cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

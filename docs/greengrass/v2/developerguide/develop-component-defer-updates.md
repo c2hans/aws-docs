@@ -314,7 +314,3 @@ The AWS IoT Greengrass Core software doesn't send update notifications for local
    + Placeholders, such as `COMPONENT_NAME` and `COMPONENT_VERSION`, where the GDK CLI replaces information when it builds the component recipe.
 
    For more information about component recipes, see [AWS IoT Greengrass component recipe reference](component-recipe-reference.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

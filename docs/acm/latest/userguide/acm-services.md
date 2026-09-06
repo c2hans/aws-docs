@@ -65,7 +65,3 @@ When you create an OpenSearch Service cluster that contains a [custom domain and
 **AWS Network Firewall**
 AWS Network Firewall is a managed service that makes it easy to deploy essential network protections for all of your Amazon Virtual Private Clouds (VPCs). For more information about Network Firewall, see the [AWS Network Firewall Developer Guide](https://docs.aws.amazon.com/network-firewall/latest/developerguide/).
 Network Firewall firewall integrates with ACM for TLS inspection. If you use TLS inspection in Network Firewall, you must configure an ACM certificate for the decryption and re-encryption of the SSL/TLS traffic going through your firewall. For information about how Network Firewall works with ACM for TLS inspection, see [Requirements for using SSL/TLS certificates with TLS inspection configurations](https://docs.aws.amazon.com/network-firewall/latest/developerguide/tls-inspection-certificate-requirements.html) in the *AWS Network Firewall Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

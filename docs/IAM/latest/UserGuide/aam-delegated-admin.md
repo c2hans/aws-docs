@@ -80,7 +80,3 @@ Use the following procedure to find which member account in your AWS Organizatio
 1. Choose **Account access manager**, and then choose the **Settings** tab.
 
 1. In the **Delegated administrator** section, you can view the current delegated administrator account details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

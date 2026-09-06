@@ -26,7 +26,3 @@ Migration Assistant for Amazon OpenSearch Service stores workflow HTTP Basic cre
 <a name="fine-grained-access-control"></a>
 
 If your Amazon OpenSearch Service domain has fine-grained access control (FGAC) enabled, the Migration Assistant IAM role must be mapped to a security role on the domain (typically `all_access` during migration, then scoped down). Authentication gets you to the domain; FGAC authorizes what you can do once you are in. Both must be in place. The role mapping API path differs by engine: Elasticsearch 7.x uses `/_opendistro/_security/api/rolesmapping/<role>`, and OpenSearch 1.x and later uses `/_plugins/_security/api/rolesmapping/<role>`. See [Troubleshooting](troubleshooting.md) for details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

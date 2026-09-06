@@ -39,7 +39,3 @@ IPv6 uses 128 bits instead of the IPv4 32 bits, which essentially eliminates any
 <a name="network-configuration-management"></a>
 
 The network is the backbone of any IT infrastructure. Whether its post deployment operational issues or troubleshooting, you often need to make changes to individual components in the network, resulting in changes to the overall topology. These changes include modifications of route tables, allocation of new private and public IP addresses, and troubleshooting (connectivity, packet loss, throughput, bandwidth consumption, or latency issues) within and outside each team’s resources and your organization. A robust network architecture reduces the needs to make major changes to your network topology when any of these scenarios are encountered.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

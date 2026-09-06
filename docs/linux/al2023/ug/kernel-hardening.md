@@ -428,7 +428,3 @@ This option is one of the [Kernel Self Protection Project Recommended Settings](
 <a name="CONFIG_UNMAP_KERNEL_AT_EL0"></a>
 
  The AL2023 kernel is configured to unmap the kernel when running in userspace (`CONFIG_UNMAP_KERNEL_AT_EL0`). This option is one of the [Kernel Self Protection Project Recommended Settings](https://kernsec.org/wiki/index.php/Kernel_Self_Protection_Project/Recommended_Settings).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

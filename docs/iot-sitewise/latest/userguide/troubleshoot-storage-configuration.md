@@ -66,7 +66,3 @@ Use the following information to troubleshoot and resolve issues with the storag
 <a name="cross-region-s3-bucket"></a>
 
 **Solution:** The Amazon S3 bucket that you specified is in a different AWS Region. Make sure that your Amazon S3 bucket and AWS IoT SiteWise assets are in the same Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,7 +11,7 @@ In this tutorial, you use Amazon Redshift ML to create, train, and deploy a mach
 
 You will use a CREATE MODEL operation to create a K-means model from a Amazon Redshift cluster. You can use a CREATE MODEL command to export training data, train a model, import the model, and prepare an Amazon Redshift prediction function. Use the CREATE MODEL operation to specify training data either as a table or a SELECT statement.
 
-In this tutorial, you use K-means on the [Global Database of Events, Language, and Tone (GDELT)](https://aws.amazon.com/public-datasets/gdelt/) dataset, which monitors world news across the world, and the data is stored for every second of every day. K-means will group events that have similar tone, actors, or locations. The data is stored as multiple files on Amazon Simple Storage Service, in two different folders. The folders are historical, which cover the years 1979–2013, and daily updates, which cover the years 2013 and later. For this example, we use the historical format and bring in 1979 data.
+In this tutorial, you use K-means on the [Global Database of Events, Language, and Tone (GDELT)](https://aws.amazon.com/public-datasets/gdelt/) dataset, which monitors world news across the world, and the data is stored for every second of every day. K-means will group events that have similar tone, actors, or locations. The data is stored as multiple files on Amazon Simple Storage Service, in two different folders. The folders are historical, which cover the years 1979–2013, and daily updates, which cover the years 2013 and later. This example uses the historical format and brings in 1979 data.
 
 ## Use case examples
 <a name="tutorial_k-means_clustering_tasks"></a>
@@ -371,7 +371,3 @@ For more information about machine learning, see the following documentation:
 + [Machine learning overview](https://docs.aws.amazon.com/redshift/latest/dg/machine_learning_overview.html)
 + [Machine learning for novices and experts](https://docs.aws.amazon.com/redshift/latest/dg/novice_expert.html)
 + [What Is Fairness and Model Explainability for Machine Learning Predictions?](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -79,7 +79,3 @@ In addition to the allowlist requirements for the AWS access portal, the other s
 + To access AWS accounts, the AWS Management Console, and the IAM Identity Center console from your AWS access portal, you must allowlist additional domains. Refer to [Troubleshooting](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/troubleshooting.html) in the *AWS Management Console Getting Started Guide* for a list of AWS Management Console domains.
 + To access AWS managed applications from your AWS access portal, you must allowlist their respective domains. Refer to the respective service documentation for guidance.
 + If you use external software, such as external IdPs (for example, Okta and Microsoft Entra ID), you'll need to include their domains in your allowlists.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

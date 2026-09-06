@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 +  Checking received data for conformance to the interoperability standard being used.
 +  Being able to apply transformations to data received or sent and mapping the internal formats of systems of record, like EHRs, to a structural and semantic form dictated by the standard.
 +  Facilitating secure authorization and launch of user-facing applications, often with protocols like [SMART on FHIR](http://www.hl7.org/fhir/smart-app-launch/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

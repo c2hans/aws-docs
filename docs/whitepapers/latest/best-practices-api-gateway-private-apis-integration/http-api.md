@@ -58,7 +58,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 
 **Note**
 AWS Cloud Map integration using [Amazon ECS service discovery](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html) does not support cross-account patterns. To implement the architecture shown in the previous diagram, you must [register cross-account ECS resources manually in the AWS Cloud Map namespace](https://docs.aws.amazon.com/cloud-map/latest/dg/registering-instances.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

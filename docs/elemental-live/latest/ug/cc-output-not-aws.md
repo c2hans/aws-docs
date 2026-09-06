@@ -24,7 +24,3 @@ The rows are sorted by type of output group. The Version column identifies the v
 | A system that supports SMPTE 2110  | SMPTE 2110 stream  | Send an uncompressed SMPTE 2110 stream to a device that supports SMPTE 2110. Redundant streams using SMPTE 2022-7 are supported but optional. | SMPTE 2110  |  | rtp://  | Yes  | No  | 2.19.3 |
 | A system that supports SMPTE 2110  | SMPTE 2110 stream  | Send a JPEG XS compressed SMPTE 2110 stream to a device that supports SMPTE 2110. Redundant streams using SMPTE 2022-7 are supported but optional. | SMPTE 2110  |  | rtp://  | Yes  | No  | 2.21.3 |
 | A system that supports RTP or UDP over unicast or multicast  | Transport stream  | Send a transport stream (TS) to a server that supports unicast or multicast RTP or unicast or multicast UDP.  | UDP/TS  |  | rtp:// or udp://  | Yes  | No  | Before 2.14.0 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

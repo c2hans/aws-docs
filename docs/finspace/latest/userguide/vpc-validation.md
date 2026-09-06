@@ -58,7 +58,3 @@ After the VPC connectivity is set up for the environment, the internet connectio
 1. Create a transit gateway static route to direct traffic destined to `0.0.0.0/0` to the customer account attachment. For more information, see [Create a static route](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-route-tables.html#tgw-create-static-route) in the *AWS Transit Gateway User Guide*.
 
    Wait a few minutes before running the next command because there might be a delay before the routes are installed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

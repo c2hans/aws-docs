@@ -16,7 +16,3 @@ The following table provides information about error codes you may see for the G
 | GDL-5103 | Access denied to Google Drive API. | Ensure your service account has proper domain-wide delegation and API access enabled. |
 | GDL-5104 | Rate limit exceeded for Google Drive API. | Wait and retry. Consider reducing sync frequency if the issue persists. |
 | GDL-5105 | Invalid folder or file ID specified in filters. | Verify the folder or file IDs in your inclusion/exclusion filters are correct. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

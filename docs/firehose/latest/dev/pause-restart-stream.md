@@ -24,7 +24,3 @@ When you pause stream delivery in Firehose, you need to ensure that the source o
 <a name="resuming-stream"></a>
 
 To resume delivery, first revert the change made earlier to the stream destination by turning on the destination and ensuring that Firehose has permissions to deliver the stream to the destination. Next, revert the changes made earlier to permissions applied to the S3 bucket for backing up failed deliveries. That is, apply `"Effect": "Allow"` permission for the action `s3:PutObject`, and remove `"Effect": "Deny"` permission on the action `s3:PutObject` for the S3 bucket used for backing up failed deliveries. Finally, monitor using [CloudWatch metrics for Firehose](https://docs.aws.amazon.com/firehose/latest/dev/cloudwatch-metrics.html) to confirm that the stream is being delivered to the destination. To view and troubleshoot errors, use [Amazon CloudWatch Logs monitoring for Firehose](https://docs.aws.amazon.com/firehose/latest/dev/monitoring-with-cloudwatch-logs.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

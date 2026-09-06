@@ -61,7 +61,3 @@ You must ensure the following criteria for regarding the NACL rules.:
 + **Order of rules**: NACLs processes rules in ascending order by rule number. Make sure that all the rules set as "**Allow**" have lower rule numbers than all the rules set as "**Deny**" as that might block traffic.
 + **Stateless nature**: NACLs are stateless. You must explicity allow both inbound and outbound traffic.
 + **CIDR blocks**: You must ensure that the CIDR blocks you use accurately represent the subnets of your DMS and RDS instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

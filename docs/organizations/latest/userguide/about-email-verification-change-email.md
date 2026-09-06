@@ -11,7 +11,3 @@ If you change the email address of the management account, the account's status 
 
 **Note**
 If you invited accounts to join your organization before you have changed the management account's email address, and those invitations have not yet been accepted, they can’t be accepted until you verify the management account’s new email address. You must first [resend the verification request](about-email-verification-resend.md). After you have completed the process by responding to the email, accounts you have invited can accept the invitations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

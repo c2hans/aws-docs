@@ -16,7 +16,3 @@ Adobe Marketo Engage is a marketing automation platform that enables marketers t
 + [Writing to Adobe Marketo Engage entities](adobe-marketo-engage-writing-to-entities.md)
 + [Adobe Marketo Engage connection options](adobe-marketo-engage-connection-options.md)
 + [Limitations and notes for Adobe Marketo Engage connector](adobe-marketo-engage-connector-limitations.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

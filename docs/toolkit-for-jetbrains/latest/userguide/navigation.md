@@ -63,7 +63,3 @@ For detailed instructions on how to connect to your AWS account from the AWS Too
 The following is an image of the AWS Sign In panel.
 
 ![AWS Toolkit sign-in panel with Workforce and IAM Credential options and Continue button.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/awssigninpane2024.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

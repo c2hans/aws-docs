@@ -338,7 +338,3 @@ The following table describes the changes to each release of the Ubuntu 20.04 cl
 | 4.6.0 | June 21, 2023 |  + Improved client custom branding by storing assets in the same AWS Regions as provisioned WorkSpaces.<br />+ Resolved image auto-scaling issue with client custom branding logo files.<br />+ Fixed Japanese keyboard mapping issues.  |
 | 4.5.0 | December 27, 2022 |  + Resolved the issue of users being unable to disconnect from WorkSpaces when their network connectivity was lost or unavailable.<br />+ Updated PCoIP SDK for the WorkSpaces Linux client.  |
 | 4.4.0 | October 27, 2022 | Ubuntu 20.04 support. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

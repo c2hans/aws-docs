@@ -12,7 +12,3 @@ This was from the 2006 interview [A Conversation with Werner Vogels: Learning fr
 However, that digital transformation, which is supported by your Cloud Operating Model, is often seen as too much change to manage at one time. Instead, we consider the analogy of a journey with a roadmap that takes you to *"You build it, you run it"* as the destination. Each increase in the maturity of your capabilities moves you closer to your destination. By the time you have reached your destination, your organization will have developed a way to continually update the Cloud Operating Model to match changing business outcomes, and the roadmap is updated with the next destination.
 
 To support this incremental approach, we recommend that you develop a roadmap that directly relates to your organization's vision (mission and drivers) and defines the steps (increases in maturity, guided by tenets) that are necessary to reach the destination (outcomes).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

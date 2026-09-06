@@ -94,7 +94,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 +  How can you a/b test your message?
 +  Do you have a mechanism for your customers to provide feedback about product communications and suggest new features to be developed?
 +  What are the most important metrics to measure reach, engagement, and adoption? How can you optimize your plan for next iteration?
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

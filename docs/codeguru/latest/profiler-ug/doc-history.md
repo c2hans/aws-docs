@@ -22,7 +22,3 @@ The following table describes the major updates and new features for the *Amazon
 | [New topic](#doc-history) | CodeGuru Profiler now supports monitoring your profiling groups using Amazon CloudWatch metrics and alarms. For more information, see [Monitoring CodeGuru Profiler with CloudWatch](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/monitoring.html). | June 17, 2020 |
 | [New topics](#doc-history) | This user guide now includes a security section. Learn about data retention, IAM policies, monitoring your profiling groups with AWS CloudTrail, and more. For more information, see [Security in Amazon CodeGuru Profiler](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/security.html). | June 7, 2020 |
 | [Preview release](#doc-history) | This is the preview release of the *Amazon CodeGuru Profiler User Guide*. | December 3, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

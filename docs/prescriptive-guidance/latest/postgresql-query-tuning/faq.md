@@ -56,7 +56,3 @@ Every PostgreSQL function has a volatility classification, with the possibilitie
 + **IMMUTABLE** – An `IMMUTABLE` function can't modify the database and is guaranteed to return the same results given the same arguments forever. When you use this classification, the optimizer can pre-evaluate the function when a query calls it with constant arguments. For example, a query such as `SELECT ... WHERE x = 2 + 2` can be simplified on sight to `SELECT ... WHERE x = 4`, because the function underlying the integer addition operator is marked `IMMUTABLE`.
 
 `VOLATILE` is the default if the `CREATE FUNCTION` command doesn't specify a category. For more information about [function types](https://www.postgresql.org/docs/16/sql-createfunction.html), see the PostgreSQL documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

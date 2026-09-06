@@ -31,7 +31,3 @@ The Bot Analytics page shows data for conversations triggered only from flows. Y
 Use these analytics to identify improvement opportunities, refine your bot's responses, and enhance the overall customer experience.
 
 For additional metrics and advanced analysis techniques specific to Amazon Lex, see [Monitoring bot performance in Lex V2](https://docs.aws.amazon.com/lexv2/latest/dg/monitoring-bot-performance.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

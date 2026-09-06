@@ -48,7 +48,3 @@ The **allowed and denied IP lists** custom rules allow you to manually insert IP
 <a name="dashboard-ip"></a>
 
 This solution emits [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) metrics such as allowed requests, blocked requests, and other relevant metrics. You can build a customized dashboard to visualize these metrics and gain insights into the pattern of attacks and protection provided by AWS WAF. For more information, refer to [Build monitoring dashboard](build-monitoring-dashboard.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Automations for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

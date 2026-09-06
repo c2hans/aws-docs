@@ -65,7 +65,3 @@ To authenticate with AWS using IAM Identity Center, you must be running AWS Tool
 1. When prompted, choose **Allow** to confirm the connection between JetBrains and your AWS account. When the connection process is complete, your web browser displays a confirmation indicating that it's safe to close the window and return to your IDE.
 
 1. The JetBrains Gateway **CodeCatalyst** plugin view is updated to the **Dev Environments** view.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

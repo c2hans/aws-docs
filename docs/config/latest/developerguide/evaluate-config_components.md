@@ -93,7 +93,3 @@ The supportedEvaluationModes determines when resources will be evaluated, either
 This allows you to evaluate whether a set of resource properties, if used to define an AWS resource, would be COMPLIANT or NON\_COMPLIANT given the set of proactive rules that you have in your account in your Region.
 You can specify the supportedEvaluationModes to `DETECTIVE`, `PROACTIVE`, or both `DETECTIVE` and `PROACTIVE`. You must specify an evaluation mode and this field cannot remain empty.
 Proactive rules do not remediate resources that are flagged as NON\_COMPLIANT or prevent them from being deployed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

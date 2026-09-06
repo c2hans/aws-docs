@@ -93,7 +93,3 @@ AWS IoT Greengrass adds building information to each message to show the overall
 ![AWS IoT Greengrass publishing JSON payload with occupancy data to AWS IoT Core topic.](http://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/image16.png)
 
 *AWS IoT Greengrass aggregates and augments telemetry, then forwards messages to AWS IoT Core*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

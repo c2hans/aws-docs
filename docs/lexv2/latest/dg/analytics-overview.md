@@ -54,7 +54,3 @@ Use this chart to identify the top five intents that your bot failed to fulfill 
 ![A bar graph that shows the top five intents that your bot failed to fulfill.](http://docs.aws.amazon.com/lexv2/latest/dg/images/analytics/top-five-failed-intents.png)
 
 Select **View failed intents** to navigate to the **Intents performance** subsection of the **Performance dashboard**, where you can view metrics for the intents that your bot failed to fulfill. For more information, see [Intent performance](performance-dashboard.md#intent-performance).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,7 +59,3 @@ Suddenly starting hundreds of connections generates a *connection storm* because
 MySQL has a mechanism to protect against such a spike in connection requests. The `back_log` variable can be set to the number of requests that can be stacked during a short time before MySQL momentarily stops answering new requests. The value is enforced by a connection handling thread, which itself might get overwhelmed by a connection storm. For more information, see the [MySQL Reference Manual](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_back_log).
 
 If your connection is configured to reset when the database is slow, you will be initiating the cycle again and again. Similarly, if you anticipate a sudden increase in database traffic at certain times during the day (for example, when the stock market opens), prewarm your connection pool so that you are not trying to open many connections at the same time that a high traffic load is starting.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

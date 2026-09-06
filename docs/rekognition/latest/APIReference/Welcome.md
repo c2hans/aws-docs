@@ -99,7 +99,3 @@ This is the API Reference for [Amazon Rekognition Image](https://docs.aws.amazon
 <a name="Welcome_Amazon_Rekognition_Streaming"></a>
 
 Amazon Rekognition Streaming is a separate streaming service used by Amazon Rekognition Face Liveness. The [StartFaceLivenessSession](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_rekognitionstreaming_StartFaceLivenessSession.html) API operation starts a Face Liveness video stream and liveness detection process. It is called by the AWS Amplify FaceLivenessDetector component as part of the Face Liveness workflow. For more information, see [Detecting face liveness](https://docs.aws.amazon.com/rekognition/latest/dg/face-liveness.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

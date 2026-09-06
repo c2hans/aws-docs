@@ -21,7 +21,3 @@ The **Message templates** page on the Amazon Pinpoint console provides a single 
 For information about creating a message template, see [Creating email templates](message-templates-creating-email.md), [Creating push notification templates](message-templates-creating-push.md), [Creating SMS templates](message-templates-creating-sms.md), or [Creating voice templates](message-templates-creating-voice.md), depending on the type of template that you want to create.
 
 For information about viewing and managing versions of templates, see [Managing versions of message templates](message-templates-versioning.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

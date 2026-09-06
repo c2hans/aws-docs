@@ -51,7 +51,3 @@ Deleting a pipeline is irreversible. There is no confirmation dialog box. After 
 1. Delete any resources you no longer need.
 **Note**
 Deleting a pipeline does not delete the resources used in the pipeline, such as the CodeDeploy or Elastic Beanstalk application you used to deploy your code, or, if you created your pipeline from the CodePipeline console, the Amazon S3 bucket CodePipeline created to store the artifacts of your pipelines. Make sure that you delete resources that are no longer required so that you are not charged for them in the future. For example, when you use the console to create a pipeline for the first time, CodePipeline creates one Amazon S3 bucket to store all artifacts for all of your pipelines. If you have deleted all of your pipelines, follow the steps in [Deleting a Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/DeletingaBucket.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

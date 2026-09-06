@@ -38,7 +38,3 @@ When a collaboration request is submitted, the AWS account manager for the oppor
 **Opting out and leaving a channel:**
 + Partners can opt out of future Slack invitations by selecting **Opt-out of all invites** from the first pinned message in the channel.
 + To leave a channel, choose the channel name in the conversation header to see channel information. Then, choose **Leave channel** from the channel options. Alternatively, you can choose **Leave channel** from the first pinned message.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

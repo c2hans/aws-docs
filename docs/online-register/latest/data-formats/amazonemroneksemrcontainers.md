@@ -20,7 +20,3 @@ Amazon EMR on EKS (EMR Containers) provides the following APIs for data retrieva
 | <a name="emr-containers-ListSecurityConfigurations"></a>[ListSecurityConfigurations](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListSecurityConfigurations.html) | List security configurations | List |
 | <a name="emr-containers-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListTagsForResource.html) | List tags for the specified resource | List |
 | <a name="emr-containers-ListVirtualClusters"></a>[ListVirtualClusters](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListVirtualClusters.html) | List virtual clusters | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

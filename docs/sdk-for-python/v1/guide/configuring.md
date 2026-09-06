@@ -57,7 +57,3 @@ You can either let the SDK resolve configuration automatically (as shown in [Qui
 + To learn how the SDK finds credentials, see [Credential providers](credential-providers.md).
 + To configure or replace the HTTP client, see [HTTP configuration](http-configuration.md).
 + To understand how retries work and how to configure them, see [Retries](config-retries.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Python. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-python` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

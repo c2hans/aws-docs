@@ -354,7 +354,3 @@ Opcounter metrics have a non-zero value (usually \~50) for idle clusters. This i
 <a name="cloud_watch-monitoring_connections"></a>
 
 When you view the number of connections by using database engine commands such as `db.runCommand( { serverStatus: 1 })`, you might see up to 10 more connections than you see in `DatabaseConnections` through CloudWatch. This occurs because Amazon DocumentDB performs periodic health checks and metrics collection tasks that don't get accounted for in `DatabaseConnections`. `DatabaseConnections` represents customer-initiated connections only.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

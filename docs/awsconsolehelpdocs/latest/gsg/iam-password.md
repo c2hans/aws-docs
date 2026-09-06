@@ -10,7 +10,3 @@ IAM users may be able to change their password from the AWS Management Console d
 If you have permissions from the following policy: [AWS: Allows IAM users to change their own console password on the Security credentials page](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_aws_my-sec-creds-self-manage-password-only.html), you can change your password from the console. For more information, see [How an IAM user changes their own password](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_user-change-own.html) in the *AWS Identity and Access Management User Guide*.
 
 If you don't have the requisite permissions to change your password from the AWS Management Console see, [ Resetting your AWS IAM Identity Center user password](https://docs.aws.amazon.com/singlesignon/latest/userguide/resetpassword-accessportal.html) in the *AWS IAM Identity Center User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Management Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

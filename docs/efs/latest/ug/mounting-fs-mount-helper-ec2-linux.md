@@ -67,7 +67,3 @@ If the EC2 instance and the file system you are mounting are located in differen
       The **Attach** screen displays the exact commands to use for mounting the file system in the following ways:
       + (**Mount via DNS**) Using the file system's DNS name with the EFS mount helper or an NFS client.
       + (**Mount via IP**) Using the mount target IP address in the selected Availability Zone with an NFS client.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

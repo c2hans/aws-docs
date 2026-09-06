@@ -40,7 +40,3 @@ If no suitable plans are found or the available plans don't meet your needs, adj
 
 **Note**
 Plans marked `Immediately available` will start within 30 minutes, provided payment is completed no less than 5 minutes before the scheduled start time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

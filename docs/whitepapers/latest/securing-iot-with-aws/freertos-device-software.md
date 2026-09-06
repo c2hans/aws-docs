@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
 <a name="cap-1"></a>
 
  FreeRTOS comes with libraries to help secure device data and connections, including support for data encryption and key management. FreeRTOS includes support for Transport Layer Security (TLS v1.2) to help devices connect securely to the cloud. FreeRTOS also has a code signing feature to ensure customer device code is not compromised during deployment as well as capabilities for OTA updates to remotely update devices with feature enhancements or security patches.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

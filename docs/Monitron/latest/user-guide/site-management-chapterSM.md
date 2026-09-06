@@ -18,7 +18,3 @@ You can create up to 50 sites within a project, and add up to 100 assets and 200
 + [Changing a site name](SM-editing-site.md)
 + [Deleting a site](SM-deleting-site.md)
 + [Navigating between projects and sites in the mobile app](SM-working-project-and-site.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

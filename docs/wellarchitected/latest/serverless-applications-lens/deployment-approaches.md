@@ -39,7 +39,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
  [Canary](#canary-deployments) deployments are a way for you to gradually release new software in a coordinated and safe way that enable rapid deployment cycles. [Canary](#canary-deployments) deployments involve deploying a percentage of requests to new code, and monitoring for errors, degradations, or regressions.
 
 You can use [Lambda](https://aws.amazon.com/lambda/) function aliases with [AWS CodeDeploy](https://aws.amazon.com/codedeploy/) to support various canary deployment strategies. [AWS SAM](https://aws.amazon.com/serverless/sam/) comes with built-in support for [CodeDeploy](https://aws.amazon.com/codedeploy/), which makes [Canary](#canary-deployments) deployments even simpler. Operators can further control gradual deployments by leveraging pre-traffic and post-traffic deployment hooks and [CloudWatch](https://aws.amazon.com/cloudwatch/) alarms to trigger automated rollback.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -6,7 +6,3 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/trigger-S3
 <a name="trigger-S3-migration-cwe"></a>
 
 If you have a pipeline that uses polling to react to source changes, you can update it to use the recommended detection method. For a migration guide with instructions for updating your polling pipelines to use the recommended event-based change detection method, see [Migrate polling pipelines to use event-based change detection](update-change-detection.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

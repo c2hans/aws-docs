@@ -43,7 +43,3 @@ For voice contacts, the original analyzed file is the only place where the compl
 + A redacted audio file (wav) for voice contacts. Sensitive data in audio files is redacted as silence. These silent times are not flagged in the Connect Customer admin website or elsewhere as non-talk time.
 
 Use your file retention policies to determine how long to keep these files.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

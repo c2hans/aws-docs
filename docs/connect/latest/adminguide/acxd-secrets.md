@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-secrets.h
 # Secrets
 <a name="acxd-secrets"></a>
 
-Secrets let you securely store reusable values that may be needed when configuring Data requests in Agentic CX Designer.
+Secrets let you securely store reusable values that may be needed when configuring Data requests in agentic CX designer.
 
 Use Secrets for values that should not be hardcoded directly into URLs, headers, or request payloads, such as API keys, tokens, passwords, authorization headers, or other sensitive configuration values.
 
@@ -189,7 +189,3 @@ If the test fails, check:
 + Request payload
 + Whether the correct environment is being tested
 + Whether the external service expects a prefix such as Bearer
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

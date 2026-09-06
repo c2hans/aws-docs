@@ -94,7 +94,3 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/adding-member-acco
 
 **Important**
  If organization policies are managing Amazon Inspector enablement for your accounts, the delegated administrator and member accounts cannot modify policy-managed scan types using Amazon Inspector enablement/disablement APIs. API requests will fail with an error indicating the resource is managed by organization policy. You can still enable additional scan types not managed by the policy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

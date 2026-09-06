@@ -48,7 +48,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 1.  The companion application provides real time vehicle information, personalization and push notifications.
 
 1.  Use AWS IoT Device Management to implement OTA management through AWS IoT jobs data and use AWS IoT Fleet Indexing to manage state, connectivity, and device violations and to organize, investigate, and troubleshoot your fleet of devices.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

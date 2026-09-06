@@ -111,7 +111,7 @@ Before you can install ORDS, you need to create a nonprivileged OS user, and the
 
 1. Log in to `myapexhost.example.com` as `apexuser`, and download the Oracle APEX installation file from Oracle to your `/home/apexuser` directory:
    + [http://www.oracle.com/technetwork/developer-tools/apex/downloads/index.html](http://www.oracle.com/technetwork/developer-tools/apex/downloads/index.html)
-   + [Oracle application Express prior release archives](http://www.oracle.com/technetwork/developer-tools/apex/downloads/all-archives-099381.html)
+   + [Oracle APEX prior release archives](http://www.oracle.com/technetwork/developer-tools/apex/downloads/all-archives-099381.html)
 
 1. Unzip the file in the `/home/apexuser` directory.
 
@@ -156,7 +156,7 @@ Before you can install Oracle APEX Listener, you need to create a nonprivileged 
 
 1. Log in to `myapexhost.example.com` as `apexuser`, and download the Oracle APEX installation file from Oracle to your `/home/apexuser` directory:
    + [http://www.oracle.com/technetwork/developer-tools/apex/downloads/index.html](http://www.oracle.com/technetwork/developer-tools/apex/downloads/index.html)
-   + [Oracle application Express prior release archives](http://www.oracle.com/technetwork/developer-tools/apex/downloads/all-archives-099381.html)
+   + [Oracle APEX prior release archives](http://www.oracle.com/technetwork/developer-tools/apex/downloads/all-archives-099381.html)
 
 1. Unzip the file in the `/home/apexuser` directory.
 
@@ -204,9 +204,9 @@ Before you can use Oracle APEX, you need to download the `apex.war` file, use Ja
    Database is not yet configured
    ```
 
-1. Leave Oracle APEX Listener running so that you can use Oracle Application Express. When you have finished this configuration procedure, you can run the listener in the background.
+1. Leave Oracle APEX Listener running so that you can use Oracle APEX. When you have finished this configuration procedure, you can run the listener in the background.
 
-1. From your web browser, go to the URL provided by the Oracle APEX Listener program. The Oracle Application Express Listener administration window appears. Enter the following information:
+1. From your web browser, go to the URL provided by the Oracle APEX Listener program. The Oracle APEX Listener administration window appears. Enter the following information:
    + **Username** – `APEX_PUBLIC_USER`
    + **Password** – the password for *APEX\_PUBLIC\_USER*. This password is the one that you specified earlier when you configured the Oracle APEX repository. For more information, see [Unlocking the public user account on your DB instance](#Appendix.Oracle.Options.APEX.PublicUser).
    + **Connection type** – Basic
@@ -233,7 +233,3 @@ Before you can use Oracle APEX, you need to download the `apex.war` file, use Ja
    Choose **Login**, and then set a new password for the `admin` user.
 
 Your listener is now ready for use.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

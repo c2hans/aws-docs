@@ -110,7 +110,3 @@ The following OpenAPI 3 example defines a Lambda authorizer with a custom scheme
 <a name="api-gateway-swagger-extensions-authtype-see-also"></a>
 
 [authorizer.authType](https://docs.aws.amazon.com/apigateway/latest/api/API_Authorizer.html#apigw-Type-Authorizer-authType)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

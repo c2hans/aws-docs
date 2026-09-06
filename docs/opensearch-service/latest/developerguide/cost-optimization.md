@@ -257,7 +257,3 @@ Collection Groups allow multiple collections with different KMS keys to share OC
 Best for: SaaS providers, multi-tenant platforms, or any workload with many small collections each requiring their own KMS key.
 
 For more information, see the [Collection Groups blog post](https://aws.amazon.com/blogs/big-data/amazon-opensearch-serverless-introduces-collection-groups-to-optimize-cost-for-multi-tenant-workloads/), the [What's New announcement](https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-opensearch-serverless-supports-collection-groups/), and [Amazon OpenSearch Serverless collection groups](serverless-collection-groups.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ Following is a description of the Content Management permissions.
 If you want the same users to add personalized attributes to quick responses, they will also need the **Channels and flows**, **Flows - Publish** permission.
 
 For information about adding permissions to an existing security profile, see [Update security profiles in Connect Customer](update-security-profiles.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

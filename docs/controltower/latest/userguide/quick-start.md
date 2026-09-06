@@ -41,7 +41,3 @@ For a more detailed version of how to set up AWS Control Tower, including ways t
 
 **Note**
 If you are a first-time customer and you encounter a setup issue, contact [AWS Support](https://aws.amazon.com/premiumsupport/) for diagnostic assistance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

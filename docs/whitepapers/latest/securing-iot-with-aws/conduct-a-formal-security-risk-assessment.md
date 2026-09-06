@@ -20,7 +20,3 @@ Conduct a formal security risk assessment using a common framework (such as [MIT
 <a name="resources-1"></a>
 
  When building your environment inside of AWS, foundational services such as Amazon Virtual Private Cloud (VPC), VPC security groups (SGs), and network access control lists (network ACLs) should be used to implement the micro segmentation. AWS recommends using multiple accounts, which helps to isolate IoT applications, data, and business processes across your environment and use AWS Organizations for better manageability and centralized insight. Additional information can be found in the [Security Pillar of AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html) and [Organizing Your AWS Environment Using Multiple Accounts whitepaper](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/benefits-of-using-multiple-aws-accounts.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

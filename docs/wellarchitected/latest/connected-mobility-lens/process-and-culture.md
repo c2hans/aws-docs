@@ -27,7 +27,3 @@ For more details, see [SUS06-BP04](https://docs.aws.amazon.com/wellarchitected/
 **Prescriptive guidance:**
 +  Establish cloud native testing practices to understand expected impact, and test with customers to understand the actual impact from using your services. Device farms are the second-best option.
 +  Use managed device farms to help you streamline the testing process for new features on a representative set of hardware. Managed device farms offer diverse device types including earlier, less popular hardware, and avoid customer sustainability impact from unnecessary device upgrades.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ To coordinate tasks, you write a program that gets the latest task state from Am
 For most use cases, we recommend considering AWS Step Functions for your workflow and orchestration needs.
 With Step Functions, you can create workflows, also called *state machines*, to build distributed applications, automate processes, orchestrate microservices, and create data and machine learning pipelines. In the Step Functions' console or AWS toolkit in VS Code, you can use the graphical Workflow Studio to visualize, edit, test, and debug your application’s workflow.
 For more technical information, see the [AWS Step Functions Developer Guide](https://docs.aws.amazon.com/step-functions/latest/dg/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

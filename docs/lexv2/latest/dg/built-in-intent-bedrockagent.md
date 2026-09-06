@@ -40,7 +40,3 @@ The responses from the BedrockAgentIntent will be stored into the session and re
 + `x-amz-lex:bedrock-agent-agent-collaborator-details` – Object containing details of the input and output from the sub agents that were invoked as part of Multi-agent collaboration invocations.
 
 For more information, see [Using BedrockAgentIntent to use a Bedrock Agent in Amazon Lex](https://docs.aws.amazon.com/lexv2/latest/dg/bedrock-agent-intent.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

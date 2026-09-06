@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/slack-integration
 # Slack integration
 <a name="slack-integration"></a>
 
-With the Slack action connector, you can access the Slack platform directly in Amazon Quick through natural language. You can send messages, manage channels, search content, and interact with users and user groups without leaving Amazon Quick.
+With the Slack connector, you can access the Slack platform directly in Amazon Quick through natural language. You can send messages, manage channels, search content, and interact with users and user groups without leaving Amazon Quick.
 
 Amazon Quick supports multiple authentication methods for Slack. Choose the method that best fits your organization's security requirements.
 + **Default OAuth app** – Uses an AWS-managed OAuth application. No additional credentials are needed. You authenticate directly with your Slack workspace.
@@ -234,7 +234,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Bearer Token rejected** – Verify that your bot token is active and starts with `xoxb-`. Tokens can be revoked from the Slack API dashboard.
 + **Insufficient permissions** – Verify that the scopes configured for your Slack app include the permissions required for the actions that you want to use. See [Recommended scopes](#slack-oauth-scopes).
 + **Channel not found or not in channel** – Verify that the bot has been added to the channel. Invite the bot to the channel before attempting to post messages or read history.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

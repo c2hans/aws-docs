@@ -130,7 +130,3 @@ If you plan to scale your application to a parallelism greater that 128, you mus
 + Autoscaling logic will prevent scaling a Flink job to a parallelism that will exceed maximum parallelism of the job.
 + If you use a custom autoscaling or scheduled scaling, configure them so that they don't exceed the maximum parallelism of the job.
 + If you manually scale your application beyond maximum parallelism, the application fails to start.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

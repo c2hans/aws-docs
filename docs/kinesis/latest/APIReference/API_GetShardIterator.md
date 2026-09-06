@@ -27,6 +27,7 @@ If the shard is closed, [GetShardIterator](#API_GetShardIterator) returns a vali
 
 ```
 {
+   "DryRun": {{boolean}},
    "ShardId": "{{string}}",
    "ShardIteratorType": "{{string}}",
    "StartingSequenceNumber": "{{string}}",
@@ -41,6 +42,11 @@ If the shard is closed, [GetShardIterator](#API_GetShardIterator) returns a vali
 <a name="API_GetShardIterator_RequestParameters"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [DryRun](#API_GetShardIterator_RequestSyntax) **   <a name="Streams-GetShardIterator-request-DryRun"></a>
+Checks if your request will succeed. `DryRun` is an optional parameter.
+Type: Boolean
+Required: No
 
  ** [ShardId](#API_GetShardIterator_RequestSyntax) **   <a name="Streams-GetShardIterator-request-ShardId"></a>
 The shard ID of the Kinesis Data Streams shard to get the iterator for.
@@ -123,6 +129,10 @@ For information about the errors that are common to all actions, see [Common Err
 Specifies that you do not have the permissions required to perform this operation.
 HTTP Status Code: 400
 
+ ** DryRunOperationException **
+The request was rejected because the DryRun parameter was specified.
+HTTP Status Code: 400
+
  ** InternalFailureException **
 The processing of the request failed because of an unknown error, exception, or failure.
 HTTP Status Code: 500
@@ -201,7 +211,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/kinesis-2013-12-02/GetShardIterator)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/kinesis-2013-12-02/GetShardIterator)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/kinesis-2013-12-02/GetShardIterator)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -70,7 +70,3 @@ A *data lake administrator* is a principal who can grant any principal (includin
 IAM administrative users—users with the `AdministratorAccess` AWS managed policy—are not automatically data lake administrators. For example, they can't grant Lake Formation permissions on catalog objects unless they have been granted permissions to do so. However, they can use the Lake Formation console or API to designate themselves as data lake administrators.
 
 For information about the capabilities of a data lake administrator, see [Implicit Lake Formation permissions](implicit-permissions.md). For information about designating a user as a data lake administrator, see [Create a data lake administrator](initial-lf-config.md#create-data-lake-admin).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

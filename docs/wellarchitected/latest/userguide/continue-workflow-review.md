@@ -22,7 +22,3 @@ You can review your workload in the console on the Review workload page. This pa
    Use the buttons at the bottom of this pane to go to the next question, return to the previous question, or save your changes and exit.
 
 1. The right help pane displays additional information and helpful resources. Choose **Ask an expert** to access the AWS re:Post community dedicated to [AWS Well-Architected](https://repost.aws/topics/TA5g9gZfzuQoWLsZ3wxihrgw/well-architected-framework?trk=1053da05-d131-4bfd-8d08-01af135ae52a&sc_channel=el). In this community, you can ask questions related to designing, building, deploying, and operating workloads on AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

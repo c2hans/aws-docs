@@ -51,7 +51,3 @@ For each document that you want to delete, add a [DocumentIdentifier](https://do
 
 **Warning**
 Documents that you delete directly from a knowledge base connected to an S3 data source aren't deleted from the S3 bucket itself. We recommend that you delete these documents from the S3 bucket, so that they aren't reintroduced if you sync your data source.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

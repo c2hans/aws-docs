@@ -64,7 +64,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Used to specify the configuration options for an FSx for ONTAP volume's storage aggregate or aggregates.
 *Required*: No
 *Type*: [AggregateConfiguration](aws-properties-fsx-volume-aggregateconfiguration.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `CopyTagsToBackups`  <a name="cfn-fsx-volume-ontapconfiguration-copytagstobackups"></a>
 A boolean flag indicating whether tags for the volume should be copied to backups. This value defaults to false. If it's set to true, all tags for the volume are copied to all automatic and user-initiated backups where the user doesn't specify tags. If this value is true, and you specify one or more tags, only the specified tags are copied to backups. If you specify one or more tags when creating a user-initiated backup, no tags are copied from the volume, regardless of this value.
@@ -168,7 +168,3 @@ Use to specify the style of an ONTAP volume. FSx for ONTAP offers two styles of 
 *Type*: String
 *Allowed values*: `FLEXVOL | FLEXGROUP`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

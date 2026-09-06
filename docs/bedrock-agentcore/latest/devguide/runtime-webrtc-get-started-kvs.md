@@ -43,7 +43,3 @@ Relays media traffic between the browser client and the agent. The agent obtains
 1. The client and agent exchange ICE candidates to establish connectivity through the TURN server.
 
 1. Once connected, the client streams microphone audio to the agent over WebRTC. The agent forwards the audio to an Amazon Bedrock foundation model and streams the model’s spoken response back to the client.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

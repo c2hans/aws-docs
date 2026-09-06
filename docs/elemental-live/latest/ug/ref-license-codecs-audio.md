@@ -35,7 +35,3 @@ Some audio codecs require an add-on package. This table lists audio codecs in al
   - **Action:** Decode  / **Add-on Package:** No add-on package required  / **Change on Web Interface:**
   - **Action:** Passthrough  / **Add-on Package:** Passthrough isn't supported / **Change on Web Interface:**
   - **Action:** Encode  / **Add-on Package:** No add-on package required  / **Change on Web Interface:**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

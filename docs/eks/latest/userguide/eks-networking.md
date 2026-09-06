@@ -30,7 +30,3 @@ Your Amazon EKS cluster is created in a VPC. Pod networking is provided by the A
 To create a new VPC Subnet:
 +  [Review EKS Subnet Requirements](network-reqs.md#network-requirements-subnets)
 + See [Create a Subnet](https://docs.aws.amazon.com/vpc/latest/userguide/create-subnets.html) in the Amazon Virtual Private Cloud User Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

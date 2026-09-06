@@ -34,7 +34,3 @@ Timestream for LiveAnalytics supports the following array functions.
 | shuffle(x) | array | Generate a random permutation of the given array x.<pre>SELECT shuffle(ARRAY[6,8,2,9,3])</pre><br />Example result: `[ 6,3,2,9,8 ]` |
 | slice(x, start, length) | array | Subsets array x starting from index start (or starting from the end if start is negative) with a length of length.<pre>SELECT slice(ARRAY[6,8,2,9,3], 1, 3)</pre><br />Example result: `[ 6,8,2 ]` |
 | zip(array1, array2[, ...]) | array(row) | Merges the given arrays, element-wise, into a single array of rows. If the arguments have an uneven length, missing values are filled with NULL.<pre>SELECT zip(ARRAY[6,8,2,9,3], ARRAY[15,24])</pre><br />Example result: `[ ( 6, 15 ),( 8, 24 ),( 2, - ),( 9, - ),( 3, - ) ]` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

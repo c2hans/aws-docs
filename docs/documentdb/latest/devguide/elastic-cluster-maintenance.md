@@ -247,7 +247,3 @@ To change the maintenance window, see [Modifying elastic cluster configurations]
 Amazon DocumentDB elastic clusters occasionally require operating system updates. Amazon DocumentDB upgrades the operating system to a newer version to improve database performance and customers’ overall security posture. Operating system updates don't change the cluster engine version of an Amazon DocumentDB elastic cluster.
 
 Most operating system updates for Amazon DocumentDB elastic clusters are optional and don't have a set date to apply them. However, if you don't apply these updates for a while, they may eventually become required and automatically applied during your clusters maintenance window. This is to help maintain the security posture of your database. To avoid unexpected downtime, apply operating system updates to your Amazon DocumentDB elastic cluster as soon as they become available, and set your cluster maintenance window at a time that suits your business needs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

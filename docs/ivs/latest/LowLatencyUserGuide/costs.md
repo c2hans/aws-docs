@@ -91,7 +91,3 @@ To match the video quality of the ad content to the source content, MediaTailor 
 IVS delivers ad content to viewers as part of the video stream. You will not incur MediaTailor ad delivery charges, as the delivery of ad content is included in IVS video output costs.
 
 For more details, see the AWS Elemental MediaTailor [pricing page](https://aws.amazon.com/mediatailor/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

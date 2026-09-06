@@ -43,7 +43,3 @@ As shown in the following diagram, a typical IT operating model encompasses mult
 ![Components of a typical IT operating model.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-transform-adm-operating-model-gen-ai/images/guide-img/b9a9e359-a4e7-4079-8cd0-44ed873cc2c3/images/f72ab225-586b-4755-bf6a-46ec9e761652.png)
 
 A well-designed operating model does more than explain day-to-day operations. It's a strategic asset driving competitive advantage. The operating model enables organizations to respond quickly to market changes, innovate effectively, and deliver greater customer value. A key strength of a well-designed operating model is adaptability. Your organization's operating model must flex to support its chosen practices while maintaining consistency and efficiency. This ability to adapt applies whether you use traditional waterfall methodologies, agile frameworks, or a hybrid approach for your ADM.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

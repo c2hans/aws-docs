@@ -93,7 +93,3 @@ If the manufacturer doesn't specify a maximum date, the AWS Marketplace Channel 
 **As the reseller:**
 + For resellers and Channel Partners, the steps for creating a future dated Channel Partner private offer and an ordinary future dated private offer are the same, with one key difference. The agreement start date resellers can specify must be earlier than what is specified as the maximum allowed service start date in the resale authorization by the manufacturer.
 + To learn how to create a Channel Partner private offer, see [Creating private offers as an AWS Marketplace Channel Partner](channel-partner-offers.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

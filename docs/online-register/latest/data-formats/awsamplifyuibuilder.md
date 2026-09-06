@@ -22,7 +22,3 @@ AWS Amplify UI Builder provides the following APIs for data retrieval.
 | <a name="amplifyuibuilder-ListForms"></a>[ListForms](https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_ListForms.html) | List forms | List |
 | <a name="amplifyuibuilder-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_ListTagsForResource.html) | List tags for a specified Amazon Resource Name (ARN) | List |
 | <a name="amplifyuibuilder-ListThemes"></a>[ListThemes](https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_ListThemes.html) | List themes | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

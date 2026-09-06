@@ -26,7 +26,3 @@ The following Amazon EMR 6.7.0 releases are available for Amazon EMR on EKS. Sel
 **Resolved issues**
 + Amazon EMR on EKS 6.7 fixes an issue in 6.6 when using Apache Spark's pod templates functionality with interactive endpoints. The issue was present in Amazon EMR on EKS releases 6.4, 6.5 and 6.6. You can now use pod templates to define how your Spark driver and executor pods start when using interactive endpoints to run interactive analytics.
 + In previous Amazon EMR on EKS releases, Jupyter Enterprise Gateway would block transactions when kernel launch was in progress, and this impeded the execution of currently running notebook sessions. You can now execute commands in currently running notebooks when other kernel launches are in progress. You can also launch multiple kernels simultaneously without the risk of losing connectivity to kernels that are already running.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

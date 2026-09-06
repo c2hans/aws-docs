@@ -44,7 +44,3 @@ To terminate an instance, `nodewatcher` calls the [TerminateInstanceInAutoScalin
 <a name="static-cluster"></a>
 
 The value of auto scaling is the same for HPC as with any other workloads. The only difference is that AWS ParallelCluster has code that makes it interact more intelligently. For example, if a static cluster is required, you set the [`initial_queue_size`](cluster-definition.md#configuration-initial-queue-size) and [`max_queue_size`](cluster-definition.md#configuration-max-queue-size) parameters to the exact size of cluster that's required,. and then you set the [`maintain_initial_size`](cluster-definition.md#maintain-initial-size) parameter to true. This causes the ComputeFleet Auto Scaling group to have the same value for minimum, maximum, and desired capacity.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

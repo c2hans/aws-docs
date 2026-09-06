@@ -13,7 +13,7 @@ The [ provisioned mode](https://docs.aws.amazon.com/lambda/latest/dg/invocation-
  ** MaximumPollers **   <a name="lambda-Type-ProvisionedPollerConfig-MaximumPollers"></a>
 The maximum number of event pollers this event source can scale up to. For Amazon SQS event source mappings, the accepted range is between 2 and 10,000, with a default of 200. For Amazon MSK and self-managed Apache Kafka event source mappings, the accepted range is between 1 and 2,000, with a default of 200.
 Type: Integer
-Valid Range: Minimum value of 1. Maximum value of 2000.
+Valid Range: Minimum value of 1. Maximum value of 10000.
 Required: No
 
  ** MinimumPollers **   <a name="lambda-Type-ProvisionedPollerConfig-MinimumPollers"></a>
@@ -36,7 +36,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/lambda-2015-03-31/ProvisionedPollerConfig)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/lambda-2015-03-31/ProvisionedPollerConfig)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/lambda-2015-03-31/ProvisionedPollerConfig)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

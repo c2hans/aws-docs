@@ -16,7 +16,3 @@ These are key objectives organizations should aim for when migrating to Amazon E
 + **Better developer experience** - Accelerate developer onboarding and productivity through standardized managed infrastructure, consistent tooling, and reduced operational complexity.
 + **Improved observability and troubleshooting** - Enhance issue detection and resolution through integrated Amazon CloudWatch monitoring, comprehensive logging, and native AWS observability tools.
 + **Native AWS service ecosystem** - Simplify integration complexity through built-in AWS service support, seamless AWS Identity and Access Management (IAM) integration, and unified management experience.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ Follow these steps to deactivate a user account in your private re:Post:
 You can still view the deactivated user under the **Set user permissions** section. This user is marked as **DEACTIVATED**.
 
 After you deactivate a user, the user can no longer sign in to your private re:Post. The user isn't included in the subsequent months' billing. After the user is signed out, their private re:Post session might continue for up to 8 hours. If you need to immediately remove the user from your private re:Post, you must use the IAM Identity Center. For more information, see [Remove users or groups from your private re:Post](https://docs.aws.amazon.com/repostprivate/latest/caguide/remove-users-groups.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

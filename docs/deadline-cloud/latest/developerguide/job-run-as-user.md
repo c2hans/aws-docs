@@ -18,7 +18,3 @@ When a queue doesn't specify a user, its jobs run as the worker agent user. The 
 On a customer-managed fleet, the worker agent enforces the boundary between queue users with operating system permissions. The agent creates each session's working directory so that only the agent user and the job user's primary group can access it. The agent also stores each queue's role credentials in a queue-specific directory with the same access restriction. When each queue has its own user and primary group, a job can't read another queue's session files or AWS credentials.
 
 Standard operating system user permissions on a shared kernel separate queue users on a shared worker host. Give workloads that require stronger separation, such as virtual machine isolation, their own fleets.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

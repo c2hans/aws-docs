@@ -120,7 +120,3 @@ While your replication instance is being created, you can specify the source and
 <a name="ex-dms-ri-create-tip"></a>
 + You can add up to 50 tags, but to do so you must enable the **Additional configuration** view.
 + You must create a replication instance on an EC2 instance in your AMS VPC that has sufficient storage and processing power to perform the tasks you assign and migrate data from your source database to the target database. The required size of this instance varies depending on the amount of data you need to migrate and the tasks that you need the instance to perform. The replication instance provides high availability and failover support using a Multi-AZ deployment when you select the `MultiAZ` option. For more information about replication instances, see [ Working with an AWS DMS Replication Instance](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_ReplicationInstance.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

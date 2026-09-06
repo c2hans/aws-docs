@@ -62,7 +62,3 @@ The [sigv4a-signing-examples](https://github.com/aws-samples/sigv4a-signing-exam
 [Python code to publish to AWS IoT Core using HTTPs protocol](https://github.com/aws-samples/aws-iot-core-python-node-sigv4-https) provides guidance on how to publish messages to AWS IoT Core using HTTPS protocol and AWS SigV4 authentication. It has two reference implementations - one in Python and other in NodeJs.
 
 [.Net Framework application to publish to AWS IoT Core using HTTPs protocol](https://github.com/aws-samples/aws-iot-core-http-sigv4-dotnet-app) provides guidance on how to publish messages to AWS IoT Core using HTTPS protocol and AWS SigV4 authentication. This project also includes a .NET core equivalent implementation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

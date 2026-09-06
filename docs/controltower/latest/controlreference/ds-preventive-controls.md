@@ -29,7 +29,3 @@ In the AWS Control Tower console, you can view these controls together under the
 + [[CT.KMS.PV.6] Require that an AWS KMS customer-managed key (CMK) is configured with key material originating from an external key store (XKS)](ct-kms-pv-6.md)
 + [[CT.LAMBDA.PV.1] Require an AWS Lambda function URL to use AWS IAM-based authentication](ct-lambda-pv-1.md)
 + [[CT.LAMBDA.PV.2] Require an AWS Lambda function or AWS Lambda function URL to be configured for access only to principals within your AWS account](ct-lambda-pv-2.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

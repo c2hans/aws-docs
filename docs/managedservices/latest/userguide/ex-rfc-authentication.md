@@ -12,7 +12,3 @@ When you use the AMS API/CLI, you must authenticate with temporary credentials. 
 A common choice is SAML. After set up, you add an argument to each operation that you call. For example: `aws --profile saml amscm list-change-type-categories`.
 
 A shortcut for SAML 2.0 profiles is to set the profile variable at the start of each API/CLI with `set AWS_DEFAULT_PROFILE=saml` (for Windows; for Linux it would be `export AWS_DEFAULT_PROFILE=saml`). For information about setting CLI environment variables, see [ Configuring the AWS Command Line Interface, Environment Variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-environment).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,7 +39,3 @@ The following table describes the documentation for this release of AWS Launch W
 | [Proxy server support](launch-wizard-sap.md) | You can route outbound internet traffic for deployed EC2 instances through a proxy server.  | May 11, 2020 |
 | [Initial release](launch-wizard-sap.md) | Initial release of AWS Launch Wizard for SAP User Guide. | April 8, 2020 |
 | [Initial release](#doc-history) | Initial release of the AWS Launch Wizard for SQL Server User Guide. | November 14, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

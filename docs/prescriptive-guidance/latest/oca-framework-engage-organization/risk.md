@@ -62,7 +62,3 @@ To ensure effective risk mitigation:
 1. Track the mitigation and closure of people-related risks over the course of the cloud program to evaluate the impact of risk mitigation on your organization's ability to achieve desired cloud outcomes.
 
 The effective implementation of the risk mitigation plan is critical for driving cloud adoption and achieving desired business outcomes. By following these best practices, using a comprehensive risk tracking tool, and maintaining a structured approach to risk management, organizations can proactively address potential obstacles in their cloud transformation journey. This not only minimizes disruptions but also accelerates adoption and maximizes the value realized from the cloud investment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

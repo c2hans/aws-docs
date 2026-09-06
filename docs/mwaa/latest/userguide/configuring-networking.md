@@ -149,7 +149,3 @@ If you've chosen the **Private network** option, you'll need to create a mechani
 If you've chosen **Both public and private network access**, you do not need to create a mechanism to access the Apache Airflow UI. It is accessible over the internet. The private VPC endpoint is used automatically by workers for internal communication.
 
 To learn more, refer to [Managing access for VPC endpoints](https://docs.aws.amazon.com/mwaa/latest/userguide/vpc-vpe-access.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

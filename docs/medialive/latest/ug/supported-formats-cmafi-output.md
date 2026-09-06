@@ -9,6 +9,9 @@ In this table, look up your input container and captions type. Then read across 
 + CMAF Ingest output
 + MediaPackage output with a CMAF Ingest container
 
+**Note**
+You can also produce subtitles without a caption source in your input. Enable the Smart Subtitles feature, which uses AWS Elemental Inference to generate TTML or WebVTT subtitles from the audio. For more information, see [Smart Subtitles using Elemental Inference](elemental-inference-automatic-subtitling.md).
+
 - **CDI container**
   - **Source caption input:** Embedded / **Supported output captions:** Burn-in<br />TTML<br />WebVTT
   - **Source caption input:** Teletext / **Supported output captions:** TTML<br />WebVTT
@@ -38,6 +41,6 @@ In this table, look up your input container and captions type. Then read across 
   - **Source caption input:** Embedded / **Supported output captions:** Burn-inTTML<br />WebVTT
   - **Source caption input:** Teletext / **Supported output captions:** Burn-inTTML<br />WebVTT
 
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+- **All input containers(Smart Subtitles generates subtitles from the source audio, not from captions in the source.)**
+  - **Source caption input:** Smart Subtitles
+  - **Supported output captions:** TTML<br />WebVTT

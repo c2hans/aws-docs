@@ -19,7 +19,3 @@ Hutchins EM, Cloppert MJ, Amin RM. Intelligence-driven computer network defense 
  Since Lockheed Martin’s paper was published in 2011, many variations of this particular intrusion analysis approach have been developed in the cybersecurity industry, and many organizations have benefited from implementing this classic framework for intrusion analysis to guide mitigation and response strategy for their on-premises infrastructure.
 
  This whitepaper offers an assessment of the classic intrusion analysis framework from an AWS Cloud perspective; pointing out where it applies, where it may not, and describing AWS mechanisms to support and enhance any customers’ intrusion analysis approach.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

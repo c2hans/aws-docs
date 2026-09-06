@@ -141,7 +141,3 @@ Amazon Q Developer has the following limitations:
 + **Pricing data**: The pricing and cost estimation capabilities only provide public pricing data from the AWS Price List APIs. Customer-specific discounts are not reflected in pricing estimates. Amazon Q Developer does not integrate with the AWS Pricing Calculator, so it cannot create or save workload estimates that reflect customer-specific discounts or pricing.
 + **Savings Plans analysis**: Amazon Q Developer can provide Savings Plans recommendations and analyze your historical Savings Plans coverage and utilization. Q does not integrate with Savings Plans Purchase Analyzer, so it cannot model the impact of a specific Savings Plans purchase on savings, coverage, or utilization.
 + **Mutating actions**: Amazon Q Developer can retrieve and analyze cost data, but cannot take mutating actions on your behalf, such as creating or modifying budgets, purchasing Savings Plans or Reserved Instances, or modifying Cost Management preferences.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

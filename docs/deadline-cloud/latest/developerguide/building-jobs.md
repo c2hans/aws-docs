@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/bui
 # Build jobs to submit to Deadline Cloud
 <a name="building-jobs"></a>
 
-You submit jobs to Deadline Cloud using job bundles. A job bundle is a collection of files, including an [Open Job Description (OpenJD)](https://github.com/OpenJobDescription/openjd-specifications) job template and any asset files needed to render the job.
+You submit jobs to Deadline Cloud using job bundles. A job bundle is a collection of files, including a job template and any asset files needed to render the job. The job template follows the [Open Job Description (OpenJD) specification](https://github.com/OpenJobDescription/openjd-specifications) on the GitHub website.
 
  The job template describes how workers process and access the assets, and provides the script that the worker runs. Job bundles enable artists, technical directors, and pipeline developers to easily submit complex jobs to Deadline Cloud from their local workstations or on-premises infrastructure. Job bundles are useful for teams working on large-scale rendering, scientific simulations, machine learning training, or other workloads that require scalable, on-demand computing resources.
 
@@ -24,7 +24,3 @@ You can store your assets in a file system shared between your workers, or you c
 + [Share job bundles on your queue](share-job-bundles.md)
 + [Schedule jobs in Deadline Cloud](build-jobs-scheduling.md)
 + [Modify a job in Deadline Cloud](build-jobs-modifying.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

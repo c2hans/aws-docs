@@ -19,7 +19,3 @@ The following are considerations for security in the cloud, as they affect Kuber
 + [Use AWS Secrets Manager secrets with Amazon EKS Pods](manage-secrets.md)
 + [Default envelope encryption for all Kubernetes API Data](envelope-encryption.md)
 + [Harden Kubernetes RBAC in Amazon EKS](rbac-hardening.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ You can perform a basic experiment from the Amazon EC2 console, or you can perfo
 1. Choose **Pause volume I/O**. When prompted, enter `start` in the confirmation field and choose **Start experiment**.
 
 1. Monitor the progress and impact of your experiment. For more information, see [Monitoring AWS FIS](https://docs.aws.amazon.com/fis/latest/userguide/monitoring-experiments.html) in the *AWS FIS User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -82,7 +82,3 @@ This feature is enabled automatically in Neptune ML, and allows you strike a bal
 <a name="machine-learning-before-exporting-data-get-support"></a>
 
 AWS offers professional support services to help you with problems in your machine learning on Neptune projects. If you get stuck, reach out to [AWS support](https://aws.amazon.com/premiumsupport/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

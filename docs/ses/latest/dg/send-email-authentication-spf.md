@@ -13,7 +13,3 @@ However, if you don't want to use the SES default MAIL FROM domain, and would ra
 
 **Learn how to set up SPF authentication**
 Instructions are given for configuring your domain with SPF and how to publish the MX and SPF (type TXT) records in [Using a custom MAIL FROM domain](mail-from.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

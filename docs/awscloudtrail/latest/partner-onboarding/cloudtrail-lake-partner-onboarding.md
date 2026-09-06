@@ -64,7 +64,3 @@ The following diagram shows how an AWS customer configures event integration wit
 1. The partner sends the audit event to CloudTrail Lake by calling the [`PutAuditEvents` API](https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/API_PutAuditEvents.html), and using it to pass the `eventData` content from the customer's activity, the channel ARN, and the external ID (if included in the resource policy).
 
 1. CloudTrail Lake checks the resource policy to verify that the partner's permissions are valid. If the partner's permissions are valid, CloudTrail Lake ingests the activity events.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

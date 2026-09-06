@@ -117,7 +117,3 @@ We recommend you use non-block mode, as it is less likely to interfere with your
     ```
   + Check the Amazon CloudWatch metric, `OST FreeDataStorageCapacity`, check `Minimum`. If your script is finding OSTs that are over 85% full, then when the metric is close to 15%, use `ctrl-c` or `kill -9` to stop the migration.
 + You may also consider changing the stripe configuration of your file system or a directory, so that new files are striped across multiple storage targets. For more information, see in [Striping data in your file system](performance.md#striping-data).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

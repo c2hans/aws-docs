@@ -12,9 +12,9 @@ If you decide to manually specify column encodings, you might want to test diffe
 **Note**
 We recommend that you use the COPY command to load data whenever possible, and allow the COPY command to choose the optimal encodings based on your data. Or you can use the [ANALYZE COMPRESSION](r_ANALYZE_COMPRESSION.md) command to view the suggested encodings for existing data. For details about applying automatic compression, see [Loading tables with automatic compression](c_Loading_tables_auto_compress.md).
 
-To perform a meaningful test of data compression, you must have a large number of rows. For this example, we create a table and insert rows by using a statement that selects from two tables; VENUE and LISTING. We leave out the WHERE clause that would normally join the two tables. The result is that *each* row in the VENUE table is joined to *all* of the rows in the LISTING table, for a total of over 32 million rows. This is known as a Cartesian join and normally is not recommended. However, for this purpose, it's a convenient method of creating many rows. If you have an existing table with data that you want to test, you can skip this step.
+To perform a meaningful test of data compression, you must have a large number of rows. For this example, create a table and insert rows by using a statement that selects from two tables: VENUE and LISTING. Leave out the WHERE clause that would normally join the two tables. The result is that *each* row in the VENUE table is joined to *all* of the rows in the LISTING table, for a total of over 32 million rows. This is known as a Cartesian join and normally is not recommended. However, for this purpose, it's a convenient method of creating many rows. If you have an existing table with data that you want to test, you can skip this step.
 
-After we have a table with sample data, we create a table with seven columns. Each has a different compression encoding: raw, bytedict, lzo, run length, text255, text32k, and zstd. We populate each column with exactly the same data by running an INSERT command that selects the data from the first table.
+After you have a table with sample data, create a table with seven columns. Each has a different compression encoding: raw, bytedict, lzo, run length, text255, text32k, and zstd. Populate each column with exactly the same data by running an INSERT command that selects the data from the first table.
 
 To test compression encodings, do the following:
 
@@ -136,7 +136,3 @@ The following table shows the column encodings that were chosen for the CUSTOMER
 | STATE | char(2) | raw | In the United States, STATE is a precise domain of 50 two-character values. Bytedict encoding would yield some compression, but because the column size is only two characters, compression might not be worth the overhead of uncompressing the data. |
 | ZIPCODE | char(5) | bytedict | ZIPCODE is a known domain of fewer than 50,000 unique values. Certain zip codes occur much more commonly than others. Bytedict encoding is very effective when a column contains a limited number of unique values.  |
 | START\_DATE | date | delta32k | Delta encodings are very useful for date time columns, especially if the rows are loaded in date order. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

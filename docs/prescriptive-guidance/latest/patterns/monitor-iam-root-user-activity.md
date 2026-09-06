@@ -124,7 +124,3 @@ The *Epics* section provides step-by-step instructions for deploying the templat
 <a name="monitor-iam-root-user-activity-additional"></a>
 
 [Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html) is a continuous security monitoring service that analyzes and processes logs to identify unexpected and potentially unauthorized activity in your AWS environment. As an alternative to this solution, if you have enabled GuardDuty, it can alert you when the root user credentials have been used. The GuardDuty finding is `Policy:IAMUser/RootCredentialUsage`, and the default severity is **Low**. For more information, see [Managing Amazon GuardDuty findings](https://docs.aws.amazon.com/guardduty/latest/ug/findings_management.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

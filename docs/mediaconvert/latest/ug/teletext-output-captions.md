@@ -45,7 +45,3 @@ Set up your captions like this:
 + In the same output group and same output as your video, create one captions tab for each output Teletext page.
 + In each output captions tab, choose one of your input captions selectors for **Captions source**.
 + In each output captions tab, for **Page number**, specify the Teletext page number that you want for those captions in your output. Optionally, provide values for **Language** and **Description**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -80,7 +80,3 @@ You can specify a customer managed key to encrypt the following resources:
  For resource-specific encryption context details, see:
 +  [Encryption at rest for TLE and OEM ephemeris data](security.encryption-at-rest-tle-oem.md)
 +  [Encryption at rest for azimuth elevation ephemeris](security.encryption-at-rest-azimuth-elevation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

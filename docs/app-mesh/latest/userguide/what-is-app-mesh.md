@@ -72,7 +72,3 @@ We also provide SDKs that enable you to access App Mesh from a variety of progra
 + Handling error responses
 For more information about available SDKs, see [Tools for Amazon Web Services](https://aws.amazon.com/tools/).
 For more information about the App Mesh APIs, see the [AWS App Mesh API Reference](https://docs.aws.amazon.com/app-mesh/latest/APIReference/Welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

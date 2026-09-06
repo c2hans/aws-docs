@@ -477,7 +477,3 @@ Disabling EMF for the `/aws/application-signals/data` log group can have the fol
 **How do I restore Application Signals?**
 
 When Application Signals displays empty charts or metrics, you must enable EMF for the `/aws/application-signals/data` log group to restore full functionality. For more information, see [PutAccountPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutAccountPolicy.html#API_PutAccountPolicy_RequestSyntax).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

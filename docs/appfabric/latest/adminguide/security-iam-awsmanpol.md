@@ -189,7 +189,3 @@ View details about updates to AWS managed policies for AppFabric since this serv
 | [AWSAppFabricFullAccess](#security-iam-awsmanpol-AWSAppFabricFullAccess) – New policy | AppFabric added a new policy to grant administrative permissions to the AppFabric service. | June 27, 2023 |
 | [AWSAppFabricServiceRolePolicy](#security-iam-awsmanpol-AWSAppFabricServiceRolePolicy) – New policy | AppFabric added a new policy for the `AWSServiceRoleForAppFabric` service-linked role. | June 27, 2023 |
 | AppFabric started tracking changes | AppFabric started tracking changes for its AWS managed policies. | June 27, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

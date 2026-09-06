@@ -23,7 +23,3 @@ When you remove an upstream repository, you could break upstream relationship ch
 1. In the **Edit upstream repositories** section, find the upstream repository you want to remove and choose ![Remove](http://docs.aws.amazon.com/codecatalyst/latest/userguide/images/packages/remove.png).
 
 1. When you're finished removing upstream repositories, choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

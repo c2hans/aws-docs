@@ -122,7 +122,3 @@ Your inputs can result in different types of plan configuration updates, includi
 <a name="plan-improvement-actions-best-practices"></a>
 + **Provide context, not just answers** - When using the Supply Chain Decisions Teammate, explain the business reasoning behind your input. This helps the agent learn generalizable patterns.
 + **Review actions each planning cycle** - New actions are generated with each plan run as new data is ingested. Regular review ensures your forecasts continuously improve.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

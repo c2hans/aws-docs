@@ -37,7 +37,3 @@ The example job type [AIJOB.ctmai ](https://github.com/aws-samples/aws-mainframe
 + On the **Home** tab, select **Import job type from file**, and select the location of `AIM2JOB.ctmai`.
 + If you want to make any modifications to the supplied example, familiarize yourself with Application Integrator.
 + Deploy the job type by following the instructions in the [Control-M documentation](https://documents.bmc.com/supportu/9.0.21/en-US/Documentation/Deploying_and_Publishing_a_Plug-in.htm).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

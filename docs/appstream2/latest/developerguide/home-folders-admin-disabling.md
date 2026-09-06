@@ -25,7 +25,3 @@ To restore access to home folders for the stack, enable home folders again by fo
 1. Below the stacks list, choose **Storage** and clear **Enable Home Folders**.
 
 1. In the **Disable Home Folders** dialog box, type `CONFIRM` (case-sensitive) to confirm your choice, then choose **Disable**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

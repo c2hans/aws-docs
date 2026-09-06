@@ -102,7 +102,3 @@ On your source device, if you don't use any configuration files or specify the p
 The application data from SSH and HTTP connection can now be transferred concurrently over the multiplexed tunnel. As seen in the map below, the service identifier acts as a readable format to translate the port mapping between the source and destination device. With this configuration, secure tunneling forwards any incoming HTTP traffic from port {{5555}} on the source device to port {{80}} on the destination device, and any incoming SSH traffic from port {{3333}} to port {{22}} on the destination device.
 
 ![A translation process for mapping service identifiers from source and destination local proxies to translated port mappings after processing.](http://docs.aws.amazon.com/iot/latest/developerguide/images/multiplexing-post-mapping-translation.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

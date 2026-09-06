@@ -30,7 +30,3 @@ The OAuth2 Client Secret from the Box Custom App. Stored in AWS Secrets Manager.
 
 **Note**
 The `client_id` and `client_secret` values are retrieved from AWS Secrets Manager. These credentials can be found in the Box Developer Console under your Custom App's Configuration tab.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ To avoid incurring storage charges, we recommend that you add the [S3 bucket pol
 If a batch transform job fails to process an input file because of a problem with the dataset, SageMaker AI marks the job as `failed`. If an input file contains a bad record, the transform job doesn't create an output file for that input file because doing so prevents it from maintaining the same order in the transformed data as in the input file. When your dataset has multiple input files, a transform job continues to process input files even if it fails to process one. The processed files still generate useable results.
 
 If you are using your own algorithms, you can use placeholder text, such as `ERROR`, when the algorithm finds a bad record in an input file. For example, if the last record in a dataset is bad, the algorithm places the placeholder text for that record in the output file.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

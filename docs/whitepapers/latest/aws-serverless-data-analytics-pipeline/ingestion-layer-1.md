@@ -62,7 +62,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-a
 <a name="third-party-data-sources"></a>
 
  Your organization can gain a business edge by combining your internal data with third- party datasets such as historical demographics, weather data, and consumer behavior data. [AWS Data Exchange](https://aws.amazon.com/data-exchange/) provides a serverless way to find, subscribe to, and ingest third-party data directly into Amazon S3 buckets in the data lake landing zone. You can ingest a full third-party dataset and then automate detecting and ingesting revisions to that dataset. AWS Data Exchange is serverless and lets you find and ingest third-party datasets with a few clicks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

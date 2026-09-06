@@ -26,7 +26,3 @@ Use this general guidance in addition to the guidance for using the AWS Network 
 + [Resilience in Network Firewall](disaster-recovery-resiliency.md)
 + [Infrastructure security in AWS Network Firewall](infrastructure-security.md)
 + [Access AWS Network Firewall using an interface endpoint](vpc-interface-endpoints.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

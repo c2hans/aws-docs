@@ -12,7 +12,3 @@ This section describes how to manage users that you've already added to the AWS 
 + [Change and delete users](config-wrkr-lv-cg-users-candd.md)
 + [Create new user roles](config-wrkr-lv-cg-users-create.md)
 + [Manage global access features](config-wrkr-lv-cg-users-manage.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

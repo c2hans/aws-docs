@@ -35,7 +35,3 @@ These tutorials cover various use cases and scenarios, helping you effectively l
 + [Using latency and weighted records in Amazon Route 53 to route traffic to multiple Amazon EC2 instances in a Region](TutorialLBRMultipleEC2InRegion.md)
 + [Managing over 100 weighted records in Amazon Route 53](TutorialManagingOver100WRR.md)
 + [Weighting fault-tolerant multi-record answers in Amazon Route 53](TutorialWeightedFTMR.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ AWS WAF tracks and manages web requests separately for each instance of a rate-b
 + [Applying rate limiting to requests in AWS WAF](waf-rule-statement-type-rate-based-request-limiting.md)
 + [Rate-based rule examples in AWS WAF](waf-rule-statement-type-rate-based-examples.md)
 + [Listing IP addresses that are being rate limited by rate-based rules](listing-managed-ips.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ When you create an environment, Elastic Beanstalk assigns a default security gro
 You can select to opt out your environment from the default EC2 security group by setting the `DisableDefaultEC2SecurityGroup` option in the `aws:autoscaling:launchconfiguration` namespace to `true`. You can use the AWS CLI or configuration files to update this option and to attach custom security groups to your environment's EC2 instances.
 
 For more information, see [Managing EC2 security groups](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.ec2.instances.sg.html) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

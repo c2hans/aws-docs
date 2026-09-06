@@ -420,7 +420,3 @@ You can deploy an Autopilot model from a different account than the original acc
       After this assignment of containers, follow the steps in [Deploy using SageMaker APIs](#autopilot-deploy-models-api) to deploy.
 
 To build a payload in real-time inferencing, see the notebook example to [ define a test payload](https://aws.amazon.com/getting-started/hands-on/machine-learning-tutorial-automatically-create-models). To create the payload from a CSV file and invoke an endpoint, see the **Predict with your model** section in [Create a machine learning model automatically](https://aws.amazon.com/getting-started/hands-on/create-machine-learning-model-automatically-sagemaker-autopilot/#autopilot-cr-room).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

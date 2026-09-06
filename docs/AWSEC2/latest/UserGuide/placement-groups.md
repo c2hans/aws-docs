@@ -8,8 +8,8 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups
 To meet the needs of your workload, you can launch a group of *interdependent* EC2 instances into a *placement group* to influence their placement.
 
 Depending on the type of workload, you can create a placement group using one of the following placement strategies:
-+ **Cluster** – Packs instances close together inside an Availability Zone. This strategy enables workloads to achieve the low-latency network performance necessary for tightly-coupled node-to-node communication that is typical of high-performance computing (HPC) applications.
-+ **Partition** – Spreads your instances across logical partitions such that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions. This strategy is typically used by large distributed and replicated workloads, such as Hadoop, Cassandra, and Kafka.
++ **Cluster** – Packs instances close together inside an Availability Zone. This strategy enables workloads to achieve the low-latency network performance necessary for tightly coupled node-to-node communication that is typical of high-performance computing (HPC) applications.
++ **Partition** – Spreads your instances across logical partitions so that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions. This strategy is typically used by large distributed and replicated workloads, such as Hadoop, Cassandra, and Kafka.
 + **Spread** – Strictly places a small group of instances across distinct underlying hardware to reduce correlated failures.
 + **Precision time** – Places instances on supported hardware with direct access to high-precision time sources in AWS infrastructure.
 
@@ -34,7 +34,3 @@ Before you use placement groups, be aware of the following rules:
 + [Delete a placement group](delete-placement-group.md)
 + [Shared placement groups](share-placement-group.md)
 + [Placement groups on AWS Outposts](placement-groups-outpost.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ When you're creating or updating table bucket or table policies, make sure that 
 If Amazon S3 is unable to write to your table bucket or your metadata tables, you must delete your metadata configuration, delete your metadata tables, and then create a new configuration. If you had an inventory table in your configuration, a new inventory table has to be created, and you will be charged again for backfilling the new inventory table.
 
 You can also control access to the rows and columns in your metadata tables through AWS Lake Formation. For more information, see [Managing Lake Formation permissions](https://docs.aws.amazon.com/lake-formation/latest/dg/managing-permissions.html) and [Data filtering and cell-level security in Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/data-filtering.html) in the *AWS Lake Formation Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -73,7 +73,3 @@ Overrides are configured using entity IDs. An entity ID uniquely identifies the 
 Overrides are intended for testing and validation, not long-term audience segmentation. Remove overrides when they are no longer needed, and use audience rules for production targeting logic.
 
 You can add, modify, or remove treatment assignment overrides after an experiment run has started. This allows you to expand testing or grant additional stakeholders access to treatment previews without stopping the run.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

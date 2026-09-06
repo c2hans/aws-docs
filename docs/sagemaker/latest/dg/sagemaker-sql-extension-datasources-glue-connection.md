@@ -224,7 +224,3 @@ Alternatively, you can update an existing AWS Glue connection as follows:
   ```
   aws --region {{region}} glue update-connection --name {{glue_connection_name}} --cli-input-json file://{{path_to_file/sagemaker-sql-connection.json}}
   ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

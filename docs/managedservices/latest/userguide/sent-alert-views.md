@@ -16,7 +16,3 @@ The AMS monitoring topic receives alerts that are used by AMS shared services, s
 To learn more, see the [Subscribe](https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html) section in the *Amazon Simple Notification Service Subscribe API reference*.
 
 For a list of baseline alerts AMS provides, see [Alerts from baseline monitoring in AMS](monitoring-default-metrics.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ If a profile has been imported into a Customer Profile domain by using Segment I
 1. **Importing profiles that already exist within your Customer Profiles Domain from a previous import job**
 
    If two import jobs have been ran, and a duplicate profile has been found, Customer profiles will always respect the longest expiry time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

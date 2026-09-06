@@ -16,7 +16,3 @@ Each AS2 server is assigned three static IP addresses. Use these IP addresses fo
 The bottom portion of the AS2 server details page contains details for any attached workflow and monitoring and tagging information.
 
 ![The server details console page for an AS2 server, showing tag details.](http://docs.aws.amazon.com/transfer/latest/userguide/images/as2-server-details-workflows-monitoring.png)![The server details console page for an AS2 server, showing tag details.](http://docs.aws.amazon.com/transfer/latest/userguide/images/edit-server-details-tags.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

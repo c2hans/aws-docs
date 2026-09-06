@@ -23,7 +23,3 @@ For information about supported Oracle functions and Data Guard configuration op
 You must have SAP portal access for reading all SAP Notes.
 
 To perform a manual failover or switchover, see [HA/DR operations](hadrops-orc-sap-nw-lx.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

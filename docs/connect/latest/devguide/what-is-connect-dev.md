@@ -46,7 +46,3 @@ The schema for writing automated tests against your contact flows, including ass
 To understand best practices for integrating with the APIs, start with [Programming with the Connect Customer APIs](connect-service-api.md). To build or modify flows programmatically, refer to [Connect Customer Flow language](flow-language.md) for the JSON schema and action reference. To validate your flows before deploying them to production, use [Connect Customer testing language](testing-language.md).
 
 For the complete API reference with request/response syntax and data types, see the [Amazon Connect API Reference](https://docs.aws.amazon.com/connect/latest/APIReference/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

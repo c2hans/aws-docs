@@ -47,7 +47,3 @@ When a user opts in, the confirmation message (first message sent to the user) m
 + The privacy policy must cover how user data is collected, used, and shared in the context of messaging.
 + The terms of service must include messaging-specific terms (opt-out rights, message frequency, data rates).
 + URLs must be functional at the time of review. Inaccessible URLs result in immediate denial.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -58,7 +58,3 @@ The two inputs have equal standing. The first input that you create when you fol
 + You can delete the first input, then create the partner input again, from the second input. The IP addresses of the new input will be assigned the port 5000.
 
   If you didn't change the name of the second input (the default has the suffix, for example, **myInput - partner**), then the new input has the name **myInput - partner - partner**. You can edit the input to change the name.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

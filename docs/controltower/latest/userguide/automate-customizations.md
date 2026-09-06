@@ -13,7 +13,3 @@ Some customizations are not available through the AWS Control Tower console, but
 
   Source code for CfCT is available in a [GitHub repository](https://github.com/aws-solutions/aws-control-tower-customizations).
 + You can customize your AWS Control Tower landing zone with Landing Zone Accelerator (LZA) on AWS. The LZA solution is architected to align with AWS best practices and conform to multiple global compliance frameworks. We recommend that you deploy AWS Control Tower as the foundational landing zone, and then enhance the landing zone capabilities with LZA, as needed. For more information, see [AWS Control Tower and Landing zone accelerator](https://docs.aws.amazon.com/controltower/latest/userguide/about-lza.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

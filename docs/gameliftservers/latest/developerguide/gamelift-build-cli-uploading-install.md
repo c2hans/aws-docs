@@ -21,7 +21,7 @@ When creating an install script, keep in mind the following:
 + The install script can't rely on a VPC peering connection. A VPC peering connection isn't available until after Amazon GameLift Servers installs the build on fleet instances.
 + The install script might run more than once as part of fleet creation. As a best practice, make sure the script is idempotent and robust to being run multiple times.
 
-**Example Windows install bash file**
+**Example Windows install batch file**
 This example `install.bat` file installs Visual C\+\+ runtime components required for the game server and writes the results to a log file. The script includes the component file in the build package at the root.
 
 ```
@@ -81,7 +81,3 @@ sudo mv /tmp/config.json /opt/aws/amazon-cloudwatch-agent/bin/config.json
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json
 sudo systemctl enable amazon-cloudwatch-agent.service
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

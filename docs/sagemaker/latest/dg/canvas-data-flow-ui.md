@@ -17,7 +17,3 @@ When you import a dataset, the original dataset appears on the data flow and is 
 The datasets, transformations, and analyses that you use in the data flow are represented as *steps*. Each time you add a transform step, you create a new dataframe. When multiple transform steps (other than **Join** or **Concatenate**) are added to the same dataset, they are stacked.
 
 Under the **Combine data** option, **Join** and **Concatenate** create standalone steps that contain the new joined or concatenated dataset.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

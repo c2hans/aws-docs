@@ -17,7 +17,3 @@ When designing data residency workloads for hybrid edge operations, it is crucia
 + [DRHCOPS04-BP01 Verify that your Outposts facilities are meeting the requirements to operate within the laws for your regulated workloads](drhcops04-bp01.md)
 + [DRHCOPS04-BP02 Design your Outposts and Local Zone workloads to consider network connectivity](drhcops04-bp02.md)
 + [DRHCOPS04-BP03 Review the available data storage options for Local Zones and Outposts to build architectures that keep data within required geographic boundaries](drhcops04-bp03.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

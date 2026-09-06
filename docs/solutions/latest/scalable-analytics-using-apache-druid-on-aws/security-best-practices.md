@@ -62,7 +62,3 @@ You can access your cluster API server from the internet. However, we strongly r
 <a name="eks-master-iam-role"></a>
 
 For EKS deployment, the guidance requires the user to supply an ARN for the EKS master role. This role, serving as the IAM principal responsible for creating the cluster, is automatically endowed with `system:masters` permissions within the cluster’s Role-Based Access Control (RBAC) configuration in the Amazon EKS control panel. For more guidance on how to secure the access for this role, refer to the [EKS best practices](https://aws.github.io/aws-eks-best-practices/security/docs/iam/#create-the-cluster-with-a-dedicated-iam-role) topic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Scalable Analytics Using Apache Druid on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -96,7 +96,3 @@ The response includes a UUID, the ARN of the key value store, and the `ETag` of 
   `arn:aws:cloudfront::123456789012:key-value-store/8aa76c93-3198-462c-aaf6-example`
 
 For more information about the `DescribeKeyValueStore` operation, see [About the CloudFront KeyValueStore](kvs-with-functions-kvp.md#kvs-with-functions-api-describe).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

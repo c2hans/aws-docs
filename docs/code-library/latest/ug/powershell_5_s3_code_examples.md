@@ -77,6 +77,20 @@ Copy-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix data/ -LocalFolder C:\l
 ```
 +  For API details, see [CopyObject](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
 
+### `Dismount-S3PSDrive`
+<a name="s3_DismountS3PSDrive_powershell_5_topic"></a>
+
+The following code example shows how to use `Dismount-S3PSDrive`.
+
+**Tools for PowerShell V5**
+**Example 1: Changes to a location outside the S3 drive, then removes the drive.**
+
+```
+Set-Location $HOME
+Dismount-S3PSDrive -Name S3
+```
++  For API details, see [Dismount-S3PSDrive](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
 ### `Get-S3Bucket`
 <a name="s3_ListBuckets_powershell_5_topic"></a>
 
@@ -662,6 +676,32 @@ CommonPrefixes      : {}
 Delimiter           :
 ```
 +  For API details, see [ListVersions](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+### `Mount-S3PSDrive`
+<a name="s3_MountS3PSDrive_powershell_5_topic"></a>
+
+The following code example shows how to use `Mount-S3PSDrive`.
+
+**Tools for PowerShell V5**
+**Example 1: Mounts an account-root S3 drive named S3 using the default credential and Region resolution. The cmdlet does not change the current location. Get-PSDrive shows the mounted drive, and Get-ChildItem lists the buckets available to the resolved credentials.**
+
+```
+Mount-S3PSDrive -Name S3
+Get-PSDrive -Name S3
+Get-ChildItem -Path S3:\
+```
+**Example 2: Mounts a drive scoped to a bucket prefix and sets the Region used by the drive. Set-Location enters the drive explicitly because mounting does not change the current location.**
+
+```
+Mount-S3PSDrive -Name ProjectData -Root 'amzn-s3-demo-bucket/projects/2026' -Region us-west-2
+Set-Location ProjectData:\
+```
+**Example 3: Mounts an account-root drive using credentials from a named profile.**
+
+```
+Mount-S3PSDrive -Name Archive -ProfileName my-profile -Region us-east-1
+```
++  For API details, see [Mount-S3PSDrive](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
 
 ### `New-S3Bucket`
 <a name="s3_PutBucket_powershell_5_topic"></a>
@@ -1443,7 +1483,3 @@ The following code example shows how to use `Write-S3ObjectRetention`.
 Write-S3ObjectRetention -BucketName 'amzn-s3-demo-bucket' -Key 'testfile.txt' -Retention_Mode GOVERNANCE -Retention_RetainUntilDate "2019-12-31T00:00:00"
 ```
 +  For API details, see [PutObjectRetention](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

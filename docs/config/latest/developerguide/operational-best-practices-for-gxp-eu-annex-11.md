@@ -203,7 +203,3 @@ The following provides a sample mapping between the GxP EU Annex 11 and AWS mana
 <a name="gxp-eu-annex-11-conformance-pack-sample"></a>
 
 The template is available on GitHub: [Operational Best Practices for GxP EU Annex 11](https://github.com/awslabs/aws-config-rules/blob/master/aws-config-conformance-packs/Operational-Best-Practices-for-GxP-EU-Annex-11.yaml).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

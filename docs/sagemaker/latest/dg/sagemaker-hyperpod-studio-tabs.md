@@ -130,7 +130,3 @@ Choose **Open in Remote IDE** from the spaces table to connect your local IDE to
 Amazon SageMaker HyperPod provides a view of your cluster metadata details. The following paragraph provides information on how to get your HyperPod cluster details.
 
 In Amazon SageMaker Studio, you can navigate to one of your clusters in **HyperPod clusters** (under **Compute**) and view the **Details** on your cluster. This includes the tags, logs, and metadata.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

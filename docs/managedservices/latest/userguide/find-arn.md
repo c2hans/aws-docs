@@ -55,7 +55,3 @@ The AWS Key Management Service service provides this information: [Finding the k
 To find the ARN of a DynamoDB table, use the DynamoDB [describe-table](https://docs.aws.amazon.com/cli/latest/reference/dynamodb/describe-table.html) CLI.
 
 For an outsider's look at finding AWS ARNs, see [AWS ARN Explained: Amazon Resource Name Guide](https://devopscube.com/aws-arn-guide/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

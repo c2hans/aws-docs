@@ -47,7 +47,3 @@ The patching service notification is sent by email to the contact email address 
 If you approve the service notification, AMS runs the patch RFC and applies the updates within the agreed-to patch window, as per the service commitment.
 
 When patching is finished, AMS sends you a correspondence in the Service Request, with a summary of the outcome of the patching activity (that is, success or failed).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

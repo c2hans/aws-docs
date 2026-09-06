@@ -283,7 +283,3 @@ For more information, see the [version 4 announcement](https://aws.amazon.com/bl
 **Cause:** When you limit `CreateEnvironment` permissions for creation of VPC environments only and if you have already created a public environment, you will keep your access to the existing public CloudShell environment until this environment is deleted using the web user interface. But if you have never used CloudShell before, you will not have access to public environments.
 
 **Solution:** To restrict access to public AWS CloudShell environments, the IAM administrator must first update the IAM policy with the restriction, and then the user must manually delete the existing public environment using the AWS CloudShell web user interface. (**Actions** → **Delete CloudShell environment**).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -588,7 +588,3 @@ Default values for many CDK CLI command line flags can be stored in a project’
 |  `toolkitStackName`  | The name of the bootstrap stack (see [Bootstrap your AWS environment](#cli-bootstrap)). |  `--toolkit-stack-name`  |
 |  `versionReporting`  | If `false`, opts out of version reporting. |  `--no-version-reporting`  |
 |  `watch`  | JSON object containing `"include"` and `"exclude"` keys that indicate which files should (or should not) trigger a rebuild of the project when changed. See [Watch mode](#cli-deploy-watch). |  `--watch`  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ Skills in:
 + Skill 6.3.1: Create or enable rules to detect and remediate noncompliant AWS resources and to send notifications (for example, by using AWS Config to aggregate alerts and remediate non-compliant resources, Security Hub).
 + Skill 6.3.2: Use AWS audit services to collect and organize evidence (for example, AWS Audit Manager, AWS Artifact).
 + Skill 6.3.3: Use AWS services to evaluate architecture for compliance with AWS security best practices (for example, AWS Well-Architected Framework tool).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

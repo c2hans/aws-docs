@@ -22,7 +22,3 @@ Although .NET 5 can be used for a variety of application architectures, its ligh
 The following sections of this paper include several ways you can deploy both monolithic and distributed applications in the AWS Cloud. Monolithic deployment patterns are mostly applicable for legacy enterprise applications, or for developing new applications with limited complexity or scaling requirements, whereas microservices are commonly chosen for building optimized modern applications.
 
 For more information on how to design and develop microservices, see the *[Implementing Microservices on AWS](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/microservices-on-aws.html)* whitepaper.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ A lot of the functionality discussed here is also available through the [AWS Man
 + [Launch an Amazon RDS Database Instance](rds-launch-instance.md)
 + [Create a Microsoft SQL Server Database in an RDS Instance](rds-launch-instance-sql.md)
 + [Amazon RDS Security Groups](rds-security-groups.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

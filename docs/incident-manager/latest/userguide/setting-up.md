@@ -22,7 +22,3 @@ To get started with AWS, you need an AWS account. For information about creating
 <a name="iam-prereq-service-role"></a>
 
 Before you begin, your account must have the IAM permission `iam:CreateServiceLinkedRole`. Incident Manager uses this permission to create the `AWSServiceRoleforIncidentManager` in your account. For more information, see [Using service-linked roles for Incident Manager](using-service-linked-roles.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

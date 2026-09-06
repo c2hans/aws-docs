@@ -13,7 +13,3 @@ Retrieve a matchmaking request ticket, including current status, by calling [Des
 
 **Note**
 You should set up your game with event notifications before you have high-volume matchmaking usage, such as with pre-production load testing. All games in public release should use notifications regardless of volume. The continuous polling approach is only appropriate for games in development with low matchmaking usage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -85,7 +85,3 @@ To track progress in chaos engineering over time, capture the following metrics 
 <a name="remediation"></a>
 
 As you perform chaos experiments, you are likely to identify areas for improvement where the application does not perform as intended. Remediation of such items will become work in your backlog that will have to be prioritized along with other work such as feature development. We recommend that you make time for these enhancements to avoid future failure. Consider prioritizing these learnings and remediation tasks based on the level of impact they might cause. Findings that directly impact the resilience or security of your application should have priority over new features, to avoid customer impact. If the team struggles to prioritize remediation work over feature development, consider reaching out to your executive sponsor to ensure that priorities are set based on business risk tolerance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -62,7 +62,3 @@ When fallback is enabled, the plugin attempts to obtain credentials in the follo
 + The plugin supports Apache Hive, Apache Hudi, and Delta Lake table formats. Apache Iceberg is not currently supported.
 + The plugin is not currently supported with Amazon EMR Spark Fine-Grained Access Control (FGAC) mode.
 + Path-based credential vending requires a 1:1 mapping between a table and its S3 location in the AWS Glue Data Catalog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

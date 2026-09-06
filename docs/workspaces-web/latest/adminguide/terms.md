@@ -39,7 +39,3 @@ A web portal provides your users with access to internal and SaaS websites from 
 **Web portal endpoint**
 The web portal endpoint is the access point your users will launch your web portal from after signing in with the identity provider configured for the portal.
 The endpoint is publicly available on the internet and can be embedded into your network.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

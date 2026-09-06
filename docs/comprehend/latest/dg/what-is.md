@@ -114,7 +114,3 @@ If you are a first-time user of Amazon Comprehend, we recommend that you read th
 AWS provides the following resources for learning about the Amazon Comprehend service:
 + The [AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/ ) includes useful articles about Amazon Comprehend.
 + [Amazon Comprehend Resources](https://aws.amazon.com/comprehend/resources/) provides useful videos and tutorials about Amazon Comprehend.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

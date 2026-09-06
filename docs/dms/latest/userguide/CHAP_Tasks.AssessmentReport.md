@@ -21,7 +21,3 @@ If you choose a premigration assessment run, you don't need to choose a data typ
 **Note**
 The number and types of available individual assessments can increase over time. For more information about periodic updates, see [Specifying individual assessments](CHAP_Tasks.PremigrationAssessmentRuns.md#CHAP_Tasks.PremigrationAssessmentRuns.Individual).
 + [Starting and viewing data type assessments (Legacy)](CHAP_Tasks.DataTypeAssessments.md): A data type (legacy) assessment returns the results of a single type of premigration assessment in a single JSON structure: the data types that might not be migrated correctly in a supported relational source database instance. This report returns the results for all problematic data types found in every schema and table in the source database that is selected for migration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

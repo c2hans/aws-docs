@@ -25,7 +25,3 @@ You can create change templates for your operations in Change Manager, a tool in
 + [Creating change templates using Builder](change-templates-custom-builder.md)
 + [Creating change templates using Editor](change-templates-custom-editor.md)
 + [Creating change templates using command line tools](change-templates-tools.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

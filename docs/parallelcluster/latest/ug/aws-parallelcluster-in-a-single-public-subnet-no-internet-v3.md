@@ -164,7 +164,3 @@ Scheduling:
 
   1. Use the `pcluster dcv-connect` command on the proxy instance to connect to the cluster inside the subnet without internet access.
 + *Interacting with other AWS services:* Only services strictly required by AWS ParallelCluster are listed above. If your cluster must interact with other services, create the corresponding VPC endpoints.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

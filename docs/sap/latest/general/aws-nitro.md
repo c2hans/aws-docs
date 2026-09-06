@@ -56,7 +56,3 @@ This simplicity of the Nitro Hypervisor is a significant security benefit compar
 + The Nitro architecture allows for secure boot and runtime integrity verification, ensuring the AWS infrastructure is running in a trusted and verified state.
 + Both the Nitro Card firmware and the hypervisor are designed to be live-updatable (zero downtime for customer instances). This eliminates the need for carefully balanced tradeoffs around updates yielding improved security posture. Please find more information [here](https://d1.awsstatic.com/events/Summits/awsreinforce2023/DAP401-Security-design-of-the-AWS-Nitro-System.pdf).
 + Data encryption for both data at rest and in transit using hardware offload engines with secure key storage integrated in the SoC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

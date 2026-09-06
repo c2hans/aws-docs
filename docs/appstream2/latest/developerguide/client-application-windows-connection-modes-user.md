@@ -26,7 +26,3 @@ If your administrator has not disabled native application mode, you can switch f
 **Desktop view**
 
 When you connect to WorkSpaces Applications and choose **Desktop view**, WorkSpaces Applications provides a standard Windows desktop view for your streaming session. The icons of applications that are available for you to stream appear on the Windows desktop. In addition, the WorkSpaces Applications toolbar, which enables you to configure settings for your streaming session, appears in the top left area of your streaming session window.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

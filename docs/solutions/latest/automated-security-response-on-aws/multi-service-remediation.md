@@ -39,7 +39,3 @@ Security Hub represents findings in two schema formats, and the solution process
 +  **OCSF (Open Cybersecurity Schema Framework)** – The format used by AWS Security Hub v2. The solution processes Amazon Inspector, Amazon GuardDuty, and Amazon Macie findings in their native OCSF format.
 
 Rather than forcing every finding into a single schema, the solution processes each finding in the format its source service emits. Existing remediations that use AWS Config continue to work unchanged in ASFF, while multi-service findings are processed in their native OCSF format.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

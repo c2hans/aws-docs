@@ -76,7 +76,3 @@ You can grant your users access to AWS AppSync resources with tokens from a succ
 You can also sign requests to the AWS AppSync GraphQL API with the IAM credentials that you receive from an identity pool. See [AWS\_IAM authorization](https://docs.aws.amazon.com/appsync/latest/devguide/security-authz.html#aws-iam-authorization).
 
 ![Access AWS AppSync resources through a user pool or an identity pool](http://docs.aws.amazon.com/cognito/latest/developerguide/images/scenario-appsync.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

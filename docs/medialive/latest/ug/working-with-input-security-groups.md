@@ -16,7 +16,3 @@ You can attach the same input security group to any number of inputs.
 + [Creating an input security group](create-input-security-groups.md)
 + [Editing an input security group](edit-input-security-group.md)
 + [Deleting an input security group](delete-input-security-group.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

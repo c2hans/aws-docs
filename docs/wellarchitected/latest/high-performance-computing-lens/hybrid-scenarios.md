@@ -43,7 +43,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 1.  The job is run on either on-premises compute or AWS infrastructure based on configuration.
 
 1.  The job access shared storage based on their run location. Depending on whether the workload is data light or data heavy, files should be placed in a strategically chosen place. For data-light workloads, if user wants to run on AWS and data is not available on the cache, Amazon File Cache initiates lazy load before data is processed by the compute fleet. For data-intensive workloads, files should have already copied over to Amazon S3 using AWS DataSync before the job is run on AWS. Once the job starts running, Amazon FSx for Lustre initiates lazy load from Amazon S3 to Lustre.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

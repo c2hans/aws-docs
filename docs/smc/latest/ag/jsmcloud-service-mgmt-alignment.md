@@ -14,7 +14,3 @@ This Connector aligns with industry best practices, such as ITIL service managem
 | Service Catalog deployment management (provisioning) | AWS Service Catalog or AWS CloudFormation: Requesting and provisioning vetted or predictable products and performing post-provisioning actions. <br />AWS Systems Manager Automation: Allows users to safely automate common and repetitive tasks using a predefined or custom-built automated runbacks.  |
 | Incident management (ticketing) | AWS Systems Manager Incident Manager: Generating incidents according to response plans. <br />Support (AWS incidents, service requests, and support cases). |
 | Security event and incident management | AWS Security Hub CSPM: Managing incidents resulting from security findings.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

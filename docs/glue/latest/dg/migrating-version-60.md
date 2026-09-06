@@ -208,7 +208,7 @@ The following are connector upgrades:
 | Spark Redshift | 6.7.0 | 6.4.2 | 6.4.0 |
 | Spark SQL Kinesis | 2.1.0 | N/A | N/A |
 | MongoDB | 11.0.1 | 10.3.0 | 10.3.0 |
-| Snowflake | 3.17.0 | 3.1.1 | 3.0.0 |
+| Snowflake | 3.1.8 | 3.1.1 | 3.0.0 |
 | OpenSearch | 2.0.0 | 1.2.0 | 1.2.0 |
 | EMR DynamoDB connector | 6.1.0 | 5.7.0 | 5.6.0 |
 
@@ -222,7 +222,3 @@ The following are open table format upgrades:
 | Hudi | 1.1.1 | 1.0.2 | 0.15.0 | 0.12.1 |
 | Delta Lake | 4.2.0 | 3.3.2 | 3.3.0 | 2.1.0 |
 | Iceberg | 1.11.0 | 1.10.0 | 1.7.1 | 1.0.0 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

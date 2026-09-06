@@ -43,6 +43,8 @@ Required: No
 
 ```
 {
+   "Code": { ... },
+   "CodeSnapshottedAt": "string",
    "CreatedAt": "string",
    "DefinitionS3Location": {
       "Bucket": "string",
@@ -82,6 +84,15 @@ Required: No
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [Code](#API_GetWorkflow_ResponseSyntax) **   <a name="mwaaserverless-GetWorkflow-response-Code"></a>
+The Amazon S3 location of the code artifacts provided during workflow creation or update.
+Type: [Code](API_Code.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+
+ ** [CodeSnapshottedAt](#API_GetWorkflow_ResponseSyntax) **   <a name="mwaaserverless-GetWorkflow-response-CodeSnapshottedAt"></a>
+The time at which the code artifacts were copied for this workflow, in ISO 8601 date-time format.
+Type: Timestamp
 
  ** [CreatedAt](#API_GetWorkflow_ResponseSyntax) **   <a name="mwaaserverless-GetWorkflow-response-CreatedAt"></a>
 The timestamp when the workflow was created, in ISO 8601 date-time format.
@@ -221,7 +232,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/mwaa-serverless-2024-07-26/GetWorkflow)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/mwaa-serverless-2024-07-26/GetWorkflow)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mwaa-serverless-2024-07-26/GetWorkflow)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa-serverless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

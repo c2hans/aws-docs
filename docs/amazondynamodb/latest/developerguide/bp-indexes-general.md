@@ -62,7 +62,3 @@ If you can't avoid creating the local secondary index, you must anticipate the i
 After a local secondary index is created, you cannot delete it.
 
 For strategies on working within the limit and taking corrective action, see [Item collection size limit](LSI.md#LSI.ItemCollections.SizeLimit).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ To use this run configuration, open the file the corresponds to the code you wan
 
 **Note**
 Any run configuration you create applies only to the environment you created that run configuration in. To add that run configuration to a separate environment, open the other environment, and then follow the preceding steps to create the same run configuration in that environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

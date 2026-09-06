@@ -321,7 +321,3 @@ Learn best practices for working with vector search in Amazon DocumentDB. This s
 + [Vector search for Amazon DocumentDB is now generally available](https://aws.amazon.com/blogs/aws/vector-search-for-amazon-documentdb-with-mongodb-compatibility-is-now-generally-available) on the AWS Blog
 + [Semantic search code sample](https://github.com/aws-samples/amazon-documentdb-samples/tree/master/blogs/semanticsearch-docdb)
 + [Amazon DocumentDB vector search code samples](https://github.com/aws-samples/amazon-documentdb-samples/tree/master/samples/vector-search)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

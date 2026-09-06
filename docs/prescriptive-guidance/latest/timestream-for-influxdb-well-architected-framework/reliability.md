@@ -39,7 +39,3 @@ Timestream for InfluxDB supports instance classes that are ideal for running mem
 If your scaling needs change at predictable times, you can use an [AWS Lambda function](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-run-lambda-schedule.html) or a custom scheduler and run an API or SDK to scale up and down with some buffer time.
 
 You manage your InfluxDB configuration in Timestream for InfluxDB by using parameters in a parameter group. Parameter groups act as a *container* for InfluxDB configuration options that are applied to one or more DB instances. When modifying parameters in parameter groups, understand the difference between static and dynamic parameters, and how and when they are applied. To see the current applied configuration, use the [GetDbParameterGroup](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_GetDbParameterGroup.html) API action.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

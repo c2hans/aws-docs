@@ -49,7 +49,3 @@ Once your cluster has entered extended support, you cannot disable it. To change
    ```
 
 1. If the value is `STANDARD`, your cluster will not enter extended support. If the value is `EXTENDED`, your cluster will enter extended support.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

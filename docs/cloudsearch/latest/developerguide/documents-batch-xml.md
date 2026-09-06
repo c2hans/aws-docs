@@ -81,7 +81,3 @@ response = element response {
 | error | Provides information about a parsing or validation error. The value provides a description of the error.  |
 | warnings | Contains a collection of warning elements that identify the warnings that were generated when parsing and validating the request.  |
 | warning | Provides information about a parsing or validation warning. The value provides a description of the error.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

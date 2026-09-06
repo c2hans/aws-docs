@@ -119,7 +119,3 @@ $ORACLE_HOME/perl/bin/perl xttdriver.pl --restore --debug 3
 ```
 
 After the step is complete, data files are placed in the defined *dest\_datafile\_location* in the xtt.properties file on the destination system.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

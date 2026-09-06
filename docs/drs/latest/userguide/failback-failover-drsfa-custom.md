@@ -106,7 +106,3 @@ After editing your configuration file, rerun the DRSFA client and select **Custo
 1. The client initiates failback. Monitor progress on the **Recovery instances** page in the DRS console.
 
 Results are exported in the same format described in [Failback results](failback-failover-drsfa-one-click.md#failback-failover-drsfa-results).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

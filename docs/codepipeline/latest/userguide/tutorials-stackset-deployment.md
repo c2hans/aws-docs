@@ -296,7 +296,3 @@ Make an update to your stack set and deploy the update to instances. In this exa
 1. Open your action in CloudFormation. Choose the **StackSet info** tab. In **StackSet description**, verify that the new description is shown.
 
 1. Choose the **Stack instances** tab. Under **Status**, verify that the status for the stack instances in us-east-2 is `OUTDATED`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

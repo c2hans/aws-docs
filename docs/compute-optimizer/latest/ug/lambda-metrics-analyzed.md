@@ -17,7 +17,3 @@ Compute Optimizer analyzes the following CloudWatch metrics of your Lambda funct
 For more information about these metrics, see [Working with AWS Lambda function metrics](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-metrics.html) in the *AWS Lambda Developer Guide*.
 
 In addition to these metrics, Compute Optimizer analyzes the memory utilization of your function during the look-back period. For more information about memory utilization for Lambda functions, see [Understanding AWS Lambda behavior using Amazon CloudWatch Logs Insights](https://aws.amazon.com/blogs/mt/understanding-aws-lambda-behavior-using-amazon-cloudwatch-logs-insights/) in the *AWS Management & Governance Blog* and [Using Lambda Insights in CloudWatch](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-insights.html) in the *AWS Lambda Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

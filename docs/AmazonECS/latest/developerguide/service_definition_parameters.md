@@ -157,6 +157,23 @@ The minimum number of healthy tasks during a deployment is the `desiredCount` mu
 If a service is using either the blue/green (`CODE_DEPLOY`) or `EXTERNAL` deployment types and is running tasks that use the EC2, the **minimum healthy percent** value is set to the default value. The value is used to define the lower limit on the number of the tasks in the service that remain in the `RUNNING` state while the container instances are in the `DRAINING` state.
 You can't specify a custom `maximumPercent` value for a service that uses either the blue/green (`CODE_DEPLOY`) or `EXTERNAL` deployment types and has tasks that use the EC2.
 If a service is using either the blue/green (`CODE_DEPLOY`) or `EXTERNAL` deployment types and is running tasks that use Fargate, the minimum healthy percent value is not used, although it is returned when describing your service.
+`earlySuccessCriteria`  <a name="earlySuccessCriteria"></a>
+Type: Object
+Required: No
+The early success criteria that determine when Amazon ECS completes a rolling deployment. With early success criteria, Amazon ECS completes the deployment when a percentage of tasks that you define are running and healthy on the target service revision. You can also configure whether Amazon ECS cleans up the tasks on the source service revision before or after it completes the deployment. For more information, see [Complete Amazon ECS rolling deployments early with early success criteria](early-success-criteria.md).
+`enable`  <a name="earlySuccessCriteria-enable"></a>
+Type: Boolean
+Required: No
+Specifies whether early success criteria is turned on for the service. The default value is `false`.
+`healthyPercent`  <a name="earlySuccessCriteria-healthyPercent"></a>
+Type: Integer
+Required: No
+Specifies the percentage of the desired count that must be running and healthy on the target service revision before Amazon ECS completes the deployment, rounded up. The value must be between the service `minimumHealthyPercent` and 100, inclusive. The default value is 100.
+`sourceServiceRevisionCleanup`  <a name="earlySuccessCriteria-sourceServiceRevisionCleanup"></a>
+Type: String
+Valid values: `BLOCKING` \| `DEFERRED`
+Required: No
+Determines when Amazon ECS cleans up the tasks on the source service revision. With `BLOCKING`, Amazon ECS cleans up the tasks on the source service revision before it completes the deployment. With `DEFERRED`, Amazon ECS completes the deployment first, and then cleans up the tasks on the source service revision outside of the deployment. The default value is `BLOCKING`.
 
 ## Deployment controller
 <a name="sd-deploymentcontroller"></a>
@@ -523,7 +540,3 @@ Valid values: `xfs`\|`ext3`\|`ext4`\|`NTFS`
 The type of file system on a volume. The volume's file system type determines how data is stored and retrieved in the volume. For volumes created from a snapshot, you must specify the same filesystem type that the volume was using when the snapshot was created. If there is a filesystem type mismatch, the task will fail to start.
 The valid values for Linux are `xfs`, ext3`, and ext4`. The default for volumes that are attached to Linux tasks is `XFS`.
 The valid values for Windows are `NTFS`. The default for volumes that are attached to Windows tasks is `NTFS`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

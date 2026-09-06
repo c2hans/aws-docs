@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/REGEXP_REPLACE.html
 # REGEXP\_REPLACE function
 <a name="REGEXP_REPLACE"></a>
 
-Searches a string for a regular expression pattern and replaces every occurrence of the pattern with the specified string. REGEXP\_REPLACE is similar to the [REPLACE function](r_REPLACE.md), but lets you search a string for a regular expression pattern. For more information about regular expressions, see [POSIX operators](pattern-matching-conditions-posix.md) and [Regular expression](https://en.wikipedia.org/wiki/Regular_expression) in Wikipedia.
+Searches a string for a regular expression pattern and replaces every occurrence of the pattern with the specified string. REGEXP\_REPLACE is similar to the [REPLACE function](r_REPLACE.md), but with REGEXP\_REPLACE, you can search a string for a regular expression pattern. For more information about regular expressions, see [POSIX operators](pattern-matching-conditions-posix.md) and [Regular expression](https://en.wikipedia.org/wiki/Regular_expression) in Wikipedia.
 
-REGEXP\_REPLACE is similar to the [TRANSLATE function](r_TRANSLATE.md) and the [REPLACE function](r_REPLACE.md), except that TRANSLATE makes multiple single-character substitutions and REPLACE substitutes one entire string with another string, while REGEXP\_REPLACE lets you search a string for a regular expression pattern.
+REGEXP\_REPLACE is similar to the [TRANSLATE function](r_TRANSLATE.md) and the [REPLACE function](r_REPLACE.md), except that TRANSLATE makes multiple single-character substitutions and REPLACE substitutes one entire string with another string, while with REGEXP\_REPLACE, you can search a string for a regular expression pattern.
 
 ## Syntax
 <a name="REGEXP_REPLACE-synopsis"></a>
@@ -120,7 +120,3 @@ ORDER BY userid LIMIT 4;
 | sed@lacusUtnec.ca                             | sed@internal.company.com                   |
 +-----------------------------------------------+--------------------------------------------+
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ You can only archive a GuardDuty finding from within Detective if you are also t
 1. When prompted to confirm, choose **Archive**.
 
 You can view archived GuardDuty findings in the GuardDuty console. The archived finding is stored in GuardDuty for 90-days and can be viewed at any time during that period. You can view suppressed findings in the GuardDuty console by selecting Archived from the findings table, or through the GuardDuty API using the [ListFindings API](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html) with a findingCriteria criterion of service.archived equal to true. To learn more, see [Suppression Rules](https://docs.aws.amazon.com/guardduty/latest/ug/findings_suppression-rule.html) in the *Amazon GuardDuty User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

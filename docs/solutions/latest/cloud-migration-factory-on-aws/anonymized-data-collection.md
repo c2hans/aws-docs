@@ -44,7 +44,3 @@ AWS will own the data gathered via this survey. Data collection will be subject 
 1. Under **Upload a template file**, choose **Choose file** and select the edited template from your local drive.
 
 1. Choose **Next** and follow the steps in [Launch the stack](launch-the-stack.md) in the Automated deployment section of this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

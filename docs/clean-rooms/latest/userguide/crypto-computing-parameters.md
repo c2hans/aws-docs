@@ -97,7 +97,3 @@ When the value of the **Preserve NULL values** parameter is set to **Yes** for t
 The **Preserve NULL values** parameter is useful in scenarios such as data enrichment, where you want to share a lack of information expressed as NULL. The **Preserve NULL values** parameter is also useful in fingerprint or HMAC format if you have NULL values in the column you want to JOIN or GROUP BY.
 
 If the value of the **Allow duplicates** and **Preserve NULL values** parameters is set to **No**, having more than one NULL entry in a fingerprint column produces an error and stops encryption. If the value of either parameter is set to **Yes**, no such error occurs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

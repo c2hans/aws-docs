@@ -190,7 +190,3 @@ You can update the metadata file, SAML encryption settings, and rotate private k
 After you create a SAML identity provider, set up the relying party trust with your IdP. You can also use claims from your IdP's authentication response in policies to control access to a role.
 + You must tell the IdP about AWS as a service provider. This is called adding relying party trust between your IdP and AWS. The exact process for adding relying party trust depends on what IdP you're using. For details, see [Configure your SAML 2.0 IdP with relying party trust and adding claims](id_roles_providers_create_saml_relying-party.md).
 + When the IdP sends the response containing the claims to AWS, many of the incoming claims map to AWS context keys. You can use these context keys in IAM policies using the Condition element to control access to a role. For details, see [Configure SAML assertions for the authentication response](id_roles_providers_create_saml_assertions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

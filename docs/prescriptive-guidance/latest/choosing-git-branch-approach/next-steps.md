@@ -13,7 +13,3 @@ This guide explains the differences between three common Git branching strategie
 If you are unsure where to start your team's journey to using Git and DevOps processes, we recommend picking a standard solution and testing it. Using a standard branching convention helps the team build upon existing documentation and learn what works best for them.
 
 Don't be afraid to change your strategy if it isn't working for your organization or development teams. The needs and requirements of development teams can change over time, and there is no single, perfect solution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

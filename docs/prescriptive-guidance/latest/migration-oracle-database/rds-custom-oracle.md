@@ -54,7 +54,3 @@ For additional information, see the following resources:
   + [Physical migration of Oracle databases to Amazon RDS Custom using Data Guard](https://aws.amazon.com/blogs/database/physical-migration-of-oracle-databases-to-amazon-rds-custom-using-data-guard/) (AWS Database blog)
   + [Physical migration of Oracle databases to Amazon RDS Custom using RMAN duplication](https://aws.amazon.com/blogs/database/physical-migration-of-oracle-databases-to-amazon-rds-custom-using-rman-duplication/) (AWS Database blog)
 + Integrating an Amazon Elastic File System (Amazon EFS) shared file system with Amazon RDS for Oracle to share files between the database and application servers or as a staging location to keep backups and data loads: [Integrate Amazon RDS Custom for Oracle with Amazon EFS](https://aws.amazon.com/blogs/database/integrate-amazon-rds-custom-for-oracle-with-amazon-efs/) (AWS Database blog)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

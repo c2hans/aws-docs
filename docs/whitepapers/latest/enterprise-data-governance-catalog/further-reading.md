@@ -22,7 +22,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-gover
 +  [Workers waste half their time as they struggle with data](https://www.zdnet.com/article/workers-waste-half-their-time-as-they-struggle-with-data/) (article)
 +  [Augmented Data Catalogs: A Must-Have for Data & Analytics Leaders](https://www.datalumen.eu/solutions/data-governance/data-catalogs-must-have-for-data-analytics-leaders/) (article)
 +  [The Business Case for a Data Catalog](https://www.eckerson.com/articles/the-business-case-for-a-data-catalog#:~:text=The%20value%20and%20benefits%20of,spend%20finding%20and%20preparing%20data) (article)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

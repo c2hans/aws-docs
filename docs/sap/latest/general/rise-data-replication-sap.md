@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-data-replication
  **SAP Data Services**
 
  [SAP Data Services](https://www.sap.com/products/technology-platform/data-services.html) offer various connections to replicate data from SAP ECC data. Refer to [SAP Data Services documentation](https://help.sap.com/docs/SAP_DATA_SERVICES) to choose most appropriate connectivity. SAP Data Services offers [Amazon Redshift Datastore](https://help.sap.com/docs/SAP_DATA_SERVICES/af6d8e979d0f40c49175007e486257f0/731d7026ae3b4fef9ebadfbe23ffff12.html) and [Amazon S3 datastore](https://help.sap.com/docs/SAP_DATA_SERVICES/af6d8e979d0f40c49175007e486257f0/e1ed075446344b5ca098e2382cfca78d.html) to ingest data to AWS. It also offers options for [Amazon S3 file location protocol](https://help.sap.com/docs/SAP_DATA_SERVICES/af6d8e979d0f40c49175007e486257f0/a611106693ea422eb0b04705298516b7.html) such as encryption type, compression type, batch-size, number of threads, Amazon S3 storage class, etc.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

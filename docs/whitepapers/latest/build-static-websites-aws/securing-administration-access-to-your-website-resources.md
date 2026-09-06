@@ -55,7 +55,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
  You can use AWS CloudTrail to see an audit trail for API activity in your AWS account. Toggle it on for all AWS Regions, and the audit logs will be deposited to an Amazon S3 bucket. You can use the AWS Management Console to search against API activity history. Or, you can use a third-party log analyzer to analyze and visualize the CloudTrail logs.
 
  You can also build a custom analyzer. Start by configuring CloudTrail to send the data to Amazon CloudWatch Logs. CloudWatch Logs allows you to create automated rules that notify you of suspicious API activity. CloudWatch Logs also has seamless integration with OpenSearch Service, and you can configure the data to be automatically streamed over to a managed OpenSearch Service cluster. Once the data is in OpenSearch Service, users can query against that data directly or visualize the analytics using a Kibana dashboard.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

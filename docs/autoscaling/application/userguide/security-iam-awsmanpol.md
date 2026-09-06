@@ -261,7 +261,3 @@ View details about updates to AWS managed policies for Application Auto Scaling 
 | [AWSApplicationAutoscalingNeptuneClusterPolicy](#neptune-policy) – New policy | Added a managed policy for Neptune. This policy is attached to a [service-linked role](application-auto-scaling-service-linked-roles.md) that allows Application Auto Scaling to call Neptune and CloudWatch and perform scaling on your behalf. | October 6, 2021 |
 | [AWSApplicationAutoscalingRDSClusterPolicy](#aurora-policy) – New policy | Added a managed policy for ElastiCache. This policy is attached to a [service-linked role](application-auto-scaling-service-linked-roles.md) that allows Application Auto Scaling to call ElastiCache and CloudWatch and perform scaling on your behalf. | August 19, 2021 |
 | Application Auto Scaling started tracking changes | Application Auto Scaling started tracking changes for its AWS managed policies. | August 19, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

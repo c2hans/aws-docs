@@ -33,7 +33,3 @@ The following query parameter edits are currently available:
 |  ** [flip](https://sharp.pixelplumbing.com/api-operation#flip) **  | Mirror the image vertically | True/False | False |
 |  ** [flop](https://sharp.pixelplumbing.com/api-operation#flop) **  | Mirror the image horizontally | True/False | False |
 |  ** [greyscale](https://sharp.pixelplumbing.com/api-colour#greyscale) **  | Convert to 8-bit greyscale | True/False | False |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

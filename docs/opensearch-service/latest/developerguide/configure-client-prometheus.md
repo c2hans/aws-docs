@@ -287,7 +287,3 @@ Consider the following limitations when you set up an OpenSearch Ingestion pipel
 + **Implement filtering**: Use processors to filter unnecessary metrics before sending to Amazon Managed Service for Prometheus
 + **Right-size capacity**: Start with minimum capacity and scale based on metrics volume
 + **Use blueprints**: Leverage pre-configured blueprints for common use cases
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

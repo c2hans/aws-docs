@@ -64,7 +64,3 @@ Once the wire-level connections limit is reached, the broker will actively refus
 ```
 
  Similarly when integrating your broker with LDAP, make sure to grant permission for the `amazonmq-console-admins` group. For more information on LDAP integration, see [How LDAP integration works](security-authentication-authorization.md#ldap-support-details).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

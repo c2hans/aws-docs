@@ -209,7 +209,3 @@ AWS Shield Advanced is available globally on all Amazon CloudFront and Amazon Ro
 [AWS WAF Captcha](https://aws.amazon.com/about-aws/whats-new/2022/06/aws-waf-captcha-generally-available/) helps block unwanted bot traffic by requiring users to successfully complete challenges before their web request are allowed to reach AWS WAF protected resources. You can configure AWS WAF rules to require WAF Captcha challenges to be solved for specific resources that are frequently targeted by bots such as login, search, and form submissions. You can also require WAF Captcha challenges for suspicious requests based on the rate, attributes, or labels generated from AWS Managed Rules, such as AWS WAF Bot Control or the Amazon IP Reputation list. WAF Captcha challenges are simple for humans while remaining effective against bots. WAF Captcha includes an audio version and is designed to meet Web Content Accessability Guidelines (WCAG) accessibility requirements.
 
 Return to [AWS services](amazon-web-services-cloud-platform.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

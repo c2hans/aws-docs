@@ -72,7 +72,3 @@ To configure Elastic Beanstalk to authenticate to a private repository, include 
 <a name="create_deploy_docker_ecs_extending_linux"></a>
 
 Elastic Beanstalk offers extensibility features that enable you to apply your own commands, scripts, software, and configurations to your application deployments. The deployment workflow for the *ECS AL2 and AL2023* platform branches varies slightly from the other Linux based platforms. For more information, see [Instance deployment workflow for ECS running on Amazon Linux 2 and later](platforms-linux-extend.workflow.ecs-al2.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

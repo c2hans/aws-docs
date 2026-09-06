@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/getting-started-datas
 # Getting started with read-only data sharing with the SQL interface
 <a name="getting-started-datashare-sql"></a>
 
-With Amazon Redshift, you can securely share data across Amazon Redshift clusters, enabling data consumers to query and access live data without copying or replicating it. Data sharing lets you create and configure datashares, which are producer-side objects that reference the database objects you want to share.
+With Amazon Redshift, you can securely share data across Amazon Redshift clusters, enabling data consumers to query and access live data without copying or replicating it. With data sharing, you can create and configure datashares, which are producer-side objects that reference the database objects you want to share.
 
 You can share data for read purposes across different Amazon Redshift clusters within or across AWS accounts, or across AWS Regions.
 
@@ -19,7 +19,3 @@ You can share data for read purposes across different Amazon Redshift clusters w
 + [Sharing data across AWS Regions](across-region.md)
 + [Sharing licensed Amazon Redshift data on AWS Data Exchange](adx-getting-started.md)
 + [Getting started with AWS Lake Formation-managed datashares](lf-getting-started.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

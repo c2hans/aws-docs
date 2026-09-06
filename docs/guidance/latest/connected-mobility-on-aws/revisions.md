@@ -16,7 +16,3 @@ Check the [CHANGELOG.md](https://github.com/aws-solutions-library-samples/guidan
 | 1.1.0 | February 2026 | FleetWise Edge cloud simulation via EC2-backed ECS. Dual-mode simulator (MQTT Direct and FWE). Campaign management UI with decoder manifest wizard. CampaignSyncProcessor. Geofence system with Flink processor. Expanded signal catalog (271 signals, 51 actuatable commands). E2E integration tests. |
 | 1.0.1 | January 2026 | OEM telemetry processor with protocol-agnostic ingestion. OEM Integration Wizard in UI. Region-agnostic deployment. Security vulnerability fixes. |
 | 1.0.0 | October 2025 | Initial release. Modular CDK deployment with phase-based architecture. Real-time telemetry via IoT Core and Amazon MSK. 10 Flink stream processing applications. Fleet Manager UI with Cloudscape Design. DynamoDB storage, ElastiCache for Redis, Amazon Location Service integration. Vehicle simulation service. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

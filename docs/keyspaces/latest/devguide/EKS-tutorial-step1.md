@@ -187,7 +187,3 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/EKS-tutorial-s
       ```
 
 After you created the Amazon EKS service account, the IAM role, and configured the required relationships and permissions, proceed to [Step 2: Configure the application](EKS-tutorial-step2.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

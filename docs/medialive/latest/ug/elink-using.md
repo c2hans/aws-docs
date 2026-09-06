@@ -86,7 +86,3 @@ Use MediaLive to set up the device.
 You can use MediaLive to monitor the device.
 + You can [view thumbnails](monitoring-link-device-thumbnails.md) of the content, if the device is streaming.
 + You can [look at metrics to monitor](eml-metrics-input-devices.md) the performance of the device.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

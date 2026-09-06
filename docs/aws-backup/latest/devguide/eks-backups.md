@@ -253,7 +253,3 @@ The following Kubernetes object types may be skipped during a backup job due to 
 1. *"Can I create an index and search my EKS backups?"*
 
    No, however you can create on-demand indexes and search persistent volumes where the underlying storage type supports this capability through AWS Backup. See the [AWS Backup feature availability matrix](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-resource).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

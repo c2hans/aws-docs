@@ -29,7 +29,3 @@ If you have owner permissions on a dataset, use the following procedure to share
    Choose **User** to allow them to create analyses and datasets from the dataset. Choose **Owner** to allow them to do that and also refresh, edit, delete, and reshare the dataset.
 
    Users receive emails with a link to the dataset. Groups don't receive invitation emails.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

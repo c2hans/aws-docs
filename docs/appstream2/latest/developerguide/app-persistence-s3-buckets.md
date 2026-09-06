@@ -57,7 +57,3 @@ appstream-app-settings-us-west-2-1234567890123-abcdefg/Windows/v4/test-stack/cus
 ```
 
 You can identify the folder for a user by generating the lowercase SHA-256 hash value of the user ID using websites or open source coding libraries available online.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

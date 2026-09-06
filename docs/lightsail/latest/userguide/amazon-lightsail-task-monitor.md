@@ -12,7 +12,3 @@ The **Exports** section on the Amazon Lightsail console, is where you can track 
 For more information about exporting Lightsail snapshots to Amazon EC2, or creating EC2 instances from exported snapshots, see the following guides:
 + [Export snapshots to Amazon EC2](amazon-lightsail-exporting-snapshots-to-amazon-ec2.md)
 + [Create Amazon EC2 instances from exported snapshots](amazon-lightsail-creating-ec2-instances-from-exported-snapshots.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,7 +84,3 @@ You can use the REST API to view details for your access point. For more informa
 <a name="access-points-directory-buckets-details-sdk"></a>
 
 You can use the AWS SDKs to view details of your access points. For more information, see [list of supported SDKs](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessPoint.html#API_control_GetAccessPoint_SeeAlso) in the Amazon Simple Storage Service API Reference.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,7 +75,3 @@ Enable Kubernetes audit logging and monitor for unexpected API calls from Daemon
 + Unusual `get` or `list` calls on Secrets
 
 For more information, see [Send control plane logs to CloudWatch Logs](control-plane-logs.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -306,7 +306,3 @@ When you use the [AWS::LanguageExtensions transform](transform-aws-languageexten
 When the `AWS::LanguageExtensions` transform is not used:
 + The `Fn::GetAtt` attribute name can only use the [`Ref`](intrinsic-function-reference-ref.md) function.
 + The `Fn::GetAtt` logical resource name can't use functions. You must specify a string that's a resource's logical ID.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

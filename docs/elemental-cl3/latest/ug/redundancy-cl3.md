@@ -22,7 +22,3 @@ If the leader node fails, the backup automatically takes over management of the 
 As soon as the backup can no longer detect the leader on the network, it assumes that the leader has failed and its takes over the leader role. This change in role takes a few seconds.
 
 .If you resolve the problem with the failed leader Conductor Live node and bring it back into the cluster, that leader node will take back control from the secondary Conductor Live node.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

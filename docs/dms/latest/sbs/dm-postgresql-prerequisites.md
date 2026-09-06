@@ -16,7 +16,3 @@ We recommend that you don’t use your production workloads for the migration in
 Make sure that you create all your resources in the AWS Regions that support homogeneous data migrations in AWS DMS. For more information, see the [list of supported Regions](https://docs.aws.amazon.com/dms/latest/userguide/data-migrations.html#data-migrations-supported-regions).
 
 For more information about migrating self-managed PostgreSQL databases to the AWS Cloud, [Migrating PostgreSQL Databases to Amazon RDS for PostgreSQL or Amazon Aurora PostgreSQL](chap-manageddatabases.postgresql-rds-postgresql.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

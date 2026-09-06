@@ -74,7 +74,3 @@ After this preprocessing is complete, Amazon CloudSearch looks up the search ter
 By default, Amazon CloudSearch returns search results ranked according to the hits' relevance \_scores. Alternatively, your request can specify the index field or expression that you want to use to sort the hits. For example, you might want to sort hits by an index field that contains the price or an expression that calculates popularity.
 
 For more information about searching, ranking, and paginating results, see [Searching Your Data with Amazon CloudSearch](searching.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

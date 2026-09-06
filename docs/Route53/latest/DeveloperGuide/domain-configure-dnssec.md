@@ -131,7 +131,3 @@ If DNSSEC is enabled for the domain and you disable DNSSEC with the DNS service,
 You can only delete one public key at a time. If you need to delete more keys, wait until you receive a confirmation email from Amazon Route 53.
 
 1. When Route 53 receives a response from the registry, we send an email to the registrant contact for the domain. The email either confirms that the public key has been deleted from the domain at the registry or explains why the key couldn't be deleted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

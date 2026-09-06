@@ -16,7 +16,3 @@ Elastic Beanstalk defines a few types of service-linked roles:
 + [The monitoring service-linked role](using-service-linked-roles-monitoring.md)
 + [The maintenance service-linked role](using-service-linked-roles-maintenance.md)
 + [The managed-updates service-linked role](using-service-linked-roles-managedupdates.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

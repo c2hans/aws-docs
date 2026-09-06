@@ -50,6 +50,7 @@ To access CloudWatch dashboards, you need one of the following:
 + [Changing the period override setting or refresh interval](change_dashboard_refresh_interval.md)
 + [Changing the time range or time zone format](change_dashboard_time_format.md)
 + [Dashboard Body Structure and Syntax](CloudWatch-Dashboard-Body-Structure.md)
++ [Graph metrics](graph_metrics.md)
 + [Explore related telemetry](ExploreRelated.md)
 
 ## Create a cross-account cross-Region dashboard programmatically
@@ -201,7 +202,3 @@ Another way to create dashboards programmatically is to first create one in the 
 1. When you are finished with the graph, choose **Actions**, **Add to dashboard**.
 
    Select your cross-account dashboard, and choose **Add to dashboard**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

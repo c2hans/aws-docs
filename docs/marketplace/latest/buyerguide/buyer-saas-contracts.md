@@ -25,7 +25,3 @@ Some products offer a Quick Launch deployment option, which reduces the time and
  After configuration is complete, a link to set up your account is available on the product page. The software appears under **Your Marketplace Software** when you're signed in to your AWS Marketplace account. You can now start using the software. If you don't complete the setup process for your account, you are prompted to do so when you revisit that product in AWS Marketplace.
 
 Access the software subscription from the software company’s website using the account you created on their website. You can also find website links for software subscriptions that you purchased through AWS Marketplace under **Your Marketplace Software** when you're signed in to your AWS Marketplace account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

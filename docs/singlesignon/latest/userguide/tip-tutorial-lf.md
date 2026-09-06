@@ -122,7 +122,3 @@ The IAM role created by the wizard is a service-linked role and does not include
 <a name="tip-lf-across-accts"></a>
 
 AWS Lake Formation supports using [AWS Resource Access Manager (RAM)](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html) to share tables across AWS accounts and it works with trusted identity propagation when the grantor account and grantee account are in the same AWS Region, in the same AWS Organizations, and share the same organization instance of IAM Identity Center. See [Cross-account data sharing in Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/cross-data-sharing-lf.html) for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,7 @@ HealthLake supports two types of FHIR data store authorization strategies, AWS S
 
 To find the FHIR-related capabilities (behaviors) of an active HealthLake data store, retrieve its [Capability Statement](reference-fhir-capability-statement.md).
 
-The following topics describe how to use HealthLake cloud native actions to create, describe, list, update, tag, delete, and restore FHIR data stores using the AWS CLI, AWS SDKs, and AWS Management Console.
+The following topics describe how to use HealthLake cloud native actions to create, describe, list, update, tag, and delete FHIR data stores using the AWS CLI, AWS SDKs, and AWS Management Console.
 
 **Topics**
 + [Creating a data store](managing-data-stores-create.md)
@@ -21,8 +21,3 @@ The following topics describe how to use HealthLake cloud native actions to crea
 + [Updating a data store](managing-data-stores-update.md)
 + [Tagging data stores](managing-data-stores-tagging.md)
 + [Deleting a data store](managing-data-stores-delete.md)
-+ [Restoring a data store](managing-data-stores-restore.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

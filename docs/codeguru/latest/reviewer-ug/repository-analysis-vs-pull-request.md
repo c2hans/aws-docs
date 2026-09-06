@@ -21,7 +21,3 @@ You can receive recommendations in code reviews by creating a full repository an
 | Full repository analysis | Your first full repository analysis is done automatically when you associate your repository. After that, you must request a full repository analysis in the CodeGuru Reviewer console or by using the AWS CLI or AWS SDK. | In the CodeGuru Reviewer console, or by using the AWS CLI or AWS SDK.  | All the code in the branch is reviewed. |
 | Incremental code review | Yes. After associating the repository, every time you do a pull request there is a code review. | In the CodeGuru Reviewer console, in the AWS CLI or AWS SDK, or in pull request comments in the repository source provider. | The code that is changed in the pull request is reviewed. |
 | GitHub Actions code review in a CI/CD workflow | Yes. After enabling CodeGuru Reviewer on your GitHub repository, for every push, pull, or scheduled repository scan there is a code review. | In the GitHub **Security** tab. | The code that is changed in the push, pull, or scheduled repository scan. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

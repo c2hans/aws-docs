@@ -35,7 +35,3 @@ The IDE extension uses Amazon Bedrock AgentCore Runtime to automatically package
 For production environments, the [nova-act-samples](http://github.com/amazon-agi-labs/nova-act-samples) GitHub repository contains ready-to-use examples for deploying Nova Act on various AWS compute services. Each example includes a complete CDK construct, Docker configuration, and test scripts.
 
 These examples can serve as a starting point for building production systems tailored to your organization’s needs, including enhanced monitoring, infrastructure management, and security configurations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

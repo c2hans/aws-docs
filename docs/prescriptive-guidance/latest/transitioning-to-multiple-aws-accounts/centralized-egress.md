@@ -25,7 +25,3 @@ The following image shows a sample architecture for centralized egress. Before n
 + As a starting point, you can use a deny list that includes the AWS managed rules. You can then work over time toward implementing an allow-list model. For example, instead of including only a strict list of fully qualified domain names in the allow list, begin by using some wildcards, such as \*.example.com. You can even allow only the top-level domains you expect and block all others. Then, over time, narrow those down too.
 + Use [Route 53 Profiles](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profiles.html) (Route 53 documentation) to apply DNS-related Route 53 configurations across many VPCs and in different AWS accounts.
 + Define a process for handling exceptions to these best practices.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

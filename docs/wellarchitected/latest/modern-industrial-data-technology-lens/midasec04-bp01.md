@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 <a name="resources-20"></a>
 +  [ Secure data ingestion from OT to IT using AWS IoT SiteWise and AWS IoT Greengrass](https://aws.amazon.com/blogs/iot/secure-data-ingestion-from-ot-to-it-using-aws-iot-sitewise-and-iot-greengrass/)
 +  [ Security in your VPC ](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

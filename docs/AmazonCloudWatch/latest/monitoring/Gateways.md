@@ -21,7 +21,3 @@ Expand the **View details** section to view the gateway metrics in graphs.
 Under **Gateways**, choose a gateway **Name** to view the dashboard. You can also sort the list of gateways by click the column headers in the table.
 
 ![Gateways details view.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/Gateways_tile.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

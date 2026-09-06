@@ -37,7 +37,3 @@ When you create links to S3 buckets, keep in mind the following Region and accou
 + Automatic export supports cross-Region configurations. The Amazon FSx file system and the linked S3 bucket can be located in the same AWS Region or in different AWS Regions.
 + Automatic import doesn't support cross-Region configurations. Both the Amazon FSx file system and the linked S3 bucket must be located in the same AWS Region.
 + Both automatic export and automatic import support cross-Account configurations. The Amazon FSx file system and the linked S3 bucket can belong to the same AWS account or to different AWS accounts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,7 @@ This data type is used to specify which player session(s) to retrieve. It can be
 <a name="integration-server-sdk-csharp-ref-dataypes-playersessions-contents"></a>
 
 **GameSessionId**
-Unique game session identifier. Use this parameter to request all player sessions for the specified game session. Game session ID format is as follows: `arn:aws:gamelift:<region>::gamesession/fleet-<fleet ID>/<ID string>`. The value of <ID string> is either a custom ID string (if one was specified when the game session was created) a generated string.
+Unique game session identifier. Use this parameter to request all player sessions for the specified game session. Game session ID format is as follows: `arn:aws:gamelift:<region>::gamesession/fleet-<fleet ID>/<ID string>`. The value of <ID string> is either a custom ID string (if one was specified when the game session was created) or a generated string.
 Type: String
 Required: No
 
@@ -102,7 +102,7 @@ Type: `void OnProcessTerminateDelegate()`
 Required: Yes
 
 **onHealthCheck**
-Name of callback function that the Amazon GameLift Servers service invokes to request a health status report from the server process. Amazon GameLift Servers calls this function every 60 seconds. After calling this function Amazon GameLift Servers waits 60 seconds for a response, and if none is received. records the server process as unhealthy.
+Name of callback function that the Amazon GameLift Servers service invokes to request a health status report from the server process. Amazon GameLift Servers calls this function every 60 seconds. After calling this function Amazon GameLift Servers waits 60 seconds for a response, and if none is received, records the server process as unhealthy.
 Type: `bool OnHealthCheckDelegate()`
 Required: Yes
 
@@ -161,7 +161,3 @@ Required: Yes
 Unique identifier of the backfill request ticket to be canceled.
 Type: String
 Required: Yes
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

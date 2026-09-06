@@ -313,7 +313,3 @@ Option B: Update Service form
 + High-resolution metrics are supported for services using Application Load Balancers and Network Load Balancers. Services using Classic Load Balancers without target groups are not supported.
 + High-resolution metrics are not supported for services using the `CODE_DEPLOY` or `EXTERNAL` deployment controller types.
 + You can view the monitoring configuration for your service using `DescribeServiceRevisions`. The monitoring configuration is not returned in `CreateService` or `UpdateService` responses.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

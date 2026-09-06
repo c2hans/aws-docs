@@ -37,7 +37,3 @@ This page describes the recommended best practices for working with S3 file syst
 <a name="s3-files-best-practices-migration"></a>
 
 To migrate data from on-premises storage to your S3 bucket for the first time, we recommend using AWS DataSync. DataSync automates and accelerates the transfer of large datasets and preserves file metadata and permissions during migration. For more information, see [What is AWS DataSync?](https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

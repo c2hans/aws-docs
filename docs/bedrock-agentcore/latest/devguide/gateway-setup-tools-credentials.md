@@ -90,7 +90,3 @@ To interact with an AgentCore gateway using the Strands Agents SDK, you need to 
 <a name="gateway-prerequisites-langgraph-agent"></a>
 
 To interact with an AgentCore gateway using a Langgraph agent, you need to install Langgraph by navigating to [LangGraph](https://www.langchain.com/langgraph) , selecting **Docs** , and choosing the **LangGraph** page that corresponds to your programming language of choice. By following these steps, you’ll also receive an API key to help set up your credentials.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

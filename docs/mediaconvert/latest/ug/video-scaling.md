@@ -15,7 +15,3 @@ The following tables show how **Scaling behavior**, **Scaling padding**, **Heigh
 + [Configuring fit scaling](video-scaling-fit-ratio.md)
 + [Configuring fit without upscaling scaling](video-scaling-fit-without-upscaling.md)
 + [Configuring fill scaling](video-scaling-fill-ratio.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

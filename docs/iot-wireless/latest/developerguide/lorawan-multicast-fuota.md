@@ -25,7 +25,3 @@ The following topics show how to create multicast groups and perform FUOTA.
 + [Prepare devices for multicast and FUOTA configuration](lorawan-prepare-devices-multicast.md)
 + [Create multicast groups to send a downlink payload to multiple devices](lorawan-multicast-groups.md)
 + [Firmware update over-the-air (FUOTA) for AWS IoT Core for LoRaWAN](lorawan-mc-fuota-overview.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

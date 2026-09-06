@@ -494,7 +494,3 @@ This connector is released under the [Greengrass Core Software License Agreement
 + [Getting started with Greengrass connectors (CLI)](connectors-cli.md)
 + [Perform machine learning inference](ml-inference.md)
 + [Object detection algorithm](https://docs.aws.amazon.com/sagemaker/latest/dg/object-detection.html) in the *Amazon SageMaker AI Developer Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

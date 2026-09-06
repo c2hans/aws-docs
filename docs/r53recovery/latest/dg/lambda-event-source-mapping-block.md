@@ -48,7 +48,3 @@ This block supports both graceful and ungraceful execution modes. Ungraceful mod
 <a name="lambda-event-source-mapping-block-how"></a>
 
 The Lambda event source mapping execution block enables or disables an event source mapping on a Lambda function. When the block is called during plan execution, Region switch invokes the Lambda `UpdateEventSourceMapping` API to perform the configured action (enable or disable) on the specified Lambda event source mapping. Region switch then waits until the event source mapping reaches the target state and updates the status of this step (complete or paused because of failure) before proceeding to the next step in the plan. If the mapping is already in the desired state, Region switch marks the step as complete immediately. When a plan containing this execution block configured for ungraceful execution is run in ungraceful mode, the plan skips the execution of this step.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

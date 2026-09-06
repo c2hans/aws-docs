@@ -43,7 +43,3 @@ To ensure privacy of network traffic in your VPC, consider the following:
 <a name="security-vpce.pl-integration"></a>
 
 App Runner supports AWS PrivateLink, which provides private connectivity to App Runner and eliminates exposure of traffic to the internet. To enable your application to send requests to App Runner using AWS PrivateLink, configure a type of VPC endpoint known as an *interface endpoint*. For more information, see [Interface VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface.html) in the *AWS PrivateLink Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

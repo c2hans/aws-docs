@@ -160,7 +160,3 @@ The following image shows an example of editing a step.
 
 **Note**
 You can use the shared spaces within your Amazon SageMaker AI domain to work collaboratively on your Data Wrangler flows. Within a shared space, you and your collaborators can edit a flow file in real-time. However, neither you nor your collaborators can see the changes in real-time. When anyone makes a change to the Data Wrangler flow, they must save it immediately. When someone saves a file, a collaborator won’t be able to see it unless the close the file and reopen it. Any changes that aren’t saved by one person are overwritten by the person who saved their changes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,7 +53,3 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-lab-manage-ac
  Studio Lab collects your email address, user name, encrypted password, project files, and metadata. When requesting an account, you can optionally choose to provide your first and last name, country, organization name, occupation, and the reason for your interest in this product. We protect all customer personal data with encryption. For more information about how your personal information is handled, see the [Privacy Notice](https://aws.amazon.com/privacy/).
 
 When you delete your account, all of your information is deleted immediately. If you have an inquiry about this, submit the [Amazon SageMaker Studio Lab Form](https://pages.awscloud.com/GLOBAL_PM_PA_amazon-sagemaker_20211116_7014z000000rjq2-registration.html). For information and support related to AWS compliance, see [Compliance support](https://aws.amazon.com/contact-us/compliance-support/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

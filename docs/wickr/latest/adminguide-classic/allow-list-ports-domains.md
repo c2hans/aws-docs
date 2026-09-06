@@ -111,7 +111,3 @@ Registration and verification emails are sent from `no-reply@amazonaws.com` and 
 | Domain: | +  gw-pro-prod.wickr.com <br />+   api.messaging.wickr.us-gov-west-1.amazonaws.com  |
 | Calling CIDR addresses: |  +  3.30.186.208/28   |
 |  Calling IP addresses:  |  +  3.30.186.208 <br />+  3.30.186.209 <br />+  3.30.186.210 <br />+  3.30.186.211 <br />+  3.30.186.212 <br />+  3.30.186.213 <br />+  3.30.186.214 <br />+  3.30.186.215 <br />+  3.30.186.216 <br />+  3.30.186.217 <br />+  3.30.186.218 <br />+  3.30.186.219 <br />+  3.30.186.220 <br />+  3.30.186.221 <br />+  3.30.186.222 <br />+  3.30.186.223   |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ You can update service instances in two ways, depending on which values you want
 1. On the **Edit service instance: {{instance-name}}** page, add, remove, or update custom attributes. You can update both keys and values for existing attributes.
 
 1. Choose **Update service instance**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Map. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud-map` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

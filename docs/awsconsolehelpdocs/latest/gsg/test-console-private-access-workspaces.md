@@ -320,7 +320,3 @@ If you are using Firefox as your browser, verify that the **Enable DNS over HTTP
 
 1. Choose the lock-private icon on the navigation bar to view the VPC and VPC endpoint in use. The following screenshot shows the location of the lock-private icon and the VPC information.
 ![The Amazon S3 console showing the lock-private icon location and AWS Management Console Private Access information.](http://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/images/console-private-access-verify-1.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Management Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

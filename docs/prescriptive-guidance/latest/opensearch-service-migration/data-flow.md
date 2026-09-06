@@ -78,7 +78,3 @@ This approach uses the [remote reindex API](https://docs.aws.amazon.com/opensear
 There are multiple open source tools available to migrate data from your existing Elasticsearch environment to your target Amazon OpenSearch environment. One such example is the Logstash utility. You can use the Logstash utility to extract data from an Elasticsearch or OpenSearch cluster and copy it to the Amazon OpenSearch Service domain.
 
 We recommend that you evaluate all your options and opt for the one that you are most comfortable with. To ensure that your selected approach is fool-proof, test all your tools and automation during your PoC stage. For details and step-by-step guidance on how to implement these approaches, see the [Stage 4 – Data migration](stage-4-data-migration.md) section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

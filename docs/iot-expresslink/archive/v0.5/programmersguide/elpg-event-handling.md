@@ -66,7 +66,3 @@ OK {SCANRES} -32db SSID1\n-48db SSID2\n ... -90dB SSIDx
 ```
 
 In the results, the list of SSIDs is provided in the response detail as a multiline string with the newline characters escaped ('\\n').
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

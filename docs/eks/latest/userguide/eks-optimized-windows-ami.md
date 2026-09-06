@@ -97,7 +97,3 @@ For more information about using Amazon EKS optimized Windows AMIs, see the foll
 + To retrieve the latest IDs of the Amazon EKS optimized Windows AMIs, see [Retrieve recommended Microsoft Windows AMI IDs](retrieve-windows-ami-id.md).
 + To use Amazon EC2 Image Builder to create custom Amazon EKS optimized Windows AMIs, see [Build a custom Windows AMI with Image Builder](eks-custom-ami-windows.md).
 + For best practices, see [Amazon EKS optimized Windows AMI management](https://aws.github.io/aws-eks-best-practices/windows/docs/ami/) in the *EKS Best Practices Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

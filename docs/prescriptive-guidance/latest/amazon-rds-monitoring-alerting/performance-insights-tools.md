@@ -14,7 +14,3 @@ You have to [enable Performance Insights](https://docs.aws.amazon.com/AmazonRDS/
 For information about how you can use Performance Insights to monitor your DB instances, see the [DB instance monitoring](database-instance-monitoring.md) section later in this guide.
 
 Performance Insights automatically [publishes metrics to Amazon CloudWatch](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.Cloudwatch.html). In addition to using the Performance Insights tool itself, you can take advantage of the additional features that CloudWatch provides. You can examine the Performance Insights metrics by using the CloudWatch console, the AWS CLI, or the CloudWatch API. You can also add CloudWatch alarms, as with any other metrics. For example, you might want to trigger an SMS notification to DBAs or take a corrective action if the `DBLoad` metric breaches the threshold value you set. You can also add the Performance Insights metrics to your existing CloudWatch dashboards.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

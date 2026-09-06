@@ -19,7 +19,3 @@ MediaPackage will always create a period at the beginning of content and wheneve
 + **DRM key rotation** - MediaPackage will create a new period whenever the underlying DRM key rotates. This setting allows MediaPackage to signal the `default_KID` and `pssh` values in the manifest when key rotation is enabled. If this period trigger is not enabled, endpoints with DRM key rotation will not show the `default_KID` and `pssh` values in the manifest.
 + **Source stream changes** - MediaPackage will create a new period when it detects stream set changes, allowing all streams to be signaled in the manifest, rather than just those available at manifest publish time.
 + **Source disruptions** - MediaPackage will create a new period after source input has been lost and restored, enabling the gap in content to be signaled to the player.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ A map repeats a set of steps for each item in the dataset. You can configure the
 1. [ItemBatcher (Map)](input-output-itembatcher.md) - used to process groups of items when processing large sets of items
 
 1. [ResultWriter (Map)](input-output-resultwriter.md) - provides options for output results from child workflows
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

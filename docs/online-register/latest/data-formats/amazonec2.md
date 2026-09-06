@@ -292,7 +292,3 @@ Amazon EC2 provides the following APIs for data retrieval.
 | <a name="ec2-SearchTransitGatewayMulticastGroups"></a>[SearchTransitGatewayMulticastGroups](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SearchTransitGatewayMulticastGroups.html) | Search for groups, sources, and members in a transit gateway multicast domain | List |
 | <a name="ec2-SearchTransitGatewayRoutes"></a>[SearchTransitGatewayRoutes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SearchTransitGatewayRoutes.html) | Search for routes in a transit gateway route table | List |
 | <a name="ec2-StartDeclarativePoliciesReport"></a>[StartDeclarativePoliciesReport](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartDeclarativePoliciesReport.html) | Start a declarative policies report | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -107,7 +107,3 @@ PostgreSQL 9.2 offers important new features and performance improvements and it
 After upgrading PostgreSQL from 9.1 to 9.2, the database service will no longer start. This happens because the 9.1 version of the database format is not immediately usable with the 9.2 server. We have provided the `postgresql-upgrade` package as an automatic install alongside the latest release of postgresql 9.2. This allows you to perform an in-place upgrade on your database using service postgresql upgrade.
 Behind the scenes, this runs `pg_upgrade` to migrate your database to the new format. Note that the upgrade will reset configuration files such as `pg_hba.conf` to a clean state. Your old configuration files are stored in `/var/lib/pgsql9/data-old`, and can be copied over the default files in `/var/lib/pgsql9/data` after your review.
 Once the upgrade is finished and the configuration files are restored, the service should start normally.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

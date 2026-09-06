@@ -43,7 +43,3 @@ The mechanisms that provide public key authentication and integrity assurance ar
 + Integrity of the key is provided by the MAC feature of the certificate provided by GetParametersForImport, even if the identity information in the certificate is not trusted. Integrity of the key is also assured by MAC used by TLS protecting the session between the customer and AWS
 
  Certificates and key blocks provided by APC are compliant with Annex A1, which specifies requirements for certificates and key protection by asymmetric methods.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

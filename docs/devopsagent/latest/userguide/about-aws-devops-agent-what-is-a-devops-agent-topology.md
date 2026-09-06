@@ -75,7 +75,3 @@ To limit the resources the agent has access to, restrict the policy for the role
 <a name="topology-and-the-agent-space-understanding-memory"></a>
 
 The topology graph feeds the Agent Space Understanding memory, which holds a structured summary of your infrastructure for use during investigations. When topology discovery completes for a new Agent Space, AWS DevOps Agent automatically generates the Agent Space Understanding memory. For more information, see [DevOps Agent Memories](about-aws-devops-agent-devops-agent-memories.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

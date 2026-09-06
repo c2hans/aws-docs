@@ -160,7 +160,3 @@ This scenario demonstrates that a deny policy at the root-level affects all acco
 This scenario demonstrates how SCPs with explicit service allow lists function when applied at root level within an AWS Organizations. At the organization root level, two custom "Service Allow" SCPs are attached that explicitly permits access to a limited set of AWS services — SCP\_1 allows IAM and Amazon EC2, SCP\_2 allows Amazon S3 and Amazon CloudWatch. At the organizational unit (OU) level, the default FullAWSAccess policy remains attached. However, due to intersection behavior, accounts A and B under these OUs can only access the services explicitly permitted by the root-level SCP. The more restrictive root policy takes precedence, effectively limiting access to only IAM, EC2, S3, and CloudWatch services, regardless of the broader permissions granted at lower organizational levels.
 
 ![Scenario 7: Root level custom allow policies to restrict OU-level access](http://docs.aws.amazon.com/organizations/latest/userguide/images/scp_scenario_7.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

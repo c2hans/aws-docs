@@ -75,7 +75,3 @@ After you create a data source connection with Google BigQuery, you can create G
 1. (Optional) In the **Data prep** page that opens, you can add customizations to your data with calculated fields, filters, and joins.
 
 1. When you are finished making changes, choose **Save** to save and close the dataset.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

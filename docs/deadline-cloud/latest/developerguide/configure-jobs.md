@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/con
 
 AWS Deadline Cloud uses *queue environments* to configure the software on your workers. An environment enables you to perform time-consuming tasks, such as set up and tear-down, once for all the tasks in a session. It defines the actions to run on a worker when starting or stopping a session. You can configure an environment for a queue, jobs that run in the queue, and the individual steps for a job.
 
-You define environments as queue environments or job environments. Create queue environments with the Deadline Cloud console or with the [deadline:CreateQueueEnvironment](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateQueueEnvironment.html) operation and define job environments in the job templates of the jobs you submit. They follow the Open Job Description (OpenJD) specification for environments. For details, see [<Environment>](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#4-environment) in the OpenJD specification on GitHub.
+You define environments as queue environments or job environments. Create queue environments with the Deadline Cloud console or with the [deadline:CreateQueueEnvironment](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateQueueEnvironment.html) operation and define job environments in the job templates of the jobs you submit. They follow the Open Job Description (OpenJD) specification for environments. For details, see [<Environment>](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#4-environment) in the OpenJD specification on the GitHub website.
 
 In addition to a `name` and `description`, each environment contains two fields that define the environment on the host. They are:
 + `script` – The action taken when this environment is run on a worker.
@@ -20,7 +20,3 @@ You can define more than one environment in your job template. Each environment 
 The default queue environment for Deadline Cloud uses the conda package manager to load software into the environment, but you can use other package managers. The default environment defines two parameters to specify the software that should be loaded. These variables are set by submitters provided by Deadline Cloud, though you can set them in your own scripts and applications that use the default environment. They are:
 + `CondaPackages` – A space-separated list of conda package match specifications to install for the job. For example, the Blender submitter would add `blender=3.6` to render frames in Blender 3.6.
 + `CondaChannels` – A space-separated list of conda channels to install packages from. For service-managed fleets, packages are installed from the `deadline-cloud` channel. You can add other channels.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

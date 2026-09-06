@@ -33,7 +33,3 @@ For servers that have the AS2 protocol enabled, there is an **AS2 Monitoring** s
 + **Refresh** – Reloads the graph with the most recent data.
 + **View in metrics** – Opens the corresponding metrics details in Amazon CloudWatch.
 + **View logs** – Opens the corresponding log group in CloudWatch.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

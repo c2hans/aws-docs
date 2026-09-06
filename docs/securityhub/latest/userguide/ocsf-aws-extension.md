@@ -25,7 +25,3 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/ocsf-aws-ex
 + **Existing**: This attribute was already in standard OCSF resource\_details and is now part of the AWS extension.
 +  **New**: The attribute is not part of OCSF and was introduced as part of the AWS extension. It does not exist in the core OCSF schema.
 + **Added to resource\_details**: The attribute is defined in OCSF but not part of resource\_details.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

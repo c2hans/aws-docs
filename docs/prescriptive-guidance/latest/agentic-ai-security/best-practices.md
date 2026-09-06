@@ -16,7 +16,3 @@ The best practices in this guide are divided into high-level categories that str
 + [6. Infrastructure security for agentic AI systems on AWS](best-practices-infrastructure.md)
 + [7. Threat detection and security posture management for agentic AI systems on AWS](best-practices-threat-detection.md)
 + [8. Incident response and business continuity for agentic AI systems on AWS](best-practices-incident-response.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

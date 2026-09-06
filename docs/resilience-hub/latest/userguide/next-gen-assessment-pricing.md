@@ -15,7 +15,3 @@ For services with more than 150 resources, each of the 2 included assessments is
 | 150 resources | $15 (included) |
 | 200 resources | $15 \+ (50 x $0.10 x 2) = $25 |
 | 500 resources | $15 \+ (350 x $0.10 x 2) = $85 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

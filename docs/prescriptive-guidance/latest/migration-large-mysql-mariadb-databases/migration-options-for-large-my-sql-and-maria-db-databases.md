@@ -19,7 +19,3 @@ The following are the common migration tools and approaches that are available t
 + [Split backup](split-backup.md) (Physical, logical, or both)
 
 For each migration tool, there are several approaches you can use to transfer the large database backup file to the AWS CloudOptions are provided for each tool, and you can also use Amazon S3 File Gateway. For more information, see [Amazon S3 File Gateway](amazon-s3-file-gateway.md) in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

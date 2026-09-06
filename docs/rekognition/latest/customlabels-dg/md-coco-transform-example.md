@@ -168,7 +168,3 @@ Use the following Python example to transform bounding box information from a CO
 1. In the program output, note the S3 URL path to the manifest file. You need it in the next step.
 
 1. Follow the instruction at [Creating a dataset with a SageMaker AI Ground Truth manifest file (Console)](md-create-dataset-ground-truth.md#md-create-dataset-ground-truth-console) to create a dataset with the uploaded manifest file. For step 8, in **.manifest file location**, enter the Amazon S3 URL you noted in the previous step. If you are using the AWS SDK, do [Creating a dataset with a SageMaker AI Ground Truth manifest file (SDK)](md-create-dataset-ground-truth.md#md-create-dataset-ground-truth-sdk).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

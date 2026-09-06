@@ -24,7 +24,3 @@ The following table shows all Amazon SimpleDB comparison operators.
 | is null | Attribute does not exist. If an item has the attribute with an empty string, it is not returned.   Due to performance issues, this operator is not recommended when most items have the specified attribute.    | select \* from mydomain where year is null |
 | is not null | Attribute value or itemName() contains any value. | select \* from mydomain where year is not null |
 | every() | For multi-valued attributes, every attribute value must satisfy the constraint.   Due to the cost of running more complex queries, this operator is only recommended for multi-valued attributes.    | `select * from mydomain where every(keyword) = 'Book'` <br />`select * from mydomain where every(keyword) like '***%'` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

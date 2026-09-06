@@ -24,7 +24,3 @@ You can use the `UNLOAD` statement to write data to your S3 bucket to the follow
 + **Build Data Warehouse** – You can export gigabytes of query results into S3 bucket and more easily add time series data into your data lake. You can use services such as Amazon Athena and Amazon Redshift to combine your time series data with other relevant data to derive complex business insights.
 + **Build AI and ML data pipelines** – The `UNLOAD` statement enables you to easily build data pipelines for your machine learning models that access time series data, making it easier to use time series data with services such as Amazon SageMaker and Amazon EMR.
 + **Simplify ETL Processing** – Exporting data into S3 buckets can simplify the process of performing Extract, Transform, Load (ETL) operations on the data, enabling you to seamlessly use third-party tools or AWS services such as AWS Glue to process and transform the data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

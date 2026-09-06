@@ -45,7 +45,3 @@ The following command enters a read-only console for an enclave with an ID of `i
 ```
 nitro-cli console --enclave-id {{i-05f6ed443ae428c95-enc173dfe3e2b1c87b}} --disconnect-timeout {{60}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query enclaves` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

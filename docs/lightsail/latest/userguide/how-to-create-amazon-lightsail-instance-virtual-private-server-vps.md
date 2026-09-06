@@ -16,7 +16,3 @@ Follow the step-by-step instructions to create instances running Linux and Unix 
 For Linux and Unix instances, you can choose from various application blueprints like WordPress, LAMP, LEMP, or select an operating system only. For Windows Server instances, you can choose from Windows Server blueprints or SQL Server Express blueprints.
 
 The guide covers selecting the AWS Region and Availability Zone, choosing the instance plan (bundle) with the desired compute and storage resources, configuring networking options like IPv4 and IPv6, naming the instance, and adding tags. After creating the instance, you can connect to it using the Lightsail browser-based SSH or RDP clients, or use your own SSH or RDP client with the provided connection details. By following this guide, you can quickly launch and access Linux and Unix or Windows Server instances in Lightsail, tailored to your specific requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

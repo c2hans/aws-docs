@@ -95,7 +95,3 @@ $ docker pull okigan/awscurl
 $ export AMP_QUERY_ENDPOINT=https://aps-workspaces.{{Region}}.amazonaws.com/workspaces/{{Workspace_id}}/api/v1/query
 $ docker run --rm -it okigan/awscurl --access_key $AWS_ACCESS_KEY_ID  --secret_key $AWS_SECRET_ACCESS_KEY \ --region {{Region}} --service aps "$AMP_QUERY_ENDPOINT?query={{QUERY}}"
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Service for Prometheus. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prometheus` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

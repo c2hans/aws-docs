@@ -107,7 +107,3 @@ Use the following steps to pause, rewind, or fast-forward a voice recording.
 <a name="problems-pause-rewind-fastforward-recording"></a>
 
 If you are unable to pause, rewind or fast-forward recordings on the **Contact search** page, one possible reason could be that your network is blocking HTTP range requests. See [HTTP range requests]( https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests) on the MDN Web Docs site. Work with your network administrator to unblock HTTP range requests.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

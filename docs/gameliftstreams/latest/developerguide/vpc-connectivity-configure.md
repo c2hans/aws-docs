@@ -149,7 +149,3 @@ After updating the CIDR blocks, Amazon GameLift Streams automatically updates th
 
 **Note**
 The VPC ID cannot be changed when updating CIDR blocks. To connect to a different VPC, you must delete and recreate the stream group location (for streaming locations other than the primary) or create a new stream group (for the primary location).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

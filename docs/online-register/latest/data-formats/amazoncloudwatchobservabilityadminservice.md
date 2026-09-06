@@ -27,7 +27,3 @@ Amazon CloudWatch Observability Admin Service provides the following APIs for da
 | <a name="observabilityadmin-ListTelemetryRulesForOrganization"></a>[ListTelemetryRulesForOrganization](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_ListTelemetryRulesForOrganization.html) | List the telemetry rules for the organization | List |
 | <a name="observabilityadmin-TestTelemetryPipeline"></a>[TestTelemetryPipeline](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_TestTelemetryPipeline.html) | Test a telemetry pipeline configuration with sample data | Read |
 | <a name="observabilityadmin-ValidateTelemetryPipelineConfiguration"></a>[ValidateTelemetryPipelineConfiguration](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_ValidateTelemetryPipelineConfiguration.html) | Validate a telemetry pipeline configuration | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

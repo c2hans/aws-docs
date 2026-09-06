@@ -533,7 +533,3 @@ CloudFront distributions can take up to 15 minutes to deploy globally. If the de
 
 SourceARN is inaccessible error during stack creation
 Ensure the S3 bucket policy grants `cloudfront.amazonaws.com` permission to read the mappings file. Also verify the IAM role deploying the stack has `s3:GetObject`, `s3:HeadObject`, and `s3:GetBucketLocation` permissions on the bucket.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

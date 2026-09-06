@@ -26,7 +26,3 @@ Deploying this guidance with the default parameters builds the following environ
 1. A mapping comma-separated values (CSV) file uploads to the guidance’s [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) bucket. This CSV file maps the line number reported by Amazon Cognito to the subattribute of the corresponding users for inclusion in the troubleshooting error message.
 
 1. When the import workflow is complete, Step Functions sends a completion or error message to an Amazon SNS topic for logging or troubleshooting.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for User Profiles Export with Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

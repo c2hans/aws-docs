@@ -418,7 +418,3 @@ Refer to [IAM and AWS STS quotas, name requirements, and character limits](https
 <a name="getting-support"></a>
 
 For a list of known issues, see the main [GitHub Wiki](https://github.com/aws/aws-parallelcluster/wiki) page or the [issues](https://github.com/aws/aws-parallelcluster/issues) page. For more urgent issues, contact Support or open a [new GitHub issue](https://github.com/aws/aws-parallelcluster/issues).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -114,7 +114,3 @@ This release includes all community bug fixes up to and including 8.0.28, in add
 +  Fixed an issue where a buffer block containing intrinsic temporary table page was relocated during page traversal, causing an assertion failure (Bug\# 33715694)
 + InnoDB: Prevent online DDL operations from accessing out-of-bounds memory (Bug\# 34750489, Bug\# 108925)
 + Fixed an issue which can sometimes produce incorrect query results while processing complex SQL statements consisting of multiple nested Common Table Expressions (CTEs) (Bug\# 34572040, Bug\# 34634469, Bug\# 33856374)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

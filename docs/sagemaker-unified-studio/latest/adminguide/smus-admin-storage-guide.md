@@ -31,7 +31,3 @@ S3 shared storage is the default option. It uses Amazon Simple Storage Service t
 <a name="admin-repos-model"></a>
 
 Repositories provide version control through Code Connections to GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, and Bitbucket. Repositories are additive. Administrators make them available by configuring Git connections at the domain level.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

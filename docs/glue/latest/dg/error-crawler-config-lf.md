@@ -78,7 +78,3 @@ In the Lake Formation console ([https://console.aws.amazon.com/lakeformation/](h
 1.  **Can I crawl multiple Amazon S3 buckets as part of a single crawler using Lake Formation credentials?**
 
    No, for crawling targets using Lake Formation credential vending, the underlying Amazon S3 locations must belong to the same bucket. For example, customers can use multiple target locations `(s3://bucket1/folder1, s3://bucket1/folder2)` if they are under the same bucket (bucket1). Specifying different buckets (s3://bucket1/folder1, s3://bucket2/folder2) is not supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

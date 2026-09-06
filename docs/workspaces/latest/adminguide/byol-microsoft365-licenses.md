@@ -73,7 +73,3 @@ For more information on how to migrate WorkSpaces, see [Migrate a WorkSpace](mig
 <a name="microsoft365-update"></a>
 
 By default, your WorkSpaces running on the Microsoft Windows Operating System are configured to receive updates from Windows Update. However, updates for Microsoft 365 Apps for enterprise aren't available using Windows Update. Set up updates to run automatically from the Office CDN, or use Windows Server Update Services (WSUS) in conjunction with Microsoft Configuration Manager to update Microsoft 365 Apps for enterprise. For more information, see [ Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](https://learn.microsoft.com/en-us/deployoffice/updates/manage-microsoft-365-apps-updates-configuration-manager). To set the frequency of Microsoft 365 application updates, specify an update channel and set it to Current or Monthly Enterprise to comply with the Microsoft 365 on WorkSpaces licensing policy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

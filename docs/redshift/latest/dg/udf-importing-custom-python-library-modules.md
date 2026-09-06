@@ -18,7 +18,7 @@ You must be a superuser or have `USAGE ON LANGUAGE plpythonu` privilege to insta
 
 This section provides an example of importing a custom Python module into your cluster. To perform the steps in this section, you must have an Amazon S3 bucket, where you upload the library package. You then install the package in your cluster. For more information about creating buckets, go to [ Creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CreatingaBucket.html) in the *Amazon Simple Storage Service User Guide*.
 
-In this example, let's suppose that you create UDFs to work with positions and distances in your data. Connect to your Amazon Redshift cluster from a SQL client tool, and run the following commands to create the functions.
+In this example, suppose that you create UDFs to work with positions and distances in your data. Connect to your Amazon Redshift cluster from a SQL client tool, and run the following commands to create the functions.
 
 ```
 CREATE FUNCTION f_distance (x1 float, y1 float, x2 float, y2 float) RETURNS float IMMUTABLE as $$
@@ -93,7 +93,7 @@ To do so, first create the library package by following these steps:
 
 1. Upload **geometry.zip** to your Amazon S3 bucket.
 **Important**
- If the Amazon S3 bucket does not reside in the same region as your Amazon Redshift cluster, you must use the REGION option to specify the region in which the data is located. For more information, see [CREATE LIBRARY](r_CREATE_LIBRARY.md).
+ If the Amazon S3 bucket does not reside in the same Region as your Amazon Redshift cluster, you must use the REGION option to specify the Region in which the data is located. For more information, see [CREATE LIBRARY](r_CREATE_LIBRARY.md).
 
 1.  From your SQL client tool, run the following command to install the library. Replace {{<bucket\_name>}} with the name of your bucket, and replace {{<access key id>}} and {{<secret key>}} with an access key and secret access key from your AWS Identity and Access Management (IAM) user credentials.
 
@@ -118,7 +118,3 @@ $$ LANGUAGE plpythonu;
 ```
 
 In the preceding commands, `import trig/line` eliminates the duplicated code from the original functions in this section. You can reuse the functionality provided by this library in multiple UDFs. Note that to import the module, you only need to specify the path to the subpackage and module name (`trig/line`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

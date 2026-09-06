@@ -162,7 +162,3 @@ Steps should run sequentially. Be sure to use `await` on promises.
  **Returns**
 
 Returns a Promise that resolves with the value returned by the ` functionToExecute` function. For an example script, see [Sample code for canary scripts](CloudWatch_Synthetics_Canaries_Samples.md) in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

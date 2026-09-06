@@ -15,7 +15,3 @@ In addition to detection criteria, you can optionally configure custom severity 
 + [Configuration options for custom data identifiers](cdis-options.md)
 + [Creating a custom data identifier](cdis-create.md)
 + [Deleting a custom data identifier](cdis-delete.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

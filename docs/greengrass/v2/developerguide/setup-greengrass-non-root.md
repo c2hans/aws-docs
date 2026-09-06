@@ -412,7 +412,3 @@ The following table describes the Linux capabilities required by the AWS IoT Gre
 | `CAP_SYS_RESOURCE` | Override resource limits | Setting resource limits on component processes, even if limits are not specified in deployments |
 | `CAP_AUDIT_WRITE` | Write records to kernel auditing log | Allowing `sudo` to write to the kernel audit log |
 | `CAP_SYS_BOOT` | Use `reboot(2)` and `kexec_load(2)` | Allowing the AWS IoT Greengrass Core software to reboot the device when components manage system restarts |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

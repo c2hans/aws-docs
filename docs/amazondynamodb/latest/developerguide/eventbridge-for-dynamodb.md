@@ -100,7 +100,3 @@ This example provides a basic integration with a single Lambda function as a tar
 
 **Note**
 Be aware of any EventBridge quotas that might be relevant to your application. While DynamoDB Streams capacity scales with your table, EventBridge quotas are separate. Common quotas to be aware of in a large application would be **Invocations throttle limit in transactions per second** and **PutEvents throttle limit in transactions per second**. These quotas specify the number of invocations that can be sent to targets and the number of events that can be put into the bus per second.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

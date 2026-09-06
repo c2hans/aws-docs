@@ -64,7 +64,3 @@ Represents the permission to get and start the next pending job execution for a 
 
 `iot:AssumeRoleWithCertificate`
 Represents the permission to call AWS IoT Core credential provider to assume an IAM role with certificate-based authentication. The `iot:AssumeRoleWithCertificate` permission is checked every time a request is made to AWS IoT Core credential provider to assume a role.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

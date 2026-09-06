@@ -32,7 +32,3 @@ End of support notice: On March 31, 2027, AWS will end support for AWS Service M
 1. Choose **My Requests** in the Jira Service Management customer portal view.
 
 1. Choose the AWS automation execution you requested. The AWS automation execution details displays and includes the status of the execution, request details, and steps.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

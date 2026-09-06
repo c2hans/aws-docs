@@ -54,19 +54,24 @@ SET TABLE PROPERTIES ('format-version' = '3');
 
 Upgrading the format version is a metadata-only operation. Existing data files are not rewritten. Existing v2 positional delete files remain valid and are applied during reads. The first write operation after an upgrade generates row lineage values for the entire table. On subsequent DELETE, UPDATE, or MERGE operations, Amazon Redshift merges v2 positional deletes into deletion vectors for the data files affected by the operation.
 
-### Limitations
-<a name="iceberg-v3-upgrading-limitations"></a>
-+ Downgrading from v3 to v2 is not supported.
-+ Amazon Redshift does not support reading or writing complex types (struct, list, map, variant) in Iceberg v3 tables.
-+ Amazon Redshift does not support the following data types in Iceberg v3 tables: struct, list, map, variant, geometry, geography, binary, uuid, time, timestamp\_ns, timestamptz\_ns, and unknown.
-+ After upgrading a table to v3, the Iceberg `timestamptz` type is mapped to the Amazon Redshift TIMESTAMPTZ type. In v2 tables, `timestamptz` is mapped to the Amazon Redshift TIMESTAMP type. With v3, this means your queries output the timestamp based on their timezone.
+**Important**
+Before upgrading to Iceberg v3, review the [Limitations](#iceberg-v3-limitations) section, as some features are not yet supported for v3 tables. Since downgrading from v3 to v2 is not supported, ensure that the unsupported features won't impact your workloads before proceeding with the upgrade.
+
+## Limitations
+<a name="iceberg-v3-limitations"></a>
++ You can use Iceberg v3 only on Amazon Redshift Serverless clusters and on provisioned clusters that use RG instance types.
++ You can't read or write complex types (struct, list, map, variant) in Iceberg v3 tables.
++ You can't use the following data types in Iceberg v3 tables: struct, list, map, variant, geometry, geography, binary, uuid, time, timestamp\_ns, timestamptz\_ns, and unknown.
++ You can't use Iceberg v3 tables that contain equality deletes.
++ You can't create materialized views on Iceberg v3 tables.
++ After upgrading a table to v3, Iceberg's `timestamptz` type maps to the Amazon Redshift TIMESTAMPTZ type instead of TIMESTAMP (used in v2). As a result, your queries return timestamps that include timezone information.
 
 ## Default column values
 <a name="iceberg-v3-default-values"></a>
 
 Default column values are supported only for Iceberg v3 tables. Amazon Redshift returns an error if you specify a default value on an Iceberg v2 table.
 
-Default values specify a literal value that a column falls back to when no explicit value is present. This lets you add new columns to an existing table without rewriting data files. Reads of previously written data files automatically return the default value for the new column. The default is also written when a DML statement omits the column or specifies DEFAULT as the value.
+Default values specify a literal value that a column falls back to when no explicit value is present. With this, you can add new columns to an existing table without rewriting data files. Reads of previously written data files automatically return the default value for the new column. The default is also written when a DML statement omits the column or specifies DEFAULT as the value.
 
 Only literal values are supported as defaults. Nested data types do not support default values.
 
@@ -202,7 +207,3 @@ After upgrading a table from Iceberg v2 to v3, existing v2 positional delete fil
 <a name="iceberg-v3-deletion-vectors-limitations"></a>
 + Deletion vectors are not supported for Iceberg v2 or earlier tables.
 + Iceberg v3 tables cannot fall back to positional delete files for new write operations. This means Iceberg v3 tables can read existing positional delete files, but no new positional delete files can be added. Instead, Iceberg v3 tables can only add new deletes using deletion vectors.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

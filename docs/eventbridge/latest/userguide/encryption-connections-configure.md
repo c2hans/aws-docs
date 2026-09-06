@@ -56,7 +56,3 @@ When you update a connection to use a different KMS key , EventBridge decrypts t
 
 **To update the KMS key used for encryption on a connection (CLI)**
 + When calling `[update-connection](https://docs.aws.amazon.com/cli/latest/reference/events/update-connection.html)`, use the `kms-key-identifier` option to specify the customer managed key for EventBridge to use for encrypting the connection secret.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -92,7 +92,3 @@ The following metrics provide primary statistics for a SQL Server SQL digest que
 | db.sql\_tokenized.stats.total\_logical\_writes | Total logical writes |
 | db.sql\_tokenized.stats.total\_physical\_reads | Total physical reads |
 | db.sql\_tokenized.stats.total\_worker\_time | Total CPU time (in ms) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

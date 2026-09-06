@@ -83,7 +83,3 @@ This guarantee is offered by all banks and building societies that accept instru
 + If an error is made in the payment of your direct debit by AWS Europe or your bank or building society, you are entitled to a full and immediate refund of the amount paid from your bank or building society.
 + If you receive a refund you are not entitled to, you must repay it when requested by AWS Europe.
 + You can cancel a direct debit at any time by contacting your bank or building society. Written confirmation might be required. You must also notify AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,7 +64,3 @@ CodeBuild will only process GitHub Actions workflow jobs if a webhook has filter
 In this example, a webhook filter group triggers a build for a workflow name that matches the regular expression `CI-CodeBuild`.
 
 ![A webhook filter group triggers a build for a workflow name that matches the regular expression.](http://docs.aws.amazon.com/codebuild/latest/userguide/images/github-actions-workflow-job-specific.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

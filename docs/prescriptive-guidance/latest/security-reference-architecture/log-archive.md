@@ -79,7 +79,3 @@ To gain visibility and actionable insights from logs and events, you can query t
 For long-term immutable storage, CloudWatch routes log data to S3 buckets in the Log Archive account via Amazon S3 Tables integration (Apache Iceberg format). Amazon S3 Object Lock and Glacier policies ensure immutability for regulatory compliance. The Log Archive account serves as a storage sink only and does not run CloudWatch analytics workloads.
 
 As a best practice, we recommend that you restrict the configuration of CloudWatch through development pipelines and prevent configuration changes through the AWS Management Console or the AWS Command Line Interface (AWS CLI). You can configure notifications to detect any unauthorized access to log groups or Amazon S3 buckets.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ We recommend the following best practices for migrating your perimeter zone appl
 + The Application Load Balancer provides high availability to the application and the routing of incoming and outgoing traffic by using Network Firewall. No separate load balancer for the security subnet is required.
 + Keep in mind that the Application Load Balancer is an internet-facing load balancer, even though the endpoint's subnet doesn't have direct internet access. There is no internet gateway on **Route table endpoint A **and **Route table endpoint B** in the diagram from the *Perimeter zone architecture based on Network Firewall* section of this guide. The subnet is protected by Network Firewall and has internet access through Network Firewall.
 + Use Network Firewall to provide inbound and outbound web filtering for unencrypted web traffic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

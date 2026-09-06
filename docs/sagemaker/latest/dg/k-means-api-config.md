@@ -21,7 +21,3 @@ In the [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIRef
 | local\_lloyd\_num\_trials | The number of times the Lloyd's expectation-maximization (EM) procedure with the least loss is run when building the final model containing `k` centers.<br />**Optional**<br />Valid values: Either a positive integer or `auto`.<br />Default value: `auto` |
 | local\_lloyd\_tol | The tolerance for change in loss for early stopping of Lloyd's expectation-maximization (EM) procedure used to build the final model containing `k` centers.<br />**Optional**<br />Valid values: Float. Range in [0, 1].<br />Default value: 0.0001 |
 | mini\_batch\_size | The number of observations per mini-batch for the data iterator.<br />**Optional**<br />Valid values: Positive integer<br />Default value: 5000 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ In a single host setup, the Authentication Server, the Handler component and the
 <a name="multiple-host-setup"></a>
 
 In multiple host setup, the Authentication Server, the Handler component and the Web Client can be all installed on different servers. An NGNIX server can be used to proxy requests from the web browser to the Web Client and establish a HTTPS between them. The Authentication Server and the Handler can be configured to accept HTTPS connections. All the components need bi-directional HTTPs connection between them on port 443. In addition, the Handler component needs to be able to initiate secure, persistent, bi-directional HTTPs connections with the Broker and the persistence store (DynamoDB or MariabDB/MySQL).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

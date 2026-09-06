@@ -172,7 +172,3 @@ namespace EC2EnumerateSecGroups
 + Notice for the VPC case that the filter is constructed with the `Name` part of the name-value pair set to "vpc-id". This name comes from the description for the `Filters` property of the [DescribeSecurityGroupsRequest](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/EC2/TDescribeSecurityGroupsRequest.html) class.
 + To get the complete list of your security groups, you can also use [ DescribeSecurityGroupsAsync with no parameters](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/EC2/MEC2DescribeSecurityGroupsAsyncCancellationToken.html).
 + You can verify the results by checking the list of security groups in the [Amazon EC2 console](https://console.aws.amazon.com/ec2/v2/home#SecurityGroups).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

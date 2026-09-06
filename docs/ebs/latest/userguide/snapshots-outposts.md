@@ -45,8 +45,8 @@ No. The Outpost must have connectivity with its Region as the Region provides th
 **7. How quickly is Amazon S3 storage capacity made available after deleting local snapshots?**
 Amazon S3 storage capacity becomes available within 72 hours after deleting local snapshots and the volumes that reference them.
 
-**8. How can I ensure that I do not run out of Amazon S3 capacity on my Outpost?**
-We recommend that you use Amazon CloudWatch alarms to monitor your Amazon S3 storage capacity, and delete snapshots and volumes that you no longer need to avoid running out of storage capacity. If you are using Amazon Data Lifecycle Manager to automate the lifecycle of local snapshots, ensure that your snapshot retention policies do not retain snapshots for longer than is needed.
+**8. How can I make sure that I do not run out of Amazon S3 capacity on my Outpost?**
+We recommend that you use Amazon CloudWatch alarms to monitor your Amazon S3 storage capacity, and delete snapshots and volumes that you no longer need to avoid running out of storage capacity. If you are using Amazon Data Lifecycle Manager to automate the lifecycle of local snapshots, make sure that your snapshot retention policies do not retain snapshots for longer than is needed.
 
 **9. What happens if I run out of local Amazon S3 capacity on an Outpost?**
 If you run out of local Amazon S3 capacity on an Outpost, Amazon Data Lifecycle Manager will not be able to successfully create local snapshots on the Outpost. Amazon Data Lifecycle Manager will attempt to create the local snapshots on the Outpost, but the snapshots immediately transition to the `error` state and they are eventually deleted by Amazon Data Lifecycle Manager. We recommend that you use the `SnapshotsCreateFailed` Amazon CloudWatch metric to monitor your snapshot lifecycle policies for snapshot creation failures. For more information, see [Monitor Data Lifecycle Manager policies using CloudWatch](monitor-dlm-cw-metrics.md).
@@ -78,7 +78,7 @@ Keep the following in mind when working with local snapshots.
 + You can't copy local snapshots or AMIs from an Outpost to an AWS Region, from one Outpost to another, or within an Outpost. However, you can copy snapshots from an AWS Region to an Outpost. For more information, see [Copy snapshots from an AWS Region to an Outpost](#copy-snapshots).
 + When copying a snapshot from an AWS Region to an Outpost, the data is transferred over the service link. Copying multiple snapshots simultaneously could impact other services running on the Outpost.
 + You can't share local snapshots.
-+ You must use IAM policies to ensure that your data residency requirements are met. For more information, see [Controlling access with IAM](#iam).
++ You must use IAM policies to make sure that your data residency requirements are met. For more information, see [Controlling access with IAM](#iam).
 + Local snapshots are incremental backups. Only the blocks in the volume that have changed after your most recent snapshot are saved. Each local snapshot contains all of the information that is needed to restore your data (from the moment when the snapshot was taken) to a new EBS volume. For more information, see [How Amazon EBS snapshots work](how_snapshots_work.md).
 + You can’t use IAM policies to enforce data residency for **CopySnapshot** and **CopyImage** actions.
 
@@ -335,7 +335,3 @@ The following table provides an overview of the supported features.
 + Pre-scripts and post-scripts are not supported for snapshots created on an Outpost.
 
 For more information about creating a snapshot lifecycle that manages local snapshots, see [Automating snapshot lifecycles](snapshot-ami-policy.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

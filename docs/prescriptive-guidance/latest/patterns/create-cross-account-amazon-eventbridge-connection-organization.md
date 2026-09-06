@@ -235,7 +235,3 @@ This example uses the organization ID to control which accounts are allowed to p
 Keep in mind the following [quotas](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-quota.html):
 + 300 rules per event bus is the default quota. This can be expanded if necessary, but it should fit most use cases.
 + Five targets per rule is the maximum allowed. We recommend that application architects should use a distinct rule for each Destination account to support fine-grained control over the event pattern.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

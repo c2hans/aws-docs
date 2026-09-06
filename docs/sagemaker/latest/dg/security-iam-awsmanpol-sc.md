@@ -1400,7 +1400,3 @@ View details about updates to AWS managed policies for Amazon SageMaker AI since
 | AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy - Updated policy | 3 | Add new permissions for `sagemaker`.<br />Create, read, update, and delete SageMaker Images. | September 15, 2021 |
 | AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy - Updated policy | 2 | Add permissions for `sagemaker` and `codestar-connections`.<br />Create, read, update, and delete code repositories.<br />Pass AWS CodeStar connections to AWS CodePipeline. | July 1, 2021 |
 | AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy | 1 | Initial policy | November 27, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

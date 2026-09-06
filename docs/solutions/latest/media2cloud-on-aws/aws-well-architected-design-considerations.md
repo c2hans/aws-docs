@@ -56,7 +56,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/aws-
  This section describes how we architected this solution using the principles and best practices of the [sustainability pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html).
 
  Media2Cloud on AWS uses managed and serverless services to minimize the environmental impact of the backend services. A critical component for sustainability provided by the solution is maximizing the usage of the AWS AI services. The serverless design of Media2Cloud on AWS (using Lambda, API Gateway, Amazon S3, and DynamoDB) aims to reduce the carbon footprint compared to the footprint of continually operating operating on-premises servers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Media2Cloud on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

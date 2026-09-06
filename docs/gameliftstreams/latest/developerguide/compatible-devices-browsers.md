@@ -96,7 +96,3 @@ The following table shows input support for each Amazon GameLift Streams runtime
 <a name="compatible-devices-browsers-runtime-limits"></a>
 + Games running in Proton runtime environments *always* show a game controller as connected, even if the client has no controller plugged in. This supports plug-and-play behavior for game controllers, but can be an issue for games that prompt for controller input even when the controller is idle and unused. We recommend that games show input UI based on the last input method.
 + Ubuntu 22.04 LTS supports gamepad input for applications that use the Simple DirectMedia Layer (SDL) libraries. If your application uses other input libraries, gamepad functionality might not work. If you experience issues, consider using a Proton or Windows runtime environment instead.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -435,7 +435,3 @@ trap - ERR EXIT
   + [ReleasePhoneNumber](https://docs.aws.amazon.com/goto/aws-cli/connect-2017-08-08/ReleasePhoneNumber)
   + [SearchAvailablePhoneNumbers](https://docs.aws.amazon.com/goto/aws-cli/connect-2017-08-08/SearchAvailablePhoneNumbers)
   + [UpdateInstanceAttribute](https://docs.aws.amazon.com/goto/aws-cli/connect-2017-08-08/UpdateInstanceAttribute)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -576,7 +576,3 @@ Check that your JSONL file conforms to the batch inference quotas as outlined in
 1. Send a [CreateModelInvocationJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelInvocationJob.html) request with an [Amazon Bedrock control plane endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#br-cp) with the S3 bucket from the previous step specified in the `inputDataConfig` field and the OpenAI model specified in the `modelId` field.
 
 For an end-to-end code example, see [Code example for batch inference](batch-inference-example.md). Replace with the proper configurations for the OpenAI models.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

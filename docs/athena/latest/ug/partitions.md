@@ -219,7 +219,3 @@ For more information, see [Use partition projection with Amazon Athena](partitio
 + For information about partitioning options for Firehose data, see [Amazon Data Firehose example](partition-projection-kinesis-firehose-example.md).
 + You can automate adding partitions by using the [JDBC driver](connect-with-jdbc.md).
 + You can use CTAS and INSERT INTO to partition a dataset. For more information, see [Use CTAS and INSERT INTO for ETL and data analysis](ctas-insert-into-etl.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

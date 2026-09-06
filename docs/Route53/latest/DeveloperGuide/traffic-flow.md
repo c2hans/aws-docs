@@ -38,7 +38,3 @@ When a client submits a query for the name of the root record, such as example.c
 There's a monthly charge for each traffic policy record. For more information, see the "Traffic Flow" section of [Amazon Route 53 pricing](https://aws.amazon.com/route53/pricing/).
 
 To minimize these charges, you can create one or more alias records in a hosted zone that reference a traffic policy record in that hosted zone. For example, you can create a traffic policy record for example.com and then create an alias record for www.example.com that references the traffic policy record.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

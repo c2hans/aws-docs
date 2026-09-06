@@ -11,7 +11,3 @@ In addition to the lens-level design principles, the security best practices in 
 + **Partition memory, tools, and channels along trust boundaries:** Sessions, users, tenants, and agents get separate namespaces, integrity checks on stored state, and authenticated and encrypted communication so contamination cannot move laterally.
 + **Layer guardrails between intent and action:** Pre-execution input filters, runtime alignment controls, and post-execution output filters keep agent behavior aligned even when prompts or contexts are adversarial. Critical actions stay gated behind human approval.
 + **Continuously test the security posture:** AI-aware vulnerability scanning, multi-agent red-team simulations, and runtime threat detection run as part of the lifecycle, not as one-time exercises.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

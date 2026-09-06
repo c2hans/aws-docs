@@ -265,7 +265,3 @@ The [package README](https://github.com/aws/strands-dynamodb-storage) carries th
 + [strands-dynamodb-storage on PyPI](https://pypi.org/project/strands-dynamodb-storage/)
 + [strands-dynamodb-storage on npm](https://www.npmjs.com/package/strands-dynamodb-storage)
 + [Strands Agents documentation](https://strandsagents.com/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

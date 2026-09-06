@@ -117,7 +117,3 @@ Missing data scenarios for Metrics Insights alarms occur when:
 +  For the evaluation of a time series, the treat missing data treatment is applied for individual datapoints within the time series. For example, if 3 datapoints were queried for the time series but only 1 was received, 2 datapoints would follow the configured missing data configuration.
 +  If a time series is not retrieved by the query anymore, it will transition to `OK` no matter the treat missing data treatment. Alarm actions associated with the `OK` transition at the contributor level are executed and the `StateReason` specifies that the aforementioned contributor was not found with the message, "No data was returned for this contributor". The state of the alarm will depend on the state of the other contributors that were retrieved by the query.
 +  At alarm level, if the query returns an empty result (no time series at all), the treat missing data treatment is applied. For example, if the treat missing data was set as `BREACHING`, the alarm will transition to `ALARM`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

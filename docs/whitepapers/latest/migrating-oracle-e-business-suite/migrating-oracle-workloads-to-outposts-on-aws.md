@@ -30,7 +30,3 @@ Many AWS services are locally available on Outposts, several of which (Amazon EC
 ![Reference architecture diagram showing using Application Load Balancers](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/outposts-with-albs.png)
 
  The migration methodologies to EC2 instances discussed previously are applicable to AWS Outposts. Due to the likely physical proximity to the current on-premises Oracle E-Business Suite environments, the migration will likely be accelerated due to higher data transfer bandwidth available on the local network.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

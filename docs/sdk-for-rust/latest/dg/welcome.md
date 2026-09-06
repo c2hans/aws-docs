@@ -42,7 +42,3 @@ In addition to this guide, the following are valuable online resources for SDK d
 +  [AWS Developer Tools Blog for AWS SDK for Rust](https://aws.amazon.com/blogs/developer/category/rust/)
 +  [AWS SDK for Rust source code](https://github.com/awslabs/aws-sdk-rust) on GitHub
 +  [The AWS Code Sample Catalog for AWS SDK for Rust](https://docs.aws.amazon.com/code-library/latest/ug/rust_1_code_examples.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Rust. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-rust` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

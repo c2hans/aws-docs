@@ -42,7 +42,7 @@ When you set up your landing zone, the following AWS resources are created withi
 | AWS service | Resource type | Resource Name |
 | --- | --- | --- |
 | AWS CloudFormation | Stacks | StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-<br />StackSet-AWSControlTowerBP-BASELINE-CONFIG-<br />StackSet-AWSControlTowerBP-BASELINE-CLOUDTRAIL-<br />StackSet-AWSControlTowerBP-BASELINE-SERVICE-ROLES-<br />StackSet-AWSControlTowerBP-BASELINE-SERVICE-LINKED-ROLE-(In 3.2 and later)<br />StackSet-AWSControlTowerBP-BASELINE-ROLES-<br />StackSet-AWSControlTowerLoggingResources- |
-| AWS Config | AWS Config Rules | AWSControlTower\_AWS-GR\_AUDIT\_BUCKET\_PUBLIC\_READ\_PROHIBITED<br />AWSControlTower\_AWS-GR\_AUDIT\_BUCKET\_PUBLIC\_WRITE\_PROHIBIT |
+| AWS Config | AWS Config Rules | AWSControlTower\_AWS-GR\_AUDIT\_BUCKET\_PUBLIC\_READ\_PROHIBITED<br />AWSControlTower\_AWS-GR\_AUDIT\_BUCKET\_PUBLIC\_WRITE\_PROHIBITED |
 | AWS CloudTrail | Trails | aws-controltower-BaselineCloudTrail |
 | Amazon CloudWatch | CloudWatch Event Rules | aws-controltower-ConfigComplianceChangeEventRule |
 | Amazon CloudWatch | CloudWatch Logs | /aws/lambda/aws-controltower-NotificationForwarder |
@@ -72,7 +72,3 @@ When you set up your landing zone, the following AWS resources are created withi
 | Amazon Simple Notification Service | Topics | aws-controltower-AggregateSecurityNotifications<br />aws-controltower-AllConfigNotifications<br />aws-controltower-SecurityNotifications |
 | AWS Lambda | Functions | aws-controltower-NotificationForwarder |
 | Amazon Simple Storage Service | Buckets | aws-controltower-config-logs-\* (Deployed in 4.0 and later)<br />aws-controltower-config-access-logs-\* (Deployed in 4.0 and later) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

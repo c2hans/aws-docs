@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[AccountingDatabase](#cfn-sagemaker-cluster-clusterorchestratorslurmconfig-accountingdatabase)" : {{ClusterAccountingDatabase}},
   "[SlurmConfigStrategy](#cfn-sagemaker-cluster-clusterorchestratorslurmconfig-slurmconfigstrategy)" : {{String}}
 }
 ```
@@ -27,11 +28,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-sagemaker-cluster-clusterorchestratorslurmconfig-syntax.yaml"></a>
 
 ```
+  [AccountingDatabase](#cfn-sagemaker-cluster-clusterorchestratorslurmconfig-accountingdatabase): {{
+    ClusterAccountingDatabase}}
   [SlurmConfigStrategy](#cfn-sagemaker-cluster-clusterorchestratorslurmconfig-slurmconfigstrategy): {{String}}
 ```
 
 ## Properties
 <a name="aws-properties-sagemaker-cluster-clusterorchestratorslurmconfig-properties"></a>
+
+`AccountingDatabase`  <a name="cfn-sagemaker-cluster-clusterorchestratorslurmconfig-accountingdatabase"></a>
+Property description not available.
+*Required*: No
+*Type*: [ClusterAccountingDatabase](aws-properties-sagemaker-cluster-clusteraccountingdatabase.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SlurmConfigStrategy`  <a name="cfn-sagemaker-cluster-clusterorchestratorslurmconfig-slurmconfigstrategy"></a>
 The strategy for managing partitions for the Slurm configuration. Valid values are `Managed`, `Overwrite`, and `Merge`.
@@ -39,7 +48,3 @@ The strategy for managing partitions for the Slurm configuration. Valid values a
 *Type*: String
 *Allowed values*: `Overwrite | Managed | Merge`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

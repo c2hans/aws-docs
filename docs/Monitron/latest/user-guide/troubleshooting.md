@@ -134,7 +134,3 @@ Your mobile or web app may tell you that your gateway is offline, or not connect
 + Delete the gateway using the Amazon Monitron mobile app, do a factory reset of the gateway, and then install the gateway again. For more information, see [Resetting the Wi-Fi gateway to factory settings](commissioning-button-Wi-Fi.md) or [Resetting the Ethernet gateway to factory settings](commissioning-button-ethernet.md).
 
 If none of these suggestions helps to get your Amazon Monitron device working again, contact AWS Support.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

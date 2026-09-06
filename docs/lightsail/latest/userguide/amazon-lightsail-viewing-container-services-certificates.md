@@ -36,7 +36,3 @@ Complete the following procedure to view your container service SSL/TLS certific
    All of your certificates are listed under the **Attached certificates** section of the page. Choose **Details** to view your certificate's important dates, encryption details, identification, and domains. Choose **Validation details** to view your certificate's validation records. Your certificates are valid for 13 months from the date you created them, after which time Lightsail attempts to automatically revalidate them. Don't delete the CNAME records that you added to your domain because they are required when your certificate is re-validated on the **Valid until** date listed.
 
    After you have a valid SSL/TLS certificate to use with your container service, you should enable custom domains so that you can use the domain names of the certificate on your service. For more information, see [Enable and manage custom domains](amazon-lightsail-enabling-container-services-custom-domains.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

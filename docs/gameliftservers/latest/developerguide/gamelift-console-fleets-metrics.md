@@ -70,7 +70,7 @@ View current fleet capacity settings for each fleet location. For more informati
 + **AWS Location** – Name of a location where fleet instances are deployed.
 + **Status** – Hosting status of the fleet location. Location status must be `ACTIVE` to be able to host games.
 + **Min size** – The smallest number of instances that must be deployed in the location.
-+ **Desired instances** – The target number of active instances to maintain the location. When active instances and desired instances aren't' the same, a scaling event is started to start or shut down instances as needed until active instances equals desired instances.
++ **Desired instances** – The target number of active instances to maintain the location. When active instances and desired instances aren't the same, a scaling event is started to start or shut down instances as needed until active instances equal desired instances.
 + **Max size** – The most instances that can be deployed in the location.
 + **Available** – The service limit on instances minus the number of instances in use. This value tells you the maximum number of instances that you can add to the location.
 
@@ -95,7 +95,3 @@ The **Locations** tab lists all locations where fleet instances are deployed. Lo
 <a name="fleets-game-sessions-tab"></a>
 
 The **Game sessions** tab lists past and present game sessions hosted on the fleet, including some detail information. Choose a game session ID to access additional game session information, including player sessions. For more information about player sessions, see [Game and player sessions in the Amazon GameLift Servers console](gamelift-console-game-player-sessions-metrics.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

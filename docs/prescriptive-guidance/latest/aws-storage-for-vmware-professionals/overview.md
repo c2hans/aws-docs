@@ -43,7 +43,3 @@ The following table highlights some of the storage differences between VMware's 
 | Scaling | Requires careful planning and manual scaling of storage | S3 and EFS scale automatically as data grows, with minimal intervention |
 | Elasticity | Fixed physical storage allocations | Elastic storage that can automatically scale with demand |
 | Global reach | Deployments typically restricted to on-premises data centers in specific geographical regions or data center locations | Global infrastructure allowing data storage and access from various AWS Regions worldwide |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

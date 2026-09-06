@@ -18,7 +18,3 @@ The best prompt engineering approach for your use case is dependent on both the 
 +  **Reasoning or logical thinking:** The model must make a series of logical deductions.
 +  **Entity extraction:** Entity extraction can extracts entities based on a provided input question. You can extract specific entities from text or input based on your prompt.
 +  **Chain-of-thought reasoning:** Give step-by-step reasoning on how an answer is derived based on your prompt.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ Here's an overview of how MediaTailor ad insertion works:
 The ADS tracks the ads viewed based on viewing milestones such as start of ad, middle of ad, and end of ad. As playback progresses, the player or MediaTailor sends ad tracking beacons to the ADS ad tracking URL, to record how much of an ad has been viewed. In the session initialization with MediaTailor, the player indicates whether it or MediaTailor is to send these beacons for the session.
 
 For information about how to get started with ad insertion, see [Getting started with MediaTailor](getting-started.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

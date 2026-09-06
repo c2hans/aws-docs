@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 + [MSFTREL03-BP01 Use Microsoft logs for incident analysis](msftrel03-bp01.md)
 + [MSFTREL03-BP02 Establish a structured review process that combines insights from both AWS and Microsoft monitoring tools](msftrel03-bp02.md)
 + [MSFTREL03-BP03 Implement automated feedback loops](msftrel03-bp03.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

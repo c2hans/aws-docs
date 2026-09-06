@@ -46,7 +46,3 @@ Do ***NOT*** choose the **AdministratorAccess** policy because that policy enabl
 1. Choose **Create role**.
 
 You can find high-level information about IAM roles in [IAM Identities (users, user groups, and roles)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html#id_iam-roles) in the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/). Find detailed information about roles in the [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) topic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

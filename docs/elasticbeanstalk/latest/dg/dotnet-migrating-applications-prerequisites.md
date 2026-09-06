@@ -59,7 +59,3 @@ For installation instructions, see [Installing and Configuring Web Deploy on IIS
   + Ensure your SSH client is installed and running on your remote machine as well as your bastion host.
   + Ensure that your firewall configuration contains the appropriate rules that open up port 22 or allow connection to the client.
   + Test your connection by manually SSH-ing into the remote host from the bastion host before attempting migration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

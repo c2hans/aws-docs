@@ -906,7 +906,3 @@ type PostIterator {
 ```
 
 The `PostIterator` type allows you to return a portion of the list of `Post` objects and a `nextToken` for getting the next portion. Inside `PostIterator`, there is a list of `Post` items (`[Post]`) that is returned with a pagination token (`nextToken`). In AWS AppSync, this would be connected to Amazon DynamoDB through a resolver and automatically generated as an encrypted token. This converts the value of the `limit` argument to the `maxResults` parameter and the `nextToken` argument to the `exclusiveStartKey` parameter. For examples and the built-in template samples in the AWS AppSync console, see [Resolver reference (JavaScript)](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-js-version.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,10 +51,11 @@ Amazon Bedrock logs all [Agents for Amazon Bedrock Runtime API operations](https
 + To log [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) and [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) calls, configure advanced event selectors to record data events for the `AWS::Bedrock::KnowledgeBase` resource type.
 + To log [InvokeFlow](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeFlow.html) calls, configure advanced event selectors to record data events for the `AWS::Bedrock::FlowAlias` resource type.
 + To log `RenderPrompt` calls, configure advanced event selectors to record data events for the `AWS::Bedrock::Prompt` resource type. `RenderPrompt` is a permission-only [action](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrock.html#amazonbedrock-actions-as-permissions) that renders prompts, created using [Prompt management](prompt-management.md), for model invocation (`InvokeModel(WithResponseStream)` and `Converse(Stream)`).
++ To log `ApplyGuardrail` calls, including guardrail evaluations made during model invocation, configure advanced event selectors to record data events for the `AWS::Bedrock::Guardrail` resource type.
 
 From the CloudTrail console, choose **Bedrock agent alias** or **Bedrock knowledge base** for the **Data event type**. You can additionally filter on the `eventName` and `resources.ARN` fields by choosing a custom log selector template. For more information, see [Logging data events with the AWS Management Console](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html).
 
-From the AWS CLI, set the `resource.type` value equal to `AWS::Bedrock::AgentAlias`, `AWS::Bedrock::KnowledgeBase`, or `AWS::Bedrock::FlowAlias` and set the `eventCategory` equal to `Data`. For more information, see [Logging data events with the AWS CLI](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html#creating-data-event-selectors-with-the-AWS-CLI).
+From the AWS CLI, set the `resource.type` value equal to `AWS::Bedrock::AgentAlias`, `AWS::Bedrock::KnowledgeBase`, `AWS::Bedrock::FlowAlias`, or `AWS::Bedrock::Guardrail` and set the `eventCategory` equal to `Data`. For more information, see [Logging data events with the AWS CLI](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html#creating-data-event-selectors-with-the-AWS-CLI).
 
 The following example shows how to configure a trail to log all Amazon Bedrock data events for all Amazon Bedrock resource types in the AWS CLI.
 
@@ -82,7 +83,7 @@ aws cloudtrail put-event-selectors --trail-name {{trailName}} \
       { "Field": "eventCategory", "Equals": ["Data"] },
       { "Field": "resources.type", "Equals": ["AWS::Bedrock::FlowAlias"] }
     ]
-  }
+  },
   {
     "Name": "Log all data events on a guardrail in Amazon Bedrock.",
     "FieldSelectors": [
@@ -157,6 +158,71 @@ The following example shows a CloudTrail log entry that demonstrates the `Invoke
 }
 ```
 
-## See also
+The following example shows the fields relevant to an `ApplyGuardrail` data event for a model invocation evaluated by both a guardrail supplied in the request and a guardrail enforced by an organization. Standard CloudTrail identity and network fields are omitted from the example.
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+```
+{
+    "eventVersion": "1.08",
+    "eventTime": "2026-08-20T16:57:41Z",
+    "eventSource": "bedrock.amazonaws.com",
+    "eventName": "ApplyGuardrail",
+    "awsRegion": "us-east-1",
+    "requestParameters": {
+        "guardrailVersion": "1",
+        "guardrailIdentifier": "abcd1234efgh",
+        "source": "INPUT"
+    },
+    "responseElements": {
+        "action": "GUARDRAIL_INTERVENED",
+        "assessments": [
+            {
+                "contentPolicy": {
+                    "filters": [
+                        {
+                            "type": "VIOLENCE",
+                            "confidence": "HIGH",
+                            "action": "BLOCKED",
+                            "detected": true
+                        }
+                    ]
+                }
+            },
+            {
+                "sensitiveInformationPolicy": {
+                    "piiEntities": [
+                        {
+                            "type": "EMAIL",
+                            "action": "BLOCKED",
+                            "detected": true
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "requestID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+    "eventID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+    "readOnly": true,
+    "eventType": "AwsApiCall",
+    "managementEvent": false,
+    "recipientAccountId": "111122223333",
+    "eventCategory": "Data",
+    "resources": [
+        {
+            "accountId": "111122223333",
+            "type": "AWS::Bedrock::Guardrail",
+            "ARN": "arn:aws:bedrock:us-east-1:111122223333:guardrail/abcd1234efgh"
+        },
+        {
+            "accountId": "444455556666",
+            "type": "AWS::Bedrock::Guardrail",
+            "ARN": "arn:aws:bedrock:us-east-1:444455556666:guardrail/wxyz5678lmno"
+        }
+    ]
+}
+```
+
+**Note**
+When an invocation is evaluated by more than one guardrail, the `assessments` list contains one entry for each guardrail that evaluated the content. **The order of entries isn't guaranteed, and the CloudTrail event doesn't identify which guardrail produced each assessment.** Don't use an assessment's position to attribute it to a specific guardrail or to an entry in the `resources` list. The event has no per-assessment guardrail identifier or other attribution field.
+The `action` field reports the combined result across the applicable guardrails. The `resources` list identifies the guardrail resources that were in scope, and each `accountId` identifies the owner of that resource. When available, use the guardrail trace for guardrail-specific assessment details. For more information, see [Test your guardrail](guardrails-test.md).
+When no guardrail is supplied in the invocation request and one or more enforced guardrails apply, the `guardrailIdentifier` and `guardrailVersion` request parameters in the data event are `ENFORCED`. This value is a marker and isn't a guardrail identifier or version. If one enforced guardrail applies, the single `assessments` entry belongs to that guardrail. If multiple enforced guardrails apply, the same ordering and attribution limitations apply.

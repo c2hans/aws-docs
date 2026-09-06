@@ -183,7 +183,3 @@ You might need to ingest data into a pipeline from a different AWS account, such
 Then, configure your application to assume the ingestion role. The application account must grant the application role [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) permissions for the ingestion role in the pipeline account.
 
 For detailed steps and example IAM policies, see [Providing cross-account ingestion access](configure-client.md#configure-client-cross-account).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

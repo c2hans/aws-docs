@@ -58,7 +58,3 @@ To create a knowledge base, send a [CreateKnowledgeBase](https://docs.aws.amazon
 + After you create a knowledge base, create a data source that contains the documents or content for your knowledge base. You can't create a data source using Amazon Bedrock API operations. You must do so with either the Amazon Bedrock console or the Amazon Kendra [ CreateDataSource](https://docs.aws.amazon.com/kendra/latest/APIReference/API_CreateDataSource.html) API operation. For more information about choosing a data source, and for API connection configuration examples, see [Connect a data source to your knowledge base](data-source-connectors.md).
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

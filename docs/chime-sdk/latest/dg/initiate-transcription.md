@@ -115,7 +115,3 @@ Amazon Transcribe and Amazon Transcribe Medical display the following error mess
 + **ServiceUnavailableException (503):** The service is currently unavailable.
 + **ThrottledClientException (429):** The client exceeded its request rate limit.
 + **UnauthorizedClientException (401):** The client is not currently authorized to make the request.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

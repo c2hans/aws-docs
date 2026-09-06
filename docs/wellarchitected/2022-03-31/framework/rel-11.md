@@ -16,7 +16,3 @@ Workloads with a requirement for high availability and low mean time to recovery
 + [REL11-BP04 Rely on the data plane and not the control plane during recovery](rel_withstand_component_failures_avoid_control_plane.md)
 + [REL11-BP05 Use static stability to prevent bimodal behavior](rel_withstand_component_failures_static_stability.md)
 + [REL11-BP06 Send notifications when events impact availability](rel_withstand_component_failures_notifications_sent_system.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ Amazon EMR calculates pricing on Amazon EKS based on vCPU and memory consumption
 + [Uninstalling the Spark operator for Amazon EMR on EKS](spark-operator-uninstall.md)
 + [Using monitoring configuration to monitor the Spark Kubernetes operator and Spark jobs](spark-operator-monitoring-configuration.md)
 + [Security and the Spark operator with Amazon EMR on EKS](spark-operator-security.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

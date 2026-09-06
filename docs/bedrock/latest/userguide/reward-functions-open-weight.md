@@ -80,7 +80,3 @@ When implementing custom Lambda reward functions, your function must accept and 
 + **Rank responses** – Give the best answer a clearly higher score
 + **Use consistent checks** – Evaluate task completion, format adherence, safety, and reasonable length
 + **Maintain stable scaling** – Keep scores normalized and non-exploitable
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

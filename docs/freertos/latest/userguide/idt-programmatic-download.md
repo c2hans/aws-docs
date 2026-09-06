@@ -25,7 +25,3 @@ IDT does not support being run by multiple users from a shared location, such as
 This topic lists supported versions of IDT for FreeRTOS. As a best practice, we recommend that you use the latest version of AWS IoT Device Tester that supports your target version of FreeRTOS. New releases of FreeRTOS might require you to download a new version of AWS IoT Device Tester. You receive a notification when you start a test run if AWS IoT Device Tester is not compatible with the version of FreeRTOS you are using.
 
 See [Supported versions of AWS IoT Device Tester](dev-test-versions-afr.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

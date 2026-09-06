@@ -17,7 +17,3 @@ Be careful of setting up so that you have the following combination:
 In this case, the video content that was marked by messages (in the input) is not marked (in the output).
 + If you have the rights to that video content, there is no problem setting up this way.
 + If you don't have the rights, it is impossible to find these blanks and blackouts programmatically in a Microsoft Smooth output.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

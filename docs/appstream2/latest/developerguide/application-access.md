@@ -20,7 +20,3 @@ The WorkSpaces Applications agent software relies on the Windows command prompt 
 | Executable | Allow | Everyone | %PROGRAMFILES%\\NICE\\\* | Path | Required for the WorkSpaces Applications agent software |
 | Executable | Allow | Everyone | %PROGRAMFILES%\\Amazon\\\* | Path | Required for the WorkSpaces Applications agent software |
 | Executable | Allow | Everyone | %PROGRAMFILES%\\<{{default-browser}}>\\\* | Path | Required for the WorkSpaces Applications agent software when persistent storage solutions, such as Google Drive or Microsoft OneDrive for Business, are used. This exception is not required when WorkSpaces Applications home folders are used. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

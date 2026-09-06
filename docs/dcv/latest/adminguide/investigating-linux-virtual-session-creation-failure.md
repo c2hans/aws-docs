@@ -28,7 +28,3 @@ In most of the cases, this happens because the desktop session is created but th
   Depending on the desktop environment and version, the configuration directory might be `.gnome` or `.kde` or `.config` in the user directory.
 + Check for specific user configurations affecting the user `PATH` or environment. Quite often, session start failures for specific users are due to frameworks such as `anaconda` overriding some standard native commands that may cause `dbus` connections in sessions initialization to fail.
 + Check for permission issues. Wrong permissions set on local `~/.dbus` or `~/.Xauthority` (for example they might be owned by `root` instead of the user) might cause a desktop session to terminate immediately.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

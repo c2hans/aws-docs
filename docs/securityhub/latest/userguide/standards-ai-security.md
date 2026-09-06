@@ -46,7 +46,3 @@ The following list specifies which AWS Security Hub CSPM controls apply to the A
 + [[SageMaker.23] SageMaker inference experiments should have instance storage volume encrypted with customer managed AWS KMS keys](sagemaker-controls.md#sagemaker-23)
 + [[SageMaker.24] SageMaker inference experiments should have data storage encrypted with customer managed AWS KMS keys](sagemaker-controls.md#sagemaker-24)
 + [[SageMaker.25] SageMaker model quality job definitions should have network isolation enabled](sagemaker-controls.md#sagemaker-25)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

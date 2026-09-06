@@ -76,7 +76,3 @@ It may take up to 24 hours to update the configuration for all the member accoun
 When a delegated GuardDuty administrator account opts out of an opt-in Region, even if your organization has the GuardDuty auto-enable configuration set to either new member accounts only (`NEW`) or all member accounts (`ALL`), GuardDuty cannot be enabled for any member account in the organization that currently has GuardDuty disabled. For information about the configuration of your member accounts, open **Accounts** in the [GuardDuty console](https://console.aws.amazon.com/guardduty/) navigation pane or use the [ListMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMembers.html) API.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

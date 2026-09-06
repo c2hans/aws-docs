@@ -54,7 +54,3 @@ You would like to receive two antenna downlinks as DigIF dataflows at different 
   + Total Dedicated Agent CPU Space = **10 cores** (20 vCPU) on the same socket.
 
  ![Two AwsGroundStationAgentEndpoint resources, one for each dataflow. The endpoints will have a different public IP address (ingressAddress.socketAddress.name). There is no restriction on the port values for either ingressAddress or egressAddress as the dataflows are received on separate infrastructure and will not conflict with each other.](http://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/images/digif-multi-dataflow-multi-receiver.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

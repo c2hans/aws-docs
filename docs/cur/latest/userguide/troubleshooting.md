@@ -152,7 +152,3 @@ Because All Upfront Reserved Instances are paid in full upfront, the amortized c
 **reservation/AmortizedUpfrontCostForUsage** and **reservation/EffectiveCost** are the same rate for All Upfront Reserved Instances. This is because both columns are an equal division of the upfront payment for the Reserved Instance over the total hours of its term.
 
 It's expected that your report has **RIFee** line items populated for All Upfront Reserved Instances, even though the **RIFee** is $0.00. These line items represent the recurring hourly costs for the month, and they have additional usage data in other columns. All Reserved Instances generate **RIFee** line items.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

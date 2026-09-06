@@ -24,7 +24,3 @@ The sequence number is a large, non-consecutive number that Amazon SNS assigns t
 ![Example of multiple Lambda functions publish messages to an Amazon SNS FIFO (First In, First Out) topic, which then delivers these messages to an Amazon SQS FIFO queue, preserving the strict order of message processing. This setup is used to ensure that messages are processed in the exact order they are sent across different components of an application, with sequence numbers indicating the order for each message within a group. This type of configuration is crucial for applications where the order of operations and messages must be strictly maintained to ensure consistency.](http://docs.aws.amazon.com/sns/latest/dg/images/sns-fifo-ordering-4.png)
 
 Amazon SNS FIFO topics define ordering in the context of a message group. For more information, see [Amazon SNS message grouping for FIFO topics](fifo-message-grouping.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

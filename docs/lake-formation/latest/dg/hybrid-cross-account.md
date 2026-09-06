@@ -57,7 +57,3 @@ When using the Lake Formation tag-based access control (LF-TBAC) method to make 
 [Viewing shared Data Catalog tables and databases](viewing-available-shared-resources.md)
 [Working with Data Catalog Settings on the AWS Glue Console](https://docs.aws.amazon.com/glue/latest/dg/console-data-catalog-settings.html) in the *AWS Glue Developer Guide*
 [Granting Cross-Account Access](https://docs.aws.amazon.com/glue/latest/dg/cross-account-access.html) in the *AWS Glue Developer Guide* (for sample Data Catalog resource policies)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

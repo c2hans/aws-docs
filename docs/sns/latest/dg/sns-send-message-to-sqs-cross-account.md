@@ -185,7 +185,3 @@ The following is an example policy statement that allows the Amazon SNS topic to
 The subscription owner must set the `AuthenticateOnUnsubscribe` flag to true on subscription-confirmation.
 + `AuthenticateOnUnsubscribe` is automatically set to true when the queue owner creates the subscription.
 + `AuthenticateOnUnsubscribe` cannot be set to true when the subscription confirmation link is navigated to without authentication.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

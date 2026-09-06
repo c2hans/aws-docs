@@ -42,7 +42,3 @@ Oracle Automatic Storage Management (ASM) can be used for striping. Keep data fi
  For Oracle Database on VMware Cloud on AWS, vSAN provides necessary virtualized storage striped across the bare metal hosts. vSAN virtualized storage capability can be used in Oracle RAC for high-performance shared storage.
 
 The VMDK (virtual machine disk) files created for Oracle RAC have to be provisioned for eager zero thick and be multi-writer flag enabled. VMware has published a [detailed performance study](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/solutions/oracle/vmw-oracle-performance-on-the-vmware-cloud-on-aws.pdf) for Oracle databases on VMware Cloud on AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ Partners in Amazon Web Services India Private Limited (AWS India) can link witho
    You are directed to AWS Partner Central with your account successfully linked and the default IAM roles created in your account.
 
 1. (Optional) To use custom policies that enable access to AWS Marketplace features within AWS Partner Central, refer to the next topic, [Using custom policies to map users](user-role-mapping.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

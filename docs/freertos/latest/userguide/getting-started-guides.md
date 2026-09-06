@@ -32,7 +32,3 @@ You do not need to complete the [First steps](freertos-prereqs.md) for the follo
 [Getting started with the Espressif ESP32-S2](getting_started_esp32-s2.md)
 [Getting started with the Infineon OPTIGA Trust X and XMC4800 IoT Connectivity Kit](getting_started_infineon_trust_x.md)
 [Getting started with the Nordic nRF52840-DK](getting_started_nordic.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

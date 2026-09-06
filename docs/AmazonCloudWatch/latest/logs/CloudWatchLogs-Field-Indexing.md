@@ -52,7 +52,3 @@ The rest of the topics in this section explain automatically indexed fields and 
 + [Create a log-group level field index policy](CloudWatchLogs-Field-Indexing-CreateLogGroupLevel.md)
 + [Log group selection options when creating a query](Field-Indexing-Selection.md)
 + [Effects of deleting a field index policy](CloudWatchLogs-Field-Indexing-Deletion.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -720,7 +720,3 @@ The following table describes the changes in each version of the component.
 | 2.0.2 |  **Bug fixes and improvements**<br />   Fixed an issue that caused shadow manager to not recognize the `delta` property when syncing shadow states from AWS IoT Core.   Fixed an issue that sometimes caused sync requests for a shadow to be merged incorrectly.      |
 | 2.0.1 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.0.0 | Initial version. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ Data sensitivity can impact the controls required to mitigate risk. AWS suggests
 Classify your SAP systems according to their business usage and the existence of critical data types. Transactional systems such as SAP ERP are more likely to contain sensitive data than analytical systems such as SAP BW or management systems such as Solution Manager, although this should be validated by functional and security experts.
 
 Additionally, assess whether the same controls apply to non-production workloads. For example, do non-production workloads include production data and therefore must they adhere to the same security controls?
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

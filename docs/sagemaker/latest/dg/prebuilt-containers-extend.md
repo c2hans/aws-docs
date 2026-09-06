@@ -467,7 +467,3 @@ Remember that `docker` looks for a file specifically called `Dockerfile` without
 1. Open the [IAM console](https://console.aws.amazon.com/iam/) and delete the IAM role. If you created permission policies, you can delete them, too.
 **Note**
  The Docker container shuts down automatically after it has run. You don't need to delete it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

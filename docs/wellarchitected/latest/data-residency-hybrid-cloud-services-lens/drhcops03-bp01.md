@@ -29,7 +29,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  The choice of using AWS Outposts or AWS Local Zones for hybrid edge workloads can be influenced by your organization's RTO and RPO requirements, which are key metrics for ensuring data availability and business continuity in the event of failures or disasters. To understand failure scenarios and resiliency options, see [Reliability](https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hybrid-cloud-lens/reliability.html).
 
  Depending on your organizational complexity, you might have multiple use cases based on the policies of different countries. Evaluate the specific requirements, laws and regulations, data volumes, and recovery strategies to determine the most appropriate solution for each use case.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

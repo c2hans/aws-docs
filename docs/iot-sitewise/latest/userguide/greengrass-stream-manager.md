@@ -18,7 +18,3 @@ For more information about how to **ingest data using stream manager** in a cust
 + [What is AWS IoT Greengrass?](https://docs.aws.amazon.com/greengrass/v2/developerguide/)
 + [Manage data streams on the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v2/developerguide/manage-data-streams.html)
 + [Exporting data to AWS IoT SiteWise asset properties](https://docs.aws.amazon.com/greengrass/v2/developerguide/stream-export-configurations.html#export-to-iot-sitewise)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

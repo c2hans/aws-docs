@@ -236,7 +236,3 @@ If you use server-side encryption with AWS KMS–managed keys to encrypt the Ama
 ```
 
 You can create your own custom IAM policies to allow permissions for API operations for AWS Snowball Edge job management. You can attach these custom policies to the IAM users or groups that require those permissions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

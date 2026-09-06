@@ -35,7 +35,3 @@ For more information about configuring an AppInstanceBot to invoke an Amazon Lex
 <a name="lex-throttling"></a>
 
 Amazon Lex has a service quota for the maximum number of concurrent text-mode conversations per bot alias. You can contact the Amazon Lex service team for quota increases. For more information, refer to [Amazon Lex guidelines and quotas](https://docs.aws.amazon.com/lexv2/latest/dg/quotas.html) in the *Amazon Lex Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

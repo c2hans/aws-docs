@@ -10,7 +10,3 @@ This topic describes how Amazon SNS handles message delivery across various scen
 This topic provides information on the delivery of Amazon SNS messages to an Amazon SQS queue or a Lambda function in different AWS Regions, how cross-region delivery works, and the considerations involved.
 
 Additionally, you'll learn how to monitor and interpret message delivery status, which provides critical information on whether messages were successfully delivered or encountered issues. In cases where message delivery fails, you'll understand the message delivery retry process, including how Amazon SNS automatically attempts to redeliver messages to ensure they reach their intended destinations. This topic also discusses the use of dead-letter queues to capture messages that could not be delivered after multiple attempts, enabling you to analyze and troubleshoot these failures effectively.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

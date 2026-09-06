@@ -58,7 +58,3 @@ CloudWatch Application Insights supports the following metrics:
 | sap\_HA\_check\_failover\_config\_state | The SAPControl Web Service function HACheckFailoverConfig provides the SAP High Availability status. |
 | sap\_HA\_get\_failover\_config\_HAActive | The SAPControl Web Service function HAGetFailoverConfig provides the SAP High Availability Cluster configuration and status. |
 | sap\_start\_service\_processes  | The SAPControl Web Service function GetProcessList provides the disp\+work, IGS, gwrd, icman, message server, and enqueue server processes status. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

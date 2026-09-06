@@ -52,7 +52,3 @@ We recommend creating a new GitHub user (for example, *MyCodeGuruUser*) and usin
    1. (Optional) To add another tag, choose **Add new tag**.
 
 1. Choose **Associate repository and run analysis**. On the **Repositories** page, the **Status** is **Associating**. When the association is complete, the status changes to **Associated** and a full repository analysis begins. Refresh the page to check for the status change.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

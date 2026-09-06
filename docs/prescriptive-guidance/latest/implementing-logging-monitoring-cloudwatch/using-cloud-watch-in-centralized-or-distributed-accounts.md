@@ -30,7 +30,3 @@ You might need to process or share log data stored in CloudWatch Logs in file fo
 The CloudWatch agent configuration can also specify a credentials field in the [agent section](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Agent-Configuration-File-Details.html#CloudWatch-Agent-Configuration-File-Agentsection). This specifies an IAM role to use when sending metrics and logs to a different account. If specified, this field contains the role\_arn parameter. This field can be used when you only need centralized logging and monitoring in a specific centralized account and Region.
 
 You can also use [AWS SDK](https://aws.amazon.com/developer/tools/) to write your own custom processing application in a language of your choice, read logs and metrics from your accounts, and send data to a centralized account or other destination for further processing and monitoring.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

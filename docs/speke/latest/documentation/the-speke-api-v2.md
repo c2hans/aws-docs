@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/speke/latest/documentation/the-speke-api-v2.html
 ---
 
-# SPEKE API v2
+# SPEKE API v2.0
 <a name="the-speke-api-v2"></a>
 
 This is the REST API for Secure Packager and Encoder Key Exchange (SPEKE) v2. Use this specification to provide DRM copyright protection for customers who use encryption. To be SPEKE-compliant, your DRM key provider must expose the REST API described in this specification. The encryptor makes API calls to your key provider.
@@ -33,14 +33,10 @@ Overall, SPEKE v2.0 brings the following evolutions compared to SPEKE v1.0:
 As the SPEKE v1.0 specification stays unchanged, existing implementations don’t need to change to continue supporting SPEKE v1.0 workflows.
 
 **Topics**
-+ [SPEKE API v2 - Customizations and constraints to the DASH-IF specification](speke-constraints-v2.md)
-+ [SPEKE API v2 - Standard payload components](standard-payload-components-v2.md)
-+ [SPEKE API v2 - Encryption contract](encryption-contract-v2.md)
-+ [SPEKE API v2 - Live workflow method call examples](live-workflow-methods-v2.md)
-+ [SPEKE API v2 - VOD workflow method call examples](vod-workflow-method-v2.md)
-+ [SPEKE API v2 - Content key encryption](content-key-encryption-v2.md)
-+ [SPEKE API v2 - Overriding the key identifier](kid-override-v2.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Packager and Encoder Key Exchange API Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query speke` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ [SPEKE API v2.0 - Customizations and constraints to the DASH-IF specification](speke-constraints-v2.md)
++ [SPEKE API v2.0 - Standard payload components](standard-payload-components-v2.md)
++ [SPEKE API v2.0 - Encryption contract](encryption-contract-v2.md)
++ [SPEKE API v2.0 - Live workflow method call examples](live-workflow-methods-v2.md)
++ [SPEKE API v2.0 - VOD workflow method call examples](vod-workflow-method-v2.md)
++ [SPEKE API v2.0 - Content key encryption](content-key-encryption-v2.md)
++ [SPEKE API v2.0 - Overriding the key identifier](kid-override-v2.md)

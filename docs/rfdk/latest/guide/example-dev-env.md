@@ -128,7 +128,3 @@ In this step, we clone the CodeCommit repo created in [Step 1: Create an AWS Cod
 Now that you have a example RFDK development environment, you are ready to [Build your first RFDK app](first-rfdk-app.md). You can also review the following additional resources:
 +  [Learn more about git](https://git-scm.com/book/en/v2)
 +  [Read the AWS Cloud9 User Guide](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Render Farm Deployment Kit on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rfdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -223,7 +223,3 @@ TXT2PDF references and source code:
 + [Text to PDF converter](https://homerow.net/rexx/txt2pdf/)
 + [z/OS Freeware TCP/IP and Mail Tools](http://www.lbdsoftware.com/tcpip.html)
 + [TXT2PDF User Reference Guide](http://www.lbdsoftware.com/TXT2PDF-User-Guide.pdf)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

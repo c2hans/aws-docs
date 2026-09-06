@@ -30,7 +30,3 @@ This prevents the Notebook server from defaulting to the PySpark flavor of the S
 You can test a Scala program on a development endpoint using the AWS GlueScala REPL. Follow the instructions in [Tutorial: Use a SageMaker AI notebook](dev-endpoint-tutorial-repl.md), except at the end of the SSH-to-REPL command, replace `-t gluepyspark` with `-t glue-spark-shell`. This invokes the AWS Glue Scala REPL.
 
 To close the REPL when you are finished, type `sys.exit`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

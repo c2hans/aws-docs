@@ -95,7 +95,3 @@ An array of access control entries, each containing the following fields:
 + `Name` – For `USER` type, the email address of the user in Quick. For `GROUP` type, the group name in Quick.
 + `Type` – Either `USER` or `GROUP`.
 + `Access` – Either `ALLOW` or `DENY`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

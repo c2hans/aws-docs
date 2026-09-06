@@ -102,7 +102,3 @@ You must specify your activity ARN and region. The code includes defaults that y
 
 For a more detailed look at creating state machines that use an activity workers, see:
 + [Creating an Activity state machine using Step Functions](tutorial-creating-activity-state-machine.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

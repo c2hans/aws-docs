@@ -36,7 +36,3 @@ When you use a field for sorting, documents without a value in that field are li
  If you do not specify the `sort` parameter, the search results are ranked using the documents' default relevance scores with the highest-scoring documents listed first. This is equivalent to specifying `sort=_score desc`.
 
 You can use the `q.options` parameter to specify field weights to apply when calculating a document's relevance `_score`. For more information, see [Using Relative Field Weighting to Customize Text Relevance](weighting-fields.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

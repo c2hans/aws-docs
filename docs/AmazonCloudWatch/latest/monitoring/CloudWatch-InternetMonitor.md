@@ -12,7 +12,3 @@ In the Amazon CloudWatch console, you can see a global view of traffic patterns 
 To get started, create a monitor that includes one or more resources, so Internet Monitor can create a traffic profile for your AWS application. Then, view information in the Internet Monitor dashboard to visualize data and get insights and suggestions about your application's internet traffic.
 
 For information about Regional support, pricing, how Internet Monitor works, and other overview content, see [What is Internet Monitor?](CloudWatch-InternetMonitor.what-is-cwim.md). To begin working with Internet Monitor, see [Getting started with Internet Monitor using the console](CloudWatch-IM-get-started.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

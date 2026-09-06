@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 1.  Build measurement approaches that capture both positive transparency outcomes like increased trust alongside potential negative effects like exposure or security risks. Create simple metrics that track user confidence, stakeholder satisfaction, and compliance-aligned measures while also checking for unintended information leakage or misuse. This balanced approach assists you to spot where transparency creates value and where it might cause harm.
 
 1.  Test transparency calibration by creating scenarios where users need to understand system confidence levels, limitations, and appropriate use cases for high-stakes decisions like financial or health recommendations. Build measurement tools that check whether users correctly interpret uncertainty indicators and make appropriately cautious decisions when system confidence is low. This testing catches cases where transparency gaps might lead to harmful over-reliance on uncertain outputs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

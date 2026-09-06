@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 +  **Embrace modernization incrementally:** Where feasible, modernize traditional workloads using containers (with ECS, EKS) or serverless solutions (like .NET on AWS Lambda). This unlocks agility, scalability, and cost optimization, while maintaining alignment with existing Microsoft technologies.
 +  **Govern through consistency and compliance:** Use AWS Control Tower, AWS Organizations, and tagging strategies to enforce adherence, manage accounts, and apply consistent policies across environments. Integrate security baselines and operational controls from day one.
 +  **Plan for lifecycle, sustainability, and continuous improvement:** Continuously monitor workload performance and cost. Reassess choices as AWS services evolve, license agreements change, or application usage shifts. Define update strategies for OS, SQL Server, and application components for sustainability.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

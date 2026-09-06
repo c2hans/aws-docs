@@ -31,7 +31,3 @@ There are several tools available on the AWS Cloud including:
 + [Systems Manager automated upgrades](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/automated-upgrades.html) – Upgrade Windows 2008 and SQL Server 2008 on the AWS Cloud.
 + [AWS SCT](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html) – Convert database schema from commercial to open-source databases.
 + [AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html) – Replicate data from on-premises databases to the AWS Cloud, either on Amazon RDS databases or databases running on Amazon EC2.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ When you use the `ls` or `stat` commands, Amazon File Cache only loads file and 
 
 **Note**
 Amazon File Cache only loads a directory listing the first time `ls` is run on a directory. Subsequently, if new files are added or existing files are changed in the corresponding directory in the linked data repository, you can `stat` the file path to update the directory listing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

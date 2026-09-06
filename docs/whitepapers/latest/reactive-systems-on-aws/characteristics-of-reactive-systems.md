@@ -52,7 +52,3 @@ It is important to make a distinction between reactive systems and reactive prog
  [Reactive Streams](https://www.reactive-streams.org/) is an initiative to define a standard for asynchronous stream processing with non-blocking backpressure. The main goal of this concept is to control the exchange of streaming data across an asynchronous boundary. Backpressure is an integral part of this model: The recipient is only sent as much data as it can process or buffer in and the receiver explicitly requests the data according to its capacity. This means, the sender may only send as much data as the receiver has requested.
 
  The goal behind the Reactive Streams’ specification is to create the basis for compatible implementations that can communicate with each other. This specification includes a minimal set of interfaces, methods, and protocols, that define operations and entities that are necessary to implement a compatible version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

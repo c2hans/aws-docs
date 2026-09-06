@@ -752,7 +752,3 @@ The integration between Wiz and Security Lake facilitates cloud security data co
 Zscaler Posture Control™, a cloud native application protection platform, sends security findings to Security Lake in OCSF schema.
 
 [Integration documentation](https://help.zscaler.com/zpc/integrating-amazon-security-lake)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

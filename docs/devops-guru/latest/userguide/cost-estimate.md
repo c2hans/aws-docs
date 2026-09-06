@@ -44,7 +44,3 @@ For a cost estimate, you can specify only one CloudFormation stack. For your act
 1. (Optional) In the **Active resource utilization %** column, enter an updated percentage value for one or more AWS services. The default *active resource utilization %* is 100%. This means that DevOps Guru generates the estimate for the AWS service by calculating the cost of one hour of analyzing its resources, then extrapolating that over 30 days for a total of 720 hours. If a service is active less than 100% of the time, you can update the percentage based on your estimated usage for a more accurate estimate. For example, if you update a service's active resource utilization to 75%, the one hour cost of analyzing its resources is extrapolated over (720 x 0.75) hours, or 540 hours.
 
 If your estimate is zero dollars, then the resources you chose likely do not include resources supported by DevOps Guru. For more information about the supported services and resources, see [Amazon DevOps Guru pricing](https://aws.amazon.com/devops-guru/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Ultimately, the insights gained from post-change evaluations should drive continuous improvement in change management processes. By using evaluation results to refine procedures and enhance the resilience and performance of EUC environments over time, organizations can effectively adapt to evolving needs and challenges.
 
  By following these change management practices, organizations can effectively manage changes to their EUC environments, maintain service availability and resiliency, and reduce the risk of service interruptions or incidents that could impact users' access to virtual desktop resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

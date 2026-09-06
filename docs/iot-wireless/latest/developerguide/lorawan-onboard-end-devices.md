@@ -36,7 +36,3 @@ Each device must be assigned to a destination that will process its messages to 
 + [Add destinations to AWS IoT Core for LoRaWAN](lorawan-create-destinations.md)
 + [Create rules to process LoRaWAN device messages](lorawan-destination-rules.md)
 + [Connect your LoRaWAN device and verify its connection status](lorawan-device-connection-status.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

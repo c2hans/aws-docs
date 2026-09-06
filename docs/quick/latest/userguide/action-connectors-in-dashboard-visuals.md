@@ -2,13 +2,13 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/action-connectors-in-dashboard-visuals.html
 ---
 
-# Using Quick action connectors in dashboard visuals
+# Using Quick connectors in dashboard visuals
 <a name="action-connectors-in-dashboard-visuals"></a>
 
 ## Prerequisites
 <a name="action-connectors-in-dashboards-prerequisites"></a>
 
-Before you begin, make sure to [create at least one action connector](builtin-services-integration.md).
+Before you begin, make sure to [create at least one connector](builtin-services-integration.md).
 
 The connector must meet these requirements:
 + Uses the **User Auth** authentication method
@@ -20,10 +20,10 @@ The connector must meet these requirements:
   + ServiceNow
   + Slack
 
-## Enable Quick actions on a dashboard to use action connectors
+## Enable Quick actions on a dashboard to use connectors
 <a name="enable-quick-actions-on-dashboards"></a>
 
-**To enable Quick actions on a dashboard to use action connectors**
+**To enable Quick actions on a dashboard to use connectors**
 
 1. If a dashboard exists, go to the source analysis of the dashboard. Otherwise, [create a new analysis](quickstart-createanalysis.md).
 
@@ -35,10 +35,10 @@ The connector must meet these requirements:
 
 1. Choose **Publish dashboard**.
 
-## Use action connectors on a visual
+## Use connectors on a visual
 <a name="use-action-connectors-on-visuals"></a>
 
-**To use action connectors on a visual**
+**To use connectors on a visual**
 
 1. Open a dashboard with the **Enable Quick actions** publishing option turned on.
 
@@ -46,7 +46,7 @@ The connector must meet these requirements:
 
 1. Choose the lightening bolt icon.
 
-1. A menu appears with a list of all supported action connectors and actions.
+1. A menu appears with a list of all supported connectors and actions.
 
 1. Choose the desired action from the list.
 
@@ -99,7 +99,3 @@ The following visual types do not support image attachments:
 
 **Note**
 For these visuals, the **Visual image** checkbox will not appear on the UI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -77,7 +77,3 @@ To help you get started with using Timestream for LiveAnalytics with JDBC, we've
 1. Clone the GitHub repository for the [sample application for JDBC](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/integrations/jdbc) following the instructions from [GitHub](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
 1. Follow the instructions in the [README](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/integrations/jdbc/README.md) to get started with the sample application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

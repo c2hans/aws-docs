@@ -285,7 +285,3 @@ To make sure the steps for establishing trust go smoothly, complete the followin
    If you are satisfied with the setup, you can save the TTL and SOA changes you made. Note that Route 53 limits the TTL to 1 week for signed zones. For more information, see [Configuring DNSSEC signing in Amazon Route 53](dns-configuring-dnssec.md).
 
    If you can change the DS TTL, we recommend that you set it to 1 hour.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

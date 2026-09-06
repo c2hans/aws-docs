@@ -37,7 +37,3 @@ For sample commands to create dynamic allocation scales executors based on pendi
 + Set aggressive `executorIdleTimeout` (30–60s) to release resources quickly
 + Use Karpenter's `consolidationPolicy: WhenEmpty` for Spark NodePools to avoid disrupting running executors
 + Schedule large batch Spark jobs during off-peak hours for better Spot availability and lower contention
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

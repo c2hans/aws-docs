@@ -23,7 +23,3 @@ To obtain AWS Glue Catalog metadata, you query the `information_schema` database
 + [List or search columns for a specified table or view](querying-glue-catalog-listing-columns.md)
 + [List the columns that specific tables have in common](querying-glue-catalog-listing-columns-in-common.md)
 + [List all columns for all tables](querying-glue-catalog-listing-all-columns-for-all-tables.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

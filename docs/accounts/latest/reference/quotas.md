@@ -11,8 +11,8 @@ The following quota information is for projects you create if you use [Sign up f
 
 | Resource | Quota | Adjustable |
 | --- | --- | --- |
-| Number of projects that you own on the Free Plan | 29 | Yes |
-| Number of projects you can own on the Paid Plan | 299 | Yes |
+| Number of projects that you own on the Free Plan | 29 | No |
+| Number of projects you can own on the Paid Plan | 299 | No |
 | Number of people you can share a project with | 500 | No |
 | Number of projects invites you can accept | 100 | No |
 
@@ -39,7 +39,3 @@ The following quota information is for AWS accounts you create if you sign up us
 | Rate of PutAlternateContact requests per account | 5 per second, burst to 8 per second |
 | Rate of PutContactInformation requests per account | 5 per second, burst to 8 per second |
 | Rate of StartPrimaryEmailUpdate requests per caller account | 1 per second, burst to 1 per second |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-nodes.htm
 # Working with nodes
 <a name="acxd-nodes"></a>
 
-Nodes are the building blocks of a flow in Agentic CX Designer.
+Nodes are the building blocks of a flow in agentic CX designer.
 
 Each node represents a specific action in the conversation, such as sending a message, collecting a user response, calling a Data request, generating AI output, routing to another flow, transforming data, escalating to a human agent, or ending the application session.
 
@@ -241,7 +241,7 @@ If the node uses values from a Data request, call the Data request before the Us
 
 A User choice node also participates in application-level flow routing.
 
-When a user responds, Agentic CX Designer evaluates the response in the following order:
+When a user responds, agentic CX designer evaluates the response in the following order:
 
 1. **Slot or source match.** The application first checks whether the response matches an available slot value or other configured source (via a data request) for the node.
 
@@ -446,7 +446,7 @@ Use Escalate nodes when:
 + A task cannot be completed by the application
 + An API failure requires a human recovery path
 
-You can link to the same Escalate node from multiple places in your Agentic CX Designer flow.
+You can link to the same Escalate node from multiple places in your agentic CX designer flow.
 
 |  |  |
 | --- |--- |
@@ -481,7 +481,3 @@ Agent nodes use agentic AI to manage flexible goal-based experiences.
 | --- |--- |
 | **Generative Journey** | Guide a multi-step conversation, collect information, and call tools such as Data requests, knowledge bases, modalities, or other flows.<br />Learn how to configure a [Generative Journey](acxd-generative-journey.md) node. |
 | **Live Sync** | Guide a hands-free web or mobile experience where the agent can converse with the user and coordinate supported frontend actions.<br />Learn how to build a [Live Sync](acxd-live-sync.md) experience. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

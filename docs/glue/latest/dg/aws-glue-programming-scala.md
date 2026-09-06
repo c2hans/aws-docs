@@ -230,7 +230,3 @@ AWS Glue supports an extension of the PySpark Scala dialect for scripting extrac
   + [Job](glue-etl-scala-apis-glue-util-job.md)
     + [Job object](glue-etl-scala-apis-glue-util-job.md#glue-etl-scala-apis-glue-util-job-object)
       + [Def methods](glue-etl-scala-apis-glue-util-job.md#glue-etl-scala-apis-glue-util-job-object-defs)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -61,7 +61,3 @@ These recommendations are based on typical workloads and can vary based on your 
 | 256 GB | Not applicable | Not applicable | 1002 | 500K |
 
 **Multi-AZ with Standby master node sizing:** When using Multi-AZ with Standby, three dedicated master nodes are automatically provisioned across three Availability Zones. For standby deployments, use the same sizing recommendations as above but ensure that the master node instance type has sufficient RAM to manage the expected shard count across all AZs. For example, a cluster with 60 data nodes and 40,000 shards in a standby configuration should use dedicated master nodes with at least 32 GB RAM (such as `r6g.xlarge.search` or `m6g.2xlarge.search`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

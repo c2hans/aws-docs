@@ -367,7 +367,3 @@ If you re-enable trusted access after disabling it, auto-detection does not resu
 <a name="registry-organizations-troubleshooting"></a>
 
 For troubleshooting auto-detection issues, see [Auto-detection errors](registry-troubleshooting.md#registry-troubleshooting-auto-detection) in the main troubleshooting page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

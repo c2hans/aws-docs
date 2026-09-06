@@ -26,7 +26,3 @@ Each SCP has a maximum size of 10,240 characters (minified). The entries you add
 <a name="direct-scp-edits-in-the-aws-organizations-console-are-overwritten"></a>
 
 The solution manages all SCP content through CloudFormation. Any modifications made directly in the AWS Organizations console will be overwritten the next time the AccountPool stack is updated. Always use the CloudFormation parameters to apply and preserve SCP customizations. For instructions on migrating existing console edits, refer to [Migrating existing SCP customizations](update-the-solution.md#v1-3-0-scp-migration).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -102,7 +102,3 @@ Follow these steps to remove all the AWS resources created in this tutorial. The
    Your table should not be listed in the output of this statement. Note that there can be a delay until the table is deleted. For more information, see [DROP TABLE](cql.ddl.table.md#cql.ddl.table.drop).
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

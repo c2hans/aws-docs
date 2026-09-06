@@ -23,7 +23,3 @@ While paused, the pipeline stops sending media to processors and writing data to
  You can read, update, and delete existing call analytics configurations using [GetMediaInsightsPipelineConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetMediaInsightsPipelineConfiguration.html), [UpdateMediaInsightsPipelineConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_UpdateMediaInsightsPipelineConfiguration.html), and [DeleteMediaInsightsPipelineConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaInsightsPipelineConfiguration.html) APIs by passing the configuration name or ARN in the Identifier field.
 
  You can list configurations by calling the [ListMediaInsightsPipelineConfigurations](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_media-pipelines-chime_ListMediaInsightsPipelineConfiguration.html) API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ Establish policies and procedures to monitor and appropriately allocate your cos
 + [COST03-BP04 Configure billing and cost management tools](cost_monitor_usage_config_tools.md)
 + [COST03-BP05 Add organization information to cost and usage](cost_monitor_usage_org_information.md)
 + [COST03-BP06 Allocate costs based on workload metrics](cost_monitor_usage_allocate_outcome.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

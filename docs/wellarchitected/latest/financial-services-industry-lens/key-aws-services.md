@@ -35,7 +35,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
   +  [AWS Audit Manager:](https://aws.amazon.com/audit-manager/) Continuously audit your AWS usage to simplify how you assess risk and compliance with regulations and industry standards.
   +  [AWS GameDay](https://aws.amazon.com/gameday/): Fun, gamified, hands-on learning
   +  [AWS Compliance Center:](https://aws.amazon.com/financial-services/security-compliance/compliance-center/?country-compliance-center-cards.sort-by=item.additionalFields.headline&country-compliance-center-cards.sort-order=asc&awsf.country-compliance-center-master-filter=%2Aall) Research cloud-related regulatory requirements
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

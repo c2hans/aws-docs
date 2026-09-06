@@ -55,7 +55,3 @@ If you want more information about IAM users, refer to the following resources.
 + For an overview of IAM, see [What is Identity and Access Management?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
 + For details about AWS account IDs, see [Your AWS account ID and its alias](https://docs.aws.amazon.com/IAM/latest/UserGuide/console_account-alias.html).
 + For step-by-step directions on how to reset your IAM user password, see [I forgot my IAM user password for my AWS account](troubleshooting-sign-in-issues.md#troubleshoot-forgot-iam-password).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

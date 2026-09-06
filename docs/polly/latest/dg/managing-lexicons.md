@@ -23,7 +23,3 @@ Lexicons give you additional control over how Amazon Polly pronounces words unco
 + [Filtering the lexicon list on the console](managing-lexicons-console-filter.md)
 + [Downloading lexicons on the console](managing-lexicons-console-download.md)
 + [Deleting a lexicon](managing-lexicons-console-delete.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Polly. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query polly` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

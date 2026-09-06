@@ -31,7 +31,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Select hosting options with seamless integration with AWS services like AWS Secrets Manager, ACM, and others to help streamline performance monitoring, secure data delivery, and reduce manual operational tasks.
 +  Verify compatibility between your hosting option and your development environment, frameworks, and programming languages to optimize and maintain server performance effectively.
 +  Evaluate CPU architecture requirements, leveraging Graviton for price-performance or x86 for specific features like AES-NI, AVX, and Turbo Boost, and optimize server performance with NUMA pinning and C-state/P-state tuning.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

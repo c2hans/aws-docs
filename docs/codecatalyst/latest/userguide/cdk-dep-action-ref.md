@@ -573,7 +573,3 @@ For information about the `cdk deploy` and `cdk synth` commands, as well as the 
 For information about cloud assemblies, see [Cloud Assembly](https://docs.aws.amazon.com/cdk/api/v2/docs/cloud-assembly-schema-readme.html) in the *AWS Cloud Development Kit (AWS CDK) API Reference*.
 
 Corresponding UI: Configuration tab/**Path to cloud assembly directory**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

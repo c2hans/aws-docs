@@ -12,7 +12,3 @@ This example uses Active Directory Federation Services (ADFS). However, any tech
 For detailed information about integrating SAML for API access, refer to this AWS blog, [ How to Implement Federated API and CLI Access Using SAML 2.0 and AD FS.](https://aws.amazon.com/blogs/security/how-to-implement-federated-api-and-cli-access-using-saml-2-0-and-ad-fs/)
 
 For an example that installs the AMS CLI and SAML, see [ Appendix: AD FS claim rule and SAML settings ](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/apx-adfs-claim-rule-saml.html) in the AMS User Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

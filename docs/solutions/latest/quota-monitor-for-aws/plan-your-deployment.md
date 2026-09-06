@@ -11,7 +11,3 @@ This section covers cost, security, quotas, AWS Regions, and other consideration
 <a name="supported-aws-regions"></a>
 
 You can deploy the primary hub template (`quota-monitor-hub.template`), the Service Quotas spoke template (`quota-monitor-sq-spoke.template`), and supplemental prerequisite AWS CloudFormation templates in any AWS Region. You can deploy the Trusted Advisor template (`quota-monitor-ta-spoke.template`) only in the US East (N. Virginia) Region or the AWS GovCloud (US-West) Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Quota Monitor for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

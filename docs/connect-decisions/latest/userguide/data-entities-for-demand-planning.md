@@ -23,7 +23,7 @@ The following table lists the data entities and columns used by Demand Planning.
 
 <table>
 <thead>
-  <tr><th>Column</th><th>Requirement</th><th>Forecasting usage</th></tr>
+  <tr><th>Column</th><th>Is the column required?</th><th>How is this column used in Forecasting?</th></tr>
 </thead>
 <tbody>
   <tr><td>id</td><td>Required</td><td rowspan="3"><i>id</i>, <i>cust_order_id</i>, and <i>product_id</i> are used to uniquely identify a record in the data entity and this combination should always be unique. Make sure the column values do not have invalid characters such as asterisk and double-quotes.</td></tr>
@@ -53,7 +53,7 @@ Demand Planning uses the product attributes to establish hierarchy filters for d
 
 <table>
 <thead>
-  <tr><th>Column</th><th>Requirement</th><th>Forecasting usage</th></tr>
+  <tr><th>Column</th><th>Is the column required?</th><th>How is this column used in Forecasting?</th></tr>
 </thead>
 <tbody>
   <tr><td>id</td><td>Required</td><td>Required for data ingestion into Supply Chain Data Lake (SCDL). Make sure the column values do not have duplicate IDs and special characters such as asterix and double-quotes.</td></tr>
@@ -85,7 +85,7 @@ Demand Planning uses the data of product's predecessor(s) or alternate(s) to cre
 
 **product\_alternate columns**
 
-| Column | Requirement | Forecasting usage |
+| Column | Is the column required? | How is this column used in Forecasting? |
 | --- | --- | --- |
 | alternative\_product\_id | Required | Required for data ingestion into Supply Chain Data Lake (SCDL). Unique record identifier. |
 | product\_id | Required | Required for data ingestion into Supply Chain Data Lake (SCDL). ID of the new product or new version of the product. Make sure *product\_id* is populated in the *product* data entity. |
@@ -104,7 +104,7 @@ Demand Planning uses the data of product's predecessor(s) or alternate(s) to cre
 
 **supplementary\_time\_series columns**
 
-| Column | Requirement | Forecasting usage |
+| Column | Is the column required? | How is this column used in Forecasting? |
 | --- | --- | --- |
 | id | Required | Required for data ingestion into Supply Chain Data Lake (SCDL). Unique record identifier. |
 | order\_date | Required | Required for data ingestion into Supply Chain Data Lake (SCDL). Timestamp when the timeseries was recorded. |
@@ -158,10 +158,10 @@ Known covariates are supplementary time series values that are known or can be d
 
 ```
 id,order_date,time_series_name,time_series_value,product_id,site_id,channel_id,customer_tpartner_id
-1001,2025-02-01,discount_percentage,20.0,PROD_001,SITE_NYC,CHANNEL_ONLINE,CUST_12345
-1002,2025-02-14,discount_percentage,30.0,PROD_001,SITE_NYC,CHANNEL_ONLINE,CUST_12345
-1003,2025-02-01,holiday_indicator,0,PROD_001,SITE_NYC,CHANNEL_ONLINE,CUST_12345
-1004,2025-02-14,holiday_indicator,1,PROD_001,SITE_NYC,CHANNEL_ONLINE,CUST_12345
+        1001,2025-02-01,discount_percentage,20.0,PROD_001,SITE_NYC,CHANNEL_ONLINE,CUST_12345
+        1002,2025-02-14,discount_percentage,30.0,PROD_001,SITE_NYC,CHANNEL_ONLINE,CUST_12345
+        1003,2025-02-01,holiday_indicator,0,PROD_001,SITE_NYC,CHANNEL_ONLINE,CUST_12345
+        1004,2025-02-14,holiday_indicator,1,PROD_001,SITE_NYC,CHANNEL_ONLINE,CUST_12345
 ```
 
 This future data tells the model that a 20% discount is planned for February 1st and a 30% Valentine's Day promotion is scheduled for February 14th.
@@ -180,7 +180,3 @@ By incorporating supplementary time series data, your Demand Planning system can
 + **Enable Scenario Planning**: Model "what if" scenarios by adjusting future values of demand drivers
 + **Identify Causal Relationships**: Understand which factors most significantly impact demand for different products and markets
 + **Support Strategic Decisions**: Provide data driven insights for pricing, promotional, and inventory strategies
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

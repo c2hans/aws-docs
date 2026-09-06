@@ -163,7 +163,3 @@ The next step will add the AWS ParallelCluster UI as an application in IAM Ident
 1. Under **Group memberships** select **Add user to group**, choose **admin** and click **Add**.
 
 1. Now when you click **Continue with IdentityCenter** you will be navigated to the AWS ParallelCluster UI page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -661,7 +661,3 @@ When you have migrated all your users, switch flows to the more secure SRP flow.
 To learn more about Lambda triggers, see [Customizing user pool workflows with Lambda triggers](cognito-user-pools-working-with-lambda-triggers.md).
 
 For more information about migrating users with a Lambda trigger, see [Importing users with a user migration Lambda trigger](cognito-user-pools-import-using-lambda.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

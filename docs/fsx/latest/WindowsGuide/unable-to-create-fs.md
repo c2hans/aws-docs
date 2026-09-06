@@ -338,7 +338,3 @@ Use the following procedure to resolve this issue.
 1. Take a user-initiated backup of the file system. For more information, see [Working with user-initiated backups](using-backups.md#user-initiated-backups).
 
 1. Restore the user-initiated backup to a new file system using HDD storage. For more information, see [Restoring backups to new file system](using-backups.md#restoring-backups).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

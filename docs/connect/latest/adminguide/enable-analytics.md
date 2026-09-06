@@ -279,7 +279,3 @@ It's possible that the [Set recording and analytics behavior](set-recording-beha
 <a name="multiparty-calls-contactlens"></a>
 
 Conversational analytics supports calls with up to 2 participants. For example, if there are more than two parties (agent and customer) on a call, or a call is getting transferred to a third party, the quality of the transcription and analytics, such as sentiment, redaction, categories among others, can get degraded. We recommend you disable conversational analytics for multi-party or third-party calls if there are more than two parties (agent and customer). To do this, add another [Set recording and analytics behavior](set-recording-behavior.md) block to the flow and disable conversational analytics. For more information about the behavior of the flow block, see [Configuration tips](set-recording-behavior.md#set-recording-behavior-tips).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

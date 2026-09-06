@@ -34,7 +34,3 @@ Server-side encryption is a feature in Amazon Data Firehose delivery streams tha
 <a name="datafirehose-1-remediation"></a>
 
 To enable server-side encryption on Firehose delivery streams,, see [Data Protection in Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/encryption.html) in the *Amazon Data Firehose Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,7 +84,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/workload
 +  AWS Health Dashboard provides notification and remediation guidance when AWS is experiencing events that might impact you. Storage and access of data can be modified based on the notification.
 +  Use Amazon CloudWatch Logs to trigger on events on writing and reading data and take appropriate error handling action.
   +  Use AWS IoT rules engine error actions to provision data storage to other locations if primary storage is unavailable.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

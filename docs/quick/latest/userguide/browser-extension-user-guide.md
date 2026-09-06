@@ -13,7 +13,7 @@ The Amazon Quick browser extension integrates AI-powered assistance directly int
 Key capabilities include:
 + Summarize web pages for quick understanding.
 + Ask questions about multiple web pages and access organizational knowledge from spaces.
-+ Use actions from [action connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) configured in Quick.
++ Use actions from [connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) configured in Quick.
 + Analyze files uploaded to Quick during browsing sessions.
 
 The AI-powered assistance enables you to maximize reading productivity, streamline research and analysis of complex information, and get instant help when creating content without context switching during web browsing.
@@ -45,7 +45,7 @@ The Quick browser extension provides powerful AI-driven capabilities that transf
 + Summarize a snapshot of any web page for quick understanding and analysis.
 + Ask questions about one or more web pages using your organizational knowledge.
 + Analyze both files you upload to Quick and specific spaces it can access.
-+ Execute actions from configured action connectors without leaving your browser.
++ Execute actions from configured connectors without leaving your browser.
 
 ## Browser extension use cases
 <a name="browser-extension-use-cases"></a>
@@ -209,7 +209,3 @@ Amazon Quick maintains strict data privacy through automated retention policies:
 
 The following are known limitations of the Amazon Quick browser extension:
 + The browser extension supports up to a total of 20 web pages and uploaded files at a time. For more information, see [Upload files and chat](https://docs.aws.amazon.com/quicksuite/latest/userguide/using-quick-chat.html#file-uploads).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

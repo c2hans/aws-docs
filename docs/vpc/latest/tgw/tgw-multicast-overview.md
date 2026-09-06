@@ -98,7 +98,3 @@ For IGMP multicast traffic, you must have the following outbound rules at a mini
 | Custom Protocol | 2 | 224.0.0.2/32 | IGMP leave |
 | Custom Protocol | 2 | Multicast group IP address | IGMP join |
 | Custom UDP Protocol | UDP | Multicast group IP address | Outbound multicast traffic |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,7 +38,3 @@ You can publish/subscribe (real-time) to IVS with:
    1. To stop publishing, go to the **Publish** tab and press the **Stop publishing** button towards the bottom.
 
 **Note**: Subscribing and publishing consume resources, and you will incur an hourly rate for the time you are connected to the stage. To learn more, see [Real-Time Streaming](https://aws.amazon.com/ivs/pricing/#Real-Time_Streaming) on the IVS Pricing page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

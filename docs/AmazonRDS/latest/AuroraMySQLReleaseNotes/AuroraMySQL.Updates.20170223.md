@@ -55,7 +55,3 @@ With version 1.11 of Aurora MySQL, we are using a cluster patching model where a
 + Some INFORMATION\_SCHEMA queries that used ORDER BY did not use a filesort optimization as they did previously. (Bug \#16423536)
 + FOUND\_ROWS () returns the wrong count of rows on a table. (Bug \#68458)
 + The server fails instead of giving an error when too many temp tables are open. (Bug \#18948649)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ Your EC2 instances must be running one of the following operating systems in ord
 | Red Hat Enterprise Linux (RHEL) | 8, 9 | x86\_64, arm64 |
 | SUSE Linux Enterprise Server (SLES) | 12, 15 | x86\_64 |
 | Ubuntu Server | 16.04, 18.04, 20.04 | x86\_64, arm64 (Ubuntu Server 16 and later, A1 instance types) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

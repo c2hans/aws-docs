@@ -15,7 +15,3 @@ This topic discusses the steps to onboard to AWS Unified Operations.
 + [Unified Operations Getting started: Onboard your account to proactive security incident management](uops-gs-proactive-sec-man.md)
 + [Unified Operations Getting started: AWS expectations from you](uops-gs-expectations-customers.md)
 + [Unified Operations Getting started: What you can expect from AWS](uops-gs-aws-expectations.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

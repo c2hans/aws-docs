@@ -20,7 +20,3 @@ In an HLS output group, manifest decoration is enabled at the output group level
 1. Repeat to add more types of markers, as desired.
 
 The manifest for each output will include a separate set of tags for each type that you select.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

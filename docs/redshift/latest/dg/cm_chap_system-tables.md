@@ -338,7 +338,3 @@ When analyzing query, process, and session ids that appear in system tables, be 
 + The query id value (in columns such as `query_id` and `query`) can be reused over time.
 + The process id or session id value (in columns such as `process_id`, `pid`, and `session_id`) can be reused over time.
 + The transaction id value (in columns such as `transaction_id` and `xid`) is unique.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

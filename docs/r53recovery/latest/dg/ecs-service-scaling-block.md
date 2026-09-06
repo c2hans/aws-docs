@@ -51,7 +51,3 @@ If the ECS service has Application Autoscaling enabled, Region switch updates th
 When Region switch executes an ECS service block, Region switch attempts to scale up the target Region ECS capacity to match the desired capacity. Then, Region switch waits until the requested ECS service capacity is fulfilled in the target Region's ECS service before Region switch proceeds to the next step in the plan. If you like, you can configure the step to complete before fulfillment is complete by setting a timeout limit for how long Region switch waits for capacity fulfillment.
 
 If you’re using an active/active approach, Region switch uses the other configured Region as the source. That is, if a Region is being deactivated, Region switch uses the other active Region as the source to match for the percent to scale.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

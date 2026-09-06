@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-modalitie
 # Modalities
 <a name="acxd-modalities"></a>
 
-Modalities are reusable structured UI components that bring richer interaction into Agentic CX Designer conversations.
+Modalities are reusable structured UI components that bring richer interaction into agentic CX designer conversations.
 
 A modality complements a text response by sending structured data that your frontend can render as an interactive experience. For example, a modality can display a carousel of options, show a confirmation card, open a date picker, render an image, or support a custom UI pattern built for your application.
 
@@ -41,9 +41,9 @@ For agent nodes, modalities can be attached as tools so the agent can choose whe
 ## Predefined modalities
 <a name="acxd-modalities-predefined"></a>
 
-Agentic CX Designer includes predefined modalities that can be reused across flows.
+Agentic CX designer includes predefined modalities that can be reused across flows.
 
-Predefined modalities are designed to work with the Agentic CX Designer Touchpoint SDK, without requiring you to create a custom frontend component. They behave like reusable UI blocks and can be attached to supported nodes.
+Predefined modalities are designed to work with the agentic CX designer Touchpoint SDK, without requiring you to create a custom frontend component. They behave like reusable UI blocks and can be attached to supported nodes.
 
 The predefined modalities include:
 
@@ -128,7 +128,7 @@ Create a custom modality when your use case requires a visual or interaction pat
 
 A custom modality is a reusable resource with its own schema and frontend rendering behavior.
 
-When the conversation reaches a supported node with a custom modality attached, Agentic CX Designer sends the structured payload to the frontend for rendering.
+When the conversation reaches a supported node with a custom modality attached, agentic CX designer sends the structured payload to the frontend for rendering.
 
 |  |  |
 | --- |--- |
@@ -259,7 +259,3 @@ When that happens, use transformation tools to reshape the data before sending i
 | **Morph** | Deterministically builds structured payloads from complex or nested data. Useful when you need precise control. |
 
 Use generative transformation when speed and flexibility are important. Use deterministic transformation when structure, predictability, or compliance matters more.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

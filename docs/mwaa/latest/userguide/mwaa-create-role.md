@@ -469,7 +469,3 @@ The following example presents an execution role policy you can use for an [AWS-
 + Learn about the required permissions you and your Apache Airflow users need to access your environment in [Accessing an Amazon MWAA environment](access-policies.md).
 + Learn about [Using customer-managed keys for encryption](custom-keys-certs.md).
 + Explore more [Customer-managed policy examples](https://docs.aws.amazon.com/kms/latest/developerguide/customer-managed-policies.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

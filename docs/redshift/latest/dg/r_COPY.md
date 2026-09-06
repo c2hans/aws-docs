@@ -52,7 +52,7 @@ authorization
 
 You can perform a COPY operation with as few as three parameters: a table name, a data source, and authorization to access the data.
 
-Amazon Redshift extends the functionality of the COPY command to enable you to load data in several data formats from multiple data sources, control access to load data, manage data transformations, and manage the load operation.
+Amazon Redshift extends the functionality of the COPY command so you can load data in several data formats from multiple data sources, control access to load data, manage data transformations, and manage the load operation.
 
 The following sections present the required COPY command parameters, grouping the optional parameters by function. They also describe each parameter and explain how various options work together. You can go directly to a parameter description by using the alphabetical parameter list.
 
@@ -87,7 +87,7 @@ iam_role 'arn:aws:iam::{{<aws-account-id>}}:role/{{<role-name>}}'
 region 'us-east-1';
 ```
 
-For complete instructions on how to use COPY commands to load sample data, including instructions for loading data from other AWS regions, see [Load Sample Data from Amazon S3](https://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-create-sample-db.html) in the Amazon Redshift Getting Started Guide.
+For complete instructions on how to use COPY commands to load sample data, including instructions for loading data from other AWS Regions, see [Load Sample Data from Amazon S3](https://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-create-sample-db.html) in the Amazon Redshift Getting Started Guide.
 
 *table-name*  <a name="r_COPY-syntax-overview-table-name"></a>
 The name of the target table for the COPY command. The table must already exist in the database. The table can be temporary or persistent. The COPY command appends the new input data to any existing rows in the table.
@@ -194,7 +194,3 @@ For more information about how to use the COPY command, see the following topics
 <a name="r_COPY-using-the-copy-command-examples"></a>
 
 For more examples that show how to COPY from various sources, in disparate formats, and with different COPY options, see [COPY examples](r_COPY_command_examples.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

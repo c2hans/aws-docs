@@ -108,7 +108,3 @@ aws secretsmanager create-secret --name ImportedSecret --secret-string mygroovyb
 The command returns an ARN that you can use with the preceding example.
 
 Once you have created a `Secret` instance, you can get the secret’s value from the instance’s `secretValue` attribute. The value is represented by a [`SecretValue`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.SecretValue.html) instance, a special type of [Tokens and the AWS CDK](tokens.md). Because it’s a token, it has meaning only after resolution. Your CDK app does not need to access its actual value. Instead, the app can pass the `SecretValue` instance (or its string or numeric representation) to whatever CDK method needs the value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

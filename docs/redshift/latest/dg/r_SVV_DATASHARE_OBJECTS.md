@@ -59,7 +59,3 @@ share_type | share_name | object_type | object_name  | producer_account |       
  OUTBOUND  | salesshare | schema      | public       | 123456789012     | 13b8833d-17c6-4f16-8fe4-1a018f5ed00d |      t
  OUTBOUND  | salesshare | table       | public.sales | 123456789012     | 13b8833d-17c6-4f16-8fe4-1a018f5ed00d |
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

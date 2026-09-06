@@ -297,7 +297,3 @@ Maven: `codeartifact:PutPackageMetadata`
 + A principal in the domain owner account may be granted access to any repository through a domain or repository policy. Note that in this case, no explicit allow is required in an identity-based policy.
 + A principal in the repository administrator account may be granted access to the repository through an identity-based policy. Note that in this case, no explicit allow is required in a domain or repository policy.
 + A principal in another account is only granted access when allowed by at least one resource policy and at least one identity-based policy, with no policy explicitly denying the action.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

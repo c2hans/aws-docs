@@ -31,7 +31,3 @@ You must use normalized names and versions in ARNs.
 To find the normalized name of a package, use the `aws codeartifact list-packages` command. For more information, see [List package names](list-packages.md).
 
 To find the non-normalized name of a package, use the `aws codeartifact describe-package-version` command. The non-normalized name of the package is returned in the `displayName` field. For more information, see [View and update package version details and dependencies](describe-package-version.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

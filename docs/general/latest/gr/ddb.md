@@ -97,7 +97,7 @@ Newer versions of the AWS SDK connect to Amazon DynamoDB using the AWS-account-b
 | Asia Pacific (Malaysia) | ap-southeast-5 |  streams.dynamodb.ap-southeast-5.amazonaws.com <br /> streams-dynamodb.ap-southeast-5.api.aws  | HTTP and HTTPS<br />HTTP and HTTPS |
 | Asia Pacific (Melbourne) | ap-southeast-4 |  streams.dynamodb.ap-southeast-4.amazonaws.com <br /> streams-dynamodb.ap-southeast-4.api.aws  | HTTP and HTTPS<br />HTTP and HTTPS |
 | Asia Pacific (Mumbai) | ap-south-1 |  streams.dynamodb.ap-south-1.amazonaws.com <br /> streams-dynamodb.ap-south-1.api.aws  | HTTP and HTTPS<br />HTTP and HTTPS |
-| Asia Pacific (New Zealand) | ap-southeast-6 |  streams.dynamodb.ap-southeast-6.amazonaws.com  | HTTP and HTTPS |
+| Asia Pacific (New Zealand) | ap-southeast-6 |  streams.dynamodb.ap-southeast-6.amazonaws.com <br /> streams-dynamodb.ap-southeast-6.api.aws  | HTTP and HTTPS<br />HTTP and HTTPS |
 | Asia Pacific (Osaka) | ap-northeast-3 |  streams.dynamodb.ap-northeast-3.amazonaws.com <br /> streams-dynamodb.ap-northeast-3.api.aws  | HTTP and HTTPS<br />HTTP and HTTPS |
 | Asia Pacific (Seoul) | ap-northeast-2 |  streams.dynamodb.ap-northeast-2.amazonaws.com <br /> streams-dynamodb.ap-northeast-2.api.aws  | HTTP and HTTPS<br />HTTP and HTTPS |
 | Asia Pacific (Singapore) | ap-southeast-1 |  streams.dynamodb.ap-southeast-1.amazonaws.com <br /> streams-dynamodb.ap-southeast-1.api.aws  | HTTP and HTTPS<br />HTTP and HTTPS |
@@ -151,7 +151,3 @@ DAX has the following quotas.
 | Subnet groups | Each supported Region: 50 | No | The maximum number of subnet groups in a single AWS region. |
 | Subnets per subnet group | Each supported Region: 20 | No | The maximum number of subnets per subnet group in a single AWS region. |
 | Total number of nodes | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/dax/quotas/L-AB139030)  | The maximum total number of nodes per AWS account in a single AWS region. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

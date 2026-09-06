@@ -43,7 +43,3 @@ select * from sys_integration_table_activity;
 --------------------------------------+-----------------+-----------------+-------------+-------------------+--------------+----------------------------+-----------------+----------------+--------------+--------------+---------------
  4798e675-8f9f-4686-b05f-92c538e19629 |                 | sample_test2    |    sample   | SampleTestChannel |  111276      | 2023-05-12 12:40:30.656625 | 7736            |  2             | 0            | 0            | 125
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

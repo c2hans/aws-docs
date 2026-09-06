@@ -12,7 +12,3 @@ Almost everything in the sample is a placeholder to swap for your own tooling. B
 The job's step graph renders one task per frame, encodes a preview movie and thumbnail in parallel, then publishes a Version to Autodesk Flow Production Tracking (ShotGrid) with credentials read from AWS Secrets Manager. The DCC and plugins reach the farm as conda packages built from recipes included in the sample and installed at run time by a conda queue environment. Finished outputs return to shared storage through `deadline queue sync-output`.
 
 The README includes a walkthrough that builds the packages, publishes the conda channel to Amazon S3, and submits a shot. For the building blocks the sample uses, see [Open Job Description (OpenJD) templates for Deadline Cloud](build-job-bundle.md), [Conda recipe examples for Deadline Cloud](examples-conda-recipes.md), and [Queue environment examples for Deadline Cloud](examples-queue-environments.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

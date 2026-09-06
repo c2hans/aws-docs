@@ -123,7 +123,3 @@ You can optionally specify an AWS Lambda function instead of a JavaScript expres
 
 **Note**
 If the chaining rule has an error, the guidance returns the message, ` "Unfortunately I encountered an error when searching for your answer. Please ask me again later." `
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

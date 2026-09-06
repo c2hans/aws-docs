@@ -36,7 +36,3 @@ Microservice Extractor supports the following actions in relation to controllers
 + For applications with controllers, Microservice Extractor converts local method calls at the controller level to network calls to the extracted service.
 + For other applications, Microservice Extractor adds code comments by default. If you choose the advanced option for **Method invocations from the application to the extracted service** during extraction, Microservice Extractor replaces local method calls with network calls, where possible.
 + For MVC applications, Microservice Extractor copies the views (.cshtml file) to the extracted service to be able to render the relevant HTML when returning the response.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

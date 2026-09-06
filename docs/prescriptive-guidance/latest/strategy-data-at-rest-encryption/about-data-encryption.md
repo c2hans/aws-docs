@@ -32,7 +32,3 @@ Envelope encryption offers several benefits:
 + **Performance** – You can combine encryption algorithms. For example, you can use symmetric encryption for the raw data but use asymmetric encryption for the data key, which combines the strengths of both encryption algorithms.
 
 For more information about envelope encryption, see [Envelope encryption](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#enveloping) (AWS Key Management Service documentation). For more information about deciding if you need envelope encryption, see *When do I need to implement or support envelope encryption?* in the [FAQ](faq.md) section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

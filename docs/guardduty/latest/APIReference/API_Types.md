@@ -20,6 +20,7 @@ The following data types are supported:
 +  [AccountLevelPermissions](API_AccountLevelPermissions.md)
 +  [AccountStatistics](API_AccountStatistics.md)
 +  [Action](API_Action.md)
++  [Activity](API_Activity.md)
 +  [Actor](API_Actor.md)
 +  [ActorProcess](API_ActorProcess.md)
 +  [AdditionalInfo](API_AdditionalInfo.md)
@@ -30,6 +31,9 @@ The following data types are supported:
 +  [Anomaly](API_Anomaly.md)
 +  [AnomalyObject](API_AnomalyObject.md)
 +  [AnomalyUnusual](API_AnomalyUnusual.md)
++  [ApiCall](API_ApiCall.md)
++  [AssociationDetail](API_AssociationDetail.md)
++  [AssociationSummary](API_AssociationSummary.md)
 +  [AutonomousSystem](API_AutonomousSystem.md)
 +  [AutoscalingAutoScalingGroup](API_AutoscalingAutoScalingGroup.md)
 +  [AwsApiCallAction](API_AwsApiCallAction.md)
@@ -70,6 +74,9 @@ The following data types are supported:
 +  [Destination](API_Destination.md)
 +  [DestinationProperties](API_DestinationProperties.md)
 +  [Detection](API_Detection.md)
++  [DetectionRuleFilter](API_DetectionRuleFilter.md)
++  [DetectionRuleOrgConfiguration](API_DetectionRuleOrgConfiguration.md)
++  [DetectionRuleOrgConfigurationSummary](API_DetectionRuleOrgConfigurationSummary.md)
 +  [DetectorAdditionalConfiguration](API_DetectorAdditionalConfiguration.md)
 +  [DetectorAdditionalConfigurationResult](API_DetectorAdditionalConfigurationResult.md)
 +  [DetectorFeatureConfiguration](API_DetectorFeatureConfiguration.md)
@@ -213,6 +220,9 @@ The following data types are supported:
 +  [ResourceDetails](API_ResourceDetails.md)
 +  [ResourceStatistics](API_ResourceStatistics.md)
 +  [ResourceV2](API_ResourceV2.md)
++  [RuleDefinition](API_RuleDefinition.md)
++  [RuleDetail](API_RuleDetail.md)
++  [RuleSummary](API_RuleSummary.md)
 +  [RuntimeContext](API_RuntimeContext.md)
 +  [RuntimeDetails](API_RuntimeDetails.md)
 +  [S3Bucket](API_S3Bucket.md)
@@ -273,7 +283,3 @@ The following data types are supported:
 +  [VolumeDetail](API_VolumeDetail.md)
 +  [VolumeMount](API_VolumeMount.md)
 +  [VpcConfig](API_VpcConfig.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

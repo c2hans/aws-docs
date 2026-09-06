@@ -41,7 +41,3 @@ The `system factory-reset` command totally wipes the hardware security module. A
 Disconnect the Snowball Edge cables. Secure the device's power cable into the cable nook beneath the top door on the device.
 
 Pull out and close the front and back doors. When they close completely, you hear an audible click. When the return shipping label appears on the E Ink display on top of the device, it's ready to be returned.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Snow Family Device Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

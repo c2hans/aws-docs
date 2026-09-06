@@ -14,7 +14,3 @@ If you enable cross-Region aggregation and sign in to an aggregation Region, the
 You can enable and disable controls in each Region by using the Security Hub CSPM console, Security Hub CSPM API, or AWS CLI.
 
 The instructions for enabling and disabling controls vary based on whether or not you use [central configuration](central-configuration-intro.md). This topic describes the differences. Central configuration is available to users who integrate Security Hub CSPM and AWS Organizations. We recommend using central configuration to simplify the process of enabling and disabling controls in multi-account, multi-Region environments. If you use central configuration, you can enable a control across multiple accounts and Regions through the use of configuration policies. If you don't use central configuration, you must enable a control separately in each Region and account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ For tips on developing and optimizing web content for Silk, see the sections bel
  The second set of numbers, `40051010`, is the build version.
 
 ![About Silk dialog showing version 1.0.443.55-Gen6_40051010 and build 40051010.](http://docs.aws.amazon.com/silk/latest/developerguide/images/about-version.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Silk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query silk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ When you create a channel with SRT outputs in listener mode, you must attach a c
 **Result**
 
 When you create the channel, MediaLive retrieves the CIDR rules from the input security group and applies them to control access to the channel's outputs. Downstream systems with IP addresses in the allow list can now connect to the SRT listener endpoints on your channel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

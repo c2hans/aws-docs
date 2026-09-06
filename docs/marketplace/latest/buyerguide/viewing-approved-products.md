@@ -20,7 +20,3 @@ If you are being governed by a Private Marketplace experience, you will be limit
 1. When **Approved Products** filter for Private Marketplace is selected, it displays the list of products that have been approved for purchase by your admin.
 
 1. If you uncheck **Approved Products** filter for Private Marketplace, you can view all AWS Marketplace products. Products that have been approved for your purchase will have an **Approved Product** label.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

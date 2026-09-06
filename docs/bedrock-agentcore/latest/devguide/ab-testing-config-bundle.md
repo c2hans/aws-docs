@@ -21,7 +21,7 @@ This walkthrough uses a customer support agent as an example. The agent handles 
 Create the project with the AgentCore CLI:
 
 ```
-agentcore create --name ABTestConfigBased --no-agent
+agentcore create --project-name ABTestConfigBased --no-agent
 cd ABTestConfigBased
 ```
 
@@ -40,13 +40,13 @@ agentcore add agent \
   --build CodeZip
 ```
 
-Project structure:
+Abbreviated project structure:
 
 ```
 ABTestConfigBased/
 ├── agentcore/
 │   ├── agentcore.json      # Project and resource configuration
-│   ├── aws-targets.json    # Deployment target (account and region)
+│   ├── aws-targets.json    # Populated with a deployment target during deploy
 │   └── cdk/                # CDK infrastructure (auto-managed)
 └── app/
     └── csAgent/
@@ -553,7 +553,3 @@ The remaining steps (send traffic, get results, deploy the winner) are identical
 <a name="config-bundle-troubleshooting"></a>
 
 For troubleshooting A/B test issues (such as missing results after sending traffic), see [Troubleshooting](ab-testing-target-based.md#target-based-troubleshooting) in the target-based routing guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

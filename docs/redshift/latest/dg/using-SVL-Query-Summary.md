@@ -60,7 +60,3 @@ A high `maxtime` value doesn't necessarily indicate a problem with the segment. 
    If you are returning an unusually large volume of data, see [Very large result set](query-performance-improvement-opportunities.md#very-large-result-set) for recommended solutions.
 
 1. See if the `bytes` value is high relative to the `rows` value for any step, in comparison to other steps. This pattern can indicate that you are selecting a lot of columns. For recommended solutions, see [Large SELECT list](query-performance-improvement-opportunities.md#large-SELECT-list).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

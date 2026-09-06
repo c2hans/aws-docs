@@ -24,7 +24,3 @@ After the processing period, to view, edit, or delete your reservation, navigate
    +  **View**: Selecting the view option allows you to view the details of your reservation including the date, time, location, and assigned personnel.
    +  **Edit**: You can revise details of the reservation including date, time, location, and assigned personnel. Note that changes must be made 24 hours before the desired reservation date and that the revisions are not immediately accepted and applied. Your Process owner will receive confirmation of the updated request.
    +  **Delete**: The delete option allows you to cancel your reservation. The cancellation request must be made a minimum of 24 hours before the scheduled reservation date. The Process owner will receive confirmation of the canceled reservation when the request is approved.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Transfer Terminal. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datatransferterminal` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

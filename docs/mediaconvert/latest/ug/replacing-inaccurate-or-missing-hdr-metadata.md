@@ -29,7 +29,3 @@ You use the input settings to supply metadata that is wrong or missing from your
    These settings represent HDR 10 static metadata as specified in the standard SMPTE ST 2086 Mastering Display Color Volume. MediaConvert includes the values that you specify here in the metadata of your HDR 10 outputs.
 **Note**
 Get your values for **HDR master display information** from a color grader. Appropriate values for these settings depend on the video content and are different for each input.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

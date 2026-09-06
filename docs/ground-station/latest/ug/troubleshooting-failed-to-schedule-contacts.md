@@ -31,7 +31,3 @@ Contact AWS Ground Station directly to onboard your new config. Create a case wi
 If the preceding troubleshooting steps did not resolve your issue:
 +  Re-attempt scheduling the contact or schedule another contact using the same mission profile. For information about how to reserve a contact, see [ReserveContact](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ReserveContact.html).
 +  If you continue to receive a **FAILED\_TO\_SCHEDULE** status for this mission profile, [contact AWS Support](https://aws.amazon.com/support/createCase)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

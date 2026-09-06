@@ -73,7 +73,3 @@ For more information about monitoring using metrics, see [Use Amazon CloudWatch 
 CloudWatch also allows you to set alarms when a threshold is met for a metric. For example, you could set an alarm for the **ProcessedSize** metric, so that you're notified when the volume of data from a specific source exceeds a specific threshold.
 
 For instructions on setting alarms, see [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) in the *Amazon CloudWatch User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

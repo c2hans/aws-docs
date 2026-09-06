@@ -28,7 +28,3 @@ Starting from 2021-04-27, no new instances using this engine version will be cre
 + Fixed a Gremlin bug in the handling of vertex elements in `addE().from().to()` steps.
 + Fixed a Gremlin bug (released 2019-07-26 in [Engine version 1.0.1.0.200366.0](engine-releases-1.0.1.0.200366.0.md)) involving the handling of NaN doubles and floats in single-cardinality inserts.
 + Fixed a bug in generating query plans involving property based searches.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

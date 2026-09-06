@@ -709,7 +709,3 @@ The Lambda function should be configured with [reserved concurrency](https://doc
 + Identify which integration pattern best fits your use case by referring to the comparison tables in the Integration Options Overview section.
 + Set up a development environment with a test LMS instance and an AWS account to prototype your chosen pattern.
 + For production deployments, review the [Guidance for Deploying Moodle LMS on AWS](https://aws.amazon.com/solutions/guidance/deploying-moodle-learning-management-system-on-aws/) reference architecture.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

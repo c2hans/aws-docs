@@ -31,7 +31,3 @@ All AWS KMS keys are managed by the Nova Act service. At this time, there is no 
 <a name="internetwork-traffic"></a>
 
 PrivateLink is not yet supported by Nova Act, but this functionality is expected to be added in a subsequent release.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

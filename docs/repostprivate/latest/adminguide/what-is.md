@@ -25,7 +25,3 @@ For information on the pricing tiers for re:Post Private, see [Pricing](https://
 <a name="how-to-start"></a>
 
 Only your AWS re:Post Private console administrator can invite you to join a private re:Post as an application administrator. Your re:Post Private console administrator creates the private re:Post and then invites you and other users to join the private re:Post. Your console administrator sends you an email message with the information that you need to launch the private re:Post.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

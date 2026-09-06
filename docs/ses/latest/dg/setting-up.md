@@ -34,7 +34,3 @@ Get started with SES by verifying an email address and sending domain so that yo
 <a name="download-aws-sdk"></a>
 
 To call the SES APIs without having to handle low-level details like assembling raw HTTP requests, you can use an AWS SDK. The AWS SDKs provide functions and data types that encapsulate the functionality of SES and other AWS services. To download an AWS SDK, go to [SDKs](https://aws.amazon.com/tools/#sdk). After you download the SDK, [create a shared credentials file](https://docs.aws.amazon.com/credref/latest/refdocs/creds-config-files.html) and specify your AWS access keys.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

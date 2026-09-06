@@ -121,7 +121,3 @@ frontend:
         - if [ "${AWS_BRANCH}" = "node-24" ]; then nvm use 24; fi
 ```
 Be aware that `preBuild` commands run after live package updates. The Node.js version specified by the `nvm use` command will override the Node.js version set by live package updates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

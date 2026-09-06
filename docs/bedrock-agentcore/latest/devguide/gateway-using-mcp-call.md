@@ -332,7 +332,3 @@ An error occurred while executing the tool.
 An internal server error occurred.
  **HTTP Status Code** : 500
 + MCP errors. For more information about these types of errors, [Error Handling](https://modelcontextprotocol.io/specification/2024-11-05/server/tools#error-handlinghttps://modelcontextprotocol.io/specification/2024-11-05/server/tools#error-handling) in the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

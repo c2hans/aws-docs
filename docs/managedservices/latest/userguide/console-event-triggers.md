@@ -26,7 +26,3 @@ The behavior of the notifications varies depending the RFC scheduling type:
 **Note**
 Email notifications are sent from this address: `no-reply@managedservices.amazonaws.com`.
 Special characters and URLs in your RFC title are redacted in the emails we send. This is a security measure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

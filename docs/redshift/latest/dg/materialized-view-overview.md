@@ -53,7 +53,3 @@ For information about system tables and views to monitor materialized views, see
 + [Automated materialized views](materialized-view-auto-mv.md)
 + [Using a user-defined function (UDF) in a materialized view](materialized-view-UDFs.md)
 + [Streaming ingestion to a materialized view](materialized-view-streaming-ingestion.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

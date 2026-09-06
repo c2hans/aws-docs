@@ -20,7 +20,4 @@ This section describes common use cases when you work with EMR Serverless applic
 + [Using Amazon Redshift integration for Apache Spark on Amazon EMR Serverless](emr-spark-redshift.md)
 + [Connecting to DynamoDB with Amazon EMR Serverless](using-ddb-connector.md)
 + [Using dbt-core with EMR Serverless](tutorials-dbt.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
++ [Using Trusted Identity Propagation with Amazon SageMaker Unified Studio](tutorial-tip-smus.md)

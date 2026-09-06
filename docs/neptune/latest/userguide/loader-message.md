@@ -26,7 +26,3 @@ The following table contains loader feed code and description.
 | LOAD\_FAILED\_BECAUSE\_DEPENDENCY\_NOT\_SATISFIED | The load request was not executed because its dependency check fails. |
 | LOAD\_IN\_QUEUE | The load request has been queued up and is waiting to be executed. |
 | LOAD\_FAILED\_INVALID\_REQUEST | The load failed because the request was invalid (for example, the specified source/bucket may not exist, or the file format is invalid). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

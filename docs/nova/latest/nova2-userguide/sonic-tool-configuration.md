@@ -230,7 +230,3 @@ Example ToolResult Event
 + Always respond to tool calls: Nova 2 Sonic expects a toolResult event after every toolUse event it sends. If your application fails to respond, even when an error occurs, the model enters a waiting state, causing unresponsive behavior or unexpected output. Always send a toolResult event in response, even if it contains an error message or signals that the session is ending.
 + Async execution: Take advantage of asynchronous tool calling to maintain conversation flow.
 + Tool naming: Use descriptive, action-oriented names (such as get\_weather, search\_database, send\_email).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

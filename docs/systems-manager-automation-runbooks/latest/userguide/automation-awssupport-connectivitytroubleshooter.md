@@ -106,7 +106,3 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 +  `aws:executeScript` - Gathers the routes associated with the subnet for the peered VPC.
 +  `aws:executeScript` - Confirms whether the peered VPC has a route to the peering connection.
 +  `aws:executeScript` - Confirms whether traffic is allowed from the source resource if the destination is not supported by the automation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

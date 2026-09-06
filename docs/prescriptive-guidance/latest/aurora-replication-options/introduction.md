@@ -29,7 +29,3 @@ Understanding the terminology of Aurora compute and storage is essential to unde
 Aurora compute refers to the database instance (set of processes) running on a host. This is the set of processes that you see in Task Manager on Windows or in `"ps -ef"` output on Linux. When you restart a database, you are essentially restarting these processes on a [host](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.html).
 
 Aurora storage refers to the underlying storage subsystem. Think of this as your on-premises storage arrays, but with added durability and scalability. For more information about Aurora storage, see the [AWS documentation](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.StorageReliability.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

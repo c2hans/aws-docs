@@ -95,7 +95,3 @@ The following diagram illustrates the communication between CCP and Connect Cust
   + Test WebRTC connectivity by using the [Connect Customer Endpoint Connectivity testing tool](check-connectivity-tool.md). This tool helps you ascertain whether the Connect Customer WebRTC Media endpoints are accessible from the agent stations.
   + Test and track changes to [networking environments](network-ts.md#investigate-ndc), and on-premise networking architectures such as firewall updates, edge routers and VPNs.
 + If you're using a stateless firewall, make sure you've added the ephemeral port range to the allow list as described in [Stateless firewalls](ccp-networking.md#stateless-firewalls).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

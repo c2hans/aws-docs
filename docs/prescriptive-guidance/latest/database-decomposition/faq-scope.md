@@ -47,7 +47,3 @@ Conduct regular validation sessions with both vocal and quiet stakeholders, and 
 <a name="do-these-recommendations-apply-for-monolithic-mainframe-databases"></a>
 
 The methodology described in this guide also applies to decomposing monolithic mainframe databases. The primary challenges with these databases are managing requirements from the various stakeholders. The technology recommendations in this guide might apply to monolithic mainframe databases. If the mainframe has a relational database, such as an online transaction processing (OLTP) database, then many of the recommendations apply. For online analytical processing (OLAP) databases, such as those used to generate business reports, then only some of the recommendations apply.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

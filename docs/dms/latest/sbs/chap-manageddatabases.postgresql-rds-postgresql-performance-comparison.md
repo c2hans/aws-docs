@@ -27,7 +27,3 @@ From the comparison, you can see that pglogical has the best performance among t
 Publisher and subscriber may be appropriate if you don’t need to migrate secondary database objects such as views, stored procedures, triggers, and so on. You can use publisher and subscriber for smaller migrations where ease of use considerations override the minor performance gains provided by pglogical.
 
 Using pg\_dump and pg\_restore is slower than both pglogical and publisher and subscriber. pg\_dump is the only option that migrates your secondary database objects. Additionally, data files created by pg\_dump may be orders of magnitude larger than the original table size.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

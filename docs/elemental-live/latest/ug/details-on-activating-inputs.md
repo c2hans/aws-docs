@@ -66,7 +66,3 @@ The rules apply to activating an input.
 + When you call Activate with Specified Time and then call Prepare, the activate time is not cleared: the input will be prepared (either immediately or later, depending on what you set up), then the input will be activated at the specified time.
 + If you call Activate with Specified Time on an input that has not been prepared, the input will first be prepared (at the specified time), then it will be activated. There will be a noticeable delay in activation. In other words, activating with a specified time does not automatically set up any prepare schedule.
 + If you both manually prepare an input with a prepare time and manually activate it with an activate time, make sure the prepare time is before the activate time; Elemental Live does not check.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

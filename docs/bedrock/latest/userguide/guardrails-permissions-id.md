@@ -301,7 +301,3 @@ If a user assumes an IAM role that has a specific guardrail configured using the
 + A user should not use the same role with additional permissions to invoke Bedrock APIs like `RetrieveAndGenerate`, `InvokeAgent`, and `InvokeInlineAgent` that make `InvokeModel` calls on behalf of the user. This can lead to access denied errors even when the guardrail is specified in the request because these APIs make multiple `InvokeModel` calls, and some of these calls don't include a guardrail.
 + A user can bypass applying a guardrail in their prompt by using [guardrail input tags](guardrails-tagging.md). However, the guardrail is always applied on the response.
 + Since Amazon Bedrock Guardrails support cross-account sharing only within an organization, your guardrail and the requesting IAM role must belong to accounts in the same AWS organization. See [Using resource based policies for guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-resource-based-policies.html) to learn more.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

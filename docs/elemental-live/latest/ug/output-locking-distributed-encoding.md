@@ -16,7 +16,3 @@ The downstream system receives all of the outputs. The downstream system has bee
 The following diagram illustrates a setup of several events that together produce the outputs for an ABR stack.
 
 ![Three events with HLS output groups connecting to ABR stack with high, medium, and low resolution videos.](http://docs.aws.amazon.com/elemental-live/latest/ug/images/opl-abr.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

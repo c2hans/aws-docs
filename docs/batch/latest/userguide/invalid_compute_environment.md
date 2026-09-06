@@ -65,14 +65,12 @@ When you have a compute environment in an `INVALID` state, update it to repair t
 
 1. In the navigation pane, choose **Compute environments**.
 
-1. On the **Compute environments** page, select the radio button next to the compute environment to edit, and then choose **Edit**.
+1. On the **Compute environments** page, select the radio button next to the compute environment to edit. You must select a compute environment before the options in the **Actions** menu become available.
+
+1. Choose **Actions** and then **Edit**.
 
 1. On the **Update compute environment** page, for **Service role**, choose the IAM role to use with your compute environment. The AWS Batch console only displays roles that have the correct trust relationship for compute environments.
 **Tip**
 For directions on how to create a service linked role, see [Using roles for AWS Batch](using-service-linked-roles-batch-general.md).
 
 1. Choose **Save** to update your compute environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

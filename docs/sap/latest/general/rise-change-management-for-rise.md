@@ -12,7 +12,3 @@ For SAP BTP, Cloud ALM integrates with [SAP Cloud Transport Management Service (
 For customers using SAP Solution Manager, [Change Request Management (ChaRM)](https://support.sap.com/en/alm/solution-manager/training-services/alm-consulting-services/change-management.html?anchorId=section) is an integrated functionality that provides comprehensive change management.
 
 SAP provides a [DevOps reference framework](https://architecture.learning.sap.com/docs/ref-arch/1c5706feb5) to automate large parts of your deployment pipeline, allowing you to quickly setup CI/CD pipelines as part of SAP Build.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

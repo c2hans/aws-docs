@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/zendesk-integrati
 # Zendesk Suite integration
 <a name="zendesk-integration"></a>
 
-Manage your Zendesk support tickets directly from Amazon Quick using natural language. With the Zendesk Suite action connector, you can create, update, search, and list support tickets without leaving Amazon Quick.
+Manage your Zendesk support tickets directly from Amazon Quick using natural language. With the Zendesk Suite connector, you can create, update, search, and list support tickets without leaving Amazon Quick.
 
 Zendesk Suite is available as a built-in connector in Amazon Quick. To set up this integration, complete the following two steps. First, prepare your Zendesk account with the required access. Then, create the connector in Amazon Quick and authenticate with your Zendesk credentials.
 
@@ -50,7 +50,7 @@ Record the client secret now. You cannot retrieve it after you leave this page.
 
 1. After you capture the secret, choose **Save** again to create the OAuth client.
 
-The Identifier and the secret serve as the Client ID and Client Secret when you configure the action connector in Amazon Quick with the Custom OAuth app authentication method.
+The Identifier and the secret serve as the Client ID and Client Secret when you configure the connector in Amazon Quick with the Custom OAuth app authentication method.
 
 For more information, see [Using OAuth authentication with your application](https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application) on the Zendesk website.
 
@@ -140,7 +140,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 <a name="zendesk-troubleshooting-auth"></a>
 + **Sign-in fails** – Verify that your Zendesk account is active and that you can sign in to the [Zendesk sign-in page](https://www.zendesk.com/login/) on the Zendesk website. If your organization uses single sign-on (SSO), confirm that your identity provider is configured correctly.
 + **Access denied** – Confirm that your Zendesk user has an admin role with permissions to access tickets and support data. For API key connections, verify that the API token is valid and the associated email address is correct.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

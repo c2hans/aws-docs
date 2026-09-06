@@ -207,7 +207,7 @@ The manifest is a text file in JSON format that lists the URL of each file that 
   ]
 }
 ```
-You can make the inclusion of a particular file mandatory. To do this, include a `mandatory` option at the file level in the manifest. When you query an external table with a mandatory file that is missing, the SELECT statement fails. Ensure that all files included in the definition of the external table are present. If they aren't all present, an error appears showing the first mandatory file that isn't found. The following example shows the JSON for a manifest with the `mandatory` option set to `true`.
+You can make the inclusion of a particular file mandatory. To do this, include a `mandatory` option at the file level in the manifest. When you query an external table with a mandatory file that is missing, the SELECT statement fails. Make sure that all files included in the definition of the external table are present. If they aren't all present, an error appears showing the first mandatory file that isn't found. The following example shows the JSON for a manifest with the `mandatory` option set to `true`.
 
 ```
 {
@@ -325,7 +325,3 @@ A statement that inserts one or more rows into the external table by defining an
 <a name="r_CREATE_EXTERNAL_TABLE_examples_link"></a>
 
 A collection of examples is available at [Examples](r_CREATE_EXTERNAL_TABLE_examples.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

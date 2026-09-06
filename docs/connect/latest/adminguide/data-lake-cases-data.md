@@ -159,7 +159,3 @@ WHERE rn = 1;
 |  sla\_target\_field\_values  |  array(string)  |  Yes  |  The target field values for the sla\_target\_field\_id in order for the SLA to be completed.  |
 |  custom\_related\_item\_fields  |  array(struct)  |  Yes  |  An array of objects containing custom field data associated with the related item. Each object includes the field id, field\_name, and a type-specific value field (string\_value, double\_value, boolean\_value, or timestamp\_value).  |
 |  data\_lake\_last\_processed\_timestamp  |  Timestamp  |  Yes  |  Timestamp, which shows the last time the data lake processed the record. This can include transformation and backfill. This field cannot reliably be used to determine data freshness.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

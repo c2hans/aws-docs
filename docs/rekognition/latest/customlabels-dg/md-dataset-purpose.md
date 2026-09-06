@@ -82,7 +82,3 @@ You can combine image-level labels and bounding box labeled images in a single d
 | [Multi-label classification](#md-dataset-image-classification-multi-label) | Multiple image-level labels per image | Multiple image-level labels per image |
 | [Find brand locations](#md-dataset-purpose-brands) | image level-labels (you can also use Labeled bounding boxes) | Labeled bounding boxes |
 | [Find object locations](#md-dataset-purpose-localization) | Labeled bounding boxes | Labeled bounding boxes |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

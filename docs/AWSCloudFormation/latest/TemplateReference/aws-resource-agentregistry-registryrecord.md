@@ -89,7 +89,7 @@ The name of the registry record. Names are unique within a registry.
 The type of the registry record, which determines the descriptor format.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `MCP | AGENT | SKILL | CUSTOM`
+*Allowed values*: `MCP | AGENT | SKILL | CUSTOM | GATEWAY`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `RecordVersion`  <a name="cfn-agentregistry-registryrecord-recordversion"></a>
@@ -103,11 +103,11 @@ The version of the registry record.
 
 `RegistryId`  <a name="cfn-agentregistry-registryrecord-registryid"></a>
 The identifier of the registry in which to create the record. You can specify either the registry ID or the registry Amazon Resource Name (ARN).
-*Required*: Yes
+*Required*: No
 *Type*: String
-*Pattern*: `^[a-zA-Z0-9]{12,16}$`
-*Minimum*: `12`
-*Maximum*: `16`
+*Pattern*: `^(arn:aws(-[^:]+)?:agent-registry:[a-z0-9-]+:[0-9]{12}:registry/)?[a-zA-Z0-9]{12,16}$`
+*Minimum*: `1`
+*Maximum*: `2048`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-agentregistry-registryrecord-tags"></a>
@@ -142,6 +142,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the registry record was created.
 
+`CreatedBy`  <a name="CreatedBy-fn::getatt"></a>
+The ID of the AWS account that created the registry record.
+
 `RecordArn`  <a name="RecordArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the registry record.
 
@@ -156,7 +159,3 @@ The current lifecycle status of the registry record.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The timestamp when the registry record was last updated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

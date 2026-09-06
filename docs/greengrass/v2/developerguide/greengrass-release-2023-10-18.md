@@ -28,7 +28,3 @@ The following table lists components provided by AWS that include new and update
 | Local deubg console | Version 2.4.0 of the [Lambda manager](local-debug-console-component.md) component is available.<a name="changelog-local-debug-console-2.4.0"></a>**New features**<br />   Adds stream manager debugging console.    |
 | Log manager | Version 2.3.6 of the [log manager](log-manager-component.md) component is available.<a name="changelog-log-manager-2.3.6"></a>**Bug fixes and improvements**<br />   Adjusts log levels for certain errors.    |
 | Shadow manager | Version 2.3.4 of the [Shadow manager](shadow-manager-component.md) component is available.<a name="changelog-shadow-manager-2.3.4"></a>**Bug fixes and improvements**<br />   Adds support for null and empty shadow state documents.    |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

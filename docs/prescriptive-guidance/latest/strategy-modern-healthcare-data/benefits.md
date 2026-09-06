@@ -19,7 +19,3 @@ Healthcare organizations are using data and data-oriented services to accelerate
 As described in the following sections, Amazon Web Services (AWS) and the AWS Partner Network provide Health Insurance Portability and Accountability Act (HIPAA)-eligible, secure, reliable, performant, elastic services for every stage of a healthcare data pipeline. The guidance includes best practices to help your healthcare organization meet your system goals and the goals of your organization's patients.
 
 This strategy document provides examples of how AWS services can support builders in the Healthcare and Life Sciences Industry. These examples are not exhaustive, and they do not include AWS Partner solutions that can help you build and manage solutions more quickly and cost-effectively. For a list of Healthcare and Life Sciences solutions from the AWS Partner Network, visit the [AWS Marketplace](https://aws.amazon.com/marketplace/search/results?searchTerms=healthcare+and+life+sciences).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

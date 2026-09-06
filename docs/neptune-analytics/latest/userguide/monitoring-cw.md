@@ -94,7 +94,3 @@ aws cloudwatch get-metric-statistics \                                          
 | NumVertexProperties | Number of properties across all vertices in the graph. Note that Neptune Analytics models LPG labels as vertex properties, so this includes the LPG labels. |
 | NumVectors | Number of vectors present in the Vector Search Index. |
 | GraphStorageUsagePercent | Percentage storage quota usage of the graph at the current configured m-NCU. This metric can be used to resize your graph as you add or remove data. If this metric reaches close to 100 and the graph expects addition of more data, the queries will run out of memory. It is recommended to scale up your graph in such cases. More information on optimally resizing your graph is available in [ this blog entry ](https://aws.amazon.com/blogs/database/introducing-smaller-capacity-units-for-amazon-neptune-analytics-up-to-75-cheaper-to-get-started-with-graph-analytics-workloads/). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

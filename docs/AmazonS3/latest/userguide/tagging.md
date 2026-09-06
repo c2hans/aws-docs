@@ -204,7 +204,3 @@ For more information on how to manage tags for Amazon S3 resources, see the foll
 + [Using tags with S3 general purpose buckets](buckets-tagging.md).
 + [Using tags with S3 vector buckets](s3-vectors-tags.md)
 + [Using tags with S3 vector indexes](vector-index-tagging.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

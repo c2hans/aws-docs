@@ -180,7 +180,3 @@ With Amazon Redshift, you can share live data products with AWS Data Exchange as
   Use the Amazon Redshift console to create datasets. For more information, see [Creating data sets on AWS Data Exchange](manage-adx-datashare-console.md#create-dataset-console).
 
   For more information, see [Providing data products on AWS Data Exchange](https://docs.aws.amazon.com/data-exchange/latest/userguide/providing-data-sets.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

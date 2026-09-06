@@ -14,7 +14,3 @@ In this guide, we explained a phased IIoT digital transformation journey. In the
 When required for your success, AWS Professional Services also works jointly with our broad AWS Partner Network. For more information, see [AWS IoT Competency Partners](https://aws.amazon.com/iot/partner-solutions) and [AWS Marketplace](https://aws.amazon.com/marketplace).
 
 For more information about how AWS can help you achieve your operational objectives, see [Resources](resources.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

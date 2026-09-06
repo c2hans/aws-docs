@@ -43,7 +43,3 @@ You can only take a sensor meaurement using the Amazon Monitron mobile app. Both
 ![Dialog box showing successful measurement initiation and instruction to remove phone.](http://docs.aws.amazon.com/Monitron/latest/user-guide/images/measure-success.png)
 
    The new measurement is added to the data that the sensor has already collected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

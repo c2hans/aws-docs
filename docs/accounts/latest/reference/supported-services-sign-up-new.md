@@ -102,6 +102,9 @@ The following AWS services are included in the Free Tier of Sign up for AWS (new
 + AWS Backup
   + Cross-Region backup copies are not supported.
 + AWS Batch
++ AWS Billing and Cost Management
+
+  Use AWS Settings to set up your billing, create spend limits to control your costs, and retrieve and pay invoices. You use Billing and Cost Management to create budgets, analyze, and optimize your costs. For more information, see [Using Billing and Cost Management console with our new AWS experience](https://docs.aws.amazon.com/cost-management/latest/userguide/bcm-lite-cost-management.html).
 + AWS Budgets
 + AWS Certificate Manager
   + [AWS Certificate Manager exportable public certificates](https://docs.aws.amazon.com/acm/latest/userguide/acm-exportable-certificates.html) are not supported.
@@ -129,6 +132,7 @@ The following AWS services are included in the Free Tier of Sign up for AWS (new
   + Cross-Region transfers are not supported.
 + AWS Directory Service
 + AWS Elastic Beanstalk
++ AWS End User Messaging Social
 + AWS Entity Resolution
   + Cross-Region namespaces are not supported.
 + AWS Glue
@@ -181,6 +185,9 @@ The following AWS services are included in the Free Tier of Sign up for AWS (new
 + AWS CodeBuild
 + Elastic Load Balancing
 + AWS SQL Workbench
++ Amazon OpenSearch Service Serverless
+  + Cross-Region data access is not supported.
++ Amazon Timestream
 
 ## AWS services included in the Paid Plan of our new AWS experience
 <a name="supported-services-paid-plan"></a>
@@ -206,15 +213,12 @@ The following services are available for Sign up for AWS (new) if you have a Pai
 + Amazon MemoryDB
   + Multi-Region replication is not supported.
 + Amazon Neptune
-+ Amazon OpenSearch Service Serverless
-  + Cross-Region data access is not supported.
 + Amazon Personalize
   + Not supported in Europe (Stockholm).
 + Amazon Redshift
 + S3 Glacier Deep Archive
 + Amazon Textract
   + Not supported in Europe (Stockholm).
-+ Amazon Timestream
 + Amazon Transcribe
 + Amazon Translate
 + AWS AppFabric
@@ -222,7 +226,6 @@ The following services are available for Sign up for AWS (new) if you have a Pai
   + Not supported in Europe (Stockholm).
 + AWS Data Exchange
 + AWS End User Messaging SMS
-+ AWS End User Messaging Social
 + AWS Fault Injection Service
 + AWS Firewall Manager
 + AWS Network Firewall
@@ -373,7 +376,3 @@ The following AWS services are not supported for our new AWS experience, unless 
 + Amazon Elastic VMware Service
 + Oracle Database@AWS
 + Red Hat OpenShift Service on AWS
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

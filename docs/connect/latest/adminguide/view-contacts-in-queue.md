@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/view-contacts-
 
    The **In queue** value shows the total number of customers who are waiting for an agent, including those who have requested a callback.
 ![The In queue column in the Queues table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-waiting-in-queue.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

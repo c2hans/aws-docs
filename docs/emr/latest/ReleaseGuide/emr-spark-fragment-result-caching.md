@@ -85,7 +85,3 @@ The following are additional considerations when using Result Fragment Caching:
 + Multiple clusters using the same Amazon EMR release can share the same cache location. To ensure result correctness, Result Fragment Caching will not use cache results written by different releases of Amazon EMR .
 + Result Fragment Caching will be disabled automatically for Spark Streaming use cases or when RecordServer, Apache Ranger, or AWS Lake Formation is used.
 + The result fragment cache read/writes use EMRFS / S3A and Amazon S3 buckets. CSE (only with EMRFS)/ SSE S3/ SSE KMS encryption are supported. For context, S3A provides a Hadoop implementation to enable a cluster to read and write data to and from Amazon S3. Note that support for S3A is available with EMR-7.4.0 and higher.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

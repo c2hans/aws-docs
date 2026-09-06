@@ -16,7 +16,3 @@ To create a future dated agreement, use the following procedure. You can view yo
 1. In the offer details pane, verify that you chose the correct private offer and that the agreement start date is correct. Future dated offers are marked as **Future dated** on the **Offer** menu.
 **Note**
 For SaaS products, on the agreement start date, you must make sure to complete setting up your account with the ISV. You can't complete this step before the agreement start date.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

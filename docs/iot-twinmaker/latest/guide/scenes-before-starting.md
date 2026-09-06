@@ -35,7 +35,3 @@ Use these resources to learn more about optimization techniques that you can use
 + [How to convert and compress OBJ models to GLTF for use with AWS IoT TwinMaker](https://aws.amazon.com/blogs/iot/how-to-convert-and-compress-obj-models-to-glb-gltf-for-use-with-aws-iot-twinmaker/)
 + [Optimize your 3D models for web content](https://medium.com/@michael.andrew/6-things-you-havent-optimised-in-your-webvr-content-272d74d541f0)
 + [Optimizing scenes for better WebGL performance](https://www.soft8soft.com/docs/manual/en/introduction/Optimizing-WebGL-performance.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

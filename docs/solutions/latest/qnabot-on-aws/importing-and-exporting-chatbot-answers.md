@@ -71,7 +71,3 @@ Follow these steps to export all the items that are in the QnABot on AWS categor
 1. From the content designer, enter `AWS-QnABot` in the filter field, and inspect the newly imported item, **AWS-QnABot.003**.
 
 For a step-by-step procedure on importing Excel (`0xlsx`) workbooks, see [Excel workbooks import](https://github.com/aws-solutions/qnabot-on-aws/tree/main/source/docs/excel_import) in the GitHub repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

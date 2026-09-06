@@ -61,7 +61,7 @@ MCP servers are registered at the AWS account level and shared among all Agent S
    + **Endpoint URL** – Enter the full HTTPS URL of your MCP server endpoint
    + **Description** (optional) – Add a description to help identify the server's purpose
    + **Enable Dynamic Client Registration** – Select this checkbox if you want to allow AWS DevOps Agent to automatically register with your MCP server's authorization server
-   + **Connect to endpoint using private connection** – Select this checkbox if you want AWS DevOps Agent to make requests to your MCP server privately. You may select an existing private connection or create a new one. If you use OAuth authentication, the private connection applies to both the MCP server endpoint and the token exchange endpoint. Ensure the private connection is configured with a host address that can route traffic to both endpoints. For more information, see [Connecting to privately hosted tools](configuring-integrations-and-knowledge-connecting-to-privately-hosted-tools.md).
+   + **Connect to endpoint using private connection** – Select this checkbox if you want AWS DevOps Agent to make requests to your MCP server privately. You may select an existing private connection or create a new one. If you use OAuth authentication, the private connection applies to both the MCP server endpoint and the token exchange endpoint. Ensure the private connection is configured with a host address that can route traffic to both endpoints. The connection's host address and this endpoint URL are two different values, and the connection's port ranges must include the endpoint URL's port. For more information about host addresses and endpoint URLs, see [Host address and endpoint URL](configuring-integrations-and-knowledge-connecting-to-privately-hosted-tools.md) and [Connecting to privately hosted tools](configuring-integrations-and-knowledge-connecting-to-privately-hosted-tools.md).
 
 1. Choose **Next**
 
@@ -302,7 +302,3 @@ AWS DevOps Agent validates a role-less SigV4 MCP server when you associate it, u
 + Security in AWS DevOps Agent
 + Setting up an Agent Space
 + Prompt Injection Protection
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

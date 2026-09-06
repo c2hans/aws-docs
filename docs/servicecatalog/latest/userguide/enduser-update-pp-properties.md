@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-
 1. Enter the ARN of the user or role you want to set as the new owner. An ARN begins with `arn:` and includes other information, separated by colons or slashes. For example: `arn:aws:iam::123456789012:user/NewOwner`.
 
 1. Choose **Change owner**. You see a success message when the owner has been updated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

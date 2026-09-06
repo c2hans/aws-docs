@@ -90,7 +90,3 @@ Here are a few steps you should take to get started after your AlmaLinux instanc
   Under the **Snapshot** tab of your instance’s management page, enter a name for the snapshot, then choose **Create snapshot**. For more information, see [Back up Linux/Unix Lightsail instances with snapshots](lightsail-how-to-create-a-snapshot-of-your-instance.md).
 
 To learn how to migrate from CentOS to AlmaLinux, continue to the next topic: [Migrate data from CentOS to AlmaLinux on Lightsail](amazon-lightsail-migrate-centos-to-almalinux.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

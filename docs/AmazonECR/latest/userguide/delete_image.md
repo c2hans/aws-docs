@@ -58,7 +58,3 @@ As an alternative to deleting images manually, you can create repository lifecyc
         --repository-name {{my-repo}} \
         --image-ids imageDigest={{sha256:4f70ef7a4d29e8c0c302b13e25962d8f7a0bd304EXAMPLE}} imageDigest={{sha256:f5t0e245ssffc302b13e25962d8f7a0bd304EXAMPLE}}
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

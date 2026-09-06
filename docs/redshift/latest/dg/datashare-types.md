@@ -18,7 +18,3 @@ Datashare objects are objects from specific databases on a cluster that producer
 Data sharing continues to work when clusters are resized or when the producer cluster is paused.
 
 There are different types of datashares: standard datashares, AWS Data Exchange datashares, and AWS Lake Formation-managed datashares. The following pages provide an overview of each of these.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

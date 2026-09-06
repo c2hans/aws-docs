@@ -18,7 +18,3 @@ The workflow for continuous model improvement is as follows:
 1. The Model Feedback solution uses the current model. It starts human verification jobs to annotate a new dataset.
 
 1. Based on human feedback, the Model Feedback solution generates a manifest file that you use to create a new model.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

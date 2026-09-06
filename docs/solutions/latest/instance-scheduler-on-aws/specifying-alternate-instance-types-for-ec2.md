@@ -53,7 +53,3 @@ IS-PreferredInstanceTypes: t3.small,t3.medium,t3.large,m5.large
 ```
 
 If the `t3.small` instance fails to start due to capacity issues, Instance Scheduler will attempt to resize and start the instance as `t3.medium`, then `t3.large`, then `m5.large` until successful or all options are exhausted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Instance Scheduler on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

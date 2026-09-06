@@ -68,7 +68,3 @@ These are the same output parameters as the ones that are returned by the bottom
     + `value` – The raw value of the calculation of the absolute difference.
     + `formattedValue` – The absolute difference formatted by the settings in the metric field's format preferences.
     + `formattedAbsoluteValue` – The absolute value of the difference formatted by the metric field.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

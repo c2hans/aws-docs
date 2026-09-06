@@ -199,7 +199,3 @@ For more information about AWS CLI, using aliases, and deleting AWS Service Cata
 + [AWS CLI alias repository](https://github.com/awslabs/awscli-aliases) git repository.
 + [Deleting AWS Service Catalog products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/productmgmt-delete.html).
 + [AWS re:Invent 2016: The Effective AWS CLI User](https://youtu.be/Xc1dHtWa9-Q?t=1593) on *YouTube*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

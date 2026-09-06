@@ -32,7 +32,3 @@ The Connector can now synchronize Config data from multiple accounts and Regions
 **Note**
 The Config Aggregator view in AWS displays only current config item resources in AWS Config. Thus, terminated resources are not available in the Config Aggregator view.
 To minimize stale config item records from rendering in the ServiceNow CMDB from the AWS Config Aggregator, we recommend you remove Config rules associated to terminated resources. For more information, see [ Evaluating Resources with AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

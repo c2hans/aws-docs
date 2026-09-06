@@ -104,7 +104,3 @@ To learn more about AWS Regions, see [Specify which AWS Regions your account can
 | Europe (Paris) | eu-west-3 | social-messaging.eu-west-3.amazonaws.com<br />social-messaging.eu-west-3.api.aws | Version 20 and later |
 | Israel (Tel Aviv) | il-central-1 | social-messaging.il-central-1.amazonaws.com<br />social-messaging.il-central-1.api.aws | Version 20 and later |
 | US West (N. California) | us-west-1 | social-messaging.us-west-1.amazonaws.com<br />social-messaging.us-west-1.api.aws<br />social-messaging-fips.us-west-1.amazonaws.com<br />social-messaging-fips.us-west-1.api.aws | Version 20 and later |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

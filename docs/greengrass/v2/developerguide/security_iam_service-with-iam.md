@@ -137,7 +137,3 @@ This feature allows a service to assume a [service role](https://docs.aws.amazon
 AWS IoT Greengrass core devices use a service role to allow Greengrass components and Lambda functions to access some of your AWS resources on your behalf. For more information, see [Authorize core devices to interact with AWS services](device-service-role.md).
 
 AWS IoT Greengrass uses a service role to access some of your AWS resources on your behalf. For more information, see [Greengrass service role](greengrass-service-role.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

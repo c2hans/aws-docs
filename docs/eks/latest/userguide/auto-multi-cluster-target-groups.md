@@ -44,7 +44,3 @@ The upstream [MultiCluster Target Groups](https://kubernetes-sigs.github.io/aws-
 <a name="_example"></a>
 
 For a step-by-step walkthrough that shares a single target group between two clusters — one cluster owning the load balancer through an Ingress, and the other joining through a `TargetGroupBinding` — see [Share a target group across two clusters](auto-multi-cluster-target-groups-example.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

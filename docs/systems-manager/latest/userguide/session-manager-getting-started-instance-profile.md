@@ -29,7 +29,3 @@ However, in some cases, you might need to modify the permissions attached to you
 **Topics**
 + [Add Session Manager permissions to an existing IAM role](getting-started-add-permissions-to-existing-profile.md)
 + [Create a custom IAM role for Session Manager](getting-started-create-iam-instance-profile.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

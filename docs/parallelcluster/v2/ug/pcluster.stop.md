@@ -40,7 +40,3 @@ Please run 'pcluster status' if you need to check compute fleet status
 ```
 
 Sets the Auto Scaling group parameters to min/max/desired = 0/0/0, and terminates the compute fleet. The head remains running. To terminate all EC2 resources and avoid EC2 charges, consider deleting the cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -158,7 +158,3 @@ If you encounter any issues with WebAuthn or Enhanced WebAuthn:
 + For Enhanced WebAuthn, confirm that it’s enabled in the permissions file.
 + Try restarting your browser or your DCV session.
 + If problems persist, contact AWS Support.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

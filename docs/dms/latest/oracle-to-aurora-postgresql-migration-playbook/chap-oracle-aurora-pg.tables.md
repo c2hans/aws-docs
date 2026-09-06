@@ -27,7 +27,3 @@ This section provides reference pages for Oracle and PostgreSQL tables and index
 + [Oracle index-organized table and PostgreSQL cluster table](chap-oracle-aurora-pg.tables.iot.md)
 + [Oracle local and global partitioned indexes and PostgreSQL partitioned indexes](chap-oracle-aurora-pg.tables.partitioned.md)
 + [Oracle automatic indexing and self-managed PostgreSQL](chap-oracle-aurora-pg.tables.autoindex.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

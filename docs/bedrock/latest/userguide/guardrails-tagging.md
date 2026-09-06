@@ -57,7 +57,3 @@ You can use the same tag structure multiple times in the input text to mark diff
 **Untagged content**
 
 Content outside of input tags isn't processed by guardrails. This allows you to include instructions, sample conversations, knowledge bases, or other content that you deem safe and don't want to be processed by guardrails. If there are no tags in the input prompt, the complete prompt will be processed by guardrails. The only exception is [Detect prompt attacks with Amazon Bedrock Guardrails](guardrails-prompt-attack.md) filters, which require input tags to be present.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

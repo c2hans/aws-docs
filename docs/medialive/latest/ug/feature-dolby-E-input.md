@@ -75,7 +75,3 @@ The information in this section assumes that you are familiar with the general s
 You can set up the source in both ways—to extract programs and to pass through the entire source.
 
 In the same input attachment, set up one selector for passthrough, and set up several selectors to extract programs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

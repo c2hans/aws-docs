@@ -27,7 +27,3 @@ The [module manifest schema](module-manifest-schema.md) must meet the following 
 + Contains details about what’s new in the revision.
 
 When registering a new external module, the MCS admin user only requires the URL of the module manifest file. Optionally, the user can also specify a revision number to access a specific revision of the module. If the revision is not supplied, MCS assumes that the user needs the latest compatible revision of the module.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -108,7 +108,3 @@ Below are the available settings to configure Guardrail in the Content Designer�
 +  **PREPROCESS\_GUARDRAIL\_VERSION:** Enter the version (e.g. 1 or DRAFT) of the Bedrock Guardrail specified in `PREPROCESS_GUARDRAIL_IDENTIFIER`.
 +  **POSTPROCESS\_GUARDRAIL\_IDENTIFIER:** Enter a pre-configured Amazon Bedrock Guardrail Identifier (e.g. 4ojm24q0yada) that you want to be applied to the final answer after processing of the user’s utterance has completed in the post-processing (POSTPROCESS) step of fulfillment. If you don’t provide a value, no guardrail is applied in the postprocessing step. If you provide a identifier, you must also provide a `POSTPROCESS_GUARDRAIL_VERSION`.
 +  **POSTPROCESS\_GUARDRAIL\_VERSION:** Enter the version (e.g. 1 or DRAFT) of the Bedrock Guardrail specified in `POSTPROCESS_GUARDRAIL_IDENTIFIER`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

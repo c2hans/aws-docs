@@ -17,7 +17,3 @@ Consider the following behaviors when you work with Amazon Aurora DSQL. For more
 + To ensure queries recognize newly created schemas and tables, refresh your connection after creating or dropping database objects. This includes scenarios where you see `Schema Already Exists` errors after dropping a schema, or when querying objects created in another connection. Disconnect and reconnect, or run `SET search_path` again to refresh the catalog cache.
 + For complex queries, use `EXPLAIN ANALYZE VERBOSE` to identify high-latency operations and optimize query plans. Covering indexes can significantly reduce DPU costs by enabling index-only scans instead of full table scans. For more information, see [Working with Aurora DSQL EXPLAIN plans](working-with-explain-plans.md).
 + Connection limits are managed at the cluster level. See [Cluster quotas](CHAP_quotas.md#SECTION_cluster-quotas) to request quota updates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

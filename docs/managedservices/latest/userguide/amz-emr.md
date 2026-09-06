@@ -73,7 +73,3 @@ If kerberos authentication is required for the Amazon EMR cluster:
   **SALZ**: Submit a Management \| Other \| Other \| Update (ct-0xdawir96cy7k) RFC to generate a new Amazon EMR AMI to use the specific realm for domain name suffix.
 
 To deploy Amazon EMR studio, the role `customer_emr_cluster_service_role` has a prerequisite for an Amazon Simple Storage Service bucket. To create the bucket, use the automated CT `ct-1a68ck03fn98r` (Deployment \| Advanced stack components \| S3 storage \| Create). When you use this automated CT to create an Amazon S3 bucket for Amazon EMR, the bucket name must begin with the prefix `customer-emr-*`. And, you must create the bucket in the same AWS Region as the Amazon EMR cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

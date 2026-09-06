@@ -92,7 +92,3 @@ As a management account, you can perform the following actions on a single manag
 <a name="global-view-source-servers-import-export"></a>
 
 Use this feature to import and export your source servers, applications, and waves from a single or multiple accounts using the CSV template file.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

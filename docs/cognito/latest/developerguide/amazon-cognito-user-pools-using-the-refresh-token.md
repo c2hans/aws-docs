@@ -155,7 +155,3 @@ With refresh tokens, you can persist users' sessions in your app for a long time
 You can, however, generate an [AdminUserGlobalSignOut](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminUserGlobalSignOut.html) API request that you authorize with your AWS credentials to sign out any user from all of their devices. The administrator application must call this API operation with AWS developer credentials and pass the user pool ID and the user's username as parameters. The `AdminUserGlobalSignOut` API can sign out any user in the user pool.
 
 For more information about requests that you can authorize with either AWS credentials or a user's access token, see [List of API operations grouped by authorization model](authentication-flows-public-server-side.md#user-pool-apis-auth-unauth).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

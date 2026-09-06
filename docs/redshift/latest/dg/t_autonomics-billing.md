@@ -35,7 +35,3 @@ On serverless workgroups, billing for autonomics operations adheres to the follo
 You are only billed once for overlapping activity from user or autonomics workload. For example, suppose Amazon Redshift initiates an autonomic operation while no user queries are running, and a user query begins during that operation. In that case, billing is applied once for the interval in which the workgroup is active.
 
 For more information, see [ Billing for Amazon Redshift Serverless ](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-billing.html) in the *Amazon Redshift Management Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

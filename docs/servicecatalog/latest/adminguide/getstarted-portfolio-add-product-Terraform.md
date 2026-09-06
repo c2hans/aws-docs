@@ -18,7 +18,3 @@ After creating a portfolio, you can add the HashiCorp Terraform product you crea
 1. Choose **Add product to portfolio**.
 
 After successfully adding the product to the portfolio, AWS Service Catalog displays a confirmation banner on the Product list page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

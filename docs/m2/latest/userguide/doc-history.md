@@ -40,7 +40,3 @@ The following table describes the documentation releases for AWS Mainframe Moder
 | [Single sign-on to AWS Transform for mainframe AWS Transform for mainframe refactor.](#doc-history) | AWS Transform for mainframe AWS Transform for mainframe refactor available from the AWS Management Console through single sign-on. | March 31, 2023 |
 | [GA release](#doc-history) | GA release of the AWS Mainframe Modernization User Guide. | June 8, 2022 |
 | [Initial release](#doc-history) | Initial release (public preview) of the AWS Mainframe Modernization User Guide. | November 30, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

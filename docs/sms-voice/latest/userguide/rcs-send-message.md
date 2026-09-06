@@ -265,7 +265,3 @@ Delivery receipts include channel attribution that indicates whether the message
 + When a direct send (AWS RCS Agent ARN) fails, the delivery receipt indicates RCS as the attempted channel with a failure status. No SMS fallback receipt is generated.
 
 For details on RCS CloudWatch metrics and monitoring delivery patterns, see [RCS CloudWatch metrics and monitoring](rcs-monitoring.md). For information about how delivery channel affects billing, see [RCS billing and pricing model](rcs-billing.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

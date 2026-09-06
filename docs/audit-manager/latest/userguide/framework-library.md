@@ -42,7 +42,3 @@ To create and manage frameworks in Audit Manager, follow the procedures that are
   + [Responding to share requests in AWS Audit Manager](responding-to-shared-framework-requests.md)
   + [Deleting share requests in AWS Audit Manager](deleting-shared-framework-requests.md)
 + [Supported frameworks in AWS Audit Manager](framework-overviews.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

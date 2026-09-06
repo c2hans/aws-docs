@@ -652,16 +652,16 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers | Yes | Businesses must provide their name, address, a copy of the business registration, and a proof of address. Valid proofs of address include: third-party issued bank statements, utility bills (all issued in the previous 6 months); government documents (issued in the previous year).<br />A local address is required.  |
+| Local telephone numbers: \+852 2, \+852 3 | Yes | Businesses must provide their name, address, a copy of the business registration, and a proof of address. Valid proofs of address include: third-party issued bank statements, utility bills (all issued in the previous 6 months); government documents (issued in the previous year).<br />A local address is required.  |
 | National prefixes: \+852 58 | Yes | Businesses must provide their name, address, a copy of the business registration, and a proof of address. Valid proofs of address include: third-party issued bank statements, utility bills (all issued in the previous 6 months); government documents (issued in the previous year). |
 | Toll-free prefixes: \+852 800 | Yes | Businesses must provide proof of address.Valid proofs of address include: third-party issued bank statements, utility bills (all issued in the previous 6 months).<br />A global address is acceptable. |
 
 ### Number portability
 <a name="hk-porting"></a>
 
-| Portability windows | Required Documents |
-| --- | --- |
-| N/A | 1.  Last invoice. <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it. <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers.   |
+| Type of Number | Portability windows | Required Documents |
+| --- | --- | --- |
+| Local telephone numbers: \+852 2, \+852 3 | N/A | 1.  Last invoice. <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it. <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers.   |
 
 ## Hungary (HU)
 <a name="hungary-requirements"></a>
@@ -710,8 +710,6 @@ Porting is not supported.
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone number prefixes: \+62 21, \+62 31, \+62 61 | Yes | Your business address, a contact name, and phone number. It must be a local address corresponding to the area code of the telephone number(s). You must also provide a description of how you plan to use the numbers. |
-| Mobile prefixes: \+62 855 | Yes | Proof of business address, a copy of the ID or passport of an authorized representative, and the business registration. You must also provide a description of how you plan to use the numbers. |
-| Toll-free prefixes: \+62 800 | No |   |
 
 ### Number portability
 <a name="id-porting"></a>
@@ -860,8 +858,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers: \+352 27 | Yes | Your residence or business address. It must be a local address corresponding to the area code of the telephone number(s). <br />A contact phone number. |
-| National prefixes: | Yes | An address in Luxembourg is required. Businesses must provide a copy of the business registration.<br />A contact phone number. |
+| Local and national telephone numbers: \+352 2 | Yes | An address in Luxembourg is required. A copy of the business registration.<br />A contact phone number. |
 | Toll-free prefixes: \+352 800 | Yes | Your business name and address. A global address is acceptable.<br />A contact phone number. |
 
 ### Number portability
@@ -1339,16 +1336,15 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | National prefixes: \+65 31 and \+65 6 | Yes | Address required in country.<br />Documents required for company: Company registration documents |
-| Toll-free prefixes: \+65 1800 | Yes | Your business address.<br />A global address is acceptable. |
+| Toll-free prefixes: \+65 1800 | Yes | Your business address.<br />A global address is acceptable.<br />Documents required for company: Company registration documents |
 
 ### Number portability
 <a name="sg-porting"></a>
 
-| Portability windows | Required Documents |
-| --- | --- |
-| Monday-Friday 9 AM to 5 PM SGT | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  List of Port in Numbers   |
-
-Porting-out DIDs is only possible for contiguous number blocks of 10 numbers (...0 to ...9) due to market practice.
+| Type of number | Portability windows | Required Documents |
+| --- | --- | --- |
+| National prefixes: \+65 6 | Monday-Friday 9 AM to 5 PM SGT | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  List of Port in Numbers   |
+| Toll-free prefixes: \+65 1800 | Monday-Friday 9 AM to 5 PM SGT | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Company registration documents <br />4.  List of Port in Numbers   |
 
 ## Sint Eustatius (BQ)
 <a name="sinteustatius-requirements"></a>
@@ -1523,7 +1519,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers  | Yes | Your business address in the country. A copy of the ID/business registration and a proof of address. |
+| Local telephone numbers  | Yes | Your business address in the country. A copy of your business registration and a proof of address. |
 | Toll-free prefixes: \+41 800 | Yes | Your business address and a copy of business registration.<br />A global address is acceptable.  |
 
 ### Number portability
@@ -1724,7 +1720,3 @@ Porting is not supported.
 | Portability windows | Required Documents |
 | --- | --- |
 | Preset UIFN times only | Service Provider Change Authorization and Designation of Agency provided by Amazon  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

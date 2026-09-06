@@ -157,7 +157,3 @@ Follow these best practices when using custom validation:
 + *Use minimal customizations* - Limit custom validation rules to only what's necessary to support your trading partner requirements.
 + *Monitor validation results* - Regularly check EventBridge events and CloudWatch logs to ensure validation is working correctly.
 + *Coordinate with trading partners* - Ensure your trading partners are aware of any format deviations you're implementing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS B2B Data Interchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query b2bi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,7 +39,7 @@ Players want to compete or collaborate with others in fair, balanced ways. Amazo
 
 Players expect consistent gameplay without interruptions or disconnections. Amazon GameLift Servers provides comprehensive session management and protection:
 + **Players enjoy high-quality performance on AWS Cloud** – With hosting managed by Amazon GameLift Servers, players get fast, reliable game servers that run on AWS computing infrastructure.
-+ **Validate players when they connect** – When you enable player sessions for your game, you can have Amazon GameLift Serversreserve player slots in game sessions and validate players on connection.
++ **Validate players when they connect** – When you enable player sessions for your game, you can have Amazon GameLift Servers reserve player slots in game sessions and validate players on connection.
 + **Players can reconnect and maintain game progress** – Amazon GameLift Servers supports reconnection for both server-side and client-side interruptions.
 + **Players' games are protected from termination** – Optional game session protection feature prevents active sessions from being terminated during scaling events or other interruptions.
 
@@ -47,7 +47,7 @@ Players expect consistent gameplay without interruptions or disconnections. Amaz
 <a name="gamelift-player-experience-monitoring"></a>
 
 Players expect games to work consistently and get better over time. Amazon GameLift Servers provides comprehensive monitoring and analytics that help optimize the player experience:
-+ **Players experience fewer disruptions** – Real-time monitoring of fleet performance, game sessions, and player activity can identify issues before they significantly impact gameplay Customize graceful game session shutdowns and migrations.
++ **Players experience fewer disruptions** – Real-time monitoring of fleet performance, game sessions, and player activity can identify issues before they significantly impact gameplay. Customize graceful game session shutdowns and migrations.
 + **Players benefit from proactive server health monitoring** – Amazon GameLift Servers provides continuous server health monitoring and automatically replaces unhealthy game servers to minimize hardware or software failure impact. Configure health check parameters to support different game requirements.
 + **Players get data-driven improvements in gameplay** – Take advantage of game session logs and detailed analytics to reveal patterns in player behavior and server performance. Add custom logging support for game-specific events.
 
@@ -58,7 +58,3 @@ Players want integrated features like voice chat, secure authentication, and per
 + **Players get streamlined authentication** – Amazon Cognito integration supports various identity providers and authentication methods while maintaining secure player identities across game sessions, with streamlined login processes for returning players.
 + **Players can persist their game progress across sessions** – Amazon DynamoDB integration can be used to store player progression, inventories, and persistent data with high-performance access that ensures minimal gameplay impact while supporting cross-session continuity.
 + **Players benefit from analytic insights** – Amazon Kinesis and Amazon Simple Storage Service (Amazon S3) integration processes game analytics to gather insights on player behavior and preferences, enabling real-time analytics that help developers adapt to changing player patterns and keep games fresh and engaging.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

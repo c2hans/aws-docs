@@ -32,7 +32,3 @@ Following are examples of how supported wildcard characters can be used in a Qui
 + **\\\*\*** - This query searches for values that begin with an asterisk and are followed by zero to multiple characters. The backslash (\\) in this query informs Quick Sight to search for an actual asterisk in the values, rather than use the asterisk symbol as a wildcard character. This query returns values such as \*all, \*above, and \*below.
 + **\\\\\*** - This query searches for values with a backslash, followed by zero to multiple characters. The first backslash (\\) in this query informs Quick Sight to search for the second backslash (\\) in each value, rather than use the backslash symbol as a wildcard character. This query returns results such as \\Home.
 + **???** - This query searches for values that contain three characters. It returns values such as ant, bug, and car.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

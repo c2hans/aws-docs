@@ -97,7 +97,3 @@ If your DNS service automatically added an SOA record for the subdomain, delete 
 1. After the registrar's TTL settings for the domain expire (see Step 2), delete these records from the zone file for the parent domain:
    + The records that you added to Route 53 as described in [Creating records](#AddMigratedSubdomainRecords).
    + Your DNS service's NS records. When you finish deleting NS records, the only NS records in the zone file will be the ones you created in Step 4.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

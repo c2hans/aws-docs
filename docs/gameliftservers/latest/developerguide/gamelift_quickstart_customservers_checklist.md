@@ -17,7 +17,7 @@ Download and complete the Amazon GameLift Servers launch questionnaire, which is
 
 ## Get your game ready
 <a name="gamelift_quickstart_customservers_prepgameserver_checklist"></a>
-+ **[Critical]** Verify that you've completed all the [development roadmap steps ](getting-started-intro.md) for your hosting solution, and that you have all the required components in place, including and integrated game server, a backend service for game clients, hosting fleets, and a game session placement method (such as a queue).
++ **[Critical]** Verify that you've completed all the [development roadmap steps ](getting-started-intro.md) for your hosting solution, and that you have all the required components in place, including an integrated game server, a backend service for game clients, hosting fleets, and a game session placement method (such as a queue).
 + **[Critical]** [Create AWS Identity and Access Management (IAM) roles](setting-up-aws-login.md) that allow your game server to access other AWS resources while running.
 + **[Critical]** Design and implement failover to other hosting resources as needed.
 + [Plan the rollout of fleets to your target locations](gamelift-regions.md), considering your game's queue and fleet structure.
@@ -48,9 +48,5 @@ Download and complete the Amazon GameLift Servers launch questionnaire, which is
 <a name="gamelift_quickstart_customservers_launch_postchecklist"></a>
 + [Tune scaling policy](fleets-manage-capacity.md) to minimize idle capacity based on player usage.
 + [Modify FlexMatch rules](https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/match-intro.html) or [add hosting locations](gamelift-compute.md#gamelift-compute-location) based on player latency data and revised requirements.
-+ Optimize the runtime configuration to run as many games sessions as possible on each computing resource. Maximizing performance efficiency in this way can directly affect your fleet costs, because you might be able to run more server processes with the same compute resources.
++ Optimize the runtime configuration to run as many game sessions as possible on each computing resource. Maximizing performance efficiency in this way can directly affect your fleet costs, because you might be able to run more server processes with the same compute resources.
 + [Use your analytics data](monitoring-overview.md) to drive continued development, improve player experience and game longevity, and optimize monetization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

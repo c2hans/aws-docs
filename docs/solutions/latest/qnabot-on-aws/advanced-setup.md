@@ -31,7 +31,3 @@ This section provides detailed instructions on how to set up QnABot to perform t
 +  [Setting up a custom domain name for QnABot content designer and client](setting-up-a-custom-domain-name-for-qnabot-content-designer-and-client.md)
 +  [Using QnABot on AWS Command Line Interface (CLI)](using-qnabot-on-aws-command-line-interface-cli.md)
 +  [Enabling Streaming Responses from QnABot](llm-streaming-responses.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ The following table describes the documentation releases for Amazon Nova Act.
 | Add CloudTrail section and Update IAM documentation | Include documentation about the supported CloudTrail logging and add link to complete list of IAM policy actions for Nova Act and table for policy resource type for Nova Act | 3/12/2026 |
 | Add glossary and prompting best practices | Add a glossary page with definitions for key Nova Act terms and links to the API Reference along with prompting best practices | 3/18/2026 |
 | Add S3 export permissions documentation | Add documentation for configuring IAM permissions to allow Nova Act to export Agent Trajectory Data to an Amazon S3 bucket | 4/3/2026 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

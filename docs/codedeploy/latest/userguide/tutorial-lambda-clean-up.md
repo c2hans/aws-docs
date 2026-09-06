@@ -28,7 +28,3 @@ To avoid further charges for resources you used during this tutorial, delete the
 1.  From the list of log groups, choose the button next to **/aws/lambda/CodeDeployHook\_afterAllowTraffic**.
 
 1.  From **Actions**, choose **Delete log group**, and then choose **Yes, Delete**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

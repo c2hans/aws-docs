@@ -19,7 +19,3 @@ If you still can't figure out what went wrong, contact AWS Customer Support.
 
 **My domain showed as invalid.**
 If you're having trouble verifying that you control a domain, check to see that you have access to the DNS management. If you do and you followed [these instructions](understanding-tls-ssl-certificates-in-lightsail-https.md) but still can't validate, contact AWS Customer Support.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

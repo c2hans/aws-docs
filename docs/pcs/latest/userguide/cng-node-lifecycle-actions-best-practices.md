@@ -18,7 +18,3 @@ Follow these best practices when you use node lifecycle actions.
 + **Do not reboot the instance during a lifecycle action script.** A reboot interrupts the AWS PCS bootstrap sequence, preventing `slurmd` from starting or causing AWS PCS to terminate the node.
 + **Store secrets in AWS Secrets Manager or Systems Manager Parameter Store.** Do not pass secrets as script arguments. Arguments are visible in API responses and the console.
 + **Use S3 with a gateway VPC endpoint** for nodes in private subnets. The endpoint provides script access with no internet egress required.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,7 +35,3 @@ Verify that the amount of storage is adequate to provide sufficient I/O performa
 <a name="net-win-network"></a>
 
 Network performance is often not explicitly stated as a requirement in SAP sizing, but you can check the network performance of each [EC2 instance type](https://aws.amazon.com/ec2/instance-types/) to ensure that you are delivering the required performance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

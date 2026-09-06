@@ -195,7 +195,3 @@ You can perform the tasks described on this page using the command line.
 **Unassign secondary IPv4 addresses from a private NAT gateway**
 + [unassign-private-nat-gateway-address](https://docs.aws.amazon.com/cli/latest/reference/ec2/unassign-private-nat-gateway-address.html) (AWS CLI)
 + [Unregister-EC2PrivateNatGatewayAddress](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-EC2PrivateNatGatewayAddress.html) (AWS Tools for Windows PowerShell)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

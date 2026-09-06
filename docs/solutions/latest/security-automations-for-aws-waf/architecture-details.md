@@ -21,7 +21,3 @@ This section describes the components and AWS services that make up this solutio
 |  [AWS Glue](https://aws.amazon.com/glue/)  |  **Supporting**. Creates databases and tables to support the Athena log parser. |
 |  [Amazon SNS](https://aws.amazon.com/sns/)  |  **Supporting**. Sends Amazon Simple Notification Service (Amazon SNS) email notifications to support IP retention on allowed and denied lists. |
 |  [AWS Systems Manager](https://aws.amazon.com/systems-manager/)  |  **Supporting**. Provides application-level resource monitoring and visualization of resource operations and cost data. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Automations for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

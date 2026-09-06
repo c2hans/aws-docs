@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 <a name="additional-resources-16"></a>
 +  [AWS Transit Gateway](https://aws.amazon.com/transit-gateway/)
 +  [Cisco Catalyst 8000V for SD-WAN & Routing](https://aws.amazon.com/marketplace/pp/prodview-rohvq2cjd4ccg) in AWS Marketplace
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

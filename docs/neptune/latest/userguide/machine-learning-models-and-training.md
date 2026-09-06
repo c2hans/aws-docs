@@ -62,7 +62,3 @@ The knowledge graph embedding models implemented in Neptune ML are `distmult`, `
 <a name="machine-learning-training-custom-models"></a>
 
 Neptune ML lets you define and implement custom models of your own, for particular scenarios. See [Custom models in Neptune ML](machine-learning-custom-models.md) for information about how to implement a custom model and how to use Neptune ML infrastructure to train it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

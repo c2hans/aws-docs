@@ -33,7 +33,3 @@ Built-in integration with [AWS Systems Manager OpsCenter](https://docs.aws.amazo
 <a name="migrating-microsoft-workloads-migrate"></a>
 
 CloudWatch Application Insights is part of the Windows on Amazon EC2 ecosystem. Using CloudWatch Application Insights for monitoring is an essential part of this offering. After you start the migration of workloads into AWS, you can depend on CloudWatch Application Insights to monitor your Microsoft workloads. Additionally, CloudWatch Application Insights provides support beyond Microsoft workloads, including support for SAP, Java, Oracle, MySQL, PostgreSQL, and other AWS resources (including support for serverless applications). To get started with CloudWatch Application Insights, see [Getting set up](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GettingSetup.html) in the CloudWatch documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

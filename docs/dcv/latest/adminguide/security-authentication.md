@@ -178,7 +178,3 @@ The PAM service name must match the name of the file you created in `/etc/pam.d`
 <a name="set-authentication-external"></a>
 
 DCV can be configured to use an external authenticator. For more information on this process and its requirements, see [Use External Authentication](external-authentication.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

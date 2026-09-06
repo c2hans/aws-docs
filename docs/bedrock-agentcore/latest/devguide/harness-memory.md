@@ -5,18 +5,18 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 # Memory
 <a name="harness-memory"></a>
 
-The harness automatically persists conversation state in [AgentCore Memory](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory.html). On every invocation, the conversation is saved, scoped by session ID (and additionally by actor ID, if provided). On subsequent invocations with the same session ID, the agent’s history is loaded from Memory before it reasons - it remembers what happened in previous turns, even after the underlying microVM session has expired. You do not need to pass previous messages yourself; just send the new message.
+When memory is enabled, the harness persists conversation state in [AgentCore Memory](memory.md). On subsequent invocations with the same session ID, the agent loads the stored history before it reasons.
 
 ## How memory works
 <a name="_how_memory_works"></a>
 +  **Short-term memory** captures raw events (messages, tool calls) within a session. This is what gives the agent continuity across turns.
-+  **Long-term memory** extracts durable knowledge via configurable strategies ([semantic](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/semantic-memory-strategy.html), [summarization](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/summary-strategy.html), [user preference](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/user-preference-memory-strategy.html), [episodic](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/episodic-memory-strategy.html), or [custom](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory-custom-strategy.html)) and makes them retrievable via semantic search in later sessions.
++  **Long-term memory** extracts durable knowledge via configurable strategies ([semantic](semantic-memory-strategy.md), [summarization](summary-strategy.md), [user preference](user-preference-memory-strategy.md), [episodic](episodic-memory-strategy.md), or [custom](memory-custom-strategy.md)) and makes them retrievable via semantic search in later sessions.
 +  **Actor ID** identifies the entity interacting with the agent (a user, another agent, or a system). Memory events are scoped by actorId \+ sessionId, so each actor has isolated memory. Long-term retrieval uses actorId as a template variable in namespace paths (e.g. `/summary/{actorId}/{sessionId}/`), mapping to the configured memory strategies.
 
-## Managed memory (default)
-<a name="_managed_memory_default"></a>
+## Managed memory
+<a name="_managed_memory"></a>
 
-By default, the harness provisions an [AgentCore Memory](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory.html) instance automatically with sensible defaults (semantic \+ summarization strategies, 30-day event expiry). You don’t need to create or configure anything - memory just works.
+When you create a harness directly with the service API and omit the memory configuration, the service provisions managed memory. The AgentCore CLI uses a different default: new CLI harnesses have memory disabled unless you select managed memory or an existing memory resource.
 
 **Memory charges**
 There is no additional charge for the harness itself. Managed Memory incurs standard AgentCore Memory charges for short-term events, stored long-term memory records, and retrieval requests. To avoid persistent Memory charges, disable Memory when you create the harness. For more information, see [Understand harness costs](harness-operations.md#harness-costs) and [Amazon Bedrock AgentCore pricing](https://aws.amazon.com/bedrock/agentcore/pricing/).
@@ -38,16 +38,22 @@ aws bedrock-agentcore-control update-harness \
   --harness-id "MyHarness-UuFdkQoXSL" \
   --memory '{"optionalValue": {"managedMemoryConfiguration": {"strategies": ["SEMANTIC", "SUMMARIZATION", "USER_PREFERENCE", "EPISODIC"]}}}'
 ```
-Memory is enabled by default when you create a harness:
+Create an empty project, then add a harness with managed memory:
 
 ```
-agentcore create --name myagent
+agentcore create --project-name MyHarnessProject --no-agent
+cd MyHarnessProject
+agentcore add harness \
+  --name myagent \
+  --memory-mode managed \
+  --memory-strategies SEMANTIC,SUMMARIZATION \
+  --memory-event-expiry-days 30
 agentcore deploy
 ```
-To skip managed memory:
+Memory is disabled by default. To create the harness without memory, run the following command instead of the preceding `agentcore add harness` command:
 
 ```
-agentcore create --name myagent --no-harness-memory
+agentcore add harness --name myagent --no-memory
 ```
 Run `agentcore` in a project directory, select **add** , then choose **Harness** . The wizard includes a memory step.
 
@@ -80,7 +86,7 @@ Managed memory is fully managed by the harness:
 ## Add existing memory (BYO)
 <a name="_add_existing_memory_byo"></a>
 
-If you need advanced configuration beyond what managed memory provides - custom namespace templates, KMS encryption, or shared memory across multiple harnesses - attach an existing [AgentCore Memory](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory.html) instance instead.
+If you need advanced configuration beyond what managed memory provides - custom namespace templates, KMS encryption, or shared memory across multiple harnesses - attach an existing [AgentCore Memory](memory.md) instance instead.
 
 **Example**
 Create a memory instance:
@@ -100,7 +106,10 @@ aws bedrock-agentcore-control update-harness \
 ```
 
 ```
-agentcore create --name myagent --memory-arn "arn:aws:bedrock-agentcore:us-west-2:123456789012:memory/MyMemory-abc123"
+agentcore create --project-name MyHarnessProject --no-agent
+cd MyHarnessProject
+agentcore add harness --name myagent \
+  --memory-arn "arn:aws:bedrock-agentcore:us-west-2:123456789012:memory/MyMemory-abc123"
 agentcore deploy
 ```
 
@@ -163,7 +172,7 @@ aws bedrock-agentcore-control update-harness \
   --truncation '{"strategy": "sliding_window", "slidingWindowConfig": {"numMessages": 30}}'
 ```
 
-Learn more: [AgentCore Memory](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory.html), [create a memory store](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory-create-a-memory-store.html), [long-term memory strategies](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/long-term-configuring-built-in-strategies.html).
+Learn more: [AgentCore Memory](memory.md), [create a memory store](memory-create-a-memory-store.md), [long-term memory strategies](long-term-configuring-built-in-strategies.md).
 
 ### Related topics
 <a name="_related_topics"></a>
@@ -172,7 +181,3 @@ Learn more: [AgentCore Memory](https://docs.aws.amazon.com/bedrock-agentcore/lat
 +  [Skills](harness-skills.md) - attach skills from Git, S3, or AWS Skills
 +  [Security and access controls](harness-security.md) - execution role policies for memory access
 +  [API Documentation](harness-get-started.md#api-documentation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

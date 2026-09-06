@@ -90,7 +90,3 @@ For more information, see the following:
 <a name="cluster-create-determine-requirements-durability"></a>
 
 Do you need durability for your data? If your application requires durability beyond in-memory replication, you can create a Valkey 9.0\+ cluster with durability enabled. Durability is set at cluster creation time and cannot be enabled or disabled afterward. For more information, see [Durability in ElastiCache](durability.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

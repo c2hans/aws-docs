@@ -19,7 +19,3 @@ For example, if you create custom data identifiers and sensitive data discovery 
 + [Controlling access to resources using tags](tags-iam.md)
 + [Reviewing and editing tags for resources](tags-retrieve-update.md)
 + [Removing tags from resources](tags-remove.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

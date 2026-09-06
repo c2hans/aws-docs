@@ -34,7 +34,3 @@ The solution utilizes a truly agentless architecture through a native, SAP-certi
 New Relic Monitoring for SAP Solutions [product documentation](https://docs.newrelic.com/docs/data-apis/custom-data/sap-integration/) details technical details along with installation and configuration steps. You can procure your [New Relic solution from AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-yg3ykwh5tmolg), or get a quick overview through the [data sheet](https://newrelic.com/sites/default/files/2025-08/new-relic-sap-data-sheet-2025-aug.pdf).
 
 Disclaimer: New Relic, and the New Relic logo are trademarks of the New Relic, Inc.. All other trademarks are the property of their respective owners.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

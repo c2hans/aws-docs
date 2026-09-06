@@ -17,6 +17,7 @@ The following are considerations for the selected AWS Region for your account:
 + If you use Amazon Bedrock, you can use APIs that do not create resources in all commercial AWS Regions that are enabled by default.
 + If you use CloudFront, certain features that would create resources outside of your selected Region aren't available. This includes using AWS WAF with CloudFront.
 + Some CloudTrail events involving the global services are recorded in the Region where the global service operates. You have access to these events.
++ Amazon Simple Storage Service, Amazon Kinesis, AWS WAF, Amazon CloudWatch Logs, and Amazon CloudWatch metrics are available in US East (N. Virginia) (`us-east-1`).
 
 You can find what is the selected Region for all projects in your account by using AWS Settings. In the AWS Management Console, most service consoles are hosted in the Region you are in, including Bedrock and SageMaker. If you ever look at a service console from a global service, the console automatically routes all your API calls to the appropriate Region for the global service.
 
@@ -301,7 +302,3 @@ When you create Regional AWS resources in any of your projects, the Amazon Resou
 | South Georgia and the South Sandwich Islands | GS |
 | Svalbard and Jan Mayen | SJ |
 | Western Sahara | EH |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -88,7 +88,3 @@ When creating webhooks with your provider, note the following:
 + Custom request headers are supported.
 + A default request body can be specified.
 + The default request body can be overridden when an integration is invoked by using the `aws:invokeWebhook` action.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

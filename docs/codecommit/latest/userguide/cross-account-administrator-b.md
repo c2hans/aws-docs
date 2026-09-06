@@ -70,7 +70,3 @@ Now that you have a group, create the policy that allows members of this group t
 1. Choose the **Users** tab. Choose **Add Users to Group**, and then add the AccountB IAM users. For example, you might add an IAM user with the user name {{Saanvi\_Sarkar}} to the group.
 **Note**
 Users in AccountB must have programmatic access, including an access key and secret key, to configure their local computers for access to the shared CodeCommit repository. If you are creating IAM users, be sure to save the access key and secret key. To ensure the security of your AWS account, the secret access key is accessible only at the time you create it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

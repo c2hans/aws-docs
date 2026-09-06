@@ -24,7 +24,3 @@ You can change which input security group is used as the channel security group,
    To remove the channel security group, clear the selection. Note that you can only remove the channel security group if you also remove all SRT outputs configured in listener mode from the channel.
 
 1. Choose **Update channel**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,7 +64,3 @@ print(os.path.join(user_config_dir("sagemaker"), "config.yaml"))
 You can override the default locations of these files by setting the `SAGEMAKER_ADMIN_CONFIG_OVERRIDE` and `SAGEMAKER_USER_CONFIG_OVERRIDE` environment variables for the admin-defined and user-defined configuration file paths, respectively.
 
 If a key exists in both the admin-defined and user-defined configuration files, the value in the user-defined file will be used.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

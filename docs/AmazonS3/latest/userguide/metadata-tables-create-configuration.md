@@ -265,7 +265,3 @@ You can use the `GetBucketMetadataConfiguration` and `DeleteBucketMetadataConfig
 Make sure that you update your processes to use the new API operations (`CreateBucketMetadataConfiguration`, `GetBucketMetadataConfiguration`, and `DeleteBucketMetadataConfiguration`) instead of the old API operations.
 
 1. If you plan to query your metadata tables with Amazon Athena or another AWS query engine, make sure that you integrate your AWS managed table bucket with AWS analytics services. If you've already integrated an existing table bucket in this Region, your AWS managed table bucket is also automatically integrated. For more information, see [Integrating Amazon S3 Tables with AWS analytics services](s3-tables-integrating-aws.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,7 +25,3 @@ QnABot on AWS comes with a simple Lambda hook function example that you can cust
 1. Choose **Lambda Hooks** from the content designer tools menu (**☰**) to display additional information to help you create your own Lambda hook functions.
 
 For more information about how you can package Lambda hooks, see the [Extending QnABot with Lambda hook functions](https://github.com/aws-solutions/qnabot-on-aws/blob/main/source/docs/lambda_hooks/README.md) section in the GitHub repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -148,7 +148,3 @@ Configure IPs of your AWS Route 53 Resolver inbound endpoint and SAP DNS servers
 Please consult the Route 53 documentation for more details on the zone delegation feature. The following blog post provides you with a more in-depth step-by-step guide on how to make use of Route 53 delegation feature for private DNS: [Streamline hybrid DNS management using Amazon Route 53 Resolver endpoints delegation](https://aws.amazon.com/blogs/networking-and-content-delivery/streamline-hybrid-dns-management-using-amazon-route-53-resolver-endpoints-delegation/).
 
 For more information on the above described integration approaches, please reach out to your SAP Cloud Architect or your AWS Account Team.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

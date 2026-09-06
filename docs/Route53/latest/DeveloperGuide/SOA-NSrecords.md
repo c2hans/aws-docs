@@ -77,7 +77,3 @@ There is at least one record with the name that is specified in the DNS query, b
 1. Select the linked name of the domain for which you want to view records.
 
 1. On the **Records** section you can see all the records listed and you can also filter records to find your SOA value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -9,7 +9,7 @@ Volume status checks enable you to better understand, track, and manage potentia
 
 Volume status checks are automated tests that run every 5 minutes and return a pass or fail status. If all checks pass, the status of the volume is `ok`. If a check fails, the status of the volume is `impaired`. If the status is `insufficient-data`, the checks may still be in progress on the volume. You can view the results of volume status checks to identify any impaired volumes and take any necessary actions.
 
-When Amazon EBS determines that a volume's data is potentially inconsistent, the default is that it disables I/O to the volume from any attached EC2 instances, which helps to prevent data corruption. After I/O is disabled, the next volume status check fails, and the volume status is `impaired`. In addition, you'll see an event that lets you know that I/O is disabled, and that you can resolve the impaired status of the volume by enabling I/O to the volume. We wait until you enable I/O to give you the opportunity to decide whether to continue to let your instances use the volume, or to run a consistency check using a command, such as **fsck** (Linux instances) or **chkdsk** (Windows instances), before doing so.
+When Amazon EBS determines that a volume's data is potentially inconsistent, the default is that it disables I/O to the volume from any attached EC2 instances, which helps to prevent data corruption. After I/O is disabled, the next volume status check fails, and the volume status is `impaired`. In addition, you'll see an event that lets you know that I/O is disabled, and that you can resolve the impaired status of the volume by enabling I/O to the volume. EBS waits until you enable I/O to give you the opportunity to decide whether to continue to let your instances use the volume, or to run a consistency check using a command, such as **fsck** (Linux instances) or **chkdsk** (Windows instances), before doing so.
 
 **Note**
 Volume status is based on the volume status checks, and does not reflect the volume state. Therefore, volume status does not indicate volumes in the `error` state (for example, when a volume is incapable of accepting I/O.) For information about volume states, see [Volume states](ebs-describing-volumes.md#volume-state).
@@ -27,7 +27,7 @@ The following table lists statuses for Amazon EBS volumes.
 | --- | --- | --- |
 | `ok` | Enabled (I/O Enabled or I/O Auto-Enabled) | Normal (Volume performance is as expected) |
 | `warning` | Enabled (I/O Enabled or I/O Auto-Enabled) | Degraded (Volume performance is below expectations)<br />Severely Degraded (Volume performance is well below expectations) |
-| `impaired` | Enabled (I/O Enabled or I/O Auto-Enabled)<br />Disabled (Volume is offline and pending recovery, or is waiting for the user to enable I/O) | Stalled (Volume performance is severely impacted)<br />Not Available (Unable to determine I/O performance because I/O is disabled) |
+| `impaired` | Enabled (I/O Enabled or I/O Auto-Enabled)<br />Disabled (Volume is offline and pending recovery, or is waiting for you to enable I/O) | Stalled (Volume performance is severely impacted)<br />Not Available (Unable to determine I/O performance because I/O is disabled) |
 | `insufficient-data` | Enabled (I/O Enabled or I/O Auto-Enabled)<br />Insufficient Data | Insufficient Data |
 
 ------
@@ -80,7 +80,3 @@ Get-EC2VolumeStatus -Filter @{Name="volume-status.status"; Values="impaired"}
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

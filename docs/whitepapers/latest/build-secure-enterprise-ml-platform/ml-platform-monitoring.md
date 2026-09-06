@@ -34,7 +34,3 @@ You can monitor the model building pipeline for training status and metric repor
 <a name="production-endpoint-monitoring"></a>
 
 You can monitor production endpoints for system health, data drift, model drift, data and model bias, and explanation for each prediction. SageMaker AI endpoint reports a set of system metrics such as CPU and memory utilization, model invocation metrics, model latency, and errors through CloudWatch. [SageMaker AI Model Monitor](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html) can detect data/concept drift of models hosted by the SageMaker AI hosting service. For model drift detection, model metrics can be periodically evaluated using collected labeled data running against the hosted model.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

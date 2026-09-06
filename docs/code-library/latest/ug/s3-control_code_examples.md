@@ -31,7 +31,3 @@ The following code examples show you how to use Amazon S3 Control with an AWS so
     + [`PutJobTagging`](s3-control_example_s3-control_PutJobTagging_section.md)
     + [`UpdateJobPriority`](s3-control_example_s3-control_UpdateJobPriority_section.md)
     + [`UpdateJobStatus`](s3-control_example_s3-control_UpdateJobStatus_section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

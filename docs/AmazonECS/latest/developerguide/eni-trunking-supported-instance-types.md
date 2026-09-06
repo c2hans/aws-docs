@@ -980,6 +980,28 @@ The `c5n`, `d3`, `d3en`, `g3`, `g3s`, `g4dn`, `i3`, `i3en`, `inf1`, `m5dn`, `m5n
 | r8idb.96xlarge | 23 | 120 |
 | r8idb.metal-48xl | 23 | 120 |
 | r8idb.metal-96xl | 23 | 120 |
+| r9g.medium | 1 | 4 |
+| r9g.large | 2 | 10 |
+| r9g.xlarge | 3 | 20 |
+| r9g.2xlarge | 3 | 40 |
+| r9g.4xlarge | 7 | 60 |
+| r9g.8xlarge | 9 | 60 |
+| r9g.12xlarge | 11 | 60 |
+| r9g.16xlarge | 15 | 120 |
+| r9g.24xlarge | 23 | 120 |
+| r9g.48xlarge | 23 | 120 |
+| r9g.metal-48xl | 23 | 120 |
+| r9gd.medium | 1 | 4 |
+| r9gd.large | 2 | 10 |
+| r9gd.xlarge | 3 | 20 |
+| r9gd.2xlarge | 3 | 40 |
+| r9gd.4xlarge | 7 | 60 |
+| r9gd.8xlarge | 9 | 60 |
+| r9gd.12xlarge | 11 | 60 |
+| r9gd.16xlarge | 15 | 120 |
+| r9gd.24xlarge | 23 | 120 |
+| r9gd.48xlarge | 23 | 120 |
+| r9gd.metal-48xl | 23 | 120 |
 | u-3tb1.56xlarge | 7 | 12 |
 | u-6tb1.56xlarge | 14 | 12 |
 | u-18tb1.112xlarge | 14 | 12 |
@@ -1230,7 +1252,3 @@ The `c5n`, `d3`, `d3en`, `g3`, `g3s`, `g4dn`, `i3`, `i3en`, `inf1`, `m5dn`, `m5n
 | hpc7g.8xlarge | 3 | 120 |
 | hpc7g.16xlarge | 3 | 120 |
 | hpc8a.96xlarge | 3 | -2 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

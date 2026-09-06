@@ -59,7 +59,3 @@ You can work with AWS FIS in any of the following ways:
 <a name="pricing"></a>
 
 You are charged per minute that an action runs, from start to finish, based on the number of target accounts for your experiment. For more information, see [AWS FIS Pricing](https://aws.amazon.com/fis/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

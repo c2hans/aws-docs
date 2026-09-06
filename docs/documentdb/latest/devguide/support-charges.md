@@ -12,7 +12,3 @@ The additional charge for Amazon DocumentDB Extended Support stops when you take
 + Delete the cluster that's running version 3.6 past the end of standard support date
 
 For example, Amazon DocumentDB version 3.6 enters Extended Support on March 31, 2026, but charges do not start until July 1, 2026. If you upgrade your Amazon DocumentDB version 3.6 cluster to Amazon DocumentDB version 5.0 on July 31, 2026, you will only be charged for 30 days of Extended Support on Amazon DocumentDB version 3.6. For more information, see [Amazon DocumentDB pricing](https://aws.amazon.com/documentdb/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

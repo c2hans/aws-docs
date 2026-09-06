@@ -68,7 +68,3 @@ In using the following procedures to change your key length, if you violate one 
 1. In the **Advanced DKIM settings** container, choose either [**RSA\_2048\_BIT** or **RSA\_1024\_BIT**](send-email-authentication-dkim.md#send-email-authentication-dkim-1024-2048) in the **DKIM signing key length** field.
 
 1. Choose **Save changes**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

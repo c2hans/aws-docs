@@ -63,7 +63,3 @@ IAM users can obtain access keys from the AWS Management Console. You can then u
 To learn about the different ways that you can sign in to AWS, depending on the type of user you are, see [What is AWS Sign-In?](https://docs.aws.amazon.com/signin/latest/userguide/what-is-sign-in.html) in the * AWS Sign-In User Guide*.
 
 For reference information when using AWS SDKs and tools, including the AWS CLI, see the [AWS SDKs and Tools Reference Guide](https://docs.aws.amazon.com/sdkref/latest/guide/overview.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

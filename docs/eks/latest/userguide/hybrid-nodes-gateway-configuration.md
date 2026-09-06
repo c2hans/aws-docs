@@ -98,7 +98,3 @@ The `--leader-election-renew-deadline` must always be less than `--leader-electi
 +  [Get started with EKS Hybrid Nodes gateway](hybrid-nodes-gateway-getting-started.md)
 +  [Amazon EKS Hybrid Nodes gateway operations](hybrid-nodes-gateway-operations.md)
 +  [Amazon EKS Hybrid Nodes gateway troubleshooting](hybrid-nodes-gateway-troubleshooting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

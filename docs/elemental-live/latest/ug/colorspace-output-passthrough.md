@@ -31,7 +31,3 @@ The following table shows how Elemental Live handles each type of color space th
 | Content in any color space that Elemental Live supports | It doesn't touch the color space or brightness (the pixel values) in the output.<br />It passes through any of the three sets of metadata that are present. |
 | Content marked with unknown or an unsupported color space | It doesn't touch the color space or brightness (the pixel values) in the output.<br />It leaves the content as marked with the unknown color space. <br />It passes through any brightness metadata and display metadata. |
 | Content with no color space metadata | It doesn't touch the color space or brightness (the pixel values) in the output.<br />It leaves the content as unmarked (no color space metadata). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -80,7 +80,3 @@ In sessions that use write forwarding, you can use the `REPEATABLE READ` and `RE
 If the transaction access mode is set to read only, local write forwarding isn't used. You can set the access mode to read write only while you’re connected to a DB cluster and session that has local write forwarding enabled.
 
 For more information on the transaction access modes, see [SET TRANSACTION](https://www.postgresql.org/docs/current/sql-set-transaction.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

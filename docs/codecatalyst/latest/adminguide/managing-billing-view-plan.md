@@ -34,7 +34,3 @@ You must have the **Space administrator** role in CodeCatalyst to access billing
 1. Choose **Manage billing in AWS**. You are directed to the connections page.
 
    You can view details about the connection between your AWS account and CodeCatalyst space. Under **Billing details**, view the CodeCatalyst subscriptions allowed for the account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

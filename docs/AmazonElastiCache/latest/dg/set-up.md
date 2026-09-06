@@ -118,7 +118,3 @@ If you use ElastiCache for Valkey, then you might find the valkey-cli utility us
 When you install the redis6 package, it installs redis6-cli with default encryption support.
 It is important to have build support for TLS when installing valkey-cli or redis-cli. ElastiCache Serverless is only accessible when TLS is enabled.
 If you are connecting to a cluster that isn't encrypted, you don't need the `Build_TLS=yes` option.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

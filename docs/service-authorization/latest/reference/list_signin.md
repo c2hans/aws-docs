@@ -229,7 +229,3 @@ AWS Signin defines the following condition keys that can be used in the `Conditi
 |   [signin:OAuthRedirectUri](https://docs.aws.amazon.com/signin/latest/userguide/reference-signin-condition-keys.html)  | Filters access by the redirect URI specified in the OAuth authorization request | String |
 |   [signin:OAuthTokenType](https://docs.aws.amazon.com/signin/latest/userguide/reference-signin-condition-keys.html)  | Filters access by the type of OAuth token being operated on | String |
 |   [signin:PrincipalArn](https://docs.aws.amazon.com/signin/latest/userguide/reference-signin-condition-keys.html)  | Filters access by the principal ARN during pre-authentication console sign-in | ARN |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

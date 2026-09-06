@@ -10,7 +10,7 @@ The term *resource-level permissions* refers to the ability to specify which res
 **Important**
 Lightsail does not support resource-level permissions for some API actions. For more information, see [Support for resource-level permissions and authorization based on tags](resource-level-permissions-and-auth-based-on-tags-support.md).
 
-For more information about the resources that are created or modified by the Lightsail actions, and the ARNs and Lightsail condition keys that you can use in an IAM policy statement, see [Actions, Resources, and Condition Keys for Amazon Lightsail](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonlightsail.html) in the *IAM User Guide*.
+For more information about the resources that are created or modified by the Lightsail actions, and the ARNs and Lightsail condition keys that you can use in an IAM policy statement, see [Actions, Resources, and Condition Keys for Amazon Lightsail ](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_lightsail.html) in the *IAM User Guide*.
 
 ## Allow management of a specific instance
 <a name="security_iam_resource-based-policy-examples-manage-specific-instance"></a>
@@ -200,7 +200,3 @@ The following policy grants access to reboot/start/stop and update a specific da
 To get the ARN for your database, use the `GetRelationalDatabase` Lightsail API action, and specify the name of the database using the `relationalDatabaseName` parameter. Your database ARN will be listed in the results of that action as shown in the following example. For more information, see [GetRelationalDatabase](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_GetRelationalDatabase.html) in the *Amazon Lightsail API Reference*.
 
 ![A database ARN in the GetRelationalDatabase results.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-database-arn.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

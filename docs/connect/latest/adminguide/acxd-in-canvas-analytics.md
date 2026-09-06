@@ -93,7 +93,3 @@ You can use a Conversation ID to inspect the exact path from one conversation:
 1. Review the path the user took through the flow.
 
 This is helpful when a transcript shows unexpected fallback behavior, repeated questions, missed routing, a failed integration, or user drop-off.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

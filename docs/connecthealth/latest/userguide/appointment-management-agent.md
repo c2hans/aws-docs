@@ -33,7 +33,3 @@ You can configure the following settings for the Appointment management agent.
 | Enabled capabilities | Choose which appointment actions are available to patients: schedule, reschedule, cancel, and lookup. Unchecked tasks are routed to a human representative. |
 | Insurance verification | Enable or disable real-time insurance eligibility verification. When enabled, the agent invokes a customer-managed Lambda function to check eligibility and retrieve copay information. For more information, see [Insurance verification integration](insurance-verification.md). |
 | AI Autonomy | Configure whether the appointment is fully self-serviced or preferences are collected and shared with staff for final action. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connecthealth` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

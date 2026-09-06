@@ -42,7 +42,3 @@ When you add a user to an Amazon Monitron project or site, you send them an emai
 
 **Warning**
 Beware of phishing attacks. An attacker may send an email impersonating a Amazon Monitron project invitation email to your users. Warn them to make sure that the directory name is visible on the login screen before entering their sign-in credentials.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

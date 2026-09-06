@@ -81,11 +81,7 @@ For more information, see [TIMESTAMP WITH TIMEZONE restrictions](https://docs.or
 In RDS for Oracle, a release update (RU) is a minor engine version that includes security fixes, bug fixes, and new features for Oracle Database. A Supplemental Patch Bundle (SPB) is an RU engine version that includes additional database patches recommended by Oracle for specific use cases, such as Oracle Spatial, Oracle Data Pump, and Oracle GoldenGate. For example, 19.0.0.0.ru-2025-01.spb-1.r1 is a minor engine version that contains the RU patches in engine version 19.0.0.0.ru-2025-01.rur-2025-01.r1 plus supplemental patches.
 
 When you upgrade your database to SPBs, consider the following:
-+ SPBs are supported only for Oracle Database 19c.
++ SPBs are supported for Oracle Database 19c and Oracle Database 26ai.
 + If you enable automatic minor version upgrade for your DB instance, your upgrade path depends on whether your instance currently uses an SPB or RU. If your instance uses an SPB, RDS automatically upgrades your instance to the latest SPB. If your instance uses an RU, RDS automatically upgrades your instance to the latest RU.
 + You can manually upgrade your DB instance from an RU to an SPB only if the SPB is the same engine version or higher as your current RU.
 + You can manually upgrade your DB instance from an SPB to an RU only if the RU is a higher version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

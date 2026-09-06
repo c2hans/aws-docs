@@ -14,7 +14,3 @@ You use AWS published API calls to access Amazon WorkSpaces Secure Browser throu
 WorkSpaces Secure Browser isolates service traffic by applying Standard AWS SigV4 Authentication and Authorization to all services. The customer resource endpoint (or web portal endpoint) is protected by your identity provider. You can further isolate traffic by using Multi-factor Authorization and other security mechanism in your identity provider (IdP).
 
 All internet access can be controlled by configuring network settings, such as the VPC, subnet, or security group. Multi-tenancy and VPC endpoints (PrivateLink) are not currently supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

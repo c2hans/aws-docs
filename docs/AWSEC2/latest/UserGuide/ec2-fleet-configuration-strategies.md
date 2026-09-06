@@ -18,7 +18,3 @@ When planning your EC2 Fleet or Spot Fleet, we recommend that you consider the f
 | Capacity Rebalancing | Do you want your fleet to automatically replace at-risk Spot Instances? | [Use Capacity Rebalancing in EC2 Fleet and Spot Fleet to replace at-risk Spot Instances](ec2-fleet-capacity-rebalance.md) |
 | On-Demand Capacity Reservation | Do you want to reserve capacity for the On-Demand Instances in your fleet? | [Use Capacity Reservations to reserve On-Demand capacity in EC2 Fleet](ec2-fleet-on-demand-capacity-reservations.md) |
 | Multiple Capacity Reservation types | Do you want to launch instances across multiple Capacity Reservation types – On-Demand Capacity Reservations, Capacity Blocks for ML, and interruptible Capacity Reservations – using a single Capacity Reservation Resource Group, and optionally fall back to On-Demand capacity? | [Tutorial: Configure your EC2 Fleet to launch instances into multiple Capacity Reservation types using a Capacity Reservation Resource Group](ec2-fleet-launch-instances-multiple-cr-types-walkthrough.md) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

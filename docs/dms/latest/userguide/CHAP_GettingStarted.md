@@ -34,7 +34,3 @@ We also recommend that you check the following resources as you prepare and perf
 + [AWS DMS Step-by-Step Migration Guide](https://docs.aws.amazon.com/dms/latest/sbs/DMS-SBS-Welcome.html) – This guide provides step-by-step walkthroughs that go through the process of migrating data to AWS.
 + [AWS DMS API Reference](https://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html) – This reference describes all the API operations for AWS Database Migration Service in detail.
 + [AWS CLI for AWS DMS](https://docs.aws.amazon.com/cli/latest/reference/dms/index.html) – This reference provides information about using the AWS Command Line Interface (AWS CLI) with AWS DMS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

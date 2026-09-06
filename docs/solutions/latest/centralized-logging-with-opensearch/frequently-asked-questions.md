@@ -127,7 +127,3 @@ Refer to [Create Instance Group for CentOS 7](additional-resources.md#create-ins
  **Q: How can I find the built-in dashboards in OpenSearch?**
 
 Refer to the [AWS Service Logs](aws-service-logs.md) and [Application Logs](application-logs.md) to find out if there is a built-in dashboard supported. You also must turn on the *Sample Dashboard* option when creating a log analytics pipeline. The dashboard will be inserted into the Amazon OpenSearch Service under **Global Tenant**. You can switch to the Global Tenant from the top right coder of the OpenSearch Dashboards.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Logging with OpenSearch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

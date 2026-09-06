@@ -41,12 +41,14 @@ The following table shows the minor versions of MariaDB 12.3 that Amazon RDS cur
 
 | MariaDB engine version | Community release date | RDS release date | RDS end of standard support date |
 | --- | --- | --- | --- |
+| 12.3.3 | 24 August 2026 | 4 September 2026 | September 2027 |
 | 12.3.2 | 28 May 2026 | 7 August 2026 | August 2027 |
 
 The following table shows the minor versions of MariaDB 11.8 that Amazon RDS currently supports.
 
 | MariaDB engine version | Community release date | RDS release date | RDS end of standard support date |
 | --- | --- | --- | --- |
+| 11.8.9 | 24 August 2026 | 4 September 2026 | September 2027 |
 | 11.8.8 | 27 May 2026 | 5 June 2026 | June 2027 |
 | 11.8.6 | 4 February 2026 | 10 February 2026 | February 2027 |
 | 11.8.5 | 14 November 2025 | 20 November 2025 | 31 October 2026 |
@@ -56,6 +58,7 @@ The following table shows the minor versions of MariaDB 11.4 that Amazon RDS cur
 
 | MariaDB engine version | Community release date | RDS release date | RDS end of standard support date |
 | --- | --- | --- | --- |
+| 11.4.13 | 24 August 2026 | 4 September 2026 | September 2027 |
 | 11.4.12 | 27 May 2026 | 5 June 2026 | June 2027 |
 | 11.4.10 | 4 February 2026 | 10 February 2026 | February 2027 |
 | 11.4.9 | 6 November 2025 | 18 November 2025 | 31 October 2026 |
@@ -66,6 +69,7 @@ The following table shows the minor versions of MariaDB 10.11 that Amazon RDS cu
 
 | MariaDB engine version | Community release date | RDS release date | RDS end of standard support date |
 | --- | --- | --- | --- |
+| 10.11.19 | 24 August 2026 | 4 September 2026 | September 2027 |
 | 10.11.18 | 27 May 2026 | 5 June 2026 | June 2027 |
 | 10.11.16 | 4 February 2026 | 10 February 2026 | February 2027 |
 | 10.11.15 | 6 November 2025 | 18 November 2025 | 31 October 2026 |
@@ -76,6 +80,7 @@ The following table shows the minor versions of MariaDB 10.6 that Amazon RDS cur
 
 | MariaDB engine version | Community release date | RDS release date | RDS end of standard support date |
 | --- | --- | --- | --- |
+| 10.6.28 | 13 August 2026 | 4 September 2026 | 31 December 2026 |
 | 10.6.27 | 27 May 2026 | 5 June 2026 | 31 December 2026 |
 | 10.6.25 | 4 February 2026 | 10 February 2026 | 31 December 2026 |
 | 10.6.24 | 6 November 2025 | 18 November 2025 | November 2026 |
@@ -113,11 +118,14 @@ aws rds describe-db-engine-versions --default-only --engine mariadb --engine-ver
 <a name="MySQL.Concepts.VersionMgmt.Supported.Minor"></a>
 
 **Topics**
++ [MariaDB version 12.3.3](#MariaDB.Concepts.VersionMgmt.Supported.Minor.12.3.3)
 + [MariaDB version 12.3.2](#MariaDB.Concepts.VersionMgmt.Supported.Minor.12.3.2)
++ [MariaDB version 11.8.9](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.8.9)
 + [MariaDB version 11.8.8](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.8.8)
 + [MariaDB version 11.8.6](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.8.6)
 + [MariaDB version 11.8.5](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.8.5)
 + [MariaDB version 11.8.3](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.8.3)
++ [MariaDB version 11.4.13](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.4.13)
 + [MariaDB version 11.4.12](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.4.12)
 + [MariaDB version 11.4.10](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.4.10)
 + [MariaDB version 11.4.9](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.4.9)
@@ -125,6 +133,7 @@ aws rds describe-db-engine-versions --default-only --engine mariadb --engine-ver
 + [MariaDB version 11.4.7](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.4.7)
 + [MariaDB version 11.4.5](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.4.5)
 + [MariaDB version 11.4.4](#MariaDB.Concepts.VersionMgmt.Supported.Minor.11.4.4)
++ [MariaDB version 10.11.19](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.11.19)
 + [MariaDB version 10.11.18](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.11.18)
 + [MariaDB version 10.11.16](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.11.16)
 + [MariaDB version 10.11.15](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.11.15)
@@ -132,6 +141,7 @@ aws rds describe-db-engine-versions --default-only --engine mariadb --engine-ver
 + [MariaDB version 10.11.13](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.11.13)
 + [MariaDB version 10.11.11](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.11.11)
 + [MariaDB version 10.11.10](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.11.10)
++ [MariaDB version 10.6.28](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.6.28)
 + [MariaDB version 10.6.27](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.6.27)
 + [MariaDB version 10.6.25](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.6.25)
 + [MariaDB version 10.6.24](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.6.24)
@@ -143,6 +153,15 @@ aws rds describe-db-engine-versions --default-only --engine mariadb --engine-ver
 + [MariaDB version 10.5.28](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.5.28)
 + [MariaDB version 10.5.27](#MariaDB.Concepts.VersionMgmt.Supported.Minor.10.5.27)
 
+#### MariaDB version 12.3.3
+<a name="MariaDB.Concepts.VersionMgmt.Supported.Minor.12.3.3"></a>
+
+MariaDB version 12.3.3 is now available on Amazon RDS. This release contains fixes and improvements added by the MariaDB community and Amazon RDS.
+
+**New features and enhancements**
++ Updated the time zone information to base it on `tzdata2026c`.
++ Added support for post-quantum hybrid key exchange (`X25519MLKEM768` and `SecP256r1MLKEM768`) for TLS 1.3 connections. Clients that support post-quantum key exchange negotiate a quantum-resistant shared secret automatically. To confirm which group the current session negotiated, query the `Ssl_named_group` status variable. For example: `SHOW STATUS LIKE 'Ssl_named_group';`.
+
 #### MariaDB version 12.3.2
 <a name="MariaDB.Concepts.VersionMgmt.Supported.Minor.12.3.2"></a>
 
@@ -151,6 +170,15 @@ MariaDB version 12.3.2 is now available on Amazon RDS. This release contains fix
 **New features and enhancements**
 + **Reserved user for RDS Proxy** – The `rdsproxyadmin` user is a reserved user. You can't modify or drop this user. For more information, see [MariaDB security on Amazon RDS](MariaDB.Concepts.UsersAndPrivileges.md).
 + **Drop protection for the replication user account** – Starting with RDS for MariaDB version 12.3, drop protection applies to the `rdsrepladmin` account regardless of its host value. Attempting to drop `'rdsrepladmin'@'host'` for any host results in an error. For more information, see [MariaDB security on Amazon RDS](MariaDB.Concepts.UsersAndPrivileges.md).
+
+#### MariaDB version 11.8.9
+<a name="MariaDB.Concepts.VersionMgmt.Supported.Minor.11.8.9"></a>
+
+MariaDB version 11.8.9 is now available on Amazon RDS. This release contains fixes and improvements added by the MariaDB community and Amazon RDS.
+
+**New features and enhancements**
++ Updated the time zone information to base it on `tzdata2026c`.
++ Added support for post-quantum hybrid key exchange (`X25519MLKEM768` and `SecP256r1MLKEM768`) for TLS 1.3 connections. Clients that support post-quantum key exchange negotiate a quantum-resistant shared secret automatically. To confirm which group the current session negotiated, query the `Ssl_named_group` status variable. For example: `SHOW STATUS LIKE 'Ssl_named_group';`.
 
 #### MariaDB version 11.8.8
 <a name="MariaDB.Concepts.VersionMgmt.Supported.Minor.11.8.8"></a>
@@ -181,6 +209,15 @@ MariaDB version 11.8.3 is now available on Amazon RDS. This release contains fix
 
 **New features and enhancements**
 + **New default value for parameter** – The default value of `require_secure_transport` parameter changed from `0` to `1`, enforcing secure transport connections by default. For more information, see [Requiring SSL/TLS for all connections to a MariaDB DB instance on Amazon RDS](mariadb-ssl-connections.require-ssl.md).
+
+#### MariaDB version 11.4.13
+<a name="MariaDB.Concepts.VersionMgmt.Supported.Minor.11.4.13"></a>
+
+MariaDB version 11.4.13 is now available on Amazon RDS. This release contains fixes and improvements added by the MariaDB community and Amazon RDS.
+
+**New features and enhancements**
++ Updated the time zone information to base it on `tzdata2026c`.
++ Added support for post-quantum hybrid key exchange (`X25519MLKEM768` and `SecP256r1MLKEM768`) for TLS 1.3 connections. Clients that support post-quantum key exchange negotiate a quantum-resistant shared secret automatically. To confirm which group the current session negotiated, query the `Ssl_named_group` status variable. For example: `SHOW STATUS LIKE 'Ssl_named_group';`.
 
 #### MariaDB version 11.4.12
 <a name="MariaDB.Concepts.VersionMgmt.Supported.Minor.11.4.12"></a>
@@ -233,6 +270,14 @@ MariaDB version 11.4.4 is now available on Amazon RDS. This release contains fix
 **New features and enhancements**
 + Reverted two MariaDB community changes that cause point-in-time recovery (PITR) to fail. For more information, see [MariaDB Server Jira issue MDEV-35528](https://jira.mariadb.org/browse/MDEV-35528).
 
+#### MariaDB version 10.11.19
+<a name="MariaDB.Concepts.VersionMgmt.Supported.Minor.10.11.19"></a>
+
+MariaDB version 10.11.19 is now available on Amazon RDS. This release contains fixes and improvements added by the MariaDB community and Amazon RDS.
+
+**New features and enhancements**
++ Updated the time zone information to base it on `tzdata2026c`.
+
 #### MariaDB version 10.11.18
 <a name="MariaDB.Concepts.VersionMgmt.Supported.Minor.10.11.18"></a>
 
@@ -283,6 +328,14 @@ MariaDB version 10.11.10 is now available on Amazon RDS. This release contains f
 
 **New features and enhancements**
 + Reverted two MariaDB community changes that cause point-in-time recovery (PITR) to fail. For more information, see [MariaDB Server Jira issue MDEV-35528](https://jira.mariadb.org/browse/MDEV-35528).
+
+#### MariaDB version 10.6.28
+<a name="MariaDB.Concepts.VersionMgmt.Supported.Minor.10.6.28"></a>
+
+MariaDB version 10.6.28 is now available on Amazon RDS. This release contains fixes and improvements added by the MariaDB community and Amazon RDS.
+
+**New features and enhancements**
++ Updated the time zone information to base it on `tzdata2026c`.
 
 #### MariaDB version 10.6.27
 <a name="MariaDB.Concepts.VersionMgmt.Supported.Minor.10.6.27"></a>
@@ -458,7 +511,3 @@ You can use the Database Preview environment to test your workloads against this
 Amazon RDS for MariaDB versions 10.0, 10.1, 10.2, 10.3, 10.4 and 10.5 are deprecated.
 
 For information about the Amazon RDS deprecation policy for MariaDB, see [Amazon RDS FAQs](https://aws.amazon.com/rds/faqs/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

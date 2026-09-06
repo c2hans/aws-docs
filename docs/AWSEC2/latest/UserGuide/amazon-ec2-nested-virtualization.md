@@ -16,6 +16,7 @@ There is no additional cost for using nested virtualization.
 + [Considerations](#nested-virtualization-considerations)
 + [Launch a new instance with nested virtualization enabled](#nested-virtualization-launch-new-instance)
 + [Configure an existing instance to use nested virtualization](#nested-virtualization-configure-existing-instance)
++ [Find the instance types that support nested virtualization](#nested-virtualization-find-supported-instance-types)
 
 ## How it works
 <a name="nested-virtualization-how-it-works"></a>
@@ -26,7 +27,11 @@ Virtual EC2 instances run on a physical host that has the Nitro hypervisor. To s
 <a name="nested-virtualization-considerations"></a>
 
 Before you begin using nested virtualization, consider the following:
-+ **Supported instance types** – Nested virtualization is currently supported on C8i, M8i, R8i, C8id, R8id, M8id, C8i-flex, R8i-flex, M8i-flex, X8i, C7i, R7i, M7i, C7i-flex, M7i-flex, and I7i instances.
++ **Supported instance types** – Nested virtualization is currently supported on the following instance types:
+  + **General Purpose**: M7i \| M7i-flex \| M8i \| M8id \| M8i-flex
+  + **Compute Optimized**: C7i \| C7i-flex \| C8i \| C8id \| C8i-flex
+  + **Memory Optimized**: R7i \| R7iz \| R8i \| R8id \| R8i-flex \| X8i
+  + **Storage Optimized**: I7i \| I7ie
 + **Supported hypervisors** – Currently, KVM and Hyper-V are the supported L1 hypervisors.
 + **Windows instances** – When nested virtualization is enabled on a Windows instance:
   + **[Credential Guard](credential-guard.md)** – Virtual Secure Mode (VSM) is automatically disabled.
@@ -39,9 +44,6 @@ Before you begin using nested virtualization, consider the following:
 <a name="nested-virtualization-launch-new-instance"></a>
 
 When you launch a new instance, you can turn on nested virtualization to run hypervisors and virtual machines on it.
-
-**Prerequisites**
-You must have the required IAM permissions to launch an Amazon EC2 instance.
 
 ------
 #### [ Console ]
@@ -144,6 +146,54 @@ Edit-EC2InstanceCpuOption `
 
 ------
 
-## See also
+## Find the instance types that support nested virtualization
+<a name="nested-virtualization-find-supported-instance-types"></a>
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+You can find which Amazon EC2 instance types support nested virtualization. You can query across an entire AWS Region or check a specific instance type.
+
+------
+#### [ AWS CLI ]
+
+**To list all instance families that support nested virtualization in a Region**
+Use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command with the `processor-info.supported-features` filter set to the value of `nested-virtualization`:
+
+```
+aws ec2 describe-instance-types --region {{us-east-1}} \
+  --filters "Name=processor-info.supported-features,Values=nested-virtualization" \
+  --query "InstanceTypes[].InstanceType" --output text \
+  | tr '\t' '\n' | cut -d. -f1 | sort -u
+```
+
+**To check whether a specific instance type supports nested virtualization**
+Use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command and query the `ProcessorInfo.SupportedFeatures` field of the specified instance type:
+
+```
+aws ec2 describe-instance-types \
+  --instance-types {{m8i.2xlarge}} \
+  --query "InstanceTypes[].ProcessorInfo.SupportedFeatures"
+```
+
+If the instance type supports nested virtualization, the output includes `nested-virtualization`. If not, the command returns an empty array (`[]`).
+
+------
+#### [ PowerShell ]
+
+**To list all instance families that support nested virtualization in a Region**
+Use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) command with the `processor-info.supported-features` filter set to the value of `nested-virtualization`:
+
+```
+Get-EC2InstanceType -Region {{us-east-1}} -Filter @{ Name='processor-info.supported-features'; Values='nested-virtualization' } |
+  ForEach-Object { ($_.InstanceType -split '\.')[0] } |
+  Sort-Object -Unique
+```
+
+**To check whether a specific instance type supports nested virtualization**
+Use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) command and query the `ProcessorInfo.SupportedFeatures` property of the specified instance type:
+
+```
+(Get-EC2InstanceType -InstanceType {{m8i.2xlarge}}).ProcessorInfo.SupportedFeatures
+```
+
+If the instance type supports nested virtualization, the output includes `nested-virtualization`. If not, the command returns no output.
+
+------

@@ -23,7 +23,3 @@ Amazon Translate doesn't guarantee that it will use the target term for every tr
 + [Custom Terminology example using the AWS SDK for Python (Boto)](examples-ct.md)
 + [Encrypting your terminology](protect-terminology.md)
 + [Best practices](ct-best-practices.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Translate. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query translate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

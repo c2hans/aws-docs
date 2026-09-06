@@ -28,7 +28,3 @@ Consider patches at the operating system, database and SAP application layer.
  Tools such as AWS Systems Manager and OpsWorks can assist you to align, plan, test, and deploy patching across your SAP workload. Consider an automated approach to patching to minimize effort and maintenance windows.
 +  AWS Documentation: [AWS Systems Manager Patch Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html?ref=wellarchitected)
 +  SAP Lens [Security]: [Best Practice 6.2 - Build and protect the operating system.](best-practice-6-2.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

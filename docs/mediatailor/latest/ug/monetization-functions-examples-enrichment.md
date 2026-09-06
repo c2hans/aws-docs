@@ -65,7 +65,3 @@ Set `RequestTimeoutMilliseconds` based on the expected response time of your ext
 To handle errors explicitly, check `response.statusCode` before accessing response data: `{%response.statusCode = 200 ? response.body.envelopes[0].value : ''%}`
 
 For more information, see [HTTP request](monetization-functions-types-http-request.md), [Pre-session initialization](monetization-functions-hooks-pre-session.md), [Troubleshooting and monitoring](monetization-functions-troubleshooting.md), and [Limits](monetization-functions-limits.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

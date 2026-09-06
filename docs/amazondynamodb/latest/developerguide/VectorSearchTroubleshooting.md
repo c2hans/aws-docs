@@ -38,7 +38,3 @@ To add a partition key or change other `SearchSchema` attributes, complete the f
 
 **Index operations do not affect base table data**
 Creating or deleting a vector index does not affect the base table or its items. DynamoDB re-derives vector data from the base table items during backfill.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

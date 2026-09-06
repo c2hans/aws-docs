@@ -43,7 +43,3 @@ In China Regions, the key material requirements for symmetric encryption KMS key
 + To import new key material into a KMS key for on-demand rotation, see [Import new key material](importing-keys-import-key-material.md#import-new-key-material) and [Perform on-demand key rotation](rotating-keys-on-demand.md).
 + To identify and view KMS keys with imported key material, see [Identify KMS keys with imported key material](identify-key-types.md#identify-imported-keys).
 + To learn about special considerations for deleting KMS keys with imported key material, see [Deleting KMS keys with imported key material](deleting-keys.md#import-delete-key).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -110,7 +110,3 @@ Suppose that you have the following four instances across two Availability Zones
 If you attempt to terminate all of these instances in the same request, the request reports failure with the following results:
 + **Instance 1** and **Instance 2** are successfully terminated because neither instance is enabled for termination protection.
 + **Instance 3** and **Instance 4** fail to terminate because **Instance 3** is enabled for termination protection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

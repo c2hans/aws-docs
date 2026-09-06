@@ -65,7 +65,3 @@ Amazon Lex V2 provides the following APIs for data retrieval.
 | <a name="lex-ListTestSetRecords"></a>[ListTestSetRecords](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListTestSetRecords.html) | Retrieve records inside an existing test set | Read |
 | <a name="lex-ListTestSets"></a>[ListTestSets](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListTestSets.html) | List test sets | List |
 | <a name="lex-SearchAssociatedTranscripts"></a>[SearchAssociatedTranscripts](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SearchAssociatedTranscripts.html) | Search for associated transcripts that meet the specified criteria | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

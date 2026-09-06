@@ -41,7 +41,3 @@ The AWS Enterprise Transformation program proactively addresses the top barriers
 [6] [The digital core at the heart of organizational design](https://www.accenture.com/us-en/blogs/business-functions-blog/organization-design), by Kent McMillan (Accenture blog post, September 2023)
 
 [7] [Cloud's trillion-dollar prize is up for grabs](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/clouds-trillion-dollar-prize-is-up-for-grabs) (McKinsey Quarterly, February 2021)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

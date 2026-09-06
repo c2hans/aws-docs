@@ -19,7 +19,3 @@ Following, you can learn about Babelfish architecture and how the SQL Server dat
 + [DB cluster parameter group settings for Babelfish](babelfish-configuration.md)
 + [Understanding Collations in Babelfish for Aurora PostgreSQL](babelfish-collations.md)
 + [Managing Babelfish error handling with escape hatches](babelfish-strict.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ In the following sections, you can learn more about the tasks that are associate
 + [Adding comments about a control during a control set review](delegation-for-delegates-add-comment.md)
 + [Marking a control as reviewed in AWS Audit Manager](delegation-for-delegates-changing-control-status.md)
 + [Submitting a reviewed control set back to the audit owner](delegation-for-delegates-submitting-back-to-audit-owner.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

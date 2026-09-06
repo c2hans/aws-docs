@@ -19,7 +19,3 @@ When you create a search pipeline for the Amazon Personalize Search Ranking plug
 + **external\_account\_iam\_role\_arn** – If you use OpenSearch Service, and your Amazon Personalize and OpenSearch Service resources exist in different accounts, specify the ARN of the role that has permission to access your Amazon Personalize resources. This role must exist in the same account as your Amazon Personalize resources. For more information, see [Configuring permissions when resources are in different accounts](configuring-multiple-accounts.md).
 
  For an OpenSearch Service code sample, see [Creating a pipeline in Amazon OpenSearch Service](managed-opensearch-plugin-pipeline-example.md). For an open source OpenSearch example, see [Creating a pipeline in open source OpenSearch](opensearch-plugin-pipeline-example.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ The date when the agreement ends. The agreement and the license/entitlement expi
 
 **Note**
 The contract term specified in the end user license agreement, order form, or other contract between you and seller will control if there's a conflict with the term specified in your AWS Marketplace invoice.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

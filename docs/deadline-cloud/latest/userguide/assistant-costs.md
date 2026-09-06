@@ -50,7 +50,3 @@ After you apply tags to your IAM roles, it can take up to 24 hours for the tag k
 For line-item cost attribution, create a AWS Cost and Usage Report () data export and select **Include caller identity (IAM principal) allocation data**. The export includes a `line_item_iam_principal` column that records the IAM ARN for each Amazon Bedrock request, along with your IAM principal tags prefixed with `iamPrincipal/`.
 
 For more information, see [Using IAM principal for cost allocation](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/iam-principal-cost-allocation.html) in the *AWS Billing User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

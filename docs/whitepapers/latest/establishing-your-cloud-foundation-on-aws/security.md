@@ -19,7 +19,3 @@ Create a secure, high-performing, and resilient foundation for your cloud enviro
 +  **Secrets Management** enables you to manage secrets such as passwords, access keys, other API keys, X.509, or SSH private keys. This capability includes storage, access control, access logging, revocation, and rotation aspects for managing secrets.
 +  **Security Incident Response** enables you to effectively respond to a security incident based on decisions specified in policy. The response involves characterizing the nature of the incident and making changes (which may involve activities including restoration of operational status, identification and remediation of root cause, and gathering evidence pursuant to civil or criminal prosecution).
 +  **Vulnerability & Threat Management** is the ability to identify vulnerabilities that can affect the environment (availability, performance, or security). This capability enables you to assess the impact and scope (such as blast radius) of vulnerabilities and threats, and address/remediate them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

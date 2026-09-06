@@ -23,7 +23,3 @@ The Connector for ServiceNow includes nine sync jobs related to AWS services int
 If you do not see **Execute Now** in the upper left corner, choose **Conﬁgure Job Deﬁnition**. **Execute Now** is visible. ServiceNow Administrator can adjust the Scheduled Job repeat interval as required.
 
 Data is visible in the AWS Service Management scoped app menus after the Connector’s scheduled synchronization job has run.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

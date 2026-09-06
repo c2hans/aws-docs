@@ -53,7 +53,3 @@ When the `message` field is `null` and `status` is `ENABLED`, dependency discove
 
 **Note**
 If `eligibleResourceCount` is 0 after discovery completes, make sure that your service's compute resources meet the prerequisites described in [Prerequisites for dependency discovery](next-gen-discovery-prerequisites.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

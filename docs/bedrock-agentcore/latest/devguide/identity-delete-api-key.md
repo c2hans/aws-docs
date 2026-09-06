@@ -20,7 +20,3 @@ When you no longer need an API key, you can delete it from your account. Deletin
 1. Choose **Delete**.
 
 The API key is permanently removed from your account. Any agents or applications that reference this API key’s ARN will no longer be able to access the stored credentials.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

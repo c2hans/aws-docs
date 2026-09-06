@@ -38,7 +38,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/unpicking-vendor-lock
  Defining what business outcomes you need to achieve, and doing due diligence of a CSP’s offerings, can help you choose the best solutions for your organization’s needs. Making everything easy to switch isn’t the only consideration—it best to focus on adopting services which are best for your organization.
 
  Remember to factor in switching costs into your evaluation of cloud providers so you don’t get locked in technically or contractually. Build a plan that anticipates the potential need to switch technology in the future, and evaluate vendors on how they help to minimize switching time and cost.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

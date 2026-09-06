@@ -240,7 +240,3 @@ The following table describes important updates to the AWS Support and AWS Trust
 | Accessing AWS Support | Removed named support contacts as an access method. | May 28, 2014 |
 | Getting Started | Added the Getting Started section. | December 13, 2013 |
 | Initial publication | New AWS Support service released. | April 30, 2013 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

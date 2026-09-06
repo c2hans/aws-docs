@@ -18,7 +18,3 @@ DB_PERF_INSIGHTS('RDS', 'db-BQ2TPYY7HG2GDFC7APMB3BVB3M', 'db.Transactions.active
 ```
 
 where `db-BQ2TPYY7HG2GDFC7APMB3BVB3M` is the resource ID of your DB instance. Specify the period (for example, 1 minute) and conditions (for example, greater than 1000). To finalize the creation of the alarm, configure alarm actions, add a name and description, and preview and create the alarm.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

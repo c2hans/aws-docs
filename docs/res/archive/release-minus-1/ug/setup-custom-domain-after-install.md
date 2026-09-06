@@ -79,7 +79,3 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/setup-cus
 1. Update the corresponding Route53 subdomain record you created for your virtual desktops to point to the DNS name of the external nlb load balancer: `{{<env-name>}}-external-nlb`.
 
 1. Terminate the existing dcv-gateway instance: `{{<env-name>}}-vdc-gateway` and wait for a new one to spin up. The dcv-gateway instance checks daily at 12:00 AM (midnight) UTC for changes to the certificate and private key values stored in Secrets Manager, and automatically retrieves and applies new values if updated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

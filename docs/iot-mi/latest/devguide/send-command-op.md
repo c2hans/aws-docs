@@ -229,7 +229,3 @@ If a device defines multiple endpoints such that a single cluster (such as On/Of
    1. Set the attribute value to "3" (High fan speed).
 
 Managed Integrations has defined two “custom” command types that are not strictly defined by AWS implementations of the Matter Data Model: The ReadState and UpdateState commands. To get and set Matter defined cluster attributes, Managed Integrations will send your connector an `AWS.SendCommand` request with command IDs pertaining to UpdateState (id: 0xff01) or ReadState (id: 0xff02), with corresponding parameters of attributes that must be either updated or read. These commands can be invoked for ANY device type for attributes that are set as mutable (updatable) or retrievable (readable) from the corresponding AWS implementation of the Matter Data Model.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -74,7 +74,3 @@ This parameter affects CPU usage.
 The number of slices in each video frame affects the CPU usage. You must balance the desired quality against the processing demands of that quality.
 
 We recommend that you set the slices to automatic, to let Elemental Live set the value that works best for the video resolution. For more information, see [Miscellaneous video tuning parameters](vq-miscellaneous-tuning.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

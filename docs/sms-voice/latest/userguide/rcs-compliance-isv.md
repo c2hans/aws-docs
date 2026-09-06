@@ -41,7 +41,3 @@ Each RCS agent must represent a single brand. If your campaign description sugge
 + Registration clearly identifies the single brand this agent represents
 + Campaign description references a single brand, not multiple brands
 + If ISV domain must be used: publicly verifiable authorization exists on the end-brand's website or privacy policy
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

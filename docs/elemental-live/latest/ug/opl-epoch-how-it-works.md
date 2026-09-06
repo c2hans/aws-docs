@@ -35,7 +35,3 @@ Keep this detect-and-correct behavior in mind. Output locking doesn't guarantee 
 As the event runs, there might be times when the event can't detect and correct. For example, if the current source doesn't include a timecode, perhaps because it is slate content.
 
 Even in this case, Elemental Live continues to attempt to synchronize. For example, if the content changes so that a timecode is present again in the source, then Elemental Live will resync again.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

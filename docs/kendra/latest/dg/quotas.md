@@ -140,7 +140,3 @@ Query per second is shared across retrieve and query API.
 | Maximum number of documents per group in a Rescore request. | 3 | Enterprise | No |
 
 For more information about Amazon Kendra service quotas and to request a quota increase, see [Service Quotas](https://docs.aws.amazon.com/general/latest/gr/kendra.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

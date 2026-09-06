@@ -514,7 +514,7 @@ You might find that users often need to set wlm\_query\_slot\_count for certain 
 ### Step 1: Override the concurrency level using wlm\_query\_slot\_count
 <a name="tutorial-wlm-override-slot-count"></a>
 
-For the purposes of this tutorial, we run the same long-running SELECT query. We run it as the `adminwlm` user using wlm\_query\_slot\_count to increase the number of slots available for the query.
+For the purposes of this tutorial, run the same long-running SELECT query. Run it as the `adminwlm` user by using wlm\_query\_slot\_count to increase the number of slots available for the query.
 
 #### To override the concurrency level using wlm\_query\_slot\_count
 <a name="how-to-wlm-override-slot-count"></a>
@@ -644,7 +644,3 @@ Next, run queries from different sessions.
 Your cluster continues to accrue charges as long as it is running. When you have completed this tutorial, return your environment to the previous state by following the steps in [Find Additional Resources and Reset Your Environment](https://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-clean-up-tasks.html) in *Amazon Redshift Getting Started Guide*.
 
 For more information about WLM, see [Workload management](cm-c-implementing-workload-management.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

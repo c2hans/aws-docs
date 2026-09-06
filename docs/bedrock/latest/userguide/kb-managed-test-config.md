@@ -36,7 +36,7 @@ The following JSON object shows the minimal fields required in the [KnowledgeBas
 
 ```
 "retrievalConfiguration": {
-    "vectorSearchConfiguration": {
+    "managedSearchConfiguration": {
         "numberOfResults": number
     }
 }
@@ -139,7 +139,7 @@ The following JSON objects show the minimal fields required in the [KnowledgeBas
 
    ```
    "retrievalConfiguration": {
-       "vectorSearchConfiguration": {
+       "managedSearchConfiguration": {
            "filter": {
                "{{<filter-type>}}": {
                    "key": "string",
@@ -154,7 +154,7 @@ The following JSON objects show the minimal fields required in the [KnowledgeBas
 
    ```
    "retrievalConfiguration": {
-       "vectorSearchConfiguration": {
+       "managedSearchConfiguration": {
            "filter": {
                "{{andAll | orAll}}": [
                    "{{<filter-type>}}": {
@@ -176,7 +176,7 @@ The following JSON objects show the minimal fields required in the [KnowledgeBas
 
    ```
    "retrievalConfiguration": {
-       "vectorSearchConfiguration": {
+       "managedSearchConfiguration": {
            "filter": {
                "{{andAll | orAll}}": [
                    "{{andAll | orAll}}": [
@@ -204,7 +204,7 @@ The following JSON objects show the minimal fields required in the [KnowledgeBas
 
    ```
    "retrievalConfiguration": {
-       "vectorSearchConfiguration": {
+       "managedSearchConfiguration": {
            "filter": {
                "{{andAll | orAll}}": [
                    "{{andAll | orAll}}": [
@@ -307,7 +307,3 @@ Specify the `guardrailId` and `guardrailVersion` of your chosen guardrails.
 <a name="kb-managed-test-config-rerank"></a>
 
 You can use a reranker model to rerank results from knowledge base query. Follow the console steps at [Query a knowledge base and retrieve data](kb-test-retrieve.md). When you open the **Configurations** pane, expand the **Reranking** section. Select a reranker model, update permissions if necessary, and modify any additional options. Enter a prompt and select **Run** to test the results after reranking.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

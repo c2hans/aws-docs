@@ -8,7 +8,3 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 <a name="get-start"></a>
 
 For details about getting started with the multi-account landing zone AMS service, see the [AWS Managed Services Onboarding Introduction](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/og-intro.html). The two onboarding guides provide descriptions of the service and questions to consider to help you get started. Review the feature set [AWS Managed Services Features](https://aws.amazon.com/managed-services/features/), and current resources at [AWS Managed Services Resources](https://aws.amazon.com/managed-services/resources/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

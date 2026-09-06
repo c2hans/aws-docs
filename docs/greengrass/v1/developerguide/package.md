@@ -78,7 +78,3 @@ The **Test** button on the AWS Lambda console doesn't work with this function. T
 ![Create alias screenshot with the Name field set to GG_HW_Counter and the Version field set to 1.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-048.png)
 
    Aliases create a single entity for your Lambda function that Greengrass devices can subscribe to. This way, you don't have to update subscriptions with new Lambda function version numbers every time the function is modified.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

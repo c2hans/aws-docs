@@ -23,7 +23,3 @@ This section includes information on how the endpoint discovery pattern works, h
 + [The endpoint discovery pattern](#Using-API.endpoint-discovery)
 + [How the endpoint discovery pattern works](Using-API.endpoint-discovery.how-it-works.md)
 + [Implementing the endpoint discovery pattern](Using-API.endpoint-discovery.describe-endpoints.implementation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

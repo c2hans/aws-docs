@@ -97,7 +97,3 @@ You can share your meeting bridge information with others so that they can join 
 + Using Share on Android or Airdrop on iOS to share with people nearby who have Bluetooth enabled.
 + Sending it to a recent SMS contact.
 + Sending it to other contacts through another messenger app on your device, such as Facebook Messenger, Slack, and others.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

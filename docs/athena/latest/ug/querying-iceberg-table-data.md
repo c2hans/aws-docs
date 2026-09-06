@@ -88,7 +88,3 @@ SELECT * FROM "{{dbname}}"."{{tablename}}$refs"
 Athena engine version 3 supports Lake Formation fine-grained access control with Iceberg tables, including column level and row level security access control. This access control works with time travel queries and with tables that have performed schema evolution. For more information, see [Lake Formation fine-grained access control and Athena workgroups](lf-athena-limitations.md#lf-athena-limitations-fine-grained-access-control).
 
 If you created your Iceberg table outside of Athena, use [Apache Iceberg SDK](https://iceberg.apache.org/releases/) version 0.13.0 or higher so that your Iceberg table column information is populated in the AWS Glue Data Catalog. If your Iceberg table does not contain column information in AWS Glue, you can use the Athena [ALTER TABLE SET TBLPROPERTIES](querying-iceberg-alter-table-set-properties.md) statement or the latest Iceberg SDK to fix the table and update the column information in AWS Glue.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

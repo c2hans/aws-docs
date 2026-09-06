@@ -25,7 +25,3 @@ Flow actions have the following implicit types associated with them. A type dete
 + [Flow control actions in the Connect Customer Flow language](flow-control-actions.md). These actions are used only to determine the path through a flow. They have no side effects. Certain data may not be available. For example, contact data isn't available if the action is determining its path based on contact data. These actions generally work in every circumstance.
 + [Interactions in the Connect Customer Flow language](interactions.md). These actions have side effects, but don't require a contact or a participant. Interactions include actions such as invoking an AWS Lambda function. They generally work in every circumstance.
 + [Participant actions in the Connect Customer Flow language](participant-actions.md). These actions are attempted only when the flow is run in context of a participant. They generally result in an action that the participant experiences, such as playing a prompt or disconnecting.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

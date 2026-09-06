@@ -21,7 +21,3 @@ LWTs can require additional read capacity units (RCUs) or read request units (RR
 + RCUs/RRUs – If the row doesn't exist, a single RCU/RRU is consumed.
 
 If the evaluated condition results in a successful write operation, WCUs/WRUs are consumed based on the size of the new row.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

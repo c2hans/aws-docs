@@ -20,7 +20,3 @@ A form is in one of the following states:
 + **Active**. A published version of the form that is available to evaluators.
 + **Draft**. An inactive, locked version of the form. A draft is unlocked only when you are working on it.
 + **Locked**. An evaluation form is locked when you activate or publish it. Even after you deactivate the form, it stays locked, and becomes a historical version of the form. However, you can activate the historical version to save it as a new version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

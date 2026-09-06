@@ -86,7 +86,3 @@ If your application uses an external dependency to enrich or otherwise process i
 <a name="performance-troubleshooting-solutions-memory"></a>
 
 Check your application for resource leaks. If your application is not properly disposing of threads or memory, you might see the `millisbehindLatest`, `CheckpointSize`, and `CheckpointDuration`metric spiking or gradually increasing. This condition may also lead to task manager or job manager failures.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

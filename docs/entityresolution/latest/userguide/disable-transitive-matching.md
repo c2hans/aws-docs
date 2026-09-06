@@ -16,7 +16,3 @@ To replace a transitive matching workflow with a non-transitive workflow, comple
 1. Run the new workflow to verify that it produces the expected results.
 
 1. Delete the old transitive matching workflow if it is no longer needed. For more information, see [Deleting a matching workflow](delete-matching-workflow.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

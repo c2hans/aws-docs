@@ -221,7 +221,3 @@ For more detail, see the following:
 +  [re:Invent 2022: Delivering sustainable, high-performing architectures](https://www.youtube.com/watch?v=FBc9hXQfat0)
 
  **Suggestion 6.4.2:** Consider using [Amazon CodeWhisperer](https://aws.amazon.com/codewhisperer/) to reduce your cloud costs, improve your application performance, and [reduce your carbon emissions](https://aws.amazon.com/blogs/compute/building-sustainable-efficient-and-cost-optimized-applications-on-aws/) attributable to your workload.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,7 +59,3 @@ If you have SSL enabled, you must also include the `--https` flag in the command
 1. For the prompt `Httpd must be restarted, which may interrupt REST commands. Restart now?`, type **Y**.
 
 1. Create users through the node's web interface. For instructions, see [Add Users](config-wrkr-srvr-cg-users.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

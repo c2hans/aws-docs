@@ -15,7 +15,3 @@ For example, `dcv://203.0.113.1:8443/?authToken=e3b0c44298fc1c149afbf4c8996fb924
 Your locally installed client will open with the information prepopulated.
 
 For more information, see [GetSessionConnectionData](https://docs.aws.amazon.com/dcv/latest/sm-dev/GetSessionConnectionData.html) in the [Amazon DCV Session Manager Developer Guide](https://docs.aws.amazon.com/dcv/latest/sm-dev)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

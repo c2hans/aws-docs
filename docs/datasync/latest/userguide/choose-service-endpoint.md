@@ -99,7 +99,3 @@ The following diagram shows an example of DataSync using a VPC service endpoint 
    The security group must allow your agent to connect with the private IP addresses of the VPC service endpoint and your [network interfaces](required-network-interfaces.md) (which get created when you create your task).
 
 **Next step: [Activating your AWS DataSync agent](activate-agent.md)**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

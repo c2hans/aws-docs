@@ -38,7 +38,3 @@ In the create response, note the `AppInstanceUserArn`. It takes this form: `arn:
 
 **Note**
 As a best practice, when creating an `AppInstanceUser` for a client application, have the `AppInstanceUserId` match an existing unique ID for that user, such as the `sub` of an identity provider. The name is an optional placeholder that is attached to some API entities, such as a message sender. It allows you to control the display name of a user in one place, rather then needing to look it up from `AppInstanceUser` ARN, which is also attached as the sender of a message.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -80,7 +80,7 @@ In this step, describe how you want each instance in the fleet to run Realtime s
 
 1. Create a **Runtime configuration** to instruct Amazon GameLift Servers on how to run server processes on each instance in the fleet. You can change a fleet's runtime configuration at any time after deployment.
 
-   1. Enter the **Launch path** to an your Realtime script file. Realtime servers run on Linux instances, so the path to the server script is always `/local/game`. Example: **MyRealtimeLaunchScript.js**.
+   1. Enter the **Launch path** to your Realtime script file. Realtime servers run on Linux instances, so the path to the server script is always `/local/game`. Example: **MyRealtimeLaunchScript.js**.
 
    1. Specify the number of **Concurrent processes** to run on each instance. For a game server executable, each process can host one game session, so concurrent processes determines the number of game sessions the instance can host simultaneously.
 
@@ -92,7 +92,7 @@ In this step, describe how you want each instance in the fleet to run Realtime s
 
    1. Set the **New activation timeout** to reflect the maximum amount of time a new game session should take to complete activation and report ready to host players. Amazon GameLift Servers terminates a game session activation if it exceeds this value.
 
-1. Open **EC2 port settings** to allow inbound traffic to access server processes on the fleet. These settings aren't required to create a fleet, but you do need set them before players can connect to game sessions on the fleet.
+1. Open **EC2 port settings** to allow inbound traffic to access server processes on the fleet. These settings aren't required to create a fleet, but you do need to set them before players can connect to game sessions on the fleet.
 
    For each port setting, choose the **Type** of data transfer protocol to use for communication between your game client and game server. Provide a **Port range** (in format `nnnnn[-nnnnn]`) and an **IP address range ** using CIDR notation (such as **0.0.0.0/0** which allows access to anyone).
 
@@ -106,13 +106,13 @@ In this step, describe how you want each instance in the fleet to run Realtime s
 
 1. Choose **Next** to continue the workflow.
 
-**Step 5 Review and create**
+**Step 4 Review and create**
 Review your settings before creating the fleet. Although some settings can be updated later (see [ Update an Amazon GameLift Servers fleet configuration](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/fleets-editing.html)), changes to the following settings aren't allowed after the fleet has been created:
 + Game server binary: To deploy an update to your Realtime server script, you must create a new fleet.
 + Additional options, including instance role and TLS certificate generation.
 + Instance details, including fleet type (Spot or On-Demand) and EC2 instance type.
 When you're ready to deploy the new fleet, choose **Create**. Amazon GameLift Servers immediately begins the fleet activation process, assigning a unique ID and placing the fleet in `NEW` status. Track the fleet's progress from the **Fleets** page.View the details page for the fleet and go to the **Events** tab.
-You can adjust a fleet's hosting capacity after the fleet reaches ACTIVE status. Amazon GameLift Servers initially deploys a fleet with a single instance in each fleet location. and you adjust capacity by adding instances to each location. For more information, see [ Scaling game hosting capacity with Amazon GameLift Servers](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/fleets-manage-capacity.html).
+You can adjust a fleet's hosting capacity after the fleet reaches ACTIVE status. Amazon GameLift Servers initially deploys a fleet with a single instance in each fleet location, and you adjust capacity by adding instances to each location. For more information, see [ Scaling game hosting capacity with Amazon GameLift Servers](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/fleets-manage-capacity.html).
 
 ------
 #### [ AWS CLI ]
@@ -193,7 +193,3 @@ You can change the fleet's capacity and other configuration settings as needed u
 + [delete-fleet-locations](https://docs.aws.amazon.com/cli/latest/reference/gamelift/delete-fleet-locations.html)
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ Specifying in the template a PKCS \#11 library attribute that is not supported b
 | CKR\_ATTRIBUTE\_TYPE\_INVALID | You receive this error when you retrieve value for an attribute, which complies with the PKCS \#11 specification, but is not supported by CloudHSM. |
 | CKR\_ATTRIBUTE\_INCOMPLETE | You receive this error when you do not specify the mandatory attribute in the attribute template. |
 | CKR\_ATTRIBUTE\_READ\_ONLY | You receive this error when you specify a read-only attribute in the attribute template. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ You can enable one or more options for your organization. As an WorkSpaces Appli
 + [Enable and Administer Custom Shared Folders (Server Message Block (SMB) Network Drives) for Your WorkSpaces Applications Users](enable-smb-network-drives.md)
 
 For troubleshooting information, see [Troubleshooting Persistent Storage Issues](troubleshooting-persistent-storage.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

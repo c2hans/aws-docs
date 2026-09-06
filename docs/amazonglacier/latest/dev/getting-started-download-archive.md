@@ -32,7 +32,3 @@ The code examples shown in the following topics initiate the job, wait for it to
 **Topics**
 + [Download an Archive from a Vault in Amazon Glacier by Using the AWS SDK for Java](getting-started-download-archive-java.md)
 + [Download an Archive from a Vault in Amazon Glacier by Using the AWS SDK for .NET](getting-started-download-archive-dotnet.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

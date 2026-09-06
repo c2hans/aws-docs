@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/revis
 | September 2024 | Released version 2.6.3 +  Updated package versions to resolve security vulnerabilities.  <br />+  Changed Alpine base image to be sourced from Amazon ECR.  <br />For more information, refer to the [CHANGELOG.md](https://github.com/aws-solutions/data-transfer-hub/blob/main/CHANGELOG.md) file in the GitHub repository. |
 | October 2024 | Released version 2.6.4 Updated package versions to resolve security vulnerabilities. For more information, refer to the [CHANGELOG.md](https://github.com/aws-solutions/data-transfer-hub/blob/main/CHANGELOG.md) file in the GitHub repository. |
 | November 2024 | Released version 2.6.5 Updated package versions to resolve security vulnerabilities. For more information, refer to the [CHANGELOG.md](https://github.com/aws-solutions/data-transfer-hub/blob/main/CHANGELOG.md) file in the GitHub repository. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

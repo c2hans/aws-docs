@@ -18,7 +18,3 @@ You can associate a space with your CodeCatalyst Identity Center application. Yo
 Make sure you are signed in to the AWS Management Console with the AWS account that will be the specified billing account for your space.
 
 1. Under **Application Enabled Spaces**, choose **Connect space**. On the **Choose or create a CodeCatalyst space** page, choose the space that you want to associate with your application, or you can choose to create a new space.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ For more information on the Amazon Q Developer Pro tier, see [Tiers of service f
 If you see an error message that starts with, `Your account has not been configured to use an Amazon Q subscription`, see [Troubleshooting Amazon Q Developer Pro subscriptions](q-admin-setup-subscribe-troubleshooting.md) for troubleshooting tips.
 
 If you sign in to the AWS console with IAM or federation with IAM, then you will be prompted to authenticate with IAM Identity Center when you reach a Free tier limit or attempt to use a feature only available at the Pro tier.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

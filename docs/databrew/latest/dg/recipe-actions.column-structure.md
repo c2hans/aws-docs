@@ -20,7 +20,3 @@ Use these column structure recipe steps to modify the column structure of your d
 + [SPLIT\_COLUMN\_MULTIPLE\_DELIMITER](recipe-actions.SPLIT_COLUMN_MULTIPLE_DELIMITER.md)
 + [SPLIT\_COLUMN\_SINGLE\_DELIMITER](recipe-actions.SPLIT_COLUMN_SINGLE_DELIMITER.md)
 + [SPLIT\_COLUMN\_WITH\_INTERVALS](recipe-actions.SPLIT_COLUMN_WITH_INTERVALS.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

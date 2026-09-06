@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/prepare-for-al2023.html
 <a name="systemd-timers"></a>
 
  By default, `cron` is not installed in AL2023. You can migrate your `cron` jobs to `systemd` timers in AL2 in preparation for migrating to AL2023. `systemd` has many advantages, such as more precise control over when timers are run and improved logging.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

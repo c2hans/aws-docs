@@ -370,7 +370,3 @@ This typically means on-premises traffic is not routing through a VPC endpoint:
 + **Allow-only policies do not restrict access.** If you use conditions (such as `aws:SourceVpc`) only in an Allow statement without a corresponding Deny, the caller's IAM identity policy can independently grant access. Add an explicit Deny statement with the inverse condition.
 + **Case sensitivity.** The condition key `aws:VpcSourceIp` is case-sensitive.
 + **Mutually exclusive condition keys.** `aws:SourceIp` and `aws:VpcSourceIp` are mutually exclusive. `aws:SourceIp` is not available when the request traverses a VPC endpoint — use `aws:VpcSourceIp` instead. Conversely, `aws:VpcSourceIp` is not available for internet requests — use `aws:SourceIp`. This applies to all policies that use these condition keys, including access point policies, VPC endpoint policies, and IAM identity policies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

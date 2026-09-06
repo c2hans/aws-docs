@@ -34,7 +34,3 @@ You must enable Cost Explorer to allow Pricing Calculator to import your histori
 Pricing Calculator will override any Cost Management preferences you have set, such as Linked account discounts. That means that if `After_discount` is selected, you will be able to see `netUnblendedRate` based cost, irrespective of your Linked account discount preference.
 For access to the Pricing Calculator console, you must migrate your policies from under `aws-portal` to fine-grained access controls. For information about how to do this, see [ Migrating access control for AWS Billing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/migrate-granularaccess-whatis.html).
 Amazon Billing Conductor (ABC) proforma data views aren't available in Pricing Calculator. If your member accounts have access to Pricing Calculator, they will be able to view chargeable cost and usage depending on their rate type preference setting in Pricing Calculator.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

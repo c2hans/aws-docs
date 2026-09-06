@@ -180,7 +180,3 @@ The following tables shows the event category and a list of events when a snapsh
 | Monitoring | REDSHIFT-EVENT-3006 | INFO | The final snapshot [snapshot name] for Amazon Redshift cluster [cluster name] was cancelled at [time]. |
 | Monitoring | REDSHIFT-EVENT-3502 | ERROR | The final snapshot [snapshot name] for Amazon Redshift cluster [cluster name] failed at [time]. The team is investigating the issue. Please visit the AWS Management Console to retry the operation. |
 | Monitoring | REDSHIFT-EVENT-3503 | ERROR | The user snapshot [snapshot name] for your Amazon Redshift cluster [cluster name] failed at [time]. The team is investigating the issue. Please visit the AWS Management Console to retry the operation. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -209,7 +209,3 @@ The VARBYTE data type can't be implicitly converted to any other data type. For 
 Amazon Redshift uses dynamic typing to process schemaless SUPER data without the need to declare the data types before you use them in your query. Dynamic typing uses the results of navigating into SUPER data columns without having to explicitly cast them into Amazon Redshift types. For more information about using dynamic typing for SUPER data type, see [Dynamic typing](query-super.md#dynamic-typing-lax-processing).
 
 You can cast SUPER values to and from other data types with some exceptions. For more information, see [Limitations](limitations-super.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

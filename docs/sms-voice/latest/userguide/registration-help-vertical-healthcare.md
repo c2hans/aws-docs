@@ -193,7 +193,3 @@ Campaign submissions will only be approved if the messaging intent is purely inf
 <a name="registration-help-vertical-healthcare-glp1-requirements"></a>
 + **FDA approval required** – Products must have formal FDA approval. Lack of approval significantly increases the likelihood of rejection.
 + **Legal in all 50 states** – Products must be legal in all 50 U.S. states. If restricted in even one state, the campaign will be rejected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

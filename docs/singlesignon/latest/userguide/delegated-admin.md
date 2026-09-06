@@ -128,7 +128,3 @@ You can create permissions sets that you assign to your IAM Identity Center admi
 Before you can register an account as a delegated administrator you must first have the following environment deployed:
 + AWS Organizations must be enabled and configured with at least one member account in addition to your default management account.
 + If your identity source is set to Active Directory, the [IAM Identity Center configurable AD sync](provision-users-from-ad-configurable-ADsync.md) feature must be enabled.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

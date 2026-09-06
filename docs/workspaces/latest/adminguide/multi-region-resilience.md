@@ -175,7 +175,3 @@ After an outage, users should manually back up any data they have created on the
 <a name="mrr-ec2-recovery"></a>
 
 Amazon Multi-Region Resilience(MRR) relies on Amazon EC2 On-Demand pools by default. If a specific Amazon EC2 instance type is unavailable to support your recovery, MRR will automatically attempt to scale up the instance repeatedly until an available instance type is found, but in extreme circumstances, instances may not always be available. To improve the availability of the required instance types you need for your most critical WorkSpaces, contact AWS Support and we will assist you on capacity planning.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

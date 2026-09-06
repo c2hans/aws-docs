@@ -43,7 +43,3 @@ Once your source repository is converted into a custom blueprint, a release work
 
 **Important**
 To add a custom blueprint to your space's blueprints catalog, you must be signed in with an account that has the **Space administrator** or **Power user** role in the space.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

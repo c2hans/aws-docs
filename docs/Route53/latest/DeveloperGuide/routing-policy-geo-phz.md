@@ -18,7 +18,3 @@ If the geolocation record for the DNS query's region is unhealthy, the default r
 In the example configuration in the following figure, DNS queries coming from an us-east-1 AWS Region (Virginia) will be routed to the 1.1.1.1 endpoint.
 
 ![A screenshot that shows a geolocation record for a private hosted zone.](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/images/geolocation-phz.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

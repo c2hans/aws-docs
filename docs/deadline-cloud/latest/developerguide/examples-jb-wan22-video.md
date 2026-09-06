@@ -22,7 +22,3 @@ deadline bundle submit ./wan22_video_generation \
 ```
 
 The README describes the full parameter set, including resolution and frame-count constraints, faster smoke-test settings, and measured generation times. For related generative AI examples, see [Generate images in batch with a diffusion model on Deadline Cloud](examples-jb-text-to-image-batch.md) and [Train and use a FLUX.2 Klein LoRA on Deadline Cloud](examples-jb-flux-lora.md). For persistent volume setup, see the fleet storage documentation linked from the README.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

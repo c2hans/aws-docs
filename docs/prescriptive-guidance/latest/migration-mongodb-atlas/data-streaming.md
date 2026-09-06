@@ -17,7 +17,3 @@ Key highlights:
 + Reliable data delivery
 
 For more information, see the AWS blog post [Integrating MongoDB's Application Data Platform with Amazon Data Firehose](https://aws.amazon.com/blogs/big-data/integrating-the-mongodb-cloud-with-amazon-kinesis-data-firehose/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

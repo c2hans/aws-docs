@@ -81,7 +81,3 @@ You can use the following API actions, which are part of the Lightsail API, to m
 + [GetOperations](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_GetOperations.html) - Returns information about all operations. Results are returned from oldest to newest, up to a maximum of 200. Results can be paged by making each subsequent call to `GetOperations` use the maximum (last) `statusChangedAt` value from the previous request.
 + [GetOperationsForResource](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_GetOperationsForResource.html) - Gets operations for a specific resource, such as a virtual computer or a disk.
 + [GetRegions](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_GetRegions.html) - Returns a list of all valid AWS Regions for Lightsail. Use the `include availability zones` parameter to also return the Availability Zones in a region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail for Research. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail-for-research` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

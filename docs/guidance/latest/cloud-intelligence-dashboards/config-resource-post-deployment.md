@@ -133,7 +133,3 @@ SELECT * FROM "cid_crcd_database"."cid_crcd_config" limit 10;
 ```
 
 1. Log onto Quick Sight and [refresh](https://docs.aws.amazon.com/quicksight/latest/user/refreshing-imported-data.html) your datasets before opening the dashboard.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -71,7 +71,3 @@ View details about updates to AWS managed policies for AWS CodeConnections since
 | [AWSGitSyncServiceRolePolicy](#security-iam-awsmanpol-AWSGitSyncServiceRolePolicy) – Updated policy | AWS CodeStar Connections service name changed to AWS CodeConnections. Updated the policy for resources with ARNs that contain both service prefixes. | April 26, 2024 |
 | [AWSGitSyncServiceRolePolicy](#security-iam-awsmanpol-AWSGitSyncServiceRolePolicy) – New policy | AWS CodeStar Connections added the policy.<br />Grants permissions to allow connections users to use Git sync with connected Git-based repositories. | November 26, 2023 |
 | AWS CodeConnections started tracking changes | AWS CodeConnections started tracking changes for its AWS managed policies. | November 26, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

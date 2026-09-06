@@ -29,7 +29,3 @@ AWS User Notifications provides the following APIs for data retrieval.
 | <a name="notifications-ListNotificationHubs"></a>[ListNotificationHubs](https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListNotificationHubs.html) | List NotificationHubs | List |
 | <a name="notifications-ListOrganizationalUnits"></a>[ListOrganizationalUnits](https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListOrganizationalUnits.html) | List Organizational Units for a Notification Configuration | List |
 | <a name="notifications-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListTagsForResource.html) | Get tags for a resource | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

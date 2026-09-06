@@ -40,7 +40,3 @@ View details about updates to AWS managed policies for AWS Local Zones since thi
 | Change | Description | Date |
 | --- | --- | --- |
 | AWSZoneGroupAccessManagementServiceRolePolicy – New policy | Added a new AWS managed policy that allows an administrator to enable Zone Groups on behalf of their entire organization, automatically opting-in all existing member accounts and new accounts joining the organization. | June 30, 2025 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Local Zones. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query local-zones` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

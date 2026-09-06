@@ -393,7 +393,3 @@ You might see an alert on your **Payment preferences** page if you recently chan
 1. (If you have an eligible card saved on file for the new SOR) Choose the card and **Set as default**.
 
 1. (If you don't have an eligible card saved on file) Choose **Add payment method** and enter a credit or debit card eligible for payments outside of AWS India. After it is saved, choose **Set as default**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

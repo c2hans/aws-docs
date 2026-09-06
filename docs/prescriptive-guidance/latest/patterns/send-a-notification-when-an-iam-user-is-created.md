@@ -115,7 +115,3 @@ A .zip file of the project is available as an attachment.
 <a name="attachments-5487fbff-72e7-4da4-a970-a4542e89824d"></a>
 
 To access additional content that is associated with this document, download and unzip the following file: [attachment.zip](samples/p-attach/5487fbff-72e7-4da4-a970-a4542e89824d/attachments/attachment.zip)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

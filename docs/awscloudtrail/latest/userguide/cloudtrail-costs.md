@@ -38,7 +38,3 @@ The following table describes the CloudTrail usage types for each CloudTrail fea
 | CloudTrail Lake | `{{region}}-Ingestion-Bytes-1yearstore-Other-data-sources` | The charge for ingesting other event sources into a CloudTrail Lake event data store using the **One-year extendable retention pricing** option. This includes CloudTrail Insights events, configuration items from AWS Config, evidence from AWS Audit Manager, (uncompressed) historical CloudTrail logs imported from S3, and events outside of AWS. |
 | CloudTrail Lake | `{{region}}-QueryScanned-Bytes` | The charge for running CloudTrail Lake queries. When you run queries in CloudTrail Lake, you incur charges based on the amount of optimized and compressed data scanned. |
 | CloudTrail Insights | `{{region}}-InsightsEvents` | The charge for CloudTrail Insights events. For Insights events, you incur charges based on the number of management events analyzed per Insight type. For more information, see [Costs for Insights events](insights-events-costs.md). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

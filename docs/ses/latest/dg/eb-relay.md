@@ -200,7 +200,3 @@ The following walkthrough example shows you how to setup Microsoft Office 365 to
       + Select both **Automatically detect and skip the last IP address** and **Apply to entire organization**.
 ![Edit the previously created connector's configuration.](http://docs.aws.amazon.com/ses/latest/dg/images/MSO365EditConnector.png)
       + Select **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

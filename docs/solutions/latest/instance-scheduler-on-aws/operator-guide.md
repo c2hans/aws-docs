@@ -52,6 +52,9 @@ On the AWS Management Console, use the [Tag Editor](https://console.aws.amazon.c
 
 Shortly after tagging a resource, an IS-ManagedBy tag will be applied to the resource by Instance Scheduler to indicate that the resource is now being managed by the scheduler. You can look for this tag to confirm that the resource has been correctly registered for scheduling.
 
+**Note**
+For Auto Scaling groups specifically, this also applies if the schedule tag is already present at creation time, such as when the group is created through AWS CloudFormation, Terraform, the AWS CDK, or the AWS CLI/SDK. Instance Scheduler detects the new group and registers it for scheduling without requiring you to re-apply the tag afterward.
+
 ### Setting the tag value
 <a name="setting-the-tag-value"></a>
 
@@ -69,7 +72,3 @@ If your EC2 DB instances have EBS volumes encrypted with customer-managed KMS ke
 <a name="ec2-instances-managed-in-license-manager"></a>
 
 If your EC2 instances are managed in AWS License Manager, you must give the Instance Scheduler role the appropriate License Manager permissions to be able to start and stop those instances. For more information, refer to [EC2 License Manager](security-1.md#ec2-license-manager).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Instance Scheduler on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

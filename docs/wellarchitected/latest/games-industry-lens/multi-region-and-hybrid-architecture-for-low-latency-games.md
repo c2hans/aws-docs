@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 1.  Use AWS Local Zones to host game servers in geographic locations of under-served players where you do not have existing hosting facilities, or an AWS Region is not available.
 
 1.  Deploy AWS Outposts into your existing on-premises data centers and co-location providers to create a seamless control plane and management experience across each deployment location using fully managed racks and rack-mounted servers. AWS Outposts are also beneficial if you don't have existing server capacity in your on-premises environment. However, if you want a hybrid implementation with software running on your own existing server infrastructure, you should use Amazon EKS Anywhere, which allows you to create and run Kubernetes clusters on your own infrastructure with connectivity back to Amazon EKS. This provides a consistent console view of your Kubernetes clusters in on-premises.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

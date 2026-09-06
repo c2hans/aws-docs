@@ -41,7 +41,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
  WorkSpaces Applications [*web browser access*](https://docs.aws.amazon.com/appstream2/latest/developerguide/access-through-web-browser-admin.html) allows access to applications without the need to install a dedicated client. Users can connect using a supported HTML5-capable browser. There is no requirement for any browser plugin or extension.
 
  Web browser access provides for a wide choice of end device operating systems and types.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

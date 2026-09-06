@@ -10,7 +10,3 @@ The `pgactive` extension works per database and not per cluster. Each DB instanc
 The `pgactive` extension provides mechanisms for conflict detection and automatic resolution. It tracks the time stamp when the transaction was committed on both the DB instances and automatically applies the change with the latest time stamp. The `pgactive` extension also logs when a conflict occurs in the `pgactive.pgactive_conflict_history` table.
 
 The `pgactive.pgactive_conflict_history` will keep growing. You may want to define a purging policy. This can be done by deleting some records on a regular basis or defining a partitioning scheme for this relation (and later detach, drop, truncate partitions of interest). To implement the purging policy on a regular basis, one option is to use the `pg_cron` extension. See the following information of an example for the `pg_cron` history table, [Scheduling maintenance with the PostgreSQL pg\_cron extension](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL_pg_cron.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

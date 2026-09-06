@@ -122,7 +122,3 @@ Although there is no official documentation on the Joomla website, there are som
 + Several Lightsail instances running Joomla attached to the load balancer with the document root of Joomla\! synchronized. You can do this using tools like Rsync, having an NFS server that is in charge of synchronizing the content among all Lightsail instances, or sharing files using AWS.
 + Several database servers configured with a replication cluster.
 + The same cache system configured in each Lightsail instance. There are some useful extensions, such as [JotCache](https://extensions.joomla.org/extension/jotcache/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

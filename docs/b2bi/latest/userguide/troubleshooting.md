@@ -67,7 +67,7 @@ In the case that you try to create a resource (such as a profile or transformer)
 
 1. Sign in to AWS CLI.
 
-1. Add the following policy to enable B2B Data Interchange to deliver logs to resource log groups using the following command. Replace {{REGION}} and {{ACCOUNT\_ID}} with your actual values for region and AWS account ID. For the policy name, we suggest using **AWSLogsDeliveryWriteB2Bi**, but you can choose your own name for the policy.
+1. Add the following policy to enable B2B Data Interchange to deliver logs to resource log groups using the following command. Replace the Region and AWS account ID in the example with your actual values. For the policy name, we suggest using **AWSLogsDeliveryWriteB2Bi**, but you can choose your own name for the policy.
 
    ```
    aws logs put-resource-policy \
@@ -87,13 +87,13 @@ In the case that you try to create a resource (such as a profile or transformer)
                    "logs:CreateLogStream",
                    "logs:PutLogEvents"
                ],
-               "Resource": "arn:aws:logs:{{REGION}}:{{ACCOUNT_ID}}:log-group:/aws/vendedlogs/b2bi/*",
+               "Resource": "arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:/aws/vendedlogs/b2bi/*",
                "Condition": {
                    "StringEquals": {
-                       "aws:SourceAccount": "{{ACCOUNT_ID}}"
+                       "aws:SourceAccount": "{{111122223333}}"
                    },
                    "ArnLike": {
-                       "aws:SourceArn": "arn:aws:logs:{{REGION}}:{{ACCOUNT_ID}}:*"
+                       "aws:SourceArn": "arn:aws:logs:{{us-east-1}}:{{111122223333}}:*"
                    }
                }
            }
@@ -120,7 +120,3 @@ When contacting support, be prepared to provide:
 + The specific resource IDs involved (profiles, partnerships, etc.)
 + Error messages and timestamps
 + Steps you've already taken to troubleshoot the issue
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS B2B Data Interchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query b2bi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

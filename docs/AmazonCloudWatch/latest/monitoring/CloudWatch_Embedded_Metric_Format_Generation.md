@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 + [Using the PutLogEvents API to send manually-created embedded metric format logs](CloudWatch_Embedded_Metric_Format_Generation_PutLogEvents.md)
 + [Using the CloudWatch agent to send embedded metric format logs](CloudWatch_Embedded_Metric_Format_Generation_CloudWatch_Agent.md)
 + [Using the embedded metric format with AWS Distro for OpenTelemetry](CloudWatch_Embedded_Metric_Format_OpenTelemetry.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

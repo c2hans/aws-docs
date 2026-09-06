@@ -112,7 +112,3 @@ Do the following in the govern phase:
 1. Validate compliance with regulatory requirements and industry standards, such as General Data Protection Regulation (GDPR) and Health Insurance Portability and Accountability Act (HIPAA).
 
 1. Conduct regular audits and reviews to validate adherence to governance and compliance guidelines.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -121,7 +121,3 @@ Amazon Aurora provides metrics in real time for the operating system (OS) that y
   - **Metric:**  `stopped`  / **Console name:**  **Tasks Stopped**  / **Description:** The number of tasks that are stopped.
   - **Metric:**  `total`  / **Console name:**  **Tasks Total**  / **Description:** The total number of tasks.
   - **Metric:**  `zombie`  / **Console name:**  **Tasks Zombie**  / **Description:** The number of child tasks that are inactive with an active parent task.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

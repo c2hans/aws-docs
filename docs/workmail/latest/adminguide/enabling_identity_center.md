@@ -31,7 +31,3 @@ Make sure Amazon WorkMail and IAM Identity Center are setup in the same region.
    The **Identity Center Settings** page appears with the **Identity Center Status** displayed.
 
 1. To add IAM Identity Center users and groups to your Amazon WorkMail Organization, follow the link under **Identity Center status**. For information on how to add users and groups, see [Manage identities in IAM Identity Center.](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source-sso.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

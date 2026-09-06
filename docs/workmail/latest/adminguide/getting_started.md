@@ -81,7 +81,3 @@ Some mail clients don't switch seamlessly to Amazon WorkMail. These clients requ
 + Microsoft Outlook on Windows – Requires Outlook to be restarted. At startup, you are required to choose whether to keep using the old mailbox or use a temporary mailbox. Choose the temporary mailbox option. Then, reconfigure the Microsoft Exchange mailbox.
 + Microsoft Outlook on MacOS – When Outlook is restarted, it will prompt the following message: **Outlook was redirected to server {{orgname}}.awsapps.com. Do you want this server to configure your settings?** Accept the suggestion.
 + Mail on iOS – The mail app stops receiving emails and generates a **can't get mail** error. Recreate and reconfigure the Microsoft Exchange mailbox.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

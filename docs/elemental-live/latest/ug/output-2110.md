@@ -17,7 +17,3 @@ You can't use AWS Elemental Conductor Live to produce SMPTE 2110 outputs that us
 + [Step 2: Design the workflow](s2110-out-design-workflow.md)
 + [Step 3: Create SMPTE 2110 output group](config-output-2110.md)
 + [Step 4: Download and post the SDP file](locate-sdp.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

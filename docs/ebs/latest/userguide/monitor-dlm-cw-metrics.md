@@ -222,7 +222,7 @@ The following are example use cases.
 
 You can use the `ResourcesTargeted` metric to monitor the total number of resources that are targeted by a specific policy each time it is run. This enables you to trigger an alarm when the number of targeted resources is below or above an expected threshold.
 
-For example, if you expect your daily policy to create backups of no more than `50` volumes, you can create an alarm that sends an email notification when the `sum` for `ResourcesTargeted` is greater than `50` over a `1` hour period. In this way, you can ensure that no snapshots have been unexpectedly created from volumes that have been incorrectly tagged.
+For example, if you expect your daily policy to create backups of no more than `50` volumes, you can create an alarm that sends an email notification when the `sum` for `ResourcesTargeted` is greater than `50` over a `1` hour period. In this way, you can make sure that no snapshots have been unexpectedly created from volumes that have been incorrectly tagged.
 
 You can use the following command to create this alarm:
 
@@ -246,7 +246,7 @@ $ C:\> aws cloudwatch put-metric-alarm \
 
 You can use the `SnapshotDeleteFailed` metric to monitor for failures to delete snapshots as per the policy's snapshot retention rule.
 
-For example, if you've created a policy that should automatically delete snapshots every twelve hours, you can create an alarm that notifies your engineering team when the `sum` of `SnapshotDeletionFailed` is greater than `0` over a `1` hour period. This could help to investigate improper snapshot retention and to ensure that your storage costs are not increased by unnecessary snapshots.
+For example, if you've created a policy that should automatically delete snapshots every twelve hours, you can create an alarm that notifies your engineering team when the `sum` of `SnapshotDeletionFailed` is greater than `0` over a `1` hour period. This could help to investigate improper snapshot retention and to make sure that your storage costs are not increased by unnecessary snapshots.
 
 You can use the following command to create this alarm:
 
@@ -293,7 +293,3 @@ $ C:\> aws cloudwatch put-metric-alarm \
 <a name="manage"></a>
 
 For more information about what to do when one of your policies reports an unexpected non-zero value for a failed action metric, see the article [What should I do if Amazon Data Lifecycle Manager reports failed actions in CloudWatch metrics?](https://repost.aws/knowledge-center/cloudwatch-metrics-dlm)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

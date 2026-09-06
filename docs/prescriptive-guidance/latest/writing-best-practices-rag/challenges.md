@@ -16,7 +16,3 @@ The following are the most common raw document challenges for an optimal RAG app
 + **Lack of domain-specific knowledge or context** – Raw documents can lack the necessary domain-specific knowledge or context required for accurate generation. This can limit the ability of RAG models to generate relevant and accurate responses. An example is a document that references specialized concepts without providing context. This might lead to responses that are not meaningful in the given domain.
 
 Although this list isn't comprehensive, it provides a starting point for enterprises to think about what is not working and why. Documents might have one or more of these challenges. The key to optimizing a RAG application is to use a set of documents that adhere to writing best practices that optimize retrieval.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

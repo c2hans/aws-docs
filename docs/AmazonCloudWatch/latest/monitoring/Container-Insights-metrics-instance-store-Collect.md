@@ -22,7 +22,3 @@ The following metrics can be collected.
 | `instance_store_performance_exceeded_iops` | `diskio_instance_store_performance_exceeded_iops` | The total time, in microseconds, that IOPS demand exceeded the volume's IOPS maximum performance. |
 | `instance_store_performance_exceeded_tp` | `diskio_instance_store_performance_exceeded_tp` | The total time, in microseconds, that throughput demand exceeded the volume's maximum throughput performance. |
 | `instance_store_volume_queue_length` | `diskio_instance_store_volume_queue_length` | The number of read and write operations waiting to be completed. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

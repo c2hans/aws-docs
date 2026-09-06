@@ -212,7 +212,3 @@ When you're done, you might notice that your agent is offline. This happens brie
 + [Verify your agent's connection](test-agent-connections.md) to your storage system and the DataSync service.
 + If you run into issues trying to activate your agent, get help with [troubleshooting](troubleshooting-datasync-agents.md).
 + Create the DataSync location that you want to use with your agent. This might be an [on-premises](transferring-on-premises-storage.md) or [other cloud](transferring-other-cloud-storage.md) location.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

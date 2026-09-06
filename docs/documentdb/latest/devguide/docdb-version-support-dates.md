@@ -35,7 +35,3 @@ Minor versions are available starting on major version 5.0.
 | Version 5.0.1 | 8 June 2026 |
 
 Amazon DocumentDB designates certain versions as Long-Term Support (LTS) releases. For more information, see [Using a long-term support (LTS) release](docdb-lts-release.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

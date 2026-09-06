@@ -104,7 +104,3 @@ When using built-in with overrides strategies you are also required to provide a
 
 **Note**
 When using built-in with overrides strategies, the LLM usage for extraction and consolidation will be charged separately to your AWS account, and additional charges may apply.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

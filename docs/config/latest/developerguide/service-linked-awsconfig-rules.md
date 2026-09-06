@@ -26,7 +26,3 @@ To add remediation actions to a service-linked rules in a conformance pack, you 
 **Editing and deleting service-linked rules**
 
 To edit or delete a service-linked rule, contact the AWS service that created the rule. For example, for service-linked rules created by AWS Security Hub CSPM, you can remove a service-linked rule by following these steps in the *AWS Security Hub CSPM User Guide*: [Disabling a security standard](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-enable-disable.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

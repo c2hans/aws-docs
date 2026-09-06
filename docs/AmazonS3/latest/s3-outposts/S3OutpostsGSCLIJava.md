@@ -97,7 +97,3 @@ For examples of how to create an endpoint for an S3 Outpost with the AWS SDK for
 <a name="S3OutpostsGSUploadObject"></a>
 
 To upload an object, see [Upload an object to an S3 on Outposts bucket](S3OutpostsUploadObjects.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

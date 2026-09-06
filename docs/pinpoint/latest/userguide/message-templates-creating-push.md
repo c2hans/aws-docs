@@ -104,7 +104,3 @@ An example of a use case that requires you to use a raw message template is when
 1. When you finish entering the raw message content, choose **Create**.
 
 To test the template before you use it in a push notification that you send to users, you can [send a test notification](messages-mobile.md) that uses the template. If you do this, make sure that you first complete step 10 to specify default values for all the variables in the template. Otherwise, the push notification might not be sent or it might not render correctly.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

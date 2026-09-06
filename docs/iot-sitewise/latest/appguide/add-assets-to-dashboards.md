@@ -37,7 +37,3 @@ You can add asset properties to a new dashboard or an existing dashboard.
    + The default visualization type for alarms is the [status grid widget](choose-visualization-types.md#status-grid-chart).
 
    You can change the visualization type and customize the visualization settings. For more information, see [Customize visualizations](customize-visualizations.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

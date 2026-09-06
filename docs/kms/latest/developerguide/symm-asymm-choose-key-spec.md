@@ -224,7 +224,3 @@ SM2PKE is an elliptic curve based encryption algorithm defined by OSCCA in GM/T 
 +
 **SM2DSA** signing algorithm
 SM2DSA is an elliptic curve based signing algorithm defined by OSCCA in GM/T 0003.2-2012. SM2DSA requires a distinguishing ID that is hashed with the SM3 hashing algorithm and then combined with the message, or message digest, that you passed to AWS KMS. This concatenated value is then hashed and signed by AWS KMS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

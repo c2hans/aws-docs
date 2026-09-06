@@ -33,8 +33,10 @@ Avoid extreme cardinality in either direction:
 To filter further within a partition, use inline filter attributes.
 
 **Throughput example.** Consider a 768-dimensional embedding model (such as Cohere Embed v3) with 1 KB of non-vector item data, giving a total item size of approximately 4 KB (768 dimensions × 4 bytes \+ 1 KB). With this item size, the per-partition-key limits translate to:
-+ **Search:** 1 GBps ÷ 4 KB ≈ 250,000 vectors examined per second per partition key value. As the number of vectors in a partition grows, each search examines more data and you will approach this limit sooner.
++ **Search:** 1 GBps ÷ 4 KB ≈ 250,000 vectors examined per second per partition key value. As the number of vectors in a partition grows, each search examines more data and you approach this limit sooner.
 + **Write:** 10 MBps ÷ 4 KB ≈ 2,500 vector writes per second per partition key value
+
+The growth is logarithmic rather than proportional. An order of magnitude more vectors in a partition adds only a small amount to the data each search examines.
 
 Spreading your data across more partition key values multiplies these limits. For example, 50 partition key values provide up to 50× the aggregate search and write throughput. If your workload exceeds these per-partition-key limits, contact AWS Support.
 
@@ -54,7 +56,3 @@ DynamoDB does not recompute embeddings for you. Whenever you change the source c
 You can create up to 5 vector indexes on a single table. Use separate indexes to evaluate different embedding models or model versions side by side. Store each model's embeddings in a different vector attribute and create a vector index for each. This lets you compare search quality between models against the same underlying data without migrating your production index.
 
 For example, when upgrading from one model version to another, create a second index with the new model's dimensions and distance function. Backfill it with embeddings from the new model, run test queries against both indexes, and compare relevance. After you are satisfied, migrate your application to the new index and delete the old one.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

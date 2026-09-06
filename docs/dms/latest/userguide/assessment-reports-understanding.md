@@ -71,7 +71,3 @@ The Summary CSV file reports the storage objects count, code objects count, and 
 For every object type — such as tables, views, procedures, triggers, indexes, constraints, and sequences — the summary reports the number of objects of that type and how those objects are distributed across the four complexity categories: automatically converted, simple actions, medium-complexity actions, and complex actions. For example, a report might show 474 tables in total, with 379 automatically converted, 29 with simple actions, 6 with medium-complexity actions, and 60 with complex actions. Comparing the distribution across object types can help you identify which types of objects in your schema need the most manual conversion effort. For more information about the complexity categories, see [Complexity categories](#assessment-reports-understanding-complexity).
 
 To use these statistics to estimate the overall scope of your migration, see [Using the conversion assessment report for migration planning](assessment-reports-planning.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

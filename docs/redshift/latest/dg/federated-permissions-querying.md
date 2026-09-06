@@ -12,7 +12,7 @@ When you register an Amazon Redshift data warehouse to the AWS Glue Data Catalog
 ## Prerequisites
 <a name="federated-permissions-querying-prereqs"></a>
 
-Before querying federated databases, ensure you have:
+Before querying federated databases, make sure you have:
 + The [AmazonRedshiftFederatedAuthorization](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRedshiftFederatedAuthorization.html) AWS managed policy attached to your IAM user or role. For fine-grained access control, you can grant specific IAM actions from this policy instead of attaching the full policy.
 + Proper permissions configured for the catalog objects in the source data warehouse
 + Access to the Amazon Redshift data warehouse in the same AWS account and Region.
@@ -51,7 +51,3 @@ You can configure the following security controls on objects in the Amazon Redsh
 + **Column-Level Privileges (CLP)**: Grant or restrict access to specific columns
 + **Row-Level Security (RLS)**: Control access to specific rows based on user attributes
 + **Dynamic Data Masking (DDM)**: Automatically mask sensitive data based on user permissions
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

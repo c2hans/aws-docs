@@ -63,7 +63,3 @@ This guide provides a logging and monitoring solution that addresses CloudWatch 
 + Amazon Managed Grafana for dashboarding and visualization – Introduces and compares AMG with CloudWatch for dashboarding and visualization.
 
 Implementation examples are used throughout this guide across these areas and are also available from the [AWS Samples GitHub repository](https://github.com/aws-samples/logging-monitoring-apg-guide-examples)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

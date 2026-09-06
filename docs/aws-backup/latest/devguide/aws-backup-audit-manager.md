@@ -36,7 +36,3 @@ Charges apply when you turn on resource tracking. For information about resource
 + [Using AWS Backup Audit Manager with CloudFormation](bam-cfn-integration.md)
 + [Using AWS Backup Audit Manager with AWS Audit Manager](aws-audit-manager-integration.md)
 + [Controls and remediation](controls-and-remediation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

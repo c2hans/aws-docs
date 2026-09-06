@@ -38,7 +38,3 @@ After your job reaches the `SUCCEEDED` status, you can view the CloudWatch Logs 
 ![Array job container logs](http://docs.aws.amazon.com/batch/latest/userguide/images/array-logs.png)
 
 1. View the other child job's logs. Each job returns a different color of the rainbow.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

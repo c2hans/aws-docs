@@ -244,7 +244,3 @@ To get started with managed instances, see the documentation for your preferred 
 + [Lambda managed instances](https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances.html) in the *Lambda Developer Guide*
 + [Amazon EC2 Fast Launch](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/win-ami-config-fast-launch.html) in this guide
 + [Bedrock AgentCore runtime instances](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-instances-how-it-works.html) in the *Amazon Bedrock AgentCore Developer Guide*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

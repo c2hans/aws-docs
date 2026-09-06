@@ -16,7 +16,3 @@ This S3 bucket contains bootstrapping scripts to set up the AWSTOE application o
 This S3 bucket contains package payloads for Amazon managed components. Image Builder requires access to download any managed components that are configured in your recipes.
 + **S3 bucket ARN:** `arn:{{<AWS partition>}}:s3:::ec2imagebuilder-toe-{{<AWS Region>}}-prod`
 + **S3 bucket URL:** `https://ec2imagebuilder-toe-{{<AWS Region>}}.s3.{{<AWS Region>}}.{{<AWS partition-specific domain name>}}`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -93,7 +93,7 @@ This metric provides the count of completed intents. It includes intents for com
 
   It can be filtered on the following conversation outcomes using metric level filter `BOT_CONVERSATION_OUTCOME_TYPE`.
 
-  It can be filtered on the following intent outcomes using metric level filter `BOT_INTENTS_OUTCOME_TYPE`.
+  It can be filtered on the following intent outcomes using metric level filter `BOT_INTENT_OUTCOME_TYPE`.
   + SUCCESS: The bot successfully fulfilled the intent. One of the following situations is true:
     + The intent *state* is *ReadyForFulfillment* and the type of *dialogAction* is *Close*.
     + The intent `state` is `Fulfilled` and the type of `dialogAction` is `Close`.
@@ -145,7 +145,3 @@ This metric provides the percentage of intents that ended in the specific outcom
 
 **Calculation logic**:
 + (Count of intents with BOT\_INTENT\_OUTCOME\_TYPE)/(Total count of intents) \* 100
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

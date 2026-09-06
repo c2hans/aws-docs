@@ -211,7 +211,3 @@ kubectl get pod -l "app=cwagent-prometheus" -n amazon-cloudwatch
 If the results include a single CloudWatch agent pod in the `Running` state, the agent is running and collecting Prometheus metrics. By default the CloudWatch agent collects metrics for App Mesh, NGINX, Memcached, Java/JMX, and HAProxy every minute. For more information about those metrics, see [Prometheus metrics collected by the CloudWatch agent](ContainerInsights-Prometheus-metrics.md). For instructions on how to see your Prometheus metrics in CloudWatch, see [Viewing your Prometheus metrics](ContainerInsights-Prometheus-viewmetrics.md)
 
 You can also configure the CloudWatch agent to collect metrics from other Prometheus exporters. For more information, see [Scraping additional Prometheus sources and importing those metrics](ContainerInsights-Prometheus-Setup-configure.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

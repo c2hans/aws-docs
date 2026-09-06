@@ -49,7 +49,7 @@ When you work with outside vendors, or run work for multiple clients that must n
 ### A restricted fleet for sensitive content
 <a name="organize-restricted-fleet"></a>
 
-To keep work under a security or privacy restriction on dedicated workers, create a queue and a fleet for that work, and associate the fleet only with that queue. Jobs are scheduled only to fleets associated with their queue, so the association is what keeps other work off the restricted workers. See [Associate a queue and fleet](associate-a-queue-and-fleet.md). For work that must not share anything with the rest of the studio, use a separate farm instead.
+To keep work under a security or privacy restriction on dedicated workers, create a queue and a fleet for that work, and associate the fleet only with that queue. Jobs are scheduled only to fleets associated with their queue, so a fleet associated with a single queue runs that queue's jobs and no others. See [Associate a queue and fleet](associate-a-queue-and-fleet.md). For work that must not share anything with the rest of the studio, use a separate farm instead.
 
 Complete the boundary around the restricted queue:
 + Grant access only to approved users and groups. See [Managing users in Deadline Cloud](managing-users.md).
@@ -63,7 +63,3 @@ For more information about the security considerations behind these steps, see [
 <a name="organize-smf-cmf-queues"></a>
 
 If your farm has both service-managed and customer-managed fleets, in most cases create a separate queue for each fleet type. Jobs written for the two fleet types usually assume different run environments. A queue for service-managed fleets typically uses the conda queue environment to install applications for each job, while jobs for a customer-managed fleet expect the software that you preinstalled on your worker hosts. A job configured for one environment often fails on the other. Keeping the queues separate also keeps each queue's environment settings simple. For more information, see [Choose between service-managed and customer-managed fleets](fleet-types.md) and [Default conda queue environment](create-queue-environment.md#conda-queue-environment).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

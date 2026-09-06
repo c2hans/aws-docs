@@ -60,7 +60,3 @@ During testing, we have not found substantial evidence that multi-GPU instances 
 | [How to Build a Machine Learning (ML) Pipeline for Inference? ](https://sagemaker-examples.readthedocs.io/en/latest/sagemaker-python-sdk/scikit_learn_inference_pipeline/Inference%20Pipeline%20with%20Scikit-learn%20and%20Linear%20Learner.html) |  Using a Scikit-learn container, we demonstrate how to build an end-to-end ML pipeline.  |
 
  For instructions on how to create and access Jupyter notebook instances that you can use to run the example in SageMaker AI, see [Amazon SageMaker notebook instances](nbi.md). After you have created a notebook instance and opened it, choose the **SageMaker AI Examples** tab to see a list of all of the SageMaker AI samples. The topic modeling example notebooks using the linear learning algorithm are located in the **Introduction to Amazon algorithms** section. To open a notebook, choose its **Use** tab and choose **Create copy**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

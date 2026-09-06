@@ -181,7 +181,3 @@ The following are the service endpoints and fingerprints for EC2 Serial Console.
 | South America (São Paulo) | sa-east-1 | serial-console.ec2-instance-connect.sa-east-1.aws | SHA256:rd2\+/32Ognjew1yVIemENaQzC\+Botbih62OqAPDq1dI |
 | AWS GovCloud (US-East) | us-gov-east-1 | serial-console.ec2-instance-connect.us-gov-east-1.amazonaws.com | SHA256:tIwe19GWsoyLClrtvu38YEEh\+DHIkqnDcZnmtebvF28 |
 | AWS GovCloud (US-West) | us-gov-west-1 | serial-console.ec2-instance-connect.us-gov-west-1.amazonaws.com | SHA256:kfOFRWLaOZfB\+utbd3bRf8OlPf8nGO2YZLqXZiIw5DQ |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

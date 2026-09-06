@@ -77,7 +77,3 @@ The following table shows DevSecOps use cases that you can enhance with generati
 | **Dashboard monitoring:** Create dashboards for different teams (such as development, operations, and product teams) to provide relevant insights based on their focus areas | DevOps engineer |
 | **Performance insights:** Conduct detailed analysis of application performance to identify inefficiencies and optimize code or infrastructure | Software developer |
 | **Performance insights:** Use performance insights to iteratively improve application performance and optimize the user experience over time | Product manager |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

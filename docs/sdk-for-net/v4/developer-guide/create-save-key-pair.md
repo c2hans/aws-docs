@@ -269,7 +269,3 @@ namespace EC2CreateKeyPair
 <a name="create-save-key-pair-additional"></a>
 + After you run the example, you can see the new key pair in the [Amazon EC2 console](https://console.aws.amazon.com/ec2/#KeyPairs).
 + When you create a key pair, you must save the private key that is returned because you can't retrieve the private key later.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

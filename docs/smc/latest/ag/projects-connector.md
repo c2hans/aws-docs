@@ -24,7 +24,3 @@ For end-users to be able to request AWS Service Catalog products, one or more pr
    **AWS Systems Manager Automation enablement considerations**
 
    We currently do not support fine-grained permissions in Jira for which users and groups should be allowed to access which AWS Systems Manager automation documents. If you enable a project for Systems Manager Automation, then any user with permission to create issues in that project can run any of the automations. You can restrict access by limiting which users have access to projects with AWS Systems Manager Automation enabled.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

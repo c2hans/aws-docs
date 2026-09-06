@@ -36,7 +36,3 @@ Procedures are given below for setting up new delegate sending notifications usi
 1. After you've decided which of your SNS topics you'd like to use for feedback notifications, follow the procedures [to find your SNS topic ARN](sending-authorization-delegate-sender-tasks-information.md#find-sns-topic-arn) and copy the full ARN and share it with your identity owner.
 
 1. Ask your identity owner to configure your SNS topics for feedback notifications on the shared identity he's authorized you to send from. (Your identity owner will need to follow the procedures given for [configuring SNS topics](sending-authorization-identity-owner-tasks-policy.md#configure-sns-topic-you-dont-own) in the authorization policy procedures.)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

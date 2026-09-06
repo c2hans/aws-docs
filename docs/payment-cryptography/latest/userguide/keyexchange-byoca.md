@@ -24,9 +24,9 @@ There are three key differences from the standard TR-34 flow:
 
 1. You create the RSA key with [CreateKey](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_CreateKey.html). Before, `GetParametersForExport` or `GetParametersForImport` created it for you.
 
-1. The [GetCertificateSigningRequest](https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIReference/API_GetCertificateSigningRequest.html) API creates a CSR. Your external CA can then sign it.
+1. The [GetCertificateSigningRequest](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetCertificateSigningRequest.html) API creates a CSR. Your external CA can then sign it.
 
-1. The [ExportKey](https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIReference/API_ExportKey.html) and [ImportKey](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ImportKey.html) APIs accept a certificate at call time. The token is now optional.
+1. The [ExportKey](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ExportKey.html) and [ImportKey](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ImportKey.html) APIs accept a certificate at call time. The token is now optional.
 
 **Important Considerations**
 These examples use RSA-2048 keys and wrap a TDES-2KEY key. When exporting AES-128, make sure that all keys are RSA-3072 or RSA-4096.
@@ -85,12 +85,12 @@ Take note of the `KeyArn` as you'll need it in the next step.
 ### Step 2: Generate Certificate Signing Request
 <a name="keyexchange-byoca.generate-csr"></a>
 
-Generate a Certificate Signing Request (CSR) to be signed by your external CA using the [GetCertificateSigningRequest](https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIReference/API_GetCertificateSigningRequest.html) API. The output is a base64-encoded PEM file. If you base64 decode the contents and save them, you will have a valid CSR in PEM format.
+Generate a Certificate Signing Request (CSR) to be signed by your external CA using the [GetCertificateSigningRequest](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetCertificateSigningRequest.html) API. The output is a base64-encoded PEM file. If you base64 decode the contents and save them, you will have a valid CSR in PEM format.
 
 **Example Generate CSR**
 
 ```
-$ aws payment-cryptography-data get-certificate-signing-request \
+$ aws payment-cryptography get-certificate-signing-request \
     --key-identifier arn:aws:payment-cryptography:us-east-1:111122223333:key/xgmq6fs6uow736uc \
     --signing-algorithm SHA512 \
     --certificate-subject '{
@@ -258,12 +258,12 @@ Take note of the CA's `KeyArn` for use in the export step.
 ### Step 6: Get KRD Encryption Certificate
 <a name="keyexchange-byoca.get-krd"></a>
 
-In this example, we're importing back into AWS Payment Cryptography, so we call the service to receive a KRD public key certificate using the [GetParametersForImport](https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIReference/API_GetParametersForImport.html) API. In a real scenario, this would be provided by the other system, like an HSM, an ATM, a payment terminal or payment terminal management system.
+In this example, we're importing back into AWS Payment Cryptography, so we call the service to receive a KRD public key certificate using the [GetParametersForImport](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetParametersForImport.html) API. In a real scenario, this would be provided by the other system, like an HSM, an ATM, a payment terminal or payment terminal management system.
 
 **Example Get Parameters for Import**
 
 ```
-$ aws payment-cryptography-data get-parameters-for-import \
+$ aws payment-cryptography get-parameters-for-import \
     --key-material-type "TR34_KEY_BLOCK" \
     --wrapping-key-algorithm RSA_2048
 ```
@@ -281,12 +281,12 @@ $ aws payment-cryptography-data get-parameters-for-import \
 ### Step 7: Export Key with BYOCA
 <a name="keyexchange-byoca.export-key"></a>
 
-Finally, export the key using TR-34 with your own CA-signed certificate using the [ExportKey](https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIReference/API_ExportKey.html) API. Provide the signing certificate that was signed by your external CA.
+Finally, export the key using TR-34 with your own CA-signed certificate using the [ExportKey](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ExportKey.html) API. Provide the signing certificate that was signed by your external CA.
 
 **Example TR-34 Export with BYOCA**
 
 ```
-$ aws payment-cryptography-data export-key \
+$ aws payment-cryptography export-key \
     --export-key-identifier arn:aws:payment-cryptography:us-east-1:111122223333:key/iox73p5f4c4yjiod \
     --key-material '{
         "Tr34KeyBlock": {
@@ -366,12 +366,12 @@ Note the `KeyArn` value. You need it in the next step.
 ### Step 2: Generate Certificate Signing Request
 <a name="keyexchange-byoca.import-generate-csr"></a>
 
-Generate a Certificate Signing Request (CSR) for the KRD encryption key using the [GetCertificateSigningRequest](https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIReference/API_GetCertificateSigningRequest.html) API. The output is a base64-encoded PEM file. If you base64 decode the contents and save them, you will have a valid CSR in PEM format.
+Generate a Certificate Signing Request (CSR) for the KRD encryption key using the [GetCertificateSigningRequest](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetCertificateSigningRequest.html) API. The output is a base64-encoded PEM file. If you base64 decode the contents and save them, you will have a valid CSR in PEM format.
 
 **Example Generate CSR for KRD Key**
 
 ```
-$ aws payment-cryptography-data get-certificate-signing-request \
+$ aws payment-cryptography get-certificate-signing-request \
     --key-identifier arn:aws:payment-cryptography:us-east-1:111122223333:key/bm7t4qv8hzk24jce \
     --signing-algorithm SHA512 \
     --certificate-subject '{
@@ -541,12 +541,12 @@ Note the CA's `KeyArn` for use in the import step.
 
 In a TR-34 key exchange, the sending side (Key Distribution Host, or KDH) provides its public key certificate for signing. This certificate is used to verify the signature on the wrapped key block during import, ensuring the key material came from a trusted sender. In production, this certificate typically comes from the sending system—such as an HSM, a payment terminal, or a key management system—through its own certificate distribution process.
 
-In this example, you use AWS Payment Cryptography as both the sender and receiver to keep the steps short. Call [GetParametersForExport](https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIReference/API_GetParametersForExport.html) to get the KDH signing certificate that would normally be provided by the sending system.
+In this example, you use AWS Payment Cryptography as both the sender and receiver to keep the steps short. Call [GetParametersForExport](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetParametersForExport.html) to get the KDH signing certificate that would normally be provided by the sending system.
 
 **Example Get Parameters for Export**
 
 ```
-$ aws payment-cryptography-data get-parameters-for-export \
+$ aws payment-cryptography get-parameters-for-export \
     --key-material-type "TR34_KEY_BLOCK" \
     --signing-key-algorithm RSA_2048
 ```
@@ -615,7 +615,3 @@ The key is now imported into AWS Payment Cryptography and ready for use. The `Ke
 <a name="keyexchange-byoca.notes"></a>
 + These examples are shown using the AWS CLI. The same functionality is available in all AWS SDKs including Java, Python, Go, and Rust.
 + If you're testing with a self-signed CA, you can use OpenSSL to create a test CA and sign the CSR. In production, use your organization's established CA infrastructure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

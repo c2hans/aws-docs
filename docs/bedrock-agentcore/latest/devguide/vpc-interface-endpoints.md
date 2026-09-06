@@ -50,7 +50,7 @@ Create an interface endpoint for AgentCore using the following service name form
 + For AgentCore Gateway: `com.amazonaws.region.bedrock-agentcore.gateway`
 + For control plane operations (Runtime and Memory management): `com.amazonaws.region.bedrock-agentcore-control`
 
-If you enable private DNS for the interface endpoint, you can make API requests to AgentCore using its default Regional DNS name. For example, `bedrock-agentcore.us-east-1.amazonaws.com`.
+If you enable private DNS for the interface endpoint, you can make API requests to AgentCore using its default Regional DNS name. For example, `bedrock-agentcore.us-east-1.amazonaws.com`. For Gateway specifically, it will look like: `*.gateway.bedrock-agentcore.us-east-1.amazonaws.com`.
 
 ## Create an endpoint policy for your interface endpoint
 <a name="vpc-endpoint-policy"></a>
@@ -79,12 +79,12 @@ The following examples show endpoint policies for different AgentCore components
          {
             "Effect": "Allow",
             "Principal": {
-               "AWS": "arn:aws::iam::ACCOUNT_ID:user/USERNAME"
+               "AWS": "arn:aws:iam::ACCOUNT_ID:user/USERNAME"
             },
             "Action": [
                "bedrock-agentcore:InvokeAgentRuntime"
             ],
-            "Resource": "arn:aws::bedrock-agentcore:us-east-1:ACCOUNT_ID:runtime/RUNTIME_ID"
+            "Resource": "arn:aws:bedrock-agentcore:us-east-1:ACCOUNT_ID:runtime/RUNTIME_ID"
          }
       ]
    }
@@ -100,12 +100,12 @@ The following examples show endpoint policies for different AgentCore components
          {
             "Effect": "Allow",
             "Principal": {
-               "AWS": "arn:aws::iam::ACCOUNT_ID:root"
+               "AWS": "arn:aws:iam::ACCOUNT_ID:root"
             },
             "Action": [
                "bedrock-agentcore:InvokeAgentRuntime"
             ],
-            "Resource": "arn:aws::bedrock-agentcore:us-east-1:ACCOUNT_ID:runtime/customAgent1"
+            "Resource": "arn:aws:bedrock-agentcore:us-east-1:ACCOUNT_ID:runtime/customAgent1"
          },
          {
             "Effect": "Allow",
@@ -113,7 +113,7 @@ The following examples show endpoint policies for different AgentCore components
             "Action": [
                "bedrock-agentcore:InvokeAgentRuntime"
             ],
-            "Resource": "arn:aws::bedrock-agentcore:us-east-1:ACCOUNT_ID:runtime/customAgent2"
+            "Resource": "arn:aws:bedrock-agentcore:us-east-1:ACCOUNT_ID:runtime/customAgent2"
          }
       ]
    }
@@ -204,12 +204,12 @@ If you have a deny-all endpoint policy for data perimeter enforcement and do not
          {
             "Effect": "Allow",
             "Principal": {
-               "AWS": "arn:aws::iam::ACCOUNT_ID:root"
+               "AWS": "arn:aws:iam::ACCOUNT_ID:root"
             },
             "Action": [
                "bedrock-agentcore:InvokeCodeInterpreter"
             ],
-            "Resource": "arn:aws::bedrock-agentcore:us-east-1:ACCOUNT_ID:code-interpreter/CODE_INTERPRETER_ID"
+            "Resource": "arn:aws:bedrock-agentcore:us-east-1:ACCOUNT_ID:code-interpreter/CODE_INTERPRETER_ID"
          }
       ]
    }
@@ -225,7 +225,7 @@ If you have a deny-all endpoint policy for data perimeter enforcement and do not
          {
             "Effect": "Allow",
             "Principal": {
-               "AWS": "arn:aws::iam::ACCOUNT_ID:root"
+               "AWS": "arn:aws:iam::ACCOUNT_ID:root"
             },
             "Action": [
                "bedrock-agentcore:CreateEvent",
@@ -242,7 +242,7 @@ If you have a deny-all endpoint policy for data perimeter enforcement and do not
                "bedrock-agentcore:BatchDeleteMemoryRecords",
                "bedrock-agentcore:BatchUpdateMemoryRecords"
             ],
-            "Resource": "arn:aws::bedrock-agentcore:us-east-1:ACCOUNT_ID:memory/MEMORY_ID"
+            "Resource": "arn:aws:bedrock-agentcore:us-east-1:ACCOUNT_ID:memory/MEMORY_ID"
          }
       ]
    }
@@ -258,7 +258,7 @@ If you have a deny-all endpoint policy for data perimeter enforcement and do not
          {
             "Effect": "Allow",
             "Principal": {
-               "AWS": "arn:aws::iam::ACCOUNT_ID:root"
+               "AWS": "arn:aws:iam::ACCOUNT_ID:root"
             },
             "Action": [
                "bedrock-agentcore:CreateEvent",
@@ -275,7 +275,7 @@ If you have a deny-all endpoint policy for data perimeter enforcement and do not
                "bedrock-agentcore:BatchDeleteMemoryRecords",
                "bedrock-agentcore:BatchUpdateMemoryRecords"
             ],
-            "Resource": "arn:aws::bedrock-agentcore:us-east-1:ACCOUNT_ID:memory/*"
+            "Resource": "arn:aws:bedrock-agentcore:us-east-1:ACCOUNT_ID:memory/*"
          }
       ]
    }
@@ -291,12 +291,12 @@ If you have a deny-all endpoint policy for data perimeter enforcement and do not
          {
             "Effect": "Allow",
             "Principal": {
-               "AWS": "arn:aws::iam::ACCOUNT_ID:root"
+               "AWS": "arn:aws:iam::ACCOUNT_ID:root"
             },
             "Action": [
                "bedrock-agentcore:CreateEvent"
             ],
-            "Resource": "arn:aws::bedrock-agentcore:us-east-1:ACCOUNT_ID:memory/MEMORY_ID"
+            "Resource": "arn:aws:bedrock-agentcore:us-east-1:ACCOUNT_ID:memory/MEMORY_ID"
          }
       ]
    }
@@ -310,12 +310,12 @@ If you have a deny-all endpoint policy for data perimeter enforcement and do not
          {
             "Effect": "Allow",
             "Principal": {
-               "AWS": "arn:aws::iam::ACCOUNT_ID:root"
+               "AWS": "arn:aws:iam::ACCOUNT_ID:root"
             },
             "Action": [
                "bedrock-agentcore:ConnectBrowserAutomationStream"
             ],
-            "Resource": "arn:aws::bedrock-agentcore:us-east-1:ACCOUNT_ID:browser/BROWSER_ID"
+            "Resource": "arn:aws:bedrock-agentcore:us-east-1:ACCOUNT_ID:browser/BROWSER_ID"
          }
       ]
    }
@@ -330,9 +330,9 @@ If you have a deny-all endpoint policy for data perimeter enforcement and do not
             "Effect": "Allow",
             "Principal": "*",
             "Action": [
-               "bedrock:InvokeGateway"
+               "bedrock-agentcore:InvokeGateway"
             ],
-            "Resource": "arn:aws::bedrock-agentcore:us-east-1::gateway/my-gateway"
+            "Resource": "arn:aws:bedrock-agentcore:us-east-1:ACCOUNT_ID:gateway/my-gateway"
          }
       ]
    }
@@ -454,7 +454,3 @@ If you have a deny-all endpoint policy for data perimeter enforcement and do not
       ]
    }
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

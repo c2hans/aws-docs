@@ -30,7 +30,3 @@ You can create a directory assessment as part of creating a hybrid directory, or
 1. On the **Review and create directory assessment** page, review the directory assessment information and make any necessary changes. When the information is correct, choose **Create assessment**. Creating the directory assessment takes around 30 minutes. You're returned to the Directories details page. A green banner appears when the directory assessment succeeds.
 **Warning**
 To create a hybrid directory, the directory assessment must enter a SUCCESS state. You can't create a hybrid directory without first successfully passing a directory assessment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

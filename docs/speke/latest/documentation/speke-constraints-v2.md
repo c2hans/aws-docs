@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/speke/latest/documentation/speke-constraints-v2.html
 ---
 
-# SPEKE API v2 - Customizations and constraints to the DASH-IF specification
+# SPEKE API v2.0 - Customizations and constraints to the DASH-IF specification
 <a name="speke-constraints-v2"></a>
 
 The DASH Industry Forum [CPIX 2.3 specification](https://dashif.org/docs/CPIX2.3/Cpix.html) supports a number of use cases and topologies. The SPEKE API v2.0 specification defines both a CPIX Profile and an API for CPIX. In order to achieve these two goals, it adheres to the CPIX specification with the following customizations and constraints:
@@ -61,7 +61,3 @@ The following table summarizes the standard messages that must be returned by th
 | The encryption contract is malformed | Malformed encryption contract |
 | The encryption contract contradicts DRM security levels constraints | Requested CPIX encryption contract not supported |
 | The encryption contract doesn’t include any VideoFilter or AudioFilter element | Missing CPIX encryption contract |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Packager and Encoder Key Exchange API Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query speke` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

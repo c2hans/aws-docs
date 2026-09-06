@@ -76,7 +76,3 @@ Data Catalog views require three roles: `Lake Formation Admin`, `Definer`, and `
 The `Definer` role's trust relationships must allow the `sts:AssumeRole` action for the AWS Glue and Lake Formation service principals. For more information, see [Prerequisites for creating views](https://docs.aws.amazon.com/lake-formation/latest/dg/working-with-views.html#views-prereqs) in the *AWS Lake Formation Developer Guide*.
 
 IAM permissions for Athena access are also required. For more information, see [AWS managed policies for Amazon Athena](security-iam-awsmanpol.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

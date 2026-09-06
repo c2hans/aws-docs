@@ -14,7 +14,3 @@ You can delete customer-created directory assessments in the AWS Management Cons
 1. On the **Directories** page, under the **Directory assessments** section, choose the customer assessment you want to delete. Alternatively, you can choose the checkbox beside the directory assessments you want to delete and then from the **Actions** menu, choose **Delete**.
 
 1. You're directed to the **Assessments** details page. Choose **Actions** and then choose **Delete Assessment**. A **Delete directory assessment** dialog box appears. Choose **Delete**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

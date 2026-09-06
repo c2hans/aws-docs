@@ -268,7 +268,3 @@ You have now successfully completed the tutorial and built a text summarization 
 + The text summarizer app in App Studio. For more information, see [Deleting an application](applications-delete.md).
 + The IAM role created in the IAM console. For more information, see [Delete roles or instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_delete.html) in the *AWS Identity and Access Management User Guide*.
 + If you requested model access to use Claude 3 Sonnet and want to revert access, see [Manage access to Amazon Bedrock foundation models](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html) in the *Amazon Bedrock User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,7 +33,3 @@ EventBridge uses an AWS owned key to encrypt data stored in resources. For each 
   Customer managed keys incur a monthly fee. For details, see [AWS Key Management Service Pricing](https://aws.amazon.com/kms/pricing/), and [Quotas](https://docs.aws.amazon.com/kms/latest/developerguide/limits.html) in the *AWS Key Management Service Developer Guide*.
 **Note**
 EventBridge does not support [schema discovery](eb-schema.md) on event buses encrypted using customer managed keys.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

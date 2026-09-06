@@ -91,7 +91,3 @@ To run this command, you must be logged in to the applicable computer as **Admin
 
 **Note**
 Your users can change their time zone from the default setting that you configured. They can configure their regional settings during an application streaming session, as described in [Enable Your WorkSpaces Applications Users to Configure Their Regional Settings](regional-settings.md). Also, if a user previously selected a time zone when streaming from any fleet instance in the same AWS Region, the user-specified time zone setting automatically overrides any default time zone setting you specify through your image builder.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

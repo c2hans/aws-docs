@@ -28,7 +28,3 @@ The new publishing system has a few advantages that we hope you'll like:
 <a name="release-2018-10-15-release-notes-moved.changes.platformlists"></a>
 
 In addition to the new location for release notes, we also moved the supported platforms and platform history information out of the *AWS Elastic Beanstalk Developer Guide* and into a dedicated location: [https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/). This is especially useful if you download one of the offline formats of our developer guide (PDF or Kindle), because the platform lists need to be up to date and aren't ideal for an offline guide, and they are lengthy and constantly growing. Your offline developer guide is a much smaller file without these lists.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

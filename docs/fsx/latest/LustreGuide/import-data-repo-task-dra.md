@@ -51,7 +51,3 @@ To view a task summary from this page, choose **Task ID** for the task you just 
   After successfully creating the data repository task, Amazon FSx returns the task description as JSON.
 
 After creating the task to import metadata from the linked data repository, you can check the status of the import data repository task. For more information about viewing data repository tasks, see [Accessing data repository tasks](view-data-repo-tasks.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/preserve-cl
 AWS Global Accelerator preserves the source IP address of the client differently for Amazon EC2 instances, Network Load Balancers, and Application Load Balancers:
 + For an EC2 instance endpoint, the client’s IP address is preserved for all traffic.
 + For a Network Load Balancer endpoint with client IP address preservation, Global Accelerator works together with the Network Load Balancer to include the IP address of the original client in the IP header of the packet so that your application can access it.
-+ For an Application Load Balancer endpoint with client IP address preservation, Global Accelerator works together with the Application Load Balancer to provide an `X-Forwarded` header, `X-Forwarded-For`, that includes the IP address of the original client so that your web tier can access it.
++ For an Application Load Balancer endpoint with client IP address preservation, Global Accelerator preserves the client IP address in the traffic that it sends to the Application Load Balancer. The Application Load Balancer then provides an `X-Forwarded-For` header that includes the IP address of the original client so that your web tier can access it.
 
 HTTP requests and HTTP responses use header fields to send information about the HTTP messages. Header fields are colon-separated name-value pairs that are separated by a carriage return (CR) and a line feed (LF). A standard set of HTTP header fields is defined in RFC 2616, [ Message Headers](https://tools.ietf.org/html/rfc2616#section-4.2). There are also non-standard HTTP headers available that are widely used by the applications. Some of the non-standard HTTP headers have an `X-Forwarded` prefix.
 
@@ -31,7 +31,3 @@ The following example shows an `X-Forwarded-For` request header for a client wit
 ```
 X-Forwarded-For: 2001:DB8::21f:5bff:febf:ce22:8a2e
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

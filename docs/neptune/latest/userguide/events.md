@@ -25,7 +25,3 @@ Amazon Neptune doesn't guarantee the order of events sent in an event stream. Th
 Neptune uses the Amazon Resource Name (ARN) of an Amazon SNS topic to identify each subscription. The Neptune console creates the ARN for you when you create the subscription.
 
 Billing for Neptune event notification is through Amazon SNS. Amazon SNS fees apply when using event notification. For more information, see [ Amazon Simple Notification Service Pricing](https://aws.amazon.com/sns/#pricing).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

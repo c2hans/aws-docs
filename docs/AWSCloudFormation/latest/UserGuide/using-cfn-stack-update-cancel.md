@@ -32,7 +32,3 @@ The stack proceeds to the `UPDATE_ROLLBACK_IN_PROGRESS` state. After the update 
 <a name="using-cfn-stack-update-cancel-cli"></a>
 
 Use the command [cancel-update-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/cancel-update-stack.html) to cancel an update. For more information, see [Cancel a stack update](service_code_examples.md#cancel-update-stack-sdk).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

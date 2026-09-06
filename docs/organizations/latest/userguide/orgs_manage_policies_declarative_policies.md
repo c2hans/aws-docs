@@ -51,7 +51,3 @@ If a declarative policy is [detached](https://docs.aws.amazon.com/organizations/
 + [Upgrade rollout policies](orgs_manage_policies_upgrade_rollout.md)
 + [Amazon S3 policies](orgs_manage_policies_s3.md)
 + [AWS Shield Network Security Director policies](orgs_manage_policies_network_security_director.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

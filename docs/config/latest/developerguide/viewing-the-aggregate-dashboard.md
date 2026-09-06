@@ -139,7 +139,3 @@ The data displayed depends on the settings of the configuration recorder for eac
 **Number of EC2 instances that are running vs. stopped by type**
 Displays a horizontal bar graph comparing EC2 instance types from the selected aggregator that are running to EC2 instances that are stopped by instance type. Hover over the graph to see the exact number of stopped and running EC2 instances for each type.
 The data displayed depends on the settings of the configuration recorder for each account in the selected aggregator and the Regions where the selected aggregator is configured to collect data. To use this chart, you must configure the recorder to record the EC2 instance resource type. For more information, see [Recoding AWS Resources](https://docs.aws.amazon.com/config/latest/developerguide/select-resources.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

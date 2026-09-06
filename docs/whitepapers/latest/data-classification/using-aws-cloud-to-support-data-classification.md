@@ -63,7 +63,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/data-classification/u
 +  [AWS Web Application Firewall](https://aws.amazon.com/waf) (AWS WAF) and [AWS Shield](https://aws.amazon.com/) to help protect web applications from common attack vectors (such as SQL injection, cross-site scripting, and DDoS).
 
  For the entire list of AWS security services, refer to [Security, Identity, and Compliance on AWS](https://aws.amazon.com/products/security/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

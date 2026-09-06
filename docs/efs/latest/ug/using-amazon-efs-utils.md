@@ -65,7 +65,3 @@ The Amazon EFS client has been verified against the following Linux and Mac dist
 | Ubuntu 16.04 LTS, 18.04 LTS, 20.04 LTS, 22.04 LTS | deb | systemd |
 
 For a complete list of supported distributions that the package has been verified against, see the `amazon-efs-utils` [README](https://github.com/aws/efs-utils/blob/master/README.md) on Github.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

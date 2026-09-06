@@ -14,7 +14,3 @@ The following are limitations for the Google Ads connector:
 +  When creating a report, if you choose certain metrics to display, any rows whose selected metrics are all zero won't be returned. For more information, see [ Zero Metrics ](https://developers.google.com/google-ads/api/docs/reporting/zero-metrics?hl=en#exclude_zero_metrics_by_segmenting).
 +  With the following fields, the Full Mapping flow will not work for Account, Ad Group and Ad Group Ad entities, specifically for conversionAction, conversionActionCategory, conversionActionName. For more information, see [ Segment and Metrics ](https://developers.google.com/google-ads/api/docs/reporting/segmentation?hl=en#selectability_between_segments_and_metrics).
 + A date range filter is mandatory when the `segments.date` field is selected.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

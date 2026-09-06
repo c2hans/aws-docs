@@ -287,7 +287,3 @@ The following CloudTrail event names appear in log entries for CloudWatch Datase
 Each log entry includes the encryption context, which you can use to identify the specific Dataset that the operation applies to.
 
 For more information about monitoring AWS KMS key usage, see [Monitoring AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/monitoring-overview.html) in the AWS Key Management Service Developer Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,7 +55,3 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 +  `aws:executeAwsApi` - Gathers the ARN of the AWS WAF web ACL specified in the `WebACLId` parameter.
 +  `aws:executeAwsApi` - Enables logging for the web ACL.
 +  `aws:assertAwsResourceProperty` - Verifies logging has been enabled on the AWS WAF web ACL.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

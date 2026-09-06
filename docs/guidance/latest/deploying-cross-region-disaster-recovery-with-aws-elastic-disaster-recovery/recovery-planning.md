@@ -49,7 +49,3 @@ Amazon EC2 launch templates control how instances are launched in AWS and each s
  **Important** - to edit the launch template, automated launch settings, or to conduct [Instance type right-sizing](https://docs.aws.amazon.com/drs/latest/userguide/launch-general-settings.html#server-launch-settings-parameters), the DRS launch settings must first be set to **Inactive** else you will receive an error.
 
  **Note**: The [DRS Template Manager](https://github.com/aws-samples/drs-tools/tree/main/drs-template-manager) is an open source solution available on GitHub that can automate management of launch templates with the use of a single JSON file as a baseline template. This file can be replicated, edited, and used for each source server tagged with a corresponding key in the DRS console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying Cross-Region Disaster Recovery with AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

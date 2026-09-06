@@ -225,7 +225,3 @@ The `TrainingConfigs` and `TrainingConfigRankings` properties have the same nest
 | `InferenceConfigs[configName].AccelerationConfigs[].DiyWorkflowOverrides.Reason` | `string` | The reason for the override.<br />**Optional** |
 | `InferenceConfigRankings[rankingName].Description` | `string` | A description of the ranking dimension (for example, "cheapest first").<br />**Optional** |
 | `InferenceConfigRankings[rankingName].Rankings` | `string[]` | The ordered list of config names for this ranking.<br />**Optional** |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

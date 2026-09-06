@@ -20,7 +20,3 @@ You can perform the following asset-related tasks.
 | [View asset data in AWS IoT SiteWise Monitor](view-asset-data.md) | Portal administrators can see all assets for the portal. Project owners and viewers can see only those assets that are associated with the projects to which they are invited. |
 | [Add assets to projects](add-assets-to-projects-ea.md) | Only a portal administrator can change the list of assets that are associated with a project. |
 | [Add properties and alarms to dashboards](add-assets-to-dashboards.md) | Project owners add asset properties to dashboards. Portal administrators don't typically edit dashboards. Project viewers can't edit dashboards. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

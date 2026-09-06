@@ -67,7 +67,3 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/oemonboardingguid
 ![Set provisioning actions interface showing automatic thing creation options.](http://docs.aws.amazon.com/iot-expresslink/latest/oemonboardingguide/images/ss20.png)
 
 1. Your JITP template is now created and ready to be applied whenever an ExpressLink module issues a connect request to your AWS account's IoT Core endpoint during onboarding-by-claim.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

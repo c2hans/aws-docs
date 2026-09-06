@@ -41,7 +41,7 @@ In some cases, you might want to run the INSERT (external table) command on an A
 + SELECT, INSERT, UPDATE permission on the external table
 + Data location permission on the Amazon S3 path of the external table
 
-To ensure that file names are unique, Amazon Redshift uses the following format for the name of each file uploaded to Amazon S3 by default.
+To make sure that file names are unique, Amazon Redshift uses the following format for the name of each file uploaded to Amazon S3 by default.
 
 `{{<date>}}_{{<time>}}_{{<microseconds>}}_{{<query_id>}}_{{<slice-number>}}_part_{{<part-number>}}.{{<format>}}`.
 
@@ -78,7 +78,3 @@ The following example inserts the results of the SELECT statement into a partiti
 INSERT INTO spectrum.customer
 SELECT name, age, gender, month, day FROM local_customer;
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

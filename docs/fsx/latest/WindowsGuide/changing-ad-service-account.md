@@ -43,7 +43,3 @@ Limit membership to the policy to trusted users and service accounts. Do not add
 1. Verify that the HKLM\\System\\CCS\\Control\\SAM – “ComputerAccountReuseAllowList” registry key is populated with the desired SDDL. **Do not manually edit the registry**.
 
 1. Attempt to join a computer that has the September 12, 2023, or later updates installed. Ensure that one of the accounts listed in the policy owns the computer account. Also ensure that its registry does not have the **NetJoinLegacyAccountReuse** key enabled (set to 1). If the domain join fails, check the **`c:\windows\debug\netsetup.log`**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

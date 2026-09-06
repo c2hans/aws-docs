@@ -34,7 +34,3 @@ After turning on resource tracking, create a framework using the following steps
 AWS Backup Audit Manager might take several minutes to create the framework.
 
 If the error `AlreadyExists` occurs, a framework with the same controls and parameters already exists. To successfully create a new framework, at least one control or parameter must be different from existing frameworks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ Today we released the capability for Elastic Beanstalk to automatically detect a
 Prior to this release, after you completed the recommended actions to restore the environment's CloudFormation stack, you would have to contact AWS Support to reset the environment state. With this release, after you successfully complete the corrective actions, Elastic Beanstalk automatically updates the environment's state from invalid to available. You can then resume the standard operations on your environment without further delay.
 
 For more information, see [ Recovering your Elastic Beanstalk environment from an invalid stack state](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-management-invalid-stack.html) in the *AWS Elastic Beanstalk Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

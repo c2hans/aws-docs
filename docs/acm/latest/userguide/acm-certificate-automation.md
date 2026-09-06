@@ -450,7 +450,3 @@ On Windows, the provider logs to `C:\ProgramData\AWS\WorkloadCredentialsProvider
 **AWS service logging** — When the provider calls `ExportCertificate`, that call is recorded in AWS CloudTrail with a user agent string containing `aws-workload-credentials-provider`. The provider's internal operations (scheduler cycles, file writes) appear only in the local log.
 
 You can configure logging with the `log_level` and `log_to_file` settings. For more information, see [Configuration reference](#acm-cert-automation-config-reference).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

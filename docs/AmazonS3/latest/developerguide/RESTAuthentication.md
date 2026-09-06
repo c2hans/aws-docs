@@ -343,7 +343,3 @@ This example assumes that when a browser makes the GET request, it won't provide
 HMAC request signatures must be Base64 encoded. Base64 encoding converts the signature into a simple ASCII string that can be attached to the request. Characters that could appear in the signature string like plus (\+), forward slash (/), and equals (=) must be encoded if used in a URI. For example, if the authentication code includes a plus (\+) sign, encode it as %2B in the request. Encode a forward slash as %2F and equals as %3D.
 
 For examples of Base64 encoding, refer to the Amazon S3 [Authentication examples](#RESTAuthenticationExamples).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

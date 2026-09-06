@@ -184,7 +184,3 @@ This example creates no persistent AWS resources. It closes the input stream aft
 + For generated request and response types, see the [`start_stream_transcription()` API reference](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/transcribe-streaming/operations/start_stream_transcription/).
 + For more information about publishing and consuming event streams, see [Working with event streams](using-streaming.md).
 + For complete SDK repository examples, see the [Amazon Transcribe streaming examples](https://github.com/aws/aws-sdk-python/tree/develop/clients/aws-sdk-transcribe-streaming/examples). The directory includes one example for a prerecorded file and another for live microphone input.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Python. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-python` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

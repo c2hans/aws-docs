@@ -284,7 +284,3 @@ If the instance correctly executes the bootstrap procedure and is registered wit
 This might be caused by misconfigured security groups. For example, if port 6817 is enabled to allow `slurmd` to communicate with `slurmctld`, but port 6818 is missing to allow `slurmctld` to ping `slurmd`.
 
 Verify that your security groups include all required rules as documented in [Security group requirements and considerations](working-with_networking_sg.md#working-with_networking_sg-requirements).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

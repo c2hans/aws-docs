@@ -56,7 +56,3 @@ AWS Clean Rooms enforces minimum aggregation thresholds on queries that run from
 This provides an additional guardrail. Reviewing an analysis template tells you what a query is allowed to do. The minimum aggregation threshold independently constrains what any allowed query can return. The two controls work together, so you do not have to rely on template review alone to prevent results about individuals or small groups.
 
 For more information, see [Minimum aggregation thresholds](custom-min-agg-thresholds.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

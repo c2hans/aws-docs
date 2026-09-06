@@ -46,7 +46,3 @@ The native methods ([IAM principal attribution](cost-mgmt-iam-principal-tracking
 When a gateway or proxy calls Amazon Bedrock on behalf of many users, Amazon Bedrock records the gateway's IAM role as the caller's identity. To preserve user-level attribution, choose based on the output you need.
 + For per-user dollars in your billing tools, have the gateway assume its Amazon Bedrock role per user or tenant, using a per-user `RoleSessionName` or session tags. Cache the resulting credentials for the session lifetime to avoid an AWS STS call on every request. For more information, see [IAM principal attribution](cost-mgmt-iam-principal-tracking.md).
 + For per-prompt detail, set the user in [request metadata](cost-mgmt-request-metadata.md) on each call. Request metadata varies per request without additional AWS STS calls, which session tags cannot do on a shared session.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

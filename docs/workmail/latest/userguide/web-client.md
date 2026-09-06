@@ -175,7 +175,3 @@ Specify how long before the start of the appointment the default reminder should
 
 ****Default all-day appointment reminder time****
 Specify the reminder time that is automatically set when you create a new all-day appointment. The default is 18 hours. This setting can be overruled for any appointment by editing it manually in the calendar.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

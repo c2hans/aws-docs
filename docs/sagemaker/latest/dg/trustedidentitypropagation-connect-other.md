@@ -13,7 +13,3 @@ When trusted identity propagation is enabled for your Amazon SageMaker AI domain
 + [Connect your Studio JupyterLab notebooks to EMR Serverless with trusted identity propagation enabled](trustedidentitypropagation-emr-serverless.md)
 + [Connect Studio JupyterLab notebooks to Redshift Data API with trusted identity propagation enabled](trustedidentitypropagation-redshift-data-apis.md)
 + [Connect Studio JupyterLab notebooks to Lake Formation and Athena with trusted identity propagation enabled](trustedidentitypropagation-lake-formation-athena.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

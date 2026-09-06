@@ -20,7 +20,3 @@ delimiter '|';
 ```
 
 There are instances when you don't have to split uncompressed data files. For more information about splitting your data and examples of using COPY to load data, see [Loading data from Amazon S3](t_Loading-data-from-S3.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

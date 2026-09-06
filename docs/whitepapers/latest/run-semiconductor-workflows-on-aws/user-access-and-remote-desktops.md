@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 <a name="nice-dcv"></a>
 
  NICE Desktop Cloud Visualization (NICE DCV)is a remote visualization technology that enables users to securely connect to graphic-intensive 2D and 3D applications hosted on an Amazon EC2 instance. With NICE DCV, you can provide high-performance graphics processing to remote users by creating secure client sessions. NICE DCV was specifically designed for high performance technical applications, and is an excellent choice for semiconductor design workloads. For more information, see [NICE DCV](https://aws.amazon.com/hpc/dcv/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

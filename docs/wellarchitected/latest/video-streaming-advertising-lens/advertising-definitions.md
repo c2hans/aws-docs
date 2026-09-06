@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 +  **Streaming media advertising:** Also known as over-the-top (OTT), these are a specific type of video ad that appears in streaming media content delivered over the Internet without satellite or cable.
 +  **Audio advertising:** In the context of digital advertising, audio ads are ads that play before, during, or after online audio content, such as streaming music or podcasts.
 +  **Social media advertising:** Ads that appear on social media platforms.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -127,7 +127,3 @@ A: SageMaker Canvas uses the default SageMaker AI Amazon S3 bucket to store dupl
 <a name="canvas-kms-faqs-6"></a>
 
 A: With SageMaker Canvas, you can use your own encryption keys with AWS KMS for building regression, binary and multi-class classification, and time series forecasting models, as well as for batch inference with your model.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

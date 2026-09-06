@@ -381,7 +381,3 @@ We included these aggregates because it might be more useful to visualize minimu
 After you have finished building the visualization, you can optionally add the graph to a CloudWatch dashboard. To do this, choose **Add to dashboard** above the visualization. This adds the query as a widget and you can select automatic refresh intervals, making it easier to continuously monitor the results:
 
 ![CloudWatch dashboard with a Logs Insights query widget added, showing the Add to dashboard option.](http://docs.aws.amazon.com/lambda/latest/dg/images/monitoring-observability-figure-15.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

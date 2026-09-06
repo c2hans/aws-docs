@@ -18,7 +18,3 @@ By default, visualizations display the latest hour of data from the profiling gr
 1. Choose **Confirm** to update the visualization.
 
 If there is not enough data for the selected range, select a different time range. For the CodeGuru Profiler preview, you can reset the time range back to the default by choosing **Profiler**, **Profiling groups** in the navigation pane, and then selecting the profiling group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

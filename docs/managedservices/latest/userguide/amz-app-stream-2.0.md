@@ -51,7 +51,3 @@ While submitting the RFC to onboard WorkSpaces Applications, include the Amazon 
     + Amazon S3 bucket ARN for WorkSpaces Applications Usage Reports Logs.
 
   After the role is provisioned, onboard the role into your federation solution and login, then access AWS GlueAWS Glue and Athena for generating custom reports using the usage report role. For details about using WorkSpaces Applications Usage Reports see [ Create Custom Reports and Analyze WorkSpaces Applications Usage Data](https://docs.aws.amazon.com/appstream2/latest/developerguide/configure-custom-reports-analyze-usage-data.html), in the WorkSpaces Applications documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -71,7 +71,3 @@ The following are the steps for using Percona XtraBackup to migrate a database t
   + Encrypt multiple files in parallel by using [--encrypt-threads=<threads>](https://docs.percona.com/percona-xtrabackup/2.4/xtrabackup_bin/xbk_option_reference.html#-encrypt-threads)
 + Ensure that there is sufficient space on the source server to take the database backup files.
 + Generate the database backup with the Percona xbstream (.xbstream) format file. For more information, see [The xbstream binary overview](https://docs.percona.com/percona-xtrabackup/8.0/xbstream-binary-overview.html) in the Percona XtraBackup documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

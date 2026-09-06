@@ -29,7 +29,3 @@ Ultimately, the decision to use the default VPC or create one (or more) custom V
 + [Extend a VPC to other Zones](Extend_VPCs.md)
 + [Delete your VPC](delete-vpc.md)
 + [Generate IaC from console actions](vpcs-automate-c2c.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

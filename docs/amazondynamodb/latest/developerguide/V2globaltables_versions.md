@@ -230,7 +230,3 @@ Perform the following steps to upgrade your version of DynamoDB global tables us
 1. Read and agree to the new requirements, and then choose **Update version**.
 
 1. After the upgrade process is complete, the global tables version that appears on the console changes to **2019.11.21**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

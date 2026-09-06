@@ -12,7 +12,3 @@ A VPC endpoint policy restricts sign-in to the management console, which prevent
 **VPC endpoints block sign-in to the IAM Identity Center**
 
 It's important to note that using VPC endpoints will block sign-in to the IAM Identity Center. This happens when a user is already logged into the management console through the VPC endpoint. To ensure your users can continue to sign-in to IAM Identity Center, they must use the public endpoint for AWS sign-in, rather than the VPC endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

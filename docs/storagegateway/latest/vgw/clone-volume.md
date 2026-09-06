@@ -40,7 +40,3 @@ The following procedure shows you how to clone a volume from a volume recovery p
 1. Choose **Create volume**. The **Configure CHAP Authentication** dialog box appears. You can configure CHAP later. For information, see [Configuring CHAP Authentication for Your iSCSI Targets](ConfiguringiSCSIClientInitiatorCHAP.md).
 
 The next step is to connect your volume to your client. For more information, see [Connecting your volumes to your client](GettingStartedAccessVolumes.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

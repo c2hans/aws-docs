@@ -18,7 +18,3 @@ Create separate NodePools based on workload criticality to manage disruption and
 For complete NodePool manifests, see the [workload-tiered-nodepools.yaml](https://github.com/aws-samples/sample-eks-cost-optimization-guide/blob/main/04-karpenter-cost-optimization/workload-tiered-nodepools.yaml) and to validate workloads are landing on the correct pool see this [verify-nodepool-placement.sh](https://github.com/aws-samples/sample-eks-cost-optimization-guide/blob/main/04-karpenter-cost-optimization/verify-nodepool-placement.sh)
 
 **Key takeaway: **Map your workloads into the correct nodepool based on workload requirements. You can also create nodepools based on tiers (production, staging, batch, dev). This will help to explore Spot savings options for non-production workload as well. For the complete scripts and manifests, see the [04-karpenter-cost-optimization](https://github.com/aws-samples/sample-eks-cost-optimization-guide/tree/main/04-karpenter-cost-optimization) folder in the code repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

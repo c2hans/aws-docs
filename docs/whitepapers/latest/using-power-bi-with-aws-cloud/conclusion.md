@@ -12,7 +12,3 @@ If you want to connect data sources in AWS to Microsoft Power BI Service, you sh
 If you want a solution that provides the same business outcomes, without the added complexity of installing, configuring, patching, and scaling self-managed BI solutions, we recommend Amazon Quick. This fully managed service combines all the required functionality in a simple web browser experience with pay-per-user pricing. There is nothing to install and no additional components are required.
 
 Hopefully, this is just the start of your business intelligence journey with AWS. For additional resources to help you get started, see the [Appendix: Microsoft Power BI supported AWS data sources](appendix-microsoft-power-bi-supported-aws-data-sources.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ Saving Plan columns contain data about savings plans that apply to the line item
 | savings\_plan\_start\_time | The start date of the Savings Plan agreement. | string |
 | savings\_plan\_total\_commitment\_to\_date | The total amortized upfront commitment and recurring commitment to date, for that hour. | double |
 | savings\_plan\_used\_commitment | The total dollar amount of the Savings Plan commitment used. (SavingsPlanRate multiplied by usage) | double |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

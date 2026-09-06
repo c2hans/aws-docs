@@ -12,7 +12,3 @@ If you are creating an SRT listener output on a MediaLive Anywhere channel, ther
   + **Using the API**: The node interface IPs are included in the node describe call as `PhysicalInterfaceIpAddresses`.
 
   You must provide this IP address to the downstream systems so they can configure their SRT callers to connect to the correct MediaLive Anywhere node interface.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

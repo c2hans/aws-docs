@@ -50,7 +50,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/planning-
 <a name="vpc-subnet-addressing"></a>
 
  Although you can assign one /56 IPv6 CIDR block to a VPC, the VPC subnets are /64 fixed in length. This yields to the interface ID being /64 in length, in accordance with the general format of the IPv6 unicast addresses. Given the fixed size of the VPC CIDR and the subnet prefix, you have 8 bits for subnet allocation in the VPC, enabling you to create 256 subnets in the VPC. You can allocate IPv6 /64 CIDRs to dual-stack subnets (which allow you to run both IPv4 and IPv6 workloads), and to IPv6-only subnets (which allow you to run IPv6-only enabled resources).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

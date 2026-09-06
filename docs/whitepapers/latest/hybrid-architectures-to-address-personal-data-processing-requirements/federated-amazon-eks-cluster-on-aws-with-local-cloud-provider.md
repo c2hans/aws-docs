@@ -38,7 +38,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
    1.  A cloud-based API application in an Amazon EKS cluster (primary cluster in Federation) with access to an AWS database
 
 1.  **Single point of administration, configuration, or deployment** (shared resources, configurations, API) among multiple geo-based Kubernetes clusters
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

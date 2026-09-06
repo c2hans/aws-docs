@@ -19,7 +19,3 @@ Note the following about the format of the CSV download:
 + If you view the CSV file in a table format, the file’s columns represent costs and the rows represent time. When compared to the Cost Explorer data table in the console, the columns and rows are transposed.
 + The file shows data with up to 15 decimal places of precision.
 + The file shows dates in the YYYY-MM-DD format.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ To avoid errors, remove the constraints from the portfolio *before* you remove a
 1. Choose **Delete**. You can only delete *local* portfolios. If you are attempting to delete an *imported* (shared) portfolio, the **Actions** menu is not available.
 
 1. In the confirmation window, choose **Delete**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ Amazon SageMaker AI takes your feedback seriously. We encourage you to provide f
 1. Choose a smiley emoji to let us know how satisfied you are with SageMaker Studio Classic and add any feedback you'd care to share with us.
 
 1. Decide whether to share your identity with us, then choose **Submit**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

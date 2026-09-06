@@ -34,7 +34,3 @@ In manufacturing quality management, automated quality inspection is one of the 
 1. Manufacturers can use the cloud component of microservices to process cases that are less sensitive to latency, such as processing quality inspection to populate history tables and sending updates to a PLM system to get quality results for future processes and part design improvements. Because of the cloud's economics, scale, and disaster recovery benefits, customers can store data for extended periods in cloud microservice instances.
 
 1. You can use cloud-native ML services such as Amazon SageMaker AI to build and train the model in the cloud. You can deploy the finally trained model at the edge for inference. The edge component can also feed data back to the cloud to retrain the model.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,7 +45,3 @@ By default, all S3 buckets for this solution come with the following configurati
 +  Encryption at rest by a key management service (KMS)-based customer managed key (CMK)
 
  Additionally, S3 buckets are also configured with a default resource policy that deny all non-HTTPS requests to ensure data-in-transit encryption.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Object and Rule Extensions for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

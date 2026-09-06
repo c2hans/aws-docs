@@ -108,7 +108,3 @@ The following procedures will get you started in exploring your send and reputat
 1. In the **Reputation by configuration set** pane, click inside the **Configuration set** field and either start typing for, or select, a configuration set that has reputation metrics enabled.
 
 1. After selecting the configuration set, it will load the Summary, Bounce, and Complaint panes showing metrics based only on email sent with the selected configuration set.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

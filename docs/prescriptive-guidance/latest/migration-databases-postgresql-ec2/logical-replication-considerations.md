@@ -63,7 +63,3 @@ We recommend that you consider the following limitations of the logical replicat
 + Logical replication can't replicate data definition language (DDL), sequence, and large object operations. A truncate action (which applies to a table with a foreign key) must include related tables in the same subscription.
 
 For more information on the limitations of logical replication, see [31.6. Restrictions](https://www.postgresql.org/docs/current/logical-replication-restrictions.html) in the PostgreSQL documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

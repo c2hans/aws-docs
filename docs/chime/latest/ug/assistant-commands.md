@@ -37,7 +37,3 @@ The Amazon Chime Assistant supports the following commands:
 **Note**
 The **Delete me** command removes the link between your Amazon Chime profile and your amazon.com account, which you use to sign into Amazon Chime. Your amazon.com account is provided by amazon.com. To delete your associated amazon.com account, go to http://amazon.com.
 + **Help** provides a description of, and instructions for, using the commands described here.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

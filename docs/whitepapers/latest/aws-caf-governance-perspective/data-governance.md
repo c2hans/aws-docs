@@ -48,7 +48,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-pe
 +  Implement data quality alerting within operational dashboards and integrate those into your metadata repository/data catalog.
 +  Enable data consumers to access data quality metrics for each data asset.
 +  Enable product teams to define data quality rules and implemented them within data pipelines.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

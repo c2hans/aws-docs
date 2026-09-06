@@ -44,7 +44,3 @@ A Refactor Spaces route is a proxy matching rule that forwards a request to a se
 Routes can be toggled between either an active or inactive state as you prepare and release the routes for traffic. Routes are configured on the application's Amazon API Gateway proxy.
 
 You can create routes with path parameters. Refactor Spaces forwards the path parameters that you define to the target service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub Refactor Spaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-refactor-spaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

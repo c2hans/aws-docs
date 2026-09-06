@@ -66,7 +66,3 @@ If a cluster already has KMS encryption enabled, eksctl will proceed to re-encry
 
 **Note**
 Once KMS encryption is enabled, it cannot be disabled or updated to use a different KMS key.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

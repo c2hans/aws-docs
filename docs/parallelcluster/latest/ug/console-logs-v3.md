@@ -38,7 +38,3 @@ You can update this parameter at any time, without stopping the compute fleet.
 `compute_console_wait_time` sets the time, in seconds, that AWS ParallelCluster waits between detecting a node failure and collecting the console output from that node. You can increase the wait time if you determine that Amazon EC2 needs more time to collect the final output from the terminated node. The default value is 300 seconds (5 minutes).
 
 You can update this parameter at any time, without stopping the compute fleet.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

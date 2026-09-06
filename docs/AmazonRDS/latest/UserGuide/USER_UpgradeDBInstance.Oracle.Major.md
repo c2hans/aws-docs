@@ -75,11 +75,7 @@ Before you upgrade to Oracle Database 26ai, review the following changes:
 + Review the new and desupported parameters for Oracle Database 26ai. For more information, see [Amazon RDS parameter changes for Oracle Database 26ai (26.0.0.0)](Oracle.Concepts.database-versions.md#Oracle.Concepts.FeatureSupport.26ai.parameters).
 + Note the following changes to options:
   + Oracle supports only TLS 1.2 or higher for the 26ai major engine version. This change affects the OEM agent and SSL options and their option settings, specifically the allowed cipher suites and TLS versions. For more information, see [Oracle Management Agent for Enterprise Manager Cloud Control](Oracle.Options.OEMAgent.md) and [Oracle Secure Sockets Layer](Appendix.Oracle.Options.SSL.md).
-  + Oracle Database 26ai supports only Oracle APEX version 24.1.v1 and higher. For more information, see [Oracle Application Express (APEX)](Appendix.Oracle.Options.APEX.md).
+  + Oracle Database 26ai supports only Oracle APEX version 24.1.v1 and higher. For more information, see [Oracle APEX](Appendix.Oracle.Options.APEX.md).
   + For the NNE option, Amazon RDS has desupported older hash functions and cryptographic algorithms for Oracle Database 26ai. For more information, see [Oracle native network encryption](Appendix.Oracle.Options.NetworkEncryption.md).
 + RDS for Oracle doesn't support the OEM Database Express and OLAP options in Oracle Database 26ai. Oracle desupported OEM Database Express and deprecated OLAP in Oracle Database 26ai. For more information, see [Oracle Enterprise Manager Database Express](Appendix.Oracle.Options.OEM_DBControl.md) and [Oracle OLAP](Oracle.Options.OLAP.md).
 + RDS for Oracle doesn't support the Locator option in Oracle Database 26ai. Oracle Spatial supersedes Oracle Locator and includes its functionality. To use Locator functionality in Oracle Database 26ai, use the Oracle Spatial option instead. For more information, see [Oracle Locator](Oracle.Options.Locator.md) and [Oracle Spatial](Oracle.Options.Spatial.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,7 +50,3 @@ This data is then forwarded to the rule's action, which sends the data for more 
 **Note**
 Comments are not currently supported in AWS IoT SQL syntax.
 Attribute names with spaces in them can't be used as field names in the SQL statement. While the incoming payload can have attribute names with spaces in them, such names can't be used in the SQL statement. They will, however, be passed through to the outgoing payload if you use a wildcard (\*) field name specification.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,7 +39,3 @@ Choosing a solution solely based on cost without considering its business value 
 +  The compute capacity requirements where processing the data makes more sense, at edge in the vehicle or in the AWS Cloud. In this scenario, edge processing (in-vehicle) is critical for immediate decision-making and ensuring passenger safety. It allows each vehicle to operate autonomously, reacting swiftly to its environment.
 
  On the other hand, cloud processing is beneficial for higher-level, aggregate analysis. It can be used to optimize routes across the entire fleet, predict traffic patterns, and perform long-term planning. Overall, a combination of edge and cloud processing can offer the best of both worlds, allowing for real-time decision-making at the vehicle level while also leveraging the cloud's computational power for broader fleet optimization and analytics.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

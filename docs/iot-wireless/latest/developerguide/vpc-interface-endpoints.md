@@ -49,7 +49,3 @@ Data plane API endpoints are LoRaWAN Network Server (LNS) and Configuration and 
 + [AWS IoT Core for LoRaWAN endpoints](#vpc-lorawan-endpoints)
 + [Onboard AWS IoT Core for LoRaWAN control plane API endpoint](lorawan-onboard-control-endpoint.md)
 + [Onboard AWS IoT Core for LoRaWAN data plane API endpoints](onboard-lns-cups-endpoints.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,7 +51,3 @@ You have complete ownership of memory processing pipeline with custom extraction
 + Lower cost for storage than built-in strategies
 
 A single memory resource can be configured to utilize both built-in and custom strategies simultaneously, providing flexibility to address diverse memory requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -357,7 +357,3 @@ To use the CloudWatch agent to export metrics to CloudWatch, use the following e
 
 **Note**
 The CloudWatch agent has a Prometheus exporter that renames certain attributes. For the default metrics labels, Amazon Managed Service for Prometheus uses underscore characters in place of the periods that Amazon CloudWatch uses. If you use Amazon Managed Grafana to visualize the default metrics in Amazon Managed Service for Prometheus, the labels appear as `cluster_id`, `instance_id`, `node_type`, and `service_name`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

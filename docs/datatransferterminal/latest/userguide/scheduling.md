@@ -17,7 +17,3 @@ The amount of time required to make a data transfer varies depending upon upload
 
  **Data transfer size**
 + The Data Transfer Terminal network connectivity is designed for large data transfers. However, the size of the data being transfered will impact how long the session takes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Transfer Terminal. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datatransferterminal` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

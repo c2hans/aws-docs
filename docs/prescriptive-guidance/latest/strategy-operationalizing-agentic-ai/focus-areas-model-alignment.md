@@ -32,7 +32,3 @@ The following AWS services support this alignment by providing robust tracking a
 + [AWS Marketplace](https://aws.amazon.com/mp/marketplace-service/overview/) provides a channel for publishing agents and agentic solutions as commercial products.
 
 These services help you to transform agent functionality into scalable, value-driven digital offerings that align with enterprise growth and monetization strategies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

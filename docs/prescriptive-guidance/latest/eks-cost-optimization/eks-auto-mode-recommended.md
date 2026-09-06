@@ -47,7 +47,3 @@ For complete migration script, see [this GitHub repository](https://github.com/a
 For the complete migration and validation scripts, see the [04-karpenter-cost-optimization](https://github.com/aws-samples/sample-eks-cost-optimization-guide/tree/main/04-karpenter-cost-optimization) folder in the code repository.
 
 **Key takeaway:** EKS Auto Mode is ideal for teams that want zero operational overhead on node management. For clusters requiring workload-specific NodePools, custom disruption budgets, or explicit Spot/On-Demand control, continue with self-managed Karpenter as described in the sections below.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

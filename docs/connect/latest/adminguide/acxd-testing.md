@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-testing.h
 # Testing your application
 <a name="acxd-testing"></a>
 
-Testing in Agentic CX Designer lets you validate how your conversational AI application behaves before it is used in a live customer experience.
+Testing in agentic CX designer lets you validate how your conversational AI application behaves before it is used in a live customer experience.
 
 Use testing to confirm that your application:
 + Starts from the expected flow
@@ -14,7 +14,7 @@ Use testing to confirm that your application:
 + Applies state modifications as expected
 + Uses Data requests, knowledge bases, and tools successfully
 
-Agentic CX Designer includes several testing tools for different stages of review:
+Agentic CX designer includes several testing tools for different stages of review:
 
 |  |  |
 | --- |--- |
@@ -225,7 +225,3 @@ The last reconnected node is often where the issue begins.
 + Set context variables before testing flows that depend on earlier conversation state.
 + Test happy paths, unclear inputs, missing information, retries, No match paths, fallback paths, and escalation.
 + Use the debugger to inspect unexpected behavior.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

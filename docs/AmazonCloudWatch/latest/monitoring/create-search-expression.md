@@ -98,7 +98,3 @@ You can't create an alarm based on a **SEARCH** expression. This is because sear
 1. (Optional) Select one of the buttons in the search bar to edit that part of the search term.
 
 1. (Optional) To add the graph to a dashboard, choose **Actions** and then **Add to dashboard**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

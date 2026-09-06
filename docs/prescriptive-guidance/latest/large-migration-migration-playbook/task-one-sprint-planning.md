@@ -23,7 +23,3 @@ In this step, for all waves in this sprint, you assign owners to each task and s
 
 **Important**
 Do not add tasks to the sprint without updating the runbook or task list. These documents that you built in stage 1 should be a source of truth for all your migration activities. If any step is missing or incorrect, update and validate the runbook before adding tasks to the sprint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

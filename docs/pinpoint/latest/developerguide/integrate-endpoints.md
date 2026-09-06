@@ -34,7 +34,3 @@ You can use the AWS Amplify JavaScript library to register and update endpoints 
 <a name="integrate-endpoints-next"></a>
 
 After you update your app to register endpoints, device information and custom attributes are provided to Amazon Pinpoint when users launch your app. You can use this information to define audience segments. You can also use the console to see endpoint metrics and users who are assigned user IDs. You can also complete the steps in [Report Amazon Pinpoint events in your application](integrate-events.md) to update your app to report usage data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

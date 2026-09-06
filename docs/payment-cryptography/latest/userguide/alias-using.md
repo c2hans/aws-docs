@@ -16,7 +16,3 @@ When using an alias ARN, remember that the alias mapping to an AWS Payment Crypt
 One of the most powerful uses of aliases is in applications that run in multiple AWS Regions.
 
 You could create a different version of your application in each Region or use a dictionary, configuration or switch statement to select the right AWS Payment Cryptography key for each Region. But it might be easier to create an alias with the same alias name in each Region. Remember that the alias name is case-sensitive.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

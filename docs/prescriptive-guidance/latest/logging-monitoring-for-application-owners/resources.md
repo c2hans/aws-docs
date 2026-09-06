@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/logging-mon
 + [Centralized Logging on AWS](https://aws.amazon.com/solutions/implementations/centralized-logging/) (AWS Solutions)
 + [Monitoring and Observability](https://aws.amazon.com/cloudops/monitoring-and-observability/) (AWS Cloud Operations)
 + [How to Monitor your Applications Effectively](https://aws.amazon.com/startups/start-building/how-to-monitor-applications/) (AWS Startups)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

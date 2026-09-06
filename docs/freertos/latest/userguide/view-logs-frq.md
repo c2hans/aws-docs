@@ -12,7 +12,3 @@ Contains logs generated from IDT for FreeRTOS (for example, logs related configu
 
 **`{{test_group_id}}__{{test_case_id}}.log` (for example, `FullMQTT__Full_MQTT.log`)**
 The log file for a test case, including output from the device under test. The log file is named according to the test group and test case that was run.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

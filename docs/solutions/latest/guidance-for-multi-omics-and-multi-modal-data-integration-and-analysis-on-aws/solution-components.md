@@ -78,7 +78,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 + **Variant Store ** – A data store that stores variant data at a population scale in VCF format.
 + **Annotation Store ** – A data store that stores annotation data in VCF, GFF3 and TSV/CSV formats downstream queryability.
 + In addition, the example datasets (1000 Genomes, example VCF and ClinVar VCF) are ingested into these stores as part of the solution setup.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

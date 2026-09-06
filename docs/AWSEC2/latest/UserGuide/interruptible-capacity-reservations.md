@@ -59,7 +59,3 @@ Before using interruptible Capacity Reservations, review the following limitatio
 + You can't add interruptible Capacity Reservations to capacity reservation groups.
 + We recommend that you only use interruptible Capacity Reservations for applications that can be interrupted.
 + Your instances will be terminated when the owner reclaims capacity - there is no fallback to On-Demand or Spot. For more information, see [Interruption experience](capacity-consumer-procedures.md#interruption-experience).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

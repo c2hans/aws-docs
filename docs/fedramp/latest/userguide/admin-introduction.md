@@ -11,7 +11,3 @@ This page provides guidance for AWS top-level administrative accounts aligned wi
 <a name="admin_introductionabout_fedramp_rev5_scg_administrative_guidance_from_aws"></a>
 
 For the most up-to-date account features and security configurations, always review the AWS Documentation page for the AWS service. These guidances are updated on a routine basis but the AWS services documentation pages are the source of truth for the most up-to-date information on standard service features.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FedRamp Compliance Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fedramp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

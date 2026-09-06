@@ -25,7 +25,3 @@ If you want to re-subscribe to the asset (or to a different asset), see [Request
 
 **Note**
 When a user no longer needs access to an asset they can choose the **Unsubscribe** option. The asset remains intact, no resource is deleted as the result of this action.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -133,7 +133,3 @@ You can use the [`UpdateEmailTemplate`](https://docs.aws.amazon.com/ses/latest/A
    If the template is updated successfully, this command doesn't provide any output. You can verify that the template was updated by using the [`GetEmailTemplate`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailTemplate.html) operation.
 
    If the template that you specified doesn't exist, this command returns a `TemplateDoesNotExist` error. If the template doesn't contain either the `TextPart` or `HtmlPart` property (or both), this command returns an `InvalidParameterValue` error.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

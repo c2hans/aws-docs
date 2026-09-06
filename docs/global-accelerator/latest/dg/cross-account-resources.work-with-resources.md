@@ -15,7 +15,3 @@ The following sections include the steps to add or remove cross-account attachme
 + [Add cross-account BYOIP addresses](cross-account-resources.add-byoip.md)
 + [Add cross-account endpoints](cross-account-resources.add-endpoints.md)
 + [Remove cross-account endpoints](cross-account-resources.remove-endpoints.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ The following customer managed applications support trusted identity propagation
   + To enable trusted identity propagation for users of Tableau, refer to [Integrate Tableau and Okta with Amazon Redshift using IAM Identity Center](https://aws.amazon.com/blogs/big-data/integrate-tableau-and-okta-with-amazon-redshift-using-aws-iam-identity-center/) in the *AWS Big Data Blog*.
 + **SQL Clients** (DBeaver and DBVisualizer)
   + To enable trusted identity propagation for users of SQL Clients (DBeaver and DBVisualizer), refer to [Integrate Identity Provider (IdP) with Amazon Redshift Query Editor V2 and SQL Client using IAM Identity Center for seamless Single Sign-On](https://aws.amazon.com/blogs/big-data/integrate-identity-provider-idp-with-amazon-redshift-query-editor-v2-and-sql-client-using-aws-iam-identity-center-for-seamless-single-sign-on/) in the *AWS Big Data Blog*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -90,7 +90,3 @@ The date and time when the instance's SQL Server High Availability status was la
 The license type for the SQL Server license. Valid values include:
 + `full` - The SQL Server High Availability instance is using a full SQL Server license.
 + `waived` - The SQL Server High Availability instance is waived from the SQL Server license.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

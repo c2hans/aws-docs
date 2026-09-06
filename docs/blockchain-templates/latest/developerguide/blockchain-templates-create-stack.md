@@ -50,7 +50,3 @@ Use the default accounts and associated mnemonic phrase for testing purposes onl
 **Important**
 You won't be able to connect directly to these URLs or SSH directly until you set up a proxy connection through the bastion host on your client computer. For more information, see [Connect to EthStats and EthExplorer Using the Bastion Host](blockchain-bastion-host-connect.md).
 ![CloudFormation console showing Ethereum network stack details and output URLs.](http://docs.aws.amazon.com/blockchain-templates/latest/developerguide/images/stack-urls.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Blockchain Templates. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query blockchain-templates` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

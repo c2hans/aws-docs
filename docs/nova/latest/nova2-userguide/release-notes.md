@@ -35,7 +35,3 @@ The Amazon Nova 2 Sonic refresh (March 2026 release) improves on the initial gen
 + Improved turn-taking performance on telephony speech (8 kHz).
 
 Amazon Nova 2 Sonic continues to be generally available in the US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), and Europe (Stockholm) Regions. In addition, it is available through Amazon Connect in the following Regions: Asia Pacific (Singapore), Europe (London), and Asia Pacific (Seoul).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

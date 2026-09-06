@@ -13,7 +13,3 @@ The structure of an event includes the following:
 + Entity Type: Classifies who is performing the event. During prediction, specify the entity type and entity Id to define who performed the event.
 + Variables: Defines what variables can be sent as part of the event. Variables are used by models and rules to evaluate fraud risk. Once added, variables cannot be removed from an event type.
 + Labels: Classifies an event as fraudulent or legitimate. Used during model training. Once added, labels cannot be removed from an event type.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

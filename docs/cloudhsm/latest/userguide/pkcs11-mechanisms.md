@@ -194,7 +194,3 @@ The following table lists the maximum data size set for each mechanism:
 + [6] Vendor defined types. In order to use CloudHSM vendor defined types, PKCS\#11 applications must include `cloudhsm_pkcs11_vendor_defs.h` during compilation. This is found in `/opt/cloudhsm/include/pkcs11/cloudhsm_pkcs11_vendor_defs.h` for Linux based platforms and `C:\Program Files\Amazon\CloudHSM\include\pkcs11\cloudhsm_pkcs11_vendor_defs.h` for Windows based platforms
 + [7] Only supported on hsm2m.medium instances in non-FIPS mode.
 + [8] Key derivation functions (KDFs) are specified in [NIST Special Publication 800-56A Revision 3](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Ar3.pdf).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

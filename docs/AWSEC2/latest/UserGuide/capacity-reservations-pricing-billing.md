@@ -76,7 +76,3 @@ You can review the charges and fees to your account on the AWS Billing and Cost 
 + On the **Bills** page, under **Details**, expand the **Elastic Compute Cloud** section and the Region to get billing information about your Capacity Reservations.
 
 You can view the charges online, or you can download a CSV file. For more information, see [Capacity Reservation line items](https://docs.aws.amazon.com/cur/latest/userguide/monitor-ondemand-reservations.html#capacity-reservation-li).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

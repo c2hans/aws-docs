@@ -136,7 +136,3 @@ For more information on how to monitor your job with CloudWatch events, see [Mon
 Driver pod names follow the format `spark-<job id>-driver-<random-suffix>`. The same `random-suffix` is added to the executor pod names that the driver spawns. When you use this `random-suffix`, you can find logs for a driver and its associated executors. The `random-suffix` is only present if the [retry policy is enabled](#retry-config) for the job; otherwise, the `random-suffix` is absent.
 
 For more information on how to configure jobs with monitoring configuration for logging, see [Run a Spark application](getting-started.md#getting-started-run-spark-app).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

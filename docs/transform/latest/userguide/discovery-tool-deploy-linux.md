@@ -11,9 +11,9 @@ The discovery tool is available as a standalone Linux installer for deployment o
 <a name="discovery-tool-linux-server-specs"></a>
 + **RAM** – We recommend allocating at least 16 GB
 + **CPU** – We recommend allocating at least 4 cores
-+ **Disks** – 35 GB
++ **Disks** – 35 GB minimum. For larger inventories, see [Disk sizing and management](discovery-tool-disk-sizing.md).
 
-## Supported distributions
+## Supported distributions for the installer host
 <a name="discovery-tool-linux-supported-distros"></a>
 + **Amazon Linux** – Amazon Linux 2, Amazon Linux 2023
 + **Red Hat Enterprise Linux and derivatives** – RHEL 8–9, Rocky Linux 8–9, AlmaLinux 9
@@ -89,7 +89,3 @@ Critical dependencies are required for the discovery tool to start. If they are 
 
 **Note**
 The installer checks system compatibility including glibc version and systemd availability. On systems with systemd 250 or later (Amazon Linux 2023, RHEL 9, Rocky 9, AlmaLinux 9, Ubuntu 24.04\+, Debian 12\+), the database encryption key is encrypted at rest using systemd-creds. On older systems, the encryption key is stored as a permission-protected file.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

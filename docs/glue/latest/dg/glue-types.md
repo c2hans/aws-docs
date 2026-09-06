@@ -35,7 +35,3 @@ If type information can be inferred or provided to a `DataFrame`, it can be infe
 <a name="glue-types-crawler"></a>
 
 Crawlers aim to produce a consistent, usable schema for your dataset, then store it in Data Catalog for use in other AWS Glue components and Athena. Crawlers deal with types as described in the previous section on the Data Catalog, [AWS Glue Data Catalog Types](#glue-types-catalog). To produce a usable type in "Choice" type scenarios, where a column contains values of two or more types, Crawlers will create a `struct` type that models the potential types.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

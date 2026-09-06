@@ -56,7 +56,3 @@ You can view the status of the stack in the AWS CloudFormation console in the **
 After the stack reaches CREATE\_COMPLETE status, the modules and the associated components related to Scene Intelligence with Rosbag on AWS solution will be destroyed. If the stack deployment fails, refer to [Troubleshooting](troubleshooting.md).
 
 You can then delete the CloudFormation stacks which deployed and destroyed the Scene Intelligence with Rosbag on AWS solution from the AWS Management Console or by using the AWS Command Line Interface.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Scene Intelligence with Rosbag on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

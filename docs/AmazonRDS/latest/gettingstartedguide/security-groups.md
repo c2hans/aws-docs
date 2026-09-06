@@ -54,7 +54,3 @@ After you explicitly define at least one inbound rule that allows an IP address 
 The **Easy create** option for database creation uses password authentication by default, which is the simplest option. If you want to explore advanced authentication options, proceed to the next step. Otherwise, you can skip directly to connecting to your DB instance.
 
 **Next step: **[Database authentication options for Amazon RDS](database-auth.md) or [Connecting to your Amazon RDS DB instance](connecting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

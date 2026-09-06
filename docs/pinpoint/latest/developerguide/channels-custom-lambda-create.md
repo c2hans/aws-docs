@@ -191,7 +191,3 @@ def lambda_handler(event, context):
 When an Amazon Pinpoint campaign executes this Lambda function, Amazon Pinpoint sends the function a list of segment members. The function counts the number of endpoints of each `ChannelType`. It then sends that data to Amazon CloudWatch. You can view these metrics in the **Metrics** section of the CloudWatch console. The metrics are available in the **PinpointCustomChannelExecution** namespace.
 
 You can modify this code example so that it also connects to the API of an external service in order to send messages through that service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

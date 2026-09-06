@@ -22,7 +22,3 @@ To get started with AWS, you need an AWS account. For information about creating
 <a name="acessing-controlcatalog"></a>
 
 Control Catalog is available through the console and through the Control Catalog application programming interface (API). This API provides a programmatic way to identify and filter the common controls and related metadata that are available to you as an AWS customer. For more information, see the [Control Catalog API Reference.](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/Welcome.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controlcatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

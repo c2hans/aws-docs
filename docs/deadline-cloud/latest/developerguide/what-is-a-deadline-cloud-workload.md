@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/wha
 # What is a Deadline Cloud workload
 <a name="what-is-a-deadline-cloud-workload"></a>
 
- With AWS Deadline Cloud, you can submit jobs to run your applications in the cloud and process data for the production of content or insights important to your business. Deadline Cloud uses [Open Job Description](https://github.com/OpenJobDescription/openjd-specifications) (OpenJD) as the syntax for job templates, a specification designed for the needs of visual compute pipelines but applicable to many other use cases. Some example workloads include computer graphics rendering, physics simulation, and photogrammetry.
+ With AWS Deadline Cloud, you can submit jobs to run your applications in the cloud and process data for the production of content or insights important to your business. Deadline Cloud uses Open Job Description (OpenJD) as the syntax for job templates, a specification designed for the needs of visual compute pipelines but applicable to many other use cases. For more information, see the [OpenJD specification](https://github.com/OpenJobDescription/openjd-specifications) on the GitHub website. Some example workloads include computer graphics rendering, physics simulation, and photogrammetry.
 
 Workloads scale from simple job bundles that users submit to a queue with either the CLI or an automatically generated GUI, to integrated submitter plugins that dynamically generate a job bundle for an application-defined workload.
 
@@ -34,7 +34,7 @@ Workloads scale from simple job bundles that users submit to a queue with either
 ## The ingredients of a workload
 <a name="the-ingredients-of-a-workload"></a>
 
- To specify a Deadline Cloud workload, implement a job bundle that users submit to a queue with the [Deadline Cloud CLI](https://github.com/aws-deadline/deadline-cloud). Much of the work in creating a job bundle is to write the job template, but there are more factors like how to provide the applications that the workload requires. Here are the essential things to consider when defining a workload for Deadline Cloud:
+ To specify a Deadline Cloud workload, implement a job bundle that users submit to a queue with the Deadline Cloud CLI. Much of the work in creating a job bundle is to write the job template, but there are more factors like how to provide the applications that the workload requires. For more information about the CLI, see the [Deadline Cloud CLI repository](https://github.com/aws-deadline/deadline-cloud) on the GitHub website. Here are the essential things to consider when defining a workload for Deadline Cloud:
 +  **The application to run**. The job must be able to launch application processes, and therefore needs an installation of the application available as well as any licensing the application uses, such as access to a floating license server. The installation and licensing are typically part of the farm configuration, and not embedded in the job bundle itself.
   + [Configure jobs using queue environments](configure-jobs.md)
   + [Connect customer-managed fleets to a license endpoint](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/cmf-ubl.html)
@@ -53,8 +53,8 @@ Workloads scale from simple job bundles that users submit to a queue with either
  Here are some ways you can make your job bundle portable.
 +  Fully specify the input data files needed by a workload, using `PATH` job parameters and asset references in the job bundle. This approach makes the job portable to farms based on shared file systems and to farms that make copies of the input data, like the Deadline Cloud job attachments feature.
 +  Make file path references for the input files of the job relocatable and usable on different operating systems. For example when users submit jobs from Windows workstations to run on a Linux fleet.
-  +  Use relative file path references, so if the directory containing them is moved to a different location, references still resolve. Some applications, like [Blender](https://docs.blender.org/manual/en/latest/files/blend/open_save.html#files-blend-relative-paths), support a choice between relative and absolute paths.
-  +  If you can't use relative paths, support OpenJD [path mapping metadata](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run#path-mapping) and translate the absolute paths according to how Deadline Cloud provides the files to the job.
+  +  Use relative file path references, so if the directory containing them is moved to a different location, references still resolve. For information about Blender's support for relative paths, see [Relative paths](https://docs.blender.org/manual/en/latest/files/blend/open_save.html#files-blend-relative-paths) on the Blender website.
+  +  If you can't use relative paths, support OpenJD path mapping metadata and translate the absolute paths according to how Deadline Cloud provides the files to the job. For more information, see [path mapping metadata](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run#path-mapping) on the GitHub website.
 +  Implement commands in a job using portable scripts. Python and bash are two examples of scripting languages that can be used this way. You should consider providing them both on all the worker hosts of your fleets.
   +  Use the script interpreter binary, like `python` or `bash`, with the script file name as an argument. This approach works on all operating systems including Windows, compared to using a script file with its execute bit set on Linux.
   +  Write portable bash scripts by applying these practices:
@@ -71,10 +71,6 @@ Workloads scale from simple job bundles that users submit to a queue with either
           : # Code for Linux and other operating systems
       fi
       ```
-  +  You can write portable Python scripts using `pathlib` to handle file system path differences and avoid operating-specific features. The Python documentation includes annotations for this, for example in the [signal library documentation](https://docs.python.org/3/library/signal.html). Linux-specific feature support is marked as "Availability: Linux."
+  +  You can write portable Python scripts using `pathlib` to handle file system path differences and avoid operating-specific features. For information about which Python library features are Linux-specific, see the [signal library documentation](https://docs.python.org/3/library/signal.html) on the Python website. Linux-specific feature support is marked as "Availability: Linux."
 +  Use job parameters to specify application requirements. Use consistent conventions that the farm administrator can apply in [queue environments](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/configure-jobs.html).
-  +  For example, you can use the `CondaPackages` and/or `RezPackages` parameters in your job, with a default parameter value that lists the application package names and versions the job requires. Then, you can use one of the [sample conda or Rez queue environments](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/queue_environments) to provide a virtual environment for the job.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+  +  For example, you can use the `CondaPackages` and/or `RezPackages` parameters in your job, with a default parameter value that lists the application package names and versions the job requires. Then, you can use one of the [sample conda or Rez queue environments](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/queue_environments) on the GitHub website to provide a virtual environment for the job.

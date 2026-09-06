@@ -40,7 +40,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/applying-security-pra
   Consider scanning your container images with Amazon ECR or Amazon Inspector:
   +  [Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html) — An AWS container image registry service. It can perform image scanning that can help identify software vulnerabilities in container images.
   +  [Amazon Inspector](https://aws.amazon.com/inspector/?nc=sn&loc=0) — A vulnerability management service that nearly continuously scans AWS workloads for software vulnerabilities and unintended network exposure. Amazon Inspector automatically discovers and scans running Amazon EC2 instances, container images in [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/) (Amazon ECR), and [AWS Lambda](https://aws.amazon.com/lambda/) functions for known software vulnerabilities and unintended network exposure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

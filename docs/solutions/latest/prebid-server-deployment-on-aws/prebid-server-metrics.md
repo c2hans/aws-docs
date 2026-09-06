@@ -10,7 +10,3 @@ The Prebid Server collects various application metrics, which are submitted to c
 In this solution, metrics that are emitted by the Prebid Server containers are captured via log files. This is achieved by hooking the operational monitoring system to the Java file logger by modifying the original source file on the GitHub repository - [MetricsConfiguration.java](https://github.com/prebid/prebid-server-java/blob/master/src/main/java/org/prebid/server/spring/config/metrics/MetricsConfiguration.java).
 
 This data is processed through the same ETL pipeline as operational metrics, making it available for analysis through AWS Glue Data Catalog and Amazon Athena. For configuration details, see the [Configuring the analytics adapter](configure-the-solution.md#configuring-analytics-adapter) section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying a Prebid Server on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

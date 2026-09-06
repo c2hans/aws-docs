@@ -464,7 +464,3 @@ If you disable or revoke DynamoDB's access to a customer managed key used to enc
 
 **MRSC (multi-Region strong consistency)**
 If you disable or revoke DynamoDB's access to a customer managed key used to encrypt a replica, replication to and from the replica will stop. Attempts to perform write or strongly consistent reads to the replica will return an error, and the replica status will change to `INACCESSIBLE_ENCRYPTION_CREDENTIALS`. If a replica in a MRSC global table remains in the `INACCESSIBLE_ENCRYPTION_CREDENTIALS` state for more than seven days, depending on the specific permissions revoked, the replica will be archived or become permanently inaccessible.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

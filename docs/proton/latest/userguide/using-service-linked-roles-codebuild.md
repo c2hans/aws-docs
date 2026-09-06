@@ -57,7 +57,3 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the **AWSServiceRoleF
 <a name="slr-regions-codebuild"></a>
 
 AWS Proton supports using service-linked roles in all of the AWS Regions where the service is available. For more information, see [AWS Proton endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/proton.html) in the *AWS General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ The CCM feature has the following limitations:
 <a name="ccm-use-cases"></a>
 
 For some industries, such as retail, banking, and finance, delays of only a few milliseconds can cause application performance issues and result in a significant loss of business. Because CCM helps recover application and database performance by continuously synchronizing the buffer cache of the primary database instance to the preferred backup instance, it can help prevent businesses losses associated with failovers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

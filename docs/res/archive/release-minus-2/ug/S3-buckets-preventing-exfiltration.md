@@ -86,7 +86,3 @@ To prevent users from exfiltrating data from secure S3 buckets into their own S3
    1. Verify that the **State** is **Available**.
 
 By following these steps, you create a VPC endpoint that allows S3 access that is restricted to resources within your account or a specified account ID.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

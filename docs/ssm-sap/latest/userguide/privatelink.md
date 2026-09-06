@@ -88,7 +88,3 @@ If these dependent service endpoints are not configured, or if your VPC doesn’
 <a name="additional-resources"></a>
 + For more information about enabling Systems Manager for SAP service dependency on VPC endpoints, see [AWS Systems Manager VPC endpoints](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-create-vpc.html)
 + For more information about AWS PrivateLink and VPC endpoints, see [AWS PrivateLink Guide](https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-access-aws-services.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ssm-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -57,7 +57,3 @@ If you disable S3 Protection in your account in a specific Region, GuardDuty sto
 By default, when you enable GuardDuty, Extended Threat Detection also gets enabled in your account. This capability covers the threat scenario associated with CloudTrail management events at no additional cost. However, to use Extended Threat Detection at its full potential, GuardDuty recommends enabling S3 Protection to cover threat scenarios associated with CloudTrail data events for S3.
 
 After you enable S3 Protection, GuardDuty will automatically cover the attack sequence threat scenarios, such as compromise or destruction of data, where your Amazon S3 resources might be involved.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

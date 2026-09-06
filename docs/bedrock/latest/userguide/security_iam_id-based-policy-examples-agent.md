@@ -143,7 +143,3 @@ The following example shows an identity-based policy that denies access to all s
 ```
 
 You can customize this policy to deny access to only specific service tiers by modifying the `bedrock:ServiceTier` condition values. For example, to deny only the premium "priority" tier while allowing "default" and "flex", you would specify only `["priority"]` in the condition. This flexible approach allows you to implement usage policies that align with your organization's cost management and operational requirements. For more information about service tiers, see [Service tiers for optimizing performance and cost](service-tiers-inference.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,7 +35,3 @@ If you don't use an attribute with the `break` tag, the result varies depending 
 + If there is no other punctuation next to the `break` tag, it creates a `<break strength="medium"/>` (comma-length pause).
 + If the tag is next to a comma, it upgrades the tag to a `<break strength="strong"/>` (sentence-length pause).
 + If the tag is next to a period, it upgrades the tag to `<break strength="x-strong"/>` (paragraph-length pause).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Polly. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query polly` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

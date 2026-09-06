@@ -108,7 +108,3 @@ For more information about how to use the console for targeted sentiment real-ti
 The **Syntax** tab shows a breakdown of each element in the text, along with its part of speech and the associated confidence score. For more information, see [Syntax analysis](how-syntax.md).
 
 ![Console display of the syntax analysis results.](http://docs.aws.amazon.com/comprehend/latest/dg/images/gs-console-syntax.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

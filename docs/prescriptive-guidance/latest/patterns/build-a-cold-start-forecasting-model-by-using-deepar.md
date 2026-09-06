@@ -104,7 +104,3 @@ The code for this pattern is available in the GitHub [DeepAR-ColdProduct-Pattern
 + [Forecasting demand for new product introductions by using AWS machine learning services](https://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-new-product/introduction.html)
 + [Launch Amazon SageMaker AI Studio Classic](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-launch.html)
 + [Use the SageMaker AI DeepAR forecasting algorithm](https://docs.aws.amazon.com/sagemaker/latest/dg/deepar.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

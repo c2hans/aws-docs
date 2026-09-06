@@ -20,7 +20,3 @@ Channel security groups and input security groups serve similar purposes but app
 + **Channel security groups** – Control inbound traffic to channel outputs. They define which downstream systems can connect to MediaLive to pull content.
 
 Both use the same underlying mechanism: CIDR allow lists stored in input security groups. This design allows you to reuse existing input security groups for channel security, simplifying management.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

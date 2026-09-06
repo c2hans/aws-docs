@@ -84,7 +84,3 @@ For a list of Regions where API Gateway is available, as well as the associated 
 <a name="api-gateway-overview-developer-experience-invoking-api"></a>
 
 An app developer works with the API Gateway service component for API execution, named `execute-api`, to invoke an API that was created or deployed in API Gateway. The underlying programming entities are exposed by the created API. There are several ways to call such an API. To learn more, see [Invoke REST APIs in API Gateway](how-to-call-api.md) and [Invoke WebSocket APIs](apigateway-how-to-call-websocket-api.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

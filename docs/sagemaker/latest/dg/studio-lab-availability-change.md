@@ -45,7 +45,3 @@ This section guides you through migrating your existing Amazon SageMaker Studio 
 1. **Recreate Conda Environments in SageMaker Studio.** Open a terminal in your JupyterLab Space and use your exported YAML file to recreate your conda environment. After installation, the environment will be available as a kernel for your notebooks. Refer to [JupyterLab environment customization](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-user-guide-customize-package-manager.html) in SageMaker Studio for the detailed steps.
 
 Migrating to SageMaker Studio only migrates your notebooks, files, and environment configurations. Historical compute usage or session logs from Studio Lab are not transferred. Future development, experimentation, and compute management will happen within SageMaker Studio.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

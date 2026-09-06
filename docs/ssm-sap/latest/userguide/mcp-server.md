@@ -127,7 +127,3 @@ The following are common issues and solutions for the MCP server.
 +  **MCP server does not appear in your AI assistant** – Verify that your MCP configuration file contains valid JSON. Restart your AI assistant after updating the configuration. Confirm that `uvx` is installed and available in your system PATH.
 +  **Authentication errors** – Verify that the `AWS_PROFILE` value in your MCP configuration matches a profile in `~/.aws/config`. Confirm that the profile has the required IAM permissions for the services listed in the prerequisites.
 +  **SAP applications are not discovered** – Verify that your SAP applications are registered with Systems Manager for SAP. Confirm that the AWS Region in your profile matches the Region where your SAP applications are registered. For supported Regions, see [Systems Manager for SAP endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ssm-sap.html) in the * AWS General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ssm-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

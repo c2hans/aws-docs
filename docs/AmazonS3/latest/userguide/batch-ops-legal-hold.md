@@ -28,7 +28,3 @@ When you're using Batch Operations to apply or remove an Object Lock legal hold,
 + The `s3:PutObjectLegalHold` permission is required in your IAM role to add or remove a legal hold from objects.
 + The `s3:GetBucketObjectLockConfiguration` IAM permission is required to confirm that S3 Object Lock is enabled for the S3 bucket where the job is performed.
 + A single S3 Object Lock legal hold job can support a manifest with up to 20 billion objects.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

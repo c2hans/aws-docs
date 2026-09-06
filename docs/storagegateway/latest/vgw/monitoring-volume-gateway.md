@@ -15,7 +15,3 @@ Storage Gateway provides CloudWatch metrics at no additional charge. Storage Gat
 + [Measuring Performance Between Your Application and Gateway](PerfAppGateway-common.md) - Learn how to measure data throughput, data latency, and operations per second to understand performance between your applications and your gateway.
 + [Measuring Performance Between Your Gateway and AWS](PerfGatewayAWS-common.md) - Learn how to measure data throughput, data latency, and operations per second to understand performance between your gateway and the AWS cloud.
 + [Understanding volume metrics](MonitoringVolumes-common.md) - Learn how to measure metrics that provide data about the volumes associated with a gateway.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ Follow the steps below to open and run a CloudFormation template that automatica
 For complete documentation of the AI Search Flows plugin, see [Configuring Agentic Search](https://docs.opensearch.org/latest/vector-search/ai-search/building-agentic-search-flows/) in the OpenSearch documentation.
 
 For more information about how Agentic Search works, see [Agentic Search](https://opensearch.org/docs/latest/vector-search/ai-search/agentic-search/) in the OpenSearch documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

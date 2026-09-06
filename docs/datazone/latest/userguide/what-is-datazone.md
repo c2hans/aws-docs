@@ -43,7 +43,3 @@ You can access Amazon DataZone in any of the following ways:
 + Amazon DataZone HTTPS API
 
   You can access Amazon DataZone programmatically by using the Amazon DataZone HTTPS API, which lets you issue HTTPS requests directly to the service. For more information, see the [Amazon DataZone API Reference](https://docs.aws.amazon.com/datazone/latest/APIReference/Welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

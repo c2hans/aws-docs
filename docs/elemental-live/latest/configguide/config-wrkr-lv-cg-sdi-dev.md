@@ -24,7 +24,3 @@ If you want, you can give the device a custom name.
 
 **Note**
 If these input device cards are connected to a router, you need to now follow the procedure for adding the router. See [Add SDI video routers](config-wrkr-lv-cg-sdi-rou.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Render Adobe After Effects projects on Deadline Cloud
 <a name="examples-jb-aftereffects"></a>
 
-The [afterfx\_render\_one\_task](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/afterfx_render_one_task) job bundle uses `aerender` to render an After Effects frame range as a single task. The entire workload runs on one worker as one command. The bundle accepts the following job parameters:
+The [afterfx\_render\_one\_task](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/afterfx_render_one_task) job bundle on the GitHub website uses `aerender` to render an After Effects frame range as a single task. The entire workload runs on one worker as one command. The bundle accepts the following job parameters:
 + Project file
 + Comp name
 + Input directory
@@ -15,8 +15,4 @@ The [afterfx\_render\_one\_task](https://github.com/aws-deadline/deadline-cloud-
 
 This bundle expects an input directory that contains all file references required to render. Place the project file inside the input directory to preserve relative paths.
 
-To run this bundle, you need After Effects installed on Windows worker hosts. You can use the [After Effects host configuration script](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/aftereffects) in the samples repository to install After Effects with Red Giant plugins on a Windows service-managed fleet. The [aftereffects-25.1 conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/aftereffects-25.1) builds an After Effects conda package as an alternative.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+To run this bundle, you need After Effects installed on Windows worker hosts. You can use the [After Effects host configuration script](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/aftereffects) on the GitHub website to install After Effects with Red Giant plugins on a Windows service-managed fleet. The [aftereffects-25.1 conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/aftereffects-25.1) on the GitHub website builds an After Effects conda package as an alternative.

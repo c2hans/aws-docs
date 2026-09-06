@@ -95,7 +95,3 @@ To add runtime hints to a slot, you use the `runtimeHints` structure that is par
 You can also use a Lambda function to add runtime hints during a conversation. To add runtime hints, you add the `runtimeHints` structure to the session state of the response that your Lambda function sends to Amazon Lex V2. For more information, see [AWS Lambda response format for Lex V2](lambda-response-format.md).
 
 You must specify a valid `intentName` and `slotName` in the request, otherwise Amazon Lex V2 returns a runtime error.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

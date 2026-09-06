@@ -96,7 +96,3 @@ The CloudWatch Logs log format differs from the general purpose bucket log forma
 + **Field names** – The CloudWatch Logs format uses descriptive underscore-separated field names (for example, `bytes_sent_size`, `total_duration`, `key_name`, `authentication_type`). The general purpose bucket format is positional space-delimited text with no named columns.
 + **Additional fields** – The CloudWatch Logs format includes `schema_version_id` and `bucket_arn`, which are not present in the general purpose bucket text format.
 + **No parsing required** – Because CloudWatch Logs logs are structured JSON, you can query individual fields directly in CloudWatch Logs Insights without regex parsing. The general purpose bucket text format requires a regex or custom parser to extract fields.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

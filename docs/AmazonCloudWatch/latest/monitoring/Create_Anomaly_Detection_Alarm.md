@@ -145,7 +145,3 @@ Using anomaly detection for an alarm accrues charges. As a best practice, if you
 1. In the **Graphed metrics** tab, in the **Details** column, choose the **ANOMALY\_DETECTION\_BAND** keyword, and then choose **Delete anomaly detection model** in the popup.
 ![The Graphed Metrics tab with the ANOMALY_DETECTION_BAND popup menu displayed.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/Anomaly_Detection_Edit.PNG)
    +  (Optional) If you're using the original interface, choose **Edit model**. You're directed to a new screen. On the new screen, choose **Delete model**, and then choose **Delete**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

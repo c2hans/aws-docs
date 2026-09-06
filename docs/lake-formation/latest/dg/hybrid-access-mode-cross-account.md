@@ -52,7 +52,3 @@ Scenario description - The producer account has a Data Catalog database that has
    1.  Test the principal's Lake Formation permissions by running sample Athena queries. Test the existing access of your AWS Glue users with IAM principal policies for Amazon S3 and AWS Glue actions.
 
       (Optional) Remove the Amazon S3 bucket policy for data access and IAM principal policies for AWS Glue and Amazon S3 data access for the principals that you configured to use Lake Formation permissions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,7 +27,3 @@ Complete the following steps to create a disk for your Lightsail for Research vi
 1. Choose your disk size in GB.
 
 1. Continue to the [Attach a disk](attach-disk.md) section for information about attach disks to your virtual computer.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail for Research. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail-for-research` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

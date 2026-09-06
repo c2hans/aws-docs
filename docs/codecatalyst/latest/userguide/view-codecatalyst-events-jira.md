@@ -24,7 +24,3 @@ If your CodeCatalyst projects and Jira projects are linked, the summary status o
 1. (Optional) To see the latest builds, choose the **Builds** tab.
 
 1. (Optional) To see the development status, choose the **Deployments** tab.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

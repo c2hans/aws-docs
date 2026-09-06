@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Build an AYON Launcher conda package for Deadline Cloud
 <a name="examples-conda-ayon"></a>
 
-The [ayon-launcher](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/ayon-launcher) rattler-build recipe packages the [AYON Launcher](https://github.com/ynput/ayon-launcher) as a conda package. The package provides the pipeline runtime needed for headless publishing on Deadline Cloud workers. It repackages the pre-built AYON Launcher release (cx\_Freeze binary) containing the Python 3.11 runtime, `ayon-python-api`, and core launcher logic.
+The [ayon-launcher](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/ayon-launcher) rattler-build recipe on the GitHub website packages the [AYON Launcher](https://github.com/ynput/ayon-launcher) as a conda package. The package provides the pipeline runtime needed for headless publishing on Deadline Cloud workers. It repackages the pre-built AYON Launcher release (cx\_Freeze binary) containing the Python 3.11 runtime, `ayon-python-api`, and core launcher logic.
 
 The conda package provides only the runtime environment. The studio-specific bundle (addons and dependency package) is delivered separately through Deadline Cloud job attachments. This separation means the conda package rarely changes and no rebuild is needed when addons are updated.
 
@@ -21,7 +21,3 @@ At runtime, the job must provide the following environment variables:
 + `AYON_SERVER_URL` — URL of the AYON server.
 + `AYON_API_KEY` — API key for server authentication.
 + `AYON_BUNDLE_NAME` — Bundle name to resolve addons from.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

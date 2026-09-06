@@ -20,7 +20,3 @@ For more information about Connection Functions, see the following topics.
 + [Test CloudFront Connection Functions before deployment](test-connection-functions.md)
 + [Associate Connection Functions with distributions](associate-connection-functions.md)
 + [Implement certificate revocation for mutual TLS (viewer) with CloudFront Functions and KeyValueStore](implement-certificate-revocation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

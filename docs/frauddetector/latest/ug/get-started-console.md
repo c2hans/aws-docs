@@ -13,7 +13,3 @@ This tutorial consists of two parts. The first part describes how to build, trai
 
 **Important**
 Before you proceed, make sure that you have followed instructions to [Get and upload example dataset](step-1-get-s3-data.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

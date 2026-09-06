@@ -60,7 +60,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
  Once content is securely stored in multiple delivery endpoints, the CDN or client device can attempt playback from an alternate origin if playback from the primary endpoint fails. This architecture necessitates that the key delivery, authentication, content management, and other application layer services be reachable in the event of a failure.
 
  **VOD processing and origin reliability** — In this scenario, the full application functionality must remain available in the event of an interruption. This includes the ability to ingest and process new content. This is achieved through a multi-Region design where the streaming architecture is replicated across two AWS Regions and CDNs, client logic, and DNS is used to route requests between Regions. In this scenario, care must be taken when designing the underlying storage and persistence layers (for example, databases and caching) to ensure consistency between Regions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

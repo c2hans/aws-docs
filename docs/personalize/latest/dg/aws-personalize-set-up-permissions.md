@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/aws-personalize-se
 + [Giving users permission to access Amazon Personalize](grant-user-permissions.md)
 + [Giving Amazon Personalize access to Amazon S3 resources](granting-personalize-s3-access.md)
 + [Giving Amazon Personalize permission to use your AWS KMS key](granting-personalize-key-access.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

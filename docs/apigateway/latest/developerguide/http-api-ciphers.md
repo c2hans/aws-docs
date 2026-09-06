@@ -48,7 +48,3 @@ OpenSSL and IETF RFC 5246 use different names for the same ciphers. For a list o
 <a name="apigateway-http-additional-apis"></a>
 
 For more information about REST APIs and WebSocket APIs, see [Choose a security policy for your custom domain in API Gateway](apigateway-custom-domain-tls-version.md) and [Security policy for WebSocket APIs in API Gateway](websocket-api-ciphers.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

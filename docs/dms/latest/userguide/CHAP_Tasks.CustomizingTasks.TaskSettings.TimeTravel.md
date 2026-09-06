@@ -146,7 +146,3 @@ For more information on turning on and using Time Travel logs, see the following
 + [Turning on the Time Travel logs for a task](CHAP_Tasks.CustomizingTasks.TaskSettings.TimeTravel.TaskEnabling.md)
 + [Using the Time Travel logs](CHAP_Tasks.CustomizingTasks.TaskSettings.TimeTravel.LogSchema.md)
 + [How often AWS DMS uploads Time Travel logs to S3](CHAP_Tasks.CustomizingTasks.TaskSettings.TimeTravel.UploadsToS3.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

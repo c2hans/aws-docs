@@ -38,7 +38,7 @@ Type: String
 Required: Yes
 
 **payload**
-Developer-defined information to be communicated to the Realtime server on connection. This includes any arbitrary data that might be used for a custom sign-in mechanism. For examples, a payload may provide authentication information to be processed by the Realtime server script before allowing a client to connect.
+Developer-defined information to be communicated to the Realtime server on connection. This includes any arbitrary data that might be used for a custom sign-in mechanism. For example, a payload may provide authentication information to be processed by the Realtime server script before allowing a client to connect.
 Type: byte array
 Required: No
 
@@ -136,7 +136,7 @@ Enums defined for the client SDK for Amazon GameLift Servers Realtime are defin
 + CONNECTED – Game client is connected to the Realtime server with a TCP connection only. All messages regardless of delivery intent are sent via TCP.
 + CONNECTED\_SEND\_FAST – Game client is connected to the Realtime server with a TCP and a UDP connection. However, the ability to receive messages via UDP is not yet verified; as a result, all messages sent to the game client use TCP.
 + CONNECTED\_SEND\_AND\_RECEIVE\_FAST – Game client is connected to the Realtime server with a TCP and a UDP connection. The game client can send and receive messages using either TCP or UDP.
-+ CONNECTING Game client has sent a connection request and the Realtime server is processing it.
++ CONNECTING – Game client has sent a connection request and the Realtime server is processing it.
 + DISCONNECTED\_CLIENT\_CALL – Game client was disconnected from the Realtime server in response to a [Disconnect()](realtime-sdk-csharp-ref-actions.md#realtime-sdk-csharp-ref-actions-disconnect)request from the game client.
 + DISCONNECTED – Game client was disconnected from the Realtime server for a reason other than a client disconnect call.
 
@@ -150,7 +150,3 @@ Enums defined for the client SDK for Amazon GameLift Servers Realtime are defin
 **DeliveryIntent**
 + FAST – Delivered using a UDP channel.
 + RELIABLE – Delivered using a TCP connection.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

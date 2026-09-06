@@ -133,7 +133,3 @@ This script will analyze all V1 pipelines in the specified AWS Region unless you
    In this example, the negative value in the last row represents the estimated amount that might be saved by moving to V2 type pipelines.
 **Note**
 The script output and related examples that show costs and other information are estimates only. They are intended for demonstration and evaluation purposes only and do not guarantee any actual savings. For information about pricing for CodePipeline, see [Pricing](https://aws.amazon.com/codepipeline/pricing/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

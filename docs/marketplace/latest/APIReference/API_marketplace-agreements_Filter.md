@@ -24,8 +24,8 @@ Required: No
 The filter value.
 Type: Array of strings
 Array Members: Fixed number of 1 item.
-Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z0-9+:_-]+`
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[A-Za-z0-9.,+:/_-]+`
 Required: No
 
 ## See Also
@@ -35,7 +35,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/marketplace-agreement-2020-03-01/Filter)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/Filter)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/marketplace-agreement-2020-03-01/Filter)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

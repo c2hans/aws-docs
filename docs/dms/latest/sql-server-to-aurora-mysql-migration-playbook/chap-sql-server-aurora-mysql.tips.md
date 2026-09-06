@@ -65,7 +65,3 @@ This section provides migration tips that can help save time as you transition f
 +  Aurora MySQL is much stricter than SQL Server in terms of statement terminators. Make sure that you always use a semicolons at the end of statements.
 + The syntax for `CREATE PROCEDURE` requires parenthesis after the procedure name, similar to user-defined functions in SQL Server. You can’t use the `AS` keyword before the procedure body.
 + Beware of control characters when copying and pasting a script to Aurora MySQL clients. Aurora MySQL is much more sensitive to these than SQL Server, and they result in frustrating syntax errors that are hard to spot.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

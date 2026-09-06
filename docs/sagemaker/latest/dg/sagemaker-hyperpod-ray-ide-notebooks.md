@@ -29,7 +29,3 @@ The following pages cover setup and use, in order.
 + [Accessing your development environment](sagemaker-hyperpod-ray-remote-ide.md)
 + [Managing dependencies with runtime\_env](sagemaker-hyperpod-ray-runtime-env.md)
 + [Scaling a development cluster](sagemaker-hyperpod-ray-scaling-dev-cluster.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

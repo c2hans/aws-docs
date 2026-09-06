@@ -155,7 +155,3 @@ aws redshift-serverless create-workgroup \
 Keep the following best practices in mind when you use serverless queues.
 + Use separate queues for workloads with distinct limit requirements (e.g., ETL, reporting, or ad-hoc analysis).
 + Start with simple thresholds and adjust based on query behavior and usage patterns. You can monitor query usage patterns using the tables and views documented in [System tables and views for query monitoring rules](https://docs.aws.amazon.com/redshift/latest/dg/cm-c-wlm-query-monitoring-rules.html#cm-c-wlm-qmr-tables-and-views).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

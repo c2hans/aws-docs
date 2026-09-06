@@ -15,7 +15,3 @@ When you use the AWS CloudHSM key store to generate new keys, no entries are gen
 + [Use key store with jarsigner](using_keystore_jarsigner.md)
 + [Known issues](known-issues-keytool-jarsigner.md)
 + [Register pre-existing keys with key store](register-pre-existing-keys-with-keystore.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

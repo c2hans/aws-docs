@@ -11,7 +11,3 @@ AMS patch management sends service requests (aka service notification) to you pr
 
 **Note**
 AMS sends communications to the primary email address on your AWS account that you have given; we recommend adding an alternate Operations contact email alias to facilitate the service request or service notification management process. Adding these emails is covered during the AMS onboarding process and related onboarding documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

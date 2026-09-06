@@ -43,7 +43,3 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/machine-learnin
 + Skill 1.3.5: Resolve class imbalance in numeric, text, and image datasets.
 + Skill 1.3.6: Validate AI training data integrity (for example, prompt-response pair validation, content safety screening).
 + Skill 1.3.7: Clean data (for example, by detecting outliers, imputing missing data, deduplication).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

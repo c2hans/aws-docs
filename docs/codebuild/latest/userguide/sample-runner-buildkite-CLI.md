@@ -46,7 +46,3 @@ To configure a Buildkite runner project programmatically, you need to configure 
    ```
 
 1. Save the **Payload URL** and **Secret** values returned by the `create-webhook` call and use the credentials to create a webhook within the Buildkite console. You can reference Step 3: Create a CodeBuild webhook within Buildkite in [Tutorial: Configure a CodeBuild-hosted Buildkite runner](sample-runner-buildkite.md) for a guide on how to set up this resource.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

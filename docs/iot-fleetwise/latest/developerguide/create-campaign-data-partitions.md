@@ -100,7 +100,3 @@ Establish a default data partition for a campaign by using `default` as the ID.
 After meeting all specified conditions, the partitioned data forwards to the cloud, enabling the collection and storage of new partitioned signals.
 
 Next, you'll call the `UpdateCampaign` API to deploy it to the Edge Agent for AWS IoT FleetWise software. For more information, see [Upload campaign data](update-campaign-cli-data-partitions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Use infrastructure-as-code tools like AWS CloudFormation or Terraform for repeatable deployments, enabling quick customization and scaling of game hosting locations based on player needs.
 +  Evaluate player experience improvements, player population priorities, and downstream impacts such as matchmaking times when adding or removing game hosting locations.
 +  Use AWS Local Zones, Outposts, or hybrid options like ECS Anywhere, EKS Anywhere, or GameLift Anywhere to optimize latency-sensitive infrastructure and support diverse deployment needs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

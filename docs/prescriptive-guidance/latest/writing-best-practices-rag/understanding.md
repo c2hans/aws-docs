@@ -47,7 +47,3 @@ In generative AI, a *vector database* is a database that stores and manages vect
 + **KNN** – An algorithm that finds the K closest vectors to a query vector based on a distance metric, such as cosine similarity.
 + **Cosine similarity** – A measure of similarity between two non-zero vectors that measures the cosine of the angle between them. It is often used in semantic search to compare the direction of vectors in a high-dimensional space.
 + **Locality-sensitive hashing (LSH)** – A technique that hashes similar vectors to the same or nearby buckets with high probability. This allows for approximate nearest-neighbor searches, which can be faster than exact searches in high-dimensional spaces.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

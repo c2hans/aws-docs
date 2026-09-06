@@ -64,7 +64,3 @@ All configuration options are optional and use default values when not specified
 | `concurrency` | int | 5 | Maximum number of concurrent operations. |
 | `track_progress` | bool | FALSE | Whether to track transfer progress. |
 | `default_region` | string | 'us-east-1' | AWS Region to use if no S3 client is provided. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for PHP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-php` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

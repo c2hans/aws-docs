@@ -131,7 +131,3 @@ timestamp: 20210505T12:34:55
 In this case, although the file itself contains no PII, the tags do contain sensitive information. This increases the probability of an information leak, because when you share or transfer a file or object, you also share or transfer its metadata. This also applies to other AWS resources, such as a database, tables, jobs, and functions.
 
 Therefore it's extremely important to avoid using private information in tags. The same concept extends to crucial or nonpublic information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

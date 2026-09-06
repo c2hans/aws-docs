@@ -37,7 +37,3 @@ assets02/
  If `AccelerationSettings` is not defined in the job settings JSON file, this solution will automatically add this and set it to `PREFERRED`.
 
  We recommend that you provide a [custom name for your output groups](https://docs.aws.amazon.com/mediaconvert/latest/ug/specify-output-groups.html), especially if your job settings include more than one output group of the same type. For example, three HLS output groups. The solution uses the output group name as part of the output destination path, and having distinct names makes it easier to locate where each output is being written.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Video on Demand on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

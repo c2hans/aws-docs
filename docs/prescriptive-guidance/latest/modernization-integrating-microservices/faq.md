@@ -44,7 +44,3 @@ You can optimize Lambda functions by ensuring they are idempotent to handle pote
 <a name="faq8"></a>
 
 Amazon SNS sends a single message to all subscribers, which may include unnecessary data for some subscribers. Amazon EventBridge allows for more granular control by allowing you to have several rules that match a single event, with each rule triggering a different downstream service or action. For more information, see the [Amazon SNS](sns.md) and [Amazon EventBridge](eventbridge.md) sections earlier in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

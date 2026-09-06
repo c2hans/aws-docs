@@ -151,7 +151,3 @@ helm uninstall hyperpod-ray-endpoint-operator -n hyperpod-ray
 <a name="sagemaker-hyperpod-ray-endpoint-operator-next-steps"></a>
 
 After installation, review [Security best practices for the HyperPod Ray Endpoint Operator](sagemaker-hyperpod-ray-endpoint-operator-security.md) for best practices on securing in-cluster access, managing sessions, and auditing dashboard usage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

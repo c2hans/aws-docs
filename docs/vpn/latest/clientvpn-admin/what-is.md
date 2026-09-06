@@ -106,7 +106,3 @@ Client VPN endpoints are associated with a target network, which is a subnet in 
 
 **Note**
 Client VPN endpoints require Elastic IP addresses when associated with a VPC subnet that has an Internet Gateway because these EIPs enable direct internet connectivity for VPN clients. When connecting through a Client VPN endpoint, they need a public IP address to communicate with internet resources. Elastic IPs serve this purpose by providing a consistent, public-facing endpoint. These EIPs are attached to the Client VPN elastic network interfaces (ENIs) and are essential for maintaining stable, secure internet access for VPN clients while ensuring proper routing of traffic. Since these Elastic IP addresses are allocated and actively used for the Client VPN service, AWS charges them as in-use public IPv4 addresses, following their standard pricing model for allocated and associated EIPs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

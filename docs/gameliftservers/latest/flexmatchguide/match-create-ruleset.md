@@ -43,7 +43,7 @@ Note that there is a [service quota](https://console.aws.amazon.com/servicequota
 
 Open a command line window and use the command [create-matchmaking-rule-set](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-matchmaking-rule-set.html).
 
-This example command creates a simple matchmaking rule set that sets up a single team. Be sure to create the rule set in the same AWS Region as the matchmaking configurations that uses it.
+This example command creates a simple matchmaking rule set that sets up a single team. Be sure to create the rule set in the same AWS Region as the matchmaking configurations that use it.
 
 ```
 aws gamelift create-matchmaking-rule-set \
@@ -93,7 +93,3 @@ aws gamelift delete-matchmaking-rule-set \
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

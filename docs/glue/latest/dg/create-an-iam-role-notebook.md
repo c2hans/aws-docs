@@ -46,7 +46,3 @@ The following is an example.
    ```
 
 1. For **Role name**, enter a name for your role. Create the role with the name prefixed with the string `AWSGlueServiceNotebookRole` to allow the role to be passed from console users to the notebook server. AWS Glue provided policies expect IAM service roles to begin with `AWSGlueServiceNotebookRole`. Otherwise you must add a policy to your users to allow the `iam:PassRole` permission for IAM roles to match your naming convention. For example, enter `AWSGlueServiceNotebookRoleDefault`. Then choose **Create role**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

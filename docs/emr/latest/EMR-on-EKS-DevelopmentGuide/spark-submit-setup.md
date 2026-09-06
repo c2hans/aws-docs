@@ -13,7 +13,3 @@ Complete the following tasks to get set up before you can run an application wit
 + Confirm that the driver service account has appropriate permissions to create and watch executor pods. For more information, see [Verify Spark driver service account security requirements for spark-submit](spark-submit-security.md).
 + Set up your local [AWS credentials profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html).
 + From the Amazon EKS console, choose your EKS cluster, then find the EKS cluster endpoint, located under **Overview**, **Details**, then **API server endpoint**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

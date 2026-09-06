@@ -31,7 +31,3 @@ Splunk supports the following AppFabric output locations:
   + To configure Splunk to receive audit logs from the Firehose stream that contains your audit logs, follow the instructions in [Splunk Add-on for Amazon Data Firehose](https://docs.splunk.com/Documentation/AddOns/released/Firehose/ConfigureFirehose) on the Splunk website.
 + Amazon Simple Storage Service (Amazon S3)
   + To configure Splunk to receive data from the Amazon S3 bucket that contains your audit logs, follow the instructions in [Configure SQS-based S3 inputs for the Splunk Add-on for AWS](https://docs.splunk.com/Documentation/AddOns/released/AWS/SQS-basedS3) on the Splunk website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

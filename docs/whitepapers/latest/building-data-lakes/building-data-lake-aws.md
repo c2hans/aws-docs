@@ -37,7 +37,3 @@ Because organizations are collecting and analyzing increasing amounts of data, t
 The remainder of this paper provides more information about each of these capabilities. The following figure illustrates a sample AWS data lake platform.
 
 ![High-level AWS data lake technical reference architecture](http://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices1.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

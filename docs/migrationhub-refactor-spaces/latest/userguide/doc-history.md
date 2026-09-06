@@ -27,7 +27,3 @@ The following table describes the documentation releases for AWS Migration Hub R
 | [IAM policy update](#doc-history) | Update to the IAM `AWSMigrationHubRefactorSpacesFullAccess` managed policy. For more information, see [Policy updates](https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-updates). | March 21, 2022 |
 | [GA release](#doc-history) | General availability release of Refactor Spaces. | February 9, 2022 |
 | [Initial release](#doc-history) | Initial preview release of the Refactor Spaces User Guide. | November 29, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub Refactor Spaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-refactor-spaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 <a name="implementation-guidance-40"></a>
 
  Implement Amazon WorkSpaces Multi-Region Resilience to enable cost-effective and smoothly managed operational continuity. This approach verifies that users remain online and productive with minimal recovery time through standby WorkSpaces in alternative AWS Regions during disruptive events. Additionally, regularly test your multi-Region setup to verify its effectiveness in supporting operational continuity. Conduct failover drills and simulations to validate the RTO and identify any potential areas of improvement in your resilience strategy. By using Multi-Region Resilience, you can minimize service interruptions and provide uninterrupted access to Amazon WorkSpaces for your users, even during disruptive events.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

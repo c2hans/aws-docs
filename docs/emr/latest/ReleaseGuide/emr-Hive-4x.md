@@ -44,7 +44,3 @@ Hive on Amazon EMR 4.x release versions supports [Hive authorization](https://cw
 <a name="emr-Hive-filemerge-4x"></a>
 
 Hive on Amazon EMR 4.x release versions merges small files at the end of a map-only job if `hive.merge.mapfiles` is `true`. A merge is triggered only if the average output size of the job is less than the `hive.merge.smallfiles.avgsize` setting. Amazon EMR Hive has exactly the same behavior if the final output path is in HDFS. If the output path is in Amazon S3, however, the `hive.merge.smallfiles.avgsize` parameter is ignored. In that situation, the merge task is always triggered if `hive.merge.mapfiles` is set to `true`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

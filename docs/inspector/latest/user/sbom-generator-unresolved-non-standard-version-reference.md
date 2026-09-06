@@ -62,7 +62,3 @@ pkg:maven/org.example.com/testmaven@1.0.2%20Beta-RC-1_Release
 
 **Note**
  The use of a non-standard suffix, such as Beta-RC-1\_Release, isn't compliant with standard semantic versioning and cannot be assessed for vulnerabilities within the Amazon Inspector detection engine.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

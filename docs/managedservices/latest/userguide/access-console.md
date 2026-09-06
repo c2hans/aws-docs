@@ -12,7 +12,3 @@ During onboarding, you're provided a login to the AWS Management console (with l
 For information about getting access to the AWS Management console, see [Working with the AWS Management console](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/getting-started.html).
 
 For some tips on using the AMS console, see [Using the AMS console](https://docs.aws.amazon.com/managedservices/latest/userguide/use-ams-console.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

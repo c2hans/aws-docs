@@ -14,7 +14,3 @@ As with other AWS services, you can create, access, and manage your IPAM using t
 This guide primarily focuses on using the AWS Management Console to create, access, and manage your IPAM. In each description of how to complete a process in the console, we include links to the *AWS CLI Command Reference* so that you can do the same tasks by using the AWS CLI.
 
 If you are a first-time user of IPAM, review [How IPAM works](how-it-works-ipam.md) to learn about the role of IPAM in Amazon VPC and then continue with the instructions in [Configure integration options for your IPAM](choose-single-user-or-orgs-ipam.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

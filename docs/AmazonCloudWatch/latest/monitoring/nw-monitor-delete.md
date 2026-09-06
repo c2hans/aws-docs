@@ -36,7 +36,3 @@ Alternatively, you can delete a monitor programmatically, for example, by using 
    + To delete a probe, use [delete-probe](https://docs.aws.amazon.com/cli/latest/reference/networkmonitor/delete-probe.html).
 
 1. After the probes are set to `INACTIVE` or deleted, you can delete the monitor by running the [delete-monitor](https://docs.aws.amazon.com/cli/latest/reference/networkmonitor/create-probe.html) command. Inactive probes are not deleted when you delete the monitor.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

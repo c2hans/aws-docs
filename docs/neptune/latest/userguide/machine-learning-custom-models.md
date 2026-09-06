@@ -22,7 +22,3 @@ You can start implementing a custom model of your own in Python by following the
   + [Custom model transform script development in Neptune ML](machine-learning-custom-model-development.md#machine-learning-custom-model-transform-script)
   + [Custom `model-hpo-configuration.json` file in Neptune ML](machine-learning-custom-model-development.md#machine-learning-custom-model-hpo-configuration-file)
   + [Local testing of your custom model implementation in Neptune ML](machine-learning-custom-model-development.md#machine-learning-custom-model-testing)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

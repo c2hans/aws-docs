@@ -33,7 +33,3 @@ For more information about mainframe migration and modernization, see the follow
 + [DevOps for AWS Mainframe Modernization](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-devops-aws-mainframe-modernization/introduction.html)
 + [Mainframe modernization: Decoupling patterns for migrating application code](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-mainframe-decoupling-patterns/welcome.html)
 + [Secure and streamline user access in a Db2 federation database on AWS by using trusted contexts](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/secure-and-streamline-user-access-in-a-db2-federation-database-on-aws-by-using-trusted-contexts.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

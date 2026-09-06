@@ -48,7 +48,3 @@ The following table lists the available AWS Storage Gateway AMIs.
 | Gateway Type | AMI ID |
 | --- | --- |
 | File Gateway | ami-0b5d2a6a us-gov-west-1 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

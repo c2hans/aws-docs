@@ -182,7 +182,3 @@ AWS CodeStar defines the following condition keys that can be used in the `Condi
 |   aws:ResourceTag/${TagKey}  | Filters access by actions based on tag-value associated with the resource | String |
 |   aws:TagKeys  | Filters access by requests based on the presence of mandatory tags in the request | ArrayOfString |
 |   iam:ResourceTag/${TagKey}  | Filters access by actions based on tag-value associated with the resource | String |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

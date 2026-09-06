@@ -57,7 +57,3 @@ To configure IPAM, do the following:
 1. Share the IPAM with other AWS Organizations organizational unit (OU) accounts by using AWS Resource Access Manager (AWS RAM). Share the IPAM with each account in which you want to create resources. The accounts should be in organization network range and part of the top-level IPAM pool.
 
 We recommend using IPAM based VPC creation when you create all your VPCs. This helps in making sure that the CIDR blocks of new VPCs are not colliding with the existing VPC. New VPCs are created using the pool configurations that you set up earlier.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

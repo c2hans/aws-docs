@@ -43,7 +43,3 @@ Exceptional hours for holidays or special events, provided as overrides to regul
 An indicator of whether a location is currently open, based on the local time. This information is helpful for users looking for businesses that are open at the time of their query.
 
 For more information about contact details and opening hours for points of interest, see the Amazon Location Service [OpeningHours API reference](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_OpeningHours.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

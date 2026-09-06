@@ -32,7 +32,3 @@ The value to enter for HH:MM:SS:FF depends on the method used to calculate the *
 **Option 2:** ISO 8601 UTC time with no dashes or colons. For example, 20160102T030405.678Z. In this case, the start time for every motion overlay will be the UTC time.
 
 **Option 3:** You can only use this option while adding or modifying a motion overlay in a running event. Set the `action_time` tag to an empty string to set the start time to “now”. With this option, the start time is never exact. You cannot use this option when creating an event or modifying a non-running event.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ Amazon Macie encrypts all data in transit between AWS services.
 Macie analyzes data from Amazon S3 and exports sensitive data discovery results to an S3 general purpose bucket. After Macie gets the information that it needs from S3 objects, the objects are discarded.
 
 Macie accesses Amazon S3 by using a VPC endpoint powered by AWS PrivateLink. Therefore, traffic between Macie and Amazon S3 stays on the Amazon network and does not go over the public internet. For more information, see [AWS PrivateLink](https://aws.amazon.com/privatelink/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

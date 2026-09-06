@@ -28,7 +28,3 @@ The following are the status fields:
   + ErrorMessage – a brief description of the exception.
 + RequestTime – an ISO 8601-formatted date string indicating the time that the change was initiated.
 + UpdateTime – an ISO 8601-formatted date string indicating the time that the state was last updated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

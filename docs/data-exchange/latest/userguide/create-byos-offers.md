@@ -58,7 +58,3 @@ If you are the provider, follow these steps to create the BYOS offer.
 
 **Note**
 Auto-renewal settings can't be changed after the BYOS offer is created. Only one AWS account can be added to a BYOS. If multiple accounts are required, create additional BYOS offers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,6 +52,22 @@ Type: String
 Valid Values: `LORA`
 Required: No
 
+ ** SequenceLength **   <a name="sagemaker-Type-ServerlessJobConfig-SequenceLength"></a>
+ The maximum sequence length, in tokens, that the customization job supports. SageMaker uses this value to select a training configuration for the base model that you specify. The parameter supports the following values:
++  `1K`
++  `2K`
++  `4K`
++  `8K`
++  `16K`
++  `32K`
++  `64K`
++  `128K`
+ If you don't specify a value, SageMaker selects a training configuration based on the other values that you specify. The selection is not restricted to a particular sequence length.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 50.
+Pattern: `\d+K`
+Required: No
+
 ## See Also
 <a name="API_ServerlessJobConfig_SeeAlso"></a>
 
@@ -59,7 +75,3 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/ServerlessJobConfig)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/ServerlessJobConfig)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/ServerlessJobConfig)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

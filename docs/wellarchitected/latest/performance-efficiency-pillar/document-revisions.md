@@ -24,7 +24,3 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 | [Whitepaper updated](#document-revisions) | Minor update for grammatical issues | July 1, 2018 |
 | [Whitepaper updated](#document-revisions) | Refreshed the whitepaper to reflect changes in AWS | November 1, 2017 |
 | [Initial publication](#document-revisions) | Performance Efficiency Pillar - AWS Well-Architected Framework published. | November 1, 2016 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

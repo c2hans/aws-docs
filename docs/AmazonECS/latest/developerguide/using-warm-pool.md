@@ -97,7 +97,3 @@ This user data script does the following:
 + Creates a scheduled task that waits 60 seconds after user data completes, and then signals the lifecycle hook to proceed.
 + Creates a scheduled task that runs on every subsequent reboot, and signals the lifecycle hook to proceed after 60 seconds.
 + If initialization fails, the lifecycle action is completed with `ABANDON` so the instance is terminated and replaced.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

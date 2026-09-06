@@ -26,7 +26,3 @@ When you configure an AWS Glue crawler, you have several options for defining th
 + [Specifying the maximum number of tables the crawler is allowed to create](crawler-maximum-number-of-tables.md)
 + [Configuring a crawler to use Lake Formation credentials](crawler-lf-integ.md)
 + [Accelerating crawls using Amazon S3 event notifications](crawler-s3-event-notifications.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

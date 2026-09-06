@@ -63,7 +63,3 @@ If you are a first-time user of Amazon Forecast, we recommend that you start wit
 1. [Getting Started](getting-started.md) – Follow one of the tutorials to create your first Amazon Forecast forecasting predictor.
 
 1.  [API Reference](api-reference.md) – Familiarize yourself with the Amazon Forecast API actions and data types.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Forecast. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query forecast` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

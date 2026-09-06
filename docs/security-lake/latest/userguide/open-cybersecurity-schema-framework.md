@@ -45,7 +45,3 @@ OCSF uses a variety of fields to help you determine where a specific set of logs
 | VPC Flow Logs | `Amazon VPC` | `AWS` | `Flowlogs` | `Network Activity` | `1.1.0` |
 | EKS Audit Logs | `Amazon EKS` | `AWS` | `Elastic Kubernetes Service` | `API Activity` | `1.1.0` |
 | AWS WAFv2 Logs | `AWS WAF` | `AWS` | `—` | `HTTP Activity` | `1.1.0` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -94,7 +94,3 @@ If Detective does not find the finding or entity, first check that you entered t
 + **For a finding, is the finding archived?** Detective does not receive archived findings from Amazon GuardDuty.
 + **Did the finding or entity occur before Detective began to ingest data into your behavior graph?** If the finding or entity is not present in the data that Detective ingests, then the behavior graph does not contain data for it.
 + **Is the finding or entity from the correct Region?** Each behavior graph is specific to an AWS Region. A behavior graph does not contain data from other Regions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

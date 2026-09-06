@@ -18,7 +18,3 @@ The [Connecting to SAP OData using Glue](https://docs.aws.amazon.com/glue/latest
  AWS Glue and Glue Zero-ETL serve distinct roles in data integration, with each offering unique advantages for different use cases. While AWS Glue excels in complex ETL operations, data discovery, preparation, and extraction, particularly for specialized scenarios like SAP ODP-based replication. AWS Glue Zero-ETL is designed as a more streamlined, no-code solution for fully managed data replication scenarios.
 
  AWS Glue requires more hands-on management, including code deployment and maintenance, but offers greater flexibility and control over data transformation processes. AWS Glue performance is enhanced by its serverless, scale-out Apache Spark environment, which allows you to allocate Data Processing Units (DPUs) for scalable compute. This allows parallel processing and event-driven execution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

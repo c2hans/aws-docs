@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/fleetiqguide/gsg-
 
 To create a game server group, call [CreateGameServerGroup()](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateGameServerGroup.html). This operation creates both a Amazon GameLift Servers FleetIQ game server group and a corresponding Auto Scaling group. When you create the game server group, you provide game-specific settings for Amazon GameLift Servers FleetIQ, including balancing strategy and instance type definitions. You also provide initial property settings for the Auto Scaling group.
 
-The following example triggers the creation of a `GameServerGroup` that specifies c4.large and c5.large instance types and limits the group to Spot Instances only, and an Auto Scaling group that uses the specified launch template for deploying instances and manages group capcity within the minimum and maximum settings using a target-tracking automatic scaling policy. After a short provisioning period, an `AutoScalingGroup` resource is created, and the `GameServerGroup` enters an ACTIVE state.
+The following example triggers the creation of a `GameServerGroup` that specifies c4.large and c5.large instance types and limits the group to Spot Instances only, and an Auto Scaling group that uses the specified launch template for deploying instances and manages group capacity within the minimum and maximum settings using a target-tracking automatic scaling policy. After a short provisioning period, an `AutoScalingGroup` resource is created, and the `GameServerGroup` enters an ACTIVE state.
 
 ```
 AWS gamelift create-game-server-group \
@@ -21,7 +21,3 @@ AWS gamelift create-game-server-group \
     --instance-definitions '[{"InstanceType": "c4.large"}, {"InstanceType": "c5.large"}]' \
     --auto-scaling-policy '{"TargetTrackingConfiguration": {"TargetValue": 66}}'
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -88,7 +88,3 @@ The S3 Glacier storage classes are part of the Amazon S3 service and store data 
 We recommend using the S3 Glacier storage classes within the Amazon S3 service for all of your long-term data.
 
 The Amazon Glacier service is a separate service that stores data as archives within vaults. This service doesn't support Amazon S3 features and doesn’t provide console support for data upload and download operations. We don't recommend using the Amazon Glacier service for your long-term data. Data stored in this service isn't accessible from the Amazon S3 service. If you are looking for information on the Amazon Glacier service, see the [Amazon Glacier Developer Guide](https://docs.aws.amazon.com/amazonglacier/latest/dev/introduction.html). To transfer data from the Amazon Glacier service to a storage class in Amazon S3 see [Data Transfer from Amazon Glacier Vaults to Amazon S3](https://aws.amazon.com/solutions/implementations/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/) in the AWS solutions library.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

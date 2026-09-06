@@ -80,7 +80,3 @@ Following, you can find a list of the Amazon RDS functions and stored procedures
   - **Procedure or function:** `rds_bind_tempdb_metadata_to_resource_pool` / **Where it's used:** [Bind TempDB to a resource pool](ResourceGovernor.Using.md#ResourceGovernor.BindTempDB)
   - **Procedure or function:** `rds_unbind_tempdb_metadata_from_resource_pool` / **Where it's used:** [Unbind TempDB from a resource pool](ResourceGovernor.Using.md#ResourceGovernor.UnbindTempDB)
   - **Procedure or function:** `rds_cleanup_resource_governor` / **Where it's used:** [Cleanup resource governor](ResourceGovernor.Using.md#ResourceGovernor.Cleanup)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

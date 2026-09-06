@@ -33,7 +33,3 @@ Depending on the structure of your organization and project team, the roles in t
 | 7. Validate the data model | A | R | I | C |   |   |
 | 8. Review the cost estimation | C | A | I | R |   |   |
 | 9. Deploy the DynamoDB data model | I | I | C | C |   | R/A |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

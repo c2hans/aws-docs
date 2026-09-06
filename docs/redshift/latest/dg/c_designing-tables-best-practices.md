@@ -18,7 +18,3 @@ In this section, you can find a summary of the most important design decisions a
 + [Define primary key and foreign key constraints](c_best-practices-defining-constraints.md)
 + [Use the smallest possible column size](c_best-practices-smallest-column-size.md)
 + [Use date/time data types for date columns](c_best-practices-timestamp-date-columns.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

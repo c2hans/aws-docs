@@ -54,7 +54,3 @@ These steps are also in the Amazon EC2 documentation. To learn more, see [Restor
 1. (Optional) Choose **Create additional tags** to add tags to the volume. For each tag, provide a tag key and a tag value.
 
 1. Choose **Create Volume**. After your volume is created, it is listed in the **Elastic Block Store > Volumes** section of the Amazon EC2 console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

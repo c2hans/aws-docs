@@ -21,7 +21,3 @@ Subscribes to control-related tasks (for example, device control requests) from 
 + `IOTMI_STATUS_OK` - The subscription was successful.
 + `IOTMI_STATUS_CUSTOM_PLUGIN_CLIENT_NOT_CONNECTED` - The `DeviceSDKClient` instance is not connected to managed integrations.
 + `IOTMI_STATUS_CUSTOM_PLUGIN_SUBSCRIBE_ERROR` - An error occurred while subscribing to the tasks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

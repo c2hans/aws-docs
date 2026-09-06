@@ -62,7 +62,3 @@ See [Input Data](methodology-water-input-data.md) to understand the methodology 
 <a name="water-allocation-graphs"></a>
 
  This chart presents your water withdrawals estimates over time. It uses a stacked bar chart by default, and you can also see your data in an area chart or table formats by selecting the corresponding buttons in the top right corner of the chart. Similarly, the chart shows your withdrawals grouped by service by default, but you can see withdrawals grouped by AWS Region or usage account using the **Parameters** panel on the right side of the console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sustainability. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sustainability` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

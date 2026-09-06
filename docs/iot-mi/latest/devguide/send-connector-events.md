@@ -69,7 +69,3 @@ From the following example, we see the following:
 + The device capability this event relates to has a cluster ID of **0x0202**, pertaining to the Fan Control matter cluster.
 + The attribute that has changed has the ID of **0x000**, pertaining to the Fan Mode Enum within the cluster. It has updated to value **3**, pertaining to the value of **High**.
 +  Since `connectorId` is a parameter returned by the cloud service on creation, Connectors must query using GetCloudConnector and filter by `lambdaARN`. The lambda's own `ARN` is queried using `Lambda.get_function_url_config` API. This allows the `CloudConnectorId` to be dynamically accessed in the lambda, and not statically configured as earlier.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

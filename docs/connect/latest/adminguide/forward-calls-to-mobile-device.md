@@ -15,7 +15,3 @@ You can take the audio portion of a call on your mobile device, and at the same 
 ![The settings page, the desk phone option, an example phone number.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ccp-forward-calls-mobile-device.png)
 
    When a contact calls, the audio portion of the call goes to your mobile device. At the same time, on your computer you can manage the call using the CCP.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

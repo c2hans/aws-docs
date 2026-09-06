@@ -31,7 +31,3 @@ Avoid DynamoDB scans as much as possible. A DynamoDB query is more efficient and
 <a name="validate-data-integrity.8a4414af-a70f-5f52-9f4f-32b2757d7f8d"></a>
 
 DynamoDB is a NoSQL database, so it doesn't maintain relationship data or include data integrity constraints. It requires each item to have a unique combination of a primary key and sort key only.  To ensure data integrity between related items in DynamoDB table, we recommend that you perform strict validations in the application or business layer of your system.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

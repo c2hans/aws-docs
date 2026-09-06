@@ -15,7 +15,3 @@ The following screenshot shows an example of a feature flag with three user-defi
 + [Understanding multi-variant feature flag concepts and common use cases](appconfig-creating-multi-variant-feature-flags-concepts.md)
 + [Understanding multi-variant feature flag rules](appconfig-creating-multi-variant-feature-flags-rules.md)
 + [Creating a multi-variant feature flag](appconfig-creating-multi-variant-feature-flags-procedures.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

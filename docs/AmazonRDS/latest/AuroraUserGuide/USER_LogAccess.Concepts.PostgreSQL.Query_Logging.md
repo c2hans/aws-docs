@@ -92,7 +92,3 @@ We recommend that you keep `log_statement` set to `none` to avoid exposing passw
 + For your Aurora PostgreSQL DB cluster, set up and use the PostgreSQL Auditing (pgAudit) extension. This extension redacts sensitive information in CREATE and ALTER statements sent to the log. For more information, see [Using pgAudit to log database activity](Appendix.PostgreSQL.CommonDBATasks.pgaudit.md).
 + Restrict access to the CloudWatch logs.
 + Use stronger authentication mechanisms such as IAM.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

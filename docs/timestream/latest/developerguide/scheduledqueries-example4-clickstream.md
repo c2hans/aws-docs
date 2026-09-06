@@ -119,7 +119,3 @@ These results show the value of using scheduled queries to aggregate data for fa
 | Duration | 1.745 sec | 0.2960 sec |
 | Bytes scanned | 29.89 MB | 235 bytes |
 | Row count | 5 | 5 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

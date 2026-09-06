@@ -171,7 +171,3 @@ This widget provides a quick overview of your most significant cost changes betw
 To dive deeper into your cost trends, choose **View your cost trends in Cost Explorer**.
 
 For more information about comparing costs, see [Comparing your costs between time periods](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-cost-comparison.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

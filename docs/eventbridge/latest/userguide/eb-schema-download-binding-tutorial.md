@@ -37,7 +37,3 @@ In this tutorial you generate and download code bindings from an EventBridge sch
    The downloaded package contains a README file that explains how to configure the package's dependencies in various frameworks.
 
 Use these code bindings in your own code to help quickly build applications using this EventBridge event.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

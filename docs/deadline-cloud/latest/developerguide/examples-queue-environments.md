@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Queue environment examples for Deadline Cloud
 <a name="examples-queue-environments"></a>
 
-The [queue\_environments](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/queue_environments) directory in the deadline-cloud-samples repository includes queue environments that you can attach to a Deadline Cloud queue. Conda and Rez queue environments provide software to jobs so that each job only needs a parameter value for `CondaPackages` or `RezPackages` to specify the list of packages to use.
+The [queue\_environments](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/queue_environments) directory on the GitHub website includes queue environments that you can attach to a Deadline Cloud queue. Conda and Rez queue environments provide software to jobs so that each job only needs a parameter value for `CondaPackages` or `RezPackages` to specify the list of packages to use.
 
-Queue environments follow the [Open Job Description environment template specification](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas). To attach a queue environment to your queue, see [Configure jobs using queue environments](configure-jobs.md). For background on environments and how they affect your jobs, see [Control the job environment with OpenJD queue environments](control-the-job-environment.md).
+Queue environments follow the [Open Job Description environment template specification](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas) on the GitHub website. To attach a queue environment to your queue, see [Configure jobs using queue environments](configure-jobs.md). For background on environments and how they affect your jobs, see [Control the job environment with OpenJD queue environments](control-the-job-environment.md).
 
 To create a queue environment with the AWS CLI:
 
@@ -27,7 +27,3 @@ aws deadline create-queue-environment \
 + [Rez queue environment for Deadline Cloud customer-managed fleets](examples-queue-env-rez.md)
 + [Pip queue environment for Deadline Cloud](examples-queue-env-pip.md)
 + [Disconnect Deadline Cloud usage-based licensing with a queue environment](examples-queue-env-disconnect-ubl.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

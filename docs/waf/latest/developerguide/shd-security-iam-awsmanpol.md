@@ -50,7 +50,3 @@ View details about updates to AWS managed policies for Shield since this service
 | --- | --- | --- |
 | `AWSShieldServiceRolePolicy`<br />This policy allows Shield to access and manage AWS resources in order to automatically respond to application layer DDoS attacks on your behalf. <br />Details in IAM console: [AWSShieldServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSShieldServiceRolePolicy)<br />The service-linked role `AWSServiceRoleForAWSShield` uses this policy. For information, see [Using service-linked roles for Shield Advanced](shd-using-service-linked-roles.md). | Added this policy to provide Shield Advanced with the permissions required for the automatic application layer DDoS mitigation functionality. For information about this feature, see [Automating application layer DDoS mitigation with Shield Advanced](ddos-automatic-app-layer-response.md). | December 1, 2021 |
 | Shield started tracking changes | Shield started tracking changes for its AWS managed policies. | March 3, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

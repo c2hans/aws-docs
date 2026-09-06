@@ -84,7 +84,3 @@ CodeArtifact checksum comparisons are case sensitive, and the checksums calculat
 If a checksum upload fails as a result of a checksum mismatch, try one of the following to recover:
 + Run the command that publishes the Maven artifact again. This might work if a network issue corrupted the checksum file. If this resolves the network issue, the checksum matches and the download is successful.
 + Delete the package version and then republish it. For more information, see [DeletePackageVersions](https://docs.aws.amazon.com/dms/latest/APIReference/API_DeletePackageVersions.html) in the *AWS CodeArtifact API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

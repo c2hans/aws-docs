@@ -26,7 +26,3 @@ The right choice depends on the scope and complexity of what you need to automat
 <a name="getting-started-automations"></a>
 + To get started with Quick Flows, see [Using Amazon Quick Flows](using-amazon-quick-flows.md).
 + To get started with Quick Automate, see [Using Amazon Quick Automate](using-amazon-quick-automate.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

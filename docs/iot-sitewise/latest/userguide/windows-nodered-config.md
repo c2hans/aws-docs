@@ -16,7 +16,3 @@ With Node-RED®, you can implement two flows to manage data between your devices
 These two flows work together to ensure data is both sent to AWS IoT SiteWise and stored locally for immediate access.
 
 To access your Node-RED console, go to [http://127.0.0.1:1880](http://127.0.0.1:1880). For information about enabling TLS, see [Enable TLS encryption](https://docs.influxdata.com/influxdb/v2/admin/security/enable-tls/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

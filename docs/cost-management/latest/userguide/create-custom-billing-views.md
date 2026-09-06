@@ -75,7 +75,3 @@ To create custom billing views, you must use fine-grained AWS Cost Management ac
 1. Review your selections and choose **Create**. Once created, the custom billing view is assigned a unique Amazon Resource Name (ARN), which serves as its identifier.
 
 After creating a custom billing view, it is only available in your account. You can access it from the **Choose billing view** menu in the navigation pane from your own account to access its contents using Cost Explorer. You can also see the custom billing view definition details in the **Billing View** tab on the **Cost Management Preferences** page. You can choose to share the custom billing view with other accounts. Shared accounts can access the custom billing view from the **Choose billing view** menu, allowing them to access the cost management data defined in the custom billing view. To learn more, see [Sharing custom billing views](https://docs.aws.amazon.com/cost-management/latest/userguide/share-custom-billing-views.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

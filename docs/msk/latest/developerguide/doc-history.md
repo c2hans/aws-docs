@@ -73,7 +73,3 @@ The following table describes the important changes to the Amazon MSK Developer 
 | Support for Apache Kafka 2.2.1 | Amazon MSK now supports Apache Kafka version 2.2.1. | 2019-07-31 |
 | General Availability | New features include tagging support, authentication, TLS encryption, configurations, and the ability to update broker storage. | 2019-05-30 |
 | Support for Apache Kafka 2.1.0 | Amazon MSK now supports Apache Kafka version 2.1.0. | 2019-02-05 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

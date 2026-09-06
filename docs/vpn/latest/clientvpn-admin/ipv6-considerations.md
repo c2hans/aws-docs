@@ -97,7 +97,3 @@ In this example, the configuration will route all currently allocated IPv6 traff
 
 **Verification**
 Your organization will likely have its own tests. A basic verification is to set up a full tunnel VPN connection, then run ping6 to an IPv6 server using the IPv6 address. The IPv6 address of the server should be in the range specified by the `route-ipv6` command. This ping test should fail. However, this may change if IPv6 support is added to the Client VPN service in the future. If the ping is successful and you are able to access public sites when connected in full tunnel mode, you may need to do further troubleshooting. There are also some publicly available tools.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

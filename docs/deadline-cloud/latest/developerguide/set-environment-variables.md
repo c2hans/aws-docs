@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/set
 # Set environment variables in a queue environment
 <a name="set-environment-variables"></a>
 
-Many applications and frameworks use environment variables to control feature settings, logging levels, and display configuration. You can use [Open Job Description (OpenJD) environments](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#4-environment) to set environment variables that every task command within their scope inherits.
+Many applications and frameworks use environment variables to control feature settings, logging levels, and display configuration. You can use Open Job Description (OpenJD) environments to set environment variables that every task command within their scope inherits. For more information, see [Environments](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#4-environment) on the GitHub website.
 
 ## Environment variable scope
 <a name="set-env-vars-scope"></a>
 
-AWS Deadline Cloud applies environment variables from queue environments that you attach to a queue. Within a job template, you can also define environment variables at the job and step levels using [OpenJD environments](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#4-environment). Variables defined at a narrower scope override variables with the same name from a broader scope.
+AWS Deadline Cloud applies environment variables from queue environments that you attach to a queue. Within a job template, you can also define environment variables at the job and step levels using OpenJD environments. For more information, see [Environments](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#4-environment) on the GitHub website. Variables defined at a narrower scope override variables with the same name from a broader scope.
 + **Queue environment** – A template that you attach to a queue in Deadline Cloud. Variables apply to all jobs submitted to the queue. You can set variables with a `variables` map for fixed values, or use scripts for dynamic values.
 + **Job environment** – Defined under `jobEnvironments` in a job template. Variables apply to all steps and tasks in the job. A job-level variable overrides a queue-level variable with the same name.
 + **Step environment** – Defined under `stepEnvironments` in a job template. Variables apply only to the tasks in that step. A step-level variable overrides a job-level or queue-level variable with the same name.
@@ -20,7 +20,7 @@ AWS Deadline Cloud applies environment variables from queue environments that yo
 
 You can set environment variables in a queue environment using a `variables` map for fixed values, or using a `script` with an `onEnter` action for dynamic values.
 
-The following queue environment template uses a `variables` map to set the `QT_QPA_PLATFORM` variable to `offscreen`, which allows applications that use the [Qt Framework](https://www.qt.io/product/framework) to run on worker hosts without an interactive display.
+The following queue environment template uses a `variables` map to set the `QT_QPA_PLATFORM` variable to `offscreen`, which allows applications that use the Qt Framework to run on worker hosts without an interactive display. For more information, see the [Qt Framework](https://www.qt.io/product/framework) on the Qt website.
 
 ```
 specificationVersion: 'environment-2023-09'
@@ -64,14 +64,14 @@ aws deadline create-queue-environment \
     --template file://{{my-queue-env.yaml}}
 ```
 
-For more complex examples, such as creating and activating conda virtual environments, see the [Deadline Cloud queue environment samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/queue_environments) on GitHub.
+For more complex examples, such as creating and activating conda virtual environments, see the [Deadline Cloud queue environment samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/queue_environments) on the GitHub website.
 
 ## Setting variables in a job template
 <a name="set-env-vars-job-template"></a>
 
 In a job template, add a `variables` map to a `jobEnvironments` or `stepEnvironments` entry. Each entry is a key-value pair where the key is the variable name and the value is the variable value.
 
-The following job template sets the `QT_QPA_PLATFORM` environment variable to `offscreen`, which allows applications that use the [Qt Framework](https://www.qt.io/product/framework) to run on worker hosts without an interactive display.
+The following job template sets the `QT_QPA_PLATFORM` environment variable to `offscreen`, which allows applications that use the Qt Framework to run on worker hosts without an interactive display. For more information, see the [Qt Framework](https://www.qt.io/product/framework) on the Qt website.
 
 ```
 specificationVersion: 'jobtemplate-2023-09'
@@ -123,7 +123,7 @@ steps:
 ## Try it: Running the environment variable sample
 <a name="set-env-vars-example"></a>
 
-The Deadline Cloud samples repository includes a [job bundle that demonstrates setting and viewing environment variables](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_vars/template.yaml). The sample job template defines variables at both the job and step levels, then runs a task that prints the merged result. Use the following procedure to run the sample and inspect the results.
+The Deadline Cloud samples repository includes a [job bundle that demonstrates setting and viewing environment variables](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_vars/template.yaml) on the GitHub website. The sample job template defines variables at both the job and step levels, then runs a task that prints the merged result. Use the following procedure to run the sample and inspect the results.
 
 ### Prerequisites
 <a name="set-prerequisites"></a>
@@ -132,7 +132,7 @@ The Deadline Cloud samples repository includes a [job bundle that demonstrates s
 
 1. If you do not have the Deadline Cloud CLI and AWS Deadline Cloud monitor on your workstation, follow the steps in [Set up Deadline Cloud submitters](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/submitter.html).
 
-1. Use `git` to clone the [Deadline Cloud samples GitHub repository](https://github.com/aws-deadline/deadline-cloud-samples).
+1. Use `git` to clone the [Deadline Cloud samples GitHub repository](https://github.com/aws-deadline/deadline-cloud-samples) on the GitHub website.
 
    ```
    git clone https://github.com/aws-deadline/deadline-cloud-samples.git
@@ -153,7 +153,7 @@ The Deadline Cloud samples repository includes a [job bundle that demonstrates s
 ### Comparing session actions with their definitions
 <a name="set-compare-actions"></a>
 
-The log view shows three session actions. Open the file [job\_env\_vars/template.yaml](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_vars/template.yaml) in a text editor to compare each action with its definition in the job template.
+The log view shows three session actions. Open the file [job\_env\_vars/template.yaml](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_env_vars/template.yaml) on the GitHub website in a text editor to compare each action with its definition in the job template.
 
 1. Select the **Launch JobEnv** session action. The log output shows the job-level environment variables being set.
 
@@ -207,7 +207,3 @@ The log view shows three session actions. Open the file [job\_env\_vars/template
    Environment variables starting with STEP_*:
    STEP_VERBOSITY=HIGH
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

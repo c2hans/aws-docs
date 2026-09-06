@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 
 The build resource represents your game server software. You upload your build package to Amazon GameLift Servers for deployment to managed EC2 fleets.
 
-View information about game server builds in the Amazon GameLift Servers console or using the or AWS SDK for Amazon GameLift Servers.
+View information about game server builds in the Amazon GameLift Servers console or using the AWS SDK for Amazon GameLift Servers.
 
 ------
 #### [ Console ]
@@ -47,7 +47,3 @@ Use the following AWS CLI commands to retrieve information about this resource:
 + [DescribeBuild](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_DescribeBuild.html)
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

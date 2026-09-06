@@ -230,7 +230,3 @@ public class UpdateDefaultConfigWithPaidFeatures {
 ```
 
 For access to S3 Storage Lens groups or expanded prefixes, you must upgrade your dashboard to use the advanced tier. Additional charges apply. For more information about the free and advanced tiers, see [Metrics selection](storage_lens_basics_metrics_recommendations.md#storage_lens_basics_metrics_selection). For more information about S3 Storage Lens groups, see [Working with S3 Storage Lens groups to filter and aggregate metrics](storage-lens-groups-overview.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

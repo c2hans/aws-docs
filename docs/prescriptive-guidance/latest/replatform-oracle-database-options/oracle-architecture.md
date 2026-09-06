@@ -24,7 +24,3 @@ For more information, see the AWS documentation for [Amazon RDS for Oracle](http
 | Multi-tenant architecture | Yes | Yes |
 | Number of PDBs per CDB in EE | Up to 30 | No restriction |
 | Number of PDBs per CDB in SE2 | Up to 3 | Up to 3 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

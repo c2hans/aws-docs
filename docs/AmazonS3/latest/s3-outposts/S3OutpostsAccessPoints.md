@@ -22,7 +22,3 @@ The following sections describe how to create and manage access points for S3 on
 + [Deleting an access point](S3OutpostsAccessPointsDelete.md)
 + [Adding or editing an access point policy](S3OutpostsAccessPointEditPolicy.md)
 + [Viewing an access point policy for an S3 on Outposts access point](S3OutpostsAccessPointGetPolicy.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -214,7 +214,3 @@ See the following topics to learn more about the transferring contacts to a queu
 + [Set up a flow to manage contacts in a queue in Connect Customer](queue-to-queue-transfer.md)
 + [Set up queued callback by creating flows, queues, and routing profiles in Connect Customer](setup-queued-cb.md)
 + [Queued callbacks in real-time metrics in Connect Customer](about-queued-callbacks.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

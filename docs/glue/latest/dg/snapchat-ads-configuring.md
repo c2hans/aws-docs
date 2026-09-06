@@ -13,7 +13,3 @@ Before you can use AWS Glue to transfer from Snapchat Ads, you must meet these r
 +  You have created an OAuth2 app in your Snapchat Ads account. This integration provides the credentials that AWS Glue uses to access your data securely when it makes authenticated calls to your account. For more information, see [Creating an app in your Snapchat Ads account](connecting-to-data-snapchat-ads-managed-client-application.md).
 
  If you meet these requirements, you’re ready to connect AWS Glue to your Snapchat Ads account. In Snapchat Ads, a connected app is a framework that authorizes external applications, like AWS Glue, to access your Snapchat Ads data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

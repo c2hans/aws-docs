@@ -32,7 +32,3 @@ Be aware that at the time these release notes are published, the new platform ve
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker  |  Docker Compose  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Docker AL2 version 3.4.7** <br /> * 64bit Amazon Linux 2 v3.4.7 running Docker *  | 2.0.20210813 | 20.10.7-3 | 1.29.2 | nginx 1.20.0 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

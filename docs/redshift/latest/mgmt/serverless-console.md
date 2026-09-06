@@ -102,7 +102,3 @@ On the **Datashares** page, you can manage datashares **In my account** and **Fr
 <a name="serverless-console-gdc"></a>
 
 In the **AWS Glue Data Catalog** tab, you can view the registration status of your namespace to the AWS Glue Data Catalog. This tab only appears after you’ve started the registering process. For more information about registering namespaces to the AWS Glue Data Catalog, see [ Apache Iceberg compatibility for Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/dg/iceberg-integration_overview.html) in the Amazon Redshift Database Developer Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

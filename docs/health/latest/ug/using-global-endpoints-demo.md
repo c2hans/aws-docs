@@ -194,7 +194,3 @@ For Python 3.3 and later, you can use the built-in `venv` module to create the v
 <a name="resources-for-python-code-example"></a>
 + For more information about the `Health. Client`, see the [AWS SDK for Python (Boto3) API Reference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client).
 + For more information about the library used in this demo for DNS lookups, see the [dnspython](https://dnspython.readthedocs.io/en/stable/) toolkit and the [source code](https://github.com/rthalley/dnspython/) on GitHub.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

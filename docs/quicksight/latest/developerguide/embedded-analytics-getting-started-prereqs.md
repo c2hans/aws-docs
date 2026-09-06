@@ -13,7 +13,3 @@ Before you get started, familiarize yourself with the list of technologies Quick
 + Make sure you are using one of our [supported browsers](https://docs.aws.amazon.com/quicksight/latest/user/supported-browsers.html).
 
 After you confirm that your application is compatible with Quick Sight embedding, complete the steps listed in [Getting started with Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/getting-started.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick Sight. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quicksight` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ The owner of the management account in an organization should secure the account
 
 **Note**
 You can use billing transfer to maintain root access to your management account while transferring billing to another management account outside your AWS Organizations. For more information, see [Transfer billing management to external accounts](orgs_transfer_billing.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

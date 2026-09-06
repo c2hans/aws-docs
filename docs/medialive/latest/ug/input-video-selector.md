@@ -62,7 +62,3 @@ The following table specifies whether you need to create a video selector.
 - **SRT caller**
   - **Add a video selector?:** Yes, if the input contains an MPTS / **How video is extracted:** Enter the program or PID to extract. If you don't specify the program or PID, MediaLive extracts the first video it finds.
   - **Add a video selector?:** No, if the input contains an SPTS / **How video is extracted:** The input contains only one video asset. MediaLive extracts that video.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

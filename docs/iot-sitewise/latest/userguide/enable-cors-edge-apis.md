@@ -54,7 +54,3 @@ Alternatively, you can enable CORS by setting global the environmental variable 
 For authenticated proxy, `userinfo` must be included in the `url` field in the proxy configuration rather than as a separated `username` and `password` fields.
 
 After the deployment is complete, CORS is enabled on your SiteWise Edge API, allowing specified origins to make cross-origin requests to the API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

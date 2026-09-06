@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/iceberg-integration_o
 
 You can register entire Amazon Redshift provisioned clusters or serverless namespaces to the AWS Glue Data Catalog to create catalogs that securely share live data across AWS accounts. You can access these catalogs from any SQL query engine that supports the Apache Iceberg REST API. AWS Lake Formation manages the permissions for the catalogs, letting you manage a single copy of data with a single set of permissions while leveraging Amazon Redshift features such as materialized views and zero-ETL integrations.
 
-All catalogs created from registered Amazon Redshift provisioned clusters and serverless namespaces in the AWS Glue Data Catalog are automatically mounted as external databases on all provisioned clusters and serverless workgroups in the same AWS Region under the same account. Catalogs created in the AWS Glue Data Catalog to store data in Redshift Managed Storage (RMS) are similarly mounted as external databases. Once mounted, you can directly connect to these databases and query the objects using the three-part notation `database@namespace-catalog.schema.table`.
+All catalogs created from registered Amazon Redshift provisioned clusters and serverless namespaces in the AWS Glue Data Catalog are automatically mounted as external databases on all provisioned clusters and serverless workgroups in the same AWS Region under the same account. Catalogs created in the AWS Glue Data Catalog to store data in Redshift Managed Storage (RMS) are similarly mounted as external databases. After the databases are mounted, you can directly connect to these databases and query the objects using the three-part notation `database@namespace-catalog.schema.table`.
 
 ## Regions where Apache Iceberg compatibility is available
 <a name="iceberg-integration-regions"></a>
@@ -57,7 +57,3 @@ When using Amazon Redshift catalogs in the AWS Glue Data Catalog, consider the f
 +  To access tables in data warehouses registered to the AWS Glue Data Catalog, the database’s isolation level must be SNAPSHOT. Attempting to access tables with an isolation level of SERIALIZABLE will result in an error. For more information on serializable isolation, see [Isolation levels in Amazon Redshift](c_serial_isolation.md). For information on changing the isolation level of a database, see [ALTER DATABASE](r_ALTER_DATABASE.md).
 
    Note that the isolation level of the default `dev` database can’t be altered. Consequently, this means that tables in the `dev` database won’t be included in the accessible data when registering data warehouses to the AWS Glue Data Catalog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

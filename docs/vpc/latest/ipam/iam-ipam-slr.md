@@ -61,7 +61,3 @@ Follow these steps to delete the service-linked role using the AWS CLI:
 1. Disable the IPAM service with [disable-aws-service-access](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/disable-aws-organizations-access.html) using the `--service-principal ipam.amazonaws.com` option.
 
 1. Delete the service-linked role: [delete-service-linked-role](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/delete-service-linked-role.html). When you delete the service-linked role, the IPAM managed policy is also deleted. For more information, see [Deleting a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_delete.html#id_roles_manage_delete_slr) in the *IAM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

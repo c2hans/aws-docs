@@ -574,7 +574,3 @@ You have completed the quick start tutorial, and should have an idea of how Amaz
 + **Choose the right API for your business needs** - To determine the best Amazon Location API for your requirements, check out this resource: [Choose the right API](choose-an-api.md).
 + **Check out Amazon Location "how-to" guides** - Visit the [Amazon Location Service Developer Guide](https://docs.aws.amazon.com/location/) for tutorials and further resources.
 + **Documentation and product information** - For complete documentation, visit the [Amazon Location Service Developer Guide](https://docs.aws.amazon.com/location/) . To learn more about the product, go to the [Amazon Location Service Product](https://aws.amazon.com/location) page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ Your remaining environments should use the following AWS products and services:
 + [Application Load Balancers ](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)to distribute requests across multiple OpenText LiveSite servers
 
 For more information about costs, see [this estimate ](https://calculator.aws/?id=109c6f7bda67e38c02c99d31423b5a72f04561b6#/estimate) from AWS Pricing Calculator.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

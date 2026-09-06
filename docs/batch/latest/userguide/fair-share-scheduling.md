@@ -17,7 +17,3 @@ If a share identifier has jobs in a `SUBMITTED`, `PENDING`, `RUNNABLE`, `STARTIN
 You only need to define this attribute when you need to update the default weight factor of 1.
 
 When the job queue is active and processing jobs, you can review a list of the first 100 `RUNNABLE` jobs through the Job queue snapshot. For more information, see [View a job queue in AWS Batch](job_queue_viewing_status.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

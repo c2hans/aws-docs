@@ -121,7 +121,3 @@ The following are the service endpoints and service quotas for this service.
 
 **Note**
 These limits are currently not adjustable using the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home/services/resource-groups/quotas). Contact AWS Support.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

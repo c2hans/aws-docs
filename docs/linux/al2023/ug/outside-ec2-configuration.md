@@ -23,7 +23,3 @@ Amazon Linux 2023 has been qualified with the following data sources:
  The configuration of the data sources can differ from Amazon Linux 2. More specifically, Amazon Linux 2023 uses `systemd-networkd` for its configuration and requires the use of `cloud-init` "Networking Config Version 2" as documented in [the `cloud-init` network configuration documentation](https://cloudinit.readthedocs.io/en/22.2/topics/network-config.html).
 
  The complete documentation for `cloud-init` configuration mechanisms for the version of `cloud-init` packaged in Amazon Linux 2023 can be found in the [upstream `cloud-init` documentation](https://cloudinit.readthedocs.io/en/22.2/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

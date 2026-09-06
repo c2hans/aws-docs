@@ -162,7 +162,3 @@ Before starting this guide, you will need:
 Congratulations\! You have finished the **How to Register a Domain Name with Amazon Route** **53 **how-to guide.
 
 In this guide, you learned how to provision a public IP address, register a new domain name, and configure DNS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

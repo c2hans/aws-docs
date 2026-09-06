@@ -123,7 +123,3 @@ The following resources can help you learn more about data perimeters across AWS
 +  [Blog Post Series: Establishing a Data Perimeter on AWS](https://aws.amazon.com/identity/data-perimeters-blog-post-series/) – These blog posts cover prescriptive guidance about establishing your data perimeter at scale, including key security and implementation considerations.
 +  [Data perimeter policy examples](https://github.com/aws-samples/data-perimeter-policy-examples/tree/ce06665ca8b2f07debee7bed5153c3be0f31c73c) – This GitHub repository contains example policies that cover some common patterns to help you implement a data perimeter on AWS.
 + [Data perimeter helper](https://github.com/aws-samples/data-perimeter-helper/tree/main?tab=readme-ov-file) – This tool helps you design and anticipate the impact of your data perimeter controls by analyzing access activity in your [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) logs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ One way to make your customers feel cared for is to create personalized experien
 + [Personalize a contact's experience based on how they contact your contact center](use-channel-contact-attribute.md)
 + [Use Amazon Lex and attribute values](attribs-cust-input-lex-bot.md)
 + [Store a value from a Lambda functions as a contact attribute in Connect Customer](attribs-with-lambda.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,7 @@ Open the console’s left navigation bar and choose **Managed containers: Fleets
 
 1. If your updates require a fleet deployment, you're asked to specify deployment options as follows:
    + Game session protection. You can choose to protect fleet instances that have active game sessions (safe deployment). With this setting, the fleet instances aren't replaced until after the game sessions end. Alternatively, you can choose to replace fleet instances regardless of game session activity (unsafe deployment). Unsafe deployments are useful during development and testing phases in order to reduce deployment time.
-   + Minimum healthy percentage. You can manage how quickly the fleet's instances are replaced. Use this setting to maintain a minimal amount of healthy tasks the during deployment. A low value prioritizes deployment speed, while a high value ensures that game server availability remains high throughout the deployment.
+   + Minimum healthy percentage. You can manage how quickly the fleet's instances are replaced. Use this setting to maintain a minimal amount of healthy tasks during deployment. A low value prioritizes deployment speed, while a high value ensures that game server availability remains high throughout the deployment.
    + Deployment failure strategy. Decide what actions to take if a deployment fails. A deployment failure means that some of the updated containers have failed status checks and are considered impaired. You can set deployments to automatically roll back all fleet instances to the previously deployed state. Alternatively you can choose to maintain some of the impaired fleet instances for use in debugging.
 
 If your request is successful, the console displays the **Deployments** tab for the managed container fleet. Use this tab to track the status of each deployment. If you start a new deployment for the fleet, this action automatically cancels any deployment that is currently in process for the fleet.
@@ -53,7 +53,3 @@ The following example updates an existing container fleet with the following cha
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

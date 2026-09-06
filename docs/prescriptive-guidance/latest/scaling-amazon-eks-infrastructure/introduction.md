@@ -44,7 +44,3 @@ This guide can help you and your organization achieve the following business obj
 + **Cost optimization** – Minimize cloud costs while maintaining or improving performance and scalability.
 
   Cost optimization can encompass reducing expenses, such as right-sizing resources, using cost-effective scaling solutions, and monitoring spending. The goal is to balance cost savings with the need for high performance and scalability.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

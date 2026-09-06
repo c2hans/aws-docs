@@ -18,7 +18,7 @@ Before you deploy the template, create an Amazon S3 bucket to hold job attachmen
 
 **To deploy the CloudFormation template**
 
-1. Download the [deadline-cloud-starter-farm-template.yaml](https://github.com/aws-deadline/deadline-cloud-samples/raw/mainline/cloudformation/farm_templates/starter_farm/deadline-cloud-starter-farm-template.yaml) template from the [Deadline Cloud samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/starter_farm) repository on GitHub.
+1. Download the [deadline-cloud-starter-farm-template.yaml](https://github.com/aws-deadline/deadline-cloud-samples/raw/mainline/cloudformation/farm_templates/starter_farm/deadline-cloud-starter-farm-template.yaml) template from the [Deadline Cloud samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/starter_farm) directory on the GitHub website.
 
 1. From the [CloudFormation console](https://console.aws.amazon.com/cloudformation/), choose **Create Stack**, then **With new resources (standard)**.
 
@@ -28,7 +28,7 @@ Before you deploy the template, create an Amazon S3 bucket to hold job attachmen
 
 1. Follow the CloudFormation console steps to complete stack creation.
 
-For more information about the template parameters and customization options, see the [starter farm README](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/starter_farm) in the Deadline Cloud samples repository on GitHub.
+For more information about the template parameters and customization options, see the [starter farm README](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/starter_farm) in the Deadline Cloud samples repository on the GitHub website.
 
 ## Create a package building queue from the console
 <a name="s3-channel-create-queue"></a>
@@ -86,12 +86,12 @@ To allow the package building queue to access the `/Conda` prefix in the queue's
 ## Submit a package build job
 <a name="automate-submit-package-job"></a>
 
-After you create a package building queue and configure the queue permissions, you can submit jobs to build conda packages. The `submit-package-job` script in the [Deadline Cloud samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes#readme) repository on GitHub submits a build job for a conda recipe.
+After you create a package building queue and configure the queue permissions, you can submit jobs to build conda packages. The `submit-package-job` script in the [Deadline Cloud samples repository](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes#readme) on the GitHub website submits a build job for a conda recipe.
 
 You need the following:
-+ The [Deadline Cloud CLI](https://github.com/aws-deadline/deadline-cloud) installed on your workstation.
++ The Deadline Cloud CLI installed on your workstation. For installation instructions, see the [deadline-cloud](https://github.com/aws-deadline/deadline-cloud) repository on the GitHub website.
 + An active [AWS Deadline Cloud monitor (Deadline Cloud monitor)](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/working-with-deadline-monitor.html) login session.
-+ A clone of the [Deadline Cloud samples](https://github.com/aws-deadline/deadline-cloud-samples) repository.
++ A clone of the [Deadline Cloud samples repository](https://github.com/aws-deadline/deadline-cloud-samples) on the GitHub website.
 
 **To submit a package build job**
 
@@ -126,7 +126,3 @@ The monitor shows the two steps of the job: building the package and then reinde
 + **Task run** – Builds the package and uploads the results to Amazon S3.
 
 As the actions run, they send logs to Amazon CloudWatch (CloudWatch). When a job is complete, select **View logs for all tasks** to see additional logs about the setup and teardown of the environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

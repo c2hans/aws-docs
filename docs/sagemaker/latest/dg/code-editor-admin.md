@@ -13,7 +13,3 @@ You can use Code Editor with an On-Demand Instance for faster start-up time, and
 + [Change the default storage size](code-editor-admin-storage-size.md)
 + [Code Editor lifecycle configurations](code-editor-use-lifecycle-configurations.md)
 + [Custom images](code-editor-custom-images.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

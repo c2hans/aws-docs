@@ -110,7 +110,3 @@ Here are the recommended steps to plan for ownership of future phases of your or
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/sustainability.html)
 
 By focusing on these elements and best practices, you can develop a comprehensive sustainability plan that ensures long-term success in your organization's cloud transformation journey.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

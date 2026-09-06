@@ -77,7 +77,3 @@ This pattern describes how to use CloudWatch anomaly detection for custom metric
 <a name="attachments-d47e6f7f-e469-4cb9-b34b-8c4b78d71820"></a>
 
 To access additional content that is associated with this document, download and unzip the following file: [attachment.zip](samples/p-attach/d47e6f7f-e469-4cb9-b34b-8c4b78d71820/attachments/attachment.zip)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

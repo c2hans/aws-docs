@@ -125,7 +125,3 @@ The dimensions you can use to filter the public IP insight metrics are listed be
 <a name="cloudwatch-ipam-res-util-tip"></a>
 
 To quickly create an Amazon CloudWatch alarm for resources with high IP address utilization, open the CloudWatch console, choose **Metrics**, **All metrics**, choose the **Query** tab, choose the **Namespace** `AWS/IPAM > VPC IP Usage Metrics`, `AWS/IPAM > Subnet IP Usage Metrics`, or `AWS/IPAM > Public IPv4 Pool IP Usage Metrics`, choose the **Metric name** `MAX(VpcIPUsage)`, `MAX(SubnetIPUsage)`, or `MAX(PublicIPv4PoolIPUsage)`, and choose ** Create alarm**. For more information, see [Create alarms on Metrics Insights queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-metrics-insights-alarms.html) in the *Amazon CloudWatch User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

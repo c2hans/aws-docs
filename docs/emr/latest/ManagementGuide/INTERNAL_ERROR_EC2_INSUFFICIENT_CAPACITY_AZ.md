@@ -33,7 +33,3 @@ Perform the following steps to identify and fix the root cause of the cluster co
 + Review the best practices for cluster configuration. See [Configuring Amazon EMR cluster instance types and best practices for Spot instances](emr-plan-instances-guidelines.md) in the *Amazon EMR Management Guide*.
 + Troubleshoot the launch issues and review your configuration. See [Troubleshoot instance launch issues ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshooting-launch.html) in the *Amazon EC2 User Guide*.
 + Launch a new cluster with your updated cluster configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

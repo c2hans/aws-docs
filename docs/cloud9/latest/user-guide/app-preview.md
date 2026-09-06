@@ -111,7 +111,3 @@ We don't recommend sharing the URL in the application preview tab with others. (
 If you attempt to visit the IP of `127.0.0.1`, `localhost`, or `0.0.0.0` by using the application preview tab in the IDE or in a separate web browser tab outside of the IDE, the AWS Cloud9 IDE by default attempts to go to your local computer, instead of the instance or your own server that's connected to the environment.
 
 For instructions on how to provide others with a preview of your running application outside of the IDE, see [Share a running application over the internet](app-preview-share.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

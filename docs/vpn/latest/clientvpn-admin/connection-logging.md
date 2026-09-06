@@ -69,7 +69,3 @@ A connection log entry contains the following keys:
 + `connection-duration-seconds` — The duration of a connection in seconds. Equal to the difference between "connection-start-time" and "connection-end-time".
 
 For more information about enabling connection logging, see [AWS Client VPN connection logs](cvpn-working-with-connection-logs.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

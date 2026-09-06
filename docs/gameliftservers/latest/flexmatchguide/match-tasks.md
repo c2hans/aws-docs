@@ -25,7 +25,3 @@ FlexMatch is available with the managed Amazon GameLift Servers hosting for cust
   + [Backfill existing games with FlexMatch](match-backfill.md)
 **Note**
 FlexMatch backfill is currently not available for games using Amazon GameLift Servers Realtime.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

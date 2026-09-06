@@ -167,7 +167,3 @@ The `DROP COLUMN` form does not physically remove the column, but simply makes i
 If a dropped column is referenced as an `INCLUDE` column in the primary key, the primary key definition will be updated to remove the dropped column.
 
 A table in Aurora DSQL can have at most 255 active columns at one time and a maximum of 1600 columns over the lifetime of the table. Dropping a column does not reclaim its attribute number. It removes it from the set of active columns but the dropped column continues to count against the lifetime limit of 1600 columns. For more information, see [Database limits in Aurora DSQL](CHAP_quotas.md#SECTION_database-limits).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

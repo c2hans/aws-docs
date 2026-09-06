@@ -107,7 +107,3 @@ The following keys are supported.
   The value of the link variable varies depending on the type of the linked environment. For a web server environment, the link is the environment's CNAME. For a worker environment, the link is the name of the environment's Amazon Simple Queue Service (Amazon SQS) queue.
 
 The **CName**, **EnvironmentName** and **EnvironmentLinks** keys can be used to create [environment groups](environment-mgmt-compose.md) and [links to other environments](environment-cfg-links.md). These features are currently supported when using the EB CLI, AWS CLI or an SDK.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

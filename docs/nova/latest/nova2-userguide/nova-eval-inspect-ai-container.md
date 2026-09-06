@@ -1107,7 +1107,3 @@ When you use Amazon Bedrock as the inference provider, your data is subject to t
 | --- | --- | --- |
 | SageMaker endpoint | No | Data stays in your account. Not covered by AI opt-out policy. |
 | Amazon Bedrock | Yes | Enable the AWS AI Services Opt-Out Policy at the Organizations level to prevent data use for service improvement. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

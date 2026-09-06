@@ -59,9 +59,9 @@ Configure hosting resources and deploy them with your game server build or Realt
 **Manage fleet capacity**
 + [DescribeEC2InstanceLimits](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeEC2InstanceLimits.html) – Retrieve maximum number of instances allowed for the current AWS account and the current usage level.
 + [DescribeFleetCapacity](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeFleetCapacity.html) – Retrieve the current capacity settings for a fleet's home Region.
-+ [DescribeFleetLocationCapacity](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeFleetLocationCapacity.html) – Retrieve the current capacity settings for each location a multi-location fleet.
++ [DescribeFleetLocationCapacity](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeFleetLocationCapacity.html) – Retrieve the current capacity settings for each location in a multi-location fleet.
 + [UpdateFleetCapacity](https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateFleetCapacity.html) – Manually adjust capacity settings for a fleet.
-+ Set up :
++ Set up:
   + [PutScalingPolicy](https://docs.aws.amazon.com/gamelift/latest/apireference/API_PutScalingPolicy.html) – Turn on target-based auto scaling or create a custom auto scaling policy, or update an existing policy.
   + [DescribeScalingPolicies](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeScalingPolicies.html) – Retrieve an existing auto scaling policy.
   + [DeleteScalingPolicy](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DeleteScalingPolicy.html) – Delete an auto scaling policy and stop it from affecting a fleet's capacity.
@@ -131,7 +131,3 @@ Call these operations from a backend service to start new game sessions, get inf
   + [DescribePlayerSessions](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribePlayerSessions.html) – Get details on player activity, including status, playing time, and player data.
   + [UpdateGameSession](https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateGameSession.html) – Change game session settings, such as maximum player count and join policy.
   + [GetGameSessionLogUrl](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetGameSessionLogUrl.html) – Get the location of saved logs for a game session.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

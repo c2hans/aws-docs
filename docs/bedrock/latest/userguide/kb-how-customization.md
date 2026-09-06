@@ -12,7 +12,3 @@ Amazon Bedrock Knowledge Bases provides options for customizing how your data so
 + [Parsing options for your data source](kb-advanced-parsing.md)
 + [Use a custom transformation Lambda function to define how your data is ingested](kb-custom-transformation.md)
 + [Include metadata in a data source to improve knowledge base query](kb-metadata.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

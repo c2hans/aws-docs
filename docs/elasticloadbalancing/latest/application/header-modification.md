@@ -64,7 +64,3 @@ The attribute name is `routing.http.response.server.enabled`. The available valu
 + The value for the attribute can not exceed 1K bytes in size.
 + Elastic Load Balancing performs basic input validations to verify the header value is valid. However the validation is unable to confirm if the value is supported for a specific header.
 + Setting an empty value for any attribute will cause the Application Load Balancer to revert to the default behavior.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

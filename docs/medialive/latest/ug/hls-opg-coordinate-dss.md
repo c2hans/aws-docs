@@ -13,7 +13,3 @@ The HLS output group in AWS Elemental MediaLive supports several types of downst
 + [HLS output group to MediaPackage](origin-server-hls-emp.md)
 + [HLS output group to MediaPackage v2](origin-server-hls-empv2.md)
 + [HLS output group to HTTP](origin-server-http.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

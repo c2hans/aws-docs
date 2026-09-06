@@ -252,7 +252,3 @@ Batched action failures also generate larger error action payloads which can inc
    ```
 
 1. Configure the batching parameters. You do not need to specify all batch parameters. You can choose to specify 1, 2, 3, or all 4 batch parameters. If you do not specify a batch parameter, Rules Engine will update that parameter with the default values. For more information on batching parameters and their default values, see [HTTP parameters](https-rule-action.md#https-rule-action-parameters).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

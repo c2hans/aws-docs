@@ -32,7 +32,3 @@ The high-level process flow for the Lambda architecture is as follows:
 1. (Optional) If you use the smart crop or content moderation features, the Lambda function calls [Amazon Rekognition](https://aws.amazon.com/rekognition/) to analyze your image and returns the results.
 
 1. The viewer request is proxied through an Amazon CloudFront function to normalize headers and query parameters for improved cache hit rates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

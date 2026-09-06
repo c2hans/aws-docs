@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 # Package a game server build for deployment
 <a name="gamelift-build-intro"></a>
 
-Get your game server software ready for deployment on your hosting resources. Once deployed, the software is installed on each hosting resource, and then one or more game server process is launched and readied to host game sessions for players.
+Get your game server software ready for deployment on your hosting resources. Once deployed, the software is installed on each hosting resource, and then one or more game server processes are launched and readied to host game sessions for players.
 
 Getting a game server build ready varies depending on the type of Amazon GameLift Servers hosting options you're using. All game server builds must be integrated with the server SDK for Amazon GameLift Servers, as described in [Integrate a game server with Amazon GameLift Servers](gamelift-sdk-server.md).
 
@@ -20,7 +20,3 @@ If you're deploying an Amazon GameLift Servers Realtime configured script, see 
 **Topics**
 + [Create a game server build for Amazon GameLift Servers](gamelift-build-cli-uploading.md)
 + [Build a container image for Amazon GameLift Servers](containers-prepare-images.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

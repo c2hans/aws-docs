@@ -44,7 +44,3 @@ You can do one of the following:
 + [AWS SSM Get Parameter](systemsmanager-getparameter.md)
 + [AWS SSM Set Parameter](systemsmanager-setparameter.md)
 + [AWS SSM Run Command](systemsmanager-runcommand.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Microsoft Azure DevOps. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vsts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

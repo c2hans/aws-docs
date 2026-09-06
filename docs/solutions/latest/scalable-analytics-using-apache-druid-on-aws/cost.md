@@ -60,7 +60,3 @@ Profile assumptions: ingestion throughput at 1.4 million records per second, que
 | AWS Secrets Manager | 4 x secrets | $1.6 |
 | Amazon CloudWatch | 1,000 GB standard logs ingested per month, 200 custom metrics \+ 1,000,000 metric requests per month | $574.50 |
 |  |  **Total:**  |  **$13,645.27 [USD] / month**  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Scalable Analytics Using Apache Druid on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

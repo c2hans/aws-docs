@@ -23,7 +23,3 @@ Amazon Redshift supports several management interfaces that you can use to creat
 **AWS CLI** – The CLI provides a set of command line tools that you can use to manage AWS services from Windows, Mac, and Linux computers. The AWS CLI includes commands based on the Amazon Redshift API actions.
 + For information about installing and setting up the Amazon Redshift CLI, see [Setting up the Amazon Redshift CLI](setting-up-rs-cli.md).
 + For reference material on the Amazon Redshift CLI commands, see [Amazon Redshift](https://docs.aws.amazon.com/cli/latest/reference/redshift/index.html) in the *AWS CLI Reference.*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

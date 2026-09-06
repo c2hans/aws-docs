@@ -36,7 +36,3 @@ codebuild-tests-run \
 **Note**
 Note that the `CODEBUILD_CURRENT_SHARD_FILES` environment variable can be used only inside the scope of the `codebuild-tests-run` CLI.
 Also, if you are using `CODEBUILD_CURRENT_SHARD_FILES` inside test-command, put `CODEBUILD_CURRENT_SHARD_FILES` inside double quotes as shown in above example.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

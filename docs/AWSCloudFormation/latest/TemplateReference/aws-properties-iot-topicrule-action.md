@@ -27,6 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Elasticsearch](#cfn-iot-topicrule-action-elasticsearch)" : {{ElasticsearchAction}},
   "[Firehose](#cfn-iot-topicrule-action-firehose)" : {{FirehoseAction}},
   "[Http](#cfn-iot-topicrule-action-http)" : {{HttpAction}},
+  "[InfluxDB](#cfn-iot-topicrule-action-influxdb)" : {{InfluxDBAction}},
   "[IotAnalytics](#cfn-iot-topicrule-action-iotanalytics)" : {{IotAnalyticsAction}},
   "[IotEvents](#cfn-iot-topicrule-action-iotevents)" : {{IotEventsAction}},
   "[IotSiteWise](#cfn-iot-topicrule-action-iotsitewise)" : {{IotSiteWiseAction}},
@@ -64,6 +65,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     FirehoseAction}}
   [Http](#cfn-iot-topicrule-action-http): {{
     HttpAction}}
+  [InfluxDB](#cfn-iot-topicrule-action-influxdb): {{
+    InfluxDBAction}}
   [IotAnalytics](#cfn-iot-topicrule-action-iotanalytics): {{
     IotAnalyticsAction}}
   [IotEvents](#cfn-iot-topicrule-action-iotevents): {{
@@ -144,6 +147,12 @@ Write to an Amazon Kinesis Firehose stream.
 Send data to an HTTPS endpoint.
 *Required*: No
 *Type*: [HttpAction](aws-properties-iot-topicrule-httpaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`InfluxDB`  <a name="cfn-iot-topicrule-action-influxdb"></a>
+Property description not available.
+*Required*: No
+*Type*: [InfluxDBAction](aws-properties-iot-topicrule-influxdbaction.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IotAnalytics`  <a name="cfn-iot-topicrule-action-iotanalytics"></a>
@@ -229,7 +238,3 @@ Writes attributes from an MQTT message.
 *Required*: No
 *Type*: [TimestreamAction](aws-properties-iot-topicrule-timestreamaction.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

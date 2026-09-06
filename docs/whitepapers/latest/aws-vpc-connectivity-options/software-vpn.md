@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 +  [Tech Brief - Connecting Cisco ASA to VPC EC2 Instance (IPsec)](https://aws.amazon.com/articles/8800869755706543)
 +  [Tech Brief - Connecting Multiple VPCs with EC2 Instances (IPsec)](https://aws.amazon.com/articles/5472675506466066)
 +  [Tech Brief - Connecting Multiple VPCs with EC2 Instances (SSL)](https://aws.amazon.com/articles/0639686206802544)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -349,7 +349,3 @@ The full comparison of RPM package versions is below.
 + `ncurses-base-6.2-4.20200222.amzn2023.0.5.noarch`
 + `ncurses-libs-6.2-4.20200222.amzn2023.0.5.x86_64`
 + `system-release-2023.3.20240108-0.amzn2023.noarch`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

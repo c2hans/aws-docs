@@ -33,7 +33,3 @@ Establish clear metrics and accountability mechanisms to measure the effectivene
 By addressing these aspects and cultivating a Zero Trust mindset, organizations can create a solid foundation for successful adoption and implementation of Zero Trust. This cultural shift is essential for helping everyone in the organization to understand the importance of Zero Trust and actively contribute to its success.
 
 The next section explores phased adoption approaches, providing guidance on how to gradually implement Zero Trust principles in a practical and manageable manner.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

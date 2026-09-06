@@ -55,7 +55,3 @@ The following table summarizes the use cases for selection expressions in WebSoc
 | IntegrationResponse.TemplateSelectionExpression | Key for IntegrationResponse.ResponseTemplates | Optional. May be provided for non-proxy integration. $default is supported. | In some cases, a dynamic property of the response may dictate different transformations within the same route and associated integration.<br />`${request.body.jsonPath}`, `${integration.response.statuscode}`, `${integration.response.header.headerName}`, `${integration.response.multivalueheader.headerName}`, and static values are supported.<br />`$default` is supported as a catch-all. |
 | Route.RouteResponseSelectionExpression | RouteResponse.RouteResponseKey | Should be provided to initiate two-way communication for a WebSocket route.<br />Currently, this value is restricted to `$default` only. |  |
 | RouteResponse.ModelSelectionExpression | Key for RouteResponse.RequestModels | Currently unsupported. |  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

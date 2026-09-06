@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
  Healthcare solutions implemented as distributed systems may use multiple services that can scale elastically. In these cases, implement automatic scaling for all relevant compute and database services, using Amazon EC2 Auto Scaling and Application Auto Scaling for [supported AWS services](https://docs.aws.amazon.com/autoscaling/application/userguide/integrated-services-list.html). You can leverage scaling plans to simplify configuration of scaling rules, and follow auto scaling [best practices](https://docs.aws.amazon.com/autoscaling/plans/userguide/best-practices.html) to maximize reliability.
 
  Other managed services, such as Amazon Data Firehose, allow you to operate at scale without worrying about capacity or managing infrastructure.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

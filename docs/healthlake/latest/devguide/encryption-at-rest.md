@@ -44,9 +44,6 @@ To use your customer managed KMS key with your HealthLake resources, the followi
 + kms:GenerateDataKey provides access to encrypt resources at rest for all write operations.
 + kms:Decrypt provides access to read or search operations for encrypted resources.
 
-**Permissions required to restore a data store**
-Restoring a data store with `RestoreFHIRDatastore` involves two keys: the key that encrypts the source data store and the key you choose for the restored data store. When the source data store uses a customer managed key, its key policy must permit kms:CreateGrant, kms:DescribeKey, and kms:Decrypt so HealthLake can read the backup data. When you specify a customer managed key for the restored data store, its key policy must permit the same set of operations as data store creation: kms:CreateGrant, kms:DescribeKey, kms:GenerateDataKey, and kms:Decrypt. The restored data store does not inherit the source data store's encryption configuration—if you don't specify a key in the restore request, the restored data store uses an AWS owned KMS key. For more information, see [Restoring a data store](https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data-stores-restore.html).
-
 The following is a policy statement example that allows a user to create and interact with a data store in AWS HealthLake which is encrypted by that key:
 
 ```
@@ -343,7 +340,3 @@ The following resources provide more information about data at rest encryption.
 For more information about [AWS Key Management Service basic concepts](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html), see the AWS KMS documentation.
 
 For more information about [Security best practices](https://docs.aws.amazon.com/kms/latest/developerguide/best-practices.html) in the AWS KMS documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

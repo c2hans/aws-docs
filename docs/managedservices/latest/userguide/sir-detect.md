@@ -22,7 +22,3 @@ Additional findings are added as services, products and threat ecosystems evolve
 <a name="sir-report"></a>
 
 Raise an incident through the AMS Support Portal or Support Center to notify AMS of a security incident or to request investigations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

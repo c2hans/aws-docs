@@ -26,7 +26,7 @@ ST_GeomFromWKB(wkb_string, srid)
 <a name="ST_GeomFromWKB-function-arguments"></a>
 
  *wkb\_string*
-A value of data type `VARCHAR` that is a hexadecimal WKB representation of a geometry.
+A value of data type `VARCHAR` or `VARBYTE` that is a hexadecimal WKB representation of a geometry.
 
  *srid*
 A value of data type `INTEGER` that is a spatial reference identifier (SRID). If an SRID value is provided, the returned geometry has this SRID value. Otherwise, the SRID value of the returned geometry is set to 0.
@@ -58,7 +58,3 @@ SELECT ST_AsText(ST_GeomFromWKB('01030000000100000005000000000000000000000000000
 --------------------------------
  POLYGON((0 0,0 1,1 1,1 0,0 0))
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ Learn how GuardDuty handles multiple occurrences of the same finding type. By ag
 
 [GuardDuty finding types](guardduty_finding-types-active.md)
 This section enlists GuardDuty finding types by the associated [Foundational data sources](guardduty_data-sources.md) or [Mapped GuardDuty feature](guardduty-feature-object-api-changes-march2023.md#guardduty-feature-enablement-datasource-relation). To learn about each finding type, select that finding for further details, such as its description and potential steps to remediate the finding.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

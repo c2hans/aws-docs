@@ -17,7 +17,3 @@ This section explains how routing controls work, and how to create and use them 
 
 **Important**
 To learn about preparing to use ARC to reroute traffic as part of a failover plan for your application in a disaster scenario, see [Best practices for routing control in ARC](route53-arc-best-practices.regional.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ For a demonstration on creating BYOL images with Microsoft Hyper-V, watch the fo
 For a demonstration on creating BYOL images with VMware Workstation, watch the following video.
 
 [![AWS Videos](http://img.youtube.com/vi/kCfJicX_gc4?si=1XrvfjKAmuGzYEx-/0.jpg)](http://www.youtube.com/watch?v=kCfJicX_gc4?si=1XrvfjKAmuGzYEx-)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

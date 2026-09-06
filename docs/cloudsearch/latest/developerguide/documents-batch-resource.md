@@ -189,7 +189,3 @@ A document service request can return three types of status codes:
 | --- | --- |
 | Content-Type | A standard MIME type describing the format of the object data. For more information, see [W3C RFC 2616 Section 14](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17). Default: the value of the Accept header in the request, or the Content-Type of the request if the Accept header is missing or doesn't specify either application/xml or application/json.<br />Constraints: application/xml or application/json only |
 | Content-Length | The length in bytes of the body in the response.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

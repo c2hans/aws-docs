@@ -12,7 +12,3 @@ For example, you can switch between multiple live events that are happening at d
 The following illustration shows how you can use MediaConnect CDI workflows to replicate and distribute video to multiple destinations. You can create a single output broadcast from video content coming from multiple events, and also send the output from multiple signals for monitoring in real time.
 
 ![MediaConnect CDI workflows for replicating, monitoring, and distributing multiple video signals.](http://docs.aws.amazon.com/mediaconnect/latest/ug/images/use-case-cdi-replication.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

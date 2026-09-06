@@ -116,7 +116,3 @@ With this configuration, Amazon AppFlow organizes the output into datasets that 
 ![Example configuration for the partition and aggregation settings. This configuration produces the example file paths under the schemaVersion_2 folder.](http://docs.aws.amazon.com/appflow/latest/userguide/images/flow-example-partition-settings-sv2.png)
 
 With this configuration, Amazon AppFlow organizes the output into filepaths for the year, month, and day that the flow runs: `2022/11/10`. Within that path, Amazon AppFlow organizes the output into datasets that contain records with matching field-value pairs for the `Industry` field. Amazon AppFlow stores each of these datasets in the corresponding folders, such as the folder `Industry=Apparel/`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

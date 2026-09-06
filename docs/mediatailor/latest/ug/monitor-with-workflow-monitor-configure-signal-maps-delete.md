@@ -16,7 +16,3 @@ If you not longer need a signal map, it can be deleted. If you have monitoring t
 1. The **Monitor deployment** column will display the current status. When the status has changed to **DELETE\_COMPLETE**, select the **Delete** button again.
 
 1. You will be asked to confirm deletion of the signal map. Select **Delete** to proceed and delete the signal map.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

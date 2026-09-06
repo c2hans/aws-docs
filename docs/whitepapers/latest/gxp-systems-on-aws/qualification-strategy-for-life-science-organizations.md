@@ -126,7 +126,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/qu
  One important point that may be covered in a Qualification Strategy is the overarching approach to Computer System Validation (CSV) during migration. If you are embarking on a migration effort, part of the analysis of the application portfolio will be to identify archetypes, or groups of applications with similar architectures. A single runbook can be developed and then repeated for each of the applications in the group, speeding up migration.
 
  At this point, if the applications are GxP relevant, the CSV/migration strategy can also be defined for the archetype and repeated for each application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

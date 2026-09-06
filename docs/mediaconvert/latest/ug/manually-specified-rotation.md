@@ -22,7 +22,3 @@ If you use the API or an SDK, you can find this setting in the JSON file of your
 
 **Note**
 AWS Elemental MediaConvert doesn't rotate images and motion images that you overlay. If you use the image inserter feature or the motion image inserter feature with the rotate feature, rotate your overlay before you upload it. Specify the position of your overlays as you want them to appear on the video after rotation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

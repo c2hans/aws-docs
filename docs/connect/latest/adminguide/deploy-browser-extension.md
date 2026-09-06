@@ -249,7 +249,3 @@ After the extension is removed or blocked, contacts handled by those agents are 
 If the extension is uninstalled or disabled while a recorded contact is active, browser URLs stop being reported to the Connect Customer Client Application for the remainder of the contact. URL rules can no longer match, and browser pages that should be redacted by URL might appear in the recording. Window title rules continue to match as normal.
 
 To restore redaction for new contacts, reinstall or re-enable the extension before the next contact begins.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

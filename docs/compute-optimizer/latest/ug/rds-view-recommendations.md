@@ -56,7 +56,3 @@ If you're signed in to a management account of an organization and trusted acces
    + To change the statistic value of the graphs, choose **Statistics**, and then choose **Average** or **Maximum**.
 
      You can use this option to determine the typical utilization of your workload over time. To view the highest value observed during the specified period, change the selection to **Maximum**. This way, you can determine the peak instance usage of your workload over time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

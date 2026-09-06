@@ -39,7 +39,3 @@ Replace `o-xxxxxxxxxxx` with your organization ID and `bucket-name` with your bu
 ```
 
 Note: This example uses `s3:*` for illustration purposes. In practice, replace `s3:*` with only the specific actions your workload requires, such as `s3:GetObject` and `s3:PutObject`. Granting the minimum set of actions follows the principle of least privilege.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 |  [IAM](https://aws.amazon.com/iam/)  |  Supporting. Provides permissions for this Guidance's resources to perform actions.  |
 |  [AWS Systems Manager](https://aws.amazon.com/systems-manager/)  |  Supporting. Provides a Systems Manager [document](https://docs.aws.amazon.com/systems-manager/latest/userguide/documents.html) (SSM document) for Guidance's workflow invocations.  |
 |  [AWS Step Functions](https://aws.amazon.com/step-functions/)  |  Supporting. Orchestrates partitioning the inventory with AWS Glue. Also orchestrates Lambda invocations to request Amazon Glacier vault archive retrieval.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer from Amazon S3 Glacier Vaults to Amazon S3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

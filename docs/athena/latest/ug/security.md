@@ -22,7 +22,3 @@ This documentation will help you understand how to apply the shared responsibili
 + [Infrastructure security in Athena](security-infrastructure.md)
 + [Configuration and vulnerability analysis in Athena](security-vulnerability-management.md)
 + [Use Athena to query data registered with AWS Lake Formation](security-athena-lake-formation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

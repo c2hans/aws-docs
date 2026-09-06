@@ -59,7 +59,3 @@ The following are the service endpoints and service quotas for this service.
 | Log Streams  | 5 per resource |
 | Observations per problem  | 20 per dashboard<br />40 per DescribeProblemObservations action |
 | Metrics | 60 per resource |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

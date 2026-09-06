@@ -15,7 +15,3 @@ The following limitations apply when using a service-linked role (SLR) to regist
 + Service-linked role operations bypass your AWS service control policies.
 + When you register data locations with a service-linked role, it updates IAM policies with eventual consistency. For more information, see the the [Troubleshoot IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot.html#troubleshoot_general_eventual-consistency) documentation in the IAM User Guide.
 +  You can't set `SET_CONTEXT = TRUE` in Lake Formation data lake settings when using service-linked roles, and you are using IAM Identity Center. The reason is that service-linked roles have immutable trust policies that are incompatible with the trusted identity propagation needed for `SetContext` auditing with IAM Identity Center principals.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

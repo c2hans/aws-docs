@@ -34,7 +34,3 @@ The request rate is the only adjustable quota. Because it is governed by the Con
 <a name="manager-assist-quotas-regional"></a>
 
 The request rate varies by AWS Region. The maximum message length and chat context behavior are the same in all Regions where manager assist is available.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

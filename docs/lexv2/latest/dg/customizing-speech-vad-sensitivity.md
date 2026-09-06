@@ -74,7 +74,3 @@ aws lexv2-models create-bot-locale \
 + **Start with Default** - Begin with the Default setting and adjust based on performance testing and user feedback.
 + **Monitor performance** - Use Amazon Lex V2 analytics and conversation logs to monitor speech recognition accuracy and adjust VAD sensitivity as needed.
 + **Consider use case** - Higher sensitivity levels are beneficial for noisy environments but may not be necessary for controlled environments like customer service centers with headsets.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

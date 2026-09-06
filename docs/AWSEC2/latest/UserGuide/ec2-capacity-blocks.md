@@ -48,8 +48,8 @@ Capacity Block sizes of 64 instances are not supported for all instance types in
 
 | Instance type | US East (N. Virginia) us-east-1 | US East (Ohio) us-east-2 | US West (N. California) us-west-1 | US West (Oregon) us-west-2 | Europe (Stockholm) eu-north-1 | Europe (London) eu-west-2 | Europe (Spain) eu-south-2 | Asia Pacific (Tokyo) ap-northeast-1 | Asia Pacific (Seoul) ap-northeast-2 | Asia Pacific (Mumbai) ap-south-1 | Asia Pacific (Hyderabad) ap-south-2 | Asia Pacific (Sydney) ap-southeast-2 | Asia Pacific (Jakarta) ap-southeast-3 | Asia Pacific (Melbourne) ap-southeast-4 | South America (São Paulo) sa-east-1 | AWS GovCloud (US-East) us-gov-east-1 | AWS GovCloud (US-West) us-gov-west-1 | US East (Atlanta) us-east-1-atl-2a | US West (Phoenix) us-west-2-phx-2a |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| p6-b300.48xlarge | ✓ |  |  | ✓ |  |  |  |  | ✓ |  | ✓ |  |  |  |  | ✓ |  | ✓ |  |
-| p6-b200.48xlarge | ✓ | ✓ |  | ✓ |  |  |  |  |  | ✓ |  |  |  |  |  | ✓ | ✓ |  |  |
+| p6-b300.48xlarge | ✓ |  |  | ✓ |  |  |  |  | ✓ |  | ✓ |  | ✓ |  |  | ✓ |  | ✓ |  |
+| p6-b200.48xlarge | ✓ | ✓ |  | ✓ |  |  |  |  |  | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  |  |
 | p5.4xlarge | ✓ | ✓ |  | ✓ |  | ✓ |  | ✓ |  | ✓ |  | ✓ |  |  | ✓ |  |  |  |  |
 | p5.48xlarge | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  | ✓ | ✓ |  | ✓ |  |  | ✓ |  |
 | p5e.48xlarge | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  | ✓ | ✓ |  | ✓ |  |  |  | ✓ |
@@ -115,7 +115,3 @@ If you use Amazon EC2 Auto Scaling or Amazon EKS, you can schedule scaling to ru
  For more information about AWS Parallel Computing Service, see [What is AWS Parallel Computing Service](https://docs.aws.amazon.com/pcs/latest/userguide/what-is-service.html).
 
  For more information about AWS ParallelCluster, see [What is AWS ParallelCluster](https://docs.aws.amazon.com/parallelcluster/latest/ug/what-is-aws-parallelcluster.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

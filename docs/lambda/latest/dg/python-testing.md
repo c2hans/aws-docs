@@ -52,7 +52,3 @@ See the [Testing functions](testing-guide.md) chapter for a complete introductio
  To reduce the latency involved with cloud deployment iterations, see [AWS Serverless Application Model (AWS SAM) Accelerate](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/using-sam-cli-sync.html), [AWS Cloud Development Kit (AWS CDK) watch mode](https://docs.aws.amazon.com/cdk/v2/guide/cli.html#cli-deploy-watch). These tools monitor your infrastructure and code for changes. They react to these changes by creating and deploying incremental updates automatically into your cloud environment.
 
  Examples that use these tools are available in the [Python Test Samples](https://github.com/aws-samples/serverless-test-samples/tree/main/python-test-samples) code repository.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

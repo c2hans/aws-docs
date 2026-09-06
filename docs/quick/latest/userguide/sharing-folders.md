@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/sharing-folders.html
 ---
 
-# Create and manage membership permissions for Quick Sight shared folders
+# Create and manage membership permissions for Quick shared folders
 <a name="sharing-folders"></a>
 
 **Shared folders (unrestricted)**
@@ -72,10 +72,6 @@ The permissions that you pass to the user depend on the type of folder role that
 **Folder viewer**
 + quicksight:DescribeFolder
 
-After you create a shared folder, you can begin using the folder in Quick Sight.
+After you create a shared folder, you can begin using the folder in Quick.
 
-You can also use the Quick Sight APIs to create special scaled folders that can be shared with up to 3000 namespaces. To learn more about creating a scaled folder, see [Creating Quick Sight scaled folders with the Quick Sight APIs](folders-scaled.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+You can also use the Quick APIs to create special scaled folders that can be shared with up to 3000 namespaces. To learn more about creating a scaled folder, see [Creating Quick scaled folders with the Quick APIs](folders-scaled.md).

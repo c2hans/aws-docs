@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-postgres-j
 To avoid client-side out-of-memory errors when retrieving large data sets using JDBC, you can enable your client to fetch data in batches by setting the JDBC fetch size parameter. For more information, see [Setting the JDBC fetch size parameter](set-the-JDBC-fetch-size-parameter.md).
 
 Amazon Redshift does not recognize the JDBC maxRows parameter. Instead, specify a [LIMIT](r_ORDER_BY_clause.md#order-by-clause-limit) clause to restrict the result set. You can also use an [OFFSET](r_ORDER_BY_clause.md#order-by-clause-offset) clause to skip to a specific starting point in the result set.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

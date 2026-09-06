@@ -50,7 +50,3 @@ Customers can explore different alternatives depending on their use cases: AWS C
 There is no single mandated tag key, giving customers the flexibility to select their own custom tag key for their use case. Common conventions include applications, projects, or workloads. The AppManager resource groups and `awsApplication` tags also remain usable for existing customers and do not need to be removed or replaced. In concert with this move of Application Manager to maintenance mode, `awsApplication` is also moving to maintenance mode.
 
 If you have additional questions, contact us through the [AWS Support Center](https://console.aws.amazon.com/support).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

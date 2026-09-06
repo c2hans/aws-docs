@@ -34,7 +34,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
  To get started with AWS Control Tower, see [Getting started with AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/getting-started-with-control-tower.html). We recommend that you review the prerequisites and next steps required to establish your multi-account environment on AWS.
 
 For complete guidance on establishing your multi-account environment, review the guidance included in this whitepaper.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

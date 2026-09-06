@@ -66,7 +66,3 @@ You can use Amazon S3 Storage Lens to collect storage metrics and usage data for
 | Register a delegated administrator to create S3 Storage Lens dashboards or configurations for your organization. | `organizations:RegisterDelegatedAdministrator` |
 | Deregister a delegated administrator so that they can no longer create S3 Storage Lens dashboards or configurations for your organization. | `organizations:DeregisterDelegatedAdministrator` |
 | Additional permissions to create S3 Storage Lens organization-wide configurations. | `organizations:DescribeOrganization`<br />`organizations:ListAccounts`<br />`organizations:ListAWSServiceAccessForOrganization`<br />`organizations:ListDelegatedAdministrators`<br />`iam:CreateServiceLinkedRole` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

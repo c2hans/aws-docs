@@ -240,7 +240,3 @@ DataBrew supports the following conditions:
 + `GREATER_THAN_EQUAL` – The value in the column is greater than or equal to the value that was provided in the condition.
 + `IS_INVALID` – The value in the column has an incorrect data type.
 + `IS_MISSING` – There is no value in the column.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ App Mesh runs its control plane instances across multiple Availability Zones to 
 <a name="disaster-recovery"></a>
 
 The App Mesh service manages backups of customer data. There is nothing that you need to do to manage backups. The backed-up data is encrypted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

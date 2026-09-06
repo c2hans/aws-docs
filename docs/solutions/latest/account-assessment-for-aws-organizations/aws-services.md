@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 | Amazon Cognito |  **Supporting.** Deploys Cognito user pool to authenticate and authorize users to access the solution web UI. |
 | AWS WAF |  **Supporting.** Deploys AWS WAF web ACL to protect your API Gateway API from common web exploits, such as SQL injection and cross-site scripting (XSS) attacks. |
 | AWS X-Ray |  **Supporting.** Deploys AWS X-Ray to trace API Gateway, Step Functions, and Lambda functions, allowing you to investigate root causes of failed scans. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Account Assessment for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

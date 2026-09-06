@@ -27,7 +27,3 @@ The following basic restrictions apply to tags:
 + Do not use `aws:`, `AWS:`, or any combination of the upper or lower case of the keyword `AWS` as a prefix for either keys or values. These are reserved only for AWS use. You can't edit or delete tag keys or values with this prefix. Tags with this prefix do not count against your tags-per-resource limit.
 
 For more information on tagging restrictions, see [Tagging AWS resources ](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the AWS General Reference Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

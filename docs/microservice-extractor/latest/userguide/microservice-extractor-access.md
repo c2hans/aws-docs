@@ -10,7 +10,3 @@ AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container 
 AWS Microservice Extractor for .NET is a standalone tool that you download and install on your developer workstation. Specify the source files for your applications to start an analysis. You can view the analysis using the UI console.
 
 To install Microservice Extractor, see [Install AWS Microservice Extractor for .NET](microservice-extractor-install.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

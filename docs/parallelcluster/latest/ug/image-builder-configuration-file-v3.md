@@ -23,7 +23,3 @@ Specifies the AWS Region for the `build-image` operation. For example, `us-east-
 
 `CustomS3Bucket` (**Optional**, `String`)
 Specifies the name of an Amazon S3 bucket that is created in your AWS account to store resources that are used by the custom AMI build process and to export logs. The info used by the image is in the custom bucket for image config. AWS ParallelCluster maintains one Amazon S3 bucket in each AWS Region that you create clusters in. By default, these Amazon S3 buckets are named `parallelcluster-hash-v1-DO-NOT-DELETE`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

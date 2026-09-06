@@ -50,7 +50,3 @@ No. Currently, APN Customer Engagement (ACE) doesn’t support this feature.
  **Q: What folders do I have access to and what is the purpose of each folder?**
 
 You can find the list of Amazon S3 folders in [Integration prerequisites](crm-integration-setting-up.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

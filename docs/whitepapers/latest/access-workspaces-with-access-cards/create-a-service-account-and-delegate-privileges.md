@@ -46,7 +46,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-wit
 1.  Verify the information on the **Completing the Delegation of Control Wizard** page, and select **Finish**.
 
 1.  Create a user with a strong password and add that user to the “Connectors” group. This user will be known as your AD Connector service account. Because this user it is now a member of the “Connectors” group, they now have sufficient privileges to connect AWS Directory Service to the directory.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

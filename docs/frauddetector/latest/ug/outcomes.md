@@ -8,7 +8,3 @@ Amazon Fraud Detector is no longer open to new customers as of November 7, 2025.
 <a name="outcomes"></a>
 
 An outcome is the result of a fraud prediction. You can create an outcome for each possible fraud prediction result. For example, you might want outcomes to represent risk levels (high\_risk, medium\_risk, and low\_risk) or actions (approve, review). After an outcome is created, you can add one or more outcomes to a rule. As part of the [GetEventPrediction](https://docs.aws.amazon.com/frauddetector/latest/api/API_GetEventPrediction.html) response, Amazon Fraud Detector returns the defined outcomes for any matched rule.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

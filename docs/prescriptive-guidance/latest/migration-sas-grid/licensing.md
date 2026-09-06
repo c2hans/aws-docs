@@ -45,7 +45,3 @@ Evaluate the ratio of vCPU to I/O bandwidth and vCPU to ephemeral storage per AW
 + [Large ](https://calculator.aws/#/estimate?id=6044f60e4693c472506978f68ac63fba89f5fde2)– SAS Grid with high availability in a single Availability Zone
 
   8x SAS Grid (i3en.12xlarge instance), 3x Metadata Server, 2x Web Server
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

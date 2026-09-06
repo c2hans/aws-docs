@@ -153,7 +153,3 @@ For more information about using the AWS Glue Jobs system, see [Monitoring AWS G
  **Transforms** – When you choose the **Transforms** tab, all of the available transforms can be selected. Choose a transform to add it to the canvas. You can also choose **Add Transform** at the bottom of the Transforms list which will open a new page to the documentation for creating [Custom visual transforms](https://docs.aws.amazon.com/glue/latest/ug/custom-visual-transform.html). Following the steps will allow you to create transforms of your own. Your transforms will then appear in the list of available transforms.
 
  **Data** – The data tab contains all of the nodes for **Sources** and **Targets**. You can hide the Sources and Targets by clicking the triangle next to the Sources or Targets heading. You can unhide the Sources and Targets by clicking the triangle again. Choose a source or target node to add it to the canvas. You can also choose **Manage Connections** to add a new connection. This will open the Connectors page in the console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,7 +23,3 @@ Complete the following steps to enable or disable typing indicators.
    The **Privacy & Safety** page displays **Enable Typing Indicators**, and the option to enable or disable the typing indicator feature.
 
    When the typing indicators are disabled, users will not send or receive typing indicator notifications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

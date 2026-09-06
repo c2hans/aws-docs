@@ -262,7 +262,3 @@ Flexible instance groups integrate with HyperPod's managed Karpenter autoscaling
 When Karpenter manages scaling, it uses its own selection logic based on pod requirements and pricing to determine which instance type to provision. This differs from the list-order priority used by HyperPod's native provisioning (such as `CreateCluster` and `UpdateCluster`), where the first instance type in the list is always attempted first.
 
 This eliminates the need to create separate instance groups for each instance type and manually configure Karpenter to reference multiple groups.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -254,7 +254,3 @@ Note the following:
 + When you create your partnership and specify delimiters, make sure that none of the delimiter characters are in your input files.
 + If you don't specify delimiters when you create your partnership, the system uses defaults. The default delimiters are `*` (asterisk), `:` (colon), `~` (tilde), and `\n` (newline).
 + Make sure that your mapping template doesn't introduce any delimiter characters into the content that will be transformed to EDI.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS B2B Data Interchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query b2bi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

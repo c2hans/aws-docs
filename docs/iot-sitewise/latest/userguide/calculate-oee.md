@@ -60,7 +60,3 @@ Using the raw measurements and the transformed measurements, define the followin
 
 **Note**
  If OEE is defined as a transform, output values are computed for each of the input values. There is a potential to generate unexpected values as the transform evaluation considers the latest available values for all the contributing properties in the formula. For property updates with the same timestamp, output values may be overwritten by updates from other incoming properties. For example when Availability, Quality, and Performance are computed, the OEE is computed with the last available data points for the other two properties. These contributing values share timestamps, and cause incorrect output values of the OEE. The order is not guaranteed for transforms computation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

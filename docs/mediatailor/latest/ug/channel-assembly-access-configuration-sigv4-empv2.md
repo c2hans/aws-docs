@@ -16,7 +16,3 @@ Signature Version 4 (SigV4) for MediaPackage v2 is a signing protocol used to au
 + You must allow MediaTailor to access your MediaPackage v2 endpoint by granting **mediatailor.amazonaws.com** principal access in an Origin Access Policy on the endpoint.
 + Your MediaTailor source location base URL must be a MediaPackage v2 endpoint.
 + The caller of the API must have **mediapackagev2:GetObject** IAM permissions to read all multivariant playlists referenced by the MediaTailor source packaging configurations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,7 +45,3 @@ You must select the name of the webcam you want to use. If you select the check 
 
 1. Choose the video icon to reattach the webcams to your WorkSpaces Applications streaming session.
 ![Video icon highlighted in the Amazon AppStream 2.0 toolbar with Webcam 2 selected in dropdown.](http://docs.aws.amazon.com/appstream2/latest/developerguide/images/Webcam-2-selected-cameras-reattached-6.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

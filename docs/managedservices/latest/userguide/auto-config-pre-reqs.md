@@ -18,7 +18,3 @@ Or, you can install the SSM Agent manually. For more information, see the follow
 + Windows: [Manually install SSM Agent on EC2 instances for Windows Server - AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-win.html)
 
 For more information on SSM agent, see the AWS documentation [Working with SSM Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

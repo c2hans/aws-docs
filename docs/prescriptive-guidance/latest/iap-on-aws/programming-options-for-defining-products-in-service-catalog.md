@@ -54,7 +54,3 @@ The AWS CDK provides built-in continuous integration and continuous deployment (
 Custom AWS CDK classes can inherit from other classes to provide specialized functions, and a class may be composed from instances of other classes. If you use shared AWS CDK class frameworks to implement multiple Service Catalog products, consider any versioning or compatibility implications, especially across multiple development teams. You will have to ensure that changes are backward compatible, or that you have a versioning scheme that is being followed so that class changes you make for one product's doesn't break another product.
 
 For more information, see the [AWS CDK documentation](https://docs.aws.amazon.com/cdk/v2/guide/home.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

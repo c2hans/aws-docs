@@ -55,7 +55,3 @@ These limitations apply:
   +  Amazon Redshift Python driver v2.0.914
 + **No support for enhanced VPC routing** – Enhanced VPC routing isn't supported when you use native identity provider federation. For more information about enhanced VPC routing, see [Enhanced VPC routing in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/enhanced-vpc-routing.html).
 +  **AWS IAM Identity Center caching** – AWS IAM Identity Center caches session information. This might cause unpredictable access issues when you attempt to connect to your Redshift database via Redshift query editor v2. This is because the associated AWS IAM Identity Center session in query editor v2 remains valid, even in a case where the database user is signed out of the AWS console. The cache expires after one hour, which typically remediates any issues.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

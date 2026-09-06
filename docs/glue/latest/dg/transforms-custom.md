@@ -128,7 +128,3 @@ A custom code transform returns a collection of `DynamicFrames`, even if there i
    Consider a scenario in which you add a custom transform node to split a flight dataset into multiple datasets, but duplicate some of the identifying property keys in each output schema, such as the flight date or flight number. You add a *SelectFromCollection* transform node for each output schema, with the custom transform node as its parent.
 
 1. (Optional) You can then use each *SelectFromCollection* transform node as input for other nodes in the job, or as a parent for a data target node.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

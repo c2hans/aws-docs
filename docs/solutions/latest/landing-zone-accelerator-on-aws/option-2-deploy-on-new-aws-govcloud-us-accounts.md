@@ -87,7 +87,3 @@ Ensure that the [prerequisites](prerequisites-1.md) have been completed.
    1. Follow [Step 2](#step-2-use-aws-service-catalog-to-launch-the-product) and [Step 3](#step-3.-get-account-ids) of [Option 2](#option-2-deploy-on-new-aws-govcloud-us-accounts).
 
    1. Follow [Step 4 ](option-1-deploy-to-new-standard-and-aws-govcloud-us-accounts.md#step-4.-configure-solution-in-aws-govcloud-us-regions-to-manage-new-accounts)of [Option 1](option-1-deploy-to-new-standard-and-aws-govcloud-us-accounts.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ Amazon FSx provides the following APIs for data retrieval.
 | <a name="fsx-DescribeStorageVirtualMachines"></a>[DescribeStorageVirtualMachines](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeStorageVirtualMachines.html) | Return the descriptions of all storage virtual machines owned by your AWS account in the AWS Region of the endpoint that you're calling | Read |
 | <a name="fsx-DescribeVolumes"></a>[DescribeVolumes](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeVolumes.html) | Return the descriptions of all volumes owned by your AWS account in the AWS Region of the endpoint that you're calling | Read |
 | <a name="fsx-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/fsx/latest/APIReference/API_ListTagsForResource.html) | List tags for an Amazon FSx resource | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,3 @@ This section provides details about distributing your API Gateway APIs to your c
 + [Documentation for REST APIs in API Gateway](api-gateway-documenting-api.md)
 + [Generate SDKs for REST APIs in API Gateway](how-to-generate-sdk.md)
 + [Sell your API Gateway APIs through AWS Marketplace](sell-api-as-saas-on-aws-marketplace.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

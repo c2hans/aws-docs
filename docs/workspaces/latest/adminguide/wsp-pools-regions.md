@@ -30,7 +30,3 @@ For the AWS Regions that apply to WorkSpaces Personal, see [Amazon WorkSpaces en
 | South America (São Paulo) | sa-east-1 |  workspaces.sa-east-1.amazonaws.com  | HTTPS | sae1-az1, sae1-az3 |
 |  AWS GovCloud (US-East) | us-gov-east-1 |  workspaces.us-gov-east-1.amazonaws.com <br /> workspaces-fips.us-gov-east-1.amazonaws.com  | HTTPS<br />HTTPS | usgw1-az1, usgw1-az2, usgw1-az3 |
 |  AWS GovCloud (US-West) | us-gov-west-1 |  workspaces.us-gov-west-1.amazonaws.com <br /> workspaces-fips.us-gov-west-1.amazonaws.com  | HTTPS<br />HTTPS | usge1-az1, usge1-az2, usge1-az3 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,3 @@ The following table describes the important changes to the AWS Migration Hub Jou
 | Migration Hub Journeys now supports task automation | You can now automate journey tasks. For more information, see [Task automation](https://docs.aws.amazon.com/mhj/latest/userguide/task-automation.html). | 2024-12-03 |
 | Migration Hub Journeys now supports logging with AWS CloudTrail | For more information, see [Logging AWS Migration Hub Journeys API calls with AWS CloudTrail](https://docs.aws.amazon.com/mhj/latest/userguide/logging-using-cloudtrail.html). | 2024-12-03 |
 | General Availability | A new AWS Migration Hub experience offering guided journeys for accelerating end-to-end migration and modernization of your applications to AWS. | 2024-01-17 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

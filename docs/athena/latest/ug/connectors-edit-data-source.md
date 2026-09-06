@@ -70,7 +70,3 @@ When you delete a data source, it only deletes the Athena data source and does n
 1. Choose **Delete**.
 
 1. On the **Delete data source** page, type *confirm* to confirm deletion and the choose **Delete**. It may take some time before the data source deletion completes. You get a success alert once the data source is deleted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

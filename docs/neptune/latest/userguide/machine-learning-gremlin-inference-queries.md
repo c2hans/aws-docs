@@ -37,7 +37,3 @@ For Neptune ML use-cases, we have a very rich set of notebooks designed to give 
 + [Gremlin edge regression queries in Neptune ML](machine-learning-gremlin-edge-regression.md)
 + [Gremlin link prediction queries using link-prediction models in Neptune ML](machine-learning-gremlin-link-prediction-queries.md)
 + [List of exceptions for Neptune ML Gremlin inference queries](machine-learning-gremlin-exceptions.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

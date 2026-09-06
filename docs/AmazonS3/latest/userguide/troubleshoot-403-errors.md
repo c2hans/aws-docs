@@ -589,7 +589,3 @@ For more guidance on Access Denied (403 Forbidden) errors you can check the foll
 + [Why do I get a "signature mismatch" error when I try to use a presigned URL to upload an object to Amazon S3?](https://repost.aws/knowledge-center/s3-presigned-url-signature-mismatch) in the AWS re:Post Knowledge Center.
 + [Why do I get an Access Denied error for ListObjectsV2 when I run the sync command on my Amazon S3 bucket?](https://repost.aws/knowledge-center/s3-access-denied-listobjects-sync) in the AWS re:Post Knowledge Center.
 + [Why do I get a "403 access denied" error when I use an Amazon S3 website endpoint as the origin of my CloudFront distribution?](https://repost.aws/knowledge-center/s3-website-cloudfront-error-403) in the AWS re:Post Knowledge Center.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

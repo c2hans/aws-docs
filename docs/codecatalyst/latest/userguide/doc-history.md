@@ -181,7 +181,3 @@ The following table describes the documentation history and updates for the over
 | [Updated content: Quotas for projects in CodeCatalyst](projects-quotas.md) | Updated the documentation with a maximum of 100 projects in a space. | December 2, 2022 |
 | [New content](#doc-history) | Initial publication of the Amazon CodeCatalyst User Guide. | December 1, 2022 |
 | [New content: [Troubleshooting problems with extensions](troubleshooting-extensions.md)](troubleshooting-extensions.md) | Added a troubleshoot topic on possible issues users might come across when using the third-party extensions feature. | June 18, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

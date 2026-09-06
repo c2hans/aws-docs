@@ -37,7 +37,3 @@ Furthermore, we support additional search capabilities through the following par
 | trigger-description | Search on SubscriptionTopic.resourceTrigger.description | SubscriptionTopic.trigger-description=resource moving to state 'in-progress' |
 | url | Search on the url for the SubscriptionTopic | SubscriptionTopic?url=[SubscriptionTopic.url] |
 | version | Search on the version for the SubscriptionTopic | SubscriptionTopic?version=1 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

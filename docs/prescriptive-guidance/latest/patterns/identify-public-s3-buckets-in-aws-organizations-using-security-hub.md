@@ -111,7 +111,3 @@ The following workflow illustrates how you can monitor the public Amazon S3 buck
 1. If the bucket might contain sensitive data, turn off public access immediately until the review is completed. If you turn off public access, then Security Hub CSPM changes the workflow status to `RESOLVED`. Then, email notifications for the bucket stop.
 
 1. Find the user who configured the bucket as public (for example, by using AWS CloudTrail) and start a review. The review results in either removing public access to the bucket or approving public access. If public access is approved, then set the workflow status of the corresponding finding to `SUPPRESSED`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -66,7 +66,3 @@ To allocate quotas using the AWS console, follow these steps.
 1. Repeat steps 4 and 5 to configure additional instances.
 
 After allocating compute quota, you can then submit jobs through the HyperPod CLI or `kubectl`. HyperPod efficiently schedules workloads based on available quota.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

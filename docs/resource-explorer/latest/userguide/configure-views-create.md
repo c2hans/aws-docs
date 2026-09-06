@@ -141,7 +141,3 @@ $ aws resource-explorer-2 create-view \
 **Next step:** Grant the principals in your account permissions to search with your new view. For more information, see [Granting access to Resource Explorer views for search](configure-views-grant-access.md)
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

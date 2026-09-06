@@ -13,7 +13,3 @@ When you migrate vector data to Amazon OpenSearch Serverless NextGen, also revie
 
 **Important**
 Because Amazon OpenSearch Serverless NextGen vector search collections do not support model-based, query-time embedding generation, any source application that relied on the cluster to embed query text must be updated to compute embeddings client-side before cutover. Validate this behavior change against the collection during your pilot.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

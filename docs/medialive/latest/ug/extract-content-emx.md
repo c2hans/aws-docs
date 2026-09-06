@@ -20,7 +20,3 @@ Obtain identifying information from the content provider.
 - **Captions**
   - **Details:** Embedded / **Information to obtain:** Obtain the languages in the channel numbers. For example, "channel 1 is French".
   - **Details:** Object-style captions, for example, DVB-Sub / **Information to obtain:** Obtain the PIDs of the captions languages that you want.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

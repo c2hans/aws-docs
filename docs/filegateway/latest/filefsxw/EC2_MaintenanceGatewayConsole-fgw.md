@@ -23,7 +23,3 @@ The AWS Storage Gateway console helps provide a secure environment for configuri
 1. From the gateway console command prompt, enter the corresponding command for the function you want to use, and follow the instructions.
 
 To learn about a command, enter **man** \+ {{command name}} at the command prompt.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

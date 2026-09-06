@@ -150,7 +150,3 @@ The three system LEDs are positioned after the RESET button. The first LED (on t
   - **Color:** Steady blue / **Status:** The Wi-Fi connection is established.
 
 The AWS DeepRacer vehicle custom LEDs are located at the tail of the vehicle. They’re used to help identifying your vehicle in races when multiple vehicles are present. You can use the AWS DeepRacer device console to set them as a supported color of your choosing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

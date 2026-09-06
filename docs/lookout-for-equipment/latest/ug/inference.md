@@ -36,7 +36,3 @@ To schedule inference, you specify the model, the schedule, the Amazon S3 locati
 1. For **IAM role** under **Access Permissions**, specify the IAM role that provides Amazon Lookout for Equipment with access to your data in Amazon S3.
 
 1. Choose **Schedule inference**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

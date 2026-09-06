@@ -51,7 +51,3 @@ This creates the sample test suite in the `IDTSampleSuitePython_1.0.0` folder wi
 The sample test suite includes python source code. Do not include sensitive information in your test suite code.
 
 Next step: Use IDT to [run the sample test suite](run-sample.md) that you created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

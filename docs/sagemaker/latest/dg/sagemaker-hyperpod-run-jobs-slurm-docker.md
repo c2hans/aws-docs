@@ -305,7 +305,3 @@ To use the a Docker container on SageMaker HyperPod, you must mount the `/var/lo
    ```
 
 To find the downloadable code examples, see [Run a model-parallel training job using the SageMaker AI model parallelism library, Docker and Enroot with Slurm](https://github.com/aws-samples/awsome-distributed-training/tree/main/3.test_cases/17.SM-modelparallelv2#option-2----run-training-using-docker-and-enroot) in the *Awsome Distributed Training GitHub repository*. For more information about distributed training with a Slurm cluster on SageMaker HyperPod, proceed to the next topic at [Running distributed training workloads with Slurm on HyperPod](sagemaker-hyperpod-run-jobs-slurm-distributed-training-workload.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

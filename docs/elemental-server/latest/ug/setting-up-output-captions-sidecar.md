@@ -53,7 +53,3 @@ AWS Elemental Server associates this output with your audio and video output bec
 | Font style fields | If the Destination Type is Burn-in. | See [Font Styles for Burn-in](font-styles-for-burn-in.md). |
 | Language | All | Complete if desired. This information may be useful to or required by a downstream system. |
 | Description | All | Complete if desired. This information may be useful to or required by a downstream system. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

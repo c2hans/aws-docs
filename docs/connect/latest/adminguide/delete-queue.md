@@ -16,7 +16,3 @@ There are three ways to delete a queue from your Connect Customer instance:
 You cannot undo a deleted queue. To temporarily disable a queue, toggle its status to **Disabled**.
 + [DeleteQueue](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteQueue.html) API
 + [delete-queue](https://docs.aws.amazon.com/cli/latest/reference/connect/delete-queue.html) AWS CLI
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

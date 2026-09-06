@@ -88,7 +88,3 @@ Follow these best practices to maximize the benefits of GPU-acceleration for you
 + **Increase index clients** - To take full advantage of GPUs during the index build, increase the number of index clients that are ingesting data into OpenSearch. This allows for better parallelization and utilization of GPU resources.
 + **Adjust approximate threshold** - Change the `index.knn.advanced.approximate_threshold` setting to ensure that smaller segment index builds are not happening, which improves the overall speed of ingestion. A value of 10,000 is a good starting point. For collections, you must explicitly specify a value for this setting.
 + **Optimize shard size** - Try creating shards that have at least 1 million documents. Shards with fewer than this number of documents may not see overall benefits from GPU-acceleration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

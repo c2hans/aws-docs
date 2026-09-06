@@ -45,7 +45,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/user-be
 +  [AWS Cost and Usage Reports](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html) (AWS CUR) with [resource tags](https://docs.aws.amazon.com/cur/latest/userguide/resource-tags-columns.html)— You can use the resource columns in AWS CUR to find information about the specific resources covered by a line item. These columns include user-defined cost allocation tags.
 +  Tracking SaaS resource and consumption—[This presentation](https://www.slideshare.net/AmazonWebServices/gpstec309saas-monitoring-creating-a-unified-view-of-multitenant-health-featuring-new-relic) goes through the best practices for capturing and surfacing tenant level consumption patterns using an AWS partner solution.
 +  Use the [AWS Customer Carbon Footprint Tool](https://aws.amazon.com/aws-cost-management/aws-customer-carbon-footprint-tool/)to track, measure, review, and forecast the carbon emissions generated from your AWS usage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

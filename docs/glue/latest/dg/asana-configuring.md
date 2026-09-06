@@ -16,7 +16,3 @@ Before you can use AWS Glue to transfer from Asana, you must meet the following 
   + A personal access token. For more information, see the Personal access token[https://developers.asana.com/docs/personal-access-token](https://developers.asana.com/docs/personal-access-token) in the Asana Developers documentation.
 
 If you meet these requirements, you’re ready to connect AWS Glue to your Adobe Analytics account. For typical connections, you don't need do anything else in Adobe Analytics.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,7 +46,3 @@ For a hands-on experience with App2Container, see the [Modernize with AWS App2Co
 + [App2Container supported applications](https://docs.aws.amazon.com/app2container/latest/UserGuide/supported-applications.html) (AWS documentation)
 + [Modernize with AWS App2Container Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/2c1e5f50-0ebe-4c02-a957-8a71ba1e8c89/en-US) (AWS Workshop Studio)
 + [AWS App2Container FAQs](https://aws.amazon.com/app2container/faqs/) (AWS website)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

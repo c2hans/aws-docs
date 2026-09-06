@@ -18,7 +18,3 @@ If a step contains only **Optional** servers and all of them fail, the step stil
 
 **Note**
 Impact levels apply only to servers that actually started recovering and then failed. They do not apply to validation. If a server fails the validation that runs when the execution starts, the whole execution fails; if a server fails the revalidation at the start of its step, that whole step fails. Both happen even if the server is marked **Optional**, because AWS Elastic Disaster Recovery starts recovery for all of a step's servers in a single request. For more information, see [Validation that runs before a server is recovered](recovery-plans-validation.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

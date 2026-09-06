@@ -45,7 +45,3 @@ Effective health check configuration is essential for maintaining a highly avail
    + Update health check endpoints, intervals, and alarm thresholds as needed to maintain optimal monitoring and performance.
 
 By following these best practices, you can effectively leverage Route 53 health checks to monitor the health and availability of y our resources, ensuring a reliable and high-performing infrastructure for your applications and services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -123,7 +123,3 @@ You can control the time range of a dashboard by providing the following query p
 + `from` defines the lower limit of the time range, specified in ms epoch, or [relative time](#v12-dash-setting-dashboard-time-range).
 + `to` defines the upper limit of the time range, specified in ms epoch, or relative time.
 + `time` and `time.window` defines a time range from `time-time.window/2` to `time+time.window/2`. Both parameters should be specified in ms. For example `?time=1500000000000&time.window=10000` results in 10s time range from 1499999995000 to 1500000005000.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -206,7 +206,3 @@ To further explore the configuration of the sample [TensorFlow Lite image classi
 + Modify the `ImageName` and `ImageDirectory` configuration parameters in the inference component configuration to specify a custom image to use for inference.
 
 For information about customizing the configuration of public components or creating custom machine learning components, see [Customize your machine learning components](ml-customization.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

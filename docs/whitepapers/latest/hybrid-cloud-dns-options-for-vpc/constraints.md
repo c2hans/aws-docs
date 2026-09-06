@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-opti
 <a name="linux-resolver-1"></a>
 
  The default maximum number of DNS servers that you can specify in the resolv.conf configuration file of a Linux resolver is three, which means it isn’t useful to specify four DNS servers in the DHCP options set because the additional DNS server won’t be used. This limit further places an upper boundary on some of the solutions discussed in this whitepaper. It is also key to note that different operating systems can handle the assignment and failover of DNS queries differently.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

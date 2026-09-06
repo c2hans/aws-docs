@@ -40,7 +40,3 @@ Consider the following when choosing a deployment type:
 + Deployment monitoring: Blue/green deployments provide more detailed deployment status information, allowing you to monitor each stage of the deployment process.
 + Rollback: Blue/green deployments make it easier to roll back to the previous version if issues are detected, as the blue revision is kept running until the bake time expires.
 + Network Load Balancer lifecycle hooks: If you use a Network Load Balancer for blue/green deployments, there is an additional 10 minutes for the TEST\_TRAFFIC\_SHIFT and PRODUCTION\_TRAFFIC\_SHIFT lifecycle stages. This is because Amazon ECS makes sure that it is safe to shift traffic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

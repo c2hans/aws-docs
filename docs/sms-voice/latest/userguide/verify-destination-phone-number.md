@@ -57,7 +57,3 @@ For more information about installing and configuring the AWS CLI, see the [AWS 
    + Replace {{Code}} with the verification code the destination device received.
 
    Upon successful completion the status of the verified destination phone number is `VERIFIED`. You can now send messages to the verified destination phone number while you are in the sandbox.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

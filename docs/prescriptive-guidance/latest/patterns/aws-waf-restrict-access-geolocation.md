@@ -92,7 +92,3 @@ During deployment, you can optionally attach all of the following managed rule g
 + [Working with web ACLs](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-working-with.html) (AWS WAF documentation)
 + [Managing your own rule groups](https://docs.aws.amazon.com/waf/latest/developerguide/waf-user-created-rule-groups.html) (AWS WAF documentation)
 + [Rules](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rules.html) (AWS WAF documentation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

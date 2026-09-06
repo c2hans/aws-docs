@@ -26,7 +26,3 @@ Quality and experience metrics reveal clear trade-offs between human and agent c
 + **Response time** – Response time favors agents with immediate 24/7 availability. Humans provide business-hours support with potential queuing delays.
 + **Consistency** – Agents deliver identical responses to similar queries. Humans can vary in approach and knowledge application.
 + **Escalation handling** – Complex issues that require judgment, creativity, or emotional intelligence remain human strengths.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

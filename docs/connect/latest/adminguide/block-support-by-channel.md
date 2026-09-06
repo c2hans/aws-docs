@@ -10,6 +10,7 @@ The following table lists all available flow blocks, and whether they support ro
 | Block | Voice | Chat | Task | Email |
 | --- | --- | --- | --- | --- |
 |  [Connect assistant](connect-assistant-block.md) | Yes | Yes | No - Error branch | Yes |
+|  [Agentic CX](agentic-cx-block.md) | Yes | Yes | No - Error branch | No - Error branch |
 | [Authenticate Customer](authenticate-customer.md)  | No - Error branch | Yes | No - Error branch | No - Error branch |
 | [Call phone number](call-phone-number.md)  | Yes | No - Error branch | No - Error branch | No - Error branch |
 | [Cases](cases-block.md)  | Yes | Yes | Yes | Yes |
@@ -60,7 +61,3 @@ The following table lists all available flow blocks, and whether they support ro
 |  [Transfer to phone number](transfer-to-phone-number.md) | Yes | No - Error branch | No - Error branch | No - Error branch |
 |  [Transfer to queue](transfer-to-queue.md)  | Yes | Yes | Yes | Yes |
 |  [Wait](wait.md) | No - Error branch | Yes | Yes | Yes |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

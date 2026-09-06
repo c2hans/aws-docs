@@ -146,7 +146,3 @@ Each resource entry includes:
 + Action taken (or attempted)
 + Resource status (`SUCCESS`, `FAILED`, or `SKIPPED`)
 + Reason for the outcome (particularly useful for skipped or failed resources)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

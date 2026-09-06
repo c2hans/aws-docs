@@ -38,7 +38,3 @@ The resilience concepts of each stage are applied at different levels, ranging f
 The resilience lifecycle is an ongoing process. Even within the same organization, your application teams might perform at different levels of completeness within each stage, depending on the requirements of your application. However, the more complete each stage is, the higher level of resilience your application will have.
 
 You should think of the resilience lifecycle as a standard process that your organization can operationalize. AWS has intentionally modeled the resilience lifecycle to be similar to the software development lifecycle (SDLC), with the goal of incorporating planning, testing, and learning throughout the operating processes while you develop and operate your applications. As with many agile development processes, the resilience lifecycle can be repeated with every iteration of the development process.  We recommend that you deepen the practices within each stage of the lifecycle progressively over time.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

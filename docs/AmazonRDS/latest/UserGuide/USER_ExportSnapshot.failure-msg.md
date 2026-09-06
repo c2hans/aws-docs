@@ -18,7 +18,3 @@ The following table describes the messages that are returned when Amazon S3 expo
 | S3 credential check failed. Check the permissions on your S3 bucket and IAM policy. | The S3 credential check failed. |
 | The S3 bucket [bucket name] isn't valid. Either it isn't located in the current AWS Region or it doesn't exist. Review your S3 bucket name and retry the export. | The S3 bucket is invalid. |
 | The S3 bucket [bucket name] isn't located in the current AWS Region. Review your S3 bucket name and retry the export. | The S3 bucket is in the wrong AWS Region. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ Each WhatsApp Flow has a status that represents its lifecycle state. The status 
 Publishing and deprecating a Flow are irreversible operations. Once a Flow is published, you cannot revert it to DRAFT directly. However, updating a published Flow's assets (JSON definition) will revert it to DRAFT status, requiring you to re-publish.
 
 Meta sends a webhook notification each time a Flow's status changes. You receive these notifications through your configured event destination. For more information, see [Receiving Flow responses and status changes](managing-flows-webhooks.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

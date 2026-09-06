@@ -30,7 +30,3 @@ The following table compares features of the standalone tool and the IDE extensi
 | Continuous reassessment as code is modified | No | Yes |
 | Test, debug, and run code | No | Yes |
 | Deploy the application in AS runtimes, using AWS toolkit downloaded separately | No | Yes |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Porting Assistant for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query portingassistant` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

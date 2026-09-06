@@ -324,7 +324,3 @@ Webhooks complement polling—they do not replace it. Argo CD continues to poll 
 +  [Working with Argo CD](working-with-argocd.md) - Learn how to create and manage Argo CD Applications
 +  [Troubleshoot issues with Argo CD capabilities](argocd-troubleshooting.md) - Troubleshoot Argo CD issues
 +  [Working with capability resources](working-with-capabilities.md) - Manage your Argo CD capability resource
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

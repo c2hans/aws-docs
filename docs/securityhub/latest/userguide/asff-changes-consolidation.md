@@ -701,7 +701,3 @@ If your workflows don’t rely on the specific format of any fields in control f
 If your workflows rely on the specific format of one or more fields in control findings, as noted in the preceding tables, you should update your workflows. For example, If you created an Amazon EventBridge rule that triggered an action for a specific control ID, such as invoking an AWS Lambda function if the control ID equals CIS 2.7, update the rule to use CloudTrail.2, which is the value for the `Compliance.SecurityControlId` field for that control.
 
 If you created [custom insights](securityhub-custom-insights.md) that use any of the fields or values that changed, update those insights to use the new fields or values.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

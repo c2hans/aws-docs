@@ -24,7 +24,3 @@ The top pane is the **Environment overview** page. It shows top-level informatio
 The bottom half of the page displays tabs that provide more detailed information. The **Events** tab displays by default. The pages that are linked to the tabs, are also listed on the left navigation pane under the environment.
 
 The console's navigation pane shows the name of the application that's deployed to the environment, with related application management pages. The environment name is also displayed on the navigation page, followed by the environment management pages. The links listed under the environment name also include **Go to environment**, in addition to the tabbed pages previously mentioned.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -135,7 +135,3 @@ Console.WriteLine("Object replication status: {0}", getmetadataResponse.Replicat
 ------
 
 You can find the replication status of annotations by using the Amazon S3 API or Amazon S3 Metadata. The `ListObjectAnnotations` and `GetObjectAnnotation` API operations return the replication status for each annotation in the response. If you have an Amazon S3 Metadata table configuration that includes annotations, you can query the `replication_status` column in the annotation table. For more information, see [S3 Metadata annotation table schema](metadata-tables-annotation-schema.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

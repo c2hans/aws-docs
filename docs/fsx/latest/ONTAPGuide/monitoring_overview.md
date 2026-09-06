@@ -18,7 +18,3 @@ You can use the following services and tools to monitor Amazon FSx for NetApp ON
 + [Monitoring with Data Infrastructure Insights](monitoring-cloud-insights.md)
 + [Monitoring FSx for ONTAP file systems using Harvest and Grafana](monitoring-harvest-grafana.md)
 + [Monitoring FSx for ONTAP API Calls with AWS CloudTrail](logging-using-cloudtrail-win.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

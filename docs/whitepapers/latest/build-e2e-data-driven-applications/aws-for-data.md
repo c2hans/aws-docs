@@ -66,7 +66,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven
 +  **For developers and business users**, AWS provides pre-trained AI services that provide ready-made intelligence for applications and workflows, and end-to-end solutions that can solve business needs right out of the box using [AutoML](https://docs.aws.amazon.com/sagemaker/latest/dg/use-auto-ml.html) technology. These services address common use cases such as personalized recommendations, contact center intelligence, document processing, intelligent search, business metrics analysis, and more. AWS also provides industry-specific AI services for both industrial and healthcare industries.
 
 ![A diagram describing AWS ML and AI services.](http://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/ml-ai-services.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

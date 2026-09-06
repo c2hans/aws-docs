@@ -25,7 +25,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user
 |  Billing alerts can be used to monitor charges  |  Yes  |  Yes  |  Yes  |
 
  A large number of real-world use cases can benefit from implementing these scenarios. This section focuses on the education sector where multi-user, shared environments are required for setting up online classes, labs, and workshops for students. Both user and resource management are critical in these scenarios. Depending on your specific requirements, any of these scenarios can be used for setting up classrooms in the AWS Cloud. The following sections describe each of these scenarios in more detail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

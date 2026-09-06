@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Conda recipe examples for Deadline Cloud
 <a name="examples-conda-recipes"></a>
 
-The [conda\_recipes](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes) directory in the deadline-cloud-samples repository contains sample tools for creating an Amazon S3 conda channel and building packages into it. The recipes use [rattler-build](https://prefix-dev.github.io/rattler-build/) or, in some cases, the older [conda-build](https://docs.conda.io/projects/conda-build/).
+The [conda\_recipes](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes) directory on the GitHub website contains sample tools for creating an Amazon S3 conda channel and building packages into it. The recipes use [rattler-build](https://prefix-dev.github.io/rattler-build/) on the prefix.dev website or, in some cases, the older [conda-build](https://docs.conda.io/projects/conda-build/) on the conda website.
 
 Each recipe directory includes a `deadline-cloud.yaml` metadata file that lists the conda platforms the recipe builds for and configures how the recipe is submitted to Deadline Cloud. The `submit-package-job` command in the `conda_recipes` directory submits a recipe to a queue whose name starts with `Package` and uses the queue's job attachments bucket as the conda channel.
 
@@ -29,11 +29,11 @@ To submit a build for every platform listed in `deadline-cloud.yaml`:
 ./submit-package-job blender-4.5 --all-platforms
 ```
 
-The [conda\_build\_linux\_package](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/conda_build_linux_package) job bundle in the directory is the Open Job Description template that `submit-package-job` submits. It runs `conda-build` or `rattler-build` on a worker, takes a recipe directory and optional source archives as input, and writes the built package to your queue's conda channel.
+The [conda\_build\_linux\_package](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/conda_build_linux_package) job bundle on the GitHub website is the Open Job Description template that `submit-package-job` submits. It runs `conda-build` or `rattler-build` on a worker, takes a recipe directory and optional source archives as input, and writes the built package to your queue's conda channel.
 
-Source archives that recipes pull in by URL go in the [archive\_files](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/archive_files) directory. Recipes that require an installer or redistributable archive you have to download manually (such as Maya, Cinema 4D, or Nuke) read from this directory at build time.
+Source archives that recipes pull in by URL go in the [archive\_files](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/archive_files) directory on the GitHub website. Recipes that require an installer or redistributable archive you have to download manually (such as Maya, Cinema 4D, or Nuke) read from this directory at build time.
 
-The repository also includes recipes that package the Deadline Cloud client libraries themselves so that jobs can call Deadline Cloud APIs from inside a queue:
+The following recipes on the GitHub website package the Deadline Cloud client libraries themselves so that jobs can call Deadline Cloud APIs from inside a queue:
 + [deadline](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/deadline): The Deadline Cloud Python client (`deadline` CLI and `deadline.job_attachments`), packaged for Linux, Windows, Linux ARM, and macOS.
 + [openjd-adaptor-runtime](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/openjd-adaptor-runtime): The runtime that the DCC Open Job Description adaptors build on top of, packaged for Linux and Windows with Python 3.13.
 
@@ -55,7 +55,3 @@ The following sections describe the recipe families available in the samples rep
 + [Build an Infinigen conda package for Deadline Cloud](examples-conda-infinigen.md)
 + [Build an AutoDock Vina conda package for Deadline Cloud](examples-conda-autodock-vina.md)
 + [Build an AYON Launcher conda package for Deadline Cloud](examples-conda-ayon.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

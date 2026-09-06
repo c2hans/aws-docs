@@ -24,7 +24,3 @@ End of support notice: On March 31, 2027, AWS will end support for AWS Service M
    + `StackSet` (inline policy) - For Service Catalog products with stack sets, you need to modify the EndUser to include the Read Only permissions for the services you want to provision. For example, to provision an Amazon S3 bucket, include the `AmazonS3ReadOnlyAccess` policy to the `EndUser`.
    + `AmazonEC2ReadOnlyAccess` (AWS managed policy)
    + `AmazonS3ReadOnlyAccess` (AWS managed policy)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

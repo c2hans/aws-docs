@@ -50,7 +50,3 @@ Amazon Location Service enables developers to quickly integrate geospatial data 
 *...Since it was so easy to get started and implement Amazon Location Service, our application was up and running in production in 2 weeks. Our ability to develop at this speed ensured readiness for the state department of transportation review date. We’ve done the review with the state and they approved our solution, we are now rolling it out to multiple company divisions for their upcoming state regulatory needs... *
 
 *[Charles Evans, Chief Technology Officer at Command Alkon](https://aws.amazon.com/location/customers/)*
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

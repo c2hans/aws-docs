@@ -111,7 +111,3 @@ Prior to your application calling the `CompleteResourceTokenAuth` API, your appl
 When implementing OAuth 2.0 authorization URL session binding, keep the following considerations in mind:
 + Each authorization URL and its corresponding session identifier are only valid for 10 minutes.
 + To secure your application callback endpoint against CSRF attacks, we highly recommend that you generate an opaque state to include in your API call to `GetResourceOAuth2Token` . Your application should be able to parse this value to ensure it’s serving requests that were initiated by your agent application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

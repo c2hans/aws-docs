@@ -179,7 +179,3 @@ Delete an Exascale VM cluster that you no longer need. You must delete all datab
 
 **Delete an Exascale Storage Vault**
 Delete an Exascale Storage Vault that you no longer need. You must delete all Exascale VM clusters that reference the vault before you can delete it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

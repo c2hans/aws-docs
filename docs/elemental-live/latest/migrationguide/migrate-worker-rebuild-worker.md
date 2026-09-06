@@ -29,7 +29,3 @@ We strongly recommend that you don't make any voluntary changes to the configura
 This section applies if the node was connected to an SDI input using a router. After you upgrade, the node still has information about the SDI inputs and about the router, but it is missing the mapping from the inputs to the router. You must reconfigure this information. You should have [ made a note of the configuration](migrate-worker-prepare-node.md#migrate-worker-capture-router).
 
 For more information see the section about configuring routers in the [AWS Elemental Live Configuration Guide](https://docs.aws.amazon.com/elemental-live/latest/configguide/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

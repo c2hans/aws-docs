@@ -27,7 +27,3 @@ ElastiCache reserved nodes or instances (RIs) pricing does not discount ElastiCa
 For example, if you are running a cache.m5.large node on ElastiCache version 5 for Redis OSS in the US East (Ohio) Region, the on-demand price is $0.156/hr and the Extended Support premium for Year 1 is 80%. If your RI effective rate is $0.106/hr, you pay the RI-discounted rate of $0.106/hr plus the Extended Support charge of $0.1248/hr (80% of the $0.156/hr on-demand price), for a total of $0.2308/hr per node.
 
 For more information, see [Amazon ElastiCache pricing](https://aws.amazon.com/elasticache/pricing/#Extended_support).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

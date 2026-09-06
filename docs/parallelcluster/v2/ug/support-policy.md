@@ -13,7 +13,3 @@ AWS ParallelCluster uses a `major.minor.{{patch}}` version scheme. New features,
 | --- | --- |
 | 2.10.4 and earlier | 12/31/2021 |
 | 2.11.`{{x}}` | 12/31/2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

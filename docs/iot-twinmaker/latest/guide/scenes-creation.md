@@ -41,7 +41,3 @@ The scene buttons on the hierarchy pane have the following functions listed, in 
 + **Change navigation method**: Gain access to the scene camera navigation options, **Orbit** and **Pan**.
 + **Trashcan (delete)**: Use this button to delete a selected object in your scene.
 + **Object manipulation tools**: Use this button to translate, rotate, and scale the selected object.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,25 +48,41 @@ If you need to compare data residency options across multiple models for complia
 ## Supported Regions and models for application inference profiles
 <a name="inference-profiles-support-user"></a>
 
-Application inference profiles can be created for all models in the following AWS Regions:
+Application inference profiles can be created for supported models in the following AWS Regions:
++ af-south-1
++ ap-east-2
 + ap-northeast-1
 + ap-northeast-2
++ ap-northeast-3
 + ap-south-1
++ ap-south-2
 + ap-southeast-1
 + ap-southeast-2
++ ap-southeast-3
++ ap-southeast-4
++ ap-southeast-5
++ ap-southeast-6
++ ap-southeast-7
 + ca-central-1
++ ca-west-1
 + eu-central-1
++ eu-central-2
++ eu-north-1
++ eu-south-1
++ eu-south-2
 + eu-west-1
 + eu-west-2
 + eu-west-3
++ il-central-1
++ me-central-1
++ me-south-1
++ mx-central-1
 + sa-east-1
 + us-east-1
 + us-east-2
 + us-gov-east-1
++ us-gov-west-1
++ us-west-1
 + us-west-2
 
 Application inference profiles can be created from most models supported in Amazon Bedrock. Some models, such as embedding models, do not support inference profiles. To check if a specific model supports inference profiles, see [models at a glance](model-cards.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

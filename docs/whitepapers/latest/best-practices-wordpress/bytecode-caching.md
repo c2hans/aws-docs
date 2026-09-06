@@ -12,7 +12,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpr
  A bytecode cache can be installed on any Lightsail instance that hosts WordPress and can greatly reduce its load. For PHP 5.5 and later, AWS recommends the use of [OPcache](http://php.net/manual/en/book.opcache.php), a bundled extension with that PHP version.
 
  Note that OPcache is enabled by default in the Bitnami WordPress Lightsail template, so no further action is required.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

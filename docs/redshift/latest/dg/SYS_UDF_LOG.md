@@ -75,7 +75,3 @@ Select query_id, record_time, message::varchar from sys_udf_log;
 ----------+----------------------------+-------------------------------------------------------------------------------
      0   | 2023-08-23 16:10:48.833503 | WARNING: You attempted to divide by zero.\nReturning zero instead of error.\n
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

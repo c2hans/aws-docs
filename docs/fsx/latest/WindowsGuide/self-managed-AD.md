@@ -455,7 +455,3 @@ For more information about how to delegate privileges using either the **Delegat
 If you update your file system with a new service account, the new service account must have the required permissions and privileges to join your Active Directory and have **Full control** permissions for the existing computer objects associated with the file system. For more information, see [Changing the Amazon FSx service account](changing-ad-service-account.md).
 
 We recommend storing your Active Directory service account credentials in AWS Secrets Manager for enhanced security. This eliminates the need to store sensitive credentials in plaintext and aligns with security best practices. For more information, see [Using a self-managed Microsoft Active Directory](#self-managed-AD).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

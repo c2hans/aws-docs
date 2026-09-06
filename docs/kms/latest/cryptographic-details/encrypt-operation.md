@@ -18,7 +18,3 @@ The HSM runs the following:
 1. Encrypts the plaintext *ciphertext = Encrypt(K, context, plaintext)*.
 
 The ciphertext value is returned to you, and neither the plaintext data or ciphertext is retained anywhere in the AWS infrastructure. Without possession of the *ciphertext* and the encryption context, and the authorization to use the KMS key, the underlying plaintext cannot be returned.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

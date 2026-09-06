@@ -24,7 +24,3 @@ Follow these steps to install Python and to be able to invoke the AWS Glue APIs.
    For more information about Boto 3, see [AWS SDK for Python (Boto3) Getting Started](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
 
 You can find Python code examples and utilities for AWS Glue in the [AWS Glue samples repository](https://github.com/awslabs/aws-glue-samples) on the GitHub website.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -482,7 +482,3 @@ Rather than exporting logs, you can retain the original log groups and query the
 +  For more information about available Amazon MWAA environment classes and capabilities, refer to [Amazon MWAA environment class](https://docs.aws.amazon.com/mwaa/latest/userguide/environment-class.html) in the *Amazon MWAA User Guide*.
 +  For more information about how Amazon MWAA handles autoscaling workers, refer to [Amazon MWAA automatic scaling](https://docs.aws.amazon.com/mwaa/latest/userguide/mwaa-autoscaling.html) in the *Amazon MWAA User Guide*.
 +  For more information about the Amazon MWAA REST API, refer to the [Amazon MWAA REST API](https://docs.aws.amazon.com/mwaa/latest/API/Welcome.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -98,7 +98,3 @@ Follow this procedure for a UDP output.
 1. Complete the following fields:
    + **Timed Metadata Behavior**: Select **PASSTHROUGH**.
    + **Timed Metadata PIDs**: Enter the PID where you want to insert the ID3 metadata in this output. Or leave empty to use the default, which is PID 502.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

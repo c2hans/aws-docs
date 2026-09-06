@@ -34,7 +34,3 @@ Object types that are below that threshold for at least one data point are shown
 + The **Average usage by type** shows how much heap space your application requires to store all objects required in memory after a garbage collection cycle. If this value continuously grows over time until it reaches total capacity, it could indicate a memory leak. If this value is very low compared to total capacity, then you may be able to save money by reducing your system’s memory.
 + The **Average number of objects** indicates the average number of objects of this type on the heap during the time period.
 + Use the **my code** namespace (if configured) to categorize the type into one of several categories. The **my code** namespace can be configured in the **Actions** dropdown list at the top of the page. The table of object types can be filtered based on this code type.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

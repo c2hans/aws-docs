@@ -33,7 +33,3 @@ To assign authorization policies to users and groups within a domain unit, compl
 1. You can also enable or disable the cascade permissions of the selected authorization policy for the selected users. To do so, select the user(s) for which you want to enable the cascade permissions, then expand **Actions**, and then choose **Set cascade permissions to true**. The selected users will have permissions granted by this policy in all child domain units under this domain unit. Or you can choose the user(s) for which you want to disable the cascade permissions, then expand **Actions**, and set **Set cascade permissions to false**.
 
 To view examples of project membership policies in domain unit hierarchies, see [Project membership policy in the hierarchy of domain units in Amazon DataZone](https://docs.aws.amazon.com/datazone/latest/userguide/projectmembershippolicy.html) in the Amazon Amazon DataZone User Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

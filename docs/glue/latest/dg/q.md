@@ -80,7 +80,3 @@ For information about what content we use and how to opt out, see [Amazon Q Deve
 Consider the following items before you use Amazon Q data integration in AWS Glue:
 + Currently, the code generation only works with PySpark kernel. The generated code is for AWS Glue jobs based on Python Spark.
 + For information about the supported combinations of code generation abilities of Amazon Q data integration in AWS Glue, see [Supported code generation abilities](q-supported-actions.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -74,7 +74,3 @@ We recommend using AWS Certificate Manager to generate a trusted certificate for
 | [Amazon FSx for NetApp ONTAP](https://aws.amazon.com/fsx/netapp-ontap/) | Optional | Provides external shared file system. |
 | [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/) | Optional | Generates a trusted certificate for your custom domain. |
 | [AWS Backup](https://aws.amazon.com/backup/) | Optional | Offers backup capabilities for Amazon EC2 hosts, file systems, and DynamoDB. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

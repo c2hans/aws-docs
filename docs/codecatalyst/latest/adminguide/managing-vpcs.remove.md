@@ -27,7 +27,3 @@ If you belong to more than one space, choose a space in the top navigation bar.
    The page lists all VPC connections in your space. You can view the **VPC connection name** name, the **VPC ID**, and the associated **AWS account connection**.
 
 1. Choose the selector next to the VPC connection you want to manage. Choose **Remove VPC connection**. To confirm, type the VPC connection name, and then choose **Remove**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

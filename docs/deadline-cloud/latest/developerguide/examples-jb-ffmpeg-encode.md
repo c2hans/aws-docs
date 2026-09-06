@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Encode video with FFmpeg on Deadline Cloud
 <a name="examples-jb-ffmpeg-encode"></a>
 
-The [ffmpeg\_encode\_video](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/ffmpeg_encode_video) job bundle takes a directory of sequentially numbered image files and encodes them into an MP4 video using FFmpeg. The bundle is useful as a standalone utility for converting render output to video, or as a reference for adding a video encoding step to a multi-step render pipeline.
+The [ffmpeg\_encode\_video](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/ffmpeg_encode_video) job bundle on the GitHub website takes a directory of sequentially numbered image files and encodes them into an MP4 video using FFmpeg. The bundle is useful as a standalone utility for converting render output to video, or as a reference for adding a video encoding step to a multi-step render pipeline.
 
 The bundle includes the following features:
 + Encodes numbered image sequences (PNG, EXR, JPEG, and others) into H.264 MP4 video.
@@ -29,7 +29,3 @@ deadline bundle submit ffmpeg_encode_video/ \
 ```
 
 To add video encoding to an existing render job, copy the `EncodeVideo` step from this bundle's template into your own template, add a `dependencies` entry so the encode step runs after rendering, and add `conda-forge` to the `CondaChannels` parameter. For a complete multi-step pipeline example, see [Render a turntable video with Maya and Arnold on Deadline Cloud](examples-jb-turntable.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

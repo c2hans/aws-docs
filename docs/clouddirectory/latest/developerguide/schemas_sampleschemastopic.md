@@ -129,7 +129,3 @@ The following table lists the facet that is included in the *Device* sample sche
   <tr><td>device_status</td><td>String</td><td colspan="2">1024</td><td>N</td><td>Status for device (such as active, not_active, suspended, shutdown, off)</td></tr>
 </tbody>
 </table>
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

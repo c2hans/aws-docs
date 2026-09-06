@@ -40,7 +40,3 @@ Notification channels are migrated to an Alertmanager configuration with the app
 + Migrating back and forth between Grafana alerts and the classic dashboard alerting can result in data loss for features supported in one system, but not the other.
 **Note**
 If you migrate back to the classic dashboard alerting, you lose all changes made to alerting configuration made while you had Grafana alerting enabled, including any new alert rules that were created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -62,7 +62,3 @@ eksctl upgrade nodegroup --name=managed-ng-1 --cluster=managed-cluster --launch-
 + When using a custom AMI (`ami`), `overrideBootstrapCommand` must also be set to perform the bootstrapping.
 +  `overrideBootstrapCommand` can only be set when using a custom AMI.
 + When a launch template is provided, tags specified in the nodegroup config apply to the EKS Nodegroup resource only and are not propagated to EC2 instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

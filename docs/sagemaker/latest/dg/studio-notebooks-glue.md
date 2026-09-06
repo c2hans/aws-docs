@@ -16,7 +16,3 @@ Studio and Studio Classic provide a default configuration for your AWS Glue inte
   + Images: `SparkAnalytics 1.0`, `SparkAnalytics 2.0`
   + Kernel: `Glue Python [PySpark and Ray]` and `Glue Spark`
 + For Studio users, use the default [SageMaker Distribution image](https://github.com/aws/sagemaker-distribution) and select a `Glue Python [PySpark and Ray]` or a `Glue Spark` kernel.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

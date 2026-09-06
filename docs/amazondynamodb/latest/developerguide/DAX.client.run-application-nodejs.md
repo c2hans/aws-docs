@@ -115,7 +115,3 @@ For more information about these programs, see the following sections:
 + [04-query-test.js](DAX.client.run-application-nodejs.04-query-test.md)
 + [05-scan-test.js](DAX.client.run-application-nodejs.05-scan-test.md)
 + [06-delete-table.js](DAX.client.run-application-nodejs.06-delete-table.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

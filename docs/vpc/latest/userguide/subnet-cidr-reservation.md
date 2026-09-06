@@ -94,7 +94,3 @@ You can use [delete-subnet-cidr-reservation](https://docs.aws.amazon.com/cli/lat
 ```
 aws ec2 delete-subnet-cidr-reservation --subnet-cidr-reservation-id {{scr-044f977c4eEXAMPLE}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

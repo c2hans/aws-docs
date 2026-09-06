@@ -84,7 +84,3 @@ It uses the extracted data to create one set of new tables for the MPTS. If a pr
 Elemental Statmux assigns new numbers to program streams, in order to avoid conflict when two SPTS programs use the same PID for the same stream. Elemental Statmux provides fields where you can assign new numbers. But typically in a standard MPTS, you let Elemental Statmux automatically assign numbers.
 
 Elemental Statmux also generates its own NULL packets, to pad the MPTS and ensure a constant bitrate.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

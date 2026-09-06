@@ -31,7 +31,3 @@ Before you can use partner managed DNS threat protection with Palo Alto Networks
 + An AWS account with appropriate IAM permissions for DNS Firewall and AWS Marketplace.
 + A DNS Firewall rule group already created (or create one during the workflow).
 + The Advanced plan pricing option selected for your rule group (required for partner managed DNS threat protection). You can select this during DNS Firewall rule creation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

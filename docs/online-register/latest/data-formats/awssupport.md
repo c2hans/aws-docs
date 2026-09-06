@@ -31,7 +31,3 @@ AWS Support provides the following APIs for data retrieval.
 | <a name="support-ListInteractionEntries"></a>[ListInteractionEntries](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html) | Retrieve a list of entries within a specific interaction, including messages, status updates, or other relevant data points | Read |
 | <a name="support-ListInteractions"></a>[ListInteractions](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html) | Retrieve a list of interactions, potentially with filters or pagination | Read |
 | <a name="support-SearchForCases"></a>[SearchForCases](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html) | Return a list of AWS Support cases that matches the given inputs | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ AWS IoT Core publishes MQTT events when the device registry is updated. You can 
 AWS IoT Core resources are Region-specific and aren't replicated across AWS Regions unless you specifically do so.
 
 For information about Security best practices, see [Security best practices in AWS IoT Core](security-best-practices.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ If you have any questions or concerns, Support is available on the community for
 + Improved write IOPS performance when system variable `innodb_flush_log_at_trx_commit` is set to `0`.
 + Fixed an issue with replicas incorrectly being restarted when joining the writer.
 + Fixed an issue where writes to the database may stall while executing a long running transaction leading to a database restart or a major version upgrade to fail.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

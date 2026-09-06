@@ -11,7 +11,3 @@ This topic provides conceptual information about query execution plans, feature 
 + [Tuning run plans](chap-sql-server-aurora-pg.tuning.plans.md)
 + [Query hints and plan guides](chap-sql-server-aurora-pg.tuning.queryplanning.md)
 + [Managing statistics](chap-sql-server-aurora-pg.tuning.statistics.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

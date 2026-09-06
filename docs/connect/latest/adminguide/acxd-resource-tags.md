@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-resource-
 # Resource tags
 <a name="acxd-resource-tags"></a>
 
-Resource tags help you organize, search, and identify resources in an Agentic CX Designer workspace.
+Resource tags help you organize, search, and identify resources in an agentic CX designer workspace.
 
 A resource tag is a custom keyword or label that can be applied to workspace resources. Tags are useful when you want to group resources by purpose, team, environment, audience, status, or any other category that helps builders quickly find and understand them.
 
@@ -82,7 +82,3 @@ Before removing a tag from multiple resources, confirm that it is no longer need
 + Avoid creating multiple tags with similar meanings.
 + Use colors to make important categories easier to identify (e.g., "Prod" in red).
 + Use global Search to quickly find resources by tag.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ All costs displayed in Capacity Manager are estimated costs based on published O
 + **APIs** — Query capacity metrics programmatically using `GetCapacityManagerMetricData` and `GetCapacityManagerMetricDimensions`.
 + **Date selector** — Analyze capacity data across date ranges from one hour to 90 days.
 + **30\+ metrics** — Track capacity across Capacity Reservations, On-Demand Instances, and Spot Instances with over 30 metrics.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

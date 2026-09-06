@@ -127,7 +127,3 @@ The following steps describe how to create a destination by using the AWS IoT Co
 1. Select a role that has the permissions required to create network interfaces. The preceding example policy contains these permissions.
 
 When the Apache Kafka Virtual Private Cloud (VPC) destination status is **ENABLED**, it's ready to use.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

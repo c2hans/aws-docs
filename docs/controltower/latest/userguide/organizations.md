@@ -21,7 +21,3 @@ You can add additional OUs in your landing zone through the AWS Control Tower co
 <a name="ou-considerations"></a>
 
 OUs created through AWS Control Tower can have controls applied to them. OUs created outside of AWS Control Tower cannot, by default. You can, however, register such OUs. Once you have registered an OU, you can apply controls to it and its accounts. For information on registering an OU, see [Register an existing organizational unit with AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/importing-existing.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

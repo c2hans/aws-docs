@@ -53,7 +53,3 @@ The following are terms that are useful to know when you use Trusted Remediator 
 + **Resource override:** This feature uses resource tags to override a configuration for specific resources.
 + **Remediation item log:** A log file in the Trusted Remediator remediation S3 log bucket. The remediation item log is created when remediation OpsItems are created. This log file contains manual execution remediation OpsItems and automated execution remediation OpsItems. Use this log file to track all remediation items.
 + **Automated remediation execution log:** A log file in the Trusted Remediator remediation S3 log bucket. The automated remediation execution log is created when automated an SSM document run completes. This log contains SSM execution details for automated execution remediation OpsItems. Use this log file to track automated remediations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ To disable SSL, run the configure command without the `--https` flag.
 If you run this command when SSL is already disabled, nothing changes in the configuration. SSL is still disabled.
 
 1. At each configuration prompt, accept the suggestion. This way, you won't inadvertently change other aspects of the configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Statmux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-statmux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

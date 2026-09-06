@@ -64,7 +64,3 @@ After the containment plan is completed, you work with AMS Operations team for a
 As required, AMS initiates the investigation review process to identify any lessons learned. As part of completing a COE, AMS communicates any relevant findings to affected customers to help them improve their incident response process.
 
 AMS documents all final details of the investigation, collects appropriate metrics, and then reports the incident to any AMS internal teams that require information, including your assigned CSDM and CA.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

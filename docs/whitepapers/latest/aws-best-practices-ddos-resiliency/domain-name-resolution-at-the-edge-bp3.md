@@ -26,7 +26,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 +  The alias target is an AWS resource other than another Route 53 record.
 
  Create a [wildcard record](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DomainNameFormat.html#domain-name-format-asterisk), for example, `*.example.com` with a type `A` (Alias) pointing at an AWS resource such as an Amazon S3 bucket or CloudFront distribution, so that when a query for `qwerty12345.example.com` is made, the IP of the resource will be returned and you will not be charged for the query.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

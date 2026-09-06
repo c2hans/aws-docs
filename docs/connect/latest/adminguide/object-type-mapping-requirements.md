@@ -29,7 +29,3 @@ Each key can be made up of one or more fields.
 A field definition specifies how to read a value for that field name from a source object. The field definition also specifies what kind of data is stored in the field.
 
 Object type names can be any alpha numerical string or the '-' and '\_' character, they also cannot start with a '\_' character, which is used for reserved standard object types.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ Microsoft introduced ASP.NET Web Forms in 2002 as part of the original .NET Fram
 Migrating these applications to newer .NET web frameworks, such as ASP.NET MVC or Blazor, requires a complete rewrite of the code base. Given the monolithic and feature-rich nature of many legacy ASP.NET Web Forms applications, rewriting them from scratch can be an expensive and time-consuming endeavor. As a result, many organizations opt to migrate their ASP.NET Web Forms applications to the AWS Cloud, to take advantage of the scalability, reliability, and cost-effectiveness offered by AWS.
 
 This guide outlines various options for hosting, deploying, and scaling ASP.NET Web Forms applications on AWS, as well as high availability and observability options. By migrating to AWS, organizations can revitalize their legacy ASP.NET Web Forms applications. They can benefit from the robust infrastructure and scalability offered by AWS and its wide range of services and tools for modern application hosting and management.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

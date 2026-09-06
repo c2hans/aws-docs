@@ -17,7 +17,3 @@ For more information about connecting to the Gremlin endpoint, see [Accessing a 
 The Amazon Neptune implementation of Gremlin has specific details and differences that you need to consider. For more information, see [Gremlin standards compliance in Amazon Neptune](access-graph-gremlin-differences.md).
 
 For information about the Gremlin language and traversals, see [The Traversal](https://tinkerpop.apache.org/docs/current/reference/#traversal) in the Apache TinkerPop documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

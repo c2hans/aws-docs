@@ -12,7 +12,3 @@ Tags can help you identify and organize your AWS resources and manage access to 
 **Topics**
 + [View tags for an associated repository (console)](how-to-tag-associated-repository-view-console.md)
 + [View tags for a CodeGuru Reviewer associated repository (AWS CLI)](how-to-tag-associated-repository-view-cli.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

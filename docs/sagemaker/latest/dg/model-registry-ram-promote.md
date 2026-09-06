@@ -20,7 +20,3 @@ If you use customized (customer managed) permissions, you need to promote the pe
    ```
 
 If you see the `OperationNotPermittedException` error while performing the previous steps, the entity is not discoverable but is accessible. For example, if the resource owner attaches a resource policy with an assume role principal such as `“Principal”: {“AWS”: “arn:aws:iam::3333333333:role/Role-1”}`, or if the resource policy allows `“Action”: “*”` , the associated model package group is not promotable nor discoverable.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

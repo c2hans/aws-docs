@@ -177,7 +177,3 @@ The **Jobs**, **Inference optimization** page provides centralized management of
 + **Inspect details.** Choose any job to open its detail page with the **Overview**, **Settings**, and **Details** tabs.
 
 Consider re-running an optimization job after you fine-tune or update your model, when new instance types become available in your AWS Region, when your traffic patterns change significantly, or after a serving container or framework upgrade. You can also re-run jobs on a regular cadence, such as every two weeks, to pick up the latest optimizations as SageMaker AI adds them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

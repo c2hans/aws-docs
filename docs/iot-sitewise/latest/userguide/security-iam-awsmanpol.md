@@ -303,7 +303,3 @@ You can view details about updates to AWS managed policies for AWS IoT SiteWise,
 | [AWSIoTSiteWiseReadOnlyAccess](#security-iam-awsmanpol-AWSIoTSiteWiseReadOnlyAccess) – Update to an existing policy | AWS IoT SiteWise added a new policy prefix, `BatchGet*`, that enables you to do batch read operations. | September 16, 2022 |
 | [AWSIoTSiteWiseReadOnlyAccess](#security-iam-awsmanpol-AWSIoTSiteWiseReadOnlyAccess) – New policy | AWS IoT SiteWise added a new policy to grant read-only access to AWS IoT SiteWise. | November 24, 2021 |
 | AWS IoT SiteWise started tracking changes | AWS IoT SiteWise started tracking changes for its AWS managed policies. | November 24, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

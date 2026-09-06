@@ -47,7 +47,3 @@ In **ensembling mode**, Autopilot supports the following types of machine learni
 + [Linear Models](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model) – A framework that uses a linear equation to model the relationship between two variables in observed data.
 + Neural network torch – A neural network model that's implemented using [Pytorch](https://pytorch.org/).
 + Neural network fast.ai – A neural network model that's implemented using [fast.ai](https://www.fast.ai/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

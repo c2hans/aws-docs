@@ -191,7 +191,3 @@ For all of the hosted zones that are now using white-label name servers, change 
 <a name="white-label-name-servers-contact-recursive-dns-services"></a>
 
 *Optional* If you're using Amazon Route 53 geolocation routing, contact the recursive DNS services that support the edns-client-subnet extension of EDNS0, and give them the names of your white-label name servers. This ensures that these DNS services will continue to route DNS queries to the optimal Route 53 location based on the approximate geographical location that the query came from.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

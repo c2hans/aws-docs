@@ -29,7 +29,3 @@ The following table describes the documentation releases for Amazon Elastic VMwa
 | [Amazon EVS released in the Europe (Ireland) Region](https://docs.aws.amazon.com/general/latest/gr/evs.html) | Amazon EVS was released in the Europe (Ireland) Region. | June 18, 2025 |
 | [Released AmazonEVSServiceRolePolicy](https://docs.aws.amazon.com/evs/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-amazonevsservicerolepolicy) | The AWS managed policy AmazonEVSServiceRolePolicy was released. | June 9, 2025 |
 | [Initial User Guide release](https://docs.aws.amazon.com/evs/latest/userguide) | The Amazon Elastic VMware Service User Guide was released.<br />The Amazon EVS User Guide describes all Amazon EVS concepts and provides instructions on using the various features with both the console and the command line interface. | June 9, 2025 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

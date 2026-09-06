@@ -34,7 +34,3 @@ The following table describes important documentation updates in the Amazon Mana
 | [Tagging support added.](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP_tagging.html) | Amazon Managed Service for Prometheus supports tagging of Amazon Managed Service for Prometheus workspaces. | September 7, 2021 |
 | [Active series and ingestion rate quotas increased.](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP_quotas.html) | The active series quota increased to 1,000,000 and the ingestion rate quota increased to 70,000 samples per second. | February 22, 2021 |
 | [Amazon Managed Service for Prometheus preview release.](https://docs.aws.amazon.com/prometheus/latest/userguide/what-is-Amazon-Managed-Service-Prometheus.html) | The preview of Amazon Managed Service for Prometheus is released. | December 15, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Service for Prometheus. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prometheus` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

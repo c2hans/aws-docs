@@ -41,7 +41,3 @@ Generally speaking, large-scale migration programs for rehosting workloads (*lif
 + **Modernization:** [Business Value of Cloud Modernization](https://pages.awscloud.com/rs/112-TZM-766/images/known-business-value-of-cloud-%20modernization-012022.pdf) (Known, January 2022) captured the use of 22 unique KPIs to understand the value of modernization through cloud services. In this study, they surveyed over 500 enterprises that had already migrated workloads to the cloud to understand the value associated with four technical modernization strategies: containers, serverless, managed analytics, and managed data.
 
 Throughout your Cloud Operating Model journey, it's important to choose measures that can cover both the Migration and Modernization aspects so that progress is tracked, data can be compared throughout the journey, and the results of course correction can be seen.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

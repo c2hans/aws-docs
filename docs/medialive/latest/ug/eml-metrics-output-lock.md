@@ -61,7 +61,3 @@ Here are some guidelines on interpreting this metric:
 + Meaning of no datapoints: Video aligned locking is not configured, or the pipeline has not processed any video frames since the channel started.
 + Supported dimension sets: ChannelId, Pipeline
 + Recommended statistic: Minimum
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

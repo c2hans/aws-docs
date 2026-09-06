@@ -28,7 +28,3 @@ $ sudo dnf remove packagename
 In AL2023 the `yum` command is still available, but as a pointer to the `dnf` command. So, when the `yum` command is used in the shell or in a script, all commands and options are the same as the DNF CLI. For more information about the differences between the YUM CLI and the DNF CLI, see [Changes in DNF CLI compared to YUM](https://dnf.readthedocs.io/en/latest/cli_vs_yum.html)﻿.
 
 For a complete reference of commands and options for the `dnf` command, refer to the man page `man dnf`. For more information, see ﻿[DNF Command Reference](https://dnf.readthedocs.io/en/latest/command_ref.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

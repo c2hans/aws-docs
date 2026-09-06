@@ -100,7 +100,3 @@ For more information and examples on setting up CI/CD pipelines for ASP.NET Web 
 By using AWS services such as CodeBuild, CodeDeploy, and CodePipeline, you can streamline the build and deployment processes for your migrated ASP.NET Web Forms applications, and ensure consistent and reliable deployments to AWS infrastructure.
 
 For additional information about automated deployments, see the AWS blog post [Generating CI/CD Pipelines for Containerized ASP.NET Applications using AWS App2Container](https://aws.amazon.com/blogs/modernizing-with-aws/generating-ci-cd-pipelines-for-containerized-asp-net-applications-using-aws-app2container/) and the information about [building a CI/CD pipeline for legacy .NET Framework applications](https://repost.aws/questions/QUqSD-rVsFQBKYcrJGQt754w/net-4-7-application-on-ec2-windows) in AWS re:Post.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -141,7 +141,3 @@ There are two profiles defined in the example provided:
   ◦ `role_arn`: Specifies the Amazon Resource Name (ARN) of the IAM role that you want to use to perform operations requested using this profile. In this case, it's the ARN for the role you created in Step 1.
 
   ◦ `mfa_serial`: Specifies the identification or serial number of the MFA device that the user must use when assuming a role. In this case, it's the ARN of the virtual device you set up in Step 3.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

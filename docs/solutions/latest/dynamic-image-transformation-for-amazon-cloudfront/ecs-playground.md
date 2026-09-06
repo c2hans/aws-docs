@@ -29,7 +29,3 @@ The Playground is an interactive interface for trying transformations against yo
 ![Playground UI showing a transformed image with metrics overlay](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/playground-ui-example.png)
 
 The Playground routes requests through the deployed DIT instance, so results reflect production behavior. Extended metrics are returned only for authenticated Playground sessions; if metrics stop appearing, refresh your Admin UI session to obtain a current Cognito token.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

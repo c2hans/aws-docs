@@ -35,7 +35,3 @@ MediaConvert determines an output's MXF profile based on the values for the foll
 + Interlace mode
 
 For information about which values for these settings are valid for which MXF profile, see the relevant specifications. For XDCAM HD, see [RDD 9:2009 - SMPTE Standard Doc - MXF Interoperability Specification of Sony MPEG Long GOP Products](https://ieeexplore.ieee.org/document/7290306) in the IEEE Xplore Digital Library. For MXF D-10, see [ST 356:2001 - SMPTE Standard - For Television — Type D-10 Stream Specifications — MPEG-2 4:2:2P @ ML for 525/60 and 625/50](https://ieeexplore.ieee.org/document/7290684).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

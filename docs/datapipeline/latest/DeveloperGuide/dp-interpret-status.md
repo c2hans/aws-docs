@@ -63,7 +63,3 @@ The component is waiting for its worker client to retrieve a work item. The comp
 
 `WAITING_ON_DEPENDENCIES`
 The component is verifying that its default and user-configured preconditions are met before performing its work.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

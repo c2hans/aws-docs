@@ -117,7 +117,3 @@ You can view clusters launched by AWS Data Pipeline using the Amazon EMR console
 
 1. After one of the runs is complete, open the Amazon S3 console and check that the time-stamped output folder exists and contains the expected results of the cluster.
 ![S3 bucket folder list showing three timestamped folders from June 29, 2014.](http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/images/dp-emr-scenario-output.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

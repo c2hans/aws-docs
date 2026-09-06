@@ -32,7 +32,3 @@ App Studio officially supports and recommends using Google Chrome to build appli
 **For Mozilla Firefox:** To preview applications, update the following setting: `Firefox Settings > Privacy & Security > Enhanced Tracking Protection` to `Custom > Cookies > Cross-site tracking cookies`.
 
 **For Apple Safari for MacOS:** To build or preview applications, disable the following setting: `Settings > Privacy > Prevent cross-site tracking`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

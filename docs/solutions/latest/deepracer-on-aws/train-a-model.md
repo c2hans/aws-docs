@@ -15,7 +15,3 @@ Training automatically begins right after you create the model. After creating a
 +  **Error** - the model has encountered an error during training.
 
 During training, you can view the progress of how your vehicle attempts to complete the track through the video player in the Training section. After training is completed, you can submit your model for evaluation or to a virtual race.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

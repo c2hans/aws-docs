@@ -46,7 +46,3 @@ After you've given your execution role the proper permissions to send logs to Am
 + Submitter Logs - /{{logUri}}/{{virtual-cluster-id}}/jobs/{{job-id}}/containers/{{pod-name}}/(stderr.gz/stdout.gz)
 + Driver Logs - /{{logUri}}/{{virtual-cluster-id}}/jobs/{{job-id}}/containers/{{spark-application-id}}/spark-{{job-id}}-driver/(stderr.gz/stdout.gz)
 + Executor Logs - /{{logUri}}/{{virtual-cluster-id}}/jobs/{{job-id}}/containers/{{spark-application-id}}/{{executor-pod-name}}/(stderr.gz/stdout.gz)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

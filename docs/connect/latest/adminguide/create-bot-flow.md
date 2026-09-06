@@ -53,7 +53,3 @@ The **Intents** dropdown box does not list intents for Amazon Lex V1 bots, cross
 ![The Aliases tab, the Use in flow and flow modules toggle.](http://docs.aws.amazon.com/connect/latest/adminguide/images/bot-alias-enabled.png)
 
   1. Refresh the flow designer to see the selections in **Get customer input** block.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

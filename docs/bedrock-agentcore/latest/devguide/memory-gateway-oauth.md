@@ -38,7 +38,3 @@ OAuth (`CUSTOM_JWT`) inbound is compatible only with the `GATEWAY_IAM_ROLE` outb
 <a name="memory-gateway-oauth-claims"></a>
 
 Authenticating callers with OAuth is what makes identity-based authorization possible, but authentication alone does not limit what a caller can do. Any request with a valid token can still reach every actor, session, and namespace in the Memory resource. To ensure each request can only access Memory data belonging to the authenticated end user — whose identity is carried in the JWT — add access-control policies with fine-grained access control. For how to write those policies, see [Fine-grained access control for Memory](memory-gateway-fgac.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

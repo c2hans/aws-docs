@@ -70,7 +70,3 @@ You can’t change an advanced parameter to a standard parameter. If you no long
 
 **Note**
 You can't change the type of an existing parameter (for example, from `String` to `SecureString`) using the console. To change a parameter's type, you must use the AWS CLI or s with the `--overwrite` option. For more information, see [Creating a Parameter Store parameter using the AWS CLI](param-create-cli.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

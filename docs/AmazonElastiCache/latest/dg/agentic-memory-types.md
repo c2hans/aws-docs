@@ -27,7 +27,3 @@ ElastiCache for Valkey supports long-term memory through its vector similarity s
 | Episodic memory | Records of specific past interactions and events | Vector search over stored conversation embeddings |
 | Semantic memory | General knowledge and facts extracted from interactions | Vector similarity search with HNSW or FLAT indexes |
 | Procedural memory | Knowledge about how to perform tasks and use tools | Hash-based storage of tool configurations and workflows |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

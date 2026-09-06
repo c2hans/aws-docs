@@ -28,7 +28,3 @@ You can only add those users as project members who are authorized to be members
 
 **Note**
 You can add an IAM principal as a project member if that principal already has a Amazon DataZone user profile in the domain. Amazon DataZone automatically creates a user profile for an IAM principal when it successfully interacts with the domain via the portal, API, or CLI. You cannot create a user profile for an IAM principal. To add IAM principals as project members in the case where the IAM principal does not have an existing Amazon DataZone user profile in the domain, ask your administrator to add the following two IAM permissions to your domain’s **AmazonDataZoneDomainExecutionRole** in the IAM console: `iam:GetUser` and `iam:GetRole`. Separately, to perform actions in the domain, the IAM principal must have the corresponding IAM permissions to such actions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

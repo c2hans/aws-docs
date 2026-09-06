@@ -28,7 +28,3 @@ Use asynchronous writes when your application prioritizes write performance and 
 Durable clusters use the same default parameter group as non-durable clusters. This parameter group sets `maxmemory-policy` to `volatile-lru`. With this policy, Amazon ElastiCache might evict keys that have a time to live (TTL) set when memory is under pressure. This can happen even on a durable cluster.
 To prevent eviction of keys with a TTL, create a custom parameter group and set `maxmemory-policy` to `noeviction`. With `noeviction`, write commands return an error when memory is full rather than removing keys.
 Monitor `BytesUsedForCache` and `DatabaseMemoryUsagePercentage` to make sure your cluster has enough memory for your workload.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

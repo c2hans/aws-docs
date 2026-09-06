@@ -33,7 +33,3 @@ The following table lists AWS-provided components that include new and updated f
 | Moquette MQTT broker | Version 2.3.0 of the new [Moquette MQTT broker component](mqtt-broker-moquette-component.md) is available.<a name="changelog-moquette-2.3.0"></a>**New features**<br /> Adds support for certificate chains.  |
 | Secret manager | Version 2.1.4 of the new [secret manager](secret-manager-component.md) is available.<a name="changelog-secret-manager-2.3.0"></a>**Bug fixes and improvements**<br /> Fixes an issue where cached secrets were being removed when secret manager is deployed and Greengrass nucleus restarts.  |
 | Stream manager | Version 2.1.2 of the new [stream manager](stream-manager-component.md) is available.<a name="changelog-stream-manager-2.1.2"></a>**Bug fixes and improvements**<br /> Fixes an issue on Windows OS that use a non-English language.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

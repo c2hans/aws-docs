@@ -109,7 +109,3 @@ The table also provides the following information for each hyperparameter:
   <tr><td><code>action_optimization_period</code></td><td>The window of time Amazon Personalize uses when predicting the next best actions for a user. For example, the actions the user will most likely take in the next 14 days.<br />If you don’t have much action interaction data, specify a larger value. If you aren’t sure what value to specify, use the default.<br />Default value: 14<br />Range: [7, 28]<br />Value type: Integer<br />HPO tunable: No</td></tr>
 </tbody>
 </table>
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

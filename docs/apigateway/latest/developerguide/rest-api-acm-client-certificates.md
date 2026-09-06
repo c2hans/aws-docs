@@ -174,7 +174,3 @@ When you remove an ACM certificate from a stage, update a stage to use a differe
 
 Deleting the ACM certificate
 ACM does not allow you to delete a certificate while API Gateway has an active association with it. To delete the certificate from ACM, first remove it from all stages that reference it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

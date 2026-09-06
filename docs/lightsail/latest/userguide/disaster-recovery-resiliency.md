@@ -13,7 +13,3 @@ In addition to the AWS global infrastructure, Amazon Lightsail offers several fe
 + Copying instance and disk snapshots across Regions. For more information, see [Snapshots](understanding-snapshots-in-amazon-lightsail.md).
 + Automating instance and disk snapshots. For more information, see [Snapshots](understanding-snapshots-in-amazon-lightsail.md).
 + Distributing incoming traffic across multiple instances in a single Availability Zone or multiple Availability Zones using a load balancer. For more information, see [Load balancers](understanding-lightsail-load-balancers.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

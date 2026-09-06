@@ -38,7 +38,3 @@ $ aws cloudcontrol create-resource --type-name AWS::Logs::LogGroup \
 <a name="resource-operations-create-progress"></a>
 
 The `create-resource` command returns a `ProgressEvent` object that you can use to monitor the current status of your resource create request. For more information, see [Tracking the progress of resource operation requests](resource-operations-manage-requests.md#resource-operations-manage-requests-track).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Control API. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudcontrolapi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

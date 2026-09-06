@@ -167,7 +167,3 @@ If you don't already have `Boto3` installed, you can find instructions for insta
 After creating a service, you can register your application resources as service instances that contain information about how your application can locate the resource. For more information about registering AWS Cloud Map service instances, see [Registering a resource as an AWS Cloud Map service instance](registering-instances.md).
 
 You can also specify custom metadata such as endpoint weights, API timeouts, and retry policies as service attributes after creating a service. For more information, see [ServiceAttributes](https://docs.aws.amazon.com/cloud-map/latest/api/API_ServiceAttributes.html) and [`UpdateServiceAttributes`](https://docs.aws.amazon.com/cloud-map/latest/api/API_UpdateServiceAttributes.html) in the *AWS Cloud Map API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Map. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud-map` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

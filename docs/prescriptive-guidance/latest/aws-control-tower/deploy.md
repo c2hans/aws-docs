@@ -77,7 +77,3 @@ You might want to deploy AWS Control Tower in a new AWS Organizations organizati
 1. To understand the process of migrating AWS accounts between organizations, see the [Migrating accounts between AWS Organizations with consolidated billing to all features](https://aws.amazon.com/blogs/mt/migrating-accounts-between-aws-organizations-with-consolidated-billing-to-all-features/) blog post.
 
 1. Start enrolling the AWS account in AWS Control Tower. To perform the enrollment, see the section Enrolling existing AWS accounts into AWS Control Tower.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

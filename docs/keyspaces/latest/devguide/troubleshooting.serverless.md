@@ -111,7 +111,3 @@ To resolve insufficient-capacity errors during a data load, lower the write rate
 **You can't see the actual storage size of the keyspace or table.**
 
 To learn more about the storage size of your table, see [Evaluate your costs at the table level](CostOptimization_TableLevelCostAnalysis.md). You can also estimate storage size by starting to calculate the row size in a table. Detailed instructions for calculating the row size are available at [Estimate row size in Amazon Keyspaces](calculating-row-size.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

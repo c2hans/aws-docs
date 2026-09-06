@@ -29,7 +29,3 @@ The rule should have this event pattern and point to the SQS queue created in St
 **Note**
 You can use baseline CloudFormation tempates for the Connector for ServiceNow to automate the Support integration features. For more information, see [Baseline Permissions](https://docs.aws.amazon.com/en_us/smc/latest/ag/sn-base-perms.html).
 To create the required SQS queue and EventBridge rule, use Connector for ServiceNow - [AWS Support Commercial Regions](https://servicecatalogconnector.s3.amazonaws.com/SMC-AWS_Support_SQS.json), and Connector for Service Management - [AWS Support GovCloud West Region](https://servicecatalogconnector.s3.amazonaws.com/SMC-AWS_Support_SQS.json).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -255,7 +255,3 @@ For detailed information about using ACK, see the following pages on the ACK web
 +  [Troubleshoot issues with ACK capabilities](ack-troubleshooting.md) - Troubleshoot ACK issues
 +  [Working with Argo CD](working-with-argocd.md) - Deploy ACK resources with GitOps
 +  [kro concepts](kro-concepts.md) - Compose ACK resources into higher-level abstractions
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

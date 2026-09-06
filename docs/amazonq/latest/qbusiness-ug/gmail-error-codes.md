@@ -35,7 +35,3 @@ The following table provides information about error codes you may see for the G
 | GML-5205 | There was a problem while retrieving the attachment metadata because the API was not responding. | There was a problem while retrieving the attachment metadata because the API was not responding. Try again. |
 | GML-5206 | There was a problem while retrieving the message because the API was not responding. | There was a problem while retrieving the message because the API was not responding. Try again. |
 | GML-5500 | Connection timed out - API is not responding. The threshold number of API calls has been exceeded. | Timeout exception occurred due to API not responding. The threshold number of API hits has been exceeded. Try again. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

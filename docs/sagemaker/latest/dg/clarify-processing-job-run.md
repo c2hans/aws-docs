@@ -706,7 +706,3 @@ spark_clarify_processor = clarify.SageMakerClarifyProcessor(
 If you set the `save_local_shap_values` parameter of [SHAPConfig](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) to `True`, the SageMaker Clarify processing job saves the local SHAP value as multiple part files in the job output location.
 
 To associate the local SHAP values to the input dataset instances, use the `joinsource` parameter of `DataConfig`. If you add more compute instances, we recommend that you also increase the `instance_count` of [ModelConfig](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) for the ephemeral endpoint. This prevents Spark workers' concurrent inference requests from overwhelming the endpoint. Specifically, we recommend that you use a one-to-one ratio of endpoint-to-processing instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

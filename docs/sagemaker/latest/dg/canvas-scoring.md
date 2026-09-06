@@ -101,7 +101,3 @@ In the **Model accuracy insights** section, you can see the **Most frequent cate
 The following screenshot shows the **Scoring** information for a multi-category text prediction model.
 
 ![The actual versus predicted labels on the Scoring page for a single-label image prediction model.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/analyze-text-scoring.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ Document enrichment is only supported in an Amazon Q Business application enviro
 + [How Amazon Q Business document enrichment works](cde-hiw.md)
 + [Using basic operations for Amazon Q Business document enrichment](cde-basic-operations.md)
 + [Using Lambda functions for Amazon Q Business document enrichment](cde-lambda-operations.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,7 +28,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 + [EUCSEC05-BP01 Evaluate applications and data access requirements and implement entitlements accordingly](eucsec05-bp01.md)
 + [EUCSEC06-BP01 Rely on a centralized authentication system that satisfies security requirements for your EUC environment](eucsec06-bp01.md)
 + [EUCSEC06 BP02 Strengthen SAML federation to reduce security risks](eucsec06-bp02.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

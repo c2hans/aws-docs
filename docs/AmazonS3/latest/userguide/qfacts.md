@@ -17,7 +17,3 @@ The following table provides multipart upload core specifications. These include
 | Part size | 5 MiB to 5 GiB. There is no minimum size limit on the last part of your multipart upload. |
 | Maximum number of parts returned for a list parts request | 1000  |
 | Maximum number of multipart uploads returned in a list multipart uploads request | 1000  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

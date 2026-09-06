@@ -24,7 +24,3 @@ Encrypt all data in transit, including sensor and device data, administration, p
 +  [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/) Private Certificate Authority – Provision your own certificates.
 +  [Security best practices for AWS IoT SiteWise](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security-best-practices.html)
 +  [Security Pillar of AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html) and [IoT Lens](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/welcome.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

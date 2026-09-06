@@ -20,7 +20,3 @@ Major version upgrades are not supported for blue/green deployments with source 
 For information about the limitations of blue/green deployments that use physical and logical replication, see the following sections:
 + [RDS for PostgreSQL limitations for blue/green deployments with physical replication](blue-green-deployments-considerations.md#blue-green-deployments-limitations-postgres-physical)
 + [RDS for PostgreSQL limitations for blue/green deployments with logical replication](blue-green-deployments-considerations.md#blue-green-deployments-limitations-postgres-logical)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

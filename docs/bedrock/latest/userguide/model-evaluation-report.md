@@ -15,7 +15,3 @@ Use the following topics to learn how to access model evaluation reports, and ho
 + [Review metrics for an automated model evaluation job in Amazon Bedrock (console)](model-evaluation-report-programmatic.md)
 + [Review a human-based model evaluation job in Amazon Bedrock (console)](model-evaluation-report-human-customer.md)
 + [Understand how the results of your model evaluation job are saved in Amazon S3](model-evaluation-report-s3.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

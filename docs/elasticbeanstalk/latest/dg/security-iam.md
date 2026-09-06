@@ -10,7 +10,3 @@ AWS Identity and Access Management (IAM) is an AWS service that helps an adminis
 For details on working with IAM, see [Using Elastic Beanstalk with AWS Identity and Access Management](AWSHowTo.iam.md).
 
 For other Elastic Beanstalk security topics, see [AWS Elastic Beanstalk security](security.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

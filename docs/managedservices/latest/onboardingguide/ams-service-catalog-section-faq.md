@@ -72,7 +72,3 @@ AMS AMIs vended after March 2020 can be deployed through AWS Service Catalog.
 
 **How do I migrate to AMS using Service Catalog?**
 To migrate your workload to AMS using Service Catalog you begin by following the [Workload Ingest](https://docs.aws.amazon.com/managedservices/latest/appguide/ams-workload-ingest.html) (WIGs) process to create an AMI in AMS. You use the AMI produced by WIGS to create a product in Service Catalog. How to do this is detailed in [AWS Service Catalog - Getting Started](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstarted.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

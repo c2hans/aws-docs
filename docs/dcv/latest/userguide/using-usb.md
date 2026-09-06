@@ -38,7 +38,3 @@ For information on this or any additional configuration that may be required on 
 ![Removable Devices dialog with toggle slider next to Yubikey 4 OTP plus U2F device.](http://docs.aws.amazon.com/dcv/latest/userguide/images/dcv-settings-removable-devices.png)
 
 Your USB device is ready to use now.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

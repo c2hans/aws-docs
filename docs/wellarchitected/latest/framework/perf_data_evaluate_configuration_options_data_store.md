@@ -71,7 +71,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf_da
 +  [AWS Database migration samples](https://github.com/aws-samples/aws-database-migration-samples)
 +  [Database Modernization Workshop](https://github.com/aws-samples/amazon-rds-purpose-built-workshop)
 +  [Working with parameters on your Amazon RDS for Postgress DB](https://github.com/awsdocs/amazon-rds-user-guide/blob/main/doc_source/Appendix.PostgreSQL.CommonDBATasks.Parameters.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

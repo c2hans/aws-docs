@@ -79,7 +79,3 @@ There are trade-offs for each path. Automated, tool-based migration is a replica
 The pattern-based approach for “like for like” migrations can help teams move at scale, re-use common design patterns, and add in incremental resiliency and DevOps capabilities with limited change to the application.
 
 A custom migration would apply to complex, multi-tier, business critical applications (“big rocks”) requiring bespoke architecture. Based on the business case and competing priorities for time and resources, this path could still range from incremental changes to full modernization or re-write as required. This custom category includes large-scale databases and application re-writes that also might require refactoring of business workloads or business processes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

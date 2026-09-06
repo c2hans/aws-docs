@@ -30,7 +30,3 @@ Unhealthy instances can also occur when an instance terminates unexpectedly, suc
 + [View the reason for health check failures](replace-unhealthy-instance.md)
 + [Use application status checks with an Auto Scaling group](use-application-status-checks-auto-scaling-group.md)
 + [Troubleshoot unhealthy instances in Amazon EC2 Auto Scaling](ts-as-healthchecks.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

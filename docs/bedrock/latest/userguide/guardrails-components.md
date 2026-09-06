@@ -30,7 +30,3 @@ A guardrail must contain at least one filter and messaging for when prompts and 
 + [Options for handling harmful content detected by Amazon Bedrock Guardrails](guardrails-harmful-content-handling-options.md)
 + [What are Automated Reasoning checks in Amazon Bedrock Guardrails?](guardrails-automated-reasoning-checks.md)
 + [Code domain support](guardrails-code-domain.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

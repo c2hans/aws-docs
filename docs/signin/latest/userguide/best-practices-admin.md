@@ -27,7 +27,3 @@ If you’re an account administrator who has created a new AWS account using [Si
    + [Access or update the primary account contact](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact-primary.html).
 
 1. Review [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) to learn about additional identity and access management best practices.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

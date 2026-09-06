@@ -38,7 +38,3 @@ If you misconfigure your trail (for example, the S3 bucket is unreachable), Clou
 + [Validating CloudTrail log file integrity](cloudtrail-log-file-validation-intro.md)
 + [CloudTrail log file examples](cloudtrail-log-file-examples.md)
 + [Using the CloudTrail Processing Library](use-the-cloudtrail-processing-library.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

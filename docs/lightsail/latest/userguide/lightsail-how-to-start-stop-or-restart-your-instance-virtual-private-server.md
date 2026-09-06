@@ -40,7 +40,3 @@ To **Stop** your instance, it must be in a **Running** state.
   If you're viewing your instance from the instance management page, choose **Start**.
 **Note**
 To **Start** your instance, it must be in a **Stopped** state.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

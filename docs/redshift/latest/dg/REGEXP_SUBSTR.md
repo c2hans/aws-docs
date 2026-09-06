@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/REGEXP_SUBSTR.html
 # REGEXP\_SUBSTR function
 <a name="REGEXP_SUBSTR"></a>
 
-Returns characters from a string by searching it for a regular expression pattern. REGEXP\_SUBSTR is similar to the [SUBSTRING function](r_SUBSTRING.md) function, but lets you search a string for a regular expression pattern. If the function can't match the regular expression to any characters in the string, it returns an empty string. For more information about regular expressions, see [POSIX operators](pattern-matching-conditions-posix.md) and [Regular expression](https://en.wikipedia.org/wiki/Regular_expression) in Wikipedia.
+Returns characters from a string by searching it for a regular expression pattern. REGEXP\_SUBSTR is similar to the [SUBSTRING function](r_SUBSTRING.md) function, but with REGEXP\_SUBSTR, you can search a string for a regular expression pattern. If the function can't match the regular expression to any characters in the string, it returns an empty string. For more information about regular expressions, see [POSIX operators](pattern-matching-conditions-posix.md) and [Regular expression](https://en.wikipedia.org/wiki/Regular_expression) in Wikipedia.
 
 ## Syntax
 <a name="REGEXP_SUBSTR-synopsis"></a>
@@ -125,7 +125,3 @@ SELECT regexp_substr(
 ---------------
  dog
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

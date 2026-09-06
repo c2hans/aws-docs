@@ -139,7 +139,3 @@ Before performing the migration, update your local development machine to the ne
 1. Turn the new environment into your production environment by swapping its CNAME with the existing production environment's CNAME. For details, see [Blue/Green deployments with Elastic Beanstalk](using-features.CNAMESwap.md).
 
 1. When you're satisfied with the state of your new environment in production, terminate the old environment. For details, see [Terminate an Elastic Beanstalk environment](using-features.terminating.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

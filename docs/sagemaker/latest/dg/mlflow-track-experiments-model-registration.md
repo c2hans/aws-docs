@@ -399,7 +399,3 @@ You can similarly restrict `CreateModelPackage` on a Model Package Group to prev
 
 **Note**
 Resource tag-based conditions rely on tags that are applied to the SageMaker AI Model Package Group or Model Package resource (not the MLflow model). You can apply these tags through the SageMaker AI console, CLI, or SDK. Tag-based conditions may take up to 15 minutes to propagate after a tag is applied.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

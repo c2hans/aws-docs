@@ -83,7 +83,3 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsE
     "Name": "my-event-bus",
     "Policy": "{\"Version\":\"2012-10-17\",		 	 	 \"Statement\":[{\"Sid\":\"AllowAllAccountsFromOrganizationToPutEvents\",\"Effect\":\"Allow\",\"Principal\":\"*\",\"Action\":\"events:PutEvents\",\"Resource\":\"arn:aws:events:us-east-1:123456789012:event-bus/my-event-bus\",\"Condition\":{\"StringEquals\":{\"aws:PrincipalOrgID\":\"o-ki7yjtkjv5\"}}},{\"Sid\":\"AllowAccountToManageRulesTheyCreated\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789012:root\"},\"Action\":[\"events:PutRule\",\"events:PutTargets\",\"events:DeleteRule\",\"events:RemoveTargets\",\"events:DisableRule\",\"events:EnableRule\",\"events:TagResource\",\"events:UntagResource\",\"events:DescribeRule\",\"events:ListTargetsByRule\",\"events:ListTagsForResource\"],\"Resource\":\"arn:aws:events:us-east-1:123456789012:rule/my-event-bus\",\"Condition\":{\"StringEqualsIfExists\":{\"events:creatorAccount\":\"123456789012\"}}}]}"
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ The following SELECT SQL commands, clauses, and set operators are supported in A
 + [Correlated subqueries](correlated_subqueries.md)
 
 The syntax, arguments, and some examples come from the [Apache Spark SQL Reference](https://spark.apache.org/docs/latest/api/sql/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

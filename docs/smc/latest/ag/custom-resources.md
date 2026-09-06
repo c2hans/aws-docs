@@ -53,7 +53,3 @@ The ServiceNow tables and AWS Config custom resource mapping are as follows:
 1. Repeat steps above to include additional ServiceNow tables available to sync as AWS Config custom resources.
 
    The amount of time to create new AWS Config resources depends on the number of ServiceNow tables you selected. You can see resources in the **Schema version** field upon successful completion. The period synchronization of resources automatically includes the new AWS Config custom resource type. As details in the ServiceNow table update, this information syncs to AWS Config custom resource.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

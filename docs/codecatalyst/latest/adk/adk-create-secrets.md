@@ -41,7 +41,3 @@ In this example, two secrets are created: AWS access key ID and an AWS secret ac
    (Optional) For **Description**, enter a description for your secret.
 
 1. Choose **Create**. The secret can later be accessed using the reference ID (`$(Secrets.AWS_SECRET_ACCESS_KEY)`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

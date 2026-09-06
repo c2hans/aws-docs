@@ -15,7 +15,3 @@ Consult the following table for information about how to assess the source forma
 | Whether the source content is a stream or VOD asset | Find out if the source content is a live stream or a VOD asset.Make sure that MediaLive supports the delivery for the format that you identified. See the table in [Support for live and file sources](inputs-live-vs-file.md).  |
 | Whether the content is encrypted | MediaLive can ingest encrypted content only from HLS content.If the source content is HLS and it is encrypted, make sure that it is encrypted in a format that MediaLive supports. See [Handling encrypted source content in an HLS source](planning-hls-input-encrypted.md). If MediaLive doesn't support the available encryption format, find out if you can obtain the content in unencrypted form. |
 | Only if the source content is RTP, whether it includes FEC. | We recommend that the source content include FEC because it is less likely to result in an output that has visual disruptions. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

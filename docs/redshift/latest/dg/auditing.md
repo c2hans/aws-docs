@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/auditing.html
 # Monitoring and auditing data sharing in Amazon Redshift
 <a name="auditing"></a>
 
-With Amazon Redshift, you can monitor and audit data sharing activities to ensure compliance and security.
+With Amazon Redshift, you can monitor and audit data sharing activities to maintain compliance and security.
 
 By auditing data sharing, producers can track the datashare evolution. For example, auditing helps track when datashares are created, objects are added or removed, and permissions are granted or revoked to Amazon Redshift clusters, AWS accounts, or AWS Regions.
 
@@ -49,7 +49,3 @@ When you connect to a consumer database, cross -database discovery is disabled. 
  Data sharing is integrated with AWS CloudTrail. CloudTrail is a service that provides a record of actions taken by a user, a role, or an AWS service in Amazon Redshift. CloudTrail captures all API calls for data sharing as events. The calls captured include calls from the AWS CloudTrail console and code calls to the data sharing operations. For more information about Amazon Redshift integration with AWS CloudTrail, see [Logging with CloudTrail](https://docs.aws.amazon.com/redshift/latest/mgmt/logging-with-cloudtrail.html).
 
 For more information about CloudTrail, see [How CloudTrail works](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/how-cloudtrail-works.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

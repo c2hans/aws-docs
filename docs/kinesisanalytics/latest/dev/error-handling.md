@@ -46,7 +46,3 @@ The error stream has the following schema:
 | DATA\_ROWTIME | TIMESTAMP | The row time of the incoming record |
 | DATA\_ROW | VARCHAR(49152) |  The hex-encoded data in the original row. You can use standard libraries to hex decode this value, or use web resources such as this [Hex to String Converter](http://string-functions.com/hex-string.aspx).  |
 | PUMP\_NAME | VARCHAR(128) |  The originating pump, as defined with `CREATE PUMP` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -264,7 +264,3 @@ If you reuse a CodeDeploy service role as part of creating a deployment group th
 After you deploy an application revision to registered and tagged on-premises instances, you can track the deployment's progress.
 
 You track deployments to on-premises instances in a way that's similar to tracking deployments to Amazon EC2 instances. For instructions, see [View CodeDeploy deployment details](deployments-view-details.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

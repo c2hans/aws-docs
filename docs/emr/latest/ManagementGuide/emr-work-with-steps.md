@@ -24,7 +24,3 @@ For the best performance, we recommend that you store custom bootstrap actions, 
 + [Considerations for running multiple steps in parallel when you submit work to Amazon EMR](emr-concurrent-steps.md)
 + [Viewing steps after submitting work to an Amazon EMR cluster](emr-view-steps.md)
 + [Cancel steps when you submit work to an Amazon EMR cluster](emr-cancel-steps.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

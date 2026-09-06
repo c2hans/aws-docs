@@ -304,7 +304,3 @@ After you create the resource, you can update the wildcard in `SourceArn` for it
 
 **Note**
 Ensure you create separate statements when including a resource specific `EncryptionContext` on the same key policy. For more information, see the Using multiple encryption context pairs section under [ kms:EncryptionContext:*context-key*](https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-encryption-context).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

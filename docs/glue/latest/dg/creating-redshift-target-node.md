@@ -43,7 +43,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-redshift-target-
    +  **TRUNCATE** – If a table already exists, truncate the table data by first clearing the contents of the target table. If truncate is successful, then insert all data. If the table doesn't exist, create the table and insert all data. If truncate is not successful, the operation will fail.
    +  **DROP** – If a table already exists, delete the table metadata and data. If deletion is successful, then insert all data. If the table doesn't exist, create the table and insert all data. If drop is not successful, the operation will fail.
    +  **CREATE** – Create a new table with the default name. If table name already exist, create a new table with a name postfix of `job_datetime` to the name for uniqueness. This will insert all the data into the new table. If the table exists, the final table name will have the postfix appended. If the table doesn’t exist, a table will be created. In either case, a new table will be created.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -93,7 +93,3 @@ Alternatively, see [Blogs and whitepapers](studio-notebooks-emr-resources.md) fo
 **Note**
 When connecting to your Apache Livy endpoint through the public internet, we recommend that you secure communications between Studio or Studio Classic and your Amazon EMR cluster using TLS.
 For information on setting up HTTPS with Apache Livy, see [Enabling HTTPS with Apache Livy](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/enabling-https.html). For information on setting an Amazon EMR cluster with transit encryption enabled, see [Providing certificates for encrypting data in transit with Amazon EMR encryption](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-encryption-enable.html#emr-encryption-certificates). Additionally, you need to configure Studio or Studio Classic to access your certificate key as specified in [Connect to an Amazon EMR cluster over HTTPS](connect-emr-clusters.md#connect-emr-clusters-ssl).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

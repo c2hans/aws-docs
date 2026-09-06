@@ -56,7 +56,3 @@ If you want to store events for the long term, either until the specified expira
 1. Configure your SNS topic to receive Amazon RDS event notifications. For detailed instructions, see the [AWS re:Post article](https://repost.aws/knowledge-center/sns-topics-rds-notifications) on how to get your Amazon SNS topic to receive Amazon RDS notifications.
 
 1. On the Amazon RDS console, create a new event subscription. Set **Target** to the ARN, and then select the SNS topic you previously created. Set **Source type** and **Event categories to include** according to your requirements. For more information, see [Subscribing to Amazon RDS event notification](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.Subscribing.html) in the Amazon RDS documentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

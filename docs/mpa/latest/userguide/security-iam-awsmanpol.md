@@ -45,7 +45,3 @@ View details about updates to AWS managed policies for Multi-party approval sinc
 | [MultiPartyApprovalFullAccess](#security-iam-awsmanpol-MultiPartyApprovalFullAccess) – updated to include `kms:Decrypt` permission which decrypts identity data | Added the `kms:Decrypt` permission to the `MultiPartyApprovalFullAccess` managed policy for AWS IAM Identity Center to support customer managed keys, which allows you to use your own AWS KMS keys to encrypt your identity data. | September 8, 2025 |
 | [MultiPartyApprovalReadOnlyAccess](#security-iam-awsmanpol-MultiPartyApprovalReadOnlyAccess) – updated to include `kms:Decrypt` permission which decrypts identity data | Added the `kms:Decrypt` permission to the `MultiPartyApprovalReadOnlyAccess` managed policy for AWS IAM Identity Center to support customer managed keys, which allows you to use your own AWS KMS keys to encrypt your identity data. | September 8, 2025 |
 | Multi-party approval started tracking changes | Multi-party approval started tracking changes for its AWS managed policies. | June 17, 2025 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Multi-party approval. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mpa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

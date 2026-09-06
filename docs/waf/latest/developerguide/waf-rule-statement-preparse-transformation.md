@@ -34,7 +34,3 @@ AWS WAF merges all values for duplicate query parameter keys into a single comma
 
 Replace semicolons with ampersands – `REPLACE_SEMICOLONS_WITH_AMPERSANDS`
 AWS WAF replaces all semicolons (0x3B) in the raw query string with ampersands (0x26) before parsing. Some web frameworks and services, including AWS API Gateway REST APIs, treat semicolons as query parameter delimiters equivalent to ampersands. This transformation normalizes the query string. AWS WAF then splits on semicolons the same way your backend does, ensuring consistent parameter parsing.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

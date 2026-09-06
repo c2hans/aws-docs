@@ -22,7 +22,3 @@ Keep in mind the following best practices when using the AWS Panorama appliance.
 + **Limit access to AWS Panorama and other AWS services** – The [AWSPanoramaFullAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/) provides access to all AWS Panorama API operations and, as necessary, access to other services. Where possible, the policy limits access to resources based on naming conventions. For example, it provides access to AWS Secrets Manager secrets that have names starting with `panorama`. For users that need read-only access, or access to a more specific set of resources, use the managed policy as a starting point for your least-privilege policies.
 
   For more information, see [Identity-based IAM policies for AWS Panorama](permissions-user.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,7 +41,3 @@ For services such as Amazon EC2 that support a free tier, AWS applies the free t
 AWS provides budgets that track whether you exceed the free tier limits or are forecasted to go over the free tier limits. Free tier budgets are not enabled for organizations by default. Management account can opt in to free tier usage alerts through the Billing and Cost Management console. Free tier usage alerts aren't available to individual member accounts.
 
 For more information about free tiers, see [AWS Free Tier FAQs](https://aws.amazon.com/free/faqs/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

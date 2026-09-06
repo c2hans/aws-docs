@@ -59,7 +59,3 @@ The following table describes the documentation release history of AWS Certifica
 | New content | Added documentation about [Imported certificates](import-certificate.md). | October 13, 2016 |
 | New content | Added AWS CloudTrail support for ACM actions. See [Using CloudTrail with AWS Certificate Manager](cloudtrail.md). | March 25, 2016 |
 | New guide | This release introduces AWS Certificate Manager. | January 21, 2016 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

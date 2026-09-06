@@ -22,7 +22,3 @@ An Organizations administrator may have created and provided you with a Private 
    1. If **Product procurement requests** shows **Enabled** status, you can request your administrator to approve additional products for procurement. If it is **Disabled**, you will not be able to create product procurement requests.
 
 1. If your administrator has not configured a Private Marketplace experience for you, you will see "You're not being governed by a Private Marketplace experience". You can browse and procure any product in AWS Marketplace.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

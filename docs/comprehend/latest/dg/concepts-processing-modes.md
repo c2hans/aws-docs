@@ -153,7 +153,3 @@ To analyze a collection of documents, you typically perform the following steps:
 1. Retrieve the results of the analysis from an S3 bucket when the job is complete.
 
 For more information about using the asynchronous API operations, see [Running analysis jobs using the console](analysis-jobs.md) (console) and [Async analysis jobs using the API](api-async.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

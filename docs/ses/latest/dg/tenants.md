@@ -531,7 +531,3 @@ When using tenant management, be aware of these limitations:
 There's an additional charge per tenant per month based on the number of emails. For detailed pricing information, see the [SES pricing page](https://aws.amazon.com/ses/pricing/).
 
 When using CloudWatch with tenant metrics, the standard CloudWatch metrics for each tenant are provided at no additional cost as part of the basic monitoring. Additional CloudWatch features like custom dashboards, alarms, or detailed monitoring may incur standard CloudWatch charges.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

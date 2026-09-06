@@ -29,7 +29,3 @@ If you belong to more than one space, choose a space in the top navigation bar.
 1. Choose the VPC connection name that you want to manage, and then choose **Edit**.
 
 1. Edit your VPC connection as needed, and then choose **Update VPC connection**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

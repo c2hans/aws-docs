@@ -18,7 +18,3 @@ Whenever you upgrade a canary to use a new version of the the Synthetics runtime
 + [Library functions available for Node.js canary scripts using Playwright](CloudWatch_Synthetics_Canaries_Nodejs_Playwright.md)
 + [Library functions available for Node.js canary scripts using Puppeteer](CloudWatch_Synthetics_Canaries_Library_Nodejs.md)
 + [Library functions available for Python canary scripts using Selenium](CloudWatch_Synthetics_Canaries_Library_Python.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ Amazon EventBridge provides the following APIs for data retrieval.
 | <a name="events-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_ListTagsForResource.html) | Retrieve a list of tags associated with an Amazon EventBridge resource | List |
 | <a name="events-ListTargetsByRule"></a>[ListTargetsByRule](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_ListTargetsByRule.html) | Retrieve a list of targets defined for a rule | List |
 | <a name="events-TestEventPattern"></a>[TestEventPattern](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_TestEventPattern.html) | Test whether an event pattern matches the provided event | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

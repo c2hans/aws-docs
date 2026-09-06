@@ -93,7 +93,3 @@ If you use the bot token as part of your Slack credentials, you cannot index dir
 ![Screenshot showing the URL of the Slack workspace management page with the team ID highlighted, which is needed for connecting to Amazon Q Business.](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/images/slack-12.png)
 
 You now have the Slack Team ID and Slack token you need to connect to Amazon Q.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

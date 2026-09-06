@@ -87,7 +87,3 @@ The object contains more than one category of sensitive data—any combination o
 The object contains sensitive personal information—personally identifiable information (PII) such as passport numbers or driver's license identification numbers, personal health information (PHI) such as health insurance or medical identification numbers, or a combination of PII and PHI.
 
 For information about the types of sensitive data that Macie can detect using built-in criteria and techniques, see [Using managed data identifiers](managed-data-identifiers.md). For information about the types of S3 objects that Macie can analyze, see [Supported storage classes and formats](discovery-supported-storage.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

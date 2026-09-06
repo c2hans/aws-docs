@@ -58,7 +58,3 @@ The default NFS file share configuration provides full file control and access p
 |  **Access to your S3 bucket**  | Create a new IAM role  |  The default option allows the File Gateway to create a new IAM role and access  policy on your behalf. All NFS clients are allowed access. For information about supported  NFS clients, see [Supported NFS and SMB clients for File Gateway](Requirements.md#requirements-s3-fgw-clients).   |
 | **Mount options** |  +  Squash level – Root squash <br />+  Export as – Read-write   | The default value of **Squash level** means that  access for the remote  superuser (root) is mapped to User Identifier (UID) (65534) and Group Identifier (GID) (65534). |
 | **File metadata defaults** |  +  Directory permissions – 0777 <br />+  File permissions – 0666 <br />+  User Identifier (UID) – 65534 <br />+  Group Identifier (GID) – 65534   |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

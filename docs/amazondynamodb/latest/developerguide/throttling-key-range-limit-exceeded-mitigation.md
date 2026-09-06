@@ -135,7 +135,3 @@ The following blog posts provide hands-on examples and practical details for the
 + For hands-on guidance about scaling DynamoDB and managing hot partitions, see [ Part 1: Scaling DynamoDB - How partitions, hot keys, and split for heat impact performance](https://aws.amazon.com/blogs/database/part-1-scaling-dynamodb-how-partitions-hot-keys-and-split-for-heat-impact-performance/).
 + For detailed information about how DynamoDB's split-for-heat mechanism works, its benefits, and implementation details, see [ Part 3: Summary and best practices](https://aws.amazon.com/blogs/database/part-3-scaling-dynamodb-how-partitions-hot-keys-and-split-for-heat-impact-performance/).
 + For detailed write sharding strategies, see [Using write sharding to distribute workloads evenly in your DynamoDB table](bp-partition-key-sharding.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

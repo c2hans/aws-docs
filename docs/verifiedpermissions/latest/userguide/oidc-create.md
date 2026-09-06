@@ -94,7 +94,3 @@ You can an create an identity source by using the [CreateIdentitySource](https:/
 Now that you've created an identity source, updated the schema, and created policies, use `IsAuthorizedWithToken` to have Verified Permissions make authorization decisions. For more information, see [IsAuthorizedWithToken](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_IsAuthorizedWithToken.html) in the *Amazon Verified Permissions API reference guide*.
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

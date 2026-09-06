@@ -41,7 +41,3 @@ You are charged additional fees when you use this managed rule group. For more i
 **Topics**
 + [Resource-level DDoS protection for Application Load Balancers](waf-anti-ddos-alb.md)
 + [Advanced Anti-DDoS protection using the AWS WAF Anti-DDoS managed rule group](waf-anti-ddos-advanced.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

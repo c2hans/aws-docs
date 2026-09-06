@@ -15,7 +15,3 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/b
 + **Requests:** Redirects to AMMP. Displays a list of change requests made on products (AMI, Container, SaaS and Professional Services), offers, and other AWS Marketplace entities from AWS Marketplace Management Portal, or from AWS Marketplace Catalog API.
 + **File upload:** Redirects to AMMP. Upload product load forms (PLFs) to request a new product or updates to an existing product in AWS Marketplace.
 + **Device listings:** Redirects to the legacy Partner Central experience. Relevant for partners on the Hardware Path.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ If you have any questions or concerns, Support is available on the community for
 + Fixed an issue which can cause database cluster creates or restores to take a long time to complete.
 + Reduced CPU usage overhead while establishing Encryption in Transit between the database instance and the storage layer.
 + Fixed an issue which can cause some SQL statements to not get logged in the audit log.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

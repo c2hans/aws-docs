@@ -44,7 +44,3 @@ For a consistent read, R2 returns `color = garnet`. For an eventually consistent
 In the last example, Client 2 submits W2 before Amazon SimpleDB completes W1, so the outcome of the final value is unknown (`color = garnet` or `color = brick`). Any subsequent reads (consistent read or eventually consistent) might return either value. Also, depending on the amount of time that has elapsed, an eventually consistent read might return no results.
 
 ![Diagram showing two clients, two write operations W1 and W2, and two read operations R1 and R2 on a timeline.](http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/images/consistency3.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

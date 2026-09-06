@@ -16,7 +16,3 @@ The following table describes the documentation for this release of AWS Elementa
 | SPEKE Version 2.0 is now available for VOD | MediaPackage now supports SPEKE Version 2.0 with CMAF and DASH VOD workflows. | October 10, 2022 |
 | Add constant initialization vector (IV) | Added constant IV to a packaging configuration for HLS encryption. | August 21, 2019 |
 | New MediaPackage VOD release | Initial documentation for MediaPackage VOD. | May 17, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage VOD. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage-vod` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,7 +11,3 @@ If the generated log file exceeds a size limit of 100 MB, this rotation happens 
 
 **Note**
 If a container task receives a termination signal from ECS, for reasons such as scale-in or Spot interruptions, then the solution automatically compresses and transfers the current active log files to their respective archived folders to ensure no discontinuity or loss of log data. The transferred logs will be picked up along with any other log files in the `archived` directory when the DataSync task runs.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying a Prebid Server on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

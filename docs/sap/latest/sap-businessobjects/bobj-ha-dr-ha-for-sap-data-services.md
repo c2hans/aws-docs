@@ -18,7 +18,3 @@ The HA architecture of SAP Data Services is very similar to the HA architecture 
 1. Create an SAP Data Services central repository in the database created in step 1 by following the steps in the section *Repository management* in the [SAP Data Services administrator guide](https://help.sap.com/viewer/p/SAP_DATA_SERVICES).
 
 1. Configure HA for SAP Data Services batch jobs by following the instructions in [SAP Note 1938068](https://me.sap.com/notes/1938068).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

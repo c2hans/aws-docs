@@ -32,7 +32,7 @@ To prepare the source and target accounts for cross-account snapshot copying, yo
 
 In the source account, create an EBS snapshot policy that will create the snapshots and share them with the required target accounts.
 
-When you create the policy, ensure that you enable cross-account sharing and that you specify the target AWS accounts with which to share the snapshots. These are the accounts with which the snapshots are to be shared. If you are sharing encrypted snapshots, then you must give the selected target accounts permission to use the KMS key used to encrypt the source volume. For more information, see [Step 2: Share the customer managed key (*Source account*)](#share-cmk).
+When you create the policy, make sure that you enable cross-account sharing and that you specify the target AWS accounts with which to share the snapshots. These are the accounts with which the snapshots are to be shared. If you are sharing encrypted snapshots, then you must give the selected target accounts permission to use the KMS key used to encrypt the source volume. For more information, see [Step 2: Share the customer managed key (*Source account*)](#share-cmk).
 
 **Note**
 Create this policy in the same AWS Region where you will create the target account's cross-account copy event policy in Step 3. Both policies must be in the same Region for cross-account snapshot sharing to work properly.
@@ -84,7 +84,7 @@ $ aws kms get-key-policy \
 
 Open the key policy using your preferred text editor. Add the ARN of the IAM role that you specified when you created the snapshot policy and the ARNs of the target accounts with which to share the KMS key.
 
-For example, in the following policy, we added the ARN of the default IAM role, and the ARN of the root account for target account `222222222222.`
+For example, in the following policy, the ARN of the default IAM role is specified, along with the ARN of the root account for target account `222222222222.`
 
 **Tip**
 To follow the principle of least privilege, do not allow full access to `kms:CreateGrant`. Instead, use the `kms:GrantIsForAWSResource` condition key to allow the user to create grants on the KMS key only when the grant is created on the user's behalf by an AWS service, as shown in the following example.
@@ -429,7 +429,3 @@ The following considerations apply to cross-account copy event policies:
 <a name="event-additional-resources"></a>
 
 For more information, see the [ Automating copying encrypted Amazon EBS snapshots across AWS accounts](https://aws.amazon.com/blogs/storage/automating-copying-encrypted-amazon-ebs-snapshots-across-aws-accounts/) AWS storage blog.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

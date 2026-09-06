@@ -94,7 +94,3 @@ If you have KMS keys in [custom key stores](key-store-overview.md#custom-key-sto
 
 **Multi-Region keys**
 If you have [multi-Region keys](multi-region-keys-overview.md), consider adding the **Regionality** column. This shows whether a KMS key is a single-Region key, a [multi-Region primary key](multi-region-keys-overview.md#mrk-primary-key) or a [multi-Region replica key](multi-region-keys-overview.md#mrk-replica-key).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

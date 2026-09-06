@@ -16,11 +16,8 @@ This content is intended for chief technology officers (CTOs), architects, devel
 + [Single Instance or Multiple Instances?](single-instance-multiple-instances.md)
 + [Operational Excellence](operational-excellence.md)
 + [Security for contact centers](security-bp.md)
++ [Fraud prevention](fraud-prevention.md)
 + [Load and penetration / security testing](load-and-penetration-testing.md)
 + [Reliability in Connect Customer](reliability-bp.md)
 + [Performance efficiency for Amazon Connect workloads](performance-efficiency-bp.md)
 + [Cost optimization for Connect Customer workloads](cost-optimization-bp.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

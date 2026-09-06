@@ -269,7 +269,3 @@ The following table describes the important changes in each release of the *Amaz
 | Added best practices | Added [Amazon Redshift best practices for designing tables](c_designing-tables-best-practices.md) and [Amazon Redshift best practices for loading data](c_loading-data-best-practices.md). | February 14, 2013 |
 | Clarified password constraints | Clarified password constraints for CREATE USER and ALTER USER, various minor revisions. | February 14, 2013 |
 | New guide | This is the first release of the Amazon Redshift Developer Guide.  | February 14, 2013 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

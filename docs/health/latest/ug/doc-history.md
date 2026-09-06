@@ -74,7 +74,3 @@ The following table describes important updates to the AWS Health documentation,
 | Added new section "Resource- and Action-based Conditions" to explain Events restrictions vended by the AWS Health API. | See [Identity and access management for AWS Health](security-iam.md). | August 2, 2018 |
 | Added a note about the visibility of AWS Health information. | See [Identity and access management for AWS Health](security-iam.md). | August 16, 2017 |
 | Service release. | AWS Health released. | December 1, 2016 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

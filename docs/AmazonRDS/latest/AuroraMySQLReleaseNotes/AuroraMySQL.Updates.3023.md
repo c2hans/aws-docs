@@ -34,7 +34,3 @@ For troubleshooting information, see [ Troubleshooting upgrade issues with Auror
 + Fixed an issue which, in certain situations, can cause Aurora MySQL reader instances to restart when attempting to read a page which is no longer accessible during a range estimation.
 + Fixed an issue where database instances using binary log replication may experience an increase in CPU utilization and connection failures when multiple binary log replication consumers are attached.
 + Fixed an issue which can cause an Aurora MySQL reader instance to restart while executing a query which utilizes an Aurora parallel query execution plan.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

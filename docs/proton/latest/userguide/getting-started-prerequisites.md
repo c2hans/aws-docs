@@ -14,7 +14,3 @@ Before you start using AWS Proton, make sure that the following prerequisites ar
 + You're familiar with creating CloudFormation templates and Jinja parameterization. For more information, see [What is CloudFormation?](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)* in the CloudFormation User Guide * and [Jinja website](https://palletsprojects.com/projects/jinja).
 + You have working knowledge of AWS infrastructure services.
 + You're logged into your AWS account.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

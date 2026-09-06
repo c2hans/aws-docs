@@ -23,7 +23,3 @@ When you create a peer node, you select the following characteristics:
 + **Logging configuration**
 
   You can enable peer node logs, chaincode logs, or both for a member. Peer node logs allow you to debug timeout errors associated with proposals and identify rejected proposals. Chaincode logs help you analyze and debug business logic. For more information, see [Monitoring AMB Access Hyperledger Fabric Using CloudWatch Logs](monitoring-cloudwatch-logs.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

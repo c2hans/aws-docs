@@ -113,7 +113,3 @@ Perform the following steps:
    1. Write the results of the S3 Batch Operations job to the reporting bucket.
 
 For a code example that demonstrates how to create an IAM role for enabling S3 Object Lock using S3 Batch Operations with the AWS SDK for Java, see [CreateObjectLockRole.java](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/javav2/example_code/s3/src/main/java/com/example/s3/batch/CreateObjectLockRole.java) in the *AWS SDK for Java 2.x Code Examples*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

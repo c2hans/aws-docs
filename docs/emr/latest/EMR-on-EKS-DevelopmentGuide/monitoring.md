@@ -82,7 +82,3 @@ You cannot write a program that depends on the order or existence of notificatio
 <a name="monitor-jobs-with-retry-policies"></a>
 
 Using CloudWatch events, you can monitor driver pods that have been created in jobs that have retry policies. For more information, see [Monitoring a job with a retry policy](jobruns-using-retry-policies.md#monitoring-retry) in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

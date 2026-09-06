@@ -68,7 +68,3 @@ View details about updates to AWS managed policies for Timestream for InfluxDB s
 | [AmazonTimestreamInfluxDBFullAccess](#iam.identitybasedpolicies.predefinedpolicies-fullaccess) – Update to an existing policy | Added the `ec2:DescribeRouteTables` action to the existing `AmazonTimestreamInfluxDBFullAccess` managed policy. This action is used for describing your route tables | 10/08/2024 |
 | [AWS managed policy: AmazonTimestreamInfluxDBServiceRolePolicy](#security-iam-awsmanpol-timestreamforinfluxdbServiceRolePolicy) – New policy | Amazon Timestream for InfluxDB added a new policy that allows the service to manage network interfaces and security groups in your account. | 03/14/2024 |
 | [AmazonTimestreamInfluxDBFullAccess](#iam.identitybasedpolicies.predefinedpolicies-fullaccess) – New policy | Amazon Timestream for InfluxDB added a new policy to provide full administrative access to create, update, delete and list Amazon Timestream InfluxDB instances and create and list parameter groups. | 03/14/2024 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

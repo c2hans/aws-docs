@@ -26,7 +26,3 @@ You can sign in to a project while you are already signed in to another identity
 1. If you've signed in to multiple projects, choose the project you want to access. You can always switch projects later. For more information, see [Switch between projects](https://docs.aws.amazon.com/accounts/latest/reference/switch-projects.html).
 
 After authentication the AWS Management Console opens to the Console Home page. You can choose **Manage projects** to access AWS Settings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

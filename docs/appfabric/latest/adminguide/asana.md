@@ -71,7 +71,3 @@ You must have a service account token from an Asana service account to enter int
 1. Copy and save the token from the bottom of the **Add service account** page the first time you view the **Add service account** page.
 
 1. If you close the **Add service account** page before saving the token, you must edit your service account, generate a new token, and save it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,7 +59,3 @@ Create a transit gateway Connect peer association using the Network Manager cons
 You can view and create Connect peer associations using the following commands.
 + To associate a Connect peer with a device: [associate-transit-gateway-connect-peer](https://docs.aws.amazon.com/cli/latest/reference/networkmanager/associate-transit-gateway-connect-peer.html)
 + To view your Connect peer associations: [get-transit-gateway-connect-peer-associations](https://docs.aws.amazon.com/cli/latest/reference/networkmanager/get-transit-gateway-connect-peer-associations.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

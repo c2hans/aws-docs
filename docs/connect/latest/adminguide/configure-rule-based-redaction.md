@@ -141,7 +141,3 @@ For information about creating and invoking flow modules, see [Create reusable f
 To change the redaction rules, mode, or behavior for a flow, edit the **Set recording, analytics, and processing behavior** block in the flow and save the flow. To stop applying redaction in the flow, clear **Enable redaction** in the **Redaction configuration** panel.
 
 Changes take effect for contacts that start running through the flow after you save it. Contacts that are already in progress continue to use the configuration that was in effect when they started.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

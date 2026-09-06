@@ -50,7 +50,3 @@ The Slurm nodes that correspond to compute resources, are associated with , and 
 AWS ParallelCluster automatically updates Slurm reservations and puts the related CB nodes in maintenance state (corresponding to the CB state). When the CB is active, the Slurm reservation is removed, and the nodes start and become available for pending jobs or for new job submissions.
 
 When the CB end time is reached, the nodes will be moved back to a reservation/maintenance state. It's up to users to resubmit/requeue the jobs to a new queue/compute-resource when the CB is no longer active and the instances are terminated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

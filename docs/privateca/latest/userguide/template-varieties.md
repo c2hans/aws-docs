@@ -107,7 +107,3 @@ For information about template ARNs in GovCloud regions, see [AWS Private Certif
 | [BlankSubordinateCACertificate\_PathLen2\_APICSRPassthrough/V1](template-definitions.md#BlankSubordinateCACertificate_PathLen2_APICSRPassthrough) | `arn:aws:acm-pca:::template/BlankSubordinateCACertificate_PathLen2_APICSRPassthrough/V1` | CA |
 | [SubordinateCACertificate\_PathLen3\_APICSRPassthrough/V1](template-definitions.md#SubordinateCACertificate_PathLen3_APICSRPassthrough) | `arn:aws:acm-pca:::template/SubordinateCACertificate_PathLen3_APICSRPassthrough/V1` | CA |
 | [BlankSubordinateCACertificate\_PathLen3\_APICSRPassthrough/V1](template-definitions.md#BlankSubordinateCACertificate_PathLen3_APICSRPassthrough) | `arn:aws:acm-pca:::template/BlankSubordinateCACertificate_PathLen3_APICSRPassthrough/V1` | CA |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

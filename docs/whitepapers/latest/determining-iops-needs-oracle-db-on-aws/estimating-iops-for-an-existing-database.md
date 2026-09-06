@@ -83,7 +83,3 @@ SELECT MAX(total_io) PeakIOPS FROM peak_iops_measurement;
 ```
 
  To prepare for any unforeseen performance spikes, we recommend that you add an additional 10 percent to this peak IOPS number to account for the actual IOPS that your database needs. This actual IOPS is the total number of IOPS you should provision for your Amazon EBS volume (`gp2` or `io1`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ I want to find information about SageMaker AI Chainer containers.
 For more information, see the [SageMaker AI Chainer Container GitHub repository](https://github.com/aws/sagemaker-chainer-container).
 
  For information about supported Chainer versions, and for general information about writing Chainer training scripts and using Chainer estimators and models with SageMaker AI, see [Using Chainer with the SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/using_chainer.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

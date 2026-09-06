@@ -114,7 +114,3 @@ Macie can detect International Bank Account Numbers (IBANs) that consist of up t
 **Keyword required:** No
 
 **Comments:** The managed data identifiers for France, Germany, Italy, Spain, and the UK can also detect Basic Bank Account Numbers (BBANs) that conform to the BBAN structure defined by the ISO 13616 standard, if the character sequence is in proximity of a keyword. For more information, see [Basic Bank Account Number (BBAN)](#mdis-reference-BBAN).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

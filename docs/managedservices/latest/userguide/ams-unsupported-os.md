@@ -19,7 +19,3 @@ The following limited set of AMS capabilities are available to instances with un
 | Monitoring | AMS monitors and responds to Amazon EC2 system status checks and instance status checks. System status checks include: loss of network connectivity, loss of system power, software issues on the physical host, and hardware issues on the physical host that impact network reachability.<br />Instance status checks include: incorrect networking or startup configuration, exhausted memory, corrupted file system, and incompatible kernel. |
 | Security management | AMS monitors and responds to Amazon EC2 [GuardDuty findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html). |
 | Backup management | AMS provides [Continuity management in AMS Advanced](https://docs.aws.amazon.com/managedservices/latest/userguide/continuity-mgmt.html) for EC2 using AMS-customized AWS Backup plans and vaults. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

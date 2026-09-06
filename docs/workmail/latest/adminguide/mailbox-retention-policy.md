@@ -28,7 +28,3 @@ You can set mailbox retention policies for your Amazon WorkMail organization. Re
 Allow 48 hours to apply the retention policies for your organization. If you choose the **Delete** folder action, users can recover deleted email messages from the Amazon WorkMail web application and supported clients. If you choose the **Permanently delete** folder action, email messages can't be recovered after they are deleted.
 
 The number of days a retention policy keeps an item is based on when it was created, modified, or moved. For example, if a retention policy deletes items after a year, the policy counts retention days from the date you created or last took action on that item. It is not affected by the date you implemented the retention policy.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

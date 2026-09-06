@@ -24,7 +24,3 @@ You are charged for the amount of time that your model runs. Stop your model if 
 ![Model status showing as Running, with Stop button to stop the running model.](http://docs.aws.amazon.com/rekognition/latest/customlabels-dg/images/get-started-start-model-running.jpg)
 
 1. Use your model to classify images. For more information, see [Step 4: Analyze an image with your model](gs-step-get-a-prediction.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

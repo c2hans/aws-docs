@@ -166,7 +166,3 @@ print('Status: ' + description['status'])
 The job is complete when the status is COMPLETED. Check the status by using the [DescribeDataDeletionJob](API_DescribeDataDeletionJob.md) operation and specify the data deletion job ARN. To view a history of data deletion jobs sorted by creation time, use the [ListDataDeletionJobs](API_ListDataDeletionJobs.md) API operation.
 
 If the job fails for any reason, we recommend creating another data deletion job. After a job completes, make sure to update any custom resources. Make sure to create a new solution version and, if necessary, update your campaign. If you use automatic training, you can still manually create new solution versions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

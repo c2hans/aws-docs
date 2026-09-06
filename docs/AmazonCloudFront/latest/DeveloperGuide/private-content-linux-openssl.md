@@ -29,7 +29,3 @@ In the preceding command:
 + `tr` replaces characters that are not valid in URL query string parameters with characters that are valid.
 
 For more code examples that demonstrate creating a signature, see [Code examples for creating a signature for a signed URL](PrivateCFSignatureCodeAndExamples.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

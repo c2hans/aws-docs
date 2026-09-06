@@ -115,7 +115,3 @@ In this example, the policy would allow the `CreateBucket` action only when the 
 | <pre>"StringEquals": {<br />    "aws:PrincipalTag/dept": "123"<br />}</pre>  |  <pre>Principal: AIDA123456789EXAMPLE<br />Action: s3:{{DeleteBucket}}<br />Resource: arn:aws:s3:::amzn-s3-demo-bucket1<br />Context:  <br />    - aws:PrincipalTag/dept=123</pre>  | **No match** |
 | <pre>"StringEquals": {<br />    "aws:PrincipalTag/dept": "123"<br />}</pre>  |  <pre>Principal: AIDA123456789EXAMPLE<br />Action: s3:CreateBucket<br />Resource: arn:aws:s3:::amzn-s3-demo-bucket1<br />Context:  <br />    - aws:PrincipalTag/dept={{321}}</pre>  | **No match** |
 | <pre>"StringEquals": {<br />    "aws:PrincipalTag/dept": "123"<br />}</pre>  | <pre>Principal: AIDA123456789EXAMPLE<br />Action: s3:CreateBucket<br />Resource: arn:aws:s3:::amzn-s3-demo-bucket1<br />Context:</pre>No `aws:PrincipalTag` in the request. | **No match** |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

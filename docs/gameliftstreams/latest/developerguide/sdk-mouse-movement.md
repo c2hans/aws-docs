@@ -60,7 +60,3 @@ To ensure optimal mouse handling in your streamed applications:
 + **Show the cursor for absolute positioning** - When your application needs precise cursor positioning for UI interactions, ensure the operating system cursor remains visible to enable absolute coordinate mode.
 + **Test different input scenarios** - Verify that your application handles both relative and absolute mouse modes correctly, as Amazon GameLift Streams may switch between modes based on your cursor visibility changes.
 + **Test different window modes** - Test your application's mouse handling in both windowed and fullscreen modes, if applicable. Determine which `autoPointerLock` setting is best for your input configuration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

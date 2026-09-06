@@ -26,7 +26,3 @@ The following table describes significant changes to this guide.
 | Added decision matrix | In the [Choosing between Amazon EC2 and Amazon RDS](comparison.md) section, provided a side-by-side comparison of SQL Server support. | June 28, 2021 |
 | Updated log shipping information | In the [Log shipping](log-shipping.md) section, clarified that log shipping on Amazon RDS for SQL Server requires custom scripts. | March 25, 2021 |
 | Initial publication | — | October 9, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

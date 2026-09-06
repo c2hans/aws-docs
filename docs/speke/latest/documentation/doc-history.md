@@ -27,12 +27,9 @@ The following table describes the changes to the SPEKE documentation.
 
 | Change | Description | Date |
 | --- | --- | --- |
+| SPEKE API v2.1 specification | Added the SPEKE API v2.1 specification, a minor revision aligned with the CPIX 2.4 specification. SPEKE v2.1 adds content key period start and end times, extended `ContentKey@commonEncryptionScheme` values, HDCP signaling, and expected DRM robustness signaling. | September 1, 2026 |
 | Updates to DRM platform providers section and AWS services and products supporting SPEKE section | Added Webstream to the SPEKE v2 column of the DRM platform provider list, added MediaConvert to the SPEKE v2 column of the SPEKE support in AWS services and products table. | October 10, 2024 |
 | Updates to DRM platform providers section | Added new qualified partners to the SPEKE v2 column of the DRM platform provider list. | August 9, 2023 |
 | Updates to Live and VOD workflow method call examples sections | Added missing X-Speke-Version response header in SPEKE v2 Live and VOD workflow method call examples sections. | January 13, 2023 |
 | Updates to DRM platform providers and Encryption contract section | Added new qualified partners to the SPEKE v2 column of the DRM platform provider list. Added two new examples of Encryption contracts, and changed SD max resolution to 1024x576 in all concerned examples. | January 27, 2022 |
 | Initial release | Initial release of Secure Packager and Encoder Key Exchange (SPEKE) version 2.0, a specification for communication between a content encryptor and a DRM key provider. The DRM key provider exposes a Secure Packager and Encoder Key Exchange API to handle incoming key requests. | September 7, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Packager and Encoder Key Exchange API Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query speke` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

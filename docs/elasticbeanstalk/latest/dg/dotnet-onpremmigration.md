@@ -10,7 +10,3 @@ AWS Elastic Beanstalk provides a streamlined migration path for your Windows app
 This built-in migration capability offers a simpler approach that reduces the complexity and time typically associated with cloud migrations. The migration process helps maintain application functionality and configuration integrity during the transition to AWS.
 
 For complete, detailed instructions about migrating your IIS applications to AWS Elastic Beanstalk, refer to the [Migrating IIS applications to Elastic Beanstalk](dotnet-migrating-applications.md) chapter in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

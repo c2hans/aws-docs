@@ -34,7 +34,3 @@ Follow these best practices when you use background blur during a meeting:
 
 **Providing feedback**
 If you have any feedback on this feature, leave a comment in the online form that appears when you leave a meeting, or contact your AWS IT Administrator to file a ticket with AWS Support.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

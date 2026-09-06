@@ -13,7 +13,3 @@ For each action, provide a due date and an owner at the minimum. Ideally, a proj
 
 **Note**
 Use the [AWS Assessment Tool](https://a2t.accelerate.amazonaws.com/) to gain access to questions. This tool also provides a report generator that assists in analyzing results, summarizing observations and recommended actions, and building a presentation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

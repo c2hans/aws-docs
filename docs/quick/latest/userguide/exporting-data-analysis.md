@@ -23,7 +23,3 @@ Use the procedure below to export an analysis as a PDF.
 The process for exporting to a PDF works the same way for both dashboards and analyses.
 
 You can also attach a PDF to dashboard email reports. For more information, see [Scheduling and sending Quick Sight reports by email](sending-reports.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,7 +42,3 @@ The following are the service endpoints and service quotas for this service.
 | Templates per account | Each supported Region: 1,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/proton/quotas/L-405DC02B)  | Maximum number of registered templates per account, service and environment templates combined |
 
 For more information, see [AWS Proton quotas](https://docs.aws.amazon.com/proton/latest/adminguide/ag-limits.html) in the *AWS Proton Administrator Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

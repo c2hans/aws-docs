@@ -108,7 +108,3 @@ The following table describes the important changes in each release of the *Amaz
 | New feature | Updated to support PostgreSQL versions 9.3.10 and 9.4.5 DB instances. | November 27, 2015 |
 | New feature | Updated to support PostgreSQL versions 9.4.4 and 9.3.9. | July 30, 2015 |
 | New feature | Updated to support PostgreSQL versions 9.3.6 and 9.4.1. | March 18, 2015 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

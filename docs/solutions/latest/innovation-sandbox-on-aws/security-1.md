@@ -87,7 +87,3 @@ If desired, you can manually enable S3 access logging to monitor all bucket acce
 <a name="custom-client-security"></a>
 
 The Innovation Sandbox on AWS API allows certain free-text fields (such as lease template names and descriptions) to contain characters that may lead to cross-site scripting (XSS) vulnerabilities in insecure client implementations. The included React-based web client implements proper security controls and safely handles all user-provided data. If you develop a custom client application that integrates with the solution’s API, ensure your implementation includes appropriate input validation, output encoding, and XSS protection measures following secure coding practices for your chosen technology stack.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

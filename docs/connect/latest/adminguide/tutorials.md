@@ -24,7 +24,3 @@ A PDF version of the documentation opens. Press **Ctrl\+Home** to return to the 
 + [Set up your Connect Customer instance](tutorial1-set-up-your-instance.md)
 + [Test the sample voice and chat experience in Connect Customer](tutorial1-explore-voice-and-chat.md)
 + [Create an IT help desk in Connect Customer](tutorial1-create-helpdesk.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -74,7 +74,3 @@ A successful response returns the following:
 | --- | --- | --- |
 | ConflictException | Cannot find jira project | **Likely cause:** Project on the connector is incorrect, or credentials/permissions issue preventing us from accessing the project.<br />**Likely resolution:** Add the correct project to the connector or re-authenticate to Jira with the correct credentials. |
 | ConflictException | Security Hub issue type not found | **Likely cause:** App installation issue or issue type is not associated with the project.<br />**Likely resolution:** Perform the pre-requisite step to install the Jira app into your Jira environment and associate the app with the project. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

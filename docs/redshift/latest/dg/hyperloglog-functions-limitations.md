@@ -20,7 +20,3 @@ The following are limitations for using HyperLogLog in Amazon Redshift:
 
 **Note**
 Starting November 1, 2025, Amazon Redshift will no longer support the creation of new Python UDFs. Existing Python UDFs will continue to function until June 30, 2026. Starting July 1, 2026, Amazon Redshift will no longer support Python UDFs. We recommend that you migrate your existing Python UDFs to Lambda UDFs before November 1, 2025. For information on creating and using Lambda UDFs, see [Scalar Lambda UDFs](udf-creating-a-lambda-sql-udf.md). For information on converting existing Python UDFs to Lambda UDFs, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

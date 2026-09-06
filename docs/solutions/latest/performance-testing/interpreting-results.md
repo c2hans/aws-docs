@@ -137,7 +137,3 @@ Automated investigation is particularly valuable for:
 [AWS DevOps Agent Integration](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/devops-agent-integration.html) (DLT Documentation)
 [Amazon CloudWatch Service Level Objectives](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-ServiceLevelObjectives.html) (CloudWatch Documentation)
 [Monitor application health using SLOs with CloudWatch Application Signals](https://aws.amazon.com/blogs/mt/how-to-monitor-application-health-using-slos-with-amazon-cloudwatch-application-signals/) (AWS Blog)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Performance Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

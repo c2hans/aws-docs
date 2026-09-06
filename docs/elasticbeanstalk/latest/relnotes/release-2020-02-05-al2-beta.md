@@ -52,7 +52,3 @@ We initially also included a Docker AL2 beta platform version in this release. W
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** (BETA) Python 3.7 running on 64bit Amazon Linux 2 version 0.1.0** <br /> * 64bit Amazon Linux 2 v0.1.0 running Python 3.7 (BETA) *  | 2.0.20200115 | Python 3.7.4 | pip (latest at launch), pipenv (latest at launch) | removed | removed | 3.1.0 | nginx 1.16.1 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

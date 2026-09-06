@@ -26,7 +26,3 @@ If you run the Core pipeline before ignoring the account, the account might have
 1. Choose **Account** in the **Access Filter** drop-down menu.
 
 1. Select the Control Tower Account Factory product that failed provisioning. From the drop-down menu, select **Terminate**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

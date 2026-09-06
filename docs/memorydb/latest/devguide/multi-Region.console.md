@@ -98,7 +98,3 @@ Here are ways to use MemoryDB Multi-Region with the console.
 
 1. To delete an entire multi regional cluster, select the target empty multi regional cluster. Then go to the action menu dropdown and select **Delete**.
 ![Console view of deleting an entire multi regional cluster.](http://docs.aws.amazon.com/memorydb/latest/devguide/images/delete-multi-region4-entire-mrc.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

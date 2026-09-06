@@ -185,7 +185,3 @@ The thing group name can't contain colon (`:`) characters.
    ```
 **Note**  <a name="installer-linux-no-systemd-message"></a>
 If you have a Linux device and it doesn't have [systemd](https://en.wikipedia.org/wiki/Systemd), the installer won't set up the software as a system service, and you won't see the success message for setting up the nucleus as a system service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -74,7 +74,3 @@ You can also automate attaching a second elastic network interface to an EC2 Aut
 + [Installing DSE OpsCenter 6.1 from the Debian package](https://docs.datastax.com/en/opscenter/6.1/opsc/install/opscInstallDeb_t.html) (DataStax documentation)
 + [How to make a secondary network interface work in an Ubuntu EC2 instance](https://www.youtube.com/watch?v=RmwGYXchb4E) (AWS Knowledge Center video)
 + [Best Practices for Running Apache Cassandra on Amazon EC2](https://aws.amazon.com/blogs/big-data/best-practices-for-running-apache-cassandra-on-amazon-ec2/) (AWS blog post)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

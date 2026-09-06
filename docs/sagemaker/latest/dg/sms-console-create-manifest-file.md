@@ -52,7 +52,3 @@ This creates an input manifest in the Amazon S3 location for input datasets that
 The following GIF demonstrates how to use the automated data setup for image data. This example will create a file, `dataset-{{YYMMDDTHHMMSS}}.manifest` in the Amazon S3 bucket `example-groundtruth-images` where `{{YYMMDDTHHmmSS}}` indicates the year (`YY`), month (`MM`), day (`DD`) and time in hours (`HH`), minutes (`mm`) and seconds (`ss`), that the input manifest file was created.
 
 ![GIF showing how to use the automated data setup for image data.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/sms/gifs/automated-data-setup.gif)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

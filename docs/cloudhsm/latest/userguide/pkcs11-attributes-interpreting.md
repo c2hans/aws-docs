@@ -327,7 +327,3 @@ ML-DSA key import through `C_CreateObject` is not supported. To use ML-DSA keys,
 + [1] This attribute is partially supported by the firmware and must be explicitly set only to the default value.
 + [2] Mandatory attribute.
 + [3] For Ed25519 keys (EC keys with ed25519 curve): CKA\_ENCRYPT, CKA\_DECRYPT, CKA\_WRAP, CKA\_UNWRAP, and CKA\_DERIVE are not functional. Ed25519 keys are signing-only and do not support encryption, wrapping, or key derivation operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

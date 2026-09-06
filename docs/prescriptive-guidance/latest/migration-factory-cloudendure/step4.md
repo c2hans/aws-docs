@@ -29,7 +29,3 @@ However, for a large-scale migration, it's time-consuming to check the status of
 If an instance fails the 2/2 status checks, contact [AWS Support](https://aws.amazon.com/premiumsupport/) for assistance.
 
 For detailed instructions, see [Verify the target instance status](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/list-of-automated-migration-activities-using-factory-web-console.html#verify-the-target-instance-status) in the *Cloud Migration Factory Implementation Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

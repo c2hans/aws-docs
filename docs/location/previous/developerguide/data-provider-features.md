@@ -71,7 +71,3 @@ If you encounter a problem with the data and want to report an error to the data
 + [Error reporting for GrabMaps data](grab.md#grab-support)
 + [Error reporting to HERE](HERE.md#HERE-support)
 + [Error reporting and contributing to Open Data](open-data.md#open-data-support)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Group frames into chunks with task chunking on Deadline Cloud
 <a name="examples-jb-task-chunking"></a>
 
-The [task\_chunking](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/task_chunking) samples demonstrate the [Task Chunking](https://github.com/OpenJobDescription/openjd-specifications/blob/mainline/rfcs/0001-task-chunking.md) extension for Open Job Description. Render jobs often spend significant time loading applications and scene files before rendering each frame. Chunking amortizes this overhead by processing multiple frames per chunk, which reduces total job runtime.
+The [task\_chunking](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/task_chunking) samples on the GitHub website demonstrate the [Task Chunking](https://github.com/OpenJobDescription/openjd-specifications/blob/mainline/rfcs/0001-task-chunking.md) extension for Open Job Description. Render jobs often spend significant time loading applications and scene files before rendering each frame. Chunking amortizes this overhead by processing multiple frames per chunk, which reduces total job runtime.
 
 The samples include four examples:
 
@@ -32,7 +32,3 @@ deadline bundle submit {{sample-directory}}
 ```
 
 To learn how task chunking works and how to add it to your own job templates, see [Task chunking for job templates](build-job-bundle-chunking.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

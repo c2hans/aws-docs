@@ -42,7 +42,3 @@ In the InnoDB implementation of multiversion concurrency control (MVCC), when a 
 The general query log records client connections and disconnections as well asin addition to all statements received by the server in the order they were received. When activated, logging is synchronous, which can lead to a substantial performance penalty on a busy system. Unless required, we recommend deactivating the general log.
 
 The slow query log records statements that took longer than the [long\_query\_time](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_long_query_time) number of seconds to run, with the default setting of 10 seconds. When the setting is set to 0, all statements are synchronously logged, which can lead to a performance penalty on busy databases.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

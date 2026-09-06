@@ -341,7 +341,3 @@ EndSection
    ```
 
 1. (Optional) [Install the Amazon DCV server](https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-installing.html) to use Amazon DCV as a high-performance display protocol, and then [connect to a Amazon DCV session](https://docs.aws.amazon.com/dcv/latest/userguide/using-connecting.html) using your preferred client.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

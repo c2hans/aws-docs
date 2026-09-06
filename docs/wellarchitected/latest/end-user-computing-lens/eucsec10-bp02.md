@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  In Amazon WorkSpaces and WorkSpaces Applications instances, consider existing OS software to harden the instances. For example, you can use host-based firewalls available within the operating system to restrict accessible ports in your instances. In addition, consider endpoint protection software to identify and mitigate security risks that may be introduced into the environment using software local to the instances. For detail on the ports required by Amazon WorkSpaces and WorkSpaces Applications, see the following:
 +  [List of ports required by Amazon WorkSpaces Applications](https://docs.aws.amazon.com/appstream2/latest/developerguide/creating-streaming-from-interface-vpc-endpoints.html)
 +  [List of ports required for Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

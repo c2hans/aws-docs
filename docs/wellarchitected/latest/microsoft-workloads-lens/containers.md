@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 + [MSFTCOST07-BP01 Optimize AWS Fargate tasks with AWS Compute Optimizer](msftcost07-bp01.md)
 + [MSFTCOST07-BP02 Improve Amazon Elastic Kubernetes Service cost tracking with Kubecost](msftcost07-bp02.md)
 + [MSFTCOST07-BP03 Change your scale strategy for Windows Containers on Kubernetes using Karpenter](msftcost07-bp03.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,7 +31,3 @@ Follow this procedure to experiment with the supported image editing features, p
 
 **Note**
 The Dynamic Image Transformation for Amazon CloudFront demo UI offers a limited set of image edits and doesn’t include the full scope of capabilities offered by the Image Handler API and the image URL signature. We recommend using your own [frontend application](use-the-solution-with-a-frontend-application.md) for image modification.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

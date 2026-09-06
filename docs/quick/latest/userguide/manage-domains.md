@@ -91,7 +91,3 @@ The following list shows examples of URLs that are *not* valid for embedded dash
 + https://111.222.33.44.55
 
 For more information about embedded dashboards, see [Embedding with the Amazon Quick APIs](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics-api.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

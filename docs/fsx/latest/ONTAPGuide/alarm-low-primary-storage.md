@@ -44,7 +44,3 @@ Follow these instructions to complete the process of creating your CloudWatch al
 1. On the **Add name and description** page, give your alarm a name, and optionally a description, then choose **Next**.
 
 1. Review everything you’ve configured in the **Preview and create** page, and then choose **Create alarm**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

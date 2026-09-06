@@ -68,7 +68,3 @@ In v1, S3 Event Notification API classes are transitively imported with along wi
 If you use [aws-lambda-java-events](https://github.com/aws/aws-lambda-java-libs/tree/main/aws-lambda-java-events) to work with S3 notification events within a Lambda function, we recommend that you upgrade to the latest 3.x.x version. Recent versions eliminate all dependencies on AWS SDK for Java 1.x from the S3 event notification API.
 
 For more information about the differences in handling S3 event notifications between the `aws-lambda-java-events` library and the SDK for Java 2.x, see [Process S3 Events in Lambda with Java Libraries: AWS SDK for Java 2.x and `aws-lambda-java-events`](examples-s3-event-notifications.md#s3-event-notif-processing-options).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

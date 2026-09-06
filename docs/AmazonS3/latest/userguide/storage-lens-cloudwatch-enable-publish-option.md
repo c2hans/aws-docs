@@ -312,7 +312,3 @@ To enable the CloudWatch publishing option by using the Amazon S3 REST API, you 
 After you enable the CloudWatch publishing option, you can access your S3 Storage Lens metrics in CloudWatch. You also can leverage CloudWatch features to monitor and analyze your S3 Storage Lens data in CloudWatch. For more information, see the following topics:
 + [S3 Storage Lens metrics and dimensions](storage-lens-cloudwatch-metrics-dimensions.md)
 + [Working with S3 Storage Lens metrics in CloudWatch](storage-lens-cloudwatch-monitoring-cloudwatch.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

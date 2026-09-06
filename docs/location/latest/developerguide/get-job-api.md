@@ -61,7 +61,3 @@ When a job fails, the response includes error details to help you diagnose and r
 + `Error`: A `JobError` object containing details about the failure. This object includes the following fields:
   + `Code`: An error code that identifies the type of failure.
   + `Messages`: A list of human-readable messages that provide additional context for troubleshooting.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

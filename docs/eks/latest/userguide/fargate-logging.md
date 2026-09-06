@@ -387,7 +387,3 @@ Events:
 ```
 
 The Pod events are ephemeral with a time period depending on the settings. You can also view a Pod’s annotations using `kubectl describe pod {{pod-name}} `. In the Pod annotation, there is information about whether the logging feature is enabled or disabled and the reason.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

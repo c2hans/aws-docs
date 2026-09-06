@@ -21,7 +21,3 @@ You can grant permissions on LF-Tags by using the Lake Formation console, the AP
 + [Managing LF-Tag permissions using the AWS CLI](TBAC-granting-revoking-tags-cli.md)
 
 For more information see [Managing LF-Tags for metadata access control](managing-tags.md) and [Lake Formation tag-based access control](tag-based-access-control.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

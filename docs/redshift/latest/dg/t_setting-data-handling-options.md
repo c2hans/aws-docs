@@ -19,7 +19,3 @@ You can set the following TABLE PROPERTIES when you create external tables to sp
 + `surplus_char_handling` to specify input handling for surplus characters in columns containing VARCHAR, CHAR, and string data.
 
 You can set a configuration option to cancel queries that exceed a maximum number of errors. For more information, see [spectrum\_query\_maxerror](r_spectrum_query_maxerror.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

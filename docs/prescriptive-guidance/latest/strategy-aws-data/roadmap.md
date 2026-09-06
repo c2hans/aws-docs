@@ -19,7 +19,3 @@ Data projects require a set of capabilities that are hard to find in a single fu
 <a name="next-steps"></a>
 
 To start creating a data strategy, make sure that you have executive sponsorship and schedule business interviews with main (or all) business units within your company. After you create the data strategy roadmap, create a technical data architecture with the technical components you need for all enablement and business outcome projects. Work with your technical team to create the data architecture. Consider your current environment and the new components that your data strategy requires. To select technical components, your technical team should consider scale, security, data latency, and integration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ The following are the service endpoints and service quotas for this service.
 | Function packages | Each supported Region: 200 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/tnb/quotas/L-08069DBD)  | The maximum number of function packages in one Region. |
 | Network packages | Each supported Region: 40 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/tnb/quotas/L-3328748B)  | The maximum number of network packages in one Region. |
 | Network service instances | Each supported Region: 800 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/tnb/quotas/L-C92FB107)  | The maximum number of network service instances in one Region. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,7 +84,3 @@ By default, a security group includes an outbound rule that allows all outbound 
 ## Limitations
 <a name="vpc-lattice-target-group-limitations"></a>
 + [Mixed instances groups](ec2-auto-scaling-mixed-instances-groups.md) are supported. If you attach a VPC Lattice target group to an Auto Scaling group that has a mixed instances policy, the load balancing algorithm evenly distributes load onto all available resources and assumes that instances are similar enough to handle equal loads.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

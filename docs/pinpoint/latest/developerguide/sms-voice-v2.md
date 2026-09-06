@@ -19,7 +19,3 @@ Version 2 of this API was preceded by Version 1. If you currently use Version 1 
 Some tasks can only be completed by using the Amazon Pinpoint console. For example, [verifying a phone number to use while your account is in the SMS sandbox](https://docs.aws.amazon.com/sms-voice/latest/userguide/sandbox.html#channels-sms-verify-number) and [registering to use 10DLC](https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations-10dlc.html).
 
 For more information about the Amazon Pinpoint SMS and Voice version 2 API, see the [SMS and Voice, version 2 API Reference](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/Welcome.html). For information about how to create, configure, and manage your AWS End User Messaging SMS and voice resources, see the [*AWS End User Messaging SMS User Guide*](https://docs.aws.amazon.com/sms-voice/latest/userguide/what-is-service.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

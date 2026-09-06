@@ -27,7 +27,3 @@ For simplest setup, specify **Start time** counting from 00:00:00:00 as the firs
 Specify the length of time, in milliseconds, for the overlay duration to remain. This duration includes fade-in time, but not fade-out time, as the following image shows.
 
 ![Overlay fade-in time when the overlay is at full opacity, and the time when the overlay is fading out.](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/OverlayFadeinFadeoutDuration.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

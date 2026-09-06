@@ -22,7 +22,3 @@ For information about configuring heartbeat intervals for Neptune Serverless, se
 + [Disable DNS caching in the Java Virtual Machine](best-practices-gremlin-java-disable-dns-caching.md)
 + [Optionally, set timeouts at a per-query level](best-practices-gremlin-java-per-query-timeout.md)
 + [Troubleshooting `java.util.concurrent.TimeoutException`](best-practices-gremlin-java-exceptions-TimeoutException.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

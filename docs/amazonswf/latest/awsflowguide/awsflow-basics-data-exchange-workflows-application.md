@@ -23,7 +23,3 @@ public interface WaitForSignalWorkflow {
 ```
 
 The framework's annotation processor creates a workflow client method with the same name as the signal method and the workflow starter calls the client method to pass data to the workflow. For an example, see [AWS Flow Framework Recipes](https://aws.amazon.com/code/2535278400103493)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

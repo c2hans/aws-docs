@@ -27,7 +27,3 @@ You can enable standards individually for a single account and AWS Region. Howev
 + [Reviewing the details of a standard](securityhub-standards-view-controls.md)
 + [Turning off auto-enabled standards](securityhub-auto-enabled-standards.md)
 + [Disabling a standard](disable-standards.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

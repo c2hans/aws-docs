@@ -201,7 +201,3 @@ View details about updates to AWS managed policies for CodeCatalyst since this s
 | [AmazonCodeCatalystFullAccess](#security-iam-awsmanpol-AmazonCodeCatalystFullAccess) – New policy | CodeCatalyst added the policy.<br />Grants full access to CodeCatalyst. | April 20, 2023 |
 | [AmazonCodeCatalystReadOnlyAccess](#security-iam-awsmanpol-AmazonCodeCatalystReadOnlyAccess) – New policy | CodeCatalyst added the policy.<br />Grants read-only access to CodeCatalyst. | April 20, 2023 |
 | CodeCatalyst started tracking changes | CodeCatalyst started tracking changes for its AWS managed policies. | April 20, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

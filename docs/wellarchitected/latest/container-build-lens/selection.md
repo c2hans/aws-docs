@@ -57,7 +57,3 @@ CMD ["/go/bin/myApplication"]
  **Use a container registry close to your cluster**
 
  One of the essential factors in the speed of deploying container images from a registry is locality. The registry should be as close to the cluster as possible, which means that both the cluster and the registry should be in the same AWS Region. For multi-region deployments, this means that the CI/CD chain should publish a container image to multiple Regions. An additional way to optimize the pull time of your container image is to keep the container image as small as possible. In [Tradeoffs](tradeoffs.md) multi-stage builds are discussed in detail to reduce the image size.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

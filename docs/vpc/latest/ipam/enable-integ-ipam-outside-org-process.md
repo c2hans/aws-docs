@@ -34,7 +34,3 @@ When you integrate IPAM with AWS accounts outside of your organization, there ar
 1. (Optional) If Primary Org IPAM Account wants to stop discovering resources in Secondary Org, it can disassociate the resource discovery from the IPAM (see [Disassociate a resource discovery](res-disc-work-with-disassociate.md)).
 
 1. (Optional) If the Secondary Org Admin Account wants to stop participating in the Primary Org's IPAM, they can unshare the shared resource discovery (see [Update a resource share in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-update.html) in the *AWS RAM User Guide*) or delete the resource discovery (see [Delete a resource discovery](res-disc-work-with-delete.md)).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

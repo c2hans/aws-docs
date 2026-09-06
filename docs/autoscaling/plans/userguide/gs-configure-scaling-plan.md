@@ -49,7 +49,3 @@ For the introductory tutorial, complete only the first step of the following pro
 1. (Optional) To specify a scaling strategy for another resource type, repeat the preceding steps.
 
 1. When you are finished, choose **Next** to continue with the scaling plan creation process.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

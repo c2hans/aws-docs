@@ -22,7 +22,3 @@ For a complete CLI reference, see [README](https://github.com/aws/sagemaker-hype
 | hyperpod get-log | pod | Retrieves the logs of a particulat pod in a specified job |
 | hyperpod exec | pod | Run the bash command in the shell of the specified pod(s) and publishes the output |
 | hyperpod --help | utility | lists all supported commands |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

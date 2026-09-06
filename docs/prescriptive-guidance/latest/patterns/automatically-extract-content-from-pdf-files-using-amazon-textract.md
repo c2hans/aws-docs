@@ -108,7 +108,3 @@ You can automate the *Repeat run* workflow by using an AWS Lambda function that 
 <a name="attachments-2d724523-2cab-42c9-a773-65857014d9ec"></a>
 
 To access additional content that is associated with this document, download and unzip the following file: [attachment.zip](samples/p-attach/2d724523-2cab-42c9-a773-65857014d9ec/attachments/attachment.zip)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ Choosing **Remove tag** removes a tag from all selected resources that have the 
 1. Depending on the number of resources you selected, removing tags can take a few minutes. Don't leave the page or open a different page in the same browser tab. If changes were successful, a green success banner is displayed at the top of the page. Wait for a success or failure banner to appear on the page before you continue.
 
    If tag changes to some or all resources were not successful, see [Troubleshooting Tag Changes](troubleshooting-tags.md). After you resolve the root causes of unsuccessful tag changes (such as insufficient permissions), you can retry tag changes on resources for which tag changes failed. For more information, see [Retry failed tag changes](troubleshooting-tags.md#tagging-resources-retry).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Tagging and Tag Editor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tag-editor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

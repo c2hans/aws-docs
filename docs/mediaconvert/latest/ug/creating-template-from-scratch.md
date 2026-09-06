@@ -26,7 +26,3 @@ You can create a job template by individually specifying the settings for each o
 If you set up outputs by referring to output presets, make sure to specify input audio and captions selectors to correspond with any output audio and captions that are specified in the preset. For example, if you use an output preset with three audio tracks that use audio selectors 1, 2, and 3, make sure that the input that you specify has audio selectors 1, 2, and 3.
 
 1. Choose the **Create** button at the bottom of the page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

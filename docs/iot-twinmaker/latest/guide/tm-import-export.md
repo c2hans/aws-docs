@@ -69,7 +69,3 @@ This topic explains the behavior AWS IoT TwinMaker follows when you run a bulk o
 
   If an entityId, componentName, propertyName combination is used in property or relationship, you cannot use the same combination in the property or relationship.
 + **ExternalId is optional for AWS IoT TwinMaker:** The ExternalId can be used to help you identify your resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

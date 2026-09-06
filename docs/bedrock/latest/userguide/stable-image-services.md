@@ -1587,7 +1587,3 @@ The following table shows the input and output images of a Style Transfer call.
 |  Input  |  Style  |  Output  |
 | --- | --- | --- |
 |  ![Marble statue of a woman with flowing hair and draped clothing, hand raised to head.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/stable-image-services/input-style-transfer.jpg)  |  ![Network of illuminated blue lines connecting buildings in a nighttime cityscape.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/stable-image-services/style-style-transfer.jpg)  |  ![Classical statue with cyan lighting in urban setting with modern architecture in background.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/stable-image-services/output-style-transfer.jpg)  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

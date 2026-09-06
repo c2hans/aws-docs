@@ -185,7 +185,3 @@ To know what version of the resource you received in your notification bundle:
 HealthLake's FHIR Subscription feature guarantees **at least one** delivery. This means that you may receive the same event multiple times, either in the same bundle or in a different bundle. To identify duplicates, HealthLake provides a unique id for each event in the notification bundle in `entry[0].notificationEvent[*].id`.
 
 This id is unique to the specific version of the event that was matched and delivered. For example, if the same Encounter is updated twice and both updates matched the filter criteria you will receive two separate events with the same Encounter reference. They will have the same `notificationEvent[*].focus`, but will have a unique `notificationEvent[*].id`. Furthermore, these events may be sent in separate bundles or within the same notification bundle.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

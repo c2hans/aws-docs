@@ -97,7 +97,3 @@ Amazon Polly accepts Mandarin Chinese input encoded in UTF-8 only. The GB 18030 
   <tr><td>-</td><td>.</td><td>.</td><td>syllable boundary</td><td>语音 yu3-yin1</td><td> </td></tr>
 </tbody>
 </table>
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Polly. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query polly` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

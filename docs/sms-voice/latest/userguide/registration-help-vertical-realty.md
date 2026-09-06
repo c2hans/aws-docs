@@ -161,7 +161,3 @@ If you manage rental properties and send tenant communications (rent reminders, 
 For a real estate-specific opt-in form example, see the form screenshots in this section. This vertical follows the [Transactional opt-in](registration-help-optin-transactional.md) with industry-specific disclosures.
 
 ![Buyer registration form showing an unchecked SMS consent checkbox with brokerage name, message frequency, data rates, and opt-out disclosures](http://docs.aws.amazon.com/sms-voice/latest/userguide/images/vertical-realty-optin.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

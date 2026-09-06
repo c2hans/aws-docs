@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/querying-data.html
 1. You will see a note with a sample `SELECT` query to output the data in the stream already running. This lets you view the schema for your data stream.
 
 1. To try out other queries such as tumbling or sliding windows, choose **View sample queries** in the **Data analytics** tab. Copy the query, modify it to suit your data stream schema, and then run it in a new paragraph in your Zeppelin note.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

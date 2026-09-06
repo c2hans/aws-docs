@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/microsoft-outlook
 # Microsoft Outlook integration
 <a name="microsoft-outlook-integration"></a>
 
-With the Microsoft Outlook action connector, you can access Outlook's email, calendar, and contact APIs directly in Amazon Quick through natural language.
+With the Microsoft Outlook connector, you can access Outlook's email, calendar, and contact APIs directly in Amazon Quick through natural language.
 
 Amazon Quick supports multiple authentication methods for Microsoft Outlook. Choose the method that best fits your organization's security requirements.
 + **Default OAuth app** – Uses an AWS-managed OAuth application. No additional credentials are needed. Users authenticate directly with their Microsoft account.
@@ -91,6 +91,7 @@ Add the following as Delegated permissions in your Entra app registration. For t
 | --- | --- |
 | Mail.ReadWrite | Allows the app to create, read, update, and delete email in user mailboxes. |
 | Mail.Send | Allows the app to send mail as users in the organization. |
+| Mail.Read.Shared | Allows the app to read mail that the user can access, including the user's own mail and shared mail. |
 | Calendars.ReadWrite | Allows the app to create, read, update, and delete events in user calendars. |
 | Calendars.ReadWrite.Shared | Allows the app to create, read, update and delete events in all calendars the user has permissions to access, including delegate and shared calendars. |
 | User.Read | Allows users to sign in to the app and allows the app to read the profile of signed-in users. |
@@ -266,7 +267,3 @@ After consent is granted, any user in your organization can connect without bein
 
 **Note**
 To check whether your tenant restricts user consent, go to the Microsoft Entra admin center and choose **Enterprise applications**, **Consent and permissions**, **User consent settings**. If the setting is **Do not allow user consent**, an administrator must grant consent before users can use the connector.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

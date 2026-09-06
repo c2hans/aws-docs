@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
  Carefully consider the pros and cons of logging in generative AI systems and determine the appropriate level of logging for your application. This decision will directly impact your ability to monitor, audit, and respond to incidents.
 
  Finally, establish incident response plans that align with your logging capabilities and the specific risks associated with your generative AI application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

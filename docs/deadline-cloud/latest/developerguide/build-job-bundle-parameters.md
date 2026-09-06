@@ -32,7 +32,7 @@ Each element of the `parameterValues` list must be one of the following:
 
 A job template is always a template rather than a specific job to run. A parameter values file enables a job bundle to either act as a template if some parameters don't have values defined in this file, or as a specific job submission if all parameters have values.
 
-For example, the [blender\_render sample](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/blender_render) doesn't have a parameters file and its job template defines parameters with no default values. This template must be used as a template to create jobs. After you create a job using this job bundle, Deadline Cloud writes a new job bundle to the job history directory.
+For example, the [blender\_render sample](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/blender_render) on the GitHub website doesn't have a parameters file and its job template defines parameters with no default values. This template must be used as a template to create jobs. After you create a job using this job bundle, Deadline Cloud writes a new job bundle to the job history directory.
 
 For example, when you submit a job with the following command:
 
@@ -81,7 +81,3 @@ The job bundle that you submit is saved to your job history directory. You can f
 ```
 deadline config get settings.job_history_dir
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

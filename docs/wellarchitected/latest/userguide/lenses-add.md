@@ -25,7 +25,3 @@ For more information about the AWS lens catalog, visit [AWS Well-Architected Len
 
 **Disclaimer**
 By accessing and/or applying custom lenses created by another AWS user or account, you acknowledge that custom lenses created by other users and shared with you are Third Party Content as defined in the AWS Customer Agreement.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

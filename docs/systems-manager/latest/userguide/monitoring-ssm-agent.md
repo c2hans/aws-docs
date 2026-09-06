@@ -114,7 +114,3 @@ On Ubuntu Server 20.04 and 18.04 LTS, the file `seelog.xml` must be created in t
 1. In the navigation pane, choose **Log groups**, and then choose the name of your log group.
 **Tip**
 The log stream for SSM Agent log file data is organized by node ID.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

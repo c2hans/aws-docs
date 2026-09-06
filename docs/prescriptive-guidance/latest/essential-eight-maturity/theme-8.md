@@ -36,7 +36,3 @@ As shown in the following diagram, a *mechanism* is a complete process where you
 ## Monitoring this theme
 <a name="theme-8-monitoring"></a>
 + Establish oversight for executive sponsors to that can track progress toward goals—including compliance, inspection of gaps, and evaluation of mechanisms.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

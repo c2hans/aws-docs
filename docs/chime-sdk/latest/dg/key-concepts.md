@@ -24,7 +24,3 @@ To fully understand how to create and manage meetings and users, you need to und
  ** [ContentShareController](https://aws.github.io/amazon-chime-sdk-js/interfaces/contentsharecontroller.html) ** (DefaultContentShareController) – APIs that start-stop and pause-unpause content sharing. It also provides APIs to listen to lifecycle events to track content sharing status.
 
  ** [Logger](https://aws.github.io/amazon-chime-sdk-js/interfaces/logger.html) ** [(ConsoleLogger)](https://aws.github.io/amazon-chime-sdk-js/interfaces/logger.html) – The interface used to leverage the console logs, or pass in a logger object to override the current logging implementation and get different levels of logs from the Amazon Chime SDK.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

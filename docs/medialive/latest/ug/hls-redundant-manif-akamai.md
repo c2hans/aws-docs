@@ -17,7 +17,3 @@ You must make sure that the downstream system can work with the following rules.
 |  Segment modifier  | There is only one instance of this field. Both pipelines use the same value. <br />It *can* use [variable identifiers](variable-data-identifiers.md) that include the date or time. |
 | Base URL Manifest A and Base URL Manifest B  | These fields apply only if you are also implementing [custom manifest paths](hls-manifests-how-work.md#hls-custom-manifest-paths). Typically, with Akamai CDNs, you do implement custom manifest paths.<br />Complete both fields. |
 | Base URL Content A and Base URL Content B  | These fields apply only if you are also implementing [custom manifest paths](hls-manifests-how-work.md#hls-custom-manifest-paths). <br />Complete both fields.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

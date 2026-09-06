@@ -16,7 +16,3 @@ MediaTailor detects a SCTE-35 marker with segmentation type `id=0x38` as an in-b
 + [Getting started using overlay ads with MediaTailor](overlay-ads-getting-started.md)
 + [Logging and metrics for overlay ads in MediaTailor](overlay-ads-logging-and-metrics.md)
 + [Billing for overlay ads in MediaTailor](overlay-ads-billing.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

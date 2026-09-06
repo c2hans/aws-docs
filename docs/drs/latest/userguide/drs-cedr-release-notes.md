@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/drs-cedr-release-no
 | 5.3.1 |  +  Fixed issue preventing certain operating systems from installing the DRS agent after upgrade.   | 13 August 2023 |
 | 5.2.0 |  +  Added support for legacy operating systems.   | 2 August 2023 |
 | 3.7.0 |  +  Fixed issue preventing upgrade on CloudEndure servers with large disks.   | 28 December 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

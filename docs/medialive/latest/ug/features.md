@@ -8,6 +8,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/features.html
 This chapter contains detailed procedures for implementing AWS Elemental MediaLive features. You set up these features when you create or modify the channel or when you add actions to the channel schedule. The procedures expand on the limited information provided in [Creating a channel from scratch](creating-channel-scratch.md) and [Creating an AWS Elemental MediaLive schedule](working-with-schedule.md).
 
 **Topics**
++ [A/B forensic video watermarking](feature-ab-watermark.md)
 + [Audio - Accessibility data](audio-accessibility.md)
 + [Audio – Audio-only outputs](audio-only.md)
 + [Audio – Dolby Digital Plus with Dolby Atmos](feature-dolbyatmos.md)
@@ -60,7 +61,3 @@ This chapter contains detailed procedures for implementing AWS Elemental MediaLi
 + [Video – enhanced VQ](video-enhancedvq.md)
 + [Video – rate control mode](video-encode-ratecontrol.md)
 + [VPC delivery](delivery-out-vpc.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

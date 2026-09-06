@@ -34,7 +34,3 @@ The AWS CDK is generally available in JavaScript, TypeScript, Python, Java, C\#,
 <a name="cost"></a>
 
 There is no additional charge for the AWS CDK. You pay for AWS resources (such as Amazon EC2 instances or Elastic Load Balancing load balancers) that are created when you use the AWS CDK in the same way as if you created them manually. You only pay for what you use, as you use it. There are no minimum fees and no required upfront commitments.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

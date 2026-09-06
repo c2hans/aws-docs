@@ -118,7 +118,3 @@ The [AWS Partner Network (APN)](https://aws.amazon.com/partners) is a community 
 <a name="overview-partner-solutions-find"></a>
 
 The ** AWS SAP Partner Solutions** provides a centralized place to search, discover, and connect with trusted APN partners who offer solutions and services to help your business achieve faster time to value and maximize the benefits of running SAP solutions on AWS. For more information, see [AWS SAP Competency Partners](https://aws.amazon.com/sap/partner-solutions/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

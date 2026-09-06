@@ -224,7 +224,3 @@ Enter **AWSIncidents-** as free text instead of using the **Document name prefix
 <a name="runbooks-template-critical"></a>
 
 The `AWSIncidents-CriticalIncidentRunbookTemplate` is a template that provides the Incident Manager incident lifecycle in manual steps. These steps are generic enough to use in most applications, but detailed enough for responders to get started with incident resolution.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

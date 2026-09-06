@@ -20,7 +20,3 @@ When a client connects, CloudFront validates the certificate against the trust s
 + [Step 3: Test your revocation function](test-revocation-function.md)
 + [Step 4: Associate the function to your distribution](associate-function-distribution.md)
 + [Advanced revocation scenarios](advanced-revocation-scenarios.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

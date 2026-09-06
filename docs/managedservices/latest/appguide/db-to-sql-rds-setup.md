@@ -33,7 +33,3 @@ Complete these tasks to begin the import process.
 1. Submit a Management \| Other \| Other \| Update RFC requesting AMS to set the `SQLSERVER_BACKUP_RESTORE` option to the RDS created in step 1 (use the stack ID from the step 1 output, and the `customer_rds_s3_role` IAM role in this request, in this request).
 
 1. Submit an RFC to create an EC2 instance (you can use any existing EC2 or on-premise workstation/instances), and install Microsoft SQL Management Studio on the instance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

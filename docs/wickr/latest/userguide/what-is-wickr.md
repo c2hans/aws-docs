@@ -22,7 +22,3 @@ To use Wickr, your company must be signed up for Wickr. Your company's Wickr adm
 <a name="wickr-admin-docs"></a>
 
 This is the user guide for Wickr. It shows you how to sign up for Wickr as an end user, and how to use the Wickr messaging app. If you are an administrator of the Wickr service and need to view the Wickr Administration Guide, see the [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,3 @@ The device control console is hosted on the vehicle and is accessed with the IP 
 ![AWS DeepRacer device console home page](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-device-console-home.png)
 
 You’re now ready to calibrate and operate your vehicle. If this is your first time operating the vehicle, proceed to calibrating the vehicle now.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

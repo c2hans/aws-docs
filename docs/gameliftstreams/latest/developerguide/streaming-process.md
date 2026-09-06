@@ -327,7 +327,3 @@ The **Test stream** feature in the Amazon GameLift Streams console does not supp
  Amazon GameLift Streams begins deleting the application. During this time, the application is in `Deleting` status. After Amazon GameLift Streams deletes the application, you can no longer retrieve it.
 
  For more information, refer to [Delete a stream group](stream-groups.md#stream-groups-delete) and [Delete an application](applications.md#applications-delete).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -95,7 +95,3 @@ After the PoC stage, teams can maintain a balance between rapid release cycles a
 <a name="human-based-evaluation.c63ec8bd-c92c-5300-a3f2-ef31ec3c8263"></a>
 
 Human reviewers are generally considered the ultimate source of truth. Automated and model-based evaluations are powerful for scaling, but they must be calibrated and validated against human judgment. Human feedback is essential for creating the initial high-quality evaluation datasets and for periodically auditing the performance of the LLM-as-a-judge to make sure that it aligns with human preferences and hasn't drifted. Although implementing an automated evaluation system is critical for efficient generative AI solution development, retain a human review as the final quality gate. A human should check the quality of the generated output before promoting the solution to the next stage.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

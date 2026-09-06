@@ -63,7 +63,10 @@ The following example shows an IAM policy that grants permission to write to the
                     "kms:ViaService": "s3.{{us-east-1}}.amazonaws.com"
                 },
                 "StringLike": {
-                    "kms:EncryptionContext:aws:s3:arn": "arn:aws:s3:::{{amzn-s3-demo-bucket}}/{{S3-PREFIX}}*"
+                    "kms:EncryptionContext:aws:s3:arn": [
+                        "arn:aws:s3:::{{amzn-s3-demo-bucket}}",
+                        "arn:aws:s3:::{{amzn-s3-demo-bucket}}/{{S3-PREFIX}}*"
+                    ]
                 }
             }
         }
@@ -174,7 +177,3 @@ The following considerations apply when exporting mailbox jobs for Amazon WorkMa
   + Amazon WorkMail organization
   + AWS KMS CMK
   + Amazon S3 bucket
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

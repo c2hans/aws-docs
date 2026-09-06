@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/delete-placement
 
 If you need to replace a placement group or no longer need one, you can delete it. Before you can delete a placement group, it must contain no instances. You can terminate the instances, move them to another placement group, or remove them from the placement group.
 
-You cannot delete a placement group that is a parent of a cluster placement group. Delete the cluster placement groups first.
+You can't delete a placement group that is a parent of a cluster placement group. Delete the cluster placement groups first.
 
 ------
 #### [ Console ]
@@ -43,7 +43,3 @@ Remove-EC2PlacementGroup -GroupName {{my-cluster}}
 ```
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

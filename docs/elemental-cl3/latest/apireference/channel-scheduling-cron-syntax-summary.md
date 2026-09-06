@@ -20,7 +20,3 @@ Each part can specify either one value or a repeating value. A number by itself 
 | 15 | 1 | \* | \* | 1,2,3,4,5 | Every weekday at 8:15 PM Eastern Standard Time (UTC-05:00)<br />**Note:** The hour in position 2 must be provided in UTC, not your local time. |
 | 17 | \*/4 | \* | \* | \* | Every four hours on the 17th minute every day. 4:17 AM, 8:17 AM, etc. |
 | 0 | \*/1 | \* | \* | 1 | Every Monday, each hour at the top of the hour. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

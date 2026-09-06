@@ -46,7 +46,3 @@ DL models can be heavily impacted by data bias. Model and data bias detection an
 +  **Prediction drift and Feedback drift**, which require more involved approach of new versions of the models as otherwise it may impact the business objectives.
 
  Regardless of the types and causes of drifts, it is vital to monitor model metrics associated with training for passive retraining, and the model attribution data for active retraining. Monitoring these shifts in model efficacy can help with early intervention (Model Monitor), explainable analytics reports (SageMaker AI Clarify), and the ability to resolve the issue in a way that will not cause disruption to the project.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

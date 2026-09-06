@@ -33,7 +33,3 @@ The following table describes the important changes to the documentation since t
 | Logging Managed Service for Apache Flink API Calls with AWS CloudTrail | Managed Service for Apache Flink is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Managed Service for Apache Flink. For more information, see [](logging-using-cloudtrail.md).  | March 22, 2019 |
 | Create an Application (Firehose Sink) | Exercise to create a Managed Service for Apache Flink with an Amazon Kinesis data stream as a source, and an Amazon Data Firehose stream as a sink. For more information, see [Firehose sink](earlier.md#get-started-exercise-fh).  | December 13, 2018 |
 | Public release | This is the initial release of the Managed Service for Apache Flink Developer Guide for Java Applications. | November 27, 2018 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

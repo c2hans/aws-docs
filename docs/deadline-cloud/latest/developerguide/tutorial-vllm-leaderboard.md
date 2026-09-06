@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/tut
 
 This tutorial walks you through evaluating multiple large language models (LLMs) against multiple benchmarks in a single Deadline Cloud job. Each model becomes one task in a parameter sweep, and tasks run in parallel across workers. A final step aggregates per-model results into a ranked leaderboard in CSV and Markdown format.
 
-The source code for this tutorial is available in the [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vllm_lm_eval_leaderboard) repository on GitHub.
+The source code for this tutorial is available in the [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vllm_lm_eval_leaderboard) repository on the GitHub website.
 
 The following video demonstrates the vLLM LLM leaderboard workflow on Deadline Cloud.
 
@@ -18,7 +18,7 @@ The following video demonstrates the vLLM LLM leaderboard workflow on Deadline C
 ## Overview
 <a name="tutorial-vllm-overview"></a>
 
-Each task in the `EvalModels` step starts a local [vLLM](https://github.com/vllm-project/vllm) server, runs every benchmark with [EleutherAI's lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) against the local endpoint, then stops vLLM. Models load directly from Hugging Face Hub, so job attachments are not required.
+Each task in the `EvalModels` step starts a local vLLM server, runs every benchmark with EleutherAI's lm-evaluation-harness against the local endpoint, then stops vLLM. For more information, see [vLLM](https://github.com/vllm-project/vllm) and [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) on the GitHub website. Models load directly from Hugging Face Hub, so job attachments are not required.
 
 To complete this tutorial, follow these steps:
 
@@ -38,7 +38,7 @@ To complete this tutorial, follow these steps:
 Before you begin, the following setup is recommended:
 + A Deadline Cloud farm with an NVIDIA GPU service-managed fleet (A10G or L4, at least 32 GB RAM, at least 4 vCPUs).
 + A queue with a conda queue environment attached that reads `CondaPackages` and `CondaChannels` job parameters.
-+ The [Deadline Cloud CLI](https://github.com/aws-deadline/deadline-cloud) installed on your workstation.
++ The Deadline Cloud CLI installed on your workstation. For installation instructions, see the [deadline-cloud](https://github.com/aws-deadline/deadline-cloud) repository on the GitHub website.
 + Sufficient Deadline Cloud service quota for GPU instances. The default 3-model run on `g5.xlarge` (4 vCPUs and 1 GPU each) requires at least 3 GPUs under *OnDemand G instance GPUs per region* and 12 vCPUs under *OnDemand vCPUs per region*.
 
 **Note**
@@ -47,7 +47,7 @@ A Hugging Face token is only required for gated models (such as Llama). The defa
 ## Set up your farm
 <a name="tutorial-vllm-setup-farm"></a>
 
-The fastest way to get a compatible farm is to deploy the [CUDA farm CloudFormation template](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cuda_farm). The template provisions an NVIDIA GPU service-managed fleet (A10G or L4) and a queue with a conda queue environment that this bundle uses without modification.
+The fastest way to get a compatible farm is to deploy the [CUDA farm CloudFormation template](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cuda_farm) on the GitHub website. The template provisions an NVIDIA GPU service-managed fleet (A10G or L4) and a queue with a conda queue environment that this bundle uses without modification.
 
 **To configure the CLI for your farm**
 + After the CloudFormation stack reaches `CREATE_COMPLETE`, configure the Deadline Cloud CLI to use the new farm:
@@ -100,7 +100,7 @@ parameterSpace:
     - "EleutherAI/pythia-1.4b"
 ```
 
-To add or remove models, edit the `range` list. Each entry becomes a task visible in the Deadline Cloud monitor. Model IDs must be supported by vLLM (see the [vLLM supported models list](https://docs.vllm.ai/en/latest/models/supported_models.html)).
+To add or remove models, edit the `range` list. Each entry becomes a task visible in the Deadline Cloud monitor. Model IDs must be supported by vLLM. For more information, see the [supported models list](https://docs.vllm.ai/en/latest/models/supported_models.html) on the vLLM website.
 
 ### Choosing benchmarks
 <a name="tutorial-vllm-custom-benchmarks"></a>
@@ -112,7 +112,7 @@ deadline bundle submit . \
   --parameter Benchmarks="hellaswag,mmlu,gsm8k"
 ```
 
-All benchmarks in the list run sequentially against each model's vLLM server. Keep `MaxModelLen` less than or equal to the smallest model's context window. For a full list of available benchmarks, see the [lm-evaluation-harness tasks](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks) on GitHub.
+All benchmarks in the list run sequentially against each model's vLLM server. Keep `MaxModelLen` less than or equal to the smallest model's context window. For a full list of available benchmarks, see the [lm-evaluation-harness tasks](https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks) on the GitHub website.
 
 ## Download and review results
 <a name="tutorial-vllm-results"></a>
@@ -172,13 +172,9 @@ The most common cause is an Deadline Cloud service quota. Open the [Service Quot
 ## Related resources
 <a name="tutorial-vllm-related"></a>
 
-The following resources provide additional information:
-+ [Sample source code on GitHub](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vllm_lm_eval_leaderboard)
-+ [vLLM on GitHub](https://github.com/vllm-project/vllm)
-+ [lm-evaluation-harness on GitHub](https://github.com/EleutherAI/lm-evaluation-harness)
+The following resources provide additional information on the GitHub website and the vLLM website:
++ [Sample source code](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vllm_lm_eval_leaderboard)
++ [vLLM](https://github.com/vllm-project/vllm)
++ [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)
 + [CUDA farm CloudFormation template](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/cuda_farm)
 + [vLLM supported models](https://docs.vllm.ai/en/latest/models/supported_models.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

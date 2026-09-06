@@ -20,7 +20,3 @@ A migration journey can have two types of members: individuals and teams. A memb
 1. Choose the **Individuals and teams** tab.
 
 For information about how to invite an individual or a team to become a member of a journey, and how to grant the `JourneyAdmin` role or the `JourneyContributor` role to a new or existing journey member, see [JourneyAdmin](roles.md#journey-admin) and [JourneyContributor](roles.md#journey-contributor).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

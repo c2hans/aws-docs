@@ -61,7 +61,3 @@ If your workstation can connect to the internet, you can do a final validation o
 
 **Important**
 If you specify your local storage as the destination for this command, make sure that you have a backup of the files that you sync against. These files are overwritten by the contents in the specified Amazon S3 source.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

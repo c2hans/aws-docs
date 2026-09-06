@@ -149,7 +149,3 @@ The `kvssink` element has the following optional parameters. For more informatio
 | timecode-scale | The MKV timecode scale. | Milliseconds | 1 |
 | track-name | The MKV track name. | String | "kinesis\_video" |
 | iot-certificate | AWS IoT credentials to be used in the `kvssink` element. <br />`iot-certificate` accepts the following keys and values:  The `iot-thing-name` is **optional**. If `iot-thing-name` is not provided, the `stream-name` parameter value is used. +  `endpoint`=`iotcredentialsproviderendpoint` <br />+  `cert-path`=`/localdirectorypath /to/certificate` <br />+  `key-path`=`/localdirectorypath /to/private/key` <br />+  `ca-path`=`/localdirectorypath/to/ca-cert` <br />+  `role-aliases`=`role-aliases` <br />+  `iot-thing-name`=`YourIotThingName`  | String | None |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

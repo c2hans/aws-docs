@@ -20,7 +20,3 @@ The deactivated status appears on the board until all issues are moved out of it
 1. To reactivate a deactivated status, choose the toggle on the status. The status is no longer grayed out.
 **Note**
 There must be at least one active status in each category. If there is only one status in the category, you cannot deactivate it.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

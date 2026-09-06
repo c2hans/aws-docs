@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
  This diagram represents a generalization of how identity gets connected to the broader isolation story. Here you’ll notice that, as a user is authenticated, the system will return tenant context back to your application that includes the user’s binding to a tenant as well as the policies that will be used to enforce isolation for that tenant. This context then flows through all of our interactions and is used by the downstream elements of the SaaS environment to scope access to resource (in this case a database).
 
  How that scope is acquired and applied will vary based on the isolation model and resources you’re consuming, but this model provides a view of the core concepts. One key area of variation is in how the tenant scoping is determined. This scoping context could be attached to a service when it is deployed or it could be acquired at run-time. We’ll look at both of those models as we get into the specific isolation traits for different architecture models.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

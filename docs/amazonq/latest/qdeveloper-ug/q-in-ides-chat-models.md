@@ -31,7 +31,3 @@ To select the model Amazon Q uses when you chat in your IDE:
 The context window is the amount of context, including your conversation history and any explicit or automatic context, that Amazon Q can use to process and respond to your requests. Context is measured in tokens, which includes text and code.
 
 For more information about context, see [Adding context to the chat](ide-chat-context.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

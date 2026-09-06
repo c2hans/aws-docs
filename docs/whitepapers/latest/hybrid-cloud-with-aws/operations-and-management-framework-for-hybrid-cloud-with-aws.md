@@ -35,7 +35,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-with-aws
  The network interconnecting on-premises infrastructure with AWS can be through dedicated physical connections, VPN, or over the internet.
 
  With [AWS Direct Connect](https://aws.amazon.com/directconnect/), you can establish a private virtual interface from your on-premises network directly to your Amazon VPC. This provides an elastic, simple, and consistent network experience that can also increase bandwidth throughput. With [AWS site-to-site virtual private network (VPN)](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html), you can create an IPsec VPN connection between your Amazon VPC and your on-premises network over the internet. Additionally, some applications, especially those leveraging IoT technologies, use the public internet to exchange traffic with AWS resources such as [AWS service endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) and public EC2 instances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

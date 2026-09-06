@@ -36,7 +36,3 @@ You can also view the status of the registration on the **Requests** page.<a nam
    Any action you might have to take to complete a process, such as verifying your email, is also listed.
 
    1. To respond to an action request, select the radio-button next to the domain name and then select the action from the **Action** drop-down.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

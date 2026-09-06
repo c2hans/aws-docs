@@ -19,7 +19,3 @@ You can tailor the questions in a custom lens to be specific to a particular tec
 + [Adding tags to a custom lens in AWS WA Tool](lenses-tagging.md)
 + [Deleting a custom lens in AWS WA Tool](lenses-deleting.md)
 + [Lens format specification in AWS WA Tool](lenses-format-specification.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

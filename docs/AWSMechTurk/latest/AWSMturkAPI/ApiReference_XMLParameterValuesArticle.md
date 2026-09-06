@@ -25,7 +25,3 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiRefere
  The namespace for a `HTMLQuestion`,`ExternalQuestion`, `QuestionForm`, `QuestionFormAnswers`, or `AnswerKey` element is identical to the URL of the corresponding schema document, including the version date. While XML namespaces need not be URLs according to the XML specification, this convention ensures that the consumer of the value knows which version of the schema is being used for the data.
 
  For the locations of the schema documents, as well as instructions on how to include the version date in the URL, see [Schema Locations](ApiReference_SchemaLocationArticle.md#ApiReference_SchemaLocationArticle.title).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

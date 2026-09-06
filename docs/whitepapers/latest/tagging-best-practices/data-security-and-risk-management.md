@@ -27,7 +27,3 @@ Within an AWS environment, you will probably have accounts with differing compli
  Certain regulatory environments, such as insurance and healthcare, might be subject to mandatory data retention policies. Data retention using tags, combined with Amazon S3 Lifecycle policies, can be an effective and simple way to scope object transitions to a different storage tier. Amazon S3 Lifecycle rules can also be used to expire objects for data deletion after the mandatory hold period expires. Refer to [Simplify your data lifecycle by using object tags with Amazon S3 Lifecycle](https://aws.amazon.com/blogs/storage/simplify-your-data-lifecycle-by-using-object-tags-with-amazon-s3-lifecycle/) for an in-depth guide to this process.
 
  Additionally, when triaging or addressing security finding, tags can provide the investigator with important context that helps qualify the risk, and aids in engaging the appropriate teams to investigate or mitigate the finding.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

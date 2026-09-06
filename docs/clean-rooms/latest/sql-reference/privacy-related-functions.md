@@ -12,7 +12,3 @@ AWS Clean Rooms provides functions to help you comply with privacy-related compl
 **Topics**
 + [consent\_gpp\_v1\_decode function](consent_gpp_v1_decode.md)
 + [consent\_tcf\_v2\_decode function](consent_tcf_v2_decode.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

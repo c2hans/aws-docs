@@ -28,7 +28,3 @@ The ExpressLink candidate will be attached to the GPIO header of the PI using th
 <a name="elpg-testing-qualification-software"></a>
 
 A test suite is provided by the AWS FreeRTOS service team to perform the ExpressLink Qualification, a program managed by the AWS Partner Network team.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

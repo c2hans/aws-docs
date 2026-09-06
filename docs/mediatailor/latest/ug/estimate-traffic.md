@@ -28,7 +28,3 @@ Ensure your ad insertion capacity meets viewer demand by taking these specific a
 1. If you expect more than 500,000 concurrent viewers, then contact [AWS Support](https://aws.amazon.com/premiumsupport/) at least 2 weeks before your event. This allows AWS to ensure sufficient capacity for your ad personalization needs.
 
 For more information about implementing capacity planning in your workflow, see [Using prefetch scheduling](https://docs.aws.amazon.com/mediatailor/latest/ug/prefetch.html) to optimize ad delivery for high-traffic events.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

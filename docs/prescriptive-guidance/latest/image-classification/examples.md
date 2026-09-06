@@ -36,7 +36,3 @@ A high-speed camera for a highway monitoring system captures images of vehicles 
 1. The team determines their deployment infrastructure. Because the organization already has a data science team that can manage the model selection and maintenance, they choose to use a SageMaker AI model and deploy a SageMaker AI serverless endpoint.
 
 1. The team determines their model maintenance workflow. They create a monitoring pipeline that provides statistics about model prediction confidences and sends alerts if the statistics are outside of configured tolerances.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

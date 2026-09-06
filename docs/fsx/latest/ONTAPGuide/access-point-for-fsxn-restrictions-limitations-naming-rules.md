@@ -27,7 +27,3 @@ S3 access points attached to FSx for ONTAP volumes have the following restrictio
 + You can only create and attach S3 access points to FSx for ONTAP file systems running NetApp ONTAP version 9.17.1 and later.
 
 For a complete list of all access point restrictions and limitations, see [Restrictions and limitations for access points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-restrictions-limitations-naming-rules.html) in the *Amazon Simple Storage Service User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

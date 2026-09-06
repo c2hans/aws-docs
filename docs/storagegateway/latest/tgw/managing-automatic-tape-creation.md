@@ -54,7 +54,3 @@ Virtual tapes are uniquely identified by a barcode, and you can add a prefix to 
    The status of available virtual tapes is initially set to **CREATING** when the tapes are being created. After the tapes are created, their status changes to **AVAILABLE**. For more information, see [Understanding Tape Status](understand-tapes-status.md).
 
    For more information about enabling automatic tape creation, see [Creating Tapes Automatically](https://docs.aws.amazon.com/storagegateway/latest/tgw/GettingStartedCreateTapes.html#CreateTapesAutomatically).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

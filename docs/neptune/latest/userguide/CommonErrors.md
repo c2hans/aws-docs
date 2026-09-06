@@ -28,7 +28,3 @@ The following table contains the error code, message, and HTTP status.
 | ServiceUnavailable | 503 | The request has failed due to a temporary failure of the server. |
 | ThrottlingException | 500 | The request was denied due to request throttling. |
 | ValidationError | 400 | The input fails to satisfy the constraints specified by an AWS service. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

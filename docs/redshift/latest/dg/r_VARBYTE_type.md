@@ -19,7 +19,7 @@ Some examples where you might want to use a VARBYTE data type are as follows:
 + Joining tables on VARBYTE columns.
 + Creating materialized views that contain VARBYTE columns. Incremental refresh of materialized views that contain VARBYTE columns is supported. However, aggregate functions other than COUNT, MIN, and MAX and GROUP BY on VARBYTE columns don't support incremental refresh.
 
-To ensure that all bytes are printable characters, Amazon Redshift uses the hex format to print VARBYTE values. For example, the following SQL converts the hexadecimal string `6162` into a binary value. Even though the returned value is a binary value, the results are printed as hexadecimal `6162`.
+To make sure that all bytes are printable characters, Amazon Redshift uses the hex format to print VARBYTE values. For example, the following SQL converts the hexadecimal string `6162` into a binary value. Even though the returned value is a binary value, the results are printed as hexadecimal `6162`.
 
 ```
 select from_hex('6162');
@@ -123,7 +123,3 @@ The following are limitations when using the VARBYTE data type with Amazon Redsh
   + Parquet
   + Text
   + Comma‐separated values (CSV)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

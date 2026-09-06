@@ -18,7 +18,3 @@ AWS Billing and Cost Management is a web service that provides features that hel
 1. Choose **[\+] Region Name**
 
 To learn more, see [Billing and Cost Management](https://console.aws.amazon.com/costmanagement/home#/getting-started) in the AWS Management Console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

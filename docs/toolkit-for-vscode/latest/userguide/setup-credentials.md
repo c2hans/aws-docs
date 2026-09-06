@@ -91,7 +91,3 @@ aws_secret_access_key = {{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}
 aws_access_key_id = {{AKIAI44QH8DHBEXAMPLE}}
 aws_secret_access_key = {{je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY}}
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

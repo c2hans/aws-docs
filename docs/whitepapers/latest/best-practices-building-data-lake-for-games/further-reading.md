@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-buildi
 +  [Discovering metadata with AWS Lake Formation: Part 1](https://aws.amazon.com/blogs/big-data/discovering-metadata-with-aws-lake-formation-part-1/) (blog post)
 +  [Discovering metadata with AWS Lake Formation: Part 2](https://aws.amazon.com/blogs/big-data/discover-metadata-with-aws-lake-formation-part-2/) (blog post)
 +  [AWS Data and Analytics Competency Partners](https://aws.amazon.com/big-data/datalakes-and-analytics/partner-solutions/?blog-posts-cards.sort-by=item.additionalFields.createdDate&blog-posts-cards.sort-order=desc&partner-solutions-cards.sort-by=item.additionalFields.partnerNameLower&partner-solutions-cards.sort-order=asc&awsf.partner-solutions-filter-partner-type-data-and-analytics=*all&awsf.partner-solutions-filter-partner-usecase-data-and-analytics=*all&awsf.partner-solutions-filter-partner-location-data-and-analytics=*all&partner-case-studies-cards.sort-by=item.additionalFields.sortDate&partner-case-studies-cards.sort-order=desc)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

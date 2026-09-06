@@ -33,7 +33,3 @@ You specify highlight options as a JSON object. If the JSON object is empty, `hi
 + To specify the maximum number of occurrences of the search term(s) you want to highlight, use the `max_phrases` option; for example, `highlight.plot={max_phrases:3}`. The default is 1, the maximum is 5.
 + To specify the string to prepend to each highlighted term, use the `pre_tag` option; for example, `highlight.plot={pre_tag:'<strong>', post_tag:'</strong>'}`.
 + To specify the string to append to each highlighted term, use the `post_tag` option; for example, `highlight.plot={pre_tag:'<strong>', post_tag:'</strong>'}`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

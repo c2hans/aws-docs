@@ -90,7 +90,3 @@ For more information about how some other AWS services are affected by this, con
 When you create an organization through the AWS Organizations console, AWS Organizations automatically enables service control policies (SCPs) and attaches a default SCP to the root. This default SCP denies the `organizations:LeaveOrganization` and `account:CloseAccount` actions. In rare cases, an intermittent error might prevent this automatic process from completing.
 
 If you don't see the default SCP attached to your organization root, for instructions on how to manually configure the recommended security controls, see [Default security controls in AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_security_default_controls.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

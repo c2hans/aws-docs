@@ -48,7 +48,3 @@ In a variation of this use case, the event may contain only two files. The event
 You create a dynamic playlist in the event that interleaves sections of the movie with ad content, so: movie, ad content, movie, ad content, movie, and so on. All the inputs are file inputs.
 
 Each time you add the movie file as an input, you include the input clipping tags to create a clip out of a different segment of the movie: 0 to 20 minutes, 20 to 25 minutes, 25 to 40 minutes, and so on. Each time that the movie resumes, it will resume at the desired point.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

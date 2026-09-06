@@ -224,7 +224,3 @@ A: Asynchronous Inference queues incoming requests and processes them asynchrono
 A: Amazon SageMaker AI supports automatic scaling (autoscaling) your asynchronous endpoint. Autoscaling dynamically adjusts the number of instances provisioned for a model in response to changes in your workload. Unlike other hosted models SageMaker AI supports, with Asynchronous Inference you can also scale down your asynchronous endpoints instances to zero. Requests that are received when there are zero instances are queued for processing once the endpoint scales up. For more information, see [Autoscale an asynchronous endpoint](https://docs.aws.amazon.com/sagemaker/latest/dg/async-inference-autoscale.html).
 
 Amazon SageMaker Serverless Inference also automatically scales down to zero. You won’t see this because SageMaker AI manages scaling your serverless endpoints, but if you are not experiencing any traffic, the same infrastructure applies.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

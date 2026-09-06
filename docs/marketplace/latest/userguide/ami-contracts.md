@@ -64,7 +64,3 @@ For example, in a case where you have `ReadOnlyUsers` and `AdminUsers` dimension
  When customers purchase your product through AWS Marketplace using AMI contracts, they can agree to automatically renew the contract terms. Customers continue to pay for the entitlements every month or for 1, 2, or 3 years.
 
 Customers can modify their renewal settings at any time. For more information, see [Modifying an existing contract](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-ami-contracts.html#modify-existing-contract) in the *AWS Marketplace Buyer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

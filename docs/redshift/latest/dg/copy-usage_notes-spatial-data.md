@@ -12,7 +12,3 @@ You can COPY to `GEOMETRY` or `GEOGRAPHY` columns from data in a character-delim
 For information about how to load from a shapefile, see [Loading a shapefile into Amazon Redshift](spatial-copy-shapefile.md).
 
 For more information about the `GEOMETRY` or `GEOGRAPHY` data type, see [Querying spatial data in Amazon Redshift](geospatial-overview.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

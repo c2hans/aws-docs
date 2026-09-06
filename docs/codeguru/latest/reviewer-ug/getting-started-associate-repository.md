@@ -17,7 +17,3 @@ To create a repository association, choose one of the following.
 + If your repository type is Bitbucket, see [ Create a Bitbucket repository association](create-bitbucket-association.md).
 + If your repository type is GitHub or GitHub Enterprise Cloud, see [Create a GitHub or GitHub Enterprise Cloud repository association](create-github-association.md).
 + If your repository type is GitHub Enterprise Server, see [Create a GitHub Enterprise Server repository association](create-github-enterprise-association.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

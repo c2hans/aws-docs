@@ -52,7 +52,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-redshift-source-
    +  **IAM role** – choose the IAM role that can write to the Amazon S3 location you selected.
 
 1.  In **Custom Redshift paramters - optional**, enter the parameter and value.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

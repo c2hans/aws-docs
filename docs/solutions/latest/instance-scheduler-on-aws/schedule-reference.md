@@ -82,7 +82,3 @@ The Instance Scheduler on AWS configuration table in Amazon DynamoDB contains sc
 |  `stop_new_instances`  | Choose whether to stop an instance the first time it is tagged if it is running outside of the running period. By default, this field is set to true. |
 |  `timezone`  | The time zone the schedule will use. If no time zone is specified, the default time zone (UTC) is used. For a list of acceptable time zone values, refer to the **TZ** column of the [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). |
 |  `use_metrics`  | Choose whether to turn on CloudWatch metrics at the schedule level. This field overwrites the CloudWatch metrics setting you specified at deployment.<br /> **Note:** Enabling this feature will incur charges of $0.90/month per schedule or scheduled service. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Instance Scheduler on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

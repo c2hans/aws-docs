@@ -28,7 +28,3 @@ Provision IoT devices and systems with unique identities and credentials. Apply 
 +  [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) – A service that can be used to securely store and manage secrets in the cloud and encrypts the secrets using AWS Key Management Service (AWS KMS).
 +  [AWS KMS](https://aws.amazon.com/kms/) – Allows you to easily create and control the keys used for cryptographic operations in the cloud.
 +  [Security Pillar of AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html) and [IoT Lens](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/welcome.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

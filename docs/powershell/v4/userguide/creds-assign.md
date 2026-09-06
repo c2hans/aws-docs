@@ -42,7 +42,3 @@ When you run a command, AWS Tools for PowerShell searches for credentials in the
    For more information about using IAM roles for Amazon EC2 instances, see the [AWS SDK for .NET](https://aws.amazon.com/sdk-for-net/).
 
 If this search fails to locate the specified credentials, the command throws an exception.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

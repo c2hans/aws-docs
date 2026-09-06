@@ -172,7 +172,3 @@ The testing and debugging features described in this section are not available f
 To work with LocalStack in VS Code, connect to your LocalStack profile in the AWS Toolkit. When your LocalStack profile is active, the VS Code status bar shows **AWS: profile:localstack (custom endpoint)** with a check mark.
 
 For detailed information about working with your Lambda functions in the AWS Toolkit, see the [Working with AWS Lambda functions](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/remote-lambda.html) topic in this user guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

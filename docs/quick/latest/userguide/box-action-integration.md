@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/box-action-integr
 # Box action integration
 <a name="box-action-integration"></a>
 
-With the Box action connector, you can access Box AI features, manage files and folders, and organize content in hubs directly in Amazon Quick through natural language.
+With the Box connector, you can access Box AI features, manage files and folders, and organize content in hubs directly in Amazon Quick through natural language.
 
 Amazon Quick supports the following authentication methods for Box Agent.
 + **Default OAuth app** – Uses an AWS-managed OAuth application. No additional credentials are needed. You authenticate directly with your Box account.
@@ -118,7 +118,3 @@ For instructions on editing, sharing, or deleting your connector, see [Managing 
 + **Authentication popup fails** – Verify that your browser allows popups from the Amazon Quick console domain.
 + **Invalid client credentials (Custom OAuth app)** – Verify that the Client ID and Client secret match the values in your Box Developer Console app.
 + **Insufficient permissions** – Verify that your Box account has access to the files, folders, or hubs you are trying to access.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

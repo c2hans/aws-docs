@@ -36,7 +36,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/an
 + [Visualize Amazon Redshift audit logs using Amazon Athena and Amazon QuickSight](visualize-amazon-redshift-audit-logs-using-amazon-athena-and-amazon-quicksight.md)
 + [Visualize IAM credential reports for all AWS accounts using Amazon Quick Sight](visualize-iam-credential-reports-for-all-aws-accounts-using-amazon-quicksight.md)
 + [More patterns](analytics-more-patterns-pattern-list.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,3 @@ Your organization might implement [AWS Elemental Inference features](elemental-i
 | --- | --- | --- |
 | When configuring a channel, so that MediaLive can work with the Elemental Inference feed. | Elemental Inference | CreateFeed`DeleteFeed`<br />`GetFeed`<br />`ListFeeds`<br />`UpdateFeed` |
 | After configuration of a channel, so that MediaLive can use FAS to associate the channel with the Elemental Inference feed. | Elemental Inference | `AssociateFeed`<br />`DisassociateFeed`<br />`GetFeed` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

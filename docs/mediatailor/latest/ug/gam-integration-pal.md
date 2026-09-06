@@ -19,7 +19,3 @@ The nonce is an encrypted string that PAL generates for stream requests. Each re
 
 **Datazoom player SDKs**
 MediaTailor has partnered with Datazoom to provide free player SDKs to ease integrations with SDKs such as those offered in the Google Ad Manager PAL. For information about the Datazoom and MediaTailor partnership, see [Datazoom free player SDKs](ad-reporting-client-side-ad-tracking-integrations.md#ad-reporting-client-side-ad-tracking-integrations-dz). To access the Datazoom player SDKs, use the contact information on the [Datazoom with AWS](https://www.datazoom.io/partner-aws) site.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

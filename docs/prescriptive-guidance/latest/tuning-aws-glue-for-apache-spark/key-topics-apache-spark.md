@@ -140,7 +140,3 @@ This feature recognizes when you are joining two datasets of substantially diffe
 Data skew is one of the most common bottlenecks for Spark jobs. It describes a situation in which data is skewed to specific RDD partitions (and consequently, specific tasks), which delays the overall processing time of the application. This can often downgrade the performance of join operations. The skew join optimization feature dynamically handles skew in sort-merge joins by splitting (and replicating if needed) skewed tasks into roughly even-sized tasks.
 
 This feature is enabled when `spark.sql.adaptive.skewJoin.enabled` is set to true. For more details, see the [Apache Spark documentation](https://spark.apache.org/docs/latest/sql-performance-tuning.html#optimizing-skew-join). Data skew is discussed further in the [Optimize shuffles](optimize-shuffles.md) section.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

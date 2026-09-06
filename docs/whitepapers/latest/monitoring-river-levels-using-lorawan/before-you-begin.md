@@ -11,7 +11,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/monitoring-river-leve
 +  [**AWS IoT Core for LoRaWAN**](https://aws.amazon.com/iot-core/lorawan/) is a fully managed feature that removes the undifferentiated heavy-lifting of instantiating and operating a private LoRaWAN network by enabling customers to build a fully serverless, scalable, and secure LoRaWAN-based application that tightly integrates with AWS services, including [AWS IoT Core](https://aws.amazon.com/iot-core/).
 
 ![Diagram showing AWS IoT Core for LoRaWAN overview](http://docs.aws.amazon.com/whitepapers/latest/monitoring-river-levels-using-lorawan/images/iot-core-for-lorawan-overview.jpg)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

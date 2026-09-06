@@ -57,7 +57,3 @@ The following example generalizes the `Resource` element to "\*", which means th
 
 **Example 3: Prevent a member account in an OU from modifying its own alternate contacts**
 The following example SCP includes a condition that compares the account's organization path to a list of two OUs. This results in blocking a principal in any account in the specified OUs from modifying their own alternate contacts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -109,7 +109,3 @@ After you create the role and grant it permissions to access your resources in A
 1.  Modify your Amazon Personalize service role's trust policy so it prevents the [confused deputy problem](cross-service-confused-deputy-prevention.md). For a trust relationship policy example, see [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md). For information modifying a role's trust policy, see [Modifying a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html).
 
 1.  If you use AWS Key Management Service (AWS KMS) for encryption, you must grant Amazon Personalize and your Amazon Personalize IAM service role permission to use your key. For more information, see [Giving Amazon Personalize permission to use your AWS KMS key](granting-personalize-key-access.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -63,7 +63,3 @@ To allow approving/rejecting access requests directly from a Slack channel, make
 1. Enter an email address in the **Email address** field. Whenever an access request is created that requires approval from the IAM role you specified, the email addresses you associate with the role are notified.
 
 1. Select **Add email address**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

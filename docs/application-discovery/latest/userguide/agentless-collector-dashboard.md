@@ -73,7 +73,3 @@ In addition to metadata and database capacity information, the data collection m
 1. Choose the **Collection health** tab to see the status of data collection.
 
 After completing the data collection, your data collection module uploads collected data to your Amazon S3 bucket. Then, you can view this collected data as described in [Viewing your collected data](agentless-collector-gs-view-collected-data.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

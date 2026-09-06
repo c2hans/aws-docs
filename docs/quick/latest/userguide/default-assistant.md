@@ -18,7 +18,3 @@ The Quick system chat agent is set to use all chat features out of the box with 
 + Web search capabilities
 
 To learn how to customize a system chat agent as an Admin owner, see [Managing chat agent customization](https://docs.aws.amazon.com/quicksuite/latest/userguide/manage-agent.html). To learn how to control access to the system chat chat agent, see [Manage assets](https://docs.aws.amazon.com/quicksuite/latest/userguide/manage-qs-assets.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

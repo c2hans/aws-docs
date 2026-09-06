@@ -55,7 +55,3 @@ Use EventBridge to track agreement lifecycle events for your container listing i
 + **Targets** are resources that receive events when they match the event pattern defined for a rule. Many AWS services integrate with EventBridge and can serve as targets, including AWS Lambda functions, AWS Step Functions, and Amazon API Gateway.
 
 For more information about setting up EventBridge rules, see [Getting started: Create an Amazon EventBridge event bus rule](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

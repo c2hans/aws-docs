@@ -42,7 +42,3 @@ https://sns.us-east-2.amazonaws.com/
 1. **Sign the Request** – Use the AWS Signature Version 4 process to sign your request. This involves creating a canonical request, string-to-sign, and then calculating the signature. For more on AWS Signature Version 4, see [Use Signature Version 4 signing](https://docs.aws.amazon.com/ebs/latest/userguide/ebsapis-using-sigv4.html) in the *Amazon EBS User Guide*.
 
 1. **Send the Request** – Include the X-Amz-Security-Token in your request header to pass the temporary security credentials to Amazon SNS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

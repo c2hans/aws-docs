@@ -14,7 +14,3 @@ Evaluate which transactions, reports, and operational activities could have an i
  **Suggestion 16.6.2 – Create an automated test approach for key activities**
 
 If required, develop a test strategy to confirm that your SAP workload performance benchmarks are met. Evaluate how test landscapes and tools can enable a repeatable suite of tests to measure the impact of operational activities, change releases and major patching on the performance of your workload.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

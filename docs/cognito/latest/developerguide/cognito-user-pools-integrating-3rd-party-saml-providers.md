@@ -28,7 +28,3 @@ Amazon Cognito only requires your identity provider metadata document. Your prov
 | Ping Identity (PingFederate) | [Exporting SAML metadata from PingFederate](https://docs.pingidentity.com/integrations/contentful/configuring_single_sign-on/pf_contentful_integration_exporting_saml_metadata_from_pf.html) |
 | JumpCloud | [SAML Configuration Notes](https://jumpcloud.com/support/saml-configuration-notes) |
 | SecureAuth | [SAML application integration](https://docs.secureauth.com/2104/en/saml-application-integration.html) |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

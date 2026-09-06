@@ -12,7 +12,7 @@ You can add functionality like populating job parameters from environment variab
 ## Submit a job using Python
 <a name="with-python"></a>
 
-Deadline Cloud also has an open-source Python library to interact with the service. The [source code is available on GitHub](https://github.com/aws-deadline/deadline-cloud).
+Deadline Cloud also has an open-source Python library to interact with the service. The source code is available from the [deadline-cloud](https://github.com/aws-deadline/deadline-cloud) repository on the GitHub website.
 
 The library is available on pypi via pip (`pip install deadline`). It's the same library used by the Deadline Cloud CLI tool:
 
@@ -34,7 +34,7 @@ job_id = api.create_job_from_job_bundle(
 print(job_id)
 ```
 
- To create a dialog like the `deadline bundle gui-submit` command, you can use of `show_job_bundle_submitter` function from the [`deadline.client.ui.job_bundle_submitter`.](https://github.com/aws-deadline/deadline-cloud/blob/mainline/src/deadline/client/ui/job_bundle_submitter.py)
+ To create a dialog like the `deadline bundle gui-submit` command, you can use the `show_job_bundle_submitter` function. For more information, see [`deadline.client.ui.job_bundle_submitter`](https://github.com/aws-deadline/deadline-cloud/blob/mainline/src/deadline/client/ui/job_bundle_submitter.py) on the GitHub website.
 
  The following example starts a Qt application and shows the job bundle submitter:
 
@@ -51,8 +51,4 @@ app.exec()
 print(submitter.create_job_response)
 ```
 
-To make your own dialog you can use the `SubmitJobToDeadlineDialog` class in [`deadline.client.ui.dialogs.submit_job_to_deadline_dialog`](https://github.com/aws-deadline/deadline-cloud/blob/mainline/src/deadline/client/ui/dialogs/submit_job_to_deadline_dialog.py). You can pass in values, embed your own job specific tab, and determine how the job bundle gets created (or passed in).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+To make your own dialog you can use the `SubmitJobToDeadlineDialog` class. For more information, see [`deadline.client.ui.dialogs.submit_job_to_deadline_dialog`](https://github.com/aws-deadline/deadline-cloud/blob/mainline/src/deadline/client/ui/dialogs/submit_job_to_deadline_dialog.py) on the GitHub website. You can pass in values, embed your own job specific tab, and determine how the job bundle gets created (or passed in).

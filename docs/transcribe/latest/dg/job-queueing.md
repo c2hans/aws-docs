@@ -119,7 +119,3 @@ print(status)
 ```
 
 You can view the progress of a queued job via the AWS Management Console or by submitting a [`GetTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetTranscriptionJob.html) request. When a job is queued, the `Status` is `QUEUED`. The status changes to `IN_PROGRESS` once your job starts processing, then changes to `COMPLETED` or `FAILED` when processing is finished.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

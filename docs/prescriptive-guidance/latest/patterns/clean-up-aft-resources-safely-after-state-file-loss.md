@@ -127,7 +127,3 @@ For additional information about this architecture, see [Introduction to AFT](ht
 To view AFT queries on the CloudWatch Logs Insights dashboard, choose the **Saved and sample queries** icon from the upper-right corner, as illustrated in the following screenshot:
 
 ![Accessing AFT queries on the CloudWatch Logs Insights dashboard.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1342c0a6-4b07-46df-a063-ceab2e2f83c8/images/255d4032-738b-4600-9084-9684d2e9a328.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -131,7 +131,3 @@ After reviewing code security findings:
 + Adjust code review settings if needed (see [Enable pull request code review for GitHub repositories](enable-code-review.md))
 + Review your organization’s security requirements to understand validation criteria
 + Consider penetration testing for comprehensive security validation of deployed applications
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

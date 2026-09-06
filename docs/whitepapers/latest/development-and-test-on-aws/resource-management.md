@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/development-and-test-
  To separate out and allocate the cost for the various activities and phases of the development and test cycle, AWS offers various options. One option is to use separate accounts (for example, for development, testing, staging, and production), and each account will have its own bill. You can also consolidate multiple accounts using consolidated billing for [AWS Organizations](https://aws.amazon.com/organizations/) to simplify costs and take advantage of quantity discounts with a single bill.
 
  Another option is to make use of the [monthly cost allocation report](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/configurecostallocreport.html), which enables you to organize and track your AWS costs by using resource tagging. In the context of development and test, tags can represent the various stages or teams of the development cycle, though you are free to choose the dimensions you find most helpful.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

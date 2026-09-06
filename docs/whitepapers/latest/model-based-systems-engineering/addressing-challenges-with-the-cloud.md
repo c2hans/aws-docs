@@ -36,7 +36,3 @@ As a part of [**Amazon Sustainability Data Initiative (ASDI)**](https://sustaina
  Complex discrete manufacturing Industries are facing increasing global regulation including sustainability targets, and increased pressure to decrease time to market for new product introductions.
 
  Hence, increasing productivity while complying with sustainability goals can be applied to scale applications, such as MBSE/MBE, which spans over manufacturing, design, edge locations, devices and more. Leveraging renewable energy resources with AWS for your MBSE/MBE infrastructure can help you to commit your sustainability goals.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

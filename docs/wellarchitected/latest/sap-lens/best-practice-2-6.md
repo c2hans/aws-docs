@@ -15,7 +15,3 @@ Frequent, small, and reversible changes reduce the scope and impact of a change.
 + AWS Blog: [Amazon EBS crash-consistent snapshots](https://aws.amazon.com/blogs/storage/taking-crash-consistent-snapshots-across-multiple-amazon-ebs-volumes-on-an-amazon-ec2-instance/)
 + AWS Documentation: [Restoring to a specified time using Point-In-Time Recovery (PITR)](https://docs.aws.amazon.com/aws-backup/latest/devguide/point-in-time-recovery.html)
 + AWS Documentation: [AWS Backint for SAP HANA](https://aws.amazon.com/backint-agent/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

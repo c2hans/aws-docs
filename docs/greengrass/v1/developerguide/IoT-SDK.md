@@ -264,7 +264,3 @@ If you're running Python 3, use **print(ssl.OPENSSL\_VERSION)**.
    For this tutorial, you copy the `basicDiscovery.py` sample function, which uses the certificates and keys that you downloaded in [Create client devices in an AWS IoT Greengrass group](device-group.md).
 
 1. Copy `basicDiscovery.py` to the folder that contains the HelloWorld\_Publisher and HelloWorld\_Subscriber device certificates and keys.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

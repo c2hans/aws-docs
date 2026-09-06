@@ -24,7 +24,3 @@ The following diagram shows the basic workflow of Amazon Monitron.
    1. Technicians investigate based on the alerts, and resolve the developing fault. They enter feedback on the accuracy of the alerts, and report the failure mode, cause, and action taken in the app. Amazon Monitron learns from this feedback and continually improves.
 
 1. The app displays current and past temperature and vibration data in charts that are easy to understand and can be used while investigating an issue.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

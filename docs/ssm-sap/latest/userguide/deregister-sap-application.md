@@ -37,7 +37,3 @@ The parameter `application-id` is required. As the value, use the ApplicationID 
 <a name="step3-deregister-application"></a>
 
 Run the command [list-applications](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm-sap/list-applications.html) ([ListApplications](https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_ListApplications.html) API) to verify your application is not present.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ssm-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

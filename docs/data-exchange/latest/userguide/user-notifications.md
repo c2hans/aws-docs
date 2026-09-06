@@ -30,7 +30,3 @@ The following table provides more information about the notifications that you c
 | Sends notification for a schema change | Schema Change Planned for Data Set |
 | Sends notification for a data delay | Data Set Update Delayed |
 | Sends notification for a data deprecation | Deprecation Planned for Data Set |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

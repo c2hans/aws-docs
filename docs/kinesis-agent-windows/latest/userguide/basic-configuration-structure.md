@@ -63,7 +63,3 @@ JSON-formatted files are typically case sensitive, and you should assume that al
 + The value of `RecordParser` key-value pair for the `DirectorySource` source. For more information, see [DirectorySource Configuration](source-object-declarations.md#directory-source-configuration).
 + The value of the `InitialPosition` key-value pair for sources. For more information, see [Bookmark Configuration](source-object-declarations.md#advanced-source-configuration).
 + Prefixes for variable substitutions. For more information, see [Configuring Sink Variable Substitutions](sink-object-declarations.md#configuring-kinesis-agent-windows-sink-variable-substitution).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Agent for Windows. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesis-agent-windows` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

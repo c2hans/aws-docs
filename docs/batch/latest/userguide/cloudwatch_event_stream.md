@@ -19,7 +19,3 @@ AWS Batch jobs are available as EventBridge targets. Using simple rules, you can
 + [AWS Batch jobs as EventBridge targets](batch-cwe-target.md)
 + [Tutorial: Listen for AWS Batch job events using EventBridge](batch_cwet.md)
 + [Tutorial: Sending Amazon Simple Notification Service alerts for failed job events](batch_sns_tutorial.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

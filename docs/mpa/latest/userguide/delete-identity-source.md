@@ -87,7 +87,3 @@ To delete an identity source, you must first delete all teams associated with id
 If you deleted the IAM Identity Center instance connected to your identity source, you can still delete the Multi-party approval identity source. However, if you have active approval teams when the IAM Identity Center instance is deleted, these teams become non-functional. Approvers can no longer access the Multi-party approval portal to vote on sessions. To restore functionality, create a new IAM Identity Center instance with users and connect to a new identity source before you follow the approval team recovery process.
 
 For steps to recover approval teams that are in an error state, see [Troubleshooting](troubleshooting.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Multi-party approval. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mpa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

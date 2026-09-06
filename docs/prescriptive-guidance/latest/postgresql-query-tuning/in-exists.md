@@ -106,7 +106,3 @@ WHERE SP.PROGNAME  = '18FCE8FDAF365BB'
 After the modification, the query is taking less than 13 ms to process 4 million records
 
 According to the query plan of the modified query, the table `vehicleservicehistory` can have an index scan. Using an index scan reduces the cost and the number of affected rows. This way, you can reduce the runtime of a query and increase its performance.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

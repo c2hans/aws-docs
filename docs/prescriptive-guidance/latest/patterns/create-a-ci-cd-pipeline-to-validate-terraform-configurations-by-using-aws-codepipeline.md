@@ -193,7 +193,3 @@ The `buildspec_validate.yml` file also supports the following variables to activ
 | `ENABLE_TFCHECKOV` | "Y" | Activates checkov scan |
 | `ENABLE_TFSEC` | "Y" | Activates tfsec scan |
 | `TFSEC_VERSION` | "v1.28.1" | Defines the tfsec version |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

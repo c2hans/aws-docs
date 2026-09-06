@@ -36,7 +36,3 @@ To list your SaaS product without displaying public pricing, see [Update pricing
 + [Integrating your SaaS contract product with AWS Marketplace](saas-integrate-contract.md)
 + [Integrating your SaaS contract-based product with AWS Marketplace](saas-integrate-contract-with-pay.md)
 + [Deploying a serverless SaaS integration](deploy-serverless-saas.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

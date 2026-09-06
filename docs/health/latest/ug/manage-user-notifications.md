@@ -76,7 +76,3 @@ No. The current plain text AWS Health emails are disabled after the migration co
 Health operations, Security, and Billing notifications correspond to AWS Health account notifications and scheduled changes that have the operations, security, and billing persona respectively. AWS Health events with more than one persona tag are sent through the Security and Billing categories. Account-specific issues include issue category health events that are specific to an AWS account.
 
 Public service events aren't available through AWS managed notifications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

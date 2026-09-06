@@ -25,7 +25,3 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/building-
 <a name="building-3P-services-service-coordination"></a>
 + Consolidate interdependent behaviors within a single service
   + For example, any applications launched on the startup of the agent workspace should be done by one service to ensure a consistent launch order for agents
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer Agent Workspace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agentworkspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -91,7 +91,3 @@ User access management is not supported from the Grafana workspace. Use the Amaz
 
 **Why am I noticing changes in my access levels? For example, I previously had admin access, but now only have editor permissions.**
 An admin for your workspace might have changed your permissions. This can happen inadvertently in the case of a mismatch between your user and group associations in IAM Identity Center and your permissions in Amazon Managed Grafana. In this case, resolving the mismatch might have removed your higher access permissions. You can request an admin to re-assign the required access level from the Amazon Managed Grafana console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

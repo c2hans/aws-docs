@@ -92,7 +92,3 @@ You can perform the setup from entirely within the tool. To do so, choose **Run 
 <a name="dotnet-refactoring-automatic-setup-script"></a>
 
 Alternatively, you can perform the setup using a script. Choose **Download** to generate a .ps1 script. Run the script to perform the setup. If the user to set up has insufficient permissions, an administrator can run the generated script. Verify the contents of the script before you run it to ensure that it has not been altered.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

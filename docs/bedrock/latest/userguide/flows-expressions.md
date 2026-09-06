@@ -35,7 +35,3 @@ You can use the following expressions to extract a part of the input (the exampl
 | [{{int1}}, {{int2}}, ...] | The members at the indices specified by each {{int}} in an array. | $.data.numbers[0, 3] | [1, 5] |
 | [{{int1}}:{{int2}}] | An array consisting of the items at the indices between {{int1}} (inclusive) and {{int2}} (exclusive) in an array. Omitting {{int1}} or {{int2}} is equivalent to the marking the beginning or end of the array. | $.data.organisms.mammals[1:] | ["horse", "mouse"] |
 | \* | A wildcard that can be used in place of a {{name}} or {{int}}. If there are multiple results, the results are returned in an array. | $.data.\*.mammals | [["cat", "dog"], ["rabbit", "horse", "mouse"]] |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

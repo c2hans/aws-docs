@@ -250,7 +250,3 @@ If you're new to Git and you don't want to mess up your CodeCommit repository, e
 To prevent ongoing charges to your AWS account after you're done using this sample, delete the CodeCommit repository. For instructions, see [Delete an AWS CodeCommit Repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-delete-repository.html) in the *AWS CodeCommit User Guide*.
 
 Make sure also to delete the environment. For instructions, see [Deleting an Environment](delete-environment.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

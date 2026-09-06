@@ -16,7 +16,3 @@ The following figure and table describe the main components that interact to pro
 | 3 | Your policies.<br />Typically you have one policy per resource, although you could have multiple. The AWS service itself provides an API you use to upload and manage your policies. |
 | 4 | Requesters and their incoming requests to the AWS service. |
 | 5 | The access policy language evaluation code.<br />This is the set of code within the AWS service that evaluates incoming requests against the applicable policies and determines whether the requester is allowed access to the resource. For information about how the service makes the decision, see [Evaluation logic](sns-access-policy-language-evaluation-logic.md). |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

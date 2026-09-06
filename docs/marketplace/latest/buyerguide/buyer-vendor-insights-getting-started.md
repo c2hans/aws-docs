@@ -81,7 +81,3 @@ If you no longer want access to assessment data for a vendor product, you can un
 1. Type **Unsubscribe** in the text input field, then choose **Unsubscribe**.
 
    A success message appears, which indicates that you unsubscribed from AWS Marketplace Vendor Insights data and will no longer be charged for access.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

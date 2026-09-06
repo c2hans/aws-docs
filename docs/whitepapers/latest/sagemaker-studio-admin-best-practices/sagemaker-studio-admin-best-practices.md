@@ -35,7 +35,3 @@ Publication date: **April 25, 2023** ([Document revisions](document-revisions.md
 +  Classify and protect your data at rest and in transit with encryption.
 +  Consider how to log and monitor various application programming interfaces (APIs) and user activities for compliance.
 +  Customize the SageMaker AI Studio notebook experience with your own images and lifecycle configuration scripts.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

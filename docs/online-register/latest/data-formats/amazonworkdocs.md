@@ -33,7 +33,3 @@ Amazon WorkDocs provides the following APIs for data retrieval.
 | <a name="workdocs-GetGroup"></a>[GetGroup](https://docs.aws.amazon.com/workdocs/latest/APIReference/API_Operations.html) | Retrieve details for the specified group | Read |
 | <a name="workdocs-GetResources"></a>[GetResources](https://docs.aws.amazon.com/workdocs/latest/APIReference/API_GetResources.html) | Get a collection of resources | Read |
 | <a name="workdocs-SearchResources"></a>[SearchResources](https://docs.aws.amazon.com/workdocs/latest/APIReference/API_SearchResources.html) | Search metadata and the content of resources | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

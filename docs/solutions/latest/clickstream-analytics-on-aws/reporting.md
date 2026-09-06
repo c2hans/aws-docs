@@ -13,7 +13,3 @@ Once the data are processed and modeled by the data pipeline, you can enable the
 You need to make the following configuration for Reporting.
 + **Create sample dashboard in QuickSight**: Enabling this feature allows the guidance to create sample dashboards in your QuickSight account.
 + **QuickSight user**: Select an admin user for the guidance to create QuickSight resources. (Only required for AWS China Regions)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Clickstream Analytics on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

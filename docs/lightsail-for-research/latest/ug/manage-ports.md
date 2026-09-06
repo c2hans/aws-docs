@@ -154,7 +154,3 @@ You can complete the following additional next steps after you've successfully m
 + Get your virtual computer's key pair. With the key pair, you can establish a connection using numerous SSH clients, such as OpenSSH, PuTTY, and Windows Subsystem for Linux. For more information, see [Get a key pair for a Lightsail for Research virtual computer](get-ssh-keys.md).
 + Connect to your virtual computer using SSH to manage it using the command line. For more information, see [Transfer files to Lightsail for Research virtual computers using Secure Copy](connect-using-scp.md).
 + Connect to your virtual computer using SCP to securely transfer files. For more information, see [Transfer files to Lightsail for Research virtual computers using Secure Copy](connect-using-scp.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail for Research. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail-for-research` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

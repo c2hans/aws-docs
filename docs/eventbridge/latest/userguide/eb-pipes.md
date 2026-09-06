@@ -43,7 +43,3 @@ For example, a pipe could be used to create an e-commerce system. Suppose you ha
 1. The pipe then sends that data to the EventBridge API Destination enrichment, which returns the customer information for that order.
 
 1. Lastly, the pipe sends the enriched data to the AWS Step Functions state machine, which processes the order.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

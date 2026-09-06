@@ -20,7 +20,3 @@ When Migration Hub receives an update, it is displayed on the updates page. Ther
 + [Tracking when you use AWS Application Migration Service to perform discovery first and then migrate](updates-tracking-wt-disco-first.md)
 + [Tracking when you use AWS Application Migration Service to migrate without performing discovery](updates-tracking-wt-no-disco.md)
 + [Troubleshooting and manually mapping migration updates in AWS Migration Hub](updates-tracking-wt-troubleshooting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

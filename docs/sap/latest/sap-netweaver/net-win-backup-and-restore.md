@@ -50,7 +50,3 @@ With Amazon FSx, backups are file-system-consistent, highly durable, and increme
 Amazon FSx automatically takes backups of your file systems once a day. These daily backups are taken during the daily backup window that you established when you created the file system.
 
 If you want to set up a custom backup schedule, you can [deploy our reference solution](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/custom-backup-schedule.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

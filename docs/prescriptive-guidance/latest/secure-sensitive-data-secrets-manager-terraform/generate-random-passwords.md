@@ -28,7 +28,3 @@ Using random secrets generation when you deploy IaC help you protect sensitive d
 
 **Important**
 When you use Terraform as a data source, secrets are not stored in the [state file](https://developer.hashicorp.com/terraform/language/state). But after you use that secret in a database or any service, then it is stored in the state file. We recommend that you rotate the secrets immediately or create very restrictive permissions to access the state file. For more information, see [Protecting sensitive data in the Terraform state file](terraform-state-file.md) in this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

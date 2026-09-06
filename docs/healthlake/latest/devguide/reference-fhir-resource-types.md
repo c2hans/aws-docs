@@ -44,7 +44,3 @@ You cannot make `GET` or `POST` requests with FHIR `OperationOutcome` and `Param
 **AuditEvent** — An AuditEvent resource can be created or read, but it cannot be updated or deleted.
 **Bundle** — There are multiple ways HealthLake manages Bundle requests. For more details, see [Bundling FHIR resources](managing-fhir-resources-bundle.md).
 **VerificationResult** — This resource type is only supported for data stores created after December 09, 2023.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

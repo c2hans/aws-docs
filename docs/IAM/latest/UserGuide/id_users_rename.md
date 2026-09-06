@@ -48,7 +48,3 @@ This is true also if an administrator changes the path; the administrator needs 
 <a name="id_users_manage_list-users-rename"></a>
 + AWS CLI: [aws iam update-user](https://docs.aws.amazon.com/cli/latest/reference/iam/update-user.html)
 + AWS API: [UpdateUser](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateUser.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

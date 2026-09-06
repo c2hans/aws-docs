@@ -65,7 +65,3 @@ In the default security group, do the following:
 Add an inbound rule to permit traffic using the TCP protocol over ports `2223-2225` from the cluster security group.
 In the cluster security group, do the following:
 Add an inbound rule to permit traffic using the TCP protocol over ports `2223-2225` from the default security group.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

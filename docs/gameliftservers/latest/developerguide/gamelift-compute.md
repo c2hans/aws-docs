@@ -51,7 +51,7 @@ AMI versions are regularly updated. When you create a new fleet, Amazon GameLift
 ## Instance types
 <a name="gamelift-compute-instance"></a>
 
-A managed fleet's instance type determines the kind of hardware that is deployed for all fleet instances, and instance types are generally available in various sizes. All Amazon GameLift Servers managed fleet use Amazon EC2 instances, and support a wide range of instance types that offer different combinations of computing power, memory, storage, and networking capabilities. The availability of instance types varies depending on the locations you choose.
+A managed fleet's instance type determines the kind of hardware that is deployed for all fleet instances, and instance types are generally available in various sizes. All Amazon GameLift Servers managed fleets use Amazon EC2 instances, and support a wide range of instance types that offer different combinations of computing power, memory, storage, and networking capabilities. The availability of instance types varies depending on the locations you choose.
 
 The Amazon GameLift Servers console provides useful tools to help you find the right instance types for your game build and your deployment locations. For managed container fleets, the console also offers guidance on your game's CPU power and memory requirements.
 
@@ -90,7 +90,3 @@ You can view default service quotas for Amazon GameLift Servers and current quot
 + For a list of your account's current quotas for instance types per Region, run the AWS Command Line Interface (AWS CLI) command [`describe-ec2-instance-limits`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/describe-ec2-instance-limits.html). This command returns the number of active instances that you have in your default Region (or in another Region that you specify).
 
 As you prepare to launch your game, fill out a launch questionnaire in the [Amazon GameLift Servers console](https://console.aws.amazon.com/gamelift/). The Amazon GameLift Servers team uses the launch questionnaire to determine the correct quotas and limits for your game.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ The AWS SDK for .NET is distributed as multiple [NuGet](https://www.nuget.org/) 
 As the standard for .NET package management, NuGet is the preferred option for installing the SDK, and provides a number of service-specific packages, such as AWSSDK.EC2 or AWSSDK.S3, each of which depends on the AWSSDK.Core package, which is automatically installed when you reference a service package in the NuGet Package Manager.
 
 If you’re working with older versions of .NET that don’t support .NET Standard 2.0, then the versions of the SDK prior to v3.5 also contain Portable Class Library assemblies, and the [AWS Mobile SDK for Unity](https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/what-is-unity-plugin.html) and [AWS Mobile SDK for .NET and Xamarin](https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/Welcome.html) are available for older versions of Unity and Xamarin.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

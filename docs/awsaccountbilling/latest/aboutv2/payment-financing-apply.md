@@ -65,7 +65,3 @@ You're required to submit an application before you can begin using Financing. E
 1. Choose **Submit**.
 
 The information provided during the application process and your signed documents are shared with the lender. The lender will activate your financing after confirming you are approved, and all necessary documents have been received. If there is additional information needed, the lender might reach out to you at the email address you provided in your application.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

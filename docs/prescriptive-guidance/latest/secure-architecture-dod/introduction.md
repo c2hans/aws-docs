@@ -17,7 +17,3 @@ This guide helps you meet SCCA requirements by using the [Landing Zone Accelerat
 <a name="intended-audience"></a>
 
 This guide is intended for individuals who need to comply with the DoD Secure Cloud Computing Architecture in order to help secure IL4 and IL5 information in the AWS Cloud. If you haven't done so already, review the [DISA Cloud Computing Security Requirements Guide ](https://disa.mil/-/media/files/disa/news/events/symposium/cloud-computing-security-requirements-guide.ashx)before reading this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

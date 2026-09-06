@@ -17,7 +17,3 @@ Activation from the Support Center Console creates the following resources in `u
 | AWS Identity and Access Management (IAM) | Customer-managed policy | `AIDevOpsAllowAwsSupportActionsPolicy-{{suffix}}` | Attached to the `DevOpsAgentRole-AgentSpace-{{suffix}}` role. | Grants `iam:CreateServiceLinkedRole`, scoped to the AWS Resource Explorer service-linked role ARN (`arn:aws:iam::{{ACCOUNT_ID}}:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer`). This permission allows the agent to create the AWS Resource Explorer service-linked role on your behalf if it doesn't already exist, so the agent can use AWS Resource Explorer for topology discovery. |
 
 The Support Center Console activation doesn't create resources in any other AWS Region.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

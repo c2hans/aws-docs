@@ -36,7 +36,3 @@ AWS Transform supports containerizing the following application types:
 This step runs automatically. AWS Transform displays progress updates as it analyzes and containerizes each application. If AWS Transform encounters issues, it may ask you for clarification or additional information.
 
 When containerization is complete, AWS Transform moves to the next step where you review the generated artifacts. The outputs are saved in the Artifact Store.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

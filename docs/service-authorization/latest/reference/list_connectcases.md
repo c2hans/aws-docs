@@ -589,7 +589,3 @@ Amazon Connect Cases defines the following condition keys that can be used in th
 |   [cases:CreatedBy](https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_service-with-iam.html)  | Filters access by who created the the resource (user ARN or custom entity) | String |
 |   [cases:RelatedItemType](https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_service-with-iam.html)  | Filters access by the type of related item. Possible values: Contact, Comment, File, Sla, ConnectCase, Custom | String |
 |   [connect:UserArn](https://docs.aws.amazon.com/connect/latest/APIReference/API_User.html)  | Filters access by connect's UserArn | ARN |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

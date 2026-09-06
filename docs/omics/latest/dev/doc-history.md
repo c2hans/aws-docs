@@ -32,7 +32,3 @@ The following table describes the documentation releases for HealthOmics.
 | [New managed policy](#doc-history) | HealthOmics added a new managed policy that provides full access. To learn more, see [AWS managed policies](https://docs.aws.amazon.com/omics/latest/dev/security-iam-awsmanpol.html?icmpid=docs_omics_rss). | February 23, 2023 |
 | [New managed policy](#doc-history) | HealthOmics added a new managed policy that limits access to read only. To learn more, see [AWS managed policies](https://docs.aws.amazon.com/omics/latest/dev/security-iam-awsmanpol.html?icmpid=docs_omics_rss). | November 29, 2022 |
 | [Initial release](#doc-history) | Initial release of the HealthOmics User Guide | November 29, 2022 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

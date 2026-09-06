@@ -123,7 +123,3 @@ After you copy the updated policy, the following example has the new `Sid` block
 For more information, see [Sid](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_sid.html) in the *IAM User Guide*.
 
 For more information about the new fine-grained actions, see the [Mapping fine-grained IAM actions reference](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/migrate-granularaccess-iam-mapping-reference.html) and [Using fine-grained AWS Cost Management actions](https://docs.aws.amazon.com/cost-management/latest/userguide/migrate-granularaccess-whatis.html#migrate-user-permissions).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

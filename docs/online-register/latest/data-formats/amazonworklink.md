@@ -24,7 +24,3 @@ Amazon WorkLink provides the following APIs for data retrieval.
 | <a name="worklink-ListWebsiteAuthorizationProviders"></a>[ListWebsiteAuthorizationProviders](https://docs.aws.amazon.com/worklink/latest/api/API_ListWebsiteAuthorizationProviders.html) | List the website authorization providers for an Amazon WorkLink fleet | List |
 | <a name="worklink-ListWebsiteCertificateAuthorities"></a>[ListWebsiteCertificateAuthorities](https://docs.aws.amazon.com/worklink/latest/api/API_ListWebsiteCertificateAuthorities.html) | List the website certificate authorities associated with an Amazon WorkLink fleet | List |
 | <a name="worklink-SearchEntity"></a>[SearchEntity](https://docs.aws.amazon.com/worklink/latest/ag/manage-devices.html) | List devices for an Amazon WorkLink fleet | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

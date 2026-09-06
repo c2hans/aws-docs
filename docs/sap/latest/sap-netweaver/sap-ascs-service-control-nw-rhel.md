@@ -380,7 +380,3 @@ LD_LIBRARY_PATH=/usr/sap/<SID>/ERS<ers_sys_nr>/exe:$LD_LIBRARY_PATH; export LD_L
   LD_LIBRARY_PATH=/usr/sap/RHX/ASCS00/exe:$LD_LIBRARY_PATH; export LD_LIBRARY_PATH; /usr/sap/RHX/ASCS00/exe/sapstartsrv pf=/usr/sap/RHX/SYS/profile/RHX_ASCS00_rhxascs -D -u rhxadm
   LD_LIBRARY_PATH=/usr/sap/RHX/ERS10/exe:$LD_LIBRARY_PATH; export LD_LIBRARY_PATH; /usr/sap/RHX/ERS10/exe/sapstartsrv pf=/usr/sap/RHX/SYS/profile/RHX_ERS10_rhxers -D -u rhxadm
   ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

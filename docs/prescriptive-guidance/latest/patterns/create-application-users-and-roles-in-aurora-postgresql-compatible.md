@@ -105,7 +105,3 @@ The `pg_signal_backend` role is intended to allow administrators to enable trust
 **Fine-tuning access**
 
 In some cases, it might be necessary to provide more granular access to the users (for example, table-based access or column-based access). In such cases, additional roles can be created to grant those privileges to the users. For more information, see [PostgreSQL Grants](https://www.postgresql.org/docs/8.4/sql-grant.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

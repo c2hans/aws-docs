@@ -17,7 +17,3 @@ AWS Signin provides the following APIs for data retrieval.
 | <a name="signin-IntrospectOAuth2Token"></a>[IntrospectOAuth2Token](https://docs.aws.amazon.com/signin/latest/APIReference/API_IntrospectOAuth2Token.html) | Inspect the metadata and active state of an OAuth 2.0 access token or refresh token | Read |
 | <a name="signin-ListResourcePermissionStatements"></a>[ListResourcePermissionStatements](https://docs.aws.amazon.com/signin/latest/APIReference/API_ListResourcePermissionStatements.html) | List the SignIn Resource Based Policy statements in your account | List |
 | <a name="signin-ListTrustedIdentityPropagationApplicationsForConsole"></a>[ListTrustedIdentityPropagationApplicationsForConsole](https://docs.aws.amazon.com/signin/latest/APIReference/API_ListTrustedIdentityPropagationApplicationsForConsole.html) | List all Identity Center applications that represent the AWS Management Console | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ After Jira processes the request, Jira displays a message indicating that the re
    Review the Automation Execution details, including the status of the execution, parameters, and step functions.
 
 When the execution is complete, the issue moves to the **Execution complete** status.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,3 @@ Efficiently reuses AWS accounts using a cleanup mechanism that is automatically 
  **Manage solution settings from the web UI**
 
 As an administrator, you manage global solution settings directly from the **Settings** page in the web UI, without using the AWS Management Console. These settings include lease policies, account cleanup behavior, maintenance mode, terms of service, and cost reporting.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

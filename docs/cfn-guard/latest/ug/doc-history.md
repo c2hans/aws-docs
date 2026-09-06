@@ -17,7 +17,3 @@ The following table describes the documentation releases for AWS CloudFormation 
 | [Version 2.0.4 release](#doc-history) | Version 2.0.4 introduces the following improvements:<br />The `--payload` flag was added to the `validate` command.<br />For more information, see [validate](cfn-guard-validate.md) in the Guard CLI reference. | October 19, 2021 |
 | [Version 2.0.3 release](#doc-history) | Version 2.0.3 introduces the following improvements:+  You can provide test names for each test in your unit testing file. For more information, see [Testing Guard rules](testing-rules.md). <br />+  The following options were added to the `validate` command:   `--output-format`   `--show-summary`   `--type`   <br />For more information, see [validate](cfn-guard-validate.md) in the Guard CLI reference.  | July 27, 2021 |
 | [Initial release](#doc-history) | Initial release of the AWS CloudFormation Guard User Guide. | July 15, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation Guard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cfn-guard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

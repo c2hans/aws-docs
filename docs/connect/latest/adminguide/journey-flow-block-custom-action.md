@@ -33,7 +33,3 @@ Invoke a Lambda to check offer eligibility, store the result in eligibilityStatu
 Before you can invoke a Lambda using this block, you need to set up your Lambda functions at your Amazon Connect instance at AWS admin console. For more information, see [Invoke Lambda functions](lambda-invoke-functions.md).
 
 When you do this for a journey flow block, you use the **Outbound campaigns** under the **Channels and communications** section, and to choose your Lambda function, you use the **Set up custom actions** section and then the **Lambda Functions** drop down.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

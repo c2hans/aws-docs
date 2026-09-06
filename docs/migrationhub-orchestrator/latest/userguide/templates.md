@@ -26,7 +26,3 @@ Before you can run the workflow, some templates require the Migration Hub Orches
 | [Replatform SQL server on Amazon RDS](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/replatform-sql-rds.html) | Yes |
 | [Import virtual machine images to AWS](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html) | Optional |
 | [Replatform applications to Amazon ECS](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/replatform-to-ecs.html) | No |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Hub Orchestrator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-orchestrator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

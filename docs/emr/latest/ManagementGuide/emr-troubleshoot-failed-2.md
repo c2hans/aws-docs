@@ -40,7 +40,3 @@ Compare the release label that you used to launch the cluster with the latest Am
 <a name="emr-troubleshoot-failed-2-vpc"></a>
 
 If your cluster was launched in a Amazon VPC subnet, the subnet needs to be configured as described in [Configure networking in a VPC for Amazon EMR](emr-plan-vpc-subnet.md). In addition, check that the subnet you launch the cluster into has enough free elastic IP addresses to assign one to each node in the cluster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

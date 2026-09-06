@@ -82,7 +82,3 @@ The following list outlines the limitations of spaces:
 + File uploads are limited to 500 MB for PDF, Word, and PowerPoint files, and 50 MB for all other supported file types.
 + Spaces support up to 10,000 files (compared to 20 files in regular chat conversations), as long as the total space storage is less than 10 GB.
 + You can add at most 20 resources of a specific resource type (dashboard, topic, knowledge base, or action) to a space.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

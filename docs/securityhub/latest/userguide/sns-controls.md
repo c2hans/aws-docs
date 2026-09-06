@@ -122,7 +122,3 @@ This control doesn't evaluate policy conditions that use wildcard characters or 
 <a name="sns-4-remediation"></a>
 
 To update access policies for an SNS topic, see [Overview of managing access in Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-overview-of-managing-access.html) in the *Amazon Simple Notification Service Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

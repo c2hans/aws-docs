@@ -121,7 +121,3 @@ Follow the steps in this section to enforce IPAM for all but a given list of Org
 1. Remove the example values (like `o-a1b2c3d4e5/r-ab12/ou-ab12-11111111/ou-ab12-22222222/`) and add the AWS Organizations entity paths of the OUs that you want to have the option (but not require) to use IPAM. For more information about entity path, see [Understand the AWS Organizations entity path](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_last-accessed-view-data-orgs.html#access_policies_last-accessed-viewing-orgs-entity-path) and [aws:PrincipalOrgPaths](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principalorgpaths) in the *IAM User Guide*.
 
 1. Attach the policy to your organization root. For more information, see [Attach policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_policies_attach.html) and [Detach policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_policies_detach.html) in the *AWS Organizations User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

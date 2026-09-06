@@ -76,7 +76,3 @@ These metrics are published at the end of a stream session.
 | **DataChannel-ApplicationMessageBytes** | Total bytes of messages your application has sent to your client. | (StreamGroupId, Location), (ApplicationId, StreamClass) | Bytes |
 | **DataChannel-ClientMessage** | Number of messages your client has sent to your application. | (StreamGroupId, Location), (ApplicationId, StreamClass) | Count |
 | **DataChannel-ClientMessageBytes** | Total bytes of messages your client has sent to your application. | (StreamGroupId, Location), (ApplicationId, StreamClass) | Bytes |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ API passthrough values are only respected when you use an API passthrough or API
 The template definition nonetheless copies over other values from the CSR, such as Subject and Subject Alternative Name. These values are still taken from the CSR even though the template is not a CSR passthrough variety, because the template definition always takes highest priority.
 
 1. The template definition for [EndEntityClientAuthCertificate\_APICSRPassthrough](template-definitions.md#EndEntityClientAuthCertificate_APICSRPassthrough) defines the Subject Alternative Name (SAN) extension as being copied from the API or CSR. If the SAN extension is defined in the CSR and provided in the `IssueCertificate`` ApiPassthrough` parameter, the API passthrough value will take priority because API passthrough values take priority over CSR passthrough values.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

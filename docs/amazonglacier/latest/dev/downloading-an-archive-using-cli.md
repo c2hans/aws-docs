@@ -132,7 +132,3 @@ In order to download your archives you must know your archive ids. Steps 1-4 wil
    ```
    aws glacier get-job-output --vault-name {{awsexamplevault}} --account-id {{111122223333}} --job-id {{*** jobid ***}} output_file_name
    ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -78,7 +78,3 @@ To upgrade the version of the Flink operator, follow these steps:
 1. Delete CRD (since helm will not automatically delete the old CRD): `kubectl delete crd flinkdeployments.flink.apache.org flinksessionjobs.flink.apache.org`.
 
 1. Re-install `flink-kubernetes-operator` with the newer version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

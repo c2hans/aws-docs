@@ -85,7 +85,3 @@ Throughput: 38.13 MiB/sec
 <a name="managing-snapshot-speed"></a>
 
 Depending on the data size in the source cluster and the bandwidth allocated for snapshots, the process can take some time. Set `createSnapshotConfig.maxSnapshotRateMbPerNode` in the workflow configuration, or use the `--max-snapshot-rate-mb-per-node` option for a manual snapshot command, to adjust the maximum rate at which the source cluster’s nodes create the snapshot. Increasing the snapshot rate consumes more source node resources, which may affect the cluster’s ability to handle normal traffic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,7 +49,3 @@ For more information about renewal periods, see the Deadlines for renewing and r
 The registrar holds most domains for a brief time after expiration, so you might be able to renew an expired domain after the expiration date, but if you want to keep your domain, we strongly recommend that you keep automatic renewal enabled. For information about trying to renew a domain after the expiration date, see [Restoring an expired or deleted domain](domain-restore-expired.md).
 If your domain expires but late renewal is allowed for the domain, you can renew the domain for the standard renewal price. To determine whether a domain is still within the late-renewal period, perform the procedure in the [Extending the registration period for a domain](domain-extend.md) section. If the domain is still listed, it's within the late-renewal period.
 For more information about renewal periods, see the Deadlines for renewing and restoring domains section for your TLD in [Domains that you can register with Amazon Route 53](registrar-tld-list.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

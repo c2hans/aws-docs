@@ -317,7 +317,3 @@ You can create an Amazon EKS add-on using `eksctl`, the AWS Management Console, 
      ```
 
      If you receive an error similar to the error in the previous output, visit the URL in the output of a previous step to subscribe to the add-on. Once subscribed, run the `create-addon` command again.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

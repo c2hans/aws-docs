@@ -23,7 +23,3 @@ The following best practices help create a robust, scalable, and efficient loggi
 + **Implement log analysis and visualization** – Use tools such as CloudWatch Logs Insights, Elasticsearch with Kibana, or third-party solutions for log analysis and visualization.
 + **Implement automated log analysis** – Use machine learning and AI-powered tools to detect anomalies and patterns in your logs automatically.
 + **Document your logging strategy** – Maintain clear documentation of your logging architecture, practices, and tools for your team.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

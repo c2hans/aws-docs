@@ -38,7 +38,3 @@ While Amazon Nova 2 Sonic handles barge-in on the server side, you need to imple
 1. **Clear the Audio Queue:** Remove all queued audio chunks and discard any buffered audio from the interrupted response.
 
 1. **Start New Audio:** Begin playing the newly received audio and resume normal playback flow.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,7 +11,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 +  **Fleet** — A *fleet* consists of fleet instances (also known as streaming instances) that run the image that you specify. You can set the desired number of streaming instances for your fleet, and configure policies to scale your fleet automatically based on demand. Note that each user requires one instance.
 +  **Stack** — A *stack* consists of an associated fleet, user access policies, and storage configurations. You set up a stack to start streaming applications to users.
 +  **Streaming instance** — A *streaming instance* (also known as a *fleet instance*) is an [*Amazon Elastic Compute Cloud*](https://aws.amazon.com/ec2/) (Amazon EC2) instance that is made available to a single user for application streaming. After the user’s session completes, the instance is terminated by Amazon EC2.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

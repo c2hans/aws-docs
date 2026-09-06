@@ -27,7 +27,3 @@ Error downloading CA certificate: Connect timeout on endpoint URL: "https://****
 1. If you already have an Amazon S3 VPC endpoint:
    + Ensure that the subnet route table is configured to point to the VPC endpoint (if using gateway endpoint) or that private DNS is enabled for interface endpoint.
    + Amazon S3 VPC endpoint should be similar to the configuration mentioned in section 5.3 Endpoint creation step
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,7 +24,3 @@ Before you submit a job run with Amazon EMR on EKS, you must complete the steps 
 + [Using Spark event log rotation](emr-eks-log-rotation.md)
 + [Using Spark container log rotation](emr-eks-log-rotation-container.md)
 + [Using vertical autoscaling with Amazon EMR Spark jobs](jobruns-vas.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

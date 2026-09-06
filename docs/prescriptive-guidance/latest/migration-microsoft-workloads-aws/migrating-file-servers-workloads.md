@@ -54,7 +54,3 @@ DataSync and Robocopy are both equipped to preserve network access control lists
 + [Migrating existing file storage to Amazon FSx](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/migrate-to-fsx.html) (Amazon FSx for Windows File Server documentation)
 + [Transferring files from on premises to AWS and back without leaving your VPC using AWS DataSync](https://aws.amazon.com/blogs/storage/transferring-files-from-on-premises-to-aws-and-back-without-leaving-your-vpc-using-aws-datasync/) (AWS Storage Blog)
 + [Migrate small sets of data from on premises to Amazon S3 using AWS SFTP](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-small-sets-of-data-from-on-premises-to-amazon-s3-using-aws-sftp.html) (AWS Prescriptive Guidance)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

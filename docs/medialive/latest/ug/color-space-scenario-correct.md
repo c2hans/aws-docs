@@ -22,7 +22,3 @@ You can correct the metadata. Follow the procedure in [Set up inputs to correct 
 During processing, MediaLive will create metadata of the specified color space for all missing, unmarked, and unknown metadata. It will also change all existing metadata to the specified color space. (It will *force* the metadata.)
 
 After ingest, all the content in the input will be consistently marked as one color space.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

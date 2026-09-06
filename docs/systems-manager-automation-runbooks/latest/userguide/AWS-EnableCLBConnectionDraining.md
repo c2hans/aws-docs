@@ -56,7 +56,3 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 + ModifyLoadBalancerConnectionDraining (aws:executeAwsApi): Enables connection draining and sets the specified timeout value for the load balancer you specify.
 + VerifyLoadBalancerConnectionDrainingEnabled (aws:assertAwsResourceProperty): Verifies that connection draining is enabled for the load balancer.
 + VerifyLoadBalancerConnectionDrainingTimeout (aws:assertAwsResourceProperty): Verifies that the connection timeout value for the load balancer matches the value you specified.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

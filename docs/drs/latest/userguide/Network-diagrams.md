@@ -77,7 +77,3 @@ This diagram shows the network architecture of AWS DRS protecting source servers
  This diagram shows the network architecture of DRS performing Failback to an on-premises environment after performing a recovery into AWS.
 
 ![AWS DRS failback replication architecture showing data flow between AWS Cloud and on-premises data center.](http://docs.aws.amazon.com/drs/latest/userguide/images/drs-failback-arc.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

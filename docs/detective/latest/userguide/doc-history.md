@@ -101,7 +101,3 @@ The following table describes the important changes to the documentation since t
 | [Free trial is now per account instead of per behavior graph](#doc-history) | Each account Amazon Detective now receives a separate free trial within each Region. The free trial starts either when the account enables Detective, or the first time the account is enabled as a member account. | May 26, 2020 |
 | [New open source Python scripts on GitHub](#doc-history) | The new [amazon-detective-multiaccount-scripts](https://github.com/aws-samples/amazon-detective-multiaccount-scripts) repository on GitHub provides open source Python scripts that you can use to manage behavior graphs across Regions. You can enable Detective, add member accounts, remove member accounts, and disable Detective. | January 21, 2020 |
 | [Introducing Amazon Detective](#doc-history) | Detective uses machine learning and purpose-built visualizations to help you analyze and investigate security issues across your Amazon Web Services (AWS) workloads. | December 2, 2019 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

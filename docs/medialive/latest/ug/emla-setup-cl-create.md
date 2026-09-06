@@ -16,7 +16,3 @@ Create the clusters after you have created the networks.
    + **Default route**: Select the logical interface name (from the **Interface mappings**) that is the default that the network engineer identified in [Identifying network resources](emla-deploy-identify-network-requirements.md).
 
 1. Choose Create. MediaLive Anywhere creates the cluster and adds it to the list of clusters.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

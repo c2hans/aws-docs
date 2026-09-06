@@ -24,7 +24,3 @@ The implementation stage of the migration consists of these steps:
 1. Create blueprints of agile delivery for scaling migrations based on Wave 1. Present the approach as a foundation for the readiness and planning migration phase.
 
 Working through these initial Wave 1 migrations helps to build conﬁdence and experience. This process includes the migration plan with the patterns and tool choices that ﬁt your organization's needs. It provides validation and testing of the operational and security processes. It also identiﬁes patterns (for example, common architectures and technology stacks) in the portfolio to create a list of application groupings based on common patterns. This creates a common process for group migrations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

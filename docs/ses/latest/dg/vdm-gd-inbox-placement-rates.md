@@ -30,7 +30,3 @@ For each monitored domain, inbox placement rates displays the following informat
 
 **Note**
 Inbox placement data is provided by analytics and updated hourly. These metrics are based on a sample of data and do not reflect the full volume of emails sent.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

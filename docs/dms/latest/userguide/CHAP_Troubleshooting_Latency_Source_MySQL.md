@@ -56,7 +56,3 @@ To further optimize performance, tune the `EventsPollInterval`. By default, DMS 
 When migrating multiple tables with a large amount of data, we recommend splitting tables into separate tasks for MySQL 5.7.2 or later. In MySQL versions 5.7.2 and later, the master dump thread creates fewer lock contentions and improves throughput. As a result, the dump thread no longer locks the binary log whenever it reads an event. This means that multiple dump threads can read the binary log file concurrently. This also means that dump threads can read the binary log while clients write to it. For more information about dump threads, see [Replication Threads](https://dev.mysql.com/doc/refman/8.0/en/replication-threads.html) and the [MySQL 5.7.2 release notes](https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-2.html).
 
 To improve replication performance for MySQL sources versions prior to 5.7.2, try consolidating tasks with CDC components.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

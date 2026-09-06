@@ -42,6 +42,16 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   CreateCustomDetectionRuleAssociation  **
+  - **IAM action:**  [guardduty:CreateCustomDetectionRuleAssociation](#list_guardduty-action-CreateCustomDetectionRuleAssociation)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [guardduty:TagResource](#list_guardduty-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateCustomDetectionRuleOrgConfiguration  **
+  - **IAM action:**  [guardduty:CreateCustomDetectionRuleOrgConfiguration](#list_guardduty-action-CreateCustomDetectionRuleOrgConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   CreateDetector  **
   - **IAM action:**  [guardduty:CreateDetector](#list_guardduty-action-CreateDetector)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [guardduty:TagResource](#list_guardduty-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -95,6 +105,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeclineInvitations  **
   - **IAM action:**  [guardduty:DeclineInvitations](#list_guardduty-action-DeclineInvitations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteCustomDetectionRuleAssociation  **
+  - **IAM action:**  [guardduty:DeleteCustomDetectionRuleAssociation](#list_guardduty-action-DeleteCustomDetectionRuleAssociation)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteCustomDetectionRuleOrgConfiguration  **
+  - **IAM action:**  [guardduty:DeleteCustomDetectionRuleOrgConfiguration](#list_guardduty-action-DeleteCustomDetectionRuleOrgConfiguration)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -215,6 +237,24 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   GetCoverageStatistics  **
   - **IAM action:**  [guardduty:GetCoverageStatistics](#list_guardduty-action-GetCoverageStatistics)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetCustomDetectionRule  **
+  - **IAM action:**  [guardduty:GetCustomDetectionRule](#list_guardduty-action-GetCustomDetectionRule)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetCustomDetectionRuleAssociation  **
+  - **IAM action:**  [guardduty:GetCustomDetectionRuleAssociation](#list_guardduty-action-GetCustomDetectionRuleAssociation)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetCustomDetectionRuleOrgConfiguration  **
+  - **IAM action:**  [guardduty:GetCustomDetectionRuleOrgConfiguration](#list_guardduty-action-GetCustomDetectionRuleOrgConfiguration)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -341,6 +381,24 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListCoverage  **
   - **IAM action:**  [guardduty:ListCoverage](#list_guardduty-action-ListCoverage)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListCustomDetectionRuleAssociations  **
+  - **IAM action:**  [guardduty:ListCustomDetectionRuleAssociations](#list_guardduty-action-ListCustomDetectionRuleAssociations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListCustomDetectionRuleOrgConfigurations  **
+  - **IAM action:**  [guardduty:ListCustomDetectionRuleOrgConfigurations](#list_guardduty-action-ListCustomDetectionRuleOrgConfigurations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListCustomDetectionRules  **
+  - **IAM action:**  [guardduty:ListCustomDetectionRules](#list_guardduty-action-ListCustomDetectionRules)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -475,6 +533,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
+- **   UpdateCustomDetectionRuleAssociation  **
+  - **IAM action:**  [guardduty:UpdateCustomDetectionRuleAssociation](#list_guardduty-action-UpdateCustomDetectionRuleAssociation)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateCustomDetectionRuleOrgConfiguration  **
+  - **IAM action:**  [guardduty:UpdateCustomDetectionRuleOrgConfiguration](#list_guardduty-action-UpdateCustomDetectionRuleOrgConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateDetector  **
   - **IAM action:**  [guardduty:UpdateDetector](#list_guardduty-action-UpdateDetector)
   - **Condition key:**
@@ -568,6 +638,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [CreateCustomDetectionRuleAssociation](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateCustomDetectionRuleAssociation.html)  **
+  - **Description:** Grants permission to create a GuardDuty custom detection rule association
+  - **Resource types (\*required):**
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_guardduty-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_guardduty-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [CreateCustomDetectionRuleOrgConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateCustomDetectionRuleOrgConfiguration.html)  **
+  - **Description:** Grants permission to create the organization configuration for a GuardDuty custom detection rule
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [CreateDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateDetector.html)  **
   - **Description:** Grants permission to create a detector
   - **Resource types (\*required):**
@@ -636,6 +718,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [DeclineInvitations](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeclineInvitations.html)  **
   - **Description:** Grants permission to decline invitations to become a GuardDuty member account
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
+- **   [DeleteCustomDetectionRuleAssociation](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteCustomDetectionRuleAssociation.html)  **
+  - **Description:** Grants permission to delete a GuardDuty custom detection rule association
+  - **Resource types (\*required):** [customdetectionruleassociation\*](#list_guardduty-resource-customdetectionruleassociation)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteCustomDetectionRuleOrgConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteCustomDetectionRuleOrgConfiguration.html)  **
+  - **Description:** Grants permission to delete the organization configuration for a GuardDuty custom detection rule
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Write
@@ -758,6 +852,24 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to list Amazon GuardDuty coverage statistics for the specified GuardDuty account in a Region
   - **Resource types (\*required):** [detector\*](#list_guardduty-resource-detector)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetCustomDetectionRule](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetCustomDetectionRule.html)  **
+  - **Description:** Grants permission to retrieve a GuardDuty custom detection rule
+  - **Resource types (\*required):** [customdetectionrule\*](#list_guardduty-resource-customdetectionrule)
+  - **Condition keys:**
+  - **Access level:** Read
+
+- **   [GetCustomDetectionRuleAssociation](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetCustomDetectionRuleAssociation.html)  **
+  - **Description:** Grants permission to retrieve a GuardDuty custom detection rule association
+  - **Resource types (\*required):** [customdetectionruleassociation\*](#list_guardduty-resource-customdetectionruleassociation)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetCustomDetectionRuleOrgConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetCustomDetectionRuleOrgConfiguration.html)  **
+  - **Description:** Grants permission to retrieve the organization configuration for a GuardDuty custom detection rule
+  - **Resource types (\*required):**
+  - **Condition keys:**
   - **Access level:** Read
 
 - **   [GetDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetDetector.html)  **
@@ -886,6 +998,24 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
+- **   [ListCustomDetectionRuleAssociations](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListCustomDetectionRuleAssociations.html)  **
+  - **Description:** Grants permission to retrieve a list of GuardDuty custom detection rule associations
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListCustomDetectionRuleOrgConfigurations](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListCustomDetectionRuleOrgConfigurations.html)  **
+  - **Description:** Grants permission to retrieve a list of organization configurations for GuardDuty custom detection rules
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListCustomDetectionRules](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListCustomDetectionRules.html)  **
+  - **Description:** Grants permission to retrieve a list of GuardDuty custom detection rules
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
 - **   [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html)  **
   - **Description:** Grants permission to retrieve a list of GuardDuty detectors
   - **Resource types (\*required):**
@@ -954,6 +1084,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListTagsForResource](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListTagsForResource.html)  **
   - **Description:** Grants permission to retrieve a list of tags associated with a GuardDuty resource
+  - **Resource types (\*required):** [customdetectionruleassociation](#list_guardduty-resource-customdetectionruleassociation) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [detector](#list_guardduty-resource-detector) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [filter](#list_guardduty-resource-filter) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ipset](#list_guardduty-resource-ipset) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)
@@ -1014,6 +1145,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [TagResource](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TagResource.html)  **
   - **Description:** Grants permission to add tags to a GuardDuty resource
+  - **Resource types (\*required):** [customdetectionruleassociation](#list_guardduty-resource-customdetectionruleassociation) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_guardduty-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_guardduty-aws_TagKeys)
   - **Resource types (\*required):** [detector](#list_guardduty-resource-detector) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_guardduty-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_guardduty-aws_TagKeys)
   - **Resource types (\*required):** [filter](#list_guardduty-resource-filter) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_guardduty-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_guardduty-aws_TagKeys)
   - **Resource types (\*required):** [ipset](#list_guardduty-resource-ipset) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_guardduty-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_guardduty-aws_TagKeys)
@@ -1032,6 +1164,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UntagResource](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UntagResource.html)  **
   - **Description:** Grants permission to remove tags from a GuardDuty resource
+  - **Resource types (\*required):** [customdetectionruleassociation](#list_guardduty-resource-customdetectionruleassociation) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_guardduty-aws_TagKeys)
   - **Resource types (\*required):** [detector](#list_guardduty-resource-detector) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_guardduty-aws_TagKeys)
   - **Resource types (\*required):** [filter](#list_guardduty-resource-filter) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_guardduty-aws_TagKeys)
   - **Resource types (\*required):** [ipset](#list_guardduty-resource-ipset) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_guardduty-aws_TagKeys)
@@ -1041,6 +1174,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [threatintelset](#list_guardduty-resource-threatintelset) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_guardduty-aws_TagKeys)
   - **Resource types (\*required):** [trustedentityset](#list_guardduty-resource-trustedentityset) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_guardduty-aws_TagKeys)
   - **Access level:** Tagging, Write
+
+- **   [UpdateCustomDetectionRuleAssociation](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateCustomDetectionRuleAssociation.html)  **
+  - **Description:** Grants permission to update a GuardDuty custom detection rule association
+  - **Resource types (\*required):** [customdetectionruleassociation\*](#list_guardduty-resource-customdetectionruleassociation)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateCustomDetectionRuleOrgConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateCustomDetectionRuleOrgConfiguration.html)  **
+  - **Description:** Grants permission to update the organization configuration for a GuardDuty custom detection rule
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
 
 - **   [UpdateDetector](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html)  **
   - **Description:** Grants permission to update GuardDuty detectors
@@ -1121,6 +1266,8 @@ The following resource types are defined by this service and can be used in the 
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
+|  [customdetectionrule](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_managing_access.html#guardduty-resources)  | arn:${Partition}:guardduty::aws:detection-rule/custom/${RuleId} |   |
+|  [customdetectionruleassociation](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_managing_access.html#guardduty-resources)  | arn:${Partition}:guardduty:${Region}:${Account}:detection-rule/custom/${RuleId}/association/${AssociationId} | [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_) |
 |  [detector](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_managing_access.html#guardduty-resources)  | arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId} | [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_) |
 |  [filter](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_managing_access.html#guardduty-resources)  | arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/filter/${FilterName} | [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_) |
 |  [ipset](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_managing_access.html#guardduty-resources)  | arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/ipset/${IPSetId} | [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_) |
@@ -1140,7 +1287,3 @@ Amazon GuardDuty defines the following condition keys that can be used in the `C
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag)  | Filters access by tag key-value pairs in the request | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag)  | Filters access by tag key-value pairs attached to the resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys)  | Filters access by tag keys in the request | ArrayOfString |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

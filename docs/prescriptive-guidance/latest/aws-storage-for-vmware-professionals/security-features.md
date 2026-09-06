@@ -39,7 +39,3 @@ The following table provides a detailed comparison of security implementations b
 **Amazon S3 security –** Amazon S3 enforces encryption using server-side encryption options like SSE-S3 (AWS managed keys), SSE-KMS (customer-managed keys), and SSE-C (customer-provided keys). Access controls include bucket policies, ACLs, and public access blocking to prevent unauthorized exposure.
 
 **Amazon EFS security –** Amazon EFS provides encryption for data at rest and in transit, with access control managed through IAM policies and VPC security groups to restrict file system access to authorized users and services.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

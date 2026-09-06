@@ -87,7 +87,3 @@ AWS Cloud9 installation problems might occur when creating an SSH environment if
 + Optionally, you can restrict inbound traffic over SSH to only the IP addresses that AWS Cloud9 uses. To do this, set inbound SSH traffic to the IP ranges as described in [Inbound SSH IP address ranges for AWS Cloud9](ip-ranges.md).
 
 After you're sure your instance or server meets the preceding requirements, [create an SSH environment](create-environment-ssh.md) for AWS Cloud9 to connect it to.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

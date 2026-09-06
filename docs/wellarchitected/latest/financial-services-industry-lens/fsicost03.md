@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
  Automate token budget enforcement and anomaly alerts: fail‑safe requests that exceed thresholds; alert when token‑per‑call or cost‑per‑session deviates materially from baseline.
 
  Schedule off‑peak embedding and fine‑tuning jobs; auto‑pause development endpoints and ephemeral agents outside working hours.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

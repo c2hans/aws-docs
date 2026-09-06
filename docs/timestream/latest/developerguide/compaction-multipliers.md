@@ -23,7 +23,3 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
 Defines the size multipliers for each compaction generation level beyond Gen2. With the default `compaction-gen2-duration` of 20 minutes and multipliers of `3,4,6,5`: Gen2 = 20m, Gen3 = 20m × 3 = 1h, Gen4 = 1h × 4 = 4h, Gen5 = 4h × 6 = 24h, Gen6 = 24h × 5 = 5d.
 
 **Recommendation:** Keep at `3,4,6,5` (default) for all instance sizes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -119,7 +119,3 @@ To solve this problem, you must make a copy of the `AWS-UpdateWindowsAmi` runboo
 
 **Note**
 Depending on the number of patches applied, the Windows patching process run in this sample automation can take 30 minutes or more to complete.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

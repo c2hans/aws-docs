@@ -38,7 +38,3 @@ Problems with SCTE-35 segmentation UPID processing can cause session variable is
 + **Format requirements:** UPID must have `segmentation_upid_type` of 12 and include `format_identifier` for proper processing
 + **Parsing rules:** Decoded UPID can contain colon delimiters for multiple values. The number of template variables and decoded UPID tokens must be equal
 + **Invalid formats:** Avoid double colons with no values (e.g., `::` or `:46175218::4053`) as these cause parsing failures
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,7 +36,3 @@ To show more details from the latest run, open the table preferences and select 
 To open the worker dashboard for the worker that processed a task, choose the worker ID in the **Worker** column. To open the fleet details, choose the fleet name in the **Fleet name** column. For more information, see [View worker details in the worker dashboard](view-worker-dashboard.md).
 
 A task's status can differ from its latest run status. For example, a failed task shows a latest run status of **Never attempted** when the service didn't start the run. The two statuses can also differ for a few seconds after a run finishes, while the monitor refreshes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

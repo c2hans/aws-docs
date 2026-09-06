@@ -21,7 +21,3 @@ Use the following instructions to delete SageMaker HyperPod clusters orchestrate
 
 **Note**
 When cluster deletion fails due to attached SageMaker HyperPod task governance policies, you will need to [Delete policies](sagemaker-hyperpod-eks-operate-console-ui-governance-policies-delete.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -86,7 +86,3 @@ Some external identity providers (IdPs) don't support multiple assertion consume
 For example, if you launch an AWS managed application through an application link, the system triggers sign-in through the application's connected IAM Identity Center Region. However, if the ACS URL for that Region is not configured in the external IdP, the sign-in fails.
 
 To resolve this issue, work with your IdP vendor to enable support for multiple ACS URLs. In the meantime, you can still use AWS managed applications in additional Regions. First, sign into the Region whose ACS URL is configured in the external IdP (the primary Region by default). After you have an active session in IAM Identity Center, you can launch the application from the AWS access portal in any enabled Region, or through an application link.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

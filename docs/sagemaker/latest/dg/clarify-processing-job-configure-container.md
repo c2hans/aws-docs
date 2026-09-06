@@ -53,7 +53,3 @@ Docker Images for SageMaker Clarify Processing Jobs
 | Europe (Milan) | 638885417683.dkr.ecr.eu-south-1.amazonaws.com/sagemaker-clarify-processing:1.0 |
 | China (Beijing) | 122526803553.dkr.ecr.cn-north-1.amazonaws.com.cn/sagemaker-clarify-processing:1.0 |
 | China (Ningxia) | 122578899357.dkr.ecr.cn-northwest-1.amazonaws.com.cn/sagemaker-clarify-processing:1.0 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,7 +32,3 @@ The following table shows the various statuses for a grant:
 | PENDING\_DELETE | The grant that was distributed is in the process of being deleted. |
 | DISABLED | The grant has been accepted by the grant recipient, but has not been activated for use. |
 | WORKFLOW\_COMPLETE | The grant to an organization has been distributed or recalled. The grant details show the status of sub-grants to each account in the organization. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

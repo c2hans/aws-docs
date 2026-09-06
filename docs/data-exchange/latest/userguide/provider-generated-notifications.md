@@ -26,7 +26,3 @@ Using provider-generated notifications, you do the following to help your subscr
 1. Select the impacted data set from the dropdown menu and view your **Notification details** for the **date**, **time**, and **list** of subscriber actions. You can also provide location metadata for specifying what is affected by this event.
 
 1. Choose **Preview notification** and publish your notification.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,3 @@ AWS Backup doesn’t automatically install the `AwsVssComponents` package on you
 **Amazon Data Lifecycle Manager**
 You can create VSS snapshots using Amazon Data Lifecycle Manager by enabling pre and post scripts in your snapshot lifecycle policies. For more information, see [Automating application-consistent snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/automate-app-consistent-backups.html) in the *Amazon EBS User Guide*.
 Amazon Data Lifecycle Manager doesn’t automatically install the `AwsVssComponents` package on your instance. You must perform a manual install on your instance. For more information, see [Manually install the VSS components on an EC2 Windows instance](application-consistent-snapshots-getting-started.md#install-vss-comps).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

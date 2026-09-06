@@ -33,6 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[OriginEndpointName](#cfn-mediapackagev2-originendpoint-originendpointname)" : {{String}},
       "[Segment](#cfn-mediapackagev2-originendpoint-segment)" : {{Segment}},
       "[StartoverWindowSeconds](#cfn-mediapackagev2-originendpoint-startoverwindowseconds)" : {{Integer}},
+      "[StreamNameOutputMode](#cfn-mediapackagev2-originendpoint-streamnameoutputmode)" : {{String}},
       "[Tags](#cfn-mediapackagev2-originendpoint-tags)" : {{[ Tag, ... ]}},
       "[UriSeparator](#cfn-mediapackagev2-originendpoint-uriseparator)" : {{String}}
     }
@@ -63,6 +64,7 @@ Properties:
   [Segment](#cfn-mediapackagev2-originendpoint-segment): {{
     Segment}}
   [StartoverWindowSeconds](#cfn-mediapackagev2-originendpoint-startoverwindowseconds): {{Integer}}
+  [StreamNameOutputMode](#cfn-mediapackagev2-originendpoint-streamnameoutputmode): {{String}}
   [Tags](#cfn-mediapackagev2-originendpoint-tags): {{
     - Tag}}
   [UriSeparator](#cfn-mediapackagev2-originendpoint-uriseparator): {{String}}
@@ -157,6 +159,13 @@ The size of the window (in seconds) to specify a window of the live stream that'
 *Maximum*: `1209600`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`StreamNameOutputMode`  <a name="cfn-mediapackagev2-originendpoint-streamnameoutputmode"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `INDEX | PASSTHROUGH_NAME`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Tags`  <a name="cfn-mediapackagev2-originendpoint-tags"></a>
 The tags associated with the origin endpoint.
 *Required*: No
@@ -208,7 +217,3 @@ The timestamp of the modification of the origin endpoint.
 
 `MssManifestUrls`  <a name="MssManifestUrls-fn::getatt"></a>
 Property description not available.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

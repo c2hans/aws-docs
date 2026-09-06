@@ -53,7 +53,3 @@ Hexagonal architecture aligns well with the principles of a microservices archit
 In this architecture, each domain uses a different set of compute environment(s). (Each domain might also have multiple compute environments, as in the previous example.) Each domain defines its required interfaces to communicate with other domains through ports. Ports are implemented by using primary and secondary adapters. This way, the domain is unaffected if there is a change in the adapter. In addition, domains are decoupled from one another.
 
 In the architecture example shown in the previous diagram, Lambda, Amazon EC2, Amazon ECS, and AWS Fargate are used as primary adapters. API Gateway, Elastic Load Balancing, EventBridge, and Amazon SQS are used as secondary adapters.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

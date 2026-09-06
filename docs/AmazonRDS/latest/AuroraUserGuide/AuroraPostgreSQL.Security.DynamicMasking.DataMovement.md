@@ -76,7 +76,3 @@ Starting with PostgreSQL 18, `pg_dump` supports the `—no-policies` option whic
 <a name="AuroraPostgreSQL.Security.DynamicMasking.DataMovement.FDQ"></a>
 
 When using foreign data wrappers, masking policies on remote tables are applied based on the mapped user's permissions on the source server, not the local querying user's permissions, and while you can access masked remote data through FDW, you cannot create DDM or RLS policies directly on foreign tables in your local database.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

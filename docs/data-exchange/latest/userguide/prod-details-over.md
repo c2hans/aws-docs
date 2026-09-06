@@ -84,7 +84,3 @@ The long description for an AWS Data Exchange product supports Markdown, which a
       {{Description of the website}}.
 
 1. Choose **Save Changes**. After a few minutes your AWS Data Exchange product listing page should be updated with the new links.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

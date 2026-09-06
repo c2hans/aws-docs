@@ -29,7 +29,3 @@ Mixed governance is not the same as drift, and it is not reported as drift.
 
 **To repair mixed governance**
 + Customers are now able to repair mixed governance by resetting regional controls. Any non-global controls are regional (detective and proactive controls). You will be alerted that your OU is in a mixed governance through an alert banner.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

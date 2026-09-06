@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-data-requ
 # Data requests
 <a name="acxd-data-requests"></a>
 
-Data requests are custom integrations that let Agentic CX Designer send data to, or retrieve data from, external systems during a conversation.
+Data requests are custom integrations that let agentic CX designer send data to, or retrieve data from, external systems during a conversation.
 
 Use data requests when your conversational AI application needs real-time information or needs to trigger an action in another system. For example, a data request can retrieve appointment availability, look up a customer profile, check order status, or send a confirmation message.
 
@@ -32,9 +32,9 @@ Common examples include:
 ## How data requests work
 <a name="acxd-data-requests-how"></a>
 
-A data request defines how Agentic CX Designer communicates with an external system.
+A data request defines how agentic CX designer communicates with an external system.
 
-When a data request is triggered, Agentic CX Designer can:
+When a data request is triggered, agentic CX designer can:
 
 1. Send a request to an external endpoint.
 
@@ -141,7 +141,7 @@ For sensitive or reusable values, such as API keys, bearer tokens, or authorizat
 ## Request model
 <a name="acxd-data-requests-request-model"></a>
 
-The request model defines the optional payload that Agentic CX Designer sends to the external system.
+The request model defines the optional payload that agentic CX designer sends to the external system.
 
 Use a request model when the API needs values from the conversation.
 
@@ -320,7 +320,3 @@ A rescheduling agent may collect the user's preferred date, call a data request 
 + Send only the data the external system needs.
 + Test the data request before using it in a flow or agent node.
 + Use a data request node for controlled deterministic calls.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

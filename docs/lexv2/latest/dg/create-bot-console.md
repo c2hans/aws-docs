@@ -24,7 +24,3 @@ You create an Amazon Lex V2 bot to interact with your users to elicit informatio
 1. In the **Advanced settings** (optional) section, add tags that help identify the bot, control access and monitor resources.
 
 1. Choose **Next** to create the bot and move to adding a language.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

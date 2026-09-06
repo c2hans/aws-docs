@@ -55,7 +55,3 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions-vsco
     If you don't see **AWS Glue PySpark** and **AWS Glue Spark** kernels in the drop-down list, please ensure you have installed the AWS Glue kernel in the step above, or that your `python.defaultInterpreterPath` setting in Visual Studio Code is correct. For more information, see [ python.defaultInterpreterPath setting description ](https://github.com/microsoft/vscode-python/wiki/Setting-descriptions#pythondefaultinterpreterpath).
 
 1.  Create an AWS Glue Interactive Session. Proceed to create a session in the same manner as you did in Jupyter Notebook. Specify any magics at the top of your first cell and run a statement of code.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

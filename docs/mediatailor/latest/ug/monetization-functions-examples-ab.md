@@ -62,7 +62,3 @@ To adjust the traffic split ratio, change the threshold value. For example, `$ra
 Writing to `adsRequest.url` overrides the default ADS URL configured in the playback configuration for the current ad break.
 
 For more information, see [Custom output](monetization-functions-types-custom-output.md), [Pre-ads request](monetization-functions-hooks-pre-ads.md), and [JSONata expression reference](monetization-functions-jsonata.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

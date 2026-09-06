@@ -17,7 +17,3 @@ This section covers the following topics related to Bitnami applications on Amaz
 Follow the step-by-step instructions to learn how to retrieve the default credentials for your Bitnami application and database, sign in to the application's admin panel, and optionally remove the Bitnami branding banner from the application's home page.
 
 The guide covers various Bitnami blueprints available in Lightsail, including WordPress, Joomla, Drupal, Ghost, LAMP, LEMP, MEAN, Node.js, and more. It provides the default user names for both the application and the database, as well as the commands to obtain the default passwords securely. By following this guide, you can easily access and manage your Bitnami applications running on Lightsail instances, customizing them according to your requirements and removing any unwanted branding elements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

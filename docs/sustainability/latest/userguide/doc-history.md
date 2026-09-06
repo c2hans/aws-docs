@@ -15,7 +15,3 @@ To see changes to the feature set in the AWS Sustainability service, visit the *
 | --- |--- |--- |
 | [Water withdrawals](#doc-history) | Water withdrawals data was added to the AWS Sustainability service, user guide updated to cover the new functionality. | July 16, 2026 |
 | [Initial release](#doc-history) | This is the first release of the AWS Sustainability User Guide | March 31, 2026 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sustainability. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sustainability` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

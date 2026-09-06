@@ -31,7 +31,3 @@ Instead of listing all the individual parameters explicitly, you can also specif
 ```
 
 All observable types are supported in Amazon Braket's OpenQASM 3.0 implementation, including individual operators, tensor products, Hermitian observables, and `Sum` observables. The specific operator you want to use when computing gradients must be wrapped within the `expectation()` function, and the qubits that each term of the observable acts upon must be explicitly specified.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

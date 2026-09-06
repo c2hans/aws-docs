@@ -27,7 +27,3 @@ When picking a model, consider:
 + **Endpoint and API** – whether the model is on `bedrock-runtime`, `bedrock-mantle`, or both, and which APIs it supports. See [Endpoints supported by Amazon Bedrock](endpoints.md).
 + **Region** – whether the model is available in the AWS Regions you operate in, or through a cross-Region inference profile.
 + **Cost and throughput** – on-demand pricing vs. [Increase model invocation capacity with Provisioned Throughput in Amazon Bedrock](prov-throughput.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

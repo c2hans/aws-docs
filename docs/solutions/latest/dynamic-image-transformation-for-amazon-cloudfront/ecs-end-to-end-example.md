@@ -20,7 +20,3 @@ This example ties the three configuration entities together to serve WebP-optimi
    ```
 
    The solution matches the request to the `Product image route` mapping, fetches `01.jpg` from the S3 origin (resolving to `catalog/products/shoes/01.jpg` after the origin path is applied), applies the `Optimization policy`, and returns an optimized image. A browser that supports WebP receives a WebP image; a browser that does not receives the JPEG fallback.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

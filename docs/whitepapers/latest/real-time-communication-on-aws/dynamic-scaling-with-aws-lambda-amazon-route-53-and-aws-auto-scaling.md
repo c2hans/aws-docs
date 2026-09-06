@@ -10,7 +10,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/real-time-communicati
 AWS allows the chaining of features and the ability to incorporate custom serverless functions as a service based on infrastructure events. One such design pattern that has many versatile uses in RTC applications is the combination of automatic scaling lifecycle hooks with [Amazon CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html), Amazon Route 53, and [AWS Lambda](https://aws.amazon.com/lambda/) functions. AWS Lambda functions can embed any action or logic. The following figure demonstrates how these features chained together can enhance system reliability and scalability with automation.
 
 ![A diagram depicting automatic scaling with dynamic updates to Amazon Route 53 .](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/auto-scaling-dynamic-updates.jpg)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,7 +53,3 @@ Co-owners can edit and share the dashboard. You have the option to provide them 
 1. Choose whether to enable a user’s privilege to **Save as** in order to create a new dashboard from a copy of this one. This privilege grants read-only access to the datasets, so the user or group can create new analyses from it.
 
  [AWS Documentation For These Steps](https://docs.aws.amazon.com/quicksight/latest/user/sharing-a-dashboard.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

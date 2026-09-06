@@ -18,7 +18,3 @@ For example, when Firewall Manager evaluates accounts within the scope of a Shie
 ![Architecture diagram showing monitoring AWS Shield-protected resources with Firewall Manager and Security Hub CSPM](http://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/shield-protected-resources-ref-arch.jpg)
 
 For more information about central monitoring of Shield protected resources, refer to [Set up centralized monitoring for DDoS events and auto-remediate noncompliant resources](https://aws.amazon.com/blogs/security/set-up-centralized-monitoring-for-ddos-events-and-auto-remediate-noncompliant-resources).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

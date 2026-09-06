@@ -55,7 +55,3 @@ Include the following information in your RFC with the Deployment \| Advanced st
 ```
 
 **\***   "arn:aws:s3:::awsms-a\*-patch-data-\*", "arn:aws:s3:::ams-a\*-log-management-\*", "arn:aws:s3:::cf-templates-\*", "arn:aws:s3:::mc-a\*", "arn:aws:s3:::ams-a\*-backup-reports-\*", "arn:aws:s3:::ams-a\*-patch-data-customer-reports-\*", "arn:aws:s3:::ams-a\*-patch-data-raw-\*", "arn:aws:s3:::ams-a\*-patch-data-reporting-\*", "arn:aws:s3:::ams-a\*-release-assets-\*", "arn:aws:s3:::ams-cfn-drift-remediation-\*", "arn:aws:s3:::ams-reporting-data-a\*"
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

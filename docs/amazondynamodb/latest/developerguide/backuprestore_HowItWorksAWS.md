@@ -37,7 +37,3 @@ These enhanced backup features are available in all AWS Regions. To learn more a
 + [Restoring a backup of a DynamoDB table from AWS Backup](Restore.TutorialAWS.md)
 + [Deleting a backup of a DynamoDB table with AWS Backup](Delete.TutorialAWS.md)
 + [Usage note differences between on-demand backups managed by AWS Backup and DynamoDB](UsageNotesAWS.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

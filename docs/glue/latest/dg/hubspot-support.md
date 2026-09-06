@@ -21,7 +21,3 @@ The following HubSpot API versions are supported:
 + v4
 
 For entity support per version specific, see [Supported entities for Sync source](hubspot-reading-from-entities.md#sync-table) and [Supported entities for Async source](hubspot-reading-from-entities.md#async-table).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

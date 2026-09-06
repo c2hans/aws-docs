@@ -38,7 +38,3 @@ If you are using video aligned locking (**Pipeline locking method** set to **VID
   + Ensure both pipelines are receiving the same video content. Video aligned locking compares visual signatures between encoders and cannot lock if the content differs.
 + Check the **PipelinesLocked** CloudWatch metric. Video aligned locking reports its locked status through this same metric. A value of 1 indicates successful synchronization.
 + If synchronization is intermittent, verify that your network connectivity to both pipelines is stable. Visual signature comparison requires consistent video delivery to both encoders.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

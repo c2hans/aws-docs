@@ -58,7 +58,3 @@ The following table lists the supported SQL Server Developer Edition version and
 | SQL Server 2025 (Standard Edition capabilities) | `CU5` | [KB5084896](https://learn.microsoft.com/en-us/troubleshoot/sql/releases/sqlserver-2025/cumulativeupdate5) | `SQLServer2025-KB5084896-x64.exe` |
 | SQL Server 2022 | `CU21` | [KB5065865](https://learn.microsoft.com/en-us/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate21) | `SQLServer2022-KB5065865-x64.exe` |
 | SQL Server 2019 | `CU32 GDR` | [KB5068404](https://support.microsoft.com/en-us/topic/kb5068404-description-of-the-security-update-for-sql-server-2019-cu32-november-11-2025-c203bfbf-036e-46d2-bc10-6c01200dc48a) | `SQLServer2019-KB5068404-x64.exe` |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

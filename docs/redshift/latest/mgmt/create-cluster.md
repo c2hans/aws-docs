@@ -82,7 +82,3 @@ You can choose the number of days or `Indefinitely` to retain these snapshots.
 
 **Extra compute resources for automatic optimizations**
 You can choose whether to allocate extra compute resources to perform automatic optimizations, even during periods of heavy usage. For more information, see [ Allocating extra compute resources for automatic database optimization ](https://docs.aws.amazon.com/redshift/latest/dg/t_extra-compute-autonomics.html) in the *Amazon Redshift Database Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

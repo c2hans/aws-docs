@@ -25,7 +25,3 @@ For more detailed information, see [AWS Machine Learning and Artificial Intellig
 When you opt out of content use by an AWS AI service, that service deletes all of the associated historical content that was shared with AWS before you set the option. This deletion is limited to content stored that is not required to provide service functions.
 
 For example, when you use a service while opted in, that service might store copies of your content for service improvement. When you opt out, any copies that have been stored by the service for that purpose are deleted, but any content that is used to provide the service to you is not deleted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

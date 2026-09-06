@@ -119,7 +119,3 @@ Assuming \~10 KB average bid request, 3 AWS RTB Fabric linked internal bidders p
 | AWS RTB Fabric | Transaction pricing ($3/billion), Data transfer pricing ($0.02/GB). Total auctions: \~7.8 billion. Total bid requests: \~23.4 billion (0.0234 billion) | $94.78 |
 | Amazon EC2 - other (NAT Gateway baseline) | Number of NAT Gateways (2) with 1.2 TB outbound | $748.00 |
 |  **Monthly savings with RTB Fabric**  |  |  **$653.22 (87% reduction)**  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying a Prebid Server on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,7 +52,3 @@ The tag-based Alarm Manager manages the lifecycle of per-resource CloudWatch ala
 Your instances become tagged with `"ams:rt:ams-managed": "true"` which ensures that additional `"ams:rt:ams-monitoring-policy": "ams-monitored"` and `"ams:rt:ams-monitoring-policy-platform": "ams-monitored-linux"` are applied to the instances. These tags then result in the appropriate alarms being created for the instance. For more information about this process, see [Monitoring in Accelerate](acc-tag-req-mon.md).
 
 [![AWS Videos](http://img.youtube.com/vi/ohtqVmm2yIw/0.jpg)](http://www.youtube.com/watch?v=ohtqVmm2yIw)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

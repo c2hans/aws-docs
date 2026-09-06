@@ -83,7 +83,3 @@ To improve temporal pruning, we recommend that you do one or all of the followin
 + Add the missing time predicates in the query and make sure that the time predicates are pruning the desired time window.
 + Remove functions, such as `MAX()`, around the time predicates.
 + Add time predicates to all the sub queries. This is important if your sub queries are joining large tables or performing complex operations.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

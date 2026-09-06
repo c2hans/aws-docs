@@ -253,7 +253,3 @@ Where `status` is the new status of the configuration for your Macie account.
 ------
 
 If Macie was configured to assume an IAM role to retrieve sensitive data samples, you can optionally delete the role and the role's permissions policy. Macie doesn't delete these resources when you disable the configuration settings for your account. In addition, Macie doesn't use these resources to perform any other tasks for your account. To delete the role and its permissions policy, you can use the IAM console or the IAM API. For more information, see [Deleting roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_delete.html) in the *AWS Identity and Access Management User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,7 +21,3 @@ When you create the IPAM, you choose which AWS Region to create it in. When you 
 IPAM can manage and monitor public and private IPv6 space. For more information about public and private IPv6 addresses, see [IPv6 addresses](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ip-addressing.html#vpc-ipv6-addresses) in the *Amazon VPC User Guide*.
 
 To get started and create an IPAM, see [Getting started with IPAM](getting-started-ipam.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

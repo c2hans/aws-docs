@@ -145,7 +145,3 @@ Alternatively, you can invoke your private API via its API ID by using the `x-ap
 ```
 curl -v https://{{{public-dns-hostname}}}.execute-api.{{{region}}}.vpce.amazonaws.com/{{{stage}}} -H 'x-apigw-api-id:{{{api-id}}}'
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

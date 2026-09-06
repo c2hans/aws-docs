@@ -36,7 +36,3 @@ The **Run the installer** command will automatically update based on the name yo
        1. Make note of the token exchange service (TES) role that is created. You need it later.
 **Note**
 By default, the role created is called **GreengrassV2TokenExchangeRole**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

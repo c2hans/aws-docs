@@ -26,7 +26,3 @@ For this transit gateway, create three different transit gateway route tables:
 The following diagram shows how the traffic from child account VPCs will be routed to and from the centralized network account and the internet or other VPCs.
 
 ![Centralized transit gateway connects to spoke accounts through transit gateway attachments.](http://docs.aws.amazon.com/prescriptive-guidance/latest/robust-network-design-control-tower/images/guide-img/734c65f3-3001-4321-a428-6ffbda3b44b0/images/6ec9fa0a-33f5-490b-9b2b-f8431f73a8bc.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

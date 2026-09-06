@@ -20,7 +20,3 @@ The following examples show how to configure filter strings for USB device shari
 + Allow all Wacom devices automatically on starting a streaming session — "Wacom tablets, 3, \*, \*, 1386, \*,1,0"
 + Allow all devices that provide an audio interface — "Audio, 1, \*, \*, \*, \*,1,0"
 + Allow device X, but don't reset it while the device is shared. Don’t share the device automatically on starting a streaming session — "X, Y, \*, \*, 1386, \*,0,1"
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

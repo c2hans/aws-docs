@@ -44,6 +44,11 @@ Data that isn't cryptographically protected.
 
 For ML matching, this is the confidence level applied by AWS Entity Resolution when ML identifies a matched record set. This is part of the [matching workflow metadata](#matching-workflow-metadata) that will be included in output.
 
+## Record confidence level (RecordConfidenceLevel)
+<a name="record-confidence-level-defn"></a>
+
+For ML incremental matching, this is the per-record confidence level applied by AWS Entity Resolution when ML identifies a matched record set. This is part of the [matching workflow metadata](#matching-workflow-metadata) that will be included in output.
+
 ## Decryption
 <a name="decryption-defn"></a>
 
@@ -522,7 +527,3 @@ When the [matching workflow](#matching-workflow-definition) is run, the record w
 + isn't unique within the same table
 + overlaps in terms of attribute name across sources
 + exceeds 38 characters (rule-based matching workflows only)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

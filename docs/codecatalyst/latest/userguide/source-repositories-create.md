@@ -46,7 +46,3 @@ CodeCatalyst adds a `README.md` file to your repository when you create it. Code
 1. (Optional) In **Description**, add a description for the repository that will help other users in the project understand what the repository is used for.
 
 1. Choose **Create empty repository**, and then choose **Create**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

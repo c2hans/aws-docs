@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cost-modeling-data-la
 +  [Siemens mobility](https://aws.amazon.com/solutions/case-studies/siemens-mobility/), a leader in transport solutions, cut their energy costs by 1015% with analytics projects.
 +  [Kumon](https://aws.amazon.com/solutions/case-studies/kmong/), an online talent market for freelancers, managed to increase purchasing conversion by 30% and decrease churn by 40%.
 +  [3Victors](https://aws.amazon.com/solutions/case-studies/3victors-case-study/), a leader in travel data analytics, built their business by collecting billions of shopper requests for flights and analyzing them on AWS. This provided actionable real-time insights to travel marketers and revenue managers. Those insights, in turn, enabled 3Victor to improve the customer conversion rate and improve their return on advertising spend.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

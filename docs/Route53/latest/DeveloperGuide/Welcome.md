@@ -59,7 +59,3 @@ For more information , see [What are Amazon Route 53 Profiles?](profiles.md).
 + [AWS Identity and Access Management](IAMRoute53.md)
 + [Amazon Route 53 pricing and billing](Route53Pricing.md)
 + [Using Route 53 with an AWS SDK](sdk-general-information-section.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -220,7 +220,3 @@ When you create a flow that uses CircleCI as the data source, you can transfer a
   - **** Field**:** Slowest Tests Extra / **** Data type**:** Integer / **** Supported filters**:**
   - **** Field**:** Test Runs / **** Data type**:** List / **** Supported filters**:**
   - **** Field**:** Total Test Runs / **** Data type**:** Integer / **** Supported filters**:**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

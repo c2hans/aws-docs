@@ -187,7 +187,3 @@ please verify your rpc_address configuration in cassandra.yaml on all nodes in y
 This warning occurs because the `system.peers` table contains entries for all of the Amazon VPC endpoints that Amazon Keyspaces has permissions to view, including the Amazon VPC endpoint that you're connected through. You can safely ignore this warning.
 
 For other errors, see [My VPC endpoint connection doesn't work properly](troubleshooting.connecting.md#troubleshooting.connection.vpce).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

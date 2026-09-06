@@ -39,7 +39,3 @@ The size and type of Oracle database migration you want to do greatly determines
 + [Migrating a MySQL-Compatible Database to Amazon Aurora MySQL](chap-mysql2aurora.md)
 + [Migrating a MariaDB Database to Amazon RDS for MySQL or Amazon Aurora MySQL](chap-mariadb2auroramysql.md)
 + [Migrating from MongoDB to Amazon DocumentDB](chap-mongodb2documentdb.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

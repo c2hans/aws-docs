@@ -16,7 +16,3 @@ The owner of the [management account](https://docs.aws.amazon.com/organizations/
 <a name="pricing-payment-structure"></a>
 
 Your bill will not reflect the structure that you have defined in your organization. You can use [cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in individual AWS accounts to categorize and track your AWS costs, and this allocation will be visible in the consolidated bill for your organization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

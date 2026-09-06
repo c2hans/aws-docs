@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
  The AMR feature offers adjustable configuration, including [sensitivity controls](https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-the-aws-waf-application-layer-ddos-protection/) based on the suspicion levels detected by the system for specific events and requests from suspicious sources. This allows you to customize the protection configuration to suit the needs of your specific application types. One of the benefits of AntiDDoS AMR is its ability to detect and mitigate attacks within seconds.
 
  To learn more about the AMR, pricing, and how to get started with it, see the [AWS WAF Distributed Denial of Service (DDoS) prevention rule group](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

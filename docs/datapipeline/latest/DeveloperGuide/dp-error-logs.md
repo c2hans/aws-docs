@@ -34,7 +34,3 @@ After you configure a pipeline log directory, Task Runner creates a copy of the 
 <a name="dp-hadoop-logs"></a>
 
 With any Hadoop-based activity such as [HadoopActivity](dp-object-hadoopactivity.md), [HiveActivity](dp-object-hiveactivity.md), or [PigActivity](dp-object-pigactivity.md) you can view Hadoop job logs at the location returned in the runtime slot, hadoopJobLog. [EmrActivity](dp-object-emractivity.md) has its own logging features and those logs are stored using the location chosen by Amazon EMR and returned by the runtime slot, emrStepLog. For more information, see [View Log Files](https://docs.aws.amazon.com/emr/latest/DeveloperGuide/emr-manage-view-web-log-files.html) in the Amazon EMR Developer Guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

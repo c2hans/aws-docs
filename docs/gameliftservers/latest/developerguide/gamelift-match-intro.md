@@ -14,7 +14,3 @@ To use the full FlexMatch service, you must have your hosting resources set up w
 For more information on FlexMatch including detailed help with integrating matchmaking into your games, see these [Amazon GameLift Servers FlexMatch Developer Guide](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/) topics:
 + [How Amazon GameLift Servers FlexMatch works](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-intro.html)
 + [FlexMatch integration steps](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-tasks.html)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -76,7 +76,3 @@ The following shows a normal group or secure room conversation text message form
 
 **Note**
 In some cases, the Wickr IO client does not track the list of clients associated with group conversations, so the list of destination clients will not be included. You can use the supplied Wickr IO APIs to retrieve the members associated with a secure room or group conversation vGroupID.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

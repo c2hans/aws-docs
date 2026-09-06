@@ -116,7 +116,3 @@ Create a new third-party service by creating a third-party application with the 
   + The InitializationTimeout parameter controls the maximum time allowed for the initial handshake/connection between the service and the agent workspace. This is required to be set for applications configured with isService to true.
 
 ![Screenshot of the AWS console that shows third-party application service selected.](http://docs.aws.amazon.com/agentworkspace/latest/devguide/images/building-3p-services-aws-console-setup-1.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer Agent Workspace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agentworkspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

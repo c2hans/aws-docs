@@ -21,7 +21,3 @@ Common error conditions for manifest filtering with MediaPackage are listed in t
 | Query parameters on a segment request | ...\_1.[ts\|mp4\|vtt..]?aws.manifestfilter=video\_codec:h264 | 400 |
 | Repeated query parameter | ?aws.manifestfilter=audio\_sample\_rate:0-48000;aws.manifestfilter=video\_bitrate:0-1 | 400 |
 | Application of the filter results in an empty manifest (content has no streams that meet the conditions defined in the query string) | ?aws.manifestfilter=audio\_sample\_rate:0-1;video\_bitrate=0-1 | 400 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,7 +45,7 @@ For more information about the `JumpStartModel `class and its parameters, see [J
 You can optionally include specific model versions or instance types when deploying a pre-trained model using the `JumpStartModel` class. All JumpStart models have a default instance type. Retrieve the default deployment instance type using the following code:
 
 ```
-from sagemaker import instance_types
+from sagemaker.core import instance_types
 
 instance_type = instance_types.retrieve_default(
     model_id=model_id,
@@ -76,8 +76,11 @@ For more information on creating endpoints with inference components and deployi
 To check valid data input and output formats for inference, you can use the `retrieve_options()` method from the `Serializers` and `Deserializers` classes.
 
 ```
-print(sagemaker.serializers.retrieve_options(model_id=model_id, model_version=model_version))
-print(sagemaker.deserializers.retrieve_options(model_id=model_id, model_version=model_version))
+from sagemaker.core.serializers.implementations import retrieve_options as retrieve_serializer_options
+from sagemaker.core.deserializers.implementations import retrieve_options as retrieve_deserializer_options
+
+print(retrieve_serializer_options(model_id=model_id, model_version=model_version))
+print(retrieve_deserializer_options(model_id=model_id, model_version=model_version))
 ```
 
 ## Check supported content and accept types
@@ -86,12 +89,10 @@ print(sagemaker.deserializers.retrieve_options(model_id=model_id, model_version=
 Similarly, you can use the `retrieve_options()` method to check the supported content and accept types for a model.
 
 ```
-print(sagemaker.content_types.retrieve_options(model_id=model_id, model_version=model_version))
-print(sagemaker.accept_types.retrieve_options(model_id=model_id, model_version=model_version))
+from sagemaker.core import content_types, accept_types
+
+print(content_types.retrieve_options(model_id=model_id, model_version=model_version))
+print(accept_types.retrieve_options(model_id=model_id, model_version=model_version))
 ```
 
 For more information about utilities, see [Utility APIs](https://sagemaker.readthedocs.io/en/stable/api/utility/index.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

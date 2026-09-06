@@ -33,7 +33,3 @@ Publication date: **July 2025** ([Document revisions](document-revisions.md))
 +  **Prudential Practice Guide CPG 234 Information Security** **(CPG 234)** – this [Prudential practice guide](https://www.apra.gov.au/sites/default/files/cpg_234_information_security_june_2019.pdf) provides APRA's guidance to ARIs on safeguarding IT assets.
 
  Taken together, ARIs can use this information for their due diligence and implementation of an appropriate information security, risk management, and governance program for their use of AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

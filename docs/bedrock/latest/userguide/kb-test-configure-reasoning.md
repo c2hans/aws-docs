@@ -77,7 +77,3 @@ The following are some considerations when using the [`RetrieveAndGenerate`](htt
   ```
 + The parameter, Top P, must be disabled when reasoning is enabled for the Claude 3.7 Sonnet model. Top P is an additional model request field that determines the percentile of possible tokens to select from during generation. By default, the Top P value for other Anthropic Claude models is one. For the Claude 3.7 Sonnet model, this value will be disabled by default.
 + When model reasoning is in use, it can result in an increase in latency. When using this API operation and the [`RetrieveAndGenerateStream`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateStream.html) API operation, you might notice a delay in receiving the response from the API.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

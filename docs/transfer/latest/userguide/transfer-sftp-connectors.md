@@ -19,7 +19,3 @@ For details on creating connectors, see [Creating SFTP connectors](configure-sft
 + [Transfer files](transfer-files-and-track.md)
 + [List contents of a remote directory](sftp-connector-list-dir.md)
 + [Move, rename, or delete files or directories on the remote server](move-delete-remote-files.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

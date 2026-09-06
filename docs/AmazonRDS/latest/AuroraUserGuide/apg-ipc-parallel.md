@@ -175,7 +175,3 @@ Coordinate index creation and other maintenance tasks to prevent resource conten
 In Aurora PostgreSQL, the Query Plan Management (QPM) feature is designed to ensure plan adaptability and stability, regardless of database environment changes that might cause query plan regression. For more information, see [Overview of Aurora PostgreSQL query plan management](AuroraPostgreSQL.Optimize.overview.md).QPM provides some control over the optimizer. Review approved plans in QPM to ensure they align with current parallelism settings. Update or remove outdated plans that may be forcing suboptimal parallel execution.
 
 You can also fix the plans using pg\_hint\_plan. For more information, see [Fixing plans using pg\_hint\_plan](AuroraPostgreSQL.Optimize.Maintenance.md#AuroraPostgreSQL.Optimize.Maintenance.pg_hint_plan). You can use the hint named `Parallel` to enforce parallel execution. For more information, see the [Hints for parallel plans](https://github.com/ossc-db/pg_hint_plan/blob/master/docs/hint_table.md#hints-for-parallel-plans).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

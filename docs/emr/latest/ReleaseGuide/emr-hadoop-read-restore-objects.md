@@ -71,7 +71,3 @@ hive --hiveconf fs.s3a.glacier.read.restored.objects={{<value>}}
 When you read restored objects from Amazon Glacier, note the following considerations:
 + You can only read restored objects if you use the `S3A` scheme or the `S3AFileSystem` to access the data.
 + When you read a restored Glacier object, Amazon EMR doesn't restore the object itself. To do so, you must use the AWS CLI or the AWS SDK.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

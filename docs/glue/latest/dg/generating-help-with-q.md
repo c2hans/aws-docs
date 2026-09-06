@@ -28,7 +28,3 @@ Q help is enabled by default and can be turned off at any time through your cons
 After you save your changes, help links display as **Info** and open the standard help panel on the right side of the page.
 
 To re-enable Q help, follow the same steps and select the **Enable Q help links** checkbox. The change takes effect immediately.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

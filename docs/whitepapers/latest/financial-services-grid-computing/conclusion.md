@@ -18,7 +18,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
  If you have challenges with the scale, cost, and capacity challenges of managing a high performance computing system today, AWS has a number of services and partner relationships that can help.
 
  To learn more, you can contact AWS Financial Services through the [AWS Financial Services – Contact Sales](https://pages.awscloud.com/FinancialServicesContactSales.html) form.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

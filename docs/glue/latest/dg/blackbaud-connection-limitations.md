@@ -19,7 +19,3 @@ The following are limitations or notes for Blackbaud Raiser's Edge NXT:
 + Support for incremental transfer has been dropped for the Gift entity due to limitations from the data source's end.
 + There exists a 10 minute latency for the status field in the Opportunity entity.
 + The `Fundraiser Assignment` entity has `Constituent` as the dependent entity. The connector loads at most 5,000 IDs to choose from, to avoid the response size exceeding the maximum allowed payload size.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

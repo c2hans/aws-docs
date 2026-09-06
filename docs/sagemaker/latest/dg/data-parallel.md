@@ -26,7 +26,3 @@ For more information about training with the model-parallel strategy offered by 
 + [Amazon SageMaker AI distributed data parallelism library FAQ](data-parallel-faq.md)
 + [Troubleshooting for distributed training in Amazon SageMaker AI](distributed-troubleshooting-data-parallel.md)
 + [SageMaker AI data parallelism library release notes](data-parallel-release-notes.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

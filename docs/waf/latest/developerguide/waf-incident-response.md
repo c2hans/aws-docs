@@ -21,7 +21,3 @@ CloudTrail provides a record of actions taken by a user, role, or an AWS service
 
 **AWS WAF protection pack (web ACL) traffic logging**
 AWS WAF offers logging for the traffic that your protection packs (web ACLs) analyze. The logs include information such as the time that AWS WAF received the request from your protected AWS resource, detailed information about the request, and the action setting for the rule that the request matched. For more information, see [Logging AWS WAF protection pack (web ACL) traffic](logging.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

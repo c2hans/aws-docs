@@ -19,7 +19,3 @@ Use flow blocks to design customer journeys in the Connect Customer Flow Designe
 | [Custom action](journey-flow-block-custom-action.md) | Invokes an Lambda function and uses returned data in the flow. |
 | [Customer profiles](journey-flow-block-customer-profiles.md) | Checks segment membership or attributes from Connect Customer Customer Profiles. |
 | [End flow](journey-flow-block-end-flow.md) | Ends the current journey flow. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -193,7 +193,3 @@ You can integrate checkpointing logs with other logs by passing a custom logger 
 **Enhanced service logging (optional)**
 
 For enhanced debugging and service visibility, you can mount the checkpointing log path `/var/log/sagemaker_checkpointing` from within your pod to a path `/var/logs/sagemaker_checkpointing` on your host. This ensures that only library-specific logs are collected separately. This provides the service team with enhanced visibility for debugging and support.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

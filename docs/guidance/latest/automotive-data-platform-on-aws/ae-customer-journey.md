@@ -19,7 +19,3 @@ The following table illustrates how different functions within the same organiza
 Each row in this table represents a different team, a different tool, and a different interaction model — but they all start with the same foundation deploy and the same DataZone subscription mechanism. Adding a new consumption pattern does not require rebuilding the data foundation; it requires subscribing to the data products the new pattern needs and building the consumption layer on top of them.
 
 Example 1 (below) corresponds to the first row: a customer-service conversational agent (CVX). Examples 2 and 3 both build on the executive-reporting row — an ad hoc natural-language query interface (Amazon Quick Suite) and a proactive scheduled briefing agent on the same foundation, respectively.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

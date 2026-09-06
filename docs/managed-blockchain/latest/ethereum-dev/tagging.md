@@ -76,7 +76,3 @@ AMB Access allows you to tag public Ethereum networks after you create a node on
 1. Choose **Tags**, choose **Edit tags**, and then do one of the following:
    + To add a tag, choose **Add new tag**, enter a **Key** and optional **Value**, and then choose **Save**.
    + To remove a tag, choose **Remove** next to the **Tag** you want to remove, and then choose **Save**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

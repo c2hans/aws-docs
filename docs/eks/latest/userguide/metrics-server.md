@@ -80,7 +80,3 @@ You install or update community add-ons in the same way as other Amazon EKS Add-
    ```
 
 1. If you receive the error message `Error from server (Forbidden)`, you need to update your Kubernetes RBAC configuration. Your Kubernetes RBAC identity needs sufficient permissions to read cluster metrics. Review the [minimum required Kubernetes API permissions for reading metrics](https://github.com/kubernetes-sigs/metrics-server/blob/e285375a49e3bf77ddd78c08a05aaa44f2249ebd/manifests/base/rbac.yaml#L5C9-L5C41) on GitHub. Learn how to [grant AWS IAM Identities such as Roles access to Kubernetes APIs](grant-k8s-access.md#authentication-modes).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

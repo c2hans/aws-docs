@@ -20,7 +20,3 @@ To see all the regions FinSpace is available in, visit the [AWS Region page](htt
 + Eliminate operational overhead with Managed kdb Insights for high performance capital markets analytics.
 + Manage spend, keep up with market volatility, and ensure high-availability with auto scaling and multi-Availability Zone for kdb Insights applications.
 + Launch new analytics infrastructure on demand and accelerate migration of on-premise kdb Insights systems to AWS.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

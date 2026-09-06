@@ -141,7 +141,3 @@ After the new data connector is created, the connector details page opens where 
 **Note**
 If you create multiple GSFCD data connectors for a single Amazon FinSpace environment, duplicate datasets are created in FinSpace if the GSFCD client access credentials that you use have an overlap in the datasets they have access to. To avoid this, only create multiple connectors with credentials that don't have overlapping access to datasets.
 Datasets that are created when a GSFCD connector runs are placed in a system-generated permission group. You can't add them to other permission groups.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

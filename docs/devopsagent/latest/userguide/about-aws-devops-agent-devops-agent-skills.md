@@ -18,7 +18,7 @@ Skills are self-contained directories containing Markdown instructions that prov
 Every skill requires a SKILL.md file containing instructions you want to provide for your AWS DevOps Agent. In addition to the required SKILL.md file, skills can include:
 + **Investigation workflows** for specific scenarios or infrastructure types.
 + **Reference materials** including architecture patterns and operational procedures.
-+ **Agent type targeting** – Skills can be targeted to specific agent types (Generic, On-demand, Incident Triage, Incident RCA, Incident Mitigation, Evaluation, Release testing) to reduce context consumption and improve agent focus.
++ **Agent type targeting** – Skills can be targeted to specific agent types (Generic, On-demand, Incident Triage, Incident RCA, Incident Mitigation, Incident UI, Evaluation, Release testing) to reduce context consumption and improve agent focus.
 
 ## Why use Skills
 <a name="why-use-skills"></a>
@@ -383,7 +383,3 @@ Existing Runbooks are automatically migrated to Skills with no customer action r
 + **Create new Skills** – Add new Skills for investigation workflows not previously covered by Runbooks.
 
 Contact AWS Support if you encounter any issues with automatically migrated Skills or need assistance with post-migration updates.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

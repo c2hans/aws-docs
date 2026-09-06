@@ -17,7 +17,3 @@ When enabled, MediaTailor appends a session identifier (`?aws.sessionId=<id>`) a
 + DASH does not yet support guided prefetch mode.
 + Guided prefetch is independent of reporting mode — beacons fire at playback time, not at prefetch time.
 + **Do not cache i-media manifests in your CDN when using guided prefetch.** The prefetch mechanism depends on the player's manifest refresh requests reaching MediaTailor directly. If your CDN caches `/v1/i-media` responses, MediaTailor does not receive the heartbeat requests and cannot trigger prefetching.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,7 +34,3 @@ If these rules are followed, any update that starts an infrastructure update cau
 + [Amazon Linux deprecation](al1-ami-deprecation.md)
 + [Amazon EKS Amazon Linux 2 AMI deprecation](eks-al2-ami-deprecation.md)
 + [Amazon ECS Amazon Linux 2 AMI deprecation](ecs-al2-ami-deprecation.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

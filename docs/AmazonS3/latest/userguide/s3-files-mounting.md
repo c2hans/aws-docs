@@ -11,6 +11,16 @@ To mount S3 file systems on an EC2 instance, you must use the S3 Files mount hel
 
 ## Prerequisites to mount on EC2 instances
 <a name="s3-files-mounting-prereqs"></a>
++ Your EC2 instance runs one of the following supported Linux distributions. Windows and macOS are not supported.
+  + Amazon Linux 2
+  + Amazon Linux 2023
+  + Red Hat Enterprise Linux (RHEL) 8
+  + Red Hat Enterprise Linux (RHEL) 9
+  + Ubuntu 20.04
+  + Ubuntu 22.04
+  + Ubuntu 24.04
+  + openSUSE Leap
+  + SUSE Linux Enterprise Server (SLES) 15
 + You have an S3 file system with at least one mount target available.
 + Your EC2 instance is in the same Availability Zone as the mount target that you will use to mount your file system.
 + An IAM instance profile is attached to the EC2 instance with the required permissions for S3 Files. For details, see [IAM role for attaching your file system to AWS compute resources](s3-files-prereq-policies.md#s3-files-prereq-iam-compute-role).
@@ -224,7 +234,3 @@ umount {{mount-directory}}
 ```
 
 We recommend that you do not specify any other `umount` options. Avoid setting any other `umount` options that are different from the defaults. You can verify that your S3 file system has been unmounted by running the `findmnt` command. If the unmount was successful, the `findmnt` command on your mount directory will yield no output.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

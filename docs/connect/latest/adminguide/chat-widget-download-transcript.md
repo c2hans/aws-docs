@@ -47,7 +47,3 @@ After enabling the header drop down menu, you should be able to see a triple dot
 Choosing **Chat Transcript** opens your browser's print dialog. To save the transcript as a PDF, select **Save as PDF** as the destination in the print dialog. The PDF of the chat transcript will show all messages, display names, time stamps and message events, such as participants leaving or joining.
 
 ![Downloaded chat transcript example.](http://docs.aws.amazon.com/connect/latest/adminguide/images/chat-widget-download-transcript-pdf-2.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

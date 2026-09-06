@@ -27,7 +27,3 @@ If you use AWS SCT to migrate your existing schema to an Amazon RDS DB instance,
 + [Saving the assessment report in AWS Schema Conversion Tool](CHAP_AssessmentReport.Save.md)
 + [Configuring an assessment report in AWS Schema Conversion Tool](CHAP_AssessmentReport.Configure.md)
 + [Creating a multiserver assessment report in AWS Schema Conversion Tool](CHAP_AssessmentReport.Multiserver.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Schema Conversion Tool User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query SchemaConversionTool` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

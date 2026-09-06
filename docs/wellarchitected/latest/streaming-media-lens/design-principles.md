@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
  **Know your Content’s Value** — Start your design with a shared understanding of the content value between stakeholders. This will help you make decisions and tradeoffs around overall costs, reliability objectives, performance, and content protection schemes.
 
  **Design for Disruption** — While care should be taken to minimize failures, you should expect disruption. In designing for disruption, start with a shared reliability objective across the organization taking into account the content value. Aligned to your reliability objective, build redundancy into each component and the network links between them. Also, seek to understand the areas of concern between components and architect to gracefully handle failure or impairment of components.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

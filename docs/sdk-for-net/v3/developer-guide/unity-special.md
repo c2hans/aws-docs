@@ -30,7 +30,3 @@ When using the AWS SDK for .NET and [.NET Standard 2.0](https://docs.microsoft.c
 To read interesting background information related to this requirement, see the article at [https://aws.amazon.com/blogs/developer/referencing-the-aws-sdk-for-net-standard-2-0-from-unity-xamarin-or-uwp/](https://aws.amazon.com/blogs/developer/referencing-the-aws-sdk-for-net-standard-2-0-from-unity-xamarin-or-uwp/).
 
 In addition to these special considerations, see [What's changed for version 3.5](net-dg-v35.md#net-dg-v35-changes) for information about migrating your Unity application to version 3.5 of the AWS SDK for .NET.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

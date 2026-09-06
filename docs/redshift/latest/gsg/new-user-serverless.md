@@ -223,7 +223,3 @@ Now that you've loaded in data and ran some sample queries, you can explore othe
 + You can also use the Amazon Redshift Data API to connect to Amazon Redshift Serverless. See [ Using the Amazon Redshift Data API](https://github.com/aws-samples/getting-started-with-amazon-redshift-data-api) for more information.
 + You can use your data in Amazon Redshift Serverless with Redshift ML to create machine learning models with the CREATE MODEL command. See [Tutorial: Building customer churn models](https://docs.aws.amazon.com/redshift/latest/dg/tutorial_customer_churn.html) to learn how to build a Redshift ML model.
 + You can query data from an Amazon S3 data lake without loading any data into Amazon Redshift Serverless. See [ Querying a data lake ](https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2-querying-data-lake.html)for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

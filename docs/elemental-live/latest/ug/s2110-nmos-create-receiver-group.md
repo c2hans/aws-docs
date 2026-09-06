@@ -34,7 +34,3 @@ You must create the SMPTE 2110 receiver groups that you need. Each receiver grou
    + Choose the down arrow beside the node and select **Import Devices**.
 
    You will now be able to use this input when you create a channel in Conductor Live. The names of all the imported SMPTE 2110 inputs will appear in the list of devices.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

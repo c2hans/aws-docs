@@ -97,7 +97,3 @@ Amazon Kendra GenAI Enterprise Edition indices are only available in the US East
 | Maximum tokens per document title | Each supported Region: 100 | No | The maximum number of tokens in the title of a single document. |
 | Maximum unique documents per Rescore request | Each supported Region: 25 | No | The maximum number of unique documents (or unique groups) per Rescore request. |
 | Rescore capacity units per account | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/kendra-ranking/quotas/L-B6E8F579)  | The maximum number of rescore execution plans per account. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

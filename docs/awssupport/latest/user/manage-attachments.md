@@ -23,7 +23,3 @@ Files that are removed or not submitted with a case are automatically deleted af
 + [Retrying a failed upload](retry-attachment-upload.md)
 + [Removing an attachment](remove-attachment.md)
 + [Downloading an attachment](download-attachment.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

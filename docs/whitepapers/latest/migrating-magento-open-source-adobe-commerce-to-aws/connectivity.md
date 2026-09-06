@@ -37,7 +37,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-ope
  These legacy integrations described earlier would translate into AWS services in the way of an Application Load Balancer on one set of subnets protected via a security group and web application firewall, to a fleet of EC2 instances running Magento Open Source or Adobe Commerce on Cloud Infrastructure Self-Service dependent services. A NAT gateway providing outbound access to internet-based services. Same or separate fleet of EC2 instances for providing integration with other internet services such as payment processors, or leverage serverless solutions such AWS lambda and [AWS Transfer for SFTP](https://aws.amazon.com/sftp/) for Amazon S3 based on the use-case.
 
 ![Reference architecture diagram showing service congruencies for containers](http://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/reference-architecture-magento-congruencies.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

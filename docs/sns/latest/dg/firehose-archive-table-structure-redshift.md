@@ -27,7 +27,3 @@ Although Amazon SNS adds properties to the message using the capitalization show
 | Notification | ce644832-a0d8-581d-9275-108243c46125 | arn:aws:sns:us-east-1:111111111111:my-topic | Sample subject 3 | Sample message 3 | 2020-12-09T00:08:44.405Z | https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:111111111111:my-topic:326deeeb-cbf4-45da-b92b-ca77a247813b | {\\"my\_attribute3\\":{\\"Type\\":\\"String\\",\\"Value\\":\\"my\_value\\"}} |
 
 For more information about fanning out notifications to Amazon Redshift endpoints, see [Configuring Amazon SNS message delivery and analysis in Amazon Redshift destinations](firehose-redshift-destinations.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

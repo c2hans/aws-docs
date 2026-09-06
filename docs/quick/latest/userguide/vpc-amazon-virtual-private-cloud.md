@@ -44,7 +44,3 @@ If you want to migrate data source instances into the same VPC, see the followin
 + [How do I move my Amazon Redshift cluster from one VPC to another VPC?](https://aws.amazon.com/premiumsupport/knowledge-center/move-redshift-cluster-vpcs/)
 
 For troubleshooting information, see [How do I troubleshoot issues with VPC route tables?](https://aws.amazon.com/premiumsupport/knowledge-center/troubleshoot-vpc-route-table/), an article with video created by AWS Support.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

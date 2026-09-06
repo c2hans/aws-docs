@@ -34,7 +34,3 @@ By default, Amazon Translate uses an *AWS managed key*. This type of KMS key is 
 Optionally, you can choose to encrypt your output with a *customer managed key*, which is a KMS key that you create, own, and manage in your AWS account.
 Before you can use your own KMS key, you must add permissions to the IAM service role that Amazon Translate uses to access your output bucket in Amazon S3. If you want to use a KMS key that's in a different AWS account, you must also update the key policy in AWS KMS. For more information, see [Prerequisite permissions to customize encryption](async-prereqs.md#async-prereqs-permissions-custom-encryption).
 You can choose to use your customer managed key when you run a batch translation job. For more information, see [Running a batch translation job](async-start.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Translate. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query translate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

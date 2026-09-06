@@ -242,7 +242,3 @@ aws iot delete-command --command-id {{command-id}}
 If the deletion request is successful:
 + If the command has been deprecated for a duration that's longer than the maximum timeout of 24 hours, the command will be deleted immediately and you'll see a HTTP `statusCode` of 204.
 + If the command isn't deprecated, or has been deprecated for a duration shorter than the maximum timeout, the command will be in a `pending deletion` state and you'll see a HTTP `statusCode` of 202. The command will be removed automatically from your account after the maximum timeout of 24 hours.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

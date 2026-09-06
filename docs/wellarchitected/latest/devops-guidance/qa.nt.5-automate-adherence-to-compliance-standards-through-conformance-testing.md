@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 +  [Automating the Installation Qualification (IQ) Step to Expedite GxP Compliance](https://aws.amazon.com/blogs/industries/automating-the-installation-qualification-iq-step-to-expedite-gxp-compliance/)
 +  [Automating GxP compliance in the cloud: Best practices and architecture guidelines](https://aws.amazon.com/blogs/industries/automating-gxp-compliance-in-the-cloud-best-practices-and-architecture-guidelines/)
 +  [Automating GxP Infrastructure Installation Qualification on AWS with Chef InSpec](https://aws.amazon.com/blogs/industries/automating-gxp-infrastructure-installation-qualification-on-aws-with-chef-inspec/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,7 +11,3 @@ Custom output configuration also works alongside projects. When you pass a file 
 
 **Note**
 All files processed by custom output must follow the file restrictions for BDA. For more information on file restrictions see BDA Prerequisites.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,3 @@ We recommend that you consider the following limitations of using streaming repl
 + A significant amount of diskspace is required on the server to take backups and then copy the backups to Amazon EC2.
 + A significant amount of bandwidth is required to synchronize the source and target databases and achieve faster copying for the archive log.
 + Source and target databases must have the same version of PostgreSQL.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

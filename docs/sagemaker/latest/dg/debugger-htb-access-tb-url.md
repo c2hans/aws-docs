@@ -91,7 +91,3 @@ If any of your input passed to the arguments of `get_app_url` is invalid, the fu
 Navigate to the following URL:
 https://us-west-2.console.aws.amazon.com/sagemaker/home?region=us-west-2#/tensor-board-landing
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

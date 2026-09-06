@@ -305,7 +305,3 @@ You must wait until the status changes to ACTIVE before you can use the data to 
 The dataset import is complete when the status shows as ACTIVE. After you import data into an Amazon Personalize dataset, you can [analyze it](analyzing-data.md), [export it to an Amazon S3 bucket](export-data.md), [update it](updating-datasets.md), or [delete it](delete-dataset.md) by deleting the dataset.
 
  After you import your data, you are ready to create domain recommenders (for Domain dataset groups) or custom resources (for Custom dataset group) to train a model on your data. You use these resources to generate recommendations. For more information, see [Domain recommenders in Amazon Personalize](creating-recommenders.md) or [Custom resources for training and deploying Amazon Personalize models](create-custom-resources.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

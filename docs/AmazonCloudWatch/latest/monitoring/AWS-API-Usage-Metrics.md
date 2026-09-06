@@ -174,7 +174,3 @@ Some services report usage metrics for additional APIs as well. To see whether a
 1. On the **Browse** tab, choose **Usage**, and then choose **By AWS Resource**.
 
 1. In the search box near the list of metrics, enter the name of the service. The metrics are filtered by the service you entered.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,7 +11,3 @@ The following are examples of situations that require more control over the cont
 + You have a model that loads multiple model artifacts that are versioned separately. For example, you might load a sentence-embedding model that is used to feed a separately versioned multi-layer perceptron classifier that is trained on the embeddings.
 + You have an endpoint that does not use or require a model artifact. One case would be a clustering endpoint, which takes a data payload and returns cluster labels. This could still be served through SageMaker AI, but you would need to provide a dummy Amazon Simple Storage Service (Amazon S3) artifact path because every SageMaker AI model must have an associated artifact.
 + You want to use an Amazon Elastic Compute Cloud (Amazon EC2) instance type that is not supported by SageMaker AI. If you would like to use an instance type that is not available for SageMaker AI endpoints, typically for either cost or performance reasons, you can use Amazon ECS or Amazon EKS to use any Amazon EC2 instance type.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

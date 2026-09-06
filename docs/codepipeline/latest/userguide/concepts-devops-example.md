@@ -24,7 +24,3 @@ For example, a developer pushes a fix to the web application's index page, and t
 Developers can add actions to the pipeline that deploy or further test the application after it is built and tested for each change.
 
 For more information, see [How pipeline executions work](concepts-how-it-works.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

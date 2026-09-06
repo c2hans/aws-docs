@@ -47,10 +47,10 @@ From your Linux instance, use the following command to unmount the `/dev/sdh` de
 From your Windows instance, unmount the volume as follows.
 
 1. Start the Disk Management utility.
-   + (Windows Server 2012 and later) On the taskbar, right-click the Windows logo and choose **Disk Management**.
+   + (Windows Server 2012 and later) On the taskbar, choose (right-click) the Windows logo and choose **Disk Management**.
    + Windows Server 2008) Choose **Start**, **Administrative Tools**, **Computer Management**, **Disk Management**.
 
-1. Right-click the disk (for example, right-click **Disk 1**) and then choose **Offline**. Wait for the disk status to change to **Offline** before opening the Amazon EC2 console.
+1. Choose the disk (for example, choose (right-click) **Disk 1**) and then choose **Offline**. Wait for the disk status to change to **Offline** before opening the Amazon EC2 console.
 
 ### Step 2: Detach the volume from the instance
 <a name="detach"></a>
@@ -97,7 +97,7 @@ Dismount-EC2Volume -VolumeId {{vol-01234567890abcdef}}
 ### Step 3: (*Windows instances only*) Uninstall the offline device locations
 <a name="uninstall"></a>
 
-When you unmount and detach a volume from an instance, Windows flags the device location as offline. The device location remains offline after rebooting, and stopping and restarting the instance. When you restart the instance, Windows might mount one of the remaining volumes to the offline device location. This causes the volume to be unavailable in Windows. To prevent this from happening and to ensure that all volumes are attached to online device locations the next time Windows starts, perform the following steps:
+When you unmount and detach a volume from an instance, Windows flags the device location as offline. The device location remains offline after rebooting, and stopping and restarting the instance. When you restart the instance, Windows might mount one of the remaining volumes to the offline device location. This causes the volume to be unavailable in Windows. To prevent this from happening and to make sure that all volumes are attached to online device locations the next time Windows starts, perform the following steps:
 
 1. On the instance, open the Device Manager.
 
@@ -107,7 +107,7 @@ When you unmount and detach a volume from an instance, Windows flags the device 
 
    The device locations to which the detached volumes were mounted are named `AWS NVMe Elastic Block Storage Adapter` and they should appear greyed out.
 
-1. Right-click each greyed out device location named `AWS NVMe Elastic Block Storage Adapter`, select **Uninstall device** and choose **Uninstall**.
+1. Choose (right-click) each greyed out device location named `AWS NVMe Elastic Block Storage Adapter`, select **Uninstall device** and choose **Uninstall**.
 **Important**
 Do not select the **Delete the driver software for this device** check box.
 
@@ -142,7 +142,3 @@ To guard against the possibility of data loss, take a snapshot of your volume be
   ```
 
   When you encounter this state, detachment can be delayed indefinitely until you unmount the volume, force detachment, reboot the instance, or all three.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

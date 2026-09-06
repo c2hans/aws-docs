@@ -111,7 +111,3 @@ If you use the AWS CLI or SDK for Python, you can use the following legacy endpo
 | Unbatched Message High Throughput for FIFO Queues | Supported Regions (US East (N. Virginia), US West (Oregon), and Europe (Ireland)): 70,000<br />US East (Ohio) and Europe (Frankfurt): 18,000<br />Supported Regions (Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo)): 9,000<br />Europe (London) and South America (São Paulo): 4,500<br />All other supported Regions: 2,400 | No | The number of unbatched transactions per second (TPS) for FIFO queues. |
 
 For more information, see [Amazon SQS quotas](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-limits.html) in the *Amazon Simple Queue Service Developer Guide* and the [Limits and restrictions](https://aws.amazon.com/sqs/faqs/) section of the *Amazon SQS FAQs*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

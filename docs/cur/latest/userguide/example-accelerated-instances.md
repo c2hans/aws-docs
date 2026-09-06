@@ -165,7 +165,3 @@ The cost of unused CPU or memory resources on the instance
 | Pod 3 | Namespace 1 | $2.35 | $0.06 | $2.41 |
 | Pod 4 | Namespace 2 | $2.35 | $0.06 | $2.41 |
 | Total |  |  |  | $10 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

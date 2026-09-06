@@ -44,7 +44,3 @@ The audit log files include the following comma-delimited information in rows, i
 | Auth Context | Contains a serialized JSON object that has authentication information. The field `authenticationSucceeded` is `True` if the user was authenticated.<br />Empty if IAM authentication is disabled. |
 | HttpHeader | The HTTP header information. Can contain a query. Empty for WebSocket and Bolt connections. |
 | Payload | The Gremlin, SPARQL, or openCypher query. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

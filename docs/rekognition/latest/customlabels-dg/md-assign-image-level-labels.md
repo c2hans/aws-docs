@@ -67,7 +67,3 @@ The `source-ref` field indicates the location of the image. The JSON line also i
 1. Update the JSON Line returned in the previous step using the information at [Importing image-level labels in manifest files](md-create-manifest-file-classification.md).
 
 1. Call `UpdateDatasetEntries` to update the image. For more information, see [Adding more images to a dataset](md-add-images.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

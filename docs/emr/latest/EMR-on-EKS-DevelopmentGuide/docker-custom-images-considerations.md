@@ -20,7 +20,3 @@ When you customize Docker images, you can choose the exact runtime for your job 
 
 **Important**
 Standard Amazon EMR on EKS pricing applies whenever pods use an image derived from the Amazon EMR runtime, even if you store the customized image in your own private registry and use your own orchestration method (for example, the StartJobRun API, the Spark operator, or spark-submit). For more information, see [Amazon EMR on EKS pricing](https://aws.amazon.com/emr/pricing/#Amazon_EMR_on_Amazon_EKS).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,7 +16,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/designing-next-genera
  Recently, the MQTT specification was updated to from version 3.1.1 to MQTT version 5. AWS IoT Core has adopted this specification with many new connected vehicle specific features that we will discuss over the next section. With the latest announcement of support for MQTT5, and the features that align to that version of the specification, AWS IoT Core is an industry leading managed message broker for connected vehicle workloads.
 
  The capability to provide separation of concerns between the publisher and subscribers, the bi-directional communication, the ability to define quality of service for the messages, the lightweight code footprint at the edge and the advanced message retention policies around unreliable networks makes. This makes MQTT an easy choice for delivering connected vehicle workloads to the cloud.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,7 +35,3 @@ Connected vehicles operate in diverse geographies so it is essential to abide by
 **Don't guess about your performance requirements**
 
 The connected mobility scenarios generally have a time bound pattern of traffic generation. The [observability tools](https://aws.amazon.com/blogs/mt/observability-using-native-amazon-cloudwatch-and-aws-x-ray-for-serverless-modern-applications/) can give a trend of historic traffic based on location, time and use cases. Certain features, such as remote commands to start the vehicle and set climate control, can have high traffic during peak hours of the day and peak seasons. It is recommended to have [automated scaling](https://aws.amazon.com/autoscaling/) of services to accommodate periodic and seasonal shifts in customer usage and demands.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

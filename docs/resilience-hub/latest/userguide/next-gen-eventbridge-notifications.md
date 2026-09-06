@@ -19,7 +19,3 @@ To capture specific events from the next generation of Resilience Hub that you'r
 Next generation Resilience Hub emits events on a best-effort basis and delivers them to EventBridge in near real-time when the service is operating normally. However, some situations might delay or prevent event delivery.
 
 For more information about EventBridge rules and event patterns, see [Events and event patterns in EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eventbridge-and-event-patterns.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

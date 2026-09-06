@@ -72,7 +72,3 @@ HTTP version 1.1 is adequate for most tasks when using AWS services, and is used
 <a name="configuring-http-client"></a>
 
 To use a custom HTTP client, create a client class which conforms to the `[HTTPClient](https://sdk.amazonaws.com/swift/api/smithyhttpapi/latest/documentation/smithyhttpapi/httpclient)` class in the `SmithyHTTPAPI` module. This protocol requires a single function: [`send(request:)`](https://sdk.amazonaws.com/swift/api/smithyhttpapi/latest/documentation/smithyhttpapi/httpclient/send(request:)), which returns a `[HTTPResponse](https://sdk.amazonaws.com/swift/api/smithyhttpapi/latest/documentation/smithyhttpapi/httpresponse)` object. You can then specify your custom HTTP client by setting the client configuration's `[httpClientEngine](https://sdk.amazonaws.com/swift/api/clientruntime/latest/documentation/clientruntime/defaultsdkruntimeconfiguration/httpclientengine)` property to an instance of your custom HTTP client class.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Swift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-swift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

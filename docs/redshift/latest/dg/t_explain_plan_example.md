@@ -147,7 +147,3 @@ XN Merge  (cost=1000000047117.54..1000000047544.46 rows=1000 width=103)
                           ->  XN Hash  (cost=499.90..499.90 rows=49990 width=14)
                                 ->  XN Seq Scan on users  (cost=0.00..499.90 rows=49990 width=14)
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

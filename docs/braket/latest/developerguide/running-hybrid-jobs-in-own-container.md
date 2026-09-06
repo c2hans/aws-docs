@@ -22,7 +22,3 @@ job = AwsQuantumJob.create(
 **Note**
 Use the device ARN to track the simulator you used as hybrid job metadata. Acceptable values must follow the format `device = "local:<provider>/<simulator_name>"`. Remember that `<provider>` and `<simulator_name>` must consist only of letters, numbers, `_`, `-`, and `.` . The string is limited to 256 characters.
 If you plan to use BYOC and you're not using the Braket SDK to create quantum tasks, you should pass the value of the environmental variable `AMZN_BRAKET_JOB_TOKEN` to the `jobToken` parameter in the `CreateQuantumTask` request. If you don't, the quantum tasks don't get priority and are billed as regular standalone quantum tasks.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

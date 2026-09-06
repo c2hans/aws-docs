@@ -64,7 +64,3 @@ select username, iam_role, cmd FROM pg_get_iam_role_by_user('reg_user1') res_iam
  reg_user1 | default                                         | None
  reg_user1 | arn:aws:iam::123456789012:role/Redshift-S3-Read | COPY
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

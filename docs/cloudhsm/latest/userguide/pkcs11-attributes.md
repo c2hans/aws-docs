@@ -11,13 +11,10 @@ AWS CloudHSM does not support all attributes listed in the PKCS \#11 specificati
 
 Cryptographic functions such as `C_CreateObject`, `C_GenerateKey`, `C_GenerateKeyPair`, `C_UnwrapKey`, and `C_DeriveKey` that create, modify, or copy objects take an attribute template as one of their parameters. For more information about passing an attribute template during object creation, see [Generate keys through PKCS \#11 library](https://github.com/aws-samples/aws-cloudhsm-pkcs11-examples/tree/master/src/generate) for examples.
 
-The following topics provide more information about AWS CloudHSM key attributes.
+The following topics provide more information about AWS CloudHSM key attributes, and about reading the attributes of key and certificate objects.
 
 **Topics**
++ [Retrieve attributes](pkcs11-attributes-retrieve.md)
 + [Attributes tables](pkcs11-attributes-interpreting.md)
 + [Modifying attributes](modify-attr.md)
 + [Interpreting error codes](attr-errors.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

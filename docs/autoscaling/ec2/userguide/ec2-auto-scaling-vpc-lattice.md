@@ -25,7 +25,3 @@ To learn more about VPC Lattice, see [Simplify Service-to-Service Connectivity, 
 + [Prepare to attach a target group](getting-started-vpc-lattice.md)
 + [Attach a VPC Lattice target group](attach-vpc-lattice-target-group-asg.md)
 + [Verify the attachment status](verify-target-group-attachment-status.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

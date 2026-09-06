@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/qu
 
 The queue resource represents your configuration of the game session placement component. It determines how Amazon GameLift Servers searches for and chooses the best possible compute resource to host a new game session, based on your configuration choices.
 
-View information about game session queues in the Amazon GameLift Servers console or using the or AWS SDK for Amazon GameLift Servers.
+View information about game session queues in the Amazon GameLift Servers console or using the AWS SDK for Amazon GameLift Servers.
 
 ------
 #### [ Console ]
@@ -53,13 +53,13 @@ When Amazon GameLift Servers searches the destinations for available resources t
 Configuration settings that customize the placement process for your game.
 
 **Player latency policies**
-The **Player latency policies** section shows all policies that the queue uses. The tables lists the policies in the order they're enforced.
+The **Player latency policies** section shows all policies that the queue uses. The table lists the policies in the order they're enforced.
 
 **Locations**
 The **Locations** section shows the locations that this queue can put a game session in.
 
 **Priority**
-The **Priority** section shows the order that the queue evaluates a game sessions details.
+The **Priority** section shows the order that the queue evaluates a game session's details.
 
 **Location order**
 The **Location order** section shows the default order that the queue uses when placing game sessions. The queue uses this order if you haven't defined other types of priority.
@@ -71,7 +71,3 @@ Use the following AWS CLI commands to retrieve information about this resource:
 + [DescribeGameSessionQueues](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_DescribeGameSessionQueues.html)
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

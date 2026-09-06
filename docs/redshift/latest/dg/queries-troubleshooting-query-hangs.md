@@ -27,7 +27,3 @@ If there is a potential deadlock, try the following:
 + Use the [PG\_CANCEL\_BACKEND](PG_CANCEL_BACKEND.md) function to cancel one or more conflicting queries.
 + Use the [PG\_TERMINATE\_BACKEND](PG_TERMINATE_BACKEND.md) function to terminate a session, which forces any currently running transactions in the terminated session to release all locks and roll back the transaction.
 + Schedule concurrent write operations carefully. For more information, see [Managing concurrent write operations](c_Concurrent_writes.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

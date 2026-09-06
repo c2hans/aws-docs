@@ -39,7 +39,3 @@ You purchase one `m4.xlarge` RI in a given Region. This `m4.xlarge` RI can be ap
 The two `m4.large` usage line items have different **ResourceId**s, and both received a discount benefit from the single `m4.xlarge` RI. This is shown by matching the **reservationARN** value across the usage and recurring monthly charge line items.
 
 For more information about RI purchase options, see [How you are billed](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts-reserved-instances-application.html#reserved-instances-payment-options) in the *Amazon EC2 User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

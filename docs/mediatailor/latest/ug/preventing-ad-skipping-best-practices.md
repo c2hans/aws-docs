@@ -21,7 +21,3 @@ Implementing these best practices helps prevent ad skipping issues before they o
 + **Test thoroughly**: Validate your ad insertion workflow across different devices and network conditions
 + **Implement fallback strategies**: Configure backup ad sources or default ads for when primary ad sources fail
 + **Monitor transcoding patterns**: Monitor CloudWatch logs for transcoding efficiency and contact [AWS Support](https://aws.amazon.com/premiumsupport/) if you notice patterns that indicate transcoding issues
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

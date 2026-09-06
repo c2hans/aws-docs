@@ -95,7 +95,3 @@ Public IP insights was recently updated. If you see an error related to not havi
 Use the following command to get the public IP addresses that have been discovered by IPAM: [get-ipam-discovered-public-addresses](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-ipam-discovered-public-addresses.html)
 
 ------
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

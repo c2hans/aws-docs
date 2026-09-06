@@ -137,7 +137,3 @@ Messages are logged to stdout and log files are handled by systemd.
 | 2.0.2 |  **Bug fixes and improvements**<br />   Fixes dependencies of the apt packages to include `cgroup-tools`.     |
 | 2.0.1 |  **Bug fixes and improvements**<br />   Adds recipe variable interpolation support for Greengrass recipe's timeout section.   Adds support for ValidateAuthorizationToken IPC command for stream manager.   Fixes warnings from Fleet provisioning.   Adds retry and backoff to jobs listener.   General bug fixes and improvements.     |
 | 2.0.0 | Initial version. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,7 +43,3 @@ To investigate network components and devices, check the following:
 + Network address translation (NAT) devices—NAT traversal can cause one-way or no audio if not properly configured. Use static NAT when possible and enable keep-alives.
 + VPNs—Encrypted VPN tunnels add overhead and latency that degrade audio. Prioritize quality over encryption for real-time traffic.
 + Wi-Fi—Wireless connections are prone to interference and congestion leading to jitter and packet loss. Use wired connections when possible.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

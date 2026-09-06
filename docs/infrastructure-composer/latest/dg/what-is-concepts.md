@@ -19,7 +19,3 @@ Infrastructure as Code (IaC) is a way of treating infrastructure in the same way
 **Serverless technologies**  <a name="what-is-concepts-terms-serverless"></a>
 With AWS serverless technologies, you can build and run applications without having to manage your own servers. All server management is done by AWS, providing many benefits such as automatic scaling and built-in high availability, letting you take your idea to production quickly. Using serverless technologies, you can focus on the core of your product without having to worry about managing and operating servers. To learn more about serverless, see [Serverless on AWS](https://aws.amazon.com/serverless/).
 For a basic introduction to the core AWS serverless services, see [Serverless 101: Understanding the serverless services](https://serverlessland.com/learn/serverless-101) at *Serverless Land*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

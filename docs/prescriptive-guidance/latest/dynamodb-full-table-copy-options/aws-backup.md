@@ -30,7 +30,3 @@ For more detailed instructions, see the [Copy Amazon DynamoDB tables across acco
 ## Drawbacks
 <a name="drawbacks.47289583-9670-5da0-9c0d-5d1493d954f8"></a>
 + Both source and target accounts should be part of an AWS Organizations organization.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

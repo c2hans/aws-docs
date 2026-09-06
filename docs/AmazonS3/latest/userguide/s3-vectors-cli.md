@@ -14,7 +14,3 @@ The S3 Vectors Embed CLI provides two main commands for integrating Amazon Bedro
 The Amazon S3 Vectors Embed CLI is available in the [Amazon Web Services - Labs GitHub repository](https://github.com/awslabs). For detailed installation instructions, command parameters, examples, and best practices, see the [Amazon S3 Vectors Embed CLI GitHub repository](https://github.com/awslabs/s3vectors-embed-cli).
 
 For the lower-level S3 Vectors API operations that provide more control and customization, see [Amazon S3 Vectors](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazon_S3_Vectors.html) in the *Amazon Simple Storage Service API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

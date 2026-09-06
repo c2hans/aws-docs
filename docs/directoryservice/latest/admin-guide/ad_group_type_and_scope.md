@@ -43,7 +43,3 @@ There are limitations when changing a group scope. The following list and diagra
 For more information about group scopes, see [Microsoft documentation](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#group-scope).
 
 ![Diagram showing three different group scopes (domain local, universal, and global) and how group scope impacts group membership.](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/group_scope_membership.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -102,7 +102,3 @@ To use the REST API to apply an Object Ownership setting to an existing S3 bucke
 **Next steps**: After you apply the Bucket owner enforced or bucket owner preferred settings for Object Ownership, you can further take the following steps:
 + [Bucket owner enforced](ensure-object-ownership.md#object-ownership-requiring-bucket-owner-enforced) – Require that all new buckets are created with ACLs disabled by using an IAM or Organizations policy.
 + [Bucket owner preferred](ensure-object-ownership.md#ensure-object-ownership-bucket-policy) – Add an S3 bucket policy to require the `bucket-owner-full-control` canned ACL for all object uploads to your bucket.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

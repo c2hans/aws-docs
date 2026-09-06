@@ -126,7 +126,3 @@ Testing your VMware HA configuration reboots your gateway VM and interrupts conn
 1. Choose **Exit**.
 
 You can find information about VMware HA events in the Amazon CloudWatch log groups. For more information, see [Getting FSx File Gateway health logs with CloudWatch log groups](monitoring-file-gateway.md#cw-log-groups).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

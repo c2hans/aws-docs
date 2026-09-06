@@ -51,7 +51,3 @@ Initial deployment establishes the core data lake, governance framework, and bas
 The solution maintains flexibility to evolve from basic data lake architectures to more sophisticated patterns like Data Mesh. The unified governance model ensures consistent controls even as the architecture grows in complexity. When implementing Data Mesh patterns, each node maintains autonomy while adhering to organization-wide governance standards.
 
 We provide guidance on selecting appropriate architecture patterns based on organizational maturity, use cases, and compliance requirements. The solution documentation includes detailed deployment procedures for each supported pattern.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Modern Data Architecture Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

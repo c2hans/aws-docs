@@ -254,7 +254,3 @@ To learn more about prompt template and supported model for these placeholders, 
 +  **KNOWLEDGE\_BASE\_SHOW\_REFERENCES** - Enables the knowledge base to provide full-text references to the sources the knowledge base generated text from.
 +  **KNOWLEDGE\_BASE\_S3\_SIGNED\_URLS** - Enables the knowledge base to provide signed URLs for the knowledge base documents.
 +  **KNOWLEDGE\_BASE\_S3\_SIGNED\_URL\_EXPIRE\_SECS** - The number of seconds the signed URL will be valid for.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

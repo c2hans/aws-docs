@@ -24,7 +24,3 @@ Consumers:
 + The **account cleaner** durable Lambda receives events indicating that an account should be processed for cleanup.
 + The **assignment processing** Step Functions workflow receives assignment requested events and processes IAM Identity Center account assignment operations (grant or revoke access) for lease sharing.
 + The **email notification** Lambda receives events from all producers and sends human-readable emails to the appropriate users, managers, and administrators for the event. This Lambda uses [Amazon Simple Email Service (SES)](https://aws.amazon.com/ses/) for these notifications.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,7 +50,3 @@ You can use [Amazon Timestream for InfluxDB actions](https://docs.aws.amazon.com
 To provide fine-grained access control for your data stored in your Amazon Timestream for InfluxDB instance, give users [InfluxDB API tokens](https://docs.influxdata.com/influxdb/v2/admin/tokens/).
 
 For interacting with other AWS services, Amazon Timestream for InfluxDB uses IAM service-linked roles. A service-linked role is a unique type of IAM role that is linked directly to Timestream for InfluxDB. Service-linked roles are predefined by Timestream for InfluxDB, and they include all the permissions that the service requires to call other AWS services on your behalf. For more information, see [Using Service-Linked Roles for Amazon Timestream for InfluxDB](https://docs.aws.amazon.com/timestream/latest/developerguide/using-service-linked-roles.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

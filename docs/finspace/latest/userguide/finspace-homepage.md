@@ -63,7 +63,3 @@ In the bottom section of the homepage you will find action cards titled **Add Da
 This section shows your most recently created data views of datasets including the status of processing when you create a new view. You can also display views with partitions and sorting by choosing schema columns at the time of [creating a data view](create-data-view.md). You can choose the dataset name to go to the dataset details page. The **Analyze** button at the bottom of the card allows you to access a notebook with a sample code to access the view.
 
 If you select to access the data view externally using the FinSpace API while creating the data view, you will see the **External API Access** button at the bottom of the card. Choose this button to access the data view using your FinSpace API credentials.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -161,7 +161,3 @@ Th IP detector component in AWS IoT Greengrass ensures that the correct IP addre
 The certificate in the example is signed by the AWS IoT Greengrass device acting as a local CA. The TLS client (MQTT client) isn’t aware of this CA, so we must provide a CA certificate that looks like the following.
 
 ![Example CA certificate](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a340e6ea-dcfa-42a4-a370-c16ee08a6842/images/b08b3bcb-9e12-4f5a-9204-cf65ea32902f.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

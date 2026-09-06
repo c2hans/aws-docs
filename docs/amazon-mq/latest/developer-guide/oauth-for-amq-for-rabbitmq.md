@@ -40,7 +40,3 @@ Amazon MQ for RabbitMQ supports all [configurable variables](https://www.rabbitm
 Amazon MQ also enforces the following additional validations for OAuth 2.0 authentication:
 + All URLs need to start with `https://`.
 + Supported signature algorithms: `Ed25519`, `Ed25519ph`, `Ed448`, `Ed448ph`, `EdDSA`, `ES256K`, `ES256`, `ES384`, `ES512`, `HS256`, `HS384`, `HS512`, `PS256`, `PS384`, `PS512`, `RS256`, `RS384`, and `RS512`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,7 +47,3 @@ Today's release is cumulative. It includes all of the updates listed in the [Mar
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Python 3.8 AL2 version 3.5.0** <br /> * 64bit Amazon Linux 2 v3.5.0 running Python 3.8 *  | 2.0.20230221 | Python 3.8.16 | pipenv 2023.2.18 |  |  | 3.2.0 | nginx 1.22.1 (default), Apache 2.4.55 |
 |  ** Python 3.7 AL2 version 3.5.0** <br /> * 64bit Amazon Linux 2 v3.5.0 running Python 3.7 *  | 2.0.20230221 | Python 3.7.16 | pipenv 2023.2.18 |  |  | 3.2.0 | nginx 1.22.1 (default), Apache 2.4.55 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,11 +16,11 @@ For usage conventions and links to other resources about tagging, see [Tagging y
 For the maximum number of tags that you can add to a resource in Global Accelerator, see [Quotas for AWS Global Accelerator](limits-global-accelerator.md).
 
 You can add and update tags by using the AWS console, AWS CLI, or Global Accelerator API. This chapter includes steps for working with tagging in the console. For more information about working with tags by using the AWS CLI and the Global Accelerator API, including CLI examples, see the following operations in the *AWS Global Accelerator API Reference*:
-+ [CreateAccelerator](https://docs.aws.amazon.com/global-accelerator/latest/api/CreateAccelerator.html)
-+ [CreateCrossAccountAttachment](https://docs.aws.amazon.com/global-accelerator/latest/api/CreateCrossAccountAttachment.html)
-+ [TagResource](https://docs.aws.amazon.com/global-accelerator/latest/api/TagResource.html)
-+ [UntagResource](https://docs.aws.amazon.com/global-accelerator/latest/api/UntagResource.html)
-+ [ListTagsForResource](https://docs.aws.amazon.com/global-accelerator/latest/api/ListTagsForResource.html)
++ [CreateAccelerator](https://docs.aws.amazon.com/global-accelerator/latest/api/API_CreateAccelerator.html)
++ [CreateCrossAccountAttachment](https://docs.aws.amazon.com/global-accelerator/latest/api/API_CreateCrossAccountAttachment.html)
++ [TagResource](https://docs.aws.amazon.com/global-accelerator/latest/api/API_TagResource.html)
++ [UntagResource](https://docs.aws.amazon.com/global-accelerator/latest/api/API_UntagResource.html)
++ [ListTagsForResource](https://docs.aws.amazon.com/global-accelerator/latest/api/API_ListTagsForResource.html)
 
 ## Tagging support in Global Accelerator
 <a name="tagging-supported"></a>
@@ -51,7 +51,3 @@ Update the text for a key, value, or both. You can also clear the value for a ta
 Choose **Remove** on the right side of the value field.
 
 1. Choose **Save changes**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

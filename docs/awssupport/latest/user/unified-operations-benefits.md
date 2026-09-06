@@ -13,7 +13,3 @@ Unified Operations offers several key benefits.
 + **Engage AWS incident managers within 5 mins for business-critical system down issues:** Receive proactive support from Incident Management Engineers within 5 minutes of alarms, workload alerts, or business-critical system down issues.
 + **Context-specific case response:** Access to context-aware support engineers to drive incident resolution. Runbooks and incident response playbooks customized for your workflows, streamlining problem diagnosis and resolution for your specific business needs.
 + **Security guidance and support:** Proactive monitoring of security events with automated triage and investigation, along with 24/7 access to the AWS Customer Incident Response Team to prepare for, respond to, and recover from security events in your AWS environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

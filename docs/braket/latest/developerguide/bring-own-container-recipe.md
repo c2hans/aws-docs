@@ -165,7 +165,3 @@ aws ecr get-login-password --region ${your_region} | docker login --username AWS
 **Assigning appropriate Amazon ECR permissions**
 
 Braket Hybrid Jobs Docker images must be hosted in private Amazon ECR repositories. By default, a private Amazon ECR repo does **not** provide read access to the Braket Hybrid Jobs IAM role or to any other users that want to use your image, such as a collaborator or student. You must [set a repository policy](https://docs.aws.amazon.com/AmazonECR/latest/userguide/set-repository-policy.html) to grant the appropriate permissions. In general, only give permission to those specific users and IAM roles you want to access your images, rather than allowing anyone with the image URI to pull them.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

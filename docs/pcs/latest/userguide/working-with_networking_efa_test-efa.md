@@ -92,7 +92,3 @@ bytes   #sent   #ack     total       time     MB/sec    usec/xfer   Mxfers/sec
 4k      10      =10      80k         0.00s    311.48      13.15       0.08
 [error] util/pingpong.c:1876: fi_close (-22) fid 0
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

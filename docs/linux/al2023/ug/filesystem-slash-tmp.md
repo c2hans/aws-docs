@@ -27,7 +27,3 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/filesystem-slash-tmp.htm
  The content of `/tmp` is typically cleaned at boot time, and unused files are regularly cleaned up. By default, the cleanup process runs shortly after boot and then every day. For information on how to configure the clean-up of temporary files, see the `tmpfiles.d(5)` and `systemd-tmpfiles(8)` man man pages.
 
  The `/tmp` and [`/var/tmp`](filesystem-slash-var.md#filesystem-slash-var-tmp) paths are closely related and exist for different purposes.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

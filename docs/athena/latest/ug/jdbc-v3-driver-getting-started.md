@@ -149,7 +149,3 @@ The following table shows the differences in the `LogLevel` parameters in the JD
 In the version 2 driver, you unwrap a `Statement` instance to `com.interfaces.core.IStatementQueryInfoProvider`, an interface that has two methods: `#getPReparedQueryId` and `#getQueryId`. You can use these methods to obtain the query execution ID of a query that has run.
 
 In the version 3 driver, you unwrap `Statement`, `PreparedStatement`, and `ResultSet` instances to the `com.amazon.athena.jdbc.AthenaResultSet` interface. The interface has one method: `#getQueryExecutionId`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

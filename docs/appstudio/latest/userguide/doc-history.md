@@ -48,7 +48,3 @@ The following table describes the documentation releases for AWS App Studio.
 | [Updated topic: Add instructions for creating an AWS administrative user as part of setting up](#doc-history) | Added instructions in the [setting up App Studio](https://docs.aws.amazon.com/appstudio/latest/userguide/setting-up-first-time-admin.html) documentation to create an administrative user for managing AWS resources. Also made updates throughout the connector documentation to recommend using that user. | July 24, 2024 |
 | [New topic: Connect to Amazon Bedrock](#doc-history) | Added a topic with instructions for creating a connector for Amazon Bedrock. Builders can use the connector to build apps that use Amazon Bedrock. For more information, see [Connect to Amazon Bedrock](https://docs.aws.amazon.com/appstudio/latest/userguide/connectors-bedrock.html). | July 24, 2024 |
 | [Initial release](#doc-history) | Initial release of the AWS App Studio User Guide | July 10, 2024 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

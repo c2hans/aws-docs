@@ -30,6 +30,7 @@ When subscribing, substitute your actual AWS Control Tower home Region and audit
 +  By default, the Audit account email address is subscribed to the `aws-controltower-AggregateSecurityNotifications` SNS topic.
 + SNS topics in AWS Control Tower are extremely noisy, by design. For example, AWS Config sends a notification every time AWS Config discovers a new resource.
 + Administrators who wish to filter out specific types of notifications from an SNS topic can create an AWS Lambda function and subscribe it to the SNS topic. Alternatively, you can set up an EventBridge rule to filter notifications, as described in this support article, [How can I be notified when an AWS resource is non-compliant using AWS Config?](https://aws.amazon.com/premiumsupport/knowledge-center/config-resource-non-compliant/)
++ You can apply an Amazon SNS subscription filter policy to reduce the volume of notifications that a subscription receives. The filter policy also applies to the default Audit account email subscription. The filter policy controls which messages Amazon SNS delivers to the subscription from that topic. For more information about filtering messages, see [Amazon SNS message filtering](https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html) in the *Amazon Simple Notification Service Developer Guide*.
 + AWS Config notifications contain a JSON object.
 + AWS Control Tower drift notifications appear in plain text.
 
@@ -59,7 +60,3 @@ The AWS Config SNS topic policy contains the `aws:SourceOrgID` condition key. Th
               StringEquals:
                 aws:SourceOrgID: !Ref OrganizationId
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -128,7 +128,3 @@ User: Book a car
 + While you are building your knowledge bank of questions, you might have a combination of FAQ-based questions and intent-based questions. There may be instances where a wrong intent gets matched or a FAQ question is matched instead. To troubleshoot this issue, try the following:
 
 Enable the `ENABLE_DEBUG_RESPONSES` setting in QnABot on AWS. This setting provides debug information to help understand what is processing the request, such as, `Intent`, `OpenSearch`, or `Amazon Kendra`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

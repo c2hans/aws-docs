@@ -14,7 +14,3 @@ A service-linked role makes setting up Amazon Braket easier because you don't ha
 The service-linked role that Amazon Braket sets up is part of the AWS Identity and Access Management (IAM) [service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html#id_roles_terms-and-concepts) capability. For information about other AWS services that support service-linked roles, see [AWS Services That Work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) and look for the services that have **Yes **in the **Service-Linked Role** column. Choose a **Yes ** with a link to view the service-linked role documentation for that service.
 
 For more information on the AWS managed policy for service-linked roles, see [AmazonBraketServiceRolePolicy](security-iam-aws-managed-policies.md#about-amazonbraketservicerolepolicy).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

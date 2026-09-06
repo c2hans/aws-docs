@@ -35,7 +35,3 @@ When you add the `TIMEZONE_FILE_AUTOUPGRADE` option to your option group, you ca
 For example, your current time zone file version might be DSTv33. When RDS applies the update to your option group, it might determine that DSTv34 is currently available on your DB instance file system. RDS will then update your time zone file to DSTv34 automatically.
 
 To find the available DST versions in the supported RDS release updates, look at the patches in [Release notes for Amazon Relational Database Service (Amazon RDS) for Oracle](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/Welcome.html). For example, [version 19.0.0.0.ru-2022-10.rur-2022-10.r1](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/oracle-version-19-0.html#oracle-version-RU-RUR.19.0.0.0.ru-2022-10.rur-2022-10.r1) lists patch 34533061: RDBMS - DSTV39 UPDATE - TZDATA2022C.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

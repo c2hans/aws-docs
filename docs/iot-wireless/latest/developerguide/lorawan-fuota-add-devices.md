@@ -117,7 +117,3 @@ aws iotwireless start-fuota-task --id {{"01a23cde-5678-4a5b-ab1d-33456808ecb2"}}
 ```
 
 After you've started a FUOTA session, You can no longer add devices or multicast groups to the task. You can get information about the status of your FUOTA session by using the [`GetFuotaTask`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GettFuotaTask.html) API operation or the [`get-fuota-task`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/get-fuota-task.html) CLI command.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

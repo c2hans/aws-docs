@@ -19,7 +19,3 @@ For additional information, see:
 + [NIST Special Publication - Guide to Industrial Control System Security](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r2.pdf)
 + [NIST Guidelines – Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final#pubs-abstract-header)
 + [AWS User Guide to Support Compliance with North American Electric Reliability Corporation (NERC) Critical Infrastructure Protection (CIP) Standards](https://d1.awsstatic.com/whitepapers/aws-support-compliance-nerc-cip-standards.pdf)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

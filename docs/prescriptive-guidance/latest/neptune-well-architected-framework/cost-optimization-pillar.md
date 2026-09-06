@@ -82,7 +82,3 @@ In some cases, choosing a larger instance size can be cheaper. If your I/O costs
 Neptune uses copy-on-write cloning. When cloning to split a graph into multiple shards, it might be more efficient not to delete the unwanted data on the cloned cluster because that will involve the creation of new data pages, resulting in increased storage costs. Data that is unchanged from before the cloning event will exist in a single data page shared across the two clusters and will be charged only for that single copy.
 
 Do not enable the OSGP index or use R5d instances unless you have tested to confirm that they make a substantial difference in your workload. Both are designed for rarely occurring scenarios, and they might increase your costs for minimal or no gains.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

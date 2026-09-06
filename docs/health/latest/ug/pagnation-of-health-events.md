@@ -12,7 +12,3 @@ AWS Health includes all `resources` and `detail.affectedEntities` fields in the 
 These additional messages might cause unecessary messages, for example when the EventBridge rule is directed to a human readable interface such as email or chat. Customers with human readable notifications can add a filter for the `detail.page` field to process only the first page, which eliminates the unnecessary messages created from subsequent pages.
 
 In the schema, each communicationId includes the hyphenated page number after the communicationId, even when there is only 1 page. The fields `detail.page` and `detail.totalPages` describe the current page number and the total number of pages for the AWS Health event. The information contained in each paginated message is the same except for the list of `detail.affectedEntities` or `resources`. These lists can be reconstructed after all the pages are received. The pages of affected resources and entities are order-agnostic.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -2039,7 +2039,3 @@ If you are using an algorithm suite without digital signatures, be sure to use t
 <a name="config-caching"></a>
 
 In general, reusing data keys is discouraged, but the AWS Encryption SDK offers a [data key caching](data-key-caching.md) option that provides limited reuse of data keys. Data key caching can improve the performance of some applications and reduce calls to your key infrastructure. Before using data key caching in production, adjust the [security thresholds](thresholds.md), and test to make sure that the benefits outweigh the disadvantages of reusing data keys.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

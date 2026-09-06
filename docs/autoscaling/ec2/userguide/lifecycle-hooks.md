@@ -70,7 +70,3 @@ You can also visit our [GitHub repository](https://github.com/aws-samples/amazon
 For examples of the use of lifecycle hooks, see the following blog posts.
 + [Building a Backup System for Scaled Instances using Lambda and Amazon EC2 Run Command](https://aws.amazon.com/blogs/compute/building-a-backup-system-for-scaled-instances-using-aws-lambda-and-amazon-ec2-run-command/)
 + [Run code before terminating an EC2 Auto Scaling instance](https://aws.amazon.com/blogs/infrastructure-and-automation/run-code-before-terminating-an-ec2-auto-scaling-instance/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

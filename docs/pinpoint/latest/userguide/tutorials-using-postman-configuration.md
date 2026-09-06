@@ -111,7 +111,3 @@ When you submit your request, you might see an error. See the following list for
 | "Message": "User: arn:aws:iam::123456789012:user/PinpointPostmanUser is not authorized to perform: mobiletargeting:GetApps on resource: arn:aws:mobiletargeting:us-west-2:123456789012:\*" | The IAM policy associated with your user doesn't include the appropriate permissions. | Verify that your user has the permissions that are described in [Create an IAM policy](tutorials-using-postman-iam-user.md#tutorials-using-postman-iam-user-create-policy), and that you provided the correct credentials when you created the environment in [Create Postman workspace](#tutorials-using-postman-configuration-create-environments). |
 
 **Next**: [Send additional requests](tutorials-using-postman-sample-requests.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

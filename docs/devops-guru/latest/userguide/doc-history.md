@@ -34,7 +34,3 @@ The following table describes the documentation for this release of DevOps Guru
 | [VPC Endpoint support](#doc-history) | You can now use VPC endpoints to improve the security of your resource analysis and insight generation. For more information, see [DevOps Guru and interface VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/devops-guru/latest/userguide/vpc-interface-endpoints). | April 15, 2021 |
 | [New topic](#doc-history) | A new topic about how to monitor DevOps Guru with Amazon CloudWatch was added. For more information, see [Monitoring DevOps Guru with Amazon CloudWatch](https://docs.aws.amazon.com/devops-guru/latest/userguide/monitoring-cloudwatch.html). | December 11, 2020 |
 | [Preview release](#doc-history) | This is the preview release of the *Amazon DevOps Guru User Guide*. | December 1, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

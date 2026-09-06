@@ -53,7 +53,3 @@ GROUP BY 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 
 + Log into Quick Sight, edit the `scad_cca_summary_view` dataset, click `Save & publish` on the top right, and wait for the dataset to finish refreshing
 
 Once the Quick Sight dataset refresh is completed successfully, the new cost allocation tag column will be available in the Quick Sight analysis, for you to add to visuals. You may now save the dashboard as analysis and create visuals with the labels/tags, or continue to the [Total Cost of Ownership Using Kubernetes Labels and AWS Tags](scad-containers-dashboard-tco.md) chapter for 2 examples on using K8s pods labels/ECS tasks tags in the dashboard.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

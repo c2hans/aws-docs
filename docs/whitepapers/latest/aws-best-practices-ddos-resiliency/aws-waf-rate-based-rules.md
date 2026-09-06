@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
  Also, you can use autonomous system number (ASN)-based rate-limits to control incoming traffic from well-known ASN lists or network vendors from countries where you aren't actively operating.
 
  Together with IP Reputation rule groups (discussed in the following section), rate-based rules in Block mode are the cornerstone of a defense-in-depth AWS WAF configuration to protect against request floods and are a requirement for [AWS Shield Advanced cost protection](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-request-service-credit.html) requests to be approved.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

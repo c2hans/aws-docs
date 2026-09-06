@@ -62,7 +62,3 @@ The URI of the source model in an Amazon S3 bucket. The model package must be in
 <a name="aws-properties-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata--seealso"></a>
 + [S3MachineLearningModelResourceData](https://docs.aws.amazon.com/greengrass/v1/apireference/definitions-s3machinelearningmodelresourcedata.html) in the * AWS IoT Greengrass Version 1 API Reference *
 +  [AWS IoT Greengrass Version 1 Developer Guide](https://docs.aws.amazon.com/greengrass/v1/developerguide/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

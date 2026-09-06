@@ -181,7 +181,3 @@ After you created your index, you add documents to it. You can add them directly
 + [Adding frequently asked questions (FAQs) to an index](in-creating-faq.md)
 + [Creating custom document fields](custom-attributes.md)
 + [Controlling user access to documents with tokens](create-index-access-control.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,3 @@ If you confirm that your bucket policies are set correctly and you are still exp
 <a name="troubleshoot-directory-bucket-lifecycle-2"></a>
 
  You can use AWS CloudTrail data event logs to monitor actions taken by S3 Lifecycle in directory buckets. For more information, see [CloudTrail log file examples](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-log-files.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -312,7 +312,3 @@ aws sagemaker describe-training-job \
 + **Nova 2 Lite only** – Other model sizes are not supported for data mixing on SageMaker Training Jobs.
 + **Category-level control** – When customizing category percentages, you must specify all 23 categories with values that sum to 100. Set unused categories to `"0"` explicitly.
 + **No replicas parameter** – `ResourceConfig` is not supported on serverless. Replicas are not configurable.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

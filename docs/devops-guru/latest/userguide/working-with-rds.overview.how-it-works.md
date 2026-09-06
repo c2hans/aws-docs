@@ -24,7 +24,3 @@ DevOps Guru for RDS uses machine learning and advanced statistical analysis to 
 A database performance issue such as high DB load can degrade the quality of service for your database. When DevOps Guru detects an issue in an RDS database, it publishes an insight in the dashboard. The insight contains an anomaly for the resource **AWS/RDS**.
 
 If Performance Insights is turned on for your instances, the anomaly contains a detailed analysis of the problem. DevOps Guru for RDS also recommends that you perform an investigation or specific corrective action. For example, the recommendation might be to investigate a specific high-load SQL statement, consider increasing CPU capacity, or to close idle-in-transaction sessions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

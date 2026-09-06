@@ -61,15 +61,11 @@ The ARN format of the *AWSDataLifecycleManagerDefaultRole* role differs dependin
 **Permissions for encryption**
 
 Consider the following when working with Amazon Data Lifecycle Manager and encrypted resources.
-+ If the source volume is encrypted, ensure that the Amazon Data Lifecycle Manager default roles (**AWSDataLifecycleManagerDefaultRole** and **AWSDataLifecycleManagerDefaultRoleForAMIManagement**) have permission to use the KMS keys used to encrypt the volume.
-+ If you enable **Cross Region copy** for unencrypted snapshots or AMIs backed by unencrypted snapshots, and choose to enable encryption in the destination Region, ensure that the default roles have permission to use the KMS key needed to perform the encryption in the destination Region.
-+ If you enable **Cross Region copy** for encrypted snapshots or AMIs backed by encrypted snapshots, ensure that the default roles have permission to use both the source and destination KMS keys.
-+ If you enable snapshot archiving for encrypted snapshots, ensure that the Amazon Data Lifecycle Manager default role (**AWSDataLifecycleManagerDefaultRole** has permission to use the KMS key used to encrypt the snapshot.
++ If the source volume is encrypted, make sure that the Amazon Data Lifecycle Manager default roles (**AWSDataLifecycleManagerDefaultRole** and **AWSDataLifecycleManagerDefaultRoleForAMIManagement**) have permission to use the KMS keys used to encrypt the volume.
++ If you enable **Cross Region copy** for unencrypted snapshots or AMIs backed by unencrypted snapshots, and choose to enable encryption in the destination Region, make sure that the default roles have permission to use the KMS key needed to perform the encryption in the destination Region.
++ If you enable **Cross Region copy** for encrypted snapshots or AMIs backed by encrypted snapshots, make sure that the default roles have permission to use both the source and destination KMS keys.
++ If you enable snapshot archiving for encrypted snapshots, make sure that the Amazon Data Lifecycle Manager default role (**AWSDataLifecycleManagerDefaultRole** has permission to use the KMS key used to encrypt the snapshot.
 
 For more information, see [Allowing users in other accounts to use a KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html) in the *AWS Key Management Service Developer Guide*.
 
 For more information, see [Changing permissions for a user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html) in the *IAM User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

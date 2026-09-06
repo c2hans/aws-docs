@@ -132,7 +132,3 @@ The following procedure illustrates the different steps in the bulk provisioning
 **Check serial number match and start bulk provisioning**
 
    When you use the AWS IoT console or the AWS IoT Core for Amazon Sidewalk API operation `StartWirelessDeviceImportTask`, AWS IoT Core for Amazon Sidewalk compares the Sidewalk manufacturing serial number (SMSN) of each devices obtained from Amazon Sidewalk with the corresponding serial numbers in your CSV file. If this information matches, it starts the bulk provisioning process and creates the devices to be imported to AWS IoT Core for Amazon Sidewalk.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
